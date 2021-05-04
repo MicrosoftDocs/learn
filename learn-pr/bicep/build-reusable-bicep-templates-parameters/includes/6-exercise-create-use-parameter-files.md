@@ -12,7 +12,7 @@ During the process, you'll:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Remove default value for SKU
+## Remove the default value for the App Service plan SKU
 
 1. In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value:
 
@@ -46,20 +46,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.parameters.dev.json* file, add the following code:
 
-    ```json
-    {
-      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-      "contentVersion": "1.0.0.0",
-      "parameters": {
-        "sqlDatabaseSku": {
-            "value": {
-              "name": "Standard",
-              "tier": "Standard"
-            }
-        }
-      }
-    }
-    ```
+    :::code language="json" source="code/6-parameters-1.json" :::
 
 1. Save the changes to the file.
 
@@ -181,7 +168,7 @@ Copy the resource ID. You'll use this in the next step.
 
 1. In *main.parameters.dev.json* file, append the following code after the `sqlDatabaseSku` parameter's closing brace. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're done, your parameters file should look like this:
 
-   :::code language="json" source="code/6-parameters.json" highlight="11-26" :::
+   :::code language="json" source="code/6-parameters-2.json" highlight="11-32" :::
 
 1. Save the changes to the file.
 
