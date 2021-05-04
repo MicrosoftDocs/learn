@@ -28,27 +28,20 @@ Use the following steps to change the disk performance tier:
 
 Azure CLI
 
+```bash
 subscriptionId=\&lt;yourSubscriptionID\&gt;
-
 resourceGroupName=\&lt;yourResourceGroupName\&gt;
-
 diskName=\&lt;yourDiskName\&gt;
-
 diskSize=\&lt;yourDiskSize\&gt;
-
 performanceTier=\&lt;yourDesiredPerformanceTier\&gt;
-
 region=EastUS2EUAP
 
 az login
-
 az account set --subscription $subscriptionId
-
 az group deployment create -g $resourceGroupName \
-
---template-uri &quot;https://raw.githubusercontent.com/Azure/azure-managed-disks-performance-tiers/main/CreateUpdateDataDiskWithTier.json&quot; \
-
---parameters &quot;region=$region&quot; &quot;diskName=$diskName&quot; &quot;performanceTier=$performanceTier&quot; &quot;dataDiskSizeInGb=$diskSize&quot;
+--template-uri "https://raw.githubusercontent.com/Azure/azure-managed-disks-performance-tiers/main/CreateUpdateDataDiskWithTier.json" \
+--parameters "region=$region" "diskName=$diskName" "performanceTier=$performanceTier" "dataDiskSizeInGb=$diskSize"
+```
 
 ## Disk caching
 
@@ -109,10 +102,11 @@ Use the following command to create an empty data disk with on-demand bursting:
 
 PowerSehll
 
+```powershell
 Set-AzContext -SubscriptionName \&lt;yourSubscriptionName\&gt;
-
 $diskConfig = New-AzDiskConfig -Location &#39;WestCentralUS&#39; -CreateOption Empty -DiskSizeGB 1024 -SkuName Premium\_LRS -BurstingEnabled $true
-
 $dataDisk = New-AzDisk -ResourceGroupName \&lt;myResourceGroupDisk\&gt; -DiskName \&lt;myDataDisk\&gt; -Disk $diskConfig
+```
 
-Note: For applications that frequently run beyond the provisioned performance target, use the functionality to change the performance tier instead on-demand bursting. This option is more cost effective than on-demand disk bursting.
+>[Note!]: 
+> For applications that frequently run beyond the provisioned performance target, use the functionality to change the performance tier instead on-demand bursting. This option is more cost effective than on-demand disk bursting.
