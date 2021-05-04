@@ -3,7 +3,7 @@ uid: learn.researcher-introduction-to-cloud
 hidden: true
 metadata:
   title: Introduction to the Azure Cloud for Researchers
-  description: After understanding the basics of the cloud, and being to provision Virtual Machines and Storage on Azure, you will be able to use those learning for research projects. 
+  description: When you are working on research projects, it is helpful to have a basic understanding of cloud computing concepts. In this learning path, you’ll study the general terminology and services that of cloud computing, which should be useful to you when you’re working on research tasks. You’ll learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
   brand: azure
   ms.date: 04/28/2021
   author: MaximRouiller
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to the Azure Cloud for Researchers
 summary: |
-  After understanding the basics of the cloud, and being able to provision Virtual Machines and Storage on Azure, you will be able to use those learnings to help leverage your research projects. We will go through the basic of the cloud and what services are available. Then, we're going to go over the basics of creating a virtual machine and how to use it. Finally, to persist our data we will review how to pick the best storage solution for our needs. 
+  When you are working on research projects, it is helpful to have a basic understanding of cloud computing concepts. In this learning path, you’ll study the general terminology and services that of cloud computing, which should be useful to you when you’re working on research tasks. You’ll learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
   
   ## Learning objectives
 
