@@ -4,7 +4,7 @@ title: Evaluate migration scenarios to SQL Database Managed Instance
 metadata:
   title: Evaluate migration scenarios to SQL Database Managed Instance
   description: "Evaluate migration scenarios to SQL Database Managed Instance"
-  ms.date: 03/31/2020
+  ms.date: 01/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 20
 content: |
   [!include[](includes/2-evaluate-migration-scenarios.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "What's the lowest compatibility level supported by Azure SQL Database Managed Instance?"
-    choices:
-    - content: "SQL Server 2005"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database Managed Instance doesn't support the SQL Server 2005 compatibility level."
-    - content: "SQL Server 2008"
-      isCorrect: true
-      explanation: "That's correct. The lowest compatibility level supported by Azure SQL Database Managed Instance is SQL Server 2008 database."
-    - content: "SQL Server 2008 R2"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database Managed Instance supports an earlier compatibility level than SQL Server 2008 R2."
-  - content: "Which of these tools can be used to centralize the management and execution of a migration to Azure SQL Database Managed Instance?"
-    choices:
-    - content: "Azure Database Migration Service"
-      isCorrect: true
-      explanation: "That's correct. Use the Azure Database Migration Service to centralize the management and execution of a migration to Azure SQL Database Managed Instance. It uses the Database Migration Assistant, SQL Server Migration Assistant, and Data Experimentation Assistant to perform the assessments and migration to Azure SQL Database Managed Instance."
-    - content: "Data Migration Assistant"
-      isCorrect: false
-      explanation: "That's incorrect. You can't use Data Migration Assistant to centralize the management and execution of a migration to Azure SQL Database Managed Instance."
-    - content: "Microsoft Planning and Assessment"
-      isCorrect: false
-      explanation: "That's incorrect. You can't use Microsoft Planning and Assessment to centralize the management and execution of a migration to Azure SQL Database Managed Instance."

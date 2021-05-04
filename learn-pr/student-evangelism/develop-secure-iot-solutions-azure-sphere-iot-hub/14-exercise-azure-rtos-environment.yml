@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-azure-rtos-environment
+title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor the room environment
+metadata:
+  title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor the room environment
+  description: In this section, we will deploy an Azure RTOS real-time sensor application to monitor the room environment
+  ms.date: 11/10/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+  [!include[](includes/14-exercise-azure-rtos-environment.md)]

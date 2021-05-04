@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrating-open-source-workloads-to-azure
 metadata:
-  title: Migrating open-source workloads to Azure
-  description: Migrate open-source workloads
+  title: Migrate open-source databases to Azure
+  description: Migrate open-source databases to Azure
+  ms.date: 02/03/2021
   author: wwlpublish
-  ms.date: 1/28/2020
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrating open-source workloads to Azure
+title: Migrate open-source databases to Azure
 prerequisites: |
   - Knowledge of MySQL or PostgreSQL database management systems, including application development, administration, backup, and recovery techniques.
   - Knowledge of fundamental Azure concepts, and experience using the Azure portal.

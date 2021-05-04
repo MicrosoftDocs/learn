@@ -57,7 +57,7 @@ An autoscale action has a *cool down* period, specified in minutes. During this 
 
 ## Pairing autoscale rules
 
-You should plan for scaling-in when a workload decreases. Consider defining autoscale rules in pairs in the same autoscale condition. One autoscale rule should indicate how to scale the system out when a metric exceeds an upper threshold. The the other rule should define how to scale the system back in again when the same metric drops below a lower threshold. 
+You should plan for scaling-in when a workload decreases. Consider defining autoscale rules in pairs in the same autoscale condition. One autoscale rule should indicate how to scale the system out when a metric exceeds an upper threshold. Then other rule should define how to scale the system back in again when the same metric drops below a lower threshold. 
 
 ## Combining autoscale rules
 

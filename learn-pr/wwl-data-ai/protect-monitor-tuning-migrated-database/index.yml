@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
-  title: Protecting, monitoring and tuning a migrated database
-  description: "Protecting, monitoring, and tuning a migrated database"
-  ms.date: 08/02/2020
+  title: Protect, monitor, and tune a migrated database
+  description: "Protect, monitor, and tune a migrated database"
+  ms.date: 02/03/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Protecting, monitoring and tuning a migrated database
+title: Protect, monitor, and tune a migrated database
 summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
 abstract: |
   By the end of this module, you'll be able to:
@@ -32,6 +32,7 @@ units:
 - learn.wwl.protecting-monitoring-tuning-migrated-database.monitor-configure-database-server
 - learn.wwl.protecting-monitoring-tuning-migrated-database.trace-track-activity
 - learn.wwl.protecting-monitoring-tuning-migrated-database.configure-read-replicas
+- learn.wwl.protecting-monitoring-tuning-migrated-database.exercise-protect-monitor-tune-migrated-database
 - learn.wwl.protecting-monitoring-tuning-migrated-database.knowledge-check
 - learn.wwl.protecting-monitoring-tuning-migrated-database.summary
 badge:

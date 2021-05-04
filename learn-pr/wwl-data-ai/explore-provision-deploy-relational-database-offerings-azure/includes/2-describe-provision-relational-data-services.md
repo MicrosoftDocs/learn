@@ -31,7 +31,7 @@ Azure provides several tools you can use to provision services:
       "location": "[parameters('location')]",
       "tags": {
         "displayName": "SqlServer"
-      }
+      },
             "properties": {}
         }
     ]

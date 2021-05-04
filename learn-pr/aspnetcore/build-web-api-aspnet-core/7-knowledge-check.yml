@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Summary
+  ms.date: 02/11/2021
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Suppose you need to update a product's name. Which HTTP action verb is the best fit for this request?"
+      choices:
+      - content: "POST"
+        isCorrect: false
+        explanation: "The POST verb is intended for use when creating a new product."
+      - content: "PUT"
+        isCorrect: true
+        explanation: "The PUT verb is intended for use when modifying an existing product. Additionally, PATCH may be used to update individual properties."
+      - content: "DELETE"
+        isCorrect: false
+        explanation: "The DELETE verb is intended for use when removing a product."
+    - content: "Suppose you have successfully created a product via the POST verb. The response contains a `location` header. What's the purpose of that `location` header?"
+      choices:
+      - content: "To identify the location of the new resource that was created by the request."
+        isCorrect: true
+        explanation: "The `location` response header contains the URL to the newly created product. It typically resolves to a `GetById` type of action method."
+      - content: "To provide the client with a URL for the POST action."
+        isCorrect: false
+        explanation: "The client already used POST to create the product. This header is found in the response to that action."
+      - content: "To identify an existing product with the same name."
+        isCorrect: false
+        explanation: "Multiple products can exist with the same name, because we haven't written any code to validate otherwise."
+    - content: "In which scenario is it most appropriate to return an HTTP 404 status code, and how is it accomplished in ASP.NET Core?"
+      choices:
+      - content: "The product was successfully updated in the database. Call the `BadRequest` method to generate a 404."
+        isCorrect: false
+        explanation: "When a product is successfully updated, a 204 should be returned. Use the `NoContent` method."
+      - content: "When model validation fails because the action's required parameters are missing. Call the `BadRequest` method to generate a 404."
+        isCorrect: false
+        explanation: "When model validation fails, an HTTP 400 status code is returned. If the controller is annotated with the `[ApiController]` attribute, there's no need to explicitly call `BadRequest`."
+      - content: "When you've requested a product by ID and a match doesn't exist in the underlying data store. Call the `NotFound` method to generate a 404."
+        isCorrect: true
+        explanation: "The `NotFound` method generates an HTTP 404 status code in the response. This is best way to communicate that the requested data doesn't exist."

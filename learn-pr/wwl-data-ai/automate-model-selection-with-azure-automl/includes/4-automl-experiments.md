@@ -1,8 +1,8 @@
 To run an automated machine learning experiment, you can either use the user interface in Azure Machine Learning studio, or submit an experiment using the SDK.
 
-## Configuring an Automated Machine Learning Experiment
+## Configure an automated machine learning experiment
 
-The user interface provides an intuitive way to select options for your automated machine learning experiment. When using the SDK, you have greater flexibility, and you can set experiment options using the **AutoMLConfig** class, as shown in the following example:
+The user interface provides an intuitive way to select options for your automated machine learning experiment. When using the SDK, you have greater flexibility, and you can set experiment options using the **AutoMLConfig** class, as shown in the following example.
 
 ```python
 from azureml.train.automl import AutoMLConfig
@@ -20,7 +20,7 @@ automl_config = AutoMLConfig(name='Automated ML Experiment',
                              max_concurrent_iterations=4)
 ```
 
-### Specifying Data for Training
+### Specify data for training
 
 Automated machine learning is designed to enable you to simply bring your data, and have Azure Machine Learning figure out how best to train a model from it.
 
@@ -36,7 +36,7 @@ Alternatively:
 * Specify a dataset, dataframe, or numpy array of *X* values containing the training features, with a corresponding *y* array of label values.
 * Optionally, specify *X_valid* and *y_valid* datasets, dataframes, or numpy arrays of *X_valid* values to be used for validation.
 
-### Specifying the Primary  Metric
+### Specify the primary metric
 
 One of the most important settings you must specify is the **primary_metric**. This is the target performance metric for which the optimal model will be determined. Azure Machine Learning supports a set of named metrics for each type of task. To retrieve the list of metrics available for a particular task type, you can use the **get_primary_metrics** function as shown here:
 
@@ -46,11 +46,11 @@ from azureml.train.automl.utilities import get_primary_metrics
 get_primary_metrics('classification')
 ```
 
-> **More Information**: You can find a full list of primary metrics and their definitions in [Understand automated machine learning results](https://aka.ms/AA70rrw) in the documentation.
+**More Information**: You can find a full list of primary metrics and their definitions in [Understand automated machine learning results](https://aka.ms/AA70rrw).
 
-## Submitting an Automated Machine Learning Experiment
+## Submit an automated machine learning experiment
 
-You can submit an automated machine learning experiment like any other SDK-based experiment:
+You can submit an automated machine learning experiment like any other SDK-based experiment.
 
 ```python
 from azureml.core.experiment import Experiment
@@ -61,7 +61,7 @@ automl_run = automl_experiment.submit(automl_config)
 
 You can monitor automated machine learning experiment runs in Azure Machine Learning studio, or in the Jupyter Notebooks **RunDetails** widget.
 
-## Retrieving the Best Run and its Model
+## Retrieve the best run and its model
 
 You can easily identify the best run in Azure Machine Learning studio, and download or deploy the model it generated. To accomplish this programmatically with the SDK, you can use code like the following example:
 
@@ -73,11 +73,11 @@ for metric_name in best_run_metrics:
     print(metric_name, metric)
 ```
 
-## Exploring Preprocessing Steps
+## Explore preprocessing steps
 
 Automated machine learning uses scikit-learn pipelines to encapsulate preprocessing steps with the model. You can view the steps in the fitted model you obtained from the best run using the code above like this:
 
 ```python
 for step_ in fitted_model.named_steps:
-    print(step)
+    print(step_)
 ```

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: What is JSX?
+    choices:
+    - content: A combination of JavaScript and XML
+      isCorrect: true
+      explanation: Correct. JSX is a blend of JavaScript and XML.
+    - content: A combination of JavaScript and HTML
+      isCorrect: false
+      explanation: Incorrect. You can use HTML in JSX, but the HTML must follow XML rules. JSX combines JavaScript with XML.
+    - content: A new version of JavaScript
+      isCorrect: false
+      explanation: Incorrect. JSX is a hybrid of JavaScript and XML.
+    - content: The output of a React project
+      isCorrect: false
+      explanation: Incorrect. JSX is used to create React. JSX is converted into JavaScript code that the browser runs.
+  - content: Why would you use JSX to create a React application?
+    choices:
+    - content: JSX is the only supported method for creating React applications.
+      isCorrect: false
+      explanation: "Incorrect. You'll likely always use JSX to create React applications, but JSX isn't required."
+    - content: JSX allows for good code management. It injects the necessary logic with your HTML.
+      isCorrect: true
+      explanation: "Correct. JSX allows you to combine logic and HTML. It's the preferred method for creating React components and applications."
+    - content: JSX is supported by all browsers.
+      isCorrect: false
+      explanation: "Incorrect. JSX isn't supported natively in browsers. It's a development tool to create React applications and components."
+  - content: What is the purpose of a bundler in web development?
+    choices:
+    - content: To generate JSX
+      isCorrect: false
+      explanation: Incorrect. Bundlers convert JSX and other file types into JavaScript code that the browser can read.
+    - content: To convert JSX and other resources into JavaScript
+      isCorrect: true
+      explanation: Correct. Bundlers convert JSX and other file types into JavaScript code that the browser can read.
+    - content: To bootstrap an application
+      isCorrect: false
+      explanation: Incorrect. Some bundlers might include bootstrapping tools. But their primary goal is to convert JSX and other file types into JavaScript code that the browser can read.

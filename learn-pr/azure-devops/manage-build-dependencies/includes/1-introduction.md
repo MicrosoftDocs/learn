@@ -1,17 +1,17 @@
-In this module, you'll create a build pipeline that produces a package that can be used by multiple applications.
+In this module, you'll create a build pipeline that produces a package that can be used by multiple apps.
 
-It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
+It's likely that you've used open source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-You might also have your own application code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
+You might also have your own app code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
 
 There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here, you'll continue your work with the Tailspin web team, by creating a NuGet package for .NET that's hosted on Azure Artifacts.
 
 In this module, you will:
 
-- Learn ways to create and share packages that can be used by multiple applications
-- Create a build pipeline for your package and publish your package to Azure Artifacts
-- Connect an application to your package and build the application in Azure Pipelines
-- Push up a change to your package and update your application to use it
+- Learn ways to create and share packages that can be used by multiple apps.
+- Create a build pipeline for your package, and publish your package to Azure Artifacts.
+- Connect an app to your package, and build the app in Azure Pipelines.
+- Push up a change to your package, and update your app to use it.
 
 ## Prerequisites
 

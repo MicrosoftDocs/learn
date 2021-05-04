@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/28/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "When you want to write a line to the debug console only when you're debugging, which API should you use?"
+      choices:
+        - content: "System.Console.WriteLine"
+          isCorrect: false
+          explanation: "The System.Console APIs are always enabled and always write to the console."
+        - content: "System.Diagnostics.Trace.WriteLine"
+          isCorrect: false
+          explanation: "This API only writes to attached listeners when `TRACE` is defined."
+        - content: "System.Diagnostics.Debug.WriteLine"
+          isCorrect: true
+          explanation: "This API writes when attached to a debugger in the debug console output."
+        - content: "System.WriteLine"
+          isCorrect: false
+          explanation: "There's no API in the System namespace to write a line to the debug console."
+    - content: "If you want to write a debug message only when the count is `0`, what code would you use?"
+      choices:
+        - content: '`Debug.Assert(count != 0, "Count should not be 0.");`'
+          isCorrect: false
+          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, it will enter break mode."
+        - content: '`Debug.Assert(count == 0, "Count should not be 0.");`'
+          isCorrect: false
+          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, nothing will happen."
+        - content: '`Debug.WriteIf(count != 0, "Count should not be 0.");`'
+          isCorrect: false
+          explanation: "This code prints a message when the count doesn't equal 0."
+        - content: '`Debug.WriteIf(count == 0, "Count should not be 0.");`'
+          isCorrect: true
+          explanation: "This code will only print a debug message when the count is 0."
+    - content: "What are the top two values a debugger provides?"
+      choices:
+        - content: "Control of your program execution and observation of your program's state"
+          isCorrect: true
+          explanation: "The two main values almost every debugger provides are the ability to control program execution and to observe program state."
+        - content: "Modifying program values and changing your program output"
+          isCorrect: false
+          explanation: "Changing your program's output isn't useful because it will only have effect when the application is being debugged."
+        - content: "Observing your program's state and modifying your program values"
+          isCorrect: false
+          explanation: "Observing and modifying values are important, but it's also important to be able to control the flow of program execution."
+        - content: "Editing your program while running and editing program values"
+          isCorrect: false
+          explanation: "Editing programs is useful, but observing your program's operational state is another important value that the .NET debugger provides."
+    - content: "Which Visual Studio Code debugger panel is most useful to observe the current value of a specific variable across different functions?"
+      choices:
+        - content: "Use the Variables panel because it shows all variables that are currently in scope."
+          isCorrect: false
+          explanation: "While the Variables panel does display all variables currently in scope, it's not the best way to watch the value of a specific variable."
+        - content: "Hover over the variable in the code editor to display the value."
+          isCorrect: false
+          explanation: "While hovering does display the variable's current value, it's a manual process and isn't efficient."
+        - content: "Use the Watch panel to select specific variables or expressions to watch throughout the program's execution."
+          isCorrect: true
+          explanation: "Observing and modifying values are important, but it's also important to be able to control the flow of program execution."
+        - content: "Use the Call Stack panel."
+          isCorrect: false
+          explanation: "The Call Stack panel gives you information about the trail of function calls in your program, but it doesn't display variable values."

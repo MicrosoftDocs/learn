@@ -2,8 +2,8 @@
 uid: learn.data-ai.intro-to-azure-machine-learning-service
 metadata:
   title: Introduction to the Azure Machine Learning SDK
-  description: "Azure Machine Learning provides a cloud-based platform for training, deploying, and managing machine learning models."
-  ms.date: 10/10/2020
+  description: "Introduction to the Azure Machine Learning SDK"
+  ms.date: 12/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -30,6 +30,7 @@ products:
 units:
 - learn.data-ai.intro-to-azure-machine-learning-service.introduction
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-workspace
+- learn.data-ai.intro-to-azure-machine-learning-service.create-workspace
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-tools
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-experiment
 - learn.data-ai.intro-to-azure-machine-learning-service.using-azure-ml

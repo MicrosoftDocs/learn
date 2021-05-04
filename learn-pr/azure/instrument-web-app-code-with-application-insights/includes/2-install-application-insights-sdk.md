@@ -29,8 +29,8 @@ Azure App Service lets you enable Application Insights for an application withou
 
 When you configure and initialize the SDK in your code, it tracks the kinds of events and metrics that are common to all web applications, like request and response metrics, HTTP queue lengths, and performance counters like CPU and memory utilization. But most applications will have domain-specific events and metrics that you'll be interested in. For your video sharing app, it would help to know something about how customers use the videos. For example:
 
-- How often do users watch the whole video?
-- How often do users stop the video before the end?
+- How often do users watch a whole video?
+- How often do users stop a video before its end?
 - How often does buffering interrupt a video?
 - On average, how many videos are being viewed at the same time during each hour of the day?
 
@@ -58,7 +58,7 @@ dotnet add package Microsoft.ApplicationInsights.AspNetCore
 
 Every Application Insights resource in Azure is uniquely identified by a GUID *instrumentation key*. Applications that use the SDK to send telemetry data need to be configured with the instrumentation key of the Application Insights resource to which the data should be sent.
 
-You can find the instrumentation key for an Application Insights resource in the Azure portal, in the overview panel of the resource. You can also retrieve it via the Azure CLI by using this command:
+In the Azure portal, you can find the instrumentation key for an Application Insights resource in the overview panel of the resource. You can also retrieve it via the Azure CLI by using this command.
 
 ```azurecli
 az resource show \
@@ -70,7 +70,7 @@ az resource show \
 
 After you have the key, the ASP.NET Core version of the SDK supports two methods of configuring it:
 
-- **Configuration file**: In the `appsettings.json` file for your application, create a section called `ApplicationInsights` and add a new configuration value called `InstrumentationKey`, like so:
+- **Configuration file**: In the `appsettings.json` file for your application, create a section called `ApplicationInsights`, and add a new configuration value called `InstrumentationKey`, like so.
 
     ```json
     {
@@ -79,9 +79,10 @@ After you have the key, the ASP.NET Core version of the SDK supports two methods
       }
     }
     ```
+
 - **Environment variable**: Create an environment variable called `APPINSIGHTS_INSTRUMENTATIONKEY` that contains the value of the key. This value needs to be present in the environment when the application is started. For apps deployed to Azure App Service, you create an environment variable by configuring an application setting. If you enable runtime instrumentation in an App Service web app, Azure will automatically create the setting with the correct value.
- 
-The best practice is to use a different instrumentation key and Application Insights resource for each environment in which your application runs to prevent unrelated telemetry from being grouped together. For this reason, it's often simpler to use an environment variable and include this configuration as part of the setup of your app's deployment environment.
+
+The best practice is to use a different instrumentation key and Application Insights resource for each environment in which your application runs to prevent unrelated telemetry from being grouped together. For this reason, it's often simpler to use an environment variable, and include this configuration as part of the setup of your app's deployment environment.
 
 ### Initialize the SDK in code
 
@@ -89,7 +90,7 @@ Finally, you must initialize Application Insights in your web app.
 
 ASP.NET Core applications start up by calling `CreateWebHostBuilder()` in *Program.cs*. You can configure many aspects of the application and the runtime by chaining additional method calls here, including Application Insights. A call to `UseApplicationInsights()` will load your instrumentation key from configuration, trigger the SDK to automatically generate telemetry about many application events, and enable access to a `TelemetryClient` object from controllers and other components for custom event and metric tracking.
 
-Here's what the relevant section of *Program.cs* will look like after you initialize Application Insights:
+Here's what the relevant section of *Program.cs* will look like after you initialize Application Insights.
 
 ```C#
 public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

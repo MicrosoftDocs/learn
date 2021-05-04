@@ -3,7 +3,7 @@ uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service
 metadata:
   title: Extract insights from videos with the Video Indexer service
   description: "Learn how to use the Video Indexer API to upload, index, retrieve insights, and search for content in video files."
-  ms.date: 10/21/2020
+  ms.date: 10/24/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

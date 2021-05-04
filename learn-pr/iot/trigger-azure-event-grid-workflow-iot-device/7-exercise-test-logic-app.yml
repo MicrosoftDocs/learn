@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Test your logic app with new devices
   description: Exercise - Test your logic app with new devices
   ms.date: 03/20/2020
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True

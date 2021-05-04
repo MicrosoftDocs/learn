@@ -1,4 +1,4 @@
-Data preparation is a broad term that encompasses the beginning stages of getting the data to the point at which it's ready for modeling. This step is the responsibility of both the data engineer and the data scientist. The data engineer does most of the data preparation by making the data accessible, clean, and ready for the data scientist to work with. However, most data scientists still need to do large amount of data cleansing.
+Data preparation is a broad term that encompasses the beginning stages of getting the data to the point at which it's ready for modeling. This step is the responsibility of both the data engineer and the data scientist. The data engineer does most of the data preparation by making the data accessible, clean, and ready for the data scientist to work with. However, most data scientists still perform additional data cleansing.
 
 Let's focus on the portion of this process that pertains to the data scientist.
 

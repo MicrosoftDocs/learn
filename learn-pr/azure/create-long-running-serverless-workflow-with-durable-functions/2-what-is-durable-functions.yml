@@ -39,7 +39,7 @@ quiz:
       explanation: "That is correct. The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed."
   - content: "Which of the following best explains why the Human Interaction application pattern benefits from Durable Functions?"
     choices:
-    - content: "A manual process within an automated process is tricky because people aren't as highly available and as responsive as computers."
+    - content: "A manual process within an automated process because people aren't as highly available and as responsive as computers."
       isCorrect: true
       explanation: "Correct! Human interaction can be incorporated using timeouts and compensation logic."
     - content: "It addresses the problem of coordinating the state of long-running operations with external clients."

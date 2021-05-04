@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.iot.output-from-adt-to-downstream-services
+metadata:
+  title: Output from Azure Digital Twins to downstream services
+  description: In this module, you'll learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
+  ms.date: 11/30/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Output from Azure Digital Twins to downstream services
+summary: |
+  In this module, you'll learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
+  It's the fun part of this learning path. You can finally start to experience the outcome of your hard work in the form of insights, dashboards, visualizations, and more.
+abstract: |
+  In this module, you will:
+  - Build and simulate the chocolate factory twin.
+  - Create a route and filter for twin update notifications.
+  - Create and configure an Azure function and send telemetry messages to an event hub.
+  - Create an Azure Time Series Insights instance and connect it to Azure Digital Twins.
+  - Visualize and query your data in Time Series Insights.
+prerequisites: |
+  - (Recommended.) Introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) learning path.
+  - A basic understanding of the Azure CLI. We recommend that you complete the [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module. 
+  - [The Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+    - We recommend that you install the Azure CLI locally. 
+    - We don't recommend that you use Azure Cloud Shell. It will time out because of the length of the lab. 
+  - PowerShell
+    - On Windows, PowerShell is built in.
+    - On macOS, you need to install [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).
+  - (For the exercise units.) Access to an Azure subscription in which you have the Global Administrator role for your account and an Azure Active Directory tenant. 
+  - (Recommended.) Some experience working with Time Series Insights. You can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/learn/modules/explore-analyze-time-series-insights/) module. 
+  - [Node.js](https://nodejs.org/en/download/) to run the device simulator application.
+  - [Git](https://git-scm.com/downloads).
+  - [Visual Studio Code](https://code.visualstudio.com/).
+  - [.NET Core 3.1](https://dotnet.microsoft.com/download).
+  - [C# Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+  - [Azure Functions Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+products:
+- azure-iot
+- azure-digital-twins
+units:
+- learn.iot.output-from-adt-to-downstream-services.introduction
+- learn.iot.output-from-adt-to-downstream-services.scenario
+- learn.iot.output-from-adt-to-downstream-services.exercise-build-simulate-chocolate-factory-twin
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-route-filter-twin-update-notifications
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-configure-deploy-azure-function
+- learn.iot.output-from-adt-to-downstream-services.exercise-visualize-data-time-series-insights
+- learn.iot.output-from-adt-to-downstream-services.knowledge-check
+- learn.iot.output-from-adt-to-downstream-services.summary
+badge:
+  uid: learn.iot.output-from-adt-to-downstream-services.badge

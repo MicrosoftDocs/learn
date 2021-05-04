@@ -9,4 +9,4 @@ In this module, you learned how to enroll Azure VMs in Azure Update Management. 
 You can learn more by reviewing the following documents:
 
 - [Tutorial: Monitor changes and update a Windows virtual machine in Azure](https://aka.ms/tutorial-config-management?azure-portal=true)
-- [Manage updates and patches for your Azure VMs](https://aka.ms/automation-tutorial-update-management?azure-portal=true)
+- [Manage updates and patches for your Azure VMs](https://docs.microsoft.com/azure/automation/update-management/manage-updates-for-vm)

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-devices-with-microsoft-endpoint-manager.7-device-enrollment-methods
+title: Understand device enrollment methods
+metadata:
+  title: Understand device enrollment methods
+  description: Learn about methods used to enroll devices using Microsoft Endpoint Manager.
+  ms.date: 10/23/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-device-enrollment-methods.md)]

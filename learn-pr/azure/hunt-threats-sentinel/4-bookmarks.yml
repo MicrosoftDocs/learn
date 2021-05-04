@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.hunt-threats-sentinel.4-bookmarks
+metadata:
+  title: Save key findings with bookmarks
+  description: Save key findings with bookmarks
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Save key findings with bookmarks
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-bookmarks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do bookmarks aid in the threat-hunting process?"
+    choices:
+    - content: "They enable the hunter to save query results for later reference."
+      isCorrect: true
+      explanation: "This answer is correct."
+    - content: "They enable the hunter to track incident status and resolution."
+      isCorrect: false
+      explanation: "Bookmarks are used to track query results, not incident management."
+    - content: "They enable the hunter to create workbooks from query results."
+      isCorrect: false
+      explanation: "Bookmarks can't be used to create workbooks."

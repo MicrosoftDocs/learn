@@ -27,7 +27,7 @@ quiz:
     - content: "Use the Azure portal to add a new spot node pool to the AKS cluster."
       isCorrect: false
       explanation: "The Azure portal currently doesn't support the option to add spot node pools. "
-    - content: "Run the `az aks node pool add` command to add a new spot user node pool to the AKS cluster."
+    - content: "Run the `az aks nodepool add` command to add a new spot user node pool to the AKS cluster."
       isCorrect: true
       explanation: "Spot node pools must be added to an AKS cluster. They can't be updated, and availability can't be guaranteed, because Azure will allocate VMs to the underlying scale set only if capacity is available."
 

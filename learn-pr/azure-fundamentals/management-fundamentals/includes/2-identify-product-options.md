@@ -8,7 +8,8 @@ There are two approaches to infrastructure as code: *imperative* code and *decla
 
 ## Your product options
 
-Microsoft offers a variety of tools and services to manage your cloud environment, each aimed at different scenarios and users.
+Microsoft offers a variety of tools and services to manage your cloud environment, each aimed at different scenarios and users. The following video describes some of these options.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MylB]
 
 ### The Azure portal
 
@@ -42,7 +43,7 @@ In many respects, the Azure CLI is almost identical to Azure PowerShell in what 
 
 ### ARM templates
 
-Although it's possible to write imperative code in Azure PowerShell or the Azure CLI to set up and tear down one Azure resource or orchestrate an infrastructure comprising hundreds of resources, there's a better way implement this functionality.  
+Although it's possible to write imperative code in Azure PowerShell or the Azure CLI to set up and tear down one Azure resource or orchestrate an infrastructure comprising hundreds of resources, there's a better way to implement this functionality.  
 
 By using Azure Resource Manager templates (ARM templates), you can describe the resources you want to use in a declarative JSON format.  The benefit is that the entire ARM template is verified before any code is executed to ensure that the resources will be created and connected correctly. The template then orchestrates the creation of those resources in parallel. That is, if you need 50 instances of the same resource, all 50 instances are created at the same time.  
 

@@ -15,7 +15,7 @@ total = breakfast + lunch + dinner + snack
 print("Calorie content for " + date + ": " + str(total))
 ```
 
-This code is merely *one possible solution*.  You might have chosen different variable names, or you might have attempted to perform the addition operation on the last line of the code.  However, you should have used variables, the `print()` function, the `input()` function, string concatenation, addition, and so on, to produce the desired output.  
+This code is merely *one possible solution*. You might have chosen different variable names, or you might have attempted to perform the addition operation on the last line of the code. However, you should have used variables, the `print()` function, the `input()` function, string concatenation, addition, and so on, to produce the desired output.
 
 Again, your actual output might be different, depending on the values you entered at each prompt.
 
@@ -36,4 +36,4 @@ Calorie content for December 7th, 2020: 1200
 If you're successful, congratulations!  Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, it might be a good idea to review the earlier units in this module before you continue on.  The new ideas we'll discuss in the next modules depend on your understanding of the ideas that we've presented so far.
+> If you had trouble completing this challenge, it might be a good idea to review the earlier units in this module before you continue on. The new ideas we'll describe in the next modules depend on your understanding of the ideas that we've presented so far.

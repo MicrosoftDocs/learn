@@ -14,101 +14,86 @@ Run the following command in the Cloud Shell to add a device template in your Io
 az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/deviceTemplates/store_monitoring_device \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "types": [
-    "DeviceModel"
-  ],
-  "displayName": "Store monitoring device",
-  "capabilityModel": {
-    "@id": "urn:contoso:store_monitor_dcm:1",
-    "@type": [
-      "CapabilityModel"
+    "@id": "dtmi:contoso:store_monitor;1",
+    "types": [
+      "ModelDefinition",
+      "DeviceModel"
     ],
-    "displayName": "Environment Sensor Capability Model",
-    "contents": [],
-    "implements": [
-      {
-        "@id": "urn:contoso:store_monitor:sensor:1",
-        "@type": [
-          "InterfaceInstance"
-        ],
-        "displayName": "Environmental Sensor",
-        "name": "sensor",
-        "schema": {
-          "@id": "urn:contoso:EnvironmentalSensor_api:1",
+    "displayName": "Store monitoring device",
+    "capabilityModel": {
+      "@id": "dtmi:contoso:store_monitor_dcm;1",
+      "@type": "CapabilityModel",
+      "displayName": "Environment Sensor Capability Model",
+      "contents": [
+        {
           "@type": [
-            "Interface"
+            "Telemetry"
           ],
-          "contents": [
-            {
-              "@type": [
-                "Telemetry"
-              ],
-              "description": "Current temperature on the device",
-              "displayName": "Temperature",
-              "name": "temp",
-              "schema": "double"
-            },
-            {
-              "@type": [
-                "Telemetry"
-              ],
-              "description": "Current humidity on the device",
-              "displayName": "Humidity",
-              "name": "humid",
-              "schema": "double"
-            },
-            {
-              "@type": [
-                "Property"
-              ],
-              "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
-              "displayName": "Brightness Level",
-              "name": "brightness",
-              "writable": true,
-              "schema": "long"
-            },
-            {
-              "@type": [
-                "Command"
-              ],
-              "commandType": "synchronous",
-              "description": "This command reboots the device after delay seconds.",
-              "displayName": "Reboot device",
-              "name": "reboot",
-              "request": {
-                "@type": [
-                  "SchemaField"
-                ],
-                "displayName": "Seconds delay before reboot",
-                "name": "delay",
-                "schema": "long"
-              }
-            }
-          ]
+          "description": "Current temperature on the device",
+          "displayName": "Temperature",
+          "name": "temp",
+          "schema": "double"
+        },
+        {
+          "@type": [
+            "Telemetry"
+          ],
+          "description": "Current humidity on the device",
+          "displayName": "Humidity",
+          "name": "humid",
+          "schema": "double"
+        },
+        {
+          "@type": [
+            "Property"
+          ],
+          "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
+          "displayName": "Brightness Level",
+          "name": "brightness",
+          "writable": true,
+          "schema": "long"
+        },
+        {
+          "@type": [
+            "Command"
+          ],
+          "description": "This command reboots the device after delay seconds.",
+          "displayName": "Reboot device",
+          "name": "reboot",
+          "request": {
+            "@type": [
+              "SchemaField"
+            ],
+            "displayName": "Seconds delay before reboot",
+            "name": "delay",
+            "schema": "long"
+          }
         }
-      }
+      ]
+    },
+    "solutionModel": {
+      "@type": [
+        "SolutionModel"
+      ],
+      "@id": "dtmi:contoso:store_monitor_sm;1",
+      "cloudProperties": [
+        {
+          "@type": "CloudProperty",
+          "displayName": "Store Name",
+          "name": "storename",
+          "schema": "string",
+          "valueDetail": {
+            "@type": "StringValueDetail"
+          }
+        }
+      ],
+      "initialValues": [],
+      "overrides": []
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
     ]
-  },
-  "solutionModel": {
-    "@type": [
-      "SolutionModel"
-    ],
-    "cloudProperties": [
-      {
-        "@type": [
-          "CloudProperty"
-        ],
-        "displayName": "Store Name",
-        "name": "storename",
-        "schema": "string",
-        "valueDetail": {
-          "@type": "ValueDetail/StringValueDetail"
-        }
-      }
-    ],
-    "initialValues": [],
-    "overrides": []
-  }
 }'
 ```
 
@@ -210,7 +195,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/stor
 You can use the REST API to view the last known value for a device's telemetry measurement. Run the following command to view the last known humidity value from the **storemon-sim-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/telemetry/humid \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/telemetry/humid \
 --headers Authorization="$API_TOKEN"
 
 ```

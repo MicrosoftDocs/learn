@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-vm-with-azure-bastion.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/12/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

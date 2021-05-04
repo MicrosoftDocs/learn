@@ -1,51 +1,62 @@
-In the previous unit, you wrote an Azure Function that passes each photo uploaded to a blob container to the Custom Vision Service to determine whether the photo contains a polar bear. The only output from the function was log output showing the verdict rendered by the Custom Vision Service, as well as the ID and location of the camera that snapped the photo. Now you will create an Azure SQL Database and modify the function to write to the database. This will set the stage for visualizing polar-bear sightings in Power BI, which will draw information about what's being spotted and where from the database.
+In the last unit, you wrote a function app in Azure that passes each photo that's uploaded to a blob container to the Custom Vision service to determine whether the photo contains a polar bear. The only output from the function app was log output that shows the verdict that was rendered by the Custom Vision service, and the ID and location of the camera that captured the photo. 
 
-## Create an Azure SQL Database
+Now, you'll use Azure SQL Database to create a SQL database and modify the function app to write to the database. The SQL database sets the stage for visualizing polar bear sightings in Power BI, which draws information from the database.
 
-Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This database will collect output from the Azure Function you deployed previously. Later, you will connect the database to Power BI to show where polar bears are being spotted.
+## Create a SQL database
 
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true). Click the **Cloud Shell** button in the toolbar at the top of the page to open the Azure Cloud Shell. If you would prefer to run the Cloud Shell in its own browser window, open a separate browser instance and navigate to <https://shell.azure.com>.
+Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Database. The database collects output from the function app you deployed. Later, you'll connect the SQL database to Power BI to show where cameras are capturing photos of polar bears.
 
-    ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
+1. In a browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). In the global controls, select Azure Cloud Shell.
 
-    _Opening the Azure Cloud Shell_
+    ![Screenshot of the global controls in the Azure portal with the Azure Cloud Shell icon highlighted.](../media/cloud-shell.png)
 
-1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
+    _Open Azure Cloud Shell_
+
+   You also can open Cloud Shell by going to [https://shell.azure.com](https://shell.azure.com?azure-portal=true) in a separate browser window.
+
+1. Run the following code to create values for the SQL database server, the admin username, the admin password, and the database name. Replace `<server-name>`, `<admin-username>`, `<admin-password>`, and `<database-name>` in the code example with your own values.
+
+    Keep in mind the following constraints when you choose the values:
+    
+    - `SERVER_NAME` must be unique in Azure. The server name can use only lowercase letters, numbers, and hyphens. The first character and the last character in the name can't be a hyphen.
+    - `ADMIN_USERNAME`  can't be a name that's reserved in SQL Server, such as `admin` or `sa`. You can use the name `adminuser`.
+    - `ADMIN_PASSWORD`  must be at least 8 characters in length.
 
     ```bash
-    SERVER_NAME="<server name>"
-    ADMIN_USERNAME="<admin username>"
-    ADMIN_PASSWORD="<admin password>"
-    DATABASE_NAME="<database name>"
+    SERVER_NAME="<server-name>"
+    ADMIN_USERNAME="<admin-username>"
+    ADMIN_PASSWORD="<admin-password>"
+    DATABASE_NAME="<database-name>"
     ```
 
-    > [!NOTE]
-    >  The server name must be unique within Azure, and the admin password must be at least 8 characters long. The user name cannot be one that is reserved in SQL Server such as "admin" or "sa." The user name "adminuser" is valid if you want to use that.
+    > [!Note]
+    > Copy and save the admin username and password values to use later.
 
-    > [!NOTE]
-    > Remember the user name and password you enter, because you will need them later.
-
-1. Execute the following command in the Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into the Cloud Shell.
+1. In Cloud Shell, run the following command to create a SQL database server in the `polar-bear-rg` resource group. To paste commands in Cloud Shell, you can select Shift+Insert.
 
     ```bash
     az sql server create --name $SERVER_NAME --resource-group polar-bear-rg --location southcentralus --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD
     ```
 
-1. Use the following command to create a database assigned the [S0 service tier](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers).
+1. Create a SQL database that's assigned to the [S0 service tier](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers?azure-portal=true).
 
     ```bash
     az sql db create --resource-group polar-bear-rg --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0
     ```
 
-1. Go to the database server in the [Azure portal](https://portal.azure.com?azure-portal=true) and click **Firewalls and virtual networks** in the menu on the left. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to the server, and click **+ Add client IP** so you can connect to the database from Power BI Desktop later. Then click **Save** at the top of the blade to save these changes.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), open your new SQL database server. Then, in the resource menu, under **Security**, select **Firewalls and virtual networks**:
 
-    ![Configuring the database server](../media/configure-database-server.png)
+    1. So you can connect to the database from Power BI Desktop later, select **Add client IP**.
+    1. For **Allow Azure services and resources to access this server**, select **Yes**.
+    1. Select **Save**. If prompted, select **OK**.
 
-    _Configuring the database server_
+    ![Screenshot that highlights Firewalls and virtual networks settings to select for the s q l database server.](../media/configure-database-server.png)
 
-1. Open the database in the Azure portal. Click **Query editor** in the menu on the left and enter the user name and password you specified in Step 2. Then click **OK** to log in to the database.
+    _Configure the SQL database server_
 
-1. Paste the following statements into the query window and click **Run** to run them and create a database table:
+1. Next, open the database. Then, in the resource menu, select **Query editor**, and enter the admin username and password you set in step 2. Select **OK**.
+
+1. Copy the following code and paste it in the query window. Then, to create a SQL database table, select **Run** to run the code.
 
     ```sql
     CREATE TABLE [dbo].[PolarBears]
@@ -73,25 +84,27 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     GO
     ```
 
-1. Expand the list of tables in the treeview on the left and confirm that the "dbo.PolarBears" table was created, and that it has the following schema:
+1. Select the **Tables** folder to check that the `dbo.PolarBears` table was created and that it has the following schema:
 
-    ![The dbo.PolarBears table](../media/polar-bears-table.png)
+    ![Image that shows the Tables folder above the d b o dot Polar Bears table and a list of columns and a key under the table.](../media/polar-bears-table.png)
 
     _The dbo.PolarBears table_
 
-Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate that the corresponding image does or does not contain a polar bear.  
+    In the table, the `IsPolarBear` column is set to `1` or `0` to indicate whether the image in a row contains a polar bear. A value of `1` (True) means that the image shows a polar bear.
 
-## Modify the Azure Function
+## Modify the function app
 
-The next step is to modify the Azure Function that you created to write output to the Azure SQL Database.
+The next step is to modify the function app you created to write output to the SQL database.
 
-1. Open the Azure Function App that you created in the previous unit in the Azure portal. Click **Platform features** to open the "Platform features" tab, and then click **Console** to open a function console. Execute the following command in the function console to install the NPM [tedious](https://www.npmjs.com/package/tedious) package, and ignore any warning messages that are displayed. `tedious` provides an API allowing Node.js apps to talk to SQL Server and Azure SQL Database.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), go to your `BlobTrigger` function. In the resource menu, under **Development Tools**, select **Console**.
+
+    - In the function app console, run the following code to install the NPM [tedious](https://www.npmjs.com/package/tedious?azure-portal=true) package. You can ignore any warning messages. The `tedious` package provides an API that Node.js apps use to talk to SQL Server and Azure SQL Database.
 
     ```bash
     npm install tedious
     ```
 
-1. Open the Function App's `BlobTrigger` function. Add the following statements to the top of the function beginning at line 5, replacing DATABASE_SERVER_NAME with the name you assigned to the database server and DATABASE_NAME with the database name:
+1. In line 5 of the function, add the following code. Replace `DATABASE_SERVER_NAME` with the name you assigned to the database server, and replace `DATABASE_NAME` with the database name.
 
     ```javascript
     var databaseUserName = process.env.DATABASE_USER_NAME;
@@ -100,7 +113,10 @@ The next step is to modify the Azure Function that you created to write output t
     var databaseName = 'DATABASE_NAME';
     ```
 
-1. Find the following statements near the end of the function:
+    > [!NOTE]
+    > In the code, don't replace the `DATABASE_ADMIN_NAME` or `DATABASE_PASSWORD` placeholders with other values. You'll create values for these placeholders in a later step.
+
+1. Near the end of the function, find the following statements
 
     ```javascript
     if (isPolarBear) {
@@ -113,7 +129,7 @@ The next step is to modify the Azure Function that you created to write output t
     context.done();
     ```
 
-    Replace these statements with the following:
+    Replace the statements with the following code. Adjust the code indentation as needed.
 
     ```javascript
     // Update the database
@@ -165,33 +181,36 @@ The next step is to modify the Azure Function that you created to write output t
     });
     ```
 
-    These statements connect to the database and execute an INSERT command to record the latest sighting. The row added to the database includes the ID, latitude, and longitude of the camera that took the photograph, the URL of the blob containing the photograph, the current date and time, and an `IsPolarBear` value that indicates whether the photograph contains a polar bear.
+    These statements connect to the database and execute an `INSERT` command to record the latest polar bear sighting. The row added to the database includes the ID, latitude, and longitude of the camera that took the photograph, the URL of the blob that contains the photograph, the current date and time, and an `IsPolarBear` value that indicates whether the photograph contains a polar bear.
 
-1. Click **Save** to save your changes to the function. Return to the "Platform features" tab and click **Function app settings**. Click **Manage application settings** and add two application settings to the Function App:
+    Select **Save**.
 
-    - One named DATABASE_USER_NAME whose value is the user name you specified when you created the database server
-    - One named DATABASE_PASSWORD whose value is the password you specified when you created the database server
+1. In the portal, return to your function app overview page. Add two application settings to the function app:
 
-    Finish up by clicking **Save** at the top of the blade to save the new application settings.
+    1. In the resource menu, select **Settings**, and then select **Configuration**.
+    1. Select **Application settings**, and then select **New application**.
+    1. In **Add/Edit application setting**, add a setting named `DATABASE_ADMIN_NAME`. Set the value to the admin name you specified when you created the database server. Select **OK**.
+    1. Repeat the preceding step to add a setting named `DATABASE_PASSWORD`. Set the value to the password you specified when you created the database server. Select **OK**.
+    1. Select **Save**. If you're prompted, select **Continue**.
 
-1. Return to the project directory in a Command Prompt or terminal window. Then use the following command to run **run.js**:
+1. In a Command Prompt or terminal window, return to the project directory. Then, run *run.js*.
 
     ```bash
     node run.js
     ```
 
-1. Let **run.js** run for a couple of minutes. Then return to the database in the Azure portal and use the query editor to execute the following query:
+1. Let *run.js* run for a couple minutes. Then, return to the database in the portal. In the query editor, run this code:
 
     ```sql
     SELECT * FROM dbo.PolarBears
     ```
 
-1. Confirm that the table contains a few rows representing images that were submitted to the Custom Vision Service for analysis. Look at the "IsPolarBear" column in each row. How many of the images that were analyzed contain a polar bear?
+1. Check that the table contains a few rows that represent images that were submitted to Custom Vision for analysis. Look at the `IsPolarBear` column in each row. How many images that were analyzed contain a polar bear?
 
-    ![Rows written to the database by the Azure Function](../media/query-results.png)
+    ![Screenshot that shows the rows written to the database by the function app.](../media/query-results.png)
 
-    _Rows written to the database by the Azure Function_
+    _Rows written to the database by the function app_
 
-1. Return to the Command Prompt or terminal window and press **Ctrl+C** to stop **run.js**.
+1. Return to the Command Prompt or terminal window, and select Ctrl+C to stop *run.js*.
 
-In the next unit, you will use Power BI to produce a more compelling — and graphical — visualization of the data.
+Next, you'll use Power BI to produce a more compelling graphical visualization of the data.

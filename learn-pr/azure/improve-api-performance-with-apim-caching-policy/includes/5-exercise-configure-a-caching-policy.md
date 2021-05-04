@@ -11,7 +11,7 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 
 ## Create a Redis cache
 
-In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principals. One difference with this tier is that it does not have its own internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now, so that the process can complete while we take other steps:
+In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principles. One difference with this tier is that it does not have its internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now so that the process can complete while we take other steps:
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
 1. Then select **Databases** > **Azure Cache for Redis**.
@@ -78,13 +78,13 @@ Now that we have a functional API, let's set up API Management:
     | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
     | Location | Choose the same location you used for the Redis Cache. |
     | Organization | BoardGames |
-    | Administrator email | Enter your own email address or use the default |
+    | Administrator email | Enter your email address or use the default |
     | Pricing tier | Consumption |
     | | |
 
 ## Configure API Management to use the external cache
 
-Now, if the Redis cache deployment is complete, you can configure the API Management instance to use it as an external cache:
+Now, if the Redis cache deployment has been complete, you can configure the API Management instance to use it as an external cache:
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then click the new Redis cache.
 1. Check the **Status** value at the top of the window. If the status has not yet reached **Running**, you'll have to wait until the Redis cache deployment has completed. You can refresh this page every couple of minutes to check the status.
@@ -175,7 +175,7 @@ We'll run the same test on the API in API Management and observe the results of 
 1. Examine the results. Note the precise time that is included in the response.
 1. Click the **Send** button to resend the request. Notice that the time in the response has not changed, because the cached response has been served.
 
-## Configure the cache to vary by query parameter
+## Configure the cache to vary by a query parameter
 
 To ensure that the system caches different responses for different board heights, you must configure the cache to vary by the **height** query parameter. You don't want to vary by the **width** parameter, because that value is not used in the cost calculation:
 

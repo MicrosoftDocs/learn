@@ -6,10 +6,9 @@ metadata:
   description: Read input from the user with the keyboard
   ms.date: 04/30/2019
   author: ShanaMatthews
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/6-reading-input.md)]

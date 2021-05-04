@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this unit, we introduce concepts required to be successful in the commercial marketplace.
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

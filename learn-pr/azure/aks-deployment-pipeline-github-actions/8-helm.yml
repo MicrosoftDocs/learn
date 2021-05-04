@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.8-helm
 metadata:
-  title: Deployment using Helm
-  description: Discover and understand Helm, a tool that will help you easily create and deploy AKS applications.
+  title: Deploy by using Helm
+  description: Discover and understand Helm, a tool that helps you easily create and deploy AKS applications.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: Deployment using Helm
+title: Deploy by using Helm
 durationInMinutes: 10
 content: |
   [!include[](includes/8-helm.md)]
@@ -17,24 +17,24 @@ quiz:
   questions:
     - content: "What is Helm?"
       choices:
-        - content: "It's an open source tool hosted by CNCF that helps developers deploy and maintain Kubernetes-ready applications."
+        - content: "An open-source tool that helps developers deploy and maintain Kubernetes-ready applications."
           isCorrect: true
-          explanation: "Correct, Helm is one of the most useful tools in the Kubernetes toolchain."
-        - content: "It's a CI tool that helps build and deploy Docker containers."
+          explanation: "Correct. Helm is one of the most useful tools in the Kubernetes toolchain."
+        - content: "A CI tool that helps you build and deploy Docker containers."
           isCorrect: false
-          explanation: "Despite being used in CI/CD pipelines, Helm is not related to Docker images."
-        - content: "It's a different implementation of a Kubernetes cluster which aims to facilitate the use of the CLI."
+          explanation: "Despite being used in CI/CD pipelines, Helm isn't related to Docker images."
+        - content: "A Kubernetes cluster implementation that makes it easier to use the CLI."
           isCorrect: false
-          explanation: "Helm is not a different implementation of Kubernetes."
+          explanation: "Helm isn't a different implementation of Kubernetes."
 
     - content: "Why is Helm useful in a CI pipeline?"
       choices:
         - content: "We can use Helm charts to provide easier access to our hosted Docker images."
           isCorrect: false
-          explanation: "Helm is not used to provide faster or easier access to Docker images."
+          explanation: "Helm isn't used to provide faster or easier access to Docker images."
         - content: "Helm allows us to better version our Kubernetes' manifest YAML files."
           isCorrect: false
-          explanation: "This can be done without Helm, too."
-        - content: "Because Helm provides several features such as templating which are not present in Kubernetes templates."
+          explanation: "You can version your Kubernetes' manifest YAML files without Helm, too."
+        - content: "Helm provides several features that aren't included in Kubernetes templates, including templating."
           isCorrect: true
-          explanation: "Correct, beyond that, Helm also allows one-click deployment and provides a CLI to resolve chart dependencies, reducing the number of steps needed to deploy a K8S application."
+          explanation: "Correct. Beyond offering additional features like templating, Helm allows one-click deployment and provides a CLI to resolve chart dependencies, so the number of steps needed to deploy a Kubernetes application are reduced."

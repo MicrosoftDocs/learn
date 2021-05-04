@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.2-overview
+title: Overview of Sustainable Software Engineering
+metadata:
+  title: Overview of Sustainable Software Engineering
+  description: This module will explain what Sustainable Software Engineering is and the two core philosophies that underpin it.
+  ms.date: 10/26/2020
+  author: ashussai
+  ms.author: ashussai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-overview.md)]

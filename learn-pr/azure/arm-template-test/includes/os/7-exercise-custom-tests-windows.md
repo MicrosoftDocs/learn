@@ -1,18 +1,18 @@
 ## Author and run a custom test
 
-You will author a custom test and use the Test Toolkit tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement for the product the team you are working on.
+You'll author a custom test and use the test toolkit tool to run it. You'll also correct the deployment template to ensure that the test passes. The custom test will look to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team where you're working.
 
-It's recommended that you have two text editors open for this exercise.
+We recommend that you have two text editors open for this exercise:
 
-- **The first text editor, authoring custom test**. Locate the path of the subdirectory *arm-ttk\\testcases\\deploymentTemplate\\* of the Testing toolkit installation directory. From here you want to run Visual Studio Code where you will be creating and editing a custom test.
-- **The second text editor, authoring the template file and run tests**. You select the location of this path to your liking. The only thing you should be wary of is to ensure the path is empty and has no subdirectories. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked. You also want to start an integrated PowerShell terminal with this Visual Studio Code instance to make it easy to run tests.
+- **Author a custom test**. Locate the path of the subdirectory *arm-ttk\\testcases\\deploymentTemplate\\* of the test toolkit's installation directory. From here, you'll run Visual Studio Code, where you'll create and edit a custom test.
+- **Author a template file and run tests**. You select the location that you want for this path. We recommend that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked. Start an integrated terminal with this Visual Studio Code instance to make it easy to run tests.
 
 ### Create the template file
 
-Select a directory of your choosing and create a file called *azuredeploy.json*.
+Choose a directory and create a file called *azuredeploy.json*.
 
 > [!WARNING]
-> Ensure the selected directory is an empty one with no sub directories
+> Ensure that the selected directory is empty with no subdirectories.
 
 Give it the following content:
 
@@ -27,9 +27,9 @@ Give it the following content:
 
 ## Create the custom test
 
-1. Open up a terminal.
+1. Open a terminal.
 
-1. Navigate to your installation directory for the Test Toolkit tool.
+1. Go to your installation directory for the test toolkit.
 
 1. Place yourself in the subdirectory *arm-ttk\\testcases\\deploymentTemplate*.
 
@@ -40,9 +40,9 @@ Give it the following content:
    ```
 
    > [!NOTE]
-   > Open VS Code manually and open the directory above if Visual Studio Code isn't on the path.
+   > Open Visual Studio Code manually and open the directory if Visual Studio Code isn't on the path.
 
-1. Create a file *Custom-ParameterNaming.test.ps1* and give the file the following content:
+1. Create a file called *Custom-ParameterNaming.test.ps1* and give the file the following content:
 
    ```powershell
    param(
@@ -54,15 +54,15 @@ Give it the following content:
    Write-Error "To be implemented"
    ```
 
-   Leave the text editor open, you will edit this file later.
+   Leave the text editor open. You'll edit this file later.
 
 ### Run the custom test
 
 Run the custom test by following these steps:
 
-1. Open up a new terminal window or reuse the old one.
+1. Open a new terminal window or reuse the old one.
 
-1. Navigate to the directory of where you created *azuredeploy.json*.
+1. Go to the directory of where you created *azuredeploy.json*.
 
 1. Run the following command to start Visual Studio Code:
 
@@ -71,23 +71,23 @@ Run the custom test by following these steps:
    ```
 
    > [!NOTE]
-   > Open VS Code manually and open the template directory if Visual Studio Code isn't on the path
+   > Open Visual Studio Code manually and open the template directory if Visual Studio Code isn't on the path.
 
-1. From Visual Code, open the integrated terminal by bringing up the command palette, type *PowerShell > Show integrated terminal* and select it.
+1. From Visual Studio Code, open the integrated terminal. Bring up the command palette, type **PowerShell**, and select **Show integrated terminal**.
 
 1. Run the following command in the terminal:
 
    > [!NOTE]
-   > Before importing the module, replace *path\\to\\arm-ttk\\arm-ttk.psd1* with the path to the downloaded Test toolkit.
+   > Before you import the module, replace *path\\to\\arm-ttk\\arm-ttk.psd1* with the path to the downloaded test toolkit.
 
    ```powershell
    Import-Module path\to\arm-ttk\arm-ttk.psd1
    ```
 
    > [!TIP]
-   > If you downloaded or cloned the tool to your `Downloads` directory the path would look something like this *C:\\Users\\<user\>\\Downloads\\arm-ttk\\arm-ttk\\arm-ttk.psd1*.
+   > If you downloaded or cloned the tool to your *Downloads* directory, the path would look something like this: *C:\\Users\\<user\>\\Downloads\\arm-ttk\\arm-ttk\\arm-ttk.psd1*.
 
-   You are now ready to use the tool. As long as you are in the same PowerShell session there's no need to run the import command again.
+   You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
 
 1. Run `Test-AzTemplate` in the terminal:
 
@@ -126,24 +126,24 @@ Run the custom test by following these steps:
     [+] VM Size Should Be A Parameter (5 ms)
     ```
 
-   In the above output your test is indicated, fourth from the top with this line:
+   In the preceding output, your test is fourth from the top and indicated with this line:
 
    ```output
    [-] Custom ParameterNaming (4 ms)  To be implemented
    ```
 
-   Great, the test is found. Leave this terminal window open, you will reuse it later.
+   Now that you've found the test, leave this terminal window open. You'll reuse it later.
 
-## Refactor custom test
+## Refactor the custom test
 
-Now you will give the custom test a proper implementation.
+Now you'll give the custom test a proper implementation.
 
-1. Go back to the text editor holding the file *Custom-ParameterNaming.test.ps1*.
+1. Go back to the text editor that holds the file *Custom-ParameterNaming.test.ps1*.
 
    > [!NOTE]
-   > If you accidentally closed it, navigate to the subdirectory *testcases/deploymentTemplate* and open up the file *Custom-ParameterNaming.test.ps1*. 
+   > If you accidentally closed Visual Studio Code, go to the subdirectory *testcases/deploymentTemplate* and open the file *Custom-ParameterNaming.test.ps1*. 
 
-   Replace the file content with the following code:
+1. Replace the file's content with the following code:
 
    ```powershell
    <#
@@ -172,13 +172,13 @@ Now you will give the custom test a proper implementation.
    }
    ```
 
-   The above code iterates through all the parameters and inspects its name attribute and checks whether the name starts with the prefix **tailwind**. If the inspected parameter does not match the naming rule, the code then invokes the **Write-Error** cmdlet with a suitable error message.
-
+   The preceding code iterates through all the parameters. It inspects the name attribute and checks whether the name starts with the prefix **tailwind**. If the inspected parameter doesn't match the naming rule, the code then invokes the **Write-Error** cmdlet with a suitable error message.
+     
 ## Update the template file
 
-You will now add a parameter to the template file.
+You'll now add a parameter to the template file.
 
-1. Select the text editor containing *azuredeploy.json* and change the file's content to the following content:
+1. Select the text editor that contains *azuredeploy.json* and change the file's content to the following content:
 
    ```json
    {
@@ -196,41 +196,41 @@ You will now add a parameter to the template file.
    }
    ```
 
-   The above template content defines a parameter **location** that doesn't fulfill the naming rule, as it lacks the **tailwind** prefix in its naming.
+   The preceding template content defines a parameter **location** that doesn't fulfill the naming rule, because it lacks the **tailwind** prefix.
 
-## Rerun the Test toolkit
+## Rerun the test toolkit
 
-You have a custom test written at this point. However your template file naming does not fulfill the requirement. You therefore expect the upcoming test-run to fail. Ensure that is the case by taking the below steps:
+You have a custom test written at this point. However, your template file's naming doesn't fulfill the requirement. So you expect the upcoming test run to fail. Ensure that's the case by taking the following step.
 
-Use the existing Visual Studio Code integrated terminal window where PowerShell has been started and the Test toolkit has been imported.
+Use the existing Visual Studio Code integrated terminal window where PowerShell has been started and the test toolkit has been imported.
 
-1. In the same Visual Studio Code instance, run `Test-AzTemplate` from the integrated terminal:
+In Visual Studio Code, run `Test-AzTemplate` from the integrated terminal:
 
-   ```powershell
-   Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
-   ```
+```powershell
+Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
+```
 
-   The above command is run with the parameter `-Test`, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
+The preceding command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
 
-   > [!TIP]
-   > Using this parameter is a good practice when developing a test as it limits what is being run and the size of the terminal output.
+> [!TIP]
+> Using this parameter is a good practice when you're developing a test because it limits what's being run and the size of the terminal output.
 
-   This command results in the following output:
+This command results in the following output:
 
-   ```output
-   Validating custom\azuredeploy.json
-    deploymentTemplate
+```output
+Validating custom\azuredeploy.json
+ deploymentTemplate
 
-    [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
-   ```
+ [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
+```
 
-   The result above indicates that your test works. Let's ensure that is the case by altering the deployment file.
+The result indicates that your test works. Let's ensure that's the case by altering the deployment file.
 
-### Correcting the template file
+## Correct the template file
 
-At this point you want to verify the correctness of your custom test by changing the template file to adhere to the rules laid out by the custom test.
+At this point, you want to verify the correctness of your custom test by changing the template file to adhere to the rules that the custom test laid out.
 
-1. In the same Visual Studio Code instance showing the *azuredeploy.json* file, change the file's content to the following content:
+1. In the same Visual Studio Code instance that shows the *azuredeploy.json* file, change the file's content to the following content:
 
    ```json
    {
@@ -248,7 +248,7 @@ At this point you want to verify the correctness of your custom test by changing
    }
    ```
 
-   Above the parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
+   The parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
 
 1. Continue with the same Visual Studio Code instance and run `Test-AzTemplate` in the integrated terminal:
 
@@ -263,4 +263,4 @@ At this point you want to verify the correctness of your custom test by changing
    [+] Custom ParameterNaming (2 ms)
    ```
 
-Success, you've managed to implement and run a custom test. Furthermore you've managed to correct a deployment template to match the tests condition.
+Success! You've implemented and run a custom test. You've also corrected a deployment template to match the test's condition.

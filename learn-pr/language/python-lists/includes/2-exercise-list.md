@@ -131,7 +131,7 @@ print(colors[:3])
 print('\nPrint a slice, starting a index 4 to the end of the list:')
 print(colors[4:])
 
-print('\nPrint a slice, from the 4th from the end up until the last item:')
+print('\nPrint a slice, from the 4th from the end (but not the last item):')
 print(colors[-4:-1])
 ```
 
@@ -139,14 +139,11 @@ As we saw in the first `print()` statement, the value on the left side of the co
 
 If you don't define an index on the left side of the colon, then the slice will start at the beginning of the list.  If you don't define an index on the right side of the colon, then the slice will continue to the end of the list.
 
-As you can see from the last example, you can use negative values. Negative values let you work from the end of the list. Using this method can be bewildering at first, but keep in mind that the same rules you learned still apply.  If you define the slice as `[-4:-1]`, then the slice contains the last four items in the list.
+As you can see from the last example, you can use negative values. Negative values let you work from the end of the list. Using this method can be bewildering at first, but keep in mind that the same rules you learned still apply.  If you define the slice as `[-4:-1]`, then the slice contains the last three items in the list.
 
 When you execute the code, you should see the following output:
 
 ```output
-Print a SLICE, starting at index 2 and excluding index 5:
-['blue', 'yellow', 'orange']
-<class 'list'>
 
 Print a slice, starting at index 0 to index 3:
 ['red', 'green', 'blue']
@@ -154,7 +151,7 @@ Print a slice, starting at index 0 to index 3:
 Print a slice, starting a index 4 to the end of the list:
 ['orange', 'purple', 'brown']
 
-Print a slice, from the 4th from the end up until the last item:
+Print a slice, from the 4th from the end (but not the last item):
 ['yellow', 'orange', 'purple']
 ```
 
@@ -199,7 +196,7 @@ print('popped', color)
 
 print(colors)
 ```
-The `pop()` helper function takes the item at the index that you pass in as an argument. It removes the item from the list and assigns it to a variable for processing.  In this case, we don't do any real processing on the item.  We merely print it.  The third line of code prints the new contents of the list. You can see that the first item is no longer present.
+The `pop()` helper function takes the item at the index that you pass in as an argument. It *removes* the item from the list and assigns it to a variable for processing.  In this case, we don't do any real processing on the item.  We merely print it.  The third line of code prints the *new* contents of the list. You can see that the first item is no longer present.
 
 ```output
 ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'brown']
@@ -208,7 +205,7 @@ popped red
 ```
 
 
-## Step 6 - Add and remove elements from a list
+## Step 7 - Add and remove elements from a list
 
 If you simply need to manage the items in the list, you can use the `append()` and `remove()` helper functions.
 
@@ -247,7 +244,7 @@ This code yields the following error:
 ValueError: list.remove(x): x not in list
 ```
 
-## Step 7 - Combine a new list with an existing list
+## Step 8 - Combine a new list with an existing list
 
 To combine a list with the first list, you can use the `extend()` helper function.
 
@@ -267,13 +264,14 @@ When you execute the code, you should see the following output:
 ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'brown', 'lime', 'gray']
 ```
 
-## Step 8 - Clear all items from a list
+## Step 9 - Clear all items from a list
 
 To remove all items from a list, call the `clear()` function.
 
 Comment out the code that you added in the previous section. Then add the following code:
 
 ```python
+print(colors)
 colors.clear()
 print(colors)
 ```

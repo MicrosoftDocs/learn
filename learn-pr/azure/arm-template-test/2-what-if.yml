@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-template-test.2-what-if
-title: Predict what a deployment will do with what-if
+title: Predict what a deployment will do by using what-if
 metadata:
-  title: Using what-if to validate your ARM templates deployments
-  description: Deploying and hoping for the best is NOT the approach you should be taking.  The what-if operation is here to address this fact. This unit will cover what it is and how to use it.
+  title: Using what-if to validate your ARM template deployments
+  description: Deploying and hoping for the best is not the approach you should be taking. The what-if operation is here to address this fact. This unit will cover what it is and how to use it.
   author: softchris
   ms.author: chnoring
   ms.date: 10/12/2020

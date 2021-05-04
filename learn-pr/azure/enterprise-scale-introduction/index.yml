@@ -2,20 +2,20 @@
 uid: learn.azure.enterprise-scale-introduction
 metadata:
   title: Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure
-  description: The Microsoft Cloud Adoption Framework for Azure provides many landing zone options. In this module, we'll focus on enterprise-scale landing zones.
+  description: The Microsoft Cloud Adoption Framework for Azure provides many landing zone options. This module focuses on enterprise-scale landing zones.
   ms.date: 09/21/2020
-  author: jeffmitchell
+  author: JefferyMitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure
 summary: The Microsoft Cloud Adoption Framework for Azure has many landing zone options. In this module, you'll learn how enterprise-scale landing zones help organizations build the strategic design path and target technical state for your Azure environment.
 abstract: | 
-  In this module, you'll learn to:
-  - Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework
-  - Describe the top customer challenges enterprise-scale Azure adoption addresses
-  - Define the Cloud Adoption Framework approach for enterprise-scale landing zones
-  - Explain the enterprise-scale architecture design principles
+  After you complete this module, you will be able to:
+  - Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework.
+  - Describe the top customer challenges that enterprise-scale Azure adoption addresses.
+  - Define the Cloud Adoption Framework approach for enterprise-scale landing zones.
+  - Explain the enterprise-scale architecture design principles.
 prerequisites: | 
   - Basic knowledge of Azure Policy
   - Basic knowledge of Azure Enterprise Agreements

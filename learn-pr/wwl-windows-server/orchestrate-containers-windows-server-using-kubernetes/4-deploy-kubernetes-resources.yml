@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes.deploy-kubernetes-resources
+title: Deploy Kubernetes resources
+metadata:
+  title: Deploy Kubernetes resources
+  description: "Deploy Kubernetes resources"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-deploy-kubernetes-resources.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What versions of Kubernetes and Windows Server are the minimum required to support running Window containers as worker nodes in a Kubernetes cluster?"
+    choices:
+    - content: "Kubernetes version 1.12 and Windows Server 2012 R2."
+      isCorrect: false
+      explanation: "That's incorrect. Kubernetes version 1.14 and Windows Server version 1809 or later are required to support the running of Window containers as worker nodes in a Kubernetes cluster."
+    - content: "Kubernetes version 1.13 and Windows Server 1607."
+      isCorrect: false
+      explanation: "That's incorrect. Kubernetes version 1.14 and Windows Server version 1809 or later are required to support the running of Window containers as worker nodes in a Kubernetes cluster."
+    - content: "Kubernetes version 1.14 and Windows Server version 1809."
+      isCorrect: true
+      explanation: "That's correct. Kubernetes version 1.14 and Windows Server version 1809 or later are required to support the running of Window containers as worker nodes in a Kubernetes cluster."

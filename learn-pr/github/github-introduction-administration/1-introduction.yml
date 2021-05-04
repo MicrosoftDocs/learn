@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-administration.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: An introduction to the topics you'll learn about in this module.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

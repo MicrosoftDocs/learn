@@ -28,7 +28,7 @@ Azure Table storage is an example of a key-value store. Cosmos DB also implement
 
 ## What is a document database?
 
-A document database represents the opposite end of the NoSQL spectrum from a key-value store. In a document database, each document has a unique ID, but the fields in the documents are transparent to the database management system. Document databases typically store data in JSON format, as described in the previous unit, or they could be encoded using other formats such XML, YAML, JSON, BSON. Documents could even be stored as plain text. The fields in documents are exposed to the storage management system, enabling an application to query and filter data by using the values in these fields.
+A document database represents the opposite end of the NoSQL spectrum from a key-value store. In a document database, each document has a unique ID, but the fields in the documents are transparent to the database management system. Document databases typically store data in JSON format, as described in the previous unit, or they could be encoded using other formats such as XML, YAML, JSON, BSON. Documents could even be stored as plain text. The fields in documents are exposed to the storage management system, enabling an application to query and filter data by using the values in these fields.
 
 Typically, a document contains the entire data for an entity. What items constitute an entity are application-specific. For example, an entity could contain the details of a customer, an order, or a combination of both. A single document may contain information that would be spread across several relational tables in an RDBMS (relational database management system).
 
@@ -70,7 +70,7 @@ In most column family databases, the column-families are stored separately. In t
 > [!div class="mx-imgBorder"]
 > ![The physical structure of a column family database](../media/4-column-family-physical.png)
 
-The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-familiy approach through the Cassandra API.
+The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-family approach through the Cassandra API.
 
 ## What is a graph database?
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-webapp-java-tomcat.3
+title: Exercise - Create a JavaServer Faces web app on Tomcat
+metadata:
+  title: Exercise - Create a JavaServer Faces web application on Tomcat
+  description: Build a simple JavaServer Faces application, set up its resources, and run it locally.
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 12/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-create-javaserver-faces-app.md)]

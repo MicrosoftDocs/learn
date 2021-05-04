@@ -17,16 +17,16 @@ This may not seem useful at first, however it's useful in three situations:
 > [!NOTE]
 > Code comments cannot be trusted.  Often, developers update their code but forget to update the code comments.  It's best to use comments for higher-level ideas and not to add comments about how an individual line of code works.
 
-### Step 1 - Make sure you have code from the previous exercise in the code window
+### Step 1 - Add some code in the .NET Editor as a starting point for the exercise.
 
-You should be able to see code that was typed in at the end of the previous exercise.  For reference, this is the last code example that you ran:
+To demonstrate the use of code comments, you'll need to work with some code.  The following code was used in a previous module. Re-enter the code by copying / pasting or click the run button to add it to the .NET Editor.
 
 ```csharp-interactive
 string firstName = "Bob";
 int widgetsSold = 7;
 Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
 ```
-If you don't see that code in the code window, click the Run button above the previous lines of code.  This will insert that code into the code window.
+
 
 ### Step 2 - Comment out lines of code from the previous exercise
 

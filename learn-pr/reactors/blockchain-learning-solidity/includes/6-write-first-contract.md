@@ -18,7 +18,7 @@ contract Marketplace {
     enum StateType {
           ItemAvailable,
           ItemPurchased
-        }
+    }
 
     StateType public State;
 
@@ -27,14 +27,15 @@ contract Marketplace {
         State = StateType.ItemAvailable;
     }
 
-    function buy(address seller, address buyer, uint price) public {
+    function buy(address seller, address buyer, uint price) public payable {
         require(price <= balances[buyer], "Insufficient balance");
         State = StateType.ItemPurchased;
         balances[buyer] -= price;
         balances[seller] += price;
 
-        emit PurchasedItem(msg.seller, buyer, msg.value);
+        emit PurchasedItem(seller, buyer, msg.value);
     }
+}    
 ```
 
 Let's dig into the main components of this smart contract:
@@ -50,4 +51,4 @@ Let's dig into the main components of this smart contract:
 
 Go to [Remix IDE](https://remix.ethereum.org/?azure-portal=true) to explore more smart contract examples in Solidity. Remix is an in-browser IDE that lets's you get started right away without having to create an account or sign in. You can immediately write, test, compile, and deploy contracts.
 
-Explore the pre-built contracts available in Remix and then copy this smart contract over in a new file named `Marketplace.sol`. You can also explore more examples that use value and reference types.
+Copy and paste this smart contract to Remix in a new file named `Marketplace.sol`. Then compile and deploy the contract. While the contract has a function to buy an available item, you'll notice there is no way to give a buyer currency to make the purchase. For an extra challenge, use what you've learned to write a function to give the buyer a balance, providing an account address and an amount. If you want to see an example of how to do this, watch [Dr. G add a function to initialize a balance for participants](https://aka.ms/LearnWithDrG/Blockchain/Challenge1).

@@ -1,6 +1,4 @@
-In a previous module, we learned about a helper function, `isnumeric()`, that allows us to understand the contents of a string, and whether we can convert that string into an `int` or `float`. A helper method is a function that's available to values of a particular data type, and provides additional helpful functionality. We even briefly toured a few additional `is___()` style string helper methods.
-
-There are many other helper methods available to strings, and in this exercise we'll work with over a dozen that you'll likely use when building real-world Python programs.
+A **helper method** is a function that's available to values of a particular data type (or object), and provides additional helpful functionality.  The string data type has many helper methods, and in this exercise we'll work with over a dozen that you'll likely use when building real-world Python programs.
 
 ### Step 1 - Create a new code file for this exercise
 
@@ -83,17 +81,17 @@ When you run the code, you should see the following output:
 4
 ```
 
-What if you want to know how many letters are in a string? In that case, use a method, called `len()`. Note that this isn't a helper method in the way we've defined it, because it works on more than just the string values.
+What if you want to know how many characters are in a string? In that case, use a method called `len()`. Note that this isn't a helper method in the way we've defined it, because it works on more than just the string values.
 
 Comment out the code from earlier in this step, and add the following code listing:
 
 ```python
-print(len('how many letters in this string?'))
+print(len('how many characters in this string?'))
 ```
 When you run the code, you should see the following output:
 
 ```output
-32
+35
 ```
 
 ### Step 5 - Comment out the previous code, and add code that calls functions that inspect the contents of the string

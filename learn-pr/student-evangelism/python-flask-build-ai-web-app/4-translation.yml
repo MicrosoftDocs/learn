@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-text
+title: Translation
+metadata:
+  title: Translation
+  description: Learn about Translator in Azure Cognitive Services.
+  ms.date: 10/23/2020
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-translation.md)]
+  

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.use-docker-container-dev-env-vs-code
+metadata:
+  title: Use a Docker container as a development environment with Visual Studio Code
+  description: Create and configure a full-featured container-based development environment with the Visual Studio Code Remote - Containers extension. Open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
+  ms.date: 11/13/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+title: Use a Docker container as a development environment with Visual Studio Code
+summary: Get, create, and configure a container-based development environment with the Visual Studio Code Remote - Containers extension
+abstract: |
+  By the end of this module, you'll be able to:
+  - Install the Visual Studio Code Remote - Containers extension
+  - Load and connect to a project in a Docker container
+  - Access ports in the container from your local machine
+  - Customize settings while working with your container
+  - Add software to the container environment
+prerequisites: |
+  - A computer that's running one of the following:
+       - Windows: Windows 10
+       - Mac: macOS 10.9 or later
+       - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - Basic knowledge of software development, such as what it means to run code and install a new language
+  - Docker and basic Docker knowledge (familiarity with the concept of images, containers, and registries):
+       - Windows: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+ on Windows 10 Pro/Enterprise. Windows 10 Home (2004+) requires Docker Desktop 2.3+ and the [WSL 2 back end](https://aka.ms/vscode-remote/containers/docker-wsl2).
+       - Mac: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+.
+       - Linux: [Docker CE/EE](https://docs.docker.com/install/#supported-platforms) 18.06+ and [Docker Compose](https://docs.docker.com/compose/install) 1.21+.
+  - [Git](https://git-scm.com/downloads) and basic knowledge of GitHub, such as what a repository is
+iconUrl: /learn/achievements/use-docker-container-dev-env-vs-code.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+  - learn.use-docker-container-dev-env-vs-code.1-introduction
+  - learn.use-docker-container-dev-env-vs-code.2-use-as-dev-env
+  - learn.use-docker-container-dev-env-vs-code.3-exercise-add-dev-container
+  - learn.use-docker-container-dev-env-vs-code.4-forward-ports
+  - learn.use-docker-container-dev-env-vs-code.5-exercise-forward-ports
+  - learn.use-docker-container-dev-env-vs-code.6-customize-settings
+  - learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
+  - learn.use-docker-container-dev-env-vs-code.8-add-software
+  - learn.use-docker-container-dev-env-vs-code.9-exercise-add-software
+  - learn.use-docker-container-dev-env-vs-code.10-knowledge-check
+  - learn.use-docker-container-dev-env-vs-code.11-summary
+badge:
+  uid: learn.use-docker-container-dev-env-vs-code.badge

@@ -21,7 +21,7 @@ In this module, you saw a few tools that you can use to automate your deployment
 ### Azure CLI
 
 * [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/?azure-portal=true)
-* [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&azure-portal=true)
+* [Azure CLI](https://docs.microsoft.com/cli/azure/?azure-portal=true)
 
 ### Azure PowerShell
 
@@ -48,7 +48,7 @@ In this module, you saw a few tools that you can use to automate your deployment
 
 We've seen the team take its first steps toward treating their infrastructure as code. Just as application code needs to be secure and comply with regulations, so does your infrastructure code. What are some concepts and tools to consider for inspecting and validating infrastructure for compliance?
 
-Early attempts at automating the creation of virtual machines and entire environments focused on writing procedural code in languages like PowerShell. The problem with this type of coding was that it was hard to write idempotent code, in other words, code that produces the same outcome no matter how many times you run it. [Windows PowerShell Desired State Configuration (DSC)](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?view=powershell-6/?azure-portal=true) was a big step forward because it allowed you to define the desired outcome itself, instead of describing the process for achieving that outcome. It was a declarative mechanism rather than a procedural one.
+Early attempts at automating the creation of virtual machines and entire environments focused on writing procedural code in languages like PowerShell. The problem with this type of coding was that it was hard to write idempotent code, in other words, code that produces the same outcome no matter how many times you run it. [Windows PowerShell Desired State Configuration (DSC)](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?azure-portal=true) was a big step forward because it allowed you to define the desired outcome itself, instead of describing the process for achieving that outcome. It was a declarative mechanism rather than a procedural one.
 
 Today, a variety of tools enable you to define infrastructure as code, and these have already created significant benefits for DevOps teams. Reliable environments (including operating systems and services) can be created on demand, and in a completely repeatable way. The same code can be run again to ensure that the target state is present, and to remove any drift from that state.
 

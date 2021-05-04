@@ -83,7 +83,7 @@ az cosmosdb sql container create \
 ```PowerShell
 ## Azure PowerShell - create a database
 
-Set-AzCosmosDBSqlDatabase `
+New-AzCosmosDBSqlDatabase `
     -ResourceGroupName "<resource-group-name>" `
     -AccountName "<cosmos-db-account-name>" `
     -Name "<database-name>" `
@@ -91,7 +91,7 @@ Set-AzCosmosDBSqlDatabase `
 
 ## Azure PowerShell - create a container
 
-Set-AzCosmosDBSqlContainer `
+New-AzCosmosDBSqlContainer `
     -ResourceGroupName "<resource-group-name>" `
     -AccountName "<cosmos-db-account-name>" `
     -DatabaseName "<database-name>" `

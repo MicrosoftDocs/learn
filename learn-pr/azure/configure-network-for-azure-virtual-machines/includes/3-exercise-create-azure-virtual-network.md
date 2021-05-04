@@ -1,7 +1,7 @@
-In this exercise, you will create a virtual network in Microsoft Azure. You will then create two virtual machines and use the virtual network to connect the virtual machines and to the Internet.
+In this exercise, you will create a virtual network in Microsoft Azure. You will then create two virtual machines, and use the virtual network to connect the virtual machines and to the internet.
 
 > [!IMPORTANT]
-> The exercises in this module require a full Azure subscription. The exercises are optional and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them.  Incurred charges can be minimized by cleaning up the resources you create as soon as possible. Cleanup directions are in the final unit.
+> The exercises in this module require a full Azure subscription. The exercises are optional, and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them. Incurred charges can be minimized by cleaning up the resources you create as soon as possible. Cleanup directions are in the final unit.
 
 ## Sign in to your subscription
 
@@ -12,7 +12,7 @@ Sign in to Azure either by using the PowerShell cmdlet `Connect-AzAccount` on yo
 First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `EastUS` in the following command with the name of the region in which you'd like the group to be created.
 
 ```PowerShell
-$Location = "EastUS" 
+$Location="WestUS" 
 New-AzResourceGroup -Name vm-networks -Location $Location
 ```
 
@@ -21,13 +21,13 @@ New-AzResourceGroup -Name vm-networks -Location $Location
 To create a subnet and virtual network, run the following command.
 
 ```PowerShell
- $Subnet= New-AzVirtualNetworkSubnetConfig -Name default -AddressPrefix 10.0.0.0/24
+ $Subnet=New-AzVirtualNetworkSubnetConfig -Name default -AddressPrefix 10.0.0.0/24
  New-AzVirtualNetwork -Name myVnet -ResourceGroupName vm-networks -Location $Location -AddressPrefix 10.0.0.0/16 -Subnet $Subnet
 ```
 
 ## Create two virtual machines
 
-All Azure virtual machines are connected to a virtual network. If you create a virtual machine using Azure PowerShell and don't specify the name of an existing virtual network, Azure PowerShell creates a new virtual network automatically.
+All Azure virtual machines are connected to a virtual network. If you create a virtual machine using Azure PowerShell, and don't specify the name of an existing virtual network, Azure PowerShell creates a new virtual network automatically.
 
 Here, we create two virtual machines and specify the virtual network.
 
@@ -43,7 +43,7 @@ Here, we create two virtual machines and specify the virtual network.
     -Size "Standard_DS2_v2"
     ```
 
-    Port 3389 is opened automatically by default when you create a Windows VM in Azure.
+    Port 3389 is opened automatically by default when you create a Windows VM in Azure. 
 
 1. Enter a user name and password for the VM. Write down user name and password. You need it later to sign in to the server.
 
@@ -65,7 +65,8 @@ Here, we create two virtual machines and specify the virtual network.
     -Size "Standard_DS2_v2"
     ```
 
-1. Enter a user name and password for the VM. Write down user name and password. You need it later to sign in to the server.
+1. Enter a user name and password for the VM. Copy your user name and password. You need it later to sign in to the server.
+
 1. Disassociate the public IP address that was created by default for the VM.
 
    ```PowerShell
@@ -76,7 +77,7 @@ Here, we create two virtual machines and specify the virtual network.
 
 ## Connect to dataProcStage1 using Remote Desktop
 
-1. Open Remote Desktop and connect to `dataProcStage1` with the public IP address you noted from the previous steps. If you're using PowerShell locally, use the following command and replace `publicIpAddress` with the VM's public IP address.
+1. Open Remote Desktop, and connect to `dataProcStage1` with the public IP address you noted from the previous steps. If you're using PowerShell locally, run the following command, and replace `publicIpAddress` with the VM's public IP address.
 
    ```PowerShell
    mstsc /v:publicIpAddress
@@ -84,7 +85,7 @@ Here, we create two virtual machines and specify the virtual network.
 
 1. Sign in to the remote machine with the username and the password you created.
 
-1. In the remote session, open the Windows command prompt and run the following command:
+1. In the remote session, open the Windows command prompt, and run the following command.
 
     ```cmd
     ping dataProcStage2 -4
@@ -102,13 +103,13 @@ Configure the Windows Firewall on `dataProcStage2` using a new remote desktop se
 
 1. Sign in to `dataProcStage2` with the username and the password you created.
 
-1. On `dataProcStage2`, click the Start Menu, type **Firewall**, and press Enter. The **Windows Firewall with Advanced Security** console appears.
+1. On `dataProcStage2`, select the Start Menu, enter **Firewall**, and press <kbd>Enter</kbd>. The **Windows Firewall with Advanced Security** console appears.
 
-1. In the left-hand pane, click **Inbound Rules**.
+1. In the left-hand pane, select **Inbound Rules**.
 
-1. In the right-hand pane, scroll down, and right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then click **Enable Rule**.
+1. In the right-hand pane, scroll down, and right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then select **Enable Rule**.
 
-1. Switch back to the `dataProcStage1` remote session and run the following command in the command prompt.
+1. Switch back to the `dataProcStage1` remote session, and run the following command in the command prompt.
 
     ```cmd
     ping dataProcStage2 -4

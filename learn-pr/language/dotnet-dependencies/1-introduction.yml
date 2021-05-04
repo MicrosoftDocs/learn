@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-dependencies.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Build your app faster by using packages from NuGet. Manage your package dependencies and your .NET project by configuring the project (.csproj) file.
+  ms.date: 10/28/2020
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

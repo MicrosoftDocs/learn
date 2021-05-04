@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.secure-parameters-exercise
+title: Exercise - Manage secrets in your ARM template
+metadata:
+  title: Exercise - Manage secrets in your ARM template
+  description: Read from an instance of Azure Key Vault from within your ARM template at deployment time. 
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/5-secure-parameters-exercise.md)]

@@ -1,4 +1,4 @@
-In this exercise, you'll install the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code.
+In this exercise, you'll install the tools and components needed to build a Blazor WebAssembly client app locally using **Visual Studio Code** application.
 
 This exercise assumes you've already installed Visual Studio Code. You can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
 
@@ -16,7 +16,7 @@ To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: t
 
 1. Open Visual Studio Code on your local machine.
 
-1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. Search for "C# for Visual Studio Code".
 
@@ -26,7 +26,7 @@ To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: t
 
 The JavaScript debugger extension is currently in preview. Here you'll install the latest build.
 
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. Search for "JavaScript debugger".
 
@@ -34,7 +34,7 @@ The JavaScript debugger extension is currently in preview. Here you'll install t
 
 ### Configure the JavaScript debugger extension
 
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. From the list of enabled extensions, select **JavaScript Debugger (Nightly)**.
 
@@ -62,10 +62,10 @@ To validate your setup, make a new Blazor WebAssembly client web app that uses t
 
 1. At the command prompt, enter **dotnet run** to run the app.
 
-1. In a web browser, go to https://localhost:5001.
+1. In a web browser, go to https://localhost:5000.
 
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 
-1. Return to the terminal in Visual Studio code and select Ctrl+C to stop the app.
+1. Return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
 
 You'll use this Blazor app in the following exercises.

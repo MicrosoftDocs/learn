@@ -1,9 +1,10 @@
 ::: zone pivot="csharp"
+
 Let's add support to our .NET core application to retrieve a connection string from a configuration file. We'll start by adding the necessary plumbing to manage configuration in a JSON file.
 
 ## Create a JSON configuration file
 
-1. `cd` to the PhotoSharingApp directory if you aren't already there.
+1. Change the directory (`cd`) to the PhotoSharingApp directory, if you aren't already there.
 
 1. Use the `touch` tool on the command line to create a file named **appsettings.json**.
 
@@ -11,7 +12,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you are working locally, use your editor of choice. We recommend **Visual Studio Code**, which is an extensible cross-platform IDE. If you are working in the Cloud Shell, we recommend the Cloud Shell editor. The following command works for both.
+1. Open the project in an editor. If you are working locally, use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in the Cloud Shell, we recommend the Cloud Shell editor. The following command works for both.
 
     ```bash
     code .
@@ -21,47 +22,44 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```json
     {
-      "StorageAccountConnectionString": "<value>"
+        "ConnectionStrings": {
+            "StorageAccount": "<value>"
+        }
     }
     ```
 
-1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
+1. Now we need to get the storage account connection string, and place it into the configuration for our app. In Cloud Shell, run the following command. Replace `<name>` with your unique storage account name.
 
     ```azurecli
     az storage account show-connection-string \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name <name> \
-        --query connectionString
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --query connectionString \
+      --name <name>
     ```
 
-1. Copy the connection string that is returned from that command, and replace `"<value>"` in the **appsettings.json** file with this connection string. Save the file.
+1. Copy the connection string that is returned from that command, and replace `<value>` in the **appsettings.json** file with this connection string. Save the file.
 
-1. Next, open the project file (**PhotoSharingApp.csproj**) in the editor.
+1. Next, open the project file, **PhotoSharingApp.csproj**, in the editor.
 
-1. Add the following configuration block to include the new file in the project and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
+1. Add the following configuration block to the file in the project. Add `<ItemGroup>` from the existing code.
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-       ...
-        <ItemGroup>
-            <None Update="appsettings.json">
-              <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            </None>
-        </ItemGroup>
-    </Project>
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
     ```
 
-1. Save the file. (Make sure you do this or you will lose the change when you add the package below!)
+1. Save the file. (Make sure you do this, or you will lose the change when you add the following package!)
 
 ## Add support to read a JSON configuration file
 
-A .NET Core application requires additional NuGet packages to read a JSON configuration file.
+In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
-1. In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
-
-    ```bash
-    dotnet add package Microsoft.Extensions.Configuration.Json
-    ```
+```dotnetcli
+dotnet add package Microsoft.Extensions.Configuration.Json
+```
 
 ## Add code to read the configuration file
 
@@ -86,7 +84,7 @@ Now that we have added the required libraries to enable reading configuration, w
     var configuration = builder.Build();
     ```
 
-Your **Program.cs** file should now look like the following:
+Your **Program.cs** file should now look like this:
 
 ```csharp
 using System;
@@ -115,7 +113,7 @@ namespace PhotoSharingApp
 
 Let's add support to our Node.js application to retrieve a connection string from a configuration file. We'll start by adding the necessary plumbing to manage configuration from our JavaScript file.
 
-## Create a .env configuration file
+## Create an .env configuration file
 
 1. Make sure you are in the correct working directory for your project.
 
@@ -131,42 +129,41 @@ Let's add support to our Node.js application to retrieve a connection string fro
     code .
     ```
 
-1. Select the **.env** file in the editor and add the following text. 
+1. Select the **.env** file in the editor, and add the following text.
 
     > [!TIP]
-    > You may need to click the refresh button in code to see the new files.
-    
-    ```
+    > You may need to select the refresh button in code to see the new files.
+
+    ```plaintext
     AZURE_STORAGE_CONNECTION_STRING=<value>
     ```
 
     > [!TIP]
-    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name when you create the `BlobService` object in your Node.js app.
+    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name when you create the `BlobServiceClient` object in your Node.js app.
 
 1. Save the file.
 
-1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
+1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell, run the following command. Replace `<name>` with your unique storage account name.
 
     ```azurecli
     az storage account show-connection-string \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --query connectionString \
-        --name <name>
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --query connectionString \
+      --name <name>
     ```
 
-1. Copy the connection string that is returned from that command, minus the quotes, and replace `<value>` in the **.env** file with this connection string.
-
+1. Copy the connection string that is returned from that command (minus the quotes), and replace `<value>` in the **.env** file with this connection string.
 1. Save the file.
 
 ## Add support to read an environment configuration file
 
 Node.js apps can include support to read from the **.env** file by adding the **dotenv** package.
 
-1. In the command prompt section of the window, add a dependency to the  **dotenv** package using `npm`.
+In the command prompt section of the window, add a dependency to the  **dotenv** package using `npm`.
 
-    ```bash
-    npm install dotenv --save
-    ```
+```bash
+npm install dotenv --save
+```
 
 ## Add code to read the configuration file
 
@@ -174,13 +171,14 @@ Now that we have added the required libraries to enable reading configuration, w
 
 1. Select **index.js** in the editor.
 
-1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This will make environment variables defined in our **.env** file available to the program.
+1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This code will make environment variables defined in our **.env** file available to the program.
 
     ```javascript
     #!/usr/bin/env node
     require('dotenv').config();
     // ... more code follows
     ```
+
 ::: zone-end
 
 Now that we have that all wired up, we can start adding code to use our storage account.

@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-security.2-defense-in-depth
 title: Defense in depth
 metadata:
   title: Defense in depth
-  description: In this unit we'll discuss how to practice defense in depth
+  description: In this unit, we'll discuss how to practice defense in depth
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,16 +15,16 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: *defense in depth* is a strategy aimed to protect you against attacks attempting to gain access to your information?'
+  - content: 'True or false: *defense in depth* is a strategy aimed to protect you against attacks that try to gain access to your information.'
     choices:
     - content: 'True'
       isCorrect: true
-      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, there is another layer in place to prevent further exposure.'
+      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, another layer prevents further exposure.'
     - content: 'False'
       isCorrect: false
-      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, there is another layer in place to prevent further exposure.'
+      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, another layer prevents further exposure.'
 
-  - content: 'True or false: by moving to the cloud, my architecture is fully secure and I can hand off all security responsibilities to my cloud provider?'
+  - content: 'True or false: by moving to the cloud, your architecture is fully secure and you can hand off all security responsibilities to your cloud provider.'
     choices:
     - content: 'True'
       isCorrect: false

@@ -2,7 +2,7 @@ One of the issues that faces application developers who want to integrate their 
 
 Storing credentials, tokens, or secret keys in configuration files that your applications access isn't a secure solution. It also creates an ongoing technical debt, requiring you to modify and redistribute your application each time credentials change.
 
-A better solution uses the authentication tools that Azure provides. These tools include *service principals* and *managed identities*.
+Azure provides a better solution using authentication tools. These tools include *service principals* and *managed identities*.
 
 Imagine that you're a developer at a furniture company. Your company is migrating a stock-tracking application to Azure VMs. The application needs access to secrets in Azure Key Vault. The application's deployment and management tasks should be as streamlined as possible. The processes should avoid handling credentials in configuration files. You want to use a managed identity for Azure resources to authenticate the application that's running in Azure.
 
@@ -21,4 +21,4 @@ In this module, you'll:
 
 - Familiarity with Azure Active Directory concepts
 - Familiarity with general concepts of authorization and authentication
-- Experience with developing and deploying infrastructure-as-a-service (IaaS) applications
+- Experience with developing and deploying infrastructure as a service (IaaS) applications

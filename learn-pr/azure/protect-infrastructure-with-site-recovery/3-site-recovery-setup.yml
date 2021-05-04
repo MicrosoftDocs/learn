@@ -23,19 +23,19 @@ quiz:
       explanation: "Recovery services vaults are used to store backup data, VM configuration settings, and workloads."
     - content: "Site Recovery creates docker containers using storage accounts."
       isCorrect: false
-      explanation: "Docker containers aren't used, Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."
+      explanation: "Docker containers aren't used. Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."
     - content: "Site Recovery creates and stores managed disks."
       isCorrect: false
-      explanation: "Managed disks aren't used, Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."
+      explanation: "Managed disks aren't used. Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."
 
   - content: "Which four ways does Site Recovery protect virtual machine infrastructure?"
     choices: 
-    - content: "Implements an organizations BCDR, enables automatic failover and recovery, failed over machines are automatically protected, automatically manages backup storage"
+    - content: "Implements an organization's BCDR, enables automatic failover and recovery, automatically protects failed-over machines, and automatically manages backup storage."
       isCorrect: false
-      explanation: "Failover and failback are manual, not automatic. Using Site Recovery can help meet an organizations BCDR, but can't implement it as a whole. The backup and syncing are automatic."
-    - content: "Creates snapshots and recovery points, replicates VMs to a secondary region, supports DR drills, and enables flexible failover / failback"
+      explanation: "Failover and failback are manual, not automatic. Using Site Recovery can help meet an organization's BCDR, but can't implement it as a whole. The backup and syncing are automatic."
+    - content: "Creates snapshots and recovery points, replicates VMs to a secondary region, supports DR drills, and enables flexible failover/failback."
       isCorrect: true
-      explanation: "These are the four main features of Site Recovery that will protect your virtual machines."
-    - content: "Backs up VM disks locally and to a different region, automatically manages backup storage, creates a Microsoft Azure Backup Server (MABS), mirrors workloads between primary and secondary regions"
+      explanation: "These are the four main features of Site Recovery that will protect your VMs."
+    - content: "Backs up VM disks locally and to a different region, automatically manages backup storage, creates a Microsoft Azure Backup Server (MABS), and mirrors workloads between primary and secondary regions."
       isCorrect: false
       explanation: "These are features provided by Azure Backup, not Site Recovery."  

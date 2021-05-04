@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.fundamental-azure-concepts
 metadata:
-  title: Discuss Azure fundamental concepts
-  description: Learn about the different types and categories of cloud computing.
+  title: Discuss Azure fundamental concepts (AZ-900)
+  description: Learn about the different types and categories of cloud computing. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Discuss Azure fundamental concepts
@@ -16,7 +16,8 @@ abstract: |
   - Describe the differences between categories of cloud services
   - Describe the differences between types of cloud computing
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/fundamental-azure-concepts.svg
 levels:
 - beginner

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.run-quantum-algorithms-hardware.6-continue-experimenting-azure-quantum
+title: Continue experimenting with Azure Quantum
+metadata:
+  title: Continue experimenting with Azure Quantum
+  description: Collection of action items to expand the quantum computing experience for users.
+  ms.date: 05/19/2020
+  author: geduardo
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-continue-experiment-azure-quantum.md)]

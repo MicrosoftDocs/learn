@@ -3,7 +3,7 @@ uid: learn.arm-template-test.6-custom-tests
 title: Implement domain-specific rules by authoring custom tests
 metadata:
   title: Implement domain-specific rules by authoring custom tests
-  description: The testing tool comes with a set of tests that it runs at every invocation of the tool. However, you might want to apply org-specific tests to your templates. By authoring custom tests that can also be run by the testing toolkit.
+  description: The test toolkit comes with a set of tests that it runs each time it's invoked. But you might want to apply organization-specific tests to your templates, by authoring custom tests that the test toolkit can also run.
   author: softchris
   ms.author: chnoring
   ms.date: 10/12/2020

@@ -1,6 +1,6 @@
 Companies that build web apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Others build client-side web apps. These developers often use different development languages and technologies.
 
-C# and Microsoft .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. Use of multiple languages and tool sets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
+C# and Microsoft .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
 
 In this unit, you'll start with an introduction to Blazor and then explore Blazor WebAssembly.
 

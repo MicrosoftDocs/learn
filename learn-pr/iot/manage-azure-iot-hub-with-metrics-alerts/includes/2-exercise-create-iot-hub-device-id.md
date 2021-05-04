@@ -11,7 +11,8 @@ In this unit, we first create an IoT Hub, and then add a single device to that h
 1. Enter a unique friendly name (say "VibrationSensorHub-&lt;your ID&gt;") for **IoT Hub Name**.
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL.
-1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
+1. Select **Next: Networking** to view the capabilities of your hub, noting all the services we need are enabled. 
+1. Open up **Management** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
 1. Click **Go to resource**, when this option is available, to go to the home page for your temporary hub. If you miss this alert, you can search for your resource from your home page.
 1. It's a good idea to bookmark the home page of your IoT Hub.

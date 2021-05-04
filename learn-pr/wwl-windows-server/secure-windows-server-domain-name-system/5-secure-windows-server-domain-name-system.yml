@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-dns.secure-windows-server-dns
+title: Secure Windows Server DNS
+metadata:
+  title: Secure Windows Server DNS
+  description: "Secure Windows Server DNS"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-secure-windows-server-domain-name-system.md)]

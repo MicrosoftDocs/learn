@@ -1,13 +1,13 @@
 In this exercise, you'll confirm that Advanced Data Security is enabled, and you'll explore some of the features within each of the capabilities mentioned in the previous unit.  
 
-## Configure Advanced Data Security
+## Configure Azure Defender
 
 1. In the Azure portal, go to your Azure SQL Database logical server.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. On the left pane, under **Security**, select **Advanced data security**. Advanced Data Security should already be enabled. If it isn't, select **ON**, and then select **Save**.
+1. On the left pane, under **Security**, select **Security Center**. Azure Defender should already be enabled. Select **Configure**.
 
 1. Review the selections you've made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
 
@@ -27,11 +27,11 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Data Discovery & Classification
 
-1. Go back to your Azure SQL Database instance (not the logical server). On the left pane, under **Security**, select **Advanced data security**.  
+1. Go back to your Azure SQL Database instance (not the logical server). On the left pane, under **Security**, select **Data Discovery & Classification**.  
 
 1. Review Data Discovery & Classification, which provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your database.
 
-    For this step, select **Data Discovery & Classification**. This wizard type of view is similar but not identical to the Data Discovery & Classification tool that exists in SQL Server today through SQL Server Management Studio (SSMS). Using the SSMS wizard is *supported* for Azure SQL Managed Instance but *not supported* for Azure SQL Database. You can achieve similar functionality by using the Azure portal, which is supported for both Azure SQL Database and SQL Managed Instance.  
+    This wizard type of view is similar but not identical to the Data Discovery & Classification tool that exists in SQL Server today through SQL Server Management Studio (SSMS). Using the SSMS wizard is *supported* for Azure SQL Managed Instance but *not supported* for Azure SQL Database. You can achieve similar functionality by using the Azure portal, which is supported for both Azure SQL Database and SQL Managed Instance.  
 
     You can use Transact-SQL across all deployment options to add or drop column classifications and to retrieve classifications.
 
@@ -47,11 +47,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Vulnerability Assessment
 
-1. Select the **X** at the upper right of the **Data Discovery & Classification** pane to go back to the **Advanced Data Security** dashboard. 
+1. Select the **X** at the upper right of the **Data Discovery & Classification** pane, then select the **Security Center** tab under Security to view the **Security Center** dashboard for your SQL Database. 
 
-1. To begin reviewing the Vulnerability Assessment capabilities, select the **Vulnerability Assessment** tile.  
-
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-2.png" alt-text="Screenshot of how to return to the main Advanced Data Security dashboard.":::
+1. To begin reviewing the Vulnerability Assessment capabilities, under **Vulnerability assessment findings**, select **View additional findings in Vulnerability Assessment**.  
 
 1. Select **Scan** to get the most current Vulnerability Assessment results. This process takes a few moments while Vulnerability Assessment scans all the databases in your Azure SQL Database logical server.
 
@@ -80,11 +78,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Advanced Threat Protection
 
-1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Advanced Data Security** dashboard. Select the **Advanced Threat Protection** tile to display more detail and review the results. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
+1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Security Center** dashboard for your SQL Database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** has not detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
 
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-3.png" alt-text="Screenshot of how to return to the Advanced Data Security dashboard.":::
-
-    You aren't likely to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
+    You aren't expected to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
     Advanced Threat Protection can be used to identify threats and alert you when it suspects that any of the following things is occurring:  
 
@@ -125,13 +121,11 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 
-1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Advanced data security**. 
+1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Security Center**. 
 
-    The **Advanced Threat Protection** tile now displays an alert.  
+    Under **Security incidents and alerts**, select **Check Azure Defender Alerts on this resource in Security Center**.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-alert.png" alt-text="Screenshot of an Advanced Threat Protection alert.":::
-
-1. Select the **Advanced Threat Protection** tile to see the overall security alerts.  
+1. You can now see the overall security alerts.  
 
     :::image type="content" source="../media/8-security-alerts.png" alt-text="Screenshot of the security alerts." lightbox="../media/8-security-alerts.png":::
 
@@ -139,4 +133,4 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. As a clean-up step, consider closing all your query editors in SSMS and removing all connections so that you don't accidentally trigger additional alerts in the next exercise.
 
-In this unit, you learned how to configure and apply some of the features in Advanced Data Security. In the next unit, you'll expand on what you've learned by combining various security features.
+In this unit, you learned how to configure and apply some of the security features for Azure SQL. In the next unit, you'll expand on what you've learned by combining various security features in an end-to-end scenario.

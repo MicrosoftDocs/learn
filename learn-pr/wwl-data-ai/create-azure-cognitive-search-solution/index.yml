@@ -2,8 +2,8 @@
 uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure Cognitive Search solution
-  description: "Unlock the hidden insights in your data with Azure Cognitive Search."
-  ms.date: 10/15/2020
+  description: "Create an Azure Cognitive Search solution"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ title: Create an Azure Cognitive Search solution
 summary: Unlock the hidden insights in your data with Azure Cognitive Search.
 abstract: |
   In this module you will learn how to:
-  - Create an Azure Cognitive Search index for unstructured data
+  - Create an Azure Cognitive Search solution
   - Develop a search application
 prerequisites: |
   - Familiarity with with Microsoft Azure
@@ -25,19 +25,16 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-storage
-- vs-code
 - azure-cognitive-search
 units:
 - learn.wwl.create-azure-cognitive-search-solution.introduction
 - learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop
 - learn.wwl.create-azure-cognitive-search-solution.resources-for-search
 - learn.wwl.create-azure-cognitive-search-solution.create-data-source
-- learn.wwl.create-azure-cognitive-search-solution.create-index
-- learn.wwl.create-azure-cognitive-search-solution.create-run-indexer
 - learn.wwl.create-azure-cognitive-search-solution.search-index
 - learn.wwl.create-azure-cognitive-search-solution.apply-filtering-sorting
 - learn.wwl.create-azure-cognitive-search-solution.enhance-index
+- learn.wwl.create-azure-cognitive-search-solution.exercise-search
 - learn.wwl.create-azure-cognitive-search-solution.knowledge-check
 - learn.wwl.create-azure-cognitive-search-solution.summary
 badge:

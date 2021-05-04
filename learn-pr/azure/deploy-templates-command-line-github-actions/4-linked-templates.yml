@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-templates-command-line-github-actions.4-linked-templates
-title: Deploying linked and nested ARM templates
+title: Deploy linked and nested ARM templates
 metadata:
-  title: Deploying linked and nested ARM templates
+  title: Deploy linked and nested ARM templates
   description: Deploying linked and nested ARM templates in your environment
   ms.date: 10/15/2020
   author: pierreroman

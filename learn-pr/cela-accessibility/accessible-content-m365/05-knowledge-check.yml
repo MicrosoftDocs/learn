@@ -72,14 +72,14 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct."
-  - content: "If a diagram or image doesn't have alternative text (alt text), how will the Accessibility Checker will flag it?"
+  - content: "If a diagram or image doesn't have alternative text (alt text), how will the Accessibility Checker flag it?"
     choices:
     - content: "As an error"
-      isCorrect: false
-      explanation: "Incorrect."
-    - content: "As a warning"
       isCorrect: true
       explanation: "Correct."
+    - content: "As a warning"
+      isCorrect: false
+      explanation: "Incorrect."
     - content: "As a tip"
       isCorrect: false
       explanation: "Incorrect."

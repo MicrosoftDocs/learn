@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.4-implement-feature-management
+metadata:
+  title: Exercise - Implement the Feature Management library
+  description: Implement the .NET Feature Management library in a microservices app.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 11/23/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Implement the Feature Management library
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-implement-feature-management.md)]

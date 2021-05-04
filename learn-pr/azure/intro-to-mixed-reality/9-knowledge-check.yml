@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is mixed reality?"
+    choices:
+    - content: "A set of virtual-reality hardware devices sold by Microsoft"
+      isCorrect: false
+      explanation: "Virtual-reality hardware devices are only a part of mixed reality."
+    - content: "A spectrum of immersive experiences, connecting and blending physical and digital worlds together"
+      isCorrect: true
+      explanation: "Mixed reality can include experiences that overlay virtual content over objects or places in the physical world, as in augmented-reality apps, or an immersive virtual experience where the user doesn't have any input from the real world, as in virtual-reality apps."
+    - content: "An augmented-reality platform application that comes with Microsoft HoloLens" 
+      isCorrect: false
+      explanation: "Mixed reality is not limited to augmented reality or Microsoft HoloLens."
+  - content: "What is the difference between virtual-reality and augmented-reality experiences?"
+    choices:
+    - content: "Virtual reality fully immerses a user in a digital environment, whereas augmented reality keeps users in their physical environment."
+      isCorrect: true
+      explanation: "Virtual-reality users aren't aware of their real-world surroundings, but augmented reality relies on the surrounding environment."
+    - content: "Augmented reality fully immerses a user in a digital environment, whereas virtual reality keeps users in their physical environment."
+      isCorrect: false
+      explanation: "Augmented-reality applications use the surrounding real-world environment, whereas virtual-reality content is totally immersive."
+    - content: "Virtual-reality content is available only on holographic devices, whereas augmented-reality content can run only on immersive equipment."
+      isCorrect: false
+      explanation: "Virtual-reality content is run on immersive headsets, whereas augmented-reality content is run on holographic devices."
+  - content: "How would you describe a hologram?"
+    choices:
+    - content: "Immersive 3D objects made of opaque pixels"
+      isCorrect: false
+      explanation: "Holograms are rendered over the real world and are not opaque."
+    - content: "Physical objects that react to digital content"
+      isCorrect: false
+      explanation: "Holograms are purely digital objects, not physical."
+    - content: "Digital objects made of light and sound"
+      isCorrect: true
+      explanation: "Holograms are digital objects rendered in front of the user's view when the user is wearing a HoloLens device."
+  - content: "What tool would a design team use to prototype mixed-reality digital interactions, objects, and UI by using crafting materials?"
+    choices:
+    - content: "Storyboarding"
+      isCorrect: false
+      explanation: "Storyboarding is a 2D design process that's better suited to advertising content to non-technical team members or stakeholders."
+    - content: "Whiteboarding"
+      isCorrect: false
+      explanation: "Whiteboarding is a 2D design process that's better suited to prototyping outside mixed reality."
+    - content: "Bodystorming"
+      isCorrect: true
+      explanation: "Bodystorming allows you to try out the proposed interactions, features, and mechanics without having to fully prototype them."
+  - content: "Mixed reality exists at the crossroads of which of the following?"
+    choices:
+    - content: "Humans, computers, and environments"
+      isCorrect: true
+      explanation: "The intersection of computer processing, human input, and environmental understanding is where the power, creativity, and emerging capabilities of mixed reality come to life."
+    - content: "Hardware, software, and industry"
+      isCorrect: false
+      explanation: "Although hardware, software, and the tech industry are important to mixed reality, they're not the core of what makes mixed reality possible."
+    - content: "Manufacturing, education, and training"
+      isCorrect: false
+      explanation: "Manufacturing, education, and training are common industry use cases and applications for mixed reality."

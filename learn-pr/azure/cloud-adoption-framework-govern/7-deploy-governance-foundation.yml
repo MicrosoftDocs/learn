@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.7-deploy-governance-foundation
+title: Deploy a cloud governance foundation
+metadata:
+  title: Deploy a cloud governance foundation
+  description: A series of exercises to develop your initial governance foundation.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-deploy-governance-foundation.md)]

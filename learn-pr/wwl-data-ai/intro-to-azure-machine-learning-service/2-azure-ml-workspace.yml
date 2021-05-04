@@ -3,8 +3,8 @@ uid: learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-workspace
 title: Azure Machine Learning workspaces
 metadata:
   title: Azure Machine Learning workspaces
-  description: "Learn how to provision an Azure Machine Learning workspace"
-  ms.date: 10/10/2020
+  description: "Azure Machine Learning workspaces"
+  ms.date: 12/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
