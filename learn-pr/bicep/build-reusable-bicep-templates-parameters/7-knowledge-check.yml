@@ -34,7 +34,7 @@ quiz:
       explanation: An empty string is a valid value for the `projectName` parameter.
     - content: "`delta`"
       isCorrect: false
-      explanation: The value `delta` is a valid value for the `projectName` parameter, since it is under the maximum allowed length of five characters.
+      explanation: The value `delta` is a valid value for the `projectName` parameter, since it is less than the maximum length of five characters.
     - content: "`foxtrot`"
       isCorrect: true
       explanation: The value `foxtrot` is not valid for the `projectName` parameter, because its length exceeds the maximum of five characters.

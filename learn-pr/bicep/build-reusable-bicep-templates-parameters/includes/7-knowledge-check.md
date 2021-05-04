@@ -1,4 +1,4 @@
-You are deploying a template that a colleague has written. They have given you a Bicep template named *main.bicep* with these parameter definitions:
+You are deploying a template that a colleague has written. They give you a Bicep template named *main.bicep* with these parameter definitions:
 
 ```bicep
 @maxLength(5)
@@ -8,7 +8,7 @@ param projectName string = 'alpha'
 param apiKey string
 ```
 
-They also gave you the following parameter file named *main.parameters.json*:
+They also give you the following parameter file named *main.parameters.production.json*:
 
 ```json
 {
@@ -21,9 +21,9 @@ They also gave you the following parameter file named *main.parameters.json*:
     "apiKey": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toycompanysecrets"
+          "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
         },
-        "secretName": "apiKey"
+        "secretName": "KeyToAccessPartnerApi"
       }
     }
   }
@@ -37,8 +37,8 @@ You deploy the template using this Azure CLI command:
 ```azurecli
 az deployment group create \
   --template-file main.bicep \
-  --parameters main.parameters.json \
-  --parameters projectName=charlie
+  --parameters main.parameters.production.json \
+               projectName=charlie
 ```
 
 ::: zone-end
@@ -50,7 +50,7 @@ You deploy the template using this Azure PowerShell command:
 ```azurepowershell
 New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
-  -TemplateParameterFile main.parameters.json `
+  -TemplateParameterFile main.parameters.production.json `
   -projectName charlie
 ```
 

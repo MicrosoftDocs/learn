@@ -2,7 +2,7 @@ In the previous units, you provided the parameter values on the command line whe
 
 ## Create parameter files
 
-_Parameter files_ make it easy to specify parameter values together as a set. Within the parameter file, you provide values for the parameters in your Bicep file. Parameter files are created using the JavaScript Object Notation (JSON) language. You supply the JSON parameter file when you deploy your Bicep template. Here's what a parameter file looks like: 
+_Parameter files_ make it easy to specify parameter values together as a set. Within the parameter file, you provide values for the parameters in your Bicep file. Parameter files are created using the JavaScript Object Notation (JSON) language. You can supply a parameter file when you deploy your Bicep template. Here's what a parameter file looks like: 
 
 ```json
 {
@@ -35,18 +35,16 @@ _Parameter files_ make it easy to specify parameter values together as a set. Wi
 }
 ```
 
-Let's look at each part of this in more detail:
+Let's look at each part of the parameter file in more detail:
 
-- `$schema` identifies that this is a parameters file when it's submitted to Azure Resource Manager.
-- You can use `contentVersion` to keep track of significant changes in your parameter file if you want, but usually it's just kept as `1.0.0.0`.
-- The `parameters` section lists each parameter and the value you want to use.
-    - Parameter names in parameter files are case-insensitive. If you have defined a parameter in your Bicep template named `appServicePlanSkuName`, you can use the name `AppServicePlanSKUName` in your parameters file and it will work.
-    - Notice that the parameter value has to be specified as an object. The object has a property called `value` that defines the actual value you want to use.
+- `$schema` helps Azure Resource Manager to understand that this is a parameters file.
+- `contentVersion` is a property that you can use to keep track of significant changes in your parameter file if you want. Usually it's just set to its default value of `1.0.0.0`.
+- The `parameters` section lists each parameter and the value you want to use. Notice that the parameter value has to be specified as an object. The object has a property called `value` that defines the actual parameter value to use.
 
-Generally you will create a parameter file for each environment. It's good practice to include the environment name in the name of the parameter file. For example, you might have parameter files named *main.parameters.dev.json* and *main.parameters.production.json* for your development and production environments.
+Generally you will create a parameter file for each environment. It's a good practice to include the environment name in the name of the parameter file. For example, you might have a parameter files named *main.parameters.dev.json*  for your development environment, and *main.parameters.production.json* for your production environment.
 
-> [!TIP]
-> Make sure you only specify values for parameters that exist in your Bicep template. When you create a deployment, Azure will check your parameters and will tell you if you have tried to specify a value for a parameter it doesn't know about.
+> [!NOTE]
+> Make sure you only specify values for parameters that exist in your Bicep template. When you create a deployment, Azure will check your parameters and will give you an error if you have tried to specify a value for a parameter that isn't in the Bicep file.
 
 ## Use parameter files at deployment time
 
@@ -68,13 +66,13 @@ When you create a new deployment using the `New-AzResourceGroupDeployment` cmdle
 
 ## Override parameter values
 
-You've now learned about three ways to specify parameter values: default values, the command line, and parameter files. It's common to use different approaches to specify different values for the same parameter. You've already seen this when you worked with default values: if you specify a parameter's default value in a Bicep file, but then specify a different value using the command line, the command-line version takes priority. Let's look at how parameter files fit into this:
+You've now learned about three ways to specify parameter values: default values, the command line, and parameter files. It's common to use different approaches to specify different values for the same parameter. You've already seen this when you worked with default values. When you create a default value for a parameter, but then specify a different value using the command line, the command-line value takes precedence. Let's look at how parameter files fit into this:
 
 :::image type="content" source="../media/4-precedence.png" alt-text="Diagram that shows the order of precedence. Default values are overridden by parameter files, which are overridden by command-line parameter values." border="false":::
 
 You can see that default values are overridden by values that you specify in a parameter file, and parameter file values are overridden by command-line parameter values.
 
-Let's see how this works. Here's an example Bicep file that defines three parameters with default values:
+Let's see how this works. Here's an example Bicep file that defines three parameters, each with default values:
 
 ```bicep
 param location string = resourceGroup().location
@@ -85,7 +83,7 @@ param appServicePlanSku object = {
 }
 ```
 
-You can create a parameter file that overrides the value of two of the parameters but doesn't specify a value for the `location` parameter:
+Let's look at a parameter file that overrides the value of two of the parameters but doesn't specify a value for the `location` parameter:
 
 ```json
 {
@@ -107,7 +105,7 @@ You can create a parameter file that overrides the value of two of the parameter
 
 ::: zone pivot="cli"
 
-When you create the deployment, you can also override one of the parameter values. Like with parameter files, you use the `--parameters` argument, but you add the value you want to override as its own value:
+When you create the deployment, we also override the value for the `appServicePlanInstanceCount`. Like with parameter files, you use the `--parameters` argument, but you add the value you want to override as its own value:
 
 :::code language="azurecli" source="code/4-override.sh" highlight="4":::
 
@@ -123,10 +121,10 @@ When you create the deployment, you override one of the parameter values. You sp
 
 Let's look at what the values will be:
 
-- `location` will be the resource group's location. The Bicep file specifies this as a default value, and it's not overridden.
-- `appServicePlanSku` will be an object with a `name` property set to `P1v3` and a `tier` of `PremiumV3`. The default value in the template is overridden by the parameter file.
-- `appServicePlanInstanceCount` will be `5`. The value specified at deployment time overrides the default value and the value in the parameter file.
+| Parameter | Value | Reason |
+|-|-|-|
+| `location` | The resource group's location. | The Bicep file specifies this as a default value, and it's not overridden. |
+| `appServicePlanSku` | An object with a `name` property set to `P1v3` and a `tier` of `PremiumV3`. | The default value in the Bicep file is overridden by the parameter file. |
+| `appServicePlanInstanceCount` | `5` | The value specified at deployment time overrides the default value and the value in the parameter file. |
 
 By using a mixture of the approaches to specify parameter values, you can avoid having to duplicate parameter values in lots of places, while still getting the flexibility to override it where you need to.
-
-<!-- TODO consider adding note about using parameter files by URI -->
