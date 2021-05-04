@@ -65,4 +65,4 @@ As a compute engine, Azure Databricks sits at the center of your Azure-based sof
     - New standards-compliant parser (with good error messages!)
     - Subqueries (correlated & uncorrelated)
     - Approximate aggregate stats
-- With the DataFrames API, the performance differences between languages are nearly nonexistence (especially for Scala, Java & Python).
+- With the DataFrames API, the performance differences between languages are nearly nonexistent (especially for Scala, Java & Python).

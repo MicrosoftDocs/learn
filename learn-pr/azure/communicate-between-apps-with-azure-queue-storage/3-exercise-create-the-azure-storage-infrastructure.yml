@@ -14,11 +14,3 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-the-azure-storage-infrastructure.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az storage account create` command above to create a general-purpose v2 storage account."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"
