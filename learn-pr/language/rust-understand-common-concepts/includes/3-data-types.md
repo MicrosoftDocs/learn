@@ -37,14 +37,14 @@ Rust comes with some built-in data types to express numbers, text, and truthines
 
 Integers in Rust are identified by bit size and the *signed* property. A signed integer can be a positive or negative number. An unsigned integer can be only a positive number.
 
-| Length  | Signed  | Unsigned |
-|---------|:-------:|:--------:|
-| 8-bit   | `i8`    | `u8`     |
-| 16-bit  | `i16`   | `u16`    |
-| 32-bit  | `i32`   | `u32`    |
-| 64-bit  | `i64`   | `u64`    |
-| 128-bit | `i128`  | `u128`   |
-| *architecture-dependant*    | `isize` | `usize`  |
+| Length  | Signed  | Unsigned |&nbsp;|&nbsp;|
+|---------|---------|----------|------|------|
+| 8-bit   | `i8`    | `u8`     |&nbsp;|&nbsp;|
+| 16-bit  | `i16`   | `u16`    |&nbsp;|&nbsp;|
+| 32-bit  | `i32`   | `u32`    |&nbsp;|&nbsp;|
+| 64-bit  | `i64`   | `u64`    |&nbsp;|&nbsp;|
+| 128-bit | `i128`  | `u128`   |&nbsp;|&nbsp;|
+| *architecture-dependant*     | `isize` | `usize`  |&nbsp;|&nbsp;|
 
 The `isize` and `usize` types depend on the kind of computer your program is running on. The 64-bit type is used on a 64-bit architecture, and the 32-bit type on a 32-bit architecture. If you don't specify the type for an integer, and the system can't infer the type, it assigns the `i32` type (a 32-bit signed integer) by default.
 
@@ -130,9 +130,15 @@ You can create a `String` from a string literal by using the `from` function, li
 
 ```rust
 fn main() {
-    let mut hello = String::from("Hello, ");  // create a String from a string literal
-    hello.push('w');                          // push a character into our String
-    hello.push_str("orld!");                  // push a string literal into our String
+    // Create a String from a string literal
+    let mut hello = String::from("Hello, ");  
+
+    // Push a character into our String
+    hello.push('w');
+    
+    // Push a string literal into our String       
+    hello.push_str("orld!");
+             
     println!("{}", hello)
 }
 ```
@@ -178,4 +184,4 @@ Tuples are useful when you want to combine different types into a single value. 
 <!-- Links -->
 [RustPlay-compile]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7b8d18e97567f9603a0f8efea0369034?azure-portal=true
 [RustPlay-numbers]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d683842bd8cedd949ed3c56b27f6f0eb?azure-portal=true
-[RustPlay-chars]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=44fa6bc90bec04af145fc72c96e59500?azure-portal=true
+[RustPlay-chars]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8b2abd147dc31d217d380db74dec01b0?azure-portal=true

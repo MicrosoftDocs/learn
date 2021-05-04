@@ -110,6 +110,6 @@ In your code, you can refer to a `WebEvent::Click`, which is a variant of the ty
 
 
 <!-- Links -->
-[RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ee492e41152dd39f7190cfceebc6897?azure-portal=true
+[RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=55a21bcf95b3cb12181c689c2b7b7f42?azure-portal=true
 [Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true

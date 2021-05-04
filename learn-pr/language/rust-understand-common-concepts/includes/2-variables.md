@@ -17,11 +17,12 @@ The `println` macro takes a string as a first argument and one extra argument fo
 > We add the exclamation mark `!` when we call `println!` to let Rust know that we're using this function as a macro and not a normal method. We won't cover Rust macros in detail this module. For now, you can think of the `println!` macro as a function with a variable number of arguments. 
 
 
-The preceding example would print:
+Our example prints the following output:
 
-> The number is 10.
-
-> The boolean is true.
+```output
+The number is 10.
+The boolean is true.
+```
 
 ## Mutability
 
@@ -75,7 +76,7 @@ fn main() {
 
     // Again, another new binding is created
     let number = number * 2; 
-    println!("The number is: {}", number);
+    println!("The number is {}.", number);
 }
 ```
 
@@ -83,5 +84,5 @@ Can you guess the output? Visit the [Rust Playground to run this example][RustPl
 
 
 <!-- Links -->
-[RustPlay-errmsg]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true
-[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true
+[RustPlay-errmsg]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e993f03ddbaa2831a27accda66c332c1?azure-portal=true
+[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e6f06e06abb37c9ee15e25de0d510f5a?azure-portal=true
