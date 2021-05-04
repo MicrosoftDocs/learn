@@ -12,7 +12,7 @@ title: Create the foundation for modern applications
 summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to: 
-    - Create multi-service solutions from real-world scenarios
+    - Build a foundation for applications with Azure SQL Database
     - Demonstrate modern Azure SQL Database capabilities
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Ability to navigate the Azure portal
