@@ -62,22 +62,15 @@ In reality, the data is queued in a cache, waiting to be written to a disk. As y
 Now that you understand how different performance indicators define the overall performance of the managed disk, lets examine some use case scenarios.
 
 Suppose that you have a high demanding application that require instant response with very low latency.
-
 The first step is to choose the right VM size that will provide high disk throughput. You can use Lsv2-series VMs that provide high throughput, low latency and support for multithreading. As general guides you should choose VM that offers IOPS greater than the application need.
-
 Second, choose a disk that offers IOPS greater than your application requirement and has a scale limits that can meets highest peak demands of the application requirements.
-
 Third, combine the performance of the VM and the disk, by ensuring that the IOPS limit of the VM size should be greater than total IOPS driven by storage disks attached to it.
-
 You can improve the performance of the application if you choose multiple disk and stripe them together to get a combined higher IOPS and throughput limit. The striping on Windows is supported using Storage Space functionality, and on Linux using MDADM.
-
 The stripe size can be tuned regarding the nature of the application. Smaller stripe size provides better performance for applications that use random small IO patters. Use larger stripe size for sequential large IO pattern, commonly used in Data Warehouse applications.
-
 Applications that use multi-threading improve the IOPS and throughput limits. A multi-thread application benefit of multiple parallel jobs that can be handled by multi CPU and multi-core VMs.
 
-Note: Keep in mind that you cannot modify the nature how the application implements single threading or multi-threading. But you can still tune how multi-threading is altering the performance of the application, by for example configuring maximum number of processors can be used for parallel processing.
-
-The queue depth, that present the number of outstanding I/O requests
+>[Note!]
+> Keep in mind that you cannot modify the nature how the application implements single threading or multi-threading. But you can still tune how multi-threading is altering the performance of the application, by for example configuring maximum number of processors can be used for parallel processing.
 
 ## Azure disk bursting
 
