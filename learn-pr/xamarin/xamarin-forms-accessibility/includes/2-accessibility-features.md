@@ -7,4 +7,4 @@ There are many APIs that desktop and mobile platforms like iOS, Android, and Win
 Each platform has its own versions of screen readers. They give auditory descriptions of user controls that are displayed on the screen. These descriptors help users navigate through the application and give reference to controls, such as images, that have no input or written text. Screen readers are often controlled through gestures on the touchscreen, a trackpad, or a keyboard. 
 
 Next, you will learn more about the main screen readers that Xamarin.Forms supports and how to enable them.
-
+> Note: Screen reader setup instructions vary across device and platform version.

@@ -72,7 +72,7 @@ The default tab order of controls is the same order in which they are listed in 
     <Entry
         Grid.Row="1"
         Grid.Column="1"
-        Placeholder="Manager forename" />
+        Placeholder="Manager's forename" />
     <Entry
         Grid.Row="1"
         Grid.Column="2"
@@ -80,7 +80,7 @@ The default tab order of controls is the same order in which they are listed in 
 </Grid>
 ```
 
-Now, when you run the application you will see the new column-based accessibility ordering as navigating through the elements. We have also improved the screen reader information on the `Entry` by updating the `Placeholder` with more valuable information for the user.
+Now, when you run the application you will see the new column-based accessibility ordering as navigating through the elements. We have also improved the screen reader information on the `Entry` by updating the `Placeholder` with more valuable information such as "Manager's surname" and "Manager's forename" that is read back.
 
 ![Column-based Tab Order](../media/correct-tab-order.png)
 

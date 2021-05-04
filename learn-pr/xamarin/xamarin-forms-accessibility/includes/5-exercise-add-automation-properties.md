@@ -72,10 +72,10 @@ AutomationProperties.IsInAccessibleTree="true"
 We can provide additional information as to what the image is when it becomes focused by the screen reader by setting the `AutomationProperties.Name` property. Add the following property to the `Image`:
 
 ```xaml    
-AutomationProperties.Name="Image of .NET Bot"
+AutomationProperties.Name="Image of dot net bot"
 ```
 
-When you run the application again you will see that when the image gains focus, "Image of .NET Bot" is read out loud.
+When you run the application again you will see that when the image gains focus, "Image of .NET Bot" is read out loud. Notice that we spelled out "dot net bot" to assist the screen reader with proper pronunciation. When setting text that will be read it is best practice to be aware of how the screen reader will read back text. For example, "a11y" which is an abbreviation for accessibility would be read back as "ay eleven why". Setting the label simply to "accessibility" would alleviate the need for any additional automation properties.
 
 ## Entry accessibility with LabelBy
 
@@ -101,14 +101,12 @@ When you run the application again, you hear "Project name" read out loud when t
 
 When the `Button` is in focus, "Submit button" is read out loud by the screen reader. We can provide more context as to what will happen when the user taps the button, by setting the `AutomationProperties.HelpText` property. 
 
-1. Add the following properties to the `Button`:
+1. Add the following property to the `Button`:
 
 ```xaml
-AutomationProperties.Name="Submit"
 AutomationProperties.HelpText="Submits project information to backend"
 ```
 
 When you run the application again, you will hear an improved description of the UI element as well as context for what will happen when it is pressed.
 
 We have now explored the built-in automation properties of Xamarin.Forms that enable developers to add more context for on-screen elements that are accessible to screen readers. Next, we will explore accessible content ordering to provide a better experience when a user navigates through elements.
-
