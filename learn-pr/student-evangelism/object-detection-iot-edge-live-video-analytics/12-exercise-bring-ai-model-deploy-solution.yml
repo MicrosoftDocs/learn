@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
+title: Exercise - Bring your AI model to deploy a video analytics solution
+metadata:
+  title: Exercise - Bring your AI model to deploy a video analytics solution
+  description: In this section, we help learner bring YOLO model and deploy the solution.
+  ms.date: 05/04/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/12-exercise-bring-ai-model-deploy-solution.md)]

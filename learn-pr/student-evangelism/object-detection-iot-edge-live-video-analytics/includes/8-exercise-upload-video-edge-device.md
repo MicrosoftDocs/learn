@@ -37,6 +37,8 @@ Perform the following steps in Azure Cloud Shell.
    ```
    sudo docker ps
    ```
+ 
+   [![The illustration shows deployment.](../media/rtsp-simulator.png)](../media/rtsp-simulator.png#lightbox)
 
 3. Check the path of your video.
 
@@ -47,7 +49,7 @@ Perform the following steps in Azure Cloud Shell.
 4. Since the RTSP simulator would only host the video in the specific location in its container. So you would have to put your video file into the container of the RTSP simulator. On your IoT Edge device, you can copy the video file you just upload into the RTSP simulator container through ***docker cp*** command:
 
    ```
-   sudo docker cp <path to your video on edge> rtspsim:/live/mediaServer/media/
+   sudo docker cp <path_to_your_video_on_edge> rtspsim:/live/mediaServer/media/
    ```
 
 5. The video would then be copied into the RTSP simulator container.

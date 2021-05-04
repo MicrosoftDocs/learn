@@ -1,4 +1,6 @@
-You'll perform the following steps in Azure Cloud Shell. Before you start, you need to have an active [Azure subscription](https://signup.azure.com/signup?offer=ms-azr-0044p&appId=102&ref=azureplat-generic&redirectURL=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fget-started%2Fwelcome-to-azure%2F&l=en-us&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88).
+You'll perform the following steps in Azure Cloud Shell. Before you start, you need an Azure account for this learning module. If you don't have an Azure account, then create a free account. If you are a student, then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students/) (no credit card required). Otherwise, sign up for a free [Azure account](https://azure.microsoft.com/free/).
+
+From your web browser, navigate to https://portal.azure.com and sign in.
 
 ## Create cloud resources
 
@@ -77,11 +79,11 @@ Register an IoT Edge device with your newly created IoT hub.
 
 4. Click on the **Deploy** button to create a virtual machine with Azure IoT Edge runtime pre-installed (via cloud-init) using ARM template. During the runtime configuration, you provide a device connection string. This is the string that you retrieved from the Azure CLI. This string associates your physical device with the IoT Edge device identity in Azure.
 
-   [![The illustration shows deploy button for virtual machine.](../media/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fmaster%2FedgeDeploy.json)
+   [![The illustration shows deploy button for virtual machine.](../media/deploy-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fmaster%2FedgeDeploy.json)
 
 5. During the runtime configuration, you provide a device connection string. This is the string that you retrieved from the Azure CLI. This string associates your physical device with the IoT Edge device identity in Azure. 
 
-   [![The illustration shows overview of custom template.](../media/custom-deployment-template.png)](../media/custom-deployment-template.png)
+   [![The illustration shows overview of custom template.](../media/custom-deployment-template.png)](../media/custom-deployment-template.png#lightbox)
 
 ## Open network port 8181
 
@@ -89,12 +91,12 @@ Register an IoT Edge device with your newly created IoT hub.
 
 2. Go to Networking and click on 'Add Inbound Port Rule'.
 
-   [![The illustration shows how to add inbound port.](../media/add-port-rule.png)]() 
+   [![The illustration shows how to add inbound port.](../media/add-port-rule.png)](../media/add-port-rule.png#lightbox)
 
 3. Fill out 'Destination port ranges' and 'Name.' After this, you'll see a pop-up telling you that it's creating the security rule 'Port_8181'.
 
-   [![The illustration shows how to add inbound security port.](../media/create-security-rule.png)](../media/create-security-rule.png)
+   [![The illustration shows how to add inbound security port.](../media/create-security-rule.png)](../media/create-security-rule.png#lightbox)
 
 4. Finally, you'll see Port 8181 will be added. 
 
-   [![The illustration shows port 8181.](../media/port-8181.png)](../media/port-8181.png)
+   [![The illustration shows port 8181.](../media/port-8181.png)](../media/port-8181.png#lightbox)
