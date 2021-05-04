@@ -9,7 +9,7 @@ metadata:
   ms.date: 04/21/2021
   author: wviriya
   ms.author: wviriya
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
