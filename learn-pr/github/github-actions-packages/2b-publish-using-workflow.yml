@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-packages.publish-using-workflow
+title: Publish to GitHub Packages and GitHub Container Registry
+metadata:
+  title: Publish to GitHub Packages and GitHub Container Registry
+  description: Discover the basics of using a workflow to publish to GitHub Packages and the necessary steps to build, authenticate, tag, and push a Docker image to the GitHub Container Registry.
+  ms.date: 04/27/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/2b-publish-using-workflow.md)]

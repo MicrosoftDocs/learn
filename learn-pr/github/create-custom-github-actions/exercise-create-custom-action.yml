@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-custom-github-actions.exercise-create-custom-action
+title: Exercise - Create a custom JavaScript GitHub action
+metadata:
+  title: Exercise - Create a custom JavaScript GitHub action
+  description: Learn how to create a custom JavaScript GitHub action and use it within a workflow.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 04/14/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/exercise-create-custom-action.md)]
