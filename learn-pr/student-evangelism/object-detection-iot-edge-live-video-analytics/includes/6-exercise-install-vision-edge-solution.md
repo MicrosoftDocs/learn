@@ -36,7 +36,7 @@ Perform the following steps in the Azure Cloud Shell environment.
 
 6. Next you will be asked if you want to use Azure Live Video Analytics. Choose **yes** and it will create Azure Media Service.
 
-   [![The illustration shows how to create Azure Media Service.](../media/create-media-service.png)](../media/create-media-service.png#lightbox)
+   [![The illustration shows how to create Azure Media Service.](../media/create-azure-media-service.png)](../media/create-azure-media-service.png#lightbox)
 
 7. Copy the "SERVICE-PRINCIPLE-SECRET" information. You will need the secret information for later use.         
 
