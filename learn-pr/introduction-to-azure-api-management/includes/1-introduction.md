@@ -48,9 +48,9 @@ Suppose you work at a company that operates a food delivery platform. That is, c
 
 We'll examine Azure API Management from three main angles to help you decide if it's the right solution to reduce your company's API complexity:
 
-* **Gateway**: A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
-* **Administrators**: A graphical interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
-* **Developers**: A portal that brings all your APIs into a single location for developers to read documentation, test APIs, get API keys, see code samples, and run analytics.
+- **Gateway**: A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
+- **Administrators**: A graphical interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
+- **Developers**: A portal that brings all your APIs into a single location for developers to read documentation, test APIs, get API keys, see code samples, and run analytics.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
