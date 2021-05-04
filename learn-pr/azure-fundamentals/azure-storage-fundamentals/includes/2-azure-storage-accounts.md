@@ -12,7 +12,7 @@ To begin using Azure Storage, you first create an Azure Storage account to store
 Your storage account will contain all of your Azure Storage data objects, such as blobs, files, and disks.
 
 > [!NOTE]
-> Azure VMs use Azure Disk Storage to store virtual disks. However, you can't use Azure Disk Storage to store a disk outside of a virtual machine.
+> Azure VMs use Azure Disk Storage to store virtual disks. However, you can't use Azure Disk Storage to store a disk outside of a virtual machine.<br>
 
 :::image type="content" source="../media/account-container-blob-4da0ac47.png" alt-text="Diagram of hierarchy of a storage account.":::
 
