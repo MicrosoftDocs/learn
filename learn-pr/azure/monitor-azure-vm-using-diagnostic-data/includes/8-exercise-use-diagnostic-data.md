@@ -1,4 +1,4 @@
-Azure enables you to take action on the metrics you're capturing. You can create alerts that email you, or start automations with runbooks. 
+Azure enables you to take action on the metrics you're capturing. You can create alerts that email you, or start automations with runbooks.
 
 Now, you'll create an alert based on your web server's CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
 
@@ -16,13 +16,13 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. On the left menu pane, scroll down, and select **Metrics**.
 
-1. Select **New alert rule**.
+1. Select **New alert rule**. The **Create alert rule** pane appears.
 
     ![Screenshot that shows the button for a new alert rule on the metrics pane](../media/8-metrics-new-alert-rule-button.png)
 
 ### Select the resource
 
-1. Under **Scope**, click the **Select resource** link.
+1. Under **Scope**, select the **Select resource** link.
 
 1. In the **Filter by resource type** field, select **Virtual machines**.
 
@@ -34,9 +34,9 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Create the condition
 
-1. Under **Condition**, select **Add condition** link.
+1. Under **Condition**, select the **Add condition** link. The **Select a signal** pane appears.
 
-1. Under **Signal name**, select **Percentage CPU**.
+1. Under **Signal name**, select **Percentage CPU**. The **Configure signal logic** pane appears.
 
     ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
 
@@ -50,11 +50,11 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
     ![Screenshot that shows the section for alert logic filled out.](../media/8-alert-logic.png)
 
-1. Select **Done**.
+1. Select **Done**. The **Create alert rule** pane appears.
 
 ### Add an action
 
-1. Under **Actions**, select **Add action groups**.
+1. Under **Actions**, select the **Add action groups** link. The **Add action groups** pane appears.
 
 1. Select **Create action group**.
 
@@ -70,7 +70,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
    ![Screenshot that shows the "Add action group" pane filled out.](../media/8-create-action-group-basics.png)
 
-1. Select the **Notifications** tab, and enter the following values for each setting.
+1. Select **Next: Notifications**, and enter the following values for each setting.
 
     |Setting  |Value  |
     |---|---|
@@ -78,24 +78,26 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     |Notification type      | Email/SMS/Push/Voice |
     |Name     | High CPU usage       |
 
+    The **Email/SMS message/Push/Voice** pane appears.
+
    ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
 
-1. In the **Email/SMS message/Push/Voice** pane, select **Email**, and enter your email address to receive the alert notification. If this pane doesn't appear, select **Edit** for the notification type.
+1. Tick the **Email** checkbox, and enter your email address to receive the alert notification. If this pane doesn't appear, select **Edit** for the notification type.
   
    ![Screenshot that shows the "Email/SMS/Push/Voice" pane ](../media/8-create-action-group-notifications-email.png)
 
 1. Select **OK**.
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and then select **Create**. The **Create alert rule** pane appears.
 
 ### Enter alert rule details
 
-1. For **Alert rule details**, enter the following values.
+1. Under **Alert rule details**, enter the following values.
 
     |Field  |Value  |
     |---|---|
     |Alert rule name | Web server CPU running hot    |
-    |Description     | Email alert notifies when the CPU is over 90%|
+    |Description     | Email alert notifies when the CPU is over 90% |
 
    ![Screenshot that shows the fields for alert details.](../media/8-alert-rule-details.png)
 
@@ -107,11 +109,11 @@ Wait a few minutes for this rule to activate.
 
 1. Go to the VM **Overview** pane.
 
-1. Select **Connect**, and then select **SSH**.
+1. In the upper menu bar, select **Connect**, and then select **SSH**. The **Connect** pane for your VM appears.
 
    ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
-1. From the last step, copy the **azureuser**@ and IP address that follows.
+1. Under step 4 (**Run the example command below to connect to your VM**), copy the **azureuser**@ and IP address that follows.
 
 1. In Azure Cloud Shell to the right, enter **SSH**, and paste what you copied in the previous step. It should look like the following command.
 
