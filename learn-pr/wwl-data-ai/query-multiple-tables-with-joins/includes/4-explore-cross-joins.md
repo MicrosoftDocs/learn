@@ -15,14 +15,12 @@ While this result isn't typically a desired output, there are a few practical ap
  *  Creating a table of numbers, with a row for each possible value in a range.
  *  Generating large volumes of data for testing. When cross joined to itself, a table with as few as 100 rows can readily generate 10,000 output rows with little work from you.
 
-## Cross Join Syntax
+## CROSS JOIN syntax
 
 When writing queries with CROSS JOIN, consider the following guidelines:
 
  *  There is no matching of rows performed, and so no ON clause is used. (It is an error to use an ON clause with CROSS JOIN.)
  *  To use ANSI SQL-92 syntax, separate the input table names with the CROSS JOIN operator.
-
-## Cross Join Example
 
 The following query is an example of using CROSS JOIN to create all combinations of employees and products:
 

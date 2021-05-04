@@ -28,7 +28,7 @@ This example uses a LEFT OUTER JOIN operator, which directs the query processor 
 
 :::image type="content" source="../media/outer-join-venn-diagram.png" alt-text="A Venn diagram showing the outer join results of the Employee and SalesOrder sets":::
 
-## OUTER JOIN Syntax
+## OUTER JOIN syntax
 
 Outer joins are expressed using the keywords LEFT, RIGHT, or FULL preceding OUTER JOIN. The purpose of the keyword is to indicate which table (on which side of the keyword JOIN) should be preserved and have all its rows displayed; match, or no match.
 
