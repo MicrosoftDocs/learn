@@ -49,20 +49,20 @@ We'll update the routing configuration of our app to disable Facebook and Google
 
 1. At the root of the JSON object, add this routing configuration:
 
-  ```json
-  "routes": [
-    {
-      "route": "/.auth/login/facebook",
-      "statusCode": "404"
-    },
-    {
-      "route": "/.auth/login/google",
-      "statusCode": "404"
-    }
-  ]
-  ```
+    ```json
+    "routes": [
+      {
+        "route": "/.auth/login/facebook",
+        "statusCode": "404"
+      },
+      {
+        "route": "/.auth/login/google",
+        "statusCode": "404"
+      }
+    ]
+    ```
 
-  By adding these two routing rules, we prevent our users to access the Facebook and Google authentication providers.
+    By adding these two routing rules, we prevent our users to access the Facebook and Google authentication providers.
 
 ## Secure the product list access
 
