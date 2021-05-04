@@ -12,36 +12,38 @@ param environmentName string = 'dev'
 param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
 
 @description('The number of App Service plan instances to deploy.')
-@minValue(2)
+@minValue(1)
 @maxValue(10)
-param appServicePlanInstanceCount int = 2
+param appServicePlanInstanceCount int = 1
+
+@description('The name and tier of the App Service plan SKU to deploy.')
+param appServicePlanSku object
 
 @description('The location (Azure region) into which the resources should be deployed.')
 param location string = resourceGroup().location
 
 @secure()
-@description('SQL admin login name')
+@description('The administrator login username for the SQL server.')
 param sqlServerAdministratorLogin string
 
 @secure()
-@description('SQL admin login password')
+@description('The administrator login password for the SQL server.')
 param sqlServerAdministratorPassword string
-    
+
+@description('The name and tier of the SQL database to deploy.')
+param sqlDatabaseSku object
+
 var appServicePlanName = '${environmentName}-${solutionName}-plan'
 var appServiceAppName = '${environmentName}-${solutionName}-app'
-var appServicePlanSkuName = 'F1'
-var appServicePlanSkuTier = 'Free'
 var sqlServerName = '${environmentName}-${solutionName}-sql'
 var sqlDatabaseName = 'Employees'
-var sqlDatabaseSkuName = 'Standard'
-var sqlDatabaseSkuTier = 'Standard'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   name: appServicePlanName
   location: location
   sku: {
-    name: appServicePlanSkuName
-    tier: appServicePlanSkuTier
+    name: appServicePlanSku.name
+    tier: appServicePlanSku.tier
     capacity: appServicePlanInstanceCount
   }
 }
@@ -69,7 +71,7 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
   name: sqlDatabaseName
   location: location
   sku: {
-    name: sqlDatabaseSkuName
-    tier: sqlDatabaseSkuTier
+    name: sqlDatabaseSku.name
+    tier: sqlDatabaseSku.tier
   }
 }

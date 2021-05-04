@@ -12,25 +12,31 @@ During the process, you'll:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
+## Remove default value for SKU
+
+1. In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value:
+
+   :::code language="plaintext" source="code/6-template.bicep" range="19-20" :::
+
 ## Add new parameters
 
-1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters below the current parameter declarations. When you're finished, your parameter declarations should look like this:
+1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, `sqlServerAdministratorPassword`, and `sqlDatabaseSku` parameters below the current parameter declarations. When you're finished, your parameter declarations should look like this:
 
-   :::code language="plaintext" source="code/6-template.bicep" range="1-28" highlight="22-28" :::
+   :::code language="plaintext" source="code/6-template.bicep" range="1-34" highlight="25-34" :::
 
-   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters, since it's considered insecure to add default values for secure parameters.
+   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters, since it's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for the `sqlDatabaseSku`. You'll specify this in a parameter file shortly.
 
 ## Add new variables
 
-1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerName`, `sqlDatabaseName`, `sqlDatabaseSkuName`, and `sqlDatabaseSkuTier` variables under the existing variables. When you're finished, your variable declarations should look like this:
+1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerName` and `sqlDatabaseName` variables under the existing variables. When you're finished, your variable declarations should look like this:
 
-   :::code language="plaintext" source="code/6-template.bicep" range="30-37" highlight="5-8" :::
+   :::code language="plaintext" source="code/6-template.bicep" range="36-39" highlight="3-4" :::
 
 ### Add SQL server and database
 
 1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file.
 
-   :::code language="bicep" source="code/6-template.bicep" range="58-75" :::
+   :::code language="bicep" source="code/6-template.bicep" range="60-77" :::
 
 1. Save the changes to the file.
 
@@ -45,14 +51,11 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-        "environmentName": {
-            "value": "dev"
-        },
-        "appServicePlanInstanceCount": {
-            "value": 2
-        },
-        "location": {
-            "value": "westus"
+        "sqlDatabaseSku": {
+            "value": {
+              "name": "Standard",
+              "tier": "Standard"
+            }
         }
       }
     }
@@ -176,9 +179,9 @@ Copy the resource ID. You'll use this in the next step.
 
 ## Add key vault reference to parameter file
 
-1. In *main.parameters.dev.json* file, append the following code after `location` parameter. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're done, your parameters file should look like this:
+1. In *main.parameters.dev.json* file, append the following code after the `sqlDatabaseSku` parameter's closing brace. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're done, your parameters file should look like this:
 
-   :::code language="json" source="code/6-parameters.json" highlight="14-29" :::
+   :::code language="json" source="code/6-parameters.json" highlight="11-26" :::
 
 1. Save the changes to the file.
 
