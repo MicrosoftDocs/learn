@@ -110,8 +110,8 @@ let heart_eyed_cat = '😻';
 ```
 
 > [!NOTE]
-> Some languages treat their `char` types as 8-bit unsigned integers (the equivalent of Rust's `u8`). Rust's `char` types are utf-8 encoded unicode code points.
-> This means they are 32 bits wide.
+> Some languages treat their `char` types as 8-bit unsigned integers, which is the equivalent of the Rust `u8` type.
+> The `char` type in Rust contains unicode code points, but they don't use utf-8 encoding. A `char` in Rust is a 21-bit integer that's padded to be 32 bits wide. The `char` contains the plain code point value directly.
 
 The `str` type, also known as a *string slice*, is a view into string data. Most of the time, we refer to those types in referenced form by using the form `&str`. We'll cover references in the following modules. For now, you can think of `&str` as a pointer to an immutable string data. String literals are all of type `&str`.
 

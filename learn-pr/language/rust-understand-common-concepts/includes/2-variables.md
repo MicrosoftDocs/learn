@@ -33,10 +33,12 @@ error message from the compiler.
 
 ```rust
 fn main() {
-    let a_number = 10; // error: cannot assign twice to immutable variable `a_number`
-    println!("the number is {}.", a_number);
+    let a_number = 10;
+    println!("The number is {}.", a_number);
+    
     a_number = 15;
-    println!("and now the number is {}.", a_number);
+    // Error: cannot assign twice to immutable variable `a_number`
+    println!("Now the number is {}.", a_number);
 }
 ```
 
@@ -46,10 +48,12 @@ To mutate a value, we must first use the `mut` keyword to make a variable bindin
 
 ```rust
 fn main() {
-    let mut a_number = 10; // notice the `mut` keyword
-    println!("the number is {}.", a_number);
+    // The `mut` keyword lets the variable be changed
+    let mut a_number = 10; 
+    println!("The number is {}.", a_number);
+
     a_number = 15;
-    println!("and now the number is {}.", a_number);
+    println!("Now the number is {}.", a_number);
 }
 ```
 
@@ -63,9 +67,14 @@ The variable `number` from the preceding example doesn't need to be mutable. No 
 
 ```rust
 fn main() {
-    let number = 5;          // the first binding is created using the name "number"
-    let number = number + 5; // a different binding shadows the name "number"
-    let number = number * 2; // again, a new binding is created
+    // The first binding is created with the name "number"
+    let number = 5;
+
+    // A different binding shadows the name "number" 
+    let number = number + 5; 
+
+    // Again, another new binding is created
+    let number = number * 2; 
     println!("The number is: {}", number);
 }
 ```
