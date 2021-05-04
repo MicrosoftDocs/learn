@@ -16,8 +16,8 @@ abstract: |
   - Add logic to a JSX file.
   - Use map to work with lists of items.
 prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
-iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+iconUrl: /learn/achievements/react/react-components-data.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:

@@ -4,11 +4,11 @@ A great way to get started with Python is learning how to perform input and outp
 print('Hello World!')
 ```
 
-The argument passed to `print` is a *string*, which is one of the fundamental data types in Python used to store and manage text. By default, `print` outputs a newline character at the end of the line so that subsequent output — for example, additional calls to `print` — will start on the next line.
+The argument passed to `print` is a *string*, which is one of the fundamental data types in Python used to store and manage text. By default, `print` outputs a newline character at the end of the line so that subsequent calls to `print`, will start on the next line.
 
 ## Try your first Python statement
 
-Python supports an interactive console experience which allows you to type in commands and see the results immediately. This is sometimes referred to as a "Read-Eval-Print-Loop" or REPL. We can try this in the Cloud Shell to the right.
+Python supports an interactive console experience, which allows you to type in commands and see the results immediately. This experience is sometimes referred to as a "Read-Eval-Print-Loop" or REPL. We can try this feature out in the Cloud Shell to the right.
 
 1. Type `python` to start the Python interpreter in the interactive mode.
 
@@ -42,7 +42,7 @@ Python supports an interactive console experience which allows you to type in co
 
 ## Getting help
 
-The REPL has a built-in help function you can use to lookup keywords and functions. The generalized syntax for this function is:
+The REPL has a built-in help function you can use to look up keywords and functions. The generalized syntax for this function is:
 
 ```python
 help([object])
@@ -56,7 +56,7 @@ Where `[object]` is a specific function or keyword you want help on. Let's try a
     help(print)
     ```
 
-1. This will display the following output:
+1. This command will display the following output:
 
     ```output
     Help on built-in function print in module builtins:
@@ -78,9 +78,9 @@ Where `[object]` is a specific function or keyword you want help on. Let's try a
 
 If you don't pass an argument to the help function, an interactive help facility is started.
 
-1. Type `help()` to enter the interactive help console. This will list some basic instructions on how to use the help system.
+1. Type `help()` to enter the interactive help console. This command will list some basic instructions on how to use the help system.
 
-1. From here you can just type in the element you're interested in. Type in `string` to get help on the `string` data type. It will display something like:
+1. From here, you can just type in the element you're interested in. Type in `string` to get help on the `string` data type. It will display something like:
 
     ```output
     Help on module string:
@@ -100,7 +100,7 @@ If you don't pass an argument to the help function, an interactive help facility
 
 1. When there is more than one page of output, you can press <kbd>Enter</kbd> to display line-by-line, or <kbd>Space</kbd> to go page-by-page.
 
-1. Once you hit the end of the help screen, type `q` to exit the page. This will return you back to the interactive help prompt.
+1. Once you hit the end of the help screen, type `q` to exit the page. You will be returned to the back of the interactive help prompt.
 
 1. Feel free to explore more things here - for example, you can get a list of Python keywords by typing `keywords`.
 

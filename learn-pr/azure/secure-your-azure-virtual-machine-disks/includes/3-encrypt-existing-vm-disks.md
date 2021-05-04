@@ -17,7 +17,7 @@ The encryption keys used by ADE can be stored in Azure Key Vault. Azure Key Vaul
 
 You can configure and manage your key vault with:
 
-#### Powershell
+#### PowerShell
 
 ```powershell
 New-AzKeyVault -Location <location> `
@@ -42,35 +42,46 @@ An Azure Key Vault is a resource that can be created in the [Azure portal](https
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Search for "Key vault". Click **Create** in the details window.
+1. In the search box, search for and select *Key Vault*. The **Key Vault** pane appears.
 
-    ![Screenshot showing Key vault in the Azure Marketplace](../media/3-create-keyvault.png)
+1. Select **Create**. The **Create key vault** pane appears.
 
-1. Enter the details for the new Key Vault:
-    - Enter a **Name** for the Key Vault
-    - Select the subscription to place it in (defaults to your current subscription).
-    - Select a **Resource Group**, or create a new resource group to own the Key Vault.
-    - Select a **Location** for the Key Vault. Make sure to select the location the VM is in.
-    - You can choose either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for Hardware-encryption backed keys.
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. You must change the Access policies to support Disk Encryption. By default it adds _your_ account to the policy.
-    - Select **Access policies**.
-    - Select **Advanced access policies**.
-    - Check the **Enable access to Azure Disk Encryption for volume encryption**.
-    - You can remove your account if you like, it's not necessary if you only intend to use the Key Vault for disk encryption.
-    - To save the changes, select **OK**.
+    | Setting | Value |
+    |---------|---------|
+    | **Project details** |
+    | Subscription | Select the subscription to place it in (defaults to your current subscription) |
+    | Resource group | Select a *Resource Group*, or create a new resource group to own the key vault |
+    | **Instance details** |
+    | Key vault name | Enter a name for your key vault |
+    | Region | Ensure to select the region that the VM resides |
+    | Pricing tier | 1 minute |
+    | Frequency of evaluation | Select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
 
-    ![Screenshot showing the advanced properties for Key Vault with the Azure Disk Encryption option checked and highlighted](../media/3-configure-access-policy.png)
+    ![Screenshot showing Key vault pane.](../media/3-create-keyvault.png)
 
-1. To create the new Key Vault, select **Create**.
+1. Select **Next : Access policy**. You must change the Access policies to support Disk Encryption. By default it adds _your_ account to the policy.
+
+1. On the **Access policy** tab, enter the following value for the setting.
+
+    | Setting | Value |
+    |---------|---------|
+    | **Enable Access to:**  | Azure Disk Encryption for volume encryption (check). You can remove your account if you like, as it's not necessary if you only intend to use the key vault for disk encryption  |
+
+1. Select **Review + create**.
+
+1. After validation passes, to create the new Key Vault, select **Create**.
 
 ## Enable access policies in the key vault
-Azure needs access to the encryption keys or secrets in your key vault to make them available to the VM for booting and decrypting the volumes. This was covered for the portal which you previously changed the **Advanced access policies**.
 
-There are three policies you can enable.
-1. **Disk encryption** - Required for Azure Disk encryption.
-1. **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation, for example when creating a VM.
-1. **Template deployment** - (Optional) Enables Azure Resource Manager to get secrets from this key vault when this key vault is referenced in a template deployment.
+Azure needs access to the encryption keys or secrets in your key vault to make them available to the VM for booting and decrypting the volumes. This was covered for the portal which you previously changed the **Access policy**.
+
+There are three policies you can enable:
+
+- **Disk encryption** - Required for Azure Disk encryption.
+- **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation, for example, when creating a VM.
+- **Template deployment** - (Optional) Enables Azure Resource Manager to get secrets from this key vault when this key vault is referenced in a template deployment.
 
 Here's how to enable the disk encryption policy. The other two are similar but use different flags.
 
@@ -84,10 +95,10 @@ az keyvault update --name <keyvault-name> --resource-group <resource-group> --en
 
 ## Encrypt an existing VM disk
 
-After you have the Key Vault set up, you can encrypt the VM using either Azure CLI or Azure PowerShell. The first time you encrypt a Windows VM, you can choose to encrypt either all disks or the OS disk only. On some Linux distributions, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
+After you have the key vault set up, you can encrypt the VM using either Azure CLI or Azure PowerShell. The first time you encrypt a Windows VM, you can choose to encrypt either all disks or the OS disk only. On some Linux distributions, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
 
 > [!WARNING]
-> Before you can turn on encryption, you must take a snapshot or a backup of managed disks. The following `SkipVmBackup` flag tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
+> Before you can turn on encryption, you must take a snapshot or a backup of managed disks. The following `SkipVmBackup` flag informs the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
 
 With PowerShell, to enable encryption, run the `Set-AzVmDiskEncryptionExtension` cmdlet.
 
@@ -112,9 +123,9 @@ az vm encryption enable \
     --volume-type [all | os | data]
 ```
 
-## View the status of the disk
+## View status of disk
 
-You can check whether specific disks are encrypted or not.
+You can check whether specific disks are encrypted.
 
 ```powershell
 Get-AzVmDiskEncryptionStatus  -ResourceGroupName <resource-group> -VMName <vm-name>
@@ -126,9 +137,9 @@ az vm encryption show --resource-group <resource-group> --name <vm-name>
 
 Both of these commands will return the status of each disk attached to the specified VM.
 
-## Decrypting drives
+## Decrypt drives
 
-To reverse the encryption through PowerShell, use `Disable-AzVMDiskEncryption`.
+To reverse the encryption through PowerShell, run the  `Disable-AzVMDiskEncryption` cmdlet.
 
 ```powershell
 Disable-AzVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
@@ -140,7 +151,7 @@ For the Azure CLI, run the `vm encryption disable` command.
 az vm encryption disable --resource-group <resource-group> --name <vm-name>
 ```
 
-These commands disable encryption for volumes of type all for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All`, if not supplied.
+These commands disable encryption for volumes of type *all* for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All`, if not supplied.
 
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.

@@ -35,7 +35,7 @@ In this exercise, you'll create a virtual machine, set up a backup, and start a 
 
 ### Create a Windows virtual machine by using the Azure CLI
 
-Create the **NW-APP01** virtual machine by using the following command. Replace `<password>` with a password of your choice.
+Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice.
 
 ```azurecli
 az vm create \
@@ -52,7 +52,7 @@ az vm create \
 
 ### Create a Linux virtual machine by using the Azure CLI
 
-Create the **NW-RHEL01** virtual machine by using the following command.
+Create the **NW-RHEL01** virtual machine by running the following command.
 
 ```azurecli
 az vm create \
@@ -66,7 +66,7 @@ az vm create \
     --subnet NorthwindInternal1
 ```
 
-The command can take a few minutes to finish. Wait for it to finish before you move on to the next step.
+The command can take a few minutes to complete. Wait for it to finish before moving on to the next step.
 
 ### Enable backup for a virtual machine by using the Azure portal
 
@@ -78,31 +78,28 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 
     ![Screenshot that shows selecting a virtual machine](../media/4-portal-select-linux-vm.png)
 
-1. In the sidebar, scroll down to **Operations**, select **Backup**, and then use the following information to create a backup:
+1. In the left menu pane, scroll down to **Operations**, select **Backup**. The **NW-RHEL01 | Backup** pane appears.
+
+1. Under the **Summary** section, enter the following information to create a backup.
 
     | | |
     |-|-|
-    | **Recovery Services vault** | Select **Create new**, and enter **azure-backup** for the name. |
-    | **Resource group** | Select the **vmbackups** resource group that you created earlier. |
-    | **Choose a backup policy** | Select **(new) DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
+    | **Recovery services vault** | Enter **azure-backup** for the name. |
+    | **Backup policy** | Select **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
 
     ![Screenshot that shows the backup options](../media/4-portal-azure-backup.png)
 
-1. Select **Enable Backup**.
-
-1. After the deployment finishes, select **NW-RHEL01** from the list of virtual machines.
-
-1. You can access backup settings from the virtual machine menu by scrolling down to **Operations** and selecting **Backup**.
-
-1. To perform the first backup for this server, select **Backup now**.
+1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
     ![Screenshot that shows "Backup now"](../media/4-portal-backup-now.png)
 
-1. On the **Backup Now** page, select **OK**.
+    The **Backup Now** pane appears.
+
+1. Select **OK**.
 
 ### Enable a backup by using the Azure CLI
 
-1. By using Cloud Shell, enable a backup for the **NW-APP01** virtual machine.
+1. Using Cloud Shell, enable a backup for the **NW-APP01** virtual machine.
 
     ```azurecli
     az backup protection enable-for-vm \
@@ -121,7 +118,7 @@ The command can take a few minutes to finish. Wait for it to finish before you m
         --output table
     ```
 
-    Keep running the preceding command until you see that `ConfigureBackup` has finished:
+    Keep running the preceding command until you see that `ConfigureBackup` has finished.
 
     ```output
     Name                                  Operation        Status      Item Name    Start Time UTC                    Duration
@@ -155,7 +152,7 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 
 1. Select the **NW-APP01** virtual machine.
 
-1. Under **Operations**, select **Backup**.
+1. In the left menu pane, under **Operations**, select **Backup**.
 
     ![Screenshot of the Backup page after it has been set up](../media/4-portal-backup-setup.png)
 
@@ -172,4 +169,3 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, the storage being used, and the current status of any backup jobs.
 
     ![Screenshot of the Backup dashboard](../media/4-recovery-services-vault.png)
-

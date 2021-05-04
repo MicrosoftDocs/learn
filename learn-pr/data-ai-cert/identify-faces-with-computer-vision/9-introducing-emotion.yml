@@ -5,8 +5,8 @@ metadata:
   title: Introduction to the Emotion API
   description: "Get an introduction to the Emotion API"
   ms.date: 10/14/2020
-  author: gerryaobrien
-  ms.author: gerryo
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

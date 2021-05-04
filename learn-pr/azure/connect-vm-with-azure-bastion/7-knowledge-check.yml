@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: The public IP address of the destination VM
       isCorrect: true
-      explanation: You connect to internal VMs by using the public IP of Azure Bastion, not a public IP on the destination VM.
+      explanation: You connect to internal VMs by using the public IP of Azure Bastion, not a public IP of the destination VM.
     - content: The number of current remote connections
       isCorrect: false
       explanation: Azure Bastion has a limit on the number of concurrent RDP and SSH connections that it supports. Compare the number of sessions that are open for each protocol with the Azure Bastion limits.

@@ -20,7 +20,7 @@ SQL Database managed instance provides features not available with the Single Da
 
 ## Business benefits
 
-SQL Database managed instance provides all the management and security benefits available when using Single Database and Elastic Pool. managed instance deployment enables a system administrator to spend less time on administrative tasks because the SQL Database service either performs them for you or greatly simplifies those tasks. Automated tasks include operating system and database management system software installation and patching, dynamic instance resizing and configuration, backups, database replication (including system databases), high availability configuration, and configuration of health and performance monitoring data streams.
+SQL Database managed instance provides all the management and security benefits available when using Single Database and Elastic Pool. Managed instance deployment enables a system administrator to spend less time on administrative tasks because the SQL Database service either performs them for you or greatly simplifies those tasks. Automated tasks include operating system and database management system software installation and patching, dynamic instance resizing and configuration, backups, database replication (including system databases), high availability configuration, and configuration of health and performance monitoring data streams.
 
 Managed instance has near 100% compatibility with SQL Server Enterprise Edition, running on-premises.
 

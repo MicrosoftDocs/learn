@@ -2,10 +2,10 @@
 uid: learn.wwl.investigate-container-for-use-with-cognitive-services
 metadata:
   title: Investigate container for use with Cognitive Services
-  description: "Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers."
-  ms.date: 10/15/2020
+  description: "Investigate container for use with Cognitive Services"
+  ms.date: 04/01/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Investigate container for use with Cognitive Services

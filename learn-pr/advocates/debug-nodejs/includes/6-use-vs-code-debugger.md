@@ -1,4 +1,4 @@
-It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity for that. In our Tailwind Traders app, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it but is having a hard time trying to figure out what's going wrong. Let's help.
+It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity for that. In our Tailwind Traders app, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's help.
 
 Open Visual Studio Code on your machine, and create a new file named `currency.js` with this code:
 
@@ -44,9 +44,9 @@ setExchangeRate(107.4, 'USD', 'JPY');
 printForeignValues(10, 'EUR');
 ```
 
-To save the file, select **Ctrl+S** (Windows, Linux) or **Cmd+S** (Mac).
+To save the file, press <kbd>Ctrl+S</kbd> (Windows, Linux) or <kbd>Cmd+S</kbd> (Mac).
 
-The goal of this program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then we want to display how much value `10 EUR` is in all the other currencies, with two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
+The goal of this program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in all the other currencies, with two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
 
 ## Create a launch configuration
 
@@ -71,7 +71,7 @@ Now, to start the program, select **Start debugging**.
 
 You should see the program finish quickly. That's normal because you haven't added any breakpoints yet.
 
-If you don't have the debug console displayed, to turn it on, select **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). You should see this text in the debug console, followed by an exception.
+If you don't have the debug console displayed, to turn it on, press <kbd>Ctrl+Shift+Y</kbd> (Windows, Linux) or <kbd>Cmd+Shift+Y</kbd> (Mac). You should see this text in the debug console, followed by an exception.
 
 ```text
 The value of 10 EUR is:
@@ -115,9 +115,9 @@ Then, start debugging again, and step into the `printForeignValues()` function.
 
 ### Check the variables state
 
-Now, take some time to inspect the different variables' values by using the **Variables** panel.
+Now, take some time to inspect the different variables' values by using the **Variables** pane.
 
-:::image source="../media/variables-panel.png" alt-text="Screenshot of the Variables panel.":::
+:::image source="../media/variables-panel.png" alt-text="Screenshot of the Variables pane.":::
 
 - What's the value of `value` and `sourceCurrency`?
 - Do you see the three expected keys, `USD`, `EUR`, and `JPY`, in the `rates` variable?
@@ -140,7 +140,7 @@ You can then fix the first bug by using `displayValue` instead of `convertedValu
 
 ## Find the cause of the crash
 
-Let's now find out why the program is crashing. Remove the current breakpoint, and to force the program to pause after the exception is raised, in the **Breakpoints** panel, check the `Uncaught exception` box.
+Let's now find out why the program is crashing. Remove the current breakpoint, and to force the program to pause after the exception is raised, in the **Breakpoints** pane, check the `Uncaught exception` box.
 
 Run the program in the debugger again. It should pause on the exception with a large error log in the middle of the editor window.
 
@@ -150,9 +150,9 @@ Look at the line where the execution stopped and the exception message `TypeErro
 
 ### Rewind the call stack
 
-The *stack trace* you see under the error message can be a bit difficult to decipher. The good news is that Visual Studio Code processes the function call stack for you. By default, it shows only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
+The *stack trace* you see under the error message can be a bit difficult to decipher. The good news is that Visual Studio Code processes the function call stack for you. By default, it shows only the meaningful information in the **Call stack** pane. Let's use it to find out which code led to this exception.
 
-We know that the exception was thrown in `formatValueForDisplay()`. To see where it was called, in the **Call stack** panel, double-click on the function under it. You should end up at this line in `printForeignValues` function.
+We know that the exception was thrown in `formatValueForDisplay()`. To see where it was called, in the **Call stack** pane, double-click the function under it. You should end up at this line in `printForeignValues` function.
 
 ```js
 const displayValue = formatValueForDisplay(convertedValue);
@@ -160,7 +160,7 @@ const displayValue = formatValueForDisplay(convertedValue);
 
 Looking closely, you can see that the parameter that causes the exception comes from the `convertedValue` variable. Now, you need to find out at what point this value becomes `undefined`.
 
-One option is to add a breakpoint at this line and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs, this approach might be cumbersome.
+One option is to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs, this approach might be cumbersome.
 
 ### Add a conditional breakpoint
 
@@ -168,7 +168,7 @@ What would be nice here is to tell the debugger to stop at this breakpoint only 
 
 :::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
 
-You can now input the condition that will trigger the breakpoint. Enter `convertedValue === undefined`, and select **Enter**. Restart the program, and it should stop right where you want.
+You can now input the condition that will trigger the breakpoint. Enter `convertedValue === undefined`, and press <kbd>Enter</kbd>. Restart the program, and it should stop right where you want.
 
 ### Observe the current state
 
@@ -194,13 +194,13 @@ You try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR
 
 ## Fix missing conversion rates
 
-Now that you know some conversion rates are missing, let's understand why. To remove all existing breakpoints, in the **Breakpoints** panel, select **Remove all breakpoints**.
+Now that you know some conversion rates are missing, let's understand why. To remove all existing breakpoints, in the **Breakpoints** pane, select **Remove all breakpoints**.
 
 :::image source="../media/remove-all-breakpoints.png" alt-text="Screenshot of the button to remove all breakpoints.":::
 
 ### Watch the rates variable
 
-Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and to watch the value of the `rates` variable, in the **Watch** panel, select **Plus**, and enter `rates`. Every time the value of `rates` is updated, and its value will be reflected in the **Watch** panel.
+Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and to watch the value of the `rates` variable, in the **Watch** pane, select **Plus**, and enter `rates`. Every time the value of `rates` is updated, and its value will be reflected in the **Watch** pane.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
 
