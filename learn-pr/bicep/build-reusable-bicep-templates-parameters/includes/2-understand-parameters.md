@@ -25,7 +25,7 @@ Let's look at how each part of this works:
 
 ## Add a default value
 
-You can optionally assign a default value for a parameter. By specifying a default value, you're effectively making the parameter optional. If the user deploying the template doesn't specify a value to use then Bicep will use the default value you assigned.
+You can optionally assign a default value for a parameter. By specifying a default value, you're effectively making the parameter optional. If the user deploying the template doesn't specify a value to use, then Bicep will use the default value you assigned.
 
 Here's how you add a default value:
 
@@ -35,7 +35,7 @@ param environmentName string = 'dev'
 
 The parameter `environmentName` is assigned a default value of `dev`.
 
-You can use expressions as default values. Here is an example of a string parameter named `location` whose default value is set to the location of the current resource group:
+You can use expressions as default values. Here's an example of a string parameter named `location` whose default value is set to the location of the current resource group:
 
 ```bicep
 param location string = resourceGroup().location
@@ -43,7 +43,7 @@ param location string = resourceGroup().location
 
 ## Understand parameter types
 
-Bicep parameters must be assigned a type. When a value is assigned to a parameter, Bicep ensures that the value is compatible with the parameter's type.
+You need to tell Bicep what type of information each parameter will contain. When a value is assigned to a parameter, Bicep ensures the value is compatible with the parameter's type.
 
 Parameters in Bicep have one of the following types:
 
@@ -72,7 +72,7 @@ When you refer to the parameter, you can refer just to individual properties of 
 
 :::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
 
-Another example of where you might use an object parameter is for specifying resource tags. Azure allows you to attach custom tag metadata to the resources that you deploy, which you can use for identifying important information about a resource. Tags are useful for scenarios like tracking which team owns a resource, and whether a resource is for a production or non-production environment. Typically you'll use different tags for each environment, but you'll want to reuse the same tag values on all the resources within your template. This means it's a good use for an object parameter, like this:
+Another example of where you might use an object parameter is for specifying resource tags. Azure allows you to attach custom tag metadata to the resources that you deploy, which you can use for identifying important information about a resource. Tags are useful for scenarios like tracking which team owns a resource, and whether a resource is for a production or non-production environment. Typically you'll use different tags for each environment, but you'll want to reuse the same tag values on all the resources within your template. This means resource tags are a good use for an object parameter, like this:
 
 ```bicep
 param resourceTags object = {
@@ -93,7 +93,7 @@ An array is a list of items. Each item has one of the other Bicep types. You mig
 > [!NOTE]
 > You can't specify what types an array needs to contain.
 
-Let's consider an example. Azure Cosmos DB lets you create database accounts that span multiple regions, and Cosmos DB automatically handles the data replication for you. When you deploy a new database account you need to specify the list of Azure regions that you want the account to be deployed into. Often, you will need to have a different list of locations for different environments. For example, to save money in your test environment you might only use one or two locations, but in your production environment you might use several. You can create an array parameter that specifies a list of locations:
+Let's consider an example. Azure Cosmos DB lets you create database accounts that span multiple regions, and Cosmos DB automatically handles the data replication for you. When you deploy a new database account, you need to specify the list of Azure regions that you want the account to be deployed into. Often, you'll need to have a different list of locations for different environments. For example, to save money in your test environment you might only use one or two locations, but in your production environment you might use several. You can create an array parameter that specifies a list of locations:
 
 ```bicep
 param cosmosDBAccountLocations array = [
@@ -116,11 +116,11 @@ When you declare your Cosmos DB resource, you can now reference the array parame
 
 :::code language="plaintext" source="code/2-create-cosmosdb.bicep" highlight="5":::
 
-It's then easy to use a different parameter value for your development environment by changing the value of the parameter. Soon, you'll see how you can do this without modifying your original template.
+It's then easy to use a different parameter value for your development environment by changing the value of the parameter. Soon, you'll see how you can provide different parameter values without modifying your original template.
 
 ## Specify a list of allowed values
 
-Sometimes you need to make sure that a parameter has certain values. For example, your team might decide that production App Service plans should be deployed using the Premium v3 SKUs. To enforce this rule, you can use the `@allowed` parameter decorator. A *parameter decorator* is a way of giving Bicep information about what a parameter's value needs to be. Here is how a string parameter named `appServicePlanSkuName` can be restricted so that only a few specific values can be assigned:
+Sometimes you need to make sure that a parameter has certain values. For example, your team might decide that production App Service plans should be deployed using the Premium v3 SKUs. To enforce this rule, you can use the `@allowed` parameter decorator. A *parameter decorator* is a way of giving Bicep information about what a parameter's value needs to be. Here's how a string parameter named `appServicePlanSkuName` can be restricted so that only a few specific values can be assigned:
 
 ```bicep
 @allowed([
@@ -136,9 +136,9 @@ param appServicePlanSkuName string
 
 ## Restrict parameter length and values
 
-When you use string parameters you often need to limit the length of the string. Let's consider the example of Azure resource naming. All Azure resource types have limits around the length of their names. It's a good practice to specify the minimum and maximum character length for parameters that control naming, to avoid errors later during deployment. You can use the `@minLength` and `@maxLength` decorators to the minimum and maximum character lengths that you want to allow for a parameter.
+When you use string parameters, you often need to limit the length of the string. Let's consider the example of Azure resource naming. All Azure resource types have limits around the length of their names. It's a good practice to specify the minimum and maximum character length for parameters that control naming, to avoid errors later during deployment. You can use the `@minLength` and `@maxLength` decorators to the minimum and maximum character lengths that you want to allow for a parameter.
 
-Here is an example that declares a string parameter named `storageAccountName`, whose length can only be between 5 and 24 characters:
+Here's an example that declares a string parameter named `storageAccountName`, whose length can only be between 5 and 24 characters:
 
 ```bicep
 @minLength(5)
@@ -151,7 +151,7 @@ Notice that this parameter includes two decorators. You can apply multiple decor
 > [!NOTE]
 > You can also apply the `@minLength` and `@maxLength` decorators to array parameters.
 
-When you work with numeric parameters, you might need values to be in a particular range. For example, your toy company might decide that whenever anybody deploys an App Service plan, they should always deploy at least one instance, but no more than ten instances of the plan. To meet the requirements, you can use the `@minValue` and `@maxValue` decorators to specify the minimum and maximum allowed values. The following example declares an integer parameter `appServicePlanInstanceCount` whose value can only be between 1 and 10 (inclusive):
+When you work with numeric parameters, you might need values to be in a particular range. For example, your toy company might decide that whenever anybody deploys an App Service plan, they should always deploy at least one instance, but no more than 10 instances of the plan. To meet the requirements, you can use the `@minValue` and `@maxValue` decorators to specify the minimum and maximum allowed values. The following example declares an integer parameter `appServicePlanInstanceCount` whose value can only be between 1 and 10 (inclusive):
 
 ```bicep
 @minValue(1)
@@ -161,7 +161,7 @@ param appServicePlanInstanceCount int
 
 ## Add descriptions to parameters
 
-Parameters are a great way to make your templates reusable by other people. When other people try to use your template, they will need to understand what each parameter does so that they can provide the right values for their particular situation. Bicep provides the `@description` decorator so that you can provide this information:
+Parameters are a great way to make your templates reusable by other people. When other people try to use your template, they'll need to understand what each parameter does so that they can provide the right values for their particular situation. Bicep provides the `@description` decorator so that you can provide this information:
 
 ```bicep
 @description('The locations into which this Cosmos DB account should be configured. This parameter needs to be a list of objects, each of which has a locationName property.')

@@ -1,10 +1,10 @@
-Parameters enable you to create flexible and reusable Bicep templates. You define parameters for any aspect of your deployment that might change, such as environment-specific settings, pricing and capacity configuration for your Azure resources, and API keys to access external systems. Parameters can be configured to securely handle sensitive data. In this module, you'll learn how parameters can be defined and configured, and how you can specify parameter values during your deployments.
+Parameters enable you to create flexible and reusable Bicep templates. You define parameters for any aspect of your deployment that might change, such as environment-specific settings, pricing and capacity configuration for your Azure resources, and API keys to access external systems. Parameters can be configured to securely handle sensitive data. In this module, you'll learn how to define and configure parameters, and how you can specify parameter values during your deployments.
 
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. The Human Resources (HR) department is migrating an on-premises web application and its database to Azure. The application will handle information about all of the employees of the toy company, so security is important.
 
-You have been asked to prepare infrastructure for three environments: dev, test, and production. You'll build this using infrastructure as code techniques so that you can reuse the same templates to deploy across all of your environments. You need to create separate sets of parameter values for each environment, while securely retrieving database credentials from Azure Key Vault.
+You've been asked to prepare infrastructure for three environments: dev, test, and production. You'll build this using infrastructure as code techniques so that you can reuse the same templates to deploy across all of your environments. You'll create separate sets of parameter values for each environment, while securely retrieving database credentials from Azure Key Vault.
 
 ## What will we be doing?
 

@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "If an output is added to one of the modules, it will automatically be published as an output from the parent template too."
       isCorrect: false
-      explanation: "Outputs that Bicep modules define are available to the parent template, but they aren't automatically available to the template deployer. However, you can define an output in your template and pass the value through."
+      explanation: "Outputs that Bicep modules define are available to the parent template, but they're not automatically available to the template deployer. However, you can define an output in your template and pass the value through."
     - content: "If an output is added to one of the modules, it will automatically be available for the parent template to use."
       isCorrect: true
       explanation: "The outputs from modules are automatically made available for the parent template to use, such as in defining input parameter values for other modules or in setting the properties on resources."

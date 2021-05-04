@@ -1,4 +1,4 @@
-In this exercise, you'll create a parameter file that provide inputs to the Bicep template that you previously created. In the same parameter file, you'll also add Key Vault references to provide sensitive information.
+In this exercise, you'll create a parameter file that provides values for the Bicep file that you previously created. In the same parameter file, you'll also add Key Vault references to securely provide sensitive information.
 
 During the process, you'll:
 
@@ -58,7 +58,7 @@ Now you need to add a SQL server and database. First, you'll add parameters for 
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. Notice that you are providing a parameter file for the deployment.
+Run the following Azure CLI command in the terminal. Notice that you're providing a parameter file for the deployment.
 
 ```azurecli
 az deployment group create \
@@ -70,7 +70,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. Notice that you are providing a parameter file for the deployment.
+Run the following Azure PowerShell command in the terminal. Notice that you're providing a parameter file for the deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
@@ -116,7 +116,7 @@ az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministrator
 ```
 
 > [!NOTE]
-> Notice that you are setting the `--enabled-for-template-deployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
+> Notice that you're setting the `--enabled-for-template-deployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
 >
 > Also, whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
 
@@ -138,7 +138,7 @@ Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassw
 ```
 
 > [!NOTE]
-> Notice that you are setting the `-EnabledForTemplateDeployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
+> Notice that you're setting the `-EnabledForTemplateDeployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
 >
 > Also, whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
 
@@ -146,7 +146,7 @@ Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassw
 
 ### Get the key vault's resource ID
 
-To be able to use the key vault secrets in your deployment, you need the resource ID of the vault. Run the following command to retrieve the key vault's resource ID.
+To use the key vault secrets in your deployment, you need the resource ID of the vault. Run the following command to retrieve the key vault's resource ID.
 
 ::: zone pivot="cli"
 
@@ -184,7 +184,7 @@ Copy the resource ID. You'll use this in the next step.
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You are providing a parameter file along with a Bicep file.
+Run the following Azure CLI command in the terminal. You're providing a parameter file along with a Bicep file.
 
 ```azurecli
 az deployment group create \
@@ -196,7 +196,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You are providing a parameter file along with a Bicep file.
+Run the following Azure PowerShell command in the terminal. You're providing a parameter file along with a Bicep file.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `

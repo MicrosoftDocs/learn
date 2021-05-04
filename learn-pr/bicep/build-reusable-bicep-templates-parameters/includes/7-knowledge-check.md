@@ -1,4 +1,4 @@
-You are deploying a template that a colleague has written. They give you a Bicep template named *main.bicep* with these parameter definitions:
+You're deploying a template that a colleague has written. They give you a Bicep template named *main.bicep* with these parameter definitions:
 
 ```bicep
 @maxLength(5)

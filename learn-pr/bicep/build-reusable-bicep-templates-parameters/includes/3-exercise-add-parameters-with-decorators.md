@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
 
-As part of the HR application migration, you are creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they will always contain the values you expect. During the process, you'll:
+As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that includes parameters and variables.
@@ -22,7 +22,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    > [!TIP]
    > The `uniqueString()` function is useful for creating globally unique resource names. It will return a string that will be the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
-   Also notice that you're defining variables that construct the names of the Azure App Service plan and App Service app, and their values include some of the parameters you've specified. Parameter values can be overridden by the user executing the deployment, but the values of the variables can't be overridden.
+   Also notice you're defining variables that construct the names of the Azure App Service plan and App Service app, and their values include some of the parameters you've specified. Parameter values can be overridden by the user executing the deployment, but the values of the variables can't be overridden.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
@@ -34,7 +34,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ### Add parameter descriptions
 
-1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar this:
+1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar to this:
 
    :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
 
@@ -54,7 +54,7 @@ Your toy company will deploy the HR application to three environments - dev, tes
 
 ### Limit input lengths
 
-Your `solutionName` parameter is used to generate the names of resources. You want to enforce a minimum length of 5 characters and a maximum length of 30 characters.
+Your `solutionName` parameter is used to generate the names of resources. You want to enforce a minimum length of five characters and a maximum length of 30 characters.
 
 1. In the *main.bicep* file in Visual Studio Code, find the `solutionName` parameter. Add `@minLength` and `@maxLength` decorators below the `@description` decorator. After you're done, the parameter should look like below:
 

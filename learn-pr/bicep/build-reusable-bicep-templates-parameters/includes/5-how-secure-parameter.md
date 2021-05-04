@@ -5,9 +5,9 @@ Sometimes you need to pass sensitive values into your deployments, like logins, 
 
 ## Define secure parameters
 
-The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal will not display the text on your screen.
+The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively using the Azure CLI or Azure PowerShell and you need to enter the values interactively during the deployment, the terminal won't display the text on your screen.
 
-As part of the HR application migration, you need to deploy an Azure SQL server and database. You'll provision the server with an administrator login and password. Since they are so sensitive, you need these values to be secured. Here is an example declaration to create two string parameters for the SQL server's administrator details:
+As part of the HR application migration, you need to deploy an Azure SQL server and database. You'll provision the server with an administrator login and password. Since they're so sensitive, you need these values to be secured. Here's an example declaration to create two string parameters for the SQL server's administrator details:
 
 ```bicep
 @secure()
@@ -17,14 +17,14 @@ param sqlServerAdministratorLogin string
 param sqlServerAdministratorPassword string
 ```
 
-Note that neither parameter has a default value specified. It's a good practice not to specify a default value for usernames, passwords, and other secrets. Otherwise, if someone deploys your template and doesn't realize they should override the value, they will weaken their security because they'll get a default value instead of something they've chosen themselves.
+Notice that neither parameter has a default value specified. It's a good practice not to specify a default value for usernames, passwords, and other secrets. Otherwise, if someone deploys your template and doesn't realize they should override the value, they'll weaken their security because they'll get a default value instead of something they've chosen themselves.
 
 > [!TIP]
-> Make sure you don't create outputs for sensitive data. Output values can be accessed by anyone who has access to the deployment history, and they are not appropriate for handling secrets.
+> Make sure you don't create outputs for sensitive data. Output values can be accessed by anyone who has access to the deployment history, and they're not appropriate for handling secrets.
 
 ## Avoid using parameter files for secrets
 
-As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You'll often create parameter files for each environment you're deploying to. However, you should generally avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git, which lots of people might have access to in the future. You should never save sensitive data to version control systems since they aren't designed to store this sort of information.
+As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You'll often create parameter files for each environment you're deploying to. However, you should generally avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git, which lots of people might have access to in the future. Don't save sensitive data to version control systems since they're not designed to store this sort of information.
 
 ## Integrate with Azure Key Vault
 

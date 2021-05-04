@@ -1,4 +1,4 @@
-In the previous units, you provided the parameter values on the command line when you created a deployment. This approach works well when you're writing and testing your Bicep files, but it doesn't work well when you have a lot of parameters or when you need to automate your deployments. In this unit, you'll learn about different ways that parameter values can be specified.
+In the previous units, you provided the parameter values on the command line when you created a deployment. This approach works well when you're writing and testing your Bicep files, but it doesn't work well when you have many parameters or when you need to automate your deployments. In this unit, you'll learn about different ways that parameter values can be specified.
 
 ## Create parameter files
 
@@ -41,7 +41,7 @@ Let's look at each part of the parameter file in more detail:
 - `contentVersion` is a property that you can use to keep track of significant changes in your parameter file if you want. Usually it's just set to its default value of `1.0.0.0`.
 - The `parameters` section lists each parameter and the value you want to use. Notice that the parameter value has to be specified as an object. The object has a property called `value` that defines the actual parameter value to use.
 
-Generally you will create a parameter file for each environment. It's a good practice to include the environment name in the name of the parameter file. For example, you might have a parameter files named *main.parameters.dev.json*  for your development environment, and *main.parameters.production.json* for your production environment.
+Generally you'll create a parameter file for each environment. It's a good practice to include the environment name in the name of the parameter file. For example, you might have a parameter files named *main.parameters.dev.json*  for your development environment, and *main.parameters.production.json* for your production environment.
 
 > [!NOTE]
 > Make sure you only specify values for parameters that exist in your Bicep template. When you create a deployment, Azure will check your parameters and will give you an error if you have tried to specify a value for a parameter that isn't in the Bicep file.
@@ -68,9 +68,9 @@ When you create a new deployment using the `New-AzResourceGroupDeployment` cmdle
 
 You've now learned about three ways to specify parameter values: default values, the command line, and parameter files. It's common to use different approaches to specify different values for the same parameter. You've already seen this when you worked with default values. When you create a default value for a parameter, but then specify a different value using the command line, the command-line value takes precedence. Let's look at how parameter files fit into this:
 
-:::image type="content" source="../media/4-precedence.png" alt-text="Diagram that shows the order of precedence. Default values are overridden by parameter files, which are overridden by command-line parameter values." border="false":::
+:::image type="content" source="../media/4-precedence.png" alt-text="Diagram that shows the order of precedence for parameter values. Parameter files override default values, and command-line parameter values override parameter files." border="false":::
 
-You can see that default values are overridden by values that you specify in a parameter file, and parameter file values are overridden by command-line parameter values.
+You can see that parameter files override default values, and command-line parameter values override parameter files
 
 Let's see how this works. Here's an example Bicep file that defines three parameters, each with default values:
 
