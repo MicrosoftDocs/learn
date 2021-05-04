@@ -32,7 +32,7 @@ This attached property is a short descriptive text string that a screen reader u
 
 ```xaml
 <ActivityIndicator AutomationProperties.IsInAccessibleTree="true"
-                AutomationProperties.Name="Progress indicator" />
+                   AutomationProperties.Name="Progress indicator" />
 ```
 
 Or in the code-behind:
@@ -49,8 +49,8 @@ This attached property is a longer description of the element that can be though
 
 ```xaml
 <Button Text="Toggle"
-    AutomationProperties.IsInAccessibleTree="true"
-    AutomationProperties.HelpText="Toggles the activity indicator" />
+        AutomationProperties.IsInAccessibleTree="true"
+        AutomationProperties.HelpText="Toggles the activity indicator" />
 ```
 
 Or in the code-behind:
@@ -70,7 +70,7 @@ This attached property allows another element to specify information for accessi
 ```xaml
 <Label x:Name="label" Text="Enter your name: " />
 <Entry AutomationProperties.IsInAccessibleTree="true"
-    AutomationProperties.LabeledBy="{x:Reference label}" />
+       AutomationProperties.LabeledBy="{x:Reference label}" />
 ```
 
 Or in the code-behind:
