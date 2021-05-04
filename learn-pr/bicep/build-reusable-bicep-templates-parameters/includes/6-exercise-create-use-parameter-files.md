@@ -99,12 +99,10 @@ In the terminal, execute the following commands to create the key vault and secr
 
 ::: zone pivot="cli"
 
-<!-- TODO check the syntax below is valid for bash -->
-
 ```azurecli
-$keyVaultName=YOUR-KEY-VAULT-NAME # A unique name for the key vault.
-$login=YOUR-LOGIN # The login that you used in the previous step.
-$password=YOUR-PASSWORD # The password that you used in the previous step.
+keyVaultName='YOUR-KEY-VAULT-NAME' # A unique name for the key vault.
+login='YOUR-LOGIN' # The login that you used in the previous step.
+password='YOUR-PASSWORD' # The password that you used in the previous step.
 
 az keyvault create --name $keyVaultName --location westus --enabled-for-template-deployment true
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login
