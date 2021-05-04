@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.mr-digital-twins-operate.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 5/4/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Azure Resource Manager templates can be created in two languages; select one?"
+    choices:
+    - content: "Bicep"
+      isCorrect: false
+      explanation: ""
+    - content: "Tricep"
+      isCorrect: true
+      explanation: ""
+    - content: "DAX" 
+      isCorrect: false
+      explanation: ""
+  - content: "True or false: When setting up Azure services and using ARM templates, you need to be aware of service availability by location."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: ""
+    - content: "False"
+      isCorrect: true
+      explanation: ""
+  - content: "What approach is the most efficient means to create assets in Unity that connect to ADT?"
+    choices:
+    - content: "Create one asset in the Scene and copy-paste it so that all parameters are transferred to the copy."
+      isCorrect: false
+      explanation: ""
+    - content: "Develop a ScriptableObject to create assets at runtime based on a core Prefab"
+      isCorrect: true
+      explanation: ""
+    - content: "Drag and drop Prefab assets in the Scene" 
+      isCorrect: false
+      explanation: ""
+  - content: "True or false: A device simulator is always required for all Digital Twins to connect assets to ADT."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: ""
+    - content: "False"
+      isCorrect: true
+      explanation: ""
+
+  

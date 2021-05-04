@@ -1,21 +1,22 @@
-The ecosystem of mixed reality blends both the physical and digital worlds, defining the polar ends of a spectrum known as the virtuality continuum. Because of its immersive nature, mixed reality is transforming the nature of on-the-job training, game development, and consumer application development. 
-
-Whether you're an experienced developer or a new convert, it's important to get a conceptual grip on what mixed reality is, what it can offer, and what it can add to your business or industry.
-
-In this module, you'll be guided through the basic foundations of mixed reality. You'll learn where it fits in with augmented reality and virtual reality, hardware devices, content design, and common use-case examples in real-world technology. You'll also be introduced to mixed-reality services and applications like Dynamics 365 mixed reality and Azure mixed reality, which can empower and optimize your development pipeline.
-
-By the end of this module, you'll be able to confidently discuss mixed reality as a concept and its key processes. You'll also know how to apply it to your business or hobby.
+Visualizing assets in an immersive setting permits users to experience the right data in the right context, at the right time.  Adding connectivity of your assets to operations data makes your assets more intelligent and reflective of physical assets or processes.  When real-world operating data is connected to digital assets (live or historic IoT data), users are able to visualize operating conditions, identify anomalies in performance or equipment health / integrity, determine trends and patterns in data over time, and ultimately simulate future conditions or operations situations. In this unit, you will connect your wind turbines to a stream of ADT data for visualization and interaction on the HoloLens 2.  This is the true power of the Digital Twin.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+In this module, you'll learn how to:
 
-- Define mixed reality and differentiate between virtual reality and augmented reality
-- Describe the core ideas behind holograms
-- Start designing and developing 3D applications 
-- Understand what mixed reality offers in real-world apps
-- Use the power of the cloud for mixed reality
+- Connect to a Digital Twin data source on Azure
+- Stream telemetry data to assets in your Unity scene, using Azure services, including ADT
+- Visualize the data on a HoloLens 2 via SignalR
+- Experience and understand the power of Azure Digital Twins
+- Use Mixed Reality to operate a wind farm
 
 ## Prerequisites
 
-This Learn module has no prerequisites. Come as you are and dive into mixed reality!
+- Introduction to Mixed Reality, Azure Digital Twin and Unity Module
+- Build a 3D Scene in Unity with Maps SDK Module
+- Place 3D assets in a Unity scene [Design] Module
+- Azure service creation and configuration
+- Privilege to create Azure resource groups and resources
+- [Install the Azure CLI for Windows](https://docs.microsoft.com/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+- Basic Azure CLI knowledge
+- Basic PowerShell knowledge

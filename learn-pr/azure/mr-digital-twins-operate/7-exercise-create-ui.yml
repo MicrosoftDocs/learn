@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.mr-digital-twins-operate.7-exercise-create-ui
+title: Exercise -- Create Azure Digital Twin equipped User Interfaces
+metadata:
+  title: Exercise -- Create Azure Digital Twin equipped User Interfaces
+  description: Learn about the context and history of computing in relation to mixed reality and the most common use cases and examples.
+  ms.date: 5/4/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-create-ui.md)]

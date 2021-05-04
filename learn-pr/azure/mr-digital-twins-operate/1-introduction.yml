@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-mixed-reality.1-introduction
+uid: learn.mr-digital-twins-operate.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: An introduction to the Learn module, its objectives, and prerequisites.
-  ms.date: 11/17/2020
+  ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa 
   ms.topic: interactive-tutorial

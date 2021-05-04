@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.mr-digital-twins-operate.5-exercise-create-deploy-arm-template
+title: Exercise -- Create and deploy Azure Resource Manager template
+metadata:
+  title: Exercise -- Create and deploy Azure Resource Manager template
+  description: Learn how holograms are rendered, placed, and saved in mixed-reality environments. 
+  ms.date: 5/4/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-create-deploy-arm-template.md)]
