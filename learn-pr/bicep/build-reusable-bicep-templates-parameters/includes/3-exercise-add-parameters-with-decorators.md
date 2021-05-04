@@ -70,11 +70,11 @@ You need to ensure that the `appServicePlanInstanceCount` parameter only allows 
 
    :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
+   After you've completed all of the above changes, your final Bicep file should look like this:
+
+   :::code language="bicep" source="code/3-template.bicep" :::
+
 1. Save the changes to the file.
-
-After you've completed all of the above changes, your final Bicep file should look like this:
-
-:::code language="bicep" source="code/3-template.bicep" :::
 
 ## Deploy the Bicep template to Azure
 
