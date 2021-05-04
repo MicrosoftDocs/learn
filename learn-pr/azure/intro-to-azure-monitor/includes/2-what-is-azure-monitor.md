@@ -3,7 +3,7 @@ Let's start with an introduction to Azure Monitor. This overview will help you u
 ## What is monitoring?
 Monitoring is a task that involves collecting and reviewing data about the activity of some process or behavior. In the world of Azure, monitoring is used to collect insights into the operation, performance, and behavior of your applications and services.
 
-You can perform monitoring as a real-time event or collect and store the data in log files for later review. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
+You can perform monitoring as a near real-time event or review the data later. Metrics can also be reviewed later as they are stored for 93 days by default. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
 
 :::image type="content" source="../media/monitoring.png" alt-text="Depiction of data sources on the left feeding into a metrics and/or log database destinations on the right.":::
 
@@ -20,7 +20,7 @@ Key aspects of Azure Monitor are:
 
 * Azure Monitor metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs in Azure Monitor Logs.
 
-* Azure Monitor includes Insights, which are out-of-the box monitoring and troubleshooting experiences for Azure resources. Available Insights include Azure Monitor for VMs, Azure Monitor Application Insights, and Azure Monitor for Containers.
+* Azure Monitor includes Insights, which are out-of-the box monitoring and troubleshooting experiences for Azure resources. Available Insights include Azure Monitor VM insights, Azure Monitor application insights, and Azure Monitor container insights.
 
 * Azure Monitor can be used to visualize data with workbooks and dashboards as well as analyze data with custom charts and analytics. Azure Monitor enables you to receive notification and take automated action based on performance and availability criteria.
 
