@@ -36,17 +36,17 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following Azure API Management components is used to enforce call rate limits?"
     choices:
-    - content: ""
+    - content: "Gateway"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. As part of your API policies, you can set rate limits by subscription or key and those limits are enforced when each API request enters the Azure API Management gateway."
+    - content: "Developer portal"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Developers use this portal to subscribe to your APIs and those subscriptions are subject to the rate limits you set, which are enforced by the Azure API Management gateway."
+    - content: "Administration interface"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. You use the Azure API Management administration interface to set rate limits, not to enforce them."
   - content: ""
     choices:
     - content: ""

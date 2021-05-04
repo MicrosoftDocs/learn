@@ -16,11 +16,13 @@
         * Control actions
         * Logic Apps Designer"
 -->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Here, we'll discuss how Azure API Management works from three points of view: API customers, administrators, and developers. This knowledge will help you evaluate whether Azure API Management is a good solution for managing your organization's APIs.
+
+In this unit, you'll learn about:
+
+- How API customers use Azure API Management
+- How API administrators use Azure API Management
+- How API developers use Azure API Management
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
@@ -38,23 +40,61 @@ TODO: add your bulleted list of key things covered
 -->
 
 <!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+
+## How Azure API Management works for API customers
+
+An API *customer* is any entity that makes a request to the API for data. So a customer can be any of the following:
+
+- Mobile app
+- Web app
+- IoT device
+- Business partner
+- Employee
+- Developer
+
+The key Azure API Management component for customers is the gateway because all customer API calls are first routed to your gateway endpoint. The gateway is also the essential element in decoupling your APIs because the gateway endpoint is always separate from your API's deployment location in the backend. API customers only ever deal directly with the gateway, never with the actual API deployment instance.
+
+The gateway performs many tasks from the customer's point of view, but the following are the most important:
+
+- **Authentication**: The gateway monitors access to the API by verifying the customer's subscription keys, JWT tokens, and other credentials.
+- **Security**: The gateway prevents denial-of-service attacks and API misuse by enforcing predefined rate limits and customer usage quotas.
+- **Transformation**: The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transform the XML into JSON on-the-fly, as shown in the image below.
+- **Routing**: Once an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
+- **Performance**: The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives customers faster response times and reduces the load on the backend server.
+
+:::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="Diagram depicting a mobile app requesting a weather forecast using an API. The diagram shows how the Azure API Management gateway routes the call to the backend server and how the gateway converts the server's XML response to JSON.":::
 
 <!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
+
+## How Azure API Management works for administrators
+
+The Azure API Management administration interface is an Azure portal interface that enables you to administer your APIs, which includes the following activities:
+
+- Defining or importing API schemas.
+- Implementing usage policies such as quotas and rate limits.
+- Setting security policies.
+- Managing users.
+- Packaging APIs into products.
+- Defining API transformations.
+- Handling API revisions and versions.
+- Running analytics on your API metadata.
+
+### Packaging APIs into products
+
+### Handling revisions and versions
+
+### Running analytics
+
+## How Azure API Management works for developers
+
+The Azure API Management developer portal is a web interface that enables developers to interact with your APIs in the following ways:
+
+- Reading the documentation for each API.
+- Trying an API using the interactive console.
+- Subscribing to an API and getting the API subscription key.
+- Viewing code samples in different programming languages.
+- Running analytics on the developer's usage
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
