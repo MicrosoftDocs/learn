@@ -13,7 +13,7 @@ In this module, you'll set up your access to Azure Quantum and learn about solut
 
 Azure Quantum offers two types of solutions: quantum computing and optimization. Different divisions of the quantum space crew will need:
 
-- Quantum computing solutions to run quantum algorithms on real or simulated quantum devices. Quantum computing with Q# harnesses quantum mechanics to enable computation through a high-level quantum-focused programming language. In a later module, you'll develop Q# applications for quantum hardware with Azure Quantum. The navigation division will run Grover's algorithm in Q# for routing between space stations.
+- Quantum computing solutions to run quantum algorithms on real or simulated quantum devices. Quantum computing with Q# harnesses quantum mechanics to enable computation through a high-level quantum-focused programming language. In a later module, you'll develop Q# applications for quantum hardware with Azure Quantum. The communications division will run Grover's algorithm in Q# for assigning bandwidth ranges to space stations.
 
 - Optimization solutions to address optimization problems by using classical hardware. In a later module, you'll solve optimization problems on classical hardware faster and better by using algorithms inspired by physical processes. The logistics and maintenance divisions will need this for optimal loading of cargo vessels and prioritization of job scheduling.
 
