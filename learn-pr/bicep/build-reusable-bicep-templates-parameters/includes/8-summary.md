@@ -12,5 +12,5 @@ Now, when you want to deploy your infrastructure for other environments, you can
 
 ## Learn more
 
-- [Resource Manager parameter files](azure/azure-resource-manager/templates/parameter-files?tab=bicep)
+- [Resource Manager parameter files](/azure/azure-resource-manager/templates/parameter-files?tab=bicep)
 - [Key Vault references](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets)
