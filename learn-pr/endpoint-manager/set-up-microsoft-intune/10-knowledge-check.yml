@@ -23,7 +23,7 @@ quiz:
       explanation: "You must first create the user and then assign an Intune license to the user. Once the user has a license, you can help the user enroll their device into the Intune service."
     - content: "You must first create a user in the Intune service."
       isCorrect: true
-      explanation: "You must first create the user and then assign an Intune license to the user. Once the user has a license, you can help the user enroll their device into the Intune 
+      explanation: "You must first create the user and then assign an Intune license to the user. Once the user has a license, you can help the user enroll their device into the Intune service." 
   - content: "When you sign up for a Microsoft service, you commonly create a tenant. Which statement best describes a tenant?"
     choices:
     - content: "A tenant is a single dedicated server hosted inside a separate partition used by Intune to manage your organization's devices."
