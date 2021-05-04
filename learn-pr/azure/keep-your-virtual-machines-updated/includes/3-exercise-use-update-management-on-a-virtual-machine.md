@@ -9,9 +9,9 @@ Here you will create a new virtual machine to serve as a web server for the loca
 1. In the **Create resource** pane, select **Windows Server 2019 Datacenter**. The **Create a virtual machine** pane appears.
 1. On the **Basics** tab, enter the following values for each setting.
 
-    | Setting                | Value                                                  |
+    | Setting              | Value     |
+    |----------------------|------------|
     | **Project details** |
-    |----------------------|----------------------------------------------------------|
     | Subscription         | *Select your Azure subscription*                         |
     | Resource group       | Create a new resource group named "mslearn-vmupdate"     |
     | **Instance details** |
