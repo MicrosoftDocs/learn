@@ -4,69 +4,37 @@ If you determined that you already have Python 3 installed, scroll to the bottom
 
 ::: zone pivot="windows"
 
-## Install Python on Windows
+## Install Python on Windows from the Microsoft Store
 
 When this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
-Also, these instructions are specifically for Windows 10. If you're using a previous version of Windows, the basic instructions are the same, though the process in some steps might be slightly different.
+> [!NOTE]
+> These instructions are specifically for Windows 10. If you're using a previous version of Windows, refer to the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true) for more information.
 
 > [!NOTE]
-> At the time of this writing, Python 3.8.0 is the most current version of Python, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
+> At the time of this writing, Python 3.9.0 is the most current version of Python, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
 
-### Step 1 - Download the Python 3.8 installer for Windows
+### Step 1 - Open the Microsoft Store and install Python
 
-Go to the
-[Python download page](https://www.python.org/downloads/?azure-portal=true).
+Open the Microsoft Store by selecting *Start*, typing *start* and *Microsoft Store*. Once open, search for *Python*.
 
-Select the **Download Python 3.*x*** button. When your browser prompts you to save the file, note the download path, and then save the file to your local hard drive.  Most web browsers save downloaded files into your Downloads folder.
+You will be presented with a list of various options. Select the most recent version of Python, which at the time of this writing is Python 3.9.
 
-### Step 2 - Locate and run the installer application
+![Screenshot of search results screen from Microsoft store for Python showing Python 3.9 highlighted](../media/windows-install-python-search.png)
 
-Depending on the web browser you use, you might have the option to run the file immediately after it downloads.  
+On the details screen, select *Install*.
 
-If not, you can open File Explorer, go to the download path that you noted in the previous step, and then double-click the file. The filename should be **python-3.8.0.exe**.
+![Screenshot of the Python details screen in the Microsoft Store with Install highlighted](../media/windows-install-python-splash.png)
 
-### Step 3 - Choose options and start the installation process
+Python will be installed in the background. This may take a couple of minutes depending on the speed of your system.
 
-After the installer's dialog box appears, select **Add Python 3.8 to PATH**.
+![Screenshot of installation progress for Python from the Microsoft Store](../media/windows-install-python-progress.png)
 
-Next, note of the installation path under **Install Now**.
+After Python installs, return to the command prompt. Enter the following command and then press <kbd>Enter</kbd> to see the version of Python:
 
-If you're satisfied with the installation location, select **Install Now**.
-
-If you want to change the installation path, select **Customize installation**.
-
-The first page of options is called **Optional Features**. You don't need to change the default selections. Select **Next**.
-
-The second page of options is called **Advanced Options**. Near the bottom of the page, you can change the installation path under **Customize install location**.
-
-After you're satisfied with the path, select **Install**.
-
-### Step 4 - Accept the installation
-
-Next, you'll see the Windows User Account Control dialog box, which prompts you to allow the app to make changes to your device.
-
-Select **Yes** to continue.
-
-### Step 5 - Close the installer
-
-Select **Close**.
-
-### Step 6 - Check your installation
-
-To confirm that Python 3 installed correctly, enter the following command at a command prompt, and then press <kbd>Enter</kbd>.
-
-```dos
-py --version
+```bash
+python --version
 ```
-
-You should see the word `Python` with a set of numbers separated by `.` characters. Here's an example of the output you might see.
-
-```output
-Python 3.8.0
-```
-
-As long as the first of the three numbers is `3`, congratulations! You successfully installed Python 3 on your Windows computer.
 
 ::: zone-end
 
@@ -74,7 +42,7 @@ As long as the first of the three numbers is `3`, congratulations! You successfu
 
 ## Install Python on Linux
 
-When this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
+When this module was written, Python 3.9 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
 As you're probably aware, different Linux distributions use different package managers. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
@@ -82,13 +50,15 @@ We provide instructions for APT and YUM in this unit. If your distribution of Li
 
 ### Install by using APT
 
+If you use APT you can use these instructions to install Python 3.
+
 #### Step 1 - Open a Terminal window
 
 Assuming you're running a Linux graphical user interface desktop environment, locate and open a terminal window by using the Terminal icon.
 
 #### Step 2 - Update the APT package indexes
 
-Run the following command.
+Enter the following command, and then press <kbd>Enter</kbd>.
 
 ```bash
 sudo apt-get update
@@ -121,7 +91,7 @@ python3 --version
 You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
 ```output
-Python 3.6.7
+Python 3.9.1
 ```
 
 As long as the first number is `3`, Python 3 installed successfully.
@@ -165,7 +135,7 @@ python3 --version
 You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
 ```output
-Python 3.6.7
+Python 3.9.1
 ```
 
 As long as the first number is `3`, Python 3 installed successfully.
@@ -183,7 +153,7 @@ scl enable rh-python36 bash
 Now retry step 4. The output should resemble the following output.
 
 ```output
-Python 3.6.7
+Python 3.9.1
 ```
 
 As long as the first number is `3`, Python 3 installed successfully, in the context of a Software Collection.
@@ -247,3 +217,5 @@ Python 3.8.0
 As long as the first number is `3`, Python 3 installed successfully.
 
 ::: zone-end
+
+You have now successfully installed Python on your local system.

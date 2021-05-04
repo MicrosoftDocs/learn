@@ -6,9 +6,11 @@ Visual Studio Code is a great lightweight general-purpose code editor. Extension
 
 ### Step 1 - Open Extensions view
 
-You can browse through extensions and install them from within Visual Studio Code. 
+You can browse through extensions and install them from within Visual Studio Code.
 
 Bring up the Extensions view. Go to **View** and select **Extensions**, or select the **Extensions** icon in the Activity Bar on the left side of Visual Studio Code.
+
+![Screenshot of the menu option for the Extensions panel](../media/vs-code-extensions-open.png)
 
 Extensions view will display a list of the Visual Studio Code extensions that are the most popular on the Visual Studio Code Marketplace.
 
@@ -24,6 +26,8 @@ Select the extension that's published by Microsoft (usually the first one in the
 
 In the main area, where you see the details about the Python extension, select **Install**.
 
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/vs-code-extensions-install.png)
+
 When the installation is complete, the button's text will change to **Uninstall**. This lets you know that you've successfully installed the Python extension.
 
 ::: zone-end
@@ -33,6 +37,8 @@ When the installation is complete, the button's text will change to **Uninstall*
 ### Step 3 - Install the Python extension
 
 In the main area, where you see the details about the Python extension, select **Install**.
+
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/vs-code-extensions-install.png)
 
 When the installation is complete, the button's text will change to **Uninstall**. This lets you know that you've successfully installed the Python extension.
 
@@ -44,6 +50,8 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 In the main area, where you see the details about the Python extension, select **Install**.
 
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/vs-code-extensions-install.png)
+
 When the installation is complete, the button's text will change to **Uninstall**. This lets you know that you've successfully installed the Python extension.
 
 > [!IMPORTANT]
@@ -51,22 +59,6 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 ::: zone-end
 
-### Step 4 - Address pop-up messages
+## Summary
 
-When working with `.py` files which you will use to write Python code, you might see several pop-up messages. The most critical of these messages follows.
-
-"No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
-
-If you select **Select Python Interpreter**, in the command bar, you'll see a list of Python interpreters near the top of Visual Studio Code.  Select the most recent version that you have installed, making sure that it's version 3 or later.
-
-Your selection will be reflected in the Visual Studio Code status bar, near the lower-left corner.
-
-Alternatively, you might see this message:
-
-"Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar."
-
-This message just lets you know you have an interpreter selected, but you can change it if you want. You can change it by selecting the currently selected interpreter near the lower-left corner, and then selecting from the list of Python interpreters appearing near the top of Visual Studio Code in the command bar.
-
-Select **Got it!** to dismiss the tip, or select **Do not show again** to permanently disable it.
-
-After you've addressed all the pop-up messages, you've successfully set up the Python extension for Visual Studio Code and are ready to begin writing Python code!
+You have now successfully installed the Python extension for Visual Studio Code. Let's create our first Python application!
