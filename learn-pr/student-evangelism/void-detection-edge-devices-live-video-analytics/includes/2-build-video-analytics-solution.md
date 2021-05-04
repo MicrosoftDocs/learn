@@ -30,7 +30,7 @@ After the deployment manifest is sent, the IoT Edge agent running on your edge d
 
 Here is the end-to-end Video Analytics solution architecture.
 
-[![The illustration shows overview of custom template.](../media/solution-architecture.png)](../media/solution-architecture.png)
+[![The illustration shows overview of custom template.](../media/solution-architecture.png)](../media/solution-architecture.png#lightbox)
 
 ## Define Azure products 
 
