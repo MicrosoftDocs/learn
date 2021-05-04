@@ -42,4 +42,7 @@ Here's a parameter file that uses Azure Key Vault references to look up the SQL 
 :::code language="json" source="code/5-key-vault-parameters.json" highlight="6-11,14-19":::
 
 > [!IMPORTANT]
-> To use Key Vault references, your key vaults must be configured to allow Resource Manager to access the data in the key vault during template deployments. Also, the user who deploys the template must have permission to access the key vault. You'll learn how to do this in the next unit.
+> To use Key Vault references, your key vault must be configured to allow Resource Manager to access the data in the key vault during template deployments. Also, the user who deploys the template must have permission to access the key vault. You'll learn how to do this in the next unit.
+
+> [!NOTE]
+> Currently Bicep doesn't support Key Vault references for modules.
