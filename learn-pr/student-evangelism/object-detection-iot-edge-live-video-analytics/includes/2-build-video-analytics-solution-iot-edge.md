@@ -16,7 +16,7 @@ This module uses an [employee safety video](https://github.com/Azure-Samples/azu
 
 ## Solution workflow
 
-Firstly, in this module, you need to set up an edge device with the IoT Edge runtime installed. After you configure your device to IoT Hub, you'll send the deployment manifest to your edge device. After the deployment manifest is sent to the edge, the IoTEdge agent running on your edge device gets new containers from the container registry and starts them on your edge device. The following modules will be deployed:
+Firstly, in this module, you need to set up an edge device with the IoT Edge runtime installed. After you configure your device to IoT Hub, you'll send the deployment manifest to your edge device. After the deployment manifest is sent to the edge, the IoT Edge agent running on your edge device gets new containers from the container registry and starts them on your edge device. The following modules will be deployed:
 
 - **Web Module**: The Web Module represents the leading web application that the user interacts with. For example, when you add your camera, the Web Module will manage the camera settings to the live video analytics module. When deployed, based on user setting, the web module can capture images automatically and send them to retrain using the customvision.ai application protocol interface(API). 
 
@@ -76,4 +76,4 @@ After completing the module, your vision solution will be deployed to your edge 
 
 Watch the following video to see brief introduction and understand Vision on Edge solution.
 
->[!VIDEO https://www.youtube.com/watch?v=17UW6veK7SA&ab_channel=MicrosoftIoTDevelopers]
+>[!VIDEO https://channel9.msdn.com/Shows/Internet-of-Things-Show/Rapidly-move-your-Vision-AI-project-to-production-with-VisionOnEdge/player]

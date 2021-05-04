@@ -96,17 +96,17 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    - **Password:** Replace with the password of your Azure container registry
 
-6. Click **Add**.
+6. Select **Add**.
 
-7. In the IoT Edge Modules section, click Add, and select IoT Edge Module from the drop-down menu.
+7. In the IoT Edge Modules section, select Add, and select IoT Edge Module from the drop-down menu.
 
 8. Give a name to your IoT Edge module and enter the image URL, which is the path as below.
 
-9. Click **Add.**
+9. Select **Add.**
 
 ### Review + Create
 
-After setting your module, click **Review + create**. The review section shows you the JSON deployment manifest that was created based on the modules you set. Check whether the module you set in the previous section is defined in the manifest.
+After setting your module, select **Review + create**. The review section shows you the JSON deployment manifest that was created based on the modules you set. Check whether the module you set in the previous section is defined in the manifest.
 
 ### Check the deployed module in your edge device.
 

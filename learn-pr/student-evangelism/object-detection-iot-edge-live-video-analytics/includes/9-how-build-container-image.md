@@ -38,4 +38,4 @@ The overall steps you follow:
 
 4.  Push docker image to Azure Container Registry
 
-5.  Deploy containerized YOLO model as an IoT edge module
+5.  Deploy containerized YOLO model as an IoT Edge module

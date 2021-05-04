@@ -14,7 +14,7 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
 
    [![The illustration shows overview page of virtual machine.](../media/vm-overview.png)](../media/vm-overview.png#lightbox)
 
-3. When you connect to Vision on Edge solution, click on the Home page.
+3. When you connect to Vision on Edge solution, select the Home page.
 
    [![The illustration shows edge solution.](../media/vision-on-edge.png)](../media/vision-on-edge.png#lightbox)
 
@@ -29,7 +29,7 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
 
 ## Upload your pre-trained YOLO model to the Vision on Edge solution
 
-1. To bring the AI model to the platform, click on the **Models** and click on '+' to start.
+1. To bring the AI model to the platform, select on the **Models** and select on '+' to start.
 
 2. Fill in the required information:
    - Module name: Give a name to your model
@@ -37,7 +37,7 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
    - Labels: Upload tag.txt file
    - Header: Leave it empty if not necessary
 
-3. Click **Add**.
+3. Select **Add**.
 
 ## Create a solution deployment
 
@@ -47,5 +47,5 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
    - Choose Model
    - Select Camera
    - Select Objects
-3. Click Deploy.
+3. Select Deploy.
 4. You'll see that the gaps will be identified in the video stream.
