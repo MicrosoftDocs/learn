@@ -38,7 +38,7 @@ Perform the following steps in Azure Cloud Shell.
    sudo docker ps
    ```
  
-   [![The illustration shows deployment.](../media/rtspsim.png)](../media/rtsp-simulator.png#lightbox)
+   [![The illustration shows deployment.](../media/rtsp-simulator.png)](../media/rtsp-simulator.png#lightbox)
 
 3. Check the path of your video.
 
