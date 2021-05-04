@@ -73,3 +73,7 @@ The overall module steps are for this solution:
 ## Conclusion
 
 After completing the module, your vision solution will be deployed to your edge device. You'll run a simulated live video stream. The solution will be deployed on the edge device to detect a person in real time using a YOLO model and Live Video Analytics.
+
+Watch the following video to see brief introduction and understand Vision on Edge solution.
+
+>[!VIDEO https://www.youtube.com/watch?v=17UW6veK7SA&ab_channel=MicrosoftIoTDevelopers]

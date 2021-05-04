@@ -27,7 +27,7 @@ prerequisites: |
     - Basic knowledge of Live Video Analytics
     - Basic knowledge of containers
     - Ability to use Docker
-iconUrl: /learn/achievements/student-evangelism/object-detection-lva-edge-device-yolo-model.svg
+iconUrl: /learn/achievements/student-evangelism/object-detection-iot-edge-live-video-analytics.svg
 badge:
   uid: learn.oxford.azure-edge-zones-5g.badge
 levels:
@@ -45,3 +45,7 @@ units:
 - learn.oxford.object-detection-lva-edge-device.exercise-install-vision-edge-solution
 - learn.oxford.object-detection-lva-edge-device.how-upload-video-edge
 - learn.oxford.object-detection-lva-edge-device.exercise-upload-video-edge
+- learn.oxford.object-detection-lva-edge-device.how-build-container-image
+- learn.oxford.object-detection-lva-edge-device.exercise-build-container-image
+- learn.oxford.object-detection-lva-edge-device.how-deploy-solution
+- learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
