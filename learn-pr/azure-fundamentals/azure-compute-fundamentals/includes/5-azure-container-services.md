@@ -15,7 +15,7 @@ The following video highlights several of the important differences between virt
 Containers are managed through a container orchestrator, which can start, stop, and scale out application instances as needed. There are two ways to manage both Docker and Microsoft-based containers in Azure: Azure Container Instances and Azure Kubernetes Service (AKS).
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
     
   :::column-end:::
   :::column:::
@@ -23,29 +23,30 @@ Containers are managed through a container orchestrator, which can start, stop, 
   :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
     
 
-### Azure Container Instances
+**Azure Container Instances**
+
 
 [Azure Container Instances](https://azure.microsoft.com/services/container-instances?azure-portal=true) offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It's a platform as a service (PaaS) offering that allows you to upload your containers, which it runs for you.
 
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-container-instance-7b714f67.png":::
+    :::image type="content" source="../media/icon-container-instance-7b714f67.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    :::image type="content" source="../media/icon-kubernetes-a0946004.png":::
+    :::image type="content" source="../media/icon-kubernetes-a0946004.png" alt-text="icon":::
 
   :::column-end:::
-  :::column span="3":::
+  :::column span="2":::
     
 
-### Azure Kubernetes Service
+**Azure Kubernetes Service**
 
 The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact.
 
@@ -66,9 +67,9 @@ Containers are often used to create solutions by using a *microservice architect
 
 Imagine your website back-end has reached capacity but the front end and storage aren't being stressed. You could:
 
- *  Scale the back end separately to improve performance.
- *  Decide to use a different storage service.
- *  Replace the storage container without affecting the rest of the application.
+ -  Scale the back end separately to improve performance.
+ -  Decide to use a different storage service.
+ -  Replace the storage container without affecting the rest of the application.
 
 ### What is a microservice?
 

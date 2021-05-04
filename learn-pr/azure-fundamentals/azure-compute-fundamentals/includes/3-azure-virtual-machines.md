@@ -4,24 +4,23 @@ One possible solution to Tailwind Traders' lack of physical servers is through t
   :::column span="3":::
     
   :::column-end:::
-  :::column:::
-    
-  :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
-    With Azure Virtual Machines, you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
+  :::column span="2":::
+    
 
- *  Total control over the operating system (OS).
- *  The ability to run custom software.
- *  To use custom hosting configurations.
+With Azure Virtual Machines, you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
+
+ -  Total control over the operating system (OS).
+ -  The ability to run custom software.
+ -  To use custom hosting configurations.
 
 An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM. You still need to configure, update, and maintain the software that runs on the VM.
 
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/azure-vms-0c797f60.png":::
+    :::image type="content" source="../media/azure-vms-0c797f60.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
@@ -31,10 +30,10 @@ You can create and provision a VM in minutes when you select a preconfigured VM 
 
 ### Examples of when to use VMs
 
- *  **During testing and development.** VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
- *  **When running applications in the cloud.** The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
- *  **When extending your datacenter to the cloud.** An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally. This arrangement makes it easier or less expensive to deploy than in an on-premises environment.
- *  **During disaster recovery.** As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you can get significant cost savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
+ -  **During testing and development.** VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
+ -  **When running applications in the cloud.** The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
+ -  **When extending your datacenter to the cloud.** An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally. This arrangement makes it easier or less expensive to deploy than in an on-premises environment.
+ -  **During disaster recovery.** As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you can get significant cost savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
 
 ## Move to the cloud with VMs
 
@@ -44,8 +43,8 @@ VMs are also an excellent choice when you move from a physical server to the clo
 
 You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. No matter what your uptime requirements are, Azure has several features that can meet them. These features include:
 
- *  Virtual machine scale sets
- *  Azure Batch
+ -  Virtual machine scale sets
+ -  Azure Batch
 
 ### What are virtual machine scale sets?
 
@@ -59,11 +58,11 @@ Azure Batch enables large-scale parallel and high-performance computing (HPC) ba
 
 When you're ready to run a job, Batch does the following:
 
- *  Starts a pool of compute VMs for you.
- *  Installs applications and staging data.
- *  Runs jobs with as many tasks as you have.
- *  Identifies failures.
- *  Requeues work.
- *  Scales down the pool as work completes.
+ -  Starts a pool of compute VMs for you.
+ -  Installs applications and staging data.
+ -  Runs jobs with as many tasks as you have.
+ -  Identifies failures.
+ -  Requeues work.
+ -  Scales down the pool as work completes.
 
 There might be situations in which you need raw computing power or supercomputer-level compute power. Azure provides these capabilities.

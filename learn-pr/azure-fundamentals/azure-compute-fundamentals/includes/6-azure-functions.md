@@ -4,16 +4,13 @@ After consulting with several of your fellow developers at Tailwind Traders, you
   :::column span="3":::
     
   :::column-end:::
-  :::column:::
-    
-  :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
-    *Serverless* computing is the abstraction of servers, infrastructure, and operating systems. With serverless computing, Azure takes care of managing the server infrastructure and the allocation and deallocation of resources based on demand. Infrastructure isn't your responsibility. Scaling and performance are handled automatically. You're billed only for the exact resources you use. There's no need to even reserve capacity.
+  :::column span="2":::
+    .*Serverless* computing is the abstraction of servers, infrastructure, and operating systems. With serverless computing, Azure takes care of managing the server infrastructure and the allocation and deallocation of resources based on demand. Infrastructure isn't your responsibility. Scaling and performance are handled automatically. You're billed only for the exact resources you use. There's no need to even reserve capacity.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/serverless-34c32854.png":::
+    :::image type="content" source="../media/serverless-34c32854.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
@@ -21,16 +18,16 @@ After consulting with several of your fellow developers at Tailwind Traders, you
 
 Serverless computing includes the abstraction of servers, an event-driven scale, and micro-billing:
 
- *  **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances. The platform manages that for you. Each function execution can run on a different compute instance. This execution context is transparent to the code. With serverless architecture, you deploy your code, which then runs with high availability.
- *  **Event-driven scale**: Serverless computing is an excellent fit for workloads that respond to incoming events. Events include triggers by:
+ -  **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances. The platform manages that for you. Each function execution can run on a different compute instance. This execution context is transparent to the code. With serverless architecture, you deploy your code, which then runs with high availability.
+ -  **Event-driven scale**: Serverless computing is an excellent fit for workloads that respond to incoming events. Events include triggers by:
     
-     *  Timers, for example, if a function needs to run every day at 10:00 AM UTC.
-     *  HTTP, for example, API and webhook scenarios.
-     *  Queues, for example, with order processing.
-     *  And much more.
+     -  Timers, for example, if a function needs to run every day at 10:00 AM UTC.
+     -  HTTP, for example, API and webhook scenarios.
+     -  Queues, for example, with order processing.
+     -  And much more.
     
     Instead of writing an entire application, the developer authors a function, which contains both code and metadata about its triggers and bindings. The platform automatically schedules the function to run and scales the number of compute instances based on the rate of incoming events. Triggers define how a function is invoked. Bindings provide a declarative way to connect to services from within the code.
- *  **Micro-billing**: Traditional computing bills for a block of time like paying a monthly or annual rate for website hosting. This method of billing is convenient but isn't always cost effective. Even if a customer's website gets only one hit a day, they still pay for a full day's worth of availability. With serverless computing, they pay only for the time their code runs. If no active function executions occur, they're not charged. For example, if the code runs once a day for two minutes, they're charged for one execution and two minutes of computing time.
+ -  **Micro-billing**: Traditional computing bills for a block of time like paying a monthly or annual rate for website hosting. This method of billing is convenient but isn't always cost effective. Even if a customer's website gets only one hit a day, they still pay for a full day's worth of availability. With serverless computing, they pay only for the time their code runs. If no active function executions occur, they're not charged. For example, if the code runs once a day for two minutes, they're charged for one execution and two minutes of computing time.
 
 #### Serverless computing in Azure
 
@@ -38,8 +35,8 @@ Serverless computing includes the abstraction of servers, an event-driven scale,
 
 Azure has two implementations of serverless compute:
 
- *  **Azure Functions**: Functions can execute code in almost any modern language.
- *  **Azure Logic Apps**: Logic apps are designed in a web-based designer and can execute logic triggered by Azure services without writing any code.
+ -  **Azure Functions**: Functions can execute code in almost any modern language.
+ -  **Azure Logic Apps**: Logic apps are designed in a web-based designer and can execute logic triggered by Azure services without writing any code.
 
 ## Azure Functions
 
@@ -65,10 +62,10 @@ Azure provides more than 200 different connectors and processing blocks to inter
 
 As an example, let's say a ticket arrives in Zendesk. You could:
 
- *  Detect the intent of the message with cognitive services.
- *  Create an item in SharePoint to track the issue.
- *  Add the customer to your Dynamics 365 CRM system if they aren't already in your database.
- *  Send a follow-up email to acknowledge their request.
+ -  Detect the intent of the message with cognitive services.
+ -  Create an item in SharePoint to track the issue.
+ -  Add the customer to your Dynamics 365 CRM system if they aren't already in your database.
+ -  Send a follow-up email to acknowledge their request.
 
 All of those actions could be designed in a visual designer, which makes it easy to see the logic flow. For this reason, it's ideal for a business analyst role.
 
@@ -76,8 +73,8 @@ All of those actions could be designed in a visual designer, which makes it easy
 
 Functions and Logic Apps can both create complex orchestrations. An orchestration is a collection of functions or steps that are executed to accomplish a complex task.
 
- *  With Functions, you write code to complete each step.
- *  With Logic Apps, you use a GUI to define the actions and how they relate to one another.
+ -  With Functions, you write code to complete each step.
+ -  With Logic Apps, you use a GUI to define the actions and how they relate to one another.
 
 You can mix and match services when you build an orchestration, calling functions from logic apps and calling logic apps from functions. Here are some common differences between the two.
 
@@ -86,10 +83,10 @@ You can mix and match services when you build an orchestration, calling function
     
   :::column-end:::
   :::column:::
-    Functions
+    **Functions**
   :::column-end:::
   :::column:::
-    Logic Apps
+    **Logic Apps**
   :::column-end:::
 :::row-end:::
 :::row:::

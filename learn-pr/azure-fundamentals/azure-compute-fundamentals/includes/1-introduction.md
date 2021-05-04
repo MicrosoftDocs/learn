@@ -1,6 +1,6 @@
 Imagine that you work as a development lead at Tailwind Traders, a company that specializes in hardware manufacturing. Your management team tells you that the company's website has been having a difficult time keeping up with the application demands. The team wants you to investigate a solution. The front-end web servers are operating near capacity during peak periods of the day, and you need to get a solution in place quickly. But there's a problem. You don't have any free servers to scale out your application.
 
-:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png":::
+:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="This is a logo for Tailwind Traders, a fictitious home improvement retailer.":::
 
 
 You could ask to buy new equipment, but your department's budget is tight. You want to make a good impression with leadership, but you don't know how many servers are necessary for this project, and you don't want to buy more hardware than you need. Even if you were able to procure several servers, you'd need to invest a lot of time to set them up and install software.
@@ -13,14 +13,14 @@ This scenario is exactly what you can do in Azure. You can create compute resour
 
 After completing this module, you'll be able to describe the benefits and usage of:
 
- *  Azure Virtual Machines
- *  Azure App Service
- *  Azure Container Instances
- *  Azure Kubernetes Service
- *  Azure Functions
- *  Windows Virtual Desktop
+ -  Azure Virtual Machines
+ -  Azure App Service
+ -  Azure Container Instances
+ -  Azure Kubernetes Service
+ -  Azure Functions
+ -  Windows Virtual Desktop
 
 ## Prerequisites
 
- *  You should be familiar with basic computing concepts and terminology.
- *  Familiarity with cloud computing is helpful but isn't necessary.
+ -  You should be familiar with basic computing concepts and terminology.
+ -  Familiarity with cloud computing is helpful but isn't necessary.
