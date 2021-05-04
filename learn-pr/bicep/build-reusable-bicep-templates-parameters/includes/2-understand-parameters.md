@@ -152,7 +152,7 @@ Here is an example that declares a string parameter named `storageAccountName`, 
 param storageAccountName string
 ```
 
-Notice that this parameter includes two decorators.
+Notice that this parameter includes two decorators. You can apply multiple decorators to a parameter by putting each decorator on its own line.
 
 > [!NOTE]
 > You can also apply the `@minLength` and `@maxLength` decorators to array parameters.

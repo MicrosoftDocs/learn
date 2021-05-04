@@ -128,3 +128,5 @@ Let's look at what the values will be:
 - `appServicePlanInstanceCount` will be `5`. The value specified at deployment time overrides the default value and the value in the parameter file.
 
 By using a mixture of the approaches to specify parameter values, you can avoid having to duplicate parameter values in lots of places, while still getting the flexibility to override it where you need to.
+
+<!-- TODO consider adding note about using parameter files by URI -->

@@ -10,6 +10,7 @@ Bicep makes it easy to describe your Azure resources and create reusable templat
 
 Now, when you want to deploy your infrastructure for other environments, you can use the Bicep template and parameter file that you created. Your company can safely and consistently provision Azure resources.
 
-## References
+## Learn more
 
-- TODO
+- [Resource Manager parameter files](azure/azure-resource-manager/templates/parameter-files?tab=bicep)
+- [Key Vault references](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets)
