@@ -1,7 +1,7 @@
 After you've created a subscription for Tailwind Traders, you're ready to start creating resources and storing them in resource groups. With that in mind, it's important to define those terms:
 
- *  **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
- *  **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
+ -  **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
+ -  **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
 
 ## Azure resource groups
 
@@ -39,12 +39,12 @@ All capabilities that are available in the Azure portal are also available throu
 
 With Resource Manager, you can:
 
- *  Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
- *  Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
- *  Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state.
- *  Define the dependencies between resources so they're deployed in the correct order.
- *  Apply access control to all services because RBAC is natively integrated into the management platform.
- *  Apply tags to resources to logically organize all the resources in your subscription.
- *  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
+ -  Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+ -  Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
+ -  Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state.
+ -  Define the dependencies between resources so they're deployed in the correct order.
+ -  Apply access control to all services because RBAC is natively integrated into the management platform.
+ -  Apply tags to resources to logically organize all the resources in your subscription.
+ -  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyvOc]

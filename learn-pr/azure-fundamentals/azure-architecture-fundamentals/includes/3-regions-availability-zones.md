@@ -24,8 +24,8 @@ Azure has more global regions than any other cloud provider. These regions give 
 
 Azure has specialized regions that you might want to use when you build out your applications for compliance or legal purposes. A few examples include:
 
- *  **US DoD Central, US Gov Virginia, US Gov Iowa and more:** These regions are physical and logical network-isolated instances of Azure for U.S. government agencies and partners. These datacenters are operated by screened U.S. personnel and include additional compliance certifications.
- *  **China East, China North, and more:** These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft doesn't directly maintain the datacenters.
+ -  **US DoD Central, US Gov Virginia, US Gov Iowa and more:** These regions are physical and logical network-isolated instances of Azure for U.S. government agencies and partners. These datacenters are operated by screened U.S. personnel and include additional compliance certifications.
+ -  **China East, China North, and more:** These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft doesn't directly maintain the datacenters.
 
 Regions are what you use to identify the location for your resources. There are two other terms you should also be aware of: *geographies* and *availability zones*.
 
@@ -50,8 +50,8 @@ You can use availability zones to run mission-critical applications and build hi
 
 Availability zones are primarily for VMs, managed disks, load balancers, and SQL databases. Azure services that support availability zones fall into two categories:
 
- *  **Zonal services**: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
- *  **Zone-redundant services**: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
+ -  **Zonal services**: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
+ -  **Zone-redundant services**: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
 
 Check the documentation to determine which elements of your architecture you can associate with an availability zone.
 
@@ -72,8 +72,8 @@ Because the pair of regions is directly connected and far enough apart to be iso
 
 Additional advantages of region pairs:
 
- *  If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
- *  Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
- *  Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
+ -  If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
+ -  Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
+ -  Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
 
 Having a broadly distributed set of datacenters allows Azure to provide a high guarantee of availability.
