@@ -1,6 +1,6 @@
 .NET developers can choose from many logging frameworks that are available, including custom solutions. The web application in this module is configured to use the popular Log4Net framework. Log4Net is designed to work with log levels and appenders. You can mix and match appenders that are active for different log levels. If you're unfamiliar with this approach to logging, take a look at the [Log4Net](https://logging.apache.org/log4net/) documentation before you proceed.
 
-The sample logger currently is set to write to a local file. Although this approach is fine for a web app running on your desktop, it doesn't meet the needs of a web app that's hosted by Azure App Service. In this exercise, you'll modify the logger to record information in Azure Blob storage. You'll also set the logger to write to Azure Application Insights. You can consolidate the logs in a common location in Azure, and then use Application Insights to capture custom telemetry that's based on information in the logs.
+The sample logger currently is set to write to a local file. Although this approach is fine for a web app running on your desktop, it doesn't meet the needs of a web app that's hosted by Azure App Service. In this exercise, you'll modify the logger to record information in Azure Blob Storage. You'll also set the logger to write to Azure Application Insights. You can consolidate the logs in a common location in Azure, and then use Application Insights to capture custom telemetry that's based on information in the logs.
 
 ## Create a Blob storage account to hold log data
 
@@ -11,7 +11,7 @@ The sample logger currently is set to write to a local file. Although this appro
     $storagecontainername = "workshopcontainer"
     ```
 
-1. Create an Azure Blob storage account:
+1. Create an Azure Blob Storage account:
 
     ```powershell
     $storageaccount = New-AzStorageAccount `
