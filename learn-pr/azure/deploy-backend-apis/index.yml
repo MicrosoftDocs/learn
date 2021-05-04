@@ -12,11 +12,12 @@ title: Deploy backend APIs with Azure Functions, Logic Apps, and Azure SQL Datab
 summary: In the language of your choice (Node.js, Python, or .NET), deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. Leverage GitHub Actions for CI/CD.
 abstract: | 
   By the end of this module, you will be able to: 
-    - Build backend APIs in Azure
+    - Build and deploy serverless, backend APIs in Azure
     - Design Azure Functions in any language and integrate them with Azure SQL Database and Azure Logic Apps
-    - Examine geospatial and JSON support built into Azure SQL Database
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Create the foundation for modern apps
+  - Ability to navigate the Azure portal
+  - Familiarity with Visual Studio Code
+  - Familiarity with CI/CD concepts
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - intermediate
