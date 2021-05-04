@@ -2,10 +2,10 @@ In this module, you learned how Tailwind Traders can take advantage of several c
 
 ## Learn more
 
- *  [Discuss Azure fundamental concepts](https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/)
- *  [Examples of fiscal outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes)
- *  [What is cloud computing? A beginner's guide](https://azure.microsoft.com/overview/what-is-cloud-computing/)
- *  [What are public, private, and hybrid clouds?](https://azure.microsoft.com/overview/what-are-private-public-hybrid-clouds/)
- *  [What is a private cloud?](https://azure.microsoft.com/overview/what-is-a-private-cloud/)
- *  [What is a hybrid cloud?](https://azure.microsoft.com/overview/what-is-hybrid-cloud-computing/)
- *  [What is a public cloud?](https://azure.microsoft.com/overview/what-is-a-public-cloud/)
+ -  [Discuss Azure fundamental concepts](https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/)
+ -  [Examples of fiscal outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes)
+ -  [What is cloud computing? A beginner's guide](https://azure.microsoft.com/overview/what-is-cloud-computing/)
+ -  [What are public, private, and hybrid clouds?](https://azure.microsoft.com/overview/what-are-private-public-hybrid-clouds/)
+ -  [What is a private cloud?](https://azure.microsoft.com/overview/what-is-a-private-cloud/)
+ -  [What is a hybrid cloud?](https://azure.microsoft.com/overview/what-is-hybrid-cloud-computing/)
+ -  [What is a public cloud?](https://azure.microsoft.com/overview/what-is-a-public-cloud/)

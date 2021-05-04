@@ -4,10 +4,10 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 
 :::row:::
   :::column:::
-    Deployment model
+    **Deployment model**
   :::column-end:::
   :::column:::
-    Description
+    **Description**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -40,18 +40,18 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 
 ### Public cloud
 
- *  No capital expenditures to scale up.
- *  Applications can be quickly provisioned and deprovisioned.
- *  Organizations pay only for what they use.
+ -  No capital expenditures to scale up.
+ -  Applications can be quickly provisioned and deprovisioned.
+ -  Organizations pay only for what they use.
 
 ### Private cloud
 
- *  Hardware must be purchased for start-up and maintenance.
- *  Organizations have complete control over resources and security.
- *  Organizations are responsible for hardware maintenance and updates.
+ -  Hardware must be purchased for start-up and maintenance.
+ -  Organizations have complete control over resources and security.
+ -  Organizations are responsible for hardware maintenance and updates.
 
 ### Hybrid cloud
 
- *  Provides the most flexibility.
- *  Organizations determine where to run their applications.
- *  Organizations control security, compliance, or legal requirements.
+ -  Provides the most flexibility.
+ -  Organizations determine where to run their applications.
+ -  Organizations control security, compliance, or legal requirements.

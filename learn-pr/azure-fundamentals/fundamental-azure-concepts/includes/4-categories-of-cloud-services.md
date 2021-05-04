@@ -4,13 +4,13 @@ If you've been around cloud computing for a while, you've probably seen the *Paa
 
 :::row:::
   :::column:::
-    Model
+    **Model**
   :::column-end:::
   :::column:::
-    Definition
+    **Definition**
   :::column-end:::
   :::column:::
-    Description
+    **Description**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -123,13 +123,13 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 
 :::row:::
   :::column:::
-    IaaS
+    **IaaS**
   :::column-end:::
   :::column:::
-    PaaS
+    **PaaS**
   :::column-end:::
   :::column:::
-    SaaS
+    **SaaS**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,12 +156,10 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 :::row-end:::
 
 
-The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.
-
+The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.<br>
 
 :::image type="content" source="../media/shared-responsibility-76efbc1e.png" alt-text="Illustration showing the cloud responsibility model.":::
-!
-
+<br>
 
 ## What is serverless computing?
 
