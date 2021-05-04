@@ -21,22 +21,17 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Enter **Service Bus** in the search box, select **Service Bus**, and then select **Create**. The **Create namespace** pane appears.
 
-1. On the **Basics** tab, enter the following values for each section.
+1. On the **Basics** tab, enter the following values for each setting.
 
-    * Enter the following values in the **Project Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
-        | **Resource group** | _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
-
-    * Enter the following values in the **Instance Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | **Namespace Name** | _[Globally unique name]_ | Enter a unique name, for example, _salesteamapp_ + _your initials_ + _current date_. |
-        | **Location** | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
-        | **Pricing tier** | _Standard_ | Specifies the pricing tier. |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **PROJECT DETAILS** |
+    | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
+    | **Resource group** | _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+    | **INSTANCE DETAILS** |
+    | **Namespace name** | _[Globally unique name]_ | Enter a unique name, for example, _salesteamapp_ + _your initials_ + _current date_. |
+    | **Location** | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
+    | **Pricing tier** | _Standard_ | Specifies the pricing tier. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -79,12 +74,12 @@ To create a Service Bus topic and subscriptions, follow these steps:
 1. In the left pane, under **Entities**, select **Topics**.
 
 1. In the list of topics, select **salesperformancemessages**.
- 
-1. Select **Subscription** to open the **Create subscription** window for your first subscription.
+
+1. Select **Subscription** to open the **Create subscription** pane for your first subscription.
 
 1. Enter **Americas** for the **Name**, then enter **100** for the **Max delivery count**, and then select **Create**.
 
-1. Select **Subscription** to open the **Create subscription** window for your second subscription.
+1. Select **Subscription** to open the **Create subscription** pane for your second subscription.
 
 1. Enter **EuropeAndAfrica** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**.
 

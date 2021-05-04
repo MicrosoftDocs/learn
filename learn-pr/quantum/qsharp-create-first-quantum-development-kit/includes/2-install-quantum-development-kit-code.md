@@ -31,7 +31,7 @@ The QDK also includes:
 
     The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
 
-    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (We'll discuss Azure Quantum later in this module.)
+    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (See this [module](/learn/modules/get-started-azure-quantum?azure-portal=true) to learn more on Azure Quantum.)
 * Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python. (Classical code enables you to work with the results from quantum computations.)
 
 ## Install the QDK for Visual Studio Code
@@ -47,7 +47,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 
 ## Verify the installation
 
-To verify the installation, here you create a basic Q# application.
+To verify your installation, create a basic Q# application as shown below.
 
 ### Install the Quantum project templates
 
@@ -61,15 +61,13 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
 1. Enter **Q#: Install command line project templates**.
 
-
 ### Create a project
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create new project**.
 
-
-> [!NOTE]
-> If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
+    > [!NOTE]
+    > If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
 
 1. Select **Standalone console application**.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
@@ -115,9 +113,7 @@ Now let's run the program to verify that everything is set up correctly. You use
 
 Great work. You just ran your first Q# program!
 
-You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
+You likely noticed that this basic program doesn't involve any quantum computations. Next, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
-
-> If you run into any issues with installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or to seek help for troubleshooting visit [GitHub issues](https://github.com/MicrosoftDocs/quantum-docs/issues).
-
+> If you run into any issues with the installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).
