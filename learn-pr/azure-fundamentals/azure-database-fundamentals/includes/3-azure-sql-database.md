@@ -1,15 +1,20 @@
 :::row:::
   :::column span="3":::
-    Azure SQL Database is a relational database based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed, and secure database. You can use it to build data-driven applications and websites in the programming language of your choice, without needing to manage infrastructure.
+    
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="2":::
+    .Azure SQL Database is a relational database based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed, and secure database. You can use it to build data-driven applications and websites in the programming language of your choice, without needing to manage infrastructure.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-SQL-Database-7c2a6248.png":::
+    :::image type="content" source="../media/icon-service-SQL-Database-7c2a6248.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
 
 
-## Features
+## Features<br>
 
 Azure SQL Database is a platform as a service (PaaS) database engine. It handles most of the database management functions, such as upgrading, patching, backups, and monitoring, without user involvement. SQL Database provides 99.99 percent availability. PaaS capabilities that are built into SQL Database enable you to focus on the domain-specific database administration and optimization activities that are critical for your business. SQL Database is a fully managed service that has built-in high availability, backups, and other common maintenance operations. Microsoft handles all updates to the SQL and operating system code. You don't have to manage the underlying infrastructure.
 

@@ -2,16 +2,13 @@
   :::column span="3":::
     
   :::column-end:::
-  :::column:::
-    
-  :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
-    As part of its overall data strategy, Tailwind Traders have been using PostgreSQL for several years. You and your team probably already know the benefits of PostgreSQL. Part of your migration is to use Azure Database for PostgreSQL, and you want to make sure that you'll have access to the same benefits as your on-premises server before moving to the cloud.
+  :::column span="2":::
+    .As part of its overall data strategy, Tailwind Traders have been using PostgreSQL for several years. You and your team probably already know the benefits of PostgreSQL. Part of your migration is to use Azure Database for PostgreSQL, and you want to make sure that you'll have access to the same benefits as your on-premises server before moving to the cloud.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-Azure-Database-PostgreSQL-Server-b464e880.png":::
+    :::image type="content" source="../media/icon-service-Azure-Database-PostgreSQL-Server-b464e880.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
@@ -21,11 +18,11 @@ Azure Database for PostgreSQL is a relational database service in the cloud. The
 
 Moreover, Azure Database for PostgreSQL delivers the following benefits:
 
- *  Built-in high availability compared to on-premises resources. There's no additional configuration, replication, or cost required to make sure your applications are always available.
- *  Simple and flexible pricing. You have predictable performance based on a selected pricing tier choice that includes software patching, automatic backups, monitoring, and security.
- *  Scale up or down as needed, within seconds. You can scale compute or storage independently as needed, to make sure you adapt your service to match usage.
- *  Adjustable automatic backups and point-in-time-restore for up to 35 days.
- *  Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion. This security covers data encryption on disk and SSL encryption between client and server communication.
+ -  Built-in high availability compared to on-premises resources. There's no additional configuration, replication, or cost required to make sure your applications are always available.
+ -  Simple and flexible pricing. You have predictable performance based on a selected pricing tier choice that includes software patching, automatic backups, monitoring, and security.
+ -  Scale up or down as needed, within seconds. You can scale compute or storage independently as needed, to make sure you adapt your service to match usage.
+ -  Adjustable automatic backups and point-in-time-restore for up to 35 days.
+ -  Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion. This security covers data encryption on disk and SSL encryption between client and server communication.
 
 Azure Database for PostgreSQL is available in two deployment options: **Single Server** and **Hyperscale (Citus)**.
 
@@ -33,13 +30,13 @@ Azure Database for PostgreSQL is available in two deployment options: **Single S
 
 The Single Server deployment option delivers:
 
- *  Built-in high availability with no additional cost (99.99 percent SLA).
- *  Predictable performance and inclusive, pay-as-you-go pricing.
- *  Vertical scale as needed, within seconds.
- *  Monitoring and alerting to assess your server.
- *  Enterprise-grade security and compliance.
- *  Ability to protect sensitive data at-rest and in-motion.
- *  Automatic backups and point-in-time-restore for up to 35 days.
+ -  Built-in high availability with no additional cost (99.99 percent SLA).
+ -  Predictable performance and inclusive, pay-as-you-go pricing.
+ -  Vertical scale as needed, within seconds.
+ -  Monitoring and alerting to assess your server.
+ -  Enterprise-grade security and compliance.
+ -  Ability to protect sensitive data at-rest and in-motion.
+ -  Automatic backups and point-in-time-restore for up to 35 days.
 
 All those capabilities require almost no administration, and all are provided at no additional cost. You can focus on rapid application development and accelerating your time to market, rather than having to manage virtual machines and infrastructure. You can continue to develop your application with the open-source tools and platform of your choice, without having to learn new skills.
 

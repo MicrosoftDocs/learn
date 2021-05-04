@@ -11,10 +11,10 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     
     :::row:::
       :::column:::
-        Setting
+        **Setting**
       :::column-end:::
       :::column:::
-        Value
+        **Value**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -70,10 +70,10 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     
     :::row:::
       :::column:::
-        Setting
+        **Setting**
       :::column-end:::
       :::column:::
-        Value
+        **Value**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -117,10 +117,10 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     
     :::row:::
       :::column:::
-        Setting
+        **Setting**
       :::column-end:::
       :::column:::
-        Value
+        **Value**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -149,10 +149,10 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     
     :::row:::
       :::column:::
-        Setting
+        **Setting**
       :::column-end:::
       :::column:::
-        Value
+        **Value**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -202,9 +202,9 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
 
 In this task, you configure the server and run a SQL query.
 
-1.  From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page. :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor (preview).":::
+1.  From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page. :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
     
-2.  Select the **db1** entry representing the SQL database you created, and then select **Query editor (preview)** in the nav bar. :::image type="content" source="../media/query-editor-preview-b6af6d9c.png" alt-text="Screenshot of the SQL database the Query editor (preview) highlighted.":::
+2.  Select the **db1** entry representing the SQL database you created, and then select **Query editor (preview)** in the nav bar. :::image type="content" source="../media/query-editor-preview-b6af6d9c.png" alt-text="Screenshot of the SQL database the Query editor preview highlighted.":::
     
 3.  Sign in as **sqluser**, with the password **Pa$$w0rd1234**.
 4.  You will not be able to sign in.
@@ -226,7 +226,7 @@ In this task, you configure the server and run a SQL query.
     
     :::image type="content" source="../media/query-editor-decc7acc.png" alt-text="Screenshot of the query editor with the query pane, and the commands running successfully.":::
     
-9.  Select **Run**, and then review the query results in the **Results** pane. The query should run successfully. :::image type="content" source="../media/database-query-editor-pane-19d53288.png" alt-text="Screenshot of the database query editor pane, with the SQL code having been run successfully and the output visible in the results pane.":::
+9.  Select **Run**, and then review the query results in the **Results** pane. The query should run successfully.:::image type="content" source="../media/database-query-editor-pane-19d53288.png" alt-text="Screenshot of the database query editor pane, with the SQL code having been run successfully and the output visible in the results pane.":::
     
 
 Congratulations! You've created a SQL database in Azure and successfully queried the data in that database.
