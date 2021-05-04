@@ -164,4 +164,4 @@ Each type of runner has its benefits, but in short, GitHub-hosted runners offer 
 
 ### GitHub Actions may have usage limits
 
-GitHub Actions usage has some limits depending on if your runner is GitHub-hosted or self-hosted, and your GitHub plan. For more information on usage limits, check out [Usage limits](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true) in the GitHub documentation.
+GitHub Actions usage has some limits depending on if your runner is GitHub-hosted or self-hosted, and your GitHub plan. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
