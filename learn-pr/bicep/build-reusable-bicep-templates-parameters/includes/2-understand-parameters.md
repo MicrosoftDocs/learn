@@ -67,7 +67,7 @@ param appServicePlanSku object = {
 }
 ```
 
-This parameter is an object with two properties: `skuName`, which is a string with a value of `S1`, and `capacity`, which is an integer with a value of `3`. Notice that each of the properties is on its own line.
+This parameter is an object with two properties: `name` and `tier`, each of which are strings. Notice that each of the properties is on its own line.
 
 When you refer to the parameter, you can refer just to individual properties by using a dot and then the property name:
 
