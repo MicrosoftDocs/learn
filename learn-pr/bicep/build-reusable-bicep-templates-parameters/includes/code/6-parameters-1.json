@@ -7,6 +7,12 @@
         "name": "F1",
         "tier": "Free"
       }
+    },
+    "sqlDatabaseSku": {
+      "value": {
+        "name": "Standard",
+        "tier": "Standard"
+      }
     }
   }
 }

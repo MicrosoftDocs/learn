@@ -16,7 +16,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value:
 
-   :::code language="plaintext" source="code/6-template.bicep" range="19-20" :::
+   :::code language="plaintext" source="code/6-template.bicep" range="19-20" highlight="2" :::
 
 ## Add new parameters
 
@@ -168,7 +168,7 @@ Copy the resource ID. You'll use this in the next step.
 
 1. In *main.parameters.dev.json* file, append the following code after the `sqlDatabaseSku` parameter's closing brace. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're done, your parameters file should look like this:
 
-   :::code language="json" source="code/6-parameters-2.json" highlight="11-32" :::
+   :::code language="json" source="code/6-parameters-2.json" highlight="17-32" :::
 
 1. Save the changes to the file.
 

@@ -7,7 +7,7 @@ Sometimes you need to pass sensitive values into your deployments, like logins, 
 
 Bicep provides the `@secure` decorator, which you can apply to string and object parameters that contain secure values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal will not display the text on your screen.
 
-As part of the HR application migration, you need to deploy an Azure SQL server and database. You will provision the server with an administrative login and password. These values are sensitive, and you need the deployment to be secured. Here is an example declaration to create two string parameters for the SQL server details:
+As part of the HR application migration, you need to deploy an Azure SQL server and database. You'll provision the server with an administrative login and password. These values are sensitive, and you need the deployment to be secured. Here is an example declaration to create two string parameters for the SQL server details:
 
 ```bicep
 @secure()
@@ -24,7 +24,7 @@ Note that both secure parameters don't have a default value specified. It's a go
 
 ## Avoid using parameter files for secrets
 
-As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You will often create parameter files for each environment you're deploying to. However, you should generally avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git, which lots of people might have access to in the future. You should never save sensitive data to version control systems.
+As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You'll often create parameter files for each environment you're deploying to. However, you should generally avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git, which lots of people might have access to in the future. You should never save sensitive data to version control systems.
 
 ## Integrate with Azure Key Vault
 
