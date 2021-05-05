@@ -236,7 +236,7 @@ In some instances, you need to deploy from an external or remote location instea
     
     In the next exercise, you'll deploy an ARM template from a GitHub repo. The repo is public, so you don't need to worry about deploying a template that requires a shared access signature (SAS) token. For details about using a private or secured remote location, see [Deploy a private template with SAS token](https://docs.microsoft.com/azure/azure-resource-manager/templates/secure-template-with-sas-token?tabs=azure-powershell&azure-portal=true).
 
-    The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json. It's a short template that will deploy a simple storage account in your sandbox environment.
+    The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json. It's a short template that will deploy a simple storage account in your sandbox environment.
 
 1. The PowerShell command is exactly the same as for a local template. The only difference is that the `-TemplateUri` parameter replaces the `-TemplateFile` parameter.
     
@@ -249,7 +249,7 @@ In some instances, you need to deploy from an external or remote location instea
 
     New-AzResourceGroupDeployment `
         -Name $DeploymentName `
-        -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+        -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json
     ```
 
     The results will be like the following screen capture. They outline the details of the template location.
@@ -262,7 +262,7 @@ In some instances, you need to deploy from an external or remote location instea
     Mode                    : Incremental
     TemplateLink            :
                               Uri            :
-                              https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+                              https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json
                               ContentVersion : 1.0.0.0
 
     Parameters              :
