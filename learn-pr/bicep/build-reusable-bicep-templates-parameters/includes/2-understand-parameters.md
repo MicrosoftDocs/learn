@@ -66,7 +66,7 @@ param appServicePlanSku object = {
 This parameter is an object with two properties: `name` and `tier`, each of which are strings. Notice that each of the properties is on its own line.
 
 > [!NOTE]
-> You can't specify what properties an object needs to contain.
+> You can't specify the properties that an object needs to contain.
 
 When you refer to the parameter, you can refer just to individual properties of the object by using a dot and then the property name:
 
@@ -91,7 +91,7 @@ Then, whenever you define a resource in your Bicep file, you can reuse it wherev
 An array is a list of items. Each item has one of the other Bicep types. You might use an array of strings to specify a list of email addresses to configure in an Azure Monitor action group for alerts, or an array of objects to represent a list of subnets for a virtual network.
 
 > [!NOTE]
-> You can't specify what types an array needs to contain.
+> You can't specify the type of individual items that an array needs to contain.
 
 Let's consider an example. Azure Cosmos DB lets you create database accounts that span multiple regions, and Cosmos DB automatically handles the data replication for you. When you deploy a new database account, you need to specify the list of Azure regions that you want the account to be deployed into. Often, you'll need to have a different list of locations for different environments. For example, to save money in your test environment you might only use one or two locations, but in your production environment you might use several. You can create an array parameter that specifies a list of locations:
 
