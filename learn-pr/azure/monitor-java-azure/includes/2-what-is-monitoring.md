@@ -2,7 +2,11 @@ In this unit, we look at Monitoring Java Application concepts.
 
 # Why Monitoring?
 
-Monitoring is as important in mission-critical solutions deployed to the cloud as the solutions themselves. In a fully monitored data-center environment, *instrumentation* is provided by software. Instrumentation generally takes on the three forms:
+In a production environment, it's important to track the way in which users use your system, trace resource utilization, and generally monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and also to help spot potential problems and prevent them from occurring.
+
+## Monitoring forms
+
+Monitoring generally takes on the three forms:
 
 - **Logs** - Permanent, immutable records of events stored in a consistent, tabular format, if not in a full database. An *event* may be indicative of one of many conditions, including:
 
@@ -15,17 +19,11 @@ Monitoring is as important in mission-critical solutions deployed to the cloud a
 
 - **Traces** - Records of the paths of execution for programs and services, especially in a highly distributed system, indicating the sequence of instructions that may have triggered, either directly or indirectly, an event
 
-## Tracing in Microservice Environments
+## Azure Monitoring Platforms
 
-A traditional application incorporates all of its code in a single, contiguous unit. Even if it utilizes portable libraries that were formally included in the code's declarations, they still exist inside the walls of the proverbial monolith. A monitoring platform observing an application from the outside usually waits for it to do something noticeable, like accept a query or produce a result, and then measures the service levels of these actions. When an enterprise network needs to improve the service levels for this network, it simply replicates these servers and places a load balancer in front of them to even out the traffic flow. Even modern VM platforms merely automate this simple process.
-
-With microservices, the code modules of an application become applications unto themselves, which interact with and pass control between one another through the network. To find one another, they may use raw IP addresses, but more likely they use a DNS server for service discovery, or they might make use of a *service mesh* to discover each other's identities and locations. An orchestrator such as Kubernetes improves service levels by replicating as many of the individual microservices as the cluster needs to account for fluctuating traffic volume, and can then delete these replicas when traffic subsides.
-
-Supporting a microservices environment with a conventional monitoring platform that observes events from the outside is like equipping a metropolitan area with a population of more than a million people with a single party-line telephone circuit. Theoretically it would work, given an infinite time constraint, but communications over such a system would be unworkably slow. Consequently, specialized APM platforms are preferred for monitoring microservice-based solutions.
-
-## Monitoring Platforms
-
-Increasingly, cloud service providers offer native monitoring services that are integrated into their cloud platforms. Azure, for example, supports Azure Monitor, which comprises a set of services that developers and administrators can use to collect, analyze, and act upon telemetry regarding the performance of applications and the infrastructure that hosts them. Events emanating from applications, virtual machines, and other resources are logged and used to compute performance metrics. Various services such as Azure Log Analytics and Microsoft Power BI can be connected to the data sources where logs and metrics are stored to generate actionable insights and create visual dashboards. In addition, developers can instrument their applications with Azure Application Insights to generate custom telemetry. This provides an extra layer of monitoring that is application-specific and that can be extremely beneficial in diagnosing errors and their root causes -- often without having to dive into the source code.
+Azure provides **Azure Monitor**, which includes a set of services that developers and administrators can use to collect, analyze, and act upon telemetry regarding the performance of applications and the infrastructure that hosts them.
+Various services such as Azure Log Analytics and Microsoft Power BI can be connected to the data sources where logs and metrics are stored to generate actionable insights and create visual dashboards.
+In addition, developers can instrument their applications with Azure Application Insights to generate custom telemetry. This telemetry provides an extra layer of monitoring that can be beneficial in diagnosing errors and their root causes--often without having to dive into the source code.
 
 ## Next steps
 
