@@ -113,8 +113,21 @@ The Query Performance Insight view in the Azure portal will surface visualizatio
 
 In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
 
+### Long running queries
+
+The **Long running queries tab** shows the top 5 queries by average duration per execution, aggregated in 15-minute intervals
+
 > [!TIP]
-> Your Azure Spring Cloud sample application already has Query Performance Insights activated for your MySQL instance
+> Your Azure Spring Cloud sample application already has Query Performance Insights activated for Long running queries for your MySQL instance
+> For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
+
+### Wait statistics
+
+Wait statistics provides a view of the wait events that occur during the execution of a specific query.
+Select the **Wait Statistics** tab to view the corresponding visualizations on waits in the server.
+
+> [!NOTE]
+> Wait statistics are meant for troubleshooting query performance issues. It is recommended to be turned on only for troubleshooting purposes.
 
 ## Performance Recommendations
 
