@@ -26,6 +26,13 @@ For example, suppose that your application makes a request that requires 15 000 
 
 The scenario illustrated in the preceding example is known as VM IO Capped, when the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot handle this.
 
+You can diagnose the performance issues due the VM IO capping using the following metrics:
+
+- VM Cached IOPS Consumed Percentage
+- VM Cached Bandwidth Consumed Percentage
+- VM Uncached IOPS Consumed Percentage
+- VM Uncached Bandwidth Consumed Percentage
+
 ## Disk IO capping
 
 You might come across other situations where the application demands are not satisfied, but this time the bottleneck might be caused from a wrong selection of the performance of the disks.
@@ -45,6 +52,13 @@ The total IOPS that VM will return to application will be 12 300 as a sum of eac
 
 This scenario is known as Disk IO capping, when the disk itself cannot meet the application demands.
 
+To diagnose disk IO capping use the following metrics:
+
+- Data Disk IOPS Consumed Percentage
+- Data Disk Bandwidth Consumed Percentage
+- OS Disk IOPS Consumed Percentage
+- OS Disk Bandwidth Consumed Percentage
+
 ## Disk caching
 
 A cache is a specialized component that stores data, typically in memory so that it can be accessed more quickly. The data in a cache is often data that has been read previously or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
@@ -58,3 +72,8 @@ It's important to note that read caching helps when there is some _predictabilit
 **Write caching**  tries to speed up _writing data_ to persistent storage. By using a write cache, the app can consider the data to be saved.
 
 In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, handle writing cached data to persistent disk storage themselves.
+
+## Cached and uncached limits of VMs
+
+Now that you understand that the caching can improve the performance for reading or writing on the disk, lets see how that affect VM performance.
+
