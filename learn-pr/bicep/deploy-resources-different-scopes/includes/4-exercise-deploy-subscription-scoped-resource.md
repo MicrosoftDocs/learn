@@ -136,7 +136,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Deploy the template to Azure
 
-The following code deploys the ARM template to Azure. You'll see a successful deployment.
+The following code deploys the template to Azure. You'll see a successful deployment.
 
 ::: zone pivot="cli"
 
@@ -156,8 +156,6 @@ az deployment sub create \
 ::: zone-end
 
 ::: zone pivot="powershell"
-
-### Deploy the template to Azure
 
 Deploy the template by using Azure PowerShell commands in the terminal.
 

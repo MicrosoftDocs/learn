@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
-param virtualNetworkName string = 'todovnet'
-param virtualNetworkAddressPrefix string = '10.0.0.0/24'
+param virtualNetworkName string
+param virtualNetworkAddressPrefix string
 
 var policyDefinitionName = 'DenyGSeriesVMs'
 var policyAssignmentName = 'DenyGSeriesVMs'
