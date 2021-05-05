@@ -107,12 +107,21 @@ Query Performance Insight works with Query Store to provide visualizations acces
 
 Query Performance Insight helps you to quickly identify what your longest running queries are, how they change over time, and what waits are affecting them.
 
+### Viewing performance insights
+
+The Query Performance Insight view in the Azure portal will surface visualizations on key information from Query Store.
+
+In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
+
+> [!TIP]
+> Your Azure Spring Cloud sample application already has Query Performance Insights activated for your MySQL instance
+
 ## Performance Recommendations
 
 The Performance Recommendations feature identifies opportunities to improve workload performance. Performance Recommendations provides you with recommendations for creating new indexes that have the potential to improve the performance of your workloads. To produce index recommendations, the feature takes into consideration various database characteristics, including its schema and the workload as reported by Query Store
 
 > [!TIP]
-> For more information on Database Monitoring, see the Summary unit at the end of this training.
+> For more information on Database Monitoring, see the **Summary** unit at the end of this training.
 
 # OpenTelemetry
 
