@@ -1,17 +1,17 @@
-A *controller* is a public class with one or more public methods known as *actions*. By convention, a controller is placed in the project root's *:::no-loc text="Controllers":::* directory. The actions are exposed as HTTP endpoints inside the web API controller.
+A *controller* is a public class with one or more public methods known as *actions*. By convention, a controller is placed in the project root's *Controllers* directory. The actions are exposed as HTTP endpoints inside the web API controller.
 
 ## Create a controller
 
-1. Select the `Controllers` folder in Visual Studio Code and add a new File called `PizzaController.cs`. 
+1. Select the `Controllers` folder in Visual Studio Code and add a new File called `PizzaController.cs`.
 
     ![Image of Visual Studio Code adding a new file to the Controllers folder](../media/add-pizza-controller-file.png)
 
-    An empty class file named *:::no-loc text="PizzaController.cs":::* is created in the *:::no-loc text="Controllers":::* directory. The directory name *:::no-loc text="Controllers":::* is a convention. The directory name comes from the Model-View-**Controller** architecture used by the web API.
+    An empty class file named *PizzaController.cs* is created in the *Controllers* directory. The directory name *Controllers* is a convention. The directory name comes from the Model-View-**Controller** architecture used by the web API.
 
     > [!NOTE]
-    > By convention, controller class names are suffixed with *:::no-loc text="Controller":::*.
+    > By convention, controller class names are suffixed with *Controller*.
 
-1. Add the following code to *:::no-loc text="Controllers/PizzaController.cs":::*. Save your changes.
+1. Add the following code to *Controllers/PizzaController.cs*. Save your changes.
 
     ```csharp
     using System.Collections.Generic;
@@ -43,14 +43,14 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    As you learned previously, this class derives from *:::no-loc text="ControllerBase":::*, the base class for working with HTTP requests ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Since this controller class is named `PizzaController`, Requests to `http://localhost:5000/pizza` are handled by this controller.
+    As you learned previously, this class derives from *ControllerBase*, the base class for working with HTTP requests ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Since this controller class is named `PizzaController`, Requests to `http://localhost:5000/pizza` are handled by this controller.
 
 ## Get all pizzas
 
 The first REST verb that we need to implement is `GET` where a client could get all pizzas from the API. We can use the built-in `[HttpGet]` attribute to define a method that will return the pizzas from our service.
 
-Replace the `// GET all action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
-    
+Replace the `// GET all action` comment in *Controllers/PizzaController.cs* with the following code:
+
 ```csharp
 [HttpGet]
 public ActionResult<List<Pizza>> GetAll() =>
@@ -64,10 +64,10 @@ The preceding action:
 
 ## Retrieve a single pizza
 
-The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `id`. We can use the built-in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service.
+The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `id`. We can use the built-in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service. The routing logic registers `[HttpGet]` (without an `id`) and `[HttpGet("{id}")]` (with an `id`) as two different routes, allowing us to write a separate action to retrieve a single item.
 
-Replace the `// GET by Id action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
-    
+Replace the `// GET by Id action` comment in *Controllers/PizzaController.cs* with the following code:
+
 ```csharp
 [HttpGet("{id}")]
 public ActionResult<Pizza> Get(int id)
@@ -102,13 +102,13 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     dotnet run
     ```
 
-1.  Open the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
+1. Open the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
 1. Connect to our web API by running the following command:
   
   ```dotnetcli
   httprepl http://localhost:5000
-  ```
+  
   Alternatively, run the following command at any time while the HttpRepl is running:
 
   For example:
