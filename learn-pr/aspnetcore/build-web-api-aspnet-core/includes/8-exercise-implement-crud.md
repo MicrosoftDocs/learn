@@ -6,24 +6,24 @@ Let's enable a pizza to be added through our web API with a `POST` method.
 
 1. Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
-```csharp
-[HttpPost]
-public IActionResult Create(Pizza pizza)
-{            
-    PizzaService.Add(pizza);
-    return CreatedAtAction(nameof(Create), new { id = pizza.Id }, pizza);
-}
-```
+   ```csharp
+   [HttpPost]
+   public IActionResult Create(Pizza pizza)
+   {            
+       PizzaService.Add(pizza);
+       return CreatedAtAction(nameof(Create), new { id = pizza.   Id }, pizza);
+   }
+   ```
 
-The preceding action:
+   The preceding action:
 
-* Responds only to the HTTP POST verb, as denoted by the `[HttpPost]` attribute.
-* Inserts the request body's `Pizza` object into the in-memory cache.
+   * Responds only to the HTTP POST verb, as denoted by the `[HttpPost]` attribute.
+   * Inserts the request body's `Pizza` object into the    in-memory cache.
 
-> [!NOTE]
-> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
+   > [!NOTE]
+   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza`    parameter will be found in the request body.
 
-The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza, as explained in the previous unit.
+   The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza, as explained in the previous unit.
 
 ## Modify a pizza
 
@@ -31,28 +31,28 @@ Let's enable a pizza to be updated through our web API with a `PUT` method.
 
 1. Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
-```csharp
-[HttpPut("{id}")]
-public IActionResult Update(int id, Pizza pizza)
-{
-    var existingPizza = PizzaService.Get(id);
-    if (id != pizza.Id || existingPizza is null)
-        return BadRequest();
+   ```csharp
+   [HttpPut("{id}")]
+   public IActionResult Update(int id, Pizza pizza)
+   {
+       var existingPizza = PizzaService.Get(id);
+       if (id != pizza.Id || existingPizza is null)
+           return BadRequest();
+   
+       PizzaService.Update(pizza);           
+   
+       return NoContent();
+   }
+   ```
 
-    PizzaService.Update(pizza);           
+   The preceding action:
 
-    return NoContent();
-}
-```
+   * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
+   * Requires that the `id` parameter's value is included in the    URL segment after `pizza/`.
+   * Returns `IActionResult` because the `ActionResult` return    type isn't known until runtime. The `BadRequest` and    `NoContent` methods return `BadRequestResult` and    `NoContentResult` types, respectively.
 
-The preceding action:
-
-* Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
-* Requires that the `id` parameter's value is included in the URL segment after `pizza/`.
-* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
-
-> [!NOTE]
-> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
+   > [!NOTE]
+   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza`    parameter will be found in the request body.
 
 ## Remove a pizza
 
@@ -60,27 +60,27 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
 
 1. Replace the `// DELETE action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
-```csharp
-[HttpDelete("{id}")]
-public IActionResult Delete(int id)
-{
-    var pizza = PizzaService.Get(id);
+   ```csharp
+   [HttpDelete("{id}")]
+   public IActionResult Delete(int id)
+   {
+       var pizza = PizzaService.Get(id);
+   
+       if (pizza is null)
+           return NotFound();
+       
+       PizzaService.Delete(id);
+   
+       return NoContent();
+   }
+   ```
 
-    if (pizza is null)
-        return NotFound();
-    
-    PizzaService.Delete(id);
+   The preceding action:
 
-    return NoContent();
-}
-```
-
-The preceding action:
-
-* Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
-* Requires that `id` parameter's value is included in the URL segment after `pizza/`.
-* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
-* Queries the in-memory cache for a pizza matching the provided `id` parameter.
+   * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
+   * Requires that `id` parameter's value is included in the URL    segment after `pizza/`.
+   * Returns `IActionResult` because the `ActionResult` return    type isn't known until runtime. The `NotFound` and    `NoContent` methods return `NotFoundResult` and    `NoContentResult` types, respectively.
+   * Queries the in-memory cache for a pizza matching the    provided `id` parameter.
 
 ## Build and run the finished web API
 
@@ -90,23 +90,24 @@ The preceding action:
     dotnet run
     ```
 
-1.  Reopen the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **new Terminal** from the main menu.
+1. Reopen the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **new Terminal** from the main menu.
 
 1. If you opened a new terminal, connect to our web API by running the following command:
   
     ```dotnetcli
     httprepl http://localhost:5000
     ```
+
     Alternatively, run the following command at any time while the HttpRepl is running:
-    
+
     For example:
-    
+
     ```dotnetcli
     (Disconnected)> connect http://localhost:5000
     ```
-    
+
     Navigate to the Pizza endpoint by running the following command:
-    
+
     ```dotnetcli
     cd Pizza
     ```
@@ -131,10 +132,10 @@ The preceding action:
     ```dotnetcli
     post -c "{"name":"Hawaii", "isGlutenFree":false}"
     ```
-    
+
     The following command will make a `POST` request to add the new pizza to our inventory and then will return a list of all pizza back:
-    
-    ```dotnetcli 
+
+    ```dotnetcli
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:23:09 GMT
