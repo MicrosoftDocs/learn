@@ -150,7 +150,7 @@ Deploy the template by using Azure CLI commands in the Visual Studio Code termin
 ```azurecli
 templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
-deploymentName="new-subscription
+deploymentName="new-subscription"
 
 az deployment sub create \
     --name $deploymentName \

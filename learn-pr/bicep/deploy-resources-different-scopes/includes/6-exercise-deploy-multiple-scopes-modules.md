@@ -13,7 +13,7 @@ The R&D team have asked for your help to create a virtual network in the Project
 
 1. In the *main.bicep* file in Visual Studio Code, add the following variable definition under the current variable definitions:
 
-   :::code language="bicep" source="code/modules/virtualNetwork.bicep" range="8" :::
+   :::code language="bicep" source="code/6-template.bicep" range="8" :::
 
 1. Add the following resource definition at the bottom of the file:
 
