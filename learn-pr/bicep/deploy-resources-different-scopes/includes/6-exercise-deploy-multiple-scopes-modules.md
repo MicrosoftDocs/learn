@@ -1,4 +1,13 @@
-TODO intro
+> [!NOTE]
+> This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
+
+The R&D team have asked for your help to create a virtual network in the Project Teddybear subscription. You know that you'll be helping the R&D team with more subscriptions in the future, so you decide to extend your reusable Bicep template to deploy a virtual network for them to use. In this exercise, you'll update the template you started to build in the last exercise. During the process, you'll:
+
+> [!div class="checklist"]
+> * Update the subscription-scoped template to create a new resource group.
+> * Create a separate Bicep module with a virtual network, and use parameters to control how the virtual network is configured.
+> * Update the template to deploy the module into the resource group.
+> * Deploy the template.
 
 ## Create a resource group
 

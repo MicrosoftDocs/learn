@@ -1,7 +1,14 @@
 > [!NOTE]
 > This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
 
-TODO intro para
+Project Teddybear is in full swing and the R&D team is waiting for you to give them access to their new Azure subscription. You've created the subscription already, but before you give them access you need to ensure they only deploy virtual machines that comply with their team's policies. They've told you that they don't want to deploy F or G series virtual machines. In this exercise, you'll create a Bicep template that configures the subscription based on the team's policies.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a Bicep template to be deployed at a subscription scope.
+> * Add an Azure Policy definition and assignment.
+> * Deploy the template and verify the result.
 
 ## Create a subscription-scoped template
 

@@ -29,8 +29,12 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your R&D team is designing a new toy as part of a top-secret project called Project Teddybear. They have asked you to create a dedicated Azure subscription for them to work within so that the rest of the company won't accidentally see any information about their project.
+
+They plan to use virtual machines within the subscription, but to save money they have asked for your help to ensure that only certain SKUs of virtual machines can be created within that subscription. They also need your assistance to create a virtual network in the subscription, because they will eventually need to connect that network to the main corporate network you help to manage.
+
+You know that the R&D team has recently been given a lot of new funding, so they are likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
