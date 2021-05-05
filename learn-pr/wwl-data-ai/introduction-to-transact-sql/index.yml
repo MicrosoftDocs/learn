@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.intro-to-transact-sql
+metadata:
+  title: Introduction to Transact-SQL
+  description: "Introduction to Transact-SQL"
+  ms.date: 05/05/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Transact-SQL
+summary: This module provides an introduction to relational databases, the SQL language and Transact-SQL. You will learn what kinds of statements make up the SQL language and look at the SELECT statement in detail.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand what SQL is for
+  - Identify database objects in schemas
+  - Identify SQL statement types
+  - Use the SELECT statement
+  - Work with data types
+  - Handle NULLs
+prerequisites: |
+  Before starting this module, it is helpful to have experience of working with tables with data; for example in a spreadsheet.
+iconUrl: /learn/achievements/explore-sql-server-and-query-tools.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure-sql-database
+- sql-server
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+units:
+- learn.wwl.intro-to-transact-sql.introduction
+- learn.wwl.intro-to-transact-sql.work-with-schemas
+- learn.wwl.intro-to-transact-sql.explore-structure-sql-statements
+- learn.wwl.intro-to-transact-sql.examine-select-statement
+- learn.wwl.intro-to-transact-sql.work-with-data-types
+- learn.wwl.intro-to-transact-sql.handle-nulls
+- learn.wwl.intro-to-transact-sql.exercise-work-with-select-statements
+- learn.wwl.intro-to-transact-sql.knowledge-check
+- learn.wwl.intro-to-transact-sql.summary
+badge:
+  uid: learn.wwl.explore-sql-server-query-tools.badge
