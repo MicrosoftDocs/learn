@@ -209,7 +209,7 @@ Values of compatible data types can be implicitly converted as required. For exa
 
 T-SQL includes functions to help you convert between data types:
 
-### CAST and TRY\_CAST
+### CAST and TRY_CAST
 
 The CAST function converts a value to a specified data type if the value is compatible with the target data type. If it is not compatible, an error is returned.
 
@@ -252,7 +252,6 @@ Possible result from this query might look something like this:
     ...
   :::column-end:::
 :::row-end:::
-
 
 However, let's suppose the **Size** column in the **Production.Product** table is a *nvarchar* (variable length, Unicode text data) column that contains some numeric sizes (like 58) and some text-based sizes (like "S", "M", or "L"). The following query tries to convert values from this column to an *integer* data type:
 
@@ -305,12 +304,12 @@ The results this time look might like this:
   :::column-end:::
 :::row-end:::
 
-
 The values that can be converted to a numeric data type are returned as *decimal* values, and the incompatible values are returned as *NULL*, which is used to indicate that a value is *unknown*.
 
-> **Note**: We'll explore considerations for handling *NULL* values later in this unit.
+> [!NOTE]
+> We'll explore considerations for handling *NULL* values later in this unit.
 
-### CONVERT and TRY\_CONVERT
+### CONVERT and TRY\CONVERT
 
 CAST is the ANSI standard SQL function for converting between data types, and is used in many database systems. In Transact-SQL, you can also use the CONVERT function, as shown here:
 
@@ -351,7 +350,6 @@ Once again, this query returns the value converted to the specified data type, l
     ...
   :::column-end:::
 :::row-end:::
-
 
 Like CAST, CONVERT has a TRY\_CONVERT variant that returns *NULL* for incompatible values.
 
