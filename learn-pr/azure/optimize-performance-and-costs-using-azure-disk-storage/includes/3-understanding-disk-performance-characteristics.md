@@ -42,3 +42,17 @@ In this scenario, the application&#39;s demand will be broken down into three di
 The total IOPS that VM will return to application will be 12 300 as a sum of each IOPS provided by the OS and data disks.
 
 This scenario is known as Disk IO capping, when the disk itself cannot meet the application demands.
+
+## Disk caching
+
+A cache is a specialized component that stores data, typically in memory so that it can be accessed more quickly. The data in a cache is often data that has been read previously or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
+
+Caching uses specialized, and sometimes expensive, temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, decisions need to be made as to what data operations will benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
+
+**Read caching**  tries to speed up data _retrieval_. Instead of reading from permanent storage, the data is read from the faster cache.
+
+It's important to note that read caching helps when there is some _predictability_ to the read queue, such as a set of sequential reads. For random I/O, where the data you're accessing is scattered across storage, caching will be of little or no benefit and can even reduce disk performance.
+
+**Write caching**  tries to speed up _writing data_ to persistent storage. By using a write cache, the app can consider the data to be saved.
+
+In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, handle writing cached data to persistent disk storage themselves.
