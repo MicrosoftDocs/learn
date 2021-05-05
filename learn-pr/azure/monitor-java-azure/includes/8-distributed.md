@@ -6,9 +6,10 @@ Most cloud deployments are based on distributed architectures where components a
 
 ## Log analytics
 
-Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces. The workspace defines the geographic location of the data, access rights defining which users can access data, and configuration settings such as the pricing tier and data retention.  
+Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.
 
-You must create at least one workspace to use Azure Monitor Logs. A single workspace may be sufficient for all of your monitoring data, or may choose to create multiple workspaces depending on your requirements. For example, you might have one workspace for your production data and another for testing.
+> [!NOTE]
+> Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
 
 ### Log queries
 
@@ -117,7 +118,7 @@ In the portal page of your Azure Database for MySQL server, select **Query Perfo
 
 The **Long running queries tab** shows the top 5 queries by average duration per execution, aggregated in 15-minute intervals
 
-> [!TIP]
+> [!NOTE]
 > Your Azure Spring Cloud sample application already has Query Performance Insights activated for Long running queries for your MySQL instance
 > For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
 
