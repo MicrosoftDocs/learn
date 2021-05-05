@@ -44,9 +44,9 @@ When you run the application and use the screen reader to navigate the elements 
 
 The default tab order of controls is the same order in which they are listed in XAML, or added to a collection. In the `Grid` items are added to the layout based on the row. This is not an accessible order for data entry. Instead we would prefer them to fill in the forename and then the surname before moving to the next person.
 
-## Set the tab order
+## Reorder the elements
 
-1. Reorder the `Entry` elements so they in the order in which the screen reader should read them back.
+Reorder the `Entry` elements so they in the order in which the screen reader should read them back.
 
 
 ```xaml
@@ -85,6 +85,7 @@ Now, when you run the application you will see the new column-based accessibilit
 ![Column-based Tab Order](../media/correct-tab-order.png)
 
 
-> Note: If you are interested in further manipulating the accessibility ordering, there are APIs that make this possible. However, it is advised to maintain logical and meaningful content ordering before leveraging those APIs.
+> [!NOTE]
+> If you are interested in further manipulating the accessibility ordering, there are APIs that make this possible. However, it is advised to maintain logical and meaningful content ordering before leveraging those APIs.
 
 We have now explored multiple ways to enhance the accessibility of the application. Let's recap what we have learned and discover even more ways in which we can make apps app accessible.

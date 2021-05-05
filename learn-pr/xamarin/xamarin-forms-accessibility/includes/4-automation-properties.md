@@ -2,11 +2,11 @@ The design for the app you will be creating is a form used to collect project in
 
 ## Screen reader narration
 
-As mentioned in the previous section, each operating system has its own screen readers with their own unique behaviors and configurations. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control that receives accessibility focus. This means that elements such as a `Label` or `Button` that have the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in handy to help provide additional information about which elements should receive accessibility focus and what text should be read back to the user.
+As mentioned in the previous section, each operating system has its own screen readers with their own unique behaviors and configurations. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control that receives accessibility focus. This means that elements such as a `Label` or `Button` that have the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms accessibility features come in.
 
 ## Automation properties
 
-Xamarin.Forms provides four different properties that can enhance the screen reader experience. These are called `AutomationProperties` and are attached properties that can be added to any element: 
+Xamarin.Forms accessibility properties provide additional information about which elements should receive accessibility focus and what text should be read back to the user. There are four different properties that can enhance the screen reader experience. These are called `AutomationProperties` and are attached properties that can be added to any element: 
 - `AutomationProperties.IsInAccessibleTree` indicates whether or not the element is accessible by screen readers.
 - `AutomationProperties.Name` is a short description that serves as a speakable identifier for the element.
 - `AutomationProperties.HelpText` is a longer description of the element, which can be thought of as tooltip text associated with the element. 
@@ -19,6 +19,7 @@ This attached property is a `boolean` that tells the operating system if the ele
 ```xaml
 <Entry AutomationProperties.IsInAccessibleTree="true" />
 ```
+
 Or in the code-behind:
 
 ```csharp
