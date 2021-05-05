@@ -1,4 +1,4 @@
-Some Azure resources are deployed outside of resource groups, and are instead deployed to subscriptions, management groups, and even to your tenant. Bicep enables you to create and configure Azure resources at these scopes. By using Bicep to deploy these kinds of resources, you'll gain the benefits of modelling your infrastructure as code across your full portfolio of Azure resources and configuration.
+Some Azure resources are deployed outside of resource groups, and are instead deployed to subscriptions, management groups, and even to your tenant. Bicep enables you to create and configure Azure resources at these scopes. By using Bicep to deploy these kinds of resources, you'll gain the benefits of modeling your infrastructure as code across your full portfolio of Azure resources and configuration.
 
 ## Example scenario
 
