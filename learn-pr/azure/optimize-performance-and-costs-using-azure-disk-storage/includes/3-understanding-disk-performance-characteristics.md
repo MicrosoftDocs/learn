@@ -77,3 +77,7 @@ In reality, the data is queued in a cache, waiting to be written to a disk. As y
 
 Now that you understand that the caching can improve the performance for reading or writing on the disk, lets see how that affect VM performance.
 
+The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of th VM. All Vms in the premium tier, has different limits for IOPS and throughput based on cached and uncached configuration. When the application running on the VM request IOPS, or throughput that hit the limits of the VM size, Azure start to throttle the request which cause performance problems.
+
+
+
