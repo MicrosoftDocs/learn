@@ -1,0 +1,63 @@
+A complete Unity project has been prepared for you to assist with this learning path.  Download the code from the GitHub repository and extract the Zip file to your destination Unity Project Path of choice. 
+
+To build Mixed Reality solutions in Unity, you require a number of different development tools:  
+
+- Install the [required tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+    - You can have multiple versions of Unity on your computer, managed within the Unity Hub.  When selecting a version of Unity, please install **Unity 2020.3.x LTS**, which is supported for this module.  The LTS stands for Long Term Support and Unity is committed to supporting 2020.3 LTS releases until March 2023.
+    - Launch the **Mixed Reality Feature Tool** (MixedRealityFeatureTool.exe) and select **Start** to begin installing MRTK components to your Unity Project. 
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+○	Click on **Select Project**. Click the three ellipses **“...”**  button to browse for the folder where you downloaded and extracted the Unity project. The folder you select here must be immediately above the Asset folder, which contains the entire Unity Project.
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+- Select Discover Features
+- Please ensure you select the following versions to ensure compatibility with the supplied Unity project:
+    - Mixed Reality Toolkit Extensions 2.5.4
+    - Mixed Reality Toolkit Foundation 2.5.4
+    - Mixed Reality Toolkit GPU Stats 1.0.3
+    - Mixed Reality Toolkit Plane Finding 1.0.0
+    - Mixed Reality Toolkit Standard Assets 2.5.4
+    - Mixed Reality Open XR Plugin 0.1.3
+    - Microsoft Spatializer 1.0176
+    - Mixed Reality Input 0.9.2006
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+- After making these selections, select **Get Features**. This will download the corresponding packages and keep them in a temporary location (i.e., package cache).
+- Validate your package selection and select **Import**. The packages will be copied into the Unity Project and the necessary modifications in the project’s package manifest are made.
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+- You may see the following screen if you have imported the same MRTK components previously.  It is safe to select **Approve**.
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+○	When the Tool completes, select Exit to leave the Mixed Reality Feature Tool.
+
+Open and verify your Unity Project has the required dependencies and settings.
+- Open the Unity Hub and select **Projects** from the upper left of the window.  Add your project to the list using the **ADD** button.  
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+- Browse to the folder where you extracted the Project contents from the Zip file obtained from GitHub and Select Folder.
+- Open the Project by clicking on the project name.  
+    - If an orange exclamation point shows under the project name, hover over it for a description and suggested actions (e.g., incorrect Unity version, install)
+- Locate the Main scene in the Project panel in **Assets > Scenes > MainScene** and double click it.
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+If no error messages appear, your Project is ready to be configured / developed.
+
+This Project uses the OpenXR plug-in.  OpenXR is an open, royalty-free standard developed by Khronos that aims to simplify AR/VR development by allowing developers to seamlessly target a wide range of AR/VR devices.  This new plug-in requires a minor configuration change to support input that interfaces with OpenXR in the Unity Editor.  Prior to running the Project in Unity using the Play button, please:
+- Enable the **Lock Input to the Game View** option. This can be found in the **Window > Analysis > Input Debugger > Options** dropdown menu.  This setting persists in your editor, so you only need to do this once.  
+
+<!-- :::image type="content" source="" alt-text=""::: -->
+
+Gizmos are a graphic overlay associated with a GameObject in a Scene, and displayed in the Scene View. Built-in scene tools such as the move tool are Gizmos, and you can create custom Gizmos using textures or scripting. Some Gizmos are only drawn when the GameObject is selected, while other Gizmos are drawn by the Editor regardless of which GameObjects are selected.  You will want to adjust the size of the Gizmos for your Scene, so that your Scene is not overwhelmed by ‘large blue objects’.  
+
+- Select the **Gizmos** dropdown and adjust the size via the slider.  
+- Also, you can toggle Gizmos on and off by selecting the Gizmos button at the top of your Scene.
+
+<!-- :::image type="content" source="" alt-text=""::: -->

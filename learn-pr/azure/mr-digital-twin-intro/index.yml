@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.mr-digital-twins-intro
+metadata:
+  title: Introduction to Mixed Reality, Azure Digital Twin and Unity 
+  description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
+  author: Sean-Kerawala
+  ms.author: "sekerawa"
+  ms.date: "5/5/2021"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Mixed Reality, Azure Digital Twin and Unity
+summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
+abstract: |
+  By the end of this module you will be able to:
+  - Understand the breadth of Mixed Reality use cases for industry
+  - Describe a Digital Twin and summarize how they can be used in business settings
+  - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
+  - Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
+iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- hololens
+prerequisites: |
+  - A HoloLens 2 device
+  - Azure subscription
+  - A Windows 10 PC configured with the required tools
+      - Windows 10 SDK 10.0.18362.0 or later
+      - Unity Hub with Unity 2020.3.x (LTS) installed
+      - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed, including USB Device Connectivity 
+      - The learning module package downloaded from GitHub [LINK]
+      - Microsoft Mixed Reality Feature Tool
+units:
+- learn.mixed-reality-toolkit-project-unity.1-introduction
+- learn.mixed-reality-toolkit-project-unity.2-mr-overview
+- learn.mixed-reality-toolkit-project-unity.3-digital-twin-overview
+- learn.mixed-reality-toolkit-project-unity.4-digital-twin-get-started
+- learn.mixed-reality-toolkit-project-unity.5-unity-overview
+- learn.mixed-reality-toolkit-project-unity.6-unity-get-started
+- learn.mixed-reality-toolkit-project-unity.7-signalr-overview
+- learn.mixed-reality-toolkit-project-unity.8-use-cases
+- learn.mixed-reality-toolkit-project-unity.9-knowledge-check
+- learn.mixed-reality-toolkit-project-unity.10-summary
+badge:
+  uid: learn.mixed-reality-toolkit-project-unity.badge

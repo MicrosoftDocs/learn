@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.mr-digital-twin-intro.7-signalr-overview
+title: SignalR overview
+metadata:
+  title: SignalR overview
+  description: Add hand interaction to an object with objectmanipulator.
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.date: 5/5/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-signalr-overview.md)]

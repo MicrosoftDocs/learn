@@ -4,6 +4,7 @@ This module introduces you to the basics of Mixed Reality, Azure Digital Twin, a
 
 ## Learning objectives
 
+In this module, you'll learn how to:
 - Understand the breadth of Mixed Reality use cases for industry
 - Describe a Digital Twin and summarize how they can be used in business settings
 - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
