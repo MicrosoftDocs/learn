@@ -2,7 +2,7 @@ An extension to the ORDER BY clause called OFFSET-FETCH enables you to return on
 
 If you want to return rows a "page" at a time (using whatever number you choose for a page), you'll need to consider that each query with an OFFSET-FETCH clause runs independently of any other queries. There's no server-side state maintained, and you'll need to track your position through a result set via client-side code.
 
-## OFFSET-FETCH Syntax
+## OFFSET-FETCH syntax
 
 The syntax for the OFFSET-FETCH clause, which is technically part of the ORDER BY clause, is as follows:
 

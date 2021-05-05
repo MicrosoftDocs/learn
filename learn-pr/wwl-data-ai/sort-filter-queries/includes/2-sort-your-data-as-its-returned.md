@@ -1,6 +1,6 @@
 In the logical order of query processing, ORDER BY is the last phase of a SELECT statement to be executed. ORDER BY enables you to control the sorting of rows as they are returned from SQL Server to the client application. SQL Server doesn't guarantee the physical order of rows in a table, and the only way to control the order the rows will be returned to the client is with an ORDER BY clause. This behavior is consistent with relational theory.
 
-## Using the ORDER BY Clause
+## Using the ORDER BY clause
 
 To tell SQL Server to return the results of your query in a particular order, you add an ORDER BY clause in this form:
 
