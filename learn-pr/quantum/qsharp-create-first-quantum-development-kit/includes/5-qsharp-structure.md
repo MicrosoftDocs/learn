@@ -119,5 +119,3 @@ use q = Qubit();
 ```
 
 Every qubit you allocate with the `use` keyword starts in the zero state.
-
-With these ideas in place, let's dive in and start building our random number generator. You'll start by defining an operation that produces a single random bit.

@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Ability to deploy Azure Container Instances in Azure with a basic configuration
   - Access to an Azure subscription with permissions to create resources
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/secure-apps-azure-container-instances-sidecar.svg
 levels:
 - intermediate
 roles:

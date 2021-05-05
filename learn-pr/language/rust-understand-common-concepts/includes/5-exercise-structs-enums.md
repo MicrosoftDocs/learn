@@ -59,6 +59,11 @@ fn main() {
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ab860606bdec8e181b11cb4620eb29ee?azure-portal=true).
+You can run this code in your local computer, or use this [Rust Playground][RustPlay-exercise].
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=cb4224fe1b2acca05237b92e1a4e42f2?azure-portal=true).
+The solution to this exercise is in this [Rust Playground][RustPlay-answer].
+
+
+<!-- Links -->
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2cb514cd6d862dc1b3bd3af2cadd1e82?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=cb4224fe1b2acca05237b92e1a4e42f2?azure-portal=true
