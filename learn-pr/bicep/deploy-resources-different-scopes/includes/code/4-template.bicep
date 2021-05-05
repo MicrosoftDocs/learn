@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 var policyDefinitionName = 'DenyGSeriesVMs'
-var policyAssignmentName = 'Apply-DenyGSeriesVMs'
+var policyAssignmentName = 'DenyGSeriesVMs'
 
 resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
   name: policyDefinitionName
@@ -17,8 +17,16 @@ resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01'
             equals: 'Microsoft.Compute/virtualMachines'
           }
           {
-            field: 'Microsoft.Compute/virtualMachines/sku.name'
-            like: 'Standard_G*'
+            anyOf: [
+              {
+                field: 'Microsoft.Compute/virtualMachines/sku.name'
+                like: 'Standard_F*'
+              }
+              {
+                field: 'Microsoft.Compute/virtualMachines/sku.name'
+                like: 'Standard_G*'
+              }
+            ]
           }
         ]
       }

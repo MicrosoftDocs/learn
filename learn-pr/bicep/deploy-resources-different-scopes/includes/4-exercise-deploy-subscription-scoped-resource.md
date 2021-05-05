@@ -21,17 +21,36 @@ TODO intro para
 
 1. At the bottom of the file, add the following Azure Policy definition:
 
-   :::code language="bicep" source="code/4-template.bicep" range="6-30" :::
+   :::code language="bicep" source="code/4-template.bicep" range="6-38" :::
 
-   TODO describe
+   Notice that the policy definition only applies to resources where:
+
+   - The resource type is equal to `Microsoft.Compute/virtualMachines`.
+   - The `sku.name` property *either* begins with `Standard_F` or `Standard_G`.
+  
+   When you try to create a resource that matches these conditions, Azure will deny the resource creation.
+
+   You are creating the policy definition at the scope of the subscription. The policy is available throughout all resource groups in the subscription.
 
 ## Assign the policy
 
+A policy definition doesn't do anything until it's applied. In this step, you'll deploy a second subscription-scoped resource - this time, to apply the policy definition to the subscription.
+
 1. Under the policy definition that you just added, add the following policy assignment:
 
-   :::code language="bicep" source="code/4-template.bicep" range="32-37" :::
+   :::code language="bicep" source="code/4-template.bicep" range="40-45" :::
+
+   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed at the subscription scope.
 
 1. Save the changes to the file.
+
+## Verify your template
+
+Your template should look like the following:
+
+:::code language="bicep" source="code/4-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the template
 
@@ -130,6 +149,7 @@ deploymentName="sub-scope-"$today
 
 az deployment sub create \
     --name $deploymentName \
+    --location westus \
     --template-file $templateFile
 ```
 
@@ -148,6 +168,7 @@ $DeploymentName = "sub-scope-$Today"
 
 New-AzSubscriptionDeployment `
   -Name $DeploymentName `
+  -Location westus `
   -TemplateFile $TemplateFile
 ```
 
