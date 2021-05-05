@@ -10,7 +10,7 @@ To that end, you've done the following actions:
 
 * Monitored the application with Azure Application Insights.
 
-You're now able to recommend this architecture for your Azure Java applications.
+You're now able to recommend a monitoring solution for your Azure Java applications.
 
 ## Clean up your Azure resources
 
@@ -27,3 +27,7 @@ For more information on Azure Monitor, see [Azure monitor](https://docs.microsof
 For More information on Azure Spring Cloud, see [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
+
+For more information about using Monitoring with Azure Database for MySQL, see [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/en-us/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
+
+For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/en-us/java/api/overview/azure/core-tracing-opentelemetry-readme?view=azure-java-preview&WT.mc_id=java-00000-ropreddy).
