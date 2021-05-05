@@ -2,7 +2,11 @@ A controller is a public class with one or more public methods known as actions.
 
 ## Exploring the WeatherForecastController
 
-In the previous exercise, we created a web application that provides sample weather forecast data. Let's take a look at how the sample controller to understand how it works. Here's the code for the entire controller class:
+In the previous exercise, we created a web application that provides sample weather forecast data, then interacted with it in the HTTP REPL.
+
+Before we dive in to writing our own `PizzaController`, let's take a look at the code in the sample `WeatherController` to understand how it works. In this section, you'll see how the `WeatherController` uses the `ControllerBase` base class and a few .NET attributes to build a functional web API in a few dozen lines of code. Once we understand those concepts, we'll be ready to write our own `PizzaController`.
+
+Here's the code for the entire `WeatherController` class. Don't worry if it doesn't make sense just yet, we'll go through it step by step.
 
 ```csharp
 using System;
