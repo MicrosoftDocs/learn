@@ -13,17 +13,17 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Which of the following is an Azure Data Lake Storage feature that helps prevent data silos?"
+  - content: "Which of the following is an Azure Data Lake Storage feature that enhances big data performance?"
     choices:
-    - content: "Accepts a variety of data types"
-      isCorrect: true
-      explanation: "Correct. Data silos occur when different data sources are stored in separate locations. Azure Data Lake Storage stores all data types in a single location, which helps prevent data silos."
     - content: "Hierarchical namespace"
+      isCorrect: true
+      explanation: "Correct. The hierarchical namespace improves data performance by enabling efficient data access and navigation."
+    - content: "Accepts a variety of data types"
       isCorrect: false
-      explanation: "Incorrect. The hierarchical namespace feature allows for efficient data access and navigation, but that efficiency does nothing directly to prevent data silos."
-    - content: "Highly scalable"
+      explanation: "Incorrect. Although Azure Data Lake Storage can store any type of data, that flexibility doesn't improve performance."
+    - content: "Data redundancy"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Data Lake Storage can quickly scale to meet any workload, that scalability does nothing directly to prevent data silos."
+      explanation: "Incorrect. Although Azure Data Lake Storage offers both locally redundant and geo-redundant storage to help ensure that data is always available and protected in the event of an outage, that redundancy doesn't directly improve data performance."
   - content: "Which of the following tools helps to ingest real-time data from an IoT device?"
     choices:
     - content: "Azure Storage Explorer"

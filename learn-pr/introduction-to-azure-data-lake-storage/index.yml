@@ -9,7 +9,7 @@ metadata:
   ms.author: v-pmcfedries           
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Data Lake Storage
-summary: "Describe how Microsoft Azure Data Lake Storage enables the capture of any data type in one location for operations and analytics. Evaluate whether Azure Data Lake Storage can eliminate data silos, optimize costs, and help protect data."
+summary: "Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to handle big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage."
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data.
