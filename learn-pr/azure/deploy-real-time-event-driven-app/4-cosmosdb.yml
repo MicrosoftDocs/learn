@@ -3,7 +3,7 @@ uid: learn.azure.deploy-event-driven-real-time.4-cosmosdb
 title: Databases for event-driven applications
 metadata:
   title: Databases for event-driven applications
-  description: In this section, we explain why Cosmos DB is a perfect fit for event-driven systems with real time requirements.
+  description: In this unit, we explain why Azure Cosmos DB is a perfect fit for event-driven systems with real-time requirements.
   ms.date: 02/01/2021
   author: SandraAhlgrimm
   ms.author: sakriema

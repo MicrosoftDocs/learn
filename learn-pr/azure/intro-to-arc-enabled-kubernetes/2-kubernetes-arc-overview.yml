@@ -8,6 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: What are Kubernetes and Azure Arc?
 durationInMinutes: 9
 content: |

@@ -24,13 +24,15 @@ You can improve your security posture using Azure Security Center to identify an
 
 Security Center brings continuous assessment of your entire estate, discovering and reporting whether new and existing resources and assets are configured according to security compliance requirements. You’ll get an ordered list of recommendations of what needs to be fixed to maintain maximum protection. Security Center groups the recommendations into security controls and adds a secure score value to each control. This process is crucial in enabling you to prioritize security work.
 
-:::image type="content" source="../media/3-security-center-recommendations.png" alt-text="Screenshot showing part of Azure Security Center with recommendations as to what needs to be fixed to maintain maximum protection.":::
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing part of Azure Security Center with recommendations as to what needs to be fixed to maintain maximum protection.](../media/3-security-center-recommendations.png)
 
 ### Network map
 
 One of the most powerful Security Center tools for continuously monitoring the security status of your network is the network map. Use the map to look at the topology of your workloads, so you can see if each node is properly configured. You'll see how your nodes are connected, which helps you block unwanted connections that could potentially make it easier for an attacker to creep along your network.
 
-:::image type="content" source="../media/3-network-map.png" alt-text="Diagram showing the Security Center network map.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing the Security Center network map.](../media/3-network-map.png)
 
 ### Protect against threats
 

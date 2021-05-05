@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-namespaces-organize-code.4-multi-file-namespaces
+title: Organize code by using multi-file namespaces
+metadata:
+  title: Organize code by using multi-file namespaces
+  description: Learn how to organize code by using multi-file namespaces.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-multi-file-namespaces.md)]

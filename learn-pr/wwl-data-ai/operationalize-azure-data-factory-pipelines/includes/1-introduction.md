@@ -1,5 +1,4 @@
-When using Azure Data Factory to build your data integration solutions, it is important to have effective, scalable methods to monitor your pipeline runs and enable team collaboration. Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to ensure
-
+When using Azure Data Factory to build your data integration solutions, it is important to have effective, scalable methods to monitor your pipeline runs and enable team collaboration. Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to also support the monitoring of your pipelines.
 ## Learning objectives
 
 In this module, you will:

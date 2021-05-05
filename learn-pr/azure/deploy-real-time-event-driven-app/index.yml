@@ -1,27 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-event-driven-real-time
 metadata:
-  title: Build a real-time event-driven Java solution on Azure
-  description: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
+  title: Build a real-time event-driven Java solution in Azure
+  description: Send event-based telemetric data in real time to Azure Cosmos DB by using Azure Functions and an event hub.
   ms.date: 02/01/2021
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a real-time event-driven Java solution on Azure
-summary: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
+title: Build a real-time event-driven Java solution in Azure
+summary: Send event-based telemetric data in real time to Azure Cosmos DB by using Azure Functions and an event hub.
 abstract: |
   By the end of this module, you'll be able to:
   - Explain event-driven and real-time workloads.
   - Create a scenario with simulated telemetric data.
-  - Send the telemetric data with an Azure Function to an Event Hub.
-  - Connect another function this Event Hub to trigger a storage in Cosmos DB.
-  - Have a look at the metrics in Application Insights to measure the performance and identify potential bottle necks.
+  - Send the telemetric data with an Azure function to an event hub.
+  - Connect another function to this event hub to trigger storage in Azure Cosmos DB.
+  - Have a look at the metrics in Application Insights to measure the performance and identify potential bottlenecks.
 prerequisites: | 
   - An Azure subscription
   - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
   - Azure Functions Core Tools (2.6.66 or later)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-event-driven-real-time.svg
 levels:
 - intermediate
 roles:

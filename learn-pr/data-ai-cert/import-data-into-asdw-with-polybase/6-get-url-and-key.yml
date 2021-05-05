@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.import-data-into-asdw-with-polybase.get-url-and-key
-title: Exercise - retrieve the URL and access key for the storage account
+title: Exercise - Retrieve the URL and access key for the storage account
 metadata:
-  title: Exercise - retrieve the URL and access key for the storage account
-  description: Exercise - retrieve the URL and access key for the storage account
+  title: Exercise - Retrieve the URL and access key for the storage account
+  description: Exercise - Retrieve the URL and access key for the storage account
   ms.date: 01/31/2019
   author: wwlpublish
   ms.author: chtestao

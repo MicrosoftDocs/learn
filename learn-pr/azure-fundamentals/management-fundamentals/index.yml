@@ -4,8 +4,8 @@ metadata:
   title: Choose the best tools for managing and configuring your Azure environment (AZ-900)
   description: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best tools for managing and configuring your Azure environment

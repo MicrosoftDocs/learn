@@ -16,14 +16,17 @@ Let's start by creating a storage account. Later, you'll configure the app to st
 
 1. Select **Storage**, search for **Storage account**, and then select **Create**.
 
-1. In the **Create storage account** wizard, enter the following values.
+1. In the **Create storage account** wizard, enter the following values in the **Basics** tab, under the **Project details** section:
 
    | Field | Value |
    | --- | --- |
-   | In the **Basics** tab, under **Project details** section: | 
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Under **Instance details** section: | 
+
+1. Enter the following values in the **Basics** tab, under the **Instance details** section:
+
+   | Field | Value |
+   | --- | --- |
    | Storage account name | Use a globally unique value. For example, "lensesstorage" with your own initials postfixed. |
    | Location | Choose a region near you from the previous list. |
    | Performance | Standard |
@@ -72,6 +75,13 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
+1. Add the necessary packages to your app for Microsoft.Azure.KeyVault.
+
+   ```bash
+   dotnet add package Microsoft.Azure.KeyVault.Core
+   dotnet restore
+   ```
+
 1. Enter the following command to start the code editor.
 
    ```bash
@@ -82,15 +92,17 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file.
+
+1. In the **Files** list, double-click **LensesApp.csproj**.
+
+1. Replace the value of the **TargetFramework** element with `netcoreapp3.1`.
+
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
 We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses, and then add our own lens entry.
-
-1. Install the specified framework and/or SDK at:
-
-    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. To create and populate a table, run this command.
 
@@ -218,21 +230,22 @@ Next, create an Azure Cosmos DB database in your Azure subscription, and select 
 
 1. Select **Databases**, and then select **Azure Cosmos DB**.
 
-1. In the **Create Azure Cosmos DB Account** wizard, complete the following fields.
+1. In the **Create Azure Cosmos DB Account** wizard, enter the following values in the **Basics** tab, under the **Project details** section:
 
    | Field | Value |
    | --- | --- |
-   | On the **Basics** tab, under **Project Details**: |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Under **Instance Details** section: | 
+
+1. Enter the following values in the **Basics** tab, under the **Instance details** section:
+
+   | Field | Value |
+   | --- | --- |
    | Account Name | Use a globally unique value. For example, "lensesdb" with your own initials postfixed. |
    | API | Azure Table |
    | Location | Choose a region near you from the dropdown. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
-
-   ![Create a Cosmos database](../media/3-create-cosmos-db.png)
 
 1. Ensure your settings are correct, and select **Review + create**.
 

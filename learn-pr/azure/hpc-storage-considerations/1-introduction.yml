@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This module provides a baseline understanding of storage considerations to take into account when you're running high-performance computing workloads in Azure.
+  ms.date: 12/29/2020 
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

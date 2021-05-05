@@ -4,8 +4,8 @@ metadata:
   title: Build a cloud governance strategy on Azure (AZ-900)
   description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a cloud governance strategy on Azure

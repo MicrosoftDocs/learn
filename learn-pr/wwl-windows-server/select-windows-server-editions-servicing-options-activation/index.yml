@@ -3,7 +3,7 @@ uid: learn.wwl.select-windows-server-editions-servicing-options-activation
 metadata:
   title: Select Windows Server editions, servicing options, and activation
   description: "Select Windows Server editions, servicing options, and activation"
-  ms.date: 01/18/2021
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Microsoft Hyper-V and basic server virtualization concepts.
   - Automation and monitoring.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/select-windows-server-editions-servicing-options-and-activation.svg
 levels:
 - intermediate
 roles:

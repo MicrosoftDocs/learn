@@ -4,7 +4,7 @@ In this exercise, you add a parameter to define the Azure storage account name d
 
 Here, you make your ARM template more flexible by adding parameters that can be set at runtime. Create a parameter for the ```storageName``` value.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the braces in the *parameters* attribute. ```"parameters":{},```
+1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the *parameters* attribute. ```"parameters":{},```
 1. Select <kbd>Enter</kbd>, and then enter **par**. You see a list of related snippets. Choose **arm-param**. It adds a generic parameter to the template. It will look like this:
 
     ```json

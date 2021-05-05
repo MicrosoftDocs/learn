@@ -4,8 +4,8 @@ metadata:
   title: Explore Azure Storage services (AZ-900)
   description: Learn about the different storage options that are available in Azure Storage. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Storage services

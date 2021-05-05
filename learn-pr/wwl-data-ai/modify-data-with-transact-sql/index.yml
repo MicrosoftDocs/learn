@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.modify-data-with-transact-sql
+metadata:
+  title: Modify data with T-SQL
+  description: "Modify data with T-SQL"
+  ms.date: 05/05/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Modify data with T-SQL
+summary: Learn how to use Transact-SQL to insert, update, and delete data in a database.
+abstract: |
+  After completing this module, you will be able to:
+  - Insert data into a table
+  - Generate automatic values
+  - Update data in a table
+  - Delete data from a table
+  - Merge data based on multiple tables
+prerequisites: |
+  Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve data from tables in a database.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure-sql-database
+- sql-server
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+units:
+- learn.wwl.modify-data-with-transact-sql.introduction
+- learn.wwl.modify-data-with-transact-sql.insert-data
+- learn.wwl.modify-data-with-transact-sql.automatic-values
+- learn.wwl.modify-data-with-transact-sql.update-data
+- learn.wwl.modify-data-with-transact-sql.delete-data
+- learn.wwl.modify-data-with-transact-sql.merge-data
+- learn.wwl.modify-data-with-transact-sql.exercise-modify-data
+- learn.wwl.modify-data-with-transact-sql.knowledge-check
+- learn.wwl.modify-data-with-transact-sql.summary
+badge:
+  uid: learn.wwl.modify-data-with-transact-sql.badge

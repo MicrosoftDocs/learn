@@ -37,7 +37,7 @@ After you've set up your breakpoints and started your app, new information panel
 1. Variables state
 1. Watched variables state
 1. Current call stack
-1. Call stack
+1. Breakpoints
 1. Execution controls
 1. Current execution step
 1. Debug console

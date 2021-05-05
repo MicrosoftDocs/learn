@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-develop-typed-functions.9-summary-resources
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: Summary and resources.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary-resources.md)]

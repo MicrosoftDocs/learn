@@ -5,8 +5,8 @@ metadata:
   title: Introduction to face lists
   description: "Get an introduction to the concept of face lists"
   ms.date: 10/14/2020
-  author: gerryaobrien
-  ms.author: gerryo
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -3,12 +3,12 @@ uid: learn.manage-hybrid-infrastructure-with-azure-arc
 metadata:
   title: Manage hybrid infrastructure with Azure Arc
   description: Learn how to work with Azure Arc enabled servers and describe Azure Arc enabled Kubernetes.
-  brand: azure
   ms.date: 12/14/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Manage hybrid infrastructure with Azure Arc
 summary:  |
   Learn how to work with Azure Arc enabled servers and describe Azure Arc enabled Kubernetes.

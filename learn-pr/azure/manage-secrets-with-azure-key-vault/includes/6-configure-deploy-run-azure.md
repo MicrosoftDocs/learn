@@ -71,7 +71,7 @@ az webapp config appsettings set \
 
 ## Enable managed identity
 
-Enabling managed identity on an app is a one-liner &mdash. To enable it on your app, run this Command.
+Enabling managed identity on an app is a one-liner &mdash. To enable it on your app, run this command.
 
 ```azurecli
 az webapp identity assign \

@@ -1,4 +1,4 @@
-Clients and applications must be authenticated to connect to an Azure Blob storage account. There are several ways to do this. The easiest approach for trusted applications is to use the _storage key_. Because we're managing the import process, let's use this approach.
+Clients and applications must be authenticated to connect to an Azure Blob Storage account. There are several ways to do this. The easiest approach for trusted applications is to use the _storage key_. Because we're managing the import process, let's use this approach.
 
 We need two pieces of information to connect PolyBase to the Azure Storage account:
 
@@ -12,15 +12,17 @@ Use the Azure portal to get both of these values.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the storage account we've previously created, under **Settings**, select **Access keys**.
+1. In the storage account we've previously created, in the left menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears.
 
-1. On the **Access keys** pane, select **Show keys**, and copy the value of **key1** by selecting the *Copy to clipboard* icon at the end of the field. Save it to a temporary file, for example in Notepad. The value is used in the next unit.
+1. Select **Show keys**, and copy the value of **key1** by selecting the *Copy to clipboard* icon at the end of the field. Save it to a temporary file, for example in Notepad. The value is used in the next unit.
 
     ![Getting the access key](../media/6-get-access-key.png)
 
-1. Next, go to your blob container by selecting the **Containers** section of the storage account under the **Blob service** section in the nav bar. Select the **data-files** container.
+1. Next, go to your blob container. In the middle menu pane, under **Data storage**, select **Containers**. The **Containers** pane appears.
 
-1. Select **Properties** under the **Settings** section in the nav bar.
+1. Select the **data-files** container.
+
+1. Select **Properties** under the **Settings** section in the left menu pane.
 
 1. Copy the **URL** to the container. It should be something like `https://demodwstorage.blob.core.windows.net/data-files`.
 

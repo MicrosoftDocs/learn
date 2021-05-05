@@ -63,7 +63,7 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Expand the **content** permissions.
 
-1. Select **Content.DeletegratedReader** and **Content.DelegatedWriter.**
+1. Select **Content.DelegatedReader** and **Content.DelegatedWriter.**
 
 1. Select **Add Permission.**
 
@@ -132,5 +132,4 @@ The Unified labeling scanner can be used for different operational scenarios, so
 
 [Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
 
-[Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
 
