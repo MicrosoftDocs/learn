@@ -21,7 +21,7 @@ TODO: add your bulleted list of key things covered
 * TODO
 * TODO
 * TODO
-
+https://azure.microsoft.com/en-us/blog/announcing-azure-api-management-for-serverless-architectures/
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
     Goal: Lead-in to the criteria discussion.

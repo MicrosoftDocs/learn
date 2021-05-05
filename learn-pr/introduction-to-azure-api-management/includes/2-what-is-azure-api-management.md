@@ -70,7 +70,7 @@ Azure API Management is a cloud service that gives you a platform for publishing
 - Developer portal
 
 > [!IMPORTANT]
-> Note that Azure API Management does *not* host your actual APIs. Your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or front end for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure while leaving your deployed backend APIs untouched.
+> Note that Azure API Management does *not* host your actual APIs. Your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure while leaving your deployed backend APIs untouched.
 
 :::image type="content" source="../media/2-what-is-azure-api-management.png" alt-text="Diagram depicting multiple APIs all using the Azure API Management gateway, which routes each call to the appropriate backend server. The diagram also depicts the Azure API Management administrative interface and developer portal.":::
 

@@ -47,17 +47,17 @@ quiz:
     - content: "Administration interface"
       isCorrect: false
       explanation: "Incorrect. You use the Azure API Management administration interface to set rate limits, not to enforce them."
-  - content: ""
+  - content: "If your API development team wants to make a minor change to an API, which of the following is the best way to handle such a change?"
     choices:
-    - content: ""
+    - content: "API version"
+      isCorrect: false
+      explanation: "Incorrect. You should only use versions for relatively major or breaking changes to the API."
+    - content: "API product"
+      isCorrect: false
+      explanation: "Incorrect. A product is a group of APIs and is not related to making changes to APIs. "
+    - content: "API revision"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct. You use revisions for relatively minor or non-breaking changes to the API."
   - content: ""
     choices:
     - content: ""
