@@ -131,7 +131,8 @@ Select the **Wait Statistics** tab to view the corresponding visualizations on w
 
 ## Performance Recommendations
 
-The Performance Recommendations feature identifies opportunities to improve workload performance. Performance Recommendations provides you with recommendations for creating new indexes that have the potential to improve the performance of your workloads. To produce index recommendations, the feature takes into consideration various database characteristics, including its schema and the workload as reported by Query Store
+The Performance Recommendations feature analyzes workloads across your server to identify indexes with the potential to improve performance.
+Open Performance Recommendations from the **Intelligent Performance** section of the menu bar on the Azure portal page for your MySQL server.
 
 > [!TIP]
 > For more information on Database Monitoring, see the **Summary** unit at the end of this training.
