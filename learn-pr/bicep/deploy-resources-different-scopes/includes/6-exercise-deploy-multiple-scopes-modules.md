@@ -1,28 +1,22 @@
-2. Create a new Bicep file, which will run at resource group scope.
-3. Add the second Bicep file as a module, with a target scope of the resource group created earlier.
-4. Deploy the Bicep template.
-
 TODO intro
 
 ## Create a resource group
 
-TODO intro
+1. In the *main.bicep* file in Visual Studio Code, add the following variable definition under the current variable definitions:
 
-1. In the *main.bicep* file in Visual Studio Code, add the following resource definition at the bottom of the file:
+   :::code language="bicep" source="code/modules/virtualNetwork.bicep" range="8" :::
+
+1. Add the following resource definition at the bottom of the file:
 
    :::code language="bicep" source="code/6-template.bicep" range="51-54" :::
 
-   TODO describe
-
-1. Add the following variable definition under the current variable definitions:
-
-   :::code language="bicep" source="code/modules/virtualNetwork.bicep" range="8" :::
+   Notice that you're defining the resource group just like you would another resource. A resource group is a subscription-scoped resource that can be deployed and managed in subscription-scope Bicep files.
 
 1. Save the changes to the file.
 
 ## Add a module to create a virtual network
 
-TODO intro
+Next, you will create a Bicep module for the R&D team's virtual network. The resources in the module will be deployed into the resource group later in this exercise.
 
 1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *virtualNetwork.bicep*. Save the file.
 
@@ -30,23 +24,35 @@ TODO intro
 
    :::code language="bicep" source="code/modules/virtualNetwork.bicep" :::
 
+   Notice that you haven't specified a `targetScope` for this module. You don't need to specify a target scope when the Bicep file is targeting a resource group.
+
 1. Save the changes to the file.
 
 ## Use the module in the subscription deployment
 
-TODO intro
+Now you are ready to tell Bicep to deploy the module into the resource group.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following parameter definitions underneath the `targetScope` line:
 
-   :::code language="bicep" source="code/modules/virtualNetwork.bicep" range="3-4" :::
+   :::code language="bicep" source="code/6-template.bicep" range="3-4" :::
+
+   These parameters make our template reusable, so anytime our R&D team needs a new subscription we can create a virtual network with a unique name and IP address range.
 
 1. At the bottom of the file, add the following module definition:
 
-   :::code language="bicep" source="code/modules/virtualNetwork.bicep" range="56-63" :::
+   :::code language="bicep" source="code/6-template.bicep" range="56-63" :::
 
-### Deploy the template to Azure
+   Notice that you are explicitly specifying the `scope` for the module. Bicep understands that the resources within the module should be deployed into the resource group created earlier in the templates.
 
-The following code deploys the template to Azure. You'll see a successful deployment.
+## Verify your template
+
+Your *main.bicep* file should look like the following:
+
+:::code language="bicep" source="code/6-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
+
+## Deploy the template to Azure
 
 ::: zone pivot="cli"
 
@@ -76,18 +82,20 @@ Deploy the template by using Azure PowerShell commands in the terminal.
 ```azurepowershell
 $templateFile = 'main.bicep'
 $today = Get-Date -Format 'MM-dd-yyyy'
-$deploymentName = "sub-scope-$Today"
+$deploymentName = "sub-scope-$today"
 $virtualNetworkName = 'rnd-vnet-001'
 $virtualNetworkAddressPrefix = '10.0.0.0/24'
 
 New-AzSubscriptionDeployment `
-  -Name $DeploymentName `
+  -Name $deploymentName `
   -Location westus `
-  -TemplateFile $TemplateFile `
+  -TemplateFile $templateFile `
   -virtualNetworkName $virtualNetworkName `
   -virtualNetworkAddressPrefix $virtualNetworkAddressPrefix
 ```
 
 ::: zone-end
 
-TODO notice you are passing parameters
+Notice that you are passing in values for the `virtualNetworkName` and `virtualNetworkAddressPrefix` parameters. When another R&D team asks you to prepare a subscription for them, you'll be able to change these values to give them their own virtual network.
+
+The deployment might take a minute or two to complete, and then you'll see a successful deployment.

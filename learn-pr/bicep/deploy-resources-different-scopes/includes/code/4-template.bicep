@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
-var policyDefinitionName = 'DenyGSeriesVMs'
-var policyAssignmentName = 'DenyGSeriesVMs'
+var policyDefinitionName = 'DenyFandGSeriesVMs'
+var policyAssignmentName = 'DenyFandGSeriesVMs'
 
 resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
   name: policyDefinitionName
