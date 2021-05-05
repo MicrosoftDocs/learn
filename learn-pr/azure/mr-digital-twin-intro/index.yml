@@ -2,14 +2,14 @@
 uid: learn.mr-digital-twins-intro
 metadata:
   title: Introduction to Mixed Reality, Azure Digital Twin and Unity 
-  description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
+  description: Import 
   author: Sean-Kerawala
   ms.author: "sekerawa"
   ms.date: "5/5/2021"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Mixed Reality, Azure Digital Twin and Unity
-summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
+summary: Import
 abstract: |
   By the end of this module you will be able to:
   - Understand the breadth of Mixed Reality use cases for industry
