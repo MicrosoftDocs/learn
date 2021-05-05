@@ -28,6 +28,6 @@ For More information on Azure Spring Cloud, see [Azure Spring Cloud homepage](ht
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
 
-For more information about using Monitoring with Azure Database for MySQL, see [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/en-us/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
+For more information about using Monitoring with Azure Database for MySQL, see [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
 
-For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/en-us/java/api/overview/azure/core-tracing-opentelemetry-readme?view=azure-java-preview&WT.mc_id=java-00000-ropreddy).
+For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/java/api/overview/azure/core-tracing-opentelemetry-readme?view=azure-java-preview&WT.mc_id=java-00000-ropreddy).
