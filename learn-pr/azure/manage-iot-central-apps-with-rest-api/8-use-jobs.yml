@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.export-data
-title: Export telemetry data from your application
+uid: learn.iot.manage-iot-central-apps-with-rest-api.use-jobs
+title: Create and run jobs in your application
 metadata:
-  title: Export telemetry data from your application
-  description: Export telemetry data from your application
-  ms.date: 11/5/2019
+  title: Create and run jobs in your application
+  description: Create and run jobs in your application
+  ms.date: 03/19/2021
   author: dominicbetts
   ms.author: dobett
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/8-export-data.md)]
+  [!include[](includes/8-use-jobs.md)]
 quiz:
-  title: "Export data from IoT Central"
+  title: "Create and run jobs in your IoT Central application"
   questions:
   - content: "What types of data can you export from your IoT Central application?"
     choices:
