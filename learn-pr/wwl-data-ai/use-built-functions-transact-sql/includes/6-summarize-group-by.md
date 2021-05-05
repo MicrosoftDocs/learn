@@ -1,6 +1,6 @@
 While aggregate functions are useful for analysis, you may wish to arrange your data into subsets before summarizing it. In this section, you will learn how to accomplish this using the GROUP BY clause.
 
-## Using the GROUP BY Clause
+## Using the GROUP BY clause
 
 As you've learned, when your SELECT statement is processed, after the FROM clause and WHERE clause have been evaluated, a virtual table is created. The contents of the virtual table are now available for further processing. You can use the GROUP BY clause to subdivide the contents of this virtual table into groups of rows.
 
@@ -127,7 +127,7 @@ The clauses in a SELECT statement are applied in the following order:
 5.  SELECT
 6.  ORDER BY
 
-Column aliases are assigned in the SELECT clause, which occurs *after* the GROUP BY clause but *before* the ORDER BY clause. You can reference a column alias in the ORDER BY clause, but not in the GROUP BY clause. The following query will result in an i*nvalid column name* error:
+Column aliases are assigned in the SELECT clause, which occurs *after* the GROUP BY clause but *before* the ORDER BY clause. You can reference a column alias in the ORDER BY clause, but not in the GROUP BY clause. The following query will result in an *invalid column name* error:
 
 ```sql
 SELECT CustomerID AS Customer,

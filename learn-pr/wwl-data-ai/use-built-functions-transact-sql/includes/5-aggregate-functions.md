@@ -1,6 +1,6 @@
 T-SQL provides aggregate functions such as SUM, MAX, and AVG to perform calculations that take multiple values and return a single result.
 
-## Working with Aggregate Functions
+## Working with aggregate functions
 
 Most of the queries we have looked at operate on a row at a time, using a WHERE clause to filter rows. Each row returned corresponds to one row in the original data set.
 
@@ -16,7 +16,7 @@ When working with aggregate functions, you need to consider the following points
 
 To extend beyond the built-in functions, SQL Server provides a mechanism for user-defined aggregate functions via the .NET Common Language Runtime (CLR). That topic is beyond the scope of this module.
 
-## Built-in Aggregate Functions
+## Built-in aggregate functions
 
 As mentioned, Transact-SQL provides many built-in aggregate functions. Commonly used functions include:
 
@@ -226,7 +226,7 @@ FROM Sales.SalesOrderHeader;
 
 The MIN and MAX functions can also be used with date data, to return the earliest and latest chronological values. However, AVG and SUM can only be used for numeric data, which includes integers, money, float and decimal datatypes.
 
-## Using DISTINCT with Aggregate Functions
+## Using DISTINCT with aggregate functions
 
 You should be aware of the use of DISTINCT in a SELECT clause to remove duplicate rows. When used with an aggregate function, DISTINCT removes duplicate values from the input column before computing the summary value. DISTINCT is useful when summarizing unique occurrences of values, such as customers in the orders table.
 
@@ -239,7 +239,7 @@ FROM Sales.SalesOrderHeader;
 
 COUNT(&lt;some\_column&gt;) merely counts how many rows have some value in the column. If there are no NULL values, COUNT(&lt;some\_column&gt;) will be the same as COUNT(\*). COUNT (DISTINCT &lt;some\_column&gt;) counts how many different values there are in the column.
 
-## Using Aggregate Functions with NULL
+## Using aggregate functions with NULL
 
 It is important to be aware of the possible presence of NULLs in your data, and of how NULL interacts with T-SQL query components, including aggregate function. There are a few considerations to be aware of:
 
