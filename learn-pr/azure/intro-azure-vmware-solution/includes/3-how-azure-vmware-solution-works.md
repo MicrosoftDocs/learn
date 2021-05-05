@@ -20,6 +20,9 @@ Create operational consistency for admins as you continue to use VMware for reso
 
 Access to vSphere, VMware HCX, and NSX-T are enabled during the Private Cloud deployment process. Credentials are registered in Azure connect to the private cluster hosts.
 
+### Continuity of Operations
+Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure.
+
 ### Seamless integration for Azure infrastructure resources 
 Easily scale and manage your infrastructure as your business needs it through the Azure portal and native tools. Add new nodes as required to increase compute and storage during peak times. And delete nodes seasonally when infrastructure demands are lower. 
 
@@ -62,8 +65,40 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
 
-### Continuity of Operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure.
+
+### Private cloud networking
+The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
+
+- Azure ExpressRoute
+- VPN connections
+- Azure Virtual WAN
+
+These services require specific network address ranges and firewall ports for enabling the services. 
+
+You can use an existing ExpressRoute Gateway to connect to Azure VMware Solution as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute. You must have ExpressRoute Global Reach since the ExpressRoute Gateway doesn't provide transitive routing between its connected circuits. 
+
+ExpressRoute Global Reach is used to connect private clouds to on-premises environments. The connection requires a virtual network with an ExpressRoute circuit to on-premises in your subscription.
+There are two ways to interconnectivity in the Azure VMware Solution private cloud:
+
+- Basic Azure-only interconnectivity lets you manage and use your private cloud with only a single virtual network in Azure. This implementation is best suited for Azure VMware Solution evaluations or implementations that don't require access from on-premises environments.
+
+- Full on-premises to private cloud interconnectivity extends the basic Azure-only implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds.
+
+During the deployment of a private cloud the private networks for management, provisioning, and vMotion get created. These private networks will be used to access vCenter and NSX-T Manager and virtual machine vMotion or deployment.
+
+
+### Private cloud storage
+
+Azure VMware Solution uses native fully configured all-flash vSAN storage, local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default. De-duplication and compression are enabled on the vSAN datastore by default
+
+All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private cloud deployment and are available for use immediately.
+
+Policy is created on the vSphere cluster and applied to the vSAN datastore, determines how the VM storage objects are provisioned and allocated within the datastore to guarantee the required level of service. To maintain SLA, 25% spare capacity must be maintained on the vSAN datastore. 
+You can use Azure storage services in workloads running in your private cloud. The Azure storage services include:
+- Storage Accounts 
+- Table Storage
+- Blob Storage
+
 
 
  

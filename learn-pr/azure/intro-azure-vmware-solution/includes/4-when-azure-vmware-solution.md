@@ -18,7 +18,7 @@ With the Azure VMware Solution, you can run your VMware estate—or a single app
 - Consumption of Azure services
 
 
-## Customer Success story
+## Customer success story
 
 Azure VMware Solution has provided organizations across different industries a way to rapidly scale their infrastructure without large upfront costs. This flexibility can provide an edge to organizations. 
 
