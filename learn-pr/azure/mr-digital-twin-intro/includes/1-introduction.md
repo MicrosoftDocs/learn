@@ -1,4 +1,4 @@
-The HoloLens 2 is Microsoft's flagship Mixed Reality device to host unique and immersive experiences that connect data, processes, and actions with people.  In this module, you will explore practical ways to visualize and experience data in a 3D augmented reality environment.
+The HoloLens 2 is Microsoft's flagship Mixed Reality device to host unique and immersive experiences that connect data, processes, and actions with people.  In this module, you'll explore practical ways to visualize and experience data in a 3D augmented reality environment.
 
 This module introduces you to the basics of Mixed Reality, Azure Digital Twin, and Unity.  It outlines how to get started with Azure subscriptions and accounts, and how to set up a Unity development environment.
 
@@ -9,7 +9,6 @@ In this module, you'll learn how to:
 - Describe a Digital Twin and summarize how they can be used in business settings
 - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
 - Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
-
 
 ## Prerequisites
 
