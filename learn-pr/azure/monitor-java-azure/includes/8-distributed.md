@@ -2,17 +2,19 @@ In this unit, we look at Monitoring the entire solution.
 
 # Introduction
 
+Most cloud deployments are based on distributed architectures where components are distributed across various services. Troubleshooting monolithic applications often requires only one or two lenses—the application and the database. With distributed architectures, troubleshooting is complex and challenging because of various factors. This unit describes some of the tools to help with those challenges.
+
 ## Log analytics
 
 Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces. The workspace defines the geographic location of the data, access rights defining which users can access data, and configuration settings such as the pricing tier and data retention.  
 
 You must create at least one workspace to use Azure Monitor Logs. A single workspace may be sufficient for all of your monitoring data, or may choose to create multiple workspaces depending on your requirements. For example, you might have one workspace for your production data and another for testing.
 
-## Log queries
+### Log queries
 
 Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
 
-## Analyze the logs in Log Analytics
+### Analyze the logs in Log Analytics
 
 After your application is properly set up, your application console log will be streamed to Log Analytics. The structure enables efficient query in Log Analytics.
 
@@ -50,7 +52,7 @@ Log Analytics is part of Azure Monitor, which is integrated into Azure Spring Cl
     | limit 50
     ```
 
-## Analyze the logs
+### Analyze the logs
 
 Application logs provide critical information and verbose logs about your application's health, performance, and more. In the next sections are some  queries to help you understand your application's current and past states.
 
@@ -95,19 +97,22 @@ Monitoring data about your servers helps you troubleshoot and optimize for your 
 
 ## Metrics
 
-## Query Store
+Azure Database for MySQL provides tools and methods you can use to monitor usage easily, add, or remove resources (such as CPU, memory, or I/O), troubleshoot potential problems, and help improve the performance of a database. You can monitor performance metrics regularly to see the average, maximum, and minimum values for various time ranges.
 
-Query Store is a feature that keeps track of query performance over time including query runtime statistics and wait events
+## Query Store and Performance Insights
 
-## Query Performance Insight
+Query Store is a feature that keeps track of query performance over time including query runtime statistics and wait events.
 
-Query Performance Insight works in conjunction with Query Store to provide visualizations accessible from the Azure portal. These charts enable you to identify key queries that impact performance. Query Performance Insight is accessible in the Intelligent Performance section of your Azure Database for MySQL server's portal page.
+Query Performance Insight works with Query Store to provide visualizations accessible from the Azure portal. These charts enable you to identify key queries that affect performance. Query Performance Insight is accessible in the Intelligent Performance section of your Azure Database for MySQL server's portal page.
 
 Query Performance Insight helps you to quickly identify what your longest running queries are, how they change over time, and what waits are affecting them.
 
 ## Performance Recommendations
 
 The Performance Recommendations feature identifies opportunities to improve workload performance. Performance Recommendations provides you with recommendations for creating new indexes that have the potential to improve the performance of your workloads. To produce index recommendations, the feature takes into consideration various database characteristics, including its schema and the workload as reported by Query Store
+
+> [!TIP]
+> For more information on Database Monitoring, see the Summary unit at the end of this training.
 
 # OpenTelemetry
 
@@ -120,6 +125,9 @@ For legacy environments, the OpenTelemetry supports many popular open-source wir
 ## Integration with Azure
 
 Once OpenTelemetry data has been exported to Azure Monitor, you can access Application Insights and distributed traces and metrics.
+
+> [!TIP]
+> For more information on OpenTelemetry, see the Summary unit at the end of this training.
 
 # UI monitoring
 
