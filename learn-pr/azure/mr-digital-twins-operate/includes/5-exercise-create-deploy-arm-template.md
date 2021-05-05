@@ -1,29 +1,29 @@
-Create an ARM template to create, configure, and deploy Azure Services.  This assumes Azure CLI has been installed and can be run from the command prompt or PowerShell.  Also, this assumes that you have your Azure account set up and appropriate AD privileges to create resource groups and resources.
+Create an ARM template to create, configure, and deploy Azure Services.  This assumes Azure CLI has been installed and can be run from the command prompt or PowerShell.  Also, this assumes you have your Azure account set up and appropriate AD privileges to create resource groups and resources.
 
 The ARM Template logic has been integrated into a Visual Studio solution that drives a data simulator.  
 
-## Download or pull the Visual Studio Solution directly from the Github repository
+## Download or pull the Visual Studio Solution directly from the GitHub repository
 
-1.	Download the repository from Github or pull it directly using Git management tools.
+1.	Download the repository from GitHub or pull it directly using Git management tools.
 2.	Unzip the repository (if necessary) 
 
-## Login to Azure using Azure CLI
+## Log in to Azure using Azure CLI
 
-1.	Locate the **azuredeploy.bicep** script that has been created for you.  Typically, this resides in the root of the repository folder that you just unzipped or pulled.
+1.	Locate the **azuredeploy.bicep** script that has been created for you.  Typically, this is in the root of the repository folder that you just unzipped or pulled.
 2.	Start **Windows PowerShell** from the start menu.  All Azure CLI commands will be executed in your PowerShell console 
 i.	Windows Command Prompt can be used, but syntax in this module follows PowerShell requirements.
 3.	Change the current path to the location of the **azuredeploy.bicep** script identified in step 1.
 
 `cd <path for azuredeploy.bicep>`
 
-4.	Login to Azure by typing **az login** in the shell window and pressing **Enter**.  This will spawn a browser window and prompt for authentication. 
-i.	If the CLI fails to spawn the appropriate browser window, use the device code flow in your PowerShell window **az login --use-device-code**.  You will be returned a unique code.  [Open the device login page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal, into the website.
+4.	Log in to Azure by typing **az login** in the shell window and pressing **Enter**.  This will spawn a browser window and prompt for authentication. 
+i.	If the CLI fails to spawn the appropriate browser window, use the device code flow in your PowerShell window **az login--use-device-code**.  You'll be returned a unique code.  [Open the device login page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal, into the website.
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Set reusable variables in PowerShell
 
-1.	Set the project name variable, keeping it to a maximum of 14 characters, all lowercase, and no special characters (dashes permitted). This is the overall unique name for your Azure resources.  Additional random characters will be appended to the name.
+1.	Set the project name variable, keeping it to a maximum of 14 characters, all lowercase, and no special characters (dashes permitted). This is the overall unique name for your Azure resources.  Extra random characters will be appended to the name.
 `$projectname="myproj"`
 2.	Set the App Registration name, keeping it to a maximum of 14 characters.  This is the name of the application registration for your HoloLens app
 `$appreg="myappreg"`
@@ -57,7 +57,7 @@ i.	If the CLI fails to spawn the appropriate browser window, use the device code
 	
 ## Deploy the ARM template to the newly created Azure Resource Group
 
-1.	Deploy the supplied .bicep file to your Resource group and pipe the output to a text file.  This process can take several minutes to complete.
+1.	Deploy the supplied.bicep file to your Resource group and pipe the output to a text file.  This process can take several minutes to complete.
 
 `az deployment group create -f azuredeploy.bicep -g ${projectname}-rg --parameters projectName=${projectname} userId=${userid} appRegObjectId=${objectid} >> ARM_deployment_out.txt`
 
