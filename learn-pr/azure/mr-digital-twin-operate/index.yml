@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twins-operate
+uid: learn.mr-digital-twin-operate
 metadata:
   title: Connect operating data to Azure Digital Twin  
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
@@ -39,24 +39,20 @@ products:
 - azure
 - azure-cloud-services
 - azure-cognitive-services
-- dynamics-365
-- dynamics-guides
-- dynamics-remote-assist
 - windows
 - windows-mixed-reality
-- mrtk
 - hololens
 units:
-- learn.mr-digital-twins-operate.1-introduction
-- learn.mr-digital-twins-operate.2-connecting-telemetry-data
-- learn.mr-digital-twins-operate.3-arm-templates
-- learn.mr-digital-twins-operate.4-exercise-add-prefab
-- learn.mr-digital-twins-operate.5-exercise-create-deploy-arm-template
-- learn.mr-digital-twins-operate.6-connect-stream-data
-- learn.mr-digital-twins-operate.7-exercise-create-ui
-- learn.mr-digital-twins-operate.8-visualize-signalr
-- learn.mr-digital-twins-operate.9-deploy
-- learn.mr-digital-twins-operate.10-knowledge-check
-- learn.mr-digital-twins-operate.11-summary
+- learn.mr-digital-twin-operate.1-introduction
+- learn.mr-digital-twin-operate.2-connecting-telemetry-data
+- learn.mr-digital-twin-operate.3-arm-templates
+- learn.mr-digital-twin-operate.4-exercise-add-prefab
+- learn.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
+- learn.mr-digital-twin-operate.6-connect-stream-data
+- learn.mr-digital-twin-operate.7-exercise-create-ui
+- learn.mr-digital-twin-operate.8-visualize-signalr
+- learn.mr-digital-twin-operate.9-deploy
+- learn.mr-digital-twin-operate.10-knowledge-check
+- learn.mr-digital-twin-operate.11-summary
 badge:
-  uid: learn.mr-digital-twins-operate.badge
+  uid: learn.mr-digital-twin-operate.badge
