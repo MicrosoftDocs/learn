@@ -43,3 +43,7 @@ HTTPS is an important part of modern, professional web APIs. It relies on end-to
 ### **Benefit**: Share code & knowledge with .NET apps
 
 Leverage your .NET skills and ecosystem to share logic from your web API to other apps built with .NET including mobile, web, desktop, services, and more.
+
+## Testing web APIs using the .NET HTTP REPL
+
+When you are developing a traditional website, you will usually view and test your work in a web browser. Web APIs accept and return data rather than HTML, so a web browser isn't the best web API testing tool. One of the easiest options to use for exploring and interacting with web APIs is the **.NET HTTP REPL**. REPL stands for **R**ead-**E**val-**P**rint **L**oop. It's a simple and popular way to a build interactive command-line environments. In the next section, you will create a simple web API, then interact with it using the .NET HTTP REPL.
