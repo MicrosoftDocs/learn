@@ -1,4 +1,4 @@
-Our pizza service supports **C**reate, **R**ead, **U**pdate, **D**elete (CRUD) opperations for a list of pizzas. These operations are performed using HTTP action verbs, which are mapped using  ASP.NET Core attributes. As you've seen, the HTTP GET action verb is used to retrieve one or more items from a service. Such an action is annotated with the `[HttpGet]` attribute.
+Our pizza service supports **C**reate, **R**ead, **U**pdate, **D**elete (CRUD) operations for a list of pizzas. These operations are performed using HTTP action verbs, which are mapped using  ASP.NET Core attributes. As you've seen, the HTTP GET action verb is used to retrieve one or more items from a service. Such an action is annotated with the `[HttpGet]` attribute.
 
 The following table shows the mapping of the four operations we are implementing for our pizza service:
 
@@ -25,7 +25,7 @@ public IActionResult Create(Pizza pizza)
 }
 ```
 
-The `[HttpPost]` attribute will map HTTP POST requests sent to http://localhost:5000/pizza the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method will return an `IActionResult` response which will let the client know if the request succeeded and the ID of the newly created pizza. This is done using standard HTTP status codes, so it will easily integrate with clients regardless of the language or platform they're running on.
+The `[HttpPost]` attribute will map HTTP POST requests sent to http://localhost:5000/pizza the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method will return an `IActionResult` response, which will let the client know if the request succeeded and the ID of the newly created pizza. This is done using standard HTTP status codes, so it will easily integrate with clients regardless of the language or platform they're running on.
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
