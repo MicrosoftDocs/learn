@@ -22,7 +22,10 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
     This command creates the files for a basic web API project, along with a C# project file named **ContosoPizza.csproj** that will return a list of weather forecasts. 
 
-    The `--no-https` flag creates an app that will run without an HTTPS certificate, to keep things simple for deployment.
+    The `--no-https` flag creates an app that will run without an HTTPS certificate, to keep things as simple as possible for local development.
+
+    > [!IMPORTANT]
+    > Before doing any production work with web APIs, and definitely before deploying to production, you will want to [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos). This will help keep your API communications private, as well as safeguard against tampering via *man-in-the-middle* attacks.
 
     You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 
