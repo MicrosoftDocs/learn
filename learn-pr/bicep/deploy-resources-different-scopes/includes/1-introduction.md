@@ -1,33 +1,5 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Some Azure resources are deployed outside of resource groups, and are instead deployed to subscriptions, management groups, and even to your tenant. Bicep enables you to create and configure Azure resources at these scopes. By using Bicep to deploy these kinds of resources, you'll gain the benefits of modelling your infrastructure as code across your full portfolio of Azure resources and configuration.
 
-    Goal: orient the learner to the area covered in this module
-
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your R&D team is designing a new toy as part of a top-secret project called Project Teddybear. They have asked you to create a dedicated Azure subscription for them to work within so that the rest of the company won't accidentally see any information about their project.
@@ -36,31 +8,32 @@ They plan to use virtual machines within the subscription, but to save money the
 
 You know that the R&D team has recently been given a lot of new funding, so they are likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows an Azure subscription, a policy, and a resource group containing a virtual network." border="false":::
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+In this module, you'll learn about the different scopes that Azure resources can be deployed at, and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and a resource group. In the process, you'll learn about several features of Bicep, including:
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+- How to set the scope of a Bicep file by using the `targetScope` keyword.
+- How to use modules to deploy to different scopes within one deployment.
+- How to target specific scopes by using the `resourceGroup()`, `subscription()`, and `managementGroup()` functions.
 
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to <TODO>
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this module, you'll be able to create Bicep templates that deploy at the subscription, management group, and tenant scopes. You'll also be able to create and use Bicep files that deploy across multiple scopes in a single deployment by using modules.
+
+## Prerequisites
+
+- Familiarity with creating and deploying Bicep templates.
+- Understanding of child and extension resources.
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+To follow along with the exercises in the module, you'll need:
+
+- An Azure account, with the ability to create subscription-level resources.
+- [Visual Studio Code](https://code.visualstudio.com) installed locally.
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+- Either:
+  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed locally.
+  - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps) installed locally.
+    
