@@ -4,8 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/03/2021
+  ms.date: 05/05/2021
   author: wwlpublish
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -16,14 +17,14 @@ quiz:
     choices:
     - content: "Make sure the subquery is not using SELECT * in the SELECT list."
       isCorrect: false
-      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators. You must use IN or NOT IN which allows a value to be compared to a list of values. DISTINCT prevents duplicates of individual values, but may still return many rows of results."
+      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
     - content: "Change the operator introducing the subquery to IN or NOT IN"
       isCorrect: true
-      explanation: "Correct. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators. You must use IN or NOT IN which allows a value to be compared to a list of values. DISTINCT prevents duplicates of individual values, but may still return many rows of results."
+      explanation: "Correct. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
     - content: "Add DISTINCT to the SELECT list"
       isCorrect: false
-      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators. You must use IN or NOT IN which allows a value to be compared to a list of values. DISTINCT prevents duplicates of individual values, but may still return many rows of results."
-  - content: "Which of the following statements is true about correlated subqueries?"
+      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
+  - content: "Which of the following statements is true of correlated subqueries?"
     choices:
     - content: "A correlated subquery returns a single scalar value"
       isCorrect: false

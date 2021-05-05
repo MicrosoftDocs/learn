@@ -1,6 +1,6 @@
 Previously, we looked at self-contained subqueries; in which the inner query is independent of the outer query, executes once, and returns its results to the outer query. T-SQL also supports *correlated* subqueries, in which the inner query references column in the outer query and conceptually executes once per row.
 
-## Working with Correlated Subqueries
+## Working with correlated subqueries
 
 Like self-contained subqueries, correlated subqueries are SELECT statements nested within an outer query. Correlated subqueries may also be either scalar or multi-valued subqueries. They're typically used when the inner query needs to reference a value in the outer query.
 
@@ -21,7 +21,7 @@ WHERE SalesOrderID =
 ORDER BY CustomerID, OrderDate;
 ```
 
-### Writing Correlated Subqueries
+### Writing correlated subqueries
 
 To write correlated subqueries, consider the following guidelines:
 
@@ -66,7 +66,7 @@ In the first example, the subquery must count every occurrence of each *custid* 
 
 In the second query, EXISTS returns TRUE for a **custid** as soon as a relevant order has been found in the **Sales.Orders** table. A complete accounting of each occurrence is unnecessary. Also note that with the EXISTS form, the subquery is not restricted to returning a single column. Here, we have SELECT \*. The returned columns are irrelevant because we’re only checking if any rows are returned at all, not what values are in those rows.
 
-Note: From the perspective of logical processing, the two query forms are equivalent. From a performance perspective, the database engine may treat the queries differently as it optimizes them for execution. Consider testing each one for your own usage.
+From the perspective of logical processing, the two query forms are equivalent. From a performance perspective, the database engine may treat the queries differently as it optimizes them for execution. Consider testing each one for your own usage.
 
 > [!NOTE]
 > If you're converting a subquery using COUNT(\*) to one using EXISTS, make sure the subquery uses a SELECT \* and not SELECT COUNT(\*). SELECT COUNT(\*) **always** returns a row, so the EXISTS will always return **TRUE.**

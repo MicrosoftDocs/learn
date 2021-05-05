@@ -44,7 +44,7 @@ WHERE SalesOrderID =
      FROM SalesLT.SalesOrderHeader);
 ```
 
-## Multi-Valued subqueries
+## Multi-valued subqueries
 
 A multi-valued subquery is well suited to return results using the IN operator. The following hypothetical example returns the **CustomerID**, **SalesOrderID** values for all orders placed by customers in Canada.
 
