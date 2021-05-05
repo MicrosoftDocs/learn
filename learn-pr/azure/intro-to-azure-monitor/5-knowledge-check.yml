@@ -58,7 +58,7 @@ quiz:
     - content: "Use the Log stream."
       isCorrect: false
       explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
-  - content: "What is the best way to aggregate metrics data into a single view?"
+  - content: "What is the best way to combine metrics data into a single view for reporting?"
     choices:
     - content: "Use Azure Dashboards."
       isCorrect: true

@@ -36,13 +36,7 @@ Azure Monitor uses a version of the Kusto query language that is suitable for si
 :::image type="content" source="../media/logs.png" alt-text="Depiction of log data feeding into a table display in Log Analytics":::
 
 ### Visualizations
-Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal.
-
-:::image type="content" source="../media/dashboard.png" alt-text="Depiction of an Azure dashboard that is displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
-
-Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. They allow you to tap into multiple data sources from across Azure, and combine them into unified interactive experiences. Use workbooks provided with Insights or create your own from predefined templates.
-
-:::image type="content" source="../media/workbooks.png" alt-text="Depiction of three workbooks displaying logged data in various chart formats and table formats.":::
+Many times, you may find the need to report on the specific metrics that are measured. Azure Monitor provides two main visualizations in the form of Azure dashboards and workbooks. You can make use of these two features to present a visual report to management or other interested parties, for ease of consuming the monitored data.
 
 ## Apply the criteria
 
