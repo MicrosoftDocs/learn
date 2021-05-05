@@ -21,9 +21,17 @@ When you deploy the template, you'll tell Bicep exactly which management group y
 
 TODO zones
 
+::: zone pivot="cli"
+
 When you initiate a deployment, you need to tell Azure which scope you want to deploy it atl. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg` command. For tenant deployments, use `az deployment tenant create`.
 
+::: zone-end
+
+::: zone pivot="powershell"
+
 When you initiate a deployment, you need to tell Azure which scope you want to deploy it atl. To deploy to a subscription, you must use the `New-AzSubscriptionDeployment` cmdlet. For management group deployments, use the `New-AzManagementGroupDeployment` cmdlet. For tenant deployments, use `New-AzTenantDeployment` cmdlet.
+
+::: zone-end
 
 Azure stores information about each deployment. It uses two key pieces of information when storing the deployment metadata: location and name. Unlike normal resource group deployments, there are some requirements you need to follow when you deploy at other scopes so that Azure can store the metadata correctly.
 
