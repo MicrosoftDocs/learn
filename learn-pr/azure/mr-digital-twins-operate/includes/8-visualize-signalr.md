@@ -11,11 +11,11 @@ Use the Visual Studio DeviceSimulator solution to simulate a wind farm, sending 
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
-4.	Press any key to begin the simulation.  Be aware that this simulation generates a significant amount of data, simulating real world operations and Azure consumption will occur. If configured properly and connected to the correct Azure services, you will see a series of streaming console messages **Message Received**, indicating that the ADT services have acknowledged the receipt of the simulated IoT data.
+4.	Press any key to begin the simulation.  Be aware that this simulation generates a significant amount of data, simulating real world operations, and Azure consumption will occur. If configured properly and connected to the correct Azure services, you'll see a series of streaming console messages **Message Received**, indicating that the ADT services have acknowledged the receipt of the simulated IoT data.
 
 ## Launch the Digital Twin in Unity Editor
 
-1.	Press the **Play** button in the Unity Editor.  You will notice that the Editor switches to the Game tab automatically and begins rendering your Scene.  You will see the data in the UI panels reflect the data being generated from the **DeviceSimulator** application running. 
+1.	Press the **Play** button in the Unity Editor.  You'll notice that the Editor switches to the Game tab automatically and begins rendering your Scene.  You'll see the data in the UI panels reflect the data being generated from the **DeviceSimulator** application running. 
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 

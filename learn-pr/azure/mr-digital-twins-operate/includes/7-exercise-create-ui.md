@@ -5,7 +5,7 @@ Create ADT equipped User Interfaces to provide a window into operations data.
 1.	Delete your **Bing Maps** Prefab from your **MainScene** Scene in the **Hierarchy** panel.
 2.	Drag the Prefab **Assets > Art > Prefabs > Bing Maps Operate** into the Hierarchy panel
 i.	Configure the Maps SDK parameters including your developer key
-ii.	The **Bing Maps Operate** Prefab has additional components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to ask for an asset via its address. Once an asset (e.g. a Prefab) is marked "addressable", it generates an address which can be called from anywhere. Wherever the asset resides (local or remote), the system will locate it and its dependencies, then return it.  
+ii.	The **Bing Maps Operate** Prefab has other components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to ask for an asset via its address. Once an asset (for example, a Prefab) is marked "addressable", it generates an address, which can be called from anywhere. Wherever the asset resides (local or remote), the system will locate it and its dependencies, then return it.  
 iii.	Turbine position can be changed via the Turbine Site Data **ScriptableObject**.   To alter the position of any turbine for runtime placement, change their **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**.  Find these configuration parameters for your Digital Twin turbines under **Assets > ScriptableObjects > Turbine Site Data**.
 
 <!-- :::image type="content" source="" alt-text=""::: -->
@@ -15,7 +15,7 @@ i.	This UI Panel takes the Turbine Site Data and populates its contents at runti
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
-4.	Drag the Prefab **Assets > UIPrefabs > Prefabs > Hand Menu - Operate** into the **MainScene**.  This provides constraints, thresholds and tracking configuration for menu operation on the HoloLens 2 with your hands.  The Prefab has been configured for default behavior and no further configuration is required.
+4.	Drag the Prefab **Assets > UIPrefabs > Prefabs > Hand Menu - Operate** into the **MainScene**.  This provides constraints, thresholds, and tracking configuration for menu operation on the HoloLens 2 with your hands.  The Prefab has been configured for default behavior and no further configuration is required.
 
 ## Explore the configurable items in the OperateSceneUI and Hand Menu - Operate
 

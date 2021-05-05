@@ -1,6 +1,6 @@
 An Azure SignalR service has been exposed as part of the ARM template that you deployed enables you to connect to ADT.  A data pipeline has been created to retrieve the data from ADT and is abstracted from the client app that will be running on HoloLens 2.
 
-To expose the data via ADT to your client app, you only need to connect to the Azure SignalR service. The app you are building for the HoloLens implements a SignalR client to connect to the SignalR service.  Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the negotiate function in the SignalR service.
+To expose the data via ADT to your client app, you only need to connect to the Azure SignalR service. The app you're building for the HoloLens implements a SignalR client to connect to the SignalR service.  Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the negotiate function in the SignalR service.
 
 As part of this module, 
 
@@ -9,7 +9,7 @@ As part of this module,
 
 - Configure the DeviceSimulator with the Host name for the ADT resource type created by the ARM template
 1.	Log into your [Azure Portal](https://portal.azure.com/)
-2.	Locate and select the newly created Resource Group.  This can be found in your Resource Groups service listing.  The Resource Group name will be based on the **projectname** variable name you supplied while running the ARM Template in the previous exercise.  It will have a **-rg** appended to it. In our example going forward, we used *dtwindfarm* as the projectname 
+2.	Locate and select the newly created Resource Group.  This can be found in your Resource Groups service listing.  The Resource Group name will be based on the **projectname** variable name you supplied while running the ARM Template in the previous exercise.  It will have a **-rg** appended to it. In our example going forward, we used *windfarm* as the projectname 
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
@@ -21,7 +21,7 @@ As part of this module,
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
-5.	In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor and paste your Host name value copied from Step 4 above into the **adtInstanceUrl** string variable.  Prepend https:// to your adtInstanceUrl variable at the beginning, so that it is a valid Url string.
+5.	In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor and paste your Host name value copied from Step 4 above into the **adtInstanceUrl** string variable.  Prepend https:// to your adtInstanceUrl variable at the beginning, so that it's a valid Url string.
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
@@ -69,11 +69,11 @@ iii.	tenantId →  	tenant
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
-6.	Add the Url under the **ADT Data Handler (Script)** Component with the Function Url obtained in Step 3.  Include everything in the Url up to and including **.../api**.  Do not include the last backslash nor the word “negotiate”.
+6.	Add the Url under the **ADT Data Handler (Script)** Component with the Function Url obtained in Step 3.  Include everything in the Url up to and including **.../api**.  Don't include the last backslash nor the word “negotiate”.
 
 <!-- :::image type="content" source="" alt-text=""::: -->
 
 7. **Save** the scene
 
-Now that the Azure services are set up and the appropriate pointers are within your Unity Scene, you will create a User Interface to visualize the operations data.
+Now that the Azure services are set up and the appropriate pointers are within your Unity Scene, you'll create a User Interface to visualize the operations data.
  
