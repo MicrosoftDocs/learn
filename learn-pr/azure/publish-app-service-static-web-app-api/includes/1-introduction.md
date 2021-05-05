@@ -12,7 +12,7 @@ When you use Azure Static Web Apps, you get all of this out of the box.
 
 Azure Static Web Apps solves the hard problems all the way from your source code to global availability.
 
-While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts it from a GitHub repository.
+While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts it from GitHub or Azure DevOps.
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. When using a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
@@ -25,7 +25,7 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 > [!NOTE]
 > Azure Static Web Apps is currently in preview.
 
-When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure.
+When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions or Azure DevOps workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the workflow automatically builds and deploys your app and its API to Azure.
 
 Azure hosts and serves your web app. Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
 
@@ -42,7 +42,7 @@ In this module's exercises, you'll deploy an app using your preferred web framew
 
 - **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users
 - **Integrated API** support provided by Azure Functions
-- **First-party GitHub integration** where repository changes trigger builds and deployments
+- **First-class GitHub and Azure DevOps integration** where repository changes trigger builds and deployments.
 - **Free SSL certificates**, which are automatically renewed
 - **Unique preview URLs** for previewing pull requests
 
