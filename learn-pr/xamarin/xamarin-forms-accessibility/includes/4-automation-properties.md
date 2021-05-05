@@ -4,7 +4,7 @@ The design for the app you will be creating is a form used to collect project in
 
 As mentioned in the previous section, each operating system has its own screen readers with their own unique behaviors and configurations. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control that receives accessibility focus. This means that elements such as a `Label` or `Button` that have the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in handy to help provide additional information about which elements should receive accessibility focus and what text should be read back to the user.
 
-## Automation Properties
+## Automation properties
 
 Xamarin.Forms provides four different properties that can enhance the screen reader experience. These are called `AutomationProperties` and are attached properties that can be added to any element: 
 - `AutomationProperties.IsInAccessibleTree` indicates whether or not the element is accessible by screen readers.
@@ -61,7 +61,8 @@ AutomationProperties.SetIsInAccessibleTree(button, true);
 AutomationProperties.SetHelpText(button, "Toggles the activity indicator");
 ```
 
-> Note: Screen readers may differ in the order of how they read back the `HelpText`, among other accessible information.
+> [!NOTE]
+> Screen readers may differ in the order of how they read back the `HelpText`, among other accessible information.
 
 ## LabeledBy
 
@@ -82,6 +83,7 @@ AutomationProperties.SetIsInAccessibleTree(entry, true);
 AutomationProperties.SetLabeledBy(entry, nameLabel);
 ```
 
-> Note: The `AutomationProperties.LabeledByProperty` is not yet supported on iOS and the `AutomationProperties.NameProperty` must be used.
+> [!NOTE]
+> The `AutomationProperties.LabeledByProperty` is not yet supported on iOS and the `AutomationProperties.NameProperty` must be used.
 
 Now that you have an understanding of the available automation properties that Xamarin.Forms provides, we can start to implement some of them in our project.

@@ -77,7 +77,7 @@ AutomationProperties.Name="Image of dot net bot"
 
 When you run the application again you will see that when the image gains focus, "Image of .NET Bot" is read out loud. Notice that we spelled out "dot net bot" to assist the screen reader with proper pronunciation. When setting text that will be read it is best practice to be aware of how the screen reader will read back text. For example, "a11y" which is an abbreviation for accessibility would be read back as "ay eleven why". Setting the label simply to "accessibility" would alleviate the need for any additional automation properties.
 
-## Entry accessibility with LabelBy
+## Improve Entry accessibility with LabelBy
 
 The `Entry` currently has no information about what the user should enter. There is a `Label` directly above the `Entry`, which provides the descriptor and can be used as text that the screen reader can read out loud by using the `AutomationProperties.LabeledBy` property. 
 
@@ -97,7 +97,7 @@ AutomationProperties.IsInAccessibleTree="False"
 
 When you run the application again, you hear "Project name" read out loud when the `Entry` is in focus.
 
-## Improved Button descriptors
+## Improve Button descriptors
 
 When the `Button` is in focus, "Submit button" is read out loud by the screen reader. We can provide more context as to what will happen when the user taps the button, by setting the `AutomationProperties.HelpText` property. 
 

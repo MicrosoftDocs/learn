@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-accessibility.6-keyboard-accessibility
 metadata:
-  title: Content ordering for accessibility
+  title: Order content for accessibility
   description: Learn how logical, meaningful content ordering can affect accessibility in Xamarin.Forms.
   ms.date: 04/20/2021
   author: jamont
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   
-title: Content ordering for accessibility
+title: Order content for accessibility
 durationInMinutes: 2
 content: |
   [!include[](includes/6-keyboard-accessibility.md)]
