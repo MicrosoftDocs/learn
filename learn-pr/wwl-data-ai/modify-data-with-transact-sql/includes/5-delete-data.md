@@ -4,8 +4,8 @@ Just as the INSERT statement always adds whole rows to a table, the DELETE state
 
 DELETE operates on a set of rows, either defined by a condition in a WHERE clause or defined in a join. The WHERE clause in a DELETE statement has the same structure as a WHERE clause in a SELECT statement.
 
-> > [!NOTE]
-> > It’s important to keep in mind that a DELETE without a corresponding WHERE clause will remove all the rows from a table. Use the DELETE statement with caution.
+> [!NOTE]
+> It’s important to keep in mind that a DELETE without a corresponding WHERE clause will remove all the rows from a table. Use the DELETE statement with caution.
 
 The following code shows the basic syntax of the DELETE statement:
 

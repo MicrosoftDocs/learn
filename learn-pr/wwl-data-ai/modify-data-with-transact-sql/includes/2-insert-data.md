@@ -144,7 +144,8 @@ INSERT [INTO] <table or view> [(column_list)]
 SELECT <column_list> FROM <table_list>...;
 ```
 
-> **Note**: Result sets from stored procedures (or even dynamic batches) may also be used as input to an INSERT statement. This form of INSERT, called INSERT EXEC, is conceptually similar to INSERT SELECT and will present the same considerations. However, stored procedures can return multiple result sets, so extra care is needed.
+> [!Note]
+> Result sets from stored procedures (or even dynamic batches) may also be used as input to an INSERT statement. This form of INSERT, called INSERT EXEC, is conceptually similar to INSERT SELECT and will present the same considerations. However, stored procedures can return multiple result sets, so extra care is needed.
 
 The following example inserts multiple rows for a new promotion named *Get Framed* by retrieving the model ID and model name from the **Production.ProductModel**, table for every model that contains "frame" in its name.
 
