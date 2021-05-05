@@ -59,7 +59,11 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
 ## Build and test the web API
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. Run the following command to build the app:
+
+    ```dotnetcli
+    dotnet build
+    ```
 
 1. Run the following .NET Core CLI command in the command shell:
 
@@ -105,40 +109,41 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     ]
     ```
 
-1.  Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu and run the following command:
+1. Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu and run the following command:
 
-  ```dotnetcli
-  dotnet tool install -g Microsoft.dotnet-httprepl
-  ```
+   ```dotnetcli
+     dotnet tool install -g Microsoft.dotnet-httprepl
+   ```
 
-  The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command-line tool that we will use to make HTTP requests to our web API.
+   The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command-line tool that we will use to make HTTP requests to our web API.
 
 1. Connect to our web API by running the following command:
   
-  ```dotnetcli
-  httprepl http://localhost:5000
-  ```
-  Alternatively, run the following command at any time while the HttpRepl is running:
+   ```dotnetcli
+   httprepl http://localhost:5000
+   ```
 
-  For example:
+   Alternatively, run the following command at any time while the HttpRepl is running:
 
-  ```dotnetcli
-  (Disconnected)> connect http://localhost:5000
-  ```
+   For example:
+
+   ```dotnetcli
+   (Disconnected)> connect http://localhost:5000
+   ```
 
 1. Explore available endpoints by running the following command:
 
-  ```dotnetcli
-  ls
-  ```
-
-  The preceding command will detect all APIs available on the connected endpoint. It should display the following:
-
    ```dotnetcli
-  http://localhost:5000/> ls
-  .                 []
-  WeatherForecast   [GET] 
-  ```
+   ls
+   ```
+
+   The preceding command will detect all APIs available on the connected endpoint. It should display the following:
+
+    ```dotnetcli
+   http://localhost:5000/> ls
+   .                 []
+   WeatherForecast   [GET] 
+   ```
 
 1. Navigate to the WeatherForecast endpoint by running the following command:
 
@@ -148,47 +153,47 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
    The following command will output available APIs available for the `WeatherForecast` endpoint:
 
-  ```dotnetcli
-  http://localhost:5000/> cd WeatherForecast
-  /WeatherForecast    [GET]
-  ```
+   ```dotnetcli
+   http://localhost:5000/> cd WeatherForecast
+   /WeatherForecast    [GET]
+   ```
 
 1. Make a `GET` request in the HttpRepl by using the following command:
 
-  ```dotnetcli
-  get
-  ```
+   ```dotnetcli
+   get
+   ```
 
-  The following command will make a `GET` request similar to navigating to the endpoint in the browser:
+   The following command will make a `GET` request similar to navigating to the endpoint in the browser:
 
-  ```dotnetcli
-  HTTP/1.1 200 OK
-  Content-Type: application/json; charset=utf-8
-  Date: Fri, 02 Apr 2021 17:31:43 GMT
-  Server: Kestrel
-  Transfer-Encoding: chunked
-  [
-    {
-      "date": 4/3/2021 10:31:44 AM,
-      "temperatureC": 13,
-      "temperatureF": 55,
-      "summary": "Sweltering"
-    },
-    {
-      "date": 4/4/2021 10:31:44 AM,
-      "temperatureC": -13,
-      "temperatureF": 9,
-      "summary": "Warm"
-    },
-    // ..
-  ]
-  ```
+   ```dotnetcli
+   HTTP/1.1 200 OK
+   Content-Type: application/json; charset=utf-8
+   Date: Fri, 02 Apr 2021 17:31:43 GMT
+   Server: Kestrel
+   Transfer-Encoding: chunked
+   [
+     {
+       "date": 4/3/2021 10:31:44 AM,
+       "temperatureC": 13,
+       "temperatureF": 55,
+       "summary": "Sweltering"
+     },
+     {
+       "date": 4/4/2021 10:31:44 AM,
+       "temperatureC": -13,
+       "temperatureF": 9,
+       "summary": "Warm"
+     },
+     // ..
+   ]
+   ```
 
 1. Quit current HttpRepl session by using the following command:
 
-  ```dotnetcli
-  exit
-  ```
+   ```dotnetcli
+   exit
+   ```
 
 1. Return to the `dotnet` terminal in the dropdown list in Visual Studio Code and shut down the web API pressing `CTRL+C` on your keyboard.
 
