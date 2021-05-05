@@ -1,12 +1,10 @@
-Getting the timing right of heading to the bus stop is a challenge that most can relate to. In the module, you determined a possible solution architecture by analyzing the capabilities that various Azure services provide. The solution architecture included Azure SQL Database, Azure Functions, Azure Static Web Apps, Azure Logic Apps, and GitHub Actions.
+Getting the timing right of heading to the bus stop is a challenge that most can relate to. The first step in architecting a solution involves building a strong foundation for the application with a database. Azure SQL Database is a modern database with the capabilities required for modern applications like catching the bus. Azure SQL Database supports JSON, geospatial, and GitHub Actions. The features in Azure SQL Database make it easy to meet the requirements of the scenario and enables you to build a CI/CD pipeline from the start.
 
-After creating the solution architecture, the next step it to build a strong foundation for the application. Azure SQL Database is a modern database with the capabilities required for modern applications like catching the bus. Azure SQL Database supports JSON, geospatial, and GitHub Actions. This makes it not easy to meet the requirements of the scenario, but it also enables you to build a CI/CD pipeline from the start.
-
-Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. If you choose to complete the next module of the associated learning path, you'll revisit the solution architecture and dive into the API portion of the solution, which uses Azure Functions.
+Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. If you choose to complete the next module of the associated learning path, you'll dive into the API portion of the solution, which uses Azure Functions.
 
 ## References
 
-There are many references for you to go as deep into the topics discussed as you want.
+There are many references for you to go as deep into the topics discussed as you want, now or at a later time.
 
 ### Azure SQL Database is a modern database
 

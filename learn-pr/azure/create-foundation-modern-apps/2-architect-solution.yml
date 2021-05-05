@@ -29,17 +29,17 @@ quiz:
       - content: "SQL Server"
         isCorrect: false
         explanation: "SQL Server wasn't discussed in this unit. SQL Server could be used, since it possesses the same engine, however, it does not support the serverless requirement."
-    - content: "Which service will be used to notify users that a bus has entered the geofence?"
+    - content: "Which service tier or feature in Azure SQL Database will support a scenario where a 12 TB database is required?"
       choices:
-      - content: "Azure Functions"
-        isCorrect: false
-        explanation: "Azure Functions will trigger the notification to be sent, but it will not send the notification."
-      - content: "Azure Logic Apps"
+      - content: "Hyperscale"
         isCorrect: true
         explanation: "That's correct!"
-      - content: "Azure SQL Database"
+      - content: "Serverless"
         isCorrect: false
-        explanation: "This service will store and process the bus data."
-      - content: "Azure Static Web Apps"
+        explanation: "The Serverless tier will not support databases of this size."
+      - content: "Columnstore indexes"
         isCorrect: false
-        explanation: "This service will host the website that contains the map with buses and geofences displayed."
+        explanation: "This feature is available in SQL Server and Azure SQL, but it will not help in supporting a 12 TB database."
+      - content: "Graph models"
+        isCorrect: false
+        explanation: "This feature is available in SQL Server and Azure SQL, but it will not help in supporting a 12 TB database."

@@ -1,10 +1,10 @@
 Catching the bus can be a frustrating task. You might find yourself running to catch it (and missing it) or waiting for a long time.
 
-Modern day challenges make opportunities for modern applications. Let's dive deeper into this scenario and how you might architect a solution using various Azure services.
+Modern day challenges like catching the bus make opportunities for modern applications. Let's dive deeper into this scenario and how you might architect a solution using various Azure services.
 
 ## Challenges with catching the bus
 
-Many cities provide public transportation data via [General Transit Feed Specification (GTFS)](https://gtfs.org/), that also supports a real-time feed [GTFS real-time Reference v2 (GTFS-RT)](https://gtfs.org/reference/realtime/v2/). The feed is JSON document that looks like the following sample (from [King County Metro](https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources.aspx) feed):
+Many cities provide public transportation data via [General Transit Feed Specification (GTFS)](https://gtfs.org/), that also supports a real-time feed [GTFS real-time Reference v2 (GTFS-RT)](https://gtfs.org/reference/realtime/v2/). The feed is composed of a JSON document that looks like the following sample (from [King County Metro](https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources.aspx) feed):
 
 ```json
 {
@@ -43,17 +43,17 @@ Based on the scenario and the ideal solution, here's a possible architecture:
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take advantage as much as possible of the scalability and infrastructure benefits provided by Azure.
 
-There is a complete learning path dedicated to exploring each piece of the architecture. in this module, you'll focus on the database service.
+There is a complete learning path dedicated to exploring each piece of the architecture. In this module, you'll focus on the database service.
 
 ### Database service
 
-[Azure SQL Database](https://azure.microsoft.com/services/azure-sql/) provides support to many of the required technologies already.
+[Azure SQL Database](https://azure.microsoft.com/services/azure-sql/) is a great fit for this scenario. Let's understand why.
 
-Azure SQL Database has [native JSON](https://docs.microsoft.com/sql/relational-databases/json/json-data-sql-server) support, that will help in reducing the amount of code needed to manipulate data sent and received to and from the database. It will also help to make the solution more agile and easy to be improved thanks to JSON's flexible nature. And, it will help to make sure that you can efficiently pass arrays of data to Azure SQL, optimize round-trips, and reduce latency.
+Azure SQL Database has [native JSON](https://docs.microsoft.com/sql/relational-databases/json/json-data-sql-server) support, that will help in reducing the amount of code needed to manipulate data sent and received with the database. It will also make the solution more agile and easy to be improved thanks to JSON's flexible nature. And, it will ensure that you can efficiently pass arrays of data to Azure SQL, optimize round-trips, and reduce latency.
 
 Azure SQL also provides complete [geospatial](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server) support, which is a great feature as manipulating geospatial data is not the easiest of tasks. By having a fully featured geospatial engine within the database, you can avoid the complexity of integrating with external libraries, and you don't have to move data around to figure out, for example, if a bus is within a defined geofence. Since Azure SQL adheres to the Open Geospatial Consortium standards, it is easy to integrate data stored in Azure SQL with visualization libraries like [OpenLayers](https://openlayers.org/).
 
-The aforementioned features are built on the rock-solid foundations of the relational model, evolved through years of improvement to be ready to meet the requirement of modern applications. Azure SQL Database is scalable up to 100 TB with the [Hyperscale tier](https://docs.microsoft.com/azure/azure-sql/database/service-tier-hyperscale) or cost-effective with the [Serverless tier](https://docs.microsoft.com/azure/azure-sql/database/serverless-tier-overview) (supports autoscaling and pause-and-resume). Azure SQL also supports [columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-design-guidance) for blazing fast analytical queries, [graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview) to simplify complex object relationship management, and a state-of-the-art query optimizer that is continuously improved and can handle even the most demanding workload, like the one required by today's [massive multiplayer online gaming](https://developer.microsoft.com/games/customer-stories/pearl-abyss-helps-ensure-a-lag-free-game-launch-with-azure/).
+The aforementioned features are built on the rock-solid foundations of the relational model, evolved through years of improvement to meet the requirements of modern applications. Azure SQL Database is scalable up to 100 TB with the [Hyperscale tier](https://docs.microsoft.com/azure/azure-sql/database/service-tier-hyperscale) or cost-effective with the [Serverless tier](https://docs.microsoft.com/azure/azure-sql/database/serverless-tier-overview) (supports autoscaling and pause-and-resume). Azure SQL also supports [columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-design-guidance) for blazing fast analytical queries, [graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview) to simplify complex object relationship management, and a state-of-the-art query optimizer that is continuously improving and can handle even the most demanding workload, like the one required by today's [massive multiplayer online gaming](https://developer.microsoft.com/games/customer-stories/pearl-abyss-helps-ensure-a-lag-free-game-launch-with-azure/).
 
 With Azure SQL it is also easy to access static data, like the route information provided by the GTFS standard, that can be stored in an Azure Blob Storage account. By using the [OPENROWSET](https://docs.microsoft.com/sql/t-sql/functions/openrowset-transact-sql) function, importing data from a text file can be done without any other service, keeping solution complexity to a minimum.
 

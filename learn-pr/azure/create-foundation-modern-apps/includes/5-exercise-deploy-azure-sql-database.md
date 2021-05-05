@@ -54,7 +54,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     Remember to note your password, unique ID, and region. You'll use them throughout the module.
 
-1. Run the following script to deploy an empty Azure SQL Database instance and logical server. The script will also add your IP address as a firewall rule.
+1. Run the following script to deploy an empty Azure SQL Database instance and logical server. The script will also add your IP address as a firewall rule so you can access the database.
 
     ```powershell
     # Create a new server with a system wide unique server name
