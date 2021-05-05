@@ -6,18 +6,11 @@ Most cloud deployments are based on distributed architectures where components a
 
 ## Log analytics
 
-Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.
-
-> [!NOTE]
-> Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
-
-### Log queries
-
 Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
 
-### Analyze the logs in Log Analytics
-
-After your application is properly set up, your application console log will be streamed to Log Analytics. The structure enables efficient query in Log Analytics.
+> [!NOTE]
+> Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.
+> Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
 
 ### Use Log Analytics
 
