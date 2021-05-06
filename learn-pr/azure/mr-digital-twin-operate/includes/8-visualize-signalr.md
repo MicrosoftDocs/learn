@@ -19,7 +19,7 @@ Use the Visual Studio DeviceSimulator solution to simulate a wind farm, sending 
 
 1. Press the **Play** button in the Unity Editor.  You'll notice that the Editor switches to the Game tab automatically and begins rendering your Scene.  You'll see the data in the UI panels reflect the data being generated from the **DeviceSimulator** application running. 
 
-:::image type="content" source="../media/simulated-turbine-telemetry.png.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running.":::
+:::image type="content" source="../media/simulated-turbine-telemetry.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running.":::
 
 2. Navigate in the **Game** tab, by pressing and holding your **right mouse button** while you navigate.  When you hover over a turbine (moving the white circle) or a turbine name in the **Site Overview Menu** panel, you see the **Turbine Panel** with specifics for that Turbine asset.
 
