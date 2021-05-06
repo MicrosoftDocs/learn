@@ -29,9 +29,10 @@ products:
 - learn
 units:
 - learn.aks-app-scaling-keda.introduction
-- learn.aks-app-scaling-keda.learning-content
-- learn.aks-app-scaling-keda.exercise
+- learn.aks-app-scaling-keda.2-concept-keda-scaling
+- learn.aks-app-scaling-keda.concept-deploy-app
+- learn.aks-app-scaling-keda.3-exercise-deploy-app
 - learn.aks-app-scaling-keda.knowledge-check
-- learn.aks-app-scaling-keda.summary
+- learn.aks-app-scaling-keda.5-summary
 badge:
   uid: learn.aks-app-scaling-keda.badge

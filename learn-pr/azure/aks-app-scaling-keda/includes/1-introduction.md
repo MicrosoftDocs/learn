@@ -12,13 +12,13 @@ In this module, you'll deploy KEDA into an AKS environment and deploy a scaler o
 
 Here, you'll deploy a KEDA scaler object to AKS to autoscale containers based on the number messages in a list:
 
-* **Deploy**: AKS
+* **Understand**: K8S scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
+
+* **Deploy**: a container that processes messages from a Redis List
 
 * **Deploy**: KEDA within AKS
 
 * **Deploy**: a built-in KEDA scaler
-
-* **Understand**: K8S scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
 
 ## What is the main goal?
 
@@ -32,6 +32,61 @@ By the end of this session, you'll be able to understand which Kubernetes scalin
 * An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 * Ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 * Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](https://docs.microsoft.com/learn/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-* All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
-  * [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
-  * [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
+
+All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+
+* [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
+* [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
+
+## Before We Start
+
+We'll assume an AKS cluster is already created and running. To create your AKS cluster, run the following commands in a Cloud Shell environment:
+
+```bash
+RESOURCE_GROUP=rg-contoso-video
+LOCATION=westus2
+CLUSTER_NAME=contoso-video
+```
+
+```bash
+az group create -n $RESOURCE_GROUP -l $LOCATION
+```
+
+```bash
+az aks create \
+ -g $RESOURCE_GROUP \
+ -n $CLUSTER_NAME \
+ --node-count 1 \
+ --node-vm-size Standard_DS3_v2 \
+ --generate-ssh-keys \
+ --node-osdisk-type Ephemeral \
+ --enable-addons http_application_routing
+
+az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+The complete cluster creation can take up to five minutes.
+
+[!IMPORTANT] Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
+
+We also assume a Azure Redis Cache is running and configured to enable a non-ssl port.  To create your Azure Redis Cache, run the following commands in a Cloud Shell environment:
+
+```bash
+RESOURCE_GROUP=rg-contoso-video
+LOCATION=westus2
+REDIS_NAME=redis-contoso-video
+```
+
+```bash
+az redis create --location $LOCATION --name $REDIS_NAME --resource-group $RESOURCE_GROUP --sku Basic --vm-size c0 --enable-non-ssl-port
+```
+
+```bash
+REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hostName")
+```
+
+```bash
+REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
+```
+
+[!IMPORTANT] Make a note of the `hostName`, and `primaryKey` values returned for later use.
