@@ -142,7 +142,7 @@ The final port used by the SWA CLI is different than the one you've seen before,
 - The authentication and authorization emulator
 - The API hosted by the Functions runtime
 
-:::image type="content" source="../media/swa-cli-architecture.png" alt-text="Static Web Apps CLI architecture":::
+:::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture":::
 
 Now let the application running while we modify the code.
 
@@ -525,17 +525,18 @@ Before testing our authentication workflow, let's display the user details about
 
 ::: zone pivot="angular"
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this code at the bottom of the template:
+Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this code at the bottom of the template:
 
-    ```html
-    <div class="user" *ngIf="userInfo">
-      <p>Welcome</p>
-      <p>{{ userInfo?.userDetails }}</p>
-      <p>{{ userInfo?.identityProvider }}</p>
-    </div>
-    ```
+```html
+<div class="user" *ngIf="userInfo">
+  <p>Welcome</p>
+  <p>{{ userInfo?.userDetails }}</p>
+  <p>{{ userInfo?.identityProvider }}</p>
+</div>
+```
 
-    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
+> [!NOTE]
+> The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -604,27 +605,28 @@ export class NavComponent implements OnInit {
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` and add this code at the bottom of the JSX template to display the login status:
+Edit the file `react-app/src/components/NavBar.js` and add this code at the bottom of the JSX template to display the login status:
 
-    ```jsx
-    ...
-      </nav>
-      // User infos
-      {userInfo && (
-        <div>
-          <div className="user">
-            <p>Welcome</p>
-            <p>{userInfo && userInfo.userDetails}</p>
-            <p>{userInfo && userInfo.identityProvider}</p>
-          </div>
-        </div>
-      )}
-      // End of User infos
+```jsx
+...
+  </nav>
+  // User infos
+  {userInfo && (
+    <div>
+      <div className="user">
+        <p>Welcome</p>
+        <p>{userInfo && userInfo.userDetails}</p>
+        <p>{userInfo && userInfo.identityProvider}</p>
+      </div>
     </div>
-    ...
-    ```
+  )}
+  // End of User infos
+</div>
+...
+```
 
-    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
+> [!NOTE]
+> The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -704,25 +706,26 @@ export default NavBar;
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the bottom of the template to display the login status:
+Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the bottom of the template to display the login status:
 
-    ```html
-    ...
-      </nav>
-      <!-- User infos -->
-      {#if userInfo}
-        <div class="user">
-          <p>Welcome</p>
-          <p>{userInfo && userInfo.userDetails}</p>
-          <p>{userInfo && userInfo.identityProvider}</p>
-        </div>
-      {/if}
-      <!-- End of user infos -->
+```html
+...
+  </nav>
+  <!-- User infos -->
+  {#if userInfo}
+    <div class="user">
+      <p>Welcome</p>
+      <p>{userInfo && userInfo.userDetails}</p>
+      <p>{userInfo && userInfo.identityProvider}</p>
     </div>
-    ...
-    ```
+  {/if}
+  <!-- End of user infos -->
+</div>
+...
+```
 
-    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
+> [!NOTE]
+> The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -799,23 +802,24 @@ Your completed file should now look like this:
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bottom of the template to display the login status:
+Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bottom of the template to display the login status:
 
-    ```html
-    ...
-        </nav>
-        <!-- User infos -->
-        <div class="user" v-if="userInfo">
-          <p>Welcome</p>
-          <p>{{ userInfo.userDetails }}</p>
-          <p>{{ userInfo.identityProvider }}</p>
-        </div>
-        <!-- End of user infos -->
-      </div>
-    </template>
-    ```
+```html
+...
+    </nav>
+    <!-- User infos -->
+    <div class="user" v-if="userInfo">
+      <p>Welcome</p>
+      <p>{{ userInfo.userDetails }}</p>
+      <p>{{ userInfo.identityProvider }}</p>
+    </div>
+    <!-- End of user infos -->
+  </div>
+</template>
+```
 
-    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
+> [!NOTE]
+> The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -897,7 +901,7 @@ Everything is now in place, the final step is to test if everything is working a
 1. In your web app, select one of the identity providers to log in.
 1. You'll be redirected to this page:
 
-    :::image type="content" source="../media/swa-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen":::
+    :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen":::
 
     This is a fake authentication screen provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
 

@@ -409,7 +409,7 @@ From here, you can observe the progress of your app as it builds.
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
-1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Browse Site** to view app in your browser.
+In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Browse Site** to view app in your browser.
 
    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 

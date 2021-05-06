@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-authentication.3-authentication
-title: Manage authentication in static web apps
+title: Manage authentication in Static Web Apps
 metadata:
-  title: Manage authentication in static web apps
-  description: Learn how to manage authentication in static web apps
+  title: Manage authentication in Static Web Apps
+  description: Learn how to manage authentication in Static Web Apps
   ms.date: 05/02/2021
   author: sinedied
   ms.author: yolasors
