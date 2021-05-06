@@ -115,13 +115,15 @@ The **Long running queries tab** shows the top 5 queries by average duration per
 > Your Azure Spring Cloud sample application already has Query Performance Insights activated for Long running queries for your MySQL instance
 > For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
 
+![Long Running Queries](../media/8-query-performance.jpg)
+
 ### Wait statistics
 
 Wait statistics provides a view of the wait events that occur during the execution of a specific query.
 Select the **Wait Statistics** tab to view the corresponding visualizations on waits in the server.
 
 > [!NOTE]
-> Wait statistics are meant for troubleshooting query performance issues. It is recommended to be turned on only for troubleshooting purposes.
+> Wait statistics are meant for troubleshooting query performance issues. By default Wait Statistics is not switched on as it is recommended to be turned on only for troubleshooting purposes.
 
 ## Performance Recommendations
 
@@ -138,9 +140,6 @@ OpenTelemetry standardizes what telemetry data looks like and is a set of APIs, 
 
 For new environments, OpenTelemetry is deployed as an agent on each host within an environment and configured to send telemetry data to the user’s desired back-end(s).
 For legacy environments, the OpenTelemetry supports many popular open-source wire formats including Jaeger, Prometheus, and Fluent Bit.
-
-## Integration with Azure
-
 Once OpenTelemetry data has been exported to Azure Monitor, you can access Application Insights and distributed traces and metrics.
 
 > [!TIP]
