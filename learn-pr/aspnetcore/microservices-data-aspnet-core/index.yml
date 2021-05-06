@@ -39,8 +39,8 @@ units:
   - learn.microservices-data-aspnet-core.environment-setup
   - learn.microservices-data-aspnet-core.verify-deployment
   - learn.microservices-data-aspnet-core.managed-data-stores
-  - learn.microservices-data-aspnet-core.deploy-azure-cache
-  - learn.microservices-data-aspnet-core.deploy-cosmos-db
+  - learn.microservices-data-aspnet-core.implement-azure-cache
+  - learn.microservices-data-aspnet-core.implement-cosmos-db
   - learn.microservices-data-aspnet-core.knowledge-check
   - learn.microservices-data-aspnet-core.summary
 iconUrl: /learn/achievements/aspnetcore/microservices-data-aspnet-core.svg
