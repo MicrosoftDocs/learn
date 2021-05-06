@@ -25,11 +25,11 @@ Notice that the `scope` property uses a Bicep function to help to identify the s
 
 ## Deploy across multiple resource groups
 
-A common use of scopes is to create deploys across multiple resource groups. For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *Networking*, and then deploys a network interface into a different resource group. Here's what the Bicep file looks like:
+A common use of scopes is to create deploys across multiple resource groups. For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *ToyNetworking*, and then deploys a network interface into a different resource group. Here's what the Bicep file looks like:
 
 :::code language="plaintext" source="code/5-multiple-rgs.bicep" highlight="2" :::
 
-Notice that the resources to be deployed into the *Networking* resource group are defined in a module.
+Notice that the resources to be deployed into the *ToyNetworking* resource group are defined in a module.
 
 When this file is deployed, you could target another resource group named *ProjectTeddybear*, like this:
 
@@ -49,7 +49,7 @@ New-AzResourceGroupDeployment -ResourceGroupName ProjectTeddybear ...
 
 ::: zone-end
 
-Even though the deployment targets the *ProjectTeddybear* resource group, the networking resources will be deployed to the *Networking* resource group.
+Even though the deployment targets the *ProjectTeddybear* resource group, the networking resources will be deployed to the *ToyNetworking* resource group.
 
 Similarly, you can use the `subscription()` scope function to deploy resources across different subscriptions, and the `managementGroup()` scope function to deploy across management groups. However, you can't deploy across different tenants.
 

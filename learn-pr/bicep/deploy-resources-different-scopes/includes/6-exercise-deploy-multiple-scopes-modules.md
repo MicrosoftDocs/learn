@@ -108,3 +108,26 @@ New-AzSubscriptionDeployment `
 Notice that you're passing in values for the `virtualNetworkName` and `virtualNetworkAddressPrefix` parameters. When another R&D team asks you to prepare a subscription for them, you'll be able to change these values to give them their own virtual network.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
+
+### Clean up the resources
+
+TODO more to do here
+
+> [!CAUTION]
+> This command will permanently delete the resource group named *ToyNetworking* and all of its resources. If you've deployed anything else into this resource group, you should skip this step.
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --name ToyNetworking
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyNetworking
+```
+
+::: zone-end

@@ -5,7 +5,7 @@ param virtualNetworkAddressPrefix string
 
 var policyDefinitionName = 'DenyGSeriesVMs'
 var policyAssignmentName = 'DenyGSeriesVMs'
-var resourceGroupName = 'Networking'
+var resourceGroupName = 'ToyNetworking'
 
 resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
   name: policyDefinitionName

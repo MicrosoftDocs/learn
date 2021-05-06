@@ -1,5 +1,5 @@
 module networkModule 'modules/network.bicep' = {
-  scope: resourceGroup('Networking')
+  scope: resourceGroup('ToyNetworking')
   name: 'networkModule'
 }
 
