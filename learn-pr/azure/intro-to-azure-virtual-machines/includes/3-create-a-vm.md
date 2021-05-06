@@ -18,13 +18,17 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **Create a resource** in the top-left corner of the portal page. The Azure Marketplace pane appears.
+1. Select **Create a resource** in the top-left corner of the portal page.
 
     ![Screenshot that shows the Azure Marketplace with create a resource highlighted](../media/3-create-new-resource.png)
 
-1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and then search for and select **Ubuntu Server**. The **Ubuntu Server** panel appears.
+    The *Azure Marketplace* appears in the **Create a resource** pane.
 
-1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** panel appears. Select **Create**. The **Create virtual machine** panel appears.
+1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
+
+1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** pane appears.
+
+1. Select **Create**. The **Create virtual machine** pane appears.
 
 ### Configure the VM
 
@@ -54,7 +58,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 
 1. Azure will validate your settings. You might need to supply some additional information based on the requirements of the image creator. Verify all the settings are set the way you want, and then select **Create** to deploy and create the VM.
 
-1. You can monitor the deployment through the **Notifications** panel. select the icon in the top toolbar to show or hide the panel.
+1. You can monitor the deployment through the **Notifications** pane. Select the icon in the top toolbar to show or hide the pane.
 
 1. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Select **Go to resource** to go to the VM overview page.
 
