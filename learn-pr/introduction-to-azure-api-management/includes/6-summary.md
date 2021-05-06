@@ -13,8 +13,11 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs. To help you make that decision, we presented some criteria you can use:
+
+- Number of APIs
+- Rate of API changes
+- API administration load
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -25,7 +28,17 @@ TODO: bulleted list of the decision criteria
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-TODO: add your discussion of applying the criteria
+We applied these criteria in the context of our fictional food delivery organization. You learned that in most scenarios, Azure API Management offers:
+
+- Improved standardization of APIs by enabling the management of multiple APIs from a single administrative interface.
+- Enhanced centralization of all API operations by bringing multiple APIs under a single administrative umbrella.
+- Tightened API security thanks to permissions, access control policies, and attack surface reduction.
+
+However, you also learned that organizations would probably not benefit from using Azure API Management if they have:
+
+- A relatively small number of deployed APIs.
+- APIs that are mostly static or require few revisions.
+- APIs that require few, if any, administrative extras such as policies, users, and analytics.
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -35,7 +48,7 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
+The criteria help you evaluate whether your organization's APIs would benefit from being gathered under the umbrella of Azure API Management. Today's connected world is increasingly being driven by the so-called *API economy*, where API usage by developers and their customers generates important revenue streams for the companies that publish the APIs. If you want to take advantage of the API economy, you need to use this module's criteria to help you assess how well Azure API Management would improve the ability of your organization to adapt its APIs to satisfy customers, follow business trends, and take advantage of new opportunities. The process you went through here should give you enough information to choose the right API lifecycle management solution for your organization.
 
 <!-- 4. References (optional) ----------------------------------------------------
 
@@ -55,5 +68,12 @@ TODO: describe the business impact
         * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
         * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
  -->
+
+## References
+
+- [Azure API Management](https://azure.microsoft.com/services/api-management/)
+- [Azure API Management pricing](https://azure.microsoft.com/pricing/details/api-management/)
+- [Feature-based comparison of the Azure API Management tiers](https://docs.microsoft.com/azure/api-management/api-management-features)
+- [Azure API Management FAQs](https://docs.microsoft.com/azure/api-management/api-management-faq)
 
 <!-- Do not include any other content -->

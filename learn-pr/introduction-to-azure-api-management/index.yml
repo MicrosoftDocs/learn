@@ -36,7 +36,7 @@ title: Introduction to Azure API Management
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: "Describe how the API gateway and developer portal enable developers to use your APIs. Determine how policies, revisions, and versions give you secure and controlled exposure of your APIs."
+summary: "Describe how policies, the API gateway, and the developer portal enable developers to use your APIs. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution. "
 ###########################################################################
 ###
 ### Learning Objectives
@@ -64,7 +64,7 @@ summary: "Describe how the API gateway and developer portal enable developers to
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs.
-    - Describe how the API gateway and developer portal of Azure API Management work to make it easy for developers to view and use your APIs.
+    - Determine how groups, API keys, revisions, and versions give you secure and controlled exposure of your APIs.
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,7 +88,7 @@ abstract: |
 ###
 prerequisites: |
   - Basic knowledge of application programming interfaces, including API concepts such as SOAP, REST, and OpenAPI
-  - Basic knowledge of Azure services such as virtual networks and virtual machines
+  - Basic knowledge of Azure services such as endpoints, virtual networks, and virtual machines
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available

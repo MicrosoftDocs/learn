@@ -43,14 +43,14 @@ In this unit, you'll learn about:
 
 ## How Azure API Management works for API customers
 
-An API *customer* is any entity that makes a request to the API for data. So a customer can be any of the following:
+An API *customer* is an entity that makes a request to the API for data. So, for example, any of the following could be a customer of an API:
 
-- Mobile app
-- Web app
-- IoT device
 - Business partner
 - Employee
 - Developer
+- Mobile app
+- Web app
+- IoT device
 
 The key Azure API Management component for customers is the gateway because all customer API calls are first routed to your gateway endpoint. The gateway is also the essential element in decoupling your APIs because the gateway endpoint is always separate from your API's deployment location in the backend. API customers only ever deal directly with the gateway, never with the actual API deployment instance.
 
@@ -73,7 +73,7 @@ If you're an API administrator or manager, once your APIs have been published, y
 You can perform all of these tasks and more using the Azure API Management administration interface, which is an Azure portal page that enables you to administer your APIs. Besides enabling you to set API policies, as you learned in the previous unit, the Azure API Management administration interface enables you to perform the following tasks:
 
 - **Defining and importing API specs**: Once you have your Azure API Management instance provisioned, you can use the administration interface to import your API specifications. You can import an OpenAPI specification, a REST API, and a SOAP API (which you can optionally convert to REST). You can also create an API by importing instances of the following Azure services: Web App, Function App, Logic App, and Service Fabric. You can also create a blank API and define it manually.
-- **Managing users and groups**: In Azure API Management, a *user* is a developer account—that is, it's an account for an API customer. You can add users manually or invite users to create an account. A *group* is a collection of related users. You can associate a group with a particular API product and each user in that group will have access to the product in the developer portal.
+- **Managing users and groups**: In Azure API Management, a *user* is a developer account—that is, it's an account for an API customer. You can add users manually or invite users to create an account, but most users create their own accounts using the developer portal. A *group* is a collection of related users. You can associate a group with a particular API product and each user in that group will have access to the product in the developer portal.
 - **Packaging APIs into products**: In Azure API Management, a *product* is a group of related APIs. By packaging multiple APIs as a single product, you can configure that product—for example, by setting rate limits and other policies, defining terms of use, adding groups, and so on—and that configuration gets applied to all the APIs in the product. Once you publish the product, customers can subscribe to the product and use its APIs with a single subscription key.
 - **Handling API revisions and versions**: When your API developer team needs to make changes to an API, you can make the change in a safe and controlled way that doesn't adversely affect customers by using revisions and versions:
   - **Revisions**: A *revision* is a relatively minor or non-breaking change to the API. Your dev team can code and test the revision separately from the production API, as shown in the diagram below. Then, when your revision is ready for customers, you use the Azure API Management administration interface to set the updated API as the *current* revision.
