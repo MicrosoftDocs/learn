@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Implement Azure Cosmos DB
 durationInMinutes: 10
 content: |
-  [!include[](includes/implement-cosmos-db)]
+  [!include[](includes/implement-cosmos-db.md)]

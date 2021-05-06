@@ -20,7 +20,7 @@ quiz:
           isCorrect: false
           explanation: This feature is specific to Azure Cache for Redis data service.
         - content: Pay only for what you use with scheduled updates.
-          isCorrect: true
+          isCorrect: false
           explanation: With Azure Managed Data Service instance, you need to pay as per usage without putting much effort to the maintenance.
         - content: High availability.
           isCorrect: true
