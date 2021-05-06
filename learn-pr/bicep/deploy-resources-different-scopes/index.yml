@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy resources to different scopes with Bicep
   description: Learn how to deploy resources at the subscription, management group, and tenant scope within your Bicep code.
-  ms.date: 04/25/2021
+  ms.date: 05/05/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
