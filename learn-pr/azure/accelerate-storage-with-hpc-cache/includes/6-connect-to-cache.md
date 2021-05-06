@@ -31,7 +31,7 @@ Azure HPC Cache provides a `mount` command that you can copy and paste for your 
 
 ![Screenshot showing the Connect to Cache settings for Azure HPC Cache.](../media/6-connect-to-cache-02-connect-to-cache.png)
 
-- With the cache open in the Azure Portal, click the "Mount Instructions" tab on the left.
+- With the cache open in the Azure portal, click the "Mount Instructions" tab on the left.
 - In the "Client path" field, paste the full `sudo mkdir` command.
 - Choose a cache mount address. Rotate these addresses across the clients to evenly distribute the network traffic.
 - Choose your virtual namespace path from the dropdown.

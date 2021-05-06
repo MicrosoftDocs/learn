@@ -1,6 +1,6 @@
 After the Azure HPC Cache is created, it’s time to point it to your data. Ideally there’s an ExpressRoute or high-speed connection between Azure and the data.
 
-From the Azure Portal, click the HPC Cache resource. On the left navigation, choose “Storage Targets.”
+From the Azure portal, click the HPC Cache resource. On the left navigation, choose “Storage Targets.”
 
 ## Storage Targets
 

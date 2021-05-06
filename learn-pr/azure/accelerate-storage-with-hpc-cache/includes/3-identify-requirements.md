@@ -14,7 +14,7 @@ If you plan to use servers in your data center, then you’ll need to configure 
 
 If you plan to use Azure-based storage like Azure NetApp Files or you plan to copy your data into Azure Blob, then you don’t need to configure this separate DNS server.
 
-In the Azure Portal:
+In the Azure portal:
 
 - Create the virtual network that will host the Azure HPC Cache.
 - Create the DNS server.
