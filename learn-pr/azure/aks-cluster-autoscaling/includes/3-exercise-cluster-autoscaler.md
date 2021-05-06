@@ -20,6 +20,7 @@ You can update the autoscaler settings by replacing the `--enable-cluster-autosc
 
 Also, to enable the cluster autoscaler on a new cluster, just add `--enable-cluster-autoscaler` along with the `--min-count` and `--max-count` flags to an `az aks create` command.
 
+> [!NOTE]
 > It's important to notice that the autoscaler will not enforce the configurations once set. For example, if your node count is 3 and the minimum amount set is 5, the autoscaler won't immediately scale the cluster to 5 nodes.
 
 After a few minutes you'll see the number of nodes in your cluster grow, and the number of pods in the **Pending** state decrease as more resources get allocated to them.
