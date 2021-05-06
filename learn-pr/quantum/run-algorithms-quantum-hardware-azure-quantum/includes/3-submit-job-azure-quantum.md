@@ -36,7 +36,7 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    - **Region**: The region for the workspace.
    - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
 
-   :::image type="content" source="../media/3-azure-quantum-preview-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
+   :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
