@@ -25,7 +25,7 @@ Scale container applications in Azure Kubernetes Services (AKS) using Kubernetes
 <!-- - *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)* -->
 - An Azure Subscription
 - Ability to use the Azure CLI
-- Ability to create a Docker container
+- Ability to run and exec into a Docker container
 - Ability to navigate the Azure portal
 - Basic knowledge of Kubernetes and its concepts
 - Basic knowledge of AKS and its concepts
