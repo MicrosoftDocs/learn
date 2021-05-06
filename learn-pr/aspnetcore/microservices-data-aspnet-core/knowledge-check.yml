@@ -14,45 +14,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Mark all general features of managed data services.
+    - content: Mark the key general feature of managed data services.
       choices:
-        - content: Automatic scaling.
+        - content: Scalable open-source compatible in-memory datastore.
           isCorrect: false
-          explanation: TODO
-        - content: Scheduled updates.
+          explanation: This feature is specific to Azure Cache for Redis data service.
+        - content: Pay only for what you use with scheduled updates.
           isCorrect: false
-          explanation: TODO
-        - content: Pay only for what you use.
-          isCorrect: true
-          explanation: TODO
+          explanation: With Azure Managed Data Service instance, you need to pay as per usage without putting much effort to the maintenance.
         - content: High availability.
+          isCorrect: true
+          explanation: High availability is not a generic feature for Azure Managed Database. It can be applicable to specific choices like Azure Database for PostgreSQL or Azure Cosmos DB.
+        - content: Single-digit millisecond latencies at the 99th percentile.
           isCorrect: false
-          explanation: TODO
-  #   - content: Mark the features specific to Azure Cache for Redis.
-  #     choices:
-  #       - content: Data persistence and high-availability cluster for Premium tier.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: Security via Firewall rules.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: Geo-replication for Premium tier.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: SQL API
-  #         isCorrect: false
-  #         explanation: TODO
-  #   - content: Mark the features specific to Azure Cosmos DB.
-  #     choices:
-  #       - content: Single-digit millisecond latencies.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: Guaranteed high availability.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: Apache Spark API.
-  #         isCorrect: false
-  #         explanation: TODO
-  #       - content: Global distribution.
-  #         isCorrect: true
-  #         explanation: TODO
+          explanation: This feature is not generic. It's specific to Azure Cosmos DB managed data service instance.
+    - content: Mark the key feature of Azure Cache for Redis.
+      choices:
+        - content: Data persistence and geo-replication for Premium tier.
+          isCorrect: true
+          explanation: With Premium tier instance, you can persist the data to mitigate the potential data loss and use the geo-replication feature to distribute the cache data in multiple regions. 
+        - content: Provides an in-memory data store based.
+          isCorrect: false
+          explanation: You can use the in-memory data store with on-premise Redis instance as well.
+        - content: It's managed by Microsoft, hosted on Azure, and accessible to any application within or outside of Azure.
+          isCorrect: false
+          explanation: This statement is generic and applicable for other managed service instances of Azure as well.
+        - content: SQL API
+          isCorrect: false
+          explanation: Azure Redis Cache doesn't provide any SQL API.
+    - content: Mark the key feature of Azure Cosmos DB.
+      choices:
+        - content: Single-digit millisecond latencies with guaranteed speed at any scale.
+          isCorrect: true
+          explanation: Azure Cosmos DB is a fully managed NoSQL database for modern app development. Single-digit millisecond response times, and automatic and instant scalability, guaranteed speed at any scale.
+        - content: Not good for mission-critical applications.
+          isCorrect: false
+          explanation: Azure Cosmos DB is a good choice for a mission-critical application because of SLA-backed speed, availability, throughput, and consistency.
+        - content: Apache Spark API.
+          isCorrect: false
+          explanation: Azure Cosmos DB doesn't support Apache Spark API. Instead, it provides APIs for Core (SQL), MongoDB, Cassandra, Azure Table, and Gremlin (graph).
+        - content: NoSQL database.
+          isCorrect: false
+          explanation: This option can't be categorized as a key feature. There could be many databases of NoSQL types.

@@ -19,6 +19,8 @@ You have to:
 Use the following command:
 
 ```bash
+cd ~ && \
+rm -rf ~/clouddrive/aspnet-learn && \
 az group delete --name eshop-learn-rg --yes
 ```
 
