@@ -6,7 +6,7 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 They plan to use virtual machines within the subscription, but to save money they have asked for your help to ensure that only certain SKUs of virtual machines can be created within that subscription. They also need your assistance to create a virtual network in the subscription, because they will eventually need to connect that network to the main corporate network, which you help to manage.
 
-You know that the R&D team has recently been given a lot of new funding, so they are likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
+You know the R&D team has recently been given a lot of new funding, so they're likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows an Azure subscription, a policy, and a resource group containing a virtual network." border="false":::
 

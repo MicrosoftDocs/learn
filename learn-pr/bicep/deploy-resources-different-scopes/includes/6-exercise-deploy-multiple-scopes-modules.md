@@ -1,7 +1,7 @@
 > [!NOTE]
 > This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
 
-The R&D team have asked for your help to create a virtual network in the Project Teddybear subscription. You know that you'll be helping the R&D team with more subscriptions in the future, so you decide to extend your reusable Bicep template to deploy a virtual network for them to use. In this exercise, you'll update the template you started to build in the last exercise. During the process, you'll:
+The R&D team have asked for your help to create a virtual network in the Project Teddybear subscription. You know you'll be helping the R&D team with more subscriptions in the future, so you decide to extend your reusable Bicep template to deploy a virtual network for them to use. In this exercise, you'll update the template you started to build in the last exercise. During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the subscription-scoped template to create a new resource group.
@@ -39,19 +39,19 @@ Next, you will create a Bicep module for the R&D team's virtual network. The res
 
 ## Use the module in the subscription deployment
 
-Now you are ready to tell Bicep to deploy the module into the resource group.
+Now you're ready to tell Bicep to deploy the module into the resource group.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following parameter definitions underneath the `targetScope` line:
 
    :::code language="bicep" source="code/6-template.bicep" range="3-4" :::
 
-   These parameters make our template reusable, so anytime our R&D team needs a new subscription we can create a virtual network with a unique name and IP address range.
+   These parameters make the template reusable, so anytime the R&D team needs a new subscription you can create a virtual network with a unique name and IP address range.
 
 1. At the bottom of the file, add the following module definition:
 
    :::code language="bicep" source="code/6-template.bicep" range="56-63" :::
 
-   Notice that you are explicitly specifying the `scope` for the module. Bicep understands that the resources within the module should be deployed into the resource group created earlier in the templates.
+   Notice that you're explicitly specifying the `scope` for the module. Bicep understands that the resources within the module should be deployed into the resource group created earlier in the templates.
 
 ## Verify your template
 
@@ -105,6 +105,6 @@ New-AzSubscriptionDeployment `
 
 ::: zone-end
 
-Notice that you are passing in values for the `virtualNetworkName` and `virtualNetworkAddressPrefix` parameters. When another R&D team asks you to prepare a subscription for them, you'll be able to change these values to give them their own virtual network.
+Notice that you're passing in values for the `virtualNetworkName` and `virtualNetworkAddressPrefix` parameters. When another R&D team asks you to prepare a subscription for them, you'll be able to change these values to give them their own virtual network.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.

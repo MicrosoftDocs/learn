@@ -37,7 +37,7 @@ During the process, you'll:
   
    When you try to create a resource that matches these conditions, Azure will deny the resource creation.
 
-   You are creating the policy definition at the scope of the subscription. The policy is available throughout all resource groups in the subscription.
+   You're creating the policy definition at the scope of the subscription. The policy is available throughout all resource groups in the subscription.
 
 ## Assign the policy
 
@@ -158,7 +158,7 @@ az deployment sub create \
     --template-file $templateFile
 ```
 
-Notice that you are creating a subscription-scoped deployment by using the `az deployment sub create` command, instead of the `az deployment group create` command you might be used to.
+Notice that you're creating a subscription-scoped deployment by using the `az deployment sub create` command, instead of the `az deployment group create` command you might be used to.
 
 ::: zone-end
 
@@ -176,11 +176,11 @@ New-AzSubscriptionDeployment `
   -TemplateFile $templateFile
 ```
 
-Notice that you are creating a subscription-scoped deployment by using the `New-AzSubscriptionDeployment` cmdlet, instead of the `New-AzResourceGroupDeployment` cmdlet you might be used to.
+Notice that you're creating a subscription-scoped deployment by using the `New-AzSubscriptionDeployment` cmdlet, instead of the `New-AzResourceGroupDeployment` cmdlet you might be used to.
 
 ::: zone-end
 
-Also, notice that you are explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata.
+Also, notice that you're explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 

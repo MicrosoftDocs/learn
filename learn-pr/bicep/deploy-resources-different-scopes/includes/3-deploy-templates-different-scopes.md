@@ -6,7 +6,7 @@ Bicep needs to know the scope at which a file will be deployed. This information
 
 :::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
-Notice that you are just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you'll tell Bicep exactly which management group you want to deploy the resources into.
+Notice that you're just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you'll tell Bicep exactly which management group you want to deploy the resources into.
 
 If you don't specify the `targetScope`, Bicep will assume the file is deploying to a resource group.
 

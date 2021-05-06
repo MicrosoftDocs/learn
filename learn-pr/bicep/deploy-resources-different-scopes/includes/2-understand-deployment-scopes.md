@@ -25,7 +25,7 @@ You're already familiar with deploying resources into resource groups, so let's 
 You might deploy to a subscription for these kinds of use cases:
 
 - You need to create a new resource group. A resource group is just a subscription-scoped resource itself.
-- You are using Azure Policy, and you want to define or apply a policy to all resources within the subscription. For example, our toy company's R&D department has asked us to deploy a policy that will restrict the list of virtual machine SKUs that can be created.
+- You're using Azure Policy, and you want to define or apply a policy to all resources within the subscription. For example, your toy company's R&D department has asked you to deploy a policy that will restrict the list of virtual machine SKUs that can be created.
 - You need to grant access to all of the resources within a subscription. For example, if your HR department has an Azure subscription that contains all of their Azure resources, you might create role assignments to allow everybody in your HR department to read the contents of the subscription.
 
 ## Management group-scoped resources
@@ -51,7 +51,7 @@ You might deploy to your tenant for these kinds of use cases:
   > [!NOTE]
   > Not all Azure customers can create subscriptions using infrastructure as code. [Depending on your billing relationship with Microsoft, this might not be possible.](/azure/cost-management-billing/manage/programmatically-create-subscription)
 
-- You are creating management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
+- You're creating management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
 Tenant-scoped deployments [require you have special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access).
 

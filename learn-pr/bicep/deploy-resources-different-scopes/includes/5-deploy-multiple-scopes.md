@@ -1,8 +1,8 @@
 Sometimes you need to deploy across multiple levels of your hierarchy from within one deployment. Here are some situations where you might want to do this:
 
 - You need to deploy resources across two different resource groups. For example, you might want to create a network security group in a shared resource group and also deploy a network interface for a virtual machine in a resource group for your application.
-- You are using a template to create a resource group, which is a subscription-scoped resource, and then want to deploy a storage account and other Azure resources into that resource group.
-- You are deploying a management group hierarchy, and want to also deploy some subscriptions, which are tenant-scoped resources.
+- You're using a template to create a resource group, which is a subscription-scoped resource, and then want to deploy a storage account and other Azure resources into that resource group.
+- You're deploying a management group hierarchy, and want to also deploy some subscriptions, which are tenant-scoped resources.
 
 Bicep enables you to create a deployment that works across different scopes by using the `scope` keyword.
 
