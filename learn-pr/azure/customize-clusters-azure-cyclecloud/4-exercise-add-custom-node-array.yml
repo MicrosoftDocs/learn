@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.customize-clusters-azure-cyclecloud.exercise-add-custom-node-array
+title: Exercise - Add a custom node array to an HPC cluster
+metadata:
+  unitType: exercise
+  title: Exercise - Add a custom node array to an HPC cluster
+  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  ms.date: 5/6/2021
+  author: anhoward
+  ms.author: anhoward
+  ms.topic: interactive-tutorial
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-add-custom-node-array.md)]
