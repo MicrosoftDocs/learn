@@ -39,3 +39,6 @@ With an active Azure subscription, your crew is ready to create an Azure Quantum
    > Your jobs will be uploaded to your Azure storage account and will be subject to storage charges.
 
 Congratulations! You're set up to start using the Azure Quantum service. Let's see some case studies of what you can do with Azure Quantum.
+
+> [!NOTE]
+> If you run into any issues with the setup or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).
