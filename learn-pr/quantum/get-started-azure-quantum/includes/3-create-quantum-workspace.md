@@ -4,11 +4,11 @@ With an active Azure subscription, your crew is ready to create an Azure Quantum
 
 1. Select **Create a resource**, type **Azure Quantum**, and press <kbd>Enter</kbd> to see the search results. On the results page, you should see a tile for the **Azure Quantum (preview)** service.
 
-   ![Screenshot progression for the Azure Quantum preview service.](../media/3-azure-quantum-preview-search.png)
+   ![Screenshot progression for the Azure Quantum preview service.](../media/3-azure-quantum-search.png)
 
 1. Select **Azure Quantum (preview)** and then select **Create**. This step opens a form to create a workspace.
 
-   ![Screenshot that shows creating a resource for the Azure Quantum preview service.](../media/3-azure-quantum-preview-create.png)
+   ![Screenshot that shows creating a resource for the Azure Quantum preview service.](../media/3-azure-quantum-create.png)
 
 1. Fill out the details of your workspace:
    * **Subscription:** The subscription that you want to associate with this workspace.
