@@ -54,7 +54,7 @@ Now that you've learned how our combinatorial optimization problem can be cast i
 
 ### Setup
 
-First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the following settings, which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by running `az quantum workspace show` through the Azure CLI.
+First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the following settings, which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by opening a command propmt and running `az quantum workspace show` through the Azure CLI. Open a new python file and run the following lines:
 
 ```python
 from azure.quantum import Workspace
