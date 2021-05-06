@@ -14,7 +14,7 @@ summary: In this learning path, you’ll learn how Azure provides options to enc
 prerequisites: |
  - Familiarity with current workloads that could benefit from moving to the cloud.
  - Familiarity with protection requirements across a variety of data classification.
-iconUrl: /learn/achievements/protect-public-sector-data.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
