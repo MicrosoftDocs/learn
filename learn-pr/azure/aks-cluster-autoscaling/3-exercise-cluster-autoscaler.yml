@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-cluster-autoscaling.3-exercise-cluster-autoscaler
-title: Exercise - Enable Cluster Scalability on AKS
+title: Exercise - Enable cluster scalability on AKS
 metadata:
   type: exercise
   title: Exercise - Enable cluster scalability on AKS

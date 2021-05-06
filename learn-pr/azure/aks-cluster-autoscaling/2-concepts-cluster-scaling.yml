@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-cluster-autoscaling.2-concepts-cluster-scaling
-title: Cluster Scalability Concepts
+title: Cluster scalability concepts
 metadata:
   type: knowledge_check
   title: Cluster scalability concepts
