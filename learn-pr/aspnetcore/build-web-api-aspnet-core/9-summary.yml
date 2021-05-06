@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-web-api-net-core.1-introduction
+uid: learn.build-web-api-net-core.9-summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: Summary and best practices for web APIs with ASP.NET Core.
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Introduction
+title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/9-summary.md)]
