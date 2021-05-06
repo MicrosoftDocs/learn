@@ -27,7 +27,7 @@ Navigate to the `Failures/Exceptions` blade - you can see a collection of except
 
 Click on an exception to see the end-to-end transaction and stacktrace in context:
 
-![end-to-end transaction and stacktrace in context](../media/4-end-to-end-transaction-details.jpg)
+![end-to-end transaction and stacktrace in context](../media/4-end-to-end-exception-details.jpg)
 
 Navigate to the `Metrics` blade - you can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
 The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections) and `http_client_requests`.
