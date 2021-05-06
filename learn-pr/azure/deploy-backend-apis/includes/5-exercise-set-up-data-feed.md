@@ -1,6 +1,4 @@
-Azure Functions can be used to do things like retrieve the latest data from a feed.
-
-In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active geofence(s).
+In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active geofence(s). In this exercise, you'll run the function locally before deploying it with GitHub Actions. Finally, you'll monitor the results in the Azure portal.
 
 ## Run Azure Functions locally
 

@@ -5,7 +5,7 @@ In the language of your choice (Node.js, Python, or .NET), you used an Azure Fun
 
 Overall, you learned how to create and deploy serverless APIs that manage application logic easily and scale automatically based on demand. You also learned the power of Azure SQL Database when it comes to processing JSON data and executing stored procedures. Finally, you learned how to deploy and configure Azure Logic Apps for orchestration or low-code/no-code tasks.
 
-If you continue in the learning path, the next module will cover creating a web application to serve the data on an interactive map, allowing users to see their geofences and the buses on monitored routes nearby. The next module will use Azure Static Web Apps, which combines the power of Azure App Service with Azure Functions.
+If you continue in the learning path, the next module will cover creating a web application to serve the data on an interactive map, allowing users to see their geofences and the buses on monitored routes nearby. The module will use Azure Static Web Apps, which combines the power of Azure App Service with Azure Functions.
 
 ## References
 

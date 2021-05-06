@@ -8,7 +8,7 @@ Recall in the catching the bus sample, you'll use resources including Azure SQL 
 > [!NOTE]
 > If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you did not complete the previous module, everything you need will be completed during this exercise.
 
-You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. The Azure Function will be completed and monitored in exercises later in this module.
+You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action. 
 
 ## Configure your environment
 
@@ -109,6 +109,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     The script will take several minutes to complete. While it's completing, you can configure your database for CI/CD with GitHub Actions.
 
+    > [!TIP]
+    > If you want to learn more about the Serverless database that you are deploying and the various commands, you can review the first module in the associated learning path, which goes into the details of building the foundation of modern applications with Azure SQL Database.
+
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
@@ -116,7 +119,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. Navigate to your forked repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
 1. Select **Settings** for the repository.
 
@@ -135,7 +138,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 > [!TIP]
 > If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
+1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**. What you've just done is enable the GitHub SQL Action which takes care of deploying the appropriate schema that is required by the database.
 
 1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data.
 
@@ -143,7 +146,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Start a sqlcmd session with the below commands. Note you'll need to add your server name and password.
+1. Start a sqlcmd session with the below commands (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
     ```bash
     TERM=dumb
@@ -207,7 +210,7 @@ Now that your database and GitHub repository are configured, it's time to deploy
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
     ```
 
-1. Run the following in the Cloud Shell to deploy the function in your language of choice.
+1. Run the following in the Cloud Shell to deploy an empty function in your language of choice.
 
     ::: zone pivot="csharp"
 

@@ -4,7 +4,7 @@ Recall in the bus-catching scenario, the goal is to ultimately send notification
 
 Here, you'll deploy a pre-configured Azure Logic App, which sends an email containing the bus route and status when triggered by an Azure Function. This exercise uses Outlook for notifications, but you could easily plug in an alternative such as Gmail.
 
-## Deploy Azure Logic App
+## Deploy the Azure Logic App
 
 The first step is to deploy the Azure Logic App using a combination of Azure PowerShell and ARM templates. You'll need to first gather some information from GitHub to access the ARM template from the Azure Cloud Shell.
 
@@ -12,7 +12,7 @@ The first step is to deploy the Azure Logic App using a combination of Azure Pow
 
 1. Make note of your GitHub repository (for example, `https://github.com/[username]/serverless-full-stack-apps-azure-sql`).
 
-1. The following script clones the repository and deploys an Azure Logic App according to an ARM template.
+1. The following script clones the repository and deploys an Azure Logic App according to an ARM template. ARM templates will not be discussed in this module, but you can think of them like a recipe for how to build an Azure service. This one is built to include the Outlook connector.
 
     ```powershell
     # Resource group name and resource group
@@ -34,7 +34,7 @@ The first step is to deploy the Azure Logic App using a combination of Azure Pow
 
 ## Review and update the Logic App
 
-The next step is to configure the Logic App and update the Application Setting for your Azure Function App.
+The next step is to configure the Logic App to connect to your email address and update the Application Setting for your Azure Function App.
 
 1. Once your Logic App is deployed, navigate to your Resource Group in the Azure portal and select the **Logic App** you deployed.
 
