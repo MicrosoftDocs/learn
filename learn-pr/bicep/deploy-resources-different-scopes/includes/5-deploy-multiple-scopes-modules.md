@@ -3,14 +3,20 @@ Sometimes you need to deploy across multiple levels of your hierarchy. Here are 
 - You need to deploy resources in two different resource groups.
 - You create a resource group, which is a subscription-scoped resource, and then want to deploy a storage account and other Azure resources into that resource group.
 - You create a subscription within a management group, and then want to create a resource group in the newly created subscription with some key resources like a virtual network.
-- You create a management group hierarchy by using a tenant-scoped deployment, and then you want to create subscriptions within that hierarchy.
+- TODO anything about MGs/tenants?
 
-Bicep enables you to create a deployment that works across different scopes by using Bicep modules.
+Bicep enables you to create a deployment that works across different scopes by using the `scope` keyword and Bicep modules.
+
+## Specify the scope for a single resource
+
+- The `scope` keyword on resources
 
 ## Specify the scope for a module
 
 - The `scope` keyword on modules
 - Allowed combinations
+
+TODO retest the below after v0.3.439
 
 | Parent | RG child | Subscription child | MG child | Tenant child |
 |-|-|-|-|-|
