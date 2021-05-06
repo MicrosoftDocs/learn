@@ -4,27 +4,27 @@ metadata:
   moduleType: standard  
   title: Accelerate High Performance Computing storage with Azure HPC Cache
   description: Accelerate NFS storage for HPC workloads using Azure HPC Cache.
-  ms.date: 3/17/2021  
+  ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 title: Accelerate High Performance Computing storage with Azure HPC Cache  
 summary: Create a virtual caching solution for NFS storage. Client machines will connect to the cache, read data, and process the data.
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+abstract: |
   By the end of this module, you will be able to: 
     - Understand what an Azure HPC Cache is.
     - List the pre-requisites for an Azure HPC Cache.
     - Create an Azure HPC Cache.
     - Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
     - Attach virtual client machines to read from the cache.
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+prerequisites: |
   - Familiarity with NFS storage concepts such as mount, export, and namespace.
   - Familiarity with networking concepts such as subnet, DNS, and TCP/UDP ports.
   - Familiarity with creating virtual machines in the Azure portal.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+iconUrl: /learn/achievements/accelerate-storage-with-hpc-cache.svg
+levels:
   - intermediate
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles:
   - administrator
   - technology-manager
   - solution-architect
@@ -32,7 +32,6 @@ products:
 - azure
 units:  
 - learn.accelerate-storage-with-hpc-cache.introduction
-# - learn.accelerate-storage-with-hpc-cache.what-is-hpc-cache
 - learn.accelerate-storage-with-hpc-cache.identify-requirements
 - learn.accelerate-storage-with-hpc-cache.create-the-cache
 - learn.accelerate-storage-with-hpc-cache.connect-to-storage
