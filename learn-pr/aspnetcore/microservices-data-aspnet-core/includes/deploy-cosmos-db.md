@@ -8,12 +8,20 @@ In this unit, you will:
 - Redeploy the coupon service.
 - Inspect the Azure Cosmos DB data with the **Data Explorer** from the Azure portal.
 
+> [!NOTE]
+> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
+>
+> ```bash
+> cd ~/clouddrive/aspnet-learn/src/ && \
+>   code .
+> ```
+
 ## Create an Azure Cosmos DB instance
 
 1. Run the following script:
 
     ```bash
-    ./create-azure-cosmos-db.sh
+    deploy/k8s/create-azure-cosmos-db.sh
     ```
 
     The script:
@@ -47,13 +55,13 @@ In this unit, you will:
     Retrieving Azure Cosmos DB connection string
     --------------------------------------------
     
-    ConnectionString: mongodb://eshop-learn-20210120180516594:B2ZpcheCnOeM5KWXkBGztLHF5Vrg2LggF42e4bl4RfLVdoO5DyYGIqxLCfcV70AQrhpB9D9BRWlLQ2spp1g5ng==@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+    ConnectionString: mongodb://eshop-learn-20210120180516594:[password]@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
     
     
     Environment variables
     ---------------------
     export ESHOP_COSMOSACCTNAME=eshop-learn-20210120180516594
-    export ESHOP_COSMOSDBCONNSTRING=mongodb://eshop-learn-20210120180516594:B2ZpcheCnOeM5KWXkBGztLHF5Vrg2LggF42e4bl4RfLVdoO5DyYGIqxLCfcV70AQrhpB9D9BRWlLQ2spp1g5ng==@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+    export ESHOP_COSMOSDBCONNSTRING=mongodb://eshop-learn-20210120180516594:[password]@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
     export ESHOP_IDTAG=20210120180516594
     
     Run the following command to update the environment
@@ -88,6 +96,12 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 ## Redeploy the coupon service
 
+1. Build and publish a new image to ACR with the following script:
+
+    ```bash
+    deploy/k8s/build-to-acr.sh --services coupon-api
+    ```
+
 1. You need to get the load balancer's IP address from the initial deployment. You can save it to an environment variable by running the following command:
 
     ```bash
@@ -97,8 +111,16 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 1. Run the following script:
 
     ```bash
-    ./deploy-application.sh --charts coupon
+    deploy/k8s/deploy-application.sh --charts coupon
     ```
+
+The preceding script uses Helm to deploy the *:::no-loc text="coupon":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+
+```console
+NAME                               READY   STATUS              RESTARTS   AGE
+coupon-7474cfc46f-bcz5f            0/1     ContainerCreating   0          2s
+coupon-86b5766658-qbb6h            0/1     Terminating         2          38m
+```
 
 After a few minutes, when you see all services running in the *WebStatus* health checks dashboard, you can run the app as you did before deleting the `nosqldata` service.
 
