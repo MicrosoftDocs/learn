@@ -17,8 +17,8 @@ summary: |
 abstract: |
   After completing this module, you'll be able to: 
     - Explain resource scopes including tenant-, management group-, and subscription-level resources.
-    - Deploy resources at different scopes using Bicep templates.
-    - Create Bicep modules that deploy at different scopes.
+    - Deploy resources at specific scopes using Bicep templates.
+    - Create Bicep files that deploy at multiple scopes.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with creating and deploying Bicep templates.
   - Understanding of child and extension resources.
@@ -43,7 +43,7 @@ units:
 - learn.azure.deploy-resources-different-scopes.understand-deployment-scopes
 - learn.azure.deploy-resources-different-scopes.deploy-templates-different-scopes
 - learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
-- learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes-modules
+- learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes
 - learn.azure.deploy-resources-different-scopes.exercise-deploy-multiple-scopes-modules
 - learn.azure.deploy-resources-different-scopes.knowledge-check
 - learn.azure.deploy-resources-different-scopes.summary

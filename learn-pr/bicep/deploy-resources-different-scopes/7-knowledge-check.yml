@@ -42,7 +42,7 @@ quiz:
       explanation: TODO
   - content: |
       You have written a Bicep file that includes this line:<br />
-      `targetScope = managementGroup`<br />
+      `targetScope = 'managementGroup'`<br />
       Which of these statements is true?
     choices:
     - content: The file can be used as a module within a template that deploys at management group scope.

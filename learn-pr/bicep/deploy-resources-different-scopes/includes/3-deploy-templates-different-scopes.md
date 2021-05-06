@@ -4,7 +4,7 @@ You now understand the different scopes that resources can be deployed at. In th
 
 Bicep needs to know the scope at which a file will be deployed. This information is important because Bicep needs to ensure that the resources you're deploying are valid for the scope you're using. You use the `targetScope` keyword to do tell Bicep that the resources in the template are for a specific scope. Here's an example of a Bicep file that will be deployed at the management group scope:
 
-:::code language="bicep" source="code/3-mg-scope.bicep" highlight="1" :::
+:::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
 Notice that you are just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you'll tell Bicep exactly which management group you want to deploy the resources into.
 
