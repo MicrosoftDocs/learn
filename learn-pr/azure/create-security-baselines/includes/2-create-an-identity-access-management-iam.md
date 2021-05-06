@@ -13,9 +13,7 @@ All non-Administrators should not have access due to the sensitive data and the 
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the top left, select the three bars, and then select **Azure Active Directory** > **Users** or **Groups**.
-
-1. Go to **User settings**.
+1. On the top left, select the three bars, and then select **Azure Active Directory** > **Users** > **User settings**.
 
 1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** restricts all non-administrators from accessing any Azure AD data in the administration portal, but does not restrict such access using PowerShell or another client such as Visual Studio.
 
@@ -27,7 +25,7 @@ Enable it for privileged and non-privileged users.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the left, select **Azure Active Directory** > **Users** > **All users**.
+1. On the left, select **Azure Active Directory** > **Users**.
 
 1. Select **Multi-Factor Authentication**.
 
@@ -41,7 +39,7 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the left, select **Azure Active Directory** > **Users** > **All users**.
+1. On the left, select **Azure Active Directory** > **Users**.
 
 1. Select **Multi-Factor Authentication**.
 
@@ -57,11 +55,9 @@ Ensure that no guest users exist, or alternatively if the business requires gues
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the left, select **Azure Active Directory** > **Users** > **All users**.
+1. On the left, select **Azure Active Directory** > **Users**.
 
-1. Select the **Show** dropdown, and select **Guest users only**.
-
-1. Verify that there are no guest users listed (`USER TYPE=Guest`).
+1. Type in search **guest** Verify that no guest users exist depending on your requirements (`USER TYPE=Guest`).
 
     ![Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.](../media/2-guest-users.png)
 
@@ -111,13 +107,10 @@ This should be set to **No**. Restricting invitations through administrators onl
 
 1. Go to **User settings**.
 
-1. Go to **External users**, and select **Manage external collaboration settings**.
+1. Go to **External users**, and select **External collaboration settings**.
 
 1. Ensure that **Members can invite** is set to **No**.
 
-    :::image type="complex" source="../media/2-members-can-invite.png" alt-text="Screenshot of the Azure portal showing Azure AD external collaboration settings with the members can invite setting tip shown.":::
-        Members can invite tip says, "Yes means that non-admin members of your directory can invite guests to collaborate on resources secured by your Azure AD, such as SharePoint sites or Azure resources. No means that only administrators can invite guests to your directory."
-    :::image-end:::
 
 ### Users to create and manage security groups - Level 2
 
@@ -157,7 +150,7 @@ Require administrators to register custom applications.
 
 1. Go to **User settings**.
 
-1. Ensure that **User can register applications** is set to **No**.
+1. Ensure that **App registrations** is set to **No**.
 
     ![Screenshot showing the Azure portal in the AAD users section showing app registration turned off](../media/2-app-registrations.png)
 

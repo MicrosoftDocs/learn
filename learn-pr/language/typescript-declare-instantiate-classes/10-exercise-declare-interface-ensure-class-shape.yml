@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.10-exercise-declare-interface-ensure-class-shape
+title: Exercise - Declare an interface to ensure class shape
+metadata:
+  title: Exercise - Declare an interface to ensure class shape
+  description: Learn how to define an interface that describes the properties and methods of a class and implement the interface in a class definition.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-exercise-declare-interface-ensure-class-shape.md)]

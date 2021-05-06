@@ -21,40 +21,40 @@ quiz:
     - content: 'DevOps'
       isCorrect: true
       explanation: 'Correct, this is part of one of the definitions for DevOps.'
-    - content: 'site reliability engineering (SRE)'
+    - content: 'Site reliability engineering (SRE)'
       isCorrect: false
       explanation: 'SRE focuses more on reliability than delivery.'
 
   - content: 'Which of these things is not a core part of the engineering culture of DevOps?'
     choices:
-    - content: 'learning'
+    - content: 'Learning'
       isCorrect: false
       explanation: 'Learning is part of the engineering culture of DevOps.'
-    - content: 'time management'
+    - content: 'Time management'
       isCorrect: true
       explanation: 'Time management is not a core part of the engineering culture of DevOps.'
-    - content: 'ownership'
+    - content: 'Ownership'
       isCorrect: false
       explanation: 'Ownership is part of the engineering culture of DevOps.'
-    - content: 'collaboration'
+    - content: 'Collaboration'
       isCorrect: false
       explanation: 'Collaboration is part of the engineering culture of DevOps.'
 
   - content: 'Which of these practices are common to both DevOps and SRE?'
     choices:
-    - content: 'monitoring/observability'
+    - content: 'Monitoring/Observability'
       isCorrect: false
       explanation: 'This is one of the common practices, but there are more.'
-    - content: 'proper incident response'
+    - content: 'Proper incident response'
       isCorrect: false
       explanation: 'This is one of the common practices, but there are more.'
-    - content: 'automation'
+    - content: 'Automation'
       isCorrect: false
       explanation: 'This is one of the common practices, but there are more.'
-    - content: 'collaboration'
+    - content: 'Collaboration'
       isCorrect: false
       explanation: 'This is one of the common practices, but there are more.'
-    - content: 'all of the above'
+    - content: 'All of the above'
       isCorrect: true
       explanation: 'Correct.'
 
@@ -63,6 +63,6 @@ quiz:
     - content: 'DevOps'
       isCorrect: false
       explanation: 'DevOps (for some definitions) focuses more on delivery.'
-    - content: 'site reliability engineering'
+    - content: 'Site reliability engineering'
       isCorrect: true
       explanation: 'Correct.'

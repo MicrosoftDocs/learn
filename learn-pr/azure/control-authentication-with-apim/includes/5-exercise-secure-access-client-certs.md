@@ -12,9 +12,9 @@ In this unit, you'll:
 
 ## Create self-signed certificate
 
-First, use the Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway.
+First, use the Azure Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway.
 
-1. To create the private key and the certificate, run these commands in the Cloud Shell:
+1. To create the private key and the certificate, run these commands in the Cloud Shell.
 
     ```bash
     pwd='Pa$$w0rd'

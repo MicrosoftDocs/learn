@@ -8,8 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Troubleshoot a network by using Network Watcher metrics and logs
-durationInMinutes: 5
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs.md)]

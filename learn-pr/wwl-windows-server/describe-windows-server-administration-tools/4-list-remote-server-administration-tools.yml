@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-windows-server-administration-tools.list-remote-server-administration-tools
+title: List Remote Server Administration Tools
+metadata:
+  title: List Remote Server Administration Tools
+  description: "List Remote Server Administration Tools"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-list-remote-server-administration-tools.md)]

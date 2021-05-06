@@ -2,7 +2,7 @@
 
 *Azure Machine Learning* is a cloud service that you can use to train and manage machine learning models. 
 
-In this module, you'll learn how to:
+In this module, you'll learn how to: 
 
 - Identify different kinds of machine learning model.
 - Use the automated machine learning capability of Azure Machine Learning to train and deploy a predictive model.

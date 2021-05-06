@@ -10,8 +10,8 @@ For example, in a binary classification model for loan repayment prediction, whe
 
 | Age | selection_rate | accuracy | recall | precision |
 | --- | -------------- | -------- | -------| -------- |
-| 50 or younger | 0.298178 | 0.89619 | 0.825926 | 0.825926 |
-| Over 50 | 0.708995 | 0.888889 | 0.937984 | 0.902985 |
+| 25 or younger | 0.298178 | 0.89619 | 0.825926 | 0.825926 |
+| Over 25 | 0.708995 | 0.888889 | 0.937984 | 0.902985 |
 
 ## Visualizing metrics in a dashboard
 

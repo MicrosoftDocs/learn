@@ -1,31 +1,6 @@
-Let's talk about dataframes. 
+DataFrames are a collection of data organized into named columns. DataFrames enable Apache Spark to understand the schema of the data, and optimize any execution plans on queries that will access the data held in the DataFrame. DataFrames are designed to process a large volume of data from a wide variety of data sources from structured data sources through to Resilient Distributed Datasets (RDDs) in either a batch or streaming data architecture. In short, DataFrames are to Apache Spark, what tables are to relational databases.
 
-What are dataframes?
-
-Basically you could view DataFrames as you might see in excel.
-It's like a box with squares in it, that organizes data, which we could also refer to as table of data. 
-
-What does a table of data mean?
-
-It is a single set of two-dimensional data that can have multiple rows and columns in the data. 
-Each row, is a sample of data. 
-Each column is a variable or parameter that is able to describe the row that contains the sample of data. 
-
-Just like you organize your shoe cabinet. 
-Each row of shoes in the cabinet is a sample of data. 
-You might have different type of shoes that is, sneakers, pumps, which you could organize accordingly. 
-These could become the variables or the column names for the shoes you put in the shoe cabinet. 
-
-What would happen though, if you have thousands and thousands of drawers?
-
-A DataFrame creates a data structure and it's one of the core data structures in Spark. 
-In Spark, it is a distributed collection of that data that is organized into columns that have names. 
-
-What you see in Data Engineering is that you start with reading or loading data that can be unstructured, semi-structured, or structured, store it in a DataFrame and start transforming that data in order to get insights. 
-You can use different functionalities in order to do so like using Spark SQL, PySpark, and others. 
-Usually when you see 'df' in some code it refers to a dataframe. 
-
-You can either create your own dataframe as this example shows:
+The first step is to construct a DataFrame. You can create a DataFrame and populate it with data at execution time as shown in the following example:
 
    ```python
    new_rows = [('CA',22, 45000),("WA",35,65000) ,("WA",50,85000)]
@@ -33,7 +8,9 @@ You can either create your own dataframe as this example shows:
    demo_df.show()
    ```
 
-Or load a file that contains data into a dataframe like in the below example where the open taxi dataset is used:
+In the example above, the variable named **new_rows** creates the data in the code segment to store in the DataFrame. Then a second variable named **demo_df** is created to use the spark.createDataFrame method, which refers to the **new_rows** variable in the first parameter, and in the second parameter defines the column heading names for the DataFrame as state, age, and salary. The third line uses the show method to output the results of the **demo_df** variable.
+
+However, it is more common to ingest data from a data source such as a file into a DataFrame as shown in the next example:
 
 ```python
 from azureml.opendatasets import NycTlcYellow
@@ -43,6 +20,6 @@ data_df = data.to_spark_dataframe()
 display(data_df.limit(10))
 ```
 
-Once you're at the stage where you'd like to manipulate the data that is stored in a DataFrame, you can use User-Defined Functions (UDFs) that are column-based and help you transform and manipulate the data stored in a DataFrame. 
+In this example, the New York Taxi open-source data is imported and stored in a variable named data. The second line creates an Apache Spark DataFrame in a variable named data_df using the to_spark_dataframe() method. Finally, 10 rows of data are returned back from the data_df variable using the display method.
 
-
+Once you're at the stage where you have populated a DataFrame with data, you manipulate the data stored in a DataFrame. The manipulation of data can be done with User Defined Functions (UDFs) that are column-based and help you transform and manipulate the data stored in a DataFrame.

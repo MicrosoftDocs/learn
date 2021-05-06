@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review what you've learned.
-  ms.date: 05/19/2020
+  ms.date: 04/13/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -30,16 +30,16 @@ quiz:
     choices:
     - content: "To automatically run test suites on each push"
       isCorrect: false
-      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+      explanation: "You can use GitHub Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
     - content: "To kick off a review process"
       isCorrect: false
-      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+      explanation: "You can use GitHub Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
     - content: "To automate common repetitive tasks, such as welcoming new contributors to a repository."
       isCorrect: false
-      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+      explanation: "You can use GitHub Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
     - content: "To upload a new secret to GitHub Secrets."
       isCorrect: true
-      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+      explanation: "You can use GitHub Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
   - content: "Which action would you use to access a repository's code from the virtual machine provided by GitHub Actions?"
     choices:
     - content: "```actions/upload-artifact```"

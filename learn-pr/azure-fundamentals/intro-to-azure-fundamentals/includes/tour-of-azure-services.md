@@ -4,7 +4,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 ## Azure overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWBg9Q]
 
 ## Azure services
 
@@ -82,7 +82,7 @@ Azure provides four main types of storage services.
 > | Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps.              |
 > | Azure File storage  | File shares that can be accessed and managed like a file server.                     |
 > | Azure Queue storage | A data store for queuing and reliably delivering messages between applications.      |
-> | Azure Table storage | A NoSQL store that hosts unstructured data independent of any schema.                |
+> | Azure Table storage | Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design..                |
 
 These services all share several common characteristics:
 

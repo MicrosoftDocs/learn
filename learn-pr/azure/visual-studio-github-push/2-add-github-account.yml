@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio-github-push.2-add-github-account
+title: Sign in to GitHub from Visual Studio
+metadata:
+  title: Sign in to GitHub from Visual Studio
+  description: This unit explains the authentication process for GitHub in Visual Studio
+  ms.date: 03/31/2021
+  author: prnadago
+  ms.author: prnadago
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-add-github-account.md)]

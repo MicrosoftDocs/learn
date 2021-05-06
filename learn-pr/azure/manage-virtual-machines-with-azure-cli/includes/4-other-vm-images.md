@@ -7,6 +7,9 @@ You can get a list of the available VM images using the following command.
 ```azurecli
 az vm image list --output table
 ```
+> [!NOTE] 
+  >  If you get an error az: command not found.  Type exit into the shell and try again. 
+
 
 This will output the most popular images that are part of an offline list built into the Azure CLI. However, there are _hundreds_ of image options available in the Azure Marketplace. 
 

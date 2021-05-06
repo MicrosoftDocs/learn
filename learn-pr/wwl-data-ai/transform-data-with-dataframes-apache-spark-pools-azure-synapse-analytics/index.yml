@@ -3,7 +3,7 @@ uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-a
 metadata:
   title: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
   description: "Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics"
-  ms.date: 11/25/2020
+  ms.date: 04/23/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   - Data Fundamentals
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/transform-data-dataframes-apache-spark-pools-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

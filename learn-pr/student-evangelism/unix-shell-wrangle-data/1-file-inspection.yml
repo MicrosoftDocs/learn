@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.unix-shell-wrangle-data.1-file-inspection
+metadata:
+  title: Perform file inspection in the UNIX shell
+  description: This unit describes how you can use the UNIX shell to inspect the contents of files before you do any data wrangling.
+  ms.date: 12/09/2020
+  author: trallard
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform file inspection in the UNIX shell
+durationInMinutes: 4
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/1-file-inspection.md)]

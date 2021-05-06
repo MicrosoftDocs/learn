@@ -1,6 +1,6 @@
 A _cmdlet_ (pronounced "command-let") is a compiled command. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. Thousands of cmdlets are available in your PowerShell installation. The challenge lies in discovering what they are and what they can do for you.
 
-Cmdlets are named according to a verb-noun naming standard. This pattern can help you to understand what they do and to search for them. It also helps cmdlet developers create consistent names. You can see the list of approved verbs by using the `Get-Verb` cmdlet. Verbs are organized by activity type and function. 
+Cmdlets are named according to a verb-noun naming standard. This pattern can help you to understand what they do and to search for them. It also helps cmdlet developers create consistent names. You can see the list of approved verbs by using the `Get-Verb` cmdlet. Verbs are organized by activity type and function.
 
 Here's a part of the output from running `Get-Verb`:
 
@@ -13,7 +13,7 @@ Clear       cl          Common         Removes all the resources from a contaiâ€
 
 This listing shows the verb and its description. Cmdlet developers should use an approved verb and also ensure that the verb description fits their cmdlet's function.
 
-Three core cmdlets allow you delve into what cmdlets exist and what they do:
+Three core cmdlets allow you to delve into what cmdlets exist and what they do:
 
 - **Get-Command**: The `Get-Command` cmdlet lists all of the available cmdlets on your system. Filter the list to quickly find the command you need.
 - **Get-Help**: Use the `Get-Help` core cmdlet to invoke a built-in help system. Or use an alias `help` command to invoke `Get-Help` but improve the reading experience by paginating the response.
@@ -21,9 +21,9 @@ Three core cmdlets allow you delve into what cmdlets exist and what they do:
 
 ## Locate commands by using Get-Command
 
-When you run the `Get-Command` cmdlet in the shell, you get a list of every command that's installed in PowerShell. Because thousands of commands are installed, you need a way to filter the response so you can quickly locate the command that you need. 
+When you run the `Get-Command` cmdlet in the shell, you get a list of every command that's installed in PowerShell. Because thousands of commands are installed, you need a way to filter the response so you can quickly locate the command that you need.
 
-To filter the list, keep in mind the verb-noun naming standard for cmdlets. For example, in the `Get-Random` command, `Get` is the verb and `Random` is the noun. Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string. You can add pattern-matching characters to that string to ensure you express that, for example, a flag's value should start or end with a certain string.  
+To filter the list, keep in mind the verb-noun naming standard for cmdlets. For example, in the `Get-Random` command, `Get` is the verb and `Random` is the noun. Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string. You can add pattern-matching characters to that string to ensure you express that, for example, a flag's value should start or end with a certain string.
 
 These examples show how to use flags to filter a command list:
 
@@ -55,7 +55,7 @@ Get-Help -Name name-of-command
 
 New versions of PowerShell don't include the help system by default. The first time you run `Get-Help`, you're asked to install the help files. You can also run the `Update-Help` cmdlet to install the help files. Because a call to `Update-Help` downloads many help files, the command can fetch only once per day by default. You can override this fetching behavior by using the `-Force` flag.
 
-You update the help files differently on Windows compared to Linux or macOS. The process differs because when you run the `Update-Help` cmdlet, help files are fetched over the internet by matching your computer's culture. On Windows, a culture is already installed, but it's missing on Linux and macOS. So you need to specify a culture when you update help files on Linux and macOS. 
+You update the help files differently on Windows compared to Linux or macOS. The process differs because when you run the `Update-Help` cmdlet, help files are fetched over the internet by matching your computer's culture. On Windows, a culture is already installed, but it's missing on Linux and macOS. So you need to specify a culture when you update help files on Linux and macOS.
 
 Here's an example command:
 
@@ -71,7 +71,7 @@ When you invoke `Get-Help` on a cmdlet, a help page is returned. The page includ
 
 - **NAME**: This section provides the name of the command.
 - **SYNTAX**: This section shows ways to call the command by using a combination of flags and sometimes also allowed parameters.
-- **ALIASES**: This section lists any aliases for a command. An alias is a different name for a command, and it can be used to invoke the command. 
+- **ALIASES**: This section lists any aliases for a command. An alias is a different name for a command, and it can be used to invoke the command.
 - **REMARKS**: This section provides information about what commands to run to get more help for this command.
 - **PARAMETERS**: This section provides details about the parameter. It lists its type, a longer description, and acceptable values, if applicable.
 
@@ -80,9 +80,7 @@ When you invoke `Get-Help` on a cmdlet, a help page is returned. The page includ
 If you don't want to display the full help page, narrow down the response by adding flags to your `Get-Help` command. Here are some flags you can use:
 
 - **Full**: This flag returns a detailed help page. It specifies information like parameters, inputs, and outputs that you don't get in the standard response.
-
 - **Detailed**: This flag's response looks like the standard response, but it includes a section for parameters.
-
 - **Examples**: This flag returns only examples, if any exist.
 - **Online**: This flag opens a web page for your command.
 - **Parameter**: This flag requires a parameter name as an argument. It lists a specific parameter's properties.
@@ -99,9 +97,9 @@ The `Get-Help` command returns the entire help page. This page might not provide
   
 ## Discover objects by using Get-Member
 
-When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all of the available information for the response. You can inspect the object to learn more by using the cmdlet `Get-Member`. 
+When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all of the available information for the response. You can inspect the object to learn more by using the cmdlet `Get-Member`.
 
-The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so you can filter the output. A typical command-line invocation of `Get-Member` can look like the following example:
+The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so that you can filter the output. A typical command-line invocation of `Get-Member` can look like the following example:
 
 ```bash
 Get-Process -Name name-of-process | Get-Member
@@ -129,7 +127,7 @@ The first row indicates that the type is `System.Diagnostics.Process`. Use this 
 Get-Command -ParameterType Process
 ```
 
-The result is a list of cmdlets that operate on this type. Little by little you can learn more about PowerShell by using `Get-Member` and learning to interpret its result.
+The result is a list of cmdlets that operate on this type. Little by little, you can learn more about PowerShell by using `Get-Member` and learning to interpret its result.
 
 > [!TIP]
 > PowerShell is meant to be learned a little at a time. A great way to discover related cmdlets is by using the returned type to search for cmdlets by type.

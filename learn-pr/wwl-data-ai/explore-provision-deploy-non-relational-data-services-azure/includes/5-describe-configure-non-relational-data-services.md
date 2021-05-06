@@ -11,7 +11,7 @@ The default connectivity for Azure Cosmos DB and Azure Storage is to enable acce
 
 ### Configure connectivity to virtual networks and on-premises computers
 
-To restrict connectivity, use the **Firewalls and virtual networks** page for a service. To limit connectivity, choose **Selected networks**. Three further sections will appear, labeled **Virtual Network**, **Firewall**, and **Exceptions**.
+To restrict connectivity, use the **Networking** page for a service. To limit connectivity, choose **Selected networks**. Three further sections will appear, labeled **Virtual Network**, **Firewall**, and **Exceptions**.
 
 In the **Virtual networks** section, you can specify which virtual networks are allowed to route traffic to the service. When you create items such as web applications and virtual machines, you can add them to a virtual network. If these applications and virtual machines require access to your resource, add the virtual network containing these items to the list of allowed networks.
 
@@ -21,10 +21,10 @@ The **Exceptions** setting allows you to enable access to any other of your serv
 
 For detailed information read [Configure Azure Storage firewalls and virtual networks](https://docs.microsoft.com/azure/storage/common/storage-network-security).
 
-The image below shows the **Firewalls and virtual networks** page for an Azure Storage account. Other services have the same, or similar, page.
+The image below shows the **Networking** page for an Azure Storage account. Other services have the same, or similar, page.
 
 > [!div class="mx-imgBorder"]
-> ![Image of the **Firewalls and virtual networks** page for a storage account in the Azure portal](../media/5-vnet-firewall.png)
+> ![Image of the **Networking** page for a storage account in the Azure portal](../media/5-vnet-firewall.png)
 
 ### Configure connectivity from private endpoints
 
@@ -86,13 +86,13 @@ You add role assignments to a resource in the Azure portal using the **Access co
 > [!div class="mx-imgBorder"]
 > ![Image of the **Access control (IAM)** page for a storage account in the Azure portal](../media/5-access-control-page.png)
 
-## Configure advanced security
+## Configure security
 
-Apart from authentication and authorization, many services provide additional protection through advanced security.
+Apart from authentication and authorization, many services provide additional protection through security.
 
-Advanced security implements threat protection and assessment. Threat protection adds security intelligence to your service. This intelligence monitors the service and detects unusual patterns of activity that could be harmful, or compromise the data managed by the service. Assessment identifies potential security vulnerabilities and recommends actions to mitigate them. 
+Security implements threat protection and assessment. Threat protection tracks security incidents and alerts across your service. This intelligence monitors the service and detects unusual patterns of activity that could be harmful, or compromise the data managed by the service. Recommendations identifies potential security vulnerabilities and recommends actions to mitigate them. 
 
-You're charged an additional fee for this feature. The image below shows the **Advanced security** page for Azure storage. The corresponding page for other non-relational services, such as Cosmos DB, is similar.
+The image below shows the **Security** page for Azure storage. The corresponding page for other non-relational services, such as Cosmos DB, is similar.
 
-> ![Image of the **Advanced security** page for a storage account in the Azure portal](../media/5-advanced-security.png)
+> ![Image of the **Security** page for a storage account in the Azure portal](../media/5-advanced-security.png)
 

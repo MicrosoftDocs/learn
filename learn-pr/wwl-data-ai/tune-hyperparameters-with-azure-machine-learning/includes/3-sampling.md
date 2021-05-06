@@ -41,7 +41,7 @@ from azureml.train.hyperdrive import BayesianParameterSampling, choice, uniform
 
 param_space = {
                  '--batch_size': choice(16, 32, 64),
-                 '--learning_rate': uniform(0.5, 0.1)
+                 '--learning_rate': uniform(0.05, 0.1)
               }
 
 param_sampling = BayesianParameterSampling(param_space)

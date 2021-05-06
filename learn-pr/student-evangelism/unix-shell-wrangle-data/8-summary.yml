@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.unix-shell-wrangle-data.8-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/09/2020
+  author: trallard
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

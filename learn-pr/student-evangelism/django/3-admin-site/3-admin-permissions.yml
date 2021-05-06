@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.admin-site.admin-permissions 
+title: Permissions for the admin site 
+metadata:
+  title: Permissions for the admin site
+  description: When it comes to data, security is a key concern. We will explore how Django manages permissions for the admin site.
+  ms.date: 2/26/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-admin-permissions.md)]

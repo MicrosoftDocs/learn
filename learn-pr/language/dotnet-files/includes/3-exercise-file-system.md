@@ -16,13 +16,13 @@ In this exercise, you'll write a .NET program that can search for files called *
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Create a new .NET Console project by entering the following commands in Azure Cloud Shell.
+1. Create a new .NET Console project by running the following commands in Azure Cloud Shell.
 
     ```bash
     dotnet new console -n files-module -o .
     ```
 
-1. Open the Cloud Shell editor by entering the following command in Cloud Shell and selecting the <kbd>Enter</kbd> key.
+1. Open Cloud Shell editor by running the following command in Cloud Shell, and pressing <kbd>Enter</kbd>.
 
     ```bash
     code .
@@ -84,15 +84,15 @@ You need to find all the sales.json files in all folders.
     }
     ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
 ## Run the program
 
-1. Enter the following command into Cloud Shell to run the program.
-    
+1. Run the following command into Cloud Shell to run the program.
+
     ```bash
     dotnet run
-    ``` 
+    ```
 
 1. The program should show the following output.
 

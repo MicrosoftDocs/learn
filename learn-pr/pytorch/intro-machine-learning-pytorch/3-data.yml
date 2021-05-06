@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-machine-learning.data
+title: Load data with PyTorch Datasets and DataLoaders
+metadata:
+  title: Load data with PyTorch Datasets and DataLoaders
+  description: Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity.
+  author: cassieview
+  ms.author: cassieb
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/3-data.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the difference between a PyTorch `DataSet` and a PyTorch `DataLoader`"
+      choices:
+        - content: "A `DataSet` is designed to work with _batches_ of data while a `DataLoader` is designed for retrieval of _individual_ data items."
+          isCorrect: false
+          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+        - content: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+          isCorrect: true
+          explanation: "Correct, a `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+        - content: "The `DataLoader` class is the parent of the `DataSet` class"
+          isCorrect: false
+          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+        - content: "The `DataSet` class is the parent of the `DataLoader` class"
+          isCorrect: false
+          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."

@@ -49,7 +49,7 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
     ![Screenshot showing the AD creation process](../media/2-create-directory.png)
 
-1. Select **Create** to create the new directory. A free tier directory where you can add users will be created, create roles, register the apps and devices, and control licenses.
+1. Select **Create** to create the new directory. A free tier directory will be created where you can add users, create roles, register apps and devices, and control licenses.
 
 After you have created the directory, you can navigate to the dashboard that lets you control all directory aspects.
 

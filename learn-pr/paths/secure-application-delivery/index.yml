@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.secure-application-delivery
+metadata:
+  title: Introduction to Secure Application Delivery with Azure network security
+  description: Learn to protect your network from cyber security attacks with secure application delivery.
+  ms.date: 04/20/2021
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Secure Application Delivery with Azure network security
+prerequisites: |
+  - Beginner-level knowledge of cloud computing, including scalability and availability.
+  - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
+  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets.  
+summary: |
+  Introduction to key Azure network security services for secure application delivery
+iconUrl: /learn/achievements/secure-application-delivery.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- azure-front-door
+- azure-web-application-firewall
+- azure-private-link
+- azure-bastion
+modules:
+- learn.intro-to-azure-front-door
+- introduction-azure-web-application-firewall
+- introduction-azure-private-link
+- learn.intro-to-azure-bastion
+trophy:
+  uid: learn.secure-application-delivery.trophy

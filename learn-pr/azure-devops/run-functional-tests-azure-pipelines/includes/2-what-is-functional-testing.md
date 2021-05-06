@@ -106,7 +106,7 @@ We've already covered the importance of writing tests. But just to emphasize it,
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-ensure-quality-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBfM]
 
 ## What does the team choose?
 

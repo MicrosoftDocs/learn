@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'in-memory caching'
       isCorrect: false
-      explanation: 'In-memory caching can improve performance but it will not increase your database resources.'
+      explanation: 'In-memory caching can improve performance, but it will not increase your database resources.'
     - content: 'decoupling'
       isCorrect: false
       explanation: 'Decoupling is a change that can help with differing resource needs between different dependent services.'
     - content: 'sharding'
       isCorrect: true
-      explanation: 'Correct, this is a way to scale out our database resources.'
+      explanation: 'Correct. This technique is a way to scale out our database resources.'
 
   - content: 'What consistency model offers a linearizability guarantee?'
     choices:

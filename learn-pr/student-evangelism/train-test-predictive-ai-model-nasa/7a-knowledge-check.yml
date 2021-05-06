@@ -3,9 +3,9 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.7a-knowledge-c
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Contains interactive questions that validate whether the learner accomplished the learning objectives.
-  ms.date: 07/22/2020
-  author: angevin17
+  description: Answer some questions to see what you learned in the lesson.
+  ms.date: 04/28/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -37,12 +37,12 @@ quiz:
       explanation: "Incorrect. The accuracy of an AI model doesn't refer to the details of testing, only to the success rate of predictions."
   - content: "How can you increase the accuracy of an AI model?"
     choices:
-    - content: "By training the model an additional five times."
+    - content: "By training the model five more times."
       isCorrect: false
       explanation: "Incorrect. Training the model more times won't necessarily increase the accuracy of the model."
-    - content: "By decreasing the number of epochs."
+    - content: "By reducing the number of epochs."
       isCorrect: false
-      explanation: "Incorrect. Decreasing the number of epochs during training won't necessarily increase the accuracy of the model."
+      explanation: "Incorrect. Reducing the number of epochs during training won't necessarily increase the accuracy of the model."
     - content: "By adding more images and increasing the number of epochs."
       isCorrect: true
       explanation: "Correct! You can increase the accuracy of an AI model by adding more images and epochs when you train the model."

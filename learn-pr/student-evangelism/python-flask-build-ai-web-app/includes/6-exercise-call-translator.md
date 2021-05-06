@@ -60,7 +60,7 @@ The top line will import libraries that we'll use later, when making the call to
         # Call render template, passing the translated text,
         # original text, and target language to the template
         return render_template(
-            'result.html',
+            'results.html',
             translated_text=translated_text,
             original_text=original_text,
             target_language=target_language

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.manage-database
+title: Manage the database
+metadata:
+  title: Manage the database
+  description: Explore the core concepts of working with the database through Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-manage-database.md)] 

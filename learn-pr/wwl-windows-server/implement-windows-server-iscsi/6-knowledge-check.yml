@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iscsi.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the minimum recommended available bandwidth of a network suitable for iSCSI traffic?"
+    choices:
+    - content: "100 Mbps"
+      isCorrect: false
+      explanation: "That's incorrect. To ensure sufficient performance, the network should provide the throughput of at least 1 Gbps."
+    - content: "1 Gbps"
+      isCorrect: true
+      explanation: "That's correct. To ensure sufficient performance, the network should provide the throughput of at least 1 Gbps."
+    - content: "40 Gbps"
+      isCorrect: false
+      explanation: "That's incorrect. To ensure sufficient performance, the network should provide the throughput of at least 1 Gbps."
+  - content: "What type of authentication does iSCSI support?"
+    choices:
+    - content: "Kerberos"
+      isCorrect: false
+      explanation: "That's incorrect. iSCSI supports CHAP to authenticate initiator connections and reverse CHAP to enable the initiator to authenticate the iSCSI target."
+    - content: "CHAP"
+      isCorrect: true
+      explanation: "That's correct. iSCSI supports CHAP to authenticate initiator connections and reverse CHAP to enable the initiator to authenticate the iSCSI target."
+    - content: "PAP"
+      isCorrect: false
+      explanation: "That's incorrect. iSCSI supports CHAP to authenticate initiator connections and reverse CHAP to enable the initiator to authenticate the iSCSI target."
+  - content: "Which of the following distinguishes MPIO from MCS?"
+    choices:
+    - content: "Automatic failover"
+      isCorrect: false
+      explanation: "That's incorrect. Both MPIO and MCS support automatic failover."
+    - content: "Multiple, concurrent sessions to the same target over different network paths"
+      isCorrect: true
+      explanation: "That's correct. Microsoft MPIO allows the initiator to establish multiple sessions to the same target over different network paths. MCS enables multiple TCP/IP connections from the initiator to the target for the same iSCSI session."
+    - content: "Supports load balancing policies"
+      isCorrect: false
+      explanation: "That's incorrect. Both MCS and MPIO support load balancing policies."

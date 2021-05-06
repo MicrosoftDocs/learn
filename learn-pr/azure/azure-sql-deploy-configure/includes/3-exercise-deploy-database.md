@@ -7,7 +7,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the top search bar, enter **Azure SQL** and review what appears.  
+1. In the top search bar, enter **Azure SQL** and wait for results so you can review what appears.  
 
     There are a lot of items and categories here, but basically this menu gives you filters for what you can search on. Let's break them down:
     * **Services**: If you select this, you can see your existing resources (that is, already deployed) all together. For example, if you selected Azure SQL, you would see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
