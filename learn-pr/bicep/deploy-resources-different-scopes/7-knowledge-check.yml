@@ -10,7 +10,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 123
+durationInMinutes: 4
 content: |
 quiz:
   questions:
@@ -21,25 +21,38 @@ quiz:
     choices:
     - content: "`targetScope = 'tenant'`"
       isCorrect: false
-      explanation: TODO
+      explanation: |
+        Role definitions can't be created at the tenant scope.
+        Since you want to use the role definition throughout your whole organization, you could consider deploying it to the root management group instead.
     - content: "`targetScope = 'managementGroup'`"
       isCorrect: true
-      explanation: TODO
+      explanation: |
+        You should deploy the role definition to the root management group, so that it is inherited by all of your Azure resources throughout your organization.
+        Role definitions can't be created at the tenant scope.
     - content: "`targetScope = 'subscription'`"
       isCorrect: false
-      explanation: TODO
+      explanation: |
+        Although you can deploy role definitions at a subscription scope, they won't be available to your whole organization.
   - content: |
       Which of these statements is true?
     choices:
-    - content: The `scope` keyword can be used on any resource.
+    - content: You can deploy a management group from any scope.
       isCorrect: false
-      explanation: TODO
-    - content: The `scope` keyword can only be used on modules.
-      isCorrect: false
-      explanation: TODO
-    - content: The `scope` keyword can only be used on modules and extension resources.
+      explanation: |
+        Management groups are a tenant-scoped resource.
+        You can use Bicep files that have a `targetScope` other than `tenant`, but you'll need to explicitly set the `scope` to `tenant()`.
+    - content: Management groups must be deployed at the `tenant` scope.
       isCorrect: true
-      explanation: TODO
+      explanation: |
+        Management groups are a tenant-scoped resource.
+        You can use Bicep files that have a `targetScope` other than `tenant`, but you'll need to explicitly set the `scope` to `tenant()`.
+    - content: Management groups must be deployed in the scope of a parent management group.
+      isCorrect: false
+      explanation: |
+        Management groups are a tenant-scoped resource.
+        You can use Bicep files that have a `targetScope` of `managementGroup`, but you'll need to explicitly set the `scope` to `tenant()`.
+        Also, the hierarchy of management groups doesn't depend on how they're deployed.
+        You set a management group's parent as one of its properties.
   - content: |
       You have written a Bicep file that includes this line:<br />
       `targetScope = 'managementGroup'`<br />
@@ -47,10 +60,13 @@ quiz:
     choices:
     - content: The file can be used as a module within a template that deploys at management group scope.
       isCorrect: true
-      explanation: TODO
+      explanation: | 
+        Bicep files that target a management group can include modules that are set to use the `managementGroup` target scope.
     - content: The file can be used as a module within a template that deploys at subscription scope.
       isCorrect: false
-      explanation: TODO
+      explanation: |
+        Bicep files that target a subscription can't include modules that are set to use the `managementGroup` target scope.
     - content: The file can be used as a module within a template that deploys at resource group scope.
       isCorrect: false
-      explanation: TODO
+      explanation: |
+        Bicep files that target a resource group can't include modules that are set to use the `managementGroup` target scope.

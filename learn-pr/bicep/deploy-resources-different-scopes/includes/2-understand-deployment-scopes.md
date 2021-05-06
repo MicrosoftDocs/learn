@@ -6,10 +6,10 @@ Azure has a hierarchical resource structure with multiple levels of management.
 
 :::image type="content" source="../media/2-hierarchy.png" alt-text="Diagram that shows an Azure tenant, three management groups, three subscriptions, and four resource groups." border="false":::
 
-- Your **tenant** (:::image type="icon" source="../media/callout-01.png":::) corresponds to your Azure Active Directory instance. Typically an organization only has one Azure AD instance. This acts as the root of the resource hierarchy.
-- **Management groups** (:::image type="icon" source="../media/callout-02.png":::) provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups. You might create different management groups for different parts of your organization, or for subscriptions that need to have different types of management. You can apply Azure Policies and access control restrictions to management groups, and these are inherited by all subscriptions within that management group's hierarchy.
-- **Subscriptions** (:::image type="icon" source="../media/callout-03.png":::) act as a billing account, and contain resource groups and resources.
-- **Resource groups** (:::image type="icon" source="../media/callout-04.png":::) logically group resources together, and let you manage and control them as a single unit.
+:::image type="icon" source="../media/callout-01.png"::: Your **tenant** corresponds to your Azure Active Directory instance. Typically an organization only has one Azure AD instance. This acts as the root of the resource hierarchy.
+:::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups. You might create different management groups for different parts of your organization, or for subscriptions that need to have different types of management. You can apply Azure Policies and access control restrictions to management groups, and these are inherited by all subscriptions within that management group's hierarchy.
+:::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as a billing account, and contain resource groups and resources.
+:::image type="icon" source="../media/callout-04.png"::: **Resource groups** logically group resources together, and let you manage and control them as a single unit.
 
 By understanding these levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
 
