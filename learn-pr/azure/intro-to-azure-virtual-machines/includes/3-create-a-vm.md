@@ -24,9 +24,11 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
     The *Azure Marketplace* appears in the **Create a resource** pane.
 
-1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and then search for and select **Ubuntu Server**. The **Marketplace** pane appears with many Ubuntu Server options.
+1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
 
-1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** pane appears. Select **Create**. The **Create virtual machine** pane appears.
+1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** pane appears.
+
+1. Select **Create**. The **Create virtual machine** pane appears.
 
 ### Configure the VM
 
