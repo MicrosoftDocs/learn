@@ -81,7 +81,7 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Log in to Azure by running the following command:
+1. Log in to Azure by opening a command prompt, and running the following command:
 
    ```azcli
    az login
