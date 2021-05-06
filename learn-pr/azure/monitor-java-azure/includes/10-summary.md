@@ -31,3 +31,5 @@ For more information about using Azure with Java, see [Azure for Java developers
 For more information about using Monitoring with Azure Database for MySQL, see [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
 
 For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/java/api/overview/azure/core-tracing-opentelemetry-readme?WT.mc_id=java-00000-ropreddy).
+
+For more information on Application Insights for web pages see [Application Insights for web pages](https://docs.microsoft.com/en-gb/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
