@@ -14,61 +14,66 @@ Azure has a hierarchical resource structure with multiple levels of management.
 By understanding these levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
 
 > [!NOTE]
-> *Extension resources* are a special class of resources that are deployed into the scope of another Azure resource. For example, a resource lock is deployed onto a resource like a storage account. There is a learning module that discusses extension resources. TODO can we link to the module?
+> *Extension resources* are resources that are deployed to the scope of another Azure resource. For example, a resource lock is deployed onto a resource like a storage account. There is a learning module that discusses extension resources.
+
+<!-- TODO can we link to the module? Check with Tom -->
+
+You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
 
 ## Subscription-scoped resources
 
 You might deploy to a subscription for these kinds of use cases:
 
-- You need to create a new resource group.
-- You are using Azure Policy, and you want to define or apply a policy to all resources within the subscription. For example, if you've got an Azure subscription for a project your team is working on, you might consider creating a policy to restrict the list of virtual machine SKUs that can be created.
+- You need to create a new resource group. A resource group is just a subscription-scoped resource itself.
+- You are using Azure Policy, and you want to define or apply a policy to all resources within the subscription. For example, our toy company's R&D department has asked us to deploy a policy that will restrict the list of virtual machine SKUs that can be created.
 - You need to grant access to all of the resources within a subscription. For example, if your HR department has an Azure subscription that contains all of their Azure resources, you might create role assignments to allow everybody in your HR department to read the contents of the subscription.
 
 ## Management group-scoped resources
 
 You might deploy to a management group for these kinds of use cases:
 
-- You need to create Azure subscriptions.
-  > [!NOTE]
-  > Depending on your billing agreement with Microsoft, you may not be able to create subscriptions using infrastructure as code. TODO link
-- You need to grant access to all of the resources within any subscriptions that are within the management group hierarchy. For example, your cloud operations team might need to have some level of access to every subscription in your organization. You can create a role assignment at your root management group, which grants your cloud operations team access to everything in your environment.
+- You need to grant access to all of the resources within any subscriptions that are within the management group hierarchy. For example, your cloud operations team might need to have access to every subscription in your organization. You can create a role assignment at your root management group, which grants your cloud operations team access to everything in your environment.
+
   > [!CAUTION]
-  > Be extremely careful when you grant access across a management group. Make sure your organization follows best practices regarding identity management and authentication, and don't grant access that isn't required.
+  > Be extremely careful when you grant access to resources using management groups, and especially the root management group. Remember that every resource underneath the management group in the hierarchy will inherit the role assignment. Make sure your organization follows best practices regarding identity management and authentication, and don't grant access that isn't required.
+
 - You need to apply policies across your entire organization. For example, your organization might have a policy that resources cannot be created in certain geographic regions, under any circumstances. You might apply a policy to your root management group that will block creation of resources in that region.
 
-TODO note that MGs have to be initialized
+> [!NOTE]
+> Before you use management groups for the first time, [you need to set them up for your Azure environment](/azure/governance/management-groups/overview#initial-setup-of-management-groups).
 
 ## Tenant-scoped resources
 
-Tenant-scoped deployments can be used to create management groups. A single root management group is created by Azure, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
+You might deploy to your tenant for these kinds of use cases:
 
-TODO confirm - are MGs created using MG scoped deployments or tenant scoped deployments?
+- You need to create Azure subscriptions. Even though subscriptions might be put into management groups, the creation of a subscription requires a tenant-scoped deployment.
 
-TODO check if you can create subscriptions at tenant scope or if that has to be done at MG scope
+  > [!NOTE]
+  > Not all Azure customers can create subscriptions using infrastructure as code. [Depending on your billing relationship with Microsoft, this might not be possible.](/azure/cost-management-billing/manage/programmatically-create-subscription)
 
-TODO note that tenant deployments require special permission
+- You are creating management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
+
+Tenant-scoped deployments [require you have special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access).
 
 > [!TIP]
 > You can't create policies or role assignments at the tenant scope. However, if you need to grant access or apply policies across your whole organization, you can deploy these resources to the root management group.
 
 ## Resource IDs
 
-When you're working with resources at subscription, management group, and tenant scope, resource IDs look a bit different to normal.
-
-A subscription-scoped resource ID looks like this:
+Subscription-scoped resources have IDs that look quite familiar. For example. here's a resource ID that represents a resource group, which is a subscription-scope resource:
 
 ```
-TODO
+/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment
 ```
 
-This is similar to a normal resource, but it doesn't include the resource group name, unless you are actually referring to a resource group:
+Here's a visual representation of the same information:
 
-```
-TODO
-```
+:::image type="content" source="../media/2-subscription-resource-id.png" alt-text="Resource ID for a resource group." border="false":::
 
-At a management group scope, TODO
+When you're working with resources at a management group or tenant scope, resource IDs can look a bit different to normal. The format depends on the resource itself.
 
-At a tenant scope, TODO
+* TODO management groups - seem to be of the form `/providers/microsoft.management/managementGroups/ManagementGroupName`. TODO do they inherit their parents' names?
+* TODO role definitions at MG scope - ?
+* TODO subscriptions - will be `/subscriptions/<subscription-id>`
 
 In the next unit, you'll learn how to create Bicep files that target each of these scopes.
