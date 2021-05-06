@@ -6,7 +6,7 @@ metadata:
   description: "Find moments in a video"
   ms.date: 10/24/2020
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-python
