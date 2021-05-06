@@ -1,4 +1,4 @@
-Modern applications, like the bus-catching scenario, require modern databases. Let's explore how Azure SQL Database meets the needs of modern applications.
+Once you've configured your environment, you're ready to start analyzing and testing certain components of a potential solution architecture. In the bus-catching scenario, and for many other modern applications, a modern database is required to store, process, and serve data. Let's explore how Azure SQL Database meets the needs of modern applications.
 
 ## Pay only for what you need, when you need it
 
