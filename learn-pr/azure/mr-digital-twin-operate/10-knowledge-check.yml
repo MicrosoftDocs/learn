@@ -30,18 +30,18 @@ quiz:
       explanation: ""
     - content: "False"
       isCorrect: false
-      explanation: "Azure service availability varies by region.  Please refer to the Products available by region to learn which services are available by region.  There may be additional fees associated with inter-region, inter service transactions.  "
+      explanation: "Azure service availability varies by region.  Refer to the Products available by region to learn which services are available by region.  There may be extra fees associated with inter-region, inter-service transactions.  "
   - content: "What approach is the most efficient means to create assets in Unity that connect to ADT?"
     choices:
     - content: "Create one asset in the Scene and copy-paste it so that all parameters are transferred to the copy."
       isCorrect: false
-      explanation: "Although this can be a quick approach to duplicate assets, it is still a manual approach and requires manual manipulation after to copy-paste."
+      explanation: "Although this can be a quick approach to duplicate assets, it's still a manual approach and requires manual manipulation after to copy-paste."
     - content: "Develop a ScriptableObject to create assets at runtime based on a core Prefab"
       isCorrect: true
-      explanation: "ScriptableObjects are the quickest way to create many assets, repeatedly.  ScriptableObjects leverage scripts to create assets based on a core Prefab and can be created and configured in mass, at runtime."
+      explanation: "ScriptableObjects are the quickest way to create many assets, repeatedly.  ScriptableObjects use scripts to create assets based on a core Prefab and can be created and configured in mass, at runtime."
     - content: "Drag and drop Prefab assets in the Scene" 
       isCorrect: false
-      explanation: "This is a very quick way to add assets to a Unity Scene, each will require manual configuration after dropping into the scene"
+      explanation: "This is a quick way to add assets to a Unity Scene, each will require manual configuration after dropping into the scene"
   - content: "True or false: A device simulator is always required for all Digital Twins to connect assets to ADT."
     choices:
     - content: "True"
@@ -49,6 +49,6 @@ quiz:
       explanation: ""
     - content: "False"
       isCorrect: true
-      explanation: "A device simulator is not required for all Digital Twins to connect assets to ADT.  Often, when developers are creating digital representations of physical assets or processes, they have access to rich IoT, enterprise, and other data sources relevant to their Digital Twins."
+      explanation: "A device simulator isn't required for all Digital Twins to connect assets to ADT.  Often, when developers are creating digital representations of physical assets or processes, they have access to rich IoT, enterprise, and other data sources relevant to their Digital Twins."
 
   
