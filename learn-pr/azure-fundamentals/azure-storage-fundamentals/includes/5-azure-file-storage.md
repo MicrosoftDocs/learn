@@ -27,7 +27,7 @@ The following illustration shows Azure Files being used to share data between tw
 
 One thing that distinguishes Azure Files from files on a corporate file share is that you can access the files from anywhere in the world, by using a URL that points to the file. You can also use Shared Access Signature (SAS) tokens to allow access to a private asset for a specific amount of time.
 
-Here's an example of a service SAS URI, showing the resource URI and the SAS token:
+Here's an example of a service SAS URL, showing the resource URL and the SAS token:
 
-[:::image type="content" source="../media/sas-storage-uri-037308fa.png" alt-text="Screenshot of components of a service SAS URI.":::
+[:::image type="content" source="../media/sas-storage-uri-037308fb.png" alt-text="Screenshot of components of a service SAS URL.":::
 ](/content/dam/wwl/ilt-courses/az-900-learn/describe-core-azure-services/Modules/M03-azure-storage-fundamentals/media/sas-storage-uri.png#lightbox)
