@@ -21,7 +21,9 @@ Create operational consistency for admins as you continue to use VMware for reso
 Access to vSphere, VMware HCX, and NSX-T are enabled during the Private Cloud deployment process. Credentials are registered in Azure connect to the private cluster hosts.
 
 ### Continuity of Operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure.
+Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
+
+With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources. 
 
 ### Seamless integration for Azure infrastructure resources 
 Easily scale and manage your infrastructure as your business needs it through the Azure portal and native tools. Add new nodes as required to increase compute and storage during peak times. And delete nodes seasonally when infrastructure demands are lower. 
@@ -43,13 +45,15 @@ Once AVS is deployed into your subscription, Azure Monitor logs are generated au
 
 
 ###  Migration into Azure VMware Solutions
-Before to migrating to Azure VMware Solution (AVS), an assessment of on-premises servers in your VMware environment should be completed. One of the recommended tools for assessments is the Azure Migrate: Discovery and assessment tool. An AVS assessment can be created for servers in VMware environment only. There are three types of assessments you can create using Azure Migrate: Discovery and assessment. 
+Before to migrating to Azure VMware Solution (AVS), an assessment of on-premises servers in your VMware environment should be completed. One of the recommended tools for assessments is the Azure Migrate: Discovery and assessment tool. An AVS assessment can be created for servers in VMware environment only. The Azure Migrate: Discovery and assessment tool can provide several types of assessments and sizing criteria. There are two types of sizing that you can use to create Azure VMware Solution (AVS) assessments:
+
 
 |  Assessment Type | Details |
 | :---------- | :------------------ |
-| Azure VM |Assessments to migrate your on-premises servers to Azure virtual machines. You can assess your on-premises servers in VMware and Hyper-V environment, and physical servers for migration to Azure VMs using this assessment type.|
-| Azure SQL | Assessments to migrate your on-premises SQL servers from your VMware environment to Azure SQL Database or Azure SQL Managed Instance. |
-| Azure VMware Solution (AVS) | Assessments to migrate your on-premises servers to Azure VMware Solution (AVS). You can assess your on-premises servers in VMware environment for migration to Azure VMware Solution (AVS) using this assessment type |
+| Performance-based |Assessments based on collected performance data of on-premises servers. Provides the recommended Node size: Based on CPU and memory utilization data along with node type, storage type, and FTT setting that you select for the assessment.|
+| As on-premises |Assessments based on on-premises sizing. Provides data that recommends node size: Based on the on-premises server size along with the node type, storage type, and FTT setting that you select for the assessment. |
+
+Using VMware HCX, you can migrate your VMware workloads to Azure VMware Solution and other connected sites through various migration types. During deployment of the Azure VMware Solution, it deploys and configures HCX Cloud Manager. The HCX Connector is downloaded, installed and configred in your on-premises VMware datacenter. 
 
 
 ### Security and compliance with Azure VMware Solutions
