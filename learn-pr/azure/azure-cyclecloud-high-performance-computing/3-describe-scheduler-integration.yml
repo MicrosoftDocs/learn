@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-cyclecloud-high-performance-computing.describe-scheduler-integration
+title: Describe Azure CycleCloud scheduler integration and autoscaling
+metadata:
+  unitType: learning-content
+  title: describe-scheduler-integration
+  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  ms.date: 5/6/2021
+  author: anhoward
+  ms.author: anhoward
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-describe-scheduler-integration.md)]

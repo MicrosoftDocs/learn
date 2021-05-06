@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-cyclecloud-high-performance-computing.exercise-create-cluster
+title: Exercise - Create an HPC cluster from built-in templates
+metadata:
+  unitType: {{patternType}}
+  title: exercise-create-cluster
+  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  ms.date: 5/6/2021
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-create-cluster.md)]
