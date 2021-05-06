@@ -2,37 +2,31 @@ You can begin with an empty scene and re-create the Scene components from any pr
 
 ## Open your previously built Scene
 
-1.	If your previously built Scene isn't already open, select **File > Open Scene**
-2.	Browse to the folder where you saved your Scene.  Typically this is the **Assets > Scenes** folder in the root project folder structure.
+1. If your previously built Scene isn't already open, select **File > Open Scene**
+2. Browse to the folder where you saved your Scene.  Typically this is the **Assets > Scenes** folder in the root project folder structure.
 
 OR
 
 ## Add existing Scene  [optional]
 
-1.	In the Project Panel, open the **Assets > Scenes** folder
-2.	Select and drag the Scene to the Hierarchy panel.  For this module, select
+1. In the Project Panel, open the **Assets > Scenes** folder
+2. Select and drag the Scene to the Hierarchy panel.  For this module, select
 **2_PlaceDigitalTwinAssets**.  If you use this Scene, it will contain the **Bing Maps.prefab** Prefab.
-3.	Configure necessary service parameters (for example, Maps SDK, Azure Services, and so on)
+3. Configure necessary service parameters (for example, Maps SDK, Azure Services, and so on)
 
 > [!NOTE]
 > The **Final_CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  It will still require further configuration.
 
 We created several Prefabs have been created to accelerate the connectivity of your wind farm to Azure Digital Twin.  The **ADTConnection** Prefab handles all incoming data from ADT through the Azure SignalR service.  This connection has an associated data handler script that will automatically update the TurbineSiteData Scriptable Object with operating information for each turbine.  This TurbineSiteData Scriptable Object is used to update controls on the **OperateSceneUI** based on events raised within this prefab.  The **ADTTurbineAlertController** sends an update to the Alert property from a local turbine.  It contains a number of scripts to track events for you.
 
-## Add Operate Scene Prefab
+## Add ADT Connection Prefab
 
-1.	From the Project Panel, drag the **Assets > UIPrefabs > Prefabs > OperateSceneUI** to the Hierarchy Panel.
-2.	Position the UI elements in the same way you position any other asset, using the **Move Tool, Rotate Tool**, and so on.
+1. From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
 
-<!-- :::image type="content" source="" alt-text=""::: -->
-
-- Add ADT Connection Prefab
-1.	From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
-
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/inspector-adt-alert.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
 
 ## Add ADT Turbine Alert Controller Prefab
 
-1.	From the Project Panel, drag the **Assets > ADTPrefabs > ADTTurbineAlertController** to the Hierarchy Panel.
+1. From the Project Panel, drag the **Assets > ADTPrefabs > ADTTurbineAlertController** to the Hierarchy Panel.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/inspector-adt-connector.png" alt-text="Screenshot of the Unity Inspector with the ADT Connection prefab selected.":::
