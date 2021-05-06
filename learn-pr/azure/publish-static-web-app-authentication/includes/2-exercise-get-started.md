@@ -395,7 +395,7 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Select the link shown in the following image.
 
-   :::image type="content" source="../media/portal-goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   :::image type="content" source="../media/portal-go-to-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
 1. Select **Azure Static Web Apps CI/CD**.
 
