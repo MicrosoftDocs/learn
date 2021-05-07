@@ -1,6 +1,6 @@
-The first step to working with any programming language is to obtain the necessary tools. While you could write Python applications in a basic text editor, using a code editor such as Visual Studio Code is the preferred tool. Visual Studio Code and similar editors can highlight syntax errors, offer autocomplete, and have a rich ecosystem of available add-ons to further enhance your experience.
+The first step to working with any programming language is to obtain the necessary tools. While you could write Python applications in a basic text editor, using a code editor such as Visual Studio Code is the preferred tool. Visual Studio Code and similar editors can highlight syntax errors, offer autocomplete, and have a rich set of available add-ons to further enhance your experience.
 
-In this module, you'll build your Python development environment that will allow you to learn about Python and build many types of applications. You'll also learn how to use Visual Studio Code to create a Python code file, add some code, and then see it run.
+In this module, you'll build your Python development environment that will use to learn about Python, and build many types of applications. You'll also learn how to use Visual Studio Code to create and run a Python file.
 
 By the end of this module, you'll have installed the tools on your computer to move forward with your goal of building applications with Python.
 
@@ -10,7 +10,7 @@ In this module, you will:
 
 - Install Python 3 if needed.
 - Install and configure Visual Studio Code and extensions on your computer.
-- Create a Python file, write and run Python code in Visual Studio Code.
+- Create a Python file, write, and run Python code in Visual Studio Code.
 
 ## Prerequisites
 

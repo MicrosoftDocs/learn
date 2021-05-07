@@ -1,4 +1,4 @@
-With Python and the tooling installed, you can now create your first Python application. You'll create an emtpy directory, open the directory in Visual Studio Code, and the create your first application.
+With Python and the tooling installed, you can now create your first Python application. You'll create an emtpy directory, open the directory in Visual Studio Code, and then create your first application.
 
 ## Step 1 - Create a directory for your code
 
@@ -40,7 +40,7 @@ code .
 
 With Visual Studio Code now open and your empty folder created, you'll now create a Python file to display the class message "hello world".
 
-You may see a prompt you to install [Pylint](https://pylint.org/), which you can install by selecting *Install*. Also, you may see a prompt to [select an interpreter](https://code.visualstudio.com/docs/languages/python#_environments) if it doesn't automatically detect one; you can accept the default value if you receive this error message.
+You may see a prompt you to install [Pylint](https://pylint.org/), which you can install by selecting *Install*. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
 
 Inside the *Explorer* window, click *New File*.
 
@@ -94,4 +94,4 @@ python3 hello.py
 
 ::: zone-end
 
-*Hello, world!* will now display in the Terminal window. Congratulations! You have created a Python application!
+*Hello, world!* will now display in the Terminal window. Congratulations! You've created a Python application!

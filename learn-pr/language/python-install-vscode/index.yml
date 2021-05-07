@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Install Python 3 if needed.
   - Install and configure Visual Studio Code and extensions on your computer.
-  - Create a Python file, write and run Python code in Visual Studio Code.
+  - Create a Python file, write, and run Python code in Visual Studio Code.
 prerequisites: |
   - Install programs locally
   - Basic familiarity with programming

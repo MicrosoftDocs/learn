@@ -17,32 +17,32 @@ quiz:
     choices:
     - content: "Python 1"
       isCorrect: false
-      explanation: "Incorrect. The currently supported version of Python is Python 3."
+      explanation: "Incorrect. Python 1 is not currently supported."
     - content: "Python 2"
       isCorrect: false
-      explanation: "Incorrect. The currently supported version of Python is Python 3."
+      explanation: "Incorrect. Python 2 is not currently supported."
     - content: "Python 3"
       isCorrect: true
       explanation: "Correct! The currently supported version of Python is Python 3."
   - content: "What Python function is used to display information on the screen?"
     choices:
-    - content: "display"
+    - content: "bytes"
       isCorrect: false
-      explanation: "Incorrect. The Python function to display information on the screen is print."
+      explanation: "Incorrect. bytes is used to create a sequence of small integers."
     - content: "print"
       isCorrect: true
       explanation: "Correct! The Python function to display information on the screen is print."
-    - content: "display"
+    - content: "open"
       isCorrect: false
-      explanation: "Incorrect. The Python function to display information on the screen is print."
+      explanation: "Incorrect. open is used to open a file."
   - content: "What file extension is typically used for Python files?"
     choices:
     - content: "python"
       isCorrect: false
-      explanation: "Incorrect. py is the standard extension for Python files."
+      explanation: "Incorrect. python is not the standard extension for Python files."
     - content: "p"
       isCorrect: false
-      explanation: "Incorrect. py is the standard extension for Python files."
+      explanation: "Incorrect. p is not the standard extension for Python files."
     - content: "py"
       isCorrect: true
       explanation: "Correct! py is the standard extension for Python files."

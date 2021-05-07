@@ -1,12 +1,12 @@
-In the previous unit, you ran a command to determine whether you had Python 3 installed.  If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
+Previously you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
 
-If you determined that you already have Python 3 installed, scroll to the bottom of this page, and select **Continue**.
+If you determine you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
 
 ::: zone pivot="windows"
 
 ## Install Python on Windows from the Microsoft Store
 
-When this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
+When this module was written, Python 3.9 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
 > [!NOTE]
 > These instructions are specifically for Windows 10. If you're using a previous version of Windows, refer to the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true) for more information.
@@ -18,7 +18,7 @@ When this module was written, Python 3.8 was the latest version of Python availa
 
 Open the Microsoft Store by selecting *Start*, typing *start* and *Microsoft Store*. Once open, search for *Python*.
 
-You will be presented with a list of various options. Select the most recent version of Python, which at the time of this writing is Python 3.9.
+You'll be presented with a list of various options. Select the most recent version of Python, which at the time of this writing is Python 3.9.
 
 ![Screenshot of search results screen from Microsoft store for Python showing Python 3.9 highlighted](../media/windows-install-python-search.png)
 
@@ -26,7 +26,7 @@ On the details screen, select *Install*.
 
 ![Screenshot of the Python details screen in the Microsoft Store with Install highlighted](../media/windows-install-python-splash.png)
 
-Python will be installed in the background. This may take a couple of minutes depending on the speed of your system.
+Python will be installed in the background. The installation may take a couple of minutes depending on the speed of your system.
 
 ![Screenshot of installation progress for Python from the Microsoft Store](../media/windows-install-python-progress.png)
 
@@ -44,13 +44,13 @@ python --version
 
 When this module was written, Python 3.9 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
-As you're probably aware, different Linux distributions use different package managers. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
+The package manager you use depends on the version of Linux. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
 We provide instructions for APT and YUM in this unit. If your distribution of Linux uses a different package manager, you might need to search for **\<your Linux distribution> install python 3**.
 
 ### Install by using APT
 
-If you use APT you can use these instructions to install Python 3.
+If you use APT, you can use these instructions to install Python 3.
 
 #### Step 1 - Open a Terminal window
 
@@ -121,7 +121,7 @@ sudo yum update
 Run the following command at a Bash prompt, and then press <kbd>Enter</kbd>.
 
 ```bash
-yum install rh-python36
+yum install rh-python39
 ```
 
 #### Step 4 - Check your installation
@@ -140,14 +140,14 @@ Python 3.9.1
 
 As long as the first number is `3`, Python 3 installed successfully.
 
-If the installation failed, you might see an error message. If you do, continue to step 5.
+If the installation failed, you might see an error message; step 5 will help your resolve any error message.
 
 #### Step 5 - (Optional) Enable the Software Collections feature in Bash
 
 Software Collections enables you to install multiple versions of the same software components on your system. You need to specify which version of Python you want to run in the shell. Run the following command at a Bash prompt, and then press <kbd>Enter</kbd>.
 
 ```bash
-scl enable rh-python36 bash
+scl enable rh-python39 bash
 ```
 
 Now retry step 4. The output should resemble the following output.
@@ -175,7 +175,7 @@ For more information, see
 Follow these steps to download the Python installer from the Python website.
 
 > [!NOTE]
-> At the time of this writing, Python 3.8.0 was the most current version, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
+> At the time of this writing, Python 3.9.0 was the most current version, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
 
 > [!NOTE]
 > Alternatively, you can use Homebrew to install Python and Visual Studio Code. For instructions, see 
@@ -185,11 +185,11 @@ Follow these steps to download the Python installer from the Python website.
 
 Go to the [Python download page](https://www.python.org/downloads/?azure-portal=true).
 
-The website should automatically direct you to a page specifically for macOS. Select **Download Python 3.8.0**.
+The website should automatically direct you to a page specifically for macOS. Select **Download Python 3.9.0**.
 
 You might see a window prompting you to allow downloads from python.org. Select **Allow**.
 
-After a moment, a file named python-3.8.0-mascosx10.9.pkg should download to the Downloads stack in your Dock.
+After a moment, a file named python-3.9.0-mascosx10.9.pkg should download to the Downloads stack in your Dock.
 
 ### Step 2: Start the Python installer and accept options for a standard installation
 
@@ -212,8 +212,9 @@ python3 --version
 You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
 ```output
-Python 3.8.0
+Python 3.9.0
 ```
+
 As long as the first number is `3`, Python 3 installed successfully.
 
 ::: zone-end
