@@ -4,7 +4,7 @@ In this unit, we look at Application performance monitoring concepts.
 
 Continuous monitoring of applications in production environments is typically implemented with application performance management (APM) solutions that intelligently monitor, analyze, and manage cloud, on-premises, and hybrid applications and IT infrastructure. APM solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
 
-APM provides Visibility into all your applications with the following features:
+APM provides visibility into all your applications with the following features:
 
 - Logs, exceptions, and metrics in the context of call paths offer meaningful insights and actionable information to speed root cause analysis.
 - Insights into application dependencies – SQL Database, MySQL, PostgreSQL, MariaDB, JDBC, MongoDB, Cassandra, Redis, JMS, Kafka, Netty / WebFlux and so on.

@@ -6,7 +6,7 @@ Most cloud deployments are based on distributed architectures where components a
 
 ## Log analytics
 
-Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
+Log Analytics provides aggregated logs with advanced query capability. Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
 
 > [!NOTE]
 > Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.

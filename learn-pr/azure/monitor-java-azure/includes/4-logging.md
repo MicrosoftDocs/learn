@@ -45,6 +45,4 @@ You can also get details of app instances from the Azure portal.  After selectin
 > [!TIP]
 > Use `az spring-cloud app logs -h` to explore more parameters and log stream functionality.
 
-You will see output similar to the following example:
-
 In the next exercise, we'll configure logging for your Sample Spring application.

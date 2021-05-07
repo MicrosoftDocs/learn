@@ -12,59 +12,36 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "Which of the following Terraform commands will initialize your directory to be used for Terraform?"
+  - content: "Which of the following monitoring form involves permanent, immutable records of events?"
     choices:
-    - content: "plan"
+    - content: "Traces"
       isCorrect: false
-      explanation: "Incorrect. The plan command is used to create an execution plan."
-    - content: "apply"
+      explanation: "Incorrect. Traces are records of the paths of execution for programs and services."
+    - content: "Logs"
       isCorrect: false
-      explanation: "Incorrect. The apply command is used to apply the changes required to reach the wanted state."
-    - content: "destroy"
+      explanation: "Correct. Logs are permanent, immutable records of events stored in a consistent, tabular format."
+    - content: "Metrics"
       isCorrect: false
-      explanation: "Incorrect. The destroy command is used to destroy the Terraform-managed infrastructure."
-    - content: "None of the above"
-      isCorrect: true
-      explanation: "The init command is used to initialize a working directory that contains Terraform configuration files."      
-  - content: "What is the recommended way to restrict access to Azure resources?"
+      explanation: "Incorrect. Metrics are values that represent the relative health, stability, and availability of resources."    
+  - content: "Which monitoring tool enables you to view and compare database performance from one release to the next in a graphical format?"
     choices:
-    - content: "Use an Azure Service Principal"
-      isCorrect: true
-      explanation: "An Azure Service Principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
-    - content: "Use Secrets."
+    - content: Query Performance Insights.
+      isCorrect: True
+      explanation: "The Query Performance Insight view in the Azure portal provides visualizations on key information from a Query Store."
+    - content: Log Analytics.
       isCorrect: false
-      explanation: "Incorrect. Secrets are encrypted environment variables that you create in a repository or organization."
-    - content: "Use a plain text password."
+      explanation: "Incorrect. Log Analytics provides aggregated views on application logs with query capability."
+    - content: Query Store.
       isCorrect: false
-      explanation: "Incorrect. A password is an insecure mechanism."
-  - content: "Which of the following options are benefits of automating infrastructure?"
+      explanation: "Incorrect. Query Store captures a history of queries and runtime statistics in a tabular format"
+  - content: "What query language is supported in Query Analytics?"
     choices:
-    - content: "Lowers the potential for human errors while deploying and managing infrastructure."
+    - content: "Java"
       isCorrect: false
-      explanation: "Automation does lower the potential for human error, but that's not the only benefit."
-    - content: "Deploys the same template multiple times to create identical development, test, and production environments."
-      isCorrect: false
-      explanation: "Automation does help establish consistency between environments, but that's not the only benefit."
-    - content: "Reduces the cost of development and test environments by creating them on demand."
-      isCorrect: false
-      explanation:  "Automation does reduce costs by increasing velocity and flexibility, but that's not the only benefit."
-    - content: "All of the above"
+      explanation: "Incorrect. Java is a general purpose programming language and not supported in Query Analytics."
+    - content: "Kusto Query Language (KQL)"
       isCorrect: true
-      explanation: "Automation is an effective way of reducing errors, establishing consistency, and increasing speed and flexibility of development."
-  - content: "Which of the following automation tools does Azure support?"
-    choices:
-    - content: "GitLab"
+      explanation: "Log queries in Query Analytics are written in the Kusto Query Language (KQL)."
+    - content: "SQL"
       isCorrect: false
-      explanation: "Incorrect. This is one of the options but not the only tool supported."
-    - content: "GitHub Actions"
-      isCorrect: false
-      explanation: "Incorrect. This is one of the options but not the only tool supported."
-    - content: "Azure Pipelines"
-      isCorrect: false
-      explanation: "Incorrect. This is one of the options but not the only tool supported."
-    - content: "Jenkins"
-      isCorrect: false
-      explanation: "Incorrect. This is one of the options but not the only tool supported."
-    - content: "All of the above"
-      isCorrect: true
-      explanation: "All of the above automation tools are supported." 
+      explanation: "Incorrect. SQL is a database query language and not supported in Query Analytics."
