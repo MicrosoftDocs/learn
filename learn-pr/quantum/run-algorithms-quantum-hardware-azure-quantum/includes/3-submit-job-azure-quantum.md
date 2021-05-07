@@ -7,7 +7,7 @@ In this unit, you learn how to submit a job to Azure Quantum.
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest/?azure-portal=true) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
