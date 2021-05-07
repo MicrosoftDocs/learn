@@ -23,8 +23,6 @@ Monitoring generally takes on the three forms:
 
 Azure provides **Azure Monitor**, which includes a set of services that developers and administrators can use to collect, analyze, and act upon telemetry regarding the performance of applications and the infrastructure that hosts them.
 Various services such as Azure Log Analytics and Microsoft Power BI can be connected to the data sources where logs and metrics are stored to generate actionable insights and create visual dashboards.
-Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers and DevOps professionals to monitor your live applications.
-Developers can instrument their applications with Azure Application Insights to generate custom telemetry. This telemetry provides an extra layer of monitoring that can be beneficial in diagnosing errors and their root causes--often without having to dive into the source code.
 
 ## Next steps
 
