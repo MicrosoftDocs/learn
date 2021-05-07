@@ -30,24 +30,13 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
     ```
 
-### Clone the shared repo for Alice and Bob
+### Clone the shared repo for Bob
 
-1. Move up one level from this directory and create directories for Alice and Bob to store their repos:
+1. Move up one level from this directory and create a directory for Bob to store his repo:
 
     ```bash
     cd ..
-    mkdir Alice
     mkdir Bob
-
-    ```
-
-1. Clone the repo for Alice, and then configure it:
-
-    ```bash
-    cd Alice
-    git clone ../Shared.git .
-    git config user.name Alice
-    git config user.email alice@contoso.com
 
     ```
 
@@ -59,8 +48,12 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git clone ../Shared.git .
     git config user.name Bob
     git config user.email bob@contoso.com
+    git symbolic-ref HEAD refs/heads/main
 
     ```
+
+> [!NOTE]
+> Because you want to start with the default branch of `main`, you need to change `HEAD` to point to `refs/heads/main` rather than `refs/heads/master` which is the default branch name.
 
 ### Add base files
 
@@ -129,9 +122,12 @@ As a final setup step, we'll add our base website files and push them to the sha
     cd ..
     git add .
     git commit -m "Add simple HTML and stylesheet"
-    git push
+    git push --set-upstream origin main
 
     ```
+
+   > [!NOTE]
+   > Because we are using a different default branch name, you have to tell git to associate your main branch to the main branch of the source repository.
 
 1. Check the output. If you see a warning like this example, don't worry. This warning is just letting users know about a change to Git's default behaviors. 
 
@@ -168,11 +164,11 @@ As a final setup step, we'll add our base website files and push them to the sha
 1. Check the output for this indicator of success:
 
     ```output
-    Counting objects: 12, done.
+    Counting objects: 9, done.
     Delta compression using up to 2 threads.
-    Compressing objects: 100% (8/8), done.
-    Writing objects: 100% (12/12), 1.07 KiB | 0 bytes/s, done.
-    Total 12 (delta 1), reused 0 (delta 0)
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (9/9), 953 bytes | 953.00 KiB/s, done.
+    Total 9 (delta 0), reused 0 (delta 0)
     To ../Shared.git
      * [new branch]      main -> main
     ```
@@ -181,23 +177,30 @@ As a final setup step, we'll add our base website files and push them to the sha
 
 Alice wants to create a topic branch named `add-style` to do their work in. Let's assume the role of Alice, and then create the branch and add some code to this branch.
 
-1. Go back to the *Alice* directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date.
+1. Move up one level from this directory and create a directory for Alice for her copy of the repo:
 
     ```bash
-    cd ../Alice
-    git pull
+    cd ..
+    mkdir Alice
 
     ```
 
-1. Check the output. You should see a success message that looks like this example:
+1. Clone the repo for Alice, and then configure it:
 
-    ```output
-    remote: Counting objects: 8, done.
-    remote: Compressing objects: 100% (5/5), done.
-    remote: Total 8 (delta 0), reused 0 (delta 0)
-    Unpacking objects: 100% (8/8), done.
-    From /home/shana/Alice/../Shared
-     * [new branch]      main     -> origin/main
+    ```bash
+    cd Alice
+    git clone ../Shared.git .
+    git config user.name Alice
+    git config user.email alice@contoso.com
+
+    ```
+
+1. You now have a current copy of the repository.  To confirm, you can list the file contents and use `git status` to confirm the state of the repository.
+
+    ```bash
+    ls
+    git status
+
     ```
 
 1. Use the `git branch` command to create a branch named `add-style`. Then, use the `git checkout` command to switch to that branch (make it the *current branch*).
