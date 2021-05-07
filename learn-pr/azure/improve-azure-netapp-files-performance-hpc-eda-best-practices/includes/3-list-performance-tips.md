@@ -1,6 +1,7 @@
 We'll list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
 
-Note: NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practices before deploying in production.
+>[!NOTE]
+>NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practices before deploying in production.
 
 ## Use mount options "actimeo & nocto" to improve performance in relatively static datasets and massive read scenarios
 
