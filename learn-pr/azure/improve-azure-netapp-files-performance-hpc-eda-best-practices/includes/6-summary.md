@@ -6,4 +6,4 @@ And then we list and discuss several performance tips including mounting options
 
 Finally, we examine the SPEC EDA and FIO benchmarking results to verify the performance tips we discussed.
 
-Now you should be able to list and describe the performance practice which would help to improve Azure NetApp Files performance of your HPC/EDA applications.
+Now you should be able to list and describe the performance practices that help to improve Azure NetApp Files performance of your HPC/EDA applications.

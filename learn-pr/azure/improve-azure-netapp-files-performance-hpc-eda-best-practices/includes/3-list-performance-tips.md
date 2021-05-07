@@ -75,19 +75,19 @@ To make these tunings persistent:
 sudo sysctl -P
 ```
 
-## Use mount options "nconnect" to expand network connections when applicable
+## Use mount options nconnect to expand network connections when applicable
 
-The "nconnect" NFS mount option has entered General Availability in the Linux kernel 5.3 or above. To check your Client VM's Linux kernel:
+The nconnect NFS mount option has entered General Availability in the Linux kernel 5.3 or above. To check your Client VM's Linux kernel:
 
 ```bash
 uname -r
 ```
 
-The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And its value gradually diminishes when # of clients increases, as there's only certain amount of bandwidth in total to go around.
+The purpose of nconnect is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value nconnect can help to boost performance as it could potentially utilize all possible network bandwidth. And its value gradually diminishes when # of clients increases, as there's only certain amount of bandwidth in total to go around.
 
 Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you're using nconnect=8 or 16.
 
-However, please note that "nconnect" is only available for Linux kernel 5.3+ VMs, and you might need to reboot the VM when upgrading the kernel. Which means it might not be applicable for some cases.
+However, please note that nconnect is only available for Linux kernel 5.3+ VMs, and you might need to reboot the VM when upgrading the kernel. Which means it might not be applicable for some cases.
 
 ## Use NFSv3 instead of NFSv4.1 when consider only performance
 
