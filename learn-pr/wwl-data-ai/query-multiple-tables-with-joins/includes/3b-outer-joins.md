@@ -14,7 +14,7 @@ INNER JOIN Sales.SalesOrder AS ord
 These rows represent a match between **HR.Employee** and **Sales.SalesOrder**. Only those **EmployeeID** values that are in both tables will appear in the results.
 
 :::image type="content" source="../media/inner-join-venn-diagram.png" alt-text="A Venn diagram showing the matching members of the Employee and SalesOrder sets":::
- ‎
+
 Now, let’s examine the following query, written as LEFT OUTER JOIN:
 
 ```sql
