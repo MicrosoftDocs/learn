@@ -13,16 +13,16 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save**, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Add the following content into the file. You'll deploy the template soon. It's a good idea to enter this in yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
+1. Add the following content into the file. You'll deploy the template soon. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
    :::code language="bicep" source="code/3-template.bicep" range="7,12,17,20-23,26-29" :::
 
    You're creating several parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
 
    > [!TIP]
-   > The `uniqueString()` function is useful for creating globally unique resource names. It will return a string that will be the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
+   > The `uniqueString()` function is useful for creating globally unique resource names. It returns a string that's the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
-   You're also defining variables that construct the names of the Azure App Service plan and App Service app, and their values include some of the parameters you've specified. Parameter values can be overridden by the user who executes the deployment, but the values of the variables can't be overridden.
+   You're also defining variables that construct the names of the Azure App Service plan and App Service app. Their values include some of the parameters you've specified. Parameter values can be overridden by the user who executes the deployment, but the values of the variables can't be overridden.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
@@ -64,7 +64,7 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 ### Limit numeric values
 
-You need to ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
+Ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
