@@ -126,8 +126,8 @@ As a final setup step, we'll add our base website files and push them to the sha
 
     ```
 
-> [!NOTE]
-> Because we are using a different default branch name, you have to tell git to associate your main branch to the main branch of the source repository.
+   > [!NOTE]
+   > Because we are using a different default branch name, you have to tell git to associate your main branch to the main branch of the source repository.
 
 1. Check the output. If you see a warning like this example, don't worry. This warning is just letting users know about a change to Git's default behaviors. 
 
