@@ -199,6 +199,6 @@ In this exercise, you will:
 
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page, on the **Raspberry Pi Azure IoT Online Simulator** page, directly below the code pane, select **Stop**, and verify that the simulated device no longer sends messages to the Azure IoT Central application.
 
-Congratulations! You completed the second exercise of this module. In its exercise, you create an Azure function that logs an HTTP request payload, configured and validated IoT telemetry rules of an Azure IoT Central application, created an Azure Storage account that will store IoT telemetry, and configured and validated data export of an Azure IoT Central application.
+Congratulations! You completed the second exercise of this module. In its exercise, you create an Azure function that logs an HTTP request payload, configured and validated IoT telemetry rules of an Azure IoT Central application, created an Azure Storage account that will store IoT telemetry, and configured and validated data export of an Azure IoT Central application. 
 
 * To avoid unnecessary charges due to usage of Azure resources, you should delete the **iot-central-apps-RG** resource group you created at the beginning of this exercise. To do so, in the Azure portal, navigate to the **iot-central-apps-RG** blade, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type **iot-central-apps-RG**, and select **Delete**.
