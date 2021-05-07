@@ -5,11 +5,11 @@
 Azure IoT Central is a fully managed cloud service that simplifies implementing a wide range of IoT capabilities, including telemetry collection, processing, and analytics as well as secure device management. Azure IoT Central helps you minimize custom development efforts and administrative overhead, lets you leverage cloud agility and scalability, and supports built-in integration with a number of other Azure services. 
 
 Azure IoT Central helps you bridge the gap between IoT devices and cloud-native applications, considerably accelerating their integration. It promotes reusability through the use of templates and by combining several Platform-as-a-Service (PaaS) Azure IoT services, such as IoT Hub or Azure Time Series Insights into an easy-to-use SaaS offering.
-
+<!-- Consider replacing "or" with "and". This makes it more inclusive. Sentence should be "...such as IoT Hub and Azure Time Series Insights into an easy-to-use SaaS offering." -->
 ## What are the components of Azure IoT Central?
 
 Azure IoT Central spans the three main areas of the Azure IoT reference architecture referred to as Things, Insights, and Actions. Things represent IoT devices generating telemetry that, through Insights-based analysis, is turned into Actions, which deliver some business value. 
-
+<!-- Consider removing "some". The phrase "some business value" seems to undermine the actual value delivered  -->
 Azure IoT Central architecture includes:
 
 - Core components:
@@ -23,6 +23,7 @@ Azure IoT Central architecture includes:
 
 - Optional components:
    - IoT Edge devices serving as brokers for management and data flow for devices, whenever direct communication with Azure IoT Central is restricted or not possible. They might, for example, play a role in device provisioning, data filtering, aggregation, and buffering, protocol translation, or event rules processing.
+ <!-- Remove "and" before "buffering". -->
    - The device provisioning service automating the task of onboarding IoT devices.
    - Data transformation services performing such ingress tasks as protocol translation, data conversion, and data aggregation.
    - User management subsystem implementing role based access control, allowing for delegation of device management tasks. 
