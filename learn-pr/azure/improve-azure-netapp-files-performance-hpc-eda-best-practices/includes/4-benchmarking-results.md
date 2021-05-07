@@ -2,7 +2,7 @@ In this session, we'll examine the benchmarking results to verify the performanc
 
 We'll focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practice.
 
-## Introduce the two benchmarking tools have been utilized
+## Introduce the two benchmarking tools
 
 SPEC SFS® suite is a standard industry benchmark for electronic design automation (EDA). Typical EDA workload consists of functional and physical phases. The functional phase predominately drives random I/O and filesystem metadata operations, while the physical phase drives large block sequential reads and writes.
 
