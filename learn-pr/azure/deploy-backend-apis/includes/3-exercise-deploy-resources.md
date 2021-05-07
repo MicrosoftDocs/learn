@@ -208,7 +208,16 @@ Now that your database and GitHub repository are configured, it's time to deploy
     $azureFunctionName = $("azfunc$($uniqueID)")
     # Get storage account name
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
+    $storageAccountName
     ```
+
+> [!WARNING]
+> If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
+>
+> ```powershell
+> $storageAccountName = $("storageaccount$($uniqueID)")
+> $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
+> ```
 
 1. Run the following in the Cloud Shell to deploy an empty function in your language of choice.
 
