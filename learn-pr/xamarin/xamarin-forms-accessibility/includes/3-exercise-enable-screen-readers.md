@@ -12,11 +12,11 @@ TalkBack is the primary screen reader used on Android. It's included on most dev
 
 ![Screenshot that shows selections to enable TalkBack on Android.](../media/android-talkback.png)
 
-We recommend that you go through the TalkBack tutorial, which will open automatically the first time you turn on TalkBack.
+We recommend that you go through the TalkBack tutorial, which opens automatically the first time you turn on TalkBack.
 
 ## Enable the screen reader on iOS
 
-VoiceOver is Apple's main screen reader technology that's available across iPhone, iPad, Mac, and other Apple devices. To enable VoiceOver on your device, follow these instructions:
+VoiceOver is the main screen reader that's available across iPhone, iPad, Mac, and other Apple devices. To enable VoiceOver on your device, follow these instructions:
 
 1. Open the **Settings** app on your iOS device.
 1. Browse to and select **Accessibility**.

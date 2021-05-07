@@ -2,7 +2,7 @@ To complete the project, you must now implement a way to enter data for the user
 
 ## Add data-entry elements for names
 
-Replace `<!-- Report and Manager Information -->` with the following XAML:
+Replace `<!-- User and Manager Information -->` with the following XAML:
 
 ```xaml
 <Grid
@@ -38,7 +38,7 @@ Replace `<!-- Report and Manager Information -->` with the following XAML:
 
 ## Run the application
 
-When you run the application and use the screen reader to move through elements on the screen, the default ordering is row-based. The entry of names changes back and forth between the report and the manager's names. 
+When you run the application and use the screen reader to move through elements on the screen, the default order is row-based. The entry of names changes back and forth between the user and the manager. 
 
 ![Screenshot that shows the default row-based tab order.](../media/default-tab-order.png)
 
@@ -80,12 +80,12 @@ Reorder the `Entry` elements so they appear in the order in which the screen rea
 </Grid>
 ```
 
-Now, when you run the application, you'll see the new column-based accessibility ordering as you move through the elements. You've also improved the screen reader information on `Entry` by updating `Placeholder` with more valuable information that's read back, such as "Manager's surname" and "Manager's forename."
+Now, when you run the application, you'll see the new column-based accessibility order as you move through the elements. You've also improved the screen reader information on `Entry` by updating `Placeholder` with more valuable information that's read back, such as "Manager's surname" and "Manager's forename."
 
 ![Screenshot that shows a column-based tab order.](../media/correct-tab-order.png)
 
 
 > [!NOTE]
-> If you're interested in further changing the accessibility ordering, you can use APIs for that. However, you should maintain logical and meaningful content ordering before using those APIs.
+> If you're interested in further changing the accessibility order, you can use APIs for that. However, you should maintain a logical and meaningful content order before using those APIs.
 
 You've now explored multiple ways to enhance the accessibility of the application. Let's recap what you've learned and discover even more ways to make apps accessible.

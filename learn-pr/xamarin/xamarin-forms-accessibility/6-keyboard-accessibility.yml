@@ -18,12 +18,12 @@ quiz:
     questions:
     - content: "By default, what's the order in which users of screen readers and keyboards can move through the screen?"
       choices:
-      - content: "From left to right."
+      - content: "From left to right"
         isCorrect: false
         explanation: "The order in which elements appear on the screen is not the default accessibility order."
-      - content: "From top to bottom."
+      - content: "From top to bottom"
         isCorrect: false
         explanation: "The order in which elements appear on the screen is not the default accessibility order."
-      - content: "The order in which they're listed in XAML or added to a layout."
+      - content: "The order in which they're listed in XAML or added to a layout"
         isCorrect: true
         explanation: "By default, the accessibility order of controls is the same as the order in which they're listed in XAML or added to a layout."

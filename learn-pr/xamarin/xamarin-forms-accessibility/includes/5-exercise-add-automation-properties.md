@@ -40,7 +40,7 @@ To create a simple form, use the following code. It includes `Label`, `Image`, `
         <Label x:Name="LabelName" Text="Project name" />
         <Entry />
 
-        <!-- Report and Manager Information -->
+        <!-- User and Manager Information -->
 
         <Button Text="Submit" />
     </StackLayout>
