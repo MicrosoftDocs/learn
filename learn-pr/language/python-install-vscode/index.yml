@@ -28,11 +28,11 @@ products:
 - vs-code
 units:
 - learn.languages.python-install-vscode.introduction
-- learn.languages.python-install-vscode.python-programming-language
+- learn.languages.python-install-vscode.exercise-validate-python-version-installation
 - learn.languages.python-install-vscode.exercise-install-python3
-- learn.languages.python-install-vscode.exercise-setup-visual-studio-code
-- learn.languages.python-install-vscode.exercise-write-execute-first-script
-- learn.languages.python-install-vscode.exercise-first-application
+- learn.languages.python-install-vscode.exercise-install-visual-studio-code
+- learn.languages.python-install-vscode.exercise-install-python-extension
+- learn.languages.python-install-vscode.exercise-write-first-application
 - learn.languages.python-install-vscode.knowledge-check
 - learn.languages.python-install-vscode.summary
 badge:
