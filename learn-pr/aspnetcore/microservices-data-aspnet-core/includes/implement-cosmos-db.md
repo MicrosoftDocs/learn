@@ -1,4 +1,4 @@
-Only the coupon service uses MongoDB. All other microservices in the solution use different data stores.
+As discussed in previous units, the coupon service uses MongoDB to store coupon data. This unit explores replacing the cluster's MongoDB deployment with a cloud-based MongoDB service.
 
 In this unit, you will:
 
@@ -7,14 +7,6 @@ In this unit, you will:
 - Reconfigure the coupon service to use Azure Cosmos DB.
 - Redeploy the coupon service.
 - Inspect the Azure Cosmos DB data with the **Data Explorer** from the Azure portal.
-
-> [!NOTE]
-> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
->
-> ```bash
-> cd ~/clouddrive/aspnet-learn/src/ && \
->   code .
-> ```
 
 ## Create an Azure Cosmos DB instance
 
@@ -33,42 +25,10 @@ In this unit, you will:
     A variation of the following output appears:
 
     ```console
-    Creating an Azure Cosmos DB instance
-    ====================================
-    
-    Creating Azure Cosmos DB account eshop-learn-20210120180516594 in RG eshop-learn-rg
-    --------------------------------
-    {
-      "DocumentEndpoint": "https://eshop-learn-20210120180516594.documents.azure.com:443/",
-      "Kind": "MongoDB",
-      "Location": "West US",
-      "Name": "eshop-learn-20210120180516594"
-    }
-    
-    Creating MongoDB database  in RG eshop-learn-rg
-    -------------------------
-    {- Finished ..
-      "Name": "CouponDb",
-      "ResourceGroup": "eshop-learn-rg"
-    }
-    
-    Retrieving Azure Cosmos DB connection string
-    --------------------------------------------
-    
-    ConnectionString: mongodb://eshop-learn-20210120180516594:[password]@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-    
-    
-    Environment variables
-    ---------------------
-    export ESHOP_COSMOSACCTNAME=eshop-learn-20210120180516594
-    export ESHOP_COSMOSDBCONNSTRING=mongodb://eshop-learn-20210120180516594:[password]@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-    export ESHOP_IDTAG=20210120180516594
-    
-    Run the following command to update the environment
-    eval $(cat ~/clouddrive/aspnet-learn/create-azure-cosmosdb-exports.txt)
+
     ```
 
-    The script displays some of the account and the database properties, along with the connection string. The process will take a few minutes. Execute the next task while waiting.
+    The script displays some of the account and the database properties, along with the connection string. The process will take a few minutes. Execute the next task while 
 
 1. Copy the connection string value when the script finishes to reconfigure the coupon service.
 
@@ -102,12 +62,6 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
     deploy/k8s/build-to-acr.sh --services coupon-api
     ```
 
-1. You need to get the load balancer's IP address from the initial deployment. You can save it to an environment variable by running the following command:
-
-    ```bash
-    eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
-    ```
-
 1. Run the following script:
 
     ```bash
@@ -122,15 +76,17 @@ coupon-7474cfc46f-bcz5f            0/1     ContainerCreating   0          2s
 coupon-86b5766658-qbb6h            0/1     Terminating         2          38m
 ```
 
-After a few minutes, when you see all services running in the *WebStatus* health checks dashboard, you can run the app as you did before deleting the `nosqldata` service.
-
-You can also apply discounts in the checkout page, as shown in the next image:
+When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied.
 
 :::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
 
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
 
-Since you're now using Cosmos DB, you can use the Azure portal's **Data Explorer** tab to inspect, and even modify, the stored documents. For example:
+Use the Azure portal's **Data Explorer** tab to inspect the stored documents using the following steps:
+
+1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
+1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. 
 
 :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Image description follows in text." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 

@@ -27,6 +27,6 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram showing the eShopOnContainers solution architecture." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-This module explores data services implemented in the *:::no-loc text="eShopOnContainers":::* app. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review logging and monitoring concepts.
+This module explores data services implemented in the *:::no-loc text="eShopOnContainers":::* app. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review microservices data store concepts.
 
 [!INCLUDE[A note about non-blocking script warnings](../../includes/microservices/non-blocking-warnings-note.md)]

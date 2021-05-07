@@ -94,3 +94,5 @@ If you notice, following containers/pods are used as different data stores in eS
 - `sqldata-<random-guid>` pod as SQL instance.
 - `nosqldata-<random-guid>` pod as MongoDB instance.
 - `basket-<random-guid>` pod as Redis instance.
+
+In the next unit, you'll change the Redis Cache used by the basket service.
