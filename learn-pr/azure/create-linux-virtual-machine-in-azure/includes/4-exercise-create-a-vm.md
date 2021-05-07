@@ -8,7 +8,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the search box, enter **Nginx on Ubuntu Server 18.04**. The **Nginx on Ubuntu Server 18.04** pane appears.
+1. In the search box, enter **Nginx on Ubuntu Server 18.04**, and then press <kbd>Enter</kbd>. The **Nginx on Ubuntu Server 18.04** pane appears.
 
 1. Select **Create** to start configuring the VM. The **Create a virtual machine** pane appears.
 
