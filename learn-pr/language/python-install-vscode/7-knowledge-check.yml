@@ -26,9 +26,9 @@ quiz:
       explanation: "Correct! The currently supported version of Python is Python 3."
   - content: "What Python function is used to display information on the screen?"
     choices:
-    - content: "bytes"
+    - content: "len"
       isCorrect: false
-      explanation: "Incorrect. bytes is used to create a sequence of small integers."
+      explanation: "Incorrect. len is used to find the length of an item."
     - content: "print"
       isCorrect: true
       explanation: "Correct! The Python function to display information on the screen is print."
