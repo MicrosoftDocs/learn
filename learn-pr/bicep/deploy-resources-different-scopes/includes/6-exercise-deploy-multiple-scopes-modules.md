@@ -121,7 +121,7 @@ You've successfully deployed subscription-scoped resources, including a resource
 ::: zone pivot="cli"
 
 ```azurecli
-$subscriptionId=(az account show --query 'id' --output tsv)
+subscriptionId=$(az account show --query 'id' --output tsv)
 
 az policy assignment delete --name 'DenyFandGSeriesVMs' --scope '/subscriptions/$subscriptionId'
 az policy definition delete --name 'DenyFandGSeriesVMs' --scope '/subscriptions/$subscriptionId'
