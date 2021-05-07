@@ -4,11 +4,11 @@ By using parameters, you can create flexible and reusable Bicep templates. You d
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. The human resources (HR) department is migrating an on-premises web application and its database to Azure. The application will handle information about all of the toy company employees, so security is important.
 
-You've been asked to prepare infrastructure for three environments: dev, test, and production. You'll build this infrastructure by using infrastructure-as-code techniques so that you can reuse the same templates to deploy across all of your environments. You'll create separate sets of parameter values for each environment, while securely retrieving database credentials from Azure Key Vault.
+You've been asked to prepare infrastructure for three environments: dev, test, and production. You'll build this infrastructure by using infrastructure as code techniques so that you can reuse the same templates to deploy across all of your environments. You'll create separate sets of parameter values for each environment, while securely retrieving database credentials from Azure Key Vault.
 
 ## What will we be doing?
 
-In this module, you'll build a reusable Bicep template with parameters. The Bicep will define an Azure App Service plan and an app, and a SQL server and database. You'll create a parameter file to specify the values for your environments. Then you'll secure the parameter values by using Key Vault.
+In this module, you'll build a reusable Bicep template with parameters. The Bicep will define an Azure App Service plan and an app. It will also define a SQL server and database. You'll create a parameter file to specify the values for your environments. Then you'll secure the parameter values by using Key Vault.
 
 ## What is the main goal?
 
@@ -23,7 +23,7 @@ By the end of this module, you'll be able to:
 You should have:
 
 - Familiarity with the basic Bicep template structure and syntax.
-- Some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 - An understanding of what infrastructure as code is and its benefits.
 
 To follow along with the exercises in the module, you'll need:
