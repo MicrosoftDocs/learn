@@ -121,7 +121,16 @@ Next, you'll deploy an Azure Function App.
     $azureFunctionName = $("azfunc$($uniqueID)")
     # Get storage account name
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
+    $storageAccountName
     ```
+
+> [!WARNING]
+> If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
+>
+> ```powershell
+> $storageAccountName = $("storageaccount$($uniqueID)")
+> $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
+> ```
 
 1. Run the following code in the Cloud Shell to deploy the function in your language of choice.
 
