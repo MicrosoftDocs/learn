@@ -130,7 +130,7 @@ Select the **Wait Statistics** tab to view the corresponding visualizations on w
 The Performance Recommendations feature analyzes workloads across your server to identify indexes with the potential to improve performance.
 Open Performance Recommendations from the **Intelligent Performance** section of the menu bar on the Azure portal page for your MySQL server.
 
-> [!TIP]
+> [!NOTE]
 > For more information on Database Monitoring, see the **Summary** unit at the end of this training.
 
 # OpenTelemetry
@@ -142,15 +142,15 @@ For new environments, OpenTelemetry is deployed as an agent on each host within 
 For legacy environments, the OpenTelemetry supports many popular open-source wire formats including Jaeger, Prometheus, and Fluent Bit.
 Once OpenTelemetry data has been exported to Azure Monitor, you can access Application Insights and distributed traces and metrics.
 
-> [!TIP]
+> [!NOTE]
 > For more information on OpenTelemetry, see the Summary unit at the end of this training.
 
 # UI monitoring
 
 If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, as well as users and session counts. All these can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
+Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs in conjunction with the client-side JavaScript SDK to get an end-to-end understanding of your app's performance.
 
-> [!TIP]
-> Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs in conjunction with the client-side JavaScript SDK to get an end-to-end understanding of your app's performance.
+> [!NOTE]
 > For more information on UI monitoring, see the Summary unit at the end of this training.
 
 The next unit is a knowledge check to see what you've learned in this module.
