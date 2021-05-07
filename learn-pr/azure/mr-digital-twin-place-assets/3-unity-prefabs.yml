@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mixed-reality-toolkit-project-unity.3-exercise-configure
-title: Exercise - Configure Unity for Windows Mixed Reality
+uid: learn.mr-digital-twin-place-assets.3-unity-prefabs
+title: Unity prefabs
 metadata:
-  title: Exercise - Configure Unity for Windows Mixed Reality
+  title: Unity prefabs
   description: Configure Unity for Windows Mixed Reality development.
-  author: aprilspeight
-  ms.author: apspeigh
-  ms.date: 08/11/2020
+  ms.date: 5/7/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-configure.md)]
+  [!include[](includes/3-unity-prefabs.md)]

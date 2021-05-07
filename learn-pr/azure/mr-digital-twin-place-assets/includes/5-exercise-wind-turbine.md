@@ -1,93 +1,76 @@
-The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you'll import and configure resources to add the Mixed Reality Toolkit to your project.
+You can begin with an empty scene and re-create the Scene components from any previous, related module(s), or you can begin with the relevant prebuilt Scene created for you based on a prior module.  Five Scenes have been included in the sample Unity project to assist with your learning.  Scene **1_Build3DScene** contains a completed Scene from the prior module.  If you complete this module and are having difficulties or would simply like to confirm your work, you can load this Scene and compare it to the Scene you built.  If you choose to load the Scene representing a completed module, you still need to configure some parameters, including Maps SDK and Azure services.
 
-## Import TextMesh Pro Essential Resources
+- Open your previously built Scene
 
-1. In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**.
+1. If your previously built Scene is not already open, select **File > Open Scene**
+2. Browse to the folder where you saved your Scene.  Typically this is the **Assets > Scenes** folder in the root project folder structure.
 
-    :::image type="content" source="../media/import-tmp-essential-resources.png" alt-text="Screenshot of the Unity Editor with the Window menu expanded. Text Mesh Pro and Import T M P Essential Resources are highlighted.":::
+OR
 
-1. In the **Import Unity Package** window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets.
+- Add existing Scene  [optional]
 
-    :::image type="content" source="../media/tmp-all-import.png" alt-text="Screenshot of the Import Unity Package window. The window displays the assets for T M P essential resources. The All and Import buttons are highlighted.":::
+4. In the Project Panel, open the **Assets > Scenes** folder
+5. Select and drag the Scene to the Hierarchy panel.  For this module, select
+**1_Build3DScene**
+6. Configure necessary service parameters (e.g., Maps SDK, Azure Services, etc.)
 
-## Import the MRTK Unity Foundation package
+> [!NOTE]
+> The **Final_CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  It will still require further configuration.
 
-1. In the Mixed Reality Feature Tool, for **Project path** use the **ellipsis** button to select the target location of the Unity project. After, select Discover Features.
+Placing your Prefab wind turbine assets in the Scene enables interaction with the assets.
 
-    :::image type="content" source="../media/feature-tool-project-path.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Project path field and Discover Features button are highlighted.":::
+## Place and configure turbine on Static Terrain
 
-1. Next, select the **Mixed Reality Toolkit Foundation 2.5x** or newer package within the feature package catalog.  After, select **Get Features**.
+1. Open the **Assets > Art > Prefabs** folder in your Project Window
+2. If you already have a map in the scene, delete the asset by right clicking it in the Hierarchy panel and select **Delete**.  Don’t worry, it only removes it from your Scene and does not delete the Prefab from your Unity Project.
+3. Add the **Static Terrain.prefab** Prefab by dragging it to the Hierarchy panel
+4. Drag the Prefab named **Wind Turbine Static Map.prefab** into the Scene window
 
-    :::image type="content" source="../media/feature-package-catalog.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Mixed Reality Toolkit Foundation package is highlighted. The Get Features button is also highlighted/":::
+:::image type="content" source="../media/prefab-static-terain-turbine.png" alt-text="Screenshot of the Unity project panel with the art folder open with the prefabs subfolder selected.":::
 
-1. On the **Import Features** screen, select **Validate** to ensure the Unity project can successfully import the selected features. If successful, the message **No validation issues were detected** displays in a pop-up.
+5. Make the **Wind Turbine Static Map** a child of the **Static Terrain** by nesting it under the Static Terrain Asset in the Hierarchy window.  Be sure to drag it to the bottom of the list of children or you will receive a message “Cannot restructure Prefab instance”.  If you receive this, select **Cancel**, and place the Prefab at the bottom of the list of children directly under the Static Terrain.
 
-    :::image type="content" source="../media/feature-tool-validate.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Validate button is highlighted.":::
+:::image type="content" source="../media/prefab-child-order-static-map.png" alt-text="Screenshot of the Unity scene window with the main scene running and the static terrain prefab in view.":::
 
-1. Select **Import** to import the package and dependencies.
+6. Set the scale in the **Transform** component in the **Inspector** panel for the Wind Turbine to **(0.003, 0.003, 0.003)** so it approximately matches the terrain scale
+7. Select the **Move Tool** just under the **Edit** menu item, select the Wind Turbine if it’s not already selected.  Use the green-red-blue arrows (or the center box) on screen to position the turbine at the centre of the terrain
 
-1. On the **Review and Approve** screen, select **Approve**.
+:::image type="content" source="../media/move-turbine-static-terrain.png" alt-text="Screenshot of the Unity scene window with the main scene running and the wind turbine static map child object and scale tool highlighted.":::
 
-    :::image type="content" source="../media/feature-tool-approve.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Approve button is highlighted.":::
+8. With the turbine still selected, select the **Rotate Tool** just under the **Edit** menu item and experiment with rotating the turbine.
 
-1. After the project update is successful, select **Exit** on the **Unity Project Updated** screen. 
+:::image type="content" source="../media/rotate-turbine-static-terrain.png" alt-text="Screenshot of the Unity scene window with the main scene running and the wind turbine static map child object and rotate tool highlighted.":::
 
-The Unity project should now contain a **Packages** folder. Inside the **Packages** folder is the **Mixed Reality Toolkit Foundation** package and installed dependencies.
+9. Repeat steps 3 to 8 to place more turbines on the landscape.
+10. Save the scene under the File > Save menu option.
 
-## Open the MRTK Project Configurator window
+## Place and configure prefab wind turbine on Dynamic Terrain
 
-After the MRTK Foundation package is imported, the **MRTK Project Configurator** window will appear. If the window does not appear, you can open via the Unity menu.
+1. Open the **Assets > Art > Prefabs** folder in your Project Window.
+2. If you already have a map in the scene, delete the asset by right clicking it in the Hierarchy panel and select **Delete**.  Don’t worry, it only removes it from your Scene and does not delete the Prefab from your Unity Project.
+3. Add the **Bing Maps Design.prefab** Prefab by dragging it to the Hierarchy panel.  If necessary, add your Bing Maps 
+4. Drag the Prefab named **Wind Turbine Design.prefab** into the Scene window
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**.
+:::image type="content" source="../media/prefab-dynamic-wind-turbine-design.png" alt-text="Screenshot of the Unity project panel with the prefabs subfolder selected.":::
 
-:::image type="content" source="../media/open-mrtk-project-configurator.png" alt-text="Open MRTK Project Configurator window.":::
+5. Make the **Wind Turbine Design** a child of the **Bing Maps Design** by nesting it under the **Bing Maps Design** Asset in the Hierarchy window.  Be sure to drag it to the bottom of the list of children or you will receive a message “Cannot restructure Prefab instance”.  If you receive this, select **Cancel**, and place the Prefab at the bottom of the list of children directly under the **Bing Maps Design**.
 
-## Configure the Unity project for the Mixed Reality Toolkit
+:::image type="content" source="../media/prefab-dynamic-child-order-wind-turbine.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and the bing maps design child object expanded.":::
 
-1. In the **MRTK Project Configurator** window, click the **Audio spatializer** dropdown and select **MS HRTF Spatializer**.
+:::image type="content" source="../media/prefab-child-order-dynamic-map.png" alt-text="Screenshot of the Unity scene and hierarchy windows with the bing maps design prefab in view.":::
 
-    :::image type="content" source="../media/audio-spatializer.png" alt-text="Screenshot of the M R T K Project Configurator window. Audio spatializer and the drop-down options for the settings are highlighted. The M S H R T F spatializer option is highlighted in blue.":::
+6. Set the scale in the **Transform** component in the Inspector for the Wind Turbine to 
+**(0.005, 0.005, 0.005)** so it approximately matches the terrain scale
+7. Select the **Move Tool** just under the **Edit** menu item, select the Wind Turbine if it’s not already selected.  Use the green-red-blue arrows (or the center box) on screen to position the turbine at the centre of the terrain
 
-1. Ensure all options are checked, and click the **Apply** button to apply the settings.
+:::image type="content" source="../media/move-turbine-dynamic-terrain.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and the wind turbine design child object expanded. Move tool is also selected.":::
 
-    :::image type="content" source="../media/mrtk-project-configurator-apply.png" alt-text="Screenshot of the M R T K Project Configurator window with Apply highlighted.":::
+8. With the turbine still selected, select the **Rotate Tool** just under the **Edit** menu item and experiment with rotating the turbine.
 
-## Configure the Mixed Reality Toolkit
+:::image type="content" source="../media/rotate-turbine-dynamic-terrain.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and the wind turbine design child object expanded. Rotate tool is also selected.":::
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene. Two new objects are added to the Hierarchy: **MixedRealityToolkit** and **MixedRealityPlayspace**.
+9. Repeat steps 3 to 8 to place more turbines on the landscape.
 
-:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects.":::
+:::image type="content" source="../media/multiple-turbines-dynamic-terrain.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and multiple turbine prefabs placed on the dynamic terrain.":::
 
-The next step is to disable the Diagnostics bar. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should continuously run at 60 FPS.
-
-1. Select the **MixedRealityToolkit** object in the **Hierarchy** window. The MixedRealityToolkit's properties will display in the **Inspector** window.
-
-    :::image type="content" source="../media/mixedrealitytoolkit-object.png" alt-text="The mixed reality toolkit object is highlighted in the hierarchy window.":::
-
-1. In the **Inspector** window, select **DefaultMixedRealityToolkitConfigurationProfile**
-
-    :::image type="content" source="../media/defaultmixedrealitytoolkit-profile.png" alt-text="The default mixed reality toolkit configuration profile is highlighted in the hierarchy window.":::
-
-1. In the **Inspector** window, select **Clone** to clone the profile.
-
-    :::image type="content" source="../media/clone-profile-one.png" alt-text="The clone button is highlighted in the hierarchy window.":::
-
-1. In the **Cloning Profile** window, enter **MRTKCubeConfigurationProfile** for **Profile Name**.
-
-    :::image type="content" source="../media/configuration-profile-name.png" alt-text="In the clone profile window, the profile name entered is m r t k cube configuration profile. The profile name is highlighted.":::
-
-1. Select **Clone**.
-
-1. In the **Inspector** window, select **Diagnostics**. In the **Diagnostics** settings, select **Clone** to clone the Diagnostics profile.
-
-    :::image type="content" source="../media/diagnostics-profile.png" alt-text="The diagnostics profile button is highlighted in the hierarchy window. The clone button is also highlighted.":::
-
-1. In the **Cloning Profile** window, enter **MRTKCubeDiagnosticsProfile** for **Profile Name**.
-
-    :::image type="content" source="../media/new-diagnostics-profile.png" alt-text="In the clone profile window, the profile name entered is mrtk cube diagnostics profile. The profile name is highlighted.":::
-
-1. Select **Clone**.
-
-1. In the **Diagnostics** settings, uncheck **Show Diagnostics**.
-
-    :::image type="content" source="../media/show-diagnostics.png" alt-text="The show diagnostics setting is highlighted. The box is unchecked.":::
+10. Save the scene under the **File > Save** menu option.

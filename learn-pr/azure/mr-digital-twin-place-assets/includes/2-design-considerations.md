@@ -1,29 +1,12 @@
-The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Configuring Unity for Windows Mixed Reality development is a manual process, which must be completed whenever you create a new Unity project or open a project shared with you. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you'll learn the specifics of configuring your Unity project for Windows Mixed Reality development.
+Before building a Scene, it is important to consider what data would support the end purpose of the user experience.  In your wind farm use case, you will be building a Unity Scene to help place wind turbines in a wind farm, then connect them to operational data, and take action on events.  To build an immersive experience that is realistic and meaningful, you will need to provide contextual information in addition to wind turbine model assets. 
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Configure-Unity-for-Mixed-Reality-Development/player?format=ny]
+Satellite imagery can provide contextual information to provide both realism and help drive decision making.  In building a scene, you will need to consider how big of a study area / how much data you want to retrieve.  There always is a balance between data quantity and quality, and performance.  The placement locations of 3D assets may seem trivial, but it plays an important role in the overall immersive experience.  A few considerations to keep in mind are:
 
-## Universal Windows Platform
-
-To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device - this includes support for immersive headsets. However, you could select the appropriate device by changing the setting for **Target device**.
-
-## Create an immersive view
-
-Windows apps can contain two kinds of views, **2D views** and **immersive views**. Apps can switch between their various immersive views and 2D views, showing their 2D views on a monitor as a window or in a headset as a slate.
-
-An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. Apps that have at least one immersive view are categorized as mixed reality apps. Apps that never have an immersive view are **2D apps**.
-
-In Unity, you can configure your project to create an immersive view by enabling **Virtual Reality Supported**. When virtual reality support is enabled, a virtual reality SDK must be added. As there is no separate SDK for Windows Mixed Reality development, the Windows 10 SDK is used instead.
-
-## How are holograms rendered
-
-In mixed reality apps, the scene is rendered twice, once for each eye to the user. This rendering method is referred to as *stereoscopic vision*. Compared to traditional 3D development, stereoscopic vision doubles the amount of work that needs to be computed. Therefore, it's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. **Single pass instanced** rendering optimizes the Unity rendering pipeline for mixed reality apps and therefore it's recommended to enable this setting by default for every project.
-
-## How to stabilize holograms
-
-To achieve better hologram stability from the perception of the user, **Depth Buffer Sharing** should be enabled. By turning this on, Unity will share the depth map produced by your app with the Windows Mixed Reality platform. The platform will then be able to better optimize hologram stability specifically for your scene for any given frame being rendered by your app.
-
-With regards to performance, selecting the **16-bit depth** format compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
-
-## Porting an existing Unity app to Windows Mixed Reality
-
-If you have an existing Unity project that you're porting to Windows Mixed Reality, refer to the Unity porting guide to get started. Bringing existing content over to Windows Mixed Reality involves retargeting the usage of other platform SDKs to the Windows APIs. If your app is not already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.
+| Design considerations | Logic |
+|---|---|
+| Size/scale | Assets should be of realistic size relative to the rest of the scene.  Depending on how your scene has been set up, you may need to scale your assets to provide realism. |
+| Proximity/density | Assets should be placed with realistic proximity to features and other assets to permit operability, particularly where moving parts are concerned. <br><br>Density of assets should be realistic.  If the Scene is too crowded, consider removing assets or expanding the Scene to an appropriate overall scale. <br><br>This project uses a combination of near and far manipulation to interact with assets in the Scene. Some assets lend themselves to one method such as a collidable fingertip press of a button asset, while others benefit from the application of both near and far.  For example, use far manipulation to pick up a turbine using a directed ray, placing it in a distant point of the terrain and then combine this with near manipulation where the user can proceed to move closer to directly manipulate (move/rotate/scale) the turbine using affordance-based manipulation. |
+| Relativity | Assets should be placed at an appropriate elevation (z) in the scene so they lock to the appropriate surface (e.g., floor, ground, workbench, etc.) |
+| Asset animation | Many Digital Twin solutions contain assets that move.  You need to consider asset spacing and proximity in consideration of parts collision, as well as ensuring realism.  Movement and collisions are dictated through logic and the physics engine you leverage. |
+| Navigation | Users move through Scenes in various manners.  You need to consider if your Digital Twin experience will be navigated through teleportation (i.e., a fixed path), via free roam (i.e., unbridled movement) or a combination of the two. |
+| Asset fidelity | If users are expected to experience very detailed information, then your assets should be of high fidelity.  You can be creative around your experience to dynamically load higher-fidelity assets when in closer proximity. <br><br>Asset fidelity can impact performance, so it is always a design/performance balance that must be considered when selecting appropriate fidelity for your models. |

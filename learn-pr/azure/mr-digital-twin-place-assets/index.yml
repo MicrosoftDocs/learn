@@ -1,23 +1,22 @@
 ### YamlMime:Module
-uid: learn.mixed-reality-toolkit-project-unity
+uid: learn.mr-digital-twin-place-assets
 metadata:
-  title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
-  description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
-  ms.date: 08/11/2020
-  author: "aprilspeight"
-  ms.author: "apspeigh"
+  title: Place 3D assets in a Unity scene
+  description: Learn how to place Prefab 3D assets or models into a Unity scene.
+  ms.date: 5/7/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
-summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
+title: Place 3D assets in a Unity scene
+summary: Learn how to place Prefab 3D assets or models into a Unity scene.
 abstract: |
-  By the end of this module you will be able to:
-  - Configure Unity for Windows Mixed Reality Development
-  - Import the Mixed Reality Toolkit (MRTK) foundation package into Unity
-  - Add MRTK to a Unity scene
-  - Compare and contrast the three primary MRTK interaction models
-  - Manipulate holograms using ObjectManipulator
-iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+  By the end of this module you,'ll be able to:
+  - Incorporate design considerations into building a scene
+  - Leverage Unity Prefabs to accelerate Digital Twin solutions
+  - Use MRTK interactions to provide a rich user experience
+  - Place assets in a Unity scene
+iconUrl: /learn/achievements/mr-digital-twin-place-assets.svg
 levels:
 - beginner
 roles:
@@ -25,23 +24,22 @@ roles:
 products:
 - windows
 - windows-mixed-reality
-- mrtk
 - hololens
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
-  - Windows 10 SDK 10.0.18362.0 or later
-  - Unity Hub with Unity 2019.4.X installed
-  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
+  - Build a 3D Scene in Unity with Maps SDK Module
+  - Fundamental working knowledge of Unity
+  - Understanding of how to build for and deploy to the HoloLens
+  - Understanding of MRTK 
+  - Fundamental understanding of Level Of Detail (LOD) concepts
 units:
-- learn.mixed-reality-toolkit-project-unity.1-introduction
-- learn.mixed-reality-toolkit-project-unity.2-configure
-- learn.mixed-reality-toolkit-project-unity.3-exercise-configure
-- learn.mixed-reality-toolkit-project-unity.4-import-resources
-- learn.mixed-reality-toolkit-project-unity.5-exercise-import-resources
-- learn.mixed-reality-toolkit-project-unity.6-interaction-models
-- learn.mixed-reality-toolkit-project-unity.7-exercise-hand-interaction-objectmanipulator
-- learn.mixed-reality-toolkit-project-unity.8-knowledge-check
-- learn.mixed-reality-toolkit-project-unity.9-summary
+- learn.mr-digital-twin-place-assets.1-introduction
+- learn.mr-digital-twin-place-assets.2-design-considerations
+- learn.mr-digital-twin-place-assets.3-unity-prefabs
+- learn.mr-digital-twin-place-assets.4-mrtk-interactions-so
+- learn.mr-digital-twin-place-assets.5-exercise-wind-turbine
+- learn.mr-digital-twin-place-assets.6-exercise-deploy
+- learn.mr-digital-twin-place-assets.7-knowledge-check
+- learn.mr-digital-twin-place-assets.8-summary
 badge:
-  uid: learn.mixed-reality-toolkit-project-unity.badge
+  uid: learn.mr-digital-twin-place-assets.badge

@@ -1,23 +1,20 @@
-The Mixed Reality Toolkit (MRTK) is a cross-platform toolkit for building mixed reality experiences for Virtual Reality (VR) and Augmented Reality (AR). The toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality development.
+A well-designed user experience in Unity for the HoloLens involves designing and creating a Unity Scene.  A Scene is like a blank canvas where you will set up an experience for your end user. Providing some context for your user is important, which can be achieved by adding supportive information such as satellite imagery or other, typically lower fidelity, supportive information (e.g., surrounding warehouse infrastructure).  
 
-Suppose you're creating a mixed reality experience in which the user needs the ability to move, rotate, and scale a holographic object. Although you could start from scratch and create your own script to enable such manipulations, your workflow of adding direct manipulation to holograms and configuring constraints may be time consuming--especially if there are multiple objects to configure.
-
-In this module, you'll configure Unity for Windows Mixed Reality development and import the Mixed Reality Toolkit (MRTK) into your project. The Mixed Reality Toolkit includes an ObjectManipulator script, which will be applied to a cube for direct manipulation with hands.
-
-By the end of this module, you'll be able to set up a Unity project configured for Windows Mixed Reality development and use the Mixed Reality Toolkit to accelerate your mixed reality development.
+Once the context has been established for the Scene, you need to create and add the 3D assets or models you intend to use for your Digital Twin.  In your case, you will add the wind turbine assets to your scene that have been created for you.  It is these 3D assets that you can be connected to cloud services such as Azure Digital Twin to operationalize your Digital Twins. 
 
 ## Learning objectives
 
-- Configure Unity for Windows Mixed Reality Development
-- Import the Mixed Reality Toolkit (MRTK) foundation package into Unity
-- Add MRTK to a Unity scene
-- Compare and contrast the three primary MRTK interaction models
-- Manipulate holograms using ObjectManipulator
+In this module, you'll learn how to:
+- Incorporate design considerations into building a scene
+- Leverage Unity Prefabs to accelerate Digital Twin solutions
+- Use MRTK interactions to provide a rich user experience
+- Place assets in a Unity scene
 
 ## Prerequisites
 
-- A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
-- Windows 10 SDK 10.0.18362.0 or later
-- Unity Hub with Unity 2019.4.X installed
-- [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-- Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+- Introduction to Mixed Reality, Azure Digital Twin and Unity Module
+- Build a 3D Scene in Unity with Maps SDK Module
+- Fundamental working knowledge of Unity
+- Understanding of how to build for and deploy to the HoloLens
+- Understanding of MRTK 
+- Fundamental understanding of Level Of Detail (LOD) concepts
