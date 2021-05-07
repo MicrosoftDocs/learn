@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-remote-rendering 
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure Remote Rendering
+  description: Learn how Azure Remote Rendering can xxx
+  ms.date: 05/05/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial  
+title: Introduction to Azure Remote Rendering
+summary: Evaluate Azure Remote Rendering. Describe Azure Remote Rendering xxx.
+abstract: |
+  By the end of this module, you will be able to: 
+    - Evaluate whether Azure Remote Rendering is appropriate to xxx.
+    - Describe how Azure Remote Rendering <features> of xxxwork to <xxx solve problem>.
+prerequisites: |
+  - Beginner-level familiarity xxx
+  - Foundational knowledge of xxx
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - xxx
+  - xxx
+products:
+  - azure
+  - azure-remote-rendering
+units:  
+- learn.intro-to-azure-remote-rendering.1-introduction
+- learn.intro-to-azure-remote-rendering.2-what-is-azure-remote-rendering
+- learn.intro-to-azure-remote-rendering.3-how-azure-remote-rendering-works
+- learn.intro-to-azure-remote-rendering.4-when-to-use-azure-remote-rendering
+- learn.intro-to-azure-remote-rendering.5-knowledge-check
+- learn.intro-to-azure-remote-rendering.6-summary
+  badge:
+  uid: learn.intro-to-azure-remote-rendering.badge
