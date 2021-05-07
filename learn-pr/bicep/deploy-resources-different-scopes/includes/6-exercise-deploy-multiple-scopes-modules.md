@@ -116,15 +116,13 @@ You've successfully deployed subscription-scoped resources, including a resource
 > [!CAUTION]
 > This command will permanently delete the resource group named *ToyNetworking* and all of its resources. If you've deployed anything else into this resource group, you should skip this step.
 
-<!-- TODO Test the below -->
-
 ::: zone pivot="cli"
 
 ```azurecli
 subscriptionId=$(az account show --query 'id' --output tsv)
 
-az policy assignment delete --name 'DenyFandGSeriesVMs' --scope '/subscriptions/$subscriptionId'
-az policy definition delete --name 'DenyFandGSeriesVMs' --scope '/subscriptions/$subscriptionId'
+az policy assignment delete --name 'DenyFandGSeriesVMs' --scope "/subscriptions/$subscriptionId"
+az policy definition delete --name 'DenyFandGSeriesVMs' --subscription $subscriptionId
 az group delete --name ToyNetworking
 ```
 
@@ -136,7 +134,7 @@ az group delete --name ToyNetworking
 $subscriptionId = (Get-AzContext).Subscription.Id
 
 Remove-AzPolicyAssignment -Name 'DenyFandGSeriesVMs' -Scope "/subscriptions/$subscriptionId"
-Remove-AzPolicyDefinition -Name 'DenyFandGSeriesVMs' -Scope "/subscriptions/$subscriptionId"
+Remove-AzPolicyDefinition -Name 'DenyFandGSeriesVMs' -SubscriptionId $subscriptionId
 Remove-AzResourceGroup -Name ToyNetworking
 ```
 
