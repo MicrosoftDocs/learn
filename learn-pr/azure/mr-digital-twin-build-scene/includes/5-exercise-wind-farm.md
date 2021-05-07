@@ -14,7 +14,7 @@ You can begin with an empty scene and re-create the Scene components from any pr
 > [!NOTE]
 > The **Final_CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  It will still require further configuration.  After you have added the Scene you would prefer to work with, remove any other unwanted Scenes by right clicking and** Remove Scene**.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the 1 underscore build 3d scene loaded.":::
 
 ## Add Static Terrain
 
@@ -23,7 +23,7 @@ You can begin with an empty scene and re-create the Scene components from any pr
 3. With the Static Terrain object selected in the **Hierarchy** Panel on the left, the **Inspector** window on the right will show the **Position, Rotation, and Scale** parameters under the Transform section.  Position the terrain using the Position coordinates `(X = -1.25, Y = -0.59, Z = 2)` so that the Static Terrain is in front of the user at startup.  
 4. Save the scene under the **File > Save** menu option.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/static-terrain-position.png" alt-text="Screenshot of the Unity inspector with the static terrain prefab selected and the transform component in view.":::
 
 You now have the static terrain Prefab loaded and available for use in your app. Next, you can load the Bing Maps dynamic terrain into the Scene.
 
@@ -40,7 +40,7 @@ When you create a Bing Maps Key, be sure to select **Basic** as the key type and
 
 2. Select the new instance of the Prefab in the hierarchy panel, and expand the **Map Session** component in the Inspector and enter the **Developer Key** obtained in the previous section.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/maps-developer-key.png" alt-text="Screenshot of the Bings Maps Design prefab with the map session script selected.":::
 
 3. You may need to select another item in the hierarchy, then select Bing Maps again to refresh
 4. Expand the **Map Renderer (Script)** component in the **Inspector** and set the following **Location** and **Map Layout** settings:
@@ -59,18 +59,18 @@ When you create a Bing Maps Key, be sure to select **Basic** as the key type and
 | Local Map Radius | 1 |
 | Local Base Height | 0.3 |
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/map-renderer.png" alt-text="Screenshot of the Bings Maps Design prefab with the map renderer script selected.":::
 
 5. Expand the **Transform** component in the **Inspector** and position the map using the **Position** coordinates (X = 0, Y = -0.7, Z = 2) so it sits in front of the user.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/bing-maps-transform.png" alt-text="Screenshot of the Bings Maps Design prefab with the transform component selected.":::
 
 6. Save the scene under the **File > Save** menu option.  If prompted, save your Scene in the **Scenes** folder.
 7. In the Scene, you should have both the Static and Dynamic terrain loaded.  Navigate the Scene using your mouse and/or keyboard.  
 8. Press the **Play** button and navigate the Game panel.  
 9. Observe any differences between the Static Terrain and Dynamic Terrain (for example, endless terrain and contour lines in the Bing Maps terrain v. higher resolution imagery in the Static Terrain)
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/bing-static-dueling-terrain.png" alt-text="Screenshot of the main scene in play mode with the static and bing map terrains side by side.":::
 
 ## Remove static terrain 
 

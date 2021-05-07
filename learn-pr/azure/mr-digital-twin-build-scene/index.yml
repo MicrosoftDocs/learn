@@ -1,23 +1,19 @@
 ### YamlMime:Module
-uid: learn.mixed-reality-toolkit-project-unity
+uid: learn.mr-digital-twin-build-scene
 metadata:
-  title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
+  title: Build a 3D Scene in Unity with Maps SDK 
   description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
-  ms.date: 08/11/2020
-  author: "aprilspeight"
-  ms.author: "apspeigh"
+  ms.date: 5/4/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+title: Build a 3D Scene in Unity with Maps SDK
 summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
 abstract: |
   By the end of this module you will be able to:
-  - Configure Unity for Windows Mixed Reality Development
-  - Import the Mixed Reality Toolkit (MRTK) foundation package into Unity
-  - Add MRTK to a Unity scene
-  - Compare and contrast the three primary MRTK interaction models
-  - Manipulate holograms using ObjectManipulator
-iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+  - Create a 3D scene in Unity using static terrain data
+  - Create a dynamic 3D scene in Unity using Microsoft’s Maps SDK
 levels:
 - beginner
 roles:
@@ -25,23 +21,21 @@ roles:
 products:
 - windows
 - windows-mixed-reality
-- mrtk
 - hololens
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
-  - Windows 10 SDK 10.0.18362.0 or later
-  - Unity Hub with Unity 2019.4.X installed
-  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - Introduction to Mixed Reality, Azure Digital Twin, and Unity Module
+  - Fundamental understanding of raster data / imagery
+  - Awareness of the Microsoft Maps SDK
+  - Bing Maps Account and Dev Key
 units:
-- learn.mixed-reality-toolkit-project-unity.1-introduction
-- learn.mixed-reality-toolkit-project-unity.2-configure
-- learn.mixed-reality-toolkit-project-unity.3-exercise-configure
-- learn.mixed-reality-toolkit-project-unity.4-import-resources
-- learn.mixed-reality-toolkit-project-unity.5-exercise-import-resources
-- learn.mixed-reality-toolkit-project-unity.6-interaction-models
-- learn.mixed-reality-toolkit-project-unity.7-exercise-hand-interaction-objectmanipulator
-- learn.mixed-reality-toolkit-project-unity.8-knowledge-check
-- learn.mixed-reality-toolkit-project-unity.9-summary
+- learn.mr-digital-twin-build-scene.1-introduction
+- learn.mr-digital-twin-build-scene.2-configure
+- learn.mr-digital-twin-build-scene.3-exercise-configure
+- learn.mr-digital-twin-build-scene.4-import-resources
+- learn.mr-digital-twin-build-scene.5-exercise-import-resources
+- learn.mr-digital-twin-build-scene.6-interaction-models
+- learn.mr-digital-twin-build-scene.7-exercise-hand-interaction-objectmanipulator
+- learn.mr-digital-twin-build-scene.8-knowledge-check
+- learn.mr-digital-twin-build-scene.9-summary
 badge:
-  uid: learn.mixed-reality-toolkit-project-unity.badge
+  uid: learn.mr-digital-twin-build-scene.badge

@@ -4,7 +4,7 @@ Now that you have built the base terrain for your wind farm experience, build th
 
 When adjusting your build settings, be sure to **Add Open Scenes** if your Scene doesn't appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform.
 
-<!-- :::image type="content" source="" alt-text=""::: -->
+:::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build settings window with the main scene and universal windows platform options highlighted.":::
 
 Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  To open your app from the Start menu, simply select an app tile. You can also say the name of the app to open it.  Navigate the experience and test the functionality you developed.
 
