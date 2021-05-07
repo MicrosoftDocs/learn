@@ -18,7 +18,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Traces are records of the paths of execution for programs and services."
     - content: "Logs"
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. Logs are permanent, immutable records of events stored in a consistent, tabular format."
     - content: "Metrics"
       isCorrect: false
