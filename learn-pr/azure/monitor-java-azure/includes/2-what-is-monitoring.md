@@ -26,4 +26,4 @@ Various services such as Azure Log Analytics and Microsoft Power BI can be conne
 
 ## Next steps
 
-In the next exercise, we'll configure your Sample Spring application and set it up for monitoring.
+In the next exercise, we'll configure a Sample Spring application and set it up for monitoring.

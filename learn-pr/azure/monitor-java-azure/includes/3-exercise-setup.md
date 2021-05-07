@@ -37,6 +37,8 @@ sh deployPetClinicApp.sh
 
 Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
 
+Next, navigate to the "Owners" tab, Find all owners and add some sample owner, pet and visit data to ensure the monitoring logs, traces and metrics are populated.
+
 ![Real-time metrics](../media/4-petclinic.jpg)
 
 ## Next steps
