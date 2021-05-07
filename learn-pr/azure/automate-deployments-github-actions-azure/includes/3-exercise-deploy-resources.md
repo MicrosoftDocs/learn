@@ -1,6 +1,6 @@
 Setting up your environment and deploying some resources to start with is an important step in building full stack applications.
 
-Recall in the catching the bus sample, you'll us resources including Azure SQL Database, Azure Static Web Apps, Azure Functions, and Azure Logic Apps. In the previous modules of this learning path, you focused on the various elements that make up the solution. In this module, you'll deploy the entire solution.
+Recall in the catching the bus sample, you'll use resources including Azure SQL Database, Azure Static Web Apps, Azure Functions, and Azure Logic Apps. In the previous modules of this learning path, you focused on the various elements that make up the solution. In this module, you'll deploy the entire solution.
 
 ## Configure your environment
 

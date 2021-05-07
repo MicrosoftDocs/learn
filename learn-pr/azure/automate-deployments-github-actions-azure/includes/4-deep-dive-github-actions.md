@@ -1,3 +1,5 @@
+You've deployed all the elements of your solution, but some updates and configurations are required. The next step is to automate the deployment of the updates to your solution.
+
 GitHub Actions help you automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred. For example, every time someone creates a pull request for a repository, you can automatically run a command that executes a software testing script.
 
 Azure DevOps is a similar service that automatically builds and tests code projects to make them available to others. It works with just about any language or project type and could be used in place of GitHub Actions in this solution if desired.
@@ -10,13 +12,13 @@ A Continuous Integration and Continuous Delivery (CI/CD) pipeline is the backbon
 
 ## CI/CD and catching the bus
 
-In the catching the bus example, there are three key services using GitHub Actions: Azure SQL Database, Azure Functions, and Azure Static Web Apps. Let's review how each service works in the scenario.
+In the catching the bus example, there are three key services using GitHub Actions: Azure SQL Database, Azure Functions, and Azure Static Web Apps. Let's review how each service works in the scenario. In the next exercise, you'll get to see the pieces in action.
 
 ### Azure SQL Database
 
 There is a specific GitHub Action available through Azure called the **SQL Action**. This action was created to work with Azure SQL services. Let's review how the main part of the workflow (YAML) file is constructed. As an example, let's use the catch the bus sample.
 
-Below you are looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1`, which does most of the heavy lifting. You just have to provide the items under `with`: the server name, the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required. The action will incrementally update the database schema to match the schema of the source .dacpac file.
+Below you are looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1`, which does most of the heavy lifting. You just have to provide the items under `with`: the server name, the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required for the database. The action will incrementally update the database schema to match the schema of the source .dacpac file.
 
 ```yml
   deploy_database_job:
@@ -35,7 +37,7 @@ Below you are looking at the job within the workflow file. When a push happens o
 
 ### Azure Functions
 
-Connecting to Azure Functions from GitHub Actions is not difficult. The documentation provides several sample snippets depending on the language you want to use, and then you fill it in. Just like a connection string for Azure SQL is required, you have to include your function's *Publish Profile*, which specifies how to connect to Azure Functions. Additionally, just like you had to specify the 'code' for your database's schema, you also have to specify where in your repository the code is located. Finally, depending on the language, you'll need to specify the version (for example, `NODE_VERSION: '14.x'`).
+Similar to Azure SQL, connecting to Azure Functions from GitHub Actions is not difficult. The documentation provides several sample snippets depending on the language you want to use, and then you fill it in. Just like a connection string for Azure SQL is required, you have to include your function's *Publish Profile*, which specifies how to connect to Azure Functions. Additionally, just like you had to specify the 'code' for your database's schema, you also have to specify where in your repository the code is located. Finally, depending on the language, you'll need to specify the version (for example, `NODE_VERSION: '14.x'`).
 
 ### Azure Static Web Apps
 
@@ -61,4 +63,4 @@ By default, the following code makes up the first job. Regardless of how you dep
           ###### End of Repository/Build Configurations ######
 ```
 
-The second job, `close_pull_reques_job`, simply calls the `close` action and there are no changes necessary.
+The second job, `close_pull_request_job`, simply calls the `close` action and there are no changes necessary.
