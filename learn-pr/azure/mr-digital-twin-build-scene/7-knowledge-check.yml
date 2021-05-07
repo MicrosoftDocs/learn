@@ -40,7 +40,7 @@ quiz:
     - content: "True or false: Using satellite imagery from Bing Maps can help make your experience more realistic and meaningful by providing contextual information."
       choices:
         - content: "True"
-          isCorrect: false
+          isCorrect: true
           explanation: ""
         - content: "False"
           isCorrect: false

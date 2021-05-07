@@ -45,14 +45,16 @@ When you create a Bing Maps Key, be sure to select **Basic** as the key type and
 3. You may need to select another item in the hierarchy, then select Bing Maps again to refresh
 4. Expand the **Map Renderer (Script)** component in the **Inspector** and set the following **Location** and **Map Layout** settings:
 
-**Location**
+### Location
+
 |  |  |
 |---|---|
 | Latitude | 48.38 |
 | Longitude | -67.703 |
 | Zoom Level | 15.5 |
 
-**Map Layout**
+### Map Layout
+
 |  |  |
 |---|---|
 | Map Shape | Cylinder |
