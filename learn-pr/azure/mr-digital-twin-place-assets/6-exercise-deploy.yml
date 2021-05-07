@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.mr-digital-twin-place-assets.6-exercise-deploy
-title: Exercise -- Deploy to HoloLens, test, and uninstall
+title: Exercise--Deploy to HoloLens, test, and uninstall
 metadata:
-  title: Exercise -- Deploy to HoloLens, test, and uninstall
+  title: Exercise--Deploy to HoloLens, test, and uninstall
   description: Interaction models for interacting with holograms.
   ms.date: 5/7/2021
   author: Sean-Kerawala

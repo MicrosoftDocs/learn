@@ -4,7 +4,7 @@ When you want to reuse a GameObject configured in a particular way – like a no
 
 Any edits that you make to a Prefab Asset are automatically reflected in the instances of that Prefab, allowing you to easily make broad changes across your whole Project without having to repeatedly make the same edit to every copy of the Asset.  You can override any particular instance of the Prefab, known as instance overrides, to create variations between Prefab instances, while still linking those instances to the same Prefab Asset.  When you modify a Prefab Asset, the changes are reflected in all of its instances. However, you can also make modifications directly to an individual instance. Doing this creates an instance override on that particular instance.
 
-The Prefab wind turbine model you are importing is a Autodesk’s Filmbox format (*.FBX), complete with Level Of Detail (LOD) groups defined for meshes to improve rendering performance.
+The Prefab wind turbine model you're importing is an Autodesk’s Filmbox format (*.FBX), complete with Level Of Detail (LOD) groups defined for meshes to improve rendering performance.
 
 :::image type="content" source="../media/lod-turbine.png" alt-text="Screenshot of the Unity scene window with the wind turbine prefab in view.":::
 

@@ -1,16 +1,16 @@
-Now that you have built the base terrain for your Wind Farm experience and placed your turbine assets, build the project and deploy it to the HoloLens 2.  After you have deployed and tested, return to build out more functionality into your Mixed Reality experience.
+Now that you have built the base terrain for your Wind Farm experience and placed your turbine assets, build the project and deploy it to the HoloLens 2.  After you've deployed and tested, return to build out more functionality into your Mixed Reality experience.
 
 [Building your application to your HoloLens 2 -  Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr#building-your-application-to-your-hololens-2)
 
-When adjusting your build settings, be sure to **Add Open Scenes** if your Scene does not appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform.
+When adjusting your build settings, be sure to **Add Open Scenes** if your Scene doesn't appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform.
 
 :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build setting window with the main scene and universal windows platform options highlighted.":::
 
 Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  To open your app from the Start menu, simply select an app tile. You can also say the name of the app to open it.  Navigate the experience and test the functionality you developed.
 
-To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the Mixed reality Home button. Once you have exited the app, close the app window using the close icon in the top right of the window.
+To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the Mixed reality Home button. Once you've exited the app, close the app window using the close icon in the top right of the window.
 
-After you are done testing your wind farm experience, uninstall the app:
+After you're done testing your wind farm experience, uninstall the app:
 
 ## Uninstall from the Start menu
 
