@@ -1,10 +1,10 @@
 Congratulations! You've learned how to use monitoring to for your Java Azure Applications.
 
-As an an infrastructure manager you were asked to monitor your Azure Java application and its dependencies.
+As an infrastructure manager you were asked to monitor your Azure Java application and its dependencies.
 
 To that end, you've done the following actions:
 
-* Learnt about the different forms of Monitoring on Azure
+* Learned about the different forms of Monitoring on Azure
 
 * Build and deploy a Sample Microservices Application and configured it for Azure Application Performance Monitoring(APM).
 
@@ -32,4 +32,4 @@ For more information about using Monitoring with Azure Database for MySQL, see [
 
 For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/java/api/overview/azure/core-tracing-opentelemetry-readme?WT.mc_id=java-00000-ropreddy).
 
-For more information on Application Insights for web pages see [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
+For more information on Application Insights for web pages, see [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
