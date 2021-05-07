@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-multiple-tables-with-joins.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/07/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You must return a list of all sales employees that have taken sales orders. Employees who have not taken sales orders should not be included in the results. Which type of join is required?"
+    choices:
+    - content: "INNER"
+      isCorrect: true
+      explanation: "Correct. Use an INNER join to retrieve only records that match in both tables."
+    - content: "LEFT OUTER"
+      isCorrect: false
+      explanation: "Incorrect. Use an INNER join to retrieve only records that match in both tables."
+    - content: "FULL OUTER"
+      isCorrect: false
+      explanation: "Incorrect. Use an INNER join to retrieve only records that match in both tables."
+  - content: "Which type of JOIN operation does not require an ON clause?"
+    choices:
+    - content: "LEFT OUTER JOIN"
+      isCorrect: false
+      explanation: "Incorrect. In a CROSS JOIN, there is no matching of values between tables, so no ON clause is used."
+    - content: "CROSS JOIN"
+      isCorrect: true
+      explanation: "Correct. In a CROSS JOIN, there is no matching of values between tables, so no ON clause is used."
+    - content: "FULL JOIN"
+      isCorrect: false
+      explanation: "Incorrect. In a CROSS JOIN, there is no matching of values between tables, so no ON clause is used."
+  - content: "You write the following query: SELECT p.Name, c.Name FROM Store.Product AS p CROSS JOIN Store.Category AS c; What does the query return?"
+    choices:
+    - content: "Only data rows where the product name is the same as the category name"
+      isCorrect: false
+      explanation: "Incorrect. A CROSS JOIN returns every combination from both tables."
+    - content: "Only rows where the product name is not the same as the category name"
+      isCorrect: false
+      explanation: "Incorrect. A CROSS JOIN returns every combination from both tables."
+    - content: "Every combination of product and category name"
+      isCorrect: true
+      explanation: "Correct. A CROSS JOIN returns every combination from both tables."
