@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
+metadata:
+  title: Deploy Azure VMware Solution
+  description: Deploy Azure VMware Solution
+  ms.date: 03/19/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure VMware Solution
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-deploy-azure-vmware-solution.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "At a minimum, which role is required at the subscription level to deploy Azure VMware Solution?"
+    choices: 
+    - content: "Virtual Machine Contributor"
+      isCorrect: false
+      explanation: "A Virtual Machine Contributor can manage virtual machines but can't access them. This role also can't access the virtual network or storage account they're connected to. This role doesn't allow you to deploy AVS."
+    - content: "Owner"
+      isCorrect: false
+      explanation: "The Owner role has full access to all resources in the subscription, including the right to delegate access to others. This role will allow you to deploy AVS. But it might give you more access than you need to the subscription."
+    - content: "Contributor"
+      isCorrect: true
+      explanation: "At a minimum, AVS requires Contributor-level access to the subscription for successful deployment."
+  - content: "Which planning step is required to deploy Azure VMware Solution in the Azure portal?"
+    choices: 
+    - content: "Create a resource lock."
+      isCorrect: false
+      explanation: "A resource lock allows administrators to lock a subscription, resource group, or resource. A resource lock isn't required to deploy AVS."
+    - content: "Register the Microsoft.AVS resource provider."
+      isCorrect: true
+      explanation: "Before you can provision your hosts, make sure that you register the Microsoft.AVS resource provider in the Azure portal."
+    - content: "Specify a service principal."
+      isCorrect: false
+      explanation: "A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. A service principal isn't required to deploy AVS."

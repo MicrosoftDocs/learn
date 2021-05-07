@@ -98,6 +98,16 @@ groups:
       title: Node.js
     - id: python
       title: Python
+- id: dev-lang-csharp-node-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
+    - id: python
+      title: Python
 - id: dev-lang-csharp-python
   title: Development language
   prompt: Choose your development language
@@ -344,3 +354,19 @@ groups:
       title: Java SDK for Azure Cosmos DB
     - id: spring
       title: Spring Data
+- id: azure-devops-actions
+  title: Choose an automation platform
+  prompt: Choose an automation platform
+  pivots:
+    - id: github-actions
+      title: GitHub Actions
+    - id: azure-devops
+      title: Azure Pipelines
+- id: vs-vsmac
+  title: Choose your platform
+  prompt: Choose your platform
+  pivots:
+    - id: vsstudio
+      title: Visual Studio 2019
+    - id: vsstudiomac
+      title: Visual Studio for Mac

@@ -17,13 +17,13 @@ quiz:
   questions:
     - content: "Why would you use a custom route in a virtual network?"
       choices:
-      - content: "To load balance the traffic in your virtual network."
+      - content: "To load balance the traffic within your virtual network."
         isCorrect: false
         explanation: "This answer is incorrect. A custom route isn't used to load balance traffic. Load balancing is for directing traffic to one or more Azure virtual machines."
       - content: "To connect to your Azure virtual machines using RDP or SSH."
         isCorrect: false
         explanation: "This answer is incorrect. To control RDP or SSH access to Azure virtual machines, you use network security groups, not custom routes."
-      - content: "To control the flow of traffic in your Azure virtual network."
+      - content: "To control the flow of traffic within your Azure virtual network."
         isCorrect: true
         explanation: "This is the correct answer. Custom routes are used to override the default Azure routing so that you can route traffic through a network virtual appliance (NVA)."
       - content: "To connect to resources in another virtual network hosted in Azure."

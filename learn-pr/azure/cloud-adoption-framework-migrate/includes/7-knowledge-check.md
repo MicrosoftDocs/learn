@@ -1,3 +1,1 @@
-## Knowledge check
-
-Choose the best response for each question. Then select **check your answers**.
+Choose the best response for each question. Then select **Check your answers**.

@@ -1,15 +1,15 @@
-In this exercise and following exercises we are going to use an example throughout this module using Tailwind Traders. 
-However, it does require a set-up with instructions that can be found here:
-[Set up](https://github.com/ctesta-oneillmsft/asa-vtd) 
+You have customer profile data from an e-commerce system that provides top product purchases for each visitor of the site (customer) over the past 12 months. This data is stored within JSON files in the data lake. They have struggled with ingesting, exploring, and transforming these JSON files and want your guidance. The files have a hierarchical structure that they want to flatten before loading into relational data stores. They also wish to apply grouping and aggregate operations as part of the data engineering process.
+You recommend using Azure Synapse notebooks to explore and apply data transformations on the JSON files.
 
-The following use case will be used:
+This exercise will focus on how to load data into an Apache Spark DataFrame. 
 
-Tailwind Traders has customer profile data from an e-commerce system that provides top product purchases for each visitor of the site (customer) over the past 12 months. This data is stored within JSON files in the data lake. They have struggled with ingesting, exploring, and transforming these JSON files and want your guidance. The files have a hierarchical structure that they want to flatten before loading into relational data stores. They also wish to apply grouping and aggregate operations as part of the data engineering process.
-You recommend using Synapse Notebooks to explore and apply data transformations on the JSON files.
+1. Create a new cell in the Apache Spark notebook, add the following code beneath the code in the cell to define a variable named datalake whose value is the name of the primary storage account (replace the REPLACE_WITH_YOUR_DATALAKE_NAME value with the name of the storage account):
 
-This exercise will focus on how to load data into a spark dataframe. 
+    ```python
+    datalake = 'REPLACE_WITH_YOUR_DATALAKE_NAME'
+    ```
 
-* Create a new cell in the Spark notebook, enter the following code and execute the cell:
+1. Create a new cell in the Apache Spark notebook, enter the code below and execute the cell:
 
     ```python
     df = (spark.read \
@@ -23,7 +23,7 @@ This exercise will focus on how to load data into a spark dataframe.
     > The `datalake` variable we created in the first cell is used here as part of the file path.
 
 
-    Your output should look like the following:
+    Your output should look like as follows:
 
     ```text
     root
@@ -34,16 +34,16 @@ This exercise will focus on how to load data into a spark dataframe.
     |-- visitorId: long (nullable = true)
     ```
 
-    > Notice that we are selecting all JSON files within the `online-user-profiles-02` directory. Each JSON file contains several rows, which is why we specified the `multiLine=True` option. Also, we set the `inferSchema` option to `true`, which instructs the Spark engine to review the files and create a schema based on the nature of the data.
+    > Notice that we are selecting all JSON files within the `online-user-profiles-02` directory. Each JSON file contains several rows, which is why we specified the `multiLine=True` option. Also, we set the `inferSchema` option to `true`, which instructs the Apache Spark engine to review the files and create a schema based on the nature of the data.
 
-* We have been using Python code in these cells up to this point. If we want to query the files using SQL syntax, one option is to create a temporary view of the data within the dataframe. Execute the following in a new cell to create a view named `user_profiles`:
+1. We have been using Python code in these cells up to this point. If we want to query the files using SQL syntax, one option is to create a temporary view of the data within the DataFrame. Execute the code below in a new cell to create a view named `user_profiles`:
 
     ```python
     # create a view called user_profiles
     df.createOrReplaceTempView("user_profiles")
     ```
 
-* Create a new cell. Since we want to use SQL instead of Python, we use the `%%sql` magic to set the language of the cell to SQL. Execute the following code in the cell:
+1. Create a new cell. Since we want to use SQL instead of Python, we use the `%%sql` magic to set the language of the cell to SQL. Execute the below code in the cell:
 
     ```sql
     %%sql
@@ -55,7 +55,7 @@ This exercise will focus on how to load data into a spark dataframe.
 
     ![JSON nested output.](../media/spark-json-output-nested.png "JSON output")
 
-    This makes analyzing the data a bit difficult. This is because the JSON file contents look like the following:
+    The JSON nested output makes analyzing the data a bit difficult. It is because the JSON file contents looks as follows:
 
     ```json
     [

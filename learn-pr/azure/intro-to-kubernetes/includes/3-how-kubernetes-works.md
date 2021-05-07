@@ -122,7 +122,7 @@ Kubernetes provides a command-line tool called `kubectl` to manage your cluster.
 
 - **Cluster** configuration specifies a cluster name, certificate information, and the service API endpoint associated with the cluster. This definition enables you to connect from a single workstation to multiple clusters.
 - **User** configuration specifies the users and their permission levels when they're accessing the configured clusters.
-- U**Context** configuration groups clusters and users by using a friendly name. For example, you might have a "dev-cluster" and a "prod-cluster" to identify your development and production clusters.
+- **Context** configuration groups clusters and users by using a friendly name. For example, you might have a "dev-cluster" and a "prod-cluster" to identify your development and production clusters.
 
 You can configure `kubectl` to connect to multiple clusters by providing the correct context as part of the command-line syntax.
 
