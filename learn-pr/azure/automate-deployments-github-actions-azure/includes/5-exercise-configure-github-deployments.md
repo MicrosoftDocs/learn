@@ -78,7 +78,7 @@ Next, you need to import the bus route information data into Azure SQL Database 
 
 1. Finally, select **CTRL+C** to exit sqlcmd.
 
-## Configure Azure Function App with GitHub Actions
+## Configure the Azure Function App with GitHub Actions
 
 Next, to publish the function to the Azure Function app you deployed in the previous exercise, you'll need to download the publish profile, configure settings in GitHub, and push your changes with Visual Studio Code.
 
@@ -129,10 +129,10 @@ Now that everything is updated, it's time to monitor the results (and your inbox
 
 1. The **Invocations** tab has about a 5-minute delay, but the **Logs** tab is closer to real time. Review the **Logs**.
 
-1. When a bus activates a GeoFence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
+1. When a bus activates a geofence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
 
 > [!TIP]
-> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence.
+> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a geofence.
 
 ## Configure GitHub Actions for Azure Static Web Apps
 
@@ -226,6 +226,6 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
-1. To view results for the specific bus route and GeoFence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
+1. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
 
-1. You should now see a GeoFence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.
+1. You should now see a geofence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.
