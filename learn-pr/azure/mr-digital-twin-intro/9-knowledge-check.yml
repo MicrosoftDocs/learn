@@ -32,7 +32,7 @@ quiz:
       isCorrect: true
       explanation: ""
     - content: "A real-time development platform used for 2D, 3D, AR, VR development.  "
-      isCorrect: true
+      isCorrect: false
       explanation: ""
   - content: "True or false: The Azure SignalR service allows the service to push content updates to connected clients."
     choices:

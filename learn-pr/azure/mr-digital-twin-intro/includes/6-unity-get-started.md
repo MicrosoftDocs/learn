@@ -44,7 +44,7 @@ Open and verify your Unity Project has the required dependencies and settings.
 
 - Open the Unity Hub and select **Projects** from the upper left of the window.  Add your project to the list using the **ADD** button.  
 
-:::image type="content" source="../media/unity-project-spalsh-screen.png.png" alt-text="Screenshot of the Unity Hub application with the projects tab selected.":::
+:::image type="content" source="../media/unity-project-spalsh-screen.png" alt-text="Screenshot of the Unity Hub application with the projects tab selected.":::
 
 - Browse to the folder where you extracted the Project contents from the Zip file obtained from GitHub and Select Folder.
 - Open the Project by clicking on the project name.  
