@@ -3,13 +3,13 @@ uid: learn.accelerate-storage-with-hpc-cache.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: Knowledge Check
+  title: Knowledge check
   description: Check understanding of Azure HPC Cache
   ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial
-  ms.prod: azure-hpc-cache
+  ms.prod: learning-azure
 durationInMinutes: 4
 
 content: |

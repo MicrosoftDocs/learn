@@ -7,20 +7,21 @@ Some studios use in-house clients to render their movies and scenes. Because the
 When studios leverage cloud clients, they are able to use more processing power. This means their scenes can be produced in a shorter time. Without cloud clients for video rendering, studios will miss deadlines for theatrical releases.
 
 In this module, you will learn how to create an Azure HPC Cache, configure the cache to accelerate a Linux-based file system, and attach clients to access the cache’s storage.
+
 > [!NOTE]
 > Because HPC workloads use significant resources that exceed the limits of a free Azure account, this module performs knowledge checks only and does not include exercises. To practice the concepts in this module, use a paid account and monitor all charges.
 
 By the end of this module, you will be able to create and configure an Azure HPC Cache so HPC clients can access its storage.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module the learner will be able to:
 
-1. Understand what an Azure HPC Cache is.
-1. List the pre-requisites for an Azure HPC Cache.
-1. Create an Azure HPC Cache.
-1. Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
-1. Attach virtual client machines to read from the cache.
+- Understand what an Azure HPC Cache is.
+- List the pre-requisites for an Azure HPC Cache.
+- Create an Azure HPC Cache.
+- Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
+- Attach virtual client machines to read from the cache.
 
 ## Prerequisites
 

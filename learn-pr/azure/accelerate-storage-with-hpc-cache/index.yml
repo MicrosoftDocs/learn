@@ -2,13 +2,14 @@
 uid: learn.accelerate-storage-with-hpc-cache  
 metadata:
   moduleType: standard  
-  title: Accelerate High Performance Computing storage with Azure HPC Cache
+  title: Accelerate high performance computing storage with Azure HPC Cache
   description: Accelerate NFS storage for HPC workloads using Azure HPC Cache.
   ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial
-title: Accelerate High Performance Computing storage with Azure HPC Cache  
+  ms.prod: learning-azure
+title: Accelerate high performance computing storage with Azure HPC Cache  
 summary: Create a virtual caching solution for NFS storage. Client machines will connect to the cache, read data, and process the data.
 abstract: |
   By the end of this module, you will be able to: 
@@ -30,10 +31,10 @@ roles:
   - solution-architect
 products:  
 - azure
-units:  
+units:
 - learn.accelerate-storage-with-hpc-cache.introduction
-- learn.accelerate-storage-with-hpc-cache.identify-requirements
-- learn.accelerate-storage-with-hpc-cache.create-the-cache
+- learn.accelerate-storage-with-hpc-cache.hpc-cache-prerequisites
+- learn.accelerate-storage-with-hpc-cache.create-cache
 - learn.accelerate-storage-with-hpc-cache.connect-to-storage
 - learn.accelerate-storage-with-hpc-cache.connect-to-cache
 - learn.accelerate-storage-with-hpc-cache.knowledge-check

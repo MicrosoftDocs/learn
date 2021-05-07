@@ -2,11 +2,11 @@ After the Azure HPC Cache is created, it’s time to point it to your data. Idea
 
 From the Azure portal, click the HPC Cache resource. On the left navigation, choose “Storage Targets.”
 
-## Storage Targets
+## Storage targets
 
 An HPC Cache “storage target” is the storage location where your HPC data is kept like a NetApp or EMC Isilon appliance. Click the “Add Storage Target” button in the upper left.
 
-![Screenshot showing the Add Storage Target pane for the Azure HPC Cache.](../media/5-connect-to-storage-01-add-storage-target.png)
+:::image type="content" source="../media/5-connect-to-storage-01-add-storage-target.png" alt-text="Screenshot showing the Add Storage Target pane for the Azure HPC Cache.":::
 
 In the new pane, provide a name for your storage target. This name doesn’t have the strict requirements that other fields have and can include spaces.
 
@@ -14,13 +14,11 @@ Leave the target type as NFS.
 
 For the hostname, enter the fully qualified domain name (FQDN) of your storage server. Your custom DNS server will resolve this name.
 
-### Usage Model
+### Usage model
 
 The “Usage model” field lets you choose the closest match for how you plan to use your cache. Based on your choice, Azure HPC Cache will apply several internal settings to optimize your cache for that workload type. If you decide later that your usage model has changed, you can change your selection.
 
 The usage model names should help you choose the best option. In general, the options at the top provide the better performance but may not have the latest data. Choose the usage model based on how frequently the source data changes.
-
-`[Reviewers: Does the table HELP or HURT understanding?]`
 
 This table summarizes the usage model differences:
 
