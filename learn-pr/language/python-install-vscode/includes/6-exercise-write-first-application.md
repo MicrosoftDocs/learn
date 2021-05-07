@@ -44,11 +44,11 @@ You may see a prompt you to install [Pylint](https://pylint.org/), which you can
 
 Inside the *Explorer* window, click *New File*.
 
-![Screenshot of the Visual Studio Code Explorer window with New File highlighted](../media/vs-code-new-file.png)
+![Screenshot of the Visual Studio Code Explorer window with New File highlighted](../media/visual-studio-code-new-file.png)
 
 Name the new file **hello.py** by typing it into the new textbox and selecting *Enter*.
 
-![Screenshot of Explorer window with hello.py entered for new file](../media/vs-code-name-file.png)
+![Screenshot of Explorer window with hello.py entered for new file](../media/visual-studio-code-name-file.png)
 
 Enter the following Python code in the editor window, which uses the `print` function to display the text **Hello, world** when your application is executed.
 
@@ -58,7 +58,7 @@ print('Hello, world!')
 
 Save the file by selecting *File* and *Save*.
 
-![Screenshot of file menu with Save highlighted](../media/vs-code-save-file.png)
+![Screenshot of file menu with Save highlighted](../media/visual-studio-code-save-file.png)
 
 ## Step 3 - Run your application
 
@@ -66,7 +66,7 @@ With the code now created, you can run your application. You can actually do run
 
 Open the built-in terminal inside Visual Studio Code by selecting *View* and *Terminal*.
 
-![Screenshot of view menu with Terminal highlighted](../media/vs-code-open-terminal.png)
+![Screenshot of view menu with Terminal highlighted](../media/visual-studio-code-open-terminal.png)
 
 In the new terminal window, run the following command to run your Python code.
 
