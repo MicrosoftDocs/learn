@@ -29,13 +29,12 @@ prerequisites: |
   - Bing Maps Account and Dev Key
 units:
 - learn.mr-digital-twin-build-scene.1-introduction
-- learn.mr-digital-twin-build-scene.2-configure
-- learn.mr-digital-twin-build-scene.3-exercise-configure
-- learn.mr-digital-twin-build-scene.4-import-resources
-- learn.mr-digital-twin-build-scene.5-exercise-import-resources
-- learn.mr-digital-twin-build-scene.6-interaction-models
-- learn.mr-digital-twin-build-scene.7-exercise-hand-interaction-objectmanipulator
-- learn.mr-digital-twin-build-scene.8-knowledge-check
-- learn.mr-digital-twin-build-scene.9-summary
+- learn.mr-digital-twin-build-scene.2-scene-design
+- learn.mr-digital-twin-build-scene.3-unity-interface
+- learn.mr-digital-twin-build-scene.4-source-scene
+- learn.mr-digital-twin-build-scene.5-exercise-wind-farm
+- learn.mr-digital-twin-build-scene.6-exercise-deploy
+- learn.mr-digital-twin-build-scene.7-knowledge-check
+- learn.mr-digital-twin-build-scene.8-summary
 badge:
   uid: learn.mr-digital-twin-build-scene.badge
