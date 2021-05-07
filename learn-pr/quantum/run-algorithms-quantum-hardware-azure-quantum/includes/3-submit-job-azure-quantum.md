@@ -45,6 +45,7 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
 
 1. After you complete the information, select the **Providers** tab to add providers to your workspace. A provider gives you access to a quantum service, which can be quantum hardware, a quantum simulator, or an optimization service. In this case, we're interested in quantum hardware. We'll use the IonQ provider example, but the steps should be valid for other quantum hardware providers.
+To learn more about providers, see [List of quantum computing targets on Azure Quantum](https://docs.microsoft.com/azure/quantum/qc-target-list).
 
 1. Add at least the IonQ provider, and then select **Review + create**.
 
@@ -81,7 +82,7 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Log in to Azure by running the following command:
+1. Log in to Azure by opening a command prompt, and running the following command:
 
    ```azcli
    az login
