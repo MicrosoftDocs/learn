@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.introduction  
+title: Introduction  
+metadata:
+  unitType: introduction  
+  title: Improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practices 
+  description: You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice. 
+  ms.date: 05/07/2021
+  author: mengruts  
+  ms.author: mengtsai  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1 
+content: |
+  [!include[](includes/1-introduction.md)]
