@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twins-intro
+uid: learn.mr-digital-twin-intro
 metadata:
   title: Introduction to Mixed Reality, Azure Digital Twin and Unity 
   description: Import 
@@ -35,15 +35,15 @@ prerequisites: |
       - The learning module package downloaded from GitHub [LINK]
       - Microsoft Mixed Reality Feature Tool
 units:
-- learn.mixed-reality-toolkit-project-unity.1-introduction
-- learn.mixed-reality-toolkit-project-unity.2-mr-overview
-- learn.mixed-reality-toolkit-project-unity.3-digital-twin-overview
-- learn.mixed-reality-toolkit-project-unity.4-digital-twin-get-started
-- learn.mixed-reality-toolkit-project-unity.5-unity-overview
-- learn.mixed-reality-toolkit-project-unity.6-unity-get-started
-- learn.mixed-reality-toolkit-project-unity.7-signalr-overview
-- learn.mixed-reality-toolkit-project-unity.8-use-cases
-- learn.mixed-reality-toolkit-project-unity.9-knowledge-check
-- learn.mixed-reality-toolkit-project-unity.10-summary
+- learn.mr-digital-twin-intro.1-introduction
+- learn.mr-digital-twin-intro.2-mr-overview
+- learn.mr-digital-twin-intro.3-digital-twin-overview
+- learn.mr-digital-twin-intro.4-digital-twin-get-started
+- learn.mr-digital-twin-intro.5-unity-overview
+- learn.mr-digital-twin-intro.6-unity-get-started
+- learn.mr-digital-twin-intro.7-signalr-overview
+- learn.mr-digital-twin-intro.8-use-cases
+- learn.mr-digital-twin-intro.9-knowledge-check
+- learn.mr-digital-twin-intro.10-summary
 badge:
-  uid: learn.mixed-reality-toolkit-project-unity.badge
+  uid: learn.mr-digital-twin-intro.badge
