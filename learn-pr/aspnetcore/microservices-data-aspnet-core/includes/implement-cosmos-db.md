@@ -25,12 +25,28 @@ In this unit, you will:
     A variation of the following output appears:
 
     ```console
+    Creating Azure CosmosDB account "eshop-learn-20210000" in resource group "eshop-learn-rg"...
 
+     > az cosmosdb create --name eshop-learn-20210000 --resource-group eshop-learn-rg --kind MongoDB --output none
+    
+    
+    Creating MongoDB database "CouponDb" in "eshop-learn-20210000"...
+    
+     > az cosmosdb mongodb database create --account-name eshop-learn-20210000 --name CouponDb --resource-group eshop-learn-rg --output none
+    
+    
+    Retrieving connection string...
+    
+     > az cosmosdb keys list --type connection-strings --name eshop-learn-20210000 --resource-group eshop-learn-rg --query connectionStrings[0].connectionString --output tsv
+    
+    
+    Connection String:
+
+    mongodb://eshop-learn-20210000:<password>@eshop-learn-20210000.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@eshop-learn-20210000@
+    
     ```
 
-    The script displays some of the account and the database properties, along with the connection string. The process will take a few minutes. Execute the next task while 
-
-1. Copy the connection string value when the script finishes to reconfigure the coupon service.
+    1. Copy the connection string value when the script finishes to reconfigure the coupon service in the subsequent steps.
 
 ## Remove the MongoDB deployment from the cluster
 
@@ -50,7 +66,7 @@ release "eshoplearn-nosqldata" uninstalled
 
 The coupon service's ConfigMap file needs to be updated with the connection string for the Azure-managed database.
 
-In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as shown in the next YAML fragment:
+In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as found in the next YAML fragment:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 
@@ -86,7 +102,7 @@ Use the Azure portal's **Data Explorer** tab to inspect the stored documents usi
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. 
+1. **WIP**
 
 :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Image description follows in text." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
