@@ -1,6 +1,6 @@
 In this unit, we look at Monitoring the entire solution.
 
-# Introduction
+## Introduction
 
 Most cloud deployments are based on distributed architectures where components are distributed across various services. Troubleshooting monolithic applications often requires only one or two lenses—the application and the database. With distributed architectures, troubleshooting is complex and challenging because of various factors. This unit describes some of the tools to help with those challenges.
 
@@ -85,11 +85,11 @@ AppPlatformLogsforSpring
 | render piechart
 ```
 
-# Database Monitoring
+## Database Monitoring
 
 Monitoring data about your servers helps you troubleshoot and optimize for your workload. Azure Database for MySQL provides various metrics that give insight into the behavior of your server.
 
-## Metrics
+### Metrics
 
 Azure Database for MySQL provides tools and methods you can use to monitor usage easily, add, or remove resources (such as CPU, memory, or I/O), troubleshoot potential problems, and help improve the performance of a database. You can monitor performance metrics regularly to see the average, maximum, and minimum values for various time ranges.
 
@@ -133,7 +133,7 @@ Open Performance Recommendations from the **Intelligent Performance** section of
 > [!NOTE]
 > For more information on Database Monitoring, see the **Summary** unit at the end of this training.
 
-# OpenTelemetry
+## OpenTelemetry
 
 OpenTelemetry is an open source, vendor-agnostic, single distribution of libraries to provide metrics collection and distributed tracing for services.
 OpenTelemetry standardizes what telemetry data looks like and is a set of APIs, SDKs, tooling, and integrations that are designed for the creation and management of telemetry data such as traces, metrics, and logs.
@@ -145,7 +145,7 @@ Once OpenTelemetry data has been exported to Azure Monitor, you can access Appli
 > [!NOTE]
 > For more information on OpenTelemetry, see the Summary unit at the end of this training.
 
-# UI monitoring
+## UI monitoring
 
 If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, as well as users and session counts. All these can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
 Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs in conjunction with the client-side JavaScript SDK to get an end-to-end understanding of your app's performance.

@@ -1,6 +1,6 @@
 In this unit, we look at Monitoring Java Application concepts.
 
-# Why Monitoring?
+## Why Monitoring?
 
 In a production environment, it's important to track the way in which users use your system, trace resource utilization, and generally monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and also to help spot potential problems and prevent them from occurring.
 

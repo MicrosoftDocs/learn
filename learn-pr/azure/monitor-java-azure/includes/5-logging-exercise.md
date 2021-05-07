@@ -1,7 +1,5 @@
 In this exercise, we look at Logging and Log Analytics.
 
-# Logging
-
 ## Streaming logs
 
 To avoid repeatedly specifying your resource group and service instance name, set your default resource group name and cluster name.

@@ -25,7 +25,7 @@ You can instrument not only the web service application, but also any background
 
 ![Application Insights](../media/6-application-insights.png)
 
-# Enable the Java in-process monitoring agent with Azure Spring Cloud
+## Enable the Java in-process monitoring agent with Azure Spring Cloud
 
 In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
 In the upcoming exercise, we'll activate APM on creation of our Azure Spring Cloud instance with the "--enable-java-agent" CLI option:

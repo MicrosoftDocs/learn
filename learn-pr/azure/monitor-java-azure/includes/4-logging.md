@@ -1,6 +1,6 @@
 In this unit, we'll look at Logging concepts.
 
-## Introduction
+## Types of Logging
 
 With your sample application setup, there are two ways to see logs: Log Streaming of real-time logs per app instance or Log Analytics for aggregated logs with advanced query capability. In this unit we will explore log streaming via the Azure CLI.
 
