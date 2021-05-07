@@ -1,7 +1,7 @@
 ﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently, using an arbitrary combination of technology stacks, while still allowing for their interaction via well-defined programming interfaces. 
 
 These components can include software running on IoT devices and a range Azure services designed for collection and processing of device telemetry, such as Azure IoT Hub, Azure Device Provisioning Service (DPS), Azure Maps, Azure Time Series Insights, and Azure IoT Edge. When designing your application, you have the option of selecting one or more of these services or implementing Azure IoT Central, which seamlessly integrates all of them. Azure IoT Central delivers a comprehensive set of features that facilitate designing, testing, and implementing distributed applications that rely on IoT telemetry.
-
+<!-- Shouldn't "IoT (Internet of Things)" be introduced here? -->
 ## Scenario: Generate, collect, and process IoT telemetry
 
 Suppose you work for Adatum Corporation, a manufacturer of home appliances. You lead a small development team, and you just completed the first phase of a project, delivering a fridge inventory management solution consisting of a back-end API and a front-end web app, with both running on an Azure Kubernetes Service (AKS) cluster. Your customers can use this cloud-native application to easily identify the items they need to restock. They can also set up this application to automatically reorder required items.
