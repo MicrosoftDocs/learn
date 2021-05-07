@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.knowledge-check  
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.knowledge-check  
+title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check 
   description: In this unit, you will answer questions based on a scenario. 
-  ms.date: 3/23/2021  
+  ms.date: 05/07/2021
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial

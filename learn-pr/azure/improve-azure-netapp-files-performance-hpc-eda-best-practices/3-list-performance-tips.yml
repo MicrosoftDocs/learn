@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.list-performance-tips
+uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.list-performance-tips
 title: List performance tips
 metadata:
   unitType: learning-content
@@ -8,7 +8,8 @@ metadata:
   ms.date: 3/23/2021 
   author: mengruts 
   ms.author: mengtsai 
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 5 
 content: |
   [!include[](includes/3-list-performance-tips.md)]

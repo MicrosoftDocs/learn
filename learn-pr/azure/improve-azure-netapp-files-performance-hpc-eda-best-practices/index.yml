@@ -1,13 +1,14 @@
 ### YamlMime:Module
-uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices  
+uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices
 metadata:
   moduleType: standard  
   title: Improve Azure NetApp Files performance of your EDA/HPC applications by using best practices 
   description: You will learn how to improve Azure NetApp Files performance of your EDA/HPC applications by using best practice. 
-  ms.date: 3/23/2021  
+  ms.date: 05/07/2021
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Improve Azure NetApp Files performance of your EDA/HPC applications by using best practices  
 summary: You will learn how to improve Azure NetApp Files performance of your EDA/HPC applications by using best practice. 
 abstract: | 
@@ -18,7 +19,7 @@ prerequisites: |
   - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
   - Ability to set up Azure NetApp Files and create a Volume.
   - Ability to mount the Azure NetApp Files Volume from a Virtual Machine.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/improve-azure-netapp-files-performance-hpc-eda-best-practices.svg
 levels: 
   - intermediate
 roles: 
@@ -28,13 +29,14 @@ roles:
   - student
   - technology-manager
 products:  
-- azure-netapp-files
+  - azure
+  - azure-netapp-files
 units:
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.introduction
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.overall-performance-suggestions
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.list-performance-tips
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.benchmarking-results
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.knowledge-check
-- learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.summary
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.introduction
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.overall-performance-suggestions
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.list-performance-tips
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.benchmarking-results
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.knowledge-check
+  - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.summary
 badge:  
-  uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.badge
+  uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.badge
