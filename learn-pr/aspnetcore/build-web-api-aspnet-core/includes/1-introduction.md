@@ -1,19 +1,15 @@
-Imagine you're an employee of an online dog toy retailer named Contoso Pets. Your manager has asked you to develop a RESTful inventory management service as a prerequisite for the company's web storefront. The service has to support adding, viewing, modifying, and removing products&mdash;a standardized usage of HTTP action verbs better known as **C**reate, **R**ead, **U**pdate, **D**elete (CRUD).
+This module explores creating a cross-platform RESTful service using ASP.NET Core web API with .NET Core and C#.
 
-This module explores creating a cross-platform RESTful service using ASP.NET Core web API with .NET Core and C#. An in-memory database will be created to persist the products data. Entity Framework (EF) Core will be used as the **O**bject-**R**elational **M**apper (O/RM) for reading and managing products data.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS). 
 
-This module uses the [.NET Core CLI](/dotnet/core/tools/) in the Azure Cloud Shell to demonstrate web API development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or Visual Studio Code (Windows, Linux, & macOS). If you'd rather use your locally installed development environment to create a web API, see [Tutorial: Create a web API with ASP.NET Core](/aspnet/core/tutorials/first-web-api).
+## Example Scenario
 
-## Learning objectives
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful pizza inventory management service as a prerequisite for the company's web storefront and mobile application. The service has to support adding, viewing, modifying, and removing types of pizza&mdash; a standardized usage of HTTP action verbs better known as **C**reate, **R**ead, **U**pdate, **D**elete (CRUD).
 
-In this module, you will:
+## What will we be doing?
 
-* Use the .NET Core CLI to create an ASP.NET Core web API project.
-* Create an in-memory database for persisting products.
-* Add CRUD action methods to the web API.
-* Test the web API actions from the command shell.
+In this module, you'll create a new web API application using ASP.NET Core, and how to run and test it from the command line. Then, you'll add a data store and a new API controller. Finally, you'll implement and test the API methods to create, read, update, and delete pizzas from the data store.
 
-## Prerequisites
+## What is the main goal?
 
-* Ability to write C# at the beginner level
-* Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
+By the end of this session, you'll be able to create new web API applications with ASP.NET Core, and to create API controllers that implement basic CRUD logic.

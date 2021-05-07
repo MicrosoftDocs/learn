@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
     - Understand the concepts of storage hierarchy of Azure NetApp Files, which includes Azure NetApp Files accounts, capacity pools, and volumes.
     - Ability to set up Azure NetApp Files and create a volume.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/choose-service-level-azure-netapp-files-hpc-applications.svg
 levels: 
   - beginner
 roles: 
