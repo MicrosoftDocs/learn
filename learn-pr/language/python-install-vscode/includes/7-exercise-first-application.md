@@ -1,4 +1,4 @@
-With Python and the tooling installed, you can now create your first Python application. You'll create an emtpy directory, open the directory in Visual Studio Code, and then create your first application.
+With Python and the tooling installed, you can now create your first Python application. You'll create an empty directory, open the directory in Visual Studio Code, and the create your first application.
 
 ## Step 1 - Create a directory for your code
 
