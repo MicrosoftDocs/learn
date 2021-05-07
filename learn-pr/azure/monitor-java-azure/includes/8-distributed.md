@@ -151,5 +151,6 @@ If you add Application Insights to your page script, you get timings of page loa
 
 > [!TIP]
 > Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs in conjunction with the client-side JavaScript SDK to get an end-to-end understanding of your app's performance.
+> For more information on UI monitoring, see the Summary unit at the end of this training.
 
 The next unit is a knowledge check to see what you've learned in this module.
