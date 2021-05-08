@@ -1,4 +1,4 @@
-In this exercise, we look at Logging and Log Analytics.
+In this exercise, we look at logging and Log Analytics.
 
 ## Streaming logs
 
