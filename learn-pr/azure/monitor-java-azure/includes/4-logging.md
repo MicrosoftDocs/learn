@@ -18,7 +18,7 @@ az spring-cloud app logs -n <application> -f
 
 If multiple instances exist for the application named `app`, you can view the instance log by using the `-i/--instance` option.
 
-First, you can get the app instance names with following command.
+First, you can get the application instance names with following command.
 
 ```azurecli
 az spring-cloud app show -n app --query properties.activeDeployment.properties.instances -o table
