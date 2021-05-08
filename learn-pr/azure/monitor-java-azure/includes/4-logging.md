@@ -14,7 +14,7 @@ You can use log streaming in the Azure CLI with the following command.
 az spring-cloud app logs -n <application> -f
 ```
 
-### Tail log for app with multiple instances
+### Tail log for application with multiple instances
 
 If multiple instances exist for the app named `app`, you can view the instance log by using the `-i/--instance` option.
 
