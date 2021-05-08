@@ -12,7 +12,7 @@ In this exercise, you'll clone a GitHub repository that contains all the code fo
 
 ## Setup and run the Setup script
 
-Edit the deployPetClinicApp.sh and customize the below parameters for your environment
+Edit the `deployPetClinicApp.sh` and customize the below parameters for your environment
 
 | Variable | Description |
 |-|-|
