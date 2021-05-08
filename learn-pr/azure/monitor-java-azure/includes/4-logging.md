@@ -40,7 +40,7 @@ Then, you can stream logs of an application instance with the option `-i/--insta
 az spring-cloud app logs -n app -i app-12-75cc4577fc-pw7hb
 ```
 
-You can also get details of app instances from the Azure portal.  After selecting **Apps** in the left navigation pane of your Azure Spring Cloud service, select **App Instances**.
+You can also get details of application instances from the Azure portal.  After selecting **Apps** in the left navigation pane of your Azure Spring Cloud service, select **App Instances**.
 
 > [!TIP]
 > Use `az spring-cloud app logs -h` to explore more parameters and log stream functionality.
