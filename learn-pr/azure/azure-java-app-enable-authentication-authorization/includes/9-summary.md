@@ -14,10 +14,10 @@ Summary units often contain a subsection called "Learn more" or "Further reading
 You have successfully secured your Java web application by allowing only the employees of your company to sign in with Azure AD. Your application can also access information about the user and much more from the Microsoft Graph API with the users consent.
 
  In this module, you learned how to enable authentication and authorization in a Java web application by:
- * Registering the web application with Azure AD on the Azure Portal
- * Adding sign in flows using Microsoft Authentication Library for Java (MSAL4J)
- * Accessing user information from the Microsoft Graph API with the help of Microsoft Authentication Library for Java (MSAL4J) and the Microsoft Graph SDK for Java
 
+- Registering the web application with Azure AD on the Azure Portal
+- Adding sign in flows using Microsoft Authentication Library for Java (MSAL4J)
+- Accessing user information from the Microsoft Graph API with the help of Microsoft Authentication Library for Java (MSAL4J) and the Microsoft Graph SDK for Java
 
 ## Clean up
 
@@ -33,8 +33,8 @@ You can delete your application registration on Azure Portal as follows:
 
 ## Learn More
 
-- [Authentication flows and app scenarios](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios)
-- [MSAL overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview)
+- [Authentication flows and app scenarios](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)
+- [MSAL overview](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)
 - [Microsoft Authentication Library for Java](https://github.com/AzureAD/microsoft-authentication-library-for-java)
-- [Microsoft Graph overview](https://docs.microsoft.com/en-us/graph/overview)
+- [Microsoft Graph overview](https://docs.microsoft.com/graph/overview)
 - [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java)

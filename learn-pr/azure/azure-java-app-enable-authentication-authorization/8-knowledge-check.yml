@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-java-app-enable-authentication-authorization.4-knowledge-check
+uid: learn.azure.azure-java-app-enable-authentication-authorization.knowledge-check
 title: Knowledge check
 metadata:
+  unitType: knowledge-check
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 12/14/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  ms.date: 05/07/2021
+  author: navyasric
+  ms.author: nacanuma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
