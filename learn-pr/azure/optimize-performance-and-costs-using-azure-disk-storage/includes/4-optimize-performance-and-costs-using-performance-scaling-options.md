@@ -55,8 +55,8 @@ Third, combine the performance of the VM and the disk by ensuring that the IOPS 
 
 Understand the application demands by measuring the performance requirements during normal, peak, and off-hours workload periods. Depends on the operating system you can use PerfMon tool on Windows and iostat on Linux, to capture importan counters that indicate the performance of the application.
 
-| --- | --- | --- | --- |
 | **Counter** | **Description** | **PerfMon** | **Iostat** |
+| --- | --- | --- | --- |
 | **IOPS or Transactions per second** | Number of I/O requests issued to the storage disk per second. | Disk Reads/sec
  Disk Writes/sec | tps
  r/s
