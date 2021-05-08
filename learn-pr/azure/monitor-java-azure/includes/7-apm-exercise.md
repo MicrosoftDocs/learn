@@ -34,7 +34,7 @@ The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_conne
 
 ![gateway-requests](../media/4-petclinic-microservices-metrics.jpg)
 
-Spring Boot registers a lot number of core metrics: JVM, CPU, Tomcat, Logback...
+Spring Boot registers a number of core metrics: JVM, CPU, Tomcat, Logback...
 The Spring Boot auto-configuration enables the instrumentation of requests handled by Spring MVC.
 All those three REST controllers `OwnerResource`, `PetResource` and `VisitResource` have been instrumented by the `@Timed` Micrometer annotation at class level.
 
