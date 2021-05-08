@@ -16,7 +16,7 @@ az spring-cloud app logs -n <application> -f
 
 ### Tail log for application with multiple instances
 
-If multiple instances exist for the app named `app`, you can view the instance log by using the `-i/--instance` option.
+If multiple instances exist for the application named `app`, you can view the instance log by using the `-i/--instance` option.
 
 First, you can get the app instance names with following command.
 
