@@ -12,7 +12,7 @@ Navigate to the `Performance` blade:
 
 ![Performance](../media/4-petclinic-microservices-performance.jpg)
 
-Navigate to the `Performance/Dependenices` blade - you can see the performance number for dependencies,
+Navigate to the `Performance/Dependencies` blade - you can see the performance number for dependencies,
 particularly SQL calls:
 
 ![Dependenices](../media/4-petclinic-microservices-insights-on-dependencies.jpg)
