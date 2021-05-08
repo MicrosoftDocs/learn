@@ -8,13 +8,8 @@ Of the various disks available in Azure, ultra disks provide the highest disk pe
 
 The performance of an Ultra SSD depends on the size of the disk you select. The following table lists some examples.
 
-| **ULTRA SSD** |
-| --- |
+|||
 | **Disk size (GB)** | **IOPS** | **Throughput (MBps)** |
-|
-| |
-|
-| |
 | 4 | 1,200 | 300 |
 | --- | --- | --- |
 | 16 | 4,800 | 1,200 |
@@ -24,11 +19,6 @@ The performance of an Ultra SSD depends on the size of the disk you select. The 
 | 256 | 76,800 | 2,000 |
 | --- | --- | --- |
 | Over 1,024 | 160,000 | 2,000 |
-| --- | --- | --- |
-|
- |
- |
- |
 | --- | --- | --- |
 
 Ultra disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they&#39;re running and without detaching them from the host virtual machine (VM). For example, depending on the sizes of the ultra disk, single ultra disk can support up to maximum 160 000 IOPS limit. Performance adjustments can take up to an hour to take effect.
