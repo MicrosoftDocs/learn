@@ -37,4 +37,4 @@ az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
 --location ${REGION}
 ```
 
-In the next exercise, we'll explore Application Performance Monitoring for your Sample Spring application.
+In the next exercise, we'll explore Application Performance Monitoring for your sample Spring application.
