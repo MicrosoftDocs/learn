@@ -16,7 +16,7 @@ Edit the `deployPetClinicApp.sh` and customize the below parameters for your env
 
 | Variable | Description |
 |-|-|
-| project_directory| local directory that will be used to clone the repository and build/deploy the application |
+| project_directory| local directory that'll be used to clone the repository and build/deploy the application |
 | subscription | Your Azure Subscription ID. To find your Subscription ID, sign in to the Microsoft Azure portal. In the left-hand menu, select "All Services". In the General section, select "Subscriptions". Copy the Subscription ID for the applicable subscription |
 | resource_group | Provide a new or existing resource group name |
 | region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
