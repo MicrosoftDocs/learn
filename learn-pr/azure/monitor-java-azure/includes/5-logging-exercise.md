@@ -13,7 +13,7 @@ In following examples, the resource group and service name will be omitted in th
 
 ### Tail log
 
-You can view the log of the app instance with the following command:
+You can view the log of the application instance with the following command:
 
 ```azurecli
 az spring-cloud app logs -n customers-service
