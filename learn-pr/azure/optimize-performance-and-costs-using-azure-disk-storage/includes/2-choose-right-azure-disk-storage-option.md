@@ -60,8 +60,18 @@ Premium SSDs are designed to provide consistent performance figures as the examp
 
 If you need higher performance than what standard disks provide or if you can't sustain occasional impacts to performance, use premium SSDs. Also, use premium SSDs when you want the highest possible performance, but you are not able to use ultra disks because of their current limitations. Premium SSDs are a good solution for mission-critical workloads in medium and large organizations.
 
-Smaller premium SSDs offer credit system for disk bursting that can 
+Azure Premium SSD disks support disk bursting which offer higher IOPS and throughput performance then the actual performance tier of the selected disk. For P20 disks and smaller the bursting is enabled by default with no additional costs.
+
+>[Note!]
+>You will learn more about Azure disk bursing functinality later in the fourth unit "Select a disk type for your workload".
+ 
 You can convert a disk to a premium SSD at any time if the disk performance does not meet your requirements.
+
+You can purchase premium SSDs with Azure disk reservation by committing to one-year capacity that offers reduced cost for disk SKU. 
+
+>[Note!]
+> Reservation discounts are currently available for disks larger than P30 and is applyed only for the disk SKU. Disk snapshots are charged at pay-as-you-go rates.
+
 
 ## Standard SSD
 
