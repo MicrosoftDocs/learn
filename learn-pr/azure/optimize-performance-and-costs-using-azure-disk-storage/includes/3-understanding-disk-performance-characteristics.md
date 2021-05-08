@@ -20,7 +20,7 @@ This is because VMs have their own storage IOPS limits, which combined with the 
 
 If you don't size the VM correctly for the storage performance that an application requires, the VM itself become a bottleneck.
 
-For example, suppose that your application makes a request that requires 15 000 IOPS. You have provisioned a Standard_D8s_v4 VM, with one P30 OS disk and two premium SSD data disks with P40 SKU. Each data disk can handle 7500 IOPS and eventually can meet the demand of the applications, but the VM itself has a maximum limit of 12800 IOPS, which is the actual IOPS that the application will get. The following figure illustrates this example.
+For example, suppose that your application makes a request that requires 15 000 IOPS. You have provisioned a Standard_D8s_v3 VM, with one P30 OS disk and two premium SSD data disks with P40 SKU. Each data disk can handle 7500 IOPS and eventually can meet the demand of the applications, but the VM itself has a maximum limit of 12800 IOPS, which is the actual IOPS that the application will get. The following figure illustrates this example.
 
 ![](RackMultipart20210505-4-dcihql_html_3c598c1975759fdb.png)
 
@@ -77,7 +77,14 @@ In reality, the data is queued in a cache, waiting to be written to a disk. As y
 
 Now that you understand that the caching can improve the performance for reading or writing on the disk, lets see how that affect VM performance.
 
-The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of th VM. All Vms in the premium tier, has different limits for IOPS and throughput based on cached and uncached configuration. When the application running on the VM request IOPS, or throughput that hit the limits of the VM size, Azure start to throttle the request which cause performance problems.
+The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of th VM. All VMs in the premium tier, has different limits for IOPS and throughput based on cached and uncached configuration. When the application running on the VM request IOPS, or throughput that hit the limits of the VM size, Azure start to throttle the request which cause performance problems.
 
+The following table lists examples that illustrate difference performance for cached and uncached disk throughput and bandwith:
 
+| VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in GiB) | Max uncached disk throughput IOPS/MBps |
+| --- | --- | --- |
+| Standard_D2s_v3 | 4000/32 (50) | 3200/48 |
+| Standard_D4s_v3 | 8000/64 (100) | 6400/96 |
+| Standard_D8s_v3 | 16000/128 (200) | 12800/192 |
+| Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 |
 
