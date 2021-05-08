@@ -75,19 +75,19 @@ You can purchase premium SSDs with Azure disk reservation by committing to one-y
 
 ## Standard SSD
 
-Standard SSDs in Azure are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSDs aren&#39;t as fast as premium or ultra disks, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. You can attach standard SSDs to any VM, irrespective of its size.
+Standard SSDs in Azure are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSDs aren't as fast as premium or ultra disks, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. You can attach standard SSDs to any VM, irrespective of its size.
 
 The following table has examples that illustrate the performance characteristics of standard SSDs in several sizes.
 
 
 | Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- | --- |
-| E4 | 32 | 120 | 25 |
+| E4 | 32 | 500 | 60 |
 | E15 | 256 | 500 | 60 |
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use standard SSDs when you have budgetary constraints and a workload that isn&#39;t disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
+Use standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
 ## Standard HDD
 
