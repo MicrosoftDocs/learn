@@ -1,4 +1,4 @@
-In this exercise, you'll configure a Sample Application to be ready for monitoring.
+In this exercise, you'll configure a sample Application to be ready for monitoring.
 
 ## Access the sample application
 
