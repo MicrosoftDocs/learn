@@ -24,13 +24,14 @@ prerequisites: |
   - Familiarity with creating virtual machines in the Azure portal.
 iconUrl: /learn/achievements/accelerate-storage-with-hpc-cache.svg
 levels:
-  - intermediate
+  - beginner
 roles:
   - administrator
   - technology-manager
   - solution-architect
 products:  
 - azure
+- azure-hpc-cache
 units:
 - learn.accelerate-storage-with-hpc-cache.introduction
 - learn.accelerate-storage-with-hpc-cache.hpc-cache-prerequisites
