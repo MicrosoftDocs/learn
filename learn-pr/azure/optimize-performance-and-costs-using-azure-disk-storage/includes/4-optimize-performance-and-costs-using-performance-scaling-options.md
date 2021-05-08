@@ -78,6 +78,16 @@ Applications that use multi-threading improve the IOPS and throughput limits. A 
 > [!Note]
 > Remember that you cannot modify how the application implements single threading or multi-threading. But you can still tune how multi-threading alters the performance of the application. For example, you can configure the maximum number of processors that the application uses for parallel processing.
 
+### Queue depth
+
+The number of pending IO requests in the system, known as queue depth affect performance indicators of your application. 
+
+For some workloads, a high disk queue depth can be acceptable, but for others it should remain very low at all times. For example, a high disk queue requests more opearations on the disk and applications that support multi-threading, can achieve higher IOPS.
+
+IO requests become queued when reads or writes are requested faster than they can be processed by the disk. When IO requests are queued, the total amount of time it takes to read or write data to disk will be greater. For example if your application writes 300 IOPS and disk is capable of accepting 500+ IOPS, then queue depth do not ocure. However, if your application sends IOs more than Disk's IOPS limit, then queue depth will be used.
+
+Most applications do not allow to change the queue depth, since incorrectly tuning can degrade the perfromance of the application. Applications that provide settings to tune the queue depth, also configure how the multi-threading should be configured. For example, the MAXDOP (maximum degree of parallelism) setting in SQL Server specify how many cores to use for executing the query. 
+
 ## Azure disk bursting
 
 For unplanned scenarios where you need high performance for a short period of time, you can benefit from the disk bursting capabilities. Disk bursting can improve boot times, manage processing of small-batch jobs, and deal with unexpected traffic spikes.
@@ -86,7 +96,7 @@ Azure provides this functionality both for VMs and the disks, you can use it ind
 
 ### Virtual-machine-level bursting
 
-VM-level bursting only supports the credit-based model for bursting, which does not require any configuration. During the VM usage, it accumulates credits whenever the resource&#39;s IOPS or throughputs are being utilized below the resource&#39;s performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
+VM-level bursting only supports the credit-based model for bursting, which does not require any configuration. During the VM usage, it accumulates credits whenever the resource's IOPS or throughputs are being utilized below the resource's performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
 
 ### Disk-level bursting
 
