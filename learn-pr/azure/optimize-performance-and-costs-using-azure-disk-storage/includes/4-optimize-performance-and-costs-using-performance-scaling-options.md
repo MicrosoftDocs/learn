@@ -1,8 +1,8 @@
 By migrating your organization's critical workload to Azure, you'll be able to provide a range of infrastructure requirements such as scalable performance, built-in security, durability, and cost optimization.
-<!--Marjan, please check changes to the prev sentence-->
+
 Many of these infrastructure requirements are directly associated with block storage, which is the foundation of Azure managed disks.
 
-The type and size of the disk that you select for your critical applications directly impacts the performance and can generate higher costs if you do not select the appropriate option. <!-- Marjan, do we mean "select the appropriate performance tier/disk type"-->
+The type and size of the disk that you select for your critical applications directly impacts the performance and can generate higher costs if you do not select the appropriate option. 
 
 ## Performance tiers for managed disks
 
@@ -11,13 +11,11 @@ You can adjust and balance the IOPS, throughput, and latency of your Azure disks
 You might also have applications that require, on a temporary basis&#39;s, higher demands on performance, without increasing the capacity of the disks.
 
 You can change the performance tier on a Premium SSD when you need to meet a higher performance demand.
-For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that is limited to 120 IOPS and 25 MBps. Because of the outgoing campaign <!--Marjan I am not clear what outgoing campaign refers to here. Do you mean ongoing marketing campaign? Did we refere to this campaign earlier or in the intro?-->, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to an higher tier, such as P30 with 5000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you will be charged for the price of that tier. In this example, you will be charged the price of P30.
+For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that is limited to 120 IOPS and 25 MBps. Because of the outgoing marketing campaign, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to an higher tier, such as P30 with 5000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you will be charged for the price of that tier. In this example, you will be charged the price of P30.
 
 Azure currently support modifications to the performance tier only for Premium SSD disks and requires you to dismount the disk when you perform the resizing operation.
 
-## Change the performance tier without downtime on Premium Disks
-
-<!--Marjan, I think during design Microsoft asked us not to use "without downtime" and we removed that phrase from design. Please confirm if we need to remove it here too-->
+## Change the performance tier on Premium Disks while in use by the VMs
 
 You can change the performance tier of a Premium SSD without downtime and without dismounting from the VM.
 
@@ -30,11 +28,11 @@ Use the following commands to change the disk performance tier:
 Azure CLI
 
 ```bash
-subscriptionId=\&lt;yourSubscriptionID\&gt;
-resourceGroupName=\&lt;yourResourceGroupName\&gt;
-diskName=\&lt;yourDiskName\&gt;
-diskSize=\&lt;yourDiskSize\&gt;
-performanceTier=\&lt;yourDesiredPerformanceTier\&gt;
+subscriptionId="yourSubscriptionID"
+resourceGroupName="yourResourceGroupName"
+diskName="yourDiskName"
+diskSize="yourDiskSize"
+performanceTier="yourDesiredPerformanceTier"
 region=EastUS2EUAP
 
 az login
@@ -51,10 +49,11 @@ Now that you understand how different performance indicators define the overall 
 Suppose that you have a high-demanding application that requires an instant response with very low latency.
 As the first step, you must choose the right VM size that will provide high-disk throughput. You can use the Lsv2-series VMs that provide high throughput, low latency, and support for multithreading. As a general guide, you should choose a VM that offers greater IOPS than what the application needs.
 Second, choose a disk that offers an IOPS greater than your application's requirement and has a scale limit that can meet the highest estimated peak demands of the application.
-Third, combine the performance of the VM and the disk by ensuring that the IOPS limit of the VM size is greater than the total IOPS driven by the storage disks attached to it. <!--Marjan, what does "it" refer to here? the VM?-->
-You can improve the performance of the application if you choose multiple disks and stripe them together to get a combined higher IOPS and throughput limit. You can implement the striping on Windows by using the Storage Spaces functionality, and on Linux by using MDADM <!-- Marjan, can you please expand this acronym. Also, please check edits to previous sentence-->
+Third, combine the performance of the VM and the disk by ensuring that the IOPS limit of the VM size is greater than the total IOPS driven by the storage disks attached to it. 
+You can improve the performance of the application if you choose multiple disks and stripe them together to get a combined higher IOPS and throughput limit. You can implement the striping on Windows by using the Storage Spaces functionality, and on Linux by using Multiple Disk and Device Management (MDADM).
+
 You can modify the stripe size based on the application type and reuirements. A smaller stripe size provides better performance for applications that use random small IO patterns. Use a larger stripe size for sequential large IO pattern, commonly used in data warehouse applications.
-Applications that use multi-threading improve the IOPS and throughput limits. A multi-thread application provides the benefit of multiple parallel jobs that  multi CPU and multi-core VMs can handle.
+Applications that use multi-threading improve the IOPS and throughput limits. A multi-thread application provides the benefit of multiple parallel jobs that multi CPU and multi-core VMs can handle.
 
 > [!Note]
 > Remember that you cannot modify how the application implements single threading or multi-threading. But you can still tune how multi-threading alters the performance of the application. For example, you can configure the maximum number of processors that the application uses for parallel processing.
@@ -83,9 +82,9 @@ Use the following command to create an empty data disk with on-demand bursting:
 PowerSehll
 
 ```powershell
-Set-AzContext -SubscriptionName \&lt;yourSubscriptionName\&gt;
-$diskConfig = New-AzDiskConfig -Location &#39;WestCentralUS&#39; -CreateOption Empty -DiskSizeGB 1024 -SkuName Premium\_LRS -BurstingEnabled $true
-$dataDisk = New-AzDisk -ResourceGroupName \&lt;myResourceGroupDisk\&gt; -DiskName \&lt;myDataDisk\&gt; -Disk $diskConfig
+Set-AzContext -SubscriptionName "yourSubscriptionName"
+$diskConfig = New-AzDiskConfig -Location "WestCentralUS" -CreateOption Empty -DiskSizeGB 1024 -SkuName Premium_LRS -BurstingEnabled $true
+$dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDataDisk" -Disk $diskConfig
 ```
 
 > [!Note]:
