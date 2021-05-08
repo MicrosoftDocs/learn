@@ -27,16 +27,19 @@ Edit the `deployPetClinicApp.sh` and customize the below parameters for your env
 
 ## Run the setup script
 
+The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance that will incur a nominal cost. Run the following script to setup the environment for this modules exercises:
+
 ```bash
 cd petclinic
 az login
 sh deployPetClinicApp.sh
 ```
 
-> [!NOTE]
-> This script takes 20-30 minutes to run and includes the creation of Azure spring Cloud and MySQL instance that will incur a nominal cost.
-> For more information on this cost please see the Azure Spring Cloud and MySQL pricing links in the summary section
-> It is important to delete the created resources to re-occuring costs
+After completion of this training, if you don't expect to need these resources in the future, delete these resource:
+
+```azurecli
+az group delete --name <your Resource Group Name> --yes
+```
 
 ## Test the application
 
