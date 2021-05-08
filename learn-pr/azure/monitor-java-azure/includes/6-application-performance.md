@@ -15,7 +15,7 @@ APM provides visibility into all your applications with the following features:
 ## Application insights
 
 Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers and DevOps professionals to monitor your live applications.
-Developers can instrument their applications with Azure Application Insights to generate custom telemetry. This telemetry provides an extra layer of monitoring that can be beneficial in diagnosing errors and their root causes--often without having to dive into the source code.
+Developers can instrument their applications with Azure Application Insights to generate custom telemetry. This telemetry provides an extra layer of monitoring that can be beneficial in diagnosing errors and their root causes - often without having to dive into the source code.
 
 ## How does Application Insights work?
 
