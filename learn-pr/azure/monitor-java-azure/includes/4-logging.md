@@ -34,7 +34,7 @@ app-12-75cc4577fc-8nt4m  Running   UP
 app-12-75cc4577fc-n25mh  Running   UP
 ```
 
-Then, you can stream logs of an app instance with the option `-i/--instance` option:
+Then, you can stream logs of an application instance with the option `-i/--instance` option:
 
 ```azurecli
 az spring-cloud app logs -n app -i app-12-75cc4577fc-pw7hb
