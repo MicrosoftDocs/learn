@@ -45,8 +45,8 @@ az group deployment create -g $resourceGroupName \
 ## Optimize for performance
 
 Now that you understand how different performance indicators define the overall performance of the managed disk, let's examine some use case scenarios.
-
 Suppose that you have a high-demanding application that requires an instant response with very low latency.
+
 As the first step, you must choose the right VM size that will provide high-disk throughput. You can use the Lsv2-series VMs that provide high throughput, low latency, and support for multithreading. As a general guide, you should choose a VM that offers greater IOPS than what the application needs.
 
 Second, choose a disk that offers an IOPS greater than your application's requirement and has a scale limit that can meet the highest estimated peak demands of the application.
