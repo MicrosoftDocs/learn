@@ -1,4 +1,4 @@
-In this unit, we look at Monitoring the entire solution.
+In this unit, we look at monitoring the entire solution.
 
 ## Introduction
 
