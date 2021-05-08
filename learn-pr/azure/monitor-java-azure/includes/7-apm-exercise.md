@@ -1,4 +1,4 @@
-In this exercise, you'll configure an the sample Application for Monitoring.
+In this exercise, you'll configure the sample application for monitoring using an APM solution.
 
 ## Monitor the Application
 
