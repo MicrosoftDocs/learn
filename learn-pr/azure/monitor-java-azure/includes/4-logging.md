@@ -11,7 +11,7 @@ The log streaming feature allows developers to get real-time application logs in
 You can use log streaming in the Azure CLI with the following command.
 
 ```azurecli
-az spring-cloud app logs -n <application> --resource-group <resource group name> --service <service instance name> -f
+az spring-cloud app logs --name <application> --resource-group <resource group name> --service <service instance name> -f
 ```
 
 ### Tail log for application with multiple instances
@@ -21,7 +21,7 @@ If multiple instances exist for the application named `app`, you can view the in
 First, you can get the application instance names with following command.
 
 ```azurecli
-az spring-cloud app show -n app --resource-group <resource group name> --service <service instance name> --query properties.activeDeployment.properties.instances -o table
+az spring-cloud app show --name app --resource-group <resource group name> --service <service instance name> --query properties.activeDeployment.properties.instances -o table
 ```
 
 With results:
@@ -37,7 +37,7 @@ app-12-75cc4577fc-n25mh  Running   UP
 Then, you can stream logs of an application instance with the option `-i/--instance` option:
 
 ```azurecli
-az spring-cloud app logs -n app --resource-group <resource group name> --service <service instance name> -i app-12-75cc4577fc-pw7hb
+az spring-cloud app logs --name app --resource-group <resource group name> --service <service instance name> -i app-12-75cc4577fc-pw7hb
 ```
 
 You can also get details of application instances from the Azure portal.  After selecting **Apps** in the left navigation pane of your Azure Spring Cloud service, select **App Instances**.

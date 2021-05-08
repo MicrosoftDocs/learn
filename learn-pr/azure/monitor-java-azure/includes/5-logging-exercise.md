@@ -7,7 +7,7 @@ In this exercise, we look at logging and Log Analytics.
 You can view the log of the application instance with the following command:
 
 ```azurecli
-az spring-cloud app logs -n customers-service --resource-group <resource group name> --service <service instance name>
+az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name>
 ```
 
 This command will return logs:
@@ -26,7 +26,7 @@ This command will return logs:
 By default, `az spring-cloud app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
-az spring-cloud app logs -n customers-service --resource-group <resource group name> --service <service instance name> -f
+az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name> -f
 ```
 
 In the next unit, we'll discuss Application Performance Monitoring (APM).
