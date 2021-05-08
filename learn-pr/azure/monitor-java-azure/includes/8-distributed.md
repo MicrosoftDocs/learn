@@ -11,6 +11,7 @@ Log Analytics provides aggregated logs with advanced query capability. Data is r
 > [!NOTE]
 > Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.
 > Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
+> For more information on KQL syntax, see the Summary unit at the end of this training.
 
 ### Use Log Analytics
 

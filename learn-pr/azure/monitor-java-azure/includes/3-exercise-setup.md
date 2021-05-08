@@ -33,6 +33,11 @@ az login
 sh deployPetClinicApp.sh
 ```
 
+> [!NOTE]
+> This script takes 20-30 minutes to run and includes the creation of Azure spring Cloud and MySQL instance that will incur a nominal cost.
+> For more information on this cost please see the Azure Spring Cloud and MySQL pricing links in the summary section
+> It is important to delete the created resources to re-occuring costs
+
 ## Test the application
 
 Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
