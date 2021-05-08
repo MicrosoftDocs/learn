@@ -8,20 +8,20 @@ The type and size of the disk that you select for your critical applications dir
 
 You can adjust and balance the IOPS, throughput, and latency of your Azure disks by selecting the right performance tier. To select the right combination, you should be aware of your application requirements. High-I/O applications, such as database servers or online transactional processing systems, will require higher IOPS, whereas more computational-based applications might work well with much lower requirements.
 
-You might also have applications that require, on a temporary basis&#39;s, higher demands on performance, without increasing the capacity of the disks.
+You might also have applications that require, on a temporary basis's, higher demands on performance, without increasing the capacity of the disks.
 
-You can change the performance tier on a Premium SSD when you need to meet a higher performance demand.
+You can change the performance tier on ultra and premium SSD disks when you need to meet a higher performance demand.
 For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that is limited to 120 IOPS and 25 MBps. Because of the outgoing marketing campaign, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to an higher tier, such as P30 with 5000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you will be charged for the price of that tier. In this example, you will be charged the price of P30.
 
-Azure currently support modifications to the performance tier only for Premium SSD disks and requires you to dismount the disk when you perform the resizing operation.
+Azure currently support modifications to the performance tier for ultra disks without dismounting it from the VM. For premium SSD disks this functionality is offered in preview in limited number of regions.
 
-## Change the performance tier on Premium Disks while in use by the VMs
+## Change the performance tier on premium disks while in use by the VMs
 
-You can change the performance tier of a Premium SSD without downtime and without dismounting from the VM.
+You can change the performance tier of a premium SSD without downtime and without dismounting from the VM.
 
 At the time of writing of this content, Azure supports this functionality only in East US2 region and requires that you deploy the VM by using an Azure Resource Manager template with the 2020-12-01 API.
 
-You can change the performance tier of the disk by using the PowerShell Azure command-line interface (Azure CLI) or the Azure portal. <!--Marjan, please see edits to the previous sentences.-->
+You can change the performance tier of the disk by using the PowerShell Azure command-line interface (Azure CLI) or the Azure portal. 
 
 Use the following commands to change the disk performance tier:
 
@@ -50,9 +50,14 @@ Suppose that you have a high-demanding application that requires an instant resp
 As the first step, you must choose the right VM size that will provide high-disk throughput. You can use the Lsv2-series VMs that provide high throughput, low latency, and support for multithreading. As a general guide, you should choose a VM that offers greater IOPS than what the application needs.
 Second, choose a disk that offers an IOPS greater than your application's requirement and has a scale limit that can meet the highest estimated peak demands of the application.
 Third, combine the performance of the VM and the disk by ensuring that the IOPS limit of the VM size is greater than the total IOPS driven by the storage disks attached to it. 
+
+### Disk striping
 You can improve the performance of the application if you choose multiple disks and stripe them together to get a combined higher IOPS and throughput limit. You can implement the striping on Windows by using the Storage Spaces functionality, and on Linux by using Multiple Disk and Device Management (MDADM).
 
 You can modify the stripe size based on the application type and reuirements. A smaller stripe size provides better performance for applications that use random small IO patterns. Use a larger stripe size for sequential large IO pattern, commonly used in data warehouse applications.
+
+### Multi-threading
+
 Applications that use multi-threading improve the IOPS and throughput limits. A multi-thread application provides the benefit of multiple parallel jobs that multi CPU and multi-core VMs can handle.
 
 > [!Note]
