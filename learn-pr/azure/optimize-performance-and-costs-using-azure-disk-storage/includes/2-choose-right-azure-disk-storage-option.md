@@ -17,21 +17,29 @@ The performance of an Ultra SSD depends on the size of the disk you select. The 
 | Over 1,024 | 160,000 | 2,000 |
 
 
-Ultra disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they&#39;re running and without detaching them from the host virtual machine (VM). For example, depending on the sizes of the ultra disk, single ultra disk can support up to maximum 160 000 IOPS limit. Performance adjustments can take up to an hour to take effect.
+Ultra disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine (VM). For example, depending on the sizes of the ultra disk, single ultra disk can support up to maximum 160 000 IOPS limit. Performance adjustments can take up to an hour to take effect.
+
+>[Note!]
+>You can resize ultra disk only 4 times during a 24 hour window and is possible the performance resize operation to fail due to lack of performance bandwidth capacity.
+
+Ultra disk by default are created with 4k physical sector which is compatible for most applications. For applications, such as older version of Oracle Database you can create 512E sector size.
 
 Ultra disks are a new disk type and currently have some limitations:
 
-- They&#39;re only available in a subset of Azure regions.
+- They're only available in a subset of Azure regions.
 - You can only attach them to VMs that are in Availability Zones.
-- You can only attach them to ES/DS v3 VMs.
 - You can only create use them as data disks and use them as empty disks.
-- They don&#39;t support disk snapshots, VM images, scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
+- They don't support disk snapshots, VM images, scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
+- Ultra disk does not support cached reads and cached writes operations.
 
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if premium SSDs are causing performance bottlenecks, consider using ultra disks.
 
+>[Note!]
+>You are charged for using ultra disk based on provisioned size, provisioned IOPS and provisioned throughput.
+
 ## Premium SSD
 
-Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to ultra disks.. Premium disks don&#39;t have the current limitations of ultra disks. For example, they&#39;re available in all regions and you can use them with VMs that are located outside of Availability Zones.
+Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to ultra disks.. Premium disks don't have the current limitations of ultra disks. For example, they&#39;re available in all regions and you can use them with VMs that are located outside of Availability Zones.
 
 You can&#39;t adjust performance of premium SSDs without detaching these disks from their VM. Also, you can use premium SSDs only with larger VM sizes that are compatible with premium storage.
 
