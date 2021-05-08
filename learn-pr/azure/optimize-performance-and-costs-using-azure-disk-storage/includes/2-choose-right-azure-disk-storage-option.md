@@ -8,8 +8,8 @@ Of the various disks available in Azure, ultra disks provide the highest disk pe
 
 The performance of an Ultra SSD depends on the size of the disk you select. The following table lists some examples.
 
-|||
 | **Disk size (GB)** | **IOPS** | **Throughput (MBps)** |
+| --- | --- |
 | 4 | 1,200 | 300 |
 | 16 | 4,800 | 1,200 |
 | 32 | 9,600 | 2,000 |
