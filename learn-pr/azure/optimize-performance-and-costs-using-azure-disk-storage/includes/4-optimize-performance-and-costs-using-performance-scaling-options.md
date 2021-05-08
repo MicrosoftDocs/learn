@@ -57,11 +57,11 @@ Understand the application demands by measuring the performance requirements dur
 
 | **Counter** | **Description** | **PerfMon** | **Iostat** |
 | --- | --- | --- | --- |
-| **IOPS or Transactions per second** | Number of I/O requests issued to the storage disk per second. | Disk Reads/sec Disk Writes/sec | tps r/s w/s |
-| **Disk Reads and Writes** | % of Reads and Write operations performed on the disk. | % Disk Read Time % Disk Write Time | r/s w/s |
-| **Throughput** | Amount of data read from or written to the disk per second. | Disk Read Bytes/sec Disk Write Bytes/sec | kB\_read/s kB\_wrtn/s |
-| **Latency** | Total time to complete a disk IO request. | Average Disk sec/Read Average disk sec/Write | await svctm |
-| **IO size** | The size of I/O requests issues to the storage disks. | Average Disk Bytes/Read  Average Disk Bytes/Write | avgrq-sz |
+| **IOPS or Transactions per second** | Number of I/O requests issued to the storage disk per second. | Disk Reads/sec; Disk Writes/sec | tps; r/s; w/s |
+| **Disk Reads and Writes** | % of Reads and Write operations performed on the disk. | % Disk Read Time % Disk Write Time | r/s; w/s |
+| **Throughput** | Amount of data read from or written to the disk per second. | Disk Read Bytes/sec; Disk Write Bytes/sec | kB_read/s; kB_wrtn/s |
+| **Latency** | Total time to complete a disk IO request. | Average Disk; sec/Read; Average disk; sec/Write | await; svctm |
+| **IO size** | The size of I/O requests issues to the storage disks. | Average Disk Bytes/Read;  Average Disk Bytes/Write | avgrq-sz |
 | **Queue Depth** | Number of outstanding I/O requests waiting to be read from or written to the storage disk. | Current Disk Queue Length | avgqu-sz |
 | **Max. Memory** | Amount of memory required to run application smoothly | % Committed Bytes in Use | Use vmstat |
 | **Max. CPU** | Amount CPU required to run application smoothly | % Processor time | %util |
