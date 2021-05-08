@@ -12,7 +12,7 @@ Monitoring Java applications on Azure
 summary: Monitoring Java applications on Azure
 abstract: |
   By the end of this module, you will:
-  - Get an understanding about monitoring Java Applications on Azure.
+  - Learn about monitoring Java Applications on Azure.
   - Build and deploy a Sample Microservices Application and configure it for Azure Application Performance Monitoring.
   - Monitor the application with Azure Application Insights.
 prerequisites: |
