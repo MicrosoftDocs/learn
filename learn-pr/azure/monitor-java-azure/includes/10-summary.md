@@ -22,14 +22,14 @@ az group delete --name <your Resource Group Name> --yes
 
 ## Additional resources
 
-For more information on Azure Monitor, see [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
+* [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
-For more information on Azure Spring Cloud, see [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
+* [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
 
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
+* [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
 
-For more information about using Monitoring with Azure Database for MySQL, see [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
+* [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
 
-For more information about using OpenTelemetry with Java and Azure, see [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/java/api/overview/azure/core-tracing-opentelemetry-readme?WT.mc_id=java-00000-ropreddy).
+* [Azure OpenTelemetry Tracing plugin library for Java](https://docs.microsoft.com/java/api/overview/azure/core-tracing-opentelemetry-readme?WT.mc_id=java-00000-ropreddy).
 
-For more information on Application Insights for web pages, see [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
+* [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
