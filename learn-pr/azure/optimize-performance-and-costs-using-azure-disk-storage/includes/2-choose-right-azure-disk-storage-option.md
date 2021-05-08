@@ -39,27 +39,13 @@ Note: At the time of writing this module, Microsoft announced in private preview
 
 The following table lists examples that illustrate the high performance of premium SSDs:
 
-| **PREMIUM SSD** |
-| --- |
-| **Disk size name** | **Disk size** | **IOPS** | **Throughput (MBps)** |
-|
-| |
-|
-| |
+
+| Disk size name | Disk size | IOPS | Throughput (MBps) |
+| --- | --- |--- | --- |
 | P4 | 32 GiB | 120 | 25 |
-| --- | --- | --- | --- |
 | P15 | 256 GiB | 1,100 | 125 |
-| --- | --- | --- | --- |
 | P40 | 2 TiB | 7,500 | 250 |
-| --- | --- | --- | --- |
 | P80 | 32 TiB | 20,000 | 900 |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
 
 Premium SSDs are designed to provide consistent performance figures as the examples in the table depict, whereas standard tier disks can be occasionally impacted by high demand.
 
@@ -73,27 +59,13 @@ Standard SSDs in Azure are a cost-effective storage option for VMs that need con
 
 The following table has examples that illustrate the performance characteristics of standard SSDs in several sizes.
 
-| **STANDARD SSD** |
-| --- |
-| **Disk size name** | **Disk size (GB)** | **IOPS** | **Throughput (MBps)** |
-|
-| |
-|
-| |
+
+| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| --- | --- |--- | --- |
 | E4 | 32 | 120 | 25 |
-| --- | --- | --- | --- |
 | E15 | 256 | 500 | 60 |
-| --- | --- | --- | --- |
 | E40 | 2,048 | 500 | 60 |
-| --- | --- | --- | --- |
 | E80 | 32,767 | 6,000 | 750 |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
 
 Use standard SSDs when you have budgetary constraints and a workload that isn&#39;t disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
@@ -103,27 +75,13 @@ In standard HDDs, data is stored on conventional magnetic disk drives with movin
 
 The following table illustrates the performance characteristics of standard HDDs in several sizes:
 
-| **STANDARD HDD** |
-| --- |
-| **Disk size name** | **Disk size (GB)** | **IOPS** | **Throughput (MBps)** |
-|
-| |
-|
-| |
+
+| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| --- | --- |--- | --- |
 | S4 | 32 | 500 | 60 |
-| --- | --- | --- | --- |
 | S15 | 256 | 500 | 60 |
-| --- | --- | --- | --- |
 | S40 | 2,048 | 500 | 60 |
-| --- | --- | --- | --- |
 | S80 | 32,767 | 2,000 | 500 |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
 
 Use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
 
