@@ -1,4 +1,4 @@
-Congratulations! You've learned how to use monitoring to for your Java Azure Applications.
+Congratulations! You've learned how to use monitoring to for your Java applications on Azure.
 
 As an infrastructure manager you were asked to monitor your Azure Java application and its dependencies.
 
