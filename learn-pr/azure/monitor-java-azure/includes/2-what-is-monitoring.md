@@ -1,4 +1,4 @@
-In this unit, we look at Monitoring Java Application concepts.
+In this unit, we look at monitoring Java application concepts.
 
 ## Why Monitoring?
 
