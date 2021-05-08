@@ -32,7 +32,7 @@ This command will return logs:
 
 ### Continuously stream new logs
 
-By default, `az spring-cloud app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add -f (--follow):  
+By default, `az spring-cloud app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
 az spring-cloud app logs -n customers-service -f
