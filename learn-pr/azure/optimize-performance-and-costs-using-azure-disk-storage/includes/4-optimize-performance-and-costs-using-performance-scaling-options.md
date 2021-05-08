@@ -57,10 +57,7 @@ Understand the application demands by measuring the performance requirements dur
 
 | **Counter** | **Description** | **PerfMon** | **Iostat** |
 | --- | --- | --- | --- |
-| **IOPS or Transactions per second** | Number of I/O requests issued to the storage disk per second. | Disk Reads/sec
- Disk Writes/sec | tps
- r/s
- w/s |
+| **IOPS or Transactions per second** | Number of I/O requests issued to the storage disk per second. | Disk Reads/sec Disk Writes/sec | tps r/s w/s |
 | **Disk Reads and Writes** | % of Reads and Write operations performed on the disk. | % Disk Read Time % Disk Write Time | r/s w/s |
 | **Throughput** | Amount of data read from or written to the disk per second. | Disk Read Bytes/sec Disk Write Bytes/sec | kB\_read/s kB\_wrtn/s |
 | **Latency** | Total time to complete a disk IO request. | Average Disk sec/Read Average disk sec/Write | await svctm |
