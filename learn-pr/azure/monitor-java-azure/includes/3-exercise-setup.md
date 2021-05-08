@@ -35,7 +35,8 @@ az login
 sh deployPetClinicApp.sh
 ```
 
-After completion of this entire modules training, if you don't expect to need these resources in the future, or if you don't complete the training, delete these resource:
+> [!IMPORTANT]
+> After completion of this entire modules training, or if you don't complete the training, and you don't expect to need these resources in the future, delete these resource:
 
 ```azurecli
 az group delete --name <your Resource Group Name> --yes
