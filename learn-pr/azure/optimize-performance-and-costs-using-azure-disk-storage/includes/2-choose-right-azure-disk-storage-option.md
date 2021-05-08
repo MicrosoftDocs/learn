@@ -41,9 +41,10 @@ Some workloads place intensive loads on disk storage. For example, top-tier data
 
 Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to ultra disks.. Premium disks don't have the current limitations of ultra disks. For example, they&#39;re available in all regions and you can use them with VMs that are located outside of Availability Zones.
 
-You can&#39;t adjust performance of premium SSDs without detaching these disks from their VM. Also, you can use premium SSDs only with larger VM sizes that are compatible with premium storage.
+You can adjust performance of premium SSDs by first detaching these disks from their VMs. Also, you can use premium SSDs only with larger VM sizes that are compatible with premium storage.
 
-Note: At the time of writing this module, Microsoft announced in private preview, an option to adjust performance tier on premium SSD disks while they are used within VMs.
+>[Note!]
+> At the time of writing this module, Microsoft announced in private preview, an option to adjust performance tier on premium SSD disks while they are used within VMs.
 
 The following table lists examples that illustrate the high performance of premium SSDs:
 
@@ -57,8 +58,9 @@ The following table lists examples that illustrate the high performance of premi
 
 Premium SSDs are designed to provide consistent performance figures as the examples in the table depict, whereas standard tier disks can be occasionally impacted by high demand.
 
-If you need higher performance than what standard disks provide or if you can&#39;t sustain occasional impacts to performance, use premium SSDs. Also, use premium SSDs when you want the highest possible performance, but you are not able to use ultra disks because of their current limitations. Premium SSDs are a good solution for mission-critical workloads in medium and large organizations.
+If you need higher performance than what standard disks provide or if you can't sustain occasional impacts to performance, use premium SSDs. Also, use premium SSDs when you want the highest possible performance, but you are not able to use ultra disks because of their current limitations. Premium SSDs are a good solution for mission-critical workloads in medium and large organizations.
 
+Smaller premium SSDs offer credit system for disk bursting that can 
 You can convert a disk to a premium SSD at any time if the disk performance does not meet your requirements.
 
 ## Standard SSD
