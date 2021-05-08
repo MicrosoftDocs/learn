@@ -1,4 +1,4 @@
-In this unit, we look at Application performance monitoring concepts.
+In this unit, we look at Application Performance Monitoring (APM) concepts.
 
 ## Continuos Monitoring
 
