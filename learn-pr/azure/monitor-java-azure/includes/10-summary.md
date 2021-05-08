@@ -24,7 +24,7 @@ az group delete --name <your Resource Group Name> --yes
 
 For more information on Azure Monitor, see [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
-For More information on Azure Spring Cloud, see [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
+For more information on Azure Spring Cloud, see [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
 
