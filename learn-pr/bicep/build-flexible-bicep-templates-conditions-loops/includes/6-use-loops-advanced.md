@@ -1,66 +1,59 @@
-Copy loops can be powerful mechanism that enables you to create flexible and reusable Bicep templates. To use all loops advantages, it is important to understand how you can control loops execution and how you can use nested loops. In this unit, you will learn how to control execution of copy loops and how to use nested loops in Bicep.
+Copy loops are a powerful feature that enables you to create dynamic and flexible templates. It's also important to understand how you can control the way that loops execute, and how to nest loops. In this unit, you will learn how to control the execution of copy loops and how to use nested loops in Bicep.
 
-## Controlling loop parallelism
+## Controlling loop execution
 
-When using copy loops, Resource Manager creates resources in parallel in non-deterministic order. When you created initial deployment in loops exercise in previous unit, both Azure SQL Servers were created in parallel. This optimizes deployment time as all resources in loop are being deployed at same time. In some cases however, you want to deploy resources in loop in sequence.
+By default, Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created the loops in the previous exercises, both of the SQL servers were created at the same time. This helps to reduce the overall deployment time, since all of the resources within the loop will be deployed at the same time. In some cases, however, you may need to deploy resources in loop sequentially instead of in parallel, or you can have small batches of changes be deployed together in parallel. For example, if you have lots of App Service apps in your production environment, you might want to only deploy changes to a small number at a time so you can avoid the updates restarting all of your apps at the same time.
 
-### Batch size decorator
+You can control the way your copy loops execute in Bicep by using the `@batchSize` decorator. Put the decorator on the resource or module declaration with the `for` keyword.
 
-In Bicep you can specify for your copy loops to be executed in sequence by using ```batchSize``` decorator. The decorator can be used on resource or module declaration where ```for``` keyword is used to declare copy loop. The decorator accepts one integer parameter with value equal or greater than 1.
+Let's look at an example Bicep definition for a set of App Service applications without the `@batchSize` decorator:
 
-When the decorator is specified the resources or modules part of the same declaration will be deployed sequentially in batches of the specified size. Each batch will be deployed concurrently. With serial mode, Resource Manager creates a dependency on earlier instances in the loop, so it doesn't start one batch until the previous batch completes. For purely sequential deployment, you set the batch size to 1.
+::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="3-6" :::
 
-The following example deploys 4 storage accounts 2 at a time:
+All of the resources in this loop will be deployed at the same time, in parallel:
 
-```bicep
-@batchSize(2)
-resource storageAccountResources 'Microsoft.Storage/storageAccounts@2021-01-01' = [for i in range(0,4): {
-  name: 'serialstorageaccount${i}'
-  location: resourceGroup().location
-  kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
-}]
-```
+:::image type="content" source="../media/6-batchSize-default.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 laid out vertically another." border="false":::
+
+Now let's apply the `@batchSize` decorator with a value of `2`:
+
+::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="2-6" highlight="1" :::
+
+When you deploy the template, Bicep will deploy in batches of two:
+
+:::image type="content" source="../media/6-batchSize-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 on top of one another, and app3 to the right." border="false":::
+
+> [!NOTE]
+> Bicep will wait for each batch to complete before moving onto the next batch. In the example above, if *app2* was deployed before *app1* completed, Bicep would still wait until *app1* completed its deployment before it started to deploy *app3*.
+<!-- TODO confirm the above -->
+
+You can also tell Bicep to execute the loop sequentially by setting the `@batchSize` to `1`:
+
+::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="1, 3-6" highlight="1" :::
+
+When you deploy the template, Bicep will wait for each resource deployment to complete before it starts the next one:
+
+:::image type="content" source="../media/6-batchSize-1.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 laid out horizontally." border="false":::
 
 ## Nested loops
 
-Some scenarios, such as deploying multiple child resources along with parent, require you to use loop inside another loop. Bicep supports nested loops.
+Some scenarios require you to use a loop inside another loop. These are *nested loops*, and Bicep enables you to do this.
 
-### Nested loops example
+In your toy company you need to deploy virtual networks in every country where toy will be launched. Every virtual network needs a different address space and two subnets. Let's start by deploying the virtual networks in a loop:
 
-In your toy company you need to deploy virtual networks in every country where toy will be launched. Every virtual network needs different address space and two subnets. In following example you can see how you could deploy required virtual networks using nested loops. This template would give you flexibility to add additional virtual networks and subnets in future.
+::: code language="plaintext" source="code/6-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
 
-Example below also demonstrates how you can create array property using a loop. In example ```subnets``` is a property of virtual network and it needs to be declared as an array. We use loop to create array with subnet configuration we need.
+This loop deploys the virtual networks for each location.
 
-```bicep
-param vnetLocations array = [
-  'westeurope'
-  'eastus2'
-  'eastasia'
-]
+Now we need to use a nested loop to deploy the subnets within each virtual network:
 
-var numberOfSubnets = 2
+::: code language="plaintext" source="code/6-nested.bicep" range="9-25" highlight="10-15" :::
 
-resource vnets 'Microsoft.Network/virtualNetworks@2020-11-01' = [for (location, i) in vnetLocations : {
-  name: 'vnet-${location}'
-  location: location
-  properties: {
-    addressSpace:{
-      addressPrefixes:[
-        '10.${i}.0.0/16'
-      ]
+The nested loop uses the `range()` function to create two subnets.
 
-    }
-    subnets: [for j in range(1, numberOfSubnets): {
-      name: 'subnet-${j}'
-      properties: {
-        addressPrefix: '10.${i}.${j}.0/24'
-      }
-    }]
-  }
-}]
-```
+When we deploy the template, we'll get the following virtual networks and subnets:
 
-Note that in example above there are two loops. First loop deploys virtual networks by iteration through location values provided in parameter ```vnetLocations```. Second loop is nested inside first loop and deploys required number of subnets in each virtual network as specified by variable ```numberOfSubnets```.
+| Virtual network name | Location     | Address prefix | Subnets                      |
+|----------------------|--------------|----------------|------------------------------|
+| `vnet-westeurope`    | `westeurope` | `10.0.0.0/16`  | `10.0.1.0/24`, `10.0.2.0/24` |
+| `vnet-eastus2`       | `eastus2`    | `10.1.0.0/16`  | `10.1.1.0/24`, `10.1.2.0/24` |
+| `vnet-eastasia`      | `eastasia`   | `10.2.0.0/16`  | `10.2.1.0/24`, `10.2.2.0/24` |

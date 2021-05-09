@@ -28,6 +28,9 @@ Sometimes you may need to loop to create a specific number of resources, and not
 
 When you use the `range()` function you specify its start value and the number of values you want to create. For example, if you wanted to create storage accounts with the names `sa0`, `sa1`, and `sa2`, you'd use the function `range(0,3)`.
 
+> [!TIP]
+> In this example, we've named the index variable `i`. This is the standard convention in Bicep. However, you can use any name you want.
+
 ## Access the iteration index
 
 Bicep allows you to iterate through arrays and also retrieve the index of the current element in the array. For example, let's say you wanted to create a SQL servers in each location specified by an array, but you want the names of the servers to just be `sqlserver-1`, `sqlserver-2`, etc. Here's some Bicep code that you could use to achieve this:
