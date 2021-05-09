@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.bicep-conditions-loops.exercise-loops-with-outputs
+title: Exercise - Use loops with outputs
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Use loops with outputs
+  description: Exercise where you will use loops with template outputs.
+  ms.date: 04/01/2021
+  author: akasnik
+  ms.author: akasnik
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-exercise-loops-with-outputs.md)]
