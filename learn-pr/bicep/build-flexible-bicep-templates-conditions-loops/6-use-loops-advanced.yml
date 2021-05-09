@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.use-loops-advanced
-title: Copy loops advanced concepts
+title: Nest and control loops
 metadata:
   unitType: learning-content
-  title: Copy loops advanced concepts
+  title: Nest and control loops
   description: Learn how to use advanced loop concepts to deploy resources with controlling parallelism and using nested loops.
   ms.date: 05/09/2021
   author: akasnik

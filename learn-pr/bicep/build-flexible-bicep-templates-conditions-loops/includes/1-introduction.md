@@ -20,4 +20,4 @@ In this module, you'll extend Bicep template with conditions and loops. You'll:
 
 ## What is the main goal?
 
-By the end of this module you'll be able to create advanced Bicep templates by using conditions and loops. You'll be able to write Bicep code that controls how loops are executed, and you'll be able to create variable loops and output loops to make your templates even more flexible.
+By the end of this module you'll be able to create advanced Bicep templates by using conditions and loops. You'll be able to write Bicep code that configures how loops are executed, and you'll be able to create variable loops and output loops to make your templates even more flexible, and to control how your Azure resources are deployed.

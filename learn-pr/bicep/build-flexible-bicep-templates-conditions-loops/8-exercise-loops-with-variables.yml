@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.exercise-loops-with-variables
-title: Exercise - Use loops with variables
+title: Exercise - Use variable loops
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Use loops with variables
+  title: Exercise - Use variable loops
   description: Exercise where you will use loops with template variables.
   ms.date: 05/09/2021
   author: akasnik

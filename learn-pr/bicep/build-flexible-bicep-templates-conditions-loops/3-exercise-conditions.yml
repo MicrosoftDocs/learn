@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.exercise-conditions
-title: Exercise - Conditionally deploying resources
+title: Exercise - Conditionally deploy resources
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Conditionally deploying resources
+  title: Exercise - Conditionally deploy resources
   description: Exercise where you will use conditions to conditionally deploy resources
   ms.date: 05/09/2021
   author: akasnik
