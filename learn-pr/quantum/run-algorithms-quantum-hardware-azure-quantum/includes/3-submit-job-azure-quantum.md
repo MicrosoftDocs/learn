@@ -10,7 +10,7 @@ In this unit, you learn how to submit a job to Azure Quantum.
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest/?azure-portal=true) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -39,7 +39,7 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    - **Region**: The region for the workspace.
    - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
 
-   :::image type="content" source="../media/3-azure-quantum-preview-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
+   :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
