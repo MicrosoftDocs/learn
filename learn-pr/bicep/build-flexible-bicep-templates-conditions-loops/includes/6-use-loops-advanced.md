@@ -1,13 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
 Copy loops can be powerful mechanism that enables you to create flexible and reusable Bicep templates. To use all loops advantages, it is important to understand how you can control loops execution and how you can use nested loops. In this unit, you will learn how to control execution of copy loops and how to use nested loops in Bicep.
 
 ## Controlling loop parallelism
