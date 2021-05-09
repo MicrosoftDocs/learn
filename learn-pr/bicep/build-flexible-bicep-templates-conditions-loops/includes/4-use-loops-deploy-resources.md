@@ -1,110 +1,47 @@
-Often you need to deploy multiple instances of resources. By adding copy loops to Bicep templates, you can avoid having to repeat multiple resource definitions for each instance and dynamically set number of instances to deploy.
+Often you need to deploy multiple resources that are very similar. By adding copy loops to your Bicep files, you can avoid having to create multiple resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy, and you can even customize the properties for each instance.
 
-For your toy company, you need to deploy backend infrastructure, including Azure SQL Server to support launch of new toy. Each country where toy is going to be available, needs to have a dedicated Azure SQL Server. Azure SQL Server needs to be physically located in same country or compliant Azure region to follow data protection laws. You want to use flexible Bicep template for deployment. Template should allow you to specify in which regions to deploy Azure SQL Servers using deployment parameters.
+For your toy company, you need to deploy backend infrastructure, including some SQL server, to support launch of the new smart teddy bear. You need to deploy a dedicated SQL server into each country where the toy is going to be available, so that you can comply with data protection laws for each country. Apart from their locations, each server will be configured the same way as all the other servers. You want to use Bicep code to deploy your servers, and a parameter should allow you to specify the regions into which the SQL servers should be deployed.
 
 In this unit, you will learn how to deploy multiple instances of resources by using _copy loops_.
 
-## Copy loop
+## Use copy loops
 
-When you define resource in Bicep template, you can use ```for``` keyword in the resource declaration, followed by iteration properties. Typically you would iterate over an array of objects to create multiple instances of resource. The following example deploys multiple storage accounts with their names specified as parameter values.
+When you define a resource in Bicep template, you can use the `for` keyword. Place the `for` keyword in the resource declaration, and then specify how you want Bicep to identify each item in the loop. Typically you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
 
-```bicep
-param storageAccounts array = [
-  'saauditus'
-  'saauditeurope'
-  'saauditapac'
-]
+::: code language="plaintext" source="code/3-loop-simple.bicep" highlight="7-8" :::
 
-resource storageAccountResources 'Microsoft.Storage/storageAccounts@2021-01-01' = [for storageName in storageAccounts: {
-  name: storageName
-  location: resourceGroup().location
-  kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
-}]
-```
+In the example above, the loop iterates through each item in the `storageAccountNames` array. Each time Bicep goes through the loop, it puts the current value into a special variable called `storageAccountName`, and this is used as the value of the `name` property. Notice that Bicep requires you put an opening `[` character before the `for` keyword, and a closing `]` character after the resource definition.
 
-In example above, copy loop would iterate through each item in array. Result would be three storage accounts, each deployed with name specified by corresponding item in array.
+If you deployed this Bicep file you'd see three storage accounts created, with the names specified by the corresponding items in the `storageAccountNames` array.
 
 > [!TIP]
-> You can use copy loops on *resource* as well as on *module* declaration.
+> You can also use copy loops with modules.
 
 > [!NOTE]
-   > Number of iterations in copy loop is limited to 800. Therefore you cannot iterate through array that has more than 800 elements when using copy loop.
+> You can have a loop that will go up to 800 iterations.
 
-## Resource iteration by index
+## Loop based on a count
 
-In some situations, you may want to use index-based loop definition. To implement it in Bicep template, you can use ```range()``` function. To use index-based loop, you would use range function in the following way:
+Sometimes you may need to loop to create a specific number of resources, and not use an array as the source. Bice provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts named `sa1` through `sa4`, you could use a resource definition like this:
 
-```bicep
-resource storageAccountResources 'Microsoft.Storage/storageAccounts@2021-01-01' = [for i in range(0,3): {
-  name: 'sa${i}'
-  location: resourceGroup().location
-  kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
-}]
-```
+::: code language="plaintext" source="code/3-loop-range.bicep" highlight="1" :::
 
-As ```range(startIndex, count)``` function takes two parameters and returns an array of integers, above example would deploy three storage accounts with names ```sa0```, ```sa1``` and ```sa2```.
+When you use the `range()` function you specify its start value and the number of values you want to create. For example, if you wanted to create storage accounts with the names `sa0`, `sa1`, and `sa2`, you'd use the function `range(0,3)`.
 
-Bicep allows you to iterate through array resources and retrieve index of element in array while running copy loops. In example below you use array ```sqlLocations``` to define locations where you want to deploy Azure SQL Servers and you use index ```i``` to generate sequential name for each Azure SQL Server deployed. Note that index is zero based, so you add ```+1``` to index value when generating name. as you want SQL Server names to start with number one.
+## Access the iteration index
 
-```bicep
-param sqlLocations array = [
-  'westeurope'
-  'eastus2'
-  'eastasia'
-]
+Bicep allows you to iterate through arrays and also retrieve the index of the current element in the array. For example, let's say you wanted to create a SQL servers in each location specified by an array, but you want the names of the servers to just be `sqlserver-1`, `sqlserver-2`, etc. Here's some Bicep code that you could use to achieve this:
 
-resource sqlServerResources 'Microsoft.Sql/servers@2020-11-01-preview' = [for (sqlLocation, i) in sqlLocations: {
-  name: 'sqlserver-${i+1}'
-  location: sqlLocation
-  properties: {
-    administratorLogin: administratorLogin
-    administratorLoginPassword: administratorLoginPassword
-  }
-}]
-```
+::: code language="plaintext" source="code/3-loop-index.bicep" highlight="7-8" :::
 
-## Filter iterations in loops
+Notice that the `name` property includes the expression `i+1`. The first value of the `i` index variable is zero, so you need to add one to it if you want your server names to start with `1`.
 
-When building flexible Bicep templates, you may come in situation where you would want to use copy loops together with condition to deploy resource. Similarly as you added condition to deploy resources in previous Learn units, you can use condition with copy loops. You can do that by adding ```if``` keyword following loop declaration with ```for``` keyword. 
+## Filter items with loops
 
-In following example, you use array of objects as parameter to define couple of SQL Server properties for deployment. You use condition inside copy loop to deploy only SQL Servers where ```environment``` property of object in array equals ```Production```.
+You may come across situations where you would want to use copy loops together with conditions to deploy resources. You can do this by combining the `if` keyword and `for` keywords.
 
-```bicep
-param sqlServers array = [
-  {
-    sqlname: 'sqlserver-we'
-    location: 'westeurope'
-    environment: 'Production'
-  }
-  {
-    sqlname: 'sqlserver-eus2'
-    location: 'eastus2'
-    environment: 'Development'
-  }
-  {
-    sqlname: 'sqlserver-eas'
-    location: 'eastasia'
-    environment: 'Production'
-  }
-]
+In the following example, an array parameter is used to define a set of SQL servers. A condition is used with the copy loop to only deploy SQL servers when the `environment` property of the loop object equals `Production`:
 
-resource sqlServerResources 'Microsoft.Sql/servers@2020-11-01-preview' = [for sqlserver in sqlServers: if (sqlserver.environment == 'Production') {
-  name: sqlserver.sqlname
-  location: sqlserver.location
-  properties: {
-    administratorLogin: administratorLogin
-    administratorLoginPassword: administratorLoginPassword
-  }
-  tags:{
-    environment: sqlserver.environment
-  }
-}]
-```
+::: code language="plaintext" source="code/3-loop-condition.bicep" highlight="19" :::
 
-Above example would deploy SQL Servers named ```sqlserver-we``` and ```sqlserver-eas```, as only objects with those names in array have ```environment``` values matching ```Production```.
+If you deploy the example above, you'd see two SQL servers created named `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2` since that object's `environment` property didn't match `Production`.

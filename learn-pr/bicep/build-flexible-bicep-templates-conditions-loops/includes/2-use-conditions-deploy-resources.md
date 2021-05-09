@@ -10,7 +10,7 @@ When you deploy a resource in Bicep, you can provide the `if` keyword followed b
 
 It's common to create conditions based on the values of parameters that you provide. The following example deploys a storage account only when the `deployStorageAccount` parameter is set to `true`:
 
-::: code language="plaintext" source="code/2-simple-condition.bicep" highlight="3" :::
+::: code language="plaintext" source="code/2-conditional-simple.bicep" highlight="3" :::
 
 Notice that the `if` keyword is on the same line as the resource definition.
 
@@ -20,7 +20,7 @@ The example above was quite simple. The `deployStorageAccount` parameter was of 
 
 In Bicep you are also able to use expressions as condition evaluation. The following example only deploys a SQL auditing resource when the `environmentName` parameter value is equal to `Production`:
 
-::: code language="plaintext" source="code/2-expression-condition.bicep" range="1-5, 19-23, 27-28" highlight="7" :::
+::: code language="plaintext" source="code/2-conditional-expression.bicep" range="1-5, 19-23, 27-28" highlight="7" :::
 
 ## Depend on conditionally deployed resources
 
@@ -28,11 +28,11 @@ When resources are deployed conditionally, you sometimes need to be aware of how
 
 Let's continue writing our Bicep code to deploy SQL auditing settings. The Bicep file also need to declare a storage account resource:
 
-::: code language="plaintext" source="code/2-expression-condition.bicep" range="1-23, 27-28" highlight="11-18" :::
+::: code language="plaintext" source="code/2-conditional-expression.bicep" range="1-23, 27-28" highlight="11-18" :::
 
 Notice that the storage account has a condition too. This means it won't be deployed for non-production environments either. The SQL server auditing settings resource can now refer to the storage account's details:
 
-::: code language="plaintext" source="code/2-expression-condition.bicep" range="20-28" highlight="6-7" :::
+::: code language="plaintext" source="code/2-conditional-expression.bicep" range="20-28" highlight="6-7" :::
 
 Notice that this Bicep code uses the `?` operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions will be evaluated to the details from the storage account. When it's deployed to a non-production environment, the expressions evaluate to an empty string (``).
 
