@@ -23,8 +23,7 @@ When you deploy the template, Bicep will deploy in batches of two:
 :::image type="content" source="../media/6-batchSize-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 on top of one another, and app3 to the right." border="false":::
 
 > [!NOTE]
-> Bicep will wait for each batch to complete before moving onto the next batch. In the example above, if *app2* was deployed before *app1* completed, Bicep would still wait until *app1* completed its deployment before it started to deploy *app3*.
-<!-- TODO confirm the above -->
+> Bicep will wait for each batch to complete before moving onto the next batch. In the example above, if *app2* finished deploying before *app1*, Bicep would still wait until *app1* completed its deployment before it started to deploy *app3*.
 
 You can also tell Bicep to execute the loop sequentially by setting the `@batchSize` to `1`:
 
@@ -34,23 +33,31 @@ When you deploy the template, Bicep will wait for each resource deployment to co
 
 :::image type="content" source="../media/6-batchSize-1.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 laid out horizontally." border="false":::
 
+## Use loops with resource properties
+
+You can use loops to help set resource properties. For example, when you deploy a virtual network, you need to specify its subnets. A subnet has to have two pieces of information: a name and an address prefix. You can use a parameter with an array of objects so that you can specify different subnets for each environment:
+
+::: code language="plaintext" source="code/6-loop-property.bicep" highlight="15-20" :::
+
+Notice that in this example, the `for` loop appears within the resource definition, around the `subnets` property value.
+
 ## Nested loops
 
 Some scenarios require you to use a loop inside another loop. These are *nested loops*, and Bicep enables you to do this.
 
 In your toy company you need to deploy virtual networks in every country where toy will be launched. Every virtual network needs a different address space and two subnets. Let's start by deploying the virtual networks in a loop:
 
-::: code language="plaintext" source="code/6-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
+::: code language="plaintext" source="code/6-loop-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
 
-This loop deploys the virtual networks for each location.
+This loop deploys the virtual networks for each location, and it sets the `addressPrefix` for the virtual network by using the loop index to ensure each virtual network gets a different address prefix.
 
-Now we need to use a nested loop to deploy the subnets within each virtual network:
+You can use a nested loop to deploy the subnets within each virtual network:
 
-::: code language="plaintext" source="code/6-nested.bicep" range="9-25" highlight="10-15" :::
+::: code language="plaintext" source="code/6-loop-nested.bicep" range="9-25" highlight="10-15" :::
 
 The nested loop uses the `range()` function to create two subnets.
 
-When we deploy the template, we'll get the following virtual networks and subnets:
+When you deploy the template, you get the following virtual networks and subnets:
 
 | Virtual network name | Location     | Address prefix | Subnets                      |
 |----------------------|--------------|----------------|------------------------------|

@@ -4,10 +4,6 @@ In your toy company, you need to deploy virtual networks with same subnet config
 
 In this unit, you'll learn how you can use loops with variables and outputs.
 
-## Property loops
-
-TODO
-https://github.com/Azure/bicep/blob/main/docs/spec/loops.md#generate-an-array-property-using-a-loop
 
 ## Variable loops
 
