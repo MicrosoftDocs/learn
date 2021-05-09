@@ -8,5 +8,5 @@ Without conditions and copy loops, you would need to maintain and use multiple v
 
 ## References
 
-- [Conditional deployment in templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/conditional-resource-deployment?tabs=bicep)
-- [Resource iteration in templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/copy-resources?tabs=bicep)
+- [Conditional deployment in templates](/azure/azure-resource-manager/templates/conditional-resource-deployment?tabs=bicep)
+- [Resource iteration in templates](/azure/azure-resource-manager/templates/copy-resources?tabs=bicep)

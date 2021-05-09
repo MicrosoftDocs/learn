@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploying multiple resources using loops
   description: Exercise where you will use loops to deploy multiple instances of resource
-  ms.date: 04/01/2021
+  ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik
   ms.topic: interactive-tutorial # do we need ms.topic?
