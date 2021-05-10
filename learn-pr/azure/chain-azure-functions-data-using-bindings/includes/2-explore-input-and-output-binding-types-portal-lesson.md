@@ -14,9 +14,9 @@ In Azure Functions, bindings provide a declarative way to connect to data from w
 
 There are two kinds of bindings you can use with functions:
 
-1. **Input binding** - Connects to a data **source**. Our function can read data from these inputs.
+- **Input binding** - Connects to a data **source**. Our function can read data from these inputs.
 
-1. **Output binding** - Connects to a data **destination**. Our function can write data to these destinations.
+- **Output binding** - Connects to a data **destination**. Our function can write data to these destinations.
 
 There are also _triggers_, which are special types of input bindings that cause a function to run. For example, an Azure Event Grid notification can be configured as a trigger. When an event occurs, the function will run.
 

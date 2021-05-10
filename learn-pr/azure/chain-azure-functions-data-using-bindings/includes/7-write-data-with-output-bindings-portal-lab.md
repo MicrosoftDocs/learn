@@ -63,7 +63,7 @@ Let's repeat what we did in the preceding unit to add an Azure Cosmos DB input b
 
 1. To open the **Connection** window, where you will enter the settings for the new connection, under the **Cosmos DB account connection** dropdown list, select the **New** link.
 
-You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
+    You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
 1. In the **Document ID** field, enter `id`.
 
