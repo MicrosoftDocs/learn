@@ -3,10 +3,10 @@ uid: learn.introduction-to-azure-netapp-files # Do not edit: uid must be globall
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure NetApp Files          # Do not edit: title must be "Introduction to <product>"
-  description: ""                 # Copy your 'evaluate' Learning Objective here (see below)
+  description: Evaluate whether Azure NetApp Files is appropriate to                 # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 5/10/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: {{githubUsername}}      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: {{msUser}}           # Alias     of the Microsoft employee either authoring or project-managing this content
+  author: paulwp      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: v-pmcfedries           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
 ###########################################################################
 ###
@@ -36,7 +36,7 @@ title: Introduction to Azure NetApp Files
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "Describe how..."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,8 +63,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether <product> is appropriate to <general product use case>.
-    - Describe how <features> of <product> work to <solve problem>.
+    - Evaluate whether Azure NetApp Files is appropriate to -general product use case-.
+    - Describe how -features- of Azure NetApp Files work to <solve problem>.
 ###########################################################################
 ###
 ### Prerequisites
@@ -87,8 +87,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
+  - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
+  - Basic knowledge of WIndows and Linux file systems, including SMB and NFS.
   - # prerequisite 3
 ###########################################################################
 ###
@@ -107,26 +107,27 @@ levels:
 ### Use exact value(s) from the role taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#role)
 ###
 roles:
-  - # role 1
-  - # role 2
+  - database-administrator
+  - data-scientist
+  - solution-architect
 ###########################################################################
 ###
 ### Specify the covered product.
 ### Use the exact value from the product taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#product)
 ###
 products:
-  {{products}}
+  - azure-netapp-files
 ###########################################################################
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
 units:
-- learn.introduction-to-azure-netapp-files.introduction
-- learn.introduction-to-azure-netapp-files.what-is-{product}
-- learn.introduction-to-azure-netapp-files.how-{product}-works
-- learn.introduction-to-azure-netapp-files.when-to-use-{product}
-- learn.introduction-to-azure-netapp-files.knowledge-check
-- learn.introduction-to-azure-netapp-files.summary
+- learn.introduction-to-azure-netapp-files.1-introduction
+- learn.introduction-to-azure-netapp-files.2-what-is-azure-netapp-files
+- learn.introduction-to-azure-netapp-files.3-how-azure-netapp-files-works
+- learn.introduction-to-azure-netapp-files.4-when-to-use-azure-netapp-files
+- learn.introduction-to-azure-netapp-files.5-knowledge-check
+- learn.introduction-to-azure-netapp-files.6-summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
