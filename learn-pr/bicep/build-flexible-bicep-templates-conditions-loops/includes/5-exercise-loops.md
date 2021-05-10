@@ -1,11 +1,12 @@
-For your toy company, you need to deploy multiple Azure SQL Server resources to support new toy launch. You need to follow requirement, that each country where toy is launched, needs dedicated Azure SQL Server deployed in same country or compliant Azure region. In this exercise you will create flexible Bicep template, which will enable you to specify locations where Azure SQL Server is deployed by using parameters.
+So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environments. You now need to deploy multiple SQL servers so that you can have one in each region your company is launching its new smart teddy bear. In this exercise you will extend the Bicep code you previously created to deploy instances of your databases in multiple Azure regions.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template with a copy loop to deploy Azure SQL Servers resources as specified by parameter value.
-> * Deploy Bicep template and verify deployment of Azure SQL Server resources.
-> * Modify parameter values to add additional location, redeploy template and verify new Azure SQL Server resource deployed.
+> * Move your existing Bicep code into a module.
+> * Create a new Bicep file with a copy loop to deploy the module's resources multiple times.
+> * Deploy the Bicep file, and verify the deployment of the resources.
+> * Modify the parameter to add an additional location, then redeploy the file and verify that the new resources have been deployed.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 

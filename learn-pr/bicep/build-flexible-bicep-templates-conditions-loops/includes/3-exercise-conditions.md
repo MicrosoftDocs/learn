@@ -18,25 +18,37 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
 
-   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 27-29, 31-46" :::
+   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 28-29, 33-47" :::
 
    Notice that all of the parameters include `@description` decorators, which helps to make them easier to work with. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure will avoid saving these values to logs.
 
-## Add a storage account and auditing settings
+## Add a storage account
+
+Auditing settings for SQL servers need to specify a storage account to contain the auditing data. You'll update your Bicep file to create this storage account, but only when auditing is going to be enabled.
 
 1. Below the parameter declarations, add the following parameters:
 
    ::: code language="bicep" source="code/3-template.bicep" range="18-26" :::
 
+1. Under the variable declarations, add the following two variables:
+
+   ::: code language="bicep" source="code/3-template.bicep" range="30-31" :::
+
+   Notice you're creating a variable called `auditingEnabled`, which you'll use as the condition for deploying the auditing resources. Creating a variable like this makes your Bicep code clearer and easier to read, since anyone who looks at the conditions on your resources will understand what's happening.
+
+   Also, notice that the `sqlServerName` variable uses a function called `take()`. Storage account names have a maximum length of 24 characters, so this function trims the end off the string to make sure the name is valid.
+
 1. At the bottom of the file, below the resources, add the following resource definition for the storage account:
 
-   ::: code language="bicep" source="code/3-template.bicep" range="48-55" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="49-56" :::
 
    Notice that the definitions for the storage account includes the `if` keyword to specify a deployment condition.
 
+## Add auditing settings
+
 1. Underneath the storage account resource you just added, add the following:
 
-   ::: code language="bicep" source="code/3-template.bicep" range="57-65" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="58-66" :::
 
    Notice that the definition includes the same `if` condition as the storage account. Also, the `storageEndpoint` and `storageAccountAccessKey` properties use the `?` ternary operator to ensure their values are always valid. If you didn't do this, Resource Manager would evaluate the expression values before evaluating the resource deployment condition, and it will return an error since the storage account can't be found.
 

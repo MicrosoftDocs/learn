@@ -27,6 +27,7 @@ param auditStorageAccountSkuName string = 'Standard_LRS'
 
 var sqlServerName = 'toy${location}${uniqueString(resourceGroup().id)}'
 var sqlDatabaseName = 'TeddyBear'
+var auditingEnabled = environmentName == 'Production'
 var auditStorageAccountName = '${take('toyaudit${location}${uniqueString(resourceGroup().id)}', 24)}'
 
 resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
@@ -45,7 +46,7 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
   sku: sqlDatabaseSku
 }
 
-resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if (environmentName == 'Production') {
+resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if (auditingEnabled) {
   name: auditStorageAccountName
   location: location
   sku: {
@@ -54,7 +55,7 @@ resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if
   kind: 'StorageV2'  
 }
 
-resource sqlServerAudit 'Microsoft.Sql/servers/auditingSettings@2020-11-01-preview' = if (environmentName == 'Production') {
+resource sqlServerAudit 'Microsoft.Sql/servers/auditingSettings@2020-11-01-preview' = if (auditingEnabled) {
   parent: sqlServer
   name: 'default'
   properties: {
