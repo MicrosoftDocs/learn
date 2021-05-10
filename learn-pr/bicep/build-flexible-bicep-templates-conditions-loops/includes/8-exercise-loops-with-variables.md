@@ -1,53 +1,64 @@
-For your toy company, you need to deploy virtual networks in each Azure region you're using. You need flexibility to have different subnets for each virtual network. You want to specify subnet configuration by using Bicep parameters.
-
-During exercise you'll:
+For your toy company, you need to deploy virtual networks in each country you're launching the teddy bear into. Also, your developers have asked you to give them the fully qualified domain names (FQDNs) of each of the regional SQL servers you've deployed. In this exercise you'll add the virtual network and its configuration into your Bicep code, and you'll output the SQL server FQDNs. During this exercise you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template with parameter for subnet configuration and variable loop to create subnet array used in virtual network resource declaration
-> * Deploy Bicep template and verify virtual network deployment.
-> * Update parameter for subnet configuration, redeploy template and observe changes to virtual network.
+> * Update your Bicep code to specify a parameter for the virtual network's subnets.
+> * Add a variable loop to create a subnet array, which you'll use in the virtual network resource declaration.
+> * Add an output loop to create the list of SQL server FQDNs.
+> * Deploy the Bicep file and verify the deployment.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Create a Bicep template with parameters, variables and resources to deploy virtual network
+## Add the virtual network into your Bicep file
 
-1. Open Visual Studio Code, and create a new file called *vnet.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
-1. Add the following content into the file.
-  
+1. Open the *main.bicep* file.
+
+1. Below the parameter declarations, add the following parameters:
+
+   ::: code language="bicep" source="code/8-template.bicep" range="15-28" :::
+
+1. Below the parameters, add a blank line and then add the `subnetProperties` variable loop:
+
+   ::: code language="bicep" source="code/8-template.bicep" range="30-35" :::
+
+1. At the bottom of the file, underneath the `databases` module loop, add the following resource loop:
+
+   ::: code language="bicep" source="code/8-template.bicep" range="46-57" :::
+
+   <!-- TODO mention that normally you wouldn't create overlapping VNet address space, but in this case it's ok -->
+
+   When you're finished, your *main.bicep* file should look like this:
+
+   ::: code language="plaintext" source="code/8-template.bicep" highlight="15-35, 46-57" :::
+
+1. Save the changes to the file.
+
+## Add outputs to the database module
+
+1. Open the *modules/database.bicep* file.
+
+1. Add the following outputs to the bottom of the file:
+
    ```bicep
-    param subnetDefinitions array = [
-      {
-        name: 'application'
-        iprange: '10.10.5.0/24'
-      }
-      {
-        name: 'database'
-        iprange: '10.10.10.0/24'
-      }
-    ]
-    
-    var subnets = [for subnet in subnetDefinitions: {
-      name: subnet.name
-      properties: {
-        addressPrefix: subnet.iprange
-      }
-    }]
-    
-    resource vnet 'Microsoft.Network/virtualNetworks@2020-11-01' = {
-      name: 'vnet'
-      location: resourceGroup().location
-      properties:{
-        addressSpace:{
-          addressPrefixes:[
-            '10.10.0.0/16'
-          ]
-        }
-        subnets: subnets
-      }
-    }
+   output serverName string = sqlServer.name
+   output location string = location
+   output serverFullyQualifiedDomainName string = sqlServer.properties.fullyQualifiedDomainName
    ```
 
-    Notice that within Bicep definition for variable in line 11 you used variable loop with ```for``` keyword that iterates through parameter ```subnetDefinitions``` array.
+1. Save the changes to the file.
+
+## Flow the outputs through the parent Bicep file
+
+1. Open the *main.bicep* file.
+
+1. At the bottom fo the file, add the following output loop:
+
+   ```bicep
+   output serverInfo array = [for i in range(0, length(locations)): {
+     name: databases[i].outputs.serverName
+     location: databases[i].outputs.location
+     fullyQualifiedDomainName: databases[i].outputs.serverFullyQualifiedDomainName
+   }]
+   ```
 
 1. Save the changes to the file.
 
@@ -88,58 +99,3 @@ After deployment is finished, you want to verify that new virtual network is dep
 1. Verify that deployed subnets have names and IP addresses that were specified in parameter ```subnetDefinitions``` default value.
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
-
-1. Leave the page open in your browser. You'll check on deployments again later.
-
-## Update subnet configuration parameter and redeploy the template to Azure
-
-You deployed virtual network with two subnets, now you want to add additional subnet to your virtual network.
-
-1. Return to Visual Studio Code and in the *vnet.bicep* file add additional subnet configuration to default values of parameter ```subnetDefinitions```.
-
-   ```bicep
-    param subnetDefinitions array = [
-      {
-        name: 'frontend'
-        iprange: '10.10.0.0/24'
-      }
-      {
-        name: 'application'
-        iprange: '10.10.5.0/24'
-      }
-      {
-        name: 'database'
-        iprange: '10.10.10.0/24'
-      }
-    ]
-    ```
-
-1. Save the changes to the file.
-
-1. Redeploy template by running following code from the terminal in Visual Studio Code and wait for deployment to finish.
-
-::: zone pivot="cli"
-
-```azurecli
-az deployment group create --template-file vnet.bicep
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile vnet.bicep
-```
-
-::: zone-end
-
-## Verify the redeployment
-
-With redeployment of updated Bicep template finished you want to verify that additional subnet was created in virtual network ```vnet```.
-
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true), select **<rgn>[sandbox resource group name]</rgn>** Resource Group and select ```vnet``` virtual network. Select Subnets under Settings category in left menu. In case are already in subnet section of virtual network you can just select Refresh from Subnet menu.
-
-1. Verify new subnet is deployed to virtual network.
-
-    :::image type="content" source="../media/8-varloop-redeployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after redeployment." border="true":::

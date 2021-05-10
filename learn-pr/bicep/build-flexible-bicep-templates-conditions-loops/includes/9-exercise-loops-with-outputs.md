@@ -1,13 +1,3 @@
-For your toy company, you deployed Azure SQL Servers in regions where new toy is going to launch. After deployment you need to display properties, such as fully qualified domain name of each Azure SQL Server that was deployed with application developers. You will use output loops to display properties after successful deployment.
-
-During exercise you'll:
-
-> [!div class="checklist"]
-> * Update existing Bicep template with adding output loop.
-> * Deploy Bicep template and verify output.
-
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Update existing Bicep template with output loop
 
 1. Open Visual Studio Code, and create a open file called *database-loop.bicep* that you created in one of previous exercises. 
