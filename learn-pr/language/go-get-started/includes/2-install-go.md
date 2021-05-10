@@ -237,4 +237,3 @@ You can study more about Go by visiting the official documentation site, [How to
 [GoDownload]: https://golang.org/dl/?azure-portal=true
 [GoLatest]: https://golang.org/doc/devel/release.html?azure-portal=true
 [GoPlay]: https://play.golang.org/?azure-portal=true
-[Homebrew]: https://brew.sh/?azure-portal=true
