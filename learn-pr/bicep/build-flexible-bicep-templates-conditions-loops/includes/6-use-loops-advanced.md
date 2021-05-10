@@ -8,7 +8,7 @@ You can control the way your copy loops execute in Bicep by using the `@batchSiz
 
 Let's look at an example Bicep definition for a set of App Service applications without the `@batchSize` decorator:
 
-::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="3-6" :::
+::: code language="bicep" source="code/6-loop-batchSize.bicep" range="3-6" :::
 
 All of the resources in this loop will be deployed at the same time, in parallel:
 

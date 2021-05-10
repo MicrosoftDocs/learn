@@ -22,61 +22,19 @@ This example illustrates a good use for variable loops: turning a parameter that
 
 ## Output loops
 
-<!-- TODO below -->
+Bicep outputs enable you to provide information from your deployments back to the user or tool that started the deployment. Output loops give you the flexibility and power of loops within your outputs.
 
-When you are creating templates where you want flexibility by specifying number of resources that you will need to deploy, you need same flexibility also when you need to provide information on deployed resources through template outputs. In such scenarios, you can use output loops.
+Like other loops, you use the `for` keyword to specify an output loop:
 
-You can create output loop by using ```for``` keyword within output declaration.
+::: code language="plaintext" source="code/7-loop-output-simple.bicep" highlight="9" :::
 
-```bicep
-var items = [
-  'item1'
-  'item2'
-  'item3'
-  'item4'
-  'item5'
-]
+Typically you'll use output loops in conjunction with other loops within your template. For example, let's look at a Bicep file that deploys a set of storage accounts into Azure regions specified by the `locations` parameter:
 
-output out array = [for i in range(0, length(items)): items[i]]
-```
+::: code language="bicep" source="code/7-loop-output-simple.bicep" range="1-14" :::
 
-Running example above would return an output with the following values:
-
-```json
-[
-  "item1",
-  "item2",
-  "item3",
-  "item4",
-  "item5"
-]
-```
+You'll probably need to return information about each storage account that's been created, like its name and the endpoints that can be used to access it. By using an output loop, you can retrieve this information within your Bicep file.
 
 > [!NOTE]
-   > Directly referencing a resource module or module collection is not currently supported in output loops. In order to loop outputs you need to apply an array indexer to the expression.
+> Currently, Bicep doesn't support directly referencing resources that have been created within a loop from within an output loop. This means that you need to use array indexers to access resources, like in the example below.
 
-Typically you would use output loops when you need to provide properties for multiple instances of resources that you declared in your template. In case you'd be deploying multiple storage accounts and you need to provide some properties as output, you could use output loops as in example below.
-
-```bicep
-param regions array = [
-  'westeurope'
-  'eastus2'
-  'eastasia'
-]
-
-resource storageAccounts 'Microsoft.Storage/storageAccounts@2021-01-01' = [for region in regions: {
-  name: take('toyloop${region}${uniqueString(resourceGroup().id)}', 24)
-  location: resourceGroup().location
-  kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
-}]
-
-output storageInfo array = [for i in range(0, length(regions)): {
-  blobEndpoint: storageAccounts[i].properties.primaryEndpoints.blob
-  fileEndpoint: storageAccounts[i].properties.primaryEndpoints.file
-}]
-```
-
-After deploying example above, you would get output with information on blob and file endpoints of all storage accounts, which would be deployed.
+::: code language="bicep" source="code/7-loop-output-simple.bicep" range="16-21" :::
