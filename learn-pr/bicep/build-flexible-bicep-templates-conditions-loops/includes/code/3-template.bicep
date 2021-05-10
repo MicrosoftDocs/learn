@@ -1,5 +1,5 @@
 @description('The Azure region into which the resources should be deployed.')
-param location string = 'eastus'
+param location string
 
 @secure()
 @description('The administrator login username for the SQL server.')

@@ -1,46 +1,42 @@
 [!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
 
-For your toy company, you need to deploy resources to different type of environments. You want to use parameters and conditions to control what gets deployed to different environments. In this exercise, you'll create an Azure SQL database. You will add auditing settings to ensure auditing is enabled only when deploying to 'Production' environment. For auditing you need a storage account which you will deploy conditionally only when deploying to 'Production' environment.
+For your toy company, you need to deploy resources to different type of environments. You want to use parameters and conditions to control what gets deployed to different environments. In this exercise, you'll create an Azure SQL server and database. You'll then add auditing settings to ensure that auditing is enabled - but only when you're deploying to a production environment. For auditing you need to have a storage account, which you will also deploy only when you're deploying to a production environment.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a template that defines an Azure SQL Server with Database and storage account for auditing which is deployed with conditions.
-> * Provision your infrastructure as 'Development' environment and verify the result.
-> * Redeploy infrastructure with changed parameter as 'Production' environment and observe changes.
+> * Create a Bicep file that defines a SQL server with a database.
+> * Add a storage account and audit settings, both of which are deployed with a condition.
+> * Provision your infrastructure for your development environment and verify the result.
+> * Redeploy your infrastructure against your production environment and look at the changes.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
 ## Create a Bicep template with SQL server and database
 
-<!-- TODO mention that we'll eventually create multiple servers, but for now you've decided to just create a single server -->
-
 1. Open Visual Studio Code, and create a new file called *database.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
 
-   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 31-48" :::
+   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 27-29, 31-46" :::
 
-   There are a few things to note about what you've just entered:
-   - The parameters include `@description` decorators.
-   - The `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator, which tells Bicep that these parameter values are sensitive. Azure will avoid saving these values to logs.
-   - The `sqlServerName` variable uses a function called `take()`. Storage account names have a maximum length of 24 characters, so this function trims the end off the string to make sure the name is valid.
+   Notice that all of the parameters include `@description` decorators, which helps to make them easier to work with. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure will avoid saving these values to logs.
 
 ## Add a storage account and auditing settings
 
 1. Below the parameter declarations, add the following parameters:
 
-   ::: code language="bicep" source="code/3-template.bicep" range="18-29" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="18-26" :::
 
 1. At the bottom of the file, below the resources, add the following resource definition for the storage account:
 
-   ::: code language="bicep" source="code/3-template.bicep" range="50-57" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="48-55" :::
 
    Notice that the definitions for the storage account includes the `if` keyword to specify a deployment condition.
 
 1. Underneath the storage account resource you just added, add the following:
 
-   ::: code language="bicep" source="code/3-template.bicep" range="59-67" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="57-65" :::
 
    Notice that the definition includes the same `if` condition as the storage account. Also, the `storageEndpoint` and `storageAccountAccessKey` properties use the `?` ternary operator to ensure their values are always valid. If you didn't do this, Resource Manager would evaluate the expression values before evaluating the resource deployment condition, and it will return an error since the storage account can't be found.
 
@@ -58,10 +54,10 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ### Deploy the template to Azure by using the Azure CLI
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This process can take couple of minutes to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. Notice that you're explicitly setting the `location` parameter to `westeurope`.
 
 ```azurecli
-az deployment group create --template-file database.bicep
+az deployment group create --template-file database.bicep --parameters location=westeurope
 ```
 
 ::: zone-end
@@ -75,12 +71,22 @@ az deployment group create --template-file database.bicep
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This process can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile database.bicep
+New-AzResourceGroupDeployment -TemplateFile database.bicep -location westeurope
 ```
 
 ::: zone-end
 
-<!-- TODO mention how to specify secure param values -->
+You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` because it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
+
+> [!TIP]
+> When you enter the secure parameters, the values you choose must follow some rules:
+> 
+> - `sqlServerAdministratorLogin` must not be an easily guessable login name like `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
+> - `sqlServerAdministratorPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information on password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
+>
+> If the parameter values don't meet the requirements, Azure SQL won't deploy your server.
+> 
+> Also, *make sure you keep a note of the login and password that you enter*. You'll use them again shortly.
 
 You'll see `Running...` in the terminal. Since you didn't specify a value for the `environmentName` parameter, the default value of `Development` will be used.
 

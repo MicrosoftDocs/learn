@@ -59,8 +59,6 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ::: zone-end
 
-TODO mention SQL login and password
-
 You'll see `Running...` in the terminal. As you didn't specify any parameter value, the default value for ```sqlLocations``` parameter will be used. Wait for deployment to finish.
 
 ## Verify the deployment
