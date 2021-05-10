@@ -5,7 +5,7 @@ sandbox: true
 metadata:
   unitType: exercise  
   title: Exercise - Add a parameter file and secure parameters
-  description: Learn about parameter files, and providing secure parameters by using decorators and Key Vault references.
+  description: Learn about parameter files and how to provide secure parameters by using decorators and Azure Key Vault references.
   ms.date: 04/21/2021
   author: wviriya
   ms.author: wviriya

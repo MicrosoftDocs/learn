@@ -32,7 +32,7 @@ They also give you the following parameter file named *main.parameters.productio
 
 ::: zone pivot="cli"
 
-You deploy the template using this Azure CLI command:
+You deploy the template by using this Azure CLI command:
 
 ```azurecli
 az deployment group create \
@@ -45,7 +45,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-You deploy the template using this Azure PowerShell command:
+You deploy the template by using this Azure PowerShell command:
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
