@@ -5,7 +5,7 @@ sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Deploy multiple resources using loops
-  description: Exercise where you will use loops to deploy multiple instances of resource
+  description: Learn how to use loops to deploy multiple instances of resources.
   ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik

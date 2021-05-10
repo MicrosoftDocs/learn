@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
-title: Exercise - Use variable loops
+title: Exercise - Use variable and output loops
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Use variable loops
-  description: Exercise where you will use loops with template variables.
+  title: Exercise - Use variable and output loops
+  description: Learn how to use loops with variables and outputs.
   ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik

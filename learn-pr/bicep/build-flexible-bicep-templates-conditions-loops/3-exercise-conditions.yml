@@ -5,7 +5,7 @@ sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Conditionally deploy resources
-  description: Exercise where you will use conditions to conditionally deploy resources
+  description: Learn how to conditionally deploy resources based on Boolean values and expressions.
   ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik
