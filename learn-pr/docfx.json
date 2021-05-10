@@ -241,6 +241,19 @@
                 "dest": "modules"
             },
             {
+                "src": "pytorch",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },            
+            {
                 "src": "reactors",
                 "files": [
                     "**/*.yml",
@@ -502,6 +515,17 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "pytorch",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg"
+                ],
+                "dest": "modules"
+            },            
             {
                 "src": "student-evangelism",
                 "files": [

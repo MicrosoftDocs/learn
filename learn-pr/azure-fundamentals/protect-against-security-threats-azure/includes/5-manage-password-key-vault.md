@@ -87,12 +87,12 @@ Here, you access the password from Key Vault two times. First, you access it fro
 1. From Cloud Shell, run this command.
 
     > [!NOTE]
-    > If you're not familiar with the Azure CLI, just follow along.
+    > Replace <**my-keyvault-NNN**> with the name you used earlier.
 
     ```azurecli
     az keyvault secret show \
       --name MyPassword \
-      --vault-name $(az keyvault list --query [0].name --output tsv) \
+      --vault-name <my-keyvault-NNN> \
       --query value \
       --output tsv
     ```

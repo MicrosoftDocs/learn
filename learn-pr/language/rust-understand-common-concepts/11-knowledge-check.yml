@@ -3,7 +3,7 @@ uid: learn.language.rust-understand-common-concepts.11-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 12/14/2020
+  ms.date: 05/04/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "A tuple"
       isCorrect: false
-      explanation: "With a tuple, you can only group values into one compound. We could have a combined tuple of names and phone numbers but wouldn't be able to easily map them together."
+      explanation: "With a tuple, you can only group values into one compound. We can have a combined tuple of names and phone numbers, but we can't easily map them together."
     - content: "A vector"
       isCorrect: false
       explanation: "With a vector, you can only store a collection of objects. You wouldn't know how to relate a person's name to their phone number."
@@ -50,7 +50,7 @@ quiz:
       explanation: "No value of any kind can be returned if it doesn't exist."
     - content: "A compilation error would occur."
       isCorrect: false
-      explanation: "Almost. The program will compile successfully and then return an error when the vector is accessed with an index that's not in range."
+      explanation: "Almost. The program compiles successfully, but it returns an error when the vector is accessed with an index that's not in range."
     - content: "The last element of this vector would be returned instead."
       isCorrect: false
       explanation: "The vector won't successfully return an index that isn't specified or doesn't exist."
