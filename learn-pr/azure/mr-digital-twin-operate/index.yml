@@ -25,7 +25,7 @@ prerequisites: |
   - [Install the Azure CLI for Windows](https://docs.microsoft.com/cli/azure/install-azure-cli-windows?tabs=azure-cli)
   - Basic Azure CLI knowledge
   - Basic PowerShell knowledge
-iconUrl: /learn/achievements/intro-to-mixed-reality.svg
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner
 roles:
