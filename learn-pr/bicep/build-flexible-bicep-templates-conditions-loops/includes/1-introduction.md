@@ -2,7 +2,7 @@ Bicep conditions and loops enable you to make your Bicep code more flexible. Con
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is designing a new smart teddy bear toy. Some of the teddy bear's features are based on backend server components and SQL databases hosted in Azure. For security reasons, within your production environments, you need to make sure that you ave enabled auditing on your Azure SQL servers.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is designing a new smart teddy bear toy. Some of the teddy bear's features are based on backend server components and SQL databases hosted in Azure. For security reasons, within your production environments, you need to make sure that you have enabled auditing on your Azure SQL servers.
 
 You expect the toy will be very popular, and your company plans to launch into new countries regularly. Every country you launch the smart teddy bear into will need to have a separate database server. These servers need to be physically located in specific places to follow the laws of each country. You've been asked to deploy each country's database servers while making it easy to add new servers as the toy is launched into new countries.
 

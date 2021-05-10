@@ -22,7 +22,7 @@ If you deployed this Bicep file you'd see three storage accounts created, with t
 
 ## Loop based on a count
 
-Sometimes you may need to loop to create a specific number of resources, and not use an array as the source. Bice provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts named `sa1` through `sa4`, you could use a resource definition like this:
+Sometimes you may need to loop to create a specific number of resources, and not use an array as the source. Bicep provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts named `sa1` through `sa4`, you could use a resource definition like this:
 
 ::: code language="plaintext" source="code/3-loop-range.bicep" highlight="1" :::
 
