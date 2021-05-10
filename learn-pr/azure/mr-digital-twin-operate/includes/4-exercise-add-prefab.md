@@ -1,15 +1,15 @@
-You have 2 options to start the exercises in this module:
+You have two options to start the exercises in this module:
 
-1. If you are starting this module without having completed the Configure 3D assets for Mixed Reality in Unity  module or wish to abandon any previous work you undertook creating a Scene, add a pre-built scene:
+1. If you're starting this module without having completed the Configure 3D assets for Mixed Reality in Unity  module or wish to abandon any previous work you undertook creating a Scene, add a pre-built scene:
 
 - In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder.
 - Select and drag the Scene to the Hierarchy panel.  For this module, locate and select
 **2_PlaceDigitalTwinAssets**.  If you use this Scene, it contains the **Bing Maps.prefab** Prefab.
-- Configure the necessary service parameters (i.e., Maps SDK) as defined in Build a 3D Scene for Mixed Reality in Unity module. 
+- Configure the necessary service parameters (that is, Maps SDK) as defined in Build a 3D Scene for Mixed Reality in Unity module. 
 
-2. If you are starting this module after completing Configure 3D assets for Mixed Reality in Unity module **AND** you want to continue using your Scene:
+2. If you're starting this module after completing Configure 3D assets for Mixed Reality in Unity module **AND** you want to continue using your Scene:
 
-- If your previously built Scene is not already open in Unity, select **File > Open Scene**.
+- If your previously built Scene isn't already open in Unity, select **File > Open Scene**.
 - Browse to the folder where you saved your Scene.  Typically, this is the **Assets > Scenes** folder in the root project folder structure.  If you followed the guidance in the previous module, your Scene will be called **MainScene**.
 
 > [!NOTE]

@@ -2,28 +2,34 @@ Create ADT equipped User Interfaces to provide a window into operations data.
 
 ## Add the Operate Menu to the MainScene
 
-1. Delete your **Bing Maps** Prefab from your **MainScene** Scene in the **Hierarchy** panel.
+1. If you have a **Bing Maps** Prefab or any turbine Prefabs in your Scene delete them, in the **Hierarchy** panel.
 2. Drag the Prefab **Assets > Art > Prefabs > Bing Maps Operate** into the Hierarchy panel
-i. Configure the Maps SDK parameters including your developer key
-ii. The **Bing Maps Operate** Prefab has other components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to ask for an asset via its address. Once an asset (for example, a Prefab) is marked "addressable", it generates an address, which can be called from anywhere. Wherever the asset resides (local or remote), the system will locate it and its dependencies, then return it.  
-iii. Turbine position can be changed via the Turbine Site Data **ScriptableObject**.   To alter the position of any turbine for runtime placement, change their **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**.  Find these configuration parameters for your Digital Twin turbines under **Assets > ScriptableObjects > Turbine Site Data**.
+- Configure the Maps SDK parameters, including your developer key
+- The **Bing Maps Operate** Prefab has additional components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to request an asset via its address. Once an asset (for example, a Prefab) is marked “addressable”, it generates an address, which can be called from a Unity application at runtime. Local and remotely stored assets are discovered by your application, along with any associated dependencies, and are returned.  
+- Turbine position can be changed via the Turbine Site Data **ScriptableObject**.   To alter the position of any turbine for placement at runtime, change the **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**.  Find these configuration parameters for your Digital Twin turbines under **Assets > ScriptableObjects > Turbine Site Data**.
 
 :::image type="content" source="../media/scriptable-object.png" alt-text="Screenshot of the Unity editor with the bings map operate prefab running in the main scene.":::
 
-3. Drag the UI Panel Prefab from **Assets > UIPrefabs > Prefabs > OperateSceneUI** into the **MainScene**.  
-i. This UI Panel takes the Turbine Site Data and populates its contents at runtime
+> [!IMPORTANT]
+> Do not change any other parameters or characteristics on Addressables otherwise you will need to re-compile them, which is not covered in this module.
+
+3. Drag the UI Panel Prefab from **Assets > UIPrefabs > Prefabs > OperateSceneUI** into the **Hierarchy** panel.  
+- This UI Panel is populated with Turbine Site Data at runtime. In this Prefab folder, you will find the **HandMenuOperate.prefab**.  This provides constraints, thresholds, and tracking configuration for menu operation on the HoloLens 2 using your hands.  The Prefab has been configured for default behavior and no further configuration is required.
 
 :::image type="content" source="../media/operate-scene-ui.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned away from the terrain.":::
-
-4. Drag the Prefab **Assets > UIPrefabs > Prefabs > Hand Menu - Operate** into the **MainScene**.  This provides constraints, thresholds, and tracking configuration for menu operation on the HoloLens 2 with your hands.  The Prefab has been configured for default behavior and no further configuration is required.
 
 ## Explore the configurable items in the OperateSceneUI and Hand Menu - Operate
 
 1. Use the Inspector panel to familiarize yourself with some of the parameters.
-2. If you accidentally change a value, use Ctrl+Z to undo and revert back to the original parameter
+2. If you accidentally change a value, use Ctrl+Z to undo and revert to the original parameter
 
-> [!NOTE]
-> Once you are familiar with the Scene you can go back and customise the color values of the data ranges in the **TurbinePanel** child of the **OperateSceneUI**. To modify this, navigate to **Assets > ScriptableObjects > Telemetry Range Data** in the Project Window. Here you will find four Telemetry ranges: **RangeAmbientTemperature, RangePower, RangeRotorSpeed, RangeWindSpeed**. After selecting one of these ranges, you can then configure the colour ranges on the **Health Indicator Gradient**.
+Once you are familiar with the Scene, you can go back and customize the color values of the data ranges in the **TurbinePanel** child of the **OperateSceneUI**.
+
+## Customize colors for data ranges in UI
+
+1. Navigate to **Assets > ScriptableObjects > Telemetry Range Data** in the Project Window. 
+2. Select one of the four Telemetry ranges: **RangeAmbientTemperature, RangePower, RangeRotorSpeed, RangeWindSpeed**
+3. Configure the color ranges on the **Health Indicator Gradient**.
 
 ## Position the UI in the MainScene
 

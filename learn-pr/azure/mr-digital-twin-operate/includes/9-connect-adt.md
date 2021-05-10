@@ -1,53 +1,45 @@
-Now that you've built the base terrain for your Wind Farm experience, placed your turbine assets, and connected your Digital Twin to ADT, build the project and deploy it to the HoloLens 2.  After you've deployed and tested, return to build out more functionality into your Mixed Reality experience.
+Under real-world conditions, wind farm operations aren't continuous.  At times, turbine assets experience anomalies that may exceed operating thresholds.  Under these circumstances, turbine assets will send an alert signal that operators and Engineers intercept, analyze, and take action upon.  To resolve a turbine asset alert on ADT from the HoloLens 2 app, we send requests to the ADT REST API.
 
-[Building your application to your HoloLens 2 -  Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr#building-your-application-to-your-hololens-2)
+To make requests to the REST API, you first need to authenticate. In the context of this learning module, you'll authenticate using app credentials, corresponding to an **App Registration**. These credentials represent an app, and not an individual, and need to be copied into the Unity Project.  When the app is built for HoloLens 2, these credentials are compiled directly into the app.  This approach to authentication isn't recommended for production systems because it doesn't require the user to log in. As such, it doesn't prevent unauthorized user access.  You will be using this approach for simplicity’s sake in this learning module.
 
-When adjusting your build settings, be sure to **Add Open Scenes** if your Scene doesn't appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform. 
+The ARM template, among other things, creates the required **App Registration**. As part of the output, you created the **AppCredentials.txt** file that contains many important variables needed to configure the Unity **ScriptableObjects**, based on the following variable mappings:
 
-:::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build settings window open with main scene and universal windows platform options highlighted.":::
+| Unity | AppCredentials.txt |
+|---|---|
+| Adt Instance URL | name |
+| Client Id | appId |
+| Client Secret | password |
+| Tenant Id | tenant |
 
-Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  To open your app from the Start menu, simply select an app tile. You can also say the name of the app to open it.  
+These credentials and URL need to be transferred to your Unity project, so that your app can authenticate and interact with ADT.  Specifically, you need to assign these values to a **ScriptableObject** in the project and then reference that **ScriptableObject** from a specific **GameObject** in the Scene.
 
-## Begin the wind farm device simulation
+## Add ADT credentials
 
-1. If closed, start the Visual Studio IDE and open **DeviceSimulator.sln**, which can be found in the functions folder and contains the **DeviceSimulator** solution. 
-2. Run the DeviceSimulator by pressing the **Play** button or **F5**
-3. A Command window will open displaying Turbine IDs and messages indicating connectivity and device retrieval / creation
-4. Press any key to begin the simulation.  Be aware that this simulation generates a significant amount of data, simulating real world operations, and Azure consumption will occur.
+1. Navigate to the Credentials folder in the Unity Project panel
+**Assets > ScriptableObjects > AzureDigitalTwin > Credentials**
+2. Create a Scriptable Object for the credentials by selecting the **Assets > Create > Scriptable Objects > Credentials > ADT Rest API Credentials**
 
-## Observe overview of Wind Farm performance
+:::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity editor with the assets menu open showing the create, scriptable objects, credentials, adt rest api credentials menu selection path.":::
 
-1. Summon the Site overview menu.  When running the build on the device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the Site Overview Panel. Select the button.  The Site overview panel will float and follow you as you walk around the map. 
+3. Select the newly created scriptable object in the Project panel to see its configuration parameters in the Inspector panel.  Transfer the values based on the variable mapping listed above from the **AppCredentials.txt file**.
 
-:::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
+:::image type="content" source="../media/credentials-scriptable-object.png" alt-text="Screenshot of the ADT rest api credentials in the Inspector.":::
 
-2. Center on a turbine.  Use near or far interactions to select a turbine from the list. Click with the pointer or finger to center the map on the turbine location.
-3. Zoom in on the map.  Use **near** or **far** interactions to interact with the handle of the slider at the base of the map. Moving the slider to the left or right will change the current zoom level of the map
+## Add turbine alert controller to your Scene and authenticate
 
-## Navigate to individual turbines and view details in Mixed Reality
+1. The **ADTTurbineAlertController** changes the Alert property on the Digital Twin for a specific turbine.  Once this property has been changed on ADT, the **ADTConnection** Prefab receives a notification and updates a corresponding Alert value locally.  
+2. Drag the **Assets > ADTPrefabs > ADTTurbineAlertController** from the **Project** panel to the **Hierarchy** panel, at the bottom of your list.
 
-1. Select a turbine model on the Map
-2. Use the hand pointer to aim at a turbine model on the 3D Map. 
-3. Use a click gesture to select the turbine and display its information panel. The information panel can also be displayed.
+:::image type="content" source="../media/adt-prefabs.png" alt-text="Screenshot of the ADT prefab objects in the Unity project panel.":::
 
-:::image type="content" source="../media/turbine-ui.png" alt-text="Screenshot of a single information panel displaying turbine data on HoloLens 2.":::
+:::image type="content" source="../media/ADTTurbineAlertController.png" alt-text="Screenshot of the ADT prefab objects added to the Unity hierarchy panel.":::
 
-## Stop the DeviceSimulator
+3. In the Inspector, find the **ADT Turbine Alert Controller (Script)** component.  Select the circular icon inside the value box for the field named **Adt Connection Info**.
 
-1. This is important to ensure you avoid unnecessary charges to your Azure account
-2. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
+:::image type="content" source="../media/ADTTurbineAlertController-inspector.png" alt-text="Screenshot of the ADT turbine alert controller in the Unity inspector.":::
 
-## Exit the app
+4. Select the **Adt Connection Info** property and assign the **ADTRestAPICredentials** scriptable object.
 
-1. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start** menu, then select the Mixed reality Home button. 
-2. Once you've exited the app, close the app window using the close icon in the top right of the window.
+:::image type="content" source="../media/ADTTurbineAlertController-ADTRestAPICredentialsScriptableObject.png" alt-text="Screenshot of the ADT rest api credentials scriptable object in the Unity assets folder.":::
 
-After you're done testing your wind farm experience, uninstall the app:
-
-## Uninstall from the Start menu
-
-1. On the **Start** menu or in the **All apps** list, browse to the app. Select and hold until the menu appears, then select **Uninstall**.
-
-## Uninstall from Settings
-
-1. On the **Start** menu, select **Settings -> Apps**. Find the app from the list, select it and then click **Uninstall**.
+5. Save your file with **File > Save**

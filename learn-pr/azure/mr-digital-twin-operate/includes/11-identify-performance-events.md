@@ -1,53 +1,76 @@
-Now that you've built the base terrain for your Wind Farm experience, placed your turbine assets, and connected your Digital Twin to ADT, build the project and deploy it to the HoloLens 2.  After you've deployed and tested, return to build out more functionality into your Mixed Reality experience.
+To emulate real world functionality, you'll use a simulator to replace a real IoT device in your data pipeline for your wind farm. The simulator sends telemetry data to the IoT Hub, which then informs the ADT service, which then interfaces with SignalR, and finally the data is pulled into your HoloLens 2 app.
 
-[Building your application to your HoloLens 2 -  Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr#building-your-application-to-your-hololens-2)
+In your wind farm Digital Twin, the simulator sends a property update to ADT on demand from a user, to signal an alert.  This alert signifies an operational event and is displayed in the HoloLens app experience.  The use user then can resolve the event via a UI interaction (that is, a button press). The communication between ADT and your Digital Twin happens through ADT’s REST API.  Although this isn't a accurate representation of real-world solution architecture, it simplifies the implementation of the simulator for your Digital Twin in this module.  Normally, an IoT device wouldn't communicate directly with ADT, it would do so through Azure IoT Hub.
 
-When adjusting your build settings, be sure to **Add Open Scenes** if your Scene doesn't appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform. 
+The pre-built simulator you're running sends telemetry every 5 seconds from the stand-alone console application to ADT.  This telemetry represents a normal state and has turbine OK as the event code. When the user triggers an alert on the simulator, it sends modified telemetry that represents an alert situation.  The simulator sends a property update to ADT, setting the Alert property to **True** on your Digital Twin for a particular turbine.  The simulator begins to poll ADT at a regular interval until the Alert property is set back to **False**, triggered by the user clearing the alert from the app within the HoloLens. Once the alert is cleared, the simulator resumes sending normal telemetry again, with the turbine **OK** event code.
 
-:::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build settings window open with main scene and universal windows platform options highlighted.":::
+The data simulator connects to the ADT REST API for two purposes:
+1. To send a property update to ADT (that is, to toggle the alert state of turbine T102); and, 
+2. To poll for an Alert status, once flagged by the user, until it's cleared, and normal telemetry value streams are resumed.
 
-Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  To open your app from the Start menu, simply select an app tile. You can also say the name of the app to open it.  
+Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm, sending telemetry data to ADT, where your newly configured Digital Twin in Unity receives input and displays operating conditions on the wind farm.
+
+> [!NOTE]
+> Remember to stop the simulator whenever it is not needed to avoid unnecessary charges on your Azure account.
 
 ## Begin the wind farm device simulation
-
-1. If closed, start the Visual Studio IDE and open **DeviceSimulator.sln**, which can be found in the functions folder and contains the **DeviceSimulator** solution. 
-2. Run the DeviceSimulator by pressing the **Play** button or **F5**
-3. A Command window will open displaying Turbine IDs and messages indicating connectivity and device retrieval / creation
-4. Press any key to begin the simulation.  Be aware that this simulation generates a significant amount of data, simulating real world operations, and Azure consumption will occur.
+1. In the Visual Studio IDE, open the previously configured **DeviceSimulator.sln**
+2. Run the **DeviceSimulator** by pressing the **Play** button or **F5**
+3. Press any key to begin the simulation.  
 
 ## Observe overview of Wind Farm performance
 
-1. Summon the Site overview menu.  When running the build on the device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the Site Overview Panel. Select the button.  The Site overview panel will float and follow you as you walk around the map. 
+1. Put on your HoloLens 2 device.
+2. Summon the Site overview menu.  When running the build on the HoloLens 2 device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the **Site Overview** Panel. Click the button.  The Site overview panel will float and follow you as you navigate around the map.
 
 :::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
 
-2. Center on a turbine.  Use near or far interactions to select a turbine from the list. Click with the pointer or finger to center the map on the turbine location.
-3. Zoom in on the map.  Use **near** or **far** interactions to interact with the handle of the slider at the base of the map. Moving the slider to the left or right will change the current zoom level of the map
 
-## Navigate to individual turbines and view details in Mixed Reality
+The **DeviceSimulator** is configured to send telemetry messages every 5 seconds from the console application running on your computer to ADT.  By default, telemetry readings are sent along with an event code is sent with each telemetry reading:
+```
+Value: 100
+Description: OK
+```
 
-1. Select a turbine model on the Map
-2. Use the hand pointer to aim at a turbine model on the 3D Map. 
-3. Use a click gesture to select the turbine and display its information panel. The information panel can also be displayed.
+## Simulate a light icing event on one turbine
 
-:::image type="content" source="../media/turbine-ui.png" alt-text="Screenshot of a single information panel displaying turbine data on HoloLens 2.":::
+1. Flip up your HoloLens 2 and return to your PC.
+2. In the **DeviceSimulator** window, press the spacebar on your keyboard.  This sends a light icing alert to turbine T102. The ADT object representing turbine T102 receives an update for its Alert property, which is set to **True**.  
+
+A new event code will be sent back to your app via the ADT Connection  on the HoloLens 2 with the telemetry reading:
+
+```
+Value: 400
+Description: Light icing (rotor bl. ice sensor)
+```
+
+## Observe the Alert for turbine T102
+
+1. Flip your HoloLens 2 back down and resume your immersive experience.
+2. In the HoloLens app, select turbine T102.  An alert icon will appear above the turbine in the map and next to any UI panels for turbine T102 to highlight an Alert condition. 
+
+For this exercise, it's assumed that an action will be taken offline to solve the issue on site (for example, sending a technician to the turbine location).  To simulate normal operating conditions, clear the Alert and return the Digital Twin to full operating service, select the highlighted turbine, and resolve the alert from the turbine panel.
+
+## Clear the Alert for turbine T102
+
+1. Click the **Send Reset** Command button.  This sends a message to ADT to set the **Alert** property to **False** for the Digital Twin for turbine T102.
+
+## Validate the Alert update for turbine T102
+
+1. Observe the UI panel displaying a message confirming that the update succeeded. 
+2. Flip up your HoloLens 2 and return to your PC.
+3. Note the message written to the **DeviceSimulator** console app, indicating that the update succeeded.
+4. Observe the **DeviceSimulator** console app sending normal (i.e, non-alert) telemetry messages, with event code 100 instead of 400, and with “Turbine OK” as the description for Turbine T102.
+
+> [!NOTE]
+> The properties of a Digital Twin can be examined directly in ADT.  Use the ADT Explorer web app or an Azure CLI command to browse Digital Twin properties.
 
 ## Stop the DeviceSimulator
 
-1. This is important to ensure you avoid unnecessary charges to your Azure account
-2. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
+1. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
 
 ## Exit the app
 
-1. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start** menu, then select the Mixed reality Home button. 
-2. Once you've exited the app, close the app window using the close icon in the top right of the window.
-
-After you're done testing your wind farm experience, uninstall the app:
-
-## Uninstall from the Start menu
-
-1. On the **Start** menu or in the **All apps** list, browse to the app. Select and hold until the menu appears, then select **Uninstall**.
-
-## Uninstall from Settings
-
-1. On the **Start** menu, select **Settings -> Apps**. Find the app from the list, select it and then click **Uninstall**.
+1. Flip your HoloLens 2 back down and resume your immersive experience.
+2. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the Mixed reality **Home** button. 
+3. Once you've exited the app, close the app window using the close icon in the top right of the window.
