@@ -106,4 +106,4 @@ After deployment is finished, you want to verify that new virtual network is dep
 
 1. Check output of deployment command, it should include information with name and FQDN of all three SQL servers deployed.
 
-  :::image type="content" source="../media/9-outloop-deployment.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
+  :::image type="content" source="../media/8-outloop-deployment.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
