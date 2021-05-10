@@ -1,27 +1,27 @@
-Your team has gained an understanding of how Azure Resource Manager works, and have decided to use ARM templates for your resource provisioning. You understand there are two ways you can write ARM templates: JSON and Bicep. You want to learn more about Bicep templates so you can make an informed decision about which language to use.
+Your team has gained an understanding of how Azure Resource Manager works, and you've decided to use ARM templates for your resource provisioning. You understand that you can write ARM templates two different ways: by using JSON and by using Bicep. You want to learn more about Bicep templates so that you can make an informed decision about which language to use.
 
 In this unit, you'll learn about the Bicep template language and the benefits it provides to template authoring.
 
 ## What is Bicep?
 
-Bicep is a Resource Manager template language used to declaratively deploy Azure resources. Bicep is a domain-specific language (DSL), which means it's designed for a specific scenario or "domain". It isn't meant to be used as a standard programming language for writing applications. Bicep is used only to create Resource Manager templates. The intention of Bicep is to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. All resource types, API versions, and properties are valid in Bicep templates.
+Bicep is a Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or "domain." Bicep isn't meant to be used as a standard programming language for writing applications. Bicep is used only to create Resource Manager templates. Bicep is intended to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. All resource types, API versions, and properties are valid in Bicep templates.
 
 > [!NOTE]
-> If you've previously looked at JSON templates, then you'll notice that Bicep simplifies the template creation experience. It provides an easier to understand syntax, better support for modularity and reusable code, and improved type safety. Creating a JSON Azure Resource Manager template requires complicated expressions and the final result can be verbose.
+> If you've previously looked into using JSON templates, you'll notice that Bicep simplifies the template creation experience. It provides a syntax that's easier to understand, better support for modularity and reusable code, and improved type safety. Creating a JSON ARM template requires complicated expressions, and the final result might be verbose.
 
 ## Benefits of Bicep
 
-Bicep provides many improvements over JSON when authoring templates including:
+Bicep provides many improvements over JSON for template authoring, including:
 
-- **Simpler syntax** - Bicep provides a simpler syntax when writing templates. Parameters and variables can be referenced directly without complicated functions. String interpolation is used in place of concatenation to combine values for names and other items. You can reference the properties of a resource directly using its symbolic name instead of complex reference statements. These syntax improvements help with both the authoring and reading of Bicep templates.
+- **Simpler syntax**: Bicep provides a simpler syntax for writing templates. You can reference parameters and variables directly, without using complicated functions. String interpolation is used in place of concatenation to combine values for names and other items. You can reference the properties of a resource directly by using its symbolic name instead of complex reference statements. These syntax improvements help both with authoring and reading Bicep templates.
 
-- **Modules** - Complex template deployments can be broken down into smaller module files and referenced in a main template. These modules provide for easier management and greater reusability.
+- **Modules**: You can break down complex template deployments into smaller module files and reference them in a main template. These modules provide easier management and greater reusability.
 
-- **Automatic dependency management** - In most situations, Bicep will automatically detect dependencies between your resources. This process removes some of the work involved in template authoring.
+- **Automatic dependency management**: In most situations, Bicep automatically detects dependencies between your resources. This process removes some of the work involved in template authoring.
 
-- **Type validation and IntelliSense** - The Bicep extension for Visual Studio Code features rich validation and IntelliSense for all Azure resource type API definitions. This feature provides for an easier authoring experience.
+- **Type validation and IntelliSense**: The Bicep extension for Visual Studio Code features rich validation and IntelliSense for all Azure resource type API definitions. This feature helps provide an easier authoring experience.
 
-Take a look at the example below of a Bicep template that defines an Azure storage account. The name of the storage account is automatically generated by the template. After deployment, the resource ID is sent back to whoever executes the template by using an output.
+Take a look at the following example of a Bicep template that defines an Azure storage account. The name of the storage account is automatically generated by the template. After deployment, the resource ID is returned as output to the user who executes the template.
 
 ```bicep
 param location string = resourceGroup().location

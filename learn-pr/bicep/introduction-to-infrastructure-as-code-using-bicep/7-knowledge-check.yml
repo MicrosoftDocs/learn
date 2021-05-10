@@ -36,58 +36,58 @@ durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: "Suppose you're deciding on a method for deploying your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code (IaC)?"
+  - content: "Suppose you're deciding on a method to use to deploy your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code?"
     choices:
-    - content: "IaC Improves the consistency of your deployments."
+    - content: "Infrastructure as code improves the consistency of your deployments."
       isCorrect: true
-      explanation: "Infrastructure as code will help reduce human error in resource provisioning, and ensure consistency."
-    - content: "IaC requires that you only deploy a single environment."
+      explanation: "Correct. Infrastructure as code will help reduce human error in resource provisioning, and ensure consistency."
+    - content: "Infrastructure as code requires that you deploy only a single environment."
       isCorrect: false
-      explanation: "IaC can help in managing multiple environments, like keeping your non-production and production environments in sync."
-    - content: "With IaC, you manually execute your deployments."
+      explanation: "Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync."
+    - content: "With infrastructure as code, you manually execute your deployments."
       isCorrect: false
-      explanation: "IaC helps you to automate your deployments, improving their consistency and reducing the chance of error."
-  - content: "Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative versus declarative code approach. Which statement best describes declarative code?"
+      explanation: "Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error."
+  - content: "Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?"
     choices:
-    - content: "With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it also defines how to accomplish the task. "
+    - content: "With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task. "
       isCorrect: false
-      explanation: "Imperative code defines what the code should accomplish, and how to accomplish the task."
+      explanation: "Incorrect. Imperative code defines what the code should accomplish and how to accomplish the task."
     - content: "With declarative code, objects and classes are used to determine the final configuration of a resource."
       isCorrect: false
-      explanation: "Object-oriented programming languages, such as C#, use objects and classes in their code base. You don't need to use these constructs for declarative IaC."
-    - content: "With declarative code, you only specify the end configuration. You don't define how to accomplish the task."
+      explanation: "Incorrect. Object-oriented programming languages, like C#, use objects and classes in their code base. You don't need to use these constructs for declarative infrastructure as code."
+    - content: "With declarative code, you specify only the end configuration. You don't define how to accomplish the task."
       isCorrect: true
-      explanation: "Declarative code only specifies the properties and configuration of your resources. The tooling then determines how to ensure your resources meet those requirements."
+      explanation: "Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements."
   - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following declarative template formats work with Azure?"
     choices:
-    - content: "Bicep template"
+    - content: "Bicep template."
       isCorrect: true
-      explanation: "Bicep templates can be used for Azure resource deployments."
-    - content: "XML template"
+      explanation: "Correct. Bicep templates can be used for Azure resource deployments."
+    - content: "XML template."
       isCorrect: false
-      explanation: "XML templates aren't used for Azure resource deployments."
-    - content: "Bash script using Azure CLI"
+      explanation: "Incorrect. XML templates aren't used for Azure resource deployments."
+    - content: "Bash script by using Azure CLI."
       isCorrect: false
-      explanation: "An Bash script using Azure CLI isn't a declarative template."
-  - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using Azure Resource Manager templates?"
+      explanation: "Incorrect. A Bash script by using Azure CLI isn't a declarative template."
+  - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using ARM templates?"
     choices:
-    - content: "Imperative code"
+    - content: "Imperative code."
       isCorrect: false
-      explanation: "Azure Resource Manager templates don't use imperative code."
-    - content: "Modularity"
+      explanation: "Incorrect. ARM templates don't use imperative code."
+    - content: "Modularity."
       isCorrect: true
-      explanation: "Azure Resource Manager templates can be configured as separate templates, or modules."
-    - content: "Management group"
+      explanation: "Correct. ARM templates can be configured as separate templates, or modules."
+    - content: "Management group."
       isCorrect: false
-      explanation: "A management group is a logical container for grouping Azure subscriptions."
+      explanation: "Incorrect. A management group is a logical container for grouping Azure subscriptions."
   - content: "Suppose you're reviewing how Bicep templates work for resource provisioning. What is the definition of a domain-specific language?"
     choices:
-    - content: "A language that is designed to communicate with Active Directory Domain Services."
+    - content: "A language that's designed to communicate with Active Directory Domain Services."
       isCorrect: false
-      explanation: "A domain-specific language is designed for a particular scenario or domain. It isn't intended as a general programming language for writing applications."
-    - content: "A language that is designed for a particular scenario or domain."
+      explanation: "Incorrect. A domain-specific language isn't intended to be used as a general programming language for writing applications."
+    - content: "A language that is designed for a specific scenario or domain."
       isCorrect: true
-      explanation: "A domain-specific language is designed for a particular scenario or domain. It isn't intended as a general programming language for writing applications."
-    - content: "A language that is designed as a general programming language for writing applications."
+      explanation: "Correct. A domain-specific language is designed for a specific scenario or domain."
+    - content: "A language that is designed to be used as a general programming language for writing applications."
       isCorrect: false
-      explanation: "A domain-specific language is designed for a particular scenario or domain. It isn't intended as a general programming language for writing applications."
+      explanation: "Incorrect. A domain-specific language is not intended to be used as a general programming language for writing applications."
