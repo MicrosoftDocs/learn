@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.sort-and-filter-queries
+metadata:
+  title: Sort and filter results in T-SQL
+  description: "Sort and filter results in T-SQL"
+  ms.date: 05/08/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Sort and filter results in T-SQL
+summary: Learn how to sort and filter query results
+abstract: |
+  After completing this module, you will be able to:
+  - Sort your results
+  - Limit the sorted results
+  - Return paged results
+  - Remove duplicates
+  - Filter data with predicates
+prerequisites: |
+  Before starting this module, you should be familiar with the basic syntax of the SELECT Transact-SQL statement.
+iconUrl: /learn/achievements/organize-data-with-transact-sql.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- sql-server
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+units:
+- learn.wwl.sort-and-filter-queries.introduction
+- learn.wwl.sort-and-filter-queries.sort-your-data-as-its-returned
+- learn.wwl.sort-and-filter-queries.use-top-offset-fetch-with-sorted-data
+- learn.wwl.sort-and-filter-queries.page-results
+- learn.wwl.sort-and-filter-queries.remove-duplicates
+- learn.wwl.sort-and-filter-queries.filter-data
+- learn.wwl.sort-and-filter-queries.exercise-sort-filter-query-results
+- learn.wwl.sort-and-filter-queries.knowledge-check
+- learn.wwl.sort-and-filter-queries.summary
+badge:
+  uid: learn.wwl.sort-and-filter-queries.badge
