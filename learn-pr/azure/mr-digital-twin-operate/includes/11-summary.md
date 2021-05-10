@@ -1,4 +1,4 @@
-## Learn more
+## References
 
 * [Sign in with the Azure CLI](https://docs.microsoft.com/cli/azure/authenticate-azure-cli)
 * [SignalR Service – Real-time web](https://azure.microsoft.com/services/signalr-service/)
