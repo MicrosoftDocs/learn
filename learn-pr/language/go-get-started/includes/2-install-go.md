@@ -59,26 +59,7 @@ You should see the details of the Go version that's installed on your workstatio
 ::: zone pivot="macos"
 ## Install Go on macOS
 
-To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page][GoDownload]. Both approaches are available on the download page, but choose only one.
-
-### Install Go by using Homebrew
-
-The simplest way to install Go is by using [Homebrew][Homebrew].
-
-Open a Terminal prompt, and then run the following commands:
-
-```console
-brew update
-brew install go
-```
-
-Homebrew installs Go in the */usr/local/go* folder. The */usr/local/go/bin* path should now be part of the **$PATH** environment variable. You might need to reopen your Terminal prompt to confirm Go is installed correctly.
-
-To confirm Go is installed, run the following command:
-
-```console
-go version
-```
+To install Go on macOS, download the installer from the [Go downloads page][GoDownload].
 
 ### Install Go by using the Go installer
 
@@ -256,4 +237,3 @@ You can study more about Go by visiting the official documentation site, [How to
 [GoDownload]: https://golang.org/dl/?azure-portal=true
 [GoLatest]: https://golang.org/doc/devel/release.html?azure-portal=true
 [GoPlay]: https://play.golang.org/?azure-portal=true
-[Homebrew]: https://brew.sh/?azure-portal=true
