@@ -21,7 +21,7 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
     |---|---|
     | **Project details** |
     | Subscription | Select a Subscription |
-    | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
+    | Resource group | Select or create a resource group |
     | Managed resource group | Enter *mslearn-demodw* |
     | **Workspace details** |
     | Workspace name | Enter *sampledatawhxx*  |
