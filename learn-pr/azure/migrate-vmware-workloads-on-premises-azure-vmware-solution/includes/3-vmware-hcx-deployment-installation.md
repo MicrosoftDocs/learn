@@ -131,4 +131,4 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
     
     :::image type="content" source="../media/3-hcx-restart-green.png" alt-text="Screen shot showing vCenter and SSO has been configured correctly in the on-premises HCX Connector appliance.":::
 
-In the next unit, we'll cover how to set up a site pairing, add a compute profile, and add a networking profile. All steps will be outlined so you can successfully deploy and configure within your environment.
+In the next unit, we'll cover how to set up a site pairing, add networking profiles, and add a compute profile. All steps will be outlined so you can successfully configure within your environment.
