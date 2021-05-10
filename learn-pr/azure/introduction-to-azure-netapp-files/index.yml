@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-netapp-files # Do not edit: uid must be globall
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure NetApp Files          # Do not edit: title must be "Introduction to <product>"
-  description: Evaluate whether Azure NetApp Files is appropriate to                 # Copy your 'evaluate' Learning Objective here (see below)
+  description: Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.                # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 5/10/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: paulwp      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: v-pmcfedries           # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -36,7 +36,7 @@ title: Introduction to Azure NetApp Files
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: "Describe how..."
+summary: Describe how the low latency and high availability of Azure NetApp Files work to provide on-premises-like performance for cloud workloads. Determine the types of file-based workloads that are suitable for migration to Azure NetApp Files.
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,8 +63,8 @@ summary: "Describe how..."
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Azure NetApp Files is appropriate to -general product use case-.
-    - Describe how -features- of Azure NetApp Files work to <solve problem>.
+    - Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.
+    - Describe how the performance tiers of Azure NetApp Files enable you to choose a level of performance to fit your workload's needs.
 ###########################################################################
 ###
 ### Prerequisites
@@ -87,9 +87,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
-  - Basic knowledge of WIndows and Linux file systems, including SMB and NFS.
-  - # prerequisite 3
+  - Basic knowledge of Azure, products including Azure Virtual Network and Azure Virtual Gateway.
+  - Basic knowledge of networked file system protocols, particularly SMB and NFS.
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
@@ -107,7 +106,9 @@ levels:
 ### Use exact value(s) from the role taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#role)
 ###
 roles:
+  - administrator
   - database-administrator
+  - data-engineer
   - data-scientist
   - solution-architect
 ###########################################################################

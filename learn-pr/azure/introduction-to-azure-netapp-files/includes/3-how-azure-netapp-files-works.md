@@ -18,9 +18,13 @@
 -->
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+
+- TODO
+- TODO
+- TODO
+
+Good image I can user here:
+https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 

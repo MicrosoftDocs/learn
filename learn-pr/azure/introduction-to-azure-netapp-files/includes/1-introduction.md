@@ -25,7 +25,9 @@ TODO: add your visual element
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
+
 ## Example scenario
+
 TODO: add your scenario
 TODO: add your image
 
@@ -41,7 +43,9 @@ TODO: add your image
                 * **Branch**: what types of business logic can you add to your app?"
 
  -->
+
 ## What will we be doing?
+
 TODO: add your activities
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
@@ -57,7 +61,9 @@ TODO: add your activities
     Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
 
  -->
+
 ## What is the main goal?
-By the end of this session, you'll be able to <TODO>
+
+By the end of this session, you'll be able to...
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
