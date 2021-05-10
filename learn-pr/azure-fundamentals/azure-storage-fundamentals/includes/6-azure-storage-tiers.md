@@ -14,7 +14,7 @@
 :::row-end:::
 
 
-Azure Storage offers different access tiers for your blob storage, helping you store object data in the most cost-effective manner. The available access tiers include:
+Azure Storage offers different access tiers for your blob storage, helping you store object data in the most cost-effective manner. The available access tiers include:<br>
 
  -  **Hot access tier**: Optimized for storing data that is accessed frequently (for example, images for your website).
  -  **Cool access tier**: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
@@ -29,5 +29,4 @@ The following considerations apply to the different access tiers:
 
 The following illustration demonstrates choosing between the hot and cool access tiers on a general purpose storage account.
 
-[:::image type="content" source="../media/account-tier-42ec76d7.png" alt-text="Screenshot of specifying the Azure access tier.":::
-](/content/dam/wwl/ilt-courses/az-900-learn/describe-core-azure-services/Modules/M03-azure-storage-fundamentals/media/account-tier.png#lightbox)
+:::image type="content" source="../media/account-tier-42ec76d7.png" alt-text="Screenshot of specifying the Azure access tier.":::
