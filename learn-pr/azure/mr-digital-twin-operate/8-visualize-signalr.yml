@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-operate.8-visualize-signalr 
-title: Exercise--Visualize and interact with simulated operations data using SignalR
+uid: learn.azure.mr-digital-twin-operate.8-visualize-signalr 
+title: Exercise - visualize and interact with simulated operations data using SignalR
 metadata:
-  title: Exercise--Visualize and interact with simulated operations data using SignalR
+  title: Exercise - visualize and interact with simulated operations data using SignalR
   description: Learn about the variety of cloud services and applications that can be integrated with mixed-reality applications, including Azure Spatial Anchors, Azure Remote Rendering, and cognitive services.
   ms.date: 5/4/2021
   author: Sean-Kerawala

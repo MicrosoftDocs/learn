@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twin-operate
+uid: learn.azure.azure.mr-digital-twin-operate
 metadata:
-  title: Connect operating data to Azure Digital Twin  
+  title: Connect operating data to Azure Digital Twins  
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
   ms.date: 5/4/2021
   author: Sean-Kerawala
@@ -29,7 +29,7 @@ prerequisites: |
   - Basic PowerShell knowledge
 iconUrl: /learn/achievements/intro-to-mixed-reality.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 - business-owner
@@ -43,16 +43,16 @@ products:
 - windows-mixed-reality
 - hololens
 units:
-- learn.mr-digital-twin-operate.1-introduction
-- learn.mr-digital-twin-operate.2-connecting-telemetry-data
-- learn.mr-digital-twin-operate.3-arm-templates
-- learn.mr-digital-twin-operate.4-exercise-add-prefab
-- learn.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
-- learn.mr-digital-twin-operate.6-connect-stream-data
-- learn.mr-digital-twin-operate.7-exercise-create-ui
-- learn.mr-digital-twin-operate.8-visualize-signalr
-- learn.mr-digital-twin-operate.9-deploy
-- learn.mr-digital-twin-operate.10-knowledge-check
-- learn.mr-digital-twin-operate.11-summary
+- learn.azure.mr-digital-twin-operate.1-introduction
+- learn.azure.mr-digital-twin-operate.2-connecting-telemetry-data
+- learn.azure.mr-digital-twin-operate.3-arm-templates
+- learn.azure.mr-digital-twin-operate.4-exercise-add-prefab
+- learn.azure.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
+- learn.azure.mr-digital-twin-operate.6-connect-stream-data
+- learn.azure.mr-digital-twin-operate.7-exercise-create-ui
+- learn.azure.mr-digital-twin-operate.8-visualize-signalr
+- learn.azure.mr-digital-twin-operate.9-deploy
+- learn.azure.mr-digital-twin-operate.10-knowledge-check
+- learn.azure.mr-digital-twin-operate.11-summary
 badge:
-  uid: learn.mr-digital-twin-operate.badge
+  uid: learn.azure.mr-digital-twin-operate.badge

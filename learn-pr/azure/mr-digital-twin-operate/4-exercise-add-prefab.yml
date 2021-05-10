@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-operate.4-exercise-add-prefab
-title: Exercise--Add Azure Digital Twin Prefabs to Unity Project
+uid: learn.azure.mr-digital-twin-operate.4-exercise-add-prefab
+title: Exercise - add Azure Digital Twin prefabs to Unity project
 metadata:
-  title: Exercise--Add Azure Digital Twin Prefabs to Unity Project
+  title: Exercise - add Azure Digital Twin prefabs to Unity project
   description: Explore the range of mixed-reality devices, the capabilities they offer, and where they fit on the mixed-reality spectrum.
   ms.date: 5/4/2021
   author: Sean-Kerawala
