@@ -32,13 +32,13 @@ With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machi
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-virtual-machine-863c3e59.png" alt-text="icon":::
+    :::image type="content" source="../media/icon-virtual-machine-863c3e59.png" alt-text="Icon representing virtual machines.":::
 
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    :::image type="content" source="../media/icon-scale-sets-8682cc12.png" alt-text="icon":::
+    :::image type="content" source="../media/icon-scale-sets-8682cc12.png" alt-text="Icon representing virtual machine scale sets.":::
 
   :::column-end:::
   :::column span="2":::
@@ -62,13 +62,13 @@ With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machi
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-container-instance-7b714f67.png" alt-text="icon":::
+    :::image type="content" source="../media/icon-container-instance-7b714f67.png" alt-text="Icon representing containers and Kubernetes.":::
 
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    :::image type="content" source="../media/icon-app-service-9aa4dd22.png" alt-text="icon":::
+    :::image type="content" source="../media/icon-app-service-9aa4dd22.png" alt-text="Icon representing Azure App Service.":::
 
   :::column-end:::
   :::column span="2":::
@@ -92,7 +92,7 @@ With [Azure App Service](https://azure.microsoft.com/services/app-service?azure-
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-functions-f1896901.png" alt-text="icon":::
+    :::image type="content" source="../media/icon-functions-f1896901.png" alt-text="Icon representing Azure Functions.":::
 
   :::column-end:::
 :::row-end:::
