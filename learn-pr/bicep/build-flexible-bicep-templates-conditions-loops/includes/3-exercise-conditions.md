@@ -13,6 +13,8 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template with SQL server and database
 
+<!-- TODO mention that we'll eventually create multiple servers, but for now you've decided to just create a single server -->
+
 1. Open Visual Studio Code, and create a new file called *database.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
@@ -97,7 +99,7 @@ You'll use the Azure portal to look at the resources that you deploy, and to ins
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded. You can see that SQL Server and SQL Database are deployed, however storage account for auditing is not deployed, as default value for environment 'Development' was used. Note that storage account with name beginning with 'cloudshell' is not related to your deployment and was existing before deployment start already.
+1. In **Overview**, you can see that one deployment succeeded. You can see that SQL server and SQL database are deployed, but the storage account for auditing was not deployed. Note that the storage account a with name beginning with 'cloudshell' is not related to your deployment and was created by the Learn sandbox.
 
     :::image type="content" source="../media/3-development-deployment.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 

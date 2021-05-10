@@ -1,4 +1,4 @@
-For your toy company, you need to deploy virtual networks in multiple Azure regions. You want to have flexibility to provide different subnet configuration per virtual network. You want to specify subnet configuration by parameters in your Bicep templates.
+For your toy company, you need to deploy virtual networks in each Azure region you're using. You need flexibility to have different subnets for each virtual network. You want to specify subnet configuration by using Bicep parameters.
 
 During exercise you'll:
 
