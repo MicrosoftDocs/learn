@@ -8,7 +8,7 @@ To expose the data via ADT to your client app, you only need to connect to the A
 1. Open **DeviceSimulator.sln**
 s
 - Configure the DeviceSimulator with the Host name for the ADT resource type created by the ARM template
-1. Log into your [Azure Portal](https://portal.azure.com/)
+1. Log into your [Azure Portal](https://portal.azure.com/?azure-portal=true)
 2. Locate and select the newly created Resource Group.  This can be found in your Resource Groups service listing.  The Resource Group name will be based on the **projectname** variable name you supplied while running the ARM Template in the previous exercise.  It will have a **-rg** appended to it. In our example going forward, we used *windfarm* as the projectname 
 
 :::image type="content" source="../media/resource-group.png" alt-text="Screenshot of the Microsoft Azure website with the Resource groups page open.":::
