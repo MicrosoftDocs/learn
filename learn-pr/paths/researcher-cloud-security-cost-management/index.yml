@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
-uid: learn.researcher-extended-introduction-to-cloud
+uid: learn.researcher-cloud-security-cost-management
 hidden: true
 metadata:
-  title: An extended introduction to the Azure Cloud for Researchers
+  title: Azure for Researchers part 2: Cloud Security and Cost Management
   description: In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
   brand: azure
   ms.date: 04/28/2021
@@ -10,7 +10,7 @@ metadata:
   ms.author: marouill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: An extended introduction to the Azure Cloud for Researchers
+title: Azure for Researchers part 2: Cloud Security and Cost Management
 summary: |
   In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
   
@@ -43,4 +43,4 @@ modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.secure-network-connectivity-azure
 trophy:
-  uid: learn.researcher-extended-introduction-to-cloud.trophy
+  uid: learn.learn.researcher-cloud-security-cost-management.trophy
