@@ -16,11 +16,11 @@ At the surface, the code to allow a user to create an item might seem trivial. A
 1. The server attempts to save the item to the database. If it fails, an error message is returned to the user.
 1. After successfully saving the new item, the server redirects the user to a success page.
 
-This process requires a lot of code! Most of it's [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code?azure-portal=true), which means it's the same every time you create it.
+This process requires quite a bit code! Most of it's [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code?azure-portal=true), which means it's the same every time you create it.
 
 ### Forms
 
-Creating an HTML form can be a tedious process. There's a lot of copying and pasting of `input` tags, looping through lists to create drop-downs lists, and setting up radio buttons. Whenever the model changes, the form must be updated.
+Creating an HTML form can be a tedious process. Developers are often copying and pasting `input` tags, looping through lists to create drop-downs lists, and setting up radio buttons. Whenever the model changes, the form must be updated.
 
 You might have noticed the models we create in Django contain everything necessary to create the form. When we added the various fields, we indicated the data types, which are coupled with different HTML elements. For example, a Boolean field would be a check box and a foreign key would commonly be a drop-down list.
 
@@ -58,7 +58,7 @@ class DogUpdateView(generic.CreateView):
     fields = ['name', 'description', 'shelter']
 ```
 
-After successfully creating or updating an item, Django redirects to the details page for the item. It retrieves the URL for the details by using `get_absolute_url` on the associated model. You implement this method by returning the correct URL. You should always retrieve the appropriate URL from URLconf, which can be done by using `reverse`. Note `kwargs` is used to pass the `pk` or primary key parameter.
+After successfully creating or updating an item, Django redirects to the details page for the item. It retrieves the URL for the details by using `get_absolute_url` on the associated model. You implement this method by returning the correct URL. You can retrieve the appropriate URL from URLconf by using `reverse`. Note `kwargs` is used to pass the `pk` or primary key parameter to the route.
 
 ```python
 from django.db import models
@@ -72,7 +72,7 @@ class Dog(models.Model):
 
 ### DeleteView
 
-The class `DeleteView` is similar to `UpdateView`. It allows a user to delete an item and identifies the item to be deleted by using `pk`. Unlike `UpdateView`, `fields` isn't needed because you'll be deleting the entire item. Also, because no item has been newly created or updated, we need to determine where we want to redirect the user. We do this by setting the `success_url` to the appropriate value. You can look up a URL by using `reverse_lazy`.
+The class `DeleteView` is similar to `UpdateView`. It allows a user to delete an item and identifies the item to be deleted by using `pk`. Unlike `UpdateView`, `fields` isn't needed because you'll be deleting the entire item. Also, because no item has been newly created or updated, we need to determine where we want to redirect the user. We can create a redirect by setting the `success_url` to the appropriate value. You can look up a URL by using `reverse_lazy`.
 
 ```python
 from . import models
