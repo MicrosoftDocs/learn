@@ -102,7 +102,7 @@ After deployment is finished, you want to verify that new virtual networks are d
 
    :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal interface with virtual networks after deployment." border="true":::
 
-1. Select virtual network ```teddybear-eastasia``` and select Subnets under Settings category in left menu.
+1. Select virtual network named `teddybear-eastasia` and select *Subnets* under the *Settings* category in the left menu.
 
 1. Verify that deployed subnets have names and IP addresses that were specified in parameter `subnets` default value.
 

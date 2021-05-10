@@ -60,7 +60,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ::: zone-end
 
-You'll see `Running...` in the terminal. As you didn't specify any parameter value, the default value for ```sqlLocations``` parameter will be used. Wait for deployment to finish.
+You'll see `Running...` in the terminal. As you didn't specify any parameter value, the default value for the `locations` parameter will be used. Wait for deployment to finish.
 
 ## Verify the deployment
 
@@ -70,7 +70,7 @@ After deployment is finished, you want to verify that new SQL server and databas
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that new SQL server and database are located in the regions you specified in the `sqlLocations` parameter's default value.
+1. Verify that new SQL server and database are located in the regions you specified in the `locations` parameter's default value.
 
     :::image type="content" source="../media/5-loop-deployment.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL servers in different locations." border="true":::
 
