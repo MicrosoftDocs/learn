@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.4-resume-writing
+title: How to Build a Resume
+metadata:
+  title: You know your goal, but how do you take the first step?
+  description: Tips and guidance on how to phrase and describe experiences during the resume writing process.
+  ms.date: 4/16/2021 
+  author: gcordido 
+  ms.author: gcordido 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-resume-writing.md)]

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.get-noticed
+metadata:
+  title: How to get noticed
+  description: description
+  ms.date: 2/26/2021
+  author: gcordido
+  ms.author: gcordido
+  ms.topic: interactive-tutorial
+title: How To Get Noticed
+summary: Summary
+abstract: |
+  In this module, you will: 
+    - # objective 1
+    - # objective 2
+    - # objective 3 (if needed)
+prerequisites: None
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+  - learn.get-noticed.1-introduction
+  - learn.get-noticed.2-networking
+  - learn.get-noticed.3-exercise-unit
+  - learn.get-noticed.4-resume-writing
+  - learn.get-noticed.5-resume-building
+  - learn.get-noticed.6-knowledge-check
+  - learn.get-noticed.7-summary
+
+badge:
+  uid: learn.get-noticed.badge

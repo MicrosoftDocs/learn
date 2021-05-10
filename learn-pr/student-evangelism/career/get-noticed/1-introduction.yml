@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.1-introduction  
+title: Introduction  
+metadata:
+  type: introduction  
+  title: From Student to Employee - Getting Noticed
+  description: Tips and guidance to get started in your career, showcasing your experience and skills, and "getting your foot in the door".
+  ms.date: 4/16/2021  
+  author: gcordido  
+  ms.author: gcordido  
+  ms.topic: interactive-tutorial
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

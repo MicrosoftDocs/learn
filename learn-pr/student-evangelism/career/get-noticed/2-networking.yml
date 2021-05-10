@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.2-networking
+title: Networking
+metadata:
+  type: learning-content  
+  title: Networking
+  description: An introuction to networking, what it is and how to get started.
+  ms.date: 2/26/2021  
+  author: gcordido  
+  ms.author: gcordido  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-networking.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.summary  
+title: Summary  
+metadata:
+  type: summary  
+  title: Summary
+  description: summary
+  ms.date: 2/26/2021  
+  author: gcordido  
+  ms.author: gcordido  
+  ms.topic: interactive-tutorial
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
