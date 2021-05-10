@@ -38,3 +38,6 @@ You'll probably need to return information about each storage account that's bee
 > Currently, Bicep doesn't support directly referencing resources that have been created within a loop from within an output loop. This means that you need to use array indexers to access resources, like in the example below.
 
 ::: code language="bicep" source="code/7-loop-output-complex.bicep" range="16-21" :::
+
+> [!CAUTION]
+> Make sure you don't use outputs to return secrets, like access keys or passwords. Outputs are logged, and they aren't designed for handling secure data.

@@ -11,78 +11,53 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: "You need to write a template that includes an Azure Policy definition. This should only be deployed for production environments. What should you do?"
+  - content: You need to write a template that includes an Azure Policy assignment. This should only be deployed for production environments. What should you do?
     choices:
-    - content: "Define a resource for the Azure Policy definition using the audit effect, and just ignore any errors for non-production environments."
+    - content: Define a resource for the policy assignment using the *audit* effect, and just ignore any errors for non-production environments.
       isCorrect: false
-      explanation: "Defining a resource in a template without condition will deploy resource to your environment regardless of deployment parameters, which is not goal you are trying to achieve."
-    - content: "Add a condition to your Bicep template so that the policy definition is only deployed when an environmentName parameter is set to production."
+      explanation: It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only only your production environments.
+    - content: Add a condition to your Bicep template so that the policy assignment is only deployed when the `environmentName` parameter value is set to `Production`.
       isCorrect: true
-      explanation: "Using condition with resource declaration is correct way to control when resource should be deployed."
-    - content: "Put the Azure Policy definition into its own module."
+      explanation: By using a condition with your resource declaration, you'll only assign the policy to environments that need it.
+    - content: Move the policy assignment into its own module.
       isCorrect: false
-      explanation: "Putting Azure Policy definition into its own module won't achieve your goal to deploy Policy only for production environments. You should still use condition when declaring module in your template."
-  - content: "Which of these is a good use case for loops?"
+      explanation: Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
+  - content: Which of these is a good use case for loops?
     choices:
-    - content: "Deploying multiple resources that are almost identical, but with some minor differences between them."
+    - content: Deploy multiple resources that are almost identical, but with some minor differences between them.
       isCorrect: true
-      explanation: "Copy loops enable you to deploy multiple resources that are identical or have minor differences."
-    - content: "Deploying the same resources to multiple environments."
+      explanation: Copy loops enable you to deploy multiple resources that are identical or have minor differences.
+    - content: Deploy the same resources to multiple environments.
       isCorrect: false
-      explanation: "Typically you would reuse same template with different deployment parameters when deploying resources to different environments. You use copy loops when creating multiple instances of resources."
-    - content: "Writing custom functions to run inside your Bicep template."
+      explanation: Typically you use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when creating multiple instances of resources within a single deployment.
+    - content: Running custom code inside your Bicep file.
       isCorrect: false
-      explanation: "While you might use loops inside custom functions, you would typically use copy loops when creating multiple instances of resources inside template."
-  - content: "Which keyword should you use when you want to create multiple instances of resource?"
+      explanation: Loops can't be used to execute custom code.
+  - content: How can you reference the current loop item within a Bicep loop?
     choices:
-    - content: "```if```"
+    - content: Use the `copyIndex()`` function.
       isCorrect: false
-      explanation: "```if``` keyword is used when you want to conditionally deploy resources."
-    - content: "```for```"
+      explanation: The `copyIndex()`` function is used with JSON templates, not with Bicep templates.
+    - content: Use array functions.
+      isCorrect: false
+      explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.
+    - content: Use the symbolic name you specified within the loop declaration.
       isCorrect: true
-      explanation: "Correct. ```for``` keyword is used when you want to use copy loops."
-    - content: "```case```"
-      isCorrect: false
-      explanation: "```case``` is not keyword you use with declaration of copy loops."
-    - content: "```when```"
-      isCorrect: false
-      explanation: "```when``` is not keyword you use with declaration of copy loops."
-  - content: "How can you reference specific instance in loop?"
+      explanation: You can access the current loop item by using the symbolic name you used in the loop declaration.
+  - content: |
+      You used an array parameter to create specified number of storage accounts.
+      You need to return the storage account names for all of the storage accounts you deploy so that the user running the deployment can see it.
+      Which option should you use to return the storage account names?"
     choices:
-    - content: "Use copyIndex() function"
-      isCorrect: false
-      explanation: "copyIndex() function is used with ARM templates, not with Bicep templates."
-    - content: "Use array functions"
-      isCorrect: false
-      explanation: "Wrong. You should use iterator or loop index to reference specific instance in loop."
-    - content: "Reference it by iterator name provided after for keyword"
+    - content: Use an output loop to return an array with the storage account names.
       isCorrect: true
-      explanation: "Correct. Using iterator name you used in copy loop declaration is way to reference specific instance in loop."
-  - content: "You used parameter value to create specified number of storage accounts. You need to retrieve storage account keys for all deployed storage accounts when deployment is finished. Which option should you use to retrieve required values?"
-    choices:
-    - content: "Use output loop to display storage account key for each deployed storage account instance."
-      isCorrect: true
-      explanation: "Correct. Using output loop you could retrieve properties of all storage accounts deployed with template."
-    - content: "Use variable loop to display storage key for each storage account instance."
+      explanation: By using an output loop, you can retrieve the name and other properties of the storage accounts you've deployed.
+    - content: Use a variable loop to create a list of storage account names for each resource.
       isCorrect: false
-      explanation: "You wouldn't be able to retrieve storage account keys with variable loops."
-    - content: "Use output function within resource declaration loop."
+      explanation: Variables aren't returned to the user executing the deployment.
+    - content: Use the output function within resource declaration loop.
       isCorrect: false
-      explanation: "Wrong. You should use output loops to retrieve properties of deployed resources."
+      explanation: Outputs need to be declared separately to resources. This includes output loops.
