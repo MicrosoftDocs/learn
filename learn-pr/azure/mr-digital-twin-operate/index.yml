@@ -34,6 +34,7 @@ prerequisites: |
   - Basic PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
+hidden: true
 levels:
 - intermediate
 roles:
