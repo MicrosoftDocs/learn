@@ -1,21 +1,27 @@
 A complete Unity project has been prepared for you to assist with this learning path.  Download the code from the GitHub repository and extract the Zip file to your destination Unity Project Path of choice. 
 
-## Install the tools
-
-To build Mixed Reality solutions in Unity, you need a few different development tools:  
+To build Mixed Reality solutions in Unity, you require a number of different development tools.  You can have multiple versions of Unity on your computer, managed within the Unity Hub. 
 
 - Install the [required tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-    - You can have multiple versions of Unity on your computer, managed within the Unity Hub.  When selecting a version of Unity, install **Unity 2020.3.x LTS**, which is supported for this module.  The LTS stands for Long-Term Support and Unity is committed to supporting 2020.3 LTS releases until March 2023.
-    - Launch the **Mixed Reality Feature Tool** (MixedRealityFeatureTool.exe) and select **Start** to begin installing MRTK components to your Unity Project. 
+- Download and Unzip the compressed folder from GitHub and take note of the folder location to where you extracted the project.
+- From within the Unity Hub, select **Installs** from the panel on the left side.
+
+:::image type="content" source="../media/unity-hub-installs.png" alt-text="Screenshot of the Unity Hub application open to the installs window.":::
+
+- **Unity 2020.3.0f1 LTS** is used for this learning path.  If you do not see it installed already, you must download the file from [Unity Download Archive](https://unity3d.com/unity/qa/lts-releases?version=2020.3), directly download an [.exe installation file](https://download.unity3d.com/download_unity/c7b5465681fb/UnityDownloadAssistant-2020.3.0f1.exe?_gl=1*xhk3at*_gcl_aw*R0NMLjE2MTk0NTIxNjEuQ2owS0NRand5Wm1FQmhDcEFSSXNBTEl6bW5MVDFtUkdzUDZvbGJxYXhjczJTSmh0b0trTWVoTFN6OEtRU3FtbllTdFc2NFo3ZnZETUpJWWFBb1BiRUFMd193Y0I.&_ga=2.32276217.651960466.1620515396-381725108.1597335987&_gac=1.15686084.1619452162.Cj0KCQjwyZmEBhCpARIsALIzmnLT1mRGsP6olbqaxcs2SJhtoKkMehLSz8KQSqmnYStW64Z7fvDMJIYaAoPbEALw_wcB), or install from [Unity Hub](unityhub://2020.3.0f1/c7b5465681fb).  The LTS stands for Long Term Support and Unity is committed to supporting 2020.3 LTS releases until March 2023. Depending on your PC and your Internet connection, this can take 10-15min.
+    
+## Install MRTK components
+
+1. Launch the **Mixed Reality Feature Tool** (MixedRealityFeatureTool.exe) and select **Start** to begin installing MRTK components to your Unity Project. 
 
 :::image type="content" source="../media/mrft-splash-screen.png" alt-text="Screenshot of the Mixed Reality Feature Tool start window.":::
 
-- Click on **Select Project**. Click the three ellipses **“...”**  button to browse for the folder where you downloaded and extracted the Unity project. The folder you select here must be immediately above the Asset folder, which contains the entire Unity Project.
+2. Click on **Select Project**. Click the three ellipses **“...”**  button to browse for the folder where you downloaded and extracted the Unity project. The folder you select here must be immediately above the **Asset** folder, which contains the entire Unity Project.
 
 :::image type="content" source="../media/mrft-select-project.png" alt-text="Screenshot of the Mixed Reality Feature Tool select project window.":::
 
-- Select Discover Features
-- Ensure you select the following versions to ensure compatibility with the supplied Unity project:
+3. Select Discover Features
+4. Ensure you select the following versions to ensure compatibility with the supplied Unity project:
     - Mixed Reality Toolkit Extensions 2.5.4
     - Mixed Reality Toolkit Foundation 2.5.4
     - Mixed Reality Toolkit GPU Stats 1.0.3
@@ -27,16 +33,16 @@ To build Mixed Reality solutions in Unity, you need a few different development 
 
 :::image type="content" source="../media/mrft-discover-features.png" alt-text="Screenshot of the Mixed Reality Feature Tool discover features window.":::
 
-- After making these selections, select **Get Features**. This will download the corresponding packages and keep them in a temporary location (that is, package cache).
-- Validate your package selection and select **Import**. The packages will be copied into the Unity Project and the necessary modifications in the project’s package manifest are made.
+5. Select **Get Features**. This will download the corresponding packages and keep them in a temporary location (i.e., package cache).
+6. Validate your package selection and select **Import**. The packages will be copied into the Unity Project and the necessary modifications in the project’s package manifest are made.
 
 :::image type="content" source="../media/mrft-import-features.png" alt-text="Screenshot of the Mixed Reality Feature Tool import features window.":::
 
-- You may see the following screen if you've imported the same MRTK components previously.  It's safe to select **Approve**.
+7. You may see the following screen if you've imported the same MRTK components previously.  It's safe to select **Approve**.
 
 :::image type="content" source="../media/mrft-review-and-approve.png" alt-text="Screenshot of the Mixed Reality Feature Tool review and approve window.":::
 
-- When the Tool completes, select **Exit** to leave the Mixed Reality Feature Tool.
+8. When the Tool completes, select **Exit** to leave the Mixed Reality Feature Tool.
 
 ## Verify Unity project dependencies
 
@@ -46,14 +52,17 @@ Open and verify your Unity Project has the required dependencies and settings.
 
 :::image type="content" source="../media/unity-project-spalsh-screen.png" alt-text="Screenshot of the Unity Hub application with the projects tab selected.":::
 
-- Browse to the folder where you extracted the Project contents from the Zip file obtained from GitHub and Select Folder.
-- Open the Project by clicking on the project name.  
-    - If an orange exclamation point shows under the project name, hover over it for a description and suggested actions (for example, incorrect Unity version, install)
+- Browse to the folder where you extracted the Project contents from the Zip file obtained from GitHub and **Select Folder**.
+
+> [!NOTE]
+> If an orange exclamation mark shows under the project name, hover over it for a more detailed description of the message, including suggested actions (e.g., incorrect Unity version, install)
+
+- Open the Project by clicking on the project name.  This can take several minutes while Unity imports and compiles the associated packages  
 - Locate the Main scene in the Project panel in **Assets > Scenes > MainScene** and double-click it.
 
 :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the Main Scene loaded.":::
 
-If no error messages appear, your Project is ready to be configured / developed.
+If no error messages appear, your Project is ready to be configured / developed. You may notice Warning messages, which are acceptable and will not interfere with your Project functionality.
 
 ## Finalize project settings
 
@@ -61,10 +70,3 @@ This Project uses the OpenXR plug-in.  OpenXR is an open, royalty-free standard 
 - Enable the **Lock Input to the Game View** option. This can be found in the **Window > Analysis > Input Debugger > Options** dropdown menu.  This setting persists in your editor, so you only need to do this once.  
 
 :::image type="content" source="../media/lock-input-game-view.png" alt-text="Screenshot of the Unity input debugger panel with the options dropdown selected and lock input to game view highlighted.":::
-
-Gizmos are a graphic overlay associated with a GameObject in a Scene, and displayed in the Scene View. Built-in scene tools such as the move tool are Gizmos, and you can create custom Gizmos using textures or scripting. Some Gizmos are only drawn when the GameObject is selected, while other Gizmos are drawn by the Editor no matter which GameObjects are selected.  You'll want to adjust the size of the Gizmos for your Scene, so that your Scene is not overwhelmed by ‘large blue objects’.  
-
-- Select the **Gizmos** dropdown and adjust the size via the slider.  
-- Also, you can toggle Gizmos on and off by selecting the Gizmos button at the top of your Scene.
-
-:::image type="content" source="../media/gizmos-size.png" alt-text="Screenshot of the Unity editor with gizmos selected.":::
