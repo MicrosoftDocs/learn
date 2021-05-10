@@ -16,7 +16,8 @@ abstract: |
   - Leverage Unity Prefabs to accelerate Digital Twin solutions
   - Use MRTK interactions to provide a rich user experience
   - Place assets in a Unity scene
-iconUrl: /learn/achievements/mr-digital-twin-place-assets.svg
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+hidden: true
 levels:
 - beginner
 roles:
