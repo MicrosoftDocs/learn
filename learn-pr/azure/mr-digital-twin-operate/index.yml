@@ -25,7 +25,7 @@ abstract: |
 prerequisites: |
   - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
   - Build a 3D Scene in Unity with Maps SDK Module
-  - Configure 3D assets in a Unity scene [Design] Module
+  - Configure 3D assets in a Unity scene Module
   - Azure service creation and configuration
   - Domain User Azure Active Directory (i.e., not Guest)
   - An Azure subscription
