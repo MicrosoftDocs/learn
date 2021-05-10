@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Infrastructure as code improves the consistency of your deployments."
       isCorrect: true
-      explanation: "Correct. Infrastructure as code will help reduce human error in resource provisioning, and ensure consistency."
+      explanation: "Correct. Infrastructure as code helps reduce human error in resource provisioning and ensure consistency."
     - content: "Infrastructure as code requires that you deploy only a single environment."
       isCorrect: false
       explanation: "Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync."
@@ -66,9 +66,9 @@ quiz:
     - content: "XML template."
       isCorrect: false
       explanation: "Incorrect. XML templates aren't used for Azure resource deployments."
-    - content: "Bash script by using Azure CLI."
+    - content: "Running a Bash script in Azure CLI."
       isCorrect: false
-      explanation: "Incorrect. A Bash script by using Azure CLI isn't a declarative template."
+      explanation: "Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template."
   - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using ARM templates?"
     choices:
     - content: "Imperative code."
@@ -85,9 +85,9 @@ quiz:
     - content: "A language that's designed to communicate with Active Directory Domain Services."
       isCorrect: false
       explanation: "Incorrect. A domain-specific language isn't intended to be used as a general programming language for writing applications."
-    - content: "A language that is designed for a specific scenario or domain."
+    - content: "A language that's designed for a specific scenario or domain."
       isCorrect: true
       explanation: "Correct. A domain-specific language is designed for a specific scenario or domain."
-    - content: "A language that is designed to be used as a general programming language for writing applications."
+    - content: "A language that's designed to be used as a general programming language for writing applications."
       isCorrect: false
       explanation: "Incorrect. A domain-specific language is not intended to be used as a general programming language for writing applications."

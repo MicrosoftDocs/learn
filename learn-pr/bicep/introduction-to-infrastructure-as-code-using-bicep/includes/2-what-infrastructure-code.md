@@ -15,11 +15,11 @@ Your company designs new toys for release to the market, and most new toys requi
 
 You can think of infrastructure as code as being like the instruction manual for your infrastructure. The manual details the end configuration of your resources and how to reach that configuration state.
 
-Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When creating an application, your source code generates the same result each time it's compiled. In a similar manner, Infrastructure as code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
+Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When creating an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure as code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
 
 ![Infrastructure as code](../media/iac.svg)
 
-Thinking back to the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show a detailed view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
+Thinking back to the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
 
 ## Why use infrastructure as code?
 
@@ -117,7 +117,7 @@ You can use an imperative approach to fully automate resource provisioning, but 
 
 ### Declarative code
 
-In Azure, a declarative code approach is accomplished by using  _templates_. There are many types of templates available to use, including:
+In Azure, a declarative code approach is accomplished by using  _templates_. Many types of templates are available to use, including:
 
 - JSON
 - Bicep

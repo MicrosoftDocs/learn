@@ -49,7 +49,7 @@ The following image shows the role Resource Manager plays in handling Azure requ
 All control plane operation requests are sent to a Resource Manager URL. For example, the create or update operation for virtual machines is a control plane operation. Here's the request URL for this operation:
 
 ```http
-PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{virtualMachineName}?api-version=2020-12-01
+PUT https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.Compute/virtualMachines/{virtualMachineName}?api-version=2020-12-01
 ```
 
 The control plane understands which resources need to be created and which resources already exist. Resource Manager understands the difference between these requests and won't create identical resources or delete existing resources, although there are ways to override this behavior.
@@ -68,7 +68,7 @@ Resource Manager features like access control and locks don't always apply to da
 
 ARM templates are files that define the infrastructure and configuration for your deployment. When you write an ARM template, you take a declarative approach to your resource provisioning. These templates describe each resource in the deployment, but they don't describe how to deploy the resources. When you submit a template to Resource Manager for deployment, the control plane can deploy the defined resources in an organized and consistent manner. In the preceding unit, you learned about the differences between imperative code and declarative code.
 
-## Why use ARM templates?
+### Why use ARM templates?
 
 There are many benefits to using ARM templates, both JSON and Bicep, for your resource provisioning:
 
