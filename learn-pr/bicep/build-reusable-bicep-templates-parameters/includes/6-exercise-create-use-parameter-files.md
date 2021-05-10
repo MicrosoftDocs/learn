@@ -28,7 +28,7 @@ Now you need to add a SQL server and database. First, you'll add parameters for 
 
    :::code language="plaintext" source="code/6-template.bicep" range="1-34" highlight="25-34" :::
 
-   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a default value in a parameter file shortly.
+   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a value in a parameter file shortly.
 
 ## Add new variables
 

@@ -82,7 +82,7 @@ Ensure that the `appServicePlanInstanceCount` parameter only allows values betwe
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../shared/includes/bicep-exercise-deploy-cli.md)]
 
-### Deploy the template to Azure by using Visual Studio Code
+### Deploy the template to Azure by using the Azure CLI
 
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. You don't need to specify the parameter values because they have default values specified. This process can take a minute or two to complete, and then you'll see a successful deployment.
 
