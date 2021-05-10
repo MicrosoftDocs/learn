@@ -1,5 +1,7 @@
 Application performance often depends on how quickly it can read and write data. In order to understand how to improve that performance, you first have to understand how performance is measured and the settings and choices that affect it.
 
+<!--Marjan - Unit 3 in the design document is called Identify how disk performance works. Please check if the title needs to be updated.-->
+
 ## Disk performance measures
 
 To choose the right disk type, it's important you understand the performance indicators. Performance is expressed based on the following performance indicators:
@@ -24,9 +26,9 @@ For example, suppose that your application makes a request that requires 15 000 
 
 ![](RackMultipart20210505-4-dcihql_html_3c598c1975759fdb.png)
 
-The scenario illustrated in the preceding example is known as VM IO Capped, when the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot handle this.
+The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot accomodate these requirements.
 
-You can diagnose the performance issues due the VM IO capping using the following metrics:
+You can diagnose the performance issues due to VM IO capping by using the following metrics:
 
 - VM Cached IOPS Consumed Percentage
 - VM Cached Bandwidth Consumed Percentage
@@ -35,9 +37,9 @@ You can diagnose the performance issues due the VM IO capping using the followin
 
 ## Disk IO capping
 
-You might come across other situations where the application demands are not satisfied, but this time the bottleneck might be caused from a wrong selection of the performance of the disks.
+You might come across other situations where the storage solution does not meet the application demands. However, this time the bottleneck might be caused because of the selection of an incorrect performance tier of the disks. <!--Marjan, please check the edits to the previous sentence-->
 
-Continuing the same example where the application has demanded 15000 IOPS from the VM, you have chosen the following setup:
+Consider the same example where the application requires 15000 IOPS from the VM, and you have chosen the following setup:
 
 - Standard D16s_v4 with 25600 IOPS
 - P20 OS disk with 2300 IOPS
@@ -50,9 +52,9 @@ In this scenario, the application's demand will be broken down into three differ
 
 The total IOPS that VM will return to application will be 12 300 as a sum of each IOPS provided by the OS and data disks.
 
-This scenario is known as Disk IO capping, when the disk itself cannot meet the application demands.
+This scenario is known as *disk IO capping*, when the disk itself cannot meet the application demands.
 
-To diagnose disk IO capping use the following metrics:
+To diagnose disk IO capping, use the following metrics:
 
 - Data Disk IOPS Consumed Percentage
 - Data Disk Bandwidth Consumed Percentage
@@ -61,33 +63,33 @@ To diagnose disk IO capping use the following metrics:
 
 ## Disk caching
 
-A cache is a specialized component that stores data, typically in memory so that it can be accessed more quickly. The data in a cache is often data that has been read previously or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
+A cache is a specialized component that stores data, typically in memory, so that the disk can access the data <!--Marjan, I changed this to active voice by saying "the disk can access the data" Please check if that edit is okay--> more quickly. The data in a cache is often data that has been read previously or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk. <!--Marjan, maybe it's me but this sentence is not very clear to me. What other way can get the data if you are not getting it from the disk. Can you please clarify?-->
 
-Caching uses specialized, and sometimes expensive, temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, decisions need to be made as to what data operations will benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
+Caching uses specialized, and sometimes expensive, temporary storage that has faster read and write performance compared to permanent storage. Because cache storage is often limited, you might need to decide which data operations will benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
 
-**Read caching**  tries to speed up data _retrieval_. Instead of reading from permanent storage, the data is read from the faster cache.
+**Read caching** <!--Marjan, is there a reason why this and Write caching are in bold? We don't bold them in later instances.-->  tries to speed up data _retrieval_. Instead of reading from permanent storage, the disk reads the data <!--Marjan, please check this edit to active voice is okay--> from the faster cache.
 
 It's important to note that read caching helps when there is some _predictability_ to the read queue, such as a set of sequential reads. For random I/O, where the data you're accessing is scattered across storage, caching will be of little or no benefit and can even reduce disk performance.
 
 **Write caching**  tries to speed up _writing data_ to persistent storage. By using a write cache, the app can consider the data to be saved.
 
-In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, handle writing cached data to persistent disk storage themselves.
+In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, manage the task of writing cached data to persistent disk storage themselves.
 
 ## Cached and uncached limits of VMs
 
-Now that you understand that the caching can improve the performance for reading or writing on the disk, lets see how that affect VM performance.
+Now that you understand how caching can improve the performance for reading or writing on the disk, you should be aware of how caching affects VM performance.
 
-The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of th VM. All VMs in the premium tier, has different limits for IOPS and throughput based on cached and uncached configuration. You can improve the performance of the VM to meet the higher demand for IOPS and throughput, by enabling VM host caching.
+The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of the VM. All VMs in the premium tier have different limits for IOPS and throughput based on cached and uncached configurations. You can improve the performance of the VM to meet the higher demand for IOPS and throughput by enabling VM host caching.
 
-The following table lists examples that illustrate difference performance for cached and uncached disk throughput and bandwith:
+The following table lists examples that illustrate the difference in performance for cached and uncached disk throughput and bandwith:
 
 | VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in GiB) | Max uncached disk throughput IOPS/MBps |
 | --- | --- | --- |
 | Standard_D2s_v3 | 4000/32 (50) | 3200/48 |
 | Standard_D4s_v3 | 8000/64 (100) | 6400/96 |
 | Standard_D8s_v3 | 16000/128 (200) | 12800/192 |
-| Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 |
+| Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 | <!--Marjan, please check if there is an extra zero in 128000/1024 (1600)-->
 
-Lets ilustrate how the host caching can help you to avoid VM bottlneck scenarios.
-In the previous example for VM IO caping the applications has demanded 15000 IOPS, and both data disks can handle that demands, but the Standard_D8s_v3 VM can only offer 12800 IOPS in uncached state.
-If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS which is more that the application demands. 
+Host caching can help you avoid VM bottlneck scenarios.
+In the earlier example of VM IO capping, the application required 15000 IOPS. Both <!--Marjan, what does both refer to here? cached and uncached? Can we say that here?--> data disks can handle that demand, but the Standard_D8s_v3 VM can only offer 12800 IOPS in the uncached state.
+If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS, which is more that the application demands.
