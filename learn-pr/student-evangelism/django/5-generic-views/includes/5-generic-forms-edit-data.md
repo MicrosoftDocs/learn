@@ -58,18 +58,17 @@ class DogUpdateView(generic.CreateView):
     fields = ['name', 'description', 'shelter']
 ```
 
-> [!NOTE]
-> After successfully creating or updating an item, Django redirects to the details page for the item. It retrieves the URL for the details by using `get_absolute_url` on the associated model. You implement this method by returning the correct URL. You should always retrieve the appropriate URL from URLconf, which can be done by using `reverse`.
->
-> ```python
-> from django.db import models
-> # TODO: Import reverse
-> from django.urls import reverse
-> class Dog(models.Model):
->     # Existing code
->     def get_absolute_url(self):
->         return reverse('dog_detail', args=[str(self.id)])
-> ```
+After successfully creating or updating an item, Django redirects to the details page for the item. It retrieves the URL for the details by using `get_absolute_url` on the associated model. You implement this method by returning the correct URL. You should always retrieve the appropriate URL from URLconf, which can be done by using `reverse`. Note `kwargs` is used to pass the `pk` or primary key parameter.
+
+```python
+from django.db import models
+# TODO: Import reverse
+from django.urls import reverse
+class Dog(models.Model):
+    # Existing code
+    def get_absolute_url(self):
+        return reverse('dog_detail', kwargs={"pk": self.pk})
+```
 
 ### DeleteView
 
