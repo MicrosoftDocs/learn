@@ -5,7 +5,7 @@ metadata:
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
   ms.date: 5/4/2021
   author: Sean-Kerawala
-  ms.author: sekerawas
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity

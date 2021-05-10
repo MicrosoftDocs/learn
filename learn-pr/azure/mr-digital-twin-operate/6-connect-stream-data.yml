@@ -3,7 +3,7 @@ uid: learn.azure.mr-digital-twin-operate.6-connect-stream-data
 title: Exercise - connect and stream Azure Digital Twin data to wind turbine assets
 metadata:
   title: Exercise - connect and stream Azure Digital Twin data to wind turbine assets
-  description: Learn about design and development processes that are useful for mixed reality and 3D content. Explore bodystorming, acting, storyboarding, and the Mixed Reality Toolkit.
+  description: Learn how to connect and stream Azure Digital Twin data to the wind turbine assets in your Unity project.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa

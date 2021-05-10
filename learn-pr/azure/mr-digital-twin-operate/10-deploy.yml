@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.mr-digital-twin-operate.9-deploy
+uid: learn.azure.mr-digital-twin-operate.10-deploy
 title: Exercise - deploy to HoloLens 2, test, and uninstall
 metadata:
   title: Exercise - deploy to HoloLens 2, test, and uninstall
-  description: Learn about the variety of cloud services and applications that can be integrated with mixed-reality applications, including Azure Spatial Anchors, Azure Remote Rendering, and cognitive services.
+  description: Get step-by-step instructions on deploying, testing, and uninstalling your project on a HoloLens 2 device.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/9-deploy.md)]
+  [!include[](includes/10-deploy.md)]
