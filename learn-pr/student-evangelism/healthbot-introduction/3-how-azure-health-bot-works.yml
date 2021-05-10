@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-introduction.3-how-azure-health-bot-works
+title: How does Azure Health Bot work
+metadata:
+  title: How does Azure Health Bot work
+  description: In this unit, you will learn how Azure Health Bot works.
+  author: RuchaYagnik
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-azure-health-bot-works.md)]
+
+  ### NOTE TO LEE - This quiz has 2 correct 'true' responses. This is not allowed. You'll need to revise the question and choices so only one of them is true.
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What differentiates a Health bot from a Basic Chatbot?
+      choices:
+        - content: Built-in medical database
+          isCorrect: true
+          explanation: A built-in medical database differentiates the Health Bot service from the Bot Framework and gives developers the chance to use built-in in scenarios or create custom scenarios to meet their business     needs.
+        - content: Secure and privacy protected to HIPAA Standards
+          isCorrect: false
+          explanation: The information handled by each instance of the Health Bot Service
+            is privacy protected to HIPAA standards and secured to the highest
+            standards for privacy and security by Microsoft. Built on top of the
+            industry-leading Microsoft Azure technology, the Azure architecture
+            powers the Health Bot Service's ability to scale with resilience,
+            while maintaining the highest standards of privacy and security.
+        - content: Allows customers to interact with computer applications in a
+            conversational way using text, graphics, or speech
+          isCorrect: false
+          explanation: Allows customers to interact with computer applications in a
+            conversational way using text, graphics, or speech.

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-introduction.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Two multiple-choice questions
+  ms.date: 04/27/2020
+  author: RuchaYagnik
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+
+    - content: "True or False: A Health Bot instance cannot be integrated within the
+        organization's existing systems."
+      choices:
+        - content: "True"
+          isCorrect: true
+          explanation: A Health Bot instance can be integrated within the organization's
+            existing systems without any functional problem.
+        - content: "False"
+          isCorrect: false
+          explanation: A Health Bot instance can be successfully integrated within the
+            organization's existing systems.
+    
+    - content: Which of the following statements is not true about Health Bot?
+      choices:
+        - content: It offers an extensible management portal.
+          isCorrect: false
+          explanation: In Interactions tab you configure built-in scenarios that interact with the end user.
+        - content: It meets the regulatory requirements of the healthcare industry.
+          isCorrect: false
+          explanation: The information handled by each instance of the Health Bot is  privacy protected to HIPAA standards and secured to the highest standards for privacy and security by Microsoft.
+        - content: It doesn’t allow handoff to humans when a negative sentiment is
+            detected
+          isCorrect: true
+          explanation: It allows handoff to humans when a negative sentiment is detected.
