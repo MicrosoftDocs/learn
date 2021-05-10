@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.5-unity-overview
+uid: learn.azure.mr-digital-twin-intro.5-unity-overview
 title: Unity overview
 metadata:
   title: Unity overview
-  description: Import and configure resources.
+  description: Get a quick overview of the Unity platform and how it relates to mixed reality development.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 1
 content: |
   [!include[](includes/5-unity-overview.md)]

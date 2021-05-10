@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.4-digital-twin-get-started
+uid: learn.azure.mr-digital-twin-intro.4-digital-twin-get-started
 title: Get started with Azure Digital Twin
 metadata:
   title: Get started with Azure Digital Twin
-  description: Import and configure resources
+  description: Learn how to get started with Azure Digital Twins in your own mixed reality projects.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.6-unity-get-started
+uid: learn.azure.mr-digital-twin-intro.6-unity-get-started
 title: Get started with Unity
 metadata:
   title: Get started with Unity
-  description: Interaction models for interacting with holograms.
+  description: Learn how to download and create a Unity project from scratch for mixed reality and Azure Digital Twins.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/6-unity-get-started.md)]

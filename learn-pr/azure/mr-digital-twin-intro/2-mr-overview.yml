@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.2-mr-overview
+uid: learn.azure.mr-digital-twin-intro.2-mr-overview
 title: Microsoft Mixed Reality overview
 metadata:
   title: Microsoft Mixed Reality overview
-  description: Configure Unity for Windows Mixed Reality development.
+  description: Learn about what Microsoft Mixed Reality development has to offer.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021

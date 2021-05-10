@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.3-digital-twin-overview
+uid: learn.azure.mr-digital-twin-intro.3-digital-twin-overview
 title: Azure Digital Twin overview
 metadata:
   title: Azure Digital Twin overview
-  description: Configure Unity for Windows Mixed Reality development.
+  description: Learn about the Azure Digital Twins Internet of Things (IoT) platform that can enable you to create a digital representation of real-world things, places, business processes, and people.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 1
 content: |
   [!include[](includes/3-digital-twin-overview.md)]

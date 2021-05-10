@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twin-intro
+uid: learn.azure.mr-digital-twin-intro
 metadata:
   title: Introduction to Mixed Reality, Azure Digital Twin and Unity 
   description: Import 
@@ -16,7 +16,8 @@ abstract: |
   - Describe a Digital Twin and summarize how they can be used in business settings
   - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
   - Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
-iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+hidden: true 
 levels:
 - beginner
 roles:
@@ -35,15 +36,15 @@ prerequisites: |
       - The learning module package downloaded from GitHub [LINK]
       - Microsoft Mixed Reality Feature Tool
 units:
-- learn.mr-digital-twin-intro.1-introduction
-- learn.mr-digital-twin-intro.2-mr-overview
-- learn.mr-digital-twin-intro.3-digital-twin-overview
-- learn.mr-digital-twin-intro.4-digital-twin-get-started
-- learn.mr-digital-twin-intro.5-unity-overview
-- learn.mr-digital-twin-intro.6-unity-get-started
-- learn.mr-digital-twin-intro.7-signalr-overview
-- learn.mr-digital-twin-intro.8-use-cases
-- learn.mr-digital-twin-intro.9-knowledge-check
-- learn.mr-digital-twin-intro.10-summary
+- learn.azure.mr-digital-twin-intro.1-introduction
+- learn.azure.mr-digital-twin-intro.2-mr-overview
+- learn.azure.mr-digital-twin-intro.3-digital-twin-overview
+- learn.azure.mr-digital-twin-intro.4-digital-twin-get-started
+- learn.azure.mr-digital-twin-intro.5-unity-overview
+- learn.azure.mr-digital-twin-intro.6-unity-get-started
+- learn.azure.mr-digital-twin-intro.7-signalr-overview
+- learn.azure.mr-digital-twin-intro.8-use-cases
+- learn.azure.mr-digital-twin-intro.9-knowledge-check
+- learn.azure.mr-digital-twin-intro.10-summary
 badge:
-  uid: learn.mr-digital-twin-intro.badge
+  uid: learn.azure.mr-digital-twin-intro.badge

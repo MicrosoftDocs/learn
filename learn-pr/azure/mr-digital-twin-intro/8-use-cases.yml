@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-intro.8-use-cases
+uid: learn.azure.mr-digital-twin-intro.8-use-cases
 title: Use case introduction
 metadata:
   title: Use case introduction
-  description: Add hand interaction to an object with objectmanipulator.
+  description: Learn about the modified assets and simulated operational data you'll be working with based on a real wind farm, the Lac-Alfred Wind Project in Quebec, Canada.
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.date: 5/5/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/8-use-cases.md)]
