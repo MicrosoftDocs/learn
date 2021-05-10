@@ -96,8 +96,11 @@ Use the Azure portal's **Data Explorer** tab to inspect the stored documents usi
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. **WIP**
+1. Select **Data explorer** from the table on the left.
+1. Expand **CouponDb**.
+1. Select and review the individual coupon documents.
 
-:::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Image description follows in text." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
+    :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Data explorer screenshot showing the coupon is flagged as consumed." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
-In the preceding image, you can see the document for coupon `DISC-15`, showing it's been used.
+    In the preceding image, you can see the document for coupon `DISC-15`, showing it's been used.
+In the next unit, you'll check your knowledge of key concepts from this module.
