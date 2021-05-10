@@ -16,8 +16,6 @@ abstract: |
   - Connect a mixed reality app to an Azure Digital Twins data source on Azure
   - Stream telemetry data to assets in your Unity scene, using Azure services, including ADT
   - Visualize the data on a HoloLens 2 via SignalR
-  - Experience and understand the power of Azure Digital Twins
-  - Use Mixed Reality to operate a wind farm
 prerequisites: |
   - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
   - Build a 3D Scene in Unity with Maps SDK Module
