@@ -38,4 +38,7 @@ Notice that this Bicep code uses the `?` operator within the `storageEndpoint` a
 
 You might wonder why this is necessary, since `auditingSettings` and `auditStorageAccount` both have the same condition and so we'll never need to deploy a SQL auditing settings resource without a storage account. While this is true, Resource Manager evaluates the property expressions before conditionals, so the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
 
+> [!NOTE]
+> You can't define two resources with the same name in the same Bicep file, and then conditionally deploy just one of them. The deployment will fail because Resource Manager will view this as a conflict.
+
 If you have several resources that all have the same condition for their deployment, considering using Bicep modules. You can create a module that deploys all of the resources, and then put a condition on the module in your main Bicep file.
