@@ -11,7 +11,3 @@ In this module, you'll:
 ## Prerequisites
 
 - Azure subscription
-- Local installations of Java **JDK** (1.8 or later), **Maven** (3.0 or later), and the **Azure CLI** (2.12 or later)
-- [Git CLI](https://git-scm.com/downloads)
-- [MySQL CLI](https://dev.mysql.com/downloads/shell/)
-- [JQ command line tool](https://stedolan.github.io/jq)

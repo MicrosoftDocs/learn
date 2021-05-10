@@ -4,10 +4,12 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 In this exercise, you'll clone a GitHub repository that contains all the code for Monitoring.
 
-1. On GitHub, clone the below repository:
+1. On the Azure portal, open Azure Cloud Shell and run the following to clone the sample repository and open the Monaco code editor:
 
-   ```html
-   https://github.com/roryp/azure-spring-cloud-reference-architecture.git
+   ```bash
+   git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
+   cd petclinic
+   code .
    ```
 
 ## Setup and run the Setup script
@@ -16,8 +18,6 @@ Edit the `deployPetClinicApp.sh` and customize the below parameters for your env
 
 | Variable | Description |
 |-|-|
-| project_directory| local directory that'll be used to clone the repository and build/deploy the application |
-| subscription | Your Azure Subscription ID. To find your Subscription ID, sign in to the Microsoft Azure portal. In the left-hand menu, select "All Services". In the General section, select "Subscriptions". Copy the Subscription ID for the applicable subscription |
 | resource_group | Provide a new or existing resource group name |
 | region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | spring_cloud_service | Name of your Azure Spring Cloud instance |
@@ -27,11 +27,9 @@ Edit the `deployPetClinicApp.sh` and customize the below parameters for your env
 
 ## Run the setup script
 
-The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance that will incur a nominal cost. Run the following script to setup the environment for this modules exercises:
+The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance that will incur a nominal cost. Open the Azure Cloud Shell and Run the following script to setup the environment for this modules exercises:
 
 ```bash
-cd petclinic
-az login
 sh deployPetClinicApp.sh
 ```
 
