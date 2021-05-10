@@ -8,7 +8,7 @@ metadata:
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
-Monitoring Java applications on Azure
+title: Monitoring Java applications on Azure
 summary: Monitoring Java applications on Azure
 abstract: |
   By the end of this module, you will:
