@@ -2,12 +2,11 @@ In this exercise, you'll update your function to parse information from the GitH
 
 ## Update our function to parse the webhook payload
 
-
 1. In the Azure portal, navigate to the function app that you created earlier.
 
-1. Select **Functions** and select the function that you created.
+1. In the middle menu pane, under **Functions**, select **Functions**, and then select the function that you created.
 
-1. Select **Code + Test** on the far right of the portal UI, and then select **index.js**.
+1. In the left menu pane, under **Developer**, select **Code + Test**, and in the path above the code box, from the dropdown list, select **index.js**.
 
 1. Update the index.js file by editing the code in the main window for the function. Replace the current `if...else` statement in the function body with the following code.
 
@@ -35,11 +34,11 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. Select the repository you are using for this module.
 
-1. Select the **Settings** tab.
+1. In the top menu bar, select the **Settings** tab.
 
-1. Select **Webhooks** in the navigation panel.
+1. In the left menu pane, select **Webhooks**. The **Webhooks** page appears.
 
-1. Select the **Edit** button next to your webhook.
+1. Select **Edit** next to your webhook.
 
 1. Scroll down to the **Recent Deliveries** section.
 

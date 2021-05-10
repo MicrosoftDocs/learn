@@ -57,6 +57,8 @@ It might seem like there's no functional difference between Terraform and a CM s
 
 Here is where everything changes. Terraform's principal job isn't to add a configuration to a platform that's already running. It creates virtual infrastructure around *all* the components that infrastructure will host simultaneously, the example above representing just one component of many. Getting Terraform to build the plan for this large job is an interactive process, though not a graphical one. First, all the scripts for tasks belonging to the plan are assembled in their specific directories. The core now knows what to look for.
 
+### Initialize Terraform
+
 From this point forward, the interaction process is deceptively simple. The core is launched with this command:
 
 ```terraform
@@ -64,6 +66,8 @@ terraform init
 ```
 
 It requires no parameters or qualifiers, because the inputs have already been written as files and stored in their proper directories. The launch process essentially looks for potential errors with the declarations and points them out if they exist. What the administrator is looking for here is a blank response with zero warnings.
+
+### Identify changes required
 
 Now the administrator moves on to the second stage:
 
@@ -78,6 +82,8 @@ For a containerized infrastructure rather than a VM-based platform, Terraform ca
 Once Terraform has completed its analysis, before it makes any changes, it presents this plan as a detailed report to the user. The plan may also be saved to a file in JSON format by adding an `-out` argument to the command. The report not only shows what actions will be taken, but in what order, and with natural-language explanations for why certain changes are necessary. It lists the resulting state of variables or data when it knows what that state will be. For example, it may know how large a VM instance needs to be, but it may not know what IP address it will be assigned.
 
 HashiCorp recommends that administrators share the plan report file with stakeholders throughout their organizations who may want to know about any changes. This process gives people the opportunity to ask questions and weigh in before a plan is deployed. Suggestions can be incorporated into the scripts, the system can be reset, and `terraform plan` can be reinitialized.
+
+### Apply the plan
 
 If all stakeholders have signed off and the plan is ready to go, then the administrator need only enter the following command:
 
