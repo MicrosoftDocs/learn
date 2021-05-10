@@ -23,7 +23,7 @@ Find the location name with the following command.
 3. Next, create the resource group.
 
 ```azurecli
-    $rg=<resource group name>
+    rg=<resource group name>
 
     az group create --name $rg --location <location>
 ```
