@@ -14,7 +14,10 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: You need to write a template that includes an Azure Policy assignment. This should only be deployed for production environments. What should you do?
+  - content: |
+      You need to write a template that includes an Azure Policy assignment.
+      This should only be deployed for production environments.
+      What should you do?
     choices:
     - content: Define a resource for the policy assignment using the *audit* effect, and just ignore any errors for non-production environments.
       isCorrect: false
@@ -38,9 +41,9 @@ quiz:
       explanation: Loops can't be used to execute custom code.
   - content: How can you reference the current loop item within a Bicep loop?
     choices:
-    - content: Use the `copyIndex()`` function.
+    - content: Use the `copyIndex()` function.
       isCorrect: false
-      explanation: The `copyIndex()`` function is used with JSON templates, not with Bicep templates.
+      explanation: The `copyIndex()` function is used with JSON templates, not with Bicep templates.
     - content: Use array functions.
       isCorrect: false
       explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.
@@ -50,7 +53,7 @@ quiz:
   - content: |
       You used an array parameter to create specified number of storage accounts.
       You need to return the storage account names for all of the storage accounts you deploy so that the user running the deployment can see it.
-      Which option should you use to return the storage account names?"
+      Which option should you use to return the storage account names?
     choices:
     - content: Use an output loop to return an array with the storage account names.
       isCorrect: true

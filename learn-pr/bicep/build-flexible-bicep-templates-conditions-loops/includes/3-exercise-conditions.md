@@ -18,7 +18,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
 
-   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 28-29, 33-47" :::
+   ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
    Notice that all of the parameters include `@description` decorators, which helps to make them easier to work with. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure will avoid saving these values to logs.
 
@@ -88,7 +88,7 @@ New-AzResourceGroupDeployment -TemplateFile database.bicep -location westeurope
 
 ::: zone-end
 
-You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` because it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
+You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment.
 
 > [!TIP]
 > When you enter the secure parameters, the values you choose must follow some rules:
@@ -142,7 +142,7 @@ In the previous deployment the default value for the `environmentName` parameter
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete.
 
 ```azurecli
-az deployment group create --template-file database.bicep --parameters environmentName='Production'
+az deployment group create --template-file database.bicep --parameters environmentName=Production
 ```
 
 ::: zone-end

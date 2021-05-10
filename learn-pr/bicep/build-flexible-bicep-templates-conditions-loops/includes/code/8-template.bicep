@@ -19,18 +19,18 @@ param virtualNetworkAddressPrefix string = '10.10.0.0/16'
 param subnets array = [
   {
     name: 'frontend'
-    iprange: '10.10.5.0/24'
+    ipAddressRange: '10.10.5.0/24'
   }
   {
     name: 'backend'
-    iprange: '10.10.10.0/24'
+    ipAddressRange: '10.10.10.0/24'
   }
 ]
 
 var subnetProperties = [for subnet in subnets: {
   name: subnet.name
   properties: {
-    addressPrefix: subnet.iprange
+    addressPrefix: subnet.ipAddressRange
   }
 }]
 

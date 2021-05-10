@@ -30,7 +30,7 @@ Like other loops, you use the `for` keyword to specify an output loop:
 
 Typically you'll use output loops in conjunction with other loops within your template. For example, let's look at a Bicep file that deploys a set of storage accounts into Azure regions specified by the `locations` parameter:
 
-::: code language="bicep" source="code/7-loop-output-simple.bicep" range="1-14" :::
+::: code language="bicep" source="code/7-loop-output-complex.bicep" range="1-14" :::
 
 You'll probably need to return information about each storage account that's been created, like its name and the endpoints that can be used to access it. By using an output loop, you can retrieve this information within your Bicep file.
 

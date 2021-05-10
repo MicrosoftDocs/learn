@@ -6,19 +6,13 @@ In this unit, you will learn how to deploy multiple instances of resources by us
 
 ## Use copy loops
 
-When you define a resource in Bicep template, you can use the `for` keyword. Place the `for` keyword in the resource declaration, and then specify how you want Bicep to identify each item in the loop. Typically you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
+When you define a resource or a module in Bicep template, you can use the `for` keyword. Place the `for` keyword in the resource declaration, and then specify how you want Bicep to identify each item in the loop. Typically you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
 
-::: code language="plaintext" source="code/4-loop-simple.bicep" highlight="7-8" :::
+::: code language="plaintext" source="code/4-loop-simple.bicep" highlight="7-8, 14" :::
 
 In the example above, the loop iterates through each item in the `storageAccountNames` array. Each time Bicep goes through the loop, it puts the current value into a special variable called `storageAccountName`, and this is used as the value of the `name` property. Notice that Bicep requires you put an opening `[` character before the `for` keyword, and a closing `]` character after the resource definition.
 
 If you deployed this Bicep file you'd see three storage accounts created, with the names specified by the corresponding items in the `storageAccountNames` array.
-
-> [!TIP]
-> You can also use copy loops with modules.
-
-> [!NOTE]
-> You can have a loop that will go up to 800 iterations.
 
 ## Loop based on a count
 
@@ -43,8 +37,8 @@ Notice that the `name` property includes the expression `i+1`. The first value o
 
 You may come across situations where you would want to use copy loops together with conditions to deploy resources. You can do this by combining the `if` keyword and `for` keywords.
 
-In the following example, an array parameter is used to define a set of SQL servers. A condition is used with the copy loop to only deploy SQL servers when the `environment` property of the loop object equals `Production`:
+In the following example, an array parameter is used to define a set of SQL servers. A condition is used with the copy loop to only deploy SQL servers when the `environmentName` property of the loop object equals `Production`:
 
 ::: code language="plaintext" source="code/4-loop-condition.bicep" highlight="19" :::
 
-If you deploy the example above, you'd see two SQL servers created named `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2` since that object's `environment` property didn't match `Production`.
+If you deploy the example above, you'd see two SQL servers created named `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2` since that object's `environmentName` property didn't match `Production`.

@@ -1,29 +1,29 @@
-param sqlServers array = [
+param sqlServerDetails array = [
   {
     name: 'sqlserver-we'
     location: 'westeurope'
-    environment: 'Production'
+    environmentName: 'Production'
   }
   {
     name: 'sqlserver-eus2'
     location: 'eastus2'
-    environment: 'Development'
+    environmentName: 'Development'
   }
   {
     name: 'sqlserver-eas'
     location: 'eastasia'
-    environment: 'Production'
+    environmentName: 'Production'
   }
 ]
 
-resource sqlServerResources 'Microsoft.Sql/servers@2020-11-01-preview' = [for sqlServer in sqlServers: if (sqlServer.environment == 'Production') {
+resource sqlServers 'Microsoft.Sql/servers@2020-11-01-preview' = [for sqlServer in sqlServerDetails: if (sqlServer.environmentName == 'Production') {
   name: sqlServer.name
   location: sqlServer.location
   properties: {
     administratorLogin: administratorLogin
     administratorLoginPassword: administratorLoginPassword
   }
-  tags:{
-    environment: sqlServer.environment
+  tags: {
+    environment: sqlServer.environmentName
   }
 }]
