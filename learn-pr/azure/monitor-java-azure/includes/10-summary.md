@@ -36,8 +36,8 @@ az group delete --name <your Resource Group Name> --yes
 
 * [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
 
-* [KQL syntax](https://docs.microsoft.com/en-us/azure/data-explorer/kql-quick-reference?WT.mc_id=java-00000-ropreddy)
+* [KQL syntax](https://docs.microsoft.com/azure/data-explorer/kql-quick-reference?WT.mc_id=java-00000-ropreddy)
 
-* [Azure Spring Cloud pricing](https://azure.microsoft.com/en-us/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
+* [Azure Spring Cloud pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
 
-* [Azure Database for MySQL pricing](https://azure.microsoft.com/en-us/pricing/details/mysql/server?WT.mc_id=java-00000-ropreddy)
+* [Azure Database for MySQL pricing](https://azure.microsoft.com/pricing/details/mysql/server?WT.mc_id=java-00000-ropreddy)
