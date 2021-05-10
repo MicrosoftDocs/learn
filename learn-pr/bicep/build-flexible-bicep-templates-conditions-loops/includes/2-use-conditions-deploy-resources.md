@@ -37,3 +37,5 @@ Notice that the storage account has a condition too. This means it won't be depl
 Notice that this Bicep code uses the `?` operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions will be evaluated to the details from the storage account. When it's deployed to a non-production environment, the expressions evaluate to an empty string (``).
 
 You might wonder why this is necessary, since `auditingSettings` and `auditStorageAccount` both have the same condition and so we'll never need to deploy a SQL auditing settings resource without a storage account. While this is true, Resource Manager evaluates the property expressions before conditionals, so the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
+
+If you have several resources that all have the same condition for their deployment, considering using Bicep modules. You can create a module that deploys all of the resources, and then put a condition on the module in your main Bicep file.

@@ -1,13 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
 [!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
 
 For your toy company, you need to deploy resources to different type of environments. You want to use parameters and conditions to control what gets deployed to different environments. In this exercise, you'll create an Azure SQL database. You will add auditing settings to ensure auditing is enabled only when deploying to 'Production' environment. For auditing you need a storage account which you will deploy conditionally only when deploying to 'Production' environment.
@@ -21,64 +11,40 @@ During the process, you'll:
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Create a Bicep template that contains resources to deploy Azure SQL Database
+## Create a Bicep template with SQL server and database
 
 1. Open Visual Studio Code, and create a new file called *database.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
-1. Add the following content into the file.
+1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
 
-   ```bicep
-    @allowed([
-      'Development'
-      'Production'
-    ])
-    param environment string = 'Development'
-    param administratorLogin string = 'dbadmin'
-    param administratorLoginPassword string = 'DBPa$$w0rd!'
-    
-    var location = resourceGroup().location
-    
-    resource server 'Microsoft.Sql/servers@2020-11-01-preview' = {
-      name: 'toylaunchsql${uniqueString(resourceGroup().id)}'
-      location: location
-      properties: {
-        administratorLogin: administratorLogin
-        administratorLoginPassword: administratorLoginPassword
-      }
-      identity: {
-        type: 'SystemAssigned'
-      }
-    }
-    
-    resource sqlDB 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
-      name: '${server.name}/toylaunchdb'
-      location: location
-      sku: {
-        name: 'Standard'
-        tier: 'Standard'
-      }
-    }
-    
-    resource auditStorage 'Microsoft.Storage/storageAccounts@2021-02-01' = if (environment == 'Production') {
-      name: 'toyaudit${uniqueString(resourceGroup().id)}'
-      location: location
-      sku: {
-        name: 'Standard_LRS'
-      }
-      kind: 'StorageV2'  
-    }
-    
-    resource sqlDBAudit 'Microsoft.Sql/servers/auditingSettings@2020-11-01-preview' = if (environment == 'Production') {
-      name: '${server.name}/default'
-      properties: {
-        state: 'Enabled'
-        storageEndpoint: ((environment == 'Production') ? (reference(auditStorage.id, auditStorage.apiVersion).primaryEndpoints.blob):'')
-        storageAccountAccessKey: ((environment == 'Production') ? (listKeys(auditStorage.id, auditStorage.apiVersion).keys[0].value):'')
-      }
-    }
-   ```
+   ::: code language="plaintext" source="code/3-template.bicep" range="1-16, 31-48" :::
 
-    Notice that within Bicep definition for storage account in line 32 you used condition to deploy resource only when environment parameter equals 'Production'. This is achieved by using ```if``` keyword followed by condition. Condition is also used to deploy Azure SQL Server auditing settings in line 71.
+   There are a few things to note about what you've just entered:
+   - The parameters include `@description` decorators.
+   - The `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator, which tells Bicep that these parameter values are sensitive. Azure will avoid saving these values to logs.
+   - The `sqlServerName` variable uses a function called `take()`. Storage account names have a maximum length of 24 characters, so this function trims the end off the string to make sure the name is valid.
+
+## Add a storage account and auditing settings
+
+1. Below the parameter declarations, add the following parameters:
+
+   ::: code language="bicep" source="code/3-template.bicep" range="18-29" :::
+
+1. At the bottom of the file, below the resources, add the following resource definition for the storage account:
+
+   ::: code language="bicep" source="code/3-template.bicep" range="50-57" :::
+
+   Notice that the definitions for the storage account includes the `if` keyword to specify a deployment condition.
+
+1. Underneath the storage account resource you just added, add the following:
+
+   ::: code language="bicep" source="code/3-template.bicep" range="59-67" :::
+
+   Notice that the definition includes the same `if` condition as the storage account. Also, the `storageEndpoint` and `storageAccountAccessKey` properties use the `?` ternary operator to ensure their values are always valid. If you didn't do this, Resource Manager would evaluate the expression values before evaluating the resource deployment condition, and it will return an error since the storage account can't be found.
+
+   After you finish, your Bicep file should look like this:
+
+   ::: code language="bicep" source="code/3-template.bicep" :::
 
 1. Save the changes to the file.
 
@@ -88,9 +54,9 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../shared/includes/bicep-exercise-deploy-cli.md)]
 
-### Deploy the template to Azure
+### Deploy the template to Azure by using the Azure CLI
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This process can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurecli
 az deployment group create --template-file database.bicep
@@ -102,9 +68,9 @@ az deployment group create --template-file database.bicep
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../shared/includes/bicep-exercise-deploy-powershell.md)]
 
-### Deploy the template to Azure
+### Deploy the template to Azure by using Azure PowerShell
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This process can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile database.bicep
@@ -112,11 +78,15 @@ New-AzResourceGroupDeployment -TemplateFile database.bicep
 
 ::: zone-end
 
-You'll see ```Running...``` in the terminal. As you didn't specify any parameter value, the default value 'Development' will be used for environment parameter value. Wait for deployment to finish.
+<!-- TODO mention how to specify secure param values -->
+
+You'll see `Running...` in the terminal. Since you didn't specify a value for the `environmentName` parameter, the default value of `Development` will be used.
+
+Wait for deployment to finish.
 
 ## Verify the deployment
 
-The first time you deploy a Bicep template, you might want to use the Azure portal to verify that the deployment has finished successfully and to inspect the results.
+You'll use the Azure portal to look at the resources that you deploy, and to inspect the results of each deployment.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
@@ -135,35 +105,15 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **database** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one SQL Server and one SQL Database deployed.
+1. Select the deployment called **database** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one SQL server and one SQL database deployed. Notice that the storage account and auditing settings aren't on the list of resources.
 
     :::image type="content" source="../media/3-development-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL server and database resource listed." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again later.
 
-::: zone pivot="cli"
+## Redeploy for the production environment
 
-You can also verify the deployment from the command line. To do so, run the following Azure CLI command:
-
-```azurecli
-az deployment group list --output table
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-You can also verify the deployment from the command line. To do so, run the following Azure PowerShell command:
-
-```azurepowershell
-Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group name]</rgn> | Format-Table
-```
-
-::: zone-end
-
-## Deploy the template to Azure with 'Production' environment type
-
-In previous deployment you didn't specify any parameter value, therefore default values were used. Next you want to change parameter environment with value ```Production```. You expect that by modifying parameter value to 'Production' storage account for auditing purposes will be deployed. Also SQL Server should be configured with auditing enabled.
+In the previous deployment the default value for the `environmentName` parameter was used. Now you will explicitly set it to `Production`. You expect that by modifying parameter value to 'Production' storage account for auditing purposes will be deployed. Also SQL Server should be configured with auditing enabled.
 
 ### Deploy the template with specified environment parameter value
 
@@ -172,7 +122,7 @@ In previous deployment you didn't specify any parameter value, therefore default
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete.
 
 ```azurecli
-az deployment group create --template-file database.bicep --parameters environment='Production'
+az deployment group create --template-file database.bicep --parameters environmentName='Production'
 ```
 
 ::: zone-end
@@ -182,15 +132,12 @@ az deployment group create --template-file database.bicep --parameters environme
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile database.bicep -environment Production
+New-AzResourceGroupDeployment -TemplateFile database.bicep -environmentName Production
 ```
 
 ::: zone-end
 
-You'll see ```Running...``` in the terminal. After minute or two you should get successful deployment result.
-
-> [!NOTE]
-   > You may run into error that storage account with specified name already exists. This can occur as storage account names must be globally unique. To avoid this error modify name of storage account in line 33 of Bicep template to something unique and run deployment again.
+You'll see `Running...` in the terminal. After minute or two you should get successful deployment result.
 
 ### Check your deployment
 
