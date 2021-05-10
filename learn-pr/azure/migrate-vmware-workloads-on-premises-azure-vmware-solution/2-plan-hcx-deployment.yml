@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.plan-hcx-deployment
+title: Plan HCX deployment
+metadata:
+  unitType: learning-content
+  title: Plan HCX deployment
+  description: Plan HCX deployment
+  ms.date: 4/5/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-plan-hcx-deployment.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "At a minimum, how many IPs do you need to identify on-premises for a network segment to use with VMware HCX?"
+    choices:
+    - content: "3 IPs"
+      isCorrect: false
+      explanation: "For a minimum deployment, 3 IPs is too many to assign to the HCX Connector on-premises."
+    - content: "10 IPs"
+      isCorrect: false
+      explanation: "For a minimum deployment, 10 IPs is too many to assign to the HCX Connector on-premises."
+    - content: "2 IPs"
+      isCorrect: true
+      explanation: "At a minimum, identify two IPs in the on-premises network segment for the VMware HCX Connector deployment. You might need a bigger number of IPs, depending on the scale of the deployment."
+  - content: "What version of vSphere on-premises is compatible with HCX 4.0 without needing extra configuration changes?"
+    choices:
+    - content: "vSphere 6.0"
+      isCorrect: true
+      explanation: "vSphere 6.0 is compatible with HCX 4.0."
+    - content: "vSphere 5.0"
+      isCorrect: false
+      explanation: "vSphere 5.0 isn't directly compatible with HCX 4.0 without factoring in extra configuration changes."
+    - content: "vSphere 5.1"
+      isCorrect: false
+      explanation: "vSphere 5.1 isn't directly compatible with HCX 4.0 without factoring in extra configuration changes."
+  - content: "How many site connections does HCX Advanced support?"
+    choices:
+    - content: "4"
+      isCorrect: false
+      explanation: "The VMware HCX Advanced Connector doesn't support four site connections."
+    - content: "3"
+      isCorrect: true
+      explanation: "The VMware HCX Advanced Connector supports up to three site connections."
+    - content: "8"
+      isCorrect: false
+      explanation: "The VMware HCX Advanced Connector doesn't support eight site connections."
