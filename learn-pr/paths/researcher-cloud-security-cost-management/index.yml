@@ -3,7 +3,7 @@ uid: learn.researcher-cloud-security-cost-management
 hidden: true
 metadata:
   title: Azure for Researchers part 2: Cloud Security and Cost Management
-  description: In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
+  description: In this learning path, you'll learn how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets, and how to ensure that your application secrets and virtual machines are safe from unauthorized access.
   brand: azure
   ms.date: 04/28/2021
   author: MaximRouiller
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 title: Azure for Researchers part 2: Cloud Security and Cost Management
 summary: |
-  In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
+  In this learning path, you'll learn how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets, and how to ensure that your application secrets and virtual machines are safe from unauthorized access.
   
   ## Learning objectives
 
