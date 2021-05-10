@@ -52,7 +52,7 @@ resource virtualNetworks 'Microsoft.Network/virtualNetworks@2020-11-01' = [for l
         virtualNetworkAddressPrefix
       ]
     }
-    subnets: subnets
+    subnets: subnetProperties
   }
 }]
 

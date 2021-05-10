@@ -64,13 +64,13 @@ You'll see `Running...` in the terminal. As you didn't specify any parameter val
 
 ## Verify the deployment
 
-After deployment is finished, you want to verify that new SQL servers are deployed and that they are located in correct Azure regions.
+After deployment is finished, you want to verify that new SQL server and database are deployed and that they are located in correct Azure regions.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that new SQL servers deployed are located in regions you specified in parameter ```sqlLocations``` default value.
+1. Verify that new SQL server and database are located in the regions you specified in the `sqlLocations` parameter's default value.
 
     :::image type="content" source="../media/5-loop-deployment.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL servers in different locations." border="true":::
 
@@ -108,10 +108,10 @@ Wait for the deployment to finish.
 
 ## Verify the redeployment
 
-With redeployment of updated Bicep template finished you want to verify that additional SQL server was created in East Asia.
+With redeployment of updated Bicep template finished you want to verify that additional SQL server and database were created in East Asia.
 
 1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select **<rgn>[sandbox resource group name]</rgn>** Resource Group. If required, click refresh in Resource Group menu to see newly deployed resources.
 
-1. Verify new Azure SQL Server is deployed in new location.
+1. Verify the new SQL server and database are deployed in East Asia.
 
     :::image type="content" source="../media/5-loop-redeployment.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL servers in additional location." border="true":::

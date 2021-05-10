@@ -28,10 +28,6 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
    > This example uses the same address space for all of the virtual networks.
    > Normally, when you create multiple virtual networks, you'd set their address space to be different in case you ever need to connect them together.
 
-   When you're finished, your *main.bicep* file should look like this:
-
-   ::: code language="plaintext" source="code/8-template.bicep" highlight="15-35, 46-57" :::
-
 1. Save the changes to the file.
 
 ## Add outputs to the database module
@@ -62,6 +58,10 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
    }]
    ```
 
+   When you're finished, your *main.bicep* file should look like this:
+
+   ::: code language="plaintext" source="code/8-template.bicep" highlight="15-35, 46-57" :::
+
 1. Save the changes to the file.
 
 <!-- TODO check from here -->
@@ -73,7 +73,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurecli
-az deployment group create --template-file vnet.bicep
+az deployment group create --template-file main.bicep
 ```
 
 ::: zone-end
@@ -83,7 +83,7 @@ az deployment group create --template-file vnet.bicep
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile vnet.bicep
+New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
 ::: zone-end
@@ -92,18 +92,32 @@ You'll see `Running...` in the terminal. Wait for deployment to finish.
 
 ## Verify the deployment
 
-After deployment is finished, you want to verify that new virtual network is deployed and it has subnet configuration as specified in parameter value.
+After deployment is finished, you want to verify that new virtual networks are deployed and that they have subnets configured as we expect.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Select virtual network ```vnet``` and select Subnets under Settings category in left menu.
+1. Verify that virtual networks are deployed.
 
-1. Verify that deployed subnets have names and IP addresses that were specified in parameter ```subnetDefinitions``` default value.
+   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal interface with virtual networks after deployment." border="true":::
+
+1. Select virtual network ```teddybear-eastasia``` and select Subnets under Settings category in left menu.
+
+1. Verify that deployed subnets have names and IP addresses that were specified in parameter `subnets` default value.
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
 
 1. Check output of deployment command, it should include information with name and FQDN of all three SQL servers deployed.
 
-  :::image type="content" source="../media/8-outloop-deployment.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
+::: zone pivot="cli"
+
+    :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+    :::image type="content" source="../media/8-outloop-deployment-ps.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
+
+::: zone-end

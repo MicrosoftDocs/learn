@@ -14,7 +14,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template with SQL server and database
 
-1. Open Visual Studio Code, and create a new file called *database.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file to define a SQL server and database, and the parameters and variable that these resources need.
 
@@ -69,7 +69,7 @@ Auditing settings for SQL servers need to specify a storage account to contain t
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. Notice that you're explicitly setting the `location` parameter to `westeurope`.
 
 ```azurecli
-az deployment group create --template-file database.bicep --parameters location=westeurope
+az deployment group create --template-file main.bicep --parameters location=westeurope
 ```
 
 ::: zone-end
@@ -83,7 +83,7 @@ az deployment group create --template-file database.bicep --parameters location=
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This process can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile database.bicep -location westeurope
+New-AzResourceGroupDeployment -TemplateFile main.bicep -location westeurope
 ```
 
 ::: zone-end
@@ -117,7 +117,7 @@ You'll use the Azure portal to look at the resources that you deploy, and to ins
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded. You can see that SQL server and SQL database are deployed, but the storage account for auditing was not deployed. Note that the storage account a with name beginning with 'cloudshell' is not related to your deployment and was created by the Learn sandbox.
+1. In **Overview**, you can see that one deployment succeeded. You can see that SQL server and SQL database are deployed, but the storage account for auditing was not deployed. Note that the storage account with a name beginning with 'cloudshell' is not related to your deployment and was created by the Learn sandbox.
 
     :::image type="content" source="../media/3-development-deployment.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
@@ -142,7 +142,7 @@ In the previous deployment the default value for the `environmentName` parameter
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete.
 
 ```azurecli
-az deployment group create --template-file database.bicep --parameters environmentName=Production
+az deployment group create --template-file main.bicep --parameters environmentName=Production location=westeurope
 ```
 
 ::: zone-end
@@ -152,7 +152,7 @@ az deployment group create --template-file database.bicep --parameters environme
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile database.bicep -environmentName Production
+New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production location=westeurope
 ```
 
 ::: zone-end
