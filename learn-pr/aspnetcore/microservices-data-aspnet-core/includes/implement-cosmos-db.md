@@ -72,19 +72,13 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 ## Redeploy the coupon service
 
-1. Build and publish a new image to ACR with the following script:
+Publish the existing `coupon-api` docker image from the `eshopdev` DockerHub with the following script:
 
-    ```bash
-    deploy/k8s/build-to-acr.sh --services coupon-api
-    ```
+```bash
+deploy/k8s/deploy-application.sh --charts coupon --registry eshopdev
+```
 
-1. Run the following script:
-
-    ```bash
-    deploy/k8s/deploy-application.sh --charts coupon
-    ```
-
-The preceding script uses Helm to deploy the *:::no-loc text="coupon":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+As there are no code changes, so no need to rebuild `coupon-api` docker image. The preceding script uses Helm to deploy the existing *:::no-loc text="coupon":::* Docker image to AKS with newer configuration. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
 ```console
 NAME                               READY   STATUS              RESTARTS   AGE

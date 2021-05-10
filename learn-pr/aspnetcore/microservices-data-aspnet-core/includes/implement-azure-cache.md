@@ -68,7 +68,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
     services.AddTransient<IBasketRepository, RedisBasketRepository>();
     ```
 
-    The preceding code configures `RedisBasketRepository` for the `basket-api` service.
+    The preceding code replaces the in-memory data store and configures `RedisBasketRepository` for the `basket-api` service.
 
 1. Replace the `// Add the ConnectionMultiplexer code...` comment with
 
@@ -80,7 +80,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
     });  
     ```
 
-    The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration.
+    The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration. The actual connection string value gets passed dynamically by the `settings.ConnectionString`. And the connection to the Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. For more details, refer [Use Azure Cache for Redis with an ASP.NET Core web app](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto?tabs=core5x)
 
 ## Reconfigure the basket service
 
