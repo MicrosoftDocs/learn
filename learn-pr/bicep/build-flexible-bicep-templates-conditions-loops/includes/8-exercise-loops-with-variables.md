@@ -24,7 +24,9 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
    ::: code language="bicep" source="code/8-template.bicep" range="46-57" :::
 
-   <!-- TODO mention that normally you wouldn't create overlapping VNet address space, but in this case it's ok -->
+   > [!NOTE]
+   > This example uses the same address space for all of the virtual networks.
+   > Normally, when you create multiple virtual networks, you'd set their address space to be different in case you ever need to connect them together.
 
    When you're finished, your *main.bicep* file should look like this:
 

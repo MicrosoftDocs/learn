@@ -4,7 +4,7 @@
 ])
 param environmentName string
 param location string = resourceGroup().location
-param auditStorageAccountName string = 'toyaudit${uniqueString(resourceGroup().id)}'
+param auditStorageAccountName string = 'bearaudit${uniqueString(resourceGroup().id)}'
 
 var storageAccountSkuName = 'Standard_LRS'
 

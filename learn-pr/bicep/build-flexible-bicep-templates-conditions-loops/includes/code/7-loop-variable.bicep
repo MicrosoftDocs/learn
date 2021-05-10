@@ -18,7 +18,7 @@ var subnetsProperty = [for subnet in subnets: {
 }]
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
-  name: 'toycompany'
+  name: 'teddybear'
   location: resourceGroup().location
   properties:{
     addressSpace:{

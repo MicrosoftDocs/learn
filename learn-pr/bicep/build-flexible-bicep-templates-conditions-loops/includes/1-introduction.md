@@ -8,8 +8,6 @@ You expect the toy will be very popular, and your company plans to launch into n
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram illustrating a resource group containing multiple instances of SQL Server in different countries." border="false":::
 
-<!-- TODO add VNet -->
-
 ## What will we be doing?
 
 In this module, you'll extend Bicep template with conditions and loops. You'll:

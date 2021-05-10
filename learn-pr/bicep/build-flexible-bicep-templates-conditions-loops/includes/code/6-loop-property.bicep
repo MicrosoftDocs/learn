@@ -4,7 +4,7 @@ param subnetNames array = [
 ]
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2018-11-01' = {
-  name: 'toycompany'
+  name: 'teddybear'
   location: resourceGroup().location
   properties: {
     addressSpace: {

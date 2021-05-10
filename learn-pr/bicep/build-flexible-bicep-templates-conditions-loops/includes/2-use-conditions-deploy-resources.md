@@ -26,7 +26,7 @@ In Bicep you are also able to use expressions as condition evaluation. The follo
 
 When resources are deployed conditionally, you sometimes need to be aware of how Bicep evaluates dependencies between resources.
 
-Let's continue writing our Bicep code to deploy SQL auditing settings. The Bicep file also need to declare a storage account resource:
+Let's continue writing some Bicep code to deploy SQL auditing settings. The Bicep file also need to declare a storage account resource:
 
 ::: code language="plaintext" source="code/2-conditional-expression.bicep" range="1-23, 27-28" highlight="11-18" :::
 

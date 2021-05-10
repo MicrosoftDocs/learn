@@ -25,10 +25,10 @@ param environmentName string = 'Development'
 @description('The name of the audit storage account SKU.')
 param auditStorageAccountSkuName string = 'Standard_LRS'
 
-var sqlServerName = 'toy${location}${uniqueString(resourceGroup().id)}'
+var sqlServerName = 'teddy${location}${uniqueString(resourceGroup().id)}'
 var sqlDatabaseName = 'TeddyBear'
 var auditingEnabled = environmentName == 'Production'
-var auditStorageAccountName = '${take('toyaudit${location}${uniqueString(resourceGroup().id)}', 24)}'
+var auditStorageAccountName = '${take('bearaudit${location}${uniqueString(resourceGroup().id)}', 24)}'
 
 resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
   name: sqlServerName
