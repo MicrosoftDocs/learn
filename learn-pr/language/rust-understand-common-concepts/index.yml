@@ -3,7 +3,7 @@ uid: learn.language.rust-understand-common-concepts
 metadata:
   title: Understand common concepts in Rust
   description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
-  ms.date: 12/14/2020
+  ms.date: 05/04/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
