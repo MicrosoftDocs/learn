@@ -1,30 +1,38 @@
 ### YamlMime:Module
 uid: learn.azure.azure.mr-digital-twin-operate
 metadata:
-  title: Connect operating data to Azure Digital Twins
+  title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
   ms.date: 5/4/2021
   author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.author: sekerawas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connect operating data to Azure Digital Twin
+title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
 summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
 abstract: |
   By the end of this module, you'll be able to:
 
-  - Connect a mixed reality app to an Azure Digital Twins data source on Azure
-  - Stream telemetry data to assets in your Unity scene, using Azure services, including ADT
-  - Visualize the data on a HoloLens 2 via SignalR
+  -	Connect to a Digital Twin data source on Azure
+  -	Stream telemetry data to assets in your Unity Scene, using Azure services, including ADT
+  -	Visualize the data on a HoloLens 2 via SignalR
+  -	Experience and understand the power of Azure Digital Twins
+  -	Use Mixed Reality to operate a wind farm
+  -	Make data driven decisions based on ADT data streams
+  -	Respond to live operational alerts in Mixed Reality
+  -	Investigate, flag, and action events to address underperforming turbines
+  -	Send data updates from the HoloLens 2 app back to Azure Digital Twin
 prerequisites: |
   - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
   - Build a 3D Scene in Unity with Maps SDK Module
-  - Place 3D assets in a Unity scene [Design] Module
+  - Configure 3D assets in a Unity scene [Design] Module
   - Azure service creation and configuration
+  - Domain User Azure Active Directory (i.e., not Guest)
   - An Azure subscription
   - [Install the Azure CLI for Windows](https://docs.microsoft.com/cli/azure/install-azure-cli-windows?tabs=azure-cli)
   - Basic Azure CLI knowledge
   - Basic PowerShell knowledge
+  - Desktop Development with C++ workload installed in Visual Studio
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - intermediate
@@ -49,8 +57,10 @@ units:
 - learn.azure.mr-digital-twin-operate.6-connect-stream-data
 - learn.azure.mr-digital-twin-operate.7-exercise-create-ui
 - learn.azure.mr-digital-twin-operate.8-visualize-signalr
-- learn.azure.mr-digital-twin-operate.9-deploy
-- learn.azure.mr-digital-twin-operate.10-knowledge-check
-- learn.azure.mr-digital-twin-operate.11-summary
+- learn.azure.mr-digital-twin-operate.9-connect-adt
+- learn.azure.mr-digital-twin-operate.10-deploy
+- learn.azure.mr-digital-twin-operate.11-identify-performance-events
+- learn.azure.mr-digital-twin-operate.12-knowledge-check
+- learn.azure.mr-digital-twin-operate.13-summary
 badge:
   uid: learn.azure.mr-digital-twin-operate.badge

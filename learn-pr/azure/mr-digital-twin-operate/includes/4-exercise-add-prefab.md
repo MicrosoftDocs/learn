@@ -1,23 +1,21 @@
-You can begin with an empty scene and re-create the Scene components from any previous, related module(s), or you can begin with the relevant prebuilt Scene created for you based on a prior module.  Five Scenes have been included in the sample Unity project to assist with your learning.  Scene 2_PlaceDigitalTwinAssets contains a completed Scene from the prior module.  If you complete this module and are having difficulties or would simply like to confirm your work, you can load this Scene and compare it to the Scene you built.  If you choose to load the Scene representing a completed module, you still need to configure some parameters, including Maps SDK and Azure services.
+You have 2 options to start the exercises in this module:
 
-## Open your previously built Scene
+1. If you are starting this module without having completed the Configure 3D assets for Mixed Reality in Unity  module or wish to abandon any previous work you undertook creating a Scene, add a pre-built scene:
 
-1. If your previously built Scene isn't already open, select **File > Open Scene**
-2. Browse to the folder where you saved your Scene.  Typically this is the **Assets > Scenes** folder in the root project folder structure.
+- In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder.
+- Select and drag the Scene to the Hierarchy panel.  For this module, locate and select
+**2_PlaceDigitalTwinAssets**.  If you use this Scene, it contains the **Bing Maps.prefab** Prefab.
+- Configure the necessary service parameters (i.e., Maps SDK) as defined in Build a 3D Scene for Mixed Reality in Unity module. 
 
-OR
+2. If you are starting this module after completing Configure 3D assets for Mixed Reality in Unity module **AND** you want to continue using your Scene:
 
-## Add existing Scene  [optional]
-
-1. In the Project Panel, open the **Assets > Scenes** folder
-2. Select and drag the Scene to the Hierarchy panel.  For this module, select
-**2_PlaceDigitalTwinAssets**.  If you use this Scene, it will contain the **Bing Maps.prefab** Prefab.
-3. Configure necessary service parameters (for example, Maps SDK, Azure Services, and so on)
+- If your previously built Scene is not already open in Unity, select **File > Open Scene**.
+- Browse to the folder where you saved your Scene.  Typically, this is the **Assets > Scenes** folder in the root project folder structure.  If you followed the guidance in the previous module, your Scene will be called **MainScene**.
 
 > [!NOTE]
-> The **Final_CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  It will still require further configuration.
+> The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  If you want to use it, you will need to configure the Scene parameters (viz., Maps SDK and Azure Services) from steps found in this module and Build a 3D Scene for Mixed Reality in Unity.
 
-We created several Prefabs have been created to accelerate the connectivity of your wind farm to Azure Digital Twin.  The **ADTConnection** Prefab handles all incoming data from ADT through the Azure SignalR service.  This connection has an associated data handler script that will automatically update the TurbineSiteData Scriptable Object with operating information for each turbine.  This TurbineSiteData Scriptable Object is used to update controls on the **OperateSceneUI** based on events raised within this prefab.  The **ADTTurbineAlertController** sends an update to the Alert property from a local turbine.  It contains a number of scripts to track events for you.
+Unity Prefabs have been created to accelerate the connectivity of your wind farm to the ADT service.  The **ADTConnection** Prefab handles all incoming data from ADT through the Azure SignalR service.  This connection has an associated data handler script that will automatically update the **TurbineSiteData ScriptableObject** with operating information for each turbine.  This TurbineSiteData ScriptableObject is used to update controls on the **OperateSceneUI** based on events raised within this prefab.  
 
 ## Add ADT Connection Prefab
 
@@ -25,8 +23,8 @@ We created several Prefabs have been created to accelerate the connectivity of y
 
 :::image type="content" source="../media/inspector-adt-alert.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
 
-## Add ADT Turbine Alert Controller Prefab
+<!-- ## Add ADT Turbine Alert Controller Prefab
 
 1. From the Project Panel, drag the **Assets > ADTPrefabs > ADTTurbineAlertController** to the Hierarchy Panel.
 
-:::image type="content" source="../media/inspector-adt-connector.png" alt-text="Screenshot of the Unity Inspector with the ADT Connection prefab selected.":::
+:::image type="content" source="../media/inspector-adt-connector.png" alt-text="Screenshot of the Unity Inspector with the ADT Connection prefab selected."::: -->

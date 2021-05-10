@@ -3,12 +3,12 @@ uid: learn.azure.mr-digital-twin-operate.2-connecting-telemetry-data
 title: Connecting telemetry data
 metadata:
   title: Connecting telemetry data
-  description: Learn how to define mixed reality as a concept, understand the types of interactions it supports, and understand its surrounding historical context.
+  description: Learn how telemetry data plays a role in an Azure Digital Twin experience.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/2-connecting-telemetry-data.md)]
