@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Mark the key general feature of managed data services.
+    - content: Which is the key general feature of managed data services?
       choices:
         - content: Scalable open-source compatible in-memory datastore.
           isCorrect: false
@@ -28,7 +28,7 @@ quiz:
         - content: Single-digit millisecond latencies at the 99th percentile.
           isCorrect: false
           explanation: This feature is not generic. It's specific to Azure Cosmos DB managed data service instance.
-    - content: Mark the key feature of Azure Cache for Redis.
+    - content: Which is the key feature of Azure Cache for Redis?
       choices:
         - content: Data persistence and geo-replication for Premium tier.
           isCorrect: true
@@ -42,7 +42,7 @@ quiz:
         - content: SQL API
           isCorrect: false
           explanation: Azure Redis Cache doesn't provide any SQL API.
-    - content: Mark the key feature of Azure Cosmos DB.
+    - content: Which is the key feature of Azure Cosmos DB?
       choices:
         - content: Single-digit millisecond latencies with guaranteed speed at any scale.
           isCorrect: true
@@ -53,6 +53,6 @@ quiz:
         - content: Apache Spark API.
           isCorrect: false
           explanation: Azure Cosmos DB doesn't support Apache Spark API. Instead, it provides APIs for Core (SQL), MongoDB, Cassandra, Azure Table, and Gremlin (graph).
-        - content: NoSQL database.
+        - content: NoSQL database
           isCorrect: false
           explanation: This option can't be categorized as a key feature. There could be many databases of NoSQL types.

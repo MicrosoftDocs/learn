@@ -6,24 +6,12 @@ In this module you:
 - Replaced the original MongoDB microservice for the Cosmos DB instance, by simply updating the connection string in the 
 - Used the Cosmos DB Data Explorer to inspect the discount service coupons.
 
-## Clean up Azure resources
+[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
-> **IMPORTANT**
->
-> It's very important you deallocate the Azure resources used in this module so that you don't get billed or spend your free account with unwanted charges.
+[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
-You have to:
+[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 
-### 1. - De-provision all the resources created in this module
+[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
-Use the following command:
-
-```bash
-cd ~ && \
-rm -rf ~/clouddrive/aspnet-learn && \
-az group delete --name eshop-learn-rg --yes
-```
-
-### 2. - De-provision the storage account used by the Cloud Shell
-
-If you let the Cloud Shell create the storage using the default options, you should have a resource group named `cloud-shell-storage-{region}`. To delete the storage account you can delete the resource group from the Azure portal. You won't be able to delete the storage account from **az cli**.
+[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]

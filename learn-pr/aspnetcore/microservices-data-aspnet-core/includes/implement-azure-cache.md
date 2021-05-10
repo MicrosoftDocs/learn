@@ -1,7 +1,9 @@
+As discussed in previous units, the basket service uses Redis to store shopping basket data. This unit explores replacing the services's Redis deployment with a cloud-based Redis service.
+
 In this unit, you will:
 
 - Create an Azure Cache for Redis instance.
-- Remove in-memory caching from basket service
+- Remove in-memory caching from the basket service.
 - Reconfigure the basket service to use the new Azure Cache for Redis instance.
 - Redeploy the basket service.
 
