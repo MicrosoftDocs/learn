@@ -40,8 +40,7 @@ units:
 - learn.azure.bicep-conditions-loops.exercise-loops
 - learn.azure.bicep-conditions-loops.use-loops-advanced
 - learn.azure.bicep-conditions-loops.use-loops-with-variables-and-outputs
-- learn.azure.bicep-conditions-loops.exercise-loops-with-variables
-- learn.azure.bicep-conditions-loops.exercise-loops-with-outputs
+- learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
 - learn.azure.bicep-conditions-loops.knowledge-check
 - learn.azure.bicep-conditions-loops.summary
 badge:

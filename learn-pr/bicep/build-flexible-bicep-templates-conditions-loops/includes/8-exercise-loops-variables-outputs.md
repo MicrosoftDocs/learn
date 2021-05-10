@@ -64,6 +64,8 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Save the changes to the file.
 
+<!-- TODO check from here -->
+
 ## Deploy the Bicep template to Azure
 
 ::: zone pivot="cli"
@@ -86,7 +88,7 @@ New-AzResourceGroupDeployment -TemplateFile vnet.bicep
 
 ::: zone-end
 
-You'll see ```Running...``` in the terminal. Wait for deployment to finish.
+You'll see `Running...` in the terminal. Wait for deployment to finish.
 
 ## Verify the deployment
 
@@ -101,3 +103,7 @@ After deployment is finished, you want to verify that new virtual network is dep
 1. Verify that deployed subnets have names and IP addresses that were specified in parameter ```subnetDefinitions``` default value.
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
+
+1. Check output of deployment command, it should include information with name and FQDN of all three SQL servers deployed.
+
+  :::image type="content" source="../media/9-outloop-deployment.png" alt-text="Screenshot of the deployment outputs displaying Azure SQL Server properties." border="true":::
