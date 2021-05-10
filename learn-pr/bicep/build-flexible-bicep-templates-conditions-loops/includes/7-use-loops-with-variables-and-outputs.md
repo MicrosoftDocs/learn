@@ -1,72 +1,28 @@
-You learned how you can use copy loops to deploy multiple instances of resources. In Bicep, loops can be also used with variables and outputs.
+You've learned how you can use copy loops to deploy multiple instances of resources, and how to set the properties of a resource using loops. In Bicep, loops can be also used with variables and outputs.
 
-In your toy company, you need to deploy virtual networks with same subnet configuration in multiple Azure regions. You expect that you will need to add additional subnets to your virtual networks in the future, so you want to have flexibility in your Bicep templates to modify subnet configuration. As you will also be deploying multiple storage accounts in your Azure environment, you need to provide  endpoint properties of each storage account as output.
+In your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you will need to add additional subnets to your virtual networks in the future, so you want to have flexibility in your Bicep templates to modify subnet configuration. Since you will also be deploying multiple storage accounts in your Azure environment, you need to provide the endpoints for each storage account as output so that your deployment pipelines can use this information.
 
 In this unit, you'll learn how you can use loops with variables and outputs.
 
 ## Variable loops
 
-Variable loops are useful mechanism when you need to create array of properties, which you will use within declaration of resources in Bicep templates. To create variable array, you use ```for``` keyword with variable declaration.
+Variable loops enable you to create an array, which you can use through your Bicep file. Like other loops, you use the `for` keyword to create a variable loop:
 
 ```bicep
 var items = [for i in range(1, 5): 'item${i}']
-
-output out array = items
 ```
 
-Running example above would return an array with the following values:
+The example above creates an array containing the values `item1`, `item2`, `item3`, `item4`, and `item5`.
 
-```json
-[
-  "item1",
-  "item2",
-  "item3",
-  "item4",
-  "item5"
-]
-```
+Typically, you would use variable loops to create more complex objects that you could use within a resource declaration. Here's how you can use variable loops to create a `subnets` property:
 
-This example is simple demonstration how you define variables with loops. Typically, you would create more complex objects inside variable array that you could use within resource declaration. In example below, it's shown how you can use variable loops to create ```subnets``` property that is required when declaring virtual network resources in your Bicep templates.
+::: code language="plaintext" source="code/7-loop-variable.bicep" highlight="13-18" :::
 
-```bicep
-param subnetDefinitions array = [
-  {
-    name: 'frontend'
-    iprange: '10.10.0.0/24'
-  }
-  {
-    name: 'backend'
-    iprange: '10.10.1.0/24'
-  }
-]
-
-var subnets = [for subnet in subnetDefinitions: {
-  name: subnet.name
-  properties: {
-    addressPrefix: subnet.iprange
-  }
-}]
-
-resource vnet 'Microsoft.Network/virtualNetworks@2020-11-01' = {
-  name: 'vnet'
-  location: resourceGroup().location
-  properties:{
-    addressSpace:{
-      addressPrefixes:[
-        '10.10.0.0/16'
-      ]
-    }
-    subnets: subnets
-  }
-}
-```
-
-In the example above, you specified property ```subnets``` in virtual network declaration with variable, which was created by using variable loop.
-
-> [!TIP]
-> Variable loops can be useful when creating resources with multiple properties and you need flexibility in template to be able to define number of properties during deployment time. You can think of scenario where you need to create virtual machine with multiple data disks or create multiple firewall rules for Azure Firewall. Using variable loops you can make definition of such resources more flexible and reusable.
+This example illustrates a good use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to what the Azure resource needs to be defined. You can use variable loops to enable your parameters to just specify the key information that will change for each item in the list, and then you can use Bicep expressions or default values to set other properties.
 
 ## Output loops
+
+<!-- TODO below -->
 
 When you are creating templates where you want flexibility by specifying number of resources that you will need to deploy, you need same flexibility also when you need to provide information on deployed resources through template outputs. In such scenarios, you can use output loops.
 
