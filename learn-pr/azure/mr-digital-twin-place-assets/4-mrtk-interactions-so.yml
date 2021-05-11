@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-place-assets.4-mrtk-interactions-so
-title: Mixed Reality ToolKit (MRTK) interactions & Unity Scriptable Objects
+title: Mixed Reality Toolkit (MRTK) interactions & Unity scriptable objects
 metadata:
-  title: Mixed Reality ToolKit (MRTK) interactions & Unity Scriptable Objects
+  title: Mixed Reality Toolkit (MRTK) interactions & Unity scriptable objects
   description: Learn about Mixed Reality Toolkit interactions and Unity scriptable objects.
   ms.date: 5/7/2021
   author: Sean-Kerawala
