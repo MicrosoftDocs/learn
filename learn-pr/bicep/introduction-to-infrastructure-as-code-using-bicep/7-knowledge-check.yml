@@ -80,14 +80,3 @@ quiz:
     - content: "Management group."
       isCorrect: false
       explanation: "Incorrect. A management group is a logical container for grouping Azure subscriptions."
-  - content: "Suppose you're reviewing how Bicep templates work for resource provisioning. What is the definition of a domain-specific language?"
-    choices:
-    - content: "A language that's designed to communicate with Active Directory Domain Services."
-      isCorrect: false
-      explanation: "Incorrect. A domain-specific language isn't intended to be used as a general programming language for writing applications."
-    - content: "A language that's designed for a specific scenario or domain."
-      isCorrect: true
-      explanation: "Correct. A domain-specific language is designed for a specific scenario or domain."
-    - content: "A language that's designed to be used as a general programming language for writing applications."
-      isCorrect: false
-      explanation: "Incorrect. A domain-specific language is not intended to be used as a general programming language for writing applications."
