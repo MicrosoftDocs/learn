@@ -11,13 +11,13 @@ metadata:
   ms.prod: learning-azure
 title: Build reusable Bicep templates by using parameters  
 summary: |
-    This module describes how you can use Bicep parameters to provide information into your template during each deployment.
+    This module describes how you can use Bicep parameters to provide information for your template during each deployment.
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values,
     and how to protect these values when you're working with secure information.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   After completing this module, you'll be able to: 
-    - Customize parameters, and limit the values that can be used by each parameter.
+    - Customize parameters and limit the values that can be used by each parameter.
     - Understand the ways that parameters can be supplied to a Bicep template deployment.
     - Work with secure parameters.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
