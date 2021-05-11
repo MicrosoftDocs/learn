@@ -13,5 +13,5 @@ As a final Unit in this module, you deployed your solution to the HoloLens 2 and
 * [Interacting with 3D objects - Mixed Reality](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-07)
 * [Unity - Introduction to Scriptable Objects](https://learn.unity.com/tutorial/introduction-to-scriptable-objects)
 * [Manual: Level of Detail (LOD) for meshes](https://docs.unity3d.com/Manual/LevelOfDetail.html)
-* [Introduction to the Core Azure Storage services](/azure/storage/common/storage-introduction)
-* [Introduction to Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction)
+* [Prefabs - Unity Learn](https://learn.unity.com/tutorial/prefabs-e)
+* [Unity - Manual: Creating Prefabs](https://docs.unity3d.com/2020.3/Documentation/Manual/CreatingPrefabs.html)
