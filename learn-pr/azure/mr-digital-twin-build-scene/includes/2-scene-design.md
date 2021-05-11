@@ -10,4 +10,8 @@ To take advantage of immersive experiences, you should consider designing beyond
 
 To ensure comfort for the user, placement of objects must be considered. For areas of interest, the optimum placement for focus is 2 m (6½ft) from a user. To ensure maximum comfort it's critical objects throughout the Scene reside 1.25m-5m (4-16 ft) distance from the user.
 
-In this use case, Turbine models are connected to ADT data streams and use MRTK Tooltips. These are useful objects that can be attached to assets in your Scene that provide further data points. In this tutorial, a tooltip is attached to each turbine and data streams then are connected. In another environment, you may choose to attach several tooltips to one object if it consists of many components, each needing their own data point.
+In this use case, Turbine models are connected to ADT data streams and use MRTK Tooltips. These are useful objects that can be attached to assets in your Scene that provide further data points. 
+
+:::image type="content" source="../media/windmills-tooltip.png" alt-text="Screenshot of multiple users wearing HoloLens devices and interacting with an immersive experience on a table showing terrain with wind turbines.":::
+
+In this tutorial, a tooltip is attached to each turbine and data streams then are connected. In another environment, you may choose to attach several tooltips to one object if it consists of many components, each needing their own data point.

@@ -2,22 +2,20 @@ Begin by opening the MainScene that has been created for you.  Essentially, this
 
 ## Open the MainScene Scene
 
-1. In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
+In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
 
     :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
-
-2. After you've added the Scene you would prefer to work with, remove any other unwanted Scenes by right-clicking and **Remove Scene**.
 
     > [!NOTE]
     > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
 
-To add a terrain to your Scene, choose whether you would like to add static, predefined terrain, or connect to the Bing Maps service to retrieve dynamic map data.  Try adding both the static and dynamic terrain, then removing the one you don't want.  
+We'll explore the benefits of static maps and dynamic maps in this module, starting by adding the static terrain and then adding the Maps SDK terrain.  
 
 ## Add Static Terrain
 
 1. In the Project Panel, open the **Assets > Art > Prefabs** folder
 2. Drag the Terrain Model named **Static Terrain** into the scene editor window
-3. With the Static Terrain object selected in the **Hierarchy** Panel on the left, the **Inspector** window on the right will show the **Position, Rotation, and Scale** parameters under the Transform section.  Position the terrain using the Position coordinates `(X = -1.25, Y = -0.59, Z = 2)` so that the Static Terrain is in front of the user at startup.  
+3. With the Static Terrain object selected in the **Hierarchy** Panel on the left, the **Inspector** window on the right will show the **Position, Rotation, and Scale** parameters under the Transform section.  Position the terrain using the Position coordinates `(X = -1.25, Y = -0.59, Z = 2)` so that the Static Terrain is to the front left of the user at startup.  
 4. Save the scene under the **File > Save** menu option.
 
     :::image type="content" source="../media/static-terrain-position.png" alt-text="Screenshot of the Unity inspector with the static terrain prefab selected and the transform component in view.":::
