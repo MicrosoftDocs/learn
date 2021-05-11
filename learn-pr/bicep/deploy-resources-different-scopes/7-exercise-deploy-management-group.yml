@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-resources-different-scopes.exercise-deploy-management-groups
-title: Exercise - Deploy at multiple scopes using modules
+title: Exercise - Deploy to a management group
 metadata:
   unitType: exercise
   title: Exercise - Deploy to a management group
