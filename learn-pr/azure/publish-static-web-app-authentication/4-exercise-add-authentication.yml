@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
+sandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-add-authentication.md)]
