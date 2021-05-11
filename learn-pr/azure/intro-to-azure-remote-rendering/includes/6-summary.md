@@ -18,7 +18,7 @@ You should now be able to determine how you can whether Azure Remote Rendering c
 
 ## References
 
-- [Azure Remote Rendering documentation](https://docs.microsoft.com/azure/remote-rendering?azure-portal=true).
-- [Remote Rendering Sessions](https://docs.microsoft.com/azure/remote-rendering/concepts/sessions?azure-portal=true).
-- [Rendering modes](https://docs.microsoft.com/azure/remote-rendering/concepts/rendering-modes?azure-portal=true).
+- [Azure Remote Rendering documentation](https://docs.microsoft.com/azure/remote-rendering).
+- [Remote Rendering Sessions](https://docs.microsoft.com/azure/remote-rendering/concepts/sessions).
+- [Rendering modes](https://docs.microsoft.com/azure/remote-rendering/concepts/rendering-modes).
 
