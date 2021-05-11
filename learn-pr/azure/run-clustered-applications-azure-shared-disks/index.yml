@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.run-clustered-applications-azure-shared-disks
+metadata:
+  title: Run clustered applications on Azure with shared disks
+  description: Providing high availability for clustered applications is an important requirement for most organizations. Microsoft Azure shared disks helps you do that by enabling you to run clustered or high-availability applications on Azure. 
+  ms.date: 04/28/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run clustered applications on Azure with shared disks
+summary: |
+  Providing high availability for clustered applications is an important requirement for most organizations. Microsoft Azure shared disks helps you do that by enabling you to run clustered or high-availability applications on Azure.
+abstract: |
+  After completing this module, you should know more about:
+  - Azure shared disks. 
+  - Using Azure shared disks with VMs.
+  - Benefits and limitations of Azure shared disks.
+prerequisites: |
+  - Basic knowledge of Azure Disk Storage.
+  - Basic knowledge of Azure virtual machines (VMs).
+  - Experience using the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+- data-engineer
+- security-engineer
+products:
+- azure
+- azure-storage-accounts
+units:
+- learn.azure.run-clustered-applications-azure-shared-disks.introduction
+- learn.azure.run-clustered-applications-azure-shared-disks.define-azure-shared-disks
+- learn.azure.run-clustered-applications-azure-shared-disks.create-use-azure-shared-disks
+- learn.azure.run-clustered-applications-azure-shared-disks.identify-benefits-limitations-azure-shared-disks
+- learn.azure.run-clustered-applications-azure-shared-disks.exercise-deploy-clustered-vms-azure-shared-disks
+- learn.azure.run-clustered-applications-azure-shared-disks.knowledge-check
+- learn.azure.run-clustered-applications-azure-shared-disks.summary
+badge:
+  uid: learn.azure.run-clustered-applications-azure-shared-disks.badge

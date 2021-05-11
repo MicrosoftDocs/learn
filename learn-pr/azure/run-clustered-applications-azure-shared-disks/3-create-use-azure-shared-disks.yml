@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.run-clustered-applications-azure-shared-disks.create-use-azure-shared-disks
+title: Create and use Azure shared disks
+metadata:
+  title: Create and use Azure shared disks  
+  description: Describe how to create an Azure shared disk and how to use Azure shared disks with VMs.
+  ms.date: 04/28/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-use-azure-shared-disks.md)]
