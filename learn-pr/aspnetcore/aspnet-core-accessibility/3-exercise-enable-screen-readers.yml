@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-accessibility.3-exercise-enable-screen-readers
+metadata:
+  title: Exercise - Enable your system's screen reader
+  description: Enable your system's screen reader to experience the accessibility features you'll implement later in this module.
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learn-aspnetcore
+  
+title: Exercise - Enable your system's screen reader
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-enable-screen-readers.md)]

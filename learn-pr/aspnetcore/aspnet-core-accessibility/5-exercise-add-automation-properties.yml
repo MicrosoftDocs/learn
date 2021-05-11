@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-accessibility.5-exercise-add-automation-properties
+metadata:
+  title: Exercise - ASP.NET Core automation properties
+  description: Exercise - Add ASP.NET Core automation properties
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  zone_pivot_groups: vs-vsmac
+title: Exercise - Add ASP.NET Core automation properties
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-add-automation-properties.md)]
