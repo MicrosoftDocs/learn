@@ -38,9 +38,9 @@ products:
 - azure-firewall
 - azure-key-vault
 modules:
-- learn.azure.plan-manage-azure-costs
-- learn.azure.analyze-costs-create-budgets-azure-cost-management
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.secure-network-connectivity-azure
+- learn.azure.plan-manage-azure-costs
+- learn.azure.analyze-costs-create-budgets-azure-cost-management
 trophy:
   uid: learn.learn.researcher-cloud-security-cost-management.trophy
