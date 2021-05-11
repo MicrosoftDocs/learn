@@ -5,7 +5,7 @@ You have two options to start the exercises in this module:
     - In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder
     - Select and drag the Scene to the Hierarchy panel.  For this module, locate and select
     **1_Build3DScenes**.  If you use this Scene, it contains the **Bing Maps.prefab** Prefab.
-    - Configure the necessary service parameters (that is, [Maps SDK](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account)) as defined in the previous module, *Build a 3D Scene for Mixed Reality in Unity*. 
+    - Configure the necessary service parameters (that is, [Maps SDK](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account)) as defined in the previous module, *Build a 3D Scene for Mixed Reality in Unity*. 
 
 2. If you're starting this module after completing the *Build a 3D Scene for Mixed Reality in Unity* module AND you want to continue using your Scene.
 

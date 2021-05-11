@@ -25,7 +25,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 2. Once you've exited the app, close the app window using the close icon in the top right of the window.
 
     > [!TIP]
-    > Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage).
+    > Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](/hololens/hololens2-basic-usage).
 
 After you're done testing your wind farm experience, uninstall the app:
 
