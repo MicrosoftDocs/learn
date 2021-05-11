@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-place-assets.6-exercise-deploy
-title: Exercise - deploy to HoloLens, test, and uninstall
+title: Exercise - Deploy to HoloLens, test, and uninstall
 metadata:
-  title: Exercise - deploy to HoloLens, test, and uninstall
+  title: Exercise - Deploy to HoloLens, test, and uninstall
   description: Learn how to deploy, test, and uninstall apps on the HoloLens 2 device.
   ms.date: 5/7/2021
   author: Sean-Kerawala
