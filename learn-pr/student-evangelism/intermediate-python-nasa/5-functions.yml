@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Chunk code into functions for easy reusability and readability
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-functions.md)]
+  [!include[](includes/5-functions.ipynb)]

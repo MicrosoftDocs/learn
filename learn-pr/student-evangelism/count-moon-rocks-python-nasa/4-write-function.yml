@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create a function to count types of Moon rocks found
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-write-function.md)]
+  [!include[](includes/4-write-function.ipynb)]

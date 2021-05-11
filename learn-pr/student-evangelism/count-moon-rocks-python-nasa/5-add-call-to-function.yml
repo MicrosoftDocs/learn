@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Count the number of Moon rocks by calling a Python function
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-add-call-to-function.md)]
+  [!include[](includes/5-add-call-to-function.ipynb)]

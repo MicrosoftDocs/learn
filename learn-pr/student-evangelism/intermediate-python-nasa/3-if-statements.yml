@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Control the flow of code using conditional statements
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-if-statements.md)]
+  [!include[](includes/3-if-statements.ipynb)]

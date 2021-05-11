@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Repeat code with while and for loops
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-iterations.md)]
+  [!include[](includes/4-iterations.ipynb)]

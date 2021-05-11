@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Read in Moon rock data from a text file for exploration
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-read-text-file.md)]
+  [!include[](includes/3-read-text-file.ipynb)]

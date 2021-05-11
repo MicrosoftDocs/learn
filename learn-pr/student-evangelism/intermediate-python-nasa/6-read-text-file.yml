@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Import data from text files with Python
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-read-text-file.md)]
+  [!include[](includes/6-read-text-file.ipynb)]

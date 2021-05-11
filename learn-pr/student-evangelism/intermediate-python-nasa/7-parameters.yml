@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Use parameters to specify variability in functions
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-parameters.md)]
+  [!include[](includes/7-parameters.ipynb)]

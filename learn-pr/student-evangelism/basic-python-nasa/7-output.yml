@@ -11,4 +11,4 @@ metadata:
 title: Exercise - View results of variables and expressions in Python Notebooks
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-output.md)]
+  [!include[](includes/7-output.ipynb)]

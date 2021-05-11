@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Compare values of data with Python code
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-conditions.md)]
+  [!include[](includes/2-conditions.ipynb)]

@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create a Jupyter Notebook to explore data about Moon rocks
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-set-up-program.md)]
+  [!include[](includes/2-set-up-program.ipynb)]
