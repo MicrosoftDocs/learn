@@ -17,11 +17,11 @@ Try to use the `switch` statement.
 
 Write a program to guess the square root of a number. Use this formula: 
 
-`sroot = sroot − (sroot − x) / (2 * sroot)` 
+> sqroot<sub> _n_+1</sub> = sqroot<sub> _n_</sub> − (sqroot<sub> _n_</sub> *  sqroot<sub> _n_</sub> − x) / (2 * sqroot<sub> _n_</sub>)
 
 This formula is for [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method?azure-portal=true).
 
-The more you run this formula, the closer you'll get to the square root of a number. Initialize the `sroot` variable to `1`, regardless of the number for which you want to find the square root. *Repeat the calculation up to 10 times*, and print each guess.
+The more you run this formula, the closer you'll get to the square root of a number. Initialize the `sqroot` variable to `1` for any number that you want to find the square root. Repeat the calculation up to 10 times, and print each guess.
 
 You might need *fewer* than 10 calculations. You can stop the loop when you get the same result from a previous run. The higher the number is, the more calculations you need to run. For simplicity, you'll stick with a maximum of 10 repetitions.
 

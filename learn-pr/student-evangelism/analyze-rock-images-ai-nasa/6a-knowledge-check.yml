@@ -3,9 +3,9 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.6a-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 03/10/2021
-  author: sguthals
+  description: Answer some questions to see what you learned in the lesson.
+  ms.date: 04/11/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "By capturing image captions and adding them to an indexed database."
       isCorrect: false
-      explanation: "Incorrect. Using only captions would exclude a substantial amount of information about images."
+      explanation: "Incorrect. If only captions are captured, large portions of information about the images is lost."
     - content: "By dividing images into four sections and then processing one section at a time."
       isCorrect: false
       explanation: "Incorrect. Computers don't read images by separating into sections."

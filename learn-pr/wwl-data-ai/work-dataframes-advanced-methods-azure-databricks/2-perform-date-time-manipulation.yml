@@ -5,8 +5,8 @@ metadata:
   title: Perform date and time manipulation
   description: "Perform date and time manipulation"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

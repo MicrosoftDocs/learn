@@ -23,11 +23,11 @@ Use antimalware and antivirus tools to monitor and remedy malware. These tools c
 
 ### Application security
 
-Attackers can compromise applications whether they are your own or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development life cycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application development elsewhere, it's a good practice to apply updates as soon as they're available.
+Attackers can compromise applications whether they are your own or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development lifecycle, and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application development elsewhere, it's a good practice to apply updates as soon as they're available.
 
 ### Behavioral analytics
 
-Use behavioral analytics tools to establish regular usage and behavior across your network and identify any suspicious changes. 
+Use behavioral analytics tools to establish regular usage and behavior across your network and identify any suspicious changes.
 
 For example, let's assume that you detect a user who starts accessing your network outside their standard usage patterns. Usually, the user accesses the network from one location in the United States during work hours. If their credentials are suddenly used to attempt access from Australia at midnight, the attempt is flagged as suspicious.
 
@@ -73,7 +73,7 @@ A trusted or private zone contains the resources and devices that should never b
 
 A public zone contains everything outside the organization. This zone is part of the internet or another network and not in the control of the organization.
 
-### Perimeter network 
+### Perimeter network
 
 The perimeter network (also known as DMZ, demilitarized zone, and screened subnet) is a zone where resources and services accessible from outside the organization are available. For example, you can use a perimeter network to provide access to an application, a partnering organization, or a supplier.
 
@@ -87,7 +87,7 @@ Zone filtering policies handle the flow of traffic as it travels between differe
 
 - **Outside-to-perimeter-network**. This type of filter inspects all traffic coming from the outside and going to the perimeter network. The traffic will either be permitted or denied permission. The types of traffic that may be allowed to pass through include email and HTTPS traffic.
 
-- **perimeter-network-to-outside**. This type of filter inspects traffic that comes from the perimeter network and leaves your network. Traffic is permitted to travel outside the network based on firewall rules and the resource or client starting the request. For example, a mail server in the perimeter network might need to sync with another server that's outside the network. In this case, you'll configure firewall rules to decide what should happen.
+- **Perimeter-network-to-outside**. This type of filter inspects traffic that comes from the perimeter network and leaves your network. Traffic is permitted to travel outside the network based on firewall rules and the resource or client starting the request. For example, a mail server in the perimeter network might need to sync with another server that's outside the network. In this case, you'll configure firewall rules to decide what should happen.
 
 ### What is a network firewall?
 
@@ -111,7 +111,7 @@ Firewalls can perform several different functions across your network:
 
     :::image type="content" source="../media/4-proxy-server.svg" alt-text="Diagram showing allowed traffic flow through a proxy server and all other traffic blocked.":::
 
-- **Stateful firewalls and next-generation firewalls** inspect characteristics about the connections on your network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
+- **Stateful firewalls** inspect characteristics about the connections on your network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
 
     :::image type="content" source="../media/4-stateful-firewall.svg" alt-text="Diagram showing how a stateful firewall block requests from an address that is not allowed.":::
 

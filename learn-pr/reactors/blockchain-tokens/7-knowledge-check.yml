@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "Tokens can identify ownership, for example, of houses, cars, or artwork. Tokens can also represent digital objects."
 
-  - content: "What type of token is most commonly used solely for nun-fungible assets?"
+  - content: "What type of token is most commonly used solely for non-fungible assets?"
     choices:
     - content: "ERC20"
       isCorrect: false

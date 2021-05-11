@@ -9,15 +9,18 @@ Azure Sentinel enables you to:
 + **Collect cloud data at scale**
 
     Collect data across all users, devices, applications, and infrastructure, both on-premises and from multiple clouds.
+
 + **Detect previously undetected threats**
 
     Minimize false positives by using Microsoft's comprehensive analytics and threat intelligence.
-+ **Investigate threats with artificial intelligence** 
+
++ **Investigate threats with artificial intelligence**
 
     Examine suspicious activities at scale, tapping into years of cybersecurity experience from Microsoft.
+
 + **Respond to incidents rapidly**
 
-    Utilize built-in orchestration and automation of common tasks.
+    Use built-in orchestration and automation of common tasks.
 
 ## Connect your data sources
 
@@ -28,9 +31,11 @@ Azure Sentinel supports a number of data sources, which it can analyze for secur
 + **Connect Microsoft solutions**
 
     Connectors provide real-time integration for services like Microsoft Threat Protection solutions, Microsoft 365 sources (including Office 365), Azure Active Directory, and Windows Defender Firewall.
+
 + **Connect other services and solutions**
 
     Connectors are available for common non-Microsoft services and solutions, including AWS CloudTrail, Citrix Analytics (Security), Sophos XG Firewall, VMware Carbon Black Cloud, and Okta SSO.
+
 + **Connect industry-standard data sources**
 
     Azure Sentinel supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API.
@@ -45,9 +50,9 @@ Tailwind Traders needs to be notified when something suspicious occurs. It decid
 
 ## Investigate and respond
 
-When Azure Sentinel detects suspicious events, Tailwind Traders can investigate specific alerts or *incidents* (a group of related alerts). With the investigation graph, the company can review information from entities directly connected to the alert and see common exploration queries to help guide the investigation.
+When Azure Sentinel detects suspicious events, Tailwind Traders can investigate specific alerts or *incidents* (a group of related alerts). With the investigation graph, the company can review information from entities directly connected to the alert, and see common exploration queries to help guide the investigation.
 
-Here's an example that shows what an investigation graph looks like in Azure Sentinel:
+Here's an example that shows what an investigation graph looks like in Azure Sentinel.
 
 :::image type="content" source="../media/3-investigate-incidents.png" alt-text="An example incident investigation graph in Azure Sentinel." lightbox="../media/3-investigate-incidents.png":::
 
@@ -57,7 +62,7 @@ The company will also use [Azure Monitor Workbooks](https://docs.microsoft.com/a
 1. Send a message to the security operations channel in Microsoft Teams or Slack to make sure the security analysts are aware of the incident.
 1. Send all of the information in the alert to the senior network admin and to the security admin. The email message includes two user option buttons: **Block** or **Ignore**.
 
-When an admin chooses **Block**, the IP address is blocked in the firewall and the user is disabled in Azure Active Directory. When an admin chooses **Ignore**, the alert is closed in Azure Sentinel and the incident is closed in the IT ticketing system.
+When an admin chooses **Block**, the IP address is blocked in the firewall, and the user is disabled in Azure Active Directory. When an admin chooses **Ignore**, the alert is closed in Azure Sentinel, and the incident is closed in the IT ticketing system.
 
 The workbook continues to run after it receives a response from the admins.
 

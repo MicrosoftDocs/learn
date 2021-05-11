@@ -22,4 +22,4 @@ content: |
 #       explanation: Correct!
 #     - content: Start with enterprise scale
 #       isCorrect: false
-#       explanation: In the last knowledge check, we reviewed why an enterprise operations would be problematic for Tailwind Traders. The same answer would suggest that their development velocity would best align with a start-small approach.
+#       explanation: In the last knowledge check, we reviewed why an enterprise operations would be problematic for Tailwind Traders. The same answer would suggest that the company's development velocity would best align with a start-small approach.

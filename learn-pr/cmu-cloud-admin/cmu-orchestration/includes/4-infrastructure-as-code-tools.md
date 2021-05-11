@@ -1,8 +1,15 @@
 The purpose of a configuration-management (CM) system in any industry, including information technology, is to maintain and preserve the processes to build, design, and assemble an optimally built product. There are two main methods:
 
-- **The imperative method**, which records the exact sequence of instructions required to provision and maintain a resource (for example, a virtual machine, an application container, a storage repository, or a user profile) according to written specifications. Here, the end state of the infrastructure is the result of executing these instructions in sequence.
+- **The imperative method**
+- **The declarative method**
 
-- **The declarative method**, in which the end state of the infrastructure is defined outright, and the system maintaining that infrastructure must assemble a plan or itinerary of operations whose final result is the declared state.
+## The imperative method
+
+The imperative method, which records the exact sequence of instructions required to provision and maintain a resource (for example, a virtual machine, an application container, a storage repository, or a user profile) according to written specifications. Here, the end state of the infrastructure is the result of executing these instructions in sequence.
+
+## The declarative method
+
+The declarative method, in which the end state of the infrastructure is defined outright, and the system maintaining that infrastructure must assemble a plan or itinerary of operations whose final result is the declared state.
 
 The choice that enterprises make when choosing a CM platform, and an Infrastructure-as-Code methodology, involves what they consider most important to preserve and extend: their methods or their goals. There are pros and cons to both approaches. This lesson examines the basic stance and methodologies supported by major CM platforms and provides brief introductions to the platforms themselves.
 
