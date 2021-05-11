@@ -3,7 +3,7 @@ uid: learn.healthbot-introduction
 metadata:
   title: Introduction to the HealthBot Service
   description: In this module, you will take a look at Azure Health Bot and its capabilities. You’ll then learn how businesses can use the service to build powerful health bots. No prior knowledge is required so if you're a beginner this module will get you going. If you know how a Health Bot works, this module will tie concepts together and fill in the gaps. 
-  ms.date: 06/04/2020
+  ms.date: 05/11/2021
   author: RuchaYagnik
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Understand how Azure Health Bot works
   - Determine the scenarios where health bot can be used
   - Create the first health bot instance
-iconUrl: /learn/achievements/healthbot.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
