@@ -33,7 +33,6 @@ prerequisites: |
       - Windows 10 SDK 10.0.18362.0 or later
       - Unity Hub with Unity 2020.3.x (LTS) installed
       - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed, including USB Device Connectivity 
-      - The learning module package downloaded from GitHub [LINK]
       - Microsoft Mixed Reality Feature Tool
 units:
 - learn.azure.mr-digital-twin-intro.1-introduction
