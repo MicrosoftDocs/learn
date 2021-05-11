@@ -1,14 +1,14 @@
-The last time issues arose on your financial organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved on time, so customer satisfaction was affected. Your organization wants to avoid a repeat of these issues when it moves to Azure.
+The last time issues arose on your financial organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved on time, so customer satisfaction was negatively affected. Your organization wants to avoid a repeat of these issues when it moves to Azure.
 
-You'll detail how to integrate Azure Monitor Application Insights with your applications. You'll explore how to use it to check the health of applications and resolve issues faster.
+You'll detail how to integrate Azure Monitor Application Insights with your applications. You'll explore how to use it to check the health of applications, and resolve issues faster.
 
 ## Criteria for assessing Application Insights
 
-You use Application Insights if:
+You use Application Insights to:
 
-- You want to analyze and address issues and problems that affect your application's health and performance.
-- You want to improve your application's development lifecycle.
-- You want to measure your end-user experience and analyze users' behavior.
+- Analyze and address issues and problems that affect your application's health and performance.
+- Improve your application's development lifecycle.
+- Measure your user experience, and analyze users' behavior.
 
 ## Integrate Application Insights with your applications
 
@@ -18,7 +18,7 @@ For example, in your .NET and .NET Core applications hosted on Azure App Service
 
 ![Screenshot of onboarding to Application Insights in Portal.](../media/4-application-insights-01.png)
 
-Application Insights automatically collect data about your application’s performance and health. You can view this data in the Application Insights resource in the Azure portal. From there you can, for example, get a list of all failures that have been collected and drill down into each one.
+Application Insights automatically collect data about your application’s performance and health. You can view this data in the Application Insights resource in the Azure portal. From there you can, for example, get a list of all failures that have been collected, and drill into each one.
 
 ![Screenshot of analyzing failures.](../media/4-application-insights-02.png)
 
@@ -32,15 +32,15 @@ Application Insights also automatically detect app dependencies to support distr
 
 ## Monitor your applications' performance
 
-You can further investigate slow transactions to identify slow requests and server-side dependencies. Drill down using the option to investigate performance from the application map or using **Performance** on the left.
+You can further investigate slow transactions to identify slow requests and server-side dependencies. Drill down using the option to investigate performance from the application map, or using **Performance** on the left.
 
 ![Screenshot of analyzing performance.](../media/4-application-insights-05.png)
 
-This view allows you to isolate slow transactions by selecting the time range, operation name, and durations of interest. You are also prompted with automatically identified anomalies and the commonalities across transactions. From here, you can drill into an individual transaction for an end-to-end view of transaction details with a Gantt chart of dependencies. You can also gain visibility into page views, and browser operations and dependencies if you instrument your web pages with Application Insights. Collecting this browser data requires adding some additional web page code to your pages. After the script is added, you access page views and their associated performance metrics via the Browser toggle.
+This view enables you to isolate slow transactions by selecting the time range, operation name, and durations of interest. You are also prompted with automatically identified anomalies and the commonalities across transactions. From here, you can drill into an individual transaction for an end-to-end view of transaction details with a Gantt chart of dependencies. You can also gain visibility into page views, and browser operations and dependencies if you instrument your web pages with Application Insights. Collecting this browser data requires adding some additional web page code to your pages. After the script is added, you access page views and their associated performance metrics via the Browser toggle.
 
 ## Analyzing user behavior
 
-Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities. Usage data includes number of users, sessions, events, browser version, OS version, and locations all coming from the same browser-side JavaScript instrumentation. Usage data answers questions such as which pages of your app are the most popular, where do users drop out and what are the conversion and retention rates for specific pages.
+Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities. Usage data includes number of users, sessions, events, browser version, OS version, and locations all coming from the same browser-side JavaScript instrumentation. Usage data answers questions such as which pages of your app are the most popular, where do users drop out, and what are the conversion and retention rates for specific pages.
 
 ![Screenshot of application events split by browser.](../media/4-application-insights-06.png)
 

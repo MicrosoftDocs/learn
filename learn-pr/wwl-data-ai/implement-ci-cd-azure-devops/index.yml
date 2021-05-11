@@ -5,7 +5,7 @@ metadata:
   description: "Implement CI/CD with Azure DevOps"
   ms.date: 05/15/2020
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement CI/CD with Azure DevOps

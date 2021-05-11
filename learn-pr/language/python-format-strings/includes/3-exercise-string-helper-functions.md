@@ -81,17 +81,17 @@ When you run the code, you should see the following output:
 4
 ```
 
-What if you want to know how many letters are in a string? In that case, use a method, called `len()`. Note that this isn't a helper method in the way we've defined it, because it works on more than just the string values.
+What if you want to know how many characters are in a string? In that case, use a method called `len()`. Note that this isn't a helper method in the way we've defined it, because it works on more than just the string values.
 
 Comment out the code from earlier in this step, and add the following code listing:
 
 ```python
-print(len('how many letters in this string?'))
+print(len('how many characters in this string?'))
 ```
 When you run the code, you should see the following output:
 
 ```output
-32
+35
 ```
 
 ### Step 5 - Comment out the previous code, and add code that calls functions that inspect the contents of the string

@@ -2,7 +2,7 @@ Even though we may be able to connect to the database over the network, that doe
 
 ## Authentication
 
-Authentication is the process of verifying an identity. This identity could be a user, a service running on a system, or a system itself (such as a virtual machine). Through the process of authentication, we ensure that the person or system is who they claim to be. SQL Database supports two types of authentication: SQL authentication and Azure Active Directory authentication.
+Authentication is the process of verifying an identity. This identity could be a user, a service running on a system, or a system itself, such as a virtual machine. Through the process of authentication, we ensure that the person or system is who they claim to be. SQL Database supports two types of authentication: SQL authentication and Azure Active Directory (Azure AD) authentication.
 
 ### SQL authentication
 
@@ -10,7 +10,7 @@ SQL authentication method uses a username and password. User accounts can be cre
 
 ### Azure Active Directory authentication
 
-This authentication method uses identities managed by Azure Active Directory (AD) and is supported for managed and integrated domains. Use Azure AD authentication (integrated security) whenever possible. With Azure AD authentication, you can centrally manage the identities of database users and other Microsoft services in one central location. Central ID management provides a single place to manage database users and simplifies permission management. If you want to use Azure AD authentication, you must create another server admin called the "Azure AD admin," which is allowed to administer Azure AD users and groups. This admin can also perform all operations that a regular server admin can.
+This authentication method uses identities managed by Azure AD, and is supported for managed and integrated domains. Use Azure AD authentication (integrated security) whenever possible. With Azure AD authentication, you can centrally manage the identities of database users and other Microsoft services in one central location. Central ID management provides a single place to manage database users, and simplifies permission management. If you want to use Azure AD authentication, you must create another server admin called the *Azure AD admin*, which is allowed to administer Azure AD users and groups. This admin can also perform all operations that a regular server admin can.
 
 ## Authorization
 
@@ -22,15 +22,15 @@ In our example here, the server admin account you are connecting with is a membe
 
 As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. The recommended approach is to create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-2017).
 
-Use Azure Active Directory authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
+Use Azure AD authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
 
-Let's now take a look at how to set up a user and grant them access to a database. In this case we'll use SQL authentication for our user, but the process would be essentially the same if we were using Azure AD authentication.
+Let's now take a look at how to set up a user and grant them access to a database. In this case, we'll use SQL authentication for our user, but the process would be essentially the same if we were using Azure AD authentication.
 
 ### Create a database user
 
 Let's go ahead and create a new user that we can use to grant access to.
 
-1. In cloud shell, on your _appServer_ VM, connect to your database again as your `ADMINUSER`.
+1. In Cloud Shell, on your _appServer_ VM, connect to your database again as your `ADMINUSER`.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
@@ -66,7 +66,7 @@ Let's make the user a member of the `db_datareader` and `db_datawriter` roles, g
 
 Let's now log in as that user and take a look at this in action.
 
-1. While still at the T-SQL prompt, type `exit` to exit your session.
+1. While still at the T-SQL prompt, enter `exit` to exit your session.
 
 1. Now let's log back in to the database, but as the user we just created.
 
@@ -93,7 +93,7 @@ Let's now log in as that user and take a look at this in action.
     ...
     ```
 
-1. Now let's see what happens when we try to query a table that we don't have access to.
+1. Now, let's see what happens when we try to query a table that we don't have access to.
 
     ```sql
     SELECT * FROM SalesLT.Address;

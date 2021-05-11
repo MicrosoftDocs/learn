@@ -22,14 +22,14 @@ When it's time to run your code, to use the Python Tools for Visual Studio Code 
 
 Add the following code to your code file.
 
-    ```python
-    value = '7'
+```python
+value = '7'
     
-    if value == '7':
-        print('The value is 7')
+if value == '7':
+    print('The value is 7')
     
-    print('Finished!')
-    ```
+print('Finished!')
+```
 
 There are three parts to the `if` statement:
 
@@ -43,22 +43,22 @@ If the Boolean expression evaluates to `False`, all of the indented code should 
 
 When you run the code, you should see the following output.
 
-    ```output
-    The value is 7
-    Finished!
-    ```
+```output
+The value is 7
+Finished!
+```
 
 To see how this code operates when the Boolean expression evaluates to `False`, modify the first line of code setting `value` to the string `'6'`.
 
-    ```python
-    value = '6'
-    ```
+```python
+value = '6'
+```
 
 When you run the code, you'll see the following output.
 
-    ```output
-    Finished!
-    ```
+```output
+Finished!
+```
 
 The line of code beneath the `if` statement is ignored because the Boolean expression evaluates to `False`.  The final line of code that prints the term `Finished` runs because it isn't indented beneath the `if` statement.
 
@@ -68,14 +68,14 @@ Let's see what happens when you add indentation to the final line of code.
 
 To modify the last line of code, add a tab before the line. Your code should match the following output.
 
-    ```python
-    value = '6'
+```python
+value = '6'
     
-    if value == '7':
-        print('The value is 7')
+if value == '7':
+    print('The value is 7')
     
-        print('Finished!')
-    ```
+    print('Finished!')
+```
 
 When you run the code this time, there's no output. That's because the last line of code is now part of the same code block that belongs to the `if` statement.
 
@@ -83,23 +83,23 @@ Indentation defines a code block in Python. A code block consists of one or more
 
 Python is picky when it comes to indentation. All lines must be indented at an equal level. If they're not, Python displays an exception when you run the code. If you remove a single empty space character before the last line of code.
 
-    ```python
-    value = '6'
+```python
+value = '6'
     
-    if value == '7':
-        print('The value is 7')
+if value == '7':
+    print('The value is 7')
     
-       print('Finished!')
-    ```
+    print('Finished!')
+```
 
 And then attempt to run the code again, you'll see the following error.
 
-    ```output
-      File "exercise1.py", line 6
-        print('Finished!')
+```output
+    File "exercise1.py", line 6
+    print('Finished!')
                          ^
-    IndentationError: unindent does not match any outer indentation level
-    ```
+IndentationError: unindent does not match any outer indentation level
+```
 
 ### Step 4: Update the code example to include an `else` statement
 
@@ -107,23 +107,23 @@ The `else` statement is an optional part of an `if` statement that can handle th
 
 Update your code to match the following code passage. In addition to adding the `else` statement, notice that you removed the tab from the last line of code.
 
-    ```python
-    value = '6'
+```python
+value = '6'
     
-    if value == '7':
-        print('The value is 7')
-    else:
-        print('The value is not 7') 
+if value == '7':
+    print('The value is 7')
+else:
+    print('The value is not 7') 
     
-    print('Finished!')
-    ```
+print('Finished!')
+```
 
 If you run the code, you'll see the following output.
 
-    ```output
-    The value is not 7
-    Finished!
-    ```
+```output
+The value is not 7
+Finished!
+```
 
 There are two parts to the `else` statement:
 
@@ -139,18 +139,18 @@ The `elif`, or rather, *else if* statement is another optional statement that ca
 
 To match the following code listing, modify the following code example.
 
-    ```python
-    value = '8'
+```python
+value = '8'
     
-    if value == '7':
-        print('The value is 7')
-    elif value == '8':
-        print('The value is 8')
-    else:
-        print('The value is not one we are looking for')
+if value == '7':
+    print('The value is 7')
+elif value == '8':
+    print('The value is 8')
+else:
+    print('The value is not one we are looking for')
     
-    print('Finished!')
-    ```
+print('Finished!')
+```
 
 Just like the `if` statement, there are three parts to the `elif` statement:
 
@@ -162,27 +162,27 @@ And just as before, all indented code below the `elif` is part of the code block
 
 When you run the code, you'll see the following output.
 
-    ```output
-    The value is 8
-    Finished!
-    ```
+```output
+The value is 8
+Finished!
+```
 
 You can use as many `elif` statements as you need. If you use an `else` statement, it must come after all `elif` statements.
 
 To include an additional `elif` statement before the `else` statement, modify your code.
 
-    ```python
-    value = '8'
+```python
+value = '8'
     
-    if value == '7':
-        print('The value is 7')
-    elif value == '8':
-        print('The value is 8')
-    elif value == '9':
-        print('The value is 9')
-    else:
-        print('The value is not one we are looking for')
-    ```
+if value == '7':
+    print('The value is 7')
+elif value == '8':
+    print('The value is 8')
+elif value == '9':
+    print('The value is 9')
+else:
+    print('The value is not one we are looking for')
+```
 
 After any `if` or `elif` Boolean expression evaluates to `True`, the Python interpreter won't continue evaluating additional Boolean expressions. It exits the entire `if ... elif ... else` structure and continues to process the next line of code that isn't indented.
 
@@ -190,16 +190,16 @@ After any `if` or `elif` Boolean expression evaluates to `True`, the Python inte
 
 Consider the following code.
 
-    ```python
-    value = '6'
+```python
+value = '6'
     
-    if value < '8':
-        print('The value is less than 8')
-    elif value < '7':
-        print('The value is less than 7')
-    else:
-        print('The value is greater than 8')
-    ```
+if value < '8':
+    print('The value is less than 8')
+elif value < '7':
+    print('The value is less than 7')
+else:
+    print('The value is greater than 8')
+```
 
 First, you've introduced a new operator, which you'll learn more about in the next unit. The less-than operator `<` compares two numeric values. If the value on the left is less than the value on the right, the expression evaluates to `True`. Otherwise, it evaluates to `False`.
 
@@ -213,20 +213,20 @@ This scenario would likely never manifest in a runtime error. If you were expect
 
 Consider the following code example.
 
-    ```python
-    first_value = True
-    second_value = '6'
+```python
+first_value = True
+second_value = '6'
     
-    if first_value:
-        if second_value == '6':
-            print('Got here!')
-    ```
+if first_value:
+    if second_value == '6':
+        print('Got here!')
+```
 
 Here, you evaluate two separate data values. First, you test the value of `first_value`. Because a Boolean expression is any code that equates to `True` and `first_value` equates to `True` already, you don't need to type the entire Boolean expression like so.
 
-    ```Python
-    if first_value == True:
-    ```
+```Python
+if first_value == True:
+```
 
 Secondly, and more pertinent to this code example, is the nesting of the second `if` statement inside the code block of the first `if` statement. As a result, the second `if` statement is evaluated only when the first `if` statement evaluates to `True`.
 
@@ -234,23 +234,23 @@ This nesting structure is common when you need to test several related (but diff
 
 If you remove the proper indentation.
 
-    ```python
-    first_value = True
-    second_value = '6'
+```python
+first_value = True
+second_value = '6'
     
-    if first_value:
-    if second_value == '6':
-        print('Got here!')
-    ```
+if first_value:
+if second_value == '6':
+    print('Got here!')
+```
 
 ... it's likely you would see the following error message.
 
-    ```output
-      File "c:/python/numeric-operations-decisions/exercise2.py", line 65
-        if second_value == '6':
-        ^
-    IndentationError: expected an indented block
-    ```
+```output
+    File "c:/python/numeric-operations-decisions/exercise2.py", line 65
+    if second_value == '6':
+    ^
+IndentationError: expected an indented block
+```
 
 ## Recap
 

@@ -2,7 +2,7 @@ In some cases, the code-free transformation at scale may not meet your requireme
 
 ## ADF and Azure Databricks
 
-As an example, the integration of Azure Dataricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
+As an example, the integration of Azure Databricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
 
 Data ingestion and transformation using the collective capabilities of ADF and Azure Databricks essentially involves the following steps:
 

@@ -26,7 +26,6 @@ Containers are managed through a container orchestrator, which can start, stop, 
     :::image type="icon" source="../media/icon-container-instance.png" border="false":::
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     :::image type="icon" source="../media/icon-kubernetes.png" border="false":::

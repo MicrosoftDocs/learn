@@ -24,10 +24,20 @@ enum Transmission {
 }
 
 fn car_factory(color: String, transmission: Transmission, convertible: bool) -> Car {
+
+    // To Do - Fix this part of the function to create a new Car object as requested by the client
     let car: Car = todo!("Replace this with an actual Car instance")
 
     // Factory's Quality Control Department says that new cars must always have zero mileage!
     assert_eq!(car.mileage, 0);
+
+    // Display the details of the new car order
+    if car.convertible {
+        println!("New car = {}, {:?}, Convertible", car.color, car.transmission);
+    } else {
+        println!("New car = {}, {:?}, Hardtop", car.color, car.transmission);
+    }
+
     return car;
 }
 
@@ -49,6 +59,11 @@ fn main() {
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=18f7d1cfbadaf0e386e71c01fbdd1ec?azure-portal=true).
+You can run this code in your local computer, or use this [Rust Playground][RustPlay-exercise].
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2d69c0f7c5c2e478650ec43f5ee5e42?azure-portal=true).
+The solution to this exercise is in this [Rust Playground][RustPlay-answer].
+
+
+<!-- Links -->
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2cb514cd6d862dc1b3bd3af2cadd1e82?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=cb4224fe1b2acca05237b92e1a4e42f2?azure-portal=true

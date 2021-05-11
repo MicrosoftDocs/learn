@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.6-read-input-data-from-url
 
-title: Use the Context Object to Read Input Data from the URL Route
+title: Use the context object to read input data from the URL route
 
 metadata:
-  title: Use the Context Object to Read Input Data from the URL Route
-  description: Use the Context Object to Read Input Data from the URL Route
+  title: Use the context object to read input data from the URL route
+  description: Use the context object to read input data from the URL route
   
   ms.date: 04/29/2020
   

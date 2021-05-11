@@ -8,7 +8,7 @@ After this module, you will be able to:
 
 - Describe the technologies and conceptual layers that allow Power Platform integration with SAP, including the On-premises data gateway.
 
-- Connect Power BI Desktop to SAP HANA on a Windows computer
+- Connect Power BI Desktop to SAP HANA on a Windows computer  
 
 - Connect Power Automate and Power Apps to SAP systems
 

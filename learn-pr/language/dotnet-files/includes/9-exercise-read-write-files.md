@@ -115,7 +115,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     }
     ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *Program.cs* file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the *Program.cs* file.
 
 ## Run the program
 

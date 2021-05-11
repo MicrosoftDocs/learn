@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "4"
       isCorrect: false
-      explanation: "In terms of a minimum deployment, AVS requires fewer than four nodes."
+      explanation: "For a minimum deployment, AVS requires fewer than four nodes."
     - content: "8"
       isCorrect: false
-      explanation: "In terms of a minimum deployment, AVS requires fewer than eight nodes."
+      explanation: "For a minimum deployment, AVS requires fewer than eight nodes."
     - content: "3"
       isCorrect: true
-      explanation: "In terms of a minimum deployment, AVS requires three nodes."
+      explanation: "For a minimum deployment, AVS requires three nodes."

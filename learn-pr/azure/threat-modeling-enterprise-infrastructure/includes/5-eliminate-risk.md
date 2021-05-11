@@ -129,7 +129,7 @@ No other action needed.
 
 |Issue|Solution|
 |-----|--------|
-|No secure template images|Create a set of templates to be used on each VM, server, and user machine. Use [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas) or [Azure VM builder](https://azure.microsoft.com/services/image-builder/).|
+|No secure template images|Create a set of templates to be used on each VM, server, and user machine. Use [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas) or [Azure VM builder](/azure/virtual-machines/image-builder-overview).|
 |No security baselines|Create a set of security baselines for each OS and its security configuration. Use [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas), [Azure security baselines](https://docs.microsoft.com/azure/security-center/security-baseline), and [Azure blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).|
 |No formal audit to ensure hybrid infrastructure security|Follow the guidance provided by [Azure best practices and patterns](https://docs.microsoft.com/azure/security/fundamentals/best-practices-and-patterns).|
 |No human operated ransomware protection plan|Review the [human operated ransomware guide](https://docs.microsoft.com/security/compass/human-operated-ransomware), which contains information on securing your privileged access to sensitive resources. Check out [how to deploy a secure, Azure-managed workstation](https://docs.microsoft.com/security/compass/overview).|

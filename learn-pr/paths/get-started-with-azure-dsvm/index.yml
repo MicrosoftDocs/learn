@@ -23,7 +23,7 @@ products:
 - azure-portal
 - azure-data-science-vm
 modules:
-- learn.data-ai.intro-to-azure-dsvm
+# - learn.data-ai.intro-to-azure-dsvm
 - learn.data-ai.explore-azure-dsvm-types
 - learn.data-ai.provision-and-use-azure-dsvm
 trophy:

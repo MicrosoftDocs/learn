@@ -17,17 +17,17 @@ In this case, the features (***x***) are a vector of four values, or mathematica
 
  Let's suppose that the label we're trying to predict (***y***) is the species of the penguin, and that there are three possible species it could be:
 
- 0. *Amelie*
+ 0. *Adelie*
  1. *Gentoo*
  2. *Chinstrap*
 
  This is an example of a *classification* problem, in which the machine learning model must predict the most probable class to which the observation belongs. A classification model accomplishes this by predicting a label that consists of the probability for each class. In other words, ***y*** is a vector of three probability values; one for each of the possible classes: ***y***=[P(0),P(1),P(2)].
 
-You train the machine learning model by using observations for which you already know the true label. For example, you may have the following feature measurements for an *Amelie* specimen:
+You train the machine learning model by using observations for which you already know the true label. For example, you may have the following feature measurements for an *Adelie* specimen:
 
 ***x***=[37.3, 16.8, 19.2, 30.0]
 
-You already know that this is an example of an *Amelie* (class 0), so a perfect classification function should result in a label that indicates a 100% probability for class 0, and a 0% probability for classes 1 and 2:
+You already know that this is an example of an *Adelie* (class 0), so a perfect classification function should result in a label that indicates a 100% probability for class 0, and a 0% probability for classes 1 and 2:
 
 ***y***=[1, 0, 0]
 
@@ -66,7 +66,7 @@ The previous description of the deep learning training process mentioned that th
 
 ### Calculating loss
 
-Suppose one of the samples passed through the training process contains features of an *Amelie* specimen (class 0). The correct output from the network would be [1, 0, 0]. Now suppose that the output produced by the network is [0.4, 0.3, 0.3]. Comparing these, we can calculate an absolute variance for each element (in other words, how far is each predicted value away from what it should be) as [0.6, 0.3, 0.3].
+Suppose one of the samples passed through the training process contains features of an *Adelie* specimen (class 0). The correct output from the network would be [1, 0, 0]. Now suppose that the output produced by the network is [0.4, 0.3, 0.3]. Comparing these, we can calculate an absolute variance for each element (in other words, how far is each predicted value away from what it should be) as [0.6, 0.3, 0.3].
 
 In reality, since we're actually dealing with multiple observations, we typically aggregate the variance - for example by squaring the individual variance values and calculating the mean, so we end up with a single, average loss value, like 0.18.
 

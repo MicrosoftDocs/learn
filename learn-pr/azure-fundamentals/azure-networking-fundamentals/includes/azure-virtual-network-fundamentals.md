@@ -47,7 +47,7 @@ You'll want to enable Azure resources to communicate securely with each other. Y
 Azure virtual networks enable you to link resources together in your on-premises environment and within your Azure subscription. In effect, you can create a network that spans both your local and cloud environments. There are three mechanisms for you to achieve this connectivity:
 
 - **Point-to-site virtual private networks**
-- 
+
     The typical approach to a virtual private network (VPN) connection is from a computer outside your organization, back into your corporate network. In this case, the client computer initiates an encrypted VPN connection to connect that computer to the Azure virtual network.
     
 - **Site-to-site virtual private networks**

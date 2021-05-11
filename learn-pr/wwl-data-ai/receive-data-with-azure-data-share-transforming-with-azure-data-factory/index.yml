@@ -3,7 +3,7 @@ uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-f
 metadata:
   title: Receive data with Azure Data Share and transforming with Azure Data Factory
   description: "Receive data with Azure Data Share and transforming with Azure Data Factory"
-  ms.date: 03/16/2021
+  ms.date: 04/09/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial

@@ -20,9 +20,9 @@ quiz:
     - content: "Use active geo-replication"
       isCorrect: false
       explanation: "If you use active geo-replication, the secondary region remains read-only, until you manually initiate the failover. You can automate the failover by writing code that calls the REST API."
-    - content: "Use an auto-failover group"
+    - content: "Use an auto failover group"
       isCorrect: true
-      explanation: "By using an auto-failover group, you can configure the primary database to fail over onto the replica in the secondary region automatically."
+      explanation: "By using an auto failover group, you can configure the primary database to fail over onto the replica in the secondary region automatically."
     - content: "Use multiple write regions"
       isCorrect: false
       explanation: "Azure SQL Database does not support multiple write regions."
@@ -34,6 +34,6 @@ quiz:
     - content: "Use Azure SQL Database with active geo-replication."
       isCorrect: false
       explanation: "Active geo-replication uses asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
-    - content: "Use Azure SQL Database with an auto-failover group."
+    - content: "Use Azure SQL Database with an auto failover group."
       isCorrect: false
-      explanation: "Auto-failover groups use asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
+      explanation: "Auto failover groups use asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."

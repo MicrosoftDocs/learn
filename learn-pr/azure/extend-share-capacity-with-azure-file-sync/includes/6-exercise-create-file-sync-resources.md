@@ -8,7 +8,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. Search for **Storage accounts** by using the Azure portal search box.
-1. In **Storage accounts**, select **Add**.
+1. In **Storage accounts**, select **New**.
 1. Use the following values for the storage account:
    
    |Box |Value  |

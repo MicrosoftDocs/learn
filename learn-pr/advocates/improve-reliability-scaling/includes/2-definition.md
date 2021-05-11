@@ -1,10 +1,10 @@
-In the business world, growth is good. However, when growth happens too
-fast, and when you haven’t adequately prepared for it, growth can bring
-problems. One of those is the impact on the reliability of applications and
+In the business world, growth can be beneficial. However, when growth happens too
+quickly, and when you haven’t adequately prepared for it, growth can create
+issues. One of these issues is the impact on the reliability of applications and
 services that weren’t designed to handle a large increase in traffic.
 
-To your customers and end users, an outage is an outage. They don’t know or
-care whether they’re unable to access your site because of buggy code or
+To your customers and users, an outage is an outage. They don’t know or
+care whether they’re unable to access your site because of buggy code, or
 because too many other people are trying to use your perfectly coded site
 at the same time.
 
@@ -18,15 +18,14 @@ In this unit, you’ll learn about the relationship between scalability and
 reliability, the importance of capacity planning in achieving scalability,
 and briefly review some basic concepts and terms related to scaling.
 
-## The scalability/reliability relationship
+## Scalability/reliability relationship
 
 The good news is that making your app more scalable may also make it more
-reliable. For example, if your system auto scales, then given a component
+reliable. For example, if your system autoscales, then given a component
 failure on a single virtual machine, the autoscaling service will provision
-another instance to meet your minimum VM count requirements. This means
-your system is more reliable. In another example, if you’re leveraging
-higher-level services such as Azure Storage that are inherently scalable,
-these have been built to be reliable, so your data will be replicated.
+another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, if you’re using
+higher-level services, such as Azure Storage that are inherently scalable,
+these services have been built to be reliable, so your data will be replicated.
 
 Here's an analogy: Think of the accessibility ramps that you often see
 outside buildings that were initially designed to accommodate people in
@@ -47,7 +46,7 @@ To estimate capacity needs in the future, you should consider such factors
 as:
 
 -   Expected business growth
--   Periodic fluctuations (seasonal, etc.)
+-   Periodic fluctuations (seasonal, and so on)
 -   Application constraints
 -   Identification of bottlenecks and limiting factors
 
@@ -65,27 +64,26 @@ Before you can fully understand the concepts and strategies you’ll
 encounter in this module, you need some prerequisite knowledge of a few
 basic concepts and fundamental terms related to scaling.
 
--   Scaling up: making a component bigger so as to handle an increased
+-   Scaling up: Making a component bigger so as to handle an increased
     workload. This is also referred to as vertical scaling.
 
--   Scaling out: adding more components or resources to spread out the load
+-   Scaling out: Adding more components or resources to spread out the load
     over a distributed architecture. For example, using a simple
-    architecture that has multiple backends behind a set of frontends. As
-    load increases, we add more backend (and frontend) servers to handle
+    architecture that has multiple back ends behind a set of front ends. As
+    load increases, we add more back end (and front end) servers to handle
     it. This is also referred to as horizontal scaling.
 
--   Manually scaling: human action is necessary to increase the amount of
+-   Manually scaling: Human action is necessary to increase the amount of
     resources.
 
--   Auto scaling: the amount of resources is automatically adjusted by the
-    system based on the load. And just to be clear, because this is often
-    left out of our thinking, the amount is adjusted both up and down based
+-   Autoscaling: Amount of resources is automatically adjusted by the
+    system based on the load. To be clear, the amount is adjusted both up and down based
     on either an increased or decreased load.
 
--   DIY scale: do-it-yourself scaling whereby you have to configure the
+-   DIY scale: Do-it-yourself scaling whereby you have to configure the
     autoscaling.
 
--   Inherent scale: services that were built to be scalable and handle this
+-   Inherent scale: Services that were built to be scalable and handle this
     scaling for you behind the scenes without any intervention on your
     part. From your perspective, they look almost infinitely scalable
     because you can just consume more resources without needing to manually
@@ -93,23 +91,23 @@ basic concepts and fundamental terms related to scaling.
 
 ## Tailwind Traders architecture
 
-In this module we are going to use an example architecture from a fictional
+In this module, we're going to use an example architecture from a fictional
 hardware company called Tailwind Traders. Their e-commerce platform looks
 like this:
 
 :::image type="content" source="../media/application-diagram.png" alt-text="Full architecture diagram of applications with frontend, backend and other components.":::
 
-This is pretty complex on first glance, so let's walk our way through it.
-The website has a frontend, that’s what you’ll be talking to if you go to
+This is fairly complex at first glance, so let's walk through it.
+The website has a front end, that’s what you’ll be talking to if you go to
 tailwindtraders.com.
 
 :::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with frontend component highlighted":::
 
-The frontend talks to a set of backend services. These backend services
-include a coupon service, a shopping cart service, and inventory service,
-the usual stuff. They are all running in Azure Kubernetes Service. There
-are other parts and technologies at play with this application. But really,
-all you need to focus on is the frontend and the backend services running
+The front end talks to a set of back end services. These back end services
+include the common items such as a coupon service, a shopping cart service, an inventory service,
+and so on. They are all running in Azure Kubernetes Service. There
+are other parts and technologies at play with this application. 
+All you need to focus on is the front end and the back end services running
 on Kubernetes.
 
 :::image type="content" source="../media/application-diagram-backend.png" alt-text="Full architecture diagram of application with backend component highlighted":::
@@ -122,29 +120,29 @@ attention when thinking about scaling.
 
 :::image type="content" source="../media/application-diagram-failure-points.png" alt-text="Full architecture diagram of application with backend components and SQL DB highlighted":::
 
-All of these services are a single point of failure, they’re not built for
+All of these services are a single point of failure - they’re not built for
 resiliency, or for scale. If one of them gets overloaded, it’s likely to
 crash, and there is no easy way to resolve that in the moment.
 
-Later in this module we will look at other ways to design theses service to
+Later in this module, we will look at other ways to design theses service to
 be more scalable and reliable.
 
 ### Pre-provisioned capacity
 
-Lets take a look at another issue that could come and bite us. Here are the
+Let's take a look at another issue that could prove troublesome. Here are the
 services/components that require us to pre-provisioned capacity:
 
 :::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure Cognitive Services, Cosmos DB, and SQL DB highlighted":::
 
-For example, with Cosmos DB we pre-provision the throughput. If we exceed
+For example, with Cosmos DB, we pre-provision the throughput. If we exceed
 those limits, we’re going to start returning error messages to our
 customers. With Cognitive services, we select the tier and that tier has a
-maximum number of requests per second. Once we hit either of these, clients
+maximum number of requests per second. After we reach either of these, clients
 are going to be throttled.
 
-Will a big spike in traffic, perhaps due to a product launch, make us hit
-these limits? Right now we don’t know. This is another matter we will
-discuss later in this module.
+Will a significant spike in traffic, like launching a new product, make us hit
+these limits? Right now, we don’t know. This is another matter we'll
+review later in this module.
 
 ### Costs
 
@@ -153,9 +151,9 @@ the pay-per-use services:
 
 :::image type="content" source="../media/application-diagram-costs.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted":::
 
-Here we’re using Azure Logic Apps and Azure Functions, which are both
+Here, we’re using Azure Logic Apps and Azure Functions, which are both
 examples of serverless technology. This means these services scale
-automatically and we pay per request. Your bill grows as your customer base
+automatically, and we pay per request. Your bill grows as your customer base
 does. We should at least be aware of the impact upcoming events like a
 product launch may have on our cloud spend. We will work on understanding
 and predicting our cloud spend later in this module as well.

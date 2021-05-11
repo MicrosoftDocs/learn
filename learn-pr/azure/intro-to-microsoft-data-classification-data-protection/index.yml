@@ -3,7 +3,7 @@ uid: learn.azure.data-classification-and-data-protection
 metadata:
   title: Intro to Microsoft data classification and data protection 
   description: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Cloud App Security, service encryption and Office 365 Message Encryption.
-  ms.date: 03/25/2021
+  ms.date: 04/12/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   - Basic knowledge of data protection
   - Basic experience with security technologies
   - Basic experience with Microsoft 365 or Office 365 services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-classification-and-data-protection.svg
 levels:
 - beginner
 roles:

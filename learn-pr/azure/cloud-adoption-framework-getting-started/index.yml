@@ -2,21 +2,21 @@
 uid: learn.azure.cloud-adoption-framework-getting-started
 metadata:
   title: Getting started with the Microsoft Cloud Adoption Framework for Azure
-  description: Use the Cloud Adoption Framework getting started guides to unblock your organization's cloud adoption efforts.
+  description: Use the Cloud Adoption Framework getting-started guides to unblock your organization's cloud adoption efforts.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure
-summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you'll encounter roadblocks that can be easily removed using common approaches shared by thousands of customers.
+summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you'll encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
 abstract: |
   In this module, you will:
   - Understand common roadblocks that prevent adoption success.
-  - Evaluate one or more guides that can help you get things started or moving faster.
-  - Get started on the proper course of action using shared guidance and related Learn modules.
+  - Evaluate one or more guides that can help you get things started or move faster.
+  - Get started on the proper course of action by using shared guidance and related Learn modules.
 prerequisites: |
-  - A general understanding of your current cloud adoption plan and an understanding of the roadblocks that may be preventing your organization from being successful.
+  - A general understanding of your current cloud adoption plan and an understanding of the roadblocks that might prevent your organization from being successful.
 iconUrl: /learn/achievements/cloud-adoption-framework-getting-started.svg
 ratingEnabled: true
 levels:
