@@ -4,7 +4,7 @@ You're now ready to create a new Event Hub. After creating the Event Hub, you'll
 
 Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud shell.
 
-1. First, set default values for the Azure CLI in the Cloud Shell. This will keep you from having to enter these values every time. In particular, let's set the _resource group_ and _location_. Enter the following command into the Azure CLI, and feel free to replace the location with one close to you.
+1. First, set default values for the Azure CLI in Cloud Shell. This will keep you from having to enter these values every time. In particular, let's set the _resource group_ and _location_. Enter the following command into the Azure CLI, and feel free to replace the location with one close to you.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -71,7 +71,7 @@ Now let's create your new Event Hub.
     > |--resource-group (required)  |Resource group owner.|
     > |--namespace-name (required)      |Enter the namespace you created.|
 
-    Let's define the Event Hub name in an environment variable first.
+    Let's define the Event Hub name in an environment variable first using the Cloud Shell.
 
     ```azurecli
     HUB_NAME=hubname-$RANDOM
@@ -104,7 +104,7 @@ Next, let's see what this looks like in the Azure portal.
 
 1. in the left menu pane, under **Entities**, select **Event Hubs**.
 
-    Your Event Hub appears with a status of **Active**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
+    Your Event Hub appears with a status of **Activating**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
 
     ![Event Hub displayed in the Azure portal](../media/3-event-hub.png)
 
