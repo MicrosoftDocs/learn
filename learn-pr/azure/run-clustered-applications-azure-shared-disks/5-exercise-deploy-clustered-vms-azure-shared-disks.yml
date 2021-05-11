@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.run-clustered-applications-azure-shared-disks.exercise-deploy-clustered-vms-azure-shared-disks
+title: Exercise - Deploy clustered VMs by using Azure shared disks
+metadata:
+  title: Exercise - Deploy clustered VMs by using Azure shared disks
+  description: Use Azure shared disks with virtual machines.
+  ms.date: 04/28/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-deploy-clustered-vms-azure-shared-disks.md)]
