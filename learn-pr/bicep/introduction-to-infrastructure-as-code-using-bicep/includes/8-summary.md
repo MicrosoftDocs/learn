@@ -12,4 +12,4 @@ Finally, you learned about Bicep, a declarative language that you can use to eas
 
 ## Next steps
 
-- Learn more about [Bicep on GitHub](https://github.com/Azure/bicep).
+- Learn more about [Bicep](/azure/azure-resource-manager/templates/bicep-overview).
