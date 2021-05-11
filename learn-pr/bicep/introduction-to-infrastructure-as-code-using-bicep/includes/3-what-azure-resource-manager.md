@@ -4,7 +4,7 @@ In this unit, you'll learn about Resource Manager and the two types of Resource 
 
 ## What is Azure Resource Manager?
 
-Azure Resource Manager is the service that's used to deploy and manage resources in Azure. You can use Resource Manger to create, update, and delete resources in your Azure subscription. You can interact with Resource Manager by using many tools, including the Azure portal. Resource Manager also provides a series of other features, like access control, auditing, and tagging, to help manage your resources after deployment.
+Azure Resource Manager is the service that's used to deploy and manage resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription. You can interact with Resource Manager by using many tools, including the Azure portal. Resource Manager also provides a series of other features, like access control, auditing, and tagging, to help manage your resources after deployment.
 
 ### Terminology
 
