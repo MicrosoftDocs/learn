@@ -36,12 +36,7 @@ quiz:
           explanation: "Prefabs are Unity Assets that act as a template from which you can create new Prefab instances in the Scene.  They are not built into the HoloLens."
         - content: "When one Prefab is edited, all others are edited, saving time"
           isCorrect: true
-          explanation: "The Unity Prefab system allows you to automatically keep all the copies in sync.  Any edits that you make to a Prefab Asset are automatically reflected in the instances of that Prefab, allowing you to easily make broad changes across your whole Project without having to repeatedly make the same edit to every copy of the Asset.
-
-You can nest Prefabs inside other Prefabs to create complex hierarchies of objects that are easy to edit at multiple levels.
-
-However, this does not mean all Prefab instances have to be identical. You can override settings on individual prefab instances if you want some instances of a Prefab to differ from others. You can also create variants of Prefabs which allow you to group a set of overrides together into a meaningful variation of a Prefab.
-"
+          explanation: "The Unity Prefab system allows you to automatically keep all the copies in sync.  Any edits that you make to a Prefab Asset are automatically reflected in the instances of that Prefab, allowing you to easily make broad changes across your whole Project without having to repeatedly make the same edit to every copy of the Asset. \nYou can nest Prefabs inside other Prefabs to create complex hierarchies of objects that are easy to edit at multiple levels. \nHowever, this does not mean all Prefab instances have to be identical. You can override settings on individual prefab instances if you want some instances of a Prefab to differ from others. You can also create variants of Prefabs which allow you to group a set of overrides together into a meaningful variation of a Prefab."
     - content: "What best describes the Microsoft.MixedReality.Toolkit.UI Namespace use for HoloLens solutions?"
       choices:
         - content: "It contains a set of MRTK object classes to accelerate development"
