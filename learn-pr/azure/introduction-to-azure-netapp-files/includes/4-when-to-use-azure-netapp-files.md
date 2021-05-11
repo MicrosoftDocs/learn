@@ -16,11 +16,23 @@
         * Conditionals
         * Connectors"
 -->
+
+- Reduce Risk - Achieving 99.99% availability targets - Guaranteed
+- Built-in data protection to ensure your data is not lost
+- Performance of Azure NetApp Files removes the storage
+Lower Costs bottleneck so you can more efﬁciently use your compute resources
+. Get better application performance from lower cost virtual
+machines
+Save Time - Deploy ﬁle environments faster with a simple to use interface
+- NetApp SnapShot copies reduce the time and complexity to
+protect your business-critical data
+
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+
+- TODO
+- TODO
+- TODO
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
@@ -38,7 +50,9 @@ TODO: add your bulleted list of key things covered
         "Decision criteria"
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
 -->
+
 ## Decision criteria
+
 TODO: add your 3 lead-in sentences
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
@@ -86,19 +100,23 @@ TODO: add your topic sentences(s)
         Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
         Visual: <image preferred>
 -->
-### <criterion>
+
+### <criterion
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 
-### <criterion>
+### <criterion
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 
-### <criterion>
+### <criterion
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
@@ -120,7 +138,9 @@ Paragraph (optional)
         "Apply the criteria"
          "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
 -->
+
 ## Apply the criteria
+
 TODO: add your 3 lead-in sentences
 
 <!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
@@ -139,19 +159,22 @@ TODO: add your 3 lead-in sentences
         Visual: <image preferred>
 -->
 
-### Should <scenario subtask> use <product>?
+### Should the web team use Azure NetApp Files?
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
 
-### Should <scenario subtask> use <product>?
+### Should [line of business]] use Azure NetApp Files?
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
 
-### Should <scenario subtask> use <product>?
+### Should [research and development] use Azure NetApp Files?
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)

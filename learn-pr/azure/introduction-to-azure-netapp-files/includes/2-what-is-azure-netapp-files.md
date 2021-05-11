@@ -28,7 +28,9 @@ TODO: add your topic sentences(s)
         Heading: "What is a business process?
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
-## What is <concept>?
+
+## What is -concept-?
+
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
@@ -51,7 +53,53 @@ TODO: Add your visual element
         Heading: "Azure Logic Apps definition"
         Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
 -->
-## <product> definition
+
+## Azure NetApp Files definition
+
+Widest choice of file protocols (NFSv3, NFSv4.1, SMB3) in the public cloud
+On-premises class availability and performance with multiple tiers (Ultra, Premium, Standard)
+Most advanced enterprise data management (Snapshots, Clones, Replication)
+Azure consistent experience, support, and billing —Azure portal, not marketplace!
+
+Programmable via API or CLI
+
+cloud:
+agility
+scalability
+flexibility
+elasticity
+simplicity
+cost
+
+apps, data, services
+
+core enterprise apps
+SAP, Oracle, SQL
+
+un-migratable
+
+the bottleneck for business-critical workloads is storage. If your enterprise workload relies on a external storage systems that are file-based
+performance: low latency, high throughput
+reliability: high availability
+security:
+enterprise data management: snapshots, clones, cross-region replication
+
+workloads
+enterprise file workloads
+database
+containerized apps
+HPC (high performance computing) - some use cases here: https://www.netapp.com/data-storage/high-performance-computing/what-is-hpc/
+  HPC in the cloud is cheaper because you only use it when you need it
+VDI
+
+verticals and industries:
+semiconductor EDA
+e-commerce
+
+you want to "lift and shift" your workload that is, you want to transition your workload into the cloud without having to change the components, configuration, or code of your application.
+This minimizes the risk that your workload will have problems once it starts running in the cloud and it minimizes the costs, effort,and time required to migrate your workload.
+
+
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
@@ -75,7 +123,9 @@ TODO: Add your visual element
         Heading: "How to implement a Twitter monitor"
         Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
 -->
-## How to <solve scenario>
+
+## How to -solve scenario-
+
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
@@ -102,7 +152,9 @@ TODO: Add your visual element
 -->
 
 <!-- Pattern for simple topic -->
+
 ## H2 heading
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
@@ -110,15 +162,21 @@ Paragraph (optional)
 Paragraph (optional)
 
 <!-- Pattern for complex topic -->
+
 ## H2 heading
+
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list, code sample, blockquote)
+
 ### H3 heading
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
+
 ### H3 heading
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)

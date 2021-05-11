@@ -10,8 +10,13 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+Implementing enterprise-scale workloads and applications requires enterprise-grade storage performance and high availability. Historically, for most organizations, this type of performance could only be achieved using a highly tuned configuration in an on-premises data center. However, such configurations tend to be inflexible, complex, and expensive. A cloud service such as Azure offers flexibility, simplicity, and cost savings for regular workloads.
+
+:::image type="content" source="../media/1-introduction-anf-before.png" alt-text="Diagram depicting a web server cluster running in an on-premises data center and accessing a network access storage device that uses the NFS protocol.":::
+
+How do you migrate mission-critical enterprise workloads to the cloud without sacrificing performance, security, or availability? Azure NetApp Files provides data center-quality performance, robust security, and high availability with all the advantages of the cloud.
+
+:::image type="content" source="../media/1-introduction-anf-after.png" alt-text="Diagram depicting a virtual web server cluster running in an Azure virtual network and accessing NFS file storage using Azure NetApp Files.":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -28,8 +33,7 @@ TODO: add your visual element
 
 ## Example scenario
 
-TODO: add your scenario
-TODO: add your image
+Suppose you work for a large pharmaceutical enterprise. Your IT department runs a data center with infrastructure to run the company's website, SAP enterprise resource planning (ERP) software, and the high-performance computing (HPC) applications of the research and development department. The website, ERP package, and HPC apps are all crucial to the company's bottom line and its future growth. The massive storage and throughput used by these resources requires a finely tuned data center configuration. However, the downsides of that configuration are high costs, increasing complexity, and a lack of agility. You've been tasked to see if any or all of these enterprise workloads can be migrated to Azure without modification or new code. Here, you'll learn that Azure NetApp Files' low latency and high throughput enable you to match your data center performance, and its built-in data management features provide resilient and elastic cloud workloads.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -46,7 +50,11 @@ TODO: add your image
 
 ## What will we be doing?
 
-TODO: add your activities
+We'll examine Azure NetApp Files from several angles to help you decide if you can migrate your enterprise workloads to the cloud:
+
+- **Performance**: What latencies, throughput, and NAS protocols are supported by Azure NetApp Files?
+- **Resiliency**: How available are your workloads in Azure NetApp Files?
+- **Data management**: What tools does Azure NetApp Files offer to manage and protect your data?
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -64,6 +72,6 @@ TODO: add your activities
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to...
+By the end of this session, you'll be able to evaluate whether Azure NetApp Files is a viable choice for migrating and running your organization's file-based workloads.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
