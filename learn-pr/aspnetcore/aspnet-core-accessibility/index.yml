@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: aspnetcore-accessibility
+uid: learn.aspnetcore-accessibility
 metadata:
   title: Create accessible apps with ASP.NET Core
   description: Learn how to enhance ASP.NET Core apps with automation properties to improve support for screen readers to make apps more accessible.
@@ -28,13 +28,13 @@ products:
 - dotnet
 - vs
 units:
-- aspnetcore-accessibility.1-introduction
-- aspnetcore-accessibility.2-accessibility-features
-- aspnetcore-accessibility.3-exercise-enable-screen-readers
-- aspnetcore-accessibility.4-automation-properties
-- aspnetcore-accessibility.5-exercise-add-automation-properties
-- aspnetcore-accessibility.6-keyboard-accessibility
-- aspnetcore-accessibility.7-exercise-keyboard-accessibility
-- aspnetcore-accessibility.8-summary
+- learn.aspnetcore-accessibility.1-introduction
+- learn.aspnetcore-accessibility.2-accessibility-features
+- learn.aspnetcore-accessibility.3-exercise-enable-screen-readers
+- learn.aspnetcore-accessibility.4-automation-properties
+- learn.aspnetcore-accessibility.5-exercise-add-automation-properties
+- learn.aspnetcore-accessibility.6-keyboard-accessibility
+- learn.aspnetcore-accessibility.7-exercise-keyboard-accessibility
+- learn.aspnetcore-accessibility.8-summary
 badge:
-  uid: aspnetcore-accessibility.badge
+  uid: learn.aspnetcore-accessibility.badge
