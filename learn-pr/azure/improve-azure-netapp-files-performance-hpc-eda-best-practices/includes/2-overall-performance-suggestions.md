@@ -12,7 +12,7 @@ When possible, put your client VMs and Azure NetApp Files in the same region and
 
 Enable accelerated networking on your client VMs if it's supported, to provide 30+ gigabits per second (Gbps) in networking throughput. Accelerated networking will lower the latency from client VMs to Azure NetApp Files. It will also boost overall performance, especially on the distributed multi-scenario analysis (DMSA) type of simulation.
 
-It's a best practice to run the latest OS patch version available. You should also update the Network File System (NFS) utilities to their latest releases, to get the newest bug fixes and feature functionality. These updates will help ensure optimal performance and system stability.
+It's a best practice to run the latest patch version available for the operating system. You should also update the Network File System (NFS) utilities to their latest releases, to get the newest bug fixes and feature functionality. These updates will help ensure optimal performance and system stability.
 
 For example, run these commands:
 

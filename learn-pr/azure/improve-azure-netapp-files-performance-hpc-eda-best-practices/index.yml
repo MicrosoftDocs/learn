@@ -14,7 +14,7 @@ summary: Learn how to improve Azure NetApp Files performance for your EDA and HP
 abstract: | 
   By the end of this module, you'll be able to: 
   - List the best practices that improve Azure NetApp Files performance.
-  - Describe the performance impact of the best practices on FIO and EDA benchmarking suites.
+  - Describe the performance impact of the best practices on FIO and EDA benchmark suites.
 prerequisites: | 
   - Understanding of the storage hierarchy for Azure NetApp Files, including NetApp accounts, capacity pools, and volumes
   - Ability to set up Azure NetApp Files and create a volume
