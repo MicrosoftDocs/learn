@@ -97,6 +97,8 @@ You'll see `Running...` in the terminal. Wait for the deployment to finish.
 
 After deployment is finished, you want to verify that new virtual networks are deployed and that they have subnets configured as we expect.
 
+::: zone pivot="cli"
+
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
@@ -111,8 +113,6 @@ After deployment is finished, you want to verify that new virtual networks are d
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
 
-::: zone pivot="cli"
-
 1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL servers that were deployed.
 
     :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment outputs displaying SQL server properties." border="true":::
@@ -120,6 +120,20 @@ After deployment is finished, you want to verify that new virtual networks are d
 ::: zone-end
 
 ::: zone pivot="powershell"
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
+
+1. Select **<rgn>[sandbox resource group name]</rgn>**.
+
+1. Verify that the virtual networks have been deployed into the three Azure locations.
+
+   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal interface with virtual networks after deployment." border="true":::
+
+1. Select virtual network named `teddybear-eastasia` and select *Subnets* under the *Settings* category in the left menu.
+
+1. Verify that deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
+
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
 
 1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL servers that were deployed.
 

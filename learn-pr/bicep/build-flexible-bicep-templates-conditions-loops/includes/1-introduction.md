@@ -1,4 +1,4 @@
-Bicep conditions and loops enable you to make your Bicep code more flexible. Conditions enable you to deploy resources only when specific conditions are met. Loops enable you to deploy multiple resources that all have similar properties.
+Bicep conditions and loops make your Azure deployments more flexible. Conditions enable you to deploy resources only when specific conditions are met. Loops enable you to deploy multiple resources that all have similar properties.
 
 ## Example scenario
 
@@ -20,4 +20,4 @@ In this module, you'll extend Bicep template with conditions and loops. You'll:
 
 ## What is the main goal?
 
-By the end of this module you'll be able to create advanced Bicep templates by using conditions and loops. You'll be able to write Bicep code that configures how loops are executed, and you'll be able to create variable loops and output loops to make your templates even more flexible, and to control how your Azure resources are deployed.
+By the end of this module you'll be able to create Bicep templates by using conditions and loops. You'll be able to write Bicep code that configures how loops are executed, and you'll be able to create variable loops and output loops to make your templates even more flexible, and to control how your Azure resources are deployed.
