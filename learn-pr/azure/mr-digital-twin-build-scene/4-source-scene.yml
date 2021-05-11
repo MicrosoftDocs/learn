@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-build-scene.4-source-scene
-title: Source Scene data
+uid: learn.azure.mr-digital-twin-build-scene.4-source-scene
+title: Source scene data
 metadata:
-  title: Source Scene data
-  description: Import and configure resources
+  title: Source scene data
+  description: Overview of the data sources the module uses to provide your Unity project with data.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/4-source-scene.md)]

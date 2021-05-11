@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-build-scene.1-introduction
+uid: learn.azure.mr-digital-twin-build-scene.1-introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,6 +9,6 @@ metadata:
   ms.author: sekerawa 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

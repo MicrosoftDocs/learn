@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-build-scene.8-summary
+uid: learn.azure.mr-digital-twin-build-scene.8-summary
 title: Summary
 metadata:
   title: Summary
-  description: summary
+  description: Summary of the module and helpful resources for moving forward.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

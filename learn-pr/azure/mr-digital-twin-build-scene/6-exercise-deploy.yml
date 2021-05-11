@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-build-scene.6-exercise-deploy
-title: Exercise - Deploy to HoloLens 2, test, and uninstall
+uid: learn.azure.mr-digital-twin-build-scene.6-exercise-deploy
+title: Exercise - deploy to HoloLens 2, test, and uninstall
 metadata:
-  title: Exercise - Deploy to HoloLens 2, test, and uninstall
-  description: Interaction models for interacting with holograms.
+  title: Exercise - deploy to HoloLens 2, test, and uninstall
+  description: Learn how to deploy, test, and uninstall the app on a HoloLens 2 device.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-deploy.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-build-scene.2-scene-design
-title: Consider Scene design
+uid: learn.azure.mr-digital-twin-build-scene.2-scene-design
+title: Consider scene design
 metadata:
-  title: Consider Scene design
-  description: Configure Unity for Windows Mixed Reality development.
+  title: Consider scene design
+  description: Overview of Unity scene design considerations and wind farm example used throughout the module.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa 
