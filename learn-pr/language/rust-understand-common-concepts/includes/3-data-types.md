@@ -16,7 +16,7 @@ You can experiment by removing the type annotation and observe the resulting com
 let number = "42".parse().expect("Not a number!");
 ```
 
-The complier error:
+The  compiler error:
 
 ```output
     error[E0282]: type annotations needed

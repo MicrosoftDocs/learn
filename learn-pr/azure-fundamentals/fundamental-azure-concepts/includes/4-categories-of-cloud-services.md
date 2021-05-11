@@ -2,15 +2,56 @@
 
 If you've been around cloud computing for a while, you've probably seen the *PaaS*, *IaaS*, and *SaaS* acronyms for the different *cloud service models*. These models define the different levels of shared responsibility that a cloud provider and cloud tenant are responsible for.
 
-| Model | Definition | Description |
-| --- | --- | --- |
-| **IaaS** | <nobr>*Infrastructure-as-a-Service*</nobr> | This cloud service model is the closest to managing physical servers; a cloud provider will keep the hardware up-to-date, but operating system maintenance and network configuration is up to you as the cloud tenant. For example, Azure virtual machines are fully operational virtual compute devices running in Microsoft datacenters. An advantage of this cloud service model is rapid deployment of new compute devices. Setting up a new virtual machine is considerably faster than procuring, installing, and configuring a physical server. |
-| **PaaS** | <nobr>*Platform-as-a-Service*</nobr> | This cloud service model is a managed hosting environment. The cloud provider manages the virtual machines and networking resources, and the cloud tenant deploys their applications into the managed hosting environment. For example, Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about the physical hardware and software requirements. |
-| **SaaS** | <nobr>*Software-as-a-Service*</nobr> | In this cloud service model, the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider. For example, Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud. All you need to do is create your content, and Office 365 takes care of everything else. |
+:::row:::
+  :::column:::
+    **Model**
+  :::column-end:::
+  :::column:::
+    **Definition**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **IaaS**
+  :::column-end:::
+  :::column:::
+    *Infrastructure-as-a-Service*
+  :::column-end:::
+  :::column:::
+    This cloud service model is the closest to managing physical servers; a cloud provider will keep the hardware up-to-date, but operating system maintenance and network configuration is up to you as the cloud tenant. For example, Azure virtual machines are fully operational virtual compute devices running in Microsoft datacenters. An advantage of this cloud service model is rapid deployment of new compute devices. Setting up a new virtual machine is considerably faster than procuring, installing, and configuring a physical server.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **PaaS**
+  :::column-end:::
+  :::column:::
+    *Platform-as-a-Service*
+  :::column-end:::
+  :::column:::
+    This cloud service model is a managed hosting environment. The cloud provider manages the virtual machines and networking resources, and the cloud tenant deploys their applications into the managed hosting environment. For example, Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about the physical hardware and software requirements.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **SaaS**
+  :::column-end:::
+  :::column:::
+    *Software-as-a-Service*
+  :::column-end:::
+  :::column:::
+    In this cloud service model, the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider. For example, Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud. All you need to do is create your content, and Office 365 takes care of everything else.
+  :::column-end:::
+:::row-end:::
+
 
 The following illustration demonstrates the services that might run in each of the cloud service models.
 
-[![Diagram of services separated by cloud service models.](../media/iaas-paas-saas.png)](../media/iaas-paas-saas-expanded.png#lightbox)
+:::image type="content" source="../media/iaas-paas-saas-575a09e9.png" alt-text="Diagram of services separated by cloud service models.":::
+
 
 Let's compare the three models in more detail in the following sections.
 
@@ -77,6 +118,48 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 #### Disadvantage
 
 **Software limitations**. There can be some limitations to a software application that might affect how users work. Because you're using as-is software, you don't have direct control of features. When you're evaluating which SaaS platform is best suited for a workload, be sure to consider any business needs and software limitations.
+
+### Cloud service model comparison
+
+:::row:::
+  :::column:::
+    **IaaS**
+  :::column-end:::
+  :::column:::
+    **PaaS**
+  :::column-end:::
+  :::column:::
+    **SaaS**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    The most flexible cloud service.
+  :::column-end:::
+  :::column:::
+    Focus on application development.
+  :::column-end:::
+  :::column:::
+    Pay-as-you-go pricing model.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    You configure and manage the hardware for your application.
+  :::column-end:::
+  :::column:::
+    Platform management is handled by the cloud provider.
+  :::column-end:::
+  :::column:::
+    Users pay for the software they use on a subscription model.
+  :::column-end:::
+:::row-end:::
+
+
+The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.<br>
+
+:::image type="content" source="../media/shared-responsibility-76efbc1e.png" alt-text="Illustration showing the cloud responsibility model.":::
+<br>
 
 ## What is serverless computing?
 
