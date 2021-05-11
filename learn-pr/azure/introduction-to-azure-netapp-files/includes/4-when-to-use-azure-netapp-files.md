@@ -27,6 +27,11 @@ Save Time - Deploy ﬁle environments faster with a simple to use interface
 - NetApp SnapShot copies reduce the time and complexity to
 protect your business-critical data
 
+For these file-based workloads, the bottleneck for business-critical applications is storage. If your enterprise workload relies on external storage systems that are file-based
+
+you want to "lift and shift" your workload that is, you want to transition your workload into the cloud without having to change the components, configuration, or code of your application.
+This minimizes the risk that your workload will have problems once it starts running in the cloud and it minimizes the costs, effort, and time required to migrate your workload.
+
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
 

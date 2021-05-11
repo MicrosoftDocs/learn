@@ -60,8 +60,8 @@ TODO: describe the business impact
 
 - [Azure NetApp Files](https://azure.microsoft.com/services/netapp/)
 - [SLA for Azure NetApp Files](https://azure.microsoft.com/support/legal/sla/netapp/v1_1/)
-- [Service levels for Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-service-levels)
-- [Resource limits for Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-resource-limits)
+- [Service levels for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels)
+- [Resource limits for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-resource-limits)
 - [FAQs About Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-faqs)
 
 <!-- Do not include any other content -->
