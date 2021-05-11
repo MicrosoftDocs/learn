@@ -4,7 +4,7 @@ Connecting right time data to 3D assets using ADT involves many steps.  You can 
 
 Observing streaming data in an immersive setting on the HoloLens can be powerful.  Data patterns and correlations can be observed and experienced in Mixed Reality as opposed to being inferred from tabular data and reports.  By connecting a Digital Twin to ADT, you can identify anomalies and take action directly from within the HoloLens environment. 
 
-## Learn more
+## References
 
 * [Sign in with the Azure CLI](/cli/azure/authenticate-azure-cli)
 * [SignalR Service – Real-time web](https://azure.microsoft.com/services/signalr-service/)
