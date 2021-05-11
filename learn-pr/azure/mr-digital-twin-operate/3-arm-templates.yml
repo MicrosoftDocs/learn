@@ -3,7 +3,7 @@ uid: learn.azure.mr-digital-twin-operate.3-arm-templates
 title: Azure Resource Manager (ARM) templates
 metadata:
   title: Azure Resource Manager (ARM) templates
-  description: Understand how to leverage several Azure services together, bring data to your Digital Twin, and facilitate two-way communication in Unity and on the HoloLens.
+  description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and on the HoloLens.
   ms.date: 5/4/2021
   author: Sean-Kerawala
   ms.author: sekerawa
