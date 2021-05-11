@@ -77,8 +77,8 @@ Let's repeat what we did in the preceding unit to add an Azure Cosmos DB input b
     | **Database name** | func-io-learn-db | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | Bookmarks | The container from which we'll read data. We defined this setting was earlier in the lesson. |
     | **SQL Query (optional)** | Leave blank | We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
-    |**Document ID**| `id` | Add the Document id that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier.|
-    | **Partition key** | `{/id}` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `<key>`) must match the one in the container. |
+    |**Document ID**| id | Add the Document id that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier.|
+    | **Partition key** | /id | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `<key>`) must match the one in the container. |
 
 1. To save all changes to this binding configuration, select **OK**.
 
