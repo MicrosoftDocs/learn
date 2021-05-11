@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.introduction-infrastructure-code-using-bicep # Do not edit: uid must be globally unique
+metadata:
+  moduleType: introduction        # Do not edit: type must be 'introduction'
+  title: Introduction to infrastructure as code using Bicep          # Do not edit: title must be "Introduction to <product>"
+  description: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.                 # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 03/12/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: joshuawaddell      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: jowaddel           # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.prod: learning-azure
+title: Introduction to infrastructure as code using Bicep
+summary: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments. Determine the types of deployments for which Bicep is a good imperative deployment tool.
+abstract: |
+  After completing this module, you’ll be able to:
+    - Describe the benefits of infrastructure as code.
+    - Describe the difference between declarative and imperative infrastructure as code.
+    - Explain what Bicep is, and how it fits into an infrastructure as code approach.
+prerequisites: |
+  - You should be familiar with basic cloud computing concepts and terminology.
+  - You should be familiar with different types of cloud resources.
+iconUrl: /learn/achievements/bicep/introduction-infrastructure-code-using-bicep.svg
+levels:
+  - beginner
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:  
+- learn.azure.introduction-infrastructure-code-using-bicep.introduction
+- learn.azure.introduction-infrastructure-code-using-bicep.what-infrastructure-code
+- learn.azure.introduction-infrastructure-code-using-bicep.what-azure-resource-manager
+- learn.azure.introduction-infrastructure-code-using-bicep.what-bicep
+- learn.azure.introduction-infrastructure-code-using-bicep.how-bicep-works
+- learn.azure.introduction-infrastructure-code-using-bicep.when-use-bicep
+- learn.azure.introduction-infrastructure-code-using-bicep.knowledge-check
+- learn.azure.introduction-infrastructure-code-using-bicep.summary
+badge:
+  uid: learn.azure.introduction-infrastructure-code-using-bicep.badge
