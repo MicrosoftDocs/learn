@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-operate.2-connecting-telemetry-data
-title: Connecting telemetry data
+title: Connect telemetry data
 metadata:
-  title: Connecting telemetry data
+  title: Connect telemetry data
   description: Learn how telemetry data plays a role in an Azure Digital Twin experience.
   ms.date: 5/4/2021
   author: Sean-Kerawala
