@@ -1,7 +1,5 @@
 Now that you have built the base terrain for your Wind Farm experience and placed your turbine assets, build the project and deploy it to the HoloLens 2.  After you've deployed and tested, return to build out more functionality into your Mixed Reality experience.
 
-[Building your application to your HoloLens 2 -  Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr#building-your-application-to-your-hololens-2)
-
 > [!IMPORTANT]
 > When adjusting your build settings, be sure to **Add Open Scenes** if your Scene does not appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform.
 
@@ -26,15 +24,15 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 1. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the Mixed reality Home button. 
 2. Once you've exited the app, close the app window using the close icon in the top right of the window.
 
-> [!TIP]
-> Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage).
+    > [!TIP]
+    > Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage).
 
 After you're done testing your wind farm experience, uninstall the app:
 
 ## Uninstall from the Start menu
 
-1. On the **Start** menu or in the **All apps** list, browse to the app. Select and hold until the menu appears, then select **Uninstall**.
+On the **Start** menu or in the **All apps** list, browse to the app. Select and hold until the menu appears, then select **Uninstall**.
 
 ## Uninstall from Settings
 
-1. On the **Start** menu, select **Settings -> Apps**. Find the app from the list, select it and then click **Uninstall**.
+On the **Start** menu, select **Settings -> Apps**. Find the app from the list, select it and then click **Uninstall**.

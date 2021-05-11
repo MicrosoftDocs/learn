@@ -8,7 +8,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
 4. **RotationAxisConstraint**:  Can be used to constrain the turbine to only rotate around the Y (Up) axis
 
-:::image type="content" source="../media/so-turbine.png" alt-text="Screenshot of the Unity scene window with the wind turbine prefab in view and the wind turbine prefab selected in the inspector.":::
+    :::image type="content" source="../media/so-turbine.png" alt-text="Screenshot of the Unity scene window with the wind turbine prefab in view and the wind turbine prefab selected in the inspector.":::
 
 Each Digital Twin turbine Prefab has a corresponding ScriptableObject in the Unity project that stores data received from Microsoft Azure. The Prefab holds a reference to this ScriptableObject and an event is triggered to notify the asset when the data have been updated. 
 
