@@ -90,4 +90,4 @@ The following table lists examples that illustrate the difference in performance
 
 Host caching can help you avoid VM bottlneck scenarios.
 In the earlier example of VM IO capping, the application required 15000 IOPS. Both data disks can handle that demand, but the Standard_D8s_v3 VM can only offer 12800 IOPS in the uncached state.
-If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS, which is more that the application demands.
+If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS, which is more than what the application demands.

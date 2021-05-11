@@ -14,40 +14,40 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "You need the best disk performance for a new virtual machine. What disk type should you use, assuming all disk types are supported in your region?"
+  - content: "An administrator needs to select a disk type that provides the best disk performance for a new VM. Which disk type should the administrator use assuming all disk types are supported in their region?"
     choices:
     - content: "Ultra disks"
       isCorrect: true
       explanation: "Ultra SSDs offer the best performance of disk types on Azure."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Standard HDDs are cost effective solution, but they don't perform as well as premium SSDs or ultra disks."
+      explanation: "Standard HDDs are a cost-effective solution, but they don't perform as well as Premium SSDs or Ultra Disks."
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Premium SSDs have excellent performance, but do not offer the best performance of disk types on Azure."
+      explanation: "Premium SSDs provide high performance, but do not offer the best performance of all the available disk types in Azure."
  
-  - content: "You need to choose the right disk for your SQL server that is running in Azure VM to support at minimum 1100 IOPS of 1,100 at all times. How would this requirement change the disk type you choose?"
+  - content: "An administrator requires a disk storage solution for a SQL server that is running in Azure VM to support a minimum of 1100 IOPS at all times. How would this requirement impact the disk type the administrator selects?"
     choices:
-    - content: "Enable read and write caching on standard SSD disk."
+    - content: "Enable read and write caching on a Standard SSD disk."
       isCorrect: false
-      explanation: "Although caching generally improve the IOPS performance it does not garranty the minimum required IOPS value."
-    - content: "Use standard HDDs instead of standard SSDs."
+      explanation: "Although caching generally improves the IOPS performance, it does not guarantee the minimum IOPS value that the administrator requires."
+    - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
-      explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
-    - content: "Use premium SSDs instead of standard SSDs."
+      explanation: "Standard SSDs and Standard HDDs don't guarantee an IOPS value."
+    - content: "Use Premium SSDs instead of Standard SSDs."
       isCorrect: true
-      explanation: "Premium SSDs and ultra disks have a guaranteed performance level."
+      explanation: "Premium SSDs and Ultra Disks provide a guaranteed performance level."
  
-  - content: "As administrator you plans to create an Azure VM that will run application that periodically require change in the performance. Which of the following you can use to achieve this to meet application requirements?"
+  - content: "As administrator plans to create an Azure VM to run applications that periodically require changes in their performance. Which of the following features can the administrator use to achieve this to meet application requirements?"
     choices:
-    - content: "Disk bursting"
+    - content: "Use disk bursting."
       isCorrect: false
-      explanation: "Although disk bursting can be used to improve the application performance, this is usually used for unplanned scenarios."
-    - content: "Use ultra disk and change the performance tier."
+      explanation: "Although the administrator can use disk bursting to improve the application performance, this is usually used for unplanned scenarios."
+    - content: "Use Ultra Disks and change the performance tier."
       isCorrect: true
-      explanation: "You can change the performance tier on ultra and premium SSD disks when you need to meet a higher performance demand."
+      explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
     - content: "Use read/write caching on the disk."
       isCorrect: false
-      explanation: "Although caching generally improve the IOPS performance it cannot be used in scenario when we need to change the performance tier for the disk."
+      explanation: "Although caching generally improves the IOPS performance, it cannot be used in scenarios when you need to change the performance tier for the disk."
 content: |
   [!include[](includes/6-knowledge-check.md)]
