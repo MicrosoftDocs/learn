@@ -6,15 +6,16 @@ The following video introduces the different services that should be available w
 
 To begin using Azure Storage, you first create an Azure Storage account to store your data objects. You can create an Azure Storage account by using the Azure portal, PowerShell, or the Azure CLI.
 
-[![Screenshot of creating a storage account.](../media/create-storage-account.png)](../media/create-storage-account-expanded.png#lightbox)
+:::image type="content" source="../media/create-storage-account-1c42138c.png" alt-text="Screenshot of creating a storage account.":::
+
 
 Your storage account will contain all of your Azure Storage data objects, such as blobs, files, and disks.
 
 > [!NOTE]
-> 
-> Azure VMs use Azure Disk Storage to store virtual disks. However, you can't use Azure Disk Storage to store a disk outside of a virtual machine.
+> Azure VMs use Azure Disk Storage to store virtual disks. However, you can't use Azure Disk Storage to store a disk outside of a virtual machine.<br>
 
-![Diagram of hierarchy of a storage account.](../media/account-container-blob.png)
+:::image type="content" source="../media/account-container-blob-4da0ac47.png" alt-text="Diagram of hierarchy of a storage account.":::
+
 
 A storage account provides a unique namespace for your Azure Storage data, that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
