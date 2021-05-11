@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.exercise-setup
-title: Monitoring exercise setup
+title: Exercise  - Set up the exercise environment
 metadata:
   unitType: exercise
-  title: Monitoring exercise setup
+  title: Exercise  - Set up the exercise environment
   description: Monitoring exercise setup
   ms.date: 4/8/2021
   author: roryp

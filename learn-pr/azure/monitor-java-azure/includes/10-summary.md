@@ -20,7 +20,7 @@ In the preceding processes, you created Azure resources. If you don't expect to 
 az group delete --name <your Resource Group Name> --yes
 ```
 
-## Additional resources
+## References
 
 * [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
