@@ -15,21 +15,21 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "In Xamarin.Forms, what property needs to be set to ensure an element is available to an accessible app?"
+    - content: "In Xamarin.Forms, what property needs to be set to ensure that an element is available to an accessible app?"
       choices:
       - content: "IsAccessible"
         isCorrect: false
         explanation: "IsAccessible is not the name of an automation property."
       - content: "IsInAccessibleTree"
         isCorrect: true
-        explanation: "Xamarin.Forms uses this automation property to set the underlying native platform accessibility flags to ensure the element is read by the screen reader."
+        explanation: "Xamarin.Forms uses this automation property to set the underlying native platform accessibility flags to ensure that the screen reader reads the element."
       - content: "Name"
         isCorrect: false
-        explanation: "Name is an automation property, but is used to specify a short description to be read by the screen reader."
+        explanation: "Name is an automation property, but it's used to specify a short description for the screen reader to read."
       - content: "LabeledBy"
         isCorrect: false
-        explanation: "LabeledBy is an automation property, but is used to allow another element to define the screen reader description for the current element."
-    - content: "What is the term that refers to the feature which reads out loud the elements on an application?"
+        explanation: "LabeledBy is an automation property, but it's used to allow another element to define the screen reader description for the current element."
+    - content: "What term refers to the feature that reads out loud the elements on an application?"
       choices:
       - content: "TalkBack"
         isCorrect: false
@@ -39,4 +39,4 @@ quiz:
         explanation: "This is the name of the primary screen reader for Windows."
       - content: "Screen reader"
         isCorrect: true
-        explanation: "A screen reader is available on the different platforms for accessibility."
+        explanation: "A screen reader is available on the various platforms for accessibility."

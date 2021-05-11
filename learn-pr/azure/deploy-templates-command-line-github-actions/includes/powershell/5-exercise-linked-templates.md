@@ -45,7 +45,7 @@ In this exercise, we'll review and deploy a template that includes two linked te
 
 1. In the following sample template, notice that two variables define remote or external templates located in a GitHub repo:
 
-    - [linked-template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json)
+    - [linked-template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json)
     - [linked-template-2](https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json)
 
     Review the template and note the `"type": "Microsoft.Resources/deployments"` sections that define where and how the linked templates will be deployed.
@@ -65,7 +65,7 @@ In this exercise, we'll review and deploy a template that includes two linked te
         }
     },
     "variables": {
-        "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json",
+        "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json",
         "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
     },
     "resources": [
