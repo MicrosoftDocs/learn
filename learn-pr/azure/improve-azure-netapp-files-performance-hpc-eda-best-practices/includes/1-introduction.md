@@ -1,4 +1,4 @@
-Azure NetApp Files is a managed storage solution for various scenarios, including high-performance computing (HPC) infrastructure. The low latency and the high amount of I/O operations per second (IOPS) is a great mixture for enterprises at scale.
+Azure NetApp Files is a managed storage solution for various scenarios, including high-performance computing (HPC) infrastructure. The low latency and the high number of I/O operations per second (IOPS) are a great mixture for enterprises at scale.
 
 Suppose you work for a semiconductor company. You're tasked with designing the company's integrated circuit (IC) chips, which need numerous electronic design automation (EDA) simulations. You don't have sufficient capacity on-premises for this project, so you'll be using Azure for those HPC simulation needs.
 
