@@ -1,16 +1,20 @@
 [!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
 
-You're starting to work on your R&D team's requests, and you decide to start by building the Cosmos DB database for the toy drone's test data. In this exercise, you'll create a Cosmos DB account, and you'll create two child resources - one by using the `parent` property, and one as a nested resource.
+You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you'll create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Create a Bicep template that contains a Cosmos DB account
+## Create a Bicep template that contains an Azure Cosmos DB account
 
-First, you will create a new Bicep template with a Cosmos DB account.
+First, you create a new Bicep template with an Azure Cosmos DB account. To do so:
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Open Visual Studio Code.
 
-1. Add the following content to the file. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
+1. Create a new file called *main.bicep*, and then save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
+1. Add the following content to the file. It's a good idea to type it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
    ```bicep
    param cosmosDBAccountName string = 'toyrnd-${uniqueString(resourceGroup().id)}'
@@ -31,15 +35,15 @@ First, you will create a new Bicep template with a Cosmos DB account.
    ```
 
    > [!TIP]
-   > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than what's listed here.
+   > Bicep is strict about where you put line breaks, so be sure to add line breaks only where shown here.
 
-   This Bicep template deploys a Cosmos DB account. This will be the parent resource that we'll build upon shortly.
+   This Bicep template deploys an Azure Cosmos DB account. This is the parent resource that you'll build upon shortly.
 
 1. Save the changes to the file.
 
 ## Add a database
 
-Next, you will create the database, which is a child resource of the Cosmos DB account.
+Next, you create the database, which is a child resource of the Azure Cosmos DB account.
 
 1. At the top of the file, between the two existing parameters, add the following parameter:
 
@@ -53,7 +57,7 @@ Next, you will create the database, which is a child resource of the Cosmos DB a
    var cosmosDBDatabaseName = 'FlightTests'
    ```
 
-1. Add the following resource definition at the bottom of the file, below the Cosmos DB account resource definition.
+1. Add the following resource definition at the bottom of the file, below the Azure Cosmos DB account resource definition.
 
    ```bicep
    resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2020-04-01' = {
@@ -70,22 +74,22 @@ Next, you will create the database, which is a child resource of the Cosmos DB a
    }
    ```
 
-   Notice that this deploys the database, which is a child resource, by using the `parent` property. Also notice that you have used the fully qualified resource type, and you've specified the API version explicitly.
+   Notice that this code deploys the database, which is a child resource, by using the `parent` property. Also notice that you've used the fully qualified resource type, and you've specified the API version explicitly.
 
 1. Save the changes to the file.
 
 ## Add a container
 
-Now you will add another child resource. This time, you'll add it as a nested resource instead of using the `parent` property.
+Now you add another child resource. This time, you add it as a nested resource rather than use the `parent` property.
 
-1. Near the top of the file, underneath the `cosmosDBDatabaseName` variable definition, add the following variables:
+1. Near the top of the file, below the `cosmosDBDatabaseName` variable definition, add the following variables:
 
    ```bicep
    var cosmosDBContainerName = 'FlightTests'
    var cosmosDBContainerPartitionKey = '/droneId'
    ```
 
-1. Near the bottom of the file, within the database resource definition and before its closing `}` brace, add the following nested resource definition: 
+1. Near the bottom of the file, within the database resource definition and before its closing brace (`}`), add the following nested resource definition: 
 
    ```bicep
    resource container 'containers' = {
@@ -105,7 +109,7 @@ Now you will add another child resource. This time, you'll add it as a nested re
    }
    ```
 
-   Notice that you have used a short resource type - `containers` - since Bicep understands that this belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. Also note that you haven't specified an API version, so Bicep will use the version from the parent resource - `2020-04-01`.
+   Notice that you've used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You haven't specified an API version, so Bicep uses the version from the parent resource, `2020-04-01`.
 
    After you're finished, your complete Bicep template should look like this:
 
