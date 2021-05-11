@@ -2,7 +2,11 @@ Before building a Scene, it's important to consider what data would support the 
 
 Satellite imagery can provide contextual information to support realism and help drive decision making.  In building a Scene, you'll need to consider how large of a study area / how much data you want to retrieve.  There always is a balance between data quantity and quality, and performance. 
 
+## Design for a big environment
+
 To take advantage of immersive experiences, you should consider designing beyond the user's immediate view. By allowing the user to configure their environment and the objects around them, they can adapt their experience to their own physical space. Consider the base or tabletop platform for your Digital Twin experience and how a user might integrate it into their current environment. In this use case, an imagery-based terrain forms the initial foundation of the wind farm. As the entire wind farm is of equal importance, a circular form is taken to remove the notion of a focus in any one area and encourages users to navigate the terrain in Mixed Reality to investigate the wind farm from various angles. The terrain is equipped with handles to place and adjust on a suitable surface in a user's physical space.
+
+## Place modules for comfort
 
 To ensure comfort for the user, placement of objects must be considered. For areas of interest, the optimum placement for focus is 2 m (6½ft) from a user. To ensure maximum comfort it's critical objects throughout the Scene reside 1.25m-5m (4-16 ft) distance from the user.
 

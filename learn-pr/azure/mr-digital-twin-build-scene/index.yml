@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.mr-digital-twin-build-scene
 metadata:
-  title: Build a 3D Scene in Unity with Maps SDK 
+  title: Build a 3D Scene in Unity with the Bing Maps SDK 
   description: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain.
   ms.date: 5/4/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a 3D Scene in Unity with Maps SDK
+title: Build a 3D Scene in Unity with the Bing Maps SDK
 summary: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain. 
 abstract: |
   By the end of this module you will be able to:

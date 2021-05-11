@@ -1,13 +1,11 @@
 Now that you've built the base terrain for your wind farm experience, build the project and deploy it to the HoloLens 2.  After you've deployed and tested, return to build out more functionality into your Mixed Reality experience.
 
-[Building your application to your HoloLens 2 -  Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr#building-your-application-to-your-hololens-2)
-
 > [!IMPORTANT]
 > When adjusting your build settings, be sure to **Add Open Scenes** if your Scene doesn't appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform.
 
 :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build settings window with the main scene and universal windows platform options highlighted.":::
 
-Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  You can open your app from the Start menu by selecting the app tile **BladeMR**.  You can also say the name of the app to open it, provided your [language is supported for the HoloLens 2](https://docs.microsoft.com/hololens/hololens2-language-support).  Navigate the experience and test the functionality you developed.
+Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  You can open your app from the Start menu by selecting the app tile **BladeMR**.  You can also say the name of the app to open it, provided your [language is supported for the HoloLens 2](/hololens/hololens2-language-support).  Navigate the experience and test the functionality you developed.
 
 ## Launch the HoloLens experience
 
@@ -26,8 +24,8 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 1. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the Mixed reality Home button. 
 2. Once you've exited the app, close the app window using the close icon in the top right of the window.
 
-> [!TIP]
-> Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage).
+    > [!TIP]
+    > Apps can be launched and exited by voice or through gestures.  For guidance on techniques on how to explore holograms and general usage, refer to [Getting around HoloLens 2](/hololens/hololens2-basic-usage).
 
 After you're done testing your wind farm experience, uninstall the app:
 

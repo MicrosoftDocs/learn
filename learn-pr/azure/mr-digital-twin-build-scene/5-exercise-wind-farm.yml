@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-build-scene.5-exercise-wind-farm
-title: Exercise - build wind farm terrain
+title: Exercise - Build wind farm terrain
 metadata:
-  title: Exercise - build wind farm terrain
+  title: Exercise - Build wind farm terrain
   description: Learn how to build the wind farm terrain from ready-made prefab assets.
   ms.date: 5/4/2021
   author: Sean-Kerawala
