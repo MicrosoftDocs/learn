@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with building and deploying ASP.NET Core apps
   - Familiarity with the concepts of accessibility, disability, and inclusion
+  - Basic familiarity with web accessibility tools and design techniques. See [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/) for an introduction.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - intermediate
