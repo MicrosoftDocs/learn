@@ -1,8 +1,8 @@
 ﻿This exercise provides an overview of configuring rules and data export of IoT telemetry by using Azure IoT Central applications. For more information regarding these topics, refer to:
 
-* [Configure rules](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules)
-* [Create webhook actions on rules in Azure IoT Central](https://docs.microsoft.com/azure/iot-central/core/howto-create-webhooks)
-* [Export IoT data to cloud destinations using data export](https://docs.microsoft.com/azure/iot-central/core/howto-export-data)
+* [Configure rules](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules?azure-portal=true)
+* [Create webhook actions on rules in Azure IoT Central](https://docs.microsoft.com/azure/iot-central/core/howto-create-webhooks?azure-portal=true)
+* [Export IoT data to cloud destinations using data export](https://docs.microsoft.com/azure/iot-central/core/howto-export-data?azure-portal=true)
 
 In this exercise, you'll:
 
@@ -21,7 +21,7 @@ In this exercise, you'll:
 
 * Before you configure Azure IoT Central application rules, you'll create an Azure Function app that'll help validate rule processing. When implementing your cloud-native application, you can easily replace the Azure Function app with any other component that supports the HTTP webhook functionality.
 
-1. On a web browser, go to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you'll be using in this module.
+1. On a web browser, go to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** box at the beginning of the Azure portal page to search for **Function App**.
 1. On the **Function App** blade, select **+ Add**
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**:
@@ -134,7 +134,7 @@ In this exercise, you'll:
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
-   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the messages being sent to the IoT Central application.":::
+   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab the depicts messages in response ot the HTTP trigger.":::
 
 ## Create an Azure Storage account that will store IoT telemetry
 
