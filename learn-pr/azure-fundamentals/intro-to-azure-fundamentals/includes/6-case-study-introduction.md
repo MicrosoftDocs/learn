@@ -1,6 +1,7 @@
 Throughout the Azure Fundamentals learning paths, we'll work with [Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true), a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
 
-:::image type="content" source="../media/tailwind-traders-web-top.png" alt-text="A screenshot of the Tailwind Traders website. You can upload a photo to the smart shopping feature or browse recommended products." border="false":::
+:::image type="content" source="../media/tailwind-traders-web-top-f7965b91.png" alt-text="A screenshot of the Tailwind Traders website. You can upload a photo to the smart shopping feature or browse recommended products.":::
+
 
 Tailwind Traders currently manages an on-premises datacenter that hosts the company's retail website. The datacenter also stores all of the data and streaming video for its applications. The IT department is currently responsible for all of the management tasks for its computing hardware and software. For example, let's suppose that you work as an IT specialist for the company's IT department. Your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout the datacenter.
 
