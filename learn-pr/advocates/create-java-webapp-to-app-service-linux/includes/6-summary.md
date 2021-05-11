@@ -24,7 +24,7 @@ az group delete --name <name of your resource>
 ### Java-related resources
 
 * [W3C: XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional)
-* [JavaServer Faces (JSF)](http://www.javaserverfaces.org/)
+* [JavaServer Faces (JSF)](https://projects.eclipse.org/projects/ee4j.faces)
 * [JSF 2.3](https://jakarta.ee/specifications/faces/2.3/)
 * [Expression Language](https://jakarta.ee/specifications/expression-language/3.0/)
 * [Project Lombok](https://projectlombok.org/)
