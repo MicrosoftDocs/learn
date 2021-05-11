@@ -36,6 +36,6 @@ units:
 - learn.intro-to-azure-remote-rendering.4-when-to-use-azure-remote-rendering
 - learn.intro-to-azure-remote-rendering.5-knowledge-check
 - learn.intro-to-azure-remote-rendering.6-summary
-  badge:
+badge:
   uid: learn.intro-to-azure-remote-rendering.badge
   
