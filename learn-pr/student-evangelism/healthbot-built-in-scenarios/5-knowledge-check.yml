@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-built-in-scenarios.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 04/27/2020
+  author: undefined
+  ms.author: undefined
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  
+  questions:
+    ##Question 1
+    - content: "Which of the following scenarios is a built-in scenario?"
+      choices:
+        - content: "The Health Bot instance allows customers to schedule appointments easily and securely."
+          isCorrect: false
+          explanation: "Scheduling appointments is an example of a custom scenario."
+        - content: "The Health Bot instance provides information about health plan details, such as pricing and benefits."
+          isCorrect: false
+          explanation: "Health plan inquiries is an example of custom scenario."
+        - content: "The Health Bot instance provides information about medical conditions, symptoms, causes, and complications."
+          isCorrect: true
+          explanation: "Medical information requests are built-in scenarios."
+       
+    ##Question 2
+    - content: "The user wants to force an active scenario to end so they can begin a different scenario. Which built-in command should the user use to end the current scenario?"
+      choices:
+        - content: "Help"
+          isCorrect: false
+          explanation: "The “help” command displays help items to the user and doesn’t break the current scenario."
+        - content: "Cancel"
+          isCorrect: true
+          explanation: "The “cancel” command stops the current scenario."
+        - content: "Start over"
+          isCorrect: false
+          explanation: "The “start over” command restarts the current scenario."
+      
+      ##Question 3
+    - content: "Which of the following statements is true about the built-in triage and symptom checking scenario?"
+      choices:
+        - content: "The built-in Triage and Symptom checking engines are included only as part of the Health Bot paid plan."
+          isCorrect: false
+          explanation: "The built-in Triage and symptom checking engines are packaged and included as part of the Health Bot solution so that you can easily use them within your own Health Bot instance."
+        - content: "The built-in Triage and Symptom checking scenario can be customized or extended within a custom scenario. "
+          isCorrect: true
+          explanation: "The built-in Triage and Symptom checking scenario can be extended within a custom scenario. For example, you could easily enable end-users that complete the triage flow to schedule an appointment with a doctor, speak with a live nurse or help them find their nearest clinic."
+        - content: "The built-in Triage and Symptom checking scenario can recommend the appropriate type of doctor to treat an illness. "
+          isCorrect: false
+          explanation: "The built-in Triage and Symptom checking scenario can determine the likelihood of a condition given a set of symptoms and risk factors."
+
+    ##Question 4
+    - content: "A Health Company has created a custom scenario and plans to use it as automatic welcome scenario. How can they assign a welcome scenario?"
+      choices:
+        - content: "Navigate to Configuration > Conversation > Interactions > Automatic Welcome > Automatic Welcome Scenario and select the custom scenario. "
+          isCorrect: true
+          explanation: "In Interactions tab you configure built-in scenarios that interact with the end user."
+        - content: "Navigate to Configuration > Conversation > Navigation > Automatic Welcome > Automatic Welcome Scenario and select the custom scenario."
+          isCorrect: false
+          explanation: "In Navigation tab you configure the message that is displayed to the end user after cancelling a scenario or before starting over the current scenario and the help menu."
+        - content: "Navigate to Configuration > Compliance > Security > Automatic Welcome > Automatic Welcome Scenario and select the custom scenario."
+          isCorrect: false
+          explanation: "In Security tab you configure security setting for your bot instance; for example, timeout duration and end user authentication."
+
