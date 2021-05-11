@@ -22,7 +22,7 @@ This is the third exercise in the sequence of exercises of this module that take
 
 ## Task 1: Prepare for connecting the AKS cluster to Azure Arc
 
-Before you connect the AKS cluster to Azure Arc, take care of its prerequisites, including creating a resource group that will host Azure Arc resources, verifying registration of the relevant resource providers, enforcing the use of a specific Azure Arc agent version, and preparing for configuration of custom locations.
+Before you connect the AKS cluster to Azure Arc, take care of the relevant prerequisites, including creating a resource group that will host Azure Arc resources and verifying registration of the relevant resource providers.
 
 Use the following steps to implement these prerequsites:
 
@@ -34,7 +34,7 @@ Use the following steps to implement these prerequsites:
     ARC_CLUSTER_NAME="${K8S_ARC_PREFIX}-cluster" 
     ```
 
-1. Run the following command to create the resource group that will house the Azure Arc connected cluster resources. 
+1. Run the following command to create the resource group that will house the Azure Arc connected cluster resources:
 
     ```azurecli-interactive
     az group create -n $ARC_RG_NAME -l "East US"
@@ -42,12 +42,6 @@ Use the following steps to implement these prerequsites:
 
     > [!IMPORTANT]
     > During the preview, the only supported Azure region is **East US**.
-
-1. Run the following commands to set the value of the variable designating the identifier of the Azure subscription hosting the resources you are provisioning in this module:
-
-    ```azurecli-interactive
-    SUBSCRIPTION_ID=$(az account show --query id -o tsv)
-    ```
 
 1. Run the following command to verify the registration of the resource providers necessary to implement a connected cluster resource in the region hosting the resource group:
 
@@ -67,14 +61,6 @@ Use the following steps to connect the AKS cluster to Azure Arc.
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
     K8S_CLUSTER_NAME=k8sAKS-cluster
     kubectl config use-context $K8S_CLUSTER_NAME
-    ```
-
-1. Run the following command to ensure that the values of the variables that represent the names of, respectively, the resource group that will contain the Arc resources and the name of the Azure Arc connected cluster resource, are correct:
-
-    ```azurecli-interactive
-    K8S_ARC_PREFIX=k8sArc
-    ARC_RG_NAME="${K8S_ARC_PREFIX}-RG"
-    ARC_CLUSTER_NAME="${K8S_ARC_PREFIX}-cluster" 
     ```
 
 1. Run the following command to connect the cluster to Azure Arc:

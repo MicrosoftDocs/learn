@@ -120,20 +120,20 @@ Use the following steps to install the App Service extension on your Azure Arc e
     az provider show -n Microsoft.KubernetesConfiguration --query "[registrationState,resourceTypes[?resourceType=='extensions'].locations]"
     ```
 
-1. Run the following command to install the extension, including support for Log Analytics.
+1. Run the following command to install the extension, including support for Log Analytics:
 
     > [!IMPORTANT]
     > If you intend to use Log Analytics for storing logs of App Service web apps hosted on an Azure Arc enabled Kubernetes cluster, you must reference the workspace when installing the App Service cluster extension. At present, there is no support for implementing this functionality after App Service cluster extension has been installed.
 
     ```azurecli-interactive
-    az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config" --configuration-settings "logProcessor.appLogs.destination=log-analytics" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.customerId=${LA_WORKSPACE_ID_ENC}" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.sharedKey=${LA_WORKSPACE_KEY_ENC}"
+    az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --version "0.7.0" --auto-upgrade-minor-version false --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config" --configuration-settings "logProcessor.appLogs.destination=log-analytics" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.customerId=${LA_WORKSPACE_ID_ENC}" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.sharedKey=${LA_WORKSPACE_KEY_ENC}"
     ```
 
     > [!NOTE]
     > To install the extension without support for Log Analytics, use the following command:
 
     > ```azurecli-interactive
-    > az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config"
+    > az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --version "0.7.0" --auto-upgrade-minor-version false --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config"
     > ```
 
 1. Run the following command to validate the status of the installed extension:
@@ -145,7 +145,7 @@ Use the following steps to install the App Service extension on your Azure Arc e
     > [!NOTE]
     > Re-run the command until the value of the value of the **installState** property changes to **Installed**. This should take about 5 minutes.
 
-1. Run the following command to store the value of the **id** property of the extension in a variable. 
+1. Run the following command to store the value of the **id** property of the extension in a variable:
 
     ```azurecli-interactive
     EXTENSION_ID=$(az k8s-extension show --cluster-type connectedClusters -c $ARC_CLUSTER_NAME -g $ARC_RG_NAME --name $EXTENSION_NAME --query id -o tsv)
@@ -228,7 +228,7 @@ Use the following steps to create a custom location.
     > [!NOTE]
     > Review the output of the command and verify that the value of the "provisioningState" property is "Succeeded".
 
-1. Run the following command to store the value of the "id" property of the custom location in a variable.
+1. Run the following command to store the value of the "id" property of the custom location in a variable:
 
     ```azurecli-interactive
     CUSTOM_LOCATION_ID=$(az customlocation show -g $ARC_RG_NAME -n $CUSTOM_LOCATION_NAME --query id -o tsv)
@@ -253,7 +253,7 @@ Use the following steps to create an App Service Kubernetes environment.
     az provider show -n Microsoft.Web --query "[registrationState,resourceTypes[?resourceType=='kubeEnvironments'].locations]"
     ```
 
-1. Run the following commands to create the App Service Kubernetes environment. 
+1. Run the following commands to create the App Service Kubernetes environment:
 
     ```azurecli-interactive
     az appservice kube create -g $ARC_RG_NAME -n $KUBE_ENV_NAME --custom-location $CUSTOM_LOCATION_ID --static-ip $K8S_PIP --location centraluseuap
@@ -267,18 +267,5 @@ Use the following steps to create an App Service Kubernetes environment.
 
     > [!NOTE]
     > Re-run the command until the value of the "provisioningState" property changes to "InfrastructureSetupComplete". This should take about 3 minutes.
-
-1. Run the following command to list the Kubernetes environment pods created on your cluster:
-
-    ```azurecli-interactive
-    kubectl get pods -n $APP_SERVICE_NAMESPACE_NAME -l app
-    ```
-
-    > [!IMPORTANT]
-    > In order to enable HTTPS endpoints for App Service web apps and for SCM-based deployment, you need to restart the app controller pods in the designated App Service namespace. To accomplish this, run the following command:
-
-    ```azurecli-interactive
-    kubectl delete pods -n $APP_SERVICE_NAMESPACE_NAME -l control-plane=app-controller
-    ```
 
 Congratulations! You completed the fourth exercise of this module. In its exercise, you implemented the Azure App Service extension on your Azure Arc enabled Kubernetes cluster, preparing it for a deployment of an App Service web app in the next exercise. 

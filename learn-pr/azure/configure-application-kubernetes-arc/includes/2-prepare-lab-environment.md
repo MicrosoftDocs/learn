@@ -102,7 +102,7 @@ Use the following steps to install the Azure CLI extensions required to implemen
 1. From your computer, download the latest **appservice-kube** CLI extension from [the Releases page of the Azure App Service on Azure Arc repository](https://github.com/microsoft/Azure-App-Service-on-Azure-Arc/releases).
 1. Within the web browser window displaying the Azure Cloud Shell pane, in the pane's toolbar, select the fourth icon displaying a page with a pair of vertical arrows pointing in the opposite directions (the fourth icon from the right) and, in the drop-down menu, select **Upload**.
 1. In the **Open** dialog box, navigate to the location of the **.whl** file, select it, and click **Open**.
-1. From the Bash session in the Azure Cloud Shell pane, run the following command to install the **appservice-kube** Azure CLI extension (if needed, replace `appservice_kube-0.1.16-py2.py3-none-any.whl` with the name of the **.whl** file you uploaded in the previous step).
+1. From the Bash session in the Azure Cloud Shell pane, run the following command to install the **appservice-kube** Azure CLI extension (if needed, replace `appservice_kube-0.1.16-py2.py3-none-any.whl` with the name of the **.whl** file you uploaded in the previous step):
 
     ```azurecli-interactive
     az extension add --yes --source ./appservice_kube-0.1.16-py2.py3-none-any.whl

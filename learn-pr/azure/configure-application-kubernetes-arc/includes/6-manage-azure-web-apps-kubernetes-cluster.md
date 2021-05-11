@@ -55,7 +55,7 @@ Use the following step to create an App Service plan and a Linux code-based web 
     CUSTOM_LOCATION_NAME="${K8S_ARC_PREFIX}-location"
     ```
 
-1. Run the following command to store the value of the "id" property of the custom location in a variable.
+1. Run the following command to store the value of the "id" property of the custom location in a variable:
 
     ```azurecli-interactive
     CUSTOM_LOCATION_ID=$(az customlocation show -g $ARC_RG_NAME -n $CUSTOM_LOCATION_NAME --query id -o tsv)
