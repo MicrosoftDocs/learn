@@ -4,7 +4,7 @@ In this exercise, you will prepare your lab environment for implementation of Az
 1. Enable required preview features in the Azure subscription
 1. Install required Azure CLI extensions
 
-This is the first exercise in the sequence of exercises of this module that takes you through the process of implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
+This is the first exercise in the sequence of exercises in this module that takes you through the process of implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment
 1. Set up a Kubernetes cluster
