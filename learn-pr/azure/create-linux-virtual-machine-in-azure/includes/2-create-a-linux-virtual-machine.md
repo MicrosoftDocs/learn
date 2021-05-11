@@ -4,11 +4,11 @@ We have an existing website running on a local Ubuntu Linux server. Our goal is 
 
 Azure Virtual Machines is an on-demand, scalable cloud-computing resource. They include processors, memory, storage, and networking resources. You can start and stop virtual machines at will and manage them from the Azure portal or with the Azure CLI. You can also use a remote Secure Shell (SSH) to connect directly to the running VM and execute commands as if you were on a local computer.
 
-### Running Linux in Azure
+### Run Linux in Azure
 
 Creating Linux-based VMs in Azure is easy. Microsoft has partnered with prominent Linux vendors to ensure their distributions are optimized for the Azure platform. You can create virtual machines from prebuilt images for a variety of popular Linux distributions, such as SUSE, Red Hat, and Ubuntu, or build your own Linux distribution to run in the cloud.
 
-## Creating an Azure VM
+## Create an Azure VM
 
 VMs can be defined and deployed on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or an Azure Resource Manager template. In all cases, you will need to supply several pieces of information that we'll cover shortly.
 
@@ -38,7 +38,7 @@ Anything that a computer can have installed can be included in an image. You can
 > [!TIP]
 > You can also create and upload custom disk images.
 
-## Sizing your VM
+## Size your VM
 
 Just as a physical machine has a certain amount of memory and CPU power, so does a virtual machine. Azure offers a range of VMs of differing sizes at different price points. The size that you choose will determine the VM's processing power, memory, and maximum storage capacity.
 
@@ -58,14 +58,14 @@ VM sizes are grouped into categories, starting with the B-series for basic testi
 | **Heavy graphics rendering** or video editing, as well as model training and inferencing (ND) with deep learning. | NV, NC, NCv2, NCv3, ND |
 | **High-performance computing (HPC)**: Your workloads need the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | H |
 
-## Choosing storage options
+## Choose storage options
 
 The next set of decisions revolves around storage. First, you can choose the disk technology. Options include a traditional platter-based hard disk drive (HDD) or a more modern solid-state drive (SSD). Just like the hardware you purchase, SSD storage costs more but provides better performance.
 
 > [!TIP]
 > There are two levels of SSD storage available: standard and premium. Choose Standard SSD disks if you have normal workloads but want better performance. Choose Premium SSD disks if you have I/O intensive workloads or mission-critical systems that need to process data very quickly.
 
-### Mapping storage to disks
+### Map storage to disks
 
 Azure uses virtual hard disks (VHDs) to represent physical disks for the VM. VHDs replicate the logical format and data of a disk drive but are stored as page blobs in an Azure Storage account. You can choose on a per disk basis what type of storage it should use (SSD or HDD). This allows you to control the performance of each disk, likely based on the I/O you plan to perform on it.
 
@@ -104,7 +104,7 @@ Managed disks are the newer and recommended disk storage model. They elegantly s
 
 Virtual machines communicate with external resources using a virtual network (VNet). The VNet represents a private network in a single region that your resources communicate on. A virtual network is just like the networks you manage on-premises. You can divide them up with subnets to isolate resources, connect them to other networks (including your on-premises networks), and apply traffic rules to govern inbound and outbound connections.
 
-### Planning your network
+### Plan your network
 
 When you create a new VM, you will have the option of creating a new virtual network or using an existing VNet in your region.
 
