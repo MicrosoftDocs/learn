@@ -10,6 +10,14 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
     :::image type="content" source="../media/so-turbine.png" alt-text="Screenshot of the Unity scene window with the wind turbine prefab in view and the wind turbine prefab selected in the inspector.":::
 
-Each Digital Twin turbine Prefab has a corresponding ScriptableObject in the Unity project that stores data received from Microsoft Azure. The Prefab holds a reference to this ScriptableObject and an event is triggered to notify the asset when the data have been updated. 
+## Turbine prefabs
 
-:::image type="content" source="../media/so-turbine-data.png" alt-text="Screenshot of the Unity scene window with the wind turbine scriptable object in view.":::
+Each Digital Twin turbine Prefab has a corresponding ScriptableObject in the Unity project that stores data received from Microsoft Azure.  ScriptableObjects are basically lightweight objects that can globally persist data across scenes and application runs. The windmill Prefab holds a reference to this ScriptableObject and an event is triggered to notify the asset when the data have been updated. Take a look at these prefabs to see the MRTK components included and where the Azure data is received:
+
+1. Navigate to **Assets > Art > Prefabs** to see digital twin turbine. Looking in the Inspector for the windmill, you can see that there is an LOD group, the MRTK Components described above, and other scripts attached to this prefab. 
+
+:::image type="content" source="../media/so-turbine.png" alt-text="Screenshot of the Unity scene window with the wind turbine scriptable object in view and in the Inspector.":::
+
+2. You can find our simulated corresponding Scriptable Objects for the turbines in **Assets > Scriptable Objects > Turbine Site Data**.  
+
+:::image type="content" source="../media/so-turbine-data.png" alt-text="Screenshot of the Unity scene window with the wind turbine scriptable objects in view.":::

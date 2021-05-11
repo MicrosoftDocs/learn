@@ -4,7 +4,7 @@ When you want to reuse a GameObject configured in a particular way – like a no
 
 When you modify a Prefab Asset, the changes are reflected in all instances.  You can override any instance of the Prefab to create variations between Prefab instances, while still linking those instances to the same Prefab Asset.  Doing so creates an instance override on that instance of the Prefab. 
 
-The Prefab wind turbine model you are importing is an Autodesk’s Filmbox format (*.FBX), complete with Level Of Detail (LOD) groups defined for meshes to improve rendering performance.
+The Prefab wind turbine model you are importing is an Autodesk Filmbox format (*.FBX), complete with Level Of Detail (LOD) groups defined for meshes to improve rendering performance.
 
 > [!TIP]
 > Level of detail (LOD) is a technique that reduces the number of GPU operations that Unity requires to render distant meshes.  When a GameObject in the Scene is far away from the Camera, you see less detail compared to when the GameObject is close to the Camera. However, by default, Unity uses the same number of triangles to render it at both distances. This can result in wasted GPU operations, which can impact performance in your Scene.
