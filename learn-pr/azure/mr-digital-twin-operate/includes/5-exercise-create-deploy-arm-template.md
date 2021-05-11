@@ -16,34 +16,34 @@ The ARM Template logic has been integrated into a Visual Studio solution that dr
 2. Start **Windows PowerShell** from the start menu.  All Azure CLI commands will be executed in your PowerShell console.
 3. Change the current path to the location of the **azuredeploy.bicep** script identified in step 1.
 
-```console
-cd <path for azuredeploy.bicep>
-```
+    ```console
+    cd <path for azuredeploy.bicep>
+    ```
 
 4. Log in to Azure by typing **az login** in the shell window and pressing **Enter**.  This will spawn a browser window and prompt for authentication. 
     - If the CLI fails to spawn the appropriate browser window, use the device code flow in your PowerShell window **az login --use-device-code**.  You'll be returned a unique code.  [Open the device login page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal, into the website.
 
-:::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the Shell using the Windows PowerShell environment to execute the az login command.":::
+    :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the Shell using the Windows PowerShell environment to execute the az login command.":::
 
 ## Set variables in PowerShell
 
 1. Set the **projectname** variable, keeping it to a maximum of 14 characters, all lowercase, and no special characters (dashes permitted). This is the base unique name for your Azure resources that will be created in this exercise.  Additional random characters will be appended to the projectname.  Make sure your values are enclosed in double quotes.
 
-```console
-$projectname="myproj"
-```
+    ```console
+    $projectname="myproj"
+    ```
 
-> [!IMPORTANT]
-> Your project name must be kept to a maximum of 14 characters, and may contain lowercase letters and numbers only.
-
-> [!NOTE]
-> Variables in PowerShell are prefixed with the **$** symbol.
+    > [!IMPORTANT]
+    > Your project name must be kept to a maximum of 14 characters, and may contain lowercase letters and numbers only.
+    
+    > [!NOTE]
+    > Variables in PowerShell are prefixed with the **$** symbol.
 
 2. Set the App Registration name, keeping it to a maximum of 14 characters.  This is the name of the application registration for your HoloLens app
 
-```console
-$appreg="myappreg"
-```
+    ```console
+    $appreg="myappreg"
+    ```
 
 ## Create the App Registration
 
@@ -62,29 +62,29 @@ az ad sp create-for-rbac --name ${appreg} --skip-assignment > AppCredentials.txt
 
 1. Create and set a variable for the ObjectID in PowerShell by inputting the below commands and press **Enter**.
 
-```console
-$objectid=$(az ad sp list --display-name ${appreg} --query [0].objectId --output tsv)
-```
+    ```console
+    $objectid=$(az ad sp list --display-name ${appreg} --query [0].objectId --output tsv)
+    ```
 
 2. Validate that the variable contains a GUID by using the **echo** command and then press **Enter**.  If not, examine your previous steps
 
-```console
-echo $objectid
-```
+    ```console
+    echo $objectid
+    ```
 
 3. Create and set a variable for the UserID as below, then press **Enter**. 
 
-```console
-$userid=$(az ad signed-in-user show --query objectId -o tsv)
-```
+    ```console
+    $userid=$(az ad signed-in-user show --query objectId -o tsv)
+    ```
 
 4. Validate that the variable contains a GUID by using the **echo** command and then press **Enter**.  If not, examine your previous steps
 
-```console
-echo $userid
-```
+    ```console
+    echo $userid
+    ```
 
-:::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of the command-line interface using the Windows PowerShell environment to get the apps object and user ID.":::
+    :::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of the command-line interface using the Windows PowerShell environment to get the apps object and user ID.":::
 
 ## Create the Azure Resource Group
 
@@ -128,14 +128,14 @@ az deployment group show -n azuredeploy -g ${projectname}-rg --query properties.
 
 1.	Use the **az iot** command to query the IoT hub for the Resource Group connection string parameter that you'll use later in the module.   Query the connection string for your Resource Group by using the **az iot** hub command in PowerShell, as listed below and press **Enter**.  The command below redirects the output and appends it (note the use of two ‘>’ symbols instead of one) to the file named **Azure_config_settings.txt** into the same directory in which you're running the command.  This file was created in the previous step.
 
-```console
-az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
-```
+    ```console
+    az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
+    ```
 
 2. Confirm the contents of the output text file in PowerShell, as listed below and press **Enter**. This will display several key configuration parameters for later use in this module.  
 
-```console
-get-content Azure_config_settings.txt
-```
+    ```console
+    get-content Azure_config_settings.txt
+    ```
 
-:::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::
+    :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::

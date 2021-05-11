@@ -20,7 +20,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 2. Launch your app.
 3. Summon the Site overview menu.  When running the build on the HoloLens 2 device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the **Site Overview** Panel. Click the button.  The Site overview panel will float and follow you as you navigate around the map. 
  
-:::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
+    :::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
 
 4. Center on a turbine.  Use **near** or **far** interactions to select a turbine from the list. Click with the pointer or finger to center the map on the turbine location.
 5. Zoom in on the map.  Use **near** or **far** interactions to interact with the handle of the slider at the base of the map. Moving the slider to the left or right will change the current zoom level of the map
@@ -30,15 +30,15 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 1. Use the hand pointer to aim at a Digital Twin turbine model on the map. 
 2. Use a **click** gesture to select the turbine and display its information panel. The information panel can also be displayed by clicking the associated button in the **Site Overview** panel.
 
-:::image type="content" source="../media/turbine-ui.png" alt-text="Screenshot of a single information panel displaying turbine data on HoloLens 2.":::
+    :::image type="content" source="../media/turbine-ui.png" alt-text="Screenshot of a single information panel displaying turbine data on HoloLens 2.":::
 
 ## Stop the DeviceSimulator
 
 1. This is important to ensure you avoid unnecessary charges to your Azure account
 2. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
 
-> [!IMPORTANT]
-> Be aware that this simulation generates a significant amount of data simulating real world operations and Azure consumption will occur.  Remember to stop the simulator whenever it is not needed, to avoid unnecessary charges on your Azure account.
+    > [!IMPORTANT]
+    > Be aware that this simulation generates a significant amount of data simulating real world operations and Azure consumption will occur.  Remember to stop the simulator whenever it is not needed, to avoid unnecessary charges on your Azure account.
 
 ## Exit the app
 

@@ -24,11 +24,11 @@ Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm, send
 1. Put on your HoloLens 2 device.
 2. Summon the Site overview menu.  When running the build on the HoloLens 2 device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the **Site Overview** Panel. Click the button.  The Site overview panel will float and follow you as you navigate around the map.
 
-:::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
-
+    :::image type="content" source="../media/site-overview.png" alt-text="Screenshot of the site overview menu on HoloLens 2 displaying turbine data.":::
 
 The **DeviceSimulator** is configured to send telemetry messages every 5 seconds from the console application running on your computer to ADT.  By default, telemetry readings are sent along with an event code is sent with each telemetry reading:
-```
+
+```console
 Value: 100
 Description: OK
 ```
@@ -40,7 +40,7 @@ Description: OK
 
 A new event code will be sent back to your app via the ADT Connection  on the HoloLens 2 with the telemetry reading:
 
-```
+```console
 Value: 400
 Description: Light icing (rotor bl. ice sensor)
 ```
@@ -63,8 +63,8 @@ Click the **Send Reset** Command button.  This sends a message to ADT to set the
 3. Note the message written to the **DeviceSimulator** console app, indicating that the update succeeded.
 4. Observe the **DeviceSimulator** console app sending normal (i.e, non-alert) telemetry messages, with event code 100 instead of 400, and with “Turbine OK” as the description for Turbine T102.
 
-> [!NOTE]
-> The properties of a Digital Twin can be examined directly in ADT.  Use the ADT Explorer web app or an Azure CLI command to browse Digital Twin properties.
+    > [!NOTE]
+    > The properties of a Digital Twin can be examined directly in ADT.  Use the ADT Explorer web app or an Azure CLI command to browse Digital Twin properties.
 
 ## Stop the DeviceSimulator
 

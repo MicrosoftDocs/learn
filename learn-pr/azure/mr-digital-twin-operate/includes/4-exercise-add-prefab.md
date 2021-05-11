@@ -6,21 +6,17 @@ Now that you know a little more about the basics of using telemetry data and wha
 4. Find your Bing Maps developer key. If you don't have one, you can sign up for one here: [Create a Bing Maps account](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).
 5. Select the **Bing Maps** game object from the **Hierarchy**, then enter your Developer Key and apply the following configurations to the **Map Renderer** component:
 
-### Location
-
-| Property | Value |
-|---|---|
-| Latitude | 48.38 |
-| Longitude | -67.703 |
-| Zoom Level | 15.5 |
-
-### Map Layout
-
-| Property | Value |
-|---|---|
-| Map Shape | Cylinder |
-| Local Map Radius | 1 |
-| Local Base Height | 0.3 |
+    | Property | Value |
+    |---|---|
+    | Latitude | 48.38 |
+    | Longitude | -67.703 |
+    | Zoom Level | 15.5 |
+    
+    | Property | Value |
+    |---|---|
+    | Map Shape | Cylinder |
+    | Local Map Radius | 1 |
+    | Local Base Height | 0.3 |
 
 > [!NOTE]
 > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  If you want to use it, you will need to configure the Scene parameters (viz., Maps SDK and Azure Services) from steps found in this module and Build a 3D Scene for Mixed Reality in Unity.
@@ -31,4 +27,4 @@ Unity Prefabs have been created to accelerate the connectivity of your wind farm
 
 1. From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
 
-:::image type="content" source="../media/inspector-adt-alert.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
+    :::image type="content" source="../media/inspector-adt-alert.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
