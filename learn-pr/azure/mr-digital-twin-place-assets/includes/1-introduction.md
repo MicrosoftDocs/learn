@@ -1,20 +1,5 @@
-A well-designed user experience in Unity for the HoloLens involves designing and creating a Unity Scene.  A Scene is like a blank canvas where you'll set up an experience for your end user. Providing some context for your user is important, which can be achieved by adding supportive information such as satellite imagery or other, typically lower fidelity, supportive information (for example, surrounding warehouse infrastructure).  
+A well-designed user experience in Unity for the HoloLens requires careful design and creation of a Unity Scene.  A Scene is like a blank canvas on which you'll develop an experience for your end user. Providing some context for your user as they navigate the Scene is important.  This can be achieved by adding supportive information such as satellite imagery or other, often lower fidelity, supportive information (for example, surrounding warehouse infrastructure).  Once context has been established for the Scene, you need to create and add the 3D assets or models you intend to use for your Digital Twin.  These will be the showcase of your experience.
 
-Once the context has been established for the Scene, you need to create and add the 3D assets or models you intend to use for your Digital Twin.  In your case, you'll add the wind turbine assets to your scene that have been created for you.  It's these 3D assets that you can be connected to cloud services such as Azure Digital Twin to operationalize your Digital Twins. 
+For your wind farm use case, you'll add wind turbine Assets to your Scene that have been created for you.  Assets that have been created in advance, complete with configuration parameters are called Prefabs.  If you completed the previous module, **Build a 3D Scene for Mixed Reality in Unity**, you're already familiar with Prefabs and used static and dynamic terrain Prefabs.  In this module, you'll explore Prefabs in more detail and use them to build out your Scene to prepare your wind farm for operations.  you'll add 3D Prefabs that can be connected to cloud services such as Azure Digital Twin to operationalize your Digital Twins and bring them to life.  
 
-## Learning objectives
-
-In this module, you'll learn how to:
-- Incorporate design considerations into building a scene
-- Use Unity Prefabs to accelerate Digital Twin solutions
-- Use MRTK interactions to provide a rich user experience
-- Place assets in a Unity scene
-
-## Prerequisites
-
-- Introduction to Mixed Reality, Azure Digital Twin, and Unity Module
-- Build a 3D Scene in Unity with Maps SDK Module
-- Fundamental working knowledge of Unity
-- Understanding of how to build for and deploy to the HoloLens
-- Understanding of MRTK 
-- Fundamental understanding of Level Of Detail (LOD) concepts
+Building a Scene is an important initial step in developing your Mixed Reality experience.  Next you need to develop interactions on the HoloLens, which are made simpler by using the MRTK.  MRTK contains components and features that help facilitate common actions your user will take inside the HoloLens 2.  you'll explore and implement some of these features to accelerate development and create a smooth user experience.s
