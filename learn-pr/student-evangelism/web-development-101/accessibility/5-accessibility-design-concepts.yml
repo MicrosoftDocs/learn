@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
 title: Designing for accessibility
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/5-accessibility-design-concepts.md)]

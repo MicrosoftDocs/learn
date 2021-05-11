@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
 title: Surfing the web with more than a browser
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/2-client-tools.md)]

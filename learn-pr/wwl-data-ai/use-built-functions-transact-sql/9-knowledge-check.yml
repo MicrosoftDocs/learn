@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-built-functions-transact-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/07/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You run the following query: SELECT OrderNo, CHOOSE(Status, 'Ordered', 'Shipped', 'Delivered') AS OrderState FROM Sales.Order; Which OrderState value is returned for rows with a Status value of 2?"
+    choices:
+    - content: "Shipped"
+      isCorrect: true
+      explanation: "Correct. CHOOSE returns the value based on its 1-based ordinal position."
+    - content: "Delivered"
+      isCorrect: false
+      explanation: "Incorrect. CHOOSE returns the value based on its 1-based ordinal position."
+    - content: "NULL"
+      isCorrect: false
+      explanation: "Incorrect. CHOOSE returns the value based on its 1-based ordinal position."
+  - content: "You must return the number of customers in each city. Which query should you use?"
+    choices:
+    - content: "SELECT City, COUNT(*) AS CustomerCount FROM Sales.Customer;"
+      isCorrect: false
+      explanation: "Incorrect. Use GROUP by to aggregate by groups."
+    - content: "SELECT City, COUNT(*) AS CustomerCount FROM Sales.Customer GROUP BY City;"
+      isCorrect: true
+      explanation: "Correct. Use GROUP by to aggregate by groups."
+    - content: "SELECT City, COUNT(*) AS CustomerCount FROM Sales.Customer ORDER BY City;"
+      isCorrect: false
+      explanation: "Incorrect. Use GROUP by to aggregate by groups."
+  - content: "You must return a row for each category with an average price over 10.00. Which query should you use?"
+    choices:
+    - content: "SELECT Category, AVG(Price) FROM Store.Product WHERE AVG(Price) &gt; 10.00;"
+      isCorrect: false
+      explanation: "Incorrect. Use a HAVING clause to filter groups."
+    - content: "SELECT Category, AVG(Price) FROM Store.Product GROUP BY Category WHERE AVG(Price) &gt; 10.00;"
+      isCorrect: false
+      explanation: "Incorrect. Use a HAVING clause to filter groups."
+    - content: "SELECT Category, AVG(Price) FROM Store.Product GROUP BY Category HAVING AVG(Price) &gt; 10.00;"
+      isCorrect: true
+      explanation: "Correct. Use a HAVING clause to filter groups."

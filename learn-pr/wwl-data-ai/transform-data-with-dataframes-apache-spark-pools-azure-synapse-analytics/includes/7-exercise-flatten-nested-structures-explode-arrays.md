@@ -1,6 +1,6 @@
 In this exercise, you will learn how to work with complex data structure and use functions to view data more easily
 
-1. PySpark contains a special [`explode` function](https://spark.apache.org/docs/latest/api/python/pyspark.sql.html?highlight=explode#pyspark.sql.functions.explode), which returns a new row for each element of the array. The new row will help flatten the `topProductPurchases` column for better readability or for easier querying. Execute the code below in a new cell:
+1. PySpark contains a special [`explode` function](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.functions.explode.html), which returns a new row for each element of the array. The new row will help flatten the `topProductPurchases` column for better readability or for easier querying. Execute the code below in a new cell:
 
     ```python
     from pyspark.sql.functions import udf, explode
