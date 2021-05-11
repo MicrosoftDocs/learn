@@ -51,7 +51,7 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Add function blade of the Azure Function app in the Azure portal.":::
 
-1. On the **HttpTrigger1** blade, in the vertical menu bar on the left side, in the **Developer** section, select **Code + Test**.
+1. On the **HttpTrigger1** blade, in the vertical menu bar, in the **Developer** section, select **Code + Test**.
 
    :::image type="content" source="../media/5-azure-function-app-function-code-test.png" alt-text="Screenshot of the Code + Test blade of an Azure function in the Azure portal.":::
 
@@ -101,9 +101,9 @@ In this exercise, you'll:
 
 1. Start another web browser window and navigate to the [Welcome to IoT Central](https://apps.azureiotcentral.com/) page.
 1. If prompted, sign in to access the Azure subscription you used in the exercise unit **Set up Azure IoT Central**.
-1. On the left side of the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry. 
+1. On the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry. 
 1. On the **My apps** page, select the **adatum-iot-custom-application** entry.
-1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu on the left side, select **Rules**.
+1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, select **Rules**.
 1. On the **Rules** page, select **+ New** and configure the following settings:
 
    | Setting | Configuration |
@@ -131,7 +131,7 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/5-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the messages being sent to the IoT Central application.":::
 
-1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu on the left side, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
+1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
    :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the messages being sent to the IoT Central application.":::
@@ -139,7 +139,7 @@ In this exercise, you'll:
 ## Create an Azure Storage account that will store IoT telemetry
 
 1. Switch to the web browser window displaying the Azure portal. 
-1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Storage accounts**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Storage accounts**.
 1. On the **Storage accounts** blade, select **+ Add**.
 1. On the **Basics** tab of the **Create storage account** blade, configure the following settings (leave others with their default values):
 
@@ -160,19 +160,19 @@ In this exercise, you'll:
    > Wait for the Azure storage account provisioning to complete. This might take about 2 minutes.
 
 1. Within the browser window displaying the Azure portal with the Azure storage account provisioning status blade, select **Go to resource**.
-1. On the Azure storage account blade, in the vertical menu on the left side, in the **Blob service** section, select **Containers**, and then select **+ Container**. 
+1. On the Azure storage account blade, in the vertical menu, in the **Blob service** section, select **Containers**, and then select **+ Container**. 
 1. On the **New container** blade, in the **Name** text box, enter **iotcontainer**, leave the **Public access level** set to **Private (no anonymous access)**, and then select **Create**.
 
    :::image type="content" source="../media/5-azure-blob-container-create.png" alt-text="Screenshot of the New container blade in the Azure portal.":::
 
-1. On the Azure storage account blade, in the vertical menu on the left side, in the **Settings** section, select **Access keys**, select **Show keys**, and then record the value of the connection string corresponding to **key1**.
+1. On the Azure storage account blade, in the vertical menu, in the **Settings** section, select **Access keys**, select **Show keys**, and then record the value of the connection string corresponding to **key1**.
 
    :::image type="content" source="../media/5-azure-storage-account-keys.png" alt-text="Screenshot of the Access keys blade in the Azure portal.":::
 
 ## Configure and validate data export of an Azure IoT Central application
 
 1. Switch to the web browser window displaying the **adatum-iot-custom-application** page in the IoT Central Application portal.
-1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu on the left side, in the **App settings** section, select **Data export**, and then select **+ New export**.
+1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **App settings** section, select **Data export**, and then select **+ New export**.
 
    :::image type="content" source="../media/5-iot-custom-application-new-export.png" alt-text="Screenshot of the Data export page in the Azure IoT Central portal.":::
 
@@ -193,7 +193,7 @@ In this exercise, you'll:
 1. On the **Create new export** page select **Create**, and then select **Save**.
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used earlier in this exercise. On this page, directly after the code pane, select **Run**, and verify that the simulated device is sending messages to the Azure IoT Central application.
 1. Switch to the browser window displaying the Azure storage account blade in the Azure portal.
-1. On the Azure storage account blade, in the vertical menu on the left side, in the **Blob service** section, select **Containers**.
+1. On the Azure storage account blade, in the vertical menu, in the **Blob service** section, select **Containers**.
 1. In the list of containers, select the **iotcontainer** entry.
 1. On the **iotcontainer** blade, verify the presence of a new folder with a GUID-based name.
 

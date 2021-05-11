@@ -18,9 +18,9 @@ In this exercise, you'll:
 ## Create an Azure IoT Central application
 
 1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/) page.
-1. On the **Welcome to IoT Central** page, in the upper-right corner, select the avatar icon.
+1. On the **Welcome to IoT Central** page, select the avatar icon.
 1. When prompted, sign in to access the Azure subscription you'll be using in this module.
-1. On the left side of the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry.
+1. On the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry.
 1. On the **My apps** page, select **+ New application**.
 1. On the **Build your IoT application** page, review the available application templates and then, on the **Custom app** tile, select **Create app**.
 1. On the **New application** page, configure the following settings, and then select **Create**.
@@ -41,7 +41,7 @@ In this exercise, you'll:
 
 ## Create an IoT device template
 
-1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu on the left side, in the **App settings** section, select **Device templates**.
+1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, in the **App settings** section, select **Device templates**.
 1. On the **Device templates** page, select **+ New**.
 1. On the **Select type** page, review the available device templates, select **IoT Device**, and then select **Next: Customize**.
 
@@ -63,7 +63,7 @@ In this exercise, you'll:
    > [!NOTE]
    > Ensure that you use lowercase characters for the capability name **humidity**.
 
-1. To the right of the newly displayed **Capabilities** section, select the downward-facing caret.
+1. Next to the **Capabilities** section, select the downward-facing caret.
 1. In the newly displayed **Capabilities** sub-section, specify the following settings (leave others with their default values):
 
    | Setting | Value |
@@ -87,7 +87,7 @@ In this exercise, you'll:
    > [!NOTE]
    > Ensure that you use lowercase characters for the capability name **temperature**.
 
-1. To the right of the newly displayed **Capabilities** section, select the downward-facing caret.
+1. Next to the **Capabilities** section, select the downward-facing caret.
 1. In the newly displayed **Capabilities** sub-section, specify the following settings (leave others with their default values):
 
    | Setting | Value |
@@ -103,7 +103,7 @@ In this exercise, you'll:
    :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-draft.png" alt-text="Screenshot of the capabilities of the Raspberry Pi device template page of the IoT Central Application portal.":::
 
 1. On the **Raspberry Pi** page, select **Views** and, on the **Select to add a new view** pane, select **Generate default views**.
-1. On the **Select the applicable views to be generated** section<!--Marcin, please review this edit-->, ensure that the following options are selected, and then select **Generate default dashboard view(s)**.
+1. On the **Select the applicable views to be generated** section, ensure that the following options are selected, and then select **Generate default dashboard view(s)**.
 
 * **Overview**. Provides a view with device telemetry, displaying charts and metrics.
 * **About**. Provides a view with device information, displaying its properties.
@@ -118,7 +118,7 @@ In this exercise, you'll:
 
 ## Integrate a simulated IoT device with an Azure IoT Central application
 
-1. On the **Raspberry Pi** page of the IoT Central Application portal, in the vertical menu on the left side, in the **App settings** section, select **Devices**.
+1. On the **Raspberry Pi** page of the IoT Central Application portal, in the vertical menu, in the **App settings** section, select **Devices**.
 1. On the **Devices** page, select **+ New**.
 1. In the **Create a new device** window, specify the following settings, and then select **Create**:
 
@@ -168,7 +168,7 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-iot-raspberrypi-1-view-raw-data.png" alt-text="Screenshot of the raspberrypi-1 device telemetry in the IoT Central application window.":::
 
-1. In the IoT Central Application portal, in the vertical menu on the left side, select **Analytics**.
+1. In the IoT Central Application portal, in the vertical menu, select **Analytics**.
 1. On the **Analytics** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry, in the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
 1. On the **Analytics** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window, and then select **Save**.
 

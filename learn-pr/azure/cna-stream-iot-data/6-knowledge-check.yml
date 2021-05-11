@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct. The Azure IoT Central analytics service, which allows you to visualize historical trends, correlate distinct telemetries, and detect anomalies in collected data based on built-in and custom reports leverages Azure Time Series Insights for telemetry processing."
     - content: "Azure Synapse Analytics"
       isCorrect: false
-      explanation: "Incorrect. Azure Synapse <!--Marcin, please validate edit--> Analytics is not part of Azure IoT Central. This is a dedicated data analytics service that is intended for data warehousing scenarios."
+      explanation: "Incorrect. Azure Synapse Analytics is not part of Azure IoT Central. This is a dedicated data analytics service that is intended for data warehousing scenarios."
   - content: 'Which Azure service supports interval-based export of telemetry data from Azure IoT Central?'
     choices:
     - content: "Azure Service Bus"
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. You can use cloud properties to assign additional metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities. They have no impact on visualization."
     - content: "Device template"
       isCorrect: true
-      explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that is included in the device template. This is required in order for the telemetry data <!--Marcin, please check edit--> to appear in the default and custom dashboards."
+      explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that is included in the device template. This is required in order for the telemetry data to appear in the default and custom dashboards."
