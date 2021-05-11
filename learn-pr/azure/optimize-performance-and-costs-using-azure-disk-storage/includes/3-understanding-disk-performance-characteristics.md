@@ -22,7 +22,7 @@ If you don't size the VM correctly for the storage performance that an applicati
 
 For example, suppose that your application makes a request that requires 15 000 IOPS. You have provisioned a Standard_D8s_v3 VM, with one P30 OS disk and two premium SSD data disks with P40 SKU. Each data disk can handle 7500 IOPS and eventually can meet the demand of the applications, but the VM itself has a maximum limit of 12800 IOPS, which is the actual IOPS that the application will get. The following figure illustrates this example.
 
-![](RackMultipart20210505-4-dcihql_html_3c598c1975759fdb.png)
+:::image type="content" source="../media/03-vm-io-capping.PNG" alt-text="Diagram_for_VM-IO-capping." border="true":::
 
 The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot accomodate these requirements.
 
@@ -51,6 +51,8 @@ In this scenario, the application's demand will be broken down into three differ
 The total IOPS that VM will return to application will be 12 300 as a sum of each IOPS provided by the OS and data disks.
 
 This scenario is known as *disk IO capping*, when the disk itself cannot meet the application demands.
+
+:::image type="content" source="../media/03-disk-io-capping.PNG" alt-text="Diagram_for_Disk-IO-capping." border="true":::
 
 To diagnose disk IO capping, use the following metrics:
 
@@ -86,7 +88,7 @@ The following table lists examples that illustrate the difference in performance
 | Standard_D2s_v3 | 4000/32 (50) | 3200/48 |
 | Standard_D4s_v3 | 8000/64 (100) | 6400/96 |
 | Standard_D8s_v3 | 16000/128 (200) | 12800/192 |
-| Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 | <!--Marjan, please check if there is an extra zero in 128000/1024 (1600)-->
+| Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 |
 
 Host caching can help you avoid VM bottlneck scenarios.
 In the earlier example of VM IO capping, the application required 15000 IOPS. Both data disks can handle that demand, but the Standard_D8s_v3 VM can only offer 12800 IOPS in the uncached state.
