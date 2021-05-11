@@ -22,7 +22,7 @@ Let’s start by creating an Azure Function app in the portal.
     |---|---|
     | **Project Details** |
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
-    | Resource Group | Click the dropdown and use the <rgn>[Sandbox resource group name]</rgn> resource group |
+    | Resource Group | Click the dropdown and use the '<rgn>[Sandbox resource group name]</rgn>' resource group |
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>* |
     | Publish | Code |
