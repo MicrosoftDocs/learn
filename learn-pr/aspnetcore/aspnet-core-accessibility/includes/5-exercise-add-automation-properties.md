@@ -86,7 +86,7 @@ div.button {
 <form name="CustomerInfo">
 <div class="container w-50 p-3">
   <div class="row">
-    <div class="col-4 text-muted">
+    <div class="col-4 text-primary">
       First Name
     </div>
     <div class="col-8 text-muted">
@@ -94,22 +94,22 @@ div.button {
     </div>
   </div>
   <div class="row">
-    <div class="col-4 text-muted">
+    <div class="col-4 text-primary">
       Last Name
     </div>
-    <div class="col-8 text-muted">
+    <div class="col-8">
       <input type="text" id="Name">
     </div>
   </div>
-  <div class="row text-muted">
+  <div class="row text-black-50">
     <div class="col-4">
       Phone
     </div>
-    <div class="col-8 text-muted">
+    <div class="col-8">
       <input type="text" id="Phone">
     </div>
   </div>
-  <div class="row text-muted">
+  <div class="row text-black-50">
     <div class="col-4">
       Birthday
     </div>
@@ -117,7 +117,7 @@ div.button {
       <input type="text" id="Birthday">
     </div>
   </div>
-  <div class="row text-muted">
+  <div class="row text-primary">
     <div class="col-4">
       E-mail Address
     </div>
@@ -134,10 +134,10 @@ div.button {
 </form>
 
 <p style="font-size: 30px"><b>All about our wonderful pizza!</b></p>
-<p>We make it fresh every day, sometimes up to two or three times a day!<br><br>We love to make pizza!</p>
+<p class="bg-light text-muted">We make it fresh every day, sometimes up to two or three times a day!<br><br>We love to make pizza!</p>
 
 <p style="font-size: 30px"><b>Delivery options</b></p>
-<p>There are a few ways we can get the pizza to you:<br>
+<p class="bg-light text-muted">There are a few ways we can get the pizza to you:<br>
 - Postal mail<br>
 - Dog sled<br>
 - Drone (experimental!)
