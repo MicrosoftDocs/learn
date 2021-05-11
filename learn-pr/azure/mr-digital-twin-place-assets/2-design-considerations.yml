@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-place-assets.2-design-considerations
+uid: learn.azure.mr-digital-twin-place-assets.2-design-considerations
 title: Design considerations
 metadata:
   title: Design considerations
-  description: Configure Unity for Windows Mixed Reality development.
+  description: Overview of design considerations for the end purpose of the user experience.
   ms.date: 5/7/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-design-considerations.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.mr-digital-twin-place-assets.5-exercise-wind-turbine
-title: Exercise--Place wind turbine assets
+title: Exercise - place wind turbine assets
 metadata:
-  title: Exercise--Place wind turbine assets
-  description: Import and configure resources.
+  title: Exercise - place wind turbine assets
+  description: Learn how to place wind turbine prefab assets in your Unity scene.
   ms.date: 5/7/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-wind-turbine.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twin-place-assets
+uid: learn.azure.mr-digital-twin-place-assets
 metadata:
-  title: Place 3D assets in a Unity scene
+  title: Configure 3D assets for Mixed Reality in Unity
   description: Learn how to place Prefab 3D assets or models into a Unity scene.
   ms.date: 5/7/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Place 3D assets in a Unity scene
+title: Configure 3D assets for Mixed Reality in Unity
 summary: Learn how to place Prefab 3D assets or models into a Unity scene.
 abstract: |
   By the end of this module you,'ll be able to:
@@ -34,13 +34,13 @@ prerequisites: |
   - Understanding of MRTK 
   - Fundamental understanding of Level Of Detail (LOD) concepts
 units:
-- learn.mr-digital-twin-place-assets.1-introduction
-- learn.mr-digital-twin-place-assets.2-design-considerations
-- learn.mr-digital-twin-place-assets.3-unity-prefabs
-- learn.mr-digital-twin-place-assets.4-mrtk-interactions-so
-- learn.mr-digital-twin-place-assets.5-exercise-wind-turbine
-- learn.mr-digital-twin-place-assets.6-exercise-deploy
-- learn.mr-digital-twin-place-assets.7-knowledge-check
-- learn.mr-digital-twin-place-assets.8-summary
+- learn.azure.mr-digital-twin-place-assets.1-introduction
+- learn.azure.mr-digital-twin-place-assets.2-design-considerations
+- learn.azure.mr-digital-twin-place-assets.3-unity-prefabs
+- learn.azure.mr-digital-twin-place-assets.4-mrtk-interactions-so
+- learn.azure.mr-digital-twin-place-assets.5-exercise-wind-turbine
+- learn.azure.mr-digital-twin-place-assets.6-exercise-deploy
+- learn.azure.mr-digital-twin-place-assets.7-knowledge-check
+- learn.azure.mr-digital-twin-place-assets.8-summary
 badge:
-  uid: learn.mr-digital-twin-place-assets.badge
+  uid: learn.azure.mr-digital-twin-place-assets.badge

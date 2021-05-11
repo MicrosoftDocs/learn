@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.mr-digital-twin-place-assets.3-unity-prefabs
+uid: learn.azure.mr-digital-twin-place-assets.3-unity-prefabs
 title: Unity prefabs
 metadata:
   title: Unity prefabs
-  description: Configure Unity for Windows Mixed Reality development.
+  description: Overview of Unity prefabs.
   ms.date: 5/7/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/3-unity-prefabs.md)]
