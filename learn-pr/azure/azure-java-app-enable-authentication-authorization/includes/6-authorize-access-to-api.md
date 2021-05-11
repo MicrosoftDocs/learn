@@ -39,22 +39,23 @@ MSAL caches a token after it has been acquired. For Web applications that use th
 * First try to get a token silently from the cache before attempting to acquire a token by other means. 
 
     ```Java
-        final SilentParameters parameters = SilentParameters.builder(Collections.singleton(Config.SCOPES), context.getAccount())
-            .build();
+    final SilentParameters parameters = SilentParameters
+                                            .builder(Collections.singleton(Config.SCOPES), context.getAccount())
+                                            .build();
 
-        final ConfidentialClientApplication client = getConfidentialClientInstance();
-        
-        client.tokenCache().deserialize(context.getTokenCache());
+    final ConfidentialClientApplication client = getConfidentialClientInstance();
+    
+    client.tokenCache().deserialize(context.getTokenCache());
 
-        final IAuthenticationResult result = client.acquireTokenSilently(parameters).get();
+    final IAuthenticationResult result = client.acquireTokenSilently(parameters).get();
     ```
 
 * If there is no token in the cache and the silent token request fails to get a token, you can acquire the token using the authorization code flow
 
     ```Java
     final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                    .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
-                    .build();
+                                                        .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
+                                                        .build();
 
     final IAuthenticationResult result = app.acquireToken(authParams).get();
     ```

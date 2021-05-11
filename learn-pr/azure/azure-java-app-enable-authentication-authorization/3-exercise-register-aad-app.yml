@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-register-aad-app
-title: TODO Unit title
+title: Exercise - Register an application with Azure AD
 metadata:
   unitType: exercise
-  title: TODO Unit title
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  title: Exercise - Register an application with Azure AD
+  description: In this exercise, you will register a web application with Azure AD through the Azure Portal.
   ms.date: 5/7/2021
   author: navyasric
   ms.author: nacanuma

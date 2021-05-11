@@ -32,6 +32,7 @@ To configure the code, open the application project in your preferred IDE like I
 2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Azure AD tenant ID** (as shown in the image below), since the app was registered with the **Accounts in this organizational directory only** option.
 
 3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **application ID** (clientId) of the registered application copied from the Azure portal.
+
    ![Screenshot of the Azure Portal Azure AD App Registration blade with App ID highlighted.](../media/app-reg-blade.png)
 
 4. Find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** you saved during the creation of the app in the Azure portal.
@@ -71,8 +72,9 @@ To configure the code, open the application project in your preferred IDE like I
 
     ```Java
     final ConfidentialClientApplication client = getConfidentialClientInstance();
-    AuthorizationRequestUrlParameters parameters = AuthorizationRequestUrlParameters.builder(Config.REDIRECT_URI, Collections.singleton(Config.SCOPES))
-            .responseMode(ResponseMode.QUERY).prompt(Prompt.SELECT_ACCOUNT).state(state).nonce(nonce).build();
+    AuthorizationRequestUrlParameters parameters = AuthorizationRequestUrlParameters
+                                                        .builder(Config.REDIRECT_URI, Collections.singleton(Config.SCOPES))
+                                                        .responseMode(ResponseMode.QUERY).prompt(Prompt.SELECT_ACCOUNT).state(state).nonce(nonce).build();
 
     final String authorizeUrl = client.getAuthorizationRequestUrl(parameters).toString();
     contextAdapter.redirectUser(authorizeUrl);
@@ -89,7 +91,7 @@ To configure the code, open the application project in your preferred IDE like I
     // First, validate the state, then parse any error codes in response, then extract the authCode. Then:
     // build the auth code params:
     final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-            .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES)).build();
+                                                        .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES)).build();
 
     // Get a client instance and leverage it to acquire the token:
     final ConfidentialClientApplication client = AuthHelper.getConfidentialClientInstance();

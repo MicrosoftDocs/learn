@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-signin-with-msal
-title: TODO Unit title
+title: Exercise - Sign in users with MSAL
 metadata:
   unitType: exercise
-  title: TODO Unit title
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  title: Exercise - Sign in users with MSAL
+  description: In this exercise, you will use MSAL in a Java web application to sign in users.
   ms.date: 5/7/2021
   author: navyasric
   ms.author: nacanuma

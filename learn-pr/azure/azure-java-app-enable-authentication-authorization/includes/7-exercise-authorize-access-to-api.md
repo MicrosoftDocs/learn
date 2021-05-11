@@ -1,6 +1,6 @@
 In this exercise, you will configure the application with permissions and use MSAL to access user profile information from the Microsoft Graph (MS Graph) API.
 
-## Add MS Graph permissions to App registration
+## Add Microsoft Graph permissions to App registration
 
 1. In the app's registration screen, click on the **API permissions** blade in the left to open the page where we add access to the APIs that your application needs.
    - Click the **Add permissions** button and then,
@@ -45,7 +45,7 @@ In this exercise, you will configure the application with permissions and use MS
 
     The following code is all that is required for an application developer to write for accessing the `/me` endpoint, provided that they already have a valid access token for Graph Service with the `User.Read` scope.
 
-    ```java
+    ```Java
     //CallGraphServlet.java
     User user = GraphHelper.getGraphClient(contextAdapter).me().buildRequest().get();
     ```

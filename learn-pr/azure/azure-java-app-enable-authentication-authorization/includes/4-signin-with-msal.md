@@ -10,7 +10,7 @@ The library provides convenient APIs that enable authentication with Azure AD fo
 - Command-line applications
 - Desktop applications
 
-## Key concepts
+## Key MSAL concepts
 
 1. MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials. 
 
@@ -20,11 +20,10 @@ The library provides convenient APIs that enable authentication with Azure AD fo
 
     ```Java
     IClientCredential credential = ClientCredentialFactory.createFromSecret(CLIENT_SECRET);
-    ConfidentialClientApplication app = 
-    ConfidentialClientApplication
-        .builder(PUBLIC_CLIENT_ID, credential)
-        .authority(AUTHORITY)
-        .build();
+    ConfidentialClientApplication app = ConfidentialClientApplication
+                                            .builder(PUBLIC_CLIENT_ID, credential)
+                                            .authority(AUTHORITY)
+                                            .build();
 
     ```
 
@@ -36,8 +35,9 @@ The library provides convenient APIs that enable authentication with Azure AD fo
 
     ```Java
     final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                    .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
-                    .build();
+                                                        .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
+                                                        .build();
+
     final IAuthenticationResult result = app.acquireToken(authParams).get();
     ```
 
