@@ -2,4 +2,4 @@ The HealthCare industry is constantly growing and so does the demand for persona
 
 ## Resources
 
-[Azure Health Bot](/healthbot/)
+[Azure Health Bot](/azure/health-bot/)

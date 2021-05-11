@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-introduction.4-azure-health-bot-usecases
+uid: learn.healthbot-introduction.4-azure-health-bot-use-cases
 title: When to use Azure Health Bot
 metadata:
   title: When to use Azure Health Bot
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-azure-health-bot-usecases.md)]
+  [!include[](includes/4-azure-health-bot-use-cases.md)]

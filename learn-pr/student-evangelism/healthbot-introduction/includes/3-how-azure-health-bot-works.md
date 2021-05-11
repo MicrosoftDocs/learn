@@ -28,4 +28,4 @@ Health Bot should meet the regulatory requirements of the healthcare industry so
 
 Built on top of the industry-leading Microsoft Azure technology, the Azure architecture powers the Health Bot Service's ability to scale with resilience, while maintaining the highest standards of privacy and security.
 
-The Health Bot has a list of certifications that can be found in the [official documentation](/healthbot/) in the category Trust and Compliance.
+The Health Bot has a list of certifications that can be found in the [official documentation](/azure/health-bot/) in the category Trust and Compliance.
