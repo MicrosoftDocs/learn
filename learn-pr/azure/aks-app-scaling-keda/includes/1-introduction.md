@@ -2,11 +2,11 @@ Kubernetes Event Driven Autoscaler (KEDA) works alongside standard Kubernetes co
 
 ## Example scenario
 
-You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of messages, CPU and Memory based metrics are not sufficient to scale properly. As the DevOps Engineer, you need to assess which tools will help achieve the company's scaling needs.  
+You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly. As the DevOps engineer, you need to assess which tools will help achieve the company's scaling needs.  
 
 After experimenting with various options, you've determined that using Azure Kubernetes Services (AKS) and KEDA fulfills all the requirements to scale for peak and off-peak usage. With clearance from leadership, you begin the journey of an event driven application that supports the company now and in the future!
 
-In this module, you'll deploy KEDA into an AKS environment and deploy a scaler object to autoscale containers based on the number of messages in a list.
+In this module, you'll deploy KEDA into an AKS environment and deploy a scaler object to autoscale containers based on the number of messages (events) in a list.
 
 ## What will we be doing?
 
@@ -40,7 +40,9 @@ All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/clou
 
 ## Before We Start
 
-We'll assume an AKS cluster is already created and running. To create your AKS cluster, run the following commands in a Cloud Shell environment:
+We'll assume an AKS cluster is already created and running or...
+
+If you need a create a simple Kubernetes cluster you can do the following in a Cloud Shell environment:
 
 ```bash
 RESOURCE_GROUP=rg-contoso-video
@@ -69,23 +71,16 @@ The complete cluster creation can take up to five minutes.
 
 [!IMPORTANT] Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
 
-We also assume a Azure Redis Cache is running and configured to enable a non-ssl port.  To create your Azure Redis Cache, run the following commands in a Cloud Shell environment:
+We also assume a Azure Redis Cache is running or...
+
+To create a simple Azure Redis Cache, run the following commands in a Cloud Shell environment:
 
 ```bash
-RESOURCE_GROUP=rg-contoso-video
-LOCATION=westus2
 REDIS_NAME=redis-contoso-video
-```
 
-```bash
 az redis create --location $LOCATION --name $REDIS_NAME --resource-group $RESOURCE_GROUP --sku Basic --vm-size c0 --enable-non-ssl-port
-```
 
-```bash
 REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hostName")
-```
-
-```bash
 REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
 ```
 

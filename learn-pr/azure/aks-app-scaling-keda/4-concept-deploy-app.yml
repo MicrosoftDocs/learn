@@ -8,40 +8,8 @@ metadata:
   author: pplavetzki
   ms.author: paplavet 
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/4-concept-deploy-app.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "What purpose do scaler objects perform?"
-    choices:
-    - content: "metrics server"
-      isCorrect: false
-      explanation: "Although scalers provide metrics, it is not a metrics server"
-    - content: "detect if a object should be activated or deactivated, and feed custom metrics for a specific event source"
-      isCorrect: true
-      explanation: "Triggers use scalers to scale the target resource."
-    - content: "pull a single event from the message source, and process to completion and terminate"
-      isCorrect: false
-      explanation: "This is true for a scaler job not a scaler object."
-  - content: "What purpose do scaler jobs perform?"
-    choices:
-    - content: "detect if a object should be activated or deactivated, and feed custom metrics for a specific event source"
-      isCorrect: false
-      explanation: "This is true for a scaler object not a scaler job."
-    - content: "They are ephemeral workloads"
-      isCorrect: false
-      explanation: "Scaler jobs are not ephemeral containers"
-    - content: "pull a single event from the message source, and process to completion and terminate."
-      isCorrect: true
-      explanation: "Rather than processing multiple events within a deployment, for each detected event a single Kubernetes Job is scheduled."
-  - content: "Are scalers limited to only Azure resources?"
-    choices:
-    - content: "Yes, KEDA scalers are limited to Azure resources"
-      isCorrect: false
-      explanation: "Some examples of non-azure resource are Kafka, NATS Streaming and Prometheus scalers."
-    - content: "No, there are many different non-azure resources that can be scaler resources"
-      isCorrect: true
-      explanation: "Some examples of non-azure resource are Kafka, NATS Streaming and Prometheus scalers."
+
 

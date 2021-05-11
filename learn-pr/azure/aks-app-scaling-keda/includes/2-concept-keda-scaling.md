@@ -1,12 +1,12 @@
-The video editing company that you work for experiences workload peak at various times during a 24-hr period. Since the application is event driven and receives a significant number of messages, CPU and Memory based metrics are not sufficient to scale properly. You discover that by deploying KEDA and a scaler object, you can be prepared for peak and non-peak situations.
+The video editing company that you work for experiences workload peak at various times during a 24-hr period. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly. You discover that by deploying KEDA and a scaler object, you can be prepared for peak and non-peak situations.
 
 We'll review why the native HPA resource isn't always the best choice when looking to autoscale your services.
 
 ## Event driven autoscaling
 
-Kubernetes does resource-based scaling on metrics defined by CPU and memory really well.  However, event-driven applications require a more elegant solution to scale proactively.  With KEDA, you can drive the scaling of any container in Kubernetes based on the number of events needing to be processed.
+Kubernetes does resource-based scaling on metrics defined by CPU and memory really well.  However, event-driven applications require a more targeted solution to scale proactively.  With KEDA, you can drive the scaling of any workload in Kubernetes based on the number of events needing to be processed.
 
-KEDA is a single-purpose and lightweight component that can be added into any Kubernetes cluster. KEDA works alongside standard Kubernetes components like the Horizontal Pod Autoscaler and can extend functionality without overwriting or duplication. With KEDA you can explicitly map the apps you want to use event-driven scale, with other apps continuing to function. This makes KEDA a flexible and safe option to run alongside any number of any other Kubernetes applications or frameworks.
+KEDA is a single-purpose and lightweight component that can be added into any Kubernetes cluster. KEDA is an open source, CNCF solution. It works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA) and can extend its functionality. With KEDA you can explicitly target the apps you want to use event-driven scale, with other apps continuing to function using other scaling methods. This makes KEDA a flexible and safe option to run alongside any number of any other Kubernetes applications or frameworks.
 
 ## KEDA explained
 
@@ -14,11 +14,11 @@ KEDA is a single-purpose and lightweight component that can be added into any Ku
 
 KEDA acts as an agent in Kubernetes.  It activates and deactivates `Deployments` and `StatefulSets` to scale to and from zero.
 
-KEDA also performs as a Kubernetes metrics server. The metrics server exposes detailed event data from sources like messages in a Kafka or queue length of an AWS SQS Queue.
+KEDA also performs as a Kubernetes metrics server. The metrics server exposes detailed event data from sources like messages in a Kafka topic, queue length of an AWS SQS Queue or number of events in an Azure Event Hub.
 
 ### Architecture
 
-The diagram below shows how KEDA integrates with the Kubernetes HPA, external event sources, and Kubernetes’ etcd data store to provide autoscaling functionality.
+The diagram below shows how KEDA integrates with the Kubernetes HPA, external event sources, and Kubernetes’ API Server to provide autoscaling functionality.
 
 :::image type="content" source="../media/2-1-keda-arch.png" alt-text="A diagram that depicts the KEDA architecture in Kubernetes.":::
 

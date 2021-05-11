@@ -1,8 +1,6 @@
-Your company is experiencing increased demand for its video rendering service because of its international expansion. You're looking for ways to scale the product to provide a better experience for all customers. You want to understand how to deploy applications to an Azure Kubernetes Service (AKS) cluster and allow customers access to the application's services.
+You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly.
 
-You created an AKS cluster and deployed your web application to the Kubernetes cluster. When you deployed the web app, you used the Kubernetes declarative paradigm to describe what you wanted to create. This way, you can keep the app's version history and make future deployments easily reproducible.
-
-Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure additional services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
+You first deployed the application as a `Deployment` with a static replica count.  We discussed why this would be challenging for workloads that process events and have fluctuating resource needs.  After looking at the options for our scenario, using KEDA with a scaler for the Redis list would help us autoscale in a efficient and effective manner.
 
 ## Clean up resources
 
