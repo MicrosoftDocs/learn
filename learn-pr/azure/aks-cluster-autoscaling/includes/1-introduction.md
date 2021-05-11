@@ -1,6 +1,6 @@
 Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion. They've already scaled the application using HorizontalPodAutoscalers, but the cluster doesn't seem to be following up, the DevOps engineer found out the cluster could be manually scaled, but someone needs to keep a close look on it all day long. Management then tasked you to find a solution to scale the cluster automatically and free up some employee time.
 
-Since AKS already provides scaling tools for apps, you decided to check on a feature called "Cluster Autoscaler" to get more understanding of its aspects and how can it be implemented.
+Since AKS already provides scaling tools for apps, you decided to check on a feature called "cluster autoscaler" to get more understanding of its aspects and how can it be implemented.
 
 In this module, you'll learn what the cluster autoscaler is, how it works and how you can deploy it to an existing cluster on AKS.
 
