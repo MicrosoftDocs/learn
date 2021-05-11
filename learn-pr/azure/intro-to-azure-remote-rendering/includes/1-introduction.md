@@ -2,7 +2,7 @@
 Editors: The use of visual and viewing is acceptable IMO as a non sighted person cannot use this technology. We're also using a tool which is specifically designed to enable a visual through a device which is designed for a sighted person. Global across all units. 
 
 -->
-Standalone computing devices (sometimes referred to as untethered devices) have limited compute processing power. This limitation can affect your ability to render complex visual models. One possible solution is to reduce the required complexity. However, this also reduces visual fidelity. For many applications, reducing the visual fidelity is not acceptable because the more detail is required. 
+Standalone computing devices (sometimes referred to as untethered devices) have limited compute processing power. This limitation can affect your ability to render complex visual models. One possible solution is to reduce the required complexity. However, this also reduces visual fidelity. For many applications, reducing the visual fidelity is not acceptable because high detail is required. 
 
 Remote Rendering enables you to address this dilemma. You can use cloud-based processing to render complex models to the desired visual fidelity without compromise. Azure Remote Rendering is a Mixed Reality Azure service that enables you to render high quality, interactive 3D content in Azure. You can then stream this rendered content to devices, such as HoloLens 2, in real time.
 

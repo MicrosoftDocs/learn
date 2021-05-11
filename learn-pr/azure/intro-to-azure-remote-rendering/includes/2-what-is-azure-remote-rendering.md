@@ -7,7 +7,9 @@
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
 -->
 
-When you work with 3D visualization, every detail can matter. But untethered devices often have insufficient compute resource to render more complex models to the required detail level. By using Azure Remote Rendering, you shift your rendering workloads to high performance GPUs in Azure. In Azure, a cloud hosted graphics engine:
+When you work with 3D visualization, every detail can matter. But untethered devices often have insufficient compute resource to render more complex models to the required detail level. By using Azure Remote Rendering, you shift your rendering workloads to high performance GPUs in Azure. 
+
+In Azure, a cloud hosted graphics engine:
 
 - Renders your image
 - Encodes the image as a video stream

@@ -24,7 +24,7 @@ Consider using Azure Remote Rendering when you meet the following criteria:
 
 ### Example of when to use
 
-Imagine you're building an application for an automotive manufacturing company. The company is designing a new engine. They have a 3D model that represents the new engine, and they want to view it in their HoloLens 2. This will help them to get a full understanding of how the engine will fit together, and review any recent changes made. But the model is too large to view locally on the HoloLens 2, but the company's engineers still need a way to see it in 3D.
+Imagine you're building an application for an automotive manufacturing company. The company is designing a new engine. They have a 3D model that represents the new engine, and they want to view it in their HoloLens 2. This will help them to get a full understanding of how the engine will fit together, and review any recent changes made. But the model is too large to view locally on the HoloLens 2, and the company's engineers still need a way to see it in 3D.
 
 In this situation, Azure Remote Rendering will help because the company has:
 
