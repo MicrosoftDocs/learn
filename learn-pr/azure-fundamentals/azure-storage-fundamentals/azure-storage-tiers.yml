@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-storage-fundamentals.azure-storage-tiers
-title: Understanding Blob access tiers
+title: Understand Blob access tiers
 metadata:
-  title: Understanding Blob access tiers
-  description: In this unit, you'll learn about access tiers in Azure Storage.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Understand Blob access tiers
+  description: "In this unit, you'll learn about access tiers in Azure Storage."
+  ms.date: 05/11/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/azure-storage-tiers.md)]
+  [!include[](includes/6-azure-storage-tiers.md)]
