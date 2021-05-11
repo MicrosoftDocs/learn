@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.mr-digital-twin-build-scene
+uid: learn.azure.mr-digital-twin-build-scene
 metadata:
   title: Build a 3D Scene in Unity with Maps SDK 
   description: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain.
@@ -27,15 +27,16 @@ prerequisites: |
   - Fundamental understanding of raster data / imagery
   - Awareness of the Microsoft Maps SDK
   - Bing Maps Account and Dev Key
-iconUrl: /learn/achievements/mr-digital-twin-build-scene.svg
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+hidden: true
 units:
-- learn.mr-digital-twin-build-scene.1-introduction
-- learn.mr-digital-twin-build-scene.2-scene-design
-- learn.mr-digital-twin-build-scene.3-unity-interface
-- learn.mr-digital-twin-build-scene.4-source-scene
-- learn.mr-digital-twin-build-scene.5-exercise-wind-farm
-- learn.mr-digital-twin-build-scene.6-exercise-deploy
-- learn.mr-digital-twin-build-scene.7-knowledge-check
-- learn.mr-digital-twin-build-scene.8-summary
+- learn.azure.mr-digital-twin-build-scene.1-introduction
+- learn.azure.mr-digital-twin-build-scene.2-scene-design
+- learn.azure.mr-digital-twin-build-scene.3-unity-interface
+- learn.azure.mr-digital-twin-build-scene.4-source-scene
+- learn.azure.mr-digital-twin-build-scene.5-exercise-wind-farm
+- learn.azure.mr-digital-twin-build-scene.6-exercise-deploy
+- learn.azure.mr-digital-twin-build-scene.7-knowledge-check
+- learn.azure.mr-digital-twin-build-scene.8-summary
 badge:
-  uid: learn.mr-digital-twin-build-scene.badge
+  uid: learn.azure.mr-digital-twin-build-scene.badge

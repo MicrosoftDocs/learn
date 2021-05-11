@@ -1,20 +1,17 @@
-If you begin with a new Unity project, your Scene will be labeled **Untitled**.  
+Begin by opening the MainScene that has been created for you.  Essentially, this is a blank Scene that you'll continue to evolve and develop over this learning path.
 
-1. **File > Save** menu option. This will overwrite the original Scene.  Save the Scene as **MainScene**.
+## Open the MainScene Scene
 
-You can begin with an empty scene and re-create the Scene components from any previous, related module(s), or you can begin with the relevant prebuilt Scene created for you based on a prior module.  Five Scenes have been included in the sample Unity project to assist with your learning.  Scene **1_Build3DScene** contains a completed Scene for this module.  If you complete this module and are having difficulties or would simply like to confirm your work, you can load this Scene and compare it to the Scene you built.  If you choose to load the Scene representing a completed module, you still need to configure some parameters, including Maps SDK and Azure services.
+1. In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
 
-## Add existing Scene  [optional]
+:::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
 
-1. In the Project Panel, open the **Assets > Scenes** folder
-2. Select and drag the Scene to the Hierarchy panel.  For this module, select
-**1_Build3DScene**
-3. Configure necessary service parameters (for example, Maps SDK, Azure Services, and so on)
+2. After you've added the Scene you would prefer to work with, remove any other unwanted Scenes by right-clicking and **Remove Scene**.
 
 > [!NOTE]
-> The **Final_CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  It will still require further configuration.  After you have added the Scene you would prefer to work with, remove any other unwanted Scenes by right clicking and** Remove Scene**.
+> The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
 
-:::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the 1 underscore build 3d scene loaded.":::
+To add a terrain to your Scene, choose whether you would like to add static, predefined terrain, or connect to the Bing Maps service to retrieve dynamic map data.  Try adding both the static and dynamic terrain, then removing the one you don't want.  
 
 ## Add Static Terrain
 
@@ -29,9 +26,9 @@ You now have the static terrain Prefab loaded and available for use in your app.
 
 ## Create Bing Maps Account
 
-If you haven’t already, you need to [create a Bing Maps account](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You'll use that account to generate a developer **Key** in the Microsoft Bing Maps Dev Center, which is a code used to authenticate with the service. The app you build will connect to the service using your account.  
+If you haven’t already, you need to [create a Bing Maps account](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You'll use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the HoloLens will connect to that map service using your Bing Maps account.  
 
-When you create a Bing Maps Key, be sure to select **Basic** as the key type and **Windows Application** as the Application Type.
+When you create a Developer Key, be sure to select Basic as the key type and **Windows Application** as the Application Type.
 
 ## Add Dynamic Terrain and configure Bing Maps data feed
 
@@ -42,8 +39,10 @@ When you create a Bing Maps Key, be sure to select **Basic** as the key type and
 
 :::image type="content" source="../media/maps-developer-key.png" alt-text="Screenshot of the Bings Maps Design prefab with the map session script selected.":::
 
-3. You may need to select another item in the hierarchy, then select Bing Maps again to refresh
-4. Expand the **Map Renderer (Script)** component in the **Inspector** and set the following **Location** and **Map Layout** settings:
+> [!NOTE]
+> You may need to select another item in the hierarchy, then select Bing Maps again to refresh.
+
+3. Expand the **Map Renderer (Script)** component in the **Inspector** and set the following **Location** and **Map Layout** settings:
 
 ### Location
 
@@ -63,14 +62,22 @@ When you create a Bing Maps Key, be sure to select **Basic** as the key type and
 
 :::image type="content" source="../media/map-renderer.png" alt-text="Screenshot of the Bings Maps Design prefab with the map renderer script selected.":::
 
-5. Expand the **Transform** component in the **Inspector** and position the map using the **Position** coordinates (X = 0, Y = -0.7, Z = 2) so it sits in front of the user.
+4. Expand the **Transform** component in the **Inspector** and validate the position of the map using the **Position** coordinates (X = 0, Y = -0.7, Z = 2) so the two maps are placed side by side.
 
 :::image type="content" source="../media/bing-maps-transform.png" alt-text="Screenshot of the Bings Maps Design prefab with the transform component selected.":::
 
-6. Save the scene under the **File > Save** menu option.  If prompted, save your Scene in the **Scenes** folder.
-7. In the Scene, you should have both the Static and Dynamic terrain loaded.  Navigate the Scene using your mouse and/or keyboard.  
-8. Press the **Play** button and navigate the Game panel.  
-9. Observe any differences between the Static Terrain and Dynamic Terrain (for example, endless terrain and contour lines in the Bing Maps terrain v. higher resolution imagery in the Static Terrain)
+5. Save the scene under the **File > Save** menu option.  If prompted, save your Scene in the **Scenes** folder.
+6. In the Scene, you should have both the Static and Dynamic terrain loaded.  Navigate the Scene using your mouse and/or keyboard.
+
+> [!NOTE]
+> When you are navigating in the Scene panel, you may find your Assets of interest become set in awkward positions.  To return focus and zoom to a particular Asset, select the object in the Hierarchy panel, then click in the Scene window. Next, press Shift-F and your Scene will center on and zoom into the selected Asset.  The same effect can be achieved by double-clicking an Asset in the Hierarchy panel.
+  
+7. Press the **Play** button and navigate the Game panel.  
+
+> [!NOTE]
+> Navigating within the Game panel can be achieved using the MRTK [input simulation service](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service).  Although many of the navigation techniques can be achieved using a standard keyboard and mouse, a wheel mouse simplifies navigation. 
+
+8. Observe any differences between the Static Terrain and Dynamic Terrain (for example, endless terrain and contour lines in the Bing Maps terrain v. higher resolution imagery in the Static Terrain)
 
 :::image type="content" source="../media/bing-static-dueling-terrain.png" alt-text="Screenshot of the main scene in play mode with the static and bing map terrains side by side.":::
 

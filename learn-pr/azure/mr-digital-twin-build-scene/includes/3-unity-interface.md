@@ -1,4 +1,4 @@
-Unity is a robust 3D development engine with many features, and as a result, it has a large number of Editor windows. To help make the work environment more approachable, the Default Layout features only major windows used during typical development. Other Windows can be found under the Windows menu item at the top of the work area.
+Unity is a robust 3D development platform with many features, and as a such, it has a large number of Editor windows. To help make the work environment more approachable, the Default Layout consists of only major windows used during typical development scenarios.  Additional Windows can be found under the **Windows** menu item at the top of the work area.
 
 :::image type="content" source="../media/unity-interface.png" alt-text="Screenshot of the Unity interface with each panel assigned a letter from a to f. A is toolbar, b is scene view, c is game view, d is hierarchy window, e is inspector window, and f is project window.":::
 

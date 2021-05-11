@@ -19,24 +19,24 @@ quiz:
       choices:
         - content: "Pneumatic and pneumonic"
           isCorrect: false
-          explanation: ""
+          explanation: "Pneumatic is not a type of terrain; rather, it relates to making use of air or gas under pressure.  Pneumonic also is not a type of terrain.  It relates to or affects the lungs"
         - content: "Static and dynamic"
-          isCorrect: false
-          explanation: ""
+          isCorrect: true
+          explanation: "Static and dynamic terrain are commonly used to provide context for Mixed Reality experiences.  Both data sources are useful to help create an immersive environment and bring realism to Digital Twins.  Although some Digital Twin experiences are best developed focusing only on specific Digital Twin assets (e.g., equipment in a manufacturing facility), others are better supported by ancillary data such as static and dynamic terrain. "
         - content: "Astral and decentral"
           isCorrect: true
-          explanation: ""
+          explanation: "Astral is connected with, or resembling the stars.  Although this data could provide some context for a Mixed Reality experience, it is not commonly used.  Decentral means non-central and has little relationship to terrain used in Unity."
     - content: "What are the primary configuration parameters associated with the Map Renderer (Script) component?"
       choices:
         - content: "Latitude, Longitude, and Zoom Level"
-          isCorrect: false
-          explanation: ""
+          isCorrect: true
+          explanation: "Latitude and longitude values are used to geolocate your experience.  These 2D geospatial coordinates enable Unity to place your map in a real-world position, allowing you to support relative and absolute placement of assets.  The Zoom level delineates the level of detail you want to support in your map component.  These are the three primary configuration parameters used to ensure the proper placement and visibility in your Scene."
         - content: "Azimuth, Bearing, and Altitude"
           isCorrect: false
-          explanation: ""
+          explanation: "Azimuth and bearing are typically angular measures of direction and are not used for defining fixed geolocations.  Altitude is a measure of height of an object or point in relation to sea level or ground level or can be a measure of height of a celestial object above a horizon.  Although important measures for describing the directional location of an object relative to a known point, latitude and longitude are required to configure the Map Renderer (Script) component."
         - content: "Cardinal, Ordinal, and Nominal"
-          isCorrect: true
-          explanation: ""
+          isCorrect: false
+          explanation: "Although these are number types that may appear in the Map Renderer (Script) configuration, they are not the primary configuration parameters.  Cardinal numbers define how many of something exists.  Ordinal numbers represent the position of an entity in a list.  Nominal numbers are like labels, with little relationship to each other (e.g., not scalar)."
     - content: "True or false: Using satellite imagery from Bing Maps can help make your experience more realistic and meaningful by providing contextual information."
       choices:
         - content: "True"
@@ -44,4 +44,4 @@ quiz:
           explanation: ""
         - content: "False"
           isCorrect: false
-          explanation: ""
+          explanation: "Dynamic map data, including satellite imagery from Bing Maps, grounds your Mixed Reality experience with real-world context, permitting your users to better visualize surrounding ancillary data supporting your Digital Twin."

@@ -9,6 +9,6 @@ metadata:
   ms.author: sekerawa 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-scene-design.md)]
