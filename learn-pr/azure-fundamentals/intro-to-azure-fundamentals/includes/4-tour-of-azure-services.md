@@ -272,7 +272,7 @@ Azure provides four main types of storage services.
     Azure Table storage
   :::column-end:::
   :::column:::
-    Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design..
+    Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design.
   :::column-end:::
 :::row-end:::
 
