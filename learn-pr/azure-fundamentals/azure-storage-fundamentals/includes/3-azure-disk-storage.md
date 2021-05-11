@@ -18,4 +18,4 @@ Disks come in many different sizes and performance levels, from solid-state driv
 
 The following illustration shows an Azure virtual machine that uses separate disks to store different data.
 
-:::image type="content" source="../media/Azure-disks-7841e01e.png" alt-text="Diagram of two disks inside a virtual machine. One stores the operating system and one stores data.":::
+:::image type="content" source="../media/azure-disks-7841e01e.png" alt-text="Diagram of two disks inside a virtual machine. One stores the operating system and one stores data.":::
