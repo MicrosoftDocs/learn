@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.azure-storage-fundamentals
 metadata:
-  title: Explore Azure Storage services (AZ-900)
-  description: Learn about the different storage options that are available in Azure Storage. Prepare for AZ-900.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Explore Azure Storage services
+  description: "Learn about the different storage options that are available in Azure Storage. Prepare for AZ-900."
+  ms.date: 05/11/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Storage services
 summary: In this module, you'll learn about some of the different storage options that are available in Azure Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure Files, and Blob access tiers.
-abstract: | 
+abstract: |
   After completing this module, you'll be able to describe the benefits and usage of:
-  - Azure Blob Storage
-  - Azure Disk Storage
-  - Azure Files
-  - Azure Blob access tiers
-prerequisites: | 
+    - Azure Blob Storage
+    - Azure Disk Storage
+    - Azure Files
+    - Azure Blob access tiers
+prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-storage-fundamentals.svg
@@ -24,15 +24,15 @@ levels:
 - beginner
 roles:
 - administrator
-- solution-architect
 - developer
+- solution-architect
 - student
 products:
 - azure
-- azure-storage
-- azure-storage-accounts
 - azure-blob-storage
 - azure-files
+- azure-storage
+- azure-storage-accounts
 - azure-storage-explorer
 units:
 - learn.azure.azure-storage-fundamentals.introduction

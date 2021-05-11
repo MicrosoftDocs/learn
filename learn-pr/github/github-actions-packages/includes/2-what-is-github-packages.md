@@ -55,4 +55,4 @@ Now with GitHub Packages, you can use a single set of credentials across your so
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
 
-In the next unit, we'll use GitHub Actions to build a container image, and publish it into GitHub Packages.
+In the next unit, we'll learn how to use our workflow to publish to GitHub Packages and GitHub Container Registry.

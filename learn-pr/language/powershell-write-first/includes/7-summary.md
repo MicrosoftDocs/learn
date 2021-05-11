@@ -1,12 +1,9 @@
-Our goal was to write code that takes input from a user and output to the console and
-become familiar with the syntax of PowerShell. We learned what programming languages are and they
-communicate to the computer. We wrote our first programs using basic PowerShell syntax. Also, we learned
-how to display string data to the console and receive string input from the user. We learned what to
-look for when we get errors from our code and identified PowerShell syntax elements like cmdlets,
-parameters, and variables.
+Congratulations on taking your first steps toward writing programs by using PowerShell.
 
-Congratulations on taking your first steps to building more sophisticated programs.
+In this module, your goal was to become familiar with PowerShell syntax and to write code that takes input from a user and outputs it to the console. 
+
+You learned what programming languages are and how they communicate to the computer. You wrote your first programs by using basic PowerShell syntax elements, such as cmdlets, parameters, and variables. You learned how to display string data to the console and receive string input from users. And you learned what to look for when you find errors in your code.
 
 ## Learn more
 
-- [PowerShell Documentation](https://docs.microsoft.com/powershell/scripting/overview)
+For more information, see [What is PowerShell?](https://docs.microsoft.com/powershell/scripting/overview).
