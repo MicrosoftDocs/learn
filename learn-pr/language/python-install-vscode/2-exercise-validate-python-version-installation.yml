@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-install-vscode.python-programming-language
-title: Introducing Python
+title: Validate your Python version and installation
 metadata:
-  title: Introducing Python
+  title: Validate your Python version and installation
   description: What is Python? Why should I learn Python? How can I tell if it's installed on my computer?
   ms.date: 3/2/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-python-programming-language.md)]
+  [!include[](includes/2-exercise-validate-python-version-installation.md)]
