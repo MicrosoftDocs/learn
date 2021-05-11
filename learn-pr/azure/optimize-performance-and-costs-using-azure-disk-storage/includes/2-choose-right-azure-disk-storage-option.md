@@ -2,7 +2,7 @@ One of the primary concerns of your organization is to migrate your enterprise a
 
 As a part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk storage types available in Azure.
 
-## Ultra disks
+## Ultra Disks
 
 Of the various disks available in Azure, Ultra Disks provide the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high IOPS, and low latency.
 
@@ -21,7 +21,7 @@ Ultra Disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature 
 > [!Note]
 > You can resize an Ultra Disk only four times during a 24 hour window, and it is possible that the performance resize operation might fail due to lack of performance bandwidth capacity.
 
-By default, Azure creates Ultra Disks with a 4k physical sector, which is compatible with most applications. For older applications that are not compatible with a 4K physical sector, you can create a 512E sector size. <!-- Marjan, please review the edits I have made to the previous sentence-->
+By default, Azure creates Ultra Disks with a 4k physical sector, which is compatible with most applications. For older applications that are not compatible with a 4K physical sector, you can create a 512E sector size.
 
 Ultra Disks are a new disk type and currently have some limitations:
 
@@ -38,7 +38,7 @@ Some workloads place intensive loads on disk storage. For example, top-tier data
 
 ## Premium SSD
 
-Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to Ultra Disks. Premium disks don't have the current limitations of Ultra Disks. For example, they&#39;re available in all regions and you can use them with VMs that are located outside of Availability Zones.
+Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to Ultra Disks. Premium disks don't have the current limitations of Ultra Disks. For example, they're available in all regions and you can use them with VMs that are located outside of Availability Zones.
 
 You can adjust performance of Premium SSDs by first detaching these disks from their VMs. Also, you can use Premium SSDs only with larger VM sizes that are compatible with premium storage.
 
