@@ -6,13 +6,13 @@ An Azure account is required to complete these steps. If you don't have an Azure
 
 2. In the global search look for "Health Bot".
 
-   :::image type="content" source="../media/5-select-search.png" alt-text="In the Azure portal searching the word Health Bot in the search bar and selecting it":::
+   :::image type="content" source="../media/5-select-search.png" alt-text="In the Azure portal searching the word Health Bot in the search bar and selecting it.":::
 
-3. In the Health Bot management blade, click "New" to create a new Health Bot instance
+3. In the Health Bot management blade, click "New" to create a new Health Bot instance.
 
    :::image type="content" source="../media/5-select-new.png" alt-text="Clicking new on the left side of Azure portal to create a new Health Bot":::
 
-4. Follow the steps in the resource creation wizard and provide the required details for your new Health Bot resource
+4. Follow the steps in the resource creation wizard and provide the required details for your new Health Bot resource.
 
    :::image type="content" source="../media/5-select-review-&-create.png" alt-text="Filling up project and instance details and clicking Review & Create":::
 
