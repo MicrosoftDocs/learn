@@ -3,7 +3,7 @@ Now that you know a little more about the basics of using telemetry data and wha
 1. Clone or download the project from GitHub.
 2. In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder.
 3. For this module, locate and open **2_PlaceDigitalTwinAssets**.  This Scene contains the **Bing Maps.prefab** Prefab that we'll be using.
-4. Find your Bing Maps developer key. If you don't have one, you can sign up for one here: [Create a Bing Maps account](bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).
+4. Find your Bing Maps developer key. If you don't have one, you can sign up for one here: [Create a Bing Maps account](https://docs.microsoft.com/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).
 5. Select the **Bing Maps** game object from the **Hierarchy**, then enter your Developer Key and apply the following configurations to the **Map Renderer** component:
 
     | Property | Value |
