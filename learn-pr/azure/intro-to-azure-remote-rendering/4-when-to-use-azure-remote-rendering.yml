@@ -10,6 +10,6 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-remote-rendering.md)]

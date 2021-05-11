@@ -1,176 +1,44 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this unit, you'll evaluate whether Azure Remote Rendering is suitable for your organizational needs. The criteria you'll consider are:
 
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
+- Complexity of 3D models
+- Required visual fidelity of images
 
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether <product> is appropriate to <general product use case>."
-        Decision criteria as a bulleted list.
-
-    Heading: none
-
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
-
-<!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the criteria discussion.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: describing the negative ("when not to use") at a high level.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Decision criteria"
-
-    Example:
-        "Decision criteria"
-         "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
 ## Decision criteria
-TODO: add your 3 lead-in sentences
 
-<!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
+| Criteria                | Analysis                                                     |
+| ----------------------- | ------------------------------------------------------------ |
+| Complex 3D models       | If you have 3D models that you want to view that are too large to view locally on your device, consider using Azure Remote Rendering. In these circumstances, by using Azure Remote Rendering, you can render the models remotely, and view them locally on your device. |
+| High fidelity of images | If you are working with complex 3D models which must have very high quality, you'll need a lot of processing power to achieve the required level of visual fidelity. Azure Remote Rendering can provide sufficient GPU power for your requirements. |
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for simple criteria where the analysis is brief and does not require a visual element.
+Note that in order to work with Azure Remote Rendering, you'll also need: 
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+- A HoloLens 2
+- A high bandwidth, low latency internet connection
 
-    Heading: none, this content will be the 'body' for the "Decision criteria" heading above.
-
-    Pattern:
-        No heading.
-        Place both the criteria and analysis into a table.
-
-    Example:
-        | | |
-        | --- | --- |
-        | **Criteria** | **Analysis**|
-        | **Integration** | The key question to ask when you're considering Logic Apps is "do I need to integrate services?".... |
-        | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically.... |
-        | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
-        | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
-        |   |   |
--->
-TODO: add your topic sentences(s)
-
-<!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
-
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for complex criteria where the analysis of each criterion needs both and a visual element.
-
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
-
-    Pattern:
-        For each criterion, repeat this pattern:
-            1. H3 of the criterion.
-            2. 1-3 paragraphs of discussion/analysis.
-            3. Visual like an image, table, list, code sample, or blockquote.
-            
-    Example:
-        H3: "Integration"
-        Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
-        Visual: <image preferred>
--->
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the example applications of the criteria.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which <product> won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Apply the criteria"
-
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
 ## Apply the criteria
-TODO: add your 3 lead-in sentences
 
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
+Consider using Azure Remote Rendering when you meet the following criteria:
 
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
+- You have very detailed, complex 3D content 
+- You require a high level of visual fidelity
 
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should <scenario subtask> use <product>?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
+### Example of when to use
 
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: <image preferred>
--->
+Imagine you're building an application for an automotive manufacturing company. The company is designing a new engine. They have a 3D model that represents the new engine, and they want to view it in their HoloLens 2. This will help them to get a full understanding of how the engine will fit together, and review any recent changes made. But the model is too large to view locally on the HoloLens 2, but the company's engineers still need a way to see it in 3D.
 
-### Should <scenario subtask> use <product>?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+In this situation, Azure Remote Rendering will help because the company has:
 
-### Should <scenario subtask> use <product>?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+- Complex 3D content requiring a high level of visual fidelity
+- A HoloLens 2
+- Access to a high bandwidth, low latency internet connection
 
-### Should <scenario subtask> use <product>?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### Example of when not to use
 
-<!-- 6. Guidance summary (optional) ------------------------------------------------
+Imagine you're building an application for the same automotive manufacturing company. The company wants to teach their engineers how to use specific manufacturing tools for the new engine. The 3D models of these tools are very basic and don’t require much visual detail. Because the models are not complex, you can render them locally on the device. 
 
-    Goal: Job-aid for future use to help customers evaluate their own tasks against the criteria.
+In this situation, Azure Remote Rendering is not helpful because the company has:
 
-    Pattern:
-        1. Heading "## Guidance summary"
-        2. Lead-in sentence acknowledging that this is a summary/repeat of previous material.
-        3. Visual like a flowchart (as an image) or rubric (as a table).
+- Simple 3D content that requires only a low level of visual fidelity
 
-    Example:
-        "The following flowchart summarizes the key questions to ask when you're considering using Logic Apps."
-        <flowchart image>
--->
+ 
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

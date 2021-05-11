@@ -10,63 +10,60 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: "What is decimation, and how does it impact viewing 3D content on unthethered devices?"
     choices:
-    - content: ""
+    - content: "Decimation compresses a model and removes textures. Decimated models aren't rendered with full detail."
+      isCorrect: false
+      explanation: "Incorrect. Decimation doesn't remove model textures."
+    - content: "Decimation improves the quality of a model for rendering on an untethered device."
+      isCorrect: false
+      explanation: "Incorrect. When a model is decimated, the rendering quality is diminished."
+    - content: "Decimation compresses a model and removes polygons. Decimated models aren't rendered with full detail."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. Decimation reduces the quality of a model. Therefore, when the model is rendered, it isn't rendered with full detail."
+  - content: "Which of the following features of Azure Remote Rendering enables a user to combine local and remotely rendered elements in a single, unified 3D model?"
     choices:
-    - content: ""
+    - content: "Remote rendering."
+      isCorrect: false
+      explanation: "Incorrect. Remote rendering enables devices to render complex, high-polygon count 3D models."
+    - content: "Familiar interactions."
+      isCorrect: false
+      explanation: "Incorrect. Enables you to interact with remote objects in the same way you do with local objects."
+    - content: "Hybrid rendering."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. Enables you to merge local and remotely rendered content."
+  - content: "An automotive engineer is working on a 3D model in HoloLens 2. The engineer notices that the rendering lacks the quality they observed last time the model was rendered. Which of the following rendering modes would offer the better rendering?"
     choices:
-    - content: ""
+    - content: "TileBasedComposition mode."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. The rendering quality of TileBasedComposition mode is slightly better than in DepthBasedComposition mode."
+    - content: "DepthBasedComposition mode"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. The rendering quality of DepthBasedComposition mode is slightly worse than in TileBasedComposition mode."
+  - content: "A customer is considering implementing Azure Remote Rendering. They mostly render 3D models of their products for training purposes. The models are not especially large or visually complex. Would Azure Remote Rendering be indicated for this client?"
     choices:
-    - content: ""
+    - content: "Yes, it's essential the client uses Azure Remote Rendering."
+      isCorrect: false
+      explanation: "Incorrect. The models are relatively simple and fairly small. Local rendering might be suitable."
+    - content: "No, the client should render their 3D models locally."
+      isCorrect: false
+      explanation: "Incorrect. We don't know what devices are available locally, nor whether local processing would be sufficient for the client's needs."
+    - content: "It depends on other factors. These include: availability of local processing; the type of local device used to view images; and availability of high bandwidth, low latency internet connectivity. "
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. You need more information to answer the question with certainty."
+  - content: "Which of the following is an advantage of Azure Remote Rendering?"
     choices:
-    - content: ""
+    - content: "Azure Remote Rendering reduces decimation when rendering complex 3D models."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. This is primary advantage of Azure Remote Rendering."
+    - content: "Azure Remote Rendering reduces visual fidelity to enable users to work with larger 3D models."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Azure Remote Rendering provides additional, high-end GPUs to handle the processing required to render complex models without reducing visual fidelity."
+    - content: "A user can change the server size after initiating a lease request if they require additional resource for rendering."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. You cannot change sizing after you initiate an Azure Remote Rendering lease request."

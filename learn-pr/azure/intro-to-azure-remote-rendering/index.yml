@@ -3,29 +3,32 @@ uid: learn.intro-to-azure-remote-rendering
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Remote Rendering
-  description: Learn how Azure Remote Rendering can xxx
+  description: Azure Remote Rendering enables you to render high-quality, interactive 3D content in the cloud. You can stream this content in real time to devices, such as the HoloLens 2.
   ms.date: 05/05/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Remote Rendering
-summary: Evaluate Azure Remote Rendering. Describe Azure Remote Rendering xxx.
+summary: Describe how Azure Remote Rendering can render images, encode them, and stream them to target devices. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
 abstract: |
   By the end of this module, you will be able to: 
-    - Evaluate whether Azure Remote Rendering is appropriate to xxx.
-    - Describe how Azure Remote Rendering <features> of xxxwork to <xxx solve problem>.
+    - Describe how Azure Remote Rendering, a cloud-hosted service, can render images, encode them, and stream them to target devices.
+    - Evaluate whether Azure Remote Rendering can help you complete complex rendering workloads.
 prerequisites: |
-  - Beginner-level familiarity xxx
-  - Foundational knowledge of xxx
+  - Experience working with image rendering
+  - Experience working with HoloLens
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
 roles:
-  - xxx
-  - xxx
+  - administrator
+  - developer
+  - solution-architect
 products:
   - azure
   - azure-remote-rendering
+  - windows-mixed-reality
+  - hololens
 units:  
 - learn.intro-to-azure-remote-rendering.1-introduction
 - learn.intro-to-azure-remote-rendering.2-what-is-azure-remote-rendering
