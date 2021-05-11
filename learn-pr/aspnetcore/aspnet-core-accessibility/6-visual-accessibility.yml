@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-accessibility.6-visual-accessibility
+metadata:
+  title: Understand common visual accessibility errors
+  description: Learn about issues that make web applications inaccessible for those with visual impairments.
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  
+title: Understand common visual accessibility errors
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-visual-accessibility.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "By default, what is the order in which screen reader and keyboard users can navigate the screen?"
+      choices:
+      - content: "From left to right on the screen."
+        isCorrect: false
+        explanation: "The order in which elements appear on the screen is not the default accessibility order."
+      - content: "From top to bottom."
+        isCorrect: false
+        explanation: "The order in which elements appear on the screen is not the default accessibility order."
+      - content: "The order they are listed in XAML or added to a layout."
+        isCorrect: true
+        explanation: "By default, the accessibility order of controls is the same as the order in which they are listed in XAML, or added to a layout."

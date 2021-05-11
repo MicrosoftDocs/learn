@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-accessibility.5-exercise-form-accessibility
+metadata:
+  title: Exercise - Fix issues with form accessibility
+  description: Exercise - Fix issues with form accessibility
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  zone_pivot_groups: vs-vsmac
+title: Exercise - Fix issues with form accessibility
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-form-accessibility.md)]
