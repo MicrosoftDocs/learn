@@ -37,7 +37,7 @@ Azure Cosmos DB includes several different models for accessing and managing dat
 
 ![NoSQL data models](./media/types-of-nosql-datastores.png)
 
-**Data models for NoSQL databases**
+### Data models for NoSQL databases
 
 | Model | Characteristics |
 | :-------- | :-------- |

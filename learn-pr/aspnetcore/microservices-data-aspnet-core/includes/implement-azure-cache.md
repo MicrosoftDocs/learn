@@ -48,13 +48,13 @@ In this unit, you will:
      > az redis show -g eshop-learn-rg -n eshop-learn-20210402214407415 --query provisioningState
     ```
 
-    As the message implies, the Azure Cache for Redis instance needs time to start. Running the provided command displays "Creating" until the resource is ready. When the resource is ready, it will display "Succeeded." You may continue with the following steps while provisioning finishes.
+    As the message indicates, the Azure Cache for Redis instance needs time to start. Running the provided command displays "Creating" until the resource is ready. When the resource is ready, it will display "Succeeded." You may continue with the following steps while provisioning finishes.
 
 1. Copy the connection string from the preceding command's output for use later.
 
-## Remove in-memory caching from basket service
+## Adding Azure Cache to Redis to the basket service
 
-By default, basket service uses in-memory caching. That will be replaced with Azure Cache for Redis. Complete the following steps to remove the in-memory caching:
+As implemented in the starter app, the basket service uses in-memory caching. That will be replaced with Azure Cache for Redis. Complete the following steps to remove the in-memory caching:
 
 In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*, apply the following changes:
 
@@ -82,7 +82,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
     });  
     ```
 
-    The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration. The actual connection string value gets passed dynamically by the `settings.ConnectionString`. And the connection to the Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. For more details, refer [Use Azure Cache for Redis with an ASP.NET Core web app](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto?tabs=core5x)
+    The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration. The actual connection string value gets passed dynamically by the `settings.ConnectionString`. The connection to the Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. For more details, refer [Use Azure Cache for Redis with an ASP.NET Core web app](/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto?tabs=core5x)
 
 ## Reconfigure the basket service
 

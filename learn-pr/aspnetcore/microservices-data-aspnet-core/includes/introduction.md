@@ -1,9 +1,11 @@
-In a microservices app, you need a database to support the business operations. You have two basic options:
+Imagine you're a software developer for an online retailer named *:::no-loc text="eShopOnContainers":::*. The retailer's online storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested your team migrate some data services functionality from your AKS cluster to managed services to reduce operational costs.
 
-1. Provision database servers yourself using virtual machines or database clusters for high availability.
-1. Configure a managed database service.
+This module guides you through implementing managed data services in a microservices app. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). After validating the app deployment using data services within the AKS cluster, you'll modify the app's basket service to use Azure Cache for Redis. Following that, you'll reconfigure the app's coupon service to use Azure Cosmos DB.
 
-The *:::no-loc text="eShopOnContainers":::* app uses in-cluster data services, deployed as containers/pods; however, that's a valid option just for a demo or development/test environment.
+You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-configuration-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
+
+> [!IMPORTANT]
+> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
 
 In this module, you will:
 
