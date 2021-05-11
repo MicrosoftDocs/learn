@@ -46,7 +46,7 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
 
 ### Location
 
-|  |  |
+| Property | Value |
 |---|---|
 | Latitude | 48.38 |
 | Longitude | -67.703 |
@@ -54,7 +54,7 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
 
 ### Map Layout
 
-|  |  |
+| Property | Value |
 |---|---|
 | Map Shape | Cylinder |
 | Local Map Radius | 1 |

@@ -24,7 +24,7 @@ quiz:
           isCorrect: true
           explanation: "Static and dynamic terrain are commonly used to provide context for Mixed Reality experiences.  Both data sources are useful to help create an immersive environment and bring realism to Digital Twins.  Although some Digital Twin experiences are best developed focusing only on specific Digital Twin assets (e.g., equipment in a manufacturing facility), others are better supported by ancillary data such as static and dynamic terrain. "
         - content: "Astral and decentral"
-          isCorrect: true
+          isCorrect: false
           explanation: "Astral is connected with, or resembling the stars.  Although this data could provide some context for a Mixed Reality experience, it is not commonly used.  Decentral means non-central and has little relationship to terrain used in Unity."
     - content: "What are the primary configuration parameters associated with the Map Renderer (Script) component?"
       choices:
