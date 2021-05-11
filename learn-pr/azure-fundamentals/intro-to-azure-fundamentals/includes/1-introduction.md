@@ -6,7 +6,7 @@ In this module, you'll take an entry-level, end-to-end look at Azure and its cap
 
 ## What is Azure fundamentals?
 
-Azure fundamentals is a series of six learning paths that helps orient you to Azure and its many services and features.
+Azure fundamentals is a series of six learning paths that familiarize you to Azure and its many services and features.
 
 Whether you're interested in Azure's core compute, network, storage, and database services, learning about cloud security best practices, or exploring the cutting edge in IoT and machine learning, think of Azure fundamentals as your curated guide to Azure.
 
@@ -20,21 +20,70 @@ Whether you're just beginning to work with the cloud or you already have cloud e
 
 No matter your goals, Azure fundamentals has something for you. Take Azure fundamentals if you:
 
-* Have general interest in Azure or in the cloud.
-* Want to earn official certification from Microsoft.
+ -  Have general interest in Azure or in the cloud.
+ -  Want to earn official certification from Microsoft.
 
 **Preparation for Exam AZ-900**
 
 The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true). This exam includes six knowledge domain areas:
 
-| AZ-900 Domain Area | Weight |
-| - | - |
-| Describe cloud concepts | 20-25% |
-| Describe core Azure services | 15-20% |
-| Describe core solutions and management tools on Azure | 10-15% |
-| Describe general security and network security features | 10-15% |
-| Describe identity, governance, privacy, and compliance features | 20-25% |
-| Describe Azure cost management and Service Level Agreements | 10-15% |
+:::row:::
+  :::column:::
+    **AZ-900 Domain Area**
+  :::column-end:::
+  :::column:::
+    **Weight**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe cloud concepts
+  :::column-end:::
+  :::column:::
+    20-25%
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe core Azure services
+  :::column-end:::
+  :::column:::
+    15-20%
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe core solutions and management tools on Azure
+  :::column-end:::
+  :::column:::
+    10-15%
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe general security and network security features
+  :::column-end:::
+  :::column:::
+    10-15%
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe identity, governance, privacy, and compliance features
+  :::column-end:::
+  :::column:::
+    20-25%
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Describe Azure cost management and Service Level Agreements
+  :::column-end:::
+  :::column:::
+    10-15%
+  :::column-end:::
+:::row-end:::
+
 
 Each domain area maps to a learning path in Azure fundamentals.
 
@@ -46,11 +95,11 @@ This training helps you develop a broad understanding of Azure. Having real-worl
 
 After completing this module, you'll be able to:
 
-- Describe the basic concepts of cloud computing.
-- Determine whether Azure is the right solution for your business needs.
-- Differentiate between the different methods of creating an Azure subscription.
+ -  Describe the basic concepts of cloud computing.
+ -  Determine whether Azure is the right solution for your business needs.
+ -  Differentiate between the different methods of creating an Azure subscription.
 
 ## Prerequisites
 
-- You should be familiar with basic computing concepts and terminology.
-- Familiarity with cloud computing is helpful but isn't necessary.
+ -  You should be familiar with basic computing concepts and terminology.
+ -  Familiarity with cloud computing is helpful but isn't necessary.
