@@ -7,12 +7,12 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
 ## Get app credentials
 
 1. Open **DeviceSimulator.sln** in Visual Studio and configure the DeviceSimulator with the Host name for the ADT resource type created by the ARM template
-- Open the **Azure_config_settings.txt** text file that you created in the last exercise containing the key Azure ADT configuration parameters, using a text editor.  Alternatively, if your PowerShell session remains active, look for the output from your **get-content** command.
-- From the **Azure_config_settings.txt** file or from the output of your **get-content** command in PowerShell, locate the key/value pair for the **adtHostName** key and copy the value.  It should look something similar to ```https://myprojadtxxxxxxxxxx.api.eus.digitaltwins.azure.net```
+2. Open the **Azure_config_settings.txt** text file that you created in the last exercise containing the key Azure ADT configuration parameters, using a text editor.  Alternatively, if your PowerShell session remains active, look for the output from your **get-content** command.
+3. From the **Azure_config_settings.txt** file or from the output of your **get-content** command in PowerShell, locate the key/value pair for the **adtHostName** key and copy the value.  It should look something similar to ```https://myprojadtxxxxxxxxxx.api.eus.digitaltwins.azure.net```
 
 :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::
 
-3. In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor by double-clicking the file from the Solution Explorer pane, typically found on the right-hand side of the application screen.  Paste the value for your **adtHostName** key/pair copied from Step 2 above into the **adtInstanceUrl** string variable.  
+4. In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor by double-clicking the file from the Solution Explorer pane, typically found on the right-hand side of the application screen.  Paste the value for your **adtHostName** key/pair copied from Step 2 above into the **adtInstanceUrl** string variable.  
 
 :::image type="content" source="../media/host-name-cs.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and host name and instance url values added.":::
 
@@ -28,9 +28,12 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
 
 1. Open the **AppCredentials.txt** text file that you created in the previous exercise.  
 2. In your Visual Studio **DeviceSimulator** solution, open the **PropUpdater.cs** file in the editor.  Copy and paste the Globally Unique IDs (GUIDs) from your text file to the .cs file based on the following mappings from the .cs variables to the JSON data output in your text file:
-i. clientId →   appId
-ii. clientSecret → password
-iii. tenantId →   tenant
+
+| AppCredentials.txt | PropUpdater.cs |
+|---|---|
+| appId | clientId |
+| password | clientSecret |
+| tenant | tenantId |
 
 :::image type="content" source="../media/prop-updater.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The prop updater dot cs file is open and client id, client secret, and tenant id values are added but blurred out.":::
 

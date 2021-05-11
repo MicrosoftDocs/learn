@@ -2,14 +2,17 @@ Under real-world conditions, wind farm operations aren't continuous.  At times, 
 
 To make requests to the REST API, you first need to authenticate. In the context of this learning module, you'll authenticate using app credentials, corresponding to an **App Registration**. These credentials represent an app, and not an individual, and need to be copied into the Unity Project.  When the app is built for HoloLens 2, these credentials are compiled directly into the app.  This approach to authentication isn't recommended for production systems because it doesn't require the user to log in. As such, it doesn't prevent unauthorized user access.  You will be using this approach for simplicity’s sake in this learning module.
 
-The ARM template, among other things, creates the required **App Registration**. As part of the output, you created the **AppCredentials.txt** file that contains many important variables needed to configure the Unity **ScriptableObjects**, based on the following variable mappings:
+The ARM template, among other things, creates the required **App Registration**. As part of the output, you created the **AppCredentials.txt** and **Azure_config_settings.txt** text files that contain a number of important variables needed to configure the Unity **Scriptable Objects**. Use these variable mappings to enter the values into Unity:
 
-| Unity | AppCredentials.txt |
+| Azure_config_settings.txt | Unity |
 |---|---|
-| Adt Instance URL | name |
-| Client Id | appId |
-| Client Secret | password |
-| Tenant Id | tenant |
+| adtHostName | Adt Instance URL |
+
+| AppCredentials.txt | Unity |
+|---|---|
+| appId | Client Id |
+| password | Client Secret |
+| tenant | Tenant Id |
 
 These credentials and URL need to be transferred to your Unity project, so that your app can authenticate and interact with ADT.  Specifically, you need to assign these values to a **ScriptableObject** in the project and then reference that **ScriptableObject** from a specific **GameObject** in the Scene.
 

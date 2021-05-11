@@ -3,6 +3,6 @@ Visualizing assets in an immersive setting permits users to experience the right
 - Visualize operating conditions
 - Identify anomalies in performance or equipment health / integrity
 - Determine trends and patterns in data over time
-- Simulate future conditions or operations situations. 
+- Simulate future conditions or operations situations
 
-In this unit, you'll connect your wind turbines to a stream of ADT data for visualization and interaction on the HoloLens 2.  This is the true power of the Digital Twin.
+In this unit, you'll connect your wind turbines to a stream of Azure Digital Twins (ADT) data for visualization and interaction on the HoloLens 2.  This is the true power of the Digital Twins service.

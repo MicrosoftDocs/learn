@@ -14,6 +14,7 @@ Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm, send
 > Remember to stop the simulator whenever it is not needed to avoid unnecessary charges on your Azure account.
 
 ## Begin the wind farm device simulation
+
 1. In the Visual Studio IDE, open the previously configured **DeviceSimulator.sln**
 2. Run the **DeviceSimulator** by pressing the **Play** button or **F5**
 3. Press any key to begin the simulation.  
@@ -53,7 +54,7 @@ For this exercise, it's assumed that an action will be taken offline to solve th
 
 ## Clear the Alert for turbine T102
 
-1. Click the **Send Reset** Command button.  This sends a message to ADT to set the **Alert** property to **False** for the Digital Twin for turbine T102.
+Click the **Send Reset** Command button.  This sends a message to ADT to set the **Alert** property to **False** for the Digital Twin for turbine T102.
 
 ## Validate the Alert update for turbine T102
 
@@ -67,7 +68,7 @@ For this exercise, it's assumed that an action will be taken offline to solve th
 
 ## Stop the DeviceSimulator
 
-1. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
+Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
 
 ## Exit the app
 

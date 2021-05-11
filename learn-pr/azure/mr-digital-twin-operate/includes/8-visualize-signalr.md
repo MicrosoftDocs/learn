@@ -11,7 +11,7 @@ Use the Visual Studio **s** solution to simulate an operating wind farm.  Send t
 
 :::image type="content" source="../media/device-simulator.png" alt-text="Screenshot of the command window open and running the device simulator solution. Turbine IDs and connectivity messages are displayed.":::
 
-4. 4.	Press any key to begin the simulation.  If configured properly and connected to the correct Azure services, you will see a series of streaming console messages **Message Received**, indicating that the ADT services have acknowledged the receipt of the simulated IoT data.
+4. Press any key to begin the simulation.  If configured properly and connected to the correct Azure services, you will see a series of streaming console messages **Message Received**, indicating that the ADT services have acknowledged the receipt of the simulated IoT data.
 
 :::image type="content" source="../media/device-simulator-2.png" alt-text="Screenshot of the command window open and running the device simulator solution. Console messages are displayed from the simulated IoT data.":::
 
