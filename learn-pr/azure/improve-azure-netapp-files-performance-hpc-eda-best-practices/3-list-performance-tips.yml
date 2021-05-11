@@ -4,7 +4,7 @@ title: List performance tips
 metadata:
   unitType: learning-content
   title: List performance tips 
-  description: Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize 
+  description: Discuss the performance impact of mount options like actimeo/nocto, sysctl, nconnect, NFS version, and rsize/wsize. 
   ms.date: 3/23/2021 
   author: mengruts 
   ms.author: mengtsai 

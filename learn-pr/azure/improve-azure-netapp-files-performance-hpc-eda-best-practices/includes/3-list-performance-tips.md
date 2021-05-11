@@ -1,35 +1,36 @@
-We'll list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
+In this module, we'll discuss performance tips like mount options and client VM configurations for running HPC or EDA applications on Azure NetApp Files.
 
 >[!NOTE]
->NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practices before deploying in production.
+>Best practices for NFS clients depend on the applications being used. The following suggestions are not absolute and can be overridden by application recommendations or by workload testing. We highly recommend that you test those practices before deploying in production.
 
-## Use mount options "actimeo & nocto" to improve performance in relatively static datasets and massive read scenarios
+## Use actimeo and nocto mount options to improve performance
 
-The actimeo mount option controls the NFS client caches attributes of a directory. If not specified, the NFS client uses a 60-sec maximum.
+You can use the following mount options to improve performance in relatively static datasets and massive read scenarios:
 
-Nocto stands for “no close-to-open,” which means a file can close before a write has completed to save time. By default, nocto is not set, which means all files will wait to finish writes before allowing a close.
+- `actimeo`: Controls the NFS client cache attributes of a directory. If you don't specify it, the NFS client uses a 60-second maximum.
+- `nocto`: Stands for "no close-to-open," which means a file can close before a write has finished to save time. By default, `nocto` is not set. That means all files will wait to finish writes before allowing a close.
 
-Most HPC applications, including EDA in our scenario, have relatively static data sets. In that case, nocto and actimeo can be used to reduce getattr/access operations to storage and speed up the application.
+Most HPC applications, including EDA in our scenario, have relatively static datasets. In that case, you can use `nocto` and `actimeo` to reduce `getattr` or access operations to storage and speed up the application.
 
-For example, setting "nocto,actimeo=600" is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there's no cache coherency to maintain and it will eliminate metadata calls and improve the overall performance.
+For example, we recommend setting `"nocto,actimeo=600"` for EDA tools and library volumes. Because those files aren't changing, there's no cache coherency to maintain. Setting those mount options will eliminate metadata calls and improve overall performance.
 
 ## Tune system parameters for optimal performance
 
-Run below commands to apply basic server tuning and typical latency tuning for your client VMs:
+Run the following commands to apply basic server tuning and typical latency tuning for your client VMs:
 
 ```bash
 sudo systemctl enable --now tuned
 sudo tuned-adm profile latency-performance
 ```
 
-Some or all of the following system parameters (/etc/sysctl.conf) may be helpful on Linux Client VMs for optimal performance. If you have client VMs with huge amounts of RAM, or higher networking bandwidth like InfiniBand, you may want to set some values even higher than what is listed below.
+Some or all of the following system parameters (*/etc/sysctl.conf*) might be helpful on Linux client VMs for optimal performance. If you have client VMs with huge amounts of RAM, or higher network bandwidth like InfiniBand, you might want to set some values even higher than the following example shows.
 
 ```bash
 #
-# Recommended client tunes 
+# Recommended client tuning 
 #
-# For more information, see sysctl.conf(5) and sysctl.d(5).
-# Network parameters. In unit of bytes
+# For more information, see sysctl.conf(5) and sysctl.d(5)
+# Network parameters, in units of bytes
 net.core.wmem_max = 16777216
 net.core.wmem_default = 1048576
 net.core.rmem_max = 16777216
@@ -39,12 +40,12 @@ net.ipv4.tcp_wmem = 1048576 8388608 16777216
 net.core.optmem_max = 2048000
 net.core.somaxconn = 65535
 #
-# These settings are in 4 KiB size chunks, in bytes they are:
+# These settings are in 4-KiB chunks, in bytes:
 # Min = 16MiB, Def=350MiB, Max=16GiB
-# In unit of 4k pages
+# In units of 4K pages
 net.ipv4.tcp_mem = 4096 89600 4194304
 #
-# Misc network options and flags
+# Miscellaneous network options and flags
 #
 net.ipv4.tcp_window_scaling = 1
 net.ipv4.tcp_timestamps = 0
@@ -56,7 +57,7 @@ net.ipv4.ip_local_port_range = 1024 65000
 net.ipv4.tcp_slow_start_after_idle = 0
 net.core.netdev_max_backlog = 300000
 #
-# Various filesystem / pagecache options
+# Various file system and page cache options
 #
 vm.dirty_expire_centisecs = 100
 vm.dirty_writeback_centisecs = 100
@@ -70,51 +71,57 @@ net.ipv4.tcp_dsack = 0
 net.ipv4.tcp_fack = 0
 ```
 
-To make these tunings persistent:
+To make these tunings persistent, run:
 
 ```bash
 sudo sysctl -P
 ```
 
-## Use mount options nconnect to expand network connections when applicable
+## Use the nconnect mount option to expand network connections when applicable
 
-The nconnect NFS mount option has entered General Availability in the Linux kernel 5.3 or above. To check your Client VM's Linux kernel:
+The `nconnect` NFS mount option has entered general availability in the Linux kernel 5.3 or later. To check your client VM's Linux kernel, run:
 
 ```bash
 uname -r
 ```
 
-The purpose of nconnect is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value nconnect can help to boost performance as it could potentially utilize all possible network bandwidth. And its value gradually diminishes when # of clients increases, as there's only certain amount of bandwidth in total to go around.
+The purpose of `nconnect` is to provide multiple transport connections per TCP connection or mount points on a client. This technique helps increase parallelism and performance for NFS mounts. 
 
-Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you're using nconnect=8 or 16.
+The lower the number of clients, the more value `nconnect` provides in  helping to boost performance, because it can potentially utilize all network bandwidth. And its value gradually diminishes when the number of clients increases, because there's only certain amount of bandwidth in total to go around.
 
-However, please note that nconnect is only available for Linux kernel 5.3+ VMs, and you might need to reboot the VM when upgrading the kernel. Which means it might not be applicable for some cases.
+Consider setting `sunrpc.tpc_max_slot_table_entries=256` or `512` if you're using `nconnect=8` or `16`.
 
-## Use NFSv3 instead of NFSv4.1 when consider only performance
+> [!NOTE]
+> The `nconnect` option is available only for Linux kernel 5.3+ VMs. You might need to restart the VM when you're upgrading the kernel. That means it might not be applicable for some cases.
 
-NFSv3 and NFSv4.1 are both supported by Azure NetApp Files. You should validate what version your application requires and create your volume using the appropriate version.
+## Use NFSv3 instead of NFSv4.1 when you're considering only performance
 
-When considering only performance, NFSv3 will perform better than NFSv4.1 in most of the HPC/EDA applications.  
+Azure NetApp Files supports both NFSv3 and NFSv4.1. You should validate what version your application requires and create your volume by using the appropriate version.
 
-## Choose proper size of mount options "rsize and wsize"
+When you're considering only performance, remember that NFSv3 will perform better than NFSv4.1 in most of the HPC and EDA applications.  
 
-The mount options wsize and rsize determine how much data is sent between the NFS client and server for each packet sent. This may help optimize performance for specific applications, as what is best for one application may not be best for other applications.
+## Choose the proper size of the rsize and wsize mount options
 
-The best practice for Azure NetApp Files is to set rsize and wsize the same value. And it's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options.
+The mount options `rsize` and `wsize` determine how much data is sent between the NFS client and server for each packet sent. This might help optimize performance for specific applications, because what's best for one application might not be best for other applications.
 
-## Choose proper settings of mount options "hard/soft" & "intr/nointr"
+The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. And we generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options.
 
-The "hard" or "soft" mount options specify whether the program using a file using NFS should stop and wait (hard) for the server to come back online if the NFS server is unavailable or if it should report an error (soft). The "intr" allows NFS processes to be interrupted when a mount is specified as a hard mount.
+## Choose proper settings for the hard, soft, and intr mount options
 
-We recommend using "intr" with "hard" mounts whenever applicable.
+The `hard` and `soft` mount options specify whether the program that's using a file that uses NFS should take one of the following actions:
 
-## Consider no change of MTU (jumbo frames) number
+- Stop and wait (`hard`) for the server to come back online if the NFS server is unavailable.
+- Report an error (`soft`). 
 
-The default MTU for Azure VMs is 1,500 bytes. And we don't encourage customers to increase VM MTUs.
+The `intr` mount option allows NFS processes to be interrupted when a mount is specified as a `hard` mount. We recommend using `intr` with `hard` mounts when applicable.
+
+## Consider no change of MTUs
+
+The default maximum transmission units (MTUs) for Azure VMs is 1,500 bytes. We don't encourage customers to increase VM MTUs for jumbo frames.
 
 ## Mount example
 
-Below an example to mount an Azure NetApp Files volume using actimeo & nocto, NFSv3, nconnect, rsize & size, hard & intr, tcp, and with default MTU (1,500).
+The following example code would mount an Azure NetApp Files volume by using the preceding best practices for `actimeo`, `nocto`, `NFSv3`, `nconnect`, `rsize`, `wsize`, `hard`, `intr`, `tcp`, and default MTUs (1,500):
 
 ```bash
 sudo mount -t nfs -o rw,nconnect=16,nocto,actimeo=600,hard,intr,rsize=262144,wsize=262144,vers=3,tcp 10.1.x.x:/ultravol ultravol
