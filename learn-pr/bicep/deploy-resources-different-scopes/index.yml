@@ -45,6 +45,7 @@ units:
 - learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
 - learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes
 - learn.azure.deploy-resources-different-scopes.exercise-deploy-multiple-scopes-modules
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-management-groups
 - learn.azure.deploy-resources-different-scopes.knowledge-check
 - learn.azure.deploy-resources-different-scopes.summary
 badge:
