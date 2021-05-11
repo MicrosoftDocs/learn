@@ -1,4 +1,4 @@
-So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environments. You now need to deploy multiple SQL servers so that you can have one in each region your company is launching its new smart teddy bear. In this exercise you will extend the Bicep code you previously created to deploy instances of your databases in multiple Azure regions.
+So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environment. You now need to deploy multiple SQL servers so that you can have one in each region your company is launching its new smart teddy bear into. In this exercise you'll extend the Bicep code you previously created to deploy instances of your databases in multiple Azure regions.
 
 During the process, you'll:
 
@@ -20,7 +20,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Deploy multiple instances using a copy loop
 
-1. Create a new *main.bicep* file to replace the one you just renamed.
+1. Create a new *main.bicep* file to replace the one you just moved and renamed.
 
 1. Open the new *main.bicep* file and add the following parameters:
 
@@ -42,7 +42,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ::: zone pivot="cli"
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -52,7 +52,7 @@ az deployment group create --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -60,7 +60,10 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ::: zone-end
 
-You'll see `Running...` in the terminal. As you didn't specify any parameter value, the default value for the `locations` parameter will be used. Wait for deployment to finish.
+> [!CAUTION]
+> Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
+
+You'll see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 
@@ -78,7 +81,7 @@ After deployment is finished, you want to verify that new SQL server and databas
 
 ## Update and redeploy the template to Azure with additional location for Azure SQL Servers
 
-You deployed Azure SQL Server in two initial locations. Now you have requirement to deploy additional Azure SQL Server in the East Asia region. You need to update your template and redeploy it.
+The team launching the new teddy bear has told you they are about to launch again - this time into Asia. They've asked for a new database server and database in the East Asia region. You need to update your Bicep parameter and redeploy your template.
 
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value into the `locations` array:
 
@@ -104,14 +107,17 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ::: zone-end
 
-Wait for the deployment to finish.
+> [!CAUTION]
+> Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
+
+You'll see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the redeployment
 
-With redeployment of updated Bicep template finished you want to verify that additional SQL server and database were created in East Asia.
+Now that you've redeployed the resources, you want to verify that the additional SQL server and database resources have been created in East Asia.
 
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select **<rgn>[sandbox resource group name]</rgn>** Resource Group. If required, click refresh in Resource Group menu to see newly deployed resources.
+1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select the **<rgn>[sandbox resource group name]</rgn>** resource group. If required, select **Refresh** to see the newly deployed resources.
 
-1. Verify the new SQL server and database are deployed in East Asia.
+1. Verify the new SQL server and database have been deployed in East Asia.
 
     :::image type="content" source="../media/5-loop-redeployment.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL servers in additional location." border="true":::

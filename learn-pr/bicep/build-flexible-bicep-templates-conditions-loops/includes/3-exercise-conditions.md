@@ -117,15 +117,15 @@ You'll use the Azure portal to look at the resources that you deploy, and to ins
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded. You can see that SQL server and SQL database are deployed, but the storage account for auditing was not deployed. Note that the storage account with a name beginning with 'cloudshell' is not related to your deployment and was created by the Learn sandbox.
+1. In **Overview**, you can see that one deployment succeeded. You can see that a SQL server and SQL database are deployed, but the storage account for auditing was not deployed. Note that the storage account with a name beginning with `cloudshell` is not related to your deployment and was created by the Learn sandbox.
 
-    :::image type="content" source="../media/3-development-deployment.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
+    :::image type="content" source="../media/3-development-deployment.png" alt-text="Screenshot of the Azure portal interface showing the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
     :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **database** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one SQL server and one SQL database deployed. Notice that the storage account and auditing settings aren't on the list of resources.
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one SQL server and one SQL database deployed. Notice that the storage account and auditing settings aren't on the list of resources.
 
     :::image type="content" source="../media/3-development-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with SQL server and database resource listed." border="true":::
 
@@ -133,13 +133,13 @@ You'll use the Azure portal to look at the resources that you deploy, and to ins
 
 ## Redeploy for the production environment
 
-In the previous deployment the default value for the `environmentName` parameter was used. Now you will explicitly set it to `Production`. You expect that by modifying parameter value to 'Production' storage account for auditing purposes will be deployed. Also SQL Server should be configured with auditing enabled.
+In the previous deployment, the default value for the `environmentName` parameter was used, which meant it was set to `Development`. Now you will explicitly set the parameter value to `Production`. You expect that by modifying the parameter value to `Production`, the storage account for auditing purposes will be deployed, and auditing will be enabled on the SQL server.
 
-### Deploy the template with specified environment parameter value
+### Deploy the template for the production environment
 
 ::: zone pivot="cli"
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure:
 
 ```azurecli
 az deployment group create --template-file main.bicep --parameters environmentName=Production location=westeurope
@@ -149,7 +149,7 @@ az deployment group create --template-file main.bicep --parameters environmentNa
 
 ::: zone pivot="powershell"
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal:
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production location=westeurope
@@ -157,11 +157,14 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Producti
 
 ::: zone-end
 
-You'll see `Running...` in the terminal. After minute or two you should get successful deployment result.
+> [!CAUTION]
+> Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
 
-### Check your deployment
+You'll see `Running...` in the terminal. After minute or two you should get a successful deployment result.
 
-1. Return to the Azure portal. Go to your resource group. You'll see that additional storage account for auditing purposes has been deployed.
+### Verify the redeployment
+
+1. Return to the Azure portal. Go to your resource group. Select **Refresh** if you already have it open. You'll see that an additional storage account for auditing purposes has been deployed.
 
     :::image type="content" source="../media/3-production-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the additional storage account for auditing deployed." border="true":::
 
