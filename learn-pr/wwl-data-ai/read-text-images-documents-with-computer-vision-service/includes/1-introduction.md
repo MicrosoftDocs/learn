@@ -6,7 +6,7 @@ Using AI services, we can treat this project as a computer vision scenario and a
 
 To build an automated AI solution, you need machine learning models trained to cover each use case. Azure's Computer Vision service gives access to advanced algorithms for processing images and returning information to secure data storage. 
 
-In this module, you'll learn how to:
+In this module, you'll learn how to: 
 
 - Identify how the Computer Vision service enables you to read text from images with the OCR API and Read API
 - Use the Computer Vision service with SDKs and the REST API

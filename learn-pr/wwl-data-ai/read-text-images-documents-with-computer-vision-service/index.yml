@@ -24,7 +24,7 @@ iconUrl: http://via.placeholder.com/120x120
 levels:
 - intermediate
 roles:
-- other
+- ai-engineer
 products:
 - azure
 - azure-cognitive-services
