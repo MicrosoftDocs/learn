@@ -68,7 +68,7 @@ Understand the application demands by measuring the performance requirements dur
 
 You can improve the performance of the application if you choose multiple disks and stripe them together to get a combined higher IOPS and throughput limit. You can implement striping on Windows by using the Storage Spaces functionality, and on Linux by using Multiple Disk and Device Management (MDADM).
 
-You can modify the stripe size based on the application type and reuirements. A smaller stripe size provides better performance for applications that use random small I/O patterns. Use a larger stripe size for a sequential large I/O pattern, which is commonly used in data warehouse applications.
+You can modify the stripe size based on the application type and requirements. A smaller stripe size provides better performance for applications that use random small I/O patterns. Use a larger stripe size for a sequential large I/O pattern, which is commonly used in data warehouse applications.
 
 ### Multi-threading
 
@@ -83,9 +83,9 @@ The number of pending I/O requests in the system, known as queue depth, affects 
 
 For some workloads, a high disk queue depth is acceptable, but for others it should remain very low at all times. For example, a high disk queue requests more operations on the disk and applications that support multi-threading can achieve higher IOPS.
 
-Azure queues I/O requests when reads or writes are requested faster than the disk can process them. When I/O requests are queued, the total amount of time it takes to read or write data to the disk will be greater. For example, if your application writes 300 IOPS and the disk is capable of accepting 500+ IOPS, then the queue depth does not occur.  However, if your application sends I/Os that are greater than the disk's IOPS limit, Azure will use the queue depth. 
+Azure queues I/O requests when reads or writes are requested faster than the disk can process them. When I/O requests are queued, the total amount of time it takes to read or write data to the disk will be greater. For example, if your application writes 300 IOPS and the disk is capable of accepting 500+ IOPS, then the queue depth does not occur.  However, if your application sends I/O requests that are greater than the disk's IOPS limit, Azure will use the queue depth.
 
-Most applications do not allow you to change the queue depth because incorrect tuning of the queue depth can degrade the perfromance of the application. Applications that provide settings to tune the queue depth also allow you to configure their multi-threading. For example, the MAXDOP (maximum degree of parallelism) setting in SQL Server specifies how many cores to use for running the query.
+Most applications do not allow you to change the queue depth because incorrect tuning of the queue depth can degrade the performance of the application. Applications that provide settings to tune the queue depth also allow you to configure their multi-threading. For example, the MAXDOP (maximum degree of parallelism) setting in SQL Server specifies how many cores to use for running the query.
 
 ## Azure disk bursting
 

@@ -24,7 +24,7 @@ For example, suppose that your application makes a request that requires 15 000 
 
 :::image type="content" source="../media/03-vm-io-capping.PNG" alt-text="Diagram_for_VM-IO-capping." border="true":::
 
-The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot accomodate these requirements.
+The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot accommodate these requirements.
 
 You can diagnose the performance issues due to VM IO capping by using the following metrics:
 
@@ -81,7 +81,7 @@ Now that you understand how caching can improve the performance for reading or w
 
 The performance of the VM, depends on the IOPS and throughput limits that are imposed based on the size of the VM. All VMs in the premium tier have different limits for IOPS and throughput based on cached and uncached configurations. You can improve the performance of the VM to meet the higher demand for IOPS and throughput by enabling VM host caching.
 
-The following table lists examples that illustrate the difference in performance for cached and uncached disk throughput and bandwith:
+The following table lists examples that illustrate the difference in performance for cached and uncached disk throughput and bandwidth:
 
 | VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in GiB) | Max uncached disk throughput IOPS/MBps |
 | --- | --- | --- |
@@ -90,6 +90,6 @@ The following table lists examples that illustrate the difference in performance
 | Standard_D8s_v3 | 16000/128 (200) | 12800/192 |
 | Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 |
 
-Host caching can help you avoid VM bottlneck scenarios.
+Host caching can help you avoid VM bottleneck scenarios.
 In the earlier example of VM IO capping, the application required 15000 IOPS. Both data disks can handle that demand, but the Standard_D8s_v3 VM can only offer 12800 IOPS in the uncached state.
 If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS, which is more than what the application demands.

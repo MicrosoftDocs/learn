@@ -61,14 +61,14 @@ If you need higher performance than what standard disks provide or if you can't 
 Azure Premium SSD disks support disk bursting, which offers higher IOPS and throughput performance than the actual performance tier of the selected disk. For P20 disks and smaller, bursting is enabled by default with no additional costs.
 
 >[!Note]
->You will learn more about the Azure disk bursting functinality in the "Select a disk type for your workload" unit.
+>You will learn more about the Azure disk bursting functionality in the "Select a disk type for your workload" unit.
 
 You can convert a disk to a Premium SSD at any time if the disk performance does not meet your requirements.
 
 You can purchase Premium SSDs with Azure disk reservation by committing to a one-year capacity that offers reduced cost for disk SKU.
 
 >[!Note]
-> Reservation discounts are currently available for disks larger than P30 and is applyed only for the disk SKU. Disk snapshots are charged at pay-as-you-go rates.
+> Reservation discounts are currently available for disks larger than P30 and are applied only for the disk SKU. Disk snapshots are charged at pay-as-you-go rates.
 
 ## Standard SSD
 
@@ -104,10 +104,10 @@ Use standard HDDs when you want to minimize costs for less critical workloads an
 
 Use the following consideration to estimate the price for Azure managed disks.
 
-- **Disk Size.** The cost for the managed disk is the price that you pay for the provisioned size on a per hour basis. For example, if you provision 1 TiB (1024 GiB) Standard SSD disk, but you occupy 100 GiB, and you are using the disk for 1 month, you will have to pay for the monthly value for E30 offering.
-- **Snapshots** : The snapshots are billed based on used capacity.
+- **Disk Size**. The cost for the managed disk is the price that you pay for the provisioned size on a per hour basis. For example, if you provision 1 TiB (1024 GiB) Standard SSD disk, but you occupy 100 GiB, and you are using the disk for 1 month, you will have to pay for the monthly value for E30 offering.
+- **Snapshots**. The snapshots are billed based on used capacity.
 - **Outbound data transfers**. Transfer of the data within the same zone is free of charge, between zones, is charged per GB, and additional cost is generated between different regions.
-- **Transactions**. For Standard SSD disks, they are billed based on the number of I/O operations that are less than or equal to 256 KiB of throughput. For Standard HDD disks, each IO operation is consider as a transaction, regardless of the throughput.
+- **Transactions**. For Standard SSD disks, they are billed based on the number of I/O operations that are less than or equal to 256 KiB of throughput. For Standard HDD disks, each I/O operation is considered as a transaction, regardless of the throughput.
 
 Note: Premium SSD and Ultra Disks are not charged based on transactions.
 
