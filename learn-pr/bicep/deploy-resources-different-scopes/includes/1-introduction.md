@@ -28,9 +28,14 @@ By the end of this module, you'll be able to create Bicep templates that deploy 
 - Understanding of child and extension resources.
 - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
+> [!NOTE]
+> In this module, you'll build on your knowledge of extension resources. If you need a refresher, see **Deploy child and extension resources by using Bicep**.
+
+<!-- TODO add link once that module is published -->
+
 To follow along with the exercises in the module, you'll need:
 
-- An Azure account, with the ability to create subscription-level resources.
+- An Azure account, with the ability to create subscription-level resources. For one exercise, you'll need to be able to create management groups and policies, but this is an optional exercise.
 - [Visual Studio Code](https://code.visualstudio.com) installed locally.
 - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
 - Either:
