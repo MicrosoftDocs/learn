@@ -5929,6 +5929,21 @@
         "source_path": "learn-pr/advocates/interactive-deep-learning/index.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/4-exercise-interactive-mode.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/5-exercise-setup-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/6-exercise-write-execute-first-script.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
     }
   ]
 }
