@@ -4,7 +4,7 @@ In this exercise, you'll prepare your lab environment for the implementation of 
 1. Enable required preview features in the Azure subscription.
 1. Install required Azure CLI extensions.
 
-This is the first exercise in this module's sequence of exercises. These exercises guide you through the process of implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
+This exercise is the first in this module's sequence of exercises. They guide you through the process of implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
@@ -13,7 +13,7 @@ This is the first exercise in this module's sequence of exercises. These exercis
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
-:::image type="content" source="../media/u2-exercise1.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the first exercise (Prepare the lab environment)." border="false":::
+:::image type="content" source="../media/u2-exercise1.png" alt-text="Depiction of this module's exercise sequence with additional substeps illustrated for the first exercise (Prepare the lab environment)." border="false":::
 
 ## Task 1: Install the prerequisite software tools
 
@@ -71,9 +71,9 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
 
 ## Task 3: Install required Azure CLI extensions
 
-Some of this module's implementation tasks depend on Azure CLI extensions. Extensions are Python components referred to as *wheels*. They are files with the **.whl** extension. Extensions implement Azure CLI commands that deliver experimental and prerelease features. You can download them from the GitHub repository dedicated to development of these features.
+Some of this module's implementation tasks depend on Azure CLI extensions. Extensions are Python components referred to as *wheels*. They're files with the **.whl** extension. Extensions implement Azure CLI commands that deliver experimental and prerelease features. You can download them from the GitHub repository dedicated to development of these features.
 
-When using Azure Cloud Shell, leverage its file-upload functionality by downloading the **.whl** files to your local computer or to your Azure Cloud Shell home directory.
+When using Azure Cloud Shell, use its file-upload functionality by downloading the **.whl** files to your local computer or to your Azure Cloud Shell home directory.
 
     > [!NOTE]
     > When installing a newer version of an already installed extension, first uninstall the older one by running `az extension remove --name <extensionName>`.
