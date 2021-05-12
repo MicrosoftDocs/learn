@@ -17,12 +17,12 @@ The performance of an Ultra Disk depends on the size of the disk you select. The
 | Over 1,024 | 160,000 | 2,000 |
 
 Ultra Disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine (VM). For example, depending on the sizes of the Ultra Disk, a single Ultra Disk can support up to maximum 160 000 IOPS limit. Performance adjustments can take up to an hour to take effect.
-
+<!-- Replace "160 000" with "160,000". -->
 > [!Note]
 > You can resize an Ultra Disk only four times during a 24 hour window, and it is possible that the performance resize operation might fail due to lack of performance bandwidth capacity.
 
 By default, Azure creates Ultra Disks with a 4k physical sector, which is compatible with most applications. For older applications that are not compatible with a 4K physical sector, you can create a 512E sector size.
-
+<!-- Replace "4k" with "4K" -->
 Ultra Disks are a new disk type and currently have some limitations:
 
 - They're only available in a subset of Azure regions.
