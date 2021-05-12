@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.mr-digital-twin-operate.2-connecting-telemetry-data
+uid: learn.azure.mr-digital-twin-operate.2-connect-telemetry-data
 title: Connect telemetry data
 metadata:
   title: Connect telemetry data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-connecting-telemetry-data.md)]
+  [!include[](includes/2-connect-telemetry-data.md)]
