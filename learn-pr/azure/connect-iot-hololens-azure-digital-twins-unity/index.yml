@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn.azure.azure.mr-digital-twin-operate
+uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
 metadata:
   title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
   ms.date: 5/4/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  author: JBrentJ
+  ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
@@ -45,18 +45,18 @@ products:
 - windows-mixed-reality
 - hololens
 units:
-- learn.azure.mr-digital-twin-operate.1-introduction
-- learn.azure.mr-digital-twin-operate.2-connect-telemetry-data
-- learn.azure.mr-digital-twin-operate.3-arm-templates
-- learn.azure.mr-digital-twin-operate.4-exercise-add-prefab
-- learn.azure.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
-- learn.azure.mr-digital-twin-operate.6-connect-stream-data
-- learn.azure.mr-digital-twin-operate.7-exercise-create-ui
-- learn.azure.mr-digital-twin-operate.8-visualize-signalr
-- learn.azure.mr-digital-twin-operate.9-connect-azure-digital-twins
-- learn.azure.mr-digital-twin-operate.10-deploy
-- learn.azure.mr-digital-twin-operate.11-identify-performance-events
-- learn.azure.mr-digital-twin-operate.12-knowledge-check
-- learn.azure.mr-digital-twin-operate.13-summary
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.introduction
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-telemetry-data
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.arm-templates
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-add-prefab
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-create-deploy-arm-template
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-stream-data
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-create-ui
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.visualize-signalr
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-azure-digital-twins
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.deploy
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.identify-performance-events
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.knowledge-check
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.summary
 badge:
-  uid: learn.azure.mr-digital-twin-operate.badge
+  uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.badge

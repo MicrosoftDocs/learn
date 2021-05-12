@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.mr-digital-twin-operate.9-connect-azure-digital-twins
+uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-azure-digital-twins
 title: Exercise - Connect to the Azure Digital Twins REST API to resolve alerts
 metadata:
   title: Exercise - Connect to the Azure Digital Twins REST API to resolve alerts
