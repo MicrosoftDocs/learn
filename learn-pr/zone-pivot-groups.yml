@@ -370,3 +370,11 @@ groups:
       title: Visual Studio 2019
     - id: vsstudiomac
       title: Visual Studio for Mac
+- id: arm-template-language
+  title: ARM template language
+  prompt: Choose your ARM template language
+  pivots:
+    - id: bicep
+      title: Bicep
+    - id: json
+      title: JSON

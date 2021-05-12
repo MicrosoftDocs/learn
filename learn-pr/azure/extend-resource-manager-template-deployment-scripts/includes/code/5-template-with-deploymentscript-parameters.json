@@ -17,6 +17,7 @@
         "storageBlobContainerName": "config",
         "userAssignedIdentityName": "configDeployer",
         "roleAssignmentName": "[guid(concat(resourceGroup().id, 'contributor'))]",
+        "contributorRoleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
         "deploymentScriptName": "CopyConfigScript"
     },
     "functions": [],
@@ -74,11 +75,11 @@
         },
         {
             "type": "Microsoft.Authorization/roleAssignments",
-            "apiVersion": "2018-09-01-preview",
+            "apiVersion": "2020-04-01-preview",
             "name": "[variables('roleAssignmentName')]",
             "dependsOn": [ "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName'))]" ],
             "properties": {
-                "roleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
+                "roleDefinitionId": "[variables('contributorRoleDefinitionId')]",
                 "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName')), '2015-08-31-preview').principalId]",
                 "scope": "[resourceGroup().id]",
                 "principalType": "ServicePrincipal"
@@ -86,7 +87,7 @@
         },
         {
             "type": "Microsoft.Resources/deploymentScripts",
-            "apiVersion": "2019-10-01-preview",
+            "apiVersion": "2020-10-01",
             "name": "[variables('deploymentScriptName')]",
             "location": "[resourceGroup().location]",
             "kind": "AzurePowerShell",
@@ -119,20 +120,20 @@
                 "azPowerShellVersion": "3.0",
                 "scriptContent": "
                     param([string]$File)
-                    $FileList = $File  -replace '(\\[|\\])' -split ' ' | Foreach-Object {$_.trim()}
-                    $StorageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
-                    $Count = 0
+                    $fileList = $File -replace '(\\[|\\])' -split ',' | ForEach-Object { $_.trim() }
+                    $storageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
+                    $count = 0
                     $DeploymentScriptOutputs = @{}
-                    foreach ($FileName in $FileList) {
-                        Write-Host \"Copying $FileName to $env:StorageContainerName in $env:StorageAccountName.\"
-                        Invoke-RestMethod -Uri \"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/$FileName\" -outfile $FileName
-                        $Blob = Set-AzStorageBlobContent -File $FileName -Container $env:StorageContainerName -blob $FileName -context $StorageAccount.Context
-                        $DeploymentScriptOutputs[$FileName] = @{}
-                        $DeploymentScriptOutputs[$FileName]['Uri'] = $Blob.ICloudBlob.Uri
-                        $DeploymentScriptOutputs[$FileName]['StorageUri'] = $Blob.ICloudBlob.StorageUri
-                        $Count++
+                    foreach ($fileName in $fileList) {
+                        Write-Host \"Copying $fileName to $env:StorageContainerName in $env:StorageAccountName.\"
+                        Invoke-RestMethod -Uri \"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/$fileName\" -OutFile $fileName
+                        $blob = Set-AzStorageBlobContent -File $fileName -Container $env:StorageContainerName -Blob $fileName -Context $storageAccount.Context
+                        $DeploymentScriptOutputs[$fileName] = @{}
+                        $DeploymentScriptOutputs[$fileName]['Uri'] = $blob.ICloudBlob.Uri
+                        $DeploymentScriptOutputs[$fileName]['StorageUri'] = $blob.ICloudBlob.StorageUri
+                        $count++
                     }
-                    Write-Host \"Finished copying $Count files.\"
+                    Write-Host \"Finished copying $count files.\"
                 ",
                 "retentionInterval": "P1D"
             }
