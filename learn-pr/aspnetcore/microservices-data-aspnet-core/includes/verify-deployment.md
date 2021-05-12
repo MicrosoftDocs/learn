@@ -29,20 +29,24 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
+    :::image type="content" source="../media/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
+
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the WebSPA application's products catalog page." border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../media/eshop-spa.png" alt-text="Screenshot of the WebSPA application's products catalog page." border="true" lightbox="../media/microservices/eshop-spa.png":::
 
 1. Navigate to the checkout page as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
     1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select the **:::no-loc text="CHECKOUT":::** button.
+    1. Select the **CHECKOUT** button.
 
 1. Observe **:::no-loc text=".NET BLUE HOODIE":::** is in the shopping bag.
+
+     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
