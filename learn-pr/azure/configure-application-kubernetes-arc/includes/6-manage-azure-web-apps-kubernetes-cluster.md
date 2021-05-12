@@ -24,7 +24,6 @@ These are the two final exercises in the module's sequence of exercises. These e
 
 :::image type="content" source="../media/u6-exercise6.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the sixth exercise (Clean up the lab environment)." border="false":::
 
-
 ## Task 1: Create a web app in an App Service Kubernetes environment
 
 To create a web app in an App Service Kubernetes environment, you need an App Service plan within that environment. However, you don't have to create one explicitly. If a plan doesn't exist, the platform will automatically provision it. For the sake of completeness, this process includes steps that illustrate creation of an App Service plan.
@@ -90,7 +89,6 @@ Use the following step to create an App Service plan and a Linux code-based web 
     > az webapp list-runtimes --linux
     > ```
 
-
 ## Task 2: Deploy a Node.js-based application by using the zip-file deployment
 
 Now, you'll download the code containing a sample Node.js application, install its dependencies, create a zip archive that contains all application files, and deploy it to the web app you previously created.
@@ -147,7 +145,6 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     > [!NOTE]
     > The webpage should display **Hello World!**
 
-
 ## Task 3: Delete the Azure Arc resource group
 
 To return your Azure subscription to its original state, remove the Azure Arc resources that you'll no longer use.
@@ -166,7 +163,6 @@ Use the following step to delete all Azure Arc resources you provisioned through
     ```azurecli-interactive
     az group delete --name $ARC_RG_NAME --yes
     ```
-
 
 ## Task 4: Delete the AKS resource group
 
