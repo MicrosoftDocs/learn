@@ -135,7 +135,7 @@ The following core requirements apply:
 | Endpoint |  Purpose |
 | - | -|
 |  https://login.microsoftonline.com | Authentication requests |
-| https://enterpriseregistration.windows.net | Azure AD Password Protection functionality |
+| 'https://enterpriseregistration.windows.net' | Azure AD Password Protection functionality |
 
 ### Azure AD Password Protection DC agent
 
@@ -166,7 +166,7 @@ The following requirements apply to the Azure AD Password Protection proxy servi
 
 - A *Global Administrator* or *Security Administrator* account is required to register the Azure AD Password Protection proxy service and forest with Azure AD.
 
-- Network access must be enabled for the set of ports and URLs specified in the [Application Proxy environment setup procedures](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application).
+- Network access must be enabled for the set of ports and URLs specified in the [Application Proxy environment setup procedures](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application).
 
 > [!WARNING]
 > Azure AD Password Protection proxy and Azure AD Application Proxy install different versions of the Microsoft Azure AD Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Azure AD Password Protection Proxy and Application Proxy on the same machine.

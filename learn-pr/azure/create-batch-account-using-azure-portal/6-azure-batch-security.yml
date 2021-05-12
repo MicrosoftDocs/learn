@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-batch-account-using-azure-portal.azure-batch-security
-title: Azure Batch security
+title: Consider features for Azure Batch security
 metadata:
-  title: Azure Batch security
+  title: Consider features for Azure Batch security
   description: Learn about implementing security for Azure Batch applications.
   ms.date: 02/01/2021
   author: prkannap

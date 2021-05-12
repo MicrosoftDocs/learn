@@ -3,11 +3,14 @@ You're ready to connect to Earth's Azure Quantum services and start solving prob
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
+> [!NOTE]
+> The cost of running this module on IonQ in a Pay-As-You-Go subscription is approximately $9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimation and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
+
 ## Install the quantum extension
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest/?azure-portal=true) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -36,12 +39,13 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    - **Region**: The region for the workspace.
    - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
 
-   :::image type="content" source="../media/3-azure-quantum-preview-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
+   :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
 
 1. After you complete the information, select the **Providers** tab to add providers to your workspace. A provider gives you access to a quantum service, which can be quantum hardware, a quantum simulator, or an optimization service. In this case, we're interested in quantum hardware. We'll use the IonQ provider example, but the steps should be valid for other quantum hardware providers.
+To learn more about providers, see [List of quantum computing targets on Azure Quantum](https://docs.microsoft.com/azure/quantum/qc-target-list).
 
 1. Add at least the IonQ provider, and then select **Review + create**.
 
@@ -78,7 +82,7 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Log in to Azure by running the following command:
+1. Log in to Azure by opening a command prompt, and running the following command:
 
    ```azcli
    az login
