@@ -1,5 +1,3 @@
-# Introduction
-
 The Azure Health Bot Service supports many built-in scenarios: for example, triage a medical condition, find information about a disease or types of drugs and get end-user consent. In addition, tenants have detailed configurable control over definitions of functionality and behavior of the service and have the ability to extend the functionality by authoring new scenarios.
 
 ## What is a scenario?

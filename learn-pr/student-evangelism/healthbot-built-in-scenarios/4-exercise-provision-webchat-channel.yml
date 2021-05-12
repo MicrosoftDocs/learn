@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-built-in-scenarios.4-exercise-provision-webchat-channel
-title: Exercise - Provision the WebChat Channel
+title: Exercise - Provision the WebChat channel
 metadata:
-  title: Exercise - Provision the WebChat Channel
+  title: Exercise - Provision the WebChat channel
   description: Learn how to create a WebChat channel, which allows users to communicate with your Health Bot instance.
   author: leestott
   ms.author: chnoring

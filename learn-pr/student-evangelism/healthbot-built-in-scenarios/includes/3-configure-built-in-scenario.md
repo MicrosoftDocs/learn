@@ -1,5 +1,3 @@
-# Configuring Built-in Scenarios
-
 To configure the built-in scenarios of a bot, open the Configuration menu.  
 
  :::image type="content" source="../media/3-A.png" alt-text="Configuration Menu":::
@@ -92,7 +90,7 @@ Configure the built-in scenarios that help end users navigate conversations; for
 
 :::image type="content" source="../media/3-I.png" alt-text="Navigation":::
 
-In the “Help” section, you can control every aspect of the help menu, by adding or removing items and editing the description of each menu item.
+In the "Help" section, you can control every aspect of the help menu, by adding or removing items and editing the description of each menu item.
 
 :::image type="content" source="../media/3-J.png" alt-text="Help section":::
 
@@ -104,8 +102,8 @@ Azure Health Bot provides Bing speller to pass all utterances through a spell ch
 
 ### Human Handoff
 
-The Health Bot Service can be used to provide end users with chat support from live agents. In some cases, it’s preferable to transfer end users from a bot interaction, to a human conversation. For example, a triage flow can be handed off to a doctor or nurse, support agents can resolve issues that require non-generic assistance or the end user can explicitly ask to be transferred to a human.
+The Health Bot Service can be used to provide end users with chat support from live agents. In some cases, it's preferable to transfer end users from a bot interaction, to a human conversation. For example, a triage flow can be handed off to a doctor or nurse, support agents can resolve issues that require non-generic assistance or the end user can explicitly ask to be transferred to a human.
 
-In Human Handoff you can enable handoff to human agents’ functionality and configure related parameters (for example, end user and agent timeout, message that is displayed when a user is waiting for an agent to connect or when an agent connects to a conversation). Handoff to live agents using Microsoft Teams and integration with Dynamics require additional configuration.
+In Human Handoff you can enable handoff to human agents' functionality and configure related parameters (for example, end user and agent timeout, message that is displayed when a user is waiting for an agent to connect or when an agent connects to a conversation). Handoff to live agents using Microsoft Teams and integration with Dynamics require additional configuration.
 
 :::image type="content" source="../media/3-L.png" alt-text="Human Handoff":::
