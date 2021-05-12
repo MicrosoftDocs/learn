@@ -1,4 +1,3 @@
-
 To use the OCR API, call the **OCR** REST function (or the equivalent SDK method) passing the image URL or binary image data, and specifying the language of the text to be detected (with a default value of **en** for English), and optionally the **detectOrientation** parameter to return information about orientation of the text in the image.
 
 The resulting JSON describes the text detected, broken down into *regions* of the image, and then further down into *lines*, and then individual *words*; like this:

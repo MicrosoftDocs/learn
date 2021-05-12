@@ -3,7 +3,7 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service
 metadata:
   title: Read Text in Images and Documents with the Computer Vision Service
   description: "Azure's Computer Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure Computer Vision's OCR API and Read API."
-  ms.date: 05/11/2021
+  ms.date: 05/12/2021
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -12,9 +12,9 @@ title: Read Text in Images and Documents with the Computer Vision Service
 summary: Azure's Computer Vision service uses algorithms to process images and return information. This module teaches you how to use the OCR API and Read API.
 abstract: |
   In this module, you'll learn how to:
-  - Identify how the Computer Vision Service enables you to read text from images with the OCR API and Read API
+  - Read text from images with the OCR API and Read API
   - Use the Computer Vision service with SDKs and the REST API
-  - Develop an application that can read handwritten text
+  - Develop an application that can read printed and handwritten text
 prerequisites: |
   To complete this module, you will need:
   - An active Azure account
