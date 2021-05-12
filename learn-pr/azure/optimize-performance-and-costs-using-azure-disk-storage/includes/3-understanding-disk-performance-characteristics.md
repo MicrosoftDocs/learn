@@ -1,3 +1,4 @@
+<!-- GLOBAL: Standarize the decimals in the document. Please remove spaces in between numbers and validate if we need to add the thousands comma separator or not. I added comments suggesting we should add it but I realize there are some docs where we use it and where we don't. What I think we should do is validate if we need it or not and make the appropiate changes to have consistency across all docs. -->
 Application performance often depends on how quickly it can read and write data. In order to understand how to improve that performance, you first have to understand how performance is measured and the settings and choices that affect it.
 
 ## Disk performance measures
@@ -7,7 +8,7 @@ To choose the right disk type, it's important you understand the performance ind
 - **Input/output operations per second (IOPS)**. IOPS measure the rate at which the disk can complete a mix of read and write operations. IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to handle all the small and random I/O requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
 - **Throughput**. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called _data transfer rate_ and is measured in megabytes per second (MBps). If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
 - **Latency**. Latency expresses the time it takes your app to send a request to the disk and get a response. Latency puts a limit on effective IOPS. For example, if your disk can handle 5000 IOPS but each operation takes 10 ms to process, your app will be capped to 100 operations per second due to the processing time. The latency is significantly improved if you enable ReadOnly host caching.
-
+<!-- Replace "5000" with "5,000". -->
 ## IOPS vs. throughput
 
 Throughput and IOPS have a direct relationship. Changing one will have a direct impact on the other. To get a theoretical limit of throughput, you can use the formula: IOPS x I/O size = throughput. It's important to consider both of these values when planning your application.
@@ -21,7 +22,9 @@ This is because VMs have their own storage IOPS limits, which combined with the 
 If you don't size the VM correctly for the storage performance that an application requires, the VM itself become a bottleneck.
 
 For example, suppose that your application makes a request that requires 15 000 IOPS. You have provisioned a Standard_D8s_v3 VM, with one P30 OS disk and two premium SSD data disks with P40 SKU. Each data disk can handle 7500 IOPS and eventually can meet the demand of the applications, but the VM itself has a maximum limit of 12800 IOPS, which is the actual IOPS that the application will get. The following figure illustrates this example.
-
+<!-- Replace "15 000" with "15,000". -->
+<!-- Replace "7500" with "7,500". -->
+<!-- Replace "12800" with "12,800". -->
 :::image type="content" source="../media/03-vm-io-capping.PNG" alt-text="Diagram_for_VM-IO-capping." border="true":::
 
 The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM cannot accommodate these requirements.
@@ -38,10 +41,13 @@ You can diagnose the performance issues due to VM IO capping by using the follow
 You might come across other situations where the storage solution does not meet the application demands. However, this time the bottleneck might be caused because of the selection of an incorrect performance tier of the disks.
 
 Consider the same example where the application requires 15000 IOPS from the VM, and you have chosen the following setup:
-
+<!-- Replace "15000" with "15,000". -->
 - Standard D16s_v4 with 25600 IOPS
+<!-- Replace "25600" with "25,600". -->
 - P20 OS disk with 2300 IOPS
+<!-- Replace "2300" with "2,300". -->
 - Two P30 data disks, each with support of 5000 IOPS.
+<!-- Replace "5000" with "5,000". -->
 
 In this scenario, the application's demand will be broken down into three different requests:
 
@@ -49,7 +55,7 @@ In this scenario, the application's demand will be broken down into three differ
 - 5000 IOPS are requested from each data disk.
 
 The total IOPS that VM will return to application will be 12 300 as a sum of each IOPS provided by the OS and data disks.
-
+<!-- Replace "12 300" with "12,000". -->
 This scenario is known as *disk IO capping*, when the disk itself cannot meet the application demands.
 
 :::image type="content" source="../media/03-disk-io-capping.PNG" alt-text="Diagram_for_Disk-IO-capping." border="true":::
@@ -89,7 +95,9 @@ The following table lists examples that illustrate the difference in performance
 | Standard_D4s_v3 | 8000/64 (100) | 6400/96 |
 | Standard_D8s_v3 | 16000/128 (200) | 12800/192 |
 | Standard_D64s_v3 | 128000/1024 (1600) | 80000/1200 |
-
+<!-- Add thousands comma separator on all of the above numbers. -->
 Host caching can help you avoid VM bottleneck scenarios.
 In the earlier example of VM IO capping, the application required 15000 IOPS. Both data disks can handle that demand, but the Standard_D8s_v3 VM can only offer 12800 IOPS in the uncached state.
 If you configure host caching on the Standard_D8s_v3 VM, you can get 16000 cached IOPS, which is more than what the application demands.
+<!-- Replace "15000" with "15,000". -->
+<!-- Replace "12800" with "12,800". -->
