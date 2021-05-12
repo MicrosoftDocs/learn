@@ -1,41 +1,41 @@
 The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through how to turn on the screen reader for each operating system to test accessibility in the app.
 
-## Enable screen reader on Android
+## Enable the screen reader on Android
 
-TalkBack is the primary screen reader used on Android. It is included on most devices, but can also be downloaded directly from the Google Play app store. Enable TalkBack on your device by following these instructions:
+TalkBack is the primary screen reader used on Android. It's included on most devices but can also be downloaded directly from the Google Play app store. Enable TalkBack on your device by following these instructions:
 
-1. Open the **Settings** app on your Android device
-1. Navigate or search for **Accessibility**
-1. Select **TalkBack** from the screen readers section
-1. Turn on and off TalkBack by toggling the **User service** setting
-1. A confirmation dialog will appear; select **Allow** to enable TalkBack control
+1. Open the **Settings** app on your Android device.
+1. Browse to and select **Accessibility**.
+1. Select **TalkBack** from the section that lists screen readers.
+1. Turn on the **User service** toggle.
+1. A confirmation dialog appears. Select **Allow** to enable TalkBack control.
 
-![Android screenshots to enable TalkBack](../media/android-talkback.png)
+![Screenshot that shows selections to enable TalkBack on Android.](../media/android-talkback.png)
 
-It is recommended to go through the TalkBack tutorial, which will launch automatically the first time you turn on TalkBack.
+We recommend that you go through the TalkBack tutorial, which opens automatically the first time you turn on TalkBack.
 
-## Enable iOS screen reader
+## Enable the screen reader on iOS
 
-VoiceOver is Apple's main screen reader technology that is available across iPhone, iPad, Mac, and other Apple devices. To enable VoiceOver on your device, follow these instructions:
+VoiceOver is the main screen reader that's available across iPhone, iPad, Mac, and other Apple devices. To enable VoiceOver on your device, follow these instructions:
 
-1. Open the **Settings** app on your iOS device
-1. Navigate or search for **Accessibility**
-1. Select **VoiceOver** from the **Vision** section
-1. Turn on and off VoiceOver by toggling service on and off.
-1. A confirmation dialog will appear, select **OK** to enable VoiceOver.
+1. Open the **Settings** app on your iOS device.
+1. Browse to and select **Accessibility**.
+1. Select **VoiceOver** from the **Vision** section.
+1. Turn on the **VoiceOver** toggle.
+1. A confirmation dialog appears. Select **OK** to enable VoiceOver.
 
-![iOS screenshots to enable VoiceOver](../media/ios-voiceover.png)
+![Screenshot that shows selections to enable VoiceOver on iOS.](../media/ios-voiceover.png)
 
-It is recommended to go through the VoiceOver tutorial, which can be found by selecting **VoiceOver Practice** in the VoiceOver section.
+We recommend that you go through the VoiceOver tutorial. Open it by selecting **VoiceOver Practice** in the **VoiceOver** section.
 
-## Enable Windows screen reader
+## Enable the screen reader on Windows
 
 Narrator is a screen reader built directly into Windows to enable users to complete common tasks without a mouse. You can enable Narrator in one of two ways:
 
-- Press the **Windows logo key** + **Ctrl** + **Enter** together to start Narrator. Press these keys again to stop Narrator. (On older versions of Windows, the command was the **Windows logo key** + **Enter**.) On many keyboards, the Windows logo key is located on the bottom row of keys, to the left or right of the Alt key.
+- Press **Windows logo key** + **Ctrl** + **Enter** together to start Narrator. You can press these keys again to stop Narrator. (On older versions of Windows, the shortcut was **Windows logo key** + **Enter**.) On many keyboards, the Windows logo key is on the bottom row of keys, to the left or right of the Alt key.
 
-- Press the **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under Use Narrator.
+- Press **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under **Use Narrator**.
 
-![Windows screenshots to enable Narrator](../media/windows-narrator.png)
+![Screenshot that shows the toggle for turning on Narrator.](../media/windows-narrator.png)
 
-It is recommended to go through the Narrator tutorial, which can be found in the Narrator settings screen.
+We recommend that you go through the Narrator tutorial. You can find it in the Narrator settings.

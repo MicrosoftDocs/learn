@@ -33,15 +33,35 @@ With the view created, we can register the path.
 
     ```python
     # TODO: Register detail view
-    path('dog/<int:pk>', views.DogDetail.as_view(), name='dog_detail'),
+    path('dog/<int:pk>', views.DogDetailView.as_view(), name='dog_detail'),
     ```
 
     > [!IMPORTANT]
     > Remember the trailing comma at the end of the line.
 
+## Create the HTML template
+
+Now you'll create the HTML template to display out the details of the dog. The object name will be `dog` as we set that when creating the form.
+
+1. Inside Visual Studio Code, create a new file inside **dog_shelters/templates** named **dog_detail.html**.
+1. Add the following code to **dog_detail.html** to create the template to display the details for the dog.
+
+    ```html
+    {% extends 'base.html' %}
+    
+    {% block title %}
+    {{ dog.name }}
+    {% endblock %}
+    
+    {% block content %}
+    <h2>{{ dog.name }}</h2>
+    <div>About {{ dog.name }} - {{ dog.description }}</div>
+    {% endblock %}
+    ```
+
 ## Update the shelter detail page to include our link
 
-With our path registered, we can update the shelter detail template to include links to our dog detail page.
+With our path registered and template created, we can update the shelter detail template to include links to our dog detail page.
 
 1. Open **dog_shelters/templates/shelter_detail.html**.
 1. Underneath the line that reads `{# TODO: Add link to dogs #}`, add the following code to create a link for each dog to the detail view.
