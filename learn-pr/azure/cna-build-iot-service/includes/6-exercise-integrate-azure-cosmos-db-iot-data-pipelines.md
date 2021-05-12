@@ -40,7 +40,7 @@ In this exercise, you will:
    * This will display the **Dashboard** page
 
    ![Screenshot that shows the Dashboard page of the IoT Central Application portal](../media/6-iot-central-portal-dashboard.png)
-
+<!-- The above media (screenshot is missing). -->
    * Now review telemetry and analytics of the sample Azure IoT Central application
 
 1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu on the left side, select **Devices**.
