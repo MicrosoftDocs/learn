@@ -12,13 +12,16 @@ Let's start by updating the model to support `get_absolute_url`.
     from django.urls import reverse
     ```
 
-1. Add the following code underneath the line that reads `# TODO: Add get_absolute_url` to read the **dog_detail** path from URLconf and pass the ID as the parameter.
+1. Add the following code to the `Dog` class immediately the line that reads `# TODO: Add get_absolute_url` to read the **dog_detail** path from URLconf and pass the ID as the parameter.
 
     ```python
-    # TODO: Add get_absolute_url
-    def get_absolute_url(self):
-        return reverse('dog_detail', args=[str(self.id)])
+        # TODO: Add get_absolute_url
+        def get_absolute_url(self):
+            return reverse('dog_detail', kwargs={"pk": self.pk})
     ```
+
+> [!IMPORTANT]
+> Remember Python manages enclosures with tabs rather than braces (`{ }`). Because of this fact, `get_absolute_url` needs to at the same tab level as the `#TODO` comment. You can refer to the files in the *solution* directory to see the completed project.
 
 ## Create DogCreateView
 
@@ -51,7 +54,7 @@ With our view created, let's register the route in our URLconf.
     path('dog/register', views.DogCreateView.as_view(), name='dog_register'),
     ```
 
-## Create the template
+## Create the HTML template
 
 Let's create the template to host our form.
 

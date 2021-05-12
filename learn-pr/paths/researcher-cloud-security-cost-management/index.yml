@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.researcher-cloud-security-cost-management
+hidden: true
+metadata:
+  title: "Azure for Researchers part 2: Cloud Security and Cost Management"
+  description: In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.
+  brand: azure
+  ms.date: 04/28/2021
+  author: MaximRouiller
+  ms.author: marouill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure for Researchers part 2: Cloud Security and Cost Management"
+summary: |
+  In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.
+  
+  ## Learning objectives
+
+  Upon completion of this learning path, you'll be able to:
+
+  * Predict cloud cost and create a budget to limit your cloud consumption
+  * Secure your application secrets and your virtual machines against unauthorized access
+prerequisites: |
+  - You should be familiar with the fundamentals of the cloud.
+  - How to create virtual machines in Azure.
+  - How to select your storage based on how it's going to be used.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- higher-ed-educator
+- data-scientist
+products:
+- azure
+- azure-cost-management
+- azure-firewall
+- azure-key-vault
+modules:
+- learn.azure.protect-against-security-threats-azure
+- learn.azure.secure-network-connectivity-azure
+- learn.azure.plan-manage-azure-costs
+- learn.azure.analyze-costs-create-budgets-azure-cost-management
+trophy:
+  uid: learn.learn.researcher-cloud-security-cost-management.trophy
