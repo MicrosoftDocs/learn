@@ -10,13 +10,13 @@ During the process, you'll:
 > * Deploy the template and verify the result.
 
 > [!NOTE]
-> To complete this exercise, you'll need:
+> There are some prerequisites for this exercise:
 >
-> - Management groups to be enabled on your Azure tenant.
-> - Permission to create a new management group within your hierarchy.
-> - Permission to deploy Azure Policy resources to a management group.
+> - [Management groups must be enabled](azure/governance/management-groups/overview) on your Azure tenant.
+> - You need permission to create a new management group within your hierarchy.
+> - You need permission to deploy Azure Policy resources to the management group.
 > 
-> In many organizations, you may not be able to meet all of these prerequisites.
+> If you can't meet these requirements with your Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Or, you can skip this exercise.
 
 ## Create a management group
 

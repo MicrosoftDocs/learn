@@ -61,7 +61,7 @@ Tenant-scoped deployments [require you have special permission](/azure/azure-res
 
 ## Resource IDs
 
-Subscription-scoped resources have IDs that look quite familiar. For example. here's a resource ID that represents a resource group, which is a subscription-scope resource:
+By now, you're very familiar with resource IDs for subscription-scoped resources. For example, here's a resource ID that represents a resource group, which is a subscription-scoped resource:
 
 ```
 /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment
@@ -71,13 +71,41 @@ Here's a visual representation of the same information:
 
 :::image type="content" source="../media/2-subscription-resource-id.png" alt-text="Resource ID for a resource group." border="false":::
 
-When you're working with resources at a management group or tenant scope, resource IDs can look a bit different to normal. They mostly follow the standard pattern of interleaving the resource type with the information about your specific resources. However, the specific format depends on the resource you're working with. Here are some examples:
+Subscriptions themselves have their own IDs, like this:
 
-| Resource type | Deployed at scope | Example resource ID |
-|-|-|-|
-| Role definition | Management group | `/providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca` |
-| Role definition | Subscription | `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca` |
-| Subscription | Tenant | `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c` |
-| Management group | Tenant | `/providers/Microsoft.Management/managementGroups/ProductionMG` |
+```
+/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c
+```
+
+When you're working with resources at a management group or tenant scope, resource IDs can look a bit different to normal. They mostly follow the standard pattern of interleaving the resource type with the information about your specific resources. However, the specific format depends on the resource you're working with.
+
+Here's an example resource ID for a management group:
+
+```
+/providers/Microsoft.Management/managementGroups/ProductionMG`
+```
+
+Here's what that looks like visually:
+
+:::image type="content" source="../media/2-mg-resource-id.png" alt-text="Resource ID for a management group." border="false":::
+
+When a resource is deployed to a management group's scope, its resource ID includes the management group's ID. Here's an example resource ID for a role definition at a management group scope:
+
+```
+/providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
+```
+
+Here's a visual representation of the same ID:
+
+:::image type="content" source="../media/2-role-mg-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a management group scope." border="false":::
+
+Another role definition might be defined at a subscription scope, so its resource ID looks a little different:
+
+```
+/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
+```
+
+> [!NOTE]
+> Even though subscriptions are considered to be children of management groups, their resource IDs don't include a management group ID. The relationship between subscriptions and management groups is tracked by Azure in a different way to other resource relationships. This gives you the flexibility to move subscriptions between management groups easily.
 
 In the next unit, you'll learn how to create Bicep files that target each of these scopes.

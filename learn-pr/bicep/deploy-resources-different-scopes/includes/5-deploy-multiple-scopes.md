@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Note to reviewers:** Some of the content referenced in this unit only applies to very recent builds of Bicep, and may not be in the release builds at the time you see this. I tested using version 0.3.439. We won't publish this content until the features described here are in a release build.
+
 Sometimes you need to deploy across multiple levels of your hierarchy from within one deployment. Here are some situations where you might want to do this:
 
 - You need to deploy resources across two different resource groups. For example, you might want to create a network security group in a shared resource group and also deploy a network interface for a virtual machine in a resource group for your application.
@@ -5,9 +8,6 @@ Sometimes you need to deploy across multiple levels of your hierarchy from withi
 - You're deploying a management group hierarchy, and want to also deploy some subscriptions, which are tenant-scoped resources.
 
 Bicep enables you to create a deployment that works across different scopes by using the `scope` keyword.
-
-> [!WARNING]
-> **Note to reviewers:** Some of the content referenced in this unit only applies to very recent builds of Bicep, and may not be in the release builds at the time you see this. I tested using version 0.3.439. We won't publish this content until the features described here are in a release build.
 
 ## Specify the scope for a module
 
