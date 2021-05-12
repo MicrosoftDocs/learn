@@ -1,29 +1,27 @@
-Let's start implementing the design for the app by creating a new project and specifying some user interface for entering the project name.
+Let's start implementing the design for the app by creating a project and specifying some user interface for entering the project name.
 
-## Create a new solution
-
-Create a new Xamarin app:
+## Create a Xamarin app
 
 ::: zone pivot="vsstudio"
 1. Open Visual Studio 2019.
 1. Select **Create a new project**.
-1. Select **Mobile** from the **Project type** drop-down.
-1. Select the **Mobile App (Xamarin.Forms)** template and select **Next**.
-1. Enter **AccessibleApp** as the project name and select **Create**.
-1. Select the Blank template. Ensure Android and iOS are both selected, and select OK.
+1. Select **Mobile** from the **Project type** dropdown list.
+1. Select the **Mobile App (Xamarin.Forms)** template, and then select **Next**.
+1. Enter **AccessibleApp** as the project name, and then select **Create**.
+1. Select the **Blank** template. Ensure that Android and iOS are both selected, and then select **OK**.
 ::: zone-end
 
 ::: zone pivot="vsstudiomac"
-1. Open Visual Studio for Mac
-1. Select **New Project**
-1. Select **Multiplatform** > **App** > **Blank Forms App** and select **Next**
-1. Enter **AccessibleApp** as the app name, and select **Next**
-1. Select **Create**
+1. Open Visual Studio for Mac.
+1. Select **New Project**.
+1. Select **Multiplatform** > **App** > **Blank Forms App**, and then select **Next**.
+1. Enter **AccessibleApp** as the app name, and then select **Next**.
+1. Select **Create**.
 ::: zone-end
 
 ## Create the data entry form
 
-To create a simple form, we will use several UI controls including `Label`, `Image`, `Entry`, and `Button`.
+To create a simple form, use the following code. It includes `Label`, `Image`, `Entry`, and `Button` UI controls.
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -42,7 +40,7 @@ To create a simple form, we will use several UI controls including `Label`, `Ima
         <Label x:Name="LabelName" Text="Project name" />
         <Entry />
 
-        <!-- Report and Manager Information -->
+        <!-- User and Manager Information -->
 
         <Button Text="Submit" />
     </StackLayout>
@@ -52,61 +50,63 @@ To create a simple form, we will use several UI controls including `Label`, `Ima
 
 ## Run the application
 
-Run the application with the screen reader activated on the operating system of your choice. Notice that on some platforms, when you launch the application, all elements will be read by the screen reader. Use touch gestures or a keyboard to navigate through the items on the screen. 
+Run the application with the screen reader activated on the operating system of your choice. Notice that on some platforms, when you open the application, the screen reader will read all elements. Use touch gestures or a keyboard to move through the items on the screen. 
 
-Note:
+As you use the app, keep in mind:
 
-- `Image` does not have any information as to what it is.
+- `Image` does not have any information about what it is.
 - `Entry` reads back generic information.
 - `Button` reads the text of **Submit** out loud.
 
-## Image accessibility
+## Improve image accessibility
 
-To have the screen reader see the `Image` as an accessible element we must set the `AutomationProperties.IsInAccessibleTree` property to `true`.  Add the following property to the `Image`:
+To have the screen reader see `Image` as an accessible element, you must set the `AutomationProperties.IsInAccessibleTree` property to `true`.  Add the following property to `Image`:
 
    ```xaml
    AutomationProperties.IsInAccessibleTree="true"
    ```
 
-We can provide additional information as to what the image is when it becomes focused by the screen reader by setting the `AutomationProperties.Name` property. Add the following property to the `Image`:
+By setting the `AutomationProperties.Name` property, you can provide more information about what the image is when the screen reader gives it focus. Add the following property to `Image`:
 
    ```xaml    
    AutomationProperties.Name="Image of dot net bot"
    ```
 
-When you run the application again you will see that when the image gains focus, "Image of .NET Bot" is read out loud. Notice that we spelled out "dot net bot" to assist the screen reader with proper pronunciation. When setting text that will be read it is best practice to be aware of how the screen reader will read back text. For example, "a11y" which is an abbreviation for accessibility would be read back as "ay eleven why". Setting the label simply to "accessibility" would alleviate the need for any additional automation properties.
+When you run the application again, you'll see that when the image gains focus, "Image of .NET Bot" is read out loud. Notice that we spelled out "dot net bot" to assist the screen reader with pronunciation. When you're setting text that will be read, be aware of how the screen reader will interpret it. 
 
-## Improve Entry accessibility with LabelBy
+For example, "a11y" is an abbreviation for accessibility, but a screen reader would read it as "ay eleven why." Setting the label simply to "accessibility" would alleviate the need for more automation properties.
 
-The `Entry` currently has no information about what the user should enter. There is a `Label` directly above the `Entry`, which provides the descriptor and can be used as text that the screen reader can read out loud by using the `AutomationProperties.LabeledBy` property. 
+## Improve entry accessibility
+
+`Entry` currently has no information about what the user should enter. `Label` is directly above `Entry` and provides the descriptor. You can use the `AutomationProperties.LabeledBy` property to enable the screen reader to read `Label` text out loud. 
 
 
-1. Add the following properties to the `Entry`:
+1. Add the following properties to `Entry`:
 
    ```xaml
    AutomationProperties.LabeledBy="{x:Reference LabelName}"
    AutomationProperties.Name="{OnPlatform iOS='Project name'}"
    ```
 
-2. Setting accessible properties on the `Entry` means that the _Project name_ `Label` doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label`:
+2. Setting accessible properties on `Entry` means that the _Project name_ `Label` instance doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label` instance:
 
    ```xaml
    AutomationProperties.IsInAccessibleTree="False"
    ```
 
-When you run the application again, you hear "Project name" read out loud when the `Entry` is in focus.
+When you run the application again, you hear "Project name" read out loud when `Entry` is in focus.
 
 > [!NOTE]
-> We set the `AutomationProperties.Name` on iOS because `AutomationProperties.LabeledByProperty` is not currently supported. You may consider only setting the `AutomationProperties.Name` based on your use case.
+> We set `AutomationProperties.Name` on iOS because `AutomationProperties.LabeledByProperty` is not currently supported. You might consider setting only `AutomationProperties.Name`, based on your use case.
 
-## Improve Button descriptors
+## Improve button descriptors
 
-When the `Button` is in focus, "Submit button" is read out loud by the screen reader. We can provide more context as to what will happen when the user taps the button, by setting the `AutomationProperties.HelpText` property. Add the following property to the `Button`:
+When `Button` is in focus, the screen reader reads "Submit button" out loud. You can use the `AutomationProperties.HelpText` property  to provide more context for what will happen when the user selects the button. Add the following property to `Button`:
 
 ```xaml
 AutomationProperties.HelpText="Submits project information to backend"
 ```
 
-When you run the application again, you will hear an improved description of the UI element as well as context for what will happen when it is pressed.
+When you run the application again, you'll hear an improved description of the UI element, along with context for what will happen when it's selected.
 
-We have now explored the built-in automation properties of Xamarin.Forms that enable developers to add more context for on-screen elements that are accessible to screen readers. Next, we will explore accessible content ordering to provide a better experience when a user navigates through elements.
+You've now explored the built-in automation properties of Xamarin.Forms that enable developers to add more context for on-screen elements that are accessible to screen readers. Next, you'll explore accessible content ordering to provide a better experience when a user moves through elements.
