@@ -70,6 +70,9 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 
+> [!NOTE]
+> In the production scenario, it's not recommended to store the connection string as plain text. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store your secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
+
 ## Redeploy the coupon service
 
 Publish the existing `coupon-api` docker image from the `eshopdev` DockerHub with the following script:
@@ -86,9 +89,11 @@ coupon-7474cfc46f-bcz5f            0/1     ContainerCreating   0          2s
 coupon-86b5766658-qbb6h            0/1     Terminating         2          38m
 ```
 
-When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied.
+When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied, and then place the order.
 
 :::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
+
+Order background service will update the status of the order to `Paid` after a few minutes. Once updated, perform the steps in the next section to verify it in the Azure Cosmos DB data explorer.
 
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
 

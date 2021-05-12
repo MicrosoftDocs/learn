@@ -7,5 +7,5 @@ metadata:
     service: coupon
 data:
   # omitted for brevity
-  ConnectionString: mongodb://nosqldata
+  ConnectionString: mongodb://eshop-learn-20210000:<password>@eshop-learn-20210000.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@eshop-learn-20210000@
   # omitted for brevity
