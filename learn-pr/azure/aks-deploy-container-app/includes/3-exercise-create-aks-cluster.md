@@ -14,7 +14,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
-1. Create variables for the configuration values you'll reuse throughout the exercises.
+2. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
     RESOURCE_GROUP=rg-contoso-video
@@ -23,7 +23,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
 #### [Linux](#tab/linux)
 
-1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
+3. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
 
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
@@ -31,20 +31,20 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
-1. Create variables for the configuration values you'll reuse throughout the exercises.
+4. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
     RESOURCE_GROUP=rg-contoso-video
     CLUSTER_NAME=aks-contoso-video
     ```
 
-1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
+5. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
 
     ```azurecli
     az group create --name $RESOURCE_GROUP --location eastus
     ```
 
-1. Run the `az aks create` command to create an AKS cluster.
+6. Run the `az aks create` command to create an AKS cluster.
 
     ```azurecli
     az aks create \
@@ -59,7 +59,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
     The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-1. Run the `az aks nodepool add` command to add additional node pool of linux operating system.
+7. Run the `az aks nodepool add` command to add additional node pool of linux operating system.
 
     ```azurecli
     az aks nodepool add \
