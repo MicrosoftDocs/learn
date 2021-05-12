@@ -8,7 +8,7 @@ In the preceding unit, you learned that Bicep is a domain-specific language, whi
 
 When you deploy a resource or series of resources to Azure, you submit the Bicep template to Resource Manager, which still requires JSON templates. The tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as _transpilation_, which essentially treats the ARM template as an intermediate language. The conversion happens automatically when you submit your deployment, or you can do it manually.
 
-:::image type="content" source="../media/bicep-to-json.png" alt-text="Diagram that shows a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
+:::image type="content" source="../../shared/media/bicep-to-json.png" alt-text="Diagram that shows a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
 
 > [!NOTE]
 > Transpilation is the process of converting source code written in one language into another language.
