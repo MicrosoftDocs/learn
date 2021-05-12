@@ -1,7 +1,5 @@
 In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools, however, if you're going to use windows node pools, the cluster must be created with additional **pre-requisites** and commands. Please make a selection below, based on which type of node pools you want to add.
-
 AKS cluster can be provisioned through Azure portal or Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
@@ -26,6 +24,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     ```azurecli
     az group create --name $RESOURCE_GROUP --location eastus
     ```
+
+AKS supports both Linux and Windows node pools, however, if you're going to use windows node pools, the cluster must be created with additional **pre-requisites** and commands. Please make a selection below, based on which type of node pools you want to add.
 
 #### [Linux](#tab/linux)
 
