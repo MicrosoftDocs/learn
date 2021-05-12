@@ -1,11 +1,11 @@
-To use the Form Recognizer resource you first need an Azure subscription, which you can create for free, and a Form Recognizer resource. The resource provides you with an endpoint and key, with which you can access the Form Recognizer service through REST or by using the appropriate software development kit (SDK). SDKs are available in these languages:
+To use Form Recognizer, you first need an Azure subscription, which you can create for free, and a Form Recognizer resource. The resource provides you with an endpoint and key, with which you can access the Form Recognizer service through REST or by using the appropriate software development kit (SDK). SDKs are available in these languages:
 
 * .NET
 * Python
 * Java
 * JavaScript
 
-The service analyzes JPG and PNG images, and PDF or TIFF documents, and extracts the key data you need, and compiles the data in JSON format.
+Form Recognizer is capable of analyzing JPG and PNG images, along with PDF and TIFF documents to extract and compile the key data you need in a JSON format.  
 
 ## The services
 

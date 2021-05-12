@@ -4,7 +4,7 @@ Understanding there may be many scenarios where form analysis is required, we pr
 
 Organizations often receive various types of forms, which can be difficult to parse through and take up valuable time. By extracting the data from forms and combining it with existing operational systems and data storage services, organizations can get insights and deliver value to their customers and business users.
 
-For example, Form Recognizer’s custom model function is being utilized by insurance providers to extract the key data needed without the heavy manual intervention, resulting in claims being able to be processed quicker. Being able to integrate into existing systems and add functionality can be vital during disruptive events, such as pandemics, that result both in more claims being lodged and fewer people to go through the forms.
+For example, Form Recognizer’s custom model function is being utilized by insurance providers to extract the key data needed without heavy manual intervention, resulting in claims being processed quicker. Being able to integrate into existing systems and add functionality can be vital during disruptive events, such as pandemics, that result both in more claims being lodged and fewer people to go through the forms.
 
 ## Integration with Cognitive Search
 
@@ -14,4 +14,4 @@ This process of retrieving data from file types that would normally require each
 
 ## Augmenting manual data entry
 
-Many transactional use cases require manual intervention, yet, data entry can be tedious and lead to errors. Form Recognizer can integrate into existing applications and provide a standard JSON response, allowing developers to check manual data entry with Form Recognizer. The standard responses allow simple logic to check if data points from the manual data entry and Form Recognizer are different - for example, if a decimal place was missed during manual data entry. This can help to reduce errors and increase accountability in businesses, like banks loan services to make sure that people aren't getting loans they shouldn’t be, or aren't being denied over small human errors.
+Many transactional use cases require manual intervention, yet, data entry can be tedious and lead to errors. Form Recognizer can integrate into existing applications and provide a standard JSON response, allowing developers to check manual data entry with Form Recognizer. The standard responses allow simple logic to check if data points from the manual data entry and Form Recognizer are different—for example, if a decimal place was missed during manual data entry. This extra check can help to reduce errors and increase accountability in businesses, like bank loan services to make sure that people aren't getting loans they shouldn’t be, or aren't being denied over small human errors.
