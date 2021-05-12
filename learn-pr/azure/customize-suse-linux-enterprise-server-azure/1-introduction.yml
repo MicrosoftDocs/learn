@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.customize-suse-linux-enterprise-server-azure.introduction
+uid: learn.azure.customize-suse-linux-enterprise-server-azure.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
   ms.date: 5/12/2021
   author: yenchiho

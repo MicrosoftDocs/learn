@@ -1,108 +1,42 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+For this exercise, you’ll be adding the successor of the MySQL database, mariadb, to your growing application stack using zypper.  
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Task 1: ssh into the virtual machine
 
-    Heading: none
+Refresh the repositories to ensure you’re working with the latest metadata index  
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+```console
+sudo zypper refresh
+```
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+In this case, repositories should already be up to date because you used YaST in the previous exercise. YaST runs zypper automatically in the background every time you start. If you choose to use zypper and skip this initial refresh step, you will get an error if the metadata has changed and you’ll be forced to run it before you can get started.  
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Task 2: Install a software package with zypper 
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. If you don’t know the exact name of the package, it is a good idea to search for it. You only need a part of the name for a search to work. e.g. zypper search maria (or short form: zypper se maria)  
+1. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
+1. To install a package, you can either enter:  
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    ```console
+    sudo zypper install mariadb
+    ```
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    which prompts you confirm you want to continue with the installation or
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    ```console
+    zypper --non-interactive install mariadb
+    ```
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+    which removes the prompts and installs immediately after the command. This method is useful for when you want to run a lot of installs quickly. You can also use the –non-interactive command to assist with package removal. (ex. sudo zypper remove mariadb  
+    or zypper --non-interactive remove mariadb)
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    In the sample screen shown, can you identify the error in the command line? If you answered, the command does not include sudo, you’re correct. Because an install changes the machine, you must use sudo to get admin rights to proceed.  
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Do search for the package again, now it should have the "I" in the first column. 
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Task 4: Use zypper to install a pattern 
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+_(Please note, this is a challenge task. Instead of following step-by-step instructions to perform the task, you will rely on knowledge previously gained to complete the task.)_
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+**zypper has the ability to install entire patterns as well as single packages.  Your task is to install the lamp_server pattern using the zypper command. **
 
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+As a reminder, patterns are a pre-defined group of packages for a certain functionality, e.g. a file-server or a graphical environment. They look like packages but have "pattern” in their name.

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.customize-suse-linux-enterprise-server-azure
+uid: learn.azure.customize-suse-linux-enterprise-server-azure
 metadata:
   moduleType: standard
   title: Easily customize your SUSE Linux Enterprise Server on Azure
@@ -27,13 +27,13 @@ roles:
 products:
   - azure
 units:
-- learn.customize-suse-linux-enterprise-server-azure.introduction
-- learn.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
-- learn.customize-suse-linux-enterprise-server-azure.add-packages-yast
-- learn.customize-suse-linux-enterprise-server-azure.exercise-add-apache-yast
-- learn.customize-suse-linux-enterprise-server-azure.reconcile-dependencies-zypper
-- learn.customize-suse-linux-enterprise-server-azure.exercise-add-mariadb-zypper
-- learn.customize-suse-linux-enterprise-server-azure.knowledge-check
-- learn.customize-suse-linux-enterprise-server-azure.summary
+- learn.azure.customize-suse-linux-enterprise-server-azure.introduction
+- learn.azure.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
+- learn.azure.customize-suse-linux-enterprise-server-azure.add-packages-yast
+- learn.azure.customize-suse-linux-enterprise-server-azure.exercise-add-apache-yast
+- learn.azure.customize-suse-linux-enterprise-server-azure.reconcile-dependencies-zypper
+- learn.azure.customize-suse-linux-enterprise-server-azure.exercise-add-mariadb-zypper
+- learn.azure.customize-suse-linux-enterprise-server-azure.knowledge-check
+- learn.azure.customize-suse-linux-enterprise-server-azure.summary
 badge:
-  uid: learn.customize-suse-linux-enterprise-server-azure.badge
+  uid: learn.azure.customize-suse-linux-enterprise-server-azure.badge

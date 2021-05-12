@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.customize-suse-linux-enterprise-server-azure.exercise-add-mariadb-zypper
+uid: learn.azure.customize-suse-linux-enterprise-server-azure.exercise-add-mariadb-zypper
 title: Exercise - Add mariadb database using zypper
 metadata:
-  unitType: {{patternType}}
+  unitType: exercise
   title: exercise-add-mariadb-zypper
   description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
   ms.date: 5/12/2021

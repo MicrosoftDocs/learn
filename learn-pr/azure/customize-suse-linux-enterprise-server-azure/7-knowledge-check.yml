@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.customize-suse-linux-enterprise-server-azure.knowledge-check
+uid: learn.azure.customize-suse-linux-enterprise-server-azure.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
@@ -27,58 +27,36 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: Which of the following tools can you use to load packages?
     choices:
-    - content: ""
+    - content: YaST
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: Sudo
       isCorrect: false
       explanation: ""
-    - content: ""
+    - content: SUSE
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: What does zypper do for you?
     choices:
-    - content: ""
+    - content: Close security gaps
+      isCorrect: false
+      explanation: ""
+    - content: Link dependencies among packages
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: Load a graphical interface
       isCorrect: false
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: You can use the sudo command to
     choices:
-    - content: ""
+    - content: Add packages with zypper
+      isCorrect: false
+      explanation: ""
+    - content: Make administrator-level changes to the machine
       isCorrect: true
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+    - content: Pull recent package updates
       isCorrect: false
       explanation: ""

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
-title: Enter exercise title
+uid: learn.azure.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
+title: Exercise - Create a new SUSE SLES VM on Azure
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Create a new SUSE SLES VM on Azure
   description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
   ms.date: 5/12/2021
   author: yenchiho
