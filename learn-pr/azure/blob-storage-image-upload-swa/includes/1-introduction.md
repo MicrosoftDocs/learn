@@ -1,12 +1,16 @@
-You run a photo sharing application and due to scalability requirements, you migrated your storage to the cloud. You need to allow your users to upload images directly from their browsers. This poses a security challenge. How to grant your users access to your storage backend without compromising the security of your data. You would like to find a way to allow your users to upload images while keeping your storage account safe.
+You run a photo sharing application and due to scalability requirements, you had moved your storage needs to the cloud. Your frontend got re-implemented as a lightweight static web application, so the only legacy part of your project is the middleware image upload handler.
 
-Using Shared Access Signatures, you could grant access to your storage account, but since every new user session will require a new Shared Access Signature, you need a way to generate them on demand.
+The middleware is an old ASP.NET app that while it has performed its job well, it still requires a lot of maintenance on your side, including monitoring and having your developers on call to be sure the middleware stays up. Porting this piece of software into serverless will free your team from this work, while letting Azure handle the complexity of having your backend up and running.
+
+You can leverage Azure Blog Storage directly by allowing your users to upload images directly from their browsers to your storage containers. This poses a challenge though, how to grant your users access to your storage account without compromising the security of your data? You would like to find a way to allow your users to upload images while keeping your storage account secure.
+
+Using Shared Access Signatures, you could grant access to your storage account. Since every new user session will require a new Shared Access Signature, you need a way to generate them on demand.
 
 By using an Azure Function, you can generate Shared Access Signatures on demand, and deliver them to your users’ browsers via an API.
 
 ## In this module you will
 
 - Evaluate when to use Shared Access Signatures (SAS) to grant access to Azure Blob Storage.
-- Generate SAS tokens on demand to authenticate image uploads request.
+- Generate SAS tokens on demand to authenticate image upload requests.
 - Use the SAS token to upload an image to Azure Blob Storage.
-- Implement file uploads in a Static Web App by following Security Best Practices.
+- Implement file uploads in a Static Web App by following security best practices.
