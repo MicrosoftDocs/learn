@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This module creates Azure resources.  If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources.  Instructions for removing all resources are included at the end of the module.
+
 This module assumes you have Azure CLI installed and you can run it from the command prompt or Windows PowerShell, which is our recommendation.  The module also assumes you have an Azure account and at a minimum, the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
 
 > [!IMPORTANT]
