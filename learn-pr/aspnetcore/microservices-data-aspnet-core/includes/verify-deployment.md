@@ -2,7 +2,7 @@ In this unit, you will:
 
 - Verify the newly deployed app.
 - Review code.
-- Explore data store related pods.
+- Explore the deployed services.
 
 [!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
 
@@ -57,11 +57,19 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 | *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous, with its own data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's not resilient. |
 | *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is a storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the health checks dashboard for monitoring the operational status of each service. |
 
-## Explore data store related pods
+## Explore the deployed services
 
-If you run the `kubectl get pods` command, you'll notice all the running pods in the Kubernetes cluster. For e.g:
+All the services of *:::no-loc text="eShopOnContainers":::* app gets deployed as [pods](https://kubernetes.io/docs/concepts/workloads/pods/) in the AKS cluster.
+
+Run the following command in the Azure Cloud Shell.
 
 ```bash
+kubectl get pods
+```
+
+The preceding command lists all the running pods in the Kubernetes cluster as shown in the output below.
+
+```console
 NAME                               READY   STATUS    RESTARTS   AGE
 backgroundtasks-7dccfd66f5-9qd4n   1/1     Running   2          6m45s
 basket-9d5694b46-jd4bl             1/1     Running   2          6m37s
@@ -81,10 +89,12 @@ webspa-67588b748-9kqf7             1/1     Running   0          4m43s
 webstatus-579d55c59d-tthv9         1/1     Running   0          4m34s
 ```
 
-If you notice, following containers/pods are used as different data stores in eShop app.
+The following pods listed below are used for the datastores by different microservices.
 
 - `sqldata-<random-guid>` pod as SQL instance.
 - `nosqldata-<random-guid>` pod as MongoDB instance.
-- `basket-<random-guid>` pod as Redis instance.
+- `basketdata-<random-guid>` pod as Redis instance.
 
-In the next unit, you'll change the Redis Cache used by the basket service.
+Currently, this works well for a dev scenario because all the services are in a single cluster. However, in a production scenario, it's recommended to use managed data services instead of running databases as containers within your Kubernetes cluster.
+
+Next, you'll learn to implement `Azure Cache for Redis` for basket microservice and `Azure Cosmos DB` for coupon microservice. Both are managed database offerings from the Azure cloud.

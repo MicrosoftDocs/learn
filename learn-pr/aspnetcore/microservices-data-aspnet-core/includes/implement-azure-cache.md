@@ -1,11 +1,12 @@
-As discussed in previous units, the basket service uses Redis to store shopping basket data. This unit explores replacing the services's Redis deployment with a cloud-based Redis service.
+In actual scenario, the *:::no-loc text="eShopOnContainers":::* app the basket service uses the `basketdata-<random-guid>` container to store the basket data. But for simplicity, in this tutorial, the basket service uses in-memory caching to store shopping basket data. In this unit, you'll explore replacing this basket service's in-memory data store with a cloud-based Redis service instance.
 
 In this unit, you will:
 
 - Create an Azure Cache for Redis instance.
-- Remove in-memory caching from the basket service.
-- Reconfigure the basket service to use the new Azure Cache for Redis instance.
+- Adding Azure Cache to Redis to the basket service.
+- Configure the basket service to use the new Azure Cache for Redis instance.
 - Redeploy the basket service.
+- Verify the deployment.
 
 > [!NOTE]
 > If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
@@ -84,19 +85,20 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
 
     The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration. The actual connection string value gets passed dynamically by the `settings.ConnectionString`. The connection to the Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. For more details, refer [Use Azure Cache for Redis with an ASP.NET Core web app](/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto?tabs=core5x)
 
-## Reconfigure the basket service
+## Configure the basket service to use the new Azure Cache for Redis instance
 
 In Kubernetes deployment, services store their configuration as [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object) object. So the `basket-api` config map file needs to be updated to point it to the newly created Azure Redis Cache instance.
 
-In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory:
-
-### Reconfigure the basket service
+In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory.
 
 In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
 Save your changes.
+
+> [!NOTE]
+> In the production scenario, it's not recommended to store the connection string as plain text. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store your secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
 
 At runtime, the connection string will be provided to the basket service as an environment variable. Within the code, the connection string is used by code in the following locations, illustrated below:
 
@@ -143,3 +145,7 @@ To deploy the updated *:::no-loc text="basket":::* service :
     ```
 
 When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful.
+
+## Verify the deployment
+
+// TO DO
