@@ -1,38 +1,38 @@
-In this exercise, you will set up an Azure Kubernetes Service (AKS) cluster, which is an approved Kubernetes distribution for App Service on Azure Arc. The exercise consists of the following tasks:
+In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for App Service on Azure Arc. The exercise consists of the following tasks: <!-- ID/SME: You'll notice I shortened many of the compound sentences in these units and broke them into two sentences. This is Acrolinx' preferred method of writing -- short, snappy sentences. It doesn't like compound sentences. I did this throughout the unit files and also in lab steps, so please proof lab steps. You'll likely think they're a little wierd sounding, but that's how Acrolinx likes it. Just FYI for you going forward and in case you're wondering why I changed everything to be short and concise. -->
 
-1. Deploy an AKS cluster
-1. Connect to the AKS cluster
+1. Deploy an AKS cluster.
+1. Connect to the AKS cluster.
 
 > [!NOTE]
 > App Service on Azure Arc doesn't support Windows node pools in AKS clusters.
 
 > [!NOTE]
-> The choice of AKS as the hosting platform for this module is not meant to represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Arc-enabled Kubernetes cluster.
+> Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Azure Arc-enabled Kubernetes cluster.
 
-This is the second exercise in the sequence of exercises of this module that takes you through the process of implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
+This is the second in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- ID/SME: Is there a reason to repeat the exercise sequence in this unit, when we already listed it in unit 1? It looks like we repeat it in unit 4, too. Didn't check beyond that one. -->:
 
-1. Prepare the lab environment
-1. Set up a Kubernetes cluster
-1. Connect the Kubernetes cluster to Azure Arc
-1. Implement App Service on the Azure Arc enabled Kubernetes cluster
-1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster
-1. Clean up the lab environment
+1. Prepare the lab environment.
+1. Set up a Kubernetes cluster.
+1. Connect the Kubernetes cluster to Azure Arc.
+1. Implement App Service on the Azure Arc-enabled Kubernetes cluster.
+1. Deploy an App Service web app to the Azure Arc-enabled Kubernetes cluster.
+1. Clean up the lab environment.
 
-:::image type="content" source="../media/u3-exercise2.png" alt-text="The image depicts the sequence of exercises with the default view of the second of them." border="false":::
+:::image type="content" source="../media/u3-exercise2.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the second exercise (Set up a Kubernetes cluster)." border="false":::
 
 
 ## Task 1: Deploy an AKS cluster
 
-In order to support the App Service on Azure Arc, an AKS cluster must satisfy the following requirements:
+To support the App Service on Azure Arc, an AKS cluster must satisfy the following requirements:
 
-- Run Kubernetes version 1.18.14 or newer
-- Feature a load balancer as its front-end service
-- Be Azure Active Directory (Azure AD) enabled
-- Constitute an approved App Service on Azure Arc distribution 
+- Run Kubernetes version 1.18.14 or newer.
+- Feature a load balancer as its front-end service.
+- Have Azure AD enabled.
+- Constitute an approved App Service on Azure Arc distribution.
 
 Use the following steps to deploy an AKS cluster that supports App Service on Azure Arc:
 
-1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following commands to set values of the variables that will be used to assign names to, respectively, the resource group that will contain the AKS cluster, the AKS cluster, its public IP address, and its Azure region:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, <!-- ID/SME: Is there a reason that there are two instances of "AKS Cluster" here? Should there be only one? --> its public IP address, and its Azure region:
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
@@ -44,7 +44,7 @@ Use the following steps to deploy an AKS cluster that supports App Service on Az
     > [!IMPORTANT]
     > During the preview, the only supported Azure region is **East US**.
 
-1. Run the following commands to create the resource group that will contain the AKS cluster and then provision the AKS cluster:
+1. Run the following commands to create the resource group that will contain the AKS cluster, and then provision the AKS cluster:
 
     ```azurecli-interactive
     az group create -l $LOCATION -n $K8S_CLUSTER_RG_NAME
@@ -55,9 +55,9 @@ Use the following steps to deploy an AKS cluster that supports App Service on Az
     > Wait for the cluster provisioning to complete. This should take about 5 minutes.
 
     > [!NOTE]
-    > The cluster contains a single worker node. While this is not recommended for production environments, it is sufficient for the evaluation purposes.
+    > The cluster contains a single worker node. While not recommended for production environments, it's sufficient for evaluation purposes.
 
-1. Run the following commands to identify the resource group hosting the cluster infrastructure resources and create a public IP address resource in that group:
+1. Run the following commands to identify the resource group that will host the cluster infrastructure resources, and then create a public IP address resource in that group:
 
     ```azurecli-interactive
     K8S_INFRA_RG_NAME=$(az aks show -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --query nodeResourceGroup -o tsv)
@@ -65,15 +65,15 @@ Use the following steps to deploy an AKS cluster that supports App Service on Az
     ```
 
     > [!IMPORTANT]
-    > You **must** create the public IP address resource in the cluster's infrastructure resource group in order for it to bind to the cluster's load balancer.
+    > You **must** create the public IP address resource in the cluster's infrastructure resource group for it to bind to the cluster's load balancer.
 
 
 ## Task 2: Connect to the AKS cluster
 
-Since the AKS cluster you deployed is Azure AD-enabled, you have the option of using a device code-based login to authenticate. However, for the sake of simplicity, you will retrieve the admin credentials from the cluster by relying on having the Azure Kubernetes Service Cluster Admin built-in role:
+The AKS cluster you deployed is Azure AD-enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using on the Azure Kubernetes Service Cluster Admin built-in role: <!-- ID/SME: Please confirm I didn't change the technical meaning of the preceding sentences. -->
 
 > [!NOTE]
-> For more information regarding AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](https://docs.microsoft.com/azure/aks/managed-aad).
+> For more information about AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](https://docs.microsoft.com/azure/aks/managed-aad).
 
 1. Run the following command to retrieve the admin credentials from the cluster and merge them into your local kubeconfig file:
 
@@ -81,7 +81,7 @@ Since the AKS cluster you deployed is Azure AD-enabled, you have the option of u
     az aks get-credentials -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --admin
     ```
 
-1. Run the following command to determine whether you have successfully connected to the cluster:
+1. Run the following command to determine whether you've successfully connected to the cluster:
 
     ```azurecli-interactive
     kubectl get ns
@@ -89,4 +89,4 @@ Since the AKS cluster you deployed is Azure AD-enabled, you have the option of u
 
 1. Examine the output and verify that it lists the namespaces on the target AKS cluster.
 
-Congratulations! You completed the second exercise of this module. In its exercise, you deployed an AKS cluster and connected to it.
+Congratulations! You've completed the second exercise of this module. You've deployed an AKS cluster and connected to it.
