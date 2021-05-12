@@ -4,8 +4,8 @@ title: Exercise - Provision the WebChat Channel
 metadata:
   title: Exercise - Provision the WebChat Channel
   description: Learn how to create a WebChat channel, which allows users to communicate with your Health Bot instance.
-  author: undefined
-  ms.author: undefined
+  author: leestott
+  ms.author: chnoring
   ms.date: 05/11/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
