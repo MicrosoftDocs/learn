@@ -1,4 +1,4 @@
-After the Azure HPC Cache is created, it’s time to point it to your data. Ideally there’s an ExpressRoute or high-speed connection between Azure and the data.
+After the Azure HPC Cache is created, it's time to point it to your data. Ideally there's an ExpressRoute or high-speed connection between Azure and the data.
 
 From the Azure portal, click the HPC Cache resource. On the left navigation, choose “Storage Targets.”
 
@@ -8,7 +8,7 @@ An HPC Cache “storage target” is the storage location where your HPC data is
 
 :::image type="content" source="../media/5-connect-to-storage-01-add-storage-target.png" alt-text="Screenshot showing the Add Storage Target pane for the Azure HPC Cache.":::
 
-In the new pane, provide a name for your storage target. This name doesn’t have the strict requirements that other fields have and can include spaces.
+In the new pane, provide a name for your storage target. This name doesn't have the strict requirements that other fields have and can include spaces.
 
 Leave the target type as NFS.
 

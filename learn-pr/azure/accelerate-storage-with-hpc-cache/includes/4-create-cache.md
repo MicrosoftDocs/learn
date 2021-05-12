@@ -47,7 +47,7 @@ At the bottom of the page, click the “Next: Tags” button to move to the next
 
 Tags help you label and manage your Azure resources. With tags, you can run reports to see how different groups are using Azure resources.
 
-If you’re using tags to track department resource costs for example, you could add your custom tags here.
+If you're using tags to track department resource costs for example, you could add your custom tags here.
 
 At the bottom of the page, click the “Next: Review + Create” button to move to the last page of the wizard.
 
@@ -63,7 +63,7 @@ If the validation check fails, red circles will appear above the pages that need
 
 Before creating your cache, review the information on this page. Confirm that the information has been entered correctly and understand the costs associated with using the cache. If changes need to be made, click on the page tabs at the top to return to those pages. Update the fields and return to the Review + Create page.
 
-The create process takes over 20 minutes. When you’re ready to begin creating the cache and its corresponding resources, click the Create button.
+The create process takes over 20 minutes. When you're ready to begin creating the cache and its corresponding resources, click the Create button.
 
 ## Summary
 

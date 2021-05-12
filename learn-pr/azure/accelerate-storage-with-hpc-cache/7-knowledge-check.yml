@@ -26,7 +26,7 @@ quiz:
     - content: "A third-party Marketplace image for accelerating networking for HPC workloads."
       isCorrect: false
       explanation: "Azure HPC Cache is a Microsoft technology that often reduces WAN bandwidth but is not a network accelerator."
-  - content: "To reach on-premises NFS storage, what two permissions are required to create Azure HPC Cache?"
+  - content: "To reach on-premises NFS storage, which two permissions are required to create Azure HPC Cache?"
     choices:
     - content: "Azure permissions to create NICs and storage permissions like `no_root_squash`"
       isCorrect: true
@@ -37,7 +37,7 @@ quiz:
     - content: "Storage admin to create local exports and root squash to deny unauthorized users"
       isCorrect: false
       explanation: "Exports are not needed to create an Azure HPC Cache. And root squash must be disabled on the storage target exports."
-  - content: "When creating the cache, which sizing option is best?"
+  - content: "When you create the cache, which sizing option is best?"
     choices:
     - content: "Cache sizes slightly smaller than the working set are best in order to best use resources."
       isCorrect: false
@@ -48,7 +48,7 @@ quiz:
     - content: "Cache sizes slightly larger than the working set are best in order to store all the data."
       isCorrect: true
       explanation: "Yes. Larger cache sizes hold all the data for the HPC tasks."
-  - content: "For the HPC Cache to connect to on-prem data, what is the recommended network path should it take?"
+  - content: "For the HPC Cache to connect to on-prem data, what network path should it take?"
     choices:
     - content: "VPN because data should treated as sensitive and therefore be kept encrypted"
       isCorrect: false
