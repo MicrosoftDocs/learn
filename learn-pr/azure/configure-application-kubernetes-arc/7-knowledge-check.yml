@@ -24,7 +24,7 @@ quiz:
     - content: Windows only
       isCorrect: false
       explanation: App Service on Azure Arc support only Linux node pools in AKS clusters.
-  - content: You have an Azure Arc-enabled AKS cluster. You created a custom location and are planning to create an Azure web app on the cluster. What do you have to do first?
+  - content: You have an Azure Arc enabled AKS cluster. You created a custom location and are planning to create an Azure web app on the cluster. What do you have to do first?
     choices:
     - content: Create an Azure App Service plan.
       isCorrect: false
