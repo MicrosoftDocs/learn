@@ -1,12 +1,11 @@
 Congratulations! You've learned about managed data services in a .NET microservices app. 
 
-In this module you:
+In this module, you:
 
-- Created an Azure Cache for Redis instance.
-- Replaced the original Redis microservice for the Azure Cache for Redis managed instance, by simply updating the connection strings.
-- Created a Cosmos DB instance that uses the MongoDB API.
-- Replaced the original MongoDB microservice for the Cosmos DB instance, by simply updating the connection string in the 
-- Used the Cosmos DB Data Explorer to inspect the discount service coupons.
+- Deployed a base version of *:::no-loc text="eShopOnContainers":::* to an AKS instance in your subscription.
+- Create an Azure Cache for Redis instance.
+- Create an Azure Cosmos DB instance.
+- Modify *:::no-loc text="eShopOnContainers":::* to use the above managed services instead of the Redis and MongoDB services in the initial cluster.
 
 [!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
