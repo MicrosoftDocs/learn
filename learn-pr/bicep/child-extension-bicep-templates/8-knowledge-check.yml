@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: |
       Your R&D team has asked you to deploy an Azure SQL database so they can compare it to Azure Cosmos DB.
-      A SQL database is a child resource of the SQL server resource.
+      A SQL database is a child resource of the Azure SQL logical server resource.
       Which of these statements is true?
     choices:
     - content: The SQL database resource may be in a different resource provider than its parent.
@@ -25,9 +25,9 @@ quiz:
     - content: You can use the `parent` property to tell Bicep about the relationship between the parent and child resources.
       isCorrect: true
       explanation: In Bicep, you define child resources by using the `parent` property, by using nested resources, or by constructing a child resource name directly.
-    - content: A SQL server instance is an implicit resource.
+    - content: An Azure SQL logical server instance is an implicit resource.
       isCorrect: false
-      explanation: You need to explicitly deploy a SQL server instance. It's not an implicit resource.
+      explanation: You need to explicitly deploy a logical server instance. It's not an implicit resource.
   - content: |
       You've been asked to deploy an extension resource with this type: `Microsoft.Authorization/roleAssignments`.
       Which of these approaches should you consider?
