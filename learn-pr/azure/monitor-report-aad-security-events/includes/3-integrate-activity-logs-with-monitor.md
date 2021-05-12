@@ -20,24 +20,24 @@ To use the Log Analytics workspace and Azure Monitor logs, make sure that you ha
   - *Report Reader*
   - *Global Administrator*
 
-## The Log Analytics workspace
+## Log Analytics workspace
 
 You know that Azure collects user data in the form of audit and sign-in log files, but the data can't be directly imported into Azure Monitor. First, it needs to be gathered in a Log Analytics workspace. Each workspace is unique and has its own data repository and configuration. When you configure the workspace, you can analyze the data by using log searches and table-based queries.
 
 Creating a Log Analytics workspace is straightforward.
 
-1. Sign in to your Azure portal or sandbox instance.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **All service** and, in the **Search** box, enter **log analytics**.
+1. Select **More service** and, in the **Search** box, enter **log analytics**.
 
-1. In the results list, select **Log Analytics workspaces**, and then select **Add** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
+1. In the results list, select **Log Analytics workspaces**, and then select **New** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
 
    a. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
    b. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
 
    The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
-1. Select **OK** to create the workspace.
+1. Select **Create** to create the workspace.
 
 You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
 
@@ -136,18 +136,18 @@ Other common filter commands include:
 | take *n*                           | Ideally suited to small result sets. Take returns *n* rows from the result set in no particular order. | AuditLogs \| Take 10                                         |
 | top *n* by *field*                 | Use this filter command to return the top *n* rows, sorted by the nominated *field*. | AuditLogs \| Top 10 by timeGenerated                         |
 | sort by *field* (desc)             | If you want to sort only the result set, you can use the sort command. You need to specify the field to sort on, and then you can optionally add the *desc* instruction to specify a descending sort pattern. | AuditLogs \| Sort by timeGenerated desc                      |
-| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDataTime >= ago(2d)                |
+| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d)                |
 | project *fields*                   | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
 
 You can use many other commands to build your queries. You can find out more information about the query commands you can use to filter your data at the links provided at the end of this module.
 
-#### An example sign-in query
+#### Example sign-in query
 
 Let's suppose you want to know the most-used applications requested and signed in to over the last week. Your query would look something like this:
 
 ```kusto
 SigninLogs
-| where CreatedDataTime >= ago(7d)
+| where CreatedDateTime >= ago(7d)
 | summarize signInCount = count() by AppDisplayName
 | sort by signInCount desc
 ```
@@ -156,11 +156,11 @@ Or, if you want to see how many of your users were flagged as risky in the last 
 
 ```kusto
 SigninLogs
-| where CreatedDataTime >= ago(14d)
+| where CreatedDateTime >= ago(14d)
 | where isRisky == true
 ```
 
-#### An example audit query
+#### Example audit query
 
 Now let's suppose you want to know the most common user event for the last week. You would use a query like this:
 
@@ -179,7 +179,7 @@ Alerts aren't dissimilar to queries, the principal difference being that they ru
 
    ![Screenshot of the "Set alert" button.](../media/3-set-query-alert.png)
 
-   The **Create rule** page opens.
+   The **Create rule** pane opens.
 
    If you want to be alerted when more than 10 applications are used in the past week, you would run the following query.
 

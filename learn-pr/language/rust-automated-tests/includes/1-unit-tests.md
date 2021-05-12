@@ -147,6 +147,6 @@ mod add_function_tests {
 
 The `cfg` attribute controls conditional compilation and will only compile the thing it's attached to if the predicate is `true`. The `test` compilation flag is issued automatically by Cargo whenever we execute the command `$ cargo run`, so it will always be true when we run our tests.
 
-The `use super::*;` declaration is necessary for the code inside the `add_funtcion_tests` module to access the `add` in the outer module.
+The `use super::*;` declaration is necessary for the code inside the `add_function_tests` module to access the `add` in the outer module.
 
 You can find the code used in this unit at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f74afccf321c642e7ebea8633a3f4b32&azure-portal=true).

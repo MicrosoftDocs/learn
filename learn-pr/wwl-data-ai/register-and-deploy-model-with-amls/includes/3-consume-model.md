@@ -34,7 +34,7 @@ predictions = json.loads(response)
 
 # Print the predicted class for each case.
 for i in range(len(x_new)):
-    print (x_new[i]), predictions[i] )
+    print (x_new[i], predictions[i])
 ```
 
 ## Using a REST endpoint

@@ -122,7 +122,7 @@ Applications that you add (represented as "App (yours)" in the diagram) include:
 
 - Apps you published using the Azure AD Application Proxy.
 
-### Notes and exceptions to service principles
+### Notes and exceptions to service principals
 
 Not all service principals point back to an application object. When Azure AD was originally built, the services provided to applications were more limited, and the service principal was sufficient for establishing an application identity. The original service principal was closer in shape to the Windows Server Active Directory service account. For this reason, it's still possible to create service principals through different pathways, such as using Azure AD PowerShell, without first creating an application object. The Microsoft Graph API requires an application object before creating a service principal.
 

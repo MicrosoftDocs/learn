@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2020
+  ms.date: 04/25/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -14,25 +14,25 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is an element of a Spark Pool in Azure Synapse Analytics?"
+  - content: "What is an element of an Apache Spark Pool in Azure Synapse Analytics?"
     choices:
-    - content: "HDI."
+    - content: "Azure HDInsight."
       isCorrect: false
-      explanation: "InCorrect. HDI is a implementation by Microsoft of Open Source Spark, managed on the Azure Platform."
-    - content: "Spark Console."
+      explanation: "Incorrect. Azure HDInsight is an implementation by Microsoft of open source Apache Spark, managed on the Azure Platform."
+    - content: "Apache Spark Console."
       isCorrect: false
-      explanation: "Incorrect. It is highly recommended to use the notebook or IntelliJ experiences instead of a Spark Console for Spark Pools in Azure Synapse Analytics"
+      explanation: "Incorrect. It is highly recommended to use the notebook or IntelliJ experiences instead of an Apache Spark Console for Apache Spark Pools in Azure Synapse Analytics"
     - content: "Spark Instance."
       isCorrect: true
-      explanation: "Correct, The definition of a Spark pool is that, when instantiated, it is used to create a Spark instance that processes data."
-  - content: "In order to create a Spark pool in Azure Synapse Analytics, what needs to be created in order to do so?"
+      explanation: "Correct. The definition of an Apache Spark pool is that, when instantiated, it is used to create an Apache Spark instance that processes data."
+  - content: "In order to create an Apache Spark pool in Azure Synapse Analytics, what needs to be created first?"
     choices:
-    - content: "Synapse Analytics Workspace."
+    - content: "Azure Synapse Analytics Workspace."
       isCorrect: true
-      explanation: "Correct. In order to create a Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace."
-    - content: "Azure Databricks."
+      explanation: "Correct. In order to create an Apache Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace."
+    - content: "Azure Synapse Studio."
       isCorrect: false
-      explanation: "Incorrect. In order to create a Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace."
-    - content: "A Spark Instance"
+      explanation: "Incorrect. Azure Synapse Studio is the web interface that enables you to work with all aspects of Azure Synapse Analytics."
+    - content: "An Apache Spark Instance."
       isCorrect: false
-      explanation: "Incorrect. The definition of a Spark pool is that, when instantiated, it is used to create a Spark instance automatically, that processes data."
+      explanation: "Incorrect. The definition of an Apache Spark pool is that, when instantiated, it is used to create a Spark instance automatically, it is not a requirement to create a Spark pool in Azure Synapse Analytics."

@@ -1,22 +1,26 @@
 On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol.
 
-With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu Data Science Virtual Machine images support SSH connection.
+With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu DSVM images support SSH connection.
 
-## Connect to a Windows server by using RDP 
+## Connect to a Windows server by using RDP
 
-To connect to a Windows DSVM with Remote Desktop: 
+To connect to a Windows DSVM with Remote Desktop:
 
 1. If necessary, download the [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true).
+
 1. Go to the DSVM in the portal.
-1. Select **Connect** and **RDP**.
-1. Select **Download RDP File**. 
+
+1. Select **Connect** > **RDP**.
+
+1. Select **Download RDP File**.
+
 1. Open the file in Microsoft Remote Desktop to connect.
 
 ![Screenshot of the portal showing the RDP file download page.](../media/download-rdp-file.png)
 
 ## Connect to the command line by using SSH
 
-To access the command line of your Data Science Virtual Machine, you'll use:
+To access the command line of your DSVM, you'll use:
 
 - An SSH client running in a terminal on your local machine.
 - The username and password that you specified during creation.
@@ -51,4 +55,4 @@ From a terminal or a PowerShell console, run the following code. Replace your us
 ssh UserName@1.1.1.1
 ```
 
-The first time you connect via SSH, you'll receive a warning. Accept the fingerprint and you'll be presented with a password prompt. Enter the password you specified while creating the Data Science Virtual Machine. You should see a greeting screen and a command prompt.
+The first time you connect via SSH, you'll receive a warning. Accept the fingerprint and you'll be presented with a password prompt. Enter the password you specified while creating the DSVM. You should see a greeting screen and a command prompt.

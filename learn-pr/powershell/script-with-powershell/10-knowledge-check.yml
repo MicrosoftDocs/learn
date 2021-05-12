@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions.
+  ms.date: 02/04/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which file extension is correct for a script? 
+      choices:
+        - content: .pm1
+          isCorrect: false
+          explanation: Incorrect. It should be .ps1.
+        - content: .ps
+          isCorrect: false
+          explanation: Incorrect. It should be .ps1.
+        - content: .ps1
+          isCorrect: true
+          explanation: Correct! 
+    - content: What's the correct way to declare a required parameter?
+      choices:
+        - content: "Add this decorator: `[Required]`."
+          isCorrect: false
+          explanation: Incorrect. There's no `Required` decorator.
+        - content: "Add this decorator: `[Parameter(Mandatory)]`."
+          isCorrect: true
+          explanation: "`Parameter` is the correct decorator. `Mandatory` is the correct value. You can also type it like this: `[Parameter(Mandatory=$true)]`" 
+        - content: You can't. You need to verify that parameter values are set.
+          isCorrect: false
+          explanation: Incorrect. You can use the `Parameter` decorator and the `Mandatory` value.
+    - content: How can you cause a terminating error?
+      choices:
+        - content: Use the keyword `Throw` followed by a string or object.
+          isCorrect: true
+          explanation: That's correct.
+        - content: 'Create a new instance of the class `Error`, like this: `new Error("error message")`'
+          isCorrect: false
+          explanation: That's not how you do it.
+        - content: 'Use the common parameter `ErrorAction`, like this: `-ErrorAction Error`'
+          isCorrect: false
+          explanation: You can use an `-ErrorAction` to cause an error, but it needs to have the `Stop` argument. `Error` isn't a valid argument.

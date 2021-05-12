@@ -3,12 +3,13 @@ uid: learn.data-ai.introduction-to-data-streaming.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 01/31/2019
+  description: "Introduction"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

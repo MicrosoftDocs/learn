@@ -1,9 +1,10 @@
-In this module, you learned how to use Azure Cognitive Search to create a basic search solution. At its simplest, an Azure Cognitive Search solution consists of:
+In this module, you learned how to use Azure Cognitive Search to create a cognitive search solution that consists of:
 
 - A *data source* where the data to be indexed is stored (though you can also push data directly into an index by using the API).
+- A *skillset* that defines and enrichment pipeline of cognitive skills to enrich the index data.
 - An *index* that defines fields, which the user can query.
 - An *indexer* that populates the fields in the index with values extracted from the source data.
 
-You can use the Azure Cognitive Search REST APIs, or its Microsoft .NET SDK to create and manage index objects, and to implement a client application that queries the index to retrieve information.
+You can use the Azure Cognitive Search REST APIs or SDKs to create and manage index objects, and to implement a client application that queries the index to retrieve information.
 
 For more information about Azure Cognitive Search, take a look at the [service documentation](https://docs.microsoft.com/azure/search/).

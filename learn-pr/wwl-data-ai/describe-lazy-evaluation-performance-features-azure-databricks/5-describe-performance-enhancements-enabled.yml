@@ -5,8 +5,8 @@ metadata:
   title: Describe performance enhancements enabled by shuffle operations and Tungsten
   description: "Describe performance enhancements enabled by shuffle operations and Tungsten"
   ms.date: 01/08/2021
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

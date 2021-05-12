@@ -1,14 +1,14 @@
-External tables are useful when you want to control access to external data in SQL serverless and is commonly used in PolyBase activities. If you want to use tools, such as Power BI, in conjunction with SQL serverless, then external tables are needed. External tables can access two types of storage: 
+External tables are useful when you want to control access to external data in serverless SQL pools and is commonly used in PolyBase activities. If you want to use tools, such as Power BI, in conjunction with serverless SQL pools, then external tables are needed. External tables can access two types of storage: 
 
 -	Public storage where users access public storage files. 
--	Protected storage where users access storage files using SAS credential, Azure AD identity, or Managed Identity of Synapse workspace. 
+-	Protected storage where users access storage files using SAS credential, Azure AD identity, or the Managed Identity of an Azure Synapse workspace. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Polybase/player?format=ny] 
 
 ## Prerequisites 
-Your first step is to create a database where the tables will be created. Then initialize the objects by executing [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the following objects that are used in this sample: 
-- DATABASE SCOPED CREDENTIAL sqlondemand that enables access to SAS-protected 
+Your first step is to create a database where the tables will be created. Then initialize the objects by executing the following [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the following objects that are used in this sample: 
 - https://sqlondemandstorage.blob.core.windows.net Azure storage account. 
+- DATABASE SCOPED CREDENTIAL sqlondemand that enables access to SAS-protected 
 
     ```sql
     CREATE DATABASE SCOPED CREDENTIAL [sqlondemand] 
@@ -42,9 +42,7 @@ Your first step is to create a database where the tables will be created. Then i
 
 ## Create an external table on protected data 
 
-With the database scoped credential, external data source, and external file format defined.
-
-You can create external tables that access data on an Azure storage account that allows access to users with some Azure AD identity or SAS key. You can create external tables the same way you create regular SQL Server external tables. The following query creates an external table that reads population.csv file from SynapseSQL demo Azure storage account that is referenced using sqlondemanddemo data source and protected with database scoped credential called sqlondemand.  The data source and database scoped credential are created in [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql). 
+With the database scoped credential, external data source, and external file format defined, you can create external tables that access data on an Azure storage account that allows access to users with some Azure AD identity or SAS key. You can create external tables the same way you create regular SQL Server external tables. The following query creates an external table that reads the population.csv file from the SynapseSQL demo Azure storage account that is referenced using sqlondemanddemo data source and is protected with the database scoped credential called sqlondemand.  The data source and database scoped credential are created in the [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql). 
 
 > [!NOTE]
 > Change the first line in the query, i.e. [mydbname], so you’re using the database you created. 
@@ -68,7 +66,7 @@ WITH (
  
 ## Create an external table on public data 
 
-You can create external tables that read data from the files placed on publicly available Azure storage. This setup script will create public external data source and Parquet file format definition that is used in the following query: 
+You can create external tables that read data from the files placed on publicly available Azure storage. This setup script will create a public external data source with a Parquet file format definition that is used in the following query: 
 
 ```sql
 CREATE EXTERNAL TABLE Taxi ( 

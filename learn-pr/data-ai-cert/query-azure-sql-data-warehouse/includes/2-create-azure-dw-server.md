@@ -5,39 +5,43 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-port=true).
 
-1. In the upper-left corner, select **+ Create a resource**.
+1. Select **Create a resource**.
 
-1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
+1. Select **Databases**, search for and select **Azure Synapse Analytics** to start the creation process.
 
     ![Creating a data warehouse in Azure Synapse Analytics](../media/2-create-sql-dw.png)
 
-1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
+    The **Azure Synapse Analytics** pane appears.
 
-    - Subscription: the name of the subscription you are using in this lab
+1. Select **Create**. The **Create Synapse workspace** pane appears.
 
-    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab
+1. On the **Basics** tab, enter the following values for each setting.
 
-    - Resource group name: **mslearn-demodw**.
+    | Setting | Value |
+    |---|---|
+    | **Project details** |
+    | Subscription | Select a Subscription |
+    | Resource group | Select or create a resource group |
+    | Managed resource group | Enter *mslearn-demodw* |
+    | **Workspace details** |
+    | Workspace name | Enter *sampledatawhxx*  |
+    | Region | Select a location close to you |
+    | Select Data Lake Storage Gen2 | **From subscription** |
+    | Account name | Enter *sampledatawhxx*, where **xx** are your initials |
+    | File system name | Enter *demodwxx*, where **xx** are your initials |
 
-    - Database warehouse name: **sampleDataWH**.
+1. Select **Next:Security**.
 
-    - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-        - Server name: **sampledatawhxx**, where **xx** are your initials
-        - Server admin login: **dwdbadmin**.
-        - Password: **Pa55w.rd**
-        - Confirm Password: **Pa55w.rd**
-        - Location: choose a **location** near to you.
-        - Select the checkbox to Allow Azure services to access server
+1. On the **Security** tab, enter the following values for each setting.
+
+    | Setting | Value |
+    |---|---|
+    | **SQL administrator credentials** |
+    | Admin username | sqladminuser |
+    | Password | **Pa55w.rd** |
+    | Confirm password | **Pa55w.rd** |
     
-    ![Creating the Azure Synapse Analytics server](../media/2-select-asdw-server.png)
-    
-1. Select **OK** to continue.
-    
-1. Select the **Select Performance level** hyperlink to open the **Configure performance** view. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. Click **Apply**.
-    
-    ![Selecting performance level](../media/2-select-performance-level.png)
-    
-1. Select **Review + Create** at the top of the screen.
+1. Select **Review + create**.
 
 1. Select **Create** to start the deployment process.
 
@@ -62,4 +66,3 @@ Here, you can see the traffic that's processing. You also can access various fea
 As an example, the **Server name** and **Connection strings** are two useful items of information you can access on this view.
 
 ![Showing the SQL database](../media/2-explore-sql-db.png)
-

@@ -74,9 +74,9 @@ If you need to remove the role assignment from a user, you can also do that from
 
 1. In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
 
-2. Select **Assigned roles**, select the name of the role your wish to removed.
+2. Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
 
-3. Select the check box for the user who will be removed from the role, and then select **Remove assignments**.
+3. Select the check box for the user `Chris Green` who will be removed from the role, and then select **Remove assignments**.
 
    > [!div class="mx-imgBorder"]
    > ![Screen image displaying the Remove assignments dialog box with Yes highlighted](../media/directory-role-remove-role.png)

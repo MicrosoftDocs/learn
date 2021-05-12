@@ -10,7 +10,7 @@ The **OPENROWSET** function enables you to read the content of CSV file by provi
 
 ## Read a csv file
 
-The easiest way to see to the content of your **CSV** file is to provide the **file URL** to the **OPENROWSET** function. You then include the csv **FORMAT**, and **2.0 PARSER_VERSION**. If the file is publicly available or if your Azure AD identity can access this file, you should be able to see the content of the file using the query like the one shown in the following example:
+The easiest way to see the content of your **CSV** file is to provide the **file URL** to the **OPENROWSET** function. You then include the csv **FORMAT**, and **2.0 PARSER_VERSION**. If the file is publicly available or if your Azure AD identity can access this file, you should be able to see the content of the file using the query like the one shown in the following example:
 
 ```sql
 select top 10 *
@@ -21,7 +21,7 @@ from openrowset(
     firstrow = 2 ) as rows
 ```
 
-The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to [setup server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential).
+The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to [setup server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential).
 
 ## Data source usage
 

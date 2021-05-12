@@ -54,7 +54,7 @@ SQL Server offers several isolation levels to allow you to define the level of c
 
 SQL Server also includes two isolation levels that include row-versioning.
 
-**Read Committed Snapshot** - In this level read operations take no row or page logs, and the engine presents each operation with a transactionally consistent snapshot of the data as it existed at the start of the query. This level is typically used when users are running frequent reporting queries against an OLTP database, in order to prevent the read operations from blocking the write operations.
+**Read Committed Snapshot** - In this level read operations take no row or page locks, and the engine presents each operation with a transactionally consistent snapshot of the data as it existed at the start of the query. This level is typically used when users are running frequent reporting queries against an OLTP database, in order to prevent the read operations from blocking the write operations.
 
 **Snapshot** - This level provides transaction level read consistency through row versioning. This level is vulnerable to update conflicts. If a transaction running under this level reads data modified by another transaction, an update by the snapshot transaction will be terminated and roll back. This is not an issue with read committed snapshot isolation.
 

@@ -236,6 +236,6 @@ The final step is to execute a query against the temporary table that returns re
 1. On the right of the **RESULTS** window, click the lower icon, which displays the **CHART** window.
 1. In the **Chart Type** drop-down list, select **timeSeries**. Azure Data Studio displays a graph that shows how the **Batch Requests/Sec** counter has varied over time.
 
-    ![Time series chart in Azure Data Studio](../media/4-display-counter-over-time.png)
+    ![Screenshot of Azure Data Studio displaying query and the resulting time series chart.](../media/4-display-counter-over-time.png)
 
 1. Close **Azure Data Studio**.

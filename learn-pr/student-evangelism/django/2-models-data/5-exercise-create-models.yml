@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.exercise-create-models
+title: Exercise - Create models
+metadata:
+  title: Exercise - Create models
+  description: Learn how to create models in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-create-models.md)] 

@@ -53,7 +53,7 @@ If you don't configure a health probe, Application Gateway creates a default pro
 
 Application Gateway requires a virtual network in which to operate. You must create this virtual network and a dedicated subnet before setting up Application Gateway. Application Gateway uses a number of private addresses for internal use and for communicating with each instance if the gateway scales out. For example, If you plan on scaling out to four instances, create a /28 size subnet. If you're likely to scale to more instances, then create a bigger subnet. 
 
-You can expose the Application Gateway through a public IP address, or you can or keep it private by only giving it a private IP inside virtual network. This is useful if you have internal sites that you would like to use Application Gateway to provide load balancing.
+You can expose the Application Gateway through a public IP address, or you can keep it private by only giving it a private IP inside virtual network. This is useful if you have internal sites that you would like to use Application Gateway to provide load balancing.
 
 ## Application Gateway options
 

@@ -32,7 +32,7 @@ These default web parts are
 
 At the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
-![Screenshot showing the Customize dashboard controls](../media/6-customise-dashboard-controls.png)
+![Screenshot showing the Customize dashboard controls.](../media/6-customise-dashboard-controls.png)
 
 ## Select dashboard
 
@@ -61,7 +61,7 @@ Although you can edit a dashboard by downloading the JSON file, changing values 
 
 The dashboard will switch to edit mode.
 
-![Screenshot showing the dashboard in the Edit mode](../media/6-edit-dashboard.png)
+![Screenshot showing the dashboard in the Edit mode.](../media/6-edit-dashboard.png)
 
 On the left-hand side appears the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
 

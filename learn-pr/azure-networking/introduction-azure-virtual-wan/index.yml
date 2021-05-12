@@ -20,7 +20,7 @@ prerequisites: |
   - Intermediate-level knowledge of networking concepts such as routing, hubs, switches, and DNS. 
   - Beginner-level knowledge of Azure networking services, including virtual networks, ExpressRoute, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure regions. 
   - Intermediate-level knowledge of security concepts such as the zero-trust security model, identity management, and role-based access controls. 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-virtual-wan.svg
 ratingEnabled: true
 levels:
 - beginner

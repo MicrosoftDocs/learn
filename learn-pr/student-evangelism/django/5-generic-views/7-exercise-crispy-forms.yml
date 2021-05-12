@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.generic-views.exercise-crispy-forms
+title: Exercise - Implement django-crispy-forms
+metadata:
+  title: Exercise - Implement django-crispy-forms
+  description: Learn how to implement django-crispy-forms.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-crispy-forms.md)]

@@ -31,29 +31,34 @@ You create your service principal:
 - Through CLI commands
 - By using API calls
 
-## Using Microsoft identity platform in your applications
+## Use Microsoft identity platform in your applications
 
-Microsoft identity platform simplifies the way your application authenticates with Azure AD. It provides a unified way to authenticate your apps. When an application successfully authenticates with Azure AD, it receives a unique token. The application uses this token each time it makes a call to an API or a call to access a service. To build an application, use Microsoft Authentication Library (MSAL) to provide single sign-on support.
+Microsoft identity platform simplifies the way your application authenticates with Azure AD. It provides a unified way to authenticate your apps. When an application successfully authenticates with Azure AD, it receives a unique token. The application uses this token each time it makes a call to an API, or a call to access a service. To build an application, use Microsoft Authentication Library (MSAL) to provide single sign-on support.
 
-You can provision an application for Microsoft identity platform in several ways. Here we'll use the portal to register an application in Azure:
+You can provision an application for Microsoft identity platform in several ways. Here, we'll use the portal to register an application in Azure.
 
 1. Sign in to the Azure portal, and select **Azure Active Directory**.
-1. Select **App registrations**. Then in the upper-left corner, select **New registration**.
+
+1. Select **App registrations**.
+
+1. In the upper-left corner, select **New registration**.
 
     ![Screenshot showing how to add an application to Azure AD](../media/2-adding-an-app.png)
 
 1. Enter a display name for the app.
+
 1. Specify supported account types. Choose from the following accounts:
    - Accounts within your company's Azure AD tenant.
-   - Accounts in any company's Azure AD tenant. 
+   - Accounts in any company's Azure AD tenant.
    - Any organization accounts and personal accounts, such as Microsoft or Xbox.
-1. (Optional) Choose a **redirect URI** parameter. The two available types are **Web** and **Public Client**. A redirect URI takes the form of a web link (HTTPS). The link doesn't need to be valid unless you select a public client.
+
+1. (*Optional*) Choose a **redirect URI** parameter. The two available types are **Web** and **Public Client**. A redirect URI takes the form of a web link (HTTPS). The link doesn't need to be valid unless you select a public client.
 
 When you finish the steps, the application is registered with Azure AD. It's also associated with a service principal.
 
-## Assigning application roles
+## Assign application roles
 
-Azure AD applications must be assigned roles so that they can work with other services. Azure uses role-based access control (RBAC) to tightly manage access to Azure resources and manage how those resources are used. An application's roles determine its permissions and scope.
+Azure AD applications must be assigned roles so that they can work with other services. Azure uses role-based access control (RBAC) to tightly manage access to Azure resources, and manage how those resources are used. An application's roles determine its permissions and scope.
 
 RBAC permissions are inherited from the level of the scope set. For example, if you assign the reader role to a resource group, read permissions are assigned to all resources within that group.
 
@@ -66,21 +71,21 @@ Use the Azure portal to assign the roles that your app needs to access the key v
 1. In the **Add a role** assignment pane, select **Add**.
 1. Choose the role that you need.
 1. Accept the default **assign access to** option: Azure AD user, group, or service principal.
-1. Search for your application. It doesn't appear in the drop-down list. 
+1. Search for your application. It doesn't appear in the dropdown list.
 1. Select the application, and then select **Save**.
 
-## Managing keys and permissions
+## Manage keys and permissions
 
 To access Azure resources by using service principals, you need two parameters:
 
-- **Directory (tenant) ID**: The unique ID that identifies the Azure AD tenant.
-- **Application (client) ID**: The unique ID that identifies your Azure AD application.
+- **Directory (tenant) ID**: Unique ID that identifies the Azure AD tenant.
+- **Application (client) ID**: Unique ID that identifies your Azure AD application.
 
 ![Screenshot showing how to add a client secret](../media/2-adding-a-secret.png)
 
 To authenticate requests, the application needs credentials. The credentials allow the application to identify itself. Choose from two forms of credentials:
 
-- **Certificate**: You generate a certificate locally and then upload the *.cer*, *.pem*, or *.crt* file. A certificate is commonly referred to as a public key.
+- **Certificate**: You generate a certificate locally, and then upload the *.cer*, *.pem*, or *.crt* file. A certificate is commonly referred to as a public key.
 - **Client secret**: This complex secret string is generated in Azure. A client secret is also known as an application password.
 
 Whether you use a client secret or a certificate, you need to define when this credential will expire. The expiry varies by organization, but it's a good practice to pick one or two years.

@@ -1,4 +1,4 @@
-To start to create the program, make a folder somewhere on your computer that you can access easily. Call the folder something like SpaceRockProject. Then open the file [rocks.txt](../resources/rocks.txt) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we're going to be reading in Python.
+To start to create the program, make a folder somewhere on your computer that you can access easily. Call the folder something like SpaceRockProject. Then open the file [rocks.txt](../resources/rocks.txt?azure-portal=true) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we're going to be reading in Python.
 
 :::image type="content" source="../media/save-rock-file.png" alt-text="Screenshot showing how to save the rock text file.":::
 

@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
+metadata:
+  title: Design a multidimensional schema to optimize analytical workloads
+  description: "Design a multidimensional schema to optimize analytical workloads"
+  ms.date: 04/06/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a multidimensional schema to optimize analytical workloads
+summary: In this module, you will understand the common schema implemented in a data warehouse.
+abstract: |
+  In this module, you will:
+  *   Design and implement a star schema
+  *   Design and implement a snowflake schema
+  *   Design and implement a time dimension table
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/azure-synapse-analytics-multi-dimensional-schema.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.introduction
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-star-schema
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-snowflake-schema
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-snowflake-schema
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-time-dimension-table
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-populate-time-dimension-table
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.knowledge-check
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.summary
+badge:
+  uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.badge

@@ -55,14 +55,14 @@ Now that we located the **Detect sentiment** action, let's create an instance of
 
 Next, we'll configure our logic app to pass the tweet text to the **Detect sentiment** action.
 
-1. In the **Detect Sentiment** step, select **Text** from the **Add new parameter** dropdown.
+1. In the **Detect Sentiment** step, select **documents** from the **Add new parameter** dropdown.
 
-1. Select the **Text** field in the **Detect sentiment** action.
+1. Select the **documents Text** field in the **Detect Sentiment** action.
 
-1. In the **Dynamic** content popup, select **tweet text**.
+1. In the **Dynamic** content popup, select **Tweet text**.
 
     > [!NOTE]
-    > If you are using the RSS **When a feed item is published** trigger, please send the **FeedSummary** to the Text Analytics service.
+    > If you are using the RSS **When a feed item is published** trigger, send the **FeedSummary** to the Text Analytics service.
 
 1. Select **Save** in the Logic Apps Designer.
 

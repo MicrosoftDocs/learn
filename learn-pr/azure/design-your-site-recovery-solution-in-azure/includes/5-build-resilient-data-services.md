@@ -28,15 +28,15 @@ Databases in one database server can be included in a single auto failover group
 
 ## Automated backup for Azure SQL Database
 
-Azure SQL Database can make backups of your databases that are stored between 7 and 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe even if something happens to a data center. You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest and all SQL databases you create will automatically have transparent data encryption enabled by default.
+Azure SQL Database can make backups of your databases that are stored between 7 and 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe, even if something happens to a data center. You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest and all SQL databases you create will automatically have transparent data encryption enabled by default.
 
 SQL Database does backups automatically for you in the background. It creates backups of your databases on different intervals, depending on the type of backup. For example, SQL Database creates backups for transaction logs at an interval of 5-10 minutes. SQL Database also creates full backups of your databases every week, and differential backups for any data that has changed since the last full backup, every 12 hours. The first full backup happens as soon as your database is created. How long it takes to complete a full backup depends on the size of your database. Backups are kept in storage blobs that provide read access, and then copied into a paired data center.
 
-Databases can be restored to a version that's been backed up. If you've configured long-term retention, this backup might be for up to 10 years. You can restore deleted databases back to the time before their deletion and up to the retention limit in your retention policy. SQL Database can restore databases to a different geographical region. This process is done through geo-restore, which makes it possible to recover databases from one region to another in case something happens to an entire region.
+Databases can be restored to a version that's been backed up. If you've configured long-term retention, this backup might be for up to 10 years. You can restore deleted databases back to the time before their deletion, and up to the retention limit in your retention policy. SQL Database can restore databases to a different geographical region. This process is done through geo-restore, which makes it possible to recover databases from one region to another in case something happens to an entire region.
 
 ## Geo-replicate with Azure Cosmos DB
 
-Azure Cosmos DB is a low-latency, multi-model database service that allows you to distribute data globally and easily scale, elastically and rapidly.
+Azure Cosmos DB is a low-latency, multi-model database service that enables you to distribute data globally and easily scale, elastically and rapidly.
 
 In Azure Cosmos DB, all data is replicated transparently in the regions you've set for your Azure Cosmos DB account. Azure Cosmos DB saves data inside containers that make up your database, and all your containers are partitioned.
 

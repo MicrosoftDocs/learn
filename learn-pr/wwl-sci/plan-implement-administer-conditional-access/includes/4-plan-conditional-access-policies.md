@@ -206,7 +206,7 @@ User signs into app using an unapproved browser
 :::column-end:::
 :::column:::
 
-Admin is prompted to MFA
+User is prompted to MFA
 
 :::column-end:::
 :::row-end:::

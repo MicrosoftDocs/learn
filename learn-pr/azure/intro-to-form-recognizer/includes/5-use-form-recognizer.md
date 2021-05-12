@@ -11,7 +11,7 @@ For more guided hands-on learning on Form Recognizer, we have more Learn modules
 ## Deploy Form Recognizer
 
 To create the Form Recognizer resource and deploy the webapp, complete the following three steps:
-  
+
 1. Once the Cloud Shell is loaded and shows a prompt, copy the command below and paste it into the Cloud Shell by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
   
     Run the following command in the Cloud Shell:

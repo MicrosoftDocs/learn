@@ -28,9 +28,9 @@ Storage Explorer automatically opens after installation.
 
 ## Connect to an Azure account
 
-When you first open Storage Explorer, it displays the Connect to Azure Storage wizard.
+When you first open Storage Explorer, it displays the **Connect to Azure Storage** wizard.
 
-1. First, connect to Azure. There are several **Azure environment** options to select from. Select **Azure** and then select **Next**.
+1. First, connect to Azure. There are several **Azure environment** options to select from. Select **Azure**, and then select **Next**.
 
     ![Screenshot that shows the Connect to Azure Storage wizard](../media/3-storage-explorer-connect.png)
 
@@ -38,17 +38,17 @@ When you first open Storage Explorer, it displays the Connect to Azure Storage w
 
     ![Screenshot that shows the Azure sign-in page](../media/3-storage-explorer-azure-sign-in.png)
 
-1. When you've signed in to your Azure instance, the associated Azure account and Azure subscription are displayed in the **Account Management** section.
+1. When you've signed in to your Azure instance, the associated Azure account and Azure subscription appear in the **Account Management** section.
 
     ![Screenshot that shows the account management panel after signing in to an Azure account](../media/3-account-panel-subscriptions-apply.png)
 
-   Confirm that the **Concierge Subscription** subscription is slected and account details are correct, and then select **Apply**.
+   Confirm that the **Concierge Subscription** subscription is selected and account details are correct, and then select **Apply**.
 
 You've now connected Storage Explorer to your Azure subscription. Leave Storage Explorer open while you work through the next steps.
 
 ## Create a storage account and add a blob
 
-1. In Azure Cloud Shell, use the following command to create a storage account:
+1. In Azure Cloud Shell, run the following command to create a storage account.
 
     ```azurecli
     az storage account create \
@@ -72,15 +72,15 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
     ![Screenshot that shows the shortcut menu options for the Blob Containers folder](../media/3-storage-explorer-create-blob-context-menu.png)
 
-1. Name the container **myblobcontainer** and select **Enter**.
+1. Name the container **myblobcontainer**, and press <kbd>Enter</kbd>.
 
     Each created container appears in a tab to the right of the resource tree.
 
    ![Screenshot that shows the content and details of the new myblobcontainer blob container](../media/3-storage-explorer-create-blob-view.png)
 
-1. Upload a blob to the container. In the **myblobcontainer** pane, select **Upload**, and then select **Upload Files**.
+1. Upload a blob to the container. In the **myblobcontainer** pane, select **Upload**, and then select **Upload Files**. The **Upload Files** dialog box appears.
 
-1. For **Selected files**, select the ellipsis (**...**). Browse to a small file on your device and select **Open**. Then, select **Upload** to upload the file.
+1. For **Selected files**, select the ellipsis (**...**). Browse to a small file on your device, and select **Open**. Then, select **Upload** to upload the file.
 
     ![Screenshot that shows the Upload Files dialog box](../media/3-upload-blob.png)
 
@@ -105,8 +105,8 @@ To create a queue in your storage account:
     > [!NOTE]
     > Containers have specific rules that govern how they can be named. They must begin and end in either a letter or a number, must be all lowercase, and can have numbers and hyphens. The name can't contain a double hyphen.
 
-    Name this new queue **myqueue**, and select the **Enter** key to create the queue. Each created queue appears on a tab to the right of the resource tree.
+    Name this new queue **myqueue**, and press <kbd>Enter</kbd> to create the queue. Each created queue appears on a tab to the right of the resource tree.
 
     ![Screenshot that shows the content and details of the new myblob blob container](../media/3-storage-explorer-create-queue-view.png)
 
-    From this view, you can manage the content of the queue. If our application used this queue and experienced an issue with processing a message, you could connect to the queue and view the contents of a message to determine the issue.
+    From this view, you can manage the content of the queue. If our application used this queue and experienced an issue with processing a message, you could connect to the queue, and view the contents of a message to determine the issue.

@@ -167,7 +167,7 @@ namespace My.Function
 
 1. Make these selections:
     - **Select subscription**: Select your subscription.
-    - **Select Function App in Azure**: Select `<name>twinfunction`.
+    - **Select Function App in Azure**: Select `<dtname>-telemetryfunction`.
 
    When the deployment finishes, you'll be prompted to start streaming logs:
 

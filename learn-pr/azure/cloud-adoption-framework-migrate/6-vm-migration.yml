@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-migrate.6-vm-migration
+title: Exercise - Server migration
+metadata:
+  title: Exercise - Server migration
+  description: Walk through the process of migrating a server by using Azure Migrate.
+  ms.date: 02/22/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-vm-migration.md)]

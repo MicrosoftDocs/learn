@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.communication-service-send-sms-console-app.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of what you learned in the module and next steps for learning.
+  author: mikben
+  ms.author: mikben
+  ms.date: 03/03/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]
