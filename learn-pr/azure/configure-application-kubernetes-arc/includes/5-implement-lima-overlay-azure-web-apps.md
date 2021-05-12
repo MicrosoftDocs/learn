@@ -6,7 +6,7 @@ In this exercise, you'll implement the Azure App Service extension on your Azure
 1. Create a custom location for the Azure Arc enabled Kubernetes cluster.
 1. Register an App Service Kubernetes environment into the custom location.
 
-This is the fourth in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- SME: Refer to my previous comment about these lab steps. -->:
+This is the fourth in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
@@ -19,7 +19,7 @@ This is the fourth in this module's sequence of exercises. These exercises guide
 
 ## Task 1: Prepare for implementing the Azure App Service on the Azure Arc enabled Kubernetes cluster
 
-There is information you must collect that's required for each implementation step. Before you implement the Azure App Service extension on your Azure Arc enabled Kubernetes cluster, collect <!-- SME: I've reworked the preceding sentence and it needs to flow into what the information is you need to collect. However, the way you've got the rest of this info written, it actually seems like steps you need to take, not information you need to collect. Please clarify and roll the next part of the sentence into what I've written. -->including installing the App Service extension, creating a custom location, and setting up a Kubernetes environment.
+There is information you must collect that's required for implementation steps in this unit, including installing the App Service extension, creating a custom location, and setting up a Kubernetes environment.
 
 Use the following steps to collect the required information:
 
@@ -141,7 +141,7 @@ Use the following steps to install the App Service extension on your Azure Arc-e
     ```
 
     > [!NOTE]
-    > Rerun the command until the value of the value <!-- ID/SME: Is "value of the value" really correct? -->of the **installState** property changes to **Installed**. This should take about 5 minutes.
+    > Rerun the command until the value of the **installState** property changes to **Installed**. This should take about 5 minutes.
 
 1. Run the following command to store the extension's **id** property value in a variable:
 
@@ -158,7 +158,7 @@ Azure Resource Manager provides the location extension. This extension allows yo
 
 Use the following steps to create a custom location.
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.ExtendedLocation resource provider. This provider allows you to create a custom location in the region you selected for the resource group that's hosting the Azure Arc-enabled services: <!-- ID/SME: Please confirm I didn't change the technical meaning of the preceding paragraph. Thanks! -->
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.ExtendedLocation resource provider. This provider allows you to create a custom location in the region you selected for the resource group that's hosting the Azure Arc-enabled services: 
 
     ```azurecli-interactive
     az provider show -n Microsoft.ExtendedLocation --query "[registrationState,resourceTypes[?resourceType=='customLocations'].locations]"
@@ -211,7 +211,7 @@ Use the following steps to create a custom location.
     ```
 
     > [!NOTE]
-    > The first of these commands creates the **clusterrolebinding.yaml** file in the Azure Cloud Shell working directory. The third one removes it. <!-- ID/SME: Do we need to call out what the second does, since we've called out what the first and third does? -->
+    > The first of these commands creates the **clusterrolebinding.yaml** file in the Azure Cloud Shell working directory. The third one removes it. 
 
 1. Run the following command to create a custom location:
 
@@ -236,7 +236,7 @@ Use the following steps to create a custom location.
 
 ## Task 5: Register an App Service Kubernetes environment into the custom location
 
-After you create a custom location, you can proceed to register an App Service Kubernetes environment into that location. An App Service Kubernetes Environment enables configuration common across apps. However, it's not related directly to cluster operations, such as providing the default Domain Name System (DNS) suffix. <!-- ID/SME: Please confirm we do mean "Domain Name System" here and not "Domain Name Server".-->
+After you create a custom location, you can proceed to register an App Service Kubernetes environment into that location. An App Service Kubernetes Environment enables configuration common across apps. However, it's not related directly to cluster operations, such as providing the default Domain Name System (DNS) suffix. 
 
 > [!NOTE]
 > You can create only one Kubernetes environment resource per custom location.
@@ -262,6 +262,6 @@ Use the following steps to create an App Service Kubernetes environment:
     ```
 
     > [!NOTE]
-    > Rerun the command until the value of the **provisioningState** property changes to "InfrastructureSetupComplete" <!-- ID/SME: Property values should be bolded. I think I've caught most of them. They've been designated in quotation marks, incorrectly. Please check globally and fix those I might have missed. -->. This should take about 3 minutes.
+    > Rerun the command until the value of the **provisioningState** property changes to **InfrastructureSetupComplete** 
 
 Congratulations! You've completed the fourth exercise of this module. You've implemented the Azure App Service extension on your Azure Arc-enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.

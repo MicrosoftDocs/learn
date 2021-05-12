@@ -138,7 +138,7 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     ```
 
     > [!NOTE]
-    > The list should include a pod with a name for which the prefix matches the web app's name. <!-- ID/SME: Can we put an example name here, for clarity. -->
+    > The list should include a pod with a name for which the prefix matches the web app's name.
 
 1. To validate the deployment from a functional standpoint, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify its **URL**, and then open another tab in the same browser window to display the corresponding webpage.
 

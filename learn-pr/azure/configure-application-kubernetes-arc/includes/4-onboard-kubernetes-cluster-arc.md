@@ -6,9 +6,9 @@ In this exercise, you'll connect the AKS cluster you previously deployed. You'll
 To support Azure App Service workloads, you must enroll the Kubernetes cluster in Azure Arc. This enables you to install and manage Azure App Service extensions, just like any other Azure Arc extension.
 
 > [!NOTE]
-> This <!-- SME: Do we know what "this" refers to? It's not clear whether we're saying that the enrollment discussed above is the requirement or this exercise as a whole. Please confirm and fix. --> is a general requirement applicable to Kubernetes clusters. It's yet to be determined whether it applies to AKS clusters in future Azure App Service extension releases.
+> Azure Arc onboarding is a general requirement applicable to Kubernetes clusters. It's yet to be determined whether it applies to AKS clusters in future Azure App Service extension releases.
 
-This is the third in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- SME: Please refer to my comment in the previous unit about these exercise steps. -->:
+This is the third in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
