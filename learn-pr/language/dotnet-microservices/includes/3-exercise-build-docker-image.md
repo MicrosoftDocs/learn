@@ -71,10 +71,10 @@ Now that the code is downloaded, we'll be deploying our backend and frontend mic
 
     This executes the commands in the `Dockerfile` in the current directory and applies the tag `pizzabackend` to the resulting image.
 
-> [!TIP]
-> If you are getting errors from Docker, it may not have be installed correctly. Run the following command to verify:
-> `docker run hello-world`
-> If you do _not_ see "Hello from Docker!" amongst the output, please follow this [Docker installation tutorial](https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/install-docker).
+    > [!TIP]
+    > If you are getting errors from Docker, it may not have be installed correctly. Run the following command to verify:
+    > `docker run hello-world`
+    > If you do _not_ see "Hello from Docker!" amongst the output, please follow this [Docker installation tutorial](https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/install-docker).
 
 1. After much output, the image will be built. Typing `docker images` will show you a list of all images on your machine with `pizzaapiservice` listed.
 1. To run the web API service, enter the following command to start a new Docker container using the **pizzabackend** image and expose the service on port 5200:
