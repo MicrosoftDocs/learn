@@ -1,0 +1,24 @@
+### YamlMime:LearningPath
+uid: learn.azure.adt-mr
+metadata:
+  title: ADT MR (TODO)
+  description: TODO
+  ms.date: 05/11/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: ADT MR (TODO)
+summary: TODO
+prerequisites: TODO
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+modules:
+- learn.azure.fundamental-azure-concepts
+trophy:
+  uid: learn.azure.adt-mr.trophy
