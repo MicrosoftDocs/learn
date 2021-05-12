@@ -16,7 +16,7 @@ Your first task is to open the Unity project that you downloaded from GitHub. Yo
 
 Placing your Prefab wind turbine assets in the Scene enables interaction with the assets.
 
-## Place and configure Prefab wind turbine on Static Terrain
+## Place and configure prefab wind turbine on Static Terrain
 
 1. Open the **Assets > Art > Prefabs** folder in your Project Window
 2. If you already have a map in the scene, delete the asset by right-clicking it in the Hierarchy panel and select **Delete**.  Don’t worry, it only removes it from your Scene and doesn't delete the Prefab from your Unity Project.
@@ -51,9 +51,9 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 1. Select **Gizmos** dropdown and adjust the size via the slider.  
 2. Toggle Gizmos on and off by selecting the Gizmos button at the top of your Scene.
 
-    :::image type="content" source="../media/gizmos-size.png" alt-text="Screenshot of the Unity editor with gizmos turned on.":::
+    :::image type="content" source="../media/gizmos-size.png" alt-text="Screenshot of the Unity editor with gizmos turned on." lightbox="../media/gizmos-size-expanded.png":::
 
-## Place and configure Prefab wind turbine on Dynamic Terrain
+## Place and configure prefab wind turbine on Dynamic Terrain
 
 1. Create Bing Maps Account 
     - If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You will use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the HoloLens will connect to that map service using your Bing Maps account.  
@@ -61,7 +61,7 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 
     :::image type="content" source="../media/create-developer-key.png" alt-text="Screenshot of the Bing maps dev center portal with my keys page selected showing create key property fields.":::
 
-    :::image type="content" source="../media/bing-keys.png" alt-text="Screenshot of the bings map dev center portal with my keys page selected showing developer key details."::: 
+    :::image type="content" source="../media/bing-keys.png" alt-text="Screenshot of the bing map dev center portal with my keys page selected showing developer key details."::: 
 
 3. Open the **Assets > Art > Prefabs** folder in your Project Window.
 4. If you already have a map in the scene, delete the asset by right-clicking it in the Hierarchy panel and select **Delete**.  Don’t worry, it only removes it from your Scene and doesn't delete the Prefab from your Unity Project.
