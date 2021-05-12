@@ -36,6 +36,17 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
+  - content: "Suppose an Azure NetApp Files volume requires access by both Windows and Linux machines. Which is the best file protocol option to assign to the volume?"
+    choices:
+    - content: "NFSv4"
+      isCorrect: false
+      explanation: "Incorrect. While Azure NetApp Files volumes that use only the NFSv4 protocol can be readily accessed by Linux machines, mounting NFS volumes in Windows is a complex task."
+    - content: "SMB3"
+      isCorrect: false
+      explanation: "Incorrect. Azure NetApp Files volumes that use only the SMB3 protocol can be accessed by Windows machines. However, mounting SMB volumes in Linux requires additional configuration."
+    - content: "NFSv3 and SMB3"
+      isCorrect: true
+      explanation: "Correct. Azure NetApp Files supports creating volumes that use NFSv3 and SMB3 simultaneously, which enables both Linux and Windows machines to mount the volume without extra configuration."
   - content: ""
     choices:
     - content: ""
@@ -43,51 +54,40 @@ quiz:
       explanation: ""
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
   - content: ""
     choices:
     - content: ""
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
   - content: ""
     choices:
     - content: ""
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
   - content: ""
     choices:
     - content: ""
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. "
     - content: ""
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "
     - content: ""
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. "

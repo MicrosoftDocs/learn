@@ -63,5 +63,6 @@ TODO: describe the business impact
 - [Service levels for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels)
 - [Resource limits for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-resource-limits)
 - [FAQs About Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-faqs)
+- [Register for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-register#waitlist)
 
 <!-- Do not include any other content -->

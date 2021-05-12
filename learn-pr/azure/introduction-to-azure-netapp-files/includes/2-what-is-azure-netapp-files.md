@@ -40,8 +40,8 @@ However, most organizations still have many applications and services that requi
 
 There are two main file system protocols used for most shared file storage implementations:
 
-- **Network File System (NFS)**: Most often used with Linux and similar Unix-like operating systems.
-- **Server Message Block (SMB)**: Most often used with Windows operating systems.
+- **Network File System (NFS)**: Most often used with the Linux operating system.
+- **Server Message Block (SMB)**: Most often used with the Windows operating system.
 
 <!-- 3. Define the product -------------------------------------------------------------
 
@@ -64,44 +64,79 @@ There are two main file system protocols used for most shared file storage imple
 
 ## Azure NetApp Files definition
 
-Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS service for shared file storage. The service is built on NetApp hardware running NetApp's OnTap storage operating system located within Azure data centers. Azure NetApp Files is a first-party service, meaning you deploy and manage it through the Azure portal.
+Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS service for shared file storage. Azure NetApp Files is a first-party service, meaning you deploy and manage it through the Azure portal.
 
-### Storage hierarchy
+## Performance
 
-One of the most important components of Azure NetApp Files is the storage hierarchy, which determines how much storage your workloads get and the maximum available throughput. Understanding these concepts is crucial to helping you decide if and how you want to migrate any on-premises workloads to Azure. The following image gives you an overview of the Azure NetApp Files storage hierarchy.
+Azure NetApp Files is designed for the highest possible performance so that it can handle even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for extremely high storage throughput and availability.
 
-:::image type="content" source="../media/2-what-is-azure-netapp-files-storage-hierarchy.png" alt-text="Diagram depicting the storage hierarchy of Azure NetApp Files, with the Azure subscription at the top, then one or more Azure NetApp Files accounts, each of which has one or more capacity pools, each of which has one or more storage volumes.":::
+Azure NetApp Files performance is measured in two ways
 
-Azure NetApp Files storage hierarchy consists of the following elements:
+- **Input/output operations per second (IOPS)**: IOPS is a storage performance benchmark that measures the average number of read and write operations a storage device can perform per second. Azure NetApp Files offers up to 320,000 IOPS on its lowest performance tier, and up to 450,000 IOPS on its highest tiers. For comparison, most solid-state drives have throughput measurements between 100,000 IOPS and 400,000 IOPS.
+- **Latency**: Latency is the time required to access a particular storage location. Azure NetApp Files offers an average latency of less than 1 millisecond (ms). For comparison, regular hard drives have latencies between 1 ms and 10 ms, while solid-state drives have latencies between 0.05 ms and 0.15 ms.
 
-- **Capacity pool**: A provisioned amount of storage to use. In Azure NetApp Files, the minimum capacity pool size is 4 TiB.
-- **Volume**: A division of a capacity pool. For example, you can divide a 4-TiB capacity pool into four 1-TiB volumes or eight 500-GiB volumes (and so on).
-- **Throughput**: The maximum rate at which data can enter or leave a capacity pool, usually measured in MiB/s.
-- **Multiple service levels**: Azure NetApp Files offers three service levels for the capacity pools you create:
-  - *Standard*: Provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned. Use Standard for static web content, file shares, and database backups.
-  - *Premium*: Provides up to 64 MiB/s of throughput per 1 TiB of capacity provisioned. Premium is comparable to mainstream SSD performance and is suitable for SAP HANA, databases, enterprise apps, virtual desktop infrastructure (VDI), analytics, technical applications, and messaging queues.
-  - *Ultra*: Provides up to 128 MiB/s of throughput per 1 TiB of capacity provisioned. Use Ultra for the most performance-intensive applications, such as those found in high-performance computing (HPC).
-- **Quality of service (QoS)**: Azure NetApp Files defines two types of QoS for capacity pools:
-  - *Auto*: Azure NetApp Files automatically assigns a total throughput for each volume based on the service tier and the volume capacity. For example, a Standard tier 2-TiB volume is automatically assigned a maximum throughput of 32 MiB/s (16 MiB/s x 2).
-  - *Manual*: You assign the throughput you need for a volume. For example, a Standard tier 8-TiB capacity pool has a total available throughput of 128 MiB/s (16 MiB/s x 8). For a 2-TiB volume within that capacity pool, you could assign a throughput of, say, 64 MiB/s (assuming that much throughput is still available after provisioning the capacity pool's other volumes).
+Given these measures, you can see why Azure NetApp Files provides performance that is comparable to or even better than on-premises performance.
 
-> [!TIP]
-> If you need a certain level of throughput for a particular workload in an automatic QoS volume, you can *overprovision* the volume. For example, suppose a Premium tier volume with automatic QoS only requires 1 TiB of storage, but 128 MiB/s of throughput. By default, the volume's throughput will be just 64 MiB/s. To get the 128 Mib/s you need, you can overprovision the volume to 2 TiB.
+## Security and compliance
 
-### Other features
+Azure NetApp Files is purpose-built to offer high levels of security, compliance, and availability:
 
-Here are a few other important Azure NetApp Files features to consider when evaluating the product for your organization:
+- **Security**: Azure NetApp Files offers FIPS-140-2-compliant data encryption at rest, role-based access control (RBAC), Active Directory authentication, and export policies for network-based access control lists (ACLs).
+- **Compliance**: Azure NetApp Files complies with leading industry certifications, such as HIPAA and GDPR.
+- **Availability**: The Azure NetApp Files service level agreement (SLA) guarantees at least 99.99% availability.
 
-- **High performance**: With very high input/output operations per seconds (IOPS) and sub-millisecond latency, Azure NetApp Files provides performance that is comparable to or even better than on-premises performance.
-- **High availability**: The Azure NetApp Files service level agreement (SLA) guarantees at least 99.99% availability.
-- **Multiple NAS protocols**: Azure NetApp Files offers the widest choice of file protocols among public cloud NAS providers. Azure NetApp Files supports all of the following:
-  - NFS 3.0
-  - NFS 4.1
-  - SMB 1
-  - SMB 2.x
-  - SMB 3.x
-- **Dual protocol volumes**: Azure NetApp Files supports creating volumes that can use both NFS 3.0 and SMB at the same time. Using both protocols on a volume enables both Linux- and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data.
-- **Data management**: Azure NetApp Files offers a complete range of data management features, including near-instantaneous snapshots, cloning, and integrated cross-region replication, all  without impacting performance.
+## Protocols
+
+Azure NetApp Files offers the widest choice of file protocols among public cloud NAS providers. Azure NetApp Files supports all of the following:
+
+- NFS 3.0
+- NFS 4.1
+- SMB 1
+- SMB 2.x
+- SMB 3.x
+
+Azure NetApp Files also supports creating volumes that can use both NFS 3.0 and SMB at the same time. Using both protocols on a volume enables both Linux- and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data.
+
+## Data management
+
+Azure NetApp Files offers a complete range of data management features, including near-instantaneous snapshots, and volume cloning, all without impacting performance.
+
+### Instance access
+
+Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure data center and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means you can set up an Azure NetApp Files instance in just a few minutes. And since Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service: using Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+
+> [!IMPORTANT]
+> Although it takes just a few clicks to create an instance of Azure NetApp Files, you must first be granted access to the service. You get this access, you need to submit a waitlist request to the Azure NetApp Files team. See the references at the end of this module for a link to a page that tells you how to submit the request.
+
+### Snapshots
+
+An Azure NetApp Files *snapshot* is a point-in-time image of a volume. These snapshots have low overhead because of the way Azure NetApp Files performs volume virtualization. Like a database, this layer uses pointers to the actual data blocks on disk. But, unlike a database, it doesn't rewrite existing blocks; it writes updated data to a new block and changes the pointer.
+
+The following diagram illustrates the snapshot process:
+
+- **Time A**: A snapshot (Snapshot 1) is created.
+- **Time B**: Changed data (B is now B1) is written to a new block and the pointer is updated. But the snapshot pointer still points to the previously written block, giving you both a live and a historical view of the data.
+- **Time C**: Another snapshot (Snapshot 2) is created. Now you have access to three generations of data—the live data, Snapshot 2, and Snapshot 1, in descending order of age—without taking up the volume space that three full copies would require.
+
+:::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting how Azure NetApp Files snapshots work.":::
+
+An Azure NetApp Files snapshot just manipulates block pointers, creating a "frozen," read-only view of a volume. Actual data blocks aren't copied, which leads to two efficiencies:
+
+- **Speed**: Creating a snapshot is near-instantaneous. No matter what volume size you're working with, creating a snapshot takes only a few seconds.
+- **Space**: A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
+
+You can create up to 255 snapshots per volume and creating a snapshot has no impact on volume performance. There are two ways to create and maintain snapshots:
+
+- **Manually**: You can create on-demand snapshots using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+- **Automatically**: You can automate snapshot creation using either snapshot policies—which you can set using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API—or you can use a snapshot tool, such as AzAcSnap.
+
+### Data recovery
+
+The point of create volume snapshots is to recover data that has been corrupted or has been accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data using snapshots:
+
+- Restore one or more files or directories from a snapshot.
+- Restore a snapshot to a new volume. This is called *cloning* the volume because you're creating an identical copy of the volume in a new location.
+- Restore a snapshot in-place. This is called *reverting* the volume because it returns the volume to the state it was in when you created the snapshot.
 
 <!-- 4. Solve the scenario -------------------------------------------------------------
 
@@ -123,31 +158,17 @@ Here are a few other important Azure NetApp Files features to consider when eval
         Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
 -->
 
-## How to set up Azure NetApp Files for an SAP HANA migration
+## How to give your web development team access to the same data
 
-Getting Azure NetApp Files ready for a migration from your data center involves several steps, but the following steps give you an overview of the process:
+Azure NetApp Files enables enterprise teams that use different operating systems to access the same data. For example, it's likely that your organization's web development team uses various operating systems:
 
-1. Decide on the service tier you need for your workload (Standard, Premium, or Ultra).
-1. Set up a capacity pool that uses the above tier and is large enough to handle the workload.
-1. Delegate a subnet of your Azure virtual network to Azure NetApp Files.
-1. Create the volumes needed by each component of your workload.
+- **Linux**: Your backend development team might use computers running the Linux operating system.
+- **Windows**: Your frontend development team might use PCs running Windows 10.
+- **macOS**: Your design team might use Macs running the macOS operating system.
 
-For example, suppose your organization uses SAP with the HANA database and you want to set up Azure NetApp Files to migrate this workload to the cloud.
+Although each team would usually work on separate aspects of the website, if the website data files reside on the same volume, then you need to configure that volume to allow access from computers running Linux, Windows, and macOS.
 
-For SAP HANA, the Premium tier is a good place to start. For maximum flexibility, use a manual QoS capacity pool so that you can assign the capacity and throughput for a volume independently. The total throughput that you can assign to volumes in a manual QoS capacity pool is given by multiplying the capacity pool size by the service level throughput value per TiB. For instance, a 20-TiB capacity pool with the Premium service level has a total throughput capacity of 1280 MiB/s (64 MiB/s x 20) available for the volumes.
-
-In the SAP HANA migration scenario, this capacity pool can be used to create the following volumes:
-
-|Volume  |Size  |Max. throughput  |
-|---------|---------|---------|
-|Data     | 4 TiB        | 704 MiB/s        |
-|Log     | 500 GiB        | 256 MiB/s        |
-|Shared     | 1 TiB        | 64 MiB/s        |
-|Backup     | 4.5 TiB        | 256 MiB/s        |
-
-The following diagram illustrates the scenarios for the SAP HANA volumes.
-
-:::image type="content" source="../media/2-what-is-azure-netapp-files-scenario.png" alt-text="Diagram depicting a graph showing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario.":::
+You can accomplish this goal in Azure NetApp Files by configuring the volume to simultaneously use both NFS (supported by Linux) and SMB (supported by Windows and macOS).
 
 <!-- 5. Additional content (optional, as needed) ------------------------------------------------
 
