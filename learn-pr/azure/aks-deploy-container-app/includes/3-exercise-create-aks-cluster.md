@@ -1,6 +1,6 @@
 In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS Supports both Linux and Windows node pools, however the cluster must be created with additional **pre-requisites** and commands if you're going to use windows node pools. Please make a selection above, based on which type of node pools you want to add.
+AKS Supports both Linux and Windows node pools, however, if you're going to use windows node pools, the cluster must be created with additional **pre-requisites** and commands. Please make a selection above, based on which type of node pools you want to add.
 
 AKS cluster can be provisioned through Azure portal or Azure CLI.
 
@@ -67,7 +67,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
+    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
@@ -149,12 +149,11 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
 ::: zone pivot="windows"
   
-```output
+   ```output
     NAME                                STATUS   ROLES   AGE    VERSION
     aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.19.9
     aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
     aksnpwin000000                      Ready    agent   105s   v1.19.9
     aksnpwin000001                      Ready    agent   105s   v1.19.9
-````
-
+    ````
 ::: zone-end
