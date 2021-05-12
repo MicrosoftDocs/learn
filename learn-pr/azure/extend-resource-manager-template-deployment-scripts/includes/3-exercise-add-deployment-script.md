@@ -11,7 +11,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 You start with an existing template that your team has been using. The template creates the storage account, sets up blob services and requires HTTPS, and creates the blob container for your configuration files.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
 1. Copy the following starting template into *azuredeploy.json*.
@@ -22,7 +22,7 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
 1. Copy the following starting template into *main.bicep*.
@@ -37,7 +37,7 @@ You start with an existing template that your team has been using. The template 
 
 Next, you need to create a user-assigned managed identity. Given the infrastructure-as-code approach, you can create the identity in the template.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
@@ -51,7 +51,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Under the variable definitions in *main.bicep*, add:
 
@@ -71,7 +71,7 @@ Now that you have a managed identity defined, you can assign it a role with righ
 
 The role assignment also needs a GUID name. You can use the [`guid`](/azure/azure-resource-manager/templates/template-functions-string#guid) function to create a GUID that's unique to the resource group and role name.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
@@ -85,7 +85,7 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Under the variable definitions in *main.bicep*, add:
 
@@ -103,7 +103,7 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 Now, you have all the prerequisites for the deployment script. You'll start with the common values that the deployment script needs. There are two dependencies, the role assignment and the blob storage container. Your script needs both of those to exist before it can run.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
@@ -121,7 +121,7 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Under the variable definitions in *main.bicep*, add:
 
@@ -143,7 +143,7 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 Now that you have a deployment script uploading a file into Azure Blob Storage, you might need to reference that file location in later automation. (Perhaps you'll run a test to validate that the file is where you think it should be.)
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
@@ -151,7 +151,7 @@ After the `resources` section of the ARM template, add an output that references
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 At the bottom of the file, after the resource definitions, add an output that references the URI for the file as reported by the deployment script.
 
@@ -163,13 +163,13 @@ At the bottom of the file, after the resource definitions, add an output that re
 
 Your template should look like:
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 :::code language="json" source="code/3-template-with-deploymentscript.json" highlight="9-12, 61-107, 109-114" :::
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" highlight="3-6, 44-86" :::
 
@@ -179,7 +179,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ## Deploy the template
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed, and sign in with the same account that you used to activate the sandbox.
 
@@ -231,7 +231,7 @@ az group create --location eastus --name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed, and sign in to the same account that activated the sandbox.
 
@@ -285,7 +285,7 @@ New-AzResourceGroup -Location eastus -Name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="cli,json"
+::: zone pivot="jsoncli"
 
 ### Deploy the template to Azure
 
@@ -306,7 +306,7 @@ az deployment group create \
 
 ::: zone-end
 
-::: zone pivot="cli,bicep"
+::: zone pivot="bicepcli"
 
 ### Deploy the template to Azure
 
@@ -327,7 +327,7 @@ az deployment group create \
 
 ::: zone-end
 
-::: zone pivot="powershell,json"
+::: zone pivot="jsonpowershell"
 
 ### Deploy the template to Azure
 
@@ -347,7 +347,7 @@ New-AzResourceGroupDeployment `
 
 ::: zone-end
 
-::: zone pivot="powershell,bicep"
+::: zone pivot="biceppowershell"
 
 ### Deploy the template to Azure
 
@@ -371,7 +371,7 @@ New-AzResourceGroupDeployment `
 
 After the deployment is complete, you'll be given a URL that points to the file that your deployment script copied into blob storage.
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
@@ -411,7 +411,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
@@ -443,7 +443,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 
 Now that you've successfully deployed an ARM template with a deployment script, you can remove the resource group that contains all the resources and role assignments you've created.
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 ```azurecli
 az group delete --name $resourceGroupName
@@ -451,7 +451,7 @@ az group delete --name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 ```azurepowershell
 Remove-AzResourceGroup -Name $resourceGroupName

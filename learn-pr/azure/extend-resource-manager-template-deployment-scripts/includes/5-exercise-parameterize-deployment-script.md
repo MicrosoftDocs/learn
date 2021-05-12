@@ -10,7 +10,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 You start with the template that you created in the last exercise.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
 
@@ -22,7 +22,7 @@ You start with the template that you created in the last exercise.
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
 
@@ -40,13 +40,13 @@ Because the other team has done the hard work in creating a PowerShell script to
 
 Edit `scriptContent` in the `properties` section to include the script that your partner team has provided.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 :::code language="powershell" source="code/5-template-with-deploymentscript-parameters.json" range="122-136" :::
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 :::code language="powershell" source="code/5-template-with-deploymentscript-parameters.bicep" range="91-105" :::
 
@@ -54,7 +54,7 @@ Edit `scriptContent` in the `properties` section to include the script that your
 
 ## Add an environment variable
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 The script you've adopted requires some environment variables. You can specify them directly in the template, but it will be more flexible to use template functions to get some of the values.
 
@@ -79,7 +79,7 @@ The script you've adopted requires some environment variables. You can specify t
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 The script you've adopted requires some environment variables. You can specify them directly in the template, but it will be more flexible to use Bicep variables to get some of the values.
 
@@ -105,7 +105,7 @@ The script you've adopted requires some environment variables. You can specify t
 
 To make your template easier for the two teams to use, you can add a parameter to the template so that each team can specify the files that it wants to copy.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Add a parameter to the template to take an array of file names.
 
@@ -115,7 +115,7 @@ To make your template easier for the two teams to use, you can add a parameter t
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Add a parameter to the template to take an array of file names.
 
@@ -130,7 +130,7 @@ To make your template easier for the two teams to use, you can add a parameter t
 
 ## Add an argument to pass in the files to copy
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
@@ -159,7 +159,7 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
@@ -178,7 +178,7 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 Because you're changing the deployment script to deploy one or more files, you need to update the template output to provide all the necessary information.
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Update the `outputs` in the template to return the whole object, which will have a URI per file.
 
@@ -190,7 +190,7 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Update the outputs in the template to return the whole object, which will have a URI per file.
 
@@ -206,13 +206,13 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 Your template should look similar to:
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" :::
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" highlight="1-4, 74-88, 91-105, 115-116" :::
 
@@ -250,7 +250,7 @@ You need to create a resource group to contain the resources that you'll create 
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_2"
@@ -259,7 +259,7 @@ az group create --location eastus --name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 ```azurepowershell
 $resourceGroupName = 'learndeploymentscript_exercise_2'
@@ -268,7 +268,7 @@ New-AzResourceGroup -Location eastus -Name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="json,cli"
+::: zone pivot="jsoncli"
 
 ### Deploy the template to Azure
 
@@ -289,7 +289,7 @@ az deployment group create \
 
 ::: zone-end
 
-::: zone pivot="json,powershell"
+::: zone pivot="jsonpowershell"
 
 ### Deploy the template to Azure
 
@@ -310,7 +310,7 @@ New-AzResourceGroupDeployment `
 
 ::: zone-end
 
-::: zone pivot="bicep,cli"
+::: zone pivot="bicepcli"
 
 ### Deploy the template to Azure
 
@@ -331,7 +331,7 @@ az deployment group create \
 
 ::: zone-end
 
-::: zone pivot="bicep,powershell"
+::: zone pivot="biceppowershell"
 
 ### Deploy the template to Azure
 
@@ -356,7 +356,7 @@ New-AzResourceGroupDeployment `
 
 After the deployment is complete, you can validate that both files were copied to your storage account by listing the contents of the blob container.
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 1. List the contents of the blob container.
 
@@ -382,7 +382,7 @@ After the deployment is complete, you can validate that both files were copied t
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 1. List the contents of the blob container.
 
@@ -414,7 +414,7 @@ After the deployment is complete, you can validate that both files were copied t
 
 You've successfully deployed an ARM template with a deployment script and used different methods to pass data in to customize its behavior. You can remove the resource group that contains all the resources and role assignments you've created.
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 ```azurecli
 az group delete --name $resourceGroupName
@@ -422,7 +422,7 @@ az group delete --name $resourceGroupName
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 ```azurepowershell
 Remove-AzResourceGroup -Name $resourceGroupName

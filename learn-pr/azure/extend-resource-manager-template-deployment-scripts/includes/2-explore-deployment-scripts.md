@@ -29,13 +29,13 @@ Two `deploymentScripts`-specific values are required:
 
 - `kind`: The type of script to run (either `AzurePowerShell` or `AzureCLI`).
 
-  ::: zone pivot="json"
+  ::: zone pivot="jsoncli,jsonpowershell"
 
   :::code language="json" source="code/2-example-template.json" range="9-19,30-31" highlight="6" :::
 
   ::: zone-end
 
-  ::: zone pivot="bicep"
+  ::: zone pivot="bicepcli,biceppowershell"
 
   :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="4" :::
 
@@ -43,13 +43,13 @@ Two `deploymentScripts`-specific values are required:
 
 - `identity`: The managed identity that the container instance will use. You can create the managed identity ahead of time and specify it like the following example. Or you can create it in the template and reference it there (which is what you'll do in the next exercise).
 
-  ::: zone pivot="json"
+  ::: zone pivot="jsoncli,jsonpowershell"
 
   :::code language="json" source="code/2-example-template.json" range="9-19,30-31" highlight="7-10" :::
 
   ::: zone-end
 
-  ::: zone pivot="bicep"
+  ::: zone pivot="bicepcli,biceppowershell"
 
   :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="5-10" :::
 
@@ -57,13 +57,13 @@ Two `deploymentScripts`-specific values are required:
 
 After you set those elements, you can move into the `properties` section of the `deploymentScripts` resource. The main part of this is the `scriptContent`, which specifies the actual script to execute:
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 :::code language="json" source="code/2-example-template.json" range="21, 23-28, 30" :::
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 :::code language="plaintext" source="code/2-example-template.bicep" range="11, 13-18, 20" :::
 
@@ -75,13 +75,13 @@ It's common for a deployment script to pass outputs back to the deployment. For 
 
 For a PowerShell script, you pass outputs back by creating a variable named `$DeploymentScriptOutputs`, which needs to be a hash table. The example script initializes the hash table and then creates an output called `text`, which takes its value from the `$output` local variable:
 
-::: zone pivot="json"
+::: zone pivot="jsoncli,jsonpowershell"
 
 :::code language="json" source="code/2-example-template.json" range="24-27" highlight="3-4" :::
 
 ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 :::code language="plaintext" source="code/2-example-template.bicep" range="14-17" highlight="3-4" :::
 
@@ -94,13 +94,13 @@ Within the `properties` section, you also define the various options that `deplo
 
 The retention interval is how long the results should be kept if you want to keep the resources. By default, the results are removed after you run the script.
 
-  ::: zone pivot="json"
+  ::: zone pivot="jsoncli,jsonpowershell"
 
   :::code language="json" source="code/2-example-template.json" range="21-30" highlight="9" :::
 
   ::: zone-end
 
-  ::: zone pivot="bicep"
+  ::: zone pivot="bicepcli,biceppowershell"
 
   :::code language="plaintext" source="code/2-example-template.bicep" range="11-20" highlight="9" :::
 
@@ -108,13 +108,13 @@ The retention interval is how long the results should be kept if you want to kee
 
 Our full template would look something like:
 
-  ::: zone pivot="json"
+  ::: zone pivot="jsoncli,jsonpowershell"
 
   :::code language="json" source="code/2-example-template.json" :::
 
   ::: zone-end
 
-  ::: zone pivot="bicep"
+  ::: zone pivot="bicepcli,biceppowershell"
 
   :::code language="plaintext" source="code/2-example-template.bicep" :::
 
