@@ -1,6 +1,6 @@
-In this module, you performed the steps to implement support for Azure App Services on an Azure Arc-enabled Kubernetes cluster. 
+In this module, you performed the steps to implement support for Azure App Services on an Azure Arc enabled Kubernetes cluster. 
 
-By successfully completing your implementation, you verified that Azure App Services on Azure Arc-enabled Kubernetes can help you minimize operational burden and leverage an existing Kubernetes investment. Additionally, your staff can use the same consistent deployment methodology when targeting Azure and on-premises environments.
+By successfully completing your implementation, you verified that Azure App Services on Azure Arc enabled Kubernetes can help you minimize operational burden and leverage an existing Kubernetes investment. Additionally, your staff can use the same consistent deployment methodology when targeting Azure and on-premises environments.
 
 ## Learn more
 
