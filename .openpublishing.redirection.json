@@ -3178,7 +3178,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/3-exercise-create-luis-application.md",
