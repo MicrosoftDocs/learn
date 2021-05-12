@@ -6,9 +6,9 @@ By using the `targetScope` keyword and `scope` property on modules, you can easi
 
 ## Learn more
 
-- [Language spec](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md)
 - [What are Azure management groups?](/azure/governance/management-groups/overview)
 - Scopes for deployment:
   - [Tenant](/azure/azure-resource-manager/templates/deploy-to-tenant)
   - [Management group](/azure/azure-resource-manager/templates/deploy-to-management-group)
   - [Subscription](/azure/azure-resource-manager/templates/deploy-to-subscription)
+- [Language specification for resource scopes](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md)
