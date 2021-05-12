@@ -6,7 +6,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-::: zone pivot="linux"
+#### [Linux](#tab/linux)
 
 1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
 
@@ -42,7 +42,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
         --network-plugin azure
     ```
 
-    The above command creates a new AKS cluster named `aks-contoso` within the `rg-contoso` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
+    The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
 1. Run the `az aks nodepool add` command to add additional node pool of linux operating system.
 
@@ -57,9 +57,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
     The above command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which gets created during previous command `az aks create`.
 
-::: zone-end
-
-::: zone pivot="windows"
+#### [Windows](#tab/windows)
 
 1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
 
@@ -96,7 +94,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
         --windows-admin-username localadmin
     ```
 
-   The above command creates a new AKS cluster named `aks-contoso` within the `rg-contoso` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
+   The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
     The `--windows-admin-username` parameter is used to setup administrator credentials for Windows containers. The above command will prompt to set a password at the command line. The password has to meet [**Windows Server password requirements**](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
@@ -114,8 +112,6 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
     The above command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which gets created during previous command `az aks create`.
     The `--os-type` parameter is used to specify operating system of the node pool. If not specified, it will use Linux as operating system for the nodes.
-
-::: zone-end
 
 ## Link with kubectl
 
@@ -135,7 +131,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
    You should receive a list of four available nodes for two node pools.
 
-::: zone pivot="linux"
+#### [Linux](#tab/linux)
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
@@ -145,9 +141,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
    aks-nplinux-21895026-vmss000001     Ready    agent   105s   v1.19.9
    ```
 
-::: zone-end
-
-::: zone pivot="windows"
+#### [Windows](#tab/windows)
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
@@ -156,5 +150,3 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
    aksnpwin000000                      Ready    agent   105s   v1.19.9
    aksnpwin000001                      Ready    agent   105s   v1.19.9
    ```
-
-::: zone-end
