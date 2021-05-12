@@ -150,7 +150,7 @@ Deploy the template by using Azure CLI commands in the Visual Studio Code termin
 ```azurecli
 templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
-deploymentName="new-subscription"
+deploymentName="sub-scope-"$today
 
 az deployment sub create \
     --name $deploymentName \
@@ -167,8 +167,9 @@ Notice that you're creating a subscription-scoped deployment by using the `az de
 Deploy the template by using Azure PowerShell commands in the terminal.
 
 ```azurepowershell
-$templateFile = "main.bicep"
-$deploymentName = "new-subscription"
+$templateFile = 'main.bicep'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "sub-scope-$today"
 
 New-AzSubscriptionDeployment `
   -Name $deploymentName `
