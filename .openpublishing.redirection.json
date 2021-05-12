@@ -1822,157 +1822,157 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/8-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/7-listening-for-incoming-data.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/2-overview-of-speech-translation.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/3-subscribe-to-speech-translation-api.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/5-using-speech-translation-api.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/6-using-the-api-to-request-supported-language.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/4-viewing-access-keys-and-endpoints.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/translate-speech-with-speech-services/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/process-translate-speech-azure-cognitive-speech-services/",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/process-translate-speech-azure-cognitive-speech-services/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/1-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/3-explainers.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/3-explainers",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/3-explainers",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/7-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/7-summary",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/8-advanced-classification-with-svms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/4-cost-function-gradient-descent.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/9-exercise-svms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/3-exercise-logistic-regression.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/6-exercise-svms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/2-logistic-regression.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/10-summary.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/5-support-vector-machines.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-classification/7-testing-your-predictions.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": false
     },
     {
@@ -5232,22 +5232,22 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/2-data-streams.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/2-understand-data-streams",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-data-streaming/2-understand-data-streams",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/3-event-processing.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/3-understand-event-processing",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-data-streaming/3-understand-event-processing",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/4-event-with-asa.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/4-process-events-azure-stream-analytics",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-data-streaming/4-process-events-azure-stream-analytics",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/5-summary.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-data-streaming",
       "redirect_document_id": false
     },
     {
@@ -5492,32 +5492,32 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/index.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/1-introduction.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/2-when-azure-dsvm.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/3-type-of-azure-dsvm.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/4-use-cases-dsvma.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/5-summary.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
@@ -5829,6 +5829,106 @@
       "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/8-export-data.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-iot-central-apps-with-rest-api/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/paths/data-engineering-with-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/paths/data-science/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/paths/explore-data-science-tools-in-azure/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/paths/get-started-with-azure-dsvm/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/paths/publish-experiment-with-ml-studio/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/interactive-deep-learning/index.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+        "redirect_document_id": false
     }
   ]
 }
