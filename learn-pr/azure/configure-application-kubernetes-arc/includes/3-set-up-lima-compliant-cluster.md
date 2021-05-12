@@ -7,15 +7,15 @@ In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AK
 > App Service on Azure Arc doesn't support Windows node pools in AKS clusters.
 
 > [!NOTE]
-> Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Azure Arc-enabled Kubernetes cluster.
+> Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Azure Arc enabled Kubernetes cluster.
 
 This is the second in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- SME: Is there a reason to repeat the exercise sequence in this unit, when we already listed it in unit 1? It looks like we repeat it in unit 4, too. Didn't check beyond that one. -->:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Implement App Service on the Azure Arc-enabled Kubernetes cluster.
-1. Deploy an App Service web app to the Azure Arc-enabled Kubernetes cluster.
+1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
+1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
 :::image type="content" source="../media/u3-exercise2.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the second exercise (Set up a Kubernetes cluster)." border="false":::
