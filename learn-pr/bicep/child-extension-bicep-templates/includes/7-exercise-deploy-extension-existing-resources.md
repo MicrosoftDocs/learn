@@ -85,7 +85,7 @@ To add diagnostics settings, do the following:
 
 Create an Azure storage account to simulate your R&D team already having created one in your organization. Use the Azure CLI instead of Bicep.
 
-In the terminal, run the following Azure CLI command. Replace `{storage-account-name}` with a name that's likely to be unique. The name must be all lowercase, contain 24 or fewer characters, and have no special characters. Keep a note of the name for later use.
+In the terminal, run the following Azure CLI command. Replace `{storageaccountname}` with a name that's likely to be unique. The name must be all lowercase, contain 24 or fewer characters, and have no spaces or special characters. Keep a note of the name for later use.
 
 ```azurecli
 az storage account create \
@@ -99,7 +99,7 @@ az storage account create \
 
 Create an Azure storage account to simulate your R&D team's already having created one in your organization. Use Azure PowerShell instead of Bicep.
 
-In the terminal, run the following Azure PowerShell command. Replace `{storage-account-name}` with a name that's likely to be unique. The name must be all lowercase, contain 24 or fewer characters, and have no special characters.
+In the terminal, run the following Azure PowerShell command. Replace `{storageaccountname}` with a name that's likely to be unique. The name must be all lowercase, contain 24 or fewer characters, and have no spaces or special characters.
 
 ```azurepowershell
 New-AzStorageAccount `
