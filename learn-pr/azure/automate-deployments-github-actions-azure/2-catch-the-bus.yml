@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.automate-deployments-github-actions-azure.catch-the-bus
-title: Catching the bus with Azure
+title: Architect a solution using Azure
 metadata:
   unitType: learning-content  
-  title: Catching the bus with Azure
+  title: Architect a solution using Azure
   description: This unit will review the scenario requirements and the elements of the solution to build the app architecture.
   ms.date: 3/24/2021  
   author: amthomas46

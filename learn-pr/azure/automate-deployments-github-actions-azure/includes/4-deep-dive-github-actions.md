@@ -4,17 +4,17 @@ GitHub Actions help you automate tasks within your software development life cyc
 
 Azure DevOps is a similar service that automatically builds and tests code projects to make them available to others. It works with just about any language or project type and could be used in place of GitHub Actions in this solution if desired.
 
-## Brief review of DevOps and CI/CD
+## Understand DevOps and CI/CD concepts
 
 DevOps is a combination of development (Dev) and operations (Ops). DevOps is the union of people, process, and technology to continually provide value to customers. Teams that adopt DevOps culture, practices, and tools become high-performing: building better products faster for greater customer satisfaction.
 
 A Continuous Integration and Continuous Delivery (CI/CD) pipeline is the backbone of a DevOps environment, and most Azure resources can be fully integrated with any CI/CD tool you choose. Two of the most common and widely tools used in Azure are GitHub Actions and Azure DevOps.
 
-## CI/CD and catching the bus
+## Implement deployment automation with GitHub Actions
 
 In the catching the bus example, there are three key services using GitHub Actions: Azure SQL Database, Azure Functions, and Azure Static Web Apps. Let's review how each service works in the scenario. In the next exercise, you'll get to see the pieces in action.
 
-### Azure SQL Database
+### Automate deployment of Azure SQL Database using the SQL Action
 
 There is a specific GitHub Action available through Azure called the **SQL Action**. This action was created to work with Azure SQL services. Let's review how the main part of the workflow (YAML) file is constructed. As an example, let's use the catch the bus sample.
 
@@ -35,11 +35,11 @@ Below you are looking at the job within the workflow file. When a push happens o
           dacpac-package: './Database/dacpac/bus-db.dacpac'
 ```
 
-### Azure Functions
+### Automate deployment of Azure Functions in any language
 
 Similar to Azure SQL, connecting to Azure Functions from GitHub Actions is not difficult. The documentation provides several sample snippets depending on the language you want to use, and then you fill it in. Just like a connection string for Azure SQL is required, you have to include your function's *Publish Profile*, which specifies how to connect to Azure Functions. Additionally, just like you had to specify the 'code' for your database's schema, you also have to specify where in your repository the code is located. Finally, depending on the language, you'll need to specify the version (for example, `NODE_VERSION: '14.x'`).
 
-### Azure Static Web Apps
+### Implement CI/CD by default using Azure Static Web Apps
 
 During the deployment of the Azure Static Web App in the previous exercise, you connected your service with GitHub by providing the repository and a GitHub token. Azure Static Web Apps and GitHub Actions are tightly integrated, so the deployment takes care of creating the workflow file.
 

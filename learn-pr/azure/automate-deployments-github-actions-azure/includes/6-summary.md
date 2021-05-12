@@ -8,7 +8,7 @@ Throughout the module and the learning path, you learned how:
 * Azure Static Web Apps combines the capabilities of static web app hosting and APIs.
 * GitHub Actions can be used to easily enable you to adopt CI/CD best practices.
 
-## References
+## Further your learning with other references
 
 * [Catch the bus GitHub sample](https://aka.ms/catchthebus)
 * [Azure SQL fundamentals learning path](https://aka.ms/azuresqlfundamentals)

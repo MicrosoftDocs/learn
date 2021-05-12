@@ -2,7 +2,7 @@ GitHub Actions are useful for maintaining CI/CD with your applications.
 
 Here, you'll leverage GitHub Actions to configure and deploy the services you deployed in the previous exercise. You'll build out the entire solution for catching the bus and monitor it in action.
 
-## Use GitHub Actions to configure Azure SQL Database
+## Deploy database schema using GitHub Actions
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
@@ -27,7 +27,7 @@ Here, you'll leverage GitHub Actions to configure and deploy the services you de
 
 1. Select the **...** > **Push** which will kick off a build. Confirm the **Deploy Azure SQL Database schema** workflow completes successfully by navigating to the repository in GitHub and selecting **Actions**.
 
-## Import Route Data into Azure SQL Database
+## Import route reference data into Azure SQL Database
 
 Next, you need to import the bus route information data into Azure SQL Database from a flat file.
 
@@ -78,7 +78,7 @@ Next, you need to import the bus route information data into Azure SQL Database 
 
 1. Finally, select **CTRL+C** to exit sqlcmd.
 
-## Configure the Azure Function App with GitHub Actions
+## Configure the Azure Function App using GitHub Actions
 
 Next, to publish the function to the Azure Function app you deployed in the previous exercise, you'll need to download the publish profile, configure settings in GitHub, and push your changes with Visual Studio Code.
 

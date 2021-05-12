@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.automate-deployments-github-actions-azure.exercise-configure-github-deployments
-title: Exercise - Configure GitHub deployments and monitor the solution
+title: Exercise - Configure and monitor deployments using GitHub Actions
 metadata:
   unitType: exercise
-  title: Exercise - Configure GitHub deployments and monitor the solution
+  title: Exercise - Configure and monitor deployments using GitHub Actions
   description: In this unit, you'll configure GitHub settings and use workflows to deploy the final solution. You'll then monitor the results in GitHub, the Azure portal, and the application.
   ms.date: 3/24/2021 
   author: amthomas46

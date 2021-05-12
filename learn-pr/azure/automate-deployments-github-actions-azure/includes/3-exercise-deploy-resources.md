@@ -2,7 +2,7 @@ Setting up your environment and deploying some resources to start with is an imp
 
 Recall in the catching the bus sample, you'll use resources including Azure SQL Database, Azure Static Web Apps, Azure Functions, and Azure Logic Apps. In the previous modules of this learning path, you focused on the various elements that make up the solution. In this module, you'll deploy the entire solution.
 
-## Configure your environment
+## Configure your environment for development with Visual Studio Code
 
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
 
@@ -22,7 +22,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
-## Deploy Azure SQL Database
+## Deploy a database service in Azure using Azure SQL Database
 
 To set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To accomplish this task, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll us Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
@@ -106,7 +106,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Deploy the Azure Function App
+## Deploy the Azure Function App using PowerShell
 
 Next, you'll deploy an Azure Function App.
 
@@ -169,7 +169,7 @@ Next, you'll deploy an Azure Function App.
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Deploy an Azure Logic App
+## Deploy an Azure Logic App using an ARM template
 
 Next, you need to deploy the Azure Logic App that sends notifications using a combination of Azure PowerShell and ARM templates.
 
@@ -196,7 +196,7 @@ Next, you need to deploy the Azure Logic App that sends notifications using a co
     Write-Host "Logic App deployed."
     ```
 
-## Review and update the Logic App
+## Review and configure the Azure Logic App
 
 The next step is to configure the Logic App and update the Application Setting for your Azure Function App.
 
@@ -217,7 +217,7 @@ The next step is to configure the Logic App and update the Application Setting f
 
 1. Select **When an HTTP request is received** and copy the **HTTP POST URL** and save it in a text file or notepad.
 
-## Review and update the Azure Function
+## Review and configure the Azure Function
 
 1. In a text file, determine the connection string that you'll need to be able to connect to your Azure SQL Database. The format should be as follows:
 
@@ -263,7 +263,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. Select **Save** > **Continue**.
 
-## Deploy an Azure Static Web App
+## Deploy an Azure Static Web App using PowerShell
 
 The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a future exercise, you'll configure the application in the Azure portal and with GitHub Actions.
 
