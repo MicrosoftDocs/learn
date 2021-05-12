@@ -20,7 +20,6 @@ This is the second in this module's sequence of exercises. These exercises guide
 
 :::image type="content" source="../media/u3-exercise2.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the second exercise (Set up a Kubernetes cluster)." border="false":::
 
-
 ## Task 1: Deploy an AKS cluster
 
 To support the App Service on Azure Arc, an AKS cluster must satisfy the following requirements:
@@ -66,7 +65,6 @@ Use the following steps to deploy an AKS cluster that supports App Service on Az
 
     > [!IMPORTANT]
     > You **must** create the public IP address resource in the cluster's infrastructure resource group for it to bind to the cluster's load balancer.
-
 
 ## Task 2: Connect to the AKS cluster
 
