@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.mr-digital-twin-build-scene
+uid: learn.azure.build-3d-scene-mixed-reality-unity
 metadata:
   title: Build a 3D Scene for Mixed Reality in Unity  
   description: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain.
@@ -30,13 +30,13 @@ prerequisites: |
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 hidden: true
 units:
-- learn.azure.mr-digital-twin-build-scene.1-introduction
-- learn.azure.mr-digital-twin-build-scene.2-scene-design
-- learn.azure.mr-digital-twin-build-scene.3-unity-interface
-- learn.azure.mr-digital-twin-build-scene.4-source-scene
-- learn.azure.mr-digital-twin-build-scene.5-exercise-wind-farm
-- learn.azure.mr-digital-twin-build-scene.6-exercise-deploy
-- learn.azure.mr-digital-twin-build-scene.7-knowledge-check
-- learn.azure.mr-digital-twin-build-scene.8-summary
+- learn.azure.build-3d-scene-mixed-reality-unity.introduction
+- learn.azure.build-3d-scene-mixed-reality-unity.scene-design
+- learn.azure.build-3d-scene-mixed-reality-unity.unity-interface
+- learn.azure.build-3d-scene-mixed-reality-unity.source-scene
+- learn.azure.build-3d-scene-mixed-reality-unity.exercise-wind-farm
+- learn.azure.build-3d-scene-mixed-reality-unity.exercise-deploy
+- learn.azure.build-3d-scene-mixed-reality-unity.knowledge-check
+- learn.azure.build-3d-scene-mixed-reality-unity.summary
 badge:
-  uid: learn.azure.mr-digital-twin-build-scene.badge
+  uid: learn.azure.build-3d-scene-mixed-reality-unity.badge
