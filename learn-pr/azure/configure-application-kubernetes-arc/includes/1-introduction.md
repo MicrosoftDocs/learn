@@ -1,4 +1,4 @@
-App Service on Azure Arc facilitates implementation of services, such as web apps, on customer-managed, Azure Arc-onboarded Kubernetes clusters. Azure App Service enables DevOps teams to use a consistent approach when deploying solutions to customer-managed clusters and Azure-hosted platform as a service (PaaS) services. <!-- ID/SME: We don't hyphenate "platform as a service" when used as a modifier, per the MS Style Guide. And made a couple tweaks to paragraph. --> 
+App Service on Azure Arc facilitates implementation of services, such as web apps, on customer-managed, Azure Arc-onboarded Kubernetes clusters. Azure App Service enables DevOps teams to use a consistent approach when deploying solutions to customer-managed clusters and Azure-hosted platform as a service (PaaS) services.
 
 ## Scenario: Implement Azure App Service on Kubernetes with Azure Arc
 
