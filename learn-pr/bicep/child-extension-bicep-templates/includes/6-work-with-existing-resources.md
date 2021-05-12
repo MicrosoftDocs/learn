@@ -1,6 +1,6 @@
 Bicep files often need to refer to resources that have been created elsewhere. These resources might have been created manually, maybe by a colleague using the Azure portal. Or they might have been created in another Bicep file. There are many reasons why you need to refer to these resources, such as:
 
-- You're adding a SQL database into a SQL server instance that someone has already created.
+- You're adding a SQL database into an Azure SQL logical server instance that someone has already created.
 - You're configuring diagnostics settings for resources that are defined in another Bicep module.
 - You have to securely access the keys for a storage account that has been manually deployed into your subscription.
 
