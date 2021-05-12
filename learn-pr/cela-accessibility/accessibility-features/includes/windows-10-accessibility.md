@@ -60,8 +60,8 @@ For example, Narrator is a screen reader built into Windows 10 that describes wh
 
 There are three ways to start and stop Narrator:
 1. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+Ctrl+Enter</kbd> together to start Narrator. Press these keys again to stop Narrator. 
-2. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+Ctrl+N</kbd> to open Narrator settings, and then turn on the toggle under **Use Narrator**.
-3. Press <kbd>Ctrl+Alt+Del</kbd> to go to your sign-in screen, select **Ease of access** in the lower-right corner, then turn on the toggle under **Narrator**.
+2. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+Ctrl+N</kbd> together to open Narrator settings, and then turn on the toggle under **Use Narrator**.
+3. Press <kbd>Ctrl+Alt+Del</kbd> together to go to your sign-in screen, select **Ease of access** in the lower-right corner, then turn on the toggle under **Narrator**.
 
 Every time you turn on Narrator, you'll go to Narrator Home, which gives you one place where you can open everything you need, whether you want to change your Narrator settings or learn basics with QuickStart.
 
