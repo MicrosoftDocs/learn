@@ -1,4 +1,4 @@
-In this exercise, you'll prepare your lab environment for the implementation of Azure App Service on Azure Arc-enabled Kubernetes clusters. The exercise consists of the following tasks:
+In this exercise, you'll prepare your lab environment for the implementation of Azure App Service on Azure Arc enabled Kubernetes clusters. The exercise consists of the following tasks:
 
 1. Install the prerequisite software tools.
 1. Enable required preview features in the Azure subscription.
@@ -9,8 +9,8 @@ This is the first exercise in this module's sequence of exercises. These exercis
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Implement App Service on the Azure Arc-enabled Kubernetes cluster.
-1. Deploy an App Service web app to the Azure Arc-enabled Kubernetes cluster.
+1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
+1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
 :::image type="content" source="../media/u2-exercise1.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the first exercise (Prepare the lab environment)." border="false":::
