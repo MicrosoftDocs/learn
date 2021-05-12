@@ -1,7 +1,13 @@
-TODO scenario
+Project Teddybear was a success, and now the secretive R&D development at your toy company has been told to research even more new toys. They've started to ask you for new subscriptions on a near-daily basis, and they need to apply their policies across all of them. Rather than duplicating your policy definitions and assignments in each subscription, you've decided that you'll put all of their subscriptions within a management group, and then apply a policy to the management group instead of each subscription individually. In this exercise, you'll create a new Bicep template to apply policy definitions and assignments to a management group.
+
+During the process, you'll:
 
 > [!div class="checklist"]
-> * TODO
+> * Create a new management group.
+> * Create a new management group-scoped Bicep file.
+> * Add the Azure Policy resources to the file.
+> * Link the policy assignment to the policy definition by manually constructing the resource ID.
+> * Deploy the template and verify the result.
 
 > [!NOTE]
 > To complete this exercise, you'll need:
@@ -26,7 +32,7 @@ az account management-group create \
   --display-name "Secret R&D Projects"
 ```
 
-By default, the new management group will be created as a child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `--parent-id` parameter, and specify the name of the management group to use as the parent.
+By default, the new management group will be created as a direct child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `--parent-id` parameter, and specify the name of the management group to use as the parent.
 
 ::: zone-end
 
@@ -43,6 +49,8 @@ New-AzManagementGroup \
 By default, the new management group will be created as a child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `-ParentId` parameter, and specify the name of the management group to use as the parent.
 
 ::: zone-end
+
+In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, we'll deploy the policies even though the management group doesn't contain any subscriptions. The same deployment process applies even if the management group is empty.
 
 ## Create a Bicep file to deploy to a management group
 
