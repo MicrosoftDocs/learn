@@ -12,7 +12,7 @@ During the process, you'll:
 > [!NOTE]
 > There are some prerequisites for this exercise:
 >
-> - [Management groups must be enabled](azure/governance/management-groups/overview) on your Azure tenant.
+> - [Management groups must be enabled](/azure/governance/management-groups/overview) on your Azure tenant.
 > - You need permission to create a new management group within your hierarchy.
 > - You need permission to deploy Azure Policy resources to the management group.
 > 
