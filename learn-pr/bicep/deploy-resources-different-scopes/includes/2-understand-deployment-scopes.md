@@ -74,7 +74,7 @@ When you're working with resources at a management group or tenant scope, resour
 
 | Resource type | Deployed at scope | Example resource ID |
 |-|-|-|
-| Role definition | Management group | `Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca` |
+| Role definition | Management group | `/providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca` |
 | Role definition | Subscription | `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca` |
 | Subscription | Tenant | `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c` |
 | Management group | Tenant | `/providers/Microsoft.Management/managementGroups/ProductionMG` |

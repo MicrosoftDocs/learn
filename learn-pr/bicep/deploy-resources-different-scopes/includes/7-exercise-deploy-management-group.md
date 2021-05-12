@@ -1,28 +1,48 @@
-> [!NOTE]
-> This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
-
 TODO scenario
 
 > [!div class="checklist"]
 > * TODO
 
-## Prerequisites
-
-To complete this exercise, you'll need:
-
-- An Azure subscription.
-- Management groups to be enabled on your Azure tenant.
-- Permission to deploy Azure Policy resources to a management group.
+> [!NOTE]
+> To complete this exercise, you'll need:
+>
+> - Management groups to be enabled on your Azure tenant.
+> - Permission to create a new management group within your hierarchy.
+> - Permission to deploy Azure Policy resources to a management group.
+> 
+> In many organizations, you may not be able to meet all of these prerequisites.
 
 ## Create a management group
 
-If you don't have a test management group to work within, create a new management group for this exercise. If you already have a management group you can deploy test resources into, you can skip these steps.
+Create a new management group for this exercise.
 
-TODO
+::: zone pivot="cli"
 
-## Get the management group ID
+Execute the following Azure CLI commands in the Visual Studio Code terminal.
 
-TODO
+```azurecli
+az account management-group create \
+  --name SecretRND \
+  --display-name "Secret R&D Projects"
+```
+
+By default, the new management group will be created as a child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `--parent-id` parameter, and specify the name of the management group to use as the parent.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+Execute the following Azure PowerShell commands in the Visual Studio Code terminal.
+
+```azurepowershell
+New-AzManagementGroup \
+  -GroupName 'SecretRND' \
+  -DisplayName 'Secret R&D Projects'
+```
+
+By default, the new management group will be created as a child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `-ParentId` parameter, and specify the name of the management group to use as the parent.
+
+::: zone-end
 
 ## Create a Bicep file to deploy to a management group
 
@@ -30,13 +50,51 @@ TODO
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
-   :::code language="bicep" source="code/4-template.bicep" range="1" :::
+   :::code language="bicep" source="code/7-template.bicep" range="1" :::
 
    Note that this line of code tells Bicep that your template is going to be deployed at a management group scope.
 
-## Add a policy definition and assignment
+## Add a policy definition
 
-TODO
+Like before, you will create a policy definition in the Bicep file.
+
+1. Underneath the line you just added, add the following variable definition:
+
+   :::code language="bicep" source="code/7-template.bicep" range="5" :::
+
+1. At the bottom of the file, add the following Azure Policy definition:
+
+   :::code language="bicep" source="code/7-template.bicep" range="8-40" :::
+
+   The policy definition is the same as the one you previously applied to your subscription. This time, though, you're deploying it to a management group. 
+
+## Add a policy assignment
+
+Now you will apply the policy to the management group. This means that it will apply to all subscriptions that are children of this management group.
+
+In order to create a policy assignment, you need to refer to the policy definition. Azure Resource Manager doesn't currently have a way to obtain a full resource ID for resources deployed into management groups, so you will manually construct a resource ID.
+
+1. At the top of the file, underneath the `targetScope` definition, add a blank line and then the following parameter:
+
+   :::code language="bicep" source="code/7-template.bicep" range="3" :::
+
+   You will use the management group's name when you construct the resource ID shortly.
+
+1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
+
+   :::code language="bicep" source="code/7-template.bicep" range="42-47" :::
+
+   Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name, and the policy definition's name. Because you've reference the policy definition's name using the `policyDefinition.name` property, Bicep understands there's a dependency between the two resources. It will deploy the policy definition before the policy assignment.
+
+1. Save the changes to the file.
+
+## Verify your template
+
+Your template should look like the following:
+
+:::code language="bicep" source="code/7-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ### Deploy the template to Azure
 
@@ -45,16 +103,20 @@ TODO
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
 
 ```azurecli
+managementGroupId="SecretRND"
 templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
-deploymentName="new-mg"
+deploymentName="mg-scope-"$today
 
 az deployment mg create \
-    --TODO \
-    --name $deploymentName \
-    --location westus \
-    --template-file $templateFile
+  --management-group-id $managementGroupId \
+  --name $deploymentName \
+  --location westus \
+  --template-file $templateFile \
+  --parameters managementGroupName=$managementGroupId
 ```
+
+Notice that you have to provide the management group ID twice. The `--management-group-id` parameter helps Azure PowerShell send the deployment to the correct management group. The `-parameters managementGroupName=` parameter value is sent into the deployment and becomes the value for the `managementGroupName` parameter.
 
 ::: zone-end
 
@@ -63,42 +125,71 @@ az deployment mg create \
 Deploy the template by using Azure PowerShell commands in the terminal.
 
 ```azurepowershell
-$templateFile = "main.bicep"
-$deploymentName = "new-mg"
+$managementGroupId = 'SecretRND'
+$templateFile = 'main.bicep'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "mg-scope-$today"
 
 New-AzManagementGroupDeployment `
-  -TODO $TODO `
+  -ManagementGroupId $managementGroupId `
   -Name $deploymentName `
   -Location westus `
-  -TemplateFile $templateFile
+  -TemplateFile $templateFile `
+  -managementGroupName $managementGroupId
 ```
+
+Notice that you have to provide the management group ID twice. The `-ManagementGroupId` parameter helps Azure PowerShell send the deployment to the correct management group. The `-managementGroupName` parameter value is sent into the deployment and becomes the value for the `managementGroupName` parameter.
 
 ::: zone-end
 
-Notice that, like with subscription deployments, you're explicitly specifying a name and location for the deployment metadata.
+Also notice that, like with subscription deployments, you're explicitly specifying a name and location for the deployment metadata.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 
 ## Verify the deployment
 
-You can view subscription-scoped deployments in the Azure portal. This can be helpful to verify that the deployment has finished successfully and to inspect the results.
+Like subscription-scoped deployments, you can view management group-scoped deployments in the Azure portal.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left-side panel, select **Management groups**. TODO not in left panel
+1. On the left menu, select **All services**.
 
-1. Select the management group you're using.
+1. At the top of the middle panel, in the **Search** box, enter **Management groups** and select the **Management groups** menu item.
 
-TODO check below
+   :::image type="content" source="../media/7-portal-search.png" alt-text="Screenshot of the Azure portal interface showing the service list with management groups highlighted." border="true":::
+
+1. Select the **Secret R&D Projects** management group.
+
+   :::image type="content" source="../media/7-management-group-list.png" alt-text="Screenshot of the Azure portal interface showing the list of management groups." border="true":::
 
 1. At the top of the left menu, in the **Search** box, enter **Deployments** and select the **Deployments** menu item.
 
-    :::image type="content" source="../media/4-search.png" alt-text="Screenshot of the Azure portal interface showing the search field and the Deployments menu item." border="true":::
+   :::image type="content" source="../media/7-management-group-details.png" alt-text="Screenshot of the Azure portal interface showing the management group details." border="true":::
 
-1. Select the deployment called **new-subscription** to see what resources were deployed.
+1. Select the deployment beginning with **mg-scope** to see what resources were deployed.
 
-   :::image type="content" source="../media/4-deployment-list.png" alt-text="Screenshot of the Azure portal interface showing the list of deployments." border="true":::
+   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal interface showing the list of deployments." border="true":::
 
 1. Select **Deployment details** to expand it. In this case, the two Azure Policy resources are listed.
 
-    :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment." border="true":::
+    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment." border="true":::
+
+### Clean up the resources
+
+You've successfully deployed management group-scoped. You can remove the policy resources and management group that you've created.
+
+::: zone pivot="cli"
+
+```azurecli
+az account management-group delete --name SecretRND
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzManagementGroup -GroupName SecretRND
+```
+
+::: zone-end
