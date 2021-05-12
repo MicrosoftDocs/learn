@@ -4,9 +4,9 @@ title: Azure Digital Twins overview
 metadata:
   title: Azure Digital Twins overview
   description: Learn about the Azure Digital Twins Internet of Things (IoT) platform that can enable you to create a digital representation of real-world things, places, business processes, and people.
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.date: 5/5/2021
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
