@@ -23,22 +23,22 @@
     {
       "source_path": "learn-pr/intro-to-csharp/index.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-cli-2-0/index.md",
       "redirect_url": "https://docs.microsoft.com/cli/azure/get-started-with-azure-cli",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/build-serverless-app/index.md",
       "redirect_url": "https://docs.microsoft.com/azure/functions/tutorial-static-website-serverless-api-with-database",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/deploy-apps-to-azure/index.md",
       "redirect_url": "https://docs.microsoft.com/azure/app-service/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/deploy-custom-vmss-app/index.md",
@@ -1078,12 +1078,12 @@
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-amazon-s3.md",
       "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/2-design-a-solution.md",
@@ -1148,37 +1148,37 @@
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/1-introduction.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/1-introduction/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/2-definitions.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/2-definitions/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/3-web-storefronts.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/3-web-storefronts/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/4-engage-customers.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/4-engage-customers/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/5-go-market-with-microsoft.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/5-go-market-with-microsoft/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/6-knowledge-check.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/6-knowledge-check/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/7-summary/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/languages/python-create-first/1-introduction.md",
@@ -1978,157 +1978,157 @@
     {
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/3-exercise-k-means.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/2-k-means-clustering.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/3-cnn-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/2-deep-learning-applications.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/5-deep-learning-tools.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/4-exercise-CNNs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/7-exercise-rnns.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/6-rnn-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/4-activation-functions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/5-exercise-neural-networks-advanced.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/3-exercise-neural-networks-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/2-learning-rate.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/ml-crash-course/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/create-machine-learn-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/5-exercise-multiple-linear-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/7-exercise-polynomial-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/3-exercise-simple-linear-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/4-multiple-linear-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/6-nonlinear-data-sets-with-polynomial-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/2-simple-linear-regression.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-school/introduction-to-regression/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/authoring-arm-templates/index.md",
@@ -3138,7 +3138,7 @@
     {
       "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn.md",
@@ -5831,27 +5831,27 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/data-engineering-with-databricks/index.yml",
+      "source_path": "learn-pr/paths/data-engineering-with-databricks/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/data-science/index.yml",
+      "source_path": "learn-pr/paths/data-science/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/explore-data-science-tools-in-azure/index.yml",
+      "source_path": "learn-pr/paths/explore-data-science-tools-in-azure/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/get-started-with-azure-dsvm/index.yml",
+      "source_path": "learn-pr/paths/get-started-with-azure-dsvm/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/publish-experiment-with-ml-studio/index.yml",
+      "source_path": "learn-pr/paths/publish-experiment-with-ml-studio/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
       "redirect_document_id": false
     },
