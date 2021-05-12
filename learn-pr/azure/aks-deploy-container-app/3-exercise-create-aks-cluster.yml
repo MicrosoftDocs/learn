@@ -8,7 +8,6 @@ metadata:
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: platform-windows-linux
 title: Exercise - Create an Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |
