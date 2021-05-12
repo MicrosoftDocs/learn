@@ -21,7 +21,7 @@ While setting up your video and audio before joining a meeting, select **Backgr
 
 The Microsoft Learning Tools feature Immersive Reader is also available in Teams. Changing the appearance of text with Immersive Reader options such as Line Focus and Spacing can promote focus and remove distraction. This can be useful for everyone but especially helpful for people with learning or mental health disabilities. Immersive Reader can also read text aloud, which can make it easier for people with low vision to read Teams chat messages and posts.
 
-To launch Immersive Reader from a Teams message, hover over a message with your cursor or tap with your finger on a touch screen device. Select **More options** ![Launch Immersive Reader.](../media/more-options2.png), and then select **Immersive Reader** ![Launch Immersive Reader.](../media/immersive-reader.png).
+To launch Immersive Reader from a Teams message, hover over a message with your cursor or tap with your finger on a touch screen device. Select **More options** ![Select More options.](../media/more-options2.png), and then select **Immersive Reader** ![Launch Immersive Reader.](../media/immersive-reader.png).
 
 For more information, explore the [Accessibility overview of Microsoft Teams.](https://support.office.com/en-us/article/accessibility-overview-of-microsoft-teams-2d4009e7-1300-4766-87e8-7a217496c3d5).
 
