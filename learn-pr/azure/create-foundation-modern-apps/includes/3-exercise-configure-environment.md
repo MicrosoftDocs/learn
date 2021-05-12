@@ -2,11 +2,11 @@ Before developing modern applications with Azure, there are some tools you shoul
 
 In the bus-catching scenario, you'll use several of these tools to build out the microservices architecture.
 
-## Tools for success
+## Configure your local machine for development with Azure
 
 Here, you'll learn how to download the latest recommended tools and extensions. You'll also set up the code sample on your local machine, and you'll select a language for the rest of the learning path (Python, Node.js, or .NET Core). If you decide to complete other modules in the learning path, you will not need to repeat these steps.
 
-### Visual Studio Code
+### Execute application lifecycles with Visual Studio Code
 
 Throughout the learning path, you'll use Visual Studio Code as your main development tool. If you have another tool of choice, you are free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
 
@@ -39,7 +39,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
-### Azure Data Studio
+### Access and build data solutions with Azure Data Studio
 
 Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities. A notebook is a document with a file ending in `.ipynb` which mixes runnable code cells and text cells in one file.
 

@@ -4,7 +4,7 @@ In the bus catching scenario, Azure SQL Database was selected due to it being an
 
 Here, you will deploy Azure SQL Database using scripts, connect to it in Azure Data Studio, and set up the database for the scenario using T-SQL. You'll then explore the JSON and geospatial support as relates to catching the bus.
 
-## Deploy Azure SQL Database
+## Deploy Azure SQL Database using PowerShell
 
 In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this piece, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
@@ -90,7 +90,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Connect with Azure Data Studio
+## Connect to Azure SQL Database with Azure Data Studio
 
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
 
@@ -113,7 +113,7 @@ Once your database is deployed, there are many ways that you can connect and int
 
 1. Once a successful connection is made, you should be able to navigate the database's contents in the Connections pane.
 
-## Set up the database
+## Set up the database's schema with T-SQL
 
 Once you're connected to any database, you usually need to deploy the database schema and tailor the database to meet your scenario's requirements by creating tables. Using a series of T-SQL scripts in a SQL notebook in Azure Data Studio, you'll configure the database to support your application and load some initial bus-related data.
 

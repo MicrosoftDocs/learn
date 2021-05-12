@@ -1,6 +1,10 @@
-Modern applications require a strong foundation that's built on a modern database like Azure SQL Database.
+Mobile apps, cloud services, serverless technologies, IoT devices, web APIs - modern applications combine a diverse set of new technologies to supply users relevant information directly to their mobile devices at just the right moment. And at the heart of these modern applications is a vast amount of data that is generated, ingested, synthesized, analyzed and queried. Which database provides the right foundational mix of capabilities and scalability to build on? Azure SQL Database is a reliable, scalable, and feature-rich data platform that you can design your modern applications around.
 
-Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus.
+Suppose you work for the transportation department of a major city and you want to increase the number of bus riders. To make it convenient to jump on the bus, you want to build a mobile app that allows users to monitor a bus’s progress along its route. By providing up to the second information on the whereabouts of the next bus along the route, you can help potential riders eliminate the situation where they either end up waiting for the bus or running to catch the bus and missing it.
+
+A mobile application that can provide this type of real-time information will require an architecture featuring many of the technologies that we already introduced, including a mobile app, cloud services, serverless technology, IoT devices, web APIs, and most importantly, you'll need a data store like Azure SQL Database that can provide a foundation for it all.
+
+In this series of four modules which are part of the Build serverless, full stack applications in Azure learning path, we'll design and build this bus ride application from scratch.
 
 In this module, you'll break down a scenario for an application and build a multi-service architecture of a solution, which is based on the microservices approach. After constructing the architecture, you'll dive into the first crucial step: building the foundation for a modern application. Using Azure SQL Database, you'll deploy, configure, and automate CI/CD for the database component of your full stack application.
 

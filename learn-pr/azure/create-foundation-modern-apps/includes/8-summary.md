@@ -2,11 +2,11 @@ Getting the timing right of heading to the bus stop is a challenge that most can
 
 Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. If you choose to complete the next module of the associated learning path, you'll dive into the API portion of the solution, which uses Azure Functions.
 
-## References
+## References to further your learning
 
 There are many references for you to go as deep into the topics discussed as you want, now or at a later time.
 
-### Azure SQL Database is a modern database
+### Modern database development with Azure SQL Database
 
 The following references are related to Azure SQL Database's modern capabilities.
 
@@ -20,7 +20,7 @@ The following references are related to Azure SQL Database's modern capabilities
 - [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
 - [Lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
 
-### DevOps and Azure SQL Database
+### Implement DevOps using Azure SQL Database
 
 The following references will be very useful if you want to learn about DevOps generally and as it relates to Azure SQL Database.
 
@@ -44,6 +44,6 @@ The following references will be very useful if you want to learn about DevOps g
 - [Python - Django](https://docs.djangoproject.com/en/3.2/topics/migrations/)
 - [Python - SQLAlchemy Alembic](https://pypi.org/project/alembic/)
 
-## Other samples
+## Other samples for diving into modern database development
 
 A sample of a fully featured solution that shows how to use the Manual Script approach along with database unit testing options is available here: [Modern development: creating a REST API, via CI/CD and back](https://devblogs.microsoft.com/azure-sql/modern-development-creating-a-rest-api-via-ci-cd-and-back/).

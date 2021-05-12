@@ -4,7 +4,7 @@ Recall in the bus-catching scenario, you will build the foundation of your appli
 
 In order to automate updates, you'll need to configure GitHub secrets and a yaml file. Once those are set up, new commits that are pushed trigger workflows that will in turn update your Azure SQL Database or other services.
 
-## Configure GitHub secrets
+## Configure secrets securely with GitHub
 
 GitHub secrets introduce a way to securely store secrets, keys, and other sensitive information in GitHub. In this section, you'll create a new GitHub secret that includes your Azure SQL Database connection string.
 
@@ -18,7 +18,7 @@ GitHub secrets introduce a way to securely store secrets, keys, and other sensit
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-## Configure yaml file
+## Configure yaml file for GitHub Actions
 
 There are several template yaml files available in the code repository. For this module, you will only use the workflow file for Azure SQL Database. If you decide to complete future modules of this learning path, you will learn how to automate deployment for other services.
 
@@ -28,7 +28,7 @@ There are several template yaml files available in the code repository. For this
 
 1. Review the template and seek to understand what the workflow will do, and how it will update the database.
 
-## Push commits and monitor results
+## Push commits and monitor results using Visual Studio Code and GitHub
 
 Now that your GitHub secret and workflow file are configured, you are ready to push your commits and observe the workflow.
 
