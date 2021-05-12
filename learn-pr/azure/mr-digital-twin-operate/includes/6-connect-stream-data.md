@@ -37,11 +37,11 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
     https://myprojadtxxxxxxxxxx.api.eus.digitaltwins.azure.net
     ```
 
-    :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::
+    :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt." lightbox="../media/query-azure-deployment-to-file.png":::
 
 4. In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor by double-clicking the file from the Solution Explorer pane, typically found on the right-hand side of the application screen.  Paste the value for your **adtHostName** key/pair copied from Step 2 above into the **adtInstanceUrl** string variable.  
 
-    :::image type="content" source="../media/host-name-cs.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and host name and instance url values added.":::
+    :::image type="content" source="../media/host-name-cs.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and host name and instance url values added." lightbox="../media/host-name-cs.png":::
 
 ## Configure the DeviceSimulator with the Primary connection string for the IoT Hub created by the ARM template
 
@@ -53,7 +53,7 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
 
 2. In your Visual Studio **DeviceSimulator** solution, open the **AzureIoTHub.cs** file in the editor and paste your connectionString value copied from Step 1 above into the **iotHubConnectionString** string variable.
 
-    :::image type="content" source="../media/host-name-cs.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and iot hub connection string value is added.":::
+    :::image type="content" source="../media/host-name-cs.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and iot hub connection string value is added." lightbox="../media/host-name-cs-expanded.png":::
 
 ## Configure the DeviceSimulator with the authentication keys created by the ARM template 
 
@@ -66,7 +66,7 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
     | password | clientSecret |
     | tenant | tenantId |
 
-    :::image type="content" source="../media/prop-updater.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The prop updater dot cs file is open and client id, client secret, and tenant id values are added but blurred out.":::
+    :::image type="content" source="../media/prop-updater.png" alt-text="Screenshot of the Device Simulator solution in Visual Studio. The prop updater dot cs file is open and client, secret, and tenant id values are added." lightbox="../media/prop-updater-expanded.png":::
 
 3. Save your work in Visual Studio by selecting **File > Save All**
 

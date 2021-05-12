@@ -59,7 +59,7 @@ az ad sp create-for-rbac --name ${appreg} --skip-assignment > AppCredentials.txt
 > [!NOTE]
 > The output from this command will be saved by redirecting standard output to **AppCredentials.txt** text file in the same directory in which you are running the az scripts.  Any errors, should they occur will be displayed in your PowerShell console.  You will need to open this file to retrieve these credentials to configure the telemetry simulator application later.  Be wary of leaving this file on your filesystem long term, as it will contain credentials.  Consider deleting the file after completing this learning path.
 
-:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of the command-line interface using the Windows PowerShell environment to set the apps product name and app registration name and create the app registration.":::
+:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of the command-line interface using the PowerShell environment to set app product and registration names and create the app registration.":::
 
 ## Obtain the ObjectID of the App Registration and the UserID
 

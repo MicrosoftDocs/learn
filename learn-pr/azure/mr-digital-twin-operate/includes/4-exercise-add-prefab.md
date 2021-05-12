@@ -22,7 +22,7 @@ Now that you know a little more about the basics of using telemetry data and wha
 > [!NOTE]
 > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  If you want to use it, you will need to configure the Scene parameters (viz., Maps SDK and Azure Services) from steps found in this module and Build a 3D Scene for Mixed Reality in Unity.
 
-Unity Prefabs have been created to accelerate the connectivity of your wind farm to the ADT service.  The **ADTConnection** Prefab handles all incoming data from ADT through the Azure SignalR service.  This connection has an associated data handler script that will automatically update the **TurbineSiteData ScriptableObject** with operating information for each turbine.  This TurbineSiteData ScriptableObject is used to update controls on the **OperateSceneUI** based on events raised within this prefab.  
+Unity Prefabs have been created to accelerate the connectivity of your wind farm to the Azure Digital Twins service.  The **ADTConnection** Prefab handles all incoming data from ADT through the Azure SignalR service.  This connection has an associated data handler script that will automatically update the **TurbineSiteData ScriptableObject** with operating information for each turbine.  This TurbineSiteData ScriptableObject is used to update controls on the **OperateSceneUI** based on events raised within this prefab.  
 
 ## Add ADT Connection Prefab
 

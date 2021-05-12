@@ -8,7 +8,7 @@ Create ADT equipped User Interfaces to provide a window into operations data.
     - The **Bing Maps Operate** Prefab has additional components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to request an asset via its address. Once an asset (for example, a Prefab) is marked “addressable”, it generates an address, which can be called from a Unity application at runtime. Local and remotely stored assets are discovered by your application, along with any associated dependencies, and are returned.  
     - Turbine position can be changed via the Turbine Site Data **ScriptableObject**.   To alter the position of any turbine for placement at runtime, change the **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**.  Find these configuration parameters for your Digital Twin turbines under **Assets > ScriptableObjects > Turbine Site Data**.
 
-    :::image type="content" source="../media/scriptable-object.png" alt-text="Screenshot of the Unity editor with the bings map operate prefab running in the main scene.":::
+    :::image type="content" source="../media/scriptable-object.png" alt-text="Screenshot of the Unity editor with the bing map operate prefab running in the main scene." lightbox="../media/scriptable-object-expanded.png":::
 
     > [!IMPORTANT]
     > Do not change any other parameters or characteristics on Addressables otherwise you will need to re-compile them, which is not covered in this module.
@@ -16,7 +16,7 @@ Create ADT equipped User Interfaces to provide a window into operations data.
 3. Drag the UI Panel Prefab from **Assets > UIPrefabs > Prefabs > OperateSceneUI** into the **Hierarchy** panel.  
     - This UI Panel is populated with Turbine Site Data at runtime. In this Prefab folder, you will find the **HandMenuOperate.prefab**.  This provides constraints, thresholds, and tracking configuration for menu operation on the HoloLens 2 using your hands.  The Prefab has been configured for default behavior and no further configuration is required.
 
-    :::image type="content" source="../media/operate-scene-ui.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned away from the terrain.":::
+    :::image type="content" source="../media/operate-scene-ui.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned away from the terrain." lightbox="../media/operate-scene-ui-expanded.png":::
 
 ## Explore the configurable items in the OperateSceneUI and Hand Menu - Operate
 
@@ -36,4 +36,4 @@ Once you are familiar with the Scene, you can go back and customize the color va
 1. Select the **OperateSceneUI** Game Object in the hierarchy
 2. Position the UI in the Scene as you would any other game object.  Consider how the user will likely be viewing the turbine data and where you would expect the User Interface to be relative to the turbine assets.
 
-    :::image type="content" source="../media/position-ui.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned closer to the terrain.":::
+    :::image type="content" source="../media/position-ui.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned closer to the terrain." lightbox="../media/position-ui-expanded.png":::

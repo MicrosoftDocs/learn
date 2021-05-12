@@ -35,5 +35,5 @@ Use the Visual Studio **s** solution to simulate an operating wind farm.  Send t
 
 ## Stop the DeviceSimulator
 
-1. This is important to ensure you avoid unnecessary charges to your Azure account
-2. Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE
+* This is important to ensure you avoid unnecessary charges to your Azure account
+* Press **Ctrl-C** in the Command Window or the **Stop** button in the Visual Studio IDE

@@ -5,8 +5,8 @@ In your wind farm Digital Twin, the simulator sends a property update to ADT on 
 The pre-built simulator you're running sends telemetry every 5 seconds from the stand-alone console application to ADT.  This telemetry represents a normal state and has turbine OK as the event code. When the user triggers an alert on the simulator, it sends modified telemetry that represents an alert situation.  The simulator sends a property update to ADT, setting the Alert property to **True** on your Digital Twin for a particular turbine.  The simulator begins to poll ADT at a regular interval until the Alert property is set back to **False**, triggered by the user clearing the alert from the app within the HoloLens. Once the alert is cleared, the simulator resumes sending normal telemetry again, with the turbine **OK** event code.
 
 The data simulator connects to the ADT REST API for two purposes:
-1. To send a property update to ADT (that is, to toggle the alert state of turbine T102); and, 
-2. To poll for an Alert status, once flagged by the user, until it's cleared, and normal telemetry value streams are resumed.
+* To send a property update to ADT (that is, to toggle the alert state of turbine T102); and, 
+* To poll for an Alert status, once flagged by the user, until it's cleared, and normal telemetry value streams are resumed.
 
 Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm, sending telemetry data to ADT, where your newly configured Digital Twin in Unity receives input and displays operating conditions on the wind farm.
 
@@ -19,7 +19,7 @@ Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm, send
 2. Run the **DeviceSimulator** by pressing the **Play** button or **F5**
 3. Press any key to begin the simulation.  
 
-## Observe overview of Wind Farm performance
+## Observe overview of wind farm performance
 
 1. Put on your HoloLens 2 device.
 2. Summon the Site overview menu.  When running the build on the HoloLens 2 device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the **Site Overview** Panel. Click the button.  The Site overview panel will float and follow you as you navigate around the map.

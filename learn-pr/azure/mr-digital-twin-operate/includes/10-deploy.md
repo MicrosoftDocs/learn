@@ -14,7 +14,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 3. A Command window will open displaying Turbine IDs and messages indicating connectivity and device retrieval / creation
 4. Press any key to begin the simulation.  This simulation generates a significant amount of data (every 5 seconds by default_, simulating real world operations.  Azure consumption will occur.
 
-## Observe overview of Wind Farm performance
+## Observe overview of wind farm performance
 
 1. Put on your HoloLens 2 device.
 2. Launch your app.
@@ -25,7 +25,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 4. Center on a turbine.  Use **near** or **far** interactions to select a turbine from the list. Click with the pointer or finger to center the map on the turbine location.
 5. Zoom in on the map.  Use **near** or **far** interactions to interact with the handle of the slider at the base of the map. Moving the slider to the left or right will change the current zoom level of the map
 
-## Navigate to individual turbines and view details in Mixed Reality
+## Navigate to individual turbines and view details in mixed reality
 
 1. Use the hand pointer to aim at a Digital Twin turbine model on the map. 
 2. Use a **click** gesture to select the turbine and display its information panel. The information panel can also be displayed by clicking the associated button in the **Site Overview** panel.

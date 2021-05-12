@@ -16,13 +16,13 @@ The ARM template, among other things, creates the required **App Registration**.
 
 These credentials and URL need to be transferred to your Unity project, so that your app can authenticate and interact with ADT.  Specifically, you need to assign these values to a **ScriptableObject** in the project and then reference that **ScriptableObject** from a specific **GameObject** in the Scene.
 
-## Add ADT credentials
+## Add Azure Digital Twins credentials
 
 1. Navigate to the Credentials folder in the Unity Project panel
 **Assets > ScriptableObjects > AzureDigitalTwin > Credentials**
 2. Create a Scriptable Object for the credentials by selecting the **Assets > Create > Scriptable Objects > Credentials > ADT Rest API Credentials**
 
-    :::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity editor with the assets menu open showing the create, scriptable objects, credentials, adt rest api credentials menu selection path.":::
+    :::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity assets menu open showing the create, scriptable objects, credentials, adt rest api credentials menu selection.":::
 
 3. Select the newly created scriptable object in the Project panel to see its configuration parameters in the Inspector panel.  Transfer the values based on the variable mapping listed above from the **AppCredentials.txt file**.
 
@@ -35,14 +35,14 @@ These credentials and URL need to be transferred to your Unity project, so that 
 
     :::image type="content" source="../media/adt-prefabs.png" alt-text="Screenshot of the ADT prefab objects in the Unity project panel.":::
 
-    :::image type="content" source="../media/ADTTurbineAlertController.png" alt-text="Screenshot of the ADT prefab objects added to the Unity hierarchy panel.":::
+    :::image type="content" source="../media/adt-turbine-alert-controller.png" alt-text="Screenshot of the ADT prefab objects added to the Unity hierarchy panel.":::
 
 3. In the Inspector, find the **ADT Turbine Alert Controller (Script)** component.  Select the circular icon inside the value box for the field named **Adt Connection Info**.
 
-    :::image type="content" source="../media/ADTTurbineAlertController-inspector.png" alt-text="Screenshot of the ADT turbine alert controller in the Unity inspector.":::
+    :::image type="content" source="../media/adt-turbine-alert-controller-inspector.png" alt-text="Screenshot of the ADT turbine alert controller in the Unity inspector.":::
 
 4. Select the **Adt Connection Info** property and assign the **ADTRestAPICredentials** scriptable object.
 
-    :::image type="content" source="../media/ADTTurbineAlertController-ADTRestAPICredentialsScriptableObject.png" alt-text="Screenshot of the ADT rest api credentials scriptable object in the Unity assets folder.":::
+    :::image type="content" source="../media/adt-turbine-controller-rest-api-so.png" alt-text="Screenshot of the ADT rest api credentials scriptable object in the Unity assets folder.":::
 
 5. Save your file with **File > Save**

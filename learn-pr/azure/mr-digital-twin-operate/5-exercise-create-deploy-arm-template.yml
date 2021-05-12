@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
-title: Exercise - set up the exercise environment
+title: Exercise - Set up the exercise environment
 metadata:
-  title: Exercise - set up the exercise environment
+  title: Exercise - Set up the exercise environment
   description: Learn how to deploy an ARM template to create, configure, and deploy Azure Services.   
-  ms.date: 5/4/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

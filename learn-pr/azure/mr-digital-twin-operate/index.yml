@@ -46,14 +46,14 @@ products:
 - hololens
 units:
 - learn.azure.mr-digital-twin-operate.1-introduction
-- learn.azure.mr-digital-twin-operate.2-connecting-telemetry-data
+- learn.azure.mr-digital-twin-operate.2-connect-telemetry-data
 - learn.azure.mr-digital-twin-operate.3-arm-templates
 - learn.azure.mr-digital-twin-operate.4-exercise-add-prefab
 - learn.azure.mr-digital-twin-operate.5-exercise-create-deploy-arm-template
 - learn.azure.mr-digital-twin-operate.6-connect-stream-data
 - learn.azure.mr-digital-twin-operate.7-exercise-create-ui
 - learn.azure.mr-digital-twin-operate.8-visualize-signalr
-- learn.azure.mr-digital-twin-operate.9-connect-adt
+- learn.azure.mr-digital-twin-operate.9-connect-azure-digital-twins
 - learn.azure.mr-digital-twin-operate.10-deploy
 - learn.azure.mr-digital-twin-operate.11-identify-performance-events
 - learn.azure.mr-digital-twin-operate.12-knowledge-check

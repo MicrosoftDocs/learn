@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.mr-digital-twin-operate.8-visualize-signalr 
-title: Exercise - visualize and interact with simulated operations data using SignalR
+title: Exercise - Visualize and interact with simulated operations data using SignalR
 metadata:
-  title: Exercise - visualize and interact with simulated operations data using SignalR
+  title: Exercise - Visualize and interact with simulated operations data using SignalR
   description: Learn how to leverage SignalR to visualize and interact with simulated operations data.
-  ms.date: 5/4/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
