@@ -1,4 +1,3 @@
-<!-- GLOBAL: Standarize the decimals in the document. Please remove spaces in between numbers and validate if we need to add the thousands comma separator or not. I added comments suggesting we should add it but I realize there are some docs where we use it and where we don't. What I think we should do is validate if we need it or not and make the appropiate changes to have consistency across all docs. -->
 By migrating your organization's critical workload to Azure, you'll be able to provide a range of infrastructure requirements such as scalable performance, built-in security, durability, and cost optimization.
 
 Many of these infrastructure requirements are directly associated with block storage, which is the foundation of Azure managed disks.
@@ -10,8 +9,8 @@ The type and size of the disk that you select for your critical applications dir
 You can adjust and balance the IOPS, throughput, and latency of your Azure disks by selecting the right performance tier. To select the right combination, you should be aware of your application requirements. High-I/O applications, such as database servers or online transactional processing systems, will require higher IOPS, whereas more computational-based applications might work well with much lower requirements.
 
 You might also have applications that require, on a temporary basis, higher demands on performance, without increasing the capacity of the disks. You can change the performance tier on Ultra Disks and Premium SSD disks when you need to meet a higher performance demand.
-For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that is limited to 120 IOPS and 25 MBps. Because of the outgoing marketing campaign, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to an higher tier, such as P30 with 5000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you will be charged for the price of that tier. In this example, you will be charged the price of P30.
-<!-- Replace "5000" with "5,000". -->
+For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that is limited to 120 IOPS and 25 MBps. Because of the outgoing marketing campaign, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to an higher tier, such as P30 with 5,000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you will be charged for the price of that tier. In this example, you will be charged the price of P30.
+
 Azure currently supports modifications to the performance tier for Ultra Disks without dismounting it from the VM. For Premium SSD disks, Azure offers this functionality in preview in a limited number of regions.
 
 ## Change the performance tier on premium disks while in use by the VMs
@@ -20,8 +19,7 @@ You can change the performance tier of a Premium SSD without downtime and withou
 
 At the time of writing of this content, Azure supports this functionality only in East US2 region and requires that you deploy the VM by using an Azure Resource Manager template with the 2020-12-01 API.
 
-You can change the performance tier of the disk by using the PowerShell Azure command-line interface (Azure CLI) or the Azure portal.
-<!-- Replace "You can change the performance tier of the disk by using the PowerShell Azure command-line interface (Azure CLI) or the Azure portal." with "You can change the performance tier of the disk by using the Azure command-line interface (Azure CLI) or the Azure portal." Basically remove the word "PowerShell". -->
+You can change the performance tier of the disk by using the Azure command-line interface (Azure CLI) or the Azure portal.
 Use the following commands to change the disk performance tier:
 
 Azure CLI
