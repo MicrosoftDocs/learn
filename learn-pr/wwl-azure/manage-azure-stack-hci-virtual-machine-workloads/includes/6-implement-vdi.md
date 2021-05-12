@@ -19,7 +19,7 @@ At a high level, deployment of an RDS-based VDI environment on Azure Stack HCI i
 
 1. Identify and purchase Azure Stack HCI hardware optimized for VDI workloads. Azure Stack HCI Catalog includes **Virtual desktop infrastructure** as one of the search filtering criteria for integrated systems and validated nodes.
 
-    :::image type="content" source="../media/azs-hci-catalog-vdi.png" alt-text="The screenshot depicts the Azure Stack HCI Catalog, with **Virtual desktop infrastructure** selected as one of the search filtering criteria for integrated systems and validated nodes." border="false"::
+    :::image type="content" source="../media/azs-hci-catalog-vdi.png" alt-text="The screenshot depicts the Azure Stack HCI Catalog, with **Virtual desktop infrastructure** selected as one of the search filtering criteria for integrated systems and validated nodes." border="false":::
 
 1. Determine the preferred licensing model and purchase a sufficient number of RDS client access licenses (CALs). RDS supports Per Device and Per User CALs.
 1. Obtain certificates for the Remote Desktop (RD) Gateway and RD Connection Broker servers. Client devices should trust the certification authority that issued the certificates.

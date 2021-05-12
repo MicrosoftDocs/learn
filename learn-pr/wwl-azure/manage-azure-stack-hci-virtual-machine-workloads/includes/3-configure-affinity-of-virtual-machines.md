@@ -21,7 +21,7 @@ Windows Admin Center simplifies the process of implementing affinity and anti-af
 
 - The affinity rule type is referred to as **Together (same server)**.
 
-:::image type="content" source="../media/virtual-machine-affinity-2.png" alt-text="The screenshot depicts the **Create affinity rule** dialog box in Windows Admin Center, where you can create an affinity rule referencing one or more VMs and their storage. In Windows Admin Center, this rule type is referred to as **Together (same server)**." border="false":: 
+:::image type="content" source="../media/virtual-machine-affinity-2.png" alt-text="The screenshot depicts the **Create affinity rule** dialog box in Windows Admin Center, where you can create an affinity rule referencing one or more VMs and their storage. In Windows Admin Center, this rule type is referred to as **Together (same server)**." border="false":::
 
 > [!NOTE]
 > To further customize or automate implementation of Azure Stack HCI affinity and anti-affinity rules, use Windows PowerShell.

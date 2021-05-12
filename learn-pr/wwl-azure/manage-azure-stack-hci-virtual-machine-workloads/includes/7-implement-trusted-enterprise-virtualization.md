@@ -14,7 +14,7 @@ To address the demands from Contoso business leads for protection of their workl
 
 1. Identify and purchase Azure Stack HCI hardware optimized for trusted enterprise virtualization. Azure Stack HCI Catalog includes **Trusted enterprise virtualization** as one of the search filtering criteria for integrated systems and validated nodes.
 
-    :::image type="content" source="../media/azs-hci-catalog-tev.png" alt-text="The screenshot depicts the Azure Stack HCI Catalog with **Trusted enterprise virtualization** selected as one of the search filtering criteria for integrated systems and validated nodes." border="false"::
+    :::image type="content" source="../media/azs-hci-catalog-tev.png" alt-text="The screenshot depicts the Azure Stack HCI Catalog with **Trusted enterprise virtualization** selected as one of the search filtering criteria for integrated systems and validated nodes." border="false":::
 
 1. Enable HVCI. Although HVCI is available on Azure Stack HCI certified hardware, it is not automatically enabled. To enable it, you can use Group Policy or direct registry changes. 
 1. Optionally, integrate Azure Stack HCI with Azure Defender. Azure Defender provides cloud-based advanced security management and threat detection benefits for on-premises workloads, including workloads running on Azure Stack HCI VMs.

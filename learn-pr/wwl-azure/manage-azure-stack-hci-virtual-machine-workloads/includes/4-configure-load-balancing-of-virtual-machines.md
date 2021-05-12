@@ -25,7 +25,7 @@ The **Balance virtual machine** property supports the following three values:
 - **Server joins** results in load balancing happening only when a node is added to the cluster. 
 - **Always** results in load balancing happening every 30 minutes and when a node is added to the cluster.
 
-:::image type="content" source="../media/virtual-machine-load-balancing-1.png" alt-text="The screenshot depicts the **Balance virtual machine** property, which supports three values: Never, Server joins, and Always." border="false"::
+:::image type="content" source="../media/virtual-machine-load-balancing-1.png" alt-text="The screenshot depicts the **Balance virtual machine** property, which supports three values: Never, Server joins, and Always." border="false":::
 
 The **Aggressiveness** property supports the following three values:
 
@@ -34,7 +34,7 @@ The **Aggressiveness** property supports the following three values:
 - **Medium** results in VM live migration from cluster nodes when the utilization level exceeds 70%.
 - **High** triggers evaluation of the average utilization across all cluster nodes and results in VM live migration from nodes with the utilization level at least five percent above the average.
 
-:::image type="content" source="../media/virtual-machine-load-balancing-2.png" alt-text="The screenshot depicts the **Aggressiveness** property, which supports three values: Low, Medium, and High." border="false"::
+:::image type="content" source="../media/virtual-machine-load-balancing-2.png" alt-text="The screenshot depicts the **Aggressiveness** property, which supports three values: Low, Medium, and High." border="false":::
 
 > [!NOTE]
 > To further customize or automate implementation of Azure Stack HCI VM load balancing, use Windows PowerShell.
