@@ -16,8 +16,8 @@ These are the two final exercises in the module's sequence of exercises. These e
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Implement App Service on the Azure Arc-enabled Kubernetes cluster.
-1. Deploy an App Service web app to the Azure Arc-enabled Kubernetes cluster.
+1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
+1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
 :::image type="content" source="../media/u6-exercise5.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fifth exercise (Deploy an App Service web app to the Azure Arc-enable Kubernetes cluster)." border="false":::
