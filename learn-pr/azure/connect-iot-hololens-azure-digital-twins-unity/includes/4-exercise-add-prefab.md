@@ -5,14 +5,17 @@ Now that you know a little more about the basics of using telemetry data and wha
 3. For this module, locate and open **2_PlaceDigitalTwinAssets**.  This Scene contains the **Bing Maps.prefab** Prefab that we'll be using.
 4. Find your Bing Maps developer key. If you don't have one, you can sign up for one here: [Create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).
 5. Select the **Bing Maps** game object from the **Hierarchy**, then enter your Developer Key and apply the following configurations to the **Map Renderer** component:
+
     **Location**
+
     | Property | Value |
     |---|---|
     | Latitude | 48.38 |
     | Longitude | -67.703 |
     | Zoom Level | 15.5 |
-    
+
     **Map Layout**
+
     | Property | Value |
     |---|---|
     | Map Shape | Cylinder |
