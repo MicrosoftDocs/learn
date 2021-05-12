@@ -10,5 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Code basic arithmetic in Python for future data analysis
 durationInMinutes: 6
-content: |
-  [!include[](includes/3-arithmetic.ipynb)]
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/3-arithmetic.ipynb?branch=pr-en-us-17307
