@@ -4,9 +4,9 @@ In this module, you'll build your Python development environment. You'll use thi
 
 By the end of this module, you'll have installed the tools on your computer to move forward with your goal of building applications with Python.
 
-## Objectives
+## Learning objectives
 
-In this module, you will:
+By the end of this module, you'll be able to:
 
 - Install Python 3 if needed.
 - Install and configure Visual Studio Code and extensions on your computer.

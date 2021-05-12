@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.python-install-vscode.exercise-interactive-mode
-title: Use Python's interactive mode to write and run code
+uid: learn.languages.python-install-vscode.exercise-write-first-application
+title: Create your first Python application
 metadata:
-  title: Use Python's interactive mode to write and run code
-  description: Python's interactive mode is a great way to experiment with writing Python.
-  ms.date: 3/2/2020
+  title: Create your first Python application
+  description: Create your first Python application
+  ms.date: 5/12/2021
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
