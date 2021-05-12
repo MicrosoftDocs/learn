@@ -29,7 +29,6 @@ The implementation process relies on Azure CLI, kubectl, and Helm. An Azure port
 - kubectl (version 1.13.2 or later). After you install Azure CLI, use it to install kubectl by running `az aks install-cli`.
 - Helm (version 3.4.0 or later). For information about Helm and installation, refer to [the Install existing applications with Helm in Azure Kubernetes Service (AKS) page on Microsoft Docs](https://docs.microsoft.com/azure/aks/kubernetes-helm).
 
-<!-- ID/SME: There shouldn't be an extra space here, right? I'm seeing this elsewhere in the units. Please fix globally if necessary. -->
 ## Task 2: Enable required preview features in the Azure subscription
 
 Azure App Service on Kubernetes with Azure Arc is available in preview mode only. You must explicitly opt in if you intend to use it in your Azure subscription. After you complete the opt-in process, perform the following steps to enable necessary functionality within your Azure subscription.
@@ -70,7 +69,6 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
     > [!NOTE]
     > Verify that the output includes the entry representing the **Central US EUAP** location before you proceed. If it doesn't, wait a few minutes and repeat this step.
 
-
 ## Task 3: Install required Azure CLI extensions
 
 Some of this module's implementation tasks depend on Azure CLI extensions. Extensions are Python components referred to as *wheels*. They are files with the **.whl** extension. Extensions implement Azure CLI commands that deliver experimental and prerelease features. You can download them from the GitHub repository dedicated to development of these features.
@@ -98,7 +96,6 @@ Use the following steps to install the Azure CLI extensions that are required to
 
     > [!NOTE]
     > Wait for the installation to complete. This should take about 1 minute.
-<!-- ID/SME: pane names should be bold. I'll try to catch them but please ensure globally that they're all bold. -->
 1. From your computer, download the latest **appservice-kube** CLI extension from [the Releases page of the Azure App Service on Azure Arc repository](https://github.com/microsoft/Azure-App-Service-on-Azure-Arc/releases).
 1. In the browser window that displays the **Azure Cloud Shell** pane, in the pane's toolbar, select the fourth icon that displays a page with vertical arrows that point in opposite directions (the fourth icon from the right). In the drop-down menu, select **Upload**.
 1. In the **Open** dialog box, navigate to the location of the **.whl** file, select it, and then select **Open**.
