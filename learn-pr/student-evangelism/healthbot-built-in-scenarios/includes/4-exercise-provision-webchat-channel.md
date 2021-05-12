@@ -4,11 +4,11 @@ The webchat is a simple web page that allows users to communicate with your Heal
 
 1. Sign-in to the Health Bot Management Portal. In the left menu blade, click **Secrets** under **Integration**.
 
-   :::image type="content" source="../media/4-A.png" alt-text="Azure Health Bot secrets":::
+   :::image type="content" source="../media/4-secrets.png" alt-text="Azure Health Bot secrets":::
 
 2. Secrets allow you to connect the bot to a web page. Copy the **WEBCHAT_SECRET** and the **APP_SECRET**.
 
-   :::image type="content" source="../media/4-B.png" alt-text="Web chat and App secret":::
+   :::image type="content" source="../media/4-webchat-app-secret.png" alt-text="Web chat and App secret":::
 
 3. Navigate to [Webchat container sample repository](https://github.com/Microsoft/HealthBotContainerSample/tree/live_agent_handoff), and click the **Deploy to Azure** button.
 
@@ -19,7 +19,7 @@ The webchat is a simple web page that allows users to communicate with your Heal
    - **App Secret**: Use the App Secret copied in previous step.
    - **Webchat secret**: Use the Web Chat secret copied in previous step.
 
-   :::image type="content" source="../media/4-C.png" alt-text="Web chat deployment window on Azure Portal":::
+   :::image type="content" source="../media/4-webchat-deployment.png" alt-text="Web chat deployment window on Azure Portal":::
 
 5. Click **Review + Create**.
 
@@ -27,11 +27,11 @@ The webchat is a simple web page that allows users to communicate with your Heal
 
 7. In the **Overview** page, open the **URL**.
 
-   :::image type="content" source="../media/4-D.png" alt-text="Web chat overview page on Azure Portal":::
+   :::image type="content" source="../media/4-webchat-overview.png" alt-text="Web chat overview page on Azure Portal":::
 
 8. Test the connection to your bot instance by typing a few commands into the web chat.
 
-   :::image type="content" source="../media/4-E.png" alt-text="Web chat user experience":::
+   :::image type="content" source="../media/4-webchat-ux.png" alt-text="Web chat user experience":::
 
 ## Deploying the Agent WebChat
 
@@ -39,11 +39,11 @@ The agent web chat is an additional channel that is connected to your bot instan
 
 1. In the management portal for your Health Bot instance navigate to **Configuration > Conversation > Human Handoff** and enable the human handoff feature and click **Save**.
 
-   :::image type="content" source="../media/4-F.png" alt-text="Activate Human Handoff feature":::
+   :::image type="content" source="../media/4-human-handoff.png" alt-text="Activate Human Handoff feature":::
 
 2. To access the sample web chat, you should open the web chat URL that you created in previous step and request the */agent.html* path. This will load a simple login page that illustrates the agent experience (you can provide any values to access the agent portal. Within the agent portal you can issue agent commands to interact with end users that are talking with your bot.
 
-   :::image type="content" source="../media/4-G.png" alt-text="Agent web chat":::
+   :::image type="content" source="../media/4-agent-webchat.png" alt-text="Agent web chat":::
 
 ## End user experience - Connecting to live agent
 
@@ -63,4 +63,4 @@ If there are online agents, the end user and agent go through a connection seque
 
 7. The live chat continues until the agent ends the interaction.
 
-   :::image type="content" source="../media/4-H.png" alt-text="User - Agent interaction through the web chat channel":::
+   :::image type="content" source="../media/4-webchat-interaction.png" alt-text="User - Agent interaction through the web chat channel":::
