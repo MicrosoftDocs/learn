@@ -12,9 +12,12 @@ title: Build an IoT Service
 summary: 
 abstract: |
   In this module, you will:
-  - 
-  - 
-  - 
+  - Describe architecture and components of IoT services
+  - Describe the characteristics and functionality of Azure Cosmos DB.
+  - Integrate Azure data stores with IoT pipelines
+  - Implement Azure Cosmos DB for processing telemetry data.
+  - Analyze and manage telemetry data.
+  - Configure and manage IoT pipeline.
 prerequisites: | 
   - Basic understanding of cloud computing.
   - Basic familiarity with Azure.
