@@ -49,7 +49,7 @@ quiz:
         isCorrect: false
   - content: |
       Your team has an existing Azure Cosmos DB account, database, and container. 
-      A new team member would like to use a different DNS name to reference and query a new set of data that will be uploaded to Azure Cosmos DB. 
+      A new team member would like to use a different DNS name to reference and query a new set of data that will be uploaded to Azure Cosmos DB SQL API. 
       Which resource should that member of the team create?
     choices:
       - content: Item

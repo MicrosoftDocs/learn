@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-cosmos-db-core-api
 metadata:
   title: Introduction to Azure Cosmos DB SQL API
   description: >
-    In this module, you will create and configure a new Azure Cosmos DB account for global geo-replication.
+    In this module, you will learn the core features of Azure Cosmos DB SQL API and determine if it's a good fit for your projects.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope
@@ -11,10 +11,9 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to Azure Cosmos DB SQL API
 summary: >
-  Describe Azure Cosmos DB along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
+  Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe Azure Cosmos DB
   - Describe the Azure Cosmos DB SQL API
 prerequisites: |
   - Ability to navigate the Azure portal
