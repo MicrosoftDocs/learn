@@ -33,7 +33,7 @@ In this task, you will configure a sample Next.js application that retrieves dat
    ```bash
    git clone https://github.com/polichtm/wp2104-m05u08.git
    ```
-<!-- Due to PII, please consider replacing the above URL since it includes your last name and first initial. Check with compliance to see if this is approved. -->
+
 1. From the Bash session in the Cloud Shell pane, run the following command to switch to the directory containing the clone of the GitHub repo:
 
    ```bash

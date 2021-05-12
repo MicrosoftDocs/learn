@@ -18,8 +18,8 @@ In this exercise, you will:
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you will be using in this module.
 1. Use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Azure Cosmos DB** and, in the list of results, select **Azure Cosmos DB**.
 1. On the **Azure Cosmos DB** blade, select **+ Add**
-1. On the **Basics** tab of the **Create Azure Cosmos DB Account** blade, configure the following settings and select **Next: Global Distribution >**:
-<!-- Remove the ">" and extra space after "Dsitribution" since this is mesing with the markup. -->
+1. On the **Basics** tab of the **Create Azure Cosmos DB Account** blade, configure the following settings and select **Next: Global Distribution**:
+
    | Setting | Configuration |
    | --- | --- |
    | Subscription | Select the name of the Azure subscription you will be using in this module. |
