@@ -397,3 +397,8 @@ achievements:
   title: Introduction to the Azure Data Science Virtual Machine
   summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
   iconUrl: /learn/achievements/data-ai/intro-to-azure-dsvm-badge.svg
+- uid: learn.wwl.synthesize-text-input-speech.badge
+  type: badge
+  title: Synthesize Text Input to Speech
+  summary: Synthesize Text Input to Speech
+  iconUrl: /learn/achievements/synthesize-text-input-speech.svg

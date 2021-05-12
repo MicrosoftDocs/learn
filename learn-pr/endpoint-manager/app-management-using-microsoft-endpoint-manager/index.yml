@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-endpoint-manager
 title: Understand app management using Microsoft Endpoint Manager
 summary: As part of application management, Microsoft Endpoint Manager helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
 abstract: | 

@@ -37,6 +37,6 @@ fn main() {
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=9013abc41ad78e7ed49f17058a256e7e&azure-portal=true).
+You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e906e5d5efe6a30b101e421fa7effd33?azure-portal=true).
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=43e50bc0e2f8bee361662f8575935b0&azure-portal=true).
+The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8b7a3a790b33df1c89e04c102715b7fe?azure-portal=true).

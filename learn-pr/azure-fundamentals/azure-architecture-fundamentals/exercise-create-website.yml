@@ -13,10 +13,3 @@ azureSandbox: true
 durationInMinutes: 7
 content: |
   [!include[](includes/exercise-create-website.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-  hint: "Make sure you have followed all the steps to create your Wordpress website."
