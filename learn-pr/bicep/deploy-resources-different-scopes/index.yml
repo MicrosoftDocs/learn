@@ -21,8 +21,8 @@ abstract: |
     - Create Bicep files that deploy at multiple scopes.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with creating and deploying Bicep templates.
-  - Understanding of child and extension resources.
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Understanding of child and extension resources.
   - An Azure account, with the ability to create subscription-level resources.
   - [Visual Studio Code](https://code.visualstudio.com) installed locally.
   - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.

@@ -12,7 +12,7 @@ Azure has a hierarchical resource structure with multiple levels of management.
 
 :::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as a billing account, and contain resource groups and resources.
 
-:::image type="icon" source="../media/callout-04.png"::: **Resource groups** logically group resources together, and let you manage and control them as a single unit.
+:::image type="icon" source="../media/callout-04.png"::: **Resource groups** logically group your resources together, and let you manage and control them as a single unit. Resource groups contain things like virtual machines, App Service plans, storage accounts, and virtual networks.
 
 By understanding these levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
 
@@ -61,7 +61,7 @@ Tenant-scoped deployments [require you have special permission](/azure/azure-res
 
 ## Resource IDs
 
-By now, you're very familiar with resource IDs for subscription-scoped resources. For example, here's a resource ID that represents a resource group, which is a subscription-scoped resource:
+By now, you're very familiar with resource IDs for resources that live inside subscriptions. For example, here's a resource ID that represents a resource group, which is a subscription-scoped resource:
 
 ```
 /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment

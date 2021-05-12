@@ -1,4 +1,4 @@
-Some Azure resources are deployed outside of resource groups, and are instead deployed to subscriptions, management groups, and even to your whole tenant. Bicep enables you to create and configure Azure resources at these scopes. By using Bicep to deploy these kinds of resources, you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources and configuration.
+Some Azure resources are deployed outside of resource groups, and are instead deployed to subscriptions, management groups, and even to your whole tenant. Bicep enables you to create and configure Azure resources at these scopes. By using Bicep, you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources.
 
 ## Example scenario
 
@@ -12,10 +12,10 @@ You know the R&D team has recently been given a lot of new funding, so they're l
 
 ## What will we be doing?
 
-In this module, you'll learn about the different scopes that Azure resources can be deployed at, and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and a resource group. In the process, you'll learn about several features of Bicep, including:
+In this module, you'll learn about the different scopes that Azure resources can be deployed at, and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and a resource group. You'll also create a Bicep file that deploys to a management group. In the process, you'll learn about several features of Bicep, including:
 
 - How to set the scope of a Bicep file by using the `targetScope` keyword.
-- How to use modules to deploy to different scopes within one deployment.
+- How to use modules and the `scope` keyword to deploy to different scopes within one deployment.
 - How to target specific scopes by using the `resourceGroup()`, `subscription()`, `managementGroup()`, and `tenant()` functions.
 
 ## What is the main goal?
@@ -25,13 +25,11 @@ By the end of this module, you'll be able to create Bicep templates that deploy 
 ## Prerequisites
 
 - Familiarity with creating and deploying Bicep templates.
-- Understanding of child and extension resources.
 - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+- Understanding of child and extension resources.
 
 > [!NOTE]
-> In this module, you'll build on your knowledge of extension resources. If you need a refresher, see **Deploy child and extension resources by using Bicep**.
-
-<!-- TODO add link once that module is published -->
+> In this module, you'll build on your knowledge of extension resources. If you need a refresher, see [Deploy child and extension resources by using Bicep](/learn/modules/child-extension-bicep-templates/).
 
 To follow along with the exercises in the module, you'll need:
 
