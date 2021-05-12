@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-microservices.what-are-microservices
+title: What are microservices?
+metadata:
+  title: What are microservices?
+  description: Today's application development and IT system management is driven by the cloud. Learn how microservices power cloud development.
+  ms.date: 05/03/2021
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-are-microservices.md)]
+quiz:
+  questions:
+  - content: "Which of the following scenarios would be a candidate to become a microservice?"
+    choices:
+    - content: "A web API that returns a list of pizzas"
+      isCorrect: true
+      explanation: "Correct, a microservice is a service that performs a single business purpose. In this case only returning a list of pizzas."
+    - content: "A web API and a website that return and display a list of pizzas"
+      isCorrect: false
+      explanation: "A microservice performs only a single business purpose. Here there are 2 business purposes being performed."
+    - content: "GitHub Actions used to deploy a website"
+      isCorrect: false
+      explanation: "A microservice is a service that is part of a larger application that serve a business need. While GitHub Actions help with deployment they do not fit as a microservice."
+    - content: "A Docker image"
+      isCorrect: false
+      explanation: "A docker image is a static representation of a microservice, not the microservice itself."
+  - content: "What purpose does a Docker image have in a microservice architecture pattern?"
+    choices:
+    - content: "A text file with instructions on how to build the microservice."
+      isCorrect: false
+      explanation: "The dockerfile is the text file with instructions on how to build the microservice."
+    - content: "A docker image is a static representation of a microservice, its configuration, and its dependencies."
+      isCorrect: true
+      explanation: "A developer creates an app or service and packages it and its dependencies into a container image"
+    - content: "Docker images allow hosts to perform load-balancing and routing."
+      isCorrect: false
+      explanation: "Orchestrators allow hosts to perform load-balancing and routing."
+  - content: "Why would a developer write a Dockerfile?"
+    choices:
+    - content: "To create the initialization routine for the Docker engine."
+      isCorrect: false
+      explanation: "A Dockerfile is used to create the image."
+    - content: "To create a text file with instructions on how to build a Docker image."
+      isCorrect: true
+      explanation: "The Dockerfile is used to create the Docker image."
+    - content: "To create the code to run the microservice."
+      isCorrect: false
+      explanation: "The code to create the microservice is created in the tool that is best suited for the job. Any language and framework will work."
+
+
