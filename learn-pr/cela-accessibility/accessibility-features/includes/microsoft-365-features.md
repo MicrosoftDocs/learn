@@ -27,9 +27,9 @@ For more information, explore the [Accessibility overview of Microsoft Teams](ht
 
 ## PowerPoint Designer
 
-PowerPoint Designer improves your slides by automatically generating design ideas that you can choose from. While you're putting content like images and text on a slide, Designer works in the background to match that content to *professionally designed layouts.
+PowerPoint Designer improves your slides by automatically generating design ideas that you can choose from. While you're putting content like images and text on a slide, Designer works in the background to match that content to professionally-designed layouts.
 
-Designer can be useful for anyone looking to take their presentation to the next level. The feature can also make it easier for people with disabilities to use PowerPoint. For example, people with mobility disabilities like reduced movement of arms or hands can use PowerPoint Designer to create professional-looking slides with fewer clicks of the mouse or keyboard commands.
+Designer can be useful for anyone looking to take their presentation to the next level. The feature can also make it easier for people with disabilities to use PowerPoint. For example, people with mobility disabilities, like reduced movement of arms or hands, can use PowerPoint Designer to create professional-looking slides with fewer clicks of the mouse or keyboard commands.
 
 :::image type="content" source="../media/powerpoint-designer.png" alt-text="Screenshot tutorial for how to use PowerPoint Designer":::
 Figure 1. Tutorial for how to use PowerPoint Designer
@@ -59,7 +59,7 @@ As you speak, Presenter Coach gives on-screen guidance. Once you are through reh
 
 To rehearse with Presenter Coach in PowerPoint for the web:
 
-1. On the **Slide Show** tab, select **Rehearse with Coach**. (If you've turned off the Simplified Ribbon, you don\'t have a **Slide Show** tab; instead, use the **View** tab to start Presenter Coach.)
+1. On the **Slide Show** tab, select **Rehearse with Coach**. (If you've turned off the Simplified Ribbon, you don\'t have a **Slide Show** tab; instead, select the **View** tab to start Presenter Coach.)
 2. The presentation opens in a full-screen view, similar to Slide Show.
 3. Select **Get Started** when you are ready to begin rehearsing.
 
