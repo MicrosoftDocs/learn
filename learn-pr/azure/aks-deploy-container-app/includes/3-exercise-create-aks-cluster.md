@@ -19,8 +19,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
-    RESOURCE_GROUP=rg-cluster
-    CLUSTER_NAME=aks-contoso
+    RESOURCE_GROUP=rg-contoso-video
+    CLUSTER_NAME=aks-contoso-video
     ```
 
 1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
@@ -72,8 +72,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
-    RESOURCE_GROUP=rg-cluster
-    CLUSTER_NAME=aks-contoso
+    RESOURCE_GROUP=rg-contoso-video
+    CLUSTER_NAME=aks-contoso-video
     ```
 
 1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
