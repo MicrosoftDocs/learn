@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.list-performance-tips
-title: List performance tips
+title: Mount options and client VM configurations
 metadata:
   unitType: learning-content
-  title: List performance tips 
+  title: Mount options and client VM configurations 
   description: Discuss the performance impact of mount options like actimeo/nocto, sysctl, nconnect, NFS version, and rsize/wsize. 
   ms.date: 3/23/2021 
   author: mengruts 

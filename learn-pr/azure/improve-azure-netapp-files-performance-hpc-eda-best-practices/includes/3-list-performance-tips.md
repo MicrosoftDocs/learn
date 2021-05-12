@@ -1,4 +1,4 @@
-In this module, we'll discuss performance tips like mount options and client VM configurations for running HPC or EDA applications on Azure NetApp Files.
+In this module, we'll discuss mount options and client VM configurations that improve performance when you're running HPC or EDA applications on Azure NetApp Files.
 
 >[!NOTE]
 >Best practices for NFS clients depend on the applications being used. The following suggestions are not absolute and can be overridden by application recommendations or by workload testing. We highly recommend that you test those practices before deploying in production.
@@ -41,7 +41,7 @@ net.core.optmem_max = 2048000
 net.core.somaxconn = 65535
 #
 # These settings are in 4-KiB chunks, in bytes:
-# Min = 16MiB, Def=350MiB, Max=16GiB
+# Min=16MiB, Def=350MiB, Max=16GiB
 # In units of 4K pages
 net.ipv4.tcp_mem = 4096 89600 4194304
 #
@@ -87,7 +87,7 @@ uname -r
 
 The purpose of `nconnect` is to provide multiple transport connections per TCP connection or mount points on a client. This technique helps increase parallelism and performance for NFS mounts. 
 
-The lower the number of clients, the more value `nconnect` provides in  helping to boost performance, because it can potentially utilize all network bandwidth. And its value gradually diminishes when the number of clients increases, because there's only certain amount of bandwidth in total to go around.
+The lower the number of clients, the more value `nconnect` provides in  helping to boost performance, because it can potentially utilize all network bandwidth. And its value gradually diminishes when the number of clients increases, because there's only a certain amount of bandwidth in total to go around.
 
 Consider setting `sunrpc.tpc_max_slot_table_entries=256` or `512` if you're using `nconnect=8` or `16`.
 
@@ -104,7 +104,7 @@ When you're considering only performance, remember that NFSv3 will perform bette
 
 The mount options `rsize` and `wsize` determine how much data is sent between the NFS client and server for each packet sent. This might help optimize performance for specific applications, because what's best for one application might not be best for other applications.
 
-The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. And we generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options.
+The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. We generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options.
 
 ## Choose proper settings for the hard, soft, and intr mount options
 

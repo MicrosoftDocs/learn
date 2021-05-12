@@ -18,9 +18,9 @@ When all three of the preceding practices are applied, the I/O operations per se
 
 ![Diagram that shows the SPEC E D A results, where the I O boost still maintains low latency when all three practices are applied.](../media/4-benchmarking-results-01.png)
 
-The following graph demonstrates that NFS3 performs much better than NFS 4.1.
+The following graph demonstrates that NFSv3 performs much better than NFSv4.1.
 
-![Diagram that shows the SPEC E D A results to demonstrate that N F S 3 performs much better than N F S 4.1.](../media/4-benchmarking-results-02.png)
+![Diagram that shows the SPEC E D A results to demonstrate that N F S version 3 performs much better than N F S version 4.1.](../media/4-benchmarking-results-02.png)
 
 The following graph demonstrates that `rsize=wsize=262144(256 K)` performs better than other settings.
 
