@@ -1,4 +1,4 @@
-In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for App Service on Azure Arc. The exercise consists of the following tasks: <!-- ID/SME: You'll notice I shortened many of the compound sentences in these units and broke them into two sentences. This is Acrolinx' preferred method of writing -- short, snappy sentences. It doesn't like compound sentences. I did this throughout the unit files and also in lab steps, so please proof lab steps. You'll likely think they're a little wierd sounding, but that's how Acrolinx likes it. Just FYI for you going forward and in case you're wondering why I changed everything to be short and concise. -->
+In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for App Service on Azure Arc. The exercise consists of the following tasks: <!-- SME: You'll notice I shortened many of the compound sentences for a higher Acrolinx score throughout the unit files and also in lab steps, so please proof lab steps to ensure no technical meaning changes. -->
 
 1. Deploy an AKS cluster.
 1. Connect to the AKS cluster.
@@ -9,7 +9,7 @@ In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AK
 > [!NOTE]
 > Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Azure Arc-enabled Kubernetes cluster.
 
-This is the second in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- ID/SME: Is there a reason to repeat the exercise sequence in this unit, when we already listed it in unit 1? It looks like we repeat it in unit 4, too. Didn't check beyond that one. -->:
+This is the second in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- SME: Is there a reason to repeat the exercise sequence in this unit, when we already listed it in unit 1? It looks like we repeat it in unit 4, too. Didn't check beyond that one. -->:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
@@ -32,7 +32,7 @@ To support the App Service on Azure Arc, an AKS cluster must satisfy the followi
 
 Use the following steps to deploy an AKS cluster that supports App Service on Azure Arc:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, <!-- ID/SME: Is there a reason that there are two instances of "AKS Cluster" here? Should there be only one? --> its public IP address, and its Azure region:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, <!-- SME: Is there a reason that there are two instances of "AKS Cluster" here? Should there be only one? --> its public IP address, and its Azure region:
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
