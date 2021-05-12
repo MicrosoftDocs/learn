@@ -6,6 +6,21 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
+1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
+
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+
+    > [!IMPORTANT]
+    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
+
+1. Create variables for the configuration values you'll reuse throughout the exercises.
+
+    ```bash
+    RESOURCE_GROUP=rg-contoso-video
+    CLUSTER_NAME=aks-contoso-video
+    ```
+
 #### [Linux](#tab/linux)
 
 1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
@@ -113,6 +128,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     The above command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which gets created during previous command `az aks create`.
     The `--os-type` parameter is used to specify operating system of the node pool. If not specified, it will use Linux as operating system for the nodes.
 
+---
+
 ## Link with kubectl
 
 1. Link your Kubernetes cluster with `kubectl` by running the following command in Cloud Shell.
@@ -131,6 +148,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
 
    You should receive a list of four available nodes for two node pools.
 
+#### [Linux](#tab/linux)
+
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
    aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.19.9
@@ -138,6 +157,8 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
    aks-nplinux-21895026-vmss000000     Ready    agent   105s   v1.19.9
    aks-nplinux-21895026-vmss000001     Ready    agent   105s   v1.19.9
    ```
+
+#### [Windows](#tab/windows)
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
