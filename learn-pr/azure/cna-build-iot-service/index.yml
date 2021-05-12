@@ -1,0 +1,44 @@
+﻿### YamlMime:Module
+uid: learn.azure.build-iot-service
+metadata:
+  title: Build an IoT service
+  description: This module describes .
+  ms.date: 04/29/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an IoT Service
+summary: 
+abstract: |
+  In this module, you will:
+  - 
+  - 
+  - 
+prerequisites: | 
+  - Basic understanding of cloud computing.
+  - Basic familiarity with Azure.
+  - Basic familiarity with programming concepts.
+iconUrl: /learn/achievements/build-iot-service.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.build-iot-service.1-introduction
+- learn.azure.build-iot-service.2-define-iot-service-architecture
+- learn.azure.build-iot-service.3-describe-azure-cosmos-db
+- learn.azure.build-iot-service.4-exercise-set-up-azure-cosmos-db
+- learn.azure.build-iot-service.5-integrate-data-stores-iot-pipelines
+- learn.azure.build-iot-service.6-exercise-integrate-azure-cosmos-db-iot-data-pipelines
+- learn.azure.build-iot-service.7-analyze-telemetry-data
+- learn.azure.build-iot-service.8-exercise-integrate-next.js-web-app-iot-pipeline
+- learn.azure.build-iot-service.9-knowledge-check
+- learn.azure.build-iot-service.10-summary
+badge:
+  uid: learn.azure.build-iot-service.badge

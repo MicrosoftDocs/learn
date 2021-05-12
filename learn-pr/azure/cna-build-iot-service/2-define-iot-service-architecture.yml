@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-iot-service.2-define-iot-service-architecture
+title: Define IoT service architecture
+metadata:
+  title: Define IoT Service Architecture
+  description: Description of IoT Service Architecture
+  ms.date: 04/24/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-define-iot-service-architecture.md)]

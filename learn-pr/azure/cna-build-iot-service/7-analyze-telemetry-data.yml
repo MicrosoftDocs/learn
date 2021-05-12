@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-iot-service.7-analyze-telemetry-data
+title: Describe Azure Cosmos DB
+metadata:
+  title: Analyze telemtry data
+  description: Analyze telemtry data
+  ms.date: 04/29/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-analyze-telemetry-data.md)]
