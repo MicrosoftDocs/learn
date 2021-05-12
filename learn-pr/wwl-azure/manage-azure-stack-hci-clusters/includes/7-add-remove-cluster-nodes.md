@@ -25,7 +25,7 @@ The procedure of adding a new server to an existing Azure Stack HCI cluster cons
 
 Similarly, you can use Windows Admin Center to remove a server from an Azure Stack HCI cluster. After you browse to the Cluster Manager interface and select any of the existing cluster nodes, on the Inventory tab, you will find the option to remove individual cluster nodes, including their drives. In this case, you also need to perform cluster validation.
 
-:::image type="content" source="../media/-remove-cluster-node.png" alt-text="The screenshot depicts the Cluster Manager interface of Windows Admin Center displaying the remove server confirmation prompt." border="false":::
+:::image type="content" source="../media/remove-cluster-node.png" alt-text="The screenshot depicts the Cluster Manager interface of Windows Admin Center displaying the remove server confirmation prompt." border="false":::
 
 ## Add or remove Azure Stack HCI stretched cluster nodes by using Windows PowerShell
 
