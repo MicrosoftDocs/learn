@@ -25,6 +25,7 @@ Because of the loosely coupled nature of cloud-native applications, your team ca
 After completing this module, you'll be able to:
 
 * Describe architecture and components of IoT services.
+<!-- I think it would be beneficial (since it's more descriptive) to add Azure to this sentence. "Describe architecture and components of Azure IoT services."  -->
 * Describe the characteristics and functionality of Azure Cosmos DB.
 * Integrate Azure data stores with IoT pipelines.
 * Implement Azure Cosmos DB for processing telemetry data.
