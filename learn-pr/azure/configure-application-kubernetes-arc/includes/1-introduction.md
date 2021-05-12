@@ -12,7 +12,7 @@ You're evaluating Azure App Service on Kubernetes with Azure Arc to determine wh
 
 After completing this module, you'll be able to:
 
-- Prepare for implementing Azure App Service on Azure Arc-enabled Kubernetes.
+- Prepare for implementing Azure App Service on Azure Arc enabled Kubernetes.
 - Implement an Azure Kubernetes Service (AKS) cluster that supports App Service on Azure Arc.
 - Install the Azure Web Apps extension into an AKS cluster.
 - Deploy Azure App Services web apps to an AKS cluster.
