@@ -1,9 +1,9 @@
-In this exercise, you'll implement the Azure App Service extension on your Azure Arc-enabled Kubernetes cluster. This implementation prepares the cluster for an App Service web app's deployment in the next exercise. Your implementation will integrate with an Azure Log Analytics workspace that you'll create in this exercise. The exercise consists of the following tasks:
+In this exercise, you'll implement the Azure App Service extension on your Azure Arc enabled Kubernetes cluster. This implementation prepares the cluster for an App Service web app's deployment in the next exercise. Your implementation will integrate with an Azure Log Analytics workspace that you'll create in this exercise. The exercise consists of the following tasks:
 
-1. Prepare for implementing the Azure App Service on the Azure Arc-enabled Kubernetes cluster.
+1. Prepare for implementing the Azure App Service on the Azure Arc enabled Kubernetes cluster.
 1. Create an Azure Log Analytics workspace.
-1. Install the Azure App Service extension on your Azure Arc-enabled Kubernetes cluster.
-1. Create a custom location for the Azure Arc-enabled Kubernetes cluster.
+1. Install the Azure App Service extension on your Azure Arc enabled Kubernetes cluster.
+1. Create a custom location for the Azure Arc enabled Kubernetes cluster.
 1. Register an App Service Kubernetes environment into the custom location.
 
 This is the fourth in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises <!-- SME: Refer to my previous comment about these lab steps. -->:
@@ -11,15 +11,15 @@ This is the fourth in this module's sequence of exercises. These exercises guide
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Implement App Service on the Azure Arc-enabled Kubernetes cluster.
-1. Deploy an App Service web app to the Azure Arc-enabled Kubernetes cluster.
+1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
+1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
 :::image type="content" source="../media/u5-exercise4.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fourth exercise (Implement App Service on the Azure Arc-enable Kubernetes cluster)." border="false":::
 
-## Task 1: Prepare for implementing the Azure App Service on the Azure Arc-enabled Kubernetes cluster
+## Task 1: Prepare for implementing the Azure App Service on the Azure Arc enabled Kubernetes cluster
 
-There is information you must collect that's required for each implementation step. Before you implement the Azure App Service extension on your Azure Arc-enabled Kubernetes cluster, collect <!-- SME: I've reworked the preceding sentence and it needs to flow into what the information is you need to collect. However, the way you've got the rest of this info written, it actually seems like steps you need to take, not information you need to collect. Please clarify and roll the next part of the sentence into what I've written. -->including installing the App Service extension, creating a custom location, and setting up a Kubernetes environment.
+There is information you must collect that's required for each implementation step. Before you implement the Azure App Service extension on your Azure Arc enabled Kubernetes cluster, collect <!-- SME: I've reworked the preceding sentence and it needs to flow into what the information is you need to collect. However, the way you've got the rest of this info written, it actually seems like steps you need to take, not information you need to collect. Please clarify and roll the next part of the sentence into what I've written. -->including installing the App Service extension, creating a custom location, and setting up a Kubernetes environment.
 
 Use the following steps to collect the required information:
 
