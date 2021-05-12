@@ -1,4 +1,4 @@
-Imagine you're a software developer for an online retailer named *:::no-loc text="eShopOnContainers":::*. The retailer's online storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested your team migrate some data services functionality from your AKS cluster to managed services to reduce operational costs.
+Imagine you're a software developer for an online retailer named *:::no-loc text="eShopOnContainers":::*. The retailer's online storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested you migrate some data services from your AKS cluster to managed services to reduce operational costs.
 
 This module guides you through implementing managed data services in a microservices app. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). After validating the app deployment using data services within the AKS cluster, you'll modify the app's basket service to use Azure Cache for Redis. Following that, you'll reconfigure the app's coupon service to use Azure Cosmos DB.
 
@@ -13,9 +13,6 @@ In this module, you will:
 - Create an Azure Cache for Redis instance.
 - Create an Azure Cosmos DB instance.
 - Modify *:::no-loc text="eShopOnContainers":::* to use the above managed services instead of the Redis and MongoDB services in the initial cluster.
-
-> [!IMPORTANT]
-> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
 
 ## Learning objectives
 

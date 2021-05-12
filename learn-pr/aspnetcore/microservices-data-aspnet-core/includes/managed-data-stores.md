@@ -1,6 +1,6 @@
 The *:::no-loc text="eShopOnContainers":::* app uses five different databases:
 
-- Three instances of SQL Server hosted within the the following services:
+- Three instances of SQL Server hosted within the following services:
     - Identity
     - Catalog
     - Ordering
@@ -35,7 +35,7 @@ Azure Cosmos DB is a globally distributed, multi-model database service. You can
 
 Azure Cosmos DB includes several different models for accessing and managing data, each suited to specific use cases.
 
-![NoSQL data models](./media/types-of-nosql-datastores.png)
+:::image type="content" source="../media/types-of-nosql-datastores.png" alt-text="A graphic illustrating the data models used by NoSQL databases. They are listed in the table below." lightbox="../media/types-of-nosql-datastores.png":::
 
 ### Data models for NoSQL databases
 

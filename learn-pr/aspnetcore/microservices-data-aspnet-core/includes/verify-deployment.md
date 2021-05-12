@@ -8,7 +8,7 @@ In this unit, you will:
 
 ## Verify the deployment to AKS
 
-Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+When the finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
 1. Run the following command to display the various app URLs:
 
@@ -30,7 +30,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an `HTTP 503` or `HTTP 502` response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
