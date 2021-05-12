@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.mr-digital-twin-intro
+uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 metadata:
   title: Set up a Mixed Reality project for Azure Digital Twins in Unity  
   description: Import 
@@ -36,15 +36,15 @@ prerequisites: |
       - USB Device Connectivity 
       - Microsoft Mixed Reality Feature Tool
 units:
-- learn.azure.mr-digital-twin-intro.1-introduction
-- learn.azure.mr-digital-twin-intro.2-mr-overview
-- learn.azure.mr-digital-twin-intro.3-digital-twin-overview
-- learn.azure.mr-digital-twin-intro.4-digital-twin-get-started
-- learn.azure.mr-digital-twin-intro.5-unity-overview
-- learn.azure.mr-digital-twin-intro.6-unity-get-started
-- learn.azure.mr-digital-twin-intro.7-signalr-overview
-- learn.azure.mr-digital-twin-intro.8-use-cases
-- learn.azure.mr-digital-twin-intro.9-knowledge-check
-- learn.azure.mr-digital-twin-intro.10-summary
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.introduction
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.mixed-reality-overview
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.digital-twin-overview
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.digital-twin-get-started
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.unity-overview
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.unity-get-started
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.signalr-overview
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.use-cases
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.knowledge-check
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.summary
 badge:
-  uid: learn.azure.mr-digital-twin-intro.badge
+  uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.badge
