@@ -10,5 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Compare values of data with Python code
 durationInMinutes: 6
-content: |
-  [!include[](includes/2-conditions.ipynb)]
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/2-conditions.ipynb?branch=pr-en-us-17307
