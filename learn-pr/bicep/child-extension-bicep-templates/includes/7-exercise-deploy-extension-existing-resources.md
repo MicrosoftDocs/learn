@@ -83,7 +83,7 @@ To add diagnostics settings, do the following:
 
 ::: zone pivot="cli"
 
-Create an Azure storage account to simulate your R&D team already having created one in your organization. Use the Azure CLI instead of Bicep.
+Create an Azure storage account to simulate your R&D team's already having created one in your organization. Use the Azure CLI instead of Bicep.
 
 In the terminal, run the following Azure CLI command. Replace `{storageaccountname}` with a name that's likely to be unique. The name must be all lowercase, contain 24 or fewer characters, and have no spaces or special characters. Keep a note of the name for later use.
 
