@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pod-storage-kubernetes-clusters
+title: Manage pod storage on Kubernetes clusters
+metadata:
+  title: Manage pod storage on Kubernetes clusters
+  description: "Manage pod storage on Kubernetes clusters"
+  ms.date: 05/12/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-manage-pod-storage-kubernetes-clusters.md)]

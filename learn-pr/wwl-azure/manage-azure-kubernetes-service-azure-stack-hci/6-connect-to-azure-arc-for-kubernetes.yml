@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.connect-to-azure-arc-for-kubernetes
+title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
+metadata:
+  title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
+  description: "Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes"
+  ms.date: 05/12/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-connect-to-azure-arc-for-kubernetes.md)]
