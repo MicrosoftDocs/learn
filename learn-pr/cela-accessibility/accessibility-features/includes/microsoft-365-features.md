@@ -8,22 +8,22 @@ With live captions, Teams can detect what's said in a meeting and present real-t
 
 :::image type="content" source="../media/teams-meeting.png" alt-text="Five people in a Microsoft Teams meeting using live captions":::
 
-To use live captions in a meeting, go to your meeting controls and select **More options** ![](../media/more-options.png) > **Turn on live captions (preview)**.
+To use live captions in a meeting, go to your meeting controls and select **More options** ![Use live captions.](../media/more-options.png) > **Turn on live captions (preview)**.
 
 Teams can also help minimize communication barriers with language translation. The inline message translation feature allows users to translate Teams messages in the language specified in their personal
 language settings for Microsoft 365.
 
-If you receive a message in another language, just go to the top of the message and select **More options** ![](../media/more-options.png) > **Translate** to get an instant translation of the message into the language you\'ve set for Teams.
+If you receive a message in another language, just go to the top of the message and select **More options** ![Select more options.](../media/more-options.png) > **Translate** to get an instant translation of the message into the language you\'ve set for Teams.
 
 Teams also offers the option to change what appears behind you in a video conference. You can either blur your background or replace it entirely. For people who are neurodiverse or have mental health disabilities, this can make it easier to focus. For example, a meeting participant in a busy environment can blur their background to eliminate unnecessary on-screen distractions for their colleagues.
 
-While setting up your video and audio before joining a meeting, select **Background effects** ![](../media/background-effects.png) next to the mic switch and choose **Blur** to blur your background.
+While setting up your video and audio before joining a meeting, select **Background effects** ![Select Background effects.](../media/background-effects.png) next to the mic switch and choose **Blur** to blur your background.
 
 The Microsoft Learning Tools feature Immersive Reader is also available in Teams. Changing the appearance of text with Immersive Reader options such as Line Focus and Spacing can promote focus and remove distraction. This can be useful for everyone but especially helpful for people with learning or mental health disabilities. Immersive Reader can also read text aloud, which can make it easier for people with low vision to read Teams chat messages and posts.
 
-To launch Immersive Reader from a Teams message, hover over a message with your cursor or tap with your finger on a touch screen device. Select **More options** ![](../media/more-options2.png), and then **Immersive Reader** ![](../media/immersive-reader.png).
+To launch Immersive Reader from a Teams message, hover over a message with your cursor or tap with your finger on a touch screen device. Select **More options** ![Launch Immersive Reader.](../media/more-options2.png), and then **Immersive Reader** ![](../media/immersive-reader.png).
 
-For more information, explore the [Accessibility overview of Microsoft Teams](https://support.office.com/en-us/article/accessibility-overview-of-microsoft-teams-2d4009e7-1300-4766-87e8-7a217496c3d5).
+For more information, explore the [Accessibility overview of Microsoft Teams.](https://support.office.com/en-us/article/accessibility-overview-of-microsoft-teams-2d4009e7-1300-4766-87e8-7a217496c3d5).
 
 ## PowerPoint Designer
 
