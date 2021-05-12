@@ -143,7 +143,7 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.19.9
     aks-nplinux-21895026-vmss000000     Ready    agent   105s   v1.19.9
     aks-nplinux-21895026-vmss000001     Ready    agent   105s   v1.19.9
-    ````
+    ```
 
 ::: zone-end
 
@@ -155,5 +155,5 @@ AKS cluster can be provisioned through Azure portal or Azure CLI.
     aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
     aksnpwin000000                      Ready    agent   105s   v1.19.9
     aksnpwin000001                      Ready    agent   105s   v1.19.9
-    ````
+    ```
 ::: zone-end
