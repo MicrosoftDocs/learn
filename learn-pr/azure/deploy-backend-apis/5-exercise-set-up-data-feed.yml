@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-backend-apis.5-exercise-set-up-data-feed
-title: Exercise - Deploy the solution
+title: Exercise - Run functions locally and in Azure
 metadata:
   unitType: exercise
-  title: Exercise - Deploy the solution
+  title: Exercise - Run functions locally and in Azure
   description: In this unit, you'll deploy the solution and monitor real-time outputs.
   ms.date: 3/24/2021 
   author: amthomas46

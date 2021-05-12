@@ -1,6 +1,8 @@
 Azure Functions is an event-driven, serverless compute platform that solves complex orchestration problems.
 
-Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. There is a complete learning path dedicated to exploring each piece of the architecture below. In this module, you'll deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. You'll also use GitHub Actions for CI/CD.
+Suppose you work for the transportation department of a major city and you want to increase the number of bus riders. To make it convenient to jump on the bus, you want to build a web app that allows users to monitor a bus’s progress along its route. By providing up to the second information on the whereabouts of the next bus along the route, you can help potential riders eliminate the situation where they either end up waiting for the bus or running to catch the bus and missing it. You also want to give users the option to get notified when a bus they want to take is nearby.
+
+Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. There is a complete learning path dedicated to exploring each piece of the architecture below. In this module, you'll deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. You'll also use GitHub Actions for CI/CD.
 
 :::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Potential architecture for a solution to the catching the bus scenario.":::
 

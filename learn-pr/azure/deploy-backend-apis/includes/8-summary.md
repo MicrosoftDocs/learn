@@ -7,7 +7,7 @@ Overall, you learned how to create and deploy serverless APIs that manage applic
 
 If you continue in the learning path, the next module will cover creating a web application to serve the data on an interactive map, allowing users to see their geofences and the buses on monitored routes nearby. The module will use Azure Static Web Apps, which combines the power of Azure App Service with Azure Functions.
 
-## References
+## Further your learning with other references
 
 * [Connectors for Azure Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
 * [Use Azure Functions to connect to Azure SQL](https://docs.microsoft.com/azure/azure-functions/functions-scenario-database-table-cleanup?toc=/azure/azure-sql/toc.json)

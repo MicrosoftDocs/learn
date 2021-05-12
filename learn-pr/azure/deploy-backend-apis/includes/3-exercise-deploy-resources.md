@@ -8,9 +8,9 @@ Recall in the catching the bus sample, you'll use resources including Azure SQL 
 > [!NOTE]
 > If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you did not complete the previous module, everything you need will be completed during this exercise.
 
-You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action. 
+You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action.
 
-## Configure your environment
+## Configure your environment for development using Visual Studio Code
 
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
 
@@ -30,7 +30,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
-## Deploy and configure Azure SQL Database
+## Deploy and configure Azure SQL Database using PowerShell
 
 In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy it, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 

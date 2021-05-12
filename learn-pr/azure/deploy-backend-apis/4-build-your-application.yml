@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-backend-apis.4-build-your-application
-title: Architecting a solution
+title: Architect a solution using Azure Functions
 metadata:
   unitType: learning-content
-  title: Architecting a solution
+  title: Architect a solution using Azure Functions
   description: Architect a solution with Azure Functions and other services to get the relevant real-time data stored and processed.
   ms.date: 3/24/2021 
   author: amthomas46

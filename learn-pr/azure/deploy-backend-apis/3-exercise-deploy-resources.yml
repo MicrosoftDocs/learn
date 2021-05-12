@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-backend-apis.3-exercise-deploy-resources
-title: Exercise - Deploy and configure resources
+title: Exercise - Deploy and configure Azure SQL Database and Azure Functions
 metadata:
   unitType: exercise
-  title: Exercise - Deploy and configure resources
+  title: Exercise - Deploy and configure Azure SQL Database and Azure Functions
   description: In this exercise you will be deploying and configuring the resources necessary to build the sample application.
   ms.date: 3/24/2021  
   author: amthomas46

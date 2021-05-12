@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-backend-apis.2-create-apis-azure-functions
-title: Serverless APIs with Azure Functions  
+title: Create serverless APIs with Azure Functions  
 metadata:
   unitType: learning-content  
-  title: Serverless APIs with Azure Functions
+  title: Create serverless APIs with Azure Functions
   description: Learn about Azure Functions, when you should use them, and how to integrate with Azure SQL Database.
   ms.date: 3/24/2021  
   author: amthomas46  

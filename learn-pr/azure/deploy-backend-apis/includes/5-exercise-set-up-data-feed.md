@@ -1,6 +1,6 @@
 In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active geofence(s). In this exercise, you'll run the function locally before deploying it with GitHub Actions. Finally, you'll monitor the results in the Azure portal.
 
-## Run Azure Functions locally
+## Locally run and debug Azure Functions
 
 The first step with any Azure Function project is to get your function running locally.
 
@@ -77,7 +77,7 @@ The first step with any Azure Function project is to get your function running l
 
 1. Run **CTRL** + **C** in the terminal to stop the function.
 
-## Configure for CI/CD with GitHub
+## Configure deployments for CI/CD with GitHub
 
 Next, in order to publish the function to the Azure Function app you deployed in the previous exercise, you'll need to download the publish profile, configure settings in GitHub, and push your changes with Visual Studio Code.
 

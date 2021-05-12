@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-backend-apis.6-pushing-notifications-logic-apps
-title: Pushing notifications with Azure Logic Apps
+title: Push notifications with Azure Logic Apps
 metadata:
   unitType: learning-content
-  title: Pushing notifications with Azure Logic Apps
+  title: Push notifications with Azure Logic Apps
   description: In this unit, you'll learn about Azure Logic apps and how to integrate them with Azure Functions and Azure SQL Database.
   ms.date: 3/24/2021 
   author: amthomas46
