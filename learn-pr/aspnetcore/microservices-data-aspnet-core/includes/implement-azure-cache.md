@@ -73,7 +73,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
 
     The preceding code replaces the in-memory data store and configures `RedisBasketRepository` for the `basket-api` service.
 
-1. Replace the `// Add the ConnectionMultiplexer code...` comment with
+1. Replace the `// Add the ConnectionMultiplexer code...` comment with:
 
     ```csharp
     services.AddSingleton<ConnectionMultiplexer>(sp =>
@@ -85,7 +85,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
 
     The preceding code sets the connection string for the Azure Redis Cache Instance in the service configuration. The actual connection string value gets passed dynamically by the `settings.ConnectionString`. The connection to the Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. For more details, refer [Use Azure Cache for Redis with an ASP.NET Core web app](/azure/azure-cache-for-redis/cache-web-app-aspnet-core-howto?tabs=core5x)
 
-1. Find the statement (use <kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>f</kbd> to search) `// UNCOMMENT TO ENABLE REDIS` and uncomment the following code:
+1. Replace the `// Add the healthcheck code...` comment with:
 
     ```csharp
     hcBuilder.AddRedis(
@@ -94,7 +94,7 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
                    tags: new string[] { "redis" });
     ```
 
-    The preceding code adds a health check for the Redis cache dependency used by the basket microservice. In the later section of this unit, you'll verify the health of it in the **WebStatus** dashboard.
+    The preceding code adds a health check for the Redis cache dependency used by the basket microservice. Later in this unit, you'll verify the health of it in the **WebStatus** dashboard.
 
 ## Configure the basket service to use the new Azure Cache for Redis instance
 
@@ -109,7 +109,7 @@ In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value 
 Save your changes.
 
 > [!NOTE]
-> In the production scenario, it's not recommended to store the connection string as plain text. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store your secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
+> It's not recommended to store connection strings as plain text in production environments. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
 
 At runtime, the connection string will be provided to the basket service as an environment variable. Within the code, the connection string is used in the following locations:
 
@@ -127,7 +127,7 @@ At runtime, the connection string will be provided to the basket service as an e
 
 ## Redeploy the basket service
 
-To deploy the updated *:::no-loc text="basket":::* service :
+To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
 
 1. Build and publish a new image to ACR with the following script:
 
@@ -155,16 +155,9 @@ To deploy the updated *:::no-loc text="basket":::* service :
     basket-544bc9c7fc-wtznp           0/1    ContainerCreating    0          1s
     ```
 
-When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful.
+When all the health checks return to a healthy status, sign out of the app, then refresh your browser. Test the application as before to validate your changes were successful.
 
 ## Verify the deployment
-
-> [!TIP]
-> To display these URLs again, run the following command:
->
-> ```bash
-> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-> ```
 
 1. Navigate to the **WebStatus** url and make sure the status of the basket service and its dependency Redis cache is healthy.
 
@@ -173,3 +166,5 @@ When all the health checks return to a healthy status, sign out of run the app, 
 1. Browse the **:::no-loc text="Web SPA application":::** and verify that you are able to add catalog items to the shopping cart.
 
     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
+
+In the next unit, you'll configure the coupon service to use Azure Cosmos DB.

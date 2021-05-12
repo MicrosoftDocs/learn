@@ -1,3 +1,5 @@
+Congratulations! You've learned about managed data services in a .NET microservices app. 
+
 In this module you:
 
 - Created an Azure Cache for Redis instance.

@@ -46,7 +46,7 @@ In this unit, you will:
     
     ```
 
-    1. Copy the connection string value when the script finishes to reconfigure the coupon service in the subsequent steps.
+1. Copy the connection string value when the script finishes to reconfigure the coupon service in the subsequent steps.
 
 ## Remove the MongoDB deployment from the cluster
 
@@ -70,9 +70,6 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 
-> [!NOTE]
-> In the production scenario, it's not recommended to store the connection string as plain text. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store your secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
-
 ## Redeploy the coupon service
 
 Publish the existing `coupon-api` docker image from the `eshopdev` DockerHub with the following script:
@@ -93,9 +90,9 @@ When all the health checks return to a healthy status, sign out of run the app, 
 
 :::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
 
-Order background service will update the status of the order to `Paid` after a few minutes. Once updated, perform the steps in the next section to verify it in the Azure Cosmos DB data explorer.
-
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
+
+Upon submitting the order, the *order* service updates the status of the order to `Paid` within a few minutes, and the coupon gets marked as consumed. Wait a few minutes, then follow the steps to verify the state of the coupon in the Azure Cosmos DB data explorer:
 
 Use the Azure portal's **Data Explorer** tab to inspect the stored documents using the following steps:
 
@@ -103,9 +100,11 @@ Use the Azure portal's **Data Explorer** tab to inspect the stored documents usi
 1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. Select **Data explorer** from the table on the left.
 1. Expand **CouponDb**.
+1. Expand **Coupon Collection**.
 1. Select and review the individual coupon documents.
 
     :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Data explorer screenshot showing the coupon is flagged as consumed." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
     In the preceding image, you can see the document for coupon `DISC-15`, showing it's been used.
+
 In the next unit, you'll check your knowledge of key concepts from this module.
