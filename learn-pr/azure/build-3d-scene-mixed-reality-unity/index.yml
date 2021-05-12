@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.build-3d-scene-mixed-reality-unity
 metadata:
-  title: Build a 3D Scene for Mixed Reality in Unity  
+  title: Build a 3D Scene for mixed reality in Unity  
   description: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain.
-  ms.date: 5/4/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a 3D Scene for Mixed Reality in Unity 
+title: Build a 3D Scene for msixed reality in Unity 
 summary: Learn how to create a 3D Scene in Unity, leveraging the Microsoft Maps SDK or static terrain. 
 abstract: |
   By the end of this module, you'll be able to:

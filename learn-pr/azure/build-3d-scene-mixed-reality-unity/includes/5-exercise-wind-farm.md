@@ -4,10 +4,10 @@ Begin by opening the MainScene that has been created for you.  Essentially, this
 
 In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
 
-    :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
+:::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
 
-    > [!NOTE]
-    > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
+> [!NOTE]
+> The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
 
 We'll explore the benefits of static maps and dynamic maps in this module, starting by adding the static terrain and then adding the Maps SDK terrain.  
 
@@ -22,7 +22,7 @@ We'll explore the benefits of static maps and dynamic maps in this module, start
 
 You now have the static terrain Prefab loaded and available for use in your app. Next, you can load the Bing Maps dynamic terrain into the Scene.
 
-## Create Bing Maps Account
+## Create Bing Maps account
 
 If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You'll use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the HoloLens will connect to that map service using your Bing Maps account.  
 
@@ -31,7 +31,7 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
 ## Add Dynamic Terrain and configure Bing Maps data feed
 
 1. From the Project panel, drag in the following Prefab into the **Hierarchy** panel:
-- **Assets > Art > Prefabs > Bing Maps Design**
+    - **Assets > Art > Prefabs > Bing Maps Design**
 
 2. Select the new instance of the Prefab in the hierarchy panel, and expand the **Map Session** component in the Inspector and enter the **Developer Key** obtained in the previous section.
 
