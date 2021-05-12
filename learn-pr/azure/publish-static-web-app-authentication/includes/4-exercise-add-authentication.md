@@ -1,4 +1,4 @@
-Your shopping list web app needs user authentication. In this exercise, you'll implement login and logout in your app, and display the current user login status. 
+Your shopping list web app needs user authentication. In this exercise, you'll implement login and logout in your app, and display the current user login status.
 
 In this exercise, you'll complete the following steps:
 
@@ -206,16 +206,16 @@ First, we need to access the user login status by making a query to `/.auth/me` 
     ```jsx
     import React, { useState, useEffect } from 'react';
     import { NavLink } from 'react-router-dom';
-    
+
     const NavBar = (props) => {
       const [userInfo, setUserInfo] = useState();
-    
+
       useEffect(() => {
         (async () => {
           setUserInfo(await getUserInfo());
         })();
       }, []);
-    
+
       async function getUserInfo() {
         try {
           const response = await fetch('/.auth/me');
@@ -244,9 +244,9 @@ First, we need to access the user login status by making a query to `/.auth/me` 
     import { onMount } from 'svelte';
 
     let userInfo = undefined;
-  
+
     onMount(async () => (userInfo = await getUserInfo()));
-  
+
     async function getUserInfo() {
       try {
         const response = await fetch('/.auth/me');
@@ -320,7 +320,7 @@ The user information will be `undefined` if we're not logged in, our changes won
 1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class:
 
     ```typescript
-    providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+    providers = ['twitter', 'github', 'aad'];
     ```
 
 1. Add the `redirect` property below, to capture the current URL for the post login redirection:
@@ -362,7 +362,7 @@ You should now see this in your browser:
 1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function:
 
     ```jsx
-    const providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+    const providers = ['twitter', 'github', 'aad'];
     ```
 
 1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
@@ -411,7 +411,7 @@ You should now see this in your browser:
 1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script:
 
     ```javascript
-    const providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+    const providers = ['twitter', 'github', 'aad'];
     ```
 
 1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
@@ -466,7 +466,7 @@ You should now see this in your browser:
       data() {
         return {
           ...
-          providers: ['twitter', 'github', 'aad', 'google', 'facebook'],
+          providers: ['twitter', 'github', 'aad'],
         };
       },
     ```
@@ -579,7 +579,7 @@ import { UserInfo } from '../model/user-info';
   `,
 })
 export class NavComponent implements OnInit {
-  providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+  providers = ['twitter', 'github', 'aad'];
   redirect = window.location.pathname;
   userInfo: UserInfo;
 
@@ -635,7 +635,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = (props) => {
-  const providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+  const providers = ['twitter', 'github', 'aad'];
   const redirect = window.location.pathname;
   const [userInfo, setUserInfo] = useState();
 
@@ -734,7 +734,7 @@ Your completed file should now look like this:
   import { onMount } from 'svelte';
   import { Link } from 'svelte-routing';
 
-  const providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
+  const providers = ['twitter', 'github', 'aad'];
   const redirect = window.location.pathname;
   let userInfo = undefined;
 
@@ -833,7 +833,7 @@ export default {
         type: Object,
         default() {},
       },
-      providers: ['twitter', 'github', 'aad', 'google', 'facebook'],
+      providers: ['twitter', 'github', 'aad'],
       redirect: window.location.pathname,
     };
   },
