@@ -1,4 +1,4 @@
-YaST is an admin tool developed by SUSE that allows you to add packages to your machine (in addition to other things). Recall, Trailwinds needs you to add Apache webserver to the machine for the LAMP stack. In this exercise, we’ll walk through how you can use the YaST admin tool to install Apache to your SUSE SLES VM. 
+YaST is an admin tool developed by SUSE that allows you to add packages to your machine (in addition to other things). Recall, Trailwinds needs you to add Apache webserver to the machine for the LAMP stack. In this exercise, we’ll walk through how you can use the YaST admin tool to install Apache to your SUSE SLES VM. At the end of this unit, you will have installed Apache on your VM.
 
 ## Start YaST 
 
