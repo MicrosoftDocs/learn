@@ -4,7 +4,10 @@ Now that you have provisioned an Azure VM hosting the CycleCloud web application
 
 ## Prepare for the deployment of an HPC cluster
 
-Before you deploy your fist HPC cluster by using CycleCloud, you need to first ensure that you have sufficient compute and network resources to accommodate the deployment. 
+Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage. 
+
+    > [!NOTE]
+    > To complete this exercise, you actually do not need to satisfy quota requirements to accommodate provisioning of the compute nodes,  since you will not be running any jobs on the cluster you create.
 
 1. On your computer, switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for the **cyclecloud-rg** resource group.
@@ -100,7 +103,7 @@ To prepare for operationalizing your cluster, you will set alerts notifying you 
 1. Monitor the startup process.
 
     > [!NOTE]
-    > The process involves provisioning of the Azure VM serving the role of the cluster's master node, as well as installation and configuration of the Swarm scheduler. This might take about 5 minutes.
+    > The process involves provisioning of the Azure VM serving the role of the cluster's head node, as well as installation and configuration of the Swarm scheduler. This might take about 5 minutes.
 
     :::image type="content" source="../media/u5-cyclecloud-cluster-started-nodes.png" alt-text="The screenshot depicts the Nodes tab page of contoso-slurm-lab-cluster in the started state in the Azure CycleCloud web application." border="false":::
 
@@ -112,7 +115,7 @@ Your testing of the cluster deployment process by using the Azure CycleCloud app
 1. Monitor the termination process.
 
     > [!NOTE]
-    > The process involves deprovisioning of the Azure VM serving the role of the cluster's master node. This might take about 5 minutes.
+    > The process involves deprovisioning of the Azure VM serving the role of the cluster's head node. This might take about 5 minutes.
 
     > [!NOTE]
     > To delete all other resources you provisioned in this lab, you will delete the **cyclecloud-rg** resource group. 
