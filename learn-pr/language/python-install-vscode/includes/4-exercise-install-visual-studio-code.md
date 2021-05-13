@@ -1,6 +1,4 @@
-You've already seen how you can run Python code line by line by using Python's interactive mode. Interactive mode is useful when you want to experiment with a few lines of code. The downside is that once you leave interactive mode, any code you wrote is gone forever.
-
-As an aspiring Python developer, you'll probably prefer to write a Python *script*.  A script is a text file with a .py file extension that you type all your Python code into. After you save the code in your script file, you use the Python interpreter to open, compile, interpret, and run the code in that file.
+With Python installed on your system, it's time to turn our attention to a tool for writing Python. As highlighted earlier, while you can use a normal text editor to create Python applications, having a code editor such as Visual Studio Code will provide a greater level of support. Let's explore the toolkit available through Visual Studio Code, and how to install it.
 
 ## Tools to write Python code
 
