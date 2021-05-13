@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
-title: Use Change Feed to manage referential integrity
+uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
+title: Exercise - Use Change Feed to manage referential integrity
 metadata: 
-  title: Use Change Feed to manage referential integrity
+  title: Exercise - Use Change Feed to manage referential integrity
   description: Use Change Feed to manage referential integrity
   ms.date: 3/9/2021 
   author: markjbrown
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
+interactive: bash
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-use-change-feed.md)]

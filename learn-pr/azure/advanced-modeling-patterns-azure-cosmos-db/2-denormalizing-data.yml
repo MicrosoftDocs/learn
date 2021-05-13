@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
+uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
 title: Denormalizing data in your model 
 metadata:
   unitType: learning-content  
