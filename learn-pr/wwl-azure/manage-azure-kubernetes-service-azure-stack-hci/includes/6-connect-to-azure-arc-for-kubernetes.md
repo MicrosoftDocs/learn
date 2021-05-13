@@ -50,12 +50,3 @@ If you choose the scripting approach to connect Kubernetes clusters on an Azure 
 1. Use Azure CLI to create a resource group that will host the connected cluster resources in an Azure region that supports Azure Arc-enabled Kubernetes.
 1. Use Azure CLI to create a service principal with the Contributor role in the resource group you created in the previous step and record its credentials.
 1. Use the AKS on Azure Stack HCI PowerShell module to connect the Kubernetes cluster to Azure Arc in the target subscription, authenticating with the service principal credentials. This step deploys the Azure Arc agents for Kubernetes into the azure-arc namespace.
-
----
-## Check your knowledge
-
-## Multiple Choice
-To promote operational excellence within Contoso IT organization, you decided to script the process of connecting Kubernetes clusters on Azure Stack HCI to Azure Arc for Kubernetes. You have a newly created subscription and want to ensure that the onboarding will complete successfully. What step should you perform after you successfully authenticate and access the target subscription?
-( ) Connect Azure Stack HCI to Azure Arc. {{Incorrect. In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing.}}
-( ) Deploy at least one Windows worker node into the Kubernetes cluster. {{Incorrect. For onboarding to succeed, the AKS on Azure Stack HCI cluster must contain at least one operational Linux worker node.}}
-(x) Register Azure Resource providers. {{Correct. You need to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers, necessary to implement Azure Arc enabled Kubernetes. This is a one-time only setup for a given subscription.}}

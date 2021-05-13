@@ -4,7 +4,7 @@ title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kube
 metadata:
   title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
   description: "Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes"
-  ms.date: 05/12/2021
+  ms.date: 05/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,3 +13,17 @@ azureSandbox: false
 durationInMinutes: 8
 content: |
   [!include[](includes/6-connect-to-azure-arc-for-kubernetes.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "To promote operational excellence within Contoso IT organization, you decided to script the process of connecting Kubernetes clusters on Azure Stack HCI to Azure Arc for Kubernetes. You have a newly created subscription and want to ensure that the onboarding will complete successfully. What step should you perform after you successfully authenticate and access the target subscription?"
+    choices:
+    - content: "Connect Azure Stack HCI to Azure Arc."
+      isCorrect: false
+      explanation: "Incorrect. In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing."
+    - content: "Deploy at least one Windows worker node into the Kubernetes cluster."
+      isCorrect: false
+      explanation: "Incorrect. For onboarding to succeed, the AKS on Azure Stack HCI cluster must contain at least one operational Linux worker node."
+    - content: "Register Azure Resource providers."
+      isCorrect: true
+      explanation: "Correct. You need to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers, necessary to implement Azure Arc enabled Kubernetes. This is a one-time only setup for a given subscription."

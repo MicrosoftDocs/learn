@@ -4,7 +4,7 @@ title: Manage pod storage on Kubernetes clusters
 metadata:
   title: Manage pod storage on Kubernetes clusters
   description: "Manage pod storage on Kubernetes clusters"
-  ms.date: 05/12/2021
+  ms.date: 05/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,3 +13,17 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/8-manage-pod-storage-kubernetes-clusters.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "Because Contoso developers are working on containerizing stateful workloads, you want to test the implementation of persistent pod storage by using your deployment of AKS on Azure Stack HCI. What do you have to define first?"
+    choices:
+    - content: "Persistent volume claim."
+      isCorrect: true
+      explanation: "Correct. To implement a volume in a Kubernetes cluster, you need to first define a persistent volume claim."
+    - content: "Storage class."
+      isCorrect: false
+      explanation: "Incorrect. AKS on Azure Stack HCI offers the default storage class, which implements VHDX-based disks."
+    - content: "Persistent volume."
+      isCorrect: false
+      explanation: "Incorrect. Persistent volumes require you to first define a persistent volume claim."

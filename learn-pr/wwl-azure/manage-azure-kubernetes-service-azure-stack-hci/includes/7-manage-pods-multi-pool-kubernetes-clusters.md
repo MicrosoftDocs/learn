@@ -51,12 +51,3 @@ kubectl taint node <node_name> node.kubernetes.io/os=Windows:NoSchedule
 
 > [!NOTE]
 > Node selectors enforce placements of pods on a specific set of nodes. Tolerations allow pods to run on a designated set of tainted nodes, but does not prevent their placement on nodes without taints.
-
----
-## Check your knowledge
-
-## Multiple Choice
-Contoso is planning to deploy Windows and Linux containerized workloads into AKS on Azure Stack HCI. You need to document the procedure that would ensure that Windows-based pods are deployed to the Kubernetes cluster nodes running Windows. You decided to use taints and tolerations for this purpose. To which cluster component should you apply the taint?
-( ) Pod. {{Incorrect. Tolerations are part of pod specifications, but taints are part of node configuration.}}
-(x) Node. {{Correct. Taints are part of node configuration.}}
-( ) Deployment. {{Incorrect. Deployments can include tolerations as part of the pod specifications, but taints are part of node configuration.}}

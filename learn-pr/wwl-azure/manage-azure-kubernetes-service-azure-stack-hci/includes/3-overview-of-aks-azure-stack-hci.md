@@ -39,12 +39,3 @@ AKS running on Azure Stack HCI offers many other benefits, including:
 > The Azure portal-based management supplements traditional Kubernetes administrative tools and interfaces, such as kubectl command line utility and Kubernetes dashboards.
 
 In addition, Azure Stack HCI manages automatic failover of VMs serving as Kubernetes cluster nodes if there is a localized failure of the underlying physical components. This supplements the high availability built into Kubernetes, which automatically restarts failed containers on the same or another VM.
-
----
-## Check your knowledge
-
-## Multiple Choice
-You are preparing for deployment of containerized workloads by using Kubernetes on your existing Azure Stack HCI cluster that you set up for Contoso. You need to minimize the overhead associated with maintaining operating system images for the Kubernetes cluster nodes. What should you do first?
-(x) Deploy the AKS cluster. {{Correct. AKS provides automated upgrades of cluster nodes to the latest available Kubernetes version.}} 
-( ) Register Azure Stack HCI with Azure. {{Incorrect. This is required for any Azure Stack HCI installation and does not inherently provide automated upgrades of Kubernetes cluster nodes.}}
-( ) Onboard Azure Stack HCI to Azure Arc. {{Incorrect. Azure Arc offers a number of benefits for AKS deployments, such as support for Azure Policy and Azure RBAC, but it does not provide automated upgrades of Kubernetes cluster nodes.}}

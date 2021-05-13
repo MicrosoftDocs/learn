@@ -41,13 +41,4 @@ Kubernetes allows you to treat a group of physical or virtual servers as a unifi
 - You're responsible for maintaining your Kubernetes environment. For example, you need to manage operating system upgrades and Kubernetes upgrades. You also manage the hardware resources available to cluster nodes, such as networking, memory, and storage.
 
 > [!NOTE] 
-> Managed Kubernetes offerings, such as AKS, minimize or even eliminate some of these challenges.  
-
----
-## Check your knowledge
-
-## Multiple Choice
-While evaluating the suitability of using Kubernetes for containerized workloads you intend to deploy to Contoso's Azure Stack HCI environment, you realized that you will need to restrict users who use the same Kubernetes cluster from creating, viewing, or using containerized resources. Which Kubernetes feature should you use to accomplish this?
-( ) Helm charts. {{Incorrect. Helm charts facilitate deployment of more complex workloads to Kubernetes clusters, but they do not provide isolation of containerized resources.}}
-( ) Deployments. {{Incorrect. Deployments allow you to implement high availability and redundancy of pods, but they do not provide isolation of containerized resources.}}
-(x) Namespaces. {{Correct. Kubernetes offers the ability to isolate pods, services, deployments, and a number of other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources.}}
+> Managed Kubernetes offerings, such as AKS, minimize or even eliminate some of these challenges.

@@ -65,12 +65,3 @@ kubectl create -f pv_definition.yaml
 The resulting pod will have a volume of 100 GB in size mounted within the file system path designated by the value of the `mountPath` element.
 
 To delete the persistent volume claim, you need to first delete any pods and deployments that are currently using it. At that point, to complete the task, you can use the `kubectl delete PersistentVolumeClaim` command, followed by the name of the persistent volume claim.
-
----
-## Check your knowledge
-
-## Multiple Choice
-Because Contoso developers are working on containerizing stateful workloads, you want to test the implementation of persistent pod storage by using your deployment of AKS on Azure Stack HCI. What do you have to define first?
-(x) Persistent volume claim. {{Correct. To implement a volume in a Kubernetes cluster, you need to first define a persistent volume claim.}}
-( ) Storage class. {{Incorrect. AKS on Azure Stack HCI offers the default storage class, which implements VHDX-based disks.}}
-( ) Persistent volume. {{Incorrect. Persistent volumes require you to first define a persistent volume claim.}}

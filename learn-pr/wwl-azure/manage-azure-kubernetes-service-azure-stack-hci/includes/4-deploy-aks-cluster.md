@@ -89,12 +89,3 @@ Following the successful installation, you can proceed with deploying a Kubernet
 In this demonstration, you'll learn how to deploy AKS on Azure Stack HCI.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDzU4]
-
----
-## Check your knowledge
-
-## Multiple Choice
-You're documenting the AKS installation procedure for Contoso's IT operational team that will be performing similar installations on many Azure Stack HCI clusters. You must list the prerequisites for installing the AKS extension for Windows Admin Center. Which step should you include in your list?
-( ) Enabling CredSSP. {{Incorrect. Although you must enable CredSSP to install the AKS cluster on Azure Stack HCI, CredSSP does not play any role in installing the AKS extension for Windows Admin Center.}}
-(x) Modifying Windows Admin Center feed manager settings. {{Correct. To install the extension, add the location of the downloaded package to the list of extension feeds within the extension manager of Windows Admin Center.}}
-( ) Register Windows Admin Center with Azure. {{Incorrect. Although you must register Windows Admin Center with Azure to install the AKS cluster on Azure Stack HCI, the registration does not play any role in installing the AKS extension for Windows Admin Center.}}

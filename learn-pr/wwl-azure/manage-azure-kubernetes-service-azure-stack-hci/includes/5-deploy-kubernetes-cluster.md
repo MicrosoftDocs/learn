@@ -63,13 +63,4 @@ After creating the Kubernetes cluster, you can deploy containerized workloads.
 :::image type="content" source="../media/kubernetes-setup-finished-final.png" alt-text="The screenshot depicts the New cluster step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
 
 > [!NOTE] 
-> You can fully automate the process of creating a Kubernetes cluster on Azure Stack HCI by using Windows PowerShell. 
-
----
-## Check your knowledge
-
-## Multiple Choice
-You are documenting the procedure of creating a Kubernetes cluster for Contoso's IT operation team that will be performing similar installations on many Azure Stack HCI clusters. You need to describe the step to configure the size of the VMs used to host the control plane components of the Kubernetes cluster. Which of the following is that step?
-( ) Node pools. {{Incorrect. During this step, specify Windows and Linux worker node pools that should be provisioned as part of the Kubernetes cluster setup.}}
-(x) Basics. {{Correct. During this step, specify the size of the VMs used to host the control plane components.}}
-( ) Integration. {{Incorrect. During this step, Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads.}}
+> You can fully automate the process of creating a Kubernetes cluster on Azure Stack HCI by using Windows PowerShell.

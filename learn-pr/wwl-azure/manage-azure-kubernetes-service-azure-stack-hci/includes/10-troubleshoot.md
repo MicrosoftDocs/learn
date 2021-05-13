@@ -21,13 +21,4 @@ When establishing an SSH connection, specify the location of the private key of 
 
 If you encounter issues with AD DS authentication (including gMSA), verify that time synchronization is configured across Azure Stack HCI cluster nodes and their virtual machines. You can use AD DS domain controllers or an external time service as the synchronization source. 
 
-To join Windows Server nodes of a Kubernetes cluster on Azure Stack HCI to an AD DS domain, you will need Full Control permission in the AD DS container that hosts the Azure Stack HCI cluster nodes. 
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of evaluating AKS on Azure Stack HCI for Contoso, you are documenting the steps to connect to the newly deployed Windows Server nodes of a Kubernetes cluster. What authentication method should you use during such connections? 
-(x) Asymmetric key pair {{Correct. When establishing an SSH connection to a Windows node of a Kubernetes cluster, you need to provide the location of the private key of the asymmetric key pair generated during cluster provisioning.}}
-( ) Active Directory {{Incorrect. Windows Servers that are deployed as part of a Kubernetes cluster node pool are not automatically joined to Active Directory.}}
-( ) Azure Active Directory {{Incorrect. Windows Server does not support Azure Active Directory authentication.}}
+To join Windows Server nodes of a Kubernetes cluster on Azure Stack HCI to an AD DS domain, you will need Full Control permission in the AD DS container that hosts the Azure Stack HCI cluster nodes.

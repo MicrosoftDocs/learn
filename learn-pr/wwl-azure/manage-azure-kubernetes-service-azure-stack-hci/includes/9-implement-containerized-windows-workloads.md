@@ -19,13 +19,4 @@ The rest of the process is the same as in any Kubernetes cluster that includes W
 1. Including a reference to the GMSACredentialSpec resource in the definition of pods that will use it for AD DS authentication.
 
 > [!NOTE]
-> To enable gMSA support, the name of the Kubernetes cluster cannot exceed three characters. This constraint results from the 15-character limit of a domain-joined computer name. 
-
----
-## Check your knowledge
-
-## Multiple Choice
-Contoso's Information Security team requests you to investigate the options for implementing AD DS-based authentication of Windows-based containerized workloads hosted by AKS on Azure Stack HCI. You start by deploying a Kubernetes cluster containing Windows Server nodes into your Azure Stack HCI cluster. What should you do next?
-( ) Register the Azure Stack HCI cluster with Azure. {{Incorrect. This is a requirement for deploying AKS on Azure Stack HCI, which you have already completed.}}
-( ) Enable CredSSP in the Azure Stack HCI cluster. {{Incorrect. This functionality does not depend in any way on CredSSP being enabled.}}
-(x) Join the Kubernetes cluster Windows Server nodes to the AD DS domain. {{Correct. To provide the ability for pods to use gMSA for authentication, you must first join to an AD DS domain all of the Windows Server-based Kubernetes worker nodes that will host these pods.}}
+> To enable gMSA support, the name of the Kubernetes cluster cannot exceed three characters. This constraint results from the 15-character limit of a domain-joined computer name.

@@ -4,7 +4,7 @@ title: Deploy an AKS cluster to Azure Stack HCI
 metadata:
   title: Deploy an AKS cluster to Azure Stack HCI
   description: "Deploy an AKS cluster to Azure Stack HCI"
-  ms.date: 05/12/2021
+  ms.date: 05/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,3 +13,17 @@ azureSandbox: false
 durationInMinutes: 11
 content: |
   [!include[](includes/4-deploy-aks-cluster.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You're documenting the AKS installation procedure for Contoso's IT operational team that will be performing similar installations on many Azure Stack HCI clusters. You must list the prerequisites for installing the AKS extension for Windows Admin Center. Which step should you include in your list?"
+    choices:
+    - content: "Enabling CredSSP."
+      isCorrect: false
+      explanation: "Incorrect. Although you must enable CredSSP to install the AKS cluster on Azure Stack HCI, CredSSP does not play any role in installing the AKS extension for Windows Admin Center."
+    - content: "Modifying Windows Admin Center feed manager settings."
+      isCorrect: true
+      explanation: "Correct. To install the extension, add the location of the downloaded package to the list of extension feeds within the extension manager of Windows Admin Center."
+    - content: "Register Windows Admin Center with Azure."
+      isCorrect: false
+      explanation: "Incorrect. Although you must register Windows Admin Center with Azure to install the AKS cluster on Azure Stack HCI, the registration does not play any role in installing the AKS extension for Windows Admin Center."
