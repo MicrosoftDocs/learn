@@ -89,7 +89,7 @@ In the terminal, run the following Azure CLI command. Replace `{storageaccountna
 
 ```azurecli
 az storage account create \
-  --name {storage-account-name} \
+  --name {storageaccountname} \
   --location eastus
 ```
 
@@ -103,7 +103,7 @@ In the terminal, run the following Azure PowerShell command. Replace `{storageac
 
 ```azurepowershell
 New-AzStorageAccount `
-  -Name {storage-account-name} `
+  -Name {storageaccountname} `
   -Location eastus `
   -SkuName Standard_LRS
 ```
@@ -180,24 +180,24 @@ You need to update your Bicep template to reference the storage account you crea
 
 ::: zone pivot="cli"
 
-In the terminal, run the following Azure CLI command. Replace `{storage-account-name}` with the name of the storage account you created earlier in this exercise.
+In the terminal, run the following Azure CLI command. Replace `{storageaccountname}` with the name of the storage account you created earlier in this exercise.
 
 ```azurecli
 az deployment group create \
   --template-file main.bicep \
-  --parameters storageAccountName={storage-account-name}
+  --parameters storageAccountName={storageaccountname}
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-In the terminal, run the following Azure PowerShell command. Replace `{storage-account-name}` with the name of the storage account you created earlier in this exercise.
+In the terminal, run the following Azure PowerShell command. Replace `{storageaccountname}` with the name of the storage account you created earlier in this exercise.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
-  -storageAccountName {storage-account-name}
+  -storageAccountName {storageaccountname}
 ```
 
 ::: zone-end
