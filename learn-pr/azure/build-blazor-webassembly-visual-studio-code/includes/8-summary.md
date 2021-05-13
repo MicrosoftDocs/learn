@@ -1,10 +1,10 @@
-In this module, you set up your development environment to create and build Blazor WebAssembly web apps. You then:
+In this module, you set up your development environment to create and build Blazor web apps. You then:
 
-- Created a new Razor component.
+- Re-used a Razor component.
 - Added HTML and C# to the Razor file.
-- Used binding to sync user input to the calculator logic.
+- Used binding to sync user input to the todo list logic.
 
-You now understand the fundamentals of building Blazor WebAssembly apps. You can use your HTML and C# knowledge to build more complex client web apps.
+You now understand the fundamentals of building Blazor apps. You can use your HTML and C# knowledge to build more complex web apps.
 
 ## Learn more
 

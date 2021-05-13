@@ -1,4 +1,4 @@
-You've defined the UI for your web app. Now explore how to add logic to the app. In a Blazor WebAssembly app, you can add C# code in separate .cs files or inline in your Razor components.
+You've defined the UI for your web app. Now explore how to add logic to the app. In a Blazor app, you can add C# code in separate .cs files or inline in your Razor components.
 
 ## C# code-behind in separate files
 
