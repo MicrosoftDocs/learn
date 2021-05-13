@@ -12,7 +12,7 @@ In this unit, we’ll walk through how to use the YaST admin tool to install and
 
     All menu items and buttons in YaST can be accessed using the appropriate function keys or keyboard shortcuts. For example, you can cancel the current operation by pressing F9, while the F10 key can be used to accept the changes. Each menu item and button in YaST's ncurses-based interface has a highlighted letter in its label. This letter is part of the keyboard shortcut assigned to the interface element. For example, the letter Q is highlighted in the Quit button. This means that you can activate the button by pressing Alt–Alt+Q. 
 
-For more details have a look at the SUSE documentation at https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-yast-gui  
+
 
 ## Task 2: Install Software Packages with YaST
 
