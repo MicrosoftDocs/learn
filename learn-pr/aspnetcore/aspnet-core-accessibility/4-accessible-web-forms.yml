@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore-accessibility.4-accessible-web-forms
+uid: learn.languages.aspnetcore-accessibility.4-accessible-web-forms
 metadata:
-  title: Add ASP.NET Core automation properties
-  description: Learn how to improve accessibility with automation properties in ASP.NET Core.
+  title: Find and fix form accessibility with Accessibility Insights
+  description: Learn how to find and fix form accessibility with Accessibility Insights
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
