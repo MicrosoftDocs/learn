@@ -4,30 +4,6 @@ Now that you have your development environment set up, you'll explore the struct
 
 Blazor projects target Microsoft .NET 5. Blazor WebAssembly apps are different from Blazor Server apps, which are ASP.NET Core projects.
 
-## Blazor entry point
-
-The entry point for the app is defined in a C# file named Program.cs. When the **Program** class is instantiated and runs, its **Main** method is called.
-
-By default, the **Main** method configures and creates the .NET web application. This object communicates with the host and loads the app's Razor components.
-
-```csharp
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        CreateHostBuilder(args).Build().Run();
-    }
-
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.UseStartup<Startup>();
-            });
-}
-```
-
-
 ## What is Razor?
 
 Razor is a markup syntax that uses HTML and C# for writing UI components of Blazor web apps.
