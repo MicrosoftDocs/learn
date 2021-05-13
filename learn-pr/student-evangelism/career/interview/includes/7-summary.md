@@ -13,3 +13,5 @@ Hopefully you feel a bit more empowered having read through all content. Definit
 - [Preparing for the technical interview](https://elaintech.com/2021/01/03/how-to-prepare-for-a-technical-interview-and-live-coding-part-for-software-engineer-role/ ). A great read from a former Microsoft recruiter turned Software Engineer at Microsoft.
 - [Microsoft interview tips](https://careers.microsoft.com/us/en/interviewtips ). Hands-on tips that describe what to do, before, during and after the interview.
 - [Linked In learning, common interview questions and how to handle them](https://www.linkedin.com/learning/expert-tips-for-answering-common-interview-questions/salary-negotiation-approach-and-tips?u=3322) . An informative video series going through all the most common interview questions and how to tackle them, a must see.
+- [Mock interview Microsoft Copenhagen](https://www.youtube.com/watch?v=zPjRLL7pShc)
+- [How to prepare for Microsoft technical interview](https://www.youtube.com/watch?v=8Myx-vy0csM)

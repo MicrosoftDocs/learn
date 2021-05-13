@@ -1,5 +1,3 @@
-> [!VIDEO https://www.youtube.com/embed/zPjRLL7pShc]
-
 You made to the interview. Congrats, that means someone looked through your resume, and liked what they saw. It most likely also means you passed a phone screening and or a take home test. 
 
 You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Lets think of this phase as consisting of a _before_, _during_ and _after_. Mastering each of these phases will maximize your chances to land that job.
@@ -28,7 +26,7 @@ Your solution should fulfill the following:
 Sometimes life happens and you don't have a chance to finish a task in the alloted time. Don't worry, reach out at that point, most companies are really understanding and might give you more time, given that you explain the circumstances.
 
 > [!TIP]
-> Even if you don't finish the entire task, submit what you have. Usually it's not about solving the task anyway but to see your reasoning, don't give up. 
+> Even if you don't finish the entire task, submit what you have. Usually it's not about solving the task anyway but to see your reasoning, don't give up.
 
 ## Day before interview
 
@@ -59,7 +57,7 @@ There's generally two types of ways that the technical interview is carried out,
 
 ### Whiteboard interview
 
-> [!VIDEO https://www.youtube.com/embed/8Myx-vy0csM] 
+
 
 So we've established you will be standing in front of a whiteboard and try to explain yourself through the solution of a problem. Why this form of interviewing? The idea is to mimic your every day work life where it's common that you and many your colleagues are standing in front of a whiteboard and is trying to solve a problem together. This form of interviewing gives the interviewers a chance to hear your inner thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem.
 
