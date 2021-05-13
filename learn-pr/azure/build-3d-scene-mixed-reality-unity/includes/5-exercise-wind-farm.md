@@ -35,7 +35,7 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
 
 2. Select the new instance of the Prefab in the hierarchy panel, and expand the **Map Session** component in the Inspector and enter the **Developer Key** obtained in the previous section.
 
-    :::image type="content" source="../media/maps-developer-key.png" alt-text="Screenshot of the Bings Maps Design prefab with the map session script selected.":::
+    :::image type="content" source="../media/maps-developer-key.png" alt-text="Screenshot of the Bing Maps Design prefab with the map session script selected.":::
 
     > [!NOTE]
     > You may need to select another item in the hierarchy, then select Bing Maps again to refresh.
@@ -54,11 +54,11 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
     | Local Map Radius | 1 |
     | Local Base Height | 0.3 |
 
-    :::image type="content" source="../media/map-renderer.png" alt-text="Screenshot of the Bings Maps Design prefab with the map renderer script selected.":::
+    :::image type="content" source="../media/map-renderer.png" alt-text="Screenshot of the Bing Maps Design prefab with the map renderer script selected.":::
 
 4. Expand the **Transform** component in the **Inspector** and validate the position of the map using the **Position** coordinates (X = 0, Y = -0.7, Z = 2) so the two maps are placed side by side.
 
-    :::image type="content" source="../media/bing-maps-transform.png" alt-text="Screenshot of the Bings Maps Design prefab with the transform component selected.":::
+    :::image type="content" source="../media/bing-maps-transform.png" alt-text="Screenshot of the Bing Maps Design prefab with the transform component selected.":::
 
 5. Save the scene under the **File > Save** menu option.  If prompted, save your Scene in the **Scenes** folder.
 6. In the Scene, you should have both the Static and Dynamic terrain loaded.  Navigate the Scene using your mouse and/or keyboard.
@@ -72,7 +72,7 @@ Navigating within the Game panel can be achieved using the MRTK [input simulatio
 
 8. Observe any differences between the Static Terrain and Dynamic Terrain (for example, endless terrain and contour lines in the Bing Maps terrain v. higher resolution imagery in the Static Terrain)
 
-    :::image type="content" source="../media/bing-static-dueling-terrain.png" alt-text="Screenshot of the main scene in play mode with the static and bing map terrains side by side.":::
+    :::image type="content" source="../media/bing-static-dueling-terrain.png" alt-text="Screenshot of the main scene in play mode with the static and Bing Maps terrains side by side.":::
 
 ## Remove static terrain 
 
