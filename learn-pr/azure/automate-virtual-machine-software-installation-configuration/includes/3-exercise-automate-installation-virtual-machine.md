@@ -27,7 +27,7 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --name my-vnet \
         --address-prefix 192.168.0.0/16 \
         --subnet-name my-subnet \
-        --subnet-prefix 192.168.1.0/24 \
+        --subnet-prefixes 192.168.1.0/24 \
         --resource-group my-resource-group-name
     ```
 
@@ -57,7 +57,7 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --name my-nsg-http-rule \
         --protocol tcp \
         --priority 1001 \
-        --destination-port-range 80 \
+        --destination-port-ranges 80 \
         --access allow \
         --resource-group my-resource-group-name
     ```
@@ -100,7 +100,7 @@ Not that you have created all of the necessary networking infrastructure, your n
         --name my-nsg-ssh-rule \
         --protocol tcp \
         --priority 1000 \
-        --destination-port-range 22 \
+        --destination-port-ranges 22 \
         --access allow \
         --resource-group my-resource-group-name
     ```
