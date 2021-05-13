@@ -1,6 +1,6 @@
 For this exercise, you’ll be adding the successor of the MySQL database, mariadb, to your growing application stack using zypper.  
 
-## Task 1: ssh into the virtual machine
+## ssh into the virtual machine
 
 Refresh the repositories to ensure you’re working with the latest metadata index  
 
@@ -10,11 +10,12 @@ sudo zypper refresh
 
 In this case, repositories should already be up to date because you used YaST in the previous exercise. If you choose to use zypper and skip this initial refresh step, you will get an error if the metadata has changed and you’ll be forced to run it before you can get started.  
 
-## Task 2: Install a software package with zypper 
+## Install a software package with zypper 
 
-1. If you don’t know the exact name of the package, it is a good idea to search for it. You only need a part of the name for a search to work. e.g. zypper search maria (or short form: zypper se maria)  
-1. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
-1. To install a package, you can either enter:  
+1. Search for mariadb. 
+```zypper search maria``` or ```zypper se maria```  
+3. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
+4. To install a package, you can either enter:  
 
     ```console
     sudo zypper install mariadb
@@ -33,7 +34,7 @@ In this case, repositories should already be up to date because you used YaST in
 
 1. Do search for the package again, now it should have the "I" in the first column. 
 
-## Task 4: Use zypper to install a pattern 
+## Use zypper to install a pattern 
 
 _(Please note, this is a challenge task. Instead of following step-by-step instructions to perform the task, you will rely on knowledge previously gained to complete the task.)_
 
