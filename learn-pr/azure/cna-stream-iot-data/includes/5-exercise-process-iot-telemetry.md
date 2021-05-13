@@ -19,9 +19,9 @@ In this exercise, you'll:
 
 ## Create an Azure function that logs an HTTP request payload
 
-* Before you configure Azure IoT Central application rules, you'll create an Azure Function app that'll help validate rule processing. When implementing your cloud-native application, you can easily replace the Azure Function app with any other component that supports the HTTP webhook functionality.
+* Before you configure Azure IoT Central application rules, you'll create an Azure Function app that will help validate rule processing. When implementing your cloud-native application, you can easily replace the Azure Function app with any other component that supports the HTTP webhook functionality.
 
-1. On a web browser, go to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
+1. In a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** box at the beginning of the Azure portal page to search for **Function App**.
 1. On the **Function App** blade, select **+ Add**
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**:
@@ -30,13 +30,13 @@ In this exercise, you'll:
    | --- | --- |
    | Subscription | Select the name of the Azure subscription you'll be using in this module. |
    | Resource Group | Create a new resource group named **iot-central-apps-RG**. |
-   | Function App name | Enter a unique name consisting of lowercase letters, digits and/or dashes, and starting with a letter. |
+   | Function App name | Enter a unique name consisting of lowercase letters, digits or dashes, and starting with a letter. |
    | Publish | Select **Code**. |
    | Runtime stack | Select **.NET**. |
    | Version | Select **3.1** |
    | Region | Select the Azure region closest to the location of your lab environment, preferably matching the location you chose for the Azure IoT Central deployment. |
 
-   :::image type="content" source="../media/5-azure-function-app-create-basics.png" alt-text="Screenshot of the the Basics tab of the Create Function App blade in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-function-app-create-basics.png" alt-text="Screenshot of the Basics tab of the Create Function App blade in the Azure portal.":::
 
 1. On the **Hosting** tab of the **Create Function App** blade, accept the default settings, and then select **Next: Monitoring >**.
 1. On the **Monitoring** tab of the **Create Function App** blade, accept the default settings, and then select **Review + create**.
@@ -134,11 +134,11 @@ In this exercise, you'll:
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
-   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab the depicts messages in response ot the HTTP trigger.":::
+   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab that depicts messages in response to the HTTP trigger.":::
 
 ## Create an Azure Storage account that will store IoT telemetry
 
-1. Switch to the web browser window displaying the Azure portal. 
+1. Switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Storage accounts**.
 1. On the **Storage accounts** blade, select **+ Add**.
 1. On the **Basics** tab of the **Create storage account** blade, configure the following settings (leave others with their default values):
@@ -218,4 +218,4 @@ Congratulations! You completed the second exercise of this module. In this exerc
 
 ## Clean up the resources
 
-To avoid unnecessary charges due to usage of Azure resources, you should delete the **iot-central-apps-RG** resource group you created at the beginning of this exercise. To do so, in the Azure portal, navigate to the **iot-central-apps-RG** blade, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type **iot-central-apps-RG**, and select **Delete**.
+To avoid unnecessary charges from using Azure resources, you should delete the **iot-central-apps-RG** resource group you created at the beginning of this exercise. To do so, in the Azure portal, navigate to the **iot-central-apps-RG** blade, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, enter **iot-central-apps-RG**, and select **Delete**.

@@ -1,10 +1,10 @@
-﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction via well-defined programming interfaces.
+﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction through well-defined programming interfaces.
 
-These components can include software that's running on IoT devices and a range of Azure services that are designed for collecting and processing device telemetry. These Azure services include Azure IoT Hub, Azure Device Provisioning Service, Azure Maps, Azure Time Series Insights, and Azure IoT Edge. When you're designing your application, you can select one or more of these services or implement Azure IoT Central, which seamlessly integrates all of them. Azure IoT Central delivers a comprehensive set of features that facilitate the design, testing, and implementation of distributed applications that rely on IoT telemetry.
+These components can include software that's running on IoT devices and a range of Azure services that are designed for collecting and processing device telemetry. The Azure services include Azure IoT Hub, Azure Device Provisioning Service, Azure Maps, Azure Time Series Insights, and Azure IoT Edge. When you're designing your application, you can select one or more of these services or implement Azure IoT Central, which seamlessly integrates all of them. Azure IoT Central delivers a comprehensive set of features that help the design, testing, and implementation of distributed applications that rely on IoT telemetry.
 
 Suppose you work for Adatum Corporation, a manufacturer of home appliances. You lead a small development team, and you just completed the first phase of a project, delivering a refrigerator inventory management solution. This solution consists of a back-end API and a front-end web app, with both running on an Azure Kubernetes Service (AKS) cluster. Your customers can use this cloud-native app to easily identify the items they need to restock. They can also set up this app to automatically reorder required items.
 
-Now you've been tasked with developing another set of smart refrigerator-related features that will perform the collection and processing of IoT telemetry that the onboard temperature and humidity sensors generate. You plan to follow the same architectural paradigm you applied during the first phase of the project and extend your solution by incorporating into it another set of loosely coupled components. The solution will keep track of telemetry data, facilitate its analytics, allow for its long-term storage, and support automatic alerting and remediation if there's an issue. To reach your goal, you've decided to explore and test the functionality of Azure IoT Central.
+You've been tasked with developing another set of smart refrigerator-related features that will perform the collection and processing of IoT telemetry that the onboard temperature and humidity sensors generate. You plan to follow the same architectural paradigm you applied during the first phase of the project and extend your solution by incorporating into it another set of loosely coupled components. The solution will keep track of telemetry data, facilitate its analytics, allow for its long-term storage, and support automatic alerting and remediation if there's an issue. To reach your goal, you've decided to explore and test the functionality of Azure IoT Central.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Now you've been tasked with developing another set of smart refrigerator-related
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you should know more about how to:
 
 * Describe the role of Azure IoT Central in the context of cloud-native applications.
 * Set up Azure IoT Central applications.
