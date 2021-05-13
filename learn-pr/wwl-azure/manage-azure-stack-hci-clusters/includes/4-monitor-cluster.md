@@ -105,13 +105,4 @@ You can make more in-depth monitoring, alerting, and log analytics available by 
 
 After the onboarding process is complete, the cluster nodes will start forwarding telemetry and logs to Azure Monitor. The Azure portal serves as the primary monitoring dashboard, displaying collected data on the Azure Monitor blades and allowing you to analyze it by running Log Analytics queries. Azure Monitor also gives you the option to implement metric- or log-based rules to trigger alerts and auto-remediation tasks. 
 
-Cloud-based monitoring might potentially eliminate the need for an on-premises monitoring system. Considering that Azure Monitor offers multi-platform support, Contoso could use it to implement a uniform monitoring solution across its diverse hardware and software resources. 
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of evaluating the functionality of Azure Stack HCI for Contoso, you decide to implement alerting in response to the performance or stability issues affecting your clustered workloads. Which technology should you choose to provide the alerting functionality? Your solution must minimize the administrative effort.
-( ) Windows Admin Center {{Incorrect. Windows Admin Center considerably simplifies the monitoring tasks, but it does not offer built-in alerting support.}}
-( ) PowerShell {{Incorrect. While it is possible to implement alerting by using custom PowerShell scripts, this would require more administrative effort than using Azure Monitor.}}
-(x) Azure Monitor {{Correct. In-depth monitoring, alerting, and log analytics are available by integrating Azure Stack HCI with Azure Monitor.}}
+Cloud-based monitoring might potentially eliminate the need for an on-premises monitoring system. Considering that Azure Monitor offers multi-platform support, Contoso could use it to implement a uniform monitoring solution across its diverse hardware and software resources.

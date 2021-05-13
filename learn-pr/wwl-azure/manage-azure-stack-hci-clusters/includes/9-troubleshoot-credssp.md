@@ -47,12 +47,3 @@ As part of managing and troubleshooting CredSSP in Azure Stack HCI, you should a
 
 - The Gateway administrator role privileges are necessary for many delegation-related tasks, including enabling and disabling CredSSP from within Windows Admin Center or running the Create Cluster wizard.
 - The computer hosting Windows Admin Center should be a member of the same AD DS domain as the managed Azure Stack HCI cluster.
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of evaluating the Azure Stack HCI functionality for Contoso, you decide to recreate the cluster from your Windows 10 computer by using Windows Admin Center. You need to verify that the SPN attributes of the servers to which you will deploy the cluster are configured to support CredSSP-based authentication. What should you run from your Windows 10 computer for each target server?
-( ) The Enable-WsmanCredSSP PowerShell cmdlet with the -Role parameter set to Server{{Incorrect. This cmdlet allows you to configure CredSSP-based delegation on the server side, but does not provide any verification regarding the SPN.}}
-( ) The Enable-WsmanCredSSP PowerShell cmdlet with the -Role parameter set to Client{{Incorrect. This cmdlet allows you to configure CredSSP-based delegation on the client side, but does not provide any verification regarding the SPN.}}
-(x) The setspn command-line utility with the -Q switch set to the WSMAN service class followed by the name of server{{Correct. Use the setspn command-line utility with the -Q switch to list the values of the SPN attribute for a server.}}

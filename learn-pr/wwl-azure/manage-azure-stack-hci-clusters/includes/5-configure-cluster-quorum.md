@@ -19,7 +19,7 @@ You can determine the quorum based on the number of votes associated with each c
 The following table gives an overview of cluster resiliency based on the number of nodes and the existence of a witness.
 
 |Server nodes|Can survive one server node failure|Can survive one server node failure, then another|Can survive two simultaneous server node failures|
-|---|---|---|---|
+|||||
 |2|50/50|No|No|
 |2 plus witness|Yes|No|No|
 |3|Yes|50/50|No|
@@ -31,7 +31,7 @@ The following table gives an overview of cluster resiliency based on the number 
 The following table provides an overview of the pool quorum resiliency based on the number of nodes and the existence of a witness.
 
 |Server nodes|Can survive one server node failure|Can survive one server node failure, then another|Can survive two simultaneous server node failures|
-|---|---|---|---|
+|||||
 |2|No|No|No|
 |2 plus witness|Yes|No|No|
 |3|Yes|No|No|
@@ -68,12 +68,3 @@ This type of configuration is referred to as cloud witness and the simplest way 
 In this demonstration, you'll learn how to configure cloud witness in Azure Stack HCI.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDuEE]
-
----
-## Check your knowledge
-
-## Multiple Choice
-Contoso datacenters have reliable, resilient connectivity to Azure regions in the East US region. You need to recommend a cluster witness for Contoso's Azure Stack HCI deployments. Which witness type should you recommend?
-(x) Cloud witness{{Correct. Cloud witness is the recommended option for configuring a cluster witness because the cluster has reliable network connectivity to the Azure region hosting the storage account.}}
-( ) File share witness{{Incorrect. Although you can configure the cluster witness either as a file share or as a blob in an Azure Storage account, we recommend the latter as long as the cluster has reliable network connectivity to the Azure region hosting the storage account.}}
-( ) Disk witness{{Incorrect. Azure Stack HCI does not support disk witness.}}

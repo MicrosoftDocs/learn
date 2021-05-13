@@ -36,12 +36,3 @@ The procedure of adding or removing Azure Stack HCI stretched cluster nodes cons
 1. Run the **Set-ClusterFaultDomainXML** cmdlet with the *-xml* parameter pointing to the XML file in order to update the site topology.
 1. Next, depending on whether you are adding or removing servers, run either the **Add-ClusterNode** cmdlet or the **Remove-ClusterNode** cmdlet, with the *-Name* parameter set to the names of target servers.
 1. Finally, complete the procedure by rerunning the cluster validation by using the **Test-Cluster** cmdlet with the *-InputObject* parameter set to the cluster name.
-
----
-## Check your knowledge
-
-## Multiple Choice
-To evaluate the functionality of Azure Stack HCI for Contoso, you added a new server to an existing cluster, which is hosting many clustered VMs. You need to ensure that the cluster is eligible for Microsoft support. What should you do next from Windows Admin Center?
-(x) Rerun cluster validation and verify that it completed successfully.{{Correct. Successful cluster validation is a prerequisite for Microsoft support.}}
-( ) Re-register the cluster with Azure.{{Incorrect. Perform re-registration with Azure after the cluster is provisioned. There is no need for re-registering the cluster after adding or removing cluster nodes.}}
-( ) Join the server to the same AD DS domain that is joined by other cluster nodes. {{Incorrect. Complete this step before you add a server to an existing cluster.}}

@@ -54,12 +54,3 @@ After the CAU configuration is complete, you will be able to initiate a deployme
 
 > [!NOTE]
 > You might have to deploy updates within a time window shorter than the one typically associated with the CAU-based implementation. This might be required because of a zero-day vulnerability that affects your cluster or the time limits imposed by a designated maintenance window. In such situations, you can perform an offline update of all cluster nodes at the same time. Before you do so, take all virtual disks offline, stop the cluster, and disable the Cluster service on each node. After the update process is complete, reverse the previous steps by enabling the Cluster service on each node, starting the cluster, and bringing all virtual disks online.
-
----
-## Check your knowledge
-
-## Multiple Choice
-To evaluate the functionality of Azure Stack HCI for Contoso, you decide to test the implementation of CAU by using Windows Admin Center. What do you have to do before you can proceed with the implementation?
-( ) Create the CAU clustered role. {{Incorrect. Windows Admin Center creates the CAU clustered role automatically. There is no need to create it first.}}
-(x) Enable CredSSP. {{Correct. To implement CAU by using Windows Admin Center, you have to enable CredSSP and provide administrative credentials that will be used to connect to cluster nodes.}}
-( ) Take the cluster virtual disks offline. {{Incorrect. This is required if you want to perform an offline update of all cluster nodes at the same time, rather than CAU-based deployment.}}

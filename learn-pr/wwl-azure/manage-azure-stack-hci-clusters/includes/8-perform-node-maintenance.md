@@ -51,12 +51,3 @@ Windows Admin Center simplifies initiating and completing cluster node maintenan
      > Azure Stack HCI will generate an alert and stop the draining process if the status of any of the cluster storage volumes changes to unhealthy.
 
 4. You can resume the cluster node from the same interface that you used to pause it.
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of your evaluation of Azure Stack HCI for Contoso, you are testing the process of temporarily taking a cluster node offline for maintenance. You need to minimize the impact of this process on the cluster resiliency and performance. What should you do first?
-( ) Pause the node. {{Incorrect. You should first verify that all of the cluster storage disks are online and all of the cluster storage volumes are reporting the healthy status.}}
-( ) Shut down the operating system of the node. {{Incorrect. This should be done after you verified that all of the cluster storage disks are online and all of the cluster storage volumes are reporting the healthy status and after you have paused the node.}}
-(x) Check the status of cluster disks and volumes. {{Correct. You should first verify that all of the cluster storage disks are online and all of the cluster storage volumes are reporting the healthy status, labeled *OK*.}}

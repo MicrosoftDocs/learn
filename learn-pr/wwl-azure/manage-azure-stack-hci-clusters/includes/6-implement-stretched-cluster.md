@@ -19,12 +19,3 @@ The Create Cluster wizard in Windows Admin Center provides a wizard-driven inter
 
 > [!NOTE]
 > Creating volumes and virtual disks for stretched clusters is more complex than that for single-site clusters. Stretched clusters require a minimum of four volumes, comprised of two data volumes and two log volumes, with a data/log volume pair at each site. When you create a replicated data volume by using Windows Admin Center, the process automatically provisions the log volume in the primary site and both data and log replicated volumes in the secondary site. This ensures that each volume has the required size and configuration settings.
-
----
-## Check your knowledge
-
-## Multiple Choice
-You are designing a disaster recovery site for Contoso that will provide disaster recovery capabilities for Azure Stack HCI clusters in the primary site. You need to ensure that you will be able to implement a stretched cluster to automate failover of the virtualized workloads. What should be the maximum round-trip network latency between the two sites?
-( ) < 5 ms{{Correct. The synchronous replication requirement imposes a limit of 5 ms round-trip network latency between two groups of cluster nodes in the replicated sites. }}
-( ) < 50 ms{{Incorrect. This latency would be acceptable only with asynchronous replication, which is not supported by Azure Stack HCI stretched clusters.}}
-( ) < 200 ms{{Incorrect. This latency would be acceptable only with asynchronous replication, which is not supported by Azure Stack HCI stretched clusters.}}
