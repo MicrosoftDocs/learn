@@ -2,33 +2,33 @@
 uid: learn.configure-application-kubernetes-arc
 metadata:
   title: Implement Azure App Service on Kubernetes with Arc
-  description: Azure App Service on Kubernetes with Azure Arc provides the ability to implement Azure application platform services, such as Azure App Service, on customer-managed, Arc-onboarded Kubernetes clusters.
+  description: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
   ms.date: 05/01/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement Azure App Service on Kubernetes with Arc
-summary: Azure App Service on Kubernetes with Azure Arc provides the ability to implement Azure application platform services, such as Azure App Service, on customer-managed, Arc-onboarded Kubernetes clusters.
+summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
 abstract: | 
   After completing this module, you'll be able to:
-  -	Prepare for implementing Azure App Service on Kubernetes with Azure Arc
-  -	Implement an Azure Kubernetes Service (AKS) cluster that supports Azure App Service on Kubernetes with Azure Arc
-  -	Install the application services extension into an AKS cluster
-  -	Deploy Azure App Services web apps to an AKS cluster
+  -	Prepare for implementing Azure App Service on Kubernetes with Azure Arc.
+  -	Implement an Azure Kubernetes Service (AKS) cluster that supports Azure App Service on Kubernetes with Azure Arc.
+  -	Install the application services extension into an AKS cluster.
+  -	Deploy Azure App Services web apps to an AKS cluster.
 
 prerequisites: |
   To get the best learning experience from this module, you should have:
-  - 	Foundational understanding of Kubernetes (from the operator's perspective)
-  - 	Foundational understanding of AKS
-  - 	Foundational understanding of Helm
-  - 	Foundational understanding of Azure Web Apps
-  - 	Conceptual understanding of Azure App Service on Kubernetes with Azure Arc
+  - 	Foundational understanding of Kubernetes (from the operator's perspective).
+  - 	Foundational understanding of AKS.
+  - 	Foundational understanding of Helm.
+  - 	Foundational understanding of Azure Web Apps.
+  - 	Conceptual understanding of Azure App Service on Kubernetes with Azure Arc.
   - 	Understanding of container orchestration
-  In order to complete exercises in this module, you will need:
+  To complete this module's exercises, you'll need:
   -	An Azure subscription
   -	A Microsoft account or an Azure Active Directory (Azure AD) account with the Owner role in the Azure subscription.
-  -	A Windows, Linux, or MacOS computer on which you can install Azure CLI and Kubernetes management tools.
+  -	A Windows, Linux, or macOS computer on which you can install Azure CLI and Kubernetes management tools.
 iconUrl: /learn/achievements/configure-application-kubernetes-arc.svg
 levels:
 - advanced
