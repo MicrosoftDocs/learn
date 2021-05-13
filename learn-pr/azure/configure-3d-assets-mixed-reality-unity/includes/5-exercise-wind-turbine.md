@@ -61,7 +61,7 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 
     :::image type="content" source="../media/create-developer-key.png" alt-text="Screenshot of the Bing maps dev center portal with my keys page selected showing create key property fields.":::
 
-    :::image type="content" source="../media/bing-keys.png" alt-text="Screenshot of the bing map dev center portal with my keys page selected showing developer key details."::: 
+    :::image type="content" source="../media/bing-keys.png" alt-text="Screenshot of the Bing Maps dev center portal with my keys page selected showing developer key details."::: 
 
 3. Open the **Assets > Art > Prefabs** folder in your Project Window.
 4. If you already have a map in the scene, delete the asset by right-clicking it in the Hierarchy panel and select **Delete**.  Don’t worry, it only removes it from your Scene and doesn't delete the Prefab from your Unity Project.
@@ -72,9 +72,9 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 
 7. Make the **Wind Turbine Design** a child of the **Bing Maps Design** by nesting it under the **Bing Maps Design** Asset in the Hierarchy window.  Be sure to drag it to the bottom of the list of children or you'll receive a message “Cannot restructure Prefab instance”.  If you receive this, select **Cancel**, and place the Prefab at the bottom of the list of children directly under the **Bing Maps Design**.
 
-    :::image type="content" source="../media/prefab-dynamic-child-order-wind-turbine.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and the bing maps design child object expanded.":::
+    :::image type="content" source="../media/prefab-dynamic-child-order-wind-turbine.png" alt-text="Screenshot of the Unity hierarchy window with the main scene selected and the Bing Maps design child object expanded.":::
 
-    :::image type="content" source="../media/prefab-child-order-dynamic-map.png" alt-text="Screenshot of the Unity scene and hierarchy windows with the bing maps design prefab in view.":::
+    :::image type="content" source="../media/prefab-child-order-dynamic-map.png" alt-text="Screenshot of the Unity scene and hierarchy windows with the Bing Maps design prefab in view.":::
 
 8. Set the scale in the **Transform** component in the Inspector for the Wind Turbine to 
 **(0.005, 0.005, 0.005)** so it approximately matches the terrain scale.
