@@ -51,7 +51,7 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 1. Select **Gizmos** dropdown and adjust the size via the slider.  
 2. Toggle Gizmos on and off by selecting the Gizmos button at the top of your Scene.
 
-    :::image type="content" source="../media/gizmos-size.png" alt-text="Screenshot of the Unity editor with gizmos turned on." lightbox="../media/gizmos-size-expanded.png":::
+    :::image type="content" source="../media/gizmos-size-expanded.png" alt-text="Screenshot of the Unity editor with gizmos turned on." lightbox="../media/gizmos-size.png":::
 
 ## Place and configure prefab wind turbine on Dynamic Terrain
 
