@@ -1,6 +1,6 @@
-In this unit, we’ll walk through how to use the YaST admin tool to install and remove Apache to your SUSE SLES VM. 
+YaST is an admin tool developed by SUSE that allows you to add packages to your machine (in addition to other things). Recall, Trailwinds needs you to add Apache webserver to the machine for the LAMP stack. In this exercise, we’ll walk through how you can use the YaST admin tool to install Apache to your SUSE SLES VM. 
 
-## Task 1: Start YaST 
+## Start YaST 
 
 1. To launch the ncurses-based version of YaST, ssh into your machine and run yast2 as follows: 
 
@@ -14,7 +14,7 @@ In this unit, we’ll walk through how to use the YaST admin tool to install and
 
 
 
-## Task 2: Install Software Packages with YaST
+## Install Software Packages with YaST
 
 1. Once inside the YaST Control Center, launch the YaST Software Management module: **Software > Software Management**
 1. Select the Filter menu (ALT+F] and select the line with Search
