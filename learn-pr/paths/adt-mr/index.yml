@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.azure.adt-mr
+uid: learn.azure.build-mixed-reality-azure-digital-twins-unity
 metadata:
   title: Build Mixed Reality Digital Twins with Azure Digital Twin and Unity
   description: Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
@@ -31,6 +31,7 @@ prerequisites: |
   - [.NET Core 3.1](https://dotnet.microsoft.com/download)
   - [C# Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 iconUrl: /learn/achievements/generic-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -40,4 +41,4 @@ products:
 modules:
 - learn.azure.fundamental-azure-concepts
 trophy:
-  uid: learn.azure.adt-mr.trophy
+  uid: learn.azure.build-mixed-reality-azure-digital-twins-unity.trophy
