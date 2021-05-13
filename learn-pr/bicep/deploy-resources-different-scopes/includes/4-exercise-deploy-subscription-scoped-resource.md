@@ -12,7 +12,11 @@ During the process, you'll:
 
 ## Create a subscription-scoped template
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
@@ -32,12 +36,12 @@ During the process, you'll:
 
    Notice that the policy definition only applies to resources where:
 
-   - The resource type is equal to `Microsoft.Compute/virtualMachines`.
+   - The resource type is equal to `Microsoft.Compute/virtualMachines`; and
    - The `sku.name` property *either* begins with `Standard_F` or `Standard_G`.
   
    When you try to create a resource that matches these conditions, Azure will deny the resource creation.
 
-   You're creating the policy definition at the scope of the subscription. The policy is available throughout all resource groups in the subscription.
+   You're creating the policy definition at the scope of the subscription. The policy definition is available throughout all resource groups in the subscription.
 
 ## Assign the policy
 
@@ -181,7 +185,7 @@ Notice that you're creating a subscription-scoped deployment by using the `New-A
 
 ::: zone-end
 
-Also, notice that you're explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata.
+Also, notice that you're explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata. You're creating a name with today's date so that you are less likely to accidentally use the same name as another deployment.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 

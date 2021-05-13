@@ -1,4 +1,4 @@
-Your R&D team have asked for a dedicated Azure subscription for their secret project. The subscription needs some Azure Policy resources, as well as a virtual network. You decided to create a reusable Bicep template so that you can quickly provision more subscriptions for the R&D team in the future.
+Your R&D team asked you for a dedicated Azure subscription for their secret project. The subscription needed to have some Azure Policy resources, as well as a virtual network. You decided to create a reusable Bicep template so that you can quickly provision more subscriptions for the R&D team in the future.
 
 In this module you learned about how you can provision resources at different scopes: tenant, management group, subscription, and resource group. While most Azure resources must be deployed into a resource group, there are some important situations where you need to use higher-level scopes. These include working with Azure IAM role definitions and assignments, deploying Azure Policy definitions and assignments, and creating resource groups.
 

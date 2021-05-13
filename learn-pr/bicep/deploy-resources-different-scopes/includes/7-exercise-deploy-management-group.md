@@ -20,7 +20,7 @@ During the process, you'll:
 
 ## Create a management group
 
-Create a new management group for this exercise.
+You'll create a new management group for this exercise so that you don't accidentally affect any resources in another part of your Azure environment.
 
 ::: zone pivot="cli"
 
@@ -41,8 +41,8 @@ By default, the new management group will be created as a direct child of the te
 Execute the following Azure PowerShell commands in the Visual Studio Code terminal.
 
 ```azurepowershell
-New-AzManagementGroup \
-  -GroupName 'SecretRND' \
+New-AzManagementGroup `
+  -GroupName 'SecretRND' `
   -DisplayName 'Secret R&D Projects'
 ```
 
@@ -54,7 +54,11 @@ In a real deployment, you'd [move the R&D team's subscriptions into the manageme
 
 ## Create a Bicep file to deploy to a management group
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
@@ -86,13 +90,15 @@ In order to create a policy assignment, you need to refer to the policy definiti
 
    :::code language="bicep" source="code/7-template.bicep" range="3" :::
 
-   You will use the management group's name when you construct the resource ID shortly.
+   You need to have the management group's name as a parameter because you'll use it when you construct the resource ID shortly.
 
 1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 
    :::code language="bicep" source="code/7-template.bicep" range="42-47" :::
 
    Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name, and the policy definition's name. Because you've reference the policy definition's name using the `policyDefinition.name` property, Bicep understands there's a dependency between the two resources. It will deploy the policy definition before the policy assignment.
+
+   In future, Azure will support a simpler syntax.
 
 1. Save the changes to the file.
 

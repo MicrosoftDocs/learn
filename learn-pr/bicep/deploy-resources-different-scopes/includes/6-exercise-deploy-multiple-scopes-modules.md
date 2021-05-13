@@ -27,7 +27,9 @@ The R&D team have asked for your help to create a virtual network in the Project
 
 Next, you will create a Bicep module for the R&D team's virtual network. The resources in the module will be deployed into the resource group later in this exercise.
 
-1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *virtualNetwork.bicep*. Save the file.
+1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file.
+
+1. In the *modules* folder, create a file called *virtualNetwork.bicep*. Save the file.
 
 1. Add the following content into the *virtualNetwork.bicep* file:
 
@@ -59,7 +61,11 @@ Your *main.bicep* file should look like the following:
 
 :::code language="bicep" source="code/6-template.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+Your *modules/virtualNetwork.bicep* file should look like the following:
+
+:::code language="bicep" source="code/modules/virtualNetwork.bicep" :::
+
+If either file doesn't match the example, either copy the example or adjust your template.
 
 ## Deploy the template to Azure
 
@@ -115,6 +121,8 @@ You've successfully deployed subscription-scoped resources, including a resource
 
 > [!CAUTION]
 > This command will permanently delete the resource group named *ToyNetworking* and all of its resources. If you've deployed anything else into this resource group, you should skip this step.
+
+<!-- TODO: Tom: is the note above overkill? Given this is going into the customer's own subscription I thought it might be a good idea, but I'm happy to take your guidance here. -->
 
 ::: zone pivot="cli"
 
