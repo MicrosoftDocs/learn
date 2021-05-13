@@ -68,7 +68,7 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
   
 7. Press the **Play** button and navigate the Game panel.  
 
-Navigating within the Game panel can be achieved using the MRTK [input simulation service](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service).  Although many of the navigation techniques can be achieved using a standard keyboard and mouse, a wheel mouse simplifies navigation. 
+   Navigating within the Game panel can be achieved using the MRTK [input simulation service](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service).  Although many of the navigation techniques can be achieved using a standard keyboard and mouse, a wheel mouse simplifies navigation. 
 
 8. Observe any differences between the Static Terrain and Dynamic Terrain (for example, endless terrain and contour lines in the Bing Maps terrain v. higher resolution imagery in the Static Terrain)
 
