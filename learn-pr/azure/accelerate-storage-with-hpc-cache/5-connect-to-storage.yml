@@ -4,7 +4,7 @@ title: Connect local storage to HPC Cache
 metadata:
   unitType: learning-content  
   title: Connect local storage to HPC Cache
-  description: How to connect the HPC Cache to on-prem NFS storage
+  description: Learn how to connect HPC Cache to on-prem NFS storage.
   ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check understanding of Azure HPC Cache
+  description: Check your understanding of Azure HPC Cache.
   ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  
@@ -20,23 +20,23 @@ quiz:
     - content: "A managed service for accelerating storage for HPC workloads."
       isCorrect: true
       explanation: "That's right. The HPC Cache managed service accelerates storage for HPC workloads."
-    - content: "A Linux-based virtual machine for accelerating compute for HPC workloads."
+    - content: "A Linux-based virtual machine for accelerating computing for HPC workloads."
       isCorrect: false
-      explanation: "Azure HPC Cache is more than a VM and does not accelerate compute, but it does help better utilize compute resources."
+      explanation: "Azure HPC Cache is more than a VM and does not accelerate computing, but it does help better utilize computing resources."
     - content: "A third-party Marketplace image for accelerating networking for HPC workloads."
       isCorrect: false
-      explanation: "Azure HPC Cache is a Microsoft technology that often reduces WAN bandwidth but is not a network accelerator."
+      explanation: "Azure HPC Cache is a Microsoft technology that often reduces WAN bandwidth, but it is not a network accelerator."
   - content: "To reach on-premises NFS storage, which two permissions are required to create Azure HPC Cache?"
     choices:
     - content: "Azure permissions to create NICs and storage permissions like `no_root_squash`"
       isCorrect: true
-      explanation: "Correct. The Azure user needs to have permissions to create NICs. And for on-prem access, `no_root_squash` must be enabled on the storage target's export(s)."
-    - content: "Azure account owner to create resource groups and domain admin to join the cache to Active Directory"
+      explanation: "Correct. The Azure user needs to have permissions to create NICs. And for on-prem access, `no_root_squash` must be enabled on the storage target's exports."
+    - content: "An Azure account owner to create resource groups and a domain admin to join the cache to Active Directory"
       isCorrect: false
-      explanation: "Azure HPC Cache does not require Azure account ownership and does not join Active Directory."
-    - content: "Storage admin to create local exports and root squash to deny unauthorized users"
+      explanation: "Azure HPC Cache doesn't require Azure account ownership and doesn't join Active Directory."
+    - content: "A storage admin to create local exports and root squash to deny unauthorized users"
       isCorrect: false
-      explanation: "Exports are not needed to create an Azure HPC Cache. And root squash must be disabled on the storage target exports."
+      explanation: "Exports aren't needed for Azure HPC Cache. And root squash must be disabled on the storage target exports."
   - content: "When you create the cache, which sizing option is best?"
     choices:
     - content: "Cache sizes slightly smaller than the working set are best in order to best use resources."
@@ -48,14 +48,14 @@ quiz:
     - content: "Cache sizes slightly larger than the working set are best in order to store all the data."
       isCorrect: true
       explanation: "Yes. Larger cache sizes hold all the data for the HPC tasks."
-  - content: "For the HPC Cache to connect to on-prem data, what network path should it take?"
+  - content: "For HPC Cache to connect to on-prem data, what network path should it take?"
     choices:
     - content: "VPN because data should treated as sensitive and therefore be kept encrypted"
       isCorrect: false
-      explanation: "VPNs can be used but they are often slower than dedicated network circuits."
+      explanation: "VPNs can be used, but they are often slower than dedicated network circuits."
     - content: "ExpressRoute because a high-speed connection allows faster data transfer"
       isCorrect: true
       explanation: "ExpressRoute is the best answer because we want a high-speed connection between the storage target and the cache."
     - content: "LAN because local traffic travels faster than traffic among multiple networks"
       isCorrect: false
-      explanation: "Azure HPC Cache does not sit in a customer's LAN so LAN-only traffic won't reach the cache."
+      explanation: "Azure HPC Cache doesn't sit in a customer's LAN, so LAN-only traffic won't reach the cache."
