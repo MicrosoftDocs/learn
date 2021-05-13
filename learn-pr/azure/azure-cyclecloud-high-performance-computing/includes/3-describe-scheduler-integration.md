@@ -1,108 +1,31 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In order to fully benefit from the hyperscale capabilities of Azure while, at the same time, minimize the operational cost associated with the use of compute resources, it is essential to leverage the cloud agility. One of the core components that contribute to that agility is the ability to automatically scale the amount of resources in response to their usage patterns. In the context of the Azure CycleCloud and HPC, this translates into implementing a close correlation between the resource demands of cluster jobs and the number of cluster compute nodes.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In general, the orchestration of scaling of cluster nodes is the responsibility of schedulers. Those schedulers, however, need to be able to communicate their demands to the platform that provides compute resources. Azure CycleCloud facilitates implementing this functionality. In this unit, you will learn about the principles of this implementation.
 
-    Heading: none
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## What is the role of Azure CycleCloud in cluster autoscaling?
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Azure CycleCloud facilitates deployment of schedulers in Azure, which, in turn, distribute and manage jobs running on clusters composed of Azure resources. Effectively, Azure CloudCycle does not function as a scheduler, but rather as an intermediary between schedulers and the underlying platform. However, as that intermediary, Azure CycleCloud also simplifies development of autoscaling functionality for the corresponding schedulers by providing a REST API-based programming interface and a Python-based client library. 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Azure CycleCloud allows you to correlate the autoscaling behavior of managed clusters with the length of the cluster job queues. You can further customize this behavior by defining template parameters that control, for example, the amount of time after which idle nodes are terminated or the frequency of auto-stop checks.
 
-    Goal: Describe the part of the scenario covered in this exercise
+All of the built-in templates expose the autoscaling settings directly in the Azure CloudCycle graphical interface. In each case, the settings include the option to specify the lower and upper limits of the autoscaling range, expressed in the number of CPU cores. The upper limit helps you to minimize the possibility of unanticipated charges. You can further mitigate this risk by setting budget alerts. 
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+With the lower threshold set to 0, creating a cluster will result in provisioning of the scheduler head node only. However, once the scheduler detects queued jobs, it will initiate provisioning of the compute nodes necessary to execute the corresponding workload, up to the limit you defined. To support loosely coupled or embarrassingly parallel jobs, where individual tasks execute independently of each other, jobs will start running as soon as the first node becomes available. For tightly coupled jobs, such as those leveraging the Message Passing Interface (MPI) functionality, the wait time will be longer, depending on the extent of internode dependencies. Once the job queue has been empty for the amount of time exceeding the allowed idle time, the compute nodes will begin to auto-stop and your cluster will once again consist of the scheduler head node only.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+## How to integrate schedulers with Azure CycleCloud autoscaling?
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+The two primary components that implement integration with Azure CycleCloud autoscaling are Azure CycleCloud Autoscale Library and Demand Calculator.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+:::image type="content" source="../media/u2-cyclecloud-architecture.png" alt-text="The image depicts the high-level architecture of Azure CycleCloud." border="false":::
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+The Azure CycleCloud Autoscale library is an open-source, GitHub-hosted project that provides Python helpers to simplify development of autoscaling for any scheduler deployed to Azure. The helpers leverage Azure CycleCloud REST API to orchestrate provisioning of Azure resources. The project uses a Python 3 and has a number of Python dependencies, but its core functionality relies on the Azure CycleCloud Python Client Library. Autoscale integrates with the scheduler head nodes that monitor job queues and increase or decrease the number of compute nodes by interacting with the autoscale REST API running on the Azure CycleCloud application server.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+Demand Calculator is responsible for evaluating resource requirements based on the compute node and job data collected by the scheduler. This evaluation takes into account compute and network constraints, such as the maximum cluster size or InfiniBand-related limits. The resulting resource requirements translate into a request for provisioning or deprovisioning of Azure VMs of a particular size and configuration. Autoscale Library relays these requests to the Azure CycleCloud REST API, which subsequently delivers them via its orchestrator to ARM. 
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+> [!NOTE]
+> While scheduler integration accommodates loosely coupled or embarrassingly parallel workloads where managing the size of the cluster is the primary consideration, Azure CycleCloud also supports tightly coupled workloads, where node proximity and network latency are critical. 
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+> [!NOTE]
+> The underlying concepts described in this unit are common among schedulers, however their implementation details are scheduler-specific. Refer to individual scheduler documentation for more in-depth information about each implementation.

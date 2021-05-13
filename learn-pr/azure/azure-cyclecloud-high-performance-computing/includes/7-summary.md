@@ -1,69 +1,16 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
+You needed to determine whether Azure CycleCloud will facilitate deployment and management of Slurm-based HPC clusters in Azure. You also wanted to ensure that you will be able to address the directives from your management team, emphasizing the importance of keeping the cluster's cost within the project's budget. 
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+Throughout the course of this module, you stepped through the process of setting up Azure CycleCloud by using an Azure Marketplace image and configuring its access to your Azure subscription by using a system assigned managed identity. Your approach follows the Microsoft's best practices, yielding the configuration that's straightforward to implement and maintain. You then used the graphical interface of the Azure CycleCloud application to create, configure, and start a Slurm-based cluster based on a pre-defined template, which also considerably simplified the implementation process. As part of the cluster configuration, you set up budget alerts, which will help you keep the cluster's cost within the project's budget. 
 
-    Heading: none
+Implementing the equivalent functionality on your own, without the abstraction layer that Azure CycleCloud provides, would be significantly more complex, requiring you to manage directly the lifecycle of Azure resources that form building blocks of your HPC clusters. By managing resource provisioning, configuration, and monitoring, Azure CycleCloud allows you to focus on business needs instead of the underlying infrastructure.
 
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
+## References
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
--->
-TODO: restate the scenario problem
+* [Azure CycleCloud Documentation](https://docs.microsoft.com/en-us/azure/cyclecloud/?view=cyclecloud-8)
+* [Azure CycleCloud](https://azure.microsoft.com/en-us/features/azure-cyclecloud/)
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
-
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Recommended: format this as lead-in sentence(s) followed by a list
-
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
-
-<!-- 3. Describe the experience without the product ---------------------------------------------------
-
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
-
-    Heading: none; typically this will be a new paragraph
-
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
-
- -->
-TODO: describe the experience without the product
-
-<!-- 4. Describe the business impact ----------------------------------------------------
-
-    Goal: explain the business impact of using the product to solve the problem
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
-
-<!-- 5. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: "## References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-
-<!-- Do not include any other content -->
+* [What is Azure CycleCloud?](https://docs.microsoft.com/azure/cyclecloud/overview)
+* [Quickstart - Install CycleCloud using the Marketplace image](https://docs.microsoft.com/azure/cyclecloud/qs-install-marketplace)
+* [Azure CycleCloud Tutorial 1: Create and Run a Simple HPC Cluster](https://docs.microsoft.com/azure/cyclecloud/tutorials/create-cluster)
+* [CycleCloud: Core Concepts](https://docs.microsoft.com/azure/cyclecloud/concepts/core)
+* [CycleCloud Scheduling and Autoscaling Concepts](https://docs.microsoft.com/azure/cyclecloud/concepts/scheduling)
