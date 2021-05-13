@@ -88,11 +88,3 @@ It is also possible to join a VM to an AD DS domain directly from Windows Admin 
 In this demonstration, you'll learn how to manage Azure Stack HCI VMs by using Windows Admin Center.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDHMU]
-
----
-## Check your knowledge
-## Multiple Choice
-While evaluating the use of Windows Admin Center in Contoso's Azure Stack HCI environment, you decide to test the installation of the operating system on a clustered VM in Azure Stack HCI. You create a VM with a mounted Windows Server 2019 ISO file and now you need to connect to it by using VMConnect. What should you do first from Windows Admin Center?
-(x) Enable Remote Desktop access on the Azure Stack HCI cluster nodes. {{Correct. This is a prerequisite for connecting to Azure Stack HCI VMs from Windows Admin Center by using VMConnect.}}
-( ) Download RDP file. {{Incorrect. You cannot connect via Remote Desktop to a VM without having the operating system installed first.}}
-( ) Enable Heartbeat integration service. {{Incorrect. This integration service is enabled by default and has no impact on the ability to connect to a VM by using VMConnect.}}

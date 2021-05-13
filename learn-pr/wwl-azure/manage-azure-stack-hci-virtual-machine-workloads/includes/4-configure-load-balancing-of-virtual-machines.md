@@ -38,11 +38,3 @@ The **Aggressiveness** property supports the following three values:
 
 > [!NOTE]
 > To further customize or automate implementation of Azure Stack HCI VM load balancing, use Windows PowerShell.
-
----
-## Check your knowledge
-## Multiple Choice
-While evaluating the use of Windows Admin Center in Contoso's Azure Stack HCI environment, you decide to test the VM load-balancing behavior. You want the load-balancing mechanism to take effect whenever the utilization levels on individual cluster nodes exceed 70%. To achieve this, what should you configure in Windows Admin Center?
-(x) Set the Aggressiveness property of the Virtual Machine load-balancing setting to Medium. {{Correct. The Medium value results in VM live migration from cluster nodes when the utilization level exceeds 70%.}} 
-( ) Set the Aggressiveness property of the Virtual Machine load-balancing setting to High. {{Incorrect. The High value triggers evaluation of the average utilization across all cluster nodes and results in VM live migration from nodes with the utilization level at least 5% above the average.}}
-( ) Set the Aggressiveness property of the Virtual Machine load-balancing setting to Low. {{Incorrect. The Low value results in VM live migration from cluster nodes when the utilization level exceeds 80%.}} 

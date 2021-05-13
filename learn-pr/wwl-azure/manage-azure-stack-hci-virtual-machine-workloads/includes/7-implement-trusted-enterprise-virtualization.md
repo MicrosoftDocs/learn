@@ -18,12 +18,3 @@ To address the demands from Contoso business leads for protection of their workl
 
 1. Enable HVCI. Although HVCI is available on Azure Stack HCI certified hardware, it is not automatically enabled. To enable it, you can use Group Policy or direct registry changes. 
 1. Optionally, integrate Azure Stack HCI with Azure Defender. Azure Defender provides cloud-based advanced security management and threat detection benefits for on-premises workloads, including workloads running on Azure Stack HCI VMs.
-
----
-## Check your knowledge
-## Multiple Choice
-You are planning Azure Stack HCI-based deployment of Contoso's business critical workloads that must be protected from cyber threats even if there is a successful exploit of the operating system running on the cluster nodes. You already purchased Azure Stack HCI hardware that supports trusted enterprise virtualization. What should you do next?
-
-( ) Integrate Azure Stack HCI with Azure Defender. {{Incorrect. This is an optional step. Although it provides cloud-based advanced security management and threat detection benefits for on-premises workloads, it is not sufficient to protect business critical workloads in case of a successful exploit of the operating system running on the cluster nodes.}}
-( ) Enable Credential Guard. {{Incorrect. Credential Guard protects cached sign-in credentials by storing them in virtual secure mode, which is not sufficient to protect business critical workloads in case of a successful exploit of the operating system running on the cluster nodes.}}
-(x) Enable Hypervisor-Enforced Code Integrity. {{Correct. Although HVCI is available on Azure Stack HCI certified hardware, it is not automatically enabled. To enable it, you can use Group Policy or direct registry changes.}}

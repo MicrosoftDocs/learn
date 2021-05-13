@@ -25,12 +25,3 @@ Windows Admin Center simplifies the process of implementing affinity and anti-af
 
 > [!NOTE]
 > To further customize or automate implementation of Azure Stack HCI affinity and anti-affinity rules, use Windows PowerShell.
-
----
-## Check your knowledge
-## Multiple Choice
-<<display_name:Question 1>>
-While evaluating the use of Windows Admin Center in Contoso's Azure Stack HCI environment, you decide to test affinity and anti-affinity rules. You deploy two VMs hosting resource-intensive SQL Server instances and want to ensure that they run on separate cluster nodes to prevent resource contention. What should you do? Your solution must minimize the number of rules you need to create.
-(x) Create one anti-affinity rule. {{Correct. A single anti-affinity rule referencing both VMs would suffice.}}
-( ) Create one affinity rule. {{Incorrect. In this case, you need an anti-affinity rule because the VMs should run on separate cluster nodes.}}
-( ) Create two anti-affinity rules. {{Incorrect. There is no need for the second rule. A single anti-affinity rule referencing both VMs would suffice.}}

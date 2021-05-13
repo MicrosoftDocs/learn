@@ -44,13 +44,4 @@ With the device dismounted on the cluster node, you can now assign it to the tar
 
 ## Install the GPU drivers in the guest operating system
 
-After the device is successfully assigned to the target VM, you can bring it online and install GPU hardware-specific drivers within its operating system. To verify the outcome, use Device Manager in Windows or the **lspci** utility in Linux. 
-
----
-## Check your knowledge
-## Multiple Choice
-You want to evaluate the usage of Contoso's financial application by using a Linux VM running on Azure Stack HCI. Your Azure Stack HCI cluster hardware includes NVIDIA GPUs. What should you do before you assign the NVIDIA GPU to the Linux VM? Your solution must minimize the number of configuration changes.
-
-( ) Dismount the NVIDIA GPU on all cluster nodes. {{Incorrect. DDA associates the physical GPU on the cluster node that hosts the VM. Therefore, there is no need to dismount the GPU device on other cluster nodes.}}
-( ) Configure the VM as a cluster role. {{Incorrect. DDA associates the physical GPU on the Hyper-V hosts to a VM, so it does not support failover in Azure Stack HCI scenarios. Effectively, you should provision the VM as stand-alone, rather than as a highly-available cluster role.}}
-(x) Dismount the NVIDIA GPU on the cluster node that hosts the Linux VM. {{Correct. Because the GPU will be used exclusively by the VM, you have to disable and dismount it from the cluster node.}}
+After the device is successfully assigned to the target VM, you can bring it online and install GPU hardware-specific drivers within its operating system. To verify the outcome, use Device Manager in Windows or the **lspci** utility in Linux.

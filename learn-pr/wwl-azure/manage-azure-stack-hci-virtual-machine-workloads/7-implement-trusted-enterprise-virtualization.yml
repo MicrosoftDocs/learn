@@ -4,7 +4,7 @@ title: Implement trusted enterprise virtualization in Azure Stack HCI
 metadata:
   title: Implement trusted enterprise virtualization in Azure Stack HCI
   description: "Implement trusted enterprise virtualization in Azure Stack HCI"
-  ms.date: 05/12/2021
+  ms.date: 05/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,3 +13,17 @@ azureSandbox: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-implement-trusted-enterprise-virtualization.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You are planning Azure Stack HCI-based deployment of Contoso's business critical workloads that must be protected from cyber threats even if there is a successful exploit of the operating system running on the cluster nodes. You already purchased Azure Stack HCI hardware that supports trusted enterprise virtualization. What should you do next?"
+    choices:
+    - content: "Integrate Azure Stack HCI with Azure Defender."
+      isCorrect: false
+      explanation: "Incorrect. This is an optional step. Although it provides cloud-based advanced security management and threat detection benefits for on-premises workloads, it is not sufficient to protect business critical workloads in case of a successful exploit of the operating system running on the cluster nodes."
+    - content: "Enable Credential Guard."
+      isCorrect: false
+      explanation: "Incorrect. Credential Guard protects cached sign-in credentials by storing them in virtual secure mode, which is not sufficient to protect business critical workloads in case of a successful exploit of the operating system running on the cluster nodes."
+    - content: "Enable Hypervisor-Enforced Code Integrity."
+      isCorrect: true
+      explanation: "Correct. Although HVCI is available on Azure Stack HCI certified hardware, it is not automatically enabled. To enable it, you can use Group Policy or direct registry changes."

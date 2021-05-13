@@ -38,12 +38,3 @@ At a high level, deployment of an RDS-based VDI environment on Azure Stack HCI i
 1. Implement user profile disks and store them on Storage Spaces Direct (S2D) volumes.
 1. Optionally, integrate the VDI deployment with Azure Update Management and Microsoft Azure Security Center by using Windows Admin Center.
 1. If necessary, deploy the Remote Desktop client to client devices.
-
----
-## Check your knowledge
-## Multiple Choice
-You are planning the deployment of Contoso's VDI environment on Azure Stack HCI. You need to identify the type of desktop collection that would minimize maintenance and lower the number of desktop VMs necessary to support your users. Which type of collection should you use?
-
-( ) Managed personal. {{Incorrect. Managed personal desktop collections typically involve extra administrative effort, which includes operating system and application patching. Because each desktop VM is assigned to a single user, the number of desktop VMs is typically higher than pooled desktop collections.}}
-(x) Managed pooled. {{Correct. Managed pooled desktop collections simplify maintenance and might lower the number of desktop VMs necessary to support your users because individual desktops can be used by multiple users (although not at the same time).}}
-( ) Unmanaged personal. {{Incorrect. With personal desktop collections, each desktop VM is assigned to a single user. Therefore, the number of desktop VMs is typically higher than with pooled desktop collections. }}
