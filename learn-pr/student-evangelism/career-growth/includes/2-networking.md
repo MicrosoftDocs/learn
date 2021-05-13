@@ -1,3 +1,5 @@
+TODO, needs a lead in sentence on a problem statement and how networking helps fix that
+
 ## Your first day
 
 When you walk in the door of a new company as a new hire, it can be daunting and a little scary. Perhaps you have been assigned an onboarding buddy or are quickly assimilated into your department or group. But if not, you're going to have to proactively seek out valuable connections.
