@@ -13,7 +13,13 @@ In this case, repositories should already be up to date because you used YaST in
 ## Install a software package with zypper 
 
 1. Search for mariadb. 
-```zypper search maria``` or ```zypper se maria```  
+    ```console 
+    zypper search maria
+    ``` 
+    or 
+    ```console
+    zypper se maria
+    ```  
 3. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
 4. To install a package, you can either enter:  
 
@@ -21,15 +27,8 @@ In this case, repositories should already be up to date because you used YaST in
     sudo zypper install mariadb
     ```
 
-    which prompts you confirm you want to continue with the installation or
-
-    ```console
-    zypper --non-interactive install mariadb
-    ```
-
-    which removes the prompts and installs immediately after the command. This method is useful for when you want to run a lot of installs quickly. You can also use the –non-interactive command to assist with package removal. (ex. sudo zypper remove mariadb  
-    or zypper --non-interactive remove mariadb)
-
+    which prompts you confirm you want to continue with the installation.
+    
     In the sample screen shown, can you identify the error in the command line? If you answered, the command does not include sudo, you’re correct. Because an install changes the machine, you must use sudo to get admin rights to proceed.  
 
 1. Do search for the package again, now it should have the "I" in the first column. 
