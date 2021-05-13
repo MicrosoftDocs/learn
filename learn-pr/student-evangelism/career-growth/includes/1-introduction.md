@@ -5,6 +5,7 @@
 Congratulations! You've successfully completed your path into tech and landed an internship. You did it by honing your craft as a software developer or by building other types of technical expertise. 
 
 You also impressed your interviewer with your mastery of 'soft' skills; you're a good communicator, work well with others, and will be an asset to the company. You are ready to start your first day. Now what?
+
 ## Hello, World!
 
 You're new in a company full of talented developers and engineers of all types. A bewildering array of colleagues greet you on your first day. You meet graphic designers, administrators, managers, software testers, and many developers. You are introduced to your team, and feel like you are ready to start work. But beyond the excitement of the first day, how will you grow your career as a new employee? In this module, you'll learn some strategies on how to 'growth-hack' your career.
