@@ -17,6 +17,7 @@ As Socrates said, "know thyself". How do you learn? Are you a very visual learne
 Do you prefer learning via videos? Make a curated playlist for yourself on YouTube. Are you someone who learns with articles and books? You can get online copies and add highlights and margin notes using various software. You are the owner of your own learning, but there are lots of helpful tools and techniques to aid your process.
 
 Set yourself a goal of learning one new thing every day. This new thing doesn't have to be a tech-related activity! Sometimes even your hobbies can inform your grasp of technical topics.
+
 # Formal study
 
 Some companies support their employees in continuing education in accredited programs. If so, you can weigh the amount of time needed to complete a nanodegree or university degree, and consider applying. Continuing your education is never a waste of time.
