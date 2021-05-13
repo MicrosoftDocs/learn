@@ -19,8 +19,8 @@
 Now we'll discuss some scenarios that illustrate when it's appropriate to migrate an on-premises file-based workload to run in the cloud using Azure NetApp Files as shared file storage. Using the energy company as an example, we'll investigate the possible migration of three workloads: your web content, your Microsoft Virtual Desktop deployment, and the HPC applications of your research and development team. Here are the criteria we'll use to help you decide whether Azure NetApp Files is a suitable storage choice for running your organization's file-based workloads in the cloud:
 
 - Ease of migration
-- Flexibility
 - Workload scale
+- Flexibility
 - Storage technology
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------

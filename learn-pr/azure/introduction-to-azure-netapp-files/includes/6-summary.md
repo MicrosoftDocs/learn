@@ -13,8 +13,12 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+Our goal in this module was to help you evaluate whether whether Azure NetApp Files is a suitable storage choice for running your organization's file-based workloads in the cloud. To help you make that decision, we presented some criteria you can use::
+
+- Ease of migration
+- Workload scale
+- Flexibility
+- Storage technology
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -25,7 +29,19 @@ TODO: bulleted list of the decision criteria
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-TODO: add your discussion of applying the criteria
+We applied these criteria in the context of our fictional energy company. You learned that in most scenarios, Azure NetApp Files offers:
+
+- Azure NetApp Files supports any POSIX-compliant workload that requires shared file storage via SMB or NSF (or both), so it can "lift-and-shift" these types of workloads.
+- Azure NetApp Files works best with enterprise-scale workloads that require the highest performance and availability.
+- Azure NetApp Files enables you to change a volume's service level and increase or decrease the size of a capacity pool or volume to match current demand.
+- Azure NetApp Files can support any workload that requires shared file storage.
+
+However, you also learned that organizations would probably not benefit from using Azure NetApp Files if they have:
+
+- Workloads that require extensive reconfiguration or recoding to work in the cloud.
+- Relatively small-scale and low-performance workloads.
+- Mostly static content with relatively constant demand.
+- Workloads that have a strict dependency or requirement for storage that is both block-based and direct-attached.
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -35,7 +51,8 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
+
+Implementing today's enterprise workloads requires the highest storage performance, maximum availability, and the flexibility to meet any demand. In the past, achieving the performance part of this recipe could only be achieved using an on-premises data center. However, data center configurations tend to be inflexible, complex, and expensive. A cloud service such as Azure offers flexibility, simplicity, and cost savings for regular workloads. So the big question today is how do you migrate your most important enterprise workloads to the cloud while still maintaining the highest level of performance and availability? Azure NetApp Files provides data center-quality performance and high availability with all the flexibility of the cloud. The process you went through here should give you enough information to decide the right shared storage solution for your organization
 
 <!-- 4. References (optional) ----------------------------------------------------
 
