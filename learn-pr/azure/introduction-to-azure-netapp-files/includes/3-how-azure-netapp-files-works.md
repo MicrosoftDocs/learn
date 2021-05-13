@@ -76,16 +76,18 @@ For SAP HANA, the Premium tier is a good place to start. For maximum flexibility
 
 In the SAP HANA migration scenario, this capacity pool can be used to create the following volumes:
 
-|Volume  |Size  |Max. throughput  |
-|---------|---------|---------|
+| | | |
+| --- | --- | --- |
+|**Volume**  |**Size**  |**Max. throughput**  |
 |Data     | 4 TiB        | 704 MiB/s        |
 |Log     | 500 GiB        | 256 MiB/s        |
 |Shared     | 1 TiB        | 64 MiB/s        |
 |Backup     | 4.5 TiB        | 256 MiB/s        |
+|  |  |  |
 
 The following diagram illustrates the scenarios for the SAP HANA volumes.
 
-:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Diagram depicting a graph showing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario.":::
+:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Diagram depicting a graph comparing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario.":::
 
 Once your volumes are set up, you can use any of the following tools to migrate data to Azure NetApp Files:
 

@@ -70,12 +70,12 @@ Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS s
 
 Azure NetApp Files is designed for the highest possible performance so that it can handle even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for extremely high storage throughput and availability.
 
-Azure NetApp Files performance is measured in two ways
+Azure NetApp Files performance is measured in two ways:
 
 - **Input/output operations per second (IOPS)**: IOPS is a storage performance benchmark that measures the average number of read and write operations a storage device can perform per second. Azure NetApp Files offers up to 320,000 IOPS on its lowest performance tier, and up to 450,000 IOPS on its highest tiers. For comparison, most solid-state drives have throughput measurements between 100,000 IOPS and 400,000 IOPS.
 - **Latency**: Latency is the time required to access a particular storage location. Azure NetApp Files offers an average latency of less than 1 millisecond (ms). For comparison, regular hard drives have latencies between 1 ms and 10 ms, while solid-state drives have latencies between 0.05 ms and 0.15 ms.
 
-Given these measures, you can see why Azure NetApp Files provides performance that is comparable to or even better than on-premises performance.
+Given these measures, you can understand why Azure NetApp Files provides performance that is comparable to or even better than on-premises performance.
 
 ## Security and compliance
 
@@ -106,7 +106,7 @@ Azure NetApp Files offers a complete range of data management features, includin
 Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure data center and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means you can set up an Azure NetApp Files instance in just a few minutes. And since Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service: using Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 
 > [!IMPORTANT]
-> Although it takes just a few clicks to create an instance of Azure NetApp Files, you must first be granted access to the service. You get this access, you need to submit a waitlist request to the Azure NetApp Files team. See the references at the end of this module for a link to a page that tells you how to submit the request.
+> Although it takes just a few clicks to create an instance of Azure NetApp Files, you must first be granted access to the service. You get this access, you need to submit a waitlist request to the Azure NetApp Files team. Refer to the references at the end of this module for a link to a page that tells you how to submit the request.
 
 ### Snapshots
 
