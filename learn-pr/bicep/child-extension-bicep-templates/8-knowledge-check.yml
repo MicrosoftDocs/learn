@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.child-extension-bicep-templates.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists, which is rare)
+metadata:
+  unitType: knowledge_check
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 04/19/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: |
+      Your R&D team has asked you to deploy an Azure SQL database so they can compare it to Azure Cosmos DB.
+      A SQL database is a child resource of the Azure SQL logical server resource.
+      Which of these statements is true?
+    choices:
+    - content: The SQL database resource may be in a different resource provider than its parent.
+      isCorrect: false
+      explanation: Child resources always exist within the same resource provider as their parent. Extension resources may exist in different resource providers.
+    - content: You can use the `parent` property to tell Bicep about the relationship between the parent and child resources.
+      isCorrect: true
+      explanation: In Bicep, you define child resources by using the `parent` property, by using nested resources, or by constructing a child resource name directly.
+    - content: An Azure SQL logical server instance is an implicit resource.
+      isCorrect: false
+      explanation: You need to explicitly deploy a logical server instance. It's not an implicit resource.
+  - content: |
+      You've been asked to deploy an extension resource with this type: `Microsoft.Authorization/roleAssignments`.
+      Which of these approaches should you consider?
+    choices:
+    - content: Use the `scope` property on a resource definition.
+      isCorrect: true
+      explanation: In Bicep, you define an extension resource by using the `scope` keyword.
+    - content: Use the `parent` property on a resource definition.
+      isCorrect: false
+      explanation: You can define child resources by using the `parent` keyword, but this is not applicable to extension resources.
+    - content: Use a nested resource declaration.
+      isCorrect: false
+      explanation: You can define child resources by using a nested resource definition, but you can't define extension resources in this way.
+  - content: Which of these statements is true?
+    choices:
+    - content: Using the `existing` keyword on a resource declaration means that Bicep will redeploy the resource.
+      isCorrect: false
+      explanation: The `existing` keyword means that Bicep will not attempt to deploy the resource. Use the keyword to refer to the resource within your Bicep template.
+    - content: All resource definitions in a Bicep file need to have a SKU property set, even existing resources.
+      isCorrect: false
+      explanation: When you define a resource by using the `existing` keyword, you don't specify the SKU property or most other properties.
+    - content: You can access the properties of existing resources by using the resource's symbolic name.
+      isCorrect: true
+      explanation: You can use an existing resource to access its properties, including secrets that the resource exposes.

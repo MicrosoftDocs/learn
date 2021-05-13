@@ -33,7 +33,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 2. Let's get the connection string we will need for our device simulator. Run the following command and write down the output
 
     ```azurecli
-    az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id {your device id}
+    az iot hub device-identity connection-string show --hub-name {your iot hub name} --device-id {your device id}
     ```
 
 You've now completed the preparatory work for this module, the next steps are all coding and testing. Before we advance though, a quick knowledge check!

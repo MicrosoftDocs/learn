@@ -8,8 +8,6 @@ Azure Static Web Apps streamlines the authentication experience by managing auth
 
 - Azure Active Directory
 - GitHub
-- Facebook
-- Google
 - Twitter
 
 All authentication providers are enabled by default. We'll see later how you can restrict an authentication provider with a custom route rule.
@@ -25,9 +23,7 @@ The following table lists the provider-specific login route you can use in your 
 | Identity provider      | Login route             |
 |------------------------|-------------------------|
 | Azure Active Directory | `/.auth/login/aad`      |
-| Facebook               | `/.auth/login/facebook` |
 | GitHub                 | `/.auth/login/github`   |
-| Google                 | `/.auth/login/google`   |
 | Twitter                | `/.auth/login/twitter`  |
 
 For example, to log in with GitHub you can include a login link in your web app with the following snippet:
