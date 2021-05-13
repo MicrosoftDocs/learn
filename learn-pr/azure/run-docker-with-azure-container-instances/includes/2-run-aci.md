@@ -58,7 +58,7 @@ For scenarios where you need full container orchestration, including service dis
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
-      --out table
+      --output table
     ```
 
     You see your container's fully qualified domain name (FQDN) and its provisioning state. Here's an example.
