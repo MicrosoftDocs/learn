@@ -48,6 +48,7 @@ products:
 - azure-blob-storage
 - azure-event-grid
 modules:
+- learn-wwl.enable-digital-transformation
 - learn-wwl.azure-iot-strategy-and-solutions
 - learn.oxford.intro-to-iot-hub
 - learn.manage-iot-devices
