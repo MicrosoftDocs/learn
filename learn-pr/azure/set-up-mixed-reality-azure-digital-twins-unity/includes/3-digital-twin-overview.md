@@ -1,3 +1,0 @@
-Azure Digital Twins is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes, and people. Gain insights that help you drive better products, optimize operations and costs, and create breakthrough customer experiences.
-
-Azure Digital Twins enables the creation of knowledge graphs based on digital models of entire environments. These environments could be buildings, factories, farms, energy networks, railways, stadiums, and more—even entire cities. These digital models can be used to gain insights that drive better products, optimize operations, reduce costs, and breakthrough customer experiences.

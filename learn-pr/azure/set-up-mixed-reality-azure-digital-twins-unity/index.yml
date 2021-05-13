@@ -38,9 +38,7 @@ prerequisites: |
 units:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.introduction
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.mixed-reality-overview
-- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.digital-twin-overview
-- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.digital-twin-get-started
-- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.unity-overview
+- learn.azure.set-up-mixed-reality-azure-digital-twins-unity.azure-digital-twins-unity-overview
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.unity-get-started
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.signalr-overview
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.use-cases

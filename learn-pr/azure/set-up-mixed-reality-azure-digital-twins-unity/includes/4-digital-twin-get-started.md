@@ -1,3 +1,0 @@
-To create and use Azure services (including Azure Digital Twin), you need an Azure subscription. For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
-
-An Azure Resource Manager template (ARM template) has been created for you to set up your Azure Digital Twin development and operating environment.  This ARM template contains all the required instructions to automatically build out your Azure service environment (for example, storage, applications, SignalR, and so on).
