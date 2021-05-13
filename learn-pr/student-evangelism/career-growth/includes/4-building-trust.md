@@ -1,4 +1,4 @@
-TODO, add a problem statement, and how building trust helps to fix it. so essentially motivate why they should read this. The text you have is good, but something about strengthening your personal brand is important and leads you to be appreciated and considered for promotion
+You are new in a company and as such are a somewhat unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsability and considered for promotion. 
 
 ## Building Trust as an Employee
 
