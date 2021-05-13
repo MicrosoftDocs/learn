@@ -13,6 +13,7 @@ Some companies provide a formal mentorship program, while others do not. Find a 
 > [This course](https://www.linkedin.com/learning/how-to-be-a-good-mentee-and-mentor/the-power-of-mentoring?u=3322) outlines how to be both a good mentee and a good mentor.
 
 Don't be shy to ask someone to be your mentor, but be aware that it involves a time commitment on both your parts. Consider asking your manager if you can take time for mentorship, if it's not built into your daily work by the company. Set parameters collaboratively with your mentor, agreeing to meet for a given number of hours each month for a given number of months. Set goals for yourself and hold yourself accountable to meet them each month. Make sure to thank your mentor for their time!
+
 ## Attend conferences
 
 While conferences can be a financial burden for some companies or individuals, many have gone online and are thereby free of charge. List some conferences in your field that seem interesting and see if your colleagues recommend them. Ask your manager if you can attend, and make sure to watch the sessions. 
