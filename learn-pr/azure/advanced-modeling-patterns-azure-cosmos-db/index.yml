@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.advanced-modeling-patterns-azure-cosmos-db  
+uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db  
 metadata:
   moduleType: standard  
   title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB
@@ -30,15 +30,15 @@ roles:
 products:  
   - azure-cosmos-db
 units:
-- learn.advanced-modeling-patterns-azure-cosmos-db.introduction
-- learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
-- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-set-up-environment
-- learn.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
-- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
-- learn.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
-- learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-aggregates
-- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
-- learn.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
-- learn.advanced-modeling-patterns-azure-cosmos-db.summary
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.introduction
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-set-up-environment
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-aggregates
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.summary
 badge:  
-  uid: learn.advanced-modeling-patterns-azure-cosmos-db.badge
+  uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge
