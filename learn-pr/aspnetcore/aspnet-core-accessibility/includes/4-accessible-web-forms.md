@@ -71,4 +71,17 @@ When a user is done filling out the form and ready to submit it, nothing is more
 
 You've probably picked up the pattern by now: using the built-in HTML form behavior rather than wiring up custom JavaScript and UI will make your form more usable across a variety of browsing experiences.
 
+## Accessibility Insights for Web
+
+Accessibility Insights for Web is an extension for Chrome and the new Microsoft Edge that helps developers find and fix accessibility issues in web apps and sites. We'll be using it in the following exercises to identify and fix accessibility problems in our sample application.
+
+The tool supports two primary scenarios:
+
+- *FastPass* is a lightweight, two-step process that helps developers identify common, high-impact accessibility issues in less than five minutes.
+  - Automated checks - the tool automatically checks for compliance with approximately 50 accessibility requirements.
+  - Tab stops - the tool provides clear instructions and a visual helper that makes it easy to identify critical accessibility issues related to keyboard access, such as missing tab stops, keyboard traps, and incorrect tab order.
+- *Assessment* allows anyone with HTML skills to verify that a web app or web site is compliant with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
+  - Automated checks - the tool automatically checks for compliance with approximately 50 accessibility requirements.
+  - Manual tests - the tool provides step-by-step instructions, examples, and how-to-fix guidance for approximately 20 tests; many tests are "assisted", which means that the tool identifies the test instances or provides a visual helper.
+
 Now that you know the basics, we're ready to fix up our pizza website in the next exercise.
