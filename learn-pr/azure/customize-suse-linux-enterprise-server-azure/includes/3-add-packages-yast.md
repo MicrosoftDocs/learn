@@ -1,4 +1,4 @@
-Once you’ve launched a pay-as-you-go SLES VM image on Azure, you will need to add packages for the Apache, MySQL, and PHP portion of the LAMP stack to build your website. In this unit we’ll talk about what packages are and how you can use YaST admin tool to add Apache.  
+Once you’ve launched a pay-as-you-go SLES VM image on Azure, you will need to add packages for the Apache, MySQL, and PHP portion of the LAMP stack to build your website. In this unit we’ll talk about what packages are and how you can use YaST admin tool to add Apache. edit 1
 
 ## Packages add functionality to your machine
 
