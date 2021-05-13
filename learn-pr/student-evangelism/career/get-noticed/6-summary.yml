@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.get-noticed.7-summary  
+uid: learn.get-noticed.6-summary  
 title: Summary  
 metadata:
   title: Summary
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]
