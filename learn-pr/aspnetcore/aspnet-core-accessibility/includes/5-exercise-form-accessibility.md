@@ -168,3 +168,142 @@ For this exercise, we will be using the FastPass tool.
 1. Run the application and check **FastPass** again. Clicking on the error indication for each of the input fields shows that we're getting really close now, each has the same error message: each form field should have a label.
 
     ![Windows screenshots to enable Narrator](../media/label-error-message.png)
+
+1. Update the *First Name* text to use a `<label>` tag as shown:
+
+   ```html
+   <div class="row">
+     <div class="col-4">
+       <label for="FirstName">First Name</label>
+     </div>
+     <div class="col-8">
+       <input type="text" id="FirstName" required>
+     </div>
+   </div>   
+   ```
+
+1. Run the application and **FastPass** again. You should see two things. First, the error message for the *First Name* element has cleared. Second, clicking on the *First Name* label now selects the *First Name* input.
+
+1. Add `<label>` tags to the other form input fields. Your form code should look like this now:
+
+   ```html
+   <form name="CustomerInfo">
+     <div class="container w-50 p-3">
+       <div class="row">
+         <div class="col-4">
+           <label for="FirstName">First Name</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="FirstName" required>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="LastName">Last Name</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="LastName" required>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="Phone">Phone</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="Phone">
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="Birthday">Birthday</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="Birthday">
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="E-mail">E-mail Address</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="E-mail" required>
+         </div>
+       </div>
+       <div class="button">
+         <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
+           Submit Form
+         </a>
+       </div>
+     </div>
+   </form>   
+   ```
+
+   This clears all the form field errors!
+
+1. Now it's time to fix the *Submit* button. There are a few problems here - low contrast (as shown in the error message), as well as an `onclick` event that runs custom JavaScript. We can fix all of that by replacing the button with a standard `<input type="submit">`:
+
+   ```html
+   <div class="text-center">
+      <input class="btn btn-primary" type="submit">
+   </div>   
+   ```
+
+We've completed all of our required fixes, but there's one more quick improvement we can make - changing the input types from `text` to more specific input types where available.
+
+1. Change the `type` attribute for the *Phone* field to `tel`.
+1. Change the `type` attribute for the *Birthday* field to `date`.
+1. Change the `type` attribute for the *E-mail* field to `email`. The completed code for the form should appear as follows:
+
+   ```html
+   <form name="CustomerInfo">
+     <div class="container w-50 p-3">
+       <div class="row">
+         <div class="col-4">
+           <label for="FirstName">First Name</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="FirstName" required>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="LastName">Last Name</label>
+         </div>
+         <div class="col-8">
+           <input type="text" id="LastName" required>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="Phone">Phone</label>
+         </div>
+         <div class="col-8">
+           <input type="tel" id="Phone">
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="Birthday">Birthday</label>
+         </div>
+         <div class="col-8">
+           <input type="date" id="Birthday">
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-4">
+           <label for="E-mail">E-mail Address</label>
+         </div>
+         <div class="col-8">
+           <input type="email" id="E-mail" required>
+         </div>
+       </div>
+       <div class="text-center">
+          <input class="btn btn-primary" type="submit">
+       </div>
+     </div>
+   </form>   
+   ```
+
+1. Run the application and check with **FastPass**. You'll see that we've significantly improved the experience for all users while fixing our accessibility issues. The new form shows no errors in **FastPass**, and includes browser-native input controls with validation and required field checking with no additional code.
+
+    ![Windows screenshots to enable Narrator](../media/completed-form.png)
