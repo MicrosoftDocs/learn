@@ -14,7 +14,11 @@ Azure has a hierarchical resource structure with multiple levels of management.
 
 :::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources, and enable you to manage and control them as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group.
 
-By understanding these levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
+The example above is a fairly simple scenario showing how management groups can be used. You might also consider implementing an _enterprise-scale landing zone_, which is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
+
+:::image type="content" source="../media/2-hierarchy-eslz.png" alt-text="Diagram that shows an enterprise-scale landing zone architecture, with four management groups and four subscriptions." border="false":::
+
+Whichever model you follow, by understanding the different levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
 
 > [!NOTE]
 > *Extension resources* are resources that are deployed to the scope of another Azure resource. For example, a resource lock is deployed onto a resource like a storage account.
