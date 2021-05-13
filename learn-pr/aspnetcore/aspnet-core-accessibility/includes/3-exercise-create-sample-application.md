@@ -89,7 +89,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
       <div class="col-4 text-primary">
         First Name
       </div>
-      <div class="col-8 text-muted">
+      <div class="col-8">
         <input type="text" id="Name">
       </div>
     </div>
