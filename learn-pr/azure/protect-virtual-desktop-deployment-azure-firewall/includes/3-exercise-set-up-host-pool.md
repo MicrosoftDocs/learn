@@ -13,7 +13,7 @@ In this unit, you create a host pool and  a VM that'll act as a session host. To
 ## Create a resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1.  From the top right-hand side of the Azure portal, select **Cloud Shell**.
+1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
 1. Select **PowerShell**.
 1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
@@ -30,10 +30,9 @@ In this unit, you create a host pool and  a VM that'll act as a session host. To
 
 ## Create a host pool for Windows Virtual Desktop
 
-Let's go to the Azure portal to quickly create a host pool. 
+Next, let's create a host pool that will contain the VM you'll create later in this exercise.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. Search for and select **Windows Virtual Desktop**.
+1. In the Azure portal, search for and select **Windows Virtual Desktop**.
 1. Select **Create a host pool**.
 1. Enter the following information into the **Basics** tab.
 
@@ -52,7 +51,8 @@ Let's go to the Azure portal to quickly create a host pool.
 
 Create a registration token to authorize a session host to join the host pool.
 
-1. In Cloud Shell, run the following command to create a registration token that'll expire in 4 hours.
+1. From the top right-hand side of the portal, select **Cloud Shell**.
+1. In the Cloud Shell PowerShell environment, run the following command to create a registration token that'll expire in 4 hours.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
@@ -74,7 +74,7 @@ Create a registration token to authorize a session host to join the host pool.
 
 ## Create subnet and virtual network for session host
 
-In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
+In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
    ```powershell
    $subnetConfig = New-AzVirtualNetworkSubnetConfig `
@@ -94,7 +94,7 @@ In PowerShell, run the following command to create a subnet and virtual network 
 
 Create an Azure VM to act as a session host for the host pool.
 
-1. Run the following command to set the user name and password for the administrator account on the VM. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
+1. In Cloud Shell, run the following command to set the user name and password for the administrator account on the VM. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
 
     ```powershell
     $cred = Get-Credential
