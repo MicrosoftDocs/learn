@@ -60,7 +60,7 @@ Open and verify your Unity Project has the required dependencies and settings.
 3. Open the Project by clicking on the project name.  This can take several minutes while Unity imports and compiles the associated packages  
 4. Locate the Main scene in the Project panel in **Assets > Scenes > MainScene** and double-click it.
 
-    :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the Main Scene loaded." lightbox="../media/main-scene-expanded.png":::
+    :::image type="content" source="../media/main-scene-expanded.png" alt-text="Screenshot of the Unity editor with the Main Scene loaded." lightbox="../media/main-scene.png":::
 
 If no error messages appear, your Project is ready to be configured / developed. You may notice Warning messages, which are acceptable and will not interfere with your Project functionality.
 
