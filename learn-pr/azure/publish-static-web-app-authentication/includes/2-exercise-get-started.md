@@ -6,7 +6,7 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 
 Next, create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
-1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
+1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-static-web-app-authn**
@@ -282,7 +282,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
    :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Select Subscription":::
 
-1. Enter **my-static-web-app-and-api**, and press <kbd>Enter</kbd>.
+1. Enter **my-static-web-app-and-authn**, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web Apps":::
 
@@ -380,7 +380,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
     :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
-14. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-and-api**, and select **Open in Portal** to view app in the Azure portal.
+14. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-and-authn**, and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
@@ -409,7 +409,7 @@ From here, you can observe the progress of your app as it builds.
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
-In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Browse Site** to view app in your browser.
+In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-authn** and select **Browse Site** to view app in your browser.
 
    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 

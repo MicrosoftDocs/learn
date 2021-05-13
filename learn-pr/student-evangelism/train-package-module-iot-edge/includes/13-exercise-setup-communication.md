@@ -54,7 +54,7 @@ az iot hub device-identity create --hub-name {hub_name} --device-id myEdgeDevice
 To retrieve the connection string for your device, which links your physical device with its identity in IoT Hub use the command.
 
 ```azurecli
-az iot hub device-identity show-connection-string --device-id myEdgeDevice --hub-name {hub_name} --output table
+az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name {hub_name} --output table
 ```
 
 The resulting output should be similar to this:

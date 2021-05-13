@@ -117,7 +117,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
     ```azurecli
     az monitor metrics list \
       --resource $CONTAINER_ID \
-      --metric CPUUsage \
+      --metrics CPUUsage \
       --output table
     ```
 
@@ -150,7 +150,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
     ```azurecli
     az monitor metrics list \
       --resource $CONTAINER_ID \
-      --metric MemoryUsage \
+      --metrics MemoryUsage \
       --output table
     ```
 
