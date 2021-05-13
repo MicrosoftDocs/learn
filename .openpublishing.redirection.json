@@ -5845,5 +5845,245 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
       "redirect_document_id": false
     }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/1-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/2-exercise-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/2-exercise-setup",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/3-admin-permissions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/3-admin-permissions",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/4-exercise-create-users.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/4-exercise-create-users",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/5-exercise-manage-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/5-exercise-manage-data",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/6-exercise-manage-permissions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/6-exercise-manage-permissions",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/7-knowledge-check",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/8-summary",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/3-admin-site/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-admin-site/index",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/1-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/2-setup-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/2-setup-exercise",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/3-deployment-considerations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/3-deployment-considerations",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/4-prepare-for-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/4-prepare-for-deployment",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/5-cloud-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/5-cloud-resources",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/6-deploy-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/6-deploy-azure",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/7-knowledge-check",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/8-summary",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/django-deployment/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-deployment/index",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/1-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/2-exercise-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/2-exercise-setup",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/3-generic-views-data-display.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/3-generic-views-data-display",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/4-exercise-generic-views-display-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/4-exercise-generic-views-display-data",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/5-generic-forms-edit-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/5-generic-forms-edit-data",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/6-exercise-generic-forms-create.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/6-exercise-generic-forms-create",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/7-exercise-crispy-forms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/7-exercise-crispy-forms",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/8-knowledge-check",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/9-summary",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/5-generic-views/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-generic-views/index",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/1-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/2-define-django.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/2-define-django",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/3-exercise-install-django.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/3-exercise-install-django",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/4-django-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/4-django-concepts",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/5-exercise-first-project.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/5-exercise-first-project",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/6-paths-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/6-paths-views",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/7-exercise-create-paths-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/7-exercise-create-paths-views",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/8-knowledge-check",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/9-summary",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/1-get-started/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-get-started/index",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/1-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/2-exercise-get-starter.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/2-exercise-get-starter",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/3-orm-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/3-orm-introduction",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/4-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/4-models",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/5-exercise-create-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/5-exercise-create-models",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/6-manage-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/6-manage-database",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/7-exercise-manage-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/7-exercise-manage-database",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/8-exercise-work-with-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/8-exercise-work-with-data",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/9-knowledge-check",
+      "redirect_document_id": false
+    }
+    {
+      "source_path": "learn-pr/student-evangelism/django/2-models-data/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/index",
+      "redirect_document_id": false
+    }
   ]
 }
