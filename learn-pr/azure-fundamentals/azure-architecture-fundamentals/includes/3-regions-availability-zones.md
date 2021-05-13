@@ -13,7 +13,7 @@ When you deploy a resource in Azure, you'll often need to choose the region wher
 
 A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West. Here's a view of all the available regions as of June 2020.
 
-:::image type="content" source="../media/regions-small-be724495.png" alt-text="Global map of available Azure regions as of June 2020.":::
+<br>:::image type="content" source="../media/regions-small-be724495.png" alt-text="Global map of available Azure regions as of June 2020.":::
 
 
 ### Why are regions important?
@@ -37,7 +37,7 @@ You want to ensure your services and data are redundant so you can protect your 
 
 Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an *isolation boundary*. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
 
-:::image type="content" source="../media/availability-zones-5c3c490c.png" alt-text="Diagram showing three datacenters connected within a single Azure region to represent an availability zone.":::
+:::image type="content" source="../media/availability-zones-5c3c490c.png" alt-text="Diagram showing three datacenters connected in a single Azure region representing an availability zone.":::
 
 
 ### Supported regions
@@ -65,7 +65,7 @@ Each Azure region is always paired with another region within the same geography
 
 Examples of region pairs in Azure are West US paired with East US and SouthEast Asia paired with East Asia.
 
-:::image type="content" source="../media/region-pairs-d9eb9728.png" alt-text="Diagram showing the relationship between geography, region pair, region, and datacenter. The geography box contains two region pairs. Each region pair contains two Azure regions. Each region contains three availability zones.":::
+:::image type="content" source="../media/region-pairs-d9eb9728.png" alt-text="Diagram showing relationship between geography, region pair, region, and datacenter.":::
 
 
 Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy. Some services offer automatic geo-redundant storage by using region pairs.
