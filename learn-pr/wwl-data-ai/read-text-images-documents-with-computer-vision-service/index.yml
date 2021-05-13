@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.read-text-images-documents-with-computer-vision-service
+metadata:
+  title: Read Text in Images and Documents with the Computer Vision Service
+  description: "Azure's Computer Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure Computer Vision's OCR API and Read API."
+  ms.date: 05/13/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Read Text in Images and Documents with the Computer Vision Service
+summary: Azure's Computer Vision service uses algorithms to process images and return information. This module teaches you how to use the OCR API and Read API.
+abstract: |
+  In this module, you'll learn how to:
+  - Read text from images with the OCR API and Read API
+  - Use the Computer Vision service with SDKs and the REST API
+  - Develop an application that can read printed and handwritten text
+prerequisites: |
+  To complete this module, you will need:
+  - An active Azure account
+  - Knowledge of Azure portal navigation
+  - Knowledge of at least one programming language (C#, Python)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure
+- azure-cognitive-services
+- azure-form-recognizer
+units:
+- learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
+- learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text
+- learn.wwl.read-text-images-documents-with-computer-vision-service.using-ocr-api
+- learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
+- learn.wwl.read-text-images-documents-with-computer-vision-service.exercise
+- learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
+- learn.wwl.read-text-images-documents-with-computer-vision-service.summary
+badge:
+  uid: learn.wwl.read-text-images-documents-with-computer-vision-service.badge
