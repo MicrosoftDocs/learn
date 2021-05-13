@@ -2,12 +2,13 @@ Begin by opening the MainScene that has been created for you.  Essentially, this
 
 ## Open the MainScene Scene
 
-In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
+1. [Download and Unzip the compressed folder from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) and take note of the folder location to where you extracted the project
+2. In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
 
-:::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
+    :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
 
-> [!NOTE]
-> The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
+    > [!NOTE]
+    > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final Scene. This Scene has been supplied to provide a ‘complete’ Scene representing all components and assets, but it will still require further configuration before it can be used (viz., Maps SDK and Azure Services).
 
 We'll explore the benefits of static maps and dynamic maps in this module, starting by adding the static terrain and then adding the Maps SDK terrain.  
 
