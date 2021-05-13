@@ -9,6 +9,8 @@ metadata:
   author: markjbrown  
   ms.author: mjbrown  
   ms.topic: interactive-tutorial
+interactive: bash
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-measure-performance.md)]
