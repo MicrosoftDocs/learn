@@ -8,21 +8,20 @@ The most straightforward way to create a new VM in Azure is to use the Azure por
 
 1. In the Basics tab:
 
-    - Choose your Subscription and Resource group
-    - Name your virtual machine and select your region
+    - Choose the subscription you will be using for this exercise and Resource group
+    - Name your virtual machine LAMP_Test_1 and select the closest region
     - Choose the SUSE Enterprise Linux option for your image
-    - Choose the size for your VM
+    - Choose the smallest size VM
     - Select the SSH public key for your authentication type
-    - Use an existing key or generate a new pair
+    - Generate a new key pair
     - Press next to customize your VM, or press Review + create to deploy your SLES VM
 
 5. In the Disks tab:
 
-    - Select your OS disk type
-    - Set the ecyrption type (default works fine)
-    - Add your data disks
-    - Select OK to create the disk.
-    - The Disks section should reappear on the Create a virtual machine pane and you’ll see a new disk in the first row.
+    - Select the premium SSD disk type
+    - Set the ecyrption type to default
+    - Select OK to create the disk
+    - The Disks section should reappear on the Create a virtual machine pane and you’ll see a new disk in the first row
 
 6. In the Networking tab, it is fine to accept the setting default values for this exercise.
 
