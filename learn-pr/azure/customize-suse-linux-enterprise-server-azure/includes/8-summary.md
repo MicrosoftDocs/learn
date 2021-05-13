@@ -12,4 +12,6 @@ Once you become familiar with YaST and zypper, you can use them to customize and
 
 
 ## Resources
-For more details on admin, have a look at the SUSE documentation at https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-yast-gui  
+For more details on admin, have a look at the SUSE documentation: https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-yast-gui  
+
+View the manual for zypper for helpful tips on how to simplify tasks:  https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-sw-cl
