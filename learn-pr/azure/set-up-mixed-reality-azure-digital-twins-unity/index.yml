@@ -2,14 +2,14 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 metadata:
   title: Set up a mixed reality project for Azure Digital Twins in Unity  
-  description: Learn how to set up a mixed reality projecct and learn about Azure Digital Twins and Unity. 
-  author: Sean-Kerawala
-  ms.author: "sekerawa"
-  ms.date: "5/5/2021"
+  description: Learn how to set up a mixed reality project and learn about Azure Digital Twins and Unity. 
+  author: JBrentJ
+  ms.author: jejacks
+  ms.date: 05/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up a mixed reality project for Azure Digital Twins in Unity 
-summary: Learn how to set up a mixed reality projecct and learn about Azure Digital Twins and Unity.
+summary: Learn how to set up a mixed reality project and learn about Azure Digital Twins and Unity.
 abstract: |
   By the end of this module, you'll be able to:
   - Understand the breadth of Mixed Reality use cases for industry
