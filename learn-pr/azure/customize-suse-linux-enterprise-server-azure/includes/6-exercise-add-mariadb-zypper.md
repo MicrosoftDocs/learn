@@ -8,7 +8,7 @@ Refresh the repositories to ensure you’re working with the latest metadata ind
 sudo zypper refresh
 ```
 
-In this case, repositories should already be up to date because you used YaST in the previous exercise. YaST runs zypper automatically in the background every time you start. If you choose to use zypper and skip this initial refresh step, you will get an error if the metadata has changed and you’ll be forced to run it before you can get started.  
+In this case, repositories should already be up to date because you used YaST in the previous exercise. If you choose to use zypper and skip this initial refresh step, you will get an error if the metadata has changed and you’ll be forced to run it before you can get started.  
 
 ## Task 2: Install a software package with zypper 
 
