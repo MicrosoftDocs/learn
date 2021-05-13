@@ -34,7 +34,7 @@ Containers are managed through a container orchestrator, which can start, stop, 
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-container-instance-7b714f67.png" alt-text="Icon representing Azure Conainer Instances.":::
+    :::image type="content" source="../media/icon-container-instance-7b714f67.png" alt-text="Icon representing Azure Container Instances.":::
 
   :::column-end:::
 :::row-end:::
