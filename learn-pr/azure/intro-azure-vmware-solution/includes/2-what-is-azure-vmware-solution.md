@@ -1,35 +1,29 @@
 
-Azure VMware Solution is a VMware validated solution with on-going certification and testing of enhancements and upgrades. Microsoft manages and maintains the infrastructure and software, allowing you to focus on developing and running workloads that are critical to your business.
+The Azure VMware Solution is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. We provide the management systems, networking services, operating platform and backend infrastructure operations required to run native VMware environments at scale in Azure. AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
 
+Microsoft manages and maintains the infrastructure and software, allowing you to focus on developing and running workloads that are critical to your business.
+
+Additionally, AVS becomes a platform by which VMware workloads easily be modernized through integration with Azure services such as Azure Active Directory, Azure AI,Azure Monitor, and Analytics enabling new, intelligent experiences. 
 
 
 ## Discover Azure VMware Solution
 
-Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). AVS enables organizations to efficiently move existing VMware apps to Azure.
+Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with Microsoft's Azure global cloud service ecosystem. Azure VMware Solution is managed to meet performance, availability, security, and compliance requirements. AVS enables organizations to efficiently move existing VMware apps to Azure.
 
 Azure VMware Solution (AVS) provides you with a dedicated, private cloud in Azure. The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services.
 
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments. Network access from AVS to Azure services or networks provides reliable, high-speed integration of Azure service endpoints. ExpressRoute Global Reach connects your on-premises environment to your Azure VMware Solution private cloud, providing a unified experience for users and customers accessing AVS-based workloads.
 
 
-:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
+## AVS provides value to customers in six  core pillars:
 
-With the Azure VMware Solution, you run your VMware estate or a single app on dedicated Azure infrastructure. AVS becomes a platform by which VMware workloads easily be modernized through integration with Azure services such as :
-- Azure Active Directory
-- Azure AI
-- Analytics 
-- Azure Monitor
+**Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements to that experience over time. 
 
-
-AVS provides value to customers in six  core pillars:
-
-**Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements to that experience over time. You can use all of your existing investments in VMware:
+**Leverage Existing VMware Investments** Because the underlying product is the standard VMware vSphere and vCenter products. Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager. The Azure portal is used for deployment and several management operations.You can leverage all of your existing investments
 - Training
 - Process management
 - Change management
 - Tooling
-
-**Azure Native Integration** 
 
 **Single Point of Support** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required
 
@@ -37,39 +31,13 @@ AVS provides value to customers in six  core pillars:
 
 **Azure Hybrid Use Benefits** Maximize the value of existing Windows Server and SQL Server licenses. Save up to 80% with AHUB and Azure Reserved Instances
 
+**Azure Native Integration** Connect to Azure services endpoints easily and natively. For example, leverage Azure Active Directory as the VMware vCenter SSO identity source.
 
-### Familiar and consistent VMware tools and technology
-Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager. The Azure portal is used for deployment and several management operations. 
-
-Access to vSphere, VMware HCX, and NSX-T are enabled during the Private Cloud deployment process. Credentials are registered in Azure connect to the private cluster hosts.
-
-### Continuity of Operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
-
-With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
-
-### Seamless integration for Azure infrastructure resources 
-The Azure VMware Solution provides a fast path to adopt the cloud without the added pain of having to reformat existing assets to work in the new cloud environment. AVS removes that challenge by making it possible to run your VMware estate on Azure as if it were on-premises.
-
-For example, easily scale and manage your infrastructure as your business needs it through the Azure portal. Add new nodes as required to increase compute and storage during peak times. Delete nodes seasonally when infrastructure demands are lower.
-
-Node min and maximums configuration:
-
-- Min 3 nodes per cluster
-- Max 16 nodes in a vSphere cluster
-- Max 64 nodes to an Azure Private Cloud instance
-
-Connect to Azure services endpoints easily and natively. Azure VMware Solution can integrate with native Azure services such as:
+:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
 
 - **Azure Active Directory**: Use Azure Active Directory as the VMware vCenter SSO identity source
 
-- **Log Analytics workspace**: Log Analytics workspace is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. Once AVS is deployed into your subscription, Azure Monitor logs are generated automatically. Azure Monitor logs can provide the following data:
-
-    - Collect logs on each of your VMs.
-    - Download and install the MMA agent on Linux and Windows VMs.
-    - Enable the Azure diagnostics extension.
-    - Create and run new queries.
-    - Run the same queries you usually run on your VMs
+- **Log Analytics workspace**: Log Analytics workspace is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. Once AVS is deployed into your subscription, Azure Monitor logs are generated automatically. 
 
 - **Azure Security Center**: Azure Security Center is a unified infrastructure security management system. It strengthens security of data centers, and provides advanced threat protection across hybrid workloads in the cloud or on premises.
 
@@ -85,4 +53,24 @@ Connect to Azure services endpoints easily and natively. Azure VMware Solution c
 
 - **Deploy Traffic Manager to balance Azure VMware Solution workloads**. The integration balances application workloads across multiple endpoints
 
-## Ways that the Azure VMware Solution is different than running VMware on-premises
+
+
+### Continuity of Operations
+Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
+
+With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
+
+### Billing and Licensing
+
+We offer node configurations based on core, memory, and storage requirements. You can choose the type of node that best fits the needs of your organization. A minimum of three nodes are required to deploy Azure VMware Solutions.
+
+Customers are charged hourly each time they provision a node. You can also choose to buy reserved instances for Azure VMware Solution for one- or three-year periods rice predictability.
+
+Pricing below above reflects single-node pricing only. This pricing covers VMware licensing costs of NSX-T, vSphere, vSAN and HCX Advanced.
+
+:::image type="content" source="../media/avs_pricing.PNG" alt-text="image that shows an example of AVS pricing":::
+
+You have the option to enable VMware HCX Enterprise add-on (which is currently in Preview) by submitting a support request. VMware HCX Enterprise Edition (EE) is available with Azure VMware Solution as a Preview function/service and subject to Preview service terms and conditions. Once the VMware HCX EE service goes GA, you will get a 30-day notice that billing will switch over. You will also have the option to switch off/opt-out of the service.
+
+In addition, you can take advantage of Azure Hybrid Benefit, allowing you to run your Windows Server and SQL Server workloads both on-premises and in the cloud. For all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions, you get Extended Security Updates at no additional charge for 3 years. If these workloads are deployed on-premises or on other clouds, the security updates would cost you an additional 75% of license price of the latest versions of Windows Server and SQL Server annually.
+

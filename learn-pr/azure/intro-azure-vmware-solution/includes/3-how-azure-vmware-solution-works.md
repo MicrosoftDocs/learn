@@ -36,7 +36,15 @@ Private clouds contain vSAN clusters built with dedicated, bare-metal Azure host
 
 For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API. The minimum initial deployment is three hosts and can scale up to a maximum of 16 hosts per cluster. Multiple clusters can be deployed into different Azure regions. Hosts used to build or scale clusters come from an isolated pool of hosts. 
 
-The high-end hosts have 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The HE hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier. You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
+Node min and maximums configuration:
+
+- Min 3 nodes per cluster
+- Max 16 nodes in a vSphere cluster
+- Max 64 nodes to an Azure Private Cloud instance
+
+Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The HE hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+
+You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
 
 The VMware software versions used in new deployments of Azure VMware Solution private clouds clusters are:
 
@@ -101,40 +109,10 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 The following outlines the steps needed for an organization to get started with using the Azure VMware Solution.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0lax">Milestone</th>
-    <th class="tg-0lax">Steps</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Plan </td>
-    <td class="tg-0pky">Plan the deployment of AVS<br>- Assessment<br>- Request Quota<br>- Identify host<br>- Determine Sizing and Connectivity</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Deploy</td>
-    <td class="tg-0pky">Deploy and configure AVS<br> - Register the Microsoft.AVS resource provider</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Connect to on-premises</td>
-    <td class="tg-0pky">connectivity to on-prem</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Install HCX</td>
-    <td class="tg-0pky">Deploy and configure HCX</td>
-  </tr>
-</tbody>
-</table>
+|Milestone |Steps  |
+|---------|---------|
+|Plan   |  Plan the deployment of AVS <br> - Assessment <br>- Request Quota <br>- Identify host <br>- Determine Sizing and Connectivity      |
+|Deploy     | Deploy and configure AVS <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>-    |
+|Connect to on-premises     |  - Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit <br>- Peer private cloud to on-premises  <br> - Verify on-premises network connectivity    |
+|Deploy and configure VMware HCX     |  Deploy and configure VMware HCX <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh <br>- Complete setup by checking the appliance status and validating that migration is possible     |
 
-### More AVS
