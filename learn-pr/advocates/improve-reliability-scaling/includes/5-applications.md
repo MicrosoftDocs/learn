@@ -1,4 +1,4 @@
-Now that you understand the basics of preparing for growth and are aware of
+Now that you understand the basics of preparing for growth, and are aware of
 factors to consider in capacity planning, you can take up the challenge of
 making your applications as scalable as possible.
 
@@ -29,41 +29,40 @@ not only to determine where its weaknesses lie, but also to recognize its
 strengths. What’s good about it?
 
 Take another look at the scenario you saw in the previous unit. Here’s a
-diagram of the organization’s architecture again:
+diagram of the organization’s architecture again.
 
 :::image type="content" source="../media/application-diagram-products.png" alt-text="Full architecture diagram of application with products backend highlighted":::
 
-They've decomposed the application into smaller microservices and some of
+They've decomposed the application into smaller microservices, and some of
 these services are sitting as containers on Azure Kubernetes Service or
-they could be running on virtual machines or App Service. You’re using some
+they could be running on VMs or App Service. You’re using some
 “inherently scalable” services such as Functions and Logic Apps.
 
 This change is good, but there are some improvements that would make the
 application more scalable. As an example, focus now on the Products
 service. In the diagram, the product service is running in Kubernetes, but
-we will assume for this explanation that it is running on a virtual machine
-on Azure. The scaling concepts, possibly with a slightly different
+we will assume for this explanation that it is running on a VM
+in Azure. The scaling concepts, possibly with a slightly different
 implementation, can be applied to applications whether they are running on
-servers, App Service or in containers.
+servers, App Service, or in containers.
 
-The product currently runs on a single virtual machine, connected to a
+The product currently runs on a single VM, connected to a
 single Azure SQL database. You need to enable this VM to scale out. You can
-do this using Azure virtual machine scale sets, which let you create and
-manage a group of identical, load balanced VMs. Since you’ll now have more
+do this using Azure virtual machine scale sets, which lets you create and
+manage a group of identical, load balanced VMs. Because you’ll now have more
 than one VM, you’ll need to introduce a load balancer to distribute traffic
 across the VMs.
 
 ### Virtual machine scale sets
 
-By leveraging virtual machine scale sets over single virtual machines, you
-get a few benefits:
+By leveraging virtual machine scale sets over single VMs, you get a few benefits:
 
 -   You can autoscale based on host metrics, in-guest metrics, application
-    insights or by a schedule.
--   You can leverage Availability Zones, which are independent standalone
-    data centers within an Azure region. With Availability Zones support,
+    insights, or by a schedule.
+-   You can leverage Availability Zones (AZ), which are independent standalone
+    datacenters within an Azure region. With AZ support,
     you can spread your VMs across multiple AZs, which will make your
-    application more reliable and protect it from data center failures. New
+    application more reliable and protect it from datacenter failures. New
     instances within a scale set will be automatically evenly distributed
     across AZs.
 -   Adding a load balancer becomes easier. Virtual machine scale sets
@@ -75,24 +74,24 @@ There are some important factors you need to consider before implementing
 scale sets. Specifically:
 
 -   Avoid instance “stickiness,” so that no client is “stuck” to a specific
-    backend.
--   Remove persistent data from the VM and store it somewhere else, such as
-    in Azure Storage or in a database.
+    back end.
+-   Remove persistent data from the VM, and store it somewhere else, such as
+    in Azure Storage, or in a database.
 -   Design for scale-in. It’s also important that your application easily
     handle scaling back down. It has to gracefully handle not only having
-    more instances added to the pool of servers handling the traffic but
+    more instances added to the pool of servers handling the traffic, but
     also the abrupt termination of instances as the load drops. The scale
     down aspect of scaling is often overlooked.
 
 ## Decoupling
 
 You have added more VMs with scale sets. Scaling out is the typical answer
-to “we need to scale” but you can only scale on a single metric, and this
+to “we need to scale”, but you can only scale on a single metric, and this
 answer might not be relevant to all tasks being performed by your product
 service.
 
 In our scenario, the products service has a job. It takes a product image
-and once that image is uploaded, it transcodes that image and stores it in
+and after that image is uploaded, it transcodes that image, and stores it in
 a number of different sizes for thumbnails, pictures in the catalog, and so
 forth. The image-processing is CPU intensive, but the general usage is
 memory intensive.
@@ -100,8 +99,8 @@ memory intensive.
 Image-processing is an asynchronous task that can be broken into a
 background job. You can do that by decoupling your image-processing service
 via a queue. This means you can scale both services independently – one on
-memory (the product service) and the other (the image-processing service)
-on CPU or even queue length and have another scale set consume those
+memory (the product service), and the other (the image-processing service)
+on CPU or even queue length, and have another scale set consume those
 messages and process the images.
 
 ### Scale with queues
@@ -131,7 +130,7 @@ Azure Cache for Redis is a managed Redis offering. Redis can be used for a
 number of patterns and use cases. For your product service in this
 scenario, you would likely implement the cache-aside pattern. This means
 you would load items from the database into the cache as needed, making
-your application more performant and reducing the load on the database.
+your application more performant, and reducing the load on the database.
 
 Redis can also be used as a messaging queue, for caching web content or for
 user session caching. These may be more suitable for other services in the
@@ -145,9 +144,9 @@ your database. In this scenario, you’re using Azure SQL database, which is
 a managed SQL server offering from Azure.
 
 Relational databases are much harder to scale out than non-relational
-databases. The first thing you might do in order to scale your database is
+databases. The first thing you might do to scale your database is
 to scale up the size of the database. This resizing can be done very easily
-with Azure SQL, via a simple API call or using a slider in the portal, with
+with Azure SQL, via a simple API call, or using a slider in the portal, with
 an average downtime of under four seconds.
 
 If this sizing up doesn’t meet your requirements, depending on traffic
@@ -158,7 +157,7 @@ _With Azure SQL, if you’re using the Premium or Business Critical
 tiers, Read Scale Out is enabled by default. It cannot be enabled on basic
 or standard tiers._
 
-This change must be implemented in code. Here’s how to do that:
+This change must be implemented in code. Here’s how to do that.
 
 ```
 #Azure SQL Connection String
@@ -174,8 +173,8 @@ Server=tcp:<server>.database.windows.net;Database=<mydatabase>;ApplicationIntent
 ```
 
 Update the ApplicationIntent attribute in your database connection string
-to specify to which server you wish to connect. Use ReadOnly if you want to
-connect to the replica or ReadWrite if you want to connect to the master.
+to specify to which server you want to connect. Use ReadOnly if you want to
+connect to the replica, or ReadWrite if you want to connect to the master.
 
 Because this must be implemented in code, it may not be a suitable solution
 for your situation. What if every single product service needs the ability

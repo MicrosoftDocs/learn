@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.innovate-applications-azure-cloud-technologies
 metadata:
-  title: Innovate applications with Azure cloud technologies. 
-  description: Innovation is a complex topic that encompasses many disciplines. The agility of public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements. 
+  title: Innovate applications by using Azure cloud technologies 
+  description: Innovation is a complex topic that encompasses many disciplines. The agility of the public cloud allows quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements. 
   ms.date: 03/01/2021
   author: jomore
   ms.author: jomore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Innovate applications with Azure cloud technologies.
-summary: Innovation is a complex topic that encompasses many disciplines. The agility of public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
+title: Innovate applications by using Azure cloud technologies
+summary: Innovation is a complex topic that encompasses many disciplines. The agility of the public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
 abstract: | 
   In this module, you will:
   - Understand the innovation cycle
-  - Map Azure services to the different phases of the innovation cycle
+  - Map Azure services to the phases of the innovation cycle
   - Correlate technologies to business outcomes of innovation
 prerequisites: | 
   - Foundational understanding of cloud adoption 
-  - Understanding of your organization's products, markets and customers 
+  - Understanding of your organization's products, markets, and customers 
 iconUrl: /learn/achievements/innovate-applications-azure-cloud-technologies.svg
 ratingEnabled: true
 levels:

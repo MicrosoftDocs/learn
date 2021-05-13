@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.powershell-write-first.how-it-works
-title: How it works
+title: How PowerShell code works
 metadata:
-  title: How it works
-  description: How does PowerShell work? What do those words and symbols mean?
+  title: How PowerShell code works
+  description: How does code work in PowerShell? What do those words and symbols mean?
   ms.date: 02/08/2021
   author: chasewilson
   ms.author: phwilson

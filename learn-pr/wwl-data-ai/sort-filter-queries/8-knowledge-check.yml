@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sort-and-filter-queries.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/08/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You write a Transact-SQL query to list the available sizes for products. Each individual size should be listed only once. Which query should you use?"
+    choices:
+    - content: "SELECT Size FROM Production.Product;"
+      isCorrect: false
+      explanation: "Incorrect. Use the DISTINCT keyword to eliminate duplicate rows in the resultset."
+    - content: "SELECT DISTINCT Size FROM Production.Product;"
+      isCorrect: true
+      explanation: "Correct. Use the DISTINCT keyword to eliminate duplicate rows in the resultset."
+    - content: "SELECT ALL Size FROM Production.Product;"
+      isCorrect: false
+      explanation: "Incorrect. Use the DISTINCT keyword to eliminate duplicate rows in the resultset."
+  - content: "You must return the InvoiceNo and TotalDue columns from the Sales.Invoice table in decreasing order of TotalDue value. Which query should you use?"
+    choices:
+    - content: "SELECT * FROM Sales.Invoice ORDER BY TotalDue, InvoiceNo;"
+      isCorrect: false
+      explanation: "Incorrect. Use ORDER BY with DESC to sort the results in descending order."
+    - content: "SELECT InvoiceNo, TotalDue FROM Sales.Invoice ORDER BY TotalDue DESC;"
+      isCorrect: true
+      explanation: "Correct. Use ORDER BY with DESC to sort the results in descending order."
+    - content: "SELECT TotalDue AS DESC, InvoiceNo FROM Sales.Invoice;"
+      isCorrect: false
+      explanation: "Incorrect. Use ORDER BY with DESC to sort the results in descending order."
+  - content: "Complete this query to return only products that have a Category value of 2 or 4: SELECT Name, Price FROM Production.Product Which clause should you add?"
+    choices:
+    - content: "ORDER BY Category;"
+      isCorrect: false
+      explanation: "Incorrect. Use WHERE with an IN clause to filter based on discrete values in a list."
+    - content: "WHERE Category BETWEEN 2 AND 4;"
+      isCorrect: false
+      explanation: "Incorrect. Use WHERE with an IN clause to filter based on discrete values in a list."
+    - content: "WHERE Category IN (2, 4);"
+      isCorrect: true
+      explanation: "Correct. Use WHERE with an IN clause to filter based on discrete values in a list."
