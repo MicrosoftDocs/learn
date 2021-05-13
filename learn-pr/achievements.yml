@@ -406,9 +406,9 @@ achievements:
   type: badge
   title: Space Jam Cloud Skills Challenge
   summary: Space Jam Cloud Skills Challenge
-  iconUrl: /learn/achievements/csc/CloudSkillsChallenge_SpaceJam.svg
+  iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceJam.svg
 - uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded)
   type: badge
   title: Space Rocks! Cloud Skills Challenge
   summary: Space Rocks! Cloud Skills Challenge
-  iconUrl: /learn/achievements/csc/CloudSkillsChallenge_SpaceRocks.svg
+  iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceRocks.svg
