@@ -2,7 +2,7 @@ Azure HPC Cache is a managed service that accelerates NFS storage so that HPC wo
 
 Suppose you're a storage administrator at a digital animation studio. The studio is releasing a movie soon and there are still several changes and reviews that the director needs to make. You're looking for ways to accelerate storage so that the studio can produce movie scenes faster for the director's approval.
 
-Some studios use in-house clients to render their movies and scenes. Because they have limited clients, their output hits a ceiling. They can only produce a certain number of scenes with their resources.
+Some studios use in-house clients to render their movies and scenes. Because they have limited clients, their output hits a ceiling. They can only produce a limited number of scenes with their resources.
 
 When studios leverage cloud clients, they can use more processing power. This means that their scenes can be produced in a shorter time. Without cloud clients for video rendering, studios will miss deadlines for theatrical releases.
 

@@ -22,7 +22,7 @@ quiz:
       explanation: "That's right. The HPC Cache managed service accelerates storage for HPC workloads."
     - content: "A Linux-based virtual machine for accelerating computing for HPC workloads."
       isCorrect: false
-      explanation: "Azure HPC Cache is more than a VM and does not accelerate computing, but it does help better utilize computing resources."
+      explanation: "Azure HPC Cache is more than a VM and does not accelerate computing, but it does help better use computing resources."
     - content: "A third-party Marketplace image for accelerating networking for HPC workloads."
       isCorrect: false
       explanation: "Azure HPC Cache is a Microsoft technology that often reduces WAN bandwidth, but it is not a network accelerator."
@@ -42,7 +42,7 @@ quiz:
     - content: "Cache sizes slightly smaller than the working set are best in order to best use resources."
       isCorrect: false
       explanation: "Smaller caches are inefficient because the cache has to drop data to read in new data."
-    - content: "Type the exact size of your working set so the cache size is neither too big nor too small."
+    - content: "Type the exact size of your working set so that the cache size isn't too big or too small."
       isCorrect: false
       explanation: "Azure HPC Cache sizes are fixed. There is nowhere to type a cache size."
     - content: "Cache sizes slightly larger than the working set are best in order to store all the data."
@@ -50,7 +50,7 @@ quiz:
       explanation: "Yes. Larger cache sizes hold all the data for the HPC tasks."
   - content: "For HPC Cache to connect to on-prem data, what network path should it take?"
     choices:
-    - content: "VPN because data should treated as sensitive and therefore be kept encrypted"
+    - content: "VPN because data should be treated as sensitive and therefore be kept encrypted"
       isCorrect: false
       explanation: "VPNs can be used, but they are often slower than dedicated network circuits."
     - content: "ExpressRoute because a high-speed connection allows faster data transfer"

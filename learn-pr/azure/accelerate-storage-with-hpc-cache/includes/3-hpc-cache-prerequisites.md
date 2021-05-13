@@ -39,7 +39,7 @@ If you're running multiple caches, each one needs its own dedicated subnet.
 
 :::image type="content" source="../media/3-identity-requirements-02-add-cache-only-subnet.png" alt-text="Screenshot showing how to add a subnet to a virtual network. The new subnet uses a 26-bit mask.":::
 
-It's highly recommended that a high-speed network connection like an ExpressRoute be in place between Azure and the data center where the storage is.
+We highly recommend having a high-speed network connection like an ExpressRoute in place between Azure and the data center where the storage is.
 
 ### Verify TCP/UDP port access for HPC Cache
 

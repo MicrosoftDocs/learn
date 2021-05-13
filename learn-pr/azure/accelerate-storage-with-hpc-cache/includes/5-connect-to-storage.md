@@ -14,7 +14,7 @@ An HPC Cache “storage target” is the storage location where your HPC data is
 
 1. Leave the target type as NFS.
 
-1. For the hostname, enter the fully-qualified domain name (FQDN) of your storage server. Your custom DNS server will resolve this name.
+1. For the hostname, enter the fully qualified domain name (FQDN) of your storage server. Your custom DNS server will resolve this name.
 
 ### Usage model
 

@@ -32,13 +32,13 @@ In summary, you want to choose a size that can store the working set of your dat
 
    :::image type="content" source="../media/4-create-the-cache-03-cache-tab.png" alt-text="Diagram showing the Cache tab of the Azure HPC Cache creation wizard.":::
 
-   The cache size is dependent on the maximum throughput. The greater the throughput, the greater the available cache sizes. In the previous example, the 6 TB option is too small, so you want to create a cache that can store 12 TB of data.
+   The cache size is dependent on the maximum throughput. The greater the throughput, the greater the available cache sizes. In the previous example, 6 TB is too small, so you want to create a cache that can store 12 TB of data.
 
 1. Select **Next: Disk Encryption Keys*** to move to the next page of the wizard.
 
 ## Modify the default encryption by using customer-managed keys (CMK)
 
-Azure HPC Cache data is encrypted with Microsoft-managed keys by default. This secures all of your data when it's stored in Azure.
+Azure HPC Cache data is encrypted with Microsoft-managed keys by default. This encryption secures all of your data when it's stored in Azure.
 
 If you want to provide your own customer-managed keys, select the **Customer managed** option. You'll need to provide a key vault, key, and version.
 
@@ -70,6 +70,6 @@ The create process takes over 20 minutes. When you're ready to create the cache 
 
 In this unit, we walked through the wizard to set up Azure HPC Cache. We began by finding the HPC Cache service and choosing our subscription. For our cache, we selected the resource group, provided a name, and then selected the region closest to us, the virtual network, and the subnet.
 
-We then chose the smallest cache size that would hold our HPC working set. If we use our own encryption keys or tags, we added those to the cache's configuration.
+We then chose the smallest cache size that would hold our HPC working set. If we use our own encryption keys or tags, we added them to the cache's configuration.
 
 Finally, we reviewed our settings and began the cache creation process.
