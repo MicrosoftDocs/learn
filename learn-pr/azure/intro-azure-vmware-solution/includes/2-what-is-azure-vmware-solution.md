@@ -29,7 +29,7 @@ AVS provides value to customers in six  core pillars:
 - Change management
 - Tooling
 
-**Azure Native Integration** Connect to Azure services endpoints easily and natively. For example, use Azure Active Directory as the VMware vCenter SSO identity source
+**Azure Native Integration** 
 
 **Single Point of Support** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required
 
@@ -38,22 +38,51 @@ AVS provides value to customers in six  core pillars:
 **Azure Hybrid Use Benefits** Maximize the value of existing Windows Server and SQL Server licenses. Save up to 80% with AHUB and Azure Reserved Instances
 
 
-###  Private clouds, clusters, and hosts
+### Familiar and consistent VMware tools and technology
+Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager. The Azure portal is used for deployment and several management operations. 
 
-Private clouds contain vSAN clusters built with dedicated, bare-metal Azure hosts. Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
+Access to vSphere, VMware HCX, and NSX-T are enabled during the Private Cloud deployment process. Credentials are registered in Azure connect to the private cluster hosts.
 
-For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API. The minimum initial deployment is three hosts and can scale up to a maximum of 16 hosts per cluster. Multiple clusters can be deployed into different Azure regions. Hosts used to build or scale clusters come from an isolated pool of hosts. 
+### Continuity of Operations
+Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
 
-The high-end hosts have 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The HE hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier. You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
+With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
 
-The VMware software versions used in new deployments of Azure VMware Solution private clouds clusters are:
+### Seamless integration for Azure infrastructure resources 
+The Azure VMware Solution provides a fast path to adopt the cloud without the added pain of having to reformat existing assets to work in the new cloud environment. AVS removes that challenge by making it possible to run your VMware estate on Azure as if it were on-premises.
 
-| Software | Version |
-| :------- | :------ |
-| VCSA/vSphere/vCenter | 6.7 Update 3 |
-| ESXi | 6.7 Update 3 |
-| vSAN | 6.7 Update 3 |
-| NSX-T | 3.1.1 |
-| HCX | 4.0 |
+For example, easily scale and manage your infrastructure as your business needs it through the Azure portal. Add new nodes as required to increase compute and storage during peak times. Delete nodes seasonally when infrastructure demands are lower.
 
-NOTE: NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied
+Node min and maximums configuration:
+
+- Min 3 nodes per cluster
+- Max 16 nodes in a vSphere cluster
+- Max 64 nodes to an Azure Private Cloud instance
+
+Connect to Azure services endpoints easily and natively. Azure VMware Solution can integrate with native Azure services such as:
+
+- **Azure Active Directory**: Use Azure Active Directory as the VMware vCenter SSO identity source
+
+- **Log Analytics workspace**: Log Analytics workspace is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. Once AVS is deployed into your subscription, Azure Monitor logs are generated automatically. Azure Monitor logs can provide the following data:
+
+    - Collect logs on each of your VMs.
+    - Download and install the MMA agent on Linux and Windows VMs.
+    - Enable the Azure diagnostics extension.
+    - Create and run new queries.
+    - Run the same queries you usually run on your VMs
+
+- **Azure Security Center**: Azure Security Center is a unified infrastructure security management system. It strengthens security of data centers, and provides advanced threat protection across hybrid workloads in the cloud or on premises.
+
+- **Azure Sentinel**: Azure Sentinel is a cloud-native, security information event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.
+
+- **Integrate Azure NetApp Files with Azure VMware Solution**. Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on Windows client. 
+
+- **Back up VMware VMs with Azure Backup Server**. Using Azure Backup Server (MABS) back-up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.
+
+- **Monitor and manage Azure VMware Solution VMs**. Microsoft Azure native tools allow you to monitor and manage your virtual machines (VMs) in the Azure environment. Yet they also allow you to monitor and manage your VMs on Azure VMware Solution and your on-premises VMs.
+
+- **Protect web apps on Azure VMware Solution with Azure Application Gateway**. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications
+
+- **Deploy Traffic Manager to balance Azure VMware Solution workloads**. The integration balances application workloads across multiple endpoints
+
+## Ways that the Azure VMware Solution is different than running VMware on-premises
