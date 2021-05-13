@@ -26,7 +26,7 @@ Here's a high-level visualization of what is deployed with this template.
 After the deployment has completed, test the application. Run the following command, which will return the URL for the app.
 
 ```azurecli
-az group deployment show \
+az deployment group show \
   --output table \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --name azuredeploy \
