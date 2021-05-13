@@ -1,3 +1,3 @@
-As the first step towards starting your professional career, getting noticed can be both daunting and exciting. Through this module, you've learned the basics of networking. There are many ways to network, everything from joining a student organization to working on Open source projects. 
+As the first step towards starting your professional career, getting noticed can be both daunting and exciting. Through this module, you've learned the basics of networking.
 
-Then you were exposed to examples and tips on how to better describe your experiences and bring light to your personal value. With these in mind, you are ready to take on the world of internship searching and applying! There is only growing from this moment forward.
+Then you saw examples and learned tips on how to better describe your experiences and highlight your personal value in your resume. With these in mind, you are ready to effectively search for and successfully apply for an internship! 
