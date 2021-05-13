@@ -173,7 +173,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --name allow-http \
       --protocol tcp \
       --priority 100 \
-      --destination-port-range 80 \
+      --destination-port-ranges 80 \
       --access Allow
     ```
 

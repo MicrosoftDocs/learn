@@ -5,7 +5,7 @@ name = input('Enter your name:')
 print(name)
 ```
 
-The string passed as an argument to the `input` function is the prompt that the user will see. In this example, you are asking the user to type his or her name ('Enter your name'). Once the user types a name and presses <kbd>Enter</kbd>, the `input` function will return. The function's return value is the text that the user typed, and that text is assigned to the variable named `name`. The `name` variable is then used as an input or argument to the `print` function which will output the name that the user entered.
+The string passed as an argument to the `input` function is the prompt that the user will see. In this example, you are asking the user to type their name ('Enter your name'). Once the user types a name and presses <kbd>Enter</kbd>, the `input` function will return. The function's return value is the text that the user typed, and that text is assigned to the variable named `name`. The `name` variable is then used as an input or argument to the `print` function, which will output the name that the user entered.
 
 You can also call the `input` function without a parameter:
 
@@ -19,7 +19,7 @@ This program will behave _almost_ the same as the first one. The difference is t
 
 ### Reading numbers as input
 
-The `input` function always returns the typed value as a _string_ (text). This makes sense because the user can enter whatever value they like. Even if the input _is_ a valid number, it's still returned as a string type from the `input` function. For example:
+The `input` function always returns the typed value as a _string_ (text). This choice makes sense because the user can enter whatever value they like. Even if the input _is_ a valid number, it's still returned as a string type from the `input` function. For example:
 
 ```python
 x = input('Enter a number: ')
@@ -40,7 +40,7 @@ This code will output `<class 'int'>` for the value '5'. You can use the `float`
 
 ### Converting numbers to strings
 
-You can go the other direction as well. The `str` operator will take an integer or float value and turn it into a string. This is required if you are concatenating the number into a string, for example:
+You can go the other direction as well. The `str` operator will take an integer or float value and turn it into a string. Calling the `str` method is needed if you want the below code example to work. The conversion ensures the integer, in its string form is concatenated to the string on the left.
 
 ```python
 x = 5
