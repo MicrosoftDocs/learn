@@ -59,24 +59,24 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 @page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+  ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>We hope you like pizza. That's what we make here.</p>
+  <h1 class="display-4">Welcome</h1>
+  <p>We hope you like pizza. That's what we make here.</p>
 </div>
 
 <style>
-div.button {
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: lightgray;
-  text-align: center;
-  padding: 10px;
-  margin: 50px;
-}
+  div.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+  }
 </style>
 
 
@@ -84,63 +84,85 @@ div.button {
 <p>Sign up to hear about all our special offers!</p>
 
 <form name="CustomerInfo">
-<div class="container w-50 p-3">
-  <div class="row">
-    <div class="col-4 text-primary">
-      First Name
+  <div class="container w-50 p-3">
+    <div class="row">
+      <div class="col-4 text-primary">
+        First Name
+      </div>
+      <div class="col-8 text-muted">
+        <input type="text" id="Name">
+      </div>
     </div>
-    <div class="col-8 text-muted">
-      <input type="text" id="Name">
+    <div class="row">
+      <div class="col-4 text-primary">
+        Last Name
+      </div>
+      <div class="col-8">
+        <input type="text" id="Name">
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-4 text-primary">
-      Last Name
+    <div class="row text-black-50">
+      <div class="col-4">
+        Phone
+      </div>
+      <div class="col-8">
+        <input type="text" id="Phone">
+      </div>
     </div>
-    <div class="col-8">
-      <input type="text" id="Name">
+    <div class="row text-black-50">
+      <div class="col-4">
+        Birthday
+      </div>
+      <div class="col-8">
+        <input type="text" id="Birthday">
+      </div>
     </div>
-  </div>
-  <div class="row text-black-50">
-    <div class="col-4">
-      Phone
+    <div class="row text-primary">
+      <div class="col-4">
+        E-mail Address
+      </div>
+      <div class="col-8">
+        <input type="text" id="E-mail">
+      </div>
     </div>
-    <div class="col-8">
-      <input type="text" id="Phone">
-    </div>
-  </div>
-  <div class="row text-black-50">
-    <div class="col-4">
-      Birthday
-    </div>
-    <div class="col-8">
-      <input type="text" id="Birthday">
-    </div>
-  </div>
-  <div class="row text-primary">
-    <div class="col-4">
-      E-mail Address
-    </div>
-    <div class="col-8">
-      <input type="text" id="E-mail">
-    </div>
-  </div>
-  <div class="button">
-    <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
-      Submit Form
+    <div class="button">
+      <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
+        Submit Form
       </a>
+    </div>
   </div>
-</div>
 </form>
 
+<div class="text-center">
+  <img width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 
+16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
+</div>
+
 <p style="font-size: 30px"><b>All about our wonderful pizza!</b></p>
-<p class="bg-light text-muted">We make it fresh every day, sometimes up to two or three times a day!<br><br>We love to make pizza!</p>
+<p class="bg-light text-muted">We make it fresh every day, sometimes up to two or three times a day!<br><br>
+We love to make pizza!
+</p>
+
+<div class="text-center">
+  <img width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 
+16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
+</div>
+
+<p style="font-size: 30px"><b>We take your privacy seriously!</b></p>
+<p class="bg-light text-muted">Unlike other pizza restaurants that share your pizza preferences, we care about your privacy.<br><br>
+Want to know more? <a href="/Privacy">Click here.</a>
+</p>
+
+<div class="text-center">
+  <img width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 
+16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
+</div>
 
 <p style="font-size: 30px"><b>Delivery options</b></p>
 <p class="bg-light text-muted">There are a few ways we can get the pizza to you:<br>
-- Postal mail<br>
-- Dog sled<br>
-- Drone (experimental!)
+  - Postal mail<br>
+  - Dog sled<br>
+  - Drone (experimental!)
 </p>
 ```
 
