@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with creating Linux VMs in Azure, including logging into the machine with ssh, using bash as cmdline, getting administrator rights with sudo 
   - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in Cloud Concepts - Principles of cloud computing. 
-  - You need an Azure subscription 
+  - An Azure subscription
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
