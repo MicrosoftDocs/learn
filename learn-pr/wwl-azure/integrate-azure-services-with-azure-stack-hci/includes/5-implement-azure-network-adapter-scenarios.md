@@ -31,12 +31,3 @@ Keep in mind that the target Azure virtual network must exist before you can sta
 
 > [!NOTE]
 > Azure virtual network gateway provisioning might take about 30 minutes.
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of your evaluation of hybrid capabilities of Azure Stack HCI for Contoso, you are planning to test the setup of Azure Network Adapter on an Azure Stack HCI VM running Windows Server 2019. What should be the first step to test the setup? 
-(x) Create an Azure virtual network. {{Correct. The target Azure virtual network must exist before you can start Windows Admin Center-based setup.}}
-( ) Set up a local VPN device. {{Incorrect. Azure Network Adapter does not require a local VPN device because it uses the VPN capabilities built into the Windows operating system.}}
-( ) Install a VPN client software on the VM. {{Incorrect. Azure Network Adapter uses the VPN capabilities built into the Windows operating system.}}

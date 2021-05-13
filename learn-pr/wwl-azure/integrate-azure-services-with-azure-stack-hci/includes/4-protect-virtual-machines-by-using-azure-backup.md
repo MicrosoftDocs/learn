@@ -46,12 +46,3 @@ As the next step in evaluating Azure Backup to eliminate inefficiencies, you dec
 Windows Admin Center also allows you to identify the backup status, trigger on-demand backups following the initial scheduled backup, track backup jobs, and view recovery points and recover data. To modify the backup configuration, including the backup scope, schedule, retention period, and encryption passphrase, you can use the Azure Backup application installed locally on protected servers or Azure PowerShell. The Azure Recovery Services vault interface in the Azure portal allows you to set up backup-related alert notifications and provides a single view for inventory of all protected servers.
 
 :::image type="content" source="../media/wac-backup-configured.png" alt-text="The screenshot depicts how you can use Windows Admin Center to review the backup status, trigger on-demand backups following the initial scheduled backup, track backup jobs, as well as view recovery points and recover data." border="false":::
-
----
-## Check your knowledge
-
-## Multiple Choice
-You have onboarded an Azure Stack HCI VM at Contoso to Azure Backup by using Windows Admin Center, with the default backup schedule and retention period. Now you decided to modify the retention period to align it with Contoso's compliance requirements. Which of the following tools should you use to update the backup period? 
-( ) Microsoft Azure Backup Server {{Incorrect. Microsoft Azure Backup Server is not part of the backup that is configured by Windows Admin Center. Windows Admin Center configured an agent-based backup.}}
-( ) Windows Admin Center {{Incorrect. Windows Admin Center allows you to onboard an Azure Stack HCI cluster at Contoso to Azure Backup, but not to modify the retention period.}}
-(x) Azure Backup application on the VM {{Correct. You can use the Azure Backup application to modify the backup configuration, including the backup scope, schedule, retention period, and encryption passphrase.}}

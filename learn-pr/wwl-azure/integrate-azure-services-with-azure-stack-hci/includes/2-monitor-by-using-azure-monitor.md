@@ -68,12 +68,3 @@ You can also use Windows Admin Center to onboard individual Windows servers, inc
 In this demonstration, you'll learn how to onboard an Azure Stack HCI cluster to Azure Monitor.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDCns]
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of your evaluation of Azure Stack HCI for Contoso, you onboarded a four-node Azure Stack HCI cluster to Azure Monitor. Now you want to review the service map displaying communication between the cluster nodes. What should you do? 
-( ) In Windows Admin Center, browse to the Monitor pane. {{Incorrect. The Monitor pane in Windows Admin Center allows you to onboard an Azure Stack HCI cluster to Azure Monitor, but not to view service map diagrams.}}
-(x) In the Azure portal, browse to the Azure Log Analytics blade. {{Correct. To display the service map, you need to browse to the Azure Log Analytics blade in the Azure portal.}}
-( ) In Windows Admin Center, browse to the Azure pane. {{Incorrect. The Azure pane in Windows Admin Center allows you to register it with Azure, but not to view service map diagrams.}}

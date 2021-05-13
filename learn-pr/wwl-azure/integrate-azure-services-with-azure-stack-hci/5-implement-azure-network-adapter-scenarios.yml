@@ -4,7 +4,7 @@ title: Implement Azure Network Adapter in Azure Stack HCI scenarios
 metadata:
   title: Implement Azure Network Adapter in Azure Stack HCI scenarios
   description: "Implement Azure Network Adapter in Azure Stack HCI scenarios"
-  ms.date: 05/12/2021
+  ms.date: 05/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,3 +13,17 @@ azureSandbox: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-implement-azure-network-adapter-scenarios.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "As part of your evaluation of hybrid capabilities of Azure Stack HCI for Contoso, you are planning to test the setup of Azure Network Adapter on an Azure Stack HCI VM running Windows Server 2019. What should be the first step to test the setup?"
+    choices:
+    - content: "Create an Azure virtual network."
+      isCorrect: true
+      explanation: "Correct. The target Azure virtual network must exist before you can start Windows Admin Center-based setup."
+    - content: "Set up a local VPN device."
+      isCorrect: false
+      explanation: "Incorrect. Azure Network Adapter does not require a local VPN device because it uses the VPN capabilities built into the Windows operating system."
+    - content: "Install a VPN client software on the VM."
+      isCorrect: false
+      explanation: "Incorrect. Azure Network Adapter uses the VPN capabilities built into the Windows operating system."

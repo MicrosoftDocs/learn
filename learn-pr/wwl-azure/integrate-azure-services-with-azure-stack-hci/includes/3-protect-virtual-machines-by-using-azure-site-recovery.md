@@ -40,12 +40,3 @@ After all required infrastructure components are provisioned, you can use Window
 :::image type="content" source="../media/wac-enable-asr-virtual-machine.png" alt-text="The screenshot depicts how you can use Windows Admin Center to enable protection for individual VMs after all required infrastructure components are provisioned." border="false":::
 
 To perform the remaining configuration and management tasks, such as creating a recovery plan, performing a test, planned, or unplanned failover, and monitoring the status of protected VMs, you can use the Recovery Services vault interface in the Azure portal or Azure PowerShell.
-
----
-## Check your knowledge
-
-## Multiple Choice
-As part of implementing disaster recovery for Contoso, you plan to use Windows Admin Center to onboard an Azure Stack HCI cluster to Azure Site Recovery. When you perform onboarding, which of the following tasks is automatically completed?
-(x) Provisioning of an Azure Recovery Services vault {{Correct. Windows Admin Center offers the option to onboard an Azure Stack HCI cluster to Azure Site Recovery, which automatically provisions all required Azure components, including the target Azure Recovery Services vault and the storage account required for replication, and installs the Site Recovery Provider on the cluster nodes.}}
-( ) Creating a recovery plan {{Incorrect. To create a recovery plan, you can use the Recovery Services vault interface in the Azure portal or Azure PowerShell.}}
-( ) Enabling protection for cluster nodes {{Incorrect. Cluster nodes are not protected by onboarding an Azure Stack HCI cluster to Azure Site Recovery.}}
