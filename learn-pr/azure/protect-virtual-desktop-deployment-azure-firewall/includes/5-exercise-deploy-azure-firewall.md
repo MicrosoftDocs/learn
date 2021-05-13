@@ -56,53 +56,82 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+For production deployments, we recommend a hub and spoke model, where you create the firewall in its own virtual network. Then you peer that virtual network with virtual networks used by your workloads.
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host VM uses.
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create a virtual network and subnet for Azure Firewall
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise unit.
+1. Search for and select **Virtual networks**.
+1. Select **+ New**.
+1. Enter the following information.
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+    |Field |Value  |
+    |---------|---------|
+    |Subscription     | Your subscription        |
+    |Resource group    | learn-firewall-rg        |
+    |Name    |   firewallVNet      | 
+    |Region     | Same region as your resource group      |
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+1. Select the **IP Addresses** tab.
+1. Under **Subnet name**, select **default**.
+1. Enter the following information for the subnet.
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+    |Field |Value |
+    |---------|---------|
+    |Name    |  AzureFirewallSubnet    |
+    |Address range     |   10.1.0.0/24      |
+
+    Leave the rest of the values as they are.
+1. Select **Save**.
+1. Select **Review + create** > **Create**.
+1. After the deployment is complete, select **Go to resource**.
+
+## Peer virtual networks
+
+1. In the firewallVNet, on the left-hand side, select **Peerings**.
+1. Select **+ Add**.
+1. Enter the following information.
+
+    |Field |Value |
+    |---------|---------|
+    |Peering link name    |  firewallVNet-hostVNet   |
+    |Remote Peering link name     |   remote-firewallVNet-hostVNet      |
+    |Subscription     | Your subscription        |
+    |Virtual network    | hostVNet       |
+
+    Use the default values for the rest of the fields.
+
+## Deploy Azure Firewall
+
+1. In the Azure portal, search for and select **Firewalls**.
+1. Select **+ Add** to create a firewall.
+1. Enter the following table to configure the firewall.
+
+   |Field |Value  |
+   |---------|---------|
+   |Subscription     |Select your subscription|
+   |Resource group     |learn-firewall-rg |
+   |Name     |learn-fw|
+   |Region     |Select the same location that you used previously|
+   |Firewall management|Use Firewall rules (classic) to manage this firewall|
+   |Choose a virtual network     |Use existing: firewallVNet|
+   |Public IP address     |Add new<br>Name:  fw-pip|
+
+    Use the default values for the rest of the fields.
+
+1. Select **Review + create** > **Create**.
+1. Wait a few minutes for the firewall to deploy.
+
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+At this point, you have a Firewall deployed within it's own virtual network and you've peered that virtual network with the session host virtual network. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
 
-<!-- Do not add a unit summary or references/links -->
+1. After the deployment is complete, select **Go to resource**.
+1. In the center pane, you see **Provisioning state: Succeeded**.
+:::image type="content" source="../media/5-firewall-overview-page.png" alt-text="Screenshot that shows the status and ip addresses for the firewall.":::
+1. From the right-hand side of the center pane, copy the **Firewall private IP address**.
+1. Select **fw-pip**.
+1. Copy the **IP address**.

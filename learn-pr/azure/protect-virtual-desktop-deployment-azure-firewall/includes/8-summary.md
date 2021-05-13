@@ -67,3 +67,5 @@ TODO: describe the business impact
  -->
 
 <!-- Do not include any other content -->
+
+[!include[](../../../includes/azure-subscription-cleanup.md)]
