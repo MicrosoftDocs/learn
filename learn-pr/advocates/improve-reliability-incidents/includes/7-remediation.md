@@ -107,9 +107,9 @@ can add to the page:
     documentation
 -   Kusto Query Language (KQL) queries
 
-It's that last item which makes the document "live". In a previous module
+It's that last item which makes the document "live." In a previous module
 in this learning path we explored the KQL query language built into Log
-Analytics and other parts of Azure monitor. Using this language, we could
+Analytics and other parts of Azure Monitor. Using this language, we could
 write our own queries to return and display diagnostic information from our
 application and Azure infrastructure. When a KQL query is inserted into a
 workbook or troubleshooting guide, the current results of that query are

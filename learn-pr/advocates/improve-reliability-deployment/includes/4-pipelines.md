@@ -115,7 +115,7 @@ part of the Build applications with Azure DevOps learning path.
 ## Environment traceability
 
 There's one other aspect of pipelines that relates to reliability worth
-mentioning. It is possible to construct your pipelined in such a way that
+mentioning. It is possible to construct your pipelines in such a way that
 it will be possible to correlate what is running in production with a
 specific build instance. Ideally we should be able trace a build back to a
 specific PR or code change. This can be tremendously useful either during
