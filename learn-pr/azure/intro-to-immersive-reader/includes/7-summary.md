@@ -11,5 +11,5 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Immersive Reader documentation](/azure/cognitive-services/immersive-reader/)
-* [Microsoft Learn - Analyze receipts with the Immersive Reader service](learn/modules/analyze-receipts-immersive-reader/)
+* [Microsoft Learn - Analyze receipts with the Immersive Reader service](/learn/modules/analyze-receipts-immersive-reader/)
 * [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
