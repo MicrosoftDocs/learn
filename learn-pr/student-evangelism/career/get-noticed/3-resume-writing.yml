@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.3-resume-writing
+title: How to build a resume
+metadata:
+  title: How to build a resume
+  description: This unit describes resume writing and how it matters, to a prospective employer, how you describe various parts of the resume.
+  author: gcordido 
+  ms.author: gcordido 
+  ms.topic: interactive-tutorial
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-resume-writing.md)]

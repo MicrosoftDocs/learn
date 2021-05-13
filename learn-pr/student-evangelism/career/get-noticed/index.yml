@@ -8,12 +8,13 @@ metadata:
   ms.author: gcordido
   ms.topic: interactive-tutorial
 title: How To Get Noticed
-summary: Summary
+summary: Getting noticed is the first step to land a job in tech. Learn tips and strategies to get noticed by a prospective employer.
 abstract: |
   In this module, you will: 
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
+
+  - Learn the basics of networking and some scenarios to start in.
+  - Determine the value of each of your past-experiences and define their uses as you look for a job.
+  - Build an eye-catching resume that not only showcases your skills, but you as a person.
 prerequisites: None
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
@@ -26,11 +27,10 @@ products:
 units:
   - learn.get-noticed.1-introduction
   - learn.get-noticed.2-networking
-  - learn.get-noticed.3-exercise-unit
-  - learn.get-noticed.4-resume-writing
-  - learn.get-noticed.5-resume-building
-  - learn.get-noticed.6-knowledge-check
-  - learn.get-noticed.7-summary
+  - learn.get-noticed.3-resume-writing
+  - learn.get-noticed.4-resume-building
+  - learn.get-noticed.5-knowledge-check
+  - learn.get-noticed.6-summary
 
 badge:
   uid: learn.get-noticed.badge

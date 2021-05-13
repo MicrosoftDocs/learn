@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-noticed.4-resume-building
+title: Building your resume
+metadata:
+  title: Building your resume
+  description: Description of your resume's sections and how to write them in an eye-catching way.
+  ms.date: 4/16/2021 
+  author: gcordido 
+  ms.author: gcordido 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-resume-building.md)]
