@@ -2,9 +2,9 @@ In this module, you learned about some of the foundational technology used to cr
 
 ## References
 
-* [Required tools for Mixed Reality development](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+* [Required tools for mixed reality development](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 * [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-* [Introduction to Azure Fundamentals](/learn/modules/intro-to-azure-fundamentals/)
+* [Introduction to Azure fundamentals](/learn/modules/intro-to-azure-fundamentals/)
 * [Input in Unity OpenXR](https://docs.unity3d.com/Packages/com.unity.xr.openxr@0.1/manual/input.html)
-* [Azure SignalR Service](https://dotnet.microsoft.com/apps/aspnet/signalr/service)
+* [Azure SignalR service](https://dotnet.microsoft.com/apps/aspnet/signalr/service)
 * [Create an Azure account](/learn/modules/create-an-azure-account/)

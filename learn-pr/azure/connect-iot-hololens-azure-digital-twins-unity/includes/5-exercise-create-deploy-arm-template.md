@@ -10,7 +10,7 @@ The ARM Template logic has been integrated into a Visual Studio solution that dr
 
 ## Download the Visual Studio solution and the ARM template
 
-1. Download the repository from GitHub To your local filesystem and take note of the location
+1. [Download the repository from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) To your local filesystem and take note of the location
 2. Unzip the repository  
 
 ## Log in to Azure using Azure CLI
