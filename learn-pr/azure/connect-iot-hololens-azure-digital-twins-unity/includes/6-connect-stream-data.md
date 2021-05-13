@@ -66,7 +66,7 @@ Configure your **DeviceSimulator** with your ADT connection parameters and authe
     | password | clientSecret |
     | tenant | tenantId |
 
-    :::image type="content" source="../media/prop-updater-expanded.png" alt-text="Screenshot of the Device Simulator solution in Visual Studio. The prop updater dot cs file is open and client, secret, and tenant id values are added." lightbox="../media/prop-updater.png":::
+    :::image type="content" source="../media/prop-updater-expanded.png" alt-text="Screenshot of the Device Simulator solution in Visual Studio. The prop updater dot cs file is open and client, secret, and tenant I D values are added." lightbox="../media/prop-updater.png":::
 
 3. Save your work in Visual Studio by selecting **File > Save All**
 

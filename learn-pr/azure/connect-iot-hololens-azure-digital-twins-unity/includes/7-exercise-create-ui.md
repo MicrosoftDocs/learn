@@ -8,7 +8,7 @@ Create ADT equipped User Interfaces to provide a window into operations data.
     - The **Bing Maps Operate** Prefab has additional components that load wind turbines using Addressables at runtime. The Addressable Asset System allows you to request an asset via its address. Once an asset (for example, a Prefab) is marked “addressable”, it generates an address, which can be called from a Unity application at runtime. Local and remotely stored assets are discovered by your application, along with any associated dependencies, and are returned.  
     - Turbine position can be changed via the Turbine Site Data **ScriptableObject**.   To alter the position of any turbine for placement at runtime, change the **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**.  Find these configuration parameters for your Digital Twin turbines under **Assets > ScriptableObjects > Turbine Site Data**.
 
-    :::image type="content" source="../media/scriptable-object-expanded.png" alt-text="Screenshot of the Unity editor with the bing map operate prefab running in the main scene." lightbox="../media/scriptable-object.png":::
+    :::image type="content" source="../media/scriptable-object-expanded.png" alt-text="Screenshot of the Unity editor with the Bing Maps operate prefab running in the main scene." lightbox="../media/scriptable-object.png":::
 
     > [!IMPORTANT]
     > Do not change any other parameters or characteristics on Addressables otherwise you will need to re-compile them, which is not covered in this module.
