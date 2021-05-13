@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
 title: Ensuring accessibility with developer tools
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/3-developer-tools.md)]

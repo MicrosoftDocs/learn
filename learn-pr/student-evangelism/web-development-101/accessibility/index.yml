@@ -19,11 +19,12 @@ prerequisites: |
   - A browser
   - Basic knowledge of HTML and CSS
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:
 - student
+- developer
 products:
 - microsoft-edge
 units:

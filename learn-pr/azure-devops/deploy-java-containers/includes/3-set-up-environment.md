@@ -129,7 +129,7 @@ This solution requires several Azure resources for deployment, which you create 
     az mysql server firewall-rule create \
       --name AllowAzureServices \
       --resource-group $rgName \
-      --server $dbServerName \
+      --server-name $dbServerName \
       --start-ip-address 0.0.0.0 \
       --end-ip-address 0.0.0.0
     ```

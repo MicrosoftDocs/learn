@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
 title: Ensuring links and images are accessible
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/4-links-images.md)]

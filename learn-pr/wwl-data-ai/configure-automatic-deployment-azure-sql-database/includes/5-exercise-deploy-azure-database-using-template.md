@@ -7,7 +7,7 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 1. Select the **Microsoft Edge** browser from the toolbar.
 1. Open a new tab and navigate to the following GitHub repository:
 
-    [https://github.com/Azure/azure-quickstart-templates/tree/master/201-sql-database-transparent-encryption-create](https://github.com/Azure/azure-quickstart-templates/tree/master/201-sql-database-transparent-encryption-create)
+    [https://github.com/Azure/azure-quickstart-templates/tree/master/201-sql-data-warehouse-transparent-encryption-create](https://github.com/Azure/azure-quickstart-templates/tree/master/201-sql-data-warehouse-transparent-encryption-create)
 
     :::image type="content" source="../media/dp-3300-module-66-lab-05.png" alt-text="Screenshot of the GitHub repository.":::
 

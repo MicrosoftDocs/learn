@@ -5819,6 +5819,31 @@
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/9-exercise-export-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-iot-central-apps-with-rest-api/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/8-export-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-iot-central-apps-with-rest-api/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/4-exercise-interactive-mode.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/5-exercise-setup-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/python-install-vscode/6-exercise-write-execute-first-script.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "redirect_document_id": false
     }
   ]
 }
