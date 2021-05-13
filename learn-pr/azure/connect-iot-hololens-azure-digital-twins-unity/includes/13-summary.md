@@ -10,7 +10,7 @@ Observing streaming data in an immersive setting on the HoloLens can be powerful
 * [SignalR Service – Real-time web](https://azure.microsoft.com/services/signalr-service/)
 * [Azure Functions serverless computes](https://azure.microsoft.com/services/functions/)
 * [Introduction to Azure IoT Hub](/azure/iot-hub/about-iot-hub)
-* [Azure Resource Manager overview - Azure Resource Manager](/azure/azure-resource-manager/management/overview)
+* [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview)
 * [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
 * [Architect your code for efficient changes and debugging with ScriptableObjects ](https://unity.com/how-to/architect-game-code-scriptable-objects#architect-events)
 * [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html)
