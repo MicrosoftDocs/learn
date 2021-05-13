@@ -6,7 +6,7 @@ With the Azure VMware Solution, you can run your VMware environment—or a singl
 The following table describes business needs and considerations where AVS may be a good choice for an organization.
 
 
-|AVS migration considerations   |     |
+|Business need  |  Description  |
 |---------|---------|
 |Migrate existing assets “as is”    |Take the fast path to the cloud. Replicate existing IT systems, apps, and workloads natively in Azure (also known as a “lift and shift” migration) without needing to change them beforehand.    | 
 |Reducing your datacenter footprint     | Enterprises looking to get out of the datacenter business can use Azure as a way to enable decommissioning legacy infrastructure, once they've brought over resources into the cloud   |

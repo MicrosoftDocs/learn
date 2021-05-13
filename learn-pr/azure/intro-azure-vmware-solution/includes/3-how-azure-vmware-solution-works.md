@@ -34,7 +34,7 @@ Azure VMware Solution (AVS) provides you with private clouds that contain vSpher
 
 Private clouds contain vSAN clusters built with dedicated, bare-metal Azure hosts. Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
 
-For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API. The minimum initial deployment is three hosts and can scale up to a maximum of 16 hosts per cluster. Multiple clusters can be deployed into different Azure regions. Hosts used to build or scale clusters come from an isolated pool of hosts. 
+For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API.
 
 Node min and maximums configuration:
 
