@@ -1,4 +1,4 @@
-Before you set up your Azure HPC Cache, there are some prerequisites that need to be met. In this unit, you'll discover the requirements that must be in place and other considerations before deploying an Azure HPC Cache solution.
+Before you set up Azure HPC Cache, there are some prerequisites that need to be met. In this unit, you'll discover the requirements and other considerations before deploying an Azure HPC Cache solution.
 
 ## Network requirements for HPC Cache
 
@@ -10,9 +10,9 @@ Azure HPC Cache has three network requirements:
 
 ### Set up custom DNS for HPC Cache
 
-If you plan to use servers in your data center, then you'll need to configure a DNS server so that Azure resources can resolve your internal storage server names.
+If you plan to use servers in your data center, you'll need to configure a DNS server so that Azure resources can resolve your internal storage server names.
 
-If you plan to use Azure-based storage like Azure NetApp Files or you plan to copy your data into Azure Blob, then you don't need to configure this separate DNS server.
+If you plan to use Azure-based storage, such as Azure NetApp Files, or you plan to copy your data into Azure Blob, then you don't need to configure a separate DNS server.
 
 In the Azure portal:
 
@@ -33,7 +33,7 @@ Follow these steps to add the DNS server to the virtual network in the Azure por
 
 The cache manages its own IP addresses to provide high availability. To avoid IP address conflicts, the cache must be in its own dedicated subnet with a range of at least 64 IP addresses.
 
-To provide high availability, the HPC Cache must be able to move IP addresses among its resources. If there are network hosts inside the subnet, the HPC Cache might use an IP address that was already assigned to another host. This creates a network conflict and causes issues with both hosts that share the same IP address.
+To provide high availability, HPC Cache must be able to move IP addresses among its resources. If there are network hosts inside the subnet, HPC Cache might use an IP address that was already assigned to another host. This creates a network conflict and causes issues with both hosts that share the same IP address.
 
 If you're running multiple caches, each one needs its own dedicated subnet.
 
@@ -55,7 +55,7 @@ Different storage servers use different TCP/UDP ports to access data. Use a tool
 
 ## Obtain Azure permissions for HPC Cache
 
-The cache instance needs to be able to create virtual network interfaces (NICs). The user creating the cache must have sufficient Azure privileges in the subscription to create NICs.
+The cache needs to be able to create virtual network interfaces (NICs). The user creating the cache must have sufficient Azure privileges in the subscription to create NICs.
 
 ## Set up NFS storage permissions for HPC Cache
 
