@@ -42,4 +42,4 @@ Let’s have a look at some basic zypper examples:
     sudo zypper up or sudo zypper update or sudo zypper patch 
     ```
 
-Have a look at the manual page of zypper or at the SUSE documentation for more helpful tips on how to simplify tasks. https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-sw-cl
+
