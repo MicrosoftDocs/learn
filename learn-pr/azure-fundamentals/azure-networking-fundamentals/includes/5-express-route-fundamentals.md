@@ -2,25 +2,27 @@ ExpressRoute lets you extend your on-premises networks into the Microsoft cloud 
 
 Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet. This allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet. For information on how to connect your network to Microsoft using ExpressRoute, see ExpressRoute connectivity models.
 
-[![Visualization that shows a high-level overview of the Azure ExpressRoute service.](../media/azure-expressroute-overview.png)](../media/azure-expressroute-overview-expanded.png#lightbox)
+:::image type="content" source="../media/azure-expressroute-overview-5520731d.png" alt-text="Visualization that shows a high-level overview of the Azure ExpressRoute service.":::
+
 
 As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is and how it integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options. As a result, you'll learn whether ExpressRoute can provide your company with the best possible network performance.
 
 Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
 
-- **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
-- **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
+ -  **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
+ -  **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
 There are several benefits to using ExpressRoute as the connection service between Azure and on-premises networks.
-- Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider. Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange.
-- Connectivity to Microsoft cloud services across all regions in the geopolitical region.
-- Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on.
-- Dynamic routing between your network and Microsoft via BGP.
-- Built-in redundancy in every peering location for higher reliability.
-- Connection uptime SLA.
-- QoS support for Skype for Business.
+
+ -  Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider. Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange.
+ -  Connectivity to Microsoft cloud services across all regions in the geopolitical region.
+ -  Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on.
+ -  Dynamic routing between your network and Microsoft via BGP.
+ -  Built-in redundancy in every peering location for higher reliability.
+ -  Connection uptime SLA.
+ -  QoS support for Skype for Business.
 
 ### Layer 3 connectivity
 
@@ -34,16 +36,16 @@ Each connectivity provider uses redundant devices to ensure that connections est
 
 ExpressRoute enables direct access to the following services in all regions:
 
-- Microsoft Office 365
-- Microsoft Dynamics 365
-- Azure compute services, such as Azure Virtual Machines
-- Azure cloud services, such as Azure Cosmos DB and Azure Storage
+ -  Microsoft Office 365
+ -  Microsoft Dynamics 365
+ -  Azure compute services, such as Azure Virtual Machines
+ -  Azure cloud services, such as Azure Cosmos DB and Azure Storage
 
 Office 365 was created to be accessed securely and reliably via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
 
 ### Across on-premises connectivity with ExpressRoute Global Reach
 
-You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, assume that you have a private datacenter in California connected to ExpressRoute in San Francisco Bay area in California. You have another private datacenter in Texas connected to ExpressRoute in Dallas. With ExpressRoute Global Reach, you can connect your private datacenters through two ExpressRoute circuits. Your cross-datacenter traffic will travel through the Microsoft network.
+You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, assume that you have a private datacenter in California connected to ExpressRoute in Silicon Valley. You have another private datacenter in Texas connected to ExpressRoute in Dallas. With ExpressRoute Global Reach, you can connect your private datacenters through two ExpressRoute circuits. Your cross-datacenter traffic will travel through the Microsoft network.
 
 ### Dynamic routing
 
@@ -53,11 +55,12 @@ ExpressRoute uses the Border Gateway Protocol (BGP) routing protocol. BGP is use
 
 ExpressRoute supports three models that you can use to connect your on-premises network to the Microsoft cloud:
 
-- CloudExchange colocation
-- Point-to-point Ethernet connection
-- Any-to-any connection
+ -  CloudExchange colocation
+ -  Point-to-point Ethernet connection
+ -  Any-to-any connection
 
-[![Azure connectivity models](../media/azure-connectivity-models.png)](../media/azure-connectivity-models-expanded.png#lightbox)
+:::image type="content" source="../media/azure-connectivity-models-4deabab1.png" alt-text="Visualization of Azure connectivity models.":::
+
 
 ### Colocation at a cloud exchange
 
