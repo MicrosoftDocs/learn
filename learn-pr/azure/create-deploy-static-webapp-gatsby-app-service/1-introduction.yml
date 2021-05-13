@@ -6,7 +6,7 @@ metadata:
   description: Create a Static Web App with Gatsby and publish it to Azure using the Publish an Azure Static Web App service.
   author: softchris
   ms.author: chnoring
-  ms.date: 05/08/2020
+  ms.date: 11/18/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

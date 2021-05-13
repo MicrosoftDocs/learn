@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-web-application-firewall.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose a company wants to stop threat actors from submitting malicious requests to a web app. Which of the following Azure Web Application Firewall modes should the company use?"
+    choices:
+    - content: "Detection"
+      isCorrect: false
+      explanation: "Incorrect. Detection mode only logs a rule violation. It doesn't stop a request from being submitted."
+    - content: "Prevention"
+      isCorrect: true
+      explanation: "Correct. Prevention mode not only logs a rule violation, but it also stops the request from being submitted to the web app."
+    - content: "Exclusions"
+      isCorrect: false
+      explanation: "Incorrect. Exclusions are an Azure Web Application Firewall feature that enables you to ignore specified HTTP/HTTPS request attributes."
+  - content: "Suppose a company wants to deploy Azure Web Application Firewall to protect a web application that accepts user data from a form. Which of the following best describes how Azure Web Application Firewall protects the app?"
+    choices:
+    - content: "Custom rules"
+      isCorrect: false
+      explanation: "Incorrect. A custom rule is a user-defined firewall rule that helps protect an app from a threat not covered by the managed rules offered by Azure Web Application Firewall."
+    - content: "Remote file inclusion"
+      isCorrect: false
+      explanation: "Incorrect. Remote file inclusion is an exploit where an attacker sends the server specially configured text that passes a remote file to a script's `include` statement."
+    - content: "Sanitizing input"
+      isCorrect: true
+      explanation: "Correct. Sanitizing input refers to removing or disabling dangerous text elements of user-generated input."
+  - content: "Suppose a company wants to deploy a web app and is trying to decide whether to use in-house developers to code against common exploits. Which of the following scenarios isn't an argument in favor of using Azure Web Application Firewall?" 
+    choices:
+    - content: "Your web app includes user accounts and stores sensitive or proprietary data."
+      isCorrect: false
+      explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users, so Azure Web Application Firewall is a good choice for protecting that data."
+    - content: "Your web app is made available to employees, customers, and vendors using a private network connection."
+      isCorrect: true
+      explanation: "Correct. Private access to the virtual network where the web app resides means that app traffic never goes over the public internet. There is no need to protect the app against common web exploits."
+    - content: "Your web app development team lacks security expertise, time, and money."
+      isCorrect: false
+      explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."

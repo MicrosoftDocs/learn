@@ -4,27 +4,25 @@ At this stage in your project research, your function application has been deplo
 
 In this exercise, you'll update your function project configuration files to support both log streaming and Application Insights. You'll also learn how to add custom tracking and Application Insight event triggers to your project code.
 
-## Enabling Application Insights
+## Stream logs in real time
 
-Application Insights are enabled through the Azure portal. To enable Application Insights, use the following steps.
+Now you have your Function app deployed and running on Azure. In case for troubleshoot, you can use the simple Azure CLI command to get real time log streaming from the app.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
+1. Copy paste the value for your `functionAppName` and `resourceGroup` from *pom.xml*.
 
-1. Select All resources from the left pane.
+    ```bash
+    code pom.xml
+    ```
 
-1. Select **All resources** from the menu on the left.
+1. Use the `az webapp log tail -n <functionAppName> -g <resourceGroup>` command to stream logs, for example:  
 
-1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*.
+    ```azcli
+    az webapp log tail -n functest-20210201081801273 -g learn-f0af729c-0493-4b45-a5b8-d6b4783b03da
+    ```
 
-1. Expand the **Functions** list, then expand the tree for your **HttpExample** function. Click **Monitor**, and then click **Configure**.
+1. Access your function app to generate some logs.
 
-    ![Image showing where to enable Application Insights](../media/8-enable-application-insights.png)
-
-1. Accept the defaults and click **OK**.
-
-Azure will configure Application Insights for your function. You may see a warning about the Application Insights SDK, which you can safely ignore.
-
-## Adding instrumentation to your Java project
+## Adding instrumentation to your Java project for Application Insights
 
 Now that you have enabled Application Insights for your application, your next task to enable it in your application. To enable application logging and Application Insights, you'll need to modify the configuration files to include the requisite libraries and other dependencies.
 

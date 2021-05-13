@@ -30,7 +30,7 @@ There are two principal routing tables: system and custom.
 
 ### System routing tables
 
-Azure automatically creates a set of default routing tables for the virtual network and each subnet mask within the virtual network. These system routes are fixed and can't be overridden or deleted. However, you can override the default settings by using a custom routing table.
+Azure automatically creates a set of default routing tables for the virtual network and each subnet mask within the virtual network. These system routes are fixed and can't be edited or deleted. However, you can override the default settings by using a custom routing table.
 
 A typical default routing table might look like this:
 
@@ -80,7 +80,7 @@ You can connect your virtual networks in any of several ways.  You can use Azure
 
 When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways can also be used for connections between virtual networks in Azure.
 
-Implementing a VPN gateway requires two or more virtual machines to be deployed to the subnet that you create when you set up the virtual network. In this instance, the subnet is also known as the gateway subnet. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can configure these virtual machines directly.
+Implementing a VPN gateway requires two or more virtual machines to be deployed to the subnet that you create when you set up the virtual network. In this instance, the subnet is also known as the gateway subnet. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can't configure these virtual machines directly.
 
 When you create a gateway, several topologies are available. These topologies, also known as gateway types, determine what's configured and the expected connection type.
 

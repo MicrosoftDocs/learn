@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.go-to-market-commercial-marketplace
+metadata:
+  title: Go to market through the commercial marketplace
+  description: This module provides tips and best practices to help organizations create their business plan for success in the commercial marketplace
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Go to market through the commercial marketplace
+summary: This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace
+abstract: |
+  In this module, you will:
+  - Identify ways to align the different departments in your organization
+  - Learn best practices for optimizing your commercial marketplace offer
+  - Learn about commercial marketplace sales channels
+  - Learn how to access Marketplace Rewards benefits in Partner Center
+iconUrl: /learn/achievements/ccc-commercial-marketplace/go-to-market-commercial-marketplace.svg
+levels:
+- beginner
+prerequisites: |
+  - None
+roles:
+- business-user
+- business-owner
+- technology-manager
+- administrator
+products:
+- azure
+- dynamics-365
+- m365
+- office-365
+- power-platform
+units:
+- learn.go-to-market-commercial-marketplace.1-introduction
+- learn.go-to-market-commercial-marketplace.2-get-organization-ready
+- learn.go-to-market-commercial-marketplace.3-sales-channels
+- learn.go-to-market-commercial-marketplace.4-optimize-listing
+- learn.go-to-market-commercial-marketplace.5-lead-management
+- learn.go-to-market-commercial-marketplace.6-marketplace-rewards-program
+- learn.go-to-market-commercial-marketplace.7-knowledge-check
+- learn.go-to-market-commercial-marketplace.8-summary
+badge:
+  uid: learn.go-to-market-commercial-marketplace.badge

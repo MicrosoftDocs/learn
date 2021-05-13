@@ -1,54 +1,62 @@
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, in this case the *Gollum* event, and how to make your webhook callback to your function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
 
 ## Setup
 
 1. Using your web browser, sign in to your [GitHub account](https://www.github.com).
 
-1. Create a new **public** repository by clicking the **New** button and give it a meaningful name such as **LearnWebhookTest**.
+1. Create a new repository by selecting **New** in the left menu pane. The **Create a new repository** page appears.
 
-1. Select the **Wiki** tab.
+1. In the **Repository name** box, enter a meaningful name such as **LearnWebhookTest**.
 
-1. Select **Create the first page**.
+1. Select **Public** to activate your wiki module, and find it in the menu.
 
-1. Add some text, and then select *Save Page*.
+1. Select **Create repository**. The **Quick setup** page appears.
 
-## Add a webhook for the Gollum Event
+1. Select the **creating a new file** link.
 
-The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repo's wiki is created or updated. 
+1. In the top menu bar, select the **Wiki** tab. A **Welcome** page appears.
 
-1. Go back to main page for your repository.
+1. Select **Create the first page**. The **Create new page** template appears.
 
-1. Select the **Settings** tab.
+1. Add some text, and select **Save Page**.
 
-1. Select **Webhooks** in the navigation panel to the left of the page.
+## Add a webhook for the Gollum event
 
-1. Select the **Add webhook** button on the top-right.
+The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repository's wiki is created or updated.
 
-1. Set the payload to the URL for your function app's function from the previous exercise. Remember that it looks similar to this:
+1. In the right **Pages** box, select **Home** to return to the home page for your repository.
+
+1. In the top menu bar, select the **Settings** tab.
+
+1. In the left menu pane, select **Webhooks**.
+
+1. Select **Add webhook** on the top-right. You may have to confirm your password for GitHub.
+
+1. In the **Payload URL** box, set the payload to the URL for your function app's function from the previous exercise. Remember that it looks similar to this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
     ```
 
-1. Set the content type to **application/json**.
+1. In the **Content type** dropdown list, select **application/json**.
 
-1. In the section **Which events would you like to trigger this webhook?**, select the radio button labeled **Let me select individual events**.
+1. In the section **Which events would you like to trigger this webhook?**, select **Let me select individual events**.
 
-1. Select the **Wiki** checkbox. Make sure no other check boxes are selected.
+1. Scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected.
 
-1. At the bottom of the page, ensure **Active** is checked and select **Add webhook**.
+1. At the bottom of the page, ensure **Active** is checked, and select **Add webhook**.
 
-1. Verify that your new webhook appears when the **Webhooks** page is displayed.
+1. Verify that your new webhook appears when the **Webhooks** page reappears.
 
 ## Test the webhook
 
-1. In the GitHub portal for your repository, click the **Wiki** tab.
+1. In the GitHub portal for your repository, in the top menu bar, select the **Wiki** tab.
 
 1. Select the page that you created earlier.
 
 1. Select **Edit**.
 
-1. In the text area of the page, enter the following text: 
+1. In the text area of the page, enter the following text:
 
     ```text
     Testing Webhook
@@ -56,9 +64,9 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
 
 1. Select **Save Page** to save your update.
 
-1. Select the **Settings** tab.
+1. In the top menu bar, select the **Settings** tab.
 
-1. Click **Webhooks** in the navigation panel on the left.
+1. IN the left menu pane, select **Webhooks**.
 
     > [!NOTE]
     > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that your function app wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
@@ -67,7 +75,7 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
 
 1. Scroll down to the **Recent Deliveries** section.
 
-1. Select the latest delivery entry by clicking on the ellipsis (**...**).
+1. Select the latest delivery entry by selecting the ellipsis (**...**).
 
     You'll see the *Header* information, including the *Event Type*:
 
@@ -81,7 +89,7 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
     X-GitHub-Event: gollum
     ```
 
-   You'll also see that the payload contains information indicating that your wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the example shown below:
+   You'll also see that the **Payload** section contains information indicating that your wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the example shown below:
 
     ```json
         "pages": [
@@ -105,6 +113,6 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
         }
     ```
 
-2. Select the **Response** tab.
+1. In the **Recent Deliveries** section, select the **Response** tab.
 
-    You'll see the response message generated by the Azure function. For this example, the body should contain the message. *Please pass a name on the query string or in the request body*.
+    You'll see the response message generated by the Azure function. For this example, the body should contain the message. *This HTTP triggered function executed successfully. Pass a name on the query string or in the request body for a personalized response*.

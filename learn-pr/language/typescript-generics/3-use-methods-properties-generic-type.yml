@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.3-use-methods-properties-generic-type
+title: Use the methods and properties of a generic type
+metadata:
+  title: Use the methods and properties of a generic type
+  description: Learn about the use of generic constraints to limit types and check the type of a generic variable by using a type guard.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-methods-properties-generic-type.md)]

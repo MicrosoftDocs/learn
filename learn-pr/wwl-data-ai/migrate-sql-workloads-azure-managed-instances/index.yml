@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances
 metadata:
-  title: Migrate SQL Workloads to Azure Managed Instances
-  description: "Migrate SQL Workloads to Azure Managed Instances"
-  ms.date: 03/31/2020
+  title: Migrate SQL workloads to Azure Managed Instances
+  description: "Migrate SQL workloads to Azure Managed Instances"
+  ms.date: 01/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate SQL Workloads to Azure Managed Instances
+title: Migrate SQL workloads to Azure Managed Instances
 summary: Learners will be able to demonstrate the benefits and processes for moving a SQL Server database to an Azure SQL Database Managed Instance.
 abstract: |
   By the end of this module, you'll be able to:

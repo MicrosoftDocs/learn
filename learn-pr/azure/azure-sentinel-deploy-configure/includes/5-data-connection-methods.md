@@ -65,6 +65,6 @@ Some Azure security services and features that help secure your VMs and storage 
 - **Azure Security Center**: Security Center helps prevent, detect, and respond to threats to your VMs.
 - **Encryption**: Azure Disk Encryption provides encryption at the operating system level, and server-side encryption occurs at the platform level.
 - **Azure Key Vault and SSH keys**: Azure Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history.
-- **Managed identities for Azure resources**: Azure AD provides Azure services with an automatically managed identity in Azure AD.
+- **Managed identities for Azure resources**: Managed identities for Azure resources provide Azure services with an automatically managed identity in Azure AD.
 - **Policies**: Policies enable an organization to enforce various conventions and rules throughout the enterprise.
 - **RBAC**: Azure RBAC lets you segregate duties within your team. You can also limit access to your VM to the users who need it to do their jobs.

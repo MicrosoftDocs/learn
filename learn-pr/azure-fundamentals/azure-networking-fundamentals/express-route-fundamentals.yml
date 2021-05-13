@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-networking-fundamentals.express-route-fundamentals
-title: ExpressRoute fundamentals
+title: Azure ExpressRoute fundamentals
 metadata:
-  title: ExpressRoute fundamentals
+  title: Azure ExpressRoute fundamentals
   description: In this unit, you'll learn about Azure ExpressRoute.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

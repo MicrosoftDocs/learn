@@ -8,7 +8,7 @@ Here you'll open the URLs for the origin server and the link to the CDN-publishe
 
 1. Open a web browser.
 
-1. In the address bar, enter the URL to your origin website in the form **storageaccountnameXXXX.web.core.windows.net** from the previous exercise. **XXXX** is the random number assigned to your site. Your original website should appear.
+1. In the address bar, enter the URL to your origin website in the form **storageaccountnameXXXX.Z22.web.core.windows.net** from the previous exercise. **XXXX** is the random number assigned to your site. Your original website should appear.
 
 1. Open another browser tab.
 

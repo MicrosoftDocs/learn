@@ -9,10 +9,10 @@ By the end of this module, you will have mastered your use of Git inside of Visu
 ## Learning objectives
 
 In this module, you will:
-- Utilize the Command Palette in Visual Studio to perform many Git tasks, such as cloning repositories and creating branches.
-- Take visual cues from Visual Studio Code to understand the status of your work.
-- Harness the Source Control view in Visual Studio Code to stage and unstage changes and create commits.
-- Uncover numerous time-saving shortcuts that are tucked into the Visual Studio Code user interface.
+
+- Perform common GitHub tasks by using the Command Palette in Visual Studio.
+- Monitor the status of your work
+- Commit your files to your repositories from the Source Control view
 
 ## Prerequisites
 

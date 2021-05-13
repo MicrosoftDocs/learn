@@ -53,13 +53,16 @@ You'll now see an **api** folder in the Visual Studio Code explorer. The **api**
 
 Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that now.
 
-### Install the Azure Static Web Apps extension for Visual Studio Code
+### Install the Azure Functions extension for Visual Studio Code
 
 You can create and manage Azure Functions applications the Azure Functions extension for Visual Studio Code.
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&azure-portal=true) and install the **Azure Functions** extension for Visual Studio Code.
 1. When the extension tab loads in Visual Studio Code, click **Install**.
 1. After installation is complete, click **Reload**.
+
+> [!NOTE]
+> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
 
 ### Create the function
 

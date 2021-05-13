@@ -16,7 +16,7 @@ The admin account provides a quick option to try a new registry. You enable the 
 
 ## Enable the registry admin account
 
-In this exercise, we'll enable the registry admin account and use it to deploy your image to an Azure Container Instance from the command line.
+In this exercise, we'll enable the registry admin account, and use it to deploy your image to an Azure Container Instance from the command line.
 
 1. Run the following command in the Cloud Shell to enable the admin account on your registry.
 
@@ -24,7 +24,7 @@ In this exercise, we'll enable the registry admin account and use it to deploy y
     az acr update -n $ACR_NAME --admin-enabled true
     ```
 
-1. Now run the following command in the Cloud Shell to retrieve the username and password for the admin account you enabled in the preceding step.
+1. Run the following command in the Cloud Shell to retrieve the username and password for the admin account you enabled in the preceding step.
 
     ```azurecli
     az acr credential show --name $ACR_NAME
@@ -48,12 +48,12 @@ In this exercise, we'll enable the registry admin account and use it to deploy y
         --registry-password [password]
     ```
 
-1. Get the IP address of the Azure container instance using the following command.
+1. Get the IP address of the Azure container instance running the following command.
 
     ```azurecli
     az container show --resource-group  learn-deploy-acr-rg --name acr-tasks --query ipAddress.ip --output table
     ```
 
-1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:
+1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, the following results appear.
 
-:::image type="content" source="../media/hello.png" alt-text="Screenshot of a browser window that shows a webpage with text that reads: Hello World. Version: 9.11.2." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/hello.png" alt-text="Screenshot of a browser window that shows a webpage with text that reads: Hello World. Version: 9.11.2." loc-scope="other"::: <!-- no-loc -->

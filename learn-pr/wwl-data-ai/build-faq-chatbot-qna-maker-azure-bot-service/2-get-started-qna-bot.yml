@@ -3,10 +3,10 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.get-started-qna-bot
 title: Get started with QnA Maker and Azure Bot Service
 metadata:
   title: Get started with QnA Maker and Azure Bot Service
-  description: "Learn how the QnA Maker service and Azure Bot Service can be combined to create a bot"
-  ms.date: 09/13/2020
+  description: "Get started with QnA Maker and Azure Bot Service"
+  ms.date: 02/18/2021
   author: benjiang
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

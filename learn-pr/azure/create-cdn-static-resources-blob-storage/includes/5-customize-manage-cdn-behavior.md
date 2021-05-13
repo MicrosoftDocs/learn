@@ -24,9 +24,6 @@ You can configure the CNAME record and publish it if your web server isn't yet o
 |----------------------|-------|-----------------------------|
 | cdnverify.www.contoso.com      | CNAME | cdnverify.contoso.azureedge.net. |
 
-    Address (left field)        type      Points to (Right field)
-  cdnverify.www.contoso.com     CNAME   cdnverify.contoso.azureedge.net.
-
 Typically, you would configure this record with a Time to Live (TTL) of 1 hour.
 
 When you've configured the cdnverify subdomain and the CNAME for the domain mapping, you can now add the custom domain.
@@ -43,7 +40,7 @@ If the custom domain name resolves to the endpoint hostname, select **Add**. Now
 
 ## Compressing files
 
-Azure CDN can improve performance by compressing to files before they're delivered. Files are then decompressed by the receiving browser. How this activity applies depends on whether the file is originally compressed on the origin server or not.
+Azure CDN can improve performance by compressing the files before they're delivered. Files are then decompressed by the receiving browser. How this activity applies depends on whether the file is originally compressed on the origin server or not.
 
 Azure CDN passes along the compressed files unaltered if you enable compression on files hosted on your origin server. Azure CDN dynamically compresses uncompressed files on the origin server that is of a type that can be compressed. It then stores the compressed files on the POP. This process improves the client experience and site performance.
 

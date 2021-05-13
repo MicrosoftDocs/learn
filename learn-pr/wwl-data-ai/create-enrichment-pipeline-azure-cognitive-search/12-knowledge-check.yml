@@ -3,8 +3,8 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your learning."
-  ms.date: 10/15/2020
+  description: "Knowledge check"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,39 +15,17 @@ content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   questions:
-  - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure Cognitive Search object must you create?"
+  - content: "You want to include a sentiment score for each document in an index. What should you do?"
     choices:
-    - content: "Synonym map"
+    - content: "Create a custom skill that uses an Azure Machine Learning model to predict the sentiment for a document"
       isCorrect: false
-      explanation: "Incorrect. A synonym map does not integrate AI skills into the indexing process."
-    - content: "Skillset"
+      explanation: "Incorrect. There is no need to create a custom skill in this scenario."
+    - content: "Create a custom skill that calls the Text Analytics cognitive service to predict the sentiment of each document."
+      isCorrect: false
+      explanation: "Incorrect. There is no need to create a custom skill in this scenario."
+    - content: "Add the built-in Sentiment skill to the skillset used by the indexer."
       isCorrect: true
-      explanation: "Correct. A skillset enables you to define an enrichment pipeline composed of AI skills."
-    - content: "Scoring Profile"
-      isCorrect: false
-      explanation: "Incorrect. A scoring profile does not integrate AI skills into the indexing process."
-  - content: "You want to enrich an index by extracting any geographical locations mentioned in text content into an index field. Which built-in skill should you use?"
-    choices:
-    - content: "Entity Recognition"
-      isCorrect: true
-      explanation: "Correct. The entity recognition skill can be used to extract locations mentioned in text."
-    - content: "Image Analysis"
-      isCorrect: false
-      explanation: "Incorrect. The image analysis skill does not extract information from text content."
-    - content: "Key Phrase Extraction"
-      isCorrect: false
-      explanation: "Incorrect. The key phrase extraction skill does not identify location entities."
-  - content: "You plan to use the OCR skill to extract text from scanned letters that are embedded in PDF documents? What should you do?"
-    choices:
-    - content: "Save each image as a JPEG in a subfolder and create a separate data source for the image files."
-      isCorrect: false
-      explanation: "Incorrect. You do not need to manually separate the image data from the documents to be indexed."
-    - content: "Use an Image Analysis skill to extract an image description, and then use the OCR skill to read the text in the extracted captions"
-      isCorrect: false
-      explanation: "Incorrect. The Image Analysis skill does not extract text from images - it generates an AI-based description of the image; and the OCR skill doesn't accept text as an input, only images."
-    - content: "Configure the indexer with an imageAction parameter of generateNormalizedImages"
-      isCorrect: true
-      explanation: "Correct. Setting the imageAction to generateNormalizedImages in the indexer causes it to extract the image data for processing by skills, such as the OCR skill."
+      explanation: "Correct. The built-in sentiment skill can be used to accomplish the goal in this scenario."
   - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure Cognitive Search indexing process. What should you do?"
     choices:
     - content: "Add a WebApiSkill to a skillset, referencing the Azure function's URI"

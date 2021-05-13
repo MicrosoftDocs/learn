@@ -62,7 +62,8 @@ And then create the Azure Spring Cloud instance:
 az spring-cloud create \
     -g "$RESOURCE_GROUP_NAME" \
     -n "$SPRING_CLOUD_NAME" \
-    --sku standard
+    --sku standard \
+    --enable-java-agent
 ```
 
 This command takes time to complete, you can continue reading while it completes.

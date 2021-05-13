@@ -1,6 +1,6 @@
-As a data engineer, your job isn't finished once a database and its data have been migrated. You'll need to check apps can access the new location, and that there hasn't been any performance degradation.
+As a data engineer, your job isn't finished once a database and its data have been migrated. You'll need to check that apps can access the new location, and that there hasn't been any performance degradation.
 
-Having chosen how to move your on-premises databases into an Azure VM, and having migrated them, you'll now check your company's applications can access the new database servers. For the databases that you chose to upgrade, or change compatibility level, you'll also want to validate the databases as still performant.
+Having chosen how to move your on-premises databases into an Azure VM, and having migrated them, you'll now check your bike manufacturing company's applications can access the new database servers. For the databases that you chose to upgrade, or change compatibility level, you'll also want to validate that the databases are still performing well.
 
 In this unit, you'll look at the final steps of migrating a SQL Server to a VM. You'll note that all the apps need to update their connection strings. Then you'll check how the databases are performing, and take action where things can be improved.
 

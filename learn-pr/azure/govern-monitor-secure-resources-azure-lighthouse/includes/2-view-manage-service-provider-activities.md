@@ -2,23 +2,23 @@ Lamna Healthcare has seen great results with Azure Lighthouse so far. Your compa
 
 ## How Azure Lighthouse benefits Lamna Healthcare
 
-Lamna Healthcare uses Azure Lighthouse to provision and manage role-based access control (RBAC) so Relecloud users can access their Azure environments.  The company prefer Azure Lighthouse to Azure Active Directory B2B. By using Azure delegated resource management, managed service providers (MSPs) like Relecloud no longer need to create administrator accounts (including contributor, security administrator, backup administrator, and more) in your company’s tenants. This allows MSPs like Relecloud to manage the life cycle of delegated administrators within their own Microsoft Azure Active Directory (Azure AD) tenant. MSPs can also add user accounts to the user group in their Azure AD tenant while, at Lamna Healthcare, you make sure those groups have the required access to manage their resources. To revoke access when an employee leaves the MSP’s organization, the user is removed from the specific group access that was delegated.
+Lamna Healthcare uses Azure Lighthouse to provision and manage role-based access control (RBAC) so Relecloud users can access their Azure environments.  The company prefer Azure Lighthouse to Azure Active Directory B2B. By using Azure delegated resource management, managed service providers (MSPs) like Relecloud no longer need to create administrator accounts (including contributor, security administrator, backup administrator, and more) in your company’s tenants. This enables MSPs like Relecloud to manage the lifecycle of delegated administrators within their own Microsoft Azure Active Directory (Azure AD) tenant. MSPs can also add user accounts to the user group in their Azure AD tenant while, at Lamna Healthcare, you make sure those groups have the required access to manage their resources. To revoke access when an employee leaves the MSP’s organization, the user is removed from the specific group access that was delegated.
 
-You can manage and view information on Relecloud and other service providers managing your subscriptions and resources. Also, you can delegate specific resources and browse for the newest service provider offers, all within a single pane.
+You can manage and view information on Relecloud and other service providers managing your subscriptions and resources. Also, you can delegate specific resources, and browse for the newest service provider offers, all within a single pane.
 
-You use controls within Azure Lighthouse to understand if your service providers are using Azure Active Directory Privileged Identity Management   (Azure AD PIM) or Multi-Factor Authentication (MFA) for their users.
+You use controls within Azure Lighthouse to understand if your service providers are using Azure Active Directory Privileged Identity Management (Azure AD PIM) or Multi-Factor Authentication (MFA) for their users.
 
 ## View and manage service providers  
 
-To consolidate the management experience, you can view all of the service providers that have access to your subscriptions or resource groups through Azure delegated resource management.  You do this in the Azure portal, by searching for "Azure Lighthouse", and selecting "Manage service provider offers":
+To consolidate the management experience, you can view all of the service providers that have access to your subscriptions or resource groups through Azure delegated resource management. You do this in the Azure portal, by searching for "Azure Lighthouse", and selecting "Manage service provider offers".
 
 :::image type="content" source="../media/2-search-azure-lighthouse.png" alt-text="Search for Azure Lighthouse ":::
 
-The Service providers pane in the Azure portal is where you’ll view information about your company’s service providers. From the same location, you can also shop for new service provider offers, and delegate specific resources to service providers:
+The Service providers pane in the Azure portal is where you’ll view information about your company’s service providers. From the same location, you can also shop for new service provider offers, and delegate specific resources to service providers.
 
 :::image type="content" source="../media/2-service-provider-overview.png" alt-text="View service providers":::
 
-To find information about service providers,  select **Service provider offers**.  You can add new public or private offers from service providers here:
+To find information about service providers, select **Service provider offers**. You can add new public or private offers from service providers here:
 
 Public offers:
 
@@ -46,17 +46,17 @@ By selecting the **Delegations** pane on the left, you see which resource groups
 
 Relecloud must be delegated for resource management before users can access and manage your company’s resources and subscriptions. If you've accepted an offer from a service provider, but not yet delegated anything to them, you’ll see a notification in the **Service provider offers** pane. This helps you understand what you need to do before a service provider can access your company’s resources or subscriptions. You'll have to either select **Delegate subscriptions** or **Delegate resource groups**, to specify which resources or subscriptions you want to configure for delegation.
 
-In the following video, you’ll see how you do these steps to delegate subscriptions and resource groups to Relecloud, your managed service provider:
+In the following video, you’ll see how you do these steps to delegate subscriptions and resource groups to Relecloud, your managed service provider.
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B1Uq]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find additional information, where applicable, in captions.
+> This is a silent video. You'll find additional information, where applicable, in captions.
 
 ### Audit delegations
 
-Your company has many different subscriptions and resources, so it's especially useful to help keep track of delegations.  You can use **Azure Policy built-in policy definition** for Azure Lighthouse to audit delegation of scopes to service providers. Then you can check for compliance of delegated subscriptions or resources against the policy, and stay alert for any unexpected delegations.
+Your company has many different subscriptions and resources, so it's especially useful to help keep track of delegations. You can use **Azure Policy built-in policy definition** for Azure Lighthouse to audit delegation of scopes to service providers. Then, you can check for compliance of delegated subscriptions or resources against the policy, and stay alert for any unexpected delegations.
 
 Your company must have at least one user who has the Owner built-in role in Azure. This user can add and remove offers, and delegate resources.
 
@@ -71,25 +71,25 @@ You use the activity log to see a list of activities, the status, and the date a
 You can view the activity login Azure Monitor, under the **Monitor** pane in the Azure portal.
 
 Also, you can limit the view to show specific subscriptions, and fetch Azure activity log events in an automated way by connecting your own tools to the REST API for further analysis.
+
 In the following video, you’ll see how to use the activity log to monitor for activities across your managed services:
 
-  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vs]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find additional information in captions.
+> This is a silent video. You'll find additional information in captions.
 
 ### Set alerts to monitor critical operations
 
-You use activity log alerts to monitor critical operations done by service providers.  You can set alerts to be triggered if a virtual machine is removed in a certain resource group, or if any administrative actions are done on a subscription.
+You use activity log alerts to monitor critical operations done by service providers. You can set alerts to be triggered if a virtual machine is removed in a certain resource group, or if any administrative actions are done on a subscription.
 
 :::image type="content" source="../media/2-set-alerts.png" alt-text="Alerts":::
 
 ### Query logs for analysis
 
-You create log queries to analyze and audit activity. You can query all administrative actions done on subscriptions, or a particular subscription, for an audit. You use Log Analytics to create and run queries.  You choose to run a query to find out which devices have sent heartbeats within the last hour. Write your query using the Kusto Query Language (KQL), like this:
+You create log queries to analyze and audit activity. You can query all administrative actions done on subscriptions, or a particular subscription, for an audit. You use Log Analytics to create and run queries. You choose to run a query to find out which devices have sent heartbeats within the last hour. Write your query using the Kusto Query Language (KQL), as follows.
 
-```sql
+```kql
 //List all computer heartbeats from the last hour.
 
 Heartbeat
@@ -97,7 +97,7 @@ Heartbeat
 
 ```
 
-Write the query into the Log Analytic query editor, and select **Run**:
+Write the query into the Log Analytic query editor, and select **Run**.
 
 :::image type="content" source="../media/2-query-log-analytics.png" alt-text=" Run a query":::
 

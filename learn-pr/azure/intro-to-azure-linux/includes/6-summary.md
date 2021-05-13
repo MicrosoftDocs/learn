@@ -8,7 +8,7 @@ Regardless of your choice, Azure provides many services, features, and tools you
 
 ## Additional reading
 
-The [Azure Fundamentals learning path](https://docs.microsoft.com/learn/paths/azure-fundamentals/) on Microsoft Learn provides a comprehensive overview of cloud concepts and Azure services.
+[Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) provides a comprehensive overview of cloud concepts and Azure services.
 
 ### Linux on Azure
 
@@ -17,7 +17,7 @@ The [Azure Fundamentals learning path](https://docs.microsoft.com/learn/paths/az
   - [Red Hat solutions on Azure](https://azure.microsoft.com/overview/linux-on-azure/red-hat/#marketplace), including Azure Red Hat OpenShift, JBoss EAP, and Ansible Automation
   - [Red Hat bring your own subscription](https://docs.microsoft.com/azure/virtual-machines/workloads/redhat/byos)
 - [SUSE on Azure](https://azure.com/suse)
-  - [SUSE bring your own subscription](https://www.suse.com/media/faq/suse_public_cloud_program_bring_your_own_subscription_faq_external.pdf)
+  - [SUSE bring your own subscription](https://www.suse.com/news/suse-invites-customers-to-bring-your-own-subscription-to-the-public-cloud/)
 
 ### Documentation
 

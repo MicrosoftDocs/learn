@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.introduction-to-data-streaming.data-streams
+title: Understand data streams
+metadata:
+  title: Understand data streams
+  description: "Understand data streams"
+  ms.date: 04/01/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-data-streams.md)]

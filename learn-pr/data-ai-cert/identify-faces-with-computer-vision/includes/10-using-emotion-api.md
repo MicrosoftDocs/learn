@@ -1,11 +1,11 @@
 To recognize emotion, the Emotion API sends an authorized web request to another subscription endpoint. The primary way to detect faces in images is the emotion *Recognize* method. The Recognize method can use either an uploaded an image (a binary file) or a publicly available image URL.
 
 > [!TIP]
-> You can practice calling the Emotion API by using the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true). The process is identical to the one we followed for face detection.
+> You can practice calling the Emotion API by using the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236/console). The process is identical to the one we followed for face detection.
 
 ## Call the Emotion API
 
-The Emotion API Recognize method endpoint is at <https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize>. Notice that the location *westus* is part of this URL. You'll need to adjust this if your service is in a different location. 
+The Emotion API Recognize method endpoint is at <https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236>. Notice that the location *westus* is part of this URL. You'll need to adjust this if your service is in a different location. 
 
 You'll need to provide an image payload to process as part of the `POST` request to the method. The image can be in one of the following formats:
 
@@ -20,7 +20,7 @@ You'll need to provide an image payload to process as part of the `POST` request
 To create and send a binary file payload to the Recognize method, you'll use standard, language-specific methods. For example, in C#, a binary payload can come from an image (typically containing a human face) that's on a local computer:
 
 ```csharp
-string uri = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize";
+string uri = "https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236";
 FileStream fileStream = new FileStream(@"c:\\Sample Images\image_01.jpg", FileMode.Open, FileAccess.Read);
 BinaryReader binaryReader = new BinaryReader(fileStream);
 var bytes = binaryReader.ReadBytes((int)fileStream.Length);

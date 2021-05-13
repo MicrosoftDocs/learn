@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-content-moderator.4-when-to-use-content-moderator
+metadata:
+  title: When to use Content Moderator
+  description: Content
+  ms.date: 01/29/2021
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: When to use Content Moderator
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-when-to-use-content-moderator.md)]

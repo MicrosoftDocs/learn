@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.how-licensing-works
+title: How does licensing work for GitHub features?
+metadata:
+  title: How does licensing work for GitHub features?
+  description: Understand how GitHub charges for various per-use and metered services.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-licensing-works.md)]

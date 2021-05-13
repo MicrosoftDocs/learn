@@ -5,8 +5,8 @@ metadata:
   title: Use Cognitive Services for data analysis
   description: Evaluate possible solutions for your data analysis requirements.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

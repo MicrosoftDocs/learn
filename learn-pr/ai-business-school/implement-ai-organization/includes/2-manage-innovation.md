@@ -12,7 +12,7 @@ In this unit, we'll share some guidance on how to be an innovative organization.
 
 ## Enable a culture of meaningful innovation
 
-"Meaningful" innovation means innovation with a purpose – not just innovation for its own sake. We aim to set the foundation for meaningful innovation by fostering an innovative mindset across the company. We also have a business group dedicated to solving difficult problems through technological innovation. 
+"Meaningful" innovation means innovation with a purpose—not just innovation for its own sake. We aim to set the foundation for meaningful innovation by fostering an innovative mindset across the company. We also have a business group dedicated to solving difficult problems through technological innovation. 
 
 ### Foster an innovative mindset across the organization
 
@@ -36,7 +36,7 @@ It can sometimes be challenging to connect R&D with real-world business needs. T
 
 We've found it beneficial to foster a company culture where employees across all departments and levels are empowered to share their ideas. Companies who embrace this culture demonstrate a three-pronged approach to this:
 
-* **Learning:** allow every employee to share their ideas and knowledge openly.    * At Microsoft, we have many processes for identifying and funding new ideas. In one program, a small "seed" team delivers a start-up style pitch as if they were an external company. If approved, the team is allocated initial funding and resources to begin building out their solution. If concepts and prototypes are validated, projects can be scaled with additional funding and headcount to bring an idea to fruition. If the project doesn't move forward, the team can focus efforts elsewhere. Whatever the outcome, it's important to reward all efforts, even failures, so people want to continue experimenting. In this sense, we acknowledge failure as a valuable part of innovation that provides direction for future learnings and fuels constant innovation.
+* **Learning:** allow every employee to share their ideas and knowledge openly. At Microsoft, we have many processes for identifying and funding new ideas. In one program, a small "seed" team delivers a start-up style pitch as if they were an external company. If approved, the team is allocated initial funding and resources to begin building out their solution. If concepts and prototypes are validated, projects can be scaled with additional funding and headcount to bring an idea to fruition. If the project doesn't move forward, the team can focus efforts elsewhere. Whatever the outcome, it's important to reward all efforts, even failures, so people want to continue experimenting. In this sense, we acknowledge failure as a valuable part of innovation that provides direction for future learnings and fuels constant innovation.
 * **Enablement:** help employees come up with outstanding ideas through professional development. This entails providing the time, space, and resources for career and technical training. For example, one of the initiatives we've set up is called The Garage. This is a designated innovation space where employees can spark creativity and freely experiment.
 * **Sharing:** facilitate cross-departmental idea-sharing where people with different backgrounds and expertise can discuss each other's challenges and innovative ideas. We host different kinds of events to encourage intellectual sharing, including our annual global Hackathon. We also make sure that teams share their breakthroughs across the company through blogs and whitepapers.
 

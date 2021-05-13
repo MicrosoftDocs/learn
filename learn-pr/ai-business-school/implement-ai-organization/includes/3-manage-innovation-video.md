@@ -8,4 +8,4 @@ Rimes Mortimer points out that business leaders play a critical role in driving 
 
 Rimes Mortimer also discusses the book *The Innovator’s Dilemma* by Clayton Christensen. In the book, Clayton Christensen highlights that businesses often fail because they don’t innovate beyond their core competencies. Addressing this concern means leaders must invest in disruptive tech even when they don’t see immediate return on investment.
 
-Next, let’s look at some key factors organizations need to consider as they evaluate and prioritize AI investments.
+Next, let’s see how you can take advantage of the Microsoft AI at Scale initiative. The AI at Scale initiative provides access to the most cutting-edge, complex AI models and the supercomputing infrastructure needed to create them. This technology can serve as a platform for growing AI maturity and adoption in your organization.

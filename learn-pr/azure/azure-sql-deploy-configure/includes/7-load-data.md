@@ -14,7 +14,7 @@ Bulk insert operations are similar to what's available in SQL Server on-premises
 
 ### SSIS packages
 
-In Azure SQL, you can use packages to connect with SSIS on-premises. You can host an SSIS database in Azure SQL Database or Azure SQL Managed Instance. Additionally, you can use the Azure-SSIS Integration Runtime for SSIS packages with tools like Azure Data Factory.
+In Azure SQL, you can use packages to connect with SQL Server Integration Services (SSIS) on-premises. You can host an SSIS database in Azure SQL Database or Azure SQL Managed Instance. Additionally, you can use the Azure-SSIS Integration Runtime for SSIS packages with tools like Azure Data Factory.
 
 ### Other options
 

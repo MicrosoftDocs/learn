@@ -1,4 +1,4 @@
-After meeting with your company’s executive team, you start to compile some information about the commercial marketplace to report back to the group during your next meeting. So far, you’ve learned that the commercial marketplace is a cloud-based, on-demand market that lets Microsoft partners to publish their solutions into Microsoft’s online product catalog.
+After meeting with your company’s executive team, you start to compile some information about the commercial marketplace to report back to the group during your next meeting. So far, you’ve learned that the commercial marketplace is a cloud-based, on-demand market that lets Microsoft partners publish their solutions into Microsoft’s online product catalog.
 
 ## Built for customers
 

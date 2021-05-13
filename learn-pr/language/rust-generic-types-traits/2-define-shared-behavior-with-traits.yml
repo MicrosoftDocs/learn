@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-generic-types-traits.2-define-shared-behavior-with-traits
+metadata:
+  title: Define shared behavior with traits
+  description: Learn how to use traits to define common behavior and characteristics of an object.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Define shared behavior with traits
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-define-shared-behavior-with-traits.md)]

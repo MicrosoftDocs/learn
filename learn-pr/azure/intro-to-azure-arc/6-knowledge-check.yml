@@ -8,6 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Knowledge check
 durationInMinutes: 4
 content: |
@@ -66,9 +67,3 @@ quiz:
     - content: "Microsoft Dependency Agent."
       isCorrect: true
       explanation: "That's correct. This extension installs the Dependency Agent to enable Azure Monitor Insights on servers."
-
-
-
-
-
-

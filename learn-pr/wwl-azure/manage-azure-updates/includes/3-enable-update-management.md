@@ -81,7 +81,7 @@ To schedule updates, navigate to your Automation account, select **Update manage
 You can learn more by reviewing the following documents:
 
 - [Supported regions for linked Log Analytics workspace](https://aka.ms/region-mappings?azure-portal=true).
-- [Enable Update Management from a runbook](https://aka.ms/automation-onboard-solutions?azure-portal=true).
+- [Enable Update Management from a runbook](https://docs.microsoft.com/azure/automation/update-management/enable-from-runbook).
 - [Install the agent using the command line](https://aka.ms/install-agent-using-command-line?azure-portal=true).
 - [Log Analytics agent overview](https://aka.ms/log-analytics-agent?azure-portal=true).
-- [Update Management overview](https://aka.ms/update-management?azure-portal=true).
+- [Update Management overview](https://docs.microsoft.com/azure/automation/update-management/overview).

@@ -12,9 +12,9 @@ In the first stage, build a foundation of security for your Azure AD. The doctor
 
 | Task                                                         | Description                                                       | License needed   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
-| **Assign more than one global administrator.**| Give at least two Azure AD accounts the global administrator role. Make sure you don't use these accounts daily. Ensure the accounts have long and complicated passwords.| Free       |
-| **Use regular administrative roles where possible.**|Administrators who aren't global administrators should never have more permissions than they need to do their work. Use these regular administrator roles by default. Avoid using the global administrator roles unless you need to. | Free       |
-| **Configure Privileged Identity Management (PIM) to track administrators.**| Use PIM to monitor how your administrator roles are used. This action helps you improve your governance and compliance.| Azure AD Premium P2 |
+| **Assign more than one global administrator.**| Give at least two Azure AD accounts the global admin role. Make sure you don't use these accounts daily. Ensure the accounts have long and complicated passwords.| Free       |
+| **Use regular administrative roles where possible.**|Admins who aren't global admins should never have more permissions than they need to do their work. Use these regular admin roles by default. Avoid using the global admin roles unless you need to. | Free       |
+| **Configure Privileged Identity Management (PIM) to track administrators.**| Use PIM to monitor how your admin roles are used. This action helps you improve your governance and compliance.| Azure AD Premium P2 |
 | **Configure self-service password reset.**| Let internal users reset their passwords through policies that you configure. This action reduces the number of help desk tickets for password resets.  |Free |
 | **Create a list of banned passwords.** | Use this list to prevent users from using passwords that are common phrases or words in your organization. Your list can include your company name or headquarters location, for example. |Free |
 | **Warn users to not reuse credentials.** | When someone reuses the same credentials on multiple platforms, an attacker can use the credentials to access all of those platforms if a single platform is compromised.  | Free       |
@@ -50,13 +50,13 @@ You can now integrate your applications with Azure AD. The following table descr
 
 ### Stage 4: Monitor your administrators, do access reviews, and automate user life cycles
 
-Now you can address how much privilege your administrators should have, and you can complete access reviews. In this stage, you also configure how to automate common user life-cycle tasks. The following table describes your tasks in this stage.
+Now you can address how much privilege your admins should have, and you can complete access reviews. In this stage, you also configure how to automate common user life-cycle tasks. The following table describes your tasks in this stage.
 
 | Task                                                         | Description                                                       | License needed    |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
-|**Use PIM to control administrator access.** | Ensure that administrators can use their account only after they pass a multi-factor authentication challenge or receive approval from an accepted approver. | Azure AD Premium P2 |
+|**Use PIM to control administrator access.** | Ensure that admins can use their account only after they pass a multi-factor authentication challenge or receive approval from an accepted approver. | Azure AD Premium P2 |
 |**Complete access reviews for Azure AD directory roles in PIM.**| Configure access review policies in PIM so you can regularly review administrative access based on your organization's requirements for privileged roles.  | Azure AD Premium P2 |
-|**Configure dynamic group membership policies.**| Save time and effort by automatically adding users to specific groups based on known profile information, like department or region. For example, you can automatically add all users who are part of the human resources department to a user group called Human Resources. |Free |
+|**Configure dynamic group membership policies.**| Save time and effort by automatically adding users to specific groups based on known profile information, like department or region. For example, you can automatically add all users who are part of the human resources department to a user group called Human Resources. | Azure AD Premium P1 or P2 |
 | **Use group-based application assignment.**| Use group-based access management to give all group members access to an application. When you use dynamic groups, users who are removed from a group automatically lose access to the application. This action helps keep your applications secure. |Free |
 | **Configure automated user account provisioning and deactivation.** | Automatically create application-specific accounts to allow users to use SaaS applications, based on existing Azure AD users and groups. You can also automatically deprovision user accounts when a user leaves the organization. This action keeps your organization protected from unauthorized access. | Free|
 

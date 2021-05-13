@@ -10,13 +10,13 @@ Traffic Manager uses DNS to direct clients to a specific service endpoint IP add
 
 ## Traffic Manager endpoints
 
-Endpoints are the destination location that is returned to the client. You configure each application deployment as an 'endpoint' in Traffic Manager. When Traffic Manager receives a DNS request, it chooses an available endpoint to return in the DNS response. There are three types of endpoint supported by Traffic Manager:
+An endpoint is the destination location that is returned to the client. You configure each application deployment as an 'endpoint' in Traffic Manager. When Traffic Manager receives a DNS request, it chooses an available endpoint to return in the DNS response. There are three types of endpoint supported by Traffic Manager:
 
 - **Azure endpoints** are used for services hosted in Azure. These can be services like Azure App Service, as well as public IP resources that are associated with load balancers or virtual machines.
 - **External endpoints** are used for IPv4/IPv6 addresses, FQDNs, or for services hosted outside Azure that can either be on-premises or with a different hosting provider.
 - **Nested endpoints** are used to combine Traffic Manager profiles to create more flexible traffic-routing schemes to support the needs of larger, more complex deployments.
 
-There is no restriction on how endpoints of different types are combined in a single Traffic Manager profile. Each profile can contain any mix of endpoint types.
+There is no restriction about how endpoints of different types are combined in a single Traffic Manager profile. Each profile can contain any mix of endpoint types.
 
 ## Traffic Manager routing methods
 
@@ -24,22 +24,21 @@ Traffic Manager supports different methods for choosing how traffic is routed to
 
 ### Weighted routing
 
-Choose weighted when you want to distribute traffic across a set of endpoints, either evenly or based on different weights. The weight is an integer from 1 to 1,000. For each DNS query received, Traffic Manager randomly chooses an available endpoint. The probability of choosing an endpoint is based on the weights assigned to all available endpoints.
+Choose weighted when you want to distribute traffic across a set of endpoints, either evenly, or based on different weights. The weight is an integer from 1 to 1,000. For each DNS query received, Traffic Manager randomly chooses an available endpoint. The probability of choosing an endpoint is based on the weights assigned to all available endpoints.
 
-![Example of a setup where a client connects to a Traffic Manager and their traffic is routed based on weightings of three endpoints.](../media/2-weighted.svg)
+![Example of a setup where a client connects to a Traffic Manager and their traffic is routed based on weightings of three endpoints.](../media/2-weighted.png)
 
 ### Performance routing
 
 If you have endpoints in different geographic locations, you can use performance routing to send users to the endpoint that has the best performance for the user. To choose the best endpoint to use, this routing method uses an internet latency table, which actively tracks network latencies to the endpoints from locations around the globe. When a user makes a request, Traffic Manager returns the best performing endpoint based on the location of the request.
 
-![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on relative performance of three endpoints.](../media/2-performance.svg)
+![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on relative performance of three endpoints.](../media/2-performance.png)
 
 ### Geographic routing
 
-With the geographic routing method, users are directed to specific endpoints based on where their DNS query originates. Using this method allows you to geo-fence content to specific user regions. For example, European users can be directed to an endpoint in Europe that has specific terms and conditions for regional compliance. Users in China can be directed to an endpoint that has been localized in Mandarin.
+With the geographic routing method, users are directed to specific endpoints based on where their DNS query originates. Using this method enables you to geo-fence content to specific user regions. For example, European users can be directed to an endpoint in Europe that has specific terms and conditions for regional compliance. Users in China can be directed to an endpoint that has been localized in Mandarin.
 
-![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on the geographic location of four endpoints.](../media/2-geographic.svg)
-
+![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on the geographic location of four endpoints.](../media/2-geographic.png)
 
 ### Multivalue routing
 
@@ -53,4 +52,4 @@ This method maps the set of user IP address ranges to specific endpoints within 
 
 The Traffic Manager profile contains a prioritized list of service endpoints. By default, Traffic Manager sends all traffic to the primary (highest-priority) endpoint. If the primary endpoint isn't available, Traffic Manager routes the traffic to the second endpoint. If both the primary and secondary endpoints are not available, the traffic goes to the third endpoint, and so on. Availability of the endpoint is based on the configured status (enabled or disabled) and the ongoing endpoint monitoring that is set up.
 
-![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on the priority given to three endpoints.](../media/2-priority.svg)
+![Example of a setup where a client connects to Traffic Manager and their traffic is routed based on the priority given to three endpoints.](../media/2-priority.png)

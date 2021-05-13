@@ -23,7 +23,7 @@ Here's a short video where Abel explains the five parts of Azure DevOps.
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Azure-DevOps--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LB7b]
 
 **Amita:** This sounds like a lot. Where do we start?
 

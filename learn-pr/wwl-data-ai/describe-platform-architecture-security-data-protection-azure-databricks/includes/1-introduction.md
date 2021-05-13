@@ -42,7 +42,7 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
    - _Replication_: Select **Locally-redundant storage (LRS)**.
    - _Access tier (default)_: Select **Hot**.
 
-    ![The Basic tab form is shown.](../media/create-storage-basic.png)
+    ![Create storage account basic form in portal.](../media/create-storage-basic.png)
 
 1. Select **Review + create**, then select **Create**.
 
@@ -60,7 +60,7 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
    - _Region_: Select the same location as the other resources in this module.
    - _Pricing tier_: Select **Standard**.
 
-   ![The Basic tab form is shown.](../media/create-key-vault-basic.png)
+   ![The key vault basic form is shown.](../media/create-key-vault-basic.png)
 
 1. Select **Review + create**, then select **Create**.
 
@@ -84,13 +84,23 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
 ### Create a cluster
 
 1. When your Azure Databricks workspace creation is complete, select the link to go to the resource.
+
 1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
+
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
+
 1. Select **Create Cluster** to add a new cluster.
 
     ![The create cluster page](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
-1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime and **Scala 2.11**.
-1. Select the default values for the cluster configuration.
+
+1. Select the **Cluster Mode**: **Single Node**.
+
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS (Scala 2.12, Spark 3.0.1)**.
+
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
+
+1. Select the **Node Type**: **Standard_DS3_v2**.
+
 1. Select **Create Cluster**.

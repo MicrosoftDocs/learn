@@ -37,7 +37,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 > [!div class="centered"]
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
-8. Submit the pipeline as a new experiment named **predict-penguin-clusters** on your compute cluster. This may take a while!
+8. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. This may take a while!
 9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
 
 Your inference pipeline assigns penguin observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.

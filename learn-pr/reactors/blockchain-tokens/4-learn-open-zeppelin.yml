@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-tokens.4-learn-open-zeppelin
+metadata:
+  title: Learn about OpenZeppelin
+  description: Understand what OpenZeppelin is and what services it provides.
+  ms.date: 10/16/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about OpenZeppelin
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-learn-open-zeppelin.md)]

@@ -14,7 +14,7 @@ $$|\psi\rangle=\frac1{\sqrt2}|00\rangle+\frac1{\sqrt2}|11\rangle.$$
 
 In such a state, only two outcomes are possible when you measure the state 
 of both qubits in the standard basis: **00** and **11**. Each outcome has a
-probability of $\frac12$. There is zero probability of obtaining **01** and
+probability of $\frac12$. There's zero probability of obtaining **01** and
 **10**. If you measure the first qubit as **0**, then you know that the second 
 qubit is **0**, even without measuring it. The measurement outcomes 
 are correlated, and the qubits are *entangled*.

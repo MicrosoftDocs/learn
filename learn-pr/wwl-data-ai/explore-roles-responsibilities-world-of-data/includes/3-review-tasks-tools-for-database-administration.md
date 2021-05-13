@@ -17,7 +17,6 @@ Some of the most common roles and responsibilities of a database administrator i
 - Contacting database vendor for technical support.
 - Generating various reports by querying from database as per need.
 - Managing and monitoring data replication.
-- Acting as liaison with users.
 
 ## Common database administrator tools
 
@@ -40,7 +39,7 @@ SQL Server Management Studio provides a graphical interface, enabling you to que
 A useful feature of SQL Server Management Studio is the ability to generate Transact-SQL scripts for almost all of the functionality that SSMS provides. This gives the DBA the ability to schedule and automate many common tasks.
 
 > [!div class="mx-imgBorder"]
-> ![Image of SSMS being used to back up a database](../media/3-sql-server-management-studio-script.png)
+> ![SSMS being used to back up a database](../media/3-sql-server-management-studio-script.png)
 
 > [!NOTE]
 > Transact-SQL is a set of programming extensions from Microsoft that adds several features to the Structured Query Language (SQL), including transaction control, exception and error handling, row processing, and declared variables.

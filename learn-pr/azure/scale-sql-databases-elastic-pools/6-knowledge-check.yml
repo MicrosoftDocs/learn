@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Knowledge Check
 durationInMinutes: 3
 quiz:
@@ -27,11 +26,11 @@ quiz:
       isCorrect: true
       explanation: "It's likely each dealership's data would be stored in a separate database. This scenario would likely benefit from elastic pools."
   
-  - content: "True or False, you can add multiple SQL elastic pools to a single Azure SQL server."
+  - content: "True or False: You can add Azure SQL servers to elastic pools."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Correct, you can use multiple elastic pools with a single server."
+      explanation: "Correct. You can add Azure SQL servers to elastic pools."
     - content: "False"
       isCorrect: false
-      explanation: "Incorrect, you can use multiple elastic pools with a single server."
+      explanation: "Incorrect. You can add Azure SQL servers to elastic pools."

@@ -3,28 +3,24 @@ uid: learn-windows.introduction-to-web-development
 metadata:
   title: Build a simple website using HTML, CSS, and JavaScript
   description: Get started with web development using Visual Studio Code to build a website using HTML, CSS, and JavaScript using developer tools in the browser to check your work.
-  ms.date: 3/29/2019
+  ms.date: 12/4/2020
   author: mmpadget
   ms.author: quradic
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Build a simple website using HTML, CSS, and JavaScript
-summary: Get started with web development by learning how to use HTML, CSS, and JavaScript to build a website, use developer tools in the browser to check your work, and use Git to collaborate and recover from problems when they occur.
+summary: Get started with web development by learning how to use HTML, CSS, and JavaScript to build a website, use developer tools in the browser to check your work.
 abstract: |
  In this module you will:
- - Setup your developer environment
  - Create the files for a website
  - Write HTML, CSS, and JavaScript code
- - Start tracking changes to your project
 prerequisites: |
- A computer that's running one of the following:
- - Windows: Windows 7, 8, 10
-  - Microsoft Edge requires Windows 10
-  - Chrome requires Windows 7, 8, 10
- - Mac: macOS 10.9 or later
-  - Chrome requires macOS 10.10 or later
- - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
-  - Chrome requires 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - Familiarity with one or more programming languages and a markup language such as HTML
+  - A computer that's running one of the following:
+    - Windows: Windows 7, 8, 10
+    - Mac: macOS 10.9 or later
+    - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
 iconUrl: /learn/achievements/introduction-to-web-development.svg
 levels:
 - beginner

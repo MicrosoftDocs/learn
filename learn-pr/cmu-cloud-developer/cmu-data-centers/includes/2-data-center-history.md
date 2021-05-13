@@ -32,6 +32,6 @@ Many of today's standard 19-inch equipment racks have evolved from Lavarack's de
 
 ![Relay rack patent drawings](../media/relay-rack-patent.png)
 
-_Figure 16: Relay rack patent drawings_ (see [patent](http://www.google.com/patents?id=6pxbAAAAEBAJ))
+_Figure 16: Relay rack patent drawings_ (see [patent](https://patents.google.com/patent/US6223908B1/))
 
 ***

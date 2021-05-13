@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-windows-server-editions-servicing-options-activation.implement-automatic-virtual-machine-activation
+title: Implement automatic virtual machine activation
+metadata:
+  title: Implement automatic virtual machine activation
+  description: "Implement automatic virtual machine activation"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-implement-automatic-virtual-machine-activation.md)]

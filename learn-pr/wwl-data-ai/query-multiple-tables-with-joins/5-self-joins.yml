@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-multiple-tables-with-joins.self-joins
+title: Use self joins
+metadata:
+  title: Use self joins
+  description: "Use self joins"
+  ms.date: 05/07/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-self-joins.md)]

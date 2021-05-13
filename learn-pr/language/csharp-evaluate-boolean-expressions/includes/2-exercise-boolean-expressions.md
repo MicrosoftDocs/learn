@@ -29,8 +29,8 @@ Console.WriteLine("a" == "a");
 Console.WriteLine("a" == "A");
 Console.WriteLine(1 == 2);
 
-string value = "a";
-Console.WriteLine(value == "a");
+string myValue = "a";
+Console.WriteLine(myValue == "a");
 ```
 
 Now run the code.  You should see the following output.
@@ -80,8 +80,8 @@ Console.WriteLine("a" != "a");
 Console.WriteLine("a" != "A");
 Console.WriteLine(1 != 2);
 
-string value = "a";
-Console.WriteLine(value != "a");
+string myValue = "a";
+Console.WriteLine(myValue != "a");
 ```
 
 Now run the code.  You should see the following output.

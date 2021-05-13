@@ -9,7 +9,6 @@ metadata:
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/9-azure-hdinsight.md)]

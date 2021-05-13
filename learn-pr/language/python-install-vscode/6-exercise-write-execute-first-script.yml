@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-install-vscode.exercise-write-execute-first-script
-title: Install the Python extension and run your first Python script
+title: Install the Python extension
 metadata:
-  title: Install the Python extension and run your first Python script
-  description: Follow the instructions to install the Python extension for Visual Studio Code. Create a new Python script and run it.
+  title: Install the Python extension
+  description: Follow the instructions to install the Python extension for Visual Studio Code.
   ms.date: 3/2/2020
   author: bobtabor-msft
   ms.author: rotabor

@@ -21,6 +21,8 @@ summary: |
   * Deploy your templates by using the Azure CLI, Azure PowerShell, and through GitHub Actions.
   * Break down complex deployments into smaller and more reusable components by using nested templates and linked templates.
   * Validate and preview your infrastructure changes by using what-if and the ARM template test toolkit.
+  * Add custom steps to your ARM templates by using deployment scripts.
+  * Use advanced constructs such as deployment order, conditional deployments, and secrets to manage complex deployments.
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required
 iconUrl: /learn/achievements/deploy-manage-resource-manager-templates.svg
 levels:
@@ -37,5 +39,7 @@ modules:
 - learn.azure.resource-manager-template-reuse
 - learn.arm-template-test
 - learn.azure.deploy-templates-command-line-github-actions
+- learn.azure.extend-resource-manager-template-deployment-scripts
+- learn.azure.manage-deployments-advanced-arm-template-features
 trophy:
   uid: learn.deploy-manage-resource-manager-templates.trophy

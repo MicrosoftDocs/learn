@@ -1,10 +1,14 @@
 Azure Database for PostgreSQL is available in both single server and multiserver versions.
 
+As a database developer with many years experience of running and managing on-premises PostgreSQL installations, you want to explore how Azure Database for PostgreSQL supports and scales its features.
+
+In this unit, you'll explore the pricing, version support, replication, and scaling options of Azure Database for PostgreSQL.
+
 ## Azure Database for PostgreSQL, Single Server
 
 The Azure Database for PostgreSQL service is an implementation of the community version of PostgreSQL. The single server version of this service is suitable for a broad range of traditional, transactional workloads. The service provides the common features used by typical PostgreSQL systems, including geo-spatial support and full-text search.
 
-Microsoft have adapted PostgreSQL for the Azure platform, and it's closely integrated with many Azure services. The Azure Database for PostgreSQL service is fully managed by Microsoft. Microsoft handle updates and patches to the software, and provide an SLA of 99.99% availability. This means you can just focus on the databases and applications running, using the service.
+Microsoft has adapted PostgreSQL for the Azure platform, and it's closely integrated with many Azure services. The Azure Database for PostgreSQL service is fully managed by Microsoft. Microsoft handle updates and patches to the software, and provide an SLA of 99.99% availability. This means you can just focus on the databases and applications running, using the service.
 
 You can deploy multiple databases in each instance of this service.
 

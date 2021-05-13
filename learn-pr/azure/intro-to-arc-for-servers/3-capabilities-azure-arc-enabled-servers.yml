@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-for-servers.3-capabilities-azure-arc-enabled-servers
+title: What are the core capabilities of Azure Arc enabled servers?
+metadata:
+  title: What are the core capabilities of Azure Arc enabled servers?
+  description: What are the core capabilities of Azure Arc enabled servers?
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-capabilities-azure-arc-enabled-servers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which VM extension can the administrator add to Azure Arc enabled servers to start monitoring it with Azure services?"
+    choices:
+    - content: "Qualys extension. This VM extension implements integration with Azure Defender for servers vulnerability assessment scanning."
+      isCorrect: false
+      explanation: "That's incorrect. This VM extension Azure VMAccess extension allows the administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
+    - content: "Azure Key Vault extension."
+      isCorrect: false
+      explanation: "That's incorrect. This VM extension provides integration with Azure Key Vault."
+    - content: "Log Analytics agent."
+      isCorrect: true
+      explanation: "That's correct. This VM extension implements integration with Azure Monitor."
+
+  - content: "What can the administrator do in order to audit changes the state of operating system of Azure Arc enabled servers?"
+    choices:
+    - content: "Review Azure Advisor."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Advisor is limited to cloud resources only."
+    - content: Search through the activity logs in the Azure portal."
+      isCorrect: false
+      explanation: "That's incorrect. The activity log records events affecting the Azure resources only."
+    - content: "Apply Azure Guest Configuration-based policy."
+      isCorrect: true
+      explanation: "That's correct. Guest Configuration policies allow the administrator to audit settings within the target operating system and evaluate their compliance."

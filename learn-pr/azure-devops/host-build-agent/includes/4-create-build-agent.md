@@ -190,7 +190,7 @@ Now it's time to install the agent software on your VM. This software enables th
 
 The registration process checks for installed software before it registers the agent with Azure Pipelines. Therefore, it's important to set up the agent after you install all other software. In practice, you can register the agent a second time if you need to install additional software.
 
-The documentation explains how to manually set up [self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?view=azure-devops&azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
+The documentation explains how to manually set up [self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
 
 > [!IMPORTANT]
 > The script that you run here is for learning purposes. In practice, you should first understand how each command in the scripts you build affect the overall system. At the end of the module, we'll point to documentation that more completely describes your options.

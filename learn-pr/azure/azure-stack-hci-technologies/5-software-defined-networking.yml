@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.5-software-defined-networking
+metadata:
+  title: What is Windows Server Software-Defined Networking?
+  description: Provide an introduction to Software-Defined Networking.
+  ms.date: 12/09/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: What is Windows Server Software-Defined Networking?
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-software-defined-networking.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which component is necessary to implement Windows Server 2019-based SDN?"
+    choices:
+    - content: "Network Controller"
+      isCorrect: true
+      explanation: "That's correct. Network Controller is a Windows Server role that serves as the centralized and programmable point of automation for the virtual and physical network infrastructure in SDN."
+    - content: "RDMA"
+      isCorrect: false
+      explanation: "That's incorrect. RDMA is a recommended component of Windows Server 2019-based SDN, but it is not required."
+    - content: "Datacenter Firewall"
+      isCorrect: false
+      explanation: "That's incorrect. Datacenter Firewall is the functionality you can implement as part of an SDN deployment. It's not a prerequisite."
+
+  - content: "Which Windows Sever component aggregates network throughput available for virtualized workloads by combining multiple network adapters?"
+    choices:
+    - content: "VxLAN"
+      isCorrect: false
+      explanation: "That's incorrect. VxLAN is an SDN encapsulation protocol."
+    - content: "NVGRE"
+      isCorrect: false
+      explanation: "That's incorrect. NVGRE is an SDN encapsulation protocol."
+    - content: "SET"
+      isCorrect: true
+      explanation: "That's correct. SET enables you to combine up to eight identical physical network adapters directly into the Hyper-V virtual switch. This provides load balancing and bandwidth aggregation functionality, resulting in higher network throughput for virtualized workloads."

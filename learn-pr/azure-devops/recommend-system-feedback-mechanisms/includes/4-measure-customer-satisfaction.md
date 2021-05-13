@@ -188,7 +188,7 @@ Effective communication on your product roadmap helps keep your customers engage
 
 It's been shown that increased communication with customers promotes deeper engagement. By updating supporters of an idea as it moves through different product development stages - from discovery to planning to development and launch - your customers never feel like they're in the dark.
 
-The Azure DevOps team uses Azure Boards to publish its feature plan for the coming months. You can see their plans on [dev.azure.com](https://dev.azure.com/mseng/Azure%20DevOps%20Roadmap/_workitems/recentlyupdated?azure-portal=true).
+The Azure DevOps team uses Azure Boards to publish its feature plan for the coming months. You can see their plans on [dev.azure.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/recentlyupdated?azure-portal=true).
 
 ### Create a feature request board
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-dependencies.4-dependency-management
+title: Manage dependency updates in your .NET project
+metadata:
+  title: Manage dependency updates in your .NET project
+  description: This unit explains how to update the dependencies in your .NET app and how to do so in a predictable way.
+  ms.date: 10/28/2020
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-dependency-management.md)]

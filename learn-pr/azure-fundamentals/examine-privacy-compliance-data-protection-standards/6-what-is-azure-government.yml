@@ -4,8 +4,8 @@ title: What is Azure Government?
 metadata:
   description: Learn how Azure Government addresses the security and compliance needs of US federal agencies, state and local governments, and their solution providers.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

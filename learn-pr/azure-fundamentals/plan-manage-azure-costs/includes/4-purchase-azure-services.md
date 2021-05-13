@@ -61,7 +61,7 @@ The way you use resources, your subscription type, and pricing from third-party 
 
 ### Resource type
 
-A number of factors influence the cost Azure resources. They depend on the type of resource or how you customize it.
+A number of factors influence the cost of Azure resources. They depend on the type of resource or how you customize it.
 
 For example, with a storage account you specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool, or archive). These selections present different costs.
 

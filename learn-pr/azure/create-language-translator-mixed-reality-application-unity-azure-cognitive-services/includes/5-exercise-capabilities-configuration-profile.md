@@ -1,4 +1,4 @@
-In Unity, you must enable specific capabilities to use APIs and resources such as a microphone in a mixed-reality experience. Recall that in the example of collaboration tools, there's a need for a microphone to capture speech. The example also needs the internet for using the Azure Cognitive Services Speech service. 
+In Unity, you must enable specific capabilities to use APIs and resources such as a microphone in a mixed reality experience. Recall that in the example of collaboration tools, there's a need for a microphone to capture speech. The example also needs the internet for using the Azure Cognitive Services Speech service. 
 
 Here, you'll configure a Unity project to use the Azure Cognitive Services Speech SDK for speech translation.
 
@@ -46,7 +46,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the configuration profile.":::
 
 1. In the **Inspector** window, select **Input**.
 
@@ -62,7 +62,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the input system profile.":::
 
 1. In the **Input** settings, expand the **Speech** settings.
 
@@ -78,11 +78,14 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted f or the speech commands profile.":::
 
 1. In the **Speech** settings, select **Manual Start** for **Start Behavior**.
 
     :::image type="content" source="../media/start-behavior.png" alt-text="Screenshot of the Speech Commands profile. The Start Behavior setting is highlighted. The Manual Start option is selected.":::
+
+> [!NOTE]
+> You can disable the Diagnostics bar by cloning the **Diagnostics** profile and unchecking the box **Show Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should continuously run at 60 FPS.
 
 ## Add capabilities
 

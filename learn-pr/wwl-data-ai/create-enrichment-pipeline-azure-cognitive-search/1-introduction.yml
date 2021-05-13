@@ -3,8 +3,8 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.introducti
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to enrichment pipelines in Azure Cognitive Search."
-  ms.date: 10/15/2020
+  description: "Introduction"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

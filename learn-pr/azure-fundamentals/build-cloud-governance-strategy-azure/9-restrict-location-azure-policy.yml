@@ -4,8 +4,8 @@ title: Exercise - Restrict deployments to a specific location by using Azure Pol
 metadata:
   description: Create a policy in Azure Policy that restricts the deployment of Azure resources to a specific location.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

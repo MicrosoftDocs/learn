@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-arc-for-servers
+metadata:
+  title: Introduction to Azure Arc enabled servers
+  description: This module introduces you to Azure Arc enabled servers and describes its characteristics, capabilities, and use cases.
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Introduction to Azure Arc enabled servers
+summary: This module introduces you to Azure Arc enabled servers and describes its characteristics, capabilities, and use cases.
+abstract: |
+  By the end of this module, you will be able to answer:
+  - What are the characteristics of Azure Arc enabled servers?
+  - What are the core capabilities of Azure Arc enabled servers?
+  - How can you simplify management and maintenance of Azure Arc enabled servers?
+prerequisites: |
+  -Basic experience with Azure services
+iconUrl: /learn/achievements/intro-to-arc-for-servers.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.intro-to-arc-for-servers.1-introduction
+- learn.azure.intro-to-arc-for-servers.2-characteristics-azure-arc-enabled-servers
+- learn.azure.intro-to-arc-for-servers.3-capabilities-azure-arc-enabled-servers
+- learn.azure.intro-to-arc-for-servers.4-simplify-management-maintenance-azure-arc-servers
+- learn.azure.intro-to-arc-for-servers.5-summary
+badge:
+  uid: learn.azure.intro-to-arc-for-servers.badge

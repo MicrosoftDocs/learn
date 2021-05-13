@@ -5,8 +5,8 @@ metadata:
   title: Train, evaluate, and select machine-learning models with Azure Databricks
   description: Learn the fundamentals of using Azure Databricks notebooks for machine-learning model training, evaluation, and selection.
   ms.date: 11/05/2018
-  author: jasallen
-  ms.author: jasdeb
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Train, evaluate, and select machine-learning models with Azure Databricks

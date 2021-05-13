@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure manageability feature uses resource usage telemetry to make recommendations for optimizing performance, security, and availability?"
+    choices:
+    - content: "Azure Advisor"
+      isCorrect: true
+      explanation: "Correct. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability"
+    - content: "Azure Service Health"
+      isCorrect: false
+      explanation: "Incorrect. Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action."
+    - content: "Azure Log Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Log Analytics is a tool in the Azure portal used to edit and run log queries with data in Azure Monitor Logs."
+  - content: "Which of the following is **not** one of the key resources deployed in the managed resource group that is deployed automatically as part of the Azure Monitor for SAP Solutions resource deployment?"
+    choices:
+    - content: "Collector VM"
+      isCorrect: false
+      explanation: "Incorrect. Collector VM is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
+    - content: "Log Analytics Workspace"
+      isCorrect: false
+      explanation: "Incorrect. Log Analytics Workspace is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment.."
+    - content: "SAP Monitor resource"
+      isCorrect: true
+      explanation: "Correct. SAP Monitor resource is not located in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
+  - content: "In what language are Azure Monitor Log queries written?"
+    choices:
+    - content: "Kusto Query Language (KQL)"
+      isCorrect: true
+      explanation: "Correct. Azure Monitor Log queries are written in Kusto Query Language."
+    - content: "Structured Query Language (SQL)"
+      isCorrect: false
+      explanation: "Incorrect. Structured Query Language is used to query structured databases."
+    - content: "XQuery"
+      isCorrect: false
+      explanation: "Incorrect. XQuery is a language that can query structured or semi-structured XML data but not used for Azure Monitor log queries."

@@ -46,7 +46,7 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
 
 If you run the code, the output is the same.
 
-It's necessary to wrap the entire conditional operator statement in parenthesis so that the runtime doesn't mistake your intent (before evaluating the condition).
+It's necessary to wrap the entire conditional operator statement in parentheses so that the runtime doesn't mistake your intent (before evaluating the condition).
 
 While this particular example is nice and compact and shows what is possible, it's not always a good idea to combine lines of code if it adversely affects the overall readability of the line.  This is often a subjective judgment call.
 

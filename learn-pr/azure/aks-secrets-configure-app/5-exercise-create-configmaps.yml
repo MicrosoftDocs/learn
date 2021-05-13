@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-secrets-configure-app.5-exercise-create-configmaps
+metadata:
+  title: Exercise - Enhance the application with configmaps
+  description: In this exercise, you'll deploy the application frontend using configurations provided by a configmap.
+  ms.date: 12/16/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Enhance the application with configmaps
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-configmaps.md)]

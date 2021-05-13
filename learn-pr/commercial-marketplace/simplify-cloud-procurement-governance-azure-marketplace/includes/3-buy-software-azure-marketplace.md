@@ -26,11 +26,11 @@ Pay as you go applications have software costs and Azure infrastructure costs if
 
 To view all costs associated with an application - software fees and infrastructure costs - click on the ‘plans + pricing’ tab on the product description page.
 
-![Screenshot of the "plans and pricing" tab of a software product in the Azure Marketplace online store](../media/6-plans-pricing.png)
+:::image type="content" source="../media/6-plans-pricing.png" alt-text="Screen shot of plans and pricing tab of a software product in the Azure Marketplace online store":::
 
 You can use the pricing model filter to narrow your search for solutions that correspond to each pricing model.
 
-![Screenshot of the pricing model filter in the Azure Marketplace online store](../media/7-pricing-model-filter.png)
+:::image type="content" source="../media/7-pricing-model-filter.png" alt-text="Screen shot of pricing model filter in the Azure Marketplace online store":::
 
 ## Purchasing options and considerations
 
@@ -48,7 +48,7 @@ The [Standard Contract](https://docs.microsoft.com/azure/marketplace/standard-co
 
 You can find the applicable terms and conditions on the product detail page under the legal section. Here you'll see either the terms set by the provider or terms under the Standard Contract.
 
-![Screenshot of links to legal agreements on a product page in the Azure Marketplace online store](../media/8-legal.png)
+:::image type="content" source="../media/8-legal.png" alt-text="Screen shot of links to legal agreements on a product":::
 
 ### Amendments to the Standard Contract
 
@@ -66,7 +66,7 @@ Once a vendor has created a private offer for you, you can view the offer in the
 
 Log into the Azure portal and navigate to the Azure Marketplace, where you will see a notification at the top of the screen and a link to view your private offers.
 
-![Screenshot of a private offer notification in the Azure Marketplace experience in the Azure portal](../media/9-private-offer-notification.png)
+:::image type="content" source="../media/9-private-offer-notification.png" alt-text="Screen shot of a private offer notification in the Azure Marketplace experience in the Azure portal":::
 
 ### Consolidated invoicing
 
@@ -78,13 +78,13 @@ By purchasing through Azure Marketplace, you eliminate the complexity of dealing
 
 You want to make sure that any solution you purchase for your cloud infrastructure and software requirements meets the guidelines and budget set by your finance department. For example, some organizations have signed a contractual commitment with Microsoft for specific amounts of Azure spend over time.
 
-With Azure Marketplace, it’s easy to find solutions that accrue towards your company’s Microsoft Azure Consumption Commitment.
+With Azure Marketplace, it’s easy to find solutions that accrue towards your company’s Microsoft Azure Consumption Commitment (MACC).
 
-If your organization has signed a Microsoft Azure Consumption Commitment, you can filter for Azure benefit eligible software in the Azure portal marketplace experience. Eligible offers will also have an “Azure benefit eligible” badge on the product details page.
+If your organization has signed a Microsoft Azure Consumption Commitment (MACC), you can filter for Azure benefit eligible software in the Azure portal marketplace experience. Eligible offers will also have an “Azure benefit eligible” badge on the product details page.
 
-![Screenshot of Azure benefit eligible filter in the Azure Marketplace experience in the Azure portal](../media/10-macc.png)
+:::image type="content" source="../media/10-macc.png" alt-text="Screen shot of Azure benefit eligible filter in the Azure Marketplace experience in the Azure portal":::
 
-![Screenshot of Azure benefit eligible badge in Azure Marketplace](../media/21-macc-eligible-detail.png)
+:::image type="content" source="../media/21-macc-eligible-detail.png" alt-text="Screen shot of Azure benefit eligible badge in Azure Marketplace":::
 
 ### Completing your purchase
 
@@ -92,17 +92,17 @@ After you’ve found the right software application, completing the purchase is 
 
 In the Azure portal, find the software application you want to buy and click ‘create’ or ‘set up + subscribe’. You’ll be prompted to provide some information before being able to use your new solution.
 
-![Screenshot of "create" button in Azure Marketplace](../media/11-purchase-create.png)
+:::image type="content" source="../media/11-purchase-create.png" alt-text="Screen shot of the create button in the Azure Marketplace experience in the Azure portal":::
 
-![Screenshot of "set up and subscribe" button in Azure Marketplace](../media/12-save-subscribe-purchase.png)
+:::image type="content" source="../media/12-save-subscribe-purchase.png" alt-text="Screen shot of set up and subscribe button in Azure Marketplace in the Azure portal":::
 
 If you want to get a solution from the Azure Marketplace online store, you'll need to log in using your Azure account credentials after clicking “get it now“ on the product description page.
 
-![Screenshot of user sign in after clicking "get it now" button in the Azure Marketplace online store](../media/13-signin-purchase.png)
+:::image type="content" source="../media/13-signin-purchase.png" alt-text="Screen shot of user sign in after clicking get it now button in the Azure Marketplace online store":::
 
 Once you log in, you'll be re-directed to the product in the Azure portal to complete your purchase.
 
-![Screenshot of user redirection to Azure portal after signing into their Azure account from the Azure Marketplace online store](../media/14-taking-you-to-sql.png)
+:::image type="content" source="../media/14-taking-you-to-sql.png" alt-text="Screen shot of user redirection after signing into their Azure account from the Azure Marketplace online store":::
 
 ## Summary
 

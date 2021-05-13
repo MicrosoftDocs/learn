@@ -8,14 +8,13 @@ namespace ExploringSuperposition {
 
     @EntryPoint()
     operation GenerateRandomNumber() : Int {
-        using (qubits = Qubit[3]) {
-            ApplyToEach(H, qubits);
-            Message("The qubit register in a uniform superposition: ");
-            DumpMachine();
-            let result = ForEach(M, qubits);
-            Message("Measuring the qubits collapses the superposition to a basis state.");
-            DumpMachine();
-            return BoolArrayAsInt(ResultArrayAsBoolArray(result));
-        }
+        use qubits = Qubit[3];
+        ApplyToEach(H, qubits);
+        Message("The qubit register in a uniform superposition: ");
+        DumpMachine();
+        let result = ForEach(M, qubits);
+        Message("Measuring the qubits collapses the superposition to a basis state.");
+        DumpMachine();
+        return BoolArrayAsInt(ResultArrayAsBoolArray(result));
     }
 }

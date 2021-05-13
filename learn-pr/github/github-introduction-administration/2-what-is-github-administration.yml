@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-administration.what-is-github-administration
+title: What is GitHub administration?
+metadata:
+  title: What is GitHub administration?
+  description: Overview of typical GitHub administration tasks and hierarchical levels.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-github-administration.md)]

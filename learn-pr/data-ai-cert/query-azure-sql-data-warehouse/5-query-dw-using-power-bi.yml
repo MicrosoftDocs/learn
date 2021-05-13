@@ -9,7 +9,6 @@ metadata:
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/5-query-dw-using-power-bi.md)]

@@ -1,6 +1,6 @@
 Azure Spring Cloud (ASC) is a managed service to run Spring Boot microservices, jointly created and supported by Microsoft and Pivotal.
 
-This workshop is a condensed version of our [full Azure Spring Cloud training](https://github.com/microsoft/azure-spring-cloud-training), and it is aimed at making you get started using Azure Spring Cloud in one hour and a half, providing you the key concepts and tools.
+This workshop is a condensed version of our [full Azure Spring Cloud training](https://github.com/microsoft/azure-spring-cloud-training), and it is aimed at making you get started using Azure Spring Cloud in 30 minutes, providing you the key concepts and tools.
 
 ## Learning objectives
 

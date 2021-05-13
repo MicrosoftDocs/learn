@@ -43,7 +43,7 @@ New-AzVm `
     -ResourceGroupName <resource group> `
     -Name <new virtual machine name> `
     -ImageName <image name> `
-    -Location <location of image> `
+    -Location <location of image> 
 ```
 
 ```azurecli

@@ -253,6 +253,7 @@ Your app should display a list of results like the following example:
 To retrieve all the vertices/nodes in your graph, run the following command:
 
 ```bash
+cd gremlinapp
 node app.js "g.V()"
 ```
 

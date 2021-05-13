@@ -2,10 +2,11 @@ In this module, you learned how to create an Azure Stream Analytics job, set up 
 
 ## Clean up
 
-To avoid unnecessary charges, you'll want to delete all the resources you created for this module. That includes the two storage accounts and the Stream Analytics job. You can delete these accounts individually, but it's easier to delete the resource group **mslearn-streamanalytics**: 
+To avoid unnecessary charges, you'll want to delete all the resources you created for this module. That includes the two storage accounts and the Stream Analytics job. You can delete these accounts individually, but it's easier to delete the resource group **mslearn-streamanalytics**:
 
-1. Use the search field to find the resource group. 
-1. Select the group, and then select **Delete resource group**. 
+1. Use the search field to find the resource group.
+
+1. Select the group, and then select **Delete resource group**.
 
     ![Screenshot showing how to delete the resource group in the Azure portal](../media/10-cleanup.png)
 

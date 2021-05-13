@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: 'A quantum computer uses superposition to calculate all outputs of an algorithm at once.'
       isCorrect: false
-      explanation: 'Quantum computers do not calculate all outputs at once. Instead, they use superposition, interference, and entanglement to make algorithms that are more efficient than classical algorithms.'
+      explanation: "Quantum computers don't calculate all outputs at once. Instead, they use superposition, interference, and entanglement to make algorithms that are more efficient than classical algorithms."
     - content: 'A quantum computer is faster than classical computers for all tasks.'
       isCorrect: false
       explanation: 'Quantum computers provide an advantage only for certain tasks.'
@@ -48,7 +48,7 @@ quiz:
       explanation: 'Constructive interference occurs when two states of the same phase superpose.'
     - content: 'Quantum interference is a phenomenon in which electromagnetic waves produce noise in our quantum computations.'
       isCorrect: false
-      explanation: 'Quantum interference is not related to electromagnetic interference.'
+      explanation: "Quantum interference isn't related to electromagnetic interference."
     - content: 'We can exploit quantum interference to do calculations faster than classical computers can do them.'
       isCorrect: true
       explanation: 'Quantum interference is one of the key parts of efficient quantum algorithms.'
@@ -57,10 +57,10 @@ quiz:
     choices:
     - content: 'Changing the state of one of the qubits directly changes the state of the other.'
       isCorrect: false
-      explanation: 'Operations on one entangled qubit do not change the partial state of the other qubit.'
+      explanation: "Operations on one entangled qubit don't change the partial state of the other qubit."
     - content: 'The measurement outcomes of those qubits are strongly correlated.'
       isCorrect: true
-      explanation: 'We know that two qubits are entangled if measurements of the qubits present correlations that classical physics alone cannot explain.'
+      explanation: "We know that two qubits are entangled if measurements of the qubits present correlations that classical physics alone can't explain."
     - content: 'Both qubits always produce the same results when you measure their individual states, no matter how you manipulate them.'
       isCorrect: false
       explanation: 'Two qubits can be entangled but also be in different partial states. They can yield different results when you measure their states.'

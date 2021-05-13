@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-files.2-file-system
+title: Work with the file system
+metadata:
+  title: Work with the file system
+  description: Use C# and .NET to enumerate directories and files.
+  ms.date: 10/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-file-system.md)]
+quiz:  
+  title: Check your knowledge
+  questions: 
+    - content: "Which of the following tasks can you do with Directory.EnumerateFiles?"
+      choices:
+        - content: "List the files of a directory and subdirectories."
+          isCorrect: true
+          explanation: "You can use Directory.EnumerateFiles to recursively enumerate all files in a directory and subdirectories that match a certain pattern."
+        - content: "List the subdirectories of a directory."
+          isCorrect: false
+          explanation: "EnumerateFiles is used for enumerating files, not directories."
+        - content: "Write files to a directory."
+          isCorrect: false
+          explanation: "EnumerateFiles is used for listing the contents of a directory, not writing files."

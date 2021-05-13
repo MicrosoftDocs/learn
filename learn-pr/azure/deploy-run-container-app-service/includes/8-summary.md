@@ -4,13 +4,13 @@ You can use Azure Container Registry to hold Docker images, and you can construc
 
 In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
 
-   1. In Azure, select **Resource groups** on the left.
+   1. In Azure, select **Resource groups**.
 
-   1. Find the **learn-deploy-container-acr-rg** resource group, or whatever resource group name you used,  and select it.
+   1. Find the **learn-deploy-container-acr-rg** resource group, or whatever resource group name you used, and select it.
 
    1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-   1. This opens a new dialog box. Type the name of the resource group  again and select **Delete**. This will delete all of the resources we created in this module.
+   1. A dialog box appears prompting you to confirm the deletion. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
 
 ## Learn more
 

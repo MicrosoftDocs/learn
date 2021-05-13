@@ -24,4 +24,4 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are a lot of things to consider when coordinating projects at scale.
 
-To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](https://docs.microsoft.com/azure/devops/boards/plans/?view=azure-devops&azure-portal=true).
+To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](https://docs.microsoft.com/azure/devops/boards/plans/?azure-portal=true).

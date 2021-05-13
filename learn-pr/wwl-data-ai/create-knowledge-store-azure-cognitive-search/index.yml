@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
-  title: Implement a knowledge store
-  description: "Learn how to persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing."
-  ms.date: 10/15/2020
+  title: Create a knowledge store with Azure Cognitive Search
+  description: "Create a knowledge store with Azure Cognitive Search"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
   - Experience of creating an enrichment pipeline with Azure Cognitive Search
+  If you have not completed the [Create an Azure Cognitive Search solution](https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
 iconUrl: /learn/achievements/implementing-a-knowledge-store.svg
 levels:
 - intermediate
@@ -26,19 +27,12 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-cognitive-services
-- azure-storage
-- vs-code
 - azure-cognitive-search
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.get-ready-to-develop-search-solution
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-azure-resources-for-search
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-data-source
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-skillset
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-index
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-run-indexer
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.explore
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-knowledge-store
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.exercise-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.summary
 badge:

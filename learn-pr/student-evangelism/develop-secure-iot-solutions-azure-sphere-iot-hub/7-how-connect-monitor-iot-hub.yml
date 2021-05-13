@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-hub
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/7-how-connect-monitor-iot-hub.md)]

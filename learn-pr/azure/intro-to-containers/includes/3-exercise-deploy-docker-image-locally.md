@@ -5,7 +5,7 @@ As a proof-of-concept for the company's applications, you decide to try running 
 In this exercise, you'll pull an image from Docker Hub and run it. You'll examine the local state of Docker to help understand the elements that are deployed. Finally, you'll remove the container and image from your computer.
 
 > [!IMPORTANT]
-> This exercise takes place on your computer, not in Azure. You need a local installation of Docker to proceed with the exercise.
+> This exercise takes place on your computer, not in Azure. You need a local installation of Docker to proceed with the exercise. Download: https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
 ## Pull and run a sample application from Docker Hub
 
@@ -31,7 +31,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
-5. Open a web browser and go to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
+5. Open a web browser, and navigate to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
 
     :::image type="content" source="../media/3-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser." loc-scope="other"::: <!--no-loc -->
 
@@ -43,7 +43,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
    docker ps
    ```
 
-   The output should look similar to this:
+   The output should look similar to this.
 
    ```console
    CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
@@ -58,23 +58,23 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker container stop <NAME>
     ```
 
-1. Verify that the container is no longer running. The following command shows the status of the container as *Exited*. The *-a* flag indicates that the command shows the status of all containers, not just those that are still running.
+1. Verify that the container is no longer running. Run the following command to show the status of the container as *Exited*. The *-a* flag indicates that the command shows the status of all containers, not just those that are still running.
 
     ```bash
     docker ps -a
     ```
 
-1. Return to the web browser and refresh the page for the sample web app. It should fail with a *Connection Refused* error.
+1. Return to the web browser, and refresh the page for the sample web app. It should fail with a *Connection Refused* error.
 
 ## Remove the container and image from the local registry
 
-1. Although the container has stopped, it's still loaded and can be restarted. Remove it using the following command. As before, replace `<NAME>` with the name of your container.
+1. Although the container has stopped, it's still loaded and can be restarted. Remove it by running the following command. As before, replace `<NAME>` with the name of your container.
 
     ```bash
     docker container rm <NAME>
     ```
 
-1. Verify that the container has been removed with the following command. The command should no longer list the container.
+1. Verify that the container has been removed by running the following command. The command should no longer list the container.
 
     ```bash
     docker ps -a

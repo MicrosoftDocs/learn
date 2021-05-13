@@ -2,13 +2,13 @@ In GitHub, webhooks can be set up on an organization or a specific repository. T
 
 In this unit, you'll learn how to set up a webhook listening for a change event from your company's GitHub wiki. 
 
-## Setting up a webhook
+## Set up a webhook
 
 Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook.
 
 In GitHub, you can install webhooks for an organization or a repository. In the example scenario case, we're setting up a webhook on a specific repository.
 
-To set up the webhook, go to the **settings** page of your repository in the GitHub portal. Click **Webhooks**, and then click **Add webhook**. Alternatively, you can build and manage a webhook through the Webhooks API, but this module doesn't cover this approach.
+To set up the webhook, go to the **settings** page of your repository in the GitHub portal. Select **Webhooks**, and then select **Add webhook**. Alternatively, you can build and manage a webhook through the Webhooks API, but this module doesn't cover this approach.
 
 Webhooks require a couple of configuration options before you can use them. We'll go through each of these settings next.
 
@@ -18,7 +18,7 @@ The payload URL is the URL of the server that will receive the webhook POST requ
 
 Each event type has a specific payload format. That payload contains information about the event that triggered the webhook.
 
-### Content Type
+### Content type
 
 Webhooks can be delivered using two different content types:
 

@@ -1,4 +1,8 @@
-You can create an instance of the Azure Database for MySQL service using the Azure portal. If you need to create a number of instances of this service, you script the process by using the Azure CLI.
+Once a company makes the decision to move to Azure Database for MySQL, the next step is to plan how to migrate on-premises databases and choose the tools to move their data.
+
+Having explored how Azure Database for MySQL supports and scales MySQL on Azure, you now want to consider how you'll migrate your existing on-premises databases.
+
+In this unit, you'll see how to create an instance of the Azure Database for MySQL service using the Azure portal. If you need to create many instances of this service, you can script the process by using the Azure CLI.
 
 ### Create an Azure Database for MySQL using the portal
 

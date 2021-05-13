@@ -26,7 +26,7 @@ You'll find the storage account keys in the Azure portal view of the storage acc
 
 ![Screenshot showing the access keys in the Azure portal](../media/3-storage-keys.png)
 
-## Protecting shared keys
+## Protect shared keys
 
 The storage account has only two keys, and they provide full access to the account. Because these keys are powerful, use them only with trusted in-house applications that you control completely. 
 
@@ -38,8 +38,8 @@ If the keys are compromised, change the key values in the Azure portal. Here are
 
 To refresh keys:
 
-1. Change each trusted app to use the secondary key.
-1. Refresh the primary key in the Azure portal. Consider this as the new secondary key value.
+- Change each trusted app to use the secondary key.
+- Refresh the primary key in the Azure portal. Consider this as the new secondary key value.
 
 > [!IMPORTANT]
 > After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.

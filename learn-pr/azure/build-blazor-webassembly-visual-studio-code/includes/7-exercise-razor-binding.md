@@ -77,7 +77,7 @@ You're now ready to bind the variables you defined in the `@code` markup to your
 
 1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. In a web browser, go to https://localhost:5001.
+1. In a web browser, go to https://localhost:5000.
 
 1. Use the calculator by changing the input parameters and selecting **Calculate**.
 

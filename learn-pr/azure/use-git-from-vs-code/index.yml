@@ -12,10 +12,9 @@ title: Use Git version-control tools in Visual Studio Code
 summary: Utilize the tight integration of Visual Studio Code with the Git source-control management system.
 abstract: |
   In this module, you will:
-  - Use the Command Palette in Visual Studio Code to perform many Git tasks, such as cloning repositories and creating branches.
-  - Take visual cues from Visual Studio Code to understand the status of your work.
-  - Harness the Source Control view in Visual Studio Code to stage and unstage changes and create commits.
-  - Uncover numerous time-saving shortcuts that are tucked into the Visual Studio Code user interface.
+  - Perform common GitHub tasks by using the Command Palette in Visual Studio.
+  - Monitor the status of your work
+  - Commit your files to your repositories from the Source Control view
 prerequisites: |
   - Git, installed
   - Visual Studio Code, installed
@@ -30,7 +29,9 @@ products:
 - vs-code
 units:
 - learn.azure.use-git-from-vs-code.introduction
+- learn.azure.use-git-from-vs-code.clone-branch
 - learn.azure.use-git-from-vs-code.exercise-clone-branch
+- learn.azure.use-git-from-vs-code.stage-commit
 - learn.azure.use-git-from-vs-code.exercise-stage-commit
 - learn.azure.use-git-from-vs-code.knowledge-check
 - learn.azure.use-git-from-vs-code.summary

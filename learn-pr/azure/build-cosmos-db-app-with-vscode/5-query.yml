@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Query using the Azure Cosmos DB .NET Core SDK
 durationInMinutes: 5
 content: |

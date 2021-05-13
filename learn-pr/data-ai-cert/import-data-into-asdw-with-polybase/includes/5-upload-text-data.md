@@ -4,16 +4,16 @@ PolyBase can read data from several file formats and data sources. Before you up
 - Hadoop file formats, such as RC files, Optimized Row Columnar (ORC) files, and Parquet files.
 - Gzip and Snappy compressed files.
 
-If the data is coming from a relational database, such as Microsoft SQL Server, pull the data and then load it into an acceptable data store, such as an Azure Blob storage account. Tools such as SQL Server Integration Services can ease this transfer process.
+If the data is coming from a relational database, such as Microsoft SQL Server, pull the data, and then load it into an acceptable data store, such as an Azure Blob Storage account. Tools such as SQL Server Integration Services can ease this transfer process.
 
-Let's take some sample data and upload it to our Blob storage container.
+Let's take some sample data and upload it to our Blob Storage container.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to upload a text file to Azure Blob storage.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to upload a text file to Azure Blob Storage.
 
 ## Obtain the source data
 
-Our data processing department has exported the data we need into a comma-delimited file. Let's import that data into the blob container we created earlier.
+Our data processing department has exported the data we need into a comma-delimited file. Let's import that data into the blob container we previously created.
 
 Start by downloading the [sample data file](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-implement-azure-sql-data-warehouse/master/import-data-into-asdw-with-polybase/DimDate2.txt) to your local computer. The file contains time and data information with details about each entry.
 
@@ -35,17 +35,16 @@ Let's upload the data into the blob container.
 
 1. Select **All resources**, and in the **Search** box, enter **demodwstorage**. Select your storage account from the results.
 
-1. Select **Blobs** from the **Blob service** section in the storage account.
+1. In the middle menu pane, under **Data storage**, select **Containers**. The **Containers** pane appears for your storage account.
 
-    ![Blob container in the Azure portal](../media/5-select-blob-container.png)
+1. Select the container named **data-files**, and open it.
 
-1. Select the container named **data-files** to open it.
+1. On the top menu bar, select **Upload**. The **Upload blob** pane appears.
 
-1. Select the **Upload** icon. In the **Upload blob** pane on the right, browse and select the **DimDate2.txt** file you downloaded.
+1. Browse and select the **DimDate2.txt** file you downloaded.
 
-    ![Uploading data file](../media/5-upload-data-file.png)
+1. Select **Upload**.
+
+    ![Uploading data file.](../media/5-upload-data-file.png)
 
 1. After the file is uploaded, close the **Upload blob** pane. The file appears in your blob container.
-
-> [!TIP]
-> This example uses a single text file to upload data. It's a best practice to split up the data between data files of equal size that match the number of compute nodes in your data warehouse. That way you gain full parallelism of all the text files against each available compute node. For example, if you use a **Gen1 - DWU6000** or **Gen2 - DW30000c** configuration, you can import 60 text files in parallel because there are 60 nodes.

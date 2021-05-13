@@ -33,7 +33,7 @@ You can assign role-based authorization policies to a workspace, enabling you to
 You can create a workspace in any of the following ways:
 
 - In the Microsoft Azure portal, create a new **Machine Learning** resource, specifying the subscription, resource group and workspace name.
-- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example,m the following code creates a workspace named *aml-workspace* (assuming the Azure ML SDK for Python is installed and a valid subscription ID is specified):
+- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example, the following code creates a workspace named *aml-workspace* (assuming the Azure ML SDK for Python is installed and a valid subscription ID is specified):
 
 ```Python
     from azureml.core import Workspace

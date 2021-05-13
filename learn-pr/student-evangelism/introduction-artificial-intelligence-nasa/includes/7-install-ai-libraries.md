@@ -1,46 +1,139 @@
-It might seem like you had to download an excessive number of libraries for this project. Luckily, Anaconda helps you quickly download all the libraries you need. Microsoft has a [video about downloading and configuring an environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) that's similar to the one we need, but continue reading to download the libraries you need for this project.
+In this section, we'll install the libraries that you'll need to build your AI model as we continue in the learning path. We'll use Anaconda to complete the downloads. Anaconda is a distribution of the Python and R programming languages. It includes libraries for development in scientific computing like data science, machine learning, predictive analysis, and more. 
 
-## Download Anaconda
+> [!Tip]
+> You can watch this Microsoft [video about downloading and configuring an environment][VideoDownload].
+> The video shows an environment that's similar to the one we'll configure, but it's slighty different.
+> Be sure to read the entire topic for the complete download instructions for this project.
 
-Begin by going to the [Anaconda download page](https://www.anaconda.com/products/individual?azure-portal=true) to begin installing Anaconda. Select the download button. In the list of download links that are shown, select the link that corresponds to your computer operating system. Wait for the download to finish, and then select the executable file in the lower-left corner to start installation.
 
-> [!NOTE]
-> The following image depicts a computer running Windows 10 with the Microsoft Edge browser, but you should select the download that represents your computer.
+### Download Anaconda
 
-:::image type="content" source="../media/anaconda.png" alt-text="Screenshot of the Anaconda download webpage and an installation in progress on the computer.":::
+Follow these steps to download and install Anaconda.
 
-Next, complete the steps to install Anaconda on your computer. You'll be asked to read and agree to some license agreements and then wait for Anaconda to finish installing. When installation is finished, you should find an application on your computer named *anaconda prompt*. On Mac, you find this application on your computer because Anaconda is installed in your terminal.
+1. Go to the [Anaconda download page][AnacondaDownload] to install Anaconda.
 
-## Create an environment by using AI libraries
+1. Select **Download**.
 
-Start the Anaconda prompt application (or terminal on Mac). Start the prompt by searching for *anaconda* on your computer. At the Anaconda prompt, enter the following code:
+1. In the list of download links, select the link that corresponds to your computer operating system.
 
-`conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow`
+   Wait for the download to finish.
 
-This code installs all the libraries we need through Anaconda. You'll download a few other libraries that are good data science libraries you might find useful in the future.
+1. To start the installation, select the executable file in the lower-left corner of your browser. (You can also open the download folder and run the executable from that location.)
 
-You'll be prompted to install the packages. Enter Y, and then press Enter.
+   > [!NOTE]
+   > The following example shows a computer running Windows 10 with the Microsoft Edge browser.
+   > You should select the download that corresponds to your computer operating system.
 
-You'll need to activate your new environment. To activate the environment, enter the following code: 
+   :::image type="content" source="../media/anaconda.png" alt-text="A screenshot of the Anaconda download web page that shows the installation in progress.":::
 
-`conda activate myenv`
+1. Complete the steps to install Anaconda on your computer.
 
-The new environment should be created and ready to use. Then, we need to add one more library to the environment.
+After installation completes, the application is available on your computer:
 
-## Install torchvision
+- If you're using Windows, run the **Anaconda prompt** from the **Start** menu.
+- On a Mac, run the **Anaconda prompt** in your computer Terminal.
 
-To install torchvision, at the Anaconda prompt, enter the following code: 
 
-`conda install -c pytorch torchvision`
+### Use Anaconda to install AI libraries
 
-You'll be prompted to install the packages. Enter Y, and then press Enter.
+Follow these steps to create the environment:
 
-## Create a new folder and a Jupyter Notebook file
+1. At the Anaconda prompt, run the `conda create` command to start the Anaconda environment:
 
-You now have an environment that can take you through the rest of the learning path. The final thing you need to do is create a folder and the files that we'll be coding in. Choose an easily accessible location on your computer and make a folder. For example, you might name the folder *ClassifyingSpaceRocks*.
+   ```console
+   conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow
+   ```
 
-Next, open Visual Studio Code. Open the new folder that you created. Create a new Jupyter Notebook file and name it something like *ClassifySpaceRockProgram*. Last, at the upper-right and lower-left corners of the file, change the environment to the new Anaconda environment you created.
+   This command uses Anaconda to install all the libraries that we need for our model. In this command, we're also downloading a few other libraries that are good for data science. You might find these libraries useful for future development.
 
-:::image type="content" source="../media/set-environment.png" alt-text="Screenshot of Visual Studio Code and setting the Anaconda environment.":::
+1. When you're prompted to install the packages, enter **Y**, and then press Enter.
 
-Congratulations, you installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
+1. To activate your new environment, run the `conda activate` command: 
+
+   ```console
+   conda activate myenv
+   ```
+
+The new environment is ready to use, but we need to add one more library through a separate install command.
+
+
+### Install torchvision package
+
+Follow these steps to install the torchvision package.
+
+1. At the Anaconda prompt, run the `conda install` command: 
+
+   ```console
+   conda install -c pytorch torchvision
+   ```
+
+1. When you're prompted to install the package, enter **Y**, and then press Enter.
+
+
+### Create project folder and Jupyter Notebook file
+
+Now you have an environment you can use for the rest of the learning path. The last step is to create a project folder for your source code files.
+
+1. Choose an easily accessible location on your computer, and create a folder named **ClassifySpaceRocks**.
+
+1. Open Visual Studio Code, and then open the folder you created.
+
+   > [!Note]
+   > If you were running Visual Studio Code before your finished the install and set up of your Anaconda environment, you'll need to restart Visual Studio Code so the app can detect the environment.
+
+1. Create a Jupyter Notebook file named **ClassifySpaceRockProgram**.
+
+   1. Enter Ctrl + Shift + P to open the **Command** dropdown menu at the top of Visual Studio.
+
+   1. Select **Jupyter: Create new blank notebook**.
+     
+      A new notebook file opens. The system shows a message about connecting to the Python kernel in the lower-right corner.
+
+   1. Add the following comment in the first cell of the new notebook:
+
+      ```python
+      # AI model to classify space rocks
+      ```
+
+   1. Select the green arrow at the top of the cell to run it.
+
+   1. Enter Ctrl + S to save the file.
+
+   1. In the **Save As** dialog, browse to your folder.
+
+   1. Enter the name for the new notebook file. In our example, we'll use the name **ClassifySpaceRockProgram**. Make sure **Jupyter** is selected as the file type.
+
+   1. Select **Save**.
+
+   The saved Jupyter Notebook file should have the file extension *.ipynb*. You should see the file in the **Explorer** view in Visual Studio.
+
+1. At the upper-right and lower-left corners of Visual Studio, change the environment to the new Anaconda environment you created.
+
+   :::image type="content" source="../media/set-environment.png" alt-text="Screenshot of Visual Studio Code that shows how to set up the Anaconda environment.":::
+
+   > [!Note]
+   > In some Python configurations, the Python 3 and Python 3.x N-bit ('myenv': conda) environments are essentially the same.
+   > If you change the environment by selecting ('myenv': conda), Visual Studio Code might report the new environment as Python 3 rather than ('myenv': conda).
+   > 
+
+Congratulations! You've installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
+
+&nbsp;
+***
+
+### Next steps
+
+Continue to the next module in this Learning path and discover how to [analyze images of rocks by using artificial intelligence][AnalyzeImages].
+
+
+> [!Important]
+> If you plan to continue to the next module in this Learning path, leave your Anacoda prompt open and your Jupyter Notebook file open in Visual Studio Code.
+> If you close these applications, or plan to work on the module exercises across multiple sessions, you'll have to reopen the tools and reconfigure your working environment to continue your model development.
+>
+
+
+<!-- Links -->
+
+[AnacondaDownload]: https://www.anaconda.com/products/individual?azure-portal=true
+[AnalyzeImages]: https://docs.microsoft.com/learn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
+[VideoDownload]: https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true

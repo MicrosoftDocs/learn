@@ -13,7 +13,7 @@ You'll use your Azure subscription to deploy the resources in this workshop. To 
 In this module, you will:
 
 - Create an Azure Kubernetes Service cluster
-- Choose the best deployment options for you Pods
+- Choose the best deployment options for your Pods
 - Expose Pods to internal and external network users
 - Configure SSL/TLS for Azure Kubernetes Service ingress
 - Monitor the health of an Azure Kubernetes Service cluster

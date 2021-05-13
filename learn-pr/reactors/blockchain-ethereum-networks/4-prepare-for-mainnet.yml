@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-ethereum-networks.4-prepare-for-mainnet
+metadata:
+  title: Prepare for deployment to the mainnet
+  description: Get an overview of the steps to prepare to deploy to the Ethereum mainnet.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare for deployment to the mainnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-prepare-for-mainnet.md)]

@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: What authentication account type is recommended when planning for enterprise enrollment to be used in the EA portal?
+  - content: What authentication account type is recommended when planning for enterprise enrollment to be used in the Azure EA portal?
     choices:
     - content: Microsoft account
       isCorrect: false
@@ -30,12 +30,12 @@ quiz:
 
   - content: An Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
     choices:
-    - content: Multi-factor authentication provides another layer of security and a second barrier of authentication.
+    - content: Multifactor authentication provides another layer of security and a second barrier of authentication.
       isCorrect: true
-      explanation: Enforce multi-factor authentication and conditional access policies for all privileged accounts for greater security.
-    - content: Multiple Azure AD tenants can not function in the same enrollment.
+      explanation: Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.
+    - content: Multiple Azure AD tenants can't function in the same enrollment.
       isCorrect: false
       explanation: Multiple Azure AD tenants can function in the same enrollment.
-    - content: Do not start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.
+    - content: Start by implementing an Azure AD-only identity deployment if your organization already has an identity infrastructure.
       isCorrect: false
-      explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
+      explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for software as a service (SaaS) applications, enterprise applications, and devices.

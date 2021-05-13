@@ -135,7 +135,7 @@ previous example, because the operations are equivalent.
 >
 > For more information
 > about these functors and many other Q# features, see the [Q# user
-> guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
+> guide](/quantum/user-guide/).
 
 ## Estimate resources by using Q\#
 

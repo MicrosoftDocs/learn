@@ -151,7 +151,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **ResearchVMVMNic**, you should see a route to **10.2.0.0/16** with a next hop type of **VNetPeering**. This is the network route for the peering connection from **ResearchVNet** to **MarketingVNet**.
+    The output table shows the effective routes for the VM's network interface. For **ResearchVMVMNic**, you should see a route to **10.2.0.0/16** with a next hop type of **VNetGlobalPeering**. This is the network route for the peering connection from **ResearchVNet** to **MarketingVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type      Next Hop IP

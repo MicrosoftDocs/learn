@@ -1,0 +1,1 @@
+In this module, you learned about the networks that are part of Ethereum. You read an overview of the public and private networks. You learned how to prepare your solution for the mainnet. And finally, you deployed an application to the Ropsten test network.

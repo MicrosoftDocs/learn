@@ -4,8 +4,8 @@ title: Host your Azure virtual machines on dedicated physical servers by using A
 metadata:
   description: Learn how Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

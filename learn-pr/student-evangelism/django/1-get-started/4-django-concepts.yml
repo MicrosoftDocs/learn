@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.get-started.django-concepts
+title: Explore basic concepts in Django
+metadata:
+  title: Explore basic concepts in Django
+  description: Explore basic concepts in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-django-concepts.md)]

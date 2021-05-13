@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-data-share
 metadata:
   title: Introduction to Azure Data Share
   description: "Learn how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers."
-  ms.date: 10/16/2020
+  ms.date: 11/09/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
   * Manage existing shares
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-data-share.svg
 levels:
 - intermediate
 roles:

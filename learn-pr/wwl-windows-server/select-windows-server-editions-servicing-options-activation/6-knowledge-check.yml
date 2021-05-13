@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-windows-server-editions-servicing-options-activation.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many users and devices does Windows Server 2019 Essentials support?"
+    choices:
+    - content: "25 users and 50 devices"
+      isCorrect: true
+      explanation: "That's correct. This edition allows up to 25 users and 50 devices."
+    - content: "50 users and 25 devices"
+      isCorrect: false
+      explanation: "That's incorrect. This edition allows up to 25 users and 50 devices."
+    - content: "50 users and 50 devices"
+      isCorrect: false
+      explanation: "That's incorrect. This edition allows up to 25 users and 50 devices."
+  - content: "Contoso's planning team decides to use Windows Server SAC update servicing. For how many months after release are feature updates supported?"
+    choices:
+    - content: "12 months"
+      isCorrect: false
+      explanation: "That's incorrect. SAC feature releases are supported for longer."
+    - content: "18 months"
+      isCorrect: true
+      explanation: "That's correct. These releases will be supported for 18 months from the initial date of release."
+    - content: "36 months"
+      isCorrect: false
+      explanation: "That's incorrect. SAC feature releases are supported for fewer months."
+  - content: "Which edition of Windows Server includes licensing for a maximum of two VMs or Hyper-V containers?"
+    choices:
+    - content: "Windows Server 2019 Datacenter edition"
+      isCorrect: false
+      explanation: "That's incorrect. This is not a feature of Windows Server 2019 Datacenter edition licensing."
+    - content: "Windows Server 2019 Standard edition"
+      isCorrect: true
+      explanation: "That's correct. Standard edition includes licensing for two VMs or Hyper-V containers."
+    - content: "Windows Server 2019 Essentials edition"
+      isCorrect: false
+      explanation: "That's incorrect. This is not a feature of Windows Server 2019 Essentials edition licensing."

@@ -21,4 +21,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Use the instructions above to create a Comsos DB collection and bind a function to it."
+  hint: "Use the instructions above to create a Cosmos DB collection and bind a function to it."

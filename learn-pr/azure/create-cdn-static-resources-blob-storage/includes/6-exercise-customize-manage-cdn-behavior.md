@@ -68,11 +68,11 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. In the **Index.html** tab, add some more text to the file and then select **Save**.
 
-1. Switch back to the tab displaying the CDN cached copy of the website and refresh the page with the `/Q=old` query string. The page should still not change.
+1. Switch back to the tab displaying the CDN cached copy of the website and refresh the page with the `/?Q=old` query string. The page should still not change.
 
-1. Change the `/Q=old` to `/Q=new` and press Enter. The updated page appears after a short pause.
+1. Change the `/?Q=old` to `/?Q=new` and press Enter. The updated page appears after a short pause.
 
-1. Switch back to the `/Q=old` URl and notice that the older page reappears.
+1. Switch back to the `/?Q=old` URl and notice that the older page reappears.
 
 1. Switch back to the copy of the Azure portal that shows the CDN Endpoint settings.
 
@@ -80,6 +80,6 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Wait for 10 minutes until the new settings have updated on the CDN endpoint.
 
-1. Switch back to the tab displaying the CDN cached copy of the website and refresh the page using the `/Q=old` query string. The page should update with the changed version of the page.
+1. Switch back to the tab displaying the CDN cached copy of the website and refresh the page using the `/?Q=old` query string. The page should update with the changed version of the page.
 
 You've cached a copy of the origin web site and shown the caching behavior with query strings.

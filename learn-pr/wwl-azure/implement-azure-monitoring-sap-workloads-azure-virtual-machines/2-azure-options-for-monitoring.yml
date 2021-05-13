@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-options-for-monitoring
+title: Azure options for monitoring SAP workloads in Azure
+metadata:
+  title: Azure options for monitoring SAP workloads in Azure
+  description: "Azure options for monitoring SAP workloads in Azure"
+  ms.date: 03/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-options-for-monitoring.md)]

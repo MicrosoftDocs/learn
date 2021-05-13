@@ -5,11 +5,11 @@ You can always access your VM from the Azure portal. Since we created a Windows 
 1. Switch back to the Azure portal.
 
 1. In the left sidebar of the portal, select **Virtual Machines**.
-1. Locate the DSVM you just created (**Win2016**) and select it. This will bring up the **Overview** pane.
+1. Locate the DSVM you just created (**Win2019**) and select it. This will bring up the **Overview** pane.
 
     ![Screenshot of the Virtual Machines pane.](../media/3-create-vm.png)
 
-1. From the **Overview** pane, select the **Connect** link highlighted below.
+1. From the **Overview** pane, select the **Connect**.
 
     ![Screenshot of the Connect button selected in the Virtual Machines pane.](../media/3-connect-vm.png)
 
@@ -20,8 +20,6 @@ You can always access your VM from the Azure portal. Since we created a Windows 
     ![Screenshot of the Connect to Virtual Machine section.](../media/3-connect-rdp-config.png)
 
 1. Enter the administrator user ID and password that you used when you created the VM. On Windows clients it might default to your logged on user as the username - you can select the **More choices** option to allow you to enter a different username.
-
-    ![Screenshot of the Remote Desktop Connection warning box, asking if you still want to continue.](../media/3-remote-desktop-connection-warning.png)
 
     > [!IMPORTANT]
     > If the screen resolution on your client machine is high, you might get a black screen. If that happens, use Remote Desktop Connection (RDC) to open the RDP file. Prior to connecting click the **Show Options** link, click the **Display** tab, and set the **Display Configuration** to a lower resolution as shown in the following illustration.

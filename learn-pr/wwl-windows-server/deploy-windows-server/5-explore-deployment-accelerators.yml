@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-windows-server.explore-deployment-accelerators
+title: Explore the deployment accelerators
+metadata:
+  title: Explore the deployment accelerators
+  description: "Explore the deployment accelerators"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-explore-deployment-accelerators.md)]

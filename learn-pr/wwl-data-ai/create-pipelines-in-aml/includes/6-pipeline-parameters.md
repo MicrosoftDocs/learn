@@ -13,12 +13,14 @@ reg_param = PipelineParameter(name='reg_rate', default_value=0.01)
 
 ...
 
-step2 = EstimatorStep(name = 'train model',
-                      estimator = sk_estimator,
-                      compute_target = 'aml-cluster',
-                      inputs=[prepped],
-                      estimator_entry_script_arguments=['--folder', prepped,
-                                                        '--reg', reg_param])
+step2 = PythonScriptStep(name = 'train model',
+                         source_directory = 'scripts',
+                         script_name = 'data_prep.py',
+                         compute_target = 'aml-cluster',
+                         # Pass parameter as script argument
+                         arguments=['--in_folder', prepped_data,
+                                    '--reg', reg_param],
+                         inputs=[prepped_data])
 ```
 
 > [!NOTE]

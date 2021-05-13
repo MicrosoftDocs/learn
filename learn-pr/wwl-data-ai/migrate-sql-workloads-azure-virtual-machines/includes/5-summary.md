@@ -1,9 +1,8 @@
-Your company had a number of legacy database servers it needed to upgrade. The project manager wanted to take the opportunity to not just upgrade the database servers, but also migrate them to Azure Virtual Machines. The plan was to reduce costs, and hopefully see performance improvements.
+Your bike retail company had a number of legacy database servers that it needed to upgrade. The project manager wanted to take the opportunity to not just upgrade the database servers, but also migrate them to Azure Virtual Machines. The plan was to reduce costs, and hopefully see performance improvements.
 
 You created a plan to migrate your servers to Azure VMs, by considering the various options available, and agreeing the level of downtime each application could have. You then updated your applications to use a new connection string and resolved for any performance impacts.
 
-You have many options when migrating database workloads into the cloud. By choosing to run SQL Server on an Azure VM, you've minimized the impact on all the application in your organization. The code changes have been minimized to just connection string updates. You also know that you have feature parity with all your on-premises SQL Servers, and can continue to use the features your organization is used to.
-
+You have many options when migrating database workloads into the cloud. By choosing to run SQL Server on an Azure VM, you've minimized the impact on all the applications in your organization. The code changes have been minimized to just connection string updates. You also know that you have feature parity with all your on-premises SQL Servers, and can continue to use the features your organization is used to.
 
 ### Learn more
 

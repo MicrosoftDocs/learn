@@ -44,7 +44,7 @@ Each category is also returned with a score between 0 and 1 to indicate the pred
 "Classification": {
     "ReviewRecommended": true,
     "Category1": {
-        "Score": 1.5113095059859916E-06
+        "Score": 0.99756889843889822
         },
     "Category2": {
         "Score": 0.12747249007225037

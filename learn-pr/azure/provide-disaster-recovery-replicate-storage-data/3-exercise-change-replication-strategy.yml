@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
-interactive: bash
 azureSandbox: false
 content: |
   [!include[](includes/3-exercise-change-replication-strategy.md)]

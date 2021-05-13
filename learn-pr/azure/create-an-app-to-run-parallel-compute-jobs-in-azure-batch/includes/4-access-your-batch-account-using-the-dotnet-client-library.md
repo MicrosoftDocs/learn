@@ -25,22 +25,22 @@ Using the above libraries a typical approach to setting up a batch process is:
 1. Create a pool of compute nodes (**Batch API**)
 1. Create a job to run on those nodes (**Batch API**)
 1. Add a task to the job to run (**Batch API**)
-1. Monitor the tasks progress (**Batch API**)
+1. Monitor the progress of the task (**Batch API**)
 1. Download processed files when finished (**Storage API**)
 1. Delete the input storage container, delete the pool, delete the job (**Batch API** & **Storage API**)
 
 ## Azure Batch Pools
 
-A powerful feature of Azure Batch is how it manages compute resources. By defining pools of resources, Azure Batch has the flexibility to be set to a specific number of nodes. This is a good option if the size of the processing is well-defined and there's a requirement to have a known fixed cost. The other option is to allow the pool to scale up or down automatically based on a formula you define. This can take into account fluctuations in demand, and allow an application to scale to meet that demand. This also has the added benefit of keeping the costs as low as possible.
+A powerful feature of Azure Batch is how it manages to compute resources. By defining pools of resources, Azure Batch has the flexibility to be set to a specific number of nodes. This is a good option if the size of the processing is well-defined and there's a requirement to have a known fixed cost. The other option is to allow the pool to scale up or down automatically based on a formula you define. This can take into account fluctuations in demand, and allow an application to scale to meet that demand. This also has the added benefit of keeping the costs as low as possible.
 
-When creating Azure Batch pools, you specify a number of attributes:
+When creating Azure Batch pools, you specify the attributes:
 
-- Target number of nodes (default limit 100)
+- The target number of nodes (default limit 100)
 - The node's operating system and version (a range of Windows and Linux images are available)
 - Type of node, dedicated or low-priority (dedicated nodes are more expensive but wont be preempted, low-priotity nodes are cheaper as they take advantage of surplus capacity in a region, but could have their tasks suspended if the resources are required elsewhere)
-- The nodes performance as size of CPU, memory, and storage
-- Auto-scaling policy (scaling is controlled by a formula you specify, for example based on the percentage of CPU in use)
+- The nodes performance as the size of CPU, memory, and storage
+- Auto-scaling policy (scaling is controlled by a formula you specify, for example, based on the percentage of CPU in use)
 - Task scheduling policy (control the maximum number of tasks a node can run in parallel, and choose how tasks are distributed between nodes)
-- Start up tasks to be performed when nodes boot (used to set up the node to be able to run the tasks, like installing required applications)
+- Startup tasks to be performed when nodes boot (used to set up the node to be able to run the tasks, like installing required applications)
 - Network configuration (subnet and VNet options)
 - Application packages (allow applications to be easily deployed to every node in a pool) 

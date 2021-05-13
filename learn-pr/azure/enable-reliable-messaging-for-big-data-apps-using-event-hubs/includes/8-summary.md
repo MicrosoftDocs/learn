@@ -1,4 +1,4 @@
-Azure Event Hubs provides big data applications the capability to process large volume of data. It can also scale out during exceptionally high-demand periods as and when required. Azure Event Hubs decouples the sending and receiving messages to manage the data processing. This helps eliminate the risk of overwhelming consumer application and data loss because of any unplanned interruptions.
+Azure Event Hubs provides big data applications the capability to process large volume of data. It can also scale out during exceptionally high-demand periods, as required. Azure Event Hubs decouples the sending and receiving messages to manage the data processing. This helps eliminate the risk of overwhelming consumer application and data loss because of any unplanned interruptions.
 
 In this module, you've seen how to deploy Azure Event Hubs as part of an event processing solution.
 

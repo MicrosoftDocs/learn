@@ -52,6 +52,14 @@ The [GitHub Marketplace](https://github.com/marketplace?type=actions&query=azure
 
 :::image type="content" source="../media/2-marketplace-azure.png" alt-text="The GitHub Marketplace showing search results for Azure." border="true":::
 
+You can also search and browse GitHub Actions directly in a repository's workflow editor. From the sidebar, you can search for a specific Action, view featured Actions, and browse featured categories.
+
+To find an Action:
+
+- In your repository, browse to the workflow file that you want to edit.
+- Click the edit icon in the upper right corner of the file view.
+- Use the GitHub Marketplace sidebar to the right of the editor to browse Actions.
+
 Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace you find these actions:
 
 - [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true)
