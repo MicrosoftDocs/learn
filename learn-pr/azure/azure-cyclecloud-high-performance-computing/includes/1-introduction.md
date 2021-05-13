@@ -16,6 +16,6 @@ In this module, you'll first deploy an Azure VM hosting the Azure CycleCloud app
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to install and configure Azure CycleCloud, describe its integration options with third-party schedulers, and use it to deploy a basic HPC cluster on Azure.
+By the end of this session <!--- Is "session" appropriate word or it would make more sense to use "module" or "lesson"? --->, you'll be able to install and configure Azure CycleCloud, describe its integration options with third-party schedulers, and use it to deploy a basic HPC cluster on Azure.
 
 
