@@ -2,13 +2,13 @@
 uid: learn.azure.customize-suse-linux-enterprise-server-azure
 metadata:
   moduleType: standard
-  title: Easily customize your SUSE Linux Enterprise Server on Azure
+  title: Customize a SUSE Linux Enterprise Server virtual machine on Azure
   description: TODO This field is not visible when published, but is critical for search engine optimization. Use 2-3 complete, grammatically correct sentences to describe the unit, and include lots of relevant search keywords.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
-title: Easily customize your SUSE Linux Enterprise Server on Azure
+title: Customize a SUSE Linux Enterprise Server virtual machine on Azure
 summary: "TODO This is the 'summary' field in index.yml. 2 sentences, 20-35 words. Don't teach or motivate, avoid using 'learn', and don't duplicate the title. See the guidance [here](https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)."
 abstract: |
   By the end of this module, you'll be able to:
