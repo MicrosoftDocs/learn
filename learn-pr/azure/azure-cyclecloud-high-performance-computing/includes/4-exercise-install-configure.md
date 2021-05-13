@@ -9,7 +9,7 @@ You will start by deploying an Azure VM hosting the Azure CycleCloud application
 1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you are using in this module.
 
     > [!NOTE]
-    > The Azure portal is available from the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. 
+    > The Azure portal is available from <!--- I find this wording unusual. Maybe we could use something as: Azure portal supports modern web browsers, such as ... I think that it would also make sense to replace "Azure portal-compatible web browser" with "modern web browser" or something similar. ---> the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. 
 
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for **Azure CycleCloud**. 
 1. In the list of results, in the **Marketplace** section, select the **Azure CycleCloud** entry.
@@ -80,7 +80,7 @@ You will start by deploying an Azure VM hosting the Azure CycleCloud application
 1. In the **Generate new key pair** pop-up window, select **Download private key and create resource**. This will automatically download the **.pem** file containing the private key to your computer. 
 
     > [!NOTE]
-    > Wait for the installation to complete. This should take about 1 minute.
+    > Wait for the installation <!--- Is the "installation" appropriate term to use here or "provisioning" / "deployment" would make more sense? ---> to complete. This should take about 1 minute.
 
 1. On the deployment blade, select **Go to resource** to navigate to the **cyclecloud-vm** blade.
 
@@ -95,7 +95,7 @@ After you deployed the Azure CloudCycle web application to an Azure VM, you can 
 
     :::image type="content" source="../media/u4-cyclecloud-public-key.png" alt-text="The screenshot depicts the Essentials section of the cc-ssh-keys blade, including the Public key entry in the Azure portal." border="false":::
 
-1. On your computer, open another browser window and navigate to the **https://<IP_address>** URL, replacing the **<IP_address>** placeholder with the public IP address you identified in the previous step. If prompted, confirm that you want to connect to the target Azure VM.
+1. On your computer, open another browser window and navigate to the **https://<IP_address>** URL, replacing the **<IP_address>** placeholder with the public IP address you identified in the previous <!--- This was not in the previous step, but in the first step in this section. ---> step. If prompted, confirm that you want to connect to the target Azure VM.
 
     > [!NOTE]
     > Your browser will likely display the message about the connection not being private and warn you about connecting to that IP address. This is expected, since you are connecting to the target server by using a self-signed certificate and the URL you are connecting to does not match the subject name of the certificate.
