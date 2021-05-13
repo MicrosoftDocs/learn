@@ -1,6 +1,6 @@
-This unit combines the last two exercises as you evaluate Azure App Service on Azure Arc. In these two exercises, you'll perform the following tasks:
+This unit combines the last two exercises as you evaluate Azure App Service on Kubernetes with Azure Arc. In these two exercises, you'll perform the following tasks:
 
-1. Create a web app in an App Service Kubernetes environment.
+1. Create a web app in Azure App Service on Kubernetes with Azure Arc.
 1. Deploy a Node.js-based application by using a zip-file deployment.
 1. Delete the Azure Arc resource group.
 1. Delete the AKS resource group.
@@ -9,9 +9,9 @@ This unit combines the last two exercises as you evaluate Azure App Service on A
 > The sample application you'll deploy is intentionally very simplistic. This exercise's primary purpose is to demonstrate deployment methodology. However, you can use the same approach when deploying more complex apps (the file size limit is 2048 megabytes (MB). For more information, refer to the Microsoft Docs article [Deploy your app to Azure App Service with a ZIP or WAR file](https://docs.microsoft.com/azure/app-service/deploy-zip).
 
 > [!NOTE]
-> This exercise illustrates a code-based deployment. App Service Kubernetes environment also supports container-based deployments.
+> This exercise illustrates a code-based deployment. Azure App Service on Kubernetes with Azure Arc also supports container-based deployments.
 
-These are the two final exercises in the module's sequence of exercises. These exercises have guided you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
+These are the two final exercises in the module's sequence of exercises. These exercises have guided you through implementing Azure App Service on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
@@ -26,9 +26,12 @@ These are the two final exercises in the module's sequence of exercises. These e
 
 ## Task 1: Create a web app in an App Service Kubernetes environment
 
-To create a web app in an App Service Kubernetes environment, you need an App Service plan within that environment. However, you don't have to create one explicitly. If a plan doesn't exist, the platform will automatically provision it. For the sake of completeness, this process includes steps that illustrate creation of an App Service plan.
+To deploy a web app to an App Service Kubernetes environment, you need to designate its custom location. It is not necessary or recommended to explicitly create an App Service plan, since the platform will automatically provision one for you. 
 
-Use the following step to create an App Service plan and a Linux code-based web app:
+    > [!NOTE]
+    > For the sake of completeness, this task includes steps that illustrate creation of an App Service plan.
+
+Use the following step to create a Linux code-based web app:
 
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values of the variables that designate the names of the resource group that contains the Arc resources and the Azure Arc-connected cluster resource:
 
@@ -42,13 +45,10 @@ Use the following step to create an App Service plan and a Linux code-based web 
 
     ```azurecli-interactive
     EXTENSION_NAME="${K8S_ARC_PREFIX}-kube"
-    KUBE_ENV_NAME=$EXTENSION_NAME
+    KUBE_ENV_NAME="${K8S_ARC_PREFIX}-kube-env"
     ```
 
-    > [!IMPORTANT]
-    > Currently, the names of the extension and kube environment must match.
-
-1. Run the following commands to set the value of the variable that designate the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
+1. Run the following command to set the value of the variable that designate the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
 
     ```azurecli-interactive
     CUSTOM_LOCATION_NAME="${K8S_ARC_PREFIX}-location"
@@ -60,26 +60,16 @@ Use the following step to create an App Service plan and a Linux code-based web 
     CUSTOM_LOCATION_ID=$(az customlocation show -g $ARC_RG_NAME -n $CUSTOM_LOCATION_NAME --query id -o tsv)
     ```
 
-1. Run the following commands to set values of the variables that designate the names of the service plan and the web app:
+1. Run the following command to set value of the variable that designates the names of the web app:
 
     ```azurecli-interactive
-    WEBAPP_SP_NAME=k8sArc-sp
     WEBAPP_NAME=k8sarcwebapp$RANDOM$RANDOM
     ```
 
-    > [!NOTE]
-    > A known issue requires that you choose a globally unique name for your web app. Don't use a cluster-unique app name. Otherwise, you might observe a **ResourceNotFound** exception error when you preform the web-app deployment later in this exercise.
-
-1. Run the following command to create an App Service plan in the custom location:
+1. Run the following command to deploy a web app:
 
     ```azurecli-interactive
-    az appservice plan create -g $ARC_RG_NAME -n $WEBAPP_SP_NAME --custom-location $CUSTOM_LOCATION_ID --is-linux --per-site-scaling
-    ```
-
-1. Run the following command to deploy a web app using the newly created App Service plan:
-
-    ```azurecli-interactive
-    az webapp create -g $ARC_RG_NAME -p $WEBAPP_SP_NAME -n $WEBAPP_NAME --runtime "NODE|12-lts"
+    az webapp create -g $ARC_RG_NAME -n $WEBAPP_NAME --custom-location $CUSTOM_LOCATION_ID --runtime "NODE|12-lts"
     ```
 
     > [!TIP]
@@ -89,11 +79,21 @@ Use the following step to create an App Service plan and a Linux code-based web 
     > az webapp list-runtimes --linux
     > ```
 
+    > [!NOTE]
+    > If you want to explicitly create an App Service plan, run the following commands that, respectively, set the value of the variables that designate the names of the service plan and the web app, create an App Service plan, and create a web app based on that App Service plan:
+    > 
+    > ```azurecli-interactive
+    > WEBAPP_SP_NAME=k8sArc-sp
+    > WEBAPP_NAME=k8sarcwebapp$RANDOM$RANDOM
+    > az appservice plan create -g $ARC_RG_NAME -n $WEBAPP_SP_NAME --custom-location $CUSTOM_LOCATION_ID --per-site-scaling --is-linux --sku K1
+    > az webapp create -g $ARC_RG_NAME -p $WEBAPP_SP_NAME -n $WEBAPP_NAME --runtime "NODE|12-lts"
+    > ```
+
 ## Task 2: Deploy a Node.js-based application by using the zip-file deployment
 
 Now, you'll download the code containing a sample Node.js application, install its dependencies, create a zip archive that contains all application files, and deploy it to the web app you previously created.
 
-Use the following steps to deploy a Node.js-based application by using the ZIP file deployment to a web app in an App Service Kubernetes environment:
+Use the following steps to deploy a Node.js-based application by using the ZIP file deployment to a web app on Azure App Service on Kubernetes with Azure Arc:
 
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to download the content of the https://github.com/Azure-Samples/nodejs-docs-hello-world GitHub repository that contains the sample application:
 
@@ -145,6 +145,14 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     > [!NOTE]
     > The webpage should display **Hello World!**
 
+    > [!NOTE]
+    > Alternatively, you can simply run the following command: 
+    > 
+    > ```azurecli-interactive
+    > az webapp browse -g $ARC_RG_NAME -n $WEBAPP_NAME
+    > ```
+
+
 ## Task 3: Delete the Azure Arc resource group
 
 To return your Azure subscription to its original state, remove the Azure Arc resources that you'll no longer use.
@@ -184,4 +192,4 @@ Use the following step to delete the remaining Azure resources you provisioned t
 
     >**Note**: The command executes asynchronously (as determined by the **--nowait** parameter). While you'll be able to run another Azure CLI command in the same shell immediately after running this command, it'll take a few minutes before the resource groups are actually removed.
 
-Congratulations! You've completed the last two exercises of this module. You've created an App Service plan and a web app in the App Service Kubernetes environment hosted on your Azure Arc-enabled Kubernetes cluster. You've also deployed a Node.js-based application into the web app by using the zip-file deployment method, validated the deployment, and removed any Azure resources that you'll no longer use.
+Congratulations! You've completed the last two exercises of this module. You've created a web app in Azure App Service on Kubernetes with Azure Arc. You've also deployed a Node.js-based application into the web app by using the zip-file deployment method, validated the deployment, and removed any Azure resources that you'll no longer use.

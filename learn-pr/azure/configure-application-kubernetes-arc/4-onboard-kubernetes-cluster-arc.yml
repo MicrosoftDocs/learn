@@ -3,7 +3,7 @@ uid: learn.configure-application-kubernetes-arc.onboard-kubernetes-cluster-arc
 title: Exercise - Onboard the Kubernetes cluster to Arc
 metadata:
   title: Exercise - Onboard the Kubernetes cluster to Arc
-  description: .....
+  description: This exercise steps through onboarding the Kubernetes cluster to Arc.
   ms.date: 05/01/2021
   author: jamcneil
   ms.author: jumcn

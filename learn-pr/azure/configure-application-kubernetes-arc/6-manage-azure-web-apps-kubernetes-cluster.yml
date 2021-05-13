@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-application-kubernetes-arc.manage-azure-web-apps-kubernetes-cluster
-title: Exercise - Implement the Lima overlay for Azure Web Apps
+title: Exercise - Manage Azure web apps on Kubernetes
 metadata:
-  title: Exercise - Implement the Lima overlay for Azure Web Apps
-  description: ....
+  title: Exercise - Manage Azure web apps on Kubernetes
+  description: This exercise steps through managing Azure web apps on Kubernetes
   ms.date: 05/01/2021
   author: jamcneil
   ms.author: jumcn

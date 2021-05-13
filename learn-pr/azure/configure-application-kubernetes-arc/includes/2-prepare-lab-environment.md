@@ -42,9 +42,6 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
 1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands enable all required resource providers and their respective preview features for all resources and locations you'll use:
 
     ```azurecli-interactive
-    az feature register --namespace Microsoft.Resources --name EUAPParticipation
-    az provider register -n Microsoft.Resources --wait
-
     az feature register --namespace Microsoft.Kubernetes --name previewAccess
     az provider register --namespace Microsoft.Kubernetes --wait
 
@@ -60,14 +57,14 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
     > [!NOTE]
     > Wait for the commands to complete. This should take about 2 minutes.
 
-1. Run the following command to determine whether you can create Kubernetes Environments:
+1. Run the following command to determine whether you can create App Service Kubernetes Environments:
 
     ```azurecli-interactive
     az provider show -n Microsoft.Web --query "resourceTypes[?resourceType=='kubeEnvironments'].locations"
     ```
 
     > [!NOTE]
-    > Verify that the output includes the entry representing the **Central US EUAP** location before you proceed. If it doesn't, wait a few minutes and repeat this step.
+    > Verify that the output includes the entries representing the **East US** and **West Europe** locations before you proceed. If it doesn't, wait a few minutes and repeat this step.
 
 ## Task 3: Install required Azure CLI extensions
 
@@ -96,26 +93,21 @@ Use the following steps to install the Azure CLI extensions that are required to
 
     > [!NOTE]
     > Wait for the installation to complete. This should take about 1 minute.
-1. From your computer, download the latest **appservice-kube** CLI extension from [the Releases page of the Azure App Service on Azure Arc repository](https://github.com/microsoft/Azure-App-Service-on-Azure-Arc/releases).
-1. In the browser window that displays the **Azure Cloud Shell** pane, in the pane's toolbar, select the fourth icon that displays a page with vertical arrows that point in opposite directions (the fourth icon from the right). In the drop-down menu, select **Upload**.
-1. In the **Open** dialog box, navigate to the location of the **.whl** file, select it, and then select **Open**.
-1. From the Bash session in the **Azure Cloud Shell** pane, run the following command to install the **appservice-kube** Azure CLI extension. If necessary, replace `appservice_kube-0.1.16-py2.py3-none-any.whl` with the name of the **.whl** file you uploaded in the previous step:
+
+1. From the Bash session in the **Azure Cloud Shell** pane, run the following command to install the **appservice-kube** Azure CLI extension:
 
     ```azurecli-interactive
-    az extension add --yes --source ./appservice_kube-0.1.16-py2.py3-none-any.whl
+    az extension add --yes --source "https://aka.ms/appsvc/appservice_kube-latest-py2.py3-none-any.whl"
     ```
 
     > [!NOTE]
-    > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format:
+    > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions):
     >
     >```json
     >Extensions:
-    >customlocation                     0.1.0
-    >connectedk8s                       0.3.5
-    >k8s-extension                      0.1.0
-    >appservice-kube                    0.1.16
-    >ai-examples                        0.2.5
-    >ssh                                0.1.5
+    >customlocation                     0.1.2
+    >connectedk8s                       1.1.3
+    >appservice-kube                    0.1.18
     >```
 
-Congratulations! You completed the first exercise of this module. You've prepared your lab environment for implementation of Azure App Service on Azure Arc-enabled Kubernetes clusters.
+Congratulations! You completed the first exercise of this module. You've prepared your lab environment for implementation of Azure App Service on Kubernetes with Azure Arc.

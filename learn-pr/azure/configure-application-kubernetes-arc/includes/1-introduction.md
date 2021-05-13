@@ -1,4 +1,4 @@
-App Service on Azure Arc facilitates implementation of services, such as web apps, on customer-managed, Azure Arc-onboarded Kubernetes clusters. Azure App Service enables DevOps teams to use a consistent approach when deploying solutions to customer-managed clusters and Azure-hosted platform as a service (PaaS) services.
+Azure App Service on Kubernetes with Azure Arc facilitates implementation of services, such as web apps, on customer-managed, Azure Arc-onboarded Kubernetes clusters. Azure App Service enables DevOps teams to use a consistent approach when deploying solutions to customer-managed clusters and Azure-hosted platform as a service (PaaS) services.
 
 ## Scenario: Implement Azure App Service on Kubernetes with Azure Arc
 
@@ -12,9 +12,9 @@ You're evaluating Azure App Service on Kubernetes with Azure Arc to determine wh
 
 After completing this module, you'll be able to:
 
-- Prepare for implementing Azure App Service on Azure Arc enabled Kubernetes.
-- Implement an Azure Kubernetes Service (AKS) cluster that supports App Service on Azure Arc.
-- Install the Azure Web Apps extension into an AKS cluster.
+- Prepare for implementing Azure App Service on Kubernetes with Azure Arc.
+- Implement an Azure Kubernetes Service (AKS) cluster that supports Azure App Service on Kubernetes with Azure Arc.
+- Install the application services extension into an AKS cluster.
 - Deploy Azure App Services web apps to an AKS cluster.
 
 ## Prerequisites
@@ -25,7 +25,7 @@ To get the best learning experience from this module, you should have:
 - Foundational understanding of AKS.
 - Foundational understanding of Helm.
 - Foundational understanding of Web Apps feature of Azure App Service.
-- Conceptual understanding of App Service on Azure Arc.
+- Conceptual understanding of Azure App Service on Kubernetes with Azure Arc
 - Understanding of container orchestration.
 
 To complete exercises in this module, you'll need:

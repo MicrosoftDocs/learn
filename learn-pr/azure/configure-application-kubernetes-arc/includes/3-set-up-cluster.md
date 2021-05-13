@@ -1,20 +1,20 @@
-In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for App Service on Azure Arc. The exercise consists of the following tasks: 
+In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for Azure App Service on Kubernetes with Azure Arc. The exercise consists of the following tasks: 
 
 1. Deploy an AKS cluster.
 1. Connect to the AKS cluster.
 
 > [!NOTE]
-> App Service on Azure Arc doesn't support Windows node pools in AKS clusters.
+> Azure App Service on Kubernetes with Azure Arc doesn't support Windows node pools in AKS clusters.
 
 > [!NOTE]
-> Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of App Service on Azure Arc. App Service on Azure Arc is designed to run on any compliant Azure Arc enabled Kubernetes cluster.
+> Choosing AKS as this module's hosting platform doesn't represent the intended primary use case of Azure App Service on Kubernetes with Azure Arc. Azure App Service on Kubernetes with Azure Arc is designed to run on any compliant Azure Arc enabled Kubernetes cluster.
 
 This is the second in this module's sequence of exercises. These exercises guide you through implementing Azure App Service web apps on Kubernetes with Azure Arc. The sequence consists of the following exercises:
 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
+1. Deploy the application services extension on the Azure Arc enabled Kubernetes cluster.
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
@@ -22,32 +22,29 @@ This is the second in this module's sequence of exercises. These exercises guide
 
 ## Task 1: Deploy an AKS cluster
 
-To support the App Service on Azure Arc, an AKS cluster must satisfy the following requirements:
+To support the Azure App Service on Kubernetes with Azure Arc, an AKS cluster must satisfy the following requirements:
 
 - Run Kubernetes version 1.18.14 or newer.
 - Feature a load balancer as its front-end service.
 - Have Azure AD enabled.
-- Constitute an approved App Service on Azure Arc distribution.
+- Constitute an approved Azure App Service on Kubernetes with Azure Arc distribution.
 
-Use the following steps to deploy an AKS cluster that supports App Service on Azure Arc:
+Use the following steps to deploy an AKS cluster that supports Azure App Service on Kubernetes with Azure Arc:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, its public IP address, and its Azure region:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, its public IP address, and its Azure region (replace the `<azure_region>` placeholder with the name of any AKS-supported region):
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
     K8S_CLUSTER_NAME=k8sAKS-cluster
     K8S_PIP_NAME=k8sAKS-cluster-pip
-    LOCATION=eastus
+    LOCATION=<azure_region>
     ```
-
-    > [!IMPORTANT]
-    > During the preview, the only supported Azure region is **East US**.
 
 1. Run the following commands to create the resource group that will contain the AKS cluster, and then provision the AKS cluster:
 
     ```azurecli-interactive
     az group create -l $LOCATION -n $K8S_CLUSTER_RG_NAME
-    az aks create -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --enable-aad --generate-ssh-keys --node-count 1
+    az aks create -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --enable-aad --generate-ssh-keys
     ```
 
     > [!NOTE]
