@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.aspnetcore-accessibility.4-accessible-web-forms
 metadata:
-  title: Find and fix form accessibility with Accessibility Insights
-  description: Learn how to find and fix form accessibility with Accessibility Insights
+  title: Find and fix form accessibility issues with Accessibility Insights
+  description: Find and fix form accessibility issues with Accessibility Insights
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Add ASP.NET Core automation properties
+title: Find and fix form accessibility issues with Accessibility Insights
 durationInMinutes: 5
 content: |
   [!include[](includes/4-accessible-web-forms.md)]
