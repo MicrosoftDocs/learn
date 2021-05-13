@@ -24,9 +24,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az network vnet create \
       --resource-group $RG \
       --name vehicleAppVnet \
-      --address-prefix 10.0.0.0/16 \
+      --address-prefixes 10.0.0.0/16 \
       --subnet-name webServerSubnet \
-      --subnet-prefix 10.0.1.0/24
+      --subnet-prefixes 10.0.1.0/24
     ```
 
 1. To download the script that creates the virtual machines, run the following command.

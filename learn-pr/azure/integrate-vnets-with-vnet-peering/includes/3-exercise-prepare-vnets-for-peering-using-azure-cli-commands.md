@@ -22,7 +22,7 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name SalesVNet \
-        --address-prefix 10.1.0.0/16 \
+        --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
         --subnet-prefix 10.1.1.0/24 \
         --location northeurope
@@ -34,7 +34,7 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name MarketingVNet \
-        --address-prefix 10.2.0.0/16 \
+        --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
         --subnet-prefix 10.2.1.0/24 \
         --location northeurope
@@ -46,7 +46,7 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ResearchVNet \
-        --address-prefix 10.3.0.0/16 \
+        --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
         --subnet-prefix 10.3.1.0/24 \
         --location westeurope
