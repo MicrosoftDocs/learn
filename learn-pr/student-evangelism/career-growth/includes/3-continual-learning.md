@@ -1,4 +1,5 @@
-# Becoming a Continual Learner
+TODO: needs a lead in sentence on a problem and why continual learning helps to fix that. Also no H1 in units
+## Becoming a Continual Learner
 
 If you just graduated from an educational program, it can be daunting to think that, in engineering disciplines, you must always be ready to learn something new. This doesn't mean that you have to jump right back into a higher degree program, rather, it is embracing a mindset.
 
