@@ -6,7 +6,7 @@ While individual packages can alert you to dependencies on other packages for de
 
 ## SUSE’s package manager, zypper, reconciles package dependencies  
 
-SUSE created zypper, a command line package manager, which makes use of libzpp (SAT solver) to reconcile package dependencies for you. With zypper, all related packages are flagged at once when you select an activity or grouping, so you can install, update, or delete them with a single command. The YaST GUI and TUI includes zypper built into it. Compared to manually finding and selecting package dependencies through RPM, zypper saves a lot of time.  
+SUSE created zypper, a command line package manager, which makes use of libzpp (SAT solver) to reconcile package dependencies for you. With zypper, all related packages are flagged at once when you select an activity or grouping, so you can install, update, or delete them with a single command. The YaST GUI and TUI includes zypper built into it. YaST runs zypper automatically in the background every time you start. Compared to manually finding and selecting package dependencies through RPM, zypper saves a lot of time.  
 
 ## Packages and corresponding modules configuration are updated 
 
