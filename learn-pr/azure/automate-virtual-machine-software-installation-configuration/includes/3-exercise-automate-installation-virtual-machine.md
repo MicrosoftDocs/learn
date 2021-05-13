@@ -271,7 +271,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
     1. On the **Server Selection** page, verify that your virtual machine should is selected, and then click **Next**.
 
-        ![Screenshot of the Windows virtual machine Server Manager.](../media/3-add-roles.png)
+        ![Screenshot of the Windows virtual machine Server Manager showing additional configuration options.](../media/3-add-roles.png)
 
     1. On the **Server Roles** page, scroll down and note that **Web Server (IIS)** isn't selected.
 
