@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.career-growth.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: From Student to Employee - Growing your Career
+  description: Strategies to growth-hack your career by networking, continually learning, and providing value as a trusted employee
+  ms.date: 4/15/2021
+  author: jlooper
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: <TODO>
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Networking strategies include"
+    choices:
+    - content: "Meetups and Conferences"
+      isCorrect: false
+      explanation: "This is a good external method of networking, but there are others"
+    - content: "ERGs, or Employee Groups"
+      isCorrect: false
+      explanation: "This is a good internal networking method, but there are others"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "It's possible to network both inside and outside an organization"
+  - content: "'Managing Up' includes"
+    choices:
+    - content: "Asking appropriate questions of a manager"
+      isCorrect: true
+      explanation: "Correct, it's possible to lead a conversation with a manager to help them understand an employee's perspectives"
+    - content: "Implies that a manager is incompetent"
+      isCorrect: false
+      explanation: "False, managing up can help both an employee and their manager"
+    - content: "Does not work when both a manager and an employee are working remotely"
+      isCorrect: false
+      explanation: "False, it's possible to use communication tactics such as these both online and in person"
+  - content: "Is it necessary to go back to school to continue learning?"
+    choices:
+    - content: "No, but it can be a valuable activity"
+      isCorrect: true
+      explanation: "That's correct, it can be valuable but is often not necessary"
+    - content: "Yes, accumulate as many degrees as possible"
+      isCorrect: false
+      explanation: "False, it's not necessary to accumulate degrees"
+    - content: "Yes, it is impossible to advance in a company without advanced degrees"
+      isCorrect: false
+      explanation: "False, this is rarely the case"

@@ -1,0 +1,2 @@
+
+Transitioning from student to employee, perhaps via an internship, is a big step. In this session, you learned some strategies to network with people inside and outside your company. You also learned how to set your mindset to growth-hack your career by continually learning. Finally, you discovered some tactics to build trust as a new employee. You are ready to take on the world!

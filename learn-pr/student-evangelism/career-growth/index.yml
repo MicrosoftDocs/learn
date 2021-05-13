@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.career-growth
+metadata:
+  moduleType: standard
+  title: Grow your Career
+  description: As a new employee in tech, discover ways to grow your career from the inside
+  ms.date: 4/15/2021
+  author: jlooper
+  ms.author: jelooper
+  ms.topic: interactive-tutorial # do we need ms.topic?
+title: career-growth
+summary: You've just landed your first job in tech. Now what? Learn strategies to growth-hack your career inside your company.
+abstract: | 
+  By the end of this module, you'll be able to:
+    - designate strategies to growth-hack your career
+    - discover networking techniques
+    - set expectations for yourself as you grow your career
+prerequisites: | 
+  - Learn module on Career Skilling
+  - Learn module on Interviewing
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - student 
+units:
+- learn.career-growth.introduction
+- learn.career-growth.networking
+- learn.career-growth.continual-learning
+- learn.career-growth.building-trust
+- learn.career-growth.knowledge-check
+- learn.career-growth.summary
+badge:
+  uid: learn.career-growth.badge
