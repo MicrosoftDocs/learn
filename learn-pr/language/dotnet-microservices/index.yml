@@ -38,4 +38,4 @@ units:
 - learn.languages.dotnet-microservices.exercise-create-docker-compose-file
 - learn.languages.dotnet-microservices.summary
 badge:
-  uid: learn.module.badge
+  uid: learn.languages.dotnet-microservices.badge
