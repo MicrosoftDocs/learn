@@ -16,7 +16,7 @@ We will create a script file that we will execute from the shell in order to cre
 1. In the Azure shell, and in the same folder you created the device simulator app, create, and open a script file called *createdevices.sh* typing the following command:
 
 
-    ```Azure CLI
+    ```azurecli
     code createdevices.sh
     ```
 

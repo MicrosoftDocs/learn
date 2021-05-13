@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-methods-interfaces.5-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  questions:
+  - content: "Function parameters are passed by value. How can you create a method that allows you to modify any field from the receiver?"
+    choices:
+    - content: "You have to return a value and then modify the object with the new value."
+      isCorrect: false
+      explanation: "Incorrect. You need to use pointers so that you can change the values from a field in the receiver object."
+    - content: "You can't. Methods are read-only."
+      isCorrect: false
+      explanation: "Incorrect. You need to use pointers so that you can change the values from a field in the receiver object."
+    - content: "You have to use a pointer in the receiver when you want to modify any field from the receiver."
+      isCorrect: true
+      explanation: "Correct. You need to use pointers so that you can change the values from a field in the receiver object."
+    - content: "You can't. Go can pass parameters by value only."
+      isCorrect: false
+      explanation: "Incorrect. You need to use pointers so that you can change the values from a field in the receiver object."
+  - content: "Is it possible to create methods for native types such as `string`?"
+    choices:
+    - content: "No, you'll have a compile error if you try to do it."
+      isCorrect: false
+      explanation: "Incorrect. When you create a new type of the native type you want, you can create methods, but you have to use the new custom type."
+    - content: "Yes, but you can create methods only for `string` or `int`."
+      isCorrect: false
+      explanation: "Incorrect. When you create a new type of the native type you want, you can create methods, but you have to use the new custom type."
+    - content: "No, you can create only methods for structs."
+      isCorrect: false
+      explanation: "Incorrect. When you create a new type of the native type you want, you can create methods, but you have to use the new custom type."
+    - content: "Yes, but you have to create a custom type wrapper."
+      isCorrect: true
+      explanation: "Correct: When you create a new type of the native type you want, you can create methods, but you have to use the new custom type."
+  - content: "Are interfaces in Go explicit or implicit?"
+    choices:
+    - content: "Interfaces in Go are implicit. There's no keyword such as `implements` or symbols such as `:` to explicitly implement an interface."
+      isCorrect: true
+      explanation: "Correct. Interfaces in Go are implemented implicitly. You simply need to create a method with the same signature as the one from the interface."
+    - content: "Interfaces in Go are explicit. You have to use the `:` symbol."
+      isCorrect: false
+      explanation: Incorrect. Interfaces in Go are implemented implicitly. You simply need to create a method with the same signature as the one from the interface."
+    - content: "Interfaces in Go are implicit, but you can implement interfaces only from the current package, not from other packages."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces in Go are implemented implicitly. You simply need to create a method with the same signature as the one from the interface."  

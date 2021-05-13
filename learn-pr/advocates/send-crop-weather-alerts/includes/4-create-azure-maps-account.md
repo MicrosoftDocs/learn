@@ -1,30 +1,49 @@
-Before you can use the two Azure Maps APIs for geocoding and weather forecasting, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key that's required by the app to access the account.
+Before you can use the two Azure Maps APIs for geocoding and weather forecasting, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account. Then, you'll get a key that the application requires to access the account.
 
-## Create an Azure Maps account
+### Activate the sandbox
 
-1. Activate the sandbox by using the button on this page. The sandbox will give you access to free Azure resources for the duration of this module.
+The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
 
-1. To create a new Azure Maps account, run this command:
+To activate the sandbox:
 
-    ```Azure CLI
-    az maps account create \
-      --name weatherservice \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --accept-tos
-    ```
+1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
 
-## Get the primary key
+1. If prompted, select **Review permissions**.
 
-Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. You get the key by using the Azure CLI. Later in this module, you'll use the key to give an Azure function app access to your Azure Maps account.
+    :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
 
-1. To view the keys list and get the primary key, run this command:
+1. Verify the permissions settings, and select **Accept**.
 
-    ```Azure CLI
-    az maps account keys list \
-      --name weatherservice \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
+    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
 
-1. Note the value of the *"primaryKey"* for later use. The value does not include the quotation marks.
+The message **Sandbox activated!** appears, and you can continue with the learning module.
+
+### Create a Maps account
+
+In the sandbox, run the following command to create a new Azure Maps account:
+
+```azurecli
+az maps account create \
+  --name weatherservice \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --accept-tos
+```
+
+> [!NOTE]
+> The output message that's shown after you run this command is informative only. You don’t need to take any additional action.
+
+### Get the Maps primary key
+
+Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. We'll run the following Azure CLI command to get the primary key. Later in this module, you'll use the key to give a function app that's hosted in Azure Functions access to your Azure Maps account.
+
+To view the keys list and get the primary key, run this command:
+
+```azurecli
+az maps account keys list \
+  --name weatherservice \
+  --resource-group <rgn>[sandbox resource group name]</rgn>
+```
+
+In the output, note the value of **primaryKey** to use later. Don't include the quotation marks.
 
 In this unit, you created an Azure Maps account and obtained the primary key. Next, you'll create a Twilio account.

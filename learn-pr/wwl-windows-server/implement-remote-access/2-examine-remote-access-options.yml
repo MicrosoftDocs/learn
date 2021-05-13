@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-remote-access.examine-remote-access-options
+title: Examine the remote access options in Windows Server
+metadata:
+  title: Examine the remote access options in Windows Server
+  description: "Examine the remote access options in Windows Server"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-examine-remote-access-options.md)]

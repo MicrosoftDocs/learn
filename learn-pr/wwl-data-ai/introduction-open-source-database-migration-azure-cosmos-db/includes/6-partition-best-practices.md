@@ -1,5 +1,9 @@
 Cosmos DB data is partitioned both logically and physically. It is important to understand partitioning to achieve optimum performance.
 
+You're at an advanced stage of planning for your migration to Cosmos DB. You want to ensure that the migrated system performs optimally for the costs that your will incur. You want to make sure that load is distributed evenly by planning your logical and physical data partitions carefully.
+
+Here, you'll learn how to use partitions to create an efficient database design.
+
 ## Logical partitions
 
 A logical partition is a group of items with the same partition key. You define the partition key when you create a collection in Data Explorer and specify the Partition Key or the Shard Key (dependent upon API). With the Cassandra API, the partition key is the primary key. With the Table API, the partition key is defined when each row is added.

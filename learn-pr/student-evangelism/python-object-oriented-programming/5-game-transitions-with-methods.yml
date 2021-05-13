@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-object-oriented-programming.5-game-transitions-with-methods
+title: Add behavior with methods
+metadata:
+  title: Add behavior with methods
+  description: This unit describes how to add behavior to your objects. It also covers data encapsulation and the need to keep your object's data secret from other objects and how to do it in Python. 
+  author: softchris
+  ms.author: shanama
+  ms.date: 12/01/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-game-transitions-with-methods.md)]

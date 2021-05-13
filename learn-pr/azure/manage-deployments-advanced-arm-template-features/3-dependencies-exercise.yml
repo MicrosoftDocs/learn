@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.dependencies-exercise
+title: Exercise - Control deployment order of resources
+metadata:
+  title: Exercise - Control deployment order of resources
+  description: Programming to define dependencies between resources and decide deployment order.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 6
+azureSandbox: true
+content: |
+  [!include[](includes/3-dependencies-exercise.md)]

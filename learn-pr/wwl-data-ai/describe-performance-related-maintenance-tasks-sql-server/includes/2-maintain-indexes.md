@@ -2,7 +2,7 @@ Beyond proper indexing, index maintenance is in important part of performance, e
 
 ## Rebuild and reorganize
 
-Index fragmentation occurs when logical ordering within index pages does not match the physical ordering. Pages can can out of order during routine data modification statements such as UPDATE, DELETE, and INSERT. Fragmentation can introduce performance issues because of the additional I/O that is required to locate the data that is being referenced by the pointers within the index pages.
+Index fragmentation occurs when logical ordering within index pages does not match the physical ordering. Pages can out of order during routine data modification statements such as UPDATE, DELETE, and INSERT. Fragmentation can introduce performance issues because of the additional I/O that is required to locate the data that is being referenced by the pointers within the index pages.
 
 A reorganization of an index is an online operation that will defragment the leaf level of the index (both clustered and nonclustered). This defragmentation process will physically reorder the leaf-level pages to match the logical order of the nodes from left to right. During this process, the index pages are also compacted based on the configured fillfactor value.
 

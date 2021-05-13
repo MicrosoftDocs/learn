@@ -6,10 +6,9 @@ metadata:
   description: Access public and private preview features
   ms.date: 01/1/2019
   author: cwatson-cat
-  ms.author: scwatson
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 # interactive: azure-portal
 durationInMinutes: 5
 content: |

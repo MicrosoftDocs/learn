@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-devices-with-microsoft-endpoint-manager.5-protect-devices
+title: Explore how to protect devices
+metadata:
+  title: Explore how to protect devices
+  description: Learn about protecting devices using Microsoft Endpoint Manager.
+  ms.date: 10/23/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-protect-devices.md)]

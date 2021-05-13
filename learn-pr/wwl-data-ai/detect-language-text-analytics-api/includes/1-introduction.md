@@ -128,7 +128,7 @@ The service counts the number of characters in each segment. Spanish will have t
 }
 ```
 
-The last condition to consider is when there is ambiguity as to the language content.  The scenario might happen if you submit textual content that the analyzer is not able to parse.  As a result, the response for the language name and ISO code will indicate (unknown) and the score value will be returned as NaN, or Not a Number.   The following example shows how the response would look.
+The last condition to consider is when there is ambiguity as to the language content.  The scenario might happen if you submit textual content that the analyzer is not able to parse.  As a result, the response for the language name and ISO code will indicate (unknown).   The following example shows how the response would look.
 
 ```JSON
 {
@@ -137,7 +137,7 @@ The last condition to consider is when there is ambiguity as to the language con
         {
           "name": "(Unknown)",
           "iso6391Name": "(Unknown)",
-          "score": "NaN"
+          "score": "0.0"
         }
       ]
 ```

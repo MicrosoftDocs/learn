@@ -4,9 +4,9 @@ You use the **Azure Active Directory** dashboard in the Azure portal to work wit
 
 ## Viewing users
 
-To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
+To view the Azure AD users, select the **Users** entry under the **Manage** section. The **All Users** view appears. Take a minute to access the portal and view your users. Notice the **User type** and **Identity issuer** columns, as the following figure depicts.
 
-![Screenshot that depicts the All users pane, with the **USER TYPE** and **SOURCE** columns noted.](../media/M1-AAD-Users.png)
+![Screenshot that depicts the All users pane, with the **User type** and **Identity issuer** columns noted.](../media/M1-AAD-Users.png)
 
 Typically, Azure AD defines users in three ways:
 
@@ -14,15 +14,20 @@ Typically, Azure AD defines users in three ways:
 
 1. **Directory-synchronized identities** - These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Azure AD Connect** brings these users in to Azure. Their source is **Windows Server AD**.
 
-1. **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
+1. **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts, such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
 
 ## Adding users
 
 You can add cloud identities to Azure AD in multiple ways:
 
+- Syncing an on-premises Windows Server Active Directory
+- Using the Azure portal
+- Using the command line
+- Other options
+
 ### Syncing an on-premises Windows Server Active Directory
 
-Azure AD Connect is a separate service that allows you to synchronize a traditional Active Directory with your Azure AD instance. This is how most enterprise customers add users to the directory. The advantage to this approach is users can use single-sign-on (SSO) to access local and cloud-based resources.
+Azure AD Connect is a separate service that allows you to synchronize a traditional Active Directory with your Azure AD instance. This is how most enterprise customers add users to the directory. The advantage to this approach is users can use single sign-on (SSO) to access local and cloud-based resources.
 
 ### Use the Azure portal
 
@@ -77,7 +82,7 @@ az ad user create --display-name "Abby Brown" \
                   --mail-nickname "AbbyB"
 ```
 
-Command-line tools allow you to add users in bulk through scripting. The most common approach for this is to use a comma-separated values file (CSV). You can either manually create this file or export the file from an existing data source.
+Command-line tools allow you to add users in bulk through scripting. The most common approach for this is to use a comma-separated values (CSV) file. You can either manually create this file or export the file from an existing data source.
 
 If you're planning to use a CSV, here are some things to think about:
 
@@ -95,7 +100,7 @@ To use a CSV with Azure PowerShell:
 
 1. Loop through the users in the file, constructing the user parameters needed for each user. Example parameters are User Principal Name, Display Name, Given Name, Department, and Job Title.
 
-1. Use `New-ADUser` to create each user. Be sure to enable each account.
+1. Use `New-AzureADUser` to create each user. Be sure to enable each account.
 
 ### Other options
 

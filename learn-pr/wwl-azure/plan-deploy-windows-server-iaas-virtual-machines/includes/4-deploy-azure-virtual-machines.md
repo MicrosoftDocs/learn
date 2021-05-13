@@ -28,7 +28,7 @@ To deploy Windows Server on Azure VMs, you can use any of the methods described 
 
 For example, to deploy a Windows Server 2019 Azure VM called **ContosoVM4** by using Azure CLI, you would run the following commands:
 
-```Azure CLI
+```azurecli
 az vm create \
     --resource-group ContosoResourceGroup \
     --name ContosoVM4 \

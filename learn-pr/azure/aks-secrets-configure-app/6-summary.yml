@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-secrets-configure-app.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/16/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

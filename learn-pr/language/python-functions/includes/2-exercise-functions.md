@@ -215,7 +215,9 @@ When you run the code, you should see the following output:
 
 Here you created the new function `add_two_numbers()` that accepts two input parameters. It then does an addition operation on those parameters in the function body and returns the sum.
 
-When writing a function call, you can ignore the returned value. (Although in this case, that doesn't seem useful.) Or you can assign it to a variable you'd use just like any other variable in your program.
+You call the function twice.  The first time you call it, you pass `4` and `6` as arguments, however you ignore the returned value.  In other words, you do not capture it in a variable, print the value, and so on.  When writing a function call, you can ignore the returned value. (Although in this case, that doesn't seem useful.) 
+
+The second time you call `add_two_numbers()`, you pass `5` and `7` as input parameters.  This time, you capture the return value by assigning it to a variable called `result` which can be used in the remainder of the program.
 
 ### Step 7 - Comment out the code from the previous steps and add a new function that returns a list
 

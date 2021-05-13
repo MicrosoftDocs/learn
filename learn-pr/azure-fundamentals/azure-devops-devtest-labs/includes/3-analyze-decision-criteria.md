@@ -2,7 +2,7 @@ In this unit, you'll analyze the criteria that experts employ when they choose D
 
 ### Do you need to automate and manage test-lab creation?
 
-If your aim is to automate the creation and management of a test lab environment, consider choosing Azure DevTest Labs. Among the three tools and services we've discussed, it's the only one that offers this functionality.
+If your aim is to automate the creation and management of a test lab environment, consider choosing Azure DevTest Labs. Among the three tools and services we've described, it's the only one that offers this functionality.
 
 However, you can automate the provisioning of new labs as part of a toolchain by using Azure Pipelines or GitHub Actions.
 

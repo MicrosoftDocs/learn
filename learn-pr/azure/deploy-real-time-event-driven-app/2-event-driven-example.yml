@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-event-driven-real-time.2-event-driven-example
+title: What is event driven, and how fast is real time?
+metadata:
+  title: What is event driven, and how fast is real time?
+  description: In this unit, we describe the concept of event-driven programming and architectures by example. 
+  ms.date: 02/01/2021
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-event-driven-example.md)]

@@ -1,4 +1,4 @@
-First Up Consultants reviews role-based access control (RBAC) changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
+First Up Consultants reviews Azure role-based access control (Azure RBAC) changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
 
 ## View activity logs
 
@@ -16,7 +16,7 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
 1. Add an **Operation** filter and type **role** to filter the list.
 
-1. Select the following RBAC operations:
+1. Select the following Azure RBAC operations:
 
     - Create role assignment (roleAssignments)
     - Delete role assignment (roleAssignments)
@@ -31,4 +31,4 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
     ![Screenshot show the details for an activity log](../media/6-activity-log-details.png)
 
-In this unit, you learned how to use Azure Activity Log to list RBAC changes in the portal and generate a simple report.
+In this unit, you learned how to use Azure Activity Log to list Azure RBAC changes in the portal and generate a simple report.

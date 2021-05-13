@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-setup-a
 title: Exercise - Set up Azure Sphere 
 metadata:
   title: Exercise - Set up Azure Sphere 
-  description: In this section, we guide how to set up Azure Sphere for development.
+  description: In this section, we show how to set up Azure Sphere for development.
   ms.date: 06/26/2020
   author: leestott
   ms.author: leestott

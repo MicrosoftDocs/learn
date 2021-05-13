@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.querying-digital-twin-graphs
+metadata:
+  description: In this unit, you'll go over the digital twin graph query language. 
+  ms.date: 01/28/2021
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:  Querying digital twin graphs
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-querying-digital-twin-graphs.md)]

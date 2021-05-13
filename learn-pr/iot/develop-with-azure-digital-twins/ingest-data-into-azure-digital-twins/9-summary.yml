@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.ingest-data-into-azure-digital-twins.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of the different ways to ingest data into Azure Digital Twins.
+  ms.date: 10/30/2020
+  author: teodelas
+  ms.author: teodelas
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  adobe-target: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

@@ -4,9 +4,9 @@ In the sample scenario, you want to use Visual Studio Code as the development en
 
 In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of students. The application then creates JavaScript objects that capture this information.
 
-In the next exercise, you'll see how to save these objects to a container in Cosmos DB.
+In the next exercise, you'll see how to save these objects to a container in Azure Databases extension.
 
-This exercise runs on your desktop computer, and uses an Azure sandbox for your resources.
+This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
@@ -15,7 +15,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 1. Start Visual Studio Code if it isn't already running.
 
-2. On the **Terminal** menu, click **New Terminal**.
+2. On the **Terminal** menu, select **New Terminal**.
 
 3. In the **Terminal** window, run the following command to create a new folder named **grades** for the Node application.
   
@@ -23,7 +23,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     mkdir grades
     ```
 
-4. Type the following commands to move to the **grades** folder, and initialize a new Node application:
+4. Enter the following commands to move to the **grades** folder, and initialize a new Node application.
 
     ```bash
     cd grades
@@ -32,13 +32,13 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in Visual Studio Code, select **Open Folder**, and open the **grades** folder.
+5. On the **File** menu in Visual Studio Code, select **Open Folder**, and then open the **grades** folder.
 
-6. In the **Explorer** window, click the **package.json** file.
+6. In the **Explorer** window, select the **package.json** file.
 
     :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of Visual Studio Code. The user is editing the package.json file." loc-scope="vs-code":::
 
-7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this:
+7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this.
 
     ```text
     {
@@ -55,9 +55,9 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     }
     ```
 
-8. On the **File** menu, click **Save**.
+8. On the **File** menu, select **Save**.
 
-9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages:
+9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages.
 
     ```bash
     npm install readline-sync
@@ -71,11 +71,11 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Create the studentgrades app
 
-1. In Visual Studio Code, on the **File** menu, click **New File**.
+1. In Visual Studio Code, on the **File** menu, select **New File**.
 
-2. On the **File** menu, click **Save As**. Save the new file with the name **studentgrades.js**.
+2. On the **File** menu, select **Save As**. Save the new file with the name **studentgrades.js**.
 
-3. In the editor window, add the following lines to the top of the **studentgrades.js** file:
+3. In the editor window, add the following lines to the top of the **studentgrades.js** file.
 
     ```javascript
     //@ts-check
@@ -84,7 +84,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
     The **\@ts-check** directive enables advanced type checking, using the **\@types/node** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
 
-4. After the **require** statement, add the following **class** definition to the file:
+4. After the **require** statement, add the following **class** definition to the file.
 
     ```javascript
     class Student {
@@ -114,9 +114,9 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     The **Student** class represents a student. It has the properties **id**, **StudentNumber**, **Forename**, **Lastname**, and **CourseGrades**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
 
     > [!NOTE]
-    > It's important to distinguish between the **id** field, which is used by Cosmos DB to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
+    > It's important to distinguish between the **id** field, which is used by Azure Databases extension to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
 
-5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class:
+5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class.
 
     ```javascript
     function getStudentData () {
@@ -129,9 +129,9 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     };
     ```
 
-    This function prompts the user for the details of a student, and creates a new **Student** object.
+    This function prompts the user for the details of a student and creates a new **Student** object.
 
-6. Add the following function to the **studentgrades.js** file:
+6. Add the following function to the **studentgrades.js** file.
 
     ```javascript
     function test () {
@@ -150,9 +150,9 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     }
     ```
 
-    This function is a test harness that asks the user to input information for two students. The function adds grades for each student, and displays the results.
+    This function is a test harness that asks the user to input information for two students. The function adds grades for each student and displays the results.
 
-7. Add the following statement at the end of the file:
+7. Add the following statement at the end of the file.
 
     ```javascript
     test();
@@ -162,17 +162,17 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Test the studentgrades app
 
-You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students, and the course grades assigned by the test harness will be displayed.
+You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students and the course grades assigned by the test harness will be displayed.
 
-The application doesn't store student information in the Cosmos DB database. You'll see how to do that in the next exercise.
+The application doesn't store student information in the Azure Databases extension. You'll see how to do that in the next exercise.
 
-1. In the **Terminal** window, start the **studentgrades** app using **node**:
+1. In the **Terminal** window, start the **studentgrades** app using **node**.
 
     ```bash
     node studentgrades.js
     ```
 
-2. At the prompts, enter the values shown in the following table:
+2. At the prompts, enter the values shown in the following table.
 
     | Prompt  | Value  |
     |---|---|
@@ -189,7 +189,7 @@ The application doesn't store student information in the Cosmos DB database. You
     Applied Mathematics:C
     ```
 
-3. At the next set of prompts, enter the following values:
+3. At the next set of prompts, enter the following values.
 
     | Prompt  | Value  |
     |---|---|
@@ -198,7 +198,7 @@ The application doesn't store student information in the Cosmos DB database. You
     | Enter the student's forename: | GGG |
     | Enter the student's lastname: | HHH |
 
-    The following messages should be displayed:
+    The following messages should appear.
 
     ```text
     002: GGG, HHH

@@ -1,19 +1,19 @@
-In this module, you learned the concepts and terminology for several of the core Azure architecture components. Armed with this new knowledge, you have the basic level of understanding for Azure architecture that you will need to make Tailwind Traders successful as they migrate to the cloud.
+In this module, you learned the concepts and terminology for several of the core Azure architecture components. Now you have the basic level of understanding for Azure architecture that you'll need to make Tailwind Traders successful as it migrates to the cloud.
 
 You learned how to describe the benefits and usage of:
 
-- Azure Subscriptions and Management Groups
-- Azure Resources, Resource Groups, and the Azure Resource Manager
-- Azure Regions, Region Pairs, and Availability zones
+- Azure subscriptions and management groups.
+- Azure resources, resource groups, and Azure Resource Manager.
+- Azure regions, region pairs, and availability zones.
 
 ## Learn more
 
-- [Apply and monitor infrastructure standards with Azure Policy](https://docs.microsoft.com/learn/modules/intro-to-governance/?azure-portal=true)
+- [Build a cloud governance strategy on Azure](https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/?azure-portal=true)
 - [Azure Resource Manager template documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/?azure-portal=true)
-- [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/learn/modules/explore-azure-infrastructure/?azure-portal=true)
+- [Describe core Azure architectural components](https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/?azure-portal=true)
 - [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true)
 - [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/?azure-portal=true)
-- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
+- [Regions and availability zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
 - [What are Azure management groups?](https://docs.microsoft.com/azure/governance/management-groups/overview?azure-portal=true)
 
 ## Azure Fundamentals learning path

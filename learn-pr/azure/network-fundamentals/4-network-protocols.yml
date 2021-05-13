@@ -16,7 +16,7 @@ quiz:
   title: "Check your knowledge"
   questions:
 
-  - content: "Which of these standards and protocols is used predominately for email?"
+  - content: "Which of these standards and protocols is used predominantly for email?"
     choices:
     - content: "FTP"
       isCorrect: false

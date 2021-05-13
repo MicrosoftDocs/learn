@@ -151,21 +151,13 @@ To expose your website to the world via DNS, you must create an ingress controll
 
 1. Set the fully qualified domain name (FQDN) of the host allowed access to the cluster.
 
- 	  In Cloud Shell, run the `az network dns zone list` command to query the Azure DNS zone list.
+     In Cloud Shell, run the `az network dns zone list` command to query the Azure DNS zone list.
 
     ```bash
-    az network dns zone list --output table
+    az aks show -g $RESOURCE_GROUP -n $CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
-    The command should output a result similar to the following example.
-
-    ```output
-    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
-    -------------------------------------  --------------------------------------------  ------------  ---------------
-    5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  2             10000
-    ```
-
-1. Copy the `ZoneName`, and update the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
+1. Copy the output, and update the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
 
     Update the `ingress.yaml` file to match the following YAML.
 

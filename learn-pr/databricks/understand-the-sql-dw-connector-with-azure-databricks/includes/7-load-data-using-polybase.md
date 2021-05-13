@@ -1,14 +1,14 @@
-PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure SQL Data Warehouse, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
+PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure Synapse Analytics, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
 
-In this unit, you'll learn how to load data from Azure Blob storage into SQL Data Warehouse by using PolyBase.
+In this unit, you'll learn how to load data from Azure Blob storage into Azure Synapse Analytics by using PolyBase.
 
 ## Make a connection to SQL Data Warehouse
 
 1. Open Azure Data Studio.
 
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection that you made to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection that you made to the Azure Synapse Analytics database, and select **New Query**.
 
-    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the Azure Synapse Analytics connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
 ## Create an external data source
 
@@ -39,9 +39,9 @@ Replace the token `<Name_Of_Storage_Account>` with the name of the Azure storage
 
 ## Define the external file format
 
-A definition of the external file format helps SQL Data Warehouse parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
+A definition of the external file format helps Azure Synapse Analytics parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
 
-- Clear the query window and execute these statements to define the external file format:
+- Clear the query window and execute these statements to define the external file format.
 
     ```sql
     CREATE EXTERNAL FILE FORMAT TextFileFormat
@@ -66,7 +66,7 @@ A definition of the external file format helps SQL Data Warehouse parse the form
 
 ## Create a schema for the external table
 
-- Clear the query window and run this statement to create a schema for the external table:
+- Clear the query window and run this statement to create a schema for the external table.
 
     ```sql
     CREATE SCHEMA [asb];
@@ -74,9 +74,9 @@ A definition of the external file format helps SQL Data Warehouse parse the form
 
 ## Create the external table
 
-External tables refer to data from an external data source. Data isn't stored in SQL Data Warehouse.
+External tables refer to data from an external data source. Data isn't stored in Azure Synapse Analytics.
 
-1. Clear the query window and run these statements to define an external table:
+1. Clear the query window, and run these statements to define an external table.
 
     ```sql
     CREATE EXTERNAL TABLE [asb].[Transaction]
@@ -110,23 +110,23 @@ External tables refer to data from an external data source. Data isn't stored in
     );
     ```
 
-- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
+    - `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
 
-- LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
+    - LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
 
-- DATA_SOURCE = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure Blob storage. Here we're referring to the `LabAzureStorage` external data store that you defined earlier. This external data store points to the container in the Azure Blob storage account.
+    - DATA_SOURCE = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure Blob storage. Here we're referring to the `LabAzureStorage` external data store that you defined earlier. This external data store points to the container in the Azure Blob storage account.
 
-- FILE_FORMAT = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the previous statement, `FILE_FORMAT` is set to the `TextFileFormat` object that you created earlier.
+    - FILE_FORMAT = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the previous statement, `FILE_FORMAT` is set to the `TextFileFormat` object that you created earlier.
 
-- _Reject options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered *dirty* if its data types or the number of columns don't match the column definitions of the external table.
+    - _Reject options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered *dirty* if its data types or the number of columns don't match the column definitions of the external table.
 
-  - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
+      - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
 
-  - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
+      - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
 
-    In the above statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
+      In the previous statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
 
-2. Clear the query window and run this statement to get data from the external table:
+1. Clear the query window, and run this statement to get data from the external table.
 
     ```sql
     SELECT * FROM [asb].[Transaction]
@@ -134,19 +134,19 @@ External tables refer to data from an external data source. Data isn't stored in
 
 ## Create a schema for the table
 
-- Clear the query window and run this statement to create a schema for tables:
+- Clear the query window, and run this statement to create a schema for tables.
 
     ```sql
     CREATE SCHEMA [cso];
     ```
 
-## Create a SQL Data Warehouse table and load data
+## Create an Azure Synapse Analytics table and load data
 
-Create a table in SQL Data Warehouse by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
+Create a table in Azure Synapse Analytics by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
 
-In this exercise, the CTAS statement is used to create a table in SQL Data Warehouse that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
+In this exercise, the CTAS statement is used to create a table in Azure Synapse Analytics that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
 
-- Clear the query window and run this statement to create a table in SQL Data Warehouse:
+- Clear the query window, and run this statement to create a table in Azure Synapse Analytics.
 
     ```sql
     CREATE TABLE [cso].[Transaction]
@@ -159,6 +159,6 @@ In this exercise, the CTAS statement is used to create a table in SQL Data Wareh
     OPTION (LABEL = 'CTAS : Load [cso].[Transaction]');
     ```
 
-   - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
+  - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
 
-   - LABEL. This option labels the query, which makes it easy to identify.
+  - LABEL. This option labels the query, which makes it easy to identify.

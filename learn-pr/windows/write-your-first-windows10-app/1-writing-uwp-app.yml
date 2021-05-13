@@ -4,7 +4,7 @@ uid: learn-windows.writing-windows-10-apps.1-writing-uwp-app
 metadata:
   title: Writing a UWP app
   description: Learn how to develop a basic UWP app by using Visual Studio. You'll learn how to create a UI, change UI properties, and handle simple user interaction.
-  ms.date: 12/10/18
+  ms.date: 12/10/2018
   author: PeterTurcan
   ms.author: v-pettur
   ms.topic: interactive-tutorial

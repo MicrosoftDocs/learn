@@ -3,13 +3,13 @@ uid: learn.wwl.introduction-open-source-analytics-offering.2-what-is-hdinsight
 title: What is HDInsight?
 metadata:
   title: What is HDInsight?
-  description: What is HDInsight?
-  ms.date: 10/25/2019
+  description: "What is HDInsight?"
+  ms.date: 10/14/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-hdinsight.md)]

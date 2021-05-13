@@ -4,9 +4,9 @@ title: Manage Cognitive Services keys
 metadata:
   title: Manage Cognitive Services keys
   description: "Manage Cognitive Services keys"
-  ms.date: 09/12/2020
+  ms.date: 10/15/2020
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

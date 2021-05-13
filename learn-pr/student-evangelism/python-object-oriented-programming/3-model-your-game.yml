@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-object-oriented-programming.3-model-your-game
+title: Use classes and variables to transfer your OOP model into code
+metadata:
+  title: Model your game by using classes and variables
+  description: This unit covers what classes are in relation to objects. It also shows how to instantiate objects from classes. Additionally, it shows how to add data to your objects.
+  author: softchris
+  ms.author: shanama
+  ms.date: 12/01/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-model-your-game.md)]

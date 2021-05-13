@@ -50,7 +50,7 @@ Here's an abbreviated response for `eastus`:
 
 ## Specify a size during VM creation
 
-We didn't specify a size when we created our VM - so Azure selected a default general-purpose size for us of `Standard_DS1_v2`. However, we can specify the size as part of the `vm create` command using the `--size` parameter. For example, you could use the following command to create a 16-core virtual machine:
+We didn't specify a size when we created our VM - so Azure selected a default general-purpose size for us. However, we can specify the size as part of the `vm create` command using the `--size` parameter. For example, you could use the following command to create a 2-core virtual machine:
 
 ```azurecli
 az vm create \
@@ -60,7 +60,7 @@ az vm create \
     --admin-username azureuser \
     --generate-ssh-keys \
     --verbose \
-    --size "Standard_DS5_v2"
+    --size "Standard_DS2_v2"
 ```
 
 > [!WARNING]

@@ -5,8 +5,8 @@ metadata:
   title: Create data pipelines by using Databricks Delta
   description: Explore the Databricks Delta capability to speed up reads and enable multiple writers to modify a dataset simultaneously.
   ms.date: 02/20/2019
-  author: jasallen
-  ms.author: jasdeb
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create data pipelines by using Databricks Delta

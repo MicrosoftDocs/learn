@@ -3,10 +3,10 @@ uid: learn.student-evangelism.python-flask-build-ai-web-app.0-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 01/31/2020
+  description: Introduction to how to build an AI web app by using Python and Flask.
+  ms.date: 10/23/2020
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 5

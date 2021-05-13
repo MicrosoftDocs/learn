@@ -2,7 +2,7 @@ Microsoft Azure Pipelines is a cloud service that you can use to automatically b
 
 Mara is excited about replicating the team's build process on Azure Pipelines. Amita, the tester, finally has some free time and wants to catch up. Mara decides that now is a great time to tell her about her plan: setting up an automated build pipeline for the *Space Game* web site by using Azure Pipelines.
 
-When she hears Mara's plan, Amita is a bit hesitant. But since Mara's plan is to replicate the build process but not replace it, she's also curious. She knows the build process could use some improvements.
+When she hears Mara's plan, Amita is a bit hesitant. But because Mara's plan is to replicate the build process but not replace it, she's also curious. She knows the build process could use some improvements.
 
 **Amita:** It sounds like an interesting exercise, but you must want to prove a DevOps point!
 
@@ -12,11 +12,11 @@ When she hears Mara's plan, Amita is a bit hesitant. But since Mara's plan is to
 
 **Mara:** I think that just moving to Azure Pipelines will bring many benefits. Remember, Azure Pipelines is a cloud service. We can use it to automatically build and test code. And it will be available to others as well. It works with just about any language or project type.
 
-Our build server has problems. Even keeping it up-to-date is hard. Because Azure Pipelines provides build servers that Microsoft hosts and maintains, it always has the latest patches and security updates. We won't have to worry about maintaining build servers.
+Our build server has problems. Even keeping it up to date is hard. Because Azure Pipelines provides build servers that Microsoft hosts and maintains, it always has the latest patches and security updates. We won't have to worry about maintaining build servers.
 
 Also, we have all kinds of scripts written by different people. We don't even understand how some of them work. Azure Pipelines comes with a catalog of tasks. A *task* is a packaged script or procedure that's been abstracted with a set of inputs. I'm going to try to map what our build scripts do to those tasks. At least we can standardize how things get done and increase the level of automation.
 
-And Azure Pipelines works with many different languages and application types. If we want to expand in those directions, we won't have to retool.
+And Azure Pipelines works with many different languages and app types. If we want to expand in those directions, we won't have to retool.
 
 **Amita:** I know it's selfish, but why do I care? One of my big problems is that I never know when a build is ready to test. Sometimes someone remembers to update the spreadsheet, but many times they forget. It seems like I'm the last person to know.
 
@@ -36,7 +36,7 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSx]
 
 **Amita:** Give me the 5-minute rundown on continuous integration.
 
@@ -46,7 +46,7 @@ Mara moves to the whiteboard and draws the pipeline.
 
 ![A hand-drawn illustration of a CI pipeline](../media/2-whiteboard-pipeline-with-callouts.png)
 
-This is my continuous integration (CI) pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
+This is my CI pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
 
 A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
 
@@ -56,7 +56,7 @@ A *build agent* ![Callout 3](../../shared/media/callout-03.png) builds or deploy
 
 The final product of the pipeline is a *build artifact* ![Callout 4](../../shared/media/callout-04.png). Think of an artifact as the smallest compiled unit that we need to test or deploy the app. For example, an artifact can be:
 
-* A Java or .NET application packaged into a .jar or .zip file.
+* A Java or .NET app packaged into a .jar or .zip file.
 * A C++ or JavaScript library.
 * A virtual machine, cloud, or Docker image.
 
@@ -74,7 +74,7 @@ Now that you and the team are familiar with Azure Pipelines, let's discuss a few
 
 As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more than one.  Let's examine build agents in a bit more depth.
 
-### The differences between implementing hosted and private agents
+### Differences between implementing hosted and private agents
 
 You can use either a Microsoft-hosted or a private agent. What are the differences?
 
@@ -116,7 +116,7 @@ You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines.
 
 #### Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&azure-portal=true) to see the criteria.
+If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. Microsoft charges based on the number of jobs you want to run at a time, not the number of agents registered.
 
@@ -134,4 +134,4 @@ Here are some examples of where you might need multiple parallel jobs.
 
 * If you have multiple teams, and if each of them requires a CI build, you'll likely need a parallel job for each team.
 * If your CI build trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
-* If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs, one to deploy each application at the same time.
+* If you develop multiple apps by using one organization or server, you'll likely need additional parallel jobs, one to deploy each app at the same time.

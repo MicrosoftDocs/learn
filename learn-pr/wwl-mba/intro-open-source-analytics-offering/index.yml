@@ -2,8 +2,8 @@
 uid: learn.wwl.introduction-open-source-analytics-offering
 metadata:
   title: Introduction to the Open source Analytics Offering
-  description: Introduction to the Open source Analytics Offering
-  ms.date: 10/25/2019
+  description: "Introduction to the Open source Analytics Offering"
+  ms.date: 10/14/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -15,7 +15,6 @@ abstract: |
   - What HDInsight is
   - How HDInsight works
   - When to use HDInsight
-ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed
   - Successfully login to the Azure portal

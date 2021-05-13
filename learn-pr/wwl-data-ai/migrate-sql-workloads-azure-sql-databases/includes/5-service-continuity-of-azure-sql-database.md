@@ -1,3 +1,7 @@
+After you complete the migration of data to Azure SQL Database, it's important to assess and optimize the configuration of your new database to give the best service to your users.
+
+You've completed the migration of all databases to Azure for your bicycle manufacturer. Now, you want to make sure that the new databases are resilient, robust, and able to handle the load that you expect users to place on them.
+
 In this unit, you'll explore the post migration steps required to ensure service continuity of your database in backup, high availability, disaster recovery, and scalability.
 
 ## Define backup and recovery options for Azure SQL Database
@@ -26,12 +30,9 @@ High availability on this tier is achieved by using a technology similar to Alwa
 
 Azure SQL Database provides the following business continuity capabilities:
 
-- **Active geo-replication**: provides a readable secondary replica for a given database in the same or different Azure region. Active-geo replication asynchronously replicates data by using the same technology as Always On availability groups. Up to four secondary replicas are permitted, and can be used for read-only workloads. You invoke the failover process using the application or via manual procedures with the <!--CE: Should this say 'Azure CLI'?-->Azure, PowerShell, Transact-SQL, or the REST API.  
-
+- **Active geo-replication**: provides a readable secondary replica for a given database in the same or different Azure region. Active-geo replication asynchronously replicates data by using the same technology as Always On availability groups. Up to four secondary replicas are permitted, and can be used for read-only workloads. You invoke the failover process using the application or via manual procedures with the Azure CLI, PowerShell, Transact-SQL, or the REST API.  
 - **Auto failover groups**: builds on the capabilities of active geo-replication by replicating and failing over a group of databases on an Azure SQL Database server.  Grouping the databases allows multiple databases to be recovered if there's an outage.
-
 - **Geo-restore**: uses geo-redundant backups to recover a database to any Azure SQL Database server, in any region. Backups are stored on geo-replicated storage, which means there's a delay between when the backup is taken, and when it's replicated to the other region.
-
 - **Zone-redundant databases**: by default, replicas in the premium availability model are located in the same physical data center.  Azure availability zones allow different replicas to be hosted in different zones (data centers) within the same region.
 
 ## Define service scalability options for Azure SQL Database
@@ -40,6 +41,6 @@ Azure SQL Database supports vertical scaling, known as scale-up, and scale-down,
 
 Single and elastic pool databases can be scaled up and down to accommodate increases in application workload. Scaling might occur at a particular point in the day, month, or year when the workload peaks or troughs. When you scale a database up or down, the performance objective of the database will increase or decrease.  
 
-Single and elastic pool databases can be sharded.  Sharding is where data is distributed across multiple databases, known as shards. Each shard is an individual database that contains data relevant to the shard. Relevance is decided by the sharding key, which is used to distribute the data via data-dependent routing. This sharding is useful when parts of the data are only available in different regions, or where the connections should be load balanced.
+Single and elastic pool databases can be sharded. Sharding is where data is distributed across multiple databases, known as shards. Each shard is an individual database that contains data relevant to the shard. Relevance is decided by the sharding key, which is used to distribute the data via data-dependent routing. This sharding is useful when parts of the data are only available in different regions, or where the connections should be load balanced.
 
 Vertical scaling can be done via the Azure portal, PowerShell, T-SQL, Azure CLI, or the REST API.  Horizontal scaling is done using the Elastic Database Client Library.  You can use the Elastic Database Split-Merge tool to split and merge sharded databases.

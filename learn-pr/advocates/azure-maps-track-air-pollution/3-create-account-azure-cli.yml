@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.3-create-account-azure-cli
-title: Exercise - Create an Azure Maps account using the Azure CLI
+title: Exercise - Create an Azure Maps account
 metadata:
-  title: Exercise - Create an Azure Maps account using the Azure CLI
-  description: Before you can use Azure Maps on a web page, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key needed by the web SDK to access the Maps account.
+  title: Exercise - Create an Azure Maps account
+  description: Use the Azure CLI to create an Azure Maps account and get a key that the web SDK uses to access the Maps account.
   author: jimbobbennett
   ms.author: jabenn
-  ms.date: 04/20/2020
+  ms.date: 02/05/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-account-azure-cli.md)]

@@ -24,7 +24,7 @@ Some MRTK prefabs and assets require TextMesh Pro. TextMesh Pro is Unity's defau
 
 ## MRTK Unity Foundation Package
 
-MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found on the MRTK Releases page. The **Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage** is the only **required** package that must be downloaded, imported and configured to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found in the Mixed Reality Feature Tool. The **Mixed Reality Toolkit Foundation** package is the only **required** package that must be imported and configured to use MRTK with your project. You can use Mixed Reality Toolkit Foundation 2.5.x or newer. This package includes the core components required to create a mixed reality application.
 
 After MRTK is added to the scene and configured, two new objects are added to the Scene hierarchy window:
 
@@ -35,11 +35,14 @@ The **MixedRealityToolkit** object contains the toolkit itself. The **MixedReali
 
 The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** object. This allows the playspace to manage the camera simultaneously with the SDKs.
 
+> [!NOTE]
+> The Mixed Reality Feature Tool enables developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. If you've never worked with a manifest file before, it's a JSON file containing all your projects packages. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
+
 ## Configuration Profile
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The **MixedRealityToolkit** object contains the active profile and can be viewed in the Inspector window. When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
-:::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected.":::
+:::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default Mixed Reality Toolkit configuration profile is selected.":::
 
 MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it isn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 

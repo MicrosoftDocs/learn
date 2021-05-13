@@ -8,7 +8,7 @@ In this unit, we'll understand how Xamarin.Forms works and how the projects are 
 
 Xamarin.Forms is incredibly easy to use, but to appreciate how it manages all it does, let's take a look at the technologies involved.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Sptw]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LC7e]
 
 ### Operating system
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/18/2020
+  ms.date: 02/05/2021
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "A load balancer"
       isCorrect: true
       explanation: "That's correct. The listener requires the creation of an Azure load balancer and has some additional configuration in the WSFC related to the load balancer."
-  - content: "How should you create a WSFC in Azure for AGs and FCIs?"
+  - content: "What tool can be used to create a WSFC in Azure for AGs and FCIs?"
     choices:
     - content: "Wizard in Failover Cluster Manager"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "WMI"
       isCorrect: false
       explanation: "That's incorrect. The Failover Cluster feature can be enabled using Server Manager, or via PowerShell."
-  - content: "What Azure feature lets you test disaster recovery without bringing down your production system?"
+  - content: "What Azure feature for testing disaster recovery without bringing the production system down?"
     choices:
     - content: "Azure Site Recovery"
       isCorrect: true
@@ -59,8 +59,8 @@ quiz:
       explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
     - content: "Active geo-replication"
       isCorrect: true
-      explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
-  - content: "What do Temporal Tables allow you to do with Azure SQL Database?"
+      explanation: "That's correct. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
+  - content: "What functionality do Temporal Tables provide with Azure SQL Database?"
     choices:
     - content: "Recover deleted data"
       isCorrect: true
@@ -71,7 +71,7 @@ quiz:
     - content: "Temporarily process additional data"
       isCorrect: false
       explanation: "That's incorrect. Temporal tables do not allow for additional processing."
-  - content: "What setting for auto-failover groups must you change if you need to ensure a low RPO?"
+  - content: "What setting for auto-failover groups must be changed to ensure a low RPO?"
     choices:
     - content: "RPOZero"
       isCorrect: false

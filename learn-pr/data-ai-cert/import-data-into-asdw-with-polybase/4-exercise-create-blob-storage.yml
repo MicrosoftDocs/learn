@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.import-data-into-asdw-with-polybase.exercise-create-blob-storage
-title: Exercise - create a blob container for the source data
+title: Exercise - Create a blob container for the source data
 metadata:
-  title: Exercise - create a blob container for the source data
-  description: Exercise - create a blob container for the source data
+  title: Exercise - Create a blob container for the source data
+  description: Exercise - Create a blob container for the source data
   ms.date: 01/31/2019
   author: wwlpublish
   ms.author: chtestao

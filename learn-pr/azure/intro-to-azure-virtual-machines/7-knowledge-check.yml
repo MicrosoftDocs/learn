@@ -9,7 +9,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 quiz:
   title: Check your knowledge
@@ -18,16 +17,16 @@ quiz:
     choices:
     - content: General purpose
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
     - content: Compute optimized
       isCorrect: true
       explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: Memory optimized
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
     - content: Storage optimized
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
 
   - content: 'True or false: Resource Manager templates are JSON files?'
     choices:

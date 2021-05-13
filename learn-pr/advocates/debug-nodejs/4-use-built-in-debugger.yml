@@ -6,7 +6,7 @@ metadata:
   description: Learn how to use the Node.js built-in debugger with your programs.
   author: sinedied
   ms.author: yolasors
-  ms.date: 12/04/2020
+  ms.date: 06/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

@@ -7,13 +7,16 @@ In this exercise, you'll install the Azure Diagnostics extension on your new VM 
 Use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure Diagnostics extension for you.
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+
 1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
+
 1. Select the **monitored-linux-vm** virtual machine that you created.
-1. On the left, scroll down until you see the **Monitoring** section, and then select **Diagnostic settings**.
+
+1. In the left menu pane, under **Monitoring**, select **Diagnostic settings**. The **Diagnostics settings** pane appears for your virtual machine.
 
     ![Screenshot that shows the monitoring section for a VM](../media/6-scroll-to-monitoring.png)
 
-1. Select **Enable guest-level monitoring**.
+1. On the **Overview** tab, select **Enable guest-level monitoring**.
 
     ![Screenshot that shows the button for enabling guest-level monitoring](../media/6-enable-guest-level-monitoring.png)
 
@@ -21,12 +24,13 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 ## Configure the extension
 
-1. After the extension is installed, you'll see the **Overview** page.
-1. Select **Metrics**.
+1. After the extension is installed, the **Diagnostics settings** pane appears highlighting the **Overview** tab.
+
+1. Select the **Metrics** tab.
 
     ![Screenshot that shows the Overview page](../media/6-diagnostics-enabled.png)
 
-1. Change all the sample rates to **60** seconds, and then select **Save**.
+1. Change all the **Sample rates** to **60** seconds, and then select **Save**.
 
     ![Screenshot that shows changing the sample rate to 60 seconds](../media/6-change-sample-rate.png)
 
@@ -34,55 +38,69 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 ## Create a custom KPI dashboard
 
-1. On the left, select **Metrics**.
+1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your VM.
+
 1. Select the following values:
 
    |Field     |Value |
    |---------|---------|
-   |METRIC NAMESPACE    |   Guest (classic)      |
-   |METRIC     |   Network in guest OS  |
-   |AGGREGATION    |    Max     |
+   |Metric Namespace    |   Guest (classic) |
+   |Metric    |   Network in guest OS  |
+   |Aggregation    |    Max     |
 
-1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard**.
-1. In the **Pin to another dashboard** pane, select **Create new**.
+1. Select the **Finish editing metric** check mark.
+
+1. At the top right of the chart, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
+
+1. Select the **Create new** tab.
+
 1. Select **Private**. If you're using your own subscription, you can create a shared dashboard.
-1. Enter **KPI Dashboard**.
+
+1. In the **Dashboard name** field, enter **KPI Dashboard**.
 
     ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
-1. Select **Create and pin**.
+
+1. Select **Create and pin**. The **Metrics** pane reappears.
 
 ### Add a free memory percentage graph
 
-1. Select **+ New chart**.
+1. In the upper menu bar, select **New chart**.
+
 1. Select the following values:
 
    |Field     |Value |
    |---------|---------|
-   |METRIC NAMESPACE    |   Guest (classic)      |
-   |METRIC     |   Mem. percentage available  |
-   |AGGREGATION    |    Max     |
+   |Metric Namespace    |   Guest (classic)      |
+   |Metric     |   Mem. percent available  |
+   |Aggregation    |    Max     |
 
-1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard**.
-1. Under **Dashboard**, select **KPI Dashboard**.
-1. Select **Pin**.
+1. Select the **Finish editing metric** check mark.
+
+1. At the top right of the chart, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
+
+1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
+
+1. Select **Pin**. The **Metrics** pane for your VM appears.
 
 ### Add a CPU usage graph
 
-1. Select **+ New chart**.
+1. Select **New chart**.
+
 1. Select the following values:
 
    |Field     |Value |
    |---------|---------|
-   |METRIC NAMESPACE    |   Guest (classic)      |
-   |METRIC     |   CPU percentage guest OS   |
-   |AGGREGATION    |    Max     |
+   |Metric Namespace    |   Guest (classic)   |
+   |Metric     |   CPU percentage guest OS   |
+   |Aggregation    |    Max     |
 
-1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard**.
-1. Under **Dashboard**, select **KPI Dashboard**.
-1. Select **Pin**.
+1. Select the **Finish editing metric** check mark.
+
+1. At the top right of the chart, select **Pin to dashboard**.
+
+1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
+
+1. Select **Pin**. The The **Metrics** pane for your VM appears.
 
 ### View the new dashboard
 

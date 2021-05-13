@@ -6,6 +6,6 @@ A hub and spoke architecture in Azure allows your business to quickly and easily
 
 ## More information
 
-- [Hub and spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+- [Hub and spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)
 - [Connect to Azure by using ExpressRoute](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 - [Azure DDoS protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)

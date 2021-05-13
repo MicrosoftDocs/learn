@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.describe-windows-server-administration-tools
+metadata:
+  title: Describe Windows Server administration tools
+  description: "Describe Windows Server administration tools"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Describe Windows Server administration tools
+summary: Select the most appropriate Windows Server administration tool for a given situation and learn how to use that tool.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Windows Admin Center.
+  - Describe how to use Remote Server Administration Tools (RSAT) to manage servers.
+  - Describe Server Manager.
+  - Describe how to use Windows PowerShell to manage servers.
+  - Explain how to use Windows PowerShell to remotely administer a server.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Basic security best practices.
+  - Windows client operating systems such as Windows 10.
+  - Working with command-line tools.
+iconUrl: /learn/achievements/describe-windows-server-administration-tools.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.describe-windows-server-administration-tools.introduction
+- learn.wwl.describe-windows-server-administration-tools.explore-windows-admin-center
+- learn.wwl.describe-windows-server-administration-tools.use-server-manager
+- learn.wwl.describe-windows-server-administration-tools.list-remote-server-administration-tools
+- learn.wwl.describe-windows-server-administration-tools.use-windows-powershell
+- learn.wwl.describe-windows-server-administration-tools.use-windows-powershell-to-remotely-administer-server
+- learn.wwl.describe-windows-server-administration-tools.knowledge-check
+- learn.wwl.describe-windows-server-administration-tools.summary
+badge:
+  uid: learn.wwl.describe-windows-server-administration-tools.badge

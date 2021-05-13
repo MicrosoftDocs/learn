@@ -2,6 +2,9 @@ You're a geologist working at NASA. You're responsible for analyzing the differe
 
 In this module, you'll build a simple notebook with Python to complete the task. Along the way, you'll apply a variety of introductory computer science topics. You'll use Visual Studio Code with the Python extension, to run the code and use pre-built functions that will help you complete this exercise.
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/NcUreWUpQFo?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In the units following, you'll learn many computer science topics and use them to create an end-to-end solution. Along the way, you'll learn:
@@ -13,7 +16,4 @@ In the units following, you'll learn many computer science topics and use them t
 
 ## Prerequisites
 
-- Visual Studio Code installed
-- Python extension installed in Visual Studio Code
-- Python and Jupyter Notebooks installed
-- Knowledge about introductory Python topics
+- [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)

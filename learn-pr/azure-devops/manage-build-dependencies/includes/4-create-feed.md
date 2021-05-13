@@ -1,4 +1,4 @@
-In this part, you'll set up Azure Artifacts and create a new feed. You'll use this feed later, to store your new Models package and to consume the package in your application pipeline.
+In this unit, you'll set up Azure Artifacts and create a new feed. You'll use this feed later, to store your new Models package, and to consume the package in your app pipeline.
 
 ## Set up Azure Artifacts
 
@@ -17,4 +17,4 @@ In this part, you'll set up Azure Artifacts and create a new feed. You'll use th
 
     This has a list of links, commands, and a credential provider you could use if you wanted to run this locally by using Visual Studio. For brevity, we'll skip this part.
 
-**Andy:** I've got Azure Artifacts set up. Now we need to create a pipeline that creates the new package there.
+**Andy:** I've got Azure Artifacts set up. Now, we need to create a pipeline that creates the new package there.

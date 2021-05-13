@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.output-from-adt-to-downstream-services.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of outputting data from Azure Digital Twins to Time Series Insights.
+  ms.date: 11/30/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'In the context of connecting to Azure Time Series Insights, the Azure function is used to:'
+    choices: 
+    - content: 'Convert twin update events from JSON documents to JSON objects'
+      isCorrect: true
+      explanation: 'The Azure function converts twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins.'
+    - content: 'Convert Azure Digital Twins models from DTDL v1 to DTDL v2'
+      isCorrect: false
+      explanation: 'The Azure function converts twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins.'
+    - content: 'Convert telemetry messages to twin updates'
+      isCorrect: false
+      explanation: 'The Azure function converts twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins.'
+
+  - content: 'When you connect Azure Digital Twins to Time Series Insights, you need to provide your own visualization service.'
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get out-of-the-box visualization.'
+    - content: 'False'
+      isCorrect: true
+      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get out-of-the-box visualization.'
+
+  - content: 'What kind of data storage is supported by Time Series Insights? Select all options that apply.'
+    choices: 
+    - content: 'Warm'
+      isCorrect: false
+      explanation: 'When you create an Azure Time Series Insights Gen2 environment, you have these options: cold data storage (by attaching a pre-existing Azure Storage account) and warm data storage. (Warm storage is optional. You can enable or disable it during provisioning or at a later time. You can configure the warm storage data retention time for between 7 and 31 days. You can also adjust the retention time as needed.)'
+    - content: 'Cold'
+      isCorrect: false
+      explanation: 'When you create an Azure Time Series Insights Gen2 environment, you have these options: cold data storage (by attaching a pre-existing Azure Storage account) and warm data storage. (Warm storage is optional. You can enable or disable it during provisioning or at a later time. You can configure the warm storage data retention time for between 7 and 31 days. You can also adjust the retention time as needed.)'
+    - content: 'Hot (streaming)'
+      isCorrect: false
+      explanation: 'When you create an Azure Time Series Insights Gen2 environment, you have these options: cold data storage (by attaching a pre-existing Azure Storage account) and warm data storage. (Warm storage is optional. You can enable or disable it during provisioning or at a later time. You can configure the warm storage data retention time for between 7 and 31 days. You can also adjust the retention time as needed.)'
+    - content: 'All of the above'
+      isCorrect: false
+      explanation: 'When you create an Azure Time Series Insights Gen2 environment, you have these options: cold data storage (by attaching a pre-existing Azure Storage account) and warm data storage. (Warm storage is optional. You can enable or disable it during provisioning or at a later time. You can configure the warm storage data retention time for between 7 and 31 days. You can also adjust the retention time as needed.)'
+    - content: 'Warm and cold only'
+      isCorrect: true
+      explanation: 'When you create an Azure Time Series Insights Gen2 environment, you have these options: cold data storage (by attaching a pre-existing Azure Storage account) and warm data storage. (Warm storage is optional. You can enable or disable it during provisioning or at a later time. You can configure the warm storage data retention time for between 7 and 31 days. You can also adjust the retention time as needed.)'

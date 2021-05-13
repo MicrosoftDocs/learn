@@ -1,44 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.design-bot-conversation-flow
 metadata:
-  title: Design a bot conversation flow
-  description: "Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human."
-  ms.date: 09/06/2020
+  title: Create a bot with the Bot Framework SDK
+  description: "Learn how to build a bot by using the Microsoft Bot Framework SDK."
+  ms.date: 04/07/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design a bot conversation flow
-summary: Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human.
+title: Create a bot with the Bot Framework SDK
+summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
 abstract: |
   After completing this module, you will be able to:
-  - Learn Principles of Bot Design
-  - Design conversational flow
-  - Design bot navigation
-  - Design the user experience
-  - Design knowledge bots
-  - Learn  how to Hand-off to humans
+  - Understand principles of bot design
+  - Use the Bot Framework SDK to build a bot
+  - Deploy a bot to Azure
 prerequisites: |
-  - Knowledge of Azure portal
-  - Knowledge of C#, Python, or JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+  Before starting this learning path, you will need
+  - Familiarity with Microsoft Azure and the Azure portal.
+  - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](https://docs.microsoft.com/learn/paths/csharp-first-steps/) or [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/design-a-bot-conversation-flow.svg
 levels:
 - intermediate
 roles:
-- ai-edge-engineer
+- ai-engineer
 - developer
 - solution-architect
 - student
 products:
 - azure
 - azure-bot-service
+- vs-code
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
-- learn.wwl.design-bot-conversation-flow.design-conversational-flow
-- learn.wwl.design-bot-conversation-flow.navigation
-- learn.wwl.design-bot-conversation-flow.design-user-experience
-- learn.wwl.design-bot-conversation-flow.design-hand-off-to-humans
+- learn.wwl.design-bot-conversation-flow.bot-framework-sdk
+- learn.wwl.design-bot-conversation-flow.activity-handlers-and-dialogs
+- learn.wwl.design-bot-conversation-flow.deploy-bot
+- learn.wwl.design-bot-conversation-flow.exercise-create-a-bot
 - learn.wwl.design-bot-conversation-flow.knowledge-check
 - learn.wwl.design-bot-conversation-flow.summary
 badge:

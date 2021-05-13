@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.manage-advanced-features-of-ad-ds
+metadata:
+  title: Manage advanced features of AD DS
+  description: "Manage advanced features of AD DS"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Manage advanced features of AD DS
+summary: Learn about advanced AD DS administration tasks, including creating trust relationships, implementing Enhanced Security Administrative Environment (ESAE) forests, monitoring and troubleshooting AD DS replication, and creating custom AD DS partitions.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the purpose, types, and the process of creating trust relationships.
+  - Describe the purpose and the process of implementing ESAE forests.
+  - Monitor and troubleshoot AD DS replication.
+  - Identify the purpose and the process of creating custom AD DS partitions.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016
+  - Core networking technologies
+  - Implementing and managing Active Directory Domain Services (AD DS)
+iconUrl: /learn/achievements/manage-advanced-features-of-ad-ds.svg
+levels:
+- advanced
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.manage-advanced-features-of-ad-ds.introduction
+- learn.wwl.manage-advanced-features-of-ad-ds.create-trust-relationships
+- learn.wwl.manage-advanced-features-of-ad-ds.implement-esae-forests
+- learn.wwl.manage-advanced-features-of-ad-ds.monitor-troubleshoot
+- learn.wwl.manage-advanced-features-of-ad-ds.create-custom-partitions
+- learn.wwl.manage-advanced-features-of-ad-ds.knowledge-check
+- learn.wwl.manage-advanced-features-of-ad-ds.summary
+badge:
+  uid: learn.wwl.manage-advanced-features-of-ad-ds.badge

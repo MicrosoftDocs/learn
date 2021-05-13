@@ -1,42 +1,70 @@
-Now that we have all of the libraries downloaded, we can begin importing them into a Jupyter Notebook file. We'll begin by opening or creating a Jupyter Notebook file.
+Now that you have the libraries downloaded, you can begin to import them into a Jupyter Notebook file.
 
-Next, we import Matplotlib to help us plot our data:
 
-```python
-import matplotlib.pyplot as plt
-```
+## Prerequisites
 
-Then, we import NumPy, a library we'll use to process large numerical matrixes (images):
+- The AI libraries are installed as described in [Download Python AI libraries][AILibs].
 
-```python
-import numpy as np
-```
+- The [Python extension for Visual Studio][VSCodePython] is installed, so Jupyter Notebook files run in the interactive Python environment.
 
-Import PyTorch to train and process deep learning and AI models:
 
-```python
-import torch
-from torch import nn, optim
-from torch.autograd import Variable
-import torch.nn.functional as F
-```
+## Add import statements for the libraries
 
-Import torchvision (part of pyTorch) to process images and manipulate them (crop, resize):
+Follow these steps to add code to import the AI libraries. Insert each new section of code into an empty cell in your Jupyter Notebook file. Select the green arrow at the top of the cell to run the new code.
 
-```python
-import torchvision
-from torchvision import datasets, transforms, models
-```
+1. Open Visual Studio Code, and then open the Jupyter Notebook file that you created in the previous module.
 
-Import Python Imaging Library (PIL) to visualize images:
+   In the previous module, we named our Jupyter Notebook file *ClassifySpaceRockProgram.ipynb*.
 
-```python
-from PIL import Image
-```
+1. Make sure you're running the correct Jupyter kernel. At the upper-right and lower-left corners of Visual Studio, change to the Anaconda environment `('myenv')` that you created in the last module.
 
-Finally, we add two libraries that ensure that the plots are shown inline and in high resolution:
+1. The first library to import is **Matplotlib**. You use this library to plot your data. Add the following code in new cell in your Jupyter Notebook file, and then run the code. 
 
-```python
-%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
-```
+   ```python
+   import matplotlib.pyplot as plt
+   ```
+
+   Make sure the statement doesn't start with a hash (#) symbol. Otherwise, Python will interpret the statement as a comment.
+
+1. Next, add the following code to import the **NumPy** library to process large numerical matrixes (images), and run the new cell.
+
+   ```python
+   import numpy as np
+   ```
+
+1. Now add code in a new cell to import the **PyTorch** library to train and process deep learning and AI models. After you add the new code, run the cell.
+
+   ```python
+   import torch
+   from torch import nn, optim
+   from torch.autograd import Variable
+   import torch.nn.functional as F
+   ```
+
+1. The next library to import is **torchvision**, which is part of **PyTorch**. You use this library to process images and do manipulations like cropping and resizing. Add this code in a new cell to import the library, and then run the cell.
+
+   ```python
+   import torchvision
+   from torchvision import datasets, transforms, models
+   ```
+
+1. Now add code in a new cell to import the **Python Imaging Library** (PIL) so you can visualize the images. After you add the new code, run the cell.
+
+   ```python
+   from PIL import Image
+   ```
+
+1. Finally, add the following code in a new cell to import two libraries that ensure the plots are shown inline and with high resolution. After you add the new code, run the cell.
+
+   ```python
+   %matplotlib inline
+   %config InlineBackend.figure_format = 'retina'
+   ```
+
+Great job! You've added code to import all the libraries you'll need for your AI program. 
+
+
+<!-- Links -->
+
+[AILibs]: https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
+[VSCodePython]: https://aka.ms/LearnOnVSCode?azure-portal=true

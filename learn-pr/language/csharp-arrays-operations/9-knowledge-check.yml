@@ -13,7 +13,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which method will change the order of items in the array."
+  - content: "Which method will change the order of items in the array. (Hint: some of these methods do not actually exist!)"
     choices:
     - content: "`myArray.Order()`"
       isCorrect: false
@@ -21,7 +21,7 @@ quiz:
     - content: "`myArray.Reorder()`"
       isCorrect: false
       explanation: "There's no Reorder method."
-    - content: "`myArray.Sort()`"
+    - content: "`Array.Sort()`"
       isCorrect: true
       explanation: "Correct!"
     - content: "`Array.Order()`"

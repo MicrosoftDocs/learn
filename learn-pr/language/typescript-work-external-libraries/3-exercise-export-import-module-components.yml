@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-work-external-libraries.3-exercise-export-import-module-components
+title: Exercise - Export and import module components
+metadata:
+  title: Exercise - Export and import module components
+  description: Learn how to export and import a module component.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-export-import-module-components.md)]

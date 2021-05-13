@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/27/2020
+  ms.date: 03/19/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -26,12 +26,12 @@ quiz:
       explanation: "Correct. Mixed language content within the same document returns the language with the largest representation in the content, but with a lower positive rating, reflecting the marginal strength of that assessment."
   - content: "What score value is returned if the text in a document cannot be analyzed correctly?"
     choices:
-    - content: "Zero."
+    - content: "1.0."
       isCorrect: false
-      explanation: "Incorrect. a value of Zero would indicate a confidence level for content that was analyzed correctly."
-    - content: "NaN."
+      explanation: "Incorrect. a value of 1.0 would indicate a high confidence level for content that was analyzed correctly."
+    - content: "0.0."
       isCorrect: true
-      explanation: "Correct. When content cannot be correctly analyzed and a language determination made, results will show unknown for language name and ISO code, and the score will be NaN."
+      explanation: "Correct. When content cannot be correctly analyzed and a language determination made, results will show unknown for language name and ISO code, and the score will be 0.0."
     - content: "0.50."
       isCorrect: false
       explanation: "Incorrect. A score of 0.50 merely indicates a 50 percent positive confidence."

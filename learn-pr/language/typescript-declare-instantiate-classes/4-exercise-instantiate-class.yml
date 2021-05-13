@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.4-exercise-instantiate-class
+title: Exercise - Instantiate a class
+metadata:
+  title: Exercise - Instantiate a class
+  description: Learn how to instantiate a class using the new keyword.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-instantiate-class.md)]

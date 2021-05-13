@@ -9,7 +9,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
   [!include[](includes/2-public-private-hybrid.md)]

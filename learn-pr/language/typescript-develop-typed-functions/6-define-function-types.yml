@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-develop-typed-functions.6-define-function-types
+title: Exercise - Define function types
+metadata:
+  title: Exercise - Define function types
+  description: Learn how to define a function type using either an interface or a type alias and explain function type inference.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-define-function-types.md)]

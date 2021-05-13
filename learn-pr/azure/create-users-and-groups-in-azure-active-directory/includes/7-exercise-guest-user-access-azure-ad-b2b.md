@@ -10,15 +10,13 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Select **Azure Active Directory** > **Users** > **New guest user**.
 
-   ![Screenshot that shows the New guest user button](../media/7-new-guest-user.png)
+   ![Screenshot that shows the New guest user button.](../media/7-new-guest-user.png)
 1. **Invite user** should be selected.
 1. Enter a name and an email address that you have access to.
 
 1. Select **Invite**. An invitation is sent to the email address you provided for the guest user.
 
 1. Notice that the user now appears in the list of users and has Guest as user type.
-
-You've now added a guest user to the organization.
 
 ## Add guest users to a group
 
@@ -28,34 +26,32 @@ You've now added a guest user to the organization.
 1. Select the account, and click **Select**. 
 1. You now see the user in the list of members for this group.
 
-You've now added a guest user to a group.
-
 ## Add guest users to an application
 
 1. In your Azure AD organization, select **Enterprise applications** > **All applications**. 
 1. Select **New application**.
 
-   ![Screenshot that shows the New Application button](../media/7-enterprise-application.png)
+   ![Screenshot that shows the New Application button.](../media/7-enterprise-application.png)
 
-1. Under **Add from the gallery**, enter *Twitter* and add it.
-1. Select **Users and groups** > **Add user**.
+1. Search for **Twitter** and select **Create**.
+1. Select **Users and groups** > **Add user/group**.
 
-   ![Screenshot that shows the Twitter application overview page](../media/7-application-users-groups.png)
+   ![Screenshot that shows the Twitter application overview page.](../media/7-application-users-groups.png)
 
-1. In **Add Assignment**, select **Users**.
+1. In **Add Assignment**, select **Users and groups**.
 1. Select the guest user you added in the previous exercise, and click **Select**.
 1. Select **Assign**. You now see the user in the list for this application.
 
 1. To check that the correct access level is set, select the user in the list.
 
-    ![Screenshot that shows a selected check box for the user](../media/7-select-user.png)
+    ![Screenshot that shows a selected check box for the user.](../media/7-select-user.png)
 
 1. Select **Edit**.
-1. Click **Select Role** > **Default Access** and **Assign** to make sure they have the correct access.
+1. Click **Select Role** > **Default Access** and **Select** to make sure they have the correct access.
 
 1. When the invitation arrives, the user accepts it and can then access the application.
 
-    ![Screenshot that shows the application link available after the invitation is accepted](../media/7-application-visible-invitation-accepted.png)
+    ![Screenshot that shows the application link available after the invitation is accepted.](../media/7-application-visible-invitation-accepted.png)
 
 You've now added a guest user to an application.
 
@@ -67,6 +63,6 @@ You've now added a guest user to an application.
 1. Select the user.
 1. Select **Resend invitation**.
 
-   ![Screenshot that shows the Resend invitation button on the user's profile](../media/7-profile-resend-invitation.png)
+   ![Screenshot that shows the Resend invitation button on the user's profile.](../media/7-profile-resend-invitation.png)
 
-You've now resent an invitation to a guest user.
+

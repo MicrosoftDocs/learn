@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/28/2020
+  ms.date: 04/12/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "That's correct. Cosmos DB supports several common models pf non-relational database, include key-value stores, graph databases, document databases, and column family stores."
+      explanation: "That's correct. Cosmos DB supports several common models of non-relational database, include key-value stores, graph databases, document databases, and column family stores."
     - content: "Azure SQL Database"
       isCorrect: false
       explanation: "That's incorrect. Azure SQL Database is a relational database management system storing relational data."

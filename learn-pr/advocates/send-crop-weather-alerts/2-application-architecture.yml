@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.2-application-architecture
-title: Application architecture
+title: Weather alert application architecture
 metadata:
-  title: Application architecture
-  description: This unit reviews the application architecture, which involves a variety of components. 
+  title: Weather alert application architecture
+  description: Review the application architecture and its multiple components. 
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

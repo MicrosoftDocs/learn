@@ -2,17 +2,19 @@ Remember that data in an Azure Cosmos DB is stored in _collections_. Collections
 
 The partition key is a _document_ property. Documents with the same partition key value are always located on the same logical partition. A partition supports a fixed maximum amount of storage and Request Units (RUs). When the capacity of a logical partition gets close to the maximum storage, Azure Cosmos DB allocates another physical partition. Azure Cosmos DB seamlessly splits the logical partitions, the groups of documents with the same partition key value, among the physical partitions.
 
-## Avoiding hot partitions 
+## Avoid hot partitions
 
-The Azure Cosmos DB throughput you've configured is divided evenly among partitions. A partition key design that doesn't evenly distribute throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions. The result is an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded and traffic to the database is rate-limited.
+The Azure Cosmos DB throughput you've configured is divided evenly among partitions. A partition key design that doesn't evenly distribute throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions. The result is an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded, and traffic to the database is rate-limited.
 
 A good partition design avoids hot partitions.
 
 ## Partition design considerations
 
-Designing a partitioning strategy requires you to understand your data and its operational workloads. As you consider your design, we recommend that you do the following.
+Designing a partitioning strategy requires you to understand your data and its operational workloads. As you consider your design, we recommend that you consider the following requirements.
 
 ### Estimate the scale of your data needs
+
+Consider these requirements:
 
 - What's the approximate size of your documents, or range of sizes?
 - What's the required throughput in number of reads per second and writes per second?
@@ -20,11 +22,15 @@ Designing a partitioning strategy requires you to understand your data and its o
 
 ### Understand the workload
 
+Consider these requirements:
+
 - Do you have a read-heavy or write-heavy workload, or both?
 - If it's read-heavy, what are the top five queries?
 - If it's write-heavy, do you need transactions?
 
 ### Propose some partition key options
+
+Consider these options:
 
 - Does the key choice have a large number of possible values or large cardinality?
 - Do the values have a consistent spread across the data?
@@ -50,7 +56,7 @@ More frequent, less expensive reads balance the less frequent, more expensive wr
 
 ### Propose partition key values for the collection
 
-By using the information from the previous sections, let's propose some different values for the partition key and examine whether they meet your design criteria:
+By using the information from the previous sections, let's propose some different values for the partition key, and examine whether they meet your design criteria:
 
 - `OrderTime` as a partition key:
 
@@ -67,9 +73,9 @@ By using the information from the previous sections, let's propose some differen
 
         [!code-csharp[](../code/OrderItem.cs?range=19-28)]
 
-        If you use the `Item/Category` property as a partition key, then it has a small cardinality. Even if the documents are evenly distributed across the collection, for large collections, any category might outgrow a single partition.
+        If you use the `Item/Category` property as a partition key, it has a small cardinality. Even if the documents are evenly distributed across the collection, for large collections, any category might outgrow a single partition.
 
-    - If the categories aren't evenly distributed across the documents in the collection, then the problem is even worse. The dominant category restricts the ability of Azure Cosmos DB to scale.
+    - If the categories aren't evenly distributed across the documents in the collection, the problem is even worse. The dominant category restricts the ability of Azure Cosmos DB to scale.
 
     `Item/Category` is *not* a good choice for the partition key.
 

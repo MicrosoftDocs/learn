@@ -1,4 +1,4 @@
-Your organization wants to improve the security of its devices. So far, you've seen how security is enhanced by using device identity and Azure Active Directory (Azure AD) join. But you need to maintain the security seamlessly when a user switches between devices. You want to see the options that Azure offers to allow users to transition their accounts between devices. Users need to maintain data and settings without increasing technical overhead or maintenance.
+Your organization wants to improve the security of its devices. So far, you've seen how security is enhanced by using device identity and Azure Active Directory (Azure AD) join. But you need to maintain the security seamlessly when a user switches between devices. You want to see the options that Azure offers to enable users to transition their accounts between devices. Users need to maintain data and settings without increasing technical overhead or maintenance.
 
 In this unit, you'll learn about Enterprise State Roaming. You'll learn how to enable it, where the user's application and settings data is stored, and how long the data is stored.
 
@@ -29,19 +29,17 @@ The PC settings that are built into the Windows operating system. Generally, the
 
 **Application data**: Universal Windows apps can write settings data to a roaming folder. Any data written to this folder will automatically be synced. It's up to the individual app developer to design an app to take advantage of this capability.
 
-## Enabling Enterprise State Roaming
+## Enable Enterprise State Roaming
 
 Enterprise State Roaming requires a device to authenticate with a known Azure AD identity. For Azure AD joined devices, this identity is the account that the user first signed in with.
 
-To enable Enterprise State Roaming, go to **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
+1. To enable Enterprise State Roaming, go to **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
 
-![Screenshot of Enterprise State Roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
+    ![Screenshot of Enterprise State Roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
 
-For **Users may sync settings and app data across devices**, select **All** or **Selected**. 
+1. For **Users may sync settings and app data across devices**, select **All** or **Selected**. With **Selected**, you add the users or groups that will have Enterprise State Roaming available.
 
-With **Selected**, you add the users or groups that will have Enterprise State Roaming available.
-
-![Screenshot that shows how you'd add members allowed to sync settings and app data.](../media/4-enterprise-state-roaming-selected.png)
+    ![Screenshot that shows how you'd add members allowed to sync settings and app data.](../media/4-enterprise-state-roaming-selected.png)
 
 ## Data storage
 
@@ -51,7 +49,7 @@ The country or region for your tenant is defined when Azure AD is set up. It can
 
 ## Data retention
 
-All Enterprise State Roaming data persists in the cloud until it's explicitly deleted or becomes stale. Any deleted data is automatically kept for a minimum of 90 days. After 90 days, you can't restore the deleted data from the cloud.
+All Enterprise State Roaming data persists in the cloud until it's explicitly deleted or becomes stale. Any deleted data is automatically kept for a maximum of 90 days. After 90 days, you can't restore the deleted data from the cloud.
 
 ### Explicit data deletion
 

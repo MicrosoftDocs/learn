@@ -16,13 +16,13 @@ As you learned in the previous unit, all alerts are governed by their rules. For
 
 You must define the type of statistical analysis to be used with either static or dynamic metric alerts. Example types are minimum, maximum, average, and total. In this example, you define the period of data to be assessed: the last 10 minutes. Finally, you set the frequency by which the alert conditions are checked: every 2 minutes.
 
-### Using static threshold metric alerts
+### Use static threshold metric alerts
 
 Static metric alerts are based on simple static conditions and thresholds that you define. With static metrics, you specify the threshold that will be used to trigger the alert or notification.
 
 In the previously defined scenario, a static alert with a threshold of 85 percent CPU utilization checks the rule every 2 minutes. It evaluates the last 10 minutes of CPU utilization data to assess if it rises above the threshold. If the evaluation is true, the alert triggers the actions associated with the action group.
 
-### Using dynamic threshold metric alerts
+### Use dynamic threshold metric alerts
 
 Dynamic metric alerts use machine learning tools that Azure provides to automatically improve the accuracy of the thresholds defined by the initial rule.
 
@@ -32,18 +32,18 @@ There's no hard threshold in dynamic metrics. However, you'll need to define two
 
 - The *number of violations* expresses how many times the logic condition has to deviate from the expected behavior before the alert rule fires a notification. In this example, if you set the number of violations to two, the alert would be triggered after two deviations from the calculated threshold.
 
-## Understanding dimensions
+## Understand dimensions
 
 Until now, the assessed metric alerts have focused on a single target instance. Azure Monitor supports dimensions, which enable monitoring data to be supplied from multiple target instances.
 
-You use dimensions to define one metric alert rule and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your application. You can then receive an individual notification for each server instance when the rule conditions are triggered.
+You use dimensions to define one metric alert rule, and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
 
-You can define the dimensions by naming each target instance specifically. Or you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
+You can define the dimensions by naming each target instance specifically. Or, you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
 
-## Scaling metric alerts
+## Scale metric alerts
 
 Azure Monitor supports the creation of metric alerts that, like dimensions, monitor multiple resources. Scaling is currently limited to Azure virtual machines. However, a single metric alert can monitor resources in one Azure region.
 
-The creation of scaling metric alert rules to monitor multiple resources is no different from creating any other metric alert rule. You just select all the resources that you want to monitor.
+Creating scaling metric alert rules to monitor multiple resources is no different than creating any other metric alert rule. You just select all the resources that you want to monitor.
 
 Like dimensions, a scaling metric alert is individual to the resource that triggered it.

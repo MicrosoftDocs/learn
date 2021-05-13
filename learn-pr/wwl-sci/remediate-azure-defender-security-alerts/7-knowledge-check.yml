@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.remediate-azure-defender-security-alerts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Security Center employs which advanced security analytics?"
+    choices:
+    - content: "Biometric analytics"
+      isCorrect: false
+      explanation: "Incorrect. Behavior analytics is used to detect threats."
+    - content: "Power BI"
+      isCorrect: false
+      explanation: "Incorrect. Behavior analytics is used to detect threats."
+    - content: "Behavioral analytics"
+      isCorrect: true
+      explanation: "Correct. Behavior analytics is used to detect threats."
+  - content: "Which Azure technology is used to automate remediation?"
+    choices:
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Functions is not the automation engine."
+    - content: "Azure Batch"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Batch is not the automation engine."
+    - content: "Azure Logic Apps"
+      isCorrect: true
+      explanation: "Correct.  Logic Apps is the automation engine."
+  - content: "If available, which report provides Attackers tactics, tools, and procedures?"
+    choices:
+    - content: "Threat Intelligence"
+      isCorrect: true
+      explanation: "Correct.  The threat intelligence report contains attacker information if available."
+    - content: "Secure Score"
+      isCorrect: false
+      explanation: "Incorrect.  The threat intelligence report contains attacker information if available."
+    - content: "Incident"
+      isCorrect: false
+      explanation: "Incorrect.  The threat intelligence report contains attacker information if available."

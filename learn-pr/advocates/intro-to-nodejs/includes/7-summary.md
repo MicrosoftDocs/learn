@@ -4,7 +4,7 @@ In this module, you learned that Node.js is a runtime that can run JavaScript ap
 
 The following applications are built with Node.js:
 
-- CLI tools such as [hexa.run](https://hexa.run) and [Azure Functions CLI](https://github.com/Azure/azure-functions-core-tools)
+- CLI tools such as [hexa.run](https://www.hexa.run/) and [Azure Functions CLI](https://github.com/Azure/azure-functions-core-tools)
 - Back-end servers and API services such as [Express.js](https://expressjs.com/) and [NestJS](https://nestjs.com/)
 - Desktop apps such as [Slack](https://slack.com/) (using [Electron](https://www.electronjs.org/))
 - IoT libraries such as [Johnny-Five](http://johnny-five.io/), [Puck-js](https://www.puck-js.com/), and [Tessel](https://tessel.io/)

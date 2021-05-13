@@ -5,8 +5,8 @@ metadata:
   title: Use ARM templates to deploy an entire cloud infrastructure
   description: Analyze a scenario that requires a
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   description: Knowledge check
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -30,7 +31,7 @@ quiz:
     - content: Collect security data in Azure Sentinel.
       isCorrect: true
       explanation: Azure Sentinel is Microsoft's cloud-based SIEM. A SIEM aggregates security data from many different sources to provide additional capabilities for threat detection and responding to threats.
-    - content: Build a custom tool that collects security data and displays a report through a web application.
+    - content: Build a custom tool that collects security data, and displays a report through a web application.
       isCorrect: false
       explanation: Although you could take this approach, is there a fully featured service on Azure that provides this functionality?
     - content: Look through each security log daily and email a summary to your team.

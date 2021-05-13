@@ -51,15 +51,15 @@ Don't add this code quite yet, but here's an example that loads AngularJS from a
 
 ## How will I build the application?
 
-Here you'll use a basic process. You'll write application code from Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
+Here, you'll use a basic process. You'll write application code from the Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
 
-In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a revision control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
+In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a version control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
 
 ## Create the Books web application
 
 Here you'll create all the code, script, and HTML files that make up your web application. For brevity, we'll highlight the important parts of each file but won't go into complete details.
 
-If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to Cloud Shell.
+If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to the Cloud Shell.
 
 ```bash
 exit
@@ -69,7 +69,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the files
 
-1. From Cloud Shell, run these commands to create the folders and files for your web application.
+1. From the Cloud Shell, run these commands to create the folders and files for your web application.
 
     ```bash
     cd ~
@@ -304,13 +304,13 @@ You're now back at your Cloud Shell session.
 
     This code creates a basic HTML form with four fields to submit book data and a table that displays all the books stored in the database.
 
-    Although this is standard HTML code, the `ng-` HTML attributes may be unfamiliar to you. These HTML attributes wire up the AngularJS code to the user interface. For example, when the user clicks the **Add** button, AngularJS calls the `add_book` function, which sends the form data to the server.
+    Although this is standard HTML code, the `ng-` HTML attributes may be unfamiliar to you. These HTML attributes wire up the AngularJS code to the user interface. For example, when you select **Add**, AngularJS calls the `add_book` function, which sends the form data to the server.
 
     You can examine the code here to get a sense of how each of the `ng-` attributes relate to application's business logic.
 
 ### Create the Express server to host the application
 
-1. From the editor, open `server.js` and add this code:
+1. From the editor, open `server.js` and add this code.
 
     ```javascript
     var express = require('express');
@@ -331,7 +331,7 @@ You're now back at your Cloud Shell session.
 
 Recall that `package.json` provides information about your application, including its name, description, and what Node.js packages your application needs to run.
 
-1. From the editor, open `package.json` and add this code:
+1. From the editor, open `package.json` and add this code.
 
     ```json
     {
@@ -365,7 +365,7 @@ Node packages typically use the [Semantic Versioning](https://semver.org?azure-p
 
 1. You're all done editing files. Ensure that you saved changes to each file and then close the editor.
 
-    To close the editor, click the ellipses in the corner and then select **Close Editor**.
+    To close the editor, select the ellipses in the corner, and then select **Close Editor**.
 
 1. Run the following `scp` command to copy the contents of the `~/Books` directory in your Cloud Shell session to the same directory name on your VM.
 
@@ -387,7 +387,7 @@ The application also requires Express and the body-parser packages. body-parser 
 
 Let's connect to your VM and install the packages you specified in `package.json`.
 
-1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run these commands from Cloud Shell to retrieve it.
+1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run these commands from the Cloud Shell to retrieve it.
 
     ```azurecli
     ipaddress=$(az vm show \
@@ -417,6 +417,7 @@ Let's connect to your VM and install the packages you specified in `package.json
 1. Run `npm install` to install the dependent packages.
 
     ```bash
+    sudo apt install npm
     npm install
     ```
 
@@ -429,7 +430,7 @@ You're now ready to test out your Node.js web application!
 1. From the `~/Books` directory, run this command to start the web application.
 
     ```bash
-    sudo node server.js
+    sudo nodejs server.js
     ```
 
     This command starts the application by listening on port 80 for incoming HTTP requests.
@@ -444,4 +445,4 @@ You're now ready to test out your Node.js web application!
 
     ![Screenshot of the book web page with sample data populated.](../media/6-book-sample-entries.png)
 
-    You can also click the **Delete** button to delete a book from the database.
+    To delete a book from the database, you can also select **Delete**.

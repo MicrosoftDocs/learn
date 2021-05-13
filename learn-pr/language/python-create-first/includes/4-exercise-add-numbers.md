@@ -85,6 +85,9 @@ print(sum)
 
 Note the key difference in this code example.  Here, you're wrapping the call to the `input()` function with a call to the `int()` function.  In other words, the Python interpreter first executes the `input()` function and, after a value is returned from the `input()` function containing user input, it's passed as an input parameter to the `int()` function, which converts the value from a string to an integer.
 
+> [!TIP]
+> The `print()` method is flexible.  It can display the string data type, the int data type,  the float data type, and other data types we haven't talked about yet.
+
 ### Step 5 - Save and execute the code
 
 Save and run the program by using one of the techniques that you learned earlier.  You should see the following output:

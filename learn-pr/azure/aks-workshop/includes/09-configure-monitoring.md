@@ -107,7 +107,7 @@ The RBAC Role and ClusterRole objects allow you to set up rules that represent a
 
 We use a role binding to grant the permissions defined in a role to a user or set of users. A role binding contains the list of users, groups, or service accounts, and a reference to the role being granted. Like the Role and ClusterRole, a RoleBinding grants permission within a specific namespace and the ClusterRoleBinding grants access to the cluster. You'll use a ClusterRoleBinding bind your ClusterRole to all the namespaces in your cluster.
 
-In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that aren't limited to a specific namespace. You configure *CusterRoles* to define permissions on namespaced resources given within individual namespaces or across all namespaces. *CusterRoles* are also used to describe permissions on cluster-scoped resources. You then use the *ClusterRoleBindings* to grant permissions across a whole cluster.
+In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that aren't limited to a specific namespace. You configure *ClusterRoles* to define permissions on namespaced resources given within individual namespaces or across all namespaces. *ClusterRoles* are also used to describe permissions on cluster-scoped resources. You then use the *ClusterRoleBindings* to grant permissions across a whole cluster.
 
 1. Create a file called `logreader-rbac.yaml` by using the integrated editor in Cloud Shell.
 
@@ -162,12 +162,12 @@ In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that ar
 
 1. Select **Insights** under **Monitoring**.
 
-1. Select the **Controllers** tab, and choose a container to view its live logs or event logs. For example, choose the **ratings-api** container. The new view allows you to debug the status of the container.
+1. Select the **Containers** tab, and select a container to view its live logs or event logs. For example, select the **ratings-api** container. The new view enables you to debug the status of the container.
 
     ![Screenshot showing an example of the event logs for an Azure Kubernetes Service cluster](../media/09-livelogs.png#lightbox)
 
 ## Summary
 
-In this exercise, you created a Log Analytics workspace in Azure Monitor to store monitoring and logging data for your AKS cluster. You enabled the AKS monitoring add-on to enable the collection of data, and inspected the AKS cluster health. You then used Kubernetes RBAC to enable the collection of live logging data and then viewed live log data in the Azure portal.
+In this exercise, you created a Log Analytics workspace in Azure Monitor to store monitoring and logging data for your AKS cluster. You enabled the AKS monitoring add-on to enable the collection of data, and inspected the AKS cluster health. You then used Kubernetes RBAC to enable the collection of live logging data, and then viewed live log data in the Azure portal.
 
 Next, we'll take a look at scaling the Fruit Smoothies AKS cluster.

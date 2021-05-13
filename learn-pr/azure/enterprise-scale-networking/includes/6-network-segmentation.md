@@ -1,13 +1,17 @@
-In this unit, there are enterprise design considerations and recommendations for network segmentation in Azure.
+In this unit, you learn about enterprise design considerations and recommendations for network segmentation in Azure.
 
 ## Considerations
 
-Design based on zero trust and assume breach. Systems should only be able to communicate with each other only on the ports and protocols needed by the applications. A few key items to remember are as follows:
+Design based on zero trust and assumed breach. Systems should be able to communicate with each other only on the ports and protocols that the applications need. Here are a few key items to remember:
 
 - Application security groups don't span virtual networks.
-- Network security groups are stateful but are not firewalls, but access control lists.
-- Azure Firewall is available as a first party service or there are third-party firewalls available in the Azure Marketplace.
+- Network security groups are stateful but are not firewalls. They're access control lists.
+- Azure Firewall is available from Microsoft, or you can find partner firewalls in Azure Marketplace.
 
 ## Recommendations
 
-Delegate subnet creation to the landing zone owner. This will enable them to define how to segment workloads across subnets (for example, a single large subnet, multi-tier app). The platform team can use Azure Policy to ensure a network security group with specific rules (such as deny inbound SSH or RDP from internet, or allow/block traffic across landing zones) is always associated to subnets with deny-only policies. Use network security groups to restrict traffic between subnets and other east-west traffic, use firewalls for North/South traffic. Be sure to enable network security group flow logs and feed them into Traffic Analytics in order to audit traffic or debug network flows. Use network security groups selectively for inter-landing-zone traffic.
+Delegate subnet creation to the owner of the landing zone. This will enable the owner to define how to segment workloads across subnets (for example, a single large subnet or a multitier app).
+
+The platform team can use Azure Policy to ensure that a network security group with specific rules is always associated with subnets that have deny-only policies. An example of a specific rule is denying inbound SSH or RDP from the internet, or allowing/blocking traffic across landing zones. 
+
+Use network security groups to restrict traffic between subnets and other east/west traffic, and use firewalls for north/south traffic. Be sure to enable flow logs for network security groups and feed them into Traffic Analytics in order to audit traffic or debug network flows. Use network security groups selectively for traffic between landing zones.

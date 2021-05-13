@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.cloud-scale-messaging-jms-service-bus
+metadata:
+  title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
+  description: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
+  ms.date: 03/31/2021
+  author: axisc
+  ms.author: aschhab
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
+summary: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the benefits of Service Bus.
+  - Send messages to Service Bus by using the Java Message Service (JMS) 2.0 API.
+  - Receive messages from Service Bus by using the JMS 2.0 API.
+prerequisites: | 
+  - An Azure subscription
+  - Azure CLI
+  - Local installations of Java JDK (1.8+) and the Azure CLI (2.12+)
+iconUrl: /learn/achievements/cloud-scale-messaging-jms-service-bus.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-service-bus
+units:
+- learn.azure.cloud-scale-messaging-jms-service-bus.1-introduction
+- learn.azure.cloud-scale-messaging-jms-service-bus.2-create-your-service-bus-premium-namespace
+- learn.azure.cloud-scale-messaging-jms-service-bus.3-messaging-with-jms-and-service-bus
+- learn.azure.cloud-scale-messaging-jms-service-bus.4-send-messages-to-service-bus
+- learn.azure.cloud-scale-messaging-jms-service-bus.5-receive-messages-from-service-bus
+- learn.azure.cloud-scale-messaging-jms-service-bus.6-knowledge-check
+- learn.azure.cloud-scale-messaging-jms-service-bus.7-summary
+badge:
+  uid: learn.azure.cloud-scale-messaging-jms-service-bus.badge

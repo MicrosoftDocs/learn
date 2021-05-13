@@ -71,7 +71,7 @@ The following query shows an example that joins two tables, named *Inventory* an
 SELECT *
 FROM Inventory
 JOIN CustomerOrder
-WHERE Inventory.ID = CustomerOrder.InventoryID
+ON Inventory.ID = CustomerOrder.InventoryID
 ```
 
 SQL provides aggregate functions. An aggregate function calculates a single result across a set of rows or an entire table. The example below finds the minimum value in the *MyColumn1* column across all rows in the *MyTable* table:
@@ -83,7 +83,7 @@ FROM MyTable
 
 A number of other aggregate functions are available, including MAX (which returns the largest value in a column), AVG (which returns the average value, but only if the column contains numeric data), and SUM (which returns the sum of all the values in the column, but only if the column is numeric).
 
-The next example shows how to update an existing row using SQL. It modifies the value of the second column but only for rows that have the value 3 in *MyColumn3*. All other rows are left unchanged:
+The next example shows how to update an existing row using SQL. It modifies the value of the second column but only for rows that have the value 3 in *MyColumn1*. All other rows are left unchanged:
 
 ```SQL
 UPDATE MyTable
@@ -130,7 +130,7 @@ The most common DDL statements are:
 The following example creates a new database table. The items between the parentheses specify the details of each column, including the name, the data type, whether the column must always contain a value (NOT NULL), and whether the data in the column is used to uniquely identify a row (PRIMARY KEY). Each table should have a primary key, although SQL doesn't enforce this rule.
 
 > [!NOTE]
-> Columns marked as **NOT NULL** are refererred to as *mandatory* columns. If you omit the *NOT NULL* clause, you can create rows that don't contain a value in the column. An empty column in a row is said to have a *NULL* value.
+> Columns marked as **NOT NULL** are referred to as *mandatory* columns. If you omit the *NOT NULL* clause, you can create rows that don't contain a value in the column. An empty column in a row is said to have a *NULL* value.
 
 ```SQL
 CREATE TABLE MyTable
@@ -141,4 +141,4 @@ CREATE TABLE MyTable
 );
 ```
 
-The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT, and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.
+The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.    

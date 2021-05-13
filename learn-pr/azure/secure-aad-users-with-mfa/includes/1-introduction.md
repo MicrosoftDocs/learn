@@ -6,9 +6,9 @@ You've done a lot of work hardening your network and ensuring that only the righ
 
 In this module, you will:
 
-- Learn about Azure Multi-Factor Authentication (MFA)
-- Create a plan to deploy Azure MFA
-- Turn on Azure MFA for users and specific apps
+- Learn about Azure AD Multi-Factor Authentication (MFA)
+- Create a plan to deploy Azure AD MFA
+- Turn on Azure AD MFA for users and specific apps
 
 ## Prerequisites
 

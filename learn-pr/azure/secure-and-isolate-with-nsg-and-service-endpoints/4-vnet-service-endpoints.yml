@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Secure network access to PaaS services with virtual network service endpoints
 durationInMinutes: 5
 content: |

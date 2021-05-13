@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-dhcp.use-dhcp-to-simplify-ip-configuration
+title: Use DHCP to simplify IP configuration
+metadata:
+  title: Use DHCP to simplify IP configuration
+  description: "Use DHCP to simplify IP configuration"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-use-dynamic-host-configuration-protocol-simplify-ip-configuration.md)]

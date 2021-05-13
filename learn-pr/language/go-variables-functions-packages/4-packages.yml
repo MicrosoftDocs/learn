@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-variables-functions-packages.4-packages
+metadata:
+  title: Learn about packages
+  description: Learn what a package is, how to create one, and how to consume external packages.
+  ms.date: 12/15/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about packages
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-packages.md)]

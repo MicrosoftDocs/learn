@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dotnet-debug
+metadata:
+  title: Interactively debug .NET apps with the Visual Studio Code debugger
+  description: 'Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your C# applications.'
+  ms.date: 10/28/2020
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Interactively debug .NET apps with the Visual Studio Code debugger
+summary: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly.
+abstract: |
+  By the end of this module, you will be able to:
+  - Use the Visual Studio Code debugger with a .NET program.
+  - Create breakpoints and run your code step by step to find issues.
+  - Inspect your program state at any execution step.
+iconUrl: /learn/achievements/dotnet-debug.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+prerequisites: |
+  - Local installations of [.NET Core SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+units:
+- learn.dotnet-debug.1-introduction
+- learn.dotnet-debug.2-debugger
+- learn.dotnet-debug.3-analyze-your-program-state
+- learn.dotnet-debug.4-use-visual-studio-code-debugger
+- learn.dotnet-debug.5-logging-and-tracing
+- learn.dotnet-debug.6-use-logging-and-tracing
+- learn.dotnet-debug.7-knowledge-check
+- learn.dotnet-debug.8-summary
+
+badge:
+  uid: learn.dotnet-debug.badge

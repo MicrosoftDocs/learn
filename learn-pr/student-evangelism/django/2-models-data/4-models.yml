@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.models-data.models
+title: Models in Django
+metadata:
+  title: Models in Django
+  description: Learn how to create models in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-models.md)] 

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics
+metadata:
+  title: Understand data warehouse developer features of Azure Synapse Analytics
+  description: "Understand data warehouse developer features of Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand data warehouse developer features of Azure Synapse Analytics
+summary: Learn about the language capabilities that are available to create data warehouses in Azure Synapse Analytics.
+abstract: |
+  In this module, you will:
+  - Explore the development tools for Azure Synapse Analytics
+  - Understand Transact-SQL language capabilities for Azure Synapse Analytics
+  - Work with Windowing functions
+  - Work with approximate execution
+  - Work with JSON data in SQL Pools
+  - Encapsulate Transact-SQL logic with stored procedures
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/understand-data-warehouse-developer-features-of-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.understand-transact-sql-language-capabilities-for
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-windowing-functions
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.exercise-work-with-windowing-functions
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-approximate-execution
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.exercise-work-with-approximate-execution
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-json-data-sql-pools
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.encapsulate-transact-sql-logic-with-stored-procedures
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.knowledge-check
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.badge

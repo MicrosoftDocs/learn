@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.8-types-lab
+title: Lab - Use types in TypeScript
+metadata:
+  title: Lab - Use types in TypeScript
+  description: Apply what you've learned to modify JavaScript code, implement an enum type, and declare an array type.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-types-lab.md)]

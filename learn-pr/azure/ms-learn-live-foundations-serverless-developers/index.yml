@@ -4,7 +4,7 @@ hidden: true
 metadata:
   title: Foundations of Serverless Computing for Developers
   
-  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
+  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies. Build a Node.js function app with Angular, Cosmos DB, Visual Studio Code, and GitHub Actions.
   
   ms.date: 3/13/2020
   

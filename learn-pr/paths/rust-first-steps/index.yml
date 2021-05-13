@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.languages.rust-first-steps
+metadata:
+  title: Take your first steps with Rust
+  description: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  brand: azure
+  ms.date: 01/29/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Take your first steps with Rust
+summary: |
+  Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+
+  In this learning path, you'll:
+    - Install the tools you need to write your first lines of Rust code.
+    - Learn basic concepts in Rust.
+    - Learn how to handle errors.
+    - Manage memory in Rust.
+    - Use generic types and traits.
+    - Set up modules for packages and crates.
+    - Write and run automated tests.
+    - Create a command-line program.    
+prerequisites: None
+iconUrl: /learn/achievements/take-your-first-steps-with-rust.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-code
+modules:
+- learn.language.rust-get-started
+- learn.language.rust-understand-common-concepts
+- learn.language.rust-error-handling
+- learn.languages.rust-memory-management
+- learn.language.rust-generic-types-traits
+- learn.language.rust-modules-packages-crates
+- learn.language.rust-automated-tests
+- learn.language.rust-create-command-line-program
+trophy:
+  uid: learn.languages.rust-first-steps.trophy

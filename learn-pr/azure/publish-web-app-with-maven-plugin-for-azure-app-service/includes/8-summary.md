@@ -31,6 +31,6 @@ These additional links provide a wealth of information about getting started wit
 
 - [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/)
 - [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
-- [Maven Plugin for Azure App Service](https://docs.microsoft.com/java/api/overview/azure/maven/azure-webapp-maven-plugin/README)
+- [Maven Plugin for Azure App Service](https://github.com/Microsoft/azure-maven-plugins/blob/develop/azure-webapp-maven-plugin/README.md)
 - [Maven Central Repository listing for the Azure App Service Plugin](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin)
 - [Maven POM Reference](https://maven.apache.org/pom.html)

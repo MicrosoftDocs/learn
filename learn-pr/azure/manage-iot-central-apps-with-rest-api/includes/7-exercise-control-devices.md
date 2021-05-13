@@ -1,61 +1,177 @@
 To control devices programmatically, you use the IoT Central REST API.
 
-You want to enable your existing store management application to control devices connected your IoT Central application programmatically.
+You want to enable your existing fleet management application to control devices connected your IoT Central application programmatically.
 
-In this unit, you use the IoT Central REST API to set a writeable property on a store monitoring device and then send a reboot command to the device.
+In this unit, you use the IoT Central REST API to set a writeable property on a vehicle monitoring device and then send a reboot command to the device.
+
+## View device telemetry
+
+You can use the REST API to view the last known value for a device's telemetry measurement. Run the following commands to view the last known location and temperature values from the **sim-truck-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/telemetry/Location \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN"
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/telemetry/ContentsTemperature \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN"
+```
+
+## View device properties
+
+You can use the REST API to view device properties. Run the following command to retrieve the current properties from the **sim-truck-001** device. The property value was assigned by the simulation:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN"
+```
 
 ## Set a property
 
-The store monitoring device template specified a **brightness** property in the **sensor** interface:
+The refrigerated truck device template specified a **Target Temperature** property in the default component:
 
 ```json
 {
-  "@type": "Property",
-  "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
-  "displayName": "Brightness Level",
-  "name": "brightness",
-  "writable": true,
-  "schema": "long"
+  "@type": [
+    "Property",
+    "Temperature"
+  ],
+  "displayName": {
+    "en": "Target Temperature"
+  },
+  "name": "TargetTemperature",
+  "schema": "double",
+  "unit": "degreeCelsius",
+  "writable": true
 }
 ```
 
-Run the following command in the Cloud Shell to set the **brightness** to **3** on the **sensor** interface on one of the simulated devices in the application:
+Run the following command in the Cloud Shell to set the **Target Temperature** to **12.5** on the default component on one of the simulated devices in the application:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/properties \
---headers Authorization="$API_TOKEN" --body \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN" --body \
 '{
-  "brightness": 3
+  "TargetTemperature": 12.5
 }'
 
 ```
 
 The response to this request echoes the requested value for the property to confirm the device received it.
 
+Run the following command to see the new value for the property:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN"
+```
+
+## Set a cloud property
+
+*The cloud property REST APIs are currently in preview.*
+
+The refrigerated truck device template specified a **Last maintenance date** cloud property in the solution model:
+
+```json
+{
+  "@type": "CloudProperty",
+  "displayName": "Last maintenance date",
+  "name": "maintenancedate",
+  "schema": "string",
+  "valueDetail": {
+    "@type": "StringValueDetail"
+  }
+}
+```
+
+Run the following command in the Cloud Shell to set the **Last maintenance date** to **12.5** for one of the real devices in the application:
+
+```azurecli
+az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
+--url-parameters api-version=preview \
+--headers Authorization="$OPERATOR_TOKEN" --body \
+'{
+  "maintenancedate": "December 2020"
+}'
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
+--url-parameters api-version=preview \
+--headers Authorization="$OPERATOR_TOKEN"
+
+```
+
 ## Send a command
 
-The store monitoring device template specified a **reboot** command in the **sensor** interface:
+The vehicle monitoring device template specified a **Get Max-Min report** command in the default component:
 
 ```json
 {
   "@type": "Command",
-  "commandType": "synchronous",
-  "comment": "This command reboots the device.",
-  "name": "reboot"
+  "name": "getMaxMinReport",
+  "displayName": "Get Max-Min report.",
+  "description": "This command returns the max, min and average temperature from the specified time to the current time.",
+  "request": {
+    "name": "since",
+    "displayName": "Since",
+    "description": "Period to return the max-min report.",
+    "schema": "dateTime"
+  },
+  "response": {
+    "name": "tempReport",
+    "displayName": "Temperature Report",
+    "schema": {
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "maxTemp",
+          "displayName": "Max temperature",
+          "schema": "double"
+        },
+        {
+          "name": "minTemp",
+          "displayName": "Min temperature",
+          "schema": "double"
+        },
+        {
+          "name": "avgTemp",
+          "displayName": "Average Temperature",
+          "schema": "double"
+        },
+        {
+          "name": "startTime",
+          "displayName": "Start Time",
+          "schema": "dateTime"
+        },
+        {
+          "name": "endTime",
+          "displayName": "End Time",
+          "schema": "dateTime"
+        }
+      ]
+    }
+  }
 }
 ```
 
-Run the following command in the Cloud Shell to send a reboot command to one of the simulated devices in the application. The reboot command takes a parameter that specifies the number of seconds to wait before rebooting:
+Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the the start of the time period for the report:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/commands/reboot \
---headers Authorization="$API_TOKEN" --body \
+SINCE=`date -d "now -2 hours" -Ins`
+az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/commands/getMaxMinReport \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN" --body \
 '{
-    "delay": 10
+    "since": "'$SINCE'"
 }'
 
 ```
 
-If you navigate to your application in your browser, you can see the command history for the command you just called:
+You can view the command history for a command to retrieve the most recent response:
 
-![View the command history for the reboot command in the IoT Central UI](../media/7-command-history.png)
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/commands/getMaxMinReport \
+--url-parameters api-version=1.0 \
+--headers Authorization="$OPERATOR_TOKEN"
+```

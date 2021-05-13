@@ -6,11 +6,11 @@ The modeling step is often a cycle of data understanding, feature engineering, m
 
 ![Screenshot of the modeling cycle.](../media/3-modeling-cycle.png)
 
-Later in the module we will discuss each of the steps of the cycle, but first, let's review the cycle itself.
+Later in the module, we will describe each of the steps of the cycle. First, let's review the cycle itself.
 
 ## Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis (EDA) can be an extremely useful step. Often, this part of the cycle will give insight into what needs to be done during feature engineering and modeling to produce the best results. You can use different techniques depending on the types of data you are working with. A few common visualization techniques are histograms, distribution plots, box plots, and heat maps.
+Exploratory Data Analysis (EDA) can be an extremely useful step. Often, this part of the cycle will provide insight into what needs to be done during feature engineering and modeling to produce the best results. You can use different techniques depending on the types of data you are working with. A few common visualization techniques are histograms, distribution plots, box plots, and heat maps.
 
 ## Feature engineering
 
@@ -20,11 +20,11 @@ Some techniques used in feature engineering are moving averages and different ty
 
 ## Modeling
 
-A *model* is an algorithm that learns information about the data and then provides a probabilistic prediction. Creating models is the portion of the cycle that gets the most recognition. Here there are many different techniques available, so it's important to identify the type of problem being solved. 
+A *model* is an algorithm that learns information about the data, and then provides a probabilistic prediction. Creating models is the portion of the cycle that gets the most recognition. Here, there are many different techniques available, so it's important to identify the type of problem being solved. 
 
-Based on the what you're predicting, you can use either the classification algorithm or the continuous value prediction algorithm. A *classification algorithm* predicts discrete values, and the *continuous value prediction algorithm* predicts continuous values. 
+Based on what you're predicting, you can use either the *classification algorithm* or the *continuous value algorithm*. A classification algorithm predicts discrete values; the continuous value algorithm predicts continuous values. 
 
-To classify something, the only options are models that are based on that assumption. Some examples of classification models are logistic regression and random forest classifier. The outcome predicted by a classification model is finite-it must be one of a predefined set of values. This is because continuous values are numeric and can take on an infinite number of possible values. For example, in theory, total goods sold is infinite and includes a decimal portion. In reality, factors such as number of goods produced, and number of customers constrain the range of the value. However, it is still considered continuous.
+To classify something, the only options are models that are based on these assumptions. Some examples of classification algorithm models are logistic regression and random forest classifier. The outcome predicted by a classification algorithm model is finite - it must be one of a predefined set of values. The continuous value algorithm models are numerical, and can take on an infinite number of possible values. For example, in theory, total goods sold is infinite and includes a decimal portion. In reality, factors such as number of goods produced, and number of customers constrain the range of the value. However, it is still considered continuous.
 
 ## Evaluate the model
 

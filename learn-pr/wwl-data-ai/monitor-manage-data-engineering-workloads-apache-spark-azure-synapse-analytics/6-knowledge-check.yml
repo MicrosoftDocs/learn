@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/23/2021
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the possible ways to optimize an Apache Spark Job?"
+    choices:
+    - content: "Remove all nodes."
+      isCorrect: false
+      explanation: "Incorrect. Removing all nodes would mean there is no compute power to process the Apache Spark jobs."
+    - content: "Remove the Apache Spark Pool."
+      isCorrect: false
+      explanation: "Incorrect. Removing the Apache Spark pool removes the capability to process Apache Spark jobs."
+    - content: "Use bucketing."
+      isCorrect: true
+      explanation: "Correct. Bucketed tables are optimized because it is a metadata operation about how the data is bucketed and sorted."
+  - content: "What can cause a slower performance on join or shuffle jobs?"
+    choices:
+    - content: "Data skew."
+      isCorrect: true
+      explanation: "Correct. Due to asymmetry in your job data."
+    - content: "Enablement of autoscaling"
+      isCorrect: false
+      explanation: "Incorrect. When you enable autoscale, you can set a minimum and maximum number of nodes in order to control the scale that you'd like, such that you have flexibility in the number of nodes. It does not relate to performance issues on join or shuffle jobs."
+    - content: "Bucketing."
+      isCorrect: false
+      explanation: "Incorrect. A way to look into slower performance with joins or shuffle jobs is to look into bucketing. The introduction of a bucket column and pre-aggregate in buckets first might help the performance."

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.incident-management-sentinel
+metadata:
+  title: Security incident management in Azure Sentinel
+  description: Security incident management in Azure Sentinel
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security incident management in Azure Sentinel
+summary: In this module, you'll investigate Azure Sentinel incident management, learn about Azure Sentinel events and entities, and discover ways to resolve incidents.
+abstract: |
+  In this module, you will:
+  - Understand Azure Sentinel incident management
+  - Explore Azure Sentinel evidence and entity management
+  - Investigate and manage incident resolution
+prerequisites: |
+  - Familiarity with security operations in an organization
+  - Basic experience with Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Basic knowledge of Azure Sentinel rules
+iconUrl: /learn/achievements/incident-management-sentinel.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.incident-management-sentinel.1-introduction
+- learn.azure.incident-management-sentinel.2-exercise-setup
+- learn.azure.incident-management-sentinel.3-describe-incident-management
+- learn.azure.incident-management-sentinel.4-understand-evidence-entities
+- learn.azure.incident-management-sentinel.5-manage-incidents
+- learn.azure.incident-management-sentinel.6-exercise-investigate-incident
+- learn.azure.incident-management-sentinel.7-summary
+badge:
+  uid: learn.azure.incident-management-sentinel.badge

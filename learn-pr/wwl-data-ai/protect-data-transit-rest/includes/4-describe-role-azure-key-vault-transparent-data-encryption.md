@@ -4,6 +4,6 @@ SQL Server, either within an Azure Virtual Machine or on-premises, supports usin
 
 :::image type="content" source="../media/module-33-security-final-05.png" alt-text="Azure SQL VM Resource Provider Azure Key Vault configuration":::
 
-In order to configure the Azure Key Vault integration, the Key Vault URL, the Principal name, the Principal secret, and the name of the credential. This task can be done at VM creation or to an existing VM.
+In order to configure the Azure Key Vault integration, you need to set the Key Vault URL, the Principal name, the Principal secret, and the name of the credential. This task can be done at VM creation or to an existing VM.
 
 Configuring SQL Server to connect to Azure Key Vault first requires creating a normal SQL Server Login within the instance. Next a Credential needs to be created and mapped to the login. For the identity of the credential, the name of the key vault should be used. For the secret of the credential, use the application ID from Azure Key Vault. Once the credential is created, an asymmetric key can be created within the Azure Key Vault. An asymmetric key can then be created within the SQL Server database. The key in database can be mapped to the Azure Key Vault asymmetric key using the CREATE ASYMMETRIC KEY command with the FROM PROVIDER syntax. Once an asymmetric key is created within the database, that key can be used for TDE, or Backup Encryption or Always Encrypted.

@@ -8,7 +8,7 @@ SQL Server on a virtual machine is a version of SQL Server that runs in an Azure
 
 Here are some considerations for optimally deploying and managing SQL Server on virtual machines:  
 
-- Deploy specific SQL Server and operating system versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of the Azure SQL resource provider for licensing flexibility and to enable automatic backups and updates.
+- Deploy specific SQL Server and operating system versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of the SQL Server IaaS Agent Extension for licensing flexibility and to enable automatic backups and updates.
 
 - Consider memory-optimized or storage-optimized virtual machine sizes for maximum performance.
 
@@ -28,7 +28,7 @@ Companies around the world have used SQL Server on virtual machines. One example
 
 ## IaaS vs. PaaS
 
-SQL Server on a virtual machine is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Manged Instance and SQL Database:  
+SQL Server on a virtual machine is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Managed Instance and SQL Database:  
 
 - **Business continuity** enables your business to continue operating in the face of disruption.
 
@@ -64,17 +64,17 @@ As new features are developed, some customers are granted access to specific fea
 
 SQL Managed Instance is a PaaS deployment option of Azure SQL. It gives you an instance of SQL Server but removes much of the overhead of managing a virtual machine. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to use instance-scoped features and want to move to Azure without rearchitecting their applications. (*Instance-scoped* features are features that are tied to an instance of SQL Server, as opposed to features that are tied to a database in an instance of SQL Server.)  
 
-SQL Managed Instance instance-scoped features include SQL Server Agent, Service Broker, common language runtime (CLR), Database Mail, linked servers, and Machine Learning Services Preview. SQL Managed Instance allows you to access instance-scoped features. But you don't have to worry about, nor do you have access to, the OS or the infrastructure underneath.  
+SQL Managed Instance instance-scoped features include SQL Server Agent, Service Broker, common language runtime (CLR), Database Mail, linked servers, distributed transactions (preview), and Machine Learning Services. SQL Managed Instance allows you to access instance-scoped features. But you don't have to worry about, nor do you have access to, the OS or the infrastructure underneath.  
 
 :::image type="content" source="../media/3-sql-managed-instance.svg" alt-text="Diagram that describes when to choose Azure SQL Managed Instance." border="false":::
 
 Let's look at another industry scenario, this one from Komatsu. Komatsu is a manufacturing company that produces and sells heavy equipment for construction. The company had multiple mainframe applications for different types of data. Komatsu wanted to consolidate these applications to get an overall view. Additionally, Komatsu wanted a way to reduce overhead. Because the company uses a large surface area of SQL Server features, the IT decision makers chose to move to Azure SQL Managed Instance. They were able to move about 1.5 terabytes of data smoothly and get benefits like automatic patching and version updates, automated backups, high availability, and reduced management overhead. After migrating, Komatsu reported about 49% cost reduction and performance gains of about 25-30%.  
 
-## SQL Database
-
-:::image type="content" source="../media/3-sql-database.svg" alt-text="Diagram that describes when to choose Azure SQL Database." border="false":::  
+## SQL Database 
 
 SQL Database is a PaaS deployment option of Azure SQL that abstracts both the OS and the SQL Server instance away from users. This deployment option allows you to just get a database and start developing applications. SQL Database is also the only deployment option that supports scenarios that require unlimited database storage (hyperscale) and autoscaling for unpredictable workloads (serverless). SQL Database has the industry's highest availability SLA. It provides other intelligent capabilities related to monitoring and performance, partly because Microsoft manages instances.
+
+:::image type="content" source="../media/3-sql-database.svg" alt-text="Diagram that describes when to choose Azure SQL Database." border="false"::: 
 
 AccuWeather provides a great example of using SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company wanted access Azure for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning, to quickly and easily deploy new internal applications to make sales and customer predictions.  
 

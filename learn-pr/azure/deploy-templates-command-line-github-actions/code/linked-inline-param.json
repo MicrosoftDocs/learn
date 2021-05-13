@@ -1,0 +1,16 @@
+{
+  "name": "storage",
+  "type": "Microsoft.Resources/deployments",
+  "apiVersion": "2019-10-01",
+  "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+          "uri": "[variables('linked-template')]",
+          "contentVersion": "1.0.0.0"
+      },
+      "parameters": {
+          "name": { "value": "[parameters('name')]" },
+          "location": { "value": "[resourceGroup().location]" }
+      }
+  }
+}

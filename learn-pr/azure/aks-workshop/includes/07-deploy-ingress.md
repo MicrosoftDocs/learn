@@ -33,17 +33,18 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
     ```bash
     kubectl create namespace ingress
     ```
-    
+
 1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
 
     ```bash
-    helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+    helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+    helm repo update
     ```
 
-1. Next, install the NGINX ingress controller. NGINX ingress is part of the stable Helm repository you configured earlier when you installed MongoDB. You'll install two replicas of the NGINX ingress controllers are deployed with the `--set controller.replicaCount` parameter for added redundancy. Make sure to schedule the controller only on Linux nodes as Windows Server nodes shouldn't run the ingress controller. You specify a node selector by using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller only on Linux-based nodes.
+1. Next, install the NGINX ingress controller. You'll install two replicas of the NGINX ingress controllers are deployed with the `--set controller.replicaCount` parameter for added redundancy. Make sure to schedule the controller only on Linux nodes as Windows Server nodes shouldn't run the ingress controller. You specify a node selector by using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller only on Linux-based nodes.
 
     ```bash
-    helm install nginx-ingress stable/nginx-ingress \
+    helm install nginx-ingress ingress-nginx/ingress-nginx \
         --namespace ingress \
         --set controller.replicaCount=2 \
         --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \
@@ -68,7 +69,7 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
 1. Next, let's check the public IP of the ingress service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it update in real time. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```bash
-    kubectl get service nginx-ingress-controller --namespace ingress -w
+    kubectl get services --namespace ingress -w
     ```
 
     The service shows `EXTERNAL-IP` as `<pending>` for a while until it finally changes to an actual IP.

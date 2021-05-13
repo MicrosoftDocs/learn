@@ -86,7 +86,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on your compute cluster.
+2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-auto-training** on your compute cluster.
 3. Wait for the run to finish. This may take 5 minutes or more. When the run has completed, the modules should look like this:
 
 > [!div class="centered"]

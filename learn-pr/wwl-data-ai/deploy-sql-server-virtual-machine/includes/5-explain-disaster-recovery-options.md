@@ -8,7 +8,7 @@ Additionally as part of the Azure SQL VM service provider, you can have your bac
 
 ## Azure Backup for SQL Server
 
-The Azure Backup solution requires an agent to be installed on the virtual machine. The agent then communicates with an Azure service that manages automatic backups of your SQL Server databases. Azure Backup also provides a central location that you can used to manage and monitor the backups to ensure meeting any specified RPO/RTO metrics.
+The Azure Backup solution requires an agent to be installed on the virtual machine. The agent then communicates with an Azure service that manages automatic backups of your SQL Server databases. Azure Backup also provides a central location that you can use to manage and monitor the backups to ensure meeting any specified RPO/RTO metrics.
 
 :::image type="content" source="../media/module-22-plan-implement-final-04.png" alt-text="Azure Backup for SQL Server Architecture":::
 
@@ -16,7 +16,7 @@ As shown above, the Azure Backup solution is a comprehensive, enterprise backup 
 
 ## Availability groups
 
-In addition to the high availability scenarios described above, Always On Availability Groups can be used for disaster recovery purposes. You can implement up to nine replicas of a database across Azure regions, and stretch this architecture even further using Distributed Availability Groups. Availability Groups ensure that a viable copy of your database(s) is in another location beyond the primary region. By doing so, you help to ensure that your data ecosystem is protected against natural disasters as well as human made ones.
+In addition to the high availability scenarios described above, Always On Availability Groups can be used for disaster recovery purposes. You can implement up to nine replicas of a database across Azure regions, and stretch this architecture even further using Distributed Availability Groups. Availability Groups ensure that a viable copy of your database(s) is in another location beyond the primary region. By doing so, you help to ensure that your data ecosystem is protected against natural disasters as well as some human made ones.
 
 :::image type="content" source="../media/module-22-plan-implement-final-05.png" alt-text="Always On Availability Group Configuration":::
 
@@ -24,4 +24,4 @@ The image above shows a logical diagram of an Always On Availability Group, runn
 
 ## Azure Site Recovery
 
-Azure Site Recovery is a low-cost solution that will perform block level replication of your Azure virtual machine. This service offers various options, including the ability to test and verify your disaster recovery strategy. This solution is best used for stateless environments (for example, web servers) versus transactional database virtual machines. Azure Site Recovery supports SQL Server environments, but currently has a relatively high recovery point objective (up to an hour) making it better suited for migrations with some allowed downtime. A more common use case is to have all your stateless applications using Azure Site Recovery in conjunction with Availability Groups to provide a lower RPO.
+Azure Site Recovery is a low-cost solution that will perform block level replication of your Azure virtual machine. This service offers various options, including the ability to test and verify your disaster recovery strategy. This solution is best used for stateless environments (for example, web servers) versus transactional database virtual machines. Azure Site Recovery is supported for use with SQL Server, but keep in mind that you will need to set a higher recovery point which means potential loss. In this case, your RTO will essentially be your RPO. 

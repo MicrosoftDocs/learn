@@ -42,14 +42,14 @@ quiz:
       explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for helping to build more secure products and services."
 
 
-  - content: "The Azure Sentinel agent is actually which of the following?" 
+  - content: "The Azure Sentinel agent is which of the following?" 
     choices:
     - content: "Log Analytics agent"
       isCorrect: true
-      explanation: "That's correct. The Azure Sentinel agent is actually a Log Analytics agent."
+      explanation: "That's correct. The Azure Sentinel agent is a Log Analytics agent."
     - content: "REST API"
       isCorrect: false
-      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST and DELETE data."
+      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST, and DELETE data."
     - content: "Certificate"
       isCorrect: false
       explanation: "That's incorrect. A digital certificate is an electronic document used to prove the ownership of a public key."
@@ -59,13 +59,13 @@ quiz:
     choices:
     - content: "Edit workbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
     - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's correct. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
     - content: "Create and run Azure Sentinel security playbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
 
 
   - content: "Which of the following is required to connect Azure Sentinel to Azure AD?"

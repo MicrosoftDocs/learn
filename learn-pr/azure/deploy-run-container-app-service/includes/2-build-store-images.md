@@ -19,18 +19,18 @@ Working with images in Container Registry is like working with Docker Hub, but o
 - Container Registry runs in Azure. The registry can be replicated to store images near where they're likely to be deployed.
 - Container Registry is highly scalable, providing enhanced throughput for Docker pulls that can span many nodes concurrently. The Premium SKU of Container Registry includes 500 GiB of storage.
 
-## Using Container Registry
+## Use Container Registry
 
-You create a registry by using either the Azure portal or the Azure CLI **acr create** command. In the following code example, the name of the new registry is *myregistry*:
+You create a registry by using either the Azure portal or the Azure CLI **acr create** command. In the following code example, the name of the new registry is *myregistry*.
 
 ```bash
 az acr create --name myregistry --resource-group mygroup --sku standard --admin-enabled true
 ```
 
-In addition to storing and hosting images, you can also use Container Registry to build images. Instead of building an image yourself and pushing it to Container Registry, use the CLI to upload the Docker file and other files that make up your image. Container Registry will then build the image for you. Use the **acr build** command to run a build:
+In addition to storing and hosting images, you can also use Container Registry to build images. Instead of building an image yourself and pushing it to Container Registry, use the CLI to upload the Docker file and other files that make up your image. Container Registry will then build the image for you. Use the **acr build** command to run a build.
 
 ```bash
 az acr build --file Dockerfile --registry myregistry --image myimage .
 ```
 
-Additional information about Azure Container Registry as well as a link to supported CLI commands to manage private registries are available in the learn more section of this module.
+Additional information about Azure Container Registry as well as a link to supported CLI commands to manage private registries are available in the *Learn more* section of this module.

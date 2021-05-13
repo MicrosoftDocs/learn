@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
+title: Exercise - Customize project and editor settings
+metadata:
+  title: Exercise - Customize project and editor settings
+  description: Modify the devcontainer.json file to customize your project and editor settings.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-customize-settings.md)]

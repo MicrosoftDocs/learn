@@ -4,7 +4,7 @@ title: Create a windows Virtual Machine using Azure Image Builder template
 metadata:
   title: Create a windows Virtual Machine using Azure Image Builder template
   description: "Create a windows Virtual Machine using Azure Image Builder template"
-  ms.date: 09/25/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

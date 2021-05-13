@@ -19,6 +19,7 @@ abstract: |
   - Import data from Blob storage to the data warehouse.
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/import-data-into-asdw-with-polybase-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.scale-compute-resources
+title: Scale compute resources in Azure Synapse Analytics
+metadata:
+  title: Scale compute resources in Azure Synapse Analytics
+  description: "Scale compute resources in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-scale-compute-resources.md)]

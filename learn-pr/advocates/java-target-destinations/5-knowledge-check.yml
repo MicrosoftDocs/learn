@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.java-target-destinations.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of the Java target destinations on Azure.
+  author: judubois
+  ms.author: judubois
+  ms.date: 11/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Why would you use a platform as a service (PaaS) solution?"
+      choices:
+        - content: "You want to go to production as fast as possible, with a limited ops team."
+          isCorrect: false
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "You have high availability, security, or compliance requirements."
+          isCorrect: false
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "Your team doesn't have the resources or the willingness to maintain a production-grade infrastructure."
+          isCorrect: false
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "All of the above."
+          isCorrect: true
+          explanation: "Correct. Platform as a service solutions are the preferred choice if you want to go to production quickly, with high confidence and a minimal maintenance burden."
+    - content: "Which Azure service is designed to run serverless workloads?"
+      choices:
+        - content: "Azure App Service"
+          isCorrect: false
+          explanation: "Incorrect. Azure App Service is a platform as a service solution, which can run standard Java applications."
+        - content: "Azure Functions"
+          isCorrect: true
+          explanation: "Correct. Azure Functions is the serverless offer from Azure."
+        - content: "Azure Kubernetes Service"
+          isCorrect: false
+          explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
+        - content: "Azure Spring Cloud"
+          isCorrect: false
+          explanation: "Incorrect. Azure Spring Cloud is a managed service for running Spring Boot and Spring Cloud applications."
+    - content: "With a platform as a service offer such as Azure App Service or Azure Spring Cloud, who manages your Java Virtual Machine (JVM)?"
+      choices:
+        - content: "You are responsible for updating and patching your JVM."
+          isCorrect: false
+          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
+        - content: "Microsoft is responsible for updating and patching your JVM."
+          isCorrect: true
+          explanation: "Correct. Microsoft manages, updates, and patches your JVM for you."
+        - content: "JVM can't be updated or patched."
+          isCorrect: false
+          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
+              

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.contribute-opensource.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: trallard
+  ms.author: taallard
+  ms.date: 11/11/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

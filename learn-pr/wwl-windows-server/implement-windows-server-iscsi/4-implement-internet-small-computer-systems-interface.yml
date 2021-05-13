@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iscsi.implement-iscsi
+title: Implement iSCSI
+metadata:
+  title: Implement iSCSI
+  description: "Implement iSCSI"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-implement-internet-small-computer-systems-interface.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which TCP port does iSCSI Target use by default?"
+    choices:
+    - content: "443"
+      isCorrect: false
+      explanation: "That's incorrect. This is the default HTTPS port. By default, iSCSI Target uses TCP port 3260."
+    - content: "3260"
+      isCorrect: true
+      explanation: "That's correct. By default, iSCSI Target uses TCP port 3260."
+    - content: "5986"
+      isCorrect: false
+      explanation: "That's incorrect. This is the default WinRM port. By default, iSCSI Target uses TCP port 3260."

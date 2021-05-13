@@ -30,7 +30,7 @@ Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains the 
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Configuration-as-Code--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LJmS]
 
 Just like the Terraform plan you built in the [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines?azure-portal=true) module, you typically check in your configuration code to source control, along with your application code. Doing so enables you to version, build, test, configure, and deploy your applications as a unit.
 

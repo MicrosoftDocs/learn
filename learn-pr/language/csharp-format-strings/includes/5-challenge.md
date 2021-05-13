@@ -38,11 +38,11 @@ decimal newProfit = 63000000.0m;
 
 Console.WriteLine("Here's a quick comparison:\n");
 
-string comparrisonMessage = "";
+string comparisonMessage = "";
 
 // Your logic here
 
-Console.WriteLine(comparrisonMessage);
+Console.WriteLine(comparisonMessage);
 ```
 
 2.  You may not delete any of the existing code except for the comments.

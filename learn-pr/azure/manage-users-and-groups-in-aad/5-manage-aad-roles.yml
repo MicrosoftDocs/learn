@@ -9,7 +9,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/5-manage-aad-roles.md)]
@@ -29,9 +28,9 @@ quiz:
      choices:
      - content: "`/subscriptions/de324015-0284-4582-9d9c-6f1e52a30471`"
        isCorrect: false
-     - content: "`/subscriptions/{ef67bd4f-d0f2-4845-b6dd-6cba225b4f10}/resourceGroups/myResourceGroup/backupvm1`"
+     - content: "`/subscriptions/ef67bd4f-d0f2-4845-b6dd-6cba225b4f10/resourceGroups/myResourceGroup/backupvm1`"
        isCorrect: false
-     - content: "`/subscriptions/{ef67bd4f-d0f2-4845-b6dd-6cba225b4f10}/resourceGroups/myResourceGroup`"
+     - content: "`/subscriptions/ef67bd4f-d0f2-4845-b6dd-6cba225b4f10/resourceGroups/myResourceGroup`"
        isCorrect: true
        explanation: "Correct!"
    - content: "How are `NotActions` used in a role definition?"

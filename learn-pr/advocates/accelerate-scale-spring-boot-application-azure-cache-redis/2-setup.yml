@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.setup
+title: Set up Azure Cache for Redis
+metadata:
+  title: Create an Azure Cache for Redis instance
+  description: In this unit, we set up the Azure CLI and use it to create an Azure Cache for Redis instance.
+  author: judubois
+  ms.author: judubois
+  ms.date: 01/20/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-setup.md)]

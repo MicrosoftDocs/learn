@@ -9,7 +9,6 @@ metadata:
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
   [!include[](includes/2-organizational-models-part-1.md)] 

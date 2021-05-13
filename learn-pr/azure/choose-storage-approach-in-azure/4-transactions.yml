@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Group multiple operations in a transaction
 durationInMinutes: 5
 content: |
@@ -25,7 +24,7 @@ quiz:
       isCorrect: true
       explanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
 
-  - content: "Suppose the operations to update inventory and process payments are in the same transaction. A user is attempting to apply store credit for the full amount of an order, and submitted the exact same order (for the full amount) using their phone and laptop at the same time - so two identical orders are received. The database behind the scenes is an ACID-compliant database, what would happen?" 
+  - content: "Suppose the operations to update inventory and process payments are in the same transaction. A user is attempting to apply a $30 store credit for the full amount of an order, and submitted the exact same order using the store credit (for the full amount) using their phone and laptop at the same time - so two identical orders are received. The database behind the scenes is an ACID-compliant database, what would happen?" 
     choices:
     - content: "Both orders would be processed and use the in-store credit."
       isCorrect: false

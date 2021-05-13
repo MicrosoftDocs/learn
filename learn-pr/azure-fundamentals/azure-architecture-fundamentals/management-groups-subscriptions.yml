@@ -3,10 +3,10 @@ uid: learn.azure.azure-architecture-fundamentals.management-groups-subscriptions
 title: Azure subscriptions and management groups
 metadata:
   title: Azure subscriptions and management groups
-  description: In this unit, you'll learn about Azure Azure subscriptions and management groups.
+  description: In this unit, you'll learn about Azure subscriptions and management groups.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

@@ -2,12 +2,12 @@ We'll start by talking about programming in general. What is a programming langu
 
 ## Hardware vs. software
 
-Most of us understand that there are two sides to our computers and devices like phones and tablets: hardware and software.
+Most of us understand that there are two aspects to our computers, devices, phones, and tablets: hardware and software.
 
 _Hardware_ describes the physical components that accept input, process that input, and emit output. Hardware might include:
 
 - A central processing unit (CPU).
-- Random-access memory (RAM) for short-term storage.
+- Random access memory (RAM) for short-term storage.
 - A hard drive for long-term storage.
 - A screen.
 - A microphone.
@@ -42,7 +42,7 @@ Even the most basic program will do one or more of the following tasks:
   - Communicated from a network connection.
 - **Processing** - Processing includes:
   - Performing logic.
-  - Calculation of mathematical formulas.
+  - Calculating mathematical formulas.
   - Other manipulation or calculation of input to produce new data.
 - **Output** - Output includes information:
   - Displayed on a screen to a user.
@@ -57,7 +57,7 @@ A program can be:
 
 Python is frequently used for all of these purposes.
 
-Some programs, including many you'll build as we get started, require at most a dozen lines of code. But sophisticated programs like operating systems require tens of thousands or even a million lines of code.
+Some programs, including many you'll build as we get started, require at most a dozen lines of code. But sophisticated programs, like operating systems, require tens of thousands or even a million lines of code.
 
 Some programs are small enough that a single software developer can build them. Others are so large and complex that dozens or even hundreds of developers build and maintain them. In that case, each developer works on some small part of the whole.
 
@@ -69,7 +69,7 @@ A _programmer_ is someone who writes those instructions using a programming lang
 
 ### What is a programming language?
 
-Programming languages like Python let you write instructions that you want a computer to carry out.
+Programming languages, like Python, let you write instructions that you want a computer to carry out.
 
 Each programming language has a different syntax. But after you learn your first programming language and then attempt to learn another one, you'll quickly realize they all share many similar ideas.
 

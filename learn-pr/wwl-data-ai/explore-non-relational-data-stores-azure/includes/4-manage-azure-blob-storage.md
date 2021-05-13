@@ -98,7 +98,7 @@ az storage blob upload-batch \
 Azure PowerShell provides the [`Set-AzStorageBlobContent`](https://docs.microsoft.com/powershell/module/azure.storage/set-azurestorageblobcontent) cmdlet to upload blob data to Azure storage, as follows:
 
 ```PowerShell
-Get-AzStorageAccount `
+Set-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Set-AzStorageBlobContent `
     -Container "images" `
@@ -202,15 +202,15 @@ If you've enabled soft delete for the storage account, the blobs page listing th
 You can delete a single blob with the [`az storage blob delete`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-green* blob from the *bikes* folder in the *images* container:
 
 ```azurecli
-az storage blob delete ^
-  --account-name contosodata ^
-  --container-name "images" ^
+az storage blob delete \
+  --account-name contosodata \
+  --container-name "images" \
   --name "bikes\racer_green"
 ```
 
 ### Use Azure PowerShell
 
-Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion is silent. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
+Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion runs without prompts. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
 
 ```PowerShell
 Get-AzStorageAccount `

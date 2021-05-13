@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sharing-data-with-azure-data-share
+metadata:
+  title: Share data with Azure Data Share
+  description: Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
+  ms.date: 10/22/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Share data with Azure Data Share
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+summary: |
+  Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
+iconUrl: /learn/achievements/sharing-data-with-azure-data-share.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-share
+modules:
+- learn.wwl.introduction-to-azure-data-share
+- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
+trophy:
+  uid: learn.wwl.sharing-data-with-azure-data-share.trophy

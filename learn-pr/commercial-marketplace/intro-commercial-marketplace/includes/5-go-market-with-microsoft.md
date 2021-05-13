@@ -14,7 +14,7 @@ You can also earn higher tiers of Marketplace Rewards benefits when your commerc
 
 The Marketplace Rewards program is designed to support you at your business’ stage of growth, starting with awareness activities to help you get your first customers and shifting to more advanced sales and technical benefits as you sell more through Microsoft. These benefits are available to all partners with active commercial marketplace offers.
 
-You can learn more about the benefits available through this commercial marketplace program by referencing the [Marketplace Rewards program slide deck](https://onedrive.live.com/view.aspx?resid=6C423AE231DA44BB!356&ithint=file%2cpptx&authkey=!ANmCupRE4iK9S2c).
+You can learn more about the benefits available through this commercial marketplace program by referencing the [Marketplace Rewards program slide deck](https://aka.ms/marketplacerewards).
 
 To get started with Marketplace Rewards:
 

@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.microservices-logging-aspnet-core
+metadata:
+  title: Instrument a cloud-native ASP.NET Core microservice
+  description: This module guides you through implementing logging and monitoring in an ASP.NET Core microservices app in Azure Kubernetes Service.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/14/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Instrument a cloud-native ASP.NET Core microservice
+summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
+abstract: |
+  In this module, you will:
+  - Review diagnostics logging and performance monitoring concepts.
+  - Implement diagnostics logging with Application Insights.
+  - Implement performance monitoring with Application Insights.
+  - Enable Azure Monitor for Containers in a Kubernetes cluster.
+  - Create a custom performance metric using Prometheus.
+  - Examine a custom performance metric using Azure Monitor for Containers.
+prerequisites: |
+  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Familiarity with RESTful service concepts
+  - Familiarity with the Kusto query language at the beginner level
+  - Conceptual knowledge of containers and AKS at the intermediate level
+  - Access to an Azure subscription with **Owner** privilege
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-application-insights
+  - azure-container-registry
+  - azure-kubernetes-service
+  - azure-monitor
+units:
+  - learn.microservices-logging-aspnet-core.1-introduction
+  - learn.microservices-logging-aspnet-core.2-environment-setup
+  - learn.microservices-logging-aspnet-core.3-review-logging-monitoring
+  - learn.microservices-logging-aspnet-core.4-implement-app-insights
+  - learn.microservices-logging-aspnet-core.5-monitor-app-insights
+  - learn.microservices-logging-aspnet-core.6-azure-monitor-containers
+  - learn.microservices-logging-aspnet-core.7-knowledge-check
+  - learn.microservices-logging-aspnet-core.8-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-logging-aspnet-core.svg
+badge:
+  uid: learn.microservices-logging-aspnet-core.badge

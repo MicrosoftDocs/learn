@@ -3,8 +3,8 @@ uid: learn.data-ai.register-and-deploy-model-with-amls.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge"
-  ms.date: 09/06/2020
+  description: "Knowledge check"
+  ms.date: 03/12/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "You've trained a model using the Python SDK for Azure Machine Learning. You want to deploy the model as a containerized real-time service with high scalability and security. What kind of compute should you create to host the service?"
     choices:
-    - content: "An Azure Kubernetes Services (AKS) inferencing cluster."
+    - content: "An Azure Kubernetes Services (AKS) inferencing cluster"
       isCorrect: true
       explanation: "That is correct. You should use an AKS cluster to deploy a model as a scalable, secure, containerized service."
     - content: "A compute instance with GPUs"

@@ -1,24 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.transcribe-speech-input-text
 metadata:
-  title: Transcribe speech input to text
-  description: "Speech to text from the speech service, known as speech recognition, enables real time transcription of audio streams into text. Your applications, tools, or devices can consume, display, and take action on this text as command input."
-  ms.date: 09/26/2020
+  title: Create speech-enabled apps with the Speech service
+  description: "Create speech-enabled apps with the Speech service"
+  ms.date: 04/29/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Transcribe speech input to text
-summary: Speech-to-text from the speech service,  known as speech recognition, enables real time transcription of audio streams into text. Your applications, tools, or devices can consume, display, and take action on this text as command input.
+title: Create speech-enabled apps with the Speech service
+summary: The Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text-to-speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
 abstract: |
-  In this module you will:
-  - Create a Speech Service
-  - View Access Keys and Endpoints
-  - Review Supported Languages
+  In this module, you'll learn how to:
+  - Provision an Azure resource for the Speech service
+  - Use the Speech-to-Text API to implement speech recognition
+  - Use the Text-to-Speech API to implement speech synthesis
+  - Configure audio format and voices
+  - Use Speech Synthesis Markup Language (SSML)
 prerequisites: |
-  * Ability to navigate the Azure portal
-  * Knowledge of C#
-  * Knowledge of JSON file formats
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal
+  - Have experience programming with C# or Python
 iconUrl: /learn/achievements/transcribe-speech-input-text.svg
 levels:
 - intermediate
@@ -32,12 +34,12 @@ products:
 - azure-cognitive-services
 units:
 - learn.wwl.transcribe-speech-input-text.introduction
-- learn.wwl.transcribe-speech-input-text.overview-speech
-- learn.wwl.transcribe-speech-input-text.create-speech-service
-- learn.wwl.transcribe-speech-input-text.view-access-keys-endpoints
-- learn.wwl.transcribe-speech-input-text.exercise-convert-speech-from-audio-file
-- learn.wwl.transcribe-speech-input-text.review-supported-languages
-- learn.wwl.transcribe-speech-input-text.optional-exercise-listen-incoming-data
+- learn.wwl.transcribe-speech-input-text.create-speech-resource
+- learn.wwl.transcribe-speech-input-text.speech-to-text
+- learn.wwl.transcribe-speech-input-text.text-to-speech
+- learn.wwl.transcribe-speech-input-text.audio-format-voices
+- learn.wwl.transcribe-speech-input-text.speech-synthesis-markup
+- learn.wwl.transcribe-speech-input-text.exercise-speech-app
 - learn.wwl.transcribe-speech-input-text.knowledge-check
 - learn.wwl.transcribe-speech-input-text.summary
 badge:

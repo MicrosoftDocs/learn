@@ -1,24 +1,20 @@
 The Azure Toolkit for IntelliJ provides several tools in the Azure Explorer that you can use to manage, configure, and redeploy web apps to an Azure App Service. If your deployment requirements are more complex, you can customize the steps when using the **Deploy to Azure** wizard, which provides a flexible application deployment system.
 
-In this unit, you'll learn how to use these features to start and stop a web app, redeploy it, switch deployment slots, set properties for a web app, and delete it.
+In this unit, you'll learn how to use these features to manage, troubleshoot, switch deployment slots and set properties for a web app.
 
-## How to stop and restart a web app
+## How to manage and troubleshoot web app on Azure
 
-Starting and stopping a web app using Azure Explorer is a straightforward process. 
+There are powerful tools provided to troubleshoot the app deployed from your IDE, including:
+- Log streaming
+- Remote file explorer
+- One click SSH to the app
+- Profiling on the fly
 
-To stop a web app in the **Azure Explorer** window, right-click the web app in the **Web Apps** folder, and then click **Stop**.
+Using these tools from Azure Explorer is straightforward. Open the **Azure Explorer** window, right-click the web app in the **Web Apps** folder, and you will see some useful actions in the menu.
 
-:::image type="content" source="../media/6-stop-web-app.png" alt-text="Screenshot of the Azure Explorer window. The user has selected the Stop command for a web app." loc-scope="third-party":::
+:::image type="content" source="../media/6-streaming-logs-entry.png" alt-text="Screenshot of the Azure Explorer window." loc-scope="third-party":::
 
-The web app will stop accepting new requests and then shut down, and the icon for the web app will change to indicate that it has stopped.
-
-To start a web app, use the **Start** command in the context menu for the web app. Once the app is running, the icon will change back to its original state.
-
-If you need to quickly reset a stalled web app, use the **Restart** command to stop and start the web app in a single step.
-
-## How to redeploy a web app
-
-To redeploy a web app after you've made changes, follow the same procedure that you used to originally deploy the web app; for example: in the **Project Explorer** pane, right-click your web app, select **Azure**, and then click **Publish as Azure Web App**. However, instead of creating a new App Service, select an existing App Service and then click **Deploy**, and the previous version of the web app will be replaced by the new version.
+There are also many frequently used actions like start/stop/restart app in the context menu. If you click **Stop** command, the web app will stop accepting new requests and then shut down, and the icon for the web app will change to indicate that it has stopped. To start a web app, use the **Start** command in the context menu for the web app. Once the app is running, the icon will change back to its original state. If you need to quickly reset a stalled web app, use the **Restart** command to stop and start the web app in a single step.
 
 ## How to use deploy configurations
 
@@ -42,25 +38,3 @@ In IntelliJ IDEA, the **Deploy to Azure** wizard allows you to choose a deployme
 You can use the Azure portal to execute the swap.
 
 ![Screenshot of swapping deployment slots using the Azure portal.](../media/6-swap-slots.png)
-
-## How to add extra actions to your deployment
-
-In the lower part of the **Deploy to Azure** wizard, you can add custom actions for the deployment tool to execute, before the web app is launched. For example:
-
-- **Run External Tool**
-
-    You can specify any executable program on your development computer and pass parameters to it.
-
-- **Launch Web Browser**
-
-    You can use the **Open browser after deployment** checkbox to specify that your default browser will open and display the deployed web app. However, if you want to open another browser or display a different web page, you can use this deployment action.
-
-- **Run Maven Goal**
-
-    In Maven, a project build lifecycle is composed of phases, such as **validate**, **compile**, **test**, and **deploy**. Each of these phases is composed of goals that run in a specific order. If you've created your IntelliJ IDEA project based on a Maven archetype, then the complete default lifecycle will execute before the web app is deployed to Azure, but you can add extra Maven goals by using this deployment option. You could use this option, for example, to add an extra test goal or deploy the web app to a second, backup destination.
-
-- **Run Gradle Task**
-
-    Gradle is an alternative build automation system that you might use instead of Maven lifecycles. You can use this deployment option to run extra Gradle tasks before the web app is launched. 
-
-    :::image type="content" source="../media/6-add-custom-action.png" alt-text="Add custom action." loc-scope="third-party":::

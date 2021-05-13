@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.language.rust-automated-tests
+metadata:
+  title: Write automated tests
+  description: "Learn about the types of testing you can do with Rust."
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write automated tests
+summary: "Learn about the types of testing you can do with Rust."
+abstract:  |
+  In this module, you'll learn:
+  - How to write unit tests.
+  - How to write integration tests.
+  - How to write documentation tests.
+prerequisites: | 
+  - Have your Rust development environment set up.
+  - Know how to create, edit, and run Rust code by using Cargo.
+  - Know how to create functions.
+  - Understand how control flow, specifically `if`, statements work in Rust. 
+iconUrl: /learn/achievements/rust-automated-tests.svg 
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.rust-automated-tests.introduction
+- learn.language.rust-automated-tests.unit-tests
+- learn.language.rust-automated-tests.exercise-unit-tests
+- learn.language.rust-automated-tests.documentation-tests
+- learn.language.rust-automated-tests.exercise-documentation-tests
+- learn.language.rust-automated-tests.integration-tests
+- learn.language.rust-automated-tests.knowledge-check
+- learn.language.rust-automated-tests.summary
+badge:
+  uid: learn.language.rust-automated-tests.badge

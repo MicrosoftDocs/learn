@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.operations-masters
+title: Manage AD DS operations masters
+metadata:
+  title: Manage AD DS operations masters
+  description: "Manage AD DS operations masters"
+  ms.date: 03/02/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-manage-operations-masters.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What tool allows the transfer of the Infrastructure Master operations master role?"
+    choices:
+    - content: "Active Directory Users and Computers"
+      isCorrect: true
+      explanation: "That's correct. You can use Active Directory Users and Computers to transfer all the domain-level masters roles."
+    - content: "Active Directory Domains and Trusts"
+      isCorrect: false
+      explanation: "That's incorrect. You can use Active Directory Domains and Trusts to transfer the Domain Naming operations master role only."
+    - content: "Active Directory Schema"
+      isCorrect: false
+      explanation: "That's incorrect. You can use Active Directory Schema to transfer the Schema operations master role only."

@@ -17,7 +17,7 @@ We'll use these methods in other modules as we find a use for their functionalit
 
 ## Formatting strings by adding whitespace before or after
 
-The `PadLeft()` method will add blank spaces to the left-hand side of the string so that the total number of spaces equals the argument you send it.  In this case, we want to total length of the string to be 12 characters.
+The `PadLeft()` method will add blank spaces to the left-hand side of the string so that the total number of characters equals the argument you send it.  In this case, we want to total length of the string to be 12 characters.
 
 ```csharp-interactive
 string input = "Pad this";

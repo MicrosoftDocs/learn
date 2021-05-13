@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.use-apis-discover-museum-art
+metadata:
+  title: Explore the art world by using RESTful APIs
+  description: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  ms.date: 12/09/2020
+  author: jlooper
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the art world by using RESTful APIs
+summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+abstract:  |
+  In this module, you will:
+  - Learn about RESTful APIs.
+  - Build your own simple API.
+  - Learn various strategies to connect to external APIs.
+  - Learn how to query two different museum APIs.
+prerequisites: | 
+  - An internet-connected browser, like Microsoft Edge.
+  - Node.js, installed locally.
+  - npm, installed locally.
+iconUrl: /learn/achievements/use-apis-discover-museum-art.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- "vs-code"
+units:
+- learn.student-evangelism.use-apis-discover-museum-art.1-introduction
+- learn.student-evangelism.use-apis-discover-museum-art.2-what-is-api
+- learn.student-evangelism.use-apis-discover-museum-art.3-build-local-api
+- learn.student-evangelism.use-apis-discover-museum-art.4-query-met-api
+- learn.student-evangelism.use-apis-discover-museum-art.5-authentication-strategies
+- learn.student-evangelism.use-apis-discover-museum-art.6-query-cooper-hewitt-api
+- learn.student-evangelism.use-apis-discover-museum-art.7-handle-responses
+- learn.student-evangelism.use-apis-discover-museum-art.8-use-libraries
+- learn.student-evangelism.use-apis-discover-museum-art.9-knowledge-check
+- learn.student-evangelism.use-apis-discover-museum-art.10-summary
+badge:
+  uid: learn.student-evangelism.use-apis-discover-museum-art.badge

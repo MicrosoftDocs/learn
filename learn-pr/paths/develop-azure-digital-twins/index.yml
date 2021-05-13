@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.azure.develop-azure-digital-twins
+metadata:
+  title: Develop with Azure Digital Twins
+  description: Azure Digital Twins is the new wave of innovation that helps unlock advanced scenarios in IoT and beyond, enabling you to evolve from connected assets to connected environments. It is used to help you create digital replicas (models) of entire environments. These environments could be buildings, factories, farms, energy networks, railways, stadiums, wearables, smart spaces, hospitals, hotels, schools, stores, warehouses, fleet, and more—even entire cities! By completing the learning path you will have good understanding of how to model any environment, and bring digital twins to life in a scalable and secure manner, connect assets such as IoT devices and existing business systems, use a robust event system to build dynamic business logic and data processing, APIs, SDKs, and integrate with Azure data, analytics, and AI, Time Series Insights services using Event Hubs, Event Grids, Azure Functions and visualize the DTDL model using Digital Twin Explorer to help you track the past and then predict the future.
+  brand: azure
+  ms.date: 12/14/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Develop with Azure Digital Twins
+summary: |
+  Digital Twins is the new wave of innovation that helps unlock advanced scenarios in IoT and beyond, enabling you to evolve from connected assets to connected environments. It is used to help you create digital replicas (models) of entire environments. These environments could be buildings, factories, farms, energy networks, railways, stadiums, and more—even entire cities!
+
+  By completing the learning path you will have good understanding of how to model any environment, and bring digital twins to life in a scalable and secure manner, connect assets such as IoT devices and existing business systems, use a robust event system to build dynamic business logic and data processing, and integrate with Azure data, analytics, and AI services to help you track the past and then predict the future.
+prerequisites: |
+  - Introductory knowledge of the purpose of Azure IoT
+iconUrl: /learn/achievements/develop-azure-digital-twins.svg
+levels:
+- intermediate
+- advanced
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-time-series-insights
+- azure-iot-hub
+- azure-functions
+- azure-event-grid
+- azure-event-hubs
+- azure-digital-twins
+modules:
+- learn.iot.introduction-to-azure-digital-twins
+- learn.iot.build-azure-digital-twins-graph-for-chocolate-factory
+- learn.iot.ingest-data-into-azure-digital-twins
+- learn.iot.output-from-adt-to-downstream-services
+trophy:
+  uid: learn.develop-azure-digital-twins.trophy

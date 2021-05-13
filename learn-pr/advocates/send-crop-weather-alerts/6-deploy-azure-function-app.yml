@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.6-deploy-azure-function-app
-title: Exercise - Deploy an Azure function app
+title: Exercise - Set up a function app in Azure Functions
 metadata:
-  title: Exercise - Deploy an Azure function app
-  description: In this unit, you'll create and deploy your existing application to an Azure function app.
+  title: Exercise - Set up a function app in Azure Functions
+  description: Create and deploy your application to a function app in Azure.
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
-interactive: bash-editor
-durationInMinutes: 10
+interactive: bash
+durationInMinutes: 7
 content: |
   [!include[](includes/6-deploy-azure-function-app.md)]

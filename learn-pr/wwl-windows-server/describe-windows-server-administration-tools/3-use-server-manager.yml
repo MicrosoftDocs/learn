@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-windows-server-administration-tools.use-server-manager
+title: Use Server Manager
+metadata:
+  title: Use Server Manager
+  description: "Use Server Manager"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-server-manager.md)]

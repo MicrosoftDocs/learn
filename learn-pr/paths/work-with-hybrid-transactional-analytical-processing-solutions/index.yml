@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-with-hybrid-transactional-analytical-processing-solutions
+metadata:
+  title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  description: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  ms.date: 12/24/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+summary: |
+  Perform operational analytics against Azure Cosmos DB using the Azure Synapse Link feature within Azure Synapse Analytics.
+iconUrl: /learn/achievements/work-hybrid-transactional-analytical-processing-solutions.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+modules:
+- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics
+trophy:
+  uid: learn.wwl.work-hybrid-transactional-analytical-processing-solutions.trophy

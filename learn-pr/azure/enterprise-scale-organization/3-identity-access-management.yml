@@ -23,12 +23,12 @@ quiz:
       explanation: This feature provides Azure services with an automatically managed identity in Azure AD. You can use the identity to authenticate to any service that supports Azure AD authentication, including Azure Key Vault, without any credentials in your code.​
     - content: By using password-based authentication
       isCorrect: false
-      explanation: Password-based authentication is a static method and not a best practice, since securely storing these credentials creates management overhead.​
+      explanation: Password-based authentication is a static method and not a best practice because securely storing these credentials creates management overhead.​
     - content: Use Azure Key Vault
       isCorrect: false
-      explanation: Key Vault provides storage for your keys and secrets, but it’s not responsible for initiating authentication.
+      explanation: Key Vault provides storage for your keys and secrets, but it's not responsible for initiating authentication.
 
-  - content: It’s a best practice for subscription owners to have write permissions for Microsoft.Authorization also to contributor role permissions.
+  - content: It's a best practice for subscription owners to have write permissions for Microsoft.Authorization and also to have contributor role permissions.
     choices:
     - content: "True"
       isCorrect: false

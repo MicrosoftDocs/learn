@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.7-use-cases-examples
+title: Use cases and examples
+metadata:
+  title: Use cases and examples
+  description: Learn about the context and history of computing in relation to mixed reality and the most common use cases and examples.
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-use-cases-examples.md)]

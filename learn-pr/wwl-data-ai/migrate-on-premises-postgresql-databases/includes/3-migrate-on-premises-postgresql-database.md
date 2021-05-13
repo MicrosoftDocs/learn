@@ -1,6 +1,10 @@
-You create an instance of the Azure Database for PostgreSQL service using the Azure portal. If you need to create a number of instances of this service, you script the process by using the Azure CLI.
+Once a company makes the decision to move to Azure Database for PostgreSQL, the next step is to plan how to migrate on-premises databases and choose the tools to move their data.
 
-### Create an Azure Database for PostgreSQL, Single Server instance using the portal
+Having explored how Azure Database for PostgreSQL supports and scales PostgreSQL on Azure, you now want to consider how you'll migrate your existing on-premises databases.
+
+In this unit, you'll see how to create an instance of the Azure Database for PostgreSQL service using the Azure portal. If you need to create many instances of this service, you can script the process by using the Azure CLI.
+
+### Create an Azure Database for PostgreSQL, single server instance using the portal
 
 In the Azure portal, select the **Create a resource** command in the left menu bar, and search for **Azure Database for PostgreSQL** in the Azure Marketplace.
 
@@ -12,10 +16,10 @@ Click **Create**, and select the version you require—either **Single server** 
 
 On the **Single server** page, enter the details for the service. These details include:
 
-- **Server name**. This must be a unique name between 3 and 63 characters, containing only lowercase letters, numbers, and hyphens.
+- **Server name**. Must be a unique name between 3 and 63 characters, containing only lowercase letters, numbers, and hyphens.
 - **Data source**. If you're creating a new server for migration purposes, select **None**. The **Backup** option enables you to restore a backup taken from another instance of Azure Database for PostgreSQL into this service.
-- **Admin username**. This is the name of a user account that you'll create with administrative privileges. Azure creates some accounts for its own use, while other names are restricted—you can't use **azure_superuser**, **azure_pg_admin**, **admin**, **administrator**, **root**, **guest**, **public**, or any name that starts with **pg_**.
-- **Password**. This must be between 8 and 128 characters. It must contain a mixture of uppercase and lowercase letters, numbers, and non-alphanumeric characters. Azure Database for PostgreSQL currently only supports password authentication; integration with Azure Active Directory is not yet available.
+- **Admin username**. The name of a user account that you'll create with administrative privileges. Azure creates some accounts for its own use. You can't use **azure_superuser**, **azure_pg_admin**, **admin**, **administrator**, **root**, **guest**, **public**, or any name that starts with **pg_**.
+- **Password**. Must be between 8 and 128 characters. It must contain a mixture of uppercase and lowercase letters, numbers, and non-alphanumeric characters.
 - **Version**: Select the version that corresponds to the on-premises database that you're migrating.
 - **Compute + storage**. Select **Configure server** to set the pricing tier and specify the resources that you require for the service. The options were covered in Lesson 1. Remember that, if you select the **General purpose** or **Memory optimized** pricing tiers, you can scale up and down the number of virtual processor cores later. However, you can't reduce the amount of storage—it can only increase after the server has been created.
 

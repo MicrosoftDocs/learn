@@ -6,37 +6,47 @@ metadata:
   description: Knowledge check
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
-content: |
-  [!include[](includes/3-knowledge-check.md)]
+durationInMinutes: 2
 
 quiz:
-  title: Answer the following questions to check your understanding.
+  title: Check your knowledge
   questions:
 
-  - content: 'You can send and receive text messages via which service?'
+  - content: What is a service you can use to send and receive text messages?
     choices:  
-    - content: 'Azure Message Bus'
+    - content: Azure Message Bus
       isCorrect: false
-      explanation: Twilio is the third-party service that can programmatically send and receive text messages.
-    - content: 'Azure Notification Hub'
+      explanation: Incorrect. Azure Message Bus isn't a service that can programmatically send and receive text messages.
+    - content: Azure Notification Hubs
       isCorrect: false
-      explanation: Twilio is the third-party service can programmatically send and receive text messages.
-    - content: 'Twilio'
+      explanation: Incorrect. Azure Notification Hubs isn't a service that can programmatically send and receive text messages.
+    - content: Twilio
       isCorrect: true
       explanation: Correct! The third-party service Twilio can programmatically send and receive text messages.
     
-  - content: 'With Azure Maps, you can retrieve location coordinates via which API endpoint?'
+  - content: Which is an Azure Maps API endpoint you can retrieve location coordinates from?
     choices:
-    - content: 'Search - Get Search Address'
+    - content: Search - Get Search Address
       isCorrect: true
-      explanation: Correct! The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
-    - content: 'Location - Normalize'
+      explanation: Correct! The Search - Get Search Address API endpoint accepts arbitrary locations and returns their coordinates.
+    - content: Location - Normalize
       isCorrect: false
-      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
-    - content: 'Location - Geocode'
+      explanation: Incorrect. Location - Normalize isn't the name of an Azure Maps API endpoint.
+    - content: Location - Geocode
       isCorrect: false
-      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
+      explanation: Incorrect. Location - Geocode isn't the name of an Azure Maps API endpoint.
+
+  - content: Which HTTP request method did you use to connect Twilio to your application?
+    choices:  
+    - content: GET
+      isCorrect: false
+      explanation: Incorrect. You didn't use a GET request when you set up Twilio to connect to your application.
+    - content: HEAD
+      isCorrect: false
+      explanation: Incorrect. You didn't use a HEAD request when you set up Twilio to connect to your application.
+    - content: POST
+      isCorrect: true
+      explanation: Correct! You used a POST request to connect Twilio to your application.

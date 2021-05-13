@@ -19,6 +19,7 @@ summary: |
   - Use GitHub Actions to automatically build your application.
   - Deploy to Microsoft Azure with GitHub Actions.
   - Use GitHub Script to interact with the GitHub API.
+  - Publish automatically and securely your code libraries or Docker images with GitHub Packages.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
@@ -40,5 +41,6 @@ modules:
 - learn.github.github-actions-ci
 - learn.github.github-actions-cd
 - learn.github.automate-github-using-github-script
+- learn.github.github-actions-packages 
 trophy:
   uid: learn.automate-workflow-github-actions.trophy

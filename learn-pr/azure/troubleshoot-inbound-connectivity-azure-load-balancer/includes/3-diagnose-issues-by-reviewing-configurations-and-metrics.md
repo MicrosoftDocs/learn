@@ -1,6 +1,6 @@
 Monitoring the performance of Azure Load Balancer might give an early warning for any possible failures. Azure Monitor provides many important metrics you use to examine trends in the performance of Load Balancer. You can also trigger alerts if one or more virtual machines (VMs) fail health probe requests.
 
-In the example scenario, you monitor the performance of the load-balanced system to ensure the performance meets requirements. If the performance trails off and connections to VMs start to fail, you'll troubleshoot the system to determine the cause and fix the problem. By the end of this unit, you'll be able to:
+In the example scenario, you monitor the performance of the load-balanced system to ensure the performance meets requirements. If the performance trails off, and connections to VMs start to fail, you'll troubleshoot the system to determine the cause and fix the problem. By the end of this unit, you'll be able to:
 
 - Describe the metrics available for measuring the throughput and performance of a load-balanced system.
 - Use the resource health page in the Azure portal to monitor the health of your system.
@@ -12,24 +12,24 @@ With Azure Monitor, you can capture and examine diagnostic logs and performance 
 
 ### Monitor connectivity
 
-You can visualize metrics for Load Balancer by using the **Metrics** page in the Azure portal. From a connectivity troubleshooting perspective, the most important metrics are **Data Path Availability** and **Health Probe Status**.
+You can visualize metrics for Load Balancer by using the **Metrics** pane in the Azure portal. From a connectivity troubleshooting perspective, the most important metrics are **Data Path Availability** and **Health Probe Status**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Metrics page for Azure Load Balancer](../media/3-Metrics.png)
+> ![Screenshot of the Metrics page for Azure Load Balancer.](../media/3-Metrics.png)
 
 Load Balancer continually tests the path's availability to the front-end IP address, through the load-balancing rules and the back-end pool, to the applications running on your VMs. This information is recorded as the **Data Path Availability** metric. Applying the **Avg** metric shows the average availability for a given time interval. This aggregation is a value between 0 (no availability) and 100, where there's at least one successful path available from the front-end IP address to a VM in the back-end pool.
 
 The **Health Probe Status** metric is similar, but it only applies to the health probe for the VMs rather than the complete path through Load Balancer. Again, the **Avg** aggregation for this metric yields a value between 0 (all VMs are unhealthy and failing to respond) and 100, where all VMs are responding to the health probe.
 
-The image shows the chart for average Data Path Availability and average Health Probe Status for a load balancer with two VMs in the back-end pool. One of the machines isn't responding to the health probe. The average Health Probe Status is hovering around the 50 percent mark:
+The following screenshot shows the chart for average Data Path Availability and average Health Probe Status for a load balancer with two VMs in the back-end pool. One of the machines isn't responding to the health probe. The average Health Probe Status is hovering around the 50 percent mark.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Metrics page for Azure Load Balancer showing data captured for the average Health Probe Status and average Data Path Availability metrics. The Health Probe status is at 50%.](../media/3-probe-metrics-unhealthy.png)
+> ![Screenshot of the Metrics page for Azure Load Balancer that shows data for the average Health Probe Status and Data Path Availability. The Health Probe status is at 50%.](../media/3-probe-metrics-unhealthy.png)
 
 Another way to examine these metrics is to use the **Count** aggregation. This approach can yield additional insights into potential problems with your configuration. The following example shows the graphs for the count of the Health Probe Status and Data Path Availability metrics. The graph shows how many successful probes were done over time.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Metrics page for Azure Load Balancer shows data captured for the Health Probe Status and Data Path Availability metrics](../media/3-probe-metrics.png)
+> ![Screenshot of the Metrics page for Azure Load Balancer shows data captured for the Health Probe Status and Data Path Availability metrics.](../media/3-probe-metrics.png)
 
 An interesting point in this chart is that the number of successful Data Path Availability probes has remained within a consistent range. However, the number of successful Health Probe Status checks has spiked momentarily and then dropped to about half the value before the spike occurred.
 
@@ -37,15 +37,15 @@ In the setup used to generate this graph, the back-end pool contained just two V
 
 ### View service health
 
-The **Resource health** page for Load Balancer reports on the general state of your system. You access this page in the portal from Azure Monitor. Select **Service Health**, select **Resource Health**, and then select **Load Balancer** as the resource type.
+The **Resource health** page for Load Balancer reports on the general state of your system. You access this page in the portal from Azure Monitor. Select **Service Health**, then select **Resource Health**, and then select **Load Balancer** as the resource type.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshots showing the Monitor and Service Health pages in the Azure portal](../media/3-monitor.png)
+> ![Screenshots that shows the Monitor and Service Health pages in the Azure portal.](../media/3-monitor.png)
 
 Select your load balancer. You'll see a report that details the health history of your service. You can expand any item in the report to view the details. The following image shows the summary generated when one of the VMs in the back-end pool was taken offline.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Resource health page for Azure Load Balancer showing the report that indicates at least one endpoint is unavailable](../media/3-resource-health.png)
+> ![Screenshot of the Resource health page for Azure Load Balancer showing the report that indicates at least one endpoint is unavailable.](../media/3-resource-health.png)
 
 ### Monitor the workload per VM
 
@@ -54,7 +54,7 @@ The other metrics available for Load Balancer enable you to track the number of 
 The following graph shows the average packet count flowing through Load Balancer while running a test workload of 500 concurrent users for two minutes. The workload was run twice. The first time, the back-end pool contained two VM instances. For the second run, one of the VMs was shut down (simulating a failure).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the average packet count metrics charts for two runs of a test workload](../media/3-average-packet-count.png)
+> ![Screenshot of the average packet count metrics charts for two runs of a test workload.](../media/3-average-packet-count.png)
 
 In this chart, the average packet count per front end doubled when one VM was shut down. This volume of work could overload the remaining VM, which might lead to extended response times and possible timeouts.
 
@@ -87,7 +87,7 @@ Use the following steps to determine the cause of the problem with an unhealthy 
 
 - Sign in to an unhealthy VM to verify that it's up. Check that the VM can respond to basic checks such as *ping*, *rdp*, or *ssh* requests from another VM in the back-end pool.
 - If the VM is up and accessible, verify that the application is running.
-- Run the `netstat -an` command and verify that the ports used by the health probe and application are listed as *LISTENING*.
+- Run the `netstat -an` command, and verify that the ports used by the health probe and application are listed as *LISTENING*.
 
 ### Misconfigurations in Load Balancer
 
@@ -97,7 +97,7 @@ Validate the route through Load Balancer from the front end to the back-end pool
 
 #### Use PsPing
 
-The **PsPing** command tests *ping* connectivity through an endpoint. This command also measures the latency and bandwidth availability to a service. To verify that a route is available from your client to a VM through Load Balancer, use the following command. Replace \<*ip address*\> and \<*port*\> with the IP address and front-end port of the Load Balancer instance.
+The **PsPing** command tests *ping* connectivity through an endpoint. This command also measures the latency and bandwidth availability to a service. To verify that a route is available from your client to a VM through Load Balancer, run the following command. Replace \<*ip address*\> and \<*port*\> with the IP address and front-end port of the Load Balancer instance.
 
 ```CMD
 psping -n 100 -i 0 -q -h <ip address>:<port>
@@ -167,9 +167,9 @@ Approximate trip times in milli-seconds:
 
 #### Use netsh
 
-The *netsh* utility is a general-purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic. Then analyze it by using a tool such as Microsoft Message Analyzer or Wireshark. Use *netsh trace* to examine the network packets sent and received by *psping* when you test connectivity through Load Balancer as follows:
+The *netsh* utility is a general-purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic. Then, analyze it by using a tool such as Microsoft Message Analyzer or Wireshark. Use *netsh trace* to examine the network packets sent and received by *psping* when you test connectivity through Load Balancer as follows:
 
-1. Start a network trace from a command prompt running as Administrator. The following example traces internet client traffic (HTTP requests) to and from the specified IP address. Replace \<*ip address*\> with the address of the Load Balancer instance. The trace data is written to a file named *trace.etl*:
+1. Start a network trace from a command prompt running as Administrator. The following example traces internet client traffic (HTTP requests) to and from the specified IP address. Replace \<*ip address*\> with the address of the Load Balancer instance. The trace data is written to a file named *trace.etl*.
 
     ```CMD
     netsh trace start ipv4.address=<ip address> capture=yes scenario=internetclient tracefile=trace.etl
@@ -197,10 +197,10 @@ The *netsh* utility is a general-purpose network configuration tool. Use the *tr
     TCP.Port==80 or TCP.Port==<nn>
     ```
 
-1. Add the HTTP request source and destination as fields to the trace output. The result should look similar to the following image. In this example, 192.168.1.3 is the address of the PC running the *psping* command, and 51.105.19.142 is the front-end IP address of Load Balancer:
+1. Add the HTTP request source and destination as fields to the trace output. The result should look similar to the following image. In this example, 192.168.1.3 is the address of the PC running the *psping* command, and 51.105.19.142 is the front-end IP address of Load Balancer.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot Message Analyzer showing the trace messages generated by running psping](../media/3-message-analyzer.png)
+    > ![Screenshot Message Analyzer showing the trace messages generated by running psping.](../media/3-message-analyzer.png)
 
 1. Examine the trace messages:
 

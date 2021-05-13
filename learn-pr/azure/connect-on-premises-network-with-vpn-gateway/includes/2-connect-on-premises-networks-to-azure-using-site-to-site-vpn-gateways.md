@@ -52,7 +52,7 @@ The capabilities of your VPN gateway are determined by the SKU or size that you 
 | VpnGw2/Az | Maximum: 30                       | 1 Gbps                         | Supported     |
 | VpnGw3/Az | Maximum: 30                       | 1.25 Gbps                      | Supported     |
 
-Basic VPN Gateway should only be used for Dev/Test workloads.  In addition, it is unsupported to migrate from Basic to the VpnGW1/2/3/Az skus at a later time without having to remove the gateway and redeploy.
+Basic VPN Gateway should only be used for Dev/Test workloads.  In addition, it is unsupported to migrate from Basic to any VpnGw#/Az  sku at a later time without having to remove the gateway and redeploy.
 
 ## Deploying VPN gateways
 

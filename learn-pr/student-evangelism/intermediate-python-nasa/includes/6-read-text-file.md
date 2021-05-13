@@ -2,7 +2,7 @@ In many applications of Python, you'll need to use data from an external source.
 
 ## Setting up data
 
-The first step to reading data from a file is to get a file and save it in a location that we can tell Python to access later. First, find out where your Jupyter Notebook file is saved. This may be in a Python folder or even on your desktop. Next, you'll need to save [this text.txt file](../resources/text.txt). It's important that you save this file in the same location as your Jupyter Notebook file. This will make is easy to tell Python where to find the data. Your folder should look similar to the one below.
+The first step to reading data from a file is to get a file and save it in a location that we can tell Python to access later. First, find out where your Jupyter Notebook file is saved. This may be in a Python folder or even on your desktop. Next, you'll need to save [this text.txt file](../resources/text.txt?azure-portal=true). It's important that you save this file in the same location as your Jupyter Notebook file. This will make is easy to tell Python where to find the data. Your folder should look similar to the one below.
 
 :::image type="content" source="../media/save-text-file.png" alt-text="Screenshot that shows file structure.":::
 

@@ -109,7 +109,7 @@ The role db_denydatareader can be used for users who need to be prevented from r
 
 The role db_denydatawriter can be used for users who need to be prevented from writing data to any object in the database, when those users have been granted rights through other roles or directly.
 
-Users who need administrative access to the database can be made members of the role db_owner. Members of the db_owner role can perform any action within the database and they cannot be blocked by placing the members in any other database roles or by denying access to objects. Membership in this database role should be limited to only trusted users.
+Users who need administrative access to the database can be made members of the role db_owner. Members of the db_owner role can perform any action within the database by default. However, unlike the actual database owner, who has the user name *dbo*, users in the db_owner role can be blocked from accessing data by placing them in other database roles, such as db_denydatareader, or by denying them access to objects. Membership in this database role should be limited to only trusted users.
 
 Users who need to be able to grant access to other users within the database can be made members of the role db_securityadmin. Members of this role are not specifically granted access to the data within the database; however members of this role can grant themselves access to the tables within the database. Membership in this database role should be limited to only trusted users.
 
@@ -117,8 +117,8 @@ All users within a database are automatically members of the public role. By def
 
 The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice. 
 
-    >[!NOTE]
-    >Users in roles like db_owner can always see all of the data in the database. Applications should take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
+ > [!NOTE] 
+ >By default, users in roles like db_owner can always see all of the data in the database. Applications should take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
 
 Azure SQL Database has two additional roles that are defined in the master database of Azure SQL server.
 

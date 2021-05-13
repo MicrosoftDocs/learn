@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.7-lifecycle-httpclient
 metadata:
-  title: The life cycle of the HTTP request logic 
-  description: Walk through the life cycle of the HTTP request logic using a typed HTTPClient service architecture.
-  ms.date: 07/31/2019
+  title: Review the HTTP request logic lifecycle
+  description: Examine the lifecycle of the HTTP request logic using a typed HTTP client service architecture.
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
-title: The life cycle of the HTTP request logic 
+title: Review the HTTP request logic lifecycle
 azureSandbox: true
 interactive: bash
 durationInMinutes: 4

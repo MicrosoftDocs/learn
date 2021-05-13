@@ -9,7 +9,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/2-connect-on-premises-networks-to-azure-using-site-to-site-vpn-gateways.md)]

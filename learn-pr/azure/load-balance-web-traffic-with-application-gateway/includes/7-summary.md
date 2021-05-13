@@ -2,8 +2,6 @@ You've learned about the load balancing and application routing capabilities of 
 
 You can now take advantage of the advanced routing and load-balancing capabilities that Application Gateway provides in your own environment.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
 Visit the following documentation to learn more about Application Gateway.

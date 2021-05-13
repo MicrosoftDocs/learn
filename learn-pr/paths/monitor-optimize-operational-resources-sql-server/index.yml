@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-optimize-operational-resources-sql-server
 metadata:
   title: Monitor and optimize operational resources in SQL Server
   description: Configure hardware and server resources for optimum performance after establishing a baseline. Identify sources of performance problems. Troubleshoot using Azure SQL Intelligent Insights.
-  ms.date: 08/03/2020
+  ms.date: 10/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Basic understanding of structure and usage of SQL Server indexes
 summary: |
   Configure hardware and server resources for optimum performance after establishing a baseline. Identify sources of performance problems. Troubleshoot using Azure SQL Intelligent Insights.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/monitor-and-optimize-operational-resources-in-sql-server.svg
 levels:
 - intermediate
 roles:

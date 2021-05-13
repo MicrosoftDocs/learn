@@ -25,19 +25,19 @@ Otherwise, it's recommended you enable only server-level blob auditing and leave
 
 Let's look at the steps you take to set up auditing on your system.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the search bar at the top of the portal, search for **serverNNNN** (replacing `NNNN` with the number from your server name), then select the server in the portal.
 
-1. In the left menu, in the **Security** section, select the **Auditing** option.
+1. In the left menu pane, under **Security**, select **Auditing**.
 
-1. Auditing is turned off by default. To enable it on your database server, tap the **ON** button.
+1. Auditing is turned off by default. To enable it on your database server, toggle **ON**.
 
-1. Once the ON button is selected, select the **Storage** checkbox, then click **Storage details** to define the storage account.
+1. After the ON button is selected, select the **Storage** checkbox, and then select **Storage details** to define the storage account.
 
-1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
+1. In the **Storage settings** pane, you can select an existing storage account, or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Select **Storage account**, which will then open up the **Create storage account** pane. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults, and select **OK**. Back in the **Storage settings** pane, leave the defaults, and select **OK**.
 
-1. Click the **Save** button in the toolbar to save your changes and enable auditing on your database server.
+1. Select **Save** in the toolbar to save your changes and enable auditing on your database server.
 
 Now let's generate some audit records and take a look at what you can expect.
 
@@ -54,17 +54,17 @@ Now let's generate some audit records and take a look at what you can expect.
     GO
     ```
 
-1. Back in the portal on your SQL server, select **SQL databases** in the left menu and select the _marketplace_ database.
+1. Back in the portal on your SQL server, select **SQL databases** in the left menu pane, and select the _marketplace_ database.
 
-1. In the left menu on your _marketplace_ database, in the **Security** section select **Auditing**.
+1. In the left menu pane on your _marketplace_ database, under **Security**, select **Auditing**.
 
-1. Since we enabled auditing at the server-level, you should see that it's enabled here. Select **View audit logs** in the top menu bar to view the logs.
+1. Because we enabled auditing at the server-level, you should see that it's enabled here. Select **View audit logs** in the top menu bar to view the logs.
 
 1. You should see one or more audit records with **PRINCIPAL NAME** of _ApplicationUser_ and **EVENT TYPE** of **BATCH COMPLETED**. One of them should contain the details of the query you just executed. You might also see other events such as authentication failures and success. Select any record to see the full details of the event.
 
 ![An example showing an event in the audit log](../media/5-audit-log.png)
 
-These actions configure the audits at the database server level and will apply to all databases on the server. You can also configure auditing at a database level.
+These actions configure the audits at the database server level, and will apply to all databases on the server. You can also configure auditing at a database level.
 
 Let's take a look at another feature that leverages these logs to increase the security of your database.
 
@@ -78,17 +78,17 @@ Advanced Data Security (ADS) provides a set of advanced SQL security capabilitie
 
 ### Setup and configuration
 
-Let's enable Advanced Data Security on our database. Advanced Data Security is a server-level setting, so we'll start there.
+Let's enable ADS on our database. ADS is a server-level setting, so we'll start there.
 
-1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, then select the server.
+1. Back in the portal, go to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, and then select the server.
 
-1. In the left menu, in the **Security** section, select the **Advanced Data Security** option.
+1. In the left menu pane, under **Security**, select **Security Center**.
 
-1. Click the **ON** button to enable Advanced Data Security.
+1. Select **ON** to enable Azure Defender for SQL.
 
-1. In the **Vulnerability Assessment Settings** box, will see a default storage account that will be used to store the results of scans.
+1. In the **Vulnerability Assessment Settings** box, a default storage account appears that will be used to store the results of scans.
 
-1. You can also turn on **periodic recurring scans** to configure Vulnerability Assessment to run automatic scans once per week. A scan result summary is sent to the email address(es) you provide. In this case, we'll leave this **OFF**. Go ahead and click **Save** at the top to save your settings and enable Vulnerability Assessment.
+1. You can also turn on **periodic recurring scans** to configure Vulnerability Assessment to run automatic scans once per week. A scan result summary is sent to the email address(es) you provide. In this case, we'll leave this **OFF**. Select **Save** at the top to save your settings, and enable Vulnerability Assessment.
 
 1. You can optionally define where notification emails will be delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators.
 
@@ -99,49 +99,49 @@ Let's enable Advanced Data Security on our database. Advanced Data Security is a
     - SQL injection vulnerability reports where the possibility of a SQL injection is likely.
     - Anomalous client login looks at logins that are irregular and could be cause for concern, such as a potential attacker gaining access.
 
-1. Click the **Save** button to apply the changes and enable Advanced Data Security on your server.
+1. Select **Save** to apply the changes and enable Advanced Data Security on your server.
 
-Once Advanced Data Security is enabled, you'll initiate vulnerability scans and view details and results at a database level.
+After ADS is enabled, you'll initiate vulnerability scans and view details and results at a database level.
 
 You'll receive email notifications as vulnerabilities are detected. The email will outline what occurred and the actions to take.
 
 ![An example notification warning from Advanced Threat Protection](../media/5-email-with-warning.png)
 
-### Data Discovery & Classification
+### Data discovery & classification
 
-1. Navigate to your marketplace database. In the search bar at the top of the portal, search for marketplace, then select the database in the portal.
+1. Go to your marketplace database. In the search bar at the top of the portal, search for marketplace, and then select the database in the portal.
 
-1. In the **Security** section, select **Advanced Data Security**.
+1. In the left menu pane, under **Security**, select **Advanced Data Security**.
 
-1. Click on the **Data Discovery & Classification** panel.
+1. Select the **Data Discovery & Classification** pane.
 
-The Data Discovery & Classification panel shows columns within your tables that need to be protected. Some of the columns may have sensitive information or may be considered classified in different countries or regions.
+The Data Discovery & Classification pane shows columns within your tables that need to be protected. Some of the columns may have sensitive information or may be considered classified in different countries or regions.
 
 ![Data Discovery & Classification](../media/5-data-discovery-and-classification.png)
 
-A message will be displayed if any columns need protection configured. This message will be formatted like *"We have found 10 columns with classification recommendations"*. You can click on the text to view the recommendations.
+A message appears if any columns need protection configured. This message will be formatted like *"We have found 10 columns with classification recommendations"*. You can select the text to view the recommendations.
 
-Select the columns that you want to classify by clicking the checkmark next to the column, or select the checkbox to the left of the schema header. Select the Accept selected recommendations options to apply the classification recommendations.
+Select the columns that you want to classify by selecting the checkmark next to the column, or select the checkbox to the left of the schema header. Select the Accept selected recommendations options to apply the classification recommendations.
 
-Next, you'll edit the columns and then define the information type and the sensitivity label for the database. Click on the Save button to save the changes.
+Next, you'll edit the columns and then define the information type and the sensitivity label for the database. Select **Save** to save the changes.
 
 No active recommendations should be listed once you've managed the recommendations successfully.
 
-### Vulnerability Assessment
+### Vulnerability assessment
 
-Click on the **Vulnerability Assessment** panel.
+Select the **Vulnerability Assessment** pane.
 
 ![Vulnerability Assessment Dashboard](../media/5-vulnerability-assessment-dashboard.png)
 
 The Vulnerability Assessment lists configuration issues on your database and the associated risk. For example, in the image above, you can see the server-level firewall needs to be set up.
 
-Click on the Vulnerability Assessment panel to review a full list of vulnerabilities. From here, you can click on each individual vulnerability.
+Select the Vulnerability Assessment pane to review a full list of vulnerabilities. From here, you can select each individual vulnerability.
 
-On the vulnerability page you will see the details such as the risk level, which database it applies to, a description of the vulnerability, and the recommended remediation to fix the issue. Apply the remediation to fix the issue or issues. Make sure to address all the vulnerabilities.
+On the vulnerability pane, you will see the details, such as the risk level, which database it applies to, a description of the vulnerability, and the recommended remediation to fix the issue. Apply the remediation to fix the issue or issues. Make sure to address all the vulnerabilities.
 
-### Threat Detection
+### Threat detection
 
-Click on the **Threat Detection** panel.
+Select the **Threat Detection** pane.
 
 This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
 

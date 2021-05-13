@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-db-offline
-title: Migrate SQL Server to Azure SQL DB offline
+title: Migrate SQL Server to Azure SQL Database offline
 metadata:
-  title: Migrate SQL Server to Azure SQL DB offline
-  description: "Migrate SQL Server to Azure SQL DB offline"
-  ms.date: 03/31/2020
+  title: Migrate SQL Server to Azure SQL Database offline
+  description: "Migrate SQL Server to Azure SQL Database offline"
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-migrate-sql-server-azure-sql-db-offline.md)]
-quiz:
-  title: "Knowledge Check"
-  questions:
-  - content: "Which tool would be the best to find compatibility issues between the on-premises SQL Server and Azure SQL Database managed instance?"
-    choices:
-    - content: "Azure Migrate Service"
-      isCorrect: false
-      explanation: "That's incorrect. Azure Database Migration Service does not generate assessment reports."
-    - content: "Data Migration Assistant"
-      isCorrect: true
-      explanation: "That's correct. The Data Migration Assistant is the best tool for detecting any compatibility issues between the on-premises SQL Server and Azure SQL Database managed instance"
-    - content: "Microsoft Planning and Assessment"
-      isCorrect: false
-      explanation: "That's incorrect. Microsoft Assessment and Planning Toolkit assesses your current IT infrastructure."
-  - content: "What type of file can be used to import a database into Azure SQL Database?"
-    choices:
-    - content: "A BACPAC file"
-      isCorrect: true
-      explanation: "That's correct. You can import a SQL Server database into an Azure SQL Database using a BACPAC file."
-    - content: "A ZIP file"
-      isCorrect: false
-      explanation: "That's incorrect. You cannot import a SQL Server database into an Azure SQL Database using a ZIP file."
-    - content: "A TAR file"
-      isCorrect: false
-      explanation: "That's incorrect. You cannot import a SQL Server database into an Azure SQL Database using a TAR file."

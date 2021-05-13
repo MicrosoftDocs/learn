@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.explain-htap-scenarios-context-of-synapse-link
+title: Explain HTAP scenarios in the context of Synapse Link
+metadata:
+  title: Explain HTAP scenarios in the context of Synapse Link
+  description: "Explain HTAP scenarios in the context of Synapse Link"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-explain-htap-scenarios-context-of-synapse-link.md)]

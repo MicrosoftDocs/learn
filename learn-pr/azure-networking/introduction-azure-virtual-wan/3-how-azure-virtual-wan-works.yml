@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-virtual-wan.3-how-azure-virtual-wan-works
+title: How Azure Virtual WAN works
+metadata:
+  title: How Azure Virtual WAN works
+  description: Here we dive into the components and features of Azure Virtual WAN
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-how-azure-virtual-wan-works.md)]

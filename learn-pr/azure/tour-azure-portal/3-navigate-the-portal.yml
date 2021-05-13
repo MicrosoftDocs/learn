@@ -6,10 +6,9 @@ metadata:
   description: Learn how to work with panes in the Azure portal.
   ms.date: 09/24/2018
   author: cwatson-cat
-  ms.author: scwatson
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-navigate-the-portal.md)]

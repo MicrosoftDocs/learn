@@ -1,6 +1,6 @@
 Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then, you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
@@ -17,9 +17,9 @@ You can install MicroK8s on Linux, Windows, and macOS. However, installation ins
 
 ### Install MicroK8s on Linux
 
-The Linux installation of MicroK8s is the installation option that has the lowest number of steps. Switch to a terminal window and run the commands in the following instructions:
+The Linux installation of MicroK8s is the installation option that has the lowest number of steps. Switch to a terminal window, and run the commands in the following instructions:
 
-1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -40,25 +40,25 @@ You're now ready to install add-ons on the cluster.
 
 ### Install MicroK8s on Windows
 
-You use Multipass to run MicroK8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
+To run MicroK8s on Windows, use Multipass. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
 1. Download and install the latest release of Multipass for Windows from [GitHub](https://github.com/canonical/multipass/releases?azure-portal=true).
 
 1. In a command console, run the Multipass launch command to configure and run the microk8s-vm image. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
-    ```cmd
+    ```console
     multipass launch --name microk8s-vm --mem 4G --disk 40G
     ```
 
-1. After you receive the launch confirmation for microk8s-vm, you can access the VM instance by using the `multipass shell microk8s-vm` command.
+1. After you receive the launch confirmation for microk8s-vm, to access the VM instance, run the `multipass shell microk8s-vm` command.
 
-    ```cmd
+    ```console
     multipass shell microk8s-vm
     ```
 
     At this point, you can access the Ubuntu VM that will host your cluster and install MicroK8s.
 
-1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -79,29 +79,29 @@ You're now ready to install add-ons on the cluster.
 
 ### Install MicroK8s on macOS
 
-You use Multipass to run MicroK8s on macOS. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
+To run MicroK8s on macOS, use Multipass. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
-1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or use Homebrew to install Multipass with the `brew cask install multipass` command.
+1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or to install Multipass with the `brew cask install multipass` command, use Homebrew.
 
     ```bash
-    brew cask install multipass
+    brew install --cask multipass
     ```
 
 1. In a command console, run the multipass launch command to configure and run the microk8s-vm image. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
-    ```cmd
+    ```console
     multipass launch --name microk8s-vm --mem 4G --disk 40G
     ```
 
-1. After you receive the launch confirmation for microk8s-vm, you can enter the VM instance by using the `multipass shell microk8s-vm` command.
+1. After you receive the launch confirmation for microk8s-vm, to enter the VM instance, run the `multipass shell microk8s-vm` command.
 
-    ```cmd
+    ```console
     multipass shell microk8s-vm
     ```
 
-    At this point, you can access the Ubuntu VM that will host your cluster. You still have to install MicroK8s. Let's do that now.
+    At this point, you can access the Ubuntu VM that will host your cluster. You still have to install MicroK8s. Follow these steps.
 
-1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -120,7 +120,7 @@ You're now ready to install add-ons on the cluster.
 
 ## Prepare the cluster
 
-You can use the status command in MicroK8s to view the status of the installed add-ons on your cluster. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
+To view the status of the installed add-ons on your cluster, run the status command in MicroK8s. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
 
 1. To check the status of the installation, run the `microk8s.status --wait-ready` command.
 
@@ -155,25 +155,25 @@ You can use the status command in MicroK8s to view the status of the installed a
     storage: disabled
     ```
 
-1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here is the purpose of each add-on.
+1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here's the purpose of each add-on.
 
     |||
     | --- | --- |
     | **DNS** | Deploys the `coreDNS` service.|
     | **Dashboard** | Deploys the `kubernetes-dashboard` service and several other services that support its functionality. It's a general-purpose, web-based UI for Kubernetes clusters.|
-    | **Registry** | Deploys a private registry and several services that support its functionality. You can use this registry to store private containers.|
+    | **Registry** | Deploys a private registry and several services that support its functionality. To store private containers, use this registry.|
 
-    Install the add-ons by running the following command.
+    To install the add-ons, run the following command.
 
     ```bash
     sudo microk8s.enable dns dashboard registry
     ```
 
-You're now ready to access your cluster by using `kubectl`.
+You're now ready to access your cluster by running `kubectl`.
 
 ## Explore the Kubernetes cluster
 
-MicroK8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` allows you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality.
+MicroK8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` enables you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality.
 
 1. Run the `snap alias` command to alias `microk8s.kubectl` to `kubectl`. This step simplifies usage.
 
@@ -181,7 +181,7 @@ MicroK8s provides a version of `kubectl` that you can use to interact with your 
     sudo snap alias microk8s.kubectl kubectl
     ```
 
-    You'll see the following output when the command finishes successfully.
+    The following output appears when the command finishes successfully.
 
     ```output
     Added:
@@ -194,7 +194,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
 
 1. Check the nodes that are running in your cluster. 
 
-    You know that MicroK8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. You can use the `kubectl get` command to retrieve information about all the resources in your cluster.
+    You know that MicroK8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. To retrieve information about all the resources in your cluster, run the `kubectl get` command.
 
     ```bash
     sudo kubectl get nodes
@@ -207,7 +207,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     microk8s-vm   Ready    <none>   35m   v1.17.3
     ```
 
-    You can get more information for the specific resource that's requested. For example, let's assume that you need to find the IP address of the node. You use the `-o wide` parameter to fetch extra information from the API server.
+    You can get more information for the specific resource that's requested. For example, let's assume that you need to find the IP address of the node. To fetch extra information from the API server, run the `-o wide` parameter.
 
     ```bash
     sudo kubectl get nodes -o wide
@@ -220,7 +220,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     microk8s-vm   Ready    <none>   36m   v1.17.3   192.168.56.132   <none>        Ubuntu 18.04.4 LTS   4.15.0-88-generic   containerd://1.2.5
     ```
 
-1. The next step is to explore the services running on your cluster. As with nodes, you can use the `kubectl get` command to find information about the services running on the cluster.
+1. The next step is to explore the services running on your cluster. As with nodes, to find information about the services running on the cluster, run the `kubectl get` command.
 
     ```bash
     sudo kubectl get services -o wide
@@ -233,15 +233,15 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     kubernetes   ClusterIP   10.152.183.1   <none>        443/TCP   37m   <none>
     ```
 
-    The reason for the single service listing is that Kubernetes uses a concept called namespaces. You can use namespaces to logically divide a cluster into multiple virtual clusters. 
-    
-    Use the `--all-namespaces` parameter to fetch all services in all namespaces.
+    The reason for the single service listing is that Kubernetes uses a concept called *namespaces*. To logically divide a cluster into multiple virtual clusters, use namespaces.
+
+    To fetch all services in all namespaces, pass the `--all-namespaces` parameter.
 
     ```bash
     sudo kubectl get services -o wide --all-namespaces
     ```
 
-    The result will be similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. You'll also see the supporting services that were installed alongside some of the add-ons.
+    The result will be similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here, you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. You'll also see the supporting services that were installed alongside some of the add-ons.
 
     ```output
     NAMESPACE            NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE   SELECTOR
@@ -261,11 +261,11 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
 
 You want to schedule a web server on the cluster to serve a website to your customers. You can choose from several options. For this example, you'll use NGINX.
 
-Recall from earlier that you can use pod manifest files to describe your pods, replica sets, and deployments to define workloads. Because you haven't covered these files in detail, you'll use `kubectl` to directly pass the information to the API server.
+Recall from earlier that you can use pod manifest files to describe your pods, replica sets, and deployments to define workloads. Because you haven't covered these files in detail, to directly pass the information to the API server, you'll use `kubectl`.
 
-Even though the use of `kubectl` is handy, using manifest files is a best practice. Manifest files allow you to roll forward or roll back deployments with ease in your cluster. These files also help document the configuration of a cluster.
+Even though the use of `kubectl` is handy, using manifest files is a best practice. Manifest files enable you to roll forward or roll back deployments with ease in your cluster. These files also help document the configuration of a cluster.
 
-1. Use the `kubectl create deployment` command to create your NGINX deployment. Specify the name of the deployment and the container image to create a single instance of the pod.
+1. To create your NGINX deployment, run the `kubectl create deployment` command. Specify the name of the deployment and the container image to create a single instance of the pod.
 
     ```bash
     sudo kubectl create deployment nginx --image=nginx
@@ -277,7 +277,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     deployment.apps/nginx created
     ```
 
-1. Use `kubectl get deployments` to fetch the information about your deployment.
+1. To fetch the information about your deployment, run `kubectl get deployments`.
 
     ```bash
     sudo kubectl get deployments
@@ -290,7 +290,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     nginx   1/1     1            1           18s
     ```
 
-1. The deployment created a pod. Use the `kubectl get pods` command to fetch info about your cluster's pods.
+1. The deployment created a pod. To fetch info about your cluster's pods, run the `kubectl get pods` command.
 
     ```bash
     sudo kubectl get pods
@@ -301,27 +301,26 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE
     nginx-86c57db685-dj6lz   1/1     Running   0          33s
-    ubuntu@microk8s-vm:~$
     ```
 
 ### Test the website installation
 
 Test the NGINX installation by connecting to the web server through the pod's IP address.
 
-1.  Use the  `-o wide` parameter to find the address of the pod.
+1. To find the address of the pod, pass the `-o wide` parameter.
 
     ```bash
     sudo kubectl get pods -o wide
     ```
 
-    The result will be similar to the following example. Notice that the command returns both the IP address of the node and the node name on which the workload is scheduled.
+    The result will be similar to the following example. Notice that the command returns both the IP address of the node, and the node name on which the workload is scheduled.
 
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE     IP           NODE          NOMINATED NODE   READINESS GATES
     nginx-86c57db685-dj6lz   1/1     Running   0          4m17s   10.1.83.10   microk8s-vm   <none>           <none>
     ```
 
-1. Use `wget` to access the website.
+1. To access the website, run `wget`.
 
     ```bash
     wget 10.1.83.10
@@ -345,9 +344,9 @@ Test the NGINX installation by connecting to the web server through the pod's IP
 
 Assume that you suddenly see an increase in users who access your website, and the website starts failing because of the load. You can deploy more instances of the site in your cluster and split the load across the instances.
 
-You can use the `kubectl scale` command to scale the number of replicas in your deployment. You specify the number of replicas you need and the name of the deployment.
+To scale the number of replicas in your deployment, run the `kubectl scale` command. You specify the number of replicas you need and the name of the deployment.
 
-1. Run the `kubectl scale` command to scale the total of NGINX pods to three.
+1. To scale the total of NGINX pods to three, run the `kubectl scale` command.
 
     ```bash
     sudo kubectl scale --replicas=3 deployments/nginx
@@ -356,13 +355,12 @@ You can use the `kubectl scale` command to scale the number of replicas in your 
     The result will be similar to the following example.
 
     ```output
-    sudo kubectl scale --replicas=3 deployments/nginx
     deployment.apps/nginx scaled
     ```
 
-    The scale command allows you to scale the instance count up or down.
+    The scale command enables you to scale the instance count up or down.
 
-1. Check the number of running pods by using the `kubectl get` command, and again pass the `-o wide` parameter.
+1. To check the number of running pods, run the `kubectl get` command, and again pass the `-o wide` parameter.
 
     ```bash
     sudo kubectl get pods -o wide
@@ -382,37 +380,37 @@ You would need to apply several additional configurations to the cluster to effe
 
 ## Uninstall MicroK8s
 
-You can remove everything you've deployed so far, and even the VM, to recover space on your development machine. Keep in mind that this procedure is optional.
+To recover space on your development machine, you can remove everything you've deployed so far, even the VM. Keep in mind that this procedure is optional.
 
-1. Remove the add-ons from the cluster by running the `microk8s.disable` command and specifying the add-ons to remove.
+1. To remove the add-ons from the cluster, run the `microk8s.disable` command, and specify the add-ons to remove.
 
     ```bash
     sudo microk8s.disable dashboard dns registry
     ```
 
-1. Remove MicroK8s from the VM by running the `snap remove` command.
+1. To remove MicroK8s from the VM, run the `snap remove` command.
 
     ```bash
     sudo snap remove microk8s
     ```
 
-There are a few additional steps to take on Windows and macOS if you want to remove the Multipass VM manager from your machine.
+If you want to remove the Multipass VM manager from your machine, there are a few additional steps to take on Windows and macOS.
 
-1. Exit the VM by running the `exit` command.
+1. To exit the VM, run the `exit` command.
 
     ```bash
     exit
     ```
 
-1. Stop the VM by running the `multipass stop` command and specifying the VM's name.
+1. To stop the VM, run the `multipass stop` command, and specify the VM's name.
 
     ```bash
     multipass stop microk8s-vm
     ```
 
-1. Delete and purge the VM instance by running `multipass delete` and then `multipass purge`.
+1. To delete and purge the VM instance, run `multipass delete`, and then run `multipass purge`.
 
-    ```cmd
+    ```console
     multipass delete microk8s-vm
     multipass purge
     ```

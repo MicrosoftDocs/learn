@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.use-qsharp-libraries.2-libraries-overview
+title: Q# libraries
+metadata:
+  title: Q# libraries
+  description: Describes what Q# libraries are, how they're distributed, and how to add them to specific Q# projects.
+  ms.date: 09/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-libraries-overview.md)]

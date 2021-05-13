@@ -110,7 +110,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     ```azurecli
     az network nsg list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query [].name \
+      --query '[].name' \
       --output tsv
     ```
 
@@ -173,7 +173,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --name allow-http \
       --protocol tcp \
       --priority 100 \
-      --destination-port-range 80 \
+      --destination-port-ranges 80 \
       --access Allow
     ```
 

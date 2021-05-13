@@ -2,11 +2,11 @@ You can use API Management policies to control the behavior of a deployed API wi
 
 In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else it is possible to achieve with policies.
 
-First let's look at what you can use policies to do.
+First, let's look at what you can use policies to do.
 
 ## What are policies?
 
-In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API is fixed by the developers who write the code, but administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
+In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API are designed by the developers who write the code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
 
 Policies are formed of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
@@ -41,7 +41,7 @@ In the policy XML, there is a separate tag for each of these execution times:
 </policies>
 ```
 
-In this example, you can see that the policy checks in-bound requests for a header named **Authorization**. If such a header is not present, the policy displays an error message.
+In this example, you can see that the policy checks inbound requests for a header named **Authorization**. If such a header is not present, the policy displays an error message.
 
 This policy also translates any out-bound responses in JSON format into XML.
 
@@ -67,13 +67,13 @@ To create policy, you can manually edit the XML in the policy editor. Alternativ
 
 ### The product policy scope
 
-In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied at the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
+In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
 
 ![Product Scope](../media/2-products-scope.png)
 
 ### The API policy scope
 
-Policies applied at the API scope affect only a single API. To set a policy at the API scope, in the API Management home page, click **APIs** and then click the API you want to manage. Then click the **All operations** option:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, click **APIs** and then click the API you want to manage. Then click the **All operations** option:
 
 ![API Scope](../media/2-api-scope.png)
 
@@ -118,13 +118,13 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 Several policies enable you to control authentication:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember it should be protected with SSL encryption, otherwise a malicious attack can intercept the credentials as they cross the network.
+You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember it should be protected with SSL encryption otherwise a malicious attack can intercept the credentials as they cross the network.
 
 Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
-### Cross domain policies
+### Cross-domain policies
 
-Cross domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations they can be desirable and API Management policies enable you to permit them in a secure manner:
+Cross-domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations, they can be desirable and API Management policies enable you to permit them securely:
 
 Use the **Allow cross-domain calls** policy to permit calls from Adobe Flash and Silverlight. If your API or client apps rely on Cross-Origin Resource Sharing (CORS), use the **CORS** policy to permit them.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.7-define-static-properties
+title: Define static properties
+metadata:
+  title: Define static properties
+  description: Learn about the difference between instance properties and static properties, and apply the static keyword to a property.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-define-static-properties.md)]

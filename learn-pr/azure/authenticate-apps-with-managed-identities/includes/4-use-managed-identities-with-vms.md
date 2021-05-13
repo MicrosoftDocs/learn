@@ -1,4 +1,4 @@
-You can add managed identities to virtual machines in Azure. You decide to run your stock-tracking application inside a VM that has an assigned managed identity. This setup will allow the app to use an Azure key vault to authenticate without having to store a username and password in code.
+You can add managed identities to virtual machines (VMs) in Azure. You decide to run your stock-tracking application inside a VM that has an assigned managed identity. This setup will allow the app to use an Azure key vault to authenticate without having to store a username and password in code.
 
 Now that your company has migrated your VM from on-premises to Azure, you can remove the hard-coded authentication details from the application code. You want to use the more secure managed identity token for access to Azure resources.
 
@@ -8,9 +8,9 @@ In this unit, you'll learn how identity is managed within Azure VMs. You'll also
 
 In a VM, use managed identity to access multiple Azure resources without having to specify additional credentials in the source code. Managed identities allow for automatic authentication in the background. Your application remains as easy to use and as secure as possible.
 
-You can assign a managed identity to a VM during its build time. Or you can assign it to an existing VM by using the portal, the Azure CLI, or PowerShell script.
+You can assign a managed identity to a VM during its build time. Or, you can assign it to an existing VM by using the portal, the Azure CLI, or PowerShell script.
 
-In the previous unit, you learned about a *system-assigned managed identity* and a *user-assigned managed identity*. You can create both types of identity by using an Azure VM. Configure them in Azure Resource Manager. 
+In the previous unit, you learned about a *system-assigned managed identity* and a *user-assigned managed identity*. You can create both types of identity by using an Azure VM. Configure them in Azure Resource Manager.
 
 Here's the process:
 
@@ -29,22 +29,22 @@ Use RBAC to control access within Azure. RBAC is an authorization system that's 
 
 Permissions are formed by role-based access. Role-based access consists of three elements: the security principal, role definition, and scope.
 
-## Using managed identity in an application
+## Use managed identity in an application
 
 An application that runs on an Azure resource, such as a VM or a function app, uses a managed identity to authenticate and access other resources.
 
-The authentication and access process involves a series of requests to the Azure Instance Metadata Service: 
+The authentication and access process involves a series of requests to the Azure Instance Metadata Service:
 
-1. The service validates the identity that's associated with your app. 
-1. It generates a resource access token. 
-1. Your app sends the token to the resource that it needs to access. 
-1. The token is authenticated. 
-1. If the token is valid, the resource verifies that the token represents an identity that has the appropriate authorization for the request. 
+1. The service validates the identity that's associated with your app.
+1. It generates a resource access token.
+1. Your app sends the token to the resource that it needs to access.
+1. The token is authenticated.
+1. If the token is valid, the resource verifies that the token represents an identity that has the appropriate authorization for the request.
 1. When this test passes, your application can access the resource.
 
-To avoid much of the complexity, you can use the `AzureServiceTokenProvider` API in your code. An `AzureServiceTokenProvider` object retrieves the principal ID for your app and generates a resource access token. Use the `GetAccessTokenAsync` method to specify the resource for which the access token should be generated. Provide the URI of the service that hosts the resource. 
+To avoid much of the complexity, you can use the `AzureServiceTokenProvider` API in your code. An `AzureServiceTokenProvider` object retrieves the principal ID for your app and generates a resource access token. Use the `GetAccessTokenAsync` method to specify the resource for which the access token should be generated. Provide the URI of the service that hosts the resource.
 
-The following C# example generates a token for Azure Storage:
+The following C# example generates a token for Azure Storage.
 
 ```C#
 AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();

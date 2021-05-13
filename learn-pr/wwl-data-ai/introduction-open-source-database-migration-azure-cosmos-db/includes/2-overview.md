@@ -1,5 +1,9 @@
 If you have a functional on-premises database, why should you consider moving it into a cloud service, such as Azure? Similarly, why consider implementing a new database system in Azure? Many companies perform this migration because it's easy and cheap to create a highly available and scalable service in the cloud.
 
+In your IoT technology company, you're spending a lot of administrative time running NoSQL databases on various on-premises systems, including Cassandra and MongoDB. You think you can reduce that work by migrating the databases into Azure, but you want to know more about the support Azure has for semi-structured data and how much work would be required to complete the migration. You don't want to modify the IoT devices' software to support this migration, other than simple reconfiguration.
+
+Here, you will learn about the features and technologies in Azure that you can use to host NoSQL databases.
+
 ### Availability
 
 The availability guaranteed by Azure service-level agreements (SLAs) depends on the precise details of your implementation—but they're always high. For example, for Azure Cosmos DB in a single region, Microsoft guarantees 99.99% availability with no additional cost. If deployed in multiple regions, Microsoft increases this guarantee to 99.999% for both read and write availability.

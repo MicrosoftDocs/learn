@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
   zone_pivot_groups: azure-interface
 title: Exercise - Configure a public load balancer
 durationInMinutes: 10

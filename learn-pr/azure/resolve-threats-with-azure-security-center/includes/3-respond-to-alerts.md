@@ -2,7 +2,7 @@ Once you have a set of alerts, you can select a security alert to learn more abo
 
 ![Screenshot that depicts a pane containing a list of grouped security alerts.](../media/M3-ASC-Alerts3.png)
 
-In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second displays how many times attack was detected. The third column indicates the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack.
+In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second column displays how many times attack was detected; the third column indicates the time of the attack; the fourth column displays the environment; the fifth column displays the state of the alert; the sixth column displays severity of the attack.
 
 After reviewing this information, a security engineer can select an attacked resource to get specific information about:
 

@@ -1,4 +1,4 @@
-Debugging is a multistage process that usually goes along these lines:
+Debugging is a multistage process that usually follows these lines:
 
 1. Identify a bug in your program.
 1. Find where the bug is located in your code.
@@ -9,6 +9,7 @@ Debugging is a multistage process that usually goes along these lines:
 After you identify an error in your Node.js program, the first challenge you'll face is to find where the error is located in your code. To achieve that, one of the most efficient ways is to run your code step by step to get an idea of where things start to go wrong.
 
 ## Breakpoints
+
 Running through *all* your code step by step might be extremely inefficient if your program has thousands of lines of code. In that case, you can use a *breakpoint*. It allows you to *break* from your program's normal execution and pause at a given *point* in your code.
 
 Using breakpoints, you can make your program run normally up until you reach the critical portion of code where you suspect the error is located. Then you can switch to step by step.
@@ -31,7 +32,7 @@ function addToBasket(product) {
 
 Because a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js process. That's why, by default, Node.js doesn't allow you to debug a running program. You have to enable a special mode called *inspector* mode to allow debugging.
 
-You need the `--inspect` option to allow a Node.js process to listen for a debugger client that will attach itself to the process and take control of your program execution.
+You need the `--inspect` option to allow a Node.js process to listen for a debugger client that will attach itself to the process, and take control of your program execution.
 
 By default, when Node.js is started with the `--inspect` option, it will listen on host `127.0.0.1` on port `9229`. You can also specify a custom host and port by using `--inspect=<HOST>:<PORT>`.
 
@@ -50,7 +51,7 @@ For example, you can use [node-inspect](https://github.com/nodejs/node-inspect).
 node inspect <YOUR_SCRIPT>.js
 ```
 
-The node-inspect debugger will run Node.js with inspect mode enabled and launch at the same time as the integrated interactive debugger. It will pause execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched:
+The node-inspect debugger will run Node.js with inspect mode enabled, and launch at the same time as the integrated interactive debugger. It will pause execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched.
 
 ```bash
 node inspect myscript.js
@@ -78,9 +79,9 @@ To set or clear breakpoints in your code, use the following commands:
 - `setBreakpoint(<N>)` or `sb(<N>)`: Add a breakpoint on line number *N*.
 - `clearBreakpoint('myscript.js', <N>)` or `cb('myscript.js', <N>)`: Clear the breakpoint in the file `myscript.js` on line number *N*.
 
-To get information about the current execution point, use these commands:
+To get information about the current execution point, run these commands:
 
 - `list(<N>)`: List your source code with *N* lines before and after the current execution point.
 - `exec <EXPR>`: Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`.
 
-That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, select **Ctrl+D** or select the command `.exit`.
+That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.

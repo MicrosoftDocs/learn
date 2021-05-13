@@ -3,10 +3,10 @@ uid: learn.azure.azure-compute-fundamentals.azure-container-services
 title: When to use Azure Container Instances or Azure Kubernetes Service
 metadata:
   title: When to use Azure Container Instances or Azure Kubernetes Service
-  description: In this unit, you'll learn about Azure Container Instances and the Azure Kubernetes Service.
+  description: In this unit, you'll learn about Azure Container Instances and Azure Kubernetes Service.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

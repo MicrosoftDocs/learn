@@ -6,7 +6,7 @@ In this unit, you'll learn more about the characteristics of relational data, an
 
 In a relational database, you model collections of entities from the real world as tables. An entity is described as *a thing about which information needs to be known or held*. In the ecommerce example, you might create tables for customers, products, and orders. A table contains rows, and each row represents a single instance of an entity. In the ecommerce scenario, each row in the customers table contains the data for a single customer, each row in the products table defines a single product, and each row in the orders table represents an order made by a customer.
 
-The rows in a table have one or more columns that define the properties of the entity, such as the customer name, or product ID. All rows in the same table have the same columns. Some columns are used to maintain relationships between tables. This is where the relational model gets its name from. In the image below, the Orders table contains both a Customer ID and a Product ID. The Customer ID relates to the Customers table to identify the customer that placed the order, and the Product ID relates to the Products table to indicate what product was purchased.
+The rows in a table have one or more columns that define the properties of the entity, such as the customer name, or product ID. All rows in the same table have the same columns. Some columns are used to maintain relationships between tables. In the image below, the Orders table contains both a Customer ID and a Product ID. The Customer ID relates to the Customers table to identify the customer that placed the order, and the Product ID relates to the Products table to indicate what product was purchased.
 
 > [!div class="mx-imgBorder"]
 > ![Example of a relational model, showing customers, orders, and products](../media/2-relational-data.png)
@@ -18,7 +18,7 @@ The diagram also shows the relationships between the tables. The lines connectin
 The columns marked *FK* are *Foreign Key* columns. They reference, or link to, the primary key of another table, and are used to maintain the relationships between tables. A foreign key also helps to identify and prevent anomalies, such as orders for customers that don't exist in the Customers table. In the model below, the Customer ID and Product ID columns in the Orders table link to the customer that placed the order and the product that was ordered:
 
 > [!div class="mx-imgBorder"]
-> ![Example of a relational model, showing customers, orders, and products](../media/2-relations.png)
+> ![Example of relational model, showing customers, orders, and products](../media/2-relations.png)
 
 The main characteristics of a relational database are:
 
@@ -70,4 +70,8 @@ For example, if you have a collection of music, video, or other media files, att
 
 Relational databases are commonly used in ecommerce systems, but one of the major use cases for using relational databases is Online Transaction Processing (OLTP). OLTP applications are focused on transaction-oriented tasks that process a very large number of transactions per minute. Relational databases are well suited for OLTP applications because they naturally support insert, update, and delete operations. A relational database can often be tuned to make these operations fast. Also, the nature of SQL makes it easy for users to perform ad-hoc queries over data.
 
-Examples of OLTP applications that use relational databases are banking solutions, online retail applications, flight reservation systems, and many online purchasing applications.
+Examples of OLTP applications that use relational databases are:
+- Banking solutions
+- Online retail applications
+- Flight reservation systems
+- Many online purchasing applications.

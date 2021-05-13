@@ -1,84 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-summary
-title: Summary
 metadata:
   title: Summary
   description: Summary of lessons learned
-  ms.date: 05/08/2020
+  ms.date: 12/21/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+title: Summary
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "Which of the following Azure Cloud Shell/Azure CLI commands creates an Azure storage account?"
-    choices:
-    - content: "`az group create`"
-      isCorrect: false
-      explanation: "Actually, this is the Azure CLI command to create an Azure resource group."
-    - content: "`az account create`"
-      isCorrect: false
-      explanation: "This isn't a real Azure CLI command."
-    - content: "`az storage account create`"
-      isCorrect: true
-      explanation: "Correct! This would create a new storage account."
-    - content: "`az storage create`"
-      isCorrect: false
-      explanation: "Close! This isn't a real Azure CLI command though."
-  - content: "What is the difference between precision and recall when measuring the accuracy of a machine-learning model?"
-    choices:
-    - content: "Precision roughly measures false positives, while recall roughly measures false negatives"
-      isCorrect: true
-      explanation: "Correct! Technically precision is (# true positive) / (# true positives + # false positives) and recall is (# true positives) / (# true positives + # false negatives)"
-    - content: "Precision roughly measures false negatives, while recall roughly measures false positives"
-      isCorrect: false
-      explanation: "Not quite!"
-    - content: "Precision is a mean of false-positive rates computed across a range of thresholds"
-      isCorrect: false
-      explanation: "Precision and recall are both slightly simpler than this."
-    - content: "Recall is a mean of false-positive rates computed across a range of thresholds"
-      isCorrect: false
-      explanation: "Precision and recall are both slightly simpler than this."
-  - content: "When deploying an Azure Function, what is one reason to choose App Service Plan over Consumption Plan?"
-    choices:
-    - content: "Functions hosted in an App Service Plan support parallel execution, while Functions hosted under the Consumption Plan don't"
-      isCorrect: false
-      explanation: "All Azure Functions types support parallel execution."
-    - content: "App Service Plans that host Azure Functions don't incur charges"
-      isCorrect: false
-      explanation: "All Azure Functions types have a charge model, but how does it differ?"
-    - content: "Functions hosted in an App Service Plan incur charges only when they execute"
-      isCorrect: false
-      explanation: "Actually, this is true of the Consumption model. The App Service model continually runs a compute instance to support your Functions."
-    - content: "Functions hosted in an App Service Plan execute immediately when triggered"
-      isCorrect: true
-      explanation: "When using the Consumption model, it may take a few minutes to spin up a machine to run your Function when it's fired. With the App Service plan, the Function will run immediately."
-  - content: "When deploying an Azure SQL Database, what is the purpose of adding a client IP address to the security policy?"
-    choices:
-    - content: "To allow other Azure services to connect to the database"
-      isCorrect: false
-      explanation: "We did allow Azure services to connect to the database as part of this module, but that's not why we added the client IP."
-    - content: "To allow applications running on your computer to connect to the database"
-      isCorrect: true
-      explanation: "Correct! Your client IP is the IP address of your own computer, so adding it to the database security rules will allow your computer to connect to it."
-    - content: "To make Microsoft aware of your computer's IP address for Windows updates"
-      isCorrect: false
-      explanation: "It does make the database (not Microsoft) aware of your computer's IP address, but not for to do updates."
-  - content: "Power BI Desktop runs on which of the following operating systems?"
-    choices:
-    - content: "Windows only"
-      isCorrect: true
-      explanation: "Correct! Power BI Desktop only runs on Windows, but you can view them on any platform."
-    - content: "Windows and macOS"
-      isCorrect: false
-      explanation: "Power BI Desktop only runs on Windows, but you can view them on any platform."
-    - content: "Windows, macOS, and Linux"
-      isCorrect: false
-      explanation: "Power BI Desktop only runs on Windows, but you can view them on any platform."
-    - content: "macOS and Linux"
-      isCorrect: false
-      explanation: "Power BI Desktop only runs on Windows, but you can view them on any platform."

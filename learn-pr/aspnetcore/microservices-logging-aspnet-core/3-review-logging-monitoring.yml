@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-logging-aspnet-core.3-review-logging-monitoring
+metadata:
+  title: Review logging and monitoring concepts
+  description: Understand how structured logging is implemented with tools like Serilog and Seq.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/14/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Review logging and monitoring concepts
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-review-logging-monitoring.md)]

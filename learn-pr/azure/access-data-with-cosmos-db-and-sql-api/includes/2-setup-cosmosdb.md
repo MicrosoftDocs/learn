@@ -16,8 +16,8 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 
 | Parameter | Required | Description |
 |---|---|---|
-| `--name`  | Yes | The unique name for the resource. |
-| `--kind`  | No | Kind of database, we'll use _GlobalDocumentDB_. |
+| `--name` | Yes | The unique name for the resource. |
+| `--kind` | No | Kind of database, we'll use _GlobalDocumentDB_. |
 | `--resource-group` | Yes | The resource group that owns this database. Normally you would create one in your Azure subscription, but in this case, we're using the Azure Sandbox and a Resource Group named **<rgn>[sandbox Resource Group]</rgn>** has been created for you. |
 
 1. Paste the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name.
@@ -44,13 +44,13 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
         "maxStalenessPrefix": 100
       },
       "databaseAccountOfferType": "Standard",
-      "documentEndpoint": "https://xyz.documents.azure.com:443/",
+      "documentEndpoint": "https://example.documents.azure.com:443/",
       "enableAutomaticFailover": false,
       "enableMultipleWriteLocations": false,
       "failoverPolicies": [
         {
           "failoverPriority": 0,
-          "id": "xyz-southcentralus",
+          "id": "example-southcentralus",
           "locationName": "South Central US"
         }
       ],
@@ -72,16 +72,16 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
     ```json
     {
       "_colls": "colls/",
-      "_etag": "\"00005d64-0000-0500-0000-5cdc936d0000\"",
-      "_rid": "hxoKAA==",
-      "_self": "dbs/hxoKAA==/",
-      "_ts": 1557959533,
+      "_etag": "\"12345678-1234-1234-1234-123456789abc\"",
+      "_rid": "abcABC==",
+      "_self": "dbs/abcABC==/",
+      "_ts": 1234567890,
       "_users": "users/",
       "id": "Products"
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell.
+1. Finally, create the `Clothing` container with the `cosmosdb container create` command in the Cloud Shell.
 
     ```azurecli
     az cosmosdb sql container create \

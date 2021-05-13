@@ -55,13 +55,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 1. Install Homebrew-Cask to obtain more packages, including the PowerShell Core package:
 
     ```bash
-    brew tap homebrew/cask
-    ```
-
-1. Install PowerShell Core:
-
-    ```bash
-    brew cask install powershell
+    brew install --cask powershell
     ```
 
 1. Start PowerShell Core to verify that it installed successfully:

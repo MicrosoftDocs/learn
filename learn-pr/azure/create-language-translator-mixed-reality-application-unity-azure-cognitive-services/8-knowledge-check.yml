@@ -15,7 +15,7 @@
   quiz:
     title: Knowledge check
     questions:
-    - content: "If a Mixed Reality experience uses the Mixed Reality Toolkit and the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to:"
+    - content: "If a mixed reality experience uses the Mixed Reality Toolkit and the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to:"
       choices:
         - content: "Auto Start"
           isCorrect: false
@@ -26,9 +26,9 @@
         - content: "Disabled"
           isCorrect: false
           explanation: "There are only two Start Behavior options: Auto Start and Manual Start."
-    - content: "How can industry or organization-specific terminology be included in speech translation?"
+    - content: "How can industry-specific or organization-specific terminology be included in speech translation?"
       choices:
-        - content: "Using Custom Translator, a custom translation system can be trained and deployed using parallel documents or dictionary data."
+        - content: "Using Custom Translator, a custom translation system can be trained and deployed through parallel documents or dictionary data."
           isCorrect: true
           explanation: "Custom Translator enables developers to build customized neural machine translation (NMT) systems without the need for machine learning expertise."
         - content: "Including custom terminology in speech translation requires extensive machine learning expertise. As such, this feature isn't available."
@@ -36,13 +36,13 @@
           explanation: "Custom Translator enables developers to build customized neural machine translation (NMT) systems without the need for machine learning expertise."
         - content: "Using Custom Translator, a custom translation system can be trained and deployed by uploading recorded audio conversations."
           isCorrect: false
-          explanation: "Microsoft's Custom Translator accepts previously translated documents or data that's parallel at the document level."
+          explanation: "Custom Translator accepts previously translated documents or data that's parallel at the document level."
     - content: "What is the purpose of the TranslationRecognizer object?"
       choices:
         - content: "The TranslationRecognizer object confirms that the user has given permission to access their microphone."
           isCorrect: false
-          explanation: "The Start() method is used to confirm whether microphone permission has been granted by the user."
-        - content: "The TranslationRecognizer object stores the subscription key and region for the Speech resource."
+          explanation: "The Start() method is used to confirm whether the user has granted microphone permission."
+        - content: "The TranslationRecognizer object stores the subscription key and region for the Speech service resource."
           isCorrect: false
           explanation: "The subscription key and region are parameters of the SpeechTranslationConfig object."
         - content: "The TranslationRecognizer object is used to start speech recognition and return the speech translation."

@@ -1,6 +1,6 @@
 After running an experiment that trains a model you can use a reference to the **Run** object to retrieve its outputs, including the trained model.
 
-## Retrieving Model Files
+## Retrieving model files
 
 After an experiment run has completed, you can use the run objects **get_file_names** method to list the files generated. Standard practice is for  scripts that train models to save them in the run's **outputs** folder.
 
@@ -17,7 +17,7 @@ for file in run.get_file_names():
 run.download_file(name='outputs/model.pkl', output_file_path='model.pkl')
 ```
 
-## Registering a Model
+## Registering a model
 
 Model registration enables you to track multiple versions of a model, and retrieve models for *inferencing* (predicting label values from new data). When you register a model, you can specify a name, description, tags, framework (such as Scikit-Learn or PyTorch), framework version, custom properties, and other useful metadata. Registering a model with the same name as an existing model automatically creates a new version of the model, starting with 1 and increasing in units of 1.
 
@@ -30,7 +30,7 @@ model = Model.register(workspace=ws,
                        model_name='classification_model',
                        model_path='model.pkl', # local path
                        description='A classification model',
-                       tags={'dept': 'sales'},
+                       tags={'data-format': 'CSV'},
                        model_framework=Model.Framework.SCIKITLEARN,
                        model_framework_version='0.20.3')
 ```
@@ -41,12 +41,12 @@ Alternatively, if you have a reference to the **Run** used to train the model, y
 run.register_model( model_name='classification_model',
                     model_path='outputs/model.pkl', # run outputs path
                     description='A classification model',
-                    tags={'dept': 'sales'},
+                    tags={'data-format': 'CSV'},
                     model_framework=Model.Framework.SCIKITLEARN,
                     model_framework_version='0.20.3')
 ```
 
-### Viewing Registered Models
+### Viewing registered models
 
 You can view registered models in Azure Machine Learning studio. You can also use the **Model** object to retrieve details of registered models like this:
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-command-line-program.cli-module
+metadata:
+  title: Create the CLI module
+  description: Implement the module that will parse command-line input.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create the CLI module
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-cli-module.md)]

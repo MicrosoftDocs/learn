@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the name of the application architecture that enables near real-time querying to provide insights?"
+    choices:
+    - content: "OLTP."
+      isCorrect: false
+      explanation: "Incorrect. OLTP stands for Online Transactional Processing that is designed to deal with operation systems."
+    - content: "HTAP."
+      isCorrect: true
+      explanation: "Correct. HTAP stands for Hybrid Transactional and Analytical Processing that enable you to gain insights from operational systems without impacting the performance of the operational system."
+    - content: "OLAP."
+      isCorrect: false
+      explanation: "Incorrect. OLAP stands for Online Analytical Processing that is used to store historical data."
+  - content: "Within Azure Synapse Link for Azure Cosmos DB, which Column-oriented store optimized for queries?"
+    choices:
+    - content: "Transactional store."
+      isCorrect: false
+      explanation: "Incorrect. A transactional store is a data store optimized for transactional workloads."
+    - content: "Cosmos DB store."
+      isCorrect: false
+      explanation: "Incorrect. A Cosmos DB store is not a valid store."
+    - content: "Analytical store."
+      isCorrect: true
+      explanation: "Correct. An analytical store is a data store optimized for analytical queries."
+  - content: "How can you manage the lifecycle of data and define how long it will be retained for in an analytical store?"
+    choices:
+    - content: "Configure the purge duration in a container"
+      isCorrect: false
+      explanation: "Incorrect. There is no purge option that can be defined against a container."
+    - content: "Configure the default Time to Live (TTL) property for records stored."
+      isCorrect: true
+      explanation: "Correct. Configuring the default Time to Live (TTL) property for records stored in an analytical store can manage the lifecycle of data and define how long it will be retained for."
+    - content: "Configure the deletion duration for records in the transactional store."
+      isCorrect: false
+      explanation: "Incorrect. You cannot define a deletion duration for records in the transactional store."
