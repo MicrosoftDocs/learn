@@ -37,9 +37,3 @@ Solution templates for blockchain can be found in the [Azure Marketplace](https:
 Use Azure Blockchain Workbench for rapid prototyping and integration with other Azure services. With Azure Blockchain Workbench, you can configure and deploy a consortium network quickly. It's ideal for development prototyping or test exploration. The goal of Azure Blockchain Workbench is to reduce development time and cost with prebuilt integrations to the cloud services needed for application development such as Azure Active Directory, Azure Key Vault, Azure Service Bus, and Azure Event Hubs.
 
 For more information on Azure Blockchain Workbench, see the [Azure Blockchain Workbench](https://docs.microsoft.com/azure/blockchain/workbench) documentation.
-
-### Azure Blockchain Service
-
-Azure Blockchain Service provides permissioned blockchain as a service. Use Azure Blockchain Service to build and govern a consortium network. You can create blockchain nodes easily using the Azure portal.
-
-For more information on Azure Blockchain Service, see the [Azure Blockchain Service](https://docs.microsoft.com/azure/blockchain/service) documentation.
