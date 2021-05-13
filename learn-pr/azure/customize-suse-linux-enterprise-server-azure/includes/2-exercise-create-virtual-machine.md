@@ -1,6 +1,6 @@
 The most straightforward way to create a new VM in Azure is to use the Azure portal because it walks you through the required information and provides hints and helpful messages during the creation. The following steps walk through the process at a high level: 
 
-1. Sign in to your Azure portal
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true)
 
 1. On the Azure portal menu or from the Home page, under Azure services, select Virtual machines. Alternatively, you can enter Virtual machines in the top search box, and press Enter to get the virtual pane.
 
