@@ -2,7 +2,7 @@ In machine learning, *inferencing* refers to the use of a trained model to predi
 
 ![A real-time inferencing service](../media/07-01-real-time.jpg)
 
-In Azure Machine learning, you can create real-time inferencing solutions by deploying a model as a service, hosted in a containerized platform such as Azure Kubernetes Services (AKS).
+In Azure Machine Learning, you can create real-time inferencing solutions by deploying a model as a service, hosted in a containerized platform such as Azure Kubernetes Services (AKS).
 
 ## Learning objectives
 
