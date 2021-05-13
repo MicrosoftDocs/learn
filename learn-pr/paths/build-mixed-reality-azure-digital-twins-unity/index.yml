@@ -21,7 +21,7 @@ prerequisites: |
   - Basic familiarity with C# 
   - Basic familiarity with GitHub
   - Familiarity with the Azure portal
-  - A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI module(/learn/modules/control-azure-services-with-cli/)].
+  - A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI module](/learn/modules/control-azure-services-with-cli/).
   - [Azure CLI](/cli/azure/install-azure-cli).
   - We recommend installing the Azure CLI locally
   - PowerShell (built into Windows 10) 
