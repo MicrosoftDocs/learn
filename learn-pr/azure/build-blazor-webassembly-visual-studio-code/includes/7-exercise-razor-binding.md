@@ -4,7 +4,11 @@ In this exercise, you'll create a simple ToDo app.
 
 1. Open a terminal or Command Prompt window on your local development machine.
 
-1. At the command prompt, enter **dotnet new blazorserver -o ToDoList**.
+1. At the command prompt, create the new project with this command:
+
+    ```dotnetcli
+    dotnet new blazorserver -o ToDoList
+    ```    
 
 ## Create the ToDo page
 

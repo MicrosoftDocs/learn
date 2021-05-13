@@ -28,14 +28,24 @@ To validate your setup, make a new Blazor WebAssembly client web app that uses t
 
 1. Open a terminal or Command Prompt window on your local development machine.
 
-1. At the command prompt, enter **dotnet new blazorserver -o BlazorApp --no-https**.
+1. At the command prompt, create a new project with:
+
+    ```dotnetcli
+    dotnet new blazorserver -o BlazorApp --no-https
+    ``` 
 
 1. Go to the BlazorApp subfolder.
 
 ## Run the app
 
-1. At the command prompt, enter **dotnet watch run** to run the app.  This will build and start the app, and then rebuild and restart the app whenever you make code changes.  The browser should automatically open at the address https://localhost:5000.
+1. At the command prompt, run the app in **watch mode** with this command:
+ 
+    ```dotnetcli
+    dotnet watch run
+    ```
 
+    This will build and start the app, and then rebuild and restart the app whenever you make code changes.  The browser should automatically open at the address https://localhost:5000.
+    
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 
 1. When you're ready to stop, return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.

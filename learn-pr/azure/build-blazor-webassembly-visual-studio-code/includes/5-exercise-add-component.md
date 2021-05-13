@@ -32,7 +32,7 @@ Welcome to your new app.
 <Counter />
 ```
 
-Save the file and the `dotnet watch run` command will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
+Save the file and the `dotnet watch run` command you executed in the previous module will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
 
 ![Counter component on Home page](../media/counter-homepage.png)
 
