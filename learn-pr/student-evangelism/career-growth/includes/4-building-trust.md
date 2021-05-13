@@ -1,4 +1,6 @@
-# Building Trust as an Employee
+TODO, add a problem statement, and how building trust helps to fix it. so essentially motivate why they should read this. The text you have is good, but something about strengthening your personal brand is important and leads you to be appreciated and considered for promotion
+
+## Building Trust as an Employee
 
 Good managers are looking for valuable, trustworthy employees who contribute to the organization by providing solid impact. Great managers also value those individuals who bring their whole selves to work, who come as they are, and who grow. Here are some tips on how to provide value to your organization while growing as a person.
 
@@ -25,5 +27,4 @@ You want to be seen as a team player, but this doesn't mean that you can't take 
 Keep track of your contributions and your impact as an employee. This can come in handy for one-on-one meetings with both colleagues and managers, and will give you a good idea of your progression.
 
 Communicate with your manager so that they understand the role that you played in delivering it. Lift up your colleagues, as well: team work makes the dream work!
-
 
