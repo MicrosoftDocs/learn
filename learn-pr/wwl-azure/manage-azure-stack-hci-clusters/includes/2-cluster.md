@@ -79,12 +79,3 @@ Azure Stack HCI relies on Hyper-V to implement highly resilient and performant c
 Azure Stack HCI is an Azure service and you must register it within 30 days of installation to comply with the Azure Online Services Terms. The easiest way to perform such registration is by using Windows Admin Center.
 
 :::image type="content" source="../media/register-azure.png" alt-text="The screenshot depicts the Register Azure Stack HCI settings of an Azure Stack HCI cluster." border="false":::
-
----
-## Check your knowledge
-
-## Multiple Choice
-Contoso's Information Security requires that all the network traffic for mission critical workloads is encrypted. You need to ensure that all SMB traffic between cluster nodes is encrypted. Which type of setting should you configure?
-(x) Cluster setting. {{Correct. Cluster settings include the option to encrypt SMB connections.}}
-( ) Storage setting. {{Incorrect. Storage settings include the options to configure caching behavior, but not to encrypt SMB connections.}}
-( ) Hyper-V setting. {{Incorrect. Hyper-V settings allow you to manage placement of VM disks and configuration files, enhanced session mode options, NUMA spanning, as well as Live Migration and Storage Migration behavior, but not encryption of SMB connections.}}
