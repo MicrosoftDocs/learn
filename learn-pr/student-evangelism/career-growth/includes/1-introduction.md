@@ -15,6 +15,7 @@ You're new in a company full of talented developers and engineers of all types. 
 ## What will you learn?
 
 In this module, you will discover ways to network in your new position, learn techniques to continue your learning process, and find tips on how to build trust as an employee.
+
 ## What is the main goal?
 
 By the end of this session, you'll be able to list strategies that you will be able to take to grow your career from a new developer to a more seasoned, valued employee in any tech company.
