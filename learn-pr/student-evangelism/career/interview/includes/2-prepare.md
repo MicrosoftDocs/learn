@@ -110,7 +110,7 @@ While it's great to prepare as much as possible for a technical interview, don't
 - **Be professional**. Always come to your interview on time. Even if the traffic is bad and you are delayed, email or call the interviewer to alert them. Maintain a professional demeanor at all times.
 - **Team player**. Being a developer is about being a team player. As such, you should make it clear in an interview that you understand that you didn't deliver a big project by yourself. Explain your role in it but try not to boast. Be humble but confident.
 
-### What about the company
+### What about the company?
 
 We've talked about the importance of being your best behavior in an interview, but there's something to be said about the company as well. You have a right to be treated with respect. So what are things to look out for?
 
