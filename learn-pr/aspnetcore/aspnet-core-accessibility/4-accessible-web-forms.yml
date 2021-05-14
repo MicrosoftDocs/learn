@@ -15,28 +15,17 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "In ASP.NET Core, what property needs to be set to ensure an element is available to an accessible app?"
+    - content: "What HTML element should be associated with every form input field to provide context to screen readers?"
       choices:
-      - content: "IsAccessible"
+      - content: "Alt text"
         isCorrect: false
-        explanation: "IsAccessible is not the name of an automation property."
-      - content: "IsInAccessibleTree"
+        explanation: "Alt text is used to provide descriptions for images, not form fields."
+      - content: "Label"
         isCorrect: true
-        explanation: "ASP.NET Core uses this automation property to set the underlying native platform accessibility flags to ensure the element is read by the screen reader."
+        explanation: "Correct. The Label element is used to describe HTML form elements, and is understood by screen readers."
       - content: "Name"
         isCorrect: false
-        explanation: "Name is an automation property, but is used to specify a short description to be read by the screen reader."
-      - content: "LabeledBy"
+        explanation: "The Name attribute is used to identify the data submitted to the server by the form field, but is not used for accessibility."
+      - content: "Description"
         isCorrect: false
-        explanation: "LabeledBy is an automation property, but is used to allow another element to define the screen reader description for the current element."
-    - content: "What is the term that refers to the feature which reads out loud the elements on an application?"
-      choices:
-      - content: "TalkBack"
-        isCorrect: false
-        explanation: "This is the name of the primary screen reader for Android."
-      - content: "Narrator"
-        isCorrect: false
-        explanation: "This is the name of the primary screen reader for Windows."
-      - content: "Screen reader"
-        isCorrect: true
-        explanation: "A screen reader is available on the different platforms for accessibility."
+        explanation: "Description is not an HTML element."

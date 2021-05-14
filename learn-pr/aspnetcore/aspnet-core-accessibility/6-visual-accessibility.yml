@@ -16,14 +16,14 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "By default, what is the order in which screen reader and keyboard users can navigate the screen?"
+    - content: "Why should you not use colors to indicate required fields on a form?"
       choices:
-      - content: "From left to right on the screen."
+      - content: "Everyone experiences colors differently."
         isCorrect: false
-        explanation: "The order in which elements appear on the screen is not the default accessibility order."
-      - content: "From top to bottom."
+        explanation: "This is correct, but is not the complete answer."
+      - content: "Users may be using a screen reader."
         isCorrect: false
-        explanation: "The order in which elements appear on the screen is not the default accessibility order."
-      - content: "The order they are listed in XAML or added to a layout."
+        explanation: "This is correct, but is not the complete answer."
+      - content: "All of these are correct."
         isCorrect: true
-        explanation: "By default, the accessibility order of controls is the same as the order in which they are listed in XAML, or added to a layout."
+        explanation: "Correct, all of these answers are correct."
