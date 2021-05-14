@@ -50,6 +50,10 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     -| Startup.cs
     ```
 
+1. If Visual Studio Code prompts you to install required assets, select **Yes**.
+
+    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
+    
 ## Run the app
 
 1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
