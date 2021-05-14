@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.aspnetcore-accessibility.6-visual-accessibility
+metadata:
+  title: Find and fix common visual accessibility errors
+  description: Find and fix issues that make web applications inaccessible for those with visual impairments.
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  
+title: Find and fix common visual accessibility errors
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-visual-accessibility.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Why should you not use colors to indicate required fields on a form?"
+      choices:
+      - content: "Everyone experiences colors differently."
+        isCorrect: false
+        explanation: "This is correct, but is not the complete answer."
+      - content: "Users may be using a screen reader."
+        isCorrect: false
+        explanation: "This is correct, but is not the complete answer."
+      - content: "All of these are correct."
+        isCorrect: true
+        explanation: "Correct, all of these answers are correct."
