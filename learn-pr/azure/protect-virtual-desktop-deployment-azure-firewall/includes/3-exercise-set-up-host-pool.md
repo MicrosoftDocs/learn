@@ -118,6 +118,8 @@ Create an Azure VM to act as a session host for the host pool.
 
 ## Connect to the VM by using a remote desktop session
 
+Use a remote desktop session to sign into the VM you created in the previous section.
+
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.
 1. Select **Connect** > **RDP**.
@@ -128,18 +130,18 @@ Create an Azure VM to act as a session host for the host pool.
 
 ## Register the virtual machine with host pool
 
-Install the Windows Virtual Desktop agents to register the VM to the host pool.
+Install the Windows Virtual Desktop agents on the VM to register the VM to the host pool.
 
 ### Install the  Windows Virtual Desktop Agent
 
-First, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
+In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
 
 1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. Select **Open file** to install the Windows Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
-1. If you no longer have the token value, run the following command in your Cloud Shell session.
+1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
    ```powershell
     (Get-AzWvdRegistrationInfo `
@@ -151,7 +153,7 @@ First, install the  Windows Virtual Desktop Agent. You'll need the registration 
 
 ### Install the  Windows Virtual Desktop Agent Bootloader
 
-Next, install the  Windows Virtual Desktop Agent Bootloader. 
+In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent Bootloader.
 
 1. Copy the link to the [Windows Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
