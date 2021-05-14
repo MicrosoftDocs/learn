@@ -16,11 +16,11 @@ abstract: |
     - Understand what Azure HPC Cache is.
     - List the pre-requisites for Azure HPC Cache.
     - Create an Azure HPC Cache instance.
-    - Configure Azure HPC Cache to accelerate a Linux-based filesystem.
+    - Configure Azure HPC Cache to accelerate a Linux-based file system.
     - Attach virtual client machines to read from the cache.
 prerequisites: |
-  - Familiarity with NFS storage concepts such as mount, export, and namespace.
-  - Familiarity with networking concepts such as subnet, DNS, and TCP/UDP ports.
+  - Familiarity with NFS storage concepts like mount, export, and namespace.
+  - Familiarity with networking concepts like subnet, DNS, and TCP/UDP ports.
   - Familiarity with creating virtual machines in the Azure portal.
 iconUrl: /learn/achievements/accelerate-storage-with-hpc-cache.svg
 levels:

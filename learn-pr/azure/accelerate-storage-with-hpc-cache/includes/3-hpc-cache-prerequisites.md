@@ -1,4 +1,4 @@
-Before you set up Azure HPC Cache, there are some prerequisites that need to be met. In this unit, you'll discover the requirements and other considerations before deploying an Azure HPC Cache solution.
+Before you set up Azure HPC Cache, you'll need to meet some prerequisites. In this unit, you'll discover the requirements and other considerations before deploying an Azure HPC Cache solution.
 
 ## Network requirements for HPC Cache
 
@@ -10,9 +10,9 @@ Azure HPC Cache has three network requirements:
 
 ### Set up custom DNS for HPC Cache
 
-If you plan to use servers in your data center, you'll need to configure a DNS server so that Azure resources can resolve your internal storage server names.
+If you plan to use servers in your datacenter, you'll need to configure a DNS server so that Azure resources can resolve your internal storage server names.
 
-If you plan to use Azure-based storage, such as Azure NetApp Files, or you plan to copy your data into Azure Blob, then you don't need to configure a separate DNS server.
+If you plan to use Azure-based storage, such as Azure NetApp Files, or you plan to copy your data into Azure Blob Storage, then you don't need to configure a separate DNS server.
 
 In the Azure portal:
 
@@ -23,11 +23,11 @@ In the Azure portal:
 Follow these steps to add the DNS server to the virtual network in the Azure portal:
 
 1. Open the virtual network in the Azure portal.
-1. Choose **DNS servers** from the **Settings** menu in the sidebar.
+1. Select **DNS servers** from the **Settings** menu in the sidebar.
 1. Select **Custom**.
 1. Enter the DNS server's IP address in the field.
 
-:::image type="content" source="../media/3-identity-requirements-01-custom-dns-steps.png" alt-text="Screenshot showing how to add a custom DNS server to an existing virtual network.":::
+:::image type="content" source="../media/3-identity-requirements-01-custom-dns-steps.png" alt-text="Screenshot showing how to add a custom D N S server to an existing virtual network.":::
 
 ### Define a dedicated subnet for HPC Cache
 
@@ -39,7 +39,7 @@ If you're running multiple caches, each one needs its own dedicated subnet.
 
 :::image type="content" source="../media/3-identity-requirements-02-add-cache-only-subnet.png" alt-text="Screenshot showing how to add a subnet to a virtual network. The new subnet uses a 26-bit mask.":::
 
-We highly recommend having a high-speed network connection like an ExpressRoute in place between Azure and the data center where the storage is.
+We highly recommend having a high-speed network connection like Azure ExpressRoute in place between Azure and the datacenter where the storage is.
 
 ### Verify TCP/UDP port access for HPC Cache
 
