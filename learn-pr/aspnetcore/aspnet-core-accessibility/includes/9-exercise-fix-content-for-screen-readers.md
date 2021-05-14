@@ -4,7 +4,7 @@ Before attempting to navigate through our page using a screen reader, we'll find
 
 1. Run the site and **FastPass**. Our last remaining issue is the missing `alt` text for the one image on the page.
 
-   ![Missing alt error message](../media/missing-alt-error.png)
+   :::image type="content" source="../media/missing-alt-error.png" alt-text="Screenshot of Accessibility Insights displaying a missint alt error for an image.":::
 
 1. This is a purely decorative image, so we can just add an empty `alt` description:
 
@@ -18,12 +18,12 @@ Before attempting to navigate through our page using a screen reader, we'll find
 
 1. Now that we've cleared all automated checks, it's time to check tab stops. Select **Tab stops** in the left navigation in **FastPass**.
 
-   ![Select tab stops](../media/select-tab-stops.png)
+   :::image type="content" source="../media/select-tab-stops.png" alt-text="Screenshot of Accessibility Insights for Web with the second option of Tab stops selected.":::
 
 1. Toggle the **Show tab stops** switch in **FastPass**.
 1. Switch to the web application and begin using the tab key to navigate through the page. You will see that the navigation flows from the top of the page, through the form and page links, to the links in the footer.
 
-   ![Tab stop display](../media/tab-stop-display.png)
+   :::image type="content" source="../media/tab-stop-display.png" alt-text="Screenshot of the pizza app showing tab stops from top to bottom":::
 
 The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through how to turn on the screen reader for each operating system to test accessibility in the app.
 
@@ -39,21 +39,21 @@ Narrator is a screen reader built directly into Windows to enable users to compl
 
 - Press the **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under Use Narrator.
 
-![Windows screenshots to enable Narrator](../media/windows-narrator.png)
+:::image type="content" source="../media/windows-narrator.png" alt-text="Windows screenshots to enable Narrator":::
 
-It is recommended to go through the Narrator tutorial, which can be found in the Narrator settings screen.
+It is suggested to go through the Narrator tutorial, which can be found in the Narrator settings screen.
  
 ### Navigate the page using Narrator
 
 1. If it is not already running, launch the Narrator using **Windows logo key** + **Ctrl** + **Enter**
 1. With Narrator running, switch to the pizza web page (you can click on the browser or use **alt** + **tab** to do that).
-1. Press the **1** key to list the top level heading. You should hear "Welcome" read aloud.
-1. Press the **1** key again. You will hear "Join our mailing list". This isn't correct, there should only be one `<h1>` element on a page.
-1. Press the **1** key again. Narrator reports that there are no more heading level 1 elements.
-1. Press the **2** key. Narrator reports that there are no heading level 2 elements.
-1. Press the **3** key. Narrator reports that there are no heading level 3 elements. Clearly something is wrong with the remaining headings on the page.
+1. Press the **one (1)** key to list the top-level heading. You should hear "Welcome" read aloud.
+1. Press the **one (1)** key again. You will hear "Join our mailing list". This isn't correct, there should only be one `<h1>` element on a page.
+1. Press the **one (1)** key again. Narrator reports that there are no more heading level 1 elements.
+1. Press the **two (2)** key. Narrator reports that there are no heading level 2 elements.
+1. Press the **three (3)** key. Narrator reports that there are no heading level 3 elements. Clearly something is wrong with the remaining headings on the page.
 1. Press the **tab** key repeatedly to navigate through the form and submit button. This works well, as we should expect based on our previous tab stop validation.
-1. Press the **tab** key once more. You will hear a link read aloud as "Link: click here." This is obviously unclear... what is the link we're being told to click on?
+1. Press the **tab** key once more. You will hear a link read aloud as "Link: click here." This is unclear... what is the link we're being told to click on?
 1. Stop the Narrator using **Windows logo key** + **Ctrl** + **Enter**.
 
 ## Fixing issues found through screen reader testing
@@ -68,7 +68,7 @@ We have a couple remaining items to fix on this page: headings and the mysteriou
    <h2>Join our mailing list</h2>
    ```
 
-1. Viewing the HTML for the "All about our wonderful pizza!" heading reveals the problem that prevented Narrarator from finding it - it wasn't actually a heading!
+1. Viewing the HTML for the "All about our wonderful pizza!" heading reveals the problem that prevented Narrator from finding it - it wasn't actually a heading!
 
    ```html
    <p style="font-size: 30px"><b>All about our wonderful pizza!</b></p>
@@ -111,9 +111,9 @@ We have a couple remaining items to fix on this page: headings and the mysteriou
 1. Launch the Narrator using **Windows logo key** + **Ctrl** + **Enter**
 1. With Narrator running, switch to the pizza web page.
 1. Press **tab** repeatedly to navigate through the links on the page. This time, instead of hearing "Link: Click here", you will hear "Link: Privacy policy". That's fixed!
-1. Press the **1** key to list the top level heading. You should hear "Welcome" read aloud.
-1. Press the **1** key again. You will hear Narrator report that there are no remaining level one headings. Success!
-1. Press the **2** key repeatedly to cycle through the level 3 headings. Narrator will read them all aloud.
+1. Press the **one (1)** key to list the top-level heading. You should hear "Welcome" read aloud.
+1. Press the **one (1)** key again. You will hear Narrator report that there are no remaining level one headings. Success!
+1. Press the **two (2)** key repeatedly to cycle through the level 3 headings. Narrator will read them all aloud.
 1. Stop the Narrator using **Windows logo key** + **Ctrl** + **Enter**.
 
-In this exercise, we've seen how to find and fix issues that impact screen reader functionality, and we've tested them using Narrator.
+In this exercise, we've seen how to find and fix issues that impact screen reader functionality.

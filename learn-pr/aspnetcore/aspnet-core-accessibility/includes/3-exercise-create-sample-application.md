@@ -2,7 +2,7 @@ Let's start implementing the design for the app by creating a new project and sp
 
 ## Create a new solution
 
-Create a new ASP.NET Core web app app:
+Create a new ASP.NET Core web app:
 
 The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed when you installed the .NET SDK.
 
@@ -164,4 +164,4 @@ Want to know more? <a href="/Privacy">Click here.</a>
     dotnet run
     ```
 
-2. In your web browser, navigate to https://localhost:5001. You will see the home page of our pizza restaurant website. This page may look okay at first glance, but contains a number of issues which limit its accessibility. In the following units, we'll find and fix these.
+2. In your web browser, navigate to https://localhost:5001. You will see the home page of our pizza restaurant website. This page may look okay at first glance, but contains many issues, which limit its accessibility. In the following units, we'll find and fix these.
