@@ -1,13 +1,13 @@
 You can create new clusters directly from the graphical interface of the CycleCloud web application. CycleCloud offers a number of predefined, scheduler-specific templates, which considerably simplify cluster provisioning for the corresponding schedulers. 
 
-Now that you have provisioned an Azure VM hosting the CycleCloud web applications, you are ready to evaluate its use for deployment of a Swarm-based HPC cluster into Azure. While you are eager to start right away, you need to ensure that your Azure subscription will be able to accommodate the cluster's resource requirements. You also want to take into account the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget. To accomplish this, you are planning to set up CycleCloud budget alerts and deprovision the lab environment once your evaluation is completed. 
+Now that you have provisioned an Azure VM hosting the CycleCloud web applications, you are ready to evaluate its use for deployment of a Swarm-based HPC cluster into Azure. First, you need to ensure that your Azure subscription will be able to accommodate the cluster's resource requirements. You also want to take into account the directives from your management team, who want to keep the cluster's cost within the project's budget. Consequently, you plan to set up CycleCloud budget alerts and deprovision the lab environment once your evaluation is completed. 
 
 ## Prepare for the deployment of an HPC cluster
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage. 
 
     > [!NOTE]
-    > To complete this exercise, you actually do not need to satisfy quota requirements to accommodate provisioning of the compute nodes,  since you will not be running any jobs on the cluster you create.
+    > To complete this exercise, you actually do not need to satisfy quota requirements to accommodate provisioning of the compute nodes, since you will not be running any jobs on the cluster you create.
 
 1. On your computer, switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for the **cyclecloud-rg** resource group.
@@ -34,12 +34,12 @@ Before you deploy an HPC cluster, you should first ensure that you have sufficie
 
     :::image type="content" source="../media/u5-subscription-vcpu-quotas.png" alt-text="The screenshot depicts the Usage + quotas blade in the Azure portal." border="false":::
 
-
 ## Create an HPC cluster by using Azure CycleCloud
 
-With the CycleCloud web application installed in an Azure VM, a sufficient number of vCPU cores available in your Azure subscription, and a designated network subnet capable of accommodating autoscaling of cluster nodes, you are ready to proceed with deployment of a Swarm-based cluster.
+Now you have the CycleCloud web application installed in an Azure VM, a sufficient number of vCPU cores available in your Azure subscription, and a designated network subnet capable of accommodating autoscaling of cluster nodes. You are ready to proceed with deployment of a Swarm-based cluster.
 
 1. On your computer, in the web browser window displaying the **Subscriptions** page of the Azure CycleCloud web application, in the upper left corner, select the **Back to clusters** link.
+
 1. On the **Create a New Cluster** page, review the available options and, in the **Schedulers** section, select **Slurm**.
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster.png" alt-text="The screenshot depicts the Create a New Cluster page of the Azure CycleCloud web application." border="false":::
@@ -78,14 +78,13 @@ With the CycleCloud web application installed in an Azure VM, a sufficient numbe
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-
 ## Configure and start an HPC cluster by using Azure CycleCloud
 
 To prepare for operationalizing your cluster, you will set alerts notifying you about cluster usage costs reaching the budget allocated towards the cost of Azure resources. You will also validate your deployment by starting the cluster via the graphical interface of the CycleCloud web application.
 
 1. On your computer, in the web browser displaying the graphical interface of the Azure CycleCloud web application, review the properties of the newly deployed cluster. 
 
-    :::image type="content" source="../media/u5-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false":::
+    :::image type="content" source="../media/u5-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false"::: <!-- AU: Can we delete "Contoso" from these screenshot and just make it a generic company? If not, then I can make just this subsection introduce the Contoso company name. --> 
 
 1. On the **contoso-slurm-lab-cluster** page, select the **Create new alert** link.
 1. In the **Cluster usage alert for contoso-slurm-lab-cluster** pop-up window, specify the following settings and select **Save**:
@@ -109,7 +108,7 @@ To prepare for operationalizing your cluster, you will set alerts notifying you 
 
 ## Clean up the lab environment
 
-Your testing of the cluster deployment process by using the Azure CycleCloud application is completed. In order to avoid unnecessary costs associated with the use of Azure resources, you will now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this course.
+Your testing of the cluster deployment process by using the Azure CycleCloud application is completed. To avoid unnecessary costs associated with the use of Azure resources, you will now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this course.
 
 1. On your computer, in the web browser displaying the graphical interface of the Azure CycleCloud web application, on the **contoso-slurm-lab-cluster** page, select the **Terminate** link, and, when prompted to confirm, select **OK**.
 1. Monitor the termination process.
@@ -123,4 +122,4 @@ Your testing of the cluster deployment process by using the Azure CycleCloud app
 1. On your computer, switch to the browser window displaying the Azure portal.
 1. In the Azure portal, navigate to the **cyclecloud-rg** blade, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type **cyclecloud-rg**, and select **Delete**.
 
-Congratulations! You successfully completed the second exercise of this module. In this exercise, you ensured availability of compute and network resources required to accommodate deployment of a new cluster, deployed the cluster by using Azure CycleCloud, configured its budget alerts, and started it to validate its functionality. Finally, you terminated the cluster and deleted all resources you provisioned in the course of this module to avoid any unnecessary costs.
+Congratulations! You successfully completed the second exercise of this module. In this exercise, you ensured availability of compute and network resources required to accommodate deployment of a new cluster. Then, you deployed the cluster by using Azure CycleCloud, configured its budget alerts, and started it to validate its functionality. Finally, you terminated the cluster and deleted all resources you provisioned in the course of this module to avoid any unnecessary costs.
