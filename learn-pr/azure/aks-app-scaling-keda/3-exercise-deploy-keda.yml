@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |
-  [!include[](includes/33-exercise-deploy-keda.md)]
+  [!include[](includes/3-exercise-deploy-keda.md)]
