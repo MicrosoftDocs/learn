@@ -10,8 +10,7 @@ az servicebus namespace delete \
    --name $AZ_SB_PREMIUM_NAMESPACE
 
 az group delete \
-   --name $AZ_RESOURCE_GROUP \
-   --location $AZ_LOCATION
+   --name $AZ_RESOURCE_GROUP
 ```
 
 ## Extra resources
