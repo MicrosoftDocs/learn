@@ -23,6 +23,6 @@ quiz:
         - content: Send an email after the interview to thank the interviewer.
           isCorrect: true
           explanation: Correct. You want to leave a good impression. Even if you don't get this particular position the company might contact you at a later date for some other opportunity.
-        - content: Don't talk over the interviewer
-          explanation: Incorrect. While it's a bad idea to talk over your interviewer too often, active engagement can show enthusiasm for the position.
+        - content: Disagreeing with your interviewer
+          explanation: Incorrect. It's never wrong to disagree with your interviewer, just do so in a respectful way. That is acknowledge their opinion and how you offer a different perspective.
           isCorrect: false

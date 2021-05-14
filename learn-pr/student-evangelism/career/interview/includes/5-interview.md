@@ -1,7 +1,6 @@
 [placeholder for Redmond interview]
 
 
-### You are a team player in a team
 
 
 ### Culture questions

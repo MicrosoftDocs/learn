@@ -6,7 +6,6 @@ Then you were taken to the point of the interview and taught how to prepare for 
 
 Lastly you focused on things like etiquette, how to leave a lasting good impression and how to approach the topic of salary negotiation.
 
-Hopefully you feel a bit more empowered having read through all content. Definitely have a look at the links below and other links left earlier in the module to ensure you are set up for success - you can do this.
 
 ### Additional resources
 
