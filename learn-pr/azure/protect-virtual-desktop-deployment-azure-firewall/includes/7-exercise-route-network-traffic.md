@@ -15,7 +15,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise units.
 1. Search for and select **Route tables**.
-1. Select **+ Add**.
+1. Select **+ New**.
 1. Use the following values.
 
     |Field |Value |

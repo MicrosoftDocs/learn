@@ -56,7 +56,7 @@ Create a registration token to authorize a session host to join the host pool.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
-    New-AzWvdRegistrationInfo `
+    $regToken = New-AzWvdRegistrationInfo `
     -ResourceGroupName $resourceGroup `
     -HostPoolName $hostPoolName `
     -ExpirationTime $((get-date).ToUniversalTime().AddHours(4).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ'))
@@ -65,9 +65,7 @@ Create a registration token to authorize a session host to join the host pool.
 1. Run the following command to get the registration token.
 
    ```powershell
-    (Get-AzWvdRegistrationInfo `
-    -ResourceGroupName $resourceGroup `
-    -HostPoolName $hostPoolName).token
+    $regToken.Token
    ```
 
 1. Copy the token to a note app like Notepad.  
@@ -122,11 +120,9 @@ Create an Azure VM to act as a session host for the host pool.
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.
 1. Select **Connect** > **RDP**.
-1. Select **Open file** > **Connect**.
+1. Select **Download RDP File** > **Open file** > **Connect**.
 1. In the **Windows Security** window, select **More choices** > **Use a different account**.
 1. Enter the user name and the password you used when you created the VM, and then select **OK**.
-1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
-1. Type in the username and password you used when you created the VM.
 1. If you're asked to connect despite certificate errors, select **Yes**.
 
 ## Register the virtual machine with host pool

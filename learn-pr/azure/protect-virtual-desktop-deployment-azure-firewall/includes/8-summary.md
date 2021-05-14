@@ -69,3 +69,8 @@ TODO: describe the business impact
 <!-- Do not include any other content -->
 
 [!include[](../../../includes/azure-subscription-cleanup.md)]
+
+## Learn more
+
+- [Connect virtual networks with virtual network peering using PowerShell](/azure/virtual-network/tutorial-connect-virtual-networks-powershell)
+- [Virtual network peering overview](/azure/virtual-network/virtual-network-peering-overview)
