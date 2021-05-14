@@ -9,7 +9,7 @@ You now understand the fundamentals of building Blazor apps. You can use your HT
 ## Learn more
 
 - [Blazor homepage](/apps/aspnet/web-apps/blazor)
-- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor/?)
+- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor)
 - [Host and deploy ASP.NET Core Blazor WebAssembly](/aspnet/core/host-and-deploy/blazor/webassembly)
 - [Project structure for Blazor apps](/dotnet/architecture/blazor-for-web-forms-developers/project-structure)
 - [Build progressive web applications with ASP.NET Core Blazor WebAssembly](/aspnet/core/blazor/progressive-web-app)

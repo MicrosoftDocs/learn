@@ -1,44 +1,58 @@
-In this exercise, you'll install the tools and components needed to build a Blazor app locally using **Visual Studio Code** application.
+Let's start by creating our first Blazor web app.
 
-This exercise assumes you've already installed Visual Studio Code. You can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
-
-## Install tools and templates
-
-Start by downloading the Microsoft .NET 5 SDK. It includes the .NET Core SDK, the .NET Core runtime, and the ASP.NET Core runtime.
-
-Install .NET 5 by downloading the latest version for your operating system from https://dotnet.microsoft.com/download/dotnet/5.0.
-
-## Install Visual Studio Code extensions
-
-To develop Blazor apps, install the Microsoft C# Visual Studio Code extension.
-
-### Install the C# for Visual Studio Code extension
-
-1. Open Visual Studio Code on your local machine.
-
-1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
-
-1. Search for "C# for Visual Studio Code".
-
-1. Install the **C# for Visual Studio Code (powered by OmniSharp)** extension by selecting **Install**.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS). 
 
 ## Create a new Blazor app
 
-To validate your setup, make a new Blazor WebAssembly client web app that uses the installed template.
+To set up a Blazor project to work with, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
-1. Open a terminal or Command Prompt window on your local development machine.
+1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. At the command prompt, create a new project with:
+1. Create a new folder named **BlazorApp** in the location of your choice, and then click **Select Folder**.
+
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+
+1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new blazorserver -o BlazorApp --no-https
-    ``` 
+    dotnet new blazorserver
+    ```
 
-1. Go to the BlazorApp subfolder.
+    This command creates a basic Blazor server project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
+
+    You should now have access to these files.
+
+    ```bash
+    -| bin
+    -| Data
+    -| obj
+    -| Pages
+      -| _Host.cshtml
+      -| Counter.razor
+      -| Error.cshtml
+      -| Error.cshtml.cs
+      -| FethData.razor
+      -| Index.razor
+    -| Properties
+    -| Shared
+      -| MainLayout.razor
+      -| MainLayout.razor.css
+      -| NavMenu.razor
+      -| NavMenu.razor.css
+      -| SurveyPrompt.razor
+    -| wwwroot
+    -| _Imports.razor
+    -| App.razor
+    -| appsettings.Development.json
+    -| appsettings.json
+    -| BlazorApp.csproj
+    -| Program.cs
+    -| Startup.cs
+    ```
 
 ## Run the app
 
-1. At the command prompt, run the app in **watch mode** with this command:
+1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
  
     ```dotnetcli
     dotnet watch run

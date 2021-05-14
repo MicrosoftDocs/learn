@@ -21,8 +21,3 @@ In this module, you'll:
 - Update logic in a Blazor web app.
 - Learn about event handling and data binding in Blazor components
 - Use routing in a Blazor app
-
-## Prerequisites
-
-- Basic knowledge of web app concepts
-- C# .NET experience at a beginner level

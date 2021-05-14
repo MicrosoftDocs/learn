@@ -1,13 +1,11 @@
-In this exercise, you'll create a simple ToDo component inside our Blazor app. 
+In this exercise, you'll create a simple to do list component inside our Blazor app.
 
 ## Create the ToDo page
-
-1. Go to the ToDoList subfolder.
 
 1. Create the ToDo page with the following command:
 
     ```dotnetcli
-    dotnet new razorcomponent -n ToDo -o Pages
+    dotnet new razorcomponent -n Todo -o Pages
     ```
     
     The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
@@ -16,7 +14,7 @@ In this exercise, you'll create a simple ToDo component inside our Blazor app.
     > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
     
 
-1. Open the `Todo` component in any file editor and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+1. Open the `Todo` component add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"

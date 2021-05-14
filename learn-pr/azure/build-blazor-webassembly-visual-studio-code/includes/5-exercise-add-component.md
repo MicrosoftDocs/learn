@@ -20,17 +20,17 @@ In this exercise, you'll add a Razor component to the home page of our applicati
 
 1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the `Index.razor` file.
 
-```razor
-@page "/"
+   ```razor
+   @page "/"
 
-<h1>Hello, world!</h1>
+   <h1>Hello, world!</h1>
 
-Welcome to your new app.
+   Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+   <SurveyPrompt Title="How is Blazor working for you?" />
 
-<Counter />
-```
+   <Counter />
+   ```
 
 Save the file and the `dotnet watch run` command you executed in the previous module will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
 
