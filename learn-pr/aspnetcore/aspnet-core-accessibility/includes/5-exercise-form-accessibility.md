@@ -18,17 +18,17 @@ For this exercise, we will be using the FastPass tool.
 
 1. Open the Launch Pad for Accessibility Insights for Web by clicking on the extension toolbar button in the browser. You can also open  or by using the keyboard shortcuts Ctrl+Shift+K (⌘+Shift+K for macOS)
 
-   ![Windows screenshots to enable Narrator](../media/launch-pad.png)
+   ![Accessibility Insights for Web Launch Pad](../media/launch-pad.png)
 
 1. Click on the **FastPass** link. A second window will open, which will list the accessibility issues that FastPass has detected using automated checks.
 
-    ![Windows screenshots to enable Narrator](../media/automated-checks-first-run.png)
+    ![Accessibility Insights for Web Fast Pass](../media/automated-checks-first-run.png)
 
    Automated Checks have detected a number of errors. We're going to focus on the form in this exercise.
 
 1. There are two different ways to interact with the error message - we can use the list in the FastPass tool, or we can click on the error messages in the web page. In this case, the FastPass tool lists errors across the entire page, which can be a little overwhelming when we want to focus on the form. We'll use the in-page error message for now. Click on the exclamation point to the right of the *First Name* label.
 
-    ![Windows screenshots to enable Narrator](../media/first-name-error-icon.png)
+    ![Error icon displayed for First Name label](../media/first-name-error-icon.png)
 
    This shows that this label has low contrast, and also brings to our attention the fact that we're using color coding to indicate required fields in this form. By clicking on the error icons for the other labels, we can see that they all have low contrast. Let's look at the HTML for the the First Name section of the form to understand the color contrast issue:
 
@@ -58,7 +58,7 @@ For this exercise, we will be using the FastPass tool.
 
 1. Run the application again, then launch the *FastPass* as before. We can see that the error for the *First Name* label has been cleared.
 
-    ![Windows screenshots to enable Narrator](../media/first-name-fixed.png)
+    ![Accessibility Insights showing First Name label has been fixed](../media/first-name-fixed.png)
 
     Great! That wasn't too hard, and now that we know the fix we can do the same thing for the rest of the labels, too. 
 
@@ -131,7 +131,11 @@ For this exercise, we will be using the FastPass tool.
 
    This will now show a blue border around the required fields.
 
-1. We're now ready to fix up the form element. Clicking on the error indication for the *First Name* field shows that there are two errors. The first error indicates that the form `<input>` tag does not have a unique attribute. This is a problem, since HTML ID's are always assumed to be unique, and assistive technologies will often only act on the first element. Looking at the source code, we can see that we used `Name` as the ID for both the *First Name* and *Last Name* fields:
+1. We're now ready to fix up the form element. Clicking on the error indication for the *First Name* field shows that there are two errors. The first error indicates that the form `<input>` tag does not have a unique attribute. This is a problem, since HTML ID's are always assumed to be unique, and assistive technologies will often only act on the first element.
+
+   ![Error message showing a unique ID attribute is required for each input](../media/id-attribute-required.png)
+
+   Looking at the source code, we can see that we used `Name` as the ID for both the *First Name* and *Last Name* fields:
 
    ```html
    <div class="col-8">
@@ -167,7 +171,7 @@ For this exercise, we will be using the FastPass tool.
 
 1. Run the application and check **FastPass** again. Clicking on the error indication for each of the input fields shows that we're getting really close now, each has the same error message: each form field should have a label.
 
-    ![Windows screenshots to enable Narrator](../media/label-error-message.png)
+    ![Error message showing each form element should have an associated label](../media/label-error-message.png)
 
 1. Update the *First Name* text to use a `<label>` tag as shown:
 
@@ -179,7 +183,7 @@ For this exercise, we will be using the FastPass tool.
      <div class="col-8">
        <input type="text" id="FirstName" required>
      </div>
-   </div>   
+   </div>
    ```
 
 1. Run the application and **FastPass** again. You should see two things. First, the error message for the *First Name* element has cleared. Second, clicking on the *First Name* label now selects the *First Name* input.
@@ -240,7 +244,19 @@ For this exercise, we will be using the FastPass tool.
 
    This clears all the form field errors!
 
-1. Now it's time to fix the *Submit* button. There are a few problems here - low contrast (as shown in the error message), as well as an `onclick` event that runs custom JavaScript. We can fix all of that by replacing the button with a standard `<input type="submit">`:
+1. Now it's time to fix the *Submit* button. There are a few problems here - low contrast (as shown in the error message), as well as an `onclick` event that runs custom JavaScript. We can fix all of that by replacing the button with a standard `<input type="submit">`.
+
+   Find this code:
+
+   ```html
+   <div class="button">
+     <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
+       Submit Form
+     </a>
+   </div>   
+   ```
+
+   Replace it with this:
 
    ```html
    <div class="text-center">
@@ -306,4 +322,4 @@ We've completed all of our required fixes, but there's one more quick improvemen
 
 1. Run the application and check with **FastPass**. You'll see that we've significantly improved the experience for all users while fixing our accessibility issues. The new form shows no errors in **FastPass**, and includes browser-native input controls with validation and required field checking with no additional code.
 
-    ![Windows screenshots to enable Narrator](../media/completed-form.png)
+    ![Completed form showing various input types and automatic validation](../media/completed-form.png)
