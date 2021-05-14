@@ -4,7 +4,7 @@ Before attempting to navigate through our page using a screen reader, we'll find
 
 1. Run the site and **FastPass**. Our last remaining issue is the missing `alt` text for the one image on the page.
 
-   :::image type="content" source="../media/missing-alt-error.png" alt-text="Screenshot of Accessibility Insights displaying a missint alt error for an image.":::
+   :::image type="content" source="../media/missing-alt-error.png" alt-text="Screenshot of Accessibility Insights displaying a missing alt error for an image.":::
 
 1. This is a purely decorative image, so we can just add an empty `alt` description:
 
