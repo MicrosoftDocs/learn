@@ -13,8 +13,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 ### Create route table
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise units.
-1. Search for and select **Route tables**.
+1. In [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Route tables**.
 1. Select **+ New**.
 1. Use the following values.
 
@@ -64,7 +63,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 Create an application rule collection with rules to allow Windows Virtual Desktop access to several Fully Qualified Domain Names (FQDNs).
 
-1. Search for and select **Firewalls**.
+1. In the Azure portal, search for and select **Firewalls**.
 1. Select the **learn-fw** firewall.
 1. Under **Settings**, select **Rules (classic)**.
 :::image type="content" source="../media/7-firewall-rules-classic.png" alt-text="Screenshot that shows the rules classic option under settings in the firewall.":::

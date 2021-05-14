@@ -12,6 +12,8 @@ In this unit, you create a host pool and  a VM that'll act as a session host. To
 
 ## Create a resource group
 
+First, create a resource group to contain all the resources you'll create in this module.
+
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
 1. Select **PowerShell**.
@@ -51,8 +53,7 @@ Next, let's create a host pool that will contain the VM you'll create later in t
 
 Create a registration token to authorize a session host to join the host pool.
 
-1. From the top right-hand side of the portal, select **Cloud Shell**.
-1. In the Cloud Shell PowerShell environment, run the following command to create a registration token that'll expire in 4 hours.
+1. In Cloud Shell, run the following command to create a registration token that'll expire in 4 hours.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
