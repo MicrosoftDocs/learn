@@ -6095,5 +6095,40 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/2-exercise-setup",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/3-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/3-views",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/4-exercise-create-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/4-exercise-create-views",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/5-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/5-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/6-exercise-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/6-exercise-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/index",
+      "redirect_document_id": false
+    }
   ]
 }
