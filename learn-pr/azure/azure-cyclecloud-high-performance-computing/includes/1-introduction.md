@@ -12,7 +12,7 @@ You start exploring the options for deploying, operating, and monitoring HPC clu
 
 ## What will we be doing?
 
-In this module, you'll first deploy an Azure VM hosting the Azure CycleCloud application and configure it to work with your Azure subscription. Then, you will use the graphical interface of the newly deployed Azure CycleCloud application to create an HPC cluster based on built-in Slurm templates and validate its basic functionality. To address directives from your management team, you will also configure budget alerts, terminate the cluster once you complete your evaluation, and delete all resources you provisioned in the course of this module to avoid any unnecessary costs.
+In this module, you'll first deploy an Azure VM hosting the Azure CycleCloud application and configure it to work with your Azure subscription. Then, you'll use the graphical interface of the newly deployed Azure CycleCloud application to create an HPC cluster based on built-in Slurm templates and validate its basic functionality. To address directives from your management team, you'll also configure budget alerts, terminate the cluster once you complete your evaluation, and delete all resources you provisioned in the course of this module to avoid any unnecessary costs.
 
 ## What is the main goal?
 
