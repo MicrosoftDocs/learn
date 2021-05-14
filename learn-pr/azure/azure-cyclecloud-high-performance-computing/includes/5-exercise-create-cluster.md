@@ -1,6 +1,6 @@
-You can create new clusters directly from the graphical interface of the CycleCloud web application. CycleCloud offers a number of predefined, scheduler-specific templates, which considerably simplify cluster provisioning for the corresponding schedulers. 
+You can create new clusters directly from the graphical interface of the CycleCloud web application. CycleCloud offers many predefined, scheduler-specific templates, which considerably simplify cluster provisioning for the corresponding schedulers. 
 
-Now that you have provisioned an Azure VM hosting the CycleCloud web applications, you are ready to evaluate its use for deployment of a Swarm-based HPC cluster into Azure. First, you need to ensure that your Azure subscription will be able to accommodate the cluster's resource requirements. You also want to take into account the directives from your management team, who want to keep the cluster's cost within the project's budget. Consequently, you plan to set up CycleCloud budget alerts and deprovision the lab environment once your evaluation is completed. 
+Now that you have provisioned an Azure VM hosting the CycleCloud web applications, you are ready to evaluate its use for deployment of a Swarm-based HPC cluster into Azure. First, you need to ensure that your Azure subscription will be able to accommodate the cluster's resource requirements. You also want to take into account the directives from your management team, who want to keep the cluster's cost within the project's budget. So, you plan to set up CycleCloud budget alerts and deprovision the lab environment once your evaluation is completed. 
 
 ## Prepare for the deployment of an HPC cluster
 
