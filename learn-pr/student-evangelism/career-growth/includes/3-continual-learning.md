@@ -1,4 +1,5 @@
-TODO: needs a lead in sentence on a problem and why continual learning helps to fix that. Also no H1 in units
+Adopting a continually-learning mindset early in your career will pay off in the long term. There are some good habits you can cultivate now to set you on the path towards always learning.
+
 ## Becoming a Continual Learner
 
 If you just graduated from an educational program, it can be daunting to think that, in engineering disciplines, you must always be ready to learn something new. This doesn't mean that you have to jump right back into a higher degree program, rather, it is embracing a mindset.
@@ -19,11 +20,11 @@ Do you prefer learning via videos? Make a curated playlist for yourself on YouTu
 
 Set yourself a goal of learning one new thing every day. This new thing doesn't have to be a tech-related activity! Sometimes even your hobbies can inform your grasp of technical topics.
 
-# Formal study
+## Formal study
 
 Some companies support their employees in continuing education in accredited programs. If so, you can weigh the amount of time needed to complete a nanodegree or university degree, and consider applying. Continuing your education is never a waste of time.
 
-# Your 'soft skills'
+## Your 'soft skills'
 
 Continual improvement doesn't only mean learning about new technical advances. It also involves honing your 'soft skills' - your communication, listening, and empathy skills. It turns out that advancing in a career often has more to do with great soft skills rather than stellar technical expertise, although both can and often do go hand in hand.
 

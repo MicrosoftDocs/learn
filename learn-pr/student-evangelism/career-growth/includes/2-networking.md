@@ -1,4 +1,4 @@
-TODO, needs a lead in sentence on a problem statement and how networking helps fix that
+When you are a new hire, you can feel like a stranger in a strange land. There are concrete steps you can take, however, to connect to people in your new company. 
 
 ## Your first day
 
