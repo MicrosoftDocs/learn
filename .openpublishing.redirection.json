@@ -6085,5 +6085,15 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/django-models-data/index",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/django/4-views-templates/2-exercise-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/django-views-templates/2-exercise-setup",
+      "redirect_document_id": false
+    },
   ]
 }
