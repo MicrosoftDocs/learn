@@ -24,7 +24,7 @@ Review the following questions when considering Azure Data Factory as your data 
 
 If your organization is small, and works with limited data sources, then you might not require a data integration service at all. If, however, your organization works with big data, or is a traditional relational data warehousing organization, you might benefit from a data integration solution. Consider the following points:
 
-- Big data organizations rely on technologies for handling large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure SQL Data Warehouse, Azure Blobs, Azure Data Lake, Azure HD Insight, Azure Databricks, and Azure Machine Learning.
+- Big data organizations rely on technologies for handling large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure SQL Data Warehouse, Azure Blobs, Azure Data Lake, Azure HDInsight, Azure Databricks, and Azure Machine Learning.
 - Relational data warehousing organizations typically rely on technologies such as SQL Server. SSIS is often used to create SSIS packages. For such organizations, Azure Data Factory provides the ability to run SSIS packages on Azure, letting them access both cloud and on-premises data services.
 
 ### Do you have the coding resources needed?
