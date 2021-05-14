@@ -23,7 +23,7 @@ Let's start with the simplest case: required fields. Rather than indicating thes
 <input type="text" id="name" required>
 ```
 
-If you do want to include additional visual design for required elements, you can use the CSS pseudo-selector for required elements so you can include additional design for required elements. It's fine to provide additional styling, but using the `required` attribute provides accessible indication to all users. The following CSS style will set the border color for required textboxes to red.
+If you do want to include more visual design for required elements, you can use the CSS pseudo-selector for required elements so you can include another design for required elements. It's fine to provide other styling, but using the `required` attribute provides accessible indication to all users. The following CSS style will set the border color for required textboxes to red.
 
 ```css
 input:required
@@ -34,13 +34,13 @@ input:required
 
 ### Input types
 
-HTML form elements offer comprehensive validation support for a variety of common input types. Rather than using custom JavaScript and HTML to show a date picker, for instance, you can just use this:
+HTML form elements offer comprehensive validation support for various common input types. Rather than using custom JavaScript and HTML to show a date picker, for instance, you can just use this:
 
 ```html
 <input type="date" id="birthday">
 ```
 
-This provides a native date picker popup for the user's browser and operating system that is already tested for accessibility, and it handles validation for you. There is broad support for a lot of input types that used to require custom regex validation, UI elements, and JavaScript:
+This provides a native date picker popup for the user's browser and operating system that is already tested for accessibility, and it handles validation for you. There is broad support for much input types that used to require custom regex validation, UI elements, and JavaScript:
 
 - Email
 - Date
@@ -55,7 +55,7 @@ So now you can write less code *and* it will be more accessible! It's a win-win!
 
 ## Tab order
 
-Users who are navigating through your form using a keyboard or screen reader will rely on tab order. This will usually just work unless you've got a complicated form design or are trying to do something too fancy. It's actually kind of hard to mess this up for most forms. However, it's important to test. You can test just by hitting the tab key on your keyboard and testing the interaction, but Accessibility Insights for Web makes this a lot easier. We'll see that in the next exercise.
+Users who are navigating through your form using a keyboard or screen reader will rely on tab order. This will just work unless you've got a complicated form design or are trying to do something too fancy. It's actually kind of hard to mess this up for most forms. However, it's important to test. You can test just by hitting the tab key on your keyboard and testing the interaction, but Accessibility Insights for Web make a lot easier. We'll see that in the next exercise.
 
 ## Form submission
 
@@ -69,11 +69,11 @@ When a user is done filling out the form and ready to submit it, nothing is more
 </form>
 ```
 
-You've probably picked up the pattern by now: using the built-in HTML form behavior rather than wiring up custom JavaScript and UI will make your form more usable across a variety of browsing experiences.
+You've probably picked up the pattern by now: using the built-in HTML form behavior rather than wiring up custom JavaScript and UI will make your form more usable across various browsing experiences.
 
 ## Accessibility Insights for Web
 
-Accessibility Insights for Web is an extension for Chrome and the new Microsoft Edge that helps developers find and fix accessibility issues in web apps and sites. We'll be using it in the following exercises to identify and fix accessibility problems in our sample application.
+Accessibility Insights for Web are an extension for Chrome and the new Microsoft Edge that helps developers find and fix accessibility issues in web apps and sites. We'll be using it in the following exercises to identify and fix accessibility problems in our sample application.
 
 The tool supports two primary scenarios:
 

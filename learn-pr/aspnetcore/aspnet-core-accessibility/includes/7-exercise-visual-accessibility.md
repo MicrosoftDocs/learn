@@ -5,7 +5,7 @@ In this unit, you will find and fix visual accessibility issues in the sample pi
 In the previous exercise, we used the accessibility error indicators in the form elements or our web page. In this exercise, we will
 use the Accessibility Insights for web page.
 
-1. Run the application and launch **FastPass**. You should see 3 color contrast issues detected.
+1. Run the application and launch **FastPass**. You should see three color contrast issues detected.
 
     ![FastPass with contrast issues](../media/fast-pass-contrast-issues.png)
 

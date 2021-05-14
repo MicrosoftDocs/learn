@@ -8,7 +8,7 @@ In this exercise, you will use Accessibility Insights for web to identify and fi
 
 ## Inspect the form using Fast Pass
 
-Accessibility Insights for Web includes three different tools:
+Accessibility Insights for Web include three different tools:
 
 - **FastPass** - Run three tests to find the most common accessibility issues in less than 5 minutes.
 - **Assessment** - Walk through a guided process for assessing accessibility compliance.
@@ -24,7 +24,7 @@ For this exercise, we will be using the FastPass tool.
 
     ![Accessibility Insights for Web Fast Pass](../media/automated-checks-first-run.png)
 
-   Automated Checks have detected a number of errors. We're going to focus on the form in this exercise.
+   Automated Checks have detected many errors. We're going to focus on the form in this exercise.
 
 1. There are two different ways to interact with the error message - we can use the list in the FastPass tool, or we can click on the error messages in the web page. In this case, the FastPass tool lists errors across the entire page, which can be a little overwhelming when we want to focus on the form. We'll use the in-page error message for now. Click on the exclamation point to the right of the *First Name* label.
 
@@ -62,7 +62,7 @@ For this exercise, we will be using the FastPass tool.
 
     Great! That wasn't too hard, and now that we know the fix we can do the same thing for the rest of the labels, too. 
 
-1. Reviewing the HTML for the rest of the form, we can see that the labels are using either `text-primary` or `text-black-50` to color the labels. Remove these attributes, and add the `required` attribute to the *Last Name* and *E-mail Address" input fields:
+1. Reviewing the HTML for the rest of the form, we can see that the labels are using either `text-primary` or `text-black-50` to color the labels. Remove these attributes, and add the `required` attribute to the *Last Name* and E-mail Address" input fields:
 
    ```html
    <form name="CustomerInfo">
@@ -131,7 +131,7 @@ For this exercise, we will be using the FastPass tool.
 
    This will now show a blue border around the required fields.
 
-1. We're now ready to fix up the form element. Clicking on the error indication for the *First Name* field shows that there are two errors. The first error indicates that the form `<input>` tag does not have a unique attribute. This is a problem, since HTML ID's are always assumed to be unique, and assistive technologies will often only act on the first element.
+1. We're now ready to fix up the form element. Clicking on the error indication for the *First Name* field shows that there are two errors. The first error indicates that the form `<input>` tag does not have a unique attribute. This is a problem, since HTML IDs are always assumed to be unique, and assistive technologies will often only act on the first element.
 
    ![Error message showing a unique ID attribute is required for each input](../media/id-attribute-required.png)
 
@@ -152,7 +152,7 @@ For this exercise, we will be using the FastPass tool.
    </div>
    ```
 
-   Change the ID's to `FirstName` and `LastName` respectively:
+   Change the IDs to `FirstName` and `LastName` respectively:
 
    ```html
    <div class="col-8">
@@ -169,7 +169,7 @@ For this exercise, we will be using the FastPass tool.
    </div>
    ```
 
-1. Run the application and check **FastPass** again. Clicking on the error indication for each of the input fields shows that we're getting really close now, each has the same error message: each form field should have a label.
+1. Run the application and check **FastPass** again. Clicking on the error indication for each of the input fields shows that we're getting close now, each has the same error message: each form field should have a label.
 
     ![Error message showing each form element should have an associated label](../media/label-error-message.png)
 
@@ -244,7 +244,7 @@ For this exercise, we will be using the FastPass tool.
 
    This clears all the form field errors!
 
-1. Now it's time to fix the *Submit* button. There are a few problems here - low contrast (as shown in the error message), as well as an `onclick` event that runs custom JavaScript. We can fix all of that by replacing the button with a standard `<input type="submit">`.
+1. Now it's time to fix the *Submit* button. There are a few problems here - low contrast (as shown in the error message), and an `onclick` event that runs custom JavaScript. We can fix all of that by replacing the button with a standard `<input type="submit">`.
 
    Find this code:
 
@@ -320,6 +320,6 @@ We've completed all of our required fixes, but there's one more quick improvemen
    </form>   
    ```
 
-1. Run the application and check with **FastPass**. You'll see that we've significantly improved the experience for all users while fixing our accessibility issues. The new form shows no errors in **FastPass**, and includes browser-native input controls with validation and required field checking with no additional code.
+1. Run the application and check with **FastPass**. You'll see that we've improved the experience for all users while fixing our accessibility issues. The new form shows no errors in **FastPass**, and includes browser-native input controls with validation and required field checking with no another code.
 
     ![Completed form showing various input types and automatic validation](../media/completed-form.png)
