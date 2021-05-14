@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-aspnetcore
   
 title: Exercise - Find and fix content for screen reader accessibility
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/9-exercise-fix-content-for-screen-readers.md)]
