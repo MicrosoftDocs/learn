@@ -48,7 +48,7 @@ The next task is to create the **vnet** virtual network and the three subnets th
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --address-prefixes 10.0.0.0/16 \
         --subnet-name publicsubnet \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
 ```
 
 2. Run the following command in Cloud Shell to create the **privatesubnet** subnet.
