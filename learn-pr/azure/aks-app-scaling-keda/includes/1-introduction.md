@@ -40,9 +40,7 @@ All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/clou
 
 ## Before We Start
 
-We'll assume an AKS cluster is already created and running or...
-
-If you need a create a simple Kubernetes cluster you can do the following in a Cloud Shell environment:
+You need to create a simple Kubernetes cluster. Following these steps will give you a basic, functioning environment. In a Cloud Shell complete these tasks:
 
 ```bash
 RESOURCE_GROUP=rg-contoso-video
@@ -69,11 +67,9 @@ az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
 
 The complete cluster creation can take up to five minutes.
 
-[!IMPORTANT] Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
+> [!IMPORTANT] Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
 
-We also assume a Azure Redis Cache is running or...
-
-To create a simple Azure Redis Cache, run the following commands in a Cloud Shell environment:
+You need to create a simple Azure Redis Cache. Following these steps will give you a basic, functioning cache. In a Cloud Shell environment complete these tasks:
 
 ```bash
 REDIS_NAME=redis-contoso-video
@@ -84,4 +80,7 @@ REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hos
 REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
 ```
 
-[!IMPORTANT] Make a note of the `hostName`, and `primaryKey` values returned for later use.
+> [!IMPORTANT] Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables REDIS_HOST and REDIS_KEY.
+
+> [!NOTE]
+> Creating these resources in this manner is not recommended for Production use and only recommended to experiment with this module.
