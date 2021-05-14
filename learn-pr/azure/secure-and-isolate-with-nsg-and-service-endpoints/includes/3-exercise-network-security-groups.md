@@ -36,7 +36,7 @@ Find the location name with the following command.
         --name ERP-servers \
         --address-prefixes 10.0.0.0/16 \
         --subnet-name Applications \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
     ```
 
 5. To create the **Databases** subnet, in the Cloud Shell, run the following command.
