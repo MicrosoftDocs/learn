@@ -24,6 +24,6 @@ quiz:
       - content: "The alt text should be a GUID."
         isCorrect: false
         explanation: "Do not use GUIDs for alt text."
-      - content: "Use `alt=\u0022\u0022"
+      - content: "Use alt=\u0022\u0022"
         isCorrect: true
         explanation: "Correct, you should use a blank alt value for decorative images"
