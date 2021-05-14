@@ -1,8 +1,8 @@
-Modern organizations are data-generating machines. Not only do they gather and produce massive amounts of information, but this data comes in diverse formats such as structured databases, documents, media files, server logs, JSON files, and raw device data. How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight and Azure Data Lake Analytics can work directly with Azure Data Lake Storage to process, analyze, and visualize that data.
+Modern organizations are data-generating machines. Not only do they gather and produce massive amounts of information, but this data comes in diverse formats such as structured databases, documents, media files, server logs, JSON files, and raw device data. How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight, Azure Synapse Analytics, and Azure Databricks can work directly with Azure Data Lake Storage to process, analyze, and visualize that data.
 
 ## Example scenario
 
-Suppose you work for an national package delivery service. Your organization has many different departments, each of which generates large amounts of data in diverse formats:
+Suppose you work for a national package delivery service. Your organization has many different departments, each of which generates large amounts of data in diverse formats:
 
 - Your delivery trucks generate a continuous stream of data from Internet of Things (IoT) sensors for engine diagnostics.
 - Truck dash cams send continuous video feeds to monitor driver performance.

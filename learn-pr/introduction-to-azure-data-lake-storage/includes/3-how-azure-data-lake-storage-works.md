@@ -32,7 +32,7 @@ For data that resides on a local computer, you can use any of the following tool
 > [!IMPORTANT]
 > For most of these ingestion methods to work, your storage account must be using the hierarchical namespace.
 
-For Azure Storage Blob data, you can use any of the following tools to copy blobs to Azure Data Lake Storage:
+For Azure Blob Storage data, you can use any of the following tools to copy blobs to Azure Data Lake Storage:
 
 - AzCopy
 - Azure Data Factory

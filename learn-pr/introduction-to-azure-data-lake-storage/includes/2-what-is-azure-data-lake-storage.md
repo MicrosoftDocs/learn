@@ -19,7 +19,7 @@ A data lake enables your organization to quickly and easily store, access, and a
 
 ## Azure Data Lake Storage definition
 
-Azure Data Lake Storage is a cloud-based, enterprise data lake solution engineered to store massive amounts of data in any format and to facilitate big data analytical workloads. You can use Azure Data Lake Storage to capture data of any size, type, and ingestion speed in a single location for easy access and analysis using a variety of frameworks.
+Azure Data Lake Storage is a cloud-based, enterprise data lake solution engineered to store massive amounts of data in any format and to facilitate big data analytical workloads. You can use Azure Data Lake Storage to capture data of any type and ingestion speed in a single location for easy access and analysis using a variety of frameworks.
 
 > [!NOTE]
 > The current implementation of Azure's data lake storage service is Azure Data Lake Storage Gen2. You might notice references to the previous implementation, Azure Data Lake Storage Gen1, which is scheduled to be retired on February 29, 2024.
@@ -37,7 +37,7 @@ To better understand Azure Data Lake Storage, you can examine its following char
 
 ### Data storage
 
-Azure Data Lake Storage can store any type of data by using the native format of that data. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Also, Azure Data Lake Storage doesn't perform any special handling of data based on the type of data it stores. With support for any data format and unlimited data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
+Azure Data Lake Storage can store any type of data by using the native format of that data. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Also, Azure Data Lake Storage doesn't perform any special handling of data based on the type of data it stores. With support for any data format and massive data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
 
 ### Data access
 
@@ -79,7 +79,7 @@ Azure Data Lake Storage takes advantage of the Azure Blob replication models tha
 
 ### Data scalability
 
-Azure Data Lake Storage offers unlimited storage and can store a variety of data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes to a few petabytes. All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads, then just as easily scale back down when demand drops.
+Azure Data Lake Storage offers massive storage and can accept a variety of data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes to a few petabytes. All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads, then just as easily scale back down when demand drops.
 
 ### Data analysis
 
@@ -87,10 +87,8 @@ Data analysis frameworks that use HDFS as their data access layer can directly a
 
 In Azure, Data Lake Storage integrates with the following frameworks for analysis:
 
-- Azure Data Explorer
 - Azure HDInsight
 - Azure Machine Learning
-- Azure Stream Analytics
 - Azure Synapse Analytics
 - Microsoft Power BI
 

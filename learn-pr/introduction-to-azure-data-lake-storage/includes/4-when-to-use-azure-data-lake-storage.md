@@ -22,7 +22,7 @@ These issues are irrelevant if your organization deals with relatively small dat
 
 When deciding whether to move to a data lake from a traditional, on-premises data warehouse, one of the biggest factors is data size. Here, data size refers to both the overall amount of stored data and the size of individual files.
 
-Data warehouses are purpose-built for dealing with large volumes of data, but they can't deal with *unlimited* data for various reasons:
+Data warehouses are purpose-built for dealing with large volumes of data, but there are hard limits on the total amount of data they can deal with:
 
 - They use costly, high-end hardware for reliability and performance.
 - Expansion is limited to the physical footprint of the data center.
@@ -31,7 +31,6 @@ Data warehouses are purpose-built for dealing with large volumes of data, but th
 
 In comparison, Azure Data Lake Storage:
 
-- Offers unlimited storage and unlimited file sizes.
 - Runs on virtual hardware on the Azure platform, so storage is scalable, fast, and reliable without incurring massive charges.
 - Separates storage costs from compute costs. As your data volume grows, only your storage requirements change.
 - Takes care of all costs associated with the data center.
