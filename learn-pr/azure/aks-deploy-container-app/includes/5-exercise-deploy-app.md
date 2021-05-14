@@ -124,7 +124,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           nodeSelector:
-            "beta.kubernetes.io/os": linux
+            kubernetes.io/os: linux
           containers:
             - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
@@ -162,7 +162,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           nodeSelector:
-            beta.kubernetes.io/os: linux
+            kubernetes.io/os: linux
           containers:
             - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
