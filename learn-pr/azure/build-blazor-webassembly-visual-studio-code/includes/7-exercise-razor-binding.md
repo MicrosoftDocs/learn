@@ -55,7 +55,7 @@ Save the `Shared/NavMenu.razor` file.  The browser should refresh automatically 
 
 ## Create a Todo Item
 
-1. Create a new file in the root of the project (the `TodoList` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.  Use the following C# code for the `TodoItem` class.
+1. Create a new file in the root of the project (the `BlazorApp` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.  Use the following C# code for the `TodoItem` class.
 
 ```csharp
 public class TodoItem
@@ -126,7 +126,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
     @code {
         private List<TodoItem> todos = new();
     
-        `private void AddTodo()
+        private void AddTodo()
         {
             // Todo: Add the todo
         }

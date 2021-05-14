@@ -1,15 +1,6 @@
 In this exercise, you'll add a Razor component to the home page of our application.
 
-## Open the BlazorApp project in Visual Studio Code
-
-1. Open Visual Studio Code.
-
 1. Within Visual Studio Code, open the folder that contains the BlazorApp project we created in module 3.
-
-1. If Visual Studio Code prompts you to install required assets, select **Yes**.
-
-    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
-
 ## Add the Counter component to the Home page
 
 1. Expand the folders in the Visual Studio Code project explorer.
