@@ -2,7 +2,7 @@
 
 Congratulations on landing the interview! What are your next steps? When it comes to interviews, it pays to understand the different phases of the process that, depending on your performance, can impact the outcome.
 
-An interview is usually the last step before possibly being offered a job.
+An interview is usually the last step before being offered a job.
 
 You're likely to go through a number of them with a company. Additionally, there are different types of interviews with different expectations.
 
