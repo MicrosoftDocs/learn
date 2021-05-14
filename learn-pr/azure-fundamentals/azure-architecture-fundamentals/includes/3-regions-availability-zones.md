@@ -1,4 +1,4 @@
-In the previous unit, you learned about Azure resources and resource groups. Resources are created in regions, which are different geographical locations around the globe that contain Azure datacenters. 
+In the previous unit, you learned about Azure resources and resource groups. Resources are created in regions, which are different geographical locations around the globe that contain Azure datacenters.
 
 Azure is made up of datacenters located around the globe. When you use a service or create a resource such as a SQL database or virtual machine (VM), you're using physical equipment in one or more of these locations. These specific datacenters aren't exposed to users directly. Instead, Azure organizes them into regions. As you'll see later in this unit, some of these regions offer availability zones, which are different Azure datacenters within that region.
 
@@ -13,8 +13,8 @@ When you deploy a resource in Azure, you'll often need to choose the region wher
 
 A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West. Here's a view of all the available regions as of June 2020.
 
-[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/ or https://azure.microsoft.com/global-infrastructure/geographies/, resampled smaller here for the initial view.)
-[ ![Global map of available Azure regions as of June 2020.](../media/regions-small.png) ](../media/regions-expanded.png#lightbox)
+<br>:::image type="content" source="../media/regions-small-be724495.png" alt-text="Global map of available Azure regions as of June 2020.":::
+
 
 ### Why are regions important?
 
@@ -24,10 +24,10 @@ Azure has more global regions than any other cloud provider. These regions give 
 
 Azure has specialized regions that you might want to use when you build out your applications for compliance or legal purposes. A few examples include:
 
-- **US DoD Central, US Gov Virginia, US Gov Iowa and more:** These regions are physical and logical network-isolated instances of Azure for U.S. government agencies and partners. These datacenters are operated by screened U.S. personnel and include additional compliance certifications.
-- **China East, China North, and more:** These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft doesn't directly maintain the datacenters.
+ -  **US DoD Central, US Gov Virginia, US Gov Iowa and more:** These regions are physical and logical network-isolated instances of Azure for U.S. government agencies and partners. These datacenters are operated by screened U.S. personnel and include additional compliance certifications.
+ -  **China East, China North, and more:** These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft doesn't directly maintain the datacenters.
 
-Regions are what you use to identify the location for your resources. There are two other terms you should also be aware of: _geographies_ and _availability zones_.
+Regions are what you use to identify the location for your resources. There are two other terms you should also be aware of: *geographies* and *availability zones*.
 
 ## Azure availability zones
 
@@ -35,9 +35,10 @@ You want to ensure your services and data are redundant so you can protect your 
 
 ### What is an availability zone?
 
-Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an _isolation boundary_. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
+Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an *isolation boundary*. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
 
-[![Diagram showing three datacenters connected within a single Azure region to represent an availability zone.](../media/availability-zones.png)](../media/availability-zones-expanded.png#lightbox)
+:::image type="content" source="../media/availability-zones-5c3c490c.png" alt-text="Diagram showing three datacenters connected in a single Azure region representing an availability zone.":::
+
 
 ### Supported regions
 
@@ -49,14 +50,14 @@ You can use availability zones to run mission-critical applications and build hi
 
 Availability zones are primarily for VMs, managed disks, load balancers, and SQL databases. Azure services that support availability zones fall into two categories:
 
-- **Zonal services**: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
-- **Zone-redundant services**: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
+ -  **Zonal services**: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
+ -  **Zone-redundant services**: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
 
 Check the documentation to determine which elements of your architecture you can associate with an availability zone.
 
 ## Azure region pairs
 
-Availability zones are created by using one or more datacenters. There's a minimum of three zones within a single region. It's possible that a large disaster could cause an outage big enough to affect even two datacenters. That's why Azure also creates _region pairs_.
+Availability zones are created by using one or more datacenters. There's a minimum of three zones within a single region. It's possible that a large disaster could cause an outage big enough to affect even two datacenters. That's why Azure also creates *region pairs*.
 
 ### What is a region pair?
 
@@ -64,14 +65,15 @@ Each Azure region is always paired with another region within the same geography
 
 Examples of region pairs in Azure are West US paired with East US and SouthEast Asia paired with East Asia.
 
-[![Diagram showing the relationship between geography, region pair, region, and datacenter. The geography box contains two region pairs. Each region pair contains two Azure regions. Each region contains three availability zones.](../media/region-pairs.png)](../media/region-pairs-expanded.png#lightbox)
+:::image type="content" source="../media/region-pairs-d9eb9728.png" alt-text="Diagram showing relationship between geography, region pair, region, and datacenter.":::
+
 
 Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy. Some services offer automatic geo-redundant storage by using region pairs.
 
 Additional advantages of region pairs:
 
-- If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
-- Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
-- Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
+ -  If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
+ -  Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
+ -  Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
 
 Having a broadly distributed set of datacenters allows Azure to provide a high guarantee of availability.

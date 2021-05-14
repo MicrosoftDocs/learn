@@ -1,7 +1,7 @@
 After you've created a subscription for Tailwind Traders, you're ready to start creating resources and storing them in resource groups. With that in mind, it's important to define those terms:
 
-- **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
-- **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
+ -  **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
+ -  **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
 
 ## Azure resource groups
 
@@ -11,7 +11,8 @@ Resource groups are a fundamental element of the Azure platform. A resource grou
 
 Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location in a resource group, you can provide order and organization to resources you create in Azure. Logical grouping is the aspect that you're most interested in here, because there's a lot of disorder among our resources.
 
-![Conceptual image showing a resource group box with a function, VM, database, and app included.](../media/resource-group.png)
+:::image type="content" source="../media/resource-group-461ef7f2.png" alt-text="Conceptual image showing a resource group box with a function, VM, database, and app included.":::
+
 
 ### Life cycle
 
@@ -29,7 +30,8 @@ When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource
 
 The following image shows the role Resource Manager plays in handling Azure requests.
 
-[![Diagram showing a Resource Manager request model.](../media/consistent-management-layer.png)](../media/consistent-management-layer-expanded.png#lightbox)
+:::image type="content" source="../media/consistent-management-layer-feef9259.png" alt-text="Diagram showing a Resource Manager request model.":::
+
 
 All capabilities that are available in the Azure portal are also available through PowerShell, the Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
 
@@ -37,20 +39,12 @@ All capabilities that are available in the Azure portal are also available throu
 
 With Resource Manager, you can:
 
-- Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
-- Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
-- Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state.
-- Define the dependencies between resources so they're deployed in the correct order.
-- Apply access control to all services because RBAC is natively integrated into the management platform.
-- Apply tags to resources to logically organize all the resources in your subscription.
-- Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
-
-[//]: # (NOTE: REMOVED THE FOLLOWING)
-[//]: # (### Understand scope)
-[//]: # (Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. The following image shows an example of these layers.)
-[//]: # (![Hierarchy of the different management levels.]../media/scope-levels.png)
-[//]: # (### Management levels)
-[//]: # (You apply management settings at any of these levels of scope. The level you select determines how widely the setting is applied. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied the resource group and all its resources. However, another resource group doesn't have that policy assignment.)
-[//]: # (You can deploy templates to tenants, management groups, subscriptions, or resource groups.)
+ -  Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+ -  Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
+ -  Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state.
+ -  Define the dependencies between resources so they're deployed in the correct order.
+ -  Apply access control to all services because RBAC is natively integrated into the management platform.
+ -  Apply tags to resources to logically organize all the resources in your subscription.
+ -  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyvOc]
