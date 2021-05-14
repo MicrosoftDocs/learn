@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-language-understanding.4-creating-a-luis-conversation-app
+title: Exercise - Creating a LUIS Conversation App
+metadata:
+  title: Exercise - Creating a LUIS Conversation App
+  description: Learn how to create a LUIS Conversation App.
+  author: nrd26
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-creating-a-luis-conversation-app.md)]
