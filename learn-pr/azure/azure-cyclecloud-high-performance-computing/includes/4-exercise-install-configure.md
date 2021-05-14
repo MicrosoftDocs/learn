@@ -1,4 +1,4 @@
-Azure CycleCloud is a Linux-based web application, which you can install and use in any location with connectivity to Azure. The simplest and the Microsoft-recommended way of setting it up is by deploying an Azure VM based on a preconfigured Azure Marketplace image. 
+Azure CycleCloud is a Linux-based web application, which you can install and use in any location with connectivity to Azure. The simplest, Microsoft-recommended way of setting it up is by deploying an Azure VM based on a preconfigured Azure Marketplace image. 
 
 Recall that you wanted to simplify provisioning a new HPC cluster into the Contoso's Azure subscription by leveraging Azure CycleCloud. You also want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you will follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM.
 
