@@ -56,14 +56,11 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-For production deployments, we recommend a hub and spoke model, where you create the firewall in its own virtual network. Then you peer that virtual network with virtual networks used by your workloads.
-
-To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host VM uses.
+In this unit, you'll create the firewall in its own virtual network. Then you peer that virtual network with the virtual network used by your Windows Virtual Desktop.
 
 ## Create a virtual network and subnet for Azure Firewall
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise unit.
-1. Search for and select **Virtual networks**.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Virtual networks**.
 1. Select **+ New**.
 1. Enter the following information.
 
@@ -90,7 +87,7 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
 
 ## Peer virtual networks
 
-1. In the firewallVNet, on the left-hand side, select **Peerings**.
+1. In the **firewallVNet**, on the left-hand side, select **Peerings**.
 1. Select **+ Add**.
 1. Enter the following information.
 
@@ -132,6 +129,6 @@ At this point, you have a Firewall deployed within it's own virtual network and 
 1. After the deployment is complete, select **Go to resource**.
 1. In the center pane, you see **Provisioning state: Succeeded**.
 :::image type="content" source="../media/5-firewall-overview-page.png" alt-text="Screenshot that shows the status and ip addresses for the firewall.":::
-1. From the right-hand side of the center pane, copy the **Firewall private IP address**.
-1. Select **fw-pip**.
+1. From the right-hand side of the center pane, copy the **Firewall private IP** address.
+1. Next to **Firewall public IP**, select **fw-pip**.
 1. Copy the **IP address**.

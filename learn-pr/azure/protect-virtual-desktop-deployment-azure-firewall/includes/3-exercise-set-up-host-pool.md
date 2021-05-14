@@ -12,8 +12,10 @@ In this unit, you create a host pool and  a VM that'll act as a session host. To
 
 ## Create a resource group
 
+First, create a resource group to contain all the resources you'll create in this module.
+
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1.  From the top right-hand side of the Azure portal, select **Cloud Shell**.
+1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
 1. Select **PowerShell**.
 1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
@@ -30,10 +32,9 @@ In this unit, you create a host pool and  a VM that'll act as a session host. To
 
 ## Create a host pool for Windows Virtual Desktop
 
-Let's go to the Azure portal to quickly create a host pool. 
+Next, let's create a host pool that will contain the VM you'll create later in this exercise.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. Search for and select **Windows Virtual Desktop**.
+1. In the Azure portal, search for and select **Windows Virtual Desktop**.
 1. Select **Create a host pool**.
 1. Enter the following information into the **Basics** tab.
 
@@ -56,7 +57,7 @@ Create a registration token to authorize a session host to join the host pool.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
-    New-AzWvdRegistrationInfo `
+    $regToken = New-AzWvdRegistrationInfo `
     -ResourceGroupName $resourceGroup `
     -HostPoolName $hostPoolName `
     -ExpirationTime $((get-date).ToUniversalTime().AddHours(4).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ'))
@@ -65,16 +66,14 @@ Create a registration token to authorize a session host to join the host pool.
 1. Run the following command to get the registration token.
 
    ```powershell
-    (Get-AzWvdRegistrationInfo `
-    -ResourceGroupName $resourceGroup `
-    -HostPoolName $hostPoolName).token
+    $regToken.Token
    ```
 
 1. Copy the token to a note app like Notepad.  
 
 ## Create subnet and virtual network for session host
 
-In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
+In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
    ```powershell
    $subnetConfig = New-AzVirtualNetworkSubnetConfig `
@@ -94,7 +93,7 @@ In PowerShell, run the following command to create a subnet and virtual network 
 
 Create an Azure VM to act as a session host for the host pool.
 
-1. Run the following command to set the user name and password for the administrator account on the VM. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
+1. In Cloud Shell, run the following command to set the user name and password for the administrator account on the VM. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
 
     ```powershell
     $cred = Get-Credential
@@ -119,30 +118,30 @@ Create an Azure VM to act as a session host for the host pool.
 
 ## Connect to the VM by using a remote desktop session
 
+Use a remote desktop session to sign into the VM you created in the previous section.
+
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.
 1. Select **Connect** > **RDP**.
-1. Select **Open file** > **Connect**.
+1. Select **Download RDP File** > **Open file** > **Connect**.
 1. In the **Windows Security** window, select **More choices** > **Use a different account**.
 1. Enter the user name and the password you used when you created the VM, and then select **OK**.
-1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
-1. Type in the username and password you used when you created the VM.
 1. If you're asked to connect despite certificate errors, select **Yes**.
 
 ## Register the virtual machine with host pool
 
-Install the Windows Virtual Desktop agents to register the VM to the host pool.
+Install the Windows Virtual Desktop agents on the VM to register the VM to the host pool.
 
 ### Install the  Windows Virtual Desktop Agent
 
-First, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
+In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
 
 1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. Select **Open file** to install the Windows Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
-1. If you no longer have the token value, run the following command in your Cloud Shell session.
+1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
    ```powershell
     (Get-AzWvdRegistrationInfo `
@@ -154,7 +153,7 @@ First, install the  Windows Virtual Desktop Agent. You'll need the registration 
 
 ### Install the  Windows Virtual Desktop Agent Bootloader
 
-Next, install the  Windows Virtual Desktop Agent Bootloader. 
+In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent Bootloader.
 
 1. Copy the link to the [Windows Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
