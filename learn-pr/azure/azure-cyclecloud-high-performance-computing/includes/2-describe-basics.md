@@ -1,6 +1,6 @@
-Many organizations seek to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. Yet, they also want to minimize the learning curve associated with such a transition and leverage the expertise tied to the existing deployments, tied typically to the choice of a specific HPC scheduler. At the same time, they expect visibility into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments.
+Many organizations seek to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. Yet, they want to minimize the learning curve associated with such a transition. They also want to leverage the expertise tied to the existing deployments, such as a specific HPC scheduler. <!--CE: It was "They also want to leverage the expertise tied to the existing deployments, tied typically to the choice of a specific HPC scheduler" but I tried to shorten for Acrolinx. However, I'm not sure if I captured the meaning. Feel free to edit and then delete my comment. -ID --> Finally, they expect visibility into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments.
 
-Implementing a custom solution that addresses these needs would be far from trivial, requiring in-depth knowledge of Azure compute, networking, and storage resources that serve as building blocks of cloud-based HPC clusters. In addition, without a corresponding management interface, operating such a solution by relying on standard Azure management tools would result in significant administrative overhead.
+Implementing a custom solution that addresses these needs is challenging. It requires in-depth knowledge of Azure compute, networking, and storage resources that serve as building blocks of cloud-based HPC clusters. In addition, without a corresponding management interface, operating such a solution by relying on standard Azure management tools would result in significant administrative overhead.
 
 Azure CycleCloud addresses these concerns, providing a simple, secure, and scalable way to implement HPC schedulers in Azure. In this unit, you will learn about its basic functionality.
 
@@ -51,7 +51,6 @@ Azure CycleCloud orchestrates the lifecycle of HPC clusters, which typically con
 Autoscaling of the managed cluster relies on Demand Calculator and Autoscale Library. You will learn about their characteristics in the next unit of this course.
 
 :::image type="content" source="../media/u2-cyclecloud-architecture.png" alt-text="The image depicts the high-level architecture of Azure CycleCloud." border="false":::
-
 
 ## What is Azure CycleCloud cluster lifecycle?
 
