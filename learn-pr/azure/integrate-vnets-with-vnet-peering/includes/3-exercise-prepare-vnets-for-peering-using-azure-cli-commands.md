@@ -24,7 +24,7 @@ You'll create the following resources:
         --name SalesVNet \
         --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
-        --subnet-prefix 10.1.1.0/24 \
+        --subnet-prefixes 10.1.1.0/24 \
         --location northeurope
     ```
 
@@ -36,7 +36,7 @@ You'll create the following resources:
         --name MarketingVNet \
         --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
-        --subnet-prefix 10.2.1.0/24 \
+        --subnet-prefixes 10.2.1.0/24 \
         --location northeurope
     ```
 
@@ -48,7 +48,7 @@ You'll create the following resources:
         --name ResearchVNet \
         --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
-        --subnet-prefix 10.3.1.0/24 \
+        --subnet-prefixes 10.3.1.0/24 \
         --location westeurope
     ```
     
