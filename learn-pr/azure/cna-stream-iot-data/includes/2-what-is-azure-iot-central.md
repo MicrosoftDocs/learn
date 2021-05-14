@@ -39,7 +39,7 @@ Azure IoT Central architecture includes the following optional components:
 > [!NOTE]
 > Azure IoT Central also supports a unidirectional device bridge allowing you to forward device telemetry from third-party IoT clouds.
 
-:::image type="content" source="../media/2-iot-central-solution-architecture.png" alt-text="High-level architecture of Azure IoT Central":::
+:::image type="content" source="../media/2-iot-central-solution-architecture.png" alt-text="High-level architecture of Azure IoT Central that depicts Things, Insights, and Actions.":::
 
 ## What are the main capabilities of Azure IoT Central?
 

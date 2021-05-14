@@ -154,7 +154,7 @@ In this exercise, you'll:
 
 1. On the **Raspberry Pi Azure IoT Online Simulator** page, directly below the code pane, select **Run** and verify that the messages containing temperature and humidity telemetry are generated and sent to the target designated by the connection string.
 <!--LM: If you can replace the word "below" and retain the meaning, please change it. I suggest "after" as an alternative.-->
-   :::image type="content" source="../media/3-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the messages being sent to the IoT Central application.":::
+   :::image type="content" source="../media/3-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page depicting the messages being sent to the IoT Central application.":::
 
 1. Switch back to the web browser window displaying the **About** view of the **raspberrypi-1** page and monitor the charts displaying humidity and temperature telemetry.
 
