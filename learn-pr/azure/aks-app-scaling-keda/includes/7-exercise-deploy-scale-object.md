@@ -82,7 +82,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
     pollingInterval: 30                                # Optional. Default: 30 seconds
     cooldownPeriod:  120                               # Optional. Default: 300 seconds
     minReplicaCount: 0                                 # Optional. Default: 0
-    maxReplicaCount: 100                               # Optional. Default: 100
+    maxReplicaCount: 20                                # Optional. Default: 100
     advanced:                                          # Optional. Section to specify advanced options
       restoreToOriginalReplicaCount: false        # Optional. Default: false
       horizontalPodAutoscalerConfig:                   # Optional. Section to specify HPA related options

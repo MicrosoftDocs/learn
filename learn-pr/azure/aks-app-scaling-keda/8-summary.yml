@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-app-scaling-keda.7-summary
+uid: learn.aks-app-scaling-keda.8-summary
 title: Summary
 metadata:
   unitType: summary
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
