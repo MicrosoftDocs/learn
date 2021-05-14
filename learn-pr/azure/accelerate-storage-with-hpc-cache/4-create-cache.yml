@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.accelerate-storage-with-hpc-cache.create-cache
-title: Create an HPC Cache  
+title: Create an HPC Cache instance
 metadata:
   unitType: learning-content  
   title: Create an HPC Cache
-  description: How to create an Azure HPC Cache
+  description: Learn how to create an Azure HPC Cache instance.
   ms.date: 05/06/2021
   author: ronhogue  
   ms.author: rohogue  
