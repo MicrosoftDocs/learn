@@ -26,18 +26,17 @@ use the Accessibility Insights for web page.
 1. Edit the HTML and remove the `text-muted` class from the three `bg-light` paragraphs. The resulting HTML below the form should appear as follows.
 
    ```html
-   <p style="font-size: 30px"><b>All about our wonderful    pizza!</b></p>
-   <p class="bg-light">We make it fresh every day, sometimes up    to two or three times a day!<br><br>
+   <p style="font-size: 30px"><b>All about our wonderful pizza!</b></p>
+   <p class="bg-light">We make it fresh every day, sometimes up to two or three times a day!<br><br>
    We love to make pizza!
    </p>
    
    <div class="text-center">
-     <img width="120" src="data:image/svg+xml;charset=UTF-8,   %3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.   226 112L36.2.2c60 
-   16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31    14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
+     <img width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
    </div>
    
-   <p style="font-size: 30px"><b>We take your privacy    seriously!</b></p>
-   <p class="bg-light">Unlike other pizza restaurants that    share your pizza preferences, we care about your privacy.   <br><br>
+   <p style="font-size: 30px"><b>We take your privacy seriously!</b></p>
+   <p class="bg-light">Unlike other pizza restaurants that share your pizza preferences, we care about your privacy.   <br><br>
    Want to know more? <a href="/Privacy">Click here.</a>
    </p>
    
@@ -50,3 +49,5 @@ use the Accessibility Insights for web page.
    ```
 
 1. Run the application and launch **FastPass** again to verify that the color contrast issues have cleared.
+
+In the next unit, we'll look into making content accessible to screen readers.
