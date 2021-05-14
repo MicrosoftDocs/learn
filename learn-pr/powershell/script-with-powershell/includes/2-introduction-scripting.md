@@ -83,7 +83,7 @@ When you output text via `Write-Host` or `Write-Output`, you use single or doubl
    Write-Host "Here is `$PI and its value is $PI" # Prints Here is $PI and its value is 3.14
    ```
 
-   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$P1`. In the second instance, the value is interpolated and written out.  
+   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$P1`. In the second instance, the value is interpolated and is written out.  
 
 - `$()`. You can also write an expression within double quotation marks. To do that, use the `$()` construct. One way to use this construct is to interpolate properties of objects. Here's an example:
 
