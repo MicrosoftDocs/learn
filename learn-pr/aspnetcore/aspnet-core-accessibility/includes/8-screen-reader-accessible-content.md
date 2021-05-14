@@ -47,6 +47,10 @@ The HTML `<h1>` - `<h6>` heading elements show a title for the following content
 
 A common mistake, as you'll see in the next exercise, is to use text styling to denote a heading rather than using an actual heading element. Screen readers won't see those pseudo-headings, you need to use the actual heading elements to provide navigation to screen readers.
 
+## Tab order
+
+Many of your users will navigate through your application using a keyboard, and will rely on tab order. Fortunately, it's pretty difficult (though not impossible) to break tab ordering in an HTML page accidentally. Still, you should check the tab ordering using **FastPass**, and practice navigating through your application using only the keyboard to understand the end-user experience.
+
 ## Images and alt text
 
 We use images in web pages in a few different ways. Some are important to the content, while others are just decorative. In order to provide this information to screen readers, all images should include an `alt` attribute.

@@ -1,6 +1,4 @@
-You needed to create a ASP.NET Core app that is accessible to users. ASP.NET Core automation properties and intentional content ordering enabled you to enhance applications to make them more accessible.
-
-In this module, you used ASP.NET Core automation properties to control what elements are included and what information is read back by the screen reader. You also applied intentional content ordering to improve the screen reader and keyboard experience of ASP.NET Core apps.
+In this module, you used HTML standards for web accessibility along with Accessibility Insights to find and fix accessibility issues in a ASP.NET Core web application.
 
 ## References
 
