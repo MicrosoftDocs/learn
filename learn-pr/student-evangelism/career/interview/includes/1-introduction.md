@@ -1,14 +1,14 @@
 [placeholder for Redmond interview]
 
-Congratulations on landing the interview! You might be wondering what's next? There are a few things you should know when it comes to interviews, different phases that depending on your performance, can result in a job offer.
+Congratulations on landing the interview! What are your next steps? When it comes to interviews, it pays to understand the different phases of the process that, depending on your performance, can impact the outcome.
 
 An interview is usually the last step before possibly being offered a job.
 
-You're likely to go through a number of them with a company. Additionally, they're also of a different type, with different types of expectations.
+You're likely to go through a number of them with a company. Additionally, there are different types of interviews with different expectations.
 
-As a software developer, you will encounter interviews that not only test your technical skills, but also your ability to clearly communicate a problem and your soft/ professional skills in general.
+As a software developer, you will encounter interviews that not only test your technical skills but also your ability to clearly communicate a problem. Your soft skills will also be appraised.
 
-Remember, the interview process goes both ways, you should fit the company but the company should also fit you. So take your chance to assess company culture.
+Remember, the interview process goes both ways. You should fit the company but the company should also fit you, so benefit from this opportunity to assess company culture.
 
 ## Learning objectives
 

@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What's a good interview etiquette?
+    - content: What is good interview etiquette?
       choices:
         - content: Have questions prepared to show interest for the company
           isCorrect: false
-          explanation: Incorrect. Having questions is generally a good thing to do. It does show an interest which is positive. The sought after answer is though to send an email after the interview to say thank you.
-        - content: Send an email after the interview to thank for the opportunity.
+          explanation: Incorrect. Having questions is a good idea as it demonstrates your interest in the company. A better action is to send a thank-you email after the interview.
+        - content: Send an email after the interview to thank the interviewer.
           isCorrect: true
-          explanation: Correct. You want to leave a good feeling, even if you don't get this particular position they may end up coming back to you in a few months. This is a clear case of win-win.
+          explanation: Correct. You want to leave a good impression. Even if you don't get this particular position the company might contact you at a later date for some other opportunity.
         - content: Don't talk over the interviewer
-          explanation: Incorrect. Sometimes you might get really excited about a job and you might end up talking over the interviewer once or twice. That usually isn't a problem, but be wary of doing so too much.  
+          explanation: Incorrect. While it's a bad idea to talk over your interviewer too often, active engagement can show enthusiasm for the position.
           isCorrect: false
