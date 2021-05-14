@@ -2,7 +2,6 @@ In this exercise, you'll deploy your company's website as a test app onto Azure 
 
 > [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further.Also, this sample app will be deployed on linux node pool only.
-If you want to deploy a sample windows container you can refer the steps mentioned [Here](https://docs.microsoft.com/azure/aks/windows-container-cli)
 
 ## Create a deployment manifest
 
@@ -124,6 +123,8 @@ Kubernetes groups containers into logical structures called pods, which have no 
           labels:
             app: contoso-website
         spec:
+          nodeSelector:
+            "beta.kubernetes.io/os": linux
           containers:
             - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
@@ -160,6 +161,8 @@ Kubernetes groups containers into logical structures called pods, which have no 
           labels:
             app: contoso-website
         spec:
+          nodeSelector:
+            beta.kubernetes.io/os: linux
           containers:
             - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
@@ -174,6 +177,10 @@ Kubernetes groups containers into logical structures called pods, which have no 
                 - containerPort: 80
                   name: http
     ```
+
+> [!NOTE]
+> In an AKS cluster which has multiple node pools ( Linux & Windows) , this above deployment manifest file also define a *nodeSelector* to tell your AKS cluster to run the sample application's pod on a node that can run Linux Server containers.
+Linux nodes cannot run Windows containers & vice versa.
 
 1. Save the manifest file and close the editor.
 
