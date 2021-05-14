@@ -1,4 +1,4 @@
-Many organizations, similarly to Contoso, seek to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. Yet, they also want to minimize the learning curve associated with such a transition and leverage the expertise tied to the existing deployments, tied typically to the choice of a specific HPC scheduler. At the same time, they expect visibility into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments.
+Many organizations seek to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. Yet, they also want to minimize the learning curve associated with such a transition and leverage the expertise tied to the existing deployments, tied typically to the choice of a specific HPC scheduler. At the same time, they expect visibility into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments.
 
 Implementing a custom solution that addresses these needs would be far from trivial, requiring in-depth knowledge of Azure compute, networking, and storage resources that serve as building blocks of cloud-based HPC clusters. In addition, without a corresponding management interface, operating such a solution by relying on standard Azure management tools would result in significant administrative overhead.
 
@@ -61,4 +61,4 @@ After you created a cluster, you can start it. Starting a cluster will trigger a
 
 Once the cluster nodes are running, they are accessible remotely via either SSH or RDP, depending on their operating system. You can use such connections to submit cluster jobs. Depending on the cluster configuration, this might trigger scaling of the cluster.
 
-You can terminate a cluster when it has completed all the submitted jobs. Terminating the cluster will stop and remove its nodes and delete any non­persistent volumes, leaving the cluster in the *Off* state.
+You can terminate a cluster when it has completed all the submitted jobs. Terminating the cluster will stop and remove its nodes and delete any nonÂ­persistent volumes, leaving the cluster in the *Off* state.
