@@ -4,7 +4,7 @@ Before attempting to navigate through our page using a screen reader, we'll find
 
 1. Run the site and **FastPass**. Our last remaining issue is the missing `alt` text for the one image on the page.
 
-   ![Missing alt error message](../media/missing-alt-error.png)
+   :::image type="content" source="../media/missing-alt-error.png" alt-text="Screenshot of Accessibility Insights displaying a missint alt error for an image.":::
 
 1. This is a purely decorative image, so we can just add an empty `alt` description:
 
@@ -18,12 +18,12 @@ Before attempting to navigate through our page using a screen reader, we'll find
 
 1. Now that we've cleared all automated checks, it's time to check tab stops. Select **Tab stops** in the left navigation in **FastPass**.
 
-   ![Select tab stops](../media/select-tab-stops.png)
+   :::image type="content" source="../media/select-tab-stops.png" alt-text="Screenshot of Accessibility Insights for Web with the second option of Tab stops selected.":::
 
 1. Toggle the **Show tab stops** switch in **FastPass**.
 1. Switch to the web application and begin using the tab key to navigate through the page. You will see that the navigation flows from the top of the page, through the form and page links, to the links in the footer.
 
-   ![Tab stop display](../media/tab-stop-display.png)
+   :::image type="content" source="../media/tab-stop-display.png" alt-text="Screenshot of the pizza app showing tab stops from top to bottom":::
 
 The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through how to turn on the screen reader for each operating system to test accessibility in the app.
 
@@ -39,7 +39,7 @@ Narrator is a screen reader built directly into Windows to enable users to compl
 
 - Press the **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under Use Narrator.
 
-![Windows screenshots to enable Narrator](../media/windows-narrator.png)
+:::image type="content" source="../media/windows-narrator.png" alt-text="Windows screenshots to enable Narrator":::
 
 It is suggested to go through the Narrator tutorial, which can be found in the Narrator settings screen.
  
