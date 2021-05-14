@@ -51,7 +51,7 @@ In order to leverage the Azure Digital Twins APIs, an application will need to b
 1. Create an Azure Active Directory (Azure AD) application with permissions to connect to Azure Digital Twins. You'll use this application in later units.
 
     ```azurecli
-    az ad app create --display-name $aaddtapp --native-app --required-resource-accesses ./manifest.json --reply-url http://localhost -o json 
+    az ad app create --display-name $aaddtapp --native-app --required-resource-accesses ./manifest.json --reply-urls http://localhost -o json 
     ```
 
 1. The following command will output the application ID. Save this ID for later use.
