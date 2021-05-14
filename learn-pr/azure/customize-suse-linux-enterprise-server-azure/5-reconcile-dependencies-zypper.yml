@@ -3,7 +3,7 @@ uid: learn.azure.customize-suse-linux-enterprise-server-azure.reconcile-dependen
 title: Reconcile dependencies with zypper package manager
 metadata:
   unitType: learning-content
-  title: reconcile-dependencies-zypper
+  title: Reconcile dependencies with zypper package manager
   description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
   ms.date: 5/12/2021
   author: yenchiho

@@ -10,7 +10,6 @@ Once you become familiar with YaST and zypper, you can use them to customize and
 - **SLES for High Performance Computing (HPC)** which includes infrastructure and tools to support parallel compute in the cloud.
 - **Others available on Azure Marketplace**: SUMa, SQL on SLES, SAP Solution Templates
 
-
 ## Resources
 For more details on admin, have a look at the SUSE documentation: https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-yast-gui  
 

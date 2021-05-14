@@ -23,6 +23,8 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
     - Select OK to create the disk
     - The Disks section should reappear on the Create a virtual machine pane and you’ll see a new disk in the first row
 
+    :::image type="content" source="../media/create-data-disks.png" alt-text="Screenshot of the Data Disks section of the VM creation screen in the Azure portal.":::
+
 6. In the Networking tab, it is fine to accept the setting default values for this exercise.
 
 1. Finish configuring the VM and creating the image by selecting Review + create.
@@ -33,4 +35,4 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
 1. Get the public IP address of the VM and ssh into your machine.
 
-TODO images
+    :::image type="content" source="../media/launch-virtual-machine-ssh.png" alt-text="Screenshot of launching SUSE SLES Azure V M using s s h.":::

@@ -18,7 +18,9 @@ Since all VMs in Azure are remote, you will not have a graphical environment to 
 
 YaST has two graphical interfaces: one for use with graphical desktop environments like KDE and GNOME and one that is an ncurses-based, pseudo-graphical interface for use on systems without an X server.  
 
-TODO images
+:::image type="content" source="../media/yast-control-center-graphical-interface.png" alt-text="Screenshot of the YaST control center graphical interface.":::
+
+:::image type="content" source="../media/yast-control-center-text-interface.png" alt-text="Screenshot of the YAST control center text interface.":::
 
 The ncurses-based, pseudo-graphical YaST interface is designed primarily to help system administrators to manage systems without an X server. The interface offers several advantages compared to the conventional GUI:  
 
