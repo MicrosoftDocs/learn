@@ -53,7 +53,7 @@ quiz:
           explanation: "The navigation fallback must be defined in the _staticwebapp.config.json_ file."
         - content: "Add an entry in _routes.json_ for a wildcard route /index** to serve **/index.html**."
           isCorrect: false
-          explanation: "The _routes.json_ file is deprecated in favour of _staticwebapp.config.json_."
+          explanation: "The _routes.json_ file is deprecated in favor of _staticwebapp.config.json_."
         - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
           isCorrect: false
           explanation: "The navigation fallback must be defined in the _staticwebapp.config.json_ file."
