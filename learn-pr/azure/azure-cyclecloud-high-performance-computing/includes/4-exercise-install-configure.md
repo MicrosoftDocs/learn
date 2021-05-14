@@ -1,10 +1,12 @@
 Azure CycleCloud is a Linux-based web application, which you can install and use in any location with connectivity to Azure. The simplest, Microsoft-recommended way of setting it up is by deploying an Azure VM based on a preconfigured Azure Marketplace image. 
 
-Recall that you wanted to simplify provisioning a new HPC cluster into the Contoso's Azure subscription by leveraging Azure CycleCloud. You also want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you will follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM.
+Imagine you want to simplify provisioning a new HPC cluster into your company's Azure subscription by leveraging Azure CycleCloud. You'll also want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you will follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM.
+
+<!-- SME or CE: To remove references to Contoso, I changed the above paragraph. Feel free to delete this comment as I feel comfortable with my changes. It used to be: "Recall that you wanted to simplify provisioning a new HPC cluster into the Contoso's Azure subscription by leveraging Azure CycleCloud. You also want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you will follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM."-->
 
 ## Deploy an Azure CycleCloud Azure VM
 
-You will start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image. 
+You'll start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image. 
 
 1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you are using in this module.
 
