@@ -1,108 +1,52 @@
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+    Goal: briefly summarize the key skill this unit will teach
 
     Heading: none
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
+    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
 TODO: add your topic sentences(s)
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
-    Goal: Describe the part of the scenario covered in this exercise
+    Goal: Describe the part of the scenario that will be solved by the content in this unit
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    Heading: none, combine this with the topic sentence into a single paragraph
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
+    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
 TODO: add your scenario sub-task
-TODO: add your scenario image
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+<!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    Goal: State concisely what's covered in this unit
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+    Heading: none, combine this with the topic sentence into a single paragraph
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
+    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: describe the end-state
+TODO: write your prose table-of-contents
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
-    Goal: List the steps they'll do to complete the exercise.
+    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    Heading: none
+-->
+TODO: add a visual element
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
+<!-- 5. Chunked content-------------------------------------------------------------------------------------
+
+    Goal: Provide all the information the learner needs to perform this sub-task.
+
+    Structure: Break the content into 'chunks' where each chunk has three things:
+        1. An H2 or H3 heading describing the goal of the chunk
+        2. 1-3 paragraphs of text
+        3. Visual like an image, table, list, code sample, or blockquote.
+
+    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
