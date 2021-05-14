@@ -10,9 +10,11 @@ Fortunately, contrast ratios can be checked programmatically. Accessibility Insi
 
 Color is an important part of web design, but it's important to keep in mind that everyone sees color a little differently. For some, this results in color blindness. About 1 in 12 men are color blind, and there are several different kinds such as red-green and blue-yellow color blindness.
 
-Additionally, your users may be using a [color filter](https://support.microsoft.com/en-us/windows/use-color-filters-in-windows-10-43893e44-b8b3-2e27-1a29-b0c15ef0e5ce) to minimize eye fatigue, be using a display with poor color fidelity, or be working in lighting which makes color perception difficult.
+Additionally, your users may be using a color to minimize eye fatigue, be using a display with poor color fidelity, or be working in lighting which makes color perception difficult.
 
 As you learned in the previous exercise by fixing a form that used colors to indicate required fields, you should design your web applications so they do not require color vision.
+
+In addition to **FastPass** automated tests, you can check how your site will appear to those with varying degrees of color blindness using color filters, which are built into [Windows](https://support.microsoft.com/en-us/windows/use-color-filters-in-windows-10-43893e44-b8b3-2e27-1a29-b0c15ef0e5ce) and [macOS](https://support.apple.com/guide/mac-help/use-color-filters-mchl11ddd4b3/mac).
 
 ## Zoom
 
