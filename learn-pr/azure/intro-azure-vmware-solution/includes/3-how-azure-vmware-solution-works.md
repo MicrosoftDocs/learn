@@ -56,7 +56,7 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 3.1.1 |
 | HCX | 4.0 |
 
-NOTE: NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied
+NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied
 
 ### Interconnectivity into Azure
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
