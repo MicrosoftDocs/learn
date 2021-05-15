@@ -15,45 +15,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Validating traffic patterns and routing for end-user traffic, is what kind of technical validation?
+  - content: Validating traffic patterns and routing for user traffic is what kind of technical validation?
     choices:
-    - content: End-user route testing
+    - content: User route testing
       isCorrect: true
-      explanation: Having the correct end-user route testing in place ensures that the network is performing as expected.
+      explanation: Having the correct user route testing in place helps ensure that the network is performing as expected.
     - content:  Network isolation testing
       isCorrect: false
-      explanation:  Network isolation testing should be in place to test that proper isolation and no unexpected network vulnerabilities are within the network.
+      explanation:  Network isolation testing should be in place to test that the network has proper isolation and no unexpected network vulnerabilities.
     - content: Dependency testing
       isCorrect: false
-      explanation: Dependency testing should be in place to ensure that workload dependencies have been migrated and accessible from the migrated assets.
-    - content: Business and disaster recovery (BCDR) testing
+      explanation: Dependency testing should be in place to ensure that workload dependencies have been migrated and are accessible from the migrated assets.
+    - content: Business continuity and disaster recovery (BCDR) testing
       isCorrect: false
-      explanation: The BCDR testing should be in place to validate that any backup and recovery service-level agreements (SLAs) are established.
-  - content: What should the assess workloads phase of your migration project focus on?
+      explanation: BCDR testing should be in place to validate that any service-level agreements (SLAs) for backup and recovery are established.
+  - content: What should the phase of assessing workloads in a migration project focus on?
     choices:
-    - content: Form a team of Azure experts.
+    - content: Form a team of Azure experts
       isCorrect: false
-      explanation: A team of people who understand the Azure platform should be formed as part of the migration project but this is not necessarily the objective of the "assess workloads" part of the project.
-    - content: Gather information regarding cloud compatibility and dependencies between servers and assets.
+      explanation: A team of people who understand the Azure platform should be formed as part of the migration project, but this is not necessarily the objective of assessing workloads for the project.
+    - content: Gather information about cloud compatibility and dependencies between servers and assets
       isCorrect: true
-      explanation: The "assess workloads" phase of the migration project should be focused on information gathering that can help your organization understand the migration path for each workload or asset.
-    - content: Test and release production traffic to the migrated workloads.
+      explanation: This phase of the migration project should be focused on information gathering that can help your organization understand the migration path for each workload or asset.
+    - content: Test and release production traffic to the migrated workloads
       isCorrect: false
-      explanation: The release of production to workloads in the cloud should only after proper planning and migration.
-    - content: Plan out the migration sprint phases.
+      explanation: The release of production traffic to workloads in the cloud should happen after proper planning and migration.
+    - content: Plan out the migration sprint phases
       isCorrect: false
-      explanation: Planning out the appropriate sprint phases for the project is an important step but would take place after an assessment of the workloads has taken place.
-  - content: An organization's migration project has stalled due to the team not setting the correct expectations with their executive level team.  What kind of blocker is this an example of?
+      explanation: Planning out the appropriate sprint phases for the project is an important step but would take place after assessment of the workloads.
+  - content: An organization's migration project has stalled because the team hasn't set the correct expectations with its executive-level team. What kind of blocker is this an example of?
     choices:
-    - content: Environmental blocker.
+    - content: Environmental blocker
       isCorrect: false
-      explanation:  An environment blocker would be an improperly configured environment.
-    - content:  Operations blocker.
+      explanation:  An environmental blocker would be an improperly configured environment.
+    - content:  Operations blocker
       isCorrect: false
       explanation:  Not fully appreciating some of the differences between managing workloads in the cloud and managing workloads on-premises can lead to blockers within the migration project.
-    - content: Technical blocker.
+    - content: Technical blocker
       isCorrect: false
-      explanation: An example of a technical blocker would be a workload that is not suitable for migration to the cloud.
-    - content: Strategy blocker.
+      explanation: An example of a technical blocker would be a workload that's not suitable for migration to the cloud.
+    - content: Strategy blocker
       isCorrect: true
-      explanation: Setting the correct expectations across your organization in terms of time frame, budget requirements, and so on. When embarking on a migration project can help avoid confusion and delays.
+      explanation: Setting the correct expectations across your organization for factors like time frame and budget requirements is about strategy. In a migration project, avoiding strategy blockers can help prevent confusion and delays.

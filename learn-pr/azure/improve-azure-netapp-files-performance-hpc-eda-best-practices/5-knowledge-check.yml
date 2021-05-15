@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check 
+  description: In this unit, you will answer questions based on a scenario. 
+  ms.date: 05/07/2021
+  author: mengruts  
+  ms.author: mengtsai  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5 
+content: |
+quiz:
+  questions:
+  - content: "Which mount option would you use to improve performance if an Azure NetApp Files volume contains static data with heavy read workloads?"
+    choices:
+    - content: "nconnect"
+      isCorrect: false
+      explanation: "nconnect is to increase number of TCP network connections of NFS client."
+    - content: "rsize and wsize"
+      isCorrect: false
+      explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."
+    - content: "nocto and actimeo"
+      isCorrect: true
+      explanation: "It's recommended to use nocto and actimeo on static data volumes with and massive read operations."
+  - content: "You would like to increase number of TCP network connections of NFS client VMS, which mount option will you use?"
+    choices:
+    - content: "nconnect"
+      isCorrect: true
+      explanation: "nconnect can increase number of TCP network connections of NFS client."
+    - content: "rsize and wsize"
+      isCorrect: false
+      explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."
+    - content: "nocto and actimeo"
+      isCorrect: false
+      explanation: "It's recommended to use nocto and actimeo on static data volumes with and massive read operations."
+  - content: "What's the general recommendations of rsize and wsize values in mount options to optimal performance?"
+    choices:
+    - content: "rsize=1048576,wsize=1448576 (1 MB/1 MB)"
+      isCorrect: false
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."
+    - content: "rsize=262144,wsize=262144 (256 K/256 K)"
+      isCorrect: true
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."
+    - content: "rsize=65536,wsize=65536 (64 K/64 K)"
+      isCorrect: false
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."
