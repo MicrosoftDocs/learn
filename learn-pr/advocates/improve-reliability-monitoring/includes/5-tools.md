@@ -21,7 +21,7 @@ include:
 -   Information fed from Azure resources, subscriptions, and tenants
 -   Custom data. If you’d like to send in monitoring-related data from your
     systems or applications, basically of any sort and from any source,
-    Azure monitor can take it that custom data.
+    Azure Monitor can take it that custom data.
 
 :::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Partial overview diagram of Azure monitor showing data sources":::
 
