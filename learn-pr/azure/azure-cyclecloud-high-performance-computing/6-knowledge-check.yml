@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Deploy Azure CycleCloud by using the Azure Marketplace image and enable system assigned managed identity."
       isCorrect: true
-      explanation: "Using the Azure Marketplace-based image and enabling system assigned managed identity, follow the Microsoft's recommendations and simplify the process of deploying Azure CycleCloud and configuring its access to the target Azure subscription."
+      explanation: "Using the Azure Marketplace-based image and enabling system assigned managed identity, follow Microsoft's recommendations and simplify the process of deploying Azure CycleCloud and configuring its access to the target Azure subscription."
     - content: "Deploy containerized Azure CycleCloud by using an image from Microsoft's Container Registry and configure service principal."
       isCorrect: false
       explanation: "While using a container to run Azure CycleCloud is a viable option, using a service principal introduces management overhead."
