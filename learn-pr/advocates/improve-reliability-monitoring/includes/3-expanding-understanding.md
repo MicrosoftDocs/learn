@@ -9,7 +9,7 @@ Let's look at some aspects of reliability now:
 
 ## Availability
 
-:::image type="content" source="../media/diagram-availability.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word availability added to one circle":::
+:::image type="content" source="../media/diagram-availability.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word availability added to one circle":::
 
 When people talk about reliability, they tend to start with availability.
 Is the system "up" or is it "down?" Can others reach your website or your
@@ -21,7 +21,7 @@ discussing reliability, but it’s only one aspect.
 
 ## Latency
 
-:::image type="content" source="../media/diagram-latency.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-latency.png" alt-text="Hub-spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word latency added to previous diagram in a different circle":::
 
 Latency refers to the amount of delay between a request and a response. You
 may have heard the catchphrase “slow is the new down.” People demand fast
@@ -32,7 +32,7 @@ competitor.
 
 ## Throughput
 
-:::image type="content" source="../media/diagram-throughput.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word throughput added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-throughput.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word throughput added to previous diagram in a different circle":::
 
 Throughput is a measure of the rate at which something is processed, or the
 number of transactions that a website, application, or service successfully
@@ -43,7 +43,7 @@ meeting our expectations, it isn't considered reliable.
 
 ## Coverage
 
-:::image type="content" source="../media/diagram-coverage.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-coverage.png" alt-text="Hub-spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word coverage added to previous diagram in a different circle":::
 
 Coverage refers to how much of the data that you expected to process was
 actually processed. Again, we come back to the idea of measuring how well
@@ -52,7 +52,7 @@ reliable.
 
 ## Correctness
 
-:::image type="content" source="../media/diagram-correctness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word correctness added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-correctness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word correctness added to previous diagram in a different circle":::
 
 An aspect of reliability that is often overlooked is “correctness.” Did the
 process that you ran on the data yield the correct or expected result? This
