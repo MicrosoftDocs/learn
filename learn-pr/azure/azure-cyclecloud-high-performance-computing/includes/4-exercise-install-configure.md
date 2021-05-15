@@ -27,7 +27,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | Resource group | select **Create new**, in the **Name** text box, type **cyclecloud-rg**, and select **OK** |
     | Virtual machine name | type **cyclecloud-vm** |
     | Region | select the name of any Azure regions where you can provision Azure VMs and which is close to your location |
-    | Availability options | **No infrastructure redundancy required** |
+    | Availability options | **no infrastructure redundancy required** |
     | Image | accept the default selection matching the marketplace image you chose in the previous step |
     | Azure Spot instance | leave the checkbox unselected |
     | Size | select **See all sizes**, on the **Select a VM size** blade, select the **Standard E4s v3** entry, and click **Select** |
