@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.configure-application-kubernetes-arc.manage-azure-web-apps-kubernetes-cluster
+uid: learn.configure-application-kubernetes-arc.manage-azure-app-service-kubernetes-cluster
 title: Exercise - Manage Azure web apps on Kubernetes
 metadata:
   title: Exercise - Manage Azure web apps on Kubernetes
