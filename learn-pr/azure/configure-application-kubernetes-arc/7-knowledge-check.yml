@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: FTP publishing.
       isCorrect: false
-      explanation: This method isn't currently supported
+      explanation: This method isn't currently supported.
     - content: ZIP file deployment.
       isCorrect: true
       explanation: ZIP file deployment is a supported deployment method for Azure App Service on Kubernetes using Azure Arc.

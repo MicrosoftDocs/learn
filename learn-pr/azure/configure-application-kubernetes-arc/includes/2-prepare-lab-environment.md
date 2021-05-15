@@ -68,13 +68,6 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
 
 ## Task 3: Install required Azure CLI extensions
 
-Some of this module's implementation tasks depend on Azure CLI extensions. Extensions are Python components referred to as *wheels*. They're files with the **.whl** extension. Extensions implement Azure CLI commands that deliver experimental and prerelease features. You can download them from the GitHub repository dedicated to development of these features.
-
-When using Azure Cloud Shell, use its file-upload functionality by downloading the **.whl** files to your local computer or to your Azure Cloud Shell home directory.
-
-    > [!NOTE]
-    > When installing a newer version of an already installed extension, first uninstall the older one by running `az extension remove --name <extensionName>`.
-
 Use the following steps to install the Azure CLI extensions that are required to implement Azure App Service on Kubernetes with Azure Arc:
 
 1. From the Bash session in the **Azure Cloud Shell** pane, run the following command to confirm you have the latest CLI version and extensions:
@@ -87,7 +80,6 @@ Use the following steps to install the Azure CLI extensions that are required to
 
     ```azurecli-interactive
     az extension add --upgrade --yes -n connectedk8s
-    az extension add --upgrade --yes -n k8s-extension
     az extension add --upgrade --yes -n customlocation
     ```
 

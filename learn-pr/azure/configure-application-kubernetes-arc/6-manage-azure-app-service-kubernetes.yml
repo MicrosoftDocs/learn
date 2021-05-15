@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-application-kubernetes-arc.6-manage-azure-app-service-kubernetes
+title: Exercise - Manage Azure App Service on Kubernetes with Azure Arc
+metadata:
+  title: Exercise - Manage Azure App Service on Kubernetes with Azure Arc
+  description: This exercise steps through managing Azure App Service on Kubernetes with Azure Arc
+  ms.date: 05/01/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-manage-azure-app-service-kubernetes.md)]
