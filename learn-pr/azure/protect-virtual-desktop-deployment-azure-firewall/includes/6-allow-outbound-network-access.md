@@ -56,83 +56,26 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-## Create network rule collection
-
-Typically, in a production deployment, you'd create a network rule collection and add rules to allow both DNS and KMS. We don't have a domain controller for this exercise. So you'll just create a rule to allow traffic from your session host VM to Windows Activation Service TCP port 1688.
 
 
+Allow outbound network access from the host pool to Windows Virtual Desktop:
 
-1. On the learn-fw, select the **Network rule collection** tab.
-1. Select **Add network rule collection**.
-1. Enter the following information.
+<!-- Diagram to show the pieces?? highlight from one of previous diagrams-->
 
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     net-coll01    |
-    |Priority    |    200     |
-    |Action     |  Allow       |
+## Route all traffic through the firewall
 
+Overview of steps to route traffic
 
+## Create network rules
 
-1. Under **Rules**, **IP addresses**,
+Specific rules and configurations needed host outbound for WVD
 
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     Allow-KMS   |
-    |Protocol   |  TCP    |
-    |Source type    |  IP address       |
-    |Source   |     IP address of host pool VNet       |
-    |Destination type  |  IP address       |
-    |Destination address  | Use the Azure Global KMS IP address: 23.102.135.246    |
-    |Destination Ports  |  1688   |
+### Configure application rules
 
-2. Select **Add**.
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+Allow outbound network access from the host pool to the Internet:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- When the list of allowed destinations is well-defined (e.g. Microsoft 365 access). 
+- Use Azure Firewall application and network rules to configure the required access.
+- To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Windows Virtual Desktop host pool with an explicit proxy configuration.
 
-<!-- Do not add a unit summary or references/links -->
+### Configure network rules
