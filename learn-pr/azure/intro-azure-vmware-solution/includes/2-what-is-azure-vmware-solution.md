@@ -66,10 +66,6 @@ We offer node configurations based on core, memory, and storage requirements. Yo
 
 Customers are charged hourly each time they provision a node. You can also choose to buy reserved instances for Azure VMware Solution for one- or three-year periods rice predictability.
 
-The below image is an example of pricing that reflects a single-node pricing only. This example pricing covers VMware licensing costs of NSX-T, vSphere, vSAN, and HCX Advanced.
-
-:::image type="content" source="../media/avs_pricing.png" alt-text="example image of AVS pricing":::
-
 You can enable VMware HCX Enterprise add-on (which is currently in Preview) by submitting a support request. VMware HCX Enterprise Edition (EE) is available with Azure VMware Solution as a Preview function/service and subject to Preview service terms and conditions. Once the VMware HCX EE service goes GA, you will get a 30-day notice that billing will switch over. You will also have the option to switch off/opt-out of the service.
 
 Also, you can take advantage of Azure Hybrid Benefit, allowing you to run your Windows Server and SQL Server workloads both on-premises and in the cloud. For all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions, you get Extended Security Updates at no extra charge for three years. If these workloads were deployed on-premises or on other clouds, the security updates would cost you an another 75% of license price of the latest versions of Windows Server and SQL Server annually.
