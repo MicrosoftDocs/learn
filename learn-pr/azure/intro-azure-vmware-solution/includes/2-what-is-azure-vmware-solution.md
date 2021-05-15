@@ -68,7 +68,7 @@ Customers are charged hourly each time they provision a node. You can also choos
 
 The below image is an example of pricing that reflects a single-node pricing only. This example pricing covers VMware licensing costs of NSX-T, vSphere, vSAN, and HCX Advanced.
 
-:::image type="content" source="../media/avs_pricing.png" alt-text="image that shows an example of AVS pricing":::
+:::image type="content" source="../media/avs_pricing.png" alt-text="example image of AVS pricing":::
 
 You can enable VMware HCX Enterprise add-on (which is currently in Preview) by submitting a support request. VMware HCX Enterprise Edition (EE) is available with Azure VMware Solution as a Preview function/service and subject to Preview service terms and conditions. Once the VMware HCX EE service goes GA, you will get a 30-day notice that billing will switch over. You will also have the option to switch off/opt-out of the service.
 
