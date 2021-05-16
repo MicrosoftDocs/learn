@@ -210,6 +210,20 @@ New-AzResourceGroupDeployment `
 
 1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
 
-    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with TODO." border="true":::
+    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources as well as two resources with type Microsoft.Insights/diagnosticSettings." border="true":::
 
-1. Notice that TODO.
+   Notice that there are two resources listed with a type of `Microsoft.Insights/diagnosticSettings`. These are the extension resources you deployed. One of the resources was attached to the storage account and the other was attached to the Azure Cosmos DB account. Now you will verify that the Azure Cosmos DB diagnostic settings are configured correctly.
+
+1. Select the Azure Cosmos DB account resource.
+
+    :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
+
+1. In the **Search** field in the top left, enter _Diagnostic settings_ and select the **Diagnostic settings** menu item.
+
+    :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
+
+1. Notice that there is a diagnostic setting named **route-logs-to-log-analytics**, which is configured to route the logs to the **ToyLogs** workspace.
+
+    :::image type="content" source="../media/7-cosmos-db-diagnostic-settings.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the diagnostic settings." border="true":::
+
+   If you want, you can also verify that the storage account has a similar diagnostic setting enabled for blob storage.
