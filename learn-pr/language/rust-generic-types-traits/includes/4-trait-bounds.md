@@ -21,8 +21,7 @@ fn send_data_as_json(value: &impl AsJson) {
 }
 ```
 
-Instead of a concrete type for the `item` parameter, we specify the `impl` keyword and the trait
-name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
+Instead of a concrete type for the `value` parameter, we specify the `impl` keyword and the trait name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
 Another way to write the same function, but with a little different syntax, explicitly tells that T is a generic type that must implement the `AsJson` trait:
 
