@@ -81,6 +81,8 @@ The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the opti
     ```azurecli-interactive
     kubectl get ns
     ```
+    > [!NOTE]
+    > The output should include the listing of the default and system namespaces.
 
 1. Examine the output and verify that it lists the namespaces on the target AKS cluster.
 
