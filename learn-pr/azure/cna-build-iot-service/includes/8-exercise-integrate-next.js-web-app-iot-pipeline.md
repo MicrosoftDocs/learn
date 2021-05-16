@@ -229,7 +229,7 @@ In this task, you will deploy the newly configured Next.js application to an Azu
 
    ```bash
    RG2NAME=nextjs-webapp-RG
-   WEBAPPNAME=nextjs226677734
+   WEBAPPNAME=$(az webapp list -resource-group $RG2NAME --query "[0].name" --output tsv)
 
    DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
    ```
