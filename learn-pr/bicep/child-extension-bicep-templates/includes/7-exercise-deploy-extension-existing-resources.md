@@ -214,7 +214,7 @@ New-AzResourceGroupDeployment `
 
    Notice that there are two resources listed with a type of `Microsoft.Insights/diagnosticSettings`. These are the extension resources you deployed. One of the resources was attached to the storage account and the other was attached to the Azure Cosmos DB account. Now you will verify that the Azure Cosmos DB diagnostic settings are configured correctly.
 
-1. Select the Azure Cosmos DB account resource.
+1. Select the Azure Cosmos DB account resource. The portal will open to the Azure Cosmos DB account.
 
     :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
 
