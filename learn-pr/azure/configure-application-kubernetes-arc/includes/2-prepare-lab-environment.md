@@ -91,6 +91,8 @@ Use the following steps to install the Azure CLI extensions that are required to
     ```azurecli-interactive
     az extension add --yes --source "https://aka.ms/appsvc/appservice_kube-latest-py2.py3-none-any.whl"
     ```
+    > [!NOTE]
+    > Ignore any messages stating that the appservice-kube extension already exists.
 
     > [!NOTE]
     > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions):
