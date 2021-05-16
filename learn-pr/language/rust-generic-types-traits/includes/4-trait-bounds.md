@@ -46,19 +46,19 @@ struct Dog {
 
 impl AsJson for Person {
     fn as_json(&self) -> String {
-	format!(
-	    r#"{{ "type": "person", "name": "{}", "age": {}, "favoriteFruit": "{}" }}"#,
-	    self.name, self.age, self.favorite_fruit
-	)
+	    format!(
+	        r#"{{ "type": "person", "name": "{}", "age": {}, "favoriteFruit": "{}" }}"#,
+	        self.name, self.age, self.favorite_fruit
+	    )
     }
 }
 
 impl AsJson for Dog {
     fn as_json(&self) -> String {
-	format!(
-	    r#"{{ "type": "dog", "name": "{}", "color": "{}", "likesPetting": {} }}"#,
-	    self.name, self.color, self.likes_petting
-	)
+	    format!(
+	        r#"{{ "type": "dog", "name": "{}", "color": "{}", "likesPetting": {} }}"#,
+	        self.name, self.color, self.likes_petting
+	    )
     }
 }
 ```
@@ -68,15 +68,15 @@ Now that both `Person` and `Dog` implement the `AsJson` trait, we can use them a
 ```rust
 fn main() {
     let laura = Person {
-	name: String::from("Laura"),
-	age: 31,
-	favorite_fruit: String::from("apples"),
+    	name: String::from("Laura"),
+	    age: 31,
+	    favorite_fruit: String::from("apples"),
     };
 
     let fido = Dog {
-	name: String::from("Fido"),
-	color: String::from("Black"),
-	likes_petting: true,
+	    name: String::from("Fido"),
+	    color: String::from("Black"),
+	    likes_petting: true,
     };
 
     send_data_as_json(&laura);
