@@ -2,11 +2,11 @@ Azure CycleCloud is an application that provides a simple, secure, and scalable 
 
 ## Example scenario
 
-A company based in Houston, TX focuses on oceanographic and meteorological services. Its research team relies heavily on on-premises HPC cluster to run Slurm-based tasks. 
+Contoso, Ltd. is an oceanographic and meteorological services company based in Houston, TX. It's research team relies heavily on on-premises HPC cluster to run Slurm-based tasks. 
 
 The newly initiated project will involve several simulations that will track storms moving through the US Gulf Coast during storm season. Unfortunately, an initial assessment determined that the existing on-premises HPC cluster doesn't have sufficient compute capacity to run the simulations. 
 
-As the lead research engineer, you want to use the company's existing Azure subscription to provision a new HPC cluster. To use your team's technical expertise, you want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the on-premises cluster. At the same time, you need to consider the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget. 
+As the lead research engineer, you want to use the Contoso's existing Azure subscription to provision a new HPC cluster. To use your team's technical expertise, you want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the on-premises cluster. At the same time, you need to consider the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget. 
 
 You start exploring the options for deploying, operating, and monitoring HPC clusters in Azure. To simplify these tasks, you decide to evaluate the functionality of Azure CycleCloud.
 
