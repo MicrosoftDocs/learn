@@ -76,7 +76,7 @@ Use the following steps to install the Azure CLI extensions that are required to
     az upgrade
     ```
 
-1. Run the following commands to install the **connectedk8s**, **k8s-extension**, and **customlocation** Azure CLI extensions:
+1. Run the following commands to install the **connectedk8s** and **customlocation** Azure CLI extensions:
 
     ```azurecli-interactive
     az extension add --upgrade --yes -n connectedk8s
