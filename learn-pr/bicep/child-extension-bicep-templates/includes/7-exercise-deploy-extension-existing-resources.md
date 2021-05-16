@@ -201,3 +201,15 @@ New-AzResourceGroupDeployment `
 ```
 
 ::: zone-end
+
+### Check your deployment
+
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+
+1. Select the **1 Succeeded** link.
+
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
+
+    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with TODO." border="true":::
+
+1. Notice that TODO.
