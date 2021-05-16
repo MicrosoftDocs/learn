@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.configure-application-kubernetes-arc.5-implement-azure-app-service
+uid: learn.configure-application-kubernetes-arc.5-implement-azure-app-service
 title: Exercise - Implement Azure App Service on Kubernetes with Azure Arc
 metadata:
   title: Exercise - implement Azure App Services on Kubernetes with Azure Arc

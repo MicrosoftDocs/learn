@@ -1,5 +1,5 @@
 ﻿### YamlMime:Module
-uid: learn.azure.configure-application-kubernetes-arc
+uid: learn.configure-application-kubernetes-arc
 metadata:
   title: Implement Azure App Service on Kubernetes with Azure Arc
   description: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
@@ -42,13 +42,13 @@ products:
 - azure-arc
 - azure-kubernetes-service
 units:
-- learn.azure.configure-application-kubernetes-arc.1-introduction
-- learn.azure.configure-application-kubernetes-arc.2-prepare-lab-environment
-- learn.azure.configure-application-kubernetes-arc.3-set-up-cluster
-- learn.azure.configure-application-kubernetes-arc.4-onboard-kubernetes-cluster-arc
-- learn.azure.configure-application-kubernetes-arc.5-implement-azure-app-service
-- learn.azure.configure-application-kubernetes-arc.6-manage-azure-app-service-kubernetes
-- learn.azure.configure-application-kubernetes-arc.7-knowledge-check
-- learn.azure.configure-application-kubernetes-arc.8-summary
+- learn.configure-application-kubernetes-arc.1-introduction
+- learn.configure-application-kubernetes-arc.2-prepare-lab-environment
+- learn.configure-application-kubernetes-arc.3-set-up-cluster
+- learn.configure-application-kubernetes-arc.4-onboard-kubernetes-cluster-arc
+- learn.configure-application-kubernetes-arc.5-implement-azure-app-service
+- learn.configure-application-kubernetes-arc.6-manage-azure-app-service-kubernetes
+- learn.configure-application-kubernetes-arc.7-knowledge-check
+- learn.configure-application-kubernetes-arc.8-summary
 badge:
   uid: learn.azure.configure-application-kubernetes-arc.badge
