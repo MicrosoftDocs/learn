@@ -1,4 +1,4 @@
-In this exercise, you'll connect the AKS cluster you previously deployed. You'll then prepare it for implementing the application services extension in this module's next exercise. The exercise consists of the following tasks:
+In this exercise, you'll connect to Azure Arc the AKS cluster you deployed in the previous exercise. You'll then prepare it for implementing the application services extension in this module's next exercise. The exercise consists of the following tasks:
 
 1. Prepare for connecting the AKS cluster to Azure Arc.
 1. Connect the AKS cluster to Azure Arc.
@@ -43,6 +43,9 @@ Use the following steps to implement these prerequisites:
     > [!IMPORTANT]
     > During the preview, the only supported Azure regions are **East US** and **West Europe**.
 
+    > [!NOTE]
+    > You can choose a different region from the one hosting the AKS cluster.
+
 1. Run the following command to verify registration of resource providers necessary to implement a connected cluster resource in the region hosting the resource group:
 
     ```azurecli-interactive
@@ -55,15 +58,7 @@ Now you're ready to connect your AKS cluster to Azure Arc. The connected cluster
 
 Use the following steps to connect the AKS cluster to Azure Arc:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands ensure that the kubectl context within the Azure CLI session is set to the target AKS cluster:
-
-    ```azurecli-interactive
-    K8S_CLUSTER_RG_NAME=k8sAKS-RG
-    K8S_CLUSTER_NAME=k8sAKS-cluster
-    kubectl config use-context $K8S_CLUSTER_NAME
-    ```
-
-1. Run the following command to connect the cluster to Azure Arc:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to connect the cluster to Azure Arc:
 
     ```azurecli-interactive
     az connectedk8s connect -g $ARC_RG_NAME -n $ARC_CLUSTER_NAME
@@ -81,6 +76,9 @@ Use the following steps to connect the AKS cluster to Azure Arc:
     ```azurecli-interactive
     kubectl get pods -n azure-arc
     ```
+    
+    > [!NOTE]
+    > Verify that the output includes clusterconect-agent pods
 
 1. To validate the deployment, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the Azure Arc resource representing your AKS cluster, and then navigate to its **Overview** blade.
 
