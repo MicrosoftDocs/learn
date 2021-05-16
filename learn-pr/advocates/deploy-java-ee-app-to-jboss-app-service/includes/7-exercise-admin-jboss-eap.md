@@ -4,10 +4,14 @@ In this exercise, you'll access the JBoss administration tools and stream the ap
 
 To access the remote server, you need to create a TCP tunnel between your remote server and your local machine. Run the following command:
 
-```azurecli
-$ az webapp create-remote-connection -n jakartaee-app-on-jboss-1606464084546 \
+```azcli
+az webapp create-remote-connection -n jakartaee-app-on-jboss-1606464084546 \
   -g jakartaee-app-on-jboss-1606464084546-rg
+```
 
+The command returns the following result:
+
+```output
 Verifying if app is running....
 App is running. Trying to establish tunnel connection...
 Opening tunnel on port: 59445

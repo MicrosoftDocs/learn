@@ -9,7 +9,7 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
 1. Click **Create a Resource**
 1. Search for **Static Web Apps**
-1. Click **Static Web Apps (Preview)**
+1. Click **Static Web Apps**
 1. Click **Create**
 
 ### Basics
@@ -44,8 +44,8 @@ Next, configure your new app and link it to your GitHub repository.
 
    | Setting                 | Value       |
    | ----------------------- | ----------- |
-   | _App location_          | **/Client** |
-   | _Api location_          | **/Api**    |
+   | _App location_          | **Client** |
+   | _Api location_          | **Api**    |
    | _App artifact location_ | **wwwroot** |
 
    Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
