@@ -163,7 +163,7 @@ Use the following steps to create a custom location.
 1. Run the following command to create a custom location:
 
     ```azurecli-interactive
-    az customlocation create -g $ARC_RG_NAME -n $CUSTOM_LOCATION_NAME -hr $CONNECTED_CLUSTER_ID -ns $APP_SERVICE_NAMESPACE_NAME -c $EXTENSION_ID
+    az customlocation create -g $ARC_RG_NAME -n $CUSTOM_LOCATION_NAME --host-resource-id $CONNECTED_CLUSTER_ID --namespace $APP_SERVICE_NAMESPACE_NAME -c $EXTENSION_ID
     ```
 
     > [!NOTE]
