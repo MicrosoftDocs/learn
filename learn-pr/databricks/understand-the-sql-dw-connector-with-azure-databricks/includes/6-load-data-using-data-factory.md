@@ -1,6 +1,6 @@
 In this unit, you'll learn how to use Azure Data Factory to load data into Azure Synapse Analytics.
 
-[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) is a cloud-based data integration service. It lets you create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Data Factory supports various data sources. For this exercise, we'll use Azure SQL Database as the data source.
+[Azure Data Factory](/azure/data-factory/introduction) is a cloud-based data integration service. It lets you create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Data Factory supports various data sources. For this exercise, we'll use Azure SQL Database as the data source.
 
 The steps in this unit show you how to load data from a table in Azure SQL Database to a table in Azure Synapse Analytics.
 

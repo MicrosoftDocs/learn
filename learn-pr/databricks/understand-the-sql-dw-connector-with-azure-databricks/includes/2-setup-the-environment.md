@@ -54,9 +54,9 @@ To connect to your database, add your computer's IP address to the SQL Server in
 
 ## Download and install Azure Data Studio
 
-[Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, macOS, and Linux. You'll use it to connect to SQL Data Warehouse and Azure SQL Database.
+[Azure Data Studio](/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, macOS, and Linux. You'll use it to connect to SQL Data Warehouse and Azure SQL Database.
 
-1. [Install Azure Data Studio for your operating system.](https://docs.microsoft.com/sql/azure-data-studio/download?view=sql-server-2017)
+1. [Install Azure Data Studio for your operating system.](/sql/azure-data-studio/download?view=sql-server-2017)
 
 1. Start Azure Data Studio.
 
@@ -111,7 +111,7 @@ Now you need to create a connection to the **master** database on the same serve
 
 Now, you'll check whether you have a version of the AzureRM module that meets requirements. You'll install it if you need to. You have to complete this step to continue with this module.
 
-If you don't have PowerShell Core version 6.1.1 or later installed on your computer (Windows, macOS, or Linux), follow the [installation instructions here](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6) for your platform.
+If you don't have PowerShell Core version 6.1.1 or later installed on your computer (Windows, macOS, or Linux), follow the [installation instructions here](/powershell/scripting/install/installing-powershell?view=powershell-6) for your platform.
 
 Azure PowerShell works with PowerShell 5.*x* on Windows 7 or later and with PowerShell 6.*x* (PowerShell Core) on any platform.
 To check which version of PowerShell you have on your computer, run this command.
@@ -120,10 +120,10 @@ To check which version of PowerShell you have on your computer, run this command
 $PSVersionTable.PSVersion
 ```
 
-If you have an outdated version or need to install PowerShell, see [Installing various versions of PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell). You can find links to installation information for your platform on that page.
+If you have an outdated version or need to install PowerShell, see [Installing various versions of PowerShell](/powershell/scripting/install/installing-powershell). You can find links to installation information for your platform on that page.
 
 If you're using PowerShell 5.*x* on Windows, you also need to have .NET Framework 4.7.2 installed. For instructions
-for updating or installing .NET Framework, see the [.NET Framework installation guide](https://docs.microsoft.com/dotnet/framework/install).
+for updating or installing .NET Framework, see the [.NET Framework installation guide](/dotnet/framework/install).
 
 ### Install Azure PowerShell
 

@@ -1,7 +1,7 @@
 Microsoft Azure offers many different products for machine learning and the data scientist. These products each have different purposes that help with various aspects of the data science process. The challenge is determining which product is best suited for each task.
 
 > [!NOTE]
-> This module assumes a knowledge of data science terms and processes. If you are new to data science, we recommend you go through the [Data Science for Beginners](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers) video series.
+> This module assumes a knowledge of data science terms and processes. If you are new to data science, we recommend you go through the [Data Science for Beginners](/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers) video series.
 
 ## Learning objectives
 

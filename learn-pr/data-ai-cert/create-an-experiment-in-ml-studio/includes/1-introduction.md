@@ -11,4 +11,4 @@ In this module you will:
 
 ## Prerequisites
 
-If you don't have a Machine Learning Studio account, complete the Microsoft Learn module [Create an Azure Machine Learning Studio account](https://docs.microsoft.com/learn/modules/create-machine-learning-studio-account/) before you begin.
+If you don't have a Machine Learning Studio account, complete the Microsoft Learn module [Create an Azure Machine Learning Studio account](/learn/modules/create-machine-learning-studio-account/) before you begin.

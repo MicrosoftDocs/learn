@@ -7,4 +7,4 @@ In this module you learned how to provision, connect to, and use a DSVM. You als
 
 For more information about using Jupyter notebooks, see [the Jupyter website](http://Jupyter.org).
 
-Browse the [Data Science Virtual Machine documentation](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/dsvm-samples-and-walkthroughs) to find more samples and walkthroughs using a DSVM.
+Browse the [Data Science Virtual Machine documentation](/azure/machine-learning/data-science-virtual-machine/dsvm-samples-and-walkthroughs) to find more samples and walkthroughs using a DSVM.
