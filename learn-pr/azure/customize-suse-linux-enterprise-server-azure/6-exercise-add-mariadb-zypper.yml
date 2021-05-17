@@ -4,7 +4,7 @@ title: Exercise - Install MariaDB using zypper
 metadata:
   unitType: exercise
   title: Exercise - Install MariaDB using zypper
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: Install MariaDB on your SLES server with zypper.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho

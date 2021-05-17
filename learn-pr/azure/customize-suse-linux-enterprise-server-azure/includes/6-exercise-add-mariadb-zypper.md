@@ -10,7 +10,7 @@ Refresh the repositories to ensure you’re working with the latest metadata ind
 sudo zypper refresh
 ```
 
-:::image type="content" source="../media/zypper-refresh.png" alt-text="Screenshot of console output of zypper refresh.":::
+:::image type="content" source="../media/zypper-refresh-inline.png" alt-text="Screenshot of console output of zypper refresh." lightbox="../media/zypper-refresh-expanded.png":::
 
 In this case, repositories should already be up to date because you used YaST in the previous exercise. If you choose to use zypper and skip this initial refresh step, you will get an error if the metadata has changed and you’ll be forced to run it before you can get started.  
 
@@ -28,7 +28,7 @@ In this case, repositories should already be up to date because you used YaST in
     zypper se maria
     ```
 
-    :::image type="content" source="../media/zypper-search.png" alt-text="Screenshot of console output performing a zypper search for maria d b.":::
+    :::image type="content" source="../media/zypper-search.png" alt-text="Screenshot of console output performing a zypper search for Maria D B.":::
 
 1. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
 
@@ -52,6 +52,6 @@ _(Please note, this is a challenge task. Instead of following step-by-step instr
 
 **zypper has the ability to install entire patterns as well as single packages.  Your task is to install the lamp_server pattern using the zypper command. **
 
-As a reminder, patterns are a pre-defined group of packages for a certain functionality, e.g. a file-server or a graphical environment. They look like packages but have "pattern” in their name.
+As a reminder, patterns are a pre-defined group of packages for a certain functionality, e.g. a file-server or a graphical environment. They look like packages but have "pattern" in their name.
 
-:::image type="content" source="../media/zypper-pattern-install.png" alt-text="Screenshot of console output showing zypper pattern install.":::
+:::image type="content" source="../media/zypper-pattern-install-inline.png" alt-text="Screenshot of console output showing zypper pattern install." lightbox="../media/zypper-pattern-install-expanded.png":::

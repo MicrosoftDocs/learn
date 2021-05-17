@@ -2,15 +2,15 @@ Zypper is a command-line package manager that automatically reconciles package d
 
 With Apache webserver installed, it’s time to add MySQL database to your PAYG instance of SLES on Azure.
 
-In this unit we’ll talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
+In this unit, we’ll talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
 
 ## Packages alert you of dependencies…One. At. A. Time.  
 
-While individual packages can alert you to dependencies on other packages for defined activities or modules, this takes place at the package level—meaning dependencies are triggered one at a time. You must manually select the next package before another dependency is surfaced which triggers another package that you must select and so on… In the case of modules with many packages, adding a complete set of packages using this method can take a lot of time.  
+While individual packages can alert you to dependencies on other packages for defined activities or modules, these alerts are raised at the package level, meaning dependencies are triggered one at a time. You must manually select the next package before another dependency is surfaced, which triggers another package that you must select, and so on. For modules with many packages, adding a complete set of packages using this method can take a lot of time.  
 
 ## SUSE’s package manager, zypper, reconciles package dependencies  
 
-SUSE created zypper, a command line package manager, which makes use of libzpp (SAT solver) to reconcile package dependencies for you. With zypper, all related packages are flagged at once when you select an activity or grouping, so you can install, update, or delete them with a single command. The YaST GUI and TUI includes zypper built into it. YaST runs zypper automatically in the background every time you start. Compared to manually finding and selecting package dependencies through RPM, zypper saves a lot of time.  
+SUSE created zypper, a command-line package manager, which makes use of libzpp (SAT solver) to reconcile package dependencies for you. With zypper, all related packages are flagged at once when you select an activity or grouping, so you can install, update, or delete them with a single command. The YaST GUI and TUI includes zypper built into it. YaST runs zypper automatically in the background every time you start. Compared to manually finding and selecting package dependencies through RPM, zypper saves a lot of time.  
 
 ## Packages and corresponding modules configuration are updated 
 

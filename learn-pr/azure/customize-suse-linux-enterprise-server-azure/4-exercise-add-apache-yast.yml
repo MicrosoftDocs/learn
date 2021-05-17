@@ -4,7 +4,7 @@ title: Exercise - Install Apache with YaST
 metadata:
   unitType: exercise
   title: Exercise - Install Apache with YaST
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: Use YaST to install Apache on your SLES virtual machine.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho

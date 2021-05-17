@@ -4,7 +4,7 @@ title: "Exercise - Setup: Create a new SUSE SLES virtual machine on Azure"
 metadata:
   unitType: exercise
   title: "Exercise - Setup: Create a new SUSE SLES virtual machine on Azure"
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: Create a SUSE SLES virtual machine on Azure, used in the rest of the exercises.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho

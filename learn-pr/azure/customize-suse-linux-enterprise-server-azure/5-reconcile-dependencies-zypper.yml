@@ -4,7 +4,7 @@ title: Reconcile dependencies with zypper package manager
 metadata:
   unitType: learning-content
   title: Reconcile dependencies with zypper package manager
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: Learn about how SUSE handles package dependencies with zypper.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho

@@ -12,7 +12,7 @@ It's time to add a package to the server that's going to host your company's web
 
 1. Use the Tab or arrow keys to navigate between interface elements like menu items, fields, and buttons.
 
-    :::image type="content" source="../media/yast-control-center-text-interface.png" alt-text="Screenshot of the YAST control center text interface immediately after starting.":::
+    :::image type="content" source="../media/yast-control-center-text-interface-inline.png" alt-text="Screenshot of the YAST control center text interface immediately after starting." lightbox="../media/yast-control-center-text-interface-expanded.png":::
 
     All menu items and buttons in YaST can be accessed using the appropriate function keys or keyboard shortcuts. For example, you can cancel the current operation by pressing F9, while the F10 key can be used to accept the changes. Each menu item and button in YaST's ncurses-based interface has a highlighted letter in its label. This letter is part of the keyboard shortcut assigned to the interface element. For example, the letter Q is highlighted in the Quit button. This means that you can activate the button by pressing Alt–Alt+Q.
 
@@ -26,7 +26,7 @@ It's time to add a package to the server that's going to host your company's web
 
     :::image type="content" source="../media/yast-control-center-search-menu.png" alt-text="Screenshot of YaST Control Center showing Search highlighted in the filter menu.":::
 
-    :::image type="content" source="../media/yast-control-center-search-screen.png" alt-text="Screenshot showing the YaST Control Center search screen.":::
+    :::image type="content" source="../media/yast-control-center-search-screen-inline.png" alt-text="Screenshot showing the YaST Control Center search screen." lightbox="../media/yast-control-center-search-screen-expanded.png":::
 
 1. In the search field at the top left, enter:  
 
@@ -38,18 +38,18 @@ It's time to add a package to the server that's going to host your company's web
 
 1. Switch to the right box with <TAB> and go down and select **apache2** in the list with the <SPACE> bar 
 
-    The icon changes to a check mark (or “+”).  Any shown dependencies will also be indicated (a+).
+    The icon changes to a check mark (or "+").  Any shown dependencies will also be indicated (a+).
 
-    :::image type="content" source="../media/yast-control-center-search-results.png" alt-text="Screenshot of search results for apache2 in YaST Control Center.":::
+    :::image type="content" source="../media/yast-control-center-search-results-inline.png" alt-text="Screenshot of search results for apache2 in YaST Control Center." lightbox="../media/yast-control-center-search-results-expanded.png":::
 
 1. Click Accept to install the apache package.
 
     A new window will be shown with the additional dependent packages which need to be installed too. Click **Continue**.
 
-    :::image type="content" source="../media/yast-control-center-dependent-packages.png" alt-text="Screenshot in YaST showing additional dependent packages to be added.":::
+    :::image type="content" source="../media/yast-control-center-dependent-packages-inline.png" alt-text="Screenshot in YaST showing additional dependent packages to be added." lightbox="../media/yast-control-center-dependent-packages-expanded.png":::
 
 1. In the Installation dialog, click Finish. You will get an information window presented with the summary of your install.
 
-    :::image type="content" source="../media/yast-control-center-installation-report.png" alt-text="Screenshot of YaST showing installation report.":::
+    :::image type="content" source="../media/yast-control-center-installation-report-inline.png" alt-text="Screenshot of YaST showing installation report." lightbox="../media/yast-control-center-installation-report-expanded.png":::
 
 1. Close the YaST interface.

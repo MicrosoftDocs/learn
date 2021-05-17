@@ -4,26 +4,12 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: Check your knowledge of SLES virtual machine customization.
   ms.date: 5/12/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
 durationInMinutes: 2
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
@@ -49,7 +35,7 @@ quiz:
     - content: Serves as the open-source code for a GUI
       isCorrect: false
       explanation: "A GUI requires a collection of packages, which can be loaded with zypper."
-  - content: You can use the sudo command to
+  - content: What does the sudo command do?
     choices:
     - content: Update package code
       isCorrect: false
@@ -59,4 +45,4 @@ quiz:
       explanation: "Sudo gives the user administrative rights to change the machine."
     - content: Change your VM size
       isCorrect: false
-      explanation: "VM size can be set through the Azure Portal."
+      explanation: "VM size can be set through the Azure portal."
