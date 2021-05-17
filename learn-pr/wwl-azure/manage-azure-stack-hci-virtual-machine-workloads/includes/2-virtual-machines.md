@@ -26,7 +26,7 @@ You can use Windows Admin Center for a wide range of Azure Stack HCI VM manageme
 
 To create a clustered VM, in Windows Admin Center, connect to the Azure Stack HCI cluster and browse to the **Inventory** tab of the **Virtual machines** pane. Use the **Add** menu item to display the **New virtual machine** pane and provide details such as the VM name; generation; target host; the file system path for VM configuration and virtual disk files; and processor, memory, network, and storage settings. You can also mount an ISO file that contains the image of the operating system you intend to install.
 
-:::image type="content" source="../media/virtual-machine-create-1.png" alt-text="The screenshot depicts the details required for installing a clustered Azure Stack HCI VM by using Windows Admin Center. You need to provide details such as the VM name; generation; target host; file system path for VM configuration and virtual disk files; and processor, memory, network, and storage settings." border="false":::
+:::image type="content" source="../media/virtual-machine-create-1.png" alt-text="The screenshot depicts the details required for installing a clustered Azure Stack HCI VM by using Windows Admin Center. You need to provide details such as the VM name; generation; target host; file system path for VM configuration and virtual disk files; and processor, memory, network, and storage settings." border="false" lightbox="../media/virtual-machine-create-1.png":::
 
 After you have created the VM, from its **Settings** pane in Windows Admin Center, you can modify its memory, processor, disks, and networking configuration; change the boot order; enable or disable integration services; set up affinity rules and checkpoints; and control security settings such as Secure Boot, encryption, and shielding.
 
@@ -58,13 +58,13 @@ Windows Admin Center displays individual and aggregated data that represent the 
 
 Also, you have access to processor and memory usage data from the host perspective, such as memory pressure, memory demand, and assigned memory. The Inventory tab includes the uptime, heartbeat status, and Azure Site Recovery protection status for each VM.
 
-:::image type="content" source="../media/virtual-machine-inventory-1.png" alt-text="The screenshot depicts the **Inventory** tab in the **Virtual machines** pane, which includes the uptime, heartbeat status, and Azure Site Recovery protection status for each VM." border="false":::
+:::image type="content" source="../media/virtual-machine-inventory-1.png" alt-text="The screenshot depicts the **Inventory** tab in the **Virtual machines** pane, which includes the uptime, heartbeat status, and Azure Site Recovery protection status for each VM." border="false" lightbox="../media/virtual-machine-inventory-1.png":::
 
 ### Move a VM between servers and clusters
 
 Windows Admin Center also facilitates VM and storage migration within the same cluster, between clusters, and to a stand-alone server. When moving a VM outside of the local cluster, you can select distinct target paths for its configuration, checkpoint, and smart paging files. For intra-cluster VM moves, the storage remains in its original location.
 
-:::image type="content" source="../media/virtual-machine-move-1.png" alt-text="The screenshot displays the **Move a virtual machine** dialog box in Windows Admin Center, which gives you the option to move a VM to another node within the same cluster." border="false":::
+:::image type="content" source="../media/virtual-machine-move-1.png" alt-text="The screenshot displays the **Move a virtual machine** dialog box in Windows Admin Center, which gives you the option to move a VM to another node within the same cluster." border="false" lightbox="../media/virtual-machine-move-1.png":::
 
 ### Export, import, and clone a VM
 
