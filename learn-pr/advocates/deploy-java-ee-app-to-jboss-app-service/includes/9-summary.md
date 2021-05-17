@@ -18,7 +18,7 @@ Use the following links to get more information about the topics in this module.
 * [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java&WT.mc_id=java-14033-yoterada)
 * [Quickstart: Get started with Application Insights in a Java web project](/azure/azure-monitor/app/java-get-started?tabs=maven&WT.mc_id=java-14033-yoterada)
 * [Get started with autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
-* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel%3fWT.mc_id%3djava-14033-yoterada)
+* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel&WT.mc_id=java-14033-yoterada)
 * [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
 
