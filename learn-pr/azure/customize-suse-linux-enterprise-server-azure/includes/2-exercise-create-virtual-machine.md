@@ -1,4 +1,4 @@
-A virtual machine (VM) on Azure provides the infrastructure for running your workloads. Recall that Trailwinds needs you to create a new VM for the LAMP stack. Here we will use the Azure portal to create the new VM. The portal walks you through the required information and provides hints and helpful messages during the creation. 
+A virtual machine (VM) on Azure provides the infrastructure for running your workloads. Recall that your employer needs you to create a new VM for the LAMP stack. Here we will use the Azure portal to create the new VM. The portal walks you through the required information and provides hints and helpful messages during the creation. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true)
 
