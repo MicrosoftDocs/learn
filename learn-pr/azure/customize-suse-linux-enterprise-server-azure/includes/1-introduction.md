@@ -1,7 +1,7 @@
 SUSE Linux Enterprise Server (SLES) is an adaptable and easy-to-manage platform that allows developers and administrators to deploy business-critical workloads on-premises, in the cloud and at the edge. It is optimized for performance, security and reliability. Since 2009, SUSE and Microsoft have been working together to provide unique, co-developed, Azure-optimized solutions for SUSE SLES. 
 
 ## Example scenario
-For the purpose of the exercise units, imagine you work for a startup retailer that wants to create a website, and you have been asked to set up a LAMP stack (Linux OS, Apache webserver, MySQL database, PHP programming) using SUSE SLES on Azure.
+Imagine you work for a startup retailer that wants to create a website, and you have been asked to set up a LAMP stack (Linux OS, Apache webserver, MySQL database, PHP programming) using SUSE SLES on Azure.
 
 :::image type="content" source="../media/logos.png" alt-text="A diagram containing logos for Linux, Apache, MySQL, and P H P.":::
 
