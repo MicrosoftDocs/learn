@@ -9,12 +9,12 @@ When we use generic types, we can specify the operation we want without many con
 To implement a new generic type, we must declare the name of the type parameter inside angle brackets just after the name of the struct. Then we can use the generic type in the struct definition where we would otherwise specify concrete data types.
 
 ```rust
-  struct Point<T> {
-      x: T,
-      y: T,
-  }
+struct Point<T> {
+    x: T,
+    y: T,
+}
 
-  fn main() {
+fn main() {
     let boolean = Point { x: true, y: false };
     let integer = Point { x: 1, y: 9 };
     let float = Point { x: 1.7, y: 4.3 };
