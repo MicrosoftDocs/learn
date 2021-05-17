@@ -20,7 +20,7 @@ The **Grant admin consent for [*company*]** action is often required for app reg
 
 :::image type="content" source= "../media/grant-admin-consent.png" alt-text="Screenshot of API permissions page for Contoso, with Grant-consent button highlighted.":::
 
-## Setup App Registration
+## Set up App Registration
 
 In order to leverage the Azure Digital Twins APIs, an application will need to be defined with permissions to use the ADT APIs.
 
@@ -33,7 +33,7 @@ In order to leverage the Azure Digital Twins APIs, an application will need to b
 
     Now you're editing manifest.json.
 
-1. Paste the following JSON code into PowerShell and then use Ctrl+C to close the file.
+1. Paste the following JSON code into PowerShell and then press <kbd>Ctrl+C</kbd> to close the file.
 
     ```json
     [{
@@ -104,6 +104,7 @@ Get the Azure AD tenant ID:
 ```azurecli
 az account show --query 'tenantId'
 ```
+
 ### POSTMAN
 
 [Postman](https://www.getpostman.com/) is a REST testing tool that provides key HTTP request functionalities in a desktop and plugin-based GUI. You can use it to craft HTTP requests and submit them to the Azure Digital Twins REST APIs.
@@ -134,6 +135,7 @@ To use the Azure Digital Twins APIs, you'll need to get an authorization token f
     ```
 
 1. Azure AD responds with a bearer token that will be used in the next section:
+
     :::image type="content" source= "../media/bearertoken.png" alt-text="Partial screenshot of bearer-token text displayed in a console window.":::
 
 ## Use REST APIs

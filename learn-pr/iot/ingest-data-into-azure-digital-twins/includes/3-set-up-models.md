@@ -34,7 +34,7 @@ The model looks like this:
     az dt model create --models ./model.json -n $dtname
     ```
 
-1. Use the next command to create a twin and set 0.0 as an initial temperature value:
+1. Run the next command to create a twin and set 0.0 as an initial temperature value:
 
     ```azurecli
      $properties = '{"ChasisTemperature": 0.0}'
