@@ -297,7 +297,7 @@ Write-Host "Azure Static Web App deployed."
 ```
 
 > [!NOTE]
-> While Azure Static Web Apps is in public preview, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
+> Since Azure Static Web Apps only recently became generally available, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
 
 If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
