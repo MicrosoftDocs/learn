@@ -68,8 +68,8 @@ Azure AD MFA improves security for the requesting users, because someone can’t
 
 Multi-Factor Authentication comes as part of the following offerings:
 
-* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multi-factor authentication.
+* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multi-factor authentication.
 
-* **Azure AD Free** or standalone **Microsoft 365** licenses - Use [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multi-factor authentication for your users and administrators.
+* **Azure AD Free** or standalone **Microsoft 365** licenses - Use [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multi-factor authentication for your users and administrators.
 
 * **Azure Active Directory Global Administrators** - A subset of Azure AD Multi-Factor Authentication capabilities are available as a means to protect global administrator accounts.
