@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-language-understanding.7-knowledge-check-2
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 04/27/2020
+  author: nrd26
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check-2.md)]
+quiz:
+  questions:
+    # Question 1
+    - content: "While creating a new LUIS language model on the Azure Health Bot portal, the user needs to provide the Application ID as well as the Subscription key. Which of the following keys/IDs of the LUIS App is used as the Subscription key for the Azure Health Bot?"
+      choices:
+        - content: "Primary Key"
+          isCorrect: true
+          explanation: "Correct. The Primary Key of the LUIS App is used as the Subscription Key for the LUIS language model."
+        - content: "Secondary Key"
+          isCorrect: false
+          explanation: "Incorrect. The Secondary key is not used while creating a new LUIS language model on the Azure Health Bot portal."
+        - content: "App ID"
+          isCorrect: false
+          explanation: "Incorrect. The App ID of your LUIS App is used as the Application ID of your LUIS language model in the Azure Health Bot portal."
+    
+    # Question 2
+    - content: "What is the purpose of the None intent?"
+      choices:
+        - content: "The None intent is used when a user sends null requests."
+          isCorrect: false
+          explanation: "Incorrect. This is not the purpose of the null intent"
+        - content: "The None intent is used to remove spaces or punctuations from the endings of utterances."
+          isCorrect: false
+          explanation: "Incorrect. This is not the purpose of the null intent"
+        - content: "Random utterances that don’t map to any of your intents can be mapped to None."
+          isCorrect: true
+          explanation: "Correct"

@@ -6,7 +6,7 @@ When you finish integrating the LUIS App that you have created into the Azure He
 
 1. Navigate to the home page of your Azure Health Bot. In the pane on the left, select 'Template catalog' under 'Scenarios'.
 
-2. Scroll down to 'Popular Templates' and select 'Booking appointments'
+1. Scroll down to 'Popular Templates' and select 'Booking appointments'
 
    :::image type="content" source="../media/5-create-template.png" alt-text="Create Scenario template":::
 
@@ -14,13 +14,13 @@ When you finish integrating the LUIS App that you have created into the Azure He
 
    :::image type="content" source="../media/5-import-template.png" alt-text="Import template":::
 
-3. Click on the 'Save' button on the top left corner of the editor.
+1. Click on the 'Save' button on the top left corner of the editor.
 
    :::image type="content" source="../media/5-save-template.png" alt-text="Save template":::
 
-4. Once the scenario has been saved, navigate back to the home page of your Azure Health Bot. In the pane on the left, select 'Manage' under 'Scenarios'.
+1. Once the scenario has been saved, navigate back to the home page of your Azure Health Bot. In the pane on the left, select 'Manage' under 'Scenarios'.
 
-5. You should see your appointment scheduling scenario under Scenario Management.
+1. You should see your appointment scheduling scenario under Scenario Management.
 
 ## Copy the required keys from the LUIS Portal
 
@@ -42,7 +42,7 @@ You will need to specify these two keys during the creation of the language mode
 
    A pane appears at the right side with the heading, 'New model'. Here, you will need to enter details about your new language model which is the conversation app that you created in LUIS.
 
-2. Enter the appropriate details for the name and description of your new language model. Under 'Method', make sure you choose 'LUIS (NLP)' since we are exporting our LUIS app to the Azure Health Bot.  
+1. Enter the appropriate details for the name and description of your new language model. Under 'Method', make sure you choose 'LUIS (NLP)' since we are exporting our LUIS app to the Azure Health Bot.  
 
    Under 'Region', make sure that the selected region is the same as the region of your prediction resource (You can check this by navigating back to the LUIS portal and checking it in 'Azure Resources' under the 'MANAGE' tab at the top of the page).  
 
@@ -60,7 +60,7 @@ You will need to specify these two keys during the creation of the language mode
 
    :::image type="content" source="../media/5-fetch-luis-intents.png" alt-text="Fetch LUIS intents":::
 
-2. You will see that your intents from the 'BookAppointment' LUIS app have been exported to the Azure Health Bot. Map it to the 'Booking appointments' scenario that we imported earlier by selecting it from the drop-down menu. Click on 'Create' once done.
+1. You will see that your intents from the 'BookAppointment' LUIS app have been exported to the Azure Health Bot. Map it to the 'Booking appointments' scenario that we imported earlier by selecting it from the drop-down menu. Click on 'Create' once done.
 
    :::image type="content" source="../media/5-map-intents.png" alt-text="Map intents to scenario":::
 

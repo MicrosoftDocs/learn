@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-language-understanding.5-integrate-luis-into-azure-health-bot
+uid: learn.healthbot-language-understanding.6-integrate-luis
 title: Exercise - Integrating LUIS into the Azure Health Bot
 metadata:
   title: Exercise - Integrating LUIS into the Azure Health Bot
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-integrating-luis-into-the-azure-health-bot.md)]
+  [!include[](includes/6-integrate-luis.md)]

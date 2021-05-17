@@ -27,9 +27,10 @@ units:
 - learn.healthbot-language-understanding.1-introduction
 - learn.healthbot-language-understanding.2-language-understanding-luis
 - learn.healthbot-language-understanding.3-language-models
-- learn.healthbot-language-understanding.4-create-luis-conversation-app
-- learn.healthbot-language-understanding.5-integrate-luis-into-azure-health-bot
-- learn.healthbot-language-understanding.6-knowledge-check
-- learn.healthbot-language-understanding.7-summary
+- learn.healthbot-language-understanding.4-knowledge-check-1
+- learn.healthbot-language-understanding.5-create-luis-conversation-app
+- learn.healthbot-language-understanding.6-integrate-luis-into-azure-health-bot
+- learn.healthbot-language-understanding.7-knowledge-check-2
+- learn.healthbot-language-understanding.8-summary
 badge:
   uid: learn.healthbot-language-understanding.badge
