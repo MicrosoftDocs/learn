@@ -38,6 +38,6 @@ Here's what you'll need to complete this course:
 
 [BotService]: https://azure.microsoft.com/services/bot-service/
 [CSharp]: https://dotnet.microsoft.com/learn/csharp
-[CSCourse]: https://docs.microsoft.com/dotnet/csharp/tutorials/?azure-portal=true
-[AzAccount]: https://docs.microsoft.com/learn/modules/create-an-azure-account/?azure-portal=true
+[CSCourse]: /dotnet/csharp/tutorials/?azure-portal=true
+[AzAccount]: /learn/modules/create-an-azure-account/?azure-portal=true
 [VS]: https://www.visualstudio.com/downloads/?azure-portal=true

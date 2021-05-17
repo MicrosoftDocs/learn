@@ -6,7 +6,7 @@ The UI for the app will consist of:
 - A button to send your location to those numbers using Azure Functions.
 - A label that will show a message to the user of the current status, such as the location being sent and location sent successfully.
 
-Xamarin.Forms supports a design pattern called Model-View-ViewModel (MVVM). You can read more about MVVM in the [Xamarin MVVM docs](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?azure-portal=true), but the essence of it is, each page (View) has a ViewModel that exposes properties and behavior.
+Xamarin.Forms supports a design pattern called Model-View-ViewModel (MVVM). You can read more about MVVM in the [Xamarin MVVM docs](/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?azure-portal=true), but the essence of it is, each page (View) has a ViewModel that exposes properties and behavior.
 
 ViewModel properties are 'bound' to components on the UI by name, and this binding synchronizes data between the View and ViewModel. For example, a `string` property on a ViewModel called `Name` could be bound to the `Text` property of a text-entry control on the UI. The text-entry control shows the value in the `Name` property and, when the user changes the text in the UI, the `Name` property is updated. If the value of the `Name` property is changed in the ViewModel, an event is raised to tell the UI to update.
 
