@@ -1,34 +1,40 @@
 ﻿This exercise provides an overview of integrating a Next.js with an IoT data pipeline. For more information regarding these topics, refer to:
 
-* [Export IoT data to cloud destinations using data export](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-export-data?tabs=javascript)
-* [How to use analytics to analyze device data](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-create-analytics)
+* [Export IoT data to cloud destinations using data export](https://docs.microsoft.com/azure/iot-central/core/howto-export-data?tabs=javascript?azure-portal=true)
+* [How to use analytics to analyze device data](https://docs.microsoft.com/azure/iot-central/core/howto-create-analytics?azure-portal=true)
 
-In this exercise, you will:
+In this exercise, you'll:
 
-* Clone a GitHub repo containing a sample Next.js code and customize it to process the existing Cosmos DB-resident IoT data
-* Deploy an Azure web app hosting the Next.js application
-* Validate the functionality of the Azure web app 
+* Clone a GitHub repo containing a sample Next.js code and customize it to process the existing Cosmos DB-resident IoT data.
+* Deploy an Azure web app hosting the Next.js application.
+* Validate the functionality of the Azure web app.
 
 ## Prerequisites
 
-* An Azure subscription
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
-* Completed the exercise units #4 Set up Azure Cosmos DB and #6 Integrate Azure Cosmos DB with the IoT data pipeline. In this exercise, you will leverage an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module. 
+To perform this exercise, you need:
+
+* An Azure subscription.
+* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* To have completed the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
+
+In this exercise, you'll leverage an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.
 
 ## Configure Next.js application
 
-In this task, you will configure a sample Next.js application that retrieves data from a Cosmos DB collection.
+In this task, you'll configure a sample Next.js application that retrieves data from a Cosmos DB collection.
 
-1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you will be using in this module.
-1. In the Azure portal, in the toolbar, click the **Cloud Shell** icon located directly to the right of the search text box. 
+1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
+1. In the Azure portal, in the toolbar, select the **Cloud Shell** icon located next to the search text box.
 
-   * Alternatively, you can access Cloud Shell directly by navigating to [https://shell.azure.com](https://shell.azure.com).
+  > [!NOTE]
+  > Alternatively, you can access Cloud Shell directly by navigating to [https://shell.azure.com](https://shell.azure.com?azure-portal=true).
 
-1. If prompted to select either **Bash** or **PowerShell**, select **Bash**. 
+1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
 
-   * If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**. 
+  > [!NOTE]
+  > If this is the first time you are starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
 
-1. From the Bash session in the Cloud Shell pane, run the following command to clone the GitHub repo containing the sample Next.js application code you will use in this exercise:
+1. From the Bash session in the Cloud Shell pane, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
 
    ```bash
    git clone https://github.com/polichtm/wp2104-m05u08.git
@@ -129,15 +135,16 @@ In this task, you will configure a sample Next.js application that retrieves dat
      );
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following command to display the content of the **config.js** file, which purpose is to store the values representing the Cosmos DB SQL API endpoint, the corresponding access key, as well as the target database and container hosting the IoT data you collected in the previous exercise of this module:
+1. From the Bash session in the Cloud Shell pane, run the following command to display the content of the **config.js** file, whose purpose is to store the values representing the Cosmos DB SQL API endpoint, the corresponding access key, as well as the target database and container hosting the IoT data you collected in the previous exercise of this module:
 
    ```bash
    cat ./config.js
    ```
 
-   * The names of the database and container are already pre-populated. You will set the values of the endpoint and the corresponding access key next.
+  > [!NOTE]
+  > The names of the database and container are already pre-populated. You'll set the values of the endpoint and the corresponding access key next.
 
-1. From the Bash session in the Cloud Shell pane, run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and store them in temporary variables:
+1. From the Bash session in the Cloud Shell pane, run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and then store them in temporary variables:
 
    ```bash
    RG1NAME=cosmos-db-RG
@@ -168,16 +175,17 @@ In this task, you will configure a sample Next.js application that retrieves dat
    npm install
    ```
 
-* At this point, you should also run `npm run build`. Unfortunately, due to versioning issues, this is not directly available in Azure Cloud Shell. You will remediate this by running the build following the deployment.
-
+> [!NOTE]
+> At this point, you should also run **npm run build**. Unfortunately, due to versioning issues, this is not directly available in Azure Cloud Shell. You'll remediate this by running the build following the deployment.
 
 ## Deploy an Azure web app hosting the Next.js application
 
-In this task, you will deploy the newly configured Next.js application to an Azure web app and validate its functionality.
+In this task, you'll deploy the newly configured Next.js application to an Azure web app and validate its functionality.
 
-* You could deploy the same application to any other Azure service that provides Node.js runtime environment, including Azure VMs, Azure Container Instances, or Azure Kubernetes Service.
+> [!NOTE]
+> You could deploy the same application to any other Azure service that provides Node.js runtime environment, including Azure VMs, Azure Container Instances, or Azure Kubernetes Service.
 
-1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you will deploy the Next.js application:
+1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Next.js application:
 
    ```bash
    RG1NAME=cosmos-db-RG
@@ -200,7 +208,7 @@ In this task, you will deploy the newly configured Next.js application to an Azu
    az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following commands to re-initialize the local Git repository and commit all changes in the main branch:
+1. From the Bash session in the Cloud Shell pane, run the following commands to reinitialize the local Git repository and commit all changes in the main branch:
 
    ```bash
    git config --global user.email "user1@adatum.com"
@@ -210,7 +218,7 @@ In this task, you will deploy the newly configured Next.js application to an Azu
    git commit -m "Initial Commit"
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following commands to set up user-level deployment credentials: 
+1. From the Bash session in the Cloud Shell pane, run the following commands to set up user-level deployment credentials:
 
    ```bash
    DEPLOYMENTUSER=m05u08User$RANDOM
@@ -218,14 +226,14 @@ In this task, you will deploy the newly configured Next.js application to an Azu
    az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following commands to identify the user-level deployment credentials (make sure to record their value since you will need them later in this exercise):
+1. From the Bash session in the Cloud Shell pane, run the following commands to identify the user-level deployment credentials (make sure to record their value, because you will need them later in this exercise):
 
    ```bash
    echo $DEPLOYMENTUSER
    echo $DEPLOYMENTPASS
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following commands to identify the Azure web app deployment URL that you will use as the target of the `git push` command:
+1. From the Bash session in the Cloud Shell pane, run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
    ```bash
    RG2NAME=nextjs-webapp-RG
@@ -247,39 +255,46 @@ In this task, you will deploy the newly configured Next.js application to an Azu
    git push --set-upstream azure master
    ```
 
-   *  Wait for the deployment to complete.
+  > [!NOTE]
+  > Wait for the deployment to complete.
 
 1. Close the Cloud Shell pane.
 
-## Validate the functionality of the Azure web app 
+## Validate the functionality of the Azure web app
 
-In this task, you will validate the functionality of the Azure web app hosting the Next.js application.
+In this task, you'll validate the functionality of the Azure web app hosting the Next.js application.
 
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**. 
+1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**.
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise.
-1. On the blade displaying the properties of the web app, in the vertical menu on the left side, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
-1. On the **App Service Editor** page, in the vertical menu on the left side, select the **Open Console** icon (the second one from the bottom):
+1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
+1. On the **App Service Editor** page, in the vertical menu, select the **Open Console** icon (the second one from the bottom).
 1. From the console prompt, run the following command to build the Next.js application you pushed the Azure web app:
 
    ```bash
    npm run build
    ```
 
-   ![Screenshot that shows the start of the build process in the App Service Editor console of the Azure web app.](../media/8-next.js-web-app-build.png)
+  :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
 
-   *  Wait for the build process to complete.
+  > [!NOTE]
+  > Wait for the build process to complete.
 
-   ![Screenshot that shows the completed build process in the App Service Editor console of the Azure web app.](../media/8-next.js-web-app-build-completed.png)
+  :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
 
-1. Close the web browser tab displaying the **App Service Editor** page, back on the Azure portal blade displaying the properties of the web app, in the vertical menu on the left side, select the top entry labeled **Overview** and, in the **Essentials** pane on the right side, select the link labeled **URL**. 
+1. Close the web browser tab displaying the **App Service Editor** page.
+1. Back on the Azure portal blade displaying the properties of the web app, in the vertical menu, select the top entry labeled **Overview** and, in the **Essentials** pane, select the link labeled **URL**.
 
-   * This will automatically open another web browser tab displaying the newly deployed Azure web app.
+  > [!NOTE]
+  > This will automatically open another web browser tab displaying the newly deployed Azure web app.
 
 1. Verify that the web browser page displays the **Next.js - Cosmos DB IoT telemetry data** page with the listing of the IoT telemetry data points retrieved from the Azure Cosmos DB collection.
 
-   ![Screenshot that shows the page of the deployed Azure web app containing the listing of the Azure Cosmos DB items.](../media/8-next.js-web-app-deployed.png)
+     :::image type="content" source="../media/8-next.js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the Azure Cosmos DB items.":::
 
+## Results
 
-Congratulations! You completed the third exercise of this module. In its course, you created an Azure function that logs an HTTP request payload, configured and validated IoT telemetry rules of an Azure IoT Central application, created an Azure Storage account that will store IoT telemetry, and configured and validated data export of an Azure IoT Central application.
+Congratulations! You completed the third exercise of this module. You created an Azure function that logs an HTTP request payload, configured and validated IoT telemetry rules of an Azure IoT Central application, created an Azure Storage account that will store IoT telemetry, and configured and validated data export of an Azure IoT Central application.
 
-* To avoid unnecessary charges due to usage of Azure resources, you should delete the **cosmos-db-RG** and **nextjs-webapp-RG** resource groups you created in this exercise. To do so, in the Azure portal, navigate to the blade of each of these resource groups, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type the name of the resource group, and select **Delete**.
+## Clean up the resources
+
+To avoid unnecessary charges due to usage of Azure resources, you should delete the **cosmos-db-RG** and **nextjs-webapp-RG** resource groups you created in this exercise. To do so, in the Azure portal, navigate to the blade of each of these resource groups, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.
