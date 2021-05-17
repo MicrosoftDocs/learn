@@ -1,4 +1,8 @@
-With Apache webserver installed, it’s time to add MySQL database to your PAYG instance of SLES on Azure. In this unit we’ll talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
+Zypper is a command-line package manager that automatically reconciles package dependencies.
+
+With Apache webserver installed, it’s time to add MySQL database to your PAYG instance of SLES on Azure.
+
+In this unit we’ll talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
 
 ## Packages alert you of dependencies…One. At. A. Time.  
 
@@ -41,5 +45,4 @@ Let’s have a look at some basic zypper examples:
     ```console
     sudo zypper up or sudo zypper update or sudo zypper patch 
     ```
-
 
