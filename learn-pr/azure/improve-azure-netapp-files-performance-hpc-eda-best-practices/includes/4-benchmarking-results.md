@@ -1,36 +1,34 @@
-In this session, we'll examine the benchmarking results to verify the performance tips we just discussed.
+In this unit, we'll examine benchmark results to verify the performance tips that we just discussed. We'll focus on using the SPEC SFS benchmark suite to spawn multiple threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practices.
 
-We'll focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practice.
+## Overview of the two benchmark tools
 
-## Introduce the two benchmarking tools
+The SPEC SFS suite is a standard industry benchmark for EDA. A typical EDA workload consists of functional and physical phases. The functional phase drives mostly random I/O and file-system metadata operations. The physical phase drives large-block sequential reads and writes.
 
-SPEC SFS® suite is a standard industry benchmark for electronic design automation (EDA). Typical EDA workload consists of functional and physical phases. The functional phase predominately drives random I/O and filesystem metadata operations, while the physical phase drives large block sequential reads and writes.
+FIO is an I/O tool that can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of a storage target.
 
-FIO is an I/O tool, which can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of storage target.
+## Benchmark results of the SPEC EDA tool
 
-## Demonstrate benchmark results of SPEC EDA tool
+The graphs in this section demonstrate the I/O and latency curves. They examine some combinations of the following performance practices:
 
-The graph below demonstrates the I/O and latency curves, examining some combinations of below performance practices comparing to "default" that none were applied.
+- `nocto,actimeo=600`
+- `sysctl tuned`
+- `nconnect=16`
 
-- nocto,actimeo=600
-- sysctl tuned
-- nconnect=16
+When all three of the preceding practices are applied, the I/O operations per second increase and still maintain low latency (less than 1 millisecond).
 
-You'll see the I/O (operations per second) will boost and still maintaining low latency (less than 1 millisecond) when all the above three were applied.
+![Diagram that shows the SPEC E D A results, where the I O boost still maintains low latency when all three practices are applied.](../media/4-benchmarking-results-01.png)
 
-![Diagram showing the SPEC EDA results where the IO boost and still maintaining low latency when all three practices were applied.](../media/4-benchmarking-results-01.png)
+The following graph demonstrates that NFSv3 performs much better than NFSv4.1.
 
-The graph below demonstrates that NFS3 performs much better than NFS 4.1.
+![Diagram that shows the SPEC E D A results to demonstrate that N F S version 3 performs much better than N F S version 4.1.](../media/4-benchmarking-results-02.png)
 
-![Diagram showing the SPEC EDA results to demonstrate that NFS3 performs much better than NFS 4.1.](../media/4-benchmarking-results-02.png)
+The following graph demonstrates that `rsize=wsize=262144(256 K)` performs better than other settings.
 
-The graph below demonstrates that rsize=wsize=262144(256 K) performs better than other settings.
+![Diagram that shows the SPEC E D A results to compare r size and w size values.](../media/4-benchmarking-results-03.png)
 
-![Diagram showing the SPEC EDA results to demonstrate that rsize=wsize=262144(256 K) performs better than other settings.](../media/4-benchmarking-results-03.png)
+## Benchmark results of the FIO tool
 
-## Demonstrate benchmark results of FIO tool
-
-Below are the FIO commands to benchmark IOPS and throughput, respectively.
+The following FIO commands benchmark IOPS and throughput, respectively.
 
 ```bash
 // FIO commands to benchmark IOPS:
@@ -46,8 +44,8 @@ fio --name=64kseqreads --rw=read --direct=1 --ioengine=libaio --bs=64k --numjobs
 fio --name=64kseqwrites --rw=write --direct=1 --ioengine=libaio --bs=64k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
 ```
 
-The two graphs below demonstrate that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS and throughput.
+The following two graphs demonstrate that when `nocto,actimeo=600`, `nconnect=16`, and `sysctl` are tuned, Azure NetApp Files can achieve higher IOPS and throughput.
 
-![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS.](../media/4-benchmarking-results-04.png)
+![Diagram showing F I O results of higher I O P S.](../media/4-benchmarking-results-04.png)
 
-![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher throughput.](../media/4-benchmarking-results-05.png)
+![Diagram showing F I O results of higher throughput.](../media/4-benchmarking-results-05.png)

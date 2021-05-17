@@ -18,9 +18,9 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name Azure-VNet-1 \
-        --address-prefix 10.0.0.0/16 \
+        --address-prefixes 10.0.0.0/16 \
         --subnet-name Services \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
     ```
 
 1. Run this command in Cloud Shell to add the **GatewaySubnet** subnet to **Azure-VNet-1**.
@@ -29,7 +29,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
     az network vnet subnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name Azure-VNet-1 \
-        --address-prefix 10.0.255.0/27 \
+        --address-prefixes 10.0.255.0/27 \
         --name GatewaySubnet
     ```
 
@@ -53,9 +53,9 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name HQ-Network \
-        --address-prefix 172.16.0.0/16 \
+        --address-prefixes 172.16.0.0/16 \
         --subnet-name Applications \
-        --subnet-prefix 172.16.0.0/24
+        --subnet-prefixes 172.16.0.0/24
     ```
 
 1. Run this command in Cloud Shell to add **GatewaySubnet** to **HQ-Network**.
@@ -63,7 +63,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
     ```azurecli
     az network vnet subnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --address-prefix 172.16.255.0/27 \
+        --address-prefixes 172.16.255.0/27 \
         --name GatewaySubnet \
         --vnet-name HQ-Network
     ```
