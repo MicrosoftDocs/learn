@@ -411,7 +411,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 
 ::: zone-end
 
-::: zone pivot="bicepcli,biceppowershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
