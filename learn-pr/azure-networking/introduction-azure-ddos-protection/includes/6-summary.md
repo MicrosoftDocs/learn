@@ -22,4 +22,4 @@ You can learn more by reviewing the following articles:
 
 - [Support scope and responsiveness](https://azure.microsoft.com/support/plans/response/?azure-portal=true)
 
-- [Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=a1ded723-81fd-46bc-9fbb-7fa12933254f%3fazure-portal%3dtrue)
+- [Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=a1ded723-81fd-46bc-9fbb-7fa12933254f&azure-portal=true)
