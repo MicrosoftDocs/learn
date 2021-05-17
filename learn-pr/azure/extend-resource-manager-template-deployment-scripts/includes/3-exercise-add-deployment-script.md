@@ -33,7 +33,7 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone-end
 
-## Add a user-assigned managed service identity
+## Add a user-assigned managed identity
 
 Next, you need to create a user-assigned managed identity. Given the infrastructure-as-code approach, you can create the identity in the template.
 
@@ -65,7 +65,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 ::: zone-end
 
-## Set the contributor role for the managed service identity
+## Set the contributor role for the managed identity
 
 Now that you have a managed identity defined, you can assign it a role with rights to the resource group. You'll assign it [the *Contributor* role](/azure/role-based-access-control/built-in-roles#contributor). You identify a role by its role definition ID, which is a GUID. The *Contributor* role is built into Azure so the role definition ID is documented.
 
