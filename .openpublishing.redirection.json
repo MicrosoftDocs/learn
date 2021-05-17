@@ -5856,72 +5856,72 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
@@ -5931,18 +5931,1283 @@
         "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-install-vscode/4-exercise-interactive-mode.md",
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/2-ml-options-on-azure.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-install-vscode/5-exercise-setup-visual-studio-code.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/3-dsvm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-install-vscode/6-exercise-write-execute-first-script.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode",
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/4-azure-ml-studio.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/5-sql-ml-server.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/6-sqark-on-hdinsight.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/7-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/8-azure-ml-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/9-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/2-ml-options-on-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/3-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/4-azure-ml-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/5-sql-ml-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/6-sqark-on-hdinsight.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/7-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/8-azure-ml-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/2-create-an-experiment-in-ML-studio.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/3-build-the-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/4-prepare-and-deploy-the-web-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/5-view-headers-and-sample-code.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/6-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/2-create-an-experiment-in-ML-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/3-build-the-experiment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/4-prepare-and-deploy-the-web-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/5-view-headers-and-sample-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-an-experiment-in-ml-studio/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/2-an-overview-of-machine-learning.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/3-setup-an-azure-ML-studio-account.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/4-create-ML-studio-workspace-using-existing-azure-account.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/5-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/includes/2-an-overview-of-machine-learning.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/includes/3-setup-an-azure-ML-studio-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/includes/4-create-ML-studio-workspace-using-existing-azure-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/create-machine-learning-studio-account/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/2-windows-dsvms.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/4-deep-learning-vm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/5-geo-ai-vm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/includes/2-windows-dsvms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/includes/4-deep-learning-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/includes/5-geo-ai-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/explore-azure-dsvm-types/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/10-roles-ds-process.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/11-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/2-data-science-process.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/3-what-is-modeling.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/4-choose-use-case.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/5-data-preparation.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/6-feature-engineering.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/7-model-training.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/8-model-evaluation.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/8-model-evaluation.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/10-roles-ds-process.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/2-data-science-process.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/3-what-is-modeling.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/4-choose-use-case.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/5-data-preparation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/6-feature-engineering.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/7-model-training.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/8-model-evaluation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/includes/9-model-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-data-science-in-azure/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/2-create-azure-dsvm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/3-connect-dsvm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/4-use-jupyter-notebooks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/5-explore-preinstall-tools.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/2-create-azure-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/3-connect-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/4-use-jupyter-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/5-explore-preinstall-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/provision-and-use-azure-dsvm/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/2-overview-of-databricks-delta.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/5-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/includes/2-overview-of-databricks-delta.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/includes/5-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-pipelines-using-databricks-delta/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/2-visualization-options.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/5-cleanup-the-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/includes/2-visualization-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/includes/5-cleanup-the-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/create-data-visualizations-using-azure-databricks-and-power-bi/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/2-azure-data-factory-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/3-create-adf-storage-account.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/4-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/5-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/6-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/2-azure-data-factory-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/3-create-adf-storage-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/4-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/includes/6-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/data-ingestion-with-azure-data-factory/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/2-deep-learning-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/5-cleanup-the-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/includes/2-deep-learning-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/includes/5-cleanup-the-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-in-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/1-intro-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/2-create-databricks-workspace.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/3-databricks-notebooks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/4-using-notebooks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/5-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/6-summary-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/1-intro-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/2-create-databricks-workspace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/3-databricks-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/4-using-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/includes/6-summary-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/intro-to-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/2-advanced-transformation.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/5-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/includes/2-advanced-transformation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-advanced-data-transformation-in-azure-databricks/includes/5-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/2-etl-overview.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/5-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/includes/2-ETL-overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/includes/5-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-basic-data-transformation-in-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/2-eda-in-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/3-complete-labs-in-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/5-summary-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/includes/2-eda-in-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/includes/3-complete-labs-in-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/includes/5-summary-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-exploratory-data-analysis-with-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/2-model-training-techniques.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/5-cleanup-the-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/includes/2-model-training-techniques.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-training-evaluation-and-selection-with-azure-databricks/includes/5-cleanup-the-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/2-text-analytics-with-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/5-cleanup-the-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/includes/2-text-analytics-with-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/includes/5-cleanup-the-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-text-analytics-with-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/2-read-write-functions.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/3-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/4-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/5-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/includes/2-read-write-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/includes/3-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/includes/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/includes/5-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/read-and-write-data-using-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/2-streaming-overview.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/3-setup-event-hubs.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/4-complete-labs-in-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/5-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/6-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/2-streaming-overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/3-setup-event-hubs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/4-complete-labs-in-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/includes/6-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/streaming-in-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/10-summary-and-cleanup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/2-setup-the-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assign-resource-class.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/4-manage.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/5-create-tables-perform-queries.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/6-load-data-using-data-factory.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/7-load-data-using-ploybase.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/8-integrate-with-azure-databricks.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/9-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/2-setup-the-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/3-create-user-assign-resource-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/4-manage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/5-create-tables-perform-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/6-load-data-using-data-factory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/7-load-data-using-polybase.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/8-integrate-with-azure-databricks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/includes/10-summary-and-cleanup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/data-engineering-with-databricks/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/data-science/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-data-science-tools-in-azure/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-with-azure-dsvm/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/publish-experiment-with-ml-studio/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/",
       "redirect_document_id": false
     }
   ]
