@@ -153,7 +153,7 @@ param storageAccountName string
 This parameter includes two decorators. You can apply multiple decorators to a parameter by putting each decorator on its own line.
 
 > [!NOTE]
-> You can also apply the `@minLength` and `@maxLength` decorators to array parameters.
+> You can also apply the `@minLength` and `@maxLength` decorators to array parameters, to control how many items are allowed to be in the array.
 
 When you work with numeric parameters, you might need values to be in a particular range. For example, your toy company might decide that whenever anybody deploys an App Service plan, they should always deploy at least one instance, but no more than 10 instances of the plan. To meet the requirements, you can use the `@minValue` and `@maxValue` decorators to specify the minimum and maximum allowed values. The following example declares the integer parameter `appServicePlanInstanceCount` whose value can only be between 1 and 10 (inclusive):
 

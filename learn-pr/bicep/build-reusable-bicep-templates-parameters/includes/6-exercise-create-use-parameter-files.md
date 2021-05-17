@@ -16,25 +16,25 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 To make your template work across environments, the Azure App Service plan SKU details will be provided in a parameter file rather than by a default value.
 
-1. In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value.
+In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value.
 
-   :::code language="plaintext" source="code/6-template.bicep" range="19-20" highlight="2" :::
+:::code language="plaintext" source="code/6-template.bicep" range="19-20" highlight="2" :::
 
 ## Add new parameters
 
 Now you need to add a SQL server and database. First, you'll add parameters for the administrator login and password, and the database SKU. You'll set those later.
 
-1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, `sqlServerAdministratorPassword`, and `sqlDatabaseSku` parameters underneath the current parameter declarations. When you're finished, your parameter declarations should look like this example:
+In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, `sqlServerAdministratorPassword`, and `sqlDatabaseSku` parameters underneath the current parameter declarations. When you're finished, your parameter declarations should look like this example:
 
-   :::code language="plaintext" source="code/6-template.bicep" range="1-34" highlight="25-34" :::
+:::code language="plaintext" source="code/6-template.bicep" range="1-34" highlight="25-34" :::
 
-   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a value in a parameter file shortly.
+Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a value in a parameter file shortly.
 
 ## Add new variables
 
-1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerName` and `sqlDatabaseName` variables underneath the existing variables. When you're finished, your variable declarations should look like this example:
+In the *main.bicep* file in Visual Studio Code, add the `sqlServerName` and `sqlDatabaseName` variables underneath the existing variables. When you're finished, your variable declarations should look like this example:
 
-   :::code language="plaintext" source="code/6-template.bicep" range="36-39" highlight="3-4" :::
+:::code language="plaintext" source="code/6-template.bicep" range="36-39" highlight="3-4" :::
 
 ### Add SQL server and database resources
 
