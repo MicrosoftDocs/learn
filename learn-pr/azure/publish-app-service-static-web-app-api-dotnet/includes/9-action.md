@@ -11,8 +11,8 @@ Now, everything changes.
 The folder _.github/workflows_ contains your GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
 
 ```yaml
-app_location: '/Client' # App source code path
-api_location: '/Api' # Api source code path - optional
+app_location: 'Client' # App source code path
+api_location: 'Api' # Api source code path - optional
 output_location: 'wwwroot' # Built app content directory - optional
 ```
 

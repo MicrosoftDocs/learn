@@ -3,13 +3,13 @@ Functions are the primary way code is executed within Rust. You've already seen 
 Function definitions in Rust start with `fn` and have a set of parentheses after the function name. The braces tell the compiler where the function body begins and ends.
 
 ```rust
-fn another_function() {
-    println!("Hello from another function!");
-}
-
 fn main() {
     println!("Hello, world!");
     another_function();
+}
+
+fn another_function() {
+    println!("Hello from another function!");
 }
 ```
 
