@@ -5,7 +5,7 @@ ms.topic: include
 ms.date: 04/22/2021
 ms.author: jodowns
 ---
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
