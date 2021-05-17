@@ -21,13 +21,13 @@ With these measures in place, the Tailwind Traders team is ready to take the nex
 
 If you run existing workloads on-premises or in the datacenter, try entering your existing workloads in the [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true) to see how the cost of running on Azure compares to what you pay today.
 
-Then, use the [Azure documentation](https://docs.microsoft.com/azure/) to map your current infrastructure to cloud services. Use the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to get a more accurate picture of what it would cost to run your existing workloads on Azure.
+Then, use the [Azure documentation](/azure/) to map your current infrastructure to cloud services. Use the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to get a more accurate picture of what it would cost to run your existing workloads on Azure.
 
 ## Learn more
 
 In this module, you learned about the many factors that affect the total cost of running on Azure.
 
-The [Control Azure spending and manage bills with Azure Cost Management + Billing](https://docs.microsoft.com/learn/paths/control-spending-manage-bills/?azure-portal=true) learning path is a great next step toward learning how to monitor and control your Azure spending.
+The [Control Azure spending and manage bills with Azure Cost Management + Billing](../../../paths/control-spending-manage-bills/index.yml?azure-portal=true) learning path is a great next step toward learning how to monitor and control your Azure spending.
 
 Here are additional resources to help you go further.
 
@@ -38,15 +38,15 @@ Here are additional resources to help you go further.
 
 ### Understand your bill
 
-* For more information about Azure usage charges, see [Understand terms on your Microsoft Azure invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice?azure-portal=true).
+* For more information about Azure usage charges, see [Understand terms on your Microsoft Azure invoice](/azure/billing/billing-understand-your-invoice?azure-portal=true).
 * To learn more about how bandwidth affects pricing, see [Bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true).
 
 ### Manage and minimize costs
 
 * See [Azure Cost Management + Billing](https://azure.microsoft.com/services/cost-management?azure-portal=true) to learn more about analyzing costs, creating and managing budgets, exporting data, and reviewing and acting on recommendations.
 * Take advantage of significant discounts on development and testing workloads. To learn more, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true).
-* Learn more about how [Azure Reservations](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) can save you money when you commit to one-year or three-year pricing plans.
-* Learn how to [prevent unexpected charges with Azure billing and cost management](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started?azure-portal=true).
-* See [Azure spending limit](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
-* Learn how to [start and stop VMs during off-hours](https://docs.microsoft.com/azure/automation/automation-solution-vm-management?azure-portal=true).
+* Learn more about how [Azure Reservations](/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) can save you money when you commit to one-year or three-year pricing plans.
+* Learn how to [prevent unexpected charges with Azure billing and cost management](/azure/cost-management-billing/manage/getting-started?azure-portal=true).
+* See [Azure spending limit](/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
+* Learn how to [start and stop VMs during off-hours](/azure/automation/automation-solution-vm-management?azure-portal=true).
 * See how [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) can help save costs by bringing Windows Server and SQL Server on-premises licenses with Software Assurance to Azure.
