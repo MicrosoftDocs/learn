@@ -8,7 +8,7 @@ You should now have a good understanding of what scripts and tools can help you 
 
 ## Additional resources
 
-- [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell%3fazure-portal%3dtrue)
+- [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&azure-portal=true)
 - [Default test cases for the ARM template test toolkit](/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
 - [Azure Resource Manager deployment modes](/azure/azure-resource-manager/templates/deployment-modes?azure-portal=true)
 - [Visual Studio Code integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal?azure-portal=true)
