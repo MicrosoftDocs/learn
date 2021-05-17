@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 metadata:
-  title: Secure your hub and spoke network
-  description: Secure your hub and spoke network
+  title: Secure your hub-spoke network
+  description: Secure your hub-spoke network
   ms.date: 10/21/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Secure your hub and spoke network
+title: Secure your hub-spoke network
 durationInMinutes: 8
 content: |
   [!include[](includes/5-secure-hub-spoke.md)]

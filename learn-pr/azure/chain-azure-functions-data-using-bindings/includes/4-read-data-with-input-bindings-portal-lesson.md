@@ -22,7 +22,7 @@ A binding expression is specialized text in function.json, function parameters, 
 
 ### Types of binding expressions
 
-There are a number or types of binding expressions, including:
+There are a number of types of binding expressions, including:
 
 - App settings
 - Trigger filename

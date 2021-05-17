@@ -19,7 +19,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
+1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon. Make sure to select Bash as the interactive CloudShell environment.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
@@ -58,7 +58,7 @@ For scenarios where you need full container orchestration, including service dis
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
-      --out table
+      --output table
     ```
 
     You see your container's fully qualified domain name (FQDN) and its provisioning state. Here's an example.

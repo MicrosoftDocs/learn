@@ -175,4 +175,4 @@ When you define types through namespaces, every type declared in the specified n
 
 ## Create a distribution package
 
-After you have a compacted app, you can create a distribution package. Distribution packages are often zipped containers that contain the app and all its assets. Each platform uses packages a little differently. The best way to stay up to date is to check the documentation from each vendor. You can also find excellent guides on [docs.microsoft.com](https://docs.microsoft.com/).
+After you have a compacted app, you can create a distribution package. Distribution packages are often zipped containers that contain the app and all its assets. Each platform uses packages a little differently. The best way to stay up to date is to check the documentation from each vendor. You can also find excellent guides on [docs.microsoft.com](/).

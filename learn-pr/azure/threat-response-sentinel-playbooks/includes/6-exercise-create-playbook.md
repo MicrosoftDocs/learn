@@ -15,8 +15,8 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 ### Task 1: Work with Azure Sentinel playbooks
 
 1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Azure Sentinel workspace.
-2. In the **Azure Sentinel** panel, on the menu bar, in the **Configuration** section, select **Playbooks**.
-3. Select **+Add Playbook**.
+2. In the **Azure Sentinel** panel, on the menu bar, in the **Configuration** section, select **Automation**.
+3. On the top menu, select **Create** and **Add new playbook**.
 4. In the  **Logic App** panel, on the **Basics** tab, specify the following settings:
 
     | **Settings** | **Value** |
