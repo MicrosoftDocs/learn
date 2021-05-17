@@ -45,12 +45,12 @@ This approach lets you achieve the best performance for your app by taking direc
 
 The app you're going to create in this module is a simple one. It will display some text and change some colors when you select a button.
 
-![Application screenshot](../media/SayHelloWithStyle.gif)
+![Animation of Say hello application running with text repeatedly changing color.](../media/SayHelloWithStyle.gif)
 
 It's not going to win any awards, but it will demonstrate the similarities and differences among the development platforms.
 
 When you've had your fill, you can move on to trying out Windows Template Studio. With WTS, you'll build an app that looks a little more impressive:
 
-![Application screenshot](../media/wts5.png)
+![Composite of several screenshots of a Weather application showing a map, chart, and settings screen.](../media/wts5.png)
 
 Ready to start?
