@@ -16,19 +16,19 @@ To that end, Microsoft has created many tools and libraries. The three we're goi
 
 ### Universal Windows Platform
 
-Windows 10 introduces the [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) (UWP), which provides a common app platform on every device that runs Windows 10. The UWP core APIs are the same on all Windows devices. If your app uses only the core APIs, it will run on any Windows 10 device, whether it's a desktop PC, Xbox, a mixed-reality headset, or something else.
+Windows 10 introduces the [Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) (UWP), which provides a common app platform on every device that runs Windows 10. The UWP core APIs are the same on all Windows devices. If your app uses only the core APIs, it will run on any Windows 10 device, whether it's a desktop PC, Xbox, a mixed-reality headset, or something else.
 
 UWP is best if you're targeting Windows 10 and you want unencumbered access to the latest Windows 10 APIs and features. UWP also provides the other benefits of a modern application platform. These benefits include a XAML-based UI model with built-in support for adapting to DPI and screen size changes, a security model in which users explicitly grant apps access to device capabilities, and a packaging model that supports clean installations and the ability to publish directly to the Microsoft Store.
 
 ### Windows Presentation Foundation
 
-[Windows Presentation Foundation](https://docs.microsoft.com/visualstudio/designers/getting-started-with-wpf) (WPF) is a UI framework for creating desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, resources, controls, graphics, layout, data binding, documents, and security. It's a subset of the .NET Framework, so if you've already built applications with the .NET Framework by using ASP.NET or Windows Forms, the programming experience should be familiar. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
+[Windows Presentation Foundation](/visualstudio/designers/getting-started-with-wpf) (WPF) is a UI framework for creating desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, resources, controls, graphics, layout, data binding, documents, and security. It's a subset of the .NET Framework, so if you've already built applications with the .NET Framework by using ASP.NET or Windows Forms, the programming experience should be familiar. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 
 WPF and Windows Forms are best if you need to target OS versions earlier than Windows 10 and you want to have a higher level of coding productivity than C++ and Win32. You can also share some .NET Framework code and libraries with other Microsoft platforms by using portable class libraries.
 
 ### Windows Forms
 
-[Windows Forms](https://docs.microsoft.com/dotnet/framework/winforms/) is a smart-client technology for the .NET Framework, a set of managed libraries that simplify common application tasks like reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network. Windows Forms is an older development platform and lacks some of the features provided by WPF and UWP.
+[Windows Forms](/dotnet/framework/winforms/) is a smart-client technology for the .NET Framework, a set of managed libraries that simplify common application tasks like reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network. Windows Forms is an older development platform and lacks some of the features provided by WPF and UWP.
 
 We can't talk about writing Windows apps without mentioning one more option: Win32.
 
@@ -39,7 +39,7 @@ The Win32 API (more accurately called the Windows API) enables applications to u
 This approach lets you achieve the best performance for your app by taking direct control over memory allocation and performance-oriented CPU features like SSE or AVX instructions. It's the best way to target DirectX technologies for low-level, high-performance graphics access. You can share C++ code between all types of Windows applications and with non-Windows platforms. The tradeoff is that, compared to C# and UWP for example, it can take a fair amount of work to implement even basic features.
 
 > [!NOTE]
-> For more information about selecting a development platform see [Choose Your Platform](https://docs.microsoft.com/windows/desktop/choose-your-technology).
+> For more information about selecting a development platform see [Choose Your Platform](/windows/desktop/choose-your-technology).
 
 ## The app you'll write
 
