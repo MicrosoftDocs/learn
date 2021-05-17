@@ -64,7 +64,7 @@ KQL is a powerful query language. We're only going to scratch the surface
 with some basic queries so you can see how easy it is to use. Later on, if
 you'd like to dive deeper to use some of the more advanced features
 (including some machine learning functionality), be sure to check out the
-[Log Analytics tutorial](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal).
+[Log Analytics tutorial](/azure/azure-monitor/log-query/get-started-portal).
 
 Let's start by writing a simple KQL query. Almost all KQL queries begin
 with the data source - the table you are querying. So, if we were querying

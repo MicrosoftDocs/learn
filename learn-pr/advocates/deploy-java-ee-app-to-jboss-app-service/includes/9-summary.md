@@ -14,12 +14,12 @@ Use the following links to get more information about the topics in this module.
 
 ### Microsoft Azure
 
-* [Azure App Service](https://docs.microsoft.com/azure/app-service?WT.mc_id=java-14033-yoterada)
-* [Monitor Azure App Service performance](https://docs.microsoft.com/azure/azure-monitor/app/azure-web-apps?WT.mc_id=java-14033-yoterada&tabs=java)
-* [Quickstart: Get started with Application Insights in a Java web project](https://docs.microsoft.com/azure/azure-monitor/app/java-get-started?tabs=maven&WT.mc_id=java-14033-yoterada)
-* [Get started with autoscale in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
-* [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?tabs=userlevel?WT.mc_id=java-14033-yoterada)
-* [Integrate your app with an Azure virtual network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
+* [Azure App Service](/azure/app-service?WT.mc_id=java-14033-yoterada)
+* [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java&WT.mc_id=java-14033-yoterada)
+* [Quickstart: Get started with Application Insights in a Java web project](/azure/azure-monitor/app/java-get-started?tabs=maven&WT.mc_id=java-14033-yoterada)
+* [Get started with autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
+* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel%3fWT.mc_id%3djava-14033-yoterada)
+* [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
 
 ### Java EE (Jakarta EE)
@@ -36,5 +36,5 @@ Use the following links to get more information about the topics in this module.
 * [MySQL Community Edition](https://www.mysql.com/products/community/)
 * [MySQL Connector/J](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
 * [MySQL Sample World Database Installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html)
-* [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql?WT.mc_id=java-14033-yoterada)
-* [Azure Database for MySQL - Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/overview?WT.mc_id=java-14033-yoterada)
+* [Azure Database for MySQL](/azure/mysql?WT.mc_id=java-14033-yoterada)
+* [Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/overview?WT.mc_id=java-14033-yoterada)

@@ -21,7 +21,7 @@ At this point, the app is working to get the user's location and is ready to be 
     The new project will be created and have a default function called `Function1`.
 
 > [!NOTE]
-> This function was created with anonymous access. Once published to Azure, anybody who knows the URL will be able to call this function. In a real-world scenario, you would protect this with some form of authentication, such as [Azure App Service authentication](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview?azure-portal=true) or [Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c?azure-portal=true).
+> This function was created with anonymous access. Once published to Azure, anybody who knows the URL will be able to call this function. In a real-world scenario, you would protect this with some form of authentication, such as [Azure App Service authentication](/azure/app-service/app-service-authentication-overview?azure-portal=true) or [Azure Active Directory B2C](/azure/active-directory-b2c?azure-portal=true).
 
 ## Create the function
 
