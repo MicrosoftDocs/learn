@@ -6,11 +6,11 @@ The built-in scenarios can be used in the following cases:
 
    :::image type="content" source="../media/2-symptom-checker.png" alt-text="Triage / Symptom Checker Demo":::
 
-2. General information about conditions, symptoms, and more: Loaded with medical content, the health bot instance can provide information about medical conditions and symptoms, and helpful medical resources; for example, "Information about diabetes",  "What are the symptoms of diabetes?", "Resources for diabetes".
+1. General information about conditions, symptoms, and more: Loaded with medical content, the health bot instance can provide information about medical conditions and symptoms, and helpful medical resources; for example, "Information about diabetes",  "What are the symptoms of diabetes?", "Resources for diabetes".
 
    :::image type="content" source="../media/2-disease-information.png" alt-text="Information about particular diseases":::
 
-3. Drugs and medication: The health bot instance can provide information about a type or brand of drugs; for example, "Information about aspirin".
+1. Drugs and medication: The health bot instance can provide information about a type or brand of drugs; for example, "Information about aspirin".
 
    :::image type="content" source="../media/2-aspirin-information.png" alt-text="Information about Aspirin":::
 

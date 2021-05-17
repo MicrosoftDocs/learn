@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-built-in-scenarios.4-exercise-provision-webchat-channel
+uid: learn.healthbot-built-in-scenarios.5-exercise-provision-webchat-channel
 title: Exercise - Provision the WebChat channel
 metadata:
   title: Exercise - Provision the WebChat channel
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-provision-webchat-channel.md)]
+  [!include[](includes/5-exercise-provision-webchat-channel.md)]

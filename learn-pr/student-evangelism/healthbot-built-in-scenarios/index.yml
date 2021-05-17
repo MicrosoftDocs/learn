@@ -28,10 +28,11 @@ prerequisites: None
 units:
 - learn.healthbot-built-in-scenarios.1-introduction
 - learn.healthbot-built-in-scenarios.2-what-are-built-in-scenarios
-- learn.healthbot-built-in-scenarios.3-configure-built-in-scenario
-- learn.healthbot-built-in-scenarios.4-exercise-provision-webchat-channel
-- learn.healthbot-built-in-scenarios.5-knowledge-check
-- learn.healthbot-built-in-scenarios.6-summary
+- learn.healthbot-built-in-scenarios.3-knowledge-check-1
+- learn.healthbot-built-in-scenarios.4-configure-built-in-scenario
+- learn.healthbot-built-in-scenarios.5-exercise-provision-webchat-channel
+- learn.healthbot-built-in-scenarios.6-knowledge-check-2
+- learn.healthbot-built-in-scenarios.7-summary
 
 badge:
   uid: learn.healthbot-built-in-scenarios.badge

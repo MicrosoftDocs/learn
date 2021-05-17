@@ -13,7 +13,6 @@ In this module, you will:
 - Recognize built-in scenario use cases
 - Build a simple web page that allows users to communicate with your Azure Health Bot instance through a web chat control
 
-
 ## Prerequisites
 
 - Introduction to Health Bot Service

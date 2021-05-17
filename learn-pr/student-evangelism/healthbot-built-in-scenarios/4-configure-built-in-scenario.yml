@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-built-in-scenarios.3-configure-built-in-scenario
+uid: learn.healthbot-built-in-scenarios.4-configure-built-in-scenario
 title: Configure built-in scenarios
 metadata:
   title: Configure built-in scenarios
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-configure-built-in-scenario.md)]
+  [!include[](includes/4-configure-built-in-scenario.md)]

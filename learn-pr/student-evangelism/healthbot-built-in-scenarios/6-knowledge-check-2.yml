@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-built-in-scenarios.5-knowledge-check
+uid: learn.healthbot-built-in-scenarios.6-knowledge-check-2
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -11,25 +11,12 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check-2.md)]
 quiz:
   title: Check your knowledge
   
   questions:
     ##Question 1
-    - content: "Which of the following scenarios is a built-in scenario?"
-      choices:
-        - content: "The Health Bot instance allows customers to schedule appointments easily and securely."
-          isCorrect: false
-          explanation: "Scheduling appointments is an example of a custom scenario."
-        - content: "The Health Bot instance provides information about health plan details, such as pricing and benefits."
-          isCorrect: false
-          explanation: "Health plan inquiries is an example of custom scenario."
-        - content: "The Health Bot instance provides information about medical conditions, symptoms, causes, and complications."
-          isCorrect: true
-          explanation: "Medical information requests are built-in scenarios."
-       
-    ##Question 2
     - content: "The user wants to force an active scenario to end so they can begin a different scenario. Which built-in command should the user use to end the current scenario?"
       choices:
         - content: "Help"
@@ -42,7 +29,7 @@ quiz:
           isCorrect: false
           explanation: "The “start over” command restarts the current scenario."
       
-      ##Question 3
+      ##Question 2
     - content: "Which of the following statements is true about the built-in triage and symptom checking scenario?"
       choices:
         - content: "The built-in Triage and Symptom checking engines are included only as part of the Health Bot paid plan."
@@ -55,7 +42,7 @@ quiz:
           isCorrect: false
           explanation: "The built-in Triage and Symptom checking scenario can determine the likelihood of a condition given a set of symptoms and risk factors."
 
-    ##Question 4
+    ##Question 3
     - content: "A Health Company has created a custom scenario and plans to use it as automatic welcome scenario. How can they assign a welcome scenario?"
       choices:
         - content: "Navigate to Configuration > Conversation > Interactions > Automatic Welcome > Automatic Welcome Scenario and select the custom scenario. "
