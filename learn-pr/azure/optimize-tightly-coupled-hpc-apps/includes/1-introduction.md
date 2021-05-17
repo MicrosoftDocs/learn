@@ -15,5 +15,4 @@ After you complete this module, you'll be able to:
 
 - Basic knowledge of high-performance computing.
 - Familiarity with Azure Virtual Machines tasks, such as deploying virtual machines and mounting shared file systems.
-- You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/).
-
+- You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/).

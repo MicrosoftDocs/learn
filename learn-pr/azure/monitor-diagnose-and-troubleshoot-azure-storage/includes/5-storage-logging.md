@@ -32,7 +32,7 @@ Unlike Storage Analytics metrics, Storage Analytics logging isn't enabled by def
 ![Screenshot of the diagnostic settings page in the Azure portal, showing how to enable logging](../media/5-enable-logging.png)
 
 > [!NOTE]
-> The portal gives you a choice in the format of the data that is written to the log records. You can select Logging version 1.0 or Logging version 2.0. Logging Version 2.0 provides additional fields to support authentication mechanisms such as OAuth 2.0 and Azure Active Directory. It is recommended for all new storage accounts to use Logging version 2.0. For more information on these formats, see [Storage Analytics log format](https://docs.microsoft.com/rest/api/storageservices/storage-analytics-log-format).
+> The portal gives you a choice in the format of the data that is written to the log records. You can select Logging version 1.0 or Logging version 2.0. Logging Version 2.0 provides additional fields to support authentication mechanisms such as OAuth 2.0 and Azure Active Directory. It is recommended for all new storage accounts to use Logging version 2.0. For more information on these formats, see [Storage Analytics log format](/rest/api/storageservices/storage-analytics-log-format).
 
 You can also enable Storage Analytics programmatically via PowerShell or the Azure CLI. If you're using PowerShell, run the `Set-AzureStorageServiceLoggingProperty` cmdlet:
 
