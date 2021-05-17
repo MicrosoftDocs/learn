@@ -5856,72 +5856,72 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.yml",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.md",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.md",
+        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.yml",
         "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
         "redirect_document_id": false
     },
