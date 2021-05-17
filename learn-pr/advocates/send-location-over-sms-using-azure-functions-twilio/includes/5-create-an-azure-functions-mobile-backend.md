@@ -8,7 +8,7 @@ At this point, the app is working to get the user's location and is ready to be 
 
 1. Name the project "ImHere.Functions", and then click **OK**.
 
-    ![The Add New Project dialog](../media/5-add-new-functions-project.png)
+    ![Screenshot of the Add New Project dialog with the Visual C#, Cloud option highlighted.](../media/5-add-new-functions-project.png)
 
 1. The **New Project** configuration dialog will appear, and it may show a spinner in the bottom-left whilst loading updated templates. If you see this, wait until this has finished loading, then if updated templates are available, click the **Refresh** option that will appear to ensure you get the latest Function templates.
 
@@ -57,7 +57,7 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Name the project "ImHere.Data", and then click **OK**.
 
-    ![The Add New Project dialog](../media/5-add-new-net-standard-project.png)
+    ![Screenshot of the Add New Project dialog with the Visual C#, .NET Standard option highlighted.](../media/5-add-new-net-standard-project.png)
 
 1. Delete the auto-generated "Class1.cs" file.
 
