@@ -34,11 +34,11 @@ With the manual scripting approach, the developer carefully writes and maintains
 
 Once you have identified the approach you will use to update your database, you can select from two common solutions to implement the approach, Azure DevOps or GitHub Actions.
 
-## Implement CI/CD with Azure DevOps
+### Implement CI/CD with Azure DevOps
 
 Azure DevOps is a suite of products that provides full support to all DevOps aspects, including a CI/CD pipeline. A pipeline is composed of Tasks that are used to define the steps of the pipeline. A Task can be almost anything, from the execution of an executable to the build of a .NET solution. A specific task named the **Azure SQL Database Deployment Task** can be used to deploy a `.dacpac` file or execute a .sql script.
 
-## Implement CI/CD with GitHub Actions
+### Implement CI/CD with GitHub Actions
 
 GitHub Actions allow the definition of a CI/CD pipeline with the use of **Actions**, which are used to create the steps of the pipeline. An Action can be used to execute processes of almost any type. The Action **Azure SQL Deploy** allows you to deploy a `.dacpac` file.
 

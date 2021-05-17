@@ -10,12 +10,12 @@ There are many references for you to go as deep into the topics discussed as you
 
 The following references are related to Azure SQL Database's modern capabilities.
 
-- [DataExposed](https://www.youtube.com/playlist?list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR)
+- [Azure SQL YouTube Channel featuring Data Exposed](https://aka.ms/azuresqlyt)
 - [Video: Using Azure Pipelines for Azure SQL deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=26)
 - [10 reasons to use Azure SQL in your next project](https://devblogs.microsoft.com/azure-sql/10-reasons-to-use-azure-sql-in-your-next-project/).
 - [Azure SQL JSON support sample](https://github.com/yorek/azure-sql-db-samples/tree/master/samples/03-json)
 - [Geospatial support](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server)
-- [OpenLayers library](https://openlayers.org/)library
+- [OpenLayers library](https://openlayers.org/)
 - [Graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview)
 - [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
 - [Lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
