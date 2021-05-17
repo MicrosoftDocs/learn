@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.add-packages-yast
-title: Add packages using YaST admin tool
+title: Add packages using the YaST admin tool
 metadata:
   unitType: learning-content
-  title: Add packages using YaST admin tool
+  title: Add packages using the YaST admin tool
   description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
   ms.date: 5/12/2021
   author: yenchiho
