@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
-  - Familiarity with CI/CD concepts
+  - Familiarity with CI/CD concepts such as GitHub Actions
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - intermediate

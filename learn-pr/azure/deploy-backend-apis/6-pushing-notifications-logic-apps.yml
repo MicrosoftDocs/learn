@@ -33,7 +33,7 @@ quiz:
       choices:
       - content: "Execute a stored procedure"
         isCorrect: false
-        explanation: "This actions is supported, but are other answers?"
+        explanation: "This action is supported, but are other answers?"
       - content: "Execute a SQL query"
         isCorrect: false
         explanation: "This action is supported, but are other answers?"
