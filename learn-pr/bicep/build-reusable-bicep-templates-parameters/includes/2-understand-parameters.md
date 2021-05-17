@@ -1,4 +1,8 @@
-With _parameters_, you can provide information to a Bicep template at deployment time. You can make a Bicep template flexible and reusable by declaring parameters within your template. _Decorators_ provide a way to attach constraints and metadata to a parameter, which helps anyone using your templates to understand what information they need to provide. In this unit, you'll learn about parameter and decorators.
+With _parameters_, you can provide information to a Bicep template at deployment time. You can make a Bicep template flexible and reusable by declaring parameters within your template.
+
+_Decorators_ provide a way to attach constraints and metadata to a parameter, which helps anyone using your templates to understand what information they need to provide.
+
+In this unit, you'll learn about parameter and decorators.
 
 ## Declare a parameter
 
@@ -90,7 +94,7 @@ Whenever you define a resource in your Bicep file, you can reuse it wherever you
 
 ### Arrays
 
-An array is a list of items. You might use an array of string values to declare a list of email addresses for an Azure Monitor action group. You might use an array of objects to represent a list of subnets for a virtual network.
+An array is a list of items. As an example, you might use an array of string values to declare a list of email addresses for an Azure Monitor action group. Or you might use an array of objects to represent a list of subnets for a virtual network.
 
 > [!NOTE]
 > You can't specify the type of individual items that an array needs to contain. For example, you can't specify that the array can only contain strings.
