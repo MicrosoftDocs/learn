@@ -22,27 +22,7 @@ The difference between a patch and an update is that a patch contains one or mor
 
 Let’s have a look at some basic zypper examples:  
 
-- List available repositories where packages come from through  
-
-    ```console
-    sudo zypper lr  or sudo zypper repos 
-    ```
-
-- List available patches using  
-
-    ```console
-    sudo zypper lp or sudo zypper list-patches 
-    ```
-
-- List available updates  
-
-    ```console
-    sudo zypper lu or sudo zypper list-updates 
-    ```
-
-- Install updates/patches 
-
-    ```console
-    sudo zypper up or sudo zypper update or sudo zypper patch 
-    ```
-
+- List available repositories where packages come with `sudo zypper lr` or `sudo zypper repos`.
+- List available patches with `sudo zypper lp` or `sudo zypper list-patches`.
+- List available updates with `sudo zypper lu` or `sudo zypper list-updates`.
+- Install updates/patches with `sudo zypper up`, `sudo zypper update` or `sudo zypper patch`.
