@@ -16,7 +16,7 @@ You're now confident that you can recommend migrating your SpringBoot Java appli
 
 ## Enable diagnostic logging
 
-Learn how Azure provides [built-in diagnostics to help with debugging](https://docs.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy?azure-portal=true).
+Learn how Azure provides [built-in diagnostics to help with debugging](/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy%3fazure-portal%3dtrue).
 
 ## Clean up resources
 
@@ -35,8 +35,8 @@ This command might take a minute to run.
 
 For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy?azure-portal=true).
 
-For more information about Application Insights for monitoring, see [Azure Application Insights](https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
+For more information about Application Insights for monitoring, see [Azure Application Insights](/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?azure-portal=true&WT.mc_id=java-10785-ropreddy).
 
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java/?WT.mc_id=java-10785-ropreddy?azure-portal=true) and [Working with Azure DevOps and Java](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy?azure-portal=true).
+For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java/?WT.mc_id=java-10785-ropreddy%3fazure-portal%3dtrue) and [Working with Azure DevOps and Java](/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy%3fazure-portal%3dtrue).
 
-For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](https://docs.microsoft.com/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy?azure-portal=true).
+For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy%3fazure-portal%3dtrue).

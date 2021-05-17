@@ -25,7 +25,7 @@ Bindings are a declarative way to connect data and services to your function. Bi
 
 A trigger is a special type of input binding that has the additional capability of initiating execution.
 
-Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
+Azure provides a [large number of bindings](/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
 
 ### Define a sample binding
 
