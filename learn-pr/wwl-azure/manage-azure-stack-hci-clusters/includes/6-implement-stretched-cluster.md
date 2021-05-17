@@ -6,7 +6,7 @@ To provide site-level resiliency for Azure Stack HCI, you can implement a stretc
 
 A stretched Azure Stack HCI cluster relies on Storage Replica to perform synchronous replication between storage volumes hosted by the two groups of nodes in their respective physical sites. If a failure is affecting the availability of the primary site, to minimize potential downtime, the cluster automatically brings online its workloads on nodes in the surviving site. For a planned downtime at the primary site, you can use Hyper-V Live Migration to transition VM-based workloads to the other site, which maintains their online status.
 
-> [NOTE]
+> [!NOTE] 
 > The synchronous replication requirement imposes a limit of five milliseconds (ms) round-trip network latency between two groups of cluster nodes in the replicated sites. Depending on the physical network connectivity characteristics, this limit typically translates into a distance of 20–30 miles.
 
 Stretched Azure Stack HCI clusters support the active-passive and active-active modes. In the active-passive mode, you have a designated primary site, which unidirectionally replicates to another site providing the disaster recovery functionality. In the active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability if there is a failure in either site. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site. 

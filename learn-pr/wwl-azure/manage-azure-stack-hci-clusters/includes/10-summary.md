@@ -23,6 +23,6 @@ To learn more, go through the following documents:
 - [Understanding cluster and pool quorum](https://docs.microsoft.com/azure-stack/hci/concepts/quorum )
 - [Stretched clusters overview](https://docs.microsoft.com/azure-stack/hci/concepts/stretched-clusters)
 - [Add or remove servers for an Azure Stack HCI cluster](https://docs.microsoft.com/azure-stack/hci/manage/add-cluster)
-- [Validate an Azure Stack HCI cluster](https://docs.microsoft.com/en-us/azure-stack/hci/deploy/validate)
+- [Validate an Azure Stack HCI cluster](https://docs.microsoft.com/azure-stack/hci/deploy/validate)
 - [Taking an Azure Stack HCI server offline for maintenance](https://docs.microsoft.com/azure-stack/hci/manage/maintain-servers)
 - [Troubleshoot CredSSP](https://docs.microsoft.com/azure-stack/hci/manage/troubleshoot-credssp)
