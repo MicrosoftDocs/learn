@@ -11,7 +11,7 @@ The criteria help you compare Azure Front Door Standard and Azure Front Door Pre
 
 ## References
 
-- [What is Azure Front Door?](https://docs.microsoft.com/azure/frontdoor/front-door-overview?azure-portal=true)
-- [Overview of Azure Front Door Standard/Premium SKU (Preview)](https://docs.microsoft.com/azure/frontdoor/standard-premium/tier-comparison#feature-comparison?azure-portal=true)
-- [What is a content delivery network on Azure?](https://docs.microsoft.com/azure/cdn/cdn-overview?azure-portal=true)
-- [What is Azure Web Application Firewall on Azure Application Gateway?](https://docs.microsoft.com/azure/web-application-firewall/ag/ag-overview?azure-portal=true)
+- [What is Azure Front Door?](/azure/frontdoor/front-door-overview?azure-portal=true)
+- [Overview of Azure Front Door Standard/Premium SKU (Preview)](/azure/frontdoor/standard-premium/tier-comparison#feature-comparison?azure-portal=true)
+- [What is a content delivery network on Azure?](/azure/cdn/cdn-overview?azure-portal=true)
+- [What is Azure Web Application Firewall on Azure Application Gateway?](/azure/web-application-firewall/ag/ag-overview?azure-portal=true)
