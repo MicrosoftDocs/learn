@@ -22,4 +22,4 @@ For complex enterprises:
 
 ## Learn more
 
-To learn more about cloud governance, see the [Govern methodology overview](/azure/cloud-adoption-framework/govern/?azure-portal=true%3f). This article will guide you through four steps for developing cloud governance.
+To learn more about cloud governance, see the [Govern methodology overview](/azure/cloud-adoption-framework/govern/?azure-portal=true). This article will guide you through four steps for developing cloud governance.
