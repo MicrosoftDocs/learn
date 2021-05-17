@@ -17,7 +17,7 @@ In this exercise, you'll:
 
 ## Create an Azure IoT Central application
 
-1. On a web browser, refer to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
+1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
 1. On the **Welcome to IoT Central** page, select the avatar icon.
 1. When prompted, sign in to access the Azure subscription you'll be using in this module.
 1. On the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry.
@@ -152,8 +152,8 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-iot-raspberry-pi-connection-string.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the connection string set.":::
 
-1. On the **Raspberry Pi Azure IoT Online Simulator** page, directly below the code pane, select **Run** and verify that the messages containing temperature and humidity telemetry are generated and sent to the target designated by the connection string.
-<!--LM: If you can replace the word "below" and retain the meaning, please change it. I suggest "after" as an alternative.-->
+1. On the **Raspberry Pi Azure IoT Online Simulator** page, directly after the code pane, select **Run** and verify that the messages containing temperature and humidity telemetry are generated and sent to the target designated by the connection string.
+
    :::image type="content" source="../media/3-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page depicting the messages being sent to the IoT Central application.":::
 
 1. Switch back to the web browser window displaying the **About** view of the **raspberrypi-1** page and monitor the charts displaying humidity and temperature telemetry.
@@ -178,9 +178,9 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-graph.png" alt-text="Screenshot of the Analytics page of the raspberrypi-1 device telemetry in the IoT Central application window.":::
 
-1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page and below the code pane, select **Stop**. Verify that the simulated device no longer sends messages to the Azure IoT Central application.
+1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page and after the code pane, select **Stop**. Verify that the simulated device no longer sends messages to the Azure IoT Central application.
 1. Keep all the web browser windows open. You'll use them in the next exercise of this module.
-<!--LM: If you can replace the word "below" and retain the meaning, please change it. I suggest "after" as an alternative.-->
+
 ## Results
 
 Congratulations! You completed the first exercise of this module. In this exercise, you created an Azure IoT Central application and an IoT device template. You also integrated a Raspberry Pi simulated IoT device with the Azure IoT Central application.
