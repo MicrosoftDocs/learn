@@ -34,7 +34,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 ## Set the contributor role for the managed service identity
 
-Now that you have a managed service identity defined, you can assign it a role with rights to the resource group. The role assignment needs a GUID name. You can use the [`guid`](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#guid) function to create a GUID that's unique to the resource group and role name.
+Now that you have a managed service identity defined, you can assign it a role with rights to the resource group. The role assignment needs a GUID name. You can use the [`guid`](/azure/azure-resource-manager/templates/template-functions-string#guid) function to create a GUID that's unique to the resource group and role name.
 
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
@@ -83,7 +83,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 ## Deploy the template
 
 ::: zone pivot="cli"
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account that you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
@@ -197,7 +197,7 @@ az group delete --name $resourceGroupName
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) installed, and sign in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.

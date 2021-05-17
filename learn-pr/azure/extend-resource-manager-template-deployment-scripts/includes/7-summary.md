@@ -4,6 +4,6 @@ In this module, you were introduced to the `deploymentScripts` resource as a way
 
 To learn more about deployment scripts, check out these articles:
 
-- [`deploymentScripts` in the Azure Resource Manager template reference](https://docs.microsoft.com/azure/templates/microsoft.resources/deploymentscripts)
-- [Use deployment scripts in templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template)
-- [Tutorial: Use deployment scripts to create a self-signed certificate](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-deployment-script)
+- [`deploymentScripts` in the Azure Resource Manager template reference](/azure/templates/microsoft.resources/deploymentscripts)
+- [Use deployment scripts in templates](/azure/azure-resource-manager/templates/deployment-script-template)
+- [Tutorial: Use deployment scripts to create a self-signed certificate](/azure/azure-resource-manager/templates/template-tutorial-deployment-script)

@@ -6,13 +6,13 @@ ARM templates are wonderful things. You can use them to declare the desired stat
 
 `deploymentScripts` resources are either PowerShell or Bash scripts that run in a Docker container as part of your template deployment. The default container images have either the Azure CLI or Azure PowerShell available. These scripts run during the processing of the ARM template, so you can add custom behavior to the deployment process.
 
-Deployment scripts use a [managed service identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed service identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands will use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
+Deployment scripts use a [managed service identity](/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed service identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands will use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
 
 The `deploymentScripts` resource produces output that other resources in the deployment can use. You can then look up information from an external system or provide data based on the current state of your environment to affect the rest of the deployment.
 
 ## How deployment scripts work
 
-A `deploymentScripts` resource takes a user-provided script (either from the template or by URI) and possibly some supporting scripts, and runs them in an [Azure container instance](https://docs.microsoft.com/azure/container-instances). That container instance is assigned the managed identity that you provide. The scripts and their output are stored in a [file share for an Azure storage account](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
+A `deploymentScripts` resource takes a user-provided script (either from the template or by URI) and possibly some supporting scripts, and runs them in an [Azure container instance](/azure/container-instances). That container instance is assigned the managed identity that you provide. The scripts and their output are stored in a [file share for an Azure storage account](/azure/storage/files/storage-files-introduction).
 
 When the template deployment runs, it checks whether there's an existing `deploymentScripts` resource in the targeted resource group. If so, it compares the properties. If everything matches, nothing new happens. If the resource doesn't exist or has been changed, Azure Resource Manager creates a new container instance and runs the deployment scripts inside that container instance. Any defined output will be passed back to Azure Resource Manager for use later in the deployment.
 
@@ -45,4 +45,4 @@ Our full template would look something like:
 
   :::code language="json" source="code/example-template.json" :::
 
-You can find all the properties for the `deploymentScripts` resource in the [ARM template reference documentation](https://docs.microsoft.com/azure/templates/microsoft.resources/deploymentscripts).
+You can find all the properties for the `deploymentScripts` resource in the [ARM template reference documentation](/azure/templates/microsoft.resources/deploymentscripts).

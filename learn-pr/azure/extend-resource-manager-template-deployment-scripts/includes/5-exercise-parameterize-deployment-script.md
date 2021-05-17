@@ -46,7 +46,7 @@ The script you've adopted requires some environment variables. You can specify t
     :::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="105-118" highlight="10-13":::
 
 > [!TIP]
-> Use [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-resource) to access common values like `[resourceGroup().name]` and `[variables()]`.
+> Use [template functions](/azure/azure-resource-manager/templates/template-functions-resource) to access common values like `[resourceGroup().name]` and `[variables()]`.
 
 ## Add a template parameter
 
@@ -63,7 +63,7 @@ To make your template easier for the two teams to use, you can add a parameter t
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
 > [!TIP]
-> Use [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-resource) to access common functions like `[string()]` to convert values of one type to a string.
+> Use [template functions](/azure/azure-resource-manager/templates/template-functions-resource) to access common functions like `[string()]` to convert values of one type to a string.
 
 1. Add an `arguments` property to the deployment script.  The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. Make sure there are quotes around the whole argument so it gets passed in properly.
 
@@ -109,7 +109,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 Now that you've got the template set, you can validate the new deployment script by using a parameters file with new files specified.
 
-1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
+1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
 1. Edit the file to have two files specified:
 
     ```json
