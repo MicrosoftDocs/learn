@@ -3,7 +3,7 @@ uid: learn.language.rust-generic-types-traits.4-trait-bounds
 metadata:
   title: Use trait bounds and generic functions
   description: Learn how to use trait bounds and generic functions.
-  ms.date: 01/20/2021
+  ms.date: 05/16/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
