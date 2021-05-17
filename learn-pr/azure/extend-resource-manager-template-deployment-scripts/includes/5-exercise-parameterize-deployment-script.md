@@ -163,14 +163,15 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
-1. Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. 
+Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. 
 
-   :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
+:::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
 
-   Notice this uses several Bicep features:
-   - String interpolation, to combine the strings 
-   - The `\` escape character is used to allow us to include a single quote character (`'`) inside the string, since a single quote is normally a reserved character in Bicep.
-   - The `string()` function is used to convert the `filesToCopy` array to a string.
+Notice this uses several Bicep features:
+
+- String interpolation, to combine the strings 
+- The `\` escape character is used to allow us to include a single quote character (`'`) inside the string,since a single quote is normally a reserved character in Bicep.
+- The `string()` function is used to convert the `filesToCopy` array to a string.
 
 ::: zone-end
 
