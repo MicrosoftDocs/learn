@@ -23,9 +23,12 @@ iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
 roles:
-  - developer
+  - administrator
+  - devops-engineer
+  - solution-architect
 products:
   - azure
+  - azure-linux-vm
 units:
 - learn.azure.customize-suse-linux-enterprise-server-azure.introduction
 - learn.azure.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
