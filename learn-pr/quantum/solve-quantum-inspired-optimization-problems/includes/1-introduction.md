@@ -1,4 +1,4 @@
-If you've studied earlier modules in the [Quantum computing foundations](/learn/paths/quantum-computing-fundamentals/?azure-portal=true) learning path, you're already familiar with the fundamentals of quantum computing and how quantum algorithms can solve some of the problems you and your crew have encountered on the spaceship.
+If you've studied earlier modules in the [Quantum computing foundations](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) learning path, you're already familiar with the fundamentals of quantum computing and how quantum algorithms can solve some of the problems you and your crew have encountered on the spaceship.
 
 In this learning path, one mission of your spaceship crew is an asteroid mining expedition. 
 

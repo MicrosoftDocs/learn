@@ -24,7 +24,7 @@ After completing this module, you'll be able to:
 
 - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-- The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+- The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode%3fazure-portal%3dtrue&view=qsharp-preview)
 
 You'll need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement. For more information, see [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing?azure-portal=true).
 
