@@ -87,7 +87,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    :::image type="content" source="../media/5-azure-function-app-function-url.png" alt-text="Screenshot of the Code + Test blade of the HttpTrigger1 blade from the Azure Function app in the Azure portal, with the Get function URL pop-up window.":::
 
 1. To test the newly created function, on the **HttpTrigger1 \| Code + Test** blade, select **Test/Run**. Select the **Input** tab, and then select **Run**.
-<!--LM: Please check that instructions (refer to edit above) retain the intended meaning.-->
    :::image type="content" source="../media/5-azure-function-app-function-test-run-input.png" alt-text="Screenshot of the Code + Test blade of the HttpTrigger1 blade with the Input tab selected.":::
 
 1. To verify the results, on the **HttpTrigger1 \| Code + Test** blade, review the log pane and verify that the payload data matches the one displayed on the **Output** tab.
@@ -196,7 +195,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. On the Azure storage account blade, in the vertical menu, in the **Blob service** section, select **Containers**.
 1. In the list of containers, select the **iotcontainer** entry.
 1. On the **iotcontainer** blade, verify the presence of a new folder with a GUID-based name.
-<!--LM: The following code wasn't displaying correctly. I changed NAME to NOTE.-->
    > [!NOTE]
    > If the folder is not present, wait for about a minute and select **Refresh**.
 
