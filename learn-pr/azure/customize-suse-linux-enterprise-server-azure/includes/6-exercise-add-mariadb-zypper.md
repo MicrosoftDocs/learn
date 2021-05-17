@@ -30,7 +30,7 @@ In this case, repositories should already be up to date because you used YaST in
 
 1. Packages that contain the string maria in their name are listed. If there is an "I" in the first column, it means this package is already installed. 
 
-1. To install a package, you can either enter:  
+1. To install a package, enter:  
 
     ```console
     sudo zypper install mariadb
@@ -38,7 +38,7 @@ In this case, repositories should already be up to date because you used YaST in
 
     which prompts you confirm you want to continue with the installation.
 
-    In the sample screen shown, can you identify the error in the command line? If you answered, the command does not include sudo, you’re correct. Because an install changes the machine, you must use sudo to get admin rights to proceed.
+    Note: In the sample screen shown, can you identify the error in the command line? If you answered, the command does not include sudo, you’re correct. Because an install changes the machine, you must use sudo to get admin rights to proceed.
 
     :::image type="content" source="../media/zypper-install-mariadb-error.png" alt-text="Screenshot of console output of zypper installing Maria D B with an error.":::
 
