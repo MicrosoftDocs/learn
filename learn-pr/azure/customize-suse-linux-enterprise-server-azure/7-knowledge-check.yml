@@ -31,32 +31,32 @@ quiz:
     choices:
     - content: YaST
       isCorrect: true
-      explanation: ""
+      explanation: "YaST is an admin tool developed by SUSE for loading packages."
     - content: Sudo
       isCorrect: false
-      explanation: ""
-    - content: SUSE
+      explanation: "Sudo gives the user administrative rights to change the machine."
+    - content: SLES
       isCorrect: false
-      explanation: ""
+      explanation: "SLES stands for SUSE Linux Enterprise Server."
   - content: What does zypper do for you?
     choices:
-    - content: Close security gaps
+    - content: Give you administrative rights
       isCorrect: false
-      explanation: ""
+      explanation: "Sudo gives you administrative rights."
     - content: Link dependencies among packages
       isCorrect: true
-      explanation: ""
-    - content: Load a graphical interface
+      explanation: "Zypper is a package management tool developed by SUSE."
+    - content: Serves as the open-source code for a GUI
       isCorrect: false
-      explanation: ""
+      explanation: "A GUI requires a collection of packages, which can be loaded with zypper."
   - content: You can use the sudo command to
     choices:
-    - content: Add packages with zypper
+    - content: Update package code
       isCorrect: false
-      explanation: ""
+      explanation: "SUSE handles pulling and cleaning open-source packages for you."
     - content: Make administrator-level changes to the machine
       isCorrect: true
-      explanation: ""
-    - content: Pull recent package updates
+      explanation: "Sudo gives the user administrative rights to change the machine."
+    - content: Change your VM size
       isCorrect: false
-      explanation: ""
+      explanation: "VM size can be set through the Azure Portal."
