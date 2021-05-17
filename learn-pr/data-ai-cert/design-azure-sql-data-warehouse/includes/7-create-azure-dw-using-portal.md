@@ -1,7 +1,7 @@
 Now that we've covered the major design principles, let's see how easy it is to create a data warehouse in Azure. We'll use some sample data for exploration, but you can start building your own data warehouse by using the principles that are shown in this exercise.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account or if you prefer not to do the exercise in your account, you can read through the instructions to understand the steps that are involved in creating a data warehouse in Dedicated SQL pool (foremrly SQL DW).
+> This exercise is optional. If you don't have an Azure account or if you prefer not to do the exercise in your account, you can read through the instructions to understand the steps that are involved in creating a data warehouse in Dedicated SQL pool (formerly SQL DW).
 
 Complete these steps to create a data warehouse that contains the *AdventureWorksDW* sample data:
 

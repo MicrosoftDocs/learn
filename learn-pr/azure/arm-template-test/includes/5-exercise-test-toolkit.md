@@ -1,4 +1,4 @@
-You're part of a development team at the company Tailwind Traders. As part of that work, you need to author Azure Resource Manager (ARM) templates to deploy and manage resources in the cloud. You want to ensure that the templates follow some sounds practices before the resources are deployed. You elect to use the ARM template test toolkit to help you analyze your templates, so you can rectify any problems. 
+You're part of a development team at the company Tailwind Traders. As part of that work, you need to author Azure Resource Manager (ARM) templates to deploy and manage resources in the cloud. You want to ensure that the templates follow some sound practices before the resources are deployed. You elect to use the ARM template test toolkit to help you analyze your templates, so you can rectify any problems. 
 
 ## Set up your testing environment
 

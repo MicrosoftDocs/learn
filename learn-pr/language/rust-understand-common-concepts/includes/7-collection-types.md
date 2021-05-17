@@ -168,7 +168,7 @@ You can create an empty hash map by using the `HashMap::new` method and then add
 `HashMap::insert` method.
 
 ```rust
-func main() {
+fn main() {
     use std::collections::HashMap;
     
     let mut book_reviews: HashMap<String, String> = HashMap::new();

@@ -1,86 +1,211 @@
-In this exercise, you'll add your C# logic to your compound interest Razor component. Open the folder for the compound interest project you created in the previous exercise.
+In this exercise, you'll create a simple to do list component inside our Blazor app.
 
-## Add code markup to a Razor page
+## Create the ToDo page
 
-1. Open CompoundInterest.razor.
+1. Create the ToDo page with the following command:
 
-1. Below the table definition, add `@code` markup with braces.
+    ```dotnetcli
+    dotnet new razorcomponent -n Todo -o Pages
+    ```
+    
+    The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+
+    > [!IMPORTANT]
+    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+    
+
+1. Open the `Todo` component add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
-    @code
-    {
-  
+    @page "/todo"
+
+    <h3>Todo</h3>
+
+    @code {
+    
     }
     ```
 
-## Add member variables for compound interest calculation
+1. Save the `Pages/Todo.razor` file
 
-Add several C# variables to store input values from a user.
+## Add the Todo component to the navigation bar
 
-1. Add the following code within the `@code` markup.
+The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
 
-    ```cshtml
-    @code
+In the unordered list (`<ul>...</ul>`) of the NavMenu component, add the following list item (`<li>...</li>`) and `NavLink` component for the `Todo` component.
+
+In `Shared/NavMenu.razor`:
+
+```razor
+<ul class="nav flex-column">
+
+    ...
+
+    <li class="nav-item px-3">
+        <NavLink class="nav-link" href="todo">
+            <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+        </NavLink>
+    </li>
+</ul>
+```
+
+Save the `Shared/NavMenu.razor` file.  The browser should refresh automatically and now have the Todo entry on the navigation bar:
+
+![Added Todo navigation element](../media/todo-nav.png)
+
+## Create a Todo Item
+
+1. Create a new file in the root of the project (the `BlazorApp` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.  Use the following C# code for the `TodoItem` class.
+
+```csharp
+public class TodoItem
+{
+    public string Title { get; set; }
+    public bool IsDone { get; set; }
+}
+```
+
+Stop and restart the `dotnet watch run` process, as it will not detect the new `TodoItem` file without being forced to restart.
+
+## Bind a list of TodoItems
+
+You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  We'll accomplish this by:
+
+- Adding a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
+- Add unordered list markup and a `foreach` loop to render each todo item as a list item (`<li>`).
+
+```cshtml
+@page "/todo"
+
+<h3>Todo</h3>
+
+<ul>
+    @foreach (var todo in todos)
     {
-        private double Principal { get; set; } = 5000;
-        private double InterestRate { get; set; } = 5;
-        private int Years { get; set; } = 10;
-        private double total { get; set; } = 0;
-        private string Total { get; set; }
+        <li>@todo.Title</li>
+    }
+</ul>
+
+@code {
+    private List<TodoItem> todos = new();
+}
+```
+
+## Add Form Elements to Create Todos
+
+1. The app requires UI elements for adding todo items to the list. Add a text input (`<input>`) and a button (`<button>`) below the unordered list (`<ul>...</ul>`):
+
+    ```razor
+    @page "/todo"
+    
+    <h3>Todo</h3>
+    
+    <ul>
+        @foreach (var todo in todos)
+        {
+            <li>@todo.Title</li>
+        }
+    </ul>
+    
+    <input placeholder="Something todo" />
+    <button>Add todo</button>
+    
+    @code {
+        private List<TodoItem> todos = new();
+    }
+    ```
+    
+1. When the `Add todo` button is selected, nothing happens because an event handler isn't attached to the button.
+
+    Add an `AddTodo` method to the `Todo` component and register the method for the button using the `@onclick` attribute. The `AddTodo` C# method is called when the button is selected:
+    
+    ```razor
+    <input placeholder="Something todo" />
+    <button @onclick="AddTodo">Add todo</button>
+    
+    @code {
+        private List<TodoItem> todos = new();
+    
+        private void AddTodo()
+        {
+            // Todo: Add the todo
+        }
     }
     ```
 
-## Add calculation logic
+1. To get the title of the new todo item, add a `newTodo` string field at the top of the `@code` block:
 
-1. Within the `@code` markup, add the following method to calculate compound interest:
+    ```razor
+    @code {
+        private List<TodoItem> todos = new();
+        private string newTodo;
+    
+        // ... code continues ...
+        }
+    ```
+    
+    Modify the `<input>` element to bind `newTodo` with the `@bind` attribute:
 
-    ```cshtml
-    private void Calculate()
-    {
-        var total = Principal * Math.Pow(1 + InterestRate / (1200.0), Years * 12);
-        Total = total.ToString("C");
+    ```razor
+    <input placeholder="Something todo" @bind="newTodo" />
+    ```
+
+1. Update the `AddTodo` method to add the `TodoItem` with the specified title to the list. Clear the value of the text input by setting `newTodo` to an empty string:
+
+    ```razor
+    @page "/todo"
+    
+    <h3>Todo</h3>
+    
+    <ul>
+        @foreach (var todo in todos)
+        {
+            <li>@todo.Title</li>
+        }
+    </ul>
+    
+    <input placeholder="Something todo" @bind="newTodo" />
+    <button @onclick="AddTodo">Add todo</button>
+    
+    @code {
+        private List<TodoItem> todos = new();
+        private string newTodo;
+    
+        private void AddTodo()
+        {
+            if (!string.IsNullOrWhiteSpace(newTodo))
+            {
+                todos.Add(new TodoItem { Title = newTodo });
+                newTodo = string.Empty;
+            }
+        }
     }
     ```
 
-## Add binding to the input fields
+1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
 
-You're now ready to bind the variables you defined in the `@code` markup to your HTML input fields.
+1. The title text for each todo item can be made editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
 
-1. Use `@bind` markup on each input field to bind the appropriate variable.
-
-    ```cshtml
-    <tr>
-        <th>Initial Principal</th>
-        <th><input @bind="Principal" /></th>
-    </tr>
-    <tr>
-        <th>Years</th>
-        <th><input @bind="Years" /></th>
-    </tr>
-    <tr>
-        <th>Annual Interest Rate (%)</th>
-        <th><input @bind="InterestRate" /></th>
-    </tr>
-    <tr>
-        <th>Total:</th>
-        <th>@Total</th>
-    </tr>
+    ```razor
+    <ul>
+        @foreach (var todo in todos)
+        {
+            <li>
+                <input type="checkbox" @bind="todo.IsDone" />
+                <input @bind="todo.Title" />
+            </li>
+        }
+    </ul>    
     ```
 
-1. Finally, bind the **Calculate** button using the `@onclick` event handler.
+1. Update the `<h3>` header to show a count of the number of todo items that aren't complete (`IsDone` is `false`).
 
-    ```cshtml
-    <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
+    ```razor
+    <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
     ```
 
-## Run the app
+1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
 
-1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
+1. Add items, edit items, and mark todo items done to test the component.
 
-1. In a web browser, go to https://localhost:5000.
-
-1. Use the calculator by changing the input parameters and selecting **Calculate**.
-
-Congratulations on successfully creating a Razor component with HTML, C# logic, binding, and an event.
-
-![Screenshot showing the Blazor app running in a browser](../media/calculator-app.png)
+![Completed Todo Page](../media/todo-complete.png)
