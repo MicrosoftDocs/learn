@@ -44,6 +44,14 @@ Now you need to add a SQL server and database. First, you'll add parameters for 
 
 1. Save the changes to the file.
 
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
+
+:::code language="bicep" source="code/6-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
+
 ## Create a parameter file
 
 1. Open Visual Studio Code, and open the folder where the _main.bicep_ file is located. In the same folder, create a new file called _main.parameters.dev.json_.
@@ -207,3 +215,17 @@ New-AzResourceGroupDeployment `
 ::: zone-end
 
 You aren't prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment this time. Azure retrieves the values from your key vault instead.
+
+### Check your deployment
+
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+
+1. Select the **1 Succeeded** link.
+
+1. Select the deployment called **main**.
+
+1. On the left menu, select **Inputs**.
+
+1. Notice that the `appServicePlanSku` and the `sqlDatabaseSku` parameter values have both been set to the values in the parameter file. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameter values aren't displayed, because you applied the `@secure()` decorator to them.
+
+    :::image type="content" source="../media/6-parameter-values.png" alt-text="Screenshot of the Azure portal interface for the specific deployment showing the parameter values." border="true":::

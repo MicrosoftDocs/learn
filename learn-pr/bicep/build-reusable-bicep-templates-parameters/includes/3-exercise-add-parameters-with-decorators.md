@@ -64,17 +64,21 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 ### Limit numeric values
 
-Ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
+Next, you'll ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
    :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
-   After you've completed all of the preceding changes, your Bicep file should look like this example:
-
-   :::code language="bicep" source="code/3-template.bicep" :::
-
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
+
+:::code language="bicep" source="code/3-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
 
@@ -107,3 +111,36 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
 ::: zone-end
+
+## Verify the deployment
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
+
+   1. Select your avatar in the upper-right corner of the page. 
+   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+
+1. On the left-side panel, select **Resource groups**.
+
+1. Select **<rgn>[sandbox resource group name]</rgn>**.
+
+1. In **Overview**, you can see that one deployment succeeded.
+
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
+
+1. Select **1 Succeeded** to see the details of the deployment.
+
+    :::image type="content" source="../media/3-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
+
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and app.
+
+    :::image type="content" source="../media/3-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with an App Service plan and app listed." border="true":::
+
+1. On the left menu, select **Inputs**.
+
+    :::image type="content" source="../media/3-menu-inputs.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the 'Inputs' menu item highlighted." border="true":::
+
+1. Notice that the parameters and their values are listed.
+
+    :::image type="content" source="../media/3-deployment-parameters.png" alt-text="Screenshot of the Azure portal interface for the specific deployment showing the parameter values." border="true":::
+
+1. Leave the page open in your browser. You'll check on deployments again later.
