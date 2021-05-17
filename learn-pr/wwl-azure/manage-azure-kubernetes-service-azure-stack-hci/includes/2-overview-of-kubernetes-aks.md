@@ -2,7 +2,7 @@ As you're exploring the principles of containerization to increase workload agil
 
 ## What is Kubernetes?
 
-Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, a typical Kubernetes deployment consists of multiple clustered servers, which are referred to as nodes. Some of them form a control plane, responsible for managing the remaining nodes, onto which you deploy your workloads. In case of Kubernetes, these workloads consist of instances of containerized applications referred to as pods. 
+Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, a typical Kubernetes deployment consists of multiple clustered servers, which are referred to as nodes. Some of them form a control plane, responsible for managing the remaining nodes, onto which you deploy your workloads. For Kubernetes, these workloads consist of instances of containerized applications referred to as pods. 
 
 > [!NOTE] 
 > One of the core components of the control plane is API Server, which provides the interface for configuring and managing Kubernetes clusters. 
@@ -10,7 +10,7 @@ Kubernetes is an extensible, Linux-based, open-source platform for orchestrating
 > [!NOTE] 
 > A pod corresponds roughly to a container, although it can include multiple, tightly-coupled containers running on the same cluster node.
 
-Pods are typically stateless and do not offer any inherent resiliency features. To implement high availability and redundancy, you can provision them by using deployments. A deployment typically consists of multiple replicas of pods sharing the same configuration and running containers based on the same image. Kubernetes automatically manages the lifecycle of pods within a deployment, recreating any failed ones across available cluster nodes in an optimal manner. 
+Typically, pods are stateless and do not offer any inherent resiliency features. To implement high availability and redundancy, you can provision them by using deployments. Usually, a deployment consists of multiple replicas of pods sharing the same configuration and running containers based on the same image. Kubernetes automatically manages the lifecycle of pods within a deployment, recreating any failed ones across available cluster nodes in an optimal manner. 
 
 Deployments also streamline updates to images of containers running within pods without affecting the availability of the containerized workload. By defining disruption budgets, you control the number of pod replicas that must remain online throughout the update process. 
 
@@ -25,7 +25,7 @@ Kubernetes provides a consistent management model for a multi-container environm
 > [!NOTE] 
 > With the declarative management model, you use YAML-formatted manifest files to provision, modify, and delete Kubernetes components, such as pods, services, and deployments. You can also use packaged collections of YAML files, referred to as Helm charts. Helm is a package manager for Kubernetes and facilitates deployment of more complex workloads to Kubernetes clusters.
 
-In addition, Kubernetes delivers benefits such as:
+Also, Kubernetes delivers benefits such as:
 
 - Self-healing of pods
 - Autoscaling of pods
@@ -34,7 +34,7 @@ In addition, Kubernetes delivers benefits such as:
 - Auto-discovery of new pod deployments
 - Load balancing across pods running the same workloads
 
-Kubernetes allows you to treat a group of physical or virtual servers as a unified compute resource, simultaneously optimizing the servers by using the agility and density of containerized workloads. However, although Kubernetes simplifies container management, its administration is not trivial and involves many configuration, management, and maintenance tasks:
+Kubernetes allows you to treat a group of physical or virtual servers as a unified compute resource, simultaneously optimizing the servers by using the agility and density of containerized workloads. Although Kubernetes simplifies container management, its administration involves many configuration, management, and maintenance tasks:
 
 - Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. It is up to you to identify and implement the optimal configuration that addresses your specific needs.
 - Kubernetes does not natively provide middleware, data-processing frameworks, or databases. However, you have the option of implementing any of the corresponding functionalities by using containers.

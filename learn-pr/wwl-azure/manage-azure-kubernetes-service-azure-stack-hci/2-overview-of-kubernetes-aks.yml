@@ -4,7 +4,7 @@ title: Overview of Kubernetes and AKS
 metadata:
   title: Overview of Kubernetes and AKS
   description: "Overview of Kubernetes and AKS"
-  ms.date: 05/13/2021
+  ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "While evaluating the suitability of using Kubernetes for containerized workloads you intend to deploy to Contoso's Azure Stack HCI environment, you realized that you will need to restrict users who use the same Kubernetes cluster from creating, viewing, or using containerized resources. Which Kubernetes feature should you use to accomplish this?"
     choices:
-    - content: "Helm charts."
+    - content: "Helm charts"
       isCorrect: false
       explanation: "Incorrect. Helm charts facilitate deployment of more complex workloads to Kubernetes clusters, but they do not provide isolation of containerized resources."
-    - content: "Deployments."
+    - content: "Deployments"
       isCorrect: false
       explanation: "Incorrect. Deployments allow you to implement high availability and redundancy of pods, but they do not provide isolation of containerized resources."
-    - content: "Namespaces."
+    - content: "Namespaces"
       isCorrect: true
-      explanation: "Correct. Kubernetes offers the ability to isolate pods, services, deployments, and a number of other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources."
+      explanation: "Correct. Kubernetes offers the ability to isolate pods, services, deployments, and many other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources."

@@ -6,7 +6,7 @@ AKS on Azure Stack HCI is a Microsoft implementation of AKS, which automates dep
 
 Microsoft introduced AKS as an Azure service, but later extended its availability to on-premises environments, including Windows Server and Azure Stack HCI operating systems. However, there are some differences between running AKS on these two operating systems:
 
-- In Azure, Microsoft manages the control plane of each AKS cluster. In addition, management and worker nodes run on Azure virtual machines (VMs) or Azure VM scale sets.
+- In Azure, Microsoft manages the control plane of each AKS cluster. In addition, management and worker nodes run on Azure virtual machines (VMs) or Azure virtual machine scale sets.
 - In on-premises environments, you manage the entire deployment. When using Azure Stack HCI, management and worker nodes run on VMs hosted by the hyperconverged cluster.
 
 ## What is the architecture of AKS on Azure Stack HCI?
