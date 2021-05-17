@@ -15,22 +15,22 @@ Your command-line tool options differ depending on the operating system you use.
 
 ### Windows
 
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true) 💻
-- [Command Line](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands?WT.mc_id=academic-13441-cxa&azure-portal=true) (also known as CMD) 💻
-- [Windows Terminal](https://docs.microsoft.com/windows/terminal/?WT.mc_id=academic-13441-cxa&azure-portal=true)
+- [PowerShell](/powershell/scripting/overview?azure-portal=true&preserve-view=true&view=powershell-7%3fWT.mc_id%3dacademic-13441-cxa) 💻
+- [Command Line](/windows-server/administration/windows-commands/windows-commands?azure-portal=true&WT.mc_id=academic-13441-cxa) (also known as CMD) 💻
+- [Windows Terminal](/windows/terminal/?azure-portal=true&WT.mc_id=academic-13441-cxa)
 - [mintty](https://mintty.github.io/?azure-portal=true)
 
 ### macOS
 
 - [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac?azure-portal=true) 💻
 - [iTerm](https://iterm2.com/?azure-portal=true)
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true)
+- [PowerShell](/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true&preserve-view=true&view=powershell-7%3fWT.mc_id%3dacademic-13441-cxa)
 
 ### Linux
 
 - [Bash](https://www.gnu.org/software/bash/manual/html_node/index.html?azure-portal=true) 💻
 - [KDE Console](https://docs.kde.org/trunk5/en/konsole/konsole/index.html?azure-portal=true)
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true)
+- [PowerShell](/powershell/scripting/install/installing-powershell-core-on-linux?WT.mc_id=academic-13441-cxa)
 
 ### Popular command-line tools
 

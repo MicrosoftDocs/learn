@@ -83,7 +83,7 @@ When `MainPage` opens, the `MediaElement` will use the URL to the video file and
 
 ![Automatic streaming](../media/uwp-playingmedia-autoplay.png)
 
-The media's source can be a URL path, a file path, a [MediaStreamSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaelement.setmediastreamsource), or a [RandomAccessStream when you use SetSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaelement.setsource).
+The media's source can be a URL path, a file path, a [MediaStreamSource](/uwp/api/windows.ui.xaml.controls.mediaelement.setmediastreamsource), or a [RandomAccessStream when you use SetSource](/uwp/api/windows.ui.xaml.controls.mediaelement.setsource).
 
 #### 3. Playback controls and status
 
@@ -431,7 +431,7 @@ This gives you a powerful set of automatically hiding transport controls, out of
 
 ![Transport controls](../media/uwp-playingmedia-transportcontrols.png)
 
-`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaElement) to learn more.
+`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](/uwp/api/Windows.UI.Xaml.Controls.MediaElement) to learn more.
 
 
 ::: zone-end
@@ -896,7 +896,7 @@ If you select **Audio** in the `ComboBox`, the `MediaElement` **Source** will ch
 ![Audio selected](../media/wpf-playingmedia-audioselected.png)
 
 
-`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](https://docs.microsoft.com/dotnet/api/system.windows.controls.mediaelement?view=netframework-4.7.2) to learn more.
+`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](/dotnet/api/system.windows.controls.mediaelement?view=netframework-4.7.2) to learn more.
 
 ::: zone-end
 

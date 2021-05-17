@@ -78,7 +78,7 @@ var dlg = new Windows.UI.Popups.MessageDialog($"Hello {UserName}!");
 dlg.ShowAsync();
 ```
 
-If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivalent of `"Hello " + UserName + "!"` or `String.Format("Hello {0}!", UserName)`. This more concise and readable feature is called [string interpolation](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated), and was introduced in C# 6.
+If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivalent of `"Hello " + UserName + "!"` or `String.Format("Hello {0}!", UserName)`. This more concise and readable feature is called [string interpolation](/dotnet/csharp/language-reference/tokens/interpolated), and was introduced in C# 6.
 
 #### 5. Run the app
 
@@ -312,7 +312,7 @@ Going back to MainWindow.xaml, we can create the data binding between this newly
 With the preceding code, we've created a two-way binding between the `Text` property of the `TextBox` and the `UserName` property in the code. This means that any time the user enters text (and moves the focus off the `TextBox`), the `UserName` property in the code will change. Also, the `TextBox`'s text will be set to the value stored in the `UserName` property upon the app's start, or whenever we raise the `NotifyPropertyChanged` event with the `propertyName` parameter `"UserName"`. (We won't do that in this lesson.)
 
 > [!Note]
-> In WPF, the binding mode is automatically determined for the most common situations. For example, if you're binding to the `Text` property of a `TextBox`, WPF sets the binding mode to `TwoWay` by default. This means that we could have even skipped specifying the binding mode here, and could've just written `Text={Binding UserName}`. Learn more about binding modes [here](https://docs.microsoft.com/dotnet/api/system.windows.data.binding.mode?view=netframework-4.7.2).
+> In WPF, the binding mode is automatically determined for the most common situations. For example, if you're binding to the `Text` property of a `TextBox`, WPF sets the binding mode to `TwoWay` by default. This means that we could have even skipped specifying the binding mode here, and could've just written `Text={Binding UserName}`. Learn more about binding modes [here](/dotnet/api/system.windows.data.binding.mode?view=netframework-4.7.2).
 
 #### 4. Create the Submit button's click handler
 
@@ -338,7 +338,7 @@ MessageBox.Show($"Hello {DC.UserName}!");
 
 The value of the text entered in the `TextBox` is stored in the `MainWindowDataContext.UserName` property. The first line stores a reference to the `MainWindowDataContext` object in a temporary variable. The second line displays a message box with the greeting.
 
-If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivalent of `"Hello " + UserName + "!"` or `String.Format("Hello {0}!", UserName)`. This more concise and readable feature is called [string interpolation](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated), and was introduced in C# 6.
+If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivalent of `"Hello " + UserName + "!"` or `String.Format("Hello {0}!", UserName)`. This more concise and readable feature is called [string interpolation](/dotnet/csharp/language-reference/tokens/interpolated), and was introduced in C# 6.
 
 #### 5. Run the app
 
@@ -413,7 +413,7 @@ Visibility="{Binding IsNameNeeded, Converter={StaticResource BooleanToVisibility
 
 This binding consists of two parts. The first part specifies the binding path, which points to the `IsNameNeeded` property of the `MainWindowDataContext` object that is set as the `DataContext` of the entire `Window`. 
 
-But the `IsNameNeeded` property is a Boolean, while `Visibility` is of type [System.Windows.Visibility](https://docs.microsoft.com/dotnet/api/system.windows.visibility?view=netframework-4.7.2"), which is an `enum`. We need to do a conversion between the two. This conversion is so common, WPF has a built-in helper class called `BooleanToVisibilityConverter`. We need to create an instance of this class, and point to it from the binding declaration. 
+But the `IsNameNeeded` property is a Boolean, while `Visibility` is of type [System.Windows.Visibility](/dotnet/api/system.windows.visibility?view=netframework-4.7.2%22), which is an `enum`. We need to do a conversion between the two. This conversion is so common, WPF has a built-in helper class called `BooleanToVisibilityConverter`. We need to create an instance of this class, and point to it from the binding declaration. 
 
 We instantiate this class in XAML, as a resource of the `Window` object. Every `FrameworkElement` can have its own resource collection, with a key identifying every resource in the collection. The `BooleanToVisibilityConverter` in the preceding binding is this key, pointing to a `BooleanToVisibilityConverter` object inside the resource collection. You can define the resource collection by adding the following code to the `Window`, right after the opening tag:
 
