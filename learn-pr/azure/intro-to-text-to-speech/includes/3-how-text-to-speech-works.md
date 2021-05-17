@@ -22,7 +22,7 @@ You can choose between standard and neural voices by changing the voice attribut
 
 ## Granular speech control
 
-**Speech Synthesis Markup Language** (SSML) allows you to fine-tune the pitch, pronunciation, speaking rate, volume, and more of the text-to-speech output by submitting your requests with XML. The following example is using a **Neural voice named Aria** - an **English voice** with **US locale**.
+**Speech Synthesis Markup Language** (SSML) allows you to fine-tune the pitch, pronunciation, speaking rate, volume, and more of the Text-to-speech output by submitting your requests with XML. The following example is using a **neural voice named Aria** - an **English voice** with **US locale**.
 
 ```XML
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
@@ -36,7 +36,7 @@ You can choose between standard and neural voices by changing the voice attribut
 
 ## Adjust speaking styles
 
-With **Neural voices**, you're able to change the speaking style to express emotions like sadness, calmness, and seriousness. You can also use specific voice types, such as customer service, news casting, and voice assistant, using the **mstts:express-as** element within **SSML**. In the example below, the style of the neural voice ‘Aria’ is changed to cheerful, which alters pitch and timbre.
+With **neural voices**, you're able to change the speaking style to express emotions like sadness, calmness, and seriousness. You can also use specific voice types, such as customer service, news casting, and voice assistant, using the **mstts:express-as** element within **SSML**. In the example below, the style of the neural voice ‘Aria’ is changed to cheerful, which alters pitch and timbre.
 
 ```XML
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
@@ -52,4 +52,4 @@ With **Neural voices**, you're able to change the speaking style to express emot
 
 You can create a custom neural voice by using Speech Studio, a customization portal for the Azure Speech Service. There you're provided with instructions on how to create the audio and matching transcript. When you upload the files, the service creates the custom voice and provides a custom endpoint for you to access it.
 
-Microsoft has an ongoing commitment to Responsible AI use, and with the rising concerns around deepfake voices, custom neural voices aren't available by default. To gain access to a custom neural voice, you must apply and provide a disclosure for voice talent. A hyperlink to the documentation for access to Custom Neural Voice is provided in Unit 7 – Summary.
+Microsoft has an ongoing commitment to Responsible AI use, and with the rising concerns around deepfake voices, custom neural voices aren't available by default. To gain access to a custom neural voice, you must apply and provide a disclosure for voice talent. A hyperlink to the documentation for access to custom neural voice is provided in Unit 7 – Summary.
