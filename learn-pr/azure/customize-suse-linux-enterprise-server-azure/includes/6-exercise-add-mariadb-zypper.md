@@ -1,4 +1,6 @@
-For this exercise, you’ll be adding the successor of the MySQL database, mariadb, to your growing application stack using zypper.  
+Zypper automatically includes a package's dependencies when you use it to install a package.
+
+Let's get MariaDB installed on your server. In this exercise, you’ll add it to your growing application stack by searching for and installing it with zypper.  
 
 ## ssh into the virtual machine
 
