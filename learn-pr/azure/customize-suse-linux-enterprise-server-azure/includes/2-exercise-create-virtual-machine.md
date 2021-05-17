@@ -4,7 +4,7 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
 1. On the Azure portal menu or from the Home page, under Azure services, select Virtual machines. Alternatively, you can enter Virtual machines in the top search box, and press Enter to get the virtual pane.
 
-1. In the top menu bar, select Add > Virtual machine. The Create a virtual machine pane appears. Choose Pay-as-you-go option
+1. In the top menu bar, select Add > Virtual machine. The Create a virtual machine pane appears.
 
 1. In the Basics tab:
 
