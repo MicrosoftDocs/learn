@@ -41,6 +41,6 @@ Use this table to craft a command line in the Cloud Shell on the right to create
     ```
 
     > [!TIP]
-    > If you are interested in exploring the options for the storage account, make sure to go through the [Create an Azure storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account?azure-portal=true) module where we go through them in depth.
+    > If you are interested in exploring the options for the storage account, make sure to go through the [Create an Azure storage account](/learn/modules/create-azure-storage-account?azure-portal=true) module where we go through them in depth.
 
 It will take a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.

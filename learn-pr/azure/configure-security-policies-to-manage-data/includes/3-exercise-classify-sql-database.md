@@ -1,4 +1,3 @@
-
 In this step, you will create your resource group and an Azure SQL Database single database containing the AdventureWorksLT sample data
 
 1. Sign-in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Azure Sandbox. Make sure you are in the Microsoft Learn Sandbox directory.
@@ -20,8 +19,8 @@ In this step, you will create your resource group and an Azure SQL Database sing
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
+    | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+    | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
     | **Location** | Any valid location from the available list below. |
 
@@ -111,7 +110,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 ## Monitor access to sensitive data
 
-An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](https://docs.microsoft.com/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The data_sensitivity_information field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
+An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The data_sensitivity_information field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
 
 ![Screenshot of field logs, with data sensitivity categorizations of Confidential, and Confidential GDPR called out.](../media/M4_01_02_08.png)
 
