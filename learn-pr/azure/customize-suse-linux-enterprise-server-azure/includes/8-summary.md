@@ -1,6 +1,6 @@
 In the scenario for this module, the startup retailer you work for wanted to create a new website with a LAMP stack.  
 
-Through the units in the module, we discussed how to create a SUSE SLES VM on Azure through the Azure Portal, add Apache webserver using YaST, and add MariaDB with zypper. We also practiced uninstalling packages for future reference.  
+Through the units in the module, we discussed how to create a SUSE SLES VM on Azure through the Azure Portal, add Apache webserver using YaST, and add MariaDB with zypper.
 
 The purpose of the of the module was to communicate the role RPM packages play in customizing your virtual machine in the cloud and to introduce you to SUSE tools that make installing packages and managing package updates easier and more automated.  
 
