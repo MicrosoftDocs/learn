@@ -15,7 +15,7 @@ GPU supports virtualization, which helps in using GPU for virtualized workloads.
 
 ## Configure GPU acceleration for Azure Stack HCI VMs
 
-The process of configuring DDA-based GPU acceleration on Azure Stack HCI VMs consists of three main tasks:
+The process of configuring DDA-based GPU acceleration on Azure Stack HCI VMs consists of four main tasks:
 
 1. Configure the VM for DDA.
 1. Dismount the GPU from the cluster node.

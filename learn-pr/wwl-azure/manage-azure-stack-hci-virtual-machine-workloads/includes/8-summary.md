@@ -11,11 +11,11 @@ Using what you've learned, you determined that you can use Azure Stack HCI to si
 
 To learn more, go through the following documents:
 
-- [Manage VMs with Windows Admin Center](https://docs.microsoft.com/en-us/azure-stack/hci/manage/vm)
-- [Manage VMs on Azure Stack HCI using Windows PowerShell](https://docs.microsoft.com/en-us/azure-stack/hci/manage/vm-powershell)
-- [Create server and site affinity rules for VMs](https://docs.microsoft.com/en-us/azure-stack/hci/manage/vm-affinity)
-- [Virtual machine load balancing](https://docs.microsoft.com/en-us/azure-stack/hci/manage/vm-load-balancing)
-- [Attaching a GPU to an Ubuntu Linux VM on Azure Stack HCI](https://docs.microsoft.com/en-us/azure-stack/hci/manage/attach-gpu-to-linux-vm)
-- [Deploy virtual desktop infrastructure (VDI) on Azure Stack HCI](https://docs.microsoft.com/en-us/azure-stack/hci/deploy/virtual-desktop-infrastructure)
-- [Deploy trusted enterprise virtualization on Azure Stack HCI](https://docs.microsoft.com/en-us/azure-stack/hci/deploy/trusted-enterprise-virtualization)
-- [Virtualization-based Security (VBS)](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs)
+- [Manage VMs with Windows Admin Center](https://docs.microsoft.com/azure-stack/hci/manage/vm)
+- [Manage VMs on Azure Stack HCI using Windows PowerShell](https://docs.microsoft.com/azure-stack/hci/manage/vm-powershell)
+- [Create server and site affinity rules for VMs](https://docs.microsoft.com/azure-stack/hci/manage/vm-affinity)
+- [Virtual machine load balancing](https://docs.microsoft.com/azure-stack/hci/manage/vm-load-balancing)
+- [Attaching a GPU to an Ubuntu Linux VM on Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/manage/attach-gpu-to-linux-vm)
+- [Deploy virtual desktop infrastructure (VDI) on Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/deploy/virtual-desktop-infrastructure)
+- [Deploy trusted enterprise virtualization on Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/deploy/trusted-enterprise-virtualization)
+- [Virtualization-based Security (VBS)](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs)

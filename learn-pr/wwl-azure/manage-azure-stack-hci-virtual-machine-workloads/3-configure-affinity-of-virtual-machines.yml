@@ -4,7 +4,7 @@ title: Configure affinity of Azure Stack HCI VMs
 metadata:
   title: Configure affinity of Azure Stack HCI VMs
   description: "Configure affinity of Azure Stack HCI VMs"
-  ms.date: 05/13/2021
+  ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
