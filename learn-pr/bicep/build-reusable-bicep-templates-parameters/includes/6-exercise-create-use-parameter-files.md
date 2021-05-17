@@ -207,3 +207,5 @@ New-AzResourceGroupDeployment `
 ::: zone-end
 
 You aren't prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment this time. Azure retrieves the values from your key vault instead.
+
+The deployment completes more quickly this time because the Azure resources already exist.
