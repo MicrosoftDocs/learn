@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple choice questions to test your knowledge.
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is an Azure Digital Twin?"
+    choices:
+    - content: "A physical representation of a digital object"
+      isCorrect: false
+      explanation: "Digital Twins are digital representations of physical assets or processes.  Azure Digital Twin is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
+    - content: "An Internet of Things (IoT) platform for developing digital representations of real-world objects"
+      isCorrect: true
+      explanation: "Azure Digital Twin is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
+    - content: "A replicated Azure service that is twinned for redundancy and failover" 
+      isCorrect: false
+      explanation: "Azure Digital Twin is a platform for building digital representations of physical objects or processes.  They aren't designed or capable of replacing the asset that they represent if the asset fails."
+  - content: "Which of the following options best describes the Unity platform?"
+    choices:
+    - content: "A game engine used exclusively for video game development"
+      isCorrect: false
+      explanation: "Although Unity’s origin is in the gaming industry and the platform still plays an important role in many game’s development, Unity is active in industrial, manufacturing, retail, and media and entertainment applications."
+    - content: "A development tool used for Uniting Azure services."
+      isCorrect: false
+      explanation: "Unity can be used as a “system of systems” and often is used to integrate Azure services and other data streams, this isn't the best description of the Unity platform."
+    - content: "A real-time development platform used for 2D, 3D, AR, VR development.  "
+      isCorrect: true
+      explanation: "Unity is a real-time 3D development platform for creating cross-platform 2D, 3D, AR, and VR development."
+  - content: "True or false: The Azure SignalR service allows the service to push content updates to connected clients."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: ""
+    - content: "False"
+      isCorrect: false
+      explanation: "Azure Functions can use the REST API to push notifications into the Azure SignalR Service, which then pushes data to connected clients in real time. Used together with IoT Hub, the Azure SignalR Service can enable real-time sensor data to be transmitted to connected clients to support real time monitoring scenarios."
