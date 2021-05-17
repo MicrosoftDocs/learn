@@ -14,7 +14,7 @@ People learn in different ways. With that in mind, a [video series related to th
 
 To learn more about how to migrate to Azure SQL, review the [Azure Database Migration Guide](https://datamigration.microsoft.com). It has custom guidance on how to migrate based on your source and target database. Also consider accessing the resources and support available through the [Azure Migration Program](https://azure.com/amp).  
 
-One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15%3fazure-portal%3dtrue) that can help you determine the number of vCores and the size. 
+One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15&azure-portal=true) that can help you determine the number of vCores and the size. 
 
 The hands-on exercises focused on Azure SQL Database. If you want to try out your new deployment and configuration toolbox in Azure SQL Managed Instance, see:
 
@@ -26,7 +26,7 @@ You might also want to dive deeper into the resource limits based on service tie
 
 ### Deploy, verify, and configure
 
-Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?view=azure-cli-latest%3fazure-portal%3dtrue) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
+Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?view=azure-cli-latest&azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
 
 #### Data max size
 

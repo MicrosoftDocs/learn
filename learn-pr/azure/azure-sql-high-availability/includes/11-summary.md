@@ -10,7 +10,7 @@ People learn in different ways. A Channel 9 video series related to this learnin
 
 ### Backup and restore
 
-In the SQL documentation, you can learn more about how to [restore to a point in time](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model?view=sql-server-ver15%3fazure-portal%3dtrue) and [restore a deleted database](/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore?azure-portal=true).
+In the SQL documentation, you can learn more about how to [restore to a point in time](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model?view=sql-server-ver15&azure-portal=true) and [restore a deleted database](/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore?azure-portal=true).
 
 In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL Database. In Azure SQL Managed Instance, the process is similar but uses slightly different commands. You can review the commands in the [SQL documentation](/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore?azure-portal=true).  
 
