@@ -41,7 +41,7 @@ az vm create \
 
 Your VM will take a few minutes to come up.
 
-[Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
+[Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
 
 The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. Normally, you would create your own resource group before you create Azure resources. Because you're in the free Azure sandbox environment, you can skip this step. Instead, you use the pre-created resource group <rgn>[Resource Group Name]</rgn>.
 
@@ -190,7 +190,7 @@ Now it's time to install the agent software on your VM. This software enables th
 
 The registration process checks for installed software before it registers the agent with Azure Pipelines. Therefore, it's important to set up the agent after you install all other software. In practice, you can register the agent a second time if you need to install additional software.
 
-The documentation explains how to manually set up [self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
+The documentation explains how to manually set up [self-hosted Linux agents](/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
 
 > [!IMPORTANT]
 > The script that you run here is for learning purposes. In practice, you should first understand how each command in the scripts you build affect the overall system. At the end of the module, we'll point to documentation that more completely describes your options.
