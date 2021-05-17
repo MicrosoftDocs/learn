@@ -13,7 +13,7 @@ This is the third in this module's sequence of exercises. These exercises guide 
 1. Prepare the lab environment.
 1. Set up a Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure Arc.
-1. Deploy the application services extension on the Azure Arc enabled Kubernetes cluster.
+1. Implement App Service on the Azure Arc enabled Kubernetes cluster.
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
