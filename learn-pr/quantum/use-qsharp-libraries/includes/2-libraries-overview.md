@@ -1,6 +1,6 @@
 You're probably already familiar with libraries in other programming languages. Q#, as a language for quantum programming, isn't different in this case. 
 
-The Quantum Development Kit includes [several libraries](https://docs.microsoft.com/quantum/user-guide/libraries?azure-portal=true). They allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
+The Quantum Development Kit includes [several libraries](/quantum/user-guide/libraries?azure-portal=true). They allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
 
 For example, many languages provide an expression to add numbers—for example, `a+b`—so you don't have to worry about the binary representation and implementation of that addition. This way, you can write better programs faster and focus on the problem that you want to solve.
 
@@ -20,7 +20,7 @@ Libraries in Q# are distributed as [NuGet](https://www.nuget.org?azure-portal=tr
 
 NuGet is a package manager for various different platforms, and is the primary package manager for most .NET languages. It enables developers to produce, share, and consume useful code. A NuGet package is essentially a .zip file that contains compiled code and related files.
 
-The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](https://docs.microsoft.com/azure/quantum/install-jupyter-qdk?tabs=tabid-conda?azure-portal=true).
+The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda%3fazure-portal%3dtrue).
 
 Users can easily use the Q# libraries produced by Microsoft, along with other Q# libraries that aren't released as part of the QDK, because they're all hosted through NuGet. 
 
@@ -44,7 +44,7 @@ The *standard library* provides much of Q#'s primary functionality and is the fo
 
 The standard library is included in every Q# project by default. Accessing other libraries—including the domain-specific libraries—requires adding their respective packages to the project.
 
-Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries?azure-portal=true) in the official documentation. Regardless of your environment, though, the process is straightforward.
+Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [Using additional Q# libraries](/quantum/user-guide/libraries/additional-libraries?azure-portal=true) in the official documentation. Regardless of your environment, though, the process is straightforward.
 
 For example, if you're working with Q# command-line applications in Visual Studio Code, you can simply use the `dotnet` command to add a NuGet package reference to your project. Adding the [Microsoft.Quantum.Numerics](https://www.nuget.org/packages/Microsoft.Quantum.Numerics?azure-portal=true) package would then require only running the following command:
 
