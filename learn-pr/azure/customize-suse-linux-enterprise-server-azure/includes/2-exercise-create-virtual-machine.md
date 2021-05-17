@@ -19,7 +19,7 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 5. In the Disks tab:
 
     - Select the premium SSD disk type
-    - Set the ecyrption type to default
+    - Set the encryption type to default
     - Select OK to create the disk
     - The Disks section should reappear on the Create a virtual machine pane and you’ll see a new disk in the first row
 
