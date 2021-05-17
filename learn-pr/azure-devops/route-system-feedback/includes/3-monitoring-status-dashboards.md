@@ -25,7 +25,7 @@ Amita wants to visualize the monitoring data Tim's collecting and she has some i
 
 Here's an example dashboard:
 
-![A drawing of ...](../media/3-azure-dashboards.png)
+![Screenshot of an example Monitoring and Analytics dashboard.](../media/3-azure-dashboards.png)
 
 ### Advantages of Azure dashboards
 
@@ -86,7 +86,7 @@ Azure Monitor workbooks do not:
 
 Here's a diagram to give you a sense of what a workbook looks like.
 
-![A drawing of ...](../media/3-application-insights-workbooks.png)
+![Composite screenshot of example Workbook showing pages for Analysis of Page Views, Usage, and Time Spent on Page.](../media/3-application-insights-workbooks.png)
 
 ### Advantages of Application Insights workbooks
 
@@ -113,7 +113,7 @@ Application Insights workbooks do not:
 
 Here's what Power BI looks like:
 
-![A drawing of ...](../media/3-power-bi.png)
+![Screenshot of example Power BI dashboard showing monitoring for IT Operations.](../media/3-power-bi.png)
 
 ### Advantages of Power BI
 
