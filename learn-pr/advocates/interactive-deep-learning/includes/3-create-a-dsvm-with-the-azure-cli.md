@@ -2,7 +2,7 @@ As a software developer at your company, you've the opportunity to grow your ski
 
 ## What is the Azure CLI
 
-The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview). We have complete coverage of using this tool in the **Control Azure services with the CLI** module.
+The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](/azure/cloud-shell/overview). We have complete coverage of using this tool in the **Control Azure services with the CLI** module.
 
 You can use the Azure Cloud Shell by signing in at [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Note you'll use your own Azure account for the exercises in this module and charges will apply.
 
@@ -16,7 +16,7 @@ The Azure CLI includes the `az group deployment` command to manage Azure Resourc
 | `list` | Get all the deployments for a resource group. |
 | `export` | Export the template used for a deployment. |
 
-For a complete list of available deployment commands, see the [az group deployment command reference](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create)
+For a complete list of available deployment commands, see the [az group deployment command reference](/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create)
 
 We'll use `az deployment group create` to provision our virtual machine.
 
@@ -52,9 +52,9 @@ We're going to create our VM using an Azure Resource Manager template. The templ
     |Parameter  |Current value  |Your value  |
     |---------|---------|---------|
     |adminUsername     |  `<USERNAME>`       |    Choose a name for the admin user of this new machine, such as, *azuser*.     |
-    |adminPassword     |  `<PASSWORD>`       |   Choose a password for this admin user account. To learn more about password requirements, see [Frequently asked question about Linux Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true)     |
+    |adminPassword     |  `<PASSWORD>`       |   Choose a password for this admin user account. To learn more about password requirements, see [Frequently asked question about Linux Virtual Machines](/azure/virtual-machines/linux/faq?azure-portal=true)     |
     |vmName     |   `<HOSTNAME>`      |  Choose a name for the new virtual machine. Your name must begin with a letter and contain only lowercase letters and numbers. Try to choose a unique name, such as one that includes your initials and your birth year. |
-    |vmSize     |  Standard_DS2_v2       |  This VM size will work fine for this exercise, but you are free to change it. A list of available vm sizes can be found here [Sizes for Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/sizes?azure-portal=true)       |
+    |vmSize     |  Standard_DS2_v2       |  This VM size will work fine for this exercise, but you are free to change it. A list of available vm sizes can be found here [Sizes for Linux virtual machines in Azure](/azure/virtual-machines/linux/sizes?azure-portal=true)       |
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Save** from the menu to save the file as `parameter_file.json` and close the text editor.
 

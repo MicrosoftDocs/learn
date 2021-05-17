@@ -18,7 +18,4 @@ The Data Science Virtual Machine is a virtual machine (VM) image on Azure. It ha
 
 The DSVM can be used for training models using deep learning algorithms on Graphics processing units (GPUs) hardware. Utilizing VM scaling capabilities of Azure cloud, DSVM helps you use GPU-based hardware on the cloud as per need. You can switch to a GPU-based VM when training large models or need high-speed computations while keeping the same OS disk. The Windows Server 2016 edition of DSVM comes pre-installed with GPU drivers, frameworks, and GPU versions of deep learning frameworks. On the Linux, deep learning on GPU is enabled on both the CentOS and Ubuntu DSVMs. You can also deploy the Ubuntu, CentOS, or Windows 2016 edition of the Data Science VM to CPU-based Azure virtual machines, in which case all the deep learning frameworks will fallback to CPU mode. 
 
-For more information on what you can do with a DSVM, see [Data science with a Linux Data Science Virtual Machine on Azure](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough)
-
-
-
+For more information on what you can do with a DSVM, see [Data science with a Linux Data Science Virtual Machine on Azure](/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough)

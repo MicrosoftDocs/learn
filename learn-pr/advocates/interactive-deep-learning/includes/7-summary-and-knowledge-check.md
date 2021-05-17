@@ -14,6 +14,6 @@ Type `y` to confirm.
 
 ## Further Reading
 
-- [Get to know your Data Science Virtual Machine](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/dsvm-tools-overview)
-- [Introduction to Azure Data Science Virtual Machine for Linux and Windows](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/overview)
+- [Get to know your Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/dsvm-tools-overview)
+- [Introduction to Azure Data Science Virtual Machine for Linux and Windows](/azure/machine-learning/data-science-virtual-machine/overview)
 - [NVIDIA Docker Container documentation](https://www.nvidia.com/object/docker-container.html)
