@@ -13,6 +13,6 @@ If you created a Premium trial Azure AD tenant for this module, you can delete t
 
 ## Learn more
 
-- [Quickstart: Self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/quickstart-sspr)
-- [How it works: Azure AD self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks)
-- [Deploy Azure AD self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
+- [Quickstart: Self-service password reset](/azure/active-directory/authentication/quickstart-sspr)
+- [How it works: Azure AD self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks)
+- [Deploy Azure AD self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment)
