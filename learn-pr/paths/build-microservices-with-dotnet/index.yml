@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.build-microservices-with-dotnet
+metadata:
+  title: Build microservices with .NET and ASP.NET Core
+  description: Build independently deployable, highly scalable, and resilient services using the free and open source .NET platform.
+  ms.date: 05/17/2021
+  author: nishanil
+  ms.author: nanil
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Build microservices with .NET and ASP.NET Core
+summary: |
+  Build independently deployable, highly scalable, and resilient services using the free and open source .NET platform.
+prerequisites: |
+  - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- dotnet
+- aspnet-core
+- dotnet-core
+- azure
+- azure-application-insights
+- azure-container-registry
+- azure-kubernetes-service
+modules:
+- learn.languages.dotnet-microservices
+- learn.microservices-aspnet-core
+- learn.microservices-resiliency-aspnet-core
+- learn.microservices-logging-aspnet-core
+- learn.microservices-configuration-aspnet-core
+- learn.microservices-data-aspnet-core
+trophy:
+  uid: learn.build-microservices-with-dotnet.trophy
