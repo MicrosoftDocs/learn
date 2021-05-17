@@ -1,4 +1,8 @@
-Once you’ve launched a pay-as-you-go SLES VM image on Azure, you will need to add packages for the Apache, MySQL, and PHP portion of the LAMP stack to build your website. In this unit we’ll talk about what packages are and how you can use YaST admin tool to add Apache.
+YaST is an admin tool developed by SUSE that allows you to add packages to your machine (in addition to other things).
+
+Once you’ve launched a pay-as-you-go SLES virtual machine image on Azure, you need to add packages for the Apache, MySQL, and PHP portion of the LAMP stack to build your website.
+
+In this unit we’ll talk about what packages are, and how you can use YaST to manage them on your SLES virtual machine.
 
 ## Packages add functionality to your machine
 
