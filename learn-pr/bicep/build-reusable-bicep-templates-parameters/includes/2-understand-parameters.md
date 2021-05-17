@@ -79,7 +79,7 @@ Tags are useful for scenarios like tracking which team owns a resource, or when 
 ```bicep
 param resourceTags object = {
   EnvironmentName: 'Test'
-  CostCentre: '1000100'
+  CostCenter: '1000100'
   Team: 'Human Resources'
 }
 ```
