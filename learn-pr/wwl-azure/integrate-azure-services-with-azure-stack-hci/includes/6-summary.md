@@ -11,7 +11,7 @@ Using what you have learned, you determined that you can deliver meaningful bene
 
 To learn more, go through the following documents:
 
-- [Monitoring Azure Stack HCI with Azure Monitor](https://docs.microsoft.com/azure-stack/hci/manage/azure-monitor)
-- [Protect Azure Stack HCI VMs using Azure Site Recovery](https://docs.microsoft.com/azure-stack/hci/manage/azure-site-recovery)
-- [Use Azure Backup to back up Windows Servers](https://docs.microsoft.com/azure-stack/hci/manage/use-azure-backup)
-- [Use Azure Network Adapter to connect a server to an Azure Virtual Network](https://docs.microsoft.com/azure-stack/hci/manage/use-azure-network-adapter)
+- [Monitoring Azure Stack HCI with Azure Monitor](/azure-stack/hci/manage/azure-monitor)
+- [Protect Azure Stack HCI VMs using Azure Site Recovery](/azure-stack/hci/manage/azure-site-recovery)
+- [Use Azure Backup to back up Windows Servers](/azure-stack/hci/manage/use-azure-backup)
+- [Use Azure Network Adapter to connect a server to an Azure Virtual Network](/azure-stack/hci/manage/use-azure-network-adapter)
