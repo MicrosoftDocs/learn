@@ -14,14 +14,15 @@ abstract: |
   By the end of this module, you will be able to: 
     - Build and deploy serverless, backend APIs in Azure
     - Design Azure Functions in any language and integrate them with Azure SQL Database and Azure Logic Apps
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts such as GitHub Actions
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+hidden: true
+levels:
   - intermediate
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles:
   - developer
   - database-administrator
   - solution-architect
