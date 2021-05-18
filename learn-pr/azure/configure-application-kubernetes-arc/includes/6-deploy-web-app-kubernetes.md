@@ -28,10 +28,10 @@ These are the two final exercises in the module's sequence of exercises. These e
 
 To deploy a web app to an App Service Kubernetes environment, you need to designate its custom location. It is not necessary or recommended to explicitly create an App Service plan, since the platform will automatically provision one for you. 
 
-    > [!NOTE]
-    > For the sake of completeness, this task includes steps that illustrate creation of an App Service plan.
+> [!NOTE]
+> For the sake of completeness, this task includes steps that illustrate creation of an App Service plan.
 
-Use the following step to create a Linux code-based web app:
+Use the following steps to create a Linux code-based web app:
 
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values of the variables that designate the names of the resource group that contains the Arc resources and the Azure Arc-connected cluster resource:
 
@@ -120,7 +120,7 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     ```
 
     > [!NOTE]
-    > From the deployment standpoint, this process is the same as the one used to deploy an application to Azure App Service. The difference is that your web app is running on the Azure Arc-enabled Kubernetes cluster. It's not being hosted by Azure App Service.
+    > From the deployment standpoint, this process is the same as the one used to deploy an application to Azure App Service. The difference is that your web app is running on the Azure Arc enabled Kubernetes cluster. It's not being hosted by Azure App Service.
 
     > [!NOTE]
     > Don't use `az webapp up` to deploy code. It isn't supported in the current preview. There also isn't support for File Transfer Protocol (FTP) publishing.
@@ -134,7 +134,7 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     > [!NOTE]
     > The list should include a pod with a name for which the prefix matches the web app's name.
 
-1. To validate the deployment from a functional standpoint, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify its **URL**, and then open another tab in the same browser window to display the corresponding webpage.
+1. To validate the deployment from a functional standpoint, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), and use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify its **URL**, and then open another tab in the same browser window to display the corresponding webpage.
 
     > [!NOTE]
     > The webpage should display **Hello World!**`
@@ -144,7 +144,7 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
 
 To return your Azure subscription to its original state, remove the Azure Arc resources that you'll no longer use.
 
-Use the following step to delete all Azure Arc resources you provisioned throughout this course's exercises:
+Use the following steps to delete all Azure Arc resources you provisioned throughout this course's exercises:
 
 1. Switch to the browser window that displays the Bash session in the **Azure Cloud Shell** pane, and then run the following commands. These commands set the variable value for the name of the resource group that contains the Arc resources:
 
