@@ -27,6 +27,10 @@ roles:
 units:
 - learn.career-growth.introduction
 - learn.career-growth.networking
+- learn.career-growth.asking-questions
+- learn.career-growth.seek-diversity
+- learn.career-growth.4-knowledge-check
+- learn.career-growth.time-management
 - learn.career-growth.continual-learning
 - learn.career-growth.building-trust
 - learn.career-growth.knowledge-check

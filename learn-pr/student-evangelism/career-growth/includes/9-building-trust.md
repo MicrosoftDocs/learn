@@ -1,10 +1,10 @@
 You are new in a company and as such are a somewhat unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsability and considered for promotion. 
 
-## Building Trust as an Employee
+## Building trust as an employee
 
 Good managers are looking for valuable, trustworthy employees who contribute to the organization by providing solid impact. Great managers also value those individuals who bring their whole selves to work, who come as they are, and who grow. Here are some tips on how to provide value to your organization while growing as a person.
 
-## "Manage Up"
+## "Manage up"
 
 The concept of '[managing up](https://hbr.org/2015/01/what-everyone-should-know-about-managing-up)' is not inherently disrespectful to a manager. Rather, it is the idea that managers may not know enough of the details of your current situation to be able to collaborate with you to grow your career. Be as open with your manager as you can.
 

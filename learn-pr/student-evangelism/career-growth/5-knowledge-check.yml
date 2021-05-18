@@ -1,48 +1,85 @@
 ### YamlMime:ModuleUnit
-uid: learn.career-growth.knowledge-check
+uid: learn.career-growth.4-knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
-  title: From Student to Employee - Growing your Career
-  description: Strategies to growth-hack your career by networking, continually learning, and providing value as a trusted employee
-  ms.date: 4/15/2021
-  author: jlooper
-  ms.author: jelooper
+  unitType: knowledge_check
+  title: "TODO" # user input: module title for browser tab and search results
+  description: "TODO" # user input: a description for site search and SEO
+  ms.date: 5/14/2021 
+  author: jlooper 
+  ms.author: jelooper 
   ms.topic: interactive-tutorial
-  ms.prod: <TODO>
-durationInMinutes: 5
+  ms.prod: "TODO"
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
+###  - Questions are complete sentences ending with a question mark 
+###  - No true/false questions 
+###  - 3 answers per question 
+###  - All answers about the same length 
+###  - Numeric answers listed in sorted order 
+###  - No "All of the above" and/or "None of the above" as answer choices 
+###  - No "Not" or "Except" in questions 
+###  - No second person ("you") in the questions or answers 
+###  - Provide a meaningful explanation for both correct and incorrect answers 
+###
+###########################################################################
 content: |
 quiz:
   questions:
-  - content: "Networking strategies include"
+  - content: ""
     choices:
-    - content: "Meetups and Conferences"
-      isCorrect: false
-      explanation: "This is a good external method of networking, but there are others"
-    - content: "ERGs, or Employee Groups"
-      isCorrect: false
-      explanation: "This is a good internal networking method, but there are others"
-    - content: "All of the above"
+    - content: ""
       isCorrect: true
-      explanation: "It's possible to network both inside and outside an organization"
-  - content: "'Managing Up' includes"
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
     choices:
-    - content: "Asking appropriate questions of a manager"
+    - content: ""
       isCorrect: true
-      explanation: "Correct, it's possible to lead a conversation with a manager to help them understand an employee's perspectives"
-    - content: "Implies that a manager is incompetent"
+      explanation: ""
+    - content: ""
       isCorrect: false
-      explanation: "False, managing up can help both an employee and their manager"
-    - content: "Does not work when both a manager and an employee are working remotely"
+      explanation: ""
+    - content: ""
       isCorrect: false
-      explanation: "False, it's possible to use communication tactics such as these both online and in person"
-  - content: "Is it necessary to go back to school to continue learning?"
+      explanation: ""
+  - content: ""
     choices:
-    - content: "No, but it can be a valuable activity"
+    - content: ""
       isCorrect: true
-      explanation: "That's correct, it can be valuable but is often not necessary"
-    - content: "Yes, accumulate as many degrees as possible"
+      explanation: ""
+    - content: ""
       isCorrect: false
-      explanation: "False, it's not necessary to accumulate degrees"
-    - content: "Yes, it is impossible to advance in a company without advanced degrees"
+      explanation: ""
+    - content: ""
       isCorrect: false
-      explanation: "False, this is rarely the case"
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
