@@ -100,25 +100,6 @@ az deployment group create --template-file main.bicep
 
 You'll see ```Running...``` in the terminal.
 
-### Verify the deployment by using the Azure CLI
-
-To help validate that the deployment succeeded, run the following `az webapp list` command to show the host name for your App Service app:
-
-```azurecli
-az webapp list \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --query "[].defaultHostName" \
-  --output tsv
-```
-
-Your output resembles this:
-
-```output
-dev-toyhr2cyy7btygkgxi-app.azurewebsites.net
-```
-
-As an optional step, navigate to your hostname from a new browser tab to see the running app.
-
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -133,27 +114,9 @@ Deploy the template to Azure by using the following Azure PowerShell command in 
 New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
-### Verify the deployment by using PowerShell
-
-To help validate that the deployment succeeded, run the following `Get-AzWebApp` command to show the host name for your App Service app:
-
-```azurepowershell
-Get-AzWebApp -ResourceGroupName "<rgn>[sandbox resource group name]</rgn>" | Select-Object DefaultHostName
-```
-
-Your output resembles this:
-
-```output
-DefaultHostName
----------------
-dev-toyhr2cyy7btygkgxi-app.azurewebsites.net
-```
-
-As an optional step, navigate to your hostname from a new browser tab to see the running app.
-
 ::: zone-end
 
-## Verify the deployment
+## Verify your deployment
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
