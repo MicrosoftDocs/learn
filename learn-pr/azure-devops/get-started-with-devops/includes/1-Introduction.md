@@ -14,7 +14,7 @@ In this module, you will:
 
 ## Prerequisites
 
-The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before you start this module.
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you start this module.
 
 ## Meet the team
 

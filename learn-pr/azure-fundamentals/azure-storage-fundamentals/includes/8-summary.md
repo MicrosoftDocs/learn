@@ -8,8 +8,8 @@ In addition, Azure provides several access tiers that you can use to balance you
 
 ## Learn more
 
- -  [Azure Files documentation](https://docs.microsoft.com/azure/storage/files/?azure-portal=true)
- -  [Azure Storage documentation](https://docs.microsoft.com/azure/storage/?azure-portal=true)
- -  [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
- -  [Create an Azure Storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account/?azure-portal=true)
- -  [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview?azure-portal=true)
+ -  [Azure Files documentation](/azure/storage/files/?azure-portal=true)
+ -  [Azure Storage documentation](/azure/storage/?azure-portal=true)
+ -  [Choose a data storage approach in Azure](/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
+ -  [Create an Azure Storage account](/learn/modules/create-azure-storage-account/?azure-portal=true)
+ -  [Introduction to Azure managed disks](/azure/virtual-machines/windows/managed-disks-overview?azure-portal=true)

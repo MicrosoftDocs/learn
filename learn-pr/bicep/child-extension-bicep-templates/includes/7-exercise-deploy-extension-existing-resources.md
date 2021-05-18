@@ -89,7 +89,7 @@ In the terminal, run the following Azure CLI command. Replace `{storageaccountna
 
 ```azurecli
 az storage account create \
-  --name {storage-account-name} \
+  --name {storageaccountname} \
   --location eastus
 ```
 
@@ -103,7 +103,7 @@ In the terminal, run the following Azure PowerShell command. Replace `{storageac
 
 ```azurepowershell
 New-AzStorageAccount `
-  -Name {storage-account-name} `
+  -Name {storageaccountname} `
   -Location eastus `
   -SkuName Standard_LRS
 ```
@@ -180,24 +180,50 @@ You need to update your Bicep template to reference the storage account you crea
 
 ::: zone pivot="cli"
 
-In the terminal, run the following Azure CLI command. Replace `{storage-account-name}` with the name of the storage account you created earlier in this exercise.
+In the terminal, run the following Azure CLI command. Replace `{storageaccountname}` with the name of the storage account you created earlier in this exercise.
 
 ```azurecli
 az deployment group create \
   --template-file main.bicep \
-  --parameters storageAccountName={storage-account-name}
+  --parameters storageAccountName={storageaccountname}
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-In the terminal, run the following Azure PowerShell command. Replace `{storage-account-name}` with the name of the storage account you created earlier in this exercise.
+In the terminal, run the following Azure PowerShell command. Replace `{storageaccountname}` with the name of the storage account you created earlier in this exercise.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
-  -storageAccountName {storage-account-name}
+  -storageAccountName {storageaccountname}
 ```
 
 ::: zone-end
+
+### Check your deployment
+
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+
+1. Select the **1 Succeeded** link.
+
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
+
+    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources as well as two resources with type Microsoft.Insights/diagnosticSettings." border="true":::
+
+   Notice that there are two resources listed with a type of `Microsoft.Insights/diagnosticSettings`. These are the extension resources you deployed. One of the resources was attached to the storage account and the other was attached to the Azure Cosmos DB account. Now you will verify that the Azure Cosmos DB diagnostic settings are configured correctly.
+
+1. Select the Azure Cosmos DB account resource. The portal will open to the Azure Cosmos DB account.
+
+    :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
+
+1. In the **Search** field in the top left, enter _Diagnostic settings_ and select the **Diagnostic settings** menu item.
+
+    :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
+
+1. Notice that there is a diagnostic setting named **route-logs-to-log-analytics**, which is configured to route the logs to the **ToyLogs** workspace.
+
+    :::image type="content" source="../media/7-cosmos-db-diagnostic-settings.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the diagnostic settings." border="true":::
+
+   If you want, you can also verify that the storage account has a similar diagnostic setting enabled for blob storage.

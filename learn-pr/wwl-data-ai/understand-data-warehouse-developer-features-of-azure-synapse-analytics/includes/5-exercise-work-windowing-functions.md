@@ -24,7 +24,7 @@ One of the key components of window functions is the OVER clause. This clause de
     FROM wwi_security.Sale
     WHERE Quantity <> 0  
     ORDER BY Region;
-    ```sql
+    ```
 
 6.	Select Run from the toolbar menu to execute the SQL command.
  

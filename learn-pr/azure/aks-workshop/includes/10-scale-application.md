@@ -85,7 +85,7 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
 
 ## Run a load test with horizontal pod autoscaler enabled
 
-To create the load test, you can use a prebuilt image called `azch/artillery` that's available on Docker hub. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
+To create the load test, you can use a prebuilt image called `azch/artillery` that's available on Docker hub. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](/azure/container-instances) can be used to run this image as a container.
 
 When it runs as a container instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
 

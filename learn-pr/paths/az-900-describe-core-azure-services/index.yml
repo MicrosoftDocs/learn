@@ -94,9 +94,9 @@ products:
 - azure-virtual-network
 - azure-vpn-gateway
 modules:
-- learn.azure.azure-database-fundamentals
 - learn.azure.azure-compute-fundamentals
-- learn.azure.azure-storage-fundamentals
 - learn.azure.azure-networking-fundamentals
+- learn.azure.azure-storage-fundamentals
+- learn.azure.azure-database-fundamentals
 trophy:
   uid: learn.az-900-describe-core-azure-services.trophy

@@ -41,16 +41,16 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about each of the concepts covered in this module, visit these articles and sites:
 
-- [Create and manage multiple node pools for a cluster in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
+- [Create and manage multiple node pools for a cluster in Azure Kubernetes Service (AKS)](/azure/aks/use-multiple-node-pools)
 
-- [Add a spot node pool to an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/spot-node-pool)
+- [Add a spot node pool to an Azure Kubernetes Service (AKS) cluster](/azure/aks/spot-node-pool)
 
-- [Automatically scale a cluster to meet application demands on Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [Automatically scale a cluster to meet application demands on Azure Kubernetes Service (AKS)](/azure/aks/cluster-autoscaler)
 
-- [Understand Azure Policy for Kubernetes clusters](https://docs.microsoft.com/azure/governance/policy/concepts/policy-for-kubernetes)
+- [Understand Azure Policy for Kubernetes clusters](/azure/governance/policy/concepts/policy-for-kubernetes)
 
 - [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
 
-- [Best practices for advanced scheduler features in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/operator-best-practices-advanced-scheduler)
+- [Best practices for advanced scheduler features in Azure Kubernetes Service (AKS)](/azure/aks/operator-best-practices-advanced-scheduler)
 
 - [Azure Kubernetes Service (AKS) Production Baseline, Cost Optimization](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks#cost-optimization)
