@@ -12,7 +12,7 @@ title: Introduction to Azure Remote Rendering
 summary: Describe how Azure Remote Rendering can enable you to bring your high-quality 3D models into Mixed Reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
 abstract: |
   By the end of this module, you will be able to: 
-    - Describe how Azure Remote Rendering, a cloud-hosted service, can render images, encode them, and stream them to target devices.
+    - Describe how Azure Remote Rendering, a cloud-hosted service, can render high-quality, interactive 3D content in the cloud.
     - Evaluate whether Azure Remote Rendering can help you complete complex rendering workloads.
 prerequisites: |
   - Experience building mixed reality apps
