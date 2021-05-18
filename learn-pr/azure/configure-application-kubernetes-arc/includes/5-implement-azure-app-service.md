@@ -1,8 +1,8 @@
-In this exercise, you'll implement the application services extension on your Azure Arc enabled Kubernetes cluster. This implementation prepares the cluster for an App Service web app's deployment in the next exercise. Your implementation will integrate with an Azure Log Analytics workspace that you'll create in this exercise. The exercise consists of the following tasks:
+In this exercise, you'll implement App Service on the Azure Arc enabled Kubernetes cluster. This will allow you to deply an App Service web app's in the next exercise. Your implementation will integrate with an Azure Log Analytics workspace that you'll create in this exercise. The exercise consists of the following tasks:
 
-1. Prepare for implementing the application services extension on the Azure Arc enabled Kubernetes cluster.
+1. Prepare for implementing App Service on the Azure Arc enabled Kubernetes cluster.
 1. Create an Azure Log Analytics workspace.
-1. Install the application services extension on your Azure Arc enabled Kubernetes cluster.
+1. Install the App Service extension on the Azure Arc enabled Kubernetes cluster.
 1. Create a custom location for the Azure Arc enabled Kubernetes cluster.
 1. Register an App Service Kubernetes environment into the custom location.
 
@@ -17,7 +17,7 @@ This is the fourth in this module's sequence of exercises. These exercises guide
 
 :::image type="content" source="../media/u5-exercise4.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fourth exercise (Implement App Service on the Azure Arc-enable Kubernetes cluster)." border="false":::
 
-## Task 1: Prepare for implementing the application services extension on the Azure Arc enabled Kubernetes cluster
+## Task 1: Prepare for implementing App Service on the Azure Arc enabled Kubernetes cluster
 
 There is information you must collect that's required for implementation steps in this unit, including installing the application services extension, creating a custom location, and setting up a Kubernetes environment.
 
@@ -33,13 +33,17 @@ Use the following steps to collect the required information:
     ARC_CLUSTER_NAME="${K8S_ARC_PREFIX}-cluster" 
     ```
 
-1. Run the following commands to set variable value that designates the public IP address associated with the load-balancer service of the AKS cluster:
+1. Run the following commands to identify the resource group that hosts the cluster infrastructure resources, create a public IP address resource in that group, and store its value in a variable (you will reference that variable when installing the extension):
 
     ```azurecli-interactive
     K8S_PIP_NAME=k8sAKS-cluster-pip
-    K8S_INFRA_RG=$(az aks show -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --query nodeResourceGroup -o tsv)
+    K8S_INFRA_RG_NAME=$(az aks show -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --query nodeResourceGroup -o tsv)
+    az network public-ip create -g $K8S_INFRA_RG_NAME -n $K8S_PIP_NAME --sku STANDARD
     K8S_PIP=$(az network public-ip show -g $K8S_INFRA_RG -n $K8S_PIP_NAME --query ipAddress -o tsv)
     ```
+
+    > [!IMPORTANT]
+    > You **must** create the public IP address resource in the cluster's infrastructure resource group for it to bind to the cluster's load balancer.
 
 1. Run the following commands to set the variable value that designates the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
 
@@ -96,11 +100,11 @@ Use the following steps to create an Azure Log Analytics workspace:
     LA_WORKSPACE_KEY_ENC=$(echo -n "${LA_WORKSPACE_KEY_ENC_WITH_SPACE//[[:space:]]/}")
     ```
 
-## Task 3: Install the application services extension on your Azure Arc-enabled Kubernetes cluster
+## Task 3: Install the App Service extension on the Azure Arc enabled Kubernetes cluster
 
-Now you're ready to install the application services extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc-enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
+Now you're ready to install the App Service extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc-enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
 
-Use the following steps to install the application services extension on your Azure Arc-enabled Kubernetes cluster:
+Use the following steps to install theApp Service extension on your Azure Arc-enabled Kubernetes cluster:
 
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.KubernetesConfiguration resource provider. This enables you to create the application services extension in the region you selected for the resource group that hosts the Azure Arc-enabled services:
 
@@ -142,7 +146,7 @@ Use the following steps to install the application services extension on your Az
     > [!NOTE]
     > You'll need this value in the next task of this exercise.
 
-## Task 4: Create a custom location for the Azure Arc-enabled Kubernetes cluster
+## Task 4: Create a custom location for the Azure Arc enabled Kubernetes cluster
 
 Azure Resource Manager provides the location extension. This extension allows you to designate Azure Arc-enabled Kubernetes clusters as target locations. Use these locations for deploying instances of Azure Arc-enabled services, such as App Services web apps, Azure Functions and Azure Logic Apps. A custom location maps extensions to a Kubernetes namespace that's hosting pods. These pods implement the functionality of the corresponding resources.
 

@@ -31,12 +31,11 @@ To support the Azure App Service on Kubernetes with Azure Arc, an AKS cluster mu
 
 Use the following steps to deploy an AKS cluster that supports Azure App Service on Kubernetes with Azure Arc:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, its public IP address, and its Azure region (replace the `<azure_region>` placeholder with the name of any AKS-supported region):
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, and its Azure region (replace the `<azure_region>` placeholder with the name of any AKS-supported region):
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
     K8S_CLUSTER_NAME=k8sAKS-cluster
-    K8S_PIP_NAME=k8sAKS-cluster-pip
     LOCATION=<azure_region>
     ```
 
@@ -50,18 +49,6 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
     > [!NOTE]
     > Wait for the cluster provisioning to complete. This should take about 5 minutes.
 
-    > [!NOTE]
-    > The cluster contains a single worker node. While not recommended for production environments, it's sufficient for evaluation purposes.
-
-1. Run the following commands to identify the resource group that will host the cluster infrastructure resources, and then create a public IP address resource in that group:
-
-    ```azurecli-interactive
-    K8S_INFRA_RG_NAME=$(az aks show -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --query nodeResourceGroup -o tsv)
-    az network public-ip create -g $K8S_INFRA_RG_NAME -n $K8S_PIP_NAME --sku STANDARD
-    ```
-
-    > [!IMPORTANT]
-    > You **must** create the public IP address resource in the cluster's infrastructure resource group for it to bind to the cluster's load balancer.
 
 ## Task 2: Connect to the AKS cluster
 
