@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-backend-apis.6-pushing-notifications-logic-apps
+uid: learn.azure.deploy-backend-apis.6-push-notifications-logic-apps
 title: Push notifications with Azure Logic Apps
 metadata:
   unitType: learning-content
@@ -8,10 +8,11 @@ metadata:
   ms.date: 3/24/2021 
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 05
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
+durationInMinutes: 5
 content: |
-  [!include[](includes/6-pushing-notifications-logic-apps.md)]
+  [!include[](includes/6-push-notifications-logic-apps.md)]
 quiz:
     title: Knowledge check
     questions:

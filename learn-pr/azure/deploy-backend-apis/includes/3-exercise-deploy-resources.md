@@ -42,8 +42,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-> [!TIP]
-> If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+    > [!TIP]
+    > If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
@@ -135,8 +135,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
 
-> [!TIP]
-> If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
+    > [!TIP]
+    > If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
 
 1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**. What you've just done is enable the GitHub SQL Action which takes care of deploying the appropriate schema that is required by the database.
 
@@ -211,13 +211,13 @@ Now that your database and GitHub repository are configured, it's time to deploy
     $storageAccountName
     ```
 
-> [!WARNING]
-> If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
->
-> ```powershell
-> $storageAccountName = $("storageaccount$($uniqueID)")
-> $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
-> ```
+    > [!WARNING]
+    > If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
+    >
+    > ```powershell
+    > $storageAccountName = $("storageaccount$($uniqueID)")
+    > $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
+    > ```
 
 1. Run the following in the Cloud Shell to deploy an empty function in your language of choice.
 

@@ -8,7 +8,8 @@ metadata:
   ms.date: 3/24/2021  
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 02
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

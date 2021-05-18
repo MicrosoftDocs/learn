@@ -6,7 +6,7 @@ Here, you'll deploy a pre-configured Azure Logic App, which sends an email conta
 
 ## Deploy the Azure Logic App
 
-The first step is to deploy the Azure Logic App using a combination of Azure PowerShell and ARM templates. You'll need to first gather some information from GitHub to access the ARM template from the Azure Cloud Shell.
+The first step is to deploy the Azure Logic App using a combination of Azure PowerShell and Azure Resource Manager (ARM) templates. You'll need to first gather some information from GitHub to access the ARM template from the Azure Cloud Shell.
 
 <!--1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.-->
 
