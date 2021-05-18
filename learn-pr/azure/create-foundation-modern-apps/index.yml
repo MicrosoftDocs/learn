@@ -7,24 +7,25 @@ metadata:
   ms.date: 3/17/2021  
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 title: Architect modern applications using Azure SQL Database
 summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+abstract: |
   By the end of this module, you will be able to: 
     - Build a foundation for applications with Azure SQL Database
     - Demonstrate modern database capabilities with Azure SQL Database
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with database concepts such as stored procedures and querying
   - Familiarity with CI/CD concepts such as GitHub Actions
   - Familiarity with available Azure services
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+hidden: true
+levels:
   - intermediate
   - beginner
   - advanced
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles:
   - developer
   - database-administrator
   - solution-architect
