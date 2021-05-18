@@ -16,11 +16,11 @@
         * Control actions
         * Logic Apps Designer"
 -->
-Here, we'll discuss how Azure API Management works from three points of view: API customers, administrators, and developers. This knowledge will help you evaluate whether Azure API Management is a good solution for managing your organization's APIs.
+Here, we'll discuss how Azure API Management works from three points of view: API consumers, administrators, and developers. This knowledge will help you evaluate whether Azure API Management is a good solution for managing your organization's APIs.
 
 In this unit, you'll learn about:
 
-- How API customers use Azure API Management
+- How API consumers use Azure API Management
 - How API administrators use Azure API Management
 - How API developers use Azure API Management
 
@@ -41,9 +41,9 @@ In this unit, you'll learn about:
 
 <!-- Pattern for simple topic -->
 
-## How Azure API Management works for API customers
+## How Azure API Management works for API consumers
 
-An API *customer* is an entity that makes a request to the API for data. So, for example, any of the following could be a customer of an API:
+An API *consumer* is an entity that makes a request to the API for data. So, for example, any of the following could be a consumer of an API:
 
 - Business partner
 - Employee
@@ -52,15 +52,15 @@ An API *customer* is an entity that makes a request to the API for data. So, for
 - Web app
 - IoT device
 
-The key Azure API Management component for customers is the gateway because all customer API calls are first routed to your gateway endpoint. The gateway is also the essential element in decoupling your APIs because the gateway endpoint is always separate from your API's deployment location in the backend. API customers only ever deal directly with the gateway, never with the actual API deployment instance.
+The key Azure API Management component for consumers is the gateway because all consumer API calls are first routed to your gateway endpoint. The gateway is also the essential element in decoupling your APIs because the gateway endpoint is always separate from your API's deployment location in the backend. API consumers only ever deal directly with the gateway, never with the actual API deployment instance.
 
-The gateway performs many tasks from the customer's point of view, but the following are the most important:
+The gateway performs many tasks from the consumer's point of view, but the following are the most important:
 
-- **Authentication**: The gateway monitors access to the API by verifying the customer's subscription keys, JWT tokens, and other credentials.
-- **Security**: The gateway prevents denial-of-service attacks and API misuse by enforcing predefined rate limits and customer usage quotas.
+- **Authentication**: The gateway monitors access to the API by verifying the consumer's subscription keys, JWT tokens, and other credentials.
+- **Security**: The gateway prevents denial-of-service attacks and API misuse by enforcing predefined rate limits and consumer usage quotas.
 - **Transformation**: The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON on-the-fly, as depicted in the image below.
 - **Routing**: Once an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
-- **Performance**: The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives customers faster response times and reduces the load on the backend server.
+- **Performance**: The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
 :::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="Diagram depicting a mobile app requesting a weather forecast using an API. The diagram depicts how the Azure API Management gateway routes the call to the backend server and how the gateway converts the server's XML response to JSON.":::
 
@@ -73,25 +73,25 @@ If you're an API administrator or manager, once your APIs have been published, y
 You can perform all of these tasks and more using the Azure API Management administration interface, which is an Azure portal page that enables you to administer your APIs. Besides enabling you to set API policies, as you learned in the previous unit, the Azure API Management administration interface enables you to perform the following tasks:
 
 - **Defining and importing API specs**: Once you have your Azure API Management instance provisioned, you can use the administration interface to import your API specifications. You can import an OpenAPI specification, a REST API, and a SOAP API (which you can optionally convert to REST). You can also create an API by importing instances of the following Azure services: Web App, Function App, Logic App, and Service Fabric. You can also create a blank API and define it manually.
-- **Managing users and groups**: In Azure API Management, a *user* is a developer account—that is, it's an account for an API customer. You can add users manually or invite users to create an account, but most users create their own accounts using the developer portal. A *group* is a collection of related users. You can associate a group with a particular API product and each user in that group will have access to the product in the developer portal.
-- **Packaging APIs into products**: In Azure API Management, a *product* is a group of related APIs. By packaging multiple APIs as a single product, you can configure that product—for example, by setting rate limits and other policies, defining terms of use, adding groups, and so on—and that configuration gets applied to all the APIs in the product. Once you publish the product, customers can subscribe to the product and use its APIs with a single subscription key.
-- **Handling API revisions and versions**: When your API developer team needs to make changes to an API, you can make the change in a safe and controlled way that doesn't adversely affect customers by using revisions and versions:
-  - **Revisions**: A *revision* is a relatively minor or non-breaking change to the API. Your dev team can code and test the revision separately from the production API, as shown in the diagram below. Then, when your revision is ready for customers, you use the Azure API Management administration interface to set the updated API as the *current* revision.
+- **Managing users and groups**: In Azure API Management, a *user* is a developer account—that is, it's an account for an API consumer. You can add users manually or invite users to create an account, but most users create their own accounts using the developer portal. A *group* is a collection of related users. You can associate a group with a particular API product and each user in that group will have access to the product in the developer portal.
+- **Packaging APIs into products**: In Azure API Management, a *product* is a group of related APIs. By packaging multiple APIs as a single product, you can configure that product—for example, by setting rate limits and other policies, defining terms of use, adding groups, and so on—and that configuration gets applied to all the APIs in the product. Once you publish the product, consumers can subscribe to the product and use its APIs with a single subscription key.
+- **Handling API revisions and versions**: When your API developer team needs to make changes to an API, you can make the change in a safe and controlled way that doesn't adversely affect consumers by using revisions and versions:
+  - **Revisions**: A *revision* is a relatively minor or non-breaking change to the API. Your dev team can code and test the revision separately from the production API, as shown in the diagram below. Then, when your revision is ready for consumers, you use the Azure API Management administration interface to set the updated API as the *current* revision.
   - **Versions**: A *version* is a relatively major or breaking change to the API and Azure API Management enables you to offer developers multiple versions of the API at the same time. Azure API Management offers several versioning schemes, including path-based, header-based, and query string-based versioning.
-- **Monitoring and analyzing APIs**: The administration interface includes built-in monitoring tools that let you view API traffic in real time and analytics that enable you to derive insights on how customers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector, Azure Monitor Logs, and Azure Application Insights.
+- **Monitoring and analyzing APIs**: The administration interface includes built-in monitoring tools that let you view API traffic in real time and analytics that enable you to derive insights on how consumers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector, Azure Monitor Logs, and Azure Application Insights.
 
-:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Diagram depicting how revisions work in Azure API Management. API requests from customers are routed to the current revision of the API, while API requests from the in-house development team are routed to the API revision.":::
+:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Diagram depicting how revisions work in Azure API Management. API requests from consumers are routed to the current revision of the API, while API requests from the in-house development team are routed to the API revision.":::
 
 ## How Azure API Management works for developers
 
-Except for the Consumption tier, all Azure API Management instances include a developer portal where you surface your APIs to potential and existing API customers. The developer portal comes with a default interface that is customizable to match your organization's branding and requirements.
+Except for the Consumption tier, all Azure API Management instances include a developer portal where you surface your APIs to potential and existing API consumers. The developer portal comes with a default interface that is customizable to match your organization's branding and requirements.
 
 Users with developer accounts sign in to the developer portal (which also accepts guest users who don't yet have an account). Developers are then presented with a web interface that enables them to interact with your APIs in the following ways:
 
 - **Accessing API documentation**: Developers can read the documentation you've provided for each API.
-- **Testing an API**: The developer portal offers an interactive console that enables a customer to quickly and safely test an API. The developer can choose an API operation, add parameter values, and then submit the call to view what response the API returns.
+- **Testing an API**: The developer portal offers an interactive console that enables a consumer to quickly and safely test an API. The developer can choose an API operation, add parameter values, and then submit the call to view what response the API returns.
 - **Viewing API code samples**: The developer portal offers API call samples in several programming languages, including C#, Java, JavaScript, PHP, and Python.
-- **Subscribing to an API**: When a customer decides to use your API, the developer portal enables the user to create a subscription to the API and obtain a subscription key to use when calling the API.
+- **Subscribing to an API**: When a consumer decides to use your API, the developer portal enables the user to create a subscription to the API and obtain a subscription key to use when calling the API.
 - **Running analytics**: The developer portal offers users analytics on the developer's usage of an API.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

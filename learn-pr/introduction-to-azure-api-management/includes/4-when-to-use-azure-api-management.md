@@ -137,7 +137,7 @@ By enabling the management of multiple APIs from a single administrative interfa
 
 - **Specifications**: Standardizing API specs—such as using REST for all APIs and using a consistent naming scheme for JSON name-value pairs—reduces development time, decreases errors, and enables your organization to respond faster to customer suggestions and market forces.
 - **Documentation**: Standardizing API documentation enables developers to get up to speed with an API quickly, reduces technical support queries, and encourages developers to use more of your APIs.
-- **URLs**: Standardizing the base URL for your APIs reduces customer errors and gives your API deployments a more professional look.
+- **URLs**: Standardizing the base URL for your APIs reduces consumer errors and gives your API deployments a more professional look.
 - **Analytics**: Standardizing API analytics enables management teams and engineers to compare usage and performance across multiple APIs.
 - **Regulations**: For APIs that must meet government or industry rules and regulations, standardization helps ensure compliance across all APIs.
 
@@ -155,15 +155,15 @@ By bringing multiple APIs under a single administrative umbrella, Azure API Mana
 
 The efficiencies that accrue from centralizing API operations tend to increase with the number of APIs and with the size of the overall administrative load you impose on your APIs. Having centralized APIs is a huge help where APIs are often updated because it enables a single versioning scheme for all products.
 
-All of these factors apply strongly to our food delivery platform scenario. For example, centralized customer access through the developer portal makes it easier to sign up new developers, which enhance the monetization of the platform's APIs.
+All of these factors apply strongly to our food delivery platform scenario. For example, centralized consumer access through the developer portal makes it easier to sign up new developers, which enhance the monetization of the platform's APIs.
 
 ### Should you use Azure API Management to secure access to your APIs?
 
 Azure API Management was designed with API security in mind. With so many organizations relying on APIs for the internal and external exchange of data between apps and devices, a haphazard or inconsistent approach to security is just asking for trouble. A proper API security strategy covers the following bases:
 
-- **Permissions**: Setting permissions enables you to control who can work with an API and what they can do with it. In Azure API Management, having all your API customers as users and being able to organize those users into groups makes it easy and efficient to apply permissions to control API access.
+- **Permissions**: Setting permissions enables you to control who can work with an API and what they can do with it. In Azure API Management, having all your API consumers as users and being able to organize those users into groups makes it easy and efficient to apply permissions to control API access.
 - **Access**: Controlling access to an API means only allowing authorized users to submit requests. With Azure API Management, the developer portal supplies users with subscription keys and you can restrict access to APIs using multiple forms of authentication and JSON web tokens.
-- **Protection**: API protection means securing the API for attacks or malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent denial-of-service attacks and customer misuse (intentional or accidental) of the API.
+- **Protection**: API protection means securing the API for attacks or malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent denial-of-service attacks and consumer misuse (intentional or accidental) of the API.
 - **Compliance**: API compliance means having your APIs satisfy all corporate or government security policies. Having all your APIs together in Azure API Management makes it easier to configure those APIs with security policies that achieve compliance.
 
 The more APIs you manage, the greater the need for security because more APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can expose a security flaw.

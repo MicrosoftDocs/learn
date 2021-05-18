@@ -80,14 +80,14 @@ quiz:
     - content: "Creating a central access point for API deployment."
       isCorrect: false
       explanation: "Incorrect. While it's true that routing all API requests through a single base URL makes it easier to enforce policies and apply transformations, it doesn't do anything directly to encourage developers to subscribe to your APIs."
-  - content: "Suppose you're the senior security engineer in charge of a large API deployment. You've been tasked to reduce the likelihood of an API going offline due to a denial-of-service (DOS) attack. Which one of the following security policies should you implement to best accomplish this goal?"
+  - content: "Suppose you're the senior security engineer in charge of a large API deployment. You've been tasked to reduce the likelihood of one or more consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should you implement to best accomplish this goal?"
     choices:
     - content: "Require subscription keys"
       isCorrect: false
-      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to ensure authorized access to the API, it does not by itself guard the API against a DOS attack."
+      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to ensure authorized access to the API, it does not by itself guard the API against misuse."
     - content: "Require client Basic authentication"
       isCorrect: false
-      explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users can access the API, this authentication does not by itself protect the API against a DOS attack."
+      explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users can access the API, this authentication does not by itself protect the API against misuse."
     - content: "Set rate limits"
       isCorrect: true
-      explanation: "Correct. By throttling API access to a certain number of calls over a specified time frame for a subscription or key, you help guard your API against DOS attacks."
+      explanation: "Correct. By throttling API access to a certain number of calls over a specified time frame for a subscription or key, you help guard your API against misuse by a consumer."
