@@ -25,7 +25,8 @@ function createGreetingMessage(name) {
 }
 ```
 
-> [!NOTE] Variables defined inside a function can't be accessed from anywhere outside of the function. These variables are called **local variables**, and outside of the function, they are considered **out of scope**.
+> [!NOTE] 
+> Variables defined inside a function can't be accessed from anywhere outside of the function. These variables are called **local variables**, and outside of the function, they are considered **out of scope**.
 
 When calling this function we'll store the value in a variable. This is much the same way we'd set a variable to a static value (like `let name = 'Christopher'`).
 

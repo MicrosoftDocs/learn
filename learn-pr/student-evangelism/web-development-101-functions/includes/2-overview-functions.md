@@ -39,7 +39,8 @@ Whenever we want to call (or invoke) our function, we use the name of the functi
 displayGreeting();
 ```
 
-> [!NOTE] There is a special type of function known as a method, which you've already been using! In fact, we saw this in our demo above when we used console.log. What makes a method different from a function is a method is attached to an object (console in our example), while a function is free floating. You will hear many developers use these terms interchangeably.
+> [!NOTE] 
+> There is a special type of function known as a method, which you've already been using! In fact, we saw this in our demo above when we used console.log. What makes a method different from a function is a method is attached to an object (console in our example), while a function is free floating. You will hear many developers use these terms interchangeably.
 
 ## Best practices
 
