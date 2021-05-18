@@ -26,7 +26,7 @@ You will start by creating a new page in Visual Studio Code.
 
 1. Inside the *EXPLORER* window in Visual Studio Code, hover over *FUNCTIONS*, and select *New File*.
 
-    ![Screenshot of explorer window with new file outlined](./media/functions-create-file.png)
+    ![Screenshot of explorer window with new file outlined](../media/functions-create-file.png)
 
 1. Name the new file *index.html* and select Enter
 
@@ -81,11 +81,11 @@ Our page is now created! Let's see how it looks.
 1. Open the Visual Studio Code command palette by selecting *Ctl-Shift-P* (or *Cmd-Shift-P* on a Mac).
 1. Open [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) by typing *Live Server* in the command palette and selecting *Live Server: Open with Live Server*.
 
-    ![Screenshot of command pallette with Live Server selected](./media/launch-live-server.png)
+    ![Screenshot of command pallette with Live Server selected](../media/launch-live-server.png)
 
 1. Live Server will start and open your browser window. You will see the message *Hello, Ornella...* display in your browser window!
 
-    ![Screenshot of the browser window displaying Hello, Ornella...](./media/hello-ornella.png)
+    ![Screenshot of the browser window displaying Hello, Ornella...](../media/hello-ornella.png)
 
 You have now created and called a function to display a message! You can try changing the name and saving the file to see the updated results.
 

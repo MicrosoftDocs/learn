@@ -1,4 +1,4 @@
-Let's see how we can use `setTimer` with an anonymous function to display a message on a browser page. You will create the code to display a message after a two second delay.
+Let's see how we can use `setTimer` with an anonymous function to display a message on a browser page. You will create the code to display a message after a two-second delay.
 
 > [!NOTE]
 > You can find the full code at the bottom of this exercise.
@@ -12,9 +12,9 @@ You will use the same file you used in the prior exercise to complete this one.
 
 ## Add the code to display the message
 
-You will now add the code to display the message, which will have a two second delay.
+You will now add the code to display the message, which will have a two-second delay.
 
-1. Below the line which reads `// TODO: Add setTimeout code` add the following code:
+1. Below the line, which reads `// TODO: Add setTimeout code` add the following code:
 
     ```javascript
     // TODO: Add setTimeout code
@@ -37,7 +37,7 @@ Let's see the results!
 
 1. Refresh the browser window. Notice the original message displays, and is replaced after two seconds by '...Hello again!'
 
-    ![Screenshot of the browser showing ...Hello again!](./media/hello-again.png)
+    ![Screenshot of the browser showing ...Hello again!](../media/hello-again.png)
 
 You have now used an anonymous function to have a message appear on a delay.
 
