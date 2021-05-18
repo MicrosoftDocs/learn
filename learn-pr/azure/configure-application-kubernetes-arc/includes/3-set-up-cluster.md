@@ -52,7 +52,7 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
 
 ## Task 2: Connect to the AKS cluster
 
-The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using on the Azure Kubernetes Service Cluster Admin built-in role: 
+The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using the Azure Kubernetes Service Cluster Admin built-in role: 
 
 > [!NOTE]
 > For more information about AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](https://docs.microsoft.com/azure/aks/managed-aad).
