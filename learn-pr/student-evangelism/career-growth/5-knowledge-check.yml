@@ -3,83 +3,47 @@ uid: learn.career-growth.4-knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: "Knowledge check" # user input: module title for browser tab and search results
-  description: "Knowledge check" # user input: a description for site search and SEO
+  title: "From Student to Employee - Growing your Career" # user input: module title for browser tab and search results
+  description: "Test your knowledge on collaborating, time management, and asking questions" # user input: a description for site search and SEO
   ms.date: 5/14/2021 
   author: jlooper 
   ms.author: jelooper 
   ms.topic: interactive-tutorial
   ms.prod: "TODO"
 durationInMinutes: 3 # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
-###  - Questions are complete sentences ending with a question mark 
-###  - No true/false questions 
-###  - 3 answers per question 
-###  - All answers about the same length 
-###  - Numeric answers listed in sorted order 
-###  - No "All of the above" and/or "None of the above" as answer choices 
-###  - No "Not" or "Except" in questions 
-###  - No second person ("you") in the questions or answers 
-###  - Provide a meaningful explanation for both correct and incorrect answers 
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "To broaden your horizons, seeking out opinions from a diverse group of people"
     choices:
-    - content: ""
+    - content: "This is true, as it will help you broaden your horizons"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Gathering perspectives from people who do not look like you will serve you well in life"
+    - content: "False, it is not an important aspect of your job"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "This is false, gathering diverse feedback will help improve your work experience"
+    - content: "True, but it is not a very important part of your job"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "You should prioritize gathering diverse perspectives"
+  - content: "In your first job, expect to work a lot of overtime and long hours"
     choices:
-    - content: ""
+    - content: "True, you are the new employee and it will be your job to work extra"
+      isCorrect: false
+      explanation: "This is false, and if you find your job requires this type of activity, take steps to effect change"
+    - content: "False, these expectations reflect poor management and should be mitigated"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Working a lot of extra hours will impact your productivity in the short and long terms"
+    - content: "True, you have a lot to learn and need to put in a lot of overtime to do so"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "You might have a lot to learn, but it should mostly be during standard work hours"
+  - content: "You should limit your questions to your peers as an employee"
     choices:
-    - content: ""
+    - content: "True, you should try not to be annoying"
+      isCorrect: false
+      explanation: "While it's important not to annoy your co-workers unduly, a healthy work environment will empower you to ask questions of everyone"
+    - content: "True, you should cultivate your peer circle"
+      isCorrect: false
+      explanation: "While it's true that you should be a good colleague to your peers, you will learn more about the business if you expand your circle of inquiry"
+    - content: "This is false, you should feel empowered to ask questions of everyone"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Feel free to ask good questions of everyone in your company. This is a perfect time to do so!"
