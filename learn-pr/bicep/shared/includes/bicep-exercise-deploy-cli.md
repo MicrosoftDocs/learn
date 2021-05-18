@@ -44,9 +44,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
    - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
 
-### Install the Bicep tooling
+### Upgrade or install the Bicep tooling
 
-Run the following command to install the Bicep template compilation support:
+If you already have the Bicep tooling installed, run the following command to upgrade it to the latest version:
+
+```azurecli
+az bicep upgrade
+```
+
+Otherwise, run the following command to install the Bicep template compilation support:
 
 ```azurecli
 az bicep install

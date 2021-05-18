@@ -216,6 +216,8 @@ New-AzResourceGroupDeployment `
 
 You aren't prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment this time. Azure retrieves the values from your key vault instead.
 
+The deployment completes more quickly this time because the Azure resources already exist.
+
 ### Check your deployment
 
 1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
