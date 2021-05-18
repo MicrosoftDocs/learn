@@ -64,7 +64,7 @@ In early versions of .NET Standard, APIs focused on what was available in common
 
 Today, all the basic libraries, from dictionaries and networking to threading and cryptography, are present in .NET Standard.
 
-For more information, see [Portable Class Libraries](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/pcl?tabs=windows).
+For more information, see [Portable Class Libraries](/xamarin/cross-platform/app-fundamentals/pcl?tabs=windows).
 
 ## Using .NET Standard APIs
 

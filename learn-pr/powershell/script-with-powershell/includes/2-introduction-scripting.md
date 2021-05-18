@@ -4,8 +4,8 @@ The steps to automate your task usually include calls to cmdlets, functions, var
 
 Before you start learning to script, let's get an overview of the features of the PowerShell scripting language:
 
-- **Variables**. You can use variables to store values. Variables can be used as arguments to commands, for example.
-- **Functions**. A function is a named list of statements. Functions can produce an output that can be displayed in the console or used as input for other commands, for example.
+- **Variables**. You can use variables to store values. Variables can be used as arguments to commands.
+- **Functions**. A function is a named list of statements. Functions can produce an output that can be displayed in the console or used as input for other commands.
 
    > [!NOTE]
    > Many of the tasks PowerShell is used for are about side effects or modifications to system state (local or otherwise). Often the output is a secondary concern (reporting data, for example).
@@ -83,7 +83,7 @@ When you output text via `Write-Host` or `Write-Output`, you use single or doubl
    Write-Host "Here is `$PI and its value is $PI" # Prints Here is $PI and its value is 3.14
    ```
 
-   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$P1`. In the second instance, the value is interpolated and written out.  
+   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$P1`. In the second instance, the value is interpolated and is written out.  
 
 - `$()`. You can also write an expression within double quotation marks. To do that, use the `$()` construct. One way to use this construct is to interpolate properties of objects. Here's an example:
 

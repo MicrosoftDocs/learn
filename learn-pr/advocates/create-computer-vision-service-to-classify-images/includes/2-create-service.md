@@ -1,4 +1,3 @@
-
 ## What is Microsoft Cognitive Services?
 
 Microsoft Cognitive Services is a set of machine learning algorithms available as a service for anyone to use. Instead of building this intelligence for our apps from scratch, we can use these services for vision, speech, language, knowledge, and search. You can try each service for free. When you decide to integrate a service into your app, you sign up for a paid subscription. We'll focus our attention on the Computer Vision API in this model.
@@ -50,7 +49,7 @@ In this module, we'll run all exercises in the Azure CLI using the integrated Cl
 
 ## What is the Azure CLI
 
-The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
+The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 > [!IMPORTANT]
 > There are two versions of the Azure CLI tool available today: Azure CLI 1.0 and Azure CLI 2.0. We'll be using Azure CLI 2.0, which is the latest version and is recommended unless you're running legacy scripts. Azure CLI 1.0 is started with the `azure` command, and Azure CLI 2.0 is started with the `az` command.
