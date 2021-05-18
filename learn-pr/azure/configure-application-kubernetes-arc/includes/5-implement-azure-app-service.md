@@ -55,7 +55,7 @@ Use the following steps to collect the required information:
 
     ```azurecli-interactive
     EXTENSION_NAME="${K8S_ARC_PREFIX}-kube"
-    KUBE_ENV_NAME="${K8S_ARC_PREFIX}-kube-env"
+    KUBE_ENV_NAME="${K8S_ARC_PREFIX}-env-$RANDOM"
     ```
 
 1. Run the following commands to set the variable value that designates the name of the Kubernetes namespace that hosts the App Service resources:
@@ -213,6 +213,6 @@ Use the following steps to create an App Service Kubernetes environment:
     ```
 
     > [!NOTE]
-    > Rerun the command until the value of the **provisioningState** property changes to **InfrastructureSetupComplete** 
+    > Rerun the command until the value of the **provisioningState** property changes to **Succeeded** 
 
 Congratulations! You've completed the fourth exercise of this module. You've implemented the Application services extension on your Azure Arc-enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.

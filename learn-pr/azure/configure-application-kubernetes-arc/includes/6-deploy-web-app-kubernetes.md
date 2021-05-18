@@ -45,7 +45,7 @@ Use the following step to create a Linux code-based web app:
 
     ```azurecli-interactive
     EXTENSION_NAME="${K8S_ARC_PREFIX}-kube"
-    KUBE_ENV_NAME="${K8S_ARC_PREFIX}-kube-env"
+    KUBE_ENV_NAME=$(az appservice kube list -g $ARC_RG_NAME --query "[0].name" -o tsv)
     ```
 
 1. Run the following command to set the value of the variable that designate the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
@@ -143,14 +143,7 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
 1. To validate the deployment from a functional standpoint, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify its **URL**, and then open another tab in the same browser window to display the corresponding webpage.
 
     > [!NOTE]
-    > The webpage should display **Hello World!**
-
-    > [!NOTE]
-    > Alternatively, you can simply run the following command: 
-    > 
-    > ```azurecli-interactive
-    > az webapp browse -g $ARC_RG_NAME -n $WEBAPP_NAME
-    > ```
+    > The webpage should display **Hello World!**`
 
 
 ## Task 3: Delete the Azure Arc resource group

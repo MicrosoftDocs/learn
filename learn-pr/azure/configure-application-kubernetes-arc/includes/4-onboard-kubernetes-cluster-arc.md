@@ -78,7 +78,7 @@ Use the following steps to connect the AKS cluster to Azure Arc:
     ```
     
     > [!NOTE]
-    > Verify that the output includes clusterconect-agent pods
+    > Verify that the output includes clusterconnect-agent pods
 
 1. To validate the deployment, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the Azure Arc resource representing your AKS cluster, and then navigate to its **Overview** blade.
 
