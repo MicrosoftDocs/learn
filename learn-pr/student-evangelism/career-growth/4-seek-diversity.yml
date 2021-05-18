@@ -3,12 +3,12 @@ uid: learn.career-growth.seek-diversity
 title: Seeking a diverse experience
 metadata:
   unitType: learning-content # stub based on selected scaffold: introduction | learning_content | exercise | summary
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  title: "Seeking Diversity" # user input: module title for browser tab and search results
+  description: "Seek a diversity of opinions to enhance your experience" # user input: a description for site search and SEO
   ms.date: 5/14/2021 # stub with today's date
   author: jlooper # stub with GitHub ID from user settings
   ms.author: jelooper # stub with Microsoft alias from user settings
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 5 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/4-seek-diversity.md)]
