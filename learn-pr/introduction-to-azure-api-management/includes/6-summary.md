@@ -73,7 +73,7 @@ The criteria help you evaluate whether your organization's APIs would benefit fr
 
 - [Azure API Management](https://azure.microsoft.com/services/api-management/)
 - [Azure API Management pricing](https://azure.microsoft.com/pricing/details/api-management/)
-- [Feature-based comparison of the Azure API Management tiers](https://docs.microsoft.com/azure/api-management/api-management-features)
-- [Azure API Management FAQs](https://docs.microsoft.com/azure/api-management/api-management-faq)
+- [Feature-based comparison of the Azure API Management tiers](/azure/api-management/api-management-features)
+- [Azure API Management FAQs](/azure/api-management/api-management-faq)
 
 <!-- Do not include any other content -->
