@@ -18,7 +18,7 @@ The `launchAsync` command starts Immersive Reader with your selected content, an
 * **Words can be broken into syllables** to improve readability or to sound out new words
 * Parts of Speech and grammar can be highlighted to help learners understand verbs, nouns, pronouns, and more
 * **Colors** can be selected for different parts of speech to increase understanding and reading ease
-* **Line focus** shows only one, three or fives lines at a time, depending on your needs
+* **Line focus** shows only one, three, or five lines at a time, depending on your needs
 * **Focus mode** only shows the text, taking away outside distractions
 * **Picture dictionaries** aid reading and comprehension through multi-sensory processing--the ability to see a picture and hear a word simultaneously
 
@@ -62,4 +62,4 @@ ImmersiveReader.launchAsync(YOUR_TOKEN, YOUR_SUBDOMAIN, data, YOUR_OPTIONS);
 
 ## Using on mobile
 
-Microsoft Lens—formerly Microsoft Office Lens—is an Android and iOS app that trims, enhances, and makes pictures of whiteboards and documents readable. Immersive Reader can be used through Microsoft Lens, allowing the user to apply the read aloud, text spacing, and color changing functions to the document, creating greater accessibility and equity for all readers, no matter where they are.
+Microsoft Lens—formerly Microsoft Office Lens—is an Android and iOS app that trims, enhances, and makes pictures of whiteboards and documents readable. Immersive Reader can be used through Microsoft Lens, allowing the user to apply functions like read aloud, text spacing, and color changing to documents, creating greater accessibility and equity for all readers, no matter where they are.

@@ -51,7 +51,7 @@ On a *standard cluster*, when you enable this setting you must set single user a
 
 *High-concurrency clusters* can be shared by multiple users. When you enable ADLS Passthrough on this type of cluster, it does not require you to select a single user.
 
-![ADLS Passthrough setting.](../media/adls-passthrough-high-concurrency.png)
+![ADLS Passthrough setting for High-concurrency clusters.](../media/adls-passthrough-high-concurrency.png)
 
 ## Access control - Folders
 
