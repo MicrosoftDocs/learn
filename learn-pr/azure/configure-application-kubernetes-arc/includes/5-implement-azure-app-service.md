@@ -45,7 +45,7 @@ Use the following steps to collect the required information:
     > [!IMPORTANT]
     > You **must** create the public IP address resource in the cluster's infrastructure resource group for it to bind to the cluster's load balancer.
 
-1. Run the following commands to set the variable value that designates the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
+1. Run the following command to set the variable value that designates the name of the custom location that will host resources you deployed to the Azure Arc-connected Kubernetes cluster:
 
     ```azurecli-interactive
     CUSTOM_LOCATION_NAME="${K8S_ARC_PREFIX}-location"
@@ -58,7 +58,7 @@ Use the following steps to collect the required information:
     KUBE_ENV_NAME="${K8S_ARC_PREFIX}-env-$RANDOM"
     ```
 
-1. Run the following commands to set the variable value that designates the name of the Kubernetes namespace that hosts the App Service resources:
+1. Run the following command to set the variable value that designates the name of the Kubernetes namespace that hosts the App Service resources:
 
     ```azurecli-interactive
     APP_SERVICE_NAMESPACE_NAME=appservice-ns
@@ -80,7 +80,7 @@ Use the following steps to create an Azure Log Analytics workspace:
     LA_WORKSPACE_NAME=k8sAKS-workspace
     ```
 
-1. Run the following commands to create an Azure Log Analytics workspace:
+1. Run the following command to create an Azure Log Analytics workspace:
 
     ```azurecli-interactive
     az monitor log-analytics workspace create -g $K8S_INFRA_RG_NAME -n $LA_WORKSPACE_NAME
@@ -102,11 +102,11 @@ Use the following steps to create an Azure Log Analytics workspace:
 
 ## Task 3: Install the Application services extension on the Azure Arc enabled Kubernetes cluster
 
-Now you're ready to install the Application services extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc-enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
+Now you're ready to install the Application services extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
 
-Use the following steps to install the Application services extension on your Azure Arc-enabled Kubernetes cluster:
+Use the following steps to install the Application services extension on your Azure Arc enabled Kubernetes cluster:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.KubernetesConfiguration resource provider. This enables you to create the Application services extension in the region you selected for the resource group that hosts the Azure Arc-enabled services:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to verify the registration state of the Microsoft.KubernetesConfiguration resource provider. This enables you to create the Application services extension in the region you selected for the resource group that hosts the Azure Arc-enabled services:
 
     ```azurecli-interactive
     az provider show -n Microsoft.KubernetesConfiguration --query "[registrationState,resourceTypes[?resourceType=='extensions'].locations]"
@@ -115,7 +115,7 @@ Use the following steps to install the Application services extension on your Az
 1. Run the following command to install the extension, including support for Log Analytics:
 
     > [!IMPORTANT]
-    > Do you plan to use Log Analytics to store logs of App Service web apps that are hosted on an Azure Arc-enabled Kubernetes cluster? You must reference the workspace when installing the Application services extension. There currently isn't support for implementing this functionality after the Application services extension is installed.
+    > Do you plan to use Log Analytics to store logs of App Service web apps that are hosted on an Azure Arc enabled Kubernetes cluster? You must reference the workspace when installing the Application services extension. There currently isn't support for implementing this functionality after the Application services extension is installed.
 
     ```azurecli-interactive
     az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config" --configuration-settings "logProcessor.appLogs.destination=log-analytics" --configuration-protected-settings "logProcessor.appLogs.logAnalyticsConfig.customerId=${LA_WORKSPACE_ID_ENC}" --configuration-protected-settings "logProcessor.appLogs.logAnalyticsConfig.sharedKey=${LA_WORKSPACE_KEY_ENC}"
@@ -148,11 +148,11 @@ Use the following steps to install the Application services extension on your Az
 
 ## Task 4: Create a custom location for the Azure Arc enabled Kubernetes cluster
 
-Azure Resource Manager provides the location extension. This extension allows you to designate Azure Arc-enabled Kubernetes clusters as target locations. Use these locations for deploying instances of Azure Arc-enabled services, such as App Services web apps, Azure Functions and Azure Logic Apps. A custom location maps extensions to a Kubernetes namespace that's hosting pods. These pods implement the functionality of the corresponding resources.
+Azure Resource Manager provides the location extension. This extension allows you to designate Azure Arc enabled Kubernetes clusters as target locations. Use these locations for deploying instances of Azure Arc enabled services, such as App Services web apps, Azure Functions, and Azure Logic Apps. A custom location maps extensions to a Kubernetes namespace that's hosting pods. These pods implement the functionality of the corresponding resources.
 
 Use the following steps to create a custom location.
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.ExtendedLocation resource provider. This provider allows you to create a custom location in the region you selected for the resource group that's hosting the Azure Arc-enabled services: 
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to verify the registration state of the Microsoft.ExtendedLocation resource provider. This provider allows you to create a custom location in the region you selected for the resource group that's hosting the Azure Arc enabled services: 
 
     ```azurecli-interactive
     az provider show -n Microsoft.ExtendedLocation --query "[registrationState,resourceTypes[?resourceType=='customLocations'].locations]"
@@ -194,7 +194,7 @@ After you create a custom location, you can proceed to register an App Service K
 
 Use the following steps to create an App Service Kubernetes environment:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.Web resource provider. You then can create a kubeEnvironment resource in the Azure region hosting the resource group containing the Azure Arc connected cluster and the custom location:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to verify the registration state of the Microsoft.Web resource provider. You then can create a kubeEnvironment resource in the Azure region hosting the resource group containing the Azure Arc connected cluster and the custom location:
 
     ```azurecli-interactive
     az provider show -n Microsoft.Web --query "[registrationState,resourceTypes[?resourceType=='kubeEnvironments'].locations]"
@@ -215,4 +215,4 @@ Use the following steps to create an App Service Kubernetes environment:
     > [!NOTE]
     > Rerun the command until the value of the **provisioningState** property changes to **Succeeded** 
 
-Congratulations! You've completed the fourth exercise of this module. You've implemented the Application services extension on your Azure Arc-enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.
+Congratulations! You've completed the fourth exercise of this module. You've implemented the Application services extension on your Azure Arc enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.
