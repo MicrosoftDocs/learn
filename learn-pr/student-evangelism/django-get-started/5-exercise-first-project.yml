@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.get-started.exercise-first-project
+title: Exercise - Create your first project
+metadata:
+  title: Exercise - Create your first project
+  description: Create your first project in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-first-project.md)]

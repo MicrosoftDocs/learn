@@ -3,14 +3,13 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-cus
 title: Create a custom skill
 metadata:
   title: Create a custom skill
-  description: "Implement a custom skill as an Azure function."
-  ms.date: 10/29/2020
+  description: "Create a custom skill"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-python
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/9-create-custom-skill.md)]

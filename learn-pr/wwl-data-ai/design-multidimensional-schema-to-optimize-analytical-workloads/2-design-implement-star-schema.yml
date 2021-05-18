@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema
+title: Design and implement a star schema
+metadata:
+  title: Design and implement a star schema
+  description: "Design and implement a star schema"
+  ms.date: 04/06/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-design-implement-star-schema.md)]

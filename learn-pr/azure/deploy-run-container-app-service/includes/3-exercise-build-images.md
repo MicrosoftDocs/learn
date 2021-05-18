@@ -21,18 +21,18 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | Concierge Subscription |
-    | Resource group | Select <rgn>[sandbox resource group]</rgn>. If you select **Create new**, enter a new resource group with the name **learn-deploy-container-acr-rg**. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | Subscription | Select your Azure subscription. |
+    | Resource group | Select **Create new**, and enter a new resource group with the name **learn-deploy-container-acr-rg**. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, make note of it for the rest of the exercises in this module. |
     | **Instance details** |
     | Registry name | Enter a unique name and make a note of it for later. |
     | Location | Select a location that is close to you. |
-    | SKU | **Standard** |
+    | SKU | Standard |
 
 1. Select **Review + create**. When validation successfully passes, select **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 
-1. In the Azure Cloud Shell in the portal, run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text and a carousel control that rotates through a series of images.
+1. In the Azure Cloud Shell in the portal, run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text, and a carousel control that rotates through a series of images.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git
@@ -68,9 +68,9 @@ The Docker file contains the step-by-step instructions for building a Docker ima
 
 ## Examine the container registry
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the Overview page for your container registry.
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and on the Overview page for your container registry, select **Go to resource**.
 
-2. Under **Services**, select **Repositories**. You'll see a repository named `webimage`.
+2. In the left menu pane, under **Services**, select **Repositories**. You'll see a repository named `webimage`.
 
 3. Select the `webimage` repository. It contains an image with the `latest` tag. This is the Docker image for the sample web app.
 

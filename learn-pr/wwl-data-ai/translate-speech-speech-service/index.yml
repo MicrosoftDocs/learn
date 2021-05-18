@@ -2,23 +2,24 @@
 uid: learn.wwl.translate-speech-speech-service
 metadata:
   title: Translate speech with the speech service
-  description: "Perform speech translation tasks with the speech service to translate spoken text to different languages."
-  ms.date: 09/26/2020
+  description: "Translate speech with the speech service"
+  ms.date: 04/30/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Translate speech with the speech service
-summary: Perform speech translation tasks with the speech service to translate spoken text to different languages.
+summary: Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 abstract: |
-  In this module you will:
-  - Translate Speech to Text from Microphone Input
-  - Translate Speech to Speech in a Different Language
-  - Translate Speech to Multiple Target Languages
+  In this module, you will learn how to:
+  - Provision Azure resources for speech translation.
+  - Generate text translation from speech.
+  - Synthesize spoken translations.
 prerequisites: |
-  - Translate Speech to Text from Microphone Input
-  - Translate Speech to Speech in a Different Language
-  - Translate Speech to Multiple Target Languages
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal.
+  - Have experience programming with C# or Python.
+  - Have experience of using the Speech service to transcribe speech to text.
 iconUrl: /learn/achievements/translate-speech-speech-service.svg
 levels:
 - intermediate
@@ -30,10 +31,11 @@ roles:
 products:
 - azure-cognitive-services
 units:
-- learn.wwl.translate-speech-speech-service.introduction-speech-translation
-- learn.wwl.translate-speech-speech-service.translate-speech-text-microphone-input
-- learn.wwl.translate-speech-speech-service.translate-speech-different-language
-- learn.wwl.translate-speech-speech-service.translate-speech-multiple-target-languages
+- learn.wwl.translate-speech-speech-service.introduction
+- learn.wwl.translate-speech-speech-service.speech-service
+- learn.wwl.translate-speech-speech-service.translate-speech-text
+- learn.wwl.translate-speech-speech-service.synthesize-translation
+- learn.wwl.translate-speech-speech-service.exercise-translate-speech
 - learn.wwl.translate-speech-speech-service.knowledge-check
 - learn.wwl.translate-speech-speech-service.summary
 badge:

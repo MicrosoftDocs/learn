@@ -3,7 +3,7 @@ uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.8-select
 title: Select the right MPI library
 metadata:
   title: Select the right MPI library
-  description: Discussion about what MPI library to use when running optimized HPC applications
+  description: Discussion about what MPI library to use when you're running optimized HPC applications.
   ms.date: 02/04/2021
   author: garvct
   ms.author: cogarvey

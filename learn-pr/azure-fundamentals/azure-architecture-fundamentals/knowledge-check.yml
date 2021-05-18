@@ -3,17 +3,18 @@ uid: learn.azure.azure-architecture-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  description: "Knowledge check"
+  ms.date: 05/13/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "Which of the following can be used to manage governance across multiple Azure subscriptions?"
     choices:
@@ -37,25 +38,25 @@ quiz:
     - content: "Resource group"
       isCorrect: false
       explanation: "That's incorrect. Resource groups hold resources like virtual machines and storage. They work inside the Azure accounts."
+    - content: "Public cloud"
+      isCorrect: false
+      explanation: "That's incorrect. A public cloud is a valid type of cloud computing."
   - content: "Which of the following features doesn't apply to resource groups?"
     choices:
     - content: "Resources can be in only one resource group."
       isCorrect: false
-      explanation: "That's incorrect. Resources can be in only one resource group."
+      explanation: "That's incorrect. It does apply, as resources can be in only one resource group."
     - content: "Role-based access control can be applied to the resource group."
       isCorrect: false
-      explanation: "That's incorrect. Role-based access control can be applied to the resource group."
+      explanation: "That's incorrect. It does apply, as role-based access control can be applied to the resource group."
     - content: "Resource groups can be nested."
       isCorrect: true
-      explanation: "That's correct. Resource groups can't be nested."
+      explanation: "That's correct. It does not apply, as resource groups can't be nested."
   - content: "Which of the following statements is a valid statement about an Azure subscription?"
     choices:
     - content: "Using Azure doesn't require a subscription."
       isCorrect: false
-      explanation: "You'll need some type of subscription to be able to use Azure resources."
+      explanation: "That's incorrect. You'll need some type of subscription to be able to use Azure resources."
     - content: "An Azure subscription is a logical unit of Azure services."
       isCorrect: true
-      explanation: "That's correct. A subscription is a set of Azure services bundled together for tracking and billing purposes."
-    - content: "You can't have more than one subscription."
-      isCorrect: false
-      explanation: "Using multiple subscriptions is a common method in companies to spread out and document Azure costs."
+      explanation: "That's correct. A subscription is a set of Azure services bundled together for tracking and billing purposes.()You can't have more than one subscription."

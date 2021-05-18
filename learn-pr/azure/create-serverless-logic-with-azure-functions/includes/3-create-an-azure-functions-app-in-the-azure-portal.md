@@ -6,9 +6,9 @@ Functions are hosted in an execution context called a **function app**. You defi
 
 ### Choose a service plan
 
-Function apps may use one of two types of service plans. The first service plan is the **Consumption service plan**. The plan that you choose when using the Azure serverless application platform. The Consumption service plan provides automatic scaling and bills you when your functions are running. The Consumption plan comes with a configurable timeout period for the execution of a function. By default, it is 5 minutes, but may be configured to have a timeout as long as 10 minutes.
+Function apps may use one of two types of service plans. The first service plan is the **Consumption service plan**. This is the plan that you choose when using the Azure serverless application platform. The Consumption service plan provides automatic scaling and bills you when your functions are running. The Consumption plan comes with a configurable timeout period for the execution of a function. By default, it is 5 minutes, but may be configured to have a timeout as long as 10 minutes.
 
-The second plan is called the **Azure App Service plan**. The plan allows you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you are responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously or if your functions require more processing power or execution time than the Consumption plan can provide.
+The second plan is called the **Azure App Service plan**. This plan allows you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you are responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously or if your functions require more processing power or execution time than the Consumption plan can provide.
 
 ### Storage account requirements
 
@@ -24,11 +24,9 @@ Let's create a function app in the Azure portal.
 
 1. Select **Create a resource**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
-
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** page appears.
+1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -80,6 +78,6 @@ Let's create a function app in the Azure portal.
 
 ## Verify your Azure function app
 
-1. When deployment completes, select **Go to resource**. Your Function App page appears.
+1. When deployment completes, select **Go to resource**. Your Function App pane appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.

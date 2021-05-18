@@ -44,7 +44,7 @@ We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9
 
 Fortunately, we can use the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Artithmetic` namespace of the standard library to do just that. It implements the mapping
 $$
-|x\rangle b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
+|x\rangle |b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 

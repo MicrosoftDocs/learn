@@ -4,10 +4,10 @@ These capabilities differentiate Advanced Audit from the core audit functionalit
 
 ## Long-term retention of audit logs
 
-Advanced Audit keeps all Exchange, SharePoint, and Azure Active Directory audit records for one year. Keeping audit records for longer periods can help with ongoing forensic or compliance investigations. Microsoft is planning to release the capability to keep audit logs for 10 years. The 10-year retention of audit logs helps support long-running investigations and respond to regulatory, legal, and internal obligations.
+Advanced Audit keeps all Exchange, SharePoint, and Azure Active Directory audit records for one year. Keeping audit records for longer periods can help with ongoing forensic or compliance investigations. Microsoft now has the capability to keep audit logs for 10 years. The 10-year retention of audit logs helps support long-running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
-> Retaining audit logs for 10 years will require an additional add-on license. This new license will be available in 2021.
+> Retaining audit logs for 10 years requires an additional add-on license.
 
 ## Access to crucial events for investigations
 

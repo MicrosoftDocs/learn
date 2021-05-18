@@ -5,7 +5,7 @@ The init script has already created all the application resources, it's now up t
 To start the scalability process, you'll need to create a HorizontalPorAutoscaler resource in the cluster, which will point to the website deployment.
 
 > [!NOTE]
-> **If your AKS cluster version is less than 1.10**, the required Metrics Server will not be installed by default. HPAs can only work if they have a valid Metrics Server installation, you can install the Metrics Server on your cluster by downloading the [`components.yaml` file on the latest release](https://github.com/kubernetes-sigs/metrics-server/releases/latest/components.yaml).
+> **If your AKS cluster version is less than 1.10**, the required Metrics Server will not be installed by default. HPAs can only work if they have a valid Metrics Server installation, you can install the Metrics Server on your cluster by downloading the [`components.yaml`](https://github.com/kubernetes-sigs/metrics-server/releases/latest) file on the latest release.
 >
 > Example installation:
 >

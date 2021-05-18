@@ -66,7 +66,7 @@ When you sell through Microsoft, you can also choose to allow a one-month free t
 Adding a free trial to your transact offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and free trials can be added for each offer plan.
 
 > [!Note]
-> This free trial period for a transact offer is different from a free trial listing, which redirects customers to your website to activate a trial. When you add a free trial period to your transact offer, Microsoft uses your customers’ Azure account to pull in user details and billing information. At the end of the 30-day trial period, customers are automatically converted to a paid subscription.
+> This free trial period for a transact offer is different from a free trial listing, which redirects customers to your website to activate a trial. With free trials for transact offers, customers subscribe through Microsoft and they're automatically converted to a paid subscription at the end of the trial period.
 
 #### Selecting plan visibility
 

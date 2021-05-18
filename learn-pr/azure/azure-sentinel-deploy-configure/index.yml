@@ -4,8 +4,8 @@ metadata:
   title: Deploy Azure Sentinel and connect data sources
   description: Learn how to deploy Azure Sentinel and connect the services you want to monitor. Then you can use Azure and AI to provide analysis of security alerts.
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience performing fundamental Azure administration
   - Experience working with Azure Monitor and its Log Analytics workspace
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
 levels:
 - beginner
 roles:

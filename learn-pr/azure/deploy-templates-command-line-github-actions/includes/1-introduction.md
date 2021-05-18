@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Ability to go to the Azure the portal
+- Ability to go to the Azure portal
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
 - Either:

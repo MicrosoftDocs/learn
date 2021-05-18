@@ -9,7 +9,7 @@ In this unit, you'll create both development and production resources, and put t
 Create a resource group to act as the production resource group.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
-1. Select **Resource groups** > **Add**.
+1. Select **Resource groups** > **New**.
 1. Enter **production-learn-rg** as the name for the resource group.
 1. Select **Review + create** > **Create**.
 1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows/).  
@@ -21,7 +21,7 @@ Create a resource group to act as the production resource group.
 Now you need to create some additional resources that you'll eventually move to a development resource group.
 
 1. Select **Create a resource** on the left side of the Azure portal.
-1. Search for **Storage account**, and select **Create**.
+1. Search for **Storage account**, and select **New**.
 1. Select the resource group **production-learn-rg**.
 1. Enter a unique storage account name that starts with the prefix **dev**.
 1. Select **Review + create** > **Create**.

@@ -3,7 +3,7 @@ uid: learn.language.go-control-flow
 metadata:
   title: Use control flows in Go
   description: Learn to use control flows in Go.
-  ms.date: 12/14/2020
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Know how to declare and initialize variables.
   - Know how to create functions.
   
-iconUrl: /learn/achievements/go-control-flow.svg
+iconUrl: /learn/achievements/go/go-control-flow.svg
 levels: # TBC
 - beginner
 roles: # TBC
@@ -33,6 +33,7 @@ roles: # TBC
 - student
 products: 
 - azure
+- vs-code
 units:
 - learn.language.go-control-flow.0-introduction
 - learn.language.go-control-flow.1-use-if-else-statements

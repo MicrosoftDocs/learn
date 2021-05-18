@@ -20,7 +20,7 @@ prerequisites: |
   - Beginner-level knowledge of Azure, including regions, Azure virtual networks, and ExpressRoute. 
   - Beginner-level knowledge of networking, including IP addresses and virtual private networks. 
   - Beginner-level knowledge of cloud computing, including platform as a service (PaaS).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-private-link.svg
 ratingEnabled: true
 levels:
 - beginner

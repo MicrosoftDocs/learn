@@ -105,43 +105,38 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server. Set **Auditing** to **ON**.
+1. Run the following to create a Log Analytics Workspace.
+
+    ```powershell
+    $WorkspaceName = "azuresql$($uniqueID)-la"
+    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
+    ```
+
+1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. On the left pane, under **Security**, select **Auditing**. Review the options, and then select **View server settings**.
 
-    :::image type="content" source="../media/3-db-audit.png" alt-text="Screenshot of the database-level auditing blade.":::  
+    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you won't do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
 
-    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you won't do in this unit, the two audits would happen in parallel. One does not override the other. Alternately, you could audit only at the database level.
+1. Select **Enable Azure SQL Auditing**.  
 
-1. Select **Log Analytics (Preview)**, and then select **Configure**.  
+1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
 
-1. Select **Create New Workspace**.  Fill in the information according to the subscription, resource group, and location that you're using to complete this module.  We recommend that you name your Log Analytics workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.
-
-    This process might take a few moments to validate and create. You should then see your Log Analytics account in the **Auditing** view.
-
-1. Select **Storage**, and then select **Configure**. With this option, you can collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics.
-
-1. Select the **Concierge Subscription** that you're using for this module, and select the storage account in the resource group with the ID that was created for you. The ID should contain *sqlva* and *a random string of letters and numbers*. In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
+1. Select **Storage**, and under Storage account, select the storage account that contains *sqlva* and *a random string of letters and numbers*. In this storage account, you can collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
 
     Depending on your organization, in production you might consider having a separate storage account for the audit logs.
 
-1. For **Retention (Days)** enter **7**, and for **Storage access key**, select **Primary**.
-
-1. After you've configured your options, select **OK**.  
+1. Under Advanced properties, for **Retention (Days)** enter **7**, and for **Storage access key**, select **Primary**.
 
 1. Select **Save**.  
-
-    :::image type="content" source="../media/3-save-workspace.png" alt-text="Screenshot of saving Log Analytics details.":::  
 
     After the configuration is saved, select the **X** button to close the server-level **Auditing** pane.  
 
 1. Go back to your Azure SQL Database instance (not logical server) and, under **Security**, select **Auditing**. 
 
    On the Azure SQL Database auditing overview pane, you might notice that the **Auditing** option is set to **OFF**, but that **Server-level Auditing** is set to **Enabled**. It's important to note that if auditing is enabled on the server, the setting applies to the database also.  
-
-    :::image type="content" source="../media/3-db-audit-off.png" alt-text="Screenshot of Auditing set to OFF.":::  
 
 You've now enabled auditing for a storage account and an Azure Monitor workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  

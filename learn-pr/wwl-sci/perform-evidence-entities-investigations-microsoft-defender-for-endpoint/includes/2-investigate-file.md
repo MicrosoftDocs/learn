@@ -6,7 +6,7 @@ There are many ways to access the detailed profile page of a specific file. For 
 
 File details, Malware detection, File prevalence
 
-- Deep analysis
+- File details, malware detection, and file prevalence
 
 - Alerts
 

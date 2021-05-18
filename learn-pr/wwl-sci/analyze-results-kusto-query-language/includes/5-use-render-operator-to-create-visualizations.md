@@ -3,7 +3,7 @@ The render operator generates a visualization of the query results.
 The supported visualizations are:
 
 * `areachart`
-* `bacchant`
+* `barchart`
 * `columnchart`
 * `piechart`
 * `scatterchart`

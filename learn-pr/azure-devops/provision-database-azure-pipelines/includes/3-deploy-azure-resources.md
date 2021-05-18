@@ -4,7 +4,7 @@ In this exercise, you use a template that creates a SQL Server logical instance,
 
 Here, you open Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
 
-You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true).
+You can also [install and run the Azure CLI locally](/cli/azure/install-azure-cli?azure-portal=true).
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
@@ -40,7 +40,7 @@ Here, you create a basic Resource Manager template in a file named *template.jso
     code template.json
     ```
 
-1. Add this to *template.json* and then save the file.
+1. Add this to *template.json* and then save the file by pressing <kbd>Ctrl+S</kbd>.
 
     [!code-json[](code/3-template.json)]
 
@@ -48,7 +48,7 @@ Here, you create a basic Resource Manager template in a file named *template.jso
 
 Here, you briefly walk through each section of the Resource Manager template to better understand how it works.
 
-The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to them. 
+The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to them.
 
 The deployment prefix, unique suffix, and admin password will be passed in. The location will be set by default as the location of the resource group you're deploying into.
 
@@ -198,7 +198,7 @@ The `hostNameBindings` type sets the website name and the type.
 ```
 
 > [!TIP]
-> In Cloud Shell, you can close the editor now if you want. But leave the command window open for the next part.
+> In Cloud Shell, you can close the editor now if you want by pressing <kbd>Ctril+Q</kbd>. But leave the command window open for the next part.
 
 ## Select an Azure region for deployment
 

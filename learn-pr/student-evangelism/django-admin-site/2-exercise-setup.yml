@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.admin-site.exercise-setup
+title: Exercise - Get the starter project
+metadata:
+  title: Exercise - Get the starter project
+  description: Set up the starter project to help you learn about the Django admin site.
+  ms.date: 2/26/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-exercise-setup.md)]

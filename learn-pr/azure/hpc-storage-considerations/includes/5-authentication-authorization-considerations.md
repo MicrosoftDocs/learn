@@ -1,30 +1,30 @@
-After you understand the overall performance and traffic characteristics, you will need to consider *security* aspects of your workload. Your data may be sensitive, such as patient radiological images. You may want to restrict access to the data for many reasons. You may want to offer each of your researchers their own "home directory" from which they can load data and conduct HPC analysis and simulations.
+After you understand the overall performance and traffic characteristics of your workload, you'll need to consider security aspects. Your data might be sensitive, like patient radiological images. You might want to restrict access to data for many reasons. You might want to offer each of your researchers a "home directory" from which they can load data and conduct HPC analysis and simulations.
 
-When you select your cloud HPC storage, be aware of how it will integrate with your current security posture. Understand the methods by which your file system will authenticate and authorize access to the files, whether the enforcement is local or remote (or both), where authentication and authorization are sourced. If using a remote shared file system, you will need to understand how to control access via standard NAS practices. Finally, if you are offering unique working spaces for users (home directories), understand how to allocate that space.
+When you select your cloud HPC storage, be aware of how it will integrate with your current security posture. Understand the methods by which your file system will authenticate and authorize access to files, whether the enforcement is local or remote (or both), and where authentication and authorization are sourced. If you use a remote shared file system, you'll need to understand how to control access by using standard NAS practices. Finally, if you offer unique working spaces for users (home directories), understand how to allocate that space.
 
-By the end of this module you will have gained understanding of these considerations and how they impact your storage architecture.
+By the end of this unit, you'll understand these considerations and how they affect your storage architecture.
 
 ## Overview of authentication and authorization
 
-**Authentication** - Access to file systems requires authenticating the requestor, using some trusted credential. Many client-server architectures will issue challenges for such credentials, such as user or machine accounts. Those credentials are then checked to ensure they are valid for that environment. Once authenticated the specific requestor (the user or the machine/process) would then be authorized. Authentication for your solution may be limited depending on which access protocols your environment requires. For example, if you have a Windows environment, you most likely are using Server Message Block (SMB) as the network file access protocol, which has different authentication requirements than NFS.
+**Authentication**: When you provide access to file systems, you need to authenticate the requestor by using some trusted credential. Many client/server architectures issue challenges for such credentials, like user or computer accounts. Those credentials are then checked to ensure they're valid for the environment. After authentication, the requestor (the user or the computer/process) is then authorized. Authentication for your solution might be limited by the access protocols your environment requires. For example, if you have a Windows environment, you're most likely using Server Message Block (SMB) as the network file-access protocol. SMB authentication requirements aren't the same as NFS requirements.
 
-**Authorization** - Allowing a user or machine access to an environment is one thing, but what *level* of access? For example, user A may be able to read files on a file system while user B may be able to read and write files. Authorization can go deeper than reading and writing; for example, user C may be able to modify files but not create new ones in a given directory.
+**Authorization**: Allowing a user or computer access to an environment is one thing, but what *level* of access? For example, user A might be able to read files on a file system, and user B might be able to read and write files. Authorization can go deeper than reading and writing. For example, user C might be able to modify files but not create new ones in a given directory.
 
 The level of authorization is often expressed as *permissions* for a given file. These include reading, writing, and execution. 
 
-**Users and Groups** - Granting access to a set of resources can become cumbersome when you have a large number of users. It also becomes complicated if you intend to grant different levels of access to multiple sets of users. The use of *groups* becomes necessary, where you can assign a user to a specific group or set of groups. You can then authorize access resources based on that group identification.
+**Users and groups**: Granting access to a set of resources can become cumbersome when you have a large number of users. It also becomes complicated if you intend to grant different levels of access to multiple sets of users. The use of *groups* then becomes necessary. You can assign a user to a specific group or set of groups. You can then authorize access to resources based on that group identification.
 
-Taken together, authentication and authorization represent the user/group/machine level access you intend to grant to resources...in our case files.
+Taken together, authentication and authorization represent the user-level, group-level, and computer-level access you intend to grant to resources, in our case, to files.
 
-The Linux OS assigns a *user identifier* (UID) to individual user accounts. The UID is an integer and is what the system uses determine which system resources, including files and folders, that a specific user can access.
+The Linux OS assigns a *user identifier* (UID) to individual user accounts. The UID is an integer. It's what the system uses to determine which system resources, including files and folders, a specific user can access.
 
-Linux OS uses *group identifiers* (GIDs) for group assignments. A user is associated with a single primary group. Users can be associated with any number supplemental group assignments, up to 65536 on most modern Linux systems.
+Linux OS uses *group identifiers* (GIDs) for group assignments. A user is associated with a single primary group. Users can be associated with virtually any number of supplemental group assignments, as many as 65,536 on most modern Linux systems.
 
 ### Local and remote authentication and authorization 
 
-Local authentication and authorization refer to the access of a local file system by a user/machine account that is also local to the machine. For example, I may create a user account that I then grant access to the `/data` directory located on my local file system. That user account is local, as is any grant of access to the directory. I may also use group assignment to control access. The combination of user and group authorization gives a user *effective* permissions over a file/folder.
+Local authentication and authorization refer to the access of a local file system by a user/computer account that's also local to the computer. For example, I can create a user account that I then grant access to the /data directory located on my local file system. That user account is local, as is any grant of access to the directory. I can also use group assignment to control access. The combination of user and group authorization gives a user *effective* permissions over a file or folder.
 
-If you look at a typical output of `ls -al` directory command, you will see something like this:
+If you look at a typical output of the `ls -al` directory command, you'll see something like this:
 
 ```
 drwxr-xr-x  4 root root 4096 Dec 31 19:43.
@@ -34,38 +34,41 @@ drwxr-xr-x  8 root root 4096 Dec 31 19:43 omi
 -rw-r--r--  1 root root    0 Jan 21 15:10 test.txt
 ```
 
-The `drwxr-xr-x` represent the level of authorized access users/groups have to the file or directory. The `d` indicates the entry is a directory (if the first value is `-` then it's a file entry). The remaining characters represent permission group authorization of read (r), write (w) and execute (x): the first three values are reflect the "owner" of the file or directory, the second three values represent the group permissions assigned to the file or directory, and the final three values reflect permissions allowed to all other users on that system. For example:
+The `drwxr-xr-x` characters represent the level of authorized access that users and groups have to the file or directory. The `d` indicates that the entry is a directory. (If the first value is `-`, the entry is a file entry.) The remaining characters represent permission group authorization of read (r), write (w), and execute (x). The first three values indicate the "owner" of the file or directory. The second three values indicate the group permissions assigned to the file or directory. The final three values indicate permissions allowed to all other users on the system. 
 
-```-rw-r--r--  1 root root    0 Jan 21 15:10 test.txt```:
+Here's an example:
 
-- '-' reflects this is a file
-- 'rw-' indicates that the owner has read and write permissions
-- 'r--' indicates that the assigned group has read permissions (only)
-- 'r--' indicates that the remaining users have read permissions (only)
+```-rw-r--r--  1 root root    0 Jan 21 15:10 test.txt```
+
+- `-` indicates that this resource is a file.
+- `rw-` indicates that the owner has read and write permissions.
+- `r--` indicates that the assigned group has only read permissions.
+- `r--` indicates that the remaining users have only read permissions.
 - Note also that the owning user and assigned group are represented by the two `root` columns.
 
-An authenticated user on a local machine is represented by their UID and their primary/supplemental GIDs. Those values are **local** to that machine. What happens if you have five...or 50 machines? You would have to replicate the UID/GID assignments on each of those computers. The level of complexity around user management grows, as does the possibility of mistakenly granting file/folder access to the wrong user.
+An authenticated user on a local computer is represented by a UID and primary and supplemental GIDs. Those values are local to the computer. What happens if you have five or even 50 computers? You'd have to replicate the UID and GID assignments on each of those computers. The level of complexity around user management grows, as does the possibility of accidentally granting file or folder access to the wrong user.
 
-**Remote file access using NFS**
+#### Remote file access via NFS
 
-Local UID/GID assignment works fine if you are running everything as a single user/group assignment. What if you are running an HPC cluster that is consumed by multiple stakeholders, each of which have sensitive data and multiple consumers of that data? 
+Local UID and GID assignment works fine if you're running everything as a single user/group assignment. What if you're running an HPC cluster that's consumed by multiple stakeholders, each of which have sensitive data and multiple consumers of the data? 
 
-Locating data on a file server or NAS environment allows for remote access of the data. This approach helps to reduce the local disk cost, ensures that the data is up to date for all users, and reduces overall user and group management. 
+Locating data on a file server or NAS environment allows remote access of the data. This approach helps reduce the local disk cost, ensures the data is up to date for all users, and reduces overall user and group management. 
 
-![A diagram showing the relationship between compute, storage and directory services.](../media/nas-and-ds.png)
+![Diagram that shows the relationships among compute, storage, and directory services.](../media/nas-and-ds.png)
 
-Centrally locating files may introduce the need for a *directory service* that contains the user and group configuration. Directory services, such as Active Directory or Lightweight Directory Access Protocol (LDAP) allow you to create a user/group mapping that can then be used by all remote systems. You configure your remote machines, and your NAS environment, as clients of the directory service. You may also use Active Directory mappings between your Windows user accounts and a specific UID/GID combination.
+ If you locate files centrally, you might need a *directory service* that contains the user and group configuration. Directory services, like Active Directory or Lightweight Directory Access Protocol (LDAP), allow you to create a user/group mapping that all remote systems can then use. You configure your remote computers and your NAS environment as clients of the directory service. You can also use Active Directory mappings between your Windows user accounts and a specific UID and GID combination.
 
-The typical method of accessing files remotely is to use a network file system such as NFS, SMB, or a parallel file system such as Lustre. These protocols define the client and server API for accessing data. We discussed NFS operations in the "performance considerations" unit. The use of NFS will be discussed at length here.
+The typical method for accessing files remotely is to use a network file system like NFS or SMB, or a parallel file system like Lustre. These protocols define the client-and-server API for accessing data. We discussed NFS operations in the "File-system performance considerations" unit. We'll discuss the use of NFS at length in the next unit.
 
-NOTE: while a directory service is not mandatory when using NFS, the problem of UID/GID management will still present with larger numbers of users and systems. 
+> [!NOTE] 
+> A directory service isn't required when you use NFS. But if you don't use one, UID and GID management will still be difficult if you have large numbers of users and systems. 
 
-**Home directories**
+#### Home directories
 
-Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Further, say those researchers are continuously modifying and adding to their own data. Offering researchers their own home directories is an efficient way of segregating their data.
+Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Say those researchers are continually modifying and adding to their own data. Providing researchers with their own home directories is an efficient way to segregate their data.
 
-Permissions within the home directory would be handled by the researcher, enabling them to collaborate when desired.
+Permissions within the home directory would be handled by the researcher, so they could collaborate if they wanted to.
 
-One of the main challenges in this environment is storage space. Say you have a 500TB NAS environment. What stops one researcher from consuming it all?
+One of the main challenges in this environment is storage space. Say you have a 500-TB NAS environment. What stops one researcher from using it all?
 
-A **quota** can be assigned to an individual directory and reflects the maximum amount of data allowed. Once reached, the quota can reject further data, or warn you admins that the researcher has exceeded their limit. For example, if you have a NAS system, you would be able to assign quotas to each researcher. Further, if you isolate their access to the home directory it becomes simple to configure and monitor their usage.
+You can assign a *quota* to an individual directory. The quota reflects the maximum amount of data allowed. After the quota is reached, it can reject further data or warn admins that the researcher has exceeded the limit. For example, if you have a NAS system, you can assign a quota to each researcher. And if you isolate the researchers' access to the home directory, it becomes easy to configure and monitor their usage.

@@ -1,14 +1,14 @@
 Disaster recovery drills enable you to test your company's ability to recover from a disaster without affecting production services.
 
-After you produce a business continuity and disaster recovery (BCDR plan), you're asked to explore the options for how the system can be tested without interrupting live service. You want to learn more about recovery drills and how they can verify that your Azure Site Recovery solution is set up and works correctly.
+After you produce a business continuity and disaster recovery (BCDR) plan, you're prompted to explore the options for how the system can be tested without interrupting live service. You want to learn more about recovery drills, and how they can verify that your Azure Site Recovery solution is set up and works correctly.
 
-In this unit, you'll gain an understanding of recovery time and recovery point objectives. You'll see how you can then use a recovery drill to test that Azure Site Recovery was configured correctly to meet these objectives.
+In this unit, you'll gain an understanding of recovery time and recovery point objectives. You'll see how you can then use a recovery drill to test that Site Recovery was configured correctly to meet these objectives.
 
 ## Disaster recovery drill
 
-With Azure Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and model an app around its dependencies, such as the need for Active Directory or DNS to function. Recovery plans also allow you to test your disaster recovery.
+With Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and model an app around its dependencies, such as the need for Active Directory or DNS to function. BCDR plans also allow you to test your disaster recovery.
 
-After a recovery plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
+After a BCDR plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
 
 1. In the **Site Recovery** section of the Azure portal, select **Recovery Plans** > your recovery plan name > **Test Failover**.
 1. Select the recovery point from the options presented. Options include **Latest processed**, which is the latest recovery point that was processed by Site Recovery.
@@ -17,9 +17,9 @@ After a recovery plan is created in the Azure portal, it can be executed for tes
 
 ## Monitor a test recovery
 
-Use the Site Recovery dashboard to monitor recovery operations, which include recovery drills started under test circumstances. The dashboard is accessed from within the Recovery Services vault by clicking **Overview**. Tabs are then visible to monitor both Site Recovery and backup operations.
+Use the Site Recovery dashboard to monitor recovery operations, which include recovery drills started under test circumstances. The dashboard is accessed from within the Recovery Services vault by selecting **Overview**. Tabs are then visible to monitor both Site Recovery and backup operations.
 
-In the dashboard, you can monitor replicated items and test failovers. Each replicated item under both categories is placed into a particular state for easy viewing of a healthy item compared to one with issues. See the following diagram.
+In the dashboard, you can monitor replicated items and test failovers. Each replicated item under both categories is placed into a particular state for easy viewing of a healthy item compared to one with issues. See the following image.
 
 ![Site Recovery overview](../media/4-site-recovery-overview.png)
 

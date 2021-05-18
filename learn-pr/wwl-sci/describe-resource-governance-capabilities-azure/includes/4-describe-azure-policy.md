@@ -6,7 +6,7 @@ Azure Policy evaluates whether the properties of resources match with business r
 
 ## Evaluation outcomes
 
-Azure Policy evaluates resources at specific times during the resource lifecycle and the policy assignment lifecycle, and for regular ongoing compliance evaluation. The following events or times will trigger a valuation:
+Azure Policy evaluates resources at specific times during the resource lifecycle and the policy assignment lifecycle, and for regular ongoing compliance evaluation. The following events or times will trigger an evaluation:
 
 - A resource has been created, deleted, or updated in scope with a policy assignment.
 - A policy or an initiative is newly assigned to a scope.

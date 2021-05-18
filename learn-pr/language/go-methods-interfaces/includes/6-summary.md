@@ -1,11 +1,11 @@
-What a ride! 
+In this lesson, we explored how to write reusable and extensible code with Go, even though the language doesn't completely follow the OOP paradigm.
 
-As you've noticed in this module, you can write reusable and extensible code even though Go doesn't fully fit the OOP paradigm. Still, you first needed to learn the Go way to handle encapsulation, overloading, embedding, and interfaces. 
+Go handles method encapsulation by allowing a method's implementation details to be hidden from another package, but not the originating package. Go supports method overloading and embedding. You can override the implementation of a method to support different uses.
 
-A useful feature in Go is the ability to extend code from the standard libraries, even if your code base ends up growing. You might use frameworks, but Go doesn't favor them. That's because you can overwrite a lot of the functionality from the standard libraries.
+With the Go language, you can extend code from the standard libraries, even if your code base ends up growing. You might use frameworks, but Go doesn't favor them. That's because you can overwrite most of the functionality from the standard libraries.
 
-In this module, you learned how methods work in Go. You learned that Go, unlike other programming languages, doesn't require a `class` object when you're writing reusable and extensible code.
+In this module, you learned how methods work in Go. You learned that Go, unlike other programming languages, doesn't require a `class` object when you write reusable and extensible code.
 
-Finally, you learned how interfaces work in Go by exploring the fundamentals of declaring and implementing them. We included a few complex examples such as creating a server API, where implementing interfaces comes in very handy.
+Finally, you studied how interfaces work in Go. You explored the fundamentals of declaring and using them. You reviewed a few complex examples, such as how to create a server API, and practiced implementing interfaces.
 
-With the knowledge you've acquired at this point, you're ready to write code that's reusable and extensible.
+With the knowledge you acquired, you're ready to write code that's reusable and extensible.

@@ -24,7 +24,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     |---------|---------|
     | On the **Basics** tab, under **Project Details** section: |
     | Subscription | *your subscription* |
-    | Resource group | Select **Create new**, enter **east-coast-rg**, and then select **OK**. |
+    | Resource group | Select **east-coast-rg**, and then select **OK**. |
     | Under **Instance Details** section: |
     | Vault name | **asr-vault** |
     | Region | **East US 2** |

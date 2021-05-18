@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.8-hybrid-file-access-requirements
 title: Hybrid file access requirements
 metadata:
   title: Hybrid file access requirements
-  description: A discussion of how data is accessed across Wide-Area Networks, and the various approaches you may take to move data to and from Azure.
+  description: A discussion of how data is accessed across wide area networks and the various approaches you can take to move data to and from Azure.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
@@ -15,22 +15,22 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "________ will transmit data to a destination based on whether it exists there or reflects the latest changes"
+  - content: "________ transmits data to a destination based on whether it exists there or reflects the latest changes."
     choices:
-    - content: "caching"
+    - content: "Caching"
       isCorrect: false
-      explanation: "caching is driven by requests for a given file"
-    - content: "synchronization"
+      explanation: "Incorrect. Caching is driven by requests for a given file."
+    - content: "Synchronization"
       isCorrect: true
-      explanation: "synchronization will check the destination directory and create or update files based on whether they exist and are the most recent changes"
-  - content: "a widely used tool for synchronizing data is called ________"
+      explanation: "Correct. Synchronization checks the destination directory and creates or updates files based on whether they exist and reflect the most recent changes."
+  - content: "A widely used tool for synchronizing data is called ________."
     choices:
-    - content: "caching"
+    - content: "Caching"
       isCorrect: false
-      explanation: "caching generally refers to the placement of data in fast memory or storage close to compute, based on client requests"
-    - content: "cp"
+      explanation: "Incorrect. Caching generally refers to the placement of data in fast memory or storage close to compute, based on client requests."
+    - content: "`cp`"
       isCorrect: false
-      explanation: "cp is the Linux os copy utility"
-    - content: "rsync"
+      explanation: "Incorrect. `cp` is the Linux OS copy utility."
+    - content: "`rsync`"
       isCorrect: true
-      explanation: "rsync is a widely used tool for synchronizing data"
+      explanation: "Correct. `rsync` is a widely used tool for synchronizing data."

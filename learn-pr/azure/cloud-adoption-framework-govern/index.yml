@@ -9,19 +9,19 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
-summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools such as Azure Policy and Azure Blueprints provide convenient means of establishing those controls. The CAF Govern methodology helps to evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools such as Azure Policy and Azure Blueprints provide convenient means of establishing those controls. The Govern methodology helps to evaluate and establish corporate policies and disciplines to mitigate tangible risks.
 abstract: |
   In this module, you will:
-  - Establish processes to properly govern cloud adoption. 
+  - Establish processes to properly govern cloud adoption.
   - Classify tangible risks based on the reference cloud adoption plan.
   - Integrate corporate policies to mitigate tangible risks.
   - List implementation strategies to mitigate those risks.
-  - Demonstrate one or more Azure policy additions that implement those strategies.
+  - Demonstrate one or more Azure Policy additions that implement those strategies.
   - Prioritize future governance investments.
 
 prerequisites: |
   - A foundational understanding of IT governance processes.
-  - An understanding of your organization’s governance requirements as relevant to your cloud adoption plan.
+  - An understanding of your organization's governance requirements that are relevant to your cloud adoption plan.
 
 iconUrl: /learn/achievements/address-risks-caf-govern.svg
 ratingEnabled: true
@@ -38,9 +38,8 @@ roles:
 - privacy-manager
 - risk-practitioner
 - security-engineer
-- solution-architect
 - student
-- technology-manager 
+- technology-manager
 products:
 - azure
 units:

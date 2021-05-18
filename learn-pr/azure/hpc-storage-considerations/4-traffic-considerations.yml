@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.hpc-storage-considerations.4-traffic-considerations
-title: File system traffic considerations
+title: File-system traffic considerations
 metadata:
-  title: File system traffic considerations
-  description: A discussion of the various file access traffic patterns. We will also discuss how each may impact your HPC workload. 
+  title: File-system traffic considerations
+  description: A discussion of the various file-access traffic patterns and how each can affect your HPC workload. 
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A read-only copy of your file system taken at a point in time is known as:"
+  - content: "A read-only copy of a file system that's taken at a point in time is known as:"
     choices:
-    - content: "backup"
+    - content: "A backup"
       isCorrect: false
-      explanation: "backups are point in time copies of data"
+      explanation: "Incorrect. A backup is a point-in-time copy of data."
     - content: "Checkpointing"
       isCorrect: false
-      explanation: "checkpointing focuses on copying the state of an application and its data"
-    - content: "Snapshot"
+      explanation: "Incorrect. Checkpointing creates a copy of the state of an application and its data."
+    - content: "A snapshot"
       isCorrect: true
-      explanation: "Snapshots are read-only copies of your file system"
-  - content: "the potential maximum file count and size your workload requires is known as the:"  
+      explanation: "Correct. A snapshot is a read-only copy of a file system."
+  - content: "The potential maximum file count and size that your workload requires is known as the:"  
     choices:
-    - content: "data"
+    - content: "Data"
       isCorrect: false
-      explanation: "data is a generic term for all of the files and information"
-    - content: "working set"
+      explanation: "Incorrect. Data is a generic term for files and information."
+    - content: "Working set"
       isCorrect: true
-      explanation: "Working set refers to the the potential maximum file count and size your workload requires"
-    - content: "directory"
+      explanation: "Correct. A working set is the potential maximum file count and size that your workload requires."
+    - content: "Directory"
       isCorrect: false
-      explanation: "A directory is a data structure which records file information in a file system"
+      explanation: "Incorrect. A directory is a data structure that records file information in a file system."

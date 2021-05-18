@@ -54,10 +54,10 @@ quiz:
     - content: Deploy cost management controls and processes.
       isCorrect: false
       explanation: While important, cost management won't help with the security concerns.
-    - content: Deploy Security baseline controls and processes.
+    - content: Deploy security baseline controls and processes.
       isCorrect: true
       explanation: In the narrative the visible pain points can be addressed through an automated security baseline to reduce security risks.
-  - content: Which will create the most confidence with the Chief Information Officer?
+  - content: Which will create the most confidence with the chief information officer?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
@@ -65,9 +65,9 @@ quiz:
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
       explanation: Corporate policy is important, but few will see the value of this exercise initially.
-    - content: Deploy Cost Management controls and processes.
+    - content: Deploy cost management controls and processes.
       isCorrect: true
       explanation: In this narrative the CIO expressed concerns with cost. Addressing those concerns with cost management controls will build confidence.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: The Chief Information Officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative.
+      explanation: The chief information officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative.

@@ -36,7 +36,7 @@ employee.firstName = 10;  //* Error - Type 'number' is not assignable to type 's
 
 Type checking ensures that the number `10` is not assignable to `employee.firstName` because it is expecting a `string`.
 
-Because TypeScript has a structural type system, an interface type with a particular set of members is considered identical to, and can be substituted for, another interface type or object type literal with an identical set of members. If an interface and a class implement the same structure, they can be used interchangeably. See [Structural Typing](https://www.typescriptlang.org/play#example/structural-typing?azure-portal=true) in the Playground for an example.
+Because TypeScript has a structural type system, an interface type with a particular set of members is considered identical to, and can be substituted for, another interface type or object type literal with an identical set of members. If an interface and a class implement the same structure, they can be used interchangeably. See [Structural Typing](https://www.typescriptlang.org/play#example/structural-typing) in the Playground for an example.
 
 Interfaces have no run-time representation; they are purely a compile-time construct. Interfaces are particularly useful for documenting and validating the required shape of properties, objects passed as parameters, and objects returned from functions. This enables you to catch errors and make sure you’re passing the right parameters at compile time, rather than waiting to find out about them at runtime.
 

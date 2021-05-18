@@ -1,6 +1,8 @@
-Lifetimes are Rust's answer to the question of memory safety. They allow Rust to ensure memory safety without the performance costs of garbage collection.
+The use of references presents a problem. The item that a reference is referring to does not keep track of all of its references. This can lead to an issue: when the item is dropped (meaning its associated resources like memory) are freed, how can we be sure that there are no references pointing to this now freed (and therefore invalid) memory?
 
-The main goal of lifetimes is to prevent dangling references, which cause a program to reference data other than the data it's intended to reference.
+Languages like C and C++ often have this problem where a pointer points to an item that has already been freed. This is known as a "dangling pointer". Fortunately, Rust eliminates this issue. It guarantees that all references always refer to valid items. How does it do this?
+
+Rust's answer to this question is lifetimes. They allow Rust to ensure memory safety without the performance costs of garbage collection.
 
 Consider the following snippet, which tries to use a reference whose value has gone out of scope:
 
@@ -9,9 +11,9 @@ fn main() {
     let x;
     {
         let y = 42;
-        x = &y;
+        x = &y; // We store a reference to `y` in `x` but `y` is about to be dropped.
     }
-    println!("x: {}", x);
+    println!("x: {}", x); // `x` refers to `y` but `y has been dropped!
 }
 ```
 
@@ -49,8 +51,7 @@ fn main() {
 
 Here we can see that the inner `'b` lifetime block is shorter than the outer `'a` block.
 
-The Rust compiler has a *borrow checker* that compares scopes to determine whether all borrows are valid. At compile time, the borrow checker compares the two lifetimes and sees that `x` has a lifetime of `'a` but that it refers to a value with a lifetime of `'b`. The program fails to compile
-because the subject of the reference *(`y` at lifetime `'b`)* doesn't live as long as the reference *(`x` at lifetime `'a`)*.
+The Rust compiler has a *borrow checker* that compares scopes to determine whether all borrows are valid. At compile time, the borrow checker compares the two lifetimes and sees that `x` has a lifetime of `'a` but that it refers to a value with a lifetime of `'b`. The program fails to compile because the subject of the reference *(`y` at lifetime `'b`)* doesn't live as long as the reference *(`x` at lifetime `'a`)*.
 
 ## Annotating lifetimes in functions
 
@@ -69,7 +70,7 @@ fn main() {
     println!("The longest magic word is {}", result);
 }
 
-fn longest_word(x: &str, y: &str) -> &str {
+fn longest_word(x: &String, y: &String) -> &String {
     if x.len() > y.len() {
         x
     } else {
@@ -84,14 +85,14 @@ The preceding code fails to compile with an informative error message:
     error[E0106]: missing lifetime specifier
      --> src/main.rs:9:38
       |
-    9 | fn longest_word(x: &str, y: &str) -> &str {
-      |                    ----     ----     ^ expected named lifetime parameter
+    9 | fn longest_word(x: &String, y: &String) -> &String {
+      |                    ----        ----        ^ expected named lifetime parameter
       |
       = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `x` or `y`
     help: consider introducing a named lifetime parameter
       |
-    9 | fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
-      |                ^^^^    ^^^^^^^     ^^^^^^^     ^^^
+    9 | fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
+      |                ^^^^    ^^^^^^^        ^^^^^^^        ^^^
 ```
 
 The help text says Rust can't tell whether the reference that's being returned refers to `x` or `y`. Neither can we. So the return type needs to be annotated with a generic lifetime parameter.
@@ -103,7 +104,7 @@ The borrow checker can't determine this either, because it doesn't know how the 
 Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can perform its analysis:
 
 ```rust
-fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
+fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
     if x.len() > y.len() {
         x
     } else {
@@ -112,7 +113,7 @@ fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-You can try this code at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=39c0e9eab0903d6b16f97e712709426a&azure-portal=true).
+You can try this code at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6a5bee8873e751122eaf382858131b0e&azure-portal=true).
 
 Generic lifetime parameters are annotated inside angle brackets between the function name and the parameter list. Because the constraint that we want to express in this signature is *that all the references in the parameters and the return value must have the same lifetime*, we use the same lifetime name: `'a`. We then add it to each reference in the function signature.
 
@@ -131,7 +132,7 @@ fn main() {
     println!("The longest magic word is {}", result);
 }
 
-fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
+fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
     if x.len() > y.len() {
         x
     } else {
@@ -140,7 +141,7 @@ fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-You'll find this snippet at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8624616d4aede430f4c74d168dcfba01&azure-portal=true).
+You'll find this snippet at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a101658b3d24132010cf274bd0d01039&azure-portal=true).
 
 If you guessed that this code is broken, you're right. This time, we see the following error:
 
@@ -199,8 +200,8 @@ In addition, `text` doesn't go out of scope until after `Highlight` goes out of 
 The code would print this message on the console:
 
 ```output
-    Highlight("quick brown fox")
-    Highlight("lazy dog")
+Highlight("quick brown fox")
+Highlight("lazy dog")
 ```
 
 As an experiment, try to move the value held by `text` out of the scope and see what kinds of complaints the borrow checker issues:

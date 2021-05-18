@@ -33,6 +33,8 @@ products:
 units:
 - learn.github.github-actions-automate-tasks.1-introduction
 - learn.github.github-actions-automate-tasks.2-github-actions-automate-development-tasks
+- learn.github.github-actions-automate-tasks.2b-identify-components-workflow
+- learn.github.github-actions-automate-tasks.2c-configure-github-actions-workflow
 - learn.github.github-actions-automate-tasks.3-exercise-create-container-action
 - learn.github.github-actions-automate-tasks.4-knowledge-check
 - learn.github.github-actions-automate-tasks.5-summary

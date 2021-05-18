@@ -1,4 +1,4 @@
-Most programming languages support including comments in source code. Comments do not change what the code does when it runs; they're ignored by the compiler or interpreter. Instead they're used to explain how the code works or why it was written. Comments are a great way to document complicated code and to include TODOs reminding you to come back and do something later — for example, "make sure this code works with empty strings."
+Most programming languages support including comments in source code. Comments do not change what the code does when it runs; they're ignored by the compiler or interpreter. Instead they're used to explain how the code works or why it was written. Comments are a great way to document complicated code and to include TODOs reminding you to come back and do something later. You could, for example,  create a comment saying, "make sure this code works with empty strings."
 
 Python supports comments using the pound sign (or hash) followed by the text of the comment:
 
@@ -18,4 +18,4 @@ text = "# But this isn't a comment because it's a string literal and in quotes."
 # that crosses multiple lines
 ```
 
-Some programmers avoid comments in favor of writing "self-documenting code," which is easy to understand as a result of descriptive variable and function names. There is nothing wrong with self-documenting code, but never hesitate to use comments in an effort to be as explicit as possible about your thoughts and intentions. The purpose of a block of code may be clear to you if you wrote it 10 minutes ago. But a year from now, a well-placed comment may be as helpful to you as it is to other programmers who are seeing your code for the first time.
+Some programmers avoid comments in favor of writing "self-documenting code," which is easy to understand as a result of descriptive variable and function names. There is nothing wrong with self-documenting code, but never hesitate to use comments to be as explicit as possible about your thoughts and intentions. The purpose of a block of code may be clear to you if you wrote it 10 minutes ago. But a year from now, a well-placed comment may be as helpful to you as it is to other programmers who are seeing your code for the first time.
