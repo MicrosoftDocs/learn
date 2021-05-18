@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   -	Prepare for implementing Azure App Service on Kubernetes with Azure Arc.
   -	Implement an Azure Kubernetes Service (AKS) cluster that supports Azure App Service on Kubernetes with Azure Arc.
-  -	Install the application services extension into an AKS cluster.
+  -	Install the Application services extension into an AKS cluster.
   -	Deploy Azure App Services web apps to an AKS cluster.
 prerequisites: |
   To get the best learning experience from this module, you should have:
@@ -47,7 +47,7 @@ units:
 - learn.configure-application-kubernetes-arc.3-set-up-cluster
 - learn.configure-application-kubernetes-arc.4-onboard-kubernetes-cluster-arc
 - learn.configure-application-kubernetes-arc.5-implement-azure-app-service
-- learn.configure-application-kubernetes-arc.6-manage-azure-app-service-kubernetes
+- learn.configure-application-kubernetes-arc.6-deploy-web-app-kubernetes
 - learn.configure-application-kubernetes-arc.7-knowledge-check
 - learn.configure-application-kubernetes-arc.8-summary
 badge:

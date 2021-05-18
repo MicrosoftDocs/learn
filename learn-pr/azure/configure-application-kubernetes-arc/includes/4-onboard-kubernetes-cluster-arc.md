@@ -1,9 +1,9 @@
-In this exercise, you'll connect to Azure Arc the AKS cluster you deployed in the previous exercise. You'll then prepare it for implementing the application services extension in this module's next exercise. The exercise consists of the following tasks:
+In this exercise, you'll connect to Azure Arc the AKS cluster you deployed in the previous exercise. You'll then prepare it for implementing the Application services extension in this module's next exercise. The exercise consists of the following tasks:
 
 1. Prepare for connecting the AKS cluster to Azure Arc.
 1. Connect the AKS cluster to Azure Arc.
 
-To support Azure App Service workloads, you must enroll the Kubernetes cluster in Azure Arc. This enables you to install and manage application services extensions, just like any other Azure Arc extension.
+To support Azure App Service workloads, you must enroll the Kubernetes cluster in Azure Arc. This enables you to install and manage Application services extensions, just like any other Azure Arc extension.
 
 > [!NOTE]
 > Azure Arc onboarding is a general requirement applicable to Kubernetes clusters. It's yet to be determined whether it applies to AKS clusters in future application services extension releases.
@@ -84,4 +84,4 @@ Use the following steps to connect the AKS cluster to Azure Arc:
 
 :::image type="content" source="../media/u4-arc-cluster-overview.png" alt-text="Screenshot that depicts the **Overview** blade of the Kubernetes-Azure Arc cluster." border="false":::
 
-Congratulations! You've completed the third exercise of this module. You've connected the AKS cluster that you previously deployed to Azure Arc and prepared it for installation of the application services extension in the next exercise.
+Congratulations! You've completed the third exercise of this module. You've connected the AKS cluster that you previously deployed to Azure Arc and prepared it for installation of the Application services extension in the next exercise.

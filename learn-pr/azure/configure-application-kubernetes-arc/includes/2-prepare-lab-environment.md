@@ -86,22 +86,21 @@ Use the following steps to install the Azure CLI extensions that are required to
     > [!NOTE]
     > Wait for the installation to complete. This should take about 1 minute.
 
-1. From the Bash session in the **Azure Cloud Shell** pane, run the following command to install the **appservice-kube** Azure CLI extension:
+1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands to ensure that you are using the latest version of the **appservice-kube** Azure CLI extension:
 
     ```azurecli-interactive
+    az extension remove -n appservice-kube
     az extension add --yes --source "https://aka.ms/appsvc/appservice_kube-latest-py2.py3-none-any.whl"
     ```
-    > [!NOTE]
-    > Ignore any messages stating that the appservice-kube extension already exists.
 
     > [!NOTE]
-    > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions):
+    > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions, but the actual versions might be higher):
     >
     >```json
     >Extensions:
     >customlocation                     0.1.2
     >connectedk8s                       1.1.3
-    >appservice-kube                    0.1.18
+    >appservice-kube                    0.1.20
     >```
 
 Congratulations! You completed the first exercise of this module. You've prepared your lab environment for implementation of Azure App Service on Kubernetes with Azure Arc.

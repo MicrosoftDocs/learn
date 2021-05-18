@@ -35,7 +35,7 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
-    K8S_CLUSTER_NAME=k8sAKS-cluster
+    K8S_CLUSTER_NAME=k8sAKS-c$RANDOM
     LOCATION=<azure_region>
     ```
 

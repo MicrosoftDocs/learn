@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: You plan to create an AKS cluster and configure it with the App Service extension. Which operating system can you use for worker nodes?
+  - content: You plan to create an AKS cluster and configure it with the Application services extension. Which operating system can you use for worker nodes?
     choices:
     - content: Linux only
       isCorrect: true
@@ -32,10 +32,10 @@ quiz:
     - content: Register an App Service Kubernetes environment.
       isCorrect: true
       explanation: An App Service Kubernetes environment must exist before you can create an App Service web app.
-    - content: Install the application services extension.
+    - content: Install the Application services extension.
       isCorrect: false
-      explanation: Installation of the application services extension needs to take place before you create a custom location.
-  - content: You created an AKS cluster and connected it to Azure Arc. You plan to install the application services extension. You need to identify which resource group to use to host the public IP address resource associated with the AKS cluster's load balancer. Which resource group should you use?
+      explanation: Installation of the Application services extension needs to take place before you create a custom location.
+  - content: You created an AKS cluster and connected it to Azure Arc. You plan to install the Application services extension. You need to identify which resource group to use to host the public IP address resource associated with the AKS cluster's load balancer. Which resource group should you use?
     choices:
     - content: the infrastructure group of the AKS cluster
       isCorrect: true
@@ -46,7 +46,7 @@ quiz:
     - content: the resource group that contains the Azure Arc resources
       isCorrect: false
       explanation: This resource group doesn't contain the cluster's load balancer resource. You must create the public IP address resource in the cluster's infrastructure resource group so it'll bind to the cluster's load balancer.
-  - content: You implemented the application services extension on your AKS cluster and created an App Service web app. Which method can you use for deploying your custom code to the web app?
+  - content: You implemented the Application services extension on your AKS cluster and created an App Service web app. Which method can you use for deploying your custom code to the web app?
     choices:
     - content: FTP publishing.
       isCorrect: false

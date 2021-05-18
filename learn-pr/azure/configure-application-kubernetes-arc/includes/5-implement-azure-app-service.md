@@ -2,7 +2,7 @@ In this exercise, you'll implement App Service on the Azure Arc enabled Kubernet
 
 1. Prepare for implementing App Service on the Azure Arc enabled Kubernetes cluster.
 1. Create an Azure Log Analytics workspace.
-1. Install the App Service extension on the Azure Arc enabled Kubernetes cluster.
+1. Install the Application services extension on the Azure Arc enabled Kubernetes cluster.
 1. Create a custom location for the Azure Arc enabled Kubernetes cluster.
 1. Register an App Service Kubernetes environment into the custom location.
 
@@ -19,7 +19,7 @@ This is the fourth in this module's sequence of exercises. These exercises guide
 
 ## Task 1: Prepare for implementing App Service on the Azure Arc enabled Kubernetes cluster
 
-There is information you must collect that's required for implementation steps in this unit, including installing the application services extension, creating a custom location, and setting up a Kubernetes environment.
+There is information you must collect that's required for implementation steps in this unit, including installing the Application services extension, creating a custom location, and setting up a Kubernetes environment.
 
 Use the following steps to collect the required information:
 
@@ -27,7 +27,7 @@ Use the following steps to collect the required information:
 
     ```azurecli-interactive
     K8S_CLUSTER_RG_NAME=k8sAKS-RG
-    K8S_CLUSTER_NAME=k8sAKS-cluster
+    K8S_CLUSTER_NAME=$(az aks list -g $K8S_CLUSTER_RG_NAME --query "[0].name" -o tsv)
     K8S_ARC_PREFIX=k8sArc
     ARC_RG_NAME="${K8S_ARC_PREFIX}-RG"
     ARC_CLUSTER_NAME="${K8S_ARC_PREFIX}-cluster" 
@@ -39,7 +39,7 @@ Use the following steps to collect the required information:
     K8S_PIP_NAME=k8sAKS-cluster-pip
     K8S_INFRA_RG_NAME=$(az aks show -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --query nodeResourceGroup -o tsv)
     az network public-ip create -g $K8S_INFRA_RG_NAME -n $K8S_PIP_NAME --sku STANDARD
-    K8S_PIP=$(az network public-ip show -g $K8S_INFRA_RG -n $K8S_PIP_NAME --query ipAddress -o tsv)
+    K8S_PIP=$(az network public-ip show -g $K8S_INFRA_RG_NAME -n $K8S_PIP_NAME --query ipAddress -o tsv)
     ```
 
     > [!IMPORTANT]
@@ -100,13 +100,13 @@ Use the following steps to create an Azure Log Analytics workspace:
     LA_WORKSPACE_KEY_ENC=$(echo -n "${LA_WORKSPACE_KEY_ENC_WITH_SPACE//[[:space:]]/}")
     ```
 
-## Task 3: Install the App Service extension on the Azure Arc enabled Kubernetes cluster
+## Task 3: Install the Application services extension on the Azure Arc enabled Kubernetes cluster
 
-Now you're ready to install the App Service extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc-enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
+Now you're ready to install the Application services extension. Cluster extensions provide an Azure Resource Manager-based functionality for installation and lifecycle management of Azure resources on Azure Arc-enabled Kubernetes clusters. A cluster-extension instance is an extension of the Azure Resource Manager resource (Microsoft.KubernetesConfiguration/extensions) that's on top of the Azure Arc-connected Kubernetes resource (represented by Microsoft.Kubernetes/connectedClusters).
 
-Use the following steps to install theApp Service extension on your Azure Arc-enabled Kubernetes cluster:
+Use the following steps to install the Application services extension on your Azure Arc-enabled Kubernetes cluster:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.KubernetesConfiguration resource provider. This enables you to create the application services extension in the region you selected for the resource group that hosts the Azure Arc-enabled services:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands to verify the registration state of the Microsoft.KubernetesConfiguration resource provider. This enables you to create the Application services extension in the region you selected for the resource group that hosts the Azure Arc-enabled services:
 
     ```azurecli-interactive
     az provider show -n Microsoft.KubernetesConfiguration --query "[registrationState,resourceTypes[?resourceType=='extensions'].locations]"
@@ -115,10 +115,10 @@ Use the following steps to install theApp Service extension on your Azure Arc-en
 1. Run the following command to install the extension, including support for Log Analytics:
 
     > [!IMPORTANT]
-    > Do you plan to use Log Analytics to store logs of App Service web apps that are hosted on an Azure Arc-enabled Kubernetes cluster? You must reference the workspace when installing the App Service cluster extension. There currently isn't support for implementing this functionality after the App Service cluster extension is installed.
+    > Do you plan to use Log Analytics to store logs of App Service web apps that are hosted on an Azure Arc-enabled Kubernetes cluster? You must reference the workspace when installing the Application services extension. There currently isn't support for implementing this functionality after the Application services extension is installed.
 
     ```azurecli-interactive
-    az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config" --configuration-settings "logProcessor.appLogs.destination=log-analytics" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.customerId=${LA_WORKSPACE_ID_ENC}" --configuration-settings "logProcessor.appLogs.logAnalyticsConfig.sharedKey=${LA_WORKSPACE_KEY_ENC}"
+    az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config" --configuration-settings "logProcessor.appLogs.destination=log-analytics" --configuration-protected-settings "logProcessor.appLogs.logAnalyticsConfig.customerId=${LA_WORKSPACE_ID_ENC}" --configuration-protected-settings "logProcessor.appLogs.logAnalyticsConfig.sharedKey=${LA_WORKSPACE_KEY_ENC}"
     ```
 
     > [!NOTE]
@@ -215,4 +215,4 @@ Use the following steps to create an App Service Kubernetes environment:
     > [!NOTE]
     > Rerun the command until the value of the **provisioningState** property changes to **InfrastructureSetupComplete** 
 
-Congratulations! You've completed the fourth exercise of this module. You've implemented the application services extension on your Azure Arc-enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.
+Congratulations! You've completed the fourth exercise of this module. You've implemented the Application services extension on your Azure Arc-enabled Kubernetes cluster. This prepares it for deployment of an App Service web app in the next exercise.
