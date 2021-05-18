@@ -73,8 +73,8 @@ You can modify the stripe size based on the application type and requirements. A
 Applications that use multithreading improve the IOPS and throughput limits. A multithreaded application provides the benefit of multiple parallel jobs that multiple CPUs and multiple-core VMs can handle.
 
 > [!Note]
-> Remember that you can't modify how the application implements single threading or multithreading. You can still tune how multithreading alters the performance of the application. For example, you can configure the maximum number of processors that the application uses for parallel processing.
-<!--LM: Does "you can still tune how..." make sense as written?-->
+> Remember that you can't modify how the application implements single threading or multithreading. You can still configure how multithreading alters the performance of the application. For example, you can configure the maximum number of processors that the application uses for parallel processing.
+
 ### Queue depth
 
 The number of pending I/O requests in the system, known as queue depth, affects the performance indicators of your application.
