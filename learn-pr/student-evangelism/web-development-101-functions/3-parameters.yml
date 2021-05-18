@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-functions.3-parameters
+title: Function parameters
+metadata:
+  title: Function parameters
+  description: Parameters allow you to pass values into a function to make it more
+    reusable. We'll explore how to add parameters and use default values.
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.date: 05/18/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-parameters.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-functions.2-overview-functions
+title: Unit
+metadata:
+  title: Overview of functions
+  description: We start by exploring what a function is, and how to create your
+    first function in JavaScript.
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.date: 05/18/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-overview-functions.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-functions.6-anonymous-functions
+title: Anonymous functions
+metadata:
+  title: Anonymous functions
+  description: You may find yourself passing functions as parameters to other functions. To help streamline this process you can create a function without a name - an anonymous function. You will see how to create an anonymous function.
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-anonymous-functions.md)]

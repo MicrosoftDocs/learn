@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-functions.5-exercise-create-function
+title: Exercise - create function
+metadata:
+  title: Exercise - create function
+  description: You will create your first function in JavaScript.
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-create-function.md)]
