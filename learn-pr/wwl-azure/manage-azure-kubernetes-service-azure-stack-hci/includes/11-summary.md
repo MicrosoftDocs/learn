@@ -13,13 +13,13 @@ Using what you have learned, you determined that you can facilitate deployment o
 
 To learn more, go through the following documents:
 
-- [Clusters and workloads for Azure Kubernetes Service on Azure Stack HCI](https://docs.microsoft.com/azure-stack/aks-hci/kubernetes-concepts)
-- [What is Azure Kubernetes Service on Azure Stack HCI?](https://docs.microsoft.com/azure-stack/aks-hci/overview)
-- [Quickstart: Set up Azure Kubernetes Service on Azure Stack HCI using Windows Admin Center](https://docs.microsoft.com/azure-stack/aks-hci/setup)
-- [Quickstart: Create a Kubernetes cluster on Azure Stack HCI using Windows Admin Center](https://docs.microsoft.com/azure-stack/aks-hci/create-kubernetes-cluster)
-- [Connect an Azure Kubernetes Service on Azure Stack HCI cluster to Azure Arc for Kubernetes](https://docs.microsoft.com/azure-stack/aks-hci/connect-to-arc)
-- [Adapt apps for mixed-OS Kubernetes Clusters using node selectors or taints and tolerations](https://docs.microsoft.com/azure-stack/aks-hci/adapt-apps-mixed-os-clusters)
-- [Deploy Windows applications in Azure Kubernetes Service on Azure Stack HCI](https://docs.microsoft.com/azure-stack/aks-hci/deploy-windows-application)
-- [Configure group Managed Service Account with AKS on Azure Stack HCI](https://docs.microsoft.com/azure-stack/aks-hci/prepare-windows-nodes-gmsa)
-- [Use persistent volume in an AKS on Azure Stack HCI cluster](https://docs.microsoft.com/azure-stack/aks-hci/persistent-volume)
-- [AKS on Azure Stack HCI troubleshooting](https://docs.microsoft.com/azure-stack/aks-hci/troubleshoot)
+- [Clusters and workloads for Azure Kubernetes Service on Azure Stack HCI](/azure-stack/aks-hci/kubernetes-concepts)
+- [What is Azure Kubernetes Service on Azure Stack HCI?](/azure-stack/aks-hci/overview)
+- [Quickstart: Set up Azure Kubernetes Service on Azure Stack HCI using Windows Admin Center](/azure-stack/aks-hci/setup)
+- [Quickstart: Create a Kubernetes cluster on Azure Stack HCI using Windows Admin Center](/azure-stack/aks-hci/create-kubernetes-cluster)
+- [Connect an Azure Kubernetes Service on Azure Stack HCI cluster to Azure Arc for Kubernetes](/azure-stack/aks-hci/connect-to-arc)
+- [Adapt apps for mixed-OS Kubernetes Clusters using node selectors or taints and tolerations](/azure-stack/aks-hci/adapt-apps-mixed-os-clusters)
+- [Deploy Windows applications in Azure Kubernetes Service on Azure Stack HCI](/azure-stack/aks-hci/deploy-windows-application)
+- [Configure group Managed Service Account with AKS on Azure Stack HCI](/azure-stack/aks-hci/prepare-windows-nodes-gmsa)
+- [Use persistent volume in an AKS on Azure Stack HCI cluster](/azure-stack/aks-hci/persistent-volume)
+- [AKS on Azure Stack HCI troubleshooting](/azure-stack/aks-hci/troubleshoot)

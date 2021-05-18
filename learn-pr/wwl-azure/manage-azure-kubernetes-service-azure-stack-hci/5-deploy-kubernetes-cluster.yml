@@ -4,7 +4,7 @@ title: Deploy a Kubernetes cluster to Azure Stack HCI
 metadata:
   title: Deploy a Kubernetes cluster to Azure Stack HCI
   description: "Deploy a Kubernetes cluster to Azure Stack HCI"
-  ms.date: 05/17/2021
+  ms.date: 05/18/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
