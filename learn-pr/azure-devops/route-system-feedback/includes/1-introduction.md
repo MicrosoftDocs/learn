@@ -20,12 +20,12 @@ The modules in this learning path and previous learning paths form a progression
 
 You can take just this module, but if you want to follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
-* [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true)
-* [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/?azure-portal=true)
+* [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+* [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
+* [Automate your deployments with Azure DevOps](../../../paths/automate-deployments-azure-devops/index.yml?azure-portal=true)
 
-We also recommend that you start at the beginning of the [Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring?azure-portal=true) learning path.
+We also recommend that you start at the beginning of the [Capture feedback and monitoring data to continuously improve your software](../../../paths/capture-feedback-monitoring/index.yml?azure-portal=true) learning path.
 
 ## Meet the team
 
