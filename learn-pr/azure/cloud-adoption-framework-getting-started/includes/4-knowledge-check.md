@@ -4,7 +4,7 @@ The Cloud Adoption Framework spans the entire cloud adoption lifecycle. Througho
 
 But when you're dealing with an adoption blocker, there isn't time to mature along all of those potential roles and methodologies. The framework's getting-started guides pull out the actionable tasks and deliverables from each relevant methodology to help a smaller team deliver results faster.
 
-The guides organize blockers into the following categories on the [getting-started page](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/?azure-portal=true):
+The guides organize blockers into the following categories on the [getting-started page](/azure/cloud-adoption-framework/get-started/?azure-portal=true):
 
 - **Establish teams:** Depending on your adoption strategy and operating model, you might need to establish a few teams. These guides help you get those new teams started or redistribute duties if a dedicated team isn't needed.
 - **Improve controls:** As adoption of the cloud grows, you need a solid operating model to ensure wise decisions and proper organizational change. Align people and improve operations to develop your cloud operating model.

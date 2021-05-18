@@ -60,10 +60,9 @@ Now update the HTML to include the image. You'll set the attributes and style by
 ## Test the results
 
 1. Save all files.
-1. In the browser, you should now see the image displayed on the page. If you don't see it, refresh the page. 
+1. In the browser, you should now see the image displayed on the page. If you don't see it, refresh the page.
 
     :::image type="content" source="../media/attribute-binding.png" alt-text="Screenshot of the updated page showing the image of the cruise.":::
-    
 
 1. Right-click the image and then select **Inspect** or **Inspect source**. Notice the developer tools in the browser and the HTML. In the HTML, notice that both `src` and `alt` are set to the values from the Vue data.
 
@@ -73,6 +72,6 @@ Now update the HTML to include the image. You'll set the attributes and style by
 
 ## Explore the options
 
-You now have a fully functional Vue.js application. If you change some of the values and properties, you can see the changes reflected on your page. 
+You now have a fully functional Vue.js application. If you change some of the values and properties, you can see the changes reflected on your page.
 
 Feel free to change the styles and classes to the CSS file. Also explore the available binding options.
