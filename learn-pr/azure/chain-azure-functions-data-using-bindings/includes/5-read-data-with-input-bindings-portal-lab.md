@@ -4,7 +4,7 @@ Imagine that you want to create a simple bookmark lookup service. Your service i
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
-When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid. If not, an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database. If it isn't present, an error response is generated. If the bookmark ID is found, a success response is generated.
+When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid; if not, an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database. If it isn't present, an error response is generated. If the bookmark ID is found, a success response is generated.
 
 You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks, like opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
@@ -19,7 +19,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Create Azure Cosmos DB Account** pane appears.
 
@@ -99,7 +99,7 @@ You'll add data to the new container using Data Explorer.
     | `_attachments` | Addressable path for the attachments resource. |
     | `_ts` | Timestamp of the last update of this resource. |
 
-1. To add a few more items into the container, from the top menu bar, select **New Item**. Create four more items with the following content. Remember to save your work after each entry.
+1. To add a few more items into the container, from the top menu bar, select **New Item**. Create four more items with the following content. Do this by selecting **New Item**, and then selecting **Save** after copying and pasting each new item.
 
     ```json
     {
@@ -161,7 +161,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. To create your function, select **Add**. The **HttpTrigger2** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *run.ps1* file in the code editor.
+1. To create your function, select **Add**. The **HttpTrigger*x*** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *run.ps1* file in the code editor.
 
 ::: zone-end
 
@@ -169,7 +169,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 You can verify what we have done so far by testing our new function as follows:
 
-1. In your new function, at the top right, select **Get Function Url**, select **default (function key)**, and then select the *Copy to clipboard* icon at the end of the URL.
+1. In your new function, at the top right, select **Get Function Url**, select **default (function key)**, then select the *Copy to clipboard* icon at the end of the URL, and select **OK**..
 
 1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` (remember to replace <your function name> with the name of your function) to the end of the URL, and press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
 

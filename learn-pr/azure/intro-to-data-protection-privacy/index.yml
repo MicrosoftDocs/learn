@@ -3,7 +3,7 @@ uid: learn.azure.introduction-data-protection-privacy
 metadata:
   title: Intro to data protection and privacy regulations
   description: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
-  ms.date: 03/24/2021
+  ms.date: 05/13/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Basic experience of data protection
   - Basic experience with security technologies
   - Basic experience with Azure services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-data-protection-privacy.svg
 levels:
 - beginner
 roles:

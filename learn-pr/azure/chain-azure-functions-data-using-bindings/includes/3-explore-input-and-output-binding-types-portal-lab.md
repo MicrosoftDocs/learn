@@ -22,7 +22,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
@@ -53,7 +53,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
 
     >[!TIP]
-    >If you are having trouble finding your function app in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+    >If you are having trouble finding your function app in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
 
     >[!TIP]
-    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 
@@ -108,11 +108,11 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown as _Function_, and then select **Add**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.The **HttpTrigger1** pane appears.
+1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown as _Function_, and then select **Add**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.The **HttpTrigger*x*** pane appears.
 
 1. In your new function, in the top menu bar, select **Get Function Url**.
 
-1. In the **Get Function Url** dialog box, select **default (function key)**, and then select the *Copy to clipboard* icon at the end of the URL.
+1. In the **Get Function Url** dialog box, select **default (function key)**, then select the *Copy to clipboard* icon at the end of the URL, and select **OK**.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
@@ -131,7 +131,7 @@ Now that we have a function app, it's time to create a function. A function is a
     Let's look briefly at the function's other file - the **function.json** config file. Access this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
 
     >[!TIP]
-    > You can view the additional code by selecting the dropdown in the middle of the **Code + Test** screen.
+    > You can view the additional code by selecting the dropdown list in the middle of the **Code + Test** screen.
 
     ```json
     {
@@ -237,10 +237,10 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
     Take a moment to consider each of these input bindings, and how you might use them in a solution. There are many selections to choose from.
 
-1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this list.
+1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this pane.
 
 1. Select **Add output** in the **Outputs** box. The **Create Output** pane appears showing a list of all possible output **Binding Types** when selecting the dropdown list.
 
-1. As you can see, there are several output binding types. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this list.
+1. As you can see, there are several output binding types. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this pane.
 
 So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action, one that runs when an HTTP request is made to it. We've also explored the Azure portal and types of input and output binding that are available to our functions. In the next unit, we'll use an input binding to read text from a database.
