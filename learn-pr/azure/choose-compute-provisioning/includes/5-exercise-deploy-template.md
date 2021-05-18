@@ -77,7 +77,7 @@ The State Configuration is defined in the *Webserver.ps1* file, which includes t
 
 The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it.
 
-1. In Cloud Shell, use this command to open the template:
+1. In Cloud Shell, run this command to open the template:
 
     ```bash
     code template.json
@@ -120,7 +120,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, validate your files to see if the deployment will be successful.
 
-1. In Cloud Shell, run the following command to validate your deployment. When prompted for a password, enter a complex password of your choice.
+1. In Cloud Shell, run this command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
     az deployment group validate \
