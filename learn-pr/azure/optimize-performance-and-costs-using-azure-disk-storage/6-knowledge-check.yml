@@ -24,13 +24,13 @@ quiz:
       explanation: "Standard HDDs are a cost-effective solution, but they don't perform as well as Premium SSDs or Ultra Disks."
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Premium SSDs provide high performance, but do not offer the best performance of all the available disk types in Azure."
+      explanation: "Premium SSDs provide high performance, but don't offer the best performance of all the available disk types in Azure."
  
-  - content: "An administrator requires a disk storage solution for a SQL server that is running in Azure VM to support a minimum of 1100 IOPS at all times. How would this requirement impact the disk type the administrator selects?"
+  - content: "An administrator requires a disk storage solution for a SQL server that's running in Azure VM to support a minimum of 1100 IOPS at all times. How would this requirement impact the disk type the administrator selects?"
     choices:
     - content: "Enable read and write caching on a Standard SSD disk."
       isCorrect: false
-      explanation: "Although caching generally improves the IOPS performance, it does not guarantee the minimum IOPS value that the administrator requires."
+      explanation: "Although caching generally improves the IOPS performance, it doesn't guarantee the minimum IOPS value that the administrator requires."
     - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
       explanation: "Standard SSDs and Standard HDDs don't guarantee an IOPS value."
@@ -48,6 +48,6 @@ quiz:
       explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
     - content: "Use read/write caching on the disk."
       isCorrect: false
-      explanation: "Although caching generally improves the IOPS performance, it cannot be used in scenarios when you need to change the performance tier for the disk."
+      explanation: "Although caching generally improves the IOPS performance, it can't be used in scenarios when you need to change the performance tier for the disk."
 content: |
   [!include[](includes/6-knowledge-check.md)]
