@@ -35,5 +35,5 @@ In this module, you created resources by using your Azure subscription. The foll
 
 ## Learn more
 
-- [Scalability concepts](https://docs.microsoft.com/azure/aks/concepts-scale)
+- [Scalability concepts](/azure/aks/concepts-scale)
 - [HPA official docs](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)

@@ -380,7 +380,7 @@ Add a variable group and variables to the pipeline.
     git commit -m "Add provisioning template"
     ```
 
-1. In the code editor, open *azure-pipelines.yml*. This is the same file that you used in the [Manage database changes in Azure Pipelines](https://docs.microsoft.com/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module. Replace the code in that file with this:
+1. In the code editor, open *azure-pipelines.yml*. This is the same file that you used in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module. Replace the code in that file with this:
 
     [!code-yml[](code/5-azure-pipelines.yml?highlight=97-119,135-139,214-218,280-284,293-299)]
 
@@ -433,7 +433,7 @@ Add a variable group and variables to the pipeline.
 
 ### Create an environment for manual approval
 
-Create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in [Create a multistage pipeline with Azure Pipelines](https://docs.microsoft.com/learn/modules/create-multi-stage-pipeline/index?azure-portal=true). Recall that you need to set up an environment and add an approver.
+Create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in [Create a multistage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline/index?azure-portal=true). Recall that you need to set up an environment and add an approver.
 
 1. From Azure Pipelines, select **Environments**.
 1. Select **Create environment**.

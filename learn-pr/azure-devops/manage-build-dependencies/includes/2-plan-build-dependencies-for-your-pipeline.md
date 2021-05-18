@@ -66,7 +66,7 @@ Here are popular hosting services for the package types we just described:
 * **Chocolatey**: [chocolatey.org](https://chocolatey.org?azure-portal=true)
 * **RubyGems**: [rubygems.org](https://rubygems.org?azure-portal=true)
 
-A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](https://docs.microsoft.com/nuget/hosting-packages/overview?azure-portal=true) by using hosting products, such as Azure Artifacts and MyGet. You can also host packages on a file share.
+A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products, such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
 When you host packages behind the firewall, you can include feeds to your own packages. You can also cache packages that you trust on your network when your systems can't connect to the internet.
 

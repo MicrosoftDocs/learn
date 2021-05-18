@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes-cluster-to
+title: Deploy a Kubernetes cluster to Azure Stack HCI
+metadata:
+  title: Deploy a Kubernetes cluster to Azure Stack HCI
+  description: "Deploy a Kubernetes cluster to Azure Stack HCI"
+  ms.date: 05/18/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-deploy-kubernetes-cluster.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You are documenting the procedure of creating a Kubernetes cluster for Contoso's IT operation team that will be performing similar installations on many Azure Stack HCI clusters. You need to describe the step to configure the size of the VMs used to host the control plane components of the Kubernetes cluster. Which of the following is that step?"
+    choices:
+    - content: "Node pools"
+      isCorrect: false
+      explanation: "Incorrect. During this step, specify Windows and Linux worker node pools that should be provisioned as part of the Kubernetes cluster setup."
+    - content: "Basics"
+      isCorrect: true
+      explanation: "Correct. During this step, specify the size of the VMs used to host the control plane components."
+    - content: "Integration"
+      isCorrect: false
+      explanation: "Incorrect. During this step, Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads."
