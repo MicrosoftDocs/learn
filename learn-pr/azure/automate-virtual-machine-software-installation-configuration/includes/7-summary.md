@@ -16,20 +16,20 @@ az group delete --name my-resource-group-name
 
 Here's where you can learn more about what you've done today:
 
-- [Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/)
-- [Tutorial – Deploy applications to a Windows virtual machine in Azure with the Custom Script Extension](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-automate-vm-deployment)
-- [Create a Linux virtual machine in Azure](https://docs.microsoft.com/learn/modules/create-linux-virtual-machine-in-azure/)
-- [Create a Windows virtual machine in Azure](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/)
-- [Manage virtual machines with the Azure CLI](https://docs.microsoft.com/learn/modules/manage-virtual-machines-with-azure-cli/)
-- [Create, change, or delete a public IP address](https://docs.microsoft.com/azure/virtual-network/virtual-network-public-ip-address)
-- [Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/)
-- [Network security groups](https://docs.microsoft.com/azure/virtual-network/security-overview)
-- [Create and deploy highly available virtual machines with Azure PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)
+- [Windows virtual machines in Azure](/azure/virtual-machines/windows/)
+- [Tutorial – Deploy applications to a Windows virtual machine in Azure with the Custom Script Extension](/azure/virtual-machines/windows/tutorial-automate-vm-deployment)
+- [Create a Linux virtual machine in Azure](/learn/modules/create-linux-virtual-machine-in-azure/)
+- [Create a Windows virtual machine in Azure](/learn/modules/create-windows-virtual-machine-in-azure/)
+- [Manage virtual machines with the Azure CLI](/learn/modules/manage-virtual-machines-with-azure-cli/)
+- [Create, change, or delete a public IP address](/azure/virtual-network/virtual-network-public-ip-address)
+- [Virtual Network documentation](/azure/virtual-network/)
+- [Network security groups](/azure/virtual-network/security-overview)
+- [Create and deploy highly available virtual machines with Azure PowerShell](/azure/virtual-machines/windows/tutorial-availability-sets)
 - [Cloud-init Documentation](https://cloudinit.readthedocs.io/)
 
 As an alternative to creating your virtual machines and automating the installation and configuration of your business components, you might consider creating virtual machines using Azure Resource Manager (ARM) templates. ARM templates a quick way to deploy the infrastructure that you need with a single Azure CLI or PowerShell command. You can create templates in two ways: you can create a template from an existing Azure deployment, or you can use a pre-built template from the Azure Quickstart Template gallery. For more information, see the following resources:
 
 - [Azure Quickstart Templates gallery](https://azure.microsoft.com/resources/templates/)
-- [Build Azure Resource Manager templates](https://docs.microsoft.com/learn/modules/build-azure-vm-templates/)
-- [Create a Windows virtual machine from a Resource Manager template](https://docs.microsoft.com/azure/virtual-machines/windows/ps-template)
-- [Virtual machines in an Azure Resource Manager template](https://docs.microsoft.com/azure/virtual-machines/windows/template-description)
+- [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/)
+- [Create a Windows virtual machine from a Resource Manager template](/azure/virtual-machines/windows/ps-template)
+- [Virtual machines in an Azure Resource Manager template](/azure/virtual-machines/windows/template-description)

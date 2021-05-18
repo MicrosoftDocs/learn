@@ -8,7 +8,7 @@
      "resources": [
          {
            "type": "Microsoft.Resources/deploymentScripts",
-           "apiVersion": "2019-10-01-preview",
+           "apiVersion": "2020-10-01",
            "name": "myFirstDeploymentScript",
            "location": "[resourceGroup().location]",
            "kind": "AzurePowerShell",
@@ -19,7 +19,7 @@
              }
            },
            "properties": {
-              "arguments": "-name Learner",
+              "arguments": "-Name Learner",
               "environmentVariables:":[
                   {
                     "name": "Subject",
