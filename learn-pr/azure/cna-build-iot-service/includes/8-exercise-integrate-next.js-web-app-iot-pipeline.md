@@ -169,14 +169,8 @@ In this task, you'll configure a sample Next.js application that retrieves data 
    cat ./config.js
    ```
 
-1. From the Bash session in the Cloud Shell pane, run the following command to install the dependencies based on the content of the **package.json** file:
-
-   ```bash
-   npm install
-   ```
-
 > [!NOTE]
-> At this point, you should also run **npm run build**. Unfortunately, due to versioning issues, this is not directly available in Azure Cloud Shell. You'll remediate this by running the build following the deployment.
+> At this point, you should be able to install the dependency packages and build the application. Due to versioning issues, you'll not be able to run the build in Azure Cloud Shell, but instead you'll perform this task following the deployment.
 
 ## Deploy an Azure web app hosting the Next.js application
 

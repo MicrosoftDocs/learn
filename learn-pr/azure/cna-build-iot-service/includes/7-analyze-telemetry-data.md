@@ -21,7 +21,7 @@ For cold data path, you have the option of exporting data in regular intervals t
 - A Power BI solution 
 
 > [!NOTE]
-> The Power BI solution enables you to process, transform, and visualize the data. Power BI enables the creation of models, Key Performance Indicators (KPIs), and their visualization through interactive dashboards.<!--Marcin, please review these edits, if they're OK.-->
+> The Power BI solution enables you to process, transform, and visualize the data. Power BI enables the creation of models, Key Performance Indicators (KPIs), and their visualization through interactive dashboards.
 
 ## What are the analytics capabilities of Azure Time Series Insights?
 

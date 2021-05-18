@@ -4,7 +4,7 @@
 
 The term *Internet of Things (IoT)* represents a network of interconnected devices involved in generating, processing, or storing sensor-generated telemetry. At a high level, an IoT solution consists of two primary groups of components:
 
-- Device-side. This group comprises of devices that serve primarily as sources of telemetry but might also perform some of <!--Marcin, it's unclear what "its" refers to here - could we clarify?-->its initial processing and analytics.
+- Device-side. This group comprises of devices that serve primarily as sources of telemetry but might also perform some of initial telemetry processing and analytics.
 - Cloud-side. This group comprises of cloud-based services that are optimized for data collection, persistence, and analytics.
 
 Another approach to the IoT services architecture divides it into Things, Insights, and Actions. Things represent IoT devices generating telemetry that, through Insights-based analysis, is turned into Actions, which deliver meaningful business benefits. As an example, consider a sensor of a smart refrigerator (the thing), which sends temperature data. That data serves as the basis of evaluation whether the refrigerator is fully operational (the insight). The insight, in turn, can trigger an alert that leads to an updated maintenance schedule (the action).

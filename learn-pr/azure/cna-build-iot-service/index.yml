@@ -2,7 +2,7 @@
 uid: learn.azure.build-iot-service
 metadata:
   title: Build an IoT service
-  description: This module describes <!--Marcin, could you please fill this in?-->.
+  description: This module describes how to build an IoT service.
   ms.date: 04/29/2021
   author: mpolicht
   ms.author: jasdeb
