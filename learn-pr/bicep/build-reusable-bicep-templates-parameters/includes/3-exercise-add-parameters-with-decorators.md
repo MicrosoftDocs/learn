@@ -11,7 +11,11 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Create a Bicep template with parameters
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save**, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file. For example, you might want to create a *scripts* folder to save it in.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save**, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content into the file. You'll deploy the template soon. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
@@ -64,17 +68,21 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 ### Limit numeric values
 
-Ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
+Next, you'll ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
    :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
-   After you've completed all of the preceding changes, your Bicep file should look like this example:
-
-   :::code language="bicep" source="code/3-template.bicep" :::
-
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
+
+:::code language="bicep" source="code/3-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
 
@@ -92,25 +100,6 @@ az deployment group create --template-file main.bicep
 
 You'll see ```Running...``` in the terminal.
 
-### Verify the deployment by using the Azure CLI
-
-To help validate that the deployment succeeded, run the following `az webapp list` command to show the host name for your App Service app:
-
-```azurecli
-az webapp list \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --query "[].defaultHostName" \
-  --output tsv
-```
-
-Your output resembles this:
-
-```output
-dev-toyhr2cyy7btygkgxi-app.azurewebsites.net
-```
-
-As an optional step, navigate to your hostname from a new browser tab to see the running app.
-
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -125,22 +114,37 @@ Deploy the template to Azure by using the following Azure PowerShell command in 
 New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
-### Verify the deployment by using PowerShell
-
-To help validate that the deployment succeeded, run the following `Get-AzWebApp` command to show the host name for your App Service app:
-
-```azurepowershell
-Get-AzWebApp -ResourceGroupName "<rgn>[sandbox resource group name]</rgn>" | Select-Object DefaultHostName
-```
-
-Your output resembles this:
-
-```output
-DefaultHostName
----------------
-dev-toyhr2cyy7btygkgxi-app.azurewebsites.net
-```
-
-As an optional step, navigate to your hostname from a new browser tab to see the running app.
-
 ::: zone-end
+
+## Verify your deployment
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
+
+   1. Select your avatar in the upper-right corner of the page. 
+   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+
+1. On the left-side panel, select **Resource groups**.
+
+1. Select **<rgn>[sandbox resource group name]</rgn>**.
+
+1. In **Overview**, you can see that one deployment succeeded.
+
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
+
+1. Select **1 Succeeded** to see the details of the deployment.
+
+    :::image type="content" source="../media/3-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
+
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and app.
+
+    :::image type="content" source="../media/3-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with an App Service plan and app listed." border="true":::
+
+1. On the left menu, select **Inputs**.
+
+    :::image type="content" source="../media/3-menu-inputs.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the 'Inputs' menu item highlighted." border="true":::
+
+1. Notice that the parameters and their values are listed.
+
+    :::image type="content" source="../media/3-deployment-parameters.png" alt-text="Screenshot of the Azure portal interface for the specific deployment showing the parameter values." border="true":::
+
+1. Leave the page open in your browser. You'll check on deployments again later.

@@ -58,7 +58,7 @@ When you create a new deployment by using the `az group deployment create` comma
 
 ::: zone pivot="powershell"
 
-When you create a new deployment by using the `New-AzResourceGroupDeployment` cmdlet, you can specify the name of the parameter file you want to use with the `--TemplateParameterFile` argument:
+When you create a new deployment by using the `New-AzResourceGroupDeployment` cmdlet, you can specify the name of the parameter file you want to use with the `-TemplateParameterFile` argument:
 
 :::code language="azurepowershell" source="code/4-deployment.ps1" highlight="3":::
 
@@ -121,7 +121,7 @@ When you create the deployment, you override one of the parameter values. You sp
 
 Let's look at what the values will be.
 
-| Parameter | Value | Reason |
+| Parameter | Value | Explanation |
 |-|-|-|
 | `location` | The resource group's location. | The Bicep file specifies this parameter as a default value, and it's not overridden. |
 | `appServicePlanSku` | An object with a `name` property set to `P1v3` and a `tier` of `PremiumV3`. | The default value in the Bicep file is overridden by the parameter file. |

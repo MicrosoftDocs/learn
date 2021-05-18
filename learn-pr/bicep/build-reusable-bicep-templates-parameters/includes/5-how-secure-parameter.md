@@ -5,9 +5,9 @@ Sometimes you need to pass sensitive values into your deployments, like password
 
 ## Define secure parameters
 
-The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively by using the Azure CLI or Azure PowerShell and you need to enter the values interactively during the deployment, the terminal won't display the text on your screen.
+The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively by using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal won't display the text on your screen.
 
-As part of the HR application migration, you need to deploy an Azure SQL server and database. You'll provision the server with an administrator login and password. Because they're so sensitive, you need these values to be secured. Here's an example declaration to create two string parameters for the SQL server's administrator details:
+As part of the HR application migration, you need to deploy an Azure SQL logical server and database. You'll provision the logical server with an administrator login and password. Because they're sensitive, you need these values to be secured. Here's an example declaration to create two string parameters for the SQL server's administrator details:
 
 ```bicep
 @secure()
@@ -17,7 +17,7 @@ param sqlServerAdministratorLogin string
 param sqlServerAdministratorPassword string
 ```
 
-Notice that neither parameter has a default value specified. It's a good practice not to specify a default value for usernames, passwords, and other secrets. Otherwise, if someone deploys your template and doesn't realize they should override the value, they'll weaken their security because they'll get a default value instead of something they've chosen themselves.
+Notice that neither parameter has a default value specified. It's a good practice to avoid specifying default values for usernames, passwords, and other secrets. Otherwise, if someone deploys your template and doesn't realize they should override the value, they'll weaken their security because they'll get the default value instead of something they've chosen themselves.
 
 > [!TIP]
 > Make sure you don't create outputs for sensitive data. Output values can be accessed by anyone who has access to the deployment history. They're not appropriate for handling secrets.
@@ -37,7 +37,7 @@ You can use this feature by referring to the key vault and secret in your parame
 
 :::image type="content" source="../media/5-parameter-file-key-vault.png" alt-text="Diagram that shows a parameter file reference Azure Key Vault and pass secret to Bicep template to deploy Azure resources." border="false":::
 
-Here's a parameter file that uses Key Vault references to look up the SQL server administrator login and password to use:
+Here's a parameter file that uses Key Vault references to look up the SQL logical server administrator login and password to use:
 
 :::code language="json" source="code/5-key-vault-parameters.json" highlight="6-11,14-19":::
 
