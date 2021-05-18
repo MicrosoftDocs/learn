@@ -8,7 +8,7 @@ Text-to-speech converts text into human-sounding speech using Artificial Intelli
 
 For example, if Text-to-speech was used in an airport for flight information, neural voice could potentially reduce the number of missed announcements because of the ability to add emphasis and inflections. Meaning that you can add more or less stress for different announcements depending on their purpose, which can help minimize passengers automatically tuning out important messages and reduce listening fatigue for workers.
 
-**Custom neural voice** uses your own audio data to create a one-of-a-kind customized synthetic voice. Custom neural voice has the deepest level of voice personalization, with realistic speech that can be used to represent brands, personify machines, and allow users to interact with applications conversationally. For example, AT&T’s immersive experience allows their customers to interact with Bugs Bunny and other Looney Tunes characters in real-time.
+**Custom neural voice** uses your own audio data to create a one-of-a-kind customized synthetic voice. Custom neural voice has the deepest level of voice personalization, with realistic speech that can be used to represent brands, personify machines, and allow users to interact with applications conversationally.
 
 > [!NOTE]
 > **What if it’s a long body of text?**

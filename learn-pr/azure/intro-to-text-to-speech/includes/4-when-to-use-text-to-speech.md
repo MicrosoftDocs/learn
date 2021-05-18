@@ -1,6 +1,6 @@
 With the rising awareness around the importance of accessibility, Text-to-speech is becoming more popular as it helps you reach a wider audience by overcoming the traditional limitations of written text. Further, Text-to-speech is increasingly being used in business-customer interactions through devices like phones, smart speakers, TVs, laptops, and cars to improve customers experience.
 
-## Assistive Technology
+## Assistive technology
 
 **Neural voice** provides clear, natural sounding speech, with the ability to adjust pitch, tone, rhythm, and speaking styles. This customization means individuals can find the sound that best suits their character or preferred gender presentation. Overall resulting in individuals being able to find their voice and make it their own.
 
@@ -22,4 +22,4 @@ By leveraging the **Long audio API** and **neural** or **custom voices**, author
 
 ## Customer service chatbots
 
-Conversational AI chatbots can automate some call center operations, with Text-to-speech providing human-sounding voices that you can tailor to more friendly and conversational tones. These speech options reduce friction when customers are interacting with AI services as shown by organizations, such as the BBC and Progressive Insurance, which have had success creating one-of-a-kind voices using custom neural voice.
+Conversational AI chatbots can automate some call center operations, with Text-to-speech providing human-sounding voices that you can tailor to more friendly and conversational tones. These speech options reduce friction when customers are interacting with AI services.
