@@ -18,6 +18,8 @@ In the cloud shell copy and paste the following commands. These commands will cl
     dotnet run --load-data
     ```
 
+## Querying for the product category name
+
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Azure portal menu, or from the **Home** page, select **Azure Cosmos DB**.
 1. Select the Cosmos DB account with the name that starts with, **cosmicworks**
@@ -33,11 +35,13 @@ In the cloud shell copy and paste the following commands. These commands will cl
 
 1. Looking at the results we can see this query returns the name of the product category, *Component, Headsets*, which will be displayed on the page returned to the user.
 
-:::image type="content" source="../media/3-product-category-results.png" alt-text="product category results":::
+    :::image type="content" source="../media/3-product-category-results.png" alt-text="product category results":::
 
 1. Next click on **Query Stats** and note the request charge of 2.93 RUs.
 
-:::image type="content" source="../media/3-product-category-stats.png" alt-text="product category stats":::
+    :::image type="content" source="../media/3-product-category-stats.png" alt-text="product category stats":::
+
+## Querying for the products in the category
 
 Next we will query the product container to get all of the products for the *Components, Headsets* category.
 
@@ -52,7 +56,9 @@ Next we will query the product container to get all of the products for the *Com
 1. Looking at the results we see there are three products returned, *HL Headset*, *LL Headset*, and *ML Headset*. Each product has a sku, name, price and an array of product tags.
 1. Next click on **Query Stats** and note the request charge of 2.9 RUs.
 
-:::image type="content" source="../media/3-product-results.png" alt-text="product results":::
+    :::image type="content" source="../media/3-product-results.png" alt-text="product results":::
+
+## Querying for each product's tags
 
 Next we will query the productTag container three times for each of the three products returned in the first query. First is the query for the tags for *HL Headset*.
 
@@ -67,7 +73,7 @@ Next we will query the productTag container three times for each of the three pr
 1. This query returns the two tags for the *HL Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.06 RUs.
 
-:::image type="content" source="../media/3-product-tag-hl-stats.png" alt-text="product tags hl headsets":::
+    :::image type="content" source="../media/3-product-tag-hl-stats.png" alt-text="product tags hl headsets":::
 
 Next we will query for the tags for *LL Headset*.
 
@@ -82,7 +88,7 @@ Next we will query for the tags for *LL Headset*.
 1. This query returns the two tags for the *LL Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.47 RUs.
 
-:::image type="content" source="../media/3-product-tag-ll-stats.png" alt-text="product tag ll stats":::
+    :::image type="content" source="../media/3-product-tag-ll-stats.png" alt-text="product tag ll stats":::
 
 Last we will query for the tags for *ML Headset*.
 
@@ -97,18 +103,22 @@ Last we will query for the tags for *ML Headset*.
 1. This query returns the two tags for the *ML Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.2 RUs.
 
-:::image type="content" source="../media/3-product-tag-ml-stats.png" alt-text="product tags ml stats":::
+    :::image type="content" source="../media/3-product-tag-ml-stats.png" alt-text="product tags ml stats":::
+
+## Adding up RU/s charges
 
 Now that we've run all of our queries, let's add up all of the RUs costs from them.
 
-|Query|RUs Cost|
+|Query|RU/s Cost|
 |-|-|
 |Category Name|2.93|
 |Products|2.9|
 |HL Product Tags|3.06|
 |LL Product Tags|3.47|
 |ML Product Tags|3.2|
-|**Total RUs**|**15.56**|
+|**Total RU/s**|**15.56**|
+
+## Same queries for our NoSQL design
 
 Now we're going to query for the same information but in our denormalized database.
 
@@ -122,11 +132,14 @@ Now we're going to query for the same information but in our denormalized databa
    ```
 
 1. The results will look something like the following image.
+
     :::image type="content" source="../media/3-product-query-v2.png" alt-text="product query in exercise":::
 
 1. Note the data returned in this query. It contains all of the information needed to render the products for this category including the category name and tag names for each of the three products.
-1. 1. Next click on **Query Stats** and note the request charge of 2.9 RUs versus the 15.56 RUs for the five queries we ran earlier.
+1. Next click on **Query Stats** and note the request charge of 2.9 RUs versus the 15.56 RUs for the five queries we ran earlier.
+1. However, it's not just the cost that is less with a NoSQL design like this. This type of design is also faster because it only requires a single request.
+1. Lastly, the data itself is served in the shape that it is likely to be rendered in on a web page. This means less code to write and maintain downstream in our ecommerce application.
 
-### Summary
+## Summary
 
 In this exercise we showed how denormalizing data can produce simpler, more efficient queries for our e-commerce application. All of the data needed by our application is stored in a single container and can be fetched with a single query. This type of data modeling can provide huge benefits in both simplicity, speed and cost when dealing with high concurrency queries.
