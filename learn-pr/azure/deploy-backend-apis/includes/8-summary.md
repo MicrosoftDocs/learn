@@ -9,8 +9,8 @@ If you continue in the learning path, the next module will cover creating a web 
 
 ## Further your learning with other references
 
-* [Connectors for Azure Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
-* [Use Azure Functions to connect to Azure SQL](https://docs.microsoft.com/azure/azure-functions/functions-scenario-database-table-cleanup?toc=/azure/azure-sql/toc.json)
-* [Automate workflows for a SQL database by using Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sqlazure?toc=/azure/azure-sql/toc.json)
-* [Microsoft Learn: Choose the best Azure serverless technology for your business scenario](https://docs.microsoft.com/learn/modules/serverless-fundamentals/)
-* [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
+* [Connectors for Azure Logic Apps](/azure/connectors/apis-list)
+* [Use Azure Functions to connect to Azure SQL](/azure/azure-functions/functions-scenario-database-table-cleanup?toc=/azure/azure-sql/toc.json)
+* [Automate workflows for a SQL database by using Azure Logic Apps](/azure/connectors/connectors-create-api-sqlazure?toc=/azure/azure-sql/toc.json)
+* [Microsoft Learn: Choose the best Azure serverless technology for your business scenario](/learn/modules/serverless-fundamentals/)
+* [Introduction to Azure Functions](/azure/azure-functions/functions-overview)

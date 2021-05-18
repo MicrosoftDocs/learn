@@ -15,7 +15,7 @@ You'll then deploy an empty Azure Function app and configure its yaml file and G
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
-1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
+1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
 1. In Visual Studio Code, install the following extensions:
     1. **Azure Account**: This extension allows you to authenticate to Azure.
     1. **Azure Functions**: This extension allows you to manage Azure Functions.
