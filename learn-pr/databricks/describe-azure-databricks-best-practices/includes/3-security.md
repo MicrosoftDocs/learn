@@ -53,7 +53,7 @@ On a *standard cluster*, when you enable this setting you must set single user a
 
 *High-concurrency clusters* can be shared by multiple users. When you enable ADLS Passthrough on this type of cluster, it does not require you to select a single user.
 
-![ADLS Passthrough setting.](../media/adls-passthrough-high-concurrency.png)
+![ADLS Passthrough on High Concurrency.](../media/adls-passthrough-high-concurrency.png)
 
 ## Configure audit logs and resource utilization metrics to monitor activity
 
@@ -67,9 +67,9 @@ In order to get utilization metrics of an Azure Databricks cluster, you can stre
 
 You can use Log analytics directly to query the Perf data. Here is an example of a query which charts out CPU for the VMs in question for a specific cluster ID. See log analytics overview for further documentation on log analytics and query syntax.
 
-![Perfsnippet](../media/perfsnippet.png)
+![Code snippet for querying perf data](../media/perfsnippet.png)
 
-![Grafana](../media/grafana.png)
+![sample Grafana visualization](../media/grafana.png)
 
 You can also use Grafana to visualize your data from Log Analytics.
 

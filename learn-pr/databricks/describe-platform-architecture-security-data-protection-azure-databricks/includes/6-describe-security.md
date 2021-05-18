@@ -52,7 +52,7 @@ Read more about [securely accessing Azure data sources from Azure Databricks](ht
 
 The following diagram shows how you may use Private Link in combination with VNet injection in a [hub and spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) to prevent data exfiltration:
 
-![VNet injection deployment.](../media/vnet-injection-deployment-private-link.png)
+![architecture diagram showing Private Net and VNet injection deployment.](../media/vnet-injection-deployment-private-link.png)
 
 1. Deploy Azure Databricks in a spoke virtual network using VNet injection.
 1. Set up Private Link endpoints for your Azure Data Services in a separate subnet within the Azure Databricks spoke virtual network.
