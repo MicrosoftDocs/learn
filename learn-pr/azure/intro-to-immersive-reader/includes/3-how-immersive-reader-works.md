@@ -42,7 +42,7 @@ const options = {
 ImmersiveReader.launchAsync(YOUR_TOKEN, YOUR_SUBDOMAIN, data, YOUR_OPTIONS);
 ```
 
-## Math Equation Support
+## Math equation support
 
 Math can be supplied to Immersive Reader in HTML when the MIME type is set to `application/mathml+xml`. For example, the following JavaScript finds HTML elements that use the id `ir-content`, and displays them as Math by setting the mimeType to 'application/mathml+xml':
 

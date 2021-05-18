@@ -4,7 +4,7 @@ Immersive Reader embeds text reading and cognition capabilities on top of existi
 
 Immersive Reader helps readers build confidence, as the service breaks down content into more manageable chunks. Words are broken down into syllables and highlighted as they're read. What's more, you can change the color of word based on what part of speech it is.
 
-![Immersive reader breaking down content into manageable chunks](../media/large2.jpeg)
+![Immersive reader breaking down content into manageable chunks](../media/large-2.jpeg)
 
 **For people who struggle with concentration** Immersive Reader can be put into focus mode or line focus to take away any distractions. Background and text color, along with font spacing can also be changed to mitigate sensory overload, and increase attention-spans and comprehension.
 
