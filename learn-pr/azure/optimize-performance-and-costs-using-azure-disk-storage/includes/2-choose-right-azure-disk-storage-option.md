@@ -17,22 +17,22 @@ The performance of an Ultra Disk depends on the size of the disk you select. The
 | Over 1,024 | 160,000 | 2,000 |
 
 Ultra Disks can have a capacity ranging from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host VM. For example, depending on the sizes of the Ultra Disk, a single Ultra Disk can support a maximum of 160,000 IOPS. Performance adjustments can take up to an hour to take effect.
-<!--LM: VM was spelled out in unit 1.-->
+
 > [!Note]
 > You can resize an Ultra Disk only four times during a 24-hour window, and it's possible that the performance resize operation might fail because of the lack of performance bandwidth capacity.
 
 By default, Azure creates Ultra Disks with a 4K physical sector, which is compatible with most applications. For older applications that aren't compatible with a 4K physical sector, you can create a 512E sector size.
 
 Ultra Disks are a new disk type and have some limitations:
-<!--LM: Please change the following bullet if "use" is better than "create"-->
+
 - They're only available in a subset of Azure regions.
 - You can only attach them to VMs that are in Availability Zones.
-- You can only create them as data disks and use them as empty disks.
+- You can only use them as data disks and use them as empty disks.
 - They don't support disk snapshots, VM images, scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
 - Ultra Disks don't support cached reads and writes operations.
 
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if Premium SSDs are causing performance bottlenecks, consider using Ultra Disks.
-<!--LM: Please fix the syntax for the following note.-->
+
 >[Note!]
 >You're charged for using Ultra Disks based on the provisioned size, IOPS, and throughput.
 
@@ -99,8 +99,8 @@ The following table provides the performance characteristics of standard HDDs in
 | S80 | 32,767 | 2,000 | 500 |
 
 Use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
-<!--LM: Please consider hyphenating "Azure-managed disks".-->
-### Cost of Azure managed disks
+
+### Cost of Azure-managed disks
 
 Use the following considerations to estimate the price for Azure managed disks.
 
@@ -108,7 +108,8 @@ Use the following considerations to estimate the price for Azure managed disks.
 - Snapshots. The snapshots are billed based on used capacity.
 - Outbound data transfers. Data transfer within the same zone is free of charge. Between zones, data transfer is charged per GB and transfer between different regions generates additional cost.
 - Transactions. For Standard SSD disks, billing is based on the number of I/O operations that are less than or equal to 256 KiB of throughput. For Standard HDD disks, each I/O operation is considered as a transaction, regardless of the throughput.
-<!--LM: Please add correct syntax around this note.-->
-Note: Premium SSD and Ultra Disks aren't charged based on transactions.
+
+>[Note!]
+> Premium SSD and Ultra Disks aren't charged based on transactions.
 
 The cost of Ultra Disks depends on its size and performance configurations. You're billed based on the provisioned size, IOPS, and throughput.
