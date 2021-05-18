@@ -20,13 +20,13 @@ There are three main approaches for databases that you will learn about:
 
 With this approach, you take a snapshot of the structure of a reference database, which represents the desired state.You can then use that snapshot to synchronize another target database, usually the test or production database, to the desired state. A tool like [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage) can be used to take the snapshot into a `.dacpac` file. When the `.dacpac` is applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the reference.
 
-This approach is used in the bus-catching scenario as it is probably the easiest and the simplest of the three approaches discused.
+This approach is used in the bus-catching scenario as it is probably the easiest and the simplest of the three approaches discussed.
 
 ### Implement Code First Migrations depending on your language
 
 Another option is for when you don't want to write T-SQL scripts, but you want to let C#, Python, or Node and the entities defined in your solution (for example, a Book, a Customer)  automatically generate the database and schema. There is a specific tool that usually comes with the platform or framework being used, and you can find references at the end of the module. These tools ensure that every time you change any of the entities, for example, you add a new field or entity, the new structure will be reflected in the database.
 
-### Use Manual Scripts for step-by-step deployments
+### Use manual scripts for step-by-step deployments
 
 With the manual scripting approach, the developer carefully writes and maintains the scripts needed to create and change the database over time. After a script has been deployed in production, it is never changed and a new one is created. Each script contains the code needed to evolve the database to the new schema. In those cases where a database needs to be deployed from scratch, all scripts must be executed in the correct sequence to make sure database is created and the evolved correctly. Tools like [DbUp](https://dbup.github.io/) help in making sure that once a script has been deployed, is not applied again to the same database in subsequent executions.
 

@@ -40,8 +40,8 @@ Now that your GitHub secret and workflow file are configured, you are ready to p
 
 1. Select the **...** > **Push**. This pushes your updates to your repository hosted on GitHub, and it kicks off any GitHub Actions.
 
-> [!IMPORTANT]
-> If you are prompted to log in, you must use your GitHub username and obtain a personal access token to supply **instead of your GitHub password**. You can do this by going to https://github.com/settings/tokens/new. Add a note `VSCode`, check all the boxes, and select **Generate token**. Copy the token text and store in a secure location. Back in Visual Studio Code, use the token as your password/token to log in to GitHub.
+    > [!IMPORTANT]
+    > If you are prompted to log in, you must use your GitHub username and obtain a personal access token to supply **instead of your GitHub password**. You can do this by going to https://github.com/settings/tokens/new. Add a note `VSCode`, check all the boxes, and select **Generate token**. Copy the token text and store in a secure location. Back in Visual Studio Code, use the token as your password/token to log in to GitHub.
 
 1. Navigate to your GitHub repository for this module and select **Actions**.
 

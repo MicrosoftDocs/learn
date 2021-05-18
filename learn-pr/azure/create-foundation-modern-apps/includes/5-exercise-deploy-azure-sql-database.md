@@ -16,8 +16,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-> [!TIP]
-> If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+    > [!TIP]
+    > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
