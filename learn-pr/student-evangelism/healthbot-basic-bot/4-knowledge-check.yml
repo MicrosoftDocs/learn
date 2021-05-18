@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-basic-bot.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 04/27/2020
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  
+  questions:
+    
+    - content: "Which of the following is used for text display and taking input?"
+      choices:
+        - content: "Prompt"
+          isCorrect: true
+          explanation: We simply use a Prompt block to do this process. It is used to retrieve input from the user.
+        - content: "Statement"
+          isCorrect: false
+          explanation: A Statement triggers an output from the health bot instance 	with 	no expectation of a response.
+        - content: "Block"
+          isCorrect: false
+          explanation: There is no element name block from the scenario steps.
+    
+    - content: "If you wish to use a two way decision split, which scenario will you use?"
+      choices:
+        - content: "Yes/No Prompt"
+          isCorrect: false
+          explanation: "It is a Two-way split in the flow based on user input."
+        - content: "Branch"
+          isCorrect: true
+          explanation: "Branch is a Two-way decision split, based on code and NOT on the user input."
+        - content: "Switch"
+          isCorrect: false
+          explanation: "It's a Multi-optional split in the flow based on code."
+
+    - content: "Which of the following helps you to test and run your scenario?"
+      choices:
+        - content: "Test Block"
+          isCorrect: false
+          explanation: "It's not where the testing of the bot is done."
+        - content: "Chat"
+          isCorrect: false
+          explanation: "It's only the name of the window in which the testing is done. Web Chat Panel allows you to test the bot."
+        - content: "Web Chat Panel"
+          isCorrect: true
+          explanation: "The Web Chat panel in the upper right of the Scenario editor allows you to run and test scenarios"
