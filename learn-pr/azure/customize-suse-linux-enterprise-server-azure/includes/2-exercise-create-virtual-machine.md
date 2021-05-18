@@ -8,12 +8,13 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
 1. In the Basics tab:
 
-    - Choose the subscription you will be using for this exercise and Resource group
-    - Name your virtual machine LAMP_Test_1 and select the closest region
-    - Choose the SUSE Enterprise Linux option for your image
-    - Choose the smallest size VM
+    - Choose the subscription you will be using for this exercise and Resource group and name it rg-lamp-demo
+    - Name your virtual machine vm-lamp-test-1 and select the default Availability option
+    - Choose the SUSE Enterprise Linux 15 SP2 + Patching option for your image
+    - Leave the Azure Spot instance box unchecked
+    - Choose the smallest size VM (Standard_B1s)
     - Select the SSH public key for your authentication type
-    - Generate a new key pair
+    - Generate a new key pair and store it on your local machine along with the username
     - Press next to customize your VM, or press Review + create to deploy your SLES VM
 
 5. In the Disks tab:
