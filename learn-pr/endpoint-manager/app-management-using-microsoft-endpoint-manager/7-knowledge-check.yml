@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What are app configuration policies verses app protection policies?"
+  - content: "What are app configuration policies versus app protection policies?"
     choices:
     - content: "App configuration policies and app protection policies are essentially the same thing."
       isCorrect: false

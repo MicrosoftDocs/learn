@@ -36,7 +36,7 @@ For example, you might want to send "1 Microsoft Way, Redmond, WA 5C 25C" as an 
 
 #### Convert a street address to map coordinates
 
-The Azure Maps [Search - Get Search Address](https://docs.microsoft.com/rest/api/maps/search/getsearchaddress?azure-portal=true) API provides address geocoding. Geocoding is the process of converting a street address to a geospatial location as longitude and latitude. For example, *1 Microsoft Way, Redmond, WA, USA* gives a longitude of *-122.1282593* and a latitude of *47.6393782*. You can then use this location to get the weather forecast for that address.
+The Azure Maps [Search - Get Search Address](/rest/api/maps/search/getsearchaddress?azure-portal=true) API provides address geocoding. Geocoding is the process of converting a street address to a geospatial location as longitude and latitude. For example, *1 Microsoft Way, Redmond, WA, USA* gives a longitude of *-122.1282593* and a latitude of *47.6393782*. You can then use this location to get the weather forecast for that address.
 
 #### Retrieve a daily weather forecast
 
