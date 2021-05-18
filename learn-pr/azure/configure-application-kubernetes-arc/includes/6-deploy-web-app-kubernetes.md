@@ -107,12 +107,6 @@ Use the following steps to deploy a Node.js-based application by using the ZIP f
     cd nodejs-docs-hello-world
     ```
 
-1. Run the following command to install the application dependencies:
-
-    ```azurecli-interactive
-    npm install
-    ```
-
 1. Run the following command to create a zip archive that contains all of the application files:
 
     ```azurecli-interactive
