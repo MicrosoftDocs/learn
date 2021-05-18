@@ -7,13 +7,13 @@
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
 -->
 
-When you work with 3D visualization, every detail can matter. But untethered devices often have insufficient compute resource to render more complex models to the required detail level. By using Azure Remote Rendering, you shift your rendering workloads to high performance GPUs in Azure. 
+When you work with 3D visualization, every detail can matter. But untethered devices often have insufficient compute resources to render more complex models to the required detail level. By using Azure Remote Rendering, you shift your rendering workloads to high performance GPUs in Azure. 
 
-In Azure, a cloud hosted graphics engine:
+In Azure, a cloud hosted service:
 
 - Renders your image
 - Encodes the image as a video stream
-- Streams the image to your device in real time
+- Streams the image to your device in real-time
 
 > [!NOTE]
 > You can not only view the rendered model, you can also interact with it.
@@ -41,12 +41,12 @@ In Azure, a cloud hosted graphics engine:
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
 
-When viewing content on untethered devices, you might choose to use *decimation*. Decimation can simplify your 3D models by compressing them. Essentially, decimation removes polygons from your models.
+When viewing content on untethered devices, you might choose to use *decimation*. Decimation can simplify your 3D models by removing polygons from your them.
 
 > [!NOTE]
 > Decimation simplifies your models to the level required to be able to render on your hardware.
 
-But this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an internal combustion engine, and demonstrates decimation. The image comprises a only 200,000 triangles. The image is not of a sufficient quality for the desired application. 
+But this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an internal combustion engine, and demonstrates decimation. The image comprises approximately 200,000 triangles. The image is not of a sufficient quality for desired applications, such as a 3D design review or factory layout visualization.
 
 :::image type="content" source="../media/engine-model1.png" alt-text="A graphic depicting an image of an internal combustion engine. The image is rendered using decimation.":::
 
@@ -89,7 +89,7 @@ The following table describes the key features of Azure Remote Rendering, and ho
 | Software development kit (SDK) | Provides a powerful and simple to use SDK that enable you to integrate remotely rendered content into your existing apps. |
 
 
-## How to reduce decimation 
+## How Azure Remote Rendering can remove the need for decimation 
 
 <!-- 4. Solve the scenario -------------------------------------------------------------
 
@@ -113,7 +113,7 @@ The following table describes the key features of Azure Remote Rendering, and ho
 
 By using Azure Remote Rendering, you can:
 
-- Reduce decimation when working with complex 3D models.
+- Remove the need for decimation when working with complex 3D models.
 - Shift your complex rendering workloads to Azure to take advantage of high performance GPUs. 
 - Distribute complex workloads across multiple GPUs. 
 

@@ -46,7 +46,7 @@ Azure Remote Rendering consists of a number of components, which in turn consist
 Conversion is the process that prepares your 3D assets for use with Azure Remote Rendering. Conversion is required to make rendering as efficient as possible at runtime. You start this process by uploading your models to Azure Blob storage. 
 
 > [!NOTE] 
-> Currently, Azure Remote Rendering can convert both Autodesk Filmbox (FBX) and Graphics Language Transmission Format (GLFT) model types.
+> Currently, Azure Remote Rendering can convert both Autodesk Filmbox (FBX) and Graphics Language Transmission Format (GLFT) model formats.
 
 Next, your model must be converted before use with Azure Remote Rendering.  After the model is converted, Azure writes the converted model back to your Blob storage. 
 
@@ -78,7 +78,7 @@ A session consists of three basic phases. These are described in the following t
 
 | Phase           | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
-| Session startup | In this phase, Azure Remote Rendering creates a session. The session is marked as Starting. Azure considers your Azure region and your server size preference to locate a suitable server to host your rendering request. After a suitable server is found, Azure copies the appropriate size VM onto the server to create an Azure Remote Rendering host. Then the VM is started and the session state transitions to Ready. |
+| Session startup | In this phase, Azure Remote Rendering creates a session on your behalf. You request a server size and specify the Azure region for the session. The session is then marked as Starting. After a suitable server is found, Azure copies the appropriate size VM onto the server to create an Azure Remote Rendering host. When the VM has started, and the session state transitions to Ready. |
 | Session connect | After your session state is Ready, you can connect your device to it. While it's connected, the device sends commands to load and modify your 3D models. |
 | Session end     | When you no longer need the session, you should stop it. If you don't manually stop the session, it's automatically shut down when the session's lease time expires. |
 
