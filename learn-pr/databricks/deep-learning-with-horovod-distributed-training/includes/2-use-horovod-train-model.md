@@ -64,11 +64,11 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. In the `Library Source`, select **PyPi** and in the `Package` text box type `petastorm==0.8.2` and select **Install**.
 
-    ![Install required library](../media/install-lib.png)
+    ![Install petastorm](../media/install-lib.png)
 
 1. In the `Library Source`, select **PyPi** and in the `Package` text box type `cloudpickle==1.1.1` and select **Install**.
 
-    ![Install required library](../media/install-lib-2.png)
+    ![Install cloudpickle](../media/install-lib-2.png)
 
 ## Clone the Databricks archive
 
