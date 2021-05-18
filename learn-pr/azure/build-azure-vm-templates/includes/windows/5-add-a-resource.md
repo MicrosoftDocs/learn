@@ -61,7 +61,7 @@ You need a way to map this command to use the Resource Manager template syntax. 
 
 To discover how to use the Custom Script Extension in your template, one approach is to learn by example. For example, you might find an Azure Quickstart template that does something similar and adapt it to your needs.
 
-Another approach is to look up the resource you need in the [reference documentation](https://docs.microsoft.com/azure/templates?azure-portal=true). In this case, searching the documentation would reveal [Microsoft.Compute virtualMachines/extensions template reference](https://docs.microsoft.com/azure/templates/Microsoft.Compute/2018-10-01/virtualMachines/extensions?azure-portal=true).
+Another approach is to look up the resource you need in the [reference documentation](/azure/templates?azure-portal=true). In this case, searching the documentation would reveal [Microsoft.Compute virtualMachines/extensions template reference](/azure/templates/Microsoft.Compute/2018-10-01/virtualMachines/extensions?azure-portal=true).
 
 You can start by copying the schema to a temporary document, like this.
 

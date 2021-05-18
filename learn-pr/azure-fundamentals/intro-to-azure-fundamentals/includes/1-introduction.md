@@ -25,7 +25,7 @@ No matter your goals, Azure fundamentals has something for you. Take Azure funda
 
 **Preparation for Exam AZ-900**
 
-The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true). This exam includes six knowledge domain areas:
+The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900?azure-portal=true). This exam includes six knowledge domain areas:
 
 :::row:::
   :::column:::

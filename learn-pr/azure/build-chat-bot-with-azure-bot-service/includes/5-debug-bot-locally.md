@@ -10,7 +10,7 @@ In this unit, you will learn how to use Visual Studio Code and the emulator to d
     npm install restify
     ```
 
-1. Repeat this step for the following commands to install the [Microsoft Bot Framework Bot Builder SDK for Node.js](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-quickstart):
+1. Repeat this step for the following commands to install the [Microsoft Bot Framework Bot Builder SDK for Node.js](/bot-framework/nodejs/bot-builder-nodejs-quickstart):
 
     ```bash
     npm install botbuilder
