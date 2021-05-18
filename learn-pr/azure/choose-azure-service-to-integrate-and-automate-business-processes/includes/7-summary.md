@@ -17,9 +17,9 @@ Your choice of technology depends on whether you prefer a design-first or a code
 
 ## Further reading
 
-- [Choose the right integration and automation services in Azure](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
-- [What is Azure Logic Apps?](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)
-- [Get started with Power Automate](https://docs.microsoft.com/power-automate/getting-started)
-- [Run Background tasks with WebJobs in Azure App Service](https://docs.microsoft.com/azure/app-service/webjobs-create)
-- [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
-- [Create a function that integrates with Azure Logic Apps](https://docs.microsoft.com/azure/azure-functions/functions-twitter-email)
+- [Choose the right integration and automation services in Azure](/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
+- [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)
+- [Get started with Power Automate](/power-automate/getting-started)
+- [Run Background tasks with WebJobs in Azure App Service](/azure/app-service/webjobs-create)
+- [An introduction to Azure Functions](/azure/azure-functions/functions-overview)
+- [Create a function that integrates with Azure Logic Apps](/azure/azure-functions/functions-twitter-email)

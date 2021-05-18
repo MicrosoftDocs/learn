@@ -93,7 +93,7 @@ If you prefer to control the connectivity using IP addresses instead, you'll nee
 
 Every Azure VM you want to replicate has to register with Site Recovery. For a VM to register, Site Recovery requires the latest root certificates installed on the VM. On a Windows VM, you'll need to make sure to install all the latest Windows updates. The process for updating root certificates on Linux VMs varies from distribution to distribution. You'll need to follow the guidance published by the distributor.
 
-### Configure Account permissions
+### Configure account permissions
 
 By default, Site Recovery uses role-based access control (RBAC) in Azure. RBAC enables fine-grained access control and enables you to use several built-in Site Recovery roles:
 

@@ -16,7 +16,7 @@ Congratulations. You've completed the final module in the _Evolve your DevOps pr
 
 ## Continue the journey
 
-You've seen the team identify their top-priority problems, but how will they solve them? If you want to work along with them and learn how to configure build pipelines that continuously build, test, and verify your applications, go to [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+You've seen the team identify their top-priority problems, but how will they solve them? If you want to work along with them and learn how to configure build pipelines that continuously build, test, and verify your applications, go to [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
@@ -24,4 +24,4 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are a lot of things to consider when coordinating projects at scale.
 
-To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](https://docs.microsoft.com/azure/devops/boards/plans/?azure-portal=true).
+To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](/azure/devops/boards/plans/?azure-portal=true).

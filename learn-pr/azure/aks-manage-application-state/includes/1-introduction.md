@@ -13,12 +13,12 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 - Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
-- Familiarity with [Git](https://docs.microsoft.com/contribute/git-github-fundamentals) and [GitHub](https://github.com).
+- Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 - Familiarity with [Docker](https://docker.com) and Docker images.
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service).
-- The ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough).
-- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](https://docs.microsoft.com/learn/modules/intro-to-containers/).
+- The ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
+- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](/learn/modules/intro-to-containers/).
 
-All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
-- [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough)
-- [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)
+All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
+- [Azure CLI](/azure/aks/kubernetes-walkthrough)
+- [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)

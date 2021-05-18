@@ -63,8 +63,8 @@ Subsequent units of this learn module will apply these tools to create a governa
 
 The Cloud Adoption Framework contains two different examples of initial governance foundations to apply a sound foundation for governance to new or existing deployments. Each provides a different approach to support your business needs when getting started:
 
-- [Standard governance guide](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model and designed for deployments in multiple regions while not spanning public and sovereign/government clouds.
-- [Governance guide for complex enterprises](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that are managed by multiple independent IT business units or span public and sovereign/government clouds.
+- [Standard governance guide](/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model and designed for deployments in multiple regions while not spanning public and sovereign/government clouds.
+- [Governance guide for complex enterprises](/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that are managed by multiple independent IT business units or span public and sovereign/government clouds.
 
 ## Mature governance disciplines
 
@@ -72,11 +72,11 @@ The governance foundation will introduce you to the tools needed to implement pr
 
 | Risk/need | Standard enterprise | Complex enterprise |
 |---|---|---|
-| Sensitive data in the cloud | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/security-baseline-improvement?azure-portal=true) | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/security-baseline-improvement?azure-portal=true) |
-| Mission-critical applications in the cloud | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/resource-consistency-improvement?azure-portal=true) | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/resource-consistency-improvement?azure-portal=true) |
-| Cloud cost management | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/cost-management-improvement?azure-portal=true) | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/cost-management-improvement?azure-portal=true) |
-| Multicloud | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/multicloud-improvement?azure-portal=true) | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multicloud-improvement?azure-portal=true) |
-| Complex/legacy identity management | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true) |
-| Multiple layers of governance | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true) |
+| Sensitive data in the cloud | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/standard/security-baseline-improvement?azure-portal=true) | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/security-baseline-improvement?azure-portal=true) |
+| Mission-critical applications in the cloud | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/standard/resource-consistency-improvement?azure-portal=true) | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/resource-consistency-improvement?azure-portal=true) |
+| Cloud cost management | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/standard/cost-management-improvement?azure-portal=true) | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/cost-management-improvement?azure-portal=true) |
+| Multicloud | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/standard/multicloud-improvement?azure-portal=true) | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/multicloud-improvement?azure-portal=true) |
+| Complex/legacy identity management | N/A | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true) |
+| Multiple layers of governance | N/A | [Discipline improvement](/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true) |
 
 Later in this module, we'll discuss each discipline from the Cloud Adoption Framework Govern methodology and relate them to Tailwind Traders' customer narrative.
