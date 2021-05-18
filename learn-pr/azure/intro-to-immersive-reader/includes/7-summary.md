@@ -1,4 +1,4 @@
-In this module, you learned about Immersive Reader, a cognitive service available on Azure. You learned about the different areas that Immersive reader can help with—reading, writing, maths, learning new languages, and creating more accessible and equitable learning environments. You also learned how to integrate Immersive Reader into your applications.
+In this module, you learned about Immersive Reader, a cognitive service available on Azure. You learned about the different areas that Immersive Reader can help with—reading, writing, maths, learning new languages, and creating more accessible and equitable learning environments. You also learned how to integrate Immersive Reader into your applications.
 
 Now that you've reviewed this module, you should be able to:
 
