@@ -8,7 +8,8 @@ metadata:
   ms.date: 3/24/2021 
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 interactive: bash

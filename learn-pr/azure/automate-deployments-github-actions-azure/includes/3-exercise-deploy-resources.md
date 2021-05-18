@@ -7,7 +7,7 @@ Recall in the catching the bus sample, you'll use resources including Azure SQL 
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
-1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
+1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
 1. In Visual Studio Code, install the following extensions:
     1. **Azure Account**: This extension allows you to authenticate to Azure.
     1. **Azure Functions**: This extension allows you to manage Azure Functions.
@@ -34,8 +34,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-> [!TIP]
-> If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+    > [!TIP]
+    > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
@@ -124,13 +124,13 @@ Next, you'll deploy an Azure Function App.
     $storageAccountName
     ```
 
-> [!WARNING]
-> If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
->
-> ```powershell
-> $storageAccountName = $("storageaccount$($uniqueID)")
-> $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
-> ```
+    > [!WARNING]
+    > If the `$storageAccountName` variable is empty, you need to create a new storage account with the below commands.
+    >
+    > ```powershell
+    > $storageAccountName = $("storageaccount$($uniqueID)")
+    > $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName -AccountName $storageAccountName -Location $location -SkuName Standard_GRS
+    > ```
 
 1. Run the following code in the Cloud Shell to deploy the function in your language of choice.
 
@@ -221,29 +221,29 @@ The next step is to configure the Logic App and update the Application Setting f
 
 1. In a text file, determine the connection string that you'll need to be able to connect to your Azure SQL Database. The format should be as follows:
 
-::: zone pivot="python"
+    ::: zone pivot="python"
+    
+    ```cmd
+    Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+    ```
+    
+    ::: zone-end
 
-```cmd
-Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
-```
-
-::: zone-end
-
-::: zone pivot="csharp"
-
-```cmd
-Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
-```
-
-::: zone-end
-
-::: zone pivot="node"
-
-```cmd
-mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
-```
-
-::: zone-end
+    ::: zone pivot="csharp"
+    
+    ```cmd
+    Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+    ```
+    
+    ::: zone-end
+    
+    ::: zone pivot="node"
+    
+    ```cmd
+    mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+    ```
+    
+    ::: zone-end
 
 1. In the Azure portal, navigate to your Azure Function App.
 
@@ -271,33 +271,33 @@ The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a 
 
 1. First, configure your variables.
 
-```powershell
-# Get resource group and location and random string
-$resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
-$resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
-$uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
-$location = $resourceGroup.Location
-# Azure static web app name
-$webAppName = $("bus-app$($uniqueID)")
-# Get the repository name
-$appRepository = Read-Host "Please enter the forked URL (for example, https://github.com/<username>/serverless-full-stack-apps-azure-sql):"
-# Get user's GitHub personal access token
-$githubToken = (Read-Host "In your GitHub account settings, near the bottom left, select Developer settings > Personal access tokens > check all boxes and generate the token. Enter the token").ToString()
-# App service plan name
-$appServicePlanName = (Get-AzAppServicePlan -resourceGroupName $resourceGroupName).Name
-```
+    ```powershell
+    # Get resource group and location and random string
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
+    $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
+    $location = $resourceGroup.Location
+    # Azure static web app name
+    $webAppName = $("bus-app$($uniqueID)")
+    # Get the repository name
+    $appRepository = Read-Host "Please enter the forked URL (for example, https://github.com/<username>/serverless-full-stack-apps-azure-sql):"
+    # Get user's GitHub personal access token
+    $githubToken = (Read-Host "In your GitHub account settings, near the bottom left, select Developer settings > Personal access tokens > check all boxes and generate the token. Enter the token").ToString()
+    # App service plan name
+    $appServicePlanName = (Get-AzAppServicePlan -resourceGroupName $resourceGroupName).Name
+    ```
 
 1. Deploy the Azure Static Web App
 
-```powershell
-# Deploy Azure static web app
-$staticWebApp = az staticwebapp create -n $webAppName -g $resourceGroupName `
+    ```powershell
+    # Deploy Azure static web app
+    $staticWebApp = az staticwebapp create -n $webAppName -g $resourceGroupName `
     -s $appRepository -l 'westus2' -b main --token $githubToken
-Write-Host "Azure Static Web App deployed."
-```
+    Write-Host "Azure Static Web App deployed."
+    ```
 
-> [!NOTE]
-> Since Azure Static Web Apps only recently became generally available, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
+    > [!NOTE]
+    > Since Azure Static Web Apps only recently became generally available, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
 
 If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 

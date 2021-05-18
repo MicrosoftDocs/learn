@@ -22,8 +22,8 @@ Here, you'll leverage GitHub Actions to configure and deploy the services you de
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
 
-> [!TIP]
-> If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
+    > [!TIP]
+    > If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
 
 1. Select the **...** > **Push** which will kick off a build. Confirm the **Deploy Azure SQL Database schema** workflow completes successfully by navigating to the repository in GitHub and selecting **Actions**.
 
@@ -87,39 +87,39 @@ Next, to publish the function to the Azure Function app you deployed in the prev
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. Select your **Function App**.
+2. Select your **Function App**.
 
-1. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
+3. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
 
-1. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
+4. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
 
-1. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
+5. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
 
-1. Select **Add secret** to store it.
+6. Select **Add secret** to store it.
 
 ::: zone pivot="node"
 
-1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **nodefunction.yml.template** to **nodefunctions.yml**.
+7. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **nodefunction.yml.template** to **nodefunctions.yml**.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **pythonfunction.yml.template** to **pythonfunctions.yml**.
+8. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **pythonfunction.yml.template** to **pythonfunctions.yml**.
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **dotnetfunction.yml.template** to **dotnetfunctions.yml**.
+7. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **dotnetfunction.yml.template** to **dotnetfunctions.yml**.
 
 ::: zone-end
 
-1. Select **Source Control** and add a commit message of **`enable function workflow`**.
+8. Select **Source Control** and add a commit message of **`enable function workflow`**.
 
-1. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
+9. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
 
-1. Navigate to your GitHub repository for this sample and select **Actions** to monitor the deployment of your Azure Function App action.
+10. Navigate to your GitHub repository for this sample and select **Actions** to monitor the deployment of your Azure Function App action.
 
 ## Monitor and observe Azure Function results
 
@@ -140,39 +140,39 @@ Before you can configure the application settings for Azure Static Web Apps, you
 
 1. In Visual Studio Code, select **Source Control** > **...** > **Pull** to pull down the new workflow file.
 
-1. Navigate to the file **azure-static-wep-apps-random-words-lettersAndNumbers.yml**.
+2. Navigate to the file **azure-static-wep-apps-random-words-lettersAndNumbers.yml**.
 
 ::: zone pivot="csharp"
 
-1. Update the *app_location* from **.** to **azure-static-web-app/client**.
+3. Update the *app_location* from **.** to **azure-static-web-app/client**.
 
-1. Update the *api_location* from **.** to **azure-static-web-app/api/dotnet**.
+4. Update the *api_location* from **.** to **azure-static-web-app/api/dotnet**.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-1. Update the *app_location* from **.** to **azure-static-web-app/client**.
+3. Update the *app_location* from **.** to **azure-static-web-app/client**.
 
-1. Update the *api_location* from **.** to **azure-static-web-app/api/python**.
+4. Update the *api_location* from **.** to **azure-static-web-app/api/python**.
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-1. Update the *app_location* from **.** to **azure-static-web-app/client/**.
+3. Update the *app_location* from **.** to **azure-static-web-app/client/**.
 
-1. Update the *api_location* from **.** to **azure-static-web-app/api/node**.
+4. Update the *api_location* from **.** to **azure-static-web-app/api/node**.
 
 ::: zone-end
 
-1. **Save** the file.
+5. **Save** the file.
 
-1. Select **Source Control** and add a commit message of **`enable app workflow`**.
+6. Select **Source Control** and add a commit message of **`enable app workflow`**.
 
-1. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
+7. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
 
-1. Navigate to your GitHub repository for this sample and select **Actions** Review the *Azure Static Web Apps CI/CD* workflow run to understand how GitHub Actions are deploying and updating your application. If you make any changes to your application and push them to the repository, a new workflow will spin up to deploy the changes.
+8. Navigate to your GitHub repository for this sample and select **Actions** Review the *Azure Static Web Apps CI/CD* workflow run to understand how GitHub Actions are deploying and updating your application. If you make any changes to your application and push them to the repository, a new workflow will spin up to deploy the changes.
 
 ## Configure application settings for Azure Static Web Apps
 
@@ -182,40 +182,40 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 ::: zone pivot="python"
 
-```cmd
-Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
-```
+    ```cmd
+    Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+    ```
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-```cmd
-Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
-```
+    ```cmd
+    Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+    ```
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-```cmd
-mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
-```
+    ```cmd
+    mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+    ```
 
 ::: zone-end
 
-1. Navigate to your Azure Static Web App in the Azure portal.
+2. Navigate to your Azure Static Web App in the Azure portal.
 
-> [!div class="nextstepaction"]
-> [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [!div class="nextstepaction"]
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
+3. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
 
-1. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
+4. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
 
-1. Select **OK**.
+5. Select **OK**.
 
-1. Check the box next to the new application settings and select **Save**.
+6. Check the box next to the new application settings and select **Save**.
 
 ## View the published `bus-app`
 
@@ -224,8 +224,8 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 > [!div class="nextstepaction"]
 > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
+2. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
-1. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
+3. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
 
-1. You should now see a geofence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.
+4. You should now see a geofence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.
