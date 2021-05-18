@@ -8,7 +8,7 @@ Localizing websites to the target audience and language is often too expensive f
 
 Messages to the general public must be easily understood and trusted. With translation services in collaboration with Azure speech services, organizations can quickly translate announcements into multiple languages and dialects. Recent improvements with Translator mean that you can also translate from a language without gender agreement to a language with gender agreement, such as English to Arabic, providing further clarity and intelligibility.
 
-## Business Intelligence
+## Business intelligence
 
 Translator can help BI applications where data is in various languages, as most analytical tools are only able to process one language. As Translator is available via REST, you can integrate functionality with other services and applications—such as Form Recognizer and Cognitive search—to improve analysis of documents and other data sources.
 
