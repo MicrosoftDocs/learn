@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.web-development-101-functions.2-overview-functions
-title: Unit
+title: Overview of functions
 metadata:
   title: Overview of functions
   description: We start by exploring what a function is, and how to create your
@@ -10,6 +10,6 @@ metadata:
   ms.date: 05/18/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/2-overview-functions.md)]

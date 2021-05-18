@@ -1,4 +1,4 @@
-To make a function more reusable you'll often want to pass information into it. These inputs are called **parameters**.
+To make a function more reusable, you'll often want to pass information into it. These inputs are called **parameters**.
 
 Let's say we wanted to change our `displayGreeting` function from the last example to be able to greet a specific person, instead of printing "Hello, world!" each time we call the function. We can use a parameter to specify the name. A parameter (also sometimes called an argument), is additional information sent to a function.
 

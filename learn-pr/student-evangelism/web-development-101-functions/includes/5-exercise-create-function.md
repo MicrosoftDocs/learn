@@ -1,4 +1,4 @@
-Let's create our first function. You will find yourself creating functions quite frequently when writing code. You will create a function to display a name on a webpage. The function will take one parameter - the name of the person you wish to greet, and return the message. You will then call this function to display the message.
+Let's create our first function. You will find yourself creating functions frequently when writing code. You will create a function to display a name on a webpage. The function will take one parameter - the name of the person you wish to greet, and return the message. You will then call this function to display the message.
 
 > [!NOTE]
 > You can find the full code at the bottom of this exercise.
@@ -56,7 +56,7 @@ With our page created, we can now add the code to display our message.
     > [!NOTE]
     > You may notice the `TODO` comments inside the script tag. Those are markers for where you will add code in both this exercise and an upcoming one.
 
-1. Below the line inside *index.html* which reads `//TODO: Add hello code`, add the following code to create a function which takes one parameter called `name`, and returns a string saying 'Hello' to the person:
+1. Below the line inside *index.html, which reads `//TODO: Add hello code`, add the following code to create a function, which takes one parameter called `name`, and returns a string saying 'Hello' to the person:
 
     ```javascript
     // TODO: Add hello code
@@ -78,8 +78,8 @@ With our page created, we can now add the code to display our message.
 
 Our page is now created! Let's see how it looks.
 
-1. Open the Visual Studio Code command pallette by by selecting *Ctl-Shift-P* (or *Cmd-Shift-P* on a Mac).
-1. Open [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) by typing *Live Server* in the command pallette and selecting *Live Server: Open with Live Server*.
+1. Open the Visual Studio Code command palette by selecting *Ctl-Shift-P* (or *Cmd-Shift-P* on a Mac).
+1. Open [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) by typing *Live Server* in the command palette and selecting *Live Server: Open with Live Server*.
 
     ![Screenshot of command pallette with Live Server selected](./media/launch-live-server.png)
 

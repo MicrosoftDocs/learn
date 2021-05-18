@@ -11,7 +11,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
+title: Creating modular code with functions in JavaScript
 summary: Functions are the building blocks for any application you will create.
   They allow you to create named, reusable sections of code to help make your
   code more readable and maintainable. This module will explore the core
@@ -21,8 +21,9 @@ abstract: |
 
   - How to write a basic function
   - What parameters are and how to use them
-  - How to use return values within functions
-  - How to use anonymous functions
+  - Return values from a function
+  - Use anonymous functions
+
 iconUrl: /learn/achievements/web-development-101-functions.svg
 levels:
   - beginner
