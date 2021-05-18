@@ -12,14 +12,17 @@ title: Build mixed reality digital twins with Azure Digital Twins and Unity
 summary: Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
 prerequisites: |
   - A HoloLens 2 device
+  - Azure service creation and configuration
+  - Basic familiarity with Unity, C#, and GitHub
+  - Domain User Azure Active Directory (i.e, not Guest)
+  - [Azure CLI](/cli/azure/install-azure-cli) installed
+  - Bing Maps developer account 
   - A Windows 10 PC configured with the required tools
       - Windows 10 SDK 10.0.18362.0 or later
       - Unity Hub with Unity 2020.3.0f1 (LTS) installed
-      - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed, including USB Device Connectivity 
+      - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed 
       - USB Device Connectivity 
-      - Microsoft Mixed Reality Feature Tool 
-  - Azure subscription, [Azure CLI](/cli/azure/install-azure-cli), and completion of [Control Azure services with the CLI module](/learn/modules/control-azure-services-with-cli/)
-  - Basic familiarity with Unity, C#, and GitHub by completing the Unity Essentials Pathway or [Mixed Reality Learn module overview](/windows/mixed-reality/discover/mr-learning-overview)
+      - Microsoft Mixed Reality Feature Tool  
 iconUrl: /learn/achievements/generic-trophy.svg
 hidden: true
 levels:
