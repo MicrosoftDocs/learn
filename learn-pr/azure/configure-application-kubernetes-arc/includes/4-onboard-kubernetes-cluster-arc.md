@@ -22,7 +22,7 @@ This is the third in this module's sequence of exercises. These exercises guide 
 
 ## Task 1: Prepare for connecting the AKS cluster to Azure Arc
 
-Before you connect the AKS cluster to Azure Arc, ensure relevant prerequisites are met. Prerequisites you must address include creation a resource group that will host Azure Arc resources and verifying registration of the necessary resource providers.
+Before you connect the AKS cluster to Azure Arc, ensure relevant prerequisites are met. Prerequisites you must address include creating a resource group that will host Azure Arc resources and verifying registration of the necessary resource providers.
 
 Use the following steps to implement these prerequisites:
 
