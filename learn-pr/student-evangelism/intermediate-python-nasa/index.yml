@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Code control statements in Python
-summary: Learn more advanced topics of Python.
+summary: Learn more advanced topics of Python using interactive Notebooks.
 abstract: |
   In this module, you'll learn:
   - How to write and when to use conditionals
