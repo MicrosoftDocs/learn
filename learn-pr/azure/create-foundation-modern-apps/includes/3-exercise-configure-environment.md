@@ -12,7 +12,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Visual Studio Code is available on all operating systems. Navigate to the [Visual Studio Code Download](https://code.visualstudio.com/Download) page and download/install the application applicable to your operating system.
 
-1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools). These tools allow you to run Azure Functions locally.
+1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools). These tools allow you to run Azure Functions locally.
 
 1. Open the **Extensions** blade from the left-hand taskbar. We recommend installing the following extensions:
 
@@ -43,7 +43,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities. A notebook is a document with a file ending in `.ipynb` which mixes runnable code cells and text cells in one file.
 
-1. Navigate to the [Azure Data Studio Download](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
+1. Navigate to the [Azure Data Studio Download](/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
 
 1. Azure Data Studio is similar to Visual Studio Code in its layout. Select **File** > **Open folder**  and navigate to the location where you cloned the repository. This step will open the folder in Azure Data Studio so you can easily access repository files in future exercises.
 

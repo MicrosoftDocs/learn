@@ -14,11 +14,11 @@ The following references are related to Azure SQL Database's modern capabilities
 - [Video: Using Azure Pipelines for Azure SQL deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=26)
 - [10 reasons to use Azure SQL in your next project](https://devblogs.microsoft.com/azure-sql/10-reasons-to-use-azure-sql-in-your-next-project/).
 - [Azure SQL JSON support sample](https://github.com/yorek/azure-sql-db-samples/tree/master/samples/03-json)
-- [Geospatial support](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server)
+- [Geospatial support](/sql/relational-databases/spatial/spatial-data-sql-server)
 - [OpenLayers library](https://openlayers.org/)
-- [Graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview)
-- [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
-- [Lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
+- [Graph models](/sql/relational-databases/graphs/sql-graph-overview)
+- [Columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview)
+- [Lock-free tables](/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
 
 ### Implement DevOps using Azure SQL Database
 
@@ -33,12 +33,12 @@ The following references will be very useful if you want to learn about DevOps g
 - [DevOps for Azure SQL](https://devblogs.microsoft.com/azure-sql/devops-for-azure-sql/).
 - [GitHub Action Types](https://github.com/marketplace?type=actions)
 - [Azure SQL Deploy Action](https://github.com/marketplace/actions/azure-sql-deploy)
-- [Azure DevOps Tasks](https://docs.microsoft.com/azure/devops/pipelines/tasks/)
-- [Azure SQL Database Deployment Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment)
+- [Azure DevOps Tasks](/azure/devops/pipelines/tasks/)
+- [Azure SQL Database Deployment Task](/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment)
 
 #### Frameworks that support code first migrations
 
-- [.NET Core - Entity Framework](https://docs.microsoft.com/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
+- [.NET Core - Entity Framework](/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
 - [Node - Sequelize](https://sequelize.org/master/manual/migrations.html)
 - [Node - Prisma](https://www.prisma.io/migrate/)
 - [Python - Django](https://docs.djangoproject.com/en/3.2/topics/migrations/)

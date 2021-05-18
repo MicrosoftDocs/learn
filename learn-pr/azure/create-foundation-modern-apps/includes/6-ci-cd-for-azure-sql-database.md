@@ -18,7 +18,7 @@ There are three main approaches for databases that you will learn about:
 
 ### Use the Desired State approach with SqlPackage.exe
 
-With this approach, you take a snapshot of the structure of a reference database, which represents the desired state.You can then use that snapshot to synchronize another target database, usually the test or production database, to the desired state. A tool like [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage) can be used to take the snapshot into a `.dacpac` file. When the `.dacpac` is applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the reference.
+With this approach, you take a snapshot of the structure of a reference database, which represents the desired state.You can then use that snapshot to synchronize another target database, usually the test or production database, to the desired state. A tool like [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage) can be used to take the snapshot into a `.dacpac` file. When the `.dacpac` is applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the reference.
 
 This approach is used in the bus-catching scenario as it is probably the easiest and the simplest of the three approaches discussed.
 

@@ -9,3 +9,17 @@ In this series of four modules which are part of the Build serverless, full stac
 In this module, you'll break down a scenario for an application and build a multi-service architecture of a solution, which is based on the microservices approach. After constructing the architecture, you'll dive into the first crucial step: building the foundation for a modern application. Using Azure SQL Database, you'll deploy, configure, and automate CI/CD for the database component of your full stack application.
 
 By the end of this module, you'll be able to use modern database capabilities to build a foundation for modern applications.
+
+## Learning objectives
+
+By the end of this module, you will be able to:
+
+- Build a foundation for applications with Azure SQL Database.
+- Demonstrate modern database capabilities with Azure SQL Database.
+
+## Prerequisites
+
+- Ability to navigate the Azure portal
+- Familiarity with database concepts such as stored procedures and querying
+- Familiarity with CI/CD concepts such as GitHub Actions
+- Familiarity with available Azure services
