@@ -1,35 +1,33 @@
-### YamlMime:Module
+﻿### YamlMime:Module
 uid: learn.configure-application-kubernetes-arc
 metadata:
-  title: Implement Azure App Service on Kubernetes with Arc
-  description: The Lima overlay provides the ability to implement Azure application platform services, such as Azure Web Apps, on customer-managed, Arc-onboarded Kubernetes clusters.
+  title: Implement Azure App Service on Kubernetes with Azure Arc
+  description: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
   ms.date: 05/01/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement Azure App Service on Kubernetes with Arc
-summary: The Lima overlay provides the ability to implement Azure application platform services, such as Azure Web Apps, on customer-managed, Arc-onboarded Kubernetes clusters.
+summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. 
 abstract: | 
-  After completing this module, you’ll be able to:
-  -	Prepare for implementing Azure App Service on Kubernetes with Arc
-  -	Implement a Lima-compliant AKS cluster
-  -	Install the Azure Web Apps extension into a Lima-compliant Kubernetes cluster
-  -	Deploy a simple Azure web apps hosted by a Kubernetes cluster
-
+  After completing this module, you'll be able to:
+  -	Prepare for implementing Azure App Service on Kubernetes with Azure Arc.
+  -	Implement an Azure Kubernetes Service (AKS) cluster that supports Azure App Service on Kubernetes with Azure Arc.
+  -	Install the Application services extension into an AKS cluster.
+  -	Deploy Azure App Services web apps to an AKS cluster.
 prerequisites: |
   To get the best learning experience from this module, you should have:
-  - Foundational understanding of Kubernetes (from the operator's perspective)
-  -	Foundational understanding of AKS
-  -	Foundational understanding of Helm
-  -	Foundational understanding of Azure Web Apps
-  -	Conceptual understanding of Lima
-  -	Understanding of container orchestration
-  In order to complete exercises in this module, you will need:
+  - 	Foundational understanding of Kubernetes (from the operator's perspective).
+  - 	Foundational understanding of AKS.
+  - 	Foundational understanding of Helm.
+  - 	Foundational understanding of Azure Web Apps.
+  - 	Conceptual understanding of Azure App Service on Kubernetes with Azure Arc.
+  - 	Understanding of container orchestration
+  To complete this module's exercises, you'll need:
   -	An Azure subscription
   -	A Microsoft account or an Azure Active Directory (Azure AD) account with the Owner role in the Azure subscription.
-  -	A Windows, Linux, or MacOS computer on which you can install Azure CLI and Kubernetes management tools.
-iconUrl: /learn/achievements/configure-application-kubernetes-arc.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
 roles:
@@ -44,13 +42,13 @@ products:
 - azure-arc
 - azure-kubernetes-service
 units:
-- learn.configure-application-kubernetes-arc.introduction
-- learn.configure-application-kubernetes-arc.prepare-lab-environment
-- learn.configure-application-kubernetes-arc.set-up-lima-compliant-cluster
-- learn.configure-application-kubernetes-arc.onboard-kubernetes-cluster-arc
-- learn.configure-application-kubernetes-arc.implement-lima-overlay-azure-web-apps
-- learn.configure-application-kubernetes-arc.manage-azure-web-apps-kubernetes-cluster
-- learn.configure-application-kubernetes-arc.knowledge-check
-- learn.configure-application-kubernetes-arc.summary
+- learn.configure-application-kubernetes-arc.1-introduction
+- learn.configure-application-kubernetes-arc.2-prepare-lab-environment
+- learn.configure-application-kubernetes-arc.3-set-up-cluster
+- learn.configure-application-kubernetes-arc.4-onboard-kubernetes-cluster-arc
+- learn.configure-application-kubernetes-arc.5-implement-azure-app-service
+- learn.configure-application-kubernetes-arc.6-deploy-web-app-kubernetes
+- learn.configure-application-kubernetes-arc.7-knowledge-check
+- learn.configure-application-kubernetes-arc.8-summary
 badge:
-  uid: learn.configure-application-kubernetes-arc.badge
+  uid: learn.azure.configure-application-kubernetes-arc.badge
