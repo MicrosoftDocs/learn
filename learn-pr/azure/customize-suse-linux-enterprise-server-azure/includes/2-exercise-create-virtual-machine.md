@@ -21,9 +21,9 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
     :::image type="content" source="../media/create-data-disks.png" alt-text="Screenshot of the Data Disks section of the VM creation screen in the Azure portal.":::
 
-6. Finish configuring the VM and creating the image by selecting **Review + create.**
+6. Finish configuring the VM and creating the image by selecting Review + create.
 
-1. After the system validates your options, and gives you details about the VM being created, select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
+1. After the system validates your options, and gives you details about the VM being created, select Create to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
 
 1. From the Azure portal, select Go to resource and the Overview pane to see the VM you just created  
 1. Open the connect menu and choose ssh
