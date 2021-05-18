@@ -32,18 +32,18 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 ::: zone-end
 
-1. Navigate to your Azure Static Web App in the Azure portal.
+2. Navigate to your Azure Static Web App in the Azure portal.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
+3. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
 
-1. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
+4. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
 
-1. Select **OK**.
+5. Select **OK**.
 
-1. Check the box next to the new application setting and select **Save**.
+6. Check the box next to the new application setting and select **Save**.
 
 <!-- Not sure this is needed 
 ::: zone pivot="python"
