@@ -39,7 +39,7 @@ The resulting functionality is referred to as *Azure Monitor for VMs* and, in ad
 - Pre-defined trending performance charts, which illustrate core performance operating system metrics, with consolidated views across multiple servers connected to the same workspace. This helps with forecasting and capacity planning.
 - Service map, which illustrates dependencies between distributed services in the monitored environment, including services external to servers running the Azure Monitor agents. This is valuable for initiatives such as server migrations, datacenter consolidations, or disaster recovery planning. 
 
-:::image type="content" source="../media/service-map.png" alt-text="The screenshot depicts a service map, which illustrates dependencies across servers in the monitored environment including services external to servers running the Azure Monitor agents." border="false":::
+:::image type="content" source="../media/service-map.png" alt-text="The screenshot depicts a service map, which illustrates dependencies across servers in the monitored environment including services external to servers running the Azure Monitor agents." border="false" lightbox="../media/service-map.png":::
 
 > [!NOTE]
 > Despite its name, Azure Monitor for VMs supports virtual and physical servers.
