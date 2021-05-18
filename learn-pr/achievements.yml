@@ -402,12 +402,12 @@ achievements:
   title: Synthesize Text Input to Speech
   summary: Synthesize Text Input to Speech
   iconUrl: /learn/achievements/synthesize-text-input-speech.svg
-- uid: learn.csc.space-jam-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded paspier)
+- uid: learn.csc.space-jam-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
   type: badge
-  title: Space Jam: A New Legacy Cloud Skills Challenge
-  summary: Space Jam: A New Legacy Cloud Skills Challenge
+  title: "Space Jam: A New Legacy Cloud Skills Challenge"
+  summary: "Space Jam: A New Legacy Cloud Skills Challenge"
   iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceJam.svg
-- uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded paspier)
+- uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
   type: badge
   title: Space Rocks! Cloud Skills Challenge
   summary: Space Rocks! Cloud Skills Challenge
