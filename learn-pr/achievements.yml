@@ -404,8 +404,8 @@ achievements:
   iconUrl: /learn/achievements/synthesize-text-input-speech.svg
 - uid: learn.csc.space-jam-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded)
   type: badge
-  title: Space Jam Cloud Skills Challenge
-  summary: Space Jam Cloud Skills Challenge
+  title: Space Jam: A New Legacy Cloud Skills Challenge
+  summary: Space Jam: A New Legacy Cloud Skills Challenge
   iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceJam.svg
 - uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded)
   type: badge
