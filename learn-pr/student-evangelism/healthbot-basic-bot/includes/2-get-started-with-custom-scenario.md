@@ -8,13 +8,13 @@ Besides the built-in scenarios, we can also design scenarios in the health bot s
 
 1. Login to the Microsoft Health Bot Service Portal.
 
-   :::image type="content" source="../media/2-create-new.png" alt-text="Advanced Functionalities":::
+   :::image type="content" source="../media/2-create-new.png" alt-text="Advanced Functionalities-1":::
 
 1. On logging in to the Health Bot management we can see a Portal as shown above. Now select "CREATE A CUSTOM SCENARIO" from here.
 
 1. We then see a form on the screen which will ask us a few details like,
 
-   :::image type="content" source="../media/2-new-scenario-details.png" alt-text="Advanced Functionalities":::
+   :::image type="content" source="../media/2-new-scenario-details.png" alt-text="Advanced Functionalities-2":::
 
    - NAME: Choose a name for your custom bot. Try to keep it meaningful, so that it comes in handy when you are in search of it!
 
@@ -28,12 +28,12 @@ Besides the built-in scenarios, we can also design scenarios in the health bot s
 
 Once the scenario is configured, we can see a similar screen as shown...
 
-:::image type="content" source="../media/2-configured.png" alt-text="Advanced Functionalities":::
+:::image type="content" source="../media/2-configured.png" alt-text="Advanced Functionalities-3":::
 
 The fields, visual editor, and elements provided in the Scenario Editor allow you to author, test, and debug scenarios.
 
 There are a lot of elements in this canvas which we will go through when needed, we can see 4 main windows on the screen. There is an option to see the code of the block we have designed using the designer.
 
-:::image type="content" source="../media/2-code.png" alt-text="Advanced Functionalities":::
+:::image type="content" source="../media/2-code.png" alt-text="Advanced Functionalities-4":::
 
 The code section, when clicked shows the JSON format of the block.
