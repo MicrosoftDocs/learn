@@ -57,7 +57,7 @@ The key Azure API Management component for consumers is the gateway because all 
 The gateway performs many tasks from the consumer's point of view, but the following are the most important:
 
 - **Authentication**: The gateway monitors access to the API by verifying the consumer's subscription keys, JWT tokens, and other credentials.
-- **Security**: The gateway prevents denial-of-service attacks and API misuse by enforcing predefined rate limits and consumer usage quotas.
+- **Security**: The gateway prevents API misuse by enforcing predefined rate limits and consumer usage quotas.
 - **Transformation**: The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON on-the-fly, as depicted in the image below.
 - **Routing**: Once an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - **Performance**: The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
