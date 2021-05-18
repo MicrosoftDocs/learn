@@ -17,23 +17,16 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
     - Generate a new key pair and store it on your local machine along with the username
     - Press next to customize your VM, or press Review + create to deploy your SLES VM
 
-5. In the Disks tab:
-
-    - Select the premium SSD disk type
-    - Set the encryption type to default
-    - Select OK to create the disk
-    - The Disks section should reappear on the Create a virtual machine pane and you’ll see a new disk in the first row
+5. Select the default options for the Disks and Networking settings
 
     :::image type="content" source="../media/create-data-disks.png" alt-text="Screenshot of the Data Disks section of the VM creation screen in the Azure portal.":::
 
-6. In the Networking tab, it is fine to accept the setting default values for this exercise.
+6. Finish configuring the VM and creating the image by selecting **Review + create.**
 
-1. Finish configuring the VM and creating the image by selecting Review + create.
-
-1. After the system validates your options, and gives you details about the VM being created, select Create to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
+1. After the system validates your options, and gives you details about the VM being created, select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
 
 1. From the Azure portal, select Go to resource and the Overview pane to see the VM you just created  
-
-1. Get the public IP address of the VM and ssh into your machine.
+1. Open the connect menu and choose ssh
+1. Follow the steps to connect your machine with ssh. If you are using a local Windows machine, you will need putty, WSL, or another software that provdes ssh under Windows. If you are using a local Linux machine, open a terminal. 
 
     :::image type="content" source="../media/launch-virtual-machine-ssh.png" alt-text="Screenshot of launching SUSE SLES Azure V M using s s h.":::
