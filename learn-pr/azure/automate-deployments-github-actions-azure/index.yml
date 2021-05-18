@@ -7,22 +7,23 @@ metadata:
   ms.date: 3/24/2021  
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 title: Architect full-stack applications and automate deployments with GitHub
 summary: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to architect a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+abstract: |
   By the end of this module, you will be able to: 
     - Formulate workflows to build pipelines for Azure applications and services
     - Deploy solutions with GitHub Actions
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+prerequisites: |
   - Familiarity with Azure services
   - Familiarity with Visual Studio Code
   - Familiarity with GitHub
   - Familiarity with CI/CD concepts
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+hidden: true
+levels:
   - intermediate
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles:
   - developer
   - database-administrator
   - solution-architect
