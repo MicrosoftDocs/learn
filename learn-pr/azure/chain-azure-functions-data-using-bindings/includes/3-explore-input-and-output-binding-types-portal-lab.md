@@ -53,7 +53,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
 
     >[!TIP]
-    >If you are having trouble finding your function app in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+    >If you are having trouble finding your function app in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
 
     >[!TIP]
-    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 
