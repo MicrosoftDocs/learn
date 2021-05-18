@@ -39,7 +39,7 @@ Azure traffic between Microsoft datacenters stays on the Microsoft network and d
 
 ### Availability Zones
 
-An [Availability Zone](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from datacenter failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
+An [Availability Zone](/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from datacenter failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
 To ensure resiliency, a minimum of three separate zones are located in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single points of failure. With Availability Zones, Azure offers an industry best 99.99 percent VM uptime service-level agreement (SLA). The full [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 
@@ -93,7 +93,7 @@ Increase agility with best-in-class Azure infrastructure that scales to your bus
 
 ### Azure autoscale
 
-Most Azure solutions can be manually scaled up or down. Many solutions also allow for the use of autoscale. Autoscale is a built-in feature of [Azure App Service](https://docs.microsoft.com/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/cluster-autoscaler?azure-portal=true), [Azure virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
+Most Azure solutions can be manually scaled up or down. Many solutions also allow for the use of autoscale. Autoscale is a built-in feature of [Azure App Service](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Service](/azure/aks/cluster-autoscaler?azure-portal=true), [Azure virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
 
 Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound while others are memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these rules or by a custom metric you define. An Azure administrator can scale other services such as the Azure SQL family of databases to increase the size or responsiveness.
 
