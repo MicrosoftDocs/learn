@@ -35,10 +35,10 @@ Let's enable a pizza to be updated through our web API with a `PUT` method.
    [HttpPut("{id}")]
    public IActionResult Update(int id, Pizza pizza)
    {
-       var existingPizza = PizzaService.Get(id);
        if (id != pizza.Id)
            return BadRequest();
            
+       var existingPizza = PizzaService.Get(id);
        if(existingPizza is null)
            return NotFound();
    
