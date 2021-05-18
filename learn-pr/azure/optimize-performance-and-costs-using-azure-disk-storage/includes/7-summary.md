@@ -2,8 +2,6 @@ In this unit, you learned how Azure Disk Storage provides block storage that’s
 
 Selecting the appropriate disk type and performance-scaling option can significantly impact your applications’ performance, availability, and running costs.
 
-<!-- Add links to other modules or Docs articles -->
-
 ## Learn more
 
 To learn more, refer to the following articles:
