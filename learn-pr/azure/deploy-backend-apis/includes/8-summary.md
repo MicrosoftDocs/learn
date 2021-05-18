@@ -1,70 +1,16 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+Getting the timing right of heading to the bus stop is a challenge that most can relate to. Azure Functions can help in getting real-time data and triggering other events like stored procedures in Azure SQL Database and Azure Logic Apps that send notifications via Outlook.
 
-    Heading: do not add an H1 or H2 title here, the auto-generated H1 will appear above this content automatically
+In the language of your choice (Node.js, Python, or .NET), you used an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. You also used GitHub Actions for CI/CD.
 
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
+Overall, you learned how to create and deploy serverless APIs that manage application logic easily and scale automatically based on demand. You also learned the power of Azure SQL Database when it comes to processing JSON data and executing stored procedures. Finally, you learned how to deploy and configure Azure Logic Apps for orchestration or low-code/no-code tasks.
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
--->
-TODO: restate the scenario problem
+If you continue in the learning path, the next module will cover creating a web application to serve the data on an interactive map, allowing users to see their geofences and the buses on monitored routes nearby. The module will use Azure Static Web Apps, which combines the power of Azure App Service with Azure Functions.
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
+## Further your learning with other references
 
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Recommended: format this as lead-in sentence(s) followed by a list
-
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
-
-<!-- 3. Describe the experience without the product ---------------------------------------------------
-
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
-
-    Heading: none; typically this will be a new paragraph
-
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
-
- -->
-TODO: describe the experience without the product
-
-<!-- 4. Describe the business impact ----------------------------------------------------
-
-    Goal: explain the business impact of using the product to solve the problem
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
-
-<!-- 5. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: use an H2 of "References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-TODO: add an (optional) references section
-
-<!-- Do not include any other content -->
+* [Connectors for Azure Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+* [Use Azure Functions to connect to Azure SQL](https://docs.microsoft.com/azure/azure-functions/functions-scenario-database-table-cleanup?toc=/azure/azure-sql/toc.json)
+* [Automate workflows for a SQL database by using Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sqlazure?toc=/azure/azure-sql/toc.json)
+* [Microsoft Learn: Choose the best Azure serverless technology for your business scenario](https://docs.microsoft.com/learn/modules/serverless-fundamentals/)
+* [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)

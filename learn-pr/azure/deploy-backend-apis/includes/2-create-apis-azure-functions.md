@@ -1,74 +1,34 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Functions provides an easy, scalable way to deploy serverless APIs. In the bus-catching scenario, several lightweight APIs will be required in order to get, process, and react to incoming real-time bus data.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Identify requirements of serverless APIs
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+In the bus-catching scenario, real-time data containing information about where buses are located is stored in a JSON document in accordance with the [General Transit Feed Specification (GTFS)](https://gtfs.org/). Many cities provide public transportation data via a real-time feed that meets the [GTFS real-time Reference v2 (GTFS-RT)](https://gtfs.org/reference/realtime/v2/) standard.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+To retrieve the latest data, you can use an API. Once you have the latest data, it needs to be stored somewhere for processing. Processing the data involves checking for buses within the monitored routes and proximity to the monitored geofence(s). In this scenario, a monitored route is a bus route that a user might want to take, and the geofence represents the area where a user wants to be notified that their bus is nearby. As the data is processed, any buses that are entering or exiting the geofence should result in a notification, for example, an email, stating that the specified bus and route is coming soon or has left. Azure Functions contains the capability to complete this task easily and integrate with other services that are required.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Build APIs using Azure Functions
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Azure Functions accelerates and simplifies application development. Azure Functions is an event-driven, serverless compute platform that can also solve complex orchestration problems. There is great support for building and debugging functions locally in Visual Studio Code. You can also deploy and operate at scale in Azure, and integrate with other services using triggers and bindings.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+<!--
+> [!VIDEO "TBD - looking for RedTiger available video"]-->
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Azure Functions supports using your preferred language as C#, Java, JavaScript, PowerShell, and Python are all supported. There are also custom handlers to enable you to use any other language as needed.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Azure Functions allows you to host a single method or function to respond to an event. An event could be an HTTP request, a new message on a queue, or a timer. Additionally, Azure Functions scales automatically and you are only charged when a function is triggered, so it is truly a serverless service. Azure Functions allows you to focus on the code that's running your service and not the underlying infrastructure. Since they can be granular, Azure Functions is often used to support microservices architectures. This aspect also allows you to build reusable pieces for different applications.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+### Integrate Azure Functions with Azure Logic Apps
 
-    Goal: State concisely what's covered in this unit
+In this scenario, an Azure Function will be used to do the data collection and processing of real-time bus data. Once the Azure Function detects that there is a bus entering or exiting the geofence, the function calls an Azure Logic App to send notifications in the form of an email. Azure Logic Apps is a low-code/no-code development platform hosted as a serverless cloud service. Since Azure Logic Apps has a connector to be triggered when an HTTP POST request is made, calling them from Azure Functions is easy. More on this service and this piece of the solution will be covered later in the module.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+### Integrate Azure Functions with Azure SQL Database
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+In this scenario, Azure Functions will store the data in Azure SQL Database. Azure SQL Database supports modern capabilities like JSON and geospatial, which makes building the overall solution easier, more efficient, and more performant.
 
-<!-- 4. Image (highly recommended) ----------------------------------------------------------------
+Azure Functions will also call an Azure SQL Database stored procedure that returns the buses that are entering and exiting the geofence. Azure Functions supports many languages as mentioned above and so does Azure SQL, which makes connecting and accessing Azure SQL Database from Azure Functions as simple as obtaining the correct driver for the selected language and formatting your connection strings accordingly.
 
-    Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
--->
-TODO: add a visual
+## Select a method to deploy Azure Functions
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Azure Functions provides all the requirements to support the serverless API that's required in the bus-catching scenario. This Azure Function will be used to retrieve the real-time bus data, call Azure SQL Database, and call Azure Logic Apps.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. A visual like an image, table, or list
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
-
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+In the following exercise, after setting up some required resources, you'll deploy an Azure Function. You can deploy Azure Functions using the Azure portal, the Cloud Shell, or Visual Studio Code. In the exercise, you'll use the Cloud Shell.

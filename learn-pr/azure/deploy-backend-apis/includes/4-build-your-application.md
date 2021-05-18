@@ -1,108 +1,49 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The bus-catching scenario requires Azure Functions to process and analyze bus data. In this unit, you'll review the architecture of the solution that you'll implement in the next exercise (in the language of your choice).
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Catching the bus with Azure Functions
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+In the bus-catching scenario, Azure Functions can be used with a timer trigger. Since you want real-time data and results, you can set the function to run every 15 seconds. The Azure Function should then ideally perform the following tasks:
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+1. Determine what the monitored routes are
+1. Get the latest bus data
+1. Identify buses in monitored routes and activating a geofence
+1. Send an email notification for each activated bus
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+### Determine monitored routes with Azure Functions inputs
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+In the bus-catching scenario, a user of the solution probably doesn't want to monitor every single bus route from the real-time bus data feed. A user is probably only interested in a few routes that will help them get from where they are to where they are going.
 
-    Goal: Describe the part of the scenario covered in this exercise
+The first task for the Azure Function is to connect to Azure SQL Database and run a stored procedure to understand what the monitored routes are. In the previous exercise, you created a table in Azure SQL Database called `dbo.MonitoredRoutes` and inserted a single route `100113`. In production, users might have multiple or different routes that need to be monitored. In order to access this data from your Azure Function App, you must create a connection to Azure SQL Database and execute a stored procedure `web.GetMonitoredRoutes`. This stored procedure simply returns the monitored routes from the table. The Azure Function App will store it in a variable called `routes`.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+### Get the latest bus data with Azure Functions
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Next, the Azure Function needs to make an HTTP request to pull in the latest bus data from the King County Metro site (see an example here: <https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json>). This task can be done easily in any language by making a simple REST call from the function. The function then brings in the JSON results and stores it in a variable called `busData`. An example below is shown in Python and would vary slightly depending on the function language selected.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+```python
+def GetRealTimeFeed():
+    response = requests.get(GTFS_RT_FEED)
+    entities = json.loads(response.text)['entity']
+    busData = []
+    for entity in entities:
+        v = entity['vehicle']
+        busDetails = {
+            "DirectionId": v['trip']['direction_id'],
+            "RouteId": v['trip']['route_id'],
+            "VehicleId": v['vehicle']['id'],
+            "Position": {
+                "Latitude": v['position']['latitude'],
+                "Longitude": v['position']['longitude']
+            },
+            "TimestampUTC": dt.utcFROMtimestamp(v['timestamp']).isoformat(sep=' ')
+        }
+        busData.append(busDetails)    
+    return busData
+```
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+### Identify buses in monitored routes and activating a geofence using Azure SQL Database
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Next, you need to connect to Azure SQL Database and run a stored procedure to take that JSON data `busData` and store it in a table. Azure SQL Database supports JSON so this step is straightforward. The result of the stored procedure contains information about the buses that are activating a geofence, meaning they have entered or exited a geofence.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+### Send an email notification for each activated bus using Azure Logic Apps
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+Finally, for each bus that is activating a geofence, the Azure Function should call an Azure Logic App with the bus route number and the activation status (for example, `Enter` or `Exit`). This Azure Logic App should then do something to notify the user that their bus is entering or exiting the geofence. More on this piece of the solution will be covered later in the module.

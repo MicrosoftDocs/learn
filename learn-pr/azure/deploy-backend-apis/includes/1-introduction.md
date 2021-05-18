@@ -1,62 +1,22 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Functions is an event-driven, serverless compute platform that solves complex orchestration problems.
 
-    Goal: orient the learner to the area covered in this module
+Suppose you work for the transportation department of a major city and you want to increase the number of bus riders. To make it convenient to jump on the bus, you want to build a web app that allows users to monitor a bus’s progress along its route. By providing up to the second information on the whereabouts of the next bus along the route, you can help potential riders eliminate the situation where they either end up waiting for the bus or running to catch the bus and missing it. You also want to give users the option to get notified when a bus they want to take is nearby.
 
-    Heading: do not add an H1 or H2 title here, the auto-generated H1 will appear above this content automatically
+Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. There is a complete learning path dedicated to exploring each piece of the architecture below. In this module, you'll deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. You'll also use GitHub Actions for CI/CD.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+:::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Diagram of potential architecture for a solution to the catching the bus scenario.":::
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+By the end of the module, you'll be able to deploy Azure Function Apps in any language and integrate them with Azure SQL Database and Azure Logic Apps. You'll learn how to build backend APIs with Azure Functions and how services like Azure SQL Database and Azure Logic Apps can help in easing development.
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+## Learning objectives
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+By the end of the module, you will be able to:
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+- Build and deploy serverless, backend APIs in Azure.
+- Design Azure Functions in any language and integrate them with Azure SQL Database and Azure Logic Apps.
 
-    Heading: use the H2 "Example scenario"
+## Pre-requisites
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: use the H2 "What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: use the H2 "What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-TODO: add your terminal learning objective
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+- Ability to navigate the Azure portal
+- Familiarity with Visual Studio Code
+- Familiarity with CI/CD concepts such as GitHub Actions

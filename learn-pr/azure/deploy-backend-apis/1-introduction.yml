@@ -4,11 +4,12 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: In this module we will be building an app for real-time bus route data and mapping using a number of Azure services.
+  description: In this module, you will build an app to obtain, store, and process real-time bus data with Azure.
   ms.date: 3/24/2021  
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 05
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
