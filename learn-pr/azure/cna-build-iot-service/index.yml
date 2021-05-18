@@ -2,7 +2,7 @@
 uid: learn.azure.build-iot-service
 metadata:
   title: Build an IoT service
-  description: This module describes .
+  description: This module describes <!--Marcin, could you please fill this in?-->.
   ms.date: 04/29/2021
   author: mpolicht
   ms.author: jasdeb
@@ -11,10 +11,10 @@ metadata:
 title: Build an IoT Service
 summary: |
 abstract: |
-  In this module, you will:
-  - Describe architecture and components of IoT services
-  - Describe the characteristics and functionality of Azure Cosmos DB.
-  - Integrate Azure data stores with IoT pipelines
+  In this module, you'll:
+  - Describe the architecture and components of IoT services.
+  - Describe the characteristics and functionality of Microsoft Azure Cosmos DB.
+  - Integrate Azure data stores with IoT pipelines.
   - Implement Azure Cosmos DB for processing telemetry data.
   - Analyze and manage telemetry data.
   - Configure and manage IoT pipeline.
