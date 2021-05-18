@@ -3,27 +3,27 @@ Application performance often depends on how quickly it can read and write data.
 ## Disk performance measures
 
 To choose the right disk type, it's important that you understand the performance indicators. The following indicators express performance:
-<!--LM: IOPS is already spelled out in unit 2 so the acronym is ok here, unless you think it helps clarify the concept.-->
+
 - Input/output operations per second (IOPS). IOPS measure the rate at which the disk can complete a mix of read and write operations. IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to manage all the small and random I/O requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
 - Throughput. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called *data transfer rate* and is measured in megabytes per second (mbps). If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
 - Latency. Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped to 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
-<!--LM: Use "handle" with caution for sensory language. If it makes sense to replace it (e.g., manage), please replace all instance.-->
+
 ## IOPS vs. throughput
 
 Throughput and IOPS have a direct relationship. Changing one will have a direct impact on the other. To get a theoretical limit of throughput, you can use the following formula: IOPS x I/O size = throughput. It's important to consider both of these values when planning your application.
 
 Now that you know which disks are available in Azure, you need to match the disk with the correct VM. VMs have their own storage IOPS limits, which can impact the overall application performance when combined with the disk IOPS.
-<!--LM: Please note the change to lowercase "machine" in the following heading.-->
+
 ## Virtual machine IO capping
 
 If you don't size the VM correctly for the storage performance that an application requires, the VM itself becomes a bottleneck.
 
 For example, suppose that your application makes a request that requires 15,000 IOPS. You've provisioned a Standard_D8s_v3 VM, with one P30 OS disk and two premium SSD data disks with P40 SKU. Each data disk can handle 7,500 IOPS and eventually can meet the demand of the applications, but the VM itself has a maximum limit of 12,800 IOPS, which is the actual IOPS that the application will get. The following figure illustrates this example.
-<!--LM: The figure will need descriptive alt text. For example, "The diagram depicts VM IO capping..."-->
-:::image type="content" source="../media/03-vm-io-capping.PNG" alt-text="Diagram_for_VM-IO-capping." border="true":::
+
+:::image type="content" source="../media/03-vm-io-capping.PNG" alt-text="The_diagram_depicts_VM-IO-capping." border="true":::
 
 The scenario illustrated in the preceding example is known as VM IO Capped. In this scenario, the application is requesting an amount of throughput and IOPS that the disk can manage, but the VM can't accommodate these requirements.
-<!--LM: Please replace "due to" with another appropriate phrase. "Because of" works too.-->
+
 You can diagnose the performance issues caused by VM IO capping by using the following metrics:
 
 - VM Cached IOPS Consumed Percentage
@@ -33,8 +33,8 @@ You can diagnose the performance issues caused by VM IO capping by using the fol
 
 ## Disk IO capping
 
-You might come across other situations where the storage solution doesn't meet the application demands. However, the bottleneck might be caused if an incorrect performance tier of the disks is selected.
-<!--LM: Active voice would be even better but it might change the meaning "if you select the incorrect performance tier...-->
+You might come across other situations where the storage solution doesn't meet the application demands. However, the bottleneck might be caused if you select the incorrect performance tier of the disks.
+
 Consider the same example where the application requires 15,000 IOPS from the VM, and you've chosen the following setup:
 
 - Standard D16s_v4 with 25,600 IOPS
@@ -42,15 +42,15 @@ Consider the same example where the application requires 15,000 IOPS from the VM
 - Two P30 data disks, each with support of 5,000 IOPS
 
 In this scenario, the application's demand will be divided into three different requests:
-<!--LM: This is confusing with 2 bullet points but "three different requests"-->
+
 - 2,300 IOPS are requested from the OS disk
 - 5,000 IOPS are requested from each data disk
 
 The total IOPS that VM will return to the application will be 12,300 as a sum of each IOPS provided by the OS and data disks.
 
 This scenario is known as *disk IO capping*, when the disk itself can't meet the application demands.
-<!--LM: The image will need descriptive alt text.-->
-:::image type="content" source="../media/03-disk-io-capping.PNG" alt-text="Diagram_for_Disk-IO-capping." border="true":::
+
+:::image type="content" source="../media/03-disk-io-capping.PNG" alt-text="The_diagram_depicts_Disk-IO-capping." border="true":::
 
 To diagnose disk IO capping, use the following metrics:
 
