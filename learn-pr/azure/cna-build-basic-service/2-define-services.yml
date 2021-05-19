@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-basic-service.2-define-services
+title: Describe Azure IoT Central
+metadata:
+  title: Define Services
+  description: Description of Azure IoT Central
+  ms.date: 05/15/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-services.md)]

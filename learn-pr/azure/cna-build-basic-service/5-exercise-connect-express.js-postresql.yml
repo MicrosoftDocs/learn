@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.stream-iot-data.5-exercise-connect-express.js-postresql
+title: Exercise - Connect Express.js
+metadata:
+  title: Exercise - Connect Express.js
+  description: Implement processing of IoT telemetry
+  ms.date: 05/15/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-connect-express.js-postresql.md)]

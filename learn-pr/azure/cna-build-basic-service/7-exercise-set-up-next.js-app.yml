@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.build-basic-service.7-exercise-set-up-next.js-app
+title: Exercise - Set Up Next.js
+metadata:
+  title: Exercise - Set Up Next.js
+  description: Set up Next.js
+  ms.date: 05/15/21
+  author: mpolicht
+  ms.author: jasdeb 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-set-up-next.js-app.md)]
