@@ -4,15 +4,17 @@ Some Azure resources are deployed outside of resource groups, and are instead de
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your R&D team is designing a new toy as part of a top-secret project called Project Teddybear. They have asked you to create a dedicated Azure subscription for them to work within so that the rest of the company won't accidentally see any information about their project.
 
-They plan to use virtual machines within the subscription, but to save money they have asked for your help to ensure that only certain SKUs of virtual machines can be created within that subscription. They also need your assistance to create a virtual network in the subscription, because they will eventually need to connect that network to the main corporate network, which you help to manage.
+The R&D team plans to use virtual machines within the subscription, but to save money they've asked for your help to ensure that only certain SKUs of virtual machines can be created within that subscription. They also need your assistance to create a virtual network in the subscription because they eventually need to connect that network to the main corporate network, which you help to manage.
 
-You know the R&D team has recently been given a lot of new funding, so they're likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
+Here's a diagram that shows how these components fit within their Azure subscription:
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows an Azure subscription, a policy, and a resource group containing a virtual network." border="false":::
 
+You know the R&D team has recently been given a lot of new funding, so they're likely to have more secret projects in the future. You decide to create reusable templates for each of their special projects.
+
 ## What will we be doing?
 
-In this module, you'll learn about the different scopes that Azure resources can be deployed at, and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and a resource group. You'll also create a Bicep file that deploys to a management group. In the process, you'll learn about several features of Bicep, including:
+In this module, you'll learn about the different scopes that Azure resources can be deployed at and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and to a resource group. You'll also create a Bicep file that deploys to a management group. In the process, you'll learn about several features of Bicep, including:
 
 - How to set the scope of a Bicep file by using the `targetScope` keyword.
 - How to use modules and the `scope` keyword to deploy to different scopes within one deployment.
@@ -39,4 +41,3 @@ To follow along with the exercises in the module, you'll need:
 - Either:
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
   - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
-    

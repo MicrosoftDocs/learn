@@ -11,13 +11,13 @@ metadata:
   ms.prod: learning-azure
 title: Deploy resources to different scopes with Bicep
 summary: |
-  This module describes how you can deploy Azure resources at the subscription, management group, and tenant scopes.
-  You'll learn what these scopes are, why you'd use them, and how you create Bicep code to deploy them.
-  You'll also learn how to create a single set of Bicep files that deploy across multiple scopes in one operation.
+  Deploy Azure resources at the subscription, management group, and tenant scope.
+  Learn what these resources are, why you'd use them, and how you create Bicep code to deploy them.
+  Also learn how to create a single set of Bicep files that deploy across multiple scopes in one operation.
 abstract: |
   After completing this module, you'll be able to: 
-    - Explain resource scopes including tenant-, management group-, and subscription-level resources.
-    - Deploy resources at specific scopes using Bicep templates.
+    - Explain resource scopes including tenant-level, management group-level, and subscription-level resources.
+    - Deploy resources at specific scopes by using Bicep templates.
     - Create Bicep files that deploy at multiple scopes.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with creating and deploying Bicep templates.
