@@ -41,7 +41,7 @@ In Azure, a cloud hosted service:
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
 
-<!--Andy, this first sentence should be a definition according to the template "Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you..."). Is this edit here OK?"-->*Decimation* is a process that compresses a model and removes polygons, so the model doesn't render in full detail. When viewing content on untethered devices, you might choose to use *decimation*. Decimation can simplify your 3D models by removing polygons from them.
+3D models are comprised of polygons. *Decimation* is a process that compresses a model and removes polygons, so the model doesn't render in full detail. When viewing content on untethered devices, you might choose to use decimation to simplify your 3D models by removing polygons from them.
 
 > [!NOTE]
 > Decimation simplifies your models to the level required to be able to render on your hardware.
