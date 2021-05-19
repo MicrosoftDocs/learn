@@ -6,7 +6,7 @@ Implementing the equivalent functionality on your own, without the abstraction l
 
 ## References
 
-* [Azure CycleCloud Documentation](https://docs.microsoft.com/azure/cyclecloud/) <!-- AU: Acrolinx suggested we not link to a specific version so I changed the link from this: https://docs.microsoft.com/azure/cyclecloud/?view=cyclecloud-8 -ID -->
+* [Azure CycleCloud Documentation](https://docs.microsoft.com/azure/cyclecloud/) 
 * [Azure CycleCloud](https://azure.microsoft.com/en-us/features/azure-cyclecloud/)
 * [What is Azure CycleCloud?](https://docs.microsoft.com/azure/cyclecloud/overview)
 * [Quickstart - Install CycleCloud using the Marketplace image](https://docs.microsoft.com/azure/cyclecloud/qs-install-marketplace)
