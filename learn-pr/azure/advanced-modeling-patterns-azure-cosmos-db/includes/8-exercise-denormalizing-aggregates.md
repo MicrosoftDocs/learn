@@ -31,7 +31,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. You should now see this code below in Azure Cloud Shell.
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code":::
 
 ## Complete the code to update total sales orders
 
@@ -39,7 +39,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Type **CTRL + G**, then type in **487** to go to that line in the file.
 1. You should now see this code below in Azure Cloud Shell.
 
-    :::image type="content" source="../media/8-create-order-function.png" alt-text="create new order":::
+    :::image type="content" source="../media/8-create-order-function.png" lightbox="../media/8-create-order-function.png" alt-text="create new order":::
 
 1. This function creates a new sales order and updates the customer record using transactional batch.
 1. First, the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and id.
@@ -54,7 +54,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Your screen should now look like this.
 
-    :::image type="content" source="../media/8-create-order-salesOrderCount.png" alt-text="increment sales order count":::
+    :::image type="content" source="../media/8-create-order-sales-order-count.png" lightbox="../media/8-create-order-sales-order-count.png" alt-text="increment sales order count":::
 
 ## Complete the code to implement transactional batch
 
@@ -81,13 +81,13 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Finally we will check whether the transaction was successful by looking at the response object.
 1. Your screen should now look like this below.
 
-    :::image type="content" source="../media/8-create-order-transactional-batch.png" alt-text="transactional batch":::
+    :::image type="content" source="../media/8-create-order-transactional-batch.png" lightbox="../media/8-create-order-transactional-batch.png" alt-text="transactional batch":::
 
 1. Next type **CRTL + S** to save our changes and **CTRL + Q** to quit the editor.
 1. Next type **dotnet build** to compile our project and **dotnet run** to execute it.
 1. Your screen should now look like this with the main menu for the application.
 
-    :::image type="content" source="../media/5-main-menu.png" alt-text="main menu":::
+    :::image type="content" source="../media/5-main-menu.png" lightbox="../media/5-main-menu.png" alt-text="main menu":::
 
 ## Query for the customer and their sales orders
 
@@ -99,7 +99,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Note the `salesOrderCount` property shows two sales orders.
 1. Your screen should look like this.
 
-    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" alt-text="query customer and orders initial":::
+    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="query customer and orders initial":::
 
 ## Create new sales order and update total sales orders in a transaction
 
@@ -113,7 +113,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Note the `salesOrderCount` property shows three sales orders.
 1. Your screen should look like this.
 
-    :::image type="content" source="../media/8-query-customer-and-orders-next.png" alt-text="updated customer record":::
+    :::image type="content" source="../media/8-query-customer-and-orders-next.png" lightbox="../media/8-query-customer-and-orders-next.png" alt-text="updated customer record":::
 
 ## Delete an order using transactional batch
 
@@ -155,7 +155,11 @@ The way we delete an order works exactly the same as the way we create an order 
 1. Next type **dotnet run** to launch our application again.
 1. Then finally, type **e** to run the query.
 
-    :::image type="content" source="../media/8-top-10-customers-initial.png" alt-text="top 10 customers initial results":::
+    :::image type="content" source="../media/8-top-10-customers-initial.png" lightbox="../media/8-top-10-customers-initial.png" alt-text="top 10 customers initial results":::
 
 1. Something you may not realize is the top 10 customers query is a cross-partition query that fans-out across all the partitions in our container.
 1. In the companion lab to this one, it was pointed out that you should strive to avoid cross-partition queries. However, in reality they can be ok in situations where the container is still small or if the query is not run often. If this query frequently executed or the container was exceptionally large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
+
+## Summary
+
+In this exercise you learned how can use denormalizing of an aggregate to allow us to write our top 10 customers query for our e-commerce site. You also learned how, when data exists in the same logical partition, the aggregate can be updated in an transaction through the use of the transactional batch feature in the Cosmos DB .NET SDK.

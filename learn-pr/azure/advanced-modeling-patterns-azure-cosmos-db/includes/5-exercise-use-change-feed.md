@@ -31,7 +31,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. You should now see this in Azure Cloud Shell
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code":::
 
 ## Complete the code for Change Feed
 
@@ -39,7 +39,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Type **CTRL + G**, then type in **605** to go to that line in the file.
 1. You should now see this.
 
-    :::image type="content" source="../media/5-change-feed-function.png" alt-text="change feed function":::
+    :::image type="content" source="../media/5-change-feed-function.png" lightbox="../media/5-change-feed-function.png" alt-text="change feed function":::
 
 1. Notice on lines 591 and 592 two container references. We need to update those with the correct container names. Change Feed works by creating an instance of Change Feed Processor on the container reference. In this case we are watching for changes to the productCategory container so replace **{container to watch}** with **productCategory**.
 1. When a product category name gets updated we need to update every product in that category with the new product category name. So we need a container reference to the product container. Replace **{container to update}** with **product**.
@@ -66,7 +66,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Your code should now look like this.
 
-    :::image type="content" source="../media/5-change-feed-function-delegate-code.png" alt-text="change feed delegate complete":::
+    :::image type="content" source="../media/5-change-feed-function-delegate-code.png" lightbox="../media/5-change-feed-function-delegate-code.png" alt-text="change feed delegate complete":::
 
 1. Next type **CTRL + G** and enter **650** to find our `UpdateProductCategory()` function. Here we need to write some code that will update each product in the product container with the new category name captured by Change Feed. This function does two things. It first queries the product container for all the products for the passed in `categoryId`. It then updates each product with the new product category name
 1. Locate the line that starts with **//To-Do:**.
@@ -92,19 +92,19 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Your code should now look like this.
 
-    :::image type="content" source="../media/5-change-feed-function-update-product.png" alt-text="change feed update product":::
+    :::image type="content" source="../media/5-change-feed-function-update-product.png" lightbox="../media/5-change-feed-function-update-product.png" alt-text="change feed update product":::
 
 1. Next type **CRTL + S** to save our changes and **CTRL + Q** to quit the editor.
 1. Next type **dotnet build** to compile our project and **dotnet run** to execute it.
 1. Your screen should now look like this with the main menu for the application.
 
-    :::image type="content" source="../media/5-main-menu.png" alt-text="main menu":::
+    :::image type="content" source="../media/5-main-menu.png" lightbox="../media/5-main-menu.png" alt-text="main menu":::
 
 ## Running our Change Feed sample
 
 1. First start the Change Feed Processor by pressing **a**. Your screen should look like this.
 
-    :::image type="content" source="../media/5-change-feed-start.png" alt-text="start change feed":::
+    :::image type="content" source="../media/5-change-feed-start.png" lightbox="../media/5-change-feed-start.png" alt-text="start change feed":::
 
 1. Press any key to return to the main menu.
 1. Next we will Update the product category name. Menu item **b** does the following things.
@@ -116,7 +116,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Press **b** from the main menu and follow the prompts until change feed runs a second time, then hold. Your screen will look like this below.
 
-    :::image type="content" source="../media/5-change-feed-update-category-name.png" alt-text="change feed update category name.":::
+    :::image type="content" source="../media/5-change-feed-update-category-name.png" lightbox="../media/5-change-feed-update-category-name.png" alt-text="change feed update category name.":::
 
 1. If you clicked too far and went back to the main menu. Just click **b** again and you can watch the changes again.
 

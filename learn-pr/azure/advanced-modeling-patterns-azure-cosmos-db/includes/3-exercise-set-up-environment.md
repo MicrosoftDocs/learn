@@ -7,16 +7,16 @@ The data returned is typical for a web page returned to a user who clicks on a p
 
 ## Set up environment
 
-In the cloud shell copy and paste the following commands. These commands will clone a GitHub repository, run a script which will create a new Cosmos DB account, then build and start the app you will use to populate the database and complete the exercises. This should take less than 10 minutes to complete.
+In Cloud Shell copy and paste the following commands. These commands will clone a GitHub repository, run a script which will create a new Cosmos DB account, then build and start the app you will use to populate the database and complete the exercises. This should take less than 10 minutes to complete.
 
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-model-partition-data-azure-cosmos-db.git
-    cd mslearn-model-partition-data-azure-cosmos-db
-    bash init-sandbox.sh
-    cd modeling
-    dotnet build
-    dotnet run --load-data
-    ```
+```bash
+git clone https://github.com/MicrosoftDocs/mslearn-model-partition-data-azure-cosmos-db.git
+cd mslearn-model-partition-data-azure-cosmos-db
+bash init-sandbox.sh
+cd modeling
+dotnet build
+dotnet run --load-data
+```
 
 ## Querying for the product category name
 
