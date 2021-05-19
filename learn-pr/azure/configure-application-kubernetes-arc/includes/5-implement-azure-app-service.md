@@ -15,7 +15,7 @@ This is the fourth in this module's sequence of exercises. These exercises guide
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
-:::image type="content" source="../media/u5-exercise4.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fourth exercise (Implement App Service on the Azure Arc-enable Kubernetes cluster)." border="false":::
+:::image type="content" source="../media/5-exercise-4.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fourth exercise (Implement App Service on the Azure Arc-enable Kubernetes cluster)." border="false":::
 
 ## Task 1: Prepare for implementing App Service on the Azure Arc enabled Kubernetes cluster
 
@@ -124,9 +124,9 @@ Use the following steps to install the Application services extension on your Az
     > [!NOTE]
     > To install the extension without support for Log Analytics, use the following command:
 
-    > ```azurecli-interactive
-    > az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config"
-    > ```
+    ```azurecli-interactive
+    az k8s-extension create -g $ARC_RG_NAME --name $EXTENSION_NAME --cluster-type connectedClusters -c $ARC_CLUSTER_NAME --extension-type 'Microsoft.Web.Appservice' --release-train stable --auto-upgrade-minor-version true --scope cluster --release-namespace $APP_SERVICE_NAMESPACE_NAME --configuration-settings "Microsoft.CustomLocation.ServiceAccount=default" --configuration-settings "appsNamespace=${APP_SERVICE_NAMESPACE_NAME}" --configuration-settings "clusterName=${KUBE_ENV_NAME}" --configuration-settings "loadBalancerIp=${K8S_PIP}" --configuration-settings "buildService.storageClassName=default" --configuration-settings "buildService.storageAccessMode=ReadWriteOnce" --configuration-settings "envoy.annotations.service.beta.kubernetes.io/azure-load-balancer-resource-group=${K8S_CLUSTER_RG_NAME}" --configuration-settings "customConfigMap=${APP_SERVICE_NAMESPACE_NAME}/kube-environment-config"
+    ```
 
 1. Run the following command to validate the installed extension's status:
 

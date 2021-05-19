@@ -13,7 +13,7 @@ This exercise is the first in this module's sequence of exercises. They guide yo
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
-:::image type="content" source="../media/u2-exercise1.png" alt-text="Depiction of this module's exercise sequence with additional substeps illustrated for the first exercise (Prepare the lab environment)." border="false":::
+:::image type="content" source="../media/2-exercise-1.png" alt-text="Depiction of this module's exercise sequence with additional substeps illustrated for the first exercise (Prepare the lab environment)." border="false":::
 
 ## Task 1: Install the prerequisite software tools
 

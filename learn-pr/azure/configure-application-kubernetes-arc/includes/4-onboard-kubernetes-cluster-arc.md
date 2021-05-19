@@ -17,8 +17,7 @@ This is the third in this module's sequence of exercises. These exercises guide 
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
-:::image type="content" source="../media/u4-exercise3.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the third exercise (Connect the Kubernetes cluster to Azure Arc)." border="false":::
-
+:::image type="content" source="../media/4-exercise-3.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the third exercise (Connect the Kubernetes cluster to Azure Arc)." border="false":::
 
 ## Task 1: Prepare for connecting the AKS cluster to Azure Arc
 
@@ -26,7 +25,7 @@ Before you connect the AKS cluster to Azure Arc, ensure relevant prerequisites a
 
 Use the following steps to implement these prerequisites:
 
-1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commmands set values for variables that assign names to the resource group that will contain the Azure Arc resources and the Azure Arc-connected cluster resource:
+1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that will contain the Azure Arc resources and the Azure Arc-connected cluster resource:
 
     ```azurecli-interactive
     K8S_ARC_PREFIX=k8sArc
@@ -76,12 +75,12 @@ Use the following steps to connect the AKS cluster to Azure Arc:
     ```azurecli-interactive
     kubectl get pods -n azure-arc
     ```
-    
+
     > [!NOTE]
     > Verify that the output includes clusterconnect-agent pods
 
 1. To validate the deployment, in the web browser that displays the Azure Cloud Shell, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the Azure Arc resource representing your AKS cluster, and then navigate to its **Overview** blade.
 
-:::image type="content" source="../media/u4-arc-cluster-overview.png" alt-text="Screenshot that depicts the **Overview** blade of the Kubernetes-Azure Arc cluster." border="false":::
+:::image type="content" source="../media/4-arc-cluster-overview.png" alt-text="Screenshot that depicts the **Overview** blade of the Kubernetes-Azure Arc cluster." border="false":::
 
 Congratulations! You've completed the third exercise of this module. You've connected the AKS cluster that you previously deployed to Azure Arc and prepared it for installation of the Application services extension in the next exercise.

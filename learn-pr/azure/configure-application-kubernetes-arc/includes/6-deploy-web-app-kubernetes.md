@@ -20,9 +20,9 @@ These are the two final exercises in the module's sequence of exercises. These e
 1. Deploy an App Service web app to the Azure Arc enabled Kubernetes cluster.
 1. Clean up the lab environment.
 
-:::image type="content" source="../media/u6-exercise5.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fifth exercise (Deploy an App Service web app to the Azure Arc-enable Kubernetes cluster)." border="false":::
+:::image type="content" source="../media/6-exercise-5.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the fifth exercise (Deploy an App Service web app to the Azure Arc-enable Kubernetes cluster)." border="false":::
 
-:::image type="content" source="../media/u6-exercise6.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the sixth exercise (Clean up the lab environment)." border="false":::
+:::image type="content" source="../media/6-exercise-6.png" alt-text="Depiction of this module's exercise sequence with additional sub-steps illustrated for the sixth exercise (Clean up the lab environment)." border="false":::
 
 ## Task 1: Create a web app in an App Service Kubernetes environment
 
@@ -177,6 +177,7 @@ Use the following step to delete the remaining Azure resources you provisioned t
     az group delete --name $K8S_CLUSTER_RG_NAME --no-wait --yes
     ```
 
-    >**Note**: The command executes asynchronously (as determined by the **--nowait** parameter). While you'll be able to run another Azure CLI command in the same shell immediately after running this command, it'll take a few minutes before the resource groups are actually removed.
+    > [!NOTE]  
+    > The command executes asynchronously (as determined by the **--nowait** parameter). While you'll be able to run another Azure CLI command in the same shell immediately after running this command, it'll take a few minutes before the resource groups are actually removed.
 
 Congratulations! You've completed the last two exercises of this module. You've created a web app in Azure App Service on Kubernetes with Azure Arc. You've also deployed a Node.js-based application into the web app by using the zip-file deployment method, validated the deployment, and removed any Azure resources that you'll no longer use.
