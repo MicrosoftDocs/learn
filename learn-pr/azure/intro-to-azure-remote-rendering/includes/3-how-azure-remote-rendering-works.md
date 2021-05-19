@@ -45,7 +45,7 @@ Azure Remote Rendering consists of a number of components, which in turn consist
 Conversion is the process that prepares your 3D assets for use with Azure Remote Rendering. Conversion is required to make rendering as efficient as possible at runtime. You start this process by uploading your models to Azure Blob storage.
 
 > [!NOTE]
-> Currently, Azure Remote Rendering can convert both <!--Andy, looks like MS prefers use of just FBX, not the AutoDesk Filmbox. Also, looks like the acronym should be GLTF? Also not on term studio or MS style.--> Autodesk Filmbox (FBX) and Graphics Language Transmission Format (GLFT) model formats.
+> Currently, Azure Remote Rendering can convert both FBX and Graphics Language Transmission Format model formats.
 
 Next, your model must be converted before use with Azure Remote Rendering.  After the model is converted, Azure writes the converted model back to your Blob storage.
 
