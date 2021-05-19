@@ -16,12 +16,12 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Open the **Extensions** blade from the left-hand taskbar. We recommend installing the following extensions:
 
-    1. **Azure Account**: This extension allows you to authenticate to Azure.
-    1. **Azure Functions**: This extension allows you to manage Azure Functions.
-    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
-    1. **Azure Resources**: This extension allows you to manage Azure resources.
-    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
-    1. **Live Server**: This extension enables you to run web applications locally with ease.
+    - **Azure Account**: This extension allows you to authenticate to Azure.
+    - **Azure Functions**: This extension allows you to manage Azure Functions.
+    - **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
+    - **Azure Resources**: This extension allows you to manage Azure resources.
+    - **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
+    - **Live Server**: This extension enables you to run web applications locally with ease.
 
 1. The main code sample is hosted on GitHub. Sign into GitHub in Visual Studio Code using your GitHub account so you can clone, commit, push, and pull from Visual Studio Code. If you do not have a GitHub account, [create one here](https://github.com/join).
 
