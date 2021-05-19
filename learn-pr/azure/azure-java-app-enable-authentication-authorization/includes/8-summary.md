@@ -31,7 +31,7 @@ You can delete your application registration on Azure Portal as follows:
 1. In your application registration page, select **Delete** in the top left corner.
 1. In the **Delete app registration** prompt, check the box indicating that you understand the implications of deleting the application. Then select **Delete** to confirm the deletion of the application.
 
-## Learn More
+## References
 
 - [Authentication flows and app scenarios](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)
 - [MSAL overview](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)
