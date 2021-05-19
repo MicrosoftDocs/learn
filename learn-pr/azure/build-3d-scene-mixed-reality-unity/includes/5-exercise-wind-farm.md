@@ -1,6 +1,6 @@
 Unity Prefabs let you to create, configure, and store a GameObject as a reusable project asset. The dynamic terrain Prefab Asset is built using the Microsoft Maps SDK and connects to the Bing Maps 3D service. To get started, open up the blank **MainScene** we've included for you to develop throughout the learning path.
 
-## Open the MainScene Scene
+## Open the MainScene scene
 
 1. [Download and Unzip the compressed folder from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) and take note of the folder location to where you extracted the project
 2. In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
@@ -12,7 +12,7 @@ Unity Prefabs let you to create, configure, and store a GameObject as a reusable
 
 We'll explore the benefits of static maps and dynamic maps in this module, starting by adding the static terrain and then adding the Maps SDK terrain.  
 
-## Add Static Terrain
+## Add static terrain
 
 1. In the Project Panel, open the **Assets > Art > Prefabs** folder
 2. Drag the Terrain Model named **Static Terrain** into the scene editor window
@@ -29,7 +29,7 @@ If you haven’t already, you need to [create a Bing Maps account](/bingmaps/get
 
 When you create a Developer Key, be sure to select Basic as the key type and **Windows Application** as the Application Type.
 
-## Add Dynamic Terrain and configure Bing Maps data feed
+## Add dynamic terrain and configure Bing Maps data feed
 
 1. From the Project panel, drag in the following Prefab into the **Hierarchy** panel:
     - **Assets > Art > Prefabs > Bing Maps Design**
