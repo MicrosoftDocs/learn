@@ -33,7 +33,7 @@ Ultra Disks are a new disk type and have some limitations:
 
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if Premium SSDs are causing performance bottlenecks, consider using Ultra Disks.
 
->[Note!]
+>[!Note]
 >You're charged for using Ultra Disks based on the provisioned size, IOPS, and throughput.
 
 ## Premium SSD
@@ -41,8 +41,8 @@ Some workloads place intensive loads on disk storage. For example, top-tier data
 Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to Ultra Disks. Premium disks don't have the current limitations of Ultra Disks. For example, they're available in all regions and you can use them with VMs that are located outside of Availability Zones.
 
 You can adjust the performance of Premium SSDs by first detaching these disks from their VMs. Also, you can use Premium SSDs only with larger VM sizes that are compatible with premium storage.
-<!--LM: Please fix the syntax for the following note.-->
-> [Note!]
+
+> [!Note]
 > At the time of writing this module, Microsoft announced, in private preview, an option to adjust the performance tier on Premium SSD disks while they're used within VMs.
 
 The following table provides examples that illustrate the high performance of Premium SSDs.
@@ -100,7 +100,7 @@ The following table provides the performance characteristics of standard HDDs in
 
 Use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
 
-### Cost of Azure-managed disks
+### Cost of Azure managed disks
 
 Use the following considerations to estimate the price for Azure managed disks.
 
@@ -109,7 +109,7 @@ Use the following considerations to estimate the price for Azure managed disks.
 - Outbound data transfers. Data transfer within the same zone is free of charge. Between zones, data transfer is charged per GB and transfer between different regions generates additional cost.
 - Transactions. For Standard SSD disks, billing is based on the number of I/O operations that are less than or equal to 256 KiB of throughput. For Standard HDD disks, each I/O operation is considered as a transaction, regardless of the throughput.
 
->[Note!]
+> [!Note]
 > Premium SSD and Ultra Disks aren't charged based on transactions.
 
 The cost of Ultra Disks depends on its size and performance configurations. You're billed based on the provisioned size, IOPS, and throughput.
