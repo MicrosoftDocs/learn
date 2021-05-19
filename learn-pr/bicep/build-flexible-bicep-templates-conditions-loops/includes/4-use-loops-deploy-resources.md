@@ -1,6 +1,6 @@
 Often, you need to deploy multiple resources that are very similar. By adding loops to your Bicep files, you can avoid the need to repeat resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy. You can even customize the properties for each instance.
 
-For your toy company, you need to deploy backend infrastructure, including some SQL server, to support launch of the new smart teddy bear. You need to deploy a dedicated SQL server into each country where the toy is going to be available, so that you can comply with data protection laws for each country. Apart from their locations, each server will be configured the same way as all the other servers. You want to use Bicep code to deploy your servers, and a parameter should allow you to specify the regions into which the SQL servers should be deployed.
+For your toy company, you need to deploy backend infrastructure, including some Azure SQL logical servers, to support the launch of the new smart teddy bear. You need to deploy a dedicated SQL server into each country where the toy is going to be available, so that you can comply with data protection laws for each country. Apart from their locations, each server will be configured the same way as all the other servers. You want to use Bicep code to deploy your servers, and a parameter should allow you to specify the regions into which the SQL servers should be deployed.
 
 In this unit, you will learn how to deploy multiple instances of resources by using _copy loops_.
 
@@ -35,7 +35,7 @@ Notice that the `name` property includes the expression `i+1`. The first value o
 
 ## Filter items with loops
 
-You may come across situations where you would want to use copy loops together with conditions to deploy resources. You can do this by combining the `if` keyword and `for` keywords.
+You may come across situations where you would want to use copy loops together with conditions to deploy resources. You can do this by combining the `if` and `for` keywords.
 
 In the following example, an array parameter is used to define a set of SQL servers. A condition is used with the copy loop to only deploy SQL servers when the `environmentName` property of the loop object equals `Production`:
 
