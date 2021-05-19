@@ -1,4 +1,4 @@
-Begin by opening the MainScene that has been created for you.  Essentially, this is a blank Scene that you'll continue to evolve and develop over this learning path.
+Unity Prefabs let you to create, configure, and store a GameObject as a reusable project asset. The dynamic terrain Prefab Asset is built using the Microsoft Maps SDK and connects to the Bing Maps 3D service. To get started, open up the blank **MainScene** we've included for you to develop throughout the learning path.
 
 ## Open the MainScene Scene
 
