@@ -144,7 +144,7 @@ A web content deployment is often a good candidate for migration to the cloud be
 
 The following image depicts a typical setup for running a web server in an Azure virtual network with Azure NetApp Files as the shared storage.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-web.png" alt-text="Network diagram depicting a typical setup for running a web server in an Azure virtual network with Azure NetApp Files as the shared storage for the server.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-web.png" alt-text="A typical setup for running a web server in an Azure virtual network with Azure NetApp Files as the shared storage for the server.":::
 
 ### Should the Windows Virtual Desktop team use Azure NetApp Files?
 
@@ -154,7 +154,7 @@ Our energy company has several thousand employees within its WVD deployment, wit
 
 The image below depicts one possible architecture the company could use for a personal desktop-based WVD deployment. Users are mapped to specific desktop pods, where a *pod* is a spoke virtual network with a pool of virtual machines and an Azure NetApp File designated subnet that uses a volume from the overall Azure NetApp Files capacity pool. Each pool has just under 1,000 virtual machines—one for each user. Azure NetApp Files can easily handle that many personal desktops per single-session host pool VNet. If more personal desktops are needed, it's easy to add more pods.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-wvd.png" alt-text="Network diagram depicting a typical setup for running several pools of Windows Virtual Desktops in an Azure virtual network with Azure NetApp Files providing shared storage for each virtual desktop pool.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-wvd.png" alt-text="A typical setup for running several pools of Windows Virtual Desktops in an Azure virtual network with Azure NetApp Files providing shared storage for each virtual desktop pool.":::
 
 ### Should the research and development team use Azure NetApp Files?
 
@@ -170,7 +170,7 @@ Most of these tasks require compute- and data-intensive operations such as compu
 
 The image below depicts a possible setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application. An R&D team member accesses the front end through a Windows or Linux virtual machine. The HPC application runs in the Compute subnet, which consists of a scale set of Linux virtual machines. The shared storage for the scale set comes from a designated subnet containing an Azure NetApp Files instance.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-hpc.png" alt-text="Network diagram depicting a typical setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-hpc.png" alt-text="A typical setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application.":::
 
 <!-- 6. Guidance summary (optional) ------------------------------------------------
 
