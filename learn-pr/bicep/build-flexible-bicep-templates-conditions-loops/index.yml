@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.bicep-conditions-loops
+metadata:
+  moduleType: standard
+  title: Build flexible Bicep templates by using conditions and loops
+  description: Build advanced Bicep templates by using conditions to conditionally deploy resources and use loops to deploy multiple instances of resources.
+  ms.date: 05/09/2021
+  author: akasnik
+  ms.author: akasnik
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Build flexible Bicep templates by using conditions and loops
+summary: |
+  Learn how conditions enable you to deploy resources only when specific constraints are met. Also learn how loops enable you to deploy multiple resources that all have similar properties.
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  After completing this module, you'll be able to:
+    - Conditionally deploy resources within a Bicep template.
+    - Deploy multiple instances of resources using loops.
+    - Use output and variable loops.
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - Familiarity with the basic Bicep template structure and syntax.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - intermediate
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:
+- learn.azure.bicep-conditions-loops.introduction
+- learn.azure.bicep-conditions-loops.use-conditions-deploy-resources
+- learn.azure.bicep-conditions-loops.exercise-conditions
+- learn.azure.bicep-conditions-loops.use-loops-deploy-resources
+- learn.azure.bicep-conditions-loops.exercise-loops
+- learn.azure.bicep-conditions-loops.use-loops-advanced
+- learn.azure.bicep-conditions-loops.use-loops-with-variables-and-outputs
+- learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
+- learn.azure.bicep-conditions-loops.knowledge-check
+- learn.azure.bicep-conditions-loops.summary
+badge:
+  uid: learn.azure.bicep-conditions-loops.badge

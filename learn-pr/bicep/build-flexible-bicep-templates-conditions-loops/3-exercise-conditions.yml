@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.bicep-conditions-loops.exercise-conditions
+title: Exercise - Conditionally deploy resources
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Conditionally deploy resources
+  description: Learn how to conditionally deploy resources based on Boolean values and expressions.
+  ms.date: 05/09/2021
+  author: akasnik
+  ms.author: akasnik
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-conditions.md)]
