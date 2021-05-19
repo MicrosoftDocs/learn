@@ -120,7 +120,7 @@ Azure API Management provides several service tiers, each of which offers a dist
 |**Service Level Agreement (SLA)**     | 99.95%        | None        | 99.95%        | 99.95%        | 99.99%        |
 |**Developer portal?**     | No         | Yes        | Yes        | Yes        | Yes        |
 |**Built-in analytics?**     | No        | Yes        | Yes        | Yes        | Yes        |
-|**Throughput (estimates requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
+|**Throughput (estimated requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
 |   |   |   |   |   |   |
 
 > [!NOTE]
