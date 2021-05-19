@@ -2,8 +2,6 @@ Azure CycleCloud is a Linux-based web application, which you can install and use
 
 Imagine you want to simplify provisioning a new HPC cluster into your company's Azure subscription by using Azure CycleCloud. You'll also want to ensure that the cluster you deploy in Azure will closely match the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you'll follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM.
 
-<!-- SME or CE: To remove references to Contoso, I changed the above paragraph. Feel free to delete this comment as I feel comfortable with my changes. It used to be: "Recall that you wanted to simplify provisioning a new HPC cluster into the Contoso's Azure subscription by leveraging Azure CycleCloud. You also want to ensure that the cluster you deploy in Azure will match, as closely as possible, the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you will follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM."-->
-
 ## Deploy an Azure CycleCloud Azure VM
 
 You'll start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image.
@@ -27,7 +25,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | Resource group | Select **Create new**, in the **Name** text box, enter **cyclecloud-rg**, and select **OK**. |
     | Virtual machine name | Enter **cyclecloud-vm**. |
     | Region | Select the name of any Azure region that's close to your location where you can provision Azure VMs. |
-    | Availability options | **no infrastructure redundancy required** | <!--ID/SME: Does this require bold? Is it a UI option? If so, it could be "Select..."-->
+    | Availability options | **no infrastructure redundancy required** | 
     | Image | Accept the default selection matching the marketplace image you chose in the previous step. |
     | Azure Spot instance | Leave the checkbox unselected. |
     | Size | Select **See all sizes**, on the **Select a VM size** blade, select the **Standard E4s v3** entry, and then enter **Select**. |
@@ -48,14 +46,14 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
 
     > [!NOTE]
     > Azure provides the ability to automatically generate an SSH key pair and allows you to store it for future use.
-<!--ID/SME: Please ensure that the following edit retains the meaning.-->
+
 1. Select **Next: Disks >**. On the **Disks** tab of the **Create a virtual machine** blade, configure the following settings (leave others with their default values):
 
     | Setting | Value |
     | --- | --- |
     | OS disk type | Ensure that the **Premium SSD** entry is selected. |
     | Host caching for data disk | Ensure that the **Read-only** entry is selected. |
-<!--ID/SME: Please ensure that the following edit retains the meaning.-->
+
 1. Select **Next: Networking >**. On the **Networking** tab of the **Create a virtual machine** blade, directly below the **Virtual network** drop-down list, select **Create new**. On the **Create virtual network** blade, by default, the address space is set to **/16**, with a single subnet of **/24** size.
 1. On the **Create virtual network** blade, select **Discard** to proceed with the default settings, without making any changes.
 
