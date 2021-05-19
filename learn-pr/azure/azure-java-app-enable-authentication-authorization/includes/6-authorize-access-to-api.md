@@ -5,26 +5,26 @@ In this unit, you will learn how MSAL can help you get authorized access to Micr
 ## API permissions and scopes
 
 Web services secured by Azure AD define a set of permissions that provide access to the API functionality and data exposed by that service. An application can request these permissions from users and administrators, who must approve the request before the application can access data or act on a user's behalf. As an example, Microsoft Graph has defined permissions to do the following tasks, among others:
+
 * Read a user's calendar
 * Write to a user's calendar
 * Send mail as a user
 
-Users and administrators can exercise control and know what data the application can access. 
-Before your application can access an API secured by Microsoft, you will neeed to provide the application permissions to perform the actions. 
+Users and administrators can exercise control and know what data the application can access.
+Before your application can access an API secured by Microsoft, you will neeed to provide the application permissions to perform the actions.
 
 Azure AD supports two types of permissions: delegated permissions and application permissions.
 
-* **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests. The app is delegated permission to act as the signed-in user when it makes calls to the target API. Some high-privileged permissions require administrator consent. 
+* **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests. The app is delegated permission to act as the signed-in user when it makes calls to the target API. Some high-privileged permissions require administrator consent.
 
 * **Application permissions** are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons. Only an administrator can consent to application permissions.
 
-These API permissions can be assigned to your app registration from the Azure Portal. 
+These API permissions can be assigned to your app registration from the Azure Portal.
 
 ### Scopes
 
 Azure AD implements the OAuth 2.0 authorization protocol through which an application can access web-hosted resources on behalf of a user.
 In OAuth 2.0, these types of permission sets are called **scopes**.  When making an authorization request to Azure AD, an application requests the permissions it needs by specifying the permission in the `scope` query parameter of the request. For example, the scope value `https://graph.microsoft.com/Calendars.Read` is used to request permission to read user's calendars in Microsoft Graph.
-
 
 ## Acquire access tokens with MSAL
 
@@ -66,14 +66,13 @@ MSAL is also capable of refreshing a token when it's getting close to expiration
 
 When your client requests an access token, Azure AD also returns an authentication result that includes metadata about the access token. This data allows your app to do intelligent caching of access tokens without having to parse the access token itself. The `AuthenticationResult` returned by MSAL exposes:
 
-* The access token for the web API 
+* The access token for the web API.
 * The ID token for the user (a JWT).
 * The token expiration, which tells the date/time when the token expires.
-* The tenant ID contains the tenant in which the user was found. 
+* The tenant ID contains the tenant in which the user was found.
 * The scopes for which the token was issued.
 * The unique ID for the user.
 
-
-## Intoduction to Microsoft Graph 
+## Introduction to Microsoft Graph
 
 The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and much more. Microsoft Graph also includes a powerful set of services that manage user and device identity.

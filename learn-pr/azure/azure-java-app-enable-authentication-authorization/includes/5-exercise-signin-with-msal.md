@@ -22,7 +22,6 @@ From your shell or command line:
     cd ~/javawebapp/2-Authorization-I/call-graph
     ```
 
-
 ## Configure the application
 
 To configure the code, open the application project in your preferred IDE like IntelliJ or VS Code.
@@ -52,10 +51,9 @@ To configure the code, open the application project in your preferred IDE like I
 
 4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure AD. On successful login, you should see a page as shown in the below image.
 
-    ![Screenshot of successful sign in](../media/app-signin.png)
+    :::image type="content" source="../media/app-signin.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application":::
 
 5. Click on the **ID Token Details** button to see some of the ID token's decoded claims.
-
 
 ## Overview of MSAL and authentication code
 

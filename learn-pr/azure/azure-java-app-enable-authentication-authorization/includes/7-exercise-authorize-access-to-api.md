@@ -13,7 +13,7 @@ In this exercise, you will configure the application with permissions and use MS
 
    - Click on the **Add permissions** button in the bottom.
 
-   ![Screenshot of the API permissions blade on Azure AD app registration.](../media/api-permissions.png)
+   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the API permissions blade of an app registered with Azure Active Directory on Azure Portal":::
 
 ## Run the application
 
@@ -30,7 +30,7 @@ In this exercise, you will configure the application with permissions and use MS
 
 4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure AD. On successful login, you should see a page as shown in the below image.
 
-    ![Screenshot of successful sign in](../media/app-signin.png)
+    :::image type="content" source="../media/app-signin.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application":::
 
 5. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 
