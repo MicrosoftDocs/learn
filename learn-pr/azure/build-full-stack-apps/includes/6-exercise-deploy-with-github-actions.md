@@ -8,29 +8,29 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 1. In a text file, determine the connection string that you'll need to connect to your Azure SQL Database. The format should be as follows:
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
-    ```cmd
+    ```
     Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
-    ```cmd
+    ```
     Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=  [yourPassword];Encrypt=true;Connection Timeout=30;
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-    ```cmd
+    ```
     mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
     ```
 
-::: zone-end
+    ::: zone-end
 
 2. Navigate to your Azure Static Web App in the Azure portal.
 
