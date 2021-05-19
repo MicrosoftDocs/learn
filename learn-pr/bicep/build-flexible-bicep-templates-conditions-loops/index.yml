@@ -11,9 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Build flexible Bicep templates by using conditions and loops
 summary: |
-  In this module you'll learn how to use conditions and loops, which help to make your Bicep code flexible and reusable.
-  You'll see how to conditionally deploy resources using expressions.
-  You'll also learn how to create resources using loops, how to set resource properties using loops, and how to create variables and outputs with loops.
+  Learn how conditions enable you to deploy resources only when specific constraints are met. Also learn how loops enable you to deploy multiple resources that all have similar properties.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   After completing this module, you'll be able to:
     - Conditionally deploy resources within a Bicep template.

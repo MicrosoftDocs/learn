@@ -91,7 +91,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 > [!CAUTION]
 > Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
 
-You'll see `Running...` in the terminal. Wait for the deployment to finish.
+You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 

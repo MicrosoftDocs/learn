@@ -1,4 +1,4 @@
-Bicep conditions and loops make your Azure deployments more flexible. Conditions enable you to deploy resources only when specific conditions are met. Loops enable you to deploy multiple resources that all have similar properties.
+When working with Bicep templates, conditions and loops help make your Azure deployments more flexible. Conditions enable you to deploy resources only when specific constraints are met. Loops enable you to deploy multiple resources that all have similar properties.
 
 ## Example scenario
 
@@ -12,11 +12,11 @@ You expect the toy will be very popular, and your company plans to launch into n
 
 In this module, you'll extend Bicep template with conditions and loops. You'll:
 
-- Use **conditions** to deploy Azure resources only when they're required.
-- Use **loops** to deploy multiple instances of Azure resources.
+- Use *conditions* to deploy Azure resources only when they're required.
+- Use *loops* to deploy multiple instances of Azure resources.
 - Learn how you can control loop parallelism.
-- Learn about how to create nested loops.
-- Use loops with variables and outputs.
+- Learn how to create nested loops.
+- Combine loops with variables and outputs.
 
 ## What is the main goal?
 
