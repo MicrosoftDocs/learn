@@ -47,7 +47,7 @@ quiz:
     - content: "Administration interface"
       isCorrect: false
       explanation: "Incorrect. You use the Azure API Management administration interface to set usage quotas, not to enforce them."
-  - content: "If your API development team wants to make a minor change to an API, which of the following features is the best way to handle such a change?"
+  - content: "If an API development team wants to make a minor change to an API, which of the following features is the best way to handle such a change?"
     choices:
     - content: "API version"
       isCorrect: false
@@ -58,7 +58,7 @@ quiz:
     - content: "API revision"
       isCorrect: true
       explanation: "Correct. You use revisions for relatively minor or non-breaking changes to the API."
-  - content: "Suppose you're an API product manager and you want your organization to respond more quickly with API revisions that satisfy customer suggestions. Which one of the following actions would help you meet your goal?"
+  - content: "Suppose an API product manager wants their organization to respond more quickly with API revisions that satisfy customer suggestions. Which one of the following actions would help them meet their goal?"
     choices:
     - content: "Standardizing API specifications"
       isCorrect: true
@@ -69,7 +69,7 @@ quiz:
     - content: "Standardizing API analytics"
       isCorrect: false
       explanation: "Incorrect. By enabling the organization to compare usage and performance across multiple APIs, standardized analytics might help you recognize the need for an API revision, but that analysis in itself doesn't directly enable the revision to be deployed more quickly."
-  - content: "Suppose you're an API administrator with a large deployment of APIs and you want to enhance API monetization by encouraging more developers to subscribe to your APIs. Which one of the following API benefits would help you accomplish your goal?"
+  - content: "Suppose an API administrator with a large deployment of APIs wants to enhance API monetization by encouraging more developers to subscribe to their APIs. Which one of the following API benefits would help them accomplish their goal?"
     choices:
     - content: "Creating a central access point for administration"
       isCorrect: false
@@ -80,11 +80,11 @@ quiz:
     - content: "Creating a central access point for API deployment."
       isCorrect: false
       explanation: "Incorrect. While it's true that routing all API requests through a single base URL makes it easier to enforce policies and apply transformations, it doesn't do anything directly to encourage developers to subscribe to your APIs."
-  - content: "Suppose you're the senior security engineer in charge of a large API deployment. You want to reduce the likelihood of one or more consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should you implement to best accomplish this goal?"
+  - content: "Suppose the senior security engineer in charge of a large API deployment wants to reduce the likelihood of one or more consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
     choices:
     - content: "Require subscription keys"
       isCorrect: false
-      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to ensure authorized access to the API, it does not by itself guard the API against misuse."
+      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to help ensure authorized access to the API, it does not by itself guard the API against misuse."
     - content: "Require client Basic authentication"
       isCorrect: false
       explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users can access the API, this authentication does not by itself protect the API against misuse."

@@ -41,7 +41,7 @@ Now we'll discuss some scenarios that illustrate when it's appropriate to use Az
 
 ## Decision criteria
 
-Azure API Management helps you administer and expose your organization's APIs when you're dealing with a large number of deployed APIs that you revise often and that require significant administrative overhead. The use cases where Azure API Management might not be the right choice typically involve small, static, or simple API deployments. Let's take a closer look at these decision criteria.
+Azure API Management helps you administer and expose your organization's APIs when you're dealing with a large number of deployed APIs that you revise often and that require significant administrative overhead. The use cases where Azure API Management might not be the correct choice typically involve small, static, or simple API deployments. Let's take a closer look at these decision criteria.
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
@@ -69,9 +69,9 @@ Azure API Management helps you administer and expose your organization's APIs wh
 -->
 | **Criteria** | **Analysis**|
 | --- | --- |
-| **Number of APIs** | The key consideration when you're evaluating Azure API Management is the number of APIs that you manage. The more APIs you have deployed, the greater the need for standardization of those deployments and centralization of API control. |
+| **Number of APIs** | The key consideration when you're evaluating Azure API Management is the number of APIs that you manage. The more APIs you've deployed, the greater the need for standardization of those deployments and centralization of API control. |
 | **Rate of API changes** | The next consideration is the rate at which your organization implements API revisions and versions. The faster you create API revisions and publish new API versions, the greater the need for a robust and flexible versioning control system. |
-| **API administration load** | The last consideration is how much policy overhead do you apply to your APIs, including usage quotas, call rate limits, request transformations, request validation, and so on. The more configurations and options your APIs require, the greater the need for standardized and centralized policy implementations. |
+| **API administration load** | The last consideration is how much policy overhead you apply to your APIs. This includes usage quotas, call rate limits, request transformations, and request validation. The more configurations and options your APIs require, the greater the need for standardized and centralized policy implementations. |
 |   |   |
 
 <!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
@@ -113,7 +113,7 @@ Azure API Management helps you administer and expose your organization's APIs wh
 
 ## Apply the criteria
 
-Azure API Management is the right choice for managing APIs through their lifecycles when there is a large API deployment that changes frequently and requires significant policy overhead. However, these criteria don't apply equally to all uses. Let's see how these criteria apply to our scenario's use cases.
+Azure API Management is the correct choice for managing APIs through their lifecycles when there is a large API deployment that changes frequently and requires significant policy overhead. However, these criteria don't apply equally to all use cases. Let's see how these criteria apply to our scenario's use cases.
 
 <!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
 
@@ -133,15 +133,15 @@ Azure API Management is the right choice for managing APIs through their lifecyc
 
 ### Should you use Azure API Management to standardize APIs?
 
-By enabling the management of multiple APIs from a single administrative interface, Azure API Management makes it easier to standardize your APIs. Standardizing APIs means creating consistency across multiple APIs. There are many API features that can be standardized, including the following items:
+By enabling the management of multiple APIs from a single administrative interface, Azure API Management makes it easier to standardize your APIs. Standardizing APIs means creating consistency across multiple APIs. You can standardize many API features, including:
 
-- **Specifications**: Standardizing API specs—such as using REST for all APIs and using a consistent naming scheme for JSON name-value pairs—reduces development time, decreases errors, and enables your organization to respond faster to customer suggestions and market forces.
-- **Documentation**: Standardizing API documentation enables developers to get up to speed with an API quickly, reduces technical support queries, and encourages developers to use more of your APIs.
-- **URLs**: Standardizing the base URL for your APIs reduces consumer errors and gives your API deployments a more professional look.
-- **Analytics**: Standardizing API analytics enables management teams and engineers to compare usage and performance across multiple APIs.
-- **Regulations**: For APIs that must meet government or industry rules and regulations, standardization helps ensure compliance across all APIs.
+- **Specifications**. Standardizing API specs—such as using REST for all APIs and using a consistent naming scheme for JSON name-value pairs—reduces development time, decreases errors, and enables your organization to respond faster to customer suggestions and market forces.
+- **Documentation**. Standardizing API documentation enables developers to get up to speed with an API quickly, reduces technical support queries, and encourages developers to use more of your APIs.
+- **URLs**. Standardizing the base URL for your APIs reduces consumer errors and gives your API deployments a more professional look.
+- **Analytics**. Standardizing API analytics enables management teams and engineers to compare usage and performance across multiple APIs.
+- **Regulations**. For APIs that must meet government or industry rules and regulations, standardization helps ensure compliance across all APIs.
 
-:::image type="content" source="../media/4-when-to-use-azure-api-mangement-standardization.png" alt-text="Diagram depicting several APIs with varying configurations that, after being imported into Azure API Management, have been given standardized configurations.":::
+:::image type="content" source="../media/4-when-to-use-azure-api-mangement-standardization.png" alt-text="Several APIs with varying configurations that after being imported into Azure API Management, have been given standardized configurations.":::
 
 In most cases, the need for standardization expands as the number of APIs grows, the rate at which the APIs are revised increases, and the API administration load gets larger. This need is true of the food delivery platform scenario, which requires consistency across the APIs for the mobile app, the web app, and the partner restaurants.
 
@@ -149,9 +149,9 @@ In most cases, the need for standardization expands as the number of APIs grows,
 
 By bringing multiple APIs under a single administrative umbrella, Azure API Management enhances the centralization of all API operations. Without an API management service, each API is on its own in terms of administration, deployment, and developer access. This decentralized model often results in duplicated efforts and increased overhead. Centralizing API operations can lead to the following benefits:
 
-- **Administration**: Centralizing API administrative tasks means being able to apply administrative operations such as policy creation, user management, and analytics in a single location, such as the administrative interface provided by Azure API Management. The centralization of admin tasks makes running these tasks simpler and more efficient.
-- **Deployment**: Centralizing API means routing all API requests through a single base URL, such as the endpoint created by the Azure API Management gateway. Deployment centralization makes it easier to enforce policies and apply transformations.
-- **Developer access**: Centralizing API developer access means putting all developer resources such as documentation, code samples, testing, and subscriptions in a single location, such as the developer portal in Azure API Management. Centralizing developer access makes it easier for developers to find and use your APIs.
+- Administration. Centralizing API administrative tasks means being able to apply administrative operations such as policy creation, user management, and analytics in a single location, such as the administrative interface provided by Azure API Management. The centralization of admin tasks makes running these tasks simpler and more efficient.
+- Deployment. Centralizing API means routing all API requests through a single base URL, such as the endpoint created by the Azure API Management gateway. Deployment centralization makes it easier to enforce policies and apply transformations.
+- Developer access. Centralizing API developer access means putting all developer resources such as documentation, code samples, testing, and subscriptions in a single location, such as the developer portal in Azure API Management. Centralizing developer access makes it easier for developers to find and use your APIs.
 
 The efficiencies that accrue from centralizing API operations tend to increase with the number of APIs and with the size of the overall administrative load you impose on your APIs. Having centralized APIs is a huge help where APIs are often updated because it enables a single versioning scheme for all products.
 
@@ -161,14 +161,14 @@ All of these factors apply strongly to our food delivery platform scenario. For 
 
 Azure API Management was designed with API security in mind. With so many organizations relying on APIs for the internal and external exchange of data between apps and devices, a haphazard or inconsistent approach to security is just asking for trouble. A proper API security strategy covers the following bases:
 
-- **Permissions**: Setting permissions enables you to control who can work with an API and what they can do with it. In Azure API Management, having all your API consumers as users and being able to organize those users into groups makes it easy and efficient to apply permissions to control API access.
-- **Access**: Controlling access to an API means only allowing authorized users to submit requests. With Azure API Management, the developer portal supplies users with subscription keys and you can restrict access to APIs using multiple forms of authentication and JSON web tokens.
-- **Protection**: API protection means securing the API for attacks or malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent consumer misuse (intentional or accidental) of the API.
-- **Compliance**: API compliance means having your APIs satisfy all corporate or government security policies. Having all your APIs together in Azure API Management makes it easier to configure those APIs with security policies that achieve compliance.
+- Permissions. Setting permissions enables you to control who can work with an API and what they can do with it. In Azure API Management, having all your API consumers as users and being able to organize those users into groups makes it easier and more efficient to apply permissions to control API access.
+- Access. Controlling access to an API means only allowing authorized users to submit requests. With Azure API Management, the developer portal supplies users with subscription keys and you can restrict access to APIs by using multiple forms of authentication and JSON web tokens.
+- Protection. API protection means securing the API from attacks or malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent consumer misuse (intentional or accidental) of the API.
+- Compliance. API compliance means having your APIs satisfy all corporate or government security policies. Having all your APIs together in Azure API Management makes it easier to configure those APIs with security policies that achieve compliance.
 
-The more APIs you manage, the greater the need for security because more APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can expose a security flaw.
+The more APIs you manage, the greater the need for security, because more APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can expose a security flaw.
 
-These security concerns are paramount in our food delivery scenario because this platform generates and stores a great deal of sensitive data, including restaurant payments, customer names and addresses, and delivery vehicle locations.
+These security concerns are paramount in our food delivery scenario, because this platform generates and stores a great deal of sensitive data, including restaurant payments, customer names and addresses, and delivery vehicle locations.
 
 <!-- 6. Guidance summary (optional) ------------------------------------------------
 
