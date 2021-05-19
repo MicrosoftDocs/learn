@@ -1,4 +1,4 @@
-You are new in a company and as such are a somewhat unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsability and considered for promotion. 
+You are new in a company and as such are a somewhat unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsibility and considered for promotion. 
 
 ## Building trust as an employee
 

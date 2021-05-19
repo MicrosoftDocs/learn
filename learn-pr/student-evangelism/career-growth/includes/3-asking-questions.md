@@ -6,9 +6,9 @@ Ask for specific feedback from your manager, teammates, and colleagues. What is 
 
 ## Asking for clarifications
 
-Have you ever had something explained to you with terms such as 'simply' or 'just'? How did that make you feel? Watch for reductive words like this when your colleagues are explaining something.Often, it means they are glossing over what they consider to be 'common knowledge' but it may be something deeper: a lack of knowledge. 
+Have you ever had something explained to you with terms such as 'simply' or 'just'? How did that make you feel? Watch for reductive words like this when your colleagues are explaining something. Often, it means they are glossing over what they consider to be 'common knowledge' but it may be something deeper: a lack of knowledge. 
 
-If you're afraid of being annoying, don't be. This is your moment to feel free to get clarifications, although you should always try to find the answer yourself before askinng for help. You have the power to ask for clarifications when you feel something is being obfuscated. Common knowledge isn't common if it hasn't yet arrived for the interns, and acronyms are probably confusing for other people as well as yourself.
+If you're afraid of being annoying, don't be. This is your moment to feel free to get clarifications, although you should always try to find the answer yourself before asking for help. You have the power to ask for clarifications when you feel something is being obfuscated. Common knowledge isn't common if it hasn't yet arrived for the interns, and acronyms are probably confusing for other people as well as yourself.
 
 ## Asking 'Why', not 'How'
 
