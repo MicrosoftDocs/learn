@@ -11,11 +11,11 @@ Summary units often contain a subsection called "Learn more" or "Further reading
 
 -->
 
-You have successfully secured your Java web application by allowing only the employees of your company to sign in with Azure AD. Your application can also access information about the user and much more from the Microsoft Graph API with the users consent.
+You have successfully secured your Java web application by allowing only the employees of your company to sign in with Azure Active Directory. Your application can also access information about the user and much more from the Microsoft Graph API with the users consent.
 
  In this module, you learned how to enable authentication and authorization in a Java web application by:
 
-- Registering the web application with Azure AD on the Azure Portal
+- Registering the web application with Azure Active Directory on the Azure Portal
 - Adding sign in flows using Microsoft Authentication Library for Java (MSAL4J)
 - Accessing user information from the Microsoft Graph API with the help of Microsoft Authentication Library for Java (MSAL4J) and the Microsoft Graph SDK for Java
 

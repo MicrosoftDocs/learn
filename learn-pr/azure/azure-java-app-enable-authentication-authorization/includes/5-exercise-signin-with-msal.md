@@ -1,4 +1,4 @@
-In this exercise, you will use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and enable users to sign in with their Azure AD accounts.
+In this exercise, you will use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and enable users to sign in with their Azure Active Directory accounts.
 
 ## Create a Java web application
 
@@ -28,11 +28,11 @@ To configure the code, open the application project in your preferred IDE like I
 
 1. Open the `./src/main/resources/authentication.properties` file.
 
-2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Azure AD tenant ID** (as shown in the image below), since the app was registered with the **Accounts in this organizational directory only** option.
+2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Azure Active Directory tenant ID** (as shown in the image below), since the app was registered with the **Accounts in this organizational directory only** option.
 
 3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **application ID** (clientId) of the registered application copied from the Azure portal.
 
-   ![Screenshot of the Azure Portal Azure AD App Registration blade with App ID highlighted.](../media/app-reg-blade.png)
+   :::image type="content" source="../media/app-reg-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure Portal":::
 
 4. Find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** you saved during the creation of the app in the Azure portal.
 
@@ -49,7 +49,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 3. Find the resulting `.war` file in `./target/msal4j-servlet-graph.war`. To deploy to Tomcat, copy this `.war` file to the `/webapps/` directory in your Tomcat installation directory and start the Tomcat server.
 
-4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure AD. On successful login, you should see a page as shown in the below image.
+4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure Active Directory. On successful login, you should see a page as shown in the below image.
 
     :::image type="content" source="../media/app-signin.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application":::
 
@@ -79,11 +79,11 @@ To configure the code, open the application project in your preferred IDE like I
     ```
 
     - **AuthorizationRequestUrlParameters**: Parameters that must be set in order to build an AuthorizationRequestUrl.
-    - **REDIRECT_URI**: Where AAD will redirect the browser (along with auth code) after collecting user credentials. It must match the redirect URI in the Azure AD app registration.
+    - **REDIRECT_URI**: Where Azure Active Directory will redirect the browser (along with auth code) after collecting user credentials. It must match the redirect URI in the Azure Active Directory app registration.
     - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
 
-1. The user is presented with a sign-in prompt by Azure AD. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Azure AD.
+1. The user is presented with a sign-in prompt by Azure Active Directory. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Azure Active Directory.
 
     ```Java
     // First, validate the state, then parse any error codes in response, then extract the authCode. Then:

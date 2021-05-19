@@ -1,10 +1,11 @@
-You have registered your web application with Azure AD. You are now ready to add the authentication code to sign in users in your application. You look for a Java SDK that you can use to handle the authentication details and come across the Microsoft Authentication Library for Java.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
+You have registered your web application with Azure Active Directory. You are now ready to add the authentication code to sign in users in your application. You look for a Java SDK that you can use to handle the authentication details and come across the Microsoft Authentication Library for Java.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
 
 ## Microsoft Authentication Library for Java
 
-The Microsoft Authentication Library for Java (MSAL4J) enables applications to sign in users or apps with Microsoft identities (Azure AD, Microsoft accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs or your own APIs registered with Azure AD. It is built using industry standard OAuth2 and OpenID Connect protocols.
+The Microsoft Authentication Library for Java (MSAL4J) enables applications to sign in users or apps with Microsoft identities (Azure Active Directory, Microsoft accounts and Azure Active Directory B2C accounts) and obtain tokens to call Microsoft APIs or your own APIs registered with Azure Active Directory. It is built using industry standard OAuth2 and OpenID Connect protocols.
 
-The library provides convenient APIs that enable authentication with Azure AD for different types of applications:
+The library provides convenient APIs that enable authentication with Azure Active Directory for different types of applications:
+
 - Web applications
 - Daemon services
 - Command-line applications

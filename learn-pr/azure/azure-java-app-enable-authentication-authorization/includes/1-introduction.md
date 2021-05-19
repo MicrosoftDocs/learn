@@ -28,20 +28,20 @@ Guidance for content and exercise units:
 
 ## Learning objectives
 
-Imagine you are building a portal for employees in your company to access company information and helpful resources to perform their work. You need to ensure that this application is only accessible to users within your organization.You want to build a Java web application that signs in the employees with their work accounts and displays some information from their company profile. 
+Imagine you are building a portal for employees in your company to access company information and helpful resources to perform their work. You need to ensure that this application is only accessible to users within your organization.You want to build a Java web application that signs in the employees with their work accounts and displays some information from their company profile.
 
-Azure Active Directory (Azure AD) enables you to secure your applications by signing in users with their organizational accounts. The Microsoft Authentication Library (MSAL) provides various methods for developers to authenticate users and get authorized access to applications secured by Azure AD.
+Azure Active Directory enables you to secure your applications by signing in users with their organizational accounts. The Microsoft Authentication Library (MSAL) provides various methods for developers to authenticate users and get authorized access to applications secured by Azure Active Directory.
 
 By the end of this module, you will be able to:
 
 <!--  Bullet list copied from index.yml -->
-- Register a web application with Azure AD
-- Sign in users in an Azure AD tenant to a Java web application
-- Authorize access to data in a Microsoft API 
+- Register a web application with Azure Active Directory
+- Sign in users in an Azure Active Directory tenant to a Java web application
+- Authorize access to data in a Microsoft API.
 
 ## Prerequisites
 
 <!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
-- Basic understanding of setting up and building Java web application with Maven 
+- Basic understanding of setting up and building Java web application with Maven
 - Basic understanding of setting up and running Java web application on a Tomcat server
-- Beginner-level understanding of Azure Active Directory: Creating tenants and managing users in Azure AD
+- Beginner-level understanding of Azure Active Directory: Creating tenants and managing users in Azure Active Directory
