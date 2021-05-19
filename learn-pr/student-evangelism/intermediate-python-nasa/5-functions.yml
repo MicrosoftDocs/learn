@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Chunk code into functions for easy reusability and readability
 durationInMinutes: 6
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/5-functions.ipynb?branch=pr-en-us-17307
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/5-functions.ipynb

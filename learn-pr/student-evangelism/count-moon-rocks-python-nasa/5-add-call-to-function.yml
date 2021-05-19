@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Count the number of Moon rocks by calling a Python function
 durationInMinutes: 4
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/5-add-call-to-function.ipynb?branch=pr-en-us-17307
+notebook: https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/5-add-call-to-function.ipynb

@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Add comments to Python Notebooks to add clarity to your code
 durationInMinutes: 5
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/2-comments.ipynb?branch=pr-en-us-17307
+notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/2-comments.ipynb

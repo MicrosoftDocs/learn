@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Import data from text files with Python
 durationInMinutes: 6
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/6-read-text-file.ipynb?branch=pr-en-us-17307
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/6-read-text-file.ipynb

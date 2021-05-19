@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Use parameters to specify variability in functions
 durationInMinutes: 6
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/7-parameters.ipynb?branch=pr-en-us-17307
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/7-parameters.ipynb
