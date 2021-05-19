@@ -9,7 +9,7 @@ The term *Internet of Things (IoT)* represents a network of interconnected devic
 
 In your intended design, smart fridges represent the device-side, while Azure IoT Central and Azure Cosmos DB accommodate data collection, persistence, and analytics.
 
-:::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture of IoT services that includes Azure IoT Central and Cosmos DB".:::
+:::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture of IoT services that includes Azure IoT Central and Cosmos DB.":::
 
 Another approach to the IoT services architecture divides it into Things, Insights, and Actions. Things represent IoT devices generating telemetry that, through Insights-based analysis, is turned into Actions, which deliver meaningful business benefits. As an example, consider a sensor of a smart refrigerator (the thing), which sends temperature data. That data serves as the basis of evaluation whether the refrigerator is fully operational (the insight). The insight, in turn, can trigger an alert that leads to an updated maintenance schedule (the action).
 
