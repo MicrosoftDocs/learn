@@ -1,8 +1,8 @@
-A well-designed user experience in Unity for the HoloLens requires careful design and creation of a Unity Scene.  A Scene is like a blank canvas, which you'll develop into an experience for your end user. Providing some context for your user as they navigate the Scene is important.  This can be achieved by adding supportive information such as satellite imagery or other, often lower fidelity, supportive information (for example, surrounding warehouse infrastructure).  Once context has been established for the Scene, you need to create and add the 3D assets or models you intend to use for your Digital Twin.  These will be the showcase of your experience.
+A well-designed user experience in Unity for the HoloLens requires careful design and creation of a Unity Scene.  A Scene is like a blank canvas, which you'll develop into an experience for your end user. Provide context for your user as they navigate the Scene by adding supportive information like satellite imagery or lower fidelity supportive information (for example, surrounding warehouse infrastructure).  Once context has been established for the Scene, you need to create and add the 3D assets or models for your Digital Twin.  These will be the showcase of your experience.
 
 ## Example scenario  
 
-You'll continue to build out the example windfarm scenario from previous modules, except this time your looking to add in reusable wind turbine objects to the project's terrain.
+You'll continue to build out the example windfarm scenario from previous modules, except this time you're looking to add in reusable wind turbine objects to the project's terrain.
 
 ## What will we be doing?
 
@@ -12,4 +12,4 @@ In this module, you'll explore Prefabs in more detail and use them to build out 
 
 ## What is the main goal?
 
-Building a Scene is an important initial step in developing your Mixed Reality experience. By the end of this module, you'll be able to work with Unity Prefabs and Scriptable Objects, as well as Mixed Reality Toolkit interactions. 
+Building a Scene is an important initial step in developing your Mixed Reality experience. By the end of this module, you can work with Unity Prefabs and Scriptable Objects, and Mixed Reality Toolkit interactions. 
