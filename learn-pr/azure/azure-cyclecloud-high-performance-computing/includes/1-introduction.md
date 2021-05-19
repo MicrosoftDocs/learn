@@ -1,9 +1,9 @@
 Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage High Performance Computing (HPC) clusters in Azure.
 
 ## Example scenario
-<!--ID/SME: There's a comment in unit 4 about removing references to Contoso. Please remove the following if needed.-->
+
 Contoso, Ltd. is an oceanographic and meteorological services company based in Houston, Texas. Its research team relies heavily on on-premises HPC cluster to run Slurm-based tasks.
-<!--ID/SME: "Slurm" was flagged in Acrolinx as a spelling error, in all units containing this word.-->
+
 The newly initiated project involves several simulations that will track storms moving through the US Gulf Coast during storm season. Unfortunately, an initial assessment determined that the existing on-premises HPC cluster doesn't have sufficient compute capacity to run the simulations.
 
 As the lead research engineer, you want to use the Contoso's existing Azure subscription to provision a new HPC cluster. To use your team's technical expertise, you want to ensure that the cluster you deploy in Azure will closely match the architecture and software stack of the on-premises cluster. At the same time, you need to consider the directives from your management team, who stressed the importance of keeping the cluster's cost within the project's budget.
