@@ -22,7 +22,7 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="1" :::
 
-   Note that this line of code tells Bicep that your template is going to be deployed at a subscription scope.
+   This line of code tells Bicep that your template is going to be deployed at a subscription scope.
 
 ## Add a policy definition
 
@@ -41,7 +41,7 @@ During the process, you'll:
   
    When you try to create a resource that matches these conditions, Azure will deny the resource creation.
 
-   You're creating the policy definition at the scope of the subscription. The policy definition is available throughout all resource groups in the subscription.
+   You're creating the policy definition at the scope of the subscription. This means that the, once deployed, the policy definition will be available throughout all resource groups in the subscription.
 
 ## Assign the policy
 

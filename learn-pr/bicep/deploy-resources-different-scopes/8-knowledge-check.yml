@@ -12,8 +12,24 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
+  - content: |
+      When you submit a deployment for the **main.bicep** file, what will happen?
+    choices:
+    - content: A policy definition named `my-policy` will be created at the management group scope.
+      isCorrect: false
+      explanation: |
+        Even though the **main.bicep** file has its `targetScope` set to `managementGroup`, the policy definition is defined in a module with its `targetScope` set to `subscription`.
+    - content: A policy definition named `my-policy` will be created at the subscription scope.
+      isCorrect: true
+      explanation: |
+        The policy definition is defined in a module with its `targetScope` set to `subscription`, so the policy definition will be deployed to the subscription.
+    - content: The deployment will fail with an error.
+      isCorrect: false
+      explanation: |
+        The Bicep files are valid.
   - content: |
       You need to create a role definition that will work throughout your whole organization.
       You decide to deploy it using a Bicep template.
@@ -53,20 +69,3 @@ quiz:
         You can use Bicep files that have a `targetScope` of `managementGroup`, but you'll need to explicitly set the `scope` to `tenant()`.
         Also, the hierarchy of management groups doesn't depend on how they're deployed.
         You set a management group's parent as one of its properties.
-  - content: |
-      You have written a Bicep file that includes this line:<br />
-      `targetScope = 'managementGroup'`<br />
-      Which of these statements is true?
-    choices:
-    - content: The file can be used as a module within a template that deploys at management group scope.
-      isCorrect: true
-      explanation: | 
-        Bicep files that target a management group can include modules that are set to use the `managementGroup` target scope.
-    - content: The file can be used as a module within a template that deploys at subscription scope.
-      isCorrect: false
-      explanation: |
-        Bicep files that target a subscription can't include modules that are set to use the `managementGroup` target scope.
-    - content: The file can be used as a module within a template that deploys at resource group scope.
-      isCorrect: false
-      explanation: |
-        Bicep files that target a resource group can't include modules that are set to use the `managementGroup` target scope.

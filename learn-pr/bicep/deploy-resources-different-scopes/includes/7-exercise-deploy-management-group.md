@@ -50,7 +50,7 @@ By default, the new management group will be created as a child of the tenant ro
 
 ::: zone-end
 
-In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, we'll deploy the policies even though the management group doesn't contain any subscriptions. The same deployment process applies even if the management group is empty.
+In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, you'll deploy the policies even though the management group doesn't contain any subscriptions. The same deployment process applies even if the management group is empty.
 
 ## Create a Bicep file to deploy to a management group
 
@@ -190,7 +190,7 @@ Like subscription-scoped deployments, you can view management group-scoped deplo
 
 ### Clean up the resources
 
-You've successfully deployed management group-scoped. You can remove the policy resources and management group that you've created.
+You've successfully deployed management group-scoped resources. You can remove the policy resources and management group that you've created.
 
 ::: zone pivot="cli"
 

@@ -1,4 +1,4 @@
-Most Azure resources are deployed into resource groups. Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other resource types need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of Azure itself. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed at different scopes.
+Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other Azure resources need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of Azure itself. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed at different scopes.
 
 ## Azure's resource hierarchy
 
@@ -10,20 +10,20 @@ Azure has a hierarchical resource structure with multiple levels of management.
 
 :::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups underneath it. You might create different management groups for different parts of your organization, or for subscriptions that need to have different types of management. You can apply policy and access control restrictions to management groups, and these are inherited by all subscriptions below that management group in the hierarchy.
 
-:::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as a billing account, and contain resource groups and resources.
+:::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as billing accounts, and contain resource groups and resources.
 
 :::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources, and enable you to manage and control them as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group.
 
-The example above is a fairly simple scenario showing how management groups can be used. You might also consider implementing an _enterprise-scale landing zone_, which is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
+The example illustrated above is a fairly basic scenario showing how management groups can be used. You might also consider implementing an _enterprise-scale landing zone_, which is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
 
 :::image type="content" source="../media/2-hierarchy-eslz.png" alt-text="Diagram that shows an enterprise-scale landing zone architecture, with four management groups and four subscriptions." border="false":::
 
-Whichever model you follow, by understanding the different levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code. Let's look at some examples where you might deploy resources to each of these levels.
+Whichever model you follow, by understanding the different levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code.
 
 > [!NOTE]
 > *Extension resources* are resources that are deployed to the scope of another Azure resource. For example, a resource lock is deployed onto a resource like a storage account.
 
-You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
+Let's look at some examples where you might deploy resources to each of these levels. You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
 
 ## Subscription-scoped resources
 
@@ -56,7 +56,7 @@ You might deploy to your tenant for these kinds of use cases:
   > [!NOTE]
   > Not all Azure customers can create subscriptions using infrastructure as code. [Depending on your billing relationship with Microsoft, this might not be possible.](/azure/cost-management-billing/manage/programmatically-create-subscription)
 
-- You're creating management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
+- You're creating or configuring management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
 Tenant-scoped deployments [require you have special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access).
 
@@ -107,12 +107,16 @@ Here's a visual representation of the same ID:
 :::image type="content" source="../media/2-role-mg-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a management group scope." border="false":::
 
 > [!IMPORTANT]
-> In Bicep, you can normally use the `.id` property of a resource to access its resource ID. However, the `.id` property doesn't currently work for management group-scoped resources. The function returns a partial resource ID instead of the full resource ID. This will be fixed in future, but in the meantime, you'll see how to work around this limitation later in this module.
+> In Bicep, you normally use the `.id` property of a resource to access its resource ID. However, the `.id` property doesn't currently work for management group-scoped resources. It returns a partial resource ID instead of the full resource ID. This will be changed in the future, but in the meantime, you'll see how to work around this limitation later in this module.
 
 Another role definition might be defined at a subscription scope, so its resource ID looks a little different:
 
 ```
 /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
 ```
+
+Here's a visual representation of the same ID:
+
+:::image type="content" source="../media/2-role-subscription-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a subscription scope." border="false":::
 
 In the next unit, you'll learn how to create Bicep files that target each of these scopes.
