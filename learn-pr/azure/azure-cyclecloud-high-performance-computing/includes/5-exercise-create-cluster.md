@@ -5,7 +5,7 @@ Now that you've provisioned an Azure VM hosting the CycleCloud web applications,
 ## Prepare for the deployment of an HPC cluster
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage.
-<!--ID/SME: Please fix syntax for the following note.-->
+
     > [!NOTE]
     > To complete this exercise, you don't need to satisfy quota requirements to accommodate provisioning of the compute nodes because you won't be running any jobs on the cluster you create.
 
@@ -47,7 +47,7 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
 1. On the **About** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, enter **contoso-slurm-lab-cluster**.
 
     :::image enter="content" source="../media/u5-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
-<!--ID/SME: Please check that the following edits retain the meaning.-->
+
 1. On the **Required Settings** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, configure the following settings (leave others with their default values):
 
     | Setting | Value |
@@ -84,7 +84,7 @@ To prepare for operationalizing your cluster, you'll set alerts to notify you wh
 
 1. On your computer, in the web browser displaying the graphical interface of the Azure CycleCloud web application, review the properties of the newly deployed cluster.
 
-    :::image type="content" source="../media/u5-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false"::: <!-- AU: Can we delete "Contoso" from these screenshot and just make it a generic company? If not, then I can make just this subsection introduce the Contoso company name. -->
+    :::image type="content" source="../media/u5-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false"::: 
 
 1. On the **contoso-slurm-lab-cluster** page, select the **Create new alert** link.
 1. In the **Cluster usage alert for contoso-slurm-lab-cluster** pop-up window, specify the following settings, and then select **Save**:
