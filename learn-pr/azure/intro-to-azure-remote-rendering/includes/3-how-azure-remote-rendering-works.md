@@ -90,8 +90,8 @@ When rendering, the server sends rendered frames back into your application that
 
 | Mode     | Description     |
 | ---- | ---- |
-|  **TileBasedComposition** mode    | In this mode, every involved GPU renders specific tiles for display on the screen. The main GPU composes the final image using these tiles before Azure sends it as a video frame to your client device. The rendering quality of **TileBasedComposition** mode is slightly better than in **DepthBasedComposition** mode. |
-|  **DepthBasedComposition** mode    | In this mode, every involved GPU renders at full-screen resolution, but only a subset of meshes. The final image composition on the main GPU helps ensure that<!--Andy, could we reword the "takes care that"? Is this edit OK?--> parts are properly merged according to their depth information.     |
+|  TileBasedComposition mode    | In this mode, every involved GPU renders specific tiles for display on the screen. The main GPU composes the final image using these tiles before Azure sends it as a video frame to your client device. The rendering quality of TileBasedComposition mode is slightly better than in DepthBasedComposition mode. |
+|  DepthBasedComposition mode    | In this mode, every involved GPU renders at full-screen resolution, but only a subset of meshes. The final image composition on the main GPU helps ensure that parts are properly merged according to their depth information.     |
 
 > [!NOTE]
 > You specify the remote rendering mode when you connect to your session.
