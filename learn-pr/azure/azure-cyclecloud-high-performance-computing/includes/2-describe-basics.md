@@ -1,4 +1,4 @@
-Many organizations want to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. They also want to minimize the learning curve associated with such a transition and use the expertise associated with the existing deployments, such as a specific HPC scheduler. <!--CE: It was "...and leverage the expertise tied to the existing deployments, tied typically to the choice of a specific HPC scheduler." Needed to shorten for clarity and acrolinx but I don't know if I captured the meaning. -ID --> <!--ID/SME: The sentence makes sense.-->Finally, they seek insight into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments. <!--ID/SME: Can you replace "visibility" (sensory language)? "insight"?-->
+Many organizations want to transition their on-premises HPC workloads to Azure to benefit from its hyperscale capabilities. They also want to minimize the learning curve associated with such a transition and use the expertise associated with the existing deployments, such as a specific HPC scheduler. Finally, they seek insight into the performance and cost of the cloud-based cluster resources, in the manner that parallels their on-premises environments. 
 
 Implementing a custom solution that addresses these needs is challenging. It requires in-depth knowledge of Azure compute, networking, and storage resources that serve as building blocks of cloud-based HPC clusters. Also, without a corresponding management interface, operating such a solution by relying on standard Azure management tools would result in significant administrative overhead.
 
@@ -24,7 +24,7 @@ Azure CycleCloud is a tool for deploying HPC clusters in Azure and managing thei
 - Near-real time cost reporting and controls. Azure CycleCloud tracks cluster usage and estimates the corresponding cost. This feature allows you to set up budget alerts triggered when the cluster cost exceeds the monetary amount you specified. Azure CycleCloud also integrates with Azure Cost Management.
 
    > [!NOTE]
-   > Slurm-based clusters support stopping and deallocating nodes as an alternative to terminating them during autostop. <!--ID/SME: Unless "auto-stop" is the name of a specific feature, there's no hyphen. I made the change throughout.-->
+   > Slurm-based clusters support stopping and deallocating nodes as an alternative to terminating them during autostop. 
 
 ## How do you implement and use Azure CycleCloud?
 
