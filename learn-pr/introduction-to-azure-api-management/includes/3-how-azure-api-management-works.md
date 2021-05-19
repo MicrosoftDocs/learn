@@ -57,7 +57,7 @@ The gateway performs many tasks from the consumer's point of view, but the follo
 
 - Authentication. The gateway monitors access to the API by verifying the consumer's subscription keys, JWT tokens, and other credentials.
 - Security. The gateway prevents API misuse by enforcing predefined rate limits and consumer usage quotas.
-- Transformation. The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON in real time, as depicted in the following image.
+- Transformation. The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON automatically, as depicted in the following image.
 - Routing. After an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - Performance. The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
