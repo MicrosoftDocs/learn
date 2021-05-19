@@ -17,9 +17,6 @@ Follow these steps to register your application on the Azure Portal.
    - Under **Supported account types**, select an option.
      - For this exercise module, select **Accounts in this organizational directory only** since you are building an application for use only by users in the organizational tenant (**single-tenant**).  
 
-     - Select **Accounts in any organizational directory** if you'd like users in any Azure Active Directory tenant to be able to use your application (**multi-tenant**).
-     - Select **Accounts in any organizational directory and personal Microsoft accounts** for the widest set of customers (**multi-tenant** that also supports Microsoft personal accounts).
-     - Select **Personal Microsoft accounts** for use only by users of personal Microsoft accounts (e.g., Hotmail, Live, Skype, Xbox accounts).
    - In the **Redirect URI** section, select **Web** in the combo-box and enter the  redirect URI of your web application. This is the URI where your application wants to handle the authentication response after the user signs in. For this exercise, enter the following redirect URI of the sample application: `http://localhost:8080/msal4j-servlet-graph/auth/redirect`.
 
    :::image type="content" source="../media/app-reg-new.png" alt-text="Screenshot showing registration of a new app with Azure Active Directory on Azure Portal":::

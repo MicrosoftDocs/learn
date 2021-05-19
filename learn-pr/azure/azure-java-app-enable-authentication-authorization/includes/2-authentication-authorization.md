@@ -23,3 +23,18 @@ Azure Active Directory uses the OpenID Connect protocol to handle authentication
 **Authorization** is the process of ensuring that an authenticated user has the permission to perform some operation or access some data.
 
 The OAuth 2.0 protocol is used to provide authorization flows for different application in Azure Active Directory.
+
+## Application registration
+
+Azure Active Directory requires your application to be registered with it before it can provide identity and access management services. Registering your application establishes a trust relationship between the application and the Identity provider. You can create an application registration through the Azure Portal, using Azure CLI and even programmatically using Microsoft Graph APIs.
+
+The application registration allows you to specify the name of your application, the type of the application (web, desktop, etc.) and the sign-in audience - the user accounts you want to allow access to. The sign-in audience include:
+
+- **Accounts in this organizational directory only** if you're building an application for use only by users in the organizational tenant (**single-tenant**).
+- **Accounts in any organizational directory** if you'd like users in any Azure Active Directory tenant to be able to use your application (**multi-tenant**).
+- **Accounts in any organizational directory and personal Microsoft accounts** for the widest set of customers (**multi-tenant** that also supports Microsoft personal accounts).
+- **Personal Microsoft accounts** for use only by users of personal Microsoft accounts (e.g., Hotmail, Live, Skype, Xbox accounts).
+
+You can also configure credentials, redirect URIs and other authentication settings on the application registration.
+
+When an application registration is complete, you receive an **Application (client) ID** which uniquely identifies your application in Azure Active Directory. This ID is used in your application code or in the authentication library as part of the authentication and authorization requests made to Azure Active Directory.
