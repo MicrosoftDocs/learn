@@ -5,7 +5,8 @@ Consider the following Bicep files:
 ```bicep
 targetScope = 'managementGroup'
 
-module 'module.bicep' = {
+module myModule 'module.bicep' = {
+  scope: subscription('f0750bbe-ea75-4ae5-b24d-a92ca601da2c')
   name: 'my-module'
 }
 ```
