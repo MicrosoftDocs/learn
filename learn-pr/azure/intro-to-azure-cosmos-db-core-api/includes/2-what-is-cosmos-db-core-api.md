@@ -21,7 +21,7 @@ While there are many NoSQL data models, there are four broad data model families
 
 :::image type="content" source="../media/2-nosql-db.svg" alt-text="Illustration of various NoSQL models including; a key-value store with a one-to-one relationship between identifiers and values, a document store with a hierarchy of entities, a graph store with traversal paths, and a column family store with multiple columns" border="false":::
 
-> ![NOTE]
+> [!NOTE]
 > Moving forward, we will focus on the document data model.
 
 ## Why use a NoSQL database with the document data model?

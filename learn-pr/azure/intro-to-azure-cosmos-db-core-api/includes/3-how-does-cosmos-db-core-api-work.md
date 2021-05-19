@@ -26,7 +26,7 @@ The SQL API for Azure Cosmos DB stores individual documents in JSON format as *i
 
 ## Partitioning
 
-> [!Warning]
+> [!WARNING]
 > TODO: Embed RedTiger video here
 
 ### Partition Keys
