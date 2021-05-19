@@ -1,5 +1,6 @@
 # Denormalizing aggregates
-In this exercise we will show how we can use denormalization of an aggregate that will allow us to write our top 10 customers query for our e-commerce site. To do this we will use the transactional batch feature in the .NET SDK that will simultaneously insert a new sales order and update the customer's **salesOrderCount** property, both of which are in the same logical partition.
+
+In this exercise, we will show how we can use denormalization of an aggregate that will allow us to write our top 10 customers query for our e-commerce site. To accomplish this we will use the transactional batch feature in the Azure Cosmos DB .NET SDK that will simultaneously insert a new sales order and update the customer's **salesOrderCount** property, both of which are in the same logical partition.
 
 For this exercise we will complete the following steps:
 
@@ -15,8 +16,8 @@ For this exercise we will complete the following steps:
 
 Follow these steps to navigate to our code that we will view and update for Change Feed.
 
-1. Open Azure Cloud Shell from the Azure Portal.
-1. Navigate to the directory where our project is by changing the current directory to the one where our project is
+1. Open Azure Cloud Shell from the Azure portal.
+1. Navigate to the directory where our project is by changing the current directory to the one where our project is located.
 
     ```bash
     cd mslearn-model-partition-data-azure-cosmos-db/modeling
@@ -28,20 +29,20 @@ Follow these steps to navigate to our code that we will view and update for Chan
     code Program.cs
     ```
 
-1. You should now see this in Azure Cloud Shell
+1. You should now see this code below in Azure Cloud Shell.
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" alt-text="cloud shell with vs code":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code":::
 
 ## Complete the code to update total sales orders
 
 1. Navigate to the function that creates a new sales order.
 1. Type **CTRL + G**, then type in **487** to go to that line in the file.
-1. You should now see this.
+1. You should now see this code below in Azure Cloud Shell.
 
     :::image type="content" source="../media/8-create-order-function.png" alt-text="create new order":::
 
 1. This function creates a new sales order and updates the customer record using transactional batch.
-1. The first thing that happens is the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and id.
+1. First, the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and id.
 1. Notice on line **485** there is a `//To-Do:` comment.
 1. Here we need to write code that will increment the value of the **salesOrderCount**
 1. Copy this code snippet below and paste it below the line that starts with `//To-Do:`
@@ -58,10 +59,11 @@ Follow these steps to navigate to our code that we will view and update for Chan
 ## Complete the code to implement transactional batch
 
 1. Next scroll down a few lines to see the data for the new sales order we will create for our customer.
-1. Here you can see in our sales order object we are going to pass in some values in our sales order header including a new order id, our customer id, the order date and also a value for our `type` property that allows us to distinguish a sales order from a customer in our customer container..
-1. Next we have two products we will add to our sales order.
+1. Here you can see the new dummy sales order object that we be inserted. It has a header and detail structure typical of sales orders in an ecommerce application.
+1. For the sales order header we an order id, customer id, and order date. It also something specific to our design with a `type` property that allows us to distinguish a sales order from a customer object in our customer container.
+1. The order also includes two products that are part of the details in our sales order.
 1. Scroll a little further until you see another `//To-Do:` comment.
-1. Here we need to write code that will implement insert a new sales order and update the customer record using transactional batch.
+1. Here we need to write code that will insert a new sales order and update the customer record using transactional batch.
 1. Copy this code snippet below and paste it below the line that starts with `//To-Do:`
 
     ```csharp
@@ -94,7 +96,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. You should see all of the customer's sales orders output on the screen.
 1. Note the last order was for a *Road-650 Red, 58* for $782.99.
 1. Scroll up until you see, *Print out customer record and all their orders*
-1. Note the `salesOrderCount` property shows 2 sales orders.
+1. Note the `salesOrderCount` property shows two sales orders.
 1. Your screen should look like this.
 
     :::image type="content" source="../media/8-query-customer-and-orders-initial.png" alt-text="query customer and orders initial":::
@@ -108,7 +110,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Next, type **c** to run the same query again.
 1. Note the new sales order with an *HL Mountain Frame - Black, 38* and *Racing Socks, M*.
 1. Scroll back to the top until you see, *Print out customer record and all their orders*
-1. Note the `salesOrderCount` property shows 3 sales orders.
+1. Note the `salesOrderCount` property shows three sales orders.
 1. Your screen should look like this.
 
     :::image type="content" source="../media/8-query-customer-and-orders-next.png" alt-text="updated customer record":::
@@ -129,15 +131,15 @@ The way we delete an order works exactly the same as the way we create an order 
 
 1. Type **x** to exit the application.
 1. In Azure Cloud Shell, type `code Program.cs`
-1. Next type **CTRL G** then enter **553**.
-1. This is the function that deletes the new sales order and updates the customer record.
+1. Next type **CTRL + G** then enter **553**.
+1. This function deletes the new sales order and updates the customer record.
 1. Here you can see the code first retrieve the customer record, then decrement `salesOrderCount` by 1.
 1. Next is the call to `CreateTransactionalBatch()`. Again the logical partition key value is passed in but this time `DeleteItem()` is called with the order id and `ReplaceItem()` is called with the updated customer record.
 
 ## View the code for our top 10 customers query
 
-1. While we are still in our code window let's go look at the query for our top 10 customers.
-1. Type **CTRL-G** then enter **584**
+1. Let's look at the query for our top 10 customers.
+1. Type **CTRL + G** then enter **584**
 1. Near the top is the definition for our query.
 
     ```sql
@@ -146,14 +148,14 @@ The way we delete an order works exactly the same as the way we create an order 
         ORDER BY c.salesOrderCount DESC
     ```
 
-1. This is a fairly simple query with a TOP statement to limit the number of records returned and an ORDER BY on our `salesOrderCount` property in descending order.
-1. Also not the dicriminator property of `type` with a value of *customer* so we only return back customers in our query since our customer container has both customers and sales orders within it.
+1. This query is fairly simple with a TOP statement to limit the number of records returned and an ORDER BY on our `salesOrderCount` property in descending order.
+1. Also note the discriminator property of `type` with a value of *customer* so we only return back customers because our customer container has both customers and sales orders within it.
 1. Finally, let's run our top 10 customers query and see the customers and their order totals.
-1. Type **CTRL-Q** to exit VS Code.
+1. Type **CTRL + Q** to exit VS Code.
 1. Next type **dotnet run** to launch our application again.
 1. Then finally, type **e** to run the query.
 
     :::image type="content" source="../media/8-top-10-customers-initial.png" alt-text="top 10 customers initial results":::
 
-1. One thing that you may not realize is that this is a cross-partition query that fans-out across all the partitions in our container.
-1. In the companion lab to this one it was pointed out that you should strive to avoid cross-partition queries. However, in reality they can be ok in situations where the container is still very small or if the query is not run very often. However, if this were a heavily run query and the container was very large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
+1. Something you may not realize is the top 10 customers query is a cross-partition query that fans-out across all the partitions in our container.
+1. In the companion lab to this one, it was pointed out that you should strive to avoid cross-partition queries. However, in reality they can be ok in situations where the container is still small or if the query is not run often. If this query frequently executed or the container was exceptionally large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
