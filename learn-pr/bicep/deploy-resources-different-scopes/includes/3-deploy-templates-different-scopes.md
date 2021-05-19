@@ -1,4 +1,4 @@
-You now understand the different scopes that resources can be deployed at. In this unit, you'll learn how to start writing Bicep files that deploy at these scopes.
+You now understand the different scopes that resources can be deployed at. In this unit, you learn how to start writing Bicep files that deploy at these scopes.
 
 ## Specify the target scope for a Bicep file
 
@@ -8,7 +8,7 @@ Use the `targetScope` keyword to tell Bicep that the resources in the file are f
 
 :::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
-Notice that you're just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you'll tell Bicep exactly which management group you want to deploy the resources into. The Azure CLI and Azure PowerShell cmdlets have command-line arguments to specify this information.
+Notice that you're just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources into. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
 If you don't specify the `targetScope`, Bicep assumes the file will be deployed to a resource group.
 

@@ -36,8 +36,8 @@ During the process, you'll:
 
    Notice that the policy definition only applies to resources where:
 
-   - The resource type is equal to `Microsoft.Compute/virtualMachines`; and
-   - The `sku.name` property *either* begins with `Standard_F` or `Standard_G`.
+   * The resource type is equal to `Microsoft.Compute/virtualMachines`; and
+   * The `sku.name` property *either* begins with `Standard_F` or `Standard_G`.
   
    When you try to create a resource that matches these conditions, Azure will deny the resource creation.
 
@@ -45,7 +45,7 @@ During the process, you'll:
 
 ## Assign the policy
 
-A policy definition doesn't do anything until it's applied. In this step, you'll deploy a second subscription-scoped resource - this time, to apply the policy definition to the subscription.
+A policy definition doesn't do anything until it's applied. In this step, you deploy a second subscription-scoped resource that applies the policy definition to the subscription.
 
 1. Under the policy definition that you just added, add the following policy assignment:
 
@@ -93,7 +93,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. Find the subscription that you want to use for this exercise. If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
 
     ```azurecli
-    az account list --output tsv
+    az account list --output table
     ```
 
 1. Set the default subscription for all of the Azure CLI commands that you run in this session.

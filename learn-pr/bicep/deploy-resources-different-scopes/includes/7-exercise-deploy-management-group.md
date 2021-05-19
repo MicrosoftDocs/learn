@@ -1,4 +1,4 @@
-Project Teddybear was a success, and now the secretive R&D development at your toy company has been told to research even more new toys. They've started to ask you for new subscriptions on a near-daily basis, and they need to apply their policies across all of them. Rather than duplicating your policy definitions and assignments in each subscription, you've decided that you'll put all of their subscriptions within a management group, and then apply a policy to the management group instead of each subscription individually. In this exercise, you'll create a new Bicep template to apply policy definitions and assignments to a management group.
+Project Teddybear was a success, and now the secretive R&D development at your toy company is ready to research even more new toys. They've started to ask you for new subscriptions on a near-daily basis, and they need to apply their policies across all of them. Rather than duplicating your policy definitions and assignments in each subscription, you've decided that you'll put all of their subscriptions within a management group, and then apply a policy to the management group instead of each subscription individually. In this exercise, you'll create a new Bicep template to apply policy definitions and assignments to a management group.
 
 During the process, you'll:
 
@@ -91,6 +91,10 @@ In order to create a policy assignment, you need to refer to the policy definiti
    :::code language="bicep" source="code/7-template.bicep" range="3" :::
 
    You need to have the management group's name as a parameter because you'll use it when you construct the resource ID shortly.
+
+1. At the bottom of the variables section, add the following variable definition:
+
+   :::code language="bicep" source="code/7-template.bicep" range="6" :::
 
 1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 

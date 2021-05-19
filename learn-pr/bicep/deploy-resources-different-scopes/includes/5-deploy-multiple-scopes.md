@@ -22,7 +22,7 @@ Notice that the `scope` property uses a Bicep function to help to identify the s
 
 ## Deploy across multiple resource groups
 
-A common use of scopes is to create deploys across multiple resource groups. For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *ToyNetworking*, and then deploys a network interface into a different resource group. Here's what the Bicep file looks like:
+A common use of scopes is to deploy across multiple resource groups. For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *ToyNetworking*, and then deploy a network interface into a different resource group. Here's what the Bicep file looks like:
 
 :::code language="plaintext" source="code/5-multiple-rgs.bicep" highlight="2" :::
 
