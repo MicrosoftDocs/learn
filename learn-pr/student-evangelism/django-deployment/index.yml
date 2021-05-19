@@ -24,7 +24,7 @@ prerequisites: |
   Software:
   - Visual Studio Code
   - Git
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/django-deployment.svg
 ratingEnabled: true
 levels:
 - intermediate

@@ -27,9 +27,9 @@ Defining corporate policy focuses on identifying and mitigating business risks r
 
 |  |  |
 |--|--|
-| <br> :::image type="content" source="../media/business-risk.png" alt-text="Business risk icon." border="false"::: | <br> [Business risk](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/business-risk?azure-portal=true): Investigate current cloud adoption plans and data classification to identify risks to the business. Work with the business to balance risk tolerance and mitigation costs. |
-| <br> :::image type="content" source="../media/corporate-policy.png" alt-text="Policy and compliance icon." border="false"::: | <br> [Policy and compliance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition?policy-definition=true): Evaluate risk tolerance to inform minimally invasive policies that govern cloud adoption and manage risks. In some industries, third-party compliance affects initial policy creation. |
-| <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> [Processes](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/processes?Azure-portal=true): The pace of adoption and innovation activities will naturally create policy violations. Executing relevant processes will help to monitor and enforce adherence to policies. |
+| <br> :::image type="content" source="../media/business-risk.png" alt-text="Business risk icon." border="false"::: | <br> [Business risk](/azure/cloud-adoption-framework/govern/policy-compliance/business-risk?azure-portal=true): Investigate current cloud adoption plans and data classification to identify risks to the business. Work with the business to balance risk tolerance and mitigation costs. |
+| <br> :::image type="content" source="../media/corporate-policy.png" alt-text="Policy and compliance icon." border="false"::: | <br> [Policy and compliance](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition?policy-definition=true): Evaluate risk tolerance to inform minimally invasive policies that govern cloud adoption and manage risks. In some industries, third-party compliance affects initial policy creation. |
+| <br> :::image type="content" source="../media/enforcement.png" alt-text="Process enforcement icon." border="false"::: | <br> [Processes](/azure/cloud-adoption-framework/govern/policy-compliance/processes?Azure-portal=true): The pace of adoption and innovation activities will naturally create policy violations. Executing relevant processes will help to monitor and enforce adherence to policies. |
 
 ## Business risk
 
@@ -60,7 +60,7 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
 - **Overspend:** There is a risk of overspending, especially for self-service deployments. Any deployment must be allocated to a billing unit with approved budget and a mechanism for budgetary limits.
 
-  **Design consideration:** In Azure, budget can be controlled with [Azure Cost Management + Billing](https://docs.microsoft.com/azure/cost-management-billing/). [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
+  **Design consideration:** In Azure, budget can be controlled with [Azure Cost Management + Billing](/azure/cost-management-billing/). [Azure Advisor](/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
 
 - **Securing sensitive data:** Assets that interact with sensitive data may not receive sufficient protections, leading to potential data leaks or business disruptions. All assets that interact with sensitive data must be identified and reviewed by the security team to ensure proper levels of protection.
 

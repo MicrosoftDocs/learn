@@ -8,7 +8,7 @@ In this module, you worked with a microservices solution using containers. Howev
 
 The microservices solution in this module had been refactored from a larger monolithic application. To learn more about migrating larger applications into smaller services, see [Decompose a monolithic application into a microservices architecture](/learn/modules/microservices-architecture/?azure-portal=true).
 
-The microservices solution in this module used a variety of platforms and services, including Docker, Azure Container Registry, and Kubernetes. To learn more about these and related container-centric technologies in Azure, such as Azure Container Instances and App Service, see the [Administer containers in Azure learning path](/learn/paths/administer-containers-in-azure/?azure-portal=true).
+The microservices solution in this module used a variety of platforms and services, including Docker, Azure Container Registry, and Kubernetes. To learn more about these and related container-centric technologies in Azure, such as Azure Container Instances and App Service, see the [Administer containers in Azure learning path](../../../paths/administer-containers-in-azure/index.yml?azure-portal=true).
 
 ## Learning path summary
 

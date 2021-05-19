@@ -74,7 +74,7 @@ enum WebEvent {
     Paste(String),
 
     // Or it can include tuple structs
-    Click(Click)
+    Click{x: i64, y: i64}
 }
 ```
 

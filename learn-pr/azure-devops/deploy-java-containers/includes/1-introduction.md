@@ -16,9 +16,9 @@ In this module, you will:
 
 This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works, along with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
-* [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true)
+* [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+* [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
 
 This module also assumes you are already familiar with Java, although that is not a requirement for completing the steps involved.

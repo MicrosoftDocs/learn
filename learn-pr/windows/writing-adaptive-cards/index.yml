@@ -17,7 +17,7 @@ abstract: |
  - Extend the app to demonstrate further features of the Adaptive Cards API.
 prerequisites: |
  - A computer running the current release of Windows 10.
- - [Visual Studio 2017](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
+ - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - Ability to program in C#.
 iconUrl: /learn/achievements/writing-adaptive-cards.svg
 levels:
@@ -33,4 +33,3 @@ units:
 - learn-windows.writing-adaptive-cards.4-summary
 badge:
   uid: learn-windows.writing-adaptive-cards.badge
-  
