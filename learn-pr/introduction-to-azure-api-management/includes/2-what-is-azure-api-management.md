@@ -87,9 +87,9 @@ The Azure API Management gateway is an Azure endpoint that accepts all calls fro
 
 ## Administration interface
 
-The Azure API Management administration interface is an Azure portal interface that enables you to administer your APIs. API administration includes the following activities:
+The Azure API Management administration interface is a set of Azure portal pages that enables you to administer your APIs. API administration includes the following activities:
 
-- Defining or importing API schemas.
+- Defining or importing API specifications.
 - Implementing usage policies such as quotas and rate limits.
 - Setting security policies.
 - Managing users.
@@ -156,7 +156,7 @@ Azure API Management solves the API policy problem by enabling you to set polici
 - **Authentication**. These policies authenticate API calls. For example, you can authenticate an API call using Basic authentication, a client certificate, or a managed identity.
 - **Caching**. These policies enable you to improve API performance by storing and retrieving responses in the cache.
 - **Transformation**. These policies enable you to perform operations on API requests and responses. For example, you can convert an API from XML to JavaScript Object Notation (JSON) or vice-versa, set a different backend service, and modify a query string parameter.
-- **Validation**. These policies are used to validate API calls by comparing certain parameters to what's in your API schema. For example, you can validate the request or response body, the request header parameters, and the response headers.
+- **Validation**. These policies are used to validate API calls by comparing certain parameters to what's in your API specification. For example, you can validate the request or response body, the request header parameters, and the response headers.
 - **Advanced**. These policies enable you to perform operations on the API requests and responses. For example, you can apply policies based on conditional expressions, set variables, and modify the HTTP status code of a response.
 
 Azure API Management policy definitions are XML documents that consist of a series of statements, each of which represents a policy and its parameters. The XML document is divided into the following sections:

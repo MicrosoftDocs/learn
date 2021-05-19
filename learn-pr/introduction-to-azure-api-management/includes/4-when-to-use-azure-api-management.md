@@ -163,7 +163,7 @@ Azure API Management was designed with API security in mind. With so many organi
 
 - Permissions. Setting permissions enables you to control who can work with an API and what they can do with it. In Azure API Management, having all your API consumers as users and being able to organize those users into groups makes it easier and more efficient to apply permissions to control API access.
 - Access. Controlling access to an API means only allowing authorized users to submit requests. With Azure API Management, the developer portal supplies users with subscription keys and you can restrict access to APIs by using multiple forms of authentication and JSON web tokens.
-- Protection. API protection means securing the API from attacks or malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent consumer misuse (intentional or accidental) of the API.
+- Protection. API protection means securing the API from malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to prevent consumer misuse (intentional or accidental) of the API.
 - Compliance. API compliance means having your APIs satisfy all corporate or government security policies. Having all your APIs together in Azure API Management makes it easier to configure those APIs with security policies that achieve compliance.
 
 The more APIs you manage, the greater the need for security, because more APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can expose a security flaw.
