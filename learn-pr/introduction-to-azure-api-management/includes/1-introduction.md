@@ -10,7 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-Making an application programming interface (API) available <!--Paul, who is it being made available to? Could we clarify?-->is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even a single API brings significant challenges on various fronts such as:
+Publishing an application programming interface (API) is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even a single API brings significant challenges on various fronts such as:
 
 - Onboarding users
 - Handling revisions
