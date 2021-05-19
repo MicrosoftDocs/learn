@@ -47,7 +47,6 @@ An API *consumer* is an entity that makes a request to the API for data. So, for
 
 - Business partner
 - Employee
-- Developer<!--Paul, we also have a separate section for developers. Would it be OK to remove it from here?-->
 - Mobile app
 - Web app
 - IoT device
@@ -58,7 +57,7 @@ The gateway performs many tasks from the consumer's point of view, but the follo
 
 - Authentication. The gateway monitors access to the API by verifying the consumer's subscription keys, JWT tokens, and other credentials.
 - Security. The gateway prevents API misuse by enforcing predefined rate limits and consumer usage quotas.
-- Transformation. The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON in real time<!--Paul, please review edit. On-the-fly might be flagged as jargon or might not localize-->, as depicted in the following image.
+- Transformation. The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON in real time, as depicted in the following image.
 - Routing. After an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - Performance. The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
