@@ -110,7 +110,7 @@ The Azure API Management developer portal is a web interface that enables develo
 
 ## Azure API Management tiers
 
-Azure API Management provides several service tiers, each of which offers a distinct set of features, capacities, and pricing. In the following table, the tiers are listed <!--Paul, I removed directional language - noncompliant-->in order from least expensive to most expensive:
+Azure API Management provides several service tiers, each of which offers a distinct set of features, capacities, and pricing. In the following table, the tiers are listed in order from least expensive to most expensive:
 
 | | | | | | |
 | --- | --- | --- | --- | --- | --- |
@@ -155,7 +155,7 @@ Azure API Management solves the API policy problem by enabling you to set polici
 - **Access restriction**. These policies determine where an API is allowed through the gateway. For example, there are policies that enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON web token (JWT).
 - **Authentication**. These policies authenticate API calls. For example, you can authenticate an API call using Basic authentication, a client certificate, or a managed identity.
 - **Caching**. These policies enable you to improve API performance by storing and retrieving responses in the cache.
-- **Transformation**. These policies enable you to perform operations on API requests and responses. For example, you can convert an API <!--Paul, please check this edit-->from XML to JavaScript Object Notation (JSON) or vice-versa, set a different backend service, and modify a query string parameter.
+- **Transformation**. These policies enable you to perform operations on API requests and responses. For example, you can convert an API from XML to JavaScript Object Notation (JSON) or vice-versa, set a different backend service, and modify a query string parameter.
 - **Validation**. These policies are used to validate API calls by comparing certain parameters to what's in your API schema. For example, you can validate the request or response body, the request header parameters, and the response headers.
 - **Advanced**. These policies enable you to perform operations on the API requests and responses. For example, you can apply policies based on conditional expressions, set variables, and modify the HTTP status code of a response.
 
