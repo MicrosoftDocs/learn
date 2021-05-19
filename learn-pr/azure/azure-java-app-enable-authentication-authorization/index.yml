@@ -2,29 +2,28 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
   moduleType: standard
-  title: TODO index.yml:metadata.title
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  title: Sign in users with Azure Active Directory and access Microsoft APIs in a Java web app
+  description: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
   ms.date: 05/07/2021
   author: navyasric
   ms.author: nacanuma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO index.yaml:title #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
-summary: TODO index.yaml:summary #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
-abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. This section is used to declare learning objectives only, as shown in the example.
-  TODO index.yaml:abstract
+title: Sign in users with Azure Active Directory and access Microsoft APIs in a Java web app
+summary: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
+abstract: | 
+  In this module, you will:
 
-  By the end of this module, you will be able to:
+  - Register a web application with Azure Active Directory
+  - Sign in users in an Azure Active Directory tenant to a Java web application
+  - Authorize access to data in a Microsoft API
 
-  - One
-  - Two
-  - Three
-prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
-  TODO index.yaml:prerequisites
+prerequisites: | 
+  - Basic understanding of setting up and building Java web application with Maven
+  - Basic understanding of setting up and running Java web application on a Tomcat server
+  - Beginner-level understanding of Azure Active Directory: Creating tenants in Azure Active Directory
+  - For the exercises, you will need an IDE like Visual Studio Code to edit code
 
-  - One
-  - Two
-  - Three
 iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
 levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products
 - beginner

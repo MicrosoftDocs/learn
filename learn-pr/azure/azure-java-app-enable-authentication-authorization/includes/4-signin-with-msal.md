@@ -13,7 +13,9 @@ The library provides convenient APIs that enable authentication with Azure Activ
 
 ## Key MSAL concepts
 
-1. MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials. 
+### MSAL object initialization
+
+MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials.
 
     **Confidential client** applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). Confidential clients can hold configuration-time application secrets. 
 
@@ -28,7 +30,9 @@ The library provides convenient APIs that enable authentication with Azure Activ
 
     ```
 
-2. MSAL provides `acquireToken` methods to initiate the authentication flow and return an `AuthenticationResult` containing the authentication tokens. 
+### MSAL API to acquire tokens
+
+MSAL provides `acquireToken` methods to initiate the authentication flow and return an `AuthenticationResult` containing the authentication tokens.
 
     When a user completes sign in, an ID token is returned in the authentication result containing some basic authentication claims like user principle name, email, etc. 
 
@@ -41,4 +45,3 @@ The library provides convenient APIs that enable authentication with Azure Activ
 
     final IAuthenticationResult result = app.acquireToken(authParams).get();
     ```
-

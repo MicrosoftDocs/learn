@@ -57,7 +57,8 @@ To configure the code, open the application project in your preferred IDE like I
 
 ## Overview of MSAL and authentication code
 
-1. MSAL4J is added as a Maven dependency in the `pom.xml` file of the project.
+1. MSAL4J is available on Maven. You will need to add MSAL4J as a dependency in the `pom.xml` file of the project.
+
     ```
     <dependency>
         <groupId>com.microsoft.azure</groupId>
@@ -81,7 +82,6 @@ To configure the code, open the application project in your preferred IDE like I
     - **AuthorizationRequestUrlParameters**: Parameters that must be set in order to build an AuthorizationRequestUrl.
     - **REDIRECT_URI**: Where Azure Active Directory will redirect the browser (along with auth code) after collecting user credentials. It must match the redirect URI in the Azure Active Directory app registration.
     - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
-
 
 1. The user is presented with a sign-in prompt by Azure Active Directory. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Azure Active Directory.
 
