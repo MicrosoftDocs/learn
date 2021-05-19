@@ -19,7 +19,6 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
 5. Select the default options for the Disks and Networking settings
 
-    :::image type="content" source="../media/create-data-disks.png" alt-text="Screenshot of the Data Disks section of the VM creation screen in the Azure portal.":::
 
 6. Finish configuring the VM and creating the image by selecting Review + create.
 
