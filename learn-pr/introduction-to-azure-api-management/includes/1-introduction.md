@@ -10,13 +10,20 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-Making an application programming interface (API) available is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even a single API brings significant challenges on various fronts: onboarding users, handling revisions, implementing security, running analytics, and more. Now imagine that, like many of today's leading companies, your organization publishes multiple APIs for different types of users—including partners, developers, and employees—and that those APIs are used in multiple settings—including mobile apps, web apps, and IoT devices.
+Making an application programming interface (API) available <!--Paul, who is it being made available to? Could we clarify?-->is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even a single API brings significant challenges on various fronts such as:
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="Diagram depicting multiple APIs connecting to multiple servers, where each API maintains its own set of users, security policies, and analytics data.":::
+- Onboarding users
+- Handling revisions
+- Implementing security
+- Running analytics
 
-How do reduce the complexity inherent in having a large number of APIs? Azure API Management acts as a "front door" for all your APIs. Azure API Management not only handles all your API traffic, but also offers intuitive portals for managing your APIs and surfacing them to developers, as well as tools for implementing security, handling revisions, and performing analytics.
+Now imagine that, like many of today's leading companies, your organization publishes multiple APIs for different types of users, including partners, developers, and employees. These APIs are used in multiple settings, including mobile apps, web apps, and IoT devices.
 
-:::image type="content" source="../media/1-introduction-after.png" alt-text="Diagram depicting how Azure API Management acts as a front door for all an organization's APIs, which are then routed to the server where the API is deployed.":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connecting to multiple servers, where each API maintains its own set of users, security policies, and analytics data.":::
+
+How do reduce the complexity inherent in having a large number of APIs? Azure API Management acts as a "front door" for all your APIs. Azure API Management not only manages all your API traffic, but also offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, handling revisions, and performing analytics.
+
+:::image type="content" source="../media/1-introduction-after.png" alt-text="Depiction of how Azure API Management acts as a front door for all of an organization's APIs, which are then routed to the server where the API is deployed.":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -33,7 +40,7 @@ How do reduce the complexity inherent in having a large number of APIs? Azure AP
 
 ## Example scenario
 
-Suppose you work at a company that operates a food delivery platform. That is, consumers use your mobile app or website to browse the menus of multiple restaurants, place an order for the food they want, which your company then delivers. The backbone of your platform is a large collection of APIs. For example, you publish APIs that are used by your mobile app, your web app, your partner restaurants, the IoT devices on your delivery vehicles, your in-house development team, and your employees (such as business analysts). Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. Here you'll learn how Azure API Management can standardize, centralize, and secure all aspects of publishing and maintaining APIs across the full API lifecycle.
+Suppose you work at a company that operates a food-delivery platform. Consumers use your mobile app or website to browse the menus of multiple restaurants and place an order for the food they want, which your company then delivers. The backbone of your platform is a large collection of APIs. For example, you publish APIs that are used by your mobile app, your web app, your partner restaurants, the IoT devices on your delivery vehicles, your in-house development team, and your employees (such as business analysts). Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. Here you'll learn how Azure API Management can standardize, centralize, and help secure all the aspects of publishing and maintaining APIs across the full API lifecycle.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -50,11 +57,11 @@ Suppose you work at a company that operates a food delivery platform. That is, c
 
 ## What will we be doing?
 
-We'll examine Azure API Management from three main angles to help you decide if it's the right solution to reduce your company's API complexity:
+We'll examine Azure API Management to help you decide if it's the correct solution to reduce your company's API complexity. We'll study the following three main angles:
 
-- **Gateway**: A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
-- **Administrators**: A single interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
-- **Developers**: A portal that brings all your APIs into a single location for developers to read documentation, test APIs, view code samples, get API keys, and run analytics.
+- Gateway. A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
+- Administrators. A single interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
+- Developers. A portal that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -72,6 +79,6 @@ We'll examine Azure API Management from three main angles to help you decide if 
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to evaluate whether Azure API Management is the right solution for collecting your organization's many APIs under a single management umbrella.
+By the end of this session, you'll be able to evaluate whether Azure API Management is the correct solution for collecting your organization's many APIs under a single management umbrella.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
