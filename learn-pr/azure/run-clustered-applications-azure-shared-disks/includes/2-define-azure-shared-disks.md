@@ -60,7 +60,7 @@ Windows Server failover clustering with Azure VMs requires additional configurat
 
 ### File server
 
-File server for general use, can use the shared disk to enable high availability for the file service role. 
+File server for general use  can use the shared disk to enable high availability for the file service role. 
 You can also use Scale-out File Server deployed on Windows Server Failover Cluster, which uses Azure shared disks in active-active mode. Cluster Witness resources are stored on Azure shared disk. All file shares are simultaneously online on all nodes.
 
 Use the following Azure Resource Manager (ARM) template to deploy [Windows Server 2019 Scale-Out File Server (SOFS) Cluster with Azure Shared Disk.](https://github.com/robotechredmond/301-shared-disk-sofs)
