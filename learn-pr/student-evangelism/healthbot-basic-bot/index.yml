@@ -24,11 +24,11 @@ products:
   - vs
 prerequisites: Introduction to the HealthBot Service
 units:
-#  - learn.healthbot-basic-bot.0-bonus-conversational-elements
   - learn.healthbot-basic-bot.1-introduction
   - learn.healthbot-basic-bot.2-get-started-with-custom-scenario
   - learn.healthbot-basic-bot.3-build-the-basic-bot
-  - learn.healthbot-basic-bot.4-knowledge-check
-  - learn.healthbot-basic-bot.5-summary
+  - learn.healthbot-basic-bot.4-bonus-conversational-elements
+  - learn.healthbot-basic-bot.5-knowledge-check
+  - learn.healthbot-basic-bot.6-summary
 badge:
   uid: learn.healthbot-basic-bot.badge

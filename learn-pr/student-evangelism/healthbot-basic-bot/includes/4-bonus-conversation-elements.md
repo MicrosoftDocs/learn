@@ -1,6 +1,6 @@
 From sending prompt messages to getting answers from the user to specific questions, interaction with end users is a mandatory functionality in any chat bot conversation. The Health bot provides a simple interface to allow communication with the user in scenarios and data flows.
 
-:::image type="content" source="../media/0-Bonus-reading/0-a.png" alt-text="Conversation Elements":::
+:::image type="content" source="../media/4-conversational-elements.png" alt-text="Conversation Elements":::
 
 ### Prompt
 
@@ -28,7 +28,7 @@ Notice that the configuration pane is quite simple. Both the *Display Text* 
 
 The Data flow components are responsible for constructing, executing and controlling scenario logic and data flow.
 
-:::image type="content" source="../media/0-Bonus-reading/0-b.png" alt-text="Flow Control":::
+:::image type="content" source="../media/4-flow-control.png" alt-text="Flow Control":::
 
 ### Branch
 
@@ -65,7 +65,7 @@ When you are ready to return from the called scenario, place an "End object" fro
 
 The health bot service is a highly configurable and extensible bot building platform, specifically it allows integration with third party services and resources into your scenarios and flows. Such capability has the potential to enhance conversations and provide engaging experience to the end user.
 
-:::image type="content" source="../media/0-Bonus-reading/0-c.png" alt-text="Advanced Functionalities":::
+:::image type="content" source="../media/4-advanced-funtionalities.png" alt-text="Advanced Functionalities":::
 
 ### Data Connections
 
