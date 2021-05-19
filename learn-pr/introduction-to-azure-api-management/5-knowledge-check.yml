@@ -47,7 +47,7 @@ quiz:
     - content: "Administration interface"
       isCorrect: false
       explanation: "Incorrect. You use the Azure API Management administration interface to set usage quotas, not to enforce them."
-  - content: "If an <!--Paul, microlearning guidelines say not to use second person in questions or answer options--> API development team wants to make a minor change to an API, which of the following features is the best way to handle such a change?"
+  - content: "If an API development team wants to make a minor change to an API, which of the following features is the best way to handle such a change?"
     choices:
     - content: "API version"
       isCorrect: false
