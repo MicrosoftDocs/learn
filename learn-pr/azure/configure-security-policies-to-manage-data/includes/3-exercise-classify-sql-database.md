@@ -62,7 +62,7 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Select **Data Discovery & Classification** initial state will have recommended - 15 in this case. Select Security check to review the recommendations.  If you have not yet run the check do so now.
 
-    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
+    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
 1. Select all the columns and then **Accept selected recommendations**.
 
@@ -70,11 +70,11 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Review the **Data Discovery & Classification**. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
+    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns.](../media/M4_01_02_021.png)
 
 1. To download a report in Excel format, in the top menu of the window select Export.
 
-    ![Screenshot of the Data discovery and classification (preview) pane with Export selected.](../media/M4_01_02_03.png)
+    ![Screenshot of the Data discovery and classification pane with Export selected.](../media/M4_01_02_03.png)
 
 ### Customizing the classification
 
@@ -89,7 +89,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu of the window, select **Add classification**.
 
-    ![Screenshot of the Data discovery and classification (preview) pane with Add classification selected.](../media/M4_01_02_06.png)
+    ![Screenshot of the Data discovery and classification pane with Add classification selected.](../media/M4_01_02_06.png)
 
 1. In the Add classification pane, configure the five fields that display, and then select **+ Add classification**:
    * Schema name
