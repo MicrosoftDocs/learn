@@ -38,7 +38,7 @@ Let's examine the following example to understand how a shared disk works:
 
 1. The clustered application that run on the VMs use the SCSI PR protocol to register its intent to read or write to disk. In this step, every VM will read information on the target about existing reservations and registrations.
 2. One application instance on VM1 takes exclusive reservation to write to the disk.
-3. Once that reservation is enforced, only VM1 can write to the disk. This prevents other VMs from write to the disk at the same time.
+3. Once that reservation is enforced, only VM1 can write to the disk. This prevents other VMs from writing to the disk at the same time.
 4. If the application instance on VM1 goes down,  VM2 issues a **preempt and abort** command and assumes disk control.
 5. The reservation to write is now enforced on the VM2 and other VMs can't write to the disk.
 6. Applications that were running on VM1 will now fail over on VM2.
