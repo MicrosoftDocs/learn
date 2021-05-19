@@ -63,7 +63,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 > [!CAUTION]
 > Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
 
-You'll see `Running...` in the terminal. Wait for the deployment to finish.
+You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 
@@ -89,28 +89,30 @@ The team launching the new teddy bear has told you they are about to launch agai
 
 1. Save the changes to the file.
 
-1. Redeploy the file by running the following code from the terminal in Visual Studio Code:
-
 ::: zone pivot="cli"
 
-```azurecli
-az deployment group create --template-file main.bicep
-```
+1. Redeploy the file by running the following code from the terminal in Visual Studio Code:
+
+    ```azurecli
+    az deployment group create --template-file main.bicep
+    ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
-```
+1. Redeploy the file by running the following code from the terminal in Visual Studio Code:
+
+    ```azurepowershell
+    New-AzResourceGroupDeployment -TemplateFile main.bicep
+    ```
 
 ::: zone-end
 
 > [!CAUTION]
 > Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
 
-You'll see `Running...` in the terminal. Wait for the deployment to finish.
+You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the redeployment
 

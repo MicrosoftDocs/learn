@@ -1,4 +1,4 @@
-Often you need to deploy multiple resources that are very similar. By adding copy loops to your Bicep files, you can avoid having to create multiple resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy, and you can even customize the properties for each instance.
+Often, you need to deploy multiple resources that are very similar. By adding loops to your Bicep files, you can avoid the need to repeat resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy. You can even customize the properties for each instance.
 
 For your toy company, you need to deploy backend infrastructure, including some SQL server, to support launch of the new smart teddy bear. You need to deploy a dedicated SQL server into each country where the toy is going to be available, so that you can comply with data protection laws for each country. Apart from their locations, each server will be configured the same way as all the other servers. You want to use Bicep code to deploy your servers, and a parameter should allow you to specify the regions into which the SQL servers should be deployed.
 
@@ -6,11 +6,11 @@ In this unit, you will learn how to deploy multiple instances of resources by us
 
 ## Use copy loops
 
-When you define a resource or a module in Bicep template, you can use the `for` keyword. Place the `for` keyword in the resource declaration, and then specify how you want Bicep to identify each item in the loop. Typically you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
+When you define a resource or a module in Bicep template, you can use the `for` keyword to create a loop. Place the `for` keyword in the resource declaration and then specify how you want Bicep to identify each item in the loop. Typically, you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
 
 ::: code language="plaintext" source="code/4-loop-simple.bicep" highlight="7-8, 14" :::
 
-In the example above, the loop iterates through each item in the `storageAccountNames` array. Each time Bicep goes through the loop, it puts the current value into a special variable called `storageAccountName`, and this is used as the value of the `name` property. Notice that Bicep requires you put an opening `[` character before the `for` keyword, and a closing `]` character after the resource definition.
+In this example, the loop iterates through each item in the `storageAccountNames` array. Each time Bicep goes through the loop, it puts the current value into a special variable called `storageAccountName`, and this is used as the value of the `name` property. Notice that Bicep requires you put an opening `[` character before the `for` keyword, and a closing `]` character after the resource definition.
 
 If you deployed this Bicep file you'd see three storage accounts created, with the names specified by the corresponding items in the `storageAccountNames` array.
 
@@ -27,7 +27,7 @@ When you use the `range()` function you specify its start value and the number o
 
 ## Access the iteration index
 
-Bicep allows you to iterate through arrays and also retrieve the index of the current element in the array. For example, let's say you wanted to create a SQL servers in each location specified by an array, but you want the names of the servers to just be `sqlserver-1`, `sqlserver-2`, etc. Here's some Bicep code that you could use to achieve this:
+Bicep allows you to iterate through arrays and also retrieve the index of the current element in the array. For example, let's say you wanted to create a SQL servers in each location specified by an array, but you want the names of the servers to just be `sqlserver-1`, `sqlserver-2`, and so on. Here's Bicep code that you could use to achieve this:
 
 ::: code language="plaintext" source="code/4-loop-index.bicep" highlight="7-8" :::
 

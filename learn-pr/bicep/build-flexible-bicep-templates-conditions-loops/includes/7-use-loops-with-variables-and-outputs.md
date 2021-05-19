@@ -2,7 +2,7 @@ You've learned how you can use copy loops to deploy multiple instances of resour
 
 In your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you will need to add additional subnets to your virtual networks in the future, so you want to have flexibility in your Bicep templates to modify subnet configuration. Since you will also be deploying multiple storage accounts in your Azure environment, you need to provide the endpoints for each storage account as output so that your deployment pipelines can use this information.
 
-In this unit, you'll learn how you can use loops with variables and outputs.
+In this unit, you learn how you can use loops with variables and outputs.
 
 ## Variable loops
 

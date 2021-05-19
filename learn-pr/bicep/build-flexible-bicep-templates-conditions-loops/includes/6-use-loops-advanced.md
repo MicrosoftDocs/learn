@@ -1,4 +1,4 @@
-Copy loops are a powerful feature that enables you to create dynamic and flexible templates. It's also important to understand how you can control the way that loops execute when they create resources, and how you can use loops to set resource properties and nest loops. In this unit, you'll learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
+Copy loops are a powerful feature that enables you to create dynamic and flexible templates. It's also important to understand how you can control the way that loops execute when they create resources, and how you can use loops to set resource properties and nest loops. In this unit, you learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
 
 ## Controlling loop execution
 

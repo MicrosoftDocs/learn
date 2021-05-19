@@ -1,12 +1,12 @@
-Conditions can be used in Bicep code to only deploy resources in certain situations.
+You can use conditions in your Bicep code to deploy resources only when specific constraints are met.
 
-In your toy company, you need to deploy resources to different environments. When deploying to your production environment, you need to make sure that auditing is enabled for your SQL servers. But when you deploy to your development environments, you don't want to enable auditing. You want to use single template to deploy all of your environments.
+For example, at your toy company, you need to deploy resources to different environments. When deploying to your production environment, you need to make sure that auditing is enabled for your SQL servers. But when you deploy to your development environments, you don't want to enable auditing. However, you want to use a single template to deploy to all of your environments.
 
-In this unit, you'll learn how to conditionally deploy resources.
+In this unit, you learn how to conditionally deploy resources.
 
-## Use simple conditions
+## Use basic conditions
 
-When you deploy a resource in Bicep, you can provide the `if` keyword followed by a condition. The condition should resolve to a Boolean (true or false) value. If the value is true then the resource is deployed, and if the value is false then the resource is not deployed.
+When you deploy a resource in Bicep, you can provide the `if` keyword followed by a condition. The condition should resolve to a Boolean (true or false) value. If the value is true then the resource is deployed. If the value is false then the resource is not deployed.
 
 It's common to create conditions based on the values of parameters that you provide. The following example deploys a storage account only when the `deployStorageAccount` parameter is set to `true`:
 
@@ -16,13 +16,13 @@ Notice that the `if` keyword is on the same line as the resource definition.
 
 ## Use expressions as conditions
 
-The example above was quite simple. The `deployStorageAccount` parameter was of type `bool`, so it was clear whether it had a value of true or false.
+The previous example was quite basic. The `deployStorageAccount` parameter was of type `bool`, so it's clear whether it has a value of true or false.
 
-In Bicep you are also able to use expressions as condition evaluation. The following example only deploys a SQL auditing resource when the `environmentName` parameter value is equal to `Production`:
+In Bicep, conditions can also include expressions. The following example deploys a SQL auditing resource only when the `environmentName` parameter value is equal to `Production`:
 
 ::: code language="plaintext" source="code/2-conditional-expression.bicep" highlight="7" :::
 
-It's often a good idea to create a variable for the expression that will be used as a condition. That way, your template is easier to understand and read:
+It's usually a good idea to create a variable for the expression that will be used as a condition. That way, your template is easier to understand and read. Here's an example:
 
 ::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="1-5, 8-9, 20-24, 28-29" highlight="1, 9" :::
 
@@ -30,7 +30,7 @@ It's often a good idea to create a variable for the expression that will be used
 
 When resources are deployed conditionally, you sometimes need to be aware of how Bicep evaluates dependencies between resources.
 
-Let's continue writing some Bicep code to deploy SQL auditing settings. The Bicep file also need to declare a storage account resource:
+Let's continue writing some Bicep code to deploy SQL auditing settings. The Bicep file also needs to declare a storage account resource:
 
 ::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="1-24, 28-29" highlight="12-19" :::
 
@@ -38,7 +38,7 @@ Notice that the storage account has a condition too. This means it won't be depl
 
 ::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="7-8" :::
 
-Notice that this Bicep code uses the `?` operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions will be evaluated to the details from the storage account. When it's deployed to a non-production environment, the expressions evaluate to an empty string (``).
+Notice that this Bicep code uses the `?` operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions will be evaluated to the details from the storage account. When it's deployed to a non-production environment, the expressions evaluate to an empty string ('').
 
 You might wonder why this is necessary, since `auditingSettings` and `auditStorageAccount` both have the same condition and so we'll never need to deploy a SQL auditing settings resource without a storage account. While this is true, Resource Manager evaluates the property expressions before conditionals, so if the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
 
