@@ -6,7 +6,7 @@ Security professionals no longer focus on perimeter defense. Modern organization
 
 Here, you'll learn about the *Security* pillar of the Azure Well-Architected Framework.
 
-The concepts discussed in this module are not all-inclusive, but represent some of the important considerations for building a solution on the cloud. For more details on the Azure Well-Architected Framework, visit the [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
+The concepts discussed in this module are not all-inclusive, but represent some of the important considerations for building a solution on the cloud. For more details on the Azure Well-Architected Framework, visit the [Azure Architecture Center](/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
 
 ## Learning objectives
 

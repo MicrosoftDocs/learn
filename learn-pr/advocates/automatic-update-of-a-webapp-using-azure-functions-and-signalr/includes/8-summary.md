@@ -34,4 +34,4 @@ Once the tenant is removed from the Azure extension settings, open the command p
 
 ## Additional Resources
 
-- Learn more about [Azure Cosmos DB input bindings for Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2)
+- Learn more about [Azure Cosmos DB input bindings for Azure Functions](/azure/azure-functions/functions-bindings-cosmosdb-v2)

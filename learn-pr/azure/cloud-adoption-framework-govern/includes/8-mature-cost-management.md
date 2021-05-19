@@ -23,7 +23,7 @@ The objective of this discipline is to apply these cost management best practice
 
 Cost management across the enterprise is a function of cloud governance and cloud operations. All cost management decisions change the assets that support a workload. When those changes impact a workload's architecture, additional considerations are required to minimize the impact on end users and business functions. It's likely for the cloud adoption team who configured or developed that workload to be accountable for following through with those changes.
 
-- **Tagging is critical to all governance.** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Tagging is critical to all governance.** Ensure all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
 - **Identify right size opportunities.** Review your current resource utilization and performance requirements across the environment.
 - **Resize:** Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
 - **Horizontal over vertical scale.** Using multiple small instances can allow for an easier scaling path that a single larger instance. This allows for scale automation, which creates cost optimization.
@@ -32,7 +32,7 @@ Cost management across the enterprise is a function of cloud governance and clou
 
 The following best practices are typically completed by a member of the cloud governance or cloud operations team, in accordance with patching and other scheduled maintenance processes. These best practices map to actionable guidance later in this article.
 
-- **Tagging is critical to all governance:** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Tagging is critical to all governance:** Ensure all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
 - **Identify right size opportunities:** Review your current resource utilization and performance requirements across the environment to identify resources that have remained underutilized for more than 90 days.
 - **Right-size provisioned SKUs:** Modify underutilized resource to use the smallest instance or SKU that can support the performance requirements of each resource.
 - **Auto-shutdown for virtual machines (VM):** When a VM isn't used constantly, consider automated shutdown. The VM won't be deleted or decommissioned, but it will stop consuming compute and memory costs until it's turned back on.
@@ -44,7 +44,7 @@ The following best practices are typically completed by a member of the cloud go
 
 ## Workload cost management best practices
 
-Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload using the [Microsoft Azure Well-Architected Framework overview](https://docs.microsoft.com/azure/architecture/framework/?azure-portal=true) and [introduction](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions regarding the following architectural changes:
+Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload using the [Microsoft Azure Well-Architected Framework overview](/azure/architecture/framework/?azure-portal=true) and [introduction](/learn/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions regarding the following architectural changes:
 
 - **Azure App Service:** Verify production requirements for any Premium tier App Service plans. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine whether a Premium tier plan is required.
 - **Horizontal over vertical scale:** Using multiple small instances can allow for an easier scaling path that a single larger instance. This allows for scale automation, which creates cost optimization. Before a workload can scale horizontally, the technical team must verify that the application is idempotent. Achieving horizontal scale may first require changes to the code and configuration of various layers of the application.
@@ -71,11 +71,11 @@ Azure Cost Management + Billing brings together resource organization, Azure Adv
 
 ## Exercise: Create a budget
 
-To get started with Azure Cost Management + Billing, create your first budget using the steps in the [Azure Cost Management + Billing tutorial on creating a budget](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true).
+To get started with Azure Cost Management + Billing, create your first budget using the steps in the [Azure Cost Management + Billing tutorial on creating a budget](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true).
 
 ## Exercise: Find opportunities to optimize
 
-If you have existing deployments in your Azure environment, you will likely have recommendations that could affect your overall spend. Complete the Azure Cost Management + Billing tutorial: [act on recommendations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) to view Advisor recommendations and other recommendations that could reduce your costs. Those recommendations will identify opportunities to apply the operational best practices listed above.
+If you have existing deployments in your Azure environment, you will likely have recommendations that could affect your overall spend. Complete the Azure Cost Management + Billing tutorial: [act on recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) to view Advisor recommendations and other recommendations that could reduce your costs. Those recommendations will identify opportunities to apply the operational best practices listed above.
 
 ## Exercise: Limit cost risks with Azure Policy
 

@@ -153,7 +153,7 @@ Open Designer:
 1. Select **OK**.
 
     > [!NOTE]
-    > To learn more about Designer, see [Xamarin.Android Designer basics](https://docs.microsoft.com/xamarin/android/user-interface/android-designer/designer-basics?tabs=windows).
+    > To learn more about Designer, see [Xamarin.Android Designer basics](/xamarin/android/user-interface/android-designer/designer-basics?tabs=windows).
 
 ## Add LinearLayout
 

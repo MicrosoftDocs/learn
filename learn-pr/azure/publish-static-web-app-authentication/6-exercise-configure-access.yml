@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-authentication.6-exercise-configure-access
+title: Exercise - Configure authentication providers and access
+metadata:
+  title: Exercise - Configure authentication providers and access
+  description: Use Azure Static Web Apps settings to prevent unwanted access to unauthenticated users and restrict allowed identity providers
+  ms.date: 05/02/2021
+  author: sinedied
+  ms.author: yolasors
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
+sandbox: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-configure-access.md)]

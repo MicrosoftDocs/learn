@@ -1,4 +1,4 @@
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you helped the Tailspin Toys team use Microsoft Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
+In the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you helped the Tailspin Toys team use Microsoft Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
 
 The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code. But how can they quickly deploy the application to an environment that's available to their users?
 
@@ -18,8 +18,8 @@ The modules in this learning path and previous learning paths form a progression
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+* [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
 If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You need:
 
