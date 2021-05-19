@@ -19,5 +19,6 @@ Introduced in 1996, PostgreSQL has garnered over the years a large following, so
 Azure Database for PostgreSQL is available in three deployment modes:
 
 - Single Server. This mode is optimized for cloud native applications that do not require granular control over custom PostgreSQL configuration settings but benefit from the minimized management overhead. It supports the community version of PostgreSQL 9.5, 9.6, 10, and 11
+<!-- Missing period after "11". -->
 - Flexible Server. This mode offers more granular control of database management tasks and configuration settings. The flexible server architecture delivers support for availability zones and cost optimization controls. The controls allow you to stop the server during idle periods and include the choice of the burstable compute tier, which automatically adjusts the compute resources based on demand. The flexible server supports community version of PostgreSQL 11 and 12.
 - Hyperscale. This mode implements sharding to horizontally scale data queries across multiple database instances in order to minimize response time for large datasets. It is intended for applications that require greater scale and performance, with data sets in the range 100 GB.
