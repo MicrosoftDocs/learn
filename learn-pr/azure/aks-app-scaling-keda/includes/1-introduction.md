@@ -1,4 +1,4 @@
-Kubernetes Event Driven Autoscaler (KEDA) works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA), and the Cluster Autoscaler. KEDA extends functionality without overwriting or duplication.
+KEDA works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA), and the Cluster Autoscaler. KEDA extends functionality without overwriting or duplication.
 
 ## Example scenario
 
@@ -26,33 +26,29 @@ By the end of this session, you'll be able to understand which Kubernetes scalin
 
 ## Prerequisites
 
-* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-* Familiarity with [Git](https://docs.microsoft.com/contribute/git-github-fundamentals?WT.mc_id=deploycontainerapps_intro-learn-ludossan) and [GitHub](https://github.com).
+* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/en-us/topic/what-is-kubernetes/#overview).
+* Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 * Familiarity with [Docker](https://docker.com) and Docker images.
 * An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-* Ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-* Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](https://docs.microsoft.com/learn/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
+* Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
+* Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/learn/modules/intro-to-containers).
 
-All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
 
-* [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
-* [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
+* [Azure CLI](/azure/aks/kubernetes-walkthrough)
+* [Kubectl](/azure/aks/kubernetes-walkthrough)
 
 ## Before We Start
 
 You need to create a simple Kubernetes cluster. Following these steps will give you a basic, functioning environment. In a Cloud Shell complete these tasks:
 
-```bash
+```azure-cli
 RESOURCE_GROUP=rg-contoso-video
 LOCATION=westus2
 CLUSTER_NAME=contoso-video
-```
 
-```bash
 az group create -n $RESOURCE_GROUP -l $LOCATION
-```
 
-```bash
 az aks create \
  -g $RESOURCE_GROUP \
  -n $CLUSTER_NAME \
@@ -67,12 +63,11 @@ az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
 
 The complete cluster creation can take up to five minutes.
 
-> [!IMPORTANT]
-> Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
+> **IMPORTANT:** Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
 
 You need to create a simple Azure Redis Cache. Following these steps will give you a basic, functioning cache. In a Cloud Shell environment complete these tasks:
 
-```bash
+```azure-cli
 REDIS_NAME=redis-contoso-video
 
 az redis create --location $LOCATION --name $REDIS_NAME --resource-group $RESOURCE_GROUP --sku Basic --vm-size c0 --enable-non-ssl-port
@@ -81,8 +76,6 @@ REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hos
 REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
 ```
 
-> [!IMPORTANT]
-> Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables REDIS_HOST and REDIS_KEY.
+> **INFO:** Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables REDIS_HOST and REDIS_KEY.
 
-> [!NOTE]
-> Creating these resources in this manner is not recommended for Production use and only recommended to experiment with this module.
+> **IMPORTANT:** Creating these resources in this manner is not recommended for Production use and only recommended to experiment with this module.

@@ -38,7 +38,7 @@ spec:
           name: contoso-microservice
 ```
 
-As you can see, `replicas` is set to 10, the ceiling of the number of necessary replicas available to process the peak number of events.  However, during non-peak times, we're consuming too many resources, potentially starving other `Deployments` within the cluster.
+As you can see, `replicas` is set to 10, the ceiling of the number of necessary replicas available to process the peak number of events. However, during non-peak times, we're consuming too many resources, potentially starving other `Deployments` within the cluster.
 
 One option would be to use a standalone HPA to monitor the CPU usage of the `Pods`. Although this is a better option than manually scaling in both directions, using a HPA won't focus on the number of events received to the Redis list.
 

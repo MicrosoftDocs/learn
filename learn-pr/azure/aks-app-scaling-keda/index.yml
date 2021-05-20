@@ -8,8 +8,8 @@ metadata:
   author: pplavetzki
   ms.author: paplavet
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: Scale container applications in Azure Kubernetes Services (AKS) using Kubernetes Event-driven Autoscaling (KEDA)
-summary: Scale a containerized application hosted on AKS using event driven scaling using KEDA
+title: Scale container applications in AKS using KEDA
+summary: Scale a containerized application hosted on AKS using event driven scaling using KEDA.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to:
     - Understand the concept of event driven auto scaling and how it applies to Kubernetes

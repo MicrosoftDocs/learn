@@ -15,9 +15,9 @@ Both the horizontal pod autoscaler and cluster autoscaler can also decrease the 
 
 ## KEDA's Relationship with HPA
 
-KEDA acts as a “Custom Metrics API” for exposing metrics to the Horizontal Pod Autoscaler.  KEDA cannot do it's job without the HPA.  The complexity of developing a metrics server is abstracted away by using KEDA.
+KEDA acts as a “Custom Metrics API” for exposing metrics to the Horizontal Pod Autoscaler. KEDA can't do its job without the HPA. The complexity of developing a metrics server is abstracted away by using KEDA.
 
-Scalers are the glue that provides the metrics from various sources to the HPA.  Here's a list of some of the most widely used scalers:
+Scalers are the glue that provides the metrics from various sources to the HPA. Here's a list of some of the most widely used scalers:
 
 * Apache Kafka
 * AWS CloudWatch
@@ -41,4 +41,4 @@ Scalers are the glue that provides the metrics from various sources to the HPA. 
 
 For a complete list view the [scalers](https://keda.sh/docs/2.2/scalers/) section on the KEDA site.
 
-A common question is when should one use a HPA and when to enlist KEDA.  If the workload is memory or cpu intensive, and has a well defined metric that can be measured then using a HPA is sufficient. When dealing with a workload that is event driven or relies upon a custom metric, then using KEDA should be the first choice.
+A common question is when should one use a HPA and when to enlist KEDA. If the workload is memory or cpu intensive, and has a well defined metric that can be measured then using a HPA is sufficient. When dealing with a workload that is event driven or relies upon a custom metric, then using KEDA should be the first choice.

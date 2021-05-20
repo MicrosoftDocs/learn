@@ -4,7 +4,7 @@ In this exercise, you'll deploy the scaling object custom resource definition (C
 
 This is where we will see what `KEDA` can do!  We will create a `ScaledObject` to scale based on the number of items in Redis list.  Before we apply the manifest, let's dissect the key sections of the spec.
 
-1. `scaleTargetRef` - this section describes which workload `KEDA` observes.  In our deployment manifest from above we use the following values to tie the scaled object to the deployment.
+1. `scaleTargetRef` - this section describes which workload `KEDA` observes. In our deployment manifest from above we use the following values to tie the scaled object to the deployment.
 
   ```yaml
     scaleTargetRef:
@@ -28,8 +28,8 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
 
   ```yaml
     restoreToOriginalReplicaCount: false        # Optional. Default: false
-    horizontalPodAutoscalerConfig:                   # Optional. Section to specify HPA related options
-      behavior:                                      # Optional. Use to modify HPA's scaling behavior
+    horizontalPodAutoscalerConfig:              # Optional. Section to specify HPA related options
+      behavior:                                 # Optional. Use to modify HPA's scaling behavior
         scaleDown:
           stabilizationWindowSeconds: 300
           policies:
@@ -38,7 +38,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
             periodSeconds: 15
   ```
 
-4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs `KEDA` to scale up when there are ten items in the list.
+4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs KEDA to scale up when there are ten items in the list.
 
   ```yaml
     triggers:
@@ -75,18 +75,18 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
     name: scaled-contoso
   spec:
     scaleTargetRef:
-      apiVersion:    apps/v1  # Optional. Default: apps/v1
-      kind:          deployment         # Optional. Default: Deployment
-      name:          contoso-microservice         # Mandatory. Must be in the same namespace as the ScaledObject
-      envSourceContainerName: contoso-microservice         # Optional. Default: .spec.template.spec.containers[0]
-    pollingInterval: 30                                # Optional. Default: 30 seconds
-    cooldownPeriod:  120                               # Optional. Default: 300 seconds
-    minReplicaCount: 0                                 # Optional. Default: 0
-    maxReplicaCount: 20                                # Optional. Default: 100
-    advanced:                                          # Optional. Section to specify advanced options
-      restoreToOriginalReplicaCount: false        # Optional. Default: false
-      horizontalPodAutoscalerConfig:                   # Optional. Section to specify HPA related options
-        behavior:                                      # Optional. Use to modify HPA's scaling behavior
+      apiVersion:    apps/v1                          # Optional. Default: apps/v1
+      kind:          deployment                       # Optional. Default: Deployment
+      name:          contoso-microservice             # Mandatory. Must be in the same namespace as the ScaledObject
+      envSourceContainerName: contoso-microservice    # Optional. Default: .spec.template.spec.containers[0]
+    pollingInterval: 30                               # Optional. Default: 30 seconds
+    cooldownPeriod:  120                              # Optional. Default: 300 seconds
+    minReplicaCount: 0                                # Optional. Default: 0
+    maxReplicaCount: 20                               # Optional. Default: 100
+    advanced:                                         # Optional. Section to specify advanced options
+      restoreToOriginalReplicaCount: false            # Optional. Default: false
+      horizontalPodAutoscalerConfig:                  # Optional. Section to specify HPA related options
+        behavior:                                     # Optional. Use to modify HPA's scaling behavior
           scaleDown:
             stabilizationWindowSeconds: 300
             policies:
@@ -96,12 +96,12 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
     triggers:
     - type: redis
       metadata:
-        # address:   # Format must be host:port
+        # address:                  # Format must be host:port
         passwordFromEnv: REDIS_KEY
-        listName: keda # Required
-        listLength: "10" # Required
-        enableTLS: "false" # optional
-        databaseIndex: "0" # optional
+        listName: keda              # Required
+        listLength: "10"            # Required
+        enableTLS: "false"          # optional
+        databaseIndex: "0"          # optional
         addressFromEnv: REDIS_HOST
         portFromEnv: REDIS_PORT
   ```
@@ -133,8 +133,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
 
 3. Periodically run the `kubectl get pods` command to verify the deployment is scaling the number of pods according to the backlog of work.
 
-  > [!NOTE]
-  > If you have linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also try `kubectl get pods -w`.
+  > **NOTE:** If you have linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also try `kubectl get pods -w`.
 
   The command should output a table similar to the following example:
 
@@ -152,4 +151,4 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
   contoso-microservice-794d98b5-rgmvx   1/1     Running   0          2m15s
   ```
 
-And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that `KEDA` removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.
+And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that KEDA removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.
