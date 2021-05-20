@@ -12,13 +12,6 @@ While individual packages can alert you to dependencies on other packages for de
 
 SUSE created zypper, a command-line package manager, which makes use of libzpp (SAT solver) to reconcile package dependencies for you. With zypper, all related packages are flagged at once when you select an activity or grouping, so you can install, update, or delete them with a single command. The YaST GUI and TUI includes zypper built into it. YaST runs zypper automatically in the background every time you start. Compared to manually finding and selecting package dependencies through RPM, zypper saves a lot of time.  
 
-## Command-line vs. GUI (zypper vs. YaST)
-You might be wondering why did we use YaST to load apache and now we’re using zypper to add mariadb? Does it matter which one I use? The short answer is no. Zypper and YaST do the same things, they just go about it a little differently. 
-
-From command-line, you can launch YaST and get a ascii-graphic menu that shows you all the different options you can use to administrate your system. Most of the time, graphical systems are preferred because they provide a visual overview of commands, so you do not need to remember everything, you simply see and select them. 
-
-Zypper provides a text-based command-line tool which is better for speed because you don’t have to navigate several windows or menu bars to execute the command. It also allows you to create your own workflow (or script) which is not possible in a graphical environment. If you use the commands and parameters regularly, zypper can be a faster way to get things done.
-
 ## Packages and corresponding modules configuration are updated 
 
 As soon as SUSE becomes aware of an error within a package, an update package is shipped. If you run PAYG, the updated packages are pushed out to a SUSE update infrastructure at your Azure datacenter location and on to your machine when you connect. If you run BYOS, you can download the updates through SUSE directly.  
@@ -33,3 +26,11 @@ Let’s have a look at some basic zypper examples:
 - List available patches with `sudo zypper lp` or `sudo zypper list-patches`.
 - List available updates with `sudo zypper lu` or `sudo zypper list-updates`.
 - Install updates/patches with `sudo zypper up`, `sudo zypper update` or `sudo zypper patch`.
+
+
+## Command-line vs. GUI (zypper vs. YaST)
+You might be wondering why did we use YaST to load apache and now we’re using zypper to add mariadb? Does it matter which one I use? The short answer is no. Zypper and YaST do the same things, they just go about it a little differently. 
+
+From command-line, you can launch YaST and get a ascii-graphic menu that shows you all the different options you can use to administrate your system. Most of the time, graphical systems are preferred because they provide a visual overview of commands, so you do not need to remember everything, you simply see and select them. 
+
+Zypper provides a text-based command-line tool which is better for speed because you don’t have to navigate several windows or menu bars to execute the command. It also allows you to create your own workflow (or script) which is not possible in a graphical environment. If you use the commands and parameters regularly, zypper can be a faster way to get things done.
