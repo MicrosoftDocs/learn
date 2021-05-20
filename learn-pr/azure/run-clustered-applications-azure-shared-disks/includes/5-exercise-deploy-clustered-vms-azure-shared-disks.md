@@ -132,17 +132,17 @@ ssh azureuser@myPublicIP1
 sudo apt-get install sg3-utils
 
 # Read the current reservation. This command will identify the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
-sudo sg\_persist /dev/sdc -s
+sudo sg_persist /dev/sdc -s
 ```
 
 :::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
 
 ```bash
 # Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
-sudo sg\_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
+sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
 
 # Read back the keys on VM1. Now the command should show one reservation  to the shared disk for VM1.
- sudo sg\_persist /dev/sdc -s
+ sudo sg_persist /dev/sdc -s
 
 # Exit the secure shell session from **myVM1**
 Exit
@@ -166,10 +166,10 @@ ssh azureuser@myPublicIP2
 sudo apt-get install sg3-utils
 
 # Register the key 1235 on VM2. This command will provide SCSI_PR registration for VM2, so it can read or write on the shared disk.
-sudo sg\_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
+sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
 
 # Read back the keys for the shared disk. Now it should show 2 reservation to the shared disk for both VM1 and VM2.
-sudo sg\_persist /dev/sdc -s
+sudo sg_persist /dev/sdc -s
 
 exit
 ```
@@ -182,10 +182,10 @@ exit
 ssh azureuser@myPublicIP1
 
 # Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
-sudo sg\_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
+sudo sg_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
 
 # Check the reservation on the device.
-sudo sg\_persist /dev/sdc -s
+sudo sg_persist /dev/sdc -s
 exit
 ```
 
@@ -197,20 +197,20 @@ exit
 ssh azureuser@myPublicIP2
 
 # Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
-sudo sg\_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
+sudo sg_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
 
 # Report capabilities. Verify that reservation exist for VM2 with key 1235.
-sudo sg\_persist /dev/sdc -c
+sudo sg_persist /dev/sdc -c
 ```
 
 :::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
 
 ```bash
 # Unregister from **myVM2**. This command release access to the shared disk.
-sudo sg\_persist --out --register --param-rk=1235 --param-sark=0 --device /dev/sdc
+sudo sg_persist --out --register --param-rk=1235 --param-sark=0 --device /dev/sdc
 
 # Report capabilities.
-sudo sg\_persist /dev/sdc -s
+sudo sg_persist /dev/sdc -s
 
 # Exit the SSH from VM2
 exit
