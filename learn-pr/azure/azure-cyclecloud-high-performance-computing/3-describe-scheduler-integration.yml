@@ -3,8 +3,8 @@ uid: learn.azure-cyclecloud-high-performance-computing.describe-scheduler-integr
 title: Describe Azure CycleCloud scheduler integration and autoscaling
 metadata:
   unitType: learning-content
-  title: describe-scheduler-integration Azure CycleCloud scheduler integration and autoscaling.
-  description: This unit describes 
+  title: describe-scheduler-integration Azure CycleCloud scheduler integration and autoscaling
+  description: This unit describes Azure CycleCloud scheduler integration and autoscaling.
   ms.date: 5/6/2021
   author: anhoward
   ms.author: anhoward
