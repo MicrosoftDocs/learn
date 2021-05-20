@@ -4,7 +4,7 @@ title: Exercise - Create a cloud-init script for use with Azure CycleCloud
 metadata:
   unitType: exercise
   title: Exercise - Create a cloud-init script for use with Azure CycleCloud
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: This unit steps through the process of configuring cloud-init scripts for use with Azure CycleCloud.
   ms.date: 5/6/2021
   author: anhoward
   ms.author: anhoward

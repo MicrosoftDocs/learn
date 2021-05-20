@@ -1,78 +1,74 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure CycleCloud provides template-based deployment of HPC clusters. By default, the Azure CycleCloud application includes several built-in templates for deployment of the most common cluster schedulers, including Slurm, PBSPro, LSF, Grid Engine, and HT-Condor. There are a number of scheduler-specific projects available from the Azure CycleCloud GitHub repositories, which you can customize and import into your Azure CycleCloud instance. You also have the option of implementing template-based provisioning for your own, in-house developed schedulers by leveraging CycleCloud autoscaling plugins.
 
-    Goal: briefly summarize the key skill this unit will teach
+Templates facilitate implementation of a wide range of Azure CycleCloud features, including support for custom VM images, autoscaling, and Spot VMs. They also minimize overhead associated with provisioning and maintaining multiple deployments of identically configured clusters, commonly used to isolate the production, development, and test environments. 
 
-    Heading: none
+These benefits align with your objectives for implementing the new Azure-resident cluster for Contoso. To optimize the extent of these benefits, you decided to learn more about the format and the process of implementing Azure CycleCloud templates. 
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## What is the format of Azure CycleCloud templates?
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Templates are INI-formatted files that use the declarative syntax to describe the structure and configuration of a CycleCloud cluster, including cluster node roles and their respective relationships. Templates consist of named sections, with headers designated by one or more pairs of square brackets. The sections form a hierarchy, corresponding to the hierarchy of cluster objects and their corresponding parameters. The number of square brackets represents a tier within that hierarchy, increasing sequentially with each tier.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+``` ini
+[cluster]
+  [[node, nodearray]]
+    [[[volume]]]
+    [[[network-interface]]]
+    [[[cluster-init]]]
+    [[[input-endpoint]]]
+    [[[configuration]]]
+[environment]
+[noderef]
+[parameters]
+  [[parameters]]
+    [[[parameter]]]
+``` 
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Effectively, the `[cluster]` section may contain one or more `[[node]]` sections, which may contain multiple `[[[volume]]]` sections. Similarly, within the same template, within the `[cluster]` section, you can define one or more `[[nodearray]]` sections, each with its own `[[[configuration]]]`. 
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+> [!NOTE]
+> The order of sections within the same tier is arbitrary.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+### What are the main sections of a template?
 
-    Goal: State concisely what's covered in this unit
+A template consists of the following main sections:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+- cluster. The `[cluster]` section contains a definition of an Azure CycleCloud cluster object. A template must include at least one `[cluster]` section, containing one or more `[[node]]` and `[[nodearray]]` sections describing child objects of that cluster.
+- node represents a single, platform-provisioned VM.
+- nodearray represents one or more Azure VM scale sets.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+> [!NOTE]
+> Clusters comprise nodes serving their designated roles in processing clustered workloads. From the implementation standpoint, Azure CycleCloud relies on Azure Resource Manager to provision them as either individual Azure VMs or as members of an Azure VM scale set. The latter represents a collection of identically configured VMs, which, unlike Azure VMs, support horizontal autoscaling. Azure CycleCloud uses VM scale sets to implement nodearrays. Effectively, the `[[node]]` section describes properties of the underlying, platform-provisioned VMs, which can be a stand-alone Azure VM or belong to an Azure VM scale set. The `[[nodearray]]` section describes an Azure VM scale set.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+> [!NOTE]
+> A nodearray can consist of multiple Azure VM scale sets, with each of them comprising differently configured VMs. However, all nodes in a nodearray perform the same role in the cluster, such as providing resources to a single queue of the cluster scheduler.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+- volume defines an Azure managed disk that should be attached to individual cluster nodes or nodes forming a nodearray. It's a child object of a node or a nodearray object.
+- network-interface defines an Azure network interface that should be attached to individual cluster nodes or nodes forming a nodearray. It's a child object of a node or a nodearray object.
+- configuration defines the configurable properties of a node or nodearray. It's a child object of a node or a nodearray object.
+- cluster-init defines the Azure CycleCloud project specs to apply to a cluster node. A project is a collection of resources which define node configurations in the form of project specs. When a node starts, it's automatically configured by processing these specs. Cluster-init's a child object of a node or a nodearray object.
+- environment defines an Azure Resource Manager deployment, which provisions or modifies Azure resources to be used by the cluster. It's an optional top-level object.
+- noderef references a node within the template in order to express resource dependencies. It's an optional top-level object.
+- parameters allow you to make a template portable, allowing you to use it for deployment of multiple clusters with matching object hierarchy but different configuration settings. It's an optional top-level object, but you have an option of creating a nested parameters hierarchy. For each parameter, you can define its default value.
 
-    Heading: none
--->
-TODO: add a visual element
+Each section contains a number of key-value pairs that provide configuration details about the corresponding object, represented by the section header. For example, for a nodearray, such details could include the `ImageName` key with the value designating the Azure VM image to be used for its nodes or the `Azure.MaxScalesetSize` key specifying the maximum allowed Azure VM scale set size as its value. Similarly, the node or nodearray sections may include one or more `[[[configuration]]]` sections.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+## How to provision a clusters based on a template?
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+Once you identified the template you intend to use to provision an Azure CycleCloud cluster, you can apply any of the following implementation methods:
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+- use Azure CycleCloud CLI to import the template into your Azure CycleCloud application and then use the application's graphical interface to provision the cluster. To trigger the import, run the `cyclecloud import_template -t -f <template_file>` command (where the `<template_file>` placeholder represents the name of the file containing the template). During the import, you have the option of specifying the name of the cluster template that will be exposed in the graphical interface by adding the `-c` switch, followed by that name.
+- use Azure CycleCloud CLI to import the template into your Azure CycleCloud application and, subsequently, to provision the cluster. To trigger the import, run the `cyclecloud import_template -t -f <template_file>` command (where the `<template_file>` placeholder represents the name of the file containing the template). Once the import completes, run the `cyclecloud create_cluster` command. For example, to create a cluster named `lab-cluster` from an imported template named `lab-template`, you would run `cyclecloud create_cluster lab-template lab-cluster`. 
+- use Azure CycleCloud CLI to provision the cluster without explicitly importing the template. To trigger the import, run the `cyclecloud import_cluster` command. 
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Regardless of the method you choose, you will need to provide values of any required parameters during cluster provisioning. When using Azure CycleCloud CLI, you can provide them by referencing a JSON-formatted parameters file. 
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+> [!NOTE]
+> The file consists of key-value pairs, where the key represents the parameter name. To review its format for an existing cluster, use the `cyclecloud export_parameters <cluster_name> > params.json` command, where the `<cluster_name>` placeholder represents the name of the existing cluster.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+> [!NOTE]
+> Before you deploy a cluster based on an imported template, you also need to upload the content of the corresponding project into an Azure CycleCloud locker. To perform an upload, use the `cyclecloud project upload <locker_name>` Azure CycleCloud CLI command (where the `<locker_name>` placeholder represents the name of the locker). To list available lockers, run the `cyclecloud locker list` Azure CycleCloud CLI command. The locker name is referenced in the `[[[cluster-init]]]` section.
 
-<!-- Do not add a unit summary or references/links -->
+> [!NOTE]
+> One of the steps when setting up an Azure CycleCloud installation is the creation of a blob container in an Azure storage account. This container serves as the locker that the CycleCloud server uses to stage CycleCloud projects for cluster nodes. Subsequently, nodes of the Azure CycleCloud-managed clusters are configured to download CycleCloud projects from this locker as part of their boot process.

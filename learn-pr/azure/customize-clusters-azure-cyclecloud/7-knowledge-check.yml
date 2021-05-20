@@ -1,10 +1,10 @@
-### YamlMime:ModuleUnit
+﻿### YamlMime:ModuleUnit
 uid: learn.customize-clusters-azure-cyclecloud.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
+  description: This is a knowledge check unit.
   ms.date: 5/6/2021
   author: anhoward
   ms.author: anhoward
@@ -27,58 +27,36 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "You are editing an Azure CycleCloud template. You plan to add an extra Node section. To which parent section should you add it?"
     choices:
-    - content: ""
+    - content: "cluster"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "A template must include at least one cluster section, containing one or more node and nodearray sections describing child objects of that cluster."
+    - content: "nodearray"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "A node section can be only nested within the cluster section."
+    - content: "configuration"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "A configuration is a child object of a node or a nodearray object."
+  - content: "You customized an Azure CycleCloud template. Now you want to create a cluster based on that template and start it afterwards. You want to minimize the number of steps to accomplish your goal. Which Azure CycleCloud CLI command should you run first?"
     choices:
-    - content: ""
+    - content: "cyclecloud import_template"
+      isCorrect: false
+      explanation: "This would allow you to import the template, but you'd still have to create the cluster before you can start it."
+    - content: "cyclecloud import_cluster"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "This commmand allows you to create a cluster without explicitly importing the template."
+    - content: "cyclecloud create_cluster"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "This requires that you first import the template."
+  - content: "You created an Azure CycleCloud cluster based on the GitHub Slurm repository and configured its nodes with a cloud-init script. You need to connect to a cluster node from an Azure Cloud Shell session to validate that the script run successfully. What authentication method should you use?"
     choices:
-    - content: ""
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository do not support Azure Active Directory authentication."
+    - content: "Active Directory Domain Services"
+      isCorrect: false
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository do not support Active Directory Domain Services authentication."
+    - content: "SSH keys"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This connection relies on SSH key-based authentication."

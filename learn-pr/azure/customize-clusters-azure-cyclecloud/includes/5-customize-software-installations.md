@@ -1,108 +1,62 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure CycleCloud templates facilitate setup of HPC clusters by abstracting implementation details of the underlying infrastructure, allowing you to focus on workload management. However, that workload typically has a number of software-related dependencies, which require additional customization steps. Fortunately, Azure CycleCloud also provides a framework for implementing these steps through its support for provisioning and configuration management tasks applied directly to cluster nodes. 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Your objectives include the need for deploying custom images and using in-house developed configuration scripts you've been using in your on-premises HPC environment. You want to determine how you can leverage the Azure CycleCloud capabilities to accomplish these objectives.
 
-    Heading: none
+## How to implement configuration management with Azure CycleCloud?
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Azure CycleCloud offers three main methods that you can combine in an arbitrary manner in order to customize operating system and software on cluster nodes according to your own requirements or preferences:
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- custom images
+- projects
+- cloud-init
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+### How to use custom images with Azure CycleCloud?
 
-    Goal: Describe the part of the scenario covered in this exercise
+Azure CycleCloud supports the major Windows Server and Linux operating systems on cluster nodes. The built-in templates are preconfigured with the recommended defaults, but you are free to choose Azure Marketplace images or provision nodes based on custom images. The latter might be preferable if you want to minimize delay associated with post deployment setup of the operating system and any additional dependencies of your HPC workloads. It might also be required to satisfy business, security, or compliance needs.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+Custom images allow you to have full control over the preinstalled software and the initial operating system configuration. Their primary drawback is the overhead associated with maintaining multiple images to accommodate different combinations of applications and their versions, especially in development scenarios.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+### How to use Azure CycleCloud projects for software installation?
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+An Azure CycleCloud project is a collection of files that you reference when defining configurations of cluster nodes through templates. Projects have the following directory structure:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+```ini
+\project
+      |- project.ini
+      |- blobs
+      |- templates
+      |- specs
+      |      | 
+      |    default
+      |      |- cluster-init
+      |            |- scripts
+      |            |- files
+      |            |- tests
+      |      | - chef
+      |            |- site-cookbooks
+      |            |- data_bag
+      |            |- roles
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+```
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+The project.ini file contains the project's metadata, including its name, label, version, and type. The supported types include scheduler and application. The first of them is used to install and initialize scheduler daemons on head nodes and compute nodes, while the latter defines cluster workloads.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+The blobs directory contains project blobs, such as binary files for an open-source project that can be freely redistributed, and user blobs, which have to be excluded from the project redistribution due to licensing constraints.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+The templates directory contains templates, while the specs directory hosts specifications defining configurations to be applied to target cluster nodes. 
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+> [!NOTE]
+> For example, a Slurm project contains, at minimum, two specs: one for the scheduler head nodes, and the other for the compute nodes.
 
-    Goal: List the steps they'll do to complete the exercise.
+Within the specs directory, there are two subdirectories named cluster-init and custom chef. The first one contains scripts that run automatically on the target node, raw data files that are copied to the target node, and tests to be run when a cluster is started in the testing mode. The second one contains Chef-specific files, including cookbook- , databag- , and role-definition files. Chef cookbooks and recipes can be used for configuring nodes. Cluster-init specs maps to Chef roles and cookbooks. 
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+> [!NOTE]
+> Azure CycleCloud uses Chef as the configuration management tool for preparing and configuring each node. CycleCloud utilizes Chef in a stand-alone mode that does not rely on a centralized Chef server. Instead, all cookbooks destined for the managed cluster nodes are downloaded from the locker during the operating system boot phase. At that point, Chef processes the list of recipes defined in the node's cluster-init specs, effectively converting the underlying VM into a working HPC node.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+To provision a cluster based on a project, you need to upload the project's content to an Azure CycleCloud locker. Subsequently, whenever the target node starts, it automatically downloads the required project files from the locker and processes the required specs.
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### How to use cloud-init with Azure CycleCloud?
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Azure CycleCloud supports cloud-init as a way of configuring a cluster nodes during the boot phase, before project-related specs are applied. This provides a convenient method to address any infrastructure or software-related dependencies, such as configuring network settings or applying operating system package updates. 
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+While you can define cloud-init configuration by using a template, it is possible to accomplish this directly from the Azure CycleCloud graphical interface. When creating or editing a cluster, you will find the relevant settings on the tab labeled **Cloud-Init**, where you can enter the scripts for each node type.

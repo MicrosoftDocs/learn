@@ -1,62 +1,23 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure CycleCloud enables you to customize and manage HPC clusters in Azure.
 
-    Goal: orient the learner to the area covered in this module
-
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Contoso is an oceanographic and meteorological services company based in Houston, TX. Contoso's research team relies heavily on its on-premises High Performance Computing (HPC) cluster to run Slurm-based jobs.
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+The newly initiated project involves several simulations that will track storms moving through the US Gulf Coast during storm season. Unfortunately, an initial assessment determined that the existing on-premises HPC cluster doesn't have sufficient compute capacity to run the simulations. 
 
-    Heading: "## What will we be doing?"
+As the lead research engineer, you provisioned a new HPC cluster in Azure, using Contoso's existing Azure subscription. To simplify the provisioning process, you implemented Azure CycleCloud and used it to deploy a new cluster. 
 
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
+Now you must customize your deployment to optimize it for the new project. You have existing custom images and scripts you've been using in your on-premises HPC environment. You want to reuse these when provisioning the scheduler and compute nodes. You're also exploring options to streamline your deployment process, because you plan to configure matching development and production clusters. You are planning to leverage the capabilities of Azure CycleCloud to accomplish these goals.
 
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+You'll start this module by testing the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you will download an existing template from the Azure CycleCloud template GitHub repository, change the definition of the storage configuration in the template, import the newly modified template, and use Azure CycleCloud graphical interface to create a cluster. 
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+Next you'll use the same template to add an extra nodearray and partition in the cluster definition, ensure that the corresponding cluster resources are configurable via the Azure CycleCloud web interface, export the properties of the newly deployed cluster, update it with the newly configured settings, and import the modified template to apply its configuration to the existing cluster. 
 
-    Heading: "## What is the main goal?"
+Finally, you will implement a cloud-init script for use with Azure CycleCloud. You will first add the script to both the scheduler and compute nodes, and then start the cluster to verify the cloud-init changes took place.
 
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to {TODO}
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this session, you'll be able to customize architecture of HPC clusters running in Azure by using Azure CycleCloud templates. You will also learn how to modify configuration of the cluster nodes by using cloud-init script.
