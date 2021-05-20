@@ -39,6 +39,7 @@ In this exercise, you'll walk through making the changes to a VM just described.
 9. On the **Create a new disk** pane, accept the defaults for **Name** and **Source type** and select the link for **Change size.**
 10. On the **Select a disk size** pane, from the **Disk SKU** drop menu select **Ultra Disk.** Enter the following values for each setting:
 
+|||
 | --- | --- |
 | Custom disk size (GiB) | 4 |
 | Performance tier | **P1 - 120 IOPS, 25 MBps (default) |
@@ -79,6 +80,7 @@ Password: **Pa55w.rd1234**
 
 1. On the **accountingVM_DataDisk_0 | Size + performance** page enter the following values for each setting:
 
+|||
 | --- | --- |
 | Custom disk size (GiB) | 4 |
 | Performance tier | **P10 - 500 IOPS, 100 MBps |
