@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build Basic Service
-summary: 
+summary: Use Microsoft Azure Database for PostreSQLave to configure the Express.js web service and the front-end Next.js management web app with a persistent data store.<!--Marcin, please check if this edit is OK--> 
 abstract: |
   In this module, you will:
   - Learn the concept of service in the context of cloud-native applications.
