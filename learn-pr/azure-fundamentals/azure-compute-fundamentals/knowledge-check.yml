@@ -38,7 +38,7 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "That's incorrect. In this case, you're still running a full application that might not be designed for quick responses to events."
-  - content: "Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like MacOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?"
+  - content: "Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like macOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?"
     choices:
     - content: "Azure App Service"
       isCorrect: false
