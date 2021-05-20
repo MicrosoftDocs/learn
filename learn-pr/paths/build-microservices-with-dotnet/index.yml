@@ -37,5 +37,6 @@ modules:
 - learn.microservices-logging-aspnet-core
 - learn.microservices-configuration-aspnet-core
 - learn.microservices-data-aspnet-core
+- learn.microservices-devops-aspnet-core
 trophy:
   uid: learn.build-microservices-with-dotnet.trophy
