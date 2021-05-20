@@ -116,7 +116,7 @@ You now need to configure the storage account to be accessible only from databas
     az storage account network-rule add \
         --resource-group $rg \
         --account-name $STORAGEACCT \
-        --vnet ERP-servers \
+        --vnet-name ERP-servers \
         --subnet Databases
     ```
 

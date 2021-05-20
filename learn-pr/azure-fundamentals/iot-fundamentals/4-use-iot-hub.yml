@@ -2,14 +2,14 @@
 uid: learn.azure.iot-fundamentals.use-iot-hub
 title: Use IoT Hub
 metadata:
-  title: Use IoT Hub to receive messages from IoT devices
-  description: Analyze a scenario that requires the collection of telemetry data from IoT devices.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Use IoT Hub
+  description: "Analyze a scenario that requires the collection of telemetry data from IoT devices."
+  ms.date: 05/18/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
 azureSandbox: false
+durationInMinutes: 4
 content: |
   [!include[](includes/4-use-iot-hub.md)]

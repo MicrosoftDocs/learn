@@ -8,9 +8,9 @@ Even for elite performers, change happens gradually, often starting with the mos
 
 We'll go deeper into Azure DevOps in future modules. You can also check out these resources:
 
-* [What is DevOps?](https://docs.microsoft.com/azure/devops/learn/what-is-devops?azure-portal=true)
-* [DevOps at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft?azure-portal=true)
-* [What features and services do I get with Azure DevOps?](https://docs.microsoft.com/azure/devops/user-guide/services?azure-portal=true)
+* [What is DevOps?](/azure/devops/learn/what-is-devops?azure-portal=true)
+* [DevOps at Microsoft](/azure/devops/learn/devops-at-microsoft?azure-portal=true)
+* [What features and services do I get with Azure DevOps?](/azure/devops/user-guide/services?azure-portal=true)
 
 ## Appendix: Recommendations for KPIs and quality metrics
 
