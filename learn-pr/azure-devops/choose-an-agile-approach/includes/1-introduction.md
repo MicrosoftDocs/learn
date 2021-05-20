@@ -2,11 +2,12 @@ You've met the Tailspin team and learned a bit about their problems. Mara, the n
 
 Her next goal is to convince the Tailspin team to take their first DevOps steps by using an Agile approach and Azure Boards, a part of the Azure DevOps suite. Azure Boards helps teams collaborate and plan their work better. This module shows how the team creates its first board.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn how adopting an Agile mindset can help your team to better collaborate, plan, and learn.
-- Create a project in Azure DevOps.
-- Add work items to Azure Boards using the Basic process.
+- Define the term Agile
+- Begin to make recommendations for incorporating Agile practices into your organization
+- Create a project in Azure DevOps
+- Add work items to Azure Boards by using the Basic process
 
 ## Prerequisites
 
