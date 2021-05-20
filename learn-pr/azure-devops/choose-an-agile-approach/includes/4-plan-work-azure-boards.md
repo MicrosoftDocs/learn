@@ -95,7 +95,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. Drag **Stabilize the build server** to the top of the stack. Then, drag **Create a Git-based workflow** to the second item position. Your final board looks like this.
 
-    ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
+    ![Azure Boards showing the initial three tasks. Each task is in the To Do column.](../../shared/media/build-initial-tasks.png)
 
 ### Define a sprint
 
@@ -105,7 +105,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 1. In the left-side column, select **Sprints**.
 
-    ![Azure DevOps showing the location of the Sprints menu](../media/4-boards-sprints-menu.png)
+    ![Azure DevOps showing the location of the Sprints menu.](../media/4-boards-sprints-menu.png)
 
 1. Select **Set dates** from the upper right.
 
@@ -129,11 +129,11 @@ You have an initial set of work items and a timeline for your first sprint. Here
 
 1. In the **Iteration** dropdown, select **Sprint 1**.
 
-    ![Assigning an iteration to a Sprint](../media/3-assign-sprint.png)
+    ![Azure Boards showing the location of the Sprint 1 iteration.](../media/3-assign-sprint.png)
 
 1. From the same window, select **Unassigned** and set yourself as the task owner.
 
-    ![Assigning the task owner](../media/3-assign-owner.png)
+    ![Azure Boards showing the location of the task owner.](../media/3-assign-owner.png)
 
 1. Repeat the process for the other two work items.
 
