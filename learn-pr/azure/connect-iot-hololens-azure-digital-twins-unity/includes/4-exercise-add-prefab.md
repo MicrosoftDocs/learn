@@ -10,8 +10,8 @@ Now that you know a little more about the basics of using telemetry data and wha
 
     | Property | Value |
     |---|---|
-    | Latitude | 48.38 |
-    | Longitude | -67.703 |
+    | Latitude | 36.69 |
+    | Longitude | -78.36 |
     | Zoom Level | 15.5 |
 
     **Map Layout**

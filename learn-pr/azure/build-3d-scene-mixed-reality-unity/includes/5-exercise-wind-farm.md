@@ -45,8 +45,8 @@ When you create a Developer Key, be sure to select Basic as the key type and **W
 
     | Property | Value |
     |---|---|
-    | Latitude | 48.38 |
-    | Longitude | -67.703 |
+    | Latitude | 36.69 |
+    | Longitude | -78.36 |
     | Zoom Level | 15.5 |
     
     | Property | Value |
