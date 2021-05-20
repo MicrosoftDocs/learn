@@ -1,3 +1,7 @@
+Apart from the scenario steps that were demonstrated while building the bot, it is preferred to have knowledge on a few more Flow control and Advanced functionality elements to build the bot efficiently.
+
+## Conversational Elements
+
 From sending prompt messages to getting answers from the user to specific questions, interaction with end users is a mandatory functionality in any chat bot conversation. The Health bot provides a simple interface to allow communication with the user in scenarios and data flows.
 
 :::image type="content" source="../media/4-conversational-elements.png" alt-text="Conversation Elements":::
