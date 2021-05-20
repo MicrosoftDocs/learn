@@ -82,11 +82,11 @@ When you create a function from a template, several files are created. For examp
 
 The functions you create in a function app appear by selecting **Functions** under the **Functions** category in the left menu pane of your function app.
 
-When you select a function in your function app, your function pane appears. To open a code editor and display the code for your function, in the left menu pane, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list, and then select **Test/Run** from the top menu bar for the Input/Output pane to appear. See the following screenshot.
+When you select a function in your function app, your function pane appears. To display and edit your code for your function, in the left menu pane, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list, and then select **Test/Run** from the top menu bar for the Input/Output pane to appear. See the following screenshot.
 
 ![Screenshot of the Azure portal showing the function editor pane, including the expanded Test/Run menu, with the selected "HttpTrigger1" function in our app service navigation and the Input tab highlighted.](../media/4-file-navigation.png)
 
-As you can see, there's a pane on the right that includes a tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
+As you can see, there's a pane on the right that includes tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
 
 ## Test your Azure function
 
@@ -101,7 +101,7 @@ You can start a function by manually triggering the configured trigger. For inst
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. After selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed **Input/Output** pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
+The portal also provides a convenient way to test your functions. As previously described, after selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed **Input/Output** pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
 
 ## Monitoring and Application Insights dashboard
 
@@ -109,9 +109,9 @@ The ability to monitor your functions is critical during development and in prod
 
 ![Screenshot of the Azure portal showing an HTTP function Application Insights dashboard with several function results and their corresponding HTTP status codes, with the Monitoring menu item of the function highlighted.](../media/4-monitor-function.png)
 
-## Streaming log window
+## Streaming logs pane
 
-You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window located in a tabbed pane located at the bottom of the code window.
+You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the Logs pane located at the bottom of the code window in the **Code + Test** pane after running a test.
 
 The following JavaScript code snippet shows how to log a message using the `context.log` method (the `context` object is passed to the handler).
 
@@ -131,6 +131,6 @@ In PowerShell, use `Write-Host` to write to the log:
 Write-Host "Enter your logging statement here"
 ```
 
-### Errors and warnings window
+### Errors and warnings in the Logs pane
 
-You can locate the errors and warnings window tab in the same pane menu as the log window. This window shows compilation errors and warnings within your code.
+You can locate the errors and warnings in the Logs pane as well. This pane shows compilation errors and warnings within your code.
