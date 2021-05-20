@@ -58,9 +58,9 @@ In a real deployment, you'd [move the R&D team's subscriptions into the manageme
 
 1. Delete your *main.bicep* file and create a new empty file with the same name.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Save the empty file.
 
-1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
+1. Add the following content into the file.
 
    :::code language="bicep" source="code/7-template.bicep" range="1" :::
 
@@ -92,7 +92,7 @@ In order to create a policy assignment, you need to refer to the policy definiti
 
    You need to have the management group's name as a parameter because you'll use it when you construct the resource ID shortly.
 
-1. At the bottom of the variables section, add the following variable definition:
+1. Below the `policyDefinitionName` variable definition, add the following variable:
 
    :::code language="bicep" source="code/7-template.bicep" range="6" :::
 

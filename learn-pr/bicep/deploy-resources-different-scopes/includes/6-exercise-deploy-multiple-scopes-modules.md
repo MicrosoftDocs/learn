@@ -53,7 +53,7 @@ Now you're ready to tell Bicep to deploy the module into the resource group.
 
    :::code language="bicep" source="code/6-template.bicep" range="56-63" :::
 
-   Notice that you're explicitly specifying the `scope` for the module. Bicep understands that the resources within the module should be deployed into the resource group created earlier in the templates.
+   Notice that you're explicitly specifying the `scope` for the module. Bicep understands that the resources within the module should be deployed into the resource group created earlier in the file.
 
 ## Verify your template
 
@@ -114,6 +114,18 @@ New-AzSubscriptionDeployment `
 Notice that you're passing in values for the `virtualNetworkName` and `virtualNetworkAddressPrefix` parameters. When another R&D team asks you to prepare a subscription for them, you'll be able to change these values to give them their own virtual network.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
+
+## Verify the deployment
+
+Now you'll check the resource group and the deployment that the module created.
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. On the side panel, select **Resource groups**. Notice that the *ToyNetworking* resource group has been created.
+
+1. Select the *ToyNetworking* resource group. Notice that there is a successful deployment to the resource group, and the virtual network has been created:
+
+   :::image type="content" source="../media/6-resource-group.png" alt-text="Screenshot of the Azure portal interface showing the ToyNetworking resource group." border="true":::
 
 ### Clean up the resources
 

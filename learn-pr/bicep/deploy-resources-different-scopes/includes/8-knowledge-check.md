@@ -1,6 +1,6 @@
 Consider the following Bicep files:
 
-**main.bicep**:
+*main.bicep*:
 
 ```bicep
 targetScope = 'managementGroup'
@@ -11,7 +11,7 @@ module myModule 'module.bicep' = {
 }
 ```
 
-**module.bicep**:
+*module.bicep*:
 
 ```bicep
 targetScope = 'subscription'

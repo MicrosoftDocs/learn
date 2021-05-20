@@ -16,14 +16,14 @@ content: |
 quiz:
   questions:
   - content: |
-      When you submit a deployment for the **main.bicep** file, what will happen?
+      When you submit a deployment for the *main.bicep* file, what will happen?
     choices:
     - content: The deployment will fail with an error.
       isCorrect: false
       explanation: The Bicep files are valid.
     - content: A policy definition named `my-policy` will be created at the management group scope.
       isCorrect: false
-      explanation: Even though the **main.bicep** file has its `targetScope` set to `managementGroup`, the policy definition is defined in a module with its `targetScope` set to `subscription`.
+      explanation: Even though the *main.bicep* file has its `targetScope` set to `managementGroup`, the policy definition is defined in a module with its `targetScope` set to `subscription`.
     - content: A policy definition named `my-policy` will be created at the subscription scope.
       isCorrect: true
       explanation: The policy definition is defined in a module with its `targetScope` set to `subscription`, so the policy definition will be deployed to the subscription.
