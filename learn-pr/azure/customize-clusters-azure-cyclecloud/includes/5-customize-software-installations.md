@@ -12,7 +12,7 @@ Azure CycleCloud offers three main methods that you can combine in an arbitrary 
 
 ### How to use custom images with Azure CycleCloud?
 
-Azure CycleCloud supports the major Windows Server and Linux operating systems <!--- Would it make sense to use something as "... supports Windows Server and many Linux distributions on cluster nodes". ---> on cluster nodes. The built-in templates are preconfigured with the recommended defaults, but you are free to choose Azure Marketplace images or provision nodes based on custom images. The latter might be preferable if you want to minimize delay associated with post deployment setup of the operating system and any additional dependencies of your HPC workloads. It might also be required to satisfy business, security, or compliance needs.
+Azure CycleCloud supports Windows Server and the most common Linux distributions on cluster nodes. The built-in templates are preconfigured with the recommended defaults, but you are free to choose Azure Marketplace images or provision nodes based on custom images. The latter might be preferable if you want to minimize delay associated with post deployment setup of the operating system and any additional dependencies of your HPC workloads. It might also be required to satisfy business, security, or compliance needs.
 
 Custom images allow you to have full control over the preinstalled software and the initial operating system configuration. Their primary drawback is the overhead associated with maintaining multiple images to accommodate different combinations of applications and their versions, especially in development scenarios.
 

@@ -134,7 +134,7 @@ Now you will repeat the equivalent sequence of steps to verify cloud-init functi
 
 ## Clean up the lab environment
 
-Your testing of the cluster customization by using Azure CycleCloud application is completed. In order to avoid unnecessary costs associated with the use of Azure resources, you will now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this course <!--- Word "course" should be replaced with word "module". ---> .
+Your testing of the cluster customization by using Azure CycleCloud application is completed. In order to avoid unnecessary costs associated with the use of Azure resources, you will now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this module.
 
 1. On your computer, in the web browser displaying the graphical interface of the Azure CycleCloud web application, on the **contoso-custom-slurm-lab-cluster**  page, select the **Terminate** link, and, when prompted to confirm, select **OK**.
 1. Monitor the termination process.
@@ -148,4 +148,4 @@ Your testing of the cluster customization by using Azure CycleCloud application 
 1. On your computer, switch to the browser window displaying the Azure portal.
 1. In the Azure portal, navigate to the blade of the resource group hosting cluster resources, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type the name of the resource group, and select **Delete**.
 
-Congratulations! You successfully completed the third and final exercise of this module. In this exercise, you explored the use of cloud-init in Azure CycleCloud clusters and tested it with a simple Bash script that modified the content of a local file on each node. You validated the outcome by connecting to cluster nodes and reviewing the content of the modified files. Afterwards, you terminated the cluster and deleted all cluster resources you used in the course of this module <!--- Would it make sense to delete "the course of" and leave just "... you used in this module ..."? ---> to avoid any unnecessary costs.
+Congratulations! You successfully completed the third and final exercise of this module. In this exercise, you explored the use of cloud-init in Azure CycleCloud clusters and tested it with a simple Bash script that modified the content of a local file on each node. You validated the outcome by connecting to cluster nodes and reviewing the content of the modified files. Afterwards, you terminated the cluster and deleted all cluster resources you used in this module to avoid any unnecessary costs.

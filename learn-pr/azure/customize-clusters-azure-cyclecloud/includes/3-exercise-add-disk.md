@@ -2,8 +2,6 @@ Azure CycleCloud relies on templates to define cluster configurations. Its defau
 
 Recall that you wanted to test the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you will leverage the Azure CycleCloud GitHub repository hosting [the Microsoft curated Slurm project](https://github.com/Azure/cyclecloud-slurm). You will modify an existing cluster template from this repository by changing the storage configuration of the scheduler node, import the newly modified template into your Azure CycleCloud application, use the application's graphical interface to create a cluster, and finally validate the storage configuration change.
 
-<!--- I understand that candidates who are interested in Azure CycleCloud  will probably have higher Azure quotas than provided by default in MSDN subscription or in free Azure subscription. But would it make sense to include information on where Azure quotas could be checked and how you can request a quota increase. And potentially even to create/work with smaller cluster in this module. --->
-
 > [!IMPORTANT]
 > To complete exercises in this module, you have to satisfy the following prerequisites:
 > - Have an Azure subscription with availability of vCPU cores in the three groups of VM sizes:
@@ -16,6 +14,11 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 > - Have an Azure CycleCloud application user account with the Administrator role.
 > - Create an Azure virtual network subnet into which you can deploy cluster nodes.
 > - Have the private key of the SSH key pair used to configure the Azure CycleCloud application. 
+
+> [!NOTE]
+> For information regarding identifying and increasing the vCPU quotas in an Azure subscription, refer to the following documentation:
+> - [Check vCPU quotas using the Azure CLI](https://docs.microsoft.com/azure/virtual-machines/linux/quotas)
+> - [Standard quota: Increase limits by VM series](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests)
 
 > [!NOTE]
 > You will need the private key in order to connect directly to the cluster nodes in the last exercise of this module.

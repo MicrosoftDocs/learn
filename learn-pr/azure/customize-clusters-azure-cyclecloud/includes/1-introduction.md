@@ -20,4 +20,4 @@ Finally, you will implement a cloud-init script for use with Azure CycleCloud. Y
 
 ## What is the main goal?
 
-By the end of this session <!--- Would it make sense to replace word "session" with "module"? --->, you'll be able to customize architecture of HPC clusters running in Azure by using Azure CycleCloud templates. You will also learn how to modify configuration of the cluster nodes by using cloud-init script.
+By the end of this module, you'll be able to customize architecture of HPC clusters running in Azure by using Azure CycleCloud templates. You will also learn how to modify configuration of the cluster nodes by using cloud-init script.
