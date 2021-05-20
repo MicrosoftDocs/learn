@@ -59,7 +59,6 @@ In this exercise, you'll walk through making the changes to a VM just described.
 4. Sign in to the VM using the following credentials:
 
 Username: **Student**
-
 Password: **Pa55w.rd1234**
 
 5. Once that you connect to the VM select the Windows  **Start**  menu inside the running VM and enter  **diskmgmt.msc**  in the search box. The  **Disk Management**  console opens.
@@ -77,15 +76,14 @@ Password: **Pa55w.rd1234**
 3. On the  **accountingVM_DataDisk_0**  pane, the VM has one OS disk and one Data disk.
 4. Select the link with the name of the data disk.
 5. On the disk page, from the **Settings** section, select **Size + performance.**
-
-1. On the **accountingVM_DataDisk_0 | Size + performance** page enter the following values for each setting:
+6. On the **accountingVM_DataDisk_0 | Size + performance** page enter the following values for each setting:
 
 |||
 | --- | --- |
 | Custom disk size (GiB) | 4 |
 | Performance tier | **P10 - 500 IOPS, 100 MBps |
 
-1. Select **Resize** to change the performance of the disk.
+7. Select **Resize** to change the performance of the disk.
 
 >[!Note]
 >Notice that you don't need to deallocate the disk to perform the resize operation.
