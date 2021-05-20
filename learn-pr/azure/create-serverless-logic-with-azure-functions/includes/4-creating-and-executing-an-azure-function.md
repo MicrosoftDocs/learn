@@ -131,6 +131,6 @@ In PowerShell, use `Write-Host` to write to the log:
 Write-Host "Enter your logging statement here"
 ```
 
-### Errors and warnings in the Logs pane
+### Errors and warnings in the logs pane
 
 You can locate the errors and warnings in the Logs pane as well. This pane shows compilation errors and warnings within your code.
