@@ -48,7 +48,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 az group create --name myResourceGroup --location eastus
 
 # Create Azure Shared disk with support concurent access from two VMs.
-az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku Premium\_LRS --max-shares 2
+az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku Premium_LRS --max-shares 2
 ```
 
 ## Task 2: Create proximity placement group and availability set
