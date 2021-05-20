@@ -3,7 +3,7 @@ uid: learn.azure.build-basic-service
 metadata:
   title: Build Basic Service
   description: In this module, you will learn how to build a basic service.
-  ms.date: 05/15/21
+  ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
