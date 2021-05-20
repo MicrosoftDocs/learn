@@ -34,7 +34,7 @@ In this exercise, you will configure the application with permissions and use MS
 
 5. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 
-## Overview of authentication code for MS Graph access
+## Overview of code for MS Graph access
 
 1. In the `./src/main/resources/authentication.properties` file, the value of `aad.scopes` is set to the **User.Read** scope.
 

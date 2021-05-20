@@ -11,37 +11,47 @@ The library provides convenient APIs that enable authentication with Azure Activ
 - Command-line applications
 - Desktop applications
 
-## Key MSAL concepts
+### Initialize the MSAL object
 
-### MSAL object initialization
+To start using MSAL, you will need to initialize and configure the MSAL object in your application code.
 
 MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials.
 
-    **Confidential client** applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). Confidential clients can hold configuration-time application secrets. 
+**Confidential client** applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). Confidential clients can hold configuration-time application secrets. 
 
-    You can create an instance of the Confidential client as follows:
+You can create an instance of the Confidential client as follows:
 
-    ```Java
-    IClientCredential credential = ClientCredentialFactory.createFromSecret(CLIENT_SECRET);
-    ConfidentialClientApplication app = ConfidentialClientApplication
-                                            .builder(PUBLIC_CLIENT_ID, credential)
-                                            .authority(AUTHORITY)
-                                            .build();
+```Java
+IClientCredential credential = ClientCredentialFactory.createFromSecret(CLIENT_SECRET);
+ConfidentialClientApplication app = ConfidentialClientApplication
+                                        .builder(CLIENT_ID, credential)
+                                        .authority(AUTHORITY)
+                                        .build();
+```
 
-    ```
+- **CLIENT_ID**: The client ID is the unique application (client) ID assigned to your app by Azure Active Directory when the app was registered.
+- **CLIENT_SECRET**: The client secret for the confidential client app, created when registering the app.
+- **AUTHORITY**: The authority is a URL that indicates a directory that MSAL can request tokens from. It is composed of the identity provider instance and sign-in audience for the app.
 
-### MSAL API to acquire tokens
+### Acquire authentication tokens with MSAL
 
 MSAL provides `acquireToken` methods to initiate the authentication flow and return an `AuthenticationResult` containing the authentication tokens.
 
-    When a user completes sign in, an ID token is returned in the authentication result containing some basic authentication claims like user principle name, email, etc. 
+When a user completes sign in, an ID token is returned in the authentication result containing some basic authentication claims like user principle name, email, etc. 
 
-    Below is an example of acquiring tokens with MSAL:
+Below is an example of acquiring tokens with MSAL:
 
-    ```Java
-    final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                                                        .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
-                                                        .build();
+```Java
+final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
+                                                    .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
+                                                    .build();
 
-    final IAuthenticationResult result = app.acquireToken(authParams).get();
-    ```
+final IAuthenticationResult result = app.acquireToken(authParams).get();
+```
+
+- **REDIRECT_URI**: The redirect URI is the URI the identity provider will send the security tokens back to.
+It must match the redirect URI in the Azure Active Directory app registration.
+- **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
+
+Use the `acquireToken` methods in your application when initiating a sign in flow for users and calling APIs to access data.
+

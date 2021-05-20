@@ -1,5 +1,7 @@
 In this exercise, you will use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and enable users to sign in with their Azure Active Directory accounts.
 
+The sample application used in this exercise is a Java servlet application that allows users to sign in and displays the user name and basic profile information. It also allows you to call the Microsoft Graph API to show some user information.
+
 ## Create a Java web application
 
 From your shell or command line:
@@ -55,7 +57,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 5. Click on the **ID Token Details** button to see some of the ID token's decoded claims.
 
-## Overview of MSAL and authentication code
+## Overview of authentication code
 
 1. MSAL4J is available on Maven. You will need to add MSAL4J as a dependency in the `pom.xml` file of the project.
 
@@ -80,7 +82,7 @@ To configure the code, open the application project in your preferred IDE like I
     ```
 
     - **AuthorizationRequestUrlParameters**: Parameters that must be set in order to build an AuthorizationRequestUrl.
-    - **REDIRECT_URI**: Where Azure Active Directory will redirect the browser (along with auth code) after collecting user credentials. It must match the redirect URI in the Azure Active Directory app registration.
+    - **REDIRECT_URI**: The redirect URI is the URI the identity provider will send the security tokens back to. Azure Active Directory will redirect the browser (along with auth code) to this URI after collecting user credentials. It must match the redirect URI in the Azure Active Directory app registration.
     - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
 1. The user is presented with a sign-in prompt by Azure Active Directory. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Azure Active Directory.
@@ -103,7 +105,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 1. If `acquireToken` is successful, the token claims are extracted. If the nonce check passes, the results are placed in `context` (an instance of `IdentityContextData`) and saved to the session. The application can then instantiate this from the session (by way of an instance of `IdentityContextAdapterServlet`) whenever it needs access to it:
 
-    ```java
+    ```Java
     // parse IdToken claims from the IAuthenticationResult:
     // (the next step - validateNonce - requires parsed claims)
     context.setIdTokenClaims(result.idToken());

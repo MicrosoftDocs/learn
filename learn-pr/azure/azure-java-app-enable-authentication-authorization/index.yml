@@ -12,17 +12,17 @@ metadata:
 title: Sign in users with Azure Active Directory and access Microsoft APIs in a Java web app
 summary: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
 abstract: | 
-  In this module, you will:
+  By the end of this module, you'll be able to:
 
   - Register a web application with Azure Active Directory
   - Sign in users in an Azure Active Directory tenant to a Java web application
   - Authorize access to data in a Microsoft API
 
 prerequisites: | 
-  - Basic understanding of setting up and building Java web application with Maven
-  - Basic understanding of setting up and running Java web application on a Tomcat server
-  - Beginner-level understanding of Azure Active Directory: Creating tenants in Azure Active Directory
-  - For the exercises, you will need an IDE like Visual Studio Code to edit code
+  - Familiarity with setting up and building Java web application with Maven 3
+  - Familiarity with setting up and running Java web application on a Tomcat 9 server
+  - An Azure subscription and Azure Active Directory tenant
+  - An IDE like Visual Studio Code to edit code
 
 iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
 levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products

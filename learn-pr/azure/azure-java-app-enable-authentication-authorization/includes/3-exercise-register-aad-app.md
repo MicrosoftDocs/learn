@@ -1,6 +1,6 @@
 You are ready to set up your web application to authenticate using Azure Active Directory and secure access to employees in your company. The first step to enable authentication is to register your application with Azure Active Directory.
 
-In this unit, you'll register your application with Azure Active Directory. You will need to have an Azure Active Directory tenant to register the application.
+In this unit, you'll register your application with Azure Active Directory.
 
 ## Register your application with Azure Active Directory
 
