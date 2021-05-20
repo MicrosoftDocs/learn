@@ -26,9 +26,9 @@ Azure Data Explorer provides scalable high-performance full text index and dynam
 
 ### Data velocity
 
-*Is ingestion rate a critical factor?*
+*Is real-time data analysis a critical factor?*
 
-Azure Data Explorer can ingest massive amount of data quickly and in low latency. Typical data sets include traces, transaction logs, time series, metrics and in general, activity record streams. Near real-time analytics over fresh data is a common use case. Azure Data Explorer connects well to streaming technologies like Azure Event Hubs, IoT hubs, Kafka to power such workloads. However, in case there is a need for subsecond response time or data ingestion latency Azure Data Explorer may not be the best option. 
+Azure Data Explorer can ingest massive amount of data quickly and in low latency. Typical data sets include traces, transaction logs, time series, metrics and in general, activity record streams. Near real-time analytics over fresh data is a common use case. Azure Data Explorer connects well to streaming technologies like Azure Event Hubs, IoT hubs, Kafka to power such workloads. However, in case there is a need for real-time analytics, Azure Data Explorer may not be the best option. 
 
 ### Data volume
 
