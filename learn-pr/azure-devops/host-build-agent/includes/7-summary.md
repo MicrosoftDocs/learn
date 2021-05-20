@@ -67,7 +67,7 @@ The focus of this learning path is on building applications and receiving build 
 
 ## Continue the journey
 
-You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
+You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true).
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
@@ -75,14 +75,14 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 To learn more about build agents and agent pools, see the following articles:
 
-* [Azure Pipelines agents](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?azure-portal=true)
-* [Agent pools](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?azure-portal=true)
-* [Self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?azure-portal=true)
-* [Self-hosted macOS agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-osx?azure-portal=true)
-* [Self-hosted Windows agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?azure-portal=true)
-* [Container jobs](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases?tabs=yaml&azure-portal=true)
-* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#pool) (YAML schema)
-* [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?azure-portal=true)
+* [Azure Pipelines agents](/azure/devops/pipelines/agents/agents?azure-portal=true)
+* [Agent pools](/azure/devops/pipelines/agents/pools-queues?azure-portal=true)
+* [Self-hosted Linux agents](/azure/devops/pipelines/agents/v2-linux?azure-portal=true)
+* [Self-hosted macOS agents](/azure/devops/pipelines/agents/v2-osx?azure-portal=true)
+* [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows?azure-portal=true)
+* [Container jobs](/azure/devops/pipelines/process/container-phases?azure-portal=true&tabs=yaml)
+* [Pool](/azure/devops/pipelines/yaml-schema?tabs=schema#pool) (YAML schema)
+* [Create a multi-platform pipeline](/azure/devops/pipelines/get-started-multiplatform?azure-portal=true)
 
 ### Create your own VM images
 
@@ -90,6 +90,6 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 ### Practice running VMs on Azure
 
-For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](/learn/paths/administer-infrastructure-resources-in-azure/?azure-portal=true) learning path.
+For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](../../../paths/administer-infrastructure-resources-in-azure/index.yml?azure-portal=true) learning path.
 
 We also mentioned how you can use Azure Resource Manager templates to automate the process of creating build agents. To learn more about Resource Manager templates, see [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates?azure-portal=true).

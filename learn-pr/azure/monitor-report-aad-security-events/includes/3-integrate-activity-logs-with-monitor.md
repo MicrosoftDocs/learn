@@ -136,7 +136,7 @@ Other common filter commands include:
 | take *n*                           | Ideally suited to small result sets. Take returns *n* rows from the result set in no particular order. | AuditLogs \| Take 10                                         |
 | top *n* by *field*                 | Use this filter command to return the top *n* rows, sorted by the nominated *field*. | AuditLogs \| Top 10 by timeGenerated                         |
 | sort by *field* (desc)             | If you want to sort only the result set, you can use the sort command. You need to specify the field to sort on, and then you can optionally add the *desc* instruction to specify a descending sort pattern. | AuditLogs \| Sort by timeGenerated desc                      |
-| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDataTime >= ago(2d)                |
+| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d)                |
 | project *fields*                   | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
 
 You can use many other commands to build your queries. You can find out more information about the query commands you can use to filter your data at the links provided at the end of this module.
@@ -147,7 +147,7 @@ Let's suppose you want to know the most-used applications requested and signed i
 
 ```kusto
 SigninLogs
-| where CreatedDataTime >= ago(7d)
+| where CreatedDateTime >= ago(7d)
 | summarize signInCount = count() by AppDisplayName
 | sort by signInCount desc
 ```
@@ -156,7 +156,7 @@ Or, if you want to see how many of your users were flagged as risky in the last 
 
 ```kusto
 SigninLogs
-| where CreatedDataTime >= ago(14d)
+| where CreatedDateTime >= ago(14d)
 | where isRisky == true
 ```
 

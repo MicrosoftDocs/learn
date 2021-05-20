@@ -21,7 +21,7 @@ prerequisites: |
   - Git
   - npm
   - JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/vue-data-events.svg
 ratingEnabled: true
 levels:
 - intermediate

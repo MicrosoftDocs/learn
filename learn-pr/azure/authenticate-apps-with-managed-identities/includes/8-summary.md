@@ -4,10 +4,10 @@ In this module, you explored service principals on the Azure platform. You saw h
 
 ## Learn more
 
-- [Services that support managed identities for Azure resources](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities). In addition to a list of supporting services, this article also provides information about region availability and configuration options.
-- [Getting started on integrating Azure AD with applications](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration).
+- [Services that support managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities). In addition to a list of supporting services, this article also provides information about region availability and configuration options.
+- [Getting started on integrating Azure AD with applications](/azure/active-directory/manage-apps/plan-an-application-integration).
 - [Getting started on managing service principals by using C#](https://azure.microsoft.com/resources/samples/aad-dotnet-manage-service-principals/).
-- [Create an Azure service principal by using the Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
-- [Application and service principal objects in Azure AD](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
-- [Service-to-service authentication to Azure Key Vault using .NET](https://docs.microsoft.com/azure/key-vault/service-to-service-authentication).
+- [Create an Azure service principal by using the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+- [Application and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
+- [Service-to-service authentication to Azure Key Vault using .NET](/azure/key-vault/service-to-service-authentication).
 - [Documentation for DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md#defaultazurecredential).
