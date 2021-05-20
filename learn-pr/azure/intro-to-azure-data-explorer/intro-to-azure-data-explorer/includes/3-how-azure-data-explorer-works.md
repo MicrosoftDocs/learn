@@ -47,5 +47,4 @@ The Azure Data Explorer Web UI was designed with big data in mind, enabling you 
 
 Admins will want to perform a variety of maintenance and policy tasks on their Azure Data Explorer clusters. Control commands include the creation of new cluster or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, managing permissions, and security policies. They can modify materialized views (continually updated filtered views of other tables), functions (stored functions and user-defined functions), and the update policy (functions that are triggered following ingestion).
 
-Control commands are run directly on the engine using the WebUI, Azure portal, various query tools, or one of the Azure Data Explorer SDKs. 
-
+Control commands are run directly on the engine using the WebUI, the Azure portal, various query tools, or one of the Azure Data Explorer SDKs. 
