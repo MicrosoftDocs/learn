@@ -11,8 +11,8 @@ All of these concepts, techniques and technologies explored in this module ensur
 
 ## Learn more
 
-- [Understanding the differences between NoSQL and relational databases](https://docs.microsoft.com/azure/cosmos-db/relational-nosql)
-- [Data modeling in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
-- [How to model and partition data on Azure Cosmos DB using a real-world example](https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
-- [Change Feed in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
-- [Transactional batch operations in Azure Cosmos DB using the .NET SDK](https://docs.microsoft.com/azure/cosmos-db/transactional-batch)
+* [Understanding the differences between NoSQL and relational databases](/azure/cosmos-db/relational-nosql)
+* [Data modeling in Azure Cosmos DB](/azure/cosmos-db/modeling-data)
+* [How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/how-to-model-partition-example)
+* [Change Feed in Azure Cosmos DB](/azure/cosmos-db/change-feed)
+* [Transactional batch operations in Azure Cosmos DB using the .NET SDK](/azure/cosmos-db/transactional-batch)

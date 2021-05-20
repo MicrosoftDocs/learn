@@ -156,7 +156,7 @@ The way we delete an order works exactly the same as the way we create an order 
 1. Next type **dotnet run** to launch our application again.
 1. Then finally, type **e** to run the query.
 
-    :::image type="content" source="../media/8-top-10-customers-initial.png" lightbox="../media/8-top-10-customers.png" alt-text="Cloud Shell showing the output for our top 10 customers query.":::
+    :::image type="content" source="../media/8-top-10-customers.png" lightbox="../media/8-top-10-customers.png" alt-text="Cloud Shell showing the output for our top 10 customers query.":::
 
 1. Something you may not realize is the top 10 customers query is a cross-partition query that fans-out across all the partitions in our container.
 1. In the companion lab to this one, it was pointed out that you should strive to avoid cross-partition queries. However, in reality they can be ok in situations where the container is still small or if the query is not run often. If this query frequently executed or the container was exceptionally large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
