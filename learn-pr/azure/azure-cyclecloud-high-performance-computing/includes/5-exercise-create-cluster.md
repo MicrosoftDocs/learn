@@ -46,7 +46,7 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
 
 1. On the **About** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, enter **contoso-slurm-lab-cluster**.
 
-    :::image enter="content" source="../media/u5-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
+    :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
 1. On the **Required Settings** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, configure the following settings (leave others with their default values):
 
