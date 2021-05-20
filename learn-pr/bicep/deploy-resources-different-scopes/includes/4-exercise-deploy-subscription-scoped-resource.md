@@ -211,4 +211,30 @@ You can view subscription-scoped deployments in the Azure portal. This can be he
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment." border="true":::
 
+### Clean up the resources
 
+You've successfully deployed subscription-scoped resources. You can remove the policy resources that you've created.
+
+::: zone pivot="cli"
+
+```azurecli
+subscriptionId=$(az account show --query 'id' --output tsv)
+
+az policy assignment delete --name 'DenyFandGSeriesVMs' --scope "/subscriptions/$subscriptionId"
+az policy definition delete --name 'DenyFandGSeriesVMs' --subscription $subscriptionId
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$subscriptionId = (Get-AzContext).Subscription.Id
+
+Remove-AzPolicyAssignment -Name 'DenyFandGSeriesVMs' -Scope "/subscriptions/$subscriptionId"
+Remove-AzPolicyDefinition -Name 'DenyFandGSeriesVMs' -SubscriptionId $subscriptionId
+```
+
+::: zone-end
+
+In the next exercise unit, you'll redeploy the same policy resources and they'll be recreated, but you can clean them up again afterwards.
