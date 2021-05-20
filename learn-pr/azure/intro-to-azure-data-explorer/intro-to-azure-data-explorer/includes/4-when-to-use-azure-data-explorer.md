@@ -68,6 +68,7 @@ Based on the decision criteria, Azure Data Explorer is a good fit for the market
 
 ## Guidance summary
 
+
 The following table shows how to evaluate new use cases. While this doesn't cover all use cases, we think it can help you make a decision if Azure Data Explorer is the right solution for you. 
 
 | **Use case**| **Interactive Analytics** | **Big data (Variety, Velocity, Volume)** | **Data organization** | **Concurrency** | **Build vs Buy** | **Should I use Azure Data Explorer?**|
