@@ -1,22 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
-    
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how <features> of <product> work to <solve problem>."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
-    
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content.
-    
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
-
 Azure Remote Rendering consists of a number of components, which in turn consist of a a number of processes. In this unit, you'll learn about the following components of Azure Remote Rendering, and the underlying processes that operate within the context of each component.
 
 | Component                | Description                                                  |
@@ -24,21 +5,6 @@ Azure Remote Rendering consists of a number of components, which in turn consist
 | Conversion               | Prepares your 3D assets for use with Azure Remote Rendering. |
 | Rendering server session | Provides the connection between your client device and the server that performs the remote rendering. |
 | Client SDK               | Combines local and remote holograms on your device, such as HoloLens 2. |
-
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
-
-    Goal:
-        Cover the components of <product> and how they work.
-        Repeat this pattern multiple times as needed.
-    
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
-    
-    [Learning-unit structural guidance]
--->
 
 ## Conversion
 
