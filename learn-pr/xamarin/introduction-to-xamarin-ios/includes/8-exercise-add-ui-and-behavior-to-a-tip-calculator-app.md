@@ -248,7 +248,7 @@ Notice that the on-screen keyboard appears automatically when you tap in the edi
 
 1. Override `ViewWillAppear` and `ViewWillDisappear` below your `ViewDidLoad` method. Subscribe to the `calcButton.TouchUpInside` event in the `ViewWillAppear` method and unsubscribe from the event in the `ViewWillDisappear` method.
 
-    You can also use a [traditional delegate method handler](https://msdn.microsoft.com/library/ms173172.aspx).
+    You can also use a [traditional delegate method handler](/dotnet/csharp/programming-guide/delegates/using-delegates).
 
     ```csharp
     public override void ViewWillAppear(bool animated)

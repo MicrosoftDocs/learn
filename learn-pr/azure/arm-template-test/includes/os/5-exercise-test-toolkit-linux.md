@@ -1,4 +1,4 @@
-1. To install PowerShell Core, follow the instructions in [Installing PowerShell on Linux](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7&azure-portal=true). 
+1. To install PowerShell Core, follow the instructions in [Installing PowerShell on Linux](/powershell/scripting/install/installing-powershell-core-on-linux?azure-portal=true&view=powershell-7). 
 
 1. Run `pwsh` in the terminal, to verify the installation:
 

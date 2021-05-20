@@ -22,11 +22,11 @@ The modules in this learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-- [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-- [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
-- [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true)
+- [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+- [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops?azure-portal=true).
+We also recommend you start at the beginning of this learning path: [Automate your deployments with Azure DevOps](../../../paths/automate-deployments-azure-devops/index.yml?azure-portal=true).
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 

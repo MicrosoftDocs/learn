@@ -1,7 +1,0 @@
-Machine learning is the process of using available data to train a software model. Training helps the model "learn" from the training cases. The result of the "learning" can then be used to predict new cases from similar data. To put it another way, machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers can learn without being explicitly programmed.
-
-Forecasting can be a critical to credit card fraud detection, for example. By comparing the card transactions in the database to new transactions, machine learning can help detect fraud when certain patterns emerge.
-
-Online retailers can use machine learning techniques to evaluate the viewing and purchasing history of many users. The machine learning service compares this history to recorded purchase transactions to recommend products when a customer is viewing or ready to purchase an item. Often you see a recommendation in the form of the phrase, "Customers who purchased this item also purchased ...."
-
-To help you build, test, and deploy predictive analytics solutions that use your data, Microsoft provides the Azure Machine Learning Studio. This is a collaborative, drag-and-drop tool. After you train and test your models, use Machine Learning Studio to publish your models as a set of web services.

@@ -171,6 +171,8 @@ Let's now look at connecting to a Data Lake Storage Gen2 account. Before you can
        --kind StorageV2 \
        --hns
    ```
+> [!NOTE] 
+  >  Please give the Storage Account several minutes to complete.
 
 ## Connect to your Data Lake Gen2 storage account
 

@@ -6,7 +6,7 @@ You've been tasked with investigating whether hosting the company's e-commerce a
 
 ## What is the Azure compliance documentation?
 
-The [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true) provides you with detailed documentation about legal and regulatory standards and compliance on Azure.
+The [Azure compliance documentation](/azure/compliance/?azure-portal=true) provides you with detailed documentation about legal and regulatory standards and compliance on Azure.
 
 Here you find compliance offerings across these categories:
 
@@ -25,7 +25,7 @@ The legal team at Tailwind Traders wants to learn more about how PCI DSS relates
 
 As an optional exercise, here you follow along.
 
-1. Go to the [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true).
+1. Go to the [Azure compliance documentation](/azure/compliance/?azure-portal=true).
 1. Under **Financial services**, select **PCI DSS**.
 
     :::image type="content" source="../media/5-financial-services.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
@@ -41,7 +41,7 @@ As an optional exercise, here you follow along.
 
 ### Access additional compliance resources
 
-From the [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true), you can access additional compliance resources.
+From the [Azure compliance documentation](/azure/compliance/?azure-portal=true), you can access additional compliance resources.
 
 For example, from the **Audit reports** section, you find a link to audit reports for [PCI DSS](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_PCI_DSS?azure-portal=true).
 
@@ -49,7 +49,7 @@ For example, from the **Audit reports** section, you find a link to audit report
 
 From there, you can access several different files, including the Attestation of Compliance reports and the PCI DSS Shared Responsibility Matrix.
 
-Under **Compliance blueprints**, you find reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription. The [PCI DSS](https://docs.microsoft.com/azure/governance/blueprints/samples/pci-dss-3.2.1/?azure-portal=true) blueprint deploys a core set of policies that map to PCI DSS compliance and help you govern your Azure workloads against this standard.
+Under **Compliance blueprints**, you find reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription. The [PCI DSS](/azure/governance/blueprints/samples/pci-dss-3.2.1/?azure-portal=true) blueprint deploys a core set of policies that map to PCI DSS compliance and help you govern your Azure workloads against this standard.
 
 :::image type="content" source="../media/5-compliance-blueprints.png" alt-text="A screenshot of the Azure compliance documentation page. The compliance blueprints section is shown, and PCI-DSS v.3.2.1 is highlighted.":::
 

@@ -90,7 +90,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <keyvault-name> -ResourceGroupName <resour
 ```
 
 ```azurecli
-az keyvault update --name <keyvault-name> --resource-group <resource-group> --enabled-for-disk-encryption "true"
+az keyvault update --name <keyvault-name> --resource-group <resource-group> --enabled-for-disk-encryption true
 ```
 
 ## Encrypt an existing VM disk
@@ -113,14 +113,14 @@ Set-AzVmDiskEncryptionExtension `
      -SkipVmBackup
 ```
 
-For the Azure CLI, to enable encryption, run the `az vm encryption enable` command.
+For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here is an example of encrypting all volumes for a virtual machine.
 
 ```azurecli
 az vm encryption enable \
     --resource-group <resource-group> \
     --name <vm-name> \
     --disk-encryption-keyvault <keyvault-name> \
-    --volume-type [all | os | data]
+    --volume-type all
 ```
 
 ## View status of disk

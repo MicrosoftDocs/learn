@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.child-extension-bicep-templates.exercise-define-child-resources
+title: Exercise - Define child resources
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Define child resources
+  description: Learn how to create child resources in your Bicep template.
+  ms.date: 04/19/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-define-child-resources.md)]
