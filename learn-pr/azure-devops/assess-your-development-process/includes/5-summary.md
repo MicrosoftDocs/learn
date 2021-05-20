@@ -11,7 +11,7 @@ Azure DevOps is a suite of services that spans the entire DevOps life cycle. Azu
 We'll go deeper into Azure DevOps in future modules. You can also check out these resources:
 
 * [Azure DevOps](https://azure.com/devops?azure-portal=true)
-* [DevOps Resource Center](https://docs.microsoft.com/azure/devops/learn?azure-portal=true)
+* [DevOps Resource Center](/azure/devops/learn?azure-portal=true)
 
 ## Appendix: General recommendations for migrating and consolidating tools to Azure DevOps
 

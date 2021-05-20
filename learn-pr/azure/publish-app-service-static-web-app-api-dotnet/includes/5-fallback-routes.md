@@ -6,32 +6,24 @@ Fortunately, it's easy to resolve this by creating a fallback route. A fallback 
 
 ## Configure a fallback route
 
-Azure Static Web Apps supports custom routing rules defined in an optional _routes.json_ file located in the app's artifact folder. You can define a route in the **routes** array. A common fallback route configuration is shown below:
+Azure Static Web Apps supports custom routing rules defined in an optional _staticwebapp.config.json_ file located in the app's artifact folder. You can define a navigation fallback route in the **navigationFallback** object. A common fallback route configuration is shown below:
 
 ```json
 {
-  "routes": [
-    {
-      "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    }
-  ]
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": ["/_framework/*", "/css/*"]
+  }
 }
 ```
 
-| Setting    | Value         | Description                                                                 |
-| ---------- | ------------- | --------------------------------------------------------------------------- |
-| route      | `/*`          | The matching rule. The **/\*** is a wildcard route that matches all routes. |
-| serve      | `/index.html` | The page to serve.                                                          |
-| statusCode | 200           | The status code to return.                                                  |
+| Setting | Value                       | Description                                                  |
+| ------- | --------------------------- | ------------------------------------------------------------ |
+| rewrite | `index.html`                | The file to serve when a route didn't match any other files. |
+| exclude | ["/_framework/*", "/css/*"] | Path(s) to ignore from fallback routing.                     |
 
-Routing rules run in the order they appear in the _routes.json_ file's routes array. The fallback route must be listed last in your routing rules, because it catches all routes that aren't caught by the rules that are listed before it.
+The navigation fallback rule is applied after any other routing rules that appear in the _staticwebapp.config.json_ file.
 
 ## Route file location
 
-Azure Static Web Apps expects your _routes.json_ file to be in the `output_location` by default. If your build process copies your _routes.json_ file to the `output_location`, then there is nothing else you need to do.
-
-However, if you want to control where you put your _routes.json_ file, Azure Static Web Apps supports this too. Being explicit about the location of your _routes.json_ file is particularly important if your front-end framework build step doesn't move this file to the `output_location` by default.
-
-You can customize the action that builds and deploys your app to look for the _routes.json_ in any folder in your repository. The `routes_location` property defines the directory location where the _routes.json_ file is found. This location is relative to the root of your repository.
+The recommended location for the _staticwebapp.config.json_ is in the folder set as the `app_location` in the workflow file. However, the file may be placed in any location within your application source code folder.

@@ -20,7 +20,7 @@ In Azure Machine Learning, data for model training and other operations is usual
         * **File format**: Delimited
         * **Delimiter**: Comma
         * **Encoding**: UTF-8
-        * **Column headers**: Use headers from first file
+        * **Column headers**: Only first file has headers 
         * **Skip rows**: None
     * **Schema**:
         * Include all columns other than **Path**

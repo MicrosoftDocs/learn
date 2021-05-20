@@ -125,7 +125,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalsDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 

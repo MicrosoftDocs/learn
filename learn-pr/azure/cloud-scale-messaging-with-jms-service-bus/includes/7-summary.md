@@ -7,11 +7,10 @@ Congratulations! In this module, you used Azure Service Bus to decouple your sen
 ```bash
 az servicebus namespace delete \
    --resource-group $AZ_RESOURCE_GROUP \
-   --namespace-name $AZ_SB_PREMIUM_NAMESPACE
+   --name $AZ_SB_PREMIUM_NAMESPACE
 
 az group delete \
-   --name $AZ_RESOURCE_GROUP \
-   --location $AZ_LOCATION
+   --name $AZ_RESOURCE_GROUP
 ```
 
 ## Extra resources
