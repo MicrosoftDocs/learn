@@ -122,8 +122,6 @@ You've successfully deployed subscription-scoped resources, including a resource
 > [!CAUTION]
 > This command will permanently delete the resource group named *ToyNetworking* and all of its resources. If you've deployed anything else into this resource group, you should skip this step.
 
-<!-- TODO: Tom: is the note above overkill? Given this is going into the customer's own subscription I thought it might be a good idea, but I'm happy to take your guidance here. -->
-
 ::: zone pivot="cli"
 
 ```azurecli

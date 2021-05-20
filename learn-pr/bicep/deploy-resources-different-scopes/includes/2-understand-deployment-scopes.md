@@ -14,7 +14,7 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources. Resource groups enable you to manage and control related resources as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group.
 
-The example illustrated above is a fairly basic scenario showing how management groups can be used. You might also consider implementing an _enterprise-scale landing zone_, which is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
+The example illustrated above is a fairly basic scenario showing how management groups can be used. Your organization might also consider implementing a _landing zone_, which is a set of Azure resources and configuration you need to get started with a production Azure environment. The _enterprise-scale landing zone_ is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
 
 :::image type="content" source="../media/2-hierarchy-eslz.png" alt-text="Diagram that shows an enterprise-scale landing zone architecture, with four management groups and four subscriptions." border="false":::
 

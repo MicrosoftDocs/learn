@@ -195,18 +195,20 @@ You can view subscription-scoped deployments in the Azure portal. This can be he
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left-side panel, select **Subscriptions**.
+1. On the side panel, select **Subscriptions**.
 
 1. Select your subscription.
 
-1. At the top of the left menu, in the **Search** box, enter **Deployments** and select the **Deployments** menu item.
+1. In the **Search** box, enter **Deployments** and select the **Deployments** menu item.
 
     :::image type="content" source="../media/4-search.png" alt-text="Screenshot of the Azure portal interface showing the search field and the Deployments menu item." border="true":::
 
-1. Select the deployment called **new-subscription** to see what resources were deployed.
+1. Select the deployment beginning with **sub-scope** to see what resources were deployed.
 
    :::image type="content" source="../media/4-deployment-list.png" alt-text="Screenshot of the Azure portal interface showing the list of deployments." border="true":::
 
 1. Select **Deployment details** to expand it. In this case, the two Azure Policy resources are listed.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment." border="true":::
+
+

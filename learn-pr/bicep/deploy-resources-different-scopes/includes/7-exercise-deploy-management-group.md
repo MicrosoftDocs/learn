@@ -56,7 +56,7 @@ In a real deployment, you'd [move the R&D team's subscriptions into the manageme
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*.
+1. Delete your *main.bicep* file and create a new empty file with the same name.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
@@ -170,9 +170,9 @@ Like subscription-scoped deployments, you can view management group-scoped deplo
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left menu, select **All services**.
+1. On the side panel, select **All services**.
 
-1. At the top of the middle panel, in the **Search** box, enter **Management groups** and select the **Management groups** menu item.
+1. In the **Search** box, enter **Management groups** and select the **Management groups** menu item.
 
    :::image type="content" source="../media/7-portal-search.png" alt-text="Screenshot of the Azure portal interface showing the service list with management groups highlighted." border="true":::
 
@@ -180,7 +180,7 @@ Like subscription-scoped deployments, you can view management group-scoped deplo
 
    :::image type="content" source="../media/7-management-group-list.png" alt-text="Screenshot of the Azure portal interface showing the list of management groups." border="true":::
 
-1. At the top of the left menu, in the **Search** box, enter **Deployments** and select the **Deployments** menu item.
+1. In the **Search** box, enter **Deployments** and select the **Deployments** menu item.
 
    :::image type="content" source="../media/7-management-group-details.png" alt-text="Screenshot of the Azure portal interface showing the management group details." border="true":::
 

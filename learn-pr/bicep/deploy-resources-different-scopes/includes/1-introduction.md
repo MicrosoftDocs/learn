@@ -36,6 +36,10 @@ By the end of this module, you'll be able to create Bicep templates that deploy 
 To follow along with the exercises in the module, you'll need:
 
 - An Azure account, with the ability to create subscription-level resources. For one exercise, you'll need to be able to create management groups and policies, but this is an optional exercise.
+
+  > [!TIP]
+  > If you can't meet these requirements with your Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+
 - [Visual Studio Code](https://code.visualstudio.com) installed locally.
 - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
 - Either:
