@@ -1,6 +1,6 @@
 Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage High Performance Computing (HPC) clusters in Azure.
 
-## Example scenario
+## Scenario
 
 Contoso, Ltd. is an oceanographic and meteorological services company based in Houston, Texas. Its research team relies heavily on on-premises HPC cluster to run Slurm-based tasks.
 
