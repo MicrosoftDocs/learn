@@ -3,7 +3,7 @@ uid: learn.azure-cyclecloud-high-performance-computing
 metadata:
   moduleType: standard
   title: Use Azure CycleCloud for high-performance computing
-  description: TODO This field is not visible when published, but is critical for search engine optimization. Use 2-3 complete, grammatically correct sentences to describe the unit, and include lots of relevant search keywords.
+  description: This module explains how to use Azure CycleCloud for high-performance computing. It explains how to install and configure Azure CycleCloud to work with your Azure subscription as well as how to integrate a third-party scheduler. Finally, it covers how to create and deploy a basic HPC cluster on Azure.
   ms.date: 5/6/2021
   author: anhoward
   ms.author: anhoward
