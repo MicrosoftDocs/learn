@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which characteristics must entities share that make them good candidates to store in the same container?"
+  - content: "Which characteristics must entities share that makes them good candidates to store in the same container?"
     choices: 
     - content: "Same partition key"
       isCorrect: false

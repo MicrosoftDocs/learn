@@ -1,5 +1,3 @@
-# Introduction
-
 Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL database, Cosmos DB is both horizontally scalable and non-relational. The horizontal scalability allows Cosmos DB grow to sizes well beyond the size of a typical relational database. Also because it is horizontally scalable, it does not implement relational constraints on data, allowing Cosmos DB to provide predictable performance.
 
 To achieve this level of scalability, users need to understand the concepts, techniques and technologies for modeling and partitioning data unique to NoSQL databases. It's also important to understand how relational concepts, such as maintaining referential integrity, are applied in a NoSQL world.

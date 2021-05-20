@@ -1,6 +1,4 @@
 
-# Compare relational versus NoSQL queries
-
 In this exercise we are going to compare the difference between storing and accessing data in a relational model where data is stored in individual containers versus NoSQL where the data is denormalized and stored in a single container.
 
 The data returned is typical for a web page returned to a user who clicks on a product category and will include the name of the category, all the products for that category, and all of the product tags for each of the products.

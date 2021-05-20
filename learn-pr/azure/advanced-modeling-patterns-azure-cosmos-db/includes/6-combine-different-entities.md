@@ -14,7 +14,7 @@ At this point, we've modeled all of our relational entities for our NoSQL databa
 
 ## Additional optimizations
 
-One thing you may have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of id and salesOrder has a partition key of `customerId`. When data share the same partition key and have similar access patterns, they are candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic so mixing entities with different schema is not only possible, under these conditions it is another best practice. But combine the data from these two containers we will need to make more changes to our schema.
+One thing you may have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of ID and salesOrder has a partition key of `customerId`. When data share the same partition key and have similar access patterns, they are candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic so mixing entities with different schema is not only possible, under these conditions it is another best practice. But combine the data from these two containers we will need to make more changes to our schema.
 
 :::image type="content" source="../media/6-sales-orders-customers.png" alt-text="Diagram showing the sales orders model and container and customer model and container with an arrow to a single customer container and customer ID partition key with both the sales order and customer documents stored in it" border="false":::
 

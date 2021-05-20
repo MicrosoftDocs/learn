@@ -1,5 +1,3 @@
-## Denormalizing aggregates
-
 There is one last operation we need to look at before our new model is complete. Our last operation is to query our top 10 customers by the number of sales orders. In our current model, we first need to do a group by on each customer and sum for sales orders in our customer container, then sort in descending order and take the top 10 results. Even though customers and sales orders sit in the same container, this type of query is not something you can currently do.
 
 The solution here is to denormalize and create a new property in the customer document, 'salesOrderCount'. This property will allow us to write a query like this one below to get this data.

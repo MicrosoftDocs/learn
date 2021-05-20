@@ -1,5 +1,3 @@
-## Finalizing our data model
-
 We are nearly complete remodeling our database. In our remodeling of this database, we've taken nine relational database tables and transformed them into four containers for our NoSQL database. There is our customer container, which contains our customer and sales order data. A product container that contains our products and Many : Many product tags, and a container for product tag and product category.
 
 :::image type="content" source="../media/9-design-near-final.png" alt-text="near final design" border="false":::

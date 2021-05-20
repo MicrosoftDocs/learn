@@ -1,5 +1,3 @@
-# Use Change Feed to maintain referential integrity between two containers
-
 In this exercise we will show how Change Feed can maintain referential integrity between two containers in Azure Cosmos DB. In this scenario we will use Change Feed to listen to the productCategory container. When the name of a product category is updated, Change Feed will capture the updated name and we will take that name and update all the products in that category with the new name. We will then change the name back just so we can see the change happening again.
 
 For this exercise we will complete the following steps:
@@ -113,11 +111,11 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Press **b** from the main menu and follow the prompts until change feed runs a second time, then hold. Your screen will look like this below.
 
-    :::image type="content" source="../media/5-change-feed-update-category-name.png" lightbox="../media/5-change-feed-update-category-name.png" alt-text="The output of the application as the category name is changed, then change feed shows picking up the change and outputs the number of products to update, then updates those products, then the name is changed back and change feed then picking up that change and propogating that change as well.":::
+    :::image type="content" source="../media/5-change-feed-update-category-name.png" lightbox="../media/5-change-feed-update-category-name.png" alt-text="The output of the application as the category name is changed, then change feed shows picking up the change and outputs the number of products to update, then updates those products, then the name is changed back and change feed then picking up that change and propagating that change as well.":::
 
-1. If you clicked too far and went back to the main menu. Just click **b** again and you can watch the changes again.
+1. If you clicked too far and went back to the main menu, type **b** again and you can watch the changes again.
 
-1. When you are done you can exit the application by typing **x** to return to the Azure Cloud Shell.
+1. When you are done, exit the application by typing **x** to return to the Azure Cloud Shell.
 
 ## Summary
 

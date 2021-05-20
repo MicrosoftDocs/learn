@@ -1,5 +1,3 @@
-# Denormalizing aggregates
-
 In this exercise, we will show how we can use denormalization of an aggregate that will allow us to write our top 10 customers query for our e-commerce site. To accomplish this we will use the transactional batch feature in the Azure Cosmos DB .NET SDK that will simultaneously insert a new sales order and update the customer's **salesOrderCount** property, both of which are in the same logical partition.
 
 For this exercise we will complete the following steps:
@@ -42,7 +40,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
     :::image type="content" source="../media/8-create-order-function.png" lightbox="../media/8-create-order-function.png" alt-text="Cloud Shell showing the create new order and update customer order total function":::
 
 1. This function creates a new sales order and updates the customer record using transactional batch.
-1. First, the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and id.
+1. First, the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and ID.
 1. Notice on line **488** there is a `//To-Do:` comment.
 1. Here we need to write code that will increment the value of the **salesOrderCount**
 1. Copy this code snippet below and paste it below the line that starts with `//To-Do:`
@@ -60,7 +58,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Next scroll down a few lines to see the data for the new sales order we will create for our customer.
 1. Our new sales order object has a header and detail structure typical of sales orders in an ecommerce application.
-1. The sales order header has an order id, customer id, order date, and ship date which we will leave blank.
+1. The sales order header has an `orderId`, `customerId`, `orderDate`, and `shipDate` which we will leave blank.
 1. Because our customer container contains both customer and sales order entities, our sales order object also contains our discriminator property, `type` with the value of "salesOrder" so we can distinguish a sales order from a customer object in our customer container.
 1. Further down we can also see the two products for the order that make up the details section in our sales order.
 1. Scroll a little further until you see another `//To-Do:` comment.
@@ -100,7 +98,7 @@ Follow these steps to navigate to our code that we will view and update for Chan
 1. Note the `salesOrderCount` property shows two sales orders.
 1. Your screen should look like this.
 
-    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="Cloud shell showing the output of the query customer and orders query with a customer record and two sales orders.":::
+    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="Cloud Shell showing the output of the query customer and orders query with a customer record and two sales orders.":::
 
 ## Create new sales order and update total sales orders in a transaction
 

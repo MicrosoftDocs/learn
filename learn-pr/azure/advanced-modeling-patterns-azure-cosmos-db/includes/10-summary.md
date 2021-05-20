@@ -1,5 +1,3 @@
-## Summary
-
 In this module we learned key concepts, techniques and technologies that are used to model and partition data for NoSQL databases like Azure Cosmos DB. We applied these to our e-commerce application that we needed to migrate from a relational database to a NoSQL database. The things we learned in this module include:
 
 * **De-normalization:** We applied this concept to our product data and measured the performance versus querying individual containers.

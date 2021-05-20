@@ -1,5 +1,3 @@
-## Maintaining referential integrity between entities
-
 In the last section we showed how denormalizing data can drastically improve performance and lower cost by providing the data needed by our e-commerce application in a single request. However when data is denormalized like this, we need a way to maintain referential integrity between the master data in the productCategory and productTag containers and the product container.
 
 :::image type="content" source="../media/4-product-category-tag-sync.png" alt-text="Diagram showing how data from product category and product tag is denormalized and stored in the product container" border="false":::
