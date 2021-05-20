@@ -14,7 +14,9 @@ SUSE created zypper, a command-line package manager, which makes use of libzpp (
 
 ## Command-line vs. GUI (zypper vs. YaST)
 You might be wondering why did we use YaST to load apache and now we’re using zypper to add mariadb? Does it matter which one I use? The short answer is no. Zypper and YaST do the same things, they just go about it a little differently. 
+
 From command-line, you can launch YaST and get a ascii-graphic menu that shows you all the different options you can use to administrate your system. Most of the time, graphical systems are preferred because they provide a visual overview of commands, so you do not need to remember everything, you simply see and select them. 
+
 Zypper provides a text-based command-line tool which is better for speed because you don’t have to navigate several windows or menu bars to execute the command. It also allows you to create your own workflow (or script) which is not possible in a graphical environment. If you use the commands and parameters regularly, zypper can be a faster way to get things done.
 
 ## Packages and corresponding modules configuration are updated 
