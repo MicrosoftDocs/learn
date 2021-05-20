@@ -70,7 +70,7 @@ Azure provides several pre-made function templates for common scenarios:
 
 ### Add function templates
 
-When adding your first function, you are presented with the **Add fucntion** pane where you can choose the trigger for your function. Based on your selections, Azure will generate the function code and configuration with some sample code provided to display the input data received in the log.
+When adding your first function, you are presented with the **Add function** pane where you can choose the trigger for your function. Based on your selections, Azure will generate the function code and configuration with some sample code provided to display the input data received in the log.
 
 ### Custom function templates
 
