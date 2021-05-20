@@ -2,6 +2,8 @@ Azure CycleCloud relies on templates to define cluster configurations. Its defau
 
 Recall that you wanted to test the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you will leverage the Azure CycleCloud GitHub repository hosting [the Microsoft curated Slurm project](https://github.com/Azure/cyclecloud-slurm). You will modify an existing cluster template from this repository by changing the storage configuration of the scheduler node, import the newly modified template into your Azure CycleCloud application, use the application's graphical interface to create a cluster, and finally validate the storage configuration change.
 
+<!--- I understand that candidates who are interested in Azure CycleCloud  will probably have higher Azure quotas than provided by default in MSDN subscription or in free Azure subscription. But would it make sense to include information on where Azure quotas could be checked and how you can request a quota increase. And potentially even to create/work with smaller cluster in this module. --->
+
 > [!IMPORTANT]
 > To complete exercises in this module, you have to satisfy the following prerequisites:
 > - Have an Azure subscription with availability of vCPU cores in the three groups of VM sizes:
