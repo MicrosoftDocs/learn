@@ -12,10 +12,11 @@ You need an Azure DevOps organization for the exercises in this module. Skip thi
 
 In this step, you'll use Azure CLI commands to create a php-based web app by using code from a GitHub repository.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure subscription. 
-2. In the Azure portal, select **Cloud Shell** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure subscription.
 
-3. Run the following commands in the Azure Cloud Shell to set some variables, replacing  `<your-local-Azure-region>` with the closest region to you. (Use `az account list-locations` to get a list of valid locations.)
+1. In the Azure portal, select **Cloud Shell** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
+
+1. Run the following commands in the Azure Cloud Shell to set some variables, replacing  `<your-local-Azure-region>` with the closest region to you. (Use `az account list-locations` to get a list of valid locations.)
 
     ```azurecli
     gitrepo=https://github.com/MicrosoftDocs/mslearn-load-test-web-app-azure-devops
@@ -25,7 +26,8 @@ In this step, you'll use Azure CLI commands to create a php-based web app by usi
     resourcegroupName=contosorentalsRG
     ```
 
-4. Run the following commands in the Cloud Shell to deploy the web app:
+1. Run the following commands in the Cloud Shell to deploy the web app:
+
     ```azurecli
     # Create a resource group
     az group create --name $resourcegroupName --location $appLocation
@@ -44,20 +46,26 @@ In this step, you'll use Azure CLI commands to create a php-based web app by usi
         --branch master --manual-integration
     ```
 
-5. Wait until the commands complete before you continue with the exercise.
+1. Wait until the commands complete before you continue with the exercise.
 
 ### Configure and verify your web app
 
 In this step, you'll finalize the deployment of your web app by editing a configuration file. You'll then verify that the app works.
 
-1. On the Azure portal menu, select **App Services**.
-1. In the **App Services** list, select **contosorentals\<number\>**. In the **Overview** section, select **Click to copy** to the right of the URL string.
-1. In the **Development Tools** section, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**. 
+1. On the home page of the Azure portal, search for and select **App Services**. The **App Services** pane appears.
+
+1. In the list, select **contosorentals\<number\>**. The **contosorentals\<number\>** pane appears.
+
+1. In the **Essentials** section, select the *Copy to clipboard* icon that appears to the right of the **URL** string.
+
+1. In the middle menu pane, under **Development Tools**, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**.
+
 1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)
 
    ![Configure web app URL](../media/3-configure-webapp.png)
 
-1. Open a new browser tab, paste the URL string you copied earlier into the address box, and select Enter.
+1. Open a new browser tab, paste the URL string you copied earlier into the address box, and press <kbd>Enter</kbd>.
+
 1. Verify that you get the home page for the Contoso Costume Rentals website.
 
    > [!NOTE]
@@ -69,7 +77,8 @@ In this step, you'll finalize the deployment of your web app by editing a config
 
 In this step, you'll create and run a performance test for your web app. You'll start by creating a new Azure DevOps organization so you can save the results of the test.
 
-1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**.
+1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the middle menu pane, under **Development Tools**, select **Performance test**.
+
 1. In the **Performance test** pane, select **Set organization**, and then select **Create New**.
 1. In the **Azure DevOps Organization** box, enter **ContosoRentals**.
 1. Select **Subscription**, select your Azure subscription, and then select **OK**.
@@ -92,6 +101,7 @@ In this step, you'll create and run a performance test for your web app. You'll 
 1. In the App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 11, change `false` to `true`:
 
    ![Configure web app to display graphics](../media/3-configure-webapp-graphics.png)
+
 1. Switch to the web app's browser tab and refresh the page. You should now see a box at top of the page that varies by page. You'll also see a box containing text and circles at the bottom of the page that loads a new set of random colors on each page load:
 
    :::image type="content" source="../media/3-webapp-default-page-with-graphics.png" alt-text="Webpage with graphics." loc-scope="other":::
