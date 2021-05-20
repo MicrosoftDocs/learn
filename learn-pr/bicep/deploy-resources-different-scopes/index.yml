@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.deploy-resources-different-scopes
+metadata:
+  moduleType: standard
+  title: Deploy resources to different scopes with Bicep
+  description: Learn how to deploy resources at the subscription, management group, and tenant scope within your Bicep code.
+  ms.date: 05/05/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Deploy resources to different scopes with Bicep
+summary: |
+  Deploy Azure resources at the subscription, management group, and tenant scope.
+  Learn what these resources are, why you'd use them, and how you create Bicep code to deploy them.
+  Also learn how to create a single set of Bicep files that deploy across multiple scopes in one operation.
+abstract: |
+  After completing this module, you'll be able to: 
+    - Explain resource scopes including tenant-level, management group-level, and subscription-level resources.
+    - Deploy resources at specific scopes by using Bicep templates.
+    - Create Bicep files that deploy at multiple scopes.
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - Familiarity with creating and deploying Bicep templates.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Understanding of child and extension resources.
+  - An Azure account, with the ability to create subscription-level resources.
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - advanced
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:
+- learn.azure.deploy-resources-different-scopes.introduction
+- learn.azure.deploy-resources-different-scopes.understand-deployment-scopes
+- learn.azure.deploy-resources-different-scopes.deploy-templates-different-scopes
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
+- learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-multiple-scopes-modules
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-management-groups
+- learn.azure.deploy-resources-different-scopes.knowledge-check
+- learn.azure.deploy-resources-different-scopes.summary
+badge:
+  uid: learn.azure.deploy-resources-different-scopes.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
+title: Exercise - Deploy a subscription-scoped resource
+metadata:
+  unitType: exercise
+  title: Exercise - Deploy a subscription-scoped resource
+  description: Learn how to create Bicep files that deploy resources to a subscription.
+  ms.date: 05/05/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-deploy-subscription-scoped-resource.md)]
