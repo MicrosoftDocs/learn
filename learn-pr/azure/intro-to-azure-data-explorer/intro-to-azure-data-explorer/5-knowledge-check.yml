@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-data-explorer.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: "Introduction to Azure Data Explorer"
+  description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."
+  ms.date: 05/10/2021
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 3
+content: |
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how <attributes> of <product> work to <solve problem>"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in an Azure Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether <product> is appropriate to <general product use case>"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
+###
+###########################################################################
+quiz:
+  questions:
+  - content: "What best describes the Azure Data Explorer service?"
+    choices:
+    - content: "Big data storage data optimized for batching non-interactive queries."
+      isCorrect: false
+      explanation: "Azure Data Explorer is optimized for exploratory, interactive queries. It is suitable for both batching and streaming data."
+    - content: "Big data solution for data transformations."
+      isCorrect: false
+      explanation: "Azure Data Explorer is designed for data queries, not data transformations"
+    - content: "Big data analytics cloud platform optimized for high volume, interactive queries."
+      isCorrect: true
+      explanation: "Azure Data Explorer is a big data analytics platform that makes it easy to analyze high volumes of data in near real-time."
+  - content: "What is a control command in Azure Data Explorer?"
+    choices:
+    - content: "Control commands can be used for maintenance and policy tasks."
+      isCorrect: true
+      explanation: "Control commands include the creation of new cluster or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
+    - content: "A query."
+      isCorrect: false
+      explanation: "Queries are used for interactive data analytics."
+    - content: "A way to visualize data."
+      isCorrect: false
+      explanation: "Data can be visualized with the native dashboard experience, or with connectors to external services such as Power BI and Grafana."
+  - content: "Which of the following is an appropriate use case for Azure Data Explorer?" 
+    choices:
+    - content: "Log and Text analytics"
+      isCorrect: true
+      explanation: "This is an excellent use case for Azure Data Explorer."
+    - content: "In-memory batching processing of petabytes of information."
+      isCorrect: false
+      explanation: "Azure Data Explorer is optimized to leverage indexed data for fast analytics response."
+    - content: "Real-time analytics"
+      isCorrect: false
+      explanation: "Azure Data Explorer should not be used for real-time analytics. It's used for NEAR real-time analytics."
+  - content: "Which aspect of an extract, transform, and load (ETL) process makes it unsuitable for Azure Data Explorer. "
+    choices:
+    - content: "Long running tasks."
+      isCorrect: true
+      explanation: "Azure Data Explorer is not optimized for long running tasks. As such running massive nightly ETL jobs on Azure Data Explorer is not recommended."
+    - content: "Large volumes of data for ingestion."
+      isCorrect: false
+      explanation: "Azure Data Explorer is built as a big data analytics platform."
+    - content: "High query concurrency."
+      isCorrect: false
+      explanation: "Azure Data Explorer is optimized for high query concurrency."
+  
