@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.arm-template-test.4-test-toolkit
+title: Apply best practices by using the test toolkit script
+metadata:
+  title: Apply best practices by using the test toolkit script
+  description: It's important to apply some reasonable practices to your templates before trying to deploy them.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/12/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-test-toolkit.md)]
