@@ -27,7 +27,7 @@ When you use the what-if operation, it lists six types of changes:
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 
-The PowerShell cmdlet **New-AzResourceGroupDeployment** creates a new deployment on a resource group. When you add the what-if operation as a parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out.
+The `New-AzResourceGroupDeployment` Azure PowerShell cmdlet creates a new deployment to a resource group. When you add the `-Whatif` parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out.
 
 You can control the amount of text output of the what-if operation by using one of these two parameters:
 
@@ -38,9 +38,11 @@ For example, assume that you're changing the storage type in a template that dep
 
 You might execute the following PowerShell code and ask for Resource Manager to give you the full resource payloads:
 
-:::code language="azurepowershell" source="3-whatif-fullresourcepayloads.ps1" highlight="7" :::
+:::code language="azurepowershell" source="code/3-whatif-fullresourcepayloads.ps1" highlight="5" :::
 
 The above command produces the following results:
+
+<!-- TODO refresh this -->
 
 ```output
 Resource and property changes are indicated with this symbol:
@@ -57,7 +59,7 @@ Resource changes: 1 to modify
 
 You might then re-execute the PowerShell code but just ask for the resource IDs:
 
-:::code language="azurepowershell" source="3-whatif-resourceidonly.ps1" highlight="7" :::
+:::code language="azurepowershell" source="code/3-whatif-resourceidonly.ps1" highlight="5" :::
 
 The above command produces the following results:
 
