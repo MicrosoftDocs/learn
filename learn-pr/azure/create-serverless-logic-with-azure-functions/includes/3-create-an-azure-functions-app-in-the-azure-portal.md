@@ -20,13 +20,15 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
 
 1. Select **Create a resource**.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.
+    The **Create a resource** pane appears.
+
+1. In the left menu pane, select **Compute**, and then select **Function App** from the **Featured** list. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -55,6 +57,8 @@ Let's create a function app in the Azure portal.
     [!include[](../../includes/functions-classic-workaround.md)]
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
+
+    The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** page appears.
 
