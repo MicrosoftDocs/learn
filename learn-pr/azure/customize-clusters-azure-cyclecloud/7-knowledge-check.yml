@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "cluster"
       isCorrect: true
-      explanation: "A template must include at least one cluster section, containing one or more node and nodearray sections describing child objects of that cluster."
+      explanation: "A template must include at least one cluster section, containing one or more node and nodearray sections that describe child objects of that cluster."
     - content: "nodearray"
       isCorrect: false
       explanation: "A node section can be only nested within the cluster section."
