@@ -13,7 +13,6 @@ durationInMinutes: 1
 content: |
   [!include[](includes/3-how-azure-health-bot-works.md)]
 
-  ### NOTE TO LEE - This quiz has 2 correct 'true' responses. This is not allowed. You'll need to revise the question and choices so only one of them is true.
 
 quiz:
   title: Check your knowledge
