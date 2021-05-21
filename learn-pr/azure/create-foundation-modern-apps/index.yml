@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.create-foundation-modern-apps  
+metadata:
+  moduleType: standard  
+  title: Architect modern applications using Azure SQL Database
+  description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
+  ms.date: 3/17/2021  
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
+title: Architect modern applications using Azure SQL Database
+summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
+abstract: |
+  By the end of this module, you will be able to: 
+    - Build a foundation for applications with Azure SQL Database
+    - Demonstrate modern database capabilities with Azure SQL Database
+prerequisites: |
+  - Ability to navigate the Azure portal
+  - Familiarity with database concepts such as stored procedures and querying
+  - Familiarity with CI/CD concepts such as GitHub Actions
+  - Familiarity with available Azure services
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+hidden: true
+levels:
+  - intermediate
+  - beginner
+  - advanced
+roles:
+  - developer
+  - database-administrator
+  - solution-architect
+  - devops-engineer
+  - student
+  - data-engineer
+products:  
+  - azure-sql-database
+  - github
+  - vs-code
+  - azure-blob-storage
+  - azure-devops
+units:  
+- learn.azure.create-foundation-modern-apps.introduction
+- learn.azure.create-foundation-modern-apps.architect-solution
+- learn.azure.create-foundation-modern-apps.exercise-configure-environment
+- learn.azure.create-foundation-modern-apps.modern-database-requirements
+- learn.azure.create-foundation-modern-apps.exercise-deploy-azure-sql-database
+- learn.azure.create-foundation-modern-apps.ci-cd-for-azure-sql-database
+- learn.azure.create-foundation-modern-apps.exercise-automate-updates
+- learn.azure.create-foundation-modern-apps.summary
+badge:  
+  uid: learn.azure.create-foundation-modern-apps.badge

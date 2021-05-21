@@ -88,7 +88,7 @@ For a PowerShell script, you pass outputs back by creating a variable named `$De
 ::: zone-end
 
 > [!TIP]
-> You can also write deployment scripts in bash. To create outputs from a bash script, you need to create a JSON file in a location specified by the `AZ_SCRIPTS_OUTPUT_PATH` environment variable.
+> You can also write deployment scripts in Bash. To create outputs from a Bash script, you need to create a JSON file in a location specified by the `AZ_SCRIPTS_OUTPUT_PATH` environment variable.
 
 Within the `properties` section, you also define the various options that `deploymentScripts` can take. In this module, we'll keep it simple and add just enough to get the script to run. At a minimum, you need to provide the version of Azure PowerShell or the Azure CLI to use, a script to run, and a retention interval. 
 
