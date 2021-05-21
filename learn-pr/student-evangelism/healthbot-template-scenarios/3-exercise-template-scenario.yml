@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-template-scenarios.3-exercise-template-scenario
+title: Exercise - Use a scenario template
+metadata:
+  title: Exercise - Use a scenario template
+  description: In this exercise, you will learn how to import the Triage and
+    handoff scenario template in your bot.
+  author: sfoteini
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-template-scenario.md)]
