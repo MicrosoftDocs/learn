@@ -80,6 +80,6 @@ Implementing today's enterprise workloads requires the highest storage performan
 - [Service levels for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels)
 - [Resource limits for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-resource-limits)
 - [FAQs About Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-faqs)
-- [Register for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-register#waitlist)
+- [Azure Files and Azure NetApp Files comparison](azure/storage/files/storage-files-netapp-comparison)
 
 <!-- Do not include any other content -->

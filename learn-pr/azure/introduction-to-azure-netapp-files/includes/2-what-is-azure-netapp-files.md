@@ -105,9 +105,6 @@ Azure NetApp Files offers a complete range of data management features, includin
 
 Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure data center and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means you can set up an Azure NetApp Files instance in just a few minutes. And since Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service: using Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 
-> [!IMPORTANT]
-> Although it takes just a few clicks to create an instance of Azure NetApp Files, you must first be granted access to the service. You get this access, you need to submit a waitlist request to the Azure NetApp Files team. Refer to the references at the end of this module for a link to a page that tells you how to submit the request.
-
 ### Snapshots
 
 An Azure NetApp Files *snapshot* is a point-in-time image of a volume. These snapshots have low overhead because of the way Azure NetApp Files performs volume virtualization. Like a database, this layer uses pointers to the actual data blocks on disk. But, unlike a database, it doesn't rewrite existing blocks; it writes updated data to a new block and changes the pointer.
