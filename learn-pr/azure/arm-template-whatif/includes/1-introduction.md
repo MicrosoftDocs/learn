@@ -1,16 +1,12 @@
-**TODO this intro needs to be updated!**
-
-Azure Resource Manager (ARM) templates use things like parameters, variables, and functions to create the templates. These constructs save you time, because you don't need to create a new template for each environment. You also get consistent naming.
+Deployments using Azure Resource Manager templates (ARM templatas) and Bicep files result in a series of changes to your Azure environment. In this module, you learn how to review the changes that will happen before you execute a deployment.
 
 ## Example scenario
 
-You're on a software team that's authoring these templates for the company Tailwind Traders. You plan to deploy the described infrastructure in the templates. As you author these templates, you care about having a fast feedback loop. It's important that you're aware of any issues before deployment. Issues that can happen while authoring include errors in the templates, violation of good practices, or deploying something other than what you think you're deploying.
-
-You decide to evaluate the existing set of tools that addresses these issues.
+You're on a software team that's authoring these templates for the company Tailwind Traders. You plan to deploy the described infrastructure in the templates. As you author these templates, it's important that you're aware of any issues before deployment. You've had problems in the past with deploying something other than what you think you're deploying, so you decide to evaluate how to preview changes in your deployments.
 
 ## What will we be doing?
 
-In this module, you gain an understanding of what practices are beneficial to follow and why it's important. You also practice using the what-if command and the ARM template test toolkit to correct issues in your templates.
+In this module, you gain an understanding of the what-if operation for Azure Resource Manager. You also learn about the modes you can use for your deployments to Azure.
 
 ## What is the main goal?
 
