@@ -37,7 +37,7 @@ The Azure App Service Deployment Center automatically generates a GitHub Actions
 
 1. In your GitHub repository, select the **Actions** tab and then, on the left hand side, under **All Workflows**, select "**Build and deploy JAR app to Azure Web App**".
 
-1. Next, in the Right side table, under **workflow run**, select the workflow run "**Add or update the App Service deployment workflow configuration**"
+1. Next, in the Right side table, under **workflow run**, select the workflow run "**Add or update the App Service deployment workflow configuration**".
 
 1. Wait until the workflow run is finished, then under the **deploy** job in the workflow run, copy the URL in the **deploy** job that displays the Azure webapp URL.
 
