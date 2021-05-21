@@ -16,7 +16,7 @@ The following video gives you an overview of Windows Virtual Desktop.
 
 ### Provide the best user experience
 
-Users have the freedom to connect to Windows Virtual Desktop with any device over the internet. They use an Windows Virtual Desktop client to connect to their published Windows desktop and applications. This client could either be a native application on the device or the Windows Virtual Desktop HTML5 web client.
+Users have the freedom to connect to Windows Virtual Desktop with any device over the internet. They use a Windows Virtual Desktop client to connect to their published Windows desktop and applications. This client could either be a native application on the device or the Windows Virtual Desktop HTML5 web client.
 
 You can make sure your session host virtual machines (VMs) run near apps and services that connect to your datacenter or the cloud. This way your users stay productive and don't encounter long load times.
 
