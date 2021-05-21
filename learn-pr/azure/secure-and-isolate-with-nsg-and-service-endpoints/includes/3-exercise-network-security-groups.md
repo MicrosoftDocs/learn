@@ -23,7 +23,7 @@ Find the location name with the following command.
 3. Next, create the resource group.
 
 ```azurecli
-    $rg=<resource group name>
+    rg=<resource group name>
 
     az group create --name $rg --location <location>
 ```
@@ -34,9 +34,9 @@ Find the location name with the following command.
     az network vnet create \
         --resource-group $rg \
         --name ERP-servers \
-        --address-prefix 10.0.0.0/16 \
+        --address-prefixes 10.0.0.0/16 \
         --subnet-name Applications \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
     ```
 
 5. To create the **Databases** subnet, in the Cloud Shell, run the following command.
@@ -45,7 +45,7 @@ Find the location name with the following command.
     az network vnet subnet create \
         --resource-group $rg \
         --vnet-name ERP-servers \
-        --address-prefix 10.0.1.0/24 \
+        --address-prefixes 10.0.1.0/24 \
         --name Databases
     ```
 

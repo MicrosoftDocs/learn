@@ -10,7 +10,7 @@ In this section, you run your Terraform plan in Azure Pipelines. During the proc
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you added variables to your pipeline to store the names of your web apps in Azure App Service. Here, instead of adding the names of your web apps, you add your service principal details and information about your Blob storage account.
+In the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you added variables to your pipeline to store the names of your web apps in Azure App Service. Here, instead of adding the names of your web apps, you add your service principal details and information about your Blob storage account.
 
 To add the variables:
 
@@ -51,7 +51,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
 
     [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,109-111)]
 
-    This configuration resembles the one you built in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. Here's a brief summary of what's new:
+    This configuration resembles the one you built in the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path. Here's a brief summary of what's new:
 
     * The _Dev_ stage includes a new job, **Provision**, that runs before the deployment job.
     * The **Provision** job:

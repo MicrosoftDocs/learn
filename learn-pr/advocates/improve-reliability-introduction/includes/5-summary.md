@@ -8,6 +8,6 @@ necessary challenge so our efforts succeed. In this module you've:
 
 ## Additional Reading
 
--   [What is DevOps?](https://docs.microsoft.com/azure/devops/learn/what-is-devops)
+-   [What is DevOps?](/azure/devops/learn/what-is-devops)
 -   [DevOps for Dummies](https://www.dummies.com/business/operations-management/devops-for-dummies-cheat-sheet/)
--   [Azure SRE hub](https://docs.microsoft.com/azure/site-reliability-engineering/)
+-   [Azure SRE hub](/azure/site-reliability-engineering/)

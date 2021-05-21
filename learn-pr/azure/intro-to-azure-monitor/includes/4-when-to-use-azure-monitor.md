@@ -6,21 +6,21 @@ Users can share reports with **Azure Monitor** workbooks and maintain operationa
 
 Users can investigate and perform triage using custom charts in Metrics Explorer and analyze logs with queries in **Azure Monitor Logs**.
 
-Users can be notified, take action and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
+Users can be notified, take action, and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
 
 Here, we'll discuss some examples of when you might want to use Azure Monitor to:
 * View data in Azure Monitor Metrics
 * Analyze logs in Azure Monitor Logs
 
 ## Decision criteria
-Azure Monitor Metrics allows you to view time-series data in near real-time and retains data for up to 3 months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you would use a Log Analytics Workspace to store the recorded data.
+Azure Monitor Metrics allows you to view time-series data in near real-time and retains data for up to three months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you would use a Log Analytics Workspace to store the recorded data.
 
 Let's look at some of the different mechanisms for monitoring and viewing your Azure resources.
 
 | Monitoring Option | Usage |
 | --- | --- |
-| Metrics | Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios. |
-| Logs | Log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. You can edit and create queries using Log Analytics in the Azure portal. You can then either directly analyze the records or save queries for later use. |
+| Metrics | Numerical values that describe some aspect of a system at a particular point in time. |
+| Logs | Log data collected by Azure Monitor for analysis. |
 | Visualizations | Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. |
 
 ### Metrics

@@ -69,4 +69,4 @@ We have identified five common user interface design patterns
 - Dual view - different views of the same data (such as a list and a map).
 - Companion pane - tool palettes or game controllers.
 
-These design patterns are described in more detail in the [dual-screen documentation](https://docs.microsoft.com/dual-screen/introduction#dual-screen-app-patterns).
+These design patterns are described in more detail in the [dual-screen documentation](/dual-screen/introduction#dual-screen-app-patterns).

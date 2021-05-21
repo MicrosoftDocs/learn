@@ -10,7 +10,7 @@ Some of the common migration projects that Tailwind Traders will come across inc
 - Virtual Desktop Infrastructure (VDI)
 
 > [!NOTE]
-> For more information about these migration [scenarios](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/?azure-portal=true), connect to the Cloud Adoption Framework for Azure.
+> For more information about these migration [scenarios](/azure/cloud-adoption-framework/scenarios/?azure-portal=true), connect to the Cloud Adoption Framework for Azure.
 
 For all workloads, the decision to *migrate* or *modernize* will drive the solution that's chosen. When you do a migration, the workload will be moved into an infrastructure as a service (IaaS) platform running on virtual machines (VMs) in Azure. If you use a modernization approach, platform as a service (PaaS) components will be used to deploy the application after changes are made to the codebase or architecture.
 
@@ -26,9 +26,9 @@ A typical application to be moved to Azure is a two-tier Windows .NET front-end 
 
 **Deep dive on migration scenarios**
 
-- [Rehost](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm/?azure-portal=true) an on-premises application on Azure Virtual Machines by using Azure Migrate.
-- Rehost an on-premises application with Azure Virtual Machines and [SQL Server Always On availability groups](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true).
-- Rehost an on-premises application by migrating to Azure Virtual Machines and [Azure SQL Managed Instance](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance/?azure-portal=true).
+- [Rehost](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm/?azure-portal=true) an on-premises application on Azure Virtual Machines by using Azure Migrate.
+- Rehost an on-premises application with Azure Virtual Machines and [SQL Server Always On availability groups](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true).
+- Rehost an on-premises application by migrating to Azure Virtual Machines and [Azure SQL Managed Instance](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance/?azure-portal=true).
 
 ### Modernize: Windows and SQL Server
 
@@ -56,10 +56,10 @@ The rebuild strategy revises the existing application by aggressively adopting P
 
 **Deep dive on migration scenarios**
 
-- Migrate an application to [Azure App Service](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql/?azure-portal=true) and Azure SQL Database.
-- Migrate [SQL Server databases](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure/?azure-portal=true) to Azure.
-- [Refactor](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance/?azure-portal=true) an on-premises application to an Azure App Service web app and an instance of SQL Managed Instance.
-- [Rebuild](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rebuild/?azure-portal=true) an on-premises application in Azure.
+- Migrate an application to [Azure App Service](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql/?azure-portal=true) and Azure SQL Database.
+- Migrate [SQL Server databases](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure/?azure-portal=true) to Azure.
+- [Refactor](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance/?azure-portal=true) an on-premises application to an Azure App Service web app and an instance of SQL Managed Instance.
+- [Rebuild](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rebuild/?azure-portal=true) an on-premises application in Azure.
 
 ## Linux and open-source databases
 
@@ -73,8 +73,8 @@ When you migrate Linux and open-source applications to Azure, the experience is 
 
 **Deep dive on migration scenarios**
 
-- Rehost an on-premises Linux application to [Azure Virtual Machines](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true).
-- Rehost an on-premises Linux application to [Azure Virtual Machines and Azure Database for MySQL](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true).
+- Rehost an on-premises Linux application to [Azure Virtual Machines](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true).
+- Rehost an on-premises Linux application to [Azure Virtual Machines and Azure Database for MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true).
 
 ### Modernize: Linux and open-source databases
 
@@ -84,12 +84,12 @@ Modernizing Linux and open-source applications will focus on the method selected
 
 **Deep dive on migration scenarios**
 
-- [Refactor](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql/?azure-portal=true) a Linux application by using Azure App Service, Azure Traffic Manager, and Azure Database for MySQL.
-- [Migrate Java applications](https://docs.microsoft.com/azure/developer/java/migration/migration-overview?azure-portal=true) to Azure.
-- [Migrate open-source databases](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-oss-db-to-azure/?azure-portal=true) to Azure.
-- [Migrate MySQL](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-mysql-to-azure/?azure-portal=true) databases to Azure.
-- [Migrate PostgreSQL](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-postgresql-to-azure/?azure-portal=true) databases to Azure.
-- [Migrate MariaDB](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-mariadb-to-azure/?azure-portal=true) databases to Azure.
+- [Refactor](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql/?azure-portal=true) a Linux application by using Azure App Service, Azure Traffic Manager, and Azure Database for MySQL.
+- [Migrate Java applications](/azure/developer/java/migration/migration-overview?azure-portal=true) to Azure.
+- [Migrate open-source databases](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-oss-db-to-azure/?azure-portal=true) to Azure.
+- [Migrate MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-mysql-to-azure/?azure-portal=true) databases to Azure.
+- [Migrate PostgreSQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-postgresql-to-azure/?azure-portal=true) databases to Azure.
+- [Migrate MariaDB](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-mariadb-to-azure/?azure-portal=true) databases to Azure.
 
 ## Dev/test
 
@@ -103,7 +103,7 @@ When you migrate or rehost your dev/test environment to Azure, they'll run on VM
 
 **Deep dive on migration scenarios**
 
-Rehost an [on-premises dev/test environment](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-iaas/?azure-portal=true) on Azure Virtual Machines via Azure Migrate.
+Rehost an [on-premises dev/test environment](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-iaas/?azure-portal=true) on Azure Virtual Machines via Azure Migrate.
 
 ### Modernize: Dev/test
 
@@ -111,7 +111,7 @@ Tailwind Traders might enable your team to quickly provision dev/test and pre-pr
 
 ![Graphic showing how to modernize by using DevTest Labs.](../media/modernize-dev-test-labs.png)
 
-Migrate a dev/test environment to [DevTest Labs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true).
+Migrate a dev/test environment to [DevTest Labs](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true).
 
 ### Azure dev/test pricing
 
@@ -138,7 +138,7 @@ VMware VMs running on Azure VMware Solution are made accessible by using [Azure 
 
 ![Graphic showing how to migrate to an Azure VMware Solution connection.](../media/vmware-azure.png)
 
-Learn more about [deploying Azure VMware Solution](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true).
+Learn more about [deploying Azure VMware Solution](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true).
 
 ## SAP
 
@@ -166,4 +166,4 @@ Tailwind Traders can set up Windows Virtual Desktop in minutes to enable secure 
 
 In this scenario, desktop images are either migrated to Azure or new images are generated. Similarly, user profiles are either migrated to Azure or new profiles are created. The client solution is enabled but largely unchanged by this migration effort.
 
-Learn more about using [Windows Virtual Desktop](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises Remote Desktop Services environment to Azure.
+Learn more about using [Windows Virtual Desktop](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises Remote Desktop Services environment to Azure.

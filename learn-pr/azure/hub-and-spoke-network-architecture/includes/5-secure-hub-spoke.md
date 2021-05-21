@@ -31,7 +31,7 @@ There's a wide variety of security solutions for your organization, many of whic
 
 ## Base components of Azure security for hub-spoke topologies
 
-You want to ensure that your resources are protected from unauthorized access, or attack, by controlling your network traffic. In the hub and spoke model, there are several components you need to implement:
+You want to ensure that your resources are protected from unauthorized access, or attack, by controlling your network traffic. In the hub-spoke model, there are several components you need to implement:
 
 **Network security group**
 
@@ -55,7 +55,7 @@ ExpressRoute creates a dedicated private WAN link between on-premises resources 
 
 Microsoft manages this network security service. It protects Azure virtual networks and their resources by letting you manage and enforce connectivity policies centrally. Azure Firewall uses a static, public IP address for virtual network resources, allowing outside firewalls to identify your virtual network traffic.
 
-Azure Firewall is a fully stateful network firewall that tracks the operating state, and the characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub and spoke topology, Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
+Azure Firewall is a fully stateful network firewall that tracks the operating state, and the characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub-spoke topology, Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
 
 ![Diagram showing Azure Firewall features](../media/5-azure-firewall.png)
 
@@ -69,7 +69,7 @@ The logs can be stored in an Azure Storage Account, streamed to an Azure Event H
 
 Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate traffic using a 5-tuple method. NSGs evaluate traffic using source IP, source port, destination IP, destination port, and protocol, to determine if traffic is allowed or denied.
 
-### Defining security rules
+### Define security rules
 
 Security rules in an NSG provide the mechanism that defines the control of traffic flow. An NSG has a set of rules by default. These rules can't be deleted, but you can override them with your own custom rules. The default rules are:
 

@@ -55,7 +55,7 @@ In this smaller version, attempt the following configuration steps:
 - Parent node: Define a management group for corporate IT.
 - Child nodes: Define child nodes per production and nonproduction environment.
 
-For guidance on creating these management groups, see the [quickstart guide for creating a management group in the Azure portal](https://docs.microsoft.com/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
+For guidance on creating these management groups, see the [quickstart guide for creating a management group in the Azure portal](/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
 
 ## Subscription design
 
@@ -67,7 +67,7 @@ Subscriptions are the logical containers for all deployed assets. Subscriptions 
 
 ## Scaling with subscriptions
 
-There are several technical and non-technical reasons to scale with multiple subscriptions. See the [fundamental concepts article](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
+There are several technical and non-technical reasons to scale with multiple subscriptions. See the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
 
 The following questions may help illustrate reasons for you to scale your subscriptions:
 
@@ -89,15 +89,15 @@ Add existing subscriptions in each of the environment nodes, to create clarity b
 
 *Figure 5: Adding a subscription to a management group.*
 
-For guidance on adding subscriptions to a management group, see the [how-to guide](https://docs.microsoft.com/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
+For guidance on adding subscriptions to a management group, see the [how-to guide](/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
 
 ## Tagging
 
 Management groups reflect your highest priority organization structure. Tagging reflects a number of additional organizing principles that are also reflected through metadata. Suggested tags for all workloads are:
 
 - Workload (and/or application)
-- Data sensitivity; see [Data classification](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true) for examples
-- Mission criticality; see [Workload criticality](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/considerations/criticality?azure-portal=true)for examples
+- Data sensitivity; see [Data classification](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true) for examples
+- Mission criticality; see [Workload criticality](/azure/cloud-adoption-framework/manage/considerations/criticality?azure-portal=true)for examples
 - Owner
 - Department (cost center)
 - Environment
@@ -110,10 +110,10 @@ Azure policies can be applied to all subscriptions within a management group. To
 
 *Figure 6: Assigning a policy in the Azure portal.*
 
-For guidance on applying a policy, see the tutorial on [creating and managing policies](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
+For guidance on applying a policy, see the tutorial on [creating and managing policies](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
 
 - Step 4 of the instructions for assigning a policy discusses scope. This is where you will select the management group to ensure that the policies are applied to all subscriptions in the management group.
-- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#tags?azure-portal=ture). Specifically the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) will help establish a governance foundation.
+- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags?azure-portal=ture). Specifically the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) will help establish a governance foundation.
 
 > [!IMPORTANT]
 > Step 9 illustrates **Policy enforcement**. While learning about governance, be sure to set **Policy enforcement** to **Disabled**. This allows you to audit your environment without making any changes or preventing future deployments.
@@ -143,7 +143,7 @@ The CAF Foundation blueprint also defines and deploys policies for:
 - Initiative:
   - Enabling monitoring in Azure Security Center (89 policies).
 
-Follow the prescribed steps to [publish and assign this sample blueprint to your management group](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
+Follow the prescribed steps to [publish and assign this sample blueprint to your management group](/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 
 ## Exercise: Evaluate a current environment
 

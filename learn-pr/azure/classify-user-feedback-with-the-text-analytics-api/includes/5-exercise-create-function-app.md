@@ -33,7 +33,7 @@
     Congratulations! You've created and deployed your function app.
 
 > [!TIP]
-> Having trouble finding your function apps in the portal? Try [adding Function Apps to your favorites in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+> Having trouble finding your function apps in the portal? Try [adding Function Apps to your favorites in the Azure portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ## Create a function to execute our logic
 
@@ -48,7 +48,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. If a message appears stating  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Wait until the installation completes before continuing.
 
 1. Select **Add** to begin the function creation process.
-   A function is created using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](https://docs.microsoft.com/azure/azure-functions/supported-languages). The **QueueTrigger1** function page appears.
+   A function is created using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](/azure/azure-functions/supported-languages). The **QueueTrigger1** function page appears.
 
 ## Try it out
 

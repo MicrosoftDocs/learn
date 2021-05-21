@@ -1,5 +1,7 @@
  Your PIO wants to set up a virtual machine to serve as a web resource for local media outlets. It is imperative that this virtual machine is as protected as it can be to prevent unauthorized access. As part of your security profile, you want to implement Update Management on this VM so that you can ensure that it is always up-to-date with the latest security patches. 
 
+[!include[](../../../includes/azure-subscription-prerequisite.md)]
+
 ## Create a virtual machine
 
 Here you will create a new virtual machine to serve as a web server for the local media.

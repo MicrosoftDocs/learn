@@ -362,3 +362,23 @@ groups:
       title: GitHub Actions
     - id: azure-devops
       title: Azure Pipelines
+- id: vs-vsmac
+  title: Choose your platform
+  prompt: Choose your platform
+  pivots:
+    - id: vsstudio
+      title: Visual Studio 2019
+    - id: vsstudiomac
+      title: Visual Studio for Mac
+- id: arm-template-language-azure-shell-interface
+  title: ARM template language and Azure shell
+  prompt: Choose your ARM template language and Azure shell
+  pivots:
+    - id: bicepcli
+      title: Bicep + CLI
+    - id: biceppowershell
+      title: Bicep + PowerShell
+    - id: jsoncli
+      title: JSON + CLI
+    - id: jsonpowershell
+      title: JSON + PowerShell

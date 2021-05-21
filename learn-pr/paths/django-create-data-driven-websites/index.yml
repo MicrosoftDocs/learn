@@ -17,14 +17,14 @@ summary: |
     - Build an app. 
     - Create and manage a database. 
     - Set up a superuser for the admin site.
-    - Create dynamic HTML pages by using templates.
+    - Use templates to create dynamic HTML pages.
     - Design data-driven forms.
 prerequisites: |
   - Intermediate knowledge of Python:
     - Package management
     - Inheritance and mix-ins
   - Intermediate understanding of HTML and CSS
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/django-create-data-driven-websites.svg
 levels:
 - intermediate
 roles:
