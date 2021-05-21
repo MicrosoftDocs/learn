@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: "learn.web-development-101-vars.6-exercisetypes"
 metadata:
-  title: Data types
+  title: Exercise data types
   description: Learn what types of data can be stored in JavaScript variables.
   ms.date: 05/03/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Data types
+title: Exercise data types
 durationInMinutes: 3
 azureSandbox: false
 interactive: bash

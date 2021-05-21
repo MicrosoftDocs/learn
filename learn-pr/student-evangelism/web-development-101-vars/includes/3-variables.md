@@ -1,4 +1,4 @@
-Usung variables and data types, are essential to being able to writing code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
+Using variables and data types, are essential to being able to writing code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
 
 ## Variables
 
@@ -104,4 +104,5 @@ Constants are similar to variables, with two exceptions:
 
       Above you are changing the value of the object but not the reference itself, which makes it allowed.
 
-   > [!NOTE] A `const` means the reference is protected from reassignment. The value is not _immutable_ though and can change, especially if it's a complex construct like an object.
+   > [!NOTE]
+   > A `const` means the reference is protected from reassignment. The value is not _immutable_ though and can change, especially if it's a complex construct like an object.

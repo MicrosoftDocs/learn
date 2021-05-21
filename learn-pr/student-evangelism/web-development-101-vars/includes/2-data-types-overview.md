@@ -6,7 +6,6 @@ By using variables you will be able to track state, to for example remember how 
 
 If you've ever learned a programming language before, you may notice some similarities between other languages and JavaScript (however, the syntax may slightly vary). If this is your first time learning a programming language, don't worry- this module will break down all the concepts of JavaScript basics you'll need to help you be successful as a web developer.
 
-
 > [!TIP]
 > Want a quick review before you get started? Check out [this video](https://youtu.be/JNIXfGiDWM8) for an overview.
 

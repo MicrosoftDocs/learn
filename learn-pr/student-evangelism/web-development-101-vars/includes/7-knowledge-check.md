@@ -1,1 +1,0 @@
-Select one answer on each question

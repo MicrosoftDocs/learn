@@ -1,5 +1,3 @@
-# Introduction
-
 A programming language is made up of many different concepts. Each of these concepts, when used, allows you to create anything from a small command line application to large business system. Before you create an application, you need to start with knowing the fundamentals of a language. 
 
 An important fundamental concept is variables. Your source code can consist of anything from 10 lines to many thousands of lines and be spread out over potentially hundreds of files. To better keep track of the flow of the program, you use variables. Variables are named references that helps you keep track of important values in your program. There are different types of values though, values you want to change and some values you never want to change. There are also different types of values and depending on what type of value you are dealing with it should be stored as that type.

@@ -30,7 +30,6 @@ units:
   - learn.web-development-101-vars.4-exercise-variables
   - learn.web-development-101-vars.5-datatypes
   - learn.web-development-101-vars.6-exercisetypes
-  - learn.web-development-101-vars.7-knowledgecheck
-  - learn.web-development-101-vars.8-summary
+  - learn.web-development-101-vars.7-summary
 badge:
   uid: "learn.web-development-101-vars.badge"
