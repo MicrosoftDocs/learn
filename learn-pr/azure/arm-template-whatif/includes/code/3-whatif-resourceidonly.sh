@@ -1,4 +1,4 @@
 az deployment group what-if \
-  --resource-group $resourceGroupName \
+  --resource-group ToyStorage \
   --template-file $templateFile \
   --result-format ResourceIdOnly

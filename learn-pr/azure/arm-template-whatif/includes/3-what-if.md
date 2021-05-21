@@ -54,7 +54,7 @@ Resource and property changes are indicated with this symbol:
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/WhatIfTest1
+Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyStorage
 
   ~ Microsoft.Storage/storageAccounts/bz64gjjpidbuvi [2019-06-01]
     ~ sku.name: "Standard_LRS" => "Standard_GRS"
@@ -84,7 +84,7 @@ Resource and property changes are indicated with this symbol:
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/WhatIfTest1
+Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyStorage
 
   ! Microsoft.Storage/storageAccounts/bz64gjjpidbuvi
 

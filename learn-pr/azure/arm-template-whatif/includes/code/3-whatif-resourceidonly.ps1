@@ -1,5 +1,5 @@
 New-AzResourceGroupDeployment `
-  -ResourceGroupName $resourceGroupName `
+  -ResourceGroupName ToyStorage `
   -TemplateFile $templateFileName `
   -WhatIf `
   -WhatIfResultFormat ResourceIdOnly
