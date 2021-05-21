@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-subqueries.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/12/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A query with a subquery in the WHERE clause returns the following error: Msg 512, Level 16, State 1, Line 17 Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, &lt;, &lt;= , &gt;, &gt;= or when the subquery is used as an expression. What can we do to fix this error?"
+    choices:
+    - content: "Make sure the subquery is not using SELECT * in the SELECT list."
+      isCorrect: false
+      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
+    - content: "Change the operator introducing the subquery to IN or NOT IN"
+      isCorrect: true
+      explanation: "Correct. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
+    - content: "Add DISTINCT to the SELECT list"
+      isCorrect: false
+      explanation: "Incorrect. The error indicates that more than one value is being returned by the subquery and you cannot compare a list of values with comparison operators."
+  - content: "Which of the following statements is true of correlated subqueries?"
+    choices:
+    - content: "A correlated subquery returns a single scalar value"
+      isCorrect: false
+      explanation: "Incorrect. A correlated subquery references a value in the outer query."
+    - content: "A correlated subquery returns multiple columns and rows"
+      isCorrect: false
+      explanation: "Incorrect. A correlated subquery references a value in the outer query."
+    - content: "A correlated subquery references a value in the outer query"
+      isCorrect: true
+      explanation: "Correct. A correlated subquery references a value in the outer query."

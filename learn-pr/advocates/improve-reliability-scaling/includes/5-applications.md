@@ -20,7 +20,7 @@ architect your applications in the cloud, and there are a number of
 scalability recommendations you can find in the application architecture
 guide at the following link:
 
-[Azure Architecture Center](https://docs.microsoft.com/azure/architecture/?WT.mc_id=msignitethetour2019-slides-ops50)
+[Azure Architecture Center](/azure/architecture/?WT.mc_id=msignitethetour2019-slides-ops50)
 
 ## Scenario: Tailwind Traders architecture
 

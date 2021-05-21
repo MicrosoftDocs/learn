@@ -1,20 +1,20 @@
-In this module, you set up your development environment to create and build Blazor WebAssembly web apps. You then:
+In this module, you set up your development environment to create and build Blazor web apps. You then:
 
-- Created a new Razor component.
+- Re-used a Razor component.
 - Added HTML and C# to the Razor file.
-- Used binding to sync user input to the calculator logic.
+- Used binding to sync user input to the todo list logic.
 
-You now understand the fundamentals of building Blazor WebAssembly apps. You can use your HTML and C# knowledge to build more complex client web apps.
+You now understand the fundamentals of building Blazor apps. You can use your HTML and C# knowledge to build more complex web apps.
 
 ## Learn more
 
 - [Blazor homepage](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
-- [Introduction to ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?)
-- [Host and deploy ASP.NET Core Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/webassembly)
-- [Project structure for Blazor apps](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/project-structure)
-- [Build progressive web applications with ASP.NET Core Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/progressive-web-app)
+- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor)
+- [Host and deploy ASP.NET Core Blazor WebAssembly](/aspnet/core/host-and-deploy/blazor/webassembly)
+- [Project structure for Blazor apps](/dotnet/architecture/blazor-for-web-forms-developers/project-structure)
+- [Build progressive web applications with ASP.NET Core Blazor WebAssembly](/aspnet/core/blazor/progressive-web-app)
 
 ## Get more practice
 
-- [Build a Blazor to-do list](https://docs.microsoft.com/aspnet/core/tutorials/build-your-first-blazor-app)
+- [Build a Blazor to-do list](/aspnet/core/tutorials/build-your-first-blazor-app)
 - [Blazor Pizza Store workshop](https://aka.ms/blazorworkshop)

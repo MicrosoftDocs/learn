@@ -93,6 +93,24 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     ```csharp
     using Humanizer;
     ```
+    
+    Your **Program.cs** should now look like this:
+    
+    ```csharp
+    using System;
+    using Humanizer;
+
+    namespace DotNetDependencies
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {   
+                Console.WriteLine("Hello World");
+            }
+        }    
+    }
+    ```
 
 1. Add the following content to the Program.cs file to the bottom of the `Program` class, just after the closing brace for the Main method.
 
