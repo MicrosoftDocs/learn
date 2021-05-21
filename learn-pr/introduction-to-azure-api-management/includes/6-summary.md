@@ -13,7 +13,7 @@
     * Connectors"
 
 -->
-Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs. To help you make that decision, we presented some criteria you can use:
+Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and exposing<!-- Same comment about changing the word "exposing." --> your organization's APIs. To help you make that decision, we presented some criteria you can use:
 
 - Number of APIs
 - Rate of API changes
@@ -28,13 +28,13 @@ Our goal in this module was to help you evaluate whether Azure API Management is
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-We applied these criteria in the context of our fictional food delivery organization. You learned that in most scenarios, Azure API Management offers:
+We applied these criteria in the context of our fictional food delivery organization. You learned that in most scenarios, Azure API Management offers the following benefits:
 
-- Improved standardization of APIs by enabling the management of multiple APIs from a single administrative interface.
+- Improved API standardization through enabling management of multiple APIs from a single administrative interface.
 - Enhanced centralization of all API operations by bringing multiple APIs under a single administrative umbrella.
-- Tightened API security thanks to permissions, access control policies, and attack surface reduction.
+- Tightened API security resulting from permissions<!-- Can we say what kind of permissions? For example, "standardized permissions?" -->, access control policies, and attack surface reduction.
 
-However, you also learned that organizations would probably not benefit from using Azure API Management if they have:
+However, you also learned that some organizations might not benefit from using Azure API Management if they have:
 
 - A relatively small number of deployed APIs.
 - APIs that are mostly static or require few revisions.
@@ -48,7 +48,7 @@ However, you also learned that organizations would probably not benefit from usi
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-The criteria help you evaluate whether your organization's APIs would benefit from being gathered under the umbrella of Azure API Management. Today's connected world is increasingly being driven by the so-called *API economy*, where API usage by developers and their consumers generates important revenue streams for the companies that publish the APIs. If you want to take advantage of the API economy, you need to use this module's criteria to assess how well Azure API Management would improve your organization's ability to adapt its APIs to satisfy consumers, follow business trends, and take advantage of new opportunities. The process you went through here should give you enough information to choose the correct API lifecycle management solution for your organization.
+The criteria help you evaluate whether your organization's APIs would benefit from being gathered under the umbrella of Azure API Management. <!-- These two sentences don't flow together. Can we either add a sentence to transition them, or make this second sentence a new pgph? If you do the latter, you'll need to add a second sentence to this first sentence so as to avoid a single-sentence pgph. -->Today's connected world is increasingly being driven by the *API economy*&mdash;how API usage by developers and their consumers generates important revenue streams for the companies that publish the APIs. If you want to maximize your API economy, you need to use this module's criteria to assess how well Azure API Management would improve your organization's ability to adapt its APIs to satisfy consumers, follow business trends, and take advantage of new opportunities.<!-- This sentence is too long for Acrolinx. Can we break it into two? --> The process you went through here should give you enough information to choose the correct API lifecycle management solution for your organization.
 
 <!-- 4. References (optional) ----------------------------------------------------
 
@@ -70,7 +70,7 @@ The criteria help you evaluate whether your organization's APIs would benefit fr
  -->
 
 ## References
-
+<!-- Please fix the last two links in this list - I think they just need an "https://" in front of them, but I cannot change them. -->
 - [Azure API Management](https://azure.microsoft.com/services/api-management/?azure-portal=true)
 - [Azure API Management pricing](https://azure.microsoft.com/pricing/details/api-management/?azure-portal=true)
 - [Feature-based comparison of the Azure API Management tiers](/azure/api-management/api-management-features?azure-portal=true)

@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "Gateway"
       isCorrect: true
-      explanation: "Correct. As part of your API policies, you can set usage quotas by subscription or key and those quotas are enforced when each API request enters the Azure API Management gateway."
+      explanation: "Correct. As part of your API policies, you can set usage quotas by subscription or key. Those quotas are then enforced when each API request enters the Azure API Management gateway."
     - content: "Developer portal"
       isCorrect: false
-      explanation: "Incorrect. Developers use this portal to subscribe to your APIs and those subscriptions are subject to the usage quotas you set, which are enforced by the Azure API Management gateway."
+      explanation: "Incorrect. Developers use this portal to subscribe to your APIs. Those subscriptions are subject to the usage quotas you set, which are enforced by the Azure API Management gateway."
     - content: "Administration interface"
       isCorrect: false
       explanation: "Incorrect. You use the Azure API Management administration interface to set usage quotas, not to enforce them."
@@ -65,10 +65,10 @@ quiz:
       explanation: "Correct. Standardizing API specifications helps to reduce the time it takes to develop new and updated API features."
     - content: "Standardizing API documentation"
       isCorrect: false
-      explanation: "Incorrect. Although writing standardized API documentation helps developers to quickly get up and running with an API, it doesn't help your in-house developers code API revisions faster."
+      explanation: "Incorrect. Although writing standardized API documentation helps developers to quickly get familiar with an API, it doesn't help your in-house developers code API revisions faster."
     - content: "Standardizing API analytics"
       isCorrect: false
-      explanation: "Incorrect. By enabling the organization to compare usage and performance across multiple APIs, standardized analytics might help you recognize the need for an API revision, but that analysis in itself doesn't directly enable the revision to be deployed more quickly."
+      explanation: "Incorrect. Standardized analytics might help an organization compare usage and performance across multiple APIs and recognize the need for API revisions. However, that analysis in itself doesn't enable faster API revision deployments."
   - content: "Suppose an API administrator with a large deployment of APIs wants to enhance API monetization by encouraging more developers to subscribe to their APIs. Which one of the following API benefits would help them accomplish their goal?"
     choices:
     - content: "Creating a central access point for administration"
@@ -76,11 +76,11 @@ quiz:
       explanation: "Incorrect. Although a centralized API administrative interface helps with administrative operations such as policy creation and user management, it does nothing directly to encourage more developers to use your APIs."
     - content: "Creating a central access point for developers"
       isCorrect: true
-      explanation: "Correct. With all your API documentation, code samples, and subscription access in a single developer portal, developers are more likely to find and subscribe to your APIs."
+      explanation: "Correct. Having all your API documentation, code samples, and subscription access in a single developer portal enables developers to more easily find and subscribe to your APIs."
     - content: "Creating a central access point for API deployment."
       isCorrect: false
-      explanation: "Incorrect. While it's true that routing all API requests through a single base URL makes it easier to enforce policies and apply transformations, it doesn't do anything directly to encourage developers to subscribe to your APIs."
-  - content: "Suppose the senior security engineer in charge of a large API deployment wants to reduce the likelihood of one or more consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
+      explanation: "Incorrect. While routing all API requests through a single base URL does make it easier to enforce policies and apply transformations, it doesn't encourage developers to subscribe to your APIs."
+  - content: "Suppose the senior security engineer for a large API deployment wants to reduce chances of consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
     choices:
     - content: "Require subscription keys"
       isCorrect: false
@@ -90,4 +90,4 @@ quiz:
       explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users can access the API, this authentication does not by itself protect the API against misuse."
     - content: "Set rate limits"
       isCorrect: true
-      explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame for a subscription or key, you help guard your API against misuse by a consumer."
+      explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame per subscription or key, you help guard your API against customer misuse."
