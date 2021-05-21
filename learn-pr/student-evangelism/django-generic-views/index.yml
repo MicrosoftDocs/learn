@@ -27,7 +27,7 @@ prerequisites:  |
      - [Package management](https://docs.python.org/3/installing/index.html)
      - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
      - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/django-generic-views.svg
 levels:
 - intermediate
 roles:
