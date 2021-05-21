@@ -69,12 +69,12 @@ param appServicePlanSku object = {
 
 This parameter is an object with two string properties, `name` and `tier`. Notice that each of the properties is on its own line.
 
-> [!NOTE]
-> You can't specify the properties that an object needs to contain.
-
 When you reference the parameter in the template, you can select the individual properties of the object by using a dot followed by the name of the property, like in this example:
 
 :::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
+
+> [!IMPORTANT]
+> Keep in mind that you don't specify the type of each property within an object. However, when you use a property's value, its type must match what's expected. In the previous example, both the name and the tier of the App Service plan SKU must be strings.
 
 Another example of where you might use an object parameter is for specifying resource tags. You can attach custom tag metadata to the resources that you deploy, which you can use to identify important information about a resource.
 
