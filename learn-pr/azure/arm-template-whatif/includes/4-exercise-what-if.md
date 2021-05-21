@@ -11,13 +11,13 @@ The second deployment will include the what-if operation to review the expected 
 
 ## What-if prerequisites
 
-::: zone pivot="powershell"
+::: zone pivot="jsonpowershell,biceppowershell"
 
 [!include[](./powershell/3-exercise-whatif-powershell.md)]
 
 ::: zone-end
 
-::: zone pivot="cli"
+::: zone pivot="jsoncli,bicepcli"
 
 [!include[](./azurecli/3-exercise-whatif-azurecli.md)]
 

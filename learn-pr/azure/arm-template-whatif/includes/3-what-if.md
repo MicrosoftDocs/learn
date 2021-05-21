@@ -8,10 +8,6 @@ Deploying and hoping for the best is not a good approach. A better approach is u
 
 Azure Resource Manager provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
-> [!NOTE]
-> The what-if operation is currently in preview. As a preview release, the results might sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please [report these issues](https://aka.ms/whatifissues?azure-portal=true).
->
-
 Using the what-if operation allows you to estimate what would happen if you were to deploy, by comparing the current state model to the desired state model. The what-if operation confirms if the changes made by your template match your expectations *without* applying those changes to real resources or to the state of those resources.
 
 A benefit to using a state file is that you can do some work disconnected and possibly avoid some round trips to the server - allowing for a tighter development cycle. Reliance on an external API puts you at the mercy of a network connection for the development cycle, so having the what-if operation can end up saving you a lot of time.
@@ -23,32 +19,30 @@ When you use the what-if operation, it lists six types of changes:
 - **Create**. The resource doesn't currently exist but is defined in the template. The resource will be created.
 - **Delete**. This change type applies only when you're using *complete mode* for deployment. The resource exists but isn't defined in the template. With complete mode, the resource will be deleted. This change type includes only resources that support deletion through complete mode.
 - **Ignore**. The resource exists but isn't defined in the template. The resource won't be deployed or modified.
-- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when **ResultFormat** is set to **FullResourcePayloads**, which is the default value.
-- **Modify**. The resource exists and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when **ResultFormat** is set to **FullResourcePayloads**, which is the default value.
-- **Deploy**. The resource exists and is defined in the template. The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when **ResultFormat** is set to **ResourceIdOnly**.
+- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when **WhatIfResultFormat** is set to **FullResourcePayloads**, which is the default value.
+- **Modify**. The resource exists and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when **WhatIfResultFormat** is set to **FullResourcePayloads**, which is the default value.
+- **Deploy**. The resource exists and is defined in the template. The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when **WhatIfResultFormat** is set to **ResourceIdOnly**.
 
 ## Result format
 
-The PowerShell cmdlet **New-AzResourceGroupDeployment** creates a new deployment on a resource group. When you add the what-if operation as a parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out. 
+::: zone pivot="jsonpowershell,biceppowershell"
+
+The PowerShell cmdlet **New-AzResourceGroupDeployment** creates a new deployment on a resource group. When you add the what-if operation as a parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out.
 
 You can control the amount of text output of the what-if operation by using one of these two parameters:
 
 - **FullResourcePayloads**. By including this parameter, you get a *verbose* output that consists of a list of resources that will change. The output also shows details about all the properties that will change in accordance with the template.
 - **ResourceIdOnly**. This mode returns a list of resources that will change, but not all the details.
 
-For example, assume that you're changing the storage type in a template that deploys a single storage account to an existing environment. The PowerShell command parameter **-WhatIfResultFormat FullResourcePayloads** will produce the following results:
+For example, assume that you're changing the storage type in a template that deploys a single storage account to an existing environment.
+
+You might execute the following PowerShell code and ask for Resource Manager to give you the full resource payloads:
+
+:::code language="azurepowershell" source="3-whatif-fullresourcepayloads.ps1" highlight="7" :::
+
+The above command produces the following results:
 
 ```output
-PS > New-AzResourceGroupDeployment `
->> -Name $deploymentName `
->> -ResourceGroupName What-If `
->> -TemplateFile $templateFile `
->> storagePrefix whatif `
->> -WhatIfResultFormat FullResourcePayloads `
->> -Whatif
-
-Note: As What-If is currently in preview, the result may contain false positive predictions (noise). You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
-
 Resource and property changes are indicated with this symbol:
   ~ Modify
 
@@ -61,20 +55,13 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 Resource changes: 1 to modify
 ```
 
-The PowerShell command parameter `-WhatIfResultFormat ResourceIdOnly` will produce the following results:
+You might then re-execute the PowerShell code but just ask for the resource IDs:
+
+:::code language="azurepowershell" source="3-whatif-resourceidonly.ps1" highlight="7" :::
+
+The above command produces the following results:
 
 ```output
-PS > Nw-AzureResourceGroupDeployment `
->> -Name $deploymentName `
->> -ResourceGroupName What-if `
->> -TemplateFile $templateFile
->> -storagePrefix whatif `
->> -storageSKU Standard_LRS `
->> -WhatIfResultFormat ResourceIdOnly `
->> -Whatif
-
-Note: As What-If is currently in preview, the result may contain false positive predictions (noise). You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
-
 Resource and property changes are indicated with this symbol:
    ! Deploy
 
@@ -84,6 +71,8 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 
   ! Microsoft.Storage/storageAccounts/whatifbszktl3jpcqrc
 ```
+
+::: zone-end
 
 ## Removal or deletion of resources and deployment modes
 
