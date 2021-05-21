@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-built-in-scenarios.2-what-are-built-in-scenarios
+title: What are built-in scenarios?
+metadata:
+  title: What are built-in scenarios?
+  description: Learn about the the different built-in scenarios associated with the Health Bot and their use cases.
+  author: leestott
+  ms.author: chnoring
+  ms.date: 05/11/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-are-built-in-scenarios.md)]
