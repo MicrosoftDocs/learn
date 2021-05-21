@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-saas-offer-commercial-marketplace.7-summary
+uid: learn.create-vm-offer-commercial-marketplace.7-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary of learnings about commercial marketplace SaaS offer definitions, considerations, and publishing 
-  ms.date: 01/25/2021
+  ms.date: 05/20/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
