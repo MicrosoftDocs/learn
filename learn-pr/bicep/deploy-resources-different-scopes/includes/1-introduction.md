@@ -17,7 +17,7 @@ You know the R&D team has recently been given a lot of new funding, so they're l
 In this module, you'll learn about the different scopes that Azure resources can be deployed at and some of the common resources that are deployed outside of resource groups. You'll create a Bicep file that deploys to a subscription and to a resource group. You'll also create a Bicep file that deploys to a management group. In the process, you'll learn about several features of Bicep, including:
 
 - How to set the scope of a Bicep file by using the `targetScope` keyword.
-- How to use modules and the `scope` keyword to deploy to different scopes within one deployment.
+- How to use modules and the `scope` keyword to deploy to different scopes within a single deployment.
 - How to target specific scopes by using the `resourceGroup()`, `subscription()`, `managementGroup()`, and `tenant()` functions.
 
 ## What is the main goal?
