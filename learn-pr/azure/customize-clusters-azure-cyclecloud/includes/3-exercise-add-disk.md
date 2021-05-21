@@ -27,7 +27,7 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 
 The majority of management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell. 
 
-1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you will be using in this module.
+1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
 
     > [!NOTE]
     > The Azure portal supports the most common modern web browsers, including the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. 
@@ -74,7 +74,7 @@ The majority of management tasks in this and subsequent exercises require the us
     ```
 
     > [!NOTE]
-    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names since you will need one of them later in this exercise.
+    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names since you'll need one of them later in this exercise.
     > 
     > ```
     > default-locker (az://cyclecloud050921/cyclecloud)
@@ -83,7 +83,7 @@ The majority of management tasks in this and subsequent exercises require the us
 
 ## Configure an Azure CycleCloud Slurm project 
 
-Next, you will configure a sample Azure CycleCloud Slurm project. You will leverage an existing Slurm project from the Azure CycleCloud GitHub repository. You will fetch it into your home directory in Azure Cloud Shell and then upload it to the Azure CycleCloud locker.
+Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage an existing Slurm project from the Azure CycleCloud GitHub repository. You'll fetch it into your home directory in Azure Cloud Shell and then upload it to the Azure CycleCloud locker.
 
 1. On your computer, within the web browser window displaying the Azure portal, within the Bash session in the Azure Cloud Shell pane, run the following commands to create a project directory and fetch a Slurm project from the corresponding GitHub repository into it.
 
@@ -181,7 +181,7 @@ Now, you'll download and modify the sample Azure CycleCloud template compatible 
 
 ## Start a new cluster and examine its storage configuration
 
-To conclude this exercise, you will verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To accomplish this, you will create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks. 
+To conclude this exercise, you'll verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To accomplish this, you'll create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks. 
 
 1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server). If prompted, confirm that you want to proceed.
 1. If prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
