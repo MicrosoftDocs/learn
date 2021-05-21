@@ -1,6 +1,6 @@
 Azure CycleCloud enables you to customize and manage HPC clusters in Azure.
 
-## Example scenario
+## Scenario
 
 Contoso is an oceanographic and meteorological services company based in Houston, TX. Contoso's research team relies heavily on its on-premises High Performance Computing (HPC) cluster to run Slurm-based jobs.
 
