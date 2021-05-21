@@ -112,7 +112,7 @@ You need to set the resource group created for you in the sandbox as the default
       In this command, use the name of the resource name provided by the last command. It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**.
 
       > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template, you need to specify the target *resource group* name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the next step through the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0) PowerShell command.
+      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template, you need to specify the target *resource group* name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the next step through the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault) PowerShell command.
 
 ## Deploy the first template to Azure
 
