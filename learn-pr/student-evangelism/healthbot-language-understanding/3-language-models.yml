@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-language-understanding.3-language-models
+title: Language Models
+metadata:
+  title: Language Models
+  description: Learn about the different types of language models and how to add a RegEx language model to the Azure Health Bot.
+  author: nrd26
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-language-models.md)]
