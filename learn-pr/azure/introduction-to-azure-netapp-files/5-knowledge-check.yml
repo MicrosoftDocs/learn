@@ -83,10 +83,10 @@ quiz:
   - content: "Suppose you're an administrator who is evaluating Azure NetApp Files as a shared storage solution. Which of the following best describes a scenario where you would counsel against using Azure NetApp Files?"
     choices:
     - content: "You have a small-scale, low-performance workload that consists mostly of static content with relatively constant demand."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. Azure NetApp Files is not ideal for small, static workloads. Azure NetApp Files is best used with large-scale, high-performance workloads with elastic content and demand."
     - content: "You have a high-performance computing simulation application that requires very high IOPS and very low latency."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. Azure NetApp Files supports up to 450,000 IOPS and sub-millisecond latency, so it is ideal for this type of application."
     - content: "You have a massive Microsoft SQL Server deployment."
       isCorrect: false
