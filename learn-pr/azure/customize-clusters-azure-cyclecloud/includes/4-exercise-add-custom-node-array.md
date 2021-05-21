@@ -1,15 +1,17 @@
-A nodearray is a collection of identically configured nodes of an Azure CycleCloud cluster. Their purpose is to accommodate the horizontal scaling of the cluster compute resources as the number of queued jobs changes. Each nodearray has a name, a set of attributes which apply to each of its nodes, and optional attributes describing how the nodearray should scale.
+A nodearray is a collection of identically configured nodes of an Azure CycleCloud cluster. Their purpose is to accommodate the horizontal scaling of the cluster compute resources as the number of queued jobs changes. Each nodearray has a name, a set of attributes which apply to each of its nodes, and optional attributes that describe how the nodearray should scale.
 
 Partitions group nodes into logical and potentially overlapping sets. Their purpose is to optimize processing of jobs, by accounting for their specific constraints such as resource or time limits. The scheduler allocates jobs to nodes within a partition until their resources are exhausted or all jobs are processed.
 
-You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this objective, you decide to apply more changes to the underlying template and validate your approach. 
+You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this goal, you decide to apply more changes to the underlying template and validate your approach. 
 
 ## Add a nodearray definition to the Azure CycleCloud template
 
-You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled hpc and htc. You will create another partition and the corresponding nodearray intended for jobs that benefit from the CUDA capabilities. 
+You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled hpc and htc. You'll create another partition and the corresponding nodearray intended for jobs that benefit from the CUDA capabilities. 
 
-1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you are using in this module.
-1. From the Azure portal, open the **Cloud Shell** by clicking its icon in the toolbar next to the search text box and ensure that you are running a Bash session.
+1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you're using in this module.
+
+1. From the Azure portal, open the **Cloud Shell** by clicking its icon in the toolbar next to the search text box and ensure that you're running a Bash session.
+
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following command to set the working directory to the one hosting the GitHub repository you fetched in the previous exercise:
 
     ```azurecli-interactive
@@ -45,7 +47,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
     ```
 
     > [!NOTE]
-    > If you are using a Windows computer, you can paste the content of Clipboard by using the **Shift+Insert** key combination.
+    > If you're using a Windows computer, you can paste the content of Clipboard by using the **Shift+Insert** key combination.
 
     > [!NOTE]
     > Your changes define an extra nodearray.
@@ -55,7 +57,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 To provide the ability to modify the values of template parameters via the Azure CycleCloud graphical interface, you'll apply more changes to the template. 
 
-1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
+1. Within the web browser window that displays the Bash session in the Azure Cloud Shell pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
 
     ```azurecli-interactive
 
