@@ -15,31 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What scenario describes most accurately the benefits of using the what-if operation when you're deploying a resource in Azure?"
-    choices:
-    - content: "To validate if an ARM template uses recommended practices at the time of deployment."
-      isCorrect: false
-      explanation: "The ARM template test toolkit checks your template for recommended practices. The what-if operation lets you see how resources will change if you deploy the template."
-    - content: "To verify the effects and impact of the deployment of the template."
-      isCorrect: true
-      explanation: "The what-if operation lets you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed."
-    - content: "To deploy the template in a sandbox environment in order to validate if the results of the deployment match expected results."
-      isCorrect: false
-      explanation: "The what-if operation evaluates the effects the deployment of the template against the target environment without making *any* changes to the environment."
-  - content: "What's the effect of using *complete mode* when deploying?"
-    choices:
-    - content: "Resources that are not specified in the template are removed."
-      isCorrect: true
-      explanation: "The answer is correct."  
-    - content: "Existing resources are left unchanged, even if they're not specified in the template."
-      isCorrect: false
-      explanation: "This behavior is called *incremental mode* and is the opposite of complete mode."
-    - content: "You're asked to complete the deployment with a yes/no prompt."
-      isCorrect: false
-      explanation: "This is the role of the *confirm switch*."  
-    - content: "A resource is waiting for another resource to finish deploying before deployment can begin."
-      isCorrect: false
-      explanation: "Resource Manager figures this out by itself, most of the time."
   - content: "How would you run a single test by using the test toolkit?"
     choices:
     - content: "Use the flag `-TestName` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
