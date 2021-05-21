@@ -62,7 +62,8 @@ myVariable = 321;
 
 Above you see how assignment operator `=` is used and how a value is being _assigned_ on the right side of the operator.
 
-> [!TIP]: Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type let myVariable = 123, press return, then type myVariable. What happens? You'll learn more about these concepts in subsequent lessons.
+> [!TIP]
+> Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type let myVariable = 123, press return, then type myVariable. What happens? You'll learn more about these concepts in subsequent lessons.
 
 Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant, for example,  like the value of PI for example. To address this need, JavaScript let's you create so called constants.
 
