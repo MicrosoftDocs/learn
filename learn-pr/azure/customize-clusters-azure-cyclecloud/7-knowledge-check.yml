@@ -27,7 +27,7 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "You are editing an Azure CycleCloud template. You plan to add an extra Node section. To which parent section should you add it?"
+  - content: "You're editing an Azure CycleCloud template. You plan to add an extra Node section. To which parent section should you add it?"
     choices:
     - content: "cluster"
       isCorrect: true
@@ -53,10 +53,10 @@ quiz:
     choices:
     - content: "Azure Active Directory"
       isCorrect: false
-      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository do not support Azure Active Directory authentication."
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Azure Active Directory authentication."
     - content: "Active Directory Domain Services"
       isCorrect: false
-      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository do not support Active Directory Domain Services authentication."
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Active Directory Domain Services authentication."
     - content: "SSH keys"
       isCorrect: true
       explanation: "This connection relies on SSH key-based authentication."
