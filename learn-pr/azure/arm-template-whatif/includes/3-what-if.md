@@ -102,9 +102,21 @@ Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/WhatIf
 Resource changes: 1 to deploy.
 ```
 
+### Use what-if results in a script
+
+You might want to use the output from the what-if operation within a script or as part of an automated deployment process.
+
+::: zone pivot="jsonpowershell,biceppowershell"
+
+You can get the results by using the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet. Then, your script can parse the results and perform any custom logic you might need.
+
 ::: zone-end
 
-<!-- TODO --no-pretty-print on CLI -->
+::: zone pivot="jsoncli,bicepcli"
+
+You can get the raw JSON results by appending the `--no-pretty-print` argument to your CLI command. Then, your script can parse the results and perform any custom logic you might need.
+
+::: zone-end
 
 ## Deployment modes and deletion of resources
 
