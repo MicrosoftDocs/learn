@@ -1,5 +1,5 @@
 
-You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q# in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
+You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q# in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
@@ -7,7 +7,7 @@ In this unit, you learn how to submit a job to Azure Quantum.
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](/cli/azure/install-azure-cli) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -39,10 +39,10 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
 
    > [!NOTE]
-   > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
+   > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
 
 1. After you complete the information, select the **Providers** tab to add providers to your workspace. A provider gives you access to a quantum service, which can be quantum hardware, a quantum simulator, or an optimization service. In this case, we're interested in quantum hardware. We'll use the IonQ provider example, but the steps should be valid for other quantum hardware providers.
-To learn more about providers, see [List of quantum computing targets on Azure Quantum](https://docs.microsoft.com/azure/quantum/qc-target-list).
+To learn more about providers, see [List of quantum computing targets on Azure Quantum](/azure/quantum/qc-target-list).
 
 1. Add at least the IonQ provider, and then select **Review + create**.
 
@@ -51,7 +51,7 @@ To learn more about providers, see [List of quantum computing targets on Azure Q
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the workspace." border="false":::
 
 > [!NOTE]
-> This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
+> This tutorial is using the IonQ targets as a [Quantum Processing Unit](/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](/azure/quantum/install-overview-qdk).
 
 ## Set up the project and write your program
 
@@ -98,6 +98,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
    ```dotnetcli
    az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
+
    > [!NOTE]
    > If you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
 
@@ -131,7 +132,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
 In this case, we see that IonQ has two different targets, a quantum processing unit (QPU) and a simulator. The QPU is a trapped ion quantum computer with 11 qubits. The simulator is a GPU-accelerated simulator that supports up to 29 qubits with the same characteristics as the QPU, which makes it perfect to test jobs before running them on actual quantum hardware.
 
 > [!NOTE]
-> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/).
+> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](/learn/modules/solve-quantum-inspired-optimization-problems/).
 
 ## Simulate the program
 
@@ -144,6 +145,7 @@ Run your program with `az quantum execute --target-id ionq.simulator -o table`. 
    ```
 
 You should obtain the following output:
+
    ```output
    Result    Frequency
    --------  -----------  -------------------------
