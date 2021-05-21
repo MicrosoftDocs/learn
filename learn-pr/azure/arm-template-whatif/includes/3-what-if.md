@@ -99,12 +99,10 @@ When you use the what-if operation, it lists six types of changes:
 |-|-|-|
 | Create | The resource doesn't currently exist but is defined in the template. | The resource will be created. |
 | Delete | This change type applies only when you're using complete mode for deployment. The resource exists but isn't defined in the template. | If you deploy using incremental mode, the resource will not be deleted. If you deploy using complete mode, the resource will be deleted. Note that this change type is only return for resources that support deletion through complete mode. |
-| Ignore | The resource exists but isn't defined in the template. | The resource won't be deployed or modified. |
-| NoChange | The resource exists and is defined in the template. | The resource will be redeployed, but the properties of the resource won't change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default value. |
-| Modify | The resource exists and is defined in the template. | The resource will be redeployed, and the properties of the resource will change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default value. |
+| Ignore | The resource exists but isn't defined in the template. | The resource won't be deployed or modified. This happens when you use incremental mode, which is the default deployment mode. If you deploy using complete mode, the resource will be deleted. |
+| NoChange | The resource exists and is defined in the template. | The resource will be redeployed, but the properties of the resource won't change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
+| Modify | The resource exists and is defined in the template. | The resource will be redeployed, and the properties of the resource will change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
 | Deploy | The resource exists and is defined in the template. | The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when the result format is set to `ResourceIdOnly`. |
-
-<!-- TODO Will Ignore only be returned for incremental mode deployments? -->
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 

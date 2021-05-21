@@ -3,7 +3,7 @@ uid: learn.arm-template-whatif.2-deployment-modes
 title: Understand deployment modes
 metadata:
   title: Understand deployment modes
-  description: TODO
+  description: Learn about Azure's two deployment modes, incremental and complete.
   author: softchris
   ms.author: chnoring
   ms.date: 05/20/2021
