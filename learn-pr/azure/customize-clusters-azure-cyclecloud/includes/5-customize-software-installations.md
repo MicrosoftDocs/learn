@@ -57,6 +57,6 @@ To provision a cluster based on a project, you need to upload the project's cont
 
 ### How to use cloud-init with Azure CycleCloud?
 
-Azure CycleCloud supports cloud-init as a way of configuring a cluster nodes during the boot phase, before project-related specs are applied. This provides a convenient method to address any infrastructure or software-related dependencies, such as configuring network settings or applying operating system package updates. 
+Azure CycleCloud supports cloud-init as a way of configuring cluster nodes during the boot phase, before project-related specs are applied. This provides a convenient method to address any infrastructure or software-related dependencies, such as configuring network settings or applying operating system package updates. 
 
 While you can define cloud-init configuration by using a template, it's possible to accomplish this directly from the Azure CycleCloud graphical interface. When creating or editing a cluster, you'll find the relevant settings on the tab labeled **Cloud-Init**, where you can enter the scripts for each node type.
