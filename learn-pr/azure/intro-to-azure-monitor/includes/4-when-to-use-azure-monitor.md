@@ -6,14 +6,14 @@ Users can share reports with **Azure Monitor** workbooks and maintain operationa
 
 Users can investigate and perform triage using custom charts in Metrics Explorer and analyze logs with queries in **Azure Monitor Logs**.
 
-Users can be notified, take action and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
+Users can be notified, take action, and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
 
 Here, we'll discuss some examples of when you might want to use Azure Monitor to:
 * View data in Azure Monitor Metrics
 * Analyze logs in Azure Monitor Logs
 
 ## Decision criteria
-Azure Monitor Metrics allows you to view time-series data in near real-time and retains data for up to 3 months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you would use a Log Analytics Workspace to store the recorded data.
+Azure Monitor Metrics allows you to view time-series data in near real-time and retains data for up to three months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you would use a Log Analytics Workspace to store the recorded data.
 
 Let's look at some of the different mechanisms for monitoring and viewing your Azure resources.
 
