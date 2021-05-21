@@ -17,7 +17,7 @@ With the lower threshold set to 0, creating a cluster will result in provisionin
 The two primary components that implement integration with Azure CycleCloud autoscaling are Azure CycleCloud Autoscale Library and Demand Calculator.
 
 :::image type="content" source="../media/u2-cyclecloud-architecture.png" alt-text="A depiction of the high-level architecture of Azure CycleCloud." border="false":::
-<!--ID/SME: I'm not sure what the intended meaning is for the next sentence so please check that the edit makes sense.-->
+
 The Azure CycleCloud Autoscale library is an open-source, GitHub-hosted project that allows Python helpers to simplify development of autoscaling for any scheduler deployed to Azure. The helpers use Azure CycleCloud REST API to orchestrate provisioning of Azure resources. The project uses a Python 3 and has many Python dependencies. But its core functionality relies on the Azure CycleCloud Python Client Library. Autoscale integrates with the scheduler head nodes that monitor job queues. Autoscale increases or decreases the number of compute nodes by interacting with the autoscale REST API that's running on the Azure CycleCloud application server.
 
 Demand Calculator is responsible for evaluating resource requirements based on the compute node and job data collected by the scheduler. This evaluation considers compute and network constraints, such as the maximum cluster size or InfiniBand-related limits. The resulting resource requirements translate into a request for provisioning or deprovisioning of Azure VMs of a particular size and configuration. Autoscale Library relays these requests to the Azure CycleCloud REST API, which then delivers them through its orchestrator to ARM.
