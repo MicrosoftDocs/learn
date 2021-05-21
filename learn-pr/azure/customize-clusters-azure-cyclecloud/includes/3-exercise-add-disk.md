@@ -111,7 +111,7 @@ Next, you will configure a sample Azure CycleCloud Slurm project. You will lever
 
 ## Implement a custom Azure CycleCloud template
 
-Now, you will download and modify the sample Azure CycleCloud template compatible with the fetched GitHub-based project. You will use it to define a custom storage configuration that includes an extra disk attached to the scheduler node and exported via network file system (NFS). Following this modification, you will import it into your Azure CycleCloud application.
+Now, you'll download and modify the sample Azure CycleCloud template compatible with the fetched GitHub-based project. You'll use it to define a custom storage configuration that includes an extra disk attached to the scheduler node and exported via network file system (NFS). Following this modification, you'll import it into your Azure CycleCloud application.
 
 > [!NOTE]
 > You can examine the content of the template via a web browser by navigating to [the Azure/cyclecloud-slurm repository](https://github.com/Azure/cyclecloud-slurm/blob/2.4.1/templates/slurm.txt)
@@ -160,7 +160,7 @@ Now, you will download and modify the sample Azure CycleCloud template compatibl
     ```
 
     > [!NOTE]
-    > If you are using a Windows computer, you can paste the content of Clipboard by using the **Shift+Insert** key combination.
+    > If you're using a Windows computer, you can paste the content of Clipboard by using the **Shift+Insert** key combination.
 
     > [!NOTE]
     > Your changes define two 128 GB Premium storage disks in a stripe-based volume that will be automatically mounted onto the head node during its provisioning. The volume will use the /mnt/exports/ mountpoint and will be automatically formatted as the ext4 filesystem. The `Persistent = true` setting indicates that the disks will persist when you terminate the cluster, although they will be automatically deleted if you delete the cluster.
