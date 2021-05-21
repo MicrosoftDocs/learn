@@ -1,6 +1,6 @@
 Azure CycleCloud relies on templates to define cluster configurations. Its default implementation includes built-in templates for the most common schedulers, but you can find a number of others in the Azure CycleCloud GitHub repository.
 
-Recall that you wanted to test the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you will leverage the Azure CycleCloud GitHub repository hosting [the Microsoft curated Slurm project](https://github.com/Azure/cyclecloud-slurm). You will modify an existing cluster template from this repository by changing the storage configuration of the scheduler node, import the newly modified template into your Azure CycleCloud application, use the application's graphical interface to create a cluster, and finally validate the storage configuration change.
+Recall that you wanted to test the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you'll leverage the Azure CycleCloud GitHub repository hosting [the Microsoft curated Slurm project](https://github.com/Azure/cyclecloud-slurm). You'll modify an existing cluster template from this repository by changing the storage configuration of the scheduler node, import the newly modified template into your Azure CycleCloud application, use the application's graphical interface to create a cluster, and finally validate the storage configuration change.
 
 > [!IMPORTANT]
 > To complete exercises in this module, you have to satisfy the following prerequisites:
@@ -21,11 +21,11 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 > - [Standard quota: Increase limits by VM series](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests)
 
 > [!NOTE]
-> You will need the private key in order to connect directly to the cluster nodes in the last exercise of this module.
+> You'll need the private key in order to connect directly to the cluster nodes in the last exercise of this module.
 
 ## Install and configure Azure CycleCloud CLI
 
-The majority of management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you will start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you will use Azure Cloud Shell. 
+The majority of management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell. 
 
 1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you will be using in this module.
 
