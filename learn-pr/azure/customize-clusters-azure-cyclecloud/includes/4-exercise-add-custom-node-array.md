@@ -2,7 +2,7 @@ A nodearray is a collection of identically configured nodes of an Azure CycleClo
 
 Partitions group nodes into logical and potentially overlapping sets. Their purpose is to optimize processing of jobs, by accounting for their specific constraints such as resource or time limits. The scheduler allocates jobs to nodes within a partition until their resources are exhausted or all jobs are processed.
 
-You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this objective, you decide to apply additional changes to the underlying template and validate your approach. 
+You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this objective, you decide to apply more changes to the underlying template and validate your approach. 
 
 ## Add a nodearray definition to the Azure CycleCloud template
 
@@ -53,7 +53,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 ## Add graphical interface parameters to the Azure CycleCloud template
 
-To provide the ability to modify the values of template parameters via the Azure CycleCloud graphical interface, you'll apply additional changes to the template. 
+To provide the ability to modify the values of template parameters via the Azure CycleCloud graphical interface, you'll apply more changes to the template. 
 
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
 
@@ -181,4 +181,4 @@ To conclude this exercise, you'll import the modified template and its parameter
 
 :::image type="content" source="../media/u4-cyclecloud-cluster-edit-required-settings.png" alt-text="The screenshot depicts the Required Settings page of the Edit contoso-custom-slurm-lab-cluster pop-up window." border="false":::
 
-Congratulations! You successfully completed the second exercise of this module. In this exercise, you further customized your Azure CycleCloud cluster by using a modified template including the definition of a new nodearray with the corresponding partition. To accomplish this, after editing the template, you exported and edited the cluster parameters file and imported it, along with the modified template into the cluster. 
+Congratulations! You successfully completed the second exercise of this module. In this exercise, you further customized your Azure CycleCloud cluster by using a modified template including the definition of a new nodearray with the corresponding partition. To accomplish this goal, after editing the template, you exported and edited the cluster parameters file and imported it, along with the modified template into the cluster. 
