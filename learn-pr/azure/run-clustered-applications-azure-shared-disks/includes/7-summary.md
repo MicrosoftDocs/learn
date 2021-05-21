@@ -6,7 +6,7 @@ You'll benefit from shared access to high-performance, durable block storage wit
 
 To learn more, refer to the following articles:
 
-- [Create an FCI with Azure shared disks - SQL Server on Azure VM](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012)
+- [Create an FCI with Azure shared disks - SQL Server on Azure VM](https://review.docs.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012)
 - [Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a cluster shared disk in Azure](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-shared-disk)
 - [Enabled shared disk](https://docs.microsoft.com/azure/virtual-machines/disks-shared-enable?tabs=azure-cli)
 - [Share an Azure managed disk](https://docs.microsoft.com/azure/virtual-machines/disks-shared)
