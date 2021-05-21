@@ -10,7 +10,7 @@ The ARM Template logic has been integrated into a Connection Prefab that drives 
 
 ## Download the Visual Studio solution and the ARM template
 
-[Download the repository from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) and unzip the repository  
+[Download the repository from GitHub](https://aka.ms/mr-adt-mslearn) and unzip the repository  
 
 ## Log in to Azure using Azure CLI
 

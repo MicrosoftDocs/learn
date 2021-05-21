@@ -2,7 +2,7 @@ Unity Prefabs let you to create, configure, and store a GameObject as a reusable
 
 ## Open the MainScene scene
 
-1. [Download and Unzip the compressed folder from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) and take note of the folder location to where you extracted the project
+1. [Download and Unzip the compressed folder from GitHub](https://aka.ms/mr-adt-mslearn) and take note of the folder location to where you extracted the project
 2. In the **Project** panel, select **Assets > Scenes > MainScene**. Any **Save** actions will overwrite the original **MainScene**, which is the intent of this learning path. 
 
     :::image type="content" source="../media/main-scene.png" alt-text="Screenshot of the Unity editor with the one underscore build 3d scene loaded.":::
