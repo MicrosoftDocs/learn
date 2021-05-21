@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.arm-template-test
+uid: learn.arm-template-whatif
 metadata:
   description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
   ms.date: 10/12/2020
@@ -32,14 +32,14 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
-  - learn.arm-template-test.1-introduction
-  - learn.arm-template-test.2-what-if
-  - learn.arm-template-test.3-exercise-what-if
-  - learn.arm-template-test.4-test-toolkit
-  - learn.arm-template-test.5-exercise-test-toolkit
-  - learn.arm-template-test.6-custom-tests
-  - learn.arm-template-test.7-exercise-custom-tests
-  - learn.arm-template-test.8-knowledge-check
-  - learn.arm-template-test.9-summary
+  - learn.arm-template-whatif.1-introduction
+  - learn.arm-template-whatif.2-what-if
+  - learn.arm-template-whatif.3-exercise-what-if
+  - learn.arm-template-whatif.4-test-toolkit
+  - learn.arm-template-whatif.5-exercise-test-toolkit
+  - learn.arm-template-whatif.6-custom-tests
+  - learn.arm-template-whatif.7-exercise-custom-tests
+  - learn.arm-template-whatif.8-knowledge-check
+  - learn.arm-template-whatif.9-summary
 badge:
-  uid: learn.arm-template-test.badge
+  uid: learn.arm-template-whatif.badge

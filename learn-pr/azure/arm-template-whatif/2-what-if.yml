@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-template-test.2-what-if
+uid: learn.arm-template-whatif.2-what-if
 title: Predict what a deployment will do by using what-if
 metadata:
   title: Using what-if to validate your ARM template deployments
