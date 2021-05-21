@@ -42,9 +42,6 @@ You can still use the existing agents in lieu of the Azure Monitor agent. These 
 | Dependency agent | Collects discovered data about processes running on the machine and external process dependencies. |
 | Virtual machine extensions | The Log Analytics extension for Windows and Linux install the Log Analytics agent on Azure virtual machines. The Azure Monitor Dependency extension for Windows and Linux install the Dependency agent on Azure virtual machines. These are the same agents described above but allow you to manage them through virtual machine extensions. You should use extensions to install and manage the agents whenever possible. |
 
-> [!TIP]
-> For more detailed information on agents, visit the [Azure Monitor agents section](azure/azure-monitor/agents/agents-overview) on the Microsoft documentation site.
-
 ## Azure Monitor logs
 Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources. Data can come from various sources such as:
 
@@ -52,7 +49,7 @@ Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log
 * virtual machine agents
 * application usage and performance data
 
-All of this data can be consolidated into a workspace for analysis. The workspace that is referred to here, is a [Log Analytics workspace](azure/azure-monitor/logs/design-logs-deployment). You must configure this workspace initially and then configure the different sources to send their data to the workspace. Unlike metrics, this data is not automatically collected.
+All of this data can be consolidated into a workspace for analysis. The workspace that is referred to here, is a Log Analytics workspace. You must configure this workspace initially and then configure the different sources to send their data to the workspace. Unlike metrics, this data is not automatically collected.
 
 Once you have the workspace configured and data is being logged, it can be analyzed together using a sophisticated query language that's capable of quickly analyzing millions of records. You may perform a simple query that just retrieves a specific set of records or perform sophisticated data analysis to identify critical patterns in your monitoring data. Work with log queries and their results interactively using Log Analytics, use them in an alert rules to be proactively notified of issues, or visualize their results in a workbook or dashboard.
 
