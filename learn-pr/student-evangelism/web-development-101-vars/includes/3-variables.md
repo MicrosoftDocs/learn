@@ -83,7 +83,7 @@ Constants are similar to variables, with two exceptions:
 - **Must have a value**. Constants must be initialized, or an error will occur when running code.
 - **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
    - **Simple value**. The following code syntax is NOT allowed:
-   
+
       ```javascript
       const PI = 3;
       PI = 4; // not allowed
@@ -96,7 +96,7 @@ Constants are similar to variables, with two exceptions:
       obj = { b: 5 } // not allowed
       ```
 
-    - **Object value is not protected**. The following syntax IS allowed:
+   - **Object value is not protected**. The following syntax IS allowed:
     
       ```javascript
       const obj = { a: 3 };
