@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
-title: Exercise - Denormalizing aggregates and transactions
+title: Exercise - Denormalizing aggregates
 metadata: 
-  title: Exercise - Denormalizing aggregates and transactions
-  description: Denormalizing aggregates and transactions
+  title: Exercise - Denormalizing aggregates
+  description: Denormalizing aggregates
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 

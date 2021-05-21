@@ -14,25 +14,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which characteristics must entities share that make them good candidates to store in the same container?"
+  - content: "Which characteristics must entities share that makes them good candidates to store in the same container?"
     choices: 
     - content: "Same partition key"
       isCorrect: false
-      explanation: "Explain why this is correct or incorrect."
+      explanation: "Incorrect. Entities should both share the same partition key and also have similar access patterns."
     - content: "Similar access patterns"
       isCorrect: false
-      explanation: "Explain why this is correct or incorrect."
-    - content: "Same schema"
+      explanation: "Incorrect. Entities should both have similar access patterns and share the same partition key."
+    - content: "Share the same partition key and have similar access patterns"
       isCorrect: true
-      explanation: "Explain why this is correct or incorrect."
+      explanation: "Correct! Entities should both share the same partition key and also have similar access patterns."
+    - content: "Same schema"
+      isCorrect: false
+      explanation: "Incorrect. Entities should both share the same partition key and also have similar access patterns."
   - content: "When mixing entities into the same container, what is required to distinguish the different entities when querying them?"
     choices: 
-    - content: "A different id"
+    - content: "A different ID"
       isCorrect: false
-      explanation: "Explain why this is correct or incorrect.."
+      explanation: "Incorrect. A discriminator property is required to differentiate entities within a query."
     - content: "It is not possible. You have to look at the query results."
-      isCorrect: true
-      explanation: "Explain why this is correct or incorrect."
-    - content: "A type property with a static value per entity."
       isCorrect: false
+      explanation: "Incorrect. A discriminator property is required to differentiate entities within a query."
+    - content: "A discriminator property with a static value per entity."
+      isCorrect: true
       explanation: "Explain why this is correct or incorrect."

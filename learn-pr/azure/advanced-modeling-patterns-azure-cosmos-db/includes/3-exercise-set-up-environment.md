@@ -1,6 +1,4 @@
 
-# Compare relational versus NoSQL queries
-
 In this exercise we are going to compare the difference between storing and accessing data in a relational model where data is stored in individual containers versus NoSQL where the data is denormalized and stored in a single container.
 
 The data returned is typical for a web page returned to a user who clicks on a product category and will include the name of the category, all the products for that category, and all of the product tags for each of the products.
@@ -35,11 +33,11 @@ dotnet run --load-data
 
 1. Looking at the results we can see this query returns the name of the product category, *Component, Headsets*, which will be displayed on the page returned to the user.
 
-    :::image type="content" source="../media/3-product-category-results.png" alt-text="product category results":::
+    :::image type="content" source="../media/3-product-category-results.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product category container":::
 
 1. Next click on **Query Stats** and note the request charge of 2.93 RUs.
 
-    :::image type="content" source="../media/3-product-category-stats.png" alt-text="product category stats":::
+    :::image type="content" source="../media/3-product-category-stats.png" alt-text="Query stats for the query we just ran in Data Explorer":::
 
 ## Querying for the products in the category
 
@@ -56,7 +54,7 @@ Next we will query the product container to get all of the products for the *Com
 1. Looking at the results we see there are three products returned, *HL Headset*, *LL Headset*, and *ML Headset*. Each product has a sku, name, price and an array of product tags.
 1. Next click on **Query Stats** and note the request charge of 2.9 RUs.
 
-    :::image type="content" source="../media/3-product-results.png" alt-text="product results":::
+    :::image type="content" source="../media/3-product-results.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product container":::
 
 ## Querying for each product's tags
 
@@ -73,7 +71,7 @@ Next we will query the productTag container three times for each of the three pr
 1. This query returns the two tags for the *HL Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.06 RUs.
 
-    :::image type="content" source="../media/3-product-tag-hl-stats.png" alt-text="product tags hl headsets":::
+    :::image type="content" source="../media/3-product-tag-hl-stats.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product tag container for hl headsets query stats":::
 
 Next we will query for the tags for *LL Headset*.
 
@@ -88,7 +86,7 @@ Next we will query for the tags for *LL Headset*.
 1. This query returns the two tags for the *LL Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.47 RUs.
 
-    :::image type="content" source="../media/3-product-tag-ll-stats.png" alt-text="product tag ll stats":::
+    :::image type="content" source="../media/3-product-tag-ll-stats.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product tag container for ll query stats":::
 
 Last we will query for the tags for *ML Headset*.
 
@@ -103,7 +101,7 @@ Last we will query for the tags for *ML Headset*.
 1. This query returns the two tags for the *ML Headset* product.
 1. Next click on **Query Stats** and note the request charge of 3.2 RUs.
 
-    :::image type="content" source="../media/3-product-tag-ml-stats.png" alt-text="product tags ml stats":::
+    :::image type="content" source="../media/3-product-tag-ml-stats.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product tag container for ml query stats":::
 
 ## Adding up RU/s charges
 
@@ -133,7 +131,7 @@ Now we're going to query for the same information but in our denormalized databa
 
 1. The results will look something like the following image.
 
-    :::image type="content" source="../media/3-product-query-v2.png" alt-text="product query in exercise":::
+    :::image type="content" source="../media/3-product-query-v2.png" alt-text="Cosmos DB Data Explorer showing the results of our query to the product container in our newly modeled product container":::
 
 1. Note the data returned in this query. It contains all of the information needed to render the products for this category including the category name and tag names for each of the three products.
 1. Next click on **Query Stats** and note the request charge of 2.9 RUs versus the 15.56 RUs for the five queries we ran earlier.
