@@ -6,7 +6,7 @@ metadata:
   description: The test toolkit comes with a set of tests that it runs each time it's invoked. But you might want to apply organization-specific tests to your templates, by authoring custom tests that the test toolkit can also run.
   author: softchris
   ms.author: chnoring
-  ms.date: 10/12/2020
+  ms.date: 05/21/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

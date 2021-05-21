@@ -6,7 +6,7 @@ metadata:
   description: It's important to apply some reasonable practices to your templates before trying to deploy them.
   author: softchris
   ms.author: chnoring
-  ms.date: 10/12/2020
+  ms.date: 05/21/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
