@@ -7,3 +7,5 @@ Azure Resource Manager supports using *deployment modes*. There are two deployme
    > When you run the command in complete mode, whatever resources you have will be removed if they're not mentioned in the template file.
 
 <!-- TODO in Bicep, being 'mentioned' isn't enough - e.g. `existing` doesn't result in a tracked resource -->
+
+TODO mention that not all resources will be deleted through complete mode
