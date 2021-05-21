@@ -54,7 +54,7 @@ quiz:
       explanation: |
         Management groups are a tenant-scoped resource.
         You can use Bicep files that have a `targetScope` other than `tenant`, but you'll need to explicitly set the `scope` to `tenant()`.
-    - content: Management groups must be deployed at the `tenant` scope.
+    - content: Management groups must be deployed to the `tenant` scope.
       isCorrect: true
       explanation: |
         Management groups are a tenant-scoped resource.

@@ -1,4 +1,4 @@
-Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other Azure resources need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of Azure itself. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed at different scopes.
+Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other Azure resources need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of Azure itself. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed to different scopes.
 
 ## Azure's resource hierarchy
 
@@ -8,7 +8,7 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="icon" source="../media/callout-01.png"::: Your **tenant** corresponds to your Azure Active Directory instance. Typically an organization only has one Azure AD instance. This acts as the root of the resource hierarchy.
 
-:::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups underneath it. You might create different management groups for different parts of your organization, or for subscriptions that need to have different types of management. You can apply policy and access control restrictions to management groups, and these are inherited by all subscriptions below that management group in the hierarchy.
+:::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups underneath it. You might create different management groups for different parts of your organization, or for subscriptions that have different security or governance requirements. You can apply policy and access control restrictions to management groups, and these are inherited by all subscriptions below that management group in the hierarchy.
 
 :::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as billing accounts, and contain resource groups and resources.
 
@@ -21,9 +21,9 @@ The example illustrated above is a fairly basic scenario showing how management 
 Whichever model you follow, by understanding the different levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. Bicep enables you to manage these controls with all the benefits of infrastructure as code.
 
 > [!NOTE]
-> *Extension resources* are resources that are deployed to the scope of another Azure resource. For example, a resource lock is deployed onto a resource like a storage account.
+> There are also some other resources that are deployed to specific scopes. *Extension resources* are deployed to the scope of another Azure resource. For example, a resource lock is an extension resource, which is deployed onto a resource like a storage account.
 
-Let's look at some examples where you might deploy resources to each of these levels. You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
+You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
 
 ## Subscription-scoped resources
 
@@ -40,7 +40,7 @@ You might deploy to a management group when:
 - You need to grant access to all of the resources within any subscriptions that are within the management group hierarchy. For example, your cloud operations team might need to have access to every subscription in your organization. You can create a role assignment at your root management group, which grants your cloud operations team access to everything in Azure.
 
   > [!CAUTION]
-  > Be extremely careful when you grant access to resources using management groups, and especially the root management group. Remember that every resource underneath the management group in the hierarchy will inherit the role assignment. Make sure your organization follows best practices regarding identity management and authentication, and don't grant access that isn't required.
+  > Be extremely careful when you grant access to resources using management groups, and especially the root management group. Remember that every resource underneath the management group in the hierarchy will inherit the role assignment. Make sure your organization follows best practices regarding identity management and authentication, and follow the principle of least privilege - don't grant access that isn't required.
 
 - You need to apply policies across your entire organization. For example, your organization might have a policy that resources cannot be created in certain geographic regions, under any circumstances. You might apply a policy to your root management group that will block creation of resources in that region.
 
@@ -56,7 +56,7 @@ You might deploy to your tenant when:
   > [!NOTE]
   > Not all Azure customers can create subscriptions using infrastructure as code. [Depending on your billing relationship with Microsoft, this might not be possible.](/azure/cost-management-billing/manage/programmatically-create-subscription)
 
-- You're creating or configuring management groups. A single root management group is created by Azure when you enable management groups for your tenant, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
+- You're creating or configuring management groups. A single root management group is created by Azure when you enable management groups for your tenant, and you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
 Tenant-scoped deployments [require special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access).
 
@@ -82,7 +82,7 @@ Subscriptions themselves have their own IDs, like this:
 ```
 
 > [!NOTE]
-> Even though subscriptions are considered to be children of management groups, their resource IDs don't include a management group ID. The relationship between subscriptions and management groups is tracked by Azure in a different way to other resource relationships. This gives you the flexibility to move subscriptions between management groups without all of the resource IDs changing.
+> Even though subscriptions are considered children of management groups, their resource IDs don't include a management group ID. The relationship between subscriptions and management groups is tracked by Azure in a different way to other resource relationships. This gives you the flexibility to move subscriptions between management groups without all of the resource IDs changing.
 
 When you're working with resources at a management group or tenant scope, resource IDs can look a bit different than normal. They mostly follow the standard pattern of interleaving the resource type with the information about your specific resources. However, the specific format depends on the resource you're working with.
 

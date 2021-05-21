@@ -64,7 +64,7 @@ In a real deployment, you'd [move the R&D team's subscriptions into the manageme
 
    :::code language="bicep" source="code/7-template.bicep" range="1" :::
 
-   Note that this line of code tells Bicep that your template is going to be deployed at a management group scope.
+   Note that this line of code tells Bicep that your template is going to be deployed to a management group scope.
 
 ## Add a policy definition
 

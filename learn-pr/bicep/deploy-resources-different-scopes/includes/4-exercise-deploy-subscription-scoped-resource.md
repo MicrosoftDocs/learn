@@ -6,7 +6,7 @@ Project Teddybear is in full swing and the R&D team is waiting for you to give t
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template to be deployed at a subscription scope.
+> * Create a Bicep template to be deployed to a subscription scope.
 > * Add an Azure Policy definition and assignment.
 > * Deploy the template and verify the result.
 
@@ -22,13 +22,13 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="1" :::
 
-   This line of code tells Bicep that your template is going to be deployed at a subscription scope.
+   This line of code tells Bicep that your template is going to be deployed to a subscription scope.
 
 ## Add a policy definition
 
-1. Underneath the line you just added, add the following variable definitions:
+1. Underneath the line you just added, add the following variable definition:
 
-   :::code language="bicep" source="code/4-template.bicep" range="3-4" :::
+   :::code language="bicep" source="code/4-template.bicep" range="3" :::
 
 1. At the bottom of the file, add the following Azure Policy definition:
 
@@ -47,11 +47,15 @@ During the process, you'll:
 
 A policy definition doesn't do anything until it's applied. In this step, you deploy a second subscription-scoped resource that applies the policy definition to the subscription.
 
-1. Under the policy definition that you just added, add the following policy assignment:
+1. Underneath the `policyDefinitionName` variable definition, add the following variable definition:
+
+   :::code language="bicep" source="code/4-template.bicep" range="4" :::
+
+1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 
    :::code language="bicep" source="code/4-template.bicep" range="40-45" :::
 
-   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed at the subscription scope.
+   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed to the subscription scope.
 
 1. Save the changes to the file.
 
