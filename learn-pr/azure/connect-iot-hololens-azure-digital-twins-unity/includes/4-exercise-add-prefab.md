@@ -6,15 +6,11 @@ Now that you know a little more about the basics of using telemetry data and wha
 4. Find your Bing Maps developer key. If you don't have one, you can sign up for one here: [Create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).
 5. Select the **Bing Maps** game object from the **Hierarchy**, then enter your Developer Key and apply the following configurations to the **Map Renderer** component:
 
-    **Location**
-
     | Property | Value |
     |---|---|
     | Latitude | 36.69 |
     | Longitude | -78.36 |
     | Zoom Level | 15.5 |
-
-    **Map Layout**
 
     | Property | Value |
     |---|---|
