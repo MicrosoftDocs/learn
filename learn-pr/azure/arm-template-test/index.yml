@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
+  title: Validate Azure resources by using the ARM template test toolkit
   description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
   ms.date: 10/12/2020
   author: softchris

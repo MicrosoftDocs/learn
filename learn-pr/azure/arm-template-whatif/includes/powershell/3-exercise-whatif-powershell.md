@@ -4,7 +4,7 @@ Here you'll deploy an ARM template by using PowerShell and the Az module. After 
 
 Before you install the required PowerShell module, make sure you have PowerShell Core (6.x or 7.x).
 
-- **Upgrade to or install latest PowerShell version**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.4.0) You can't install the required module on Windows PowerShell 5.x or earlier.
+- **Upgrade to or install latest PowerShell version**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](/powershell/azure/install-az-ps?azure-portal=true) You can't install the required module on Windows PowerShell 5.x or earlier.
 
 - **Install the Az module**. To use what-if in PowerShell, you must have version 4.2 or later of the Az module.
 
