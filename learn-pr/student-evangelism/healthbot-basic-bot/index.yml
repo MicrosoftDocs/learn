@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.healthbot-basic-bot
+metadata:
+  title: Introduction and Basic Healthcare Bot 
+  description: This module will contain the introduction to the custom scenario and also will walk through the contents of the module briefly.
+  ms.date: 06/04/2020
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction and Basic Healthcare Bot 
+summary: This was a basic informative bot without any interrupting or breaking scenario involved. The upcoming module will show the user to enhance the bot with much more advanced Functionalities!
+abstract: |
+  In this module you will:
+  - Understand what Custom scenarios are 
+  - Build a Health Bot using Custom scenarios 
+  - Learn how to deploy a basic project using the Azure Health Bot service. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: Introduction to the HealthBot Service
+units:
+  - learn.healthbot-basic-bot.1-introduction
+  - learn.healthbot-basic-bot.2-get-started-with-custom-scenario
+  - learn.healthbot-basic-bot.3-build-the-basic-bot
+  - learn.healthbot-basic-bot.4-bonus-conversational-elements
+  - learn.healthbot-basic-bot.5-knowledge-check
+  - learn.healthbot-basic-bot.6-summary
+badge:
+  uid: learn.healthbot-basic-bot.badge
