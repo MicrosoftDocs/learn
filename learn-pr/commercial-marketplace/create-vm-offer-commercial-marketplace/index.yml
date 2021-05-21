@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.create-vm-offer-commercial-marketplace
+metadata:
+  title: Create a VM offer for the commercial marketplace
+  description: This module provides a high-level overview of VM offers in the commercial marketplace
+  ms.date: 05/20/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a VM offer for the commercial marketplace
+summary: This module provides a high-level overview of VM offers in the commercial marketplace
+abstract: |
+  In this module, you will:
+  - Develop a basic understanding of how VM-based applications are sold through Azure Marketplace
+  - Explore the benefits of VM offers in Azure Marketplace
+  - Learn the key technical components of a VM offer
+  - Learn how to publish a VM offer in Partner Center
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+prerequisites: |
+  - None
+roles:
+- business-user
+- business-owner
+- technology-manager
+- administrator
+products:
+- azure
+units:
+- learn.create-vm-offer-commercial-marketplace.1-introduction
+- learn.create-vm-offer-commercial-marketplace.2-what-is-vm-offer
+- learn.create-vm-offer-commercial-marketplace.3-get-ready-create-vm-offer
+- learn.create-vm-offer-commercial-marketplace.4-vm-offer-technical-configuration
+- learn.create-vm-offer-commercial-marketplace.5-publish-vm-offer-partner-center
+- learn.create-vm-offer-commercial-marketplace.6-knowledge-check
+- learn.create-vm-offer-commercial-marketplace.7-summary
+badge:
+  uid: learn.create-vm-offer-commercial-marketplace.badge

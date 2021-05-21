@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.create-vm-offer-commercial-marketplace.6-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Review of commercial marketplace VM offer concepts
+  ms.date: 05/20/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'TODO'
+    choices:
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: true
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+  - content: 'TODO'
+    choices:
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: false
+      explanation: 'TODO'
+    - content: 'TODO'
+      isCorrect: true
+      explanation: 'TODO'
+ 
