@@ -1,10 +1,10 @@
 Azure CycleCloud templates facilitate setup of HPC clusters by abstracting implementation details of the underlying infrastructure, allowing you to focus on workload management. However, that workload typically has a number of software-related dependencies, which require additional customization steps. Fortunately, Azure CycleCloud also provides a framework for implementing these steps through its support for provisioning and configuration management tasks applied directly to cluster nodes. 
 
-Your objectives include the need for deploying custom images and using in-house developed configuration scripts you've been using in your on-premises HPC environment. You want to determine how you can leverage the Azure CycleCloud capabilities to accomplish these objectives.
+Your goals include the need for deploying custom images and using in-house developed configuration scripts you've been using in your on-premises HPC environment. You want to determine how you can leverage the Azure CycleCloud capabilities to accomplish these goals.
 
 ## How to implement configuration management with Azure CycleCloud?
 
-Azure CycleCloud offers three main methods that you can combine in an arbitrary manner in order to customize operating system and software on cluster nodes according to your own requirements or preferences:
+Azure CycleCloud offers three main methods that you can combine in an arbitrary manner to customize operating system and software on cluster nodes according to your own requirements or preferences:
 
 - custom images
 - projects
@@ -41,7 +41,7 @@ An Azure CycleCloud project is a collection of files that you reference when def
 
 The project.ini file contains the project's metadata, including its name, label, version, and type. The supported types include scheduler and application. The first of them is used to install and initialize scheduler daemons on head nodes and compute nodes, while the latter defines cluster workloads.
 
-The blobs directory contains project blobs, such as binary files for an open-source project that can be freely redistributed, and user blobs, which have to be excluded from the project redistribution due to licensing constraints.
+The blobs directory contains project blobs, such as binary files for an open-source project that can be freely redistributed, and user blobs, which have to be excluded from the project redistribution because of licensing constraints.
 
 The templates directory contains templates, while the specs directory hosts specifications defining configurations to be applied to target cluster nodes. 
 
@@ -53,10 +53,10 @@ Within the specs directory, there are two subdirectories named cluster-init and 
 > [!NOTE]
 > Azure CycleCloud uses Chef as the configuration management tool for preparing and configuring each node. CycleCloud utilizes Chef in a stand-alone mode that does not rely on a centralized Chef server. Instead, all cookbooks destined for the managed cluster nodes are downloaded from the locker during the operating system boot phase. At that point, Chef processes the list of recipes defined in the node's cluster-init specs, effectively converting the underlying VM into a working HPC node.
 
-To provision a cluster based on a project, you need to upload the project's content to an Azure CycleCloud locker. Subsequently, whenever the target node starts, it automatically downloads the required project files from the locker and processes the required specs.
+To provision a cluster based on a project, you need to upload the project's content to an Azure CycleCloud locker. Then, whenever the target node starts, it automatically downloads the required project files from the locker and processes the required specs.
 
 ### How to use cloud-init with Azure CycleCloud?
 
 Azure CycleCloud supports cloud-init as a way of configuring a cluster nodes during the boot phase, before project-related specs are applied. This provides a convenient method to address any infrastructure or software-related dependencies, such as configuring network settings or applying operating system package updates. 
 
-While you can define cloud-init configuration by using a template, it is possible to accomplish this directly from the Azure CycleCloud graphical interface. When creating or editing a cluster, you'll find the relevant settings on the tab labeled **Cloud-Init**, where you can enter the scripts for each node type.
+While you can define cloud-init configuration by using a template, it's possible to accomplish this directly from the Azure CycleCloud graphical interface. When creating or editing a cluster, you'll find the relevant settings on the tab labeled **Cloud-Init**, where you can enter the scripts for each node type.
