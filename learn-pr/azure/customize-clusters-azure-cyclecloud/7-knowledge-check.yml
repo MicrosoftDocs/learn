@@ -42,14 +42,14 @@ quiz:
     choices:
     - content: "cyclecloud import_template"
       isCorrect: false
-      explanation: "This would allow you to import the template, but you'd still have to create the cluster before you can start it."
+      explanation: "This command allows you to import the template, but you still have to create the cluster before you can start it."
     - content: "cyclecloud import_cluster"
       isCorrect: true
       explanation: "This commmand allows you to create a cluster without explicitly importing the template."
     - content: "cyclecloud create_cluster"
       isCorrect: false
-      explanation: "This requires that you first import the template."
-  - content: "You created an Azure CycleCloud cluster based on the GitHub Slurm repository and configured its nodes with a cloud-init script. You need to connect to a cluster node from an Azure Cloud Shell session to validate that the script run successfully. What authentication method should you use?"
+      explanation: "This command requires that you first import the template."
+  - content: "You created an Azure CycleCloud cluster based on the GitHub Slurm repository and configured its nodes with a cloud-init script. You need to connect to a cluster node from an Azure Cloud Shell session to validate that the script runs successfully. What authentication method should you use?"
     choices:
     - content: "Azure Active Directory"
       isCorrect: false
