@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-vars.4-exercise-variables
+title: Exercise variables
+metadata:
+  title: Exercise variables
+  description: In this exercise you will learn how you can use variables to model the state of a game.
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.date: 05/21/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+interactive: bash
+content: |
+  [!include[](includes/4-exercise-variables.md)]

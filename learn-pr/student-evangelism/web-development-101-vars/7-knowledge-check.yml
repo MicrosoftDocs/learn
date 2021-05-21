@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: "learn.web-development-101-vars.7-knowledgecheck"
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/03/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Constants are the same as let and var to declare variables except
+      choices:
+        - content: Constants can be altered
+          isCorrect: false
+          explanation: Incorrect- the reference of a constant cannot be changed once
+            initialized, or an error will occur when running code.
+        - content: Constants must be initialized
+          isCorrect: true
+          explanation: Correct- constants must be initialized, or an error will occur when
+            running code.
+        - content: Constants can be reassigned
+          isCorrect: false
+          explanation: Incorrect- a constant means the reference is protected from
+            reassignment. The value is not immutable though and can change,
+            especially if it's a complex construct like an object.
+    - content: Numbers and ____ are JavaScript primitives that handle numeric data
+      choices:
+        - content: bigint
+          isCorrect: true
+          explanation: Correct- bigint values can be used for arbitrarily large integers
+        - content: boolean
+          isCorrect: false
+          explanation: "Incorrect- boleans can be only two values: true or false."
+        - content: star
+          isCorrect: false
+          explanation: Incorrect- this is not a JavaScript primitive.
+    - content: Strings can reside between both single and double ______
+      choices:
+        - content: brackets
+          isCorrect: false
+          explanation: Incorrect- brackets are not used to create strings.
+        - content: quotes
+          isCorrect: true
+          explanation: Correct! Either single or double quotes can be used to make strings.
+        - content: backslashes
+          isCorrect: false
+          explanation: Incorrect- backslashes are used in JavaScript strings as an escape
+            character

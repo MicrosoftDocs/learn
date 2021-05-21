@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: "learn.web-development-101-vars.5-datatypes"
+metadata:
+  title: Data Types
+  description: Learn what types of data can be stored in JavaScript variables
+  ms.date: 05/03/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Same as above
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-data-types.md)]

@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: "learn.web-development-101-vars.2-overview"
+metadata:
+  title: Variables Overview
+  description: Learn about JavaScript variables and why use them to hold values.
+  ms.date: 05/03/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Same as above
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-data-types-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: In JavaScript, we can declare values with the keywords _______ or _______
+      choices:
+        - content: let or var
+          isCorrect: true
+          explanation: Correct! These are the keywords we need to create and declare
+            variables.
+        - content: get or script
+          isCorrect: false
+          explanation: Incorrect- these keywords would not allow you to create a variable.
+        - content: char or log
+          isCorrect: false
+          explanation: Incorrect- these keywords would not allow you to create a variable.
+    - content: The following operation can be performed on a string
+      choices:
+        - content: splicing
+          isCorrect: false
+          explanation: Incorrect- an array can be spliced in JavaScript, but not a string.
+        - content: concatenation
+          isCorrect: true
+          explanation: Correct! JavaScript has the ability to concatenate strings.
+        - content: appending
+          isCorrect: false
+          explanation: Incorrect- append will not successfully be able to performed on a
+            strong data type.
+    - content: Which of the following is not a data type?
+      choices:
+        - content: Numbers
+          isCorrect: false
+          explanation: Incorrect- variables can store all types of numbers, including
+            decimals or negative numbers.
+        - content: Files
+          isCorrect: true
+          explanation: Correct! While we may deal with files in our JavaScript code, they
+            are not considered a data type.
+        - content: Booleans
+          isCorrect: false
+          explanation: Incorrect- even though booleans can only be 2 values (true or
+            false), they are still considered a data type.
