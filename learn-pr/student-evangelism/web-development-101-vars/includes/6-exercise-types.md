@@ -1,4 +1,4 @@
-Your company is pleased with your earlier modeling of Texas Holdem and would like to see you continue to work on it's implementation. As you've now learned about more about data types, let's put that knowledge into use.
+Your company is pleased with your earlier modeling of Texas Holdem and would like to see you continue to work on its implementation. As you've now learned about more about data types, let's put that knowledge into use.
 
 ## Add data types
 
@@ -20,7 +20,7 @@ playerThreePoints +=75;
 
 You have certain aspects of the game represented as variables, but you are lacking some aspects such as knowing if the game has ended and wouldn't it be nice if the players had names?
 
-1. After the the three constants, add the following code:
+1. After the three constants, add the following code:
 
    ```javascript
    let playerOneName = "Chloe";
@@ -45,7 +45,7 @@ You have certain aspects of the game represented as variables, but you are lacki
 
 ## Adding an end condition
 
-A game of Texas Holdem can go on for many game rounds and usually finishes when one player has all the poker chips and the other other players have lost there. You need to add code to represent such a state. This situation is where you want to rely on operators and use a boolean data type.
+A game of Texas Holdem can go on for many game rounds and usually finishes when one player has all the poker chips and the other players have lost there. You need to add code to represent such a state. This situation is where you want to rely on operators and use a boolean data type.
 
 1. Add the following code at the top of the file:
 
@@ -99,7 +99,7 @@ To run the game, in the terminal type:
 node app.js
 ```
 
-You should see the following:
+You should see the following output in the terminal:
 
 ```output
 Welcome to Texas Hold Em. The championship title will be awarded to one of these three players: Chloe, Jasmine and Jen. Each player has 100 in their pot. We have an exciting game ahead of us, may the best player win

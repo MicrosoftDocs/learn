@@ -79,6 +79,6 @@ You can achieve your formatting goals with either method, but template literals 
 - `let myTrueBool = true`
 - `let myFalseBool = false`
 
-A variable can be considered 'truthy' if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as falsy](https://developer.mozilla.org/docs/Glossary/Truthy).
+A variable can be considered "truthy" if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as "falsy"](https://developer.mozilla.org/docs/Glossary/Truthy).
 
 [!TIP] Explore the gotchas of JavaScript! Remember, you can write JavaScript right in your browser, just open a browser window and navigate to Developer Tools. In the console, you will find a prompt. This code resolves to false `let age = 1`; `let Age = 2`; `age == Age`. Why do you think that is, and what other gotchas can you find?

@@ -4,7 +4,7 @@ As a newly hired game developer, you've been tasked with building recreational g
 
 You need to take what you know of Texas Holdem and create variables. In doing so, you need to think about _starter values_ and values that will change over time.
 
-You know the following about Texas Holdem, it can have players, starter cards, points (you are using that over many). There is more to it than that, but you need to start somewhere.
+You know the following information on how Texas Holdem works, it can have players, starter cards, points (you are using that over many). There is more to know of Texas Holdem works than we discussed so far, but you need to start somewhere.
 
 1. Create a file _app.js_
 
@@ -43,11 +43,11 @@ You know the following about Texas Holdem, it can have players, starter cards, p
    playerThreePoints +=75; 
    ```
  
-   What you have done right now is to simulate a game round in which the first and second player bet 50 and 25 points respectively. Because the third player has a better hand, they end up winning the game round and points are therefore take from the first and second player and added to the pot of the third player.
+   What you have done right now is to simulate a game round in which the first and second player bet 50 and 25 points respectively. Because the third player has a better hand, they end up winning the game round and points are therefore taken from the first and second player and added to the pot of the third player.
 
 ## Refactor to constants
 
-At this point you have some variables that represent parts of your Texas holdem game. Remember how you were taught a concept like constants, variables that shouldn't change it's value. Let's see what variables those might be in your source code.
+At this point, you have some variables that represent parts of your Texas holdem game. Remember how you were taught a concept like constants, variables that shouldn't change its value. Let's see what variables might lend themselves to be better represented as constants in your source code.
 
 > [!TIP]
 > Before you move on and see the solution, spend 1-2 minutes to think about what variables shouldn't change and what variables might having changing values. Then scroll down to see the solution.
@@ -68,7 +68,7 @@ At this point you have some variables that represent parts of your Texas holdem 
    const NO_OF_STARTER_CARDS = 2;
    ```
 
-   What you've done is to identify which variables are important for the game and describes how the game is played. A player's starting poker chips isn't going to change even if a specific players pot might change as they play. The number of players is something that be constant too, unless you imagine you rebuild the game in such a way that a player can join at any time. The number of starter cards is always 2 in Texas Holdem, that's the rules. The great part of all this is that you decide ultimately what should be changeable and what should be constant.
+   What you've done is to identify which variables are important for the game and describes how the game is played. A player's starting poker chips isn't going to change even if a specific players pot might change as they play. The number of players is something that is constant too, unless you imagine you rebuild the game in such a way that a player can join at any time. The number of starter cards is always 2 in Texas Holdem, that's the rules. The great part of all this is that you decide ultimately what should be changeable and what should be constant.
 
    > [!TIP]
    > A great way to reason about variables is to make all variables constant to begin with and reason with yourself if a variable needs changing. In that case change it from `const` to `let`.  

@@ -2,7 +2,7 @@ Using variables and data types, are essential to being able to writing code in J
 
 ## Variables
 
-The reason for using a variable is that you have a value that you would like to remember. By storing the value you are able to refer to it later on in your code.
+The reason for using a variable is that you have a value that you would like to remember. By storing the value, you are able to refer to it later on in your code.
 
 Creating and declaring a variable has the following syntax `[keyword] [name]`. Here's an example of declaration:
 
@@ -44,7 +44,7 @@ Initialization differs from assignment as you both declare the value and give it
 let myVariable = 123;
 ```
 
-The reason for wanting to use explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine for example you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, then you could declare it like so:
+The reason for wanting to use explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine, for example,  you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, then you could declare it like so:
 
 ```javascript
 let pokerChips = 100;
@@ -52,9 +52,9 @@ let pokerChips = 100;
 
 ### Changing variables
 
-Another reason for storing a value in avariable, other than being a _starter value_, is that you want to use it to temporarily store something. That something can be the sum of a calculation for example.
+Another reason for storing a value in a variable, other than being a _starter value_, is that you want to use it to temporarily store something. That something can be the sum of a calculation for example.
 
-To change the value, assign it a new value on the right hand side like so:
+To change the value, assign it a new value on the right-hand side like so:
 
 ```javascript
 myVariable = 321;
@@ -64,11 +64,11 @@ Above you see how assignment operator `=` is used and how a value is being _assi
 
 > [!TIP]: Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type let myVariable = 123, press return, then type myVariable. What happens? You'll learn more about these concepts in subsequent lessons.
 
-Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant for example like the value of PI for example. To address this need, JavaScript let's you create so called constants.
+Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant, for example,  like the value of PI for example. To address this need, JavaScript let's you create so called constants.
 
 ## Constants
 
-Declaration and initialization of a constant follows the same concepts as a variable, with the exception of the `const` keyword. Constants are typically declared with all uppercase letters.
+Declaration and initialization of a constant follows the same concepts as a variable, except for the `const` keyword. Constants are typically declared with all uppercase letters.
 
 ```javascript
 const MY_VARIABLE = 123;
@@ -81,21 +81,21 @@ Constants are similar to variables, with two exceptions:
 
 - **Must have a value**. Constants must be initialized, or an error will occur when running code.
 - **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
-   - **Simple value**. The following is NOT allowed:
+   - **Simple value**. The following code syntax is NOT allowed:
    
       ```javascript
       const PI = 3;
       PI = 4; // not allowed
       ```
  
-   - **Object reference is protected**. The following is NOT allowed.
+   - **Object reference is protected**. The following syntax is NOT allowed.
    
       ```javascript
       const obj = { a: 3 };
       obj = { b: 5 } // not allowed
       ```
 
-    - **Object value is not protected**. The following IS allowed:
+    - **Object value is not protected**. The following syntax IS allowed:
     
       ```javascript
       const obj = { a: 3 };
