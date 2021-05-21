@@ -173,8 +173,8 @@ To conclude this exercise, you'll import the modified template and its parameter
     > [!NOTE]
     > You must specify the name of the target cluster and the --force flag in order to overwrite configuration of the existing cluster.
 
-1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server). If prompted, confirm that you want to proceed.
-1. If prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
+1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server). If you're prompted, confirm that you want to proceed.
+1. If you're prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
 1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page, in the list of clusters, select the **contoso-custom-slurm-lab-cluster** entry, and select **Edit**.
 1. In the **Edit contoso-custom-slurm-lab-cluster** pop-up window, on the **About** page, select **Next**.
 1. On the **Required settings** page, verify the presence of the **CUDA VM Type** entry set to **Standard_NC6** value and the corresponding auto-scaling options:
