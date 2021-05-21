@@ -87,13 +87,7 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 
 ## Removal or deletion of resources and deployment modes
 
-There are times when you'll want to confirm the removal or deletion of resources as you deploy the template. To that end, the what-if operation supports using *deployment mode*. There are two deployment modes:
-
-- **Incremental mode**. The default deployment mode is incremental. In this mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are *added* to the resource group.
-- **Complete mode**. When you use this mode, resources not specified in the template are *deleted*. If you know for sure that what's in the template file constitutes the full state of your deployment, then go ahead and use this mode. If you use tools like the Azure CLI or PowerShell to update your state gradually, then incremental mode is the way to go.
-
-   > [!CAUTION]
-   > When you run the command in complete mode, whatever resources you have will be removed if they're not mentioned in the template file.
+There are times when you'll want to confirm the removal or deletion of resources as you deploy the template. To that end, the what-if operation TODO complete vs. incremental
 
 ### Confirmation
 

@@ -3,7 +3,7 @@ uid: learn.arm-template-whatif
 metadata:
   title: Preview Azure deployment changes by using what-if
   description: Apply the what-if command to see the impact of a deployment before it's applied. 
-  ms.date: 10/12/2020
+  ms.date: 05/20/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -32,9 +32,10 @@ prerequisites: |
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
   - learn.arm-template-whatif.1-introduction
-  - learn.arm-template-whatif.2-what-if
-  - learn.arm-template-whatif.3-exercise-what-if
-  - learn.arm-template-whatif.8-knowledge-check
-  - learn.arm-template-whatif.9-summary
+  - learn.arm-template-whatif.2-deployment-modes
+  - learn.arm-template-whatif.3-what-if
+  - learn.arm-template-whatif.4-exercise-what-if
+  - learn.arm-template-whatif.5-knowledge-check
+  - learn.arm-template-whatif.6-summary
 badge:
   uid: learn.arm-template-whatif.badge
