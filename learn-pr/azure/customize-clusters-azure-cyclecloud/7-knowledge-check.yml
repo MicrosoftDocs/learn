@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "cyclecloud import_template"
       isCorrect: false
-      explanation: "This command allows you to import the template, but you'd still have to create the cluster before you can start it."
+      explanation: "This command allows you to import the template, but you still have to create the cluster before you can start it."
     - content: "cyclecloud import_cluster"
       isCorrect: true
       explanation: "This command allows you to create a cluster without explicitly importing the template."
