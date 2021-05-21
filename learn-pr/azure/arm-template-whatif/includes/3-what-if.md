@@ -18,8 +18,8 @@ When you use the what-if operation, it lists six types of changes:
 
 - **Create**. The resource doesn't currently exist but is defined in the template. The resource will be created.
 - **Delete**. This change type applies only when you're using *complete mode* for deployment. The resource exists but isn't defined in the template. With complete mode, the resource will be deleted. This change type includes only resources that support deletion through complete mode.
-- **Ignore**. The resource exists but isn't defined in the template. The resource won't be deployed or modified.
-- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when **WhatIfResultFormat** is set to **FullResourcePayloads**, which is the default value.
+- **Ignore**. The resource exists but isn't defined in the template. The resource won't be deployed or modified. <!-- TODO Will Ignore only happen for incremental mode deployments? -->
+- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when **WhatIfResultFormat** is set to **FullResourcePayloads**, which is the default value. <!-- TODO What's a situation where NoChange would happen? -->
 - **Modify**. The resource exists and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when **WhatIfResultFormat** is set to **FullResourcePayloads**, which is the default value.
 - **Deploy**. The resource exists and is defined in the template. The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when **WhatIfResultFormat** is set to **ResourceIdOnly**.
 
