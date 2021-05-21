@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Entities should both share the same partition key and also have similar access patterns."
   - content: "When mixing entities into the same container, what is required to distinguish the different entities when querying them?"
     choices: 
-    - content: "A different id"
+    - content: "A different ID"
       isCorrect: false
       explanation: "Incorrect. A discriminator property is required to differentiate entities within a query."
     - content: "It is not possible. You have to look at the query results."

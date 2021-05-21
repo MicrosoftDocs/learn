@@ -133,7 +133,7 @@ The way we delete an order works exactly the same as the way we create an order 
 1. Next type **CTRL + G** then enter **549**.
 1. This function deletes the new sales order and updates the customer record.
 1. Here you can see the code first retrieve the customer record, then decrement `salesOrderCount` by 1.
-1. Next is the call to `CreateTransactionalBatch()`. Again the logical partition key value is passed in but this time `DeleteItem()` is called with the order id and `ReplaceItem()` is called with the updated customer record.
+1. Next is the call to `CreateTransactionalBatch()`. Again the logical partition key value is passed in but this time `DeleteItem()` is called with the order ID and `ReplaceItem()` is called with the updated customer record.
 
 ## View the code for our top 10 customers query
 
