@@ -60,13 +60,13 @@ quiz:
       explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
   - content: "What is the best way to combine metrics data into a single view for reporting?"
     choices:
-    - content: "Use Azure Dashboards."
+    - content: "Use Azure Dashboards or Azure Monitor workbooks."
       isCorrect: true
       explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
-    - content: "Pin your charts to the Azure Dashboard."
+    - content: "Send the monitoring data to Event Hubs."
       isCorrect: false
-      explanation: "Incorrect. The Azure Dashboard is not the same as the Azure Monitor Dashboard. When you pin charts to the Azure Dashboard, they remain as separate charts, rather than an aggregation of the data in a single view."
-    - content: "Set up a Log Analytics Workspace."
+      explanation: "Incorrect. Event Hubs can be used to stream the monitoring data to external tools, but it isn't the most optimal tool for aggregating metrics into a single view."
+    - content: "Setup a Log Analytics workspace."
       isCorrect: false
-      explanation: "Incorrect. A Log Analytics Workspace is required for the Log function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating visuals into a single view."
+      explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
   
