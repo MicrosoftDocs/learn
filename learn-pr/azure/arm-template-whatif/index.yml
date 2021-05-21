@@ -1,19 +1,17 @@
 ### YamlMime:Module
 uid: learn.arm-template-whatif
 metadata:
-  description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
+  description: Apply the what-if command to see the impact of a deployment before it's applied. 
   ms.date: 10/12/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Preview changes and validate Azure resources by using what-if and the ARM template test toolkit
-summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so. It also teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM template test toolkit.
+title: Preview Azure deployment changes by using what-if
+summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so.
 abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.
-  - Validate your template's adherence to recommendations by using the ARM template test toolkit.
-  - Implement domain-specific rules for deployments that you can run by using the ARM template test toolkit.
 iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate
@@ -35,10 +33,6 @@ units:
   - learn.arm-template-whatif.1-introduction
   - learn.arm-template-whatif.2-what-if
   - learn.arm-template-whatif.3-exercise-what-if
-  - learn.arm-template-whatif.4-test-toolkit
-  - learn.arm-template-whatif.5-exercise-test-toolkit
-  - learn.arm-template-whatif.6-custom-tests
-  - learn.arm-template-whatif.7-exercise-custom-tests
   - learn.arm-template-whatif.8-knowledge-check
   - learn.arm-template-whatif.9-summary
 badge:
