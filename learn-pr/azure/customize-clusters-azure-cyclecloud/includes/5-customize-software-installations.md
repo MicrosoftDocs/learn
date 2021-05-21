@@ -48,7 +48,7 @@ The templates directory contains templates, while the specs directory hosts spec
 > [!NOTE]
 > For example, a Slurm project contains, at minimum, two specs: one for the scheduler head nodes, and the other for the compute nodes.
 
-Within the specs directory, there are two subdirectories named cluster-init and custom chef. The first one contains scripts that run automatically on the target node, raw data files that are copied to the target node, and tests to be run when a cluster is started in the testing mode. The second one contains Chef-specific files, including cookbook- , databag- , and role-definition files. Chef cookbooks and recipes can be used for configuring nodes. Cluster-init specs maps to Chef roles and cookbooks. 
+Within the specs directory, there are two subdirectories named cluster-init and custom chef. The first one contains scripts that run automatically on the target node, raw data files that are copied to the target node, and tests to be run when a cluster is started in the testing mode. The second one contains Chef-specific files, including cookbook-, databag-, and role-definition files. Chef cookbooks and recipes can be used for configuring nodes. Cluster-init specs maps to Chef roles and cookbooks. 
 
 > [!NOTE]
 > Azure CycleCloud uses Chef as the configuration management tool for preparing and configuring each node. CycleCloud utilizes Chef in a stand-alone mode that does not rely on a centralized Chef server. Instead, all cookbooks destined for the managed cluster nodes are downloaded from the locker during the operating system boot phase. At that point, Chef processes the list of recipes defined in the node's cluster-init specs, effectively converting the underlying VM into a working HPC node.
