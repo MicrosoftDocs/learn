@@ -53,7 +53,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 ## Add graphical interface parameters to the Azure CycleCloud template
 
-To provide the ability to modify the values of template parameters via the Azure CycleCloud graphical interface, you will apply additional changes to the template. 
+To provide the ability to modify the values of template parameters via the Azure CycleCloud graphical interface, you'll apply additional changes to the template. 
 
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
 
@@ -111,7 +111,7 @@ To provide the ability to modify the values of template parameters via the Azure
 
 ## Export Azure CycleCloud cluster properties 
 
-Before applying the configuration changes you made in the Azure CycleCloud template to the target cluster, you will first need to export the cluster properties. 
+Before applying the configuration changes you made in the Azure CycleCloud template to the target cluster, you'll first need to export the cluster properties. 
 
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following command to list the existing clusters:
 
@@ -137,7 +137,7 @@ Before applying the configuration changes you made in the Azure CycleCloud templ
 
 ## Edit the properties file to include the new parameters
 
-While the edits you applied to the Azure CycleCloud template included default values for all newly introduced parameters, you might need to modify them to account for your specific requirements. In this task, you will set the values of the **CUDAMachineType** and **MaxCUDAExecuteCoreCount** parameters.
+While the edits you applied to the Azure CycleCloud template included default values for all newly introduced parameters, you might need to modify them to account for your specific requirements. In this task, you'll set the values of the **CUDAMachineType** and **MaxCUDAExecuteCoreCount** parameters.
 
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following command to open the downloaded parameters file in the nano editor:
 
@@ -162,7 +162,7 @@ While the edits you applied to the Azure CycleCloud template included default va
 
 ## Import the modified template and parameters file into the existing cluster
 
-To conclude this exercise, you will import the modified template and its parameters file into the existing cluster, overriding its current configuration. 
+To conclude this exercise, you'll import the modified template and its parameters file into the existing cluster, overriding its current configuration. 
 
 1. Within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following command to import the modified template and its parameters file into the existing cluster:
 
