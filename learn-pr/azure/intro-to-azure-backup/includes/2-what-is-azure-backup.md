@@ -1,129 +1,38 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
+Let's start with a definition of Azure Backup and take a quick tour of the core features. This overview should help you see whether Azure Backup might be a good fit for your data protection needs.
 
-    Goal: briefly state that this unit will define the product.
+## What is Azure Backup?
+The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud.
 
-    Heading: none
+:::image type="content" source="../media/azure-backup-overview.png" alt-text="Depiction of the Azure Backup service implementing backup agents in the on-premises environment to the cloud. Middle section displays the components of Azure Backup for security and scalability with an underlying bar indicating central management.":::
 
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-TODO: add your topic sentences(s)
+## Azure Backup definition
+Azure Backup is an Azure service that provides secure and zero-infrastructure backup solutions for all Azure-managed data assets.
 
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
+The centralized management interface makes it easy to define backup policies and protect a wide range of enterprise workloads, including Azure Virtual Machines, Azure Disks, SQL and SAP databases, Azure file shares and blobs.
 
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
+:::image type="content" source="../media/azure-backup-architecture.png" alt-text="Azure Backup architecture displaying workloads at the bottom, feeding into the data plane above that, tying into the management plane with backup policies, Azure policies, Azure Monitor, and Azure Lighthouse services listed for management.":::
 
-    Heading:
-        "## What is <concept>?"
+## How to think about Azure Backup
+As the IT admin of your organization, you are responsible for meeting the compliance needs for all the data assets of the firm; backup is a critical aspect of it. There are also various application admins in your company who need to do self-service backup and restore to take care of issues like data corruption or rogue admin scenarios. You are looking for an enterprise-class backup solution to protect all your workloads and manage them from a central place.
 
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
+Azure Backup can provide back up services for the following data assets:
 
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
-## What is <concept>?
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+* On-premises files, folders, and system state
+* Azure Virtual Machines (VMs)
+* Azure Managed Disks
+* Azure Files Shares
+* SQL Server in Azure VMs
+* SAP HANA databases in Azure VMs
+* Azure Database for PostgreSQL servers (currently in preview)
+* Azure Blobs (currently in preview)
 
-<!-- 3. Define the product -------------------------------------------------------------
+:::image type="content" source="../media/backup-center-jobs.png" alt-text="Depiction of Azure Backup center displaying a list of backup jobs. The list displays the backup instance, data source, operation type, and status.":::
 
-    Goal:
-        Give a formal and precise definition of the product.
+## Key features
+Let's look at some key features of Azure Backup.
 
-    Heading:
-        "## <product> definition"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<product> is..." (ensure this is a definition, do not give use cases like "<product> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "Azure Logic Apps definition"
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
-## <product> definition
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
-
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the <product> solves one of the customer tasks in your <scenario>.
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
-
-    Heading:
-        "## How to <solve scenario>"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the <product> solved the <scenario>.
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
-## How to <solve scenario>
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
-
-<!-- 5. Additional content (optional, as needed) ------------------------------------------------
-
-    Goal:
-        The section is a catch-all for any information not covered in the sections above.
-        Repeat the pattern here as many times as needed.
-
-    Possible topics:
-        - Key feature(s).
-        - Example use case in addition to the scenario.
-        - High-level of how practitioners use the product (e.g. there's an API and a web UI to support multiple use cases).
-        - Business value (e.g. it lets you do something that would be difficult to achieve without <product>).
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+| Feature | Description | Usage |
+| --- | --- | --- |
+| Zero-infrastructure backup solution | No backup server or infrastructure needed as would be required for conventional backup solutions. Similarly, no backup storage needs to be deployed- it is automatically managed and scaled by Azure Backup. | Zero-infra solution eliminates capital expenses and reduces operational expenses. It increases ease of use by automating storage management. |
+| At-scale management | Natively manage your entire backup estate from a central console called Backup Center. Use APIs, PowerShell, and Azure CLI to automate Backup policy and security configurations. | Backup center simplifies data protection management at-scale by enabling you to discover, govern, monitor, operate, and optimize backup management, all from one unified console, enabling you to drive operational efficiency with Azure.  |
+| Security | Azure Backup provides built-in security to your backup environment - both when your data is in transit and at rest using capabilities encryption, private endpoints, alerts, etc. | Your backups are automatically secured against ransomware, malicious admins, and accidental deletions. |

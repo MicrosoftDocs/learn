@@ -10,8 +10,13 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+Information technology workers understand the importance of data to the organization. The need to protect that data drives decisions around storage, backups, and security. Many companies implement policies that dictate backup specifications for frequency, duration of storage for the backup, and restore policies.
+
+For on-premises scenarios, backup solutions may have included local redundant storage solutions or off-site storage. Scenarios using back-up to tape drives and storing offsite, come with the resulting delay in restoring the data because of the need to transport the tapes back to the server rooms, and performing the restore operation.  It can result in significant down time.
+
+These backup solutions may not always address some of the most important considerations such as security of the backups, the potential for the company to be impacted by a ransomware attack, or human error in the backup and restore operations. An ideal solution would be cost-effective, simple to use, and secure. This is where Azure Backup comes in.
+
+:::image type="content" source="../media/architecture-on-premises-mars.png" alt-text="Depiction of a backup scenario with a company's servers and workstations on the left, with files and folders, using the Backup Agent to backup the data to Microsoft Azure storage.":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -42,7 +47,10 @@ TODO: add your image
 
  -->
 ## What will we be doing?
-TODO: add your activities
+We'll evaluate the features and capabilities of Azure Backup to help decide if:
+    * Azure Backup can offer a solution for your backup needs
+    * You can backup and restore the data you need for your organization
+    * Azure Backup offers secure storage of your data
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -58,6 +66,6 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to <TODO>
+By the end of this session, you'll be able to decide if Azure Backup is the right solution to consider for your data protection.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

@@ -16,11 +16,15 @@
         * Control actions
         * Logic Apps Designer"
 -->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Let's take a look at how Azure Backup works to provide the data protection you need. You'll learn how the different aspects of the backup service make it easy to backup various types of data and how it offers security for your backups as well. We'll discover these aspects of the Azure Backup Service:
+
+* Workload integration layer - Backup Extension. Integration with the actual workload (such as Azure VM or Azure Blobs) happen at this layer.
+* Data Plane- Access Tiers. Three access tiers where the backups could be stored:
+    * Snapshot tier: in customer’s subscription
+    * Standard tier
+    * Archive tier
+* Data Plane- Availability and Security. The backup data is replicated across zones or regions (based on the redundancy specified by the user).
+* Management Plane – Recovery Services vault/ Backup Vault and Backup Center. Vault provides an interface for the user to interact with the backup service.
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
@@ -38,7 +42,34 @@ TODO: add your bulleted list of key things covered
 -->
 
 <!-- Pattern for simple topic -->
-## H2 heading
+## Workload integration layer - Backup Extension
+A backup extension specific to each workload is installed on the source VM or a worker VM. At the time of backup (as defined by the user in the Backup Policy), the backup extension generates the backup which could be:
+
+* storage - snapshots in case of Azure VM or Azure Files.
+
+* stream backup in case of databases like SQL or HANA running in VMs.
+
+The backup data is eventually transferred to data plane (Azure Backup managed storage) via secure Azure networks (NSG, Firewalls or more sophisticated Pvt end points).
+
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+Paragraph (optional)
+
+## Data Plane- Access Tiers
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+Paragraph (optional)
+
+## Data Plane- Availability and Security
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+Paragraph (optional)
+
+## Management Plane – Recovery Services vault/ Backup Vault and Backup Center
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
