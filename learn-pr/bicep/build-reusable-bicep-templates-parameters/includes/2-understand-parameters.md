@@ -74,7 +74,7 @@ When you reference the parameter in the template, you can select the individual 
 :::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
 
 > [!IMPORTANT]
-> Keep in mind that you don't specify the type of each property within an object. However, when you use a property's value, its type must match what's expected. In the previous example, both the name and the tier of the App Service SKU must be strings.
+> Keep in mind that you don't specify the type of each property within an object. However, when you use a property's value, its type must match what's expected. In the previous example, both the name and the tier of the App Service plan SKU must be strings.
 
 Another example of where you might use an object parameter is for specifying resource tags. You can attach custom tag metadata to the resources that you deploy, which you can use to identify important information about a resource.
 
