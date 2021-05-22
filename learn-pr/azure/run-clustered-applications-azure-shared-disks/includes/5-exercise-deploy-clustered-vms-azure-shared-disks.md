@@ -41,7 +41,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 5. Wait until the cloud shell is initialized, and then in the Bash shell, run the following commands:
 
-    Azure CLI
+    Azure CLI:
 
 ```bash
 #Create a resource group
@@ -53,7 +53,7 @@ az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku
 
 ## Task 2: Create proximity placement group and availability set
 
-1. While you are still in the cloud shell, run the following commands to create a proximity placement group.
+1. While you are still in the cloud shell, run the following commands to create a proximity placement group:
 
 ```bash
 # Create proximity placement group.
@@ -64,7 +64,7 @@ az ppg create \
 -t standard
 ```
 
->[Note!]
+ > [!Note]
 >Proximity placement group is not required for using shared disk with clustered applications, but in general provides better performance when is used.
 
 2. Run the following command to create an availability set:
@@ -95,7 +95,7 @@ done
 
 ## Task 4: Attach an Azure shared disk on both VMs
 
-1. While you're still in the cloud shell, attach the Azure shared disk to both VMs: 
+1. While you're still in the cloud shell, attach the Azure shared disk to both VMs using the following commands: 
 
 ```bash
 diskId=$(az disk show -g myResourceGroup -n mySharedDisk --query 'id' -o tsv)
@@ -125,7 +125,7 @@ ssh azureuser@myPublicIP1
 ```
 
 4. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
-5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing.
+5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
 
 ```bash
 # Install sg3-utils
@@ -150,7 +150,7 @@ Exit
 :::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
 
 
-5. Connect to the second VM by using SSH:
+5. Connect to the second VM by using SSH using the following command:
 
 ```bash
 az network public-ip show --resource-group myResourceGroup --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
@@ -159,7 +159,7 @@ ssh azureuser@myPublicIP2
 ```
 
 6. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
-7. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing.
+7. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
 
 ```bash
 # Install sg3-utils
@@ -220,7 +220,7 @@ exit
 
 When you no longer need a resource group, use **az group delete** to remove the resource group and all of the resources it contains.
 
-Azure CLI
+Azure CLI:
 
 ```bash
 az group delete --name myResourceGroup --yes
@@ -268,7 +268,7 @@ In this exercise, you&#39;ll explore Azure shared disk deployment and perform th
 
 5. Run the following commands:
 
-    Azure PowerShell
+    Azure PowerShell:
 
 ```powershell
 # Create a resource group
@@ -342,7 +342,7 @@ New-AzVm `
 }
 ```
 
-4. Review the VMs in the placement group.
+4. Review the VMs in the placement group using the following command:
 
 ```powershell
 Get-AzProximityPlacementGroup -ResourceId $ppg.Id |
@@ -351,7 +351,7 @@ Format-Table -Property VirtualMachines -Wrap
 
 ## Task 4: Attach an Azure shared disk to both VMs
 
-1. Attach the Azure shared disk to the first VM:
+1. Use the following command to attach the Azure shared disk to the first VM:
 
 ```powershell
 
