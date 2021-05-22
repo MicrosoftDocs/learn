@@ -21,7 +21,7 @@ Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data f
 
 As soon as you create a resource in Azure, the Azure Monitor begins collecting data. You choose the values to display in the metrics graph for that resource. You can find **Metrics** under the **Monitoring** category of the resource pane in the Azure portal. Once you select **Metrics**, you will be able to select the **Metric Namespace**, **Metric** category, and **Aggregation** from the drop-down menu choices above the graph.
 
-:::image type="content" source="../media/azure-metrics.png" alt-text="Metrics graph selected for a web app depicting average memory working set in a line graph format":::
+:::image type="content" source="../media/azure-metrics.png" alt-text="Screenshot of metrics graph selected for a web app depicting average memory working set in a line graph format":::
 
 ## Azure Monitor agents
 Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads. The Azure Monitor agent (AMA), currently in preview, collects monitoring data from the guest operating system of virtual machines and delivers it to Azure Monitor.
@@ -32,9 +32,6 @@ The Azure Monitor agent has replaced the Log Analytics agent, the diagnostic ext
 * Send data from Linux virtual machines to multiple workspaces
 * Use XPATH queries to filter Windows events for collection
 
-> [!TIP]
-> For more detailed information on agents, visit the [Azure Monitor agents section](https://docs.microsoft.com/azure/azure-monitor/agents/agents-overview) on the Microsoft documentation site.
-
 ## Azure Monitor logs
 Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources. Data can come from various sources such as:
 
@@ -42,7 +39,7 @@ Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log
 * virtual machine agents
 * application performance and usage data from Azure Monitor application insights
 
-All of this data can be consolidated into a workspace for analysis. The workspace that is referred to here, is a [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/logs/design-logs-deployment). You must configure this workspace initially and then configure the different sources to send their data to the workspace. Unlike metrics, this data is not automatically collected.
+All of this data can be consolidated into a workspace for analysis. The workspace that is referred to here, is a Log Analytics workspace. You must configure this workspace initially and then configure the different sources to send their data to the workspace. Unlike metrics, this data is not automatically collected.
 
 Once you have the workspace configured and data is being logged, it can be analyzed together using a sophisticated query language that's capable of quickly analyzing millions of records. You may start with a simple sample query that answers a common question or perform sophisticated data analysis to identify critical patterns in your monitoring data. Work with log queries and their results interactively using Log Analytics, use them in an alert rules to be proactively notified of issues, or visualize their results in a workbook or dashboard.
 
