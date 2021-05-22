@@ -71,7 +71,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed.
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
@@ -143,7 +143,7 @@ az bicep install
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
