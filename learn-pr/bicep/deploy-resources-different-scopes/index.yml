@@ -18,7 +18,7 @@ abstract: |
   After completing this module, you'll be able to: 
     - Explain resource scopes including tenant-level, management group-level, and subscription-level resources.
     - Deploy resources at specific scopes by using Bicep templates.
-    - Create Bicep files that deploy at multiple scopes.
+    - Create Bicep files that deploy to multiple scopes.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with creating and deploying Bicep templates.
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.

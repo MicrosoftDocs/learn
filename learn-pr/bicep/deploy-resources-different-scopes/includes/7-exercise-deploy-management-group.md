@@ -42,7 +42,7 @@ Execute the following Azure PowerShell commands in the Visual Studio Code termin
 
 ```azurepowershell
 New-AzManagementGroup `
-  -GroupName 'SecretRND' `
+  -GroupId 'SecretRND' `
   -DisplayName 'Secret R&D Projects'
 ```
 
@@ -64,7 +64,7 @@ In a real deployment, you'd [move the R&D team's subscriptions into the manageme
 
    :::code language="bicep" source="code/7-template.bicep" range="1" :::
 
-   Note that this line of code tells Bicep that your template is going to be deployed at a management group scope.
+   Note that this line of code tells Bicep that your template is going to be deployed to a management group scope.
 
 ## Add a policy definition
 
@@ -100,9 +100,10 @@ In order to create a policy assignment, you need to refer to the policy definiti
 
    :::code language="bicep" source="code/7-template.bicep" range="42-47" :::
 
-   Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name, and the policy definition's name. Because you've reference the policy definition's name using the `policyDefinition.name` property, Bicep understands there's a dependency between the two resources. It will deploy the policy definition before the policy assignment.
+   Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name, and the policy definition's name. Because you've referenced the policy definition's name using the `policyDefinition.name` property, Bicep understands there's a dependency between the two resources. It will deploy the policy definition before the policy assignment.
 
-   In future, Azure will support a simpler syntax.
+   > [!NOTE]
+   > In future, Azure will support a simpler syntax.
 
 1. Save the changes to the file.
 
@@ -207,7 +208,7 @@ az account management-group delete --name SecretRND
 ::: zone pivot="powershell"
 
 ```azurepowershell
-Remove-AzManagementGroup -GroupName SecretRND
+Remove-AzManagementGroup -GroupId SecretRND
 ```
 
 ::: zone-end

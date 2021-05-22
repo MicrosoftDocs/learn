@@ -22,7 +22,7 @@ quiz:
       explanation: "Template parameters are a great way to manage multiple environments. You can specify different values for the parameters when you deploy the template into the test and production environments."
     - content: "Create a module that deploys all of the resources for the manufacturing application. Create separate Bicep templates for each environment, and add the shared module to each environment's template."
       isCorrect: false
-      explanation: "Modules can be a great way to reuse your Bicep code, but when you're deploying multiple environments, there's usually a better way to keep track of the different configuration for each deployment."
+      explanation: "Modules can be a great way to reuse your Bicep code, but when you're deploying multiple environments, there's usually a simpler way to keep track of the different configuration for each deployment."
     - content: "Create a template that deploys all of the resources required for the manufacturing application. Add variables for the values that might change between environments."
       isCorrect: false
       explanation: "Variables have the same value, so you don't usually need to consider them when you deploy multiple environments."

@@ -6,7 +6,7 @@ Project Teddybear is in full swing and the R&D team is waiting for you to give t
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template to be deployed at a subscription scope.
+> * Create a Bicep template to be deployed to a subscription scope.
 > * Add an Azure Policy definition and assignment.
 > * Deploy the template and verify the result.
 
@@ -22,13 +22,13 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="1" :::
 
-   This line of code tells Bicep that your template is going to be deployed at a subscription scope.
+   This line of code tells Bicep that your template is going to be deployed to a subscription scope.
 
 ## Add a policy definition
 
-1. Underneath the line you just added, add the following variable definitions:
+1. Underneath the line you just added, add the following variable definition:
 
-   :::code language="bicep" source="code/4-template.bicep" range="3-4" :::
+   :::code language="bicep" source="code/4-template.bicep" range="3" :::
 
 1. At the bottom of the file, add the following Azure Policy definition:
 
@@ -47,11 +47,15 @@ During the process, you'll:
 
 A policy definition doesn't do anything until it's applied. In this step, you deploy a second subscription-scoped resource that applies the policy definition to the subscription.
 
-1. Under the policy definition that you just added, add the following policy assignment:
+1. Underneath the `policyDefinitionName` variable definition, add the following variable definition:
+
+   :::code language="bicep" source="code/4-template.bicep" range="4" :::
+
+1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 
    :::code language="bicep" source="code/4-template.bicep" range="40-45" :::
 
-   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed at the subscription scope.
+   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed to the subscription scope.
 
 1. Save the changes to the file.
 
@@ -67,24 +71,57 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed, and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed.
 
-1. Open a terminal window by using the **Terminal** menu.
+1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
-1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
+1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-      :::image type="content" source="../../shared/media/bash.png" alt-text="The Visual Studio Code terminal window with bash on the drop-down menu." border="true":::
+    :::image type="content" source="../../shared/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." border="true":::
 
-1. If not, select the drop-down menu and choose **Select Default Shell**.
-1. Select **bash**.
+    If not, select the dropdown menu, and choose **Select Default Shell**. Then select **bash**.
 
-      :::image type="content" source="../../shared/media/select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down menu for selecting the shell." border="true":::
+    :::image type="content" source="../../shared/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with **bash** as the shell.
+1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
+
+1. Switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
+
+    ```azurecli
+    cd scripts
+    ```
+
+### Check the version of the Azure CLI
+
+1. From the terminal in Visual Studio Code, run this command to check the version of the Azure CLI:
+
+   ```azurecli
+   az -v
+   ```
+
+1. Look at the version number on the first line, which starts with `azure-cli`.
+
+   - If the version number is version `2.20.0` or later, go to the next section ("Install the Bicep tooling").
+
+   - If the version number is later than `2.11.0` and earlier than `2.20.0`, update your Azure CLI version by using this command:
+  
+      ```azurecli
+      az upgrade
+      ```
+
+   - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
+
+### Install the Bicep tooling
+
+Run the following command to install the Bicep template compilation support:
+
+```azurecli
+az bicep install
+```
 
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run the following command. A browser then opens so you can sign in to your Azure account.
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. A browser opens so you can sign in to your account.
 
     ```azurecli
     az login
@@ -106,25 +143,41 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
-1. Open a terminal window by using the **Terminal** menu.
+1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
-1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
+1. If the dropdown menu on the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
-    :::image type="content" source="../../shared/media/pwsh.png" alt-text="The Visual Studio Code terminal window with p w s h on the drop-down menu." border="true":::
+    :::image type="content" source="../../shared/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu."  border="true":::
 
-    If not, select the drop-down menu and choose **Select Default Shell**.
+   If not, select the dropdown menu, and choose **Select Default Shell**. Then select **pwsh** or **PowerShell**.
 
-1. Select **pwsh**.
+    :::image type="content" source="../../shared/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
-    :::image type="content" source="../../shared/media/select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down list for selecting the default shell." border="true":::
+1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
-1. Select **+** in the terminal to create a new terminal with **pwsh** as the shell.
+1. You might have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
 
-### Sign in to Azure by using Azure PowerShell
+   ```azurepowershell
+   cd scripts
+   ```
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
+### Check the version of Azure PowerShell
+
+1. From the terminal in Visual Studio code, run the following command to check the version of Azure PowerShell that you've installed:
+
+   ```azurepowershell
+   (Get-InstalledModule Az).Version
+   ```
+
+   If the version number is `5.6.0` or later, go to the next section ("Sign in to Azure by using Azure PowerShell").
+
+   Otherwise, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
+
+### Sign in to Azure
+
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. A browser opens so you can sign in to your account.
 
     ```azurepowershell
     Connect-AzAccount
@@ -142,6 +195,10 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     ```azurepowershell
     Set-AzContext -SubscriptionId {Your subscription ID}
     ```
+
+### Install the Bicep CLI
+
+Azure PowerShell doesn't include the tooling to understand Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
 
 ::: zone-end
 

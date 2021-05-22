@@ -8,7 +8,7 @@ Bicep enables you to create a deployment that works across different scopes by u
 
 ## Specify the scope for a module
 
-You can use Bicep modules to deploy a set of resources at a different scope from the `targetScope` specified in the file. Here's an example Bicep file that is deployed with a `targetScope` of `subscription`, but uses a module to deploy some resources into a resource group:
+You can use Bicep modules to deploy a set of resources at a different scope from the `targetScope` specified in the file. Here's an example Bicep file that is deployed with a `targetScope` of a `subscription`, but uses a module to deploy some resources into a resource group:
 
 :::code language="plaintext" source="code/5-sub-scope-rg-module.bicep" highlight="1,4" :::
 
@@ -22,7 +22,9 @@ Notice that the `scope` property uses a Bicep function to help to identify the s
 
 ## Deploy across multiple resource groups
 
-A common use of scopes is to deploy across multiple resource groups. For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *ToyNetworking*, and then deploy a network interface into a different resource group. Here's what the Bicep file looks like:
+A common use of scopes is to deploy across multiple resource groups. While you can't set the `scope` property on most Azure resources, modules enable you to tell Bicep that a set of resources should be deployed to a different resource group.
+
+For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources into a shared resource group named *ToyNetworking*, and then deploy a network interface into a different resource group. Here's what the Bicep file looks like:
 
 :::code language="plaintext" source="code/5-multiple-rgs.bicep" highlight="2" :::
 
@@ -52,13 +54,13 @@ You can even deploy a resource group in another subscription by including the su
 
 :::code language="plaintext" source="code/5-multiple-rgs-different-sub.bicep" highlight="2" :::
 
-Similarly, you can use the `subscription()` scope function to deploy resources across different subscriptions at the subscription scope, and the `managementGroup()` scope function to deploy across management groups. However, you can't deploy across different tenants.
+Similarly, you can use the `subscription()` scope function to deploy resources across different subscriptions at the subscription scope, and the `managementGroup()` scope function to deploy across different management groups. However, you can't deploy across different tenants.
 
 ## Specify the scope for a single resource
 
 The `scope` keyword can be used on a few other specific resource types, not just modules. Extension resources use the `scope` keyword to specify which resource they apply to. Additionally, tenant-scoped resources can use the `scope` keyword so that you can deploy them from any template. For example, you might create a Bicep file to create all of your management group hierarchy, and use `targetScope = 'managementGroup'` in the template file, but then deploy child management groups and Azure subscriptions within the `tenant()` scope.
 
-Here's an example Bicep file that is deployed at management group scope. The deploy creates a subscription, which is a tenant-scoped resource:
+Here's an example Bicep file that is deployed to a management group scope. The deploy creates a subscription, which is a tenant-scoped resource:
 
 :::code language="plaintext" source="code/5-mg-scope-tenant-resource.bicep" highlight="1,6" :::
 
