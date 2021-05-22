@@ -5,6 +5,7 @@ metadata:
   unitType: learning-content
   title: What is Azure Monitor?
   description: Learn what Azure Monitor is.
+  ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien
   ms.author: gerryo
