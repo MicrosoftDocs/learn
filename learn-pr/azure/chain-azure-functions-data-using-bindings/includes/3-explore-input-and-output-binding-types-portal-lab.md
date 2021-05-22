@@ -31,14 +31,14 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Setting | Value | Description |
     |---|---|---|
     | **Project Details** |
-    | Subscription | _Concierge Subscription_ | The Azure subscription that you want to use. |
-    | Resource Group | _<rgn>[sandbox resource group name]</rgn>_ | This setting is pre-populated with the resource group from your sandbox. |
+    | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
+    | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
-    | Function App name | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | _Code_ | Option to publish code files or a Docker container. |
-    | Runtime stack | _Node.js_ | The sample code in this module is written in JavaScript. |
-    | **Version** | Leave *default* |
-    | **Region** | _Central US_ | Choose the region nearest you. |
+    | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | Publish | Code | Option to publish code files or a Docker container. |
+    | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
+    | Version | Leave *default* |
+    | Region | *Central US* | Choose the region nearest you. |
 
 1. Select **Review + create** > **Create** to provision and deploy the function app.
 
@@ -73,11 +73,11 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
     | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
-    | Function App name | *Globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
     | Version | Leave *default* |
-    | Region | Central US | Choose the region nearest you. |
+    | Region | *Central US* | Choose the region nearest you. |
 
 1. Select **Review + create** > **Create** to provision and deploy the function app.
 

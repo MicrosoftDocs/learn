@@ -29,11 +29,11 @@ A database account is a container for managing one or more databases. Before we 
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
+    | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
-    | Account Name | *Globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
+    | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
     | API | Core (SQL) | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
-    | **Location** | Central US | Select the region nearest you. |
+    | Location | Central US | Select the region nearest you. |
 
     Leave the default values for all of the other settings in this new account pane.
 
@@ -68,10 +68,10 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Database id** | Select **Create new** and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
-    | **Database max RU/s** | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
-    | **Container id** | Bookmarks | Container IDs have the same character requirements as database names. |
-    | **Partition key** | /id () | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
+    | Database max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
+    | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
+    | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
 1. Select **OK**. The Data Explorer displays the new database and container under the **SQL API** pane. Inside the database, you've defined a container. Next, you'll add some data, also known as items.
 
@@ -213,7 +213,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
-1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
+1. Enter the following values for each setting in this pane. To learn more about the purpose of each setting, you can select the information icon to its right.
 
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
@@ -222,11 +222,11 @@ To read data from the database, you need to define an input binding. As you'll s
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
-    | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | _Bookmarks_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | **Partition key** |_/id_ | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
-    | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | Document parameter name | bookmark | The name used to identify this binding in your code. |
+    | Database name | func-io-learn-db | The database to work with. This value is the database name we set earlier in this lesson. |
+    | Collection Name | Bookmarks | The collection from which we'll read data. This setting was defined earlier in the lesson. |
+    | Partition key | /id | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
+    | SQL Query (optional) | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
 1. To save all changes to this binding configuration, select **OK**.
 
