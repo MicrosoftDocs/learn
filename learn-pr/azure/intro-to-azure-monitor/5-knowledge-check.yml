@@ -67,7 +67,7 @@ quiz:
     - content: "Setup a Log Analytics workspace."
       isCorrect: false
       explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
-      - content: "Use Azure Dashboards or Azure Monitor workbooks."
+    - content: "Use Azure Dashboards or Azure Monitor workbooks."
       isCorrect: true
       explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
   
