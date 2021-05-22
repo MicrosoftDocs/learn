@@ -19,7 +19,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ::: zone pivot="javascript"
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
+1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
 
 1. In the portal, go to the function app that you created in this module.
 
@@ -33,7 +33,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ::: zone pivot="powershell"
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
+1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
 
 1. In the portal, go to the function app that you created in this module.
 

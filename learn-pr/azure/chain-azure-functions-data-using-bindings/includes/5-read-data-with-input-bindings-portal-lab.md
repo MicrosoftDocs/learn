@@ -17,7 +17,7 @@ You need to store the data somewhere. In this flowchart, the data store is an Az
 
 A database account is a container for managing one or more databases. Before we can create a database, we need to create a database account.
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
