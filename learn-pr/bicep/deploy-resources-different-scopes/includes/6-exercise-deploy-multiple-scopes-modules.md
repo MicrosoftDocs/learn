@@ -11,7 +11,9 @@ The R&D team have asked for your help to create a virtual network in the Project
 
 ## Create a resource group
 
-1. In the *main.bicep* file in Visual Studio Code, add the following variable definition under the current variable definitions:
+1. In Visual Studio Code, open the *main.bicep* file that you created in the previous exercise.
+
+1. Add the following variable definition under the current variable definitions:
 
    :::code language="bicep" source="code/6-template.bicep" range="8" :::
 

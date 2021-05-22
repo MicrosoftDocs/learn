@@ -1,8 +1,8 @@
-Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other Azure resources need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of Azure itself. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed to different scopes.
+Virtual machines, SQL servers and databases, storage accounts, virtual networks, and the majority of other Azure resources need to be placed in a resource group. However, there are a few resources that can, or must, be deployed in a different way. Typically these resources are used to control the behavior of your Azure environment. In this unit, you'll review the hierarchy of Azure resource organization, and look at how certain resources might be deployed to different scopes.
 
 ## Azure's resource hierarchy
 
-Azure has a hierarchical resource structure with multiple levels of management. Here's a diagram:
+Azure has a hierarchical resource structure with multiple levels of management. Here's a diagram showing how your toy company might organize their Azure environment:
 
 :::image type="content" source="../media/2-hierarchy.png" alt-text="Diagram that shows an Azure tenant, three management groups, three subscriptions, and four resource groups." border="false":::
 
