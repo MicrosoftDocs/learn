@@ -2,7 +2,7 @@ One of the many reasons you may be hosting your infrastructure or applications o
 
 Monitoring your Azure resources provides insights into many aspects of performance, security, and health.
 
-:::image type="content" source="../media/monitoring-panel-options.png" alt-text="Monitoring options for a web app on Azure portal showing options of metrics, logs, health check, etc.":::
+:::image type="content" source="../media/monitoring-panel-options.png" alt-text="Screenshot of monitoring options for a web app on Azure portal showing options of metrics, logs, health check, etc.":::
 
 ## Example scenario
 
@@ -10,7 +10,7 @@ Consider a web application that you are hosting on Azure. You decided to move th
 
 Azure offers the ability to scale up, or scale out, your applications, when needed. Azure can then automatically scale them back when resource needs drop off. Initially, you may not know where the capacity issues are. Using the Azure Monitor capabilities, you can determine where your application scaling needs are and adjust those parameters in your scaling strategy. You can base these decisions on concrete metrics and log data.
 
-:::image type="content" source="../media/monitor-web.png" alt-text="graphs depicting data in/out, request, and response time for monitoring a web app":::
+:::image type="content" source="../media/monitor-web.png" alt-text="Screenshot of graphs depicting data in/out, request, and response time for monitoring a web app":::
 
 ## What will we be doing?
 
