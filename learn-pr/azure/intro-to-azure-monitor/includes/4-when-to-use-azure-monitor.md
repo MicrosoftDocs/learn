@@ -43,7 +43,7 @@ Many times, you may find the need to report on the specific metrics that are mea
 ### Should you use metrics explorer for monitoring?
 Recall that Azure metrics utilize numerical data to display information about your monitored resource. You can select the Metrics option, under the Monitoring category for a resource. It presents a chart that allows you to select a parameter for the chart to track. You will also notice various charts that are displayed on the Overview page as well. Selecting any of those charts, opens it in the Metrics Explorer.
 
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Depiction of the Metrics Explorer window showing the Data Out values in the sum aggregation.":::
+:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot depicting the Metrics Explorer window showing the Data Out values in the sum aggregation.":::
 
 ### Should logging be used with your monitoring tasks?
 Recall that log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. While you will need to have a Log Analytics workspace to store the log data, the ability to query this data for insights can be a great way to perform more complex and detailed analysis.  It can help identify trends or to review when an event happened, and perhaps identify the root cause.
