@@ -50,24 +50,24 @@ quiz:
       explanation: "Incorrect. The only requirement for Log Analytics Workspace association is if you decide to use the Logs in Azure Monitor. Basic metrics recording does not require Log Analytics Workspace association."
   - content: "How can you drill down and modify the data displayed on a chart in the Overview page of your resource?"
     choices:
-    - content: "Select the chart, which opens it in the Metrics Explorer."
-      isCorrect: true
-      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
     - content: "Use the Diagnostic tools to drill into the data on the chart."
       isCorrect: false
       explanation: "Incorrect. The Diagnose and solve problems option, on the Overview page, helps with troubleshooting but is not intended for metrics evaluation."
+    - content: "Select the chart, which opens it in the Metrics Explorer."
+      isCorrect: true
+      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
     - content: "Use the Log stream."
       isCorrect: false
       explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
   - content: "What is the best way to combine metrics data into a single view for reporting?"
     choices:
-    - content: "Use Azure Dashboards or Azure Monitor workbooks."
-      isCorrect: true
-      explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
     - content: "Send the monitoring data to Event Hubs."
       isCorrect: false
       explanation: "Incorrect. Event Hubs can be used to stream the monitoring data to external tools, but it isn't the most optimal tool for aggregating metrics into a single view."
     - content: "Setup a Log Analytics workspace."
       isCorrect: false
       explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
+      - content: "Use Azure Dashboards or Azure Monitor workbooks."
+      isCorrect: true
+      explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
   
