@@ -25,7 +25,7 @@ Create an Azure shared disk by using various tools. Use the following steps to c
 
 Alternatively, use Azure PowerShell, Azure CLI, or ARM templates to create a shared disk.
 
-Azure PowerShell
+Azure PowerShell:
 
 ```Powershell
 $dataDiskConfig = New-AzDiskConfig -Location "WestCentralUS" -DiskSizeGB 1024 -AccountType Premium\_LRS -CreateOption Empty -MaxSharesCount 2
@@ -33,13 +33,13 @@ $dataDiskConfig = New-AzDiskConfig -Location "WestCentralUS" -DiskSizeGB 1024 -A
 New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDisk" -Disk $dataDiskConfig
 ```
 
-Azure CLI
+Azure CLI:
 
 ```bash
 az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralus --sku Premium\_LRS --max-shares 2
 ```
 
-ARM templates
+ARM templates:
 
 ```json
 {
@@ -84,7 +84,7 @@ ARM templates
 
 Now that you know how to create an Azure shared disk, attach the disk to VMs for testing the shared capabilities. Use the following PowerShell and Azure CLI commands to attach Azure shared disk on both VMs.
 
-PowerShell
+PowerShell:
 
 ```Powershell
 $resourceGroup = "<your resource group name>"
@@ -96,7 +96,7 @@ $vm = Add-AzVMDataDisk -VM $vm -Name "<your shared disk name>" -CreateOption Att
 Update-AzVm -VM $vm -ResourceGroupName $resourceGroup
 ```
 
-Azure CLI
+Azure CLI:
 
 ```bash
 diskId=$(az disk show -g "<your resource group name>" -n "<your shared disk name>" --query 'id' -o tsv)
