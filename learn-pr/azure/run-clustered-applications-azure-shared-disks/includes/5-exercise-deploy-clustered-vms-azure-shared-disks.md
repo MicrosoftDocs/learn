@@ -7,7 +7,7 @@ Your CTO needs to provide proof of concept for using Azure shared disks to deplo
 
 ## Exercise 1: Use Linux VMs with Azure shared disks
 
-To provide proof of concept you will deploy two Linux VMs running the Ubuntu Server OS and test the SCSI PR commands on the Azure shared disk.
+To provide proof of concept, you'll deploy two Linux VMs running the Ubuntu Server OS. You'll also test the SCSI PR commands on the Azure shared disk.
 In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
 - Create an Azure shared disk.
@@ -26,20 +26,20 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 3. From the Azure portal tool bar, select **Cloud Shell** icon.
 
     > [!Note]
-    > Perform the next step if you are opening the cloud shell for the first time, otherwise proceed with step 5.
+    > Perform the next step if you are opening Cloud Shell for the first time, otherwise continue with step 5.
 
 4. In the  **You have no storage mounted**  pane, select **Show advanced settings**, and then perform the following tasks:
 
-    - Retain the default value for the **Subscription**  drop-down list item.
+    - Keep the default value for the **Subscription**  drop-down list item.
     - In the  **Cloud Shell region**  drop-down list, select the Azure region matching or near the location where you intend to deploy resources in this exercise.
     - In the  **Resource group**  section, select or create a new resource group.
-    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected and then, in the text box under that option, enter a unique name consisting of a combination of between 3 and 24 characters and digits.
+    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected. Then, in the text box under that option enter a unique name between 3 and 24 characters and digits.
     > [!Note]
     > Storage Account names must be lowercase.
     - In the  **File share**  section, ensure that the  **Create new**  option is selected and then, in the text box below, enter **cloudshell**.
     - Select  **Create storage**.
 
-5. Wait until the cloud shell is initialized, and then in the Bash shell, run the following commands:
+5. Wait until Cloud Shell is initialized, and then in the Bash shell, run the following commands:
 
     Azure CLI:
 
@@ -53,7 +53,7 @@ az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku
 
 ## Task 2: Create proximity placement group and availability set
 
-1. While you are still in the cloud shell, run the following commands to create a proximity placement group:
+1. While you're still in Cloud Shell, run the following commands to create a proximity placement group:
 
 ```bash
 # Create proximity placement group.
@@ -81,7 +81,7 @@ az vm availability-set create \
 
 ## Task 3: Create two VMs that are running Ubuntu Server
 
-1. While you're still in the cloud shell, run the following commands to create two VMs running Ubuntu OS:
+1. While you're still in Cloud Shell, run the following commands to create two VMs running Ubuntu OS:
 
 ```bash
 for i in `seq 1 2`; do
@@ -95,7 +95,7 @@ done
 
 ## Task 4: Attach an Azure shared disk on both VMs
 
-1. While you're still in the cloud shell, attach the Azure shared disk to both VMs using the following commands: 
+1. While you're still in Cloud Shell, attach the Azure shared disk to both VMs using the following commands: 
 
 ```bash
 diskId=$(az disk show -g myResourceGroup -n mySharedDisk --query 'id' -o tsv)
@@ -111,7 +111,7 @@ az vm disk attach -g myResourceGroup --vm-name myVM2 --name $diskId
 
 ## Task 5: Test SCSI persistent reservations using the "sg3-utils" tools
 
-1. While you're still in the cloud shell, connect to the first VM by using SSH.
+1. While you're still in Cloud Shell, connect to the first VM by using SSH.
 2. Use the following command to retrieve the IP addresses of VM1: 
 
 ```bash
@@ -124,7 +124,7 @@ az network public-ip show --resource-group myResourceGroup --name myVM1PublicIP 
 ssh azureuser@myPublicIP1
 ```
 
-4. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
+4. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
 5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
 
 ```bash
@@ -231,7 +231,7 @@ az group delete --name myResourceGroup --yes
 
 ## Exercise 2: Use Windows VMs by using Azure shared disks
 
-To further demonstrate the functionality of Azure shared disk you will deploy two Windows VMs running Windows server operating system (OS) and test SCSI PR commands on the Azure shared disk.
+To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test SCSI PR commands on the Azure shared disk.
 
 In this exercise, you&#39;ll explore Azure shared disk deployment and perform the following tasks:
 
@@ -251,19 +251,19 @@ In this exercise, you&#39;ll explore Azure shared disk deployment and perform th
 3. In the Azure portal tool bar, select **Cloud Shell** icon.
 
     > [!Note]
-    > Perform the next step if you're opening the cloud shell for the first time. Otherwise, proceed with step 5.
+    > Perform the next step if you're opening Cloud Shell for the first time. Otherwise, continue with step 5.
 
 4. In the  **You have no storage mounted**  pane, select **Show advanced settings**, and then perform the following tasks:
 
-    - Retain the default value for the **Subscription** drop-down list item.
+    - Keep the default value for the **Subscription** drop-down list item.
     - In the  **Cloud Shell region**  drop-down list, select the Azure region matching, or near, the location where you intend to deploy resources.
     - In the  **Resource group**  section, select or create a new resource group.
-    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected, and then in the text box, under that option, enter a unique name consisting of a combination of between three and 24 characters and digits.
+    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected. Then, in the text box under that option, enter a unique name consisting of a combination of between 3 and 24 characters and digits.
     
         > [!Note]
         > Storage account names must be lowercase.
         
-    - In the  **File share** section, ensure that the  **Create new**  option is selected, and then in the text box under that option, enter **cloudshell**.
+    - In the  **File share** section, ensure that the  **Create new**  option is selected. Then in the text box under that option, enter **cloudshell**.
     - Select the **Create storage** button.
 
 5. Run the following commands:
@@ -281,7 +281,7 @@ $dataDisk=New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDis
 
 ## Task 2: Create a proximity placement group and an availability set
 
-1. While still in the cloud shell, run the following commands to create a proximity placement group:
+1. While still in Cloud Shell, run the following commands to create a proximity placement group:
 
 ```powershell
 # Create proximity placement group
@@ -310,7 +310,7 @@ New-AzAvailabilitySet `
 
 ## Task 3: Create two VMs that are running Windows Server
 
-1. While still in the cloud shell, run the following commands to define a credential object for logging to the VMs:
+1. While still in Cloud Shell, run the following commands to define a credential object for logging to the VMs:
 
 ```powershell
 $cred = Get-Credential
@@ -373,7 +373,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 ## Task 5: Install Windows Failover Clustering Service on myVM1
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.** 
-2. Select the first VM, **myVM1**, from the tool bar, select **Connect**, and then select **RDP**.
+2. Select the first VM **myVM1** from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -381,7 +381,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
     
 4. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
 5. In the **Computer Management (Local)** management console, select **Disk Management**.
-6. In the **Initialize Disk** window , verify that **Disk 2** is selected, and then select **OK**.
+6. In the **Initialize Disk** window, verify that **Disk 2** is selected, and then select **OK**.
 7. Right-click or select the black label on **Disk 2**, and then select **New Simple Volume**. Accept the defaults to create new simple volume.
 8. Close the **Computer Management** console.
 9. In **Server Manager**, select **Add roles and features**. The **Add Roles and Features** wizard opens.
@@ -390,7 +390,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 12. In the **Server Selection** page, select **Next**.
 13. In the **Select server roles** page, select **Next**.
 14. In the **Select features** page, select the **Failover Clustering** checkbox.
-15. Verify that the **Include management tools (if applicable)** checkbox is selected, and then select **Add Features**. Select **Next** to proceed.
+15. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
 16. In the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes**. Select **Install** to install the Failover Clustering role.
 
     >[!Note]
@@ -399,7 +399,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 ## Task 6: Install Windows Failover Clustering Service on myVM2
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
-2. Select the second VM, **myVM2** , from the tool bar, select **Connect**, and then select **RDP.**
+2. Select the second VM **myVM2** from the tool bar, select **Connect**, and then select **RDP.**
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -416,7 +416,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 12. In the **Server Selection** page, select **Next**.
 13. In the **Select server roles** page, select **Next**.
 14. In the **Select features** page, select the **Failover Clustering** checkbox.
-15. Verify that the **Include management tools (if applicable)** checkbox is selected, and then select **Add Features**. Select **Next** to proceed.
+15. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
 16. In the **Confirmation** page, select the **Restart the destination server automatically if required**, and then select **Yes.** Select **Install** to install the Failover Clustering role.
 
     >[!Note]
@@ -425,7 +425,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 ## Task 7: Test the storage for Windows Failover Clustering Service on myVM1
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter and select **virtual machines.**
-2. Select the first VM, **myVM1** , from the tool bar, and then select **Connect**, and select **RDP**.
+2. Select the first VM **myVM1**, from the tool bar, and then select **Connect**, and select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -436,7 +436,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 6. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
 7. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM1**, and then select **Add**.
 8. Repeat the same procedure to add **myVM**.
-9. Select **Next** to proceed with testing the cluster setup.
+9. Select **Next** to continue with testing the cluster setup.
 10. In the **Testing Options** page, select **Run only test I select**, and then select **Next**.
 11. Select the **Storage** checkbox, and then select **Next**.
 12. In the **Confirmation** page, select **Next**.
@@ -444,7 +444,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 14. Close the RDP connection.
 
     >[!Note]
-    >To proceed the creation of the cluster, you need to setup additional prerequsites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
+    >To continue the creation of the cluster, you need to setup additional prerequsites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
     >This step is out of scope for this exercise.
 
 ## Task 8: Clean up the resources
