@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Which of the following is an Azure Data Lake Storage feature that enhances big data performance?"
+  - content: "Which of the following options is an Azure Data Lake Storage feature that enhances big data performance?"
     choices:
     - content: "Hierarchical namespace"
       isCorrect: true
@@ -28,25 +28,25 @@ quiz:
     choices:
     - content: "Azure Storage Explorer"
       isCorrect: false
-      explanation: "Incorrect. You can use Azure Storage Explorer to ingest ad-hoc data that resides on a local computer. Azure Storage Explorer doesn't ingest real-time data."
+      explanation: "Incorrect. You can use Azure Storage Explorer to ingest ad-hoc data that resides on a local computer. However, it doesn't ingest real-time data."
     - content: "Azure Data Factory"
       isCorrect: false
-      explanation: "Incorrect. You can use Azure Data Factory to ingest Azure Storage Blob data and data from an on-premises relational database management system. Azure Data Factory doesn't ingest real-time data."
+      explanation: "Incorrect. You can use Azure Data Factory to ingest Azure Storage Blob data and data from an on-premises relational database management system. However, it doesn't ingest real-time data."
     - content: "Azure Stream Analytics"
       isCorrect: true
       explanation: "Correct. Azure Stream Analytics reads data from an Azure IoT Hub resource and outputs the data to Azure Data Lake Storage."
-  - content: "A data administrator is considering the benefits of Azure Data Lake Storage to reduce costs. The administrator's organization currently runs an on-premises data warehouse that is becoming increasingly expensive. From the point of view of reducing TCO, which of the following statements is true?"
+  - content: "A data administrator is considering the benefits of Azure Data Lake Storage to reduce costs. The administrator's organization currently runs an on-premises data warehouse that's becoming increasingly expensive. From the point of view of reducing TCO, which of the following statements is true?"
     choices:
-    - content: "Azure Data Lake Storage separates storage costs from compute costs, so as data volume grows, only storage requirements need to grow with the data."
+    - content: "Azure Data Lake Storage separates storage costs from compute costs. So as data volume grows, only storage requirements need to grow with the data."
       isCorrect: true
-      explanation: "Correct. Azure Data Lake Storage runs on virtual hardware on the Azure platform, so storage is massively scalable and completely separate from any compute hardware concerns."
+      explanation: "Correct. Azure Data Lake Storage runs on virtual hardware on the Azure platform, so storage is massively scalable and entirely separate from any compute hardware concerns."
     - content: "Azure services such as Azure Stream Analytics, Azure HDInsight, and Azure Databricks are included in the cost of an Azure Data Lake Storage instance."
       isCorrect: false
-      explanation: "Incorrect. Instances of Azure services such as Azure Stream Analytics, Azure HDInsight, and Azure Databricks have their own pricing models and aren't included in the pricing of Azure Data Lake Storage."
+      explanation: "Incorrect. Instances of Azure services such as Azure Stream Analytics, Azure HDInsight, and Azure Databricks have their own pricing models and aren't included in Azure Data Lake Storage pricing."
     - content: "With an Azure Data Lake Storage instance, you must pay extra for maintenance and backups of your data."
       isCorrect: false
-      explanation: "Incorrect. There's no extra charge incurred for maintenance of any Azure hardware or for making backups of your data."
-  - content: "An administrator wants to tear down the data silos that are hampering the organization's ability to innovate and grow. The administrator is researching the features of Azure Data Lake Storage that help to eliminate data silos and increase data democratization. From the point of view of eliminating data silos, which of the following statements is true?"
+      explanation: "Incorrect. There's no extra charge incurred for maintenance of any Azure hardware or for making data backups."
+  - content: "An administrator wants to tear down the data silos that are hampering the organization's ability to innovate and grow. The administrator is researching the Azure Data Lake Storage features that help to eliminate data silos and increase data democratization. From the point of view of eliminating data silos, which of the following statements is true?"
     choices:
     - content: "Azure Data Lake Storage gives users a single point of entry for accessing data."
       isCorrect: false
@@ -56,8 +56,8 @@ quiz:
       explanation: "Correct. Azure Data Lake Storage uses a hierarchical namespace and blob storage to expose every type of stored data to exploration by users."
     - content: "Azure Data Lake Storage gives all users complete access to all the data stored in the account."
       isCorrect: false
-      explanation: "Incorrect. Although all of an account's data is potentially available, Azure Data Lake Storage lets administrators apply security constraints such as role-based access control (RBAC) and access control lists (ACLs) to limit which security principals can review and modify data."
-  - content: "A senior data engineer wants to build a recommendation engine to suggest products to the organization's customers. The project requires multiple datasets, including overall purchases, purchases by customer, page views, search queries, and product ratings. From the point of view of building such an engine, which of the following statements is true?"
+      explanation: "Incorrect. Although all of an account's data is potentially available, Azure Data Lake Storage lets administrators apply security constraints such as RBAC and ACLs to limit which security principals can review and modify data."
+  - content: "A senior data engineer wants to build a recommendation engine to suggest products to the organization's customers. The project requires multiple datasets, including: overall purchases, purchases by customer, page views, search queries, and product ratings. From the point of view of building such an engine, which of the following statements is true?"
     choices:
     - content: "The engineer requires access only to structured data, so it would be better to build this engine in a data warehouse."
       isCorrect: false
@@ -67,4 +67,4 @@ quiz:
       explanation: "Correct. Azure Data Lake Storage can ingest real-time data from HDInsight Storm, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics."
     - content: "Azure Data Lake Storage cannot output data to a service that would accomplish the goal of this project."
       isCorrect: false
-      explanation: "Incorrect. Azure Data Lake Storage supports many Azure services, including Azure Databricks for transforming data and Azure Machine Learning for training and deploying ML models."
+      explanation: "Incorrect. Azure Data Lake Storage supports many Azure services, including Azure Databricks for transforming data. It also includes Azure Machine Learning for training and deploying ML models."
