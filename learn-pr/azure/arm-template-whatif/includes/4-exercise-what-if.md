@@ -140,7 +140,7 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
       :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-   1. Select the **what-if-before** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
+   1. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
       :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 

@@ -40,12 +40,17 @@ quiz:
       isCorrect: false
       explanation: "Resource Manager figures this out by itself, most of the time."
   - content: |
-      [!include[](includes/5-knowledge-check-q3-question.md)]
+      You have a resource group containing a storage account named `my-storage-account`.
+      You have a template file that declares a storage account named `another-storage-account`.
+      You execute a what-if operation and the incremental deployment mode.
+      Which of these change types will be detected by the what-if operation?
     choices:
-    - content: |
-        [!include[](includes/5-knowledge-check-q3-choice1.md)]
+    - content: Delete
       isCorrect: false
       explanation: "TODO"
-    - content: "TODO"
+    - content: Ignore
       isCorrect: true
+      explanation: "TODO"
+    - content: NoChange
+      isCorrect: false
       explanation: "TODO"
