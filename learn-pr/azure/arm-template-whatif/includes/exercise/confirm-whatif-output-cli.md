@@ -1,10 +1,17 @@
+---
+author: johndowns
+ms.prod: learning-azure
+ms.topic: include
+ms.date: 05/22/2021
+ms.author: jodowns
+---
 Your output will look similar to the following:
 
 # [Screenshot](#tab/screenshpt)
 
 :::image type="content" source="../../media/4-confirm-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the deployment confirm operation." border="true":::
 
-# [Text](#tab/text)
+# [Text](#tab/textoutput)
 
 ```output
 Note: The result may contain false positive predictions (noise).

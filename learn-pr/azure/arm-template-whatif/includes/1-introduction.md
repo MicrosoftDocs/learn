@@ -2,7 +2,7 @@ Deployments using Azure Resource Manager templates (ARM templates) and Bicep fil
 
 ## Example scenario
 
-You're on a software team that's authoring these templates for the company Tailwind Traders. You plan to deploy the described infrastructure in the templates. As you author these templates, it's important that you're aware of any issues before deployment. You've had problems in the past with deploying something other than what you think you're deploying, so you decide to evaluate how to preview changes in your deployments.
+Suppose you help to manage the Azure environment at a toy company. One of your colleagues has asked you to help update some templates you previously created to deploy a virtual network. Before you deploy your updated template, you want to confirm exactly what changes Azure will make, so you decide to evaluate how to preview changes in your deployments.
 
 ## What will we be doing?
 
