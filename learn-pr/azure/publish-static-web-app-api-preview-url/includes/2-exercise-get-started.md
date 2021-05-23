@@ -112,11 +112,11 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 It's time to see your application running locally. Each front-end application runs on a different port.
 
-Click the link to browse to your application.
+1. Select the link to browse to your application.
 
 ::: zone pivot="angular"
 
-Browse to `http://localhost:4200`.
+2. Browse to `http://localhost:4200`.
 
 :::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="Browsing to your Angular web app":::
 
@@ -124,7 +124,7 @@ Browse to `http://localhost:4200`.
 
 ::: zone pivot="react"
 
-Browse to `http://localhost:3000`.
+2. Browse to `http://localhost:3000`.
 
 :::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="Browsing to your React web app":::
 
@@ -132,7 +132,7 @@ Browse to `http://localhost:3000`.
 
 ::: zone pivot="svelte"
 
-Browse to `http://localhost:5000`.
+2. Browse to `http://localhost:5000`.
 
 :::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="Browsing to your Svelte web app":::
 
@@ -140,15 +140,15 @@ Browse to `http://localhost:5000`.
 
 ::: zone pivot="vue"
 
-Browse to `http://localhost:8080`.
+2. Browse to `http://localhost:8080`.
 
 :::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app":::
 
 ::: zone-end
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 
-Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
+3. Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
 You built your application and now it's running locally in your browser.
 
@@ -175,7 +175,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Follow the prompts to copy and paste the code provided in the web browser, which authenticates your Visual Studio Code session.
 
-## Select Your subscription
+## Select your subscription
 
 1. Open Visual Studio Code, and select **File > Open** to open the repository you cloned to your computer in the editor.
 
@@ -331,7 +331,7 @@ From here, you can observe the progress of your app as it builds.
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
-1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click **my-static-web-app-and-api**, and select **Browse Site** to view app in your browser.
+In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click **my-static-web-app-and-api**, and select **Browse Site** to view app in your browser.
 
    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
