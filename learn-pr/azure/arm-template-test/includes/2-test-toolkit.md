@@ -52,7 +52,7 @@ A typical output from a test run can look like this:
      azuredeploy.json must use the location parameter, not resourceGroup().location (except when used as a default value in the main template)
 ```
 
-Successful tests are encoded in green and are prefixed by **[+]**. Failed tests are encoded in red with the prefix **[-]**.
+Successful tests are encoded in green and are prefixed by `[+]`. Failed tests are encoded in red with the prefix `[-]`.
 
 ### Configure your test run with test parameters
 

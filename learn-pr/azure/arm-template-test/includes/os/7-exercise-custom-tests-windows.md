@@ -98,38 +98,46 @@ Run the custom test by following these steps:
    Your output resembles this:
 
    ```output
-    Validating deploy\azuredeploy.json                                                        deploymentTemplate
-    [+] adminUsername Should Not Be A Literal (16 ms)
-    [+] apiVersions Should Be Recent (4 ms)
-    [+] artifacts parameter (1 ms)
-    [-] Custom ParameterNaming (2 ms)  To be implemented
-    [+] DependsOn Best Practices (2 ms)
-    [+] Deployment Resources Must Not Be Debug (2 ms)
-    [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
-    [+] DeploymentTemplate Schema Is Correct (1 ms)
-    [+] Dynamic Variable References Should Not Use Concat (1 ms)
-    [+] IDs Should Be Derived From ResourceIDs (5 ms)
-    [+] Location Should Not Be Hardcoded (7 ms)
-    [+] ManagedIdentityExtension must not be used (1 ms)
-    [+] Min And Max Value Are Numbers (1 ms)
-    [+] Outputs Must Not Contain Secrets (2 ms)
-    [+] Parameters Must Be Referenced (2 ms)                                                    Unreferenced parameter: location
-    [+] Parameters Property Must Exist (1 ms)
-    [+] providers apiVersions Is Not Permitted (1 ms)
-    [+] ResourceIds should not contain (2 ms)
-    [-] Resources Should Have Location (2 ms)                                                   Resource  Location must be an expression or 'global'
-    [+] Secure String Parameters Cannot Have Default (1 ms)
-    [+] Template Should Not Contain Blanks (2 ms)
-    [+] Variables Must Be Referenced (1 ms)
-    [+] Virtual Machines Should Not Be Preview (6 ms)
-    [+] VM Images Should Use Latest Version (1 ms)
-    [+] VM Size Should Be A Parameter (5 ms)
+    Validating deploy\azuredeploy.json
+      deploymentTemplate
+        [+] adminUsername Should Not Be A Literal (16 ms)
+        [+] apiVersions Should Be Recent (4 ms)
+        [+] artifacts parameter (1 ms)
+        [-] Custom ParameterNaming (2 ms)
+            To be implemented
+
+        [+] DependsOn Best Practices (2 ms)
+        [+] Deployment Resources Must Not Be Debug (2 ms)
+        [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
+        [+] DeploymentTemplate Schema Is Correct (1 ms)
+        [+] Dynamic Variable References Should Not Use Concat (1 ms)
+        [+] IDs Should Be Derived From ResourceIDs (5 ms)
+        [+] Location Should Not Be Hardcoded (7 ms)
+        [+] ManagedIdentityExtension must not be used (1 ms)
+        [+] Min And Max Value Are Numbers (1 ms)
+        [+] Outputs Must Not Contain Secrets (2 ms)
+        [-] Parameters Must Be Referenced (2 ms)
+            Unreferenced parameter: location
+    
+        [+] Parameters Property Must Exist (1 ms)
+        [+] providers apiVersions Is Not Permitted (1 ms)
+        [+] ResourceIds should not contain (2 ms)
+        [-] Resources Should Have Location (2 ms)
+            Resource  Location must be an expression or 'global'
+    
+        [+] Secure String Parameters Cannot Have Default (1 ms)
+        [+] Template Should Not Contain Blanks (2 ms)
+        [+] Variables Must Be Referenced (1 ms)
+        [+] Virtual Machines Should Not Be Preview (6 ms)
+        [+] VM Images Should Use Latest Version (1 ms)
+        [+] VM Size Should Be A Parameter (5 ms)
     ```
 
    In the preceding output, your test is fourth from the top and indicated with this line:
 
    ```output
-   [-] Custom ParameterNaming (4 ms)  To be implemented
+   [-] Custom ParameterNaming (4 ms)
+       To be implemented
    ```
 
    Now that you've found the test, leave this terminal window open. You'll reuse it later.
@@ -220,8 +228,8 @@ This command results in the following output:
 ```output
 Validating custom\azuredeploy.json
  deploymentTemplate
-
- [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
+   [-] Custom ParameterNaming (2ms)
+       Parameter 'location' must start with prefix 'tailwind'
 ```
 
 The result indicates that your test works. Let's ensure that's the case by altering the deployment file.
@@ -259,8 +267,9 @@ At this point, you want to verify the correctness of your custom test by changin
    Your output now looks like the following:
 
    ```output
-   Validating custom\azuredeploy.json                                                        deploymentTemplate
-   [+] Custom ParameterNaming (2 ms)
+   Validating custom\azuredeploy.json
+     deploymentTemplate
+       [+] Custom ParameterNaming (2 ms)
    ```
 
 Success! You've implemented and run a custom test. You've also corrected a deployment template to match the test's condition.
