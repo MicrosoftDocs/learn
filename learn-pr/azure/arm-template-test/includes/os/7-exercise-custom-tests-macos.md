@@ -104,7 +104,7 @@ Run the custom test by following these steps:
 
    Your output resembles the following. Notice the highlighted lines show your test:
 
-   :::code language="output" source="7-custom-test-output.txt" highlight="6-7" :::
+   :::code language="plaintext" source="7-custom-test-output.txt" highlight="6-7" :::
 
    Now that you've found the test, leave this terminal window open. You'll reuse it later.
 
