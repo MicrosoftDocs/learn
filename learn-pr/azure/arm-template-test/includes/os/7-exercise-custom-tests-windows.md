@@ -172,7 +172,7 @@ Now you'll give the custom test a proper implementation.
    }
    ```
 
-   The preceding code iterates through all the parameters. It inspects the name attribute and checks whether the name starts with the prefix **tailwind**. If the inspected parameter doesn't match the naming rule, the code then invokes the **Write-Error** cmdlet with a suitable error message.
+   The preceding code iterates through all the parameters. It inspects the `name` attribute and checks whether the name starts with the prefix `tailwind`. If the inspected parameter doesn't match the naming rule, the code then invokes the `Write-Error` cmdlet with a suitable error message.
      
 ## Update the template file
 
@@ -196,7 +196,7 @@ You'll now add a parameter to the template file.
    }
    ```
 
-   The preceding template content defines a parameter **location** that doesn't fulfill the naming rule, because it lacks the **tailwind** prefix.
+   The preceding template content defines a parameter named `location` that doesn't fulfill the naming rule, because it lacks the `tailwind` prefix.
 
 ## Rerun the test toolkit
 
@@ -210,7 +210,7 @@ In Visual Studio Code, run `Test-AzTemplate` from the integrated terminal:
 Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
 ```
 
-The preceding command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
+The preceding command is run with the parameter `-Test`, which takes a test name as input. You've provided `Custom-ParameterNaming` as an argument, which means only your newly developed test will be run.
 
 > [!TIP]
 > Using this parameter is a good practice when you're developing a test because it limits what's being run and the size of the terminal output.
@@ -248,7 +248,7 @@ At this point, you want to verify the correctness of your custom test by changin
    }
    ```
 
-   The parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
+   The parameter named `location` has been renamed to `tailwindLocation`. In theory, this parameter should now pass the test. Let's verify.
 
 1. Continue with the same Visual Studio Code instance and run `Test-AzTemplate` in the integrated terminal:
 

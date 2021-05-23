@@ -1,8 +1,8 @@
-So far you've looked at how to run some tests on your templates. However, you might operate in a domain like a company or team that has its own set of rules. These rules might mean that you want to *customize* the test experience. You might have the following scenarios:
+So far you've looked at how to run some tests on your templates. However, you might operate in a company or team that has its own set of rules. These rules might mean that you want to *customize* the test experience. You might have the following scenarios:
 
 - **Run a specific test suite**. Upon installation of the test toolkit, you're given a set of tests that will be run. These tests are located at the following directory: *<install directory>/arm-ttk/testcases/deploymentTemplate*. 
 
-  It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the parameter **-Test**. You can also edit what tests are being run by removing files in the directory.
+  It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the `-Test` argument. You can also edit what tests are being run by removing files in the directory.
 - **Author and run domain-specific tests**. It's possible to author a test file to enforce domain-specific rules. This unit will focus mostly on this scenario.
 
 ## Authoring and running your own tests
@@ -38,7 +38,7 @@ To author a test file name, you need to write it in PowerShell. The three pieces
    #>
    ```
 
-   The preceding example describes what the test does in a short description in a section called **.Synopsis**. There's also a longer description in a section called **.Description**. Last, there's a section called **.Example** that shows different ways to run the test.
+   The preceding example describes what the test does in a short description in a section called `.Synopsis`. There's also a longer description in a section called `.Description`. Last, there's a section called `.Example` that shows different ways to run the test.
 
 - **Input parameters**. The test file can have a set of input parameters. This section is defined by the keyword **param** and parentheses. It can typically look like this:
 
@@ -54,7 +54,7 @@ To author a test file name, you need to write it in PowerShell. The three pieces
    )
    ```
 
-   The preceding example shows three parameters: **$TemplateObject**, **$TemplateFileName**, and **$SampleName**. The first two parameters are mandatory, as shown by the **Parameter[(Mandatory = $true)]** decoration. The parameters are named according to their meaning. **$TemplateObject** contains an object representation of the template file, and **TemplateFileName** contains the name of the file being tested.  
+   The preceding example shows three parameters: `$TemplateObject`, `$TemplateFileName`, and `$SampleName`. The first two parameters are mandatory, as shown by the `Parameter[(Mandatory = $true)]` decoration. The parameters are named according to their meaning. `$TemplateObject` contains an object representation of the template file, and `TemplateFileName` contains the name of the file being tested.  
 - **Test logic**. The last part of a test is the test logic. Most tests usually want to do the following steps:
 
    1. Iterate through the template.
@@ -71,10 +71,12 @@ There are plenty of helpers that will help you find the content you need and rep
    Find-JsonContent -Key apiVersion -Value * -Like
    ```
 
-   The preceding code helps find a JSON attribute with the name **apiVersion** and a value of *, which essentially means all attributes named **apiVersion**. It would match a JSON like this:
+   The preceding code helps find a JSON attribute with the name `apiVersion` and a value of `*`, which essentially means all attributes named `apiVersion`. It would match a JSON object like this:
 
    ```json
-   { "apiVersion": "1.01" }
+   {
+     "apiVersion": "2021-01-01"
+   }
    ```
 
 - **Write-Error**. Helps you communicate to the test runner that something is incorrect in the template. You can use it to express an error message and interpolate a string expression with any variables you need. Here's an example of how to use it:
@@ -87,4 +89,4 @@ There are plenty of helpers that will help you find the content you need and rep
 
 At this point, you've authored your file. It will be run together with all other files in the same directory.
 
-As with the other test, you can opt to run only your specific test file by using the **-Test** parameter. As an argument, you'd give it the test file name stripped of the file extensions. **Custom-Test.test.ps1** would then be run by itself through `Test-AzTemplate -TemplatePath /path/to/template -Test Custom-Test`.
+As with the other test, you can opt to run only your specific test file by using the `-Test` parameter. As an argument, you'd give it the test file name stripped of the file extensions. **Custom-Test.test.ps1** would then be run by itself through `Test-AzTemplate -TemplatePath /path/to/template -Test Custom-Test`.

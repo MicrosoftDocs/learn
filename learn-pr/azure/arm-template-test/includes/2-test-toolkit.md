@@ -5,12 +5,12 @@ When we develop Azure Resource Manager templates (ARM templates), there are ways
 
 There are recommendations on different levels: everything from parameters and variables, to recommendations that apply to your resources. Let's look at these recommendations from a high level and see what can be gained from adhering to them:
 
-- **Maintainability**. As you develop a template, from authoring it the first time to updating it, keeping it clean and orderly becomes challenging over time. As your template grows, so do constructs like parameters and variables. It's important that you understand what each of them is used for, and how to use them appropriately. 
+- **Maintainability**. As you develop a template, from authoring it the first time to updating it, keeping it clean and orderly becomes challenging over time. As your template grows, so do your parameters and variables. It's important that you understand what each of them is used for, and how to use them appropriately. 
 
   Imagine a scenario where a parameter is badly named and you're struggling to understand what it does. Or you're using a hardcoded value where you shouldn't, and when something changes, your Azure services go down. All these issues contribute to the burden of having to understand and later dismiss what you're looking at. Being disciplined with how you name things, and clean things up, can help mitigate the effects of those scenarios.
-- **Correctness**. Say you've taken all precautions to name things in a good way, but there are too many rules to keep track of. Such situations call for a tool that enforces all these rules and regulations.
-- **Flexibility**. Ensure that your templates are flexible enough to be used in any environment.
-- **Extensibility**. Sometimes you want to add your own recommendations. The domain that you work in as a company or team might have domain-specific rules. You want a way to apply these domain-specific rules. However, there's a limit to what a tool or script can do when it's looking for and highlighting issues.
+- **Correctness**. You might try to name everything in the right way, but there could just be too many rules to keep track of. Such situations call for a tool that reminds you of all these rules and regulations, and enforces them.
+- **Flexibility**. Ensure that your templates are flexible enough to be used in any environment. If you don't parameterize your templates properly, they may not be possible to reuse.
+- **Extensibility**. Sometimes you want to add your own recommendations. Your company or team might have your own rules to enforce.
 
 ## The ARM Template Test Toolkit
 
@@ -22,7 +22,7 @@ Using a testing tool is a good idea, so you can focus on authoring while knowing
 
 ### Installing the tool
 
-The tool is a PowerShell script. To be able to run it, use the following steps:
+The tool is a PowerShell script. To be able to run it, you need to follow these steps:
 
 1. **Install PowerShell Core**. This task is done differently depending on whether you're on Linux, Mac, or Windows.
 1. **Download the script**. The script is hosted in a GitHub repository. You can download it from there or fetch it via a `git clone` command.
@@ -35,10 +35,8 @@ You'll see how to do all of this in the next unit. Once you've installed the too
 Running the tests involves invoking the script with the appropriate arguments. `-TemplatePath` is a mandatory argument that expects a string that points to the location of the deployment template file. The template filename must either be *azuredeploy.json* or *maintemplate.json*. A typical test run can therefore look like the following command:
 
 ```powershell
-Test-AzTemplate.sh -TemplatePath path/to/template
+Test-AzTemplate -TemplatePath path/to/template
 ```
-
-<!-- TODO check the .sh thing - doesn't look right -->
 
 The tool tests the template file and also tests any template files in the same directory and its subfolders.
 
