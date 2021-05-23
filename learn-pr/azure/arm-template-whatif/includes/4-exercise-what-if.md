@@ -19,7 +19,7 @@ You start with an existing template that your team has been using. The template 
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ::: zone pivot="biceppowershell,bicepcli"
 
@@ -33,7 +33,7 @@ You start with an existing template that your team has been using. The template 
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ## TODO bootstrapping
 
@@ -130,7 +130,7 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ::: zone pivot="biceppowershell,bicepcli"
 
@@ -148,7 +148,7 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ## Run the what-if command with the modified template
 
@@ -247,11 +247,11 @@ You'll notice that the result is color coded in addition to having a prefix:
 
 1. Update the *azuredeploy.json* file in Visual Studio Code, remove all of the contents of the `resources` array. When you're done, your template should look like this:
 
-   :::code language="json" source="code/4-template-emptuy.json" :::
+   :::code language="json" source="code/4-template-empty.json" :::
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ::: zone pivot="biceppowershell,bicepcli"
 
@@ -259,7 +259,7 @@ You'll notice that the result is color coded in addition to having a prefix:
 
 1. Save the template.
 
-:: zone-end
+::: zone-end
 
 ## Deploy by using complete mode and the confirmation option
 
