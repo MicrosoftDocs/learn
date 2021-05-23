@@ -12,6 +12,7 @@ title: Preview Azure deployment changes by using what-if
 summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so.
 abstract: |
   After completing this module, you'll be able to:
+  - Describe the two deployment modes in Azure and their effects.
   - Preview what changes will happen before you deploy by using the what-if operation.
 iconUrl: /learn/achievements/arm-template-test.svg
 levels:

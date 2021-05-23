@@ -4,7 +4,7 @@ You're part of a development team at the company Tailwind Traders. As part of th
 
 The tool is a PowerShell script. To be able to run it, use the following steps:
 
-- **Install the PowerShell Core**. This task is done differently depending on whether you're on Linux, Mac, or Windows.
+- **Install PowerShell Core**. This task is done differently depending on whether you're on Linux, Mac, or Windows.
 - **Download the script**. The script is hosted in a GitHub repository. You can download it from there or fetch it via a `git clone` command.
 - **Import the script**. This step is just a one-liner instruction that you enter in a terminal window.
 

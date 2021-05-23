@@ -13,7 +13,6 @@ metadata:
 durationInMinutes: 4
 content: ""
 quiz:
-  title: Check your knowledge
   questions:
   - content: "What scenario describes most accurately the benefits of using the what-if operation when you're deploying a resource in Azure?"
     choices:
@@ -30,7 +29,7 @@ quiz:
     choices:
     - content: "Resources that are not specified in the template are removed."
       isCorrect: true
-      explanation: "The answer is correct."  
+      explanation: "In complete mode, Resource Manager will delete any resources not declared in the template."  
     - content: "Existing resources are left unchanged, even if they're not specified in the template."
       isCorrect: false
       explanation: "This behavior is called *incremental mode* and is the opposite of complete mode."

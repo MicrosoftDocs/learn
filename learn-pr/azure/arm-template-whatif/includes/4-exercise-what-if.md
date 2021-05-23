@@ -138,13 +138,13 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
    1. Select **1 Succeeded** to see the details of the deployment.
 
-      :::image type="content" source="../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
    1. Select the **what-if-before** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
-      :::image type="content" source="../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
-      :::image type="content" source="../media/3-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with one virtual network resource listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with one virtual network resource listed." border="true":::
 
       Leave the page open in your browser. You'll check on deployments again later.
 
@@ -234,12 +234,53 @@ az deployment group what-if \
 
 ::: zone-end
 
-The what-if output is similar to:
+The what-if output is similar to the below:
 
-<!-- TODO redo with screenshot -->
+::: zone pivot="jsoncli,bicepcli"
+
+:::image type="content" source="../media/4-whatif-cli.png" alt-text="TODO" border="true":::
+
+TODO text
 
 ```output
-Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
+
+Resource and property changes are indicated with these symbols:
+  - Delete
+  + Create
+  ~ Modify
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
+
+  ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
+    - tags.Owner:                    "Team A"
+    + properties.enableVmProtection: false
+    ~ properties.addressSpace.addressPrefixes: [
+      - 0: "10.0.0.0/16"
+      + 0: "10.0.0.0/15"
+      ]
+    ~ properties.subnets: [
+      - 0:
+
+          name:                     "subnet001"
+          properties.addressPrefix: "10.0.0.0/24"
+
+      ]
+
+Resource changes: 1 to modify.
+```
+
+::: zone-end
+
+::: zone pivot="jsonpowershell,biceppowershell"
+
+:::image type="content" source="../media/4-whatif-powershell.png" alt-text="TODO" border="true":::
+
+```output
+Note: The result may contain false positive predictions (noise).
 You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
 
 Resource and property changes are indicated with these symbols:
@@ -250,28 +291,29 @@ Resource and property changes are indicated with these symbols:
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c
+Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
 
-    ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
-      - tags.Owner: "Team A"
-[
-  - 0: "10.0.0.0/16"
-  + 0: "10.0.0.0/15"
-  ]
-[
-  - 0:
+  ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
+    - tags.Owner:                    "Team A"
+    + properties.enableVmProtection: false
+    ~ properties.addressSpace.addressPrefixes: [
+      - 0: "10.0.0.0/16"
+      + 0: "10.0.0.0/15"
+      ]
+    ~ properties.subnets: [
+      - 0:
 
-      name:                     "subnet001"
-      properties.addressPrefix: "10.0.0.0/24"
+          name:                     "subnet001"
+          properties.addressPrefix: "10.0.0.0/24"
 
-  ]
+      ]
 
-* Microsoft.Storage/storageAccounts/cloudshell666004860
+  * Microsoft.Storage/storageAccounts/cloudshell843483168
 
 Resource changes: 1 to modify, 1 to ignore.
-
->
 ```
+
+::: zone-end
 
 You'll notice that the result is color-coded in addition to having a prefix:
 
@@ -328,7 +370,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile main.bicep
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)] <!-- TODO redo with screenshot -->
+    [!include[](code/4-confirm-whatif-output-powershell.md)]
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 
@@ -345,7 +387,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile azuredeploy.json
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)] <!-- TODO redo with screenshot -->
+    [!include[](code/4-confirm-whatif-output-powershell.md)]
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 
@@ -364,9 +406,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     [!include[](code/4-confirm-whatif-output-cli.md)]
 
-    Note how the last line of the output is a confirmation. It's asking you to select **y** or **n** to proceed.
-
-1. Enter **y** (for "yes") to confirm deployment.
+1. Enter **y** (for "yes") to execute the deployment and clean out your environment.
 
 ::: zone-end
 
@@ -383,17 +423,12 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     [!include[](code/4-confirm-whatif-output-cli.md)]
 
-    Note how the last line of the output is a confirmation. It's asking you to select **y** or **n** to proceed.
-
-1. Enter **y** (for "yes") to confirm deployment.
+1. Enter **y** (for "yes") to execute the deployment and clean out your environment.
 
 ::: zone-end
 
 ## Verify the deployment
 
-Go back to the open browser that you used earlier, and verify that there were two successful deployments:
+Go back to the open browser that you used earlier, and verify that the virtual network is no longer there, as in this screenshot:
 
-- The first one that you deployed
-- The complete one that removed all resources, so the virtual network is no longer there
-
-:::image type="content" source="../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with the virtual network resource no longer listed." border="true":::
+:::image type="content" source="../media/4-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with the virtual network resource no longer listed." border="true":::
