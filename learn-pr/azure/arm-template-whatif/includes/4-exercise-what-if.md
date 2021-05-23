@@ -372,7 +372,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile main.bicep
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)]
+    [!include[](exercise/confirm-whatif-output-powershell.md)]
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 
@@ -389,7 +389,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile azuredeploy.json
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)]
+    [!include[](exercise/confirm-whatif-output-powershell.md)]
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 

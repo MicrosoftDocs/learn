@@ -1,6 +1,6 @@
 Your output will look similar to the following screenshot:
 
-:::image type="content" source="../media/4-confirm-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
+:::image type="content" source="../../media/4-confirm-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the deployment confirm operation." border="true":::
 
 Here's the output in text form:
 
@@ -17,7 +17,7 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 
   - Microsoft.Network/virtualNetworks/vnet-001
 
-      id: "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Network/virtualNetworks/vnet-001"
+      id:              "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Network/virtualNetworks/vnet-001"
       location:        "westus"
       name:            "vnet-001"
       tags.CostCenter: "12345"
@@ -26,7 +26,7 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 
   - Microsoft.Storage/storageAccounts/cloudshell843483168
 
-      id: "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Storage/storageAccounts/cloudshell843483168"
+      id:                     "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Storage/storageAccounts/cloudshell843483168"
       kind:                   "Storage"
       location:               "southeastasia"
       name:                   "cloudshell843483168"
@@ -38,8 +38,7 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 
 Resource changes: 2 to delete.
 
-Are you sure you want to execute the deployment?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+Are you sure you want to execute the deployment? (y/n):
 ```
 
 Note how the last line of the output is a confirmation. It's asking you to select **y** or **n** to proceed.
