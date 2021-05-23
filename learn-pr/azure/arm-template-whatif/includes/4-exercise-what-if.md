@@ -406,7 +406,7 @@ In these next steps, you'll deploy an empty template over your existing environm
       --template-file main.bicep
     ```
 
-    [!include[](code/4-confirm-whatif-output-cli.md)]
+    [!include[](exercise/confirm-whatif-output-cli.md)]
 
 1. Enter **y** (for "yes") to execute the deployment and clean out your environment.
 
@@ -423,7 +423,7 @@ In these next steps, you'll deploy an empty template over your existing environm
       --template-file azuredeploy.json
     ```
 
-    [!include[](code/4-confirm-whatif-output-cli.md)]
+    [!include[](exercise/confirm-whatif-output-cli.md)]
 
 1. Enter **y** (for "yes") to execute the deployment and clean out your environment.
 
