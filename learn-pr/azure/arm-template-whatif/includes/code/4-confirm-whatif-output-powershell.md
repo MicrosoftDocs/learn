@@ -1,8 +1,8 @@
 Your output will look similar to the following screenshot:
 
-:::image type="content" source="../media/4-confirm-powershell.png" alt-text="TODO" border="true":::
+:::image type="content" source="../media/4-confirm-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
 
-TODO text:
+Here's the output in text form:
 
 ```output
 Note: The result may contain false positive predictions (noise).

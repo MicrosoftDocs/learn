@@ -238,9 +238,9 @@ The what-if output is similar to the below:
 
 ::: zone pivot="jsoncli,bicepcli"
 
-:::image type="content" source="../media/4-whatif-cli.png" alt-text="TODO" border="true":::
+:::image type="content" source="../media/4-whatif-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the what-if operation." border="true":::
 
-TODO text
+Here's the output in text form:
 
 ```output
 Note: The result may contain false positive predictions (noise).
@@ -277,7 +277,9 @@ Resource changes: 1 to modify.
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 
-:::image type="content" source="../media/4-whatif-powershell.png" alt-text="TODO" border="true":::
+:::image type="content" source="../media/4-whatif-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
+
+Here's the output in text form:
 
 ```output
 Note: The result may contain false positive predictions (noise).

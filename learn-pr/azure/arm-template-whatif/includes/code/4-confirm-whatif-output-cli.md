@@ -1,8 +1,8 @@
 Your output will look similar to the following screenshot:
 
-:::image type="content" source="../media/4-confirm-cli.png" alt-text="TODO" border="true":::
+:::image type="content" source="../media/4-confirm-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the what-if operation." border="true":::
 
-TODO text:
+Here's the output in text form:
 
 ```output
 Note: The result may contain false positive predictions (noise).
