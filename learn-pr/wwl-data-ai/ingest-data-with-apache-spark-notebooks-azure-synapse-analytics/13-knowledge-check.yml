@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/09/2021
+  ms.date: 04/23/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -16,15 +16,15 @@ quiz:
   questions:
   - content: "What are Azure Synapse Studio notebooks based on?"
     choices:
-    - content: "SQL Pool."
+    - content: "dedicated SQL pool."
       isCorrect: false
-      explanation: "InCorrect. You can attach a dedicated SQL Pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Spark based."
-    - content: "Spark."
+      explanation: "Incorrect. You can attach a dedicated SQL pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Apache Spark based."
+    - content: "Apache Spark."
       isCorrect: true
-      explanation: "Correct. Azure Synapse Studio notebook is purely Spark based."
-    - content: "Spark Pool."
+      explanation: "Correct. Azure Synapse Studio notebook is purely Apache Spark based."
+    - content: "Apache Spark pool."
       isCorrect: false
-      explanation: "InCorrect. You can attach a Apache Spark Pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Spark based."
+      explanation: "Incorrect. You can attach a Apache Spark pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Spark based."
   - content: "How can all notebooks in Synapse studio be saved?"
     choices:
     - content: "Select the **Publish all** button on the workspace command bar."
@@ -32,7 +32,7 @@ quiz:
       explanation: "Correct. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."
     - content: "Select the **Publish** button on the notebook command bar."
       isCorrect: false
-      explanation: "Incorrect. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."
+      explanation: "Incorrect. **Publish** button on the workspace command bar will only save the current workbook."
     - content: "Using CTRL + S."
       isCorrect: false
       explanation: "Incorrect. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."

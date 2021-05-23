@@ -4,20 +4,20 @@ Move forward with your governance journey by following the most suitable Govern 
 
 For standard enterprises:
 
-- [Improve the Security Baseline discipline (standard enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/security-baseline-improvement?azure-portal=true)
-- [Improve the Resource Consistency discipline (standard enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/resource-consistency-improvement?azure-portal=true)
-- [Improve the Cost Management discipline (standard enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/cost-management-improvement?azure-portal=true)
-- [Multicloud improvement (standard enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/multicloud-improvement?azure-portal=true)
+- [Improve the Security Baseline discipline (standard enterprise)](/azure/cloud-adoption-framework/govern/guides/standard/security-baseline-improvement?azure-portal=true)
+- [Improve the Resource Consistency discipline (standard enterprise)](/azure/cloud-adoption-framework/govern/guides/standard/resource-consistency-improvement?azure-portal=true)
+- [Improve the Cost Management discipline (standard enterprise)](/azure/cloud-adoption-framework/govern/guides/standard/cost-management-improvement?azure-portal=true)
+- [Multicloud improvement (standard enterprise)](/azure/cloud-adoption-framework/govern/guides/standard/multicloud-improvement?azure-portal=true)
 
 For complex enterprises:
 
-- [Improve the Security Baseline discipline (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/security-baseline-improvement?azure-portal=true)
-- [Improve the Resource Consistency discipline (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/resource-consistency-improvement?azure-portal=true)
-- [Improve the Cost Management discipline (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/cost-management-improvement?azure-portal=true)
-- [Multicloud improvement (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multicloud-improvement?azure-portal=true).
-- [Improve the Identity Baseline discipline (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true)
-- [Multiple layers of governance (complex enterprise)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true)
+- [Improve the Security Baseline discipline (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/security-baseline-improvement?azure-portal=true)
+- [Improve the Resource Consistency discipline (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/resource-consistency-improvement?azure-portal=true)
+- [Improve the Cost Management discipline (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/cost-management-improvement?azure-portal=true)
+- [Multicloud improvement (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/multicloud-improvement?azure-portal=true).
+- [Improve the Identity Baseline discipline (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true)
+- [Multiple layers of governance (complex enterprise)](/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true)
 
 ## Next steps
 
-To learn more about cloud governance, see the [Govern methodology overview](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/?azure-portal=true?). This article will guide you through four steps to develop cloud governance.
+To learn more about cloud governance, see the [Govern methodology overview](/azure/cloud-adoption-framework/govern/?azure-portal=true?). This article will guide you through four steps to develop cloud governance.

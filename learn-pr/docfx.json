@@ -241,6 +241,19 @@
                 "dest": "modules"
             },
             {
+                "src": "pytorch",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },            
+            {
                 "src": "reactors",
                 "files": [
                     "**/*.yml",
@@ -476,6 +489,19 @@
                     "**/design/**",
                     "**/resources/**"
                 ]
+            },
+            {
+                "src": "sports-machine-learning",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             }
         ],
         "resource": [{
@@ -490,7 +516,31 @@
                 "dest": "modules"
             },
             {
+                "src": "pytorch",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg"
+                ],
+                "dest": "modules"
+            },            
+            {
                 "src": "student-evangelism",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.txt",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "sports-machine-learning",
                 "files": [
                     "**/*.gif",
                     "**/*.png",
@@ -861,6 +911,25 @@
                     "pl-pl",
                     "pt-pt",
                     "tr-tr",
+                    "sv-se"
+                ],
+                "sports-machine-learning/**/*.yml": [
+                    "ar-sa",
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
+                    "zh-tw",
+                    "cs-cz",
+                    "pl-pl",
+                    "tr-tr",
+                    "hu-hu",
+                    "nl-nl",
+                    "pt-pt",
                     "sv-se"
                 ],
                 "windows/**/*.yml": [

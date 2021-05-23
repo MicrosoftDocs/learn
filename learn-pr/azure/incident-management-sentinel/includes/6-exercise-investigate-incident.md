@@ -25,11 +25,11 @@ In this task, you'll create an analytics rule that will create an incident when 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
     ```kusto
-    AzureActivity
-    | where OperationName == 'Delete Virtual Machine'
-    | where ActivityStatus == 'Accepted'
-    | extend AccountCustomEntity = Caller
-    | extend IPCustomEntity = CallerIpAddress
+   AzureActivity
+   | where OperationName == 'Delete Virtual Machine'
+   | where ActivityStatus == 'Succeeded'
+   | extend AccountCustomEntity = Caller
+   | extend IPCustomEntity = CallerIpAddress
     ```
 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
@@ -55,6 +55,9 @@ In this task, you'll delete a VM to test rule detection and incident creation.
 1. In the Azure portal, search for and select **Virtual machines**.
 2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
+
+  > [!NOTE] 
+  >  Please give the operation several minutes to complete before the next step! 
 
 ## Task 3: Investigate an incident
 

@@ -391,7 +391,7 @@ In some instances, you need to deploy from an external or remote location instea
     
     In this exercise, you'll deploy an ARM template from a GitHub repo. The repo is public, so you don't need to worry about deploying a template that requires a shared access signature (SAS) token. For details about using a private or secured remote location, see [Deploy a private template with SAS token](https://docs.microsoft.com/azure/azure-resource-manager/templates/secure-template-with-sas-token?tabs=azure-cli&azure-portal=true).
 
-    The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json. It's a short template that will deploy a simple storage account in your sandbox environment.
+    The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json. It's a short template that will deploy a simple storage account in your sandbox environment.
 1. The Azure CLI command is exactly the same as for a local template. The only difference is that the `--template-uri` parameter replaces the `--template-file` parameter.
 1. Use the following code to deploy in the provided sandbox:
 
@@ -402,7 +402,7 @@ In some instances, you need to deploy from an external or remote location instea
 
     az deployment group create \
     --name $deploymentname \
-    --template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+    --template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json
     ```
 
     The results will be like the following code block. They outline the details of the template location in the `"templateLink"` section. They also show if the deployment was successful in the `"provisioningState"` section.
@@ -469,7 +469,7 @@ In some instances, you need to deploy from an external or remote location instea
           "contentVersion": "1.0.0.0",
           "id": null,
           "relativePath": null,
-          "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json"
+          "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json"
         },
         "timestamp": "2020-08-19T20:53:36.759312+00:00",
         "validatedResources": null

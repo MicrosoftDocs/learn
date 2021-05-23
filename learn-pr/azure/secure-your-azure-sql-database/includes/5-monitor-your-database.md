@@ -25,7 +25,7 @@ Otherwise, it's recommended you enable only server-level blob auditing and leave
 
 Let's look at the steps you take to set up auditing on your system.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the search bar at the top of the portal, search for **serverNNNN** (replacing `NNNN` with the number from your server name), then select the server in the portal.
 

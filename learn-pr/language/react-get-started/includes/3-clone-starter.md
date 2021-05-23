@@ -1,6 +1,7 @@
 We'll use a starter project so we can begin writing code quickly. The starter contains the minimum structure we need to start developing a React application by using Snowpack: 
-* Two files
-* Two empty directories
+
+- Two files
+- Two empty directories
 
 ## Clone the repository and install packages
 

@@ -1,6 +1,3 @@
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
-
 In this exercise, you'll update the Bicep template that you previously created so that it:
 - Accepts parameters for the resource locations and names.
 - Uses your business rules to select the right SKUs for the resources being deployed.

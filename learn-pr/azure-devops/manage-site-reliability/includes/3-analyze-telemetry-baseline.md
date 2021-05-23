@@ -6,7 +6,7 @@ The team is meeting to put together a job description for an SRE. They've come t
 
 ## Application Insights
 
-[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview?azure-portal=true) analyzes the performance of your web application and can warn you about potential problems.
+[Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) analyzes the performance of your web application and can warn you about potential problems.
 
 This feature requires no special setup other than configuring your app for Application Insights (on ASP.NET, Java, or Node.js, and in the web page code). It's active once your app generates enough telemetry.
 
@@ -24,7 +24,7 @@ Application Insights sends a notification when it detects that the performance o
 
     Your app has a performance issue that affects only some requests. For example, pages are loading more slowly on one type of browser than on others; or requests are being served more slowly from one particular server. Application Insights algorithms look at page load times, request response times, and dependency response times.
 
-[Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics?azure-portal=true) is an Application Insights feature that warns you of potential performance problems and failure anomalies in your web application. It requires at least eight days of telemetry, at a sufficient volume, to establish a baseline. After that time period, any significant issue produces a notification.
+[Smart Detection](/azure/azure-monitor/app/proactive-diagnostics?azure-portal=true) is an Application Insights feature that warns you of potential performance problems and failure anomalies in your web application. It requires at least eight days of telemetry, at a sufficient volume, to establish a baseline. After that time period, any significant issue produces a notification.
 
 ## Does an alert always signify a problem?
 
@@ -68,7 +68,7 @@ Let's look at these steps more closely, in terms of page load times.
 
 ### Triage
 
-When looking at the issue, the first thing to ask is: does it matter? If a page is always slow to load but only 1% of your site's users ever look at it, then the issue is low priority. On the other hand, if only 1% of users open the page but it throws an exception every time, the priority is high. Use the impact statement (affected users or percentage of traffic) as a general guide, but be aware that impact isn't the whole story. Gather other evidence and consider the parameters of the issue. If the issue is dependent on geography, set up [availability tests](https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true) that include the region.
+When looking at the issue, the first thing to ask is: does it matter? If a page is always slow to load but only 1% of your site's users ever look at it, then the issue is low priority. On the other hand, if only 1% of users open the page but it throws an exception every time, the priority is high. Use the impact statement (affected users or percentage of traffic) as a general guide, but be aware that impact isn't the whole story. Gather other evidence and consider the parameters of the issue. If the issue is dependent on geography, set up [availability tests](/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true) that include the region.
 
 ### Diagnose slow page loads
 
@@ -81,9 +81,9 @@ In diagnosing the issue, ask yourself these questions:
 
 If you're investigating browser response times, open the **Browsers** metric. The segmented display of browser page load times shows where the time is going.
 
-- If **Send Request Time** is high, either the server is responding slowly or the request is a POST with a large amount of data. Look at the [performance metrics](https://docs.microsoft.com/azure/azure-monitor/app/web-monitor-performance#metrics) to investigate response times.
-- Set up [dependency tracking](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-dependencies?azure-portal=true) to see whether the delay is due to external services or your database.
-- If **Receiving Response** is predominant, your page and its dependent parts - JavaScript, CSS, images, and so on (but not asynchronously loaded data) are long. Set up an [availability test](https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true), and be sure to set the option to load dependent parts. When you get some results, open the detail of a result and expand it to see the load times of different files.
+- If **Send Request Time** is high, either the server is responding slowly or the request is a POST with a large amount of data. Look at the [performance metrics](/azure/azure-monitor/app/web-monitor-performance#metrics) to investigate response times.
+- Set up [dependency tracking](/azure/azure-monitor/app/asp-net-dependencies?azure-portal=true) to see whether the delay is due to external services or your database.
+- If **Receiving Response** is predominant, your page and its dependent parts - JavaScript, CSS, images, and so on (but not asynchronously loaded data) are long. Set up an [availability test](/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true), and be sure to set the option to load dependent parts. When you get some results, open the detail of a result and expand it to see the load times of different files.
 - A **High Client Processing** time suggests scripts are running slowly. If the reason isn't obvious, consider adding some timing code and send the times in `trackMetric` calls.
 
 ### Improve slow pages
