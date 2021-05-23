@@ -1,7 +1,12 @@
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
+[!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
 
 Here, you'll deploy a template that creates a virtual network in your sandbox subscription. After the deployment is complete, you'll deploy a template that's slightly different. The second deployment will include the what-if operation to review the expected changes.
+
+::: zone pivot="biceppowershell,bicepcli"
+
+This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+
+::: zone-end
 
 ## Create the starting template
 
@@ -35,11 +40,35 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone-end
 
-## TODO bootstrapping
-
-## Deploy the template
+## Deploy the template to Azure
 
 ::: zone pivot="biceppowershell"
+
+[!include[](../../../bicep/shared/includes/bicep-exercise-deploy-powershell.md)]
+
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+[!include[](../../../bicep/shared/includes/bicep-exercise-deploy-cli.md)]
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
+
+[!include[](exercise/json-exercise-deploy-powershell.md)]
+
+::: zone-end
+
+::: zone pivot="jsoncli"
+
+[!include[](exercise/json-exercise-deploy-cli.md)]
+
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+### Deploy the template using Azure PowerShell
 
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
@@ -53,6 +82,8 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 
 ::: zone pivot="jsonpowershell"
 
+### Deploy the template using Azure PowerShell
+
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
 ```powershell
@@ -64,6 +95,8 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 ::: zone-end
 
 ::: zone pivot="bicepcli"
+
+### Deploy the template using the Azure CLI
 
 Run `az deployment group create` to deploy the template.
 
@@ -77,6 +110,8 @@ The deployment will take a minute or two to finish.
 
 ::: zone pivot="jsoncli"
 
+### Deploy the template using the Azure CLI
+
 Run `az deployment group create` to deploy the template.
 
 ```azurecli
@@ -87,15 +122,20 @@ The deployment will take a minute or two to finish.
 
 ::: zone-end
 
-## Verify the deployment in the portal
+## Verify the deployment
 
 To validate that your deployment has been created and sent to Azure, you go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
    1. Select your avatar in the upper corner of the page.
+
    1. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
+
    1. Select **Resource groups**.
+
    1. Select <rgn>[sandbox resource group name]</rgn>.
+
    1. In **Overview**, you see that one deployment succeeded.
+
    1. Select **1 Succeeded** to see the details of the deployment.
 
       :::image type="content" source="../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
