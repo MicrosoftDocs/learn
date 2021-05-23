@@ -10,11 +10,20 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+content: ""
 quiz:
-  title: Check your knowledge
   questions:
+  - content: "Which of these problems will the ARM TTK find?"
+    choices:
+    - content: A parameter in your template isn't being used.
+      isCorrect: true
+      explanation: The ARM TTK detects unused parameters.
+    - content: The name you've chosen for a storage account has already been taken.
+      isCorrect: false
+      explanation: The ARM TTK doesn't validate whether resource names are already taken. Validating your deployment, or running the what-if command, will identify these issues.
+    - content: A resource will be deleted if you run the deployment in complete mode.
+      isCorrect: false
+      explanation: The what-if operation detects changes to resources, including resources that will be deleted.
   - content: "How would you run a single test by using the test toolkit?"
     choices:
     - content: "Use the flag `-TestName` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
@@ -29,3 +38,16 @@ quiz:
     - content: "Use the `-Run-Only` flag and specify which test with double quotation marks."
       isCorrect: false
       explanation: "The flag is called `-Test`."
+  - content: |
+      You are asked to create a new test for the ARM-TTK to detect whenever an API version is older than a specified value.
+      Which of these helper cmdlets can you use to inspect the resource definitions?
+    choices:
+    - content: "`Test-AzTemplate`"
+      isCorrect: false
+      explanation: The `Test-AzTemplate` cmdlet executes the ARM-TTK tests, but you don't use it to inspect resource definitions within your own custom tests.
+    - content: "`Find-JsonContent`"
+      isCorrect: true
+      explanation: You can use the `Find-JsonContent` cmdlet to search for attributes within the resource definition, including the `apiVersion`.
+    - content: "`Inspect-AzResourceDefinition`"
+      isCorrect: false
+      explanation: This isn't a real helper cmdlet.
