@@ -13,14 +13,14 @@ durationInMinutes: 4
 content: ""
 quiz:
   questions:
-  - content: "Which of these problems will the ARM TTK find?"
+  - content: "Which of these problems will the ARM-TTK find?"
     choices:
     - content: A parameter in your template isn't being used.
       isCorrect: true
-      explanation: The ARM TTK detects unused parameters.
+      explanation: The ARM-TTK detects unused parameters.
     - content: The name you've chosen for a storage account has already been taken.
       isCorrect: false
-      explanation: The ARM TTK doesn't validate whether resource names are already taken. Validating your deployment, or running the what-if command, will identify these issues.
+      explanation: The ARM-TTK doesn't validate whether resource names are already taken. Validating your deployment, or running the what-if command, will identify these issues.
     - content: A resource will be deleted if you run the deployment in complete mode.
       isCorrect: false
       explanation: The what-if operation detects changes to resources, including resources that will be deleted.
