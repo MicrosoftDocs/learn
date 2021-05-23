@@ -10,6 +10,9 @@ You decide to evaluate the existing set of tools that addresses these issues.
 
 In this module, you gain an understanding of what practices are beneficial to follow and why it's important. You also practice using the ARM template test toolkit to correct issues in your templates.
 
+> [!NOTE]
+> Bicep is a new language for defining your Azure resources. It has a simpler authoring experience than JSON, as well as other features that help improve the quality of your infrastructure as code. We recommend that anyone new to infrastructure as code on Azure use Bicep instead of JSON. To learn about Bicep, see [Introduction to infrastructure as code using Bicep](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/).
+
 ## What is the main goal?
 
 By the end of this module, you'll be able to validate your template's adherence to recommendations by using the ARM template test toolkit. You'll also be able to implement domain-specific rules for deployments that can be run by using the ARM template test toolkit.
