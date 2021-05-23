@@ -7,7 +7,7 @@ ms.author: jodowns
 ---
 # [Screenshot](#tab/screenshpt)
 
-:::image type="content" source="../media/4-whatif-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the what-if operation." border="true":::
+:::image type="content" source="../../media/4-whatif-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the what-if operation." border="true":::
 
 # [Text](#tab/textoutput)
 

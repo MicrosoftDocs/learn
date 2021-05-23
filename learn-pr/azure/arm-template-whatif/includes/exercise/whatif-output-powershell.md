@@ -7,7 +7,7 @@ ms.author: jodowns
 ---
 # [Screenshot](#tab/screenshpt)
 
-:::image type="content" source="../media/4-whatif-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
+:::image type="content" source="../../media/4-whatif-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
 
 # [Text](#tab/textoutput)
 
