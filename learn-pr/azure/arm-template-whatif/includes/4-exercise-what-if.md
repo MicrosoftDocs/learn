@@ -236,6 +236,8 @@ az deployment group what-if \
 
 The what-if output is similar to:
 
+<!-- TODO redo with screenshot -->
+
 ```output
 Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
 You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
@@ -271,7 +273,7 @@ Resource changes: 1 to modify, 1 to ignore.
 >
 ```
 
-You'll notice that the result is color coded in addition to having a prefix:
+You'll notice that the result is color-coded in addition to having a prefix:
 
 - Purple and **~** for any modifications
 - Green and **+** for new resources to be created
@@ -326,7 +328,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile main.bicep
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)]
+    [!include[](code/4-confirm-whatif-output-powershell.md)] <!-- TODO redo with screenshot -->
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 
@@ -343,7 +345,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     -TemplateFile azuredeploy.json
     ```
 
-    [!include[](code/4-confirm-whatif-output-powershell.md)]
+    [!include[](code/4-confirm-whatif-output-powershell.md)] <!-- TODO redo with screenshot -->
 
 1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
 

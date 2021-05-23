@@ -1,9 +1,6 @@
 The output will be similar to the following text:
 
-```powershell
-Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
-You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
-
+```output
 Resource and property changes are indicated with this symbol:
     - Delete
 

@@ -1,10 +1,6 @@
 Your output will look similar to the following text:
 
 ```output
-Argument '--confirm-with-what-if' is in preview. It may be changed/removed in a future release.
-Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
-You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
-
 Resource and property changes are indicated with this symbol:
     - Delete
 

@@ -9,9 +9,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: arm-template-language-azure-shell-interface
 durationInMinutes: 4
-content: |
-  [!include[](includes/5-knowledge-check.md)]
+content: ""
 quiz:
   title: Check your knowledge
   questions:
@@ -40,3 +40,13 @@ quiz:
     - content: "A resource is waiting for another resource to finish deploying before deployment can begin."
       isCorrect: false
       explanation: "Resource Manager figures this out by itself, most of the time."
+  - content: |
+      [!include[](includes/5-knowledge-check-q3-question.md)]
+    choices:
+    - content: |
+        [!include[](includes/5-knowledge-check-q3-choice1.md)]
+      isCorrect: false
+      explanation: "TODO"
+    - content: "TODO"
+      isCorrect: true
+      explanation: "TODO"
