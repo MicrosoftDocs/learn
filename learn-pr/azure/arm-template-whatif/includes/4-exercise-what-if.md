@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../../bicep/shared/includes/bicep-sandbox-subscription.md)]
 
 Here, you'll deploy a template that creates a virtual network in your sandbox subscription. After the deployment is complete, you'll deploy a template that's slightly different. The second deployment will include the what-if operation to review the expected changes.
 

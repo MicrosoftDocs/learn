@@ -5,17 +5,17 @@ ms.topic: include
 ms.date: 05/22/2021
 ms.author: jodowns
 ---
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
 1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-    :::image type="content" source="../media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." border="true":::
+    :::image type="content" source="../../../../bicep/shared/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." border="true":::
 
     If not, select the dropdown menu, and choose **Select Default Shell**. Then select **bash**.
 
-    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
+    :::image type="content" source="../../../../bicep/shared/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
