@@ -238,9 +238,11 @@ The what-if output is similar to the below:
 
 ::: zone pivot="jsoncli,bicepcli"
 
+# [Screenshot](#tab/screenshpt)
+
 :::image type="content" source="../media/4-whatif-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the what-if operation." border="true":::
 
-Here's the output in text form:
+# [Text](#tab/text)
 
 ```output
 Note: The result may contain false positive predictions (noise).
@@ -273,13 +275,17 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 Resource changes: 1 to modify.
 ```
 
+---
+
 ::: zone-end
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 
+# [Screenshot](#tab/screenshpt)
+
 :::image type="content" source="../media/4-whatif-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the what-if operation." border="true":::
 
-Here's the output in text form:
+# [Text](#tab/text)
 
 ```output
 Note: The result may contain false positive predictions (noise).
@@ -314,6 +320,8 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 
 Resource changes: 1 to modify, 1 to ignore.
 ```
+
+---
 
 ::: zone-end
 

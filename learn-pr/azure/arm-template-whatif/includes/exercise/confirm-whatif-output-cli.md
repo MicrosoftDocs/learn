@@ -1,8 +1,10 @@
-Your output will look similar to the following screenshot:
+Your output will look similar to the following:
+
+# [Screenshot](#tab/screenshpt)
 
 :::image type="content" source="../../media/4-confirm-cli.png" alt-text="Screenshot of the Azure CLI showing the output from the deployment confirm operation." border="true":::
 
-Here's the output in text form:
+# [Text](#tab/text)
 
 ```output
 Note: The result may contain false positive predictions (noise).
@@ -40,5 +42,7 @@ Resource changes: 2 to delete.
 
 Are you sure you want to execute the deployment? (y/n):
 ```
+
+---
 
 Note how the last line of the output is a confirmation. It's asking you to select **y** or **n** to proceed.

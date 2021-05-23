@@ -144,7 +144,7 @@ Here's an explanation of what is happening in this example:
 
 - The template is updating a storage account named `storage-1`, which is already deployed. The SKU is changing from *LRS* to *GRS*, and the `owner` tag is changing value to `Team B`. The what-if output will show a **Modify** change type for this resource.
 - The template is creating a new Cosmos DB account named `cosmos-db-1`, which doesn't exist in the resource group yet. The what-if output will show a **Create** change type for this resource.
-- The template doesn't include the Azure SQL logical server that already exists in the resource group. Since the deployment is in complete mode, the what-if output will show a **Delete** change type for this resource.
+- The template doesn't include the Azure SQL logical server that already exists in the resource group. Since the deployment uses complete mode, the what-if output will show a **Delete** change type for this resource. If the deployment used incremental mode instead of complete mode, the change type would be **Ignore** instead.
 
 ## Confirm your deployments
 
