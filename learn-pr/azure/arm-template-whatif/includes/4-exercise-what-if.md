@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../../bicep/shared/includes/bicep-sandbox-subscription.md)]
 
-Here, you'll deploy a template that creates a virtual network in your sandbox subscription. After the deployment is complete, you'll deploy a template that's slightly different. The second deployment will include the what-if operation to review the expected changes.
+The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll create and deploy an initial template. After the deployment is complete, you'll prepare to deploy a template that's slightly different, and you'll use the what-if operation to review the expected changes. Then, you'll use a complete deployment to deploy an empty template.
 
 ::: zone pivot="biceppowershell,bicepcli"
 
