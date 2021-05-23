@@ -40,17 +40,17 @@ quiz:
       isCorrect: false
       explanation: "Resource Manager figures this out by itself, most of the time."
   - content: |
-      You have a resource group containing a storage account named `my-storage-account`.
-      You have a template file that declares a storage account named `another-storage-account`.
+      You have a resource group containing a storage account named `storageaccount1`.
+      You have a template file that declares a storage account named `storageaccount2`.
       You execute a what-if operation and the incremental deployment mode.
       Which of these change types will be detected by the what-if operation?
     choices:
     - content: Delete
       isCorrect: false
-      explanation: "TODO"
+      explanation: "The Delete change type is returned when the deployment is in complete mode."
     - content: Ignore
       isCorrect: true
-      explanation: "TODO"
+      explanation: "The what-if command will detect that `storageaccount1` is already deployed to the resource group but isn't in the template. Since you specified the incremental deployment mode, it returns the Ignore change type for `storageaccount1`."
     - content: NoChange
       isCorrect: false
-      explanation: "TODO"
+      explanation: "The NoChange change type is returned when a resource is already deployed to the resource group and also defined in the template."
