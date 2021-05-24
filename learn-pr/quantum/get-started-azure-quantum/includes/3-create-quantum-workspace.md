@@ -29,6 +29,10 @@ With an active Azure subscription, your crew is ready to create an Azure Quantum
    >[!NOTE]
    > By default, the Azure Quantum service adds the Microsoft quantum solution provider to every workspace.
 
+When adding a new provider, make sure to click on the available SKU.
+![Screenshot that shows providers for Azure Quantum.](../media/3-ionQ-SKU.png)
+
+
 1. After you add the providers that you want to use, select **Review + create**.
 
 1. Review the settings and approve the *terms and conditions of use* for the selected providers. If everything is correct, select **Create** to create your workspace.
