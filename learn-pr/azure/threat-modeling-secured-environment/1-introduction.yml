@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-modeling-secured-environment.1-introduction
+metadata:
+  title: Introduction to threat modeling an application for a Privileged Access Workstation (PAW)
+  description: Get started with assessing an application to be used in a secured environment with threat modeling.
+  ms.date: 03/15/2021
+  author: rodrigosantos
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

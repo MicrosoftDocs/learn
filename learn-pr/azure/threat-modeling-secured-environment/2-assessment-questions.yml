@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-modeling-secured-environment.2-assessment-questions
+metadata:
+  title: Security assessment questions to ask before using an application in a PAW
+  description: Assess the state of security for the application to be used in your secured environment by asking the right questions.
+  ms.date: 03/15/2021
+  author: rodrigosantos
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Assessment questions
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-assessment-questions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "If the application requires administrative or system level permissions to carry out basic functions, then"
+    choices:
+    - content: "it most likely is a good candidate for the PAW."
+      isCorrect: false
+      explanation: "PAW applications shouldn't require elevated permissions to run basic tasks and functions. It would be considered a red flag."
+    - content: "there's a potential risk for system level access."
+      isCorrect: true
+      explanation: "An application shouldn't need to rely on these types of permissions to carry out basic functions."
+  - content: "What can you find out by asking questions from the functionality category?"
+    choices:
+    - content: "The set of functions and features of the application."
+      isCorrect: true
+      explanation: "The functionality category helps you understand how the application works."
+    - content: "How well it integrates with the PAW."
+      isCorrect: false
+      explanation: "The functionality category only allows you to understand how the application works, not how it will integrate with the environment."
