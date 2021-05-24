@@ -78,11 +78,11 @@ Kubernetes groups containers into logical structures called pods, which have no 
                 - name: REDIS_HOST
                   value: "redis-contoso-video.redis.cache.windows.net" # *** REPLACE with your value ***
                 - name: REDIS_PORT
-                  value: "6379" # *** REPLACE with your value ***
+                  value: "6379"                                        # *** REPLACE with your value ***
                 - name: REDIS_LIST
-                  value: "keda" # *** REPLACE with your value ***
+                  value: "keda"                                        # *** REPLACE with your value ***
                 - name: REDIS_KEY
-                  value: "**************************************************" # *** REPLACE with your value ***
+                  value: "******************************************"  # *** REPLACE with your value ***
     ```
 
     > [!NOTE]

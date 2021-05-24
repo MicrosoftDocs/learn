@@ -14,11 +14,11 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
       envSourceContainerName: contoso-microservice  # Optional. Default: .spec.template.spec.containers[0]
   ```
 
-2. `minReplicaCount` and `maxReplicaCount` - these two attributes determine the range of replicas `KEDA` uses for scaling.  In our case, we instruct `KEDA` to scale to zero with a max of one hundred.
+2. `minReplicaCount` and `maxReplicaCount` - these two attributes determine the range of replicas `KEDA` uses for scaling.  In our case, we instruct `KEDA` to scale from a minimum of zero with a max of twenty.
 
   ```yaml
-    minReplicaCount: 0                                 # Optional. Default: 0
-    maxReplicaCount: 100                               # Optional. Default: 100
+    minReplicaCount: 0            # Optional. Default: 0
+    maxReplicaCount: 20           # Optional. Default: 100
   ```
 
   > [!NOTE]

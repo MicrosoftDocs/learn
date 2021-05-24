@@ -77,8 +77,5 @@ REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hos
 REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
 ```
 
-> [!INFO]
-> Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables `REDIS_HOST` and `REDIS_KEY`.
-
 > [!IMPORTANT]
 > Creating these resources in this manner is not recommended for Production use and only recommended to experiment with this module.
