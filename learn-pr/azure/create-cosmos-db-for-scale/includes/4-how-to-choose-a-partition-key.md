@@ -4,7 +4,7 @@ A partition strategy ensures that your database can grow to efficiently run quer
 
 ## What is a partition strategy?
 
-If you continue to add new data to a single server or a single partition, it will eventually run out of space. A partitioning strategy enables you to add more partitions to your database when need them. This scaling strategy is called **scale out** or **horizontal scaling**.
+If you continue to add new data to a single server or a single partition, it will eventually run out of space. A partitioning strategy enables you to add more partitions to your database when you need them. This scaling strategy is called **scale out** or **horizontal scaling**.
 
 A partition key defines the partition strategy, it's set when you create a container and can't be changed. Selecting the right partition key is an important decision to make early in your development process.  
 

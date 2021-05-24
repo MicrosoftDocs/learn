@@ -37,5 +37,5 @@ Use the following guidelines to get the best results when using a custom model.
 - Image size between 50 x 50 pixels and 10000 x 10000 pixels
 - For PDF documents, no larger than 17 inches x 17 inches
 
-There is a free tier subscription plan for the receipt model along with paid subscriptions.  For the free tier, only the first 200 pages will be processed when passing in PDF or TIFF formatted documents.
+There is a free tier subscription plan for the receipt model along with paid subscriptions.  For the free tier, only the first two pages will be processed when passing in PDF or TIFF formatted documents.
 

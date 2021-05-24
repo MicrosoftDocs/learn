@@ -33,7 +33,7 @@ The following is a partial list of the most common simple aggregate functions us
 
 An aggregate function column can be explicitly named by including the "fieldname=" before the aggregate function.
 
-The KQL statement will return three columns: <cnt>, <AccountType>, and <Computer>.  The <cnt> field name will replace the default "count_" name.
+The KQL statement will return three columns: "cnt", "AccountType", and "Computer".  The "cnt" field name will replace the default "count_" name.
 
 ```kusto
 SecurityEvent

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.innovate-applications-azure-cloud-technologies.4-infuse-application-artificial-intelligence
+metadata:
+  title: Infuse your applications with AI
+  description: Using Azure services to enrich applications with machine Learning and AI
+  ms.date: 04/23/2021
+  author: jomore
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Infuse your applications with AI
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-infuse-application-artificial-intelligence.md)]

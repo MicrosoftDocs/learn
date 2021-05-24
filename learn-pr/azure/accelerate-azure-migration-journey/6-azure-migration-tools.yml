@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: When modernizing an application the team will need to select a method for changing the application to make it run in Azure. Which of the following are options for Modernizing?
+  - content: When you decide to modernize an application, the team needs to select a method for changing the application to make it run in Azure. Which of the following options are used for modernizing?
     choices:
-    - content: Refactor, Rearchitect, Rebuild
+    - content: Refactor, rearchitect, rebuild
       isCorrect: true
-      explanation:  These are the options for a modernization of your application to run in Azure. Rehosting is for Migration of your application.
+      explanation: These options are used for modernizing your application to run in Azure. Rehosting is used for migration of your application.
     - content: Rehost
       isCorrect: false
-      explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Rehosting is for Migration of your application.
+      explanation: Refactor, rearchitect, and rebuild are the options used for modernizing your application to run in Azure. Rehosting is used for migration of your application.
     - content: Replace
       isCorrect: false
-      explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Replace removes the application from your care and leverages a Software as a Service (SaaS) product.
-  - content: Can Linux and open-source databases run IaaS and PaaS solutions in Azure ?
+      explanation: Refactor, rearchitect, and rebuild are the options used for modernizing your application to run in Azure. Replace removes the application from your care and uses a software as a service (SaaS) product.
+  - content: Can Linux and open-source databases run infrastructure as a service (IaaS) and platform as a service (PaaS) solutions in Azure?
     choices:
-    - content: Yes, there are many Linux open-source databases that run on Azure IaaS as VMs and PaaS solutions such as Azure Database and Azure App Service.
+    - content: Yes. Many Linux open-source databases run on Azure IaaS as VMs and PaaS solutions, such as Azure Database and Azure App Service.
       isCorrect: true
-      explanation: Yes, there are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
-    - content: Yes, but only on IaaS using VMs. There are no PaaS services that support Linux or open-source databases.
+      explanation: Yes. Many Linux distributions and open-source databases run on Azure IaaS and PaaS solutions.
+    - content: Yes, but only on IaaS by using VMs. There are no PaaS services that support Linux or open-source databases.
       isCorrect: false
-      explanation: There are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
+      explanation: Many Linux distributions and open-source databases run on Azure IaaS and PaaS solutions.
     - content: Yes, but only as PaaS services. Linux isn't supported on Azure IaaS.
       isCorrect: false
-      explanation: There are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
+      explanation: Many Linux distributions and open-source databases run on Azure IaaS and PaaS solutions.
   - content: Can VMware workloads run natively on Azure?
     choices:
-    - content: No, VMware VMs can't run on Azure. They must be moved to the cloud using Azure Migrate.
+    - content: No. VMware VMs can't run on Azure. They must be moved to the cloud by using Azure Migrate.
       isCorrect: false
-      explanation: VMware workloads run natively using the Azure VMware Solutions Service. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
-    - content: No, VMware workloads have to be migrated to PaaS services by refactoring the applications.
+      explanation: VMware workloads run natively by using Azure VMware Solution. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing its existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+    - content: No. VMware workloads must be migrated to PaaS services by refactoring the applications.
       isCorrect: false
-      explanation: VMware workloads run natively using the Azure VMware Solutions Service. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
-    - content: VMware workloads run natively using the Azure VMware Solutions Service.
+      explanation: VMware workloads run natively by using Azure VMware Solution. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing its existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+    - content: VMware workloads run natively by using Azure VMware Solution.
       isCorrect: true
-      explanation: VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+      explanation: VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing its existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.

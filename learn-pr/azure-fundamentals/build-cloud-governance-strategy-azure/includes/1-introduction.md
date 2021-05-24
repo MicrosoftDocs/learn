@@ -2,7 +2,7 @@ The term _governance_ describes the general process of establishing rules and po
 
 When running in the cloud, a good governance strategy helps you maintain control over the applications and resources that you manage in the cloud. Maintaining control over your environment ensures that you stay compliant with:
 
-* Industry standards, like [PCI DSS](https://docs.microsoft.com/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide?azure-portal=true).
+* Industry standards, like [PCI DSS](/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide%3fazure-portal%3dtrue).
 * Corporate or organizational standards, such as ensuring that network data is encrypted.
 
 Governance is most beneficial when you have:

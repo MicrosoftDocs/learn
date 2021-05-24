@@ -10,7 +10,7 @@ When extending an interface with one or more interfaces, these rules apply:
 
 There are several types of desserts you can create from the `IceCream` interface (sundaes, milkshakes, and so on), but they all have different properties in addition to those declared in `IceCream`. Let's extend the interface with a new one called `Sundae` and declare its properties.
 
-1. Continue your project in the [Playground](https://www.typescriptlang.org/play?azure-portal=true).
+1. Continue your project in the [Playground](https://www.typescriptlang.org/play).
 1. Under the `IceCream` interface declaration, declare a new interface called `Sundae` that `extends` the `IceCream` interface. The `Sundae` interface includes four new properties:
     - `sauce` of literal type `'chocolate' | 'caramel' | 'strawberry'`
     - `nuts` of type `boolean` (optional)

@@ -1,7 +1,7 @@
 You can now import the data from the blob storage to the Azure Synapse Analytics database. Let's connect to the database and run the appropriate SQL queries to create a staging table with the data.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a Azure Synapse Analytics.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob Storage account into a Azure Synapse Analytics.
 
 ## Use polybase by defining external tables
 

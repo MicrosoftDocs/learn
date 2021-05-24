@@ -83,7 +83,7 @@ FROM MyTable
 
 A number of other aggregate functions are available, including MAX (which returns the largest value in a column), AVG (which returns the average value, but only if the column contains numeric data), and SUM (which returns the sum of all the values in the column, but only if the column is numeric).
 
-The next example shows how to update an existing row using SQL. It modifies the value of the second column but only for rows that have the value 3 in *MyColumn3*. All other rows are left unchanged:
+The next example shows how to update an existing row using SQL. It modifies the value of the second column but only for rows that have the value 3 in *MyColumn1*. All other rows are left unchanged:
 
 ```SQL
 UPDATE MyTable

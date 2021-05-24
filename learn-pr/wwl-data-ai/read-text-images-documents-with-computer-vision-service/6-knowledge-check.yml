@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 05/13/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which API would be best for this scenario? You need to read a large amount of text with high accuracy. Some of the text is handwritten in English and some of it is printed in multiple languages."
+    choices:
+    - content: "OCR API"
+      isCorrect: false
+      explanation: "Incorrect: While the OCR API also detects regions of printed text from an image file, its an older model that is not best suited for large amounts of text"
+    - content: "Read API"
+      isCorrect: true
+      explanation: "Correct: The OCR API cannot process handwritten English and is not suitable for large amounts of text."
+    - content: "Image Analysis API"
+      isCorrect: false
+      explanation: "Incorrect: The Image Analysis service is a Computer Vision service, but its features extract visual features from images, such as objects and faces."
+  - content: "What is a difference between the response from the Read API versus the OCR API?"
+    choices:
+    - content: "There's no difference between the response returned, the only difference is that the Read API can be used for handwritten text."
+      isCorrect: false
+      explanation: "Incorrect: There is a difference in the way the responses break down."
+    - content: "The OCR API results break down by *region*, *line*, then *word*, while the Read API results break down by *page*, then *line*, and then *word*."
+      isCorrect: true
+      explanation: "Correct: Yes, the OCR API results break down by *region* and the Read API results break down by *page*."
+    - content: "The OCR API results include bounding box coordinates for images and text, while the Read API results only include results for text."
+      isCorrect: false
+      explanation: "Incorrect: The OCR API results do not include bounding box coordinates for images."
+  - content: "You have scanned a letter into PDF format and need to extract the text it contains. What should you do?"
+    choices:
+    - content: "Use the Custom Vision service"
+      isCorrect: false
+      explanation: "Incorrect: The Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
+    - content: "Use the OCR API of the Computer Vision service."
+      isCorrect: false
+      explanation: "Incorrect: The OCR API cannot be used to process PDF formatted files."
+    - content: "Use the Read API of the Computer Vision service."
+      isCorrect: true
+      explanation: "Correct: The Read API can be used to process PDF formatted files."

@@ -37,10 +37,10 @@ units:
 - learn.azure.deploy-azure-resources-bicep.introduction
 - learn.azure.deploy-azure-resources-bicep.what-is-bicep
 - learn.azure.deploy-azure-resources-bicep.define-resources
-- learn.azure.deploy-azure-resources-bicep.define-resources-in-a-bicep-template
-- learn.azure.deploy-azure-resources-bicep.add-flexibility-by-using-params-and-vars
-- learn.azure.deploy-azure-resources-bicep.add-params-and-vars
-- learn.azure.deploy-azure-resources-bicep.group-related-resources
+- learn.azure.deploy-azure-resources-bicep.define-resources-bicep-template
+- learn.azure.deploy-azure-resources-bicep.add-flexibility-parameters-variables
+- learn.azure.deploy-azure-resources-bicep.add-parameters-variables-bicep-template
+- learn.azure.deploy-azure-resources-bicep.group-related-resources-modules
 - learn.azure.deploy-azure-resources-bicep.refactor-template-modules
 - learn.azure.deploy-azure-resources-bicep.knowledge-check
 - learn.azure.deploy-azure-resources-bicep.summary

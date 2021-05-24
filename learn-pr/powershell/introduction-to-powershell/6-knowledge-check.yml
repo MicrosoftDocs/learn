@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.intro-to-powershell.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer multiple-choice questions to check your knowledge.
+  ms.date: 12/7/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: Using the help system, what command, or function, helps you paginate the response?
+      choices:
+        - content: "`command --help`"
+          explanation: Incorrect.
+          isCorrect: false
+        - content: "`Get-Help command`"
+          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience because it paginates the response and lets you traverse it row by row.
+          isCorrect: false
+        - content: "`help command`"
+          explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
+          isCorrect: true
+    - content: Which statement will most efficiently find the returned type from a command?
+      choices:
+        - content: "`command --type`"
+          isCorrect: false
+          explanation: Incorrect.
+        - content: "`command | Get-Member`"
+          isCorrect: true
+          explanation: Correct. The cmdlet `Get-Member` lists the returned type at the top of the response. 
+        - content: "`command | Get-Type`"
+          isCorrect: false
+          explanation: Incorrect.
+        - content: "`command Get-Member`"
+          isCorrect: false
+          explanation: Incorrect. The command needs to be piped with `Get-Member`.

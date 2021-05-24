@@ -73,9 +73,9 @@ Run the following commands in the Cloud Shell window to configure the new web ap
 ```azurecli
 WEB_APP_ID=$(az webapp list --resource-group mslearn-webjobs --query [0].id --output tsv)
 
-az webapp config set --id $WEB_APP_ID --always-on true
+az webapp config set --ids $WEB_APP_ID --always-on true
 
-az webapp config connection-string set --id $WEB_APP_ID --connection-string-type Custom --settings StorageAccount=$STORAGE_ACCOUNT_CONNSTR
+az webapp config connection-string set --ids $WEB_APP_ID --connection-string-type Custom --settings StorageAccount=$STORAGE_ACCOUNT_CONNSTR
 ```
 
 ## Add a WebJobs Project

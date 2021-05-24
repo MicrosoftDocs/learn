@@ -128,6 +128,6 @@ Identify the subtasks of *Add custom domain name to Azure Active Directory*
  
 ## Resources
 
-- [Add your custom domain name using the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/add-custom-domain)
-- [Managing custom domain names in your Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-manage)
-- [What is Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
+- [Managing custom domain names in your Azure Active Directory](/azure/active-directory/users-groups-roles/domains-manage)
+- [What is Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)

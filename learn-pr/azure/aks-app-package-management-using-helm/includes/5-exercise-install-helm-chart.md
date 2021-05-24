@@ -84,7 +84,7 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     ```bash
     NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
-    aspnet-webapp   default         1               2020-09-02 07:58:36.017759374 +0000 UTC deployed        aspnet-core-0.2.0       3.1.7
+    aspnet-webapp   default         1               2020-09-02 07:58:36.017759374 +0000 UTC deployed        aspnet-core-1.2.3       3.1.9
     ```
 
     Notice the name of the release and its revision number. The name of the release is import, as you'll use the name to reference the release. The revision number increments each time you make a change to a release. In the next exercise, you'll see how the revision number is used to manage upgrades and rollbacks for a release.

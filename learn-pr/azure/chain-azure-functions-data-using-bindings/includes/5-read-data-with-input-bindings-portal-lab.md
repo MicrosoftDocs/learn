@@ -4,7 +4,7 @@ Imagine that you want to create a simple bookmark lookup service. Your service i
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
-When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid. If not, an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database. If it isn't present, an error response is generated. If the bookmark ID is found, a success response is generated.
+When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid; if not, an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database. If it isn't present, an error response is generated. If the bookmark ID is found, a success response is generated.
 
 You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks, like opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
@@ -19,31 +19,33 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select **Databases** > **Azure Cosmos DB**. You may need to search for it using the Search field.
+1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Create Azure Cosmos DB Account** pane appears.
 
-1. In the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account.
+1. On the **Basics** tab, enter the following values for each setting.
 
-    | Property | Suggested value | Description |
+    | Setting | Value | Description |
     |---|---|---|
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
-    | **Account Name** | Globally unique name | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | **API** | _Core (SQL)_ | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
-    | **Location** | _Central US_ | Select the region nearest you. |
+    | **Project Details** |
+    | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| <rgn>[sandbox resource group name]</rgn> | This field is pre-populated with the resource group from your sandbox. |
+    | **Instance Details** |
+    | Account Name | *Globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
+    | API | Core (SQL) | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
+    | **Location** | Central US | Select the region nearest you. |
 
-     Leave the default values for all of the other fields in this new account page.
+     Leave the default values for all of the other settings in this new account page.
 
-1. Select **Review + create** to review and validate the configuration. A *Validation Success* appears.
+1. Select **Review + create** to review and validate the configuration. A *Validation Success* notification appears.
 
 1. Select **Create** to provision and deploy the database account.
 
-1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notification Hub before proceeding.
+1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notifications hub before proceeding.
 
     ![Screenshot of a notification that database account deployment has completed.](../media/5-db-deploy-success.PNG)
 
-1. Select **Go to resource** to navigate to the database account in the portal. Next, we'll add a collection to the database.
+1. Select **Go to resource** to go to the database account in the portal. Next, we'll add a collection to the database. The **Quick start** pane for your Azure Cosmos DB account appears.
 
 ### Add a container
 
@@ -51,17 +53,18 @@ In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Insid
 
 Let's use the Data Explorer tool in the Azure portal to create a database and collection.
 
-1. From the left-hand side menu, select **Data Explorer**, and then select **New Container**.
+1. In the left menu pane, select **Data Explorer**. The **Data Explorer** pane appears.
 
-    >[!TIP]
-    >The **Add Container** pane appears on the far right. To see it, you may need to scroll right.
+1. Select the **New Container** box. The **New Container** pane appears. To see it, you may need to scroll to the right.
 
-    | Property | Suggested value | Description |
+1. Enter the following values for each setting.
+
+    | Setting | Value | Description |
     |---|---|---|
-    | **Database id** | _func-io-learn-db_ | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
-    | **Throughput** | _4000 RU_ |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
-    | **Container id** | _Bookmarks_ | Enter _Bookmarks_ as the name for our new collection. Container IDs have the same character requirements as database names. |
-    | **Partition key** | _{id}_ | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the `id` field as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
+    | **Database id** | Select **Create new** and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
+    | **Database max RU/s** | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
+    | **Container id** | Bookmarks | Container IDs have the same character requirements as database names. |
+    | **Partition key** | /id | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the `id` field as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
 1. Select **OK**. The Data Explorer displays the new database and container. Inside the database, you've defined a container. Next, you'll add some data, also known as items.
 
@@ -71,7 +74,9 @@ You've defined a container in our database called **Bookmarks**. You want to sto
 
 You'll add data to the new container using Data Explorer.
 
-1. In Data Explorer, the new database appears in the SQL API nav column. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and from the menu bar, select **New Item**.
+1. In the **Data Explorer** pane, the new database appears under **SQL API** in the upper left-hand corner. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, and select **Items**.
+
+1. In the top menu bar of the **Data Explorer** pane, select **New Item**.
 
 1. Replace the default content of the new item with the following JSON.
 
@@ -82,19 +87,19 @@ You'll add data to the new container using Data Explorer.
      }
      ```
 
-1. After you've added the JSON to the **Items** tab, select **Save**.
+1. After you've added the JSON in the **Items** tab, from the top menu bar, select **Save**.
 
     Notice that there are more properties than the ones we added. They all begin with an underline (_rid, _self, _etag, _attachments, _ts). These are properties generated by the system to help manage the document.
 
     | Property | Description |
     |---|---|
-    | `_rid` | The resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. It is used internally for placement and navigation of the item resource. |
-    | `_self` | The unique addressable URI for the resource. |
+    | `_rid` | Resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. It is used internally for placement and navigation of the item resource. |
+    | `_self` | Unique addressable URI for the resource. |
     | `_etag` | Required for optimistic concurrency control. |
-    | `_attachments` | The addressable path for the attachments resource. |
-    | `_ts` | The timestamp of the last update of this resource. |
+    | `_attachments` | Addressable path for the attachments resource. |
+    | `_ts` | Timestamp of the last update of this resource. |
 
-1. To add a few more items into the container, at the top, select **New Item**. Create four more items with the following content. Remember to save your work.
+1. To add a few more items into the container, from the top menu bar, select **New Item**. Create four more items with the following content. Do this by selecting **New Item**, and then selecting **Save** after copying and pasting each new item.
 
     ```json
     {
@@ -134,29 +139,29 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 ::: zone pivot="javascript"
 
-1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
+1. Go to the function app that you created in the preceding unit. Select **Home > (Recent resources) <name>Function App**. Your **<name>Function App** pane appears.
 
-1. On the left-hand side menu, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. To start the function creation process, from the top menu bar, select **Add** (**+**). The **Add function** panel appears showing the complete set of supported triggers.
+1. To start the function creation process, from the top menu bar, select **Add**. The **Add function** pane appears showing the complete set of supported triggers.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. To create your function, select **Add**. This action opens the *index.js* file in the code editor, and displays a default implementation of the HTTP-triggered function.
+1. To create your function, select **Add**. The **HttpTrigger2** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *index.js* file in the code editor.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
-	
-1. On the left-hand side menu, select **Functions**.
+1. Go to the function app that you created in the preceding unit. Select **Home > (Recent resources) <name>Function App**.
 
-1. To start the function creation process, at the top menu bar, select **Add** (**+**). The **Add function** panel appears showing the complete set of supported triggers.
+1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. Select **HTTP trigger**.
+1. To start the function creation process, at the top menu bar, select **Add**. The **Add function** panel appears showing the complete set of supported triggers.
 
-1. To create your function, select **Create**. This action opens the *run.ps1* file in the code editor, and displays a default implementation of the HTTP-triggered function.
+1. In the **Select a template** section, select **HTTP trigger**.
+
+1. To create your function, select **Add**. The **HttpTrigger*x*** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *run.ps1* file in the code editor.
 
 ::: zone-end
 
@@ -164,9 +169,9 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 You can verify what we have done so far by testing our new function as follows:
 
-1. In your new function, at the top right, select **Get Function Url**, select **default (function key)**, and then select the *Copy to clipboard* icon at the end of the URL.
+1. In your new function, at the top right, select **Get Function Url**, select **default (function key)**, then select the *Copy to clipboard* icon at the end of the URL, and select **OK**..
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` to the end of the URL, and to execute the request, press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` (remember to replace <your function name> with the name of your function) to the end of the URL, and press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
 
 Now that we have our skeletal function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
@@ -174,11 +179,11 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. To open the **Integration** page, in the left pane, select **Integration**. The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
+1. Return to the portal, and in the left menu pane of your function, under **Developer**, select **Integration**. The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
 
-1. In the **Inputs** box, select **+ Add Input**. The **Create Input** panel appears showing a list of all possible input binding types.
+1. In the **Inputs** box, select **Add Input**. The **Create Input** pane appears showing a list of all possible input binding types.
 
-1. From the **Binding Type** dropdown, select **Azure Cosmos DB**. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** dropdown, select **New**. The **New Cosmos DB connection** dialog appears. Next, you'll set up a connection to your database.
+1. From the **Binding Type** dropdown list, select **Azure Cosmos DB**. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** dropdown list, select the **New** link. The **New Cosmos DB connection** dialog box appears. Next, you'll set up a connection to your database.
 
     > [!NOTE]
     > If the following message appears in the **Azure Cosmos DB input** configuration user interface prompting you to install an extension, select **Install**. It can take a while to install an extension, so before proceeding to the next step, wait for the installation to complete.
@@ -187,25 +192,25 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. To create your connection, select **OK**.
 
-    A new connection to the database is configured and is shown in the **Cosmos DB account connection** dropdown in the **Create Input** panel.
+    A new connection to the database is configured and appears in the **Cosmos DB account connection** dropdown list in the **Create Input** pane.
 
     > [!NOTE]
     > If you're curious about the connection endpoint, to reveal the connection string, select *show value*.
 
     You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
-1. In the **Document ID** field, enter `{id}`.
+1. In the **Document ID** field, enter `id`.
 
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
-1. Complete the remaining fields on this page using the values in the following table. At any time, to learn more about the purpose of each field, you can select the information icon to the right of each field name.
+1. Complete the remaining fields on this pane entering the values for each setting. At any time, to learn more about the purpose of each field, you can select the information icon to the right of each field name.
 
-    | Property | Suggested value | Description |
+    | Setting | Value | Description |
     |---|---|---|
     | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
     | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | _Bookmarks_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | **Partition key** |_{id}_ | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
+    | **Partition key** |_/id_ | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
     | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
 1. To save all changes to this binding configuration, select **OK**.
@@ -216,9 +221,11 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="javascript"
 
-1. From the **Integration** page, in the **Function** box, you should see your **HTTPTrigger**. Select it. At the left hand select **Code+Test**.
+1. On the **Integration** pane, in the **Function** box, select your **HTTPTrigger**.
 
-1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
+1. In the left menu pane, under **Developer**, select **Code + Test**.
+
+1. Replace all code in the index.js with the code from the following snippet, and in the top menu bar, select **Save**.
 
      ```java
  	module.exports = function (context, req) {
@@ -252,9 +259,11 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="powershell"
 
-1. To select your function, select **Integration**. Under **Function**, you should see your **HTTPTrigger**. At the left hand select **Code+Test**.
+1. On the **Integration** pane, in the **Function** box, select your **HTTPTrigger**.
 
-1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
+1. In the left menu pane, under **Developer**, select **Code + Test**.
+
+1. Replace all code in the index.js with the code from the following snippet, and in the top menu bar, select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -284,14 +293,18 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
 ## Try it out
 
-1. At the left hand select **Code + test**, select **Get function URL**, and then select **default (Function key)**. To copy the function's URL, select the *Copy to clipboard* icon.
+1. In the left menu pane, under **Developer**, select **Code + Test**.
 
-2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and to execute the request, press <kbd>Enter</kbd>. You should see a response that includes a URL to that resource.
+1. From the top menu bar, select **Get function URL**. The **Get function URL** dialog box appears.
 
-3. Replace `&id=docs` with `&id=missing`, and observe the response.
+1. Select **default (Function key)**. To copy the function's URL, select the *Copy to clipboard* icon.
+
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and press <kbd>Enter</kbd>. You should see a response that includes a URL to that resource.
+
+1. Replace `&id=docs` with `&id=missing`, press <kbd>Enter</kbd>, and observe the response.
 
     >[!TIP]
-    >You can also test the function using the **Test** tab in the function portal UI. You can add a query parameter or supply a request body to get the same results as described in the preceding steps.
+    >You can also test the function using the **Test** tab in the Azure portal function's user interface. You can add a query parameter or supply a request body to get the same results as described in the preceding steps.
 
 In this unit, you created your first input binding manually to read from an Azure Cosmos DB database. The amount of code you wrote to search our database and read data was minimal, thanks to bindings. You did most of our work configuring the binding declaratively, and the platform took care of the rest.
 

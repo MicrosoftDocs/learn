@@ -1,12 +1,12 @@
-We explored arrays in the previous section, and we said that arrays are the foundation for slices and maps. You'll understand why in a moment. Like arrays, a slice is a data type in Go to represent a sequence of elements that have the same type. But the more significant difference with arrays is that the size of a slice is dynamic, not fixed.
+We explored arrays in the previous section and learned that arrays are the foundation for slices and maps. You'll understand why in a moment. Like arrays, a slice is a data type in Go that represents a sequence of elements of the same type. But the more significant difference with arrays is that the size of a slice is dynamic, not fixed.
 
-A slice is simply a data structure on top of an array known as the *underlying array*. With a slice, you can either have *access to the whole underlying array or only to a subsequence of elements*.
+A slice is a data structure on top of an array or another slice. We refer to the originating array or slice as the *underlying array*. With a slice, you can access the whole underlying array or only a subsequence of elements.
 
 A slice has only three components:
 
-- **A pointer** to the first element reachable of the underlying array (not necessarily the array's first element).
-- **A length** that indicates the number of elements in the slice.
-- **A capacity** that shows the number of elements between the start of a slice and the end of the underlying array.
+- **Pointer to the first reachable element of the underlying array**. This element isn't necessarily the array's first element, `array[0]`.
+- **Length of the slice**. The number of elements in the slice.
+- **Capacity of the slice**. The number of elements between the start of the slice and the end of the underlying array.
 
 The following image represents what a slice is:
 
@@ -39,19 +39,20 @@ Length: 12
 Capacity: 12
 ```
 
-Notice how, at the moment, a slice doesn't differ too much from an array. You declare them in the same way. To get the information from a slice, you can use the built-in functions `len()` and `cap()`. We'll continue using these functions to confirm that a slice can have a subsequent number of elements from an underlying array.
+Notice how, at the moment, a slice doesn't differ too much from an array. You declare them in the same way. To get the information from a slice, you can use the built-in functions `len()` and `cap()`. We'll continue using these functions to confirm that a slice can have a subsequence of elements from an underlying array.
+
 
 ## Slice items
 
-Go has support for the slice operator `s[i:j]`, where:
+Go has support for the slice operator `s[i:p]`, where:
 
 - `s` represents the array.
-- `i` represents the pointer to the first element of the array (or another slice) that it will use.
-- `j` represents the position of the last element that the slice will use.
+- `i` represents the pointer to the first element of the underlying array (or another slice) to add to the new slice. The variable `i` corresponds to the element at index location `i` in the array, `array[i]`. Remember this element isn't necessarily the underlying array's first element, `array[0]`. 
+- `p` represents the number of elements in the underlying array to use when creating the new slice. The variable `p` corresponds to the last element in the underlying array that can be used in the new slice. The element at position `p` in the underlying array is found at the location `array[i+1]`. Notice that this element isn't necessarily the underlying array's last element, `array[len(array)-1]`.
+ 
+As you can see, a slice can refer only to a subset of elements.
 
-In other words, a slice can refer only to a subset of elements.
-
-For instance, let's say that you want four variables to represent each quarter of the year. The following image illustrates how that looks in Go:
+Let's say that you want four variables to represent each quarter of the year, and you have a slice of `months` with 12 elements. The following image illustrates how to slice `months` into four new `quarter` slices:
 
 :::image type="content" source="../media/go-slices-multiple.png" alt-text="Diagram showing how multiple slices look in Go." border="false":::
 
@@ -84,7 +85,7 @@ When you run the code, you get the following output:
 [October November December] 3 3
 ```
 
-Notice how the length of the slices is the same, but the capacity is different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. The slice's length is three elements, but the capacity is nine because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print out something like `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
+Notice how the length of the slices is the same, but the capacity is different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. The slice's length is three elements, but the capacity is nine because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print something like `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
 
 The capacity of a slice only tells you how much you can extend a slice. For this reason, you could create an extended slice from `quarter2`, like this example:
 
@@ -113,11 +114,11 @@ Notice that when you declare the `quarter2Extended` variable, you don't have to 
 
 ## Append items
 
-Now that we've explored how slices work and how they're similar to arrays, it's time to discover how they differ from arrays. The first difference is that the size of a slice isn't fixed, it's dynamic. After you've created a slice, you can add more elements to it, and the slice will be extended. You'll see in a moment what happens to the underlying array.
+We've explored how slices work and how they're similar to arrays. Now let's discover how they differ from arrays. The first difference is that the size of a slice isn't fixed, it's dynamic. After you've created a slice, you can add more elements to it, and the slice will be extended. You'll see in a moment what happens to the underlying array.
 
-To add an element to a slice, Go offers the `append(slice, element)` built-in function. You need to send the slice you want to modify and the element you want to append as values to the function. The `append` function then returns a new slice that you need to store in a variable. It could be the same variable for the slice you're changing.
+To add an element to a slice, Go offers the `append(slice, element)` built-in function. You pass the slice to modify and the element to append as values to the function. The `append` function then returns a new slice that you store in a variable. It could be the same variable for the slice you're changing.
 
-Let's see how this looks in code:
+Let's see how the append process looks in code:
 
 ```go
 package main
@@ -148,13 +149,13 @@ When you run the preceding code, you should see the following output:
 9       cap=16  [0 1 2 3 4 5 6 7 8 9]
 ```
 
-That was an interesting output, right? Especially for what the call to the `cap()` function is returning. Everything looks normal until the third iteration, where the capacity changes to 4, and there are only three elements in the slice. In the fifth iteration, the capacity varies again to 8 and in the ninth one to 16.
+This output is interesting. Especially for what the call to the `cap()` function is returning. Everything looks normal until the third iteration, where the capacity changes to 4, and there are only three elements in the slice. In the fifth iteration, the capacity varies again to 8 and in the ninth one to 16.
 
-Do you notice a pattern from the capacity output? Well, *when a slice doesn't have enough capacity to hold more elements, Go doubles its capacity*. This means that it creates a new underlying array with the new capacity. You don't have to do anything for this increase in capacity to happen. Go does it automatically. You do need to be cautious because, at some point, a slice might have way more capacity than it needs, and you'll be wasting memory.
+Do you notice a pattern from the capacity output? *When a slice doesn't have enough capacity to hold more elements, Go doubles its capacity*. It creates a new underlying array with the new capacity. You don't have to do anything for this increase in capacity to happen. Go does it automatically. You do need to be cautious. At some point, a slice might have way more capacity than it needs, and you'll be wasting memory.
 
 ## Remove items
 
-You might be wondering, what about removing elements? Well, Go doesn't have a built-in function to remove elements from a slice. You can use the slice operator `s[i:j]` we covered before to create a new slice with only the elements you need.
+You might be wondering, what about removing elements? Well, Go doesn't have a built-in function to remove elements from a slice. You can use the slice operator `s[i:p]` we covered before to create a new slice with only the elements you need.
 
 For instance, the following code removes an element from a slice:
 
@@ -167,12 +168,15 @@ func main() {
     letters := []string{"A", "B", "C", "D", "E"}
     remove := 2
 
-    fmt.Println("Before", letters)
+	if remove < len(letters) {
 
-    letters[remove] = letters[len(letters)-1]
-    letters = letters[:len(letters)-1]
+		fmt.Println("Before", letters, "Remove ", letters[remove])
 
-    fmt.Println("After", letters)
+		letters = append(letters[:remove], letters[remove+1:]...)
+
+		fmt.Println("After", letters)
+	}
+
 }
 ```
 
@@ -180,12 +184,12 @@ When you run the preceding code, you get the following output:
 
 ```output
 Before [A B C D E]
-After [A B E D]
+After [A B D E]
 ```
 
-To remove an element from a slice, the preceding code replaces the element you want to remove with the slice's latest one. Then, it creates a new slice that doesn't include the last element.
+This code removes an element from a slice. It replaces the element to be removed with the next element in the slice, or none if you're removing the last element.
 
-Another approach could be to create a new copy of the slice, but we haven't covered how to make copies of a slice, so let's get into it.
+Another approach is to create a new copy of the slice. We'll learn how to make copies of slices in the next section.
 
 ## Create copies of slices
 
@@ -196,7 +200,7 @@ slice2 := make([]string, 3)
 copy(slice2, letters[1:4])
 ```
 
-Why would you care about creating copies? Well, when you change an element from a slice, you're changing the underlying array too. Any other slices that refer to the same underlying array will be affected. Let's see this in code, and then we'll fix it by creating a copy of a slice.
+Why would you care about creating copies? Well, when you change an element from a slice, you're changing the underlying array too. Any other slices that refer to the same underlying array will be affected. Let's see this process in code, and then we'll fix it by creating a copy of a slice.
 
 Use the following code to confirm that a slice points to an array, and every change you make in a slice affects the underlying array.
 

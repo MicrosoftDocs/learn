@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cross-origin-resource-sharing
 
-title: Configure CORS to grant Client Application Access to the API
+title: Configure CORS to grant client application access to the API
 
 metadata:
-  title: Configure CORS to grant Client Application Access to the API
-  description: Configure CORS to grant Client Application Access to the API
+  title: Configure CORS to grant client application access to the API
+  description: Configure CORS to grant client application access to the API
   
   ms.date: 04/29/2020
   

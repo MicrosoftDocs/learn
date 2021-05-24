@@ -3,7 +3,7 @@ uid: learn.language.go-concurrency.6-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 01/25/2021
+  ms.date: 04/13/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "`func (){}()`"
       isCorrect: false
-      explanation: "Incorrect. You need to use the `go` keyword before the method that you want to execute as a goroutine."
+      explanation: "Incorrect. Use the `go` keyword before the method that you want to execute as a goroutine."
     - content: "`go launch()`"
       isCorrect: true
-      explanation: "Correct. You need to use the `go` keyword before the method that you want to execute as a goroutine."
-    - content: "goroutine launch()`"
+      explanation: "Correct. Use the `go` keyword before the method that you want to execute as a goroutine."
+    - content: "`goroutine launch()`"
       isCorrect: false
-      explanation: "Incorrect. You need to use the `go` keyword before the method that you want to execute as a goroutine."
+      explanation: "Incorrect. Use the `go` keyword before the method that you want to execute as a goroutine."
     - content: "`thread launch()`"
       isCorrect: false
-      explanation: "Incorrect. You need to use the `go` keyword before the method that you want to execute as a goroutine."
+      explanation: "Incorrect. Use the `go` keyword before the method that you want to execute as a goroutine."
   - content: "What's the purpose of using channels in Go?"
     choices:
     - content: "To communicate properly within goroutines and avoid sharing memory for communication purposes."
       isCorrect: true
-      explanation: "This is why Go says that we don't have to communicate by sharing memory. Instead, we should share memory by communicating."
+      explanation: "These reasons are why Go says we don't have to communicate by sharing memory. Instead, we should share memory by communicating."
     - content: "It's just another way of creating goroutines."
       isCorrect: false
       explanation: "Incorrect. You create a goroutine by using the `go` keyword."
@@ -58,21 +58,21 @@ quiz:
     choices:
     - content: "`ch = \"Hi\"`"
       isCorrect: false
-      explanation: "Incorrect. You need to place the `<-` operator after the channel variable to assign a value."
+      explanation: "Incorrect. Place the `<-` operator after the channel variable to assign a value."
     - content: "`ch <- \"Hi\"`"
       isCorrect: true
-      explanation: "Correct. You need to place the `<-` operator after the channel variable to assign a value."
+      explanation: "Correct. Place the `<-` operator after the channel variable to assign a value."
     - content: "`send(ch, \"Hi\")`"
       isCorrect: false
-      explanation: "Incorrect. You need to place the `<-` operator after the channel variable to assign a value."
+      explanation: "Incorrect. Place the `<-` operator after the channel variable to assign a value."
   - content: "How do you receive data from a channel?"
     choices:
     - content: "`res := <- ch`"
       isCorrect: true
-      explanation: "Correct: you need to place the `<-` operator before the channel variable to read its value."
+      explanation: "Correct. Place the `<-` operator before the channel variable to read its value."
     - content: "`res := get(ch)`"
       isCorrect: false
-      explanation: "Incorrect: you need to place the `<-` operator before the channel variable to read its value."
+      explanation: "Incorrect. Place the `<-` operator before the channel variable to read its value."
     - content: "`res := ch<-`"
       isCorrect: false
-      explanation: "Incorrect. you need to place the `<-` operator before the channel variable to read its value."   
+      explanation: "Incorrect. Place the `<-` operator before the channel variable to read its value."   

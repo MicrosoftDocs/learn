@@ -3,12 +3,12 @@ uid: learn.student-evangelism.intermediate-python-nasa.7-parameters
 metadata:
   title: Exercise - Use parameters to specify variability in functions
   description: Learn about parameters in Python.
-  ms.date: 03/10/2021
-  author: sguthals
+  ms.date: 05/05/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Use parameters to specify variability in functions
 durationInMinutes: 6
-content: |
-  [!include[](includes/7-parameters.md)]
+sandbox: true
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/7-parameters.ipynb

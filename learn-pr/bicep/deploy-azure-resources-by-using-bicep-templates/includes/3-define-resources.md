@@ -28,7 +28,7 @@ Let's look closely at some key parts of this resource definition:
 * Next, you give the resource a _symbolic name_. In the example, the resource's symbolic name is `storageAccount`. Symbolic names are used within Bicep to refer to the resource, but they won't ever show up in Azure.
 * `Microsoft.Storage/storageAccounts@2019-06-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you're declaring an Azure storage account. `2019-06-01` is the version of the Azure Storage API that Bicep will use when it creates the resource.
   > [!TIP]
-  > The Visual Studio Code extension for Bicep helps you to find the resource types and API versions for the resources that you create. In future modules, we'll look at other ways you can find this information. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
+  > The [Visual Studio Code extension for Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) helps you to find the resource types and API versions for the resources that you create. In future modules, we'll look at other ways you can find this information. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
 * You have to declare a _resource name_, which is the name that the storage account will get assigned in Azure. You set a resource name by using the `name` keyword.
   > [!IMPORTANT]
   > Remember that symbolic names are used only within the Bicep template and don't appear in Azure. Resource names _do_ appear in Azure.
@@ -59,7 +59,7 @@ This resource definition is telling Bicep that you want to deploy an App Service
 Now that you've declared the App Service plan, the next step is to declare the app:
 
 ```bicep
-resource appService 'Microsoft.Web/sites@2020-06-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   name: 'toy-product-launch-1'
   location: 'eastus'
   properties: {

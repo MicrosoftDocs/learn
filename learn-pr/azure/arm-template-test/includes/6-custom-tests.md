@@ -3,7 +3,7 @@ So far you've looked at how to run some tests on your templates. However, you mi
 - **Run a specific test suite**. Upon installation of the test toolkit, you're given a set of tests that will be run. These tests are located at the following directory: *<install directory>/arm-ttk/testcases/deploymentTemplate*. 
 
   It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the parameter **-Test**. You can also edit what tests are being run by removing files in the directory.
-- **Author and run domain-specific tests**. It's possible to author your own set of tests to enforce domain-specific rules. This unit will focus mostly on this scenario.
+- **Author and run domain-specific tests**. It's possible to author a test file to enforce domain-specific rules. This unit will focus mostly on this scenario.
 
 ## Authoring and running your own tests
 

@@ -6,7 +6,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
 ## Create the SalesTotals directory
 
-1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each file name returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
+1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each filename returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
 
 1. In the `Main` function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
 
@@ -56,8 +56,9 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
     }
     ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
-1. Run the program by entering the following code from the terminal prompt.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
+
+1. Run the program by running the following code from the terminal prompt.
 
     ```bash
     dotnet run

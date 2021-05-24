@@ -115,7 +115,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     }
     ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *Program.cs* file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the *Program.cs* file.
 
 ## Run the program
 
@@ -125,7 +125,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalsDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 

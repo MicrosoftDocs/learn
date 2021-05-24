@@ -8,7 +8,7 @@ Application Gateway receives requests through one or more ports. If you're commu
 az network application-gateway frontend-port create \
     --resource-group <resource group name> \
     --gateway-name <application gateway name>  \
-    --name <port name>
+    --name <port name> \
     --port 443
 ```
 

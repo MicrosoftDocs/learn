@@ -4,15 +4,11 @@ Recall that our goal is to move an existing Linux server running Apache to Azure
 
 We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShell. The easiest approach when you are starting with Azure is to use the portal because it walks you through the required information and provides hints and helpful messages during the creation:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Virtual machines**. Alternatively, you can enter *Virtual machines* in the top search box, and press <kbd>Enter</kbd>. The **Virtual machines** pane appears.
 
-1. In the search box, enter  **Ubuntu Server**.
-
-1. From the list, select **Nginx on Ubuntu Server 18.04**. The **Nginx on Ubuntu Server 18.04** pane appears.
-
-1. Select **Create** to start configuring the VM. The **Create a virtual machine** pane appears.
+1. In the top menu bar, select **Add > Virtual machine**. The **Create a virtual machine** pane appears.
 
 ## Configure the VM settings, add data disks for the VM, and configure the network
 
@@ -20,28 +16,28 @@ The VM creation experience in the portal is presented in a wizard format to walk
 
 ![Screenshot of the Azure portal showing the initial Create a virtual machine pane for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
 
-After you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM through by selecting **Review + Create** at the bottom of the wizard.
+After you complete all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM by selecting **Review + create** at the bottom of the wizard.
 
 We'll start with the **Basics** tab. Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
 
-1. On the **Basics** tab, enter the values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
-    | **Project Details** |
-    | Subscription | Concierge Subscription (the sandbox subscription should be selected for you by default).  |
+    | **Project details** |
+    | Subscription | Concierge Subscription (the sandbox subscription should be selected by default).  |
     | Resource group | Select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
     | Virtual machine name | Enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**). It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes. |
     | Region | Select a location close to you. See the following information directly after this table for available regions. |
     | Availability options | Select **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service. |
-    | Image | Ubuntu Server 18.04 LTS |
+    | Image | From the dropdown list, select **Ubuntu Server 18.04 LTS - Gen1** |
     | Size | D2s v3. This option gives you two vCPUs with 8 GB of RAM. |
     | **Administrator account** |
     | Authentication type | SSH public key |
     | Username | Enter a name you'll use to sign in with SSH. Make a note of it. |
     | SSH public key source | Use existing public key |
-    | Stored Keys | Paste the SSH key from your public key file you created in the previous unit.  It should look similar to the example shown in unit 3 with no additional whitespace or line-feed characters. |
+    | Key pair name | Paste the SSH key from your public key file you created in the previous unit. It should look similar to the example shown in unit 3 with no additional whitespace or line-feed characters. |
 
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -56,9 +52,9 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     | OS disk type | Premium SSD |
     | Encryption type | (Default) Encryption at-rest with a platform-managed key |
     | **Data disks** | *Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). Here, we'll add a data disk as well.* |
-    | Create and attach a new disk | Select the link. The **Create a new disk** pane appears. Accept all the default settings. Notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
+    | Create and attach a new disk | Select the link. The **Create a new disk** pane appears. Accept all the default settings. Notice that source type is where you could use a snapshot or Azure Blob Storage to create a VHD.
 
-1. Select **OK** to create the disk. The **Disks** tab reappears on the **Create a virtual machine** pane.
+1. Select **OK** to create the disk. The **Disks** section reappears on the **Create a virtual machine** pane.
 
     A new disk appears in the first row.
 
