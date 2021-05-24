@@ -7,7 +7,7 @@ metadata:
   author: pplavetzki
   ms.author: paplavet 
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 10
+durationInMinutes: 5
 title: Concept - Deploy application
 content: |
   [!include[](includes/4-concept-deploy-app.md)]
