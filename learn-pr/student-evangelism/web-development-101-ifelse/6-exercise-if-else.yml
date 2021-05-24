@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise If..Else
 durationInMinutes: 2
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/6-exercise-if-else.md)]
