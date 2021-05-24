@@ -4,9 +4,9 @@ You met the team at Tailspin Toys earlier in this learning path. In the [previou
 
 As more teams adopt Azure Boards, the organization begins to see the network effects of having their planning consolidate around a consistent process. Problems that were once written off as a cost of doing business now have achievable solutions. Let's watch the team as they lead their organization in its evolution.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work.
+- Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work.
 - Install the Delivery Plans extension for your Azure DevOps project.
 - Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
 
