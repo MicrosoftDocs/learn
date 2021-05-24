@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you work on this module.
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you work on this module.
 
 If you'd rather do only this module, go through [Introduction to Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) first to set up your Azure DevOps organization.
 

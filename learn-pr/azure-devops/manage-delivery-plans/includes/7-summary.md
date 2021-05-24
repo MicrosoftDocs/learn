@@ -7,7 +7,7 @@ In this module, the Tailspin team took on some common organizational challenges 
 
 ## Learning path summary
 
-Congratulations. You've completed the final module in the _Evolve your DevOps practices_ learning path. In this learning path, you:
+Congratulations. You've completed the final module in the _Get started with Azure DevOps_ learning path. In this learning path, you:
 
 * Saw how a value stream map can help you examine your existing processes and technologies.
 * Saw what DevOps is (and isn't) and created an Azure DevOps organization.
