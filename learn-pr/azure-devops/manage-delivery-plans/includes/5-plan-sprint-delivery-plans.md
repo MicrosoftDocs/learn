@@ -70,7 +70,7 @@ Milestone markers can be added to the delivery plan as reference points. These h
 
     :::image type="content" source="../media/5-show-all-markers.png" alt-text="Bringing all four markers into view.":::
 
-1. Select the ***Beta** marker at the top of the design plan. A solid line shows the boundary of the beta milestone.
+1. Select the **Beta** marker at the top of the design plan. A solid line shows the boundary of the beta milestone.
 
     :::image type="content" source="../media/5-analyze-milestones.png" alt-text="Selecting the Beta milestone to show the boundary of the beta milestone.":::
 
