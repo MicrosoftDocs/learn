@@ -51,7 +51,7 @@ Your opponent is the bank. Remember the rules, you win if you have better score 
    let cardFourBank = 4;
    ```
 
-1. Next, add add the following code to the end of the file:
+1. Next, add the following code to the end of the file:
 
    ```java
    let bankSum = cardOneBank + cardTwoBank + cardThreeBank + cardFourBank;
