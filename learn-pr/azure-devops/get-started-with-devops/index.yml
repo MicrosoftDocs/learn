@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.get-started-with-devops
 metadata:
-  title: Get started with Azure DevOps
+  title: Introduction to Azure DevOps
   description: Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.
   ms.date: 11/16/2018
   author: tpetchel
@@ -13,7 +13,7 @@ abstract: |
   - Identify what separates elite performers from low performers
   - List what services Azure DevOps provides
   - Create an Azure DevOps organization
-title: Get started with Azure DevOps
+title: Introduction to Azure DevOps
 summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
 iconUrl: /learn/achievements/azure-devops/get-started-with-devops.svg
 ratingEnabled: true
