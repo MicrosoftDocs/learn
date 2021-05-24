@@ -47,9 +47,13 @@ This policy also translates any out-bound responses in JSON format into XML.
 
 ## Policy scopes
 
-A policy's scope determines how broadly it will be applied. There are four possible scopes that you can choose from.
+A policy's scope determines how broadly it will be applied. There are four policy scopes that you can choose from:
+- Global
+- Product
+- API
+- Operation
 
-### Global policy scope
+### Global
 
 Policies applied at the global scope affect all APIs within the instance of API Management.
 
@@ -65,19 +69,19 @@ To create policy, you can manually edit the XML in the policy editor. Alternativ
 
 ![Global All API Scope to add policy](../media/2-global-policy-wizard.png)
 
-### Product policy scope
+### Product
 
 In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to bring up the XML policy editor:
 
 ![Product Scope](../media/2-products-scope.png)
 
-### API policy scope
+### API
 
-Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs** and then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, and then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
 
 ![API Scope](../media/2-api-scope.png)
 
-### Operation policy scope
+### Operation
 
 Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
 
@@ -102,7 +106,7 @@ Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure appli
 
 Let's examine some things you can do with policies in API Management.
 
-### Policies used for restricting access
+### Policies for restricting access
 
 There are several policies that you can use to prevent or limit access to an API or its operations:
 
@@ -118,7 +122,7 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 Several policies enable you to control authentication:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember it should be protected with SSL encryption otherwise a malicious attack can intercept the credentials as they cross the network.
+You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember it should be protected with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
 
 Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
