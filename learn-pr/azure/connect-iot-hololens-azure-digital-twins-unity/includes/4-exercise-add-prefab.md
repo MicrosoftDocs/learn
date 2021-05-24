@@ -25,6 +25,6 @@ Unity Prefabs have been created to accelerate the connectivity of your wind farm
 
 ## Add ADT Connection Prefab
 
-1. From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
+From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
 
-    :::image type="content" source="../media/inspector-adt-connector.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
+:::image type="content" source="../media/inspector-adt-connector.png" alt-text="Screenshot of the Unity Inspector with the ADT Turbine Alert Controller prefab selected.":::
