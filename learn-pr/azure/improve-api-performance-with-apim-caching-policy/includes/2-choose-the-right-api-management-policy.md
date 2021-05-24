@@ -8,7 +8,7 @@ First, let's look at what you can use policies to do.
 
 In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API are designed by the developers who write the code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
 
-Policies are formed of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
+Policies are made up of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
 ## When do policies execute?
 
@@ -45,35 +45,35 @@ In this example, you can see that the policy checks inbound requests for a heade
 
 This policy also translates any out-bound responses in JSON format into XML.
 
-## Policy Scopes
+## Policy scopes
 
 A policy's scope determines how broadly it will be applied. There are four possible scopes that you can choose from.
 
-### The global policy scope
+### Global policy scope
 
 Policies applied at the global scope affect all APIs within the instance of API Management.
 
-To use the global scope, in the resource page for the API Management instance, click **APIs** and then click the **All APIS** menu item. You can open the XML editor by clicking on the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
+To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. You can open the XML editor by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
 
 ![Global All API Scope](../media/2-global-scope.png)
 
-The policy editor that appears contains default XML content. On the left, you can see shortcuts that add policies:
+The policy editor that appears contains default XML content. On the right, you can see shortcuts that add policies:
 
 ![Global Scope Editor](../media/2-global-scope-editor.png)
 
-To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** page, you can click on **+ Add policy** to start a wizard that helps you to add policy with the correct syntax:
+To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** pane, you can select **Add policy** to start a wizard that helps you to add policy with the correct syntax:
 
 ![Global All API Scope](../media/2-global-policy-wizard.png)
 
-### The product policy scope
+### Product policy scope
 
-In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
+In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to bring up the XML policy editor:
 
 ![Product Scope](../media/2-products-scope.png)
 
-### The API policy scope
+### API policy scope
 
-Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, click **APIs** and then click the API you want to manage. Then click the **All operations** option:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs** and then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
 
 ![API Scope](../media/2-api-scope.png)
 
@@ -100,7 +100,7 @@ Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure appli
 
 ## Commonly used policies
 
-Let's examine some things you can do with policies in API Management:
+Let's examine some things you can do with policies in API Management.
 
 ### Policies used for restricting access
 
@@ -114,7 +114,7 @@ If you want to restrict the number of calls that arrive with a single access key
 
 To allow or deny calls from specific IP addresses or ranges of IP addresses, use the **Restrict caller IP's** policy. This way to restrict access behaves like the IP address restrictions that you can apply on a firewall.
 
-### Policies for Authentication
+### Policies for authentication
 
 Several policies enable you to control authentication:
 
@@ -124,7 +124,7 @@ Use the **Authenticate with client certificate** policy to enable clients to aut
 
 ### Cross-domain policies
 
-Cross-domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations, they can be desirable and API Management policies enable you to permit them securely:
+Cross-domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations, they can be desirable and API Management policies enable you to permit them securely.
 
 Use the **Allow cross-domain calls** policy to permit calls from Adobe Flash and Silverlight. If your API or client apps rely on Cross-Origin Resource Sharing (CORS), use the **CORS** policy to permit them.
 
@@ -148,7 +148,7 @@ If you want to modify an incoming HTTP request or outgoing response, you can use
 
 ### Advanced policies
 
-These policies can be of use in scenarios when you want non-standard behavior:
+These policies can be of use in scenarios when you want non-standard behavior.
 
 For example, if you want to apply a policy only when the response passes a specific test, use the **Control flow** policy.
 
