@@ -38,18 +38,18 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
             periodSeconds: 15
   ```
 
-4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs KEDA to scale up when there are ten items in the list.
+4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs `KEDA` to scale up when there are ten items in the list.
 
   ```yaml
     triggers:
     - type: redis
       metadata:
-        # address:   # Format must be host:port
+        # address:                  # Format must be host:port
         passwordFromEnv: REDIS_KEY
-        listName: keda # Required
-        listLength: "10" # Required
-        enableTLS: "false" # optional
-        databaseIndex: "0" # optional
+        listName: keda              # Required
+        listLength: "10"            # Required
+        enableTLS: "false"          # optional
+        databaseIndex: "0"          # optional
         addressFromEnv: REDIS_HOST
         portFromEnv: REDIS_PORT
   ```
@@ -133,7 +133,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
 
 3. Periodically run the `kubectl get pods` command to verify the deployment is scaling the number of pods according to the backlog of work.
 
-  > **NOTE:** If you have linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also try `kubectl get pods -w`.
+  > **NOTE:** If you have Linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also use `kubectl get pods -w`.
 
   The command should output a table similar to the following example:
 
@@ -151,4 +151,4 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
   contoso-microservice-794d98b5-rgmvx   1/1     Running   0          2m15s
   ```
 
-And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that KEDA removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.
+And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that `KEDA` removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.

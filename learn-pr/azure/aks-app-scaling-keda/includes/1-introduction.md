@@ -26,10 +26,10 @@ By the end of this session, you'll be able to understand which Kubernetes scalin
 
 ## Prerequisites
 
-* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/en-us/topic/what-is-kubernetes/#overview).
+* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](/topic/what-is-kubernetes).
 * Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 * Familiarity with [Docker](https://docker.com) and Docker images.
-* An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
+* An active Azure [subscription](/free/services/kubernetes-service).
 * Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
 * Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/learn/modules/intro-to-containers).
 
@@ -63,7 +63,7 @@ az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
 
 The complete cluster creation can take up to five minutes.
 
-> **IMPORTANT:** Make a note of the RESOURCE_GROUP and CLUSTER_NAME variables for later use.
+> **IMPORTANT:** Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
 
 You need to create a simple Azure Redis Cache. Following these steps will give you a basic, functioning cache. In a Cloud Shell environment complete these tasks:
 
@@ -76,6 +76,6 @@ REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hos
 REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
 ```
 
-> **INFO:** Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables REDIS_HOST and REDIS_KEY.
+> **INFO:** Make a note of the `hostName`, and `primaryKey` values returned for later use. In the example above, we are setting the values to the shell variables `REDIS_HOST` and `REDIS_KEY`.
 
 > **IMPORTANT:** Creating these resources in this manner is not recommended for Production use and only recommended to experiment with this module.
