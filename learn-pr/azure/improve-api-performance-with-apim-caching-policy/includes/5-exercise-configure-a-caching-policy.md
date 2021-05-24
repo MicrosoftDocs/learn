@@ -7,7 +7,7 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 > [!NOTE]
-> In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net** domain.
+> In this exercise, the Board Gaming Web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net** domain.
 
 ## Create a Redis cache
 
@@ -15,7 +15,7 @@ In this module, we're using the consumption tier for Azure API Management becaus
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, and then search for and select **Azure Cache for Redis** in the **Featured** list. The **New Redis Cache** pane appears.
+1. In the left menu pane, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -36,15 +36,15 @@ In this module, we're using the consumption tier for Azure API Management becaus
 
 ## Create a Web API in Azure Apps Service
 
-Now, deploy the sample web API to Azure App Service:
+Now, deploy the sample Web API to Azure App Service:
 
-1. In Azure Cloud Shell, to clone the sample web API, run this command:
+1. In Azure Cloud Shell, to clone the sample Web API, run this command:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
     ```
 
-1. To set up the web API, run these commands:
+1. To set up the Web API, run these commands:
 
     ```bash
     cd mslearn-improve-api-performance-with-apim-caching-policy
@@ -61,7 +61,7 @@ Now, deploy the sample web API to Azure App Service:
 
 ## Test the deployed Web API
 
-Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the web API before it is added to API Management, are in the **azurewebsites.net** domain:
+Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the Web API before it is added to API Management, are in the **azurewebsites.net** domain:
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the App Service.
 
@@ -87,12 +87,12 @@ Now that we have a functional API, let's set up API Management:
     | --- | --- |
     | **Project details** |
     | Subscription | *Concierge Subscription* |
-    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
+    | Resource group | Select *Use existing*, and then select *<rgn>Sandbox resource group</rgn>*. |
     | **Instance details** |
     | Region | Choose the same location you used for the Redis Cache. |
     | Resource name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Organization name | BoardGames |
-    | Administrator email | Enter your email address |
+    | Administrator email | Enter your email address. |
     | **Pricing tier** |
     | Pricing tier | Consumption |
     | | |
