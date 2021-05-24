@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.web-development-101-functions
+metadata:
+  title: Creating modular code with functions in JavaScript
+  description: Functions are the building blocks for any application you will
+    create. They allow you to create named, reusable sections of code to help
+    make your code more readable and maintainable. This module will explore the
+    core concepts of functions.
+  ms.date: 05/18/2021
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Creating modular code with functions in JavaScript
+summary: Functions are the building blocks for any application you will create.
+  They allow you to create named, reusable sections of code to help make your
+  code more readable and maintainable. This module will explore the core
+  concepts of functions.
+abstract: |
+  In this module you will learn:
+
+  - How to write a basic function
+  - What parameters are and how to use them
+  - Return values from a function
+  - Use anonymous functions
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - A browser
+  - Visual Studio Code and Live Server extension
+units:
+  - learn.web-development-101-functions.1-introduction
+  - learn.web-development-101-functions.2-overview-functions
+  - learn.web-development-101-functions.3-parameters
+  - learn.web-development-101-functions.4-return-values
+  - learn.web-development-101-functions.5-exercise-create-function
+  - learn.web-development-101-functions.6-anonymous-functions
+  - learn.web-development-101-functions.7-exercise-anonymous-functions
+  - learn.web-development-101-functions.8-knowledge-check
+  - learn.web-development-101-functions.9-summary
+badge:
+  uid: learn.web-development-101-functions.badge

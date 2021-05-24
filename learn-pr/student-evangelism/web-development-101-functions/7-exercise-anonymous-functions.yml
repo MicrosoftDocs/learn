@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.web-development-101-functions.7-exercise-anonymous-functions
+title: Exercise - Anonymous functions
+metadata:
+  title: Exercise - Anonymous functions
+  description: You will create and use an anonymous function.
+  author: GeekTrainer
+  ms.author: chnoring
+  ms.date: 05/18/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-anonymous-functions.md)]
