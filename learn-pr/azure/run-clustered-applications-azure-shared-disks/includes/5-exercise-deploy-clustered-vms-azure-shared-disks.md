@@ -18,29 +18,6 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ## Task 1: Create Azure shared disk
 
-1. Open a browser and navigate to the following URL:
-
-     [https://portal.azure.com](https://portal.azure.com/)
-
-2. Log into Azure portal using your subscription credentials.
-3. From the Azure portal tool bar, select **Cloud Shell** icon.
-
-    > [!Note]
-    > Perform the next step if you are opening Cloud Shell for the first time, otherwise continue with step 5.
-
-4. In the  **You have no storage mounted**  pane, select **Show advanced settings**, and then perform the following tasks:
-
-    - Keep the default value for the **Subscription**  drop-down list item.
-    - In the  **Cloud Shell region**  drop-down list, select the Azure region matching or near the location where you intend to deploy resources in this exercise.
-    - In the  **Resource group**  section, select or create a new resource group.
-    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected. Then, in the text box under that option enter a unique name between 3 and 24 characters and digits.
-    > [!Note]
-    > Storage Account names must be lowercase.
-    - In the  **File share**  section, ensure that the  **Create new**  option is selected and then, in the text box below, enter **cloudshell**.
-    - Select  **Create storage**.
-
-5. Wait until Cloud Shell is initialized, and then in the Bash shell, run the following commands:
-
     Azure CLI:
 
 ```bash
