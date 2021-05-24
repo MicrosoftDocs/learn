@@ -2,9 +2,9 @@ In order to properly understand JavaScript (the language that provides interacti
 
 ## Interactivity
 
-By using variables you will be able to track state. Perhaps you need to remember the value of a user's selection or you need to save the result of a calculation. You would use variables to do this. Data types, on the other hand, enhance your use of variables by allowing you to specify the shape and size of the data you need to store. Data types might be expressed as numbers, strings or even more complex structures.
+By using variables, you will be able to track state. Perhaps you need to remember the value of a user's selection or you need to save the result of a calculation. Situations like these calls for the use of variables. Data types, on the other hand, enhance your use of variables by allowing you to specify the shape and size of the data you need to store. Data types might be expressed as numbers, strings, or even more complex structures.
 
-If you've ever learned a programming language before, you may notice some similarities between other languages and JavaScript although the syntax might be a bit differennt. If you're learning a programming language for the first time, don't worry- this module will break down all the concepts of JavaScript basics you'll need to help you be successful as a web developer.
+If you've ever learned a programming language before, you may notice some similarities between other languages and JavaScript although the syntax might be a bit different. If you're learning a programming language for the first time, don't worry- this module will break down all the concepts of JavaScript basics you'll need to help you be successful as a web developer.
 
 > [!TIP]
 > Want a quick review before you get started? Check out [this video](https://youtu.be/JNIXfGiDWM8) for an overview.

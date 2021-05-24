@@ -32,7 +32,8 @@ To store a value in a variable, you must do so using the assignment operator - `
 myVariable = 123;
 ```
 
-> [!TIP]: The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, that uses two or three operators like so `==` or so `===`.
+> [!TIP]
+> The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, that uses two or three operators like so `==` or so `===`.
 
 `myVariable` has now been *assigned* the value 123.
 

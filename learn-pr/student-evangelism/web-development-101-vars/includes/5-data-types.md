@@ -58,7 +58,7 @@ myString1 + ", " + myString2 + "!"; //Hello, World!
 
 Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`?
 
-**Template literals** are another way to format strings, except instead of quotes, the backtick is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
+**Template literals** are another way to format strings, except instead of quotes, the backtick is used. Anything that is not plain text must be placed inside placeholders `${ }`, including any variables that may be strings.
 
 ```javascript
 let myString1 = "Hello";
@@ -70,7 +70,8 @@ let myString2 = "World";
 
 You can achieve your formatting goals with either method, but template literals will respect any spaces and line breaks.
 
-> [!TIP] Take a moment to consider the usecases for different string types. When would you use a template literal vs. a plain string?
+> [!TIP] 
+> Take a moment to consider the usecases for different string types. When would you use a template literal vs. a plain string?
 
 ## Booleans
 
