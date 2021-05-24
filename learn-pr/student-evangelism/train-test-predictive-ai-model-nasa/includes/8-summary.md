@@ -10,6 +10,8 @@ In this lesson, you built an AI model to detect different types of space rocks.
 
 - You tested your model to predict what types of rocks were shown in random photos.
 
+> Image credit: The model visualizations in this lesson are inspired by the work of Grant Sanderson. To learn more, visit https://www.3blue1brown.com/.
+
 
 ## Next steps
 
