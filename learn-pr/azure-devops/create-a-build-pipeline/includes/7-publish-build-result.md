@@ -9,7 +9,7 @@ You can store build artifacts in Microsoft Azure Pipelines so they're later avai
 
 ## Publish the build to the pipeline
 
-In .NET Core, you can package your app as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
+In .NET, you can package your app as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
@@ -78,7 +78,7 @@ Take a moment to examine *azure-pipelines.yml*. Notice that these values are rep
 
 * Build configuration: `Release`
 * Location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
-* .NET Core SDK version: `3.1.300`
+* .NET SDK version: `5.0`
 
 You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
@@ -90,7 +90,7 @@ You now use variables to define these values one time. You then reference the va
 
     * `buildConfiguration`. Specifies the build configuration.
     * `wwwrootDir`. Specifies the path to the **wwwroot** directory.
-    * `dotnetSdkVersion`. Specifies the .NET Core SDK version to use.
+    * `dotnetSdkVersion`. Specifies the .NET SDK version to use.
 
     To reference these variables, you use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-Sass to convert Sass files to CSS. To obtain the path to the **wwwroot** directory, it references the `wwwrootDir` variable.
 
@@ -111,9 +111,9 @@ You now use variables to define these values one time. You then reference the va
 
 1. From Azure Pipelines, trace the build through each of the steps.
 
-    You see that the variables are replaced with their values when the build runs. For example, here's the `UseDotNet@2` task that sets the .NET Core SDK version to use.
+    You see that the variables are replaced with their values when the build runs. For example, here's the `UseDotNet@2` task that sets the .NET SDK version to use.
 
-    ![Azure Pipelines showing the .NET Core SDK task running in the pipeline](../media/7-dotnet-core-sdk-task.png)
+    ![Azure Pipelines showing the .NET SDK task running in the pipeline](../media/7-dotnet-core-sdk-task.png)
 
     As before, to see the artifact when the build completes, you can navigate to the build summary.
 

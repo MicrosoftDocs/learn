@@ -152,9 +152,9 @@ Now that you have the web app, you can build and run it locally.
     ```
 
     > [!NOTE]
-    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install the .NET SDK.
 
-    .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, select the Release configuration just to see the web app in action.
+    .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, select the Release configuration just to see the web app in action.
  
 1. From the terminal window, to run the app, run this `dotnet run` command.
 
@@ -162,7 +162,7 @@ Now that you have the web app, you can build and run it locally.
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
-    .NET Core solution files can contain more than one project. The `--project` argument specifies the project for the *Space Game* web app.
+    .NET solution files can contain more than one project. The `--project` argument specifies the project for the *Space Game* web app.
 
 ## Verify the application is running
 

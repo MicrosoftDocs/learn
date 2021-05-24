@@ -6,7 +6,7 @@ Here are some notes that Mara collected when she talked to Andy, the dev lead:
 * The build machine includes build tools like:
   * npm, the package manager for Node.js.
   * NuGet, the package manager for .NET.
-  * .NET Core SDK.
+  * .NET SDK.
 * The project uses Sass to make it easier to author cascading style sheets (CSS) files.
 * The project uses gulp to minify JavaScript and CSS files.
 
@@ -68,7 +68,7 @@ In Azure Pipelines, a _task_ is a packaged script or procedure that's been abstr
 
 An Azure Pipelines task abstracts away the underlying details. This abstraction makes it easier to run common build functions, like downloading build tools or packages your app depends on, or to build your project, running Visual Studio or Xcode.
 
-To build a C# project that targets .NET Core, here's an example that uses the `DotNetCoreCLI@2` task.
+To build a C# project that targets .NET, here's an example that uses the `DotNetCoreCLI@2` task.
 
 ```yml
 task: DotNetCoreCLI@2
@@ -107,7 +107,7 @@ Mara can use one of two methods to configure her pipeline:
 
 * The visual designer. Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
 
-    ![The Azure Pipelines visual designer showing build tasks for a .NET Core application](../media/4-visual-designer.png)
+    ![The Azure Pipelines visual designer showing build tasks for a .NET application](../media/4-visual-designer.png)
 
 * A YAML file. YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
 
