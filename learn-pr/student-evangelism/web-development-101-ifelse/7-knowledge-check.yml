@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.ifelse.7-knowledgecheck
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 05/17/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What would the following code return?: '1' == 1"
+      choices:
+        - content: "true"
+          isCorrect: true
+          explanation: Correct- using the == operator would return true, since it is an
+            implicit check.
+        - content: "false"
+          isCorrect: false
+          explanation: Incorrect- using the == operator would not return false, since it
+            is not an explicit check.
+        - content: "null"
+          isCorrect: false
+          explanation: Incorrect- this code would return a true or false.
+    - content: "What would the following code return?: '1' === 1"
+      choices:
+        - content: "true"
+          isCorrect: false
+          explanation: Incorrect- === compares strict equality.
+        - content: "false"
+          isCorrect: true
+          explanation: Correct- we are comparing strict equality.
+        - content: "null"
+          isCorrect: false
+          explanation: Incorrect- this code would return a true or false.
+    - content: Choose the correct operator to express 'or' logic
+      choices:
+        - content: a | b
+          isCorrect: false
+          explanation: Incorrect- a logical OR is needed.
+        - content: a || b
+          isCorrect: true
+          explanation: Correct! A logical OR compares two Boolean expressions.
+        - content: a or b
+          isCorrect: false
+          explanation: Incorrect- a logical OR is needed to compare 2 Boolean expressions.
