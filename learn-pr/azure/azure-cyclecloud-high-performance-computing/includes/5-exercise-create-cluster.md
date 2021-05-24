@@ -6,8 +6,8 @@ Now that you've provisioned an Azure VM hosting the CycleCloud web applications,
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage.
 
-    > [!NOTE]
-    > To complete this exercise, you don't need to satisfy quota requirements to accommodate provisioning of the compute nodes because you won't be running any jobs on the cluster you create.
+> [!NOTE]
+> To complete this exercise, you don't need to satisfy quota requirements to accommodate provisioning of the compute nodes because you won't be running any jobs on the cluster you create.
 
 1. On your computer, switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for the **cyclecloud-rg** resource group.
