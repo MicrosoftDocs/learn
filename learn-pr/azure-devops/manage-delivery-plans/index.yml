@@ -13,9 +13,9 @@ title: Manage Agile software delivery plans across teams
 summary: Learn to optimize delivery efficiency by improving work plan visibility across teams.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work.
-  - Install the Delivery Plans extension for your Azure DevOps project.
-  - Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
+  - Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work
+  - Install the Delivery Plans extension for your Azure DevOps project
+  - Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
 ratingEnabled: true
