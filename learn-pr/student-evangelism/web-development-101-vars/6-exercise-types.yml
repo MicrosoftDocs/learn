@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise data types
 durationInMinutes: 3
-azureSandbox: false
+azureSandbox: true
 interactive: bash
 content: |
   [!include[](includes/6-exercise-types.md)]
