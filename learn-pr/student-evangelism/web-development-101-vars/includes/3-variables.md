@@ -1,10 +1,10 @@
-Using variables and data types, are essential to being able to writing code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
+Knowing how to properly use variables and data types is essential to being able to write code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
 
 ## Variables
 
-The reason for using a variable is that you have a value that you would like to remember. By storing the value, you are able to refer to it later on in your code.
+Suppose that, in your code, you have a value that you would like to remember for future use. By storing the value, you are able to refer to it later on in your code.
 
-Creating and declaring a variable has the following syntax `[keyword] [name]`. Here's an example of declaration:
+You can create and declare a variable by usinngn following syntax: `[keyword] [name]`. Here's an example of a variable declaration:
 
 ```js
 var aVariable;
@@ -14,9 +14,9 @@ var aVariable;
 
 ## Use `let` to work with variables
 
-The keyword `let` was introduced in ES6 and gives your variable a so called _block scope_. It's recommended that you use `let` over `var`. We will cover block scopes more in depth in future parts.
+The keyword `let` was introduced in EcmaScript 6 (ES6 - remember EcmaScript is a JavaScript standard, and has several versionss). Using `let` and gives your variable what is termed _block scope_. It's recommended that you use `let` over `var` to better manage scope in your application. We will cover block scopes more in depth later.
 
-To declare a variable using `let`, type like so:
+To declare a variable using `let`, use the following syntax:
 
 ```javascript
 let myVariable;
@@ -26,13 +26,13 @@ let myVariable;
 
 ### Assign a value 
 
-To store a value in a variable, you must do so using the assignment, `=` operator, followed by the expected value.
+To store a value in a variable, you must do so using the assignment operator - `=` - followed by the expected value.
 
 ```javascript
 myVariable = 123;
 ```
 
-> [!TIP]: The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, that uses two, or three operators like so `==` or so `===`.
+> [!TIP]: The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, that uses two or three operators like so `==` or so `===`.
 
 `myVariable` has now been *assigned* the value 123.
 
@@ -52,7 +52,7 @@ let pokerChips = 100;
 
 ### Changing variables
 
-Another reason for storing a value in a variable, other than being a _starter value_, is that you want to use it to temporarily store something. That something can be the sum of a calculation for example.
+Another reason for storing a value in a variable would be that you want to use it to temporarily store a value, for example the sum of a calculation.
 
 To change the value, assign it a new value on the right-hand side like so:
 
@@ -65,18 +65,18 @@ Above you see how assignment operator `=` is used and how a value is being _assi
 > [!TIP]
 > Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type let myVariable = 123, press return, then type myVariable. What happens? You'll learn more about these concepts in subsequent lessons.
 
-Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant, for example,  like the value of PI for example. To address this need, JavaScript let's you create so called constants.
+Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant like the value of PI. To address this need, JavaScript lets you create **constants**.
 
 ## Constants
 
-Declaration and initialization of a constant follows the same concepts as a variable, except for the `const` keyword. Constants are typically declared with all uppercase letters.
+The declaration and initialization of a constant follows the same concepts as a variable, except that it uses the `const` keyword. Constants are typically declared with all uppercase letters.
 
 ```javascript
 const MY_VARIABLE = 123;
 ```
 
 > [!TIP]
-> even though you are allowed to name a constant variable in all lowercase you are strongly discouraged to use all uppercase.
+> Even though you are allowed to name a constant variable any way you like, you are encouraged to use all uppercase.
 
 Constants are similar to variables, with two exceptions:
 

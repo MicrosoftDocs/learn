@@ -2,7 +2,7 @@ Variables can store many different types of values, like numbers and text. These
 
 ## Data types
 
-Data types are an important part of software development because it helps developers make decisions on how the code should be written and how the software should run. Furthermore, some data types have unique features that help transform or extract additional information in a value.
+Data types are an important part of software development because developers use them to make decisions about how the code should be written and how the software should run. Furthermore, some data types have unique features that help transform or extract additional information in a value.
 
 Data Types are also referred to as "JavaScript data primitives", as they are the lowest-level data types that are provided by the language. There are six primitive data types: string, number, bigint, boolean, undefined, and symbol.
 
@@ -58,7 +58,7 @@ myString1 + ", " + myString2 + "!"; //Hello, World!
 
 Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`?
 
-**Template literals** are another way to format strings, except instead of quotes, the backtick  is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
+**Template literals** are another way to format strings, except instead of quotes, the backtick is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
 
 ```javascript
 let myString1 = "Hello";

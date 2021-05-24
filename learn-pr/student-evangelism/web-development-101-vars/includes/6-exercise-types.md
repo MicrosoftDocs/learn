@@ -1,4 +1,4 @@
-Your company is pleased with your earlier modeling of Texas Holdem and would like to see you continue to work on its implementation. As you've now learned about more about data types, let's put that knowledge into use.
+Your company is pleased with your earlier modeling of Texas Hold'em and would like to see you continue to work on its implementation. As you've now learned about more about data types, let's put that knowledge into use.
 
 ## Add data types
 
@@ -18,7 +18,7 @@ playerTwoPoints -=25;
 playerThreePoints +=75; 
 ```
 
-You have certain aspects of the game represented as variables, but you are lacking some aspects such as knowing if the game has ended and wouldn't it be nice if the players had names?
+You have certain aspects of the game represented as variables, but you are lacking some aspects such as knowing if the game has ended. Also, wouldn't it be nice if the players had names?
 
 1. After the three constants, add the following code:
 
@@ -36,16 +36,16 @@ You have certain aspects of the game represented as variables, but you are lacki
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-   add code to represent the game starting like so:
+Add code to represent the game starting:
 
 
    ```javascript
-   console.log(`Welcome to Texas Hold Em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`)
+   console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`)
    ```
 
 ## Adding an end condition
 
-A game of Texas Holdem can go on for many game rounds and usually finishes when one player has all the poker chips and the other players have lost there. You need to add code to represent such a state. This situation is where you want to rely on operators and use a boolean data type.
+A game of Texas Hold'em can go on for many game rounds and usually finishes when one player has all the poker chips and the other players have lost theirs. You need to add code to represent such a state. This situation is where you want to rely on operators and use a boolean data type.
 
 1. Add the following code at the top of the file:
 
@@ -58,7 +58,7 @@ A game of Texas Holdem can go on for many game rounds and usually finishes when 
 1. Add the following code to evaluate the game state:
 
    ```javascript
-   gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has one
+   gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has won
                   ((playerTwoPoints + playerThreePoints) == 0) ||  // one has won
                   ((playerOnePoints + playerThreePoints) == 0);  // two has won 
    console.log("Game has ended: ", gameHasEnded);
@@ -76,7 +76,7 @@ let playerOneName = "Chloe";
 let playerTwoName = "Jasmine";
 let playerThreeName = "Jen";
 
-console.log(`Welcome to Texas Hold Em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`);
+console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`);
 
 let playerOnePoints = STARTING_POKER_CHIPS;
 let playerTwoPoints = STARTING_POKER_CHIPS;
@@ -102,7 +102,7 @@ node app.js
 You should see the following output in the terminal:
 
 ```output
-Welcome to Texas Hold Em. The championship title will be awarded to one of these three players: Chloe, Jasmine and Jen. Each player has 100 in their pot. We have an exciting game ahead of us, may the best player win
+Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: Chloe, Jasmine and Jen. Each player has 100 in their pot. We have an exciting game ahead of us, may the best player win
 Game has ended: false
 ```
 
