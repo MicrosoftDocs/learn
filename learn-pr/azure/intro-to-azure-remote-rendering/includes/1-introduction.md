@@ -18,4 +18,4 @@ By the end of this module, you'll be able to explain how Azure Remote Rendering 
 
 ## What is the main goal?
 
-The main goal is to determine how Azure Remote Rendering can help you render and live-stream complex models to the desired visual fidelity without compromise.<!--If you expand this thought "without compromise" above, readers will understand exactly what you mean here. No adjustment needed. -->
+The main goal is to determine how Azure Remote Rendering can help you render and live-stream complex models to the desired visual fidelity without compromise.<!--If you expand this thought "without compromise" above, readers will understand exactly what you mean here. No adjustment needed. --> This is a test!
