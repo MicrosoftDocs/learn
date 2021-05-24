@@ -1,8 +1,8 @@
 Let's take a peek under the hood of Azure Monitor. You'll learn a bit about how Azure Monitor provides insights into the performance of your hosted services.
 
-You can monitor and start investigations in Azure Monitor directly in the Azure Portal or access Azure Monitor capabilities in the Monitoring section of your Azure resource blade.
+You can monitor and start investigations in Azure Monitor directly in the Azure portal or access Azure Monitor capabilities in the Monitoring section of your Azure resource blade.
 
-You can enable Azure Monitor for your resources at-scale programmatically with Azure CLI, ARM templates and Powershell. You can ingest and export data via APIs and you can use Azure Event Hubs to stream data out in near real time.
+You can enable Azure Monitor for your resources at-scale programmatically with Azure CLI, Azure Resource Manager (ARM), templates and Powershell. You can ingest and export data via APIs and you can use Azure Event Hubs to stream data out in near real time.
 
 You'll learn how Azure Monitor can:
 * Display metrics for your services
