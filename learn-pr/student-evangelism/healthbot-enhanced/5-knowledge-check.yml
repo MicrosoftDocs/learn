@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-enhanced.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 05/21/2021
+  author: shreyan1999
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  
+  questions:
+    
+    - content: "The main difference between the Interrupting Scenario and the Breaking Scenario is..."
+      choices:
+        - content: "They both are almost the same, we get the same results."
+          isCorrect: false
+          explanation: No, they are not same. One of them returns to the original bot while the other doesn't.
+        - content: "The breaking scenario breaks from the current flow and returns, while the interrupting scenario doesn’t return."
+          isCorrect: false
+          explanation: No. Breaking scenario doesn't return to the original bot.
+        - content: "The interrupting scenario breaks from the current flow and returns, while the breaking scenario doesn’t return. "
+          isCorrect: true
+          explanation: Yes, the interrupting scenario returns to the main scenario with an interrupt message whereas the breaking scenario doesn’t. It breaks the flow.
+    
+    - content: "How does the interrupting scenario work?"
+      choices:
+        - content: "When the user finishes running a bot, the interrupt scenario takes the user to the interrupting bot.  "
+          isCorrect: false
+          explanation: "False. An Interrupting scenario breaks the current flow of the scenario. "
+        - content: "When the user enters a keyword as the input, the interrupt scenario takes the user to the interrupting bot."
+          isCorrect: true
+          explanation: "The keyword is important for the interrupting scenario. The whole interruption 	is possible only because of this keyword. This is defined while creating a new model."
+        - content: "When the user interrupts the present bot by clicking on stop, the interrupt scenario takes the user to the interrupting bot."
+          isCorrect: false
+          explanation: "There is no option for the user to click on stop while the bot is running. Ending the current flow of the bot doesn't take the user to the interrupting bot."
+        
+
+    - content: "Which of the following needs to be unique?"
+      choices:
+        - content: "Returning Message"
+          isCorrect: false
+          explanation: "Returning message can be same for more than one scenario."
+        - content: "Description"
+          isCorrect: false
+          explanation: "Description of one scenario can be same as the description of another scenario."
+        - content: "Scenario ID"
+          isCorrect: true
+          explanation: "Scenario ID is unique to every scenario. This is necessary to map the scenario."

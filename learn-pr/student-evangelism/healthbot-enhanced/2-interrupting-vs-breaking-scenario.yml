@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-enhanced.2-interrupting-vs-breaking-scenario
+title: Interrupting vs Breaking Scenario
+metadata:
+  title: Interrupting vs Breaking Scenario
+  description: In this unit, you will learn the difference between the two scenarios.
+  author: shreyan1999
+  ms.author: chnoring
+  ms.date: 05/21/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-interrupting-vs-breaking-scenario.md)]
