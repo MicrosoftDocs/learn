@@ -239,7 +239,7 @@ The cache should now keep separate responses for different values of the *Height
 
 1. Enter the following values for the **Template parameters** and **Query parameters**.
 
-    | Name | Value |
+    | NAME | VALUE |
     | --- | --- |
     | ShippingCode | USA |
     | Game | Chess |
@@ -255,7 +255,7 @@ The cache should now keep separate responses for different values of the *Height
 
 1. To test the *Height* parameter, use the following values for *Template parameters* and *Query parameters*.
 
-    | Name | Value |
+    | NAME | VALUE |
     | --- | --- |
     | ShippingCode | USA |
     | Game | Chess |
@@ -269,7 +269,7 @@ The cache should now keep separate responses for different values of the *Height
 
 1. To test the *Width* parameter, enter the following values for *Template parameters* and *Query parameters*.
 
-    | Name | Value |
+    | NAME | VALUE |
     | --- | --- |
     | ShippingCode | USA |
     | Game | Chess |
