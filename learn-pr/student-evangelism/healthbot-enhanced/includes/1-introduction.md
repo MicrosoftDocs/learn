@@ -1,6 +1,6 @@
 In the previous scenario we created a Basic Health bot. Now using the same bot, we will be going through the steps involved to create an interrupting and breaking scenario. So, if you haven't gone through the previous module, please visit that module and complete before going ahead.
 
-:::image type="content" source="../media/built-bot.png" alt-text="built bot":::
+:::image type="content" source="../media/1-built-bot.png" alt-text="built bot":::
 
 ## Learning Objectives
 
