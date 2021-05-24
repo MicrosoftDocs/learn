@@ -63,7 +63,7 @@ The policy editor that appears contains default XML content. On the right, you c
 
 To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** pane, you can select **Add policy** to start a wizard that helps you to add policy with the correct syntax:
 
-![Global All API Scope](../media/2-global-policy-wizard.png)
+![Global All API Scope to add policy](../media/2-global-policy-wizard.png)
 
 ### Product policy scope
 
