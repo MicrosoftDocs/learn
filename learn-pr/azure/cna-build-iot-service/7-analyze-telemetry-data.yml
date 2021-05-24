@@ -2,8 +2,8 @@
 uid: learn.azure.build-iot-service.7-analyze-telemetry-data
 title: Describe Azure Cosmos DB
 metadata:
-  title: Analyze telemtry data
-  description: Analyze telemtry data
+  title: Analyze telemetry data
+  description: Analyze telemetry data
   ms.date: 04/29/2021
   author: mpolicht
   ms.author: jasdeb
