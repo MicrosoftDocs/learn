@@ -1,0 +1,13 @@
+uid: learn.healthbot-enhanced.4-breaking-scenario
+title: Breaking Scenario
+metadata:
+  title: Breaking Scenario
+  description: In this unit, you will learn how to build a bot using Breaking Scenario.
+  author: shreyan1999
+  ms.author: chnoring
+  ms.date: 05/21/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-breaking-scenario.md)]
