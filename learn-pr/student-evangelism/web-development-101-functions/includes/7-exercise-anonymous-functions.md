@@ -37,7 +37,7 @@ Let's see the results!
 
 1. Refresh the browser window. Notice the original message displays, and is replaced after two seconds by '...Hello again!'
 
-    ![Screenshot of the browser showing ...Hello again!](../media/hello-again.png)
+   :::image type="content" source="../media/hello-again.png" alt-text="Screenshot of the browser showing ...Hello again!":::
 
 You have now used an anonymous function to have a message appear on a delay.
 

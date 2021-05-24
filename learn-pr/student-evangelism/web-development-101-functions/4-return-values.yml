@@ -6,7 +6,7 @@ metadata:
   description: Functions can return values, which is nice to allow functions to perform calculations or other operations which return results. We will see how to use return values in JavaScript functions.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 05/18/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
