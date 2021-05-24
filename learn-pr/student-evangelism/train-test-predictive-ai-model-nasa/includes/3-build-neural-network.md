@@ -144,7 +144,7 @@ The neural network goes back and forth many times until it learns the best assoc
 
 :::image type="content" source="../media/neural-network-training.gif" alt-text="Dynamic diagram that demonstrates how neural networks are created to train a learning model."  loc-scope="Azure":::
 
-> Image credit: Grant Sanderson, https://www.3blue1brown.com/.
+> *Visualization credit: Grant Sanderson, https://www.3blue1brown.com/.*
 
 
 <!-- Links -->

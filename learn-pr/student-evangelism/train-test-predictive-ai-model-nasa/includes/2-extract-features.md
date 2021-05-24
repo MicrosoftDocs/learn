@@ -12,5 +12,5 @@ We'll use 32 filters to classify the rocks in our model, but more filters are av
 
 :::image type="content" source="../media/filters.gif" alt-text="Dynamic diagram that demonstrates the application of a filter." loc-scope="Azure":::
 
-> Image credit: Grant Sanderson, https://www.3blue1brown.com/.
+> *Visualization credit: Grant Sanderson, https://www.3blue1brown.com/.*
 
