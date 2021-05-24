@@ -16,12 +16,12 @@ Mara decides to take an initial pass on the biggest issue, **Stabilize the build
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Create a build pipeline in Azure Pipelines.
-- Map the manual build steps to automated build tasks.
-- Publish your builds so others can access them.
-- Use templates to build multiple configurations.
+- Create a build pipeline in Azure Pipelines
+- Map manual build steps to automated build tasks
+- Publish your builds so others can access them
+- Use templates to build multiple configurations
 
 ## Prerequisites
 

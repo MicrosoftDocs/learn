@@ -12,9 +12,9 @@ metadata:
 title: Create a build pipeline with Azure Pipelines
 summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |
-  In this module, you will:
+  After completing this module, you'll be able to:
   - Create a build pipeline in Azure Pipelines
-  - Map the manual build steps to automated build tasks
+  - Map manual build steps to automated build tasks
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
