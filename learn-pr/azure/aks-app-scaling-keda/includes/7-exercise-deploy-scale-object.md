@@ -133,7 +133,8 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
 
 3. Periodically run the `kubectl get pods` command to verify the deployment is scaling the number of pods according to the backlog of work.
 
-  > **NOTE:** If you have Linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also use `kubectl get pods -w`.
+  > [!NOTE]
+  > If you have Linux utility `watch` installed you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`  If not, you can also use `kubectl get pods -w`.
 
   The command should output a table similar to the following example:
 
