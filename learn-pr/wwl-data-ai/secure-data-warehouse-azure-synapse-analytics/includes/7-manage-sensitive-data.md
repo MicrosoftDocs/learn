@@ -261,8 +261,7 @@ The following parameters need to be passed through:
 * *dataMaskingPolicyName*: the name of the data masking policy
 * *api version*: version of the api that is used.
 
-
-* Data masking rules
+- Data masking rules
 
 - Create Or Update
 
