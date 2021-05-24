@@ -1,29 +1,23 @@
-To determine if Health Bot is for you, let’s see some scenarios that you can use. The Health Bot contains built-in scenarios but you can also build additional scenarios through the Scenario Editor.
+To determine if Health Bot is for you, let's see some scenarios that you can use. 
 
-The built-in scenarios include the following:
+Health Bot contains built-in scenarios, like the following:
 
-#### 1. Triage/symptom checker, powered by built-in medical protocols
+- **Triage/symptom checker, based on built-in medical protocols**: The user describes a symptom to the Health Bot instance. The bot helps the user to understand the symptom and suggests how to react. For example: "I have a headache."
 
-The end user describes a symptom to the health bot instance and the bot helps the user to understand it and suggests how to react; for example, "I have a headache".
+- **General information about conditions, symptoms, causes, and complications**: Loaded with medical content, the Health Bot instance can provide information about medical conditions, symptoms, causes, and complications. For example: "information about diabetes", "what are the causes of malaria," or "tell me about the complications of arthritis."
 
-#### 2. General information about conditions, symptoms, causes and complications
+- **Find doctor type**: The Health Bot instance can recommend the appropriate type of doctor to treat an illness. For example: "What type of doctor treats diabetes?"
 
-Loaded with medical content, the health bot instance can provide information about medical conditions, symptoms, causes, and complications; for example, "information about diabetes", "what are the causes of malaria" or "tell me about the complications of arthritis".
+If you want to build something more detailed, here are examples of scenarios that our customers typically build as extensions by using the scenario authoring elements:
 
-#### 3. Find doctor type
+- **Health plan inquiries**: You can customize your Health Bot instance to access health plan details, such as pricing and benefits.
 
-The health bot instance can recommend the appropriate type of doctor to treat an illness; for example, "What type of doctor treats diabetes?".
+- **Finding providers**: Your Health Bot instance can allow customers to search for doctors by specialty, in-network status, and other specifications.
 
-If you would like to build something more detailed that meets your expectations, below are some examples of scenarios that are typically built by our customers as extensions using the scenario authoring elements:
+- **Scheduling appointments**: Your Health Bot instance can be designed to allow your customers to schedule appointments easily and securely.
 
-- **Health plan inquiries**: Your health bot instance can be customized to access information about health plan details, such as pricing and benefits
+Now, let's examine how two kinds of companies can use the Health Bot Service:
 
-- **Finding providers**: Your health bot instance can allow customers to search for doctors by specialty, in-network status, and other specifications
+- Insurance companies can build Health Bot instances that give their customers an easy way to look up the status of a claim and ask questions about benefits and services. Through this interaction, customers acquire better communication with the company, and the company understands the existing needs.
 
-- **Scheduling appointments**: Your health bot instance can be designed to allow your customers to schedule appointments easily and securely
-
-Now, let’s examine how two different kinds of companies can use the Health Bot Service:
-
-1. Insurance companies can build health bot instances that give their customers an easy way to look up the status of a claim and ask questions about benefits and services. Through this interaction, customers acquire better communication with the company and the company itself understands the existing needs.
-
-2. Providers can build health bot instances that triage patient issues with a symptom checker, help patients find appropriate care, and look up nearby doctors. In this way, patients have an integrated solution which helps them in everyday healthcare issues.
+- Providers can build Health Bot instances that triage patient issues with a symptom checker, help patients find appropriate care, and look up nearby doctors. In this way, patients have an integrated solution that helps them with everyday healthcare issues.

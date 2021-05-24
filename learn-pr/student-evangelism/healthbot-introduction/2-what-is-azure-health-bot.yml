@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-introduction.2-what-is-azure-health-bot
-title: What is Azure Health Bot
+title: What is Azure Health Bot?
 metadata:
-  title: What is Azure Health Bot
-  description: In this unit, you will learn the basics of Azure Health Bot
+  title: What is Azure Health Bot?
+  description: In this unit, you'll learn the basics of Azure Health Bot.
   author: RuchaYagnik
   ms.author: chnoring
   ms.date: 05/11/2021
