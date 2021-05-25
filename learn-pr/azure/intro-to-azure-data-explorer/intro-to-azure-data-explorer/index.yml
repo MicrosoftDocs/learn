@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-data-explorer 
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure Data Explorer          
+  description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."                 # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 05/20/2021
+  author: YaelSchuster      
+  ms.author: yaschust           
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-data-explorer  
+title: Introduction to Azure Data Explorer
+summary: "Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business. Determine the types of data analysis for which Azure Data Explorer is a good data management platform."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data.
+    - Describe how the features of Azure Data Explorer work to turn your data streams into meaningful insights.
+prerequisites: |
+  - Familiarity with challenges of Big Data, such as velocity, variety, and volume.
+  - Basic knowledge of query language concepts such as filters and aggregates.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - data-engineer
+  - data-analyst
+products:
+  - azure-data-explorer
+units:
+- learn.intro-to-azure-data-explorer.introduction
+- learn.intro-to-azure-data-explorer.what-is-azure-data-explorer
+- learn.intro-to-azure-data-explorer.how-azure-data-explorer-works
+- learn.intro-to-azure-data-explorer.when-to-use-azure-data-explorer
+- learn.intro-to-azure-data-explorer.knowledge-check
+- learn.intro-to-azure-data-explorer.summary
+badge:
+  uid: learn.intro-to-azure-data-explorer.badge
