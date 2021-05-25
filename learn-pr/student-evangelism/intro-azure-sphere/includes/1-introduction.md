@@ -4,6 +4,7 @@ Traditionally, we haven't approached IoT Security from a holistic perspective. W
 
 Suppose you're a part of the Engineering team responsible for management of a group of solar panels.  You're responsible for managing the daily operations of the solar panels.  Many of these panels are older and they're all in remote locations. As a part of a Green initiative, your company is now looking to expand the number of solar panels. Your goal is to remotely monitor the health of the solar panels (both new and legacy) and update the applications deployed on these panels. This task must be done remotely and securely. Also, you want to solve business problems from the data acquired from the solar panels.  You're thus looking to implement a solution that can securely manage a range of IoT devices (Solar panels). You can then use the data from these secure devices to build solutions for your own business problems.
 
-##### ![](../media/scenario.jpg)
+:::image type="content" source="../media/scenario.jpg" alt-text="Diagram of the described scenario showing several solar panels and computers connected to Azure Sphere Security Service and a cloud service.":::
+![](../media/scenario.jpg)
 
 In this module, you'll learn how to use Azure sphere to address scenarios such as the above. By the end of this module, you'll be able to understand the capabilities of Azure sphere. You'll be able to evaluate Azure Sphere as a platform for creating secure IoT applications.
