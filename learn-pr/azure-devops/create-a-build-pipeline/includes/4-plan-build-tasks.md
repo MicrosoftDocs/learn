@@ -107,7 +107,7 @@ Mara can use one of two methods to configure her pipeline:
 
 * The visual designer. Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
 
-    ![The Azure Pipelines visual designer showing build tasks for a .NET application](../media/4-visual-designer.png)
+    :::image type="content" source="../media/4-visual-designer.png" alt-text="The Azure Pipelines visual designer showing build tasks for a .NET application.":::
 
 * A YAML file. YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
 

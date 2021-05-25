@@ -12,7 +12,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal**.
 1. In the dropdown, select **bash**:
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Selecting the Bash shell in Visual Studio Code.":::
 
     The terminal window lets you select any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -61,7 +61,8 @@ To fork the *Space Game* web project into your GitHub account:
 1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Select **Fork**:
 
-    ![The Fork button on GitHub](../media/3-github-fork-button.png)
+    :::image type="content" source="../media/3-github-fork-button.png" alt-text="GitHub showing the location of the Fork button.":::
+
 1. To fork the repository into your account, follow the instructions.
 
 ### Clone your fork locally
@@ -178,7 +179,7 @@ From a new browser tab, to see the running app, navigate to `http://localhost:50
 
 You see this:
 
-![A web browser showing the Space Game web site.](../media/3-space-game-top.png)
+:::image type="content" source="../media/3-space-game-top.png" alt-text="A web browser showing the Space Game web site.":::
 
 > [!TIP]
 > If you see an error in your browser that's related to a privacy or certificate error, to stop the running app, select <kbd>Ctrl+C</kbd> from your terminal.
@@ -189,6 +190,6 @@ You see this:
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
-![The Space Game leaderboard](../media/3-space-game-leaderboard-profile.png)
+:::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="A web browser showing the Space Game leaderboard.":::
 
 When you're finished, return to the terminal window, and to stop the running app, and select <kbd>Ctrl+C</kbd>.

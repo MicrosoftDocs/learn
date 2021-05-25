@@ -16,7 +16,7 @@ To complete the work item:
 1. From Microsoft Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
 1. Move the **Stabilize the build server** work item from the **Doing** column to the **Done** column:
 
-    ![Azure Boards, with the card in the Done column](../media/9-azure-boards-wi1-done.png)
+    :::image type="content" source="../media/9-azure-boards-wi1-done.png" alt-text="Azure Boards showing the work item in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
@@ -35,7 +35,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the dropdown, select **Settings**.
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -51,10 +51,10 @@ To delete the project:
 
     The icon might not appear until you move your mouse over that area.
 
-    ![The gear icon in Azure DevOps](../../shared/media/azure-devops-project-gear.png)
+    :::image type="content" source="../../shared/media/azure-devops-project-gear.png" alt-text="Azure DevOps showing the location of the gear icon.":::
 1. In the **Project details** area, scroll to the bottom, and select **Delete**.
 
-    ![The Delete button in Azure DevOps](../../shared/media/azure-devops-delete-project.png)
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Azure DevOps showing the location of the Delete button.":::
 1. In the window that appears, enter the project name, and select **Delete** a second time.
 
     Your project is now deleted.
