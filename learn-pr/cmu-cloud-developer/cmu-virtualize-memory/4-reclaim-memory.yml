@@ -28,10 +28,14 @@ quiz:
 
 # Did I Get This block 2 question 1
 # Quiz uses image "quiz-memory-state.png"
-  - content: "Consider the following memory state as imposed by two VMs running on a single physical host: <br>
-              <img src=./media/quiz-memory-state.png></img> <br>
-              Assume that the shown hypervisor employs a ballooning process. <br><br>
-              How would the hypervisor recognize inactive pages to reclaim them?"
+  - content: |
+      Consider the following memory state as imposed by two VMs running on a single physical host:
+      
+      :::image type="content" source="./media/quiz-memory-state.png" alt-text="Diagram showing the memory state of a hypervisor with blocks corresponding with two virtual machines, VM1 and VM2. From left to right, the hypervisor shows a pinned page from VM1, then a pinned page from VM2, then a pinned page from VM1, then two pinned pages from VM2, and lastly a pinned page from VM1. VM1 has a sub block with one pinned page and one unlinked pinned page. VM2 has a sub block with two unlinked pinned pages.":::
+      
+      Assume that the shown hypervisor employs a ballooning process.
+      
+      How would the hypervisor recognize inactive pages to reclaim them?
     choices:
     - content: "By deflating the balloon at VM1"
       isCorrect: false
