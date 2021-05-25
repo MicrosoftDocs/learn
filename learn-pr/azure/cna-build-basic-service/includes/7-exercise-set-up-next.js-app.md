@@ -162,7 +162,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
     ```
 
     > [!NOTE]
-    > The script relies on Prisma to query the content of the database and uses React <!--Marcin, we haven't mentioned this term previously--> to display individual records from the inventory table, including their respective data.
+    > The script relies on Prisma to query the content of the database and uses React to display individual records from the inventory table, including their respective data.
 
 1. Run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and store them in temporary variables:
 

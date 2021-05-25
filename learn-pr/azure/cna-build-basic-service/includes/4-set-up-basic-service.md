@@ -8,7 +8,7 @@ The modularization principle of the services model provides a high degree of sep
 
 The loose coupling of services allows you to even change the underlying technology without forcing significant code rewrites of the entire application. For example, the Express.js backend service could be containerized and deployed to a Kubernetes cluster, allowing it to scale dynamically based on demand. Alternatively, you could deploy it as a container-based or code-based Azure App Service web app, which also supports autoscaling.
 
-Similarly, you could modify the backend service to connect to a different database of choice, potentially relying on the same set of libraries. Most common object-relational mapper <!--Marcin, this doesn't seem to be an approved acronym an we only use it once after this, so  I replaced it with the full term-->libraries available with Node.js, such as Prisma or Sequelize, support a range of relational database products, including PostgreSQL, MariaDB, and Microsoft SQL Server.
+Similarly, you could modify the backend service to connect to a different database of choice, potentially relying on the same set of libraries. Most common object-relational mapper libraries available with Node.js, such as Prisma or Sequelize, support a range of relational database products, including PostgreSQL, MariaDB, and Microsoft SQL Server.
 
 Another benefit of the modular design is its extensibility. You have the option of adding another component, such as a management service accessible via a Next.js web app and containerize it if needed, without significant changes to the existing application.
 
