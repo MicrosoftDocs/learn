@@ -23,7 +23,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Delivery plans*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
+    ![Creating a project through the Azure DevOps Demo Generator.](../media/4-create-new-project.png)
 
 1. Select **Create Project**.
 
