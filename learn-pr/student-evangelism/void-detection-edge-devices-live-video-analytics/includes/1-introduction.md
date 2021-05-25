@@ -4,6 +4,8 @@ Suppose that you are responsible for building and developing solutions for retai
 
 You are interested in the use of video analytics with machine learning in retail stores. Your solution will capture the live video stream from cameras such as security cameras. Images from a video stream will be analyzed and processed to detect void spaces on the shelf with an acceptable confidence level. Hence your customer will get an alert if the shelf is empty and will be able to automate the process of manual inspection of shelves in a cost-effective manner. 
 
+![The illustration shows the senario image.](../media/void-detection-scenario.png)
+
 ## Prerequisites
 - An Azure subscription
 - Ability to use Azure Cloud Shell
