@@ -6,7 +6,7 @@ Each Health Bot instance is managed and monitored via the Health Bot service's m
 
 You can use the flexibility of the service as shown in the following examples:
 
-- Author unique scenarios for your Health Bot instances to extend the baseline scenarios and support your own flows.
+- Author unique scenarios for your Health Bot instance to extend the baseline scenarios and support your own flows.
 - Configure the Health Bot instance's behavior to match your scenarios.
 - Connect the Health Bot instance to other information systems, like those that manage EMR, health information, and customer information.
 - Integrate the Health Bot instance into other systems such as websites, chat channels, and digital personal assistants.
@@ -17,16 +17,10 @@ Health Bot implements natural language processing (NLP) and AI technologies to u
 
 ### Built-in triage and symptom checker
 
-An interactive symptom checker and medical database are built in to Health Bot. Together, they enable meaningful conversations with patients by using both common language and medical terms. 
-
-Conversational intelligence also adapts dynamically as the Health Bot instance learns from previous interactions. Azure Cognitive Services and credible world knowledge provide the service's intelligence. 
-
-Besides the built-in scenarios, developers can build custom scenarios that meet their business needs and expectations.  
+The interactive symptom checker and medical database built in to Health Bot enable meaningful conversations with patients by using both common language and medical terms. Conversational intelligence adapts dynamically as the Health Bot instance learns from previous interactions. Azure Cognitive Services and credible world knowledge provide the service's intelligence. 
 
 ### Healthcare-specific configuration options
 
 Health Bot is designed to meet the regulatory requirements of the healthcare industry, so it's important mention the issues of trust and compliance. The information that each instance of the Health Bot Service handles is privacy protected to HIPAA standards. HIPAA mandates industry-wide standards for healthcare information on electronic billing and other processes. HIPAA also requires the protection and confidential handling of protected health information.
-
-Because the Health Bot service is built on top of Microsoft Azure technology, it can scale with resilience while maintaining high standards of privacy and security.
 
 Health Bot has a list of certifications in the areas of trust and compliance. You can find it in the [official documentation](/azure/health-bot/).

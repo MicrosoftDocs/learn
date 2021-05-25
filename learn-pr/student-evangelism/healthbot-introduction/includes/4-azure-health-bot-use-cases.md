@@ -1,14 +1,14 @@
 To determine if Health Bot is for you, let's see some scenarios that you can use. 
 
-Health Bot contains built-in scenarios, like the following:
+Health Bot contains built-in scenarios like the following:
 
 - **Triage/symptom checker, based on built-in medical protocols**: The user describes a symptom to the Health Bot instance. The bot helps the user to understand the symptom and suggests how to react. For example: "I have a headache."
 
-- **General information about conditions, symptoms, causes, and complications**: Loaded with medical content, the Health Bot instance can provide information about medical conditions, symptoms, causes, and complications. For example: "information about diabetes", "what are the causes of malaria," or "tell me about the complications of arthritis."
+- **General information about conditions, symptoms, causes, and complications**: Loaded with medical content, the Health Bot instance can provide information about medical conditions, symptoms, causes, and complications. For example: "information about diabetes," "what are the causes of malaria," or "tell me about the complications of arthritis."
 
-- **Find doctor type**: The Health Bot instance can recommend the appropriate type of doctor to treat an illness. For example: "What type of doctor treats diabetes?"
+- **Find doctor type**: The Health Bot instance can recommend the appropriate type of doctor to treat an illness. For example: "what type of doctor treats diabetes?"
 
-If you want to build something more detailed, here are examples of scenarios that our customers typically build as extensions by using the scenario authoring elements:
+If you want to build something more detailed, here are examples of scenarios that our customers typically build as extensions by using the scenario-authoring elements:
 
 - **Health plan inquiries**: You can customize your Health Bot instance to access health plan details, such as pricing and benefits.
 

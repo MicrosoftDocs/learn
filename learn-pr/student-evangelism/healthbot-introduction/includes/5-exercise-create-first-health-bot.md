@@ -4,9 +4,9 @@ You need an Azure account to complete these steps. If you don't have one, create
 
 1. Sign in to your account and go to the [Azure portal](https://portal.azure.com/).
 
-2. In the global search, look for **Health Bot**.
+2. In the global search, look for **Health Bot** and then select **Azure Health Bot**.
 
-   :::image type="content" source="../media/5-select-search.png" alt-text="Screenshot of the Azure portal that shows searching for and selecting Health Bot.":::
+   :::image type="content" source="../media/5-select-search.png" alt-text="Screenshot of the Azure portal that shows searching for and selecting Azure Health Bot.":::
 
 3. On the Health Bot management pane, select **New** to create a Health Bot instance.
 

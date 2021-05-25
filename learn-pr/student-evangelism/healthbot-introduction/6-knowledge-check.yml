@@ -28,7 +28,7 @@ quiz:
       choices:
         - content: It offers an extensible management portal.
           isCorrect: false
-          explanation: On the **Interactions** tab, you configure built-in scenarios that interact with the user.
+          explanation: On the Interactions tab, you configure built-in scenarios that interact with the user.
         - content: It meets the regulatory requirements of the healthcare industry.
           isCorrect: false
           explanation: The information that each instance of the Health Bot handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
