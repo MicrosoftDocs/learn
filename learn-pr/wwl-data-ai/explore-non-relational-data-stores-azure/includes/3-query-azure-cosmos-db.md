@@ -88,7 +88,7 @@ SELECT TOP 3 *
 FROM c
 ORDER BY c.Name
 
-// Display the details of every customer for which the data of birth is recorded
+// Display the details of every customer for which the date of birth is recorded
 SELECT * FROM p
 WHERE IS_DEFINED(p.DateOfBirth)
 ```

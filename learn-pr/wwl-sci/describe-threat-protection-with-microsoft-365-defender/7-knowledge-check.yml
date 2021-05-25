@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2021
+  ms.date: 05/11/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "The data security of your entire estate."
       isCorrect: false
-      explanation: "That's incorrect. While data security is important for any organization. However,  it's not the key considerations for Microsoft Cloud App Security."
+      explanation: "That's incorrect. While data security is important for any organization, it isn't a key consideration for Microsoft Cloud App Security."
     - content: "The architecture of your entire estate."
       isCorrect: true
       explanation: "That's correct. When using Cloud App Security, consideration must be given to the entire estate."

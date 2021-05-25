@@ -11,7 +11,7 @@ After completing this module, you’ll understand how group policies work in a W
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you'll be able to: 
 
 - Describe GPOs.
 - Describe GPO scope and inheritance.

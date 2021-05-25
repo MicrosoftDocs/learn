@@ -14,7 +14,7 @@ This tutorial makes it easy for you to create a new repository by using a GitHub
 
 You just created a GitHub repository named **my-static-blazor-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
-1. Open Visual Studio and clone the GitHub repository to your computer.
+1. At your GitHub repository, click the **Code** button and select **Open Visual Studio** from the menu. This will prompt you to launch Visual Studio and clone the repository to your machine.
 
 1. Open the solution file, _ShoppingList.sln_.
 

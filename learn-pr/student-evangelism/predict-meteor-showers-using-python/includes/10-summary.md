@@ -11,4 +11,5 @@ Although lists of meteor showers and other space events may seem commonplace in 
 
 You're now equipped to gather data on other celestial (or earthly) events and to explore that data through code to gain understanding and new perspectives. This module is a first step to creating models that computers can run on their own to make predictions. It all starts with one person's curiosity. 
 
-This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/OverTheMoon/Video2?azure-portal=true).
+> [!TIP]
+> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/Aln9p6farRg?azure-portal=true) in a new tab.

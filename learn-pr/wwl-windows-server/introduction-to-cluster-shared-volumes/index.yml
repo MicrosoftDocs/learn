@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-cluster-shared-volumes
 metadata:
   title: Introduction to Cluster Shared Volumes
   description: "Introduction to Cluster Shared Volumes"
-  ms.date: 02/01/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
   - Fundamental knowledge of Windows Server Failover Clustering.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-cluster-shared-volumes.svg
 levels:
 - beginner
 roles:

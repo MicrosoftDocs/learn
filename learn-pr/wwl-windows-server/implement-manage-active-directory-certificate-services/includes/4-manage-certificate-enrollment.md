@@ -9,7 +9,7 @@ A certificate also contains the key pair, which consists of a private key and th
 - When content is encrypted with the public key, it can be decrypted only with the private key.
 - When content is encrypted with the private key, it can be decrypted only with the public key.
 - No other key is involved in the relationship between the keys from a single key pair.
-- The private key can#t be derived in a reasonable amount of time from a public key, and vice versa.
+- The private key can't be derived in a reasonable amount of time from a public key, and vice versa.
 
 As part of the certificate enrollment process, the client generates the public/private key pair. The client then sends the public key to CA, which confirms client information, signs it with its own private key, and then sends the certificate, which includes the client public key, back to the client.
 
@@ -46,7 +46,7 @@ The following video demonstrates how to:
 The main steps in the process are:
 
 1. Create an AD DS environment. Create a single-domain AD DS forest.
-1. Deploy an Enterprise Root CA. Deploy an Enterprise Root CA.
+1. Deploy an Enterprise Root CA.
 1. Create a custom certificate template. Use the Certificate Templates console to duplicate the Web Server template.
 1. Configure the template so that it can be issued. Use the Certification Authority console, to make the template available for use.
 

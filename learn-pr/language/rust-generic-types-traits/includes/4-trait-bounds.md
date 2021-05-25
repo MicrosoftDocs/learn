@@ -21,8 +21,7 @@ fn send_data_as_json(value: &impl AsJson) {
 }
 ```
 
-Instead of a concrete type for the `item` parameter, we specify the `impl` keyword and the trait
-name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
+Instead of a concrete type for the `value` parameter, we specify the `impl` keyword and the trait name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
 Another way to write the same function, but with a little different syntax, explicitly tells that T is a generic type that must implement the `AsJson` trait:
 
@@ -47,19 +46,19 @@ struct Dog {
 
 impl AsJson for Person {
     fn as_json(&self) -> String {
-	format!(
-	    r#"{{ "type": "person", "name": "{}", "age": {}, "favoriteFruit": "{}" }}"#,
-	    self.name, self.age, self.favorite_fruit
-	)
+	    format!(
+	        r#"{{ "type": "person", "name": "{}", "age": {}, "favoriteFruit": "{}" }}"#,
+	        self.name, self.age, self.favorite_fruit
+	    )
     }
 }
 
 impl AsJson for Dog {
     fn as_json(&self) -> String {
-	format!(
-	    r#"{{ "type": "dog", "name": "{}", "color": "{}", "likesPetting": {} }}"#,
-	    self.name, self.color, self.likes_petting
-	)
+	    format!(
+	        r#"{{ "type": "dog", "name": "{}", "color": "{}", "likesPetting": {} }}"#,
+	        self.name, self.color, self.likes_petting
+	    )
     }
 }
 ```
@@ -69,15 +68,15 @@ Now that both `Person` and `Dog` implement the `AsJson` trait, we can use them a
 ```rust
 fn main() {
     let laura = Person {
-	name: String::from("Laura"),
-	age: 31,
-	favorite_fruit: String::from("apples"),
+    	name: String::from("Laura"),
+	    age: 31,
+	    favorite_fruit: String::from("apples"),
     };
 
     let fido = Dog {
-	name: String::from("Fido"),
-	color: String::from("Black"),
-	likes_petting: true,
+	    name: String::from("Fido"),
+	    color: String::from("Black"),
+	    likes_petting: true,
     };
 
     send_data_as_json(&laura);

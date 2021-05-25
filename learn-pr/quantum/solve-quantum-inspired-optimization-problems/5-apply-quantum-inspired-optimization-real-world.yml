@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-quantum-inspired-optimization-problems.5-apply-quantum-inspired-optimization-real-world
-title: Apply quantum-inspired optimization to a real-world problem
+title: Apply QIO to a real-world problem
 metadata:
-  title: Apply quantum-inspired optimization to a real-world problem
+  title: Apply QIO to a real-world problem
   description: Learn how you can apply quantum-inspired optimization to a common weight-distribution problem.
   ms.date: 05/19/2020
   author: KittyYeungQ

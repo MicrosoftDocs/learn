@@ -1,6 +1,6 @@
 Just as Azure Data Factory provides a variety of methods for ingesting data, it also provides a range of methods to perform transformations. You can pick a method that matches the skillsets of your team or takes advantage of existing technologies that you already have in your data estate. There is also the opportunity to perform transformations without writing code at all using the Mapping Data Flow.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/ADF-Transformation-Methods/player?format=ny]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MeGO]
 
 ## Transforming data using Mapping Data Flow
 
@@ -15,7 +15,6 @@ Azure Data Factory can also call on compute resources to transform data by a dat
 | On-demand HDInsight cluster or your own HDInsight cluster | Hive, Pig, Spark, MapReduce, Hadoop Streaming |
 | Azure Batch|  Custom activities |
 | Azure Machine Learning Studio Machine | Learning activities: Batch Execution and Update Resource |
-| Azure Machine Learning | Azure Machine Learning Execute Pipeline |
 | Azure Machine Learning | Azure Machine Learning Execute Pipeline |
 | Azure Data Lake Analytics | Data Lake Analytics U-SQL |
 | Azure SQL, Azure SQL Data Warehouse, SQL Server | Stored Procedure |

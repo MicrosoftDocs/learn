@@ -6,23 +6,23 @@ Before you begin, make sure you have the following software installed on your ma
 -   [The Vue CLI](https://cli.vuejs.org)
 
 > [!NOTE]
-> You will need Node and NPM available on your machine to work with the Vue CLI. You can also try the Vue UI, which is a GUI overlying the Vue CLI. Launch a GUI for the CLI by typing `vue ui` and create your app in a more visual fashion.
+> You will need Node and NPM available on your machine to work with the Vue CLI. You can also try the Vue UI, which is a GUI overlying the Vue CLI. Launch a GUI for the CLI by entering `vue ui`, and create your app in a more visual fashion.
 
 ## Scaffold your app
 
-Once you have Node, NPM, and the Vue CLI installed, creating a new app is easy. Use `cd` to navigate to the folder where you want your code to go, open a command prompt or terminal, and type:
+After you have Node, NPM, and the Vue CLI installed, creating a new app is easy. Use `cd` to navigate to the folder where you want your code to go, open a command prompt or terminal, and enter:
 
 ```bash
     vue create this-or-that
 ```
 
-When the CLI asks whether you want to use presets or a manual scaffold, choose 'manual'. This way you have control over the plugins you want to install.
+When the CLI asks whether you want to use presets or a manual scaffold, choose 'manual.' This way you have control over the plugins you want to install.
 
 ![The Vue CLI](../media/cli.png)
 
 Make sure you choose 'Progressive Web App' in the choices on this screen of the CLI setup routine. You want to create an app that works both online and offline.
 
-Once the basic app is built, run it by typing:
+Once the basic app is built, run it by entering:
 
 ```bash
     cd this-or-that && npm run serve
@@ -32,7 +32,7 @@ You should see a basic Vue.js app scaffolded in your browser locally.
 
 ![Your app](../media/web-app.png)
 
-In the Developer Tools, click 'Audits' and review the Lighthouse area of your app. You can test how your Progressive Web App performs using this tool, but you won\'t do this until later when you deploy the app to azurewebsites.net.
+In the Developer Tools, select **Audits**, and review the Lighthouse area of your app. You can test how your Progressive Web App performs using this tool, but you won't do this until later when you deploy the app to azurewebsites.net.
 
 ## Build the inference interface
 
@@ -70,11 +70,11 @@ First, rename the file `HelloWorld.vue` in your codebase's `/src/components` fol
 </style>
 ```
 
-Create a folder in `/src/assets` called 'images' to house the images you will use for inference. Extract [this zip file](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) into that folder. This file includes seventeen images, including a blank one.
+Create a folder in `/src/assets` called *images* to house the images you will use for inference. Extract [this zip file](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) into that folder. This file includes seventeen images, including a blank one.
 
-> These images are the ones Karen Zack used to create her dalmatians vs. ice cream collage
+These images are the ones Karen Zack used to create her dalmatians v ice cream collage.
 
-Display an image and a button to switch it by editing the `<template>` in `DetectImage.vue` to include this layout:
+Display an image and a button to switch it by editing the `<template>` in `DetectImage.vue` to include the following layout.
 
 ```html
 <div>
@@ -92,7 +92,7 @@ Display an image and a button to switch it by editing the `<template>` in `Detec
 </div>
 ```
 
-Add a `data()` method under the closing parenthesis of the `props` object (add a comma at the close of that object) in `DetectImage.vue` to create placeholders for data:
+Add a `data()` method under the closing parenthesis of the `props` object (add a comma at the close of that object) in `DetectImage.vue` to create placeholders for data.
 
 ```javascript
 data() {
@@ -103,7 +103,7 @@ data() {
 },
 ```
 
-Under this object, create a `computed` property to return the index of an image and to disable the button in the template if the index is reached:
+Under this object, create a `computed` property to return the index of an image, and to disable the button in the template if the index is reached.
 
 ```JavaScript
 computed: {
@@ -118,7 +118,7 @@ computed: {
 },
 ```
 
-Create a `methods` object under the computed properties object to capture user interaction:
+Create a `methods` object under the computed properties object to capture user interaction.
 
 ```javascript
 methods: {
@@ -130,7 +130,7 @@ methods: {
 },
 ```
 
-Finally, add some styles by overwriting the `<styles>` block at the bottom of the `DetectImage.vue` file:
+Finally, add some styles by overwriting the `<styles>` block at the bottom of the `DetectImage.vue` file.
 
 ```HTML
 <style scoped>

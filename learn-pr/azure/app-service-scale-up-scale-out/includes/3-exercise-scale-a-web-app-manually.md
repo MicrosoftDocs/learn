@@ -16,28 +16,32 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Web**, search for and select **Web App**, and then select **Create**.
+1. Select **Web**, search for and select **Web App**, and then select **Create**. The **Create Web App** pane appears.
 
-1. On the **Web App** page, enter the values in the following table.
+1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The web app must have a unique name. We suggest using something like **\<your name or initials\>hotelsystem**. Use this name wherever you see \<your-webapp-name\> in this exercise.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
+    | **Project Details** |
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
     | Resource Group | Create a new resource group called **mslearn-scale** |
-    | App name | \<your-webapp-name\> |
+    | **Instance Details** |
+    | Name | \<your-webapp-name\> |
     | Publish | Code |
-    | Runtime stack | .NET Core 3.1 (LST)|
-    | O/S | Windows|
-    | App Service plan/Location | *Leave default* |
+    | Runtime stack | .NET Core 3.1 (LTS)|
+    | Operating System | Windows |
+    | Region | *leave default* |
+    | **App Service Plan** |
+    | App Service plan/Location | *Leave defaults* |
 
-1. Select **Create** and wait for the web app to be created.
+1. Select **Review + create** > **Create**, and wait for the web app to be created.
 
 ## Build and deploy the web app
 
-1. Open the Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run the following command to download the source code for the hotel reservation system.
+1. Open Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run the following command to download the source code for the hotel reservation system.
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git

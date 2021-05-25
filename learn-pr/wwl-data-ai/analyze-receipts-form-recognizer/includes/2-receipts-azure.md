@@ -12,9 +12,9 @@ Form Recognizer supports automated document processing through:
 > [!NOTE]
 > The next hands-on exercise will only step through **a pre-built receipt model**. If you would like to train a **custom model** you can refer to the [Form Recognizer documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) for quickstarts. 
 
-## Azure resources for Form Recognizer
+## Azure resources to access Form Recognizer services
 
-To use the Form recognizer, you must create a **Form Recognizer** resource in your Azure subscription.
+To use the Form recognizer, you need to either create a **Form Recognizer** resource or a **Cognitive Services** resource in your Azure subscription. Both resource types give access to the Form Recognizer service.
 
 After the resource has been created, you can create client applications that use its **key** and **endpoint** to connect submit forms for analysis.
 
@@ -37,7 +37,5 @@ Use the following guidelines to get the best results when using a custom model.
 - Image size between 50 x 50 pixels and 10000 x 10000 pixels
 - For PDF documents, no larger than 17 inches x 17 inches
 
-There is a free tier subscription plan for the receipt model along with paid subscriptions.  For the free tier, only the first 200 pages will be processed when passing in PDF or TIFF formatted documents.
+There is a free tier subscription plan for the receipt model along with paid subscriptions.  For the free tier, only the first two pages will be processed when passing in PDF or TIFF formatted documents.
 
-> [!NOTE]
-> The Form Recognizer is in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](https://docs.microsoft.com/azure/cognitive-services/form-recognizer?azure-portal=true) for the service, for up-to-date information.

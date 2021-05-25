@@ -36,18 +36,18 @@ To implement this solution, you'll create a release pipeline that deploys to QA 
 
 The script for the smoke test implements the following:
 
-- Test for the existence of the device(s)
-- Test if the device is connected to the IoT hub
-- Test if the device applied a new deployment manifest
-- Test if the modules specified in the deployment manifest are running successfully
+- Test for the existence of the device(s).
+- Test if the device is connected to the IoT hub.
+- Test if the device applied a new deployment manifest.
+- Test if the modules specified in the deployment manifest are running successfully.
 
 ## Test script steps
 
 The steps involved are:
 
-1. Create Azure resources
-2. Set up Azure DevOps Services
-3. Set up continuous integration
-4. Create a release pipeline with a smoke test
-5. Add integration tests to a release pipeline
-6. Monitor devices with Application Insights
+1. Create Azure resources.
+2. Set up Azure DevOps Services.
+3. Set up continuous integration.
+4. Create a release pipeline with a smoke test.
+5. Add integration tests to a release pipeline.
+6. Monitor devices with Application Insights.

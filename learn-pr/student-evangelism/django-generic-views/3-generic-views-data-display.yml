@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.generic-views.generic-views-data-display
+title: Use generic views to display data
+metadata:
+  title: Use generic views to display data
+  description: Learn how to use generic views to display data.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-generic-views-data-display.md)]

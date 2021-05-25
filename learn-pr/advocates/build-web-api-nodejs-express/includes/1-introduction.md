@@ -6,7 +6,7 @@ You can construct a webpage by using HTML pages, JavaScript, and CSS. Node.js ha
 
 Even though the HTTP module in Node.js is capable, it's not as fast as using a framework. For you to build an API that is efficient and handles complex topics like authentication and authorization, you will also use a framework.
 
-There are many web frameworks for Node.js, such as, Hapi, Fastify, Koa, and Express. Express is used by many developers. It's been around for a long time. The APIs are well thought out, security issues are patched, etc.
+There are many web frameworks for Node.js, such as Hapi, Fastify, Koa, and Express. Express is used by many developers. It's been around for a long time. The APIs are well thought out, security issues are patched, and so on.
 
 In this module, you’ll learn how to handle HTTP requests with Node.js. You'll also learn about the Express framework, which helps you build websites and HTTP APIs.
 

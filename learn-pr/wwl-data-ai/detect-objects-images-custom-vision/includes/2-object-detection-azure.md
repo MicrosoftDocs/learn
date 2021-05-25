@@ -6,7 +6,7 @@ Creating an object detection solution with Custom Vision consists of three main 
 
 For each of these tasks, you need a resource in your Azure subscription. You can use the following types of resource:
 
-- **Custom Vision**: A dedicated resource for the custom vision service, which can be either a *training* or a *prediction* resource.
+- **Custom Vision**: A dedicated resource for the custom vision service, which can be either a *training*, a *prediction* or a both resource.
 - **Cognitive Services**: A general cognitive services resource that includes Custom Vision along with many other cognitive services. You can use this type of resource for *training*, *prediction*, or both.
 
 The separation of training and prediction resources is useful when you want to track resource utilization for model training separately from client applications using the model to predict image classes. However, it can make development of an image classification solution a little confusing.

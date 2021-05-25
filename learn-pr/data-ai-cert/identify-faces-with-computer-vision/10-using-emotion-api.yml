@@ -5,8 +5,8 @@ metadata:
   title: Using the Emotion API
   description: "Learn how to access the Emotion API from a client application"
   ms.date: 10/14/2020
-  author: gerryaobrien
-  ms.author: gerryo
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

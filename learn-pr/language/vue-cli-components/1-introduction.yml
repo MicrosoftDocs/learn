@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.1-introduction
+metadata:
+  title: Introducing Vue CLI and custom components
+  description: We start by talking about what Vue CLI and components are.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Introducing Vue CLI and custom components
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

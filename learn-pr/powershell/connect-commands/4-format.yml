@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.4-formatting
+title: Use formatting and filtering
+metadata:
+  title: Use formatting and filtering
+  description: In this unit, you'll learn how the concepts of _filtering left_ and _formatting right_ help ensure pipeline statement efficiency, for both execution speed and useful formatting.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/16/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-format.md)]

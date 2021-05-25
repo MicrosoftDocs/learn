@@ -13,11 +13,11 @@ You probably already have tried one or more of these debugging approaches yourse
 
 While you might have various degrees of success with these methods, there's one other approach commonly regarded as being more often successful: using a debugger. But what's a debugger exactly?
 
-A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process or running as a separate process that's attached to your running program, like Node.js.
+A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process, or running as a separate process that's attached to your running program, like Node.js.
 
-Debuggers come in different flavors. Some work directly from the command line while others come with a graphical user interface. In this module, we'll use both the built-in command-line debugger that comes with Node.js and the integrated graphical debugger of Visual Studio Code.
+Debuggers come in different flavors. Some work directly from the command line, while others come with a graphical user interface. In this module, we'll use both the built-in command-line debugger that comes with Node.js, and the integrated graphical debugger of Visual Studio Code.
 
-## Why use a debugger
+## Why use a debugger?
 
 If you're not running your code through a debugger, that means you're probably *guessing* what's happening in your program. The primary benefit of using a debugger is that you can *watch* your program running. You can follow your program execution one line of code at a time. In this way, you avoid the chance of guessing wrong.
 

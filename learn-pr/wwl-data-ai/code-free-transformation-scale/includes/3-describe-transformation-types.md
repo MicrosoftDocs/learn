@@ -20,7 +20,7 @@ Below is a list of transformations that is available in the Mapping Data Flows
 | **Join** | Multiple inputs/outputs | Combine data from two sources or streams. |
 | **Lookup** | Multiple inputs/outputs | Enables you to reference data from another source. |
 | **New branch** | Multiple inputs/outputs | Apply multiple sets of operations and transformations against the same data stream. |
-| **Pivot** | Schema modifier | An aggregation were one or more grouping columns has distinct row values transformed into individual columns. |
+| **Pivot** | Schema modifier | An aggregation where one or more grouping columns has distinct row values transformed into individual columns. |
 | **Select** | Schema modifier | Alias columns and stream names, and drop or reorder columns. |
 | **Sink** | -  | A final destination for your data. |
 | **Sort** | Row modifier | Sort incoming rows on the current data stream. |

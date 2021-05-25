@@ -5,7 +5,8 @@ Your company wants to maximize the availability of its exercise video content to
 In this unit, you'll explore all the features of Azure Cognitive Search, its concepts and how to create a search index.
 
 ## A brief introduction to Azure Cognitive Search
-![The Azure Cognitive Search logo](../media/2-what-is-azure-search.png)
+
+:::image type="icon" source="../media/2-what-is-azure-search.png":::
 
 Azure Cognitive Search is a service that enables a rich search experience over different kinds of content that can be consolidated into a single unified index. Imported data can originate from a variety of sources, with AI-powered indexing that can infer and extract searchable content from non-text sources. You decide what data is imported into the index, and set up indexers to pull that data into it, or push JSON formatted documents manually. Wherever your content is stored, once imported, Azure Cognitive Search becomes a powerful tool that can add intuitive search experiences for your customers.
 
@@ -28,7 +29,7 @@ Azure Cognitive Search comes with the following features:
 
 Cognitive search is a feature in Azure Cognitive Search that uses Cognitive Services AI in the indexing pipeline. Examples include extracting text from images, either through image analysis or recognition, or adding structure to unstructured data sources, such as detecting key phrases, language, sentiments, or entities.
 
-![Screenshot showing azure cognitive search architecture](../media/2-cogsearch-architecture.png)
+![Screenshot showing azure cognitive search architecture.](../media/2-cogsearch-architecture.png)
 
 Natural language and image-processing skills include:
 
@@ -65,7 +66,7 @@ If you don't use this approach, you'll need to manually create your index, and c
 
 ### Index Design
 
-![Screenshot showing an example index with different fields](../media/2-index-workflows.png)
+![Screenshot showing an example index with different fields.](../media/2-index-workflows.png)
 
 Index design is important, if you forget to set a required behavior on a field, the only way to get that feature is to rebuild the index. When designing an index, it's key to remember the most effective indexes use only the behaviors that are needed. The smaller an index is, the faster it can return results.
 

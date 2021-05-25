@@ -29,6 +29,3 @@ The Query window has three primary sections:
 
 Before running a query, adjust the time range to scope the data.  To change the result columns displayed, select the Columns box, and choose the required columns.
 
-> [!NOTE]
-> The maximum number of rows a query can return is 10,000. 
-

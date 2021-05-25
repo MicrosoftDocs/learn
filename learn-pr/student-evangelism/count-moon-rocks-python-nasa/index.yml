@@ -2,31 +2,32 @@
 uid: learn.student-evangelism.count-moon-rocks-python-nasa
 metadata:
   title: Count the number of Moon rocks by type using Python
-  description: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock.
-  ms.date: 07/22/2020
-  author: angevin17
+  description: Use Python to make a simple program to count the number of each type of space rock.
+  ms.date: 05/05/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Count the number of Moon rocks by type using Python
-summary: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock.
+summary: Use Python to make a simple program to count the number of each type of space rock.
 abstract: |
   In this module, you'll learn:
   - How to write variables in the context of a program
   - How to use prebuilt functions to read data from a text file
   - How to create a function and call it in the context of a program
   - How to write conditionals and loops in the context of a program
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start module to see how you can follow along!
+
 prerequisites: |
-  - Visual Studio Code installed
-  - Python extension installed in Visual Studio Code
-  - Python and Jupyter Notebooks installed
-  - Knowledge about introductory Python topics
+  - None
 iconUrl: /learn/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
 levels:
 - beginner
 roles:
 - student
-- developer
+- data-scientist
 products:
 - vs-code
 units:

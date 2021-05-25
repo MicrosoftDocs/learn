@@ -99,9 +99,9 @@ To validate that our program worked, we'll exercise another capability of the **
     > [!NOTE]
     > Make sure you're in the PhotoSharingApp directory.
 
-     ```dotnetcli
-     dotnet run
-     ```  
+    ```dotnetcli
+    dotnet run
+    ```
 
 ::: zone-end
 

@@ -12,6 +12,8 @@ The following NetWeaver and/or SAP HANA certified Azure VM families are running 
 
 * **D(S)v3**
 
+* **D(S)v4**
+
 * **E(S)v3**
 
 * **M-Series**

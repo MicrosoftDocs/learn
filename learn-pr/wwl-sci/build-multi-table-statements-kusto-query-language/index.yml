@@ -3,7 +3,7 @@ uid: learn.wwl.build-multi-table-statements-kql
 metadata:
   title: Build multi-table statements using KQL
   description: "Build multi-table statements using KQL"
-  ms.date: 02/03/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -15,11 +15,11 @@ abstract: |
   - Create queries using unions to view results across multiple tables using KQL
   - Merge two tables with the join operator using KQL
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-multi-table-statements-in-kql.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel

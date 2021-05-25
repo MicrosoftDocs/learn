@@ -25,6 +25,7 @@ roles:
 - developer
 products:
 - azure
+- azure-batch
 units:
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introduction
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.what-is-azure-batch
