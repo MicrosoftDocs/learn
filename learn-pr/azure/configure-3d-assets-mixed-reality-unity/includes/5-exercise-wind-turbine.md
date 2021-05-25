@@ -1,4 +1,4 @@
-Your first task is to open the Unity project that you downloaded from [GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/). You then have 2 options to start the exercises in this module:
+Your first task is to open the Unity project that you downloaded from [GitHub](https://aka.ms/mr-adt-mslearn). You then have 2 options to start the exercises in this module:
 
 1. If you're starting this module without having completed the Build a 3D Scene for Mixed Reality in Unity module or wish to abandon any previous work that you undertook creating a Scene.
     - In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder
