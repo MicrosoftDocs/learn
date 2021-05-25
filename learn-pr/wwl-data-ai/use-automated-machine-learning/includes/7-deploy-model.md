@@ -22,7 +22,7 @@ Now that you've deployed a service, you can test it using some simple code.
 1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
 2. In the **Notebooks** page, under **My files**, use the **&#128459;** button to create a new file with the following settings:
     - **File location**: Users/*your user name*
-    - **File name**: Test-Bikes
+    - **File name**: Test-Bikes.ipynb
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
 3. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.

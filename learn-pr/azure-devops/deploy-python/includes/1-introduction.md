@@ -16,7 +16,7 @@ In this module, you'll:
 
 This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works, along with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
 
-* [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 * [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 

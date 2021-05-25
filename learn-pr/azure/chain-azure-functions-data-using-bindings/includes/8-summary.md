@@ -22,7 +22,7 @@ If you're interested in doing serverless integrations like these with visual wor
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Additional Resources
+## Additional resources
 
 Although this is not intended to be an exhaustive list, the following are some resources related to the topics covered in this module that you might find interesting:
 

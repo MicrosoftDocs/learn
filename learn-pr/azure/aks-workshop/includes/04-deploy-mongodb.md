@@ -1,4 +1,4 @@
-The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
+The Fruit Smoothies' ratings website consists of several components. There's a web front end, a document database that stores captured data, and a RESTful API that allows the web front end to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
 In this exercise, you'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. You'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
 
@@ -15,17 +15,17 @@ In this exercise, you will:
 
 ## Add the Helm bitnami repository
 
-Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts. 
+Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts.
 
-The Helm client is already installed in the Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *bitnami* charts repository.
+The Helm client is already installed in Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *bitnami* charts repository.
 
-1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
+1. Configure the Helm client to use the stable repository by running the following `helm repo add` command.
 
     ```bash
     helm repo add bitnami https://charts.bitnami.com/bitnami
     ```
 
-1. You can now list the charts to install by running the `helm search repo` command. Notice how you can list all charts from the stable channel in the command below.
+1. You can now list the charts to install by running the `helm search repo` command. Notice how you can list all charts from the stable channel in the following command.
 
     ```bash
     helm search repo bitnami
@@ -50,7 +50,7 @@ Helm charts are stored in Helm chart repositories. The official chart repository
 
 You're now ready to install the MonogoDB instance. Recall from earlier, that you configured your cluster with a `ratingsapp` namespace. You'll specify the namespace as part of the `helm install` command, and a name for the database release. The release is called `ratings` and is deployed into the `ratingsapp` namespace.
 
-1. Run the `helm install` command below. Make sure to replace `<username>` and `<password>` with appropriate values of your choice, and note them for later use.
+1. Run the following `helm install` command. Make sure to replace `<username>` and `<password>` with appropriate values of your choice, and note them for later use.
 
     Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
@@ -99,9 +99,9 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 
 ## Create a Kubernetes secret to hold the MongoDB details
 
-In the previous step, you installed MongoDB using Helm, with a specified username, password, and database name. Now you'll store these details in a Kubernetes secret. This step ensures that you don't leak secrets by hard coding them into configuration files.
+In the previous step, you installed MongoDB using Helm, with a specified username, password, and database name. Now you'll store these details in a Kubernetes secret. This step ensures that you don't leak secrets by hardcoding them into configuration files.
 
-Kubernetes has a concept of secrets. Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a pod definition or a container image.
+Kubernetes has a concept of secrets. Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hardcoding it in a pod definition or a container image.
 
  The ratings API expects to find the connection details to the MongoDB database in the form of `mongodb://<username>:<password>@<endpoint>:27017/ratingsdb`. Replace `<username>`, `<password>`, and `<endpoint>` with the ones you used when you created the database, for example, `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp:27017/ratingsdb`.
 
