@@ -1,33 +1,36 @@
 ﻿This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. For more in-depth knowledge and tutorials regarding this topic, refer to:
 
-* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/en-us/azure/postgresql/connect-nodejs)
-* [Tutorial: Node.js for Beginners](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-beginners-tutorial)
+* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/en-us/azure/postgresql/connect-nodejs?azure-portal=true)
+* [Tutorial: Node.js for Beginners](https://docs.microsoft.com/windows/dev-environment/javascript/nodejs-beginners-tutorial?azure-portal=true)
 
-In this exercise, you will:
+In this exercise, you'll:
 
-* Create a sample Node.js Express web app
-* Connect the Node.js Express web app to Azure Database for PostgreSQL
-* Configure Node.js Express routes for access to Azure Database for PostgreSQL
-* Validate the functionality of the Node.js Express web service
+* Create a sample Node.js Express web app.
+* Connect the Node.js Express web app to Azure Database for PostgreSQL.
+* Configure Node.js Express routes for access to Azure Database for PostgreSQL.
+* Validate the functionality of the Node.js Express web service.
 
 ## Prerequisites
 
-* An Azure subscription
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
-* The completed first exercise of this module. You will leverage the Azure PostgreSQL database you created and configured in that exercise.
+To perform this exercise, you need:
+
+* An Azure subscription.
+* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* To have completed the first exercise of this module. You'll use the Azure PostgreSQL database you created and configured in that exercise.
 
 ## Create a sample Node.js Express web app
 
-You will begin by creating a sample Node.js Express web app and apply to it incremental changes in order to implement the desired functionality.
+You'll begin by creating a sample Node.js Express web app and apply to it incremental changes in order to implement the desired functionality.
 
-1. If needed, from your computer, start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you used in the previous exercise of this module.
-1. In the Azure portal, start a Bash session within the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
+1. If needed, from your computer, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you used in the first exercise of this module.
+1. In the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session in the Azure Cloud Shell pane, run the following command to initialize a Node.js project in a new directory:
 
     ```azurecli-interactive
     mkdir -p cna-express && cd cna-express
     npm init -y
     ```
+
     > [!NOTE]
     > This creates a package.json, which contains all dependencies for the project.
 
@@ -48,13 +51,13 @@ You will begin by creating a sample Node.js Express web app and apply to it incr
     ```
 
     > [!NOTE]
-    > The script invokes the app, configuring it to listen on TCP port 8080 and to accept JSON-formatted body of HTTP requests. Starting with Express 4.16+, `app.use(express.json())` is required for JSON parsing. 
+    > The script invokes the app, configuring it to listen on TCP port 8080 and to accept JSON-formatted body of HTTP requests. Starting with Express 4.16+, `app.use(express.json())` is required for JSON parsing.
 
     > [!NOTE]
-    > The use of **process.env.PORT** is specific to containers on Azure App Service, which sets the environment variable PORT in the Node.js container, and forwards the incoming requests to that port number. To receive the requests, your app should listen to that port using process.env.PORT (hence the use of `const port = process.env.PORT || 8080`). 
+    > The use of **process.env.PORT** is specific to containers on Azure App Service, which sets the environment variable PORT in the Node.js container, and forwards the incoming requests to that port number. To receive the requests, your app should listen to that port using process.env.PORT (hence the use of `const port = process.env.PORT || 8080`).
 
     > [!NOTE]
-    > You will use Azure App Service in this exercise to facilitate testing of the Node.js Express functionality. It would be straightforward to containerize the app you develop and deploy it to any Kubernetes implementation, including Azure Kubernetes Service. 
+    > You'll use Azure App Service in this exercise to facilitate testing of the Node.js Express functionality. It would be straightforward to containerize the app you develop and deploy it to any Kubernetes implementation, including Azure Kubernetes Service.
 
 1. To allow the script to run, use the nano editor to modify the autogenerated **package.json** file so it has the following content:
 
@@ -84,7 +87,7 @@ You will begin by creating a sample Node.js Express web app and apply to it incr
 
 ## Connect the Node.js Express web app to Azure Database for PostgreSQL
 
-Next, you will configure your newly created Node.js Express web app to connect to the **cnainventory** database you created in the previous exercise of this module. To accomplish this, you will leverage Sequelize, which is a popular JavaScript library that provides the Object-Relation Mapper functionality, allowing you to map programmatic constructs into corresponding database schema. 
+Next, you'll configure your newly created Node.js Express web app to connect to the **cnainventory** database you created in the previous exercise of this module. To do this, you'll use Sequelize, which is a popular JavaScript library that provides the Object-Relation Mapper functionality, allowing you to map programmatic constructs into corresponding database schema.
 
 1. From your computer, in the web browser window displaying the Azure portal, within the Bash session in the Azure Cloud Shell pane, run the following command to add Sequelize and the corresponding PostgreSQL-specific packages into your project:
 
@@ -92,13 +95,13 @@ Next, you will configure your newly created Node.js Express web app to connect t
     npm i sequelize pg pg-hstore
     ```
 
-1. To take advantage of these new capabilities, use the nano editor to add the following line to the beginning of the **index.js** file: 
+1. To take advantage of these new capabilities, use the nano editor to add the following line to the beginning of the **index.js** file:
 
     ```javascript
     const Sequelize = require('sequelize')
     ```
 
-1. To establish a connection to the database, you need to add a connection string in the Sequalize-specific format to the **index.js** file following the line you added in the previous step (replace the `<server_name>` placeholder with the name of the Azure Database for PostgreSQL server you provisioned in the previous exercise): 
+1. To establish a connection to the database, you need to add a connection string in the Sequalize-specific format to the **index.js** file following the line you added in the previous step. Peplace the `<server_name>` placeholder with the name of the Azure Database for PostgreSQL server you provisioned in the previous exercise:
 
     ```javascript
     const sequelize = new Sequelize('postgres://Student%40<server_name>:Pa55w0rd1234@c<server_name>.postgres.database.azure.com:5432/cnainventory')
@@ -107,7 +110,7 @@ Next, you will configure your newly created Node.js Express web app to connect t
     > [!NOTE]
     > The use of **%40** as the escape character between the user name and the server name is specific to connection strings for Azure Database for PostgreSQL.
 
-1. With the Sequelize package included as a requirement and the connection string configured, you can now establish a connection to the **cnainventory** database by adding the following line to the **index.js** file after the one you added in the previous step: 
+1. With the Sequelize package included as a requirement and the connection string configured, you can now establish a connection to the **cnainventory** database by adding the following line to the **index.js** file after the one you added in the previous step:
 
     ```javascript
     sequelize
@@ -135,11 +138,11 @@ Next, you will configure your newly created Node.js Express web app to connect t
     ```
 
     > [!NOTE]
-    > The `timestamps: false` option is required to exclude from the scope of database operations a set of time-related columns, which, in this case, do not exist. The `freezeTableName: true` disables the default behavior of Sequelize, which automatically transforms all model names into plural.
+    > The `timestamps: false` option is required to exclude from the scope of database operations a set of time-related columns, which, in this case, do not exist. The `freezeTableName: true` option disables the default behavior of Sequelize, which automatically transforms all model names into plural.
 
 ## Configure Node.js Express routes for access to Azure Database for PostgreSQL
 
-Now you are ready to configure the routes that will provide read and write access to the **inventory** table in the **cnainventory** database hosted by the Azure Database for PostgreSQL server. For the sake of simplicity, you will implement two routes only, but configuring others would closely resemble the implementation you will step through in this task. The first route will process HTTP GET requests, returning an inventory item based on the value of its **id** attribute, while the second route will allow you to add individual inventory items by invoking an HTTP POST request with the inventory item values included in the request body.
+Now you're ready to configure the routes that will provide read and write access to the **inventory** table in the **cnainventory** database hosted by the Azure Database for PostgreSQL server. For the sake of simplicity, you'll implement two routes only, but the procedure for configuring other routes would closely resemble the implementation you'll step through in this task. The first route will process HTTP GET requests, returning an inventory item based on the value of its **id** attribute, whereas the second route will allow you to add individual inventory items by invoking an HTTP POST request with the inventory item values included in the request body.
 
 1. From your computer, in the web browser window displaying the Azure portal, within the Bash session in the Azure Cloud Shell pane, use the nano editor to add the following content to the **index.js** file:
 
@@ -155,7 +158,7 @@ Now you are ready to configure the routes that will provide read and write acces
     ```
 
     > [!NOTE]
-    > This part of the script manages the HTTP POST requests, adding a row to the **inventory** table populated with the values of **id**, **name**, and **quantity** attributes included in the request body. The value of **date** attribute is calculated automatically based on the current date. The operation returns the newly added values as a confirmation of successful operation. 
+    > This part of the script manages the HTTP POST requests, adding a row to the **inventory** table populated with the values of **id**, **name**, and **quantity** attributes included in the request body. The value of **date** attribute is calculated automatically based on the current date. The operation returns the newly added values as a confirmation of successful operation.
 
 1. In the nano editor, add the following content to the **index.js** file following the script you added in the previous step:
 
@@ -175,11 +178,11 @@ Now you are ready to configure the routes that will provide read and write acces
     ```
 
     > [!NOTE]
-    > This part of the script manages the HTTP GET requests, returning the values of **id**, **name**, **quantity** and **date** attributes based on the value of **id** included in the request.
+    > This part of the script manages the HTTP GET requests, returning the values of **id**, **name**, **quantity**, and **date** attributes based on the value of **id** included in the request.
 
     > [!NOTE]
     > This yields a fully functional script with the following content:
-    > 
+    >
     ```javascript
     const express = require('express')
     const Sequelize = require('sequelize')
@@ -233,9 +236,9 @@ Now you are ready to configure the routes that will provide read and write acces
 
 ## Validate the functionality of the Node.js Express web service
 
-You are finally ready to test the functionality of your web service. While you could containerize it at this point, for the sake of simplicity, you will deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
+You're finally ready to test the functionality of your web service. You could containerize it at this point, but for the sake of simplicity, you'll deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
-1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you will deploy the Node.js Express app:
+1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Node.js Express app:
 
     ```azurecli-interactive
     RG1NAME=postgresql-db-RG
@@ -269,7 +272,7 @@ You are finally ready to test the functionality of your web service. While you c
     git commit -m "Initial Commit"
     ```
 
-1. Run the following commands to set up user-level deployment credentials: 
+1. Run the following commands to set up user-level deployment credentials:
 
     ```azurecli-interactive
     DEPLOYMENTUSER=m03User$RANDOM
@@ -277,14 +280,14 @@ You are finally ready to test the functionality of your web service. While you c
     az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
     ```
 
-1. Run the following commands to identify the user-level deployment credentials (record their value since you will need them later in this task):
+1. Run the following commands to identify the user-level deployment credentials. Record their values, because you'll need them later in this task:
 
     ```azurecli-interactive
     echo $DEPLOYMENTUSER
     echo $DEPLOYMENTPASS
     ```
 
-1. Run the following commands to identify the Azure web app deployment URL that you will use as the target of the `git push` command:
+1. Run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
     ```azurecli-interactive
     RG2NAME=cna-express-RG
@@ -319,9 +322,11 @@ You are finally ready to test the functionality of your web service. While you c
     > [!NOTE]
     > The command should return the values of the entries of the newly added table row, including the autogenerated date.
 
-1. To validate the GET HTTP routing of the Node.js Express app, in the web browser that displays the Azure Cloud Shell pane, open another tab, navigate to [the Azure portal](https://portal.azure.com), use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify the value of **URL** property, append the string `/inventory/3` to that URL value, open another tab in the same browser window, and navigate to the newly constructed URL string to display the corresponding web page.
+1. To validate the GET HTTP routing of the Node.js Express app, in the web browser that displays the Azure Cloud Shell pane, open another tab, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), and then use the **Search resources, services, and docs** text box to search for the App Service web app you deployed. Navigate to its **Overview** blade, identify the value of **URL** property, append the string `/inventory/3` to that URL value, open another tab in the same browser window, and navigate to the newly constructed URL string to display the corresponding web page.
 
     > [!NOTE]
     > The page should display the properties of the item you added to the **inventory** table of the **cnainventory** database in the previous step.
 
-Congratulations! You completed the second exercise of this module. In its exercise, you created and configured an Express.js-based web service that provided access to Azure Database for PostgreSQL. 
+## Results
+
+Congratulations! You've completed the second exercise of this module. In this exercise, you created and configured an Express.js-based web service that provides access to Azure Database for PostgreSQL.

@@ -1,27 +1,29 @@
-﻿This exercise takes you through the process of creating and configuring a Next.js-based web service that relies on Prisma to provide access to Azure Database for PostgreSQL. 
+﻿This exercise takes you through the process of creating and configuring a Next.js-based web service that relies on Prisma to provide access to Azure Database for PostgreSQL.
 
 > [!NOTE]
-> Prisma is a more recently developed ORM which provides an alternative approach for data modeling from the one offered by Sequelize.
+> Prisma is a more recently developed object-relational mapper library, which provides an alternative approach for data modeling from the one offered by Sequelize.
 
-In this exercise, you will:
+In this exercise, you'll:
 
-* Configure a Next.js application
-* Deploy an Azure App Service web app hosting the Next.js application
-* Validate the functionality of the Next.js application
+* Configure a Next.js application.
+* Deploy an Azure App Service web app hosting the Next.js application.
+* Validate the functionality of the Next.js application.
 
 ## Prerequisites
 
-* An Azure subscription
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
-* The completed first exercise of this module. You will leverage the Azure PostgreSQL database you created and configured in that exercise.
+To perform this exercise, you need:
+
+* An Azure subscription.
+* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* To have completed the first exercise of this module. You'll use the Azure PostgreSQL database you created and configured in that exercise.
 
 ## Configure a Next.js application
 
-In this task, you will clone a GitHub repo containing a sample Next.js code and customize it to connect to the existing Azure PostgreSQL database.
+In this task, you'll clone a GitHub repo containing a sample Next.js code and customize it to connect to the existing Azure PostgreSQL database.
 
-1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you are using in this module.
-1. In the Azure portal, start a Bash session within the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
-1. From the Bash session in the Cloud Shell pane, run the following command to clone the GitHub repo containing the sample Next.js application code you will use in this exercise:
+1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you're using in this module.
+1. In the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
+1. From the Bash session in the Cloud Shell pane, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
 
     ```azurecli-interactive
     git clone https://github.com/polichtm/wp2104-m03u07.git
@@ -63,7 +65,7 @@ In this task, you will clone a GitHub repo containing a sample Next.js code and 
     }
     ```
 
-1. Run the following command to display the content of the **.env** file, which purpose is to store the connection string to the Azure PostgreSQL database, including the values representing the name of the PostgreSQL server, the name of the administrative account, and its password (that's the `DATABASE_URL` referenced in the **./prisma/schema.prisma** file):
+1. Run the following command to display the content of the **.env** file, which stores the connection string to the Azure PostgreSQL database, including the values representing the name of the PostgreSQL server, the name of the administrative account, and its password (that's the `DATABASE_URL` referenced in the **./prisma/schema.prisma** file):
 
     ```azurecli-interactive
     cat ./.env
@@ -160,7 +162,7 @@ In this task, you will clone a GitHub repo containing a sample Next.js code and 
     ```
 
     > [!NOTE]
-    > The script relies on Prisma to query the content of the database and uses React to display individual records from the inventory table, including their respective data.
+    > The script relies on Prisma to query the content of the database and uses React <!--Marcin, we haven't mentioned this term previously--> to display individual records from the inventory table, including their respective data.
 
 1. Run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and store them in temporary variables:
 
@@ -186,15 +188,14 @@ In this task, you will clone a GitHub repo containing a sample Next.js code and 
     ```
 
     > [!NOTE]
-    > At this point, you would typically run `npm run install` and `npm run-script build`. Unfortunately, due to versioning issues, this is not directly available in Azure Cloud Shell. You will remediate this by running the build following the deployment.
-
+    > At this point, you'd typically run `npm run install` and `npm run-script build`. Unfortunately, due to versioning issues, this is not directly available in Azure Cloud Shell. You'll remediate this by running the build following the deployment.
 
 ## Deploy an Azure App Service web app hosting the Next.js application
 
-Just as in the previous exercise, you could, at this point, containerize the newly customized Next.js app, but, for the sake of simplicity, you will deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
+Just as in the previous exercise, you could, at this point, containerize the newly customized Next.js app. However, for the sake of simplicity, you'll deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
 > [!NOTE]
-> You could deploy the same application to any other Azure service that provides Node.js runtime environment, including Azure VMs, Azure Container Instances, or Azure Kubernetes Service.
+> You could deploy the same application to any other Azure service that provides the Node.js runtime environment, including Azure VMs, Azure Container Instances, or Azure Kubernetes Service.
 
 1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you will deploy the Next.js application:
 
@@ -219,7 +220,7 @@ Just as in the previous exercise, you could, at this point, containerize the new
     az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME --runtime "NODE|12-lts"
     ```
 
-1. Run the following commands to re-initialize the local Git repository and commit all changes in the main branch:
+1. Run the following commands to reinitialize the local Git repository and commit all the changes in the main branch:
 
     ```azurecli-interactive
     git init
@@ -235,14 +236,14 @@ Just as in the previous exercise, you could, at this point, containerize the new
     az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
     ```
 
-1. Run the following commands to identify the user-level deployment credentials (make sure to record their value since you will need them later in this exercise):
+1. Run the following commands to identify the user-level deployment credentials. Make sure to record their values, because you'll need them later in this exercise:
 
     ```azurecli-interactive
     echo $DEPLOYMENTUSER
     echo $DEPLOYMENTPASS
     ```
 
-1. Run the following command to identify the Azure web app deployment URL that you will use as the target of the `git push` command:
+1. Run the following command to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
     ```azurecli-interactive
     DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
@@ -268,14 +269,14 @@ Just as in the previous exercise, you could, at this point, containerize the new
 
 ## Validate the functionality of the Next.js application
 
-In this task, you will validate the functionality of the Next.js application deployed to an Azure web app.
+In this task, you'll validate the functionality of the Next.js application deployed to an Azure web app.
 
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**. 
+1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**.
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise.
-1. On the blade displaying the properties of the web app, in the vertical menu on the left side, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
-1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon (directly below the **Start** icon).
+1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
+1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon, which is directly after the **Start** icon.
 
-    ![Screenshot that shows the console pane of the App Service Editor interface of the Azure web app.](../media/7-next.js-web-app-console.png)
+  :::image type="content" source="../media/7-next.js-web-app-console.png" alt-text="Screenshot of the console pane of the App Service Editor interface of the Azure web app.":::
 
 1. From the console prompt, run the following command to build the Next.js application you pushed to the Azure web app:
 
@@ -286,9 +287,10 @@ In this task, you will validate the functionality of the Next.js application dep
     > [!NOTE]
     > Wait for the build process to complete.
 
-    ![Screenshot that shows the completed build process in the App Service Editor console of the Azure web app.](../media/7-next.js-web-app-build.png)
+    :::image type="content" source="../media/7-next.js-web-app-build.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
 
-1. Close the web browser tab displaying the **App Service Editor** page, back on the Azure portal blade displaying the properties of the web app, in the vertical menu, select the top entry labeled **Overview** and, in the **Essentials** pane, select the link labeled **URL**. 
+1. Close the web browser tab displaying the **App Service Editor** page.
+1. Back on the Azure portal blade displaying the properties of the web app, in the vertical menu, select the entry labeled **Overview** and, in the **Essentials** pane, select the link labeled **URL**.
 
     > [!NOTE]
     > This will automatically open another web browser tab displaying the newly deployed Azure web app.
@@ -296,9 +298,12 @@ In this task, you will validate the functionality of the Next.js application dep
     > [!NOTE]
     > Verify that the web browser page displays the **Next.js - PostgreSQL inventory data** page with the inventory items retrieved from the Azure PostgreSQL database.
 
-    ![Screenshot that shows the page of the deployed Azure web app containing the listing of the inventory items.](../media/7-next.js-web-app-deployed.png)
+    :::image type="content" source="../media/7-next.js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the inventory items.":::
 
-Congratulations! You completed the third and final exercise of this module. In its exercise, you created and configured a Next.js-based app that relies on Prisma to provide access to Azure Database for PostgreSQL. 
+## Results
 
-> [!NOTE]
-> To avoid unnecessary charges due to usage of Azure resources, you should delete the **cosmos-db-RG**, **cna-express-RG**, and **cna-nextjs-RG** resource groups you created throughout the exercises of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, type the name of the resource group, and select **Delete**.
+Congratulations! You've completed the third and final exercise of this module. In its exercise, you created and configured a Next.js-based app that relies on Prisma to provide access to Azure Database for PostgreSQL.
+
+## Clean up the resources
+
+To avoid unnecessary charges due to usage of Azure resources, you should delete the **cosmos-db-RG**, **cna-express-RG**, and **cna-nextjs-RG** resource groups you created throughout the exercises of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.
