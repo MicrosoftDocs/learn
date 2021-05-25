@@ -1,9 +1,9 @@
 Now that you have deployed the YOLO model to the edge device, you can deploy the Vision on Edge solution model.
 
 Make sure that you have the followings:
-- Prediction endpoint that has form http://{module name}:80/score
+- Prediction endpoint that has form http://{module-name}:80/score
 - [tag.txt](https://github.com/Azure/live-video-analytics/blob/master/utilities/video-analysis/yolov3-onnx/tags.txt) file downloaded that has object labels
-- RTSP URL that has form rtsp://rtspsim:554/media/<video_name>
+- RTSP URL that has form rtsp://rtspsim:554/media/<video-name>
 
 ## Connect to web application
 In this exercise, you'll connect to the Vision on Edge solution web application. Firstly, you'll add a camera that streams out the video.
@@ -24,8 +24,10 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
 2. Navigate to the Cameras page and add a camera.
 3. Fill in the required information:
    - Camera name: Give a name to your camera
-   - RTSP URL: Enter URL that has form of rtsp://rtspsim:554/media/<replacevideoname>
+   - RTSP URL: Enter URL that has form of rtsp://rtspsim:554/media/<video-name>
    - Location: Create a location or choose an existing one
+
+   [![The illustration shows how to add a camera.](../media/add-camera.png)](../media/add-camera.png#lightbox)
 
 ## Upload your pre-trained YOLO model to the Vision on Edge solution
 
@@ -39,6 +41,8 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
 
 3. Select **Add**.
 
+   [![The illustration shows how to add a machine learning model.](../media/add-model.png)](../media/add-model.png#lightbox)
+
 ## Create a solution deployment
 
 1. Navigate the Deployment page.
@@ -49,3 +53,5 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
    - Select Objects
 3. Select Deploy.
 4. You'll see that the gaps will be identified in the video stream.
+
+   [![The illustration shows how to deploy a task.](../media/deploy-task.png)](../media/deploy-task.png#lightbox)
