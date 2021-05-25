@@ -1,5 +1,5 @@
 
-The Azure VMware Solution (AVS) is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. We provide the management systems, networking services, operating platform and backend infrastructure operations required to run native VMware environments at scale in Azure.  AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
+The Azure VMware Solution (AVS) is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. Microsoft provides the management systems, networking services, operating platform and backend infrastructure operations required to run native VMware environments at scale in Azure.  AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
 
 Microsoft manages and maintains the infrastructure and software. Allowing you to focus on developing and running workloads that are critical to your business.
 
@@ -16,7 +16,7 @@ The diagram below illustrates the relationship between private clouds and networ
 
 
 ## Azure VMware Solution features:
-These are the 6 core pillars of value that AVS provides.
+The following features are the six core pillars of value that AVS provides.
 
 **Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements over time. 
 
@@ -37,7 +37,7 @@ These are the 6 core pillars of value that AVS provides.
 :::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
 
 ### Integration with Azure services
-These are some of the integrations you could use within your AVS environment.
+Some of the integrations you could use within your AVS environment are listed below.
 
 
 |Integration  |Description  |
@@ -47,7 +47,7 @@ These are some of the integrations you could use within your AVS environment.
 |**Azure Security Center**     | Azure Security Center is a unified infrastructure security management system. It strengthens security of data centers, and provides advanced threat protection across hybrid workloads in the cloud or on premises.        |
 |**Azure Sentinel**    |  Azure Sentinel is a cloud-native, security information event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
 |**Azure NetApp Files**    | Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on Windows client.   |
-|**Azure Backup Server**     |   Use Azure Backup Server (MABS)to back-up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.      |
+|**Azure Backup Server**     |   Use Azure Backup Server (MABS) to back up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.      |
 |**Monitor and manage Azure VMware Solution VMs**     | Microsoft Azure native tools allow you to monitor and manage your virtual machines (VMs) in the Azure environment. Yet they also allow you to monitor and manage your VMs on Azure VMware Solution and your on-premises VMs.        |
 |**Azure Application Gateway**    | Protect web apps on Azure VMware Solution with Azure Application Gateway. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications.    |
 |**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
@@ -64,7 +64,7 @@ We offer node configurations based on core, memory, and storage requirements. Yo
 
 Customers are charged hourly each time they provision a node. You can also choose to buy reserved instances for Azure VMware Solution for one- or three-year periods rice predictability.
 
-You can enable VMware HCX Enterprise add-on (which is currently in Preview) by submitting a support request. VMware HCX Enterprise Edition (EE) is available with Azure VMware Solution as a Preview function/service and subject to Preview service terms and conditions. Once the VMware HCX EE service goes GA, you will get a 30-day notice that billing will switch over. You will also have the option to switch off/opt-out of the service.
+You can enable VMware HCX Enterprise add-on (which is currently in Preview) by submitting a support request. VMware HCX Enterprise Edition (EE) is available with Azure VMware Solution as a Preview function/service and subject to Preview service terms and conditions. Once the VMware HCX EE service goes GA, you will get a 30-day notice that billing will switch over. You will also be able to switch off/opt-out of the service.
 
-Also, you can take advantage of Azure Hybrid Benefit, allowing you to run your Windows Server and SQL Server workloads both on-premises and in the cloud. For all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions, you get Extended Security Updates at no extra charge for three years. If these workloads were deployed on-premises or on other clouds, the security updates would cost you an another 75% of license price of the latest versions of Windows Server and SQL Server annually.
+Also, you can take advantage of Azure Hybrid Benefit, allowing you to run your Windows Server and SQL Server workloads both on-premises and in the cloud. For all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions, you get Extended Security Updates at no extra charge for three years. If these workloads were deployed on-premises or on other clouds, the security updates would cost you another 75% of license price of the latest versions of Windows Server and SQL Server annually.
 
