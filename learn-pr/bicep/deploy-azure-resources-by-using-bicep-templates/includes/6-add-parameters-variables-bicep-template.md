@@ -17,7 +17,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the top of the file:
 
-   :::code language="bicep" source="code/6-template.bicep" range="1-5":::
+   :::code language="bicep" source="code/6-template-1.bicep" range="1-5":::
 
    Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -25,7 +25,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
-   :::code language="bicep" source="code/6-template.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
+   :::code language="plaintext" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
 
 1. Save the changes to the file.
 
@@ -33,19 +33,19 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters that you created in the previous task:
 
-   :::code language="bicep" source="code/6-template.bicep" range="5-9":::
+   :::code language="bicep" source="code/6-template-2.bicep" range="5-9":::
 
    Notice that you're defining a parameter with a set of allowed values, but you're not specifying a default value for this parameter.
 
 1. Below the line that declares the `appServicePlanName` variable, add the following Bicep code:
 
-   :::code language="bicep" source="code/6-template.bicep" range="12-14" :::
+   :::code language="bicep" source="code/6-template-2.bicep" range="12-14" :::
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
-   :::code language="bicep" source="code/6-template.bicep" range="16-44" highlight="5, 17-18":::
+   :::code language="plaintext" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 
