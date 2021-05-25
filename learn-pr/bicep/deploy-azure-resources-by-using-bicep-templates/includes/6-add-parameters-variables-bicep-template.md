@@ -31,13 +31,13 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Automatically set the SKUs for each environment type
 
-1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters that you created in the previous task:
+1. In the *main.bicep* file in Visual Studio Code, add the following Bicep parameter below the parameters that you created in the previous task:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="5-9":::
 
    Notice that you're defining a parameter with a set of allowed values, but you're not specifying a default value for this parameter.
 
-1. Below the line that declares the `appServicePlanName` variable, add the following Bicep code:
+1. Below the line that declares the `appServicePlanName` variable, add the following variable definitions:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="12-14" :::
 

@@ -5,7 +5,7 @@ param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 @allowed([
   'nonprod'
   'prod'
- ])
+])
 param environmentType string
 
 var appServicePlanName = 'toy-product-launch-plan'
