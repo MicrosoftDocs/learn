@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Assessment questions
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/2-assessment-questions.md)]
 quiz:
@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "If the application requires administrative or system level permissions to carry out basic functions, then"
     choices:
-    - content: "it most likely is a good candidate for the PAW."
+    - content: "it is likely a good candidate for the PAW."
       isCorrect: false
       explanation: "PAW applications shouldn't require elevated permissions to run basic tasks and functions. It would be considered a red flag."
-    - content: "there's a potential risk for system level access."
+    - content: "there's potential risk for system level access."
       isCorrect: true
       explanation: "An application shouldn't need to rely on these types of permissions to carry out basic functions."
   - content: "What can you find out by asking questions from the functionality category?"
     choices:
-    - content: "The set of functions and features of the application."
+    - content: "The set of features of the application."
       isCorrect: true
       explanation: "The functionality category helps you understand how the application works."
     - content: "How well it integrates with the PAW."

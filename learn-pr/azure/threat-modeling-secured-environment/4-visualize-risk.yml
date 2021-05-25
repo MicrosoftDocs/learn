@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Visualize risk
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/4-visualize-risk.md)]

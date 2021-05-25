@@ -18,7 +18,7 @@ Before the application is installed in a PAW, it needs to go through a security 
 
 ## Threat Modeling Framework
 
-The threat modeling framework is flexible and helps to identify how an application will integrate in the secured environment. It relies on the STRIDE methodology to find potential risks.
+The threat modeling framework is flexible and helps to identify how an application will integrate with the secured environment. It relies on the STRIDE methodology to find potential risks.
 
 |Threat|Security control|Affected elements|
 |------|----------------|-----------------|
