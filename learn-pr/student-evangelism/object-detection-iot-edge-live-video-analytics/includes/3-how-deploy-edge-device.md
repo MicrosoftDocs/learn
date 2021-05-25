@@ -6,7 +6,9 @@ Firstly, we configure the device as an IoT Edge device and set up communications
 
 Before you begin, if you don't have an active Azure subscription, you need to create a free account. You can use 30 days free trial, or you can create your pay-as-you-go subscription.
 
-Hence, the steps we follow are:
+## Steps to follow
+
+You'll complete the following steps to deploy an edge device.
 
 1. Define the resource group or use a pre-existing one
 2. Create Azure IoT Hub or use an existing one

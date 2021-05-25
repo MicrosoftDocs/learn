@@ -28,6 +28,8 @@ You will provide image URI, container registry name, login server, and password 
 Now you have your own inference module on the edge device, and the prediction endpoint can be accessed through **http://{module
 name}:80/score** within your edge device.
 
+## Steps to follow
+
 The overall steps you follow:
 
 1.  Download pre-trained YOLO model

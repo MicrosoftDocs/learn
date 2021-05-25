@@ -25,11 +25,21 @@ Before you start, make sure that you have installed rerequisites in your local m
 
 5. Copy the registry name, login server, username, and password.
 
+   [![The illustration shows the access keys.](../media/container-registry-access-keys.png)](../media/container-registry-access-keys.png#lightbox)
+
 ## Download inference YOLOv4 (tiny) TensorFlow Lite model
 
 1. Go to https://github.com/Azure/live-video-analytics and download zip in your local machine.
 
-2. Go to the following path in the downloaded folder live-video-analytics-master/utilities/video-analysis/yolov4-tflite-tiny.
+   [![The illustration shows how to download a project from GitHub.](../media/download-zip-file.png)](../media/download-zip-file.png#lightbox)
+
+2. Go to the following path in the downloaded folder.
+
+   ```
+   live-video-analytics-master/utilities/video-analysis/yolov4-tflite-tiny
+   ```
+
+   [![The illustration shows the project folder.](../media/project-folder.png)](../media/project-folder.png#lightbox)
 
 3. Create a new directory on your machine and copy all the files (including the sub-folders) from this GitHub folder to new directory.
 
@@ -37,11 +47,15 @@ Before you start, make sure that you have installed rerequisites in your local m
 
 1. You will see Dockerfile that provides build instructions for the container image.
 
-2. Run the following docker command from a command window in that directory to build the container image.
+   [![The illustration shows Dockerfile.](../media/build-instructions.png)](../media/build-instructions.png#lightbox)
+
+2. Open the terminal in this directory. Run the following docker command from a command window in that directory to build the container image.
 
    ```
-   docker build -t yolov4-tflite-tiny:latest
+   docker build . -t yolov4-tflite-tiny:latest
    ```
+
+   [![The illustration shows how to build a docker image.](../media/build-docker-image.png)](../media/build-docker-image.png#lightbox)
 
 ## Push docker image to Azure Container Registry
 
@@ -59,28 +73,38 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
    docker login <replace-with-your-acr-login-server>
    ```
 
+   [![The illustration shows how to login docker.](../media/docker-login.png)](../media/docker-login.png#lightbox)
+
 3. Tag the image using the **docker tag** command. Replace
 <login-server> with the login server name of your ACR instance.
 
    ```
-   docker tag <original_image_name:tag> <registry-name>.azurecr.io<image_name:tag_version>
+   docker tag <original-image-name:tag> <registry-name>.azurecr.io/<image-name:tag>
    ```
+
+   [![The illustration shows how to a docker image.](../media/tag-image.png)](../media/tag-image.png#lightbox)
 
 4. Use **docker push** to push the image to the registry instance. Replace <login-server> with the login server name of your registry instance.
 
    ```
-   docker push <registry-name>.azurecr.io<image_name:tag_version>
+   docker push <registry-name>.azurecr.io/<image-name:tag>
    ```
 
-5. It will take some time to push your containerized model to Azure container registry. After pushing the image to your container registry, your image URI would be ***<registry-name>azurecr.io<imagename : tagversion>***
+   [![The illustration shows how to push image to a container registry.](../media/docker-push.png)](../media/docker-push.png#lightbox)
+
+5. It will take some time to push your containerized model to Azure container registry. After pushing the image to your container registry, your image URI would be:
+
+   ```
+   <registry-name>.azurecr.io/<image-name:tag>
+   ```
 
 6. To verify if the image is pushed, you will go to the Container registry resource and navigate the repository.
 
 ## Deploy YOLO model as an Azure IoT Edge module
 
-1. In the Azure portal, navigate to your IoT Hub.
+1. In the Azure portal, go to your IoT Hub resource.
 
-2. On the left pane, under Automatic Device Management, select IoT Edge.
+2. On the left pane, select IoT Edge under Automatic Device Management.
 
 3. Select the IoT Edge device that is to receive the deployment.
 
@@ -112,6 +136,10 @@ After setting your module, select **Review + create**. The review section shows 
 
 After the deployment, you can check the module in your edge device through the **docker ps** command.
 
+   ```
+   docker ps
+   ```
+
 Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from [the Tiny YOLOv4 TensorFlow Lite model](https://github.com/Azure/live-video-analytics/tree/master/utilities/video-analysis/yolov4-tflite-tiny).
 
-Make a note of predict endpoint that is in the form of **http://{module name}:80/score** and can be accessed only within your edge device.
+Make a note of predict endpoint that is in the form of **http://{module-name}:80/score** and can be accessed only within your edge device.
