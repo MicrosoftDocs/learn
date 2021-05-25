@@ -18,12 +18,16 @@ quiz:
   questions:
 
 # Did I Get This block uses an image "quiz-fault-tolerance.png".
-  - content: "Consider the actions performed by the processes P and Q in the following figure:<ul>
-              <li>Arrows denote the messages that are passed between the processes.</li>
-              <li>P<sub>1</sub> through P<sub>5</sub> denote the checkpoints of P.</li>
-              <li>Q<sub>1</sub> through Q<sub>3</sub> denote the checkpoints of Q.</li></ul>
-              <img src=./media/quiz-fault-tolerance.png></img> <br>
-              What checkpoints at P and Q form a recovery line that processes P and Q can roll back to?"
+  - content: |
+      Consider the actions performed by the processes P and Q in the following figure:
+      
+      * Arrows denote the messages that are passed between the processes.
+      * P<sub>1</sub> through P<sub>5</sub> denote the checkpoints of P.
+      * Q<sub>1</sub> through Q<sub>3</sub> denote the checkpoints of Q.
+      
+      :::image type="content" source="./media/quiz-fault-tolerance.png" alt-text="Sequence diagram between process P and Q showing several back-and-forth interactions: from Q to P before checkpoint p1 and back to Q, then from P to Q before checkpoint q1 and back to P before checkpoint p2, then from Q to P and back to Q before checkpoint p3 and then checkpoint q2, then from Q to P before checkpoint p4 and back to Q before checkpoint q3, then four more from P to Q before checkpoint p5, then a failure occurs on Q.":::
+      <br/>
+      What checkpoints at P and Q form a recovery line that processes P and Q can roll back to?
     choices:
     - content: "P<sub>3</sub> and Q<sub>2</sub>"
       isCorrect: true

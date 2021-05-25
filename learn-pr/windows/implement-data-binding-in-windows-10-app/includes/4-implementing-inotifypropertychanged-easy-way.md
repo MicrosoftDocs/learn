@@ -1,4 +1,4 @@
-![Tech logo](../media/tech-all.png)
+:::image type="icon" source="../media/tech-all.png":::
 
 If you've followed through the previous lessons, you may think that data binding is too much hassle. Why go through all the trouble of implementing `INotifyPropertyChanged`, firing events left and right, when you could simply use `TimeTextBlock.Text = DateTime.Now.ToLongTime()` to display the time? And it's true, in this simple case, data binding does look like overkill.
 
@@ -35,29 +35,27 @@ We can create a new base class: `ObservableObject`. It's called *observable* bec
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+:::image type="icon" source="../media/tech-uwp.png":::
 
 #### 1. Create the `ObservableObject` class
 
 Let's create a new class called `ObservableObject`. Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and enter `ObservableObject` as the class' name. Select **Add** to create the class.
 
-![](../media/create-observableobject.png)
-
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+:::image type="icon" source="../media/tech-wpf.png":::
 
 #### 1. Create the `ObservableObject` class
 
 Let's create a new class called `ObservableObject`. Right-click on the `DatabindingSampleWPF` project in **Solution Explorer**, select **Add / Class** and enter `ObservableObject` as the class' name. Select **Add** to create the class.
 
-![Screenshot of Add New Item dialog box](../media/create-observableobject.png)
-
 ::: zone-end
 
-![Tech logo](../media/tech-all.png)
+:::image type="content" source="../media/create-observableobject.png" alt-text="Screenshot of Visual Studio showing the Add New Item dialog with a Visual C# class type selected.":::
+
+:::image type="icon" source="../media/tech-all.png":::
 
 #### 2. Implement the `INotifyPropertyChanged` interface
 
@@ -145,8 +143,7 @@ With the `ObservableObject` class implemented, let's see how we can use it in ou
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
-
+:::image type="icon" source="../media/tech-uwp.png":::
 
 #### 5. Create the `MainPageLogic` class
 
@@ -363,7 +360,7 @@ You can re-use the `ObservableObject` class in your own project. After a bit of 
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+:::image type="icon" source="../media/tech-wpf.png":::
 
 #### 5. Modify the `Clock` class to take advantage of `ObservableObject`
 

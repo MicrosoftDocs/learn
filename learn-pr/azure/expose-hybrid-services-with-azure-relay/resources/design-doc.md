@@ -115,5 +115,5 @@ https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-http
 
 Other useful links:
 
-- [What is Azure Relay?](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it)
-- [Get started with Relay Hybrid Connections HTTP requests in .NET](https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started)
+- [What is Azure Relay?](/azure/service-bus-relay/relay-what-is-it)
+- [Get started with Relay Hybrid Connections HTTP requests in .NET](/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started)

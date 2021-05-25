@@ -1,4 +1,4 @@
-The success of Fruit Smoothies' marketing campaign is the ongoing performance of the ratings website. The performance is depended on your cluster's performance and relies on the fact that you can monitor the different components in your application, view logs, and get alerts whenever your application goes down or some parts of it fail. You can use a combination of available tools to set up alerting capabilities for your application.
+The success of Fruit Smoothies' marketing campaign is the ongoing performance of the ratings website. The performance depends on your cluster's performance, and relies on the fact that you can monitor the different components in your application, view logs, and get alerts whenever your application goes down or some parts of it fail. You can use a combination of available tools to set up alerting capabilities for your application.
 
 In this exercise, you will:
 
@@ -15,7 +15,7 @@ Azure Monitor for containers is a comprehensive monitoring solution for Azure Ku
 
 You use Log Analytics in Azure Monitor to store monitoring data, events, and metrics from your AKS cluster and the applications. First, you'll pre-create the Log Analytics workspace in your assigned environment resource group.
 
-1. You need a unique name for the workspace. Run the command below in Cloud Shell to generate a name similar to **aksworkshop-workspace-12345**.
+1. You need a unique name for the workspace. In Cloud Shell, run the following command to generate a name similar to **aksworkshop-workspace-12345**.
 
     ```bash
     WORKSPACE=aksworkshop-workspace-$RANDOM
@@ -68,21 +68,21 @@ Let's look at the steps you need to take to get a detailed view of the health of
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Select **Azure Monitor** from the left pane in the Azure portal.
+1. On the portal home page, select **More services**.
 
-1. Under the **Insights** section, select **Containers** to see a list of all clusters that you have access to.
+1. In the left menu pane, select **Monitor**, and then select **Monitor** from the collection of options. The **Monitor | Overview** pane appears.
 
-1. Select the **Cluster** tab at the top of the view to check the cluster utilization. Notice how this view is again a high-level view that provides you a view on the cluster, nodes, controllers, and containers.
+1. In the left menu pane, under **Insights**, select **Containers** to see a list of all clusters that you have access to.
+
+1. Select both the **Monitored clusters** tab and **Unmonitored clusters** tab at the top of the pane to check the cluster utilization. Notice how this view is again a high-level view that provides you a view on the cluster, nodes, controllers, and containers.
 
     ![Screenshot showing a cluster utilization under load report.](../media/09-clusterutilization.png#lightbox)
 
-1. Select the **Health** tab at the top of the view to get a view on how the AKS infrastructure services of the cluster are doing.
+1. Notice the **Health** status to get a view on how the AKS infrastructure services of the cluster are doing.
 
-    ![Screenshot showing health for a cluster.](../media/09-clusterhealth.png#lightbox)
+1. Notice the **Nodes** status to get a view of your nodes' health in the cluster.
 
-1. Select the **Nodes** tab at the top of the view to get a detailed view of your nodes' health and pods in the cluster.
-
-    ![Screenshot showing nodes and pods in a cluster.](../media/09-podmetrics.png#lightbox)
+1. Notice both the **User Pods** and **System Pods** statuses to get a view of your nodes' health in the cluster.
 
 ## Configure Kubernetes RBAC to enable live log data
 
@@ -101,7 +101,7 @@ We use role-based access control (RBAC) in Kubernetes as a way of regulating acc
 
 ### What is a Kubernetes Role?
 
-The RBAC Role and ClusterRole objects allow you to set up rules that represent a set of permissions. The main difference between a Role and a ClusterRole is that a Role is used with resources in a specific namespace and ClusterRole is used with non-namespace resources in a cluster. You'll see how to define a ClusterRole later in the exercise.
+The RBAC Role and ClusterRole objects allow you to set up rules that represent a set of permissions. The main difference between a Role and a ClusterRole is that a Role is used with resources in a specific namespace, and ClusterRole is used with non-namespace resources in a cluster. You'll see how to define a ClusterRole later in the exercise.
 
 ### What is a Kubernetes RoleBinding?
 
@@ -147,9 +147,9 @@ In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that ar
       apiGroup: rbac.authorization.k8s.io
     ```
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration by using the `kubectl apply` command.
+1. Apply the configuration by running the `kubectl apply` command.
 
     ```bash
     kubectl apply \
@@ -160,11 +160,9 @@ In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that ar
 
 1. Switch back to the AKS cluster in the Azure portal.
 
-1. Select **Insights** under **Monitoring**.
+1. In the left menu pane, under **Insights**, select **Insights Hub**. The **Insights Hub** pane appears.
 
-1. Select the **Containers** tab, and select a container to view its live logs or event logs. For example, select the **ratings-api** container. The new view enables you to debug the status of the container.
-
-    ![Screenshot showing an example of the event logs for an Azure Kubernetes Service cluster](../media/09-livelogs.png#lightbox)
+1. Under **Compute**, select **Containers**, and select a container to view its live logs or event logs. For example, select the **ratings-api** container. The new view enables you to debug the status of the container.
 
 ## Summary
 

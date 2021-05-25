@@ -18,7 +18,7 @@ The modules in this learning path and previous learning paths form a progression
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
 If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You need:

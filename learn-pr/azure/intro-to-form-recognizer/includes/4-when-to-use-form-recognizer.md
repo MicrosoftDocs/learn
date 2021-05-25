@@ -1,6 +1,6 @@
 There are many scenarios where form analysis might be required. Here are a few that offer insight into some of the many applications of Form Recognizer. After going through them, you may come up with other ideas on how to integrate Form Recognizer into your applications.
 
-## Bulk Data Extraction
+## Bulk data extraction
 
 Organizations often receive various types of forms, which can be difficult to extract data from without painful manual data entry.  By extracting the data digitally and combining it with existing operational systems and data storage services, organizations can get insights and deliver value to their customers and business users.
 
