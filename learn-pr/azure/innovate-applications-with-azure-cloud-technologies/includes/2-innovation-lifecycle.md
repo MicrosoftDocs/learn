@@ -46,4 +46,4 @@ It's important to realize that even if your assumptions and hypothesis were wron
 
 ## Where to look next
 
-The [Innovation overview of the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate?azure-portal=true) is the best place to begin your exploration of how to innovate.
+The [Innovation overview of the Cloud Adoption Framework](/azure/cloud-adoption-framework/innovate?azure-portal=true) is the best place to begin your exploration of how to innovate.

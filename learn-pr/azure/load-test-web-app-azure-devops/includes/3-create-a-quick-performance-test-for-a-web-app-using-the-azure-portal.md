@@ -52,11 +52,13 @@ In this step, you'll use Azure CLI commands to create a php-based web app by usi
 
 In this step, you'll finalize the deployment of your web app by editing a configuration file. You'll then verify that the app works.
 
-1. On the Azure portal menu, select **App Services**.
+1. On the home page of the Azure portal, search for and select **App Services**. The **App Services** pane appears.
 
-1. In the **App Services** list, select **contosorentals\<number\>**. In the **Overview** section, select **Click to copy** to the right of the URL string.
+1. In the list, select **contosorentals\<number\>**. The **contosorentals\<number\>** pane appears.
 
-1. In the **Development Tools** section, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**.
+1. In the **Essentials** section, select the *Copy to clipboard* icon that appears to the right of the **URL** string.
+
+1. In the middle menu pane, under **Development Tools**, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**.
 
 1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)
 
@@ -75,7 +77,7 @@ In this step, you'll finalize the deployment of your web app by editing a config
 
 In this step, you'll create and run a performance test for your web app. You'll start by creating a new Azure DevOps organization so you can save the results of the test.
 
-1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**.
+1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the middle menu pane, under **Development Tools**, select **Performance test**.
 
 1. In the **Performance test** pane, select **Set organization**, and then select **Create New**.
 
