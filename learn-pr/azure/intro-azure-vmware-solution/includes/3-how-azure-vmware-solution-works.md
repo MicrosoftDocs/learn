@@ -1,9 +1,13 @@
-Now that we know what Azure VMware Solutions are, let's see how it is set up and works on Azure.  
+Now that we know what Azure VMware Solutions (AVS) are and what it can do. Let's see how AVS is set up and how it works on Azure.  
 
 ## What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
 
-You are responsible for NSX-T SDN configuration: network segments, distributed firewall rules, Tier 1 gateways, and load balancers.
+You are responsible for NSX-T SDN configuration:
+- Network segments
+- Distributed firewall rules
+- Tier 1 gateways
+- Load balancers.
 
 ## What Microsoft manages
 
@@ -36,7 +40,7 @@ Private clouds contain vSAN clusters built with dedicated, bare-metal Azure host
 
 For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API.
 
-Node min and maximums configuration:
+The AVS node min and maximums configuration are:
 
 - Min 3 nodes per cluster
 - Max 16 nodes in a vSphere cluster
@@ -112,7 +116,7 @@ The following outlines the steps needed for an organization to get started with 
 |Milestone |Steps  |
 |---------|---------|
 |Plan   |  Plan the deployment of AVS <br> - Assessment <br>- Request Quota <br>- Identify host <br>- Determine Sizing and Connectivity      |
-|Deploy     | Deploy and configure AVS <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>-    |
+|Deploy     | Deploy and configure AVS <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>    |
 |Connect to on-premises     |  - Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit <br>- Peer private cloud to on-premises  <br> - Verify on-premises network connectivity    |
 |Deploy and configure VMware HCX     |  Deploy and configure VMware HCX <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh <br>- Complete setup by checking the appliance status and validating that migration is possible     |
 
