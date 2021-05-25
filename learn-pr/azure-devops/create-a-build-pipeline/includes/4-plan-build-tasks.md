@@ -81,7 +81,7 @@ task: DotNetCoreCLI@2
 
 The pipeline might translate this task to this command:
 
-```bash
+```dotnetcli
 dotnet build MyProject.csproj --no-restore --configuration Release
 ```
 

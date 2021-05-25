@@ -153,7 +153,7 @@ Now that you have the web app, you can build and run it locally.
 
 1. In Visual Studio Code, navigate to the terminal window, and to build the app, run this `dotnet build` command.
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
@@ -164,7 +164,7 @@ Now that you have the web app, you can build and run it locally.
 
 1. From the terminal window, to run the app, run this `dotnet run` command.
 
-    ```bash
+    ```dotnetcli
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
