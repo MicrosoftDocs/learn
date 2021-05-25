@@ -8,7 +8,7 @@ In this module, you'll use `DualScreenInfo` and `TwoPaneView` to display a list 
 
 [!include[](../../../includes/install-vs-mobile-workload.md)]
 
-While the Surface Duo SDK is in preview you should download the [Surface Duo emulator preview from Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=100847) and follow these [setup instructions](https://docs.microsoft.com/dual-screen/android/get-duo-sdk).
+While the Surface Duo SDK is in preview you should download the [Surface Duo emulator preview from Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=100847) and follow these [setup instructions](/dual-screen/android/get-duo-sdk).
 
 ## Learning objectives
 

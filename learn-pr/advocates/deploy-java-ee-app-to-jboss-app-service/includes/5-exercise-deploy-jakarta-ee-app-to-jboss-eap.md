@@ -250,7 +250,7 @@ Now configure your App Service instance to invoke the startup script:
 # [Linux/Mac OS X](#tab/linux)
 
 ```azurecli
-az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
@@ -259,7 +259,7 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 
 ```azurecli
 export MSYS_NO_PATHCONV=1
-az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```

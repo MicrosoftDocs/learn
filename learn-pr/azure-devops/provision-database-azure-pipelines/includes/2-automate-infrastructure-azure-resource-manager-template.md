@@ -42,7 +42,7 @@ Andy has called the team together to discuss planning for the infrastructure cha
 
 Recall that Resource Manager is the interface for managing and organizing cloud resources. A Resource Manager _template_ defines all the resources in a deployment, so you can deploy the template into a resource group as a single operation. We provide a link to a module on Resource Manager templates at the end of this module.
 
-**Mara:** Resource Manager templates are JSON files that define all the resources we need so that Resource Manager can deploy the resources. We can get a *quickstart template* to start with from the [quickstart template gallery](https://azure.microsoft.com/resources/templates?azure-portal=true). These were created by the community with common infrastructure and would be a good place to start if we didn't already have infrastructure in place. Since we have infrastructure now, we can [export the entire resource group as a template from the Azure portal](https://docs.microsoft.com/azure/azure-resource-manager/export-template-portal?azure-portal=true). From there, we can modify the template to make it more reusable across the pipeline.
+**Mara:** Resource Manager templates are JSON files that define all the resources we need so that Resource Manager can deploy the resources. We can get a *quickstart template* to start with from the [quickstart template gallery](https://azure.microsoft.com/resources/templates?azure-portal=true). These were created by the community with common infrastructure and would be a good place to start if we didn't already have infrastructure in place. Since we have infrastructure now, we can [export the entire resource group as a template from the Azure portal](/azure/azure-resource-manager/export-template-portal?azure-portal=true). From there, we can modify the template to make it more reusable across the pipeline.
 
 **Andy:** Let's start drawing out our plan.
 
@@ -106,9 +106,9 @@ Adding a Resource Manager template to the pipeline is going to require a few cha
 
 We also need to think about setting the connection string in the App Service instance. We could do that in the template, but then when we deploy the web app, it will get overwritten. So, I think we need a task to set that after the web app is deployed.
 
-**Andy:** I'm way ahead of you, Mara. I found the [AzureAppServiceSettings@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true) task. But it needs the connection string. How do I get that out of the key vault?
+**Andy:** I'm way ahead of you, Mara. I found the [AzureAppServiceSettings@1](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true) task. But it needs the connection string. How do I get that out of the key vault?
 
-**Tim:** We can use the [AzureKeyVault@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault?azure-portal=true) task to fetch the connection string in the pipeline.
+**Tim:** We can use the [AzureKeyVault@1](/azure/devops/pipelines/tasks/deploy/azure-key-vault?azure-portal=true) task to fetch the connection string in the pipeline.
 
 **Mara:** Excellent! This task will help us in a few stages.
 

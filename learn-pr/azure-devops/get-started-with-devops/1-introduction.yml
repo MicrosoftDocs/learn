@@ -3,6 +3,11 @@ uid: learn.get-started-with-devops.1-introduction
 metadata:
   title: Introduction
   description: Introduction
+  ms.date: 05/20/2021
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Introduction
 durationInMinutes: 1
 content: |

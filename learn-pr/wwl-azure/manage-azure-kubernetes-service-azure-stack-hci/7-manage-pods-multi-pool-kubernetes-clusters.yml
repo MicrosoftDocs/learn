@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pods-multi-pool-kubernetes-clusters
+title: Manage pods on multi-pool Kubernetes clusters
+metadata:
+  title: Manage pods on multi-pool Kubernetes clusters
+  description: "Manage pods on multi-pool Kubernetes clusters"
+  ms.date: 05/18/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-manage-pods-multi-pool-kubernetes-clusters.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "Contoso is planning to deploy Windows and Linux containerized workloads into AKS on Azure Stack HCI. You need to document the procedure that would ensure that Windows-based pods are deployed to the Kubernetes cluster nodes running Windows. You decided to use taints and tolerations for this purpose. To which cluster component should you apply the taint?"
+    choices:
+    - content: "Pod"
+      isCorrect: false
+      explanation: "Incorrect. Tolerations are part of pod specifications, but taints are part of node configuration."
+    - content: "Node"
+      isCorrect: true
+      explanation: "Correct. Taints are part of node configuration."
+    - content: "Deployment"
+      isCorrect: false
+      explanation: "Incorrect. Deployments can include tolerations as part of the pod specifications, but taints are part of node configuration."

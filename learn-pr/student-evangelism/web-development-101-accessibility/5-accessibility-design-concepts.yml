@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.accessibility.accessibility-design-concepts
+metadata:
+  title: Designing for accessibility
+  description: Learn how to use web elements to describe things like titles, full-row containers, and inline elements.
+  ms.date: 03/30/2021 
+  author: GeekTrainer
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-web-accessibility
+title: Designing for accessibility
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-accessibility-design-concepts.md)]
