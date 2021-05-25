@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.oxford.void-detection-edge-devices-lva
+metadata:
+  title: "Void detection on Edge devices with Live Video Analytics using own images and video"
+  description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
+  ms.date: 03/01/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Void detection on Edge devices with Live Video Analytics using own images and video"
+summary: "Use a Live Video Analytics module on IoT Edge and deploy a Custom Vision machine learning solution to an IoT Edge device. The solution will identify void spaces in shelves. Check that the solution is successfully deployed and test your solution from a web application."
+abstract: |
+    In this module, you will:
+    - Use Live Video Analytics to build video analytics solution with Custom Vision
+    - Deploy a set of modules to an IoT Edge virtual machine using the installer
+    - Set up an application that uses the virtual device for rapid inference at the edge
+    - Deploy a solution that will enable you to watch images with defects through a web application
+
+    ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)**
+prerequisites: |
+    - An Azure subscription
+    - Ability to use Azure Cloud Shell
+    - Basic knowledge of Azure IoT Edge
+    - Basic knowledge of Custom Vision
+    - Basic knowledge of Live Video Analytics
+    
+iconUrl: /learn/achievements/student-evangelism/void-detection-edge-devices-lva.svg
+badge:
+  uid: learn.oxford.anomaly-detection-5g-edge-devices
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-hub
+units:
+- learn.oxford.void-detection-edge-devices-lva.introduction
+- learn.oxford.void-detection-edge-devices-lva.build-video-analytics-solution
+- learn.oxford.void-detection-edge-devices-lva.how-deploy-iot-edge
+- learn.oxford.void-detection-edge-devices-lva.exercise-deploy-edge-device
+- learn.oxford.void-detection-edge-devices-lva.how-install-edge-solution
+- learn.oxford.void-detection-edge-devices-lva.exercise-install-vision-edge-shell
+- learn.oxford.void-detection-edge-devices-lva.how-upload-video-edge
+- learn.oxford.void-detection-edge-devices-lva.exercise-upload-video-edge
+- learn.oxford.void-detection-edge-devices-lva.how-deploy-solution
+- learn.oxford.void-detection-edge-devices-lva.exercise-deploy-solution
+- learn.oxford.void-detection-edge-devices-lva.summary
