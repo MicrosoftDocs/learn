@@ -24,7 +24,7 @@ Most GitHub repositories include a file named *README.md*, which is a Markdown f
 
 Here's an example build badge:
 
-:::image type="content" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
+:::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
@@ -76,7 +76,7 @@ In this section, you commit your changes to the `main` branch on GitHub.
 
     Your badge is displayed on the *README.md* page.
 
-    :::image type="content" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the final build badge in the README file.":::
+    :::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="The final build badge as it appears on the README page.":::
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you could have created a pull request with your changes for others to review.
 

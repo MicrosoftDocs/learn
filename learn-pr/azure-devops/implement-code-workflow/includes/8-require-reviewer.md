@@ -40,7 +40,7 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 
 In this section, you submit a fix to the typing error on the home page. Recall that the word "official" is mistyped as "oficial".
 
- :::image type="content" source="../media/7-build-history-widget.png" alt-text="A screenshot of the Space Game website showing a typing error.":::
+ :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="A screenshot of the Space Game website showing a typing error.":::
 
 1. In Visual Studio Code, go to the terminal.
 1. To check out the `main` branch, run `git checkout`:
