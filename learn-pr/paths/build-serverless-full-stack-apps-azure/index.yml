@@ -1,16 +1,16 @@
 ### YamlMime:LearningPath
 uid: learn.build-serverless-full-stack-apps-azure
 metadata:
-  title: Build Serverless, Full Stack Applications in Azure
-  description: Learn how to create, build, and deploy modern full stack applications in Azure leveraging the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions.
+  title: Build serverless, full stack applications in Azure
+  description: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
   brand: azure
   ms.date: 5/20/2021
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build Serverless, Full Stack Applications in Azure
-summary: Learn how to create, build, and deploy modern full stack applications in Azure leveraging the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions.
+title: Build serverless, full stack applications in Azure
+summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
 prerequisites: | 
   - Ability to navigate the Azure portal
   - Familiarity with database concepts such as stored procedures and querying
