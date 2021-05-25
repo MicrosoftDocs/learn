@@ -8,12 +8,12 @@ Although Azure DevOps works with various kinds of source control, many developer
 
 ## Learning objectives
 
-In this module, you:
+After completing this module, you'll be able to:
 
-* Collaborate with others by choosing an appropriate branching and merging strategy.
-* Add a badge to your GitHub repository to show the status of the latest build.
-* Add a dashboard widget to visualize your build history.
-* Set up a rule on your GitHub repository to require a reviewer.
+- Collaborate with others by choosing an appropriate branching and merging strategy
+- Add a badge to your GitHub repository to show the status of the latest build
+- Add a dashboard widget to help visualize your build history
+- Set up a rule on your GitHub repository to require a review
 
 ## Prerequisites
 
