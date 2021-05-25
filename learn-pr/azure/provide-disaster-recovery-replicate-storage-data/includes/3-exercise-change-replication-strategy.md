@@ -7,12 +7,19 @@ In this unit, you'll create a storage account and configure a blob container for
 Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. From the menu bar in the upper right, open **Cloud Shell**.
-1. Set the resource group name.
+
+1. From the menu bar in the upper right, open **Cloud Shell**. Select the **Bash** option.
+
+1. Set the resource group name by running the following command.
+
     ```bash
     export RESOURCEGROUP=learn-storage-replication-rg
     ```
+
 1. To set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name, run this command.
+
+    > [!NOTE]
+    > Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 
     ```bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
@@ -139,12 +146,16 @@ Upload the file to your storage account via your container.
 ## View the replication status
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. Select or search for **Resource groups**.
-1. Select **learn-storage-replication-rg**.
-1. Select the storage account you created from the list of resources in your resource group.
-1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as **available** for a region, it means your region is responsive.
 
-1. To ensure you're seeing the latest status updates, select **Refresh**.
+1. On the home page, select or search for **Resource groups**.
+
+1. Select **learn-storage-replication-rg**. The **learn-storage-replication-rg** resource group pane appears.
+
+1. Select the storage account you created from the list of resources in your resource group. Your *storage account* pane appears.
+
+1. In the left menu pane, under **Data management**, select **Geo-replication**. The **Geo-replication** pane appears for your storage account. You see the replication status of your Azure storage account's primary and secondary regions. If the status shows as *Available* for a region, it means your region is responsive.
+
+1. To ensure you're seeing the latest status updates, in the top menu bar, select **Refresh**.
 
    :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 

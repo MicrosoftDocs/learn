@@ -144,6 +144,8 @@ The neural network goes back and forth many times until it learns the best assoc
 
 :::image type="content" source="../media/neural-network-training.gif" alt-text="Dynamic diagram that demonstrates how neural networks are created to train a learning model."  loc-scope="Azure":::
 
+> *Visualization credit: Grant Sanderson, https://www.3blue1brown.com/.*
+
 
 <!-- Links -->
 [AILibs]: https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal-true

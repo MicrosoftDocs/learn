@@ -6,8 +6,8 @@ Translator’s text translation service uses a JSON-based Web API with text sent
 
 ```JSON
 [
-    {"Text":"I would really like to drive your car around the block a few times."},
-    {"Text":"@Josh Can we put something interesting here?"}
+    {"Text":"I would really like to go to the theatre."},
+    {"Text":"Let's go out for lunch!"}
 ]
 ```
 
