@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-durationInMinutes: 1 # dummy number at present
+durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/2-build-video-analytics-solution.md)]
