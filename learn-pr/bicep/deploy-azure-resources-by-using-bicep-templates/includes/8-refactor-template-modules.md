@@ -16,7 +16,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Add the following content into the *appService.bicep* file:
 
-   :::code language="bicep" source="code/8-appService.bicep" range="1-30" :::
+   :::code language="bicep" source="code/8-app-service.bicep" range="1-30" :::
 
    Notice that you've copied the parameters and variables from your *main.bicep* template, because the *appService.bicep* template needs to be self-contained.
 
@@ -40,7 +40,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Add the following Bicep code at the bottom of the *appService.bicep* file:
 
-   :::code language="bicep" source="code/8-appService.bicep" range="32" :::
+   :::code language="bicep" source="code/8-app-service.bicep" range="32" :::
 
    This code is declaring that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
 
