@@ -138,6 +138,6 @@ In the next unit, we'll learn how to change the behavior for our bot.
 [BotService]: https://azure.microsoft.com/services/bot-service/
 [CoServ]: https://microsoft.com/cognitive
 [azure-portal]: https://portal.azure.com?azure-portal=true
-[AdjustServicePlan]: https://docs.microsoft.com/azure/app-service/app-service-plan-manage
-[LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
-[QnAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
+[AdjustServicePlan]: /azure/app-service/app-service-plan-manage
+[LUIS]: /azure/cognitive-services/luis/
+[QnAMaker]: /azure/cognitive-services/qnamaker/

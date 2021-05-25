@@ -17,15 +17,15 @@ app.use((req, res, next) => {})
 The method passed into **use()** has three parameters, **req**, **res**, and **next**. The parameters have the following meanings:
 
 - **req**: This parameter is the incoming request. It contains request headers and the calling URL. It might also have a body of data if the client sent data with their request.
-- **res**: This parameter is a response stream. Use this stream to write information such as headers and data that you want to send back to the calling client.
-- **next**: This parameter signals that the request is OK and that you are ready to process it. If **next()** isn't called, processing of the request stops. Also, it's good practice to tell the client why the request is not processed. For example, call **res.send('<specify a reason why the request is stopped>')**.
+- **res**: This parameter is a response stream. Use this stream to write information, such as headers and data that you want to send back to the calling client.
+- **next**: This parameter signals that the request is OK and that you are ready to process it. If **next()** isn't called, processing of the request stops. Also, it's good practice to tell the client why the request is not processed, for example, call **res.send('<specify a reason why the request is stopped>')**.
 
 ## Request pipeline
 
 If you have routes that could benefit from having middleware run pre or post a request, set it up so that:
 
-1. Middleware that needs to run before the request (pre request) is defined before the actual request.
-1. Middleware that needs to run after the request (post request) is defined after the actual request.
+- Middleware that needs to run before the request (pre request) is defined before the actual request.
+- Middleware that needs to run after the request (post request) is defined after the actual request.
 
 Take a look at this example:
 
