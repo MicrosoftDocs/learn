@@ -12,10 +12,10 @@ Each role is a set of properties defined in a JavaScript Object Notation (JSON) 
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
-You can get this information using the PowerShell `Get-AzRoleDefinition` cmdlet.
+You can get this information using the PowerShell `Get-AzRoleDefinition Owner` cmdlet.
 
 ```powershell
-Get-AzRoleDefinition
+Get-AzRoleDefinition Owner
 ```
 
 This code should produce the following output:
@@ -40,13 +40,13 @@ Next, let's explore some of the other built-in roles.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **Resource groups** from the left nav bar.
+1. On the Azure home page, under **Navigate**, select **Resource groups**.
 
-1. Select the resource group.
+1. Select a resource group. Your *resource group* pane appears.
 
-1. Select the **Access control (IAM)** item from the sidebar menu.
+1. In the left menu pane, select the **Access control (IAM)**. The **Access control (IAM)** pane appears for your resource group.
 
-1. Select the **Roles** tab as shown below to see the list of available roles.
+1. On the interior menu bar, select the **Roles** tab as follows to see the list of available roles.
 
     ![Screenshot showing the roles in the portal](../media/5-list-roles.png)
 
