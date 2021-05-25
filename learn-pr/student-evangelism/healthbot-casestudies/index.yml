@@ -1,0 +1,30 @@
+### YamlMime:Module
+uid: learn.healthbot-case-studies
+metadata:
+  title: Case Studies for Azure Health Bot
+  description: TBA
+  ms.date: 06/04/2020
+  author: rodanthi-alexiou
+  ms.author: cnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Health Bot case studies
+summary: TBA
+abstract: TBA
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+prerequisites: None
+units:
+- learn.healthbot.1-introduction
+- learn.healthbot.2-usa-case-studies
+- learn.healthbot.3-middle-east-europe-case-studies
+- learn.healthbot.4-knowledge-check
+- learn.healthbot.5-summary
+
+badge:
+  uid: learn.healthbot-case-studies.badge

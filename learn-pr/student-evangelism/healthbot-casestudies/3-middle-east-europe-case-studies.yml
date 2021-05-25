@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.healthbot-case-studies.3-middle-east-europe-case-studies
+title: Case Studies for Health Bot service in Middle East and Europe 
+metadata:
+  title: Case Studies for Health Bot service in Middle East and Europe 
+  description: TBA
+  author: rodanthi-alexiou
+  ms.author: cnoring 
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-middle-east-europe-case-studies.md)]
