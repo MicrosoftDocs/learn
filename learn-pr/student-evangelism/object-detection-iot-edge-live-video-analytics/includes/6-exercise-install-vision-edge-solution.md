@@ -64,7 +64,7 @@ Perform the following steps in the Azure Cloud Shell environment.
 
 13. You can check the deployment status on the [Azure portal](https://portal.azure.com/#home). Go to the IoT Hub resource and navigate to IoT Edge tab. Click on the edge device you created for this module to check the status of the modules.
 
-    [![The illustration shows deployment.](../media/deployment-status.png)](../media/deployment-status.png#lightbox)
+    [![The illustration shows deployment status.](../media/deployment-status.png)](../media/deployment-status.png#lightbox)
 
 14. Open your browser, connect to **http://YOUR_IP:8181**. You'll connect to the VisiononEdge solution.
 
