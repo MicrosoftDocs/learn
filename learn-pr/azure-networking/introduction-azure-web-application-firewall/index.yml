@@ -20,7 +20,7 @@ prerequisites: |
   - Beginner-level knowledge of Azure, including Azure virtual networks, Azure App Service, Azure Front Door, and Azure Application Gateway. 
   - Beginner-level knowledge of networking, including IP addresses, HTTP/HTTPS request parameters, and HTTP request methods. 
   - Beginner-level knowledge of cloud computing, including availability and web applications.  
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-web-application-firewall.svg
 ratingEnabled: true
 levels:
 - beginner

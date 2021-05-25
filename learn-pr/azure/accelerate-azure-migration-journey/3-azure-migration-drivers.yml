@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.3-azure-migration-drivers
+title: Azure migration drivers
+metadata:
+  title: Azure migration drivers
+  description: Understand the primary drivers for an Azure migration.
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-migration-drivers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following are the benefits of moving to Azure?
+    choices:
+    - content: Optimize costs, serverless, Linux, mobile applications
+      isCorrect: false
+      explanation: Only optimize costs is a benefit of Azure in this list. The others are features of Azure.
+    - content: Optimize costs, build resilience and security, scale applications and workloads on demand, application innovation
+      isCorrect: True
+      explanation: The benefits of Azure are listed here. The cloud delivers these fundamental technology benefits that can help your enterprise.
+    - content: Optimize costs, build resilience and security, Kubernetes, massive storage
+      isCorrect: false
+      explanation: Only optimize costs is a benefit of Azure in this list. The others are features of Azure.
+  - content: Which of the following are common migration triggers?
+    choices:
+    - content: Datacenter failures, disaster recovery, security
+      isCorrect: false
+      explanation: These are all important reasons to move to the cloud, but the triggers are datacenter contract expiration, cash flow challenges and resource constraints, business continuity, and cybersecurity threats.
+    - content: Datacenter contract expiration, lack of disk space
+      isCorrect: false
+      explanation: Datacenter contract expiration is the only migration trigger listed here. The others are cash flow challenges and resource constraints, business continuity, and cybersecurity threats.
+    - content: Datacenter contract expiration, cash flow challenges and resource constraints, business continuity, cybersecurity threats
+      isCorrect: true
+      explanation: Migration triggers are typically IT-oriented or based on timelines. The migration to the cloud is driven by the need to quickly reduce on-premises costs, stay secure, and simplify operations.
+  - content: When you consider if you should migrate or modernize your applications, which is the first question you should ask during the evaluation?
+    choices:
+    - content: Will there be future development on this application?
+      isCorrect: true
+      explanation: If an application will have future development, the application should be moved to a platform as a service (PaaS) solution.
+    - content: Should our team use containers for this application?
+      isCorrect: false
+      explanation: Container use is one of many technical implementations that could be used for an application. Don't focus on the solution. Instead, focus on the question, Will there be further development on the application?
+    - content: Should our team use a serverless model for this application?
+      isCorrect: false
+      explanation: A serverless model is one of many technical implementations that could be used for an application. Don't focus on the solution. Instead, focus on the question, Will there be further development on the application?

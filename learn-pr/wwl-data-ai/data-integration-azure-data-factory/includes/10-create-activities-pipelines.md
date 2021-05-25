@@ -16,7 +16,7 @@ As this list is always evolving, you can get the [latest information here](https
 
 ## Control activities
 
-When graphically authoring ADF solutions, you can use the control flow within the designed to orchestrate pipeline activities that include chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
+When graphically authoring ADF solutions, you can use the control flow within the design to orchestrate pipeline activities that include chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
 
 | Control Activity | Description |
 |------------------|-------------|
@@ -159,7 +159,7 @@ The pipeline is scheduled to execute on a monthly basis, and will attempt to exe
                     "concurrency": 1,
                     "retry": 3
                 },
-              "scheduler": {
+                "scheduler": {
                     "frequency": "Month",
                     "interval": 1
               },

@@ -12,6 +12,6 @@ Because Azure Logic Apps is a low-code/no-code service, no developers are needed
 
 ## Why not choose Azure Functions?
 
-Although it's possible to build the entire solution by using Azure Functions, this approach might be challenge if no software developers can be committed to this project.  
+Although it's possible to build the entire solution by using Azure Functions, this approach might be a challenge if no software developers can be committed to this project.  
 
 This is an ideal scenario for Azure Logic Apps.  Connectors already exist for each of the steps outlined in the workflow.  It would take quite a bit of research, development, and testing for a developer to build a solution that utilizes all these disparate software systems.

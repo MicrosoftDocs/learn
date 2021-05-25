@@ -39,8 +39,8 @@ Now, find the **Explorers** section.
 The **IoT devices** entry, which you've already used, is one of the most important entries on the left menu. When you start adding multiple devices to a hub, you'll see how helpful this entry is in administering remote devices. One of the main uses of this entry is to locate the _device_ connection strings and keys. Device keys are distinct from the _service_ keys for the hub itself.
 
 For more experience with devices, consider adding the following two Learn modules to your to-do list:
-- [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/learn/modules/remotely-monitor-devices-with-azure-iot-hub/)
-- [Automate IoT devices management with Azure IoT Hub](https://docs.microsoft.com/learn/modules/automate-iot-devices-management-with-azure-iot-hub/)
+- [Remotely monitor and control devices with Azure IoT Hub](/learn/modules/remotely-monitor-devices-with-azure-iot-hub/)
+- [Automate IoT devices management with Azure IoT Hub](/learn/modules/automate-iot-devices-management-with-azure-iot-hub/)
 
 Next, find the **Security** section.
 
@@ -51,7 +51,7 @@ Select the **Overview** menu entry for this section. There will be nothing drama
 [![Screenshot showing the hub security overview](../media/iot-admin-security.png)](../media/iot-admin-security.png#lightbox)
 
 If securing devices is important to your scenarios, add the following module to your to-do list: 
-[Automatically provision IoT devices securely and at scale with the Device Provisioning Service](https://docs.microsoft.com/learn/modules/securely-provision-iot-devices-at-scale-with-device-provisioning-service/).
+[Automatically provision IoT devices securely and at scale with the Device Provisioning Service](/learn/modules/securely-provision-iot-devices-at-scale-with-device-provisioning-service/).
 
 Finally, find the **Monitoring** section.
 
@@ -60,7 +60,7 @@ Finally, find the **Monitoring** section.
 You have already used **Metrics**, in the previous unit. Another useful entry is **Alerts**. Alerts fire when certain conditions, usually errors or warnings, are met.
 
 To get detailed experience with metrics, and to set up some alerts, add the following module to your to-do list:
-[Manage your Azure IoT hub with alerts and metrics](https://docs.microsoft.com/learn/modules/manage-azure-iot-hub-with-metrics-alerts/).
+[Manage your Azure IoT hub with alerts and metrics](/learn/modules/manage-azure-iot-hub-with-metrics-alerts/).
 
 ### Next steps
 

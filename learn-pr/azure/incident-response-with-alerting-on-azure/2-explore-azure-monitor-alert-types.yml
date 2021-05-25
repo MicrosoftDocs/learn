@@ -27,15 +27,15 @@ quiz:
           explanation: Correct. These elements make up an alert rule.
     - content: Which of the following is an example of a log data type?
       choices:
-        - content: Percentage of CPU over time.
+        - content: Percentage of CPU over time
           isCorrect: false
           explanation: Percentage of CPU is an example of metric data.
-        - content: HTTP response records.
+        - content: HTTP response records
           isCorrect: true
           explanation: Correct. HTTP response records are examples of log data types.
-        - content: Database tables.
+        - content: Database tables
           isCorrect: false
           explanation: Incorrect. Database tables are not examples of log data types.
-        - content: Website requests per hour.
+        - content: Website requests per hour
           isCorrect: false
           explanation: Incorrect. Website requests per hour is an example of metric data.

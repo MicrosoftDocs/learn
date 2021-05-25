@@ -27,9 +27,9 @@ Blueprints are also versioned. Versioning enables you to track and comment on ch
 
 ## What are blueprint artifacts?
 
-Each component in the blueprint definition is known as an _artifact_.
+Each component in the blueprint definition is known as an *artifact*.
 
-Artifacts can have no parameters. An example is the **Deploy threat detection on SQL servers** policy, which requires no further configuration.
+It is possible for artifacts to have no additional parameters (configurations). An example is the **Deploy threat detection on SQL servers** policy, which requires no additional configuration.
 
 Artifacts can also contain one or more parameters that you can configure. The following screenshot shows the **Allowed locations** policy. This policy includes a parameter that specifies the allowed locations.
 

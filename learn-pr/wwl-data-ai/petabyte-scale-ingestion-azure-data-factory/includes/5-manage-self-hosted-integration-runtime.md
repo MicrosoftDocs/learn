@@ -4,7 +4,7 @@ In Data Factory, an activity defines the action to be performed. A linked servic
 
 A self-hosted integration runtime is capable of:
 
-- Running copy activity between a cloud data stores and a data store in private network.
+- Running copy activity between a cloud data store and a data store in the private network.
 - Dispatching the following transform activities against compute resources in on-premises or Azure Virtual Network: 
     - HDInsight Hive activity (BYOC-Bring Your Own Cluster) 
     - HDInsight Pig activity (BYOC)
@@ -19,7 +19,7 @@ A self-hosted integration runtime is capable of:
     - Lookup activity
     - Get Metadata activity.
 
-The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its functionality as provided by you. Therefore there is no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes into the destination.
+The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its function as provided by you. Therefore there is no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes it into the destination.
 
 ## Create a self-hosted Integration Runtime within Azure Data Factory
 
@@ -41,7 +41,7 @@ The self-hosted integration runtime is logically registered to the Azure Data Fa
 
 1. Copy and paste the authentication key. Select Download and install integration runtime.
     > [!div class="mx-imgBorder"]  
-    > ![Integration runtime setup](../media/integration-runtime-setup-keys.png)
+    > ![Integration runtime setup keys](../media/integration-runtime-setup-keys.png)
 
 1. Download the self-hosted integration runtime on a local Windows machine. Run the installer.
 

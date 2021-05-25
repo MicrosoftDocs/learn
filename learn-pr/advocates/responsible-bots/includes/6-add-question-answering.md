@@ -206,6 +206,6 @@ How are you?
 
 We've got a pretty useful, fun bot now! As our final step, let's reexamine some of the responsible conversational AI principles to make sure we're creating a responsible bot!
 
-[QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
-[ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
+[QAMaker]: /azure/cognitive-services/qnamaker/
+[ProjectPersonalityChat]: https://azure.microsoft.com/resources/videos/build-2019-microsoft-research-apis---project-personality-chat-in-action/
 [CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/blob/t3-qna/src/Bots/EchoBot.cs?azure-portal=true

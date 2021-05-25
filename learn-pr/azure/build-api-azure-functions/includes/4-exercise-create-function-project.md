@@ -65,11 +65,11 @@ Azure Functions projects can be run and debugged locally from within Visual Stud
 1. Enter "debug select".
 
 1. Select **Debug: Select and Start Debugging**.
-   `
+  
 1. Select **Attach to Node Functions**.
 
-   The Azure Functions project will launch. Note that the terminal shows you what URL the function is running on.
+   The Azure Functions project will launch. Note that the terminal shows you what URL the function is running on. 
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
-You've got all of the endpoints created and running in Azure Functions. At the moment, they won't work because you haven't setup the connection string for the database.
+VS Code will show an error saying, "Cannot read property 'endpoint' of undefined". That's OK! That's because you haven't setup the database connection string yet. Notice that the 4 endpoints are listed above that error, and that if you click on a any of them, you'll get the same error.

@@ -8,7 +8,7 @@ An eviction policy is a plan that determines how your data should be managed whe
 
 ### Types of eviction policies
 
-There are six different eviction policies provided by Azure Cache for Redis. All of these values perform an action when you attempt to insert data when you're out of memory.
+There are six different eviction policies provided by Azure Cache for Redis. All of these values perform an action when you attempt to insert data when you're out of memory:
 
 * **noeviction:** No eviction policy. Returns an error message if you attempt to insert data.
 
@@ -24,6 +24,6 @@ There are six different eviction policies provided by Azure Cache for Redis. All
 
 ## How to set an eviction policy
 
-Azure provides a simple drop-down menu to set the eviction policy for Azure Cache for Redis. Select **Advanced Settings**, and use the **maxmemory-policy** drop-down menu.
+Azure provides a simple dropdown menu to set the eviction policy for Azure Cache for Redis. Select **Advanced Settings**, and use the **maxmemory-policy** dropdown menu.
 
-Since memory is critical to Azure Cache for Redis, there is support for eviction policies. An eviction policy determines what should be done with existing data when you're out of memory and attempt to insert new data.
+Because memory is critical to Azure Cache for Redis, there is support for eviction policies. An eviction policy determines what should be done with existing data when you're out of memory and attempt to insert new data.

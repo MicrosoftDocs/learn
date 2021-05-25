@@ -63,7 +63,7 @@ test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out
 
 In many scenarios, it's important to test if a condition will cause a `panic!`.
 
-We can do this test by adding another attribute, `should_panic`, to our test function. This attribute makes a test pass if the code inside the function panics. It makes the test fail if the code inside the function doesn't panic.
+We can do this test by adding another attribute, `should_panic`, to our test function. This attribute makes a test pass when the code inside the function panics. It makes the test fail if the code inside the function doesn't panic.
 
 Now, our `add_fails` test function can capture an expected panic and treat it as a passing test.
 
@@ -145,8 +145,8 @@ mod add_function_tests {
 }
 ```
 
-The `cfg` attribute controls conditional compilation and will only compile the thing it's attached to if the predicate is `true`. The `test` compilation flag is issued automatically by Cargo whenever we execute the command `$ cargo run`, so it will always be true when we run our tests.
+The `cfg` attribute controls conditional compilation and will only compile the thing it's attached to if the predicate is `true`. The `test` compilation flag is issued automatically by Cargo whenever we execute the command `$ cargo test`, so it will always be true when we run our tests.
 
-The `use super::*;` declaration is necessary for the code inside the `add_funtcion_tests` module to access the `add` in the outer module.
+The `use super::*;` declaration is necessary for the code inside the `add_function_tests` module to access the `add` in the outer module.
 
 You can find the code used in this unit at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f74afccf321c642e7ebea8633a3f4b32&azure-portal=true).

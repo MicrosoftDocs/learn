@@ -11,12 +11,8 @@ Protecting users' identity by monitoring their usage and sign-in patters ensures
 In this module, you will:
 
 - Review Identity Protection basics.
-
 - Implement and manage a user risk policy. 
-
 - Implement and manage sign-in risk policies. 
-
 - Implement and manage multifactor authentication (MFA) registration policy. 
-
 - Monitor, investigate, and remediate elevated risky users. 
 

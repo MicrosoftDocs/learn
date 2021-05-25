@@ -11,6 +11,6 @@ When Sentinel ingests data from the Data Connectors, the following table lists t
 | SecurityEvent| Security events collected from windows machines by Azure Security Center or Azure Sentinel|
 | SigninLogs| Azure Activity Directory Sign in logs|
 | Syslog| Syslog events on Linux computers using the Log Analytics agent.|
-| SysmonEvent| Sysmon Events collected from a Windows host.|
+| Event| Sysmon Events collected from a Windows host.|
 | WindowsFirewall| Windows Firewall Events|
 

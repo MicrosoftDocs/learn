@@ -146,7 +146,7 @@ Now it's time to create the application and apply the secret to this application
 1. Let's add the Ingress so we can access the application, below the last three dashes, add the following YAML:
 
     ```yaml
-    apiVersion: networking.k8s.io/v1
+    apiVersion: networking.k8s.io/v1beta1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -160,19 +160,23 @@ Now it's time to create the application and apply the secret to this application
             paths:
               - path: /
                 backend:
-                  service:
-                    name: ship-manager-backend
-                    port:
-                      name: http
+                  serviceName: ship-manager-backend
+                  servicePort: http
     ```
 
 1. Save and close the file.
 1. Apply the changes using `kubectl apply -f backend-application.yaml`
 
-    The changes can take up to five minutes to propagate, check the DNS creation using the following command:
+    The changes can take up to five minutes to propagate, check the DNS creation by getting the name of your DNS zone listing with this command:
 
     ```azurecli-interactive
     az network dns zone list -o table
+    ```
+
+    Then query Azure for the record sets of this listing with:
+
+    ```azurecli-interactive
+    az network dns record-set list -g $RESOURCE_GROUP -z <your-zone-name>
     ```
 
     Check if there are two new records with the same DNS zone but starting with `ship-manager-backend`.

@@ -3,10 +3,10 @@ uid: learn.student-evangelism.branch-merge-git.1-branch-and-merge
 title: Branches in Git
 metadata:
   title: Branches in Git
-  description: Create and merge branches
-  ms.date: 06/24/2019
-  author: shanamatthews
-  ms.author: shanama
+  description: Create and merge branches.
+  ms.date: 03/16/2021
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

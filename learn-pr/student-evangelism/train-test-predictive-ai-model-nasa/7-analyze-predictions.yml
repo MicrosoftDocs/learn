@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.7-analyze-predictions
 metadata:
   title: Exercise - Test a neural network that classifies photos of space rocks
-  description: Run code by using five random photos to determine whether predictions made by your AI model are correct.
-  ms.date: 07/22/2020
-  author: angevin17
+  description: Run code on five random photos to see whether predictions made by your AI model are correct.
+  ms.date: 04/28/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Test a neural network that classifies photos of space rocks
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/7-analyze-predictions.md)]

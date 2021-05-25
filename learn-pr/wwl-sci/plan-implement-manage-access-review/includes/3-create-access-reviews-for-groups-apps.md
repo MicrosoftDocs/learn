@@ -30,9 +30,9 @@ Access to groups and applications for employees and guests changes over time. To
 
 5. If you selected **Teams + Groups** in Step 1, you have two options in Step 2:
 
-   - **All Microsoft 365 groups with guest users.** Select this option if you would like to create recurring reviews on all your guest users across all your Microsoft Teams and M365 groups in your organization. You can choose to exclude certain groups by clicking on "Select group(s) to exclude."
+   - **All Microsoft 365 groups with guest users**. Select this option if you would like to create recurring reviews on all your guest users across all your Microsoft Teams and M365 groups in your organization. You can choose to exclude certain groups by clicking on "Select group(s) to exclude."
 
-   - **Select teams + groups.** Select this option if you would like to specify a finite set of teams and/or groups to review. After clicking on this option, you will see a list of groups to the right to pick from.
+   - **Select teams + groups**. Select this option if you would like to specify a finite set of teams and/or groups to review. After clicking on this option, you will see a list of groups to the right to pick from.
 
     > [!div class="mx-imgBorder"]
     > ![Teams and groups](../media/teams-groups.png)
@@ -50,9 +50,9 @@ Access to groups and applications for employees and guests changes over time. To
 
 7. Next, in Step 3 you can select a scope for the review. Your options are:
 
-   - **Guest users only.** Selecting this option limits the access review to just the Azure AD B2B guest users in your directory.
+   - **Guest users only**. Selecting this option limits the access review to just the Azure AD B2B guest users in your directory.
 
-   - **Everyone.** Selecting this option scopes the access review to all user objects associated with the resource.
+   - **Everyone**. Selecting this option scopes the access review to all user objects associated with the resource.
 
     > [!NOTE]
     > If you selected All Microsoft 365 groups with guest users in Step 2, then your only option is to review Guest users in Step 3.
@@ -67,10 +67,10 @@ Access to groups and applications for employees and guests changes over time. To
 
    - **Users review own access**
 
-   - **(Preview) Managers of users.** If you choose either **Managers of users** or **Group owners,** you also have the option to specify a fallback reviewer. Fallback reviewers are asked to do a review when the user has no manager specified in the directory or the group does not have an owner.
+   - **(Preview) Managers of users**. If you choose either **Managers of users** or **Group owners,** you also have the option to specify a fallback reviewer. Fallback reviewers are asked to do a review when the user has no manager specified in the directory or the group does not have an owner.
 
-    > [!div class="mx-imgBorder"]
-    > ![new access review](../media/new-access-review.png)
+     > [!div class="mx-imgBorder"]
+     > ![new access review](../media/new-access-review.png)
 
 10. In the **Specify recurrence of review** section, you can specify a frequency such as **Weekly, Monthly, Quarterly, Semi-annually, Annually**. You then specify a **Duration**, which defines how long a review will be open for input from reviewers. For example, the maximum duration that you can set for a monthly review is 27 days to avoid overlapping reviews. You might want to shorten the duration to ensure that your reviewers input is applied earlier. Next, you can select a **Start date** and **End date**.
 
@@ -79,7 +79,7 @@ Access to groups and applications for employees and guests changes over time. To
 
 11. Click the **Next: Settings** button at the bottom of the page.
 
-12. In the **Upon completion settings,** you can specify what happens after the review completes.
+12. In the **Upon completion settings**, you can specify what happens after the review completes.
 
     > [!div class="mx-imgBorder"]
     > ![Create an access review - upon completion settings](../media/upon-completion-settings-new.png)
@@ -103,8 +103,8 @@ Access to groups and applications for employees and guests changes over time. To
 
       - **Block user from signing in for 30 days, then remove user from the tenant** will block the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user has been disabled. If there is no action taken on the disabled users, they will be deleted from the tenant.
 
-    > [!NOTE]
-    > Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
+       > [!NOTE]
+       > Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
 
 13. In **Enable review decision helpers** choose whether you would like your reviewer to receive recommendations during the review process.
 
@@ -121,14 +121,14 @@ Access to groups and applications for employees and guests changes over time. To
 
      - The content of the email sent to reviewers is autogenerated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information, such as additional instructions or contact information, you can specify these details in the **Additional content for reviewer email** section. The information that you enter is included in the invitation and reminder emails sent to assigned reviewers. The section highlighted in the image below shows where this information is displayed.
 
-    > [!div class="mx-imgBorder"]
-    > ![additional content for reviewer](../media/additional-content-reviewer.png)
+     > [!div class="mx-imgBorder"]
+     > ![additional content for reviewer](../media/additional-content-reviewer.png)
 
 15. Click on **Next: Review + Create** to move to the next page.
 
 16. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.
 
-17. Review the information and select **Create.**
+17. Review the information and select **Create**.
 
     > [!div class="mx-imgBorder"]
     > ![create review screen](../media/create-review.png)

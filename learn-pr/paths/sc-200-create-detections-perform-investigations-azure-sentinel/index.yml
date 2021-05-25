@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel
 metadata:
   title: 'SC-200 part 7: Create detections and perform investigations using Azure Sentinel'
   description: 'SC-200 part 7: Create detections and perform investigations using Azure Sentinel'
-  ms.date: 02/04/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -14,11 +14,11 @@ prerequisites: |
   - Understand how data is connected to Azure Sentinel like you could learn from SC-200 part 6: Connect logs to Azure Sentinel
 summary: |
   Detect previously uncovered threats and rapidly remediate threats with built-in orchestration and automation in Azure Sentinel. This learning path aligns with Exam SC-200: Security Operation Analyst.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-sentinel-detection.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel

@@ -27,11 +27,11 @@ The first step is to create a project that contains your unit tests, and add it 
     > [!NOTE]
     > The test project will create a mock HTTP environment. The classes required for doing this are in the **Microsoft.AspNetCore.Mvc** package.
 
-1. Wait while the package in installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
+1. Wait while the package is installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 
-1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
+1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
 
-1. In the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click **Dependencies**, and then select **Add Reference**.
+1. In the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click **Dependencies**, and then select **Add Reference**.
 
 1. In the **Reference Manager** window, select the **WatchPortalFunction** project, and then select **OK**.
 

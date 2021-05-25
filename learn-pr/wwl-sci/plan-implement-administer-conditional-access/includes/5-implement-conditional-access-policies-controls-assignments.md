@@ -95,9 +95,6 @@ Some may choose to use device state instead of location in step 6 above:
 
    5. Select **Done** on the **Conditions** blade.
 
-> [!WARNING]
-> If you use device state as a condition in your policy, this may impact guest users in the directory. Report-only mode can help determine the impact of policy decisions. Note that report-only mode is not applicable for Conditional Access policies with "User Actions" scope.
-
 ## Block access by location
 
 With the location condition in Conditional Access, you can control access to your cloud apps based on the network location of a user. The location condition is commonly used to block access from countries/regions where your organization knows traffic should not come from.
@@ -300,7 +297,7 @@ A second policy is created below to require multifactor authentication or a comp
 
    1. Select **Require multi-factor authentication** and **Require device to be marked as compliant** select **Select**.
 
-   2. Ensure **Require all the selected controls** is selected.
+   2. Ensure **Require one of the selected controls** is selected.
 
    3. Select **Select**.
 

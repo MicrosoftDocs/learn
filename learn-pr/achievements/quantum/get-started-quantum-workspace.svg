@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NA/introduction-to-azure-quantum</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-2.8%" y="-2.8%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="100" height="100"></rect>
+        <rect id="path-6" x="0" y="0" width="100" height="100"></rect>
+        <path d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 Z M50,4 C24.5949015,4 4,24.5949015 4,50 C4,75.4050985 24.5949015,96 50,96 C75.4050985,96 96,75.4050985 96,50 C96,24.5949015 75.4050985,4 50,4 Z" id="path-7"></path>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-14" transform="translate(-160.000000, -1270.000000)">
+            <g id="NA/introduction-to-azure-quantum" transform="translate(160.000000, 1270.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="102.5" height="102.5" rx="50"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-8)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="strucutre-2" transform="translate(20.000000, 15.000000)">
+                    <g id="grey" transform="translate(2.430397, 0.768158)" stroke="#EBEBEB">
+                        <polyline id="Path-61" points="48.4047719 6.53143485 48.4047719 63.8111095 2.74297085 37.6605464"></polyline>
+                        <polyline id="Path-62" points="37.8360386 0 37.8360386 70.0617439 0 47.746129"></polyline>
+                        <line x1="50.2196274" y1="15.741841" x2="1.06996572" y2="44.2500581" id="Path-63"></line>
+                        <polyline id="Path-64" points="56.4459049 48.0278141 18.4459049 70.0617439 18.4459049 12.0617439 53.3164324 32.2053384"></polyline>
+                        <polyline id="Path-65" points="50.6885355 18.8840837 28.6885355 5.74014246 28.6885355 73.7401425"></polyline>
+                        <polyline id="Path-66" points="54.2574965 36.8185077 7.68000419 63.8111095 7.68000419 17.5854372"></polyline>
+                        <polyline id="Path-68" points="55.4448207 44.2500581 17.8316612 22.7218898 4.48771635 30.5680833"></polyline>
+                        <polyline id="Path-69" points="52.3975416 26.4994537 27.8281765 40.5425504 5.19354181 26.9847961"></polyline>
+                    </g>
+                    <g id="Black" stroke="#000000">
+                        <line x1="10.4221723" y1="17.6075928" x2="20.3181423" y2="23.4012987" id="Path-60"></line>
+                        <polygon id="Path-54" points="50.4486124 5.95433117 20.3181423 23.4012987 30.2868932 76.5630092 60.9240022 58.5885684"></polygon>
+                        <polyline id="Path-56" points="50.4486124 5.95433117 40.6210723 -1.42108547e-14 10.1873464 17.4972345 1.13686838e-13 58.7823611 30.1827468 76.925594"></polyline>
+                        <polyline id="Path-58" points="60.4806628 58.2889801 30.4341307 41.2586702 40.6210723 0.619564527"></polyline>
+                        <line x1="30.4341307" y1="41.2586702" x2="0.437453377" y2="58.5695672" id="Path-59"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

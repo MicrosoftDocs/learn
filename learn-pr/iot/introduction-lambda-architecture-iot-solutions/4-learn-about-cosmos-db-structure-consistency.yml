@@ -4,8 +4,8 @@ metadata:
   title: Learn about Cosmos DB structure and consistency
   description: Provides a brief overview of the Azure Cosmos DB resource. Shows how consistency strategies change the way data is read across the globe.
   ms.date: 12/20/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about Cosmos DB structure and consistency

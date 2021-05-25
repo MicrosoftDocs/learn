@@ -4,7 +4,7 @@ metadata:
   description: Describes the scenario of multiple sensor devices needing to be validated before their telemetry can be allowed to reach an IoT Hub.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

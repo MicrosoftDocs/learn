@@ -13,6 +13,8 @@ summary: Create two deployment workflows using GitHub Actions and Microsoft Azur
 abstract: |
   In this module, you will:
   - Discover options for triggering a continuous delivery GitHub Workflow
+  - Understand steps to remove workflow artifacts
+  - Identify important environment protections 
   - Control workflow execution with job conditionals
   - Deploying to Microsoft Azure with a GitHub deploy action
   - Store credentials with GitHub Secrets
@@ -39,6 +41,7 @@ products:
 units:
 - learn.github.github-actions-cd.1-introduction
 - learn.github.github-actions-cd.2-deploy-azure
+- learn.github.github-actions-cd.2b-manage-workflow-runs
 - learn.github.github-actions-cd.3-create-workflow-deploy-azure
 - learn.github.github-actions-cd.4-knowledge-check
 - learn.github.github-actions-cd.5-summary

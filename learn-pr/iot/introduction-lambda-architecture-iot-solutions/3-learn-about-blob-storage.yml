@@ -4,8 +4,8 @@ metadata:
   title: Learn about unstructured data storage
   description: Provides a brief overview of Blob storage, and when to use it.
   ms.date: 12/20/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about unstructured data storage

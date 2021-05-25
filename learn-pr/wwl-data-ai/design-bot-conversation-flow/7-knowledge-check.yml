@@ -4,45 +4,45 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/21/2020
+  ms.date: 05/24/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Choose one aspect that makes speech a less than desirable interaction for a bot."
+  - content: "You want to enable a conversational customer support solution through both email and web chat. What should you do?"
     choices:
-    - content: "The bot framework does not support speech."
+    - content: "Create a bot for web chat. Send an automated response to email, directing users to web chat."
       isCorrect: false
-      explanation: "Incorrect. Integration with Azure Cognitive Services provides support for speech in a bot application."
-    - content: "Speech support is only available in US English."
+      explanation: "Incorrect. You can create a single bot and connect it to multiple channels, including web chat and email."
+    - content: "Create a bot for email, and a second bot for web chat."
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Services speech services support many different languages."
-    - content: "Language use and pronunciation can present major issues for bot interactions and user satisfaction."
+      explanation: "Incorrect. You can create a single bot and connect it to multiple channels, including web chat and email."
+    - content: "Create a single bot and deliver it through both web chat and email channels."
       isCorrect: true
-      explanation: "Correct. Speaker pronunciation and speed can greatly impact the accuracy. A user interacting with the bot in language that is not their native language can create issues in recognition"
-  - content: "Select one option your bot could take if a user interrupts the conversation flow."
+      explanation: "Correct. You can create a single bot and connect it to multiple channels, including web chat and email."
+  - content: "You have created a bot using a Bot Framework SDK template.Which tool should you use to test it locally?"
     choices:
-    - content: "Flash the bot UI to get the user's attention and then ask them to complete the task at hand first."
+    - content: "Visual Studio Code"
       isCorrect: false
-      explanation: "Incorrect. This would be an intrusive behavior and is also not recommended for accessibility reasons for any person with a disability."
-    - content: "require the user to complete an in-progress task before handling the interruption."
+      explanation: "Incorrect. Use the Bot Framework Emulator to test a bot locally."
+    - content: "Bot Framework Emulator"
       isCorrect: true
-      explanation: "Correct. If you choose this option, you should also ensure the user can *undo* the actions in the current dialog if they need to."
-    - content: "Close the bot and inform the user to open the bot again."
+      explanation: "Correct. Use the Bot Framework Emulator to test a bot locally."
+    - content: "Bot Framework Composer"
       isCorrect: false
-      explanation: "Incorrect. While forcing the user to restart the entire conversation all over again is possible, asking them to close the bot and open it again is not a good user interaction design. You should offer an option to restart the conversation from within the bot."
-  - content: "What is one recommended \"card\" to use in helping to guide the user interaction with the bot?"
+      explanation: "Incorrect. Use the Bot Framework Emulator to test a bot locally."
+  - content: "You are implementing an activity handler for a *message received* event. How can your code access the text of the message that was received."
     choices:
-    - content: "The AdaptiveCard."
+    - content: "Implement a waterfall dialog."
       isCorrect: false
-      explanation: "Incorrect. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel, not necessarily aiding in guiding an interaction with the bot conversation flow."
-    - content: "The SuggestedAction card."
+      explanation: "Incorrect. A waterfall dialog is not required to access message text in an activity handler."
+    - content: "From the *turn context*."
       isCorrect: true
-      explanation: "Correct. The SuggestedAction card gives the user a discrete set of options from, which to choose, but is also context aware.  The actions presented are related to the next action the users needs to take and not generic in nature."
-    - content: "The ReceiptCard."
+      explanation: "Correct. The turn context contains relevant information for the current turn - including message text."
+    - content: "From the previous *member added* activity."
       isCorrect: false
-      explanation: "Incorrect. you can use the ReceiptCard to provide a transaction record for the user. It does not aid in navigation or conversation flow."
+      explanation: "Incorrect. In a given turn, you can access data in the turn context for the activity being handled."

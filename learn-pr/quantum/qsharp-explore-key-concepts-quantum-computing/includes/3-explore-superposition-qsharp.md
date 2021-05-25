@@ -134,7 +134,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 > You can also run Q# in Jupyter Notebook. Notebooks provide a better
 > visualization of the `DumpMachine` outputs. You can install the application and try it
 > out by following the Quantum Development Kit (QDK) documentation about [Q# Jupyter
-> notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter). 
+> notebooks](https://docs.microsoft.com/azure/quantum/install-jupyter-qdk?tabs=tabid-conda?azure-portal=true). 
 >
 > ![Screenshot of the DumpMachine function in a Jupyter notebook.](../media/3-jupyter.png)
 
@@ -255,7 +255,7 @@ instead of measuring one qubit three times.
 
     :::code language="qsharp" source="code/3-program-4.qs":::
 
-    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow?azure-portal=true).
+    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](https://docs.microsoft.com/azure/quantum/user-guide/libraries/standard/control-flow?azure-portal=true).
 
     Your output resembles this example:
 

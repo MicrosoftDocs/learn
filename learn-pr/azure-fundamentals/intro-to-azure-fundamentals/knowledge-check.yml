@@ -3,45 +3,46 @@ uid: learn.azure.intro-to-azure-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  description: "Knowledge check"
+  ms.date: 05/11/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-    - content: "Which of the following statements is *not* true about cloud computing?"
-      choices:
-        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
-          isCorrect: false
-          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
-        - content: "Cloud computing resources are usually limited to specific geographic regions."
-          isCorrect: true
-          explanation: "Most cloud computing resources can be distributed to global datacenters."
-        - content: "Cloud computing typically decreases your operating expenses."
-          isCorrect: false
-          explanation: "Cloud computing typically decreases your operating expenses."
-        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
-          isCorrect: false
-          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
-    - content: "True or false: You need to purchase an Azure account before you can use any Azure resources."
-      choices:
-        - content: "False"
-          isCorrect: true
-          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
-        - content: "True"
-          isCorrect: false
-          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
-    - content: "True or false: In an IaaS environment, the cloud tenant is responsible for routine hardware maintenance."
-      choices:
-        - content: "True"
-          isCorrect: false
-          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
-        - content: "False"
-          isCorrect: true
-          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+  - content: "True or false: You need to purchase an Azure account before you can use any Azure resources."
+    choices:
+    - content: "False"
+      isCorrect: true
+      explanation: "That's correct. You can use a free Azure account or a Microsoft Learn sandbox to create resources."
+    - content: "True"
+      isCorrect: false
+      explanation: "That's incorrect. You can use a free Azure account or a Microsoft Learn sandbox to create resources."
+  - content: "What is meant by cloud computing?"
+    choices:
+    - content: "Delivery of computing services over the internet."
+      isCorrect: true
+      explanation: "That's correct. Cloud computing is the delivery of computing services over the internet, which is otherwise known as the cloud"
+    - content: "Setting up your own datacenter."
+      isCorrect: false
+      explanation: "That's incorrect. Although you can treat cloud resources like you would resources in your own datacenter, cloud computing is generally a way to rent compute power and storage from someone else's datacenter."
+    - content: "Using the internet"
+      isCorrect: false
+      explanation: "That's incorrect. Cloud computing is the delivery of computing services over the internet."
+  - content: "What is not a reason to move to the cloud?"
+    choices:
+    - content: "Faster innovation"
+      isCorrect: false
+      explanation: "That's incorrect. The cloud helps you move faster and innovate in ways that were once nearly impossible."
+    - content: "A limited pool of services"
+      isCorrect: true
+      explanation: "That's correct. The cloud offers a nearly limitless pool of raw compute, storage, and networking components to help you deliver innovative and novel user experiences quickly."
+    - content: "Speech recognition and other cognitive services"
+      isCorrect: false
+      explanation: "That's incorrect. The cloud provides on-demand access to speech recognition and other cognitive services that help make your application stand out from the crowd."

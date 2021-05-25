@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.choose-between-dimension-types
+title: Choose between slowly changing dimension types
+metadata:
+  title: Choose between slowly changing dimension types
+  description: "Choose between slowly changing dimension types"
+  ms.date: 03/31/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-choose-between-dimension-types.md)]

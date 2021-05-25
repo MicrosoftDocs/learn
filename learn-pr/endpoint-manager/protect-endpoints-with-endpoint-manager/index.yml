@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-endpoint-manager
 title: Protect your endpoint environment with Microsoft Endpoint Manager
 summary: In this module, you'll learn about protecting devices, apps, and data. Additionally, you understand the endpoint environment and the supported platforms available with Microsoft Endpoint Manager. 
 abstract: | 
@@ -23,6 +23,7 @@ roles:
 - administrator
 products:
 - mem
+- m365
 units:
 - learn.protect-endpoints-with-endpoint-manager.1-introduction
 - learn.protect-endpoints-with-endpoint-manager.2-manage-protect-devices

@@ -21,7 +21,7 @@ prerequisites: |
   - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
   - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
   - Beginner-level knowledge of cloud computing, including scalability and availability.  
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-firewall.svg
 ratingEnabled: true
 levels:
 - beginner

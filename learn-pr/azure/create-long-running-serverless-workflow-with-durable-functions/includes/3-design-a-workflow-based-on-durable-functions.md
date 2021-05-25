@@ -17,7 +17,9 @@ The workflow steps are as follows:
 3. The project design proposal is rejected or approved.
 4. An escalation task is allocated if the approval task isn't completed within a pre-defined time limit. 
 
-![Visual representation of workflow showing the three functions in our orchestration - the request approval, the process approval and an escalate function. ](../media/approval.png)
+The following image is a visual representation of workflow showing the three functions in our orchestration: the request approval, the process approval and an escalate function.
+
+![Visual representation of workflow showing the three functions in our orchestration.](../media/approval.png)
 
 The following table shows how the workflow steps can be mapped to the function types we use in a Durable Functions workflow. 
 

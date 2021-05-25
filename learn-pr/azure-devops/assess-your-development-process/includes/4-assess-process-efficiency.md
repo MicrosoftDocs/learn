@@ -12,7 +12,7 @@ Let's take a look at her map.
 
 Mara gathers the team in the meeting room to present her VSM.
 
-![A whiteboard showing the value stream map](../media/4-vsm-whiteboard2.png)
+![A whiteboard showing the value stream map.](../media/4-vsm-whiteboard2.png)
 
 **Mara:** A VSM helps us measure where a process has value to the customer and where it's eating up time without producing any value. Our map begins on the upper left with the functional specification for the software. We'll follow just one feature to see how it moves through our current release cycle.
 
@@ -48,13 +48,13 @@ Now we can look at the key performance metrics and see how we measure up.
 
 The *activity ratio* is process time divided by total lead time:
 
-$${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}$$
+$${Activity\ ratio\ =\ }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 
 This is our **efficiency**. Multiply efficiency by 100 to get a percentage. The result is greater than 0% and typically less than 100%. A higher percentage indicates greater efficiency.
 
 Substitute our numbers and we get:
 
-$${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ = .23}$$
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{\ =\ .23}$$
 
 Multiply the result by 100 and you get **23%**.
 

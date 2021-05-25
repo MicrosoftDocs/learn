@@ -17,24 +17,19 @@
     > [!div class="mx-imgBorder"]
     > ![Screen image displaying guest user access restriction options.](../media/guest-user-access-restrictions.png)
 
-1. Under **Guest invite settings**, under **Guests can invite**, select **No**.
+1. Under **Guest invite settings**, mark **Only user assigned to specific admin roles can invite guest users**.
 
     > [!NOTE]
-    > Admins and users in the guest inviter role can invite: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to Yes.
-    > Members can invite: To allow non-admin members of your directory to invite guests, set this policy to Yes.
-    > Guests can invite: To allow guests to invite other guests, set this policy to Yes.
-    > Enable guest self-service sign up via user flows (Preview): Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
+    > Inviting guests to collaborate moves the least restrictive option, where anyone can invite guests, to the least restrictive where no one can invite guests.
+    >- Anyone in the organization can invite guests: Set to allow anyone to invite guest users, including users, admins, and even other guest users.
+    >- Member users and users assigned to specific admin roles: Set to allow only full members of the organization or members of admin groups to invite guests.
+    >- Only users assigned specific admin roles: Set to allow only those people included in specific admin roles to invite guests.
+    >- No one in organization can invite guests: Set to restrict all guest user invites by members.
+    >- Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
     > If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
 
     > [!div class="mx-imgBorder"]
     > ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted.](../media/guest-invite-settings.png)
-
-1. Under **Email one-time passcode for guests**, use the default setting.
-
-    > [!NOTE]
-    >- Automatically enable email one-time passcode for guests in March 2021. (Default) If the email one-time passcode feature is not already enabled for your tenant, it will be automatically turned on in March 2021. No further action is necessary if you want the feature enabled at that time. If you've already enabled or disabled the feature, this option will be unavailable.
-    >- Enable email one-time passcode for guests effective now. Turns on the email one-time passcode feature for your tenant.
-    >- Disable email one-time passcode for guests. Turns off the email one-time passcode feature for your tenant and prevents the feature from turning on in March 2021.
 
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 

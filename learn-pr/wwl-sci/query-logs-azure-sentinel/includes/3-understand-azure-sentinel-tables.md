@@ -9,6 +9,6 @@ The table below is the Azure Sentinel feature related tables.
 | :--- | :--- |
 | SecurityAlert| Contains Alerts Generated from Sentinel Analytical Rules.  Also, it could include Alerts created directly from a Sentinel Data Connector|
 | SecurityIncident| Alerts can generate Incidents.  Incidents are related to Alert(s).|
-| ThreatIntelligenceIndictor| Contains user-created or data connector ingested Indicators such as File Hashes, IP Addresses, Domains|
+| ThreatIntelligenceIndicator| Contains user-created or data connector ingested Indicators such as File Hashes, IP Addresses, Domains|
 | Watchlist| An Azure Sentinel watchlist contains imported data.|
 

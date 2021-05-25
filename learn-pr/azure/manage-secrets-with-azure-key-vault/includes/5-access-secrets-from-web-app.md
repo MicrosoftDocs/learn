@@ -75,10 +75,12 @@ To demonstrate good usage of Key Vault, we will modify our app to load secrets f
 First, the app startup: Open `Program.cs`, delete the contents and replace them with the following code:
 
 ```csharp
+using System;
 using Azure.Identity;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 namespace KeyVaultDemoApp
 {
@@ -86,7 +88,7 @@ namespace KeyVaultDemoApp
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -130,4 +130,4 @@ When you create or clone a project, the included dependencies are not downloaded
 
 Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space. 
 
-To remove a package from your project, you use the `remove` command like so: `dotnet remove <name of dependency>`. This command will remove the package from the .csproj file for your project.
+To remove a package from your project, you use the `remove` command like so: `dotnet remove package <name of dependency>`. This command will remove the package from the .csproj file for your project.

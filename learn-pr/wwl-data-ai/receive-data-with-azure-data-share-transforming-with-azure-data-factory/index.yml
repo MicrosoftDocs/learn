@@ -2,8 +2,8 @@
 uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 metadata:
   title: Receive data with Azure Data Share and transforming with Azure Data Factory
-  description: "Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines."
-  ms.date: 11/10/2020
+  description: "Receive data with Azure Data Share and transforming with Azure Data Factory"
+  ms.date: 04/09/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
