@@ -74,9 +74,9 @@ You can delete users after they're created.
 
 1. In the top menu bar, select **Delete user**. If you don't see that option, select **More**.
 
-1. When you're asked to confirm your deletion, select **OK**.
+1. When you're prompted to confirm your deletion, select **OK**.
 
-## Recover a deleted item
+## Recover a deleted user
 
 You can restore deleted users. View the list of the deleted users, and then restore one.
 
@@ -86,4 +86,4 @@ You can restore deleted users. View the list of the deleted users, and then rest
 
 1. To confirm, select **OK**. The **All users** pane reappears.
 
-1. Verify that Chris Green's account is recovered by selecting **All users** in the left menu pane.
+1. Verify that Chris Green's account is recovered by selecting **All users** in the left menu pane. You should see Chris Green restored as a user.

@@ -7,12 +7,12 @@ We'll use the `az storage account create` command to create a new storage accoun
 > [!div class="mx-tableFixed"]
 > | Option | Description |
 > |--------|-------------|
-> | `--name` | A **Storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
+> | `--name` | A **storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
 > | `--resource-group` | Use **<rgn>[sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
 > | `--location` | Select a location near you (see below). |
 > | `--sku` | This decides the storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
 
-Use this table to craft a command line in the Cloud Shell on the right to create the account.
+Use this table to craft a command line in Cloud Shell on the right to create the account.
 
 - Use a unique name. We recommend something like "photostore" with your initials and a random number. You will get an error if it's not unique.
 

@@ -10,6 +10,6 @@ In this module, you will:
 - Understand the connectors that are available
 - Use the Copy Activity
 - Manage a self-hosted integration runtime
-- Setup and Azure integration runtime
+- Set up the Azure integration runtime
 - Describe data ingestion security considerations
 
