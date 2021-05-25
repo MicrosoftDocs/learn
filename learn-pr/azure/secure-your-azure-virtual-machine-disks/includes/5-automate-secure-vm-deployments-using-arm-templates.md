@@ -37,7 +37,7 @@ New-AzResourceGroupDeployment `
     -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json
 ```
 
-or, if you prefer the Azure CLI, run the `deployment group create` command.
+or, if you prefer the Azure CLI, run the `az deployment group create` command.
 
 ```azurecli
 az deployment group create --resource-group <my-resource-group> --name <my-deployment-name> \ 
