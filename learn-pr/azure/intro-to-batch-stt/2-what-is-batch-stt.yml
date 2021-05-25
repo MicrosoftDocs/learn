@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-batch-stt.what-is-azure-ml
+uid: learn.azure.intro-to-batch-stt.what-is-batch-stt
 title: What is Batch Transcription
 metadata:
   title: What is Batch Transcription
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-azure-ml.md)]
+  [!include[](includes/2-what-is-batch-stt.md)]

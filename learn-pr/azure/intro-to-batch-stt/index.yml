@@ -29,9 +29,9 @@ products:
 - azure
 units:
 - learn.azure.intro-to-batch-stt.introduction
-- learn.azure.intro-to-batch-stt.what-is-azure-ml
-- learn.azure.intro-to-batch-stt.how-azure-ml-works
-- learn.azure.intro-to-batch-stt.when-to-use-azure-ml
+- learn.azure.intro-to-batch-stt.what-is-batch-stt
+- learn.azure.intro-to-batch-stt.how-batch-stt-works
+- learn.azure.intro-to-batch-stt.when-to-use-batch-stt
 - learn.azure.intro-to-batch-stt.knowledge-check
 - learn.azure.intro-to-batch-stt.summary
 badge:
