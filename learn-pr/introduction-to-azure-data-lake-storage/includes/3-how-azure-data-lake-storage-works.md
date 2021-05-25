@@ -1,4 +1,4 @@
-Here, we'll discuss how Azure Data Lake Storage works, including getting data into storage, accessing your data, and controlling who has access to the data. This knowledge will help you evaluate whether Azure Data Lake Storage is the right solution for your company's big data storage needs.
+Here, we'll discuss how Azure Data Lake Storage works. This includes getting data into storage, accessing your data, and controlling who has access to the data. This knowledge will help you evaluate whether Azure Data Lake Storage is the right solution for your company's big data storage needs.
 
 In this unit, you'll learn about
 
@@ -17,9 +17,9 @@ Before you can do anything useful with Azure Data Lake Storage, you need to move
 *Ad hoc* data refers primarily to smaller datasets that you ingest as needed. Most ad hoc data is used to prototype or test big data applications. How you ingest ad hoc data depends on the source of that data.
 
 > [!NOTE]
-> Ad hoc data can also refer to larger datasets such as web server logs and social sentiment data such as social media posts and comments that you can analyze to learn how users feel about your organization or brand.
+> Ad hoc<!-- Acrolinx doesn't like the use of latin ad hoc here. Can you pick another word? Honestly, I'm not sure what we mean by ad hoc. Also, if you change it here, be sure to change search as it's mentioned more than once, and change it in the graphic as well. --> data can also refer to larger datasets such as web server logs and social sentiment data such as social media posts and comments that you can analyze to learn how users feel about your organization or brand.
 
-For data that resides on a local computer, you can use any of the following tools to send data from your computer to Azure Data Lake Storage:
+For data housed on a local computer, you can use any of the following tools to transfer the data to Azure Data Lake Storage:
 
 - AzCopy
 - Azure CLI
@@ -40,7 +40,7 @@ For Azure Blob Storage data, you can use any of the following tools to copy blob
 
 ### Ingesting relational data
 
-If you have data stored in a relational database management system, you might want to transfer that data to Azure Data Lake Storage for analysis. To ingest relational data, you use the Azure Data Factory service. This service includes a Copy activity<!-- Is it an activity, or a command? Whatever it is, please check formatting of that type - i.e. should it be bold? Italics? --> that enables you to transfer data to Azure Data Lake Storage from any of the following Azure sources:
+If you have data stored in a relational database management system, you could transfer that data to Azure Data Lake Storage for analysis. To ingest relational data, you use the Azure Data Factory service. This service includes a Copy activity<!-- Is it an activity, or a command? Whatever it is, please check formatting of that type - i.e. should it be bold? Italics? --> that enables you to transfer data to Azure Data Lake Storage from any of the following Azure sources:
 
 - Azure Cosmos DB (MongoDB API)
 - Azure Cosmos DB (SQL API)
@@ -50,7 +50,7 @@ If you have data stored in a relational database management system, you might wa
 - Azure SQL Database
 - Azure SQL Managed Instance
 
-If your relational data is on-premises, Azure Data Factory can also work with most relational database systems as sources, including MongoDB, MySQL, and Microsoft SQL Server.
+If your relational data is on-premises, Azure Data Factory can also work with most relational database systems as sources. This includes MongoDB, MySQL, and Microsoft SQL Server.
 
 ### Ingesting streamed data
 
@@ -61,15 +61,15 @@ Does your organization generate real-time streamed data from devices, sensors, o
 
 ## Accessing stored data
 
-Assuming you have a storage account with the hierarchical namespace enabled, how do you access the data that's ingested into Azure Data Lake Storage? The following sections describe the most common access methods.
+Assuming you have a storage account with the hierarchical namespace enabled, how do you access the data that's ingested into Azure Data Lake Storage? The following sections describe the most common access methods.<!-- Could we break this sentence into two for Acrolinx? -->
 
 ### Azure Storage Explorer
 
-The easiest way to access your data is to use Azure Storage Explorer. *Storage Explorer* is a standalone application<!-- "app" instead of application? If so, please s/r. --> that offers a graphical front end to your Azure Data Lake Storage data. Storage Explorer enables you to:
+The easiest way to access your data is to use Azure Storage Explorer. *Storage Explorer* is a standalone application<!-- "app" instead of application? If so, please s/r. --> with a graphical user interface (GUI) for accessing your Azure Data Lake Storage data. Storage Explorer enables you to:
 
 - Upload and download Azure Data Lake Storage entities, such as blobs and files.
 - Create and manage Azure Data Lake Storage directories.
-- Perform many other data management tasks from your Windows, macOS, or Linux computer.
+- Complete many other data management tasks from your Windows, macOS, or Linux computer.
 
 ### PowerShell
 
@@ -102,11 +102,11 @@ As described in the following two sections, you use RBAC for *coarse-grained acc
 
 ### RBAC
 
-RBAC in Azure uses role assignments to apply a collection of permissions to a security principal<!-- Do we need to define this? -->. When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform, such as read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a role assignment might give a security principal read or write access to all the data in a storage account or to all the data in a container.
+RBAC in Azure uses role assignments to apply a collection of permissions to a security principal<!-- Do we need to define what a security principal is? -->. When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform. These include read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a security principal might have a role assignment for read or write access to all data in a storage account, or in a container.
 
 ### ACL
 
-You can associate a security principal with an access level for files and directories. These associations are captured in an ACL. Each file and directory in your storage account has an ACL. When a security principal attempts an operation on a file or directory, an ACL check determines whether that security principal has the correct permission level to perform the operation.
+You can associate a security principal with an access level for files and directories. These associations are captured in an ACL. Each file and directory in your storage account has an ACL. When a security principal attempts an operation on a file or directory, an ACL check determines whether that security principal has the correct permission level to do the operation.
 
 ### How Azure Data Lake Storage evaluates permissions
 
@@ -120,4 +120,4 @@ When an operation occurs that requires security principal&ndash;based authorizat
     - If no, continue with Step 3.
 1. Deny the security principal access to the resource.
 
-:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="Flowchart depicting how Azure Data Lake Storage evaluates permissions, as defined in the previous steps.":::
+:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="AA flowchart depicts how Azure Data Lake Storage evaluates permissions, as defined in the previous steps.":::

@@ -17,7 +17,7 @@ When evaluating whether a data lake is the correct solution for your company, yo
 
 ## Azure Data Lake Storage definition
 
-*Azure Data Lake Storage* is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. You can use Azure Data Lake Storage to capture data of any type and ingestion speed in a single location for easy access and analysis using a variety of frameworks.
+*Azure Data Lake Storage* is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. You use it to capture data of any type and ingestion speed in a single location for easy access and analysis using various frameworks.<!-- Acrolinx doesn't like the length of this sentence, but I'm not sure how we break it into two. -->
 
 > [!NOTE]
 > The current implementation of Azure's data lake storage service is Azure Data Lake Storage Gen2. You might notice references to the previous implementation, Azure Data Lake Storage Gen1, which is scheduled to be retired on February 29, 2024.
@@ -35,7 +35,7 @@ To better understand Azure Data Lake Storage, you can examine its following char
 
 ### Data storage
 
-Azure Data Lake Storage can store any type of data by using the data's native format. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Azure Data Lake Storage doesn't need to perform any special handling of data based on the type of data it stores. With support for any data format and massive data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
+Azure Data Lake Storage can store any type of data by using the data's native format. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Azure Data Lake Storage doesn't need to do any special handling of data based on the type of data it stores. With support for any data format and massive data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
 
 ### Data access
 
@@ -54,7 +54,7 @@ Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on Azu
 
 The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
 
-Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, it's important to use all the available throughput, which is the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
+Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by doing<!-- Not sure I love this word as much as performing.  I changed it for Acrolinx. --> as many reads and writes in parallel as possible.
 
 ### Data security
 
@@ -73,11 +73,11 @@ You can configure security settings in several ways, including by using the foll
 
 ### Data redundancy
 
-Azure Data Lake Storage Utilizes Azure Blob replication models. These models provide data redundancy in a single datacenter with locally redundant storage (LRS). They also provide a secondary region by using geo-redundant storage (GRS)<!-- I broke these out into multiple sentences for Acrolinx. Please verify. -->, which helps ensure that your data is always available and protected if there's an outage.
+Azure Data Lake Storage utilizes Azure Blob replication models. These models provide data redundancy in a single datacenter with locally redundant storage (LRS). They also provide a secondary region by using geo-redundant storage (GRS)<!-- I broke these out into multiple sentences for Acrolinx. Please verify. -->, which helps ensure that your data is always available and protected if there's an outage.
 
 ### Data scalability
 
-Azure Data Lake Storage offers massive storage and accepts a variety of data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes (KBs) to a few petabytes (PBs). All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads, and then just as easily scale back down when demand drops.
+Azure Data Lake Storage offers massive storage and accepts numerous data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes (KBs) to a few petabytes (PBs). All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads. It can also just as easily scale back down when demand drops.
 
 ### Data analysis
 
@@ -95,7 +95,7 @@ In Azure, Data Lake Storage integrates with the following frameworks for analysi
 
 ## How to prevent data silos
 
-Data silos occur when different data sources are stored in separate locations, each of which can only be accessed by a specific application or framework. For example, a business analyst or data scientist who wants to analyze both sales data and web server logs must perform the following general steps:
+Data silos occur when different data sources are stored in separate locations, each of which can only be accessed by a specific application or framework. For example, a business analyst or data scientist who wants to analyze both sales data and web server logs must complete the following general steps:
 
 1. Access one set of data.
 1. Query the data.

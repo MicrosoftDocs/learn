@@ -12,7 +12,7 @@ We applied these criteria in the context of our fictional organization that curr
 - Enhanced support for extracting business insights.
 - Superior tools for ingesting and analyzing real-time data.
 
-However, you also learned that organizations would probably not benefit from Azure Data Lake Storage if they have:
+We also learned that organizations typically wouldn't benefit from Azure Data Lake Storage if they have:
 
 - Relatively small and slow data needs.
 - A single type of data.
