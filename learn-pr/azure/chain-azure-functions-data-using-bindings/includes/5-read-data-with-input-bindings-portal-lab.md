@@ -240,7 +240,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
 1. Replace all code in the index.js code block with the code from the following snippet, and in the top menu bar, select **Save**. The **Logs** pane appears showing your connection.
 
-     ```java
+    ```json
  	module.exports = function (context, req) {
     
     	var bookmark = context.bindings.bookmark
