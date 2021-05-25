@@ -6,7 +6,7 @@ The default deployment mode is incremental. In this mode, Resource Manager leave
 
 ## Complete mode
 
-You have to explicitly ask for your deployment to run in complete mode. When you use this mode, resources not specified in the template are *deleted*. Complete mode won't delete all resources in your resource group. [Some resource types are exempt.](/azure/azure-resource-manager/templates/complete-mode-deletion)
+You have to explicitly ask for your deployment to run in complete mode. When you use this mode, resources not specified in the template are *deleted*. Complete mode won't delete all resources in your resource group. [Some resource types are exempt](/azure/azure-resource-manager/templates/complete-mode-deletion).
 
 > [!CAUTION]
 > When you run the command in complete mode, whatever resources you have will be removed if they're not defined in the template file.
