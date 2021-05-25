@@ -12,3 +12,28 @@ metadata:
 durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/6-exercise-install-vision-edge-shell.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "In the context of Vision on Edge solution architecture, you use Custom Vision API:"
+    choices:
+    - content: "To detect objects with tags given by the API"
+      isCorrect: false
+      explanation: "Custom Vision API won’t provide you tags. You can tag your images"
+    - content: "To train a model for your images based on the choice of your machine learning model"
+      isCorrect: false
+      explanation: "Custom Vision doesn't allow you to use your machine learning model to detect objects"
+    - content: "To train a model of your images based on a pre-built model that Microsoft has"
+      isCorrect: true
+      explanation: "Custom Vision service uses machine learning algorithms provided by Microsoft to analyze images"
+  - content: "When you use a [setup script](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer) to deploy the required resources in your subscription, which of the following is responsible for installing modules on edge devices?"
+    choices:
+    - content: "Deployment manifest"
+      isCorrect: true
+      explanation: "Deployment manifest is a JSON document that tells your device which modules to install and how to configure them to work together"
+    - content: "Azure Resource Manager templates"
+      isCorrect: false
+      explanation: "Azure Resource Manager templates are a JSON document that defines the infrastructure and configuration for your project"
+    - content: "Azure Container Registry"
+      isCorrect: false
+      explanation: "It stores and manages your private Docker container images and related artifacts"
