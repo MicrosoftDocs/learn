@@ -29,7 +29,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, note the initial build configuration.
 
-    ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
+    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Azure Pipelines showing the initial build configuration":::
 
     This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
 
@@ -41,7 +41,7 @@ Under **Jobs**, select **Job**. Next, trace the build process through each of th
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
-![Azure Pipelines showing output from the initial build configuration.](../media/6-initial-build.png)
+:::image type="content" source="../media/6-initial-build.png" alt-text="Azure Pipelines showing output from the initial build configuration.":::
 
 This configuration is a great start because now you have a place to add build tasks. However, it needs to be updated to meet the needs of the Tailspin team, such as to minify JavaScript and CSS files.
 

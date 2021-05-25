@@ -6,11 +6,11 @@ The Tailspin web team is being pulled in many directions. Andy, the lead dev, is
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Azure Boards showing a backlog of issues.":::
 
 She also remembers that they picked three of the issues to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
 
-![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
+:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Azure Boards showing the initial three tasks.":::
 
 Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Microsoft Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
 
