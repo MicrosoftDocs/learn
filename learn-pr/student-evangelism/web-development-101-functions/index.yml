@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.web-development-101-functions
+uid: learn.student-evangelism.web-development-101.functions
 metadata:
   title: Creating modular code with functions in JavaScript
   description: Functions are the building blocks for any application you will
@@ -36,14 +36,14 @@ prerequisites: |
   - A browser
   - Visual Studio Code and Live Server extension
 units:
-  - learn.web-development-101-functions.1-introduction
-  - learn.web-development-101-functions.2-overview-functions
-  - learn.web-development-101-functions.3-parameters
-  - learn.web-development-101-functions.4-return-values
-  - learn.web-development-101-functions.5-exercise-create-function
-  - learn.web-development-101-functions.6-anonymous-functions
-  - learn.web-development-101-functions.7-exercise-anonymous-functions
-  - learn.web-development-101-functions.8-knowledge-check
-  - learn.web-development-101-functions.9-summary
+  - learn.student-evangelism.web-development-101.functions.introduction
+  - learn.student-evangelism.web-development-101.functions.overview-functions
+  - learn.student-evangelism.web-development-101.functions.parameters
+  - learn.student-evangelism.web-development-101.functions.return-values
+  - learn.student-evangelism.web-development-101.functions.exercise-create-function
+  - learn.student-evangelism.web-development-101.functions.anonymous-functions
+  - learn.student-evangelism.web-development-101.functions.exercise-anonymous-functions
+  - learn.student-evangelism.web-development-101.functions.knowledge-check
+  - learn.student-evangelism.web-development-101.functions.summary
 badge:
-  uid: learn.web-development-101-functions.badge
+  uid: learn.student-evangelism.web-development-101.functions.badge
