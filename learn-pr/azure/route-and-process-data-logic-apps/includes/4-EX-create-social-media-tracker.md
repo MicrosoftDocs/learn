@@ -1,4 +1,4 @@
-In this exercise, we'll create our social-media monitor app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we'll create our social media logic app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
 ![An illustration showing the triggers and actions in the social-media monitor logic app. The first step is a Twitter trigger labeled **When a new tweet is posted**. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media/exercise-add-trigger.png)
 
@@ -52,7 +52,7 @@ Now that we have our logic app created, we need to add a trigger. We're going to
 
 Now, let's create the trigger and provide values for all required parameters.
 
-1. In the connectors search box, enter **Twitter**.
+1. In the connectors search box, enter *Twitter*.
 
 1. Select the **When a new tweet is posted** trigger.
 
@@ -60,9 +60,9 @@ Now, let's create the trigger and provide values for all required parameters.
 
 1. In the **Search text**, enter a name of a product. Use the name of a product that is new and popular so that you get results quickly.
 
-1. Enter **1** for **Interval**.
+1. Enter *1* for **Interval**.
 
-1. Select **Minute** for **Frequency**.
+1. Select *Minute* for **Frequency**.
 
 1. In the top menu bar, select **Save**. Your app will be live as soon as you save it.
 
