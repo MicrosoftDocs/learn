@@ -4,7 +4,7 @@ Adatum's management team is seeking opportunities to accommodate the additional 
 
 Azure IoT Central is a fully managed cloud service that simplifies the implementation of a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management.
 
-:::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture that includes Azure IoT Central".:::
+:::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture that includes Azure IoT Central.":::
 
 Azure IoT Central:
 
