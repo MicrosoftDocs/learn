@@ -100,6 +100,8 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
 6. To verify if the image is pushed, you will go to the Container registry resource and navigate the repository.
 
+   [![The illustration shows the containerized model in container registry.](../media/container-registry-repositories.png)](../media/container-registry-repositories.png#lightbox)
+
 ## Deploy YOLO model as an Azure IoT Edge module
 
 1. In the Azure portal, go to your IoT Hub resource.
@@ -120,21 +122,33 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    - **Password:** Replace with the password of your Azure container registry
 
+   [![The illustration shows how to edit container credentials.](../media/set-modules.png)](../media/set-modules.png#lightbox)
+
 6. Select **Add**.
 
 7. In the IoT Edge Modules section, select Add, and select IoT Edge Module from the drop-down menu.
 
+   [![The illustration shows how to add edge module.](../media/add-edge-module.png)](../media/add-edge-module.png#lightbox)
+
 8. Give a name to your IoT Edge module and enter the image URL, which is the path as below.
 
+   ```
+   <registry-name>.azurecr.io/<image-name:tag>
+   ```
+
 9. Select **Add.**
+
+   [![The illustration shows how to add image path.](../media/add-iot-edge-module.png)](../media/add-iot-edge-module.png#lightbox)
 
 ### Review + Create
 
 After setting your module, select **Review + create**. The review section shows you the JSON deployment manifest that was created based on the modules you set. Check whether the module you set in the previous section is defined in the manifest.
 
+   [![The illustration shows the review of deployment.](../media/review-deployment.png)](../media/review-deployment.png#lightbox)
+
 ### Check the deployed module in your edge device.
 
-After the deployment, you can check the module in your edge device through the **docker ps** command.
+After the deployment, you can check the module in your edge device. Connect to your virtual machine and run the **docker ps** command.
 
    ```
    docker ps
