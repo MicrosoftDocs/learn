@@ -22,15 +22,15 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 :::image type="content" source="../media/2-whiteboard-centralized-vs-distributed-drawing.png" alt-text="A hand-drawn illustration of centralized versus distributed source control.":::
 
-**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the master repository when we're finished with them.
+**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the main repository when we're finished with them.
 
 **Andy:** Yes, and that is working for us. Well, except when I was blocked that time that a breaking change got merged into the central repo.
 
 **Mara:** Right! You were blocked :::image type="icon" source="../../shared/media/callout-02.png":::. We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated. And when we had that breaking change :::image type="icon" source="../../shared/media/callout-03.png"::: no one could get any work done until we got that resolved. That problem is always lurking, because we're all using the same copy of the code.
 
-On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository :::image type="icon" source="../../shared/media/callout-04.png"::: that's the stable version of the code base, but each developer has their own copy :::image type="icon" source="../../shared/media/callout-05.png"::: of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository.
+On the right is a drawing of _distributed version control_. We still have a central repository :::image type="icon" source="../../shared/media/callout-04.png"::: that's the stable version of the code base, but each developer has their own copy :::image type="icon" source="../../shared/media/callout-05.png"::: of it to work from. This frees us up to experiment and try a variety of approaches without affecting the central repository.
 
-Distributed version control also ensures that only working code :::image type="icon" source="../../shared/media/callout-06.png"::: gets merged into the master repository. We could even set it up to where code can't be merged until it's been reviewed.
+Distributed version control also ensures that only working code :::image type="icon" source="../../shared/media/callout-06.png"::: gets merged into the central repository. We could even set it up to where code can't be merged until it's been reviewed.
 
 What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
 
@@ -64,16 +64,16 @@ To give you a better option, Git has a feature called _branching_, where you can
 
 ## How do my local changes get up to the main codebase?
 
-**Mara:** In Git, the main branch, or _trunk_, is typically called `master`.
+**Mara:** In Git, the main branch, or _trunk_, is typically called `main`.
 
-After you feel that your code is ready to be merged into the `master` branch in the main repository that's shared by all developers, you create what's called a _pull request_. When you create a pull request, you're telling the other developers that you have code ready to review and you want it merged into the `master` branch. When your pull request is approved, it becomes part of the master codebase.
+After you feel that your code is ready to be merged into the `main` branch in the main repository that's shared by all developers, you create what's called a _pull request_. When you create a pull request, you're telling the other developers that you have code ready to review and you want it merged into the `main` branch. When your pull request is approved, it becomes part of the central codebase.
 
 ## What does a branching workflow look like?
 
  :::row:::
     :::column span="8":::
 **Step 1**:
-When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you're starting with the latest stable codebase. To do this, you can synchronize your local copy of the `master` branch with the server's copy. This pulls down all other developers' changes that have been pushed up to the `master` branch on the server since your last synchronization.
+When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you're starting with the latest stable codebase. To do this, you can synchronize your local copy of the `main` branch with the server's copy. This pulls down all other developers' changes that have been pushed up to the `main` branch on the server since your last synchronization.
 
     :::column-end:::
     :::column:::
@@ -112,7 +112,7 @@ The next step is to _push_, or upload, your local branch up to the remote reposi
 :::row:::
     :::column span="8":::
 **Step 5**:
-This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `master` branch back into your local  `master` branch. Changes have been taking place there that your local `master` branch doesn't have yet. After you've synchronized the remote master branch with yours, merge your local `master` branch into your working branch and test your build again.
+This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `main` branch back into your local `main` branch. Changes have been taking place there that your local `main` branch doesn't have yet. After you've synchronized the remote `main` branch with yours, merge your local `main` branch into your working branch and test your build again.
 
 This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
     :::column-end:::
@@ -132,7 +132,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 :::row:::
     :::column span="8":::
 **Step 7**:
-You're finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `master` branch. (It's still up to a human to merge the changes.)
+You're finally ready to propose your changes to the remote `main` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `main` branch. (It's still up to a human to merge the changes.)
     :::column-end:::
     :::column:::
         :::image type="content" source="../media/2-github-paths-7.png" alt-text="A diagram showing a pull request from a branch into main.":::

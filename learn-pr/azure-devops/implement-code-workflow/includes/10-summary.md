@@ -1,6 +1,6 @@
 In this module, you learned how to collaborate with others by using Git and GitHub.
 
-Andy and Mara are well on their way to implementing a system that will allow them to better collaborate as a team and help ensure that only quality code is merged to the `master` branch.
+Andy and Mara are well on their way to implementing a system that will allow them to better collaborate as a team and help ensure that only quality code is merged to the `main` branch.
 
 A build badge and dashboard widgets help the team and others understand the state of the latest build and track the build history over time.
 
@@ -62,9 +62,9 @@ Another important aspect of Git is having a good branch strategy. A branch strat
 
 #### Feature Branch Workflow
 
-The core idea behind the Feature Branch Workflow is that all feature development takes place in a dedicated branch instead of the master branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the master branch will never contain broken code, which is a huge advantage for continuous integration environments.
+The core idea behind the Feature Branch Workflow is that all feature development takes place in a dedicated branch instead of the main branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the main branch will never contain broken code, which is a huge advantage for continuous integration environments.
 
-The Feature Branch Workflow assumes a central repository, and master represents the official project history. Instead of committing directly on their local master branch, developers create a new branch every time they start work on a new feature. Feature branches should have descriptive names, like new-banner-images or bug-91. The idea is to give a clear, highly-focused purpose to each branch. Git makes no technical distinction between the master branch and feature branches, so developers can edit, stage, and commit changes to a feature branch.
+The Feature Branch Workflow assumes a central repository, and main represents the official project history. Instead of committing directly on their local main branch, developers create a new branch every time they start work on a new feature. Feature branches should have descriptive names, like new-banner-images or bug-91. The idea is to give a clear, highly-focused purpose to each branch. Git makes no technical distinction between the main branch and feature branches, so developers can edit, stage, and commit changes to a feature branch.
 
 #### Gitflow Workflow
 
@@ -72,7 +72,7 @@ The Gitflow Workflow defines a strict branching model designed around the projec
 
 Gitflow is ideally suited for projects that have a scheduled release cycle. This workflow doesn't add any new concepts or commands beyond what's required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
 
-Gitflow uses a central server model called origin. Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. Feature branches may branch off from develop branch and must merge back into develop.  Release branches may branch off from the develop branch and must merge back into the develop and master branches. For hotfixes, you use the hotfix branch, which is cut from the master branch, and then merged back into the master and develop branches.
+Gitflow uses a central server model called origin. Instead of a single main branch, this workflow uses two branches to record the history of the project. The main branch stores the official release history, and the develop branch serves as an integration branch for features. Feature branches may branch off from develop branch and must merge back into develop.  Release branches may branch off from the develop branch and must merge back into the develop and main branches. For hotfixes, you use the hotfix branch, which is cut from the main branch, and then merged back into the main and develop branches.
 
 #### Forking Branch Workflow
 
@@ -101,6 +101,6 @@ Pull requests are commonly used by teams and organizations that have a shared re
 
 Pull requests combine the review and merge of your code into a single collaborative process. Once you're done fixing a bug or new feature in a branch, create a new pull request. Add the members of the team to the pull request so they can review and vote on your changes. Use pull requests to review works in progress and get early feedback on changes. There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 
-There are a few critical branches in your repo, such as the master branch, that you may want to protect with some pull request policies. Pull requests should be mandatory if a developer wants to make changes on a critical branch. Developers pushing changes directly to these branches will have their pushes rejected.
+There are a few critical branches in your repo, such as the main branch, that you may want to protect with some pull request policies. Pull requests should be mandatory if a developer wants to make changes on a critical branch. Developers pushing changes directly to these branches will have their pushes rejected.
 
 Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches. A clean build of the merged code and approval from multiple reviewers are some extra requirements you can set to protect your key branches.

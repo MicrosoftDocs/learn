@@ -1,6 +1,6 @@
-In this unit, you set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `master` branch. As a bonus, you'll also fix the typing error on the _Space Game_ website's home page.
+In this unit, you set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the _Space Game_ website's home page.
 
-Currently, the team allows anyone who makes a pull request to merge the code into the `master` branch. Because no review is required, it's possible for incorrect or unstable code to creep in.
+Currently, the team allows anyone who makes a pull request to merge the code into the `main` branch. Because no review is required, it's possible for incorrect or unstable code to creep in.
 
 Andy decides that he wants to add a check to the pull request in the form of another pair of eyes. He wants to set up GitHub to require someone other than the pull request author to review the code before it's merged. Let's see how to do this.
 
@@ -12,22 +12,22 @@ Mara looks up.
 
 **Mara:** What can I help you with?
 
-**Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
+**Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `main` branch. We need another pair of eyes on the code before the pull request is approved.
 
 **Mara:** I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
 
 ## Set up approvals
 
-In this section, you set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `master` branch. You set up the rule and then verify that it works by pushing up a fix to the typing error that Mara made earlier.
+In this section, you set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `main` branch. You set up the rule and then verify that it works by pushing up a fix to the typing error that Mara made earlier.
 
 ### Add the rule
 
 1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab near the top of the page.
 1. On the menu, select **Branches**.
-1. Make sure that **master** is selected as your default branch.
+1. Make sure that **main** is selected as your default branch.
 1. Select **Add rule**.
-1. Under **Branch name pattern**, enter **master**.
+1. Under **Branch name pattern**, enter **main**.
 1. Select the **Require pull request reviews before merging** check box.
 1. Keep the **Required approving reviews** value at **1**.
 1. Select **Create**.
@@ -43,16 +43,16 @@ In this section, you submit a fix to the typing error on the home page. Recall t
  :::image type="content" source="../media/7-build-history-widget.png" alt-text="A screenshot of the Space Game website showing a typing error.":::
 
 1. In Visual Studio Code, go to the terminal.
-1. To check out the `master` branch, run `git checkout`:
+1. To check out the `main` branch, run `git checkout`:
 
     ```bash
-    git checkout master
+    git checkout main
     ```
 
-1. To pull down the latest changes to the `master` branch from GitHub, run `git pull`:
+1. To pull down the latest changes to the `main` branch from GitHub, run `git pull`:
 
     ```bash
-    git pull origin master
+    git pull origin main
     ```
 
     You can see that two files are updated:

@@ -5,29 +5,29 @@ Mara has been given the task of changing some text on the home page of the websi
 Let's briefly review the steps to follow to complete the task:
 
 > [!div class="checklist"]
-> * Synchronize your local repository with the latest `master` branch on GitHub.
+> * Synchronize your local repository with the latest `main` branch on GitHub.
 > * Create a branch to hold your changes.
 > * Make the code changes you need, and verify them locally.
 > * Push your branch to GitHub.
-> * Merge any recent changes from the `master` branch on GitHub into your local working branch, and verify that your changes still work.
+> * Merge any recent changes from the `main` branch on GitHub into your local working branch, and verify that your changes still work.
 > * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request.
 
-## Fetch the latest master branch
+## Fetch the latest main branch
 
-In the previous unit, you created a pull request and merged your `code-workflow` branch into the `master` branch on GitHub. Now you need to pull the changes to `master` back to your local branch.
+In the previous unit, you created a pull request and merged your `code-workflow` branch into the `main` branch on GitHub. Now you need to pull the changes to `main` back to your local branch.
 
 The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way, you know you're working with the latest codebase.
 
-1. In your terminal, run `git checkout master` to switch to the `master` branch.
+1. In your terminal, run `git checkout main` to switch to the `main` branch.
 
     ```bash
-    git checkout master
+    git checkout main
     ```
 
 1. To pull down the latest changes, run this `git pull` command:
 
     ```bash
-    git pull origin master
+    git pull origin main
     ```
 
     You can view the list of files that were changed. As an optional step, you can open the *azure-pipelines.yml* file to verify that it contains your complete build configuration.
@@ -87,7 +87,7 @@ In your terminal, run the following `git checkout` command:
 git checkout -b feature/home-page-text
 ```
 
-Like before, the `feature/home-page-text` is based off of `master`.
+Like before, the `feature/home-page-text` is based off of `main`.
 
 ## Make changes and test it locally
 
@@ -168,33 +168,33 @@ Just as you did previously, Azure Pipelines automatically queues the build when 
 
 As an optional step, trace the build as it moves through the pipeline, and verify that the build succeeds.
 
-## Synchronize any changes to the master branch
+## Synchronize any changes to the main branch
 
-While you were busy working on your feature, there might have been changes made to the remote `master` branch. Before you create a pull request, it's common practice to get the latest from the remote `master` branch.
+While you were busy working on your feature, there might have been changes made to the remote `main` branch. Before you create a pull request, it's common practice to get the latest from the remote `main` branch.
 
-To do this, you first check out, or switch to, the `master` branch. You then merge the remote `master` branch with your local `master` branch.
+To do this, you first check out, or switch to, the `main` branch. You then merge the remote `main` branch with your local `main` branch.
 
-Next, you check out your feature branch. Then you merge your feature branch with the `master` branch.
+Next, you check out your feature branch. Then you merge your feature branch with the `main` branch.
 
 Let's try the process now.
 
-1. In your terminal, run this `git checkout` command to check out the `master` branch:
+1. In your terminal, run this `git checkout` command to check out the `main` branch:
 
     ```bash
-    git checkout master
+    git checkout main
     ```
 
-1. To download the latest changes to the remote `master` branch and merge those changes into your local `master` branch, run this `git pull` command:
+1. To download the latest changes to the remote `main` branch and merge those changes into your local `main` branch, run this `git pull` command:
 
     ```bash
-    git pull origin master
+    git pull origin main
     ```
 
-    Because no one actually made any changes to your `master` branch, the following command tells you that everything is already up-to-date.
+    Because no one actually made any changes to your `main` branch, the following command tells you that everything is already up-to-date.
 
     ```output
     From https://github.com/username/mslearn-tailspin-spacegame-web
-     * branch            master     -> FETCH_HEAD
+     * branch            main     -> FETCH_HEAD
     Already up to date.
     ```
 
@@ -204,13 +204,13 @@ Let's try the process now.
     git checkout feature/home-page-text
     ```
 
-1. Merge your feature branch with `master`.
+1. Merge your feature branch with `main`.
 
     ```bash
-    git merge master
+    git merge main
     ```
 
-    Again, because no one actually made any changes to your `master` branch, you see that everything is still up to date.
+    Again, because no one actually made any changes to your `main` branch, you see that everything is still up to date.
 
     ```output
     Already up to date.
@@ -249,7 +249,7 @@ In this section, you submit a pull request just as you did previously.
     > [!IMPORTANT]
     > Again, this step is important because you can't merge your changes into the Microsoft repository.
     >
-    > When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
+    > When you work directly with your own repository, and not a fork, your `main` branch is selected by default.
 
 1. Enter a title and a description for your pull request.
 
