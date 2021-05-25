@@ -84,8 +84,6 @@ Let's look at the steps you need to take to get a detailed view of the health of
 
 1. Notice both the **User Pods** and **System Pods** statuses to get a view of your nodes' health in the cluster.
 
-    ![Screenshot showing nodes and pods in a cluster.](../media/09-podmetrics.png#lightbox)
-
 ## Configure Kubernetes RBAC to enable live log data
 
 In addition to the high-level overview of your cluster's health, you can also view live log data of specific containers.

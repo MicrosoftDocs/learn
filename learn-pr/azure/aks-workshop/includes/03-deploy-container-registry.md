@@ -206,7 +206,7 @@ The steps you follow are the same as you previously followed. Clone the reposito
 
 ## Verify the images
 
-1. Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
+Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
 
     ```azurecli
     az acr repository list \
@@ -214,7 +214,7 @@ The steps you follow are the same as you previously followed. Clone the reposito
         --output table
     ```
 
-    The output from this command looks similar to this example.
+The output from this command looks similar to this example.
 
     ```output
     Result
