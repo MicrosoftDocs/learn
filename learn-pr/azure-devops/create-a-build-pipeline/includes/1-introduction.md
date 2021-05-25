@@ -1,4 +1,4 @@
-In the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
+In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
 
 In this module, you help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
@@ -27,7 +27,7 @@ After completing this module, you'll be able to:
 
 The modules in this learning path and previous learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 

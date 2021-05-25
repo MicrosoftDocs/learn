@@ -12,7 +12,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 1. Put on your HoloLens 2 device
 2. Launch the app if you haven't already
 
-## Place Terrain
+## Place terrain
 
 1. When the app first opens, the map will be floating in front you in the direction faced when launching the app. 
 2. Grab the base of the map directly with your hands (near interaction) or by using the hand ray pointer (far interaction). The base of the map will turn a light blue when hovered. 

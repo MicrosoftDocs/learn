@@ -8,11 +8,11 @@ Form Recognizer Layout API can extract text, selection marks, and table structur
 
 ![Layout API tables example.](../media/tables-example.jpeg)
 
-## Prebuilt Models
+## Prebuilt models
 
 Form Recognizer Pre-built models are available for four applications: invoices, sales receipts, identifications, and business cards.
 
-### Prebuilt Invoice Model
+### Prebuilt Invoice model
 
 The Pre-built Invoice model extracts data from invoices in various formats and returns structured data. This model extracts key information such as invoice ID, customer and vendor details, shipping and billing information, price totals, and tax amounts.
 
@@ -20,7 +20,7 @@ The Invoice model can extract full line items and component parts – descriptio
 
 ![Prebuilt invoice example.](../media/overview-invoices.jpeg)
 
-### Prebuilt Receipt Model
+### Prebuilt Receipt model
 
 This model is used to analyze English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, Great Britain, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different kinds of receipts, in both scanned copies or phone images.
 

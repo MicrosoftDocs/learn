@@ -78,12 +78,91 @@ Functions and Logic Apps can both create complex orchestrations. An orchestratio
 
 You can mix and match services when you build an orchestration, calling functions from logic apps and calling logic apps from functions. Here are some common differences between the two.
 
-| | Functions | Logic Apps |
-| - | - | - |
-| State | Normally stateless, but Durable Functions provide state. | Stateful. |
-| Development | Code-first (imperative). | Designer-first (declarative). |
-| Connectivity | About a dozen built-in binding types. Write code for custom bindings. | Large collection of connectors. Enterprise Integration Pack for B2B scenarios. Build custom connectors. |
-| Actions | Each activity is an Azure function. Write code for activity functions. | Large collection of ready-made actions. |
-| Monitoring | Azure Application Insights. | Azure portal, Log Analytics. |
-| Management | REST API, Visual Studio. | Azure portal, REST API, PowerShell, Visual Studio. |
-| Execution context | Can run locally or in the cloud. | Runs only in the cloud. |
+:::row:::
+  :::column:::
+    
+  :::column-end:::
+  :::column:::
+    **Functions**
+  :::column-end:::
+  :::column:::
+    **Logic Apps**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    State
+  :::column-end:::
+  :::column:::
+    Normally stateless, but Durable Functions provide state.
+  :::column-end:::
+  :::column:::
+    Stateful.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Development
+  :::column-end:::
+  :::column:::
+    Code-first (imperative).
+  :::column-end:::
+  :::column:::
+    Designer-first (declarative).
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Connectivity
+  :::column-end:::
+  :::column:::
+    About a dozen built-in binding types. Write code for custom bindings.
+  :::column-end:::
+  :::column:::
+    Large collection of connectors. Enterprise Integration Pack for B2B scenarios. Build custom connectors.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Actions
+  :::column-end:::
+  :::column:::
+    Each activity is an Azure function. Write code for activity functions.
+  :::column-end:::
+  :::column:::
+    Large collection of ready-made actions.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Monitoring
+  :::column-end:::
+  :::column:::
+    Azure Application Insights.
+  :::column-end:::
+  :::column:::
+    Azure portal, Log Analytics.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Management
+  :::column-end:::
+  :::column:::
+    REST API, Visual Studio.
+  :::column-end:::
+  :::column:::
+    Azure portal, REST API, PowerShell, Visual Studio.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Execution context
+  :::column-end:::
+  :::column:::
+    Can run locally or in the cloud.
+  :::column-end:::
+  :::column:::
+    Runs only in the cloud.
+  :::column-end:::
+:::row-end:::
