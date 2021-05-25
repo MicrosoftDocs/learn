@@ -4,7 +4,7 @@ In addition to the large set of compliant services offered by Azure Government, 
 
 ## Resources
 
-- [Azure Government documentation](https://docs.microsoft.com/azure/azure-government/)
+- [Azure Government documentation](/azure/azure-government/)
 - [Azure Government blog](https://blogs.msdn.microsoft.com/azuregov)
 - [Overview of Microsoft Azure compliance](https://aka.ms/AzureCompliance)
 - [How to buy Azure Government](https://azure.microsoft.com/offers/azure-government/)
