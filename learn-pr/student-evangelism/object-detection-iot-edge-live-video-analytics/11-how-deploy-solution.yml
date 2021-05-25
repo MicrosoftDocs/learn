@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.object-detection-lva-edge-device.how-deploy-solution
-title: How to your solution
+title: How to deploy your solution
 metadata:
-  title: How to your solution
+  title: How to deploy your solution
   description: In this section, we help learner how to deploy the edge solution.
   ms.date: 05/04/2021
   author: leestott
