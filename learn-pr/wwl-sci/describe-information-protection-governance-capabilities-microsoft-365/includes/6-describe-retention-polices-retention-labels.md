@@ -5,8 +5,6 @@ Retention labels and policies help organizations to manage and govern informatio
 - **Ensure users work only with content that's current and relevant to them**.
 When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically kept in a secure location. The secure locations and the  content are not visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
-When content has retention settings assigned, it stays in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy is automatically kept in a secure location. The secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
-
 Retention settings work with the following different workloads:
 
 - [SharePoint and OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide)

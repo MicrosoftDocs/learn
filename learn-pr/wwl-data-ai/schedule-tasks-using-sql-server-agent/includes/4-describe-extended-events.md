@@ -9,7 +9,7 @@ Extended events are a lightweight and very extensive diagnostic system that is b
 - Observing Memory Pressure in your database
 - Long-running physical I/O operations
 
-The extended event framework also allows you to use filters to limit the amount of data you collect in order to reduce the overhead of data collection, and allows you to more easily identity your performance problem by targeting your focus onto specific areas.
+The extended event framework also allows you to use filters to limit the amount of data you collect in order to reduce the overhead of data collection, and allows you to more easily identify your performance problem by targeting your focus onto specific areas.
 
 ## What can I monitor with extended events?
 

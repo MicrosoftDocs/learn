@@ -5,7 +5,7 @@ CREATE EXTERNAL DATA SOURCE YellowTaxi
 WITH ( LOCATION = 'https://azureopendatastorage.blob.core.windows.net/nyctlc/yellow/') 
 ```
 
-If storage is protected, you must specify which credentials should be used like this: 
+If the storage account is protected, you must specify which credentials should be used like this: 
 
 ```sql
 CREATE EXTERNAL DATA SOURCE SqlOnDemandDemo WITH ( 

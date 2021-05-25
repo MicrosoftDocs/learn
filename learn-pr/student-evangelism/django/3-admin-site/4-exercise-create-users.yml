@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.admin-site.exercise-create-users
+title: Exercise - Create users
+metadata:
+  title: Exercise - Create users
+  description: Learn how to create the superuser to allow administration of the site. Then create individual users.
+  ms.date: 2/26/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-create-users.md)]

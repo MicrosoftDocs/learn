@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-dns.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements best describes split DNS?"
+    choices:
+    - content: "Split DNS enables an organization to implement a different DNS namespace internally and externally."
+      isCorrect: false
+      explanation: "That's incorrect. Split DNS is a scenario in which an organization has a matching internal and external DNS namespace."
+    - content: "Split DNS enables an organization to implement the same DNS namespace internally and externally."
+      isCorrect: true
+      explanation: "That's correct. Split DNS is a scenario in which an organization has a matching internal and external DNS namespace."
+    - content: "Split DNS enables an organization to implement their internal DNS namespace as a subdomain of their external DNS namespace."
+      isCorrect: false
+      explanation: "That's incorrect. Split DNS is a scenario in which an organization has a matching internal and external DNS namespace."
+  - content: "When implementing DNS policies, which of the following statements about zone scopes is true?"
+    choices:
+    - content: "A zone scope represents unique instances of a group of settings that control DNS server recursion."
+      isCorrect: false
+      explanation: "That's incorrect. This describes a recursion scope."
+    - content: "A zone scope represents the IPv4 or IPv6 subnet from which queries are sent to a DNS server."
+      isCorrect: false
+      explanation: "That's incorrect. This describes a client subnet."
+    - content: "A zone scope can contain its own set of DNS resource records."
+      isCorrect: true
+      explanation: "That's correct. DNS zones can have multiple zone scopes, and each zone scope can contain its own set of DNS resource records."
+  - content: "Which of the following DNS security features in Windows Server uses signed zones?"
+    choices:
+    - content: "DANE"
+      isCorrect: false
+      explanation: "That's incorrect. DANE provides information to DNS clients that state the CA from which clients should expect a certificate for your domain name."
+    - content: "DNS cache locking"
+      isCorrect: false
+      explanation: "That's incorrect. When you use cache locking, the DNS server prohibits cached records from being overwritten for the duration of the TTL value."
+    - content: "DNSSEC"
+      isCorrect: true
+      explanation: "That's correct. With DNSSEC, you digitally sign your DNS zones."

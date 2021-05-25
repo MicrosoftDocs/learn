@@ -20,7 +20,7 @@ This module focuses on the "Data acquisition and understanding" node of the data
 
 This module helps you create a model to predict the best date to view a meteor shower. To create the model, you need some kind of Python notebook development environment. 
 
-If you haven't set up a Python environment before, we recommend that you use the [Visual Studio Code data science setup documents](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true). You'll need:
+If you haven't set up a Python environment before, the easiest way to do this is to install the [Visual Studio Code Coding pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true). Alternatively, you could follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).  You'll need:
 - Visual Studio Code
 - Python
 - Miniconda

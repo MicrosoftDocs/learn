@@ -12,7 +12,7 @@ Each role is a set of properties defined in a JavaScript Object Notation (JSON) 
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
-You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. 
+You can get this information using the PowerShell `Get-AzRoleDefinition` cmdlet.
 
 ```powershell
 Get-AzRoleDefinition
@@ -142,7 +142,7 @@ Here are some examples.
 | Restrict to a specific resource. | `"/subscriptions/{sub-id}/resourceGroups/{rg-name}/{resource-name}"` |
 | Make a role available for assignment in two subscriptions. | `"/subscriptions/{sub-id}", "/subscriptions/{sub-id}"` |
 
-## Creating roles
+## Create roles
 
 Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It is preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 

@@ -99,7 +99,7 @@ The backend part of the application is deployed and now you need to deploy the f
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1
+    apiVersion: networking.k8s.io/v1beta1
     kind: Ingress
     metadata:
       name: contoso-ship-manager-frontend
@@ -113,10 +113,8 @@ The backend part of the application is deployed and now you need to deploy the f
             paths:
               - path: /
                 backend:
-                  service:
-                    name: contoso-ship-manager-frontend
-                    port:
-                      name: http
+                  serviceName: contoso-ship-manager-frontend
+                  servicePort: http
     ```
 
     Change the DNS zone present in the Ingress to match the DNS you copied from the first step.

@@ -6,4 +6,4 @@ After completing this module, you should be able to:
 
 - Explore the Microsoft compliance center.
 - Describe the benefits of Compliance Manager.
-- Know where to find compliance documentation.
+

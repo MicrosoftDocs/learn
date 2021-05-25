@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-populate-time-dimension-table
+title: Exercise - Create and populate a time dimension table
+metadata:
+  title: Exercise - Create and populate a time dimension table
+  description: "Exercise - Create and populate a time dimension table"
+  ms.date: 04/06/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-create-populate-time-dimension-table.md)]

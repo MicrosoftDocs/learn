@@ -16,7 +16,7 @@ abstract: |
   - Deploy a Java EE application to JBoss EAP on App Service
   - Create a data source and bind the Java EE application to MySQL
   - Access and manage the Java EE application on JBoss
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-java-ee-app-to-app-service.svg
 levels:
   - beginner
 roles:

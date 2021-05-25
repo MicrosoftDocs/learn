@@ -4,7 +4,7 @@ Poor governance policies create unnecessary constraints and may not protect the 
 
 What's wrong with Tailwind Traders' existing policy from the customer narrative?
 
-**"Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets."**
+*"Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets."*
 
 Corporate policies are designed to instruct teams on the best way to address tangible risks that aren't deemed tolerable by the organization. They are not designed to require a specific technical implementation.
 
@@ -15,9 +15,9 @@ When evaluating existing policies for application to the cloud or any other new 
 - What risk does this policy attempt to mitigate?
 - Why is that risk not within organizational risk tolerance?
 - Who determined that the risk isn't tolerable?
-- When should this policy be applied (workload classification, situational, etc.)? When should exceptions be reviewed?
+- When should this policy be applied (workload classification, situational, and so on)? When should exceptions be reviewed?
 - How is this process enforced? How often should the policy be reviewed for applicability?
-- For technology focused processes: Does this policy add risk by creating a dependency on a specific technology solution or technology vendor?
+- For technology focused processes, does this policy add risk by creating a dependency on a specific technology solution or technology vendor?
 
 The Tailwind Traders policy on protected data fails to answer these questions. Some of them may be addressed elsewhere in policy handbooks, so we should give them some grace. But, the final technology-focused question is an undeniable miss. Instead of mitigating risk, it actually introduced long-term risks by locking in a single solution.
 
@@ -42,7 +42,7 @@ During cloud adoption, you will encounter a number of risks. The following are a
 
 Risk is relative. A small company in a closed building with a few IT assets has little risk. Add users and an internet connection with access to those assets, and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business process, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help to generate revenue are at tangible risk of stopping that revenue stream in the event of an outage. Every moment of downtime equates to losses. Likewise, as data accumulates, the risk of harming customers grows.
 
-According to the outline from the Tailwind Traders customer narrative unit, the risks with which the Chief Information Officer (CIO) is most concerned are:
+According to the outline from the Tailwind Traders customer narrative unit, the risks with which the chief information officer (CIO) is most concerned are:
 
 - Overspending in the cloud.
 - The organization not meeting security or compliance requirements.
@@ -50,7 +50,7 @@ According to the outline from the Tailwind Traders customer narrative unit, the 
 - Unauthorized access compromising systems or data.
 - Inconsistent governance due to immature processes and lack of skills on the team.
 
-It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," cited in their current policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
+It's important to note, that none of the actual concerns are related to "a specific network segment of the existing datacenters" as cited in their current policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
 
 Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
@@ -59,9 +59,12 @@ Deeper investigation of the stakeholder concerns and the cloud adoption plan wil
 Corporate policies establish the requirements, standards, and goals that your IT staff and automated systems will need to support. Individual policy statements are guidelines for addressing specific risks identified during your risk assessment process. Below are a few examples of proper corporate policies to guide adoption in public and private cloud deployments, avoiding vendor lock-in:
 
 - **Overspend:** There is a risk of overspending, especially for self-service deployments. Any deployment must be allocated to a billing unit with approved budget and a mechanism for budgetary limits.
-    - **Design consideration:** In Azure, budget can be controlled with [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/). [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
+
+  **Design consideration:** In Azure, budget can be controlled with [Azure Cost Management + Billing](https://docs.microsoft.com/azure/cost-management-billing/). [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
+
 - **Securing sensitive data:** Assets that interact with sensitive data may not receive sufficient protections, leading to potential data leaks or business disruptions. All assets that interact with sensitive data must be identified and reviewed by the security team to ensure proper levels of protection.
-    - **Design consideration:** In Azure, all deployed assets must be tagged with proper data classification levels. Classifications must be reviewed by the cloud governance team and the application owner before deployment to the cloud.
+
+  **Design consideration:** In Azure, all deployed assets must be tagged with proper data classification levels. Classifications must be reviewed by the cloud governance team and the application owner before deployment to the cloud.
 
 ## Process
 

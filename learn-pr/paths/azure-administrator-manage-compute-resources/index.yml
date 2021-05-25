@@ -2,7 +2,7 @@
 uid: learn.azure-admin-manage-compute-resources
 metadata:
   title: Deploy and manage compute resources for Azure administrators
-  description: "Learn how to deploy and configure Azure compute resources and prepare for Exam AZ-104: Microsoft Azure Administrator."
+  description: "Learn how to deploy and configure Azure compute resources."
   brand: azure
   ms.date: 05/15/2020
   author: cwatson-cat

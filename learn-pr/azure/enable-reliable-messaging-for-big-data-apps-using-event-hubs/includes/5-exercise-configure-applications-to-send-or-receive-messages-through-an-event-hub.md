@@ -8,7 +8,7 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. In the Cloud Shell, create a storage account (general-purpose V2) running the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+1. In Cloud Shell, create a storage account (general-purpose V2) running the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
 
     |Parameter      |Description|
     |---------------|-----------|
@@ -22,16 +22,16 @@ The Java receiver application, that you'll configure in this unit, stores messag
     STORAGE_NAME=storagename$RANDOM
     ```
 
-    Then use this command to create the storage account.
+    Next, run the following command to create the storage account.
 
     ```azurecli
     az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
     ```
 
     > [!TIP]
-    > If the storage account creation fails, change your environment variable and try again.
+    > If the storage account creation fails, change your environment variable, and try again.
 
-1. List all the access keys associated with your storage account running the `account keys list` command. It takes your account name and the resource group (which is defaulted).
+1. List all the access keys associated with your storage account by running the `account keys list` command. It takes your account name and the resource group (which is defaulted).
 
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
@@ -51,7 +51,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
     ```
 
-1. Create a container called **messages** in your storage account running the following command. Use the **connectionString** you copied in the previous step.
+1. Create a container called **messages** in your storage account by running the following command. Use the **connectionString** you copied in the previous step.
 
     ```azurecli
     az storage container create --name messages --connection-string "<connection string here>"
@@ -59,7 +59,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
 
 ## Clone the Event Hubs GitHub repository
 
-Perform the following steps to clone the Event Hubs GitHub repository with `git`. You can execute this right in the Cloud Shell.
+Perform the following steps to clone the Event Hubs GitHub repository with `git`. You can execute this right in Cloud Shell.
 
 1. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
 
@@ -82,7 +82,7 @@ You'll need to write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pres
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
-1. Open the Cloud Shell editor in the current folder. This shows a list of files on the left and an editor space on the right.
+1. Open Cloud Shell editor in the current folder. This shows a list of files on the left and an editor space on the right.
 
     ```bash
     code .
@@ -148,7 +148,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample/src/main/java/com/microsoft/azure/eventhubs/samples/eventprocessorsample
     ```
 
-1. Open the Cloud Shell editor.
+1. Open Cloud Shell editor.
 
     ```bash
     code .

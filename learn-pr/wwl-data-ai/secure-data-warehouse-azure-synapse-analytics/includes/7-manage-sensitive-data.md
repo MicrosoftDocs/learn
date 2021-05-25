@@ -22,8 +22,8 @@ You need to set it up using PowerShell or REST API as mentioned before.
 However, the configuration of the Dynamic Data Masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
 
 In Azure Synapse Analytics, you can find Dynamic Data Masking here;
-
-![Dynamic Data Masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
+> [!div class="mx-imgBorder"]
+> ![Dynamic Data Masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
 
 **Looking into Dynamic Data Masking Policies**:
 

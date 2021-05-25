@@ -66,8 +66,8 @@ The first step is to select the **Add an action** option at the point in your ap
 
 ![A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need.](../media/choose-an-action-designer.png)
 
-Once you add an action, you use the designer to set configuration parameters. Again, the designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need and the designer automatically populates that entry in your action. The following screenshot shows the dynamic tweet data from the social-media monitor app displayed in the designer.
+After you add an action, you use the designer to set configuration parameters. Again, the designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need, and the designer automatically populates that entry in your action. The following image shows the dynamic tweet data from the social-media monitor app displayed in the designer.
 
 ![A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as **Created at**, **Description**, and **Location** displayed in a list. The user can select an item from the list to include it in their app.](../media/dynamic-content-designer.png)
 
-The designer makes it easy to add dynamic content. You don't need to remember the names of the parameters and return values and you don't have to worry about the details of the syntax.
+The designer makes it easy to add dynamic content. You don't need to remember the names of the parameters and return values, and you don't have to worry about the details of the syntax.

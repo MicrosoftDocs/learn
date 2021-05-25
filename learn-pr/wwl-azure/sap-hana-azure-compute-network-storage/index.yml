@@ -2,11 +2,8 @@
 uid: learn.wwl.sap-hana-azure-compute-network-storage
 metadata:
   title: SAP HANA on Azure Compute, Network, and Storage
-  description: |
-    AP HANA on Azure (Large Instances) provides virtual machines for deploying and running SAP HANA. This module explores the SAP HANA on Azure (Large Instances) solution that builds on assigned, non
-    -shared host/server bare
-    -metal hardware.
-  ms.date: 12/20/2019
+  description: "SAP HANA on Azure Compute, Network, and Storage"
+  ms.date: 03/16/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

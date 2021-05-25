@@ -39,7 +39,6 @@ Physically securing access to buildings and controlling access to computing hard
 With physical security, the intent is to provide physical safeguards against access to assets. These safeguards ensure that other layers can't be bypassed, and loss or theft is handled appropriately. Microsoft uses various physical security mechanisms in its cloud datacenters.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![A badge that represents secure access.](../media/2-policies-access.png)
@@ -57,7 +56,6 @@ At this layer, it's important to:
 The identity and access layer is all about ensuring that identities are secure, access is granted only to what's needed, and sign-in events and changes are logged.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![A physical barrier that represents the network perimeter.](../media/2-perimeter.png)
@@ -74,7 +72,6 @@ At this layer, it's important to:
 At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![Three connected systems that represent networking.](../media/2-networking.png)
@@ -93,7 +90,6 @@ At this layer, it's important to:
 At this layer, the focus is on limiting the network connectivity across all your resources to allow only what's required. By limiting this communication, you reduce the risk of an attack spreading to other systems in your network.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![A terminal that represents compute.](../media/2-compute.png)
@@ -110,7 +106,6 @@ At this layer, it's important to:
 Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure that your compute resources are secure and that you have the proper controls in place to minimize security issues.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![Image of a file on the network.](../media/2-application.png)
@@ -128,7 +123,6 @@ At this layer, it's important to:
 Integrating security into the application development lifecycle helps reduce the number of vulnerabilities introduced in code. Every development team should ensure that its applications are secure by default.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     ![Image representing data](../media/2-data.png)

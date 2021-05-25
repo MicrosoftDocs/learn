@@ -4,7 +4,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 ## Azure overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWBg9Q]
 
 ## Azure services
 

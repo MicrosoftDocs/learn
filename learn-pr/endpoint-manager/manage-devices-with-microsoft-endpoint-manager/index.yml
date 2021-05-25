@@ -24,6 +24,7 @@ roles:
 - administrator
 products:
 - mem
+- m365
 units:
 - learn.manage-devices-with-microsoft-endpoint-manager.1-introduction
 - learn.manage-devices-with-microsoft-endpoint-manager.2-understand-provisioning

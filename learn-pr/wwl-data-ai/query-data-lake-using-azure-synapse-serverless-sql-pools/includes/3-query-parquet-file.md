@@ -1,8 +1,8 @@
-You can also execute a query using serverless SQL pool that will read Parquet files. The **OPENROWSET** function enables you to read the content of parquet file by providing the URL to your file.
+You can also execute a query using serverless SQL pool that will read Parquet files. The **OPENROWSET** function enables you to read the content of a parquet file by providing the URL to your file.
 
 ## Read parquet file
 
-The easiest way to see to the content of your PARQUET file is to provide file **URL** to the **OPENROWSET** function and specify **parquet FORMAT**. If the file is publicly available or if your Azure Active Directory identity can access this file, you should be able to see the content of the file using the query like the one shown in the following example:
+The easiest way to see the content of your PARQUET file is to provide the file **URL** to the **OPENROWSET** function and specify **parquet FORMAT**. If the file is publicly available, or if your Azure Active Directory identity can access this file, you should be able to see the content of the file using the query like the one shown in the following example:
 
 ```sql
 select top 10 * 
@@ -11,11 +11,11 @@ from openrowset(
     format = 'parquet') as rows
 ```
 
-Make sure that you access this file. If your file is protected with SAS key or custom Azure identity, you would need to [setup server level credential for SQL login](https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
+Make sure that you can access this file. If your file is protected with a SAS key or custom Azure identity, you would need to [setup server level credential for SQL login](https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
 
 ## Define a data source
 
-The last example uses a full path to the file. As an alternative, you can create an external data source with the location that points to the root folder of the storage, and use that data source and the relative path to the file in OPENROWSET function:
+The last example uses a full path to the file. As an alternative, you can create an external data source with the location that points to the root folder of the storage, and use that data source and the relative path to the file in the OPENROWSET function:
 
 ```sql
 create external data source covid 
@@ -28,11 +28,11 @@ from openrowset(
 ) as rows
 ```
 
-If a data source is protected with SAS key or custom identity you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential).
+If a data source is protected with a SAS key or custom identity, you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential).
 
 ## Explicitly specify a schema
 
-**OPENROWSET** enables you to explicitly specify what columns you want to read from the file using WITH clause:
+**OPENROWSET** enables you to explicitly specify what columns you want to read from the file using the WITH clause:
 ```sql
 select top 10 * 
 from openrowset( 
@@ -46,7 +46,7 @@ from openrowset(
 ) as rows
 ```
 
-In the following sections you can see how to query various types of PARQUET files. All the following examples require specific files layout. To be able to execute the upcoming examples, your first step is to **create a database** where the objects will be created. Then initialize the objects by executing the [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
+In the following sections you can see how to query various types of PARQUET files. All the following examples require specific file layouts. To be able to execute the upcoming examples, your first step is to **create a database** where the objects will be created. Then initialize the objects by executing the [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
 
 The NYC Yellow Taxi (https://azure.microsoft.com/services/open-datasets/catalog/nyc-taxi-limousine-commission-yellow-taxi-trip-records/) dataset is used in this sample. 
 
@@ -80,7 +80,7 @@ ORDER BY
 
 Although you don't need to use the OPENROWSET WITH clause when reading Parquet files. Column names and data types are automatically read from Parquet files.
 
-The sample below shows the automatic schema inference capabilities for Parquet files. It returns the number of rows in September 2017 without specifying a schema.
+The sample below shows the automatic schema inference capabilities for Parquet files. It returns the number of rows in 2018 without specifying a schema.
 
 ```sql
 SELECT TOP 10 * 
@@ -97,7 +97,7 @@ FROM
 The data set provided in the NYC Yellow Taxi dataset is partitioned (or divided) into separate subfolders. You can target specific partitions using the **filepath** function. This example shows fare amounts by year, month, and payment_type for the first three months of 2017.
 
 > [!NOTE]
-> The SQL on-demand Query is compatible with Hive/Hadoop partitioning scheme.
+> The serverless SQL pool query is compatible with Hive/Hadoop partitioning scheme.
 
 ```sql
 SELECT 
@@ -122,7 +122,7 @@ ORDER BY
 ```
 ## Data type mapping
 
-Parquet files contain type descriptions for every column. The following table describes how Parquet types are mapped to SQL native types.
+Parquet files contain type descriptions for every column. The following table describes how Parquet types are mapped to SQL data types.
 
 |Parquet type|Parquet logical type (annotation)|SQL data type|
 |---|---|---|

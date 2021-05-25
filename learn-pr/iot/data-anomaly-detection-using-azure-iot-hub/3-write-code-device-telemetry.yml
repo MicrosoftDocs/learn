@@ -5,7 +5,7 @@ metadata:
   description: Explains the process of simulating vibrations, and sending device telemetry
   ms.date: 11/26/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write code for vibration telemetry

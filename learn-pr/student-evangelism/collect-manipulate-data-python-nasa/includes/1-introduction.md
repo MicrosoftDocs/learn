@@ -16,6 +16,9 @@ This module will look at:
 - Sea level 
 - Pressure
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/eK3ATduvFGM?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you will:
@@ -26,5 +29,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Visual Studio Code with Python and Jupyter extensions
-- Some Python experience
+- [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)

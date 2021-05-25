@@ -1,8 +1,4 @@
-Azure Cognitive Search enables you to create search solutions in which a pipeline of AI skills is used to enrich data and populate an index.
-
-![An indexer takes data from a data source and then applies a pipeline of AI skills to extract additional insights to enrich the resulting index.](../media/enrichment-pipeline.png)
-
-The data enrichments performed by the skills in the pipeline supplement the source data with insights such as: 
+Azure Cognitive Search enables you to create search solutions in which a pipeline of AI skills is used to enrich data and populate an index. The data enrichments performed by the skills in the pipeline supplement the source data with insights such as: 
 
 - The language in which a document is written.
 - Key phrases that might help determine the main themes or topics discussed in a document.
@@ -25,3 +21,6 @@ While the index might be considered the primary output from an indexing process,
 Azure Cognitive Search supports these scenarios by enabling you to define a *knowledge store* in the skillset that encapsulates your enrichment pipeline. The knowledge store consists of *projections* of the enriched data, which can be JSON objects, tables, or image files. When an indexer runs the pipeline to create or update an index, the projections are generated and persisted in the knowledge store.
 
 In this module, you'll implement a knowledge store for *Margie's Travel*, a fictitious travel agency that uses information in brochures and hotel reviews to help customers plan trips.
+
+> [!NOTE]
+> This module assumes you already know how to create and use an Azure Cognitive Search solution that includes built-in skills. If not, complete the [Create an Azure Cognitive Search solution](https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/) module first.

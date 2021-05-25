@@ -74,7 +74,7 @@ let mut i = 1;
 let something = loop {
     i *= 2;
     if i > 100 {
-    break i;
+        break i;
     }
 };
 assert_eq!(something, 128);
@@ -104,9 +104,7 @@ while counter < 10 {
 
 A `for` expression extracts values from an iterator. It loops until the iterator is empty.
 
-In Rust, an iterator is any type that implements the `IntoIterator` trait. We'll cover traits in depth in the following modules. For now, think of them as interfaces that define some expected behaviors that any type can attempt to comply with.
-
-Most collection types in Rust implement the `IntoIterator` interface, so we can easily step over each element on those containers.
+In Rust, an iterator is any type that can iterate over values. Some values can be iterated over directly and others can produce iterators by calling methods like `.iter()`.
 
 ```rust
 let a = [10, 20, 30, 40, 50];

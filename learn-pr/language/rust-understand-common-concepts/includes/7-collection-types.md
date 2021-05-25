@@ -16,11 +16,11 @@ An array can be defined in two ways:
 
 ```rust
 fn main() {
-    // a comma-separated list inside of brackets
-    let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  // a comma-separated list inside of brackets
+  let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-    // initialize an array of 512 elements where every element is a zero
-    let byte_buffer = [0_u8; 512];
+  // initialize an array of 512 elements where every element is a zero
+  let byte_buffer = [0_u8; 512];
 }
 ```
 
@@ -36,7 +36,7 @@ println!("second element of the array: {}", letters[1]); // prints 'b'
 
 In this example, the expression `letters[0]` will get the value `'a'`, because that's the value at index `[0]` in the array. The expression `letters[1]` will get the value `'b'` from index `[1]` in the array.
 
-If you try to access an element of an array that's out of bounds (past the end of the array), the compiled issues an error. For instance, the following code would fail to compile:
+If you try to access an element of an array that's out of bounds (past the end of the array), the compiler issues an error. For instance, the following code would fail to compile:
 
 ```rust
 println!("invalid array access: {}", letters[99]);  // our `letters` array has only 7 elements
@@ -53,11 +53,14 @@ With the following error message:
       |
 ```
 
-Since the array length is known at compile time, Rust makes it impossible to build any program that attempts to access an array out of its bounds.
+Since the array length is known at compile time, Rust makes it impossible to build any program that attempts to access an array out of its bounds with an index known at compile time.
 
 ## Vectors
 
-Just like with arrays, you can use vectors to store multiple values of the same type. Unlike arrays, vectors can grow or shrink at any time. This capability is implied in their size not being known at compile time, so Rust can't prevent you from accessing an invalid position in your vector.
+Just like with arrays, you can use vectors with the type `Vec<T>` to store multiple values of the same type. Unlike arrays, vectors can grow or shrink at any time. This capability is implied in their size not being known at compile time, so Rust can't prevent you from accessing an invalid position in your vector.
+
+> [!NOTE]
+> You'll notice the syntax `<T>` often in Rust. These are generic type parameters. When we write `Vec<T>`, what we're indicating is a `Vec` type composed of some type `T`. The name`T` is conventionally used as a type name for a type we don't yet know. When we actually create vectors, they'll have concrete types like `Vec<u32>` or `Vec<String>`.
 
 You can use the `vec!` macro to initialize a vector.
 
@@ -70,16 +73,16 @@ let ten_zeroes = vec![0; 10];
 println!("Ten zeroes: {:?}", ten_zeroes); // prints [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 
-You might have noticed the `{:?}` format parameter inside the `println!` calls. It's used whenever we want to print something for *debugging* reasons, whereas `{}` is used for *displaying* information to a user. Because we didn't tell Rust how to represent a vector of integers to users, using the former mark would result in a compilation error. We're going to learn precisely how to do that when we reach the "Traits" module in this course.
+You might have noticed the `{:?}` format parameter inside the `println!` calls. It's used whenever we want to print something for *debugging* reasons, whereas `{}` is used for *displaying* information to an end user. Because Rust doesn't know how to represent a vector of integers to end users, using the former mark would result in a compilation error. We're going to learn precisely how to do that when we reach the "Traits" module in this course.
 
 Vectors can also be created by using the `Vec::new()` method. You can push values onto the end of a vector, which will grow the vector as needed:
 
 ```rust
-  let mut v = Vec::new();  // creates an empty vector,
-  v.push(5);               // pushes the number five into it...
-  v.push(6);               // ... an then six, and so on
-  v.push(7);
-  v.push(8);
+let mut v = Vec::new();  // creates an empty vector,
+v.push(5);               // pushes the number five into it...
+v.push(6);               // ... an then six, and so on
+v.push(7);
+v.push(8);
 println!("{:?}", v); // prints [5, 6, 7, 8]
 ```
 
@@ -116,11 +119,11 @@ running program with the following error message:
     thread 'main' panicked at 'index out of bounds: the len is 5 but the index is 100', src/main.rs:3:26
 ```
 
-Don't be scared by this behavior. We're going to learn how to safely access a vector element without causing our program to panic. We'll use the `Vector::get` method *(that never panics)* in the following module, when we learn about error handling in Rust.
+Don't be scared by this behavior. We're going to learn how to safely access a vector element without causing our program to panic. We'll use the `Vec::get` method *(that never panics)* in the following module, when we learn about error handling in Rust.
 
 ## Hash maps
 
-The last of our common collections is the hash map. The type `HashMap<K, V>` stores a mapping of keys of type `K` to values of type `V`. Where vectors store values by an integer index, hash maps store values by key.
+The last of our common collections is the hash map. The type `HashMap<K, V>` stores a mapping of keys of some type `K` to values of some type `V`. Where vectors store values by an integer index, hash maps store values by key.
 
 Many programming languages support this kind of data structure. They often use a different name, such as hash, map, object, hash table, dictionary, or associative array, to name a few.
 
@@ -136,7 +139,7 @@ You can create an empty hash map by using the `HashMap::new` method and then add
 ```rust
 use std::collections::HashMap;
 
-let mut book_reviews = HashMap::new();
+let mut book_reviews: HashMap<String, String> = HashMap::new();
 
 // Review some books.
 book_reviews.insert(

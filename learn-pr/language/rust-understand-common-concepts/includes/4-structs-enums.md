@@ -19,7 +19,7 @@ struct Unit;
 
 - **Classic [C structs](https://en.wikipedia.org/wiki/Struct_(C_programming_language))** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
 - **Tuple structs** are similar to classic structs, but their fields have no names. For accessing individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on, starting at zero.
-- **Unit structs** are most commonly used as markers. They're useful when you need to implement a trait on something but don't need to store any data inside it.
+- **Unit structs** are most commonly used as markers. We'll learn more about why these might be useful when we learn about Rust's traits feature.
 
 ## Instantiate structs
 
@@ -36,7 +36,7 @@ fn main() {
     };
 
     // Instantiate a tuple struct by passing the values in the same order as defined.
-    let origin = Point2D(0, 0)
+    let origin = Point2D(0, 0);
 
     // Instantiate a unit struct.
     let unit = Unit;
@@ -51,8 +51,7 @@ Enums are types that can be any one of several variants.
 
 What Rust calls enums are more commonly known as [algebraic data types](https://en.wikipedia.org/wiki/Algebraic_data_type?azure-portal=true) if you're coming from a functional programming background. The important detail is that each enum variant can have data to go along with it.
 
-The `enum` keyword allows the creation of a type, which might be one of a few different variants. Any
-variant that's valid as a struct is also valid as an enum.
+The `enum` keyword allows the creation of a type, which might be one of a few different variants. Enum variants, just like structs, can have fields with names, fields without names, or no fields at all.
 
 In the following example, we define an enum to classify a web event. Each variant is independent and stores different amounts and types of values.
 
@@ -76,6 +75,25 @@ This enum has four variants with different types:
 - `Paste` includes a single string.
 - `Click` includes an anonymous struct inside it.
 
-Defining an enum with variants such as the preceding one is similar to defining different kinds of struct definitions. The exception is that the enum doesn't use the `struct` keyword. Also, all the variants are grouped together under the same `WebEvent` type.
+Defining an enum with variants such as the preceding one is similar to defining different kinds of struct definitions. All the variants are grouped together under the same `WebEvent` type and each variant is not its own type. This means we can't have functions that only accept `KeyPress` and not other variants of the `WebEvent` enum.
 
-If we chose to define separate structs for each variant, we could hold the same data that the preceding enum variants held. But this definition would imply that each struct had its own type. We couldn't as easily define a function to take any of these kinds of web events as we could with the `WebEvent` enum, which is a single type.
+We can chose to define separate structs for each variant and then have each variant hold on to the different structs. These would hold the same data that the preceding enum variants held. But this definition would allow users to refer to each logical variant on its own.
+
+```rust
+enum WebEvent {
+    PageLoad,
+    PageUnload,
+    KeyPress(KeyPress),
+    Paste(String),
+    Click(Click)
+}
+
+struct Click { 
+    x: i64, 
+    y: i64 
+}
+
+struct KeyPress(char);
+```
+
+Now in your code you can refer to a `WebEvent::Click` which is a variant of the type `WebEvent` and you can also just refer to `Click`s on their own separate from `WebEvent`s.

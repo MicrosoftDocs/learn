@@ -72,7 +72,7 @@ Usually, you should create environments in containers (this is the default unles
 ```Python
 env.docker.enabled = True
 deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','pip'],                      
-                                pip_packages=['azureml-defaults']
+                                pip_packages=['azureml-defaults'])
 env.python.conda_dependencies = deps
 ```
 
@@ -133,7 +133,7 @@ training_env = Environment.get(workspace=ws, name='training_environment')
 
 script_config = ScriptRunConfig(source_directory='my_dir',
                                 script='script.py',
-                                environment=env)
+                                environment=training_env)
 ```
 
 When an experiment based on the estimator is run, Azure Machine Learning will look for an existing environment that matches the definition, and if none is found a new environment will be created based on the registered environment specification.

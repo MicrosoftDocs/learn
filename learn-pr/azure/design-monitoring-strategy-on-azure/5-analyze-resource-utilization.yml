@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
+metadata:
+  title: Analyze resource utilization and performance
+  description: Analyze resource utilization and performance using Azure Monitor Insights 
+  ms.date: 03/22/2021
+  author: kayodeprinceMS
+  ms.author: kaprince
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze resource utilization and performance using Azure Monitor Insights 
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-analyze-resource-utilization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Where can IT Operations teams find a topology view with network connection details of their VMs and scale sets?
+    choices:
+    - content: Azure Dashboards
+      isCorrect: false
+      explanation: Azure Dashboards provide a single pane of glass for monitoring your Azure infrastructure and services including data from Azure Monitor.
+    - content: Azure Monitor Metrics Explorer
+      isCorrect: false
+      explanation: Metrics Explorer enables you to analyze the health and availability metrics from your resources by charting the values of multiple metrics over time.
+    - content: Azure Monitor virtual machine insights
+      isCorrect: true
+      explanation: Azure Monitor virtual machine insights include a map tab with a topology view that shows the processes, dependencies, and network connection details of your VMs and scale sets.

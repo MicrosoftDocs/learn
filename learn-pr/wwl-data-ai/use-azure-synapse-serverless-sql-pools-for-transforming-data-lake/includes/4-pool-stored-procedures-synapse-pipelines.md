@@ -41,14 +41,14 @@ You can use Azure Synapse Pipelines to operationalize data transformations using
 3.	In Activity Settings tab, click **New** to create new Linked service – here we will create connection to serverless SQL pool
 4.	In New linked service panel:
 
-    a. Fill in Name with serverlessSQLpool  
-    b. Change Type to Azure Synapse Analytics (formerly SQL DW)  
-    c. For Account selection method choose Enter manually  
-    d. Fill in Fully qualified domain name with your serverless SQL pool endpoint  
-    e. Fill in Database with name of the database in which you created stored procedure population_by_year_state previously  
-    f. For Authentication type choose Managed Identity  
-    g. Click Test Connection to make sure configuration is correct  
-    h. Click Create to serverlessSQLpool linked service with specified options
+    a. Fill in **Name** with serverlessSQLpool  
+    b. Change **Type** to Azure Synapse Analytics (formerly SQL DW)  
+    c. For **Account selection method** choose Enter manually  
+    d. Fill in **Fully qualified domain name** with your serverless SQL pool endpoint  
+    e. Fill in **Database** with the name of the database in which you created the stored procedure population_by_year_state previously  
+    f. For **Authentication type** choose Managed Identity  
+    g. Click **Test Connection** to make sure configuration is correct  
+    h. Click **Create** to serverlessSQLpool linked service with specified options
 
 3.	In Activity Settings tab, pick population_by_year_state for Stored Procedure Name
  

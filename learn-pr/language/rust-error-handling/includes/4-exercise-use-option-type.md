@@ -24,9 +24,9 @@ fn build_full_name(person: &Person) -> String {
 
 fn main() {
     let john = Person {
-    first: String::from("James"),
-    middle: Some(String::from("Oliver")),
-    last: String::from("Smith"),
+        first: String::from("James"),
+        middle: Some(String::from("Oliver")),
+        last: String::from("Smith"),
     };
     assert_eq!(build_full_name(&john), "James Oliver Smith");
 
@@ -48,4 +48,4 @@ fn main() {
 
 Run the preceding code and check to ensure that all the `assert_eq!` expressions pass without panicking. You can also edit the code on the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0?azure-portal=true).
 
-Get a [solution to this exercise](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bfc7568619b261d18e272bf09bad48c0?azure-portal=true).
+Get a [solution to this exercise](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=67db8775239bbd297229bdea23a438e2?azure-portal=true).

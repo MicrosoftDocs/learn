@@ -9,6 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
@@ -41,7 +42,7 @@ quiz:
       choices:
         - content: "True"
           isCorrect: false
-          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+          explanation: "In an IaaS environment, the cloud *provider* is responsible for any hardware maintenance."
         - content: "False"
           isCorrect: true
-          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+          explanation: "In an IaaS environment, the cloud *provider* is responsible for any hardware maintenance."

@@ -24,6 +24,7 @@ roles:
 - administrator
 products:
 - mem
+- m365
 units:
 - learn.app-management-using-microsoft-endpoint-manager.1-introduction
 - learn.app-management-using-microsoft-endpoint-manager.2-app-lifecycle

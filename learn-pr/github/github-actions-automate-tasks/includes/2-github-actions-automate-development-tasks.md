@@ -27,13 +27,13 @@ Consider all of the tasks that must happen *after* the code is written but befor
 
 The challenge is to do these tasks reliably and in a sustainable manner.  This is an ideal job for workflow automation.  If you're already relying on GitHub, you'll likely want to setup your workflow automation using GitHub Actions.
 
-### What is GitHub Actions?
+## What is GitHub Actions?
 
-*GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.  GitHub Actions can be configured to trigger complex workflows that meet your organization's needs each time developers check new source code into a specific branch, at timed intervals, or manually.  The result is of reliable and sustainable automated workflow is a significant decrease in development time.
+*GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.  GitHub Actions can be configured to trigger complex workflows that meet your organization's needs each time developers check new source code into a specific branch, at timed intervals, or manually.  The result is a reliable and sustainable automated workflow which leads to a significant decrease in development time.
 
 ## Where can you find GitHub Actions?
 
-GitHub Actions are scripts that adhere to a yml data format.  Each repository has an Actions tab that provides a quick and easy way to get started with setting up your first script.  If you see a workflow that you think might be a great starting point, you simply need to click the "Set up this workflow" button to add the script and begin editing the source yml.
+GitHub Actions are scripts that adhere to a yml data format.  Each repository has an **Actions** tab that provides a quick and easy way to get started with setting up your first script.  If you see a workflow that you think might be a great starting point, you simply need to click the **Set up this workflow** button to add the script and begin editing the source yml.
 
 :::image type="content" source="../media/github-actions-automate-development-tasks-01.png" alt-text="Screenshot of the GitHub Actions Actions tab displaying a Simple workflow and a button to set up this workflow.":::
 
@@ -43,15 +43,24 @@ However, beyond those GitHub Actions featured on the Actions tab, you can:
 - Search for open-source projects.  For example, the [GitHub Actions](https://github.com/actions?azure-portal=true) organization features many popular open source repos containing GitHub Actions you can use.
 - Write your own GitHub Actions from scratch.  Furthermore, if you want, you could make them open source, or even publish them to the GitHub Marketplace.
 
-## Two types of GitHub Actions
+## Using open source GitHub actions
 
-There are two types of GitHub Actions, container actions and JavaScript actions. 
+Many GitHub actions are open source and available for anyone who wants to use them. However, just like with any open source software, you need to carefully check them before using them within your project. Similar to recommended community standards with open source software such as including a README, code of conduct, contributing file, and issue templates just to name a few, you can follow the below recommendations when using GitHub actions:
 
-With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages. 
+- Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
+- Check if the action is in the GitHub Marketplace. This is a good check even if an action does not have to be on the GitHub Marketplace to be valid.
+- Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
+- Include the version of the action you are using by specifying a Git ref, SHA, or tag.
+
+## Two types of GitHub actions
+
+There are two types of GitHub actions: container actions and JavaScript actions.
+
+With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
 **JavaScript actions** don't include the environment in the code. This means you'll have to specify the environment to execute these actions. You can run in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS and Windows environments.
 
-### The anatomy of a GitHub Action
+### The anatomy of a GitHub action
 
 Here is an example of an action that performs a git checkout of a repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
 
@@ -145,6 +154,13 @@ The last part of this workflow file sets the MY_NAME variable value for this wor
 
 For more information on workflow syntax check out [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 
+## GitHub-hosted versus self-hosted runners
+
+We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block. This told the workflow that this particular job will run using the GitHub-hosted runner that is running in the environment ubuntu-latest.
+
+When it comes to runners, there are two options to choose from: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment that is specified by the GitHub-hosted runner type you define, `runs-on: {operating system-version}`. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following, `runs-on: [self-hosted, linux, ARM32]`.
+
+Each type of runner has its benefits, but in short, GitHub-hosted runners offer a quicker, simpler way to run your workflows but with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. Self-hosted runners can be run on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
 ### GitHub Actions may have usage limits
 

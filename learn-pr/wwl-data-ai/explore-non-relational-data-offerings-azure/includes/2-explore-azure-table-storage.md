@@ -35,7 +35,7 @@ In a range query, the application searches for a set of rows in a partition, spe
 > [!div class="mx-imgBorder"]
 > ![Image showing how a range query is performed against a table](../media/2-table-range-query.png)
 
-The columns in a table can hold numeric, string, or binary data up to 64 KB in size. A table can have up to 252 columns, apart from the partition and row keys. The maximum row size is 1 MB. For more information, read [Understanding the Table service data model](https://docs.microsoft.com/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
+The columns in a table can hold numeric, string, or binary data up to 64 KB in size. A table can have to 252 columns, apart from the partition and row keys. The maximum row size is 1 MB. For more information, read [Understanding the Table service data model](https://docs.microsoft.com/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 
 ## Use cases and management benefits of using Azure Table Storage
@@ -44,7 +44,7 @@ Azure Table Storage tables are schemaless. It's easy to adapt your data as the n
 
 The primary advantages of using Azure Table Storage tables over other ways of storing data include:
 
-- It's simpler to scale. It takes the same time to insert data in an empty table, or a table with billions of entries. An Azure storage account can hold up to 500 TB of data. 
+- It's simpler to scale. It takes the same time to insert data in an empty table, or a table with billions of entries. An Azure storage account can hold up to 5 PB of data. 
 - A table can hold semi-structured data
 - There's no need to map and maintain the complex relationships typically required by a normalized relational database.
 - Row insertion is fast

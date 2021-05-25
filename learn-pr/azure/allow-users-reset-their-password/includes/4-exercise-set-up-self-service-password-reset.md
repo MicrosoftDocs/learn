@@ -47,7 +47,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 1. Select **Create**.
 
-    ![Screenshot that shows new group form.](../media/4-create-group.png)
+    ![Screenshot that shows new group form filled out and the create button highlighted.](../media/4-create-group.png)
 
 ## Create a user account
 

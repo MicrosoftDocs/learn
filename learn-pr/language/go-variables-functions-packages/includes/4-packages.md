@@ -68,7 +68,7 @@ Let's look at a few things in that code:
 - The `logMessage` variable can be called only from within the package.
 - The `Version` variable can be reached from anywhere. We recommend that you include a comment to describe the purpose of this variable. (This description is useful for anyone who uses the package.)
 - The `internalSum` function can be called only from within the package.
-- The `Sum` function can be reached from anywhere. Again, we recommend that you include a comment to describe the purpose of the variable.
+- The `Sum` function can be reached from anywhere. We recommend that you include a comment to describe the purpose of the function.
 
 To confirm that everything is working, you can run the `go build` command in the `calculator` directory. If you do, notice that no executable binary is generated.
 
@@ -104,7 +104,7 @@ go 1.14
 To reference this package in other programs, you need to import it by using the module name. In this case, the name is `github.com/myuser/calculator`. Now let's look at an example of how to use this package.
 
 > [!NOTE]
-> Historically, managing dependencies in Go hasn't been easy. The dependency management system is still a work in progress. If you want to learn more about modules, see this [series of posts published in the Go blog](https://blog.golang.org/using-go-modules).
+> Historically, managing dependencies in Go hasn't been easy. The dependency management system is still a work in progress. If you want to learn more about modules, see this [series of posts published in the Go blog](https://blog.golang.org/using-go-modules?azure-portal=true).
 
 ## Reference a local package (a module)
 
@@ -121,7 +121,7 @@ src/
     main.go
 ```
 
-We'll use this code for the `$GOPATH/src/helloword/main.go` file:
+We'll use this code for the `$GOPATH/src/helloworld/main.go` file:
 
 ```go
 package main
@@ -209,7 +209,7 @@ What happens if you try to call the `logMessage` variable or the `internalSum` f
 
 ### Publishing a package
 
-[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing) is fairly easy. You just need to make the package source code publicly available. Most developers use GitHub to make packages available to the public. That's why you'll sometimes find references to `github.com` in import statements.
+[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing?azure-portal=true) is fairly easy. You just need to make the package source code publicly available. Most developers use GitHub to make packages available to the public. That's why you'll sometimes find references to `github.com` in import statements.
 
 For example, if you want to publish your `calculator` package to your GitHub account, you need to create a repository named `calculator`. The URL should look similar to this one:
 

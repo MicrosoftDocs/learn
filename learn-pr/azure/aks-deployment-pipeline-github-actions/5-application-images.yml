@@ -20,7 +20,7 @@ quiz:
         - content: "A zipped directory with code we can download and run on any platform or computer by using Docker."
           isCorrect: false
           explanation: "Application images are composed of more than just the application code."
-        - content: "A read-only template that contains a set of instructions for creating a Docker container."
+        - content: "A standalone, lightweight package that includes all that's needed to run the application in a container."
           isCorrect: true
           explanation: "Correct. An application image is the template that Docker uses to create its containers that hold your application."
         - content: "A snapshot of our current working directory hosted in the cloud."

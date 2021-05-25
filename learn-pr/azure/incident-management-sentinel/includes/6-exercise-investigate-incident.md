@@ -25,11 +25,11 @@ In this task, you'll create an analytics rule that will create an incident when 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
     ```kusto
-    AzureActivity
-    | where OperationName == 'Delete Virtual Machine'
-    | where ActivityStatus == 'Accepted'
-    | extend AccountCustomEntity = Caller
-    | extend IPCustomEntity = CallerIpAddress
+   AzureActivity
+   | where OperationName == 'Delete Virtual Machine'
+   | where ActivityStatus == 'Succeeded'
+   | extend AccountCustomEntity = Caller
+   | extend IPCustomEntity = CallerIpAddress
     ```
 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.

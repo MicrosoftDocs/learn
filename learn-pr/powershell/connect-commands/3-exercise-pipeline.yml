@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.3-exercise-pipeline
+title: Exercise - Construct a pipeline
+metadata:
+  title: Exercise - Construct a pipeline
+  description: In this exercise, you construct a pipeline  by using multiple cmdlets.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/16/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-pipeline.md)]

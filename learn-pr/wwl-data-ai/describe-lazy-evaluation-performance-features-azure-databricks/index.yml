@@ -4,8 +4,8 @@ metadata:
   title: Describe lazy evaluation and other performance features in Azure Databricks
   description: "Describe lazy evaluation and other performance features in Azure Databricks"
   ms.date: 05/15/2020
-  author: jasallen
-  ms.author: jasdeb
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe lazy evaluation and other performance features in Azure Databricks

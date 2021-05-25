@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.5-exercise-parameters
+title: Exercise - Parameters
+metadata:
+  title: Exercise - Parameters
+  description: This unit walks you through adding parameters to your backup script. Doing so will make the script more flexible.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/04/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-parameters.md)]

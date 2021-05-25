@@ -26,7 +26,7 @@ All three options require you to provide information such as the country or regi
 
 ## What is an application template?
 
-You use an application template to pre-populate your application with dashboards and device templates. In this module, you use the **Preview Application** template. This application template enables support for the IoT Central REST API.
+Application templates are industry-focused sample IoT solutions that are pre-populated with dashboards, simulated devices, and device templates. You can choose from the retail, energy, government, healthcare, or custom application templates. In this module, you use the custom application template to create an application and use the REST API.
 
 ## How IoT Central authorizes REST API calls
 

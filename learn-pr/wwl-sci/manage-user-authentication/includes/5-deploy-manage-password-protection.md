@@ -115,57 +115,10 @@ A reasonable update frequency for password policies in a large deployment is usu
 
 Licensing requirements for AD Password Protection are as follows:
 
-:::row:::
-:::column:::
-
-Users
-
-:::column-end:::
-:::column:::
-
-Azure AD Password Protection with global banned password list
-
-:::column-end:::
-:::column:::
-
-Azure AD Password Protection with custom banned password list
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
-
-Cloud-only users
-
-:::column-end:::
-:::column:::
-
-Azure AD Free
-
-:::column-end:::
-:::column:::
-
-Azure AD Premium P1 or P2
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
-
-Users synchronized from on-premises AD DS
-
-:::column-end:::
-:::column:::
-
-Azure AD Premium P1 or P2
-
-:::column-end:::
-:::column:::
-
-Azure AD Premium P1 or P2
-
-:::column-end:::
-:::row-end:::
+| Users | Azure AD Password Protection with global banned password list | Azure AD Password Protection with custom banned password list |
+| - | - | - |
+| Cloud-only users | Azure AD Free | Azure AD Premium P1 or P2 |
+| Users synchronized from on-premises AD DS | Azure AD Premium P1 or P2 | Azure AD Premium P1 or P2 |
 
 The following core requirements apply:
 
@@ -179,42 +132,10 @@ The following core requirements apply:
 
 - All machines where the Azure AD Password Protection proxy service will be installed must have network access to the following endpoints:
 
-    :::row:::
-    :::column:::
-
-    Endpoint
-
-    :::column-end:::
-    :::column:::
-
-    Purpose
-
-    :::column-end:::
-    :::row-end:::
-    :::row:::
-    :::column:::
-
-    https://login.microsoftonline.com
-
-    :::column-end:::
-    :::column:::
-
-    Authentication requests
-
-    :::column-end:::
-    :::row-end:::
-    :::row:::
-    :::column:::
-
-    https://enterpriseregistration.windows.net
-
-    :::column-end:::
-    :::column:::
-
-    Azure AD Password Protection functionality
-
-    :::column-end:::
-    :::row-end:::
+| Endpoint |  Purpose |
+| - | -|
+|  https://login.microsoftonline.com | Authentication requests |
+| https://enterpriseregistration.windows.net | Azure AD Password Protection functionality |
 
 ### Azure AD Password Protection DC agent
 

@@ -12,7 +12,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
-    ```azurecli
+    ```bash
     export rgName=<resource group name>
 
     az group create --name $rgName --location <location>

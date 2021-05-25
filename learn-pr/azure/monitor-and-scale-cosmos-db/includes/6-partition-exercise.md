@@ -2,7 +2,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 ## Measure the impact of partitions on throughput
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to your Azure Cosmos DB account and select **Metrics**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to your Azure Cosmos DB account, and in the menu pane, under **Monitoring**, select **Metrics**.
 1. Select the **Throughput** tab.
 
 1. Filter on the **mslearn** database.

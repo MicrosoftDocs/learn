@@ -1,6 +1,7 @@
 Effective management of an organization’s network security perimeter requires the right combination of tools and systems. Microsoft Azure Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for alert detection, threat visibility, proactive hunting, and threat response.
 
-:::image type="content" source="../media/3-four-aspects-azure-sentinel.png" alt-text="Diagram showing the four aspects of Azure Sentinel: collect, detect, investigate, and respond.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing the four aspects of Azure Sentinel: collect, detect, investigate, and respond.](../media/3-four-aspects-azure-sentinel.png)
 
 This diagram shows the end-to-end functionality of Azure Sentinel.
 
@@ -15,7 +16,7 @@ Azure Sentinel helps enable end-to-end security operations. It starts with log i
 
 Azure Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender (formerly Microsoft Threat Protection) solutions, and Microsoft 365 sources, including Office 365, Azure AD, Microsoft Defender for Identity (formerly Azure ATP), Microsoft Cloud App Security, and more.
 
-First, you must have your data ingested into Azure Sentinel, for which you need data connectors. There are data connectors that cover all scenarios and sources, including but not limited to:
+First, you must have your data ingested into Azure Sentinel, for which you need data connectors. There are data connectors that cover a wide range of scenarios and sources, including but not limited to:
 
 - syslog
 - Windows Event Logs
@@ -58,11 +59,13 @@ While hunting, you can bookmark interesting events, enabling you to return to th
 
 Threat protection is a continuously evolving battle front. Cybercriminals look for any vulnerability they can exploit to steal, damage, or extort company data, assets, and resources. Microsoft provides a suite of tools that give extended detection and response (XDR) through Microsoft 365 Defender and Azure Defender.
 
-:::image type="content" source="../media/3-defender-azure-defender.png" alt-text="Diagram showing Microsoft 365 Defender and Azure Defender.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Microsoft 365 Defender and Azure Defender.](../media/3-defender-azure-defender.png)
 
 Both tools integrate smoothly with Azure Sentinel to provide a complete and thorough threat protection capability for your organization.
 
-:::image type="content" source="../media/3-elements-threat-protection.png" alt-text="Diagram showing the three elements that make up the complete threat protection: Microsoft 365 and Azure Defender, and Azure Sentinel.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing the three elements that make up the complete threat protection: Microsoft 365 and Azure Defender, and Azure Sentinel.](../media/3-elements-threat-protection.png)
 
 ### Azure Sentinel video presentation
 

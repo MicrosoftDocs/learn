@@ -36,7 +36,7 @@ You'll have a few options to choose from for your listing type:
 - **Free trial**: Gives customers an opportunity to activate a free trial by redirecting them to your website, where they provide required user information and activate their product trial.
 
    > [!Note]
-   > If you choose to sell through Microsoft, you’ll be able to offer a free 30-day trial for your application by checking a box in Partner Center. Free software trials for offers sold through Microsoft are different than the free trial listing described above. When you choose to sell through Microsoft and enable a free software trial for customers, trials are facilitated through the users Azure account.
+   > If you choose to sell through Microsoft, you’ll be able to offer a free 30-day trial for your application by checking a box in Partner Center. Free software trials for offers sold through Microsoft are different than the free trial listing described above. When you sell through Microsoft and enable free trials, customers purchase your offer and Microsoft doesn't charge them until the trial period is over.
 
 #### Sell through Microsoft
 

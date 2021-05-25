@@ -19,13 +19,13 @@ quiz:
 
   - content: "Which of the following workloads does Azure Stack HCI support?"
     choices:
-    - content: "Hyper-V VMs running Linux."
+    - content: "Hyper-V VMs running Linux"
       isCorrect: true
       explanation: "That's correct. Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads."
-    - content: "Azure Key Vault."
+    - content: "Azure Key Vault"
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not support Azure PaaS services."
-    - content: "Azure virtual machine scale set."
+    - content: "Azure virtual machine scale set"
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not support Azure IaaS services."
 
@@ -34,9 +34,9 @@ quiz:
     - content: "Network Controller"
       isCorrect: false
       explanation: "That's incorrect. Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role is optional in Azure Stack HCI."
-    - content: "Azure IoT Hub."
+    - content: "Azure IoT Hub"
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not depend in any way on Azure IoT Hub."
-    - content: "Storage Spaces Direct."
+    - content: "Storage Spaces Direct"
       isCorrect: true
       explanation: "That's correct. Storage Spaces Direct provides virtualized storage in Azure Stack HCI."
