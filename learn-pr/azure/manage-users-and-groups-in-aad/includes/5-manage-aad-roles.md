@@ -103,9 +103,9 @@ As an example, here are the actions for the three roles we looked at previously.
 |Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/*/elevateAccess/Action`|
 |Reader (allow all read actions)|`*/read`| - |
 
-The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions, or in other words, it can manage everything. Including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.
+The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.
 
-The operations under `NotActions` are subtracted from `Actions`. With the **Contributor** role, `NotActions` removes this role's ability to manage access to resources and also assign access to resources.
+The operations under `NotActions` are subtracted from `Actions`. With the **Contributor** role, `NotActions` removes this role's ability to manage access to resources, and also removes assigning access to resources.
 
 ### DataActions and NotDataActions
 
