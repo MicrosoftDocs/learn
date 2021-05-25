@@ -20,7 +20,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
 
 1. Select **Create a resource**.
 
@@ -38,7 +38,7 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
     | Version | *default* |
@@ -70,7 +70,7 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
     | Version | *default* |
