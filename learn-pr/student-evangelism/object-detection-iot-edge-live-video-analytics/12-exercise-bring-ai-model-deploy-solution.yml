@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/12-exercise-bring-ai-model-deploy-solution.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you are a customer and you want to use one platform that will allow you to deploy different machine learning models for different scenarios, Vision on Edge is a good solution template. Because:"
+    choices:
+    - content: "You can easily deploy models on your existing cameras"
+      isCorrect: false
+      explanation: "It is correct, but this feature is not enough to deploy machine learning models"
+    - content: "Vision on Edge solution uses Live Video Analytics to build video applications"
+      isCorrect: false
+      explanation: "It is correct, but this feature is not enough to deploy machine learning models"
+    - content: "You can build and deploy your models to your edge device"
+      isCorrect: true
+      explanation: "You can bring other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"

@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/10-exercise-build-container-image.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you have your own machine learning model and you want to package it up as a Docker image, where do you define the build steps of the image-build process?"
+    choices:
+    - content: "Source code of your application"
+      isCorrect: false
+      explanation: "Source code is a collection of code. You don’t define the container image build process in the source code"
+    - content: "Docker registry"
+      isCorrect: false
+      explanation: "It’s a storage that holds docker images"
+    - content: "Dockerfile"
+      isCorrect: true
+      explanation: "A Dockerfile is a plain text file containing all the commands needed to build an image"

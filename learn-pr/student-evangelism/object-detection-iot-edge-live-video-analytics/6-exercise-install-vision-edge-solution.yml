@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/6-exercise-install-vision-edge-solution.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "In the context of the Vision on Edge solution, you deploy several edge modules to your edge device. Which of the following is responsible for defining where media should be captured from, how it should be processed, and where the results should be delivered?"
+    choices:
+    - content: "Web module"
+      isCorrect: false
+      explanation: "This module is the web application that user interacts with "
+    - content: "Live Video Analytics module"
+      isCorrect: true
+      explanation: "You set the media graph to the live video analytics module that parses frames from the camera and sends them to the Inference Module"
+    - content: "Predict module"
+      isCorrect: false
+      explanation: "It runs the custom vision trained model or user-provided model and return the results"
