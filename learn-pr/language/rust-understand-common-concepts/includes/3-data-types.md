@@ -81,7 +81,7 @@ fn main() {
 
 > [!NOTE]
 > We use suffixes on the literal numbers to inform Rust about the data type. `1u32` indicates the number 1 as an unsigned 32-bit integer, and so on. 
-> If we don't provide type annotations, Rust tries to infer the type from context. When the context is ambiguous, tt assigns the `i32` type (a 32-bit signed integer) by default.
+> If we don't provide type annotations, Rust tries to infer the type from context. When the context is ambiguous, it assigns the `i32` type (a 32-bit signed integer) by default.
 
 You can try running this example in the [Rust Playground][RustPlay-numbers].
 

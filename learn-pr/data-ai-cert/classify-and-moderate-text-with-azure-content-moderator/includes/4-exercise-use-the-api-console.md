@@ -16,7 +16,7 @@ Now that you have a resource available in Azure for content moderation, and you 
 
 Scroll down the page and evaluate the response from the testing console.
 
-You'll see the that the email, IP address, phone, and address values are under a JSON array value of PII.  You didn't have to set the PII value to true for this result.
+You'll see that the email, IP address, phone, and address values are under a JSON array value of PII.  You didn't have to set the PII value to true for this result.
 
 ## Run additional tests
 
