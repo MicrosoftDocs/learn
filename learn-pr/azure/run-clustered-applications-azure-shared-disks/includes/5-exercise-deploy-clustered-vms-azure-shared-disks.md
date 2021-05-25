@@ -36,7 +36,7 @@ az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku
 # Create proximity placement group.
 az ppg create \
 -n myPPG \
--gmyResourceGroup \
+-g myResourceGroup \
 -l eastus \
 -t standard
 ```
