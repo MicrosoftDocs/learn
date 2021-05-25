@@ -2,7 +2,7 @@
 uid: learn.arm-template-whatif.3-what-if
 title: Predict what a deployment will do by using what-if
 metadata:
-  title: Using what-if to validate your ARM template deployments
+  title: Use what-if to validate your ARM template deployments
   description: Deploying and hoping for the best is not the approach you should be taking. The what-if operation is here to address this fact. This unit will cover what it is and how to use it.
   author: softchris
   ms.author: chnoring
