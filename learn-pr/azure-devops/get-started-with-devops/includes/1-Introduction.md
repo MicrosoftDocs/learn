@@ -6,15 +6,15 @@ The newest team member, Mara, believes DevOps will help. Her goal is to convince
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn what DevOps is and identify what separates elite performers from low performers
-- Identify what services Azure DevOps provides
-- Set up an account in Azure DevOps
+- Identify what separates elite performers from low performers
+- List what services Azure DevOps provides
+- Create an Azure DevOps organization
 
 ## Prerequisites
 
-The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you start this module.
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you start this module.
 
 ## Meet the team
 
