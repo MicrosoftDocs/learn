@@ -13,7 +13,12 @@ title: Prerequisites for Azure administrators
 summary: |
   If you're an IT Administrator that's new to Azure, this path is the place to start. Learn the basic Azure concepts you'll need to know as an Azure administrator. 
 prerequisites: |
-  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Azure Fundamentals Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  - [Azure Fundamentals Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  - [Azure Fundamentals Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
 iconUrl: /learn/achievements/azure-administrator-prerequisites.svg
 levels:
 - beginner

@@ -2,14 +2,14 @@
 uid: learn.quantum.run-quantum-algorithms-hardware
 metadata:
   title: Run algorithms on quantum hardware by using Azure Quantum
-  description: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers on the cloud. 
+  description: Get started with quantum computing on Azure Quantum and learn how to create and run Q# quantum programs on quantum computers in the cloud. 
   ms.date: 01/01/2021
   author: geduardo
-  ms.author: v-edsanc
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run algorithms on quantum hardware by using Azure Quantum
-summary: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers in the cloud.
+summary: Get started with quantum computing on Azure Quantum and learn how to create and run Q# quantum programs on quantum computers in the cloud.
 abstract: |
   After completing this module, you'll be able to:
 
@@ -18,9 +18,9 @@ abstract: |
   - Adapt and create Q# applications to run them in Azure Quantum.  
   - Submit and manage quantum computing jobs in Azure Quantum in your preferred environment: Python, Jupyter, or the Azure CLI.
 prerequisites: |
-  - Module [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
-  - Module [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
-iconUrl: /learn/achievements/generic-badge.svg
+  - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
+  - [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
+iconUrl: /learn/achievements/quantum.run-quantum-algorithms-hardware.svg
 ratingEnabled: true
 levels:
 - beginner

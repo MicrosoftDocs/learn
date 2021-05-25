@@ -1,10 +1,10 @@
-In this exercise, you use a template that creates a SQL Server logical instance, an Azure App Service plan, and an App Service instance. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then you delete all the resources in the resource group.
+In this exercise, you use a template that creates a SQL Server logical instance, an Azure App Service plan, and an App Service instance. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then, you delete all the resources in the resource group.
 
 ## Open Cloud Shell through the Azure portal
 
 Here, you open Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
 
-You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
+You can also [install and run the Azure CLI locally](/cli/azure/install-azure-cli?azure-portal=true).
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
@@ -40,7 +40,7 @@ Here, you create a basic Resource Manager template in a file named *template.jso
     code template.json
     ```
 
-1. Add this to *template.json* and then save the file.
+1. Add this to *template.json* and then save the file by pressing <kbd>Ctrl+S</kbd>.
 
     [!code-json[](code/3-template.json)]
 
@@ -48,7 +48,7 @@ Here, you create a basic Resource Manager template in a file named *template.jso
 
 Here, you briefly walk through each section of the Resource Manager template to better understand how it works.
 
-The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to them. 
+The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to them.
 
 The deployment prefix, unique suffix, and admin password will be passed in. The location will be set by default as the location of the resource group you're deploying into.
 
@@ -98,7 +98,7 @@ The rest of the file defines the resources that will be created. Take a moment t
 
 ### SQL Server instance
 
-Notice the `name` parameter. Here, you use the default name of the resource that you set up in the parameters section and concatenate the `uniqueName` variable from the variables section. You get the administrator login password from the `adminPassword` parameter.
+Notice the `name` parameter. Here, you use the default name of the resource that you set up in the parameters section, and concatenate the `uniqueName` variable from the variables section. You get the administrator login password from the `adminPassword` parameter.
 
 ```json
 "type": "Microsoft.Sql/servers",
@@ -198,13 +198,13 @@ The `hostNameBindings` type sets the website name and the type.
 ```
 
 > [!TIP]
-> In Cloud Shell, you can close the editor now if you want. But leave the command window open for the next part.
+> In Cloud Shell, you can close the editor now if you want by pressing <kbd>Ctril+Q</kbd>. But leave the command window open for the next part.
 
 ## Select an Azure region for deployment
 
 A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance or a SQL database, is assigned a region.
 
-To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region, unless you specify a different region.
 
 1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
 
@@ -244,9 +244,9 @@ To make the commands easier to run, start by selecting a default region. After y
 
 The name of the SQL Server instance and the web app must be unique.
 
-For learning purposes, here you generate a random number and assign it to the `UNIQUE_ID` Bash variable.
+For learning purposes, here, you generate a random number and assign it to the `UNIQUE_ID` Bash variable.
 
-1. From Cloud Shell, generate a random number and assign it to the `UNIQUE_ID` variable.
+1. From Cloud Shell, generate a random number, and assign it to the `UNIQUE_ID` variable.
 
     ```bash
     UNIQUE_ID=$RANDOM
@@ -294,7 +294,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
       --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
 
-    Wait for the deployment to finish. Notice that we're passing in the parameters that we need. Later you'll move them to a parameters file, pipeline variables, and key vault.
+    Wait for the deployment to finish. Notice that we're passing in the parameters that we need. Later, you'll move them to a parameters file, pipeline variables, and key vault.
 
 1. Go to the Azure portal and select **Resource groups**, and then select the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, an App Service instance, and a SQL Server instance. Take note of the suffix on each of these resources. It's made from the `deployPrefix` variable and your `uniqueSuffix` variable.
 
@@ -316,8 +316,8 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 
 Here, you delete everything in your resource group, but not the resource group itself. You'll add more resources to your resource group shortly.
 
-From the Azure portal, delete the resources by selecting them in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. 
+From the Azure portal, delete the resources by selecting them in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group.
 
-When you're prompted, enter **Yes** to confirm. Verify that the resources are deleted but the resource group remains.
+The **Delete Resources** pane appears. Enter **Yes** to confirm, and then select **Delete**. Verify that the resources are deleted but the resource group remains.
 
 ![Azure portal page showing deleting resources in the resource group.](../media/3-delete-resources.png)

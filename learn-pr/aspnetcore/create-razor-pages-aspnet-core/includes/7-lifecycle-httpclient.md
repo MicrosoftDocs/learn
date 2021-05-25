@@ -139,7 +139,7 @@ Now that you walked through how `ProductService` is made available to the app as
     ```
 
 As pointed out previously, the `ProductService` service was injected directly into `CreateModel` by including it as a constructor parameter, using DI.
-  
+
 Once the ASP.NET Core runtime determines the `HttpClient` instance is no longer in use, it automatically disposes of it.
 
 You now have a completed project that includes a new *:::no-loc text="Create":::* Razor page and its `PageModel` class. You've also walked through how the `PageModel` injects and calls the `ProductService` class methods that encapsulate HTTP request logic.

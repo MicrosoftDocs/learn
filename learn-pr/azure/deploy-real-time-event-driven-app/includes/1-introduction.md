@@ -1,14 +1,14 @@
-Application stacks, which describe the real-world scenario the best, tend to be the most efficient and reliable. Many workloads are event-driven in its nature. In this module, we're going to learn what event-driven means and how we can represent a real-world scenario on Azure.
+Application stacks, which describe the real-world scenario the best, tend to be the most efficient and reliable. Many workloads are event driven in their nature. In this module, we're going to learn what event driven means and how we can represent a real-world scenario on Azure.
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Explain event-driven and real-time workloads by example.
 - Create a scenario with simulated telemetric data.
-- Send the telemetric data with an Azure Function to an Event Hub.
-- Connect another function with this Event Hub to trigger the storage in Cosmos DB.
-- Have a look at the metrics in Application Insights to measure the performance and identify potential bottle necks.
+- Send the telemetric data with an Azure function to an event hub.
+- Connect another function with this event hub to trigger the storage in Azure Cosmos DB.
+- Have a look at the metrics in Application Insights to measure the performance and identify potential bottlenecks.
 
 ## Prerequisites
 

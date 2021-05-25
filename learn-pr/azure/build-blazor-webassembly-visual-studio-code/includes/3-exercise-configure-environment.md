@@ -1,71 +1,71 @@
-In this exercise, you'll install the tools and components needed to build a Blazor WebAssembly client app locally using **Visual Studio Code** application.
+Let's start by creating our first Blazor web app.
 
-This exercise assumes you've already installed Visual Studio Code. You can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS). 
 
-## Install tools and templates
+## Create a new Blazor app
 
-Start by downloading the Microsoft .NET Core 3.1 SDK. It includes the .NET Core SDK, the .NET Core runtime, and the ASP.NET Core runtime.
+To set up a Blazor project to work with, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
-Install .NET Core 3.1 by downloading the latest version for your operating system from https://dotnet.microsoft.com/download/dotnet-core/3.1.
+1. In Visual Studio Code, select **File** > **Open Folder**.
 
-## Install Visual Studio Code extensions
+1. Create a new folder named **BlazorApp** in the location of your choice, and then click **Select Folder**.
 
-To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: the Microsoft C# extension and the JavaScript debugger extension.
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-### Install the C# for Visual Studio Code extension
+1. In the terminal window, copy and paste the following command.
 
-1. Open Visual Studio Code on your local machine.
+    ```dotnetcli
+    dotnet new blazorserver
+    ```
 
-1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+    This command creates a basic Blazor server project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
 
-1. Search for "C# for Visual Studio Code".
+    You should now have access to these files.
 
-1. Install the **C# for Visual Studio Code (powered by OmniSharp)** extension by selecting **Install**.
+    ```bash
+    -| bin
+    -| Data
+    -| obj
+    -| Pages
+      -| _Host.cshtml
+      -| Counter.razor
+      -| Error.cshtml
+      -| Error.cshtml.cs
+      -| FethData.razor
+      -| Index.razor
+    -| Properties
+    -| Shared
+      -| MainLayout.razor
+      -| MainLayout.razor.css
+      -| NavMenu.razor
+      -| NavMenu.razor.css
+      -| SurveyPrompt.razor
+    -| wwwroot
+    -| _Imports.razor
+    -| App.razor
+    -| appsettings.Development.json
+    -| appsettings.json
+    -| BlazorApp.csproj
+    -| Program.cs
+    -| Startup.cs
+    ```
 
-### Install the JavaScript debugger extension
+1. If Visual Studio Code prompts you to install required assets, select **Yes**.
 
-The JavaScript debugger extension is currently in preview. Here you'll install the latest build.
-
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
-
-1. Search for "JavaScript debugger".
-
-1. Install the **JavaScript Debugger (Nightly)** extension by selecting the **Install** button.
-
-### Configure the JavaScript debugger extension
-
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
-
-1. From the list of enabled extensions, select **JavaScript Debugger (Nightly)**.
-
-    ![Screenshot showing installed Visual Studio Code extensions in the extensions browser with the JavaScript debugger extension highlighted](../media/visual-studio-code-plugins.png)
-
-1. To open the extensions settings, select and hold (or right-click) **JavaScript Debugger (Nightly)** and select **Extension Settings**.
-
-1. Scroll to the **Debug > JavaScript Use Preview** setting.
-
-1. Select **Use the new in-preview JavaScript debugger for Node.js and Chrome**.
-
-    ![Screenshot showing the Use the new in-preview JavaScript debugger for Node.js and Chrome setting selected](../media/enable-js-debugging.png)
-
-## Create a new Blazor WebAssembly app
-
-To validate your setup, make a new Blazor WebAssembly client web app that uses the installed template.
-
-1. Open a terminal or Command Prompt window on your local development machine.
-
-1. At the command prompt, enter **dotnet new blazorwasm -o CICalc**.
-
-1. Go to the CICalc subfolder.
-
+    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
+    
 ## Run the app
 
-1. At the command prompt, enter **dotnet run** to run the app.
+1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
+ 
+    ```dotnetcli
+    dotnet watch run
+    ```
 
-1. In a web browser, go to https://localhost:5001.
-
+    This will build and start the app, and then rebuild and restart the app whenever you make code changes.  The browser should automatically open at the address https://localhost:5000.
+    
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 
-1. Return to the terminal in Visual Studio code and select Ctrl+C to stop the app.
+1. When you're ready to stop, return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
 
 You'll use this Blazor app in the following exercises.

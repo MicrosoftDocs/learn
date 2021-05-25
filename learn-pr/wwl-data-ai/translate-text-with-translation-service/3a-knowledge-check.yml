@@ -3,8 +3,8 @@ uid: learn.wwl.translate-text-with-translation-service.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 09/13/2020
+  description: "Knowledge check"
+  ms.date: 05/20/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "Text Analytics"
       isCorrect: false
       explanation: "Incorrect. The Text Analytics service does not support translation or speech input."
-  - content: "You need to use the Translator Text service to translate email messages from Spanish into both English and French? What is the most efficient way to accomplish this goal?"
+  - content: "You need to use the Translator Text service to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
     choices:
     - content: "Make a single call to the service; specifying a \"from\" language of \"es\", a \"to\" language of \"en\", and another \"to\" language of \"fr\"."
       isCorrect: true

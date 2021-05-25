@@ -244,7 +244,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 1. Create a new public IP address.
 
-    ```Azure CLI
+    ```azurecli
     az network public-ip create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --allocation-method Static \

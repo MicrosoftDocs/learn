@@ -21,7 +21,7 @@ Finally, you'll combine the variables with literal strings passed into a series 
 When you're finished, the message should resemble the following output:
 
 ```output
-The temperature is 34.444444444444444444444444444 Celsius.
+The temperature is 34.444444444444444444444444447 Celsius.
 ```
 > [!Note]
 > Admittedly, we would prefer to not see so many values after the decimal point.  Ideally the value would be formatted to a single value after the decimal point: `34.4`.  In the module "Format values for display using composite formatting and string interpolation in C#" we'll learn how to format numbers for proper display to the user.

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.6-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: " What’s the command for executing and compiling Go apps?"
+    choices:
+    - content: "go build"
+      isCorrect: false
+      explanation: "Incorrect. The go build command compiles the program and generates the binary executable, but it doesn't run the program."
+    - content: "go run"
+      isCorrect: true
+      explanation: "Correct. The go run command compiles and runs the program, but it doesn't generate the binary executable."
+    - content: "go install"
+      isCorrect: false
+      explanation: "Incorrect. The go install command compiles the app, generates the binary, and moves it to the $GOBIN directory, but it doesn't run the program."
+    - content: "go compile"
+      isCorrect: false
+      explanation: "Incorrect. The go compile command is an invalid command."
+  - content: "Where should you place your project files on your workstation?"
+    choices:
+    - content: "Anywhere I want"
+      isCorrect: false
+      explanation: "Although this is true, we haven't covered how to do it yet."
+    - content: "At the root file system"
+      isCorrect: false
+      explanation: "This is partially true, but we haven't yet covered how to create projects outside of the $GOPATH."
+    - content: "At the workspace directory"
+      isCorrect: true
+      explanation: "Correct. At the moment, this is the only option we've explored, so it's the correct answer."

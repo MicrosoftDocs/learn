@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-write-test-program.4-project-api
+metadata:
+  title: Write the bank API
+  description: Build a web API to test and use the bank project externally.
+  ms.date: 02/02/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write the bank API
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-project-api.md)]

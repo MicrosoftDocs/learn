@@ -1,4 +1,4 @@
-Given serverless SQL pool provides look and feel of SQL Server, in addition to using clients that work with SQL Server, you can connect and execute queries programmatically. Here is an example of a C# app that connects to serverless SQL pool using the Azure Active Directory identity.
+Given serverless SQL pool provides a look and feel of SQL Server, in addition to using clients that work with SQL Server, you can connect and execute queries programmatically. Here is an example of a C# app that connects to a serverless SQL pool using the Azure Active Directory identity.
 
 Here is the code sample you can use to get started with:
 

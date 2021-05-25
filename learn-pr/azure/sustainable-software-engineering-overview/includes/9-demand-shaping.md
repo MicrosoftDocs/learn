@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxeEn]
+
 [Demand shifting](https://principles.green/principles/carbon-intensity/#heading-demand-shifting) is the strategy of moving compute to regions or times when the carbon intensity is less, or to put it another way when the supply of renewable electricity is high.
 
 Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand to match the existing supply.

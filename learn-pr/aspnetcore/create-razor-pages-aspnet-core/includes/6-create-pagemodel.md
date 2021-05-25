@@ -122,24 +122,29 @@ Your new `CreateModel` class gained access to any model types defined in the `Co
 using ContosoPets.Ui.Models;
 ```
 
-Examine the `Product` model record:
+Examine the `Product` model class:
 
 ```csharp
 using System.ComponentModel.DataAnnotations;
 
 namespace ContosoPets.Ui.Models
 {
-    public record Product(
-        int Id,
-        [Required] string Name,
-        [Range(0.01, 9999.99)] decimal Price
-    );
+    public class Product
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        [Range(0.01, 9999.99)]
+        public decimal Price { get; set; }
+    }
 }
 ```
 
 Data annotations are attributes that specify behaviors you want to enforce on the model properties to which they're applied.
 
-The `Product` record uses the:
+The `Product` class uses the:
 
 * `[Required]` attribute to indicate that a property must have a value.
 * `[Range]` attribute to constrain a value to a specific range.

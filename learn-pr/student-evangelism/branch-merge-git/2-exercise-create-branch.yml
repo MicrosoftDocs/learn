@@ -3,10 +3,10 @@ uid: learn.student-evangelism.branch-merge-git.2-exercise-create-branch-alice
 title: Exercise - Create a branch as Alice
 metadata:
   title: Exercise - Create a branch as Alice
-  description: Setup and create branches
-  ms.date: 06/24/2019
-  author: shanamatthews
-  ms.author: shanama
+  description: Set up and create branches.
+  ms.date: 03/16/2021
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

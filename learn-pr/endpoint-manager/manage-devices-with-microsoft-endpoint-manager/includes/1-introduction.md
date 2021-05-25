@@ -18,7 +18,7 @@ Here, you'll learn about provisioning, as well as managing devices throughout th
 
 In this module, you will:
 
-  - Understand the how your organization's devices can be provisioned.
+  - Understand how your organization's devices can be provisioned.
   - Understand the device management lifecycle.
   - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
 

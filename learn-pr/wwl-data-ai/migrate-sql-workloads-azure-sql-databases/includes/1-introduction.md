@@ -20,4 +20,4 @@ In this module, you'll learn:
 
 Students who take this training should have professional experience with SQL Server, and technical knowledge equivalent to the following courses:
 
-- [Azure fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/)
+- [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/)

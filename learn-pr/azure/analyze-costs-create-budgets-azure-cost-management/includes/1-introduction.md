@@ -1,4 +1,4 @@
-In this example scenario, you're a manager in your organization. Your team has been using Azure for the last several months and has created multiple resources that cost money. You'd like to understand Cost Management best practices. You want to analyze which resources are the primary drivers of your monthly bill. You'd also like to set thresholds on your team's Azure expenses to stay within a budget. The budget was given to you by the finance department of your organization.
+In this example scenario, you're a manager in your organization. Your team has been using Azure for the last several months, and has created multiple resources that cost money. You'd like to understand Cost Management best practices. You want to analyze which resources are the primary drivers of your monthly bill. You'd also like to set thresholds on your team's Azure expenses to stay within a budget. The budget was given to you by the finance department of your organization.
 
 ## Learning objectives
 

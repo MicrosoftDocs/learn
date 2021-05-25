@@ -3,12 +3,13 @@ uid: learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
 title: Exercise - Deploy a sample Spring Boot application
 metadata:
   title: Exercise - Deploy a sample Spring Boot application
-  description: In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
+  description: In this exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-devops-actions
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise.md)]

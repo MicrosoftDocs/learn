@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-compute-fundamentals.azure-virtual-machines
-title: When to use Azure Virtual Machines
+title: Decide when to use Azure Virtual Machines
 metadata:
-  title: When to use Azure Virtual Machines
-  description: In this unit, you'll learn about Azure Virtual Machines.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Decide when to use Azure Virtual Machines
+  description: "In this unit, you'll learn about Azure Virtual Machines."
+  ms.date: 05/20/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/azure-virtual-machines.md)]
+  [!include[](includes/3-azure-virtual-machines.md)]

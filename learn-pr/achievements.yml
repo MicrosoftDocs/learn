@@ -272,3 +272,268 @@ achievements:
   title: Review planning and managing Azure costs
   summary: Review planning and managing Azure costs
   iconUrl: /learn/achievements/review-planning-managing-costs.svg
+- uid: learn.explore-azure-infrastructure.badge
+  type: badge
+  title: Core Cloud Services - Azure architecture and service guarantees
+  summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
+  iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+- uid: learn.intro-to-compute.badge
+  type: badge
+  title: Core Cloud Services - Azure compute options
+  summary: Review the Azure compute services and explore how they can solve common business needs.
+  iconUrl: /learn/achievements/intro-to-azure-compute.svg
+- uid: learn.intro-to-azure-networking.badge
+  type: badge
+  title: Core Cloud Services - Azure networking options
+  summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
+  iconUrl: /learn/achievements/intro-to-azure-networking.svg
+- uid: learn.intro-to-data-in-azure.badge
+  type: badge
+  title: Core Cloud Services - Azure data storage options
+  summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
+  iconUrl: /learn/achievements/intro-to-data-in-azure.svg
+- uid: learn.intro-to-governance.badge
+  type: badge
+  title: Apply and monitor infrastructure standards with Azure Policy
+  summary: Learn about governance and management in Azure services.
+  iconUrl: /learn/achievements/intro-to-governance.svg
+- uid: learn.introduction-to-security.badge
+  type: badge
+  title: Security, responsibility, and trust in Azure
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+  iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+- uid: learn.predict-costs-and-optimize-spending.badge
+  type: badge
+  title: Predict costs and optimize spending for Azure 
+  summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+  iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+- uid: learn.principles-cloud-computing.badge
+  type: badge
+  title: Cloud Concepts - Principles of cloud computing
+  summary: Explore the core concepts of cloud computing and how it can help your business.
+  iconUrl: /learn/achievements/principles-cloud-computing.svg
+- uid: learn.welcome-to-azure.badge
+  type: badge
+  title: Core Cloud Services - Introduction to Azure
+  summary: Get started with Azure by creating and configuring your first website in the cloud.
+  iconUrl: /learn/achievements/welcome-to-azure.svg
+- uid: learn.cloud-foundations.trophy
+  type: trophy
+  title: Azure fundamentals
+  summary: New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  iconUrl: /learn/achievements/azure-fundamentals.svg
+- uid: learn.foundations-data-science.trophy
+  type: trophy
+  title: "Foundations of data science"
+  summary: "Foundations of data science"
+  iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
+- uid: learn.learn-data-science-method.badge
+  type: badge
+  title: "Learn the data science method"
+  summary: "Learn the data science method"
+  iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
+- uid: learn.introduction-python-using-datascience-library.badge
+  type: badge
+  title: "Introduction to python using the datascience library"
+  summary: "Introduction to python using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+- uid: learn.create-manipulate-tables-using-datascience-library.badge
+  type: badge
+  title: "Create and manipulate tables using the datascience library"
+  summary: "Create and manipulate tables using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+- uid: learn.design-plot-graphs-python.badge
+  type: badge
+  title: "Design and plot graphs in Python"
+  summary: "Design and plot graphs in Python"
+  iconUrl: /learn/achievements/student-evangelism/design-plot-graphs-python.svg
+- uid: learn.introduction-probability.badge
+  type: badge
+  title: "Introduction to probability"
+  summary: "Introduction to probability"
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-probability.svg
+- uid: learn.simulate-generate-empirical-distributions-python.badge
+  type: badge
+  title: "Simulate and generate empirical distributions in Python"
+  summary: "Simulate and generate empirical distributions in Python"
+  iconUrl: /learn/achievements/student-evangelism/simulate-generate-empirical-distributions-python.svg
+- uid: learn.test-hypothesis-by-simulating-statistics.badge
+  type: badge
+  title: "Test hypothesis by simulating statistics"
+  summary: "Test hypothesis by simulating statistics"
+  iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+- uid: learn.compare-two-samples-by-bootstrapping.badge
+  type: badge
+  title: "Compare two samples by bootstrapping"
+  summary: "Compare two samples by bootstrapping"
+  iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
+- uid: learn.understand-normal-curve.badge
+  type: badge
+  title: "Understand the normal curve"
+  summary: "Understand the normal curve"
+  iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+- uid: learn.make-predictions-with-linear-regression.badge
+  type: badge
+  title: "Make predictions with linear regression"
+  summary: "Make predictions with linear regression"
+  iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+- uid: learn.simulate-distribution-regression-coefficients.badge
+  type: badge
+  title: "Simulate the distribution of regression coefficients"
+  summary: "Simulate the distribution of regression coefficients"
+  iconUrl: /learn/achievements/student-evangelism/simulate-distribution-regression-coefficients.svg
+- uid: learn.predict-classes-with-knn-classifier.badge
+  type: badge
+  title: "Predict  classes with a knn classifier"
+  summary: "Predict  classes with a knn classifier"
+  iconUrl: /learn/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+  type: badge
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
+  iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
+- uid: learn.data-ai.intro-to-azure-dsvm
+  type: badge
+  title: Introduction to the Azure Data Science Virtual Machine
+  summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
+  iconUrl: /learn/achievements/data-ai/intro-to-azure-dsvm-badge.svg
+- uid: learn.wwl.synthesize-text-input-speech.badge
+  type: badge
+  title: Synthesize Text Input to Speech
+  summary: Synthesize Text Input to Speech
+  iconUrl: /learn/achievements/synthesize-text-input-speech.svg
+- uid: learn.csc.space-jam-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
+  type: badge
+  title: "Space Jam: A New Legacy Cloud Skills Challenge"
+  summary: "Space Jam: A New Legacy Cloud Skills Challenge"
+  iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceJam.svg
+- uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
+  type: badge
+  title: Space Rocks! Cloud Skills Challenge
+  summary: Space Rocks! Cloud Skills Challenge
+  iconUrl: /learn/achievements/csc/CloudSkillsChallenge-SpaceRocks.svg
+- uid: learn.data-ai.get-started-with-azure-dsvm.trophy
+  type: trophy
+  title: Get started with Machine Learning with an Azure Data Science Virtual Machine
+  summary: Azure includes a pre-configured virtual machine service for performing Data Science tasks. Learn how to use the Azure Data Science Virtual Machine to do common data analysis and machine learning tasks.
+  iconUrl: /learn/achievements/data-ai/get-started-with-azure-dsvm-trophy.svg
+- uid: learn.data-science.trophy
+  type: trophy
+  title: Extract knowledge and insights from your data with Azure Databricks
+  summary: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics, and deep learning.
+  iconUrl: /learn/achievements/data-science.svg
+- uid: learn.modern-data-warehouse.trophy
+  type: trophy
+  title: Perform data engineering with Azure Databricks
+  summary: Learn how to use Azure Databricks to accelerate the setup of Databricks in Azure.
+  iconUrl: /learn/achievements/modern-data-warehouse.svg
+- uid: learn.data-ai.publish-experiment-with-ml-studio.trophy
+  type: trophy
+  title: Publish a Machine Learning Experiment with Microsoft Azure Machine Learning Studio
+  summary: Machine Learning plays a big role in applications that leverage artificial intelligence. Microsoft provides the Machine Learning Studio and Machine Learning Services that help you take advantage of pre-built models or create your own custom machine learning models. Learn how to create an account on Azure Machine Learning Studio, create a sample experiment, and then publish and deploy the experiment for consumption as a web service.
+  iconUrl: /learn/achievements/data-ai/publish-experiment-with-ml-studio.svg
+- uid: learn.data-ai.explore-data-science-tools-in-azure.trophy
+  type: trophy
+  title: Explore AI solution development with data science services in Azure
+  summary: Learn the tools available in Azure for data scientists to explore, analyze and process data with machine learning.
+  iconUrl: /learn/achievements/data-ai/explore-data-science-tools-in-azure-trophy.svg
+- uid: learn.performing-model-training-evaluation-and-selection-with-azure-databricks
+  type: badge
+  title: Train, evaluate, and select machine-learning models with Azure Databricks
+  summary: Training a machine-learning model to have high predictive accuracy is crucial if you're a data scientist. This module focuses on basic and advanced techniques for training a machine-learning model and how these techniques are supported by Azure Databricks.
+  iconUrl: /learn/achievements/performing-model-training-evaluation-and-selection-with-azure-databricks.svg
+- uid: learn.create-data-visualizations-using-azure-databricks-and-power-bi
+  type: badge
+  title: Create data visualizations by using Azure Databricks and Power BI
+  summary: Use Azure Databricks to create basic to advanced visualizations by using built-in charts and third-party libraries such as Matplotlib. Connect your Azure Databricks data to Power BI to create business-intelligence dashboards that can be shared with others.
+  iconUrl: /learn/achievements/create-data-visualizations-using-azure-databricks-and-power-bi.svg
+- uid: learn.performing-exploratory-data-analysis-with-azure-databricks
+  type: badge
+  title: Perform exploratory data analysis with Azure Databricks
+  summary: Learn the fundamentals of using Azure Databricks notebooks to do basic and advanced exploratory data analysis.
+  iconUrl: /learn/achievements/performing-exploratory-data-analysis-with-azure-databricks.svg
+- uid: learn.intro-to-azure-databricks
+  type: badge
+  title: Intro to Azure Databricks
+  summary: Learn the fundamentals of Azure Databricks and Apache Spark notebooks.
+  iconUrl: /learn/achievements/intro-to-azure-databricks.svg
+- uid: learn.read-and-write-data-using-azure-databricks
+  type: badge
+  title: Read and write data using Azure Databricks
+  summary: Use Azure Databricks to work with multiple data sources, combining inputs from files and data stores such as Azure SQL Database, and transform and store that data for advanced analytics.
+  iconUrl: /learn/achievements/read-and-write-data-using-azure-databricks.svg
+- uid: learn.performing-text-analytics-with-azure-databricks
+  type: badge
+  title: Perform text analytics with Azure Databricks
+  summary: In this module, you will investigate techniques for developing machine learning models used in text analytics. You will do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
+  iconUrl: /learn/achievements/performing-text-analytics-with-azure-databricks.svg
+- uid: learn.data-ingestion-with-azure-data-factory
+  type: badge
+  title: Data ingestion with Azure data factory
+  summary: In this module, you use Azure Databricks to work with multiple data sources. Learn how to combine inputs from files and data stores, such as Azure SQL Database, and transform and store that data for advanced analytics.
+  iconUrl: /learn/achievements/data-ingestion-with-azure-data-factory.svg
+- uid: learn.deep-learning-in-azure-databricks
+  type: badge
+  title: Deep learning with Azure Databricks
+  summary: In this module, you'll investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
+  iconUrl: /learn/achievements/deep-learning-in-azure-databricks.svg
+- uid: learn.streaming-in-azure-databricks
+  type: badge
+  title: Work with streaming data in Azure Databricks
+  summary: Learn how to analyze and process streaming data by using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
+  iconUrl: /learn/achievements/streaming-in-azure-databricks.svg
+- uid: learn.perform-basic-data-transformation-in-azure-databricks
+  type: badge
+  title: Perform basic data transformations in Azure Databricks
+  summary: Learn the tools and techniques to do basic data transformations in Azure Databricks.
+  iconUrl: /learn/achievements/perform-basic-data-transformation-in-azure-databricks.svg
+- uid: learn.create-data-pipelines-using-databricks-delta
+  type: badge
+  title: Create data pipelines by using Databricks Delta
+  summary: Learn how to use Databricks Delta in Azure to manage the flow of data (a data pipeline) to and from a data lake. This system includes mechanisms to create, append, and upsert data to Apache Spark tables, taking advantage of built-in reliability and optimizations. Learn how Databricks Delta architecture helps speed up reads, and how it lets multiple writers modify a dataset simultaneously and see consistent views. Finally, implement a Lambda Architecture by processing batch and streaming data with Delta.
+  iconUrl: /learn/achievements/create-data-pipelines-using-databricks-delta.svg
+- uid: learn.understanding-the-sql-dw-connector-with-azure-databricks
+  type: badge
+  title: Access SQL Data Warehouse instances with Azure Databricks
+  summary: Learn how to access Azure SQL Data Warehouse from Azure Databricks by using the SQL Data Warehouse connector. This allows you to use Apache Spark with Azure Blob storage and PolyBase in SQL Data Warehouse to efficiently transfer large volumes of data between a Databricks cluster and a SQL Data Warehouse instance.
+  iconUrl: /learn/achievements/understanding-the-sql-dw-connector-with-azure-databricks.svg
+- uid: learn.perform-advanced-data-transformation-in-azure-databricks
+  type: badge
+  title: Perform advanced data transformation data in Azure Databricks
+  summary: Learn how to perform advanced data transformations in Azure Databricks, and encapsulate transformation logic through user-defined functions (UDFs) and libraries.
+  iconUrl: /learn/achievements/perform-advanced-data-transformation-in-azure-databricks.svg
+- uid: learn.data-ai.create-an-experiment-in-ml-studio
+  type: badge
+  title: Create an Experiment in Azure Machine Learning Studio
+  summary: Learn how to use Microsoft Azure Machine Learning Studio to create an experiment, test it, and then publish it as a web service.
+  iconUrl: /learn/achievements/data-ai/create-an-experiment-in-ml-studio.svg
+- uid: learn.data-ai.create-machine-learning-studio-account
+  type: badge
+  title: Create an Azure Machine Learning Studio Account
+  summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning Studio.
+  iconUrl: /learn/achievements/data-ai/create-machine-learning-studio-account.svg
+- uid: learn.data-ai.choose-azure-data-science-option
+  type: badge
+  title: Choose the Data Science service in Azure you need
+  summary: Choose the Data Science service in Azure you need
+  iconUrl: /learn/achievements/data-ai/choose-data-science-option-in-azure-badge.svg
+- uid: learn.data-ai.intro-to-data-science-in-azure
+  type: badge
+  title: Introduction to Data Science in Azure
+  summary: In this module, you will learn about the Data Science process from end to end.  You will see that there are several specialized roles involved.
+  iconUrl: /learn/achievements/data-ai/intro-to-data-science-in-azure-badge.svg
+- uid: learn.data-ai.explore-azure-dsvm-types
+  type: badge
+  title: Explore the types of Azure Data Science Virtual Machines
+  summary: You learn about the types of Azure Data Science Virtual Machines (DSVM) and when to use each type.  You will learn about the Windows-based and Linux-based DSVMs which each support different needs.
+  iconUrl: /learn/achievements/data-ai/explore-azure-dsvm-types-badge.svg
+- uid: learn.data-ai.provision-and-use-azure-dsvm
+  type: badge
+  title: Provision and use an Azure Data Science Virtual Machine
+  summary: Provision and use an Azure Data Science Virtual Machine
+  iconUrl: /learn/achievements/data-ai/provision-and-use-azure-dsvm-badge.svg
+- uid: learn.interactive-deep-learning
+  type: badge
+  title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
+  summary: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
+  iconUrl: /learn/achievements/interactive-deep-learning.svg

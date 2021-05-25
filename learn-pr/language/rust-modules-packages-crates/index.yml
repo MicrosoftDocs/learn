@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.language.rust-modules-packages-crates
+metadata:
+  title:  Explore modules, packages, and third-party crates
+  description: "Learn about how to effectively use modules and how to integrate with packages and third-party crates."
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore modules, packages, and third-party crates
+summary: "Learn about how to effectively use modules and how to integrate with packages and third-party crates."
+abstract:  |
+  In this module, you'll learn:
+  - How to organize your code in files, modules, and packages.
+  - How those concepts interact.
+  - How to use third-party packages from the [Crates.io](https://crates.io?azure-portal=true) repository.
+prerequisites: | 
+  - Have your Rust development environment set up.
+  - Know how to create, edit, and run Rust code by using Cargo.
+iconUrl: /learn/achievements/rust-modules-packages-crates.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.rust-modules-packages-crates.0-introduction
+- learn.language.rust-modules-packages-crates.1-concepts-code-organization
+- learn.language.rust-modules-packages-crates.2-split-code-into-modules
+- learn.language.rust-modules-packages-crates.3-separate-modules-into-files
+- learn.language.rust-modules-packages-crates.4-add-third-party-crates-to-project
+- learn.language.rust-modules-packages-crates.5-exercise-visibility
+- learn.language.rust-modules-packages-crates.6-exercise-modules
+- learn.language.rust-modules-packages-crates.7-knowledge-check
+- learn.language.rust-modules-packages-crates.8-summary
+badge:
+  uid: learn.language.rust-modules-packages-crates.badge

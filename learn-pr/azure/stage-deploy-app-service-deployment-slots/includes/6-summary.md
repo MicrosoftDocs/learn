@@ -1,4 +1,4 @@
-In this module, you learned how to use deployment slots in Azure App Service. You used slots to test and stage new versions of your app, and you swapped those deployment slots. You can swap slots both to deploy a tested app to production and to roll back a deployed app when unexpected problems arise.
+In this module, you learned how to use deployment slots in Azure App Service. You used slots to test and stage new versions of your app, and you swapped those deployment slots. You can swap slots both to deploy a tested app to production, and to roll back a deployed app when unexpected problems arise.
 
 When you consider using deployment slots, remember that Azure warms up an app before a swap, and traffic redirection is instantaneous. The result is that your app is deployed without service interruptions or performance drops.
 

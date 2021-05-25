@@ -1,88 +1,181 @@
-In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
+In this exercise, you'll use an automated workflow to build-and-deploy your Spring Boot sample application.
 
-## Set up your Maven Build/Deploy GitHub Action
+::: zone pivot="github-actions"
 
-Now that we've provisioned our Azure resources we can deploy your sample Spring Boot application.
-To create our Maven GitHub workflow, we'll use the built-in CI/CD wizard tool that is available in the Azure App Service portal - The **Deployment Center**.
+## Set up a GitHub action to deploy the sample application
 
-![Deployment Center.](../media/4-deployment.png)
+Now that you've provisioned your Azure resources, you can deploy your sample Spring Boot application.
 
-The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory. It will also link your GitHub Action to an Azure App Service publishing profile.
+To create your Maven GitHub workflow, you'll use the built-in continuous integration and continuous delivery (CI/CD) wizard tool that's available at the Deployment Center in the Azure App Service portal.
 
-1. Navigate to your Azure App Service webapp in the Azure portal
+![Screenshot of the Azure App Service Deployment Center.](../media/4-deployment.png)
 
-1. On the left side, select **Deployment Center**
+The Azure App Service Deployment Center automatically generates a GitHub Actions workflow file that's based on your application stack. The Deployment Center then commits the file to your GitHub repository in the correct directory. The Deployment Center also links your GitHub action to an Azure App Service publishing profile.
 
-1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
+1. In the Azure portal, go to your Azure App Service web app.
 
-1. Next, select **GitHub Actions**
+1. On the left pane, select **Deployment Center**.
 
-1. On the right, under **Settings**, use the dropdowns to select your GitHub repository, **main** branch, and **JAVA 8** as the application stack
+1. Under **Continuous Deployment (CI/CD)**, select **GitHub**.
 
-1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below. You'll have a different application name (APP_NAME) and publishing profile:
+1. Select **GitHub Actions**.
 
-    ```yml
-    name: Build and deploy JAR app to Azure Web App - APP_NAME
-    
-    on:
-      push:
-        branches:
-          - main
-      workflow_dispatch:
-    
-    jobs:
-      build-and-deploy:
-        runs-on: ubuntu-latest
-    
-        steps:
-        - uses: actions/checkout@master
-    
-        - name: Set up Java version
-          uses: actions/setup-java@v1
-          with:
-            java-version: '8'
-    
-        - name: Build with Maven
-          run: mvn clean install
-    
-        - name: Deploy to Azure Web App
-          uses: azure/webapps-deploy@v2
-          with:
-            app-name: 'APP_NAME'
-            slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
-            package: '${{ github.workspace }}/target/*.jar'
-    ```
+1. Under **Settings**, in the drop-down lists, do the following:
 
-1. Select **Save** to commit the workflow file to the repository, and immediately start to build and deploy your app.
+   a. Select your GitHub repository.  
+   b. For branch, select **main**.  
+   c. For application stack, select **JAVA 8**.
+
+1. On the final page, review your selections and preview the workflow file that will be committed to the repository.
+
+1. Select **Save** to commit the workflow file to the repository, and immediately start building and deploying your app.
 
     > [!NOTE]
-    > You also trigger the GitHub Actions workflow by going to "Actions", then select the "build-and-deploy" workflow and "Re-run Jobs".
+    > You can also trigger the GitHub Actions workflow in your repository by selecting the **Actions** tab, selecting the **build-and-deploy** workflow, and then selecting **Re-run jobs**.
 
-## Confirm the GitHub Action build
+## Confirm the GitHub Actions build
 
-1. Go to the "Actions" tab on your repository, then select the "build-and-deploy" workflow.
+1. In your GitHub repository, select the **Actions** tab and then, on the left hand side, under **All Workflows**, select "**Build and deploy JAR app to Azure Web App**".
 
-1. Expand the "Deploy to Azure Web App" step. Terraform has deployed the Java Web App and displayed the Azure Instance URL.
+1. Next, in the Right side table, under **workflow run**, select the workflow run "**Add or update the App Service deployment workflow configuration**".
 
-1. Verify your Java application is deployed, connection to your MySQL database, and returning data.
+1. Wait until the workflow run is finished, then under the **deploy** job in the workflow run, copy the URL in the **deploy** job that displays the Azure webapp URL.
 
-    ![Maven GitHubAction run.](../media/4-maven-run.png)
+1. Finally, open the URL in a browser and verify that your Java application is deployed, connected to your MySQL database, and is returning data.
 
 ## Next steps
 
-Congratulations! You now have two GitHub actions workflows - a provisioning action and a build/deploy action.
-Each time you `git push` your code, your build/deploy action is triggered and your application is deployed.
+Congratulations! You now have two GitHub Actions workflows: a provisioning action and a build-and-deploy action.
+
+Each time you enter a `git push` command to commit your code, your build-and-deploy action is triggered and your application is deployed.
 
 > [!IMPORTANT]
-> Re-running your provision GitHub action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the GitHub action.
+> Re-running the provisioning of your GitHub action won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the GitHub action.
 >
-> Re-running your build/deploy GitHub action will replace your application.
+> Re-running your build-and-deploy GitHub action will replace your application.
 >
-> If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed to your new Publish Profile:
+> If you re-create your App Service instance, you also need to change to the new publishing profile. You need to change only the following line:
 
 ```yml
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
 ```
 
-In the next unit, we'll do a knowledge check and then summarize what we learnt.
+::: zone-end
+
+::: zone pivot="azure-devops"
+
+## Set up an Azure Pipeline to deploy the sample application
+
+As before, you'll need to create an Azure Pipeline to build-and-deploy your application.
+
+In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
+
+You will now be given 4 tabs to setup your Pipeline:
+
+1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
+1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
+1. In the path, this time, select "/azuredevops/build_deploy.yml"
+1. Select **Continue** to go the "***Review**" tab and review your PipeLine before you run it
+
+On the "Review your pipeline YAML" screen, inspect the Yaml file you'll use to create your Pipeline:
+
+```yml
+name: Build and Deploy
+
+trigger:
+- main
+
+stages:
+
+# Build your Spring Boot App using Maven
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: MavenPackageAndPublishArtifacts
+    displayName: Maven Package and Publish Artifacts
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+    - task: Maven@3
+      displayName: 'Maven Package'
+      inputs:
+        mavenPomFile: 'pom.xml'
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to artifact staging directory'
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**/target/*.?(war|jar)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+
+    - upload: $(Build.ArtifactStagingDirectory)
+      artifact: drop
+
+# Deploy to Azure using the AzureWebApp task using your Service Connection
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeployLinuxWebApp
+    displayName: Deploy Linux Web App
+    environment: 'production'
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            displayName: 'Azure Web App Deploy'
+            inputs:
+              azureSubscription: $(serviceConnection)
+              appType: webAppLinux
+              appName: '$(webAppName)'
+              package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+```
+
+Let's look at some of the fields we use in the "**Build**" config:
+
+* **azureSubscription**: your Azure subscription.
+* **appType**: your Web App type.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents.
+
+## Add Build Variables
+
+As with our provisioning pipeline, before you save and run the build-and-deploy pipeline, you need to add your pipeline's variables:
+
+1. Select "**Variables**" (Top right)
+1. Add a variable named "**serviceConnection**" with the value as the name of your Service Connection.
+1. Select "**okay**" (bottom-right corner) to save the variable
+1. Add a second variable named "**webAppName**" with your App Service name (same value defined in your Terraform variable "application_name").
+1. Select "**okay**" (bottom-right corner) to save the variable
+1. Select "**save**" (bottom-right corner) to save both the variables
+
+![Screenshot displaying the new variables.](../media/5-variables.png)
+
+## Watch the pipeline run
+
+1. Select "**run**" (top-right corner) to save and run the pipeline
+1. As you did for your **provision** pipeline, trace the build process through each of the stages and steps.
+1. Verify that your Java application is deployed, is connected to your MySQL database, and is returning data.
+
+![Screenshot displaying the new Azure Pipeline run.](../media/5-run.png)
+
+## Next steps
+
+Congratulations! You now have two Azure Pipeline workflows: a provisioning Pipeline and a build-and-deploy Pipeline.
+
+Each time you enter a `git push` command to commit your code to the **main** branch, your build-and-deploy Pipeline is triggered and your application is deployed.
+
+> [!IMPORTANT]
+> Re-running the Provision Pipeline won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the Pipeline. More information on how to better achieve this in production is available in the "Summary" section.
+>
+> Re-running your build-and-deploy Pipeline will replace your application.
+
+::: zone-end
+
+The next unit is a knowledge check to see what you've learned in this module.

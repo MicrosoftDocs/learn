@@ -1,10 +1,10 @@
 If you're using the .NET Framework to build a WebJob, the WebJobs SDK will make several programming tasks easier and quicker.
 
-As the senior web developer responsible for the watch dealer's web site, you have already deployed continuous WebJobs that regularly poll a message queue. You now need to look at how the WebJobs SDK can be used to create new messages, without using the infinite loop.
+As the senior web developer responsible for the watch dealer's website, you have already deployed continuous WebJobs that regularly poll a message queue. You now need to look at how the WebJobs SDK can be used to create new messages, without using the infinite loop.
 
 Here, you will learn about the `JobHost` object, triggers, bindings, and other tools in the WebJobs SDK.
 
-## The WebJobs SDK
+## WebJobs SDK
 
 The WebJobs SDK is a .NET library that can help simplify many programming tasks common to WebJobs. It's not required to use the SDK in your WebJob, but it can be helpful and should reduce development time and costs.
 
@@ -33,13 +33,13 @@ Add these connection strings to the **app.config** file in the WebJob project:
   </connectionStrings>
 ```
 
-You can find these connection strings in the Azure portal. Look on the **Overview** page for each storage account:
+You can find these connection strings in the Azure portal. Look on the **Overview** page for each storage account.
 
 ![Obtaining a connection string for a Storage account](../media/5-obtain-storage-connection-string.png)
 
 ## WebJob Host
 
-In each WebJob that uses the SDK, there is a `JobHost` object. This object will listen for trigger events and call functions. The WebJob project template adds code to the 'Main()' function in the **Program.cs** file that configures the `JobHost`:
+In each WebJob that uses the SDK, there is a `JobHost` object. This object will listen for trigger events and call functions. The WebJob project template adds code to the 'Main()' function in the **Program.cs** file that configures the `JobHost`.
 
 ```c#
 static void Main(string[] args)
@@ -57,7 +57,7 @@ static void Main(string[] args)
 }
 ```
 
-The code creates a `HostBuilder` object, which you use to configure the WebJob. In this case, the extensions for Azure Storage services are added. The code calls the `Build()` method to create a WebJob host and then calls the `Run()` method on that host.
+The code creates a `HostBuilder` object, which you use to configure the WebJob. In this case, the extensions for Azure Storage services are added. The code calls the `Build()` method to create a WebJob host, and then calls the `Run()` method on that host.
 
 ## How to code a function
 
@@ -78,7 +78,7 @@ public static void ProcessQueueMessage([QueueTrigger("queue")] string message, I
 }
 ```
 
-Each function is a public, static method that returns no value. You can use any name for the function, but make sure you use a trigger attribute on the first parameter. The example above uses the `QueueTrigger` attribute, because the function fires when an item appears in an Azure Store queue. This function only logs the message in the item, but your code could do whatever you like.
+Each function is a public, static method that returns no value. You can use any name for the function, but make sure you use a trigger attribute on the first parameter. The previous example uses the `QueueTrigger` attribute, because the function fires when an item appears in an Azure Store queue. This function only logs the message in the item, but your code could do whatever you like.
 
 If you want to respond when a Blob is added to a storage account, use a function like this code:
 
@@ -112,11 +112,11 @@ public static void Run([CosmosDBTrigger(
 }
 ```
 
-In this example, the `CosmosDBTrigger` attribute is used to set a connection string and tell the function what database and collection to monitor.
+In this example, the `CosmosDBTrigger` attribute sets a connection string, and informs the function what database and collection to monitor.
 
 ## Bindings
 
-Use bindings to avoid hard-coding input and output details in your functions. For example, if the name of your Azure Cosmos DB database might change, use a binding to set that detail declaratively. A binding to a source of data is an *input* binding. A binding for sending data is an *output* binding.
+Use bindings to avoid hardcoding input and output details in your functions. For example, if the name of your Azure Cosmos DB database might change, use a binding to set that detail declaratively. A binding to a source of data is an *input* binding. A binding for sending data is an *output* binding.
 
 To use bindings, create a new file named **functions.json** in the WebJob project. Here's an example that uses queue for input and a storage table for output:
 

@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core.5-new-razor-page-create-form
 metadata:
   title: Exercise - Add a product creation page
   description: Review the components of a Razor page and create a page with a form.
-  ms.date: 12/02/2020
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial

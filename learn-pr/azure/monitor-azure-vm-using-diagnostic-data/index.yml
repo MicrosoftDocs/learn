@@ -25,6 +25,7 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+- azure-monitor
 units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.introduction
 - learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health

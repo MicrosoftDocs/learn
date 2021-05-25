@@ -27,7 +27,7 @@ Operation start times (grouped into jobs):
 Makespan (time taken to complete all operations): 6
 ```
 
-In this instance, it is possible to visually verify that the solution does not validate any constraints. The Gantt chart shown below demonstrates this:
+In this instance, it is possible to visually verify that the solution does not have any constraint violations. The Gantt chart shown below demonstrates this:
 
 ![Gantt chart showing the start times for all operations and their assigned machines](../media/gantt-chart.png)
 

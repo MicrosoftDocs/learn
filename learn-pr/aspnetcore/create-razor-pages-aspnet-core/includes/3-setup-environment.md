@@ -12,7 +12,7 @@ Run the following command in the command shell. Be patient, as setup can take a 
 
 The preceding command:
 
-* Installs a specific version of the .NET SDK in the Cloud Shell environment.
+* Installs a specific version of the .NET Core SDK in the Cloud Shell environment.
 * Clones the ASP.NET Core starter code from a GitHub repository.
 * Provisions an Azure App Service instance and deploys the web API to it.
 * Provisions a separate App Service instance for the Razor Pages app.
@@ -52,11 +52,11 @@ A *page handler* is the method that's executed as a result of an HTTP request. F
 
 By convention, model files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each `PageModel` that focuses on CRUD operations for products uses this `Product` model.
+The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# class that defines the data properties for a product. Each `PageModel` that focuses on CRUD operations for products uses this `Product` model.
 
 ### Data annotations
 
-Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are C# attributes used to specify behaviors to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model record is stored.
+Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are C# attributes used to specify behaviors to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model's class is stored.
 
 ## The *Pages/Shared* directory
 

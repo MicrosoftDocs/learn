@@ -12,7 +12,7 @@ The number of vCores required for the coordinator node depends on your existing 
 
 Our payment app has a high throughput, due to the large number of transactions. As we're migrating from an on-premises server, we'll initially set the server group to have equal compute and RAM. We'll look at analytics, including the coordinator node's workload, to see if we need to change the number of vCores.
 
-## Real-Time Applications
+## Real-time applications
 
 Moving from a single-node database to Hyperscale, you can expect a linear performance with the number of worker cores. If you want to halve your current latency, double the number of worker cores.
 

@@ -1,5 +1,8 @@
 In this unit, you'll learn about the extension tab in Visual Studio Code and how to install the Python and IntelliCode extension.
 
+> [!NOTE]
+> If you have installed the [Visual Studio Code Coding Pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true), the Python extension has already been installed.
+
 ## Install Python extension
 
 Click on the extension tab in Visual Studio Code to access all the Python open-source tools that'll be helpful for this learning path. The extension tab looks like three blocks in the shape of an "L" with another block floating to the right.

@@ -9,7 +9,7 @@ In practice, you typically won't need to copy so many files. Here, you started b
 If you're interested in Ansible, here are some resources where you can learn more:
 
 * [ansible.com](https://www.ansible.com/?azure-portal=true)
-* [Ansible on Azure](https://docs.microsoft.com/azure/ansible/?azure-portal=true)
+* [Ansible on Azure](/azure/ansible/?azure-portal=true)
 * [Microsoft Azure Guide](https://docs.ansible.com/ansible/latest/scenario_guides/guide_azure.html?azure-portal=true)
 * [Ansible playbooks for Azure](https://github.com/Azure-Samples/ansible-playbooks?azure-portal=true)
 * [How to build your inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html?azure-portal=true)
@@ -17,14 +17,14 @@ If you're interested in Ansible, here are some resources where you can learn mor
 
 In this module, you saw a few tools that you can use to automate your configuration. Here are additional resources where you can learn more about each option:
 
-* [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro?azure-portal=true)
-* [Azure virtual machine extensions](https://docs.microsoft.com/azure/virtual-machines/extensions/overview?azure-portal=true)
+* [Azure Automation](/azure/automation/automation-intro?azure-portal=true)
+* [Azure virtual machine extensions](/azure/virtual-machines/extensions/overview?azure-portal=true)
 * Chef:
   * [chef.io](https://www.chef.io/?azure-portal=true)
   * [Learn Chef](https://learn.chef.io/?azure-portal=true)
-  * [Chef Software on Azure](https://docs.microsoft.com/azure/chef/?azure-portal=true)
+  * [Chef Software on Azure](/azure/chef/?azure-portal=true)
 * Cloud-init:
   * [cloudinit.readthedocs.io](https://cloudinit.readthedocs.io/?azure-portal=true)
-  * [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init?azure-portal=true)
-* [PowerShell DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?view=powershell-6?azure-portal=true)
+  * [Cloud-init support for virtual machines in Azure](/azure/virtual-machines/linux/using-cloud-init?azure-portal=true)
+* [PowerShell DSC](/powershell/scripting/dsc/overview/overview?azure-portal=true)
 * [Puppet](https://puppet.com/?azure-portal=true)

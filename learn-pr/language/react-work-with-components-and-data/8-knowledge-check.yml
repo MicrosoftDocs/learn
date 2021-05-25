@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+
+quiz:
+  questions:
+  - content: What function is typically used to display arrays in React?
+    choices:
+    - content: Sort
+      isCorrect: false
+      explanation: Sort will reorder the contents of an array, but doesn't provide the ability to generate JSX.
+    - content: Filter
+      isCorrect: false
+      explanation: Filter will limit the contents of an array, but doesn't provide the ability to generate JSX.
+    - content: Map
+      isCorrect: true
+      explanation: Map allows you to generate JSX from the contents of an array.
+    - content: Reverse
+      isCorrect: false
+      explanation: Reverse reverses the contents of an array, but doesn't provide the ability to generate JSX.
+  - content: How do you access `props` in a function-based React component?
+    choices:
+    - content: "`this.props`"
+      isCorrect: false
+      explanation: "`this` is not mapped to the component in a component function."
+    - content: "`this`"
+      isCorrect: false
+      explanation: "`this` is not mapped to the component in a component function."
+    - content: Add a parameter to the function.
+      isCorrect: true
+      explanation: Adding a parameter to a function-based component is how you add properties.
+  - content: "`?` can be used as a shorthand for creating `if...else` statements."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "`?` is the ternary operator and is used for this purpose."
+    - content: "False"
+      isCorrect: false
+      explanation: "`?` is the ternary operator and is used for this purpose."

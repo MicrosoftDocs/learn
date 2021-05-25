@@ -30,7 +30,7 @@ If a user has permissions on the VM, an access request is approved, and Security
 
 ## Encrypt disks
 
-Security breaches that result in lost data can have serious consequences, usually resulting in major legal and financial penalties for companies where breaches occur. Naturally, major compliance initiatives such as HIPPA and PCI have strong data encryption requirements.
+Security breaches that result in lost data can have serious consequences, usually resulting in major legal and financial penalties for companies where breaches occur. Naturally, major compliance initiatives such as HIPAA and PCI have strong data encryption requirements.
 
 Data encryption protects against loss or theft of a device by preventing unauthorized access to or removal of the hard drive. It also safeguards internal files in case an attacker tries to access them by alternate methods.
 

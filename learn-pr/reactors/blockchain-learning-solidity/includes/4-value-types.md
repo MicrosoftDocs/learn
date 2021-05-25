@@ -23,7 +23,7 @@ uint256 balance = 1000; // unsigned 256 bit integer
 
 balance - price; // 975
 2 * price; // 50
-price % 2; // 0
+price % 2; // 1
 ```
 
 ## Booleans

@@ -2,7 +2,7 @@ Everyone, and every device, has an identity that can be used to access resources
 
 In this module, you'll learn why identity is important in securing corporate resources.
 
-After completing this module, you'll be able to:
+After completing this module, you'll be able to: 
 
 - Describe the concept of identity as a security perimeter.
 - Understand the difference between authentication and authorization.

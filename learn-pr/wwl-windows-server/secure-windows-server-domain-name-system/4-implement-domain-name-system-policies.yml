@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-dns.implement-dns-policies
+title: Implement DNS policies
+metadata:
+  title: Implement DNS policies
+  description: "Implement DNS policies"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-domain-name-system-policies.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What does the `Add-DnsServerResourceRecord` cmdlet do when establishing DNS policies in Windows Server?"
+    choices:
+    - content: "It creates a DNS server zone scope for the zone containing the host record."
+      isCorrect: false
+      explanation: "That's incorrect. To create a DNS server zone scope, use the `Add-DnsServerZoneScope` cmdlet."
+    - content: "It adds a host record to the zone that is specific to the zone scope."
+      isCorrect: true
+      explanation: "That's correct. You'll need to create a host record for each zone scope."
+    - content: "It add a DNS server query resolution policy."
+      isCorrect: false
+      explanation: "That's incorrect. To create a DNS server query resolution policy, use the `Add-DnsServerQueryResolutionPolicy` cmdlet."

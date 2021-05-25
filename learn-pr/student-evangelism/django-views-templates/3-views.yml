@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.views 
+title: Get started with views 
+metadata:  
+  title: Get started with views 
+  description: Explore how to create a view in Django.
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-views.md)]

@@ -24,7 +24,7 @@ You can deploy policies across delegated subscriptions in multiple customer tena
 - Storage accounts that don’t use HTTPS can’t be created
 - Any storage accounts that aren't set to HTTPS will be marked as noncompliant
 
-You define the policy by creating a policy definition and a policy assignment in an [Azure Resource Manager template](https://github.com/Azure/Azure-Lighthouse-samples/blob/master/templates/policy-enforce-https-storage/enforceHttpsStorage.json). The template enables you to deploy the policy at scale. You can use tools like Azure PowerShell and Azure CLI to deploy the template across all customer subscriptions. Use the following snippet of Azure PowerShell code to iterate through all customer subscriptions, and deploy the template to each one:
+You define the policy by creating a policy definition and a policy assignment in an [Azure Resource Manager template](https://github.com/Azure/Azure-Lighthouse-samples/blob/master/templates/policy-enforce-https-storage/enforceHttpsStorage.json). The template enables you to deploy the policy at scale. You can use tools like Azure PowerShell and Azure CLI to deploy the template across all customer subscriptions. Use the following snippet of Azure PowerShell code to iterate through all customer subscriptions, and deploy the template to each one.
 
 ```azurepowershell
 foreach ($ManagedSub in $ManagedSubscriptions)
@@ -38,7 +38,7 @@ foreach ($ManagedSub in $ManagedSubscriptions)
 }
 ```
 
-When you've deployed your template, you’ll confirm that the policy was successfully applied across tenants. To do this, you test the policy by trying to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, such as Lamna Healthcare. You use Azure PowerShell to run a command to create a new storage account, like this:
+When you've deployed your template, you’ll confirm that the policy was successfully applied across tenants. To do this, you test the policy by trying to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, such as Lamna Healthcare. You use Azure PowerShell to run a command to create a new storage account, like this.
 
 ```azurepowershell
 New-AzStorageAccount -ResourceGroupName (New-AzResourceGroup -name policy-test -Location eastus -Force).ResourceGroupName `
@@ -101,10 +101,10 @@ You’ve defined a user with the correct permissions, and you can now deploy pol
 
 | Property| Description|
 | -------------------------------------- | ------------------------------------------------------- |
-| *roleDefinitionId*| The   role ID for the user                              |
-| *principalType*| Type of   user; for example, service principal         |
-| *delegatedManagedIdentityResourceId* | The   ID of the managed identity in the customer tenant |
-| *principalId*| The user   ID|
+| *roleDefinitionId*| The role ID for the user                              |
+| *principalType*| Type of user; for example, service principal         |
+| *delegatedManagedIdentityResourceId* | The ID of the managed identity in the customer tenant |
+| *principalId*| The user ID|
 
 > [!NOTE]
 > To use the **delegatedManagedIdentityResourceId** property, apiVersion must be set to 2019-04-01-preview. There's a detailed example template that deploys a policy definition, a policy assignment, and a role assignment to collect logs and metrics for Azure Key Vault, in this [**GitHub repo**.](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/policy-enforce-keyvault-monitoring)

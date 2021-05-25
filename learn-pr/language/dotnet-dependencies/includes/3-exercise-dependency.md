@@ -21,8 +21,9 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
     ```
 
     This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDependencies.csproj**.
-        
-    You should now have access to these files:
+
+    You should now have access to these files.
+
     ```bash
     -| bin
     -| obj
@@ -46,16 +47,16 @@ Open Program.cs. The first time you open a C# file in Visual Studio Code, you ge
 
 :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of the Visual Studio Code prompt for recommended extensions.":::
 
-Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**. 
+Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**.
 
 :::image source="../media/install-required-assets.png" alt-text="Screenshot of the Visual Studio Code prompt for required assets.":::
 
 You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
-## Add a NuGet package by using the .NET Core tool 
+## Add a NuGet package by using the .NET Core tool
 
-1. Open **Program.cs**. It should look like this:
-    
+1. Open **Program.cs**. It should look like this.
+
     ```csharp
     using System;
 
@@ -73,14 +74,13 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
     The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
-1. Install the Humanizer library by running this command:
+1. Install the Humanizer library by running the following command.
 
     ```dotnetcli
     dotnet add package Humanizer --version 2.7.9
     ```
 
-
-    Open the **DotNetDependencies.csproj** file and find the `ItemGroup` section. You should now have an entry that looks like this one:
+    Open the **DotNetDependencies.csproj** file and find the `ItemGroup` section. You should now have an entry that looks like this one.
 
     ```xml
     <ItemGroup>
@@ -88,13 +88,31 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     </ItemGroup>
     ```
 
-1. Add the following content at the top of the Program.cs file to initialize Humanizer:
+1. Add the following content at the top of the Program.cs file to initialize Humanizer.
 
     ```csharp
     using Humanizer;
     ```
+    
+    Your **Program.cs** should now look like this:
+    
+    ```csharp
+    using System;
+    using Humanizer;
 
-1. Add the following content to the Program.cs file under the `Program` class:
+    namespace DotNetDependencies
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {   
+                Console.WriteLine("Hello World");
+            }
+        }    
+    }
+    ```
+
+1. Add the following content to the Program.cs file to the bottom of the `Program` class, just after the closing brace for the Main method.
 
     ```csharp
     static void HumanizeQuantities()
@@ -113,8 +131,8 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     }
     ```
 
-1. Update the `Main` method to call the new methods:
-    
+1. Update the `Main` method to call the new methods.
+
     ```csharp
     static void Main(string[] args)
     {   
@@ -126,13 +144,13 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     }
     ```
 
-1. Run the application by entering this command in the terminal:
+1. Run the application by running the following command in the terminal.
 
     ```dotnetcli
     dotnet run
     ```
 
-    You should see the following output:
+    You should see the following output.
 
     ```output
     Quantities:

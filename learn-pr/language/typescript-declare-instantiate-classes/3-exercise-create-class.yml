@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.3-exercise-create-class
+title: Exercise- Create a class
+metadata:
+  title: Exercise- Create a class
+  description: Learn how to create a class using the class keyword, declare the class properties, and define the class constructor, accessors, and the class methods.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-create-class.md)]

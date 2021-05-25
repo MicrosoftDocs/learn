@@ -2,7 +2,7 @@
 zone_pivot_groups: platform-apps
 ---
 
-![Tech logo](../media/tech-all.png)
+![Logo of the technologies used in the article representing U W P, W P F, and Windows Forms.](../media/tech-all.png)
 
 In this unit, we'll build a substantial sample app in one or more of the three Windows UI technologies: Windows Forms, Windows Presentation Foundation (WPF), and the Universal Windows Platform (UWP). The app will download and display NASA's wonderful Astronomy Picture of the Day (APOD for short) for any date since the launch of the program in 1995. The app will also preserve some user settings from one session to the next. That's important because there's a limit to the number of downloads that can be done in any one day (currently it's 50). We want our app to be aware of this limit and not suddenly fail on our users. Restricting a user's access when they exceed this kind of limit is known as *throttling*. So, let's build an inspiring app that helps us avoid being throttled!
 
@@ -26,7 +26,7 @@ Inspiring as this app is, it doesn't do everything an industrial-strength app mi
 
 ::: zone pivot="windowsforms"
 
-![Tech logo](../media/tech-windowsforms.png)
+![Logo of the tech windows forms highlighted to indicate windows forms pivot is selected.](../media/tech-windowsforms.png)
 
 Windows Forms may be dated, but the tools it provides do make a very neat version of this programming project.
 
@@ -34,17 +34,17 @@ Windows Forms may be dated, but the tools it provides do make a very neat versio
 
 In Visual Studio 2017, create a Windows Forms C# project. Give the project a meaningful name. If you're going to do the UWP or WPF versions of this tutorial too, perhaps add the technology to the name (for example, **APOD_WindowsForms**).
 
-![Creating the project](../media/wf-create-apod-project.png)
+![Screen shot depicting the New Project dialog in Visual Studio.](../media/wf-create-apod-project.png)
 
 ### 2. Install the required packages
 
 1. Reinventing the wheel (in our case, writing code that has been written many times before) isn't smart, so let's download an add-on package for Visual Studio that will help us parse the response when we make HTTP calls. A popular add-on for this is available from Newtonsoft, so go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**. The list of installed packages appears:
 
-    ![Bringing up the NuGet manager](../media/wf-apod-nuget-menu.png)
+    ![Screen shot depicting the selected menu for bringing up the NuGet manager.](../media/wf-apod-nuget-menu.png)
 
 2. Select **Browse** to display the list of available packages. Select **Newtonsoft.Json** so that it's highlighted, select the check box for your project in the pane on the right, and then select **Install**.
 
-    ![Selecting the package](../media/wf-nuget-newtonsoft.png)
+    ![Screen shot depicting the Newtonsoft package selection in the Browse tab of package manager.](../media/wf-nuget-newtonsoft.png)
 
     > [!NOTE]
     > If you're going to do more HTTP programming, consider familiarizing yourself also with the **Microsoft.AspNet.WebApi 5.2.6** package. This package includes Newtonsoft.Json with a number of Microsoft ASP.NET web packages and is a great set of web resources to have at your command.
@@ -57,16 +57,16 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 2. Now add the elements to build the UI shown in the following image. First, make sure the **Toolbox** is open with **All Windows Forms** listed. Start in the upper-left corner with the **MonthCalendar** control. We're also going to use a few elements that aren't available in the **Common Controls**.
 
-    ![Laying out the UI elements](../media/wf-apod-ui-layout.png)
+    ![Screen shot depicting guidelines in the designer for laying out the UI elements.](../media/wf-apod-ui-layout.png)
 
 3. Name the calendar control "MonthCalendar". We're not going to set any other properties of the calendar from the **Properties** pane, but we will be setting properties from within the code itself.
 
-    ![Renaming the calendar](../media/wf-apod-month-calendar.png)
+    ![Screen shot depicting the calendar that will be used in the app.](../media/wf-apod-month-calendar.png)
 
 4. Below the calendar, add a **Button** control. Stretch it out so that it can take **Go to APOD launch date** as its **Text** property. Go ahead and add this text, and change the **Name** of the button to **LaunchButton**. When this button is selected, we want the calendar to jump to the day NASA started the APOD program. We won't add that code just yet, though. Let's continue laying out the UI.
 
-    ![Changing the launch button name](../media/wf-apod-launch-button-name.png)
-    ![Changing the launch button text](../media/wf-apod-launch-button-text.png)
+    ![Screen shot depicting where to change the launch button name, in Visual Studio.](../media/wf-apod-launch-button-name.png)
+    ![Screen shot depicting where to change the launch button text, in Visual Studio.](../media/wf-apod-launch-button-text.png)
 
 5. Below the button, add a **GroupBox** control and give it a descriptive name like **Settings**. Expand the group box so that it can take three UI elements. First drag a **CheckBox** control into the group box. Change the **Name** value of the check box to **ShowTodaysImageCheckBox**, and change its **Text** value to **Show today's image on start up**.
 
@@ -77,7 +77,7 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 7. Add the third entry to the group box: a combination of a **Label** control with the text **Images downloaded today:** and a small **TextBox** control to display the number of images already downloaded today. Give the text box the name **ImagesTodayTextBox** and set a couple of other properties on it. This text box is obviously read-only, so let's both set the **ReadOnly** property to **true** and set a background color that hints that this text box is read only. Set the **BackColor** property to **255,255,192** (an easy change because the default RGB value is **255,255,255**. This value produces a nice, light-yellow color that works as a background for black text.
 
-    ![Setting the background color](../media/wf-apod-images-today-box.png)
+    ![Screen shot depicting where to set the background color, in Visual Studio.](../media/wf-apod-images-today-box.png)
 
     That change completes the group box that encapsulates any settings that we might need to preserve.
 
@@ -87,11 +87,11 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 10. Finally, add a sizeable **PictureBox** element to fill up most of the real estate of your form. Around 700 pixels wide and 450 pixels high will work. Change its name to **ImagePictureBox** and its border to **FixedSingle**. Also, change its **SizeMode** setting to **Zoom**, which ensures that the image is scaled to fit your picture box.
 
-    ![Laying out the UI elements](../media/wf-apod-image-picture.png)
+    ![Screen shot depicting the designer and laying out the UI elements.](../media/wf-apod-image-picture.png)
 
 11. On the **Debug** menu, select **Start Without Debugging**. Nothing will work because we have only laid out the UI elements so far, but starting the project does give us a chance to clean up its appearance before we move on. If anything in the UI looks skewed, go back to the designer and clean it up.
 
-    ![Completing the UI](../media/wf-apod-ui-layout-image.png)
+    ![Screen shot depicting the designer and how to complete the UI.](../media/wf-apod-ui-layout-image.png)
 
 ### 4. Add code to handle the UI elements
 
@@ -305,7 +305,7 @@ This is the test we've all been waiting for. Will the app download and render an
 
 1. Let's just give it a try. Run the app (from the **Debug** menu, or simply select F5).
 
-    ![Downloading an image](../media/wf-apod-run.png)
+    ![Screen shot of the running application with a downloaded image.](../media/wf-apod-run.png)
 
 2. Does it work? Can you select dates from the calendar and render some fantastic images of space? If so,  great! If not, carefully check your code against the listings shown earlier in this unit.
 
@@ -378,7 +378,7 @@ Apps that don't preserve user preferences can become tedious to use after a whil
 
 6. Test the code so far. Open the app and simply close it again immediately. Go to the folder that contains the app. (Hint: use the **Save File As** menu option to find the folder where your project is located.) Open the file called init_apod.txt. In Notepad, it should look something like this:
 
-    ![Displaying the init file](../media/wf-apod-init.png)
+    ![Screen shot displaying the init file in Notepad.](../media/wf-apod-init.png)
 
     > [!NOTE]
     > By giving our settings human-readable names, we're able to verify that the app is working correctly even though the purpose of the init file does not require that it ever be read by a human.
@@ -489,7 +489,7 @@ Now, let's get back to the fun side of programming!
 
 1. Build and run the completed app.
 
-    ![Running the app](../media/wf-apod-run2.png)
+    ![Screen shot showing the running application with an image from NASA and a space rock.](../media/wf-apod-run2.png)
 
 2. Change some of the settings, close the app, and run it again. Are the settings preserved correctly? Is the count of downloaded images correct?
 
@@ -497,35 +497,35 @@ Now, let's get back to the fun side of programming!
 
     And, great job completing the tutorial.
 
-    ![Running the app again](../media/wf-apod-run3.png)
+    ![Screen shot showing the running app again with a spiral galaxy image displayed.](../media/wf-apod-run3.png)
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Logo of the tech W P F highlighted to indicate W P F pivot is selected.](../media/tech-wpf.png)
 
 ### 1. Create the project
 
 In Visual Studio 2017, create a WPF C# project. Give the project a meaningful name, such as **APOD_WPF**.
 
-![Creating the project](../media/wpf-create-apod-project.png)
+![Screen shot depicting the New Project dialog for a W P F application.](../media/wpf-create-apod-project.png)
 
 ### 2. Install the required packages
 
 1. Reinventing the wheel (in our case, writing code that has been written many times before) isn't smart, so let's download an add-on package for Visual Studio that will help us parse the response when we make HTTP calls. A popular add-on for this is available from Newtonsoft, so go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**. The list of installed packages appears.
 
-    ![Bringing up the NuGet manager](../media/wf-apod-nuget-menu.png)
+    ![Screen shot showing where to bring up the NuGet package manager extension.](../media/wf-apod-nuget-menu.png)
 
 2. Select **Browse** to display the list of available packages. Select **Newtonsoft.Json** so that it's highlighted, select the check box for your project in the pane on the right, and then select **Install**.
 
-    ![Selecting the package](../media/wf-nuget-newtonsoft.png)
+    ![Screen shot depicting how to select the Newtonsoft package in the Browse tab.](../media/wf-nuget-newtonsoft.png)
 
 ### 3. Build the UI
 
 The goal of this step is to lay out the UI components and give them a quick test. We need to construct a UI like this:
 
-![Laying out the UI](../media/wpf-apod-border.png)
+![Screen shot depicting the designer and laying out the UI.](../media/wpf-apod-border.png)
 
 1. Start by opening the **Toolbox** and expanding **All WPF Controls**. Locate the **DatePicker** element and drag it to the upper-left portion of the designer layout. In **Properties**, change its name to **MonthCalendar**.
 
@@ -541,7 +541,7 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 7. To the right of the label, add a small **TextBox** and name it **ImagesTodayTextBox**. This text is certainly read-only, so in the **Text** category of the properties, select the **IsReadOnly** check box. Next, open the **Brush** category, select the **Background**, and change its blue color value to **192**. This will produce a good, contrasting, light-yellow color as background for the black text, to hint that the text box is read-only. We'll do the same for the other read-only text boxes that we'll add shortly.
 
-    ![Setting a read-only yellow background](../media/wpf-read-only-brush.png)
+    ![Screen shot depicting setting a read-only yellow background in the properties.](../media/wpf-read-only-brush.png)
 
 8. Adjust the alignment of the check boxes, label, and text box. Make them all fit neatly inside the group box, as in the layout shown at the start of step 3.
 
@@ -628,7 +628,7 @@ Only a few of our UI elements need to have events associated with them. Let's wo
 
 5. The last event we need to react to is the important one: a date being selected in the **MonthCalendar**. Open the events for this control, scroll down through the alphabetic list, and select the **SelectedDateChanged** event.
 
-    ![Setting the date changed event](../media/wpf-select-date-changed.png)
+    ![Screen shot depicting where to set the date changed event in Visual Studio properties.](../media/wpf-select-date-changed.png)
 
     This action creates the following method, which we'll leave empty for now:
 
@@ -798,7 +798,7 @@ Now for the fun part of this tutorial.
 
 2. Does it work? Do you see some wonderful images when you select dates? If not, go back over your code carefully to locate the problem.
 
-    ![Selecting dates and viewing images](../media/wpf-apod-1.png)
+    ![Screen shot showing the running application and selecting dates and viewing images.](../media/wpf-apod-1.png)
 
 ### 8. Add code to save/restore settings
 
@@ -869,7 +869,7 @@ Apps that don't preserve user preferences can become tedious to use after a whil
 
 6. Test the code so far. Open the app and simply close it again immediately. Go to the folder that contains the app. (Hint: use the **Save File As** menu option to find the folder where your project is located.) Open the file called init_apod.txt. In Notepad, it should look something like this:
 
-    ![Displaying the init file](../media/wpf-apod-init-file.png)
+    ![Screen shot that is displaying the init file contents.](../media/wpf-apod-init-file.png)
 
     > [!NOTE]
     > By giving our settings human-readable names, we're able to verify that the app is working correctly even though the purpose of the init file does not require that it ever be read by a human.
@@ -981,7 +981,7 @@ Now, let's get back to the fun side of programming!
 
 1. Build and run the completed app.
 
-    ![Running the app](../media/wpf-apod-run2.png)
+    ![Screen shot showing the application running initially.](../media/wpf-apod-run2.png)
 
 2. Change some of the settings, close the app, and run it again. Are the settings preserved correctly? Is the count of downloaded images correct?
 
@@ -989,19 +989,19 @@ Now, let's get back to the fun side of programming!
 
     And, great job completing the tutorial.
 
-    ![Running the app again](../media/wpf-apod-run3.png)
+    ![Screen shot of running the app again with astronomy image displayed.](../media/wpf-apod-run3.png)
 
 ::: zone-end
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Logo of the tech u w p highlighted to indicate u w p pivot is selected.](../media/tech-uwp.png)
 
 ### 1. Create the project
 
 1. In Visual Studio 2017, create a UWP C# project. Give the project a meaningful name, such as **APOD_UWP**.
 
-    ![Creating the project](../media/uwp-create-apod-project.png)
+    ![Screen shot of the project selections in Visual Studio. C# and Blank App (Universal Windows) is highlighted.](../media/uwp-create-apod-project.png)
 
 2. When the puzzling minimum-version dialog box appears, just select **OK**.
 
@@ -1009,17 +1009,17 @@ Now, let's get back to the fun side of programming!
 
 1. Reinventing the wheel (in our case, writing code that has been written many times before) isn't smart, so let's download an add-on package for Visual Studio that will help us parse the response when we make HTTP calls. A popular add-on for this is from Newtonsoft, so go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**. The list of installed packages appears.
 
-    ![Bringing up the NuGet manager](../media/wf-apod-nuget-menu.png)
+    ![Screen shot of where to select the NuGet manager.](../media/wf-apod-nuget-menu.png)
 
 2. Select **Browse** to display the list of available packages. Select **Newtonsoft.Json** so it's highlighted, select the check box for your project in the pane on the right, and then select **Install**.
 
-    ![Selecting the package](../media/wf-nuget-newtonsoft.png)
+    ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wf-nuget-newtonsoft.png)
 
 ### 3. Build the UI
 
 The goal of this step is to lay out the UI components and give them a quick test. We need to construct a UI like this:
 
-![Laying out the UI](../media/uwp-apod-layout.png)
+![Screen shot of the designer depicting the laying out of the UI.](../media/uwp-apod-layout.png)
 
 1. Start by opening the **Toolbox** and expanding **All XAML Controls**. Locate the **CalendarDatePicker** element and drag it to the upper-left portion of the designer layout. In **Properties**, change its name to **MonthCalendar**.
 
@@ -1038,7 +1038,7 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 7. To the right of the text block, add a small **TextBox** and name it **ImagesTodayTextBox**. This text is certainly read-only, so in the **Common** category of the properties, select the **IsReadOnly** check box. Next, open the **Brush** category, select the **Background**, and change its color to **255,255,192,100%**. This will produce a good, contrasting, light-yellow color as background for the black text, to hint that the text box is read-only. We'll do the same for the other read-only text boxes that we'll add shortly.
 
-    ![Setting a read-only yellow background](../media/uwp-apod-images-today-box.png)
+    ![Screen shot depicting the Visual Studio properties setting for read-only yellow background.](../media/uwp-apod-images-today-box.png)
 
 8. Adjust the alignment of the check boxes, text block, and text box. Make them all fit neatly inside the border, as in the layout shown at the start of step 3.
 
@@ -1048,11 +1048,11 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 11. To make it easier to lay out all the elements neatly, drag a **Border** element to the layout and expand it to a good width and height. In the **Appearance** category, make sure all **BorderThickness** entries are set to **1**. In this case, we'll give the border a name, such as **PictureBorder**.
 
-    ![Setting up a border](../media/uwp-apod-border.png)
+    ![Screen shot of the designer and setting up a border.](../media/uwp-apod-border.png)
 
 12. Now, with the border selected, drag an **Image** element from the toolbox into the border. This will align the image correctly within the border. Name the image **ImagePictureBox**. If you have difficulty selecting the image instead of the border, right-click anywhere inside where the image should be and select the **Set Current Selection** menu item. This is why we named the border, so both image and border show up clearly in this menu and you can select the one you're working on.
 
-    ![Selecting the image box](../media/uwp-apod-ui-selection.png)
+    ![Screen shot depicting the selection of the image picture box.](../media/uwp-apod-ui-selection.png)
 
 13. On the **Debug** menu, select **Start Without Debugging**. Nothing will work yet, but you'll get a chance to view and tidy up the UI elements. Making the UI as neat as possible is good practice.
 
@@ -1277,7 +1277,7 @@ Now for the fun part of this tutorial.
 
 2. Does it work? Do you see some wonderful images when you select dates? If not, go back over your code carefully to locate the problem.
 
-    ![Selecting dates and viewing images](../media/wpf-apod-run.png)
+    ![Screen shot of the running application after selecting dates and viewing images.](../media/wpf-apod-run.png)
 
 ### 8. Add code to save/restore settings
 
@@ -1424,7 +1424,7 @@ Now let's get back to the fun side of programming!
 
 1. Build and run the completed app.
 
-    ![Running the app](../media/uwp-apod-run2.png)
+    ![Screen shot depicting the running app again with Jupiter displayed in the results.](../media/uwp-apod-run2.png)
 
 2. Change some of the settings, close the app, and run it again. Are the settings preserved correctly? Is the count of downloaded images correct?
 

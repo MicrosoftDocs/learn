@@ -1,10 +1,8 @@
-In this module, you've gained an insight into the features and capabilities of Azure Active Directory. You've seen that Azure AD is Microsoft’s cloud-based identity and access management service, and managing an organization’s employees. It also allows guests and others to sign in and access resources.
+In this module, you've gained an insight into the features and capabilities of Azure Active Directory.  You've learned about the different Azure AD editions, the identity types supported by Azure AD, and how you can use it to support external users. Finally, you learned about the hybrid model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
 
-You've learned about the different Azure AD editions, and that the free version is included with subscriptions to Office 365, Azure, Dynamics 365, Intune, and Power Platform.
-
-This module also covered Azure AD identity types, including users, service principals, managed identities, and devices.
-
-Finally, you learned about the hybrid model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
+Now that you've completed this module, you'll be able to:
+- Describe what Azure AD does.
+- Describe the identity types that Azure AD supports.
 
 ## Learn more
 

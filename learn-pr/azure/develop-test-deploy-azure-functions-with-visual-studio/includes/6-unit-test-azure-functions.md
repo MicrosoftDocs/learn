@@ -6,7 +6,7 @@ In this unit, you'll see how to use the `xUnit` test framework with Visual Studi
 
 ## Create a unit test project
 
-The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure functions app. Use the following steps to create a unit test project for testing the *WatchInfo* function.
+The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure Function App. Use the following steps to create a unit test project for testing the *WatchInfo* function.
 
 1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, select **Add**, and then select **New Project**.
 
@@ -27,11 +27,11 @@ The first step is to create a project that contains your unit tests, and add it 
     > [!NOTE]
     > The test project will create a mock HTTP environment. The classes required for doing this are in the **Microsoft.AspNetCore.Mvc** package.
 
-1. Wait while the package in installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
+1. Wait while the package is installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 
-1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
+1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
 
-1. In the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click **Dependencies**, and then select **Add Reference**.
+1. In the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click **Dependencies**, and then select **Add Reference**.
 
 1. In the **Reference Manager** window, select the **WatchPortalFunction** project, and then select **OK**.
 
@@ -84,7 +84,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     response.Wait();
     ```
 
-1. Add the following code to the method. This code checks that the response from the Azure function is correct. In this case, the function should return an *OK* response, containing the expected body data.
+1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected body data.
 
     ```csharp
     // Check that the response is an "OK" response
@@ -97,7 +97,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     Assert.Equal(watchInfo, result.Value);
     ```
 
-    The complete method should look like this:
+    The complete method should look like the following.
   
     ```csharp
     [Fact]
@@ -199,7 +199,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     string model = req.Query["model"];
     ```
 
-1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code:
+1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code.
 
     ```csharp
     string model = req.Query["modelll"];

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-concurrency.1-goroutines
+metadata:
+  title: Learn about goroutines
+  description: See how Go handles concurrency with goroutines.
+  ms.date: 01/25/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about goroutines
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-goroutines.md)]

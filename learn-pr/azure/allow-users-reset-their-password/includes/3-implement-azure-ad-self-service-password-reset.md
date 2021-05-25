@@ -26,7 +26,7 @@ enable SSPR for a targeted group of users, who can test it and verify that it wo
 
 Here are the high-level steps to configure SSPR. 
 
-1. In the Azure portal, go to **Active Directory** > **Password reset**.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), go to **Active Directory** > **Password reset**.
 1. Properties:
    - Enable SSPR.
    - You can enable it for all users in the Azure AD organization or for selected users.

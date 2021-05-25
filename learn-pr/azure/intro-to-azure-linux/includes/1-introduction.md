@@ -17,4 +17,4 @@ By the end of this module, you will be able to:
 
 ## Prerequisite
 
-Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Cloud Concepts - Principles of cloud computing](https://docs.microsoft.com/learn/modules/principles-cloud-computing/).
+Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Discuss Azure fundamental concepts](https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/).

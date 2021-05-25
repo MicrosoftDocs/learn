@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core
 metadata:
   title: Create a web UI with ASP.NET Core
   description: "In this module, you'll learn how to create web pages using Razor with ASP.NET Core."
-  ms.date: 12/02/2020
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
@@ -13,12 +13,12 @@ summary: ASP.NET Core supports creating webpages using a native templating engin
 abstract: | 
   In this module, you will:
   - Understand when and why to use Razor Pages for your ASP.NET Core app.
-  - Use the .NET CLI to create a new page in the app.
+  - Use the .NET Core CLI to create a new page in the app.
   - Create a form that supports the app's product data management requirements.
   - Add client-side form input validation using Razor's Input Tag Helper.
   - Add server-side model validation using data annotations.
   - Consume a RESTful service in your app to manage product data.
-  - Examine the life cycle of a sample HTTP request.
+  - Examine the lifecycle of a sample HTTP request.
   - Deploy and test the web app.
 prerequisites: |
   - Experience writing C# at the beginner level

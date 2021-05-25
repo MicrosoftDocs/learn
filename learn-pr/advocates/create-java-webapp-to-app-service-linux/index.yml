@@ -15,7 +15,7 @@ abstract: |
   - Create a PrimeFaces Java web application.
   - Configure your Java project to deploy to Azure App Service.
   - Deploy your Java web application to Azure App Service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-webapp-java-tomcat.svg
 levels:
   - beginner
 roles:
@@ -24,7 +24,7 @@ products:
   - azure
 prerequisites: |
   - Your own Azure subscription
-  - The [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
+  - The [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
   - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
 units:
   - learn.azure.build-webapp-java-tomcat.1

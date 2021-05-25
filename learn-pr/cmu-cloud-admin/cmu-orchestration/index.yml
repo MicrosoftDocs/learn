@@ -16,7 +16,7 @@ abstract: |
   - Learn about how to automate cloud resource management with infrastructure-as-code tools like Terraform
   - Explain the concept of Infrastructure-as-Code and enumerate the advantages that it offers over ordinary scripting
   - List some of the tools that implement IaC for popular cloud platforms and describe some of the differences between them
-  - Understand Terraform’s role as an infrastructure orchestrator and describe how it differs from a conventional configuration manager
+  - Understand Terraform's role as an infrastructure orchestrator and describe how it differs from a conventional configuration manager
 
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |

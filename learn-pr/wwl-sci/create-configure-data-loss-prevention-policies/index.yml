@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-data-loss-prevention-policies
 metadata:
   title: Configure DLP policies for Microsoft Cloud App Security and Power Platform
   description: "Configure DLP policies for Microsoft Cloud App Security and Power Platform"
-  ms.date: 01/29/2021
+  ms.date: 03/08/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -12,24 +12,21 @@ title: Configure DLP policies for Microsoft Cloud App Security and Power Platfor
 summary: Learn how to configure and implement data loss prevention policies and integrate them with Microsoft Cloud App Security.
 abstract: |
   After completing this module you will be able to:
-  - Describe the effects of DLP policy precedence.
   - Describe the integration of DLP with Microsoft Cloud App Security (MCAS).
   - Configure policies in Microsoft Cloud App Security.
-  - Utilize DLP policies in test mode.
 prerequisites: |
   - Basic knowledge of data loss prevention in Microsoft 365
   - Basic knowledge of Microsoft Cloud App Security
   - Basic knowledge of Power Platform
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-and-configure-data-loss-prevention-policies.svg
 levels:
 - intermediate
 roles:
-- administrator
 - auditor
+- ip-admin
 - risk-practitioner
 products:
 - m365
-- office-365
 - m365-information-protection
 units:
 - learn.wwl.create-configure-data-loss-prevention-policies.introduction

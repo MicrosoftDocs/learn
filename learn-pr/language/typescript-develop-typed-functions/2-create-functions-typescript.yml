@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-develop-typed-functions.2-create-functions-typescript
+title: Create functions in TypeScript
+metadata:
+  title: Create functions in TypeScript
+  description: Learn how functions in TypeScript are different from functions in JavaScript and how to identify the syntax for defining named, anonymous, and arrow functions.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-create-functions-typescript.md)]

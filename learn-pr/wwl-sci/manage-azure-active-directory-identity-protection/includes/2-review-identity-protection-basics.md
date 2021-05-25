@@ -208,12 +208,12 @@ Security Operator
 :::column-end:::
 :::column:::
 
-View all Identity Protection reports and Overview blade Dismiss user risk, confirm safe sign-in, confirm compromise
+View all Identity Protection reports and Overview blade, Dismiss user risk, confirm safe sign-in, confirm compromise
 
 :::column-end:::
 :::column:::
 
-Configure or change policies Reset password for a user Configure alerts
+Configure or change policies, Reset password for a user, Configure alerts
 
 :::column-end:::
 :::row-end:::
@@ -230,7 +230,7 @@ View all Identity Protection reports and Overview blade
 :::column-end:::
 :::column:::
 
-Configure or change policies Reset password for a user Configure alerts Give feedback on detections
+Configure or change policies, Reset password for a user, Configure alerts, Give feedback on detections
 
 :::column-end:::
 :::row-end:::

@@ -25,9 +25,9 @@ There was quite a bit already in place at the beginning of this module. If you w
 Here are additional resources that go into greater depth on other areas we covered in this module:
 
 - [Quickstart template gallery](https://azure.microsoft.com/resources/templates?azure-portal=true)
-- [Export the entire resource group as a template from the Azure portal](https://docs.microsoft.com/azure/azure-resource-manager/export-template-portal?azure-portal=true)
+- [Export the entire resource group as a template from the Azure portal](/azure/azure-resource-manager/export-template-portal?azure-portal=true)
 - [AzureResourceManagerTemplateDeployment@3](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureResourceManagerTemplateDeploymentV3/README.md?azure-portal=true)
-- [AzureAppServiceSettings@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?view=azure-devops&azure-portal=true)
-- [AzureKeyVault@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault?view=azure-devops&azure-portal=true)
-- [Best practices to use Key Vault](https://docs.microsoft.com/Azure/key-vault/key-vault-best-practices?azure-portal=true)
-- [Install and run Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
+- [AzureAppServiceSettings@1](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true)
+- [AzureKeyVault@1](/azure/devops/pipelines/tasks/deploy/azure-key-vault?azure-portal=true)
+- [Best practices to use Key Vault](/Azure/key-vault/key-vault-best-practices?azure-portal=true)
+- [Install and run Azure CLI locally](/cli/azure/install-azure-cli?azure-portal=true)
