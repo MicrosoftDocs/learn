@@ -140,13 +140,13 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    [![The illustration shows how to add image path.](../media/add-iot-edge-module.png)](../media/add-iot-edge-module.png#lightbox)
 
-### Review + Create
+## Review + create
 
 After setting your module, select **Review + create**. The review section shows you the JSON deployment manifest that was created based on the modules you set. Check whether the module you set in the previous section is defined in the manifest.
 
    [![The illustration shows the review of deployment.](../media/review-deployment.png)](../media/review-deployment.png#lightbox)
 
-### Check the deployed module in your edge device.
+## Check the deployed module in your edge device.
 
 After the deployment, you can check the module in your edge device. Connect to your virtual machine and run the **docker ps** command.
 
