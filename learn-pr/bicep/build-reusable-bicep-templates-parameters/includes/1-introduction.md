@@ -24,7 +24,6 @@ You should have:
 
 - Familiarity with the basic Bicep template structure and syntax.
 - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
-- An understanding of what infrastructure as code is and its benefits.
 
 To follow along with the exercises in the module, you'll need:
 

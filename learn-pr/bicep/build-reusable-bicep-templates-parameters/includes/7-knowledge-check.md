@@ -4,7 +4,7 @@ You're deploying a template that a colleague has written. They give you a Bicep 
 @maxLength(5)
 param projectName string = 'alpha'
 
-@secure
+@secure()
 param apiKey string
 ```
 
