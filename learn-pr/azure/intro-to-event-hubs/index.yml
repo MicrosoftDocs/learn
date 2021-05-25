@@ -29,9 +29,9 @@ products:
 - azure
 units:
 - learn.azure.intro-to-event-hubs.introduction
-- learn.azure.intro-to-event-hubs.what-is-azure-ml
-- learn.azure.intro-to-event-hubs.how-azure-ml-works
-- learn.azure.intro-to-event-hubs.when-to-use-azure-ml
+- learn.azure.intro-to-event-hubs.what-is-event-hubs
+- learn.azure.intro-to-event-hubs.how-event-hubs-works
+- learn.azure.intro-to-event-hubs.when-to-use-event-hubs
 - learn.azure.intro-to-event-hubs.knowledge-check
 - learn.azure.intro-to-event-hubs.summary
 badge:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-event-hubs.when-to-use-azure-ml
+uid: learn.azure.intro-to-event-hubs.when-to-use-event-hubs
 title: When to use Event Hubs
 metadata:
   title: When to user Event Hubs
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-azure-ml.md)]
+  [!include[](includes/4-when-to-use-event-hubs.md)]

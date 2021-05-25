@@ -10,6 +10,6 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Event Hubs documentation](https://docs.microsoft.com/azure/cognitive-services/azure-ml/)
-* [Microsoft Learn - Analyze receipts with the Event Hubs service](https://docs.microsoft.com/learn/modules/analyze-receipts-azure-ml/)
+* [Event Hubs documentation](https://docs.microsoft.com/azure/cognitive-services/event-hubs/)
+* [Microsoft Learn - Analyze receipts with the Event Hubs service](https://docs.microsoft.com/learn/modules/analyze-receipts-event-hubs/)
 * [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](https://docs.microsoft.com/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
