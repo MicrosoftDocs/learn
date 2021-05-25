@@ -10,10 +10,10 @@ Make sure to explore more options available when using multi-stage Azure Pipelin
 
 You can learn more by reviewing the following articles:
 
-- [Azure Pipelines documentation](/azure/devops/pipelines/?view=azure-devops%2f%3fazure-portal%3dtrue)
-- [Build and release tasks](/azure/devops/pipelines/tasks/?view=azure-devops%2f%3fazure-portal%3dtrue)
-- [Build GitHub repositories](/azure/devops/pipelines/repos/github?tabs=yaml%2f%3fazure-portal%3dtrue&view=azure-devops)
+- [Azure Pipelines documentation](/azure/devops/pipelines/?view=azure-devops&azure-portal=true)
+- [Build and release tasks](/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true)
+- [Build GitHub repositories](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops&azure-portal=true)
 - [Migrate your .NET web app or service to Azure App Service](/dotnet/azure/migration/app-service/?azure-portal=true)
 - [ASP.NET Data Access Options](/previous-versions/aspnet/ms178359(v=vs.110)/?azure-portal=true)
-- [Data-tier Applications](/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15%2f%3fazure-portal%3dtrue)
+- [Data-tier Applications](/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure-portal=true)
 - [Migrate a SQL Server database to Azure](/dotnet/azure/migration/sql/?azure-portal=true)
