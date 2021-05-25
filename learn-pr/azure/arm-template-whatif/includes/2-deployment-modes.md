@@ -19,7 +19,7 @@ In Bicep, you can refer to an existing resource by using the `existing` keyword.
 
 ### When should I use complete mode?
 
-It might seem like a strange idea to allow Azure to delete your resources like this. However, there's a good reason why you might want to consider it. If all of your infrastructure is defined in templates, then using complete mode means that every time you deploy, you'll make sure there are no errant resources left afterward. In other words, it helps to avoid *configuration drift* in your environment.
+It might seem like a strange idea to allow Azure to delete your resources like this. However, there's a good reason why you might want to consider it. If all of your infrastructure is defined in templates, then using complete mode means that every time you deploy, you'll make sure that no errant resources are left afterward. In other words, it helps to avoid *configuration drift* in your environment.
 
 If you know for sure that what's in the template file constitutes the full state of your deployment, then go ahead and use this mode. If you use tools like the Azure CLI or PowerShell to update your state gradually, then incremental mode is the way to go.
 

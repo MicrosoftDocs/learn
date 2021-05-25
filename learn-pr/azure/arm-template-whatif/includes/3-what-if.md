@@ -137,7 +137,7 @@ You can get the raw JSON results by appending the `--no-pretty-print` argument t
 
 ## Deployment modes and deletion of resources
 
-There are times when you'll want to confirm the deletion of resources as you deploy the template. To that end, the what-if operation accounts for the deployment mode that you use. If you use the *complete* deployment mode, Resource Manager will report the resources it'll delete because they aren't defined in your deployment.
+There are times when you'll want to confirm the deletion of resources as you deploy the template. To that end, the what-if operation accounts for the deployment mode that you use. If you use the *complete* deployment mode, Resource Manager will report the resources that it will delete because they aren't defined in your deployment.
 
 Let's look at an example of a template that updates an existing resource and is deployed in complete mode:
 
