@@ -30,7 +30,7 @@ And Azure Pipelines works with many different languages and app types. If we wan
 
 Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
 
-CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full master branch (also known as the trunk or main).
+CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full main branch (also known as the trunk).
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
 

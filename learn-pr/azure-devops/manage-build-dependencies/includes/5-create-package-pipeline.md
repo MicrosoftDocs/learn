@@ -35,7 +35,9 @@ To fork the **mslearn-tailspin-spacegame-web-models** project into your GitHub a
 To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer:
 
 1. On GitHub, go to your fork of the **mslearn-tailspin-spacegame-web-models** project.
-1. Select **Clone or download**. To copy the URL to your clipboard, select the button next to the URL that appears.
+1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
+
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
 1. From Visual Studio Code, go to the terminal window, and run this `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash

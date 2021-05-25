@@ -73,9 +73,10 @@ A clone, just like a fork, is a copy of a repository. When you clone a repositor
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project on GitHub.
-1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard.
+1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
+
 1. In Visual Studio Code, go to the terminal window, and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
@@ -131,15 +132,20 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.
 
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
 
-1. On the **File** menu, select **Open**.
-1. Navigate to the root directory of the *Space Game* web project.
+1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command:
 
-    (To see the full path if you need a reminder, you can run the `pwd` command in the terminal window.)
+    ```bash
+    code -r .
+    ```
 
-You see the directory and file tree in the file explorer.
+    You see the directory and file tree in the file explorer.
+1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 
-> [!NOTE]
-> You might need to open the integrated terminal a second time after you open the project.
+If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
+
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+1. Repeat the previous procedure to open the project in the file explorer.
 
 ## Build and run the web app
 
@@ -154,8 +160,8 @@ Now that you have the web app, you can build and run it locally.
     > [!NOTE]
     > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install the .NET SDK.
 
-    .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, select the Release configuration just to see the web app in action.
- 
+    .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, you select the Release configuration just to see the web app in action.
+
 1. From the terminal window, to run the app, run this `dotnet run` command.
 
     ```bash
@@ -172,7 +178,7 @@ From a new browser tab, to see the running app, navigate to `http://localhost:50
 
 You see this:
 
-![The Space Game web site](../media/3-space-game-top.png)
+![A web browser showing the Space Game web site.](../media/3-space-game-top.png)
 
 > [!TIP]
 > If you see an error in your browser that's related to a privacy or certificate error, to stop the running app, select <kbd>Ctrl+C</kbd> from your terminal.

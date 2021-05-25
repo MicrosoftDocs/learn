@@ -19,7 +19,7 @@ Here are the steps that happen during the build process:
 1. To minify JavaScript and CSS files, run `gulp`.
 1. To help the QA team identify the build number and date, print build info to the `wwwroot` directory.
 1. To install the project's dependencies, run `dotnet restore`.
-1. To build the app under both Debug and Release configurationsRun `dotnet build`.
+1. To build the app under both Debug and Release configurations, run `dotnet build`.
 1. To package the application as a .zip file and copy the results to a network share for the QA team to pick up, run `dotnet publish`.
 
 Mara builds a shell script that performs the tasks she's identified. She runs it on her laptop.

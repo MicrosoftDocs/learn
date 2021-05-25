@@ -4,7 +4,7 @@ Along the way, you learned how to use variables to simplify your code.
 
 You also learned how to use templates to encapsulate sets of tasks that you can repeat throughout your build process. You used a template to build the app's Debug and Release configurations.
 
-Lastly, you practiced your Git skills by pushing commits to a branch and building from that branch. Working from a branch lets you work in isolation from the main code base. That helps you experiment and try new things without affecting the main development branch, `master`.
+Lastly, you practiced your Git skills by pushing commits to a branch and building from that branch. Working from a branch lets you work in isolation from the main code base. That helps you experiment and try new things without affecting the main development branch, `main`.
 
 Keep in mind that this build configuration focuses on building a .NET app. The tasks you choose will depend on the kind of app you're building, the tools you use to build it, and the programming language it's written in.
 
