@@ -17,13 +17,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the top of the file:
 
-   ```bicep
-   param location string = resourceGroup().location
-   param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
-   param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
-
-   var appServicePlanName = 'toy-product-launch-plan'
-   ```
+   :::code language="bicep" source="code/6-template.bicep" range="1-5":::
 
    Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -31,37 +25,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
-   ```bicep
-   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-     name: storageAccountName
-     location: location
-     sku: {
-       name: 'Standard_LRS'
-     }
-     kind: 'StorageV2'
-     properties: {
-       accessTier: 'Hot'
-     }
-   }
-
-   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: appServicePlanName
-     location: location
-     sku: {
-       name: 'F1'
-       tier: 'Free'
-     }
-   }
-
-   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-     name: appServiceAppName
-     location: location
-     properties: {
-       serverFarmId: appServicePlan.id
-       httpsOnly: true
-     }
-   }
-   ```
+   :::code language="bicep" source="code/6-template.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
 
 1. Save the changes to the file.
 
@@ -69,59 +33,19 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters that you created in the previous task:
 
-   ```bicep
-   @allowed([
-    'nonprod'
-    'prod'
-   ])
-   param environmentType string
-   ```
+   :::code language="bicep" source="code/6-template.bicep" range="5-9":::
 
    Notice that you're defining a parameter with a set of allowed values, but you're not specifying a default value for this parameter.
 
-1. Below the lines that you inserted, add the following Bicep code:
+1. Below the line that declares the `appServicePlanName` variable, add the following Bicep code:
 
-   ```bicep
-   var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-   var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
-   var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
-   ```
+   :::code language="bicep" source="code/6-template.bicep" range="12-14" :::
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
-   ```bicep
-   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-     name: storageAccountName
-     location: location
-     sku: {
-       name: storageAccountSkuName
-     }
-     kind: 'StorageV2'
-     properties: {
-       accessTier: 'Hot'
-     }
-   }
-
-   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: appServicePlanName
-     location: location
-     sku: {
-       name: appServicePlanSkuName
-       tier: appServicePlanTierName
-     }
-   }
-
-   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-     name: appServiceAppName
-     location: location
-     properties: {
-       serverFarmId: appServicePlan.id
-       httpsOnly: true
-     }
-   }
-   ```
+   :::code language="bicep" source="code/6-template.bicep" range="16-44" highlight="5, 17-18":::
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 
