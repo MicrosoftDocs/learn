@@ -1,4 +1,4 @@
-It's important to choose a code flow strategy that fits in with how your team works. There are several strategies to consider, and you'll find links that explain them at the end of the module. The Tailspin web team uses a code flow strategy that's based on Git and GitHub.
+It's important to choose a code flow strategy that fits in with how your team works. There are several strategies to consider, and you'll find links that explain them at the end of the module. In this part, the Tailspin web team developers a code flow strategy that's based on Git and GitHub.
 
 When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One task was to create a Git-based workflow.
 
@@ -64,9 +64,9 @@ To give you a better option, Git has a feature called _branching_, where you can
 
 ## How do my local changes get up to the main codebase?
 
-**Mara:** In Git, the main branch, or _trunk_, is typically called `main`.
+**Mara:** In Git, the default branch, or _trunk_, is typically called `main`.
 
-After you feel that your code is ready to be merged into the `main` branch in the main repository that's shared by all developers, you create what's called a _pull request_. When you create a pull request, you're telling the other developers that you have code ready to review and you want it merged into the `main` branch. When your pull request is approved, it becomes part of the central codebase.
+After you feel that your code is ready to be merged into the `main` branch in the central repository that's shared by all developers, you create what's called a _pull request_. When you create a pull request, you're telling the other developers that you have code ready to review and you want it merged into the `main` branch. When your pull request is approved, it becomes part of the central codebase.
 
 ## What does a branching workflow look like?
 

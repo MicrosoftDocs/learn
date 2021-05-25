@@ -42,13 +42,13 @@ To ensure that you have a working copy to start your changes, build and run the 
 
 1. In Visual Studio Code, go to the terminal window and run the following `dotnet build` command to build the application:
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
 1. Run the following `dotnet run` command to run the application:
 
-    ```bash
+    ```dotnetcli
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
@@ -106,17 +106,18 @@ Like before, the `feature/home-page-text` is based off of `main`.
     ```html
     <p>Welcome to the oficial Space Game site!</p>
     ```
+
     Note that the word "oficial" is intentionally mistyped. We'll address that error later in this module.
 
 1. In your terminal, run the following `dotnet build` command to build the application:
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
 1. Run the following `dotnet run` command to run the application:
 
-    ```bash
+    ```dotnetcli
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
@@ -158,9 +159,9 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     git push origin feature/home-page-text
     ```
 
-1. Go to GitHub to see that your branch has been pushed to your remote repository.
+1. Just as before, you can locate your branch on GitHub from the branch drop-down box.
 
-    :::image type="content" source="../media/5-github-recently-pushed.png" alt-text="A screenshot of GitHub showing a recently pushed branch.":::
+    :::image type="content" source="../media/5-github-recently-pushed.png" alt-text="A screenshot of GitHub showing the new branch.":::
 
 ## Watch Azure Pipelines build the application
 
@@ -243,8 +244,10 @@ In this section, you submit a pull request just as you did previously.
 1. In a browser, sign in to [GitHub](https://www.github.com?azure-portal=true).
 1. Go to your **mslearn-tailspin-spacegame-web** repository.
 1. In the drop-down list, select your `feature/home-page-text` branch.
-1. To begin creating your pull request, select **New pull request**.
+1. To start your pull request, select **Contribute** and then **Open pull request**.
 1. Ensure that the **base** drop-down list specifies your repository and not the Microsoft repository.
+
+    :::image type="content" source="../media/5-github-set-base.png" alt-text="A screenshot of GitHub confirming that the branch can be merged.":::
 
     > [!IMPORTANT]
     > Again, this step is important because you can't merge your changes into the Microsoft repository.

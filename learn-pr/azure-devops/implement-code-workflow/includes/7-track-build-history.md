@@ -30,9 +30,9 @@ The dashboard is a customizable area in Azure DevOps where you can add widgets a
 1. Drag the **Build History** tile to the canvas.
 1. Select the gear icon to configure the widget.
 
-      a. Keep the **Build History** title.
-      b. In the **Pipeline** drop-down list, select your pipeline.
-      c. Keep **All branches** selected.
+    1. Keep the **Build History** title.
+    1. In the **Pipeline** drop-down list, select your pipeline.
+    1. Keep **All branches** selected.
 1. Select **Save**.
 1. Select **Done Editing**.
 

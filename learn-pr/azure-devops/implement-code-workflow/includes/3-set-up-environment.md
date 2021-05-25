@@ -58,7 +58,7 @@ Here you move the second item, **Create a Git-based workflow**, to the **Doing**
 
 Recall that **Create a Git-based workflow** relates to moving to a code workflow that enables better collaboration among team members.
 
-:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot showing work item details for the Create a Git-based workflow issue.":::
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure Boards showing work item details for the Create a Git-based workflow issue.":::
 
 To set up the work item:
 

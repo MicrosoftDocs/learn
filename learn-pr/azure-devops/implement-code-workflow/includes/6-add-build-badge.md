@@ -39,7 +39,8 @@ To make sure your build badge is visible:
 
 You need to make a similar change to your project:
 
-1. Navigate to **Project settings** in the left pane of your Azure DevOps project.
+1. Go to your project.
+1. Navigate to **Project settings** from the bottom corner.
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
@@ -57,11 +58,11 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 1. Make sure you're on the `main` branch. In the files area, open the *README.md* file.
 1. Select the pencil icon to open the file in the editor.
 1. At the top of the page, add a blank line, and then paste the contents of the clipboard.
-1. Select the **Preview changes** tab to see your proposed changes.
+1. Select the **Preview** tab to see your proposed changes.
 
     GitHub renders the Markdown file and shows you the build badge.
 
-    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="A screenshot of GitHub showing a preview of adding the build badge.":::
+    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="A screenshot of GitHub showing a preview of the build badge.":::
 
 ## Commit your changes to main
 
@@ -71,7 +72,7 @@ In this section, you commit your changes to the `main` branch on GitHub.
 
     :::image type="content" source="../media/6-github-commit-changes.png" alt-text="A screenshot of GitHub showing the commit message.":::
 
-1. Leave the **Commit directly to the main branch** option selected, and then select **Commit changes** to commit your changes to the `main` branch.
+1. Leave the **Commit directly to the `main` branch** option selected, and then select **Commit changes** to commit your changes to the `main` branch.
 
     Your badge is displayed on the *README.md* page.
 

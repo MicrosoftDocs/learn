@@ -97,12 +97,15 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
 ### Test the rule
 
-1. In GitHub, look for the `bugfix/home-page-typo` branch.
+1. In GitHub, locate and select the `bugfix/home-page-typo` branch.
 
     :::image type="content" source="../media/8-github-recent-branch.png" alt-text="A screenshot of GitHub showing the recently pushed branch.":::
 
-1. To create a pull request, select **Compare and pull request**.
+1. To start your pull request, select **Contribute** and then **Open pull request**.
 1. Set your forked repository as the base repository.
+
+    :::image type="content" source="../media/8-github-set-base.png" alt-text="A screenshot of GitHub confirming that the branch can be merged.":::
+
 1. Select **Create pull request**.
 
     You can see that a human review is required before you can merge the change.

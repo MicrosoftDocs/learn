@@ -114,9 +114,9 @@ Here, you create a pull request for your branch.
 
     :::image type="content" source="../media/4-github-select-branch.png" alt-text="A screenshot of GitHub showing how to select the branch from the drop-down menu.":::
 
-1. To start your pull request, select **New pull request**.
+1. To start your pull request, select **Contribute** and then **Open pull request**.
 
-    :::image type="content" source="../media/4-github-new-pr.png" alt-text="A screenshot of GitHub showing the location of the New pull request button.":::
+    :::image type="content" source="../media/4-github-new-pr.png" alt-text="A screenshot of GitHub showing the location of the Open pull request button.":::
 
 1. Ensure that the **base** specifies your forked repository and not the Microsoft repository.
 
