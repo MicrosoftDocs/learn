@@ -1,4 +1,4 @@
-In this workshop, you deployed a multicontainer application to Azure Kubernetes Service (AKS). You used Azure Container Registry to store your container images. You deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. You set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic.
+In this workshop, you deployed a multicontainer application to Azure Kubernetes Service (AKS). You used Azure Container Registry (ACR) to store your container images. You deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. You set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic.
 
 You can now use what you learned to deploy container-based applications in your environment to AKS.
 
@@ -11,11 +11,11 @@ In this module, you created resources by using your Azure subscription. You want
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Select **Resource groups** on the left.
+1. In the top search bar, search for and select **Resource groups**.
 
-1. Find the **aksworkshop** resource group, or the resource group name you used, and select it.
+1. Find the **aksworkshop** resource group, or the resource group name you used, and select it. The **Resource group** pane for that resource group appears.
 
-1. On the **Overview** tab of the resource group, select **Delete resource group**.
+1. On the top menu bar, select **Delete resource group**.
 
 1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
 
