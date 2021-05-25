@@ -10,6 +10,6 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Batch Transcription documentation](https://docs.microsoft.com/azure/cognitive-services/batch-stt/)
-* [Microsoft Learn - Analyze receipts with the Batch Transcription service](https://docs.microsoft.com/learn/modules/analyze-receipts-batch-stt/)
-* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](https://docs.microsoft.com/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
+* [Batch Transcription documentation](/azure/cognitive-services/batch-stt/)
+* [Microsoft Learn - Analyze receipts with the Batch Transcription service](/learn/modules/analyze-receipts-batch-stt/)
+* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
