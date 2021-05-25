@@ -4,7 +4,14 @@ As a junior game developer of recreational games you've been asked to start the 
 
 In Black Jack, the goal of the game is to win over the bank. You win by holding a score higher than the bank but less than or equal to 21.
 
-1. Create a file _blackjack.js_ and give it the following starter code:
+1. Create a file _blackjack.js_ :
+
+   ```javascript
+   touch app.js
+   code .
+   ```
+
+1. Give it the following starter code:
 
    ```javascript
    let cardOne = 7;
