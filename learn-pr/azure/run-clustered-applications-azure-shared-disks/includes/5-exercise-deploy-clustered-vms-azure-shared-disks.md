@@ -279,7 +279,7 @@ New-AzAvailabilitySet `
 -Location "EastUS" `
 -Name "myAvailabilitySet" `
 -ResourceGroupName "myResourceGroup" `
--Skualigned `
+-Sku aligned `
 -PlatformFaultDomainCount 2 `
 -PlatformUpdateDomainCount 2 `
 -ProximityPlacementGroup $ppg.Id
