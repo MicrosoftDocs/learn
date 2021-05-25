@@ -31,8 +31,9 @@ These backup solutions may not always address some of the most important conside
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+You are running an application powered by SQL Server. The database is running in an always on availability group across three Azure VMs. You want to back up the databases using an Azure native backup service. You are looking to store the backup for 10 years in a cheaper storage for your audit and compliance needs. You would like to monitor the backup jobs daily for all such databases.
+
+:::image type="content" source="../media/scenario.png" alt-text="Depiction of an application using a SQL Server backend database and Azure Backup for data backup scenarios.":::
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
