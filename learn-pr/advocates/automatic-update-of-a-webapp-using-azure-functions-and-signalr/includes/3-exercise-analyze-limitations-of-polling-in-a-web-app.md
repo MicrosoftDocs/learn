@@ -17,13 +17,13 @@ Before you begin, make sure you have the following software installed on your ma
     > [!IMPORTANT]
     > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. A post-install script is included to set up your database and add some data to the database.
 
-1. Run the following command to navigate to the new folder into which you cloned the repo:
+1. Run the following command to go to the new folder into which you cloned the repo:
 
     ```bash
     cd serverless-demo
     ```
 
-1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Use the following command to open the *start* folder in Visual Studio Code:
+1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Run the following command to open the *start* folder in Visual Studio Code:
 
     ```bash
     code start
@@ -35,7 +35,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 Azure Functions requires a storage account, and you'll need it when you deploy the web app to the cloud later in the module.
 
-1. Execute the following command in Cloud Shell to define a name for your Azure Storage account.
+1. Run the following command in Cloud Shell to define a name for your Azure Storage account.
 
     ```bash
     export STORAGE_ACCOUNT_NAME=mslsigrstorage$(openssl rand -hex 5)
