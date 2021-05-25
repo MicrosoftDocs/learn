@@ -1,6 +1,6 @@
 In this module, you were introduced to the `deploymentScripts` resource as a way to add custom behavior to your Azure Resource Manager template deployments. You learned how the `deploymentScripts` resource works and what resources it depends on. Finally, you learned how to make `deploymentScripts` resources more flexible by parameterizing them.
 
-## Learn More
+## Learn more
 
 To learn more about deployment scripts, check out these articles:
 

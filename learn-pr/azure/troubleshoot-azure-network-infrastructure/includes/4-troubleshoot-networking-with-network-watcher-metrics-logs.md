@@ -17,7 +17,7 @@ To view the usage and quota information, go to **All Services** > **Networking**
 
 Here's an example that shows usage and quotas in the portal:
 
-[![](../media/4-usage-and-quotas.png "A screenshot that shows usage and quotas using Network Watcher")](../media/4-usage-and-quotas-expanded-1.png#lightbox)
+:::image type="content" source="../media/4-usage-and-quotas.png" alt-text="Screenshot showing usage and quotas by using Network Watcher." lightbox="../media/4-usage-and-quotas-expanded-1.png":::
 
 ## Logs
 
@@ -41,7 +41,7 @@ In flow logs, you can view information about ingress and egress IP traffic on ne
 
 This diagram shows the workflow that the NSG follows.
 
-![A diagram that shows the workflow that the NSG follows](../media/4-nsg-rule-flow.png)
+![Diagram showing the workflow that the NSG follows from inbound traffic to rule matches to allowing or denying a packet.](../media/4-nsg-rule-flow.png)
 
 Flow logs store data in a JSON file. It can be difficult to gain insights into this data by manually searching the log files, especially if you have a large infrastructure deployment in Azure. You can solve this problem by using Power BI.
 

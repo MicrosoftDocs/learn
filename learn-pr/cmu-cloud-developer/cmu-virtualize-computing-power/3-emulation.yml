@@ -89,9 +89,42 @@ quiz:
 # Did I Get This block 3
 # Code block quiz 1. Uses code block saved as image "quiz-code-1.png".
 # Code for the image is in the MD file for this unit "3-emulation.md".
-  - content: "Consider the following snippet of an interpreter code that steps through the source program, decodes each instruction (that is, the extract() function), and calls a corresponding routine depending on the observed opcode. (All routines are omitted, except the first one, for the brevity of the presentation.)<br>
-             <img src=./media/quiz-code-1.png></img> <br>
-             Which of the following statements best describes the above interpreter?"
+  - content: |
+      Consider the following snippet of an interpreter code that steps through the source program, decodes each instruction (that is, the extract() function), and calls a corresponding routine depending on the observed opcode. (All routines are omitted, except the first one, for the brevity of the presentation.)
+      
+      ```
+      While (!halt && !interrupt)
+      {
+          inst = code[PC];
+          opcode = extract(inst, 31, 6);
+
+          switch(opcode)
+              {
+                  case LoadWordAndZero: LoadWordAndZeroRoutine(inst);
+                  case ALU: ALUrouting(inst);
+                  case Branch: BranchRoutine(inst);
+                  ...
+              }
+      }
+      
+      LoadWordAndZeroRoutine(inst)
+      {
+          RT = extract(inst, 25, 5);
+          RA = extract(inst, 20, 5);
+          Displacement = extract(inst, 15, 16);
+          
+          if (RA == 0)
+              Source = 0;
+          else
+              Source = reys[RA];
+
+          address = source + displacement;
+          reys[RT] = (data[address] << 32) >> 32;
+          PC = PC + 4;
+      }
+      ```
+      
+      Which of the following statements best describes the above interpreter?
     choices:
     - content: "This interpreter is a threaded one because it is structured around a central loop, a decoder, and a dispatcher."
       isCorrect: false
@@ -115,9 +148,48 @@ quiz:
 # Did I Get This block 4
 # Code block quiz 2. Uses code block saved as image "quiz-code-2.png".
 # Code for the image is in the MD file for this unit "3-emulation.md".
-  - content: "Consider the following snippet of an interpreter code.
-             <img src=./media/quiz-code-2.png></img> <br>
-             Which of the following statements best describes the above interpreter?"
+  - content: |
+      Consider the following snippet of an interpreter code.
+      
+      ```
+      inst = code[PC];
+      opcode = extract(inst, 31, 6);
+      
+      switch(opcode)
+          {
+              case LoadWordAndZero: LoadWordAndZeroRoutine(inst);
+              case ALU: ALUrouting(inst);
+              case Branch: BranchRoutine(inst);
+          }
+      
+      LoadWordAndZeroRoutine(inst)
+      {
+          RT = extract(inst, 25, 5);
+          RA = extract(inst, 20, 5);
+          Displacement = extract(inst, 15, 16);
+          
+          if (RA == 0)
+              Source = 0;
+          else
+              Source = reys[RA];
+          address = source + displacement;
+          reys[RT] = (data[address] << 32) >> 32;
+          PC = PC + 4;
+          
+          if (halt || interrupt)
+              goto emit;
+          
+          inst = code[PC];
+          opcode = extract(inst, 31, 6);
+          extended_opcode = extract(inst, 10, 10);
+          routine = displacement[opcode, extended_opcode];
+          
+          goto *routine
+      }
+      ...
+      ```
+      
+      Which of the following statements best describes the above interpreter?
     choices:
     - content: "This interpreter is a decode-and-dispatch interpreter."
       isCorrect: false
