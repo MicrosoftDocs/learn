@@ -20,16 +20,16 @@ The power of smart groups is that they show you all related alerts and give impr
 
 There are two ways to get to your smart groups: from the **Alert Summary** pane, or from the **All Alerts** pane. Next, select **Alerts by Smart Group**.
 
-![Screenshot that highlights how to access smart groups through the Alert Summary page](../media/8-smart-group-alerts-summary.jpg)
+![Screenshot that highlights how to access smart groups through the Alert Summary pane.](../media/8-smart-group-alerts-summary.jpg)
 
-![Screenshot that highlights how to access smart groups through the All Alerts page](../media/8-smart-group-all-alerts.jpg)
+![Screenshot that highlights how to access smart groups through the All Alerts pane.](../media/8-smart-group-all-alerts.jpg)
 
 Either method results in a new page that shows all the smart groups. Selecting a smart group opens its details page, which splits into two sections:
 
 - **Summary**: Lists all the alerts included in the smart group.
 - **History**: Provides a history of all the changes made to the smart group.
 
-![Screenshot that shows the details page for a smart group](../media/8-smart-group-detail.png)
+![Screenshot that shows the details page for a smart group.](../media/8-smart-group-detail.png)
 
 ## Smart group states
 
@@ -43,6 +43,6 @@ The states are:
 - **Acknowledged**: When an admin starts the resolution process, they change the state to this.
 - **Closed**: When the source of the alert is fixed, the admin changes the state to this.
 
-![Screenshot that shows how smart groups can have states for individual alerts](../media/8-smart-group-different-states.png)
+![Screenshot that shows how smart groups can have states for individual alerts.](../media/8-smart-group-different-states.png)
 
 Changing the state of the smart group doesn't affect the underlying alert. Each alert member shown in the smart group can have a different state.

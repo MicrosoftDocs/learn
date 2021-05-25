@@ -94,12 +94,11 @@ products:
 - azure-iot-hub
 - azure-iot-central
 modules:
-- learn.azure.intro-to-azure-fundamentals
-- learn.azure.ai-machine-learning-fundamentals
-- learn.azure.azure-devops-devtest-labs
-- learn.azure.monitoring-fundamentals
-- learn.azure.management-fundamentals
-- learn.azure.serverless-fundamentals
 - learn.azure.iot-fundamentals
+- learn.azure.ai-machine-learning-fundamentals
+- learn.azure.serverless-fundamentals
+- learn.azure.azure-devops-devtest-labs
+- learn.azure.management-fundamentals
+- learn.azure.monitoring-fundamentals
 trophy:
   uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy

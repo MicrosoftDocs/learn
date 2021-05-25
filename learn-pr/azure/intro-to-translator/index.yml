@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-translator
+metadata:
+  title: Introduction to Translator
+  description: Translator is a cloud-based service that uses Artificial Intelligence to reliably translate text and documents between languages in near real time. You can add multi-language user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Translator 
+summary: Translator is a cloud-based service that uses Artificial Intelligence to reliably translate text and documents between languages in near real time. You can add multi-language user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+abstract: |
+  In this module, you will:
+  - Assess the benefits of Translator
+  - Describe what Translator is
+  - Define scenarios where Translator can be applied
+prerequisites: A basic familiarity with Azure
+iconUrl: /learn/achievements/intro-to-translator.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.intro-to-translator.introduction
+- learn.azure.intro-to-translator.what-is-translator
+- learn.azure.intro-to-translator.how-translator-works
+- learn.azure.intro-to-translator.when-to-use-translator
+- learn.azure.intro-to-translator.use-translator
+- learn.azure.intro-to-translator.knowledge-check
+- learn.azure.intro-to-translator.summary
+badge:
+  uid: learn.azure.intro-to-translator.badge

@@ -1,6 +1,6 @@
 The VM that hosts your app has been deployed in Azure. You now need to enable a managed identity in the company's Azure subscription. The idea is to allow your stock-tracking app to access the Azure resources that it needs.
 
-In this unit, you'll create a system-assigned managed identity for your virtual machine. You'll see how to access Azure resources from inside the identity.
+In this unit, you'll create a system-assigned managed identity for your VM. You'll see how to access Azure resources from inside the identity.
 
 ## Set up the environment
 

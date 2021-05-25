@@ -6,7 +6,7 @@ You're going to deploy a sample ASP.NET Core Web app from GitHub; this app inclu
 
 In this step, to create an ASP.NET Web app using code from a GitHub repository, you're going to use Azure CLI commands. You will also create a new storage account, in the same region as the Web app, for log storage.
 
-1. To set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list, in the Cloud Shell, run the following commands.
+1. To set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list, in Cloud Shell, run the following commands.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -19,7 +19,7 @@ In this step, to create an ASP.NET Web app using code from a GitHub repository, 
    storageAccount=sa$appName
    ```
 
-1. To deploy the web app, in the Cloud Shell, run the following commands.
+1. To deploy the web app, in Cloud Shell, run the following commands.
 
    ```azurecli
    az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE
@@ -28,7 +28,7 @@ In this step, to create an ASP.NET Web app using code from a GitHub repository, 
 
 1. Make a note of the random number suffix in your app name; this was generated to uniquely identify your app. The app may take several minutes to deploy.
 
-1. To create a storage account, in the Cloud Shell, run the following command.
+1. To create a storage account, in Cloud Shell, run the following command.
 
    ```azurecli
    az storage account create -n $storageAccount -g $resourceGroup -l $appLocation --sku Standard_LRS 

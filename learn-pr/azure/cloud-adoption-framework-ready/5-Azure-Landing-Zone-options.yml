@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-ready.5-azure-landing-zone-options
 title: Choose an Azure landing zone option
 metadata:
   title: Choose an Azure landing zone option
-  description: Apply what you've learned to choose the best Azure landing zone implementation option.
+  description: Apply what you've learned to choose the best option for implementing an Azure landing zone.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which implementation option should Tailwind Traders use to start their Azure landing zone deployment?
+  - content: Which implementation option should Tailwind Traders use to start its deployment of an Azure landing zone?
     choices:
     - content: CAF Migration landing zone blueprint
       isCorrect: true
       explanation: Correct!
-    - content: CAF enterprise-scale foundation
+    - content: CAF Enterprise-Scale foundation
       isCorrect: false
-      explanation: For this customer, the learning curve and complexity of an enterprise-scale approach may be a bit too steep.
+      explanation: For this customer, the learning curve and complexity of an enterprise-scale approach might be a bit too steep.
     - content: CAF Terraform modules
       isCorrect: false
-      explanation: There isn't an indication of existing Terraform dependencies in this customer narrative.
+      explanation: There's no indication of existing Terraform dependencies in this customer narrative.
   # - content: Which of the following indicators would make you consider an alternative implementation option?
   #   choices:
-  #   - content: Openness to embrace cloud-native operations tools and processes
+  #   - content: Openness to embrace tools and processes for cloud-native operations
   #     isCorrect: false
-  #     explanation: This is a great indicator. Are there others that may stand out more?
+  #     explanation: This is a great indicator. Are there others that might stand out more?
   #   - content: Multiple teams accessing production environments
   #     isCorrect: false
-  #     explanation: This is a great indicator. Are there others that may stand out more?
-  #   - content: Need to meet third compliance requirements before adopting the cloud
+  #     explanation: This is a great indicator. Are there others that might stand out more?
+  #   - content: Need to meet third-party compliance requirements before adopting the cloud
   #     isCorrect: false
-  #     explanation: This is a great indicator. Are there others that may stand out more?
-  #   - content: Security posture requires protection for all workloads (even low-risk, non-critical applications and data).
+  #     explanation: This is a great indicator. Are there others that might stand out more?
+  #   - content: Security posture that requires protection for all workloads (even low-risk, non-critical applications and data)
   #     isCorrect: false
-  #     explanation: This is a great indicator. Are there others that may stand out more?
+  #     explanation: This is a great indicator. Are there others that might stand out more?
   #   - content: All of the above
   #     isCorrect: true
   #     explanation: Correct!
@@ -48,9 +48,9 @@ quiz:
     - content: CAF Migration landing zone blueprint
       isCorrect: false
       explanation: Eventually, you could expand a start-small approach to meet all of those needs. Risk and effort would be materially reduced with an enterprise-scale approach.
-    - content: CAF enterprise-scale foundation
+    - content: CAF Enterprise-Scale foundation
       isCorrect: true
       explanation: Correct!
     - content: CAF Terraform modules
       isCorrect: false
-      explanation: There isn't an indication of existing Terraform dependencies in this customer narrative. 
+      explanation: There's no indication of existing Terraform dependencies in this customer narrative. 

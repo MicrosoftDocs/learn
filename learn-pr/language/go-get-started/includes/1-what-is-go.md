@@ -1,23 +1,41 @@
-Go is a programming language that was developed at Google and announced in 2009 as an open-source project by Robert Griesemer, Rob Pike, and Ken Thompson. Since then, Go has been used for developing other well-known technologies, such as Docker, Kubernetes, Terraform, and others. But Go is a general-purpose language too. The goal of the language is to allow programmers to be expressive, efficient, and effective when writing reliable and robust code.
+Go is a programming language that was developed at Google. It was announced in 2009 as an open-source project by Robert Griesemer, Rob Pike, and Ken Thompson. Since then, Go has been used for developing other well-known technologies like [Docker][DockerWebsite], [Kubernetes][KubernetesWebsite], and [Terraform][TerraformWebsite]. While Go is used heavily in server-side and cloud software, it is a general-purpose language with an abundance different use cases.
 
-According to the [TIOBE index](https://www.tiobe.com/tiobe-index/?azure-portal=true), [Go was the programming language of the year](https://insights.dice.com/2017/01/10/go-tiobe-programming-language-2016/?azure-portal=true) in 2009 and 2016. Although it reached its tipping point in 2016, Go [maintains a high rating](https://www.tiobe.com/tiobe-index/go/?azure-portal=true). And since 2015, according to the [annual Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey/2020#most-loved-dreaded-and-wanted?azure-portal=true), Go has also been rated as one of the top loved languages. 
+Go is expressive, concise, and clean. It is designed to be idiomatic, which allows programmers to productively write code that is efficient and robust. Programs written in Go can run on Unix systems, such as Linux and macOS, and also Windows. Go is notable in part because of its unique concurrency mechanisms, making it easy to write programs that can take advantage of multiple cores at once. It is primarily a strongly and statically typed language, meaning variable types are known at compile-time. It does, however, have some dynamically typed capabilities.
 
-Go has many similarities with C, inheriting many aspects of C syntax, control-flow statements, basic data types, pointers, and other elements. However, Go is more than an up-to-date version of C. It borrows and adapts ideas from other programming languages, while removing any unnecessarily complex features. For instance, some portions of the object-oriented programming paradigm aren't implemented as fully in Go. You'll learn why in some of the upcoming modules.
+According to the [TIOBE index][TIOBE], [Go was the programming language of the year][GoAwards] in 2009 and 2016. Although it reached its apex in 2016, Go [maintains a high rating][GoRating]. According to the [annual Stack Overflow Developer Survey][StackSurvey], Go continues as a top-loved language. 
 
-Go is very idiomatic in topics such as source code formats, disallowing unused code, not requiring an IDE, preferring standard libraries over frameworks, and offering a different approach to concurrent programming and error handling.
-
-Go runs on Unix systems, such as Linux and macOS, and it supports Windows as well.
+Go has many similarities with C and inherits aspects of C syntax like control-flow statements, basic data types, pointers, and other elements. Both the language's syntax and semantics go beyond C, though. It also draws similarities to Java, C#, Python, and more. In general, Go tends to borrow and adapt features from other programming languages, while shedding most of the complexity. For example, you can use some object-oriented (OO) programming features and design patterns in Go, but the full OO paradigm is not fully implemented. You'll learn why later in this Learning path.
 
 ## Go principles
 
-To understand why some things in Go are the way they are, it's worthwhile to understand the principles behind this programming language:
+Here are the underlying principle benefits of the Go programming language:
 
-- Go strives to keep things small and simple, to do more in fewer lines of code.
-- Concurrency is a first citizen, and functions can run as lightweight threads.
-- Compilation and execution are fast, with the aim to be as fast as C.
-- Go requires casting to be explicit, or else it throws a compilation error.
-- Unused code is not a warning, but an error, and the code won't compile.
-- There's an official formatting that helps to maintain consistency across projects.
-- Go isn't a good friend of frameworks, because it prefers to use standard libraries.
-- Go guarantees backward compatibility.
-- The Go license is completely open source.
+- The Go license is 100% open source.
+- Go programs compile to a single self-contained binary, making it easy to share and distribute.
+- Cross-compiling to a variety of platforms and operating systems
+- Go strives to keep the language small and simple, and to do more in fewer lines of code.
+- Concurrency is a first-class citizen, and enables any function to be run as a lightweight thread with little programmer effort.
+- Go provides automatic memory management including garbage collection.
+- Compilation and execution are fast.
+- Go requires that all code be used, or else and error is thrown.
+- There's official formatting that helps to maintain consistency across projects.
+- Go has a large and comprehensive standard library, and many applications can be built without third-party dependencies.
+- Go guarantees language backward compatibility with past releases.
+
+
+## Go use cases
+- Systems level applications
+- Web applications
+- Cloud-native applications
+- Utilities and command line tools
+- Distributed systems
+- Database implementations
+
+<!-- Links -->
+[GoAwards]: https://insights.dice.com/2017/01/10/go-tiobe-programming-language-2016/?azure-portal=true
+[GoRating]: https://www.tiobe.com/tiobe-index/go/?azure-portal=true
+[StackSurvey]: https://insights.stackoverflow.com/survey/2020#most-loved-dreaded-and-wanted?azure-portal=true
+[TIOBE]: https://www.tiobe.com/tiobe-index/?azure-portal=true
+[DockerWebsite]: https://www.docker.com/?azure-portal=true
+[KubernetesWebsite]: https://kubernetes.io/?azure-portal=true
+[TerraformWebsite]:https://www.terraform.io/?azure-portal=true

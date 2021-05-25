@@ -10,7 +10,7 @@ Security is a small word for a significant concept. There are so many factors to
 
 Tailwind Traders runs a mix of workloads on Azure and in its datacenter.
 
-The company needs to ensure that all of its systems meet a minimum level of security and that its information is protected from attacks. The company also needs a way to collect and act on security events from across its digital estate.
+The company needs to ensure that all of its systems meet a minimum level of security, and that its information is protected from attacks. The company also needs a way to collect and act on security events from across its digital estate.
 
 Let's explore how Tailwind Traders can use some of the tools and features in Azure as part of its overall security strategy.
 

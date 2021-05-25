@@ -30,7 +30,7 @@ Other Azure data services like Azure SQL and Azure Cosmos DB are managed as inde
 
 A storage account defines a policy that applies to all the storage services in the account. For example, you could specify that all the contained services will be stored in the West US datacenter, accessible only over https, and billed to the sales department's subscription.
 
-The settings that are controlled by a storage account are:
+The settings that are defined by a storage account are:
 
 - **Subscription**: The Azure subscription that will be billed for the services in the account.
 

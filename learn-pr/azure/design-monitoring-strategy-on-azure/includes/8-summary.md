@@ -1,4 +1,4 @@
-You were asked to design a monitoring strategy that covers all solutions that your organization uses. Your strategy needed to provide insights and alerts for collected log and metric data. Your strategy also had to ensure that the organization can quickly identify and minimize the performance problems and failures.
+You were asked to design a monitoring strategy that covers all solutions that your organization uses. Your strategy needed to provide insights and alerts for collected log and metric data. Your strategy also had to ensure that the organization could quickly identify and minimize the performance problems and failures.
 
 You've seen how to use Azure Monitor and its features such as Application Insights and virtual machine insights can monitor the health and performance of your applications and infrastructure. You have also seen how to use Azure Security Center and Azure Sentinel to monitor the security of your machines and other infrastructure resources.
 

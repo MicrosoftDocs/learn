@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-rock-images-ai-nasa.6-show-imported-images
 metadata:
-  title: Exercise - Display photos of space rocks in Jupyter Notebook
-  description: Run code to classify photos that you uploaded, and then print the photos, with classifications revealed.
-  ms.date: 03/10/2021
-  author: sguthals
+  title: Exercise - Display photos in Jupyter Notebook
+  description: Run code to classify uploaded photos, and print the photos with the rock classification.
+  ms.date: 04/11/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Display photos of space rocks in Jupyter Notebook
+title: Exercise - Display photos in Jupyter Notebook
 durationInMinutes: 4
 content: |
   [!include[](includes/6-show-imported-images.md)]

@@ -3,7 +3,7 @@ uid: learn.visual-studio-github-push.8-push-changes
 title: Push changes to GitHub from Visual Studio
 metadata:
   title: Push changes to GitHub from Visual Studio
-  description: This unit explains what happens when you use Visual Studio to push commits to remote
+  description: This unit explains what happens when you use Visual Studio to push commits to a remote
   ms.date: 03/31/2021
   author: prnadago
   ms.author: prnadago

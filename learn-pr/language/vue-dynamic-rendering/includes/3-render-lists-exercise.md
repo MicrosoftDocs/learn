@@ -8,7 +8,7 @@ You've been provided a starter repository for this module.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-vue-dynamic-render/
-    cd mslearn-vue-dynamic-render/2-dynamic-render
+    cd mslearn-vue-dynamic-render/start
     code .
     ```
 
@@ -43,7 +43,7 @@ In the preceding code, the `v-for` directive creates a new `div` element for eac
 
 ## Open the page in Live Server
 
-The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer/?azure-portal=true) extension for Visual Studio Code creates a development web server that automatically refreshes the page as changes are detected. After you install the extension, you can use it to host your page.
+The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for Visual Studio Code creates a development web server that automatically refreshes the page as changes are detected. After you install the extension, you can use it to host your page.
 
 1. Save all files.
 1. In Visual Studio Code, open the Command Palette by selecting Ctrl+Shift+P (or Cmd+Shift+P on a Mac).

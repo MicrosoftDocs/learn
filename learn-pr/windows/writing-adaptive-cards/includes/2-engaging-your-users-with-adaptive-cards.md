@@ -1,4 +1,3 @@
-
 ## Create your own Adaptive Card
 
 One of the features of Adaptive Cards is that the API is small and concise. The code that we're going to write in this module incorporates all the main features into one app.
@@ -1011,4 +1010,4 @@ The next unit of this module adds the significant remaining features of the Adap
 
 #### Resources
 
-For a detailed technical description of Adaptive Cards, see [Adaptive Cards overview](https://docs.microsoft.com/adaptive-cards/).
+For a detailed technical description of Adaptive Cards, see [Adaptive Cards overview](/adaptive-cards/).

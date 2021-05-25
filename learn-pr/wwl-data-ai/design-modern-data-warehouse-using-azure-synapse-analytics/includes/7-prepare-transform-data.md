@@ -9,7 +9,7 @@ With the Mapping Data Flow added, and the Spark cluster running, this will enabl
 
 ## Add source data to the Mapping Data Flow
 
-Open the Mapping Data Flow canvas. Click on the Add Source button in the Data Flow canvas. In the source dataset dropdown, select your data source, n this case the ADLS Gen2 dataset is used in this example
+Open the Mapping Data Flow canvas. Click on the Add Source button in the Data Flow canvas. In the source dataset dropdown, select your data source, in this case the ADLS Gen2 dataset is used in this example
 
 ![Adding source data to the Mapping Data Flow](../media/add-source-data-mapping-data-flow.png)
 

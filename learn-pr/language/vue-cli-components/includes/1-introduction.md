@@ -20,10 +20,10 @@ Prerequisites:
 - [Node.js](https://nodejs.org/en/?azure-portal=true)
 
 > [!NOTE]
-> To get the code for this module, you can clone the repository by running the following command in a command or terminal window:
+> To get the solution code for this module, you can clone the repository by running the following command in a command or terminal window:
 >
 > ```bash
 > git clone https://github.com/MicrosoftDocs/mslearn-vue-components
-> cd mslearn-vue-components
+> cd mslearn-vue-components/end
 > code .
 > ```

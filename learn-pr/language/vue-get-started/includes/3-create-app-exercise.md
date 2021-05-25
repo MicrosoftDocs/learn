@@ -8,7 +8,7 @@ In a terminal or command window, run the following commands.
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-vue-get-started/
-cd mslearn-vue-get-started/code/1-vue-get-started
+cd mslearn-vue-get-started/start
 code .
 ```
 
@@ -38,6 +38,8 @@ You can start writing a Vue script inside your HTML file if you want. But typica
                 productName: 'Book a Cruise to the Moon',
                 productDescription: 'Cruise to the moon in our luxurious shuttle. Watch the astronauts working outside the International Space Station.',
                 // additional properties later
+
+
             }
         },
     });

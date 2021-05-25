@@ -10,9 +10,9 @@ Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 Let's start by creating the problematic infrastructure, which includes a configuration error:
 
-1. In your browser, open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true), and log in to the directory with access to the subscription you want to create resources in.
+1. In your browser, open [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true), and log in to the directory with access to the subscription you want to create resources in.
 
-1. To create a variable to store your resource group name, and a resource group for your resources, in the Bash Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. To create a variable to store your resource group name, and a resource group for your resources, in Bash Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
     RG=<resource group name>
@@ -20,15 +20,15 @@ Let's start by creating the problematic infrastructure, which includes a configu
     az group create --name $RG --location <location>
     ```
 
-1. To create the virtual network **MyVNet1** and the subnet **FrontendSubnet**, in Azure Cloud Shell, run this command.
+1. To create the virtual network **MyVNet1** and the subnet **FrontendSubnet**, in Cloud Shell, run this command.
 
     ```azurecli
     az network vnet create \
         --resource-group $RG \
         --name MyVNet1 \
-        --address-prefix 10.10.0.0/16 \
+        --address-prefixes 10.10.0.0/16 \
         --subnet-name FrontendSubnet \
-        --subnet-prefix 10.10.1.0/24
+        --subnet-prefixes 10.10.1.0/24
     ```
 
 1. To create the subnet called **BackendSubnet**, run this command.
@@ -163,7 +163,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
 
-1. From the top menu bar, select **Create**. The **Create Connection Monitor** page appears.
+1. From the top menu bar, select **Create**. The **Create Connection Monitor** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -228,7 +228,7 @@ Run the same test in the opposite direction. Let's set up a test in Connection M
 
 1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
 
-1. From the top menu bar, select **Create**. The **Create Connection Monitor** page appears.
+1. From the top menu bar, select **Create**. The **Create Connection Monitor** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

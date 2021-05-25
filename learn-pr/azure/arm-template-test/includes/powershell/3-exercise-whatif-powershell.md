@@ -4,7 +4,7 @@ Here you'll deploy an ARM template by using PowerShell and the Az module. After 
 
 Before you install the required PowerShell module, make sure you have PowerShell Core (6.x or 7.x).
 
-- **Upgrade to or install latest PowerShell version**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&azure-portal=true) You can't install the required module on Windows PowerShell 5.x or earlier.
+- **Upgrade to or install latest PowerShell version**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.4.0) You can't install the required module on Windows PowerShell 5.x or earlier.
 
 - **Install the Az module**. To use what-if in PowerShell, you must have version 4.2 or later of the Az module.
 
@@ -112,7 +112,7 @@ You need to set the resource group created for you in the sandbox as the default
       In this command, use the name of the resource name provided by the last command. It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**.
 
       > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template, you need to specify the target *resource group* name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the next step through the [Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0) PowerShell command.
+      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template, you need to specify the target *resource group* name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the next step through the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0) PowerShell command.
 
 ## Deploy the first template to Azure
 

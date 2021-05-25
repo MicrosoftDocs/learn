@@ -1,20 +1,20 @@
-You will now create a Spring Boot application that will receive messages from a Service Bus queue.
+You'll now create a Spring Boot application that will receive messages from an Azure Service Bus queue.
 
 ## Create a Spring Boot project
 
-Let's open up a **NEW TERMINAL WINDOW** and just like we did with the sender Spring Boot application, we will utilize the  [Spring Initializr](https://start.spring.io/) to create a Spring Boot project:
+Let's open up a new terminal window, and just like we did with the sender Spring Boot application, we'll use the [Spring Initializr](https://start.spring.io/) to create a Spring Boot project.
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web -d baseDir=spring-receiver-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
-## Receive messages from an Azure Service Bus queue
+## Receive messages from a Service Bus queue
 
-Here again, we will add the dependency and configuration.
+Here again, we'll add the dependency and configuration.
 
-### Add the maven dependency for Azure Service Bus Spring Boot Starter
+### Add the maven dependency for Service Bus Spring Boot Starter
 
-In the `pom.xml` file in your `spring-receiver-application`, add the below under dependencies:
+In the `pom.xml` file in your `spring-receiver-application`, add the following command under dependencies:
 
 ```xml
 <dependencies>
@@ -30,7 +30,7 @@ In the `pom.xml` file in your `spring-receiver-application`, add the below under
 
 ### Add the configuration parameters
 
-In the `application.properties` file in your `spring-receiver-application`, add the below parameters:
+In the `application.properties` file in your `spring-receiver-application`, add the following parameters:
 
 ```java
 server.port=9090
@@ -40,9 +40,9 @@ spring.jms.servicebus.idle-timeout=20000
 ```
 
 > [!NOTE]
-> Please be sure to insert custom values for the configuration.
+> Be sure to insert custom values for the configuration.
 >
-> To obtain the Service Bus connection string, run the below command on the Azure CLI and use the `Primary Connection String`.
+> To obtain the Service Bus connection string, run the following command on the Azure CLI and use the `Primary Connection String`.
 >
 >   ```bash
 >    az servicebus namespace authorization-rule keys list \
@@ -52,11 +52,11 @@ spring.jms.servicebus.idle-timeout=20000
 >   ```
 >
 
-### Add code to receive messages from Azure Service Bus
+### Add code to receive messages from Service Bus
 
-Next we will add business logic to receive messages from an Azure Service Bus queue.
+Next, we'll add business logic to receive messages from a Service Bus queue.
 
-In the directory `src/main/java/com/example/demo`, create a `ReceiveController.java` file that has the below content:
+In the directory `src/main/java/com/example/demo`, create a `ReceiveController.java` file that has the following content:
 
 ```java
 package com.example.demo;
@@ -76,13 +76,13 @@ public class Receiver {
 
 ## Run the application locally
 
-You can now run your Spring Boot application by running the below command:
+You can now run your Spring Boot application by running the following command:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Once the application start-up completes, you will see the below log statements in the console where you ran the `./mvnw spring-boot:run` command.
+After the application startup completes, you'll see the following log statements in the console where you ran the `./mvnw spring-boot:run` command.
 
 ```bash
 Received <Hello>
@@ -90,11 +90,11 @@ Received <HelloAgain>
 Received <HelloOnceAgain>
 ```
 
-This indicates that the Spring Boot application has successfully received messages from the Azure Service Bus queue.
+The appearance of the statements indicates that the Spring Boot application has successfully received messages from the Service Bus queue.
 
 ## See the entire workflow in action
 
-If your sender application (from unit 4) is still running, you can click on the below link to send a message to the Azure Service Bus queue,
+If your sender application (from unit 4) is still running, you can select the following link to send a message to the Service Bus queue:
 
 ```html
 http://localhost:8080/messages?message=HelloOnceAgainAndAgain

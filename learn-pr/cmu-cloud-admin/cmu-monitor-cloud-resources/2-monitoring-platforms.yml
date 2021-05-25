@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which of the following statements about application performance monitoring (APM) platforms is NOT true?"
+    - content: "Which of the following statements about application performance monitoring (APM) platforms is true?"
       choices:
       - content: "Agentless APM platforms typically rely on service logs to monitor performance"
         isCorrect: false

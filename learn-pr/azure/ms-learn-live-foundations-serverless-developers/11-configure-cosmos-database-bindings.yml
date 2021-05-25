@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmos-database-bindings
 
-title: Use an Input Binding to Read from Cosmos DB
+title: Use an input binding to read from Cosmos DB
 
 metadata:
-  title: Use an Input Binding to Read from Cosmos DB
-  description: Use an Input Binding to Read from Cosmos DB
+  title: Use an input binding to read from Cosmos DB
+  description: Use an input binding to read from Cosmos DB
   
   ms.date: 04/29/2020
   
@@ -18,7 +18,7 @@ metadata:
 
 azureSandbox: false
 
-durationInMinutes: 5
+durationInMinutes: 10
 
 content: |
   [!include[](includes/11-configure-cosmos-database-bindings.md)]

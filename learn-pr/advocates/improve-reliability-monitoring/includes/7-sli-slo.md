@@ -11,10 +11,10 @@ reliability in my organization?"
 
 Here's the big idea that can unlock the problem for us:
 
-> The right feedback loops improve reliability in your organization.
+*The right feedback loops improve reliability in your organization.*
 
 Improving reliability in your organization is going to be an iterative
-process. In this unit we are going to look at a highly effective practice
+process. In this unit, we are going to look at a highly effective practice
 from the site reliability engineering world to create and nurture the kind
 of feedback loop in an organization that helps it improve reliability. At
 the very least, it will spark concrete conversations in your organization
@@ -23,17 +23,14 @@ about reliability based on objective data.
 Earlier in this module, we mentioned this as a definition for site
 reliability engineering:
 
-> Site Reliability Engineering is an engineering discipline devoted to
-> helping organizations sustainably achieve the appropriate level of
-> reliability in their systems, services, and products.
+*Site Reliability Engineering is an engineering discipline devoted to helping organizations sustainably achieve the appropriate level of reliability in their systems, services, and products.*
 
 Here's where the concept of _appropriate level of reliability_ comes into
 play.
 
 ## Service Level Indicators (SLIs)
 
-Service level indicators are connected to our previous discussion about the
-expansive understanding of reliability. Remember this diagram?
+Service Level Indicators (SLIs) are connected to our previous discussion about the expansive understanding of reliability. Remember this diagram?
 
 :::image type="content" source="../media/diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
@@ -66,8 +63,8 @@ we've been 80% successful around our latency requirements by this
 measurement.
 
 Just to be clear this is not just a web site thing, if we had a pipeline
-service that processed data, we could say we need to measure coverage, i.e.
-how much of the data did we process. Very different system, same basic
+service that processed data, we could say we need to measure coverage (for example,
+how much of the data did we process). Very different system, same basic
 math.
 
 ### SLIs: where to measure
@@ -113,7 +110,7 @@ Is that a good or a bad thing? Is that the "appropriate level of
 reliability?"
 
 To answer these questions, we're going to need to set an objective for that
-SLI, a Service Level Objective (SLO). This objective will clearly state our
+SLI - a Service Level Objective (SLO). This objective will clearly state our
 goal for that service.
 
 The basic recipe for creating an SLO consists of these ingredients:
@@ -133,13 +130,11 @@ The basic recipe for creating an SLO consists of these ingredients:
 Putting these components together and including the important “where”
 information, a sample SLO might look like this:
 
-> “90% of HTTP requests as reported by the load balancer succeeded in the
-> last 30-day window.”
+*“90% of HTTP requests as reported by the load balancer succeeded in the last 30-day window.”*
 
 Similarly, a basic SLO measuring latency might look like this:
 
-> 90% of HTTP requests as reported by the client returned in <20ms in the
-> last 30-day window.
+*90% of HTTP requests as reported by the client returned in <20ms in the last 30-day window.*
 
 Start with simple, basic SLOs such as these when you introduce the practice
 into your organization. You can create more complex SLOs later if needed.
@@ -151,7 +146,7 @@ SLI/SLO in Azure Monitor using Log Analytics. To keep things consistent,
 we'll return to the web server example.
 
 We learned in the last unit that we can create queries in Log Analytics
-using the Kusto Query Language. Here's a KQL query that display an
+using the Kusto Query Language (KQL). Here's a KQL query that displays an
 availability SLI for a web service:
 
 ```kusto
@@ -163,9 +158,9 @@ requests
 | render timechart
 ```
 
-As before, we start with specifying the source of the data, the `requests`
+As before, we start with specifying the source of the data - the `requests`
 table. We then narrow down the data we will be working with to just the
-last 30 days worth of information. We then collect (in 5 minute buckets)
+last 30 days worth of information. We then collect (in 5-minute buckets)
 the number of successful requests, the number of failed requests, and the
 total number of requests. The SLI gets created using the easy arithmetic we
 saw before. We tell KQL we'd like to plot that SLI along with timestamps
@@ -186,7 +181,7 @@ requests
 ```
 
 There are two lines changed in this example from the previous one. The
-first defines the number we will use for the SLO, the second tells KQL that
+first defines the number we will use for the SLO; the second tells KQL that
 the SLO should be included in the chart. The result looks like this:
 
 :::image type="content" source="../media/slo-example.png" alt-text="Line graph showing an SLI and an SLO, graph shows SLI at 100% reliability followed by several dips, SLO is a solid line at the 80% mark.":::
@@ -196,7 +191,7 @@ availability objective.
 
 ## Using SLIs/SLOs
 
-Invariably there will be some tuning that will have to take place with your
+Invariably, there will be some tuning that will have to take place with your
 SLIs and SLOs (this is an iterative process, after all). But once that is
 done, what do you do with the information?
 
@@ -206,14 +201,14 @@ discussions with stakeholders and other communication that sets things in a
 good direction. The next round of discussions on what to do with them can
 also be similarly helpful.
 
-Ultimately, SLIs and SLOs are work planning tools. They can help you make
+Ultimately, SLIs and SLOs are work-planning tools. They can help you make
 engineering decisions like "should we work on new features for the service
-or should we focus on reliability work instead?". They can help with the
+or should we focus on reliability work instead?" They can help with the
 sort of feedback loops we discussed before.
 
-A secondary but pretty common use for SLIs and SLOs is as part of a more
-immediate monitoring/response system. In addition to the work planning
+A secondary but fairly common use for SLIs and SLOs is as part of a more
+immediate monitoring/response system. In addition to the work-planning
 aspect (one you should focus on first), many people use them as an
 operations signal. For example, they may choose to alert their personnel if
-the service drops below its service level objective for a prolonged amount
+the service drops below its SLO for a prolonged amount
 of time. That sort of alert leads us to our next unit in this module.

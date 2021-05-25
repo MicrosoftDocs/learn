@@ -1,11 +1,13 @@
-In the previous module, we learned about how values have owners and we can transfer ownership of value by moving ownership from one variable to another. This doesn't happen for types that implement the `Copy` trait such as simple values like numbers. We can also *explicitly* copy values (known as "cloning") by calling the `clone` method and getting new values that are moved leaving our original value unmoved and free to still use.
+In the previous module, we learned about how values have owners. We transfer ownership of a value by moving ownership from one variable to another. Ownership can't be transferred for types that implement the `Copy` trait, such as for simple values like numbers.
 
-Wouldn't it be nice to be able to allow functions and other variables use of certain data without fully owning it?
+We can also **explicitly** copy values by using the *cloning* process. We call the `clone` method and get new values that are copied, which leaves the original values unmoved and free to still use.
 
-This is where *references* come into play. References allow us to "borrow" values without taking ownership of them.
+Wouldn't it be nice to be able to allow functions and other variables to use certain data without fully owning it?
+
+This type of functionality is available by using *references*. References allow us to "borrow" values without taking ownership of them.
 
 ```rust
-let greeting = String::from("hello")
+let greeting = String::from("hello");
 let greeting_reference = &greeting; // We borrow `greeting` but the string data is still owned by `greeting`
 println!("Greeting: {}", greeting); // We can still use `greeting`
 ```
@@ -28,11 +30,11 @@ fn main() {
 }
 ```
 
-Borrowing allows us to use the a value without taking full ownership. However, as we'll see, borrowing a value means we can't do everything we can do with a fully owned value.
+Borrowing allows us to use a value without taking full ownership. However, as we'll see, borrowing a value means we can't do everything we can do with a fully owned value.
 
 ## Mutating borrowed values
 
-What happens if we try to mutate a value we borrowed:
+What happens if we try to mutate a value we borrowed?
 
 ```rust
 fn change(message: &String) {
@@ -74,13 +76,13 @@ With `&` borrows known as "immutable borrows", we can read the data but we can't
 
 ## Borrowing and mutable references
 
-Now we get to the real center of Rust's memory management story. Immutable and mutable references differ in one additional way that has radical effects on how we build our Rust programs. When borrowing a follow of any type `T`, the following rules apply:
+Now we get to the real center of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
 
-You can have *either* of the following but **not both at the same time**:
+Your code must implement *either* of the following definitions, but **not both at the same time**:
 - One or more immutable references (`&T`) 
 - Exactly one mutable reference (`&mut T`)
 
-The following code would then fail to compile:
+The following code doesn't have allowed definitions, so the compilation fails:
 
 ```rust
 fn main() {

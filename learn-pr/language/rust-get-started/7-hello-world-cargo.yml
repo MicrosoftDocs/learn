@@ -3,7 +3,7 @@ uid: learn.language.rust-get-started.7-hello-world-cargo
 metadata:
   title: 'Exercise: Hello World - Cargo'
   description: Write your first program by using Cargo.
-  ms.date: 12/01/2020
+  ms.date: 05/19/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
