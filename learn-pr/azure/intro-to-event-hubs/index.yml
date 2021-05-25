@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-event-hubs
+metadata:
+  title: Introduction to Event Hubs
+  description: Event Hubs provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Event Hubs 
+summary: Event Hubs provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+abstract: |
+  In this module, you will:
+  - Assess the benefits of Event Hubs
+  - Describe what Event Hubs is
+  - Define scenarios where Event Hubs can be applied
+prerequisites: A basic familiarity with Azure
+iconUrl: /learn/achievements/intro-to-event-hubs.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.intro-to-event-hubs.introduction
+- learn.azure.intro-to-event-hubs.what-is-azure-ml
+- learn.azure.intro-to-event-hubs.how-azure-ml-works
+- learn.azure.intro-to-event-hubs.when-to-use-azure-ml
+- learn.azure.intro-to-event-hubs.knowledge-check
+- learn.azure.intro-to-event-hubs.summary
+badge:
+  uid: learn.azure.intro-to-event-hubs.badge
