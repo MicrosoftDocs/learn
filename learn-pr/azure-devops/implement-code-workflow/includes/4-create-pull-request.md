@@ -110,17 +110,17 @@ Here, you create a pull request for your branch.
 1. Go to your **mslearn-tailspin-spacegame-web** repository.
 1. In the **Branch** drop-down list, select your `code-workflow` branch.
 
-    ![The Branch drop-down control](../media/4-github-select-branch.png)
+    :::image type="content" source="../media/4-github-select-branch.png" alt-text="A screenshot of GitHub showing how to select the branch from the drop-down menu.":::
 
 1. To start your pull request, select **New pull request**.
 
-    ![The "New pull request" button](../media/4-github-new-pr.png)
+    :::image type="content" source="../media/4-github-new-pr.png" alt-text="A screenshot of GitHub showing the location of the New pull request button.":::
 
 1. Ensure that the **base** specifies your forked repository and not the Microsoft repository.
 
     Your selection looks like this:
 
-    ![The compare to base dropdowns](../media/4-github-set-base.png)
+    :::image type="content" source="../media/4-github-set-base.png" alt-text="A screenshot of GitHub confirming that the branch can be merged.":::
 
     > [!IMPORTANT]
     > This step is important because you can't merge your changes into the Microsoft repository. Make sure that the base repository points to your GitHub account and not MicrosoftDocs.
@@ -142,11 +142,11 @@ Here, you create a pull request for your branch.
 
     This step does not merge any code. It tells others that you have changes that you are proposing be merged into `master`.
 
-    ![Specifying pull request details on GitHub](../media/4-github-pr-details.png)
+    :::image type="content" source="../media/4-github-pr-details.png" alt-text="A screenshot of GitHub showing the pull request description and the location of the Create pull request button.":::
 
     The pull request window is displayed. You can see that the build status in Azure Pipelines is configured to appear as part of the pull request. That way, you and others can view the status of the build as it's running.
 
-    ![GitHub showing a pending build](../media/4-github-build-pending.png)
+    :::image type="content" source="../media/4-github-build-pending.png" alt-text="A screenshot of GitHub showing build checks running in Azure Pipelines.":::
 
     Just like when you push a branch to GitHub, a pull request, by default, triggers Microsoft Azure Pipelines to build your application.
 
@@ -161,12 +161,12 @@ Here, you create a pull request for your branch.
 
     Wait for the build to complete. You're now ready to merge your pull request.
 
-    ![A pull request on GitHub showing a successful build](../media/4-github-build-succeeded.png)
+    :::image type="content" source="../media/4-github-build-succeeded.png" alt-text="A screenshot of GitHub showing successful build checks in Azure Pipelines.":::
 
 1. Select **Merge pull request**, and then select **Confirm merge**.
 1. To delete the `code-workflow` branch from GitHub, select **Delete branch**.
 
-    ![Deleting a branch on GitHub](../media/4-github-delete-branch.png)
+    :::image type="content" source="../media/4-github-delete-branch.png" alt-text="A screenshot of GitHub showing the location of the Delete branch button.":::
 
     It's completely safe to delete a branch from GitHub after you've merged your pull request. In fact, it's a common practice, because the branch is no longer needed. The changes are merged and you can still find the details about the changes on GitHub or from the command line. Deleting a merged branch also helps others see only the work that's currently active.
 

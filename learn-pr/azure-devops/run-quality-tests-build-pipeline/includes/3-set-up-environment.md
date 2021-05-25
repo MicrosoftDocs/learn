@@ -49,7 +49,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Screenshot of Azure DevOps showing the To Do backlog of tasks.](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -64,15 +64,15 @@ To set up the work item:
 
 1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 
-    ![Screenshot of Azure DevOps navigation with the Boards menu and Boards menu item highlighted.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create unit tests** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
-    ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
     ![Screenshot of Azure Boards showing the unit test card now in the Doing column.](../media/3-azure-boards-wi3-doing.png)
 
-At the end of this module, after you've completed the task, you'll move the card to the **Done** column. 
+At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 
 [!include[](../../shared/includes/build-local-setup.md)]

@@ -67,7 +67,7 @@ In a new browser tab, navigate to `http://localhost:5000` to see the running app
 
 You see this:
 
-![The Space Game website](../media/3-space-game-top.png)
+:::image type="content" source="../media/3-space-game-top.png" alt-text="A screenshot of the Space Game website running in a web browser.":::
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
@@ -124,7 +124,7 @@ Like before, the `feature/home-page-text` is based off of `master`.
 
     You can see that the home page contains the updated text.
 
-    ![The Space Game website](../media/5-web-site-revised-text.png)
+    :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="A screenshot of the Space Game website with updated text. The text contains a spelling error.":::
 
     When you're finished, return to the terminal window, and then press <kbd>Ctrl+C</kbd> to stop the running application.
 
@@ -160,7 +160,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
 
 1. Go to GitHub to see that your branch has been pushed to your remote repository.
 
-    ![GitHub showing a recently pushed branch](../media/5-github-recently-pushed.png)
+    :::image type="content" source="../media/5-github-recently-pushed.png" alt-text="A screenshot of GitHub showing a recently pushed branch.":::
 
 ## Watch Azure Pipelines build the application
 

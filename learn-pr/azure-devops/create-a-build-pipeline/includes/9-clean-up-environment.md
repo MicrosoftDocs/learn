@@ -35,7 +35,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the dropdown, select **Settings**.
 
-    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Azure Pipelines showing the location of the Settings menu.":::
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.

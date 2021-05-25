@@ -78,11 +78,11 @@ To set up the work item:
 
 1. From Azure DevOps, navigate to **Boards**. Then, from the menu, select **Boards**.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create a multistage pipeline** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 

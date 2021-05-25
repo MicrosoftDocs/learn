@@ -2,7 +2,7 @@ It's important to choose a code flow strategy that fits in with how your team wo
 
 When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One task was to create a Git-based workflow.
 
-![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
+:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="A screenshot of Azure Boards showing the initial three tasks.":::
 
 Let's listen in on the team as they work out a better way to collaborate. Currently, they're using a centralized version control system, but the plan is to move to Git, a distributed system.
 
@@ -20,17 +20,17 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 ## What is Git and distributed version control?
 
-![A hand-drawn illustration of centralized versus distributed source control](../media/2-whiteboard-centralized-vs-distributed-drawing.png)
+:::image type="content" source="../media/2-whiteboard-centralized-vs-distributed-drawing.png" alt-text="A hand-drawn illustration of centralized versus distributed source control.":::
 
-**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base ![Callout 1](../../shared/media/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the master repository when we're finished with them.
+**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the master repository when we're finished with them.
 
 **Andy:** Yes, and that is working for us. Well, except when I was blocked that time that a breaking change got merged into the central repo.
 
-**Mara:** Right! You were blocked ![Callout 2](../../shared/media/callout-02.png). We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated. And when we had that breaking change ![Callout 3](../../shared/media/callout-03.png) no one could get any work done until we got that resolved. That problem is always lurking, because we're all using the same copy of the code.
+**Mara:** Right! You were blocked :::image type="icon" source="../../shared/media/callout-02.png":::. We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated. And when we had that breaking change :::image type="icon" source="../../shared/media/callout-03.png"::: no one could get any work done until we got that resolved. That problem is always lurking, because we're all using the same copy of the code.
 
-On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository.
+On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository :::image type="icon" source="../../shared/media/callout-04.png"::: that's the stable version of the code base, but each developer has their own copy :::image type="icon" source="../../shared/media/callout-05.png"::: of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository.
 
-Distributed version control also ensures that only working code ![Callout 6](../../shared/media/callout-06.png) gets merged into the master repository. We could even set it up to where code can't be merged until it's been reviewed.
+Distributed version control also ensures that only working code :::image type="icon" source="../../shared/media/callout-06.png"::: gets merged into the master repository. We could even set it up to where code can't be merged until it's been reviewed.
 
 What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
 
@@ -77,7 +77,7 @@ When you begin to work on a new feature or bug fix, the first thing you want to 
 
     :::column-end:::
     :::column:::
-        ![A pull of the remote master branch](../media/2-github-paths-1.png)
+        :::image type="content" source="../media/2-github-paths-1.png" alt-text="A diagram that shows a pull from the remote main branch into the local main branch.":::
     :::column-end:::
  :::row-end:::
  :::row:::
@@ -88,7 +88,7 @@ To make sure you're working safely on your copy of the code, you create a new br
 Before you make changes to a file, you check out a new branch so that you know you're working on the files from that branch and not a different branch. You can switch branches anytime by checking out that branch.
     :::column-end:::
     :::column:::
-        ![A branch of local master](../media/2-github-paths-2.png)
+        :::image type="content" source="../media/2-github-paths-2.png" alt-text="A diagram that shows a new branch being created in the local repository.":::
     :::column-end:::
 :::row-end:::
  :::row:::
@@ -97,7 +97,7 @@ Before you make changes to a file, you check out a new branch so that you know y
 You're now safe to make whatever changes you want, because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to make sure you don't lose any work and to provide a way to roll back any changes you've made to previous versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
     :::column-end:::
     :::column:::
-        ![A commit of work on your branch](../media/2-github-paths-3.png)
+        :::image type="content" source="../media/2-github-paths-3.png" alt-text="A diagram showing commits being made to the local branch.":::
     :::column-end:::
 :::row-end:::
  :::row:::
@@ -106,7 +106,7 @@ You're now safe to make whatever changes you want, because these changes are onl
 The next step is to _push_, or upload, your local branch up to the remote repository (such as GitHub) so that others can see what you're working on. Don't worry, this won't merge your changes yet. You can push up your work as often as you'd like. In fact, that's a good way to back up your work or enable yourself to work from multiple computers.
     :::column-end:::
     :::column:::
-        ![A push of a local branch to remote](../media/2-github-paths-4.png)
+        :::image type="content" source="../media/2-github-paths-4.png" alt-text="A diagram showing local commits being pushed to the remote repository.":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,7 +117,7 @@ This step is a common one, but not required. When you're satisfied that your cod
 This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
     :::column-end:::
     :::column:::
-        ![A pull of the remote master](../media/2-github-paths-5.png)
+        :::image type="content" source="../media/2-github-paths-5.png" alt-text="A diagram showing remote changes being pulled down into the local repository.":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -126,7 +126,7 @@ This process helps ensure that your feature works with the latest code. It also 
 Your local code now needs to be committed and pushed up to the hosted repository. This is the same as steps 3 and 4.
     :::column-end:::
     :::column:::
-        ![A commit and push](../media/2-github-paths-6.png)
+        :::image type="content" source="../media/2-github-paths-6.png" alt-text="A diagram showing the merged commits being pushed to the remote repository.":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,7 +135,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 You're finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `master` branch. (It's still up to a human to merge the changes.)
     :::column-end:::
     :::column:::
-        ![A pull request](../media/2-github-paths-7.png)
+        :::image type="content" source="../media/2-github-paths-7.png" alt-text="A diagram showing a pull request from a branch into main.":::
     :::column-end:::
 :::row-end:::
 

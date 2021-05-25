@@ -31,7 +31,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create a new project.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -49,7 +49,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -58,20 +58,20 @@ Here you move the second item, **Create a Git-based workflow**, to the **Doing**
 
 Recall that **Create a Git-based workflow** relates to moving to a code workflow that enables better collaboration among team members.
 
-![Work item details](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot showing work item details for the Create a Git-based workflow issue.":::
 
 To set up the work item:
 
 1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create a Git-based workflow** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi2-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi2-doing.png" alt-text="A screenshot of Azure Boards showing the work item in the Doing column.":::
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 

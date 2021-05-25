@@ -49,7 +49,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -64,11 +64,11 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
 
-    ![Screenshot of Azure DevOps, showing the Azure Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. From the **Move model data to its own package** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
 
-    ![Screenshot of Azure Boards, showing assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** to the **Doing** column.
 

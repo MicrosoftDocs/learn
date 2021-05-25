@@ -24,7 +24,7 @@ Most GitHub repositories include a file named *README.md*, which is a Markdown f
 
 Here's an example build badge:
 
-![The build badge on GitHub](../media/6-final-build-badge.png)
+:::image type="content" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
@@ -35,7 +35,7 @@ To make sure your build badge is visible:
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
-    ![Azure DevOps showing how to disable anonymous access to badges](../media/6-devops-disable-anonymous-badge-access.png)
+    :::image type="content" source="../media/6-devops-disable-anonymous-badge-access.png" alt-text="A screenshot Azure DevOps showing how to disable anonymous access to badges.":::
 
 You need to make a similar change to your project:
 
@@ -50,7 +50,7 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 1. In Azure DevOps, in the left pane, select **Pipelines**, and then select your pipeline.
 1. Select the ellipsis (...) in the upper right, and then select **Status badge**.
 
-    ![Azure Pipelines showing the options menu to set the build badge](../media/6-pipeline-options-menu.png)
+    :::image type="content" source="../media/6-pipeline-options-menu.png" alt-text="A screenshot of Azure Pipelines showing the options menu to set the build badge.":::
 
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
 1. In GitHub, go to your project.
@@ -61,7 +61,7 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 
     GitHub renders the Markdown file and shows you the build badge.
 
-    ![Previewing the build badge on GitHub](../media/6-github-preview-changes.png)
+    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="A screenshot of GitHub showing a preview of adding the build badge.":::
 
 ## Commit your changes to master
 
@@ -69,13 +69,13 @@ In this section, you commit your changes to the `master` branch on GitHub.
 
 1. Scroll to the bottom of the page and specify a commit message, such as "Add build badge".
 
-    ![Specifying commit change details on GitHub](../media/6-github-commit-changes.png)
+    :::image type="content" source="../media/6-github-commit-changes.png" alt-text="A screenshot of GitHub showing the commit message.":::
 
 1. Leave the **Commit directly to the master branch** option selected, and then select **Commit changes** to commit your changes to the `master` branch.
 
     Your badge is displayed on the *README.md* page.
 
-    ![The build badge on GitHub](../media/6-final-build-badge.png)
+    :::image type="content" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the final build badge in the README file.":::
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you could have created a pull request with your changes for others to review.
 

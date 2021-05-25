@@ -40,7 +40,7 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 
 In this section, you submit a fix to the typing error on the home page. Recall that the word "official" is mistyped as "oficial".
 
-![The Space Game website showing a typing error](../media/5-web-site-revised-text.png)
+ :::image type="content" source="../media/7-build-history-widget.png" alt-text="A screenshot of the Space Game website showing a typing error.":::
 
 1. In Visual Studio Code, go to the terminal.
 1. To check out the `master` branch, run `git checkout`:
@@ -48,7 +48,8 @@ In this section, you submit a fix to the typing error on the home page. Recall t
     ```bash
     git checkout master
     ```
-1. To pull down the latest changes to the `master` branch from GitHub, run `git pull`: 
+
+1. To pull down the latest changes to the `master` branch from GitHub, run `git pull`:
 
     ```bash
     git pull origin master
@@ -64,17 +65,20 @@ In this section, you submit a fix to the typing error on the home page. Recall t
     ```bash
     git checkout -b bugfix/home-page-typo
     ```
+
 1. In File Explorer, open **Index.cshtml**.
 1. Locate the error.
 
     ```html
     <p>Welcome to the oficial Space Game site!</p>
     ```
+
 1. Change the line to correct the error.
 
     ```html
     <p>Welcome to the official Space Game site!</p>
     ```
+
 1. Save the file.
 1. In the terminal, stage and commit the change.
 
@@ -95,7 +99,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
 1. In GitHub, look for the `bugfix/home-page-typo` branch.
 
-    ![GitHub showing the recently pushed branch](../media/8-github-recent-branch.png)
+    :::image type="content" source="../media/8-github-recent-branch.png" alt-text="A screenshot of GitHub showing the recently pushed branch.":::
 
 1. To create a pull request, select **Compare and pull request**.
 1. Set your forked repository as the base repository.
@@ -103,7 +107,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
     You can see that a human review is required before you can merge the change.
 
-    ![A pull request on GitHub showing that a review is required](../media/8-github-review-required.png)
+    :::image type="content" source="../media/8-github-review-required.png" alt-text="A screenshot of a pull request on GitHub showing that a review is required in order to merge.":::
 
     In practice, you would assign a team member to review your change. In this unit, for learning purposes, you merge your own pull request.
 
