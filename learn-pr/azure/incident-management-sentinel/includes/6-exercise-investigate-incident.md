@@ -56,6 +56,9 @@ In this task, you'll delete a VM to test rule detection and incident creation.
 2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
 
+  > [!NOTE] 
+  >  Please give the operation several minutes to complete before the next step! 
+
 ## Task 3: Investigate an incident
 
 In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to 20 minutes for the incident to appear in Azure Sentinel.

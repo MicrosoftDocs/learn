@@ -13,7 +13,6 @@ In this exercise, you will:
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-
 ## Create a new resource group
 
 You'll first need to create a resource group for your resources to deploy into.
@@ -76,7 +75,7 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
         --subnet-prefixes 10.240.0.0/16
     ```
 
-1. Next, retrieve, and store the subnet ID in a Bash variable by running the command below.
+1. Next, retrieve, and store the subnet ID in a Bash variable by running the following command.
 
     ```azurecli
     SUBNET_ID=$(az network vnet subnet show \
@@ -90,7 +89,7 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
 
 With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the `az aks create` command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
 
-1. To get the latest, non-preview, Kubernetes version you use the `az aks get-versions` command. Store the value that returns from the command in a Bash variable named `VERSION`. Run the command below the retrieve and store the version number.
+1. To get the latest, non-preview, Kubernetes version you run the `az aks get-versions` command. Store the value that returns from the command in a Bash variable named `VERSION`. Run the following command to retrieve and store the version number.
 
     ```azurecli
     VERSION=$(az aks get-versions \
@@ -133,13 +132,13 @@ With the new virtual network in place, you can go ahead and create your new clus
     Let's review the variables in the previous command:
 
     - `$AKS_CLUSTER_NAME` specifies the name of the AKS cluster.
-    - `$VERSION` is the latest Kubernetes version you retrieved earlier.
+    - `$VERSION` is the latest Kubernetes version you previously retrieved.
     - `$SUBNET_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
 
     Note the following deployment configuration:
 
     - `--vm-set-type`: We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
-    
+
     - `--node-count`: We're specifying that the cluster is created with two nodes. The default node count is three nodes. However, if you're running this exercise using a free trial account, cluster creation may fail due to quota limits if left at the default setting.
 
     - `--network-plugin`: We're specifying the creation of the AKS cluster by using the CNI plug-in.
@@ -152,9 +151,9 @@ With the new virtual network in place, you can go ahead and create your new clus
 
 ## Test cluster connectivity by using `kubectl`
 
-*kubectl* is the main Kubernetes command-line client you use to interact with your cluster and is available in Cloud Shell. A cluster context is required to allow *kubectl* to connect to a cluster. The context contains the cluster's address, a user, and a namespace. Use the `az aks get-credentials` command to configure your instance of *kubectl*.
+*kubectl* is the main Kubernetes command-line client you use to interact with your cluster and is available in Cloud Shell. A cluster context is required to allow *kubectl* to connect to a cluster. The context contains the cluster's address, a user, and a namespace. Run the `az aks get-credentials` command to configure your instance of *kubectl*.
 
-1. Retrieve the cluster credentials by running the command below.
+1. Retrieve the cluster credentials by running the following command.
 
     ```azurecli
     az aks get-credentials \
@@ -162,7 +161,7 @@ With the new virtual network in place, you can go ahead and create your new clus
         --name $AKS_CLUSTER_NAME
     ```
 
-1. Let's take a look at what was deployed by listing all the nodes in your cluster. Use the `kubectl get nodes` command to list all the nodes.
+1. Let's take a look at what was deployed by listing all the nodes in your cluster. Run the following `kubectl get nodes` command to list all the nodes.
 
     ```bash
     kubectl get nodes
@@ -202,7 +201,7 @@ Let's create a namespace for your ratings application.
     kube-system       Active   1h
     ```
 
-1. Use the `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
+1. Run the `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
 
     ```bash
     kubectl create namespace ratingsapp

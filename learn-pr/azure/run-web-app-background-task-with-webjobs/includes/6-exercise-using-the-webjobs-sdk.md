@@ -31,7 +31,7 @@ The Azure Storage bindings, such as `QueueTrigger` and `Blob`, use the storage a
 In the [Azure portal](https://portal.azure.com/?azure-portal=true), run the following command in the Cloud Shell to create both connection strings as settings in the web app. We'll use the same connection string as we did for `StorageAccount` in the previous exercise. The new WebJob will read messages from the existing queue, and write blobs to a new container in the same storage account.
 
 ```azurecli
-az webapp config connection-string set --id $WEB_APP_ID --connection-string-type Custom --settings AzureWebJobsStorage=$STORAGE_ACCOUNT_CONNSTR AzureWebJobsDashboard=$STORAGE_ACCOUNT_CONNSTR
+az webapp config connection-string set --ids $WEB_APP_ID --connection-string-type Custom --settings AzureWebJobsStorage=$STORAGE_ACCOUNT_CONNSTR AzureWebJobsDashboard=$STORAGE_ACCOUNT_CONNSTR
 ```
 
 ## Publish the application

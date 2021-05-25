@@ -46,17 +46,20 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | **Location** | *Select the region closest to you from the following list* | Select the location where the database should be located. |
     | **Capacity mode** | *Provisioned throughput* | This is the default, and there is no need to change it. |
     | **Apply Free Tier Discount** | *Do Not Apply* | The free tier is not necessary for this module. |
-    | **Account Type** | *Non-Production* | This module is for learning, so your database is not meant for production use. |
+
+1. Select **Next: Global Distribution**.
+
+1. On the **Global Distribution** tab, enter the following values for each setting.
+
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Global Distribution** |
     | **Geo-Redundancy** | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
     | **Multi-region Writes** | *Enable* | This setting enables you to write to multiple regions at the same time. |
 
     [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Review + create**.
-
-    ![The new account page for Azure Cosmos DB](../media/2-azure-cosmos-db-create-new-account.png)
-
-    Prices in images are for example purposes only.
 
 1. After the settings are validated, select **Create** to create the account.
 

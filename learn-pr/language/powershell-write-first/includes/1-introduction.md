@@ -1,6 +1,4 @@
-PowerShell is a powerful, cross-platform task automation and configuration management framework. It
-consists of a command-line shell and programming language. Among its uses, some of the common ones
-are:
+PowerShell is a powerful, cross-platform task automation and configuration management framework. It consists of a command-line shell and programming language. Here are its most common uses:
 
 - Task automation and orchestration
 - Configuration management
@@ -8,19 +6,15 @@ are:
 - Custom tool making
 - Scripting
 
-PowerShell is a great language to learn whether you have prior programming experience or not. It's
-beginner friendly due to it's readability, focus on simplicity, and built-in help systems.
+PowerShell is a great language to learn whether you have prior programming experience or not. It's a beginner-friendly language because of its readability, focus on simplicity, and built-in help system.
 
-The best way to learn how to code in any language is to _write_ as much code as possible. So, we
-encourage you to type along with the exercises in this module and others in this learning path.
-Typing the code yourself in each exercise and solving the coding challenges accelerate your
-learning and teach you small foundational concepts to build on with practice and exploration.
+The best way to learn how to code in any language is to _write_ as much code as possible. We encourage you to type along with the exercises in this module and others in this learning path. Typing the code yourself in each exercise and solving the coding challenges can accelerate your learning and teach you small foundational concepts to build on with practice and exploration.
 
 ## Learning objectives
 
-- Manage PowerShell inputs and outputs
-- Diagnose errors when you type code incorrectly
-- Identify different PowerShell elements like cmdlets, parameters, inputs, and outputs.
+After you've completed this module, you'll be able to:
+  - Manage PowerShell inputs and outputs.
+  - Diagnose errors when you type code incorrectly.
+  - Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.
 
-These units give you your first look at the PowerShell syntax. They provide invaluable insights
-and introduce many new ideas, which will be expanded on in other modules.
+This module gives you your first look at the PowerShell syntax. It provides invaluable insights and introduces many new ideas that will be expanded on in other modules.

@@ -1,4 +1,4 @@
-The logic for processing the activity can be implement in multiple ways. The Bot Framework SDK provides classes that can help you build bots that manage conversations using:
+The logic for processing the activity can be implemented in multiple ways. The Bot Framework SDK provides classes that can help you build bots that manage conversations using:
 
 - **Activity handlers**: Event methods that you can override to handle different kinds of activities.
 - **Dialogs**: More complex patterns for handling stateful, multi-turn conversations.
