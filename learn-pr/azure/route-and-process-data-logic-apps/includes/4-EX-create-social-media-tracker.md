@@ -8,13 +8,13 @@ The first thing we need to do is create an Azure logic app. To do that, we need 
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the home page, select **Create a resource**.
+1. On the Azure portal menu or from the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box,  **Logic app**. The **Logic App** pane appears.
+1. In the search box, enter **Logic app**. Select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
 
-1. Select **Create**. The **Create a logic app** pane appears.
+1. Select **Create**. The **Create Logic App (Consumption)** pane appears.
 
-## Configure your Azure Logic Apps resource
+## Configure your Azure Logic App resource
 
 Now that the Azure Logic Apps resource has been located, let's configure basic settings, like its resource group and location.
 
@@ -27,19 +27,17 @@ Now that the Azure Logic Apps resource has been located, let's configure basic s
     | Resource group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
     | Logic app name | Enter *ShoeTracker* |
-    | Region | Select a location from the following list |
+    | Region | Select a location closest to you from the following list |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Review + create**, and then select **Create**. Wait until the resource is created.
+1. Select **Review + create**, and then select **Create**. Wait until the resource is deployed. The **Overview** pane for your Logic App appears.
 
 ## Use a template for your Azure logic app
 
 When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
 
-1. In the Overview pane of your newly created logic app, select **Go to resource**.
-
-1. In the left menu pane, scroll down to **Templates**, and select **Blank Logic App**. The **Logic Apps Designer** pane appears.
+1. In the Overview pane of your newly-created logic app, select **Go to resource**. The **Logic Apps Designer** pane appears.
 
 ## Create a Twitter trigger
 
