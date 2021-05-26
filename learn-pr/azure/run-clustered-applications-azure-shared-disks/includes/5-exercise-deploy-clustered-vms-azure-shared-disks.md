@@ -26,7 +26,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 az group list
 
 # Create Azure Shared disk with support concurent access from two VMs.
-az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
+az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
 ```
 
 ## Task 2: Create proximity placement group and availability set
@@ -37,7 +37,7 @@ az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 -
 # Create proximity placement group.
 az ppg create \
 -n myPPG \
--g [sandbox resource group name] \
+-g <rgn>[sandbox resource group name]</rgn> \
 -t standard
 ```
 
@@ -49,7 +49,7 @@ az ppg create \
 ```bash
 # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
 az vm availability-set create \
---resource-group [sandbox resource group name] \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
 --name myAvailabilitySet \
 --platform-fault-domain-count 2 \
 --platform-update-domain-count 2 \
@@ -63,7 +63,7 @@ az vm availability-set create \
 ```bash
 for i in `seq 1 2`; do
 
-az vm create --resource-group [sandbox resource group name] --name myVM$i --availability-set myAvailabilitySet --ppg myPPG --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --ppg myPPG --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
 
 done
 ```
@@ -75,13 +75,13 @@ done
 1. While you're still in Cloud Shell, attach the Azure shared disk to both VMs using the following commands: 
 
 ```bash
-diskId=$(az disk show -g [sandbox resource group name] -n mySharedDisk --query 'id' -o tsv)
+diskId=$(az disk show -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --query 'id' -o tsv)
 
 # attach the shared disk to the first VM.
-az vm disk attach -g [sandbox resource group name] --vm-name myVM1 --name $diskId
+az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM1 --name $diskId
 
 # attach the shared disk to the second VM.
-az vm disk attach -g [sandbox resource group name] --vm-name myVM2 --name $diskId
+az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
 ```
 
 2. When finished with this task, the shared disk is attached to two VMs at the same time.
@@ -92,7 +92,7 @@ az vm disk attach -g [sandbox resource group name] --vm-name myVM2 --name $diskI
 2. Use the following command to retrieve the IP addresses of VM1: 
 
 ```bash
-az network public-ip show --resource-group [sandbox resource group name] --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
 ```
 
 3. Connect to the first VM by using SSH:
@@ -215,7 +215,7 @@ pwsh
 
 # Create Azure Shared disk
 $dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
-$dataDisk=New-AzDisk -ResourceGroupName [sandbox resource group name] -DiskName "mySharedDisk1" -Disk $dataDiskConfig
+$dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
 ```
 
 ## Task 2: Create a proximity placement group and an availability set
@@ -225,7 +225,7 @@ $dataDisk=New-AzDisk -ResourceGroupName [sandbox resource group name] -DiskName 
 ```powershell
 # Create proximity placement group
 $ppgName="myPPG1"
-$resourceGroup=[sandbox resource group name]
+$resourceGroup=<rgn>[sandbox resource group name]</rgn>
 $ppg=New-AzProximityPlacementGroup `
 -Location EastUs `
 -Name $ppgName `
@@ -240,7 +240,7 @@ $ppg=New-AzProximityPlacementGroup `
 New-AzAvailabilitySet `
 -Location "EastUS" `
 -Name "myAvailabilitySet1" `
--ResourceGroupName [sandbox resource group name] `
+-ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
 -Sku aligned `
 -PlatformFaultDomainCount 2 `
 -PlatformUpdateDomainCount 2 `
@@ -267,7 +267,7 @@ $cred = Get-Credential
 for ($i=3; $i-le4; $i++)
 {
 New-AzVm `
--ResourceGroupName [sandbox resource group name] `
+-ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
 -Name "myVM$i" `
 -Location eastus `
 -VirtualNetworkName "myVnet1" `
@@ -294,7 +294,7 @@ Format-Table -Property VirtualMachines -Wrap
 
 ```powershell
 
-$vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName [sandbox resource group name]
+$vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 $vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
 Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
@@ -303,7 +303,7 @@ Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
 2. Attach the Azure shared disk to the second VM:
 
 ```powershell
-$vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName [sandbox resource group name]
+$vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 $vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
 Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
