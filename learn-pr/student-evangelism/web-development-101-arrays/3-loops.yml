@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Same as above
+title: Iterate over items in the array with loops
 durationInMinutes: 1
 content: |
   [!include[](includes/3-loops.md)]

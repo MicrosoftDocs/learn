@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Same as above
+title: Manipulating arrays
 durationInMinutes: 1
 content: |
   [!include[](includes/2-manipulating-arrays.md)]
