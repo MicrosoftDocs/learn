@@ -23,6 +23,7 @@ levels:
   - beginner
 roles:
   - developer
+  - database-administrator
 products:
   - azure
   - azure-linux-vm
