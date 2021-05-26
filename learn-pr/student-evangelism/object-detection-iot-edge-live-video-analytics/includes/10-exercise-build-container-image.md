@@ -27,7 +27,7 @@ Before you start, make sure that you have installed rerequisites in your local m
 
    [![The illustration shows the access keys.](../media/container-registry-access-keys.png)](../media/container-registry-access-keys.png#lightbox)
 
-## Download inference YOLOv4 (tiny) TensorFlow Lite model
+## Download the inference YOLOv4(tiny) TensorFlow Lite model
 
 1. Go to https://github.com/Azure/live-video-analytics and download zip in your local machine.
 
@@ -43,7 +43,7 @@ Before you start, make sure that you have installed rerequisites in your local m
 
 3. Create a new directory on your machine and copy all the files (including the sub-folders) from this GitHub folder to new directory.
 
-## Build a container image with YOLO model
+## Build a container image with the YOLO model
 
 1. You will see Dockerfile that provides build instructions for the container image.
 
@@ -57,7 +57,7 @@ Before you start, make sure that you have installed rerequisites in your local m
 
    [![The illustration shows how to build a docker image.](../media/build-docker-image.png)](../media/build-docker-image.png#lightbox)
 
-## Push docker image to Azure Container Registry
+## Push the docker image to the Azure Container Registry
 
 Now, you have a docker image with the YOLO model. Before you can push an image to your registry, you must tag it with the fully qualified name of your registry login server. The login server name is in the format ***azurecr.io*** (must be all lowercase).
 
@@ -102,7 +102,7 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    [![The illustration shows the containerized model in container registry.](../media/container-registry-repositories.png)](../media/container-registry-repositories.png#lightbox)
 
-## Deploy YOLO model as an Azure IoT Edge module
+## Deploy the YOLO model as an Azure IoT Edge module
 
 1. In the Azure portal, go to your IoT Hub resource.
 
@@ -146,7 +146,7 @@ After setting your module, select **Review + create**. The review section shows 
 
    [![The illustration shows the review of deployment.](../media/review-deployment.png)](../media/review-deployment.png#lightbox)
 
-## Check the deployed module in your edge device.
+## Check the deployed module in your edge device
 
 After the deployment, you can check the module in your edge device. Connect to your virtual machine and run the **docker ps** command.
 

@@ -7,6 +7,6 @@ After connecting the web application, you need to add a camera to stream out the
 As a summary, you'll perform the following steps in the web application:
 
 1. Connect to web application
-2. Add a camera that will stream the video feed.
+2. Add a camera that will stream the video feed
 3. Add a model and upload your labels
 4. Create a solution deployment
