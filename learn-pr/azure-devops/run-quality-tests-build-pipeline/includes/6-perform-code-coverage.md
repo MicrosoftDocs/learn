@@ -1,6 +1,6 @@
 Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework you use.
 
-When you target .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET Core. Before we add code coverage to the pipeline, let's check in with the team.
+When you target .NET applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET. Before we add code coverage to the pipeline, let's check in with the team.
 
 Amita feels much better. She's seeing actual progress in catching bugs and in easily viewing test results. What's more, it hasn't taken long for Andy and Mara to implement the improvements. Amita, Andy, and Mara talk a bit more about unit testing.
 
@@ -40,14 +40,14 @@ But at some point we also need to think about security and compliance. We should
 
 **Mara:** Let's get started.
 
-## How is code coverage done in .NET Core?
+## How is code coverage done in .NET?
 
 The way you collect code coverage depends on what programming language and frameworks you're using, as well as what code coverage tools are available.
 
-Mara and Andy do some investigation around code coverage for .NET Core applications. Here's what they find:
+Mara and Andy do some investigation around code coverage for .NET applications. Here's what they find:
 
 * Visual Studio on Windows provides a way to perform code coverage.
-* However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET Core.
+* However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET.
 
     The unit test project requires the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild?azure-portal=true) NuGet package.
 * Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](https://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats.
@@ -58,13 +58,13 @@ Mara and Andy do some investigation around code coverage for .NET Core applicati
 
     Specifically, there's an HTML format called **HtmlInline_AzurePipelines**, which provides a visual appearance that matches Azure Pipelines.
 
-### How can I manage .NET Core tools?
+### How can I manage .NET tools?
 
-A .NET Core tool such as `ReportGenerator` is a special NuGet package that contains a console application. You can manage a .NET Core tool as a global tool or as a local tool.
+A .NET tool such as `ReportGenerator` is a special NuGet package that contains a console application. You can manage a .NET tool as a global tool or as a local tool.
 
 A global tool is installed in a centralized location and can be called from any directory. One version of a global tool is used for all directories on the machine.
 
-A local tool is a more isolated copy of a .NET Core tool that's scoped to a specific directory. Scope enables different directories to contain different versions of the same tool.
+A local tool is a more isolated copy of a .NET tool that's scoped to a specific directory. Scope enables different directories to contain different versions of the same tool.
 
 You use a _manifest file_ to manage local tools for a given directory. This file is in JSON format and is typically named *dotnet-tools.json*. A manifest file enables you to describe the specific tool versions that you need to build or run your application.
 
@@ -175,7 +175,7 @@ In this section, you add tasks that measure code coverage to your build pipeline
 
     | Azure Pipelines task           | Display name                           | Description                                                         |
     |--------------------------------|----------------------------------------|---------------------------------------------------------------------|
-    | `DotNetCoreCLI@2`              | Install .NET Core tools from local manifest                |  Installs tools listed in the manifest file, *dotnet-tools.json*              |
+    | `DotNetCoreCLI@2`              | Install .NET tools from local manifest                |  Installs tools listed in the manifest file, *dotnet-tools.json*              |
     | `DotNetCoreCLI@2`              | Run unit tests - $(buildConfiguration) | Runs unit tests and also collects code coverage in Cobertura format |
     | `DotNetCoreCLI@2`              | Create code coverage report            |  Converts Cobertura output to HTML                                  |
     | `PublishCodeCoverageResults@1` | Publish code coverage report           | Publishes the report to the pipeline                                |

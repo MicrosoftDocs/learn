@@ -147,7 +147,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
     > [!NOTE]
     > TRX files are not meant to be included in source control. A *.gitignore* file enables you specify which temporary and other files you want Git to ignore. The project's *.gitignore* file is already set up to ignore anything in the *TestResults* directory.
 
-1. As an optional step, in Visual Studio Code, open the *DocumentDBRepository_GetItemsAsyncShould.cs* file from the *Tailspin.SpaceGame.Web.Tests* folder, and examine the test code. Even if you're not interested in building .NET Core apps specifically, you might find the test code useful because it resembles code you might see in other unit test frameworks.
+1. As an optional step, in Visual Studio Code, open the *DocumentDBRepository_GetItemsAsyncShould.cs* file from the *Tailspin.SpaceGame.Web.Tests* folder, and examine the test code. Even if you're not interested in building .NET apps specifically, you might find the test code useful because it resembles code you might see in other unit test frameworks.
 
 ## Add tasks to your pipeline configuration
 
