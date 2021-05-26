@@ -1,39 +1,38 @@
-The Health Bot Service supports several built-in scenarios. For example, the bot can triage a medical condition, or find information about a disease.
+The Azure Health Bot service supports several built-in scenarios. For example, the bot can triage a medical condition or find information about a disease. You can also design custom scenarios in the Health Bot service that fit your organization's needs. 
 
-Besides the built-in scenarios, we can also design scenarios in the health bot service which fits your organization's needs. We can do this by authoring custom scenarios in this SaaS service.
+## Get started with a custom scenario
 
-## Getting started with a custom scenario
+1. If you don't have an access to the Azure Health Bot service, [create a free account](https://azure.microsoft.com/services/bot-services/health-bot/?azure-portal=true).
 
-1. If you don't have an access to the [Azure Health Bot service](https://azure.microsoft.com/services/bot-services/health-bot/?azure-portal=true).
+1. Sign in to the Health Bot portal.
+   
+1. Select **Create new scenario**.
 
-1. Login to the Microsoft Health Bot Service Portal.
+   :::image type="content" source="../media/2-create-new.png" alt-text="Screenshot that shows the link for creating a new scenario.":::
 
-   :::image type="content" source="../media/2-create-new.png" alt-text="Advanced Functionalities-1":::
+1. In the **New Scenario** form, fill in the following details.
 
-1. On logging in to the Health Bot management we can see a Portal as shown above. Now select "CREATE A CUSTOM SCENARIO" from here.
+   :::image type="content" source="../media/2-new-scenario-details.png" alt-text="Screenshot that shows fields for a new scenario.":::
 
-1. We then see a form on the screen which will ask us a few details like,
+   - **Name**: Choose a name for your custom bot. Try to keep it meaningful so that it's easy to find when you're searching for it.
 
-   :::image type="content" source="../media/2-new-scenario-details.png" alt-text="Advanced Functionalities-2":::
+   - **Description**: Enter a brief explanation of your bot so that others will know why you're creating it.
 
-   - NAME: Choose a name for your custom bot. Try to keep it meaningful, so that it comes in handy when you are in search of it!
+   - **Scenario ID**: Enter a unique ID for the bot. It's case sensitive and does not allow spaces. 
+   
+   - **Returning Message**: Enter a message that appears if the scenario is interrupted and then the user returns.  
 
-   - DESCRIPTION: A brief explanation of your bot can be given here. So, others will also get to know what this bot is tailored for.
+   - **Interrupting scenario**: Select this toggle if you want to allow the scenario to be interrupted.
 
-   - Scenario ID: This is a unique ID for the bot and it is case sensitive and does not allow spaces. Returning Message: This is a message specially if the scenario is interrupted and then the user returns back.  
+1. Select **Create**. Configuration of the scenario might take some time.
 
-   - Interrupting Scenario: This determines whether the scenario can be interrupted or not.
+After the scenario is configured, a screen like the following one appears.
 
-1. After filling in the details press on create. It might take some time to configure.
-
-Once the scenario is configured, we can see a similar screen as shown...
-
-:::image type="content" source="../media/2-configured.png" alt-text="Advanced Functionalities-3":::
+:::image type="content" source="../media/2-configured.png" alt-text="Screenshot that shows the screen that appears after a new scenario is configured.":::
 
 The fields, visual editor, and elements provided in the Scenario Editor allow you to author, test, and debug scenarios.
 
-There are a lot of elements in this canvas which we will go through when needed, we can see 4 main windows on the screen. There is an option to see the code of the block we have designed using the designer.
+The screen has four main areas. On the **Designer** tab, you can see the code of the block that you've designed. Select the **Code** tab to see the JSON format of the block.
 
-:::image type="content" source="../media/2-code.png" alt-text="Advanced Functionalities-4":::
+:::image type="content" source="../media/2-code.png" alt-text="Screenshot that shows the Designer and Code tabs.":::
 
-The code section, when clicked shows the JSON format of the block.

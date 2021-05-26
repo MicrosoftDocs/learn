@@ -20,34 +20,34 @@ quiz:
       choices:
         - content: "Prompt"
           isCorrect: true
-          explanation: We simply use a Prompt block to do this process. It is used to retrieve input from the user.
+          explanation: We use a prompt block for this process. It's used to get input from the user.
         - content: "Statement"
           isCorrect: false
-          explanation: A Statement triggers an output from the health bot instance 	with 	no expectation of a response.
+          explanation: A statement triggers an output from the Health Bot instance with no expectation of a response.
         - content: "Block"
           isCorrect: false
-          explanation: There is no element name block from the scenario steps.
+          explanation: There is no block element in the scenario steps.
     
-    - content: "If you wish to use a two way decision split, which scenario will you use?"
+    - content: "If you want to use a two-way decision split, which scenario will you use?"
       choices:
-        - content: "Yes/No Prompt"
+        - content: "Yes/No prompt"
           isCorrect: false
-          explanation: "It is a Two-way split in the flow based on user input."
+          explanation: "This is a two-way split in the flow based on user input."
         - content: "Branch"
           isCorrect: true
-          explanation: "Branch is a Two-way decision split, based on code and NOT on the user input."
+          explanation: "Branch is a two-way decision split that's based on code and not on the user input."
         - content: "Switch"
           isCorrect: false
-          explanation: "It's a Multi-optional split in the flow based on code."
+          explanation: "This is a multi-optional split in the flow based on code."
 
     - content: "Which of the following helps you to test and run your scenario?"
       choices:
-        - content: "Test Block"
+        - content: "Test block"
           isCorrect: false
-          explanation: "It's not where the testing of the bot is done."
+          explanation: "This isn't where you test the bot."
         - content: "Chat"
           isCorrect: false
-          explanation: "It's only the name of the window in which the testing is done. Web Chat Panel allows you to test the bot."
-        - content: "Web Chat Panel"
+          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat panel to test the bot."
+        - content: "Web Chat panel"
           isCorrect: true
-          explanation: "The Web Chat panel in the upper right of the Scenario editor allows you to run and test scenarios"
+          explanation: "You run and test scenarios in the Web Chat panel in the upper right of the scenario editor."

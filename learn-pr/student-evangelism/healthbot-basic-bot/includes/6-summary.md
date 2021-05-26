@@ -1,1 +1,5 @@
-This module introduces the user to the Healthcare Bot Platform and also helps them to create their first scenario. The user can now effectively create a basic scenario. The canvas is a place to drag and drop blocks. We simply connect them to decide the flow of the bot. The "Code" option lets the user go through a Json format of the graphical steps. This was a basic informative bot without any interrupting or breaking scenario involved. The upcoming module will show the user to enhance the bot with much more advanced Functionalities!
+This module introduced you to the Azure Health Bot service and helped you to create your first scenario. You can now effectively create a basic scenario on your own. 
+
+In this module, you learned that the canvas is a place to drag and drop blocks. You simply connect them to decide the flow of the bot. The **Code** option shows a JSON format of the graphical steps. 
+
+This was a basic informative bot without any interrupting or breaking scenario involved. The next module will show you how to enhance the bot with more advanced functionalities.
