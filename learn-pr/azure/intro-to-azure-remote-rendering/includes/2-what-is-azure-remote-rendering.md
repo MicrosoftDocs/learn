@@ -1,4 +1,4 @@
-When you work with 3D visualization, every detail can<!-- Reads funny with the "can." Does every detail matter? If so, just say that: every detail matters --> matter. However, untethered devices often have insufficient compute resources to render more complex models to the required level of detail. When you use Azure Remote Rendering, you shift your rendering workloads to high-performance GPUs in Azure. Azure:
+When you work with 3D visualization, every detail matters. However, untethered devices often have insufficient compute resources to render more complex models to the required level of detail. When you use Azure Remote Rendering, you shift your rendering workloads to high-performance GPUs in Azure. In Azure, a cloud hosted service:
 
 - Renders your image.
 - Encodes the image as a video stream.
@@ -9,12 +9,12 @@ When you work with 3D visualization, every detail can<!-- Reads funny with the "
 
 ## What is decimation?
 
-3D models are made up of polygons. *Decimation* is a process that compresses a model and removes polygons<!-- Do you mean "compresses a model by removing its polygons"? -->, which means the model won't render in full detail. You might choose to simplify your 3D models using decimation when you're viewing content on untethered devices.
+3D models are made up of polygons. *Decimation* is a process that compresses a model by removing its polygons, which means the model won't render in full detail. You might choose to simplify your 3D models using decimation when you're viewing content on untethered devices.
 
 > [!NOTE]
 > Decimation simplifies your models to the level required for rendering on your hardware.
 
-However<!-- "However" doesn't work here. I'd use "unfortunately" -->, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an internal combustion engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
+Unfortunately, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an internal combustion engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
 
 :::image type="content" source="../media/engine-model1.png" alt-text="An image of an internal combustion engine. The image is rendered using decimation.":::
 
