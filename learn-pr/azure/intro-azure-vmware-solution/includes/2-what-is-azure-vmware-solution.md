@@ -15,7 +15,7 @@ The VMware vSphere clusters are built from bare-metal Azure hosts. These cluster
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments. Network access from AVS to Azure services or networks provides reliable, high-speed integration of Azure service endpoints. ExpressRoute Global Reach connects your on-premises environment to your Azure VMware Solution private cloud, providing a unified experience for users and customers accessing AVS-based workloads.
 
 
-## Azure VMware Solution features:
+## Azure VMware Solution features
 The following features are the six core pillars of value that AVS provides.
 
 **Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements over time. 
