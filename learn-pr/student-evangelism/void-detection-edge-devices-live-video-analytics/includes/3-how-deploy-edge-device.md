@@ -6,7 +6,9 @@ Firstly we configure the device as an IoT Edge device and set up communication b
 
 Before you begin, if you don't have an active Azure subscription, you need to create a free account. You can use 30 days free trial, or you can create your pay-as-you-go subscription.
 
-Hence, the steps we follow are:
+## Steps to follow
+
+You'll complete the following steps to deploy an edge device.
 
 1. Define the resource group or use a pre-existing one
 2. Create Azure IoT Hub or use an existing one
@@ -56,4 +58,4 @@ Once the deployment is complete, you can connect to your edge device and check t
 Now that you've configured your edge device, you'll need to add an inbound rule to allow network traffic between your device and your web application from the internet over TCP port 8181. To open port 8181, you'll specify the following parameters:
 
 - Define destination port ranges
-- Define name for your security rule
+- Define name for your security
