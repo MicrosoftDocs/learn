@@ -1,8 +1,8 @@
-Adatum's management team is seeking opportunities to accommodate the additional needs of its customers, by requesting support for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this objective, you decided to explore the functionality of Azure IoT Central. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and reviewing the built-in analytics functionality to review the collected telemetry.
+Adatum's management team is requesting support for additional customer needs for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this goal, you decided to explore the functionality of Azure IoT Central. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
 
 ## What is Azure IoT Central?
 
-Azure IoT Central is a fully managed cloud service that simplifies the implementation of a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management.
+Azure IoT Central is a fully managed cloud service that simplifies implementing a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management.
 
 :::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture that includes Azure IoT Central.":::
 
@@ -32,7 +32,13 @@ Azure IoT Central architecture includes the following core components:
 
 Azure IoT Central architecture includes the following optional components:
 
-  - IoT Edge devices serve as brokers for management and data flow for devices, whenever direct communication with Azure IoT Central is restricted or not possible. They might, for example, play a role in device provisioning, data filtering, aggregation, buffering, protocol translation, or event rules processing.
+  - IoT Edge devices serve as brokers for device management and data flow whenever direct communication with Azure IoT Central is restricted or not possible. They might, for example, play a role in:
+    - Device provisioning
+    - Data filtering
+    - Aggregation
+    - Buffering
+    - Protocol translation
+    - Event rules processing
   - The device provisioning service automates the task of onboarding IoT devices.
   - Data transformation services perform ingress tasks such as protocol translation, data conversion, and data aggregation.
   - User management subsystems implement role-based access control (RBAC), allowing for the delegation of device management tasks.
@@ -53,11 +59,11 @@ The core capabilities of Azure IoT Central include:
 - Individual and bulk device provisioning, with built-in authentication and access control provisions.
 - Monitoring device activities and state.
 - Remote management of device firmware.
-- Continuous or interval-based export of telemetry data to Azure and external services for additional processing or long-term storage.
+- Continuous or interval-based export of telemetry data to Azure and external services for extra processing or long-term storage.
 - Customizable rules engine processing device and telemetry data, allowing you to trigger alerts and remediation tasks in response to an abnormal condition.
 - Authentication and authorization that's based on built-in support for identity management and RBAC.
 
-One of the core concepts of Azure IoT Central is an application. This term represents a collection of components that allow you to control operational aspects of configuration, management, maintenance, and analytics of an IoT solution. Microsoft offers many predefined application templates that illustrate the most common IoT use cases in four main categories: retail, energy, government, and healthcare. The purpose of application templates is to assist with the development of IoT solutions. Each of them constitutes a ready-to-use product, with sample dashboards, device templates, simulated devices producing real-time data, preconfigured rules, and jobs. For each, you have access to detailed documentation, which you can rely on if you decide to further customize the corresponding application to meet your specific needs.
+One of the core concepts of Azure IoT Central is an application. This term represents a collection of components that allow you to control operational aspects of configuration, management, maintenance, and analytics of an IoT solution. Microsoft offers many predefined application templates that illustrate the most common IoT use cases in four main categories: retail, energy, government, and healthcare. The purpose of application templates is to assist with developing IoT solutions. Each of them are a ready-to-use product with sample dashboards, device templates, simulated devices producing real-time data, preconfigured rules, and jobs. For each, you have access to detailed documentation, which you can rely on if you decide to further customize the corresponding application to meet your specific needs.
 
 Device templates constitute blueprints for IoT devices. They define the device model, consisting of physical characteristics of the device, and their virtual representation in an Azure IoT Central application. In particular, the device model includes device capabilities that designate telemetry, properties, and commands that are available for a particular device type. Cloud properties allow you to assign additional metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities.
 
@@ -68,4 +74,4 @@ As a developer, you can incorporate IoT Central into a custom IoT solution, whic
 - A cloud-native application that receives, processes, and reacts to telemetry, and optionally, provides device management functionality.
 - Devices running custom code that generate the required telemetry. With IoT Plug and Play devices, it's possible to onboard them without any manual configuration and without writing any embedded device code.
 
-Azure IoT Central not only simplifies the development and implementation of custom IoT solutions, but also supports ad-hoc testing with built-in mock devices. In addition, the integration with Time Series Insights and the ability to define rules for generating alerts might help you eliminate the need for a dedicated stream processing service such as Stream Analytics.
+Along with simplifying custom IoT solution development and implementation, Azure IoT Central  also supports ad-hoc testing with built-in mock devices. In addition, being able to integrate with Time Series Insights and define alert-generating rules might help you eliminate the need for a dedicated stream processing service such as Stream Analytics.
