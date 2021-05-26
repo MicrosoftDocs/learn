@@ -31,5 +31,5 @@ Swashbuckle also generates the OpenAPI document on-the-fly, which includes all t
 In the next unit, you will take an exercise how to enable this OpenAPI capability to your ASP.NET Core Web API app.
 
 
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az apim]: /azure/api-management/api-management-key-concepts
 [swashbuckle]: https://github.com/domaindrivendev/Swashbuckle.AspNetCore

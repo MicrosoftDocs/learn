@@ -17,13 +17,13 @@ abstract: |
     - Add flexibility to your templates by using parameters, variables, and expressions.
     - Create and deploy a Bicep template that includes modules.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Understanding of what infrastructure as code (IaC) is, and its benefits.
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Understanding of what infrastructure as code is, and what its benefits are.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
   - Either:
-    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed locally.
-    - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps) installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
 iconUrl: /learn/achievements/bicep/deploy-azure-resources-by-using-bicep-templates.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - beginner
