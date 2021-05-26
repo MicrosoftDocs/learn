@@ -118,7 +118,7 @@ You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the redeployment
 
-Now that you've redeployed the resources, you want to verify that the additional SQL server and database resources have been created in the East Asia region.
+Now that you've redeployed the resources, you want to verify that the additional logical server and database resources have been created in the East Asia region.
 
 1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select the **<rgn>[sandbox resource group name]</rgn>** resource group. If necessary, select **Refresh** to see the newly deployed resources.
 
