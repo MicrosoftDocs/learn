@@ -2,14 +2,14 @@
 uid: learn.azure.deploy-resources-different-scopes
 metadata:
   moduleType: standard
-  title: Deploy resources to different scopes with Bicep
-  description: Learn how to deploy resources at the subscription, management group, and tenant scope within your Bicep code.
+  title: Deploy resources to subscriptions, management groups, and tenants with Bicep
+  description: Learn how to deploy resources to subscription, management group, and tenant scopes within your Bicep code.
   ms.date: 05/05/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-title: Deploy resources to different scopes with Bicep
+title: Deploy resources to subscriptions, management groups, and tenants with Bicep
 summary: |
   Deploy Azure resources at the subscription, management group, and tenant scope.
   Learn what these resources are, why you'd use them, and how you create Bicep code to deploy them.
@@ -23,9 +23,9 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Familiarity with creating and deploying Bicep templates.
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - Understanding of child and extension resources.
-  - An Azure account, with the ability to create subscription-level resources.
+  - An Azure account, with the ability to create subscription-level resources. For one exercise, you'll need to be able to create management groups and policies, but this is an optional exercise.
   - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.

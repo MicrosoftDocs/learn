@@ -35,11 +35,11 @@ Next, you will create a Bicep module for the R&D team's virtual network. The res
 
 1. Add the following content into the *virtualNetwork.bicep* file:
 
-   :::code language="bicep" source="code/modules/virtualNetwork.bicep" :::
+   :::code language="bicep" source="code/6-virtual-network.bicep" :::
 
    Notice that you haven't specified a `targetScope` for this module. You don't need to specify a target scope when the Bicep file is targeting a resource group.
 
-1. Save the changes to the file.
+2. Save the changes to the file.
 
 ## Use the module in the subscription deployment
 
@@ -65,7 +65,7 @@ Your *main.bicep* file should look like the following:
 
 Your *modules/virtualNetwork.bicep* file should look like the following:
 
-:::code language="bicep" source="code/modules/virtualNetwork.bicep" :::
+:::code language="bicep" source="code/6-virtual-network.bicep" :::
 
 If either file doesn't match the example, either copy the example or adjust your template.
 
