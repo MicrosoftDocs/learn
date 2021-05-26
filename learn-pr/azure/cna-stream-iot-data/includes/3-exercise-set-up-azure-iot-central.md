@@ -72,7 +72,7 @@ In this exercise, you'll:
    | Unit | **Percent** |
    | Display unit | **%** |
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-humidity.png" alt-text="Screenshot of the Humidity capability section of the Raspberry Pi device template page of the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-iot-custom-application-device-template-humidity.png" alt-text="Screenshot of the IoT Central Application portal, Raspberry Pi device template page, Humidity capability section.":::
 
 1. On the **Raspberry Pi** page, select **+ Add capability**.
 1. In the newly displayed **Capabilities** section, specify the following settings:
@@ -96,11 +96,11 @@ In this exercise, you'll:
    | Unit | **Degree Celsius** |
    | Display unit | **C** |
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-temperature.png" alt-text="Screenshot of the Temperature capability section of the Raspberry Pi device template page of the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-iot-custom-application-device-template-temperature.png" alt-text="Screenshot of the IoT Central Application portal, Raspberry Pi device template page, Temperature capability section.":::
 
 1. On the **Raspberry Pi** page, select **Save** to save the device template in the draft mode.
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-draft.png" alt-text="Screenshot of the capabilities of the Raspberry Pi device template page of the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-draft.png" alt-text="Screenshot of the IoT Central Application portal, capabilities of the Raspberry Pi device template page.":::
 
 1. On the **Raspberry Pi** page, select **Views**, and on the **Select to add a new view** pane, select **Generate default views**.
 1. In the **Select the applicable views to be generated** section, ensure that the following options are selected, and then select **Generate default dashboard view(s)**.
@@ -152,9 +152,9 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-iot-raspberry-pi-connection-string.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page with the connection string set.":::
 
-1. On the **Raspberry Pi Azure IoT Online Simulator** page, directly after the code pane, select **Run** and verify that the messages containing temperature and humidity telemetry are generated and sent to the target designated by the connection string.
+1. On the **Raspberry Pi Azure IoT Online Simulator** page, directly after the code pane, select **Run**. Verify that the messages containing temperature and humidity telemetry are generated and sent to the target designated by the connection string.
 
-   :::image type="content" source="../media/3-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page depicting the messages being sent to the IoT Central application.":::
+   :::image type="content" source="../media/3-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page, with the messages being sent to the IoT Central application.":::
 
 1. Switch back to the web browser window displaying the **About** view of the **raspberrypi-1** page and monitor the charts displaying humidity and temperature telemetry.
 
@@ -172,11 +172,11 @@ In this exercise, you'll:
 1. On the **Analytics** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry. In the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
 1. On the **Analytics** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window, and then select **Save**.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-timeframe.png" alt-text="Screenshot of the Analytics timeframe settings of the raspberrypi-1 device telemetry in the IoT Central application window.":::
+   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-timeframe.png" alt-text="Screenshot of the IoT Central application window, raspberrypi-1 device telemetry Analytics timeframe settings.":::
 
 1. On the **Analytics** page, review the resulting graph.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-graph.png" alt-text="Screenshot of the Analytics page of the raspberrypi-1 device telemetry in the IoT Central application window.":::
+   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-graph.png" alt-text="Screenshot of the IoT Central application window raspberrypi-1 device telemetry Analytics page.":::
 
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page and after the code pane, select **Stop**. Verify that the simulated device no longer sends messages to the Azure IoT Central application.
 1. Keep all the web browser windows open. You'll use them in the next exercise of this module.
