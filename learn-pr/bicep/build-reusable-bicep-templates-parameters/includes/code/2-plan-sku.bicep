@@ -4,6 +4,6 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   sku: {
     name: appServicePlanSku.name
     tier: appServicePlanSku.tier
-    capacity: appServicePlanInstanceCount
+    capacity: appServicePlanSku.capacity
   }
 }
