@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of configuring rules and data export of IoT telemetry by using Azure IoT Central applications. For more information about these topics, refer to:
+﻿This exercise provides an overview of using Azure IoT Central applications to configure rules and export IoT telemetry data. For more information about these topics, refer to:
 
 * [Configure rules](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules?azure-portal=true)
 * [Create webhook actions on rules in Azure IoT Central](https://docs.microsoft.com/azure/iot-central/core/howto-create-webhooks?azure-portal=true)
@@ -36,7 +36,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Version | Select **3.1**. |
    | Region | Select the Azure region closest to the location of your lab environment, preferably matching the location you chose for the Azure IoT Central deployment. |
 
-   :::image type="content" source="../media/5-azure-function-app-create-basics.png" alt-text="Screenshot of the Basics tab of the Create Function App blade in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-function-app-create-basics.png" alt-text="Screenshot of the Azure portal Create Function App blade Basics tab.":::
 
 1. On the **Hosting** tab of the **Create Function App** blade, accept the default settings, and then select **Next: Monitoring >**.
 1. On the **Monitoring** tab of the **Create Function App** blade, accept the default settings, and then select **Review + create**.
@@ -49,11 +49,11 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. On the Azure Function app blade, select **Functions**, and then select **+ Add**.
 1. On the **Add function** blade, select the **HTTP trigger** template entry, and then select **Add**.
 
-   :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Add function blade of the Azure Function app in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Azure Porta Azure Function app Add function blade.":::
 
 1. On the **HttpTrigger1** blade, in the vertical menu bar, in the **Developer** section, select **Code + Test**.
 
-   :::image type="content" source="../media/5-azure-function-app-function-code-test.png" alt-text="Screenshot of the Code + Test blade of an Azure function in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-function-app-function-code-test.png" alt-text="Screenshot of the Azure portal, Azure function's Code + Test blade.":::
 
 1. On the **HttpTrigger1 \| Code + Test** blade, replace the existing code with the following content, and then select **Save** to save your changes:
 
@@ -133,7 +133,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
-   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab that depicts messages in response to the HTTP trigger.":::
+   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab that displays messages in response to the HTTP trigger.":::
 
 ## Create an Azure Storage account that will store IoT telemetry
 
@@ -151,7 +151,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Account kind | **StorageV2 (general purpose v2)** |
    | Replication | **Locally-redundant storage (LRS)** |
 
-   :::image type="content" source="../media/5-azure-storage-account-create.png" alt-text="Screenshot of the Basics tab of the Create storage account blade in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-storage-account-create.png" alt-text="Screenshot of the Azure portal, Create storage account blade, Basics tab.":::
 
 1. On the **Basics** tab of the **Create storage account** blade, select **Review + create**, and then select **Create**.
 
@@ -162,18 +162,18 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. On the Azure storage account blade, in the vertical menu, in the **Blob service** section, select **Containers**, and then select **+ Container**.
 1. On the **New container** blade, in the **Name** text box, enter **iotcontainer**, leave the **Public access level** set to **Private (no anonymous access)**, and then select **Create**.
 
-   :::image type="content" source="../media/5-azure-blob-container-create.png" alt-text="Screenshot of the New container blade in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-blob-container-create.png" alt-text="Screenshot of the Azure portal, New container blade.":::
 
 1. On the Azure storage account blade, in the vertical menu, in the **Settings** section, select **Access keys**. Select **Show keys**, and then record the value of the connection string corresponding to **key1**.
 
-   :::image type="content" source="../media/5-azure-storage-account-keys.png" alt-text="Screenshot of the Access keys blade in the Azure portal.":::
+   :::image type="content" source="../media/5-azure-storage-account-keys.png" alt-text="Screenshot of the Azure portal, Access keys blade.":::
 
 ## Configure and validate data export of an Azure IoT Central application
 
 1. Switch to the web browser window displaying the **adatum-iot-custom-application** page in the IoT Central Application portal.
 1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **App settings** section, select **Data export**, and then select **+ New export**.
 
-   :::image type="content" source="../media/5-iot-custom-application-new-export.png" alt-text="Screenshot of the Data export page in the Azure IoT Central portal.":::
+   :::image type="content" source="../media/5-iot-custom-application-new-export.png" alt-text="Screenshot of the  Azure IoT Central portal, Data export page.":::
 
 1. On the **Create new export** page, configure the following settings:
 
