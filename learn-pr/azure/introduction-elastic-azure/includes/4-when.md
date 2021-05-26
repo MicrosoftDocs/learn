@@ -1,4 +1,4 @@
-In this unit we’ll discuss how you can decide whether Elastic on Azure is right for your workload and which deployment option is best.  
+In this unit, we’ll discuss how you can decide whether Elastic on Azure is right for your workload and which deployment option is best.  
 
 ## Decision criteria
 
