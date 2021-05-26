@@ -15,7 +15,7 @@ Using AI, Publicis was able to create an interactive assistant for employees and
 
 Behind the scenes, Marcel is a platform that uses AI to bring order to Publicis' vast amount of siloed knowledge. But users don't see any of this extensive categorization work. For them, the interface works in a similar way to Microsoft's Cortana, or Apple's Siri. It can be used to find expertise, share ideas, and to connect creatives to projects. Employees can ask Marcel questions in plain English, such as "Who has done graphic design work for Samsung in the last six months?" They even can ask Marcel who the right person is to help solve an issue on a particular project.
 
-To make sure that communication is enabled without harming productivity, Marcel filters all comms channels, and each day hand-picks six items for each employee that they may be interested in. It also frees employees from repetitive administrative tasks, such as timesheets, through automation.
+To make sure that communication is enabled without harming productivity, Marcel filters all comms channels, and each day hand-picks six items for each employee that they may be interested in.
 
 Marcel helps on the client side as well. Clients can post videos or project descriptions to the platform, polling Publicis employees for ideas. The client can then select the idea and associated team that they find most suited to them. No mass emails, delays, or repetitive phone calls.
 :::row:::
