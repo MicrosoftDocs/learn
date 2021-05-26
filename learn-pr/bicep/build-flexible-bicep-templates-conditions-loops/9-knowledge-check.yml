@@ -28,14 +28,14 @@ quiz:
     - content: Move the policy assignment into its own module.
       isCorrect: false
       explanation: Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
-  - content: Which one of these is a good use case for loops?
+  - content: Which one of the following is a good use case for loops?
     choices:
-    - content: Deploy multiple resources that are almost identical but with some minor differences between them.
+    - content: Deploying multiple resources that are almost identical but with some minor differences between them.
       isCorrect: true
       explanation: The copy loops feature enables you to deploy multiple resources that are identical or have minor differences.
-    - content: Deploy the same resources to multiple environments.
+    - content: Deploying the same resources to multiple environments.
       isCorrect: false
-      explanation: You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you create multiple instances of resources within a single deployment.
+      explanation: You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you're creating multiple instances of resources within a single deployment.
     - content: Running custom code inside your Bicep file.
       isCorrect: false
       explanation: Loops can't be used to execute custom code.
@@ -49,7 +49,7 @@ quiz:
       explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.
     - content: Use the symbolic name you specified within the loop declaration.
       isCorrect: true
-      explanation: You can access the current loop item by using the symbolic name you used in the loop declaration.
+      explanation: You can access the current loop item by using the symbolic name that you used in the loop declaration.
   - content: |
       You used an array parameter to create a specified number of storage accounts.
       You need to return the storage account names for all the storage accounts you deploy so that users who run the deployment can see it.
