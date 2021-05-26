@@ -18,14 +18,15 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ## Task 1: Create Azure shared disk
 
-    Azure CLI:
+You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk. You will need to record the resource group name and location that is generated in the Sandbox environment and use that for later commands.
+
 
 ```bash
-#Create a resource group
-az group create --name myResourceGroup --location eastus
+#Retreive a resource group location
+az group list
 
 # Create Azure Shared disk with support concurent access from two VMs.
-az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l eastus --sku Premium_LRS --max-shares 2
+az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 -l [location] --sku Premium_LRS --max-shares 2
 ```
 
 ## Task 2: Create proximity placement group and availability set
