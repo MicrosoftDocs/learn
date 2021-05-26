@@ -45,6 +45,9 @@ You can use expressions as default values. Here's an example of a string paramet
 param location string = resourceGroup().location
 ```
 
+> [!TIP]
+> Be mindful of the default values you use. Make sure that it'll be safe for someone to deploy the Bicep file with the default values. For example, consider using inexpensive pricing tiers and SKUs so that someone deploying the template to a test environment doesn't incur a large cost unnecessarily.
+
 ## Understand parameter types
 
 When you declare a parameter, you need to tell Bicep what type of information the parameter will contain. Bicep will ensure that the value assigned to the parameter is compatible with the parameter type.
@@ -64,10 +67,11 @@ You can use object parameters to combine structured data together in one place. 
 param appServicePlanSku object = {
   name: 'F1'
   tier: 'Free'
+  capacity: 1
 }
 ```
 
-This parameter is an object with two string properties, `name` and `tier`. Notice that each of the properties is on its own line.
+This parameter is an object with two string properties, `name` and `tier`, and an integer property, `capacity`. Notice that each of the properties is on its own line.
 
 > [!NOTE]
 > You can't specify the properties that an object needs to contain.
@@ -97,7 +101,7 @@ Whenever you define a resource in your Bicep file, you can reuse it wherever you
 An array is a list of items. As an example, you might use an array of string values to declare a list of email addresses for an Azure Monitor action group. Or you might use an array of objects to represent a list of subnets for a virtual network.
 
 > [!NOTE]
-> You can't specify the type of individual items that an array needs to contain. For example, you can't specify that the array can only contain strings.
+> You can't specify the type of individual items that an array needs to contain. For example, you can't specify that an array must contain strings.
 
 Let's consider an example. Azure Cosmos DB lets you create database accounts that span multiple regions, and it automatically handles the data replication for you. When you deploy a new database account, you need to specify the list of Azure regions that you want the account to be deployed into. Often, you'll need to have a different list of locations for different environments. For example, to save money in your test environment, you might use only one or two locations. But in your production environment, you might use several locations.
 
