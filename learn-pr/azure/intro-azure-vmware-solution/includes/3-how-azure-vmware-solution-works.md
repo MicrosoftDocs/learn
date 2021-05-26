@@ -38,7 +38,7 @@ Azure VMware Solution (AVS) provides you with private clouds that contain vSpher
 
 Private clouds contain vSAN clusters built with dedicated, bare-metal Azure hosts. Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
 
-For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API.
+For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API. We offer node configurations based on core, memory, and storage requirements. You can choose the type of node that best fits the needs of your organization.
 
 The AVS node min and maximums configuration are:
 
@@ -60,7 +60,7 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 3.1.1 |
 | HCX | 4.0 |
 
-NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied
+NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied. 
 
 ### Interconnectivity into Azure
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
@@ -97,7 +97,7 @@ You can use Azure storage services in workloads running in your private cloud. T
 
 
 ### Security and compliance with Azure VMware Solutions
-Azure VMware Solution private clouds use vSphere role-based access control for acesss and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory. 
+Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory. 
 
 In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the CloudAdmin role.  The CloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
 
@@ -111,7 +111,7 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 ## Get Started with AVS
 
-The following outlines the steps needed for an organization to get started with using the Azure VMware Solution.
+The following table outlines the steps needed for an organization to get started with using the Azure VMware Solution.
 
 |Milestone |Steps  |
 |---------|---------|
