@@ -1,27 +1,27 @@
-This unit will walk you through creating your first Azure Health Bot.
+This unit will walk you through creating your first Azure Health Bot instance.
 
-An Azure account is required to complete these steps. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+You need an Azure account to complete these steps. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-1. Once you have an Azure account, sign in to your account and go to [Azure portal](https://portal.azure.com/)
+1. Sign in to your account and go to the [Azure portal](https://portal.azure.com/).
 
-2. In the global search look for "Health Bot".
+2. In the global search, look for **Health Bot** and then select **Azure Health Bot**.
 
-   :::image type="content" source="../media/5-select-search.png" alt-text="In the Azure portal searching the word Health Bot in the search bar and selecting it.":::
+   :::image type="content" source="../media/5-select-search.png" alt-text="Screenshot of the Azure portal that shows searching for and selecting Azure Health Bot.":::
 
-3. In the Health Bot management blade, click "New" to create a new Health Bot instance.
+3. On the Health Bot management pane, select **New** to create a Health Bot instance.
 
-   :::image type="content" source="../media/5-select-new.png" alt-text="Clicking new on the left side of Azure portal to create a new Health Bot":::
+   :::image type="content" source="../media/5-select-new.png" alt-text="Screenshot of the button on the left side of the Azure portal to create a new Health Bot instance.":::
 
-4. Follow the steps in the resource creation wizard and provide the required details for your new Health Bot resource.
+4. Follow the steps in the resource creation wizard, and provide the required details for your new Health Bot resource.
 
-   :::image type="content" source="../media/5-select-review-&-create.png" alt-text="Filling up project and instance details and clicking Review & Create":::
+   :::image type="content" source="../media/5-select-review-&-create.png" alt-text="Screenshot that shows project and instance details.":::
 
-   You can optionally add tags to the resource or complete the creation by clicking **Review + create**.
+   You can optionally add tags to the resource. Complete the creation by selecting **Review + create**.
 
-5. You can now start the creation process and wait a few minutes for the deployment. Once the resource is ready, click **Go to resource**.
+5. Wait a few minutes for the creation process to finish. When the resource is ready, select **Go to resource**.
 
-   :::image type="content" source="../media/5-select-go-to-resource.png" alt-text="Deployment of Health Bot is complete. Clicking Go to resource":::
+   :::image type="content" source="../media/5-select-go-to-resource.png" alt-text="Screenshot that shows a completed deployment of the Health Bot instance, with the button for going to the resource highlighted.":::
 
-6. Navigate to **Health Bot Management Portal** to discover the available functionality and start authoring custom scenarios for your bot
+6. In the resource's details, select the **Management portal** link to discover the available functionality and start authoring custom scenarios for your bot.
 
-   :::image type="content" source="../media/5-select-management-portal.png" alt-text="In the resource you can click on the link to the management portal":::
+   :::image type="content" source="../media/5-select-management-portal.png" alt-text="Screenshot that shows the link to the management portal in the resource.":::

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-introduction.3-how-azure-health-bot-works
-title: How does Azure Health Bot work
+title: How does Azure Health Bot work?
 metadata:
-  title: How does Azure Health Bot work
-  description: In this unit, you will learn how Azure Health Bot works.
+  title: How does Azure Health Bot work?
+  description: In this unit, you'll learn how Azure Health Bot works.
   author: RuchaYagnik
   ms.author: chnoring
   ms.date: 05/11/2021
@@ -17,21 +17,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What differentiates a Health bot from a Basic Chatbot?
+    - content: What differentiates Azure Health Bot from a basic chat bot?
       choices:
-        - content: Built-in medical database
+        - content: Health Bot has a built-in medical database.
           isCorrect: true
-          explanation: A built-in medical database differentiates the Health Bot service from the Bot Framework and gives developers the chance to use built-in in scenarios or create custom scenarios to meet their business     needs.
-        - content: Secure and privacy protected to HIPAA Standards
+          explanation: A built-in medical database differentiates the Health Bot service from the Bot Framework. That database enables developers to use built-in in scenarios or create custom scenarios to meet their business needs.
+        - content: The security and privacy of Health Bot are protected to HIPAA standards.
           isCorrect: false
-          explanation: The information handled by each instance of the Health Bot Service
-            is privacy protected to HIPAA standards and secured to the highest
-            standards for privacy and security by Microsoft. Built on top of the
-            industry-leading Microsoft Azure technology, the Azure architecture
-            powers the Health Bot Service's ability to scale with resilience,
-            while maintaining the highest standards of privacy and security.
-        - content: Allows customers to interact with computer applications in a
-            conversational way using text, graphics, or speech
+          explanation: The information that each instance of the Health Bot Service handles is privacy protected to HIPAA standards. The service is built on the Azure architecture to help ensure that it can scale with resilience, while maintaining high standards of privacy and security.
+        - content: Health Bot allows customers to interact with computer applications in a conversational way by using text, graphics, or speech.
           isCorrect: false
-          explanation: Allows customers to interact with computer applications in a
-            conversational way using text, graphics, or speech.
+          explanation: Health Bot allows customers to interact with computer applications in a conversational way by using text, graphics, or speech.

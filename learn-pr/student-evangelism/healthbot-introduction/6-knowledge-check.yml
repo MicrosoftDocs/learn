@@ -15,27 +15,23 @@ content: |
 quiz:
   questions:
 
-    - content: "True or False: A Health Bot instance cannot be integrated within the
-        organization's existing systems."
+    - content: "True or false: A Health Bot instance can't be integrated within the organization's existing systems."
       choices:
         - content: "True"
           isCorrect: true
-          explanation: A Health Bot instance can be integrated within the organization's
-            existing systems without any functional problem.
+          explanation: A Health Bot instance can be integrated within the organization's existing systems without any functional problems.
         - content: "False"
           isCorrect: false
-          explanation: A Health Bot instance can be successfully integrated within the
-            organization's existing systems.
+          explanation: A Health Bot instance can be successfully integrated within the organization's existing systems.
     
     - content: Which of the following statements is not true about Health Bot?
       choices:
         - content: It offers an extensible management portal.
           isCorrect: false
-          explanation: In Interactions tab you configure built-in scenarios that interact with the end user.
+          explanation: On the Interactions tab, you configure built-in scenarios that interact with the user.
         - content: It meets the regulatory requirements of the healthcare industry.
           isCorrect: false
-          explanation: The information handled by each instance of the Health Bot is  privacy protected to HIPAA standards and secured to the highest standards for privacy and security by Microsoft.
-        - content: It doesn’t allow handoff to humans when a negative sentiment is
-            detected
+          explanation: The information that each instance of the Health Bot handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
+        - content: It doesn't allow handoff to humans when a negative sentiment is detected.
           isCorrect: true
           explanation: It allows handoff to humans when a negative sentiment is detected.
