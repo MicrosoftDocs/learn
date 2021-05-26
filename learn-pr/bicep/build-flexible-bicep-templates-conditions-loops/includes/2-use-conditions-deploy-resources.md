@@ -1,6 +1,6 @@
 You can use conditions in your Bicep code to deploy resources only when specific constraints are in place.
 
-For example, at your toy company, you need to deploy resources to various environments. When you deploy them to a production environment, you need to ensure that auditing is enabled for your SQL Server instances. But when you deploy resources to development environments, you don't want to enable auditing. You do want to use a single template to deploy resources to all your environments.
+For example, at your toy company, you need to deploy resources to various environments. When you deploy them to a production environment, you need to ensure that auditing is enabled for your Azure SQL logical servers. But when you deploy resources to development environments, you don't want to enable auditing. You do want to use a single template to deploy resources to all your environments.
 
 In this unit, you learn how to deploy resources conditionally.
 
