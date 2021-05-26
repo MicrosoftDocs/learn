@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.loops.3-loops
+metadata:
+  title: Iterate over items in the array with loops
+  description: Learn about for and while loops, and when to use them.
+  ms.date: 05/25/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Same as above
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-loops.md)]

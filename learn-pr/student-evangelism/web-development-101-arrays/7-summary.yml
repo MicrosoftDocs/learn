@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.loops.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 05/25/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

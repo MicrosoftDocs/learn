@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.loops.4-operations
+metadata:
+  title: Use operations to query arrays
+  description: In this unit, you will be made familiar to various array methods that can be used to find, project and even aggregate.
+  ms.date: 05/25/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Same as above
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-operations.md)]

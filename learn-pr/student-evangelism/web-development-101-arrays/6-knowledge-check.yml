@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101.loops.6-knowledgecheck
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 05/25/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What part of a for-loop would you need to modify to increment its
+        iteration by 5?
+      choices:
+        - content: condition
+          isCorrect: true
+          explanation: Correct! A condition is needed to change the amount of times it
+            iterates.
+        - content: counter
+          isCorrect: false
+          explanation: Incorrect- a different element of a loop must change to increase
+            iteration.
+        - content: iteration-expression
+          isCorrect: false
+          explanation: Incorrect- a different element of a loop must change to increase
+            iteration.
+    - content: What's the difference between a while and a for-loop?
+      choices:
+        - content: A for-loop has a counter and iteration-expression, where while only has
+            a condition
+          isCorrect: true
+          explanation: Correct- for loops and while differ in ways they can be used.
+        - content: A while has a counter and iteration-expression, where for-loop only has
+            a condition.
+          isCorrect: false
+          explanation: Incorrect- this is not how for-loops and while operate.
+        - content: They are the same, just an alias for one another
+          isCorrect: false
+          explanation: Incorrect- this is not how for-loops and while operate.
+    - content: Given the code for (let i=1; i < 5; i++), how many iterations will it
+        perform?
+      choices:
+        - content: "5"
+          isCorrect: false
+          explanation: Incorrect- the code will iterate as long the variable is less than 5.
+        - content: "4"
+          isCorrect: true
+          explanation: Correct! The code will iterate 4 times, starting at 1 as long as i
+            is less than 5.
+        - content: "0"
+          isCorrect: false
+          explanation: Incorrect- the code will iterate as long the variable is less than 5.
