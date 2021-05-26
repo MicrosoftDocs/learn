@@ -215,7 +215,7 @@ pwsh
 
 # Create Azure Shared disk
 $dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
-$dataDisk=New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDisk1" -Disk $dataDiskConfig
+$dataDisk=New-AzDisk -ResourceGroupName [sandbox resource group name] -DiskName "mySharedDisk1" -Disk $dataDiskConfig
 ```
 
 ## Task 2: Create a proximity placement group and an availability set
@@ -224,8 +224,8 @@ $dataDisk=New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDis
 
 ```powershell
 # Create proximity placement group
-$ppgName="myPPG"
-$resourceGroup="myResourceGroup"
+$ppgName="myPPG1"
+$resourceGroup=[sandbox resource group name]
 $ppg=New-AzProximityPlacementGroup `
 -Location EastUs `
 -Name $ppgName `
@@ -239,8 +239,8 @@ $ppg=New-AzProximityPlacementGroup `
 # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
 New-AzAvailabilitySet `
 -Location "EastUS" `
--Name "myAvailabilitySet" `
--ResourceGroupName "myResourceGroup" `
+-Name "myAvailabilitySet1" `
+-ResourceGroupName [sandbox resource group name] `
 -Sku aligned `
 -PlatformFaultDomainCount 2 `
 -PlatformUpdateDomainCount 2 `
@@ -264,18 +264,18 @@ $cred = Get-Credential
 
 ```powershell
 
-for ($i=1; $i-le2; $i++)
+for ($i=3; $i-le4; $i++)
 {
 New-AzVm `
--ResourceGroupName "myResourceGroup" `
+-ResourceGroupName [sandbox resource group name] `
 -Name "myVM$i" `
--Locationeastus `
+-Location eastus `
 -VirtualNetworkName "myVnet" `
 -SubnetName "mySubnet" `
 -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
--SecurityGroupName "myNetworkSecurityGroup" `
+-SecurityGroupName "myNetworkSecurityGroup1" `
 -PublicIpAddressName "myPublicIpAddress$i" `
--AvailabilitySetName "myAvailabilitySet" `
+-AvailabilitySetName "myAvailabilitySet1" `
 -ProximityPlacementGroup $ppg.Id `
 -Credential $cred
 }
@@ -294,8 +294,8 @@ Format-Table -Property VirtualMachines -Wrap
 
 ```powershell
 
-$vm1 = Get-AzVM -Name "myvm1" -ResourceGroupName "myResourceGroup"
-$vm1 = Add-AzVMDataDisk -VM $vm1 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
+$vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName [sandbox resource group name]
+$vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
 Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
 ```
@@ -303,8 +303,8 @@ Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
 2. Attach the Azure shared disk to the second VM:
 
 ```powershell
-$vm2 = Get-AzVM -Name "myvm2" -ResourceGroupName "myResourceGroup"
-$vm2 = Add-AzVMDataDisk -VM $vm2 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
+$vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName [sandbox resource group name]
+$vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
 Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 ```
@@ -312,7 +312,7 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 ## Task 5: Install Windows Failover Clustering Service on myVM1
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.** 
-2. Select the first VM **myVM1** from the tool bar, select **Connect**, and then select **RDP**.
+2. Select the first VM **myVM3** from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -333,12 +333,12 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 16. In the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes**. Select **Install** to install the Failover Clustering role.
 
     >[!Note]
-    >The virtual machine **myVM1** will automatically restart, once that failover cluster feature is installed.
+    >The virtual machine **myVM3** will automatically restart, once that failover cluster feature is installed.
 
 ## Task 6: Install Windows Failover Clustering Service on myVM2
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
-2. Select the second VM **myVM2** from the tool bar, select **Connect**, and then select **RDP.**
+2. Select the second VM **myVM4** from the tool bar, select **Connect**, and then select **RDP.**
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -359,12 +359,12 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 16. In the **Confirmation** page, select the **Restart the destination server automatically if required**, and then select **Yes.** Select **Install** to install the Failover Clustering role.
 
     >[!Note]
-    >The virtual machine **myVM2** will automatically restart, once that failover cluster feature is installed. 
+    >The virtual machine **myVM4** will automatically restart, once that failover cluster feature is installed. 
 
 ## Task 7: Test the storage for Windows Failover Clustering Service on myVM1
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter and select **virtual machines.**
-2. Select the first VM **myVM1**, from the tool bar, and then select **Connect**, and select **RDP**.
+2. Select the first VM **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -373,8 +373,8 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 4. In Server Manager, from the **Tools** menu, select **Failover Cluster Manager**.
 5. In **Failover Cluster Manager**, from the **Action** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
 6. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
-7. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM1**, and then select **Add**.
-8. Repeat the same procedure to add **myVM**.
+7. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM3**, and then select **Add**.
+8. Repeat the same procedure to add **myVM4**.
 9. Select **Next** to continue with testing the cluster setup.
 10. In the **Testing Options** page, select **Run only test I select**, and then select **Next**.
 11. Select the **Storage** checkbox, and then select **Next**.
@@ -385,8 +385,3 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
     >[!Note]
     >To continue the creation of the cluster, you need to setup additional prerequsites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
     >This step is out of scope for this exercise.
-
-## Task 8: Clean up the resources
-
-1. In the Azure portal, select the **myResourceGroup**, and then select **Delete resource group**.
-1. Enter the name of the resource group to confirm the deletion, and then select **Delete**.
