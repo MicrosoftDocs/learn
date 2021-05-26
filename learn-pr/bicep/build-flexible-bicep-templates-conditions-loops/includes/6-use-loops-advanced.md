@@ -4,7 +4,7 @@ In this unit, you learn how to control the execution of copy loops, and how to u
 
 ## Control loop execution
 
-By default, Azure Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created loops in the previous exercises, both of the SQL server instances were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once. 
+By default, Azure Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created loops in the previous exercises, both of the SQL Server instances were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once. 
 
 In some cases, however, you might need to deploy resources in loops sequentially instead of in parallel, or deploy small batches of changes together in parallel. For example, if you have lots of Azure App Service apps in your production environment, you might want to deploy changes to only a small number at a time to prevent the updates from restarting all of them at the same time.
 
