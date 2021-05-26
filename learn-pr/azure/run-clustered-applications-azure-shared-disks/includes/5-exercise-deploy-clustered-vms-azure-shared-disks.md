@@ -270,7 +270,7 @@ New-AzVm `
 -ResourceGroupName [sandbox resource group name] `
 -Name "myVM$i" `
 -Location eastus `
--VirtualNetworkName "myVnet" `
+-VirtualNetworkName "myVnet1" `
 -SubnetName "mySubnet" `
 -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
 -SecurityGroupName "myNetworkSecurityGroup1" `
