@@ -27,7 +27,7 @@ After conversion, establish a session between your client device and the server 
 
 ### What is a session?
 
-Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks can only be fulfilled<!-- is "fulfilled" the right word? Awkward. Can you say, "These rendering tasks must be performed by..." --> by specialist cloud servers. The specialist servers are equipped with the type of GPUs required to render complex 3D models. You cannot use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
+Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks must be performed by specialist cloud servers. The specialist servers are equipped with the type of GPUs required to render complex 3D models. You cannot use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
 
 A session includes the following components:
 
