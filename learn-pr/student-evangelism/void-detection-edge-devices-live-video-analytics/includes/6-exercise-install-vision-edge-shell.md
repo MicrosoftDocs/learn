@@ -65,12 +65,16 @@ Perform the following steps in the Azure Cloud Shell environment.
 
     [![The illustration shows the deployment of the solution.](../media/create-deployment.png)](../media/create-deployment.png#lightbox)
 
-13. Open your browser, connect to **http://YOUR_IP:8181**. You'll connect to the VisiononEdge solution.
+13. You can check the deployment status on the [Azure portal](https://portal.azure.com/#home). Go to the IoT Hub resource and navigate to IoT Edge tab. Click on the edge device you created for this module to check the status of the modules.
 
-14. To find your Public IP address, go to the overview page of your virtual machine and copy it.
+    [![The illustration shows deployment status.](../media/deployment-status.png)](../media/deployment-status.png#lightbox)
+
+14. Open your browser, connect to **http://YOUR_IP:8181**. You'll connect to the VisiononEdge solution.
+
+15. To find your Public IP address, go to the overview page of your virtual machine and copy it.
 
     [![The illustration shows overview of virtual machine.](../media/vm-overview.png)](../media/vm-overview.png#lightbox)
 
-15. When you connect to the Vision on Edge solution, click on the Home page.
+16. When you connect to the Vision on Edge solution, click on the Home page.
 
     [![The illustration shows the main page of edge solution.](../media/vision-on-edge.png)](../media/vision-on-edge.png#lightbox)

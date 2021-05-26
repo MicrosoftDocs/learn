@@ -2,6 +2,8 @@ In this unit, you'll learn how to upload sample video file to your edge device a
 
 ## Steps to follow
 
+You will complete the following steps:
+
 1. Use a [bottle shelf video](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/EdgeSolution/modules/CVCaptureModule/videos/scenario4-empty-shelf-alert.mkv) file to simulate a live stream.
 2. Download the video file from GitHub
 3. Upload the video file to the edge device

@@ -12,7 +12,7 @@ To do so, you use an [installer](https://github.com/Azure-Samples/azure-intellig
 
 ## Steps to follow
 
-The installer is available in the [GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer). When you download [the acs.zip file](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/acs.zip), the following steps will be performed to build your solution using Azure Cloud Shell: 
+The installer is available in the [GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer. When you download [the acs.zip file](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/acs.zip), the following steps will be performed to build your solution using Azure Cloud Shell: 
 
 1. Create a Custom Vision service
 2. Create an Azure Media Service

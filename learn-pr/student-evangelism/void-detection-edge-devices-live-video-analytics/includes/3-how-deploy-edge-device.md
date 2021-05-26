@@ -59,4 +59,3 @@ Now that you've configured your edge device, you'll need to add an inbound rule 
 
 - Define destination port ranges
 - Define name for your security ruleSteps to follow
-You'll complete the following steps to deploy an edge device.
