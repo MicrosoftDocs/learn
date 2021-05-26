@@ -1,4 +1,4 @@
-So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environment. You now need to deploy multiple SQL server instances, one for each region where your company is launching its new smart teddy bear. 
+So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environment. You now need to deploy multiple SQL Server instances, one for each region where your company is launching its new smart teddy bear. 
 
 In this exercise you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
 
@@ -69,7 +69,7 @@ You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 
-After the deployment is finished, you want to verify that new SQL server instance and database are deployed and that they're located in the correct Azure regions.
+After the deployment is finished, you want to verify that new SQL Server instance and database are deployed and that they're located in the correct Azure regions.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
 
@@ -81,7 +81,7 @@ After the deployment is finished, you want to verify that new SQL server instanc
 
 1. Leave the page open in your browser. You'll check on deployments again later.
 
-## Update and redeploy the template to Azure with an additional location for a SQL server instance
+## Update and redeploy the template to Azure with an additional location for a SQL Server instance
 
 The teddy bear toy team is about to launch again, this time into Asia. The team is asking you to deploy a new server and database in the East Asia region. To do so, you need to update your Bicep parameter and redeploy your template.
 
@@ -122,6 +122,6 @@ Now that you've redeployed the resources, you want to verify that the additional
 
 1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select the **<rgn>[sandbox resource group name]</rgn>** resource group. If necessary, select **Refresh** to see the newly deployed resources.
 
-1. Verify that the new SQL server instance and database have been deployed in the East Asia region.
+1. Verify that the new SQL Server instance and database have been deployed in the East Asia region.
 
-    :::image type="content" source="../media/5-loop-redeployment.png" alt-text="Screenshot of the Azure portal, showing the deployment of a SQL server instance and database in an additional region." border="true":::
+    :::image type="content" source="../media/5-loop-redeployment.png" alt-text="Screenshot of the Azure portal, showing the deployment of a SQL Server instance and database in an additional region." border="true":::
