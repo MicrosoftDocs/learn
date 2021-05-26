@@ -41,7 +41,7 @@ Do either of the following:
 
 ### Sign in to Azure
 
-1. FIn the Visual Studio Code terminal, run the following command:
+1. In the Visual Studio Code terminal, run the following command:
 
     ```azurepowershell
     Connect-AzAccount
