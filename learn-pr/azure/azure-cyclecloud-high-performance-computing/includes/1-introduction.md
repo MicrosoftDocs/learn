@@ -2,7 +2,7 @@ Azure CycleCloud is an application that provides a simple, secure, and scalable 
 
 ## Scenario
 
-Contoso, Ltd. is an oceanographic and meteorological services company based in Houston, Texas. Its research team relies heavily on on-premises HPC cluster to run Slurm-based tasks.
+Contoso, Ltd. is an oceanographic and meteorological services company based in Houston, Texas. Its research team relies heavily on an on-premises HPC cluster to run Slurm-based tasks.
 
 The newly initiated project involves several simulations that will track storms moving through the US Gulf Coast during storm season. Unfortunately, an initial assessment determined that the existing on-premises HPC cluster doesn't have sufficient compute capacity to run the simulations.
 
@@ -16,4 +16,4 @@ In this module, you'll first deploy an Azure VM hosting the Azure CycleCloud app
 
 ## What is the main goal?
 
-By the end of this module, you'll know more about how to install and configure Azure CycleCloud, describe its integration options with third-party schedulers, and use it to deploy a basic HPC cluster on Azure.
+By the end of this module, you'll know more about how to install and configure Azure CycleCloud, describe its integration options with third-party schedulers, and use it to deploy a basic HPC cluster in Azure.
