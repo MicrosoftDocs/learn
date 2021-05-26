@@ -29,7 +29,7 @@ quiz:
     - content: Elastic Cloud on Azure
       isCorrect: true
       explanation: Elastic Cloud on Azure is a software-as-a-service (SaaS) offering.
-    - content: Elastic on Azure VMs
+    - content: Elastic on Azure virtual machines
       isCorrect: false
       explanation: Elastic on AKS allow you to manage the underlying infrastructure.
     - content: Elastic on Azure Kubernetes Service
