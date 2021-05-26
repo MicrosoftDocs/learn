@@ -53,7 +53,7 @@ iceCreamFlavors.filter(flavor => flavor.type !== "Nuts") // returns everything e
 
 ## Projections map
 
-A projection is you trying to change your array in some way. Imagine for example that you take your original `iceCreamFlavor` array and want to add a `price` property to each flavor. This situation is good case for a projection method called `map()`. Imagine it's a sunny day and you've decided that each ice cream should cost 1$ per scoop. You write code to make that happen, like so:
+A projection is you trying to change your array in some way. Imagine, for example,  that you take your original `iceCreamFlavor` array and want to add a `price` property to each flavor. This situation is good case for a projection method called `map()`. Imagine it's a sunny day and you've decided that each ice cream should cost 1$ per scoop. You write code to make that happen, like so:
 
 ```javascript
 let iceCreamFlavors = [
@@ -104,7 +104,6 @@ It works, but there's a more elegant approach namely the `reduce()` method. The 
 sales.reduce((acc, curr) => acc + curr.amount, 0);
 ```
 
-As you can see, there's no need for a `sum` variable. Now this approach takes some getting used to, but is powerful and can be used in a lot of situations.
+As you can see, there's no need for a `sum` variable. Now this approach takes some getting used to, but is powerful and can be used in many situations.
 
-## Spread operator
  

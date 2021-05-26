@@ -1,4 +1,3 @@
-# Introduction
 
 JavaScript is one of the core technologies of the World Wide Web, and allows developers to creative interactive content on their websites. Since JavaScript is a client-side scripting language, it allows users to execute code on the user's device. Imagine having to reload a page each time information changed on your device, not having ways to check if data was correctly formatted before submitting a form, or not being able to move an object around interactively on a screen. Without JavaScript, these tasks would not be possible on most websites!
 
