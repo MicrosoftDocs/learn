@@ -18,8 +18,8 @@ The CDC bot, which utilizes Microsoft's Healthcare Bot service, can quickly:
 
 - or, for those who do not need in-person medical care, managing the illness safely at home.
 
-<!--:::image type="content" source="https://azurecomcdn.azureedge.net/cvt-ebc1b5e7ee278f3a3961c4f17bd3c6704ed84d61ddeed4cabd0ab0d419bf2fcc/images/page/services/bot-services/health-bot/cdc.png" alt-text="CDC":::
--->
+:::image type="content" source="../media/cdc.png" alt-text="CDC":::
+
 
 ## Providence
 
@@ -39,8 +39,8 @@ Aurora Health Care is helping patients triage symptoms and locate nearby care ce
 
 (more: https://www.aurorahealthcare.org/ )
 
-<!--:::image type="content" source="https://azurecomcdn.azureedge.net/cvt-ebc1b5e7ee278f3a3961c4f17bd3c6704ed84d61ddeed4cabd0ab0d419bf2fcc/images/page/services/bot-services/health-bot/aurora.png" alt-text="Aurora Health Care":::
--->
+:::image type="content" source="../media/aurora.png" alt-text="Aurora Health Care":::
+
 
 ## Virginia Mason Health System
 
@@ -52,12 +52,11 @@ Serving the Pacific Northwest region, Virginia Mason Health System has created a
 
 Premera Blue Cross improved patient experience through faster response by implementing "Scout", their intelligent virtual health assistant that offers digital services such as checking healthcare claim status, eligibility and health plans on Android and IOS.
 
-<!--:::image type="content" source="https://azurecomcdn.azureedge.net/cvt-ebc1b5e7ee278f3a3961c4f17bd3c6704ed84d61ddeed4cabd0ab0d419bf2fcc/images/page/services/bot-services/health-bot/premera.png" alt-text="Premera Blue Cross":::
--->
+:::image type="content" source="../media/premera.png" alt-text="Premera Blue Cross":::
+
 
 ## Quest Diagnostics
 
 "Quest Bot", created for Quest Diagnostics, is a virtual health assistant that can answer lab and COVID testing related questions, locate nearby test centers based on the patients' location, and connect them with live agents for further support.
 
-<!--:::image type="content" source="https://azurecomcdn.azureedge.net/cvt-ebc1b5e7ee278f3a3961c4f17bd3c6704ed84d61ddeed4cabd0ab0d419bf2fcc/images/page/services/bot-services/health-bot/quest.png" alt-text="Quest Diagnostics":::
--->
+:::image type="content" source="../media/quest.png" alt-text="Quest Diagnostics":::
