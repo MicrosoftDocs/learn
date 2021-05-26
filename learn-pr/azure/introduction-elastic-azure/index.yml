@@ -25,6 +25,9 @@ roles:
   - developer
 products:
   - azure
+  - azure-linux-vm
+  - azure-virtual-machines
+  - azure-kubernetes-service
 units:
 - learn.azure.introduction-elastic-azure.introduction
 - learn.azure.introduction-elastic-azure.what
