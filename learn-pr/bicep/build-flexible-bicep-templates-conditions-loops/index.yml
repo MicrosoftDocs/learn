@@ -24,7 +24,7 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Either of the following:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/bicep/bicep-conditions-loops.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - intermediate
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)

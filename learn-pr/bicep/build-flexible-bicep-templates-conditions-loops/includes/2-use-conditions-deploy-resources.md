@@ -36,7 +36,7 @@ Let's continue writing some Bicep code to deploy SQL auditing settings. The Bice
 
 Notice that the storage account has a condition too. This means that it won't be deployed for non-production environments either. The SQL auditing settings resource can now refer to the storage account details:
 
-::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="7-8" :::
+::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="6-7" :::
 
 Notice that this Bicep code uses the question mark (`?`) operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions are evaluated to the details from the storage account. When the code is deployed to a non-production environment, the expressions evaluate to an empty string ('').
 
