@@ -26,7 +26,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 az group list
 
 # Create Azure Shared disk with support concurent access from two VMs.
-az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 -l [location] --sku Premium_LRS --max-shares 2
+az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
 ```
 
 ## Task 2: Create proximity placement group and availability set
@@ -37,8 +37,7 @@ az disk create -g [sandbox resource group name] -n mySharedDisk --size-gb 1024 -
 # Create proximity placement group.
 az ppg create \
 -n myPPG \
--g myResourceGroup \
--l eastus \
+-g [sandbox resource group name] \
 -t standard
 ```
 
@@ -50,7 +49,7 @@ az ppg create \
 ```bash
 # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
 az vm availability-set create \
---resource-group myResourceGroup \
+--resource-group [sandbox resource group name] \
 --name myAvailabilitySet \
 --platform-fault-domain-count 2 \
 --platform-update-domain-count 2 \
@@ -64,7 +63,7 @@ az vm availability-set create \
 ```bash
 for i in `seq 1 2`; do
 
-az vm create --resource-group myResourceGroup --name myVM$i --availability-set myAvailabilitySet --ppg myPPG --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+az vm create --resource-group [sandbox resource group name] --name myVM$i --availability-set myAvailabilitySet --ppg myPPG --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
 
 done
 ```
@@ -76,13 +75,13 @@ done
 1. While you're still in Cloud Shell, attach the Azure shared disk to both VMs using the following commands: 
 
 ```bash
-diskId=$(az disk show -g myResourceGroup -n mySharedDisk --query 'id' -o tsv)
+diskId=$(az disk show -g [sandbox resource group name] -n mySharedDisk --query 'id' -o tsv)
 
 # attach the shared disk to the first VM.
-az vm disk attach -g myResourceGroup --vm-name myVM1 --name $diskId
+az vm disk attach -g [sandbox resource group name] --vm-name myVM1 --name $diskId
 
 # attach the shared disk to the second VM.
-az vm disk attach -g myResourceGroup --vm-name myVM2 --name $diskId
+az vm disk attach -g [sandbox resource group name] --vm-name myVM2 --name $diskId
 ```
 
 2. When finished with this task, the shared disk is attached to two VMs at the same time.
@@ -93,7 +92,7 @@ az vm disk attach -g myResourceGroup --vm-name myVM2 --name $diskId
 2. Use the following command to retrieve the IP addresses of VM1: 
 
 ```bash
-az network public-ip show --resource-group myResourceGroup --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+az network public-ip show --resource-group [sandbox resource group name] --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
 ```
 
 3. Connect to the first VM by using SSH:
@@ -131,7 +130,7 @@ Exit
 5. Connect to the second VM by using SSH using the following command:
 
 ```bash
-az network public-ip show --resource-group myResourceGroup --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+az network public-ip show --resource-group [sandbox resource group name] --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
 
 ssh azureuser@myPublicIP2
 ```
@@ -194,24 +193,11 @@ sudo sg_persist /dev/sdc -s
 exit
 ```
 
-## Task 6. Clean up the resources
-
-When you no longer need a resource group, use **az group delete** to remove the resource group and all of the resources it contains.
-
-Azure CLI:
-
-```bash
-az group delete --name myResourceGroup --yes
-```
-
-> [!Note]
-> Exercise 2 uses the same resource group name, so you should delete the previouse one from Exercise 1, or start the Exercise 2 with a new resource group that has a different name.
-
 ## Exercise 2: Use Windows VMs by using Azure shared disks
 
 To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test SCSI PR commands on the Azure shared disk.
 
-In this exercise, you&#39;ll explore Azure shared disk deployment and perform the following tasks:
+In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
 - Create an Azure shared disk.
 - Create a proximity placement group.
@@ -221,36 +207,11 @@ In this exercise, you&#39;ll explore Azure shared disk deployment and perform th
 
 ## Task 1: Create an Azure shared disk
 
-1. Open a browser, and then navigate to the following URL:
-
-    [https://portal.azure.com](https://portal.azure.com/)
-
-2. Sign in to the Azure portal using your subscription credentials.
-3. In the Azure portal tool bar, select **Cloud Shell** icon.
-
-    > [!Note]
-    > Perform the next step if you're opening Cloud Shell for the first time. Otherwise, continue with step 5.
-
-4. In the  **You have no storage mounted**  pane, select **Show advanced settings**, and then perform the following tasks:
-
-    - Keep the default value for the **Subscription** drop-down list item.
-    - In the  **Cloud Shell region**  drop-down list, select the Azure region matching, or near, the location where you intend to deploy resources.
-    - In the  **Resource group**  section, select or create a new resource group.
-    - In the  **Storage account**  section, ensure that the  **Create new**  option is selected. Then, in the text box under that option, enter a unique name consisting of a combination of between 3 and 24 characters and digits.
-    
-        > [!Note]
-        > Storage account names must be lowercase.
-        
-    - In the  **File share** section, ensure that the  **Create new**  option is selected. Then in the text box under that option, enter **cloudshell**.
-    - Select the **Create storage** button.
-
-5. Run the following commands:
-
-    Azure PowerShell:
+1. Use the Cloud Shell on the right. You can switch from BASH to PowerShell by typing pwsh.
 
 ```powershell
-# Create a resource group
-New-AzResourceGroup -Name myResourceGroup -Location "EastUS"
+# Switch to PowerShell
+pwsh
 
 # Create Azure Shared disk
 $dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
