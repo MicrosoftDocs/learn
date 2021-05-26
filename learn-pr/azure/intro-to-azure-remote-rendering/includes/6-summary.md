@@ -17,6 +17,6 @@ You should now be able to determine whether Azure Remote Rendering can help you 
 
 ## References
 
-- [Azure Remote Rendering documentation](https://docs.microsoft.com/azure/remote-rendering)
-- [Remote Rendering Sessions](https://docs.microsoft.com/azure/remote-rendering/concepts/sessions)
-- [Rendering modes](https://docs.microsoft.com/azure/remote-rendering/concepts/rendering-modes)
+- [Azure Remote Rendering documentation](/azure/remote-rendering)
+- [Remote Rendering Sessions](/azure/remote-rendering/concepts/sessions)
+- [Rendering modes](/azure/remote-rendering/concepts/rendering-modes)
