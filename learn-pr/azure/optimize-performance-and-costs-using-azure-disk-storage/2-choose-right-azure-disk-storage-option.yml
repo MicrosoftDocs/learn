@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.choose-right-azure-disk-storage-option
+title: Choose the right Azure Disk Storage option
+metadata:
+  title: Choose the right Azure Disk Storage option
+  description: Learn about the disk types available in Azure.
+  ms.date: 05/09/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-choose-right-azure-disk-storage-option.md)]

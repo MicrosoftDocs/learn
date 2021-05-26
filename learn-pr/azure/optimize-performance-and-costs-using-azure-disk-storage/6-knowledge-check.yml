@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 05/09/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+  - content: "An administrator needs to select a disk type that provides the best disk performance for a new VM. Which disk type should the administrator use assuming all disk types are supported in their region?"
+    choices:
+    - content: "Ultra Disks"
+      isCorrect: true
+      explanation: "Ultra SSDs offer the best performance of disk types on Azure."
+    - content: "Standard HDD"
+      isCorrect: false
+      explanation: "Standard HDDs are a cost-effective solution, but they don't perform as well as Premium SSDs or Ultra Disks."
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "Premium SSDs provide high performance, but don't offer the best performance of all the available disk types in Azure."
+ 
+  - content: "An administrator requires a disk storage solution for a SQL server that's running in Azure VM to support a minimum of 1100 IOPS at all times. How would this requirement impact the disk type the administrator selects?"
+    choices:
+    - content: "Enable read and write caching on a Standard SSD disk."
+      isCorrect: false
+      explanation: "Although caching generally improves the IOPS performance, it doesn't guarantee the minimum IOPS value that the administrator requires."
+    - content: "Use Standard HDDs instead of Standard SSDs."
+      isCorrect: false
+      explanation: "Standard SSDs and Standard HDDs don't guarantee an IOPS value."
+    - content: "Use Premium SSDs instead of Standard SSDs."
+      isCorrect: true
+      explanation: "Premium SSDs and Ultra Disks provide a guaranteed performance level."
+ 
+  - content: "As administrator plans to create an Azure VM to run applications that periodically require changes in their performance. Which of the following features can the administrator use to achieve this to meet application requirements?"
+    choices:
+    - content: "Use disk bursting."
+      isCorrect: false
+      explanation: "Although the administrator can use disk bursting to improve the application performance, this is usually used for unplanned scenarios."
+    - content: "Use Ultra Disks and change the performance tier."
+      isCorrect: true
+      explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
+    - content: "Use read/write caching on the disk."
+      isCorrect: false
+      explanation: "Although caching generally improves the IOPS performance, it can't be used in scenarios when you need to change the performance tier for the disk."
+content: |
+  [!include[](includes/6-knowledge-check.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.exercise-change-disk-performance-tier
+title: Exercise - Change the disk performance tier
+metadata:
+  title: Exercise - Change the disk performance tier
+  description: Learn how the different performance-scaling options work.
+  ms.date: 05/09/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-change-disk-performance-tier.md)]

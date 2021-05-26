@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.understanding-disk-performance-characteristics
+title: Understanding disk performance characteristics
+metadata:
+  title: Understanding disk performance characteristics  
+  description: Learn about Azure disk performance characteristics.
+  ms.date: 05/09/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-understanding-disk-performance-characteristics.md)]
+
