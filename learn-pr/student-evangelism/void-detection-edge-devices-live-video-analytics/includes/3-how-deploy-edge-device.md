@@ -58,4 +58,4 @@ Once the deployment is complete, you can connect to your edge device and check t
 Now that you've configured your edge device, you'll need to add an inbound rule to allow network traffic between your device and your web application from the internet over TCP port 8181. To open port 8181, you'll specify the following parameters:
 
 - Define destination port ranges
-- Define name for your security ruleSteps to follow
+- Define name for your security
