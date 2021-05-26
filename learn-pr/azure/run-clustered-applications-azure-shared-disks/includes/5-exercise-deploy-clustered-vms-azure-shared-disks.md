@@ -22,7 +22,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
 
 ```bash
-#Retreive a resource group location and use as location for all labs.
+#Retreive a location of the resource group. Use that location later in the exercise steps.
 az group list
 
 # Create Azure Shared disk with support concurent access from two VMs.
