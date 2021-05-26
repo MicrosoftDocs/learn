@@ -17,9 +17,9 @@ For users who need more control over the infrastructure that supports the Elasti
 
 AKS provides users an enterprise-grade and operationally efficient way of deploying applications on Kubernetes infrastructure. Elastic Cloud Kubernetes operator provides users a highly efficient way to run Elastic on Kubernetes that includes built-in best practices.
 
-## Elastic on Azure VMs  
+## Elastic on Azure virtual machines
 
-Azure VMs provide Azure users a flexible way to deploy their Elastic workloads and manage the infrastructure underneath, providing them with more control and flexibility over other deployment options. This deployment option is best for teams that need to meet architectural or compliance constraints e.g. if their workloads must be deployed within their Azure tenant.  
+Azure virtual machines provide Azure users a flexible way to deploy their Elastic workloads and manage the infrastructure underneath, providing them with more control and flexibility over other deployment options. This deployment option is best for teams that need to meet architectural or compliance constraints e.g. if their workloads must be deployed within their Azure tenant.  
 
 Elastic’s ARM template on Azure Marketplace provides a quick way to deploy Elastic using best practices.
 
