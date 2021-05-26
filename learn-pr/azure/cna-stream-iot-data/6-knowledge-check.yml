@@ -37,14 +37,14 @@ quiz:
     - content: "Azure Blob Storage"
       isCorrect: true
       explanation: "Correct. It's possible to configure interval-based data export from Azure IoT Central to Azure Blob storage."
-  - content: 'A developer onboarded an IoT device into their Azure IoT Central application and verified that they can review raw data representing telemetry that the device generates. However, they notice that the default dashboards they created to display the data are empty. Which component of the Azure IoT Central application should they modify to ensure that the dashboards display the telemetry data?'
+  - content: 'A developer onboarded an IoT device into their Azure IoT Central application and verified that they can review raw data representing telemetry that the device generates. However, they notice the default dashboards they created to display the data are empty. Which component of the Azure IoT Central application should they modify to ensure that the dashboards display the telemetry data?'
     choices:
     - content: "Rules"
       isCorrect: false
       explanation: "Incorrect. Rules evaluate conditions based on data coming from a device to determine when to trigger an action. They have no impact on visualization."
     - content: "Device cloud properties"
       isCorrect: false
-      explanation: "Incorrect. You can use cloud properties to assign additional metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities. They have no impact on visualization."
+      explanation: "Incorrect. You can use cloud properties to assign other metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities. They have no impact on visualization."
     - content: "Device template"
       isCorrect: true
       explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that's included in the device template. This is required for the telemetry data to display in the default and custom dashboards."
