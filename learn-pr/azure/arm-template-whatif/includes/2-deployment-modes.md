@@ -13,7 +13,7 @@ You have to explicitly ask for your deployment to run in complete mode. When you
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-In Bicep, you can refer to an existing resource by using the `existing` keyword. Referring to a resource in this way won't stop it from being deleted during a deployment via complete mode. You need to define it as a full-fledged resource.
+In Bicep, you can refer to an existing resource by using the `existing` keyword. Referring to a resource in this way won't stop it from being deleted during a deployment in complete mode. You need to define it as a full-fledged resource.
 
 ::: zone-end
 
