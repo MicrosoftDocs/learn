@@ -23,7 +23,7 @@ Perform the following steps in Azure Cloud Shell.
    scp <path_to_your_video> <admin_username>@<public_ip_address>:
    ```
 
-   [![The illustration shows how to upload a sample video to the edge device.](../media/upload-video-edge-device.png)](../media/upload-video-edge-device.png)
+   [![The illustration shows how to upload a sample video to the edge device.](../media/upload-video-edge-device.png)](../media/upload-video-edge-device.png#lightbox)
 
 5. Then the video file would be copied to your edge device.
 
@@ -41,7 +41,7 @@ Perform the following steps in Azure Cloud Shell.
    ls
    ```
 
-   [![The illustration shows the uploaded video to the edge device.](../media/check-video-uploaded.png)](../media/check-video-uploaded.png)
+   [![The illustration shows the uploaded video to the edge device.](../media/check-video-uploaded.png)](../media/check-video-uploaded.png#lightbox)
 
 3. There would be an RTSP simulator container installed on your edge device. You can first check whether the container exists by running the command below on your edge device:
 
@@ -57,7 +57,7 @@ Perform the following steps in Azure Cloud Shell.
    sudo docker cp <path to your video on edge> rtspsim:/live/mediaServer/media/
    ```
 
-   [![The illustration shows how to copy the sample video to the rtsp simulator container.](../media/copy-video-container.png)](../media/copy-video-container.png)
+   [![The illustration shows how to copy the sample video to the rtsp simulator container.](../media/copy-video-container.png)](../media/copy-video-container.png#lightbox)
 
 5. The video would then be copied into the RTSP simulator container.
 
