@@ -49,7 +49,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. On the Azure Function app blade, select **Functions**, and then select **+ Add**.
 1. On the **Add function** blade, select the **HTTP trigger** template entry, and then select **Add**.
 
-   :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Azure Porta Azure Function app Add function blade.":::
+   :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Azure portal Azure Function app Add function blade.":::
 
 1. On the **HttpTrigger1** blade, in the vertical menu bar, in the **Developer** section, select **Code + Test**.
 
