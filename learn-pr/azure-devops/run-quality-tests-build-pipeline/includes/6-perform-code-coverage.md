@@ -142,7 +142,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     ![Screenshot of local coverage report class summary showing coverage stats across classes found in the Tailspin.SpaceGame.Web code.](../media/6-coverage-class-summary.png)
 
-1. Select the link to ``TailSpin.SpaceGame.Web.LocalDocumentDBRepository`1`` to view further details.
+1. Select the link to `TailSpin.SpaceGame.Web.LocalDocumentDBRepository<T>` to view further details.
 
     Notice that the `GetItemsAsync` method is covered by unit tests, but the `CountItemsAsync` method has no coverage.
 
@@ -154,7 +154,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 Now that you can build a code coverage report locally, you're ready to add tasks to your build pipeline, which performs the same tasks.
 
-In this part, you create a branch named `code-coverage`, based on the `unit-tests` branch, to hold your work. In practice, you would ordinarily create this branch from the `master` branch.
+In this part, you create a branch named `code-coverage`, based on the `unit-tests` branch, to hold your work. In practice, you would ordinarily create this branch from the `main` branch.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run the following `git checkout` command to create a branch named `code-coverage`:
@@ -223,7 +223,7 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
     You view the same results that you did when you ran the tests locally.
 
-    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 5.5 percent line coverage.](../media/6-coverage-report-pipeline.png)
+    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 7.7 percent line coverage.](../media/6-coverage-report-pipeline.png)
 
     As an optional step, you can explore the results from Azure Pipelines.
 
@@ -256,7 +256,7 @@ Here you add a second widget that summarizes code coverage.
 
     The widget shows the percentage of code your unit tests cover.
 
-    ![Screenshot of Azure DevOps Code Coverage widget showing 6 percent coverage of the sample project.](../media/6-dashboard-widget.png)
+    ![Screenshot of Azure DevOps Code Coverage widget showing 8 percent coverage of the sample project.](../media/6-dashboard-widget.png)
 
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 

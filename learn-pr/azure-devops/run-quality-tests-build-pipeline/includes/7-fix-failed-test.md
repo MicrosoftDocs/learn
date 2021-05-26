@@ -27,7 +27,7 @@ Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes w
 
 ## Review the new unit test
 
-Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the ``IDocumentDBRepository`1.GetItemsAsync`` method.
+Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the `IDocumentDBRepository<T>.GetItemsAsync` method.
 
 Here's what the test looks like. You don't need to add any code just yet.
 
@@ -176,33 +176,37 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
     You see the same errors that you saw in the pipeline. Here's part of the output:
 
     ```output
-      X ReturnRequestedCount(10) [6ms]
+    Starting test execution, please wait...
+    A total of 1 test files matched the specified pattern.
+      Failed ReturnRequestedCount(1) [33 ms]
+      Error Message:
+         Expected: 1
+      But was:  0
+    
+      Stack Trace:
+         at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+    
+      Failed ReturnRequestedCount(10) [1 ms]
       Error Message:
          Expected: 10
       But was:  9
-
+    
       Stack Trace:
          at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.Execute(TestExecutionContext context)
-       at NUnit.Framework.Internal.Execution.SimpleWorkItem.PerformWork()
-       at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
-       at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
-       at NUnit.Framework.Internal.Execution.TestWorker.TestWorkerThreadProc()
-       at System.Threading.Thread.ThreadMain_ThreadStart()
-
-
-    Test Run Failed.
-    Total tests: 8
-         Passed: 6
-         Failed: 2
-     Total time: 1.3882 Seconds
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+    
+    
+    Failed!  - Failed:     2, Passed:     6, Skipped:     0, Total:     8, Duration: 98 ms
     ```
 
 ### Find the cause of the error
 
 Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
-Mara and Andy look at the source code for the method that's being tested, ``LocalDocumentDBRepository`1.GetItemsAsync``. They see this:
+Mara and Andy look at the source code for the method that's being tested, `LocalDocumentDBRepository<T>.GetItemsAsync`. They see this:
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
@@ -285,11 +289,9 @@ In this section, you fix the error by changing the code back to its original sta
 
     ```output
     Starting test execution, please wait...
-
-    Test Run Successful.
-    Total tests: 8
-         Passed: 8
-     Total time: 1.2506 Seconds
+    A total of 1 test files matched the specified pattern.
+    
+    Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 69 ms
     ```
 
 1. In the integrated terminal, add each modified file to the index, commit the changes, and push the branch up to GitHub.

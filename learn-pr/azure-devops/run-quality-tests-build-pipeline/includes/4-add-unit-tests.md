@@ -119,16 +119,12 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 
     ```output
     Starting test execution, please wait...
-
     A total of 1 test files matched the specified pattern.
-
-    Test Run Successful.
-    Total tests: 5
-         Passed: 5
-     Total time: 0.9320 Seconds
+    
+    Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5, Duration: 57 ms
     ```
 
-    In this example, the tests took about one second to run.
+    In this example, the tests took less than one second to run.
 
     Notice that there were five total tests. Although we define just one test method, `FetchOnlyRequestedGameRegion`, that test is run five times, once for each game map as specified in the `TestCase` inline data.
 
@@ -214,6 +210,6 @@ Here you see the tests run in the pipeline and then visualize the results from M
 
 Although Mara and Andy have added only one test, it's a good start and it fixes the immediate problem. Now, the team has a place to add more tests and run them as they improve their process.
 
-## Merge your branch into master
+## Merge your branch into main
 
-Mara and Andy are happy with their results, so they decide to merge the `unit-tests` branch to `master`. In practice, you would do the same. But for brevity, we'll skip that process for now.
+Mara and Andy are happy with their results, so they decide to merge the `unit-tests` branch to `main`. In practice, you would do the same. But for brevity, we'll skip that process for now.
