@@ -17,7 +17,6 @@ abstract: |
   - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
   - Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true 
 levels:
 - beginner
 roles:
