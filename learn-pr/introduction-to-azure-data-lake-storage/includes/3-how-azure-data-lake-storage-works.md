@@ -17,7 +17,7 @@ Before you can do anything useful with Azure Data Lake Storage, you need to move
 *Ad hoc* data refers primarily to smaller datasets that you ingest as needed. Most ad hoc data is used to prototype or test big data applications. How you ingest ad hoc data depends on the source of that data.
 
 > [!NOTE]
-> Ad hoc<!-- Acrolinx doesn't like the use of latin ad hoc here. Can you pick another word? Honestly, I'm not sure what we mean by ad hoc. Also, if you change it here, be sure to change search as it's mentioned more than once, and change it in the graphic as well. --> data can also refer to larger datasets such as web server logs and social sentiment data such as social media posts and comments that you can analyze to learn how users feel about your organization or brand.
+> Ad hoc data can also refer to larger datasets such as web server logs and social sentiment data such as social media posts and comments that you can analyze to learn how users feel about your organization or brand.
 
 For data housed on a local computer, you can use any of the following tools to transfer the data to Azure Data Lake Storage:
 
@@ -40,7 +40,7 @@ For Azure Blob Storage data, you can use any of the following tools to copy blob
 
 ### Ingesting relational data
 
-If you have data stored in a relational database management system, you could transfer that data to Azure Data Lake Storage for analysis. To ingest relational data, you use the Azure Data Factory service. This service includes a Copy activity<!-- Is it an activity, or a command? Whatever it is, please check formatting of that type - i.e. should it be bold? Italics? --> that enables you to transfer data to Azure Data Lake Storage from any of the following Azure sources:
+If you have data stored in a relational database management system, you could transfer that data to Azure Data Lake Storage for analysis. To ingest relational data, you use the Azure Data Factory service. This service includes a Copy activity that enables you to transfer data to Azure Data Lake Storage from any of the following Azure sources:
 
 - Azure Cosmos DB (MongoDB API)
 - Azure Cosmos DB (SQL API)
@@ -61,11 +61,11 @@ Does your organization generate real-time streamed data from devices, sensors, o
 
 ## Accessing stored data
 
-Assuming you have a storage account with the hierarchical namespace enabled, how do you access the data that's ingested into Azure Data Lake Storage? The following sections describe the most common access methods.<!-- Could we break this sentence into two for Acrolinx? -->
+Suppose you have a storage account with the hierarchical namespace enabled. How do you access the data that's ingested into Azure Data Lake Storage? The following sections describe the most common access methods.
 
 ### Azure Storage Explorer
 
-The easiest way to access your data is to use Azure Storage Explorer. *Storage Explorer* is a standalone application<!-- "app" instead of application? If so, please s/r. --> with a graphical user interface (GUI) for accessing your Azure Data Lake Storage data. Storage Explorer enables you to:
+The easiest way to access your data is to use Azure Storage Explorer. *Storage Explorer* is a standalone application with a graphical user interface (GUI) for accessing your Azure Data Lake Storage data. Storage Explorer enables you to:
 
 - Upload and download Azure Data Lake Storage entities, such as blobs and files.
 - Create and manage Azure Data Lake Storage directories.
@@ -73,7 +73,7 @@ The easiest way to access your data is to use Azure Storage Explorer. *Storage E
 
 ### PowerShell
 
-The PowerShell utility offers many cmdlets that are specific to Azure Data Lake Storage. (If you're new to PowerShell, a *cmdlet*—it's pronounced "command-let"—is a special command that you invoke in the PowerShell environment to implement a specific task or function.<!-- This is good information. But if they are taking this course, isn't it implied that they'll already know what a cmdlet is? I'd recommend deleting the second sentence. However, if you do you'll need to add another sentence so as to avoid a single-sentence pgph. -->)
+The PowerShell utility offers many cmdlets that are specific to Azure Data Lake Storage. If you're new to PowerShell, a *cmdlet*—it's pronounced "command-let"—is a special command that you invoke in the PowerShell environment to implement a specific task or function.
 
 ### Other access methods
 
@@ -83,7 +83,7 @@ In addition to Azure Storage Explorer and PowerShell, you can also use any of th
 - HDFS CLI
 - Java
 - JavaScript (Node.js)
-- .NET<!-- .NET Framework? -->
+- .NET Framework
 - Python
 
 ## Setting access controls on stored data

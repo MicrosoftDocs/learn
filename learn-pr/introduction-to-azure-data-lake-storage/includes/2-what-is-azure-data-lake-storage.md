@@ -2,7 +2,7 @@ Let's begin with a quick overview of Azure Data Lake Storage and its core featur
 
 ## What is a data lake?
 
-A *data lake* is a single, centralized repository where you can store all your data, both structured and unstructured. A data lake enables your organization to quickly and more easily store, access, and analyze a wide variety of data in a single location. With a data lake<!-- I moved this up from below the table. Does it work for you? -->, you don't need to conform your data to fit an existing structure. Instead, you can store your data in its raw or native format, usually as files or as binary large objects (blobs).
+A *data lake* is a single, centralized repository where you can store all your data, both structured and unstructured. A data lake enables your organization to quickly and more easily store, access, and analyze a wide variety of data in a single location. With a data lake, you don't need to conform your data to fit an existing structure. Instead, you can store your data in its raw or native format, usually as files or as binary large objects (blobs).
 
 When evaluating whether a data lake is the correct solution for your company, you should consider several elements as described in the following table.
 
@@ -12,12 +12,12 @@ When evaluating whether a data lake is the correct solution for your company, yo
 | **Data scalability** | A data lake might be required to store massive amounts of data that arrive in real time. Thus, the storage must be highly scalable to keep up with demand. |
 | **Data availability** | After the data is stored in a data lake, it must be readily available via browsing, searching, and indexing. |
 | **Data security**      | Most data lakes store crucial data assets, including line-of-business (LOB) data, company-developed apps, and productivity output. The data lake requires robust security to protect these assets.    |
-| **Data analytics** | A data lake must store data in a way that enables users to use their preferred tools to analyze the data in place. Business analysts, data scientists, and AI modelers need to use their own tools to derive business intelligence, insights, trends, and forecasts.<!-- Please verify my edits for accuracy. --> |
+| **Data analytics** | A data lake must store data in a way that enables users to use their preferred tools to analyze the data in place. Business analysts, data scientists, and AI modelers need to use their own tools to derive business intelligence, insights, trends, and forecasts. |
 | | |
 
 ## Azure Data Lake Storage definition
 
-*Azure Data Lake Storage* is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. You use it to capture data of any type and ingestion speed in a single location for easy access and analysis using various frameworks.<!-- Acrolinx doesn't like the length of this sentence, but I'm not sure how we break it into two. -->
+*Azure Data Lake Storage* is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. You use it to capture data of any type and ingestion speed in a single location for easy access and analysis using various frameworks.
 
 > [!NOTE]
 > The current implementation of Azure's data lake storage service is Azure Data Lake Storage Gen2. You might notice references to the previous implementation, Azure Data Lake Storage Gen1, which is scheduled to be retired on February 29, 2024.
@@ -54,7 +54,7 @@ Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on Azu
 
 The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
 
-Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by doing<!-- Not sure I love this word as much as performing.  I changed it for Acrolinx. --> as many reads and writes in parallel as possible.
+Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
 
 ### Data security
 
@@ -66,14 +66,14 @@ You can configure security settings in several ways, including by using the foll
 - Azure Command-Line Interface (Azure CLI)
 - Java
 - JavaScript (Node.js)
-- .NET<!-- Microsoft .NET Framework? -->
-- PowerShell<!-- Windows PowerShell, Active Directory PowerShell, or Azure PowerShell? -->
+- Microsoft .NET Framework
+- PowerShell
 - Python
 - REST API
 
 ### Data redundancy
 
-Azure Data Lake Storage utilizes Azure Blob replication models. These models provide data redundancy in a single datacenter with locally redundant storage (LRS). They also provide a secondary region by using geo-redundant storage (GRS)<!-- I broke these out into multiple sentences for Acrolinx. Please verify. -->, which helps ensure that your data is always available and protected if there's an outage.
+Azure Data Lake Storage utilizes Azure Blob replication models. These models provide data redundancy in a single datacenter with locally redundant storage (LRS). They also provide a secondary region by using geo-redundant storage (GRS), which helps ensure that your data is always available and protected if there's an outage.
 
 ### Data scalability
 
