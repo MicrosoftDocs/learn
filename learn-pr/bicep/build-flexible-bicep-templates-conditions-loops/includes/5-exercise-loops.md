@@ -1,4 +1,4 @@
-So far, your Bicep template has deployed a single SQL server, with auditing settings included for your production environment. You now need to deploy multiple SQL Server instances, one for each region where your company is launching its new smart teddy bear. 
+So far, your Bicep template has deployed a single Azure SQL logical server, with auditing settings included for your production environment. You now need to deploy multiple logical servers, one for each region where your company is launching its new smart teddy bear. 
 
 In this exercise you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
 
@@ -69,15 +69,15 @@ You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 
-After the deployment is finished, you want to verify that new SQL Server instance and database are deployed and that they're located in the correct Azure regions.
+After the deployment is finished, you want to verify that new logical server and database are deployed and that they're located in the correct Azure regions.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that new SQL server and database are located in the regions you specified in the `locations` parameter's default value.
+1. Verify that new logical server and database are located in the regions you specified in the `locations` parameter's default value.
 
-    :::image type="content" source="../media/5-loop-deployment.png" alt-text="Screenshot of the Azure portal, showing the deployment of SQL server and database instances in various locations." border="true":::
+    :::image type="content" source="../media/5-loop-deployment.png" alt-text="Screenshot of the Azure portal, showing the deployment of the logical servers and databases in various locations." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again later.
 
