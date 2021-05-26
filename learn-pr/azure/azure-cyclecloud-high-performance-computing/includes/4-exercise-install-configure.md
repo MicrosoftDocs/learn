@@ -108,8 +108,8 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     | --- | --- |
     | User ID | Enter **cc-admin**. |
     | Name | Enter the name of your account associated with the target subscription. |
-    | Password | Enter **Pa55w.rd1234**. |
-    | Confirm | Enter **Pa55w.rd1234**. |
+    | Password | Enter a complex password. |
+    | Confirm | Re-enter the same complex password. |
     | SSH Public Key | Paste the value of the public SSH key you previously recorded in this task. |
 
     > [!NOTE]

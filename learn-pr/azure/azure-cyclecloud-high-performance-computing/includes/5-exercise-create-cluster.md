@@ -1,13 +1,13 @@
 You can create new clusters directly from the graphical interface of the CycleCloud web application. CycleCloud offers many predefined, scheduler-specific templates, which simplify cluster provisioning for the corresponding schedulers. 
 
-Now that you've provisioned an Azure VM hosting the CycleCloud web applications, you're ready to evaluate its use for deployment of a Swarm-based HPC cluster into Azure. You first need to ensure that your Azure subscription will accommodate the cluster's resource requirements. You also want to consider that your management team wants to keep the cluster's cost within the project's budget. So, you plan to set up CycleCloud budget alerts and deprovision the lab environment after you complete the evaluation.
+Now that you've provisioned an Azure VM hosting the CycleCloud web applications, you're ready to evaluate its use for deployment of a Slurm-based HPC cluster into Azure. You first need to ensure that your Azure subscription will accommodate the cluster's resource requirements. You also want to consider that your management team wants to keep the cluster's cost within the project's budget. So, you plan to set up CycleCloud budget alerts and deprovision the lab environment after you complete the evaluation.
 
 ## Prepare for the deployment of an HPC cluster
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage.
 
 > [!NOTE]
-> To complete this exercise, you don't need to satisfy quota requirements to accommodate provisioning of the compute nodes because you won't be running any jobs on the cluster you create.
+> To complete this exercise, you don't need to satisfy quota requirements to accommodate provisioning of the compute nodes because you won't be running any jobs on the cluster you create. However, if that's the case, you might notice a mismatch between the screenshots in this exercise and your CycleCloud web interface, since CycleCloud won't pre-create placeholder compute nodes if you don't have the sufficient number of available cores.
 
 1. On your computer, switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for the **cyclecloud-rg** resource group.
@@ -36,7 +36,7 @@ Before you deploy an HPC cluster, you should first ensure that you have sufficie
 
 ## Create an HPC cluster by using Azure CycleCloud
 
-Now you have the CycleCloud web application installed in an Azure VM, enough vCPU cores available in your Azure subscription, and a designated network subnet capable of accommodating autoscaling of cluster nodes. You're ready to proceed with deployment of a Swarm-based cluster.
+Now you have the CycleCloud web application installed in an Azure VM, enough vCPU cores available in your Azure subscription, and a designated network subnet capable of accommodating autoscaling of cluster nodes. You're ready to proceed with deployment of a Slurm-based cluster.
 
 1. On your computer, in the web browser window displaying the **Subscriptions** page of the Azure CycleCloud web application, in the upper left corner, select the **Back to clusters** link.
 
@@ -65,6 +65,9 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
     | Subnet ID | Select **cyclecloud-rg: cyclecloud-rg-vnet-contoso-slurm-lab-cluster-subnet**. |
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-required-settings.png" alt-text="The screenshot depicts the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
+
+    > [!NOTE]
+    > The **Max VMs per Scaleset** setting will limit the maximum size of an Message Passing Interface job that can run on the cluster, since the scaleset is currently the InfiniBand fabric boundary.
 
 1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**, accept the default value of **Size (GB)** set to **100**, and select **Next**.
 
@@ -102,7 +105,7 @@ To prepare for operationalizing your cluster, you'll set alerts to notify you wh
 1. Monitor the startup process.
 
     > [!NOTE]
-    > The process involves provisioning of the Azure VM serving the role of the cluster's head node, and installation and configuration of the Swarm scheduler. This might take about five minutes.
+    > The process involves provisioning of the Azure VM serving the role of the cluster's head node, and installation and configuration of the Slurm scheduler. This might take about five minutes.
 
     :::image type="content" source="../media/u5-cyclecloud-cluster-started-nodes.png" alt-text="The screenshot depicts the Nodes tab page of contoso-slurm-lab-cluster in the started state in the Azure CycleCloud web application." border="false":::
 
