@@ -4,7 +4,7 @@ When you work with Bicep templates, conditions and loops can help make your Azur
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is designing a new smart teddy bear toy. Some of the teddy bear's features are based on back-end server components and SQL databases that are hosted in Azure. For security reasons, within your production environments, you need to make sure that you've enabled auditing on your Azure SQL servers.
 
-You expect that the toy will be very popular, and your company plans to launch it in new countries regularly. Each country where you launch the smart teddy bear will need to have a separate database server and virtual network. To follow the countries' laws, you'll need to physically locate these resources in specific places. You've been asked to deploy each country's database servers and virtual networks, while also making it easy to add new servers and virtual networks as the toy is launched in new countries.
+You expect that the toy will be very popular, and your company plans to launch it in new countries regularly. Every country where you launch the smart teddy bear will need a separate database server and virtual network. To comply with each country's laws, you'll need to physically place these resources in specific locations. You've been asked to deploy each country's database servers and virtual networks and, at the same time, make it easy to add servers and virtual networks as the toy is launched in new countries.
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram illustrating a resource group containing SQL Server instances in multiple countries." border="false":::
 
