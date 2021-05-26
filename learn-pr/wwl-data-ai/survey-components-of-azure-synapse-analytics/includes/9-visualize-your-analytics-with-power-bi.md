@@ -1,22 +1,22 @@
-You can integrate You can integrate your Azure Synapse Analytics workspace with a new Power BI workspace so that you can get you data from within Azure Synapse Analytics visualized in a Power BI report or dashboard.
+You can integrate your Azure Synapse Analytics workspace with a Power BI workspace so that you can get you data from within Azure Synapse Analytics visualized in a Power BI report or dashboard.
 
 1. You can perform this step by clicking on the visualize icon on the home page of Azure Synapse Studio
  
     ![Visualize icon in Azure Synapse Studio](../media/azure-synapse-studio-visualize.png)
 
-1. Which will bring up the Connect to Power BI screen.
+1. Which will bring up the **Connect to Power BI** screen.
  
     ![Connect a Power BI workspace](../media/connect-to-power-bi.png)
 
-1. Here you can define a name and description for the Power BI Workspace. Then you would select the Tenant and Workspace name. Once you have connected to your workspace, you will be able to access the existing reports in the Power BI workspace in the Develop hub in Azure Synapse Studio. 
+1. Here you can define a **name** and **description** for the Power BI Workspace. Then you would select the **Tenant** and **Workspace name**. Once you have connected to your workspace, you will be able to access the existing reports in the Power BI workspace in the Develop hub in Azure Synapse Studio. 
  
     ![The Develop hub in Azure Synapse Studio](../media/develop-hub.png)
 
-1. Expand Power BI, expand SynapseDemos, expand Power BI reports, then select **1-CDP Vision Demo (1)**. Select the arrows to collapse the **Visualizations pane **(2)** and the **Fields** pane **(3)** to increase the report size.
+1. Expand **Power BI**, expand **SynapseDemos**, expand **Power BI reports**, then select **1-CDP Vision Demo (1)**. Select the arrows to collapse the **Visualizations pane **(2)** and the **Fields** pane **(3)** to increase the report size.
  
     ![View Power BI reports in Azure Synapse Studio](../media/view-power-bi-reports.png)
 
-1. As you can see, we can create, edit, and view Power BI reports from within Synapse Studio! As a business analyst, data engineer, or developer, you no longer need to open another browser window, sign in to Power BI, and toggle back and forth between environments.
+1. As you can see, we can create, edit, and view Power BI reports from within Synapse Studio! As a data analyst, data engineer, or developer, you no longer need to open another browser window, sign in to Power BI, and toggle back and forth between environments.
 
 1. Select a **Campaign Name** and **Region** within the **Decomposition Tree Analysis** tab to explore the data. If you hover over an item, you will see a tool tip.
  

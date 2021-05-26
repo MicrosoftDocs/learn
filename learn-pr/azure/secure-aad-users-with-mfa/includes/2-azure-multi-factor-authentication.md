@@ -2,7 +2,7 @@ Protecting your cloud assets is one of the primary goals for security group. One
 
 * **Password complexity rules**. This will force users to generate hard(er)-to-guess passwords.
 
-* **Password expiration rules**. You can force users to change their passwords on a periodic basis (and avoid using previous-used passwords). 
+* **Password expiration rules**. You can force users to change their passwords on a periodic basis (and avoid using previous-used passwords).
 
 * **Self-service password reset (SSPR)**. This allows users to self-serve and reset their password if they have forgotten it without involving an IT department.
 
@@ -68,8 +68,8 @@ Azure AD MFA improves security for the requesting users, because someone can’t
 
 Multi-Factor Authentication comes as part of the following offerings:
 
-* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using Conditional Access policies to require multi-factor authentication.
+* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multi-factor authentication.
 
-* **Azure AD Free** or standalone **Microsoft 365** licenses - Use pre-created Conditional Access baseline protection policies to require multi-factor authentication for your users and administrators.
+* **Azure AD Free** or standalone **Microsoft 365** licenses - Use [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multi-factor authentication for your users and administrators.
 
 * **Azure Active Directory Global Administrators** - A subset of Azure AD Multi-Factor Authentication capabilities are available as a means to protect global administrator accounts.

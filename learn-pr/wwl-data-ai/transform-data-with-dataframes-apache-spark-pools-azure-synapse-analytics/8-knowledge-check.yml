@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/25/2020
+  ms.date: 04/23/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -16,23 +16,23 @@ quiz:
   questions:
   - content: "What is a step in flattening a nested schema?"
     choices:
-    - content: "Create a parquet file."
+    - content: "Create a Parquet file."
       isCorrect: false
-      explanation: "InCorrect. Explode Arrays is a third step in flattening nested schema's. It is necessary to transform the array in the data frame into a new dataframe where the column that you want to select is defined."
+      explanation: "Incorrect. Creating a parquet file is not required to flatten a nested schema. It is a file format."
     - content: "Explode Arrays."
       isCorrect: true
-      explanation: "Correct. Explode Arrays is a third step in flattening nested schema's. It is necessary to transform the array in the data frame into a new dataframe where the column that you want to select is defined."
+      explanation: "Correct. Explode Arrays is a third step in flattening nested schemas. It is necessary to transform the array in the DataFrame into a new DataFrame where the column that you want to select is defined."
     - content: "Load a csv file."
       isCorrect: false
-      explanation: "InCorrect. Explode Arrays is a third step in flattening nested schema's. It is necessary to transform the array in the data frame into a new dataframe where the column that you want to select is defined."
-  - content: "What is a dataframe?"
+      explanation: "Incorrect. Loading a CSV file is not required to to flatten a nested schema."
+  - content: "What is a DataFrame?"
     choices:
     - content: "A creation of a data structure."
       isCorrect: true
-      explanation: "Correct. A DataFrame creates a data structure and it's one of the core data structures in Spark."
+      explanation: "Correct. A DataFrame creates a data structure and it's one of the core data structures in Apache Spark."
     - content: "A parquet file."
       isCorrect: false
-      explanation: "Incorrect. A DataFrame creates a data structure and it's one of the core data structures in Spark.You can load a parquet file into a spark dataframe."
+      explanation: "Incorrect. A DataFrame creates a data structure and it's one of the core data structures in Apache Spark. A parquet file is a file format that can be loaded into a Spark DataFrame."
     - content: "A csv file."
       isCorrect: false
-      explanation: "Incorrect. A DataFrame creates a data structure and it's one of the core data structures in Spark. You can load a csv file into a spark dataframe."
+      explanation: "Incorrect. A DataFrame creates a data structure and it's one of the core data structures in Apache Spark. You can load a csv file into a Spark DataFrame."

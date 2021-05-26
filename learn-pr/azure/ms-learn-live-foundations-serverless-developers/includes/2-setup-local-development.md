@@ -1,21 +1,19 @@
-## Setup a Local Development Environment
+When we choose to develop our function project locally, we're not running an emulator. The tools made available by Microsoft include the same components that also power the Functions infrastructure in Azure.
 
-When we choose to develop our function project locally, we're not running an emulator: the tools made available by Microsoft include the same components that also power the Functions infrastructure on Azure.
+The easiest way to leverage these tools is through Visual Studio Code, which you can run on Windows, Mac, and Linux.
 
-The easiest way to leverage these tools is through Visual Studio Code, which you can run on Mac, Windows, and Linux.
-
-By installing the needed extensions and services, you can get a fully-fledged Functions development environment.
+By installing the required extensions and services, you can get a fully-fledged functions development environment.
 
 ## Objective
 
 Install and configure the tooling required to develop and execute Functions locally without cloud dependencies.
 
-## Required Components for the Functions Project
+## Required components for the functions project
 
 > [!TIP]
-> If you want to verify your installation, you're invited to clone our [repository located on GitHub at https://aka.ms/learn-live-foundations-serverless-dev-repo](https://aka.ms/learn-live-foundations-serverless-dev-repo) and build both, the included (completed) functions project and the Angular based client.
+> If you want to verify your installation, you're invited to clone our [repository located on GitHub at https://aka.ms/learn-live-foundations-serverless-dev-repo](https://aka.ms/learn-live-foundations-serverless-dev-repo) and build both the included (completed) functions project and the Angular-based client.
 >
-> Note that we will be building the functions project from scratch during this course but we'll be using the completed Angular client to execute calls against the functions.
+> Note that we will be building the functions project from scratch during this course, but we'll be using the completed Angular client to execute calls against the functions.
 
 Unfortunately, there is no single-package download that would install all the required components on your system.
 
@@ -25,7 +23,7 @@ Start by downloading Visual Studio Code [https://code.visualstudio.com/download]
 
 You can write functions with various programming languages. We are using TypeScript in this series, which requires Node.js.
 
-Please follow the download and installation instructions for your platform at [NodeJS.org](https://nodejs.org).
+Follow the download and installation instructions for your platform at [NodeJS.org](https://nodejs.org).
 
 ### Add "Azure Functions Extension for VS Code"
 
@@ -39,7 +37,7 @@ Azure Functions Core Tools lets you develop and test your functions on your loca
 
 The installation instructions are platform-specific. Follow the instructions for your platform at  [https://docs.microsoft.com/azure/azure-functions/functions-run-local](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=learnlive-video-learn)
 
-### Components Required to Run the Client App
+### Components required to run the client app
 
 Our project contains server-related components and a client app built with Angular. You're not making any changes to this client, but additional components are required to build and run it successfully.
 
@@ -49,7 +47,7 @@ Our project contains server-related components and a client app built with Angul
 
 You can find detailed installation instructions at [angular.io/guide/setup-local](https://angular.io/guide/setup-local).
 
-The short version of the instructions is straightforward: execute the following command in your terminal:
+The short version of the instructions is straightforward: run the following command in your terminal:
 
 `npm install -g @angular/cli`
 
@@ -61,7 +59,7 @@ If you are planning to dive a bit deeper and explore Angular, debugging support 
 
 [Chrome debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-### Optional: Angular Language Services Extension
+### Optional: Angular language services extension
 
 There are many extensions for Visual Studio Code that make Angular development easier. We found this one particularly useful:
 

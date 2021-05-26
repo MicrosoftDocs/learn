@@ -1,7 +1,5 @@
 Rust provides the `Result<T, E>` enum for returning and propagating errors. By convention, the `Ok(T)` variant represents a success and contains a value, and the variant `Err(E)` represents an error and contains an error value.
 
-The `Result<T, E>` enum is principally used for input/output (I/O) operations, such as parsing strings into other types, attempts at acquiring network connections, file access, and data validation.
-
 The `Result<T, E>` enum is defined as:
 
 ```rust
@@ -19,7 +17,7 @@ The `Result` type also has the `unwrap` and `expect` methods, which do either of
 
 Let's see `Result` in action. In the following example code, there's an implementation for a `safe_division` function that returns either of following:
 * A `Result` value with an `Ok` variant that carries the result of a successful division.
-* An `Err` variant that carries an atomic struct `DivisionByZeroError`, which signals an unsuccessful division.
+* An `Err` variant that carries a struct `DivisionByZeroError` which signals an unsuccessful division.
 
 ```rust
 #[derive(Debug)]
@@ -45,9 +43,9 @@ To check this program, go to the [Rust playground](https://play.rust-lang.org/?v
 The output shows:
 
 ```output
-    Ok(3.0)
-    Err(DivisionByZeroError)
-    Ok(0.0)
+Ok(3.0)
+Err(DivisionByZeroError)
+Ok(0.0)
 ```
 
 The `#[derive(Debug)]` part that precedes the `DivisionByZeroError` struct is a macro that tells the Rust compiler to make the type printable for debugging purposes. We'll cover this concept in depth later, in the Traits module.

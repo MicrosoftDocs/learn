@@ -26,7 +26,7 @@ In this snippet of code:
 
 - The new function returns the Severity of the IP address.
 
-:::image type="content" source="../media/threat-hunt-2.png" alt-text="Sample 2 Query":::
+:::image type="content" source="../media/threat-hunt-3.png" alt-text="Sample 2 Query":::
 
 **Code Block**
 
@@ -38,4 +38,4 @@ In this snippet of code:
 
 - Then, [qry_prov.exec_query()] returns  a pandas DataFrame that provides visualization features.  You then plot a bar graph with the unique IP addresses and how many times they were used in the first five entries of the Dataframe.
 
-:::image type="content" source="../media/threat-hunt-3.png" alt-text="Sample 3 Query":::
+:::image type="content" source="../media/threat-hunt-2.png" alt-text="Sample 3 Query":::

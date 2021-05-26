@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-subqueries.self-contained-or-correlated-subqueries
+title: Use self-contained or correlated subqueries
+metadata:
+  title: Use self-contained or correlated subqueries
+  description: "Use self-contained or correlated subqueries"
+  ms.date: 05/12/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-self-contained-correlated-subqueries.md)]

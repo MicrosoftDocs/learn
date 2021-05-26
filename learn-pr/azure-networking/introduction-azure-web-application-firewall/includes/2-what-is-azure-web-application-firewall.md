@@ -1,5 +1,7 @@
 Here, you learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCwkM]
+
 ## Overview of Azure Web Application Firewall
 
 You might you think malicious users won't bother with your web apps. However, tests have indicated that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.

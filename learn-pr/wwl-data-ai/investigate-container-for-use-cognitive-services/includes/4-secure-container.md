@@ -16,7 +16,7 @@ You should also restrict network access to the Kubernetes cluster. The steps var
 
 Access to containers in your application will be limited, but you need to interact with the application. An ingress controller will provide one entry point to the containers you have deployed. It will act as a gateway to your containers and can secure traffic so connections use TLS and must authenticate before using your services. There are many options for ingress controllers in Kubernetes.
 
-You may consider a solution such as Istio or NGINX to act as the secure front-facing endpoint. Authentication can be added at the ingress controller. For example, INGINX Ingress Controller supports basic authentication or certificate authentication with a few setup steps. Additional capability like OAuth can be added with some additional external components. Another option specific to Azure is the Application Gateway Ingress Controller.
+You may consider a solution such as Istio or NGINX to act as the secure front-facing endpoint. Authentication can be added at the ingress controller. For example, NGINX Ingress Controller supports basic authentication or certificate authentication with a few setup steps. Additional capability like OAuth can be added with some additional external components. Another option specific to Azure is the Application Gateway Ingress Controller.
 
 :::image type="content" source="../media/03-container-deploy-unsecure-connect.png" alt-text="Diagram showing unsecure container access with users connecting directly to cognitive services container. ":::
 

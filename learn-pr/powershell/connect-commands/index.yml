@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.powershell.connect-commands
+metadata:
+  title: Connect commands into a pipeline
+  description: In this module, you'll learn how to connect commands into a pipeline.
+  ms.date: 02/16/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect commands into a pipeline
+summary: In this module, you'll learn how to connect commands into a pipeline. You'll also learn about _filtering left_, _formatting right_, and other important principles. 
+abstract: |
+  After you complete this module, you'll be able to:
+  - Explore cmdlets further and construct a sequence of them in a pipeline.
+  - Apply sound principles to your commands by using filtering and formatting.
+iconUrl: /learn/achievements/powershell/connect-commands.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - Basic familiarity with using command-line shells, such as a Command Prompt window or Git Bash 
+  - Visual Studio Code, installed 
+  - Familiarity with installing Visual Studio Code extensions 
+  - Familiarity with installing software on Windows or other operating systems
+  - Familiarity with running commands in PowerShell
+units:
+  - learn.powershell.connect-commands.1-introduction
+  - learn.powershell.connect-commands.2-pipeline
+  - learn.powershell.connect-commands.3-exercise-pipeline
+  - learn.powershell.connect-commands.4-formatting
+  - learn.powershell.connect-commands.5-exercise-formatting
+  - learn.powershell.connect-commands.6-knowledge-check
+  - learn.powershell.connect-commands.7-summary
+badge:
+  uid: learn.powershell.connect-commands.badge

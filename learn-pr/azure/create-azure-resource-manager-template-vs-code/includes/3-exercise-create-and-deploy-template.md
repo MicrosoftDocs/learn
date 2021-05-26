@@ -209,7 +209,7 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
 In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this section, you add an Azure storage account resource to the ARM template by using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the brackets in the resources block ```"resources":[],```.
+1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the brackets in the resources block ```"resources":[],```.
 
 1. Enter **storage** inside the brackets. A list of related snippets appears. Select **arm-storage**.
 

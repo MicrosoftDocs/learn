@@ -40,7 +40,7 @@ There are costs associated with running a database in Azure Data Services. The b
 
 Not all features of a database management system are available in Azure Data Services. This is because Azure Data Services takes on the task of managing the system and keeping it running using hardware situated in an Azure datacenter. Exposing some administrative functions might make the underlying platform vulnerable to misuse, and even open up some security concerns. Therefore, you have no direct control over the platform on which the services run. If you need more control than Azure Data Services allow, you can install your database management system on a virtual machine that runs in Azure. The next unit examines this approach in more detail for SQL Server, although the same issues apply for the other database management systems supported by Azure Data Services.
 
-The image below highlights the different ways in which you could run a DBMS such as SQL Server, starting with an on-premises system in the bottom left-hand corner, to PaaS in the upper right. The diagram illustrates the benefits of moving to the PaaS approach.
+The image below highlights the different ways in which you could run a DBMS such as SQL Server, starting with an on-premises system in the top-right-hand corner, to PaaS in the bottom left. The diagram illustrates the benefits of moving to the PaaS approach.
 
 ![Diagram showing the costs and benefits associated with running Microsoft SQL Server on-premises and in the cloud.](../media/2-choose-platform.png)
 

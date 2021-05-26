@@ -7,3 +7,5 @@ After completing this module, you'll be able to:
 - Describe the Zero Trust and shared responsibility models.
 - Describe common security threats and ways to protect through the defense in-depth security model.
 - Describe the concepts of encryption, hashing, and signing.
+ 
+ 

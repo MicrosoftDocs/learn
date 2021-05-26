@@ -1,8 +1,8 @@
-While it was great reading about these technologies, a much more exciting way to learn about them is to install them and begin playing around. This unit will teach you how to install Visual Studio Code.
+While it was great reading about these technologies, a much more exciting way to learn about them is to install them and begin playing around. This unit will teach you how to install Visual Studio Code. If you are following along in all of the modules of the [Discover the role of Python in space exploration Learning Path](../../../paths/introduction-python-space-exploration-nasa/index.yml), you will have a chance to write all of the code in an in-browser notebook experience from the Microsoft Learn module itself, so you do not *have* to install these developer tools to complete the module. However, setting up these tools is a great place to start on your personal developer journey, so we still encourage it.
 
 ## Install Visual Studio Code
 
-As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code downloads page](https://code.visualstudio.com/Download?azure-portal=true). Click on the download box according to which operating system you're running - macOS, Windows, or Linux. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
+As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
 
 > [!NOTE]
 > The picture below shows someone using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.

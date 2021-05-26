@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.12-functions-class-lab
+title: Lab - Convert three TypeScript functions to a class definition
+metadata:
+  title: Lab - Convert three TypeScript functions to a class definition
+  description: Apply what you've learned to convert three TypeScript functions to a class definition.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/12-functions-class-lab.md)]

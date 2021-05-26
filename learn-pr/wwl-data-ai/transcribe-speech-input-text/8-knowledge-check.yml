@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/07/2021
+  ms.date: 04/29/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,25 +13,36 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following tasks would be a good fit for the Speech-to-Text?"
+  - content: "What information do you need from your Speech service Azure resource to consume it using the Speech SDK?"
     choices:
-    - content: "Translating a document written in English into German."
-      isCorrect: false
-      explanation: "Incorrect. The Speech-to-Text isn't designed to translate written content into other languages or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
-    - content: "Creating an audio file from a famous quote"
-      isCorrect: false
-      explanation: "Incorrect. Speech-to-Text isn't designed to translate written content into other languages, or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
-    - content: "Real-time voice-chat transcription from a microphone"
+    - content: "The location and one of the keys"
       isCorrect: true
-      explanation: "Correct. Speech-to-Text can perform real-time transcribing (text output) from audio streams such as input from a microphone."
-  - content: "Which of the following text-to-speech output formats are supported by Speech-to-Text?"
+      explanation: "Correct. The Speech SDK requires the location and a key to connect to the Speech service."
+    - content: "The primary and secondary keys"
+      isCorrect: false
+      explanation: "Incorrect. The Speech SDK requires the location and a key to connect to the Speech service."
+    - content: "The endpoint and one of the keys"
+      isCorrect: false
+      explanation: "Incorrect. The Speech SDK requires the location and a key to connect to the Speech service."
+  - content: "Which object should you use to specify that the speech input to be transcribed to text is in an audio file?"
     choices:
-    - content: "audio/midi"
+    - content: "SpeechConfig"
       isCorrect: false
-      explanation: "Incorrect. MIDI isn't a supported output format."
-    - content: "audio/wav"
+      explanation: "Incorrect. Use an AudioConfig to specify the input source for speech."
+    - content: "AudioConfig"
       isCorrect: true
-      explanation: "Correct. Speech-to-Text supports \\\"audio/wav\\\" and \\\"audio/mp3\\\" as output formats via the format parameter."
-    - content: "audio/m4a"
+      explanation: "Correct. Use an AudioConfig to specify the input source for speech."
+    - content: "SpeechRecognizer"
       isCorrect: false
-      explanation: "Incorrect. M4A (MPEG 4 Audio) isn't a supported output format."
+      explanation: "Incorrect. Use an AudioConfig to specify the input source for speech."
+  - content: "How can you change the voice used in speech synthesis?"
+    choices:
+    - content: "Specify a SpeechSynthesisOutputFormat enumeration in the SpeechConfig object."
+      isCorrect: false
+      explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
+    - content: "Set the SpeechSynthesisVoiceName property of the SpeechConfig object to the desired voice name."
+      isCorrect: true
+      explanation: "Correct. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
+    - content: "Specify a filename in the AudioConfig object."
+      isCorrect: false
+      explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."

@@ -2,11 +2,8 @@
 
 Control flow is an orchestration of pipeline activities that includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on demand or from a trigger. 
 
-It also includes custom-state passing and looping containers, that are, For-each iterators.
-If a For Each loop is used as a control flow activity, Azure Data Factory can start these multiple copy activities in parallel. 
-
-This allows you to build complex and iterative processing logic within the pipelines you create with Azure Data Factory. 
-It supports diverse integration flows and patterns in the modern data warehouse, by enabling this flexible data pipeline model.
+Control flow can also include looping containers, that can pass information for each iteration of the looping container.
+If a For Each loop is used as a control flow activity, Azure Data Factory can start multiple activities in parallel using this approach. This allows you to build complex and iterative processing logic within the pipelines you create with Azure Data Factory, which supports the creation of diverse data integration patterns such as building a modern data warehouse.
 
 Some of the common control flow activities are described in the below sections.
 
@@ -17,23 +14,23 @@ It is possible to use the **dependsOn** property in an activity definition to ch
 
 ## Branching activities
 
-Use Azure Data Factory for Branching activities within a pipeline. An example of a branching activity is *TheIf-condition* activity which  is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities when the
-condition evaluates to true and another set of activities when the condition evaluates to false.
+Use Azure Data Factory for branching activities within a pipeline. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities, and when the
+condition evaluates to true, a set of activities are executed. When it evaluates to false, then an alternative set of activities is executed.
 
 ## Parameters
 
 You can define parameters at the pipeline level and pass arguments while you're invoking the pipeline on-demand
-or from a trigger. Activities can consume the arguments that are passed to the pipeline.
+or from a trigger. Activities then consume the arguments held in a parameter as they are passed to the pipeline.
 
 ## Custom state passing
 
-Custom state passing is made possible with Azure Data Factory. Custom state passing is an activity that created output or the state of the activity that needs to be consumed by a subsequent activity in the pipeline. An example, is that in a JSON definition of an activity, you can access the output of the previous activity. Using custom state passing, enables  you to build workflows where values are passing through activities. 
+Custom state passing is made possible with Azure Data Factory. Custom state passing is an activity that created output or the state of the activity that needs to be consumed by a subsequent activity in the pipeline. An example is that in a JSON definition of an activity, you can access the output of the previous activity. Using custom state passing enables  you to build workflows where values are passing through activities. 
 
 ## Looping containers
 
 The looping containers umbrella of control flow such as the ForEach activity  defines repetition in a pipeline. 
-It enables you to iterate over a collection and runs specified activities in the defined loop. It works similar as the 'for each looping structure' used in programming languages. 
-Besides for each activity, there is also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. 
+It enables you to iterate over a collection and runs specified activities in the defined loop. It works similarly to the 'for each looping structure' used in programming languages. 
+Besides each activity, there is also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. 
 
 ## Trigger based flows
 
@@ -45,9 +42,9 @@ The Execute Pipeline activity with Azure Data Factory allows a Data Factory pipe
 
 ## Delta flows
 
-Use-cases related to using delta flows, is delta loads. 
+Use-cases related to using delta flows are delta loads. 
 Delta loads in ETL patterns will only load data that has changed since a previous iteration of a pipeline. Capabilities such as lookup activity, and flexible scheduling helps handling delta load jobs. 
-In case of using a Lookup activity, it will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities.
+In the case of using a Lookup activity, it will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities.
 
 ## Other control flows
 

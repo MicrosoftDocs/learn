@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "When using generics, you can limit the range of types that a type variable can accept. What is this called?"
+    choices:
+    - content: "A generic constraint."
+      isCorrect: true
+      explanation: "Correct! A generic constraint limits the types that a type variable can accept, rather than accepting any possible type."
+    - content: "Type limiting."
+      isCorrect: false
+      explanation: "Incorrect. While it's limiting the types, this isn't the term used to describe it."
+    - content: "Generic limits."
+      isCorrect: false
+      explanation: "Incorrect. While it's limiting the types, this isn't the term used to describe it."
+  - content: "What's the best type of operation to use with a generic?"
+    choices:
+    - content: "Any operation is compatible with a generic."
+      isCorrect: false
+      explanation: "Incorrect. Not all operations can be performed on any type of data, which limits which operations you can use with a generic."
+    - content: "Mathematical operations."
+      isCorrect: false
+      explanation: "Incorrect. Most mathematical operations cannot be performed on any type of data, which limits which operations you can use with a generic."
+    - content: "Operations that can be performed on a variety of data."
+      isCorrect: true
+      explanation: "Correct! Because any type is possible, TypeScript raises errors to prevent certain operations that are not supported by all types. For this reason, it's best to use generics with operations that can work on a variety of data."
+  - content: "What's the difference between using a generic and the `any` type?"
+    choices:
+    - content: "The `any` type is very flexible so it's preferred over generics in most cases."
+      isCorrect: false
+      explanation: "Incorrect. While the `any` type is indeed flexible, you won't have the type checking that generics provide."
+    - content: "Using a generic provides type checking while using the `any` type does not."
+      isCorrect: true
+      explanation: "Correct! Type checking is a key difference between generics and the `any` type."
+    - content: "There is no difference between using a generic and using the `any` type."
+      isCorrect: false
+      explanation: "Incorrect. There are some key differences between using a generic and using the `any` type."

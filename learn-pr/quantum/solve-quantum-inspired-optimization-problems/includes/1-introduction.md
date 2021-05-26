@@ -25,6 +25,7 @@ In this module, you'll:
 
 ## Prerequisites
 
+* Any Python development environment
 * The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
 * [Jupyter Notebook](https://jupyter.org/install?azure-portal=true)
 * An Azure Quantum workspace

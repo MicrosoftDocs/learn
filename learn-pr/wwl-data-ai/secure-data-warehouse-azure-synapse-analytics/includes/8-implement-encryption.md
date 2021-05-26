@@ -4,7 +4,7 @@ In this section, we will go through Transparent Data Encryption and TokenLibrary
 
 Transparent data encryption (TDE) is an encryption mechanism to help you protect Azure Synapse Analytics.
 It will protect Azure Synapse Analytics against threats of malicious offline activity.
-The way TDE will do so, is by encrypting data at rest. 
+The way TDE will do so is by encrypting data at rest. 
 TDE performs real-time encryption as well as decryption of the database, associated backups, and transaction log files at rest without you having to make changes to the application. 
 In order to use TDE for Azure Synapse Analytics, you will have to manually enable it. 
 
@@ -43,7 +43,7 @@ Azure Synapse Analytics needs to be granted permissions to the customer-owned ke
 If permissions of the server to the key vault are revoked, a database will be inaccessible, and all data is encrypted.
 
 By using Azure Key Vault integration for TDE, you have control over the key management tasks such as key rotations, key backups, and key permissions. 
-It also enables you for auditing and reporting on all the TDE protectors when using the Azure Key Vault functionality. 
+It also enables you to audit and reporting on all the TDE protectors when using the Azure Key Vault functionality. 
 The reason for using Key Vault is that it provides you with a central key management system where tightly monitored HSMs are leveraged. 
 It also enables you to separate duties of management of keys and data in order to meet compliance with security policies. 
 
@@ -52,7 +52,8 @@ It also enables you to separate duties of management of keys and data in order t
 For Azure Synapse Analytics, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. 
 The TDE settings can be found under your user database. 
 
-![Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
+> [!div class="mx-imgBorder"]
+> ![Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
 
 It is by default that the service-managed TDE is used and therefore a TDE certificate is automatically generated for the server that contains that database. 
 
@@ -83,11 +84,11 @@ Within Azure Synapse Analytics, the integration process is simplified by providi
 Doing so, the connection details can be stored in the linked service or an Azure Key Vault. 
 If the Linked Service is created, Apache spark can reference the linked service to apply the connection information in your code. 
 When you want to access files from the Azure Data Lake Storage Gen 2 within your Azure Synapse Analytics Workspace, it uses AAD passthrough for the authentication. 
-Therefore, there is no need to use the TokenLibrary. 
+Therefore, there is no need to use TokenLibrary. 
 However, to connect to other linked services, you are enabled to make a direct call to the TokenLibrary.
 
 An example can be found below:
-In order to connect to other linked services, you are enabled to make a direct call to the TokenLibrary by retrieving the connection string. 
+In order to connect to other linked services, you are enabled to make a direct call to TokenLibrary by retrieving the connection string. 
 In order to retrieve the connection string, use the **getConnectionString** function and pass in the **linked service name**.
 
 ```scala

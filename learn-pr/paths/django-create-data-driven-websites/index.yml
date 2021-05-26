@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.django-create-data-driven-websites
+metadata:
+  title: Create data-driven websites by using Django
+  description: Use Django to create data-driven websites.
+  brand: azure
+  ms.date: 03/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create data-driven websites by using Django
+summary: |
+  Use Django to create data-driven websites.
+  
+  In this learning path, you'll use Django to:
+    - Build an app. 
+    - Create and manage a database. 
+    - Set up a superuser for the admin site.
+    - Use templates to create dynamic HTML pages.
+    - Design data-driven forms.
+prerequisites: |
+  - Intermediate knowledge of Python:
+    - Package management
+    - Inheritance and mix-ins
+  - Intermediate understanding of HTML and CSS
+iconUrl: /learn/achievements/django-create-data-driven-websites.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+- azure-app-service
+modules:
+- learn.django.get-started
+- learn.django.models-data
+- learn.django.admin-site
+- learn.django.views-templates
+- learn.django.generic-views
+- learn.django.deployment
+trophy:
+  uid: learn.django-create-data-driven-websites.trophy

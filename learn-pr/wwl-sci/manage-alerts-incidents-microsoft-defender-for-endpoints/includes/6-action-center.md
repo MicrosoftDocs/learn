@@ -74,7 +74,7 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ### Remove a file from quarantine across multiple devices
 
-To remove a file from quartile across multiple devices:
+To remove a file from quarantine across multiple devices:
 
 - On the History tab, select a file that has the Action type Quarantine file.
 

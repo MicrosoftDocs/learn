@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.advocates.responsible-bots
+hidden: true
 metadata:
   title: Create a chat bot to help students learn with Azure Bot Service
   description: Learn how to build responsible conversational UI by using bots.

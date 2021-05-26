@@ -4,7 +4,7 @@ If you plan to run this code on your local computer, make sure that it's written
 
 If you plan to complete this exercise on the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6cb6629db5c1460f070ba672ff2d5c41?azure-portal=true), understand that, by using the playground, you can read your own code as a file named *src/main.rs*, which is on its own virtual path.
 
-In this exercise, you'll replace the question marks (`???`) inside `read_file_contents` to make
+In this exercise, you'll replace the `todo!` macro inside `read_file_contents` to make
 it compile and run without panics.
 
 Before you try this challenge, here's something you need to know:
@@ -41,8 +41,8 @@ fn read_file_contents(path: PathBuf) -> Result<String, IoError> {
     // Pass the variable to the `file` variable on success, or
     // Return from the function early if it is an error.
     let mut file: File = match File::open(path) {
-        Ok(file_handle) => ???,
-        Err(io_error) => ???,
+        Ok(file_handle) => todo!()
+        Err(io_error) => todo!()
     };
 
     // TODO #2: Handle this error.
@@ -51,11 +51,11 @@ fn read_file_contents(path: PathBuf) -> Result<String, IoError> {
     // Return from the function early if it is an error.
     match file.read_to_string(&mut string) {
         Ok(_) => (),
-        Err(io_error) => ???,
+        Err(io_error) => todo!()
     };
 
     // TODO #3: Return the `string` variable as expected by this function signature.
-    ???
+    todo!()
 }
 
 fn main() {

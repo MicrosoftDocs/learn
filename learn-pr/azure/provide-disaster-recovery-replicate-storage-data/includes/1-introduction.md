@@ -1,4 +1,4 @@
-Azure Storage enables you replicate data across regions for increased availability and resilience against failures.
+Azure Storage enables you to replicate data across regions for increased availability and resilience against failures.
 
 You're an admin for a music streaming service. Your organization uses Azure Blob Storage to store about 2 petabytes of audio file data. You use zone-redundant storage to replicate the data across multiple availability zones in a single region. Uptime is important to you and your users. If your audio files aren't available, you might lose subscribers to another service. You have a plan in place to recover from a zone failure. But you want to explore other redundancy options that protect from region-wide outage and practice a storage failover.
 

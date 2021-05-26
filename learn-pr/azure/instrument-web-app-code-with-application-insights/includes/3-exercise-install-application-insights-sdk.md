@@ -38,16 +38,6 @@ To initialize the Application Insights SDK, you need to call the `UseApplication
     code .
     ```
 
-1. Open *Program.cs* by using the code editor's file navigator.
-
-1. Locate the following line of code.
-
-    ```csharp
-    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-    WebHost.CreateDefaultBuilder(args)
-        .UseStartup<Startup>();
-    ```
-
 1. Add a call to the `UseApplicationInsights` method in *Startup.cs* in the *ConfigureServices()* function. The call should look like this.
 
     ```csharp

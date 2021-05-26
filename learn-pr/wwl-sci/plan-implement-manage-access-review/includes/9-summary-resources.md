@@ -14,7 +14,7 @@ Now that you have reviewed this module, you should be able to:
 
 In this module, you learned how to monitor and maintain your Azure Active Directory through analyzing logs of all types.
 
-You learned how to prepare for and perform access reviews, why they're important to the security of your organization, and how to configure them to occur on a recurring basis.
+You learned how to prepare for and perform access reviews, why they're essential to the security of your organization, and how to configure them to occur on a recurring basis.
 
 ## Resources
 

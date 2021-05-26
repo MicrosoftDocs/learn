@@ -9,6 +9,7 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-devops-actions
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]
