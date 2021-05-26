@@ -1,13 +1,13 @@
-For your toy company, you need to deploy virtual networks in each country where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional SQL server instances you've deployed. 
+For your toy company, you need to deploy virtual networks in each country where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
 
-In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the SQL server FQDNs.
+In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 
 In the process, you'll:
 
 > [!div class="checklist"]
 > * Update your Bicep code to specify a parameter for each virtual network's subnets.
 > * Add a variable loop to create a subnet array, which you'll use in the virtual network resource declaration.
-> * Add an output loop to create the list of SQL server instance FQDNs.
+> * Add an output loop to create the list of logical server FQDNs.
 > * Deploy the Bicep file and verify the deployment.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
@@ -114,9 +114,9 @@ After the deployment is finished, you want to verify that new virtual networks a
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
 
-1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL server instances that were deployed, as shown here:
+1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
-    :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment output, displaying the properties of the SQL server instances." border="true":::
+    :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment output, displaying the properties of the logical servers." border="true":::
 
 ::: zone-end
 
@@ -136,8 +136,8 @@ After the deployment is finished, you want to verify that new virtual networks a
 
     :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
 
-1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL server instances that were deployed, as shown here:
+1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
-    :::image type="content" source="../media/8-outloop-deployment-ps.png" alt-text="Screenshot of the deployment output, displaying the properties of the SQL server instances." border="true":::
+    :::image type="content" source="../media/8-outloop-deployment-ps.png" alt-text="Screenshot of the deployment output, displaying the properties of the logical servers." border="true":::
 
 ::: zone-end
