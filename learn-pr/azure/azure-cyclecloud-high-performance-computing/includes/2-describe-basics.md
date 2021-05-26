@@ -11,7 +11,7 @@ Azure CycleCloud addresses these concerns, providing a simple, secure, and scala
 
 Azure CycleCloud is a tool for deploying HPC clusters in Azure and managing their workloads. It offers a wide range of HPC capabilities, including:
 
-- Template-based deployment of HPC clusters. Azure CycleCloud provides built-in customizable templates for deployment of the most common cluster schedulers, including Slurm, OpenPBS, LSF, Grid Engine, and HT-Condor. Many other predefined templates, which you can import into your Azure CycleCloud instance, are available from the CycleCloud GitHub repository.
+- Template-based deployment of HPC clusters. Azure CycleCloud provides built-in customizable templates for deployment of the most common cluster schedulers, including Slurm, OpenPBS, LSF, Grid Engine, and HTCondor. Many other predefined templates, which you can import into your Azure CycleCloud instance, are available from the CycleCloud GitHub repository.
 
    > [!NOTE]
    > Templates are INI-formatted files that use declarative syntax to describe how nodes are organized in a CycleCloud cluster, including their respective relationships. Templates contain references to projects, which define node configuration.
