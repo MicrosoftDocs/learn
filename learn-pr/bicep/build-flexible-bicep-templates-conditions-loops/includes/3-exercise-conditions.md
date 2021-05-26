@@ -8,19 +8,19 @@ During the creation process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that defines a SQL Server instance with a database.
-> * Add a storage account and audit settings, both of which are deployed with a condition.
-> * Set up an infrastructure for your development environment and verify the result.
-> * Redeploy your infrastructure against your production environment and then look at the changes.
+> * Add a storage account and audit settings, each of which is deployed with a condition.
+> * Set up an infrastructure for your development environment, and then verify the result.
+> * Redeploy your infrastructure against your production environment, and then look at the changes.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Create a Bicep template with a SQL server instance and database
+## Create a Bicep template with a SQL Server instance and database
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or <kbd>Ctrl+S</kbd> (<kbd>⌘+S</kbd> on macOS). 
  
    Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it to.
 
-1. To define a SQL server instance and database, add the following content to the file, along with the parameters and variable that these resources need.
+1. To define a SQL Server instance and database, add the following content to the file, along with the parameters and variable that these resources need.
 
    ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
@@ -28,7 +28,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Add a storage account
 
-In the auditing settings for the SQL server instances, you need to specify a storage account to contain the auditing data. You'll update your Bicep file to create this storage account, but only when auditing is going to be enabled.
+In the auditing settings for the SQL Server instances, you need to specify a storage account to contain the auditing data. You'll update your Bicep file to create this storage account, but only when auditing is going to be enabled.
 
 1. Below the parameter declarations, add the following parameters:
 
@@ -100,7 +100,7 @@ You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlSe
 > - `sqlServerAdministratorLogin` must not be an easily guessable login name such as `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
 > - `sqlServerAdministratorPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
 >
-> If the parameter values don't meet the requirements, Azure SQL won't deploy your server instance.
+> If the parameter values don't meet the requirements, Azure SQL won't deploy your SQL Server instance.
 > 
 > Also, *be sure to note the login and password that you enter*. You'll use them again shortly.
 
@@ -121,7 +121,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In the **Overview** section, you can see that one deployment has succeeded. You can also see that a SQL server instance and a SQL database are deployed, but the storage account for auditing isn't deployed. 
+1. In the **Overview** section, you can see that one deployment has succeeded. You can also see that a SQL Server instance and a SQL database are deployed, but the storage account for auditing isn't deployed. 
  
    > [!NOTE]
    > The storage account with a name beginning with `cloudshell` is unrelated to your deployment and was created by the Learn sandbox.
@@ -134,7 +134,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
  
-   In this case, one SQL server instance and one SQL database are deployed. Notice that the storage account and auditing settings aren't on the list of resources.
+   In this case, one SQL Server instance and one SQL database are deployed. Notice that the storage account and auditing settings aren't on the list of resources.
 
     :::image type="content" source="../media/3-development-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with a SQL server and database resource listed." border="true":::
 
@@ -144,7 +144,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 In the previous deployment, the default value for the `environmentName` parameter was used, which meant that it was set to `Development`. 
 
-Now you'll explicitly set the parameter value to `Production`. You expect that, by making this change, the storage account for auditing purposes will be deployed, and auditing will be enabled on the SQL server instance.
+Now you'll explicitly set the parameter value to `Production`. You expect that, by making this change, the storage account for auditing purposes will be deployed, and auditing will be enabled on the SQL Server instance.
 
 ### Deploy the template for the production environment
 
@@ -183,6 +183,6 @@ To complete this exercise, verify that the redeployment has finished successfull
 
     :::image type="content" source="../media/3-production-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, showing that a storage account is deployed for auditing." border="true":::
 
-1. Select your SQL server instance (look for the resource with type **Microsoft.Sql/servers**) and then, under **Security**, select **Auditing**. Verify that auditing has been enabled for this SQL server instance.
+1. Select your SQL Server instance (look for the resource with type **Microsoft.Sql/servers**) and then, under **Security**, select **Auditing**. Verify that auditing has been enabled for this SQL Server instance.
 
-    :::image type="content" source="../media/3-sql-auditing.png" alt-text="Screenshot of the Azure portal interface for the SQL server instance, showing that the auditing configuration is enabled." border="true":::
+    :::image type="content" source="../media/3-sql-auditing.png" alt-text="Screenshot of the Azure portal interface for the SQL Server instance, showing that the auditing configuration is enabled." border="true":::
