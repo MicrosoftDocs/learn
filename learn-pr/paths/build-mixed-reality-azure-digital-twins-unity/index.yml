@@ -24,7 +24,6 @@ prerequisites: |
       - USB Device Connectivity 
       - Microsoft Mixed Reality Feature Tool  
 iconUrl: /learn/achievements/generic-trophy.svg
-hidden: true
 levels:
 - beginner
 roles:
