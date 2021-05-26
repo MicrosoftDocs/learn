@@ -103,13 +103,13 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 1. In Visual Studio Code, open the integrated terminal.
 1. Run `dotnet build` to build each project in the solution.
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
 1. Run the following `dotnet test` command to run the unit tests:
 
-    ```bash
+    ```dotnetcli
     dotnet test --configuration Release --no-build
     ```
 
@@ -134,7 +134,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 
 1. Run the tests a second time. This time, provide the `--logger` option to write the results to a log file.
 
-    ```bash
+    ```dotnetcli
     dotnet test Tailspin.SpaceGame.Web.Tests --configuration Release --no-build --logger trx
     ```
 

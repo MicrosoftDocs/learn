@@ -81,7 +81,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
 1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
-    ```bash
+    ```dotnetcli
     dotnet new tool-manifest
     dotnet tool install dotnet-reportgenerator-globaltool
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
@@ -89,7 +89,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
 
-1. Add your test project file and your tool manifest file to the staging index and commit your changes. 
+1. Add your test project file and your tool manifest file to the staging index and commit your changes.
 
     ```bash
     git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
@@ -163,13 +163,13 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run this `dotnet build` command to build the application:
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
 1. In the terminal, run this `dotnet test` command to run the unit tests:
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build --configuration Release
     ```
 
@@ -267,7 +267,7 @@ In this section, you fix the error by changing the code back to its original sta
 1. Save the file.
 1. In the integrated terminal, build the application.
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
@@ -277,7 +277,7 @@ In this section, you fix the error by changing the code back to its original sta
 
 1. In the terminal, run the unit tests.
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build --configuration Release
     ```
 

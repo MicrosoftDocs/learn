@@ -79,7 +79,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `dotnet new` command to create a local tool manifest file.
 
-    ```bash
+    ```dotnetcli
     dotnet new tool-manifest
     ```
 
@@ -87,7 +87,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet tool install` command to install ReportGenerator:
 
-    ```bash
+    ```dotnetcli
     dotnet tool install dotnet-reportgenerator-globaltool
     ```
 
@@ -95,13 +95,13 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet add package` command to add the `coverlet.msbuild` package to the *Tailspin.SpaceGame.Web.Tests* project:
 
-    ```bash
+    ```dotnetcli
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage:
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build \
       --configuration Release \
       /p:CollectCoverage=true \
@@ -111,7 +111,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     If the command fails, try running it like this:
 
-    ```bash
+    ```dotnetcli
     MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
       --configuration Release \
       /p:CollectCoverage=true \
@@ -123,7 +123,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet tool run` command to use `ReportGenerator` to convert the Cobertura file to HTML:
 
-    ```bash
+    ```dotnetcli
     dotnet tool run reportgenerator \
       -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
       -targetdir:./CodeCoverage \
