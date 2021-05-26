@@ -5,7 +5,7 @@ Specifically you learned:
 - The business value of Azure VMware Solution
     - VMware tools and technology you know
     - Azure Native Integration 
-    - High performance cloud infrastruture
+    - High-performance cloud infrastructure
 
 - The basic components of the AVS service and how they work in Azure.
     - What Microsoft manages with the AVS service
