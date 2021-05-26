@@ -1,8 +1,8 @@
 Often, you need to deploy multiple resources that are very similar. By adding loops to your Bicep files, you can avoid having to repeat resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy. You can even customize the properties for each instance.
 
-For your toy company, you need to deploy back-end infrastructure, including some SQL Server instances, to support the launch of the new smart teddy bear. You need to deploy a dedicated SQL Server instance to each country where the toy will be available, so that you're in compliance with each country's data protection laws. 
+For your toy company, you need to deploy back-end infrastructure, including some Azure SQL logical servers, to support the launch of the new smart teddy bear. You need to deploy a dedicated logical server to each country where the toy will be available, so that you're in compliance with each country's data protection laws. 
 
-Apart from their locations, all servers will be configured in the same way. You want to use Bicep code to deploy your SQL Server instances, and a parameter should allow you to specify the regions into which the servers should be deployed.
+Apart from their locations, all logical servers will be configured in the same way. You want to use Bicep code to deploy your logical servers, and a parameter should allow you to specify the regions into which the logical servers should be deployed.
 
 In this unit, you'll learn how to deploy multiple instances of resources by using _copy loops_.
 
@@ -29,7 +29,7 @@ When you use the `range()` function, you specify its start value and the number 
 
 ## Access the iteration index
 
-With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a SQL Server instance in each location that's specified by an array, and you want the names of the servers to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
+With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a logical server in each location that's specified by an array, and you want the names of the servers to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
 
 ::: code language="plaintext" source="code/4-loop-index.bicep" highlight="7-8" :::
 
@@ -39,8 +39,8 @@ Notice that the `name` property includes the expression `i+1`. The first value o
 
 In some situations, you might want to deploy resources by using copy loops combined with conditions. You can do this by combining the `if` and `for` keywords.
 
-In the following example, the code uses an array parameter to define a set of SQL Server instances. A condition is used with the copy loop to deploy the servers only when the `environmentName` property of the loop object equals `Production`:
+In the following example, the code uses an array parameter to define a set of logical servers. A condition is used with the copy loop to deploy the servers only when the `environmentName` property of the loop object equals `Production`:
 
 ::: code language="plaintext" source="code/4-loop-condition.bicep" highlight="19" :::
 
-If you deploy the preceding example, you would see two SQL Server instances, `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2`, because that object's `environmentName` property doesn't match `Production`.
+If you deploy the preceding example, you would see two logical servers, `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2`, because that object's `environmentName` property doesn't match `Production`.
