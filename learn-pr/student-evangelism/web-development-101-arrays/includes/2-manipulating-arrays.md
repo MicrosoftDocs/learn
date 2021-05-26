@@ -48,12 +48,12 @@ Imagine that someone asked, how many flavors of ice cream do you have? You look 
 iceCreamFlavors.length // 6, because you added mint, remember
 ```
 
-> [!TIP] Try it yourself!
-> Use your browser's console to create and manipulate an array of your own creation. Remember, you can write JavaScript right in your browser! Just open a browser window and navigate to Developer Tools. In the console, you will find a prompt. Experiment with how you can manipulate an array with indexes and properties you just learned.
+> [!TIP]
+> Use your browser's console to create and manipulate an array of your own creation. Remember, you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt. Experiment with how you can manipulate an array with indexes and properties you just learned.
 
 ### Remove value
 
-To remove a value from an array, you can use `delete`. Think of deleting a value as you having a number of ice cream containers and you simply run out of "Mint" for example. The bucket will still be there but the "Mint" is gone. The code looks like so:
+To remove a value from an array, you can use `delete`. Think of deleting a value as you having many ice cream containers and you simply run out of "Mint" for example. The bucket will still be there but the "Mint" is gone. The code looks like so:
 
 ```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint"];
