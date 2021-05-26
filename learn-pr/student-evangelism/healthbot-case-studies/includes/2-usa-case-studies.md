@@ -10,7 +10,7 @@ Some of those partners in the United States of America are:
 
 Centers for Disease Control and Prevention (CDC):
 
-The CDC bot, which utilizes Microsoft's Healthcare Bot service, can quickly: 
+The CDC bot, which utilizes Microsoft's Healthcare Bot service, can quickly:
 
 - assess the symptoms and risk factors for people worried about infection,  
 
@@ -18,7 +18,7 @@ The CDC bot, which utilizes Microsoft's Healthcare Bot service, can quickly:
 
 - or, for those who do not need in-person medical care, managing the illness safely at home.
 
-:::image type="content" source="../media/cdc.png" alt-text="CDC":::
+:::image type="content" source="../media/cdc.png" alt-text="CDC bot":::
 
 
 ## Providence
@@ -31,7 +31,7 @@ One of the largest health systems in the U.S. had created a healthcare chatbot n
 
 The major global pharmacy and healthcare retail provider expanded the Walgreens Find Care&trade; platform to include a COVID-19 Risk Assessment, powered by Microsoft's Healthcare Bot. Walgreens aims to further support patients and customers during this critical time by making it possible for customers to assess their risk of COVID-19 based on CDC guidelines.  
 
-(more: https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) 
+(more: https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services)
 
 ## Aurora Health Care
 
