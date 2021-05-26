@@ -10,6 +10,6 @@ The criteria should have helped you evaluate whether you can easily connect your
 
 ## References
 
-- [Azure Database for MySQL - Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/overview?azure-portal=true)
-- [Azure Database for MySQL Single Server](https://docs.microsoft.com/azure/mysql/single-server-overview?azure-portal=true)
+- [Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/overview?azure-portal=true)
+- [Azure Database for MySQL Single Server](/azure/mysql/single-server-overview?azure-portal=true)
 - [Azure Database for MySQL pricing](https://azure.microsoft.com/pricing/details/mysql?azure-portal=true)

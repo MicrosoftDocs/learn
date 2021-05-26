@@ -7,8 +7,8 @@ You decided that Contoso will benefit most from modernizing the two-tier Online 
 You can learn more by reviewing the following documents:
 
 - [Azure Stack](https://aka.ms/overview-azure-stack?azure-portal=true)
-- [Azure Stack Hub overview](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview?azure-portal=true)
-- [What is Azure Stack Edge Pro with FPGA?](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview?azure-portal=true)
-- [What is Azure Stack Edge Pro with GPU?](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-gpu-overview?azure-portal=true)
-- [Differences between global Azure, Azure Stack Hub, and Azure Stack HCI](https://docs.microsoft.com/azure-stack/operator/compare-azure-azure-stack?view=azs-2005?azure-portal=true)
-- [Azure Stack HCI solution overview](https://docs.microsoft.com/azure-stack/hci/overview?azure-portal=true)
+- [Azure Stack Hub overview](/azure-stack/operator/azure-stack-overview?azure-portal=true)
+- [What is Azure Stack Edge Pro with FPGA?](/azure/databox-online/azure-stack-edge-overview?azure-portal=true)
+- [What is Azure Stack Edge Pro with GPU?](/azure/databox-online/azure-stack-edge-gpu-overview?azure-portal=true)
+- [Differences between global Azure, Azure Stack Hub, and Azure Stack HCI](/azure-stack/operator/compare-azure-azure-stack?view=azs-2005%3fazure-portal%3dtrue)
+- [Azure Stack HCI solution overview](/azure-stack/hci/overview?azure-portal=true)

@@ -12,7 +12,7 @@ The modules in this learning path form a progression, where you follow the Tails
 
 ### Run the template
 
-To sets up everything for you in your Azure DevOps organization, run a template.
+To set up everything in your Azure DevOps organization, run a template.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
