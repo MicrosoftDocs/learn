@@ -13,7 +13,7 @@ The first step to creating a logic app is planning the steps of your business pr
 - Detect tweets about the product
 - Analyze the sentiment
 - Store a link to positive tweets, and
-- Email customer service for negative tweets.
+- Email customer service for negative tweets
 
 It's common to use a flowchart to capture the steps of the process. The following illustration shows the flowchart for the social-media monitor app.
 
