@@ -9,11 +9,11 @@ metadata:
   ms.author: v-pmcfedries           
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Data Lake Storage
-summary: "Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to handle big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage."
+summary: "Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to manage big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage."
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data.
-    - Describe how the scalability, security, and cost optimization of Azure Data Lake Storage work to create a secure, high-performance framework for your data analytics.
+    - Describe how Azure Data Lake Storage scalability, security, and cost optimization work to create a more secure, high-performance framework for your data analytics.
 prerequisites: |
   - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
   - Basic knowledge of big data concepts, including ingestion, blob storage, processing, and visualization.

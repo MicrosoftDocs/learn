@@ -1,4 +1,4 @@
-Modern organizations are data-generating machines. Not only do they gather and produce massive amounts of information, but this data comes in diverse formats such as structured databases, documents, media files, server logs, JSON files, and raw device data. How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight, Azure Synapse Analytics, and Azure Databricks can work directly with Azure Data Lake Storage to process, analyze, and visualize that data.
+Modern organizations are data-generating machines. They gather and produce massive amounts of information in diverse formats such as structured databases, server logs, JSON files, and raw device data. How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight, Azure Synapse Analytics, and Azure Databricks can work directly with Azure Data Lake Storage to process, analyze, and visualize that data.
 
 ## Example scenario
 
@@ -8,24 +8,24 @@ Suppose you work for a national package delivery service. Your organization has 
 - Truck dash cams send continuous video feeds to monitor driver performance.
 - Your web services team operates dozens of web servers that each generate huge amounts of server log data.
 - Your business units create a constant stream of spreadsheets, presentations, PDF files, and other documents.
-- Your developers maintain a large number of HTML, CSS, JavaScript, JSON, and other programming files.
+- Your developers maintain several HTML, CSS, JavaScript, JSON, and other programming files.
 - Your marketing team creates many videos, images, and other media.
-- Your IT department stores a huge amount of structured business data in relational database systems such as Microsoft SQL Server.
+- Your IT department stores large amounts of structured business data in relational database systems such as Microsoft SQL Server.
 
-In the past, these business units would maintain separate stores of data, resulting in data *silos* that can't be used or analyzed together.
+In the past, these business units would maintain separate data stores, resulting in data *silos* that can't be used or analyzed together.
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="Diagram depicting a variety of data types being stored in separate locations, none of which can connect with the other, which creates data silos.":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="A variety of data types are stored in separate locations and can't connect with each other. This creates data silos.":::
 
-However, with Azure Data Lake Storage, you eliminate data silos by bringing these disparate data stores into a single location where they can be combined and analyzed.
+However, with Azure Data Lake Storage, you eliminate data silos by bringing these disparate data stores into a single location. From here, they can be combined and analyzed.
 
-:::image type="content" source="../media/1-introduction-after.png" alt-text="Diagram depicting a variety of data types being ingested into Azure Data Lake Storage, which then passes the data to several Azure analytics services.":::
+:::image type="content" source="../media/1-introduction-after.png" alt-text="Different data types are ingested into Azure Data Lake Storage. It then passes the data to several Azure analytics services.":::
 
 ## What will we be doing?
 
-In this module, you'll learn the fundamentals of Azure Data Lake Storage and be able to describe its main features. You’ll analyze the capabilities of Azure Data Lake Storage to help you decide when to use them:
+In this module, you'll learn the fundamentals of Azure Data Lake Storage and be able to describe its main features. You’ll analyze the follow Azure Data Lake Storage capabilities to help you decide when to use them:
 
 - **Ingest**: What methods can you use to bring data into Azure Data Lake Storage?
-- **Access**: How do you access stored data and control who can see the data?
+- **Access**: How do you access stored data and control who can view the data?
 - **Analyze**: How does Azure Data Lake Storage help you run analytics workloads on stored and real-time data?"
 
 ## What is the main goal?
