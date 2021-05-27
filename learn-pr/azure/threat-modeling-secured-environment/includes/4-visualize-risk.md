@@ -9,31 +9,31 @@ To build this diagram, we make the following assumptions:
 
 ## Elements
 
-[!INCLUDE [Process](../includes/4-visualize-risk-process.md)]
+[!INCLUDE [Process Element](../includes/4-visualize-risk-process.md)]
 
 </br>
 
 ---
 
-[!INCLUDE [Data store](../includes/4-visualize-risk-data-store.md)]
+[!INCLUDE [Data store Element](../includes/4-visualize-risk-data-store.md)]
 
 </br>
 
 ---
 
-[!INCLUDE [External entity](../includes/4-visualize-risk-external-entity.md)]
+[!INCLUDE [External entity Element](../includes/4-visualize-risk-external-entity.md)]
 
 </br>
 
 ---
 
-[!INCLUDE [Data-flow](../includes/4-visualize-risk-data-flow.md)]
+[!INCLUDE [Data-flow Element](../includes/4-visualize-risk-data-flow.md)]
 
 </br>
 
 ---
 
-[!INCLUDE [Trust boundary](../includes/4-visualize-risk-trust-boundary.md)]
+[!INCLUDE [Trust boundary Element](../includes/4-visualize-risk-trust-boundary.md)]
 
 
 > [!NOTE]
@@ -49,8 +49,8 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to PAW Process](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to AAD Process](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![AAD Process to User External Entity](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 
 ### AAD
 
@@ -58,8 +58,8 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Process](../media/elements/process-25.png)</br>AAD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![External Entity](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![Process](../media/elements/process-25.png)</br>AAD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
+|![AAD Process to User External Entity](../media/elements/process-25.png)</br>AAD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity to AAD Process](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![AAD Process to PAW Process](../media/elements/process-25.png)</br>AAD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to AAD Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
 
 ### PAW
 
@@ -67,9 +67,9 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **AAD** for details*|
-|![Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![External Interactor](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **User** for details*|
-|![Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>Fourth Coffee|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>Requests and responses</li></ul>|
+|![PAW Process to AAD Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![AAD Process](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **AAD** for details*|
+|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **User** for details*|
+|![PAW Process to Fourth Coffee Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Process](../media/elements/process-25.png)</br>Fourth Coffee|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>Requests and responses</li></ul>|
 
 ### Fourth Coffee
 
@@ -77,8 +77,8 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Process](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>PAW|![None](../media/supporting-icons/none-25.png)</br>No|*See **PAW** for details*|
-|![Process](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Data store](../media/elements/data-store-25.png)</br>Fourth Coffee store|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>User credentials</li><li>Requests and responses</li></ul>|
+|![Fourth Coffee Process to PAW Process](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Fourth Coffee Process](../media/elements/process-25.png)</br>PAW|![None](../media/supporting-icons/none-25.png)</br>No|*See **PAW** for details*|
+|![Fourth Coffee Process to Fourth Coffee Data Store](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Data store to Fourth Coffee Process](../media/elements/data-store-25.png)</br>Fourth Coffee store|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>User credentials</li><li>Requests and responses</li></ul>|
 
 ## Finished diagram
 

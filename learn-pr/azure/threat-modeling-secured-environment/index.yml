@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.threat-modeling-secured-environment
 metadata:
-  title: Add a client application to your Privileged Access Workstation (PAW) securely with threat modeling
+  title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
   description: Learn how to threat model a client application for security risks and find ways to reduce or eliminate them before installing it into a secured environment.
   ms.date: 05/27/2021
   author: rodrigosantos
