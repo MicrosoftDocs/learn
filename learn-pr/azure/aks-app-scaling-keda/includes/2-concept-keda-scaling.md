@@ -12,7 +12,7 @@ KEDA is a single-purpose and lightweight component that can be added into any Ku
 
 ### Key roles
 
-KEDA acts as an agent in Kubernetes.  It activates and deactivates `Deployments` and `StatefulSets` to scale to and from zero.
+KEDA acts as an agent in Kubernetes.  It activates and deactivates deployments and statefulsets to scale to and from zero.
 
 KEDA also performs as a Kubernetes metrics server. The metrics server exposes detailed event data from sources like messages in a Kafka topic, queue length of an AWS SQS Queue or number of events in an Azure Event Hub.
 
@@ -27,13 +27,13 @@ The diagram below shows how KEDA integrates with the Kubernetes HPA, external ev
 
 ### Event sources and scalers
 
-KEDA scalers can both detect if a `Deployment` should be activated or deactivated, and feed custom metrics for a specific event source.
+KEDA scalers can both detect if a deployment should be activated or deactivated, and feed custom metrics for a specific event source.
 
-Deployments and StatefulSets are the most common way to scale workloads with KEDA.  Scaling custom resources is also possible as long as the custom resource implements the `/scale` subresource.
+Deployments and statefulsets are the most common way to scale workloads with KEDA.  Scaling custom resources is also possible as long as the custom resource implements the `/scale` subresource.
 
-It allows you to define the Kubernetes Deployment or StatefulSet that you want KEDA to scale based on a scale trigger. KEDA will monitor that service and based on the events that occur it will automatically scale your resource out/in accordingly.
+It allows you to define the Kubernetes deployment or statefulset that you want KEDA to scale based on a scale trigger. KEDA will monitor that service and based on the events that occur it will automatically scale your resource out/in accordingly.
 
-Behind the scenes, KEDA acts to monitor the event source and feed that data to Kubernetes and the HPA (Horizontal Pod Autoscaler) to drive rapid scale of a resource. Each replica of a resource is actively pulling items from the event source. With KEDA and scaling Deployments/StatefulSets, you can scale based on events while also preserving rich connection and processing semantics with the event source (for example, in-order processing, retries, deadletter, checkpointing).
+Behind the scenes, KEDA acts to monitor the event source and feed that data to Kubernetes and the HPA (Horizontal Pod Autoscaler) to drive rapid scale of a resource. Each replica of a resource is actively pulling items from the event source. With KEDA and scaling `Deployments/StatefulSets`, you can scale based on events while also preserving rich connection and processing semantics with the event source (for example, in-order processing, retries, deadletter, checkpointing).
 
 #### Scaled object spec
 
@@ -68,7 +68,7 @@ spec:
 
 #### Scaling jobs
 
-As an alternate to scaling event-driven code as deployments you can also run and scale your code as Kubernetes Jobs. The primary reason to consider this option is to handle processing long running executions. Rather than processing multiple events within a deployment, for each detected event a single Kubernetes Job is scheduled. That job will initialize, pull a single event from the message source, and process to completion and terminate.
+As an alternate to scaling event-driven code as deployments you can also run and scale your code as Kubernetes Jobs. The primary reason to consider this option is to handle processing long running executions. Rather than processing multiple events within a deployment, for each detected event a single Kubernetes job is scheduled. That job will initialize, pull a single event from the message source, and process to completion and terminate.
 
 ```yaml
 apiVersion: keda.sh/v1alpha1

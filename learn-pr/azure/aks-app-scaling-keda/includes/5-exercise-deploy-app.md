@@ -7,7 +7,7 @@ In this exercise, you'll deploy your company's backend messaging service as a te
 
 We first need to create a list in Redis and populate it with some random elements.  What we are simulating here is a queue that is receiving data.  Each item in the queue represents something that our microservice will process.  For simplicity sake, we are adding a static number of items. As you will see later in the exercise, we scale the microservice to the number of items that are in the queue (Redis List).
 
-1. Create a Redis container locally to connect to the Azure Redis Cache Service we created earlier:
+1. Create a Redis container locally to connect to the Azure Cache for Redis we created earlier:
 
   ```bash
   docker run -it --rm redis redis-cli -h $REDIS_HOST -a $REDIS_KEY
