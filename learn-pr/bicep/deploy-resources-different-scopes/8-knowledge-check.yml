@@ -52,7 +52,6 @@ quiz:
     - content: A resource deployed to a management group's scope has a subscription ID in its resource ID.
       isCorrect: false
       explanation: |
-        Resources deployed at a management group's scope don't have a subscription ID in their resource instead.
         Management groups exist at a higher level of the Azure resource hierarchy than a subscription.
         The resource ID includes the management group's ID.
     - content: Management groups must be deployed to the `tenant` scope.

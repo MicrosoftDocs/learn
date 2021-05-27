@@ -12,7 +12,7 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as billing accounts, and contain resource groups and resources. Like management groups, subscriptions don't have a location and don't restrict where your resources are deployed.
 
-:::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources. Resource groups enable you to manage and control related resources as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group.
+:::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources. Resource groups enable you to manage and control related resources as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group. Resource groups are created in a location so Azure can track the metadata for the resources in the group, but resources inside the group can be deployed into other locations.
 
 The example illustrated above is a fairly basic scenario showing how management groups can be used. Your organization might also consider implementing a _landing zone_, which is a set of Azure resources and configuration you need to get started with a production Azure environment. The _enterprise-scale landing zone_ is a proven approach to use management groups and subscriptions to effectively manage your Azure resources:
 
