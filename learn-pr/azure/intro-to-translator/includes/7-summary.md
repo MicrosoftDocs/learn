@@ -11,5 +11,5 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Translator documentation](/azure/cognitive-services/translator/)
-* [Microsoft Learn - Analyze receipts with the Translator service](/learn/modules/analyze-receipts-translator/)
+* Microsoft Learn - Analyze receipts with the Translator service
 * [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
