@@ -17,9 +17,9 @@ summary: |
     and how to protect these values when you're working with secure information.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   After completing this module, you'll be able to: 
-    - Customize parameters and limit the values that can be used by each parameter.
-    - Understand the ways that parameters can be supplied to a Bicep template deployment.
-    - Work with secure parameters.
+    - Customize parameters and limit the values that can be used by each parameter
+    - Understand the ways that parameters can be supplied to a Bicep template deployment
+    - Work with secure parameters
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with the basic Bicep template structure and syntax.
   - Familiarity with Azure, including the Azure portal, subscriptions, and resource groups.
