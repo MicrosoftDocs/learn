@@ -2,7 +2,7 @@ Suppose you're a member of a car manufacturing R&D team that's tasked with desig
 
 In this module, you'll learn some key optimization principles that will help you ensure that your HPC application runs efficiently from both a virtual machine (VM) and HPC software perspective. The following video describes several HPC technologies, which will help you make an informed decision when considering how best to optimize your application.
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEUzW]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEUzW]
 
 [!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 
