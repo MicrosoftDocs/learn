@@ -1,4 +1,4 @@
-Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
+jImagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
 
 ![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/5-find-bookmark-flow-small.png)
 
@@ -19,9 +19,15 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Create Azure Cosmos DB Account** pane appears.
+1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Select API option** pane appears.
+
+1. Select **Create** in the **Core (SQL) - Recommended** box option.
+
+    Azure Cosmos DB provides five APIs to suit the needs of your application: Core SQL (document database), MongoDB (document database), Cassandra, Azure Table, and Gremlin (graph database), each of which currently require a separate account. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with Core SQL API and Graph API accounts.
+
+    The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -32,7 +38,6 @@ A database account is a container for managing one or more databases. Before we 
     | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
     | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | API | Core (SQL) | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
     | Location | Central US | Select the region nearest you. |
 
     Leave the default values for all of the other settings in this new account pane.
@@ -64,7 +69,7 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
     > - Container id = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+    > - Partition key = /id (slash id); NOT curly brackets (braces) or any combination of curly brackets and slashes
 
     | Setting | Value | Description |
     |---|---|---|
