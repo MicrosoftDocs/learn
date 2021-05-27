@@ -9,7 +9,7 @@ It's important to understand what utterances, intents, and entities are and how 
 
 Utterances refer to the input from the user that your app needs to interpret. Utterances are used to train LUIS to extract intents and entities from them. It's important to capture different example utterances. Use utterances that you think users will enter. We include utterances that means the same thing but are constructed with different utterance lengths, word placements, and grammar.
 
-Some example utterances that could go into your health bot would be:
+Some example utterances for your Azure Health Bot instance might be:
 
 - Which is the closest place to get a Paracetamol?
 - Where do I get a Paracetamol?

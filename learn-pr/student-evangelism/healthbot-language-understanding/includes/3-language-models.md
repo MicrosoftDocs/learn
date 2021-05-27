@@ -16,7 +16,7 @@ There are different types of language models. Some language models are built in 
 
 Regular Expression (RegEx) models are great for optimizing performance when you need to understand simple and predictable commands from users. They extract a single intent from an utterance by matching the utterance to a RegEx pattern. An example is the RegEx pattern /.*help*./I would match the utterance "I need help".
 
-Learn more about [Regular Expressions](/azure/cognitive-services/luis/reference-entity-regular-expression).
+For more information, see [Regular Expressions](/azure/cognitive-services/luis/reference-entity-regular-expression).
 
 The confidence score is calculated based on the number of characters in the matched part and the full length of the utterance. The longer the match, the higher the confidence score from the RegEx model.
 
@@ -27,9 +27,9 @@ LUIS models are great for natural language understanding. They understand broade
 LUIS is deeply integrated into Health Bot and supports multiple LUIS features, such as:
 
 - **Bing speller**: Provide your Bing speller subscription key in the endpoint URL to pass all utterances through a spell check before undergoing processing by the LUIS application.
-[Learn more about the Bing Speller.](/azure/cognitive-services/bing-spell-check/overview)
+For more information, see [Bing speller](/azure/cognitive-services/bing-spell-check/overview)
 - **Staging**: Use the staging version of your LUIS application if you want to prevent testing from affecting the learning of your production LUIS application.
-Learn more about the [Production and Staging slots](/azure/cognitive-services/luis/luis-concept-app-iteration#publishing-slots) for publishing your LUIS application.
+For more information on publishing your LUIS application, see [Production and Staging slots](/azure/cognitive-services/luis/luis-concept-app-iteration#publishing-slots).
 - **Verbose responses**: Typically, the response from your LUIS application includes only the highest scoring intent for the model. To include all intents and their respective scores in the response, use the verbose setting.
 
 When you create a LUIS model, you'll need an account with the [LUIS.ai service](https://www.luis.ai/home).
@@ -41,14 +41,14 @@ System models use proprietary recognition methods. They're not open for editing,
 The built-in medical models provide language understanding that's tuned for medical concepts and clinical terminology. All medical language models use system recognition methods. Some of them include:
 
 - **Medical complaints**: This model understands when a user is making a medical complaint. It extracts key information, such as the medical concept, age, gender, and other information that's required to diagnose a complaint, and triggers the built-in triage protocols.
-- **Medical information**: This model understands when a patient is asking for information about a medical concept. For example, the user can ask about symptoms or complications of a given condition. It then triggers a scenario that displays relevant information from our medical database.
+- **Medical information**: This model understands when a patient is asking for information about a medical concept. For example, the user can ask about symptoms or complications of a given condition. It then triggers a scenario that displays relevant information from a medical database.
 - **Drugs and medication**: This model understands when a user is asking for information about the type or brand of a drug. It invokes a scenario that presents information about the drug in question.
 
 ### Which models should you use?
 
 Different models use different language recognition methods. Each method has its own advantages and disadvantages. When you plan your implementation, use a combination of recognition types best suited to the type of scenarios and capabilities you need.
 
-## Add a RegEx model to the health bot
+## Add a RegEx model to your health bot
 
 1. Go to the home page of your health bot. In the left pane, select **Models** under **Language**. Select the **+New** option near the top of the page.
 
@@ -66,7 +66,7 @@ Different models use different language recognition methods. Each method has its
 
    :::image type="content" source="../media/3-test-model.png" alt-text="Screenshot that shows testing your model on the web chat." lightbox="../media/3-test-model.png":::
 
-1. After you're finished, exit the web chat. Scroll through the various language models and find the **Greeting** language model. On the far right, you'll see an **Edit** option. Select it.
+1. After you're finished, exit the web chat. Scroll through the various language models and find the **Greeting** language model. On the far right, select the **Edit** option.
 
    :::image type="content" source="../media/3-greeting-model.png" alt-text="Screenshot that shows viewing the Greeting language model.":::
 
