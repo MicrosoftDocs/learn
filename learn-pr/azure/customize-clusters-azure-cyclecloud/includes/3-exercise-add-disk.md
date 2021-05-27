@@ -1,4 +1,4 @@
-Azure CycleCloud relies on templates to define cluster configurations. Its default implementation includes built-in templates for the most common schedulers, but you can find a number of others in the Azure CycleCloud GitHub repository.
+Azure CycleCloud relies on templates to define cluster configurations. Its default implementation includes built-in templates for the most common schedulers, but you can find several others in the Azure CycleCloud GitHub repository.
 
 Recall that you wanted to test the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you'll leverage the Azure CycleCloud GitHub repository hosting [the Microsoft curated Slurm project](https://github.com/Azure/cyclecloud-slurm). You'll modify an existing cluster template from this repository by changing the storage configuration of the scheduler node, import the newly modified template into your Azure CycleCloud application, use the application's graphical interface to create a cluster, and finally validate the storage configuration change.
 
@@ -9,42 +9,42 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 >    - at least 400 vCPU cores of the FSv2 series
 >    - at least 60 vCPU cores of the NC series
 > - Have a Microsoft account or an Azure AD account with the Owner or Contributor role in the Azure subscription.
-> - Deploy an Azure CycleCloud application to an Azure VM accessible via a public IP address associated with its network interface.
+> - Deploy an Azure CycleCloud application to an Azure VM accessible with a public IP address associated with its network interface.
 > - Configure the Azure CycleCloud application with the Owner or Contributor role-level access to the Azure subscription.
 > - Have an Azure CycleCloud application user account with the Administrator role.
 > - Create an Azure virtual network subnet into which you can deploy cluster nodes.
-> - Have the private key of the SSH key pair used to configure the Azure CycleCloud application. 
+> - Have the private key of the SSH key pair used to configure the Azure CycleCloud application.
 
 > [!NOTE]
-> For information regarding identifying and increasing the vCPU quotas in an Azure subscription, refer to the following documentation:
+> For information about identifying and increasing the vCPU quotas in an Azure subscription, refer to the following documentation:
 > - [Check vCPU quotas using the Azure CLI](https://docs.microsoft.com/azure/virtual-machines/linux/quotas)
 > - [Standard quota: Increase limits by VM series](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests)
 
 > [!NOTE]
-> You'll need the private key in order to connect directly to the cluster nodes in the last exercise of this module.
+> You'll need the private key to connect directly to the cluster nodes in the last exercise of this module.
 
 ## Install and configure Azure CycleCloud CLI
 
-The majority of management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell. 
+Most management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell.
 
-1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com) and, when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
-
-    > [!NOTE]
-    > The Azure portal supports the most common modern web browsers, including the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. 
-
-1. From the Azure portal, open the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
-1. If prompted to select either **Bash** or **PowerShell**, select **Bash**. 
+1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
 
     > [!NOTE]
-    > If this is the first time you are starting Azure Cloud Shell and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and then select **Create storage**. 
+    > The Azure portal supports the most common modern web browsers, including the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari.
 
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to set the value of a variable to the public IP address of the Azure CycleCloud application server (replace the placeholder `<public_ip_address>` with the actual public IP address): 
+1. From the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
+1. If you're prompted to select either **Bash** or **PowerShell**, select **Bash**.
+
+    > [!NOTE]
+    > If this is the first time you're starting Azure Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
+
+1. Within the Bash session in the **Azure Cloud Shell** pane, run the following command to set the value of a variable to the public IP address of the Azure CycleCloud application server (replace the placeholder `<public_ip_address>` with the actual public IP address):
 
     ```azurecli-interactive
     PIP=<public_ip_address>
     ```
 
-1. Run the following command to download the ZIP file containing the Azure CycleCloud instance-specific CLI installer:
+1. Run the following command to download the .zip file containing the Azure CycleCloud instance-specific CLI installer:
 
     ```azurecli-interactive
     curl -O --insecure https://$PIP/static/tools/cyclecloud-cli.zip
@@ -74,18 +74,18 @@ The majority of management tasks in this and subsequent exercises require the us
     ```
 
     > [!NOTE]
-    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names since you'll need one of them later in this exercise.
+    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names because you'll need one of them later in this exercise.
     > 
     > ```
     > default-locker (az://cyclecloud050921/cyclecloud)
     > ```
 
 
-## Configure an Azure CycleCloud Slurm project 
+## Configure an Azure CycleCloud Slurm project
 
 Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage an existing Slurm project from the Azure CycleCloud GitHub repository. You'll fetch it into your home directory in Azure Cloud Shell and then upload it to the Azure CycleCloud locker.
 
-1. On your computer, within the web browser window displaying the Azure portal, within the Bash session in the Azure Cloud Shell pane, run the following commands to create a project directory and fetch a Slurm project from the corresponding GitHub repository into it.
+1. On your computer, within the web browser window displaying the Azure portal, within the Bash session in the **Azure Cloud Shell** pane, run the following commands to create a project directory and fetch a Slurm project from the corresponding GitHub repository into it.
 
     ```azurecli-interactive
     mkdir ~/cyclecloud-slurm && cd ~/cyclecloud-slurm
@@ -100,23 +100,22 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
     ```
 
     > [!NOTE]
-    > Alternatively, you could simply run `cyclecloud project upload <locker_name>`, where the placeholder `<locker_name>` designates the locker name.
-
+    > Alternatively, you could run `cyclecloud project upload <locker_name>`, where the placeholder `<locker_name>` designates the locker name.
+<!--ID/SME: Please verify that the following note reads correctly.-->
     > [!NOTE]
     > Ignore the azcopy related error message stating `Cannot perform sync due to error: sync must happen between source and destination of the same type, e.g., either file <-> file, or directory/container <-> directory/container` followed by `Upload failed!` as long as the individual copies of project files succeed.
 
     > [!NOTE]
-    > Wait for the upload to complete. This might take about 5 minutes.
-
+    > Wait for the upload to complete. This might take about five minutes.
 
 ## Implement a custom Azure CycleCloud template
 
-Now, you'll download and modify the sample Azure CycleCloud template compatible with the fetched GitHub-based project. You'll use it to define a custom storage configuration that includes an extra disk attached to the scheduler node and exported via network file system (NFS). Following this modification, you'll import it into your Azure CycleCloud application.
+Now, you'll download and modify the sample Azure CycleCloud template that's compatible with the fetched GitHub-based project. You'll use it to define a custom storage configuration that includes an extra disk attached to the scheduler node and exported through network file system (NFS). Following this modification, you'll import it into your Azure CycleCloud application.
 
 > [!NOTE]
-> You can examine the content of the template via a web browser by navigating to [the Azure/cyclecloud-slurm repository](https://github.com/Azure/cyclecloud-slurm/blob/2.4.1/templates/slurm.txt)
+> You can examine the content of the template with a web browser by navigating to [the Azure/cyclecloud-slurm repository](https://github.com/Azure/cyclecloud-slurm/blob/2.4.1/templates/slurm.txt).
 
-1. On your computer, within the web browser window displaying the Bash session in the Azure Cloud Shell pane, run the following command to change the working directory to the newly fetched repository:
+1. On your computer, within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to change the working directory to the newly fetched repository:
 
     ```azurecli-interactive
     cd ~/cyclecloud-slurm/templates
@@ -134,8 +133,8 @@ Now, you'll download and modify the sample Azure CycleCloud template compatible 
     ```azurecli-interactive
     nano slurm.txt
     ```
-
-1. Within the nano editor interface, scroll-down to the `[[node scheduler]]` section, within that section, locate the `[[[volume shared]]]` subsection, scroll to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
+<!--ID/SME: Global comment. Consider using "move" instead of "scroll" per MS style guide for sensory language.-->
+1. Within the nano editor interface, scroll to the `[[node scheduler]]` section. Within that section, locate the `[[[volume shared]]]` subsection, scroll to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
 
     ```azurecli-interactive
 
@@ -160,18 +159,18 @@ Now, you'll download and modify the sample Azure CycleCloud template compatible 
     ```
 
     > [!NOTE]
-    > If you're using a Windows computer, you can paste the content of Clipboard by using the **Shift+Insert** key combination.
+    > If you're using a Windows computer, you can paste the content of the Clipboard by using the **Shift+Insert** key combination.
 
     > [!NOTE]
-    > Your changes define two 128 GB Premium storage disks in a stripe-based volume that will be automatically mounted onto the head node during its provisioning. The volume will use the /mnt/exports/ mountpoint and will be automatically formatted as the ext4 filesystem. The `Persistent = true` setting indicates that the disks will persist when you terminate the cluster, although they will be automatically deleted if you delete the cluster.
+    > Your changes define two 128 GB Premium storage disks in a stripe-based volume that will be automatically mounted onto the head node during its provisioning. The volume will use the /mnt/exports/ mountpoint and will be automatically formatted as the ext4 filesystem. The `Persistent = true` setting indicates that the disks will persist when you terminate the cluster, but they'll be automatically deleted if you delete the cluster.
 
     > [!NOTE]
     > Azure CycleCloud implements the volumes as Azure managed disks.
 
-1. Within the Nano editor interface, press **ctrl + o** key combination, press the **Enter** key, and then press **ctrl + x** key combination to save the changes you made and close the file.
+1. Within the Nano editor interface, select the **Ctrl + o** key combination, select the **Enter** key, and then select the **Ctrl + x** key combination to save the changes you made and close the file.
 
     > [!NOTE]
-    > At this point, you can leverage your connection to the Azure CycleCloud application via CLI to import the template. 
+    > At this point, you can use your connection to the Azure CycleCloud application through CLI to import the template.
 
 1. Run the following command to import the template you modified in the previous task into the Azure CycleCloud application:
 
@@ -181,16 +180,16 @@ Now, you'll download and modify the sample Azure CycleCloud template compatible 
 
 ## Start a new cluster and examine its storage configuration
 
-To conclude this exercise, you'll verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To accomplish this, you'll create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks. 
+To conclude this exercise, you'll verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To do this, you'll create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks.
 
 1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server). If prompted, confirm that you want to proceed.
-1. If prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
-1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page and select **+**. 
+1. If you're prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
+1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page and select **+**.
 1. On the **Create a New Cluster** page, select the icon labeled **Slurm** in the form of an isosceles triangle with small circles at each of its vertices.
 
     :::image type="content" source="../media/u3-cyclecloud-new-cluster-slurm.png" alt-text="The screenshot depicts the Create a New Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **About** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, type **contoso-custom-slurm-lab-cluster**.
+1. On the **About** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, enter **contoso-custom-slurm-lab-cluster**.
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
@@ -198,8 +197,8 @@ To conclude this exercise, you'll verify that the template you imported into Azu
 
     | Setting | Value |
     | --- | --- |
-    | Region | select the name of the Azure region  where you intend to deploy the cluster in this exercise |
-    | Scheduler VM Type | select **Choose**, in the **Select a machine type** pop-up window, in the **SKU Search** text box, type **D4s_v3**, in the list of results, select the checkbox next to the **D4s_v3** entry, and select **Apply** |
+    | Region | Select the name of the Azure region where you intend to deploy the cluster in this exercise. |
+    | Scheduler VM Type | Select **Choose**, in the **Select a machine type** pop-up window. In the **SKU Search** text box, enter **D4s_v3**. In the list of results, select the check box next to the **D4s_v3** entry, and then select **Apply**. |
 
     > [!NOTE]
     > Ensure that you select the VM size that supports the Premium tier of Azure Storage, which is required to provision disks of the head node according to your custom configuration.
@@ -208,37 +207,37 @@ To conclude this exercise, you'll verify that the template you imported into Azu
 
     | Setting | Value |
     | --- | --- |
-    | Max HPC Cores | type **100** |
-    | Max HTC Cores | type **100** |
-    | Max VMs per Scaleset | type **40** |
-    | Subnet ID | select **cyclecloud-rg: cyclecloud-rg-vnet-contoso-slurm-lab-cluster-subnet** |
+    | Max HPC Cores | Enter **100**. |
+    | Max HTC Cores | Enter **100**. |
+    | Max VMs per Scaleset | Enter **40**. |
+    | Subnet ID | Select **cyclecloud-rg: cyclecloud-rg-vnet-contoso-slurm-lab-cluster-subnet**. |
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-required-settings.png" alt-text="The screenshot depicts the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**, accept the default value of **Size (GB)** set to **100**, and select **Next**.
+1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**, accept the default value of **Size (GB)** is set to **100**, and select **Next**.
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-network-attached-storage.png" alt-text="The screenshot depicts the Network Attached Storage tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Advanced Settings** tab of the **New Slurm Cluster** page, review the available options without making any changes and select **Next**.
+1. On the **Advanced Settings** tab of the **New Slurm Cluster** page, review the available options without making any changes, and select **Next**.
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes and select **Save**.
+1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes, and select **Save**.
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **contoso-custom-slurm-lab-cluster** page, select the **Start** link and, when prompted to confirm, select **OK**
+1. On the **contoso-custom-slurm-lab-cluster** page, select the **Start** link. When prompted to confirm, select **OK**.
 
     :::image type="content" source="../media/u3-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the Nodes tab page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false":::
 
 1. Monitor the startup process.
 
     > [!NOTE]
-    > The process involves provisioning of the Azure VM serving the role of the cluster's master node, installation and configuration of the Swarm scheduler, as well as creating and mounting disk volumes. This might take about 5 minutes.
+    > The process involves provisioning of the Azure VM serving the role of the cluster's master node, installation, and configuration of the Swarm scheduler, and creating and mounting disk volumes. This might take about five minutes.
 
-1. Once the status of the scheduler node changes to **Ready**, select its entry on the **Nodes** tab and then select **Show Detail** to display its detailed view. 
-1. In the **Showing scheduler in contoso-custom-slurm-lab-cluster cluster** pop-up window, switch to the **Node** tab, scroll down to **Volumes** section, and verify that the entries **nfs-1** and **nfs-2** appear on the list of volumes.
+1. After the status of the scheduler node changes to **Ready**, select its entry on the **Nodes**, tab and then select **Show Detail** to display its detailed view.
+1. In the **Showing scheduler in contoso-custom-slurm-lab-cluster cluster** pop-up window, switch to the **Node** tab, scroll to the **Volumes** section, and verify that the entries **nfs-1** and **nfs-2** display on the list of volumes.
  
     :::image type="content" source="../media/u3-cyclecloud-start-cluster-volumes.png" alt-text="The screenshot depicts the Node tab page of the detailed view of a cluster configured with two additional NFS volumes." border="false":::
 
-Congratulations! You successfully completed the first exercise of this module. In this exercise, you implemented a cluster based on a customized Azure CycleCloud template. You used Azure CycleCloud CLI to import a sample project hosted in the Azure CycleCloud GitHub repository, including a customized copy of one of its templates. Next, you created a cluster based on the imported template via the Azure CycleCloud graphical interface, started it, and verified that the custom change took effect.
+Congratulations! You successfully completed the first exercise of this module. In this exercise, you implemented a cluster based on a customized Azure CycleCloud template. You used Azure CycleCloud CLI to import a sample project hosted in the Azure CycleCloud GitHub repository, including a customized copy of one of its templates. Next, you created a cluster based on the imported template with the Azure CycleCloud graphical interface, started it, and verified that the custom change took effect.
