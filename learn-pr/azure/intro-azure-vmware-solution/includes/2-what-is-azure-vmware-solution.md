@@ -1,40 +1,57 @@
 
-The Azure VMware Solution (AVS) is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. Microsoft provides the management systems, networking services, operating platform and backend infrastructure operations that are required to run native VMware environments at scale in Azure.  AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
+The Azure VMware Solution (AVS) is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
 
-Microsoft manages and maintains the infrastructure and software. Allowing you to focus on developing and running workloads that are critical to your business.
+Microsoft provides the following services to run AVS at scale in Azure:
+- management systems
+- networking services 
+- operating platform 
+- backend infrastructure operations 
 
-AVS is a platform by which VMware workloads can easily be modernized through integration with Azure services such as Azure Active Directory, Azure AI, Azure Monitor, and Analytics enabling new, intelligent experiences. 
+## Accelerate migration and modernize at your pace
 
+Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with Microsoft's Azure global cloud service. Gain continuity, scale, and fast provisioning for your VMware workloads on the global Azure infrastructure.
 
-## Move existing VMware workloads to Azure VMware Solution
+Azure VMware Solution is managed by Microsoft to meet performance, availability, security, and compliance requirements. Allowing you to focus on developing and running workloads that are critical to your business.
 
-Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with Microsoft's Azure global cloud service. Azure VMware Solution is managed to meet performance, availability, security, and compliance requirements. AVS enables organizations to efficiently move existing VMware workloads to Azure.
+AVS enables organizations to efficiently move existing VMware workloads to Azure. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services. 
 
-The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services.
+The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. Gain elasticity with the ability to seamlessly add and remove capacity (compute and storage resources) on demand.
 
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
+### Use existing investments
+Use your existing VMware investments, skills, and tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
-## Azure VMware Solution features
-Azure VMware Solution gives customers options when migrating to Azure. “Lifting and shifting” the VMware stack to a private cloud on Azure can reduce complexity, impacts to business continuity, and the time required for migration. 
+Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager.
 
-AVS allows the business to move to the cloud at the pace they're comfortable with. The key features of AVS are listed below.
+Admins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
 
-**Unified Azure experience :**  Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements over time. 
-
-**Use Existing VMware Investments :** Because the underlying product is the standard VMware vSphere and vCenter products. Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager. The Azure portal is used for deployment and management operations. You can use all of your existing investments:
+Reduce change management and maintain operational consistency for the business. You can use all of your existing investments:
 - Training
 - Process management
 - Change management
 - Tooling
 
+Accelerate migration and minimize downtime using the latest HCX Enterprise functionality for large scale, live migration from on-premises to Azure.
+
+### Run Best on Azure
+
+Take advantage of Azure as the best cloud for your Microsoft workloads. Built with VMware, delivered by Microsoft, you get centralized billing and support for simplicity.
+
 **Single Point of Support :** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 
 **Unified Licensing and Consumption :** Avoid licensing complexity by working with a single vendor for licensing and resource consumption. Track your VMware licensing directly with resource nodes as they are deployed and decommissioned.
 
-**Azure Hybrid Use Benefits :** Maximize the value of existing Windows Server and SQL Server licenses. Save up to 80% with AHUB and Azure Reserved Instances.
+**Azure Hybrid Use Benefits :** Maximize the value of existing Windows Server and SQL Server licenses. Use Azure Hybrid Benefit (AHUB) for both Windows Server and SQL Server. AHUB allows you to bring your existing licenses to Azure and greatly reduce costs. Save up to 80% with AHUB and Azure Reserved Instances.
 
 **Free Extended Security Updates**: Get Extended Security Updates at no extra charge for three years on all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions. 
+
+
+### Modernize Seamlessly
+
+Azure VMware Solution gives customers options when migrating to the cloud. Modernize applications running on VMware overtime through integration to Azure native management, security, and services. Admins develop cloud skills overtime as they become familiar with Azure.
+
+AVS allows the business to move to the cloud at the pace they're comfortable with. Admins get a seamless Azure experience with a single Azure portal interface with no connection to any third-party services.
 
 
 ### Integration with Azure services
@@ -62,13 +79,13 @@ Azure VMware Solution provides application high availability and modernization w
 With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
 
 ### Azure VMware Solutions Consumption Models
-There are three consumption models for the Azure VMware Solution (AVS) to address your business needs. Customers have the flexibity to move between the models.
+There are three consumption models for the Azure VMware Solution to address your business needs. Customers have the flexibility to move between the models. Reserved instances give a significant discount to the monthly rate.
 
 |Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
 |---------|---------|---------|
 |On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
-|     |         |         |
-
+| Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
+|    |         |         |
 
 
 
