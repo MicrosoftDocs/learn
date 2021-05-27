@@ -1,30 +1,26 @@
-Let's see how we can use `setTimer` with an anonymous function to display a message on a browser page. You will create the code to display a message after a two-second delay.
+In this exercise, you'll use `setTimer` with an anonymous function to display a message on a webpage. You'll create code that displays the message after a 2-second delay.
+
+You'll use the same file that you used in the earlier exercise to complete this one.
 
 > [!NOTE]
-> You can find the full code at the bottom of this exercise.
-
-## Return to Visual Studio
-
-You will use the same file you used in the prior exercise to complete this one.
-
-1. Return to Visual Studio Code.
-1. Ensure *index.html* is open in Visual Studio Code.
+> You can find the full code for this exercise at the bottom of the page.
 
 ## Add the code to display the message
 
-You will now add the code to display the message, which will have a two-second delay.
+You'll now add the code to display the message, which will have a 2-second delay.
 
-1. Below the line, which reads `// TODO: Add setTimeout code` add the following code:
+1. In Visual Studio Code, open the *index.html* file.
+
+1. Below the commented line that reads `// TODO: Add setTimeout code`, add the following code:
 
     ```javascript
-    // TODO: Add setTimeout code
     setTimeout(
         () => { document.write('...Hello again!')},
         2000
     );
     ```
 
-1. Save the file by selecting *File* > *Save*. Live Server will automatically refresh the page for you when you save the file.
+1. Save the file by selecting **File** > **Save**. Live Server  automatically refreshes the page for you when you save the file.
 
 ## View the page
 
@@ -32,14 +28,13 @@ Let's see the results!
 
 1. Return to your browser window.
 
-    > [!NOTE]
-    > You may already see the message displayed "...Hello again!" because Live Server will have already refreshed the window.
+    You might see the "...Hello again!" message already displayed, because Live Server will have already refreshed the window.
 
-1. Refresh the browser window. Notice the original message displays, and is replaced after two seconds by '...Hello again!'
+1. Refresh the browser window. Notice that the original message is displayed and then, after 2 seconds, is replaced by "...Hello again!"
 
-   :::image type="content" source="../media/hello-again.png" alt-text="Screenshot of the browser showing ...Hello again!":::
+   :::image type="content" source="../media/hello-again.png" alt-text="Screenshot of the browser, displaying the '...Hello again!' message.":::
 
-You have now used an anonymous function to have a message appear on a delay.
+You have now used an anonymous function to have a message appear after a delay.
 
 ## Full code
 
