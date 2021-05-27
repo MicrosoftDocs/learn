@@ -27,6 +27,7 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-sentinel
 units:
 - learn.azure.threat-response-sentinel-playbooks.1-introduction
 - learn.azure.threat-response-sentinel-playbooks.2-exercise-setup

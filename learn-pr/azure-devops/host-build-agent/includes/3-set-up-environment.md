@@ -18,7 +18,7 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=host-build-agent&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=host-build-agent&azure-portal=true)
 
 To run the template, on the Azure DevOps Demo Generator site, do the following:
 

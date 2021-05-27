@@ -14,10 +14,10 @@ The journey isn't over yet. Consider following up on these industry-based use ca
 
 - Learn more about [HoloLens](https://www.microsoft.com/hololens).
 - Learn more about [Windows Mixed Reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
-- Explore the [mixed-reality developer documentation](https://docs.microsoft.com/windows/mixed-reality/?utm_source=developermscom).
-- Get started on your mixed-reality [design journey](https://docs.microsoft.com/windows/mixed-reality/design/design).
-- Get started on your mixed-reality [development journey](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
+- Explore the [mixed-reality developer documentation](/windows/mixed-reality/?utm_source=developermscom).
+- Get started on your mixed-reality [design journey](/windows/mixed-reality/design/design).
+- Get started on your mixed-reality [development journey](/windows/mixed-reality/develop/development?tabs=unity).
 - Learn about the Mixed Reality Toolkit SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal).
-- Explore [Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services).
-- Get started with [Dynamics 365 features](https://docs.microsoft.com/dynamics365/mixed-reality).
+- Explore [Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services).
+- Get started with [Dynamics 365 features](/dynamics365/mixed-reality).
 - Read [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321).
