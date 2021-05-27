@@ -72,4 +72,4 @@ While the main bot is being run, this scenario is triggered when the user enters
 
 :::image type="content" source="../media/3-resume-topic.png" alt-text="Interrupting scenario returning to parent scenario":::
 
-After the patient provides the bot with all the information asked, the __intermediate bot 1__ returns to the __basic bot__ to continue with the appointment process, with a returning message.
+After the patient provides the bot with all the information asked, the **intermediate bot 1** returns to the **basic bot** to continue with the appointment process, with a returning message.
