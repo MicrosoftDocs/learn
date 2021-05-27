@@ -6,11 +6,11 @@ In this unit, you'll create a simple project structure that includes three files
 
 1. Open Visual Studio Code.
 
-   When you open Visual Studio Code, the **Welcome** page opens. (If you don't see the **Welcome** page, go to **File > New Window**.) Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
+   When you open Visual Studio Code, the **Welcome** page opens. Notice you can create a new file or open a folder in the **Start** section.
 
    :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window":::
 
-   If not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. Alternatively, select **View > Command Palette** or the keyboard shortcut <kbd>Shift+Command+P</kbd>. In the search field, enter **>Help: Welcome**.
+   If it's not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. (Alternatively, select **View > Command Palette** or the keyboard shortcut <kbd>Shift+Command+P</kbd>, and enter **>Help: Welcome** in the search field.)
 
 1. Select **Open folder** in the Start section of the Welcome page, or go to **File > Open Folder**.
 
