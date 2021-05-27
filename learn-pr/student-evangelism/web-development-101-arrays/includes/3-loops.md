@@ -39,7 +39,8 @@ for (let i = 0; i < 10; i++ ) {
 }
 ```
 
-[!TIP] Run this code in a browser console. What happens when you make small changes to the counter, condition, or iteration expression? Can you make it run backwards, creating a countdown?
+> [!TIP] 
+> Run this code in a browser console. What happens when you make small changes to the counter, condition, or iteration expression? Can you make it run backwards, creating a countdown?
 
 ### While loop
 
