@@ -13,7 +13,7 @@ Now you must customize your deployment to optimize it for the new project. You h
 ## What will we be doing?
 
 You'll start this module by testing the process of implementing a cluster by using a customized Azure CycleCloud template. For this purpose, you'll download an existing template from the Azure CycleCloud template GitHub repository, change the definition of the storage configuration in the template, import the newly modified template, and use Azure CycleCloud graphical interface to create a cluster.
-<!--ID/SME: Is "nodearray" supposed to be one or two words? It's flagged in acrolinx, but spelled as one word throughout the module. Please resolve this globally or leave if it's correct. ID to AU/SME: I've assumed it's correct but I'll ask Masood. -->
+
 Next you'll use the same template to add an extra nodearray and partition in the cluster definition, ensure that the corresponding cluster resources are configurable through the Azure CycleCloud web interface, export the properties of the newly deployed cluster, update it with the newly configured settings, and import the modified template to apply its configuration to the existing cluster.
 
 Finally, you'll implement a cloud-init script for use with Azure CycleCloud. You'll first add the script to both the scheduler and compute nodes, and then start the cluster to verify that the cloud-init changes took place.
