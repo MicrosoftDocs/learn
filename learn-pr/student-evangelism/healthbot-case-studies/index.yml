@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.healthbot-case-studies
 metadata:
-  title: Case Studies for Azure Health Bot
-  description: In this module we will discuss a few case studies for Microsoft's Health Bot Service. 
+  title: Case studies for Azure Health Bot
+  description: In this module, we'll discuss a few case studies for the Azure Health Bot service. 
   ms.date: 05/25/2021
   author: rodanthi-alexiou
   ms.author: chnoring
@@ -11,13 +11,13 @@ metadata:
 title: Azure Health Bot case studies
 summary: |
 
-   The Health Bot Service is a cloud platform that empowers developers in Healthcare organizations to build and deploy their compliant, AI-powered virtual health assistants and health bots, that help them improve processes and reduce costs.
+   The Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.
    
 abstract: |
    In this module, you will:
 
-   - Learn about the real-life use of Health Bot through case studies in the USA, Europe and Middle East
-   - Understand its benefits for customers
+   - Learn about the real-life use of Health Bot through case studies in the United States, the Middle East, and Europe.
+   - Understand the service's benefits to customers.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
