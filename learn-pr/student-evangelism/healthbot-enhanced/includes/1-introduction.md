@@ -20,6 +20,6 @@ In this module, you will:
 - Language Understanding in the Azure Health Bot
 - Introduction to built-in scenarios
 - Introduction to Health Bot scenario templates
-- Basic Javascript
+- Basic JavaScript
 
 **Produced in partnership with Meghana Chikkam and Shreyan J D Fernandes Microsoft Learn Student Ambassadors and Microsoft HealthBot Product Group**
