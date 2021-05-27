@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manipulating arrays
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/2-manipulating-arrays.md)]
 quiz:

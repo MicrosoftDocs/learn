@@ -1,4 +1,6 @@
-As a business owner of an ice cream shop, you've picked up some programming skills and decide that you want to build some software for your business, maybe one day you will turn it all into a franchise. You want to first encode all you know about your shop like flavors and prices. Then you want to simulate some customer interactions and lastly calculate your profits and gain some other useful insights. 
+As a business owner of an ice cream shop, you've picked up some programming skills and decide that you want to build some software for your business, maybe one day you will turn it all into a franchise. 
+
+You want to first encode all you know about your shop like flavors and prices. Then you want to simulate some customer interactions and lastly calculate your profits and gain some other useful insights. 
 
 ## Build your business
 
@@ -72,6 +74,6 @@ When you run a business, it's not only about profits, but also about what you se
    }, {}) // { Chocolate: 1, Vanilla: 3, Mint: 1, Raspberry: 1, StrawBerry: 1 }
    ```
 
-   The above code, goes through all the transactions. For each transaction, it checks through the scoops and updates a dictionary with how often a scoop has been purchased. If these sales was a real sales situation, you would probably need to stock up on more vanilla :)
+   The above code, goes through all the transactions. For each transaction, it checks through the scoops and updates a dictionary with how often a scoop has been purchased. If these sales were a real sales situation, you would probably need to stock up on more vanilla :)
 
-Congratulations, you've started an Ice Cream franchise, you know how to encode flavors as well as transactions using arrays and objects. You've also learned to summarize your earnings as well as understanding how much you've sold of each flavor.
+Congratulations, you've started an Ice Cream franchise, you know how to encode flavors and transactions using arrays and objects. You've also learned to summarize your earnings and understanding how much you've sold of each flavor.

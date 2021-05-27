@@ -50,7 +50,6 @@ Because the "Pistachio" contains nuts `some()` return with true. At this point, 
 iceCreamFlavors.filter(flavor => flavor.type !== "Nuts") // returns everything except for Pistachio.
 ```
 
-
 ## Projections map
 
 A projection is you trying to change your array in some way. Imagine, for example,  that you take your original `iceCreamFlavor` array and want to add a `price` property to each flavor. This situation is good case for a projection method called `map()`. Imagine it's a sunny day and you've decided that each ice cream should cost 1$ per scoop. You write code to make that happen, like so:

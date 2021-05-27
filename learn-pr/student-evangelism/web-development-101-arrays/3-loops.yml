@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Iterate over items in the array with loops
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-loops.md)]
