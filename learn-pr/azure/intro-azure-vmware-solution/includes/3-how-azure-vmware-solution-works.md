@@ -1,4 +1,4 @@
-Now that we know what Azure VMware Solutions (AVS) are and what it can do. Let's see how AVS is set up and how it works on Azure.  
+Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's see how AVS is set up and how it works on Azure.  
 
 ## What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
@@ -33,6 +33,8 @@ Azure VMware Solution monitors the following conditions on the host:
 ## Architecture Overview
 
 Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
+
+Placeholder for image
 
 ###  Private clouds, clusters, and hosts in Azure
 
@@ -84,12 +86,12 @@ During the deployment of a private cloud the private networks for management, pr
 
 
 ### Private cloud storage 
-
 Azure VMware Solution uses native fully configured all-flash vSAN storage, local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default. De-duplication and compression are enabled on the vSAN datastore by default
 
 All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private cloud deployment and are available for use immediately.
 
 Policy is created on the vSphere cluster and applied to the vSAN datastore, determines how the VM storage objects are provisioned and allocated within the datastore to guarantee the required level of service. To maintain SLA, 25% spare capacity must be maintained on the vSAN datastore. 
+
 You can use Azure storage services in workloads running in your private cloud. The Azure storage services include:
 - Storage Accounts 
 - Table Storage
@@ -108,6 +110,17 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 - The private cloud user doesn't have access to and can't configure specific management components supported and managed by Microsoft. For example, clusters, hosts, datastores, and distributed virtual switches.
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+
+vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+
+### Azure VMware Solutions Consumption Models
+There are three consumption models for the Azure VMware Solution to address your business needs. Customers have the flexibility to move between the models. Reserved instances save 30-50% of the cost of a node to the monthly rate.
+
+|Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
+|---------|---------|---------|
+|On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
+| Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
+|    |         |         |
 
 ## Get Started with AVS
 

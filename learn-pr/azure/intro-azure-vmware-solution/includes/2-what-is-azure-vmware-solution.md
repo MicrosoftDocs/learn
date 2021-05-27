@@ -36,7 +36,7 @@ Accelerate migration and minimize downtime using the latest HCX Enterprise funct
 
 ### Run Best on Azure
 
-Take advantage of Azure as the best cloud for your Microsoft workloads. Built with VMware, delivered by Microsoft, you get centralized billing and support for simplicity.
+Take advantage of Azure as the best cloud for your Microsoft workloads. Built with VMware, delivered by Microsoft, you get centralized billing and support for simplicity. Azure VMware Solution offers discounts on  1-year and 3-year Reserved Instances for dedicated hosts. Save 30-50% of the cost of a node.
 
 **Single Point of Support :** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 
@@ -78,14 +78,6 @@ Azure VMware Solution provides application high availability and modernization w
 
 With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
 
-### Azure VMware Solutions Consumption Models
-There are three consumption models for the Azure VMware Solution to address your business needs. Customers have the flexibility to move between the models. Reserved instances give a significant discount to the monthly rate.
-
-|Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
-|---------|---------|---------|
-|On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
-| Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
-|    |         |         |
 
 
 
