@@ -2,9 +2,9 @@ In general, Interrupt refers to a disturbance in a process. Similarly, here an i
 
 ## Creating a new scenario
 
-1. To begin with this, firstly create a new scenario for an Interrupting bot as shown below.
+1. To begin with this, firstly create a new scenario for an Interrupting bot as mentioned in the following steps.
 
-2. Configure the bot as below:
+2. Configure the scenario with the following details:
 
     - Name: Any unique name (We have used "Intermediate Bot 1")
 
@@ -22,25 +22,25 @@ In general, Interrupt refers to a disturbance in a process. Similarly, here an i
 
 4. Click on Create and the new scenario is created.
 
-:::image type="content" source="../media/3-create.png" alt-text="3-a":::
+:::image type="content" source="../media/3-create.png" alt-text="Scenario configurations":::
 
 In this tutorial a vital collector bot is built using some basic blocks which were discussed in the previous section. This intermediate bot 1, collects the basic vitals (Name, Age, Height, Weight, Temperature) of patients.
 
-:::image type="content" source="../media/3-intermediate-bot-1.png" alt-text="3-b":::
+:::image type="content" source="../media/3-intermediate-bot-1.png" alt-text="A simple bot for collecting vitals":::
 
 Along with creating a new scenario for the bot, we also need to create a new model.
 
-:::image type="content" source="../media/3-new-language-model.png" alt-text="3-c":::
+:::image type="content" source="../media/3-new-language-model.png" alt-text="Creating a new model in Language Models":::
 
 ## Creating a new model for interrupting scenario
 
-To begin with this, firstly create a new model as shown below.
+To begin with this, firstly create a new model as mentioned in the following steps.
 
-1. We can do this by sliding the mouse over to the language tab on the left bar below the scenario tab and clicking on models.  
+1. We can do this by sliding the mouse over to the **language** tab in the menu bar, towards the left of the screen and by clicking on **models**.  
 
-2. Configure the model as below:  
+2. Configure the model with the configurations mentioned below:  
 
-   :::image type="content" source="../media/3-model-details.png" alt-text="3-d":::
+   :::image type="content" source="../media/3-model-details.png" alt-text="Model configurations":::
 
    - **Name:** Provide a name to the model that is being created. Here it is named as vitals.
 
@@ -58,19 +58,18 @@ To begin with this, firstly create a new model as shown below.
 
 ## Changes to the basic bot
 
-The basic bot scenario created in the previous scenario will be used in this module to demonstrate the Interrupting and Breaking scenario. So before moving ahead, some changes need to be done to the previous scenario. So, open the scenario and add the scenario steps as shown in the picture.
+The basic bot scenario created in the previous scenario will be used in this module to demonstrate the Interrupting and Breaking scenario. So before moving ahead, some changes need to be done to the previous scenario. 
 
-:::image type="content" source="../media/3-prompt-details.png" alt-text="3-e":::
+:::image type="content" source="../media/3-add-block.png" alt-text="Changes to basic bot":::
 
-Since "vitals" is a keyword that triggers an interrupting scenario, add it to the main bot. Drag a simple Prompt Block and edit it as shown above.
+So, open the **Basic Bot** scenario and add a **Prompt step** immediately to the right of the switch branches, asking to enter the keyword '**vitals**' to record your vitals. Since "vitals" is a keyword that triggers an interrupting scenario.
 
-:::image type="content" source="../media/3-add-block.png" alt-text="3-f":::
-
-Place it as shown in the above picture.
+:::image type="content" source="../media/3-prompt-details.png" alt-text="Scenario step - Prompt":::
 
 While the main bot is being run, this scenario is triggered when the user enters the word "vitals" as shown in the picture below. The word vitals break the current flow of the main bot and takes the user to the new scenario for recording the user's vitals.  
 
-:::image type="content" source="../media/3-vitals-trigger.png" alt-text="3-g1":::
-:::image type="content" source="../media/3-resume-topic.png" alt-text="3-g2":::
+:::image type="content" source="../media/3-vitals-trigger.png" alt-text="Main scenario getting interrupted with a keyword 'vitals'":::
 
-After the patient provides the bot with all the information asked, the bot returns to the main bot to continue with the appointment process, with a returning message.
+:::image type="content" source="../media/3-resume-topic.png" alt-text="Interrupting scenario returning to parent scenario":::
+
+After the patient provides the bot with all the information asked, the __intermediate bot 1__ returns to the __basic bot__ to continue with the appointment process, with a returning message.
