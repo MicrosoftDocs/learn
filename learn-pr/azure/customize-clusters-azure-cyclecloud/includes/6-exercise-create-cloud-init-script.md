@@ -1,5 +1,5 @@
 When provisioning nodes for a cluster, you might want to be able to perform custom configuration tasks during the operating system boot process, before any scheduler-driven changes take effect. These tasks can include, for example, updating path environment variables, configuring Domain Name System (DNS) name resolution settings, or binding nodes to an Active Directory Domain Services (AD DS) domain.
-<!--ID/SME: Please confirm that Active Directory Domain Services doesn't need to be preceded with "Azure".-->
+<!--SME: Should Active Directory Domain Services be preceded with "Azure"? -->
 To implement this functionality, you decided to explore the use of cloud-init in Azure CycleCloud clusters and test it with a simple Bash script that modifies the content of a local file on each node. You intend to validate the outcome by connecting to cluster nodes and reviewing the content of the modified files.
 
 > [!NOTE]
@@ -25,7 +25,7 @@ To validate the execution of cloud-init scripts, you'll connect to cluster nodes
 
 The option to add scripts to the cluster nodes is available directly from the Azure CycleCloud graphical interface. You'll use it to assign the same cloud-init script to the scheduler and compute nodes and then verify its functionality. The script adds an entry **10.10.10.10 cc.contoso.com** to the **/etc/hosts** file.
 
-1. If you're not yet connected to the Azure CycleCloud web application, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL<!--ID/SME: This comment was here: (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server).--> If you're prompted, confirm that you want to proceed.
+1. If you're not yet connected to the Azure CycleCloud web application, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL<!--SME: This comment was here: (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server).--> If you're prompted, confirm that you want to proceed.
 1. If you're prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account with the Administrator role.
 1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page. In the list of clusters, select the **contoso-custom-slurm-lab-cluster** entry, and then select **Edit**.
 1. In the **Edit contoso-custom-slurm-lab-cluster** pop-up window, select the **Cloud-init** entry, and in the **Cloud-init configuration** section, on the **scheduler** tab, enter the following script:
