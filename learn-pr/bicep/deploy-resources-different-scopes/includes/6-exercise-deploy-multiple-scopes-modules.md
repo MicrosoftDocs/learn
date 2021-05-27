@@ -21,7 +21,7 @@ The R&D team have asked for your help to create a virtual network in the Project
 
    :::code language="bicep" source="code/6-template.bicep" range="51-54" :::
 
-   Notice that you're defining the resource group just like you would another resource. A resource group is a subscription-scoped resource that can be deployed and managed in subscription-scope Bicep files.
+   Notice that you're defining the resource group just like you would another resource. A resource group is a subscription-scoped resource that can be deployed and managed in Bicep files with the `targetScope` set to `subscription`.
 
 1. Save the changes to the file.
 

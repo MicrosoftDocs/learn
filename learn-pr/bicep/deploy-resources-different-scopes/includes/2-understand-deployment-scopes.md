@@ -8,9 +8,9 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="icon" source="../media/callout-01.png"::: Your **tenant** corresponds to your Azure Active Directory instance. Typically an organization only has one Azure AD instance. This acts as the root of the resource hierarchy.
 
-:::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups underneath it. You might create different management groups for different parts of your organization, or for subscriptions that have different security or governance requirements. You can apply policy and access control restrictions to management groups, and these are inherited by all subscriptions below that management group in the hierarchy.
+:::image type="icon" source="../media/callout-02.png"::: **Management groups** provide a way to organize your Azure subscriptions. Every tenant has a single root management group, and then you can establish your own hierarchy of management groups underneath it. You might create different management groups for different parts of your organization, or for subscriptions that have different security or governance requirements. You can apply policy and access control restrictions to management groups, and these are inherited by all subscriptions below that management group in the hierarchy. Management groups aren't deployed into regions, and they have no impact on the locations of your resources.
 
-:::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as billing accounts, and contain resource groups and resources.
+:::image type="icon" source="../media/callout-03.png"::: **Subscriptions** act as billing accounts, and contain resource groups and resources. Like management groups, subscriptions don't have a location and don't restrict where your resources are deployed.
 
 :::image type="icon" source="../media/callout-04.png"::: **Resource groups** are logical containers for your resources. Resource groups enable you to manage and control related resources as a single unit. Resources like virtual machines, App Service plans, storage accounts, and virtual networks all must be put into a resource group.
 
@@ -95,6 +95,9 @@ Here's an example resource ID for a management group:
 Here's what that looks like visually:
 
 :::image type="content" source="../media/2-mg-resource-id.png" alt-text="Resource ID for a management group." border="false":::
+
+> [!NOTE]
+> Management groups have an identifier as well as a display name. The display name is a human-readable description of the management group. You can change the display name without affecting the management group's ID.
 
 When a resource is deployed to a management group's scope, its resource ID includes the management group's ID. Here's an example resource ID for a role definition that's been created at a management group scope:
 
