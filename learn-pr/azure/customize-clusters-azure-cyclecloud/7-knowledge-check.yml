@@ -27,11 +27,11 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "You're editing an Azure CycleCloud template. You plan to add an extra Node section. To which parent section should you add it?"
+  - content: "You're editing an Azure CycleCloud template. You plan to add an extra node section. To which parent section should you add it?"
     choices:
     - content: "cluster"
       isCorrect: true
-      explanation: "A template must include at least one cluster section, containing one or more node and nodearray sections that describe child objects of that cluster."
+      explanation: "A template must include at least one cluster section, which contains one or more node and nodearray sections that describe child objects of that cluster."
     - content: "nodearray"
       isCorrect: false
       explanation: "A node section can be only nested within the cluster section."

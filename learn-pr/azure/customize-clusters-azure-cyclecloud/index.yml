@@ -3,20 +3,20 @@ uid: learn.customize-clusters-azure-cyclecloud
 metadata:
   moduleType: standard
   title: Customize high-performance computing clusters deployed with Azure CycleCloud
-  description: Azure CycleCloud templates offer declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure.
+  description: Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure.
   ms.date: 5/6/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
 title: Customize high-performance computing clusters deployed with Azure CycleCloud
-summary: "Azure CycleCloud templates offer declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure."
+summary: "Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you'll know more about how to:
   - Customize HPC cluster architecture.
   - Customize software and applications that you use with Azure CycleCloud clusters. 
 prerequisites: |
   - An Azure subscription
-  - Basic familiarity with Azure compute services.
+  - Basic familiarity with Azure compute services
   - Basic knowledge of high-performance computing (HPC) concepts 
 iconUrl: /learn/achievements/customize-clusters-azure-cyclecloud.svg
 levels:
