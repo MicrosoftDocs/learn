@@ -3,7 +3,7 @@ uid: learn.azdo.scan-open-source
 metadata:
   title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines
   description: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
-  ms.date: 01/21/2020
+  ms.date: 05/27/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
