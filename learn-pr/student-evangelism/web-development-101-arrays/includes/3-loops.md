@@ -24,11 +24,11 @@ The `for` loop requires three parts to iterate:
 
    In this case, the expression will be false when i equals `arry.length`. If you are looping through an array, that's what you want. You don't want to address an index outside of the array bounds.
 
-- **Iteration expression**. Runs at the end of each iteration, typically used to change the counter value. You can increment as much as you want per iteration but it's common to increase by one like the below example:
+- **Increment expression**. Runs at the end of each iteration, typically used to change the counter value. You can increment as much as you want per iteration but it's common to increase by one like the below example:
 
    ```javascript
    i++;
-   i +=2; // this would work to and increases by 2
+   i +=2; // this would work too and increases by 2
    ```
 
 Used together a for loop can look like so:
@@ -40,7 +40,7 @@ for (let i = 0; i < 10; i++ ) {
 ```
 
 > [!TIP] 
-> Run this code in a browser console. What happens when you make small changes to the counter, condition, or iteration expression? Can you make it run backwards, creating a countdown?
+> Run this code in a browser console. What happens when you make small changes to the counter, condition, or increment expression? Can you make it run backwards, creating a countdown?
 
 ### While loop
 

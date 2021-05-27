@@ -19,24 +19,22 @@ quiz:
         iteration by 5?
       choices:
         - content: condition
-          isCorrect: true
-          explanation: Correct! A condition is needed to change the amount of times it
-            iterates.
+          isCorrect: false
+          explanation: Incorrect! A condition states wether the loop should continue to iterate or not.
         - content: counter
           isCorrect: false
-          explanation: Incorrect- a different element of a loop must change to increase
+          explanation: Incorrect- the counter keeps track on the current index.
             iteration.
-        - content: iteration-expression
-          isCorrect: false
-          explanation: Incorrect- a different element of a loop must change to increase
-            iteration.
+        - content: increment-expression
+          isCorrect: true
+          explanation: Correct- the increment expression states how much to increase the counter with.
     - content: What's the difference between a while and a for-loop?
       choices:
-        - content: A for-loop has a counter and iteration-expression, where while only has
+        - content: A for-loop has a counter, a condition and an increment expression, where while only has
             a condition
           isCorrect: true
           explanation: Correct- for loops and while differ in ways they can be used.
-        - content: A while has a counter and iteration-expression, where for-loop only has
+        - content: A while has a counter and an increment expression, where for-loop only has
             a condition.
           isCorrect: false
           explanation: Incorrect- this is not how for-loops and while operate.
