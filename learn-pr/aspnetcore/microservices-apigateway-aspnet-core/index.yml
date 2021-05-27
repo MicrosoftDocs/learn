@@ -36,8 +36,8 @@ units:
   - learn.microservices-apigateway-aspnet-core.environment-setup
   - learn.microservices-apigateway-aspnet-core.api-gateway-bff
   - learn.microservices-apigateway-aspnet-core.load-balancer
-  - learn.microservices-apigateway-aspnet-core.azure-app-gateway
   - learn.microservices-apigateway-aspnet-core.verify-deployment
+  - learn.microservices-apigateway-aspnet-core.azure-app-gateway
   - learn.microservices-apigateway-aspnet-core.knowledge-check
   - learn.microservices-apigateway-aspnet-core.summary
 iconUrl: /learn/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg
