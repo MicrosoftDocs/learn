@@ -22,7 +22,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Repository permission levels for an organization](https://help.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization?azure-portal=true)
 - [Managing access to your organization's repositories](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-repositories?azure-portal=true)
 - [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true)
-- [How We Use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft?azure-portal=true)
+- [How We Use Git at Microsoft](/azure/devops/user-guide/code-with-git)
 - [Best practices for protected branches](https://github.community/t/best-practices-for-protected-branches/10204?azure-portal=true)
 - [GitHub Collaboration Best Practices](https://github.com/ideaconsult/etc/wiki/GitHub-Collaboration-Best-Practices?azure-portal=true)
 - [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true)

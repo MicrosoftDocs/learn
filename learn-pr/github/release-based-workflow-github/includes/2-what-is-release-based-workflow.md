@@ -40,7 +40,7 @@ Learn more about [tracking the progress of your work with milestones](https://he
 
 Repositories that have multiple developers working in parallel need a well-defined branching strategy. Settling on a unified approach early in the project will save confusion and frustration as the team and codebase scale.
 
-Learn about [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft?azure-portal=true).
+Learn about [how we use Git at Microsoft](/azure/devops/user-guide/code-with-git).
 
 ### The GitHub flow
 
