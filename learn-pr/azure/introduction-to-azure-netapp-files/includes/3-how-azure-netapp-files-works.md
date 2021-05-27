@@ -63,7 +63,7 @@ Azure NetApp Files storage hierarchy consists of the following elements:
 
 ## Setting up Azure NetApp Files for a migration
 
-Getting Azure NetApp Files ready for a migration from your data center involves several steps, but the following gives you an overview of the process:
+Getting Azure NetApp Files ready for a migration from your datacenter involves several steps, but the following gives you an overview of the process:
 
 1. Decide on the service tier you need for your workload (Standard, Premium, or Ultra).
 1. Set up a capacity pool that uses the above tier and is large enough to handle the workload.

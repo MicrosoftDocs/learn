@@ -103,7 +103,7 @@ Azure NetApp Files offers a complete range of data management features, includin
 
 ### Instance access
 
-Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure data center and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means you can set up an Azure NetApp Files instance in just a few minutes. And since Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service: using Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure datacenter and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means you can set up an Azure NetApp Files instance in just a few minutes. And since Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service: using Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 
 ### Snapshots
 
