@@ -79,7 +79,7 @@ The above script performs the following tasks:
 
 You should get something like this:
 
-![Output from the setup-pod-identity script. Uses AKS identity, installs ADD Pod identity.](m../edia/setup-pod-identity.png)
+![Output from the setup-pod-identity script. Uses AKS identity, installs ADD Pod identity.](../media/setup-pod-identity.png)
 
 ## Create the AGIC in the AKS cluster
 
@@ -93,11 +93,11 @@ The script installs the AGIC helm chart from its repo. This where the configured
 
 You should get a long output that begins like this:
 
-![Initial output from the create-agic script.](m../edia/create-application-gateway-ingress-controller-begin.png)
+![Initial output from the create-agic script.](../media/create-application-gateway-ingress-controller-begin.png)
 
 And ends like this:
 
-![Final output from the create-agic script. Highlighting version 1.2.0 was installed.](m../edia/create-application-gateway-ingress-controller-end.png)
+![Final output from the create-agic script. Highlighting version 1.2.0 was installed.](../media/create-application-gateway-ingress-controller-end.png)
 
 ## Configure the existing ingresses
 
@@ -204,7 +204,7 @@ Note: Keep in mind that all ingresses must contain the `kubernetes.io/ingress.cl
 
 You can use VS Code's search feature to make it easier to update the ingresses, as shown in the next image:
 
-![Image description follows in text.](m../edia/update-ingresses-vscode.png)
+![Image description follows in text.](../media/update-ingresses-vscode.png)
 
 In the preceding image you can see the searching for `kind: ingress` in VS Code makes it easy to identify all files that have to be updated.
 
@@ -224,7 +224,7 @@ Just run the following script, replacing the `{appgw-public-ip}` with the value 
 
 You should get an output just like the one from the initial deployment, only the IP will be different:
 
-![Output from the deploy-application script. Highlighting the resulting deployment urls.](m../edia/deploy-aks-application-gateway.png)
+![Output from the deploy-application script. Highlighting the resulting deployment urls.](../media/deploy-aks-application-gateway.png)
 
 You can now explore the application deploy onto the new AKS, although, other than the IP, you shouldn't see any difference.
 
