@@ -133,8 +133,7 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
     ```azurecli-interactive
     nano slurm.txt
     ```
-<!--ID/SME: Global comment. Consider using "move" instead of "scroll" per MS style guide for sensory language.-->
-1. Within the nano editor interface, scroll to the `[[node scheduler]]` section. Within that section, locate the `[[[volume shared]]]` subsection, scroll to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
+1. Within the nano editor interface, move to the `[[node scheduler]]` section. Within that section, locate the `[[[volume shared]]]` subsection, move to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
 
     ```azurecli-interactive
 
