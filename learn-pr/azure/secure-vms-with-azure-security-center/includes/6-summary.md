@@ -29,4 +29,4 @@ To learn more about the topics in this module, check out the following links:
 - [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/)
 - [Microsoft Antimalware](https://docs.microsoft.com/azure/security/fundamentals/antimalware)
 - [Azure Security blog](https://azure.microsoft.com/blog/topics/security/)
-- [ARM template to test a virus attack on an Azure VM](https://aka.ms/ASCPlaybooksVAttack)
+- [ARM template to test a virus attack on an Azure VM](https://azure.microsoft.com/resources/templates/vm-virus-attack-prevention/)
