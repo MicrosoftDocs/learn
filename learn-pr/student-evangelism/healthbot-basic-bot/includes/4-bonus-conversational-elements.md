@@ -59,7 +59,6 @@ When you're ready to return from the called scenario, place an end object from t
 The scope of the end object is as follows:
 
 - **Scenario**: Ends the current scenario and returns the value.
-
 - **Conversation**: Ends the current conversation and returns the value.
 
 ## Advanced functionality
@@ -75,12 +74,11 @@ To integrate external data resources, you can use a data connections object. Thi
 You can define data connections at two levels:
 
 - **Connection-level configuration**: These configuration details set the baseline for the data connection. They're included in all the calls to the connection endpoints.
-
 - **Step-level configuration**: This configuration can extend or override the connection-level details. They're used at specific scenario steps and don't apply to every call made to the connection.
 
 ### Global variables
 
-By using the global variables element, you can set and get variables to use throughout your scenarios. Variables set in this way (unlike variables that use the $, @, & notation) maintain their context. They're persistent and available in all scenarios and for all users.
+By using the global variables element, you can set and get variables to use throughout your scenarios. Variables set in this way (unlike variables that use the $, @, & notations) maintain their context. They're persistent and available in all scenarios and for all users.
 
 ### Action
 
@@ -92,4 +90,4 @@ You can use the wait element to temporarily pause and suspend the scenario execu
 
 ### LU
 
-You can set HTTPS calls to the language understanding service (LUIS). Interactions with LUIS automatically enforce a no-storage policy.
+You can set HTTPS calls to the Language Understanding (LUIS) service. Interactions with LUIS automatically enforce a no-storage policy.

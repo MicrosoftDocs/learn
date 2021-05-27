@@ -30,12 +30,12 @@ quiz:
     
     - content: "If you want to use a two-way decision split, which scenario will you use?"
       choices:
-        - content: "Yes/No prompt"
+        - content: "Yes/no prompt"
           isCorrect: false
           explanation: "This is a two-way split in the flow based on user input."
         - content: "Branch"
           isCorrect: true
-          explanation: "Branch is a two-way decision split that's based on code and not on the user input."
+          explanation: "A branch is a two-way decision split that's based on code and not on user input."
         - content: "Switch"
           isCorrect: false
           explanation: "This is a multi-optional split in the flow based on code."

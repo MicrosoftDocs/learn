@@ -14,9 +14,9 @@ We start by using the *prompt* block. This is what a prompt block looks like:
 
 The healthcare bot uses JavaScript to implement some scenario steps. So it helps to know basic concepts of JavaScript. If you don't know JavaScript, knowledge of any basic programming language will also help.  
 
-**Display text**: Enter a block display name that will help you differentiate between the blocks. Because we're creating a greeting block, let's name it **Greeting**. 
+**Display text**: Enter a block display name that will help you differentiate between the blocks. Because we're creating a greeting block, let's use **Hello! How can I help you?**. 
 
-**Variable name**: Because the healthcare bot uses some programming concepts, you need give the name of the variable to store the input from the user. A variable is simply a container that temporarily holds the data. The name is case sensitive.
+**Variable name**: Because the healthcare bot uses some programming concepts, you need give the name of the variable to store the input from the user. A variable is simply a container that temporarily holds the data. The name is case-sensitive. We'll use **help** in our example.
 
 **Variable Data Type**: Choose the type of data that you'll store in the variable. Important data types include string, number, Boolean, time, choice, multiple choice, attachment, and object. Because the help that we're providing to the user through the bot can have many options, select multiple choice (**multi-choice**).
 
@@ -38,7 +38,7 @@ scenario.help.index == 0
 
 This is the way we call the objects:  
 
-**Syntax**:  "[name].[variable name].[index] == [index position]"_
+**Syntax**:  "[name].[variable name].[index] == [index position]"
 
 Because the first branch is for the first object of the array, we have to branch the first object to one side and the rest of the objects to the other side. That's why we've taken the 0 index. Note the usage of `==`  and not `=`. The single equal sign is for assigning a value. The double equal sign is to check the value.
 
@@ -105,7 +105,7 @@ Select **OK** and then connect the statement block. The basic bot should now loo
 
 :::image type="content" source="../media/3-connect-pharmacy.png" alt-text="Screenshot that shows the pharmacy statement block connected in the bot.":::
 
-Fill in the other switch cases with statement blocks. The following example shows one for emergency and trauma: 
+Fill in the other switch cases with statement blocks. The following example shows one for emergency and trauma. 
 
 :::image type="content" source="../media/3-emergency-statement.png" alt-text="Screenshot that shows a statement for emergency and trauma.":::
 
