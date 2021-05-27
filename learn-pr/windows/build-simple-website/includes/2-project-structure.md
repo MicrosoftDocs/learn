@@ -6,13 +6,13 @@ In this unit, you'll create a simple project structure that includes three files
 
 1. Open Visual Studio Code.
 
-   When you open Visual Studio Code, the **Welcome** page opens. Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
+   When you open Visual Studio Code, the **Welcome** page opens. (If you don't see the **Welcome** page, go to **File > New Window**.) Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
 
    :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window":::
 
    If not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. Alternatively, select **View > Command Palette** or the keyboard shortcut <kbd>Shift+Command+P</kbd>. In the search field, enter **>Help: Welcome**.
 
-1. Select **Open folder** in the Start section of the Welcome page, or go to **Folder > Open**.
+1. Select **Open folder** in the Start section of the Welcome page, or go to **File > Open Folder**.
 
    :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of Visual Studio Code open folder":::
 
@@ -54,6 +54,6 @@ To install this extension:
 
    :::image type="content" source="../media/vs-code-get-extension.png" alt-text="Screenshot of finding a VS Code extension":::
 
-1. Switch back to the Explorer window.
+1. Switch back to the Explorer window (top icon in the Activity Bar).
 
 Way to go! Installation and setup takes a little extra time, but you only need to install and set up once. Now we're ready to create a website.
