@@ -56,7 +56,7 @@ If your relational data is on-premises, Azure Data Factory can also work with mo
 
 Does your organization generate real-time streamed data from devices, sensors, or applications? If so, then you'll want to capture that data on an event-by-event basis as the data is generated, and then ingest that data into Azure Data Lake Storage for processing and analysis. You can use the following tools to ingest streamed data:
 
-- Apache Storm on Azure HDInsight<!-- Verify - I got this off the web as it's not in Term Studio or MS Style. -->
+- Apache Storm on Azure HDInsight
 - Azure Stream Analytics
 
 ## Accessing stored data
@@ -93,7 +93,7 @@ To control who can access the data stored in Azure Data Lake Storage, you can im
 - Azure RBAC
 - ACL
 
-As described in the following two sections, you use RBAC for *coarse-grained access* (access to a large amount of data), and  ACL for *fine-grained access* (access to a smaller amount of data)<!-- Verify these edits. -->. In both cases, you apply the access permissions to one or more of the following types of security principals (each of which must be defined in Azure Active Directory):
+As described in the following two sections, you use RBAC for *coarse-grained* (that is, broader) access, and ACL for *fine-grained* (that is, detailed) access. In both cases, you apply the access permissions to one or more of the following types of security principals (each of which must be defined in Azure Active Directory):
 
 - User
 - Group
@@ -102,7 +102,7 @@ As described in the following two sections, you use RBAC for *coarse-grained acc
 
 ### RBAC
 
-RBAC in Azure uses role assignments to apply a collection of permissions to a security principal<!-- Do we need to define what a security principal is? -->. When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform. These include read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a security principal might have a role assignment for read or write access to all data in a storage account, or in a container.
+RBAC in Azure uses role assignments to apply a collection of permissions to a security principal (that is, any entity that can be authenticated, such as a user account or service). When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform. These include read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a security principal might have a role assignment for read or write access to all data in a storage account, or in a container.
 
 ### ACL
 

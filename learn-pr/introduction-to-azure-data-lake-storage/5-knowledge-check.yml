@@ -64,7 +64,7 @@ quiz:
       explanation: "Incorrect. Although much of the project data is likely structured, data such as the web server page views and search queries are likely to be in a semi-structured format."
     - content: "The project uses real-time data, so the engineer should consider using Azure Data Lake Storage because it can work with multiple Azure services that support real-time analytics."
       isCorrect: true
-      explanation: "Correct. Azure Data Lake Storage can ingest real-time data from HDInsight Storm, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics."
+      explanation: "Correct. Azure Data Lake Storage can ingest real-time data from Apache Storm on Azure HDInsight, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics."
     - content: "Azure Data Lake Storage can't output data to a service that would accomplish the goal of this project."
       isCorrect: false
       explanation: "Incorrect. Azure Data Lake Storage supports many Azure services, including Azure Databricks for transforming data. It also includes Azure Machine Learning for training and deploying ML models."

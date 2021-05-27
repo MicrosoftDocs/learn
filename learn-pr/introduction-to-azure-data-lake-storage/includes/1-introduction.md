@@ -30,4 +30,4 @@ In this module, you'll learn the fundamentals of Azure Data Lake Storage and be 
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to evaluate whether Azure Data Lake Storage is the correct solution for bringing together your organization's separate data stores. 
+By the end of this session, you'll be able to evaluate whether Azure Data Lake Storage is the correct solution for bringing together your organization's separate data stores.
