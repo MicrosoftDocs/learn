@@ -20,6 +20,6 @@ Process is a task that receives, modifies, or redirects input to output.
 
 #### Woodgrove process elements
 
-- AAD service
+- Azure AD service
 - PAW service
 - Fourth Coffee application
