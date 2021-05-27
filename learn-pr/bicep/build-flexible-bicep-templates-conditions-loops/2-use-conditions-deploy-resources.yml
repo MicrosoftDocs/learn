@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.use-conditions-deploy-resources
-title: Conditionally deploy resources
+title: Deploy resources conditionally
 metadata:
   unitType: learning-content
-  title: Conditionally deploy resources
-  description: Learn how to conditionally deploy resources based on Boolean values and expressions.
+  title: Deploy resources conditionally
+  description: Learn how to deploy resources conditionally,  based on Boolean values and expressions.
   ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik

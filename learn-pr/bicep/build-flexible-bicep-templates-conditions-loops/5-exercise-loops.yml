@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.exercise-loops
-title: Exercise - Deploy multiple resources using loops
+title: Exercise - Deploy multiple resources by using loops
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Deploy multiple resources using loops
+  title: Exercise - Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
   ms.date: 05/09/2021
   author: akasnik

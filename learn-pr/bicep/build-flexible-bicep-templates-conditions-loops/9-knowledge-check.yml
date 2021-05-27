@@ -4,7 +4,7 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check on conditions and loops.
+  description: Check your knowledge on conditions and loops.
   ms.date: 05/09/2021
   author: akasnik
   ms.author: akasnik
@@ -19,23 +19,23 @@ quiz:
       This should only be deployed for production environments.
       What should you do?
     choices:
-    - content: Define a resource for the policy assignment using the *audit* effect, and just ignore any errors for non-production environments.
+    - content: Define a resource for the policy assignment by using the *audit* effect, and just ignore any errors for non-production environments.
       isCorrect: false
-      explanation: It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only only your production environments.
-    - content: Add a condition to your Bicep template so that the policy assignment is only deployed when the `environmentName` parameter value is set to `Production`.
+      explanation: It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only for your production environments.
+    - content: Add a condition to your Bicep template so that the policy assignment is deployed only when the `environmentName` parameter value is set to `Production`.
       isCorrect: true
-      explanation: By using a condition with your resource declaration, you'll only assign the policy to environments that need it.
+      explanation: By using a condition with your resource declaration, you'll assign the policy only to environments that need it.
     - content: Move the policy assignment into its own module.
       isCorrect: false
       explanation: Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
-  - content: Which of these is a good use case for loops?
+  - content: Which one of the following is a good use case for loops?
     choices:
-    - content: Deploy multiple resources that are almost identical, but with some minor differences between them.
+    - content: Deploying multiple resources that are almost identical but with some minor differences between them.
       isCorrect: true
-      explanation: Copy loops enable you to deploy multiple resources that are identical or have minor differences.
-    - content: Deploy the same resources to multiple environments.
+      explanation: The copy loops feature enables you to deploy multiple resources that are identical or have minor differences.
+    - content: Deploying the same resources to multiple environments.
       isCorrect: false
-      explanation: Typically you use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when creating multiple instances of resources within a single deployment.
+      explanation: You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you're creating multiple instances of resources within a single deployment.
     - content: Running custom code inside your Bicep file.
       isCorrect: false
       explanation: Loops can't be used to execute custom code.
@@ -49,10 +49,10 @@ quiz:
       explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.
     - content: Use the symbolic name you specified within the loop declaration.
       isCorrect: true
-      explanation: You can access the current loop item by using the symbolic name you used in the loop declaration.
+      explanation: You can access the current loop item by using the symbolic name that you used in the loop declaration.
   - content: |
-      You used an array parameter to create specified number of storage accounts.
-      You need to return the storage account names for all of the storage accounts you deploy so that the user running the deployment can see it.
+      You used an array parameter to create a specified number of storage accounts.
+      You need to return the storage account names for all the storage accounts you deploy so that users who run the deployment can see it.
       Which option should you use to return the storage account names?
     choices:
     - content: Use an output loop to return an array with the storage account names.
@@ -60,7 +60,7 @@ quiz:
       explanation: By using an output loop, you can retrieve the name and other properties of the storage accounts you've deployed.
     - content: Use a variable loop to create a list of storage account names for each resource.
       isCorrect: false
-      explanation: Variables aren't returned to the user executing the deployment.
-    - content: Use the output function within resource declaration loop.
+      explanation: Variables aren't returned to users who are running the deployment.
+    - content: Use the output function within a resource declaration loop.
       isCorrect: false
-      explanation: Outputs need to be declared separately to resources. This includes output loops.
+      explanation: Outputs, including output loops, must be declared separately from resources.

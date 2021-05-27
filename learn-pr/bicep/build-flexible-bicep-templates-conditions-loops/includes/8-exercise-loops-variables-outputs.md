@@ -1,16 +1,18 @@
-For your toy company, you need to deploy virtual networks in each country you're launching the teddy bear into. Also, your developers have asked you to give them the fully qualified domain names (FQDNs) of each of the regional SQL servers you've deployed. In this exercise you'll add the virtual network and its configuration into your Bicep code, and you'll output the SQL server FQDNs.
+For your toy company, you need to deploy virtual networks in each country where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
+
+In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 
 In the process, you'll:
 
 > [!div class="checklist"]
-> * Update your Bicep code to specify a parameter for the virtual network's subnets.
+> * Update your Bicep code to specify a parameter for each virtual network's subnets.
 > * Add a variable loop to create a subnet array, which you'll use in the virtual network resource declaration.
-> * Add an output loop to create the list of SQL server FQDNs.
+> * Add an output loop to create the list of logical server FQDNs.
 > * Deploy the Bicep file and verify the deployment.
 
 This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Add the virtual network into your Bicep file
+## Add the virtual network to your Bicep file
 
 1. Open the *main.bicep* file.
 
@@ -18,17 +20,16 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
    ::: code language="bicep" source="code/8-template.bicep" range="16-29" :::
 
-1. Below the parameters, add a blank line and then add the `subnetProperties` variable loop:
+1. Below the parameters, add a blank line, and then add the `subnetProperties` variable loop:
 
    ::: code language="bicep" source="code/8-template.bicep" range="31-36" :::
 
-1. At the bottom of the file, underneath the `databases` module loop, add the following resource loop:
+1. At the bottom of the file, below the `databases` module loop, add the following resource loop:
 
    ::: code language="bicep" source="code/8-template.bicep" range="47-58" :::
 
    > [!NOTE]
-   > This example uses the same address space for all of the virtual networks.
-   > Normally, when you create multiple virtual networks, you'd set their address space to be different in case you ever need to connect them together.
+   > This example uses the same address space for all the virtual networks. Ordinarily, when you create multiple virtual networks, you would give them different address spaces in the event that might need to connect them together.
 
 1. Save the changes to the file.
 
@@ -36,7 +37,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Open the *modules/database.bicep* file.
 
-1. Add the following outputs to the bottom of the file:
+1. At the bottom of the file, add the following outputs:
 
    ```bicep
    output serverName string = sqlServer.name
@@ -70,7 +71,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ::: zone pivot="cli"
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take couple of minutes to complete, and then you'll see a successful deployment.
+In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -80,7 +81,7 @@ az deployment group create --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take couple of minutes to complete, and then you'll see a successful deployment.
+In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -89,33 +90,33 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 ::: zone-end
 
 > [!CAUTION]
-> Make sure you use the same login and password that you used previously. If you don't, the deployment won't complete successfully.
+> Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
 
 You see `Running...` in the terminal. Wait for the deployment to finish.
 
 ## Verify the deployment
 
-After deployment is finished, you want to verify that new virtual networks are deployed and that they have subnets configured as we expect.
+After the deployment is finished, you want to verify that new virtual networks are deployed and that they have subnets configured as you expect.
 
 ::: zone pivot="cli"
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that the virtual networks have been deployed into the three Azure locations.
+1. Verify that the virtual networks have been deployed to the three Azure locations.
 
-   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal interface with virtual networks after deployment." border="true":::
+   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal, showing a list of virtual networks after deployment." border="true":::
 
-1. Select virtual network named `teddybear-eastasia` and select *Subnets* under the *Settings* category in the left menu.
+1. Select the virtual network named `teddybear-eastasia` and then, on the left pane, under **Settings**, select **Subnets**.
 
-1. Verify that deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
+1. Verify that the deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
 
-    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
 
-1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL servers that were deployed.
+1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
-    :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment outputs displaying SQL server properties." border="true":::
+    :::image type="content" source="../media/8-outloop-deployment-cli.png" alt-text="Screenshot of the deployment output, displaying the properties of the logical servers." border="true":::
 
 ::: zone-end
 
@@ -125,18 +126,18 @@ After deployment is finished, you want to verify that new virtual networks are d
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that the virtual networks have been deployed into the three Azure locations.
+1. Verify that the virtual networks have been deployed to the three Azure locations.
 
-   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal interface with virtual networks after deployment." border="true":::
+   :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal, showing a list of virtual networks after deployment." border="true":::
 
-1. Select virtual network named `teddybear-eastasia` and select *Subnets* under the *Settings* category in the left menu.
+1. Select the virtual network named `teddybear-eastasia` and then, on the left pane, under **Settings**, select **Subnets**.
 
-1. Verify that deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
+1. Verify that the deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
 
-    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal interface for virtual network subnets after deployment." border="true":::
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
 
-1. Check the output of the deployment command. It should include the name and FQDN of all three of the SQL servers that were deployed.
+1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
-    :::image type="content" source="../media/8-outloop-deployment-ps.png" alt-text="Screenshot of the deployment outputs displaying SQL server properties." border="true":::
+    :::image type="content" source="../media/8-outloop-deployment-ps.png" alt-text="Screenshot of the deployment output, displaying the properties of the logical servers." border="true":::
 
 ::: zone-end
