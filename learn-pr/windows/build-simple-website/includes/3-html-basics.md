@@ -6,7 +6,7 @@ In this unit, you add basic HTML content, open the HTML page in the browser, and
 
 Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
 
-1. In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page, enter `html:5`, and then press <kbd>Enter</kbd>.
+1. In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page, type `html:5`, and then press <kbd>Enter</kbd>.
 
    HTML5 template code gets added to the file.
 
@@ -48,7 +48,7 @@ The *title* of a webpage appears at the top of a browser window, and is signific
 
 To style the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once, and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
 
-1. In **Visual Studio Code**, add a blank line after the `<title>` element, enter `link`, and then press <kbd>Enter</kbd>.
+1. In **Visual Studio Code**, add a blank line after the `<title>` element, type `link`, and then press <kbd>Enter</kbd>.
 
 1. Update the `href` to `main.css`, and save the file by pressing <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
 
@@ -93,6 +93,8 @@ Let's start filling in the *body* element now.
 An ID attribute (used in the `<p>`) can be used for styling one element, while the class attribute (used in the `<li>`) is for styling all elements of the same class.
 
 Each list item `<li>` element is grouped into an unordered list `<ul>`.
+
+Before the next step, make sure your file is saved by pressing <kbd>Control+S</kbd> or <kbd>Command+S</kbd>.
 
 ## Open in browser
 
