@@ -131,7 +131,7 @@ For the dark theme, you set up the infrastructure in preparation for the next un
 
 To set up support for a dark theme:
 
-1. Add some constants to the page root in your CSS file.
+1. Add some constants to the page root at the top of your CSS file.
 
     ```css
     :root {
@@ -176,7 +176,7 @@ To set up support for a dark theme:
 
 1. Remove the `#msg` selector in your CSS, so that we can apply the same font to all elements.
 
-1. To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
+1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
 
    :::image type="content" source="../media/chrome-dark-theme.png" alt-text="Screenshot of website with dark theme applied":::
 
