@@ -31,7 +31,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Create Project**.
 
-    ![Screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -58,7 +58,7 @@ Here you move the third item, **Create unit tests**, to the **Doing** column and
 
 Recall that **Create unit tests** relates to running unit tests during the build so that Amita doesn't have to deal with so many regression bugs when she tests out new builds.
 
-![Screenshot of Azure DevOps work item details for adding unit tests.](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure DevOps work item details for adding unit tests.":::
 
 To set up the work item:
 
@@ -71,7 +71,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
-    ![Screenshot of Azure Boards showing the unit test card now in the Doing column.](../media/3-azure-boards-wi3-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi3-doing.png" alt-text="A screenshot of Azure Boards showing the unit test card now in the Doing column.":::
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 
