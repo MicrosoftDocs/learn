@@ -14,58 +14,58 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Let's say you have vSphere 5.5 deployed within your environment. What would you have to do to deploy HCX within your environment?"
     choices:
-    - content: ""
+    - content: "Deploy and downgrade the HCX connector appliance on-premises to get support for the migration."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "You must deploy and downgrade the HCX connector appliance on-premises. This allows for a supported migration pattern into Azure VMware Solution."
+    - content: "You can't deploy HCX to conduct any migrations into Azure VMware Solution."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "HCX can still be used for the older vSphere version."
+    - content: "Deploy Azure VMware Solution in a different region."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "While possible, deploying Azure VMware Solution to a different region will not help migrate VMs from vSphere 5.5 to Azure VMware Solution."
+  - content: "You find you can't successfully establish an HCX site pairing. What might be the issue?"
     choices:
-    - content: ""
+    - content: "You'll need to re-download the HCX Connector OVA file."
+      isCorrect: false
+      explanation: "If you are at this step in the process, HCX downloaded correctly for you."
+    - content: "You'll need to redeploy the HCX Connector OVA file on-premises."
+      isCorrect: false
+      explanation: "If you are at this step in the process, HCX deployed correctly for you."
+    - content: "Your VMware HCX Connector can't route to your HCX Cloud Manager IP over port 443."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "The ability to route traffic over port 443 needs to be accounted for if you cannot establish an HCX site pairing."
+  - content: "If the VM you're trying to migrate is powered off, which migration is set by default?"
     choices:
-    - content: ""
+    - content: "Live"
+      isCorrect: false
+      explanation: "Live migration allows you to move an entire running VM from host to another."
+    - content: "Bulk"
+      isCorrect: false
+      explanation: "Bulk migration uses the host-based replication to move a powered on VM between HCX data centers."
+    - content: "Cold"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Cold migration is the migration of powered off or suspended virtual machines between environments."
+  - content: "In order for VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?"
     choices:
-    - content: ""
+    - content: "443"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Port 443 needs to be open between the on-premises HCX Connector and the HCX Cloud Manager environment in Azure VMware Solution."
+    - content: "3389"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Port 3389 is for Remote Desktop Protocol and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
+    - content: "53"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Port 53 is for DNS and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
+  - content: "You can't create a service mesh within HCX. What might be the issue?"
     choices:
-    - content: ""
+    - content: "Check permissions on the subscription and resource group."
+      isCorrect: false
+      explanation: "This issue involves HCX directly, not any permissions in the Azure portal."
+    - content: "Ports UDP 500/4500 are not open between the on-premises and Azure VMware Solution network profiles."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "UDP ports 500/4500 need to be open between the on-premises and Azure VMware Solution 'uplink' network profiles."
+    - content: "Redeploy HCX on-premises to connect to Azure VMware Solution."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Redeploying the HCX appliance on-premises will not help you create a service mesh."
