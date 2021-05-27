@@ -23,7 +23,7 @@ Sometimes you may need to loop to create a specific number of resources, and not
 When you use the `range()` function you specify its start value and the number of values you want to create. For example, if you wanted to create storage accounts with the names `sa0`, `sa1`, and `sa2`, you'd use the function `range(0,3)`.
 
 > [!NOTE]
-> When you use the `range()` function, you specify the starting value and the number of values to create. For example, if you use `range(3,4)` it will return the values `3`, `4`, `5`, and `6`. Be careful when you're using a starting value of 0 to ensure you're requesting the right number of values.
+> When you use the `range()` function, you provide two arguments. The first specifies the starting value, and the second tells Bicep the number of values you want. For example, if you use `range(3,4)` then Bicep will return the values `3`, `4`, `5`, and `6`. Be careful to ensure you're requesting the right number of values, especially when you use a starting value of 0.
 
 > [!TIP]
 > In this example, we've named the index variable `i`. This is the standard convention in Bicep. However, you can use any name you want.
