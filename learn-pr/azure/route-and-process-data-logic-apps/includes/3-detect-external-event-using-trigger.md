@@ -8,7 +8,7 @@ Think about the different conditions that businesses might use to launch their L
 
 Most of the examples we've seen are in the *data becomes available* category. For example, a new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. This category doesn't cover all cases though.
 
-Suppose you wanted to launch your logic app every Saturday at midnight? This trigger would be great for administrative tasks like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
+Suppose you wanted to launch your logic app every Saturday at midnight? This trigger would be great for administrative tasks, like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
 
 There's one more case to consider: suppose you wanted total control? Imagine you need to launch your logic app using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
 
@@ -39,7 +39,7 @@ The nice thing about push triggers is that they don't incur any costs polling fo
 
 ![An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the logic app immediately when the data is ready.](../media/push-trigger.png)
 
-If push triggers respond more quickly and cost less than polling triggers, then why not use them all the time? The reason is that not every connector offers a push trigger. Sometimes the trigger author chose not to implement push and sometimes the external service didn't support push. Generally, you'll find a connector offers either push or polling triggers but not both. In the rare cases where both options are available, consider using the push trigger because it should be more efficient.
+If push triggers respond more quickly and cost less than polling triggers, then why not use them all the time? The reason is that not every connector offers a push trigger. Sometimes the trigger author chose not to implement push and sometimes the external service didn't support push. Generally, you'll find a connector offers either push or polling triggers, but not both. In the rare cases where both options are available, consider using the push trigger because it should be more efficient.
 
 In this module, we're going to focus on polling triggers. These triggers are the most common and are perfect for the "route and process data" scenarios that we've been discussing.
 
