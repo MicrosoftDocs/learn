@@ -6,9 +6,9 @@ In this unit, you set up the JavaScript file, create a button to switch between 
 
 Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a pop-up alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
 
-1. In **Visual Studio Code**, enter `script:src`, and press <kbd>Enter</kbd>.
+1. In **Visual Studio Code** open the file `index.html`, enter `script:src`, and press <kbd>Enter</kbd>.
 
-1. Adjust the script element to look like the following. Place it directly after the list.
+1. Adjust the script element to look like the last line below. Place it directly after the list as shown.
 
     ```html
     <ul>
