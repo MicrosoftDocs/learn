@@ -50,7 +50,7 @@ The next step is to capture the data-flow between each interaction:
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
 |![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>AAD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 
 ### AAD
 

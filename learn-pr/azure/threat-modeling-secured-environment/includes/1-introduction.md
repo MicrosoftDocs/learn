@@ -1,4 +1,4 @@
-As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you select applications to use across [Privileged Access Workstations (PAW)](https://docs.microsoft.com/security/compass/privileged-access-devices).
+As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](https://docs.microsoft.com/security/compass/privileged-access-devices).
 
 PAW is a device used for administrative functions and critical asset management tasks. Examples include:
 
@@ -41,9 +41,12 @@ You need to threat model an application before installing it in a secured enviro
 
 ## Who can threat model an application to be used in a secured environment?
 
-Any IT professional with a basic understanding of security can threat model an application to be used in a secured environment. Priority is given to IT professionals directly involved with managing the secured environment.
+Any IT security professional or security engineer with a basic understanding of security can threat model an application to be used in a secured environment.
 
-In most cases, they may already have done security reviews for similar applications, and know the risks to look for.
+Give priority to IT security professionals or the security team directly involved with managing the secured environment, as they may be familiar with common security risks to look for.
+
+> [!TIP]
+> If you can, try to keep those wanting to use the application (e.g., IT admins) separated from those assessing it (e.g., IT security professional or engineer).
 
 ## Why do I have to take an application through this process?
 

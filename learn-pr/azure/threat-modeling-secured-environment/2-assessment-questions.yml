@@ -3,9 +3,9 @@ uid: learn.azure.threat-modeling-secured-environment.2-assessment-questions
 metadata:
   title: Security assessment questions to ask before using an application in a PAW
   description: Assess the state of security for the application to be used in your secured environment by asking the right questions.
-  ms.date: 03/15/2021
+  ms.date: 05/27/2021
   author: rodrigosantos
-  ms.author: rodsan
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Assessment questions

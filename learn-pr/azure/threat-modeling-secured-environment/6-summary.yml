@@ -3,9 +3,9 @@ uid: learn.azure.threat-modeling-secured-environment.6-summary
 metadata:
   title: Summary of threat modeling an application to be used in the PAW
   description: Review what you learned about adding an application to your Privileged Access Workstation (PAW).
-  ms.date: 03/01/2021
+  ms.date: 05/27/2021
   author: rodrigosantos
-  ms.author: rodsan
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Summary

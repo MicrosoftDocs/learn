@@ -3,9 +3,9 @@ uid: learn.azure.threat-modeling-secured-environment.3-gather-data
 metadata:
   title: Gather security assessment answers for the application to be used in a PAW
   description: Capture the state of security of the application by collecting the answers to each question.
-  ms.date: 03/01/2021
+  ms.date: 05/27/2021
   author: rodrigosantos
-  ms.author: rodsan
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Gather data
