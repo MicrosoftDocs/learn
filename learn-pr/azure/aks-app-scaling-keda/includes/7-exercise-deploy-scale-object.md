@@ -2,9 +2,9 @@ In this exercise, you'll deploy the scaling object custom resource definition (C
 
 ## Create the Scaled Object with A Redis Trigger
 
-This is where we will see what `KEDA` can do!  We will create a `ScaledObject` to scale based on the number of items in Redis list.  Before we apply the manifest, let's dissect the key sections of the spec.
+This is where we will see what KEDA can do!  We will create a `ScaledObject` to scale based on the number of items in Redis list.  Before we apply the manifest, let's dissect the key sections of the spec.
 
-1. `scaleTargetRef` - this section describes which workload `KEDA` observes. In our deployment manifest from above we use the following values to tie the scaled object to the deployment.
+1. `scaleTargetRef` - this section describes which workload KEDA observes. In our deployment manifest from above we use the following values to tie the scaled object to the deployment.
 
   ```yaml
     scaleTargetRef:
@@ -14,7 +14,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
       envSourceContainerName: contoso-microservice  # Optional. Default: .spec.template.spec.containers[0]
   ```
 
-2. `minReplicaCount` and `maxReplicaCount` - these two attributes determine the range of replicas `KEDA` uses for scaling.  In our case, we instruct `KEDA` to scale from a minimum of zero with a max of twenty.
+2. `minReplicaCount` and `maxReplicaCount` - these two attributes determine the range of replicas KEDA uses for scaling.  In our case, we instruct KEDA to scale from a minimum of zero with a max of twenty.
 
   ```yaml
     minReplicaCount: 0            # Optional. Default: 0
@@ -22,9 +22,9 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
   ```
 
   > [!NOTE]
-  > `minReplicaCount: 0` will take our `Deployment` default replica count from one to zero.  This will occur if the service is idle and not processing any events.  In this exercise, if there are no items in the Redis list, and the service remains idle, `KEDA` will scale to zero.
+  > `minReplicaCount: 0` will take our `Deployment` default replica count from one to zero.  This will occur if the service is idle and not processing any events.  In this exercise, if there are no items in the Redis list, and the service remains idle, KEDA will scale to zero.
 
-3. `advanced` - this section is generally related to advanced customization of `KEDA`. The `restoreToOriginalReplicaCount` instructs `KEDA` that after any scaling up scenarios, `KEDA` will return replica count to the original value.  In the case of our example, we set it to `false`, thus we do not return the original value of one, but scale down to the `minReplicaCount` value, zero.
+3. `advanced` - this section is generally related to advanced customization of KEDA. The `restoreToOriginalReplicaCount` instructs KEDA that after any scaling up scenarios, KEDA will return replica count to the original value.  In the case of our example, we set it to `false`, thus we do not return the original value of one, but scale down to the `minReplicaCount` value, zero.
 
   ```yaml
     restoreToOriginalReplicaCount: false        # Optional. Default: false
@@ -38,7 +38,7 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
             periodSeconds: 15
   ```
 
-4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs `KEDA` to scale up when there are ten items in the list.
+4. `triggers` - this section uses `scalers` to detect if the object should be activated or deactivated, and feed custom metrics for a specific event source.  For our example, we use the Redis `scaler` to connect the Redis instance and to the Redis list.  The important metric in this `scaler` is `listLength`.  This instructs KEDA to scale up when there are ten items in the list.
 
   ```yaml
     triggers:
@@ -152,4 +152,4 @@ This is where we will see what `KEDA` can do!  We will create a `ScaledObject` t
   contoso-microservice-794d98b5-rgmvx   1/1     Running   0          2m15s
   ```
 
-And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that `KEDA` removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.
+And after all the items have been processed and the `cooldownPeriod` has expired, you will see that the number of pods is zero.  Why zero?  The reason that KEDA removes all running replicas is that there are no items left to process, within our `ScaledObject` manifest we set `minReplicaCount: 0` and `restoreToOriginalReplicaCount: false`.

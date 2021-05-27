@@ -4,7 +4,7 @@ We'll review why the native Horizontal Pod Autoscaler (HPA) resource isn't alway
 
 ## Event driven autoscaling
 
-Kubernetes does resource-based scaling on metrics defined by CPU and memory really well.  However, event-driven applications require a more targeted solution to scale proactively.  With KEDA, you can drive the scaling of any workload in Kubernetes based on the number of events needing to be processed.
+Kubernetes does resource-based scaling on metrics defined by CPU and memory really well.  However, event-driven applications require a more targeted solution to scale proactively. With KEDA, you can drive the scaling of any workload in Kubernetes based on the number of events needing to be processed.
 
 KEDA is a single-purpose and lightweight component that can be added into any Kubernetes cluster. KEDA is an open source, CNCF solution. It works alongside standard Kubernetes components like the HPA and can extend its functionality. With KEDA, you can explicitly target the apps you want to use event-driven scale, with other apps continuing to function using other scaling methods. This makes KEDA a flexible and safe option to run alongside any number of any other Kubernetes applications or frameworks.
 
@@ -23,7 +23,7 @@ The diagram below shows how KEDA integrates with the Kubernetes HPA, external ev
 :::image type="content" source="../media/2-1-keda-arch.png" alt-text="A diagram that depicts the KEDA architecture in Kubernetes.":::
 
 > [!TIP]
-> For more detailed information checkout the [official documentation](https://keda.sh/docs/2.2/concepts/)
+> For more detailed information see the [official documentation](https://keda.sh/docs/2.2/concepts/)
 
 ### Event sources and scalers
 
