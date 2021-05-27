@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.microservices-apigateway-aspnet-core
+metadata:
+  title: Use managed data stores in a cloud-native ASP.NET Core microservices app
+  description: This module guides you through implementing Azure-managed data stores in an ASP.NET Core microservices app.
+  author: camsoper
+  ms.author: casoper
+  ms.date: 05/12/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Use managed data stores in a cloud-native ASP.NET Core microservices app
+summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
+abstract: |
+  In this module, you will:
+  - Deploy an existing ASP.NET Core microservices e-commerce application to AKS.
+  - Implement a TLS termination using the NGINX Ingress Controller.
+  - Deploy the microservices application to an AKS that's using the Azure Application Gateway.
+prerequisites: |
+  - Familiarity with REST API services
+  - Familiarity with Private Key Infrastructure (PKI)
+  - Access to an Azure subscription with Owner privilege
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-container-registry
+  - azure-kubernetes-service
+units:
+  - learn.microservices-apigateway-aspnet-core.introduction
+  - learn.microservices-apigateway-aspnet-core.environment-setup
+  - learn.microservices-apigateway-aspnet-core.api-gateway-bff
+  - learn.microservices-apigateway-aspnet-core.load-balancer
+  - learn.microservices-apigateway-aspnet-core.azure-app-gateway
+  - learn.microservices-apigateway-aspnet-core.verify-deployment
+  - learn.microservices-apigateway-aspnet-core.knowledge-check
+  - learn.microservices-apigateway-aspnet-core.summary
+iconUrl: /learn/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg
+badge:
+  uid: learn.microservices-resiliency-aspnet-core.badge
