@@ -68,7 +68,7 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="biceppowershell"
 
-### Deploy the template using Azure PowerShell
+### Deploy the template by using Azure PowerShell
 
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
@@ -82,7 +82,7 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 
 ::: zone pivot="jsonpowershell"
 
-### Deploy the template using Azure PowerShell
+### Deploy the template by using Azure PowerShell
 
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
@@ -96,7 +96,7 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 
 ::: zone pivot="bicepcli"
 
-### Deploy the template using the Azure CLI
+### Deploy the template by using the Azure CLI
 
 Run `az deployment group create` to deploy the template.
 
@@ -110,7 +110,7 @@ The deployment will take a minute or two to finish.
 
 ::: zone pivot="jsoncli"
 
-### Deploy the template using the Azure CLI
+### Deploy the template by using the Azure CLI
 
 Run `az deployment group create` to deploy the template.
 
@@ -124,7 +124,7 @@ The deployment will take a minute or two to finish.
 
 ## Verify the deployment
 
-To validate that your deployment has been created and sent to Azure, you go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
+To validate that your deployment has been created and sent to Azure, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
    1. Select your avatar in the upper corner of the page.
 
@@ -138,13 +138,13 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
    1. Select **1 Succeeded** to see the details of the deployment.
 
-      :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
    1. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
-      :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with no resources listed." border="true":::
 
-      :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with one virtual network resource listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one virtual network resource listed." border="true":::
 
       Leave the page open in your browser. You'll check on deployments again later.
 
@@ -156,7 +156,7 @@ To validate that your deployment has been created and sent to Azure, you go to t
 
    :::code language="json" source="code/4-template-after.json" range="12-14" :::
 
-1. Update the `addressPrefixes` to change the `/16` to `/15`. After you're done, the `addressSpace` property of the virtual network should look like this:
+1. Update the `addressPrefixes` to change `/16` to `/15`. After you're done, the `addressSpace` property of the virtual network should look like this:
 
    :::code language="json" source="code/4-template-after.json" range="16-20" :::
 
@@ -234,7 +234,7 @@ az deployment group what-if \
 
 ::: zone-end
 
-The what-if output is similar to the below:
+The what-if output is similar to the following one:
 
 ::: zone pivot="jsoncli,bicepcli"
 
@@ -258,7 +258,7 @@ You'll notice that the result is color-coded in addition to having a prefix:
 
 ::: zone pivot="jsonpowershell,jsoncli"
 
-1. Update the *azuredeploy.json* file in Visual Studio Code, remove all of the contents of the `resources` array. When you're done, your template should look like this:
+1. Update the *azuredeploy.json* file in Visual Studio Code, and remove all of the contents of the `resources` array. When you're done, your template should look like this:
 
    :::code language="json" source="code/4-template-empty.json" :::
 
@@ -294,7 +294,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
 ::: zone pivot="biceppowershell"
 
-1. Run `New-AzResourceGroupDeployment` with the `-Mode Complete` flag to run the deployment in complete mode:
+1. Run `New-AzResourceGroupDeployment` with the `-Mode Complete` flag to execute the deployment in complete mode:
 
     ```powershell
     New-AzResourceGroupDeployment `
@@ -305,13 +305,13 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     [!include[](exercise/confirm-whatif-output-powershell.md)]
 
-1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
+1. For **[A] Yes to All**, enter **A** to execute the deployment and clean out your environment.
 
 ::: zone-end
 
 ::: zone pivot="jsonpowershell"
 
-1. Run `New-AzResourceGroupDeployment` with the `-Mode Complete` flag to run the deployment in complete mode:
+1. Run `New-AzResourceGroupDeployment` with the `-Mode Complete` flag to execute the deployment in complete mode:
 
     ```powershell
     New-AzResourceGroupDeployment `
@@ -322,7 +322,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     [!include[](exercise/confirm-whatif-output-powershell.md)]
 
-1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment.
+1. For **[A] Yes to All**, enter **A** to execute the deployment and clean out your environment.
 
 ::: zone-end
 
@@ -362,6 +362,6 @@ In these next steps, you'll deploy an empty template over your existing environm
 
 ## Verify the deployment
 
-Go back to the open browser that you used earlier, and verify that the virtual network is no longer there, as in this screenshot:
+Go back to the open browser that you used earlier. Verify that the virtual network is no longer there, as in this screenshot:
 
-:::image type="content" source="../media/4-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with the virtual network resource no longer listed." border="true":::
+:::image type="content" source="../media/4-portal-deployment-complete-details.png" alt-text="Screenshot of the Azure portal interface for the complete deployment, with the virtual network resource no longer listed." border="true":::
