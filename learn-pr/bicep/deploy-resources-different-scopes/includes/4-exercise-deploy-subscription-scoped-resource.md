@@ -41,6 +41,9 @@ During the process, you'll:
   
    When you try to create a resource that matches these conditions, Azure will deny the resource creation.
 
+   > [!WARNING]
+   > Be careful when you use the **deny** policy effect for your policy definitions, especially at wide scopes like subscriptions and management groups. If they aren't created correctly, they can have unexpected effects that lead to outages. It's better to start with the **audit** policy effect, and then only switch to the **deny** effect once you've seen this work well over a period of time.
+
    You're creating the policy definition at the scope of the subscription. This means that the, once deployed, the policy definition will be available throughout all resource groups in the subscription.
 
 ## Assign the policy

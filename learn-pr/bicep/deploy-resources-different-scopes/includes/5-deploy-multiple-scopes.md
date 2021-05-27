@@ -60,9 +60,9 @@ Similarly, you can use the `subscription()` scope function to deploy resources a
 
 The `scope` keyword can be used on a few other specific resource types, not just modules. Extension resources use the `scope` keyword to specify which resource they apply to. Additionally, tenant-scoped resources can use the `scope` keyword so that you can deploy them from any template. For example, you might create a Bicep file to create all of your management group hierarchy, and use `targetScope = 'managementGroup'` in the template file, but then deploy child management groups and Azure subscriptions within the `tenant()` scope.
 
-Here's an example Bicep file that is deployed to a management group scope. The deploy creates a subscription, which is a tenant-scoped resource:
+Here's an example Bicep file that is deployed to a management group scope. The deploy creates a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
 
 :::code language="plaintext" source="code/5-mg-scope-tenant-resource.bicep" highlight="1,6" :::
 
-Notice that the template is deployed with a `targetScope` of `managementGroup`, but the `subscription` resource targets the `tenant()` scope.
+Notice that the template is deployed with a `targetScope` of `managementGroup`, but the subscription alias resource targets the `tenant()` scope.
 
