@@ -51,12 +51,12 @@ quiz:
       explanation: "This command requires that you first import the template."
   - content: "You created an Azure CycleCloud cluster based on the GitHub Slurm repository. Then, you configured its nodes with a cloud-init script. You need to connect to a cluster node from an Azure Cloud Shell session to validate that the script runs successfully. What authentication method should you use?"
     choices:
-    - content: "Azure Active Directory"
+    - content: "Azure Azure Active Directory"
       isCorrect: false
       explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Azure Active Directory authentication."
-    - content: "Active Directory Domain Services"
+    - content: "Azure Active Directory Domain Services"
       isCorrect: false
-      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Active Directory Domain Services authentication."
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Azure Active Directory Domain Services authentication."
     - content: "SSH keys"
       isCorrect: true
       explanation: "This connection relies on SSH key-based authentication."
