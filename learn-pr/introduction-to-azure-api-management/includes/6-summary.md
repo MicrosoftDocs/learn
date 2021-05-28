@@ -8,7 +8,7 @@ We applied these criteria in the context of our fictional food delivery organiza
 
 - Improved API standardization through enabling management of multiple APIs from a single administrative interface.
 - Enhanced centralization of all API operations by bringing multiple APIs under a single administrative umbrella.
-- Tightened API security resulting from permissions<!-- Can we say what kind of permissions? For example, "standardized permissions?" -->, access control policies, and attack surface reduction.
+- Tightened API security resulting from permissions, access control policies, and attack surface reduction.
 
 However, you also learned that some organizations might not benefit from using Azure API Management if they have:
 
