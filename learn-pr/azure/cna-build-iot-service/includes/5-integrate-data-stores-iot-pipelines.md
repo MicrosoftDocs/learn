@@ -11,7 +11,7 @@ For example, when collecting IoT data, you might choose to use the **/date** pro
 ## What are data pipelines in IoT scenarios?
 
 A common occurrence in IoT scenarios is the implementation of multiple concurrent data paths, either by partitioning the ingested data stream, or by forwarding data records to multiple pipelines. The corresponding architectural pattern is referred to as Lambda architecture and consists of two distinct types of pipelines.
-<!--ID/SME: You could remove the top-level bullets as I've done or revert.-->
+
 A fast (hot) processing pipeline:
 - Performs real-time processing.
 - Analyzes data.
