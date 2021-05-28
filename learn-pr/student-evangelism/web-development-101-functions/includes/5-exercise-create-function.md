@@ -67,7 +67,7 @@ You can now add the code to display your message.
     }
     ```
 
-1. Below the closing brace (`}`) you just added, add the following code to get the message and use `document.write` to display it on the webpage.
+1. Below the closing brace (`}`) in the code you just added, add the following code to get the message, and use `document.write` to display it on the webpage.
 
     ```javascript
     const message = getMessage('Ornella');
