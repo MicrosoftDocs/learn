@@ -27,9 +27,6 @@ When you use the `range()` function, you specify its start value and the number 
 > [!NOTE]
 > When you use the `range()` function, you provide two arguments. The first specifies the starting value, and the second tells Bicep the number of values you want. For example, if you use `range(3,4)` then Bicep will return the values `3`, `4`, `5`, and `6`. Be careful to ensure you're requesting the right number of values, especially when you use a starting value of 0.
 
-> [!TIP]
-> In this example, we've named the index variable `i`. This is the standard convention in Bicep. However, you can use any name you want.
-
 ## Access the iteration index
 
 With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a logical server in each location that's specified by an array, and you want the names of the servers to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
@@ -37,6 +34,9 @@ With Bicep, you can iterate through arrays and retrieve the index of the current
 ::: code language="plaintext" source="code/4-loop-index.bicep" highlight="7-8" :::
 
 Notice that the `name` property includes the expression `i+1`. The first value of the `i` index variable is zero, so you need to add `+1` to it if you want your server names to start with `1`.
+
+> [!TIP]
+> In this example, we've named the index variable `i`. This is the standard convention in Bicep. However, you can use any name you want.
 
 ## Filter items with loops
 
