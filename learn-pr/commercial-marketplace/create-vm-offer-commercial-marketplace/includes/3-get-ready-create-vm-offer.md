@@ -4,7 +4,7 @@ We just covered the way VM offers are sold in Azure Marketplace and the differen
 
 Regardless of whether you license your VM offer through Microsoft, you’ll need to provide the following information to publish your offer:
 
-- Customer Relationship Management (CRM) connection to receive [customer leads](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
+- Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
 - Offer categories that describe your application and help customers find your software in Azure Marketplace.
 
@@ -25,7 +25,7 @@ To facilitate this experience, you’ll be asked to provide all the information 
 
 ### VM offer plans and pricing
 
-VM offers must have at least one plan. You can create a variety of different plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, you can check out our [documentation on planning a virtual machine offer](https://docs.microsoft.com/azure/marketplace/marketplace-virtual-machines).
+VM offers must have at least one plan. You can create a variety of different plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, you can check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
 
 #### VM offer pricing
 
@@ -71,4 +71,4 @@ When you set up your VM offer plans in Partner Center, you’ll be able to dicta
 >[!Note]
 To publish a private plan, you’ll need to provide the Azure tenant IDs of the customers that want to use your software. Only those customers will see your private offer in the Azure portal.
 
-For more information on private offers, reference our [documentation on private offers in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/private-offers).
+For more information on private offers, reference our [documentation on private offers in the commercial marketplace](/azure/marketplace/private-offers).
