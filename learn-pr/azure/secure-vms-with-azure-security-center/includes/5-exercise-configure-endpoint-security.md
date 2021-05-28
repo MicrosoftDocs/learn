@@ -46,10 +46,10 @@ Let's use the Azure portal to create a new VM and install the extension.
 
     | Setting | Value |
     |---|---|
-    | **Project Details** |
+    | **Project details** |
     | Subscription | Select your subscription. |
     | Resource group | Select the resource group you previously created (*mslearnDeleteMe*) from the dropdown list. |
-    | **Instance Details** |
+    | **Instance details** |
     | Virtual machine name | Enter a VM name, such as *testvm1* .|
     | Region | Select a location closest to you from the dropdown list. |
     | **Administrator account** |
