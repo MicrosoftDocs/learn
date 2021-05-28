@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "What scenario describes most accurately the benefits of using the what-if operation when you're deploying a resource in Azure?"
     choices:
-    - content: "To validate if an ARM template uses recommended practices at the time of deployment"
+    - content: "To validate if an ARM template uses recommended practices at the time of deployment."
       isCorrect: false
-      explanation: "The ARM Template Test Toolkit checks your template for recommended practices. The what-if operation lets you see how resources will change if you deploy the template."
-    - content: "To verify the effects and impact of the deployment of the template"
+      explanation: "The what-if operation lets you see how resources will change if you deploy the template. To check your template for recommended practices, use the Bicep linter for Bicep files, or the ARM Template Test Toolkit (ARM-TTK) for JSON ARM templates."
+    - content: "To verify the effects and impact of the deployment of the template."
       isCorrect: true
       explanation: "The what-if operation lets you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes that will happen if the specified template is deployed."
-    - content: "To deploy the template in a sandbox environment in order to validate if the results of the deployment match expected results"
+    - content: "To deploy the template in a sandbox environment in order to validate if the results of the deployment match expected results."
       isCorrect: false
       explanation: "The what-if operation evaluates the effects the deployment of the template against the target environment without making *any* changes to the environment."
   - content: "What's the effect of using *complete mode* when deploying?"

@@ -9,17 +9,17 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. Open a terminal window by using the **Terminal** menu. This menu usually opens at the bottom of the screen.
 
-1. If the dropdown menu on the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
+1. If the dropdown control to the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from and can skip to the next section.
 
     :::image type="content" source="../media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu." border="true":::
 
-   If not, select the dropdown menu, and choose **Select Default Shell**. Then select **pwsh** or **PowerShell**.
+   Otherwise, in the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
     :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
-1. You might have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
+1. You might have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it to the *scripts* folder, you can use this command:
 
    ```azurepowershell
    cd scripts
@@ -37,15 +37,19 @@ If the version number is `5.6.0` or later, go to the next section ("Sign in to A
 
 Otherwise, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
 
-### Sign in to Azure
+### Sign in to Azure by using Azure PowerShell
 
-1. From the terminal in Visual Studio Code, run this command to sign in to Azure. A browser opens so you can sign in to your account.
+1. In the Visual Studio Code terminal, run the following command:
 
     ```azurepowershell
     Connect-AzAccount
     ```
 
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+   A browser opens so that you can sign in to your Azure account.
+
+1. After you've signed in to Azure, the terminal displays a list of the subscriptions associated with this account. 
+ 
+   If you've activated the sandbox, a subscription named *Concierge Subscription* is displayed. Use it for the rest of the exercise.
 
 1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
 
@@ -55,15 +59,15 @@ Otherwise, you need to [install the latest version of Azure PowerShell](/powersh
     ```
 
    > [!NOTE]
-   > If you've used more than one sandbox recently, there might be more than one Concierge Subscription listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
+   > If you've used more than one sandbox recently, the terminal might display more than one instance of *Concierge Subscription*. In this case, use the next two steps to set one as the default subscription. If the preceding command was successful, and only one *Concierge Subscription* is listed, skip the next two steps.
 
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for `Concierge Subscription`, and copy the second column. It looks something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. Get the subscription ID. Running the following command lists your subscriptions and their IDs. Look for `Concierge Subscription`, and then copy the ID from the second column. It looks something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
 
     ```azurepowershell
     Get-AzSubscription
     ```
 
-1. Change your active subscription to the Concierge Subscription. Be sure to substitute *{Your subscription ID}* with the one that you copied.
+1. Change your active subscription to *Concierge Subscription*. Be sure to replace *{Your subscription ID}* with the one that you copied.
 
     ```azurepowershell
     $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
