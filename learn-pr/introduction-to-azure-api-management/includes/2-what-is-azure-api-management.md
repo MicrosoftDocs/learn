@@ -2,7 +2,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 
 ## What is API lifecycle management?
 
-*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module<!-- Should this be "course?" -->, we'll pick up after your APIs have already been designed, coded, and deployed. This way, we can concentrate on the rest of the API lifecycle management tasks, which include:
+*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module, we'll pick up after your APIs have already been designed, coded, and deployed. This way, we can concentrate on the rest of the API lifecycle management tasks, which include:
 
 - Providing API documentation, testing, and code samples.
 - Onboarding and off-boarding users.
@@ -10,8 +10,8 @@ Let's start with a quick overview of Azure API Management and its core features.
 - Implementing API revisions in a controlled and safe way.
 - Managing multiple versions of an API.
 - Implementing API access controls, such as authentication and call rate limits.
-- API reporting for usage, errors, and so on.<!-- For consistency with the rest of the bulleted list, can we start this bulleted sentence and the next with a verb ending with a gerund (ing)? For example, providing, onboarding, managing, etc. -->
-- Analytics for both your company and for the developers who use the APIs.
+- Providing API reporting for usage, errors, and so on.
+- Managing analytics for both your company and for the developers who use the APIs.
 
 ## Azure API Management definition
 
@@ -21,7 +21,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 - Administration interface
 - Developer portal
 
-:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management, include the administration interface, gateway, and developer portal.":::<!-- Can we also say something about it being the go-between between the items on the left and the servers on the right? -->
+:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management, include the administration interface, gateway, and developer portal.":::
 
 > [!IMPORTANT]
 > Azure API Management does *not* host your actual APIs; your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure, while leaving your deployed backend APIs untouched.
