@@ -1,4 +1,4 @@
-In this unit, you'll learn how Azure Artifacts TODO.
+In this unit, you'll get a brief overview about how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
 
 Let's check back in with the the team as they decide whether Azure Artifacts is the appropriate way to host their .NET package.
 
@@ -38,21 +38,13 @@ After that, we update the pipeline that creates our app. The update enables us t
 
 Our app might want to use this newer version of the package. In that case, we update the app to reference the newer version, and run the tests locally to make sure this new version works with our app. When we're satisfied that everything works, we submit the app change to the pipeline. It builds with the new version of the package dependency.
 
---TODO
-
 **Amita:** This sounds like a good plan, and it will help the other team too. And it will keep the code from *drifting*, as you put it. That will help QA as well.
 
-**Mara:** Great! If it's settled, I'll move the code for the package into its own repository.
-
-**Andy:** I'll get started on setting up the Azure Artifacts feed.
-
---TODO
-
-#### Include a versioning strategy in the build pipeline
+## Include a versioning strategy in your build pipeline
 
 When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you've tested the package can you know its quality. Because package versions should never be changed, it becomes challenging to choose a certain version beforehand.
 
-[Azure Artifacts](/azure/devops/artifacts/?azure-portal=true) associates a quality level with each package in its feeds, as well as distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
+Azure Artifacts associates a quality level with each package in its feeds, as well as distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
 
 Feeds in Azure Artifacts have three different views by default. These views are added at the moment a new feed is created. The three views are:
 
@@ -60,21 +52,17 @@ Feeds in Azure Artifacts have three different views by default. These views are 
 * Prerelease. The @prerelease view contains all packages that have a label in their version number.
 * Local. The @local view contains all release and prerelease packages as well as the packages downloaded from upstream sources.
 
-#### Using views
-
 You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt-in to prereleases of a certain quality level.
 
-### Package security in Azure Artifacts
+## Package security in Azure Artifacts
 
 Ensuring the security of your packages is as important as ensuring the security of the rest of your code. One aspect of package security is securing access to the package feeds where a feed, in Azure Artifacts, is where you store packages. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
-#### Feed permissions overview
+### Feed permissions
 
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
-To learn more about how to configure secure access to package feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions?azure-portal=true).
-
-#### Configure the pipeline to access security and license ratings
+### Configure the pipeline to access security and license ratings
 
 There are several tools available from third parties to help you assess the security and license rating of the software packages you use.
 

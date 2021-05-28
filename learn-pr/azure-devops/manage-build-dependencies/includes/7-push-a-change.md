@@ -36,7 +36,7 @@ Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGa
 
 1. To verify your work, build the project.
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
@@ -46,7 +46,7 @@ Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGa
 
 Now that you've added the new property to the `Score` class, and verified the project builds successfully, you can update the package's version. You can then push your change to GitHub so that Azure Pipelines can build and publish the updated package.
 
-1. Open *azure-pipelines.yml*, and change the `majorVersion` from `0` to `1`, and save the file.
+1. Open *azure-pipelines.yml*, and change the `minorVersion` from `0` to `1`, and save the file.
 
     ```yml
     minorVersion: '1'

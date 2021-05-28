@@ -20,3 +20,5 @@ You might need to consider the language of the package and the process for acces
 * [NPM](https://docs.npmjs.com?azure-portal=true)
 * [Maven](https://maven.apache.org/?azure-portal=true)
 * [Docker](https://www.docker.com/?azure-portal=true)
+
+To learn more about how to configure secure access to package feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions?azure-portal=true).

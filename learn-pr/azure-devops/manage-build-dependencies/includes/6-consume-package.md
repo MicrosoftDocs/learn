@@ -22,7 +22,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     git checkout -b models-package upstream/models-package
     ```
 
-    The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from the Microsoft repository on GitHub, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, verify that the **Models** directory no longer exists in the file explorer.
 
@@ -32,7 +32,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 1. Open the **Tailspin.SpaceGame.Web.csproj** file and add the following `ItemGroup`:
 
-    [!code-xml[](code/6-tailspin.spacegame.web.csproj?highlight=3)]
+    [!code-xml[](code/6-tailspin.spacegame.web.csproj?highlight=2)]
 
     Be sure to place the `ItemGroup` inside the `Project` node. Your file should resemble this:
 
@@ -62,8 +62,10 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous unit.
 
-> [!NOTE]
-> When you save the file, Visual Studio Code might ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies.
+1. Save the file.
+
+    > [!NOTE]
+    > When you save the file, Visual Studio Code might ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies.
 
 ## Modify the pipeline configuration
 

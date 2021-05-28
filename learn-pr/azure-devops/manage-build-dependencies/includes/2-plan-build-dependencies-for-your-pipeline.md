@@ -4,6 +4,8 @@ Codebases are always growing larger and more complex. It's unusual for a team to
 
 Let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
 
+## Team meeting
+
 **Andy:** Hi everyone. I was chatting with the team who's working on the back end system for _Space Game_. They could use the models we use for the website in a back end app they plan to write.
 
 **Amita:** What do you mean by models?
@@ -44,7 +46,7 @@ One tradeoff is that with a package, you have another codebase to test and maint
 
 When multiple apps can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
 
-### TODO Identify dependencies
+## How can I identify dependencies?
 
 If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be reusable, stored in a central location, and versioned. You may even want to replace your own code with third-party components that are either open source or that you license.
 
@@ -81,7 +83,7 @@ You might already be familiar with these popular package systems:
 * **NuGet**: packages .NET libraries
 * **NPM**: packages JavaScript libraries
 * **Maven**: packages Java libraries
-* **Docker**: packages Windows applications
+* **Docker**: packages software in isolated units called _containers_
 
 ## Where are packages hosted?
 
@@ -89,21 +91,21 @@ You can host packages on your own network, or you can use a hosting service. A h
 
 Here are popular hosting services for the package types we just described:
 
-* NuGet.
+* [NuGet Gallery](https://www.nuget.org/?azure-portal=true)
 
-    NuGet packages are used for .NET code artifacts. These artifacts include .NET assemblies and related files, tooling and, sometimes, metadata. NuGet defines the way packages are created, stored, and consumed. A NuGet package is essentially a compressed folder structure with files in the ZIP format and has the *.nupkg* extension. See also, [An introduction to NuGet](/nuget/what-is-nuget?azure-portal=true).
+    NuGet packages are used for .NET code artifacts. These artifacts include .NET assemblies and related files, tooling and, sometimes, metadata. NuGet defines the way packages are created, stored, and consumed. A NuGet package is essentially a compressed folder structure with files in the ZIP format and has the *.nupkg* extension.
 
-* NPM.
+* [NPM](https://www.npmjs.com/?azure-portal=true)
 
-    An NPM package is used for JavaScript. An NPM package is a file or folder that contains JavaScript files and a package.json file that describes the metadata of the package. For node.js, the package usually contains one or more modules that can be loaded after the package is consumed. See also, [About packages and modules](https://docs.npmjs.com/about-packages-and-modules?azure-portal=true).
+    An NPM package is used for JavaScript. An NPM package is a file or folder that contains JavaScript files and a package.json file that describes the metadata of the package. For node.js, the package usually contains one or more modules that can be loaded after the package is consumed.
 
-* Maven.
+* [Maven Central Repository](https://mvnrepository.com/repos/central/?azure-portal=true)
 
-    Maven is used for Java-based projects. Each package has a Project Object Model file that describes the metadata of the project, and is the basic unit for defining a package and working with it. See also, [Apache Maven Project](https://maven.apache.org/?azure-portal=true).
+    Maven is used for Java-based projects. Each package has a Project Object Model file that describes the metadata of the project, and is the basic unit for defining a package and working with it.
 
-* Docker.
+* [Docker Hub](https://hub.docker.com/?azure-portal=true)
 
-    Docker packages are called images and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and executed by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images. See also, [Docker](https://www.docker.com/?azure-portal=true).
+    Docker packages are called images and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and executed by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images.
 
 A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products, such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
