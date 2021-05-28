@@ -1,4 +1,4 @@
-Azure Security Center offers built-in security management and threat protection for your cloud workloads. Security Center helps you find & fix vulnerabilities, aids in blocking malicious access, and identifying weak areas in your servers and network.
+Azure Security Center offers built-in security management and threat protection for your cloud workloads. Security Center helps you find and fix vulnerabilities, block malicious access, and identify weak areas in your servers and network.
 
 Security Center is available to every Azure subscription through a free, basic tier. You can activate a paid tier to get more features, including integration with on-premise resources and other cloud providers.
 
@@ -18,7 +18,7 @@ We created two VM resources in this module. To ensure you don't continue to get 
 
     ![Screenshot of the Azure portal showing the Delete resource group entry](../media/6-summary-cleanup.png)
 
-1. Type the resource group name (**mslearnDeleteMe**) into the entry and select **Delete**.
+1. Enter the resource group name (**mslearnDeleteMe**) into the entry, and select **Delete**.
 
 ## Further reading
 
