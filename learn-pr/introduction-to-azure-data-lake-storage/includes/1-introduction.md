@@ -22,11 +22,11 @@ However, with Azure Data Lake Storage, you eliminate data silos by bringing thes
 
 ## What will we be doing?
 
-In this module, you'll learn the fundamentals of Azure Data Lake Storage and be able to describe its main features. You’ll analyze the follow Azure Data Lake Storage capabilities to help you decide when to use them:
+In this module, you'll learn the fundamentals of Azure Data Lake Storage and be able to describe its main features. You’ll analyze the following Azure Data Lake Storage capabilities to help you decide when to use them:
 
 - **Ingest**: What methods can you use to bring data into Azure Data Lake Storage?
 - **Access**: How do you access stored data and control who can view the data?
-- **Analyze**: How does Azure Data Lake Storage help you run analytics workloads on stored and real-time data?"
+- **Analyze**: How does Azure Data Lake Storage help you run analytics workloads on stored and real-time data?
 
 ## What is the main goal?
 
