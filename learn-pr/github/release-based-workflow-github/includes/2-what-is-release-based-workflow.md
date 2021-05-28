@@ -10,7 +10,7 @@ From a planning mindset, being release-centric means that issues are divided up 
 
 The dominant feature of a project is its **board**. The board is the central plan of record for the iteration and contains all of the **cards** that are to be resolved. A card can represent an issue, a pull request, or even just a generic note.
 
-![A GitHub project board](../media/2-project-board.png)
+![Release 1.0 tracker](../media/2-project-board.png)
 
 By default, each card starts in the **To do** column and moves to **In progress** after work begins before ending in **Done**. You may customize these columns, add additional columns, or apply automation to the movement of these cards and their properties to fit your team's process.
 
@@ -32,7 +32,7 @@ For teams, or possibly subsets of teams, GitHub offers **milestone** tracking.
 
 Milestones are similar to project tracking in that there is an emphasis on the prioritized completion of issues and pull requests. However, where a project may be focused on the team's process, a milestone is focused on the product.
 
-![A GitHub project board](../media/2-milestone-progress.png)
+![Site ready for first deployment](../media/2-milestone-progress.png)
 
 Learn more about [tracking the progress of your work with milestones](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones?azure-portal=true).
 
