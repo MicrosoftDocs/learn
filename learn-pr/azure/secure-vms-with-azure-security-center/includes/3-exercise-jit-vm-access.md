@@ -1,17 +1,17 @@
-You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the below instructions to see the steps necessary.
+You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
 
-## Create a new Virtual Machine
+## Create a new VM
 
-Let's start by creating a Virtual Machine using the Cloud Shell.
+Let's start by creating a virtual machine using Azure Cloud Shell.
 
 > [!NOTE]
 > This exercise can't be performed in the Azure Sandbox, so make sure to select a subscription that's enrolled in the standard tier of Security Center, or has an active 30-day trial for Security Center.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is setup for the standard tier.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is set up for the standard tier.
 
-1. Select the Cloud Shell button from the top toolbar - this will open the Cloud Shell at the bottom of the portal window.
+1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. This will open Cloud Shell at the bottom of the portal.
 
-1. Start by setting some default values, so you don't have to type them multiple times.
+1. Start by setting some default values, so you don't have to enter them multiple times.
 
     Set a default location. Here we'll use **eastus**, but feel free to change that to a location closer to you.
 
@@ -22,7 +22,7 @@ Let's start by creating a Virtual Machine using the Cloud Shell.
     <!-- Paste tip-->
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Next, create a new Azure Resource Group to hold your VM resources. We're using the name `mslearnDeleteMe` here to remind ourselves to delete this group when we are finished.
+1. Next, create a new Azure *resource group* to hold your VM resources. We're using the name `mslearnDeleteMe` here to remind ourselves to delete this group when we are finished.
 
     ```azurecli
     az group create --name mslearnDeleteMe --location eastus
@@ -34,18 +34,18 @@ Let's start by creating a Virtual Machine using the Cloud Shell.
     az configure --defaults group="mslearnDeleteMe"
     ```
 
-1. Next, use the following command to create a new Windows-based virtual machine. Make sure to replace the `{your-password-here}` value below with a valid password.
+1. Next, run the following command to create a new Windows-based VM. Make sure to replace the following `<your-password-here>` value that with a valid password.
 
     ```azurecli
     az vm create \
         --name SRVDC01 \
         --image win2016datacenter \
         --admin-username azureuser \
-        --admin-password {your-password-here}
+        --admin-password <your-password-here>
     ```
 
     It takes a few minutes to create the VM and supporting resources. You should get a response similar to:
-    
+
     ```json
     {
       "fqdns": "",
@@ -66,13 +66,17 @@ You should be able to connect and administer the VM. Let's fix that!
 
 ## Enable JIT VM access in Security Center
 
-1. Navigate to **Security Center** using the tile on the main Azure dashboard.
+1. On the home page of the [Azure portal](https://portal.azure.com?azure-portal=true) in the top search bar, search for and select  **Security Center**. The **Overview** pane for the *Security Center* appears.
 
-1. Select the **Just in time VM access** section under **ADVANCED CLOUD DEFENSE**.
+1. In the left menu pane, under **Cloud Security**, select **Azure Defender**. The **Azure Defender** pane appears for the Security Center.
 
-1. Select your VM under the **Recommended** tab.
+1. In the main window, under **Advanced protection**, select ***Just-in-time VM access**. The **Just-in-time VM access** pane appears.
 
-1. Select the **Enable JIT** button with your selected VM, as shown below.
+1. Under **Virtual machines**, select the **Not Configured** tab.
+
+1. Select the virtual machine from the resource group, MSLEARNDELETEME.
+
+1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot. The **JIT VM access configuration** pane appears for your VM.
 
     ![Screenshot that depicts how you can enable JIT VM Access for a selected VM.](../media/M3-RDP02.png)
 
@@ -82,13 +86,15 @@ Once you enable the JIT rules, you can examine the Network Security Group for th
 
 Notice that the rules are applied to the internal address, and all management ports are included - both Remote Desktop Protocol (3389) and SSH (22).
 
+1. On the upper menu bar, select **Save**. The **Just-in-time VM access** pane reappears.
+
 ## Request Remote Desktop Access
 
 If you try to RDP into the Windows VM at this point, you will find that access is blocked. When your admin needs access, they can come into Security Center to request access.
 
-1. Switch to the **Configured** tab in Security Center.
+1. Under **Virtual machines**, select the **Configured** tab.
 
-1. Select your VM and use the **Request access** button to open up the management ports.
+1. Select your VM, and then select **Request access** to open up the management ports.
 
     ![Screenshot that depicts how you can request access to a VM.](../media/M3-RDP04.png)
 
@@ -96,6 +102,6 @@ If you try to RDP into the Windows VM at this point, you will find that access i
 
     ![Screenshot that depicts opening a port by selecting On for its toggle.](../media/M3-RDP05.png)
 
-1. Use the **Open ports** button to finalize the request. You can set the number of hours to keep the port open from this panel as well. Once the time has expired, the port(s) will be closed, and access will be denied.
+1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. Once the time has expired, the port(s) will be closed, and access will be denied.
 
 Now, your Remote Desktop client should be able to connect successfully - at least for the time period you've allotted through Security Center.

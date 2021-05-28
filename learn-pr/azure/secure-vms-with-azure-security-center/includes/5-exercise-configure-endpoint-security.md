@@ -1,6 +1,8 @@
 Azure Security Center monitors the status of antimalware protection for your VMs. Security Center notes issues, such as detected threats and insufficient protection, that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
 
-1. Open the Security Center overview page - you can select the **Home** button from the left-hand sidebar and then **Security Center** from the dashboard, or use the search function to quickly navigate to Security Center.
+1. Open the Security Center overview page. elect the **Home* > Security Center** link in the upper left corner of the portal.
+
+1. In the left menu pane, select **Overview**. The **Overview pane for the Security Center appears.
 
 1. Select the **Compute & apps** section under **RESOURCE SECURITY HYGIENE**.
 
@@ -40,17 +42,25 @@ Let's use the Azure portal to create a new VM and install the extension.
 
 1. Select **Windows Server 2016 Datacenter** from the quick picklist.
 
-1. Fill out the **Basics** tab with the following information.
-    - **Subscription**: select your subscription.
-    - **Resource group**: select the resource group you created earlier (**mslearnDeleteMe**) from the drop-down list.
-    - **Virtual machine name**: enter a VM name such as _testvm1_.
-    - **Region**: select a region such as _East US_.
-    - **Username**: select a valid username you will remember.
-    - **Password**: select a valid password you will remember.
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting | Value |
+    |---|---|
+    | **Project Details** |
+    | Subscription | Select your subscription. |
+    | Resource group | Select the resource group you previously created (*mslearnDeleteMe*) from the dropdown list. |
+    | **Instance Details** |
+    | Virtual machine name | Enter a VM name, such as *testvm1* .|
+    | Region | Select a location closest to you from the dropdown list. |
+    | **Administrator account** |
+    | Username | Select a valid username you will remember. |
+    | Password | Select a valid password you will remember. |
 
     ![Screenshot showing the Basic tab for VM creation](../media/7-create-vm.png)
 
-1. Select the **Advanced** tab. Here you can add extensions to the new VM. Click the **Select an extension to install** and use the search box to locate **Microsoft Antimalware** and select **Create** to add it to the VM.
+1. Select the **Advanced** tab. Here you can add extensions to the new VM. Select **Select an extension to install**, and search for and select **Microsoft Antimalware**.
+
+1. Select **Create** to add it to the VM.
 
 1. The options for the extension include the ability to ignore specific folders, filenames, and control when and how the extension scans the disk for malware. You can leave the default options in place.
 
@@ -60,7 +70,7 @@ Let's use the Azure portal to create a new VM and install the extension.
 
     ![Screenshot showing the Advanced tab with Microsoft malware extension installed](../media/7-install-ms-malware2.png)
 
-1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Azure Security Center.
+1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Azure Security Center:
     - Detailed monitoring which can be viewed in Azure Monitor.
     - Boot diagnostics
     - OS guest diagnostics
@@ -73,16 +83,17 @@ Let's use the Azure portal to create a new VM and install the extension.
 
     ![Screenshot showing the diagnostic options in the VM creation portal](../media/5-set-storage-account.png)
 
-1. Select **Review + Create**, verify the settings, and select **Create** to deploy the new VM.
+1. Select **Review + create**, verify the settings, and then select **Create** to deploy the new VM.
 
-This will take a few minutes to complete - you can monitor the deployment through the **Notifications** (bell icon) view, or by clicking on the deployment message. While it deploys, let's examine how you'd add malware protection to an _existing_ VM.
+This will take a few minutes to complete - you can monitor the deployment through the **Notifications** (bell icon) view, or by selecting the deployment message. While it deploys, let's examine how you'd add malware protection to an _existing_ VM.
 
-## Adding the extension to an existing VM
+## Add the extension to an existing VM
 
 You can also add the antimalware extension to an existing VM after it's deployed. This can be done with command-line tools (so it can be scripted), using the REST APIs, or through the Azure portal. Here's the steps you'd use for the portal:
 
-1. First, select the VM you want to install the extension on.
-1. Select the **Extensions** section under **Settings**.
+1. Select the VM onto which you want to install the extension.
+
+1. In the left menu pane, under **Settings**, select **Extensions**.
 
     ![Screenshot showing the Add Extension option](../media/7-install-ms-malware3.png)
 
