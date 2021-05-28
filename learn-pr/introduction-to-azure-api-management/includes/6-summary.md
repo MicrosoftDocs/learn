@@ -1,4 +1,4 @@
-Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and exposing<!-- Same comment about changing the word "exposing." --> your organization's APIs. To help you make that decision, we presented some criteria you can use:
+Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and publishing your organization's APIs. To help you make that decision, we presented some criteria you can use:
 
 - Number of APIs
 - Rate of API changes
