@@ -1,33 +1,4 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
-
-    Goal: briefly state that this unit will define the product.
-
-    Heading: none
-
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
 Let's start with a quick overview of Azure API Management and its core features. This overview should help you decide whether Azure API Management might be a suitable solution for reducing your company's API complexity.
-
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-
-    Heading:
-        "## What is <concept>?"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
 
 ## What is API lifecycle management?
 
@@ -42,25 +13,6 @@ Let's start with a quick overview of Azure API Management and its core features.
 - API reporting for usage, errors, and so on.<!-- For consistency with the rest of the bulleted list, can we start this bulleted sentence and the next with a verb ending with a gerund (ing)? For example, providing, onboarding, managing, etc. -->
 - Analytics for both your company and for the developers who use the APIs.
 
-<!-- 3. Define the product -------------------------------------------------------------
-
-    Goal:
-        Give a formal and precise definition of the product.
-
-    Heading:
-        "## <product> definition"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<product> is..." (ensure this is a definition, do not give use cases like "<product> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "Azure Logic Apps definition"
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
-
 ## Azure API Management definition
 
 *Azure API Management* is a cloud service that gives you a platform for publishing, securing, maintaining, and analyzing all your company's APIs. Azure API Management accomplishes these tasks by offering three main components:
@@ -73,7 +25,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 
 > [!IMPORTANT]
 > Azure API Management does *not* host your actual APIs; your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure, while leaving your deployed backend APIs untouched.
-<!-- Could we  put the following sections in the same order as the graphic? -->
+
 ## Gateway
 
 The *Azure API Management gateway* is an Azure endpoint that accepts all calls from all your APIs. The gateway:
@@ -126,26 +78,6 @@ Azure API Management provides several service tiers, each of which offers a dist
 > [!NOTE]
 > The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per million calls. The pricing for all the other tiers is per hour.
 
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the <product> solves one of the customer tasks in your <scenario>.
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
-
-    Heading:
-        "## How to <solve scenario>"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the <product> solved the <scenario>.
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
-
 ## How to apply policies to API requests and responses
 
 One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. This is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
@@ -167,30 +99,3 @@ Azure API Management solves the API policy problem by enabling you to set polici
 - **on-error**: The policies in this section are applied when an API request or response generates an error.
 
 :::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound and backend policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer.":::
-
-<!-- 5. Additional content (optional, as needed) ------------------------------------------------
-
-    Goal:
-        The section is a catch-all for any information not covered in the sections above.
-        Repeat the pattern here as many times as needed.
-
-    Possible topics:
-        - Key feature(s).
-        - Example use case in addition to the scenario.
-        - High-level of how practitioners use the product (e.g. there's an API and a web UI to support multiple use cases).
-        - Business value (e.g. it lets you do something that would be difficult to achieve without <product>).
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
