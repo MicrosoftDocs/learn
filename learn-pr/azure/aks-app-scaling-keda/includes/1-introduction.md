@@ -26,7 +26,7 @@ By the end of this session, you'll be able to understand which Kubernetes scalin
 
 ## Prerequisites
 
-* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes]([/topic/what-is-kubernetes](ttps://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan)).
+* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 * Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 * Familiarity with [Docker](https://docker.com) and Docker images.
 * An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
