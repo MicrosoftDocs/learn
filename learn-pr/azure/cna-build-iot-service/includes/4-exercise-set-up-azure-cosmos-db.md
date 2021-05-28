@@ -43,7 +43,6 @@ To perform this exercise, you need:
    | Backup interval | **24 Hour(s)** |
    | Backup interval | **2 Day(s)** |
    | Backup storage redundancy | **Locally-redundant backup storage** |
-<!--ID/SME: Please check the syntax for the NOTES.-->
    > [!NOTE]
    > These choices don't represent the recommended settings, but are acceptable in a lab environment.
 
