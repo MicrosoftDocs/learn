@@ -77,9 +77,11 @@ We have an Azure function app with logic to print a message to the log window. W
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
+
+    The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource. The **Create Function App** pane appears.
 
