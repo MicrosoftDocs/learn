@@ -22,7 +22,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 ## Deploy Azure SQL Database using PowerShell
 
-To set up the database back end for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+To set up the database back end for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy, you'll use Azure Cloud Shell, which is on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -109,7 +109,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Configure database schema using GitHub Actions
 
-1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
+1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<your-server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
 1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
@@ -140,13 +140,13 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 The final step is to load in the route reference data and identify a bus route to monitor.
 
-1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following to start a bash session.
+1. By this point, the script in Azure Cloud Shell to the right should be complete. Run the following to start a bash session.
 
     ```powershell
     bash
     ```
 
-1. Start a sqlcmd session with the below commands. Note you'll need to add your server name and password.
+1. Start a sqlcmd session with the following commands. Note you'll need to add your server name and password.
 
     ```bash
     TERM=dumb
@@ -223,4 +223,4 @@ The final step is to load in the route reference data and identify a bus route t
     GO
     ```
 
-1. Finally, select **CTRL+C** to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
+1. Finally, press <kbd>Ctrl+C</kbd> to exit sqlcmd, and run **`pwsh`** to switch back to PowerShell.
