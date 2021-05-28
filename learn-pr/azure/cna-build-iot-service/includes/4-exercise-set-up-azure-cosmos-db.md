@@ -59,10 +59,10 @@ To perform this exercise, you need:
 
 1. On the **Quick start** blade of the newly provisioned Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, and then in the **Common Tasks** section, select **New Database**.
 1. On the **New Database** blade, specify the following settings (leave others with their defaults), and then select **OK**.
-<!--ID/SME: I removed "create new" from the table. Please confirm that this is correct.-->
+
    | Setting | Configuration |
    | --- | --- |
-   | Database id | **iotdb** |
+   | Database id Create new | **iotdb** |
    | Throughput (autoscale) | **Autoscale** |
    | Max RU/s | **4000** |
 
