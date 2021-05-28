@@ -24,9 +24,9 @@ Start by creating a new page in Visual Studio Code.
     code .
     ```
 
-1. On the **Explorer** pane, hover over *Functions*, and then select *New File*.
+1. On the **Explorer** pane, hover over **Functions**, and then select the **New File** icon.
 
-   :::image type="content" source="../media/functions-create-file.png" alt-text="Screenshot of the Explorer pane with 'New File' icon highlighted.":::
+   :::image type="content" source="../media/functions-create-file.png" alt-text="Screenshot of the Explorer pane with the 'New File' icon highlighted.":::
 
 1. Name the new file *index.html*, and then select Enter.
 
@@ -58,7 +58,7 @@ You can now add the code to display your message.
 
 1. In the *index.html* file, below the commented line that reads `//TODO: Add hello code`, create a function by adding the following code. 
  
-   The function takes one parameter, called `name`, and it returns a string that says 'Hello' and the name of the person providing input:
+   The function takes one parameter, called `name`, and it returns a string that says "Hello" and the name of the person who's providing the input:
 
     ```javascript
     // TODO: Add hello code
@@ -86,11 +86,11 @@ Your page is now created! Let's see how it looks.
 
     :::image type="content" source="../media/launch-live-server.png" alt-text="Screenshot of the Command Palette with 'Live Server: Open with Live Server' highlighted.":::
 
-   Live Server opens in your browser, displaying the message *Hello, Ornella...*.
+   Live Server opens in your browser, and the "Hello, Ornella..." message is displayed.
 
-    :::image type="content" source="../media/hello-ornella.png" alt-text="Screenshot of the a browser window displaying the message 'Hello, Ornella...'.":::
+    :::image type="content" source="../media/hello-ornella.png" alt-text="Screenshot of the browser window, displaying the message 'Hello, Ornella...'.":::
 
-You've now created and called a function to display a message. You can try changing the name and saving the file to see the updated results.
+You've now created and called a function to display a message. You can try changing the name and saving the file again to see the updated results.
 
 > [!IMPORTANT]
 > Keep Visual Studio Code and your browser open to use in an upcoming unit.
