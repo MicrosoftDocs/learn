@@ -31,7 +31,7 @@ From the Azure DevOps demo generator site, to run the template, perform these st
 
 1. Select **Create Project**.
 
-    ![Screenshot of Create New Project page](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create a new project.":::
 
     It takes a few moments for the template to run.
 1. To go to your project in Azure DevOps, select **Navigate to project**.
@@ -58,7 +58,7 @@ Here, you move the sixth item, **Move model data to its own package** to the **D
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple apps.
 
-![Screenshot of work item details](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure Boards showing work item details for the Move model data to its own package issue.":::
 
 To set up the work item:
 
@@ -72,7 +72,7 @@ To set up the work item:
 
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Screenshot of Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi6-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi6-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 

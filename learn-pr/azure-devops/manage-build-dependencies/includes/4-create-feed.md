@@ -12,7 +12,7 @@ In this unit, you'll set up Azure Artifacts and create a new feed. You'll use th
     1. Under **Scope**, leave the **Project** option selected.
     1. Select **Create**.
 
-        ![Screenshot of Create new feed dialog box](../media/4-setup-azure-artifacts-feed.png)
+        :::image type="content" source="../media/4-setup-azure-artifacts-feed.png" alt-text="A screenshot showing the details of the Create new feed dialog.":::
 
 1. Select **Connect to feed**.
 

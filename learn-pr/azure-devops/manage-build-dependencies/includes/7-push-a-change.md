@@ -70,7 +70,7 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
 1. Open the **Artifacts** tab and note the new version. Don't worry. Your old version is still there for any projects that still reference it.
 
-    ![Screenshot of Azure Artifacts, showing version 1.1 of the package](../media/7-artifacts-package-ver2.png)
+    :::image type="content" source="../media/7-artifacts-package-ver2.png" alt-text="A screenshot of the package in Azure Artifacts, showing version 1.1 of the package.":::
 
 1. As you did previously, write down the new version for the next unit.
 

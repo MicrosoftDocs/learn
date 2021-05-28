@@ -131,14 +131,14 @@ Here's how to set up a second pipeline to build the package, and upload that pac
 1. Go to the **Artifacts** tab.
 1. From the dropdown at the top, select **Tailspin.SpaceGame.Web.Models**.
 
-    ![Screenshot of Azure Artifacts dropdown selection](../media/5-feed-dropdown.png)
+    :::image type="content" source="../media/5-feed-dropdown.png" alt-text="A screenshot showing the location of the package from the dropdown.":::
 
     You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts.
 
-    ![Screenshot of Azure Artifacts, showing version 1.0 of the package](../media/5-artifacts-package.png)
+    :::image type="content" source="../media/5-artifacts-package.png" alt-text="A screenshot of the package in Azure Artifacts, showing version 1.0 of the package.":::
 
 1. Select the package to go to the details page. Then, copy the version number to a location where you can easily access it later.
 
-    ![Screenshot of Azure Artifacts dropdown selection](../media/5-package-details.png)
+    :::image type="content" source="../media/5-package-details.png" alt-text="A screenshot of Azure Artifacts showing package details. Highlighted is the version number for the package.":::
 
     You'll use this version number in the next unit.
