@@ -40,7 +40,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 After you've completed all of the preceding changes, your Bicep file should look like this example:
 
-::: code language="bicep" source="code/4-template.bicep" :::
+::: code language="bicep" source="code/5-template.bicep" :::
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
