@@ -28,7 +28,7 @@ When you publish your offer, you’ll be able to identify a preview audience tha
 
 ### Creating VM offer plans
 
-:::image type="content" source="../media/8-vm-offer-pricing-availability.png" alt-text="Screenshot of the pricing and availability step of the publishing process in Partner Center. This is part of the plan creation process.":::
+:::image type="content" source="../media/8-vm-offer-pricing-availability.png" alt-text="Screenshot of the pricing and availability step of the publishing process in Partner Center. This step is part of the plan creation process.":::
 
 In the plan overview, you’ll create your VM offer’s plans. Remember, all VM offers must have at least one plan. Your VM offer’s plans define the pricing and availability of your product to customers.
 You’ll choose the Azure regions in which your plan should be available on the plan setup page. Your plan must be available in at least one of the two following Azure regions:
@@ -39,7 +39,7 @@ You’ll choose the Azure regions in which your plan should be available on the 
 
 On the pricing and availability tab, you’ll choose which markets your VM offer will be available in from a list of over 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-create-plans#markets).
 
-:::image type="content" source="../media/9-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This is part of the pricing and availability step of the plan creation process.":::
+:::image type="content" source="../media/9-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
 
 This is also where you select your offer’s license model. As a reminder, the license model dictates whether your customers can purchase a license to use your software through Microsoft. You’ll have two licensing options:
 
@@ -50,13 +50,13 @@ This is also where you select your offer’s license model. As a reminder, the l
 After picking your license model and entering pricing information, you tell us whether you want to enable free trials and whether this is a public or private plan. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers you choose.
 
 >[!TIP]
-To publish a private plan, you'll need to know the Azure tenant IDs of your customers.
+>To publish a private plan, you'll need to know the Azure tenant IDs of your customers.
 
 For more detailed guidance on creating plans for your VM offer, reference our [documentation on VM offer plans](/azure/marketplace/azure-vm-create-plans)
 
 ### Completing your offer’s technical configuration
 
-:::image type="content" source="../media/10-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center. This is part of the plan creation process.":::
+:::image type="content" source="../media/10-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center.":::
 
 When you get to your offer's technical configuration, you'll be prompted to provide the following information about your VM offer:
 
@@ -68,17 +68,17 @@ When you get to your offer's technical configuration, you'll be prompted to prov
   
   - For Linux VMs, you'll select the version of the Linux OS in the "vendor" field.
   
-  - An OS friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you can use "Ubuntu 18.04 LTS" as your OS friendly name.
+  - An OS-friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you can use "Ubuntu 18.04 LTS" as your OS-friendly name.
 
 - Recommended VM sizes to deploy your software. Customers will see in these recommendations before they deploy your software from Azure Marketplace. You can provide up to 6 recommended VM sizes for your offer's plan.
 
 - Public or private open ports used to access your VM. Your offer might require open ports in addition to the default ports required for all VM offers. Additional ports needed will depend on your VMs configuration and operations.
 
-- The VM generation type that you want to publish. This decision should be based on your customers' needs. You can publish a generation 1 VM, a generation 2 VM, or both. For help understanding the difference between generation 1 and 2 VMs, reference our [documentation on support for generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
+- The VM generation type that you want to publish. This decision should be based on your customers' needs. You can publish a generation 1 VM, a generation 2 VM, or both. For help with understanding the difference between generation 1 and 2 VMs, reference our [documentation on support for generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
 
 - To wrap up the technical configuration, you'll provide the VM image that customers will use to deploy your offer. This is where you'll select your VM image from the shared image gallery (SIG) that's associated with your Azure tenant. If you don't see your image, make sure that you have access to the SIG. For help accessing your SIG, reference [this documentation](/azure/marketplace/azure-vm-create-using-approved-base#capture-image).
 
 When creating your plans, you can reuse the technical configuration from another plan to save time. If you choose to reuse a technical configuration from another plan, the technical configuration tab will not be shown for the plan you’re creating. The reused technical configuration, including any updates you make in the future, will be used for this plan. You won't be able to change this setting after you publish the offer.
 
 >[!NOTE]
-You should reuse the technical configuration whenever two or more of your offer's plans use the same VM image. Doing so makes it easier to keep your images up to date—just update the image once and all plans based on that technical configuration will also get updated.
+>You should reuse the technical configuration whenever two or more of your offer's plans use the same VM image. Doing so makes it easier to keep your images up to date—just update the image once and all plans based on that technical configuration will also get updated.
