@@ -25,3 +25,17 @@ By the end of this module, you'll be able to:
 - Write Bicep code that configures how loops are executed.
 - Create variable loops and output loops to make your templates even more flexible.
 - Control how your Azure resources are deployed.
+
+## Prerequisites
+
+You should have:
+
+- Familiarity with the basic Bicep template structure and syntax, including modules.
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+To follow along with the exercises in the module, you'll need:
+
+- [Visual Studio Code](https://code.visualstudio.com) installed locally.
+- Either:
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+  - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.

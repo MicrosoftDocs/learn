@@ -44,7 +44,7 @@ In the auditing settings for the logical servers, you need to specify a storage 
 
    Notice that you're creating a variable called `auditingEnabled`, which you'll use as the condition for deploying the auditing resources. When you create a variable like this, you make your Bicep code clearer and easier to read. Anyone who looks at the conditions on your resources will understand what's happening.
 
-   Also notice that the `sqlServerName` variable uses a function called `take()`. Storage account names have a maximum length of 24 characters, so this function trims the end off the string to ensure that the name is valid.
+   Also notice that the `auditStorageAccountName` variable uses a function called `take()`. Storage account names have a maximum length of 24 characters, so this function trims the end off the string to ensure that the name is valid.
 
 1. At the bottom of the file, below the resources, add the following resource definition for the storage account:
 

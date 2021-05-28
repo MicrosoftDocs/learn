@@ -18,7 +18,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Deploy multiple instances of resources by using loops.
     - Use output and variable loops.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Familiarity with the basic Bicep template structure and syntax.
+  - Familiarity with the basic Bicep template structure and syntax, including modules.
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.
   - Either of the following:
