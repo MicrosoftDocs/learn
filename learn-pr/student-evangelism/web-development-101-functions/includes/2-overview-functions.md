@@ -1,8 +1,8 @@
-Functions are a key building block for writing code. A function is a reusable collection of lines of code that makes something happen within your program. 
+Functions are key building blocks for writing code. A function is a reusable collection of lines of code that makes something happen within your program. 
 
 Functions are perfect for scenarios where you need to perform the same task multiple times. Rather than duplicate logic in multiple locations, which makes code hard to update later, you can centralize it in one location. That way, you can call it whenever you need the operation performed again. You can even call functions from other functions!
 
-Just as important is the ability to name a function. Although naming a function might seem trivial, the name provides a quick way of documenting a section of code. You could think of naming as a label on a button. For example, if I select a button that reads "Cancel timer," I know it's going to stop running the clock.
+Just as important is the ability to name a function. Although naming a function might seem trivial, the name provides a quick way of documenting a section of code. You could think of naming as a label on a button. For example, if you select a button that reads "Cancel timer," it's going to stop running the clock.
 
 ## Create and call a function
 
@@ -12,9 +12,9 @@ Functions are made up of three different components:
 
 * A *function body* is a block of code that runs when the function is called.
 * A *parameter* is another name for the input that's passed to a function.
-* Finally, there is a *return value*, or the output of the function.
+* Finally, there's a *return value*, or the output of the function.
 
-The syntax for a function looks like the following code:
+The syntax for a function is shown in the following code:
 
  ```javascript
  function nameOfFunction(parameter) { // function definition with some input
@@ -35,7 +35,7 @@ This function is called `displayGreeting`. When you run the function, the text "
 Whenever you want to call, or invoke, the function, you use the name of the function followed by a pair of parentheses (`()`). It's worth noting that you can define your function before or after you decide to call it. Either way, the JavaScript will find it for you, as long as it's within the scope of where you're calling it.
 
 ```javascript
-// calling our function
+// calling the function
 displayGreeting();
 ```
 
@@ -48,8 +48,8 @@ When you're creating functions, keep in mind a few best practices:
 
 * Use descriptive names that say what the functions are intended to do. For example, the name `displayGreeting` makes it clear that the purpose of the function is to display a greeting. A name like `greet`, for a function that performs the same task, is a little ambiguous. It might display a greeting, but it might also perform a different operation.
 
-* Use camelCasing to combine words. To write in camelCase, keep the first word of your variable or function lowercase, and capitalize each subsequent word. Because function and variable names can't contain spaces, camelCasing makes it faster to go back and read your code. For example, `displayGreeting` is easier to read than `displaygreeting`.
+* Use camelCasing to combine words. To write in camelCase, keep the first word of your variable or function lowercase, and capitalize each subsequent word. Because function and variable names can't contain spaces, camelCasing makes the words in your code easier to read. For example, `displayGreeting` is easier to read than `displaygreeting`.
 
-* Keep your functions focused on a specific task. Doing so not only makes a function easier to reuse throughout a program, but it also makes it easier to debug your code. If your function isn't performing the task you thought it would, you know that the problem is contained within that function.
+* Keep your functions focused on a specific task. Doing so not only makes a function easier to reuse throughout a program, but it also makes it easier to debug your code. If you have an issue with your function not performing the task you thought it would, you know the problem is contained within that function.
 
-* Use commented text to annotate what your functions do. To improve the readability of your code, include in the comment a short description of what each function does. You can create a comment by typing a double slash (`//`), followed by your description.
+* Use commented text to annotate your code and describe what your functions do. To improve the readability of your code, include in the comment a short description of each function's task. You create comments by typing a double slash (`//`), followed by your description. The comment ends when you start a new line.
