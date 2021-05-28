@@ -60,7 +60,7 @@ Azure Data Lake Storage supports high throughput for input/output&ndash;intensiv
 
 The Azure Data Lake Storage access control model supports both Azure role-based access control (RBAC) and Portable Operating System Interface for UNIX (POSIX) access control lists (ACLs). There are also a few extra security settings that are specific to Azure Data Lake Storage. You can set permissions either at the directory level or at the file level. All stored data is encrypted at rest by using either Microsoft-managed or customer-managed encryption keys.
 
-You can configure security settings in several ways, including by using the following app and frameworks:
+You can configure security settings in several ways, including by using the following apps and frameworks:
 
 - Azure Storage Explorer
 - Azure Command-Line Interface (Azure CLI)
