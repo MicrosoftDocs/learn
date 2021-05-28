@@ -28,9 +28,9 @@ Let's see the results!
 
 1. Return to your browser window.
 
-    You might see the "...Hello again!" message already displayed, because Live Server will have already refreshed the window.
+    The "...Hello again!" message might already be displayed, because Live Server will have already refreshed the window.
 
-1. Refresh the browser window. Notice that the original message is displayed and then, after 2 seconds, is replaced by "...Hello again!"
+1. Refresh the browser window. Notice that the original message is displayed and then, after 2 seconds, it's replaced by the "...Hello again!" message.
 
    :::image type="content" source="../media/hello-again.png" alt-text="Screenshot of the browser, displaying the '...Hello again!' message.":::
 
