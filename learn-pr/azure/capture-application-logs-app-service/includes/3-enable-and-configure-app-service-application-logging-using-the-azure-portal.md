@@ -54,7 +54,7 @@ In this step, you're going to use the Azure portal to enable app logging to the 
 
 1. Select **contosofashions\<_your-number_\>**. The **contosofashions\<_your-number_\>** pane appears.
 
-1. In the **Essnetials** section, to open the home page for the **Contoso Fashions** website, copy and paste the **URL** string (https&#58;//contosofashions\<_your-number_\>.azurewebsites.net) in a new browser tab. The *Contoso Fashions* home page should appear.
+1. In the **Essentials** section, to open the home page for the **Contoso Fashions** website, copy and paste the **URL** string (https&#58;//contosofashions\<_your-number_\>.azurewebsites.net) in a new browser tab. The *Contoso Fashions* home page should appear.
 
    You'll now set up the app logging.
 
