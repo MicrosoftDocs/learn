@@ -39,7 +39,7 @@ quiz:
           explanation: Incorrect. Although hello_world is a valid name, it doesn't follow the guidelines that recommend using camelCasing.
         - content: HelloWorld
           isCorrect: false
-          explanation: Although HelloWorld is a valid name, it doesn't follow the guidelines that recommend using camelCasing.
+          explanation: Incorrect. Although HelloWorld is a valid name, it doesn't follow the guidelines that recommend using camelCasing.
     - content: What function calls a function after a specified amount of time has elapsed?
       choices:
         - content: setTimeout
