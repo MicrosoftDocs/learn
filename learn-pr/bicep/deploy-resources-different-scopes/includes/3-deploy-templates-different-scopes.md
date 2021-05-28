@@ -8,7 +8,7 @@ Use the `targetScope` keyword to tell Bicep that the resources in the file are f
 
 :::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
-Notice that you're just telling Bicep that this will be deployed into a management group - you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources into. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
+Notice that you're just telling Bicep that this will be deployed into the scope of a management group - you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources into. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
 You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes the file will be deployed to a resource group.
 
@@ -16,7 +16,7 @@ You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGro
 
 ::: zone pivot="cli"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg` command. For tenant deployments, use `az deployment tenant create`.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg create` command. For tenant deployments, use `az deployment tenant create`.
 
 ::: zone-end
 
