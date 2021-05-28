@@ -1,4 +1,4 @@
-Our goal in this module was to help you evaluate whether Azure Data Lake Storage would be the correct choice for your big data storage requirements. To help you make that decisions, we presented some criteria you can use:
+Our goal in this module was to help you evaluate whether Azure Data Lake Storage would be the correct choice for your big data storage requirements. To help you make that decision, we presented some criteria you can use:
 
 - Costs
 - Data access
