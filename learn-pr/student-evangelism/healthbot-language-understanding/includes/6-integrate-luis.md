@@ -4,7 +4,7 @@ Integrating various LUIS models into your Azure Health Bot instance enables you 
 
 When you finish integrating the LUIS app that you created into your health bot later, you'll need to map it to a scenario. For this purpose, you'll use a preexisting template scenario, **Booking appointments**.
 
-1. Go to the home page of your health bot. In the pane on the left, select **Template catalog** under **Scenarios**.
+1. Go to the home page of your health bot. In the pane on the left, under **Scenarios** select **Template catalog**.
 
 1. Scroll down to **Popular Templates**, and select **Booking appointments**.
 
@@ -18,7 +18,7 @@ When you finish integrating the LUIS app that you created into your health bot l
 
    :::image type="content" source="../media/5-save-template.png" alt-text="Screenshot that shows saving a template.":::
 
-1. After the scenario is saved, go back to the home page of your health bot. In the pane on the left, select **Manage** under **Scenarios**.
+1. After the scenario is saved, go back to the home page of your health bot. In the pane on the left, under **Scenarios** select **Manage**.
 
 1. You should see your appointment scheduling scenario under **Scenario Management**.
 
@@ -36,15 +36,15 @@ You'll need to specify these two keys during the creation of the language model 
 
 ## Create a new language model in your health bot
 
-1. Go to the home page of your health bot. In the pane on the left, select **Models** under **Language**. At the top of the **Language models** page, select **+New** to create a new language model.
+1. Go to the home page of your health bot. In the pane on the left, under **Language** select **Models**. At the top of the **Language models** page, select **New** to create a new language model.
 
-   :::image type="content" source="../media/5-new-language-model.png" alt-text="Screenshot that shows the Language models +New button.":::
+   :::image type="content" source="../media/5-new-language-model.png" alt-text="Screenshot that shows the Language models New button.":::
 
    In the **New model** pane on the right, you need to enter details about your new language model, which is the conversation app that you created in LUIS.
 
 1. Enter the appropriate details for the name and description of your new language model. Under **Method**, make sure you choose **LUIS (NLP)** because you're exporting your LUIS app to your health bot. Fill in the other boxes:
 
-   * **Region**: Make sure that the selected region is the same as the region of your prediction resource. To check, go back to the LUIS portal and look in **Azure Resources** under the **MANAGE** tab.
+   * **Region**: Make sure that the selected region is the same as the region of your prediction resource. To check, go back to the LUIS portal and look in **Azure Resources** on the **MANAGE** tab.
    * **Application ID**: Go back to the LUIS portal. Select the **MANAGE** tab, and then select **Settings** in the pane on the left. Copy your **App ID**. Go back to the language model creation menu in your health bot and paste it in the **Application ID** box.
    * **Subscription key**: Go back to the LUIS portal. Select the **MANAGE** tab, and then select **Azure Resources** in the pane on the left. Copy the **Primary Key** from the **Prediction Resource** tab. Go back to the language model creation menu in the Health Bot portal and paste it in the **Subscription key** box.
    * **Bing Speller subscription key**, **Use staging model**, and **Verbose**: These boxes are for other features that you can enable for your LUIS application. For this tutorial, you can leave the defaults.

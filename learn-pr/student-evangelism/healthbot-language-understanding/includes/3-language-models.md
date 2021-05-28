@@ -50,7 +50,7 @@ Different models use different language recognition methods. Each method has its
 
 ## Add a RegEx model to your health bot
 
-1. Go to the home page of your health bot. In the left pane, select **Models** under **Language**. Select the **+New** option near the top of the page.
+1. Go to the home page of your health bot. In the left pane, under **Language** select **Models**. Select the **New** option near the top of the page.
 
    :::image type="content" source="../media/3-create-model.png" alt-text="Screenshot that shows how to create a new model." lightbox="../media/3-create-model.png":::
 
@@ -62,9 +62,9 @@ Different models use different language recognition methods. Each method has its
 
       :::image type="content" source="../media/3-details.png" alt-text="Screenshot that shows filling in details of the new model.":::
 
-1. After you've successfully created your RegEx language model, test it on Web Chat.
+1. After you've successfully created your RegEx language model, test it in Web Chat.
 
-   :::image type="content" source="../media/3-test-model.png" alt-text="Screenshot that shows testing your model on Web Chat." lightbox="../media/3-test-model.png":::
+   :::image type="content" source="../media/3-test-model.png" alt-text="Screenshot that shows testing your model in Web Chat." lightbox="../media/3-test-model.png":::
 
 1. After you're finished, exit Web Chat. Scroll through the various language models and find the **Greetings** language model. On the far right, select the **Edit** option.
 
