@@ -32,7 +32,7 @@ function displayGreeting() {
 
 This function is called `displayGreeting`. When you run the function, the text "Hello, world!" is printed to the console.
 
-Whenever you want to call, or invoke, the function, you use the name of the function followed by opening and closing parentheses (`()`). It's worth noting that you can define your function before or after you decide to call it. Either way, the JavaScript will find it for you, as long as it's within the scope of where you're calling it.
+Whenever you want to call, or invoke, the function, you use the name of the function followed by a pair of parentheses (`()`). It's worth noting that you can define your function before or after you decide to call it. Either way, the JavaScript will find it for you, as long as it's within the scope of where you're calling it.
 
 ```javascript
 // calling our function
@@ -50,6 +50,6 @@ When you're creating functions, keep in mind a few best practices:
 
 * Use camelCasing to combine words. To write in camelCase, keep the first word of your variable or function lowercase, and capitalize each subsequent word. Because function and variable names can't contain spaces, camelCasing makes it faster to go back and read your code. For example, `displayGreeting` is easier to read than `displaygreeting`.
 
-* Keep your functions focused on a specific task. Doing so not only makes a function easier to reuse throughout a program, but it also makes it easier to debug your code. If you have an issue with your function not performing the task you thought it would, you know the problem is contained within that function.
+* Keep your functions focused on a specific task. Doing so not only makes a function easier to reuse throughout a program, but it also makes it easier to debug your code. If your function isn't performing the task you thought it would, you know that the problem is contained within that function.
 
 * Use commented text to annotate what your functions do. To improve the readability of your code, include in the comment a short description of what each function does. You can create a comment by typing a double slash (`//`), followed by your description.
