@@ -191,6 +191,12 @@ To complete this exercise, verify that the redeployment has finished successfull
 
     :::image type="content" source="../media/3-production-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, showing that a storage account is deployed for auditing." border="true":::
 
-1. Select your logical server (look for the resource with type **Microsoft.Sql/servers**) and then, under **Security**, select **Auditing**. Verify that auditing has been enabled for this logical server.
+1. Select your logical server (look for the resource with type **Microsoft.Sql/servers**).
+
+1. In the search field, enter **Auditing**. Under **Security**, select **Auditing**.
+
+    :::image type="content" source="../media/3-sql-auditing-search.png" alt-text="Screenshot of the Azure portal interface for the logical server, showing the search field with Auditing entered." border="true":::
+
+1. Verify that auditing has been enabled for this logical server.
 
     :::image type="content" source="../media/3-sql-auditing.png" alt-text="Screenshot of the Azure portal interface for the logical server, showing that the auditing configuration is enabled." border="true":::

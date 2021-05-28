@@ -38,7 +38,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Verify your Bicep file
 
-After you've completed all of the preceding changes, your Bicep file should look like this example:
+After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
 
 ::: code language="bicep" source="code/5-template.bicep" :::
 
@@ -79,7 +79,7 @@ After the deployment is finished, you want to verify that new logical server and
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. Verify that new logical server and database are located in the regions you specified in the `locations` parameter's default value.
+1. Verify that new logical server and database are located in the East US 2 region, which you specified in the `locations` parameter's default value.
 
     :::image type="content" source="../media/5-loop-deployment.png" alt-text="Screenshot of the Azure portal, showing the deployment of the logical servers and databases in various locations." border="true":::
 

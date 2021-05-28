@@ -65,9 +65,13 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Verify your Bicep file
 
-After you've completed all of the preceding changes, your Bicep file should look like this example:
+After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
 
-   ::: code language="plaintext" source="code/8-template.bicep" highlight="16-36, 47-64" :::
+::: code language="plaintext" source="code/8-template.bicep" highlight="16-36, 47-64" :::
+
+Your *database.bicep* file should look like this example:
+
+::: code language="plaintext" source="code/8-database.bicep" highlight="68-70" :::
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
@@ -112,11 +116,15 @@ After the deployment is finished, you want to verify that new virtual networks a
 
    :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal, showing a list of virtual networks after deployment." border="true":::
 
-1. Select the virtual network named `teddybear-eastasia` and then, on the left pane, under **Settings**, select **Subnets**.
+1. Select the virtual network named `teddybear-eastasia`.
+
+1. In the search bar enter **Subnets**. Under **Settings**, select **Subnets**.
+
+   :::image type="content" source="../media/8-varloop-deployment-vnet-search.png" alt-text="Screenshot of the Azure portal interface for the virtual network, showing the search field with Subnets entered." border="true":::
 
 1. Verify that the deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
 
-    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal for the virtual network, showing two virtual network subnets after deployment." border="true":::
 
 1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
