@@ -61,11 +61,15 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
    }]
    ```
 
-   When you're finished, your *main.bicep* file should look like this:
+1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
 
    ::: code language="plaintext" source="code/8-template.bicep" highlight="16-36, 47-64" :::
 
-1. Save the changes to the file.
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
 

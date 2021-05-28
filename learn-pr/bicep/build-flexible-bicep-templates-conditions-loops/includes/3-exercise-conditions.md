@@ -16,11 +16,15 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template with a logical server and database
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or <kbd>Ctrl+S</kbd> (<kbd>⌘+S</kbd> on macOS). 
+1. Open Visual Studio Code
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or <kbd>Ctrl+S</kbd> (<kbd>⌘+S</kbd> on macOS). 
  
    Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it to.
 
-1. To define a logical server and database, add the following content to the file, along with the parameters and variable that these resources need.
+1. To define a logical server and database, add the following content to the file, along with the parameters and variable that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
    ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
@@ -56,11 +60,15 @@ In the auditing settings for the logical servers, you need to specify a storage 
 
    Notice that the definition includes the same `if` condition as the storage account. Also, the `storageEndpoint` and `storageAccountAccessKey` properties use the question mark (`?`) ternary operator to ensure that their values are always valid. If you don't do this, Azure Resource Manager evaluates the expression values before it evaluates the resource deployment condition and returns an error, because the storage account can't be found.
 
-   After you finish, your Bicep file should look like this:
-
-   ::: code language="bicep" source="code/3-template.bicep" :::
-
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
+
+::: code language="bicep" source="code/3-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
 

@@ -34,11 +34,15 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
    Notice that the module declaration loops over all the values in the `locations` array parameter.
 
-   The code in your *main.bicep* file should look like this:
-
-   ::: code language="bicep" source="code/5-template.bicep" :::
-
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your Bicep file should look like this example:
+
+::: code language="bicep" source="code/4-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
 
