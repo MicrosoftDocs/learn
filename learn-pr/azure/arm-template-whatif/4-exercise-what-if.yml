@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: arm-template-language-azure-shell-interface
 durationInMinutes: 8
-#TODO azureSandbox: true
+azureSandbox: true
 content: |
   [!include[](includes/4-exercise-what-if.md)]
