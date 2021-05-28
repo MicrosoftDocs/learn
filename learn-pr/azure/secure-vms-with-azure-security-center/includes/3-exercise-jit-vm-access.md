@@ -70,7 +70,7 @@ You should be able to connect and administer the VM. Let's fix that!
 
 1. In the left menu pane, under **Cloud Security**, select **Azure Defender**. The **Azure Defender** pane appears for the Security Center.
 
-1. In the main window, under **Advanced protection**, select ***Just-in-time VM access**. The **Just-in-time VM access** pane appears.
+1. In the main window, under **Advanced protection**, select **Just-in-time VM access**. The **Just-in-time VM access** pane appears.
 
 1. Under **Virtual machines**, select the **Not Configured** tab.
 
