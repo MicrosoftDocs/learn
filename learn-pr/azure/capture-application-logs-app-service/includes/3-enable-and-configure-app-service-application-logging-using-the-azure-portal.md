@@ -70,11 +70,11 @@ In this step, you're going to use the Azure portal to enable app logging to the 
 
     If it says **Storage not configured**, select that text, and follow the previous directions.
 
-1. IN the top menu bar, select **Container**. The **New container** pane appears.
+1. In the top menu bar, select **Container**. The **New container** pane appears.
 
 1. In the **Name** box, enter **asplogs**, and then select **Create**.
 
-1. IN the **Containers** pane, select **asplogs**, and then select **Select**.
+1. In the **Containers** pane, select **asplogs**, and then select **Select**.
 
 1. In the **Retention Period (Days)** box, enter **5**.
 
