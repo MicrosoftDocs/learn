@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of setting up an Azure Cosmos DB account and database. For more in-depth knowledge and tutorials regarding this topic, refer to:
+﻿This exercise provides an overview of setting up an Azure Cosmos DB account and database. For more in-depth knowledge and tutorials about this topic, refer to:
 
 * [Quickstart: Create an Azure Cosmos account, database, container, and items from the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal?azure-portal=true)
 * [Azure Cosmos DB resource model](https://docs.microsoft.com/azure/cosmos-db/account-databases-containers-items?azure-portal=true)
@@ -10,17 +10,17 @@ In this exercise, you'll:
 
 ## Prerequisites
 
-to perform this exercise, you need:
+To perform this exercise, you need:
 
 * An Azure subscription
 * A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create an Azure Cosmos DB account
 
-1. Start a web browser, go to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
-1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB** and, in the list of results, select **Azure Cosmos DB**.
-1. On the **Azure Cosmos DB** blade, select **+ Add**
-1. On the **Basics** tab of the **Create Azure Cosmos DB Account** blade, configure the following settings, and then, select **Next: Global Distribution**:
+1. Start a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB**, and in the list of results, select **Azure Cosmos DB**.
+1. On the **Azure Cosmos DB** blade, select **+ Add**.
+1. On the **Basics** tab of the **Create Azure Cosmos DB Account** blade, configure the following settings, and then select **Next: Global Distribution**.
 
    | Setting | Configuration |
    | --- | --- |
@@ -41,24 +41,24 @@ to perform this exercise, you need:
    | Setting | Configuration |
    | --- | --- |
    | Backup interval | **24 Hour(s)** |
-   | Backup interval | **2 Day(s)** |
+   | Backup retention | **2 Day(s)** |
    | Backup storage redundancy | **Locally-redundant backup storage** |
-
-   > ![NOTE]
+   
+   > [!NOTE]
    > These choices don't represent the recommended settings, but are acceptable in a lab environment.
 
 1. On the **Encryption** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Review + create**.
 1. On the **Review + create** tab of the **Create Azure Cosmos DB Account** blade, select **Create**.
 
-   > ![NOTE]
+   > [!NOTE]
    > Wait for the Azure Cosmos DB provisioning to complete. This might take about three minutes.
 
 1. Within the browser window displaying the Azure portal with the Azure Function app provisioning status blade, select **Go to resource**.
 
 ## Create an Azure Cosmos DB database
 
-1. On the **Quick start** blade of the newly provisioned Azure Cosmos DB blade, in the vertical menu, select **Data Explorer** and then, in the **Common Tasks** section, select **New Database**.
-1. On the **New Database** blade, specify the following settings (leave others with their defaults), and then select **OK**:
+1. On the **Quick start** blade of the newly provisioned Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, and then in the **Common Tasks** section, select **New Database**.
+1. On the **New Database** blade, specify the following settings (leave others with their defaults), and then select **OK**.
 
    | Setting | Configuration |
    | --- | --- |

@@ -19,9 +19,9 @@ abstract: |
   - Analyze and manage telemetry data.
   - Configure and manage IoT pipeline.
 prerequisites: | 
-  - Basic understanding of cloud computing.
-  - Basic familiarity with Azure.
-  - Basic familiarity with programming concepts.
+  - Basic understanding of cloud computing
+  - Basic familiarity with Azure
+  - Basic familiarity with programming concepts
 iconUrl: /learn/achievements/build-iot-service.svg
 levels:
 - intermediate
