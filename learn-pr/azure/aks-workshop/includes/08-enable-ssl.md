@@ -12,9 +12,9 @@ In this exercise, you will:
 
 ## Deploy cert-manager
 
-*cert-manager* is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use `cert-manager`to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
+*cert-manager* is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. cert-manager supports various sources, including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use `cert-manager`to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
 
-cert-manager uses Kubernetes custom resources. A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds and the API Server manage the lifecycle of the object.
+cert-manager uses Kubernetes custom resources. A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds, and the API Server manage the lifecycle of the object.
 
 Here, you'll use Helm to install cert-manager and then configure it to use Let's Encrypt as the certificate issuer.
 
@@ -24,7 +24,7 @@ Here, you'll use Helm to install cert-manager and then configure it to use Let's
     kubectl create namespace cert-manager
     ```
 
-1. You'll use the Jetstack Helm repository to find and install cert-manager. First, you'll add the Jetstack Helm repository by running the code below.
+1. You'll use the Jetstack Helm repository to find and install cert-manager. First, you'll add the Jetstack Helm repository by running the following code.
 
     ```bash
     helm repo add jetstack https://charts.jetstack.io
@@ -37,7 +37,7 @@ Here, you'll use Helm to install cert-manager and then configure it to use Let's
     kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.14/deploy/manifests/00-crds.yaml
     ```
 
-1. Install the cert-manager Helm chart
+1. Install the cert-manager Helm chart.
 
     ```bash
     helm install cert-manager \
@@ -86,7 +86,7 @@ Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificate
     code cluster-issuer.yaml
     ```
 
-1. Replace the existing content in the file with the following text.
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: cert-manager.io/v1alpha2
@@ -107,9 +107,9 @@ Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificate
 
     In the `email` key, you'll update the value by replacing `<your email>` with a valid certificate administrator email from your organization.
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration by using the `kubectl apply` command. Deploy the cluster-issuer configuration in the `ratingsapp` namespace.
+1. Apply the configuration by running the `kubectl apply` command. Deploy the cluster-issuer configuration in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -158,11 +158,11 @@ The last part of the configuration is to configure the Kubernetes Ingress file f
             path: /
     ```
 
-    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of the ingress you retrieved earlier, for example, frontend.13-68-177-68.nip.io. This value allows you to access the ingress via a host name instead of an IP address.
+    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of the ingress you retrieved earlier, for example, frontend.13.68.177.68.nip.io. This value allows you to access the ingress via a host name instead of an IP address.
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration by using the `kubectl apply` command. Deploy the updated Kubernetes ingress file in the `ratingsapp` namespace.
+1. Apply the configuration by running the `kubectl apply` command. Deploy the updated Kubernetes ingress file in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -218,7 +218,7 @@ The last part of the configuration is to configure the Kubernetes Ingress file f
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser over SSL/TLS to view and interact with the application. For example, at https:\//frontend.13-68-177-68.nip.io.
+Open the host name you configured on the ingress in a web browser over SSL/TLS to view and interact with the application. For example, at https:\//frontend.13.68.177.68.nip.io.
 
 :::image type="content" source="../media/08-ratings-web-ingress-tls.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 

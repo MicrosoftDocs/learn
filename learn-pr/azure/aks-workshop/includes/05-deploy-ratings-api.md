@@ -1,4 +1,4 @@
-The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful ratings API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
+The Fruit Smoothies' ratings website consists of several components. There's a web front end, a document database that stores captured data, and a RESTful ratings API that allows the web front end to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
 In the previous unit, you deployed MongoDB using Helm. You'll continue your deployment and deploy the ratings API. The ratings API is a Node.js application written by using the Express framework. It stores and retrieves items and their ratings in a MongoDB database. Recall that you already created an Azure Container Registry instance.
 
@@ -12,16 +12,16 @@ In this exercise, you will:
 
 ## Create a Kubernetes deployment for the ratings API
 
-A Kubernetes deployment gives you a way to provide declarative updates for Pods. You describe the desired state of the workload in a deployment manifest file, and use `kubectl` to submit the manifest to the Deployment Controller. The Deployment Controller in turn actions the desired state of the defined workload, for example, deploy a new Pod, increase the Pod count, or decrease the Pod count.
+A Kubernetes deployment gives you a way to provide declarative updates for pods. You describe the desired state of the workload in a deployment manifest file, and use `kubectl` to submit the manifest to the Deployment Controller. The Deployment Controller, in turn, actions the desired state of the defined workload, for example, deploys a new pod, increases the pod count, or decreases the pod count.
 
-1. Create a manifest file for the Kubernetes deployment called `ratings-api-deployment.yaml` by using the integrated editor.
+1. Create a manifest file for the Kubernetes deployment called `ratings-api-deployment.yaml` by running the integrated editor.
 
     ```bash
     code ratings-api-deployment.yaml
     ```
 
     > [!TIP]
-    > Azure Cloud Shell includes an [integrated file editor](/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, select the `{}` editor icon on the toolbar. This action opens the editor and defaults the file explorer to the `/home/<user>` directory.
+    > Azure Cloud Shell includes an [integrated file editor](/azure/cloud-shell/using-cloud-shell-editor). Cloud Shell editor supports features, such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, select the `{}` editor icon on the toolbar. This action opens the editor, and defaults the file explorer to the `/home/<user>` directory.
 
 1. Paste the following text in the file.
 
@@ -78,11 +78,11 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
 
     - `resources`: Each container instance is given a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes Scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
 
-    - `readinessProbe` and `livenessProbe`: The application exposes a health check endpoint at `/healthz`. If the API is unable to connect to MongoDB, the health check endpoint returns a failure. You can use these probes to configure Kubernetes and check whether the container is healthy and ready to receive traffic.
+    - `readinessProbe` and `livenessProbe`: The application exposes a health check endpoint at `/healthz`. If the API is unable to connect to MongoDB, the health check endpoint returns a failure. You can use these probes to configure Kubernetes, and check whether the container is healthy and ready to receive traffic.
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>. You can also open the `...` action panel in the upper right of the editor. Select **Save**, and then select **Close editor**.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>. You can also open the `...` action panel in the upper right of the editor. Select **Save**, and then select **Close editor**.
 
-1. Apply the configuration by using the `kubectl apply` command. Recall that you've deployed the MongoDB release in the `ratingsapp` namespace, so you will deploy the API in the `ratingsapp` namespace as well.
+1. Apply the configuration by running the `kubectl apply` command. Recall that you've deployed the MongoDB release in the `ratingsapp` namespace, so you will deploy the API in the `ratingsapp` namespace as well.
 
     ```bash
     kubectl apply \
@@ -96,7 +96,7 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
     deployment.apps/ratings-api created
     ```
 
-1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-api`. Select <kbd>Ctrl+C</kbd> to stop watching.
+1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-api`.
 
     ```bash
     kubectl get pods \
@@ -104,7 +104,7 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
         -l app=ratings-api -w
     ```
 
-    In a few seconds, you'll see the pod transition to the `Running` state. Select <kbd>Ctrl+C</kbd> to stop watching.
+    In a few seconds, you'll see the pod transition to the `Running` state. Press <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME                           READY   STATUS    RESTARTS   AGE
@@ -128,17 +128,17 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
 
 ## Create a Kubernetes service for the ratings API service
 
-A *service* is a Kubernetes object that provides stable networking for Pods by exposing them as a network service. You use Kubernetes Services to enable communication between nodes, pods, and users of your application, both internal and external, to your cluster. A Service, just like a node or Pod, gets an IP address assigned by Kubernetes when you create them. Services are also assigned a DNS name based on the service name, and a TCP port.
+A *service* is a Kubernetes object that provides stable networking for pods by exposing them as a network service. You use Kubernetes Services to enable communication between nodes, pods, and users of your application, both internal and external, to your cluster. A service, just like a node or pod, gets an IP address assigned by Kubernetes when you create them. Services are also assigned a DNS name based on the service name, and a TCP port.
 
 A *ClusterIP* allows you to expose a Kubernetes service on an internal IP in the cluster. This type makes the service only reachable from within the cluster.
 
-:::image type="content" source="../media/05-aks-clusterip.png" border="false" alt-text="Diagram shows how a service deployed using a ClusterIP expose one or more Pods using an internal cluster IP address on an Azure Kubernetes Service cluster.":::
+:::image type="content" source="../media/05-aks-clusterip.png" border="false" alt-text="Diagram shows how a service deployed using a ClusterIP expose one or more pods using an internal cluster IP address on an Azure Kubernetes Service cluster.":::
 
 Our next step is to simplify the network configuration for your application workloads. You'll use a Kubernetes service to group your pods and provide network connectivity.
 
 1. Create a manifest file for the Kubernetes service called `ratings-api-service.yaml` by using the integrated editor.
 
-    ```bash    
+    ```bash
     code ratings-api-service.yaml
     ```
 
@@ -167,9 +167,9 @@ Our next step is to simplify the network configuration for your application work
 
     - `type`: A service of type `ClusterIP` creates an internal IP address for use within the cluster. Choosing this value makes the service reachable only from within the cluster. Cluster IP is the default service type.
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration by using the `kubectl apply` command, and use the `ratingsapp` namespace.
+1. Apply the configuration by running the `kubectl apply` command, and use the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -202,7 +202,7 @@ Our next step is to simplify the network configuration for your application work
     kubectl get endpoints ratings-api --namespace ratingsapp
     ```
 
-    You'll see a similar output like the example below. Notice how the `ENDPOINTS` IPs come from the `10.240.0.0/16` subnet you defined when you created the cluster.
+    You'll see a similar output like the following example. Notice how the `ENDPOINTS` IPs come from the `10.240.0.0/16` subnet you defined when you created the cluster.
 
     ```output
     NAME          ENDPOINTS                          AGE

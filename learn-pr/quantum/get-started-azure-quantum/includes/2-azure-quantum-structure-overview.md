@@ -14,13 +14,12 @@ For more details on how this is done in practice, check out Dave Wecker's talk o
 
 **Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
-For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
+For example, there's trapped ion quantum hardware from IonQ and Honeywell.
 
 - **Honeywell quantum solutions**: Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurement.
 
 - **IonQ trapped-ion quantum computer**: Dynamically reconfigurable system for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.
 
-- **Quantum Circuits, Inc.**: Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
 **Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
 

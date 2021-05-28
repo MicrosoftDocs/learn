@@ -6,12 +6,11 @@ This module assumes you have Azure CLI installed and you can run it from the com
 > [!IMPORTANT]
 > If you belong to an organization, you may need to coordinate with your IT Team to create your AAD user account and grant the appropriate privileges.  Also, Guest accounts associated with your Azure subscription do not meet the minimum requirements.  You must have a member account.
 
-The ARM Template logic has been integrated into a Visual Studio solution that drives a data simulator.  
+The ARM Template logic has been integrated into a Connection Prefab that drives a data simulator.  
 
 ## Download the Visual Studio solution and the ARM template
 
-1. [Download the repository from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) To your local filesystem and take note of the location
-2. Unzip the repository  
+[Download the repository from GitHub](https://aka.ms/mr-adt-mslearn) and unzip the repository  
 
 ## Log in to Azure using Azure CLI
 

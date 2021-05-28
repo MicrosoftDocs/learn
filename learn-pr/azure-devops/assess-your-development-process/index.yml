@@ -12,10 +12,10 @@ metadata:
 title: Assess your existing software development process
 summary: Use a value stream map to help you examine your existing processes and technologies.
 abstract: |
-  In this module, you will:
-  - Learn about value stream maps (VSMs)
-  - Use a VSM to get a sense of where the release process needs improvement
-  - Understand how the VSM gives you a good starting point to discuss your current DevOps practices
+  After completing this module, you'll be able to:
+  - Explain the purpose of value stream maps (VSMs)
+  - Use a VSM to get a sense of where your release process can be improved
+  - Compute the activity ratio, or overall efficiency, of your processes
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/assess-your-software-development-process.svg
 ratingEnabled: true
