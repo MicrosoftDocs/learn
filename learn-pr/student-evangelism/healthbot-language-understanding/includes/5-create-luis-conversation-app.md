@@ -22,7 +22,7 @@ In this module, you'll use the Language Understanding resource.
 
 ## Sign in to the LUIS portal
 
-1. Open your browser, and go to luis.ai. Select the **Sign in** option in the upper-right corner, and then sign in to LUIS with your Microsoft account.
+1. Open your browser, and go to the [Language Understanding](https://luis.ai) page. Select the **Sign in** option in the upper-right corner, and then sign in to LUIS with your Microsoft account.
 
    :::image type="content" source="../media/4-sign-in-luis.png" alt-text="Screenshot that shows signing in to LUIS." lightbox="../media/4-sign-in-luis.png":::
 
@@ -52,7 +52,7 @@ In this module, you'll use the Language Understanding resource.
    The next time you sign in to LUIS, you can select the same authoring resource that you've created.
 
    > [!NOTE]
-   > Make sure that the **Azure resource name** field doesn't contain the name of an authoring resource that you've already created.
+   > Make sure that the **Azure resource name** box doesn't contain the name of an authoring resource that you've already created.
   
 You've finished creating your authoring resource for LUIS. Now you can begin to create a new LUIS conversation app, which you'll later integrate into your health bot.
 

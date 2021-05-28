@@ -37,7 +37,7 @@ In addition to intents that you define, you can use prebuilt intents from one of
 
 ## Entities
 
-Entities are data you want to pull from the utterances, such as names, dates, product names, or any significant group of words.
+Entities are data you want to pull from utterances, such as names, dates, product names, or any significant group of words.
 
 > [!NOTE]
 > An utterance can include many entities or none at all. While intents are required, entities are optional.
