@@ -12,7 +12,7 @@ While the above is all a benefit of a deployment over using pods, it doesn't ade
 
 To review, in our use case the application is event driven and receives a significant number of events at various times.  
 
-Without any HPA or KEDA Scaler Object, an engineer would manually adjust the number of replicas available to process sufficiently the number of events. They would also have to *scale down* the deployment when the load returns to normal.
+Without any Horizontal Pod Autoscaler (HPA) or KEDA Scaler Object, an engineer would manually adjust the number of replicas available to process sufficiently the number of events. They would also have to *scale down* the deployment when the load returns to normal.
 
 ## Statically Setting Replicas
 

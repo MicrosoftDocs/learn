@@ -31,7 +31,7 @@ We first need to create a list in Redis and populate it with some random element
   llen keda
   ```
 
-4. To exit the redis shell, just type `exit`.
+4. To exit the Redis shell, just type `exit`.
 
 ## Create a deployment manifest
 
@@ -113,7 +113,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     The command should output a table similar to the following example.
 
     ```output
-    NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+    NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
     contoso-microservice   0/1     1            0           16s
     ```
 
@@ -126,6 +126,6 @@ Kubernetes groups containers into logical structures called pods, which have no 
     The command should output a table similar to the following example.
 
     ```output
-    NAME                               READY   STATUS    RESTARTS   AGE
+    NAME                                    READY   STATUS    RESTARTS   AGE
     contoso-microservice-7c58c5f699-r79mv   1/1     Running   0          63s
     ```

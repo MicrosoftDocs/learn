@@ -5,9 +5,9 @@ Sometimes scaling the number of pods to handle increased demand isn't enough. To
 Kubernetes clusters can scale in one of two ways:
 
 * The cluster autoscaler watches for pods that can't be scheduled on nodes because of resource constraints. The cluster then automatically increases the number of nodes.
-* The horizontal pod autoscaler uses the Metrics Server in a Kubernetes cluster to monitor the resource demand of pods. If an application needs more resources, the number of pods is automatically increased to meet the demand.
+* The Horizontal Pod Autoscaler (HPA) uses the Metrics Server in a Kubernetes cluster to monitor the resource demand of pods. If an application needs more resources, the number of pods is automatically increased to meet the demand.
 
-Both the horizontal pod autoscaler and cluster autoscaler can also decrease the number of pods and nodes as needed. The cluster autoscaler decreases the number of nodes when there has been unused capacity for a period of time. Pods on a node to be removed by the cluster autoscaler are safely scheduled elsewhere in the cluster. The cluster autoscaler may be unable to scale down if pods can't move, such as in the following situations:
+Both the HPA and cluster autoscaler can also decrease the number of pods and nodes as needed. The cluster autoscaler decreases the number of nodes when there has been unused capacity for a period of time. Pods on a node to be removed by the cluster autoscaler are safely scheduled elsewhere in the cluster. The cluster autoscaler may be unable to scale down if pods can't move, such as in the following situations:
 
 * A pod is directly created and isn't backed by a controller object, such as a deployment or replica set.
 * A pod disruption budget (PDB) is too restrictive and doesn't allow the number of pods to be fall below a certain threshold.
@@ -15,7 +15,7 @@ Both the horizontal pod autoscaler and cluster autoscaler can also decrease the 
 
 ## KEDA's Relationship with HPA
 
-KEDA acts as a “Custom Metrics API” for exposing metrics to the Horizontal Pod Autoscaler. KEDA can't do its job without the HPA. The complexity of developing a metrics server is abstracted away by using KEDA.
+KEDA acts as a “Custom Metrics API” for exposing metrics to the HPA. KEDA can't do its job without the HPA. The complexity of developing a metrics server is abstracted away by using KEDA.
 
 Scalers are the glue that provides the metrics from various sources to the HPA. Here's a list of some of the most widely used scalers:
 
