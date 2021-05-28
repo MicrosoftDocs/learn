@@ -30,9 +30,9 @@ Each published API resides on a different server, has its own process for onboar
 
 We'll examine Azure API Management to help you decide if it's the correct solution to help reduce your company's API complexity. We'll study the following three main user angles:
 
-- Gateway. Azure API Management offers a single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
-- Administrators. Azure API Management has a single interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
-- Developers. Developers can use an Azure API Management portal that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
+- Gateway. A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
+- Administrators. A single interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
+- Developers. A portal that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
 
 ## What is the main goal?
 
