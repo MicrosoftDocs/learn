@@ -36,6 +36,7 @@ products:
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
 - learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
+- learn.azdo.manage-build-dependencies.2b-what-is-azure-artifacts
 - learn.azdo.manage-build-dependencies.3-set-up-environment
 - learn.azdo.manage-build-dependencies.4-create-feed
 - learn.azdo.manage-build-dependencies.5-create-package-pipeline
