@@ -1,6 +1,6 @@
 Here, we'll discuss how Azure Data Lake Storage works. This includes getting data into storage, accessing your data, and controlling who has access to the data. This knowledge will help you evaluate whether Azure Data Lake Storage is the right solution for your company's big data storage needs.
 
-In this unit, you'll learn about
+In this unit, you'll learn about:
 
 - Ingesting data.
 - Accessing stored data.
@@ -120,4 +120,4 @@ When an operation occurs that requires security principal&ndash;based authorizat
     - If no, continue with Step 3.
 1. Deny the security principal access to the resource.
 
-:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="AA flowchart depicts how Azure Data Lake Storage evaluates permissions, as defined in the previous steps.":::
+:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="A flowchart depicts how Azure Data Lake Storage evaluates permissions, as defined in the previous steps.":::
