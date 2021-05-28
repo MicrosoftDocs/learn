@@ -5,9 +5,9 @@ ms.topic: include
 ms.date: 04/22/2021
 ms.author: jodowns
 ---
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
-1. Open a terminal window by using the **Terminal** menu. The window usually opens at the bottom of the screen.
+1. Open a terminal window by using the **Terminal** menu. This menu usually opens at the bottom of the screen.
 
 1. If the dropdown control to the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from and can skip to the next section.
 
@@ -15,7 +15,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
    Otherwise, in the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
-    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
+    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
@@ -27,17 +27,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Check the version of Azure PowerShell
 
-1. In the Visual Studio Code terminal, check the version of Azure PowerShell that you've installed by running the following command:
+1. From the terminal in Visual Studio Code, run the following command to check the version of Azure PowerShell that you've installed:
 
    ```azurepowershell
    (Get-InstalledModule Az).Version
    ```
 
-Do either of the following:
+   If the version number is `5.6.0` or later, go to the next section ("Sign in to Azure").
 
-   * If the PowerShell version is `5.6.0` or later, skip to the next section, "Sign in to Azure."
-
-   * If the version is earlier than `5.6.0`, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
+   Otherwise, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
 
 ### Sign in to Azure
 
@@ -53,7 +51,7 @@ Do either of the following:
  
    If you've activated the sandbox, a subscription named *Concierge Subscription* is displayed. Use it for the rest of the exercise.
 
-1. Set the default subscription for all the Azure PowerShell commands that you run in this session:
+1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
 
     ```azurepowershell
     $context = Get-AzSubscription -SubscriptionName 'Concierge Subscription'
@@ -82,7 +80,7 @@ Azure PowerShell doesn't include the tooling to understand Bicep files, so you n
 
 ### Set the default resource group
 
-You can set the default resource group and omit the parameter from the rest of the Azure PowerShell commands in this exercise. Set the resource group that was created for you in the sandbox environment as the default.
+You can set the default resource group and omit the parameter from the rest of the Azure PowerShell commands in this exercise. Set this default to the resource group created for you in the sandbox environment.
 
 ```azurepowershell
 Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>

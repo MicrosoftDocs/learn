@@ -12,7 +12,7 @@ However, the way in which features are released to application users can help to
 
 ## Understanding your application
 
-[Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview?azure-portal=true) is an application performance management (APM) platform with a rich set of tools to gather application telemetry for multiple purposes, such as performance monitoring, problem troubleshooting, or understanding how users move through applications. The last item is critical for the innovation lifecycle, because it can be used to validate an innovation hypothesis and to judge whether a certain innovation is improving the customer experience.
+[Azure Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) is an application performance management (APM) platform with a rich set of tools to gather application telemetry for multiple purposes, such as performance monitoring, problem troubleshooting, or understanding how users move through applications. The last item is critical for the innovation lifecycle, because it can be used to validate an innovation hypothesis and to judge whether a certain innovation is improving the customer experience.
 
 ### Detect problems before users do
 
@@ -20,27 +20,27 @@ A crucial element that affects the user experience is the performance and availa
 
 Detecting those problematic situations before they affect users is of the highest importance. To meet that goal, you need to proactively monitor the application and start working on potential problems before they affect the business. For example, you can enable notifications to automatically open incidents so that they're investigated before customers report them.
 
-[Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-failure-diagnostics?azure-portal=true) is a useful feature of Azure Application Insights. It can raise alerts when the application behavior is unusual. It detects anomalies by using machine learning, and the alerts are richer than traditional error notifications.  
+[Smart Detection](/azure/azure-monitor/app/proactive-failure-diagnostics?azure-portal=true) is a useful feature of Azure Application Insights. It can raise alerts when the application behavior is unusual. It detects anomalies by using machine learning, and the alerts are richer than traditional error notifications.  
 
 Notifications typically report that there might be a problem, without context about the potential business impact. Smart Detection alerts include information like the number of affected users, the pattern associated with the failures, or the failure rate compared to normal behavior. You can then focus on the most critical issue from a business perspective.
 
 ### Monitor user activity
 
-[Usage analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-overview?azure-portal=true) in Azure Application Insights can help you evaluate which application areas need to be improved. For example, usage analysis can identify the most popular application features or specific points at which users leave the web portal. You can explore, for example, whether your application works better in certain geographic areas than others, to get valuable information about where the application gaps might be.
+[Usage analysis](/azure/azure-monitor/app/usage-overview?azure-portal=true) in Azure Application Insights can help you evaluate which application areas need to be improved. For example, usage analysis can identify the most popular application features or specific points at which users leave the web portal. You can explore, for example, whether your application works better in certain geographic areas than others, to get valuable information about where the application gaps might be.
 
 After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. Custom business events can be embedded in the application, so that telemetry data contains additional information that will help in the measure process.
 
-[Funnels](https://docs.microsoft.com/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine expected *flows* that users will follow when they use the application. This allows you to monitor which patterns users follow. You can then identify problems in the applications if users are behaving in unexpected ways.
+[Funnels](/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine expected *flows* that users will follow when they use the application. This allows you to monitor which patterns users follow. You can then identify problems in the applications if users are behaving in unexpected ways.
 
 ### Retain users
 
-The Application Insights [retention tool](https://docs.microsoft.com/azure/azure-monitor/app/usage-retention#the-retention-tool?azure-portal=true) offers specific functionality around user churn. Combined with business events, it contains valuable learning data. For example, understanding which actions were taken by customers who left the application unexpectedly will allow you to formulate hypotheses with maximum business impact.
+The Application Insights [retention tool](/azure/azure-monitor/app/usage-retention#the-retention-tool?azure-portal=true) offers specific functionality around user churn. Combined with business events, it contains valuable learning data. For example, understanding which actions were taken by customers who left the application unexpectedly will allow you to formulate hypotheses with maximum business impact.
 
 For example, if most users who abandoned your website did so from the payment method page, you would suspect a business problem there. Maybe the payment options are insufficient or not clearly displayed. Or another problem is preventing users from moving forward in their shopping process.
 
 ### Impact analysis
 
-[Impact analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-impact?azure-portal=true) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
+[Impact analysis](/azure/azure-monitor/app/usage-impact?azure-portal=true) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
 
 For example, how fast should the product page load so that most users continue with their shopping process? With impact analysis, you can show the relationship between page load time and the rate of users who purchase the product shown. This information can help you to validate or reject an innovation hypothesis, and to convert business requirements into technical specifications.
 

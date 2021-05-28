@@ -1,5 +1,8 @@
 Here's how to write your program by using Cargo.
 
+> [!NOTE]
+> The commands in the following sections work on all platforms.
+
 ## Create a new project
 
 To start, use Cargo to make a new project.

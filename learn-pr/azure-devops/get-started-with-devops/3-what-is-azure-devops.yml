@@ -3,6 +3,11 @@ uid: learn.get-started-with-devops.3-what-is-azure-devops
 metadata:
   title: What is Azure DevOps?
   description: What is Azure DevOps?
+  ms.date: 05/20/2021
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: What is Azure DevOps?
 durationInMinutes: 4
 content: |

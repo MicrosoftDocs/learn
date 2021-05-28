@@ -1,6 +1,6 @@
 Companies that publish web APIs often need to carefully control the HTTP headers that their APIs return, preferably without rewriting the API source code.
 
-The Government has decided to share census data with its agencies through RESTful APIs. The critical requirements are that the data is shared securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
+The government has decided to share census data with its agencies through RESTful APIs. The critical requirements are that the data is shared securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
 
 Here, you will:
 - Publish a RESTful Census API.
@@ -22,7 +22,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 - It configures Git locally.
 - It deploys our Web API to our App Service instance.
 
-1. To clone the repo that contains the source for our app, run the following `git clone` command in the Cloud Shell:
+1. To clone the repo that contains the source for our app, run the following `git clone` command in Cloud Shell:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-protect-apis-on-api-management.git
@@ -42,7 +42,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
     The script takes about a minute to run. When the script finishes, it displays two URLs that you can use to test the app deployment. Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
-1. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints:
+1. To test that our app deployed correctly, copy and paste the first URL from Cloud Shell output into your browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints:
 
     - **api/census**, which returns a census and associated people
     - **api/census/{censusYear}**, which returns a census and associated people for the specified year
@@ -50,43 +50,52 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
     :::image type="content" source="../media/3-swagger-home.png" alt-text="Swagger view." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
-1. Finally, copy the last URL from the Cloud Shell output. This URL is the swagger JSON URL, which you will need later in this exercise.
+1. Finally, copy the last URL from Cloud Shell output. This URL is the swagger JSON URL, which you will need later in this exercise.
 
 ## Deploy an API gateway
 
 The next step in this exercise is to create an API gateway in the Azure portal. In the next section, you'll use this gateway to publish your API:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
-1. Click **Integration**, and then click **API management**.
-1. In the **API Management service** page, enter the following details:
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    | Field | Details |
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+
+1. In the left menu pane, select **Integration**, and then select **API Management** from the **Featured** list. The **Create API Management** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting | Value |
     | --- | --- |
-    |**Name** | Type `apim-CensusData<random number>`; the random number is to ensure that the name is globally unique. |
-    | **Subscription** | Concierge Subscription |
-    | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
-    | **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
-    | **Organization Name** | Type `Government-Census`. |
-    | **Administrator Email** | Type your own email address. |
-    | **Pricing Tier** | Select `Consumption (preview)`. |
+    | **Project details** |
+    | Subscription | Concierge Subscription |
+    | Resource group | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
+    | **Instance details** |
+    | Region | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    |Resource name | Enter `apim-CensusData<random number>`; the random number is to ensure that the name is globally unique. |
+    | Organization name | Enter `Government-Census`. |
+    | Administrator email | Enter your own email address. |
+    | **Pricing tier** |
+    | Pricing tier | Select `Consumption (99.95% SLA)` from the dropdown list. |
     | | |
 
-    ![Creating an API Management gateway](../media/3-create-apim-gateway.png)
+    ![Creating an API Management gateway.](../media/3-create-apim-gateway.png)
 
     > [!NOTE]
     > You're using the consumption plan because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
 
-1. Click **Create**. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
+1. Select **Review + create**.  After validation passes, select **Create**. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
 
 ## Import the API
 
-Now import the Census API into the API Management gateway:
+Now, import the Census API into the API Management gateway:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
-1. Under **API management**, click **APIs**.
-1. On the **Add a new API** page, click **OpenAPI**.
-1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification**, paste the swagger JSON URL that you saved earlier in the exercise.
+1. From the **Overview** pane of your deployment, select **Go to resource**. Your **API Management service** pane appears.
+
+1. In the left menu pane, Under **APIs**, select **APIs**. The **APIs** pane appears for your API Management service.
+
+1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
+
+1. In the **OpenAPI specification** field, paste the swagger JSON URL that you saved earlier in the exercise.
 
     ![Importing the API](../media/3-import-api.png)
 
@@ -100,20 +109,24 @@ Now import the Census API into the API Management gateway:
 Let's see what data is returned in from the API by default:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
-1. Under **API management**, click **APIs**, and then click **Census Data**.
-1. On the top of the screen, select **Test** tab, and then click the **GetLatestCensus** operation.
-1. Click **Send**.
+
+1. In the left menu pane, Under **APIs**, select **APIs**, and in the middle pane, select **Census Data**.
+
+1. In the top menu bar, select the **Test** tab, and then select the **GetLatestCensus** operation.
+
+1. Select **Send**.
 
     ![Default test results](../media/3-default-test-results.png)
 
-1. Notice that **X-Powered-By** appears in the response and shows that the framework is ASP.NET.
+1. Notice that **x-powered-by** appears in the response, and shows that the framework is ASP.NET.
 
 ## Remove headers
 
-Now we'll add a policy to remove the **X-Powered-By** header from responses sent by the API:
+Now we'll add a policy to remove the **x-powered-by** header from responses sent by the API:
 
-1. Select **Census Data** and then, at the top of the screen, select the **Design** tab.
-1. Select **All operations**, and then in the **Outbound processing** section, click the **</>** icon.
+1. Select **Census Data** again, and in the top menu bar, select the **Design** tab.
+
+1. Select **All operations**, and in the **Outbound processing** section, select the **</>** icon.
 
     ![Alter Policy](../media/3-remove-header.png)
 
@@ -126,15 +139,16 @@ Now we'll add a policy to remove the **X-Powered-By** header from responses sent
     </outbound>
     ```
 
-1. Click the **Save** button.
+1. Select **Save**.
 
 ## Test the removal of headers
 
 You should now be able to run a test to demonstrate that the headers are removed:
 
-1. Select **Census Data**, and then, at the top of the screen, select the **Test** tab.
-1. Next, select the **GetLatestCensus** operation, and then click **Send**:
+1. Select **Census Data** again, and in the top menu bar, select the **Test** tab.
+
+1. Select the **GetLatestCensus** operation, and then select **Send**.
 
     ![Headers Removed Test](../media/3-headers-removed.png)
 
-1. The **X-Powered-By** header should not be in the response.
+1. The **x-powered-by** header should not be in the HTTP response.

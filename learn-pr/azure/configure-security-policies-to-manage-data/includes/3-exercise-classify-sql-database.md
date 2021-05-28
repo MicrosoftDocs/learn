@@ -1,4 +1,3 @@
-
 In this step, you will create your resource group and an Azure SQL Database single database containing the AdventureWorksLT sample data
 
 1. Sign-in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Azure Sandbox. Make sure you are in the Microsoft Learn Sandbox directory.
@@ -20,8 +19,8 @@ In this step, you will create your resource group and an Azure SQL Database sing
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
+    | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+    | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
     | **Location** | Any valid location from the available list below. |
 
@@ -63,7 +62,7 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Select **Data Discovery & Classification** initial state will have recommended - 15 in this case. Select Security check to review the recommendations.  If you have not yet run the check do so now.
 
-    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
+    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
 1. Select all the columns and then **Accept selected recommendations**.
 
@@ -71,11 +70,11 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Review the **Data Discovery & Classification**. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
+    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns.](../media/M4_01_02_021.png)
 
 1. To download a report in Excel format, in the top menu of the window select Export.
 
-    ![Screenshot of the Data discovery and classification (preview) pane with Export selected.](../media/M4_01_02_03.png)
+    ![Screenshot of the Data discovery and classification pane with Export selected.](../media/M4_01_02_03.png)
 
 ### Customizing the classification
 
@@ -90,7 +89,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu of the window, select **Add classification**.
 
-    ![Screenshot of the Data discovery and classification (preview) pane with Add classification selected.](../media/M4_01_02_06.png)
+    ![Screenshot of the Data discovery and classification pane with Add classification selected.](../media/M4_01_02_06.png)
 
 1. In the Add classification pane, configure the five fields that display, and then select **+ Add classification**:
    * Schema name
@@ -111,7 +110,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 ## Monitor access to sensitive data
 
-An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](https://docs.microsoft.com/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The data_sensitivity_information field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
+An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The data_sensitivity_information field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
 
 ![Screenshot of field logs, with data sensitivity categorizations of Confidential, and Confidential GDPR called out.](../media/M4_01_02_08.png)
 

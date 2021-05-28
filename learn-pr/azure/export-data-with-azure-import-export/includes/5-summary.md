@@ -2,8 +2,8 @@ In this module, you've learned about the Azure Import/Export service. You've see
 
 ## Learn more
 
-- [Choose an Azure solution for data transfer](https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution)
+- [Choose an Azure solution for data transfer](/azure/storage/common/storage-choose-data-transfer-solution)
 - [Download Microsoft Azure Import/Export tool](https://www.microsoft.com/download/details.aspx?id=42659)
-- [Azure Import/Export system requirements](https://docs.microsoft.com/azure/storage/common/storage-import-export-requirements#supported-operating-systems)
-- [Example of PreviewExport command](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#example-of-previewexport-command)
-- [Use the Azure Import/Export service to export data from Azure Blob storage](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs)
+- [Azure Import/Export system requirements](/azure/storage/common/storage-import-export-requirements#supported-operating-systems)
+- [Example of PreviewExport command](/azure/storage/common/storage-import-export-data-from-blobs?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#example-of-previewexport-command)
+- [Use the Azure Import/Export service to export data from Azure Blob storage](/azure/storage/common/storage-import-export-data-from-blobs)
