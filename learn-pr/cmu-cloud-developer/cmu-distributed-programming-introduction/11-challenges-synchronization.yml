@@ -19,11 +19,28 @@ quiz:
 
 # Did I Get This block uses two code blocks saved as images "quiz-code-1.png" and "quiz-code-2.png".
 # Code for the images is in the MD file for this unit "11-challenges-synchronization.md".
-  - content: "Assume the following function: <br>
-             <img src=./media/quiz-code-1.png></img> <br>
-             Assume that initially accounts A and B both have 100 dollars and the following operations are executed simultaneously, such that both operations acquire a lock on the source account (as indicated in line number 3 in the transaction function) at the same time: <br>
-             <img src=./media/quiz-code-2.png></img> <br>
-             What will be the result?"
+  - content: |
+      Assume the following function:
+
+      ```
+      transaction (Account source, Account destination, double amount)
+      {
+        Acquire lock on source;
+        Acquire lock on destination;
+        withdraw(from, amount);
+        deposit(to, amount);
+        Release lock on destination;
+        Release lock on source;
+      }
+      ```
+      
+      Assume that initially accounts A and B both have 100 dollars and the following operations are executed simultaneously, such that both operations acquire a lock on the source account (as indicated in line number 3 in the transaction function) at the same time:
+      
+      ```
+      1 Transaction(A,B,50); and Transaction(B,A,10);
+      ```
+      
+      What will be the result?
     choices:
     - content: "A will have 140 dollars and B will have 60 dollars."
       isCorrect: false

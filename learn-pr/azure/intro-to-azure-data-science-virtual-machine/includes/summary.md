@@ -5,4 +5,4 @@ In this module, you configured, created, and connected to an Azure Data Science 
 For more information on the Azure DSVM:
 
 - [Data Science Virtual Machine home page](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/)
-- [What tools are included on the Azure Data Science Virtual Machine?](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/tools-included)
+- [What tools are included on the Azure Data Science Virtual Machine?](/azure/machine-learning/data-science-virtual-machine/tools-included)
