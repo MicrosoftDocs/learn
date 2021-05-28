@@ -1,6 +1,8 @@
-In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, what kinds of packages you can create, where you can host the packages, and how you access them when they are hosted. You'll also learn about package versioning, as well as Azure Artifacts.
+In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, what kinds of packages you can create, where you can host the packages, and how you access them when they are hosted. You'll also learn about package versioning.
 
-First, let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
+Codebases are always growing larger and more complex. It's unusual for a team to write all the code that their app uses. Instead, the team includes existing code written by other developers and there can be many of these packages, or dependencies, in an app. It's important to actively manage these dependencies to be able to maintain them properly and make sure they meet security requirements.
+
+Let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
 
 **Andy:** Hi everyone. I was chatting with the team who's working on the back end system for _Space Game_. They could use the models we use for the website in a back end app they plan to write.
 
@@ -42,6 +44,34 @@ One tradeoff is that with a package, you have another codebase to test and maint
 
 When multiple apps can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
 
+### TODO Identify dependencies
+
+If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be reusable, stored in a central location, and versioned. You may even want to replace your own code with third-party components that are either open source or that you license.
+
+There are a number of ways to identify the potential dependencies in your codebase. These include scanning your code for patterns of reuse, as well as analyzing the architecture of your solution. Here are some ways to identify dependencies:
+
+* Duplicate code.
+
+    If certain pieces of code appear in several places, that's a good indication that this code can be reused. Centralize these duplicate pieces of code and repackage them appropriately.
+
+* High cohesion and low coupling.
+
+    A second approach is to look for code elements that have a high cohesion to each other and low coupling with other parts of the code. In essence, high cohesion means keeping parts of a codebase that are related to each other in a single place. Low coupling, at the same time, is about separating unrelated parts of the code base as much as possible.
+
+* Individual lifecycle.
+
+    Look for parts of the code that have a similar lifecycle and can be deployed and released individually. If this code can be maintained by a separate team, it's a good indication that it can be packaged as a component outside of the solution.
+
+* Stable parts.
+
+    Some parts of your codebase might be stable and change infrequently. Check your code repository to find code with a low change frequency.
+
+* Independent code and components.
+
+    Whenever code and components are independent and unrelated to other parts of the system, they can potentially be isolated into separate dependencies.
+
+You can use a variety of tools to assist you in scanning and examining your codebase. These range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
+
 ## What kinds of packages are there?
 
 Each programming language or framework provides its own way to build packages. Popular package systems provide documentation about how the process works.
@@ -49,10 +79,9 @@ Each programming language or framework provides its own way to build packages. P
 You might already be familiar with these popular package systems:
 
 * **NuGet**: packages .NET libraries
+* **NPM**: packages JavaScript libraries
 * **Maven**: packages Java libraries
-* **npm**: packages JavaScript libraries
-* **Chocolatey**: packages Windows applications
-* **RubyGems**: packages Ruby libraries
+* **Docker**: packages Windows applications
 
 ## Where are packages hosted?
 
@@ -60,15 +89,40 @@ You can host packages on your own network, or you can use a hosting service. A h
 
 Here are popular hosting services for the package types we just described:
 
-* **NuGet**: [nuget.org](https://www.nuget.org?azure-portal=true)
-* **Maven**: [apache.org](https://www.apache.org?azure-portal=true)
-* **npm**: [npmjs.com](https://www.npmjs.com?azure-portal=true)
-* **Chocolatey**: [chocolatey.org](https://chocolatey.org?azure-portal=true)
-* **RubyGems**: [rubygems.org](https://rubygems.org?azure-portal=true)
+* NuGet.
+
+    NuGet packages are used for .NET code artifacts. These artifacts include .NET assemblies and related files, tooling and, sometimes, metadata. NuGet defines the way packages are created, stored, and consumed. A NuGet package is essentially a compressed folder structure with files in the ZIP format and has the *.nupkg* extension. See also, [An introduction to NuGet](/nuget/what-is-nuget?azure-portal=true).
+
+* NPM.
+
+    An NPM package is used for JavaScript. An NPM package is a file or folder that contains JavaScript files and a package.json file that describes the metadata of the package. For node.js, the package usually contains one or more modules that can be loaded after the package is consumed. See also, [About packages and modules](https://docs.npmjs.com/about-packages-and-modules?azure-portal=true).
+
+* Maven.
+
+    Maven is used for Java-based projects. Each package has a Project Object Model file that describes the metadata of the project, and is the basic unit for defining a package and working with it. See also, [Apache Maven Project](https://maven.apache.org/?azure-portal=true).
+
+* Docker.
+
+    Docker packages are called images and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and executed by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images. See also, [Docker](https://www.docker.com/?azure-portal=true).
 
 A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products, such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
 When you host packages behind the firewall, you can include feeds to your own packages. You can also cache packages that you trust on your network when your systems can't connect to the internet.
+
+## What elements make up a good dependency management strategy?
+
+A good dependency management strategy depends on these three elements:
+
+* Standardization.
+
+    Standardizing how you declare and resolve dependencies will help your automated release process remain repeatable and  predictable.
+* Packaging formats and sources.
+
+    Each dependency should be packaged using the applicable format and stored in a central location.
+
+* Versioning.
+
+    You need to keep track of the changes that occur over time in dependencies just as you do with your own code. This means that dependencies should be versioned.
 
 ## Who can access packages?
 
@@ -99,7 +153,7 @@ When you reference a package, you do so by version number.
 Here is an example of installing a package by using PowerShell and a specific version number.
 
 ```powershell
-Install-Package -Name "Json.NET" -Version 12.0.2
+Install-Package Newtonsoft.Json -Version 13.0.1
 ```
 
 ## What happens when the package changes?
@@ -121,54 +175,10 @@ Here are a few other examples:
 
 As each maintainer releases a new package version, you can evaluate what's changed and test your app against it. When you're ready, you can update the package's version number in your configuration, and submit the change to your build pipeline.
 
-Here's an example of the package dependencies from our Tailspin-SpaceGame-Web project file. In this project, we depend on packages such as Newtonsoft.Json, and you can see that we specify version 12.0.1 of that package.
+Here's an example of how you might include the Newtonsoft.Json package in your C# application's project (.csproj) file. This example specifies version 13.0.1 of that package.
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 </ItemGroup>
 ```
-
-## What is Microsoft Azure Artifacts?
-
-**Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Microsoft Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
-
-**Andy:** I looked into that before the meeting and it seems straightforward to me. I agree with Mara.
-
-**Amita:** What's Azure Artifacts?
-
-**Andy:** Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase. Azure Artifacts can store your artifacts and your binaries. It provides a container, called a *feed*, for groups of dependencies. Developers who have access to the feed can easily consume or publish packages.
-
-## How do I create a package and use it in the pipeline?
-
-**Tim:** So if I am understanding right, the app code uses packages from NuGet already. We're going to create our own package and host it in Azure Artifacts. Can you draw out the pieces and how they'll work together? I'm having a hard time picturing the whole process.
-
-**Andy:** Sure. Let's go over the process of creating a package and using it in our Azure DevOps pipeline.
-
-Andy moves to the whiteboard.
-
-![Whiteboard diagram showing the steps to create and use a package](../media/2-azure-artifacts-whiteboard.png)
-
-### Create the package
-
-First, we need to create a project in Azure Artifacts. :::image type="icon" source="../../shared/media/callout-01.png"::: We can do this from Azure DevOps.
-
-Then, we create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code. Then the pipeline builds the code, packages it, and pushes the package to Azure Artifacts. :::image type="icon" source="../../shared/media/callout-02.png":::
-
-We need to update the app that consumes this package to point to the Azure Artifacts feed that we created. :::image type="icon" source="../../shared/media/callout-03.png":::
-
-After that, we update the pipeline that creates our app. The update enables us to use our Azure Artifacts feed to pull the new package dependency, and build as normal. :::image type="icon" source="../../shared/media/callout-04.png":::
-
-### Update the package
-
-**Tim:** What if someone updates the package?
-
-**Andy:** When you update the package with a new feature or bug fix, and run tests to make sure it works correctly, bump up the version number of the package. Then, commit the change. The pipeline for the package sees the commit, and creates a new artifact in Azure Artifacts with the new version number. Don't worry, the old package with the lower version number is still there for apps that depend on that version. For this reason, you don't typically unlist a package.
-
-Our app might want to use this newer version of the package. In that case, we update the app to reference the newer version, and run the tests locally to make sure this new version works with our app. When we're satisfied that everything works, we submit the app change to the pipeline. It builds with the new version of the package dependency.
-
-**Amita:** This sounds like a good plan, and it will help the other team too. And it will keep the code from *drifting*, as you put it. That will help QA as well.
-
-**Mara:** Great! If it's settled, I'll move the code for the package into its own repository.
-
-**Andy:** I'll get started on setting up the Azure Artifacts feed.

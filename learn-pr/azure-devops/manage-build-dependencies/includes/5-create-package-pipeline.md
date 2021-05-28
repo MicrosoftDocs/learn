@@ -1,4 +1,4 @@
-Here, you'll get the team's new code for the *Tailspin.SpaceGame.Web.Models* project that is now separate from the *Tailspin.SpaceGame.Web* project. You'll create a Microsoft Azure Pipelines project for the Models project, and see the artifact in Microsoft Azure Artifacts with a version number of 1.0.0 in your feed.
+Here, you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that is now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure Pipelines project for the Models project and see the artifact in Azure Artifacts with a version number of 1.0.0 in your feed.
 
 ## What changes were made to the project?
 
@@ -10,18 +10,23 @@ To build these projects, Andy and Mara use two pipelines, one for each project. 
 
 ## Prepare Visual Studio Code
 
-Set up Visual Studio Code so you can work with source files.
+Previously, you set up Visual Studio Code to work with the **Tailspin.SpaceGame.Web** project. Here you open a second instance of Visual Studio Code so you can work with the **Tailspin.SpaceGame.Web.Models** project.
 
+1. Open a second instance of Visual Studio Code.
 1. From Visual Studio Code, open the integrated terminal.
-1. Go to a directory to work from, such as your home directory (`~`). We suggest using the parent directory from where your **mslearn-tailspin-spacegame-web** project is located.
+1. Navigate to the parent directory from where your **mslearn-tailspin-spacegame-web** project is located. Here's an example that moves to your home directory:
+
+    ```bash
+    cd ~
+    ```
 
 ## Get the source code
 
-Get the source code for the second project from GitHub, and set up Visual Studio Code so you can work with the files.
+Get the source code for the **Tailspin.SpaceGame.Web.Models** project from GitHub and set up Visual Studio Code so you can work with the files.
 
 ### Create a fork
 
-The first step is to fork the **mslearn-tailspin-spacegame-web-models** repository so you can work with and modify the source files. Recall that Mara put the **Models** directory in a new project, and removed it from the web project.
+The first step is to fork the **mslearn-tailspin-spacegame-web-models** repository so you can work with and modify the source files. Recall that Mara put the **Models** directory in a new project and removed it from the web project.
 
 To fork the **mslearn-tailspin-spacegame-web-models** project into your GitHub account:
 
@@ -54,11 +59,14 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 
 In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-models** project. Open the project from the file explorer so that you can view its structure and work with files.
 
-1. From the **File** menu, select **Open**.
-1. Go to the root directory of the **mslearn-tailspin-spacegame-web-models** project.
+1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
+
+    ```bash
+    code -r .
+    ```
 
     You see the directory and file tree in the file explorer.
-
+1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 1. Open the *azure-pipelines.yml* file.
 
     You see the steps where the package is built, the version is set, and the package is added to Azure Artifacts.
@@ -107,25 +115,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true).
 
-Because your solution has just the one project in it, the scope of the job agent is limited and cannot access the package. To make sure the agent has the permissions it needs to publish the artifact, in the pipeline settings, you need to turn off **Limit job authorization scope to current project**.
-
-To turn off this setting:
-
-1. In Azure DevOps, navigate to your organization.
-1. From the bottom corner, select **Organization settings**.
-1. Under **Pipelines**, select **Settings**.
-1. Turn off **Limit job authorization scope to current project**.
-
-    ![Azure DevOps showing how to set the job authorization scope setting](../media/5-devops-disable-job-authorization-scope.png)
-
-You need to make a similar change to your project:
-
-1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. At the bottom left, select **Project settings**.
-1. Under **Pipelines**, select **Settings**.
-1. Turn off **Limit job authorization scope to current project**.
-
-Next, you'll set up a second pipeline to build the package, and upload that package to Azure Artifacts.
+Here's how to set up a second pipeline to build the package, and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
 1. From the menu on the left, select **Pipelines**.
