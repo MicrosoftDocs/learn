@@ -1,6 +1,6 @@
 Azure Security Center monitors the status of antimalware protection for your VMs. Security Center notes issues, such as detected threats and insufficient protection, that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
 
-1. Open the Security Center overview page. elect the **Home* > Security Center** link in the upper left corner of the portal.
+1. Open the Security Center overview page. Select the **Home* > Security Center** link in the upper left corner of the portal.
 
 1. In the left menu pane, select **Overview**. The **Overview pane for the Security Center appears.
 
