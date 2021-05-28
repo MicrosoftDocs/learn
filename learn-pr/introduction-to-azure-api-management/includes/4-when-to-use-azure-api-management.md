@@ -1,4 +1,4 @@
-Now we'll discuss some scenarios that illustrate when it's appropriate to use Azure API Management. Using the food delivery service as an example, we'll investigate API lifecycle management with respect to standardizing APIs, centralizing API management and exposure, and enhancing API security. Here are the criteria we'll use to help you decide whether Azure API Management is a suitable choice for managing and exposing<!-- Can we come up with a word other than "exposing?"  --> your organization's inventory of APIs:
+Now we'll discuss some scenarios that illustrate when it's appropriate to use Azure API Management. Using the food delivery service as an example, we'll investigate API lifecycle management with respect to standardizing APIs, centralizing API management and exposure, and enhancing API security. Here are the criteria we'll use to help you decide whether Azure API Management is a suitable choice for managing and publishing your organization's inventory of APIs:
 
 - Number of APIs
 - Rate of API changes
@@ -6,7 +6,7 @@ Now we'll discuss some scenarios that illustrate when it's appropriate to use Az
 
 ## Decision criteria
 
-When you have numerous deployed APIs that you revise frequently and that require significant administrative overhead, Azure API Management can help you administer and expose them.<!-- I'm not sure what I think about this edit. I was trying to shorten the sentence. --> Azure API Management might not be the correct choice for use cases that typically involve small, static, or simple API deployments. Let's review the decision criteria in more detail.
+When you have numerous deployed APIs that you revise frequently and that require significant administrative overhead, Azure API Management can help you administer and publish them. Azure API Management might not be the correct choice for use cases that typically involve small, static, or simple API deployments. Let's review the decision criteria in more detail.
 
 | **Criteria** | **Analysis**|
 | --- | --- |
@@ -60,6 +60,6 @@ Azure API Management was designed with API security in mind. With so many organi
 - Protection. API protection means securing the API from malicious usage. Azure API Management enables you to throttle API access by using rate limits and usage quotas to help prevent consumer misuse (intentional or accidental) of the API.
 - Compliance. API compliance means having your APIs satisfy all corporate or government security policies. Having all your APIs together in Azure API Management makes it easier to configure those APIs with security policies that achieve compliance.
 
-The more APIs you manage, the greater the need for security. More APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can expose a security flaw.
+The more APIs you manage, the greater the need for security. More APIs means a greater attack surface and a greater risk of accidental data breaches or leaks. Also, the more often you revise your APIs, the greater the chance that a revision or new version can uncover a security flaw.
 
 These security concerns are paramount in our food delivery scenario. This is because this platform generates and stores a great deal of sensitive data, including restaurant payments, customer names and addresses, and delivery vehicle locations.
