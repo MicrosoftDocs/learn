@@ -26,7 +26,7 @@ In this step, to create an ASP.NET Web app using code from a GitHub repository, 
    az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --deployment-source-url $gitRepo
    ```
 
-1. Make a note of the random number suffix in your app name; this was generated to uniquely identify your app. The app may take several minutes to deploy.
+1. Make a note of the random number suffix in your app name. This was generated to uniquely identify your app. The app may take several minutes to deploy.
 
 1. To create a storage account, in Cloud Shell, run the following command.
 
