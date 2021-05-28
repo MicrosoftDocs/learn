@@ -49,7 +49,7 @@ You can perform all these tasks and more by using the Azure API Management admin
   - A *version* is a relatively major or breaking change to an API. Azure API Management enables you to offer developers multiple versions of the API simultaneously. It also offers several versioning schemes, including path-based, header-based, and query string-based versioning.
 - Monitor and analyze APIs. The administration interface includes built-in monitoring tools that let you review API traffic in real time, and analytics that enable you to derive insights on how consumers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector, Azure Monitor Logs, and Application Insights.
 
-:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision denoted in the API request URL.":::<!-- Can you please verify that the alt text I added here is still correct? -->
+:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Depiction of how revisions work in Azure API Management. API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision.":::
 
 ## How Azure API Management works for developers
 
