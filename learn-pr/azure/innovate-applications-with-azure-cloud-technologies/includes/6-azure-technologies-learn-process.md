@@ -1,4 +1,3 @@
-
 In this unit, you'll learn how to apply the results of the measure step in the innovation lifecycle, and how important data democratization is.
 
 ## Data democratization
@@ -22,17 +21,17 @@ The Azure platform covers the whole data lifecycle, which is fundamental for dat
 
 The Azure data ecosystem includes services and tools to migrate, ingest, store, and analyze data. The following list shows only a few of the mechanisms that you can use to process data and make it available for later sharing, in order to facilitate data-driven decision making:
 
-- **Data analytics**: [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is?azure-portal=true) is an enterprise analytics service that accelerates time-to-insight across data warehouses and big-data systems. Azure Synapse Analytics brings together the best of:
+- **Data analytics**: [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is?azure-portal=true) is an enterprise analytics service that accelerates time-to-insight across data warehouses and big-data systems. Azure Synapse Analytics brings together the best of:
    - SQL technologies used in enterprise data warehousing
    - Spark technologies used for big data
    - Pipelines for data integration and ETL (extract, transform, load) and ELT (extract, load, transform)
    - Deep integration with other Microsoft services such as Power BI, Azure Cosmos DB, and Azure Machine Learning
-- **Data migration**: Data might be already stored in existing sources, but it needs to be migrated to a modern platform before it can be converted into actionable insights. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms?azure-portal=true) contains tooling that helps with data migrations from systems such as SQL Server, PostgreSQL, Oracle, and MongoDB.
-- **Data processing**: Azure includes services to analyze and transform data streams with [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction?azure-portal=true), and to run ETL processes at large scale with [Azure Data Factory](https://docs.microsoft.com/azure/data-factory?azure-portal=true).
+- **Data migration**: Data might be already stored in existing sources, but it needs to be migrated to a modern platform before it can be converted into actionable insights. [Azure Database Migration Service](/azure/dms?azure-portal=true) contains tooling that helps with data migrations from systems such as SQL Server, PostgreSQL, Oracle, and MongoDB.
+- **Data processing**: Azure includes services to analyze and transform data streams with [Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction?azure-portal=true), and to run ETL processes at large scale with [Azure Data Factory](/azure/data-factory?azure-portal=true).
 
 ### Data sharing
 
-[Microsoft Power BI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview?azure-portal=true) is a set of tools that consolidate data coming from disparate sources into integrated, interactive visualizations. Users can dive into the data just by operating intuitive controls. The power of insights is available to everybody in an organization, not just to data professionals.
+[Microsoft Power BI](/power-bi/fundamentals/power-bi-overview?azure-portal=true) is a set of tools that consolidate data coming from disparate sources into integrated, interactive visualizations. Users can dive into the data just by operating intuitive controls. The power of insights is available to everybody in an organization, not just to data professionals.
 
 Area owners can create reports and dashboards that contain the relevant information around specific aspects of the application. After new functionality is introduced to validate a hypothesis, data is readily available to either validate or reject the hypothesis based on real customer usage.
 
@@ -46,9 +45,9 @@ Microsoft Power BI can help with data sharing from multiple perspectives. Here s
 
 The main problem of data centralization is scale at different levels. At the risk of oversimplifying, it can be reduced to the three "V's" of big data:
 
-- **Volume**: [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?azure-portal=true) is a cost-effective and scalable Azure platform for data storage. Based on the massive scalability provided by Azure Storage, Azure Data Lake Storage has been designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput.
-- **Variety**: This term often refers to the fact that data is not always structured. You might have semi-structured and even unstructured data too. [Azure Synapse](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is?azure-portal=true) shines in this area, because it brings together the best of SQL technologies used in enterprise data warehousing with Spark, which is often used for big data.
-- **Velocity**: A problem often found in older data architectures is the interdependency between storage capacity, analysis speed, and ingestion rates. In Azure data solutions, an organization can scale different dimensions of the platform independently, by decoupling them. Data can be ingested, processed, and shared through data pipelines that use the required Azure data services, as the [enterprise business intelligence architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?azure-portal=true) shows.
+- **Volume**: [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction?azure-portal=true) is a cost-effective and scalable Azure platform for data storage. Based on the massive scalability provided by Azure Storage, Azure Data Lake Storage has been designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput.
+- **Variety**: This term often refers to the fact that data is not always structured. You might have semi-structured and even unstructured data too. [Azure Synapse](/azure/synapse-analytics/overview-what-is?azure-portal=true) shines in this area, because it brings together the best of SQL technologies used in enterprise data warehousing with Spark, which is often used for big data.
+- **Velocity**: A problem often found in older data architectures is the interdependency between storage capacity, analysis speed, and ingestion rates. In Azure data solutions, an organization can scale different dimensions of the platform independently, by decoupling them. Data can be ingested, processed, and shared through data pipelines that use the required Azure data services, as the [enterprise business intelligence architecture](/azure/architecture/reference-architectures/data/enterprise-bi-synapse?azure-portal=true) shows.
 
 ### Data governance
 
@@ -64,10 +63,10 @@ As a consequence, data governance is critical for any organization that has a go
 
 The next step after data classification is ensuring that each data category is protected from unauthorized access. Azure supports these technologies that enforce confidentiality:
 
-- **Encryption of data at rest**: All Azure data is encrypted when stored in Microsoft datacenters. Some Azure services offer specific encryption features, such as [transparent data encryption](https://docs.microsoft.com/azure/azure-sql/database/transparent-data-encryption-tde-overview?azure-portal=true) in Azure Synapse and Azure SQL Database.
+- **Encryption of data at rest**: All Azure data is encrypted when stored in Microsoft datacenters. Some Azure services offer specific encryption features, such as [transparent data encryption](/azure/azure-sql/database/transparent-data-encryption-tde-overview?azure-portal=true) in Azure Synapse and Azure SQL Database.
 - **Encryption of data in flight**: All Azure data services encrypt data with SSL or TLS before sending it through the network. Some services, such as Azure Storage, can optionally allow unencrypted traffic. Organizations should disable any unencrypted communication for any type of sensitive data.
-- **Data access control**: Azure offers sophisticated authentication and authorization mechanisms both for access to the Azure platform and for access to data itself. [Azure role-based access control](https://docs.microsoft.com/azure/role-based-access-control/overview?azure-portal=true), [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview?azure-portal=true), and [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure?azure-portal=true) are three examples of essential services that can help to ensure that only authorized people have access to sensitive information.
-- **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms, by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](https://docs.microsoft.com/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
+- **Data access control**: Azure offers sophisticated authentication and authorization mechanisms both for access to the Azure platform and for access to data itself. [Azure role-based access control](/azure/role-based-access-control/overview?azure-portal=true), [Conditional Access](/azure/active-directory/conditional-access/overview?azure-portal=true), and [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?azure-portal=true) are three examples of essential services that can help to ensure that only authorized people have access to sensitive information.
+- **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms, by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
   - *Retain* an audit trail of selected events, where you can define categories of data actions to be audited.
   - *Report* on database activity, optionally with preconfigured reports and dashboards to get started quickly.
   - *Analyze* reports to uncover suspicious events, unusual activity, and trends.
@@ -84,4 +83,4 @@ A growth mindset is fundamental at this stage. Think of hypotheses proven wrong 
 
 ## Where to look next
 
-Many of the concepts in this unit are further discussed in the Cloud Adoption Framework documentation about [data democratization](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/best-practices/data?azure-portal=true).
+Many of the concepts in this unit are further discussed in the Cloud Adoption Framework documentation about [data democratization](/azure/cloud-adoption-framework/innovate/best-practices/data?azure-portal=true).

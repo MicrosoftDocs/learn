@@ -22,7 +22,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
@@ -61,7 +61,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
@@ -108,11 +108,11 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown selection as *Function*. The Authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests. The **HttpTrigger*x*** pane appears.
+1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown selection as *Function*. The Authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
 
-1. Select **Add**.
+1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
 
-1. In your new function, in the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
+1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and select **OK**.
 
@@ -168,7 +168,9 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown as _Function_, and then select **Add**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
+1. In the **Template details** section, in the **New Function** text box, you can change the name if you want. Leave the **Authorization level** dropdown selection as *Function*. The Authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
+
+1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In your new function, in the top menu bar, select **Get Function Url**.
 

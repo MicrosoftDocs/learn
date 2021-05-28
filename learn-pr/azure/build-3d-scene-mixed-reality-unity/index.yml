@@ -28,7 +28,6 @@ prerequisites: |
   - Awareness of the Microsoft Maps SDK
   - Bing Maps Account and Dev Key
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true
 units:
 - learn.azure.build-3d-scene-mixed-reality-unity.introduction
 - learn.azure.build-3d-scene-mixed-reality-unity.scene-design

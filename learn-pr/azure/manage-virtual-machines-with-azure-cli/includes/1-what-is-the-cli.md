@@ -8,7 +8,7 @@ This module is going to focus on using the Azure CLI to create and manage virtua
 
 ## What is the Azure CLI?
 
-The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
+The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 The Azure CLI can help you manage Azure resources such as virtual machines and disks from the command line or in scripts. Let's get started and see what it can do with Azure Virtual Machines.
 
