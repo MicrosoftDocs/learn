@@ -81,7 +81,7 @@ We have an Azure function app with logic to print a message to the log window. W
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
-1. In the left menu bar, select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource.
+1. In the left menu pane, select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource. The **Create Function App** pane appears.
 
     ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
 
