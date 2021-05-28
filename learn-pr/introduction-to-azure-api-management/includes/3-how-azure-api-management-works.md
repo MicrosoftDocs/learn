@@ -1,21 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
-
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how <features> of <product> work to <solve problem>."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
-
-    Heading: none
-
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
 Here, we'll discuss how Azure API Management works from three points of use: the API consumer, administrator, and developer. This knowledge will help you continue to evaluate whether Azure API Management is a good solution for managing your organization's APIs.
 
 In this unit, you'll learn about how the following Azure API Management users:
@@ -23,23 +5,6 @@ In this unit, you'll learn about how the following Azure API Management users:
 - API consumers
 - API administrators
 - API developers
-
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
-
-    Goal:
-        Cover the components of <product> and how they work.
-        Repeat this pattern multiple times as needed.
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
 
 ## How Azure API Management works for API consumers
 
@@ -61,9 +26,7 @@ The gateway performs many tasks from the consumer's point of view, but the follo
 - Routing. After an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - Performance. The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
-:::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="A mobile app requests a weather forecast using an API. The Azure API Management gateway routes the call to the backend server and then converts the server's XML response to JSON before returning it to the mobile app.":::<!-- Great graphic! I would suggest numbering the black boxes as steps though. -->
-
-<!-- Pattern for complex topic -->
+:::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="A mobile app requests a weather forecast using an API. The Azure API Management gateway routes the call to the backend server and then converts the server's XML response to JSON before returning it to the mobile app.":::
 
 ## How Azure API Management works for administrators
 
@@ -71,7 +34,7 @@ If you're an API administrator or manager, you still have a great deal of work t
 
 - Setting API policies.
 - Managing API consumers.
-- Handling<!-- Consider changing handling to "managing." --> API revisions and versions.
+- Managing API revisions and versions.
 - Monitoring and analyzing your APIs.
 
 You can perform all these tasks and more by using the Azure API Management administration interface in the form of Azure portal pages. Besides enabling you to set API policies (as you learned in the previous unit), the Azure API Management administration interface enables you to perform the following API management tasks:
@@ -84,7 +47,7 @@ You can perform all these tasks and more by using the Azure API Management admin
 - Manage API revisions and versions. When your API developer team needs to make changes to an API, you can make the change in a safe and controlled manner that doesn't adversely affect consumers by using revisions and versions:
   - A *revision* is a relatively minor or non-breaking change to an API. Your development team can code and test the revision separately from the production API, as in the upcoming image. Then, when your revision is ready for consumers, you can use the Azure API Management administration interface to set the updated API as the *current* revision.
   - A *version* is a relatively major or breaking change to an API. Azure API Management enables you to offer developers multiple versions of the API simultaneously. It also offers several versioning schemes, including path-based, header-based, and query string-based versioning.
-- Monitor and analyze APIs. The administration interface includes built-in monitoring tools that let you review API traffic in real time, and analytics that enable you to derive insights on how consumers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector<!-- I can't find any mention of API Inspector in Term Studio, Microsoft Style Guide, Microsoft Cloud Style Guide, or at Microsoft docs. Can you please verify this name? -->, Azure Monitor Logs, and Application Insights.
+- Monitor and analyze APIs. The administration interface includes built-in monitoring tools that let you review API traffic in real time, and analytics that enable you to derive insights on how consumers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector, Azure Monitor Logs, and Application Insights.
 
 :::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision denoted in the API request URL.":::<!-- Can you please verify that the alt text I added here is still correct? -->
 
@@ -96,10 +59,6 @@ Users with developer accounts sign in to the developer portal (which also accept
 
 - Accessing API documentation. Developers can review the documentation you've provided for each API.
 - Testing an API. The developer portal offers an interactive console that enables a developer to test an API quickly and safely. The developer can choose an API operation, add parameter values, and then submit the call to determine what response the API returns.
-- Viewing<!-- View can be a non-accessibility sight word - like how we use it here. Can we change this to something else? Ask yourself, what would someone who can't "view" the code be doing with the sample?--> API code samples. The developer portal offers API call samples in several programming languages, including C#, Java, JavaScript, PHP, and Python.
+- Reviewing API code samples. The developer portal offers API call samples in several programming languages, including C#, Java, JavaScript, PHP, and Python.
 - Subscribing to an API. When a consumer decides to use your API, the developer portal enables the user to create a subscription to the API and obtain a subscription key to use when calling the API.
 - Running analytics. The developer portal offers analytics on the developer's usage of an API.
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
