@@ -3,7 +3,7 @@ uid: learn.azdo.manage-build-dependencies.2b-what-is-azure-artifacts
 title: "What is Azure Artifacts?"
 metadata:
   title: "What is Azure Artifacts?"
-  description: TODO
+  description: Learn how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
   ms.date: 05/28/2021
   author: tpetchel
   ms.author: thpetche
