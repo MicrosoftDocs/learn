@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-language-understanding.6-integrate-luis
-title: Exercise - Integrating LUIS into the Azure Health Bot
+title: Exercise - Integrate LUIS into Azure Health Bot
 metadata:
-  title: Exercise - Integrating LUIS into the Azure Health Bot
-  description: Learn how to integrate your LUIS App into the Azure Health Bot.
+  title: Exercise - Integrate LUIS into Azure Health Bot
+  description: Learn how to integrate your LUIS app into Azure Health Bot.
   author: nrd26
   ms.author: chnoring
   ms.date: 04/14/2020

@@ -4,7 +4,7 @@ Now that you've reviewed this module, you should:
 
 - Have a basic understanding of LUIS and concepts related to it.
 - Understand the importance of different language models.
-- Know how to create language models on the Health Bot portal.
+- Know how to create language models in the Health Bot portal.
 - Know how to integrate a LUIS app to a Health Bot instance.
 
 ### More resources

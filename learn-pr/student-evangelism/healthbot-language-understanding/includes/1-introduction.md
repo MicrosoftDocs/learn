@@ -9,8 +9,8 @@ Knowledge of basic concepts related to LUIS and NLU along with other terminology
 In this module, you'll:
 
 - Learn about LUIS and concepts like intents, utterances, and entities in the context of Health Bot.
-- Understand the importance of different language models and how to add them to your health bot.
-- Learn how to integrate LUIS into your health bot.
+- Understand the importance of different language models and how to add them to your Health Bot instance.
+- Learn how to integrate LUIS into your Health Bot instance.
 
 ## Prerequisites
 
@@ -18,4 +18,4 @@ In this module, you'll:
 - Ability to use Health Bot
 - Ability to use the Azure portal
 
-*Produced in partnership with Nihal Dias and Annanya Vedala (Microsoft Learn Student Ambassadors) and the Microsoft Health Bot Product Group*
+*Produced in partnership with Nihal Dias and Annanya Vedala (Microsoft Learn Student Ambassadors) and the Microsoft Health Bot Product Group.*

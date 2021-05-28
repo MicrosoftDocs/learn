@@ -26,9 +26,9 @@ The following table shows some example intents.
 
 |App intents   |Example utterances   |
 |---------|---------|
-|BookAppointment      | <ul><li>"Book me an appointment with the general physician at 11 am today."</li><li> "Help me visit the general physician at 11 am today."</li><li>"I need an appointment with the general physician at 11 am today."</li></ul>  |
+|BookAppointment      | <ul><li>"Book me an appointment with the general physician at 11 AM today."</li><li> "Help me visit the general physician at 11 AM today."</li><li>"I need an appointment with the general physician at 11 AM today."</li></ul>  |
 |Greeting      | <ul> <li>"Hi."</li> <li> "Hello."</li> <li>"Good morning."</li> </ul> |
-|CheckAvailability      |<ul><li>"Are there any general physicians available?"</li><li> "Help me visit the general physician at 11 am today."</li></ul>|
+|CheckAvailability      |<ul><li>"Are there any general physicians available?"</li><li> "Help me visit the general physician at 11 AM today."</li></ul>|
 |None      |<ul><li>"Get me a cookie recipe."</li><li> "Did the Lakers win?"</li></ul>|
 
 All applications come with the predefined intent None. This fallback intent is typically used to provide a generic response to users when their requests don't match any other intent. Use the None intent to help handle utterances that don't map to any of the utterances you've entered.
@@ -47,14 +47,14 @@ Entities are data you want to pull from the utterances, such as names, dates, pr
 |Help.     |  help   |-        |Nothing to extract.|
 |Book appointment.   | bookAppointment | Appointment | Nothing to extract. The model doesn't have a required feature to extract something in this context, and there's no recipient stated.|  
 |Book an appointment with Dr. A.|  bookAppointment| Dr. A, appointment|  The model extracts Dr. A by adding a required feature of prebuilt entity personName. A machine learning entity has been used to extract appointment.|
-|Book an appointment with Dr. A at 11 am.|  bookAppointment | Dr. A, appointment, 11 am| The two important pieces of data, Dr. A and the appointment, have been extracted by machine learning entities.|
+|Book an appointment with Dr. A at 11 AM.|  bookAppointment | Dr. A, appointment, 11 AM| The two important pieces of data, Dr. A and the appointment, have been extracted by machine learning entities.|
 
 ### Intents compared to entities
 
 |Intent  |Entity  |Example utterance  |
 |---------|---------|---------|
-|BookAppointment     | {"type": "appointment," "time": "11:00 am," "doctor": "A," "day": "tomorrow"} |   Can you book an appointment with Dr. A at 11 am tomorrow?      |
-|BookAppointment     | {"type": "appointment," "time": "12:00 pm," "doctor": "B," "day": "weekend"}| Help me meet with Dr. B at 12 pm this weekend.        |
+|BookAppointment     | {"type": "appointment," "time": "11:00 AM," "doctor": "A," "day": "tomorrow"} |   Can you book an appointment with Dr. A at 11 AM tomorrow?      |
+|BookAppointment     | {"type": "appointment," "time": "12:00 PM," "doctor": "B," "day": "weekend"}| Help me meet with Dr. B at 12 PM this weekend.        |
 
 ## Use LUIS in a chat bot
 
