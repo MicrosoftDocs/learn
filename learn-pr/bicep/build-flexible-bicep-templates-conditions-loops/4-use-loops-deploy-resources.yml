@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.use-loops-deploy-resources
-title: Deploy multiple resources using loops
+title: Deploy multiple resources by using loops
 metadata:
   unitType: learning-content
-  title: Deploy multiple resources using loops
+  title: Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
   ms.date: 05/09/2021
   author: akasnik

@@ -1,10 +1,10 @@
-Your toy company wants to launch new toy in multiple countries. For compliance reasons, the infrastructure needs to be spread across each of the countries that the toy will be launched in.
+Your toy company wants to launch a new teddy bear toy in multiple countries. For compliance reasons, the infrastructure must be spread across all the Azure regions where the toy will be launched.
 
-You needed to deploy same resources in multiple locations and into different environments. You wanted to have flexible Bicep templates that you could reuse and that could control deployments by changing deployment parameters.
+You needed to deploy the same resources in multiple locations and a variety of environments. You wanted to create flexible Bicep templates that you can reuse, and to control resource deployments by changing the deployment parameters.
 
-You added conditions to your template, to deploy some of the resources only for certain environment. You then used copy loops to deploy resources into different Azure regions. You used variable loops to define the properties of resources you needed to deploy. Finally, you used output loops to retrieve properties of the resources that you'd deployed.
+To deploy some resources only to certain environments, you added conditions to your template. You then used copy loops to deploy resources into various Azure regions. You used variable loops to define the properties of the resources to be deployed. Finally, you used output loops to retrieve the properties of those deployed resources.
 
-Without conditions and copy loops, you would need to maintain and use multiple versions of Bicep templates. Every change in your environment would need to be modified in multiple templates. This would cause lots of efforts and overhead to maintain all of the different templates. By using conditions and loops in your templates, you created a single template that worked for all of your regions and environments, and ensured that all of your resources were configured identically.
+Without the conditions and copy loops features, you would have to maintain and use multiple versions of Bicep templates. You would have to modify every change in your environment in multiple templates. Maintaining all these templates would entail a great deal of effort and overhead. By using conditions and loops, you were able to create a single template that works for all your regions and environments and ensure that all your resources are configured identically.
 
 ## References
 
