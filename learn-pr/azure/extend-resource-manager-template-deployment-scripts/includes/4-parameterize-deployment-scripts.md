@@ -37,7 +37,7 @@ Your second option is to create environment variables that your scripts can acce
 
 ::: zone-end
 
-One benefit of using environment variables is that you can use [the `secureValue` option](/container-instances/container-instances-environment-variables#secure-values) for secrets that might need to be passed in to deployment scripts.
+One benefit of using environment variables is that you can use [the `secureValue` option](/azure/container-instances/container-instances-environment-variables#secure-values) for secrets that might need to be passed in to deployment scripts.
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
