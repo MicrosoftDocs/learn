@@ -6,7 +6,7 @@ In this exercise, we'll create our social media logic app using the Azure portal
 
 The first thing we need to do is create an Azure logic app. To do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -24,14 +24,14 @@ Now that the Azure Logic Apps resource has been located, let's configure basic s
     |---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> |
+    | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
     | Logic app name | Enter *ShoeTracker* |
     | Region | Select a location closest to you from the following list |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Review + create**, and then select **Create**. Wait until the resource is deployed. The **Overview** pane for your Logic App appears.
+1. Select **Review + create** > **Create**. Wait until the resource is deployed. The **Overview** pane for your Logic App appears.
 
 ## Use a template for your Azure logic app
 
@@ -52,9 +52,7 @@ Now that we have our logic app created, we need to add a trigger. We're going to
 
 Now, let's create the trigger and provide values for all required parameters.
 
-1. In the connectors search box, enter *Twitter*.
-
-1. Select the **When a new tweet is posted** trigger.
+1. Under the *Start with a common trigger* section, select the **When a new tweet is posted** trigger.
 
 1. Sign in with your existing Twitter account.
 
