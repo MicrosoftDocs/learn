@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.capture-application-logs-app-service.4-view-live-application-logging-activity-with-the-log-streaming-service
-title: View Live Application Logging with the Log Streaming Service
+title: View live application logging with the log streaming service
 metadata:
-  title: View Live Application Logging with the Log Streaming Service
-  description: View Live Application Logging with the Log Streaming Service
+  title: View live application logging with the log streaming service
+  description: View live application logging with the log streaming service
   ms.date: 03/20/2019
   author: nickwalkmsft
   ms.author: nickwalk
