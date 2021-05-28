@@ -37,14 +37,3 @@ quiz:
     - content: "Behind your firewall."
       isCorrect: false
       explanation: "Others won't be able to access packages behind your firewall."
-  - content: "What is Azure Artifacts?"
-    choices:
-    - content: "A place to upload your applications."
-      isCorrect: false
-      explanation: "Azure Artifacts enables you to create and share packages, not complete applications."
-    - content: "A place to share package feeds for Maven, npm, NuGet, and Python libraries."
-      isCorrect: true
-      explanation: "You can configure your feeds to allow public access or access only from select users."
-    - content: "A place to archive old code that is no longer in use."
-      isCorrect: false
-      explanation: "While you could maintain old versions of your package on Azure Artifacts, Azure Artifacts is not an archive system."
