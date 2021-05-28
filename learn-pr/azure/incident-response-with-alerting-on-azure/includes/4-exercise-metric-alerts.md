@@ -32,6 +32,9 @@ This VM will run a specific configuration that stresses the CPU, and generates t
 
 ## Create the metric alert through the Azure portal
 
+> [!Note]
+> Wait until the VM is successfully created to proceed to the next exercise. The VM creation process is complete when you see a "Finished .." message in the output.
+
 You use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.

@@ -1,6 +1,6 @@
-In the previous units, you exposed the Fruit Smoothies' ratings website and RESTfull API in two different ways for allowing access to each instance. The API is exposed via a ratings-api service using a *ClusterIP* that creates an internal IP address for use within the cluster. Recall, choosing this value makes the service reachable only from within the cluster. The website is exposed via a ratings-web service using a *LoadBalancer* that creates a public IP address in Azure and assigns it to Azure Load Balancer. Recall, choosing this value makes the service reachable from outside the cluster.
+In the previous units, you exposed the Fruit Smoothies' ratings website and RESTfull API in two different ways for allowing access to each instance. The API is exposed via a ratings-api service using a *ClusterIP* that creates an internal IP address for use within the cluster. Recall that choosing this value makes the service reachable only from within the cluster. The website is exposed via a ratings-web service using a *LoadBalancer* that creates a public IP address in Azure and assigns it to Azure Load Balancer. Recall that choosing this value makes the service reachable from outside the cluster.
 
-Even though the load balancer exposes the ratings website via a publicly accessible IP, there are limitations that you need to consider.
+Even though the load balancer exposes the ratings website via a publicly-accessible IP, there are limitations that you need to consider.
 
 Let's assume the Fruit Smoothies' development team decides to extend the project by adding a video upload website. Fans of Fruit Smoothies can submit videos of how they're enjoying their smoothies at home, at the beach, or work. The current ratings website responds at `FruitSmoothies.com`. When you deploy the new video site, you want the new site to respond at `fruitsmoothies.com/videos` and the ratings site at `fruitsmoothies.com/ratings`.
 
@@ -34,14 +34,14 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
     kubectl create namespace ingress
     ```
 
-1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
+1. Configure the Helm client to use the stable repository by running the following `helm repo add` command.
 
     ```bash
     helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
     helm repo update
     ```
 
-1. Next, install the NGINX ingress controller. You'll install two replicas of the NGINX ingress controllers are deployed with the `--set controller.replicaCount` parameter for added redundancy. Make sure to schedule the controller only on Linux nodes as Windows Server nodes shouldn't run the ingress controller. You specify a node selector by using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller only on Linux-based nodes.
+1. Next, install the NGINX ingress controller. You'll install two replicas of the NGINX ingress controllers that are deployed with the `--set controller.replicaCount` parameter for added redundancy. Make sure to schedule the controller only on Linux nodes, as Windows Server nodes shouldn't run the ingress controller. You specify a node selector by using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller only on Linux-based nodes.
 
     ```bash
     helm install nginx-ingress ingress-nginx/ingress-nginx \
@@ -66,7 +66,7 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
     You can watch the status by running 'kubectl --namespace ingress get services -o wide -w nginx-ingress-controller'
     ```
 
-1. Next, let's check the public IP of the ingress service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it update in real time. Select <kbd>Ctrl+C</kbd> to stop watching.
+1. Next, let's check the public IP of the ingress service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it update in real time. Press <kbd>Ctrl+C</kbd> to stop watching.
 
     ```bash
     kubectl get services --namespace ingress -w
@@ -108,7 +108,7 @@ There's no need to use a public IP for the service because we're going to expose
       type: ClusterIP
     ```
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
 1. You can't update the value of `type` on a deployed service. You have to delete the service and re-create it with the changed configuration.
 
@@ -130,9 +130,9 @@ There's no need to use a public IP for the service because we're going to expose
 
 ## Create an Ingress resource for the ratings web service
 
-In order for your Kubernetes Ingress controller to route requests to the ratings-web service, you will need an Ingress resource. The Ingress resource is where you specify the configuration of the Ingress controller.
+For your Kubernetes Ingress controller to route requests to the ratings-web service, you will need an Ingress resource. The Ingress resource is where you specify the configuration of the Ingress controller.
 
-Each Ingress resource will contain one or more Ingress rules, which specify an optional host, a list of paths to evaluate in the request, and a backend to route the request to. These rules are evaluated to determine the route that each request should take.
+Each Ingress resource will contain one or more Ingress rules, which specify an optional host, a list of paths to evaluate in the request, and a back end to route the request to. These rules are evaluated to determine the route that each request should take.
 
 Let's set up an Ingress resource with a route to the ratings-web service.
 
@@ -162,14 +162,14 @@ Let's set up an Ingress resource with a route to the ratings-web service.
             path: /
     ```
 
-    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of your ingress that you retrieved earlier, for example, `frontend.13-68-177-68.nip.io`. This value allows you to access the ingress via a host name instead of an IP address. In the next unit, you'll configure SSL/TLS on that host name.
+    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of your ingress that you retrieved earlier, for example, `frontend.13.68.177.68.nip.io`. This value allows you to access the ingress via a host name instead of an IP address. In the next unit, you'll configure SSL/TLS on that host name.
 
     > [!NOTE]
     > In this example, you use [nip.io](https://nip.io), which is a free service that provides wildcard DNS. You can use alternatives such as [xip.io](http://xip.io) or [sslip.io](https://sslip.io). Alternatively, you can use your domain name and set up the proper DNS records.
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration by using the `kubectl apply` command and deploy the ingress route file in the `ratingsapp` namespace.
+1. Apply the configuration by running the `kubectl apply` command, and deploy the ingress route file in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -185,7 +185,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13-68-177-68.nip.io.
+Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13.68.177.68.nip.io.
 
 ![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 

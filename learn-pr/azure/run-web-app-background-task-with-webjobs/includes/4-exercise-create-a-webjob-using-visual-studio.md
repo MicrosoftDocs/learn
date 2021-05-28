@@ -10,7 +10,7 @@ Here, you will create a web app from a template, and then add a WebJob project t
 
 The WebJob that you will create in this unit will write messages to a queue in an Azure Storage account. We'll start by creating that account, as well as a resource group to put it in.
 
-Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true). Use the Cloud Shell (top-right **>_** inside a box) to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choice. You can list all available regions with `az account list-locations --query [].name`.
+Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true). Use Azure Cloud Shell (top-right **>_** inside a box) to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choice. You can list all available regions with `az account list-locations --query [].name`.
 
 When the last command completes, make a note of the storage account name it created. This will also store the connection string for the storage account in a shell variable, which we'll use shortly.
 
@@ -32,19 +32,17 @@ echo "Created storage account $STORAGE_ACCOUNT_NAME"
 
 Next, use Visual Studio 2019 to create and publish a web app. This will represent the already-deployed production website in our watch-retailer scenario.
 
-1. From the top menu bar in Visual Studio, select **File** > **New** > **Project**.
+1. Open **Visual Studio 2019**, and in the right pane, under **Get Started**, select **Create a new project**. The **Create a new project** wizard appears.
 
-1. In the **New Project** dialog box, on the left-hand pane, expand **Visual C#**, and then select **Web**.
+1. On the right, scroll down the templates, and select **ASP.NET Core Web API**.
 
-1. In the center pane, select **ASP.NET Web Application (.NET Framework)**.
+1. Select **Next**. The **Configure your new project** window appears.
 
-1. At the bottom of the dialog box, in the **Name** field, enter **WatchesWebApp**.
+1. In the **Project name** field, enter **WatchesWebApp**.
 
-1. Select **OK** to create your project.
+1. Select **Next**. The **Additional information** window appears.
 
-1. In the **ASP.NET Web Application** dialog box, you will see a selection of starting templates. For this exercise, select **MVC**, and then select **OK** to create your project.
-
-    :::image type="content" source="../media/4-new-web-app.PNG" alt-text="New Project Dialog." loc-scope="aspnet"::: <!-- APEX13 -->
+1. Select **Create** to create your project. The **Overview** page for your *WatchesWebApp* appears.
 
 ## Publish To Azure
 
@@ -52,9 +50,15 @@ You've now created a web application from the sample template, and it is running
 
 1. Ensure that your copy of Visual Studio is logged into your Azure portal account you previously opened. This will ensure that the sandbox subscription is available for publishing.
 
-1. Right-click the **WatchesWebApp** project in Solution Explorer, and select **Publish**.
+1. In the right pane, under **Solution Explorer**, right-click the **WatchesWebApp** project, and select **Publish**. The **Publish** window appears.
 
-1. Select **App Service** as the publish target, select **Create New**, and then select **Publish**.
+1. For **Target**, select **Azure**.
+
+1. Select **Next**. The **Publish** window reappears with **Specific target** highlighted.
+
+1. Select **Azure App Service (Windows)**.
+
+1. Select **Next**.
 
 1. In the **Create App Service** panel, enter a name for your web application, and make a note of it for later. You can accept the default name. This name must be globally unique.
 
@@ -73,9 +77,9 @@ Run the following commands in the Cloud Shell window to configure the new web ap
 ```azurecli
 WEB_APP_ID=$(az webapp list --resource-group mslearn-webjobs --query [0].id --output tsv)
 
-az webapp config set --id $WEB_APP_ID --always-on true
+az webapp config set --ids $WEB_APP_ID --always-on true
 
-az webapp config connection-string set --id $WEB_APP_ID --connection-string-type Custom --settings StorageAccount=$STORAGE_ACCOUNT_CONNSTR
+az webapp config connection-string set --ids $WEB_APP_ID --connection-string-type Custom --settings StorageAccount=$STORAGE_ACCOUNT_CONNSTR
 ```
 
 ## Add a WebJobs Project

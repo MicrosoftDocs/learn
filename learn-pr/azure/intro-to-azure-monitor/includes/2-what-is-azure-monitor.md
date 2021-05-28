@@ -3,7 +3,7 @@ Let's start with an introduction to Azure Monitor. This overview will help you u
 ## What is monitoring?
 Monitoring is a task that involves collecting and reviewing data about the activity of some process or behavior. In the world of Azure, monitoring is used to collect insights into the operation, performance, and behavior of your applications and services.
 
-You can perform monitoring as a real-time event or collect and store the data in log files for later review. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
+You can perform monitoring as a near real-time event or review the data later. Metrics can also be reviewed later as they are stored for 93 days by default. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
 
 :::image type="content" source="../media/monitoring.png" alt-text="Depiction of data sources on the left feeding into a metrics and/or log database destinations on the right.":::
 
@@ -20,7 +20,7 @@ Key aspects of Azure Monitor are:
 
 * Azure Monitor metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs in Azure Monitor Logs.
 
-* Azure Monitor includes Insights, which are out-of-the box monitoring and troubleshooting experiences for Azure resources. Available Insights include Azure Monitor for VMs, Azure Monitor Application Insights, and Azure Monitor for Containers.
+* Azure Monitor includes Insights, which are out-of-the box monitoring and troubleshooting experiences for Azure resources. Available Insights include Azure Monitor VM insights, Azure Monitor application insights, and Azure Monitor container insights.
 
 * Azure Monitor can be used to visualize data with workbooks and dashboards as well as analyze data with custom charts and analytics. Azure Monitor enables you to receive notification and take automated action based on performance and availability criteria.
 
@@ -34,3 +34,15 @@ Azure Monitor is enabled by default. As soon as you create an Azure subscription
 As an example, the **Contoso-web-sales Metrics** chart displayed below, demonstrates the ability to select the **Requests** metric for our web app. The chart displays the sum aggregation of the requests for the web app, using a line chart format. The list of metrics is available automatically for your resource. There is no requirement to install other software or services. You find Metrics under the Monitoring category in each resource panel that you have in your Azure subscription.
 
 :::image type="content" source="../media/web-app-metrics.png" alt-text="Depiction of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app.":::
+
+### Other monitoring considerations
+
+Interactive monitoring is just one way to utilize the features of Azure Monitor. Many situations can benefit from an strategy involving alerts. You can configure alerts that will proactively respond to critical conditions. These alerts can be sent over text message or email, to have a person investigate. You may also consider configurations that can take actions based on an alert. Using **action groups**, which contain a set of recipients and actions to take, you can simplify administration across multiple rules.
+
+Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal.
+
+:::image type="content" source="../media/dashboard.png" alt-text="Depiction of an Azure dashboard that is displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
+
+Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. They allow you to tap into multiple data sources from across Azure, and combine them into unified interactive experiences. Use workbooks provided with Insights or create your own from predefined templates.
+
+:::image type="content" source="../media/workbooks.png" alt-text="Depiction of three workbooks displaying logged data in various chart formats and table formats.":::

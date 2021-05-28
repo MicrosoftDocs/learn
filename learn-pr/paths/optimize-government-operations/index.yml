@@ -14,7 +14,7 @@ summary: In this learning path, you’ll learn about the value that Azure can br
 prerequisites: |
  - Familiarity with basic computing concepts and terminology.
  - Familiarity with cloud computing.
-iconUrl: /learn/achievements/optimize-government-operations.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,7 @@ products:
 - azure-disk-encryption
 modules:
 - learn.azure.discover-azure-government
+- learn.azure.introduction-data-protection-privacy
 - learn.azure.safeguard-data-sector
 - learn.azure.support-hybrid-clouds
 trophy:

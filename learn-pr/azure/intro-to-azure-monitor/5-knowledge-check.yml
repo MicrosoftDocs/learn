@@ -4,7 +4,8 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
-  description: "Check you knowledge of Azure Monitor." # user input: a description for site search and SEO
+  description: "Check you knowledge of Azure Monitor." # user input: a description for site search and SEO.
+  ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien
   ms.author: gerryo
@@ -49,24 +50,24 @@ quiz:
       explanation: "Incorrect. The only requirement for Log Analytics Workspace association is if you decide to use the Logs in Azure Monitor. Basic metrics recording does not require Log Analytics Workspace association."
   - content: "How can you drill down and modify the data displayed on a chart in the Overview page of your resource?"
     choices:
-    - content: "Select the chart, which opens it in the Metrics Explorer."
-      isCorrect: true
-      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
     - content: "Use the Diagnostic tools to drill into the data on the chart."
       isCorrect: false
       explanation: "Incorrect. The Diagnose and solve problems option, on the Overview page, helps with troubleshooting but is not intended for metrics evaluation."
+    - content: "Select the chart, which opens it in the Metrics Explorer."
+      isCorrect: true
+      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
     - content: "Use the Log stream."
       isCorrect: false
       explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
-  - content: "What is the best way to aggregate metrics data into a single view?"
+  - content: "What is the best way to combine metrics data into a single view for reporting?"
     choices:
-    - content: "Use the Dashboard option of Azure Monitor."
+    - content: "Send the monitoring data to Event Hubs."
+      isCorrect: false
+      explanation: "Incorrect. Event Hubs can be used to stream the monitoring data to external tools, but it isn't the most optimal tool for aggregating metrics into a single view."
+    - content: "Setup a Log Analytics workspace."
+      isCorrect: false
+      explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
+    - content: "Use Azure Dashboards or Azure Monitor workbooks."
       isCorrect: true
       explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
-    - content: "Pin your charts to the Azure Dashboard."
-      isCorrect: false
-      explanation: "Incorrect. The Azure Dashboard is not the same as the Azure Monitor Dashboard. When you pin charts to the Azure Dashboard, they remain as separate charts, rather than an aggregation of the data in a single view."
-    - content: "Set up a Log Analytics Workspace."
-      isCorrect: false
-      explanation: "Incorrect. A Log Analytics Workspace is required for the Log function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating visuals into a single view."
   

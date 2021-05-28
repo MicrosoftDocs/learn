@@ -11,9 +11,9 @@ In this module, you learned how to:
 Take your interest further with:
 
 - Your _to-do_ list from the previous unit
-- [Azure IoT on Learn](https://docs.microsoft.com/learn/browse/?term=iot)
+- [Azure IoT on Learn](/learn/browse/?term=iot)
 - [Azure IoT webpage](https://www.microsoft.com/internet-of-things/)
-- [Raspberry Pi simulator documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
+- [Raspberry Pi simulator documentation](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

@@ -15,7 +15,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -30,7 +30,7 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=provision-infrastructure-azure-pipelines&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=provision-infrastructure-azure-pipelines&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
@@ -125,7 +125,7 @@ At a minimum, complete the following steps. Run these commands from the Visual S
 
 ## Set up your project in Visual Studio Code
 
-In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
+In the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
 > [!IMPORTANT]
 > In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
@@ -240,7 +240,7 @@ Fetch and check out a Git branch that contains starter code for this module.
 
 ## Create a service connection
 
-Create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
+Create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.

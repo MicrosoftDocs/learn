@@ -22,7 +22,7 @@ This module focuses on Azure Blob Storage, which is Microsoft's object storage s
 You can access Blob Storage over HTTP or HTTPS from any global internet connection. Your options for accessing blob data include URLs, the Azure Storage REST API, Azure PowerShell, the Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
 
 > [!NOTE]
-> Blob Storage supports Azure Data Lake Storage Gen2. Fore more information, see [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
+> Blob Storage supports Azure Data Lake Storage Gen2. Fore more information, see [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
 
 ### Resource types
 

@@ -1,4 +1,4 @@
-In this unit, you'll analyze the criteria that experts employ when they choose an AI service for a specific business need.  Understanding the criteria can also help you better understand the nuanced differences among the products.
+In this unit, you'll analyze the criteria that experts employ when they choose an AI service for a specific business need. Understanding the criteria can also help you better understand the nuanced differences among the products.
 
 ## Are you building a virtual agent that interfaces with humans via natural language?
 
@@ -6,7 +6,7 @@ Use Azure Bot Service when you need to create a virtual agent to interact with h
 
 Bot Service solutions usually rely on other AI services for such things as natural language understanding or even translation for localizing replies into a customer's preferred language.
 
-Before you jump in to build a custom chat experience by using Bot Service, it might make sense to search for prebuilt, no-code solutions that cover common scenarios. For example, you can use QnA Maker, which is available from Azure Marketplace, to build, train, and publish a sophisticated bot that uses FAQ pages, support websites, product manuals, SharePoint documents, or editorial content through an easy-to-use UI or via REST APIs. 
+Before you jump in to build a custom chat experience by using Bot Service, it might make sense to search for prebuilt, no-code solutions that cover common scenarios. For example, you can use QnA Maker, which is available from Azure Marketplace, to build, train, and publish a sophisticated bot that uses FAQ pages, support websites, product manuals, SharePoint documents, or editorial content through an easy-to-use UI or via REST APIs.
 
 Likewise, Power Virtual Agents integrates with Microsoft Power Platform so that you can use hundreds of prebuilt connectors for data input. You can extend Power Virtual Agents by building custom workflows with Power Automate, and if you feel that the out-of-the-box experience is too limiting, you can still build more complex interactions with Microsoft Bot Framework.
 

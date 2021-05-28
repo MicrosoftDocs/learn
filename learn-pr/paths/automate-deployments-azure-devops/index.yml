@@ -17,9 +17,9 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Evolve your DevOps practices learning path." role="presentation"></img>
+    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 1: Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices/)
+    [Part 1: Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices/)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
@@ -57,7 +57,7 @@ summary: |
   - Run an Ansible playbook that automatically configures virtual machines running on Azure.
   - Use an Azure Resource Manager template to automatically provision and configure Azure SQL Database in Azure Pipelines.
 prerequisites: |
-  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices)
   - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
   - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
   - An [Azure subscription](https://azure.microsoft.com/free/)

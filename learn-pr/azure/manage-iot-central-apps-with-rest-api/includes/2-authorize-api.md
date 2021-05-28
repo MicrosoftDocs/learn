@@ -1,6 +1,6 @@
 To protect your IoT Central application, all REST API calls must be authorized.
 
-The current store management solution for a retail company includes a store management application that includes dashboards for analyzing stock levels and transactions. You plan to add an IoT Central application to receive telemetry from environmental monitoring devices in stores. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management and data export functionality into your existing store management application. Your IoT Central application must verify that the store management application is authorized to make those REST API calls.
+The current fleet management solution for a logistics company includes a fleet management application with dashboards for managing vehicles. You plan to add an IoT Central application to receive telemetry from monitoring devices in vehicles. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management into your existing fleet management application. Your IoT Central application must verify that the user of the fleet management application is authorized to make those REST API calls.
 
 Here, you'll review some core IoT Central concepts, learn how IoT Central authorizes REST API calls, and how to generate and use an API token.
 
@@ -20,14 +20,13 @@ You have three options to create an IoT Central application:
 - Use the [Azure portal](https://portal.azure.com/).
 - Use Azure CLI.
 
-In this module, you'll use the Azure CLI to create your application.
+In this module, you'll use the Azure CLI to create your application. In this module, this is the only control plane operation you'll perform. All the other operations are REST API data plane operations.
 
 All three options require you to provide information such as the country or region for the deployment, an application name, a payment plan, and an application template.
 
 ## What is an application template?
 
-Application templates are industry-focused sample IoT solutions that are pre-populated with dashboards, simulated devices, and device templates. You can choose from the retail, energy, government, healthcare, or custom application templates. In this module, you use the custom application template to create an application and use the REST API.
-
+Application templates are industry-focused sample IoT solutions that are pre-populated with dashboards, simulated devices, and device templates. You can choose from the retail, energy, government, healthcare, or custom application templates. In this module, you use the **Custom application** template to create an application and use the REST API.
 ## How IoT Central authorizes REST API calls
 
 Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain either an _API token_ or a _bearer token_.
@@ -50,7 +49,7 @@ You can generate an IoT Central API token in two ways:
 
 To generate an API token using the REST API, you must already have an **Application administrator** API token or a bearer token to authorize the call.
 
-The [IoT Central REST API](https://docs.microsoft.com/rest/api/iotcentral/apitokens) lets you:
+The [IoT Central REST API](/rest/api/iotcentral/1.0/apitokens) lets you:
 
 - Get the list of API tokens in an application.
 - Create a new API token in the application.

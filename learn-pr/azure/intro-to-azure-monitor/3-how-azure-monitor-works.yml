@@ -4,7 +4,8 @@ title: How Azure Monitor works
 metadata:
   unitType: learning-content
   title: How Azure Monitor works
-  description: Explore how Azure Monitor can provide insights into your applications and infrastructure
+  description: Explore how Azure Monitor can provide insights into your applications and infrastructure.
+  ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien
   ms.author: gerryo

@@ -8,4 +8,4 @@ In this module, you learned:
 - How to use the tuple, array, vector, and hash map collection types.
 - How to control the flow of code execution with loops and conditional statements.
 
-In the next module in this Learning Path, you'll dig deeper on how errors and failures are handled in Rust code.
+In the next module in this Learning Path, you'll dig deeper into how errors and failures are handled in Rust code.

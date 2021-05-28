@@ -5,6 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary of Azure Monitor introduction.
+  ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien
   ms.author: gerryo
