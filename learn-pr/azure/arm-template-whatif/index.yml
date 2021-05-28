@@ -11,7 +11,7 @@ metadata:
 title: Preview Azure deployment changes by using what-if
 summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so.
 abstract: |
-  After completing this module, you'll be able to:
+  After you complete this module, you'll be able to:
   - Describe the two deployment modes in Azure and their effects.
   - Preview what changes will happen before you deploy by using the what-if operation.
 iconUrl: /learn/achievements/arm-template-test.svg
@@ -26,14 +26,14 @@ products:
   - azure-clis
   - azure-resource-manager
 prerequisites: |
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
   - Either:
-    - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.
-    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
+    - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally
+    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally
 units:
   - learn.arm-template-whatif.1-introduction
   - learn.arm-template-whatif.2-deployment-modes

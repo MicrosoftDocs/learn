@@ -3,7 +3,7 @@ uid: learn.arm-template-whatif.4-exercise-what-if
 title: Exercise - Preview changes with the what-if command
 metadata:
   title: Exercise - Preview changes with the what-if command
-  description: Use the what-if tool to predict what a deployment will carry out if applied.
+  description: Use the what-if tool to predict what a deployment will carry out if it's applied.
   author: softchris
   ms.author: chnoring
   ms.date: 05/20/2021
