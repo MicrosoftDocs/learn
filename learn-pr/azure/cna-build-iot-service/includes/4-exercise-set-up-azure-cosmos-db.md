@@ -37,12 +37,13 @@ To perform this exercise, you need:
 1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Next: Networking >**.
 1. On the **Networking** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Next: Backup Policy**.
 1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption >**:
-<!--ID/SME: Backup interval is listed twice in the following table. Please confirm that this is correct. Also, if the UI displays () around the "s" then it's okay, otherwise please remove.-->
+
    | Setting | Configuration |
    | --- | --- |
    | Backup interval | **24 Hour(s)** |
-   | Backup interval | **2 Day(s)** |
+   | Backup retention | **2 Day(s)** |
    | Backup storage redundancy | **Locally-redundant backup storage** |
+   
    > [!NOTE]
    > These choices don't represent the recommended settings, but are acceptable in a lab environment.
 
