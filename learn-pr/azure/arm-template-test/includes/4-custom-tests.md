@@ -2,7 +2,8 @@ So far you've looked at how to run some tests on your templates. However, you mi
 
 - **Run a specific test suite**. Upon installation of the test toolkit, you're given a set of tests that will be run. These tests are located at the following directory: *<install directory>/arm-ttk/testcases/deploymentTemplate*. 
 
-  It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the `-Test` argument. You can also edit what tests are being run by removing files in the directory.
+  It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the `-Test` parameter. You can also edit what tests are being run by removing files in the directory. You can skip specific tests by using the `-Skip` parameter.
+
 - **Author and run domain-specific tests**. It's possible to author a test file to enforce domain-specific rules. This unit will focus mostly on this scenario.
 
 ## Authoring and running your own tests
@@ -87,6 +88,6 @@ There are plenty of helpers that will help you find the content you need and rep
 
 ### Run the test
 
-At this point, you've authored your file. It will be run together with all other files in the same directory.
+At this point, you've authored your test. It will be run together with all other files in the same directory.
 
-As with the other test, you can opt to run only your specific test file by using the `-Test` parameter. As an argument, you'd give it the test file name stripped of the file extensions. **Custom-Test.test.ps1** would then be run by itself through `Test-AzTemplate -TemplatePath /path/to/template -Test Custom-Test`.
+As with the previous example, you can opt to run only your specific test file by using the `-Test` parameter. As a parameter, you'd give it the test file name stripped of the file extensions. **Custom-Test.test.ps1** would then be run by itself through `Test-AzTemplate -TemplatePath /path/to/template -Test Custom-Test`.

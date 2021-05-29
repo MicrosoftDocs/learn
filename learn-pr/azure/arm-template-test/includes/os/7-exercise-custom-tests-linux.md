@@ -181,7 +181,7 @@ In Visual Studio Code, run `Test-AzTemplate` from the integrated terminal:
 Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
 ```
 
-The preceding command is run with the parameter `-Test`, which takes a test name as input. You've provided `Custom-ParameterNaming` as an argument, which means _only_ your newly developed test will be run.
+The preceding command is run with the parameter `-Test`, which takes a test name as input. You've provided `Custom-ParameterNaming` as a parameter, which means _only_ your newly developed test will be run.
 
 > [!TIP]
 > Using the `-Test` parameter is a good practice when you're developing a test because it limits what's being run and the size of the terminal output.

@@ -1,12 +1,12 @@
-You're part of a development team at the company Tailwind Traders. As part of that work, you need to author Azure Resource Manager (ARM) templates to deploy and manage resources in the cloud. You want to ensure that the templates follow some sound practices before the resources are deployed. You elect to use the ARM template test toolkit to help you analyze your templates, so you can rectify any problems. 
+You're part of a development team at the company Tailwind Traders. As part of that work, you need to author Azure Resource Manager (ARM) templates to deploy and manage resources in the cloud. You want to ensure that the templates follow some sound practices before the resources are deployed. You elect to use the ARM Template Test Toolkit to help you analyze your templates, so you can rectify any problems. 
 
 ## Set up your testing environment
 
-The tool is a PowerShell script. To be able to run it, use the following steps:
+The tool is a PowerShell module. To be able to run it, use the following steps:
 
-- **Install PowerShell Core**. This task is done differently depending on whether you're on Linux, Mac, or Windows.
-- **Download the script**. The script is hosted in a GitHub repository. You can download it from there or fetch it via a `git clone` command.
-- **Import the script**. This step is just a one-liner instruction that you enter in a terminal window.
+- **Install PowerShell module**. This task is done differently depending on whether you're on Linux, Mac, or Windows.
+- **Download the module**. The module is hosted in a GitHub repository. You can download it from there or fetch it via a `git clone` command.
+- **Import the module**. This step is just a one-line instruction that you enter into a PowerShell session which will make the ARM-TTK commands available.
 
 ### Install PowerShell
 

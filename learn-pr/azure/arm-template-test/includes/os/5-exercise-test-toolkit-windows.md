@@ -56,7 +56,7 @@ Give it the following content:
 }
 ```
 
-Note the location of your template file. You'll use this directory path (for example, *C:\Temp*) later as an argument when running the test toolkit.
+Note the location of your template file. You'll use this directory path (for example, *C:\Temp*) later as a parameter when running the test toolkit.
 
 ## Detect and fix issues on your template by running the test toolkit
 
@@ -171,7 +171,7 @@ How do we fix the failing tests?
 
 As the test indicates, we could try replacing **westus** with the text **global**. However, that would fix only one of the problems. Most likely, we want to use the **location** parameter and set the resource's location to that value. 
 
-The reason is twofold. Not only can the location parameter be set as an argument for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
+The reason is twofold. Not only can the location parameter be set as a parameter for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
 
 1. Locate the first resource item in the **resources** array and replace the following content:
 
