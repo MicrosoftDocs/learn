@@ -27,7 +27,7 @@ When you deploy the template, Bicep will deploy in batches of two:
 :::image type="content" source="../media/6-batchSize-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 stacked to run as one batch, and app3 to run as a second batch." border="false":::
 
 > [!NOTE]
-> Bicep waits for each batch to finish before it moves on to the next. In the preceding example, if *app2* finishes its deployment before *app1*, Bicep waits until *app1* finishes before it starts to deploy *app3*.
+> Bicep waits for each complete batch to finish before it moves on to the next. In the preceding example, if *app2* finishes its deployment before *app1*, Bicep waits until *app1* finishes before it starts to deploy *app3*.
 
 You can also tell Bicep to run the loop sequentially by setting the `@batchSize` to `1`:
 
@@ -39,7 +39,7 @@ When you deploy the template, Bicep waits for each resource deployment to finish
 
 ## Use loops with resource properties
 
-You can use loops to help set resource properties. For example, when you deploy a virtual network, you need to specify its subnets. A subnet has to have two pieces of information: a name and an address prefix. You can use a parameter with an array of objects so that you can specify different subnets for each environment:
+You can use loops to help set resource properties. For example, when you deploy a virtual network, you need to specify its subnets. A subnet has to have two pieces of important information: a name and an address prefix. You can use a parameter with an array of objects so that you can specify different subnets for each environment:
 
 ::: code language="plaintext" source="code/6-loop-property.bicep" highlight="15-20" :::
 

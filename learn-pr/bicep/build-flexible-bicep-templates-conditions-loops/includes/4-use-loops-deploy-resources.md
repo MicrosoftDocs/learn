@@ -4,7 +4,7 @@ For your toy company, you need to deploy back-end infrastructure, including some
 
 Apart from their locations, all logical servers will be configured in the same way. You want to use Bicep code to deploy your logical servers, and a parameter should allow you to specify the regions into which the logical servers should be deployed.
 
-In this unit, you'll learn how to deploy multiple instances of resources by using _copy loops_.
+In this unit, you learn how to deploy multiple instances of resources by using _copy loops_.
 
 ## Use copy loops
 
@@ -25,7 +25,7 @@ You might sometimes need to loop to create a specific number of resources, and n
 When you use the `range()` function, you specify its start value and the number of values you want to create. For example, if you want to create storage accounts with the names `sa0`, `sa1`, and `sa2`, you would use the function `range(0,3)`.
 
 > [!NOTE]
-> When you use the `range()` function, you provide two arguments. The first specifies the starting value, and the second tells Bicep the number of values you want. For example, if you use `range(3,4)` then Bicep will return the values `3`, `4`, `5`, and `6`. Be careful to ensure you're requesting the right number of values, especially when you use a starting value of 0.
+> When you use the `range()` function, you provide two arguments. The first specifies the starting value, and the second tells Bicep the number of values you want. For example, if you use `range(3,4)` then Bicep will return the values `3`, `4`, `5`, and `6`. Make sure you request the right number of values, especially when you use a starting value of 0.
 
 ## Access the iteration index
 

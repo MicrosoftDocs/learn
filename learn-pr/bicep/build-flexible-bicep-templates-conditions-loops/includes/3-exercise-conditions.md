@@ -8,7 +8,7 @@ During the creation process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that defines a logical server with a database.
-> * Add a storage account and audit settings, each of which is deployed with a condition.
+> * Add a storage account and SQL auditing settings, each of which is deployed with a condition.
 > * Set up an infrastructure for your development environment, and then verify the result.
 > * Redeploy your infrastructure against your production environment, and then look at the changes.
 
@@ -16,7 +16,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template with a logical server and database
 
-1. Open Visual Studio Code
+1. Open Visual Studio Code.
 
 1. Create a new file called *main.bicep*.
 
@@ -24,7 +24,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
  
    Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it to.
 
-1. To define a logical server and database, add the following content to the file, along with the parameters and variable that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
+1. To define a logical server and database, add the following content to the file, along with the parameters and variables that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
    ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
@@ -38,7 +38,7 @@ In the auditing settings for the logical servers, you need to specify a storage 
 
    ::: code language="bicep" source="code/3-template.bicep" range="18-26" :::
 
-1. Below the variable declarations, add the following two variables:
+1. Below the variable declarations, add the following variables:
 
    ::: code language="bicep" source="code/3-template.bicep" range="30-31" :::
 

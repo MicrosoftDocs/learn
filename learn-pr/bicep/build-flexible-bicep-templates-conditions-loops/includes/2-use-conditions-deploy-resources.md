@@ -38,11 +38,11 @@ Notice that the storage account has a condition too. This means that it won't be
 
 ::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="6-7" :::
 
-Notice that this Bicep code uses the question mark (`?`) operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions are evaluated to the details from the storage account. When the code is deployed to a non-production environment, the expressions evaluate to an empty string ('').
+Notice that this Bicep code uses the question mark (`?`) operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions are evaluated to the details from the storage account. When the code is deployed to a non-production environment, the expressions evaluate to an empty string (`''`).
 
-You might wonder why this code is necessary, because `auditingSettings` and `auditStorageAccount` both have the same condition, and so you'll never need to deploy a SQL auditing settings resource without a storage account. Although this is true, Azure Resource Manager evaluates the property expressions before the conditionals. So, if the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
+You might wonder why this code is necessary, because `auditingSettings` and `auditStorageAccount` both have the same condition, and so you'll never need to deploy a SQL auditing settings resource without a storage account. Although this is true, Azure Resource Manager evaluates the property expressions before the conditionals on the resources. So, if the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
 
 > [!NOTE]
 > You can't define two resources with the same name in the same Bicep file and then conditionally deploy only one of them. The deployment will fail, because Resource Manager views this as a conflict.
 
-If you have several resources, all with the same condition for deployment, consider using Bicep modules. You can create a module that deploys all the resources, and then put a condition on the module in your main Bicep file.
+If you have several resources, all with the same condition for deployment, consider using Bicep modules. You can create a module that deploys all the resources, and then put a condition on the module declaration in your main Bicep file.
