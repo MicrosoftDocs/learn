@@ -24,6 +24,6 @@ The criteria help you compare Azure Data Lake Storage with more traditional form
 ## References
 
 - [Azure Data Lake Storage](https://azure.microsoft.com/services/storage/data-lake-storage/)
-- [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
-- [Azure services that support Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-supported-azure-services)
-- [Best practices for using Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-best-practices)
+- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure services that support Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-supported-azure-services)
+- [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices)
