@@ -141,7 +141,7 @@ By enabling the management of multiple APIs from a single administrative interfa
 - **Analytics**. Standardizing API analytics enables management teams and engineers to compare usage and performance across multiple APIs.
 - **Regulations**. For APIs that must meet government or industry rules and regulations, standardization helps ensure compliance across all APIs.
 
-:::image type="content" source="../media/4-when-to-use-azure-api-mangement-standardization.png" alt-text="Several APIs with varying configurations that after being imported into Azure API Management, have been given standardized configurations.":::
+:::image type="content" source="../media/4-when-to-use-azure-api-management-standardization.png" alt-text="Several APIs with varying configurations that after being imported into Azure API Management, have been given standardized configurations.":::
 
 In most cases, the need for standardization expands as the number of APIs grows, the rate at which the APIs are revised increases, and the API administration load gets larger. This need is true of the food delivery platform scenario, which requires consistency across the APIs for the mobile app, the web app, and the partner restaurants.
 
