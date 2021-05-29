@@ -22,9 +22,6 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
 
 ```bash
-#Retreive a location of the resource group. Use that location later in the exercise steps.
-az group list
-
 # Create Azure Shared disk with support concurent access from two VMs.
 az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
 ```
@@ -130,7 +127,7 @@ Exit
 5. Connect to the second VM by using SSH using the following command:
 
 ```bash
-az network public-ip show --resource-group [sandbox resource group name] --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
 
 ssh azureuser@myPublicIP2
 ```
@@ -240,7 +237,7 @@ $ppg=New-AzProximityPlacementGroup `
 New-AzAvailabilitySet `
 -Location "EastUS" `
 -Name "myAvailabilitySet1" `
--ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+-ResourceGroupName $resourceGroup `
 -Sku aligned `
 -PlatformFaultDomainCount 2 `
 -PlatformUpdateDomainCount 2 `
@@ -267,7 +264,7 @@ $cred = Get-Credential
 for ($i=3; $i-le4; $i++)
 {
 New-AzVm `
--ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+-ResourceGroupName $resourceGroup `
 -Name "myVM$i" `
 -Location eastus `
 -VirtualNetworkName "myVnet1" `
@@ -281,13 +278,6 @@ New-AzVm `
 }
 ```
 
-4. Review the VMs in the placement group using the following command:
-
-```powershell
-Get-AzProximityPlacementGroup -ResourceId $ppg.Id |
-Format-Table -Property VirtualMachines -Wrap
-```
-
 ## Task 4: Attach an Azure shared disk to both VMs
 
 1. Use the following command to attach the Azure shared disk to the first VM:
@@ -297,7 +287,7 @@ Format-Table -Property VirtualMachines -Wrap
 $vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 $vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
-Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
+Update-AzVM -VM $vm3 –ResourceGroupName $resourceGroup
 ```
 
 2. Attach the Azure shared disk to the second VM:
@@ -306,12 +296,12 @@ Update-AzVM -VM $vm1 –ResourceGroupName "myResourceGroup"
 $vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 $vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
-Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
+Update-AzVM -VM $vm4 –ResourceGroupName $resourceGroup
 ```
 
 ## Task 5: Install Windows Failover Clustering Service on myVM1
 
-1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.** 
+1. Sign into [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.** 
 2. Select the first VM **myVM3** from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
@@ -374,10 +364,10 @@ Update-AzVM -VM $vm2 –ResourceGroupName "myResourceGroup"
 5. In **Failover Cluster Manager**, from the **Action** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
 6. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
 7. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM3**, and then select **Add**.
-8. Repeat the same procedure to add **myVM4**.
+8. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM4**, and then select **Add**.
 9. Select **Next** to continue with testing the cluster setup.
 10. In the **Testing Options** page, select **Run only test I select**, and then select **Next**.
-11. Select the **Storage** checkbox, and then select **Next**.
+11. Uncheck all other test and select only the **Storage** checkbox, and then select **Next**.
 12. In the **Confirmation** page, select **Next**.
 13. Verify that all the tests are successful, and then select **Finish**.
 14. Close the RDP connection.
