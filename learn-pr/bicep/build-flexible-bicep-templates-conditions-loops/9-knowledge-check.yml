@@ -19,7 +19,7 @@ quiz:
       This should only be deployed for production environments.
       What should you do?
     choices:
-    - content: Define a resource for the policy assignment by using the *audit* effect, and just ignore any errors for non-production environments.
+    - content: Define a resource for the policy assignment by using the *audit* effect, and ignore any errors for non-production environments.
       isCorrect: false
       explanation: It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only for your production environments.
     - content: Add a condition to your Bicep template so that the policy assignment is deployed only when the `environmentName` parameter value is set to `Production`.
@@ -28,22 +28,22 @@ quiz:
     - content: Move the policy assignment into its own module.
       isCorrect: false
       explanation: Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
-  - content: Which one of the following is a good use case for loops?
+  - content: Which one of the following is a good situation to use loops?
     choices:
-    - content: Deploying multiple resources that are almost identical but with some minor differences between them.
+    - content: You need to deploy multiple resources that are almost identical but with some minor differences between them.
       isCorrect: true
       explanation: The copy loops feature enables you to deploy multiple resources that are identical or have minor differences.
-    - content: Deploying the same resources to multiple environments.
+    - content: You need to deploy the same resources to multiple environments.
       isCorrect: false
       explanation: You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you're creating multiple instances of resources within a single deployment.
-    - content: Running custom code inside your Bicep file.
+    - content: You need to run custom code inside your Bicep file.
       isCorrect: false
-      explanation: Loops can't be used to execute custom code.
+      explanation: Loops can't be used to execute custom code. You can consider using _deployment scripts_.
   - content: How can you reference the current loop item within a Bicep loop?
     choices:
     - content: Use the `copyIndex()` function.
       isCorrect: false
-      explanation: The `copyIndex()` function is used with JSON templates, not with Bicep templates.
+      explanation: The `copyIndex()` function is used within JSON templates, not within Bicep templates.
     - content: Use array functions.
       isCorrect: false
       explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.

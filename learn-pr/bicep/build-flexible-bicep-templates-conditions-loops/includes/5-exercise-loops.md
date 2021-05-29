@@ -42,6 +42,10 @@ After you've completed all of the preceding changes, your *main.bicep* file shou
 
 ::: code language="bicep" source="code/5-template.bicep" :::
 
+Your *database.bicep* file should look like this example:
+
+::: code language="bicep" source="code/3-template.bicep" :::
+
 If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the Bicep template to Azure
@@ -89,13 +93,13 @@ After the deployment is finished, you want to verify that new logical server and
 
 The teddy bear toy team is about to launch again, this time into Asia. The team is asking you to deploy a new server and database in the East Asia region. To do so, you need to update your Bicep parameter and redeploy your template.
 
+::: zone pivot="cli"
+
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
 
    ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
 
 1. Save the changes to the file.
-
-::: zone pivot="cli"
 
 1. In the Visual Studio Code terminal, redeploy the file by running the following code:
 
@@ -106,6 +110,12 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 ::: zone-end
 
 ::: zone pivot="powershell"
+
+1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
+
+   ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
+
+1. Save the changes to the file.
 
 1. In the Visual Studio Code terminal, redeploy the file by running the following code:
 
