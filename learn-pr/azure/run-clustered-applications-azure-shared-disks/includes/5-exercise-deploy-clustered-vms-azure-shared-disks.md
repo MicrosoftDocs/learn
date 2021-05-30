@@ -18,7 +18,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ## Task 1: Create Azure shared disk
 
-You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk. You will need to record the resource group name and location that is generated in the Sandbox environment and use that for later commands.
+You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
 
 ```bash
@@ -64,8 +64,6 @@ az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name my
 
 done
 ```
-
-2. Record the public IP addresses that are created for both VMs. You'll need them to connect to the VMs using secure shell (SSH).
 
 ## Task 4: Attach an Azure shared disk on both VMs
 
@@ -119,7 +117,7 @@ sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --ou
  sudo sg_persist /dev/sdc -s
 
 # Exit the secure shell session from **myVM1**
-Exit
+exit
 ```
 :::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
 
