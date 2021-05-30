@@ -41,7 +41,7 @@ In this exercise, you'll make changes to a VM by using the Azure portal. You’l
     | Setting | Value |
     | --- | --- |
     | Custom disk size (GiB) | 4 |
-    | Performance tier | **P1 - 120 IOPS, 25 MBps (default) |
+    | Performance tier | P1 - 120 IOPS, 25 MBps (default) |
 
 12. Select **OK** twice to finish creating the data disk.
 13. Retain the default values for the remaining settings, and then select **Review + create**.
@@ -80,7 +80,7 @@ In this exercise, you'll make changes to a VM by using the Azure portal. You’l
 | Setting | Value |
 | --- | --- |
 | Custom disk size (GiB) | 4 |
-| Performance tier | **P10 - 500 IOPS, 100 MBps |
+| Performance tier | P10 - 500 IOPS, 100 MBps |
 
 7. Select **Resize** to change the performance of the disk.
 
