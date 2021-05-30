@@ -89,13 +89,13 @@ az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --
 2. Use the following command to retrieve the IP addresses of VM1: 
 
 ```bash
-az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table)
 ```
 
 3. Connect to the first VM by using SSH:
 
 ```bash
-ssh azureuser@myPublicIP1
+ssh azureuser@$myPublicIP1
 ```
 
 4. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
@@ -127,9 +127,9 @@ Exit
 5. Connect to the second VM by using SSH using the following command:
 
 ```bash
-az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table
+myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table)
 
-ssh azureuser@myPublicIP2
+ssh azureuser@$myPublicIP2
 ```
 
 6. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
@@ -153,7 +153,7 @@ exit
 8. Connect to **myVM1** using SSH:
 
 ```bash
-ssh azureuser@myPublicIP1
+ssh azureuser@$myPublicIP1
 
 # Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
 sudo sg_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
@@ -168,7 +168,7 @@ exit
 9. Connect to **myVM2** by using SSH:
 
 ```bash
-ssh azureuser@myPublicIP2
+ssh azureuser@$myPublicIP2
 
 # Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
 sudo sg_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
