@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-3d-scene-mixed-reality-unity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What are two types of terrain commonly used to create a contextual Unity Scene?"
+      choices:
+        - content: "Pneumatic and pneumonic"
+          isCorrect: false
+          explanation: "Pneumatic isn't a type of terrain; rather, it relates to making use of air or gas under pressure.  Pneumonic also isn't a type of terrain.  It relates to or affects the lungs"
+        - content: "Static and dynamic"
+          isCorrect: true
+          explanation: "Static and dynamic terrains are commonly used to provide context for Mixed Reality experiences.  Both data sources are useful to help create an immersive environment and bring realism to Digital Twins.  Although some Digital Twin experiences are best developed focusing only on specific Digital Twin assets (for example, equipment in a manufacturing facility), others are better supported by ancillary data such as static and dynamic terrain. "
+        - content: "Astral and decentral"
+          isCorrect: false
+          explanation: "Astral is connected with, or resembling the stars.  Although this data could provide some context for a Mixed Reality experience, it isn't commonly used.  Decentral means non-central and has little relationship to terrain used in Unity."
+    - content: "What are the primary configuration parameters associated with the Map Renderer (Script) component?"
+      choices:
+        - content: "Latitude, Longitude, and Zoom Level"
+          isCorrect: true
+          explanation: "Latitude and longitude values are used to geolocate your experience.  These 2D geospatial coordinates enable Unity to place your map in a real-world position, allowing you to support relative and absolute placement of assets.  The Zoom level defines the level of detail you want to support in your map component.  These are the three primary configuration parameters used to ensure the proper placement and visibility in your Scene."
+        - content: "Azimuth, Bearing, and Altitude"
+          isCorrect: false
+          explanation: "Azimuth and bearing are typically angular measures of direction and aren't used for defining fixed geolocations.  Altitude is a measure of height of an object or point in relation to sea level or ground level or can be a measure of height of a celestial object above a horizon.  Although important measures for describing the directional location of an object relative to a known point, latitude and longitude are required to configure the Map Renderer (Script) component."
+        - content: "Cardinal, Ordinal, and Nominal"
+          isCorrect: false
+          explanation: "Although these are number types that may appear in the Map Renderer (Script) configuration, they aren't the primary configuration parameters.  Cardinal numbers define how many of something exist.  Ordinal numbers represent the position of an entity in a list.  Nominal numbers are like labels, with little relationship to each other (for example, not scalar)."
+    - content: "How far away should you place objects from users for maximum comfort and focus?"
+      choices:
+        - content: "About 6.5ft from the user"
+          isCorrect: true
+          explanation: "6.5ft is the optimum distance for objects to be placed because users can see them clearly but they don't appear to close or too far."
+        - content: "Less than 4ft from the user"
+          isCorrect: false
+          explanation: "Objects less than 4ft will not be comfortably inside a users field of view, which may make it hard to focus on."
+        - content: "More than 16ft from the user"
+          isCorrect: false
+          explanation: "Objects farther than 16ft will be uncomfortably far from the users immediate field of view, which may make it hard to see or identify."

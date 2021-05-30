@@ -1,6 +1,6 @@
 After deploying a real-time service, you can consume it from client applications to predict labels for new data cases.
 
-## Using the Azure Machine Learning SDK
+## Use the Azure Machine Learning SDK
 
 For testing, you can use the Azure Machine Learning SDK to call a web service through the **run** method of a **WebService** object that references the deployed service. Typically, you send data to the **run** method in JSON format with the following structure:
 
@@ -37,9 +37,9 @@ for i in range(len(x_new)):
     print (x_new[i], predictions[i])
 ```
 
-## Using a REST endpoint
+## Use a REST endpoint
 
-In production, most client applications will not include the Azure Machine Learning SDK, and will consume the service through its REST interface. You can determine the endpoint of a deployed service in Azure machine Learning studio, or by retrieving the **scoring_uri** property of the **Webservice** object in the SDK, like this:
+In production, most client applications will not include the Azure Machine Learning SDK, and will consume the service through its REST interface. You can determine the endpoint of a deployed service in Azure Machine Learning studio, or by retrieving the **scoring_uri** property of the **Webservice** object in the SDK, like this:
 
 ```python
 endpoint = service.scoring_uri

@@ -2,7 +2,7 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
 
 ### Get the public IP address of the VM
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) from the previous exercise, select **Go to resource**. The **Overview** panel for the virtual machine that you just created appears. Alternatively, you can find the VM under **All Resources** if you need to open it. The overview panel enables you to:
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) from the previous exercise, select **Go to resource**. The **Overview** pane for the virtual machine that you just created appears. Alternatively, you can find the VM under **All Resources** if you need to open it. The overview pane enables you to:
 
     - See if the VM is running
     - Stop or restart the VM
@@ -13,13 +13,13 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
 
 1. Under step 4, copy the command to the clipboard.
 
-    ![Screenshot of the Azure portal showing the Connect to a virtual machine panel configured to connect via SSH to the newly created Linux VM.](../media/5-connect-ssh.png)
+    ![Screenshot of the Azure portal showing the Connect to a virtual machine pane configured to connect via SSH to the newly created Linux VM.](../media/5-connect-ssh.png)
 
 1. We used the default SSH private key file path when we created the SSH key pair. We don't need to specify the private key path in the command by using the flag `-i` with the private key path. If you entered a different path when you created the SSH key pair, you'd add that path to the command.
 
 ## Connect with SSH
 
-1. Paste the command from your clipboard into the Azure Cloud Shell. Delete the `-i` flag and the private key path placeholder. It should look something like the following sample with a different IP address and username.
+1. Paste the command from your clipboard into Azure Cloud Shell. Delete the `-i` flag and the private key path placeholder, and run the command. It should look something like the following sample with a different IP address and username.
 
     ```bash
     ssh azureuser@13.68.150.164
@@ -36,11 +36,11 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
 
 1. Enter the passphrase you used when you created the SSH key pair.
 
-1. In the shell command prompt for Linux, try executing a few Linux commands
-    - `ls -la /` to show the root of the disk
-    - `ps -l` to show all the running processes
-    - `dmesg` to list all the kernel messages
-    - `lsblk` to list all the block devices - here you will see your drives
+1. In the shell command prompt for Linux, try executing a few Linux commands:
+    - `ls -la /`: Shows the root of the disk
+    - `ps -l`: Shows all the running processes
+    - `dmesg`: Lists all the kernel messages
+    - `lsblk`: Lists all the block devices - here you will see your drives
 
     The more interesting thing to observe in the list of drives is what is _missing_. Notice that our **Data** drive (`sdc`) is present but not mounted into the file system. Azure added a VHD but didn't initialize it.
 
@@ -50,7 +50,7 @@ Any additional drives you create from scratch need to be initialized and formatt
 
 1. First, identify the disk that we just created. You could also use `dmesg | grep SCSI`, which will list all the messages from the kernel for SCSI devices.
 
-1. After you know the drive (`sdc`) you need to initialize, you can use `fdisk` to do that. You'll need to run the command with `sudo` and supply the disk you want to partition. We can use the following command to create a new primary partition.
+1. After you know the drive (`sdc`) you need to initialize, you can use `fdisk` to do that. You'll need to run the command with `sudo`, and supply the disk you want to partition. We can use the following command to create a new primary partition.
 
     ```bash
     (echo n; echo p; echo 1; echo ; echo ; echo w) | sudo fdisk /dev/sdc

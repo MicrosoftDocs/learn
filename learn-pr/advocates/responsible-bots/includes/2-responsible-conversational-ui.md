@@ -46,4 +46,4 @@ Now that we know some of the main principles for building responsible bots, let'
 [PersonalityChat]: https://azure.microsoft.com/resources/videos/build-2019-microsoft-research-apis---project-personality-chat-in-action/
 [RespAI]: https://www.microsoft.com/ai/responsible-ai
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LangDetect]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection
+[LangDetect]: /azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection

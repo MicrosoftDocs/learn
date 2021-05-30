@@ -3,7 +3,7 @@ uid: learn.azure.encrypt-sector-data
 metadata:
   title: Encrypt public sector data in Azure
   description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
-  ms.date: 04/28/2021
+  ms.date: 05/03/2021
   author: Adriamen
   ms.author: micrum
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of data residency and encryption. 
   - Experience in network administration or cloud solutions is preferred. 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/encrypt-sector-data.svg
 levels: 
 - intermediate
 roles: 

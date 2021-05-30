@@ -18,9 +18,9 @@ You also need to specify three folder paths within your repository so your app c
 
 | Location              | Location example | Description                                                               | Required |
 | --------------------- | ---------------- | ------------------------------------------------------------------------- | -------- |
-| App location          | /Client          | The location of the source code for your web app                          | Yes      |
+| App location          | Client          | The location of the source code for your web app                          | Yes      |
 | App artifact location | wwwroot          | The location of your app's build artifacts, relative to your app location | No       |
-| API location          | /Api             | The location of the source code for your API                              | No       |
+| API location          | Api             | The location of the source code for your API                              | No       |
 
 The **App artifact location** is a relative path to the build output directory of your application. For example, consider we have an app at `Client` that outputs its built assets to a `bin/<build profile>/<framework>/publish/wwwroot` folder. In this case, you only need to specify `wwwroot` for this location, as the publish system will take care of the rest of the prefix.
 

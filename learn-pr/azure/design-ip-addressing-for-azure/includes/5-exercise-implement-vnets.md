@@ -38,7 +38,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name CoreServicesVnet \
-        --address-prefix 10.20.0.0/16 \
+        --address-prefixes 10.20.0.0/16 \
         --location westus
     ```
 
@@ -98,7 +98,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ManufacturingVnet \
-        --address-prefix 10.30.0.0/16 \
+        --address-prefixes 10.30.0.0/16 \
         --location northeurope
     ```
 
@@ -158,7 +158,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ResearchVnet \
-        --address-prefix 10.40.40.0/24 \
+        --address-prefixes 10.40.40.0/24 \
         --location westindia
     ```
 

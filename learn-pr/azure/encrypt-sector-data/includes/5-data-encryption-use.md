@@ -15,6 +15,8 @@ Infographic with title “TEE protects against:”. Below the title are two icon
 :::column-end:::
 :::row-end:::
 
+Aside from VMs using Intel SGX, Azure confidential computing also includes VMs based on AMD EPYC 3<sup>rd</sup> Gen CPUs, which support lift and shift scenarios without changing any code.  With AMD EPYC 3<sup>rd</sup> Gen technology, the contents of the entire VM is encrypted at runtime, making it opaque to cloud administrators for secure and isolated computations.
+
 Based on customer feedback, Microsoft has started to invest in higher-level [scenarios for Azure confidential computing](https://docs.microsoft.com/azure/confidential-computing/use-cases-scenarios?azure-portal=true). Customers can review the scenario recommendations as a starting point for developing their own applications using confidential computing services and frameworks.
 
 Now, let's review what you've learned with a brief knowledge check.

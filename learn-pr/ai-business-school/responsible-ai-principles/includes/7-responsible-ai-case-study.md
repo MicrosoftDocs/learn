@@ -55,7 +55,7 @@ As for AI governance, the business team and validation team collaborated to eval
 
 ## Evaluation of the State Farm strategy
 
-Let's examine how the State Farm AI strategy is creating value using the [value creation framework developed by Peter Zemsky](https://docs.microsoft.com/learn/modules/ai-strategy-to-create-business-value/2-holistic-ai-business-strategy-insead), INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation:
+Let's examine how the State Farm AI strategy is creating value using the [value creation framework developed by Peter Zemsky](/learn/modules/ai-strategy-to-create-business-value/2-holistic-ai-business-strategy-insead), INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the __industry environment perspective__, insurance companies are looking to streamline their business processes and lower costs without jeopardizing the customer experience. The key to success will be balancing advancements in AI capabilities with responsible usage.
 2. From the __value creation perspective__, leveraging responsible AI principles to establish a governance system helps State Farm make faster and more informed decisions, generating value by improving customer and employee satisfaction.

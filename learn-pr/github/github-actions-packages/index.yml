@@ -12,7 +12,8 @@ title: Leverage GitHub Actions to publish to GitHub Packages
 summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also locally run Docker images published into GitHub Packages.
 abstract: |
   By the end of this module, you will be able to:
-  - Understand when to use a Package Repository
+  - Understand when to use GitHub Packages
+  - Identify the steps to publish to GitHub Packages and the GitHub Container Registry
   - Set up a Continuous Integration (CI) workflow with GitHub Actions
   - Create a Dockerfile
   - Build a container image in CI
@@ -33,6 +34,7 @@ products:
 units:
 - learn.github.github-actions-packages.introduction
 - learn.github.github-actions-packages.what-is-github-packages
+- learn.github.github-actions-packages.publish-using-workflow
 - learn.github.github-actions-packages.exercise-github-packages-docker-registry
 - learn.github.github-actions-packages.knowledge-check-1
 - learn.github.github-actions-packages.github-packages-code-packages
