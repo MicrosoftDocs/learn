@@ -23,7 +23,7 @@ Now that you understand how to create deployments at different scopes, let's see
 
 You can also create resource groups by using Bicep. A resource group is a subscription-scope resource:
 
-:::code language="plaintext" source="code/3-create-rg.bicep" :::
+:::code language="plaintext" source="code/3-create-rg.bicep" highlight="1" :::
 
 > [!NOTE]
 > You'll see how to create Azure subscriptions by using Bicep later in this module.
