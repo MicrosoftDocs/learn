@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-change-disk-performance-tier.md)]
