@@ -297,10 +297,10 @@ $vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.I
 Update-AzVM -VM $vm4 –ResourceGroupName $resourceGroup
 ```
 
-## Task 5: Install Windows Failover Clustering Service on myVM1
+## Task 5: Install Windows Failover Clustering Service on myVM3
 
 1. Sign into [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.** 
-2. Select the first VM **myVM3** from the tool bar, select **Connect**, and then select **RDP**.
+2. Select the first VM, **myVM3** from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -323,10 +323,10 @@ Update-AzVM -VM $vm4 –ResourceGroupName $resourceGroup
     >[!Note]
     >The virtual machine **myVM3** will automatically restart, once that failover cluster feature is installed.
 
-## Task 6: Install Windows Failover Clustering Service on myVM2
+## Task 6: Install Windows Failover Clustering Service on myVM4
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
-2. Select the second VM **myVM4** from the tool bar, select **Connect**, and then select **RDP.**
+2. Select the second VM, **myVM4** from the tool bar, select **Connect**, and then select **RDP.**
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
@@ -349,10 +349,10 @@ Update-AzVM -VM $vm4 –ResourceGroupName $resourceGroup
     >[!Note]
     >The virtual machine **myVM4** will automatically restart, once that failover cluster feature is installed. 
 
-## Task 7: Test the storage for Windows Failover Clustering Service on myVM1
+## Task 7: Test the storage for Windows Failover Clustering Service on myVM3
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter and select **virtual machines.**
-2. Select the first VM **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
+2. Select the first VM, **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
