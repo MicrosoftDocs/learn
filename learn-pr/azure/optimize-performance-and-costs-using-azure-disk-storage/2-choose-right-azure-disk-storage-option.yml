@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
-content: |test
+content: |
   [!include[](includes/2-choose-right-azure-disk-storage-option.md)]
