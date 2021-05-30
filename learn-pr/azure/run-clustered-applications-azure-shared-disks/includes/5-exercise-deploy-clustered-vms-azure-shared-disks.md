@@ -220,7 +220,7 @@ $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 ```powershell
 # Create proximity placement group
 $ppgName="myPPG1"
-$resourceGroup=<rgn>[sandbox resource group name]</rgn>
+$resourceGroup="<rgn>[sandbox resource group name]</rgn>"
 $ppg=New-AzProximityPlacementGroup `
 -Location EastUs `
 -Name $ppgName `
