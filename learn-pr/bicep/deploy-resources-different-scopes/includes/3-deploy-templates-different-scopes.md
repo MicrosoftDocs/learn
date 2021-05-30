@@ -12,6 +12,22 @@ Notice that you're just telling Bicep that this will be deployed into the scope 
 
 You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes the file will be deployed to a resource group.
 
+## Create management groups and resource groups
+
+Now that you understand how to create deployments at different scopes, let's see how we can use this to create a management group, which is a tenant-scope resource:
+
+:::code language="plaintext" source="code/3-create-mg.bicep" highlight="1" :::
+
+> [!NOTE]
+> The example above illustrates how you can create a management group hierarchy by using Bicep. The *NonProduction* management group will be a child of the root management group, and the *SecretRND* management group will be a child of the *NonProduction* management group.
+
+You can also create resource groups by using Bicep. A resource group is a subscription-scope resource:
+
+:::code language="plaintext" source="code/3-create-rg.bicep" :::
+
+> [!NOTE]
+> You'll see how to create Azure subscriptions by using Bicep later in this module.
+
 ## Submit a deployment
 
 ::: zone pivot="cli"
