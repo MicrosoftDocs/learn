@@ -87,7 +87,7 @@ az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --
 2. Use the following command to retrieve the IP addresses of VM1: 
 
 ```bash
-myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table)
+myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
 ```
 
 3. Connect to the first VM by using SSH:
@@ -125,7 +125,7 @@ exit
 5. Connect to the second VM by using SSH using the following command:
 
 ```bash
-myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query [ipAddress,publicIpAllocationMethod,sku] --output table)
+myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
 
 ssh azureuser@$myPublicIP2
 ```
