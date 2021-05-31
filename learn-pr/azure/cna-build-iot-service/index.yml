@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build an IoT Service
-summary: | Build an IoT service.
+summary: Learn how to build an IoT service and configure IoT pipelines.
 abstract: |
   In this module, you'll:
   - Describe the architecture and components of IoT services.
@@ -17,7 +17,7 @@ abstract: |
   - Integrate Azure data stores with IoT pipelines.
   - Implement Azure Cosmos DB for processing telemetry data.
   - Analyze and manage telemetry data.
-  - Configure and manage IoT pipeline.
+  - Configure and manage IoT pipelines.
 prerequisites: | 
   - Basic understanding of cloud computing
   - Basic familiarity with Azure
