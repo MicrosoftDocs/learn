@@ -264,12 +264,9 @@ In this task, you'll validate the functionality of the Azure web app hosting the
 1. From the console prompt, run the following command to build the Next.js application you pushed the Azure web app:
 <!--ID/SME: Please reword the previous sentence.-->
    
-       ```bash
-       npm run build
-       ```
-        
-       >[!NOTE]
-       > The build process starts.
+   ```bash
+   npm run build
+   ```
         
        :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
