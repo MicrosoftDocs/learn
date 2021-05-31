@@ -10,7 +10,7 @@ There are recommendations on different levels: everything from parameters and va
 - **Extensibility**. Sometimes you want to add your own recommendations. Your company or team might have its own rules to enforce.
 
 > [!NOTE]
-> Checking code for these recommendations is sometimes called _linting_.
+> Checking code against these kinds of recommendations is sometimes called _linting_.
 
 ## The ARM Template Test Toolkit
 

@@ -8,10 +8,12 @@ You decide to evaluate the existing set of tools that addresses these issues.
 
 ## What will we be doing?
 
-In this module, you gain an understanding of what practices are beneficial to follow and why they're important. You also practice using the ARM Template Test Toolkit to correct issues in your templates.
+In this module, you gain an understanding of what practices are beneficial to follow and why they're important. You also practice using the ARM Template Test Toolkit (ARM-TTK) to correct issues in your templates.
 
 > [!NOTE]
 > Bicep is a new language for defining your Azure resources. It has a simpler authoring experience than JSON, as well as other features that help improve the quality of your infrastructure as code. We recommend that anyone new to infrastructure as code on Azure use Bicep instead of JSON. To learn about Bicep, see [Introduction to infrastructure as code using Bicep](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/).
+> 
+> If you use Bicep to write your code, we recommend you don't use the ARM-TTK. Instead, you should use the Bicep linter.
 
 ## What is the main goal?
 
