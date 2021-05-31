@@ -1,0 +1,43 @@
+﻿### YamlMime:Module
+uid: learn.azure.set-up-apps-use-scale
+metadata:
+  title: Introduction to setting up apps for use and scale
+  description: This module describes how to set up apps for use and scale.
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an IoT Service
+summary: |
+abstract: |
+  In this module, you'll:
+  - 
+  - 
+  - 
+prerequisites: | 
+  -
+  -
+  -
+iconUrl: /learn/achievements/set-up-apps-use-scale.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.set-up-apps-use-scale.1-introduction
+- learn.azure.set-up-apps-use-scale.2-define-azure-ad
+- learn.azure.set-up-apps-use-scale.3-exercise-set-up-azure-ad
+- learn.azure.set-up-apps-use-scale.4-azure-ad-app-development
+- learn.azure.set-up-apps-use-scale.5-exercise-implement-multitenant-data
+- learn.azure.set-up-apps-use-scale.6-manage-monitor-azure-ad-apps
+- learn.azure.set-up-apps-use-scale.7-exercise-integrate-next.js-web-app-azure-ad
+- learn.azure.set-up-apps-use-scale.8-knowledge-check
+- learn.azure.set-up-apps-use-scale.9-summary
+badge:
+  uid: learn.azure.set-up-apps-use-scale.badge
