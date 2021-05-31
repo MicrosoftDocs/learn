@@ -6,7 +6,7 @@ You want to modify your newly deployed Azure CycleCloud-managed cluster to accou
 
 ## Add a nodearray definition to the Azure CycleCloud template
 
-You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled *hpc* and *htc*. You'll create another partition and the corresponding nodearray intended for jobs that benefit from the Compute Unified Device Architecture (CUDA) capabilities. <!--SME: Per Copy Edit's advice, I spelled out CUDA on first use but I've left this note so you know. -ID -->
+You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled *hpc* and *htc*. You'll create another partition and the corresponding nodearray intended for jobs that benefit from the Compute Unified Device Architecture (CUDA) capabilities.
 
 1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com). When prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
@@ -172,7 +172,7 @@ To conclude this exercise, you'll import the modified template and its parameter
     > [!NOTE]
     > You must specify the name of the target cluster and the --force flag to overwrite configuration of the existing cluster.
 
-1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL <!--SME: This comment was here: (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server)-->. If you're prompted, confirm that you want to proceed.
+1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL. If you're prompted, confirm that you want to proceed.
 1. If you're prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
 1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page. In the list of clusters, select the **contoso-custom-slurm-lab-cluster** entry, and then select **Edit**.
 1. In the **Edit contoso-custom-slurm-lab-cluster** pop-up window, on the **About** page, select **Next**.
