@@ -267,8 +267,11 @@ In this task, you'll validate the functionality of the Azure web app hosting the
        ```bash
        npm run build
        ```
-
-      :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
+        
+       >[!NOTE]
+       > The build process starts.
+        
+       :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
 1. Wait for the build process to complete.
       
