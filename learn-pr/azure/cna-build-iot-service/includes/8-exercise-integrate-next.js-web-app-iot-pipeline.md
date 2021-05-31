@@ -261,14 +261,15 @@ In this task, you'll validate the functionality of the Azure web app hosting the
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise.
 1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry. Then, on the **App Service Editor (Preview)**, select **Go**.
 1. On the **App Service Editor** page, in the vertical menu, select the **Open Console** icon (the second one from the end).
-1. From the console prompt, run the following command to build the Next.js application you pushed the Azure web app:
-<!--ID/SME: Please reword the previous sentence.-->
+1. From the console prompt, run the following command:
    
    ```bash
    npm run build
    ```
+   
+ 1.  This command builds the Next.js application you pushed to the Azure web app.
  
-      :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
+     :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
 1. Wait for the build process to complete.
       
