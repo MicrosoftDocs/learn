@@ -5,9 +5,9 @@ ms.topic: include
 ms.date: 04/22/2021
 ms.author: jodowns
 ---
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
 
-1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
+1. Open a terminal window by using the **Terminal** menu. This menu usually opens at the bottom of the screen.
 
 1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
@@ -15,7 +15,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     If not, select the dropdown menu, and choose **Select Default Shell**. Then select **bash**.
 
-    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
+    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
@@ -36,7 +36,6 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 1. Look at the version number on the first line, which starts with `azure-cli`.
 
    - If the version number is version `2.20.0` or later, go to the next section ("Install the Bicep tooling").
-
    - If the version number is later than `2.11.0` and earlier than `2.20.0`, update your Azure CLI version by using this command:
   
       ```azurecli
@@ -45,9 +44,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
    - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
 
-### Install the Bicep tooling
+### Upgrade or install the Bicep tooling
 
-Run the following command to install the Bicep template compilation support:
+If you already have the Bicep tooling installed, run the following command to upgrade it to the latest version:
+
+```azurecli
+az bicep upgrade
+```
+
+Otherwise, run the following command to install the Bicep template compilation support:
 
 ```azurecli
 az bicep install
@@ -63,7 +68,7 @@ az bicep install
 
 1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
-1. Set the default subscription for all of the Azure CLI commands that you run in this session:
+1. Set the default subscription for all of the Azure CLI commands that you run in this session.
 
     ```azurecli
     az account set --subscription "Concierge Subscription"
@@ -72,7 +77,7 @@ az bicep install
    > [!NOTE]
    > If you've used more than one sandbox recently, there might be more than one Concierge Subscription listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
-1. Get the Concierge Subscription IDs:
+1. Get the Concierge Subscription IDs.
 
    ```azurecli
     az account list \

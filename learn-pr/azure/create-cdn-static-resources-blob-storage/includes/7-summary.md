@@ -4,20 +4,20 @@ Azure Content Delivery (CDN) Network is a powerful way to improve performance an
 
 ## Further Reading
 
-[What is a content delivery network on Azure?](https://docs.microsoft.com/azure/cdn/cdn-overview)
+[What is a content delivery network on Azure?](/azure/cdn/cdn-overview)
 
-[Compare Azure CDN Product Features](https://docs.microsoft.com/azure/cdn/cdn-features)
+[Compare Azure CDN Product Features](/azure/cdn/cdn-features)
 
-[Quickstart: Integrate an Azure storage account with Azure CDN](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)
+[Quickstart: Integrate an Azure storage account with Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn)
 
-[Static website hosting in Azure Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website)
+[Static website hosting in Azure Storage](/azure/storage/blobs/storage-blob-static-website)
 
-[Simple Websites using Azure Storage Blob Service](https://blogs.msdn.microsoft.com/make_it_better/2016/08/09/simple-websites-using-azure-storage-blob-service/)
+[Simple Websites using Azure Storage Blob Service](/archive/blogs/make_it_better/simple-websites-using-azure-storage-blob-service)
 
-[Improve performance by compressing files in Azure CDN](https://docs.microsoft.com/azure/cdn/cdn-improve-performance)
+[Improve performance by compressing files in Azure CDN](/azure/cdn/cdn-improve-performance)
 
-[How caching works](https://docs.microsoft.com/azure/cdn/cdn-how-caching-works)
+[How caching works](/azure/cdn/cdn-how-caching-works)
 
-[Manage expiration of web content in Azure CDN](https://docs.microsoft.com/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
+[Manage expiration of web content in Azure CDN](/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
 
-[Restrictions on Directory Paths](https://docs.microsoft.com/azure/cdn/cdn-restrict-access-by-country)
+[Restrictions on Directory Paths](/azure/cdn/cdn-restrict-access-by-country)

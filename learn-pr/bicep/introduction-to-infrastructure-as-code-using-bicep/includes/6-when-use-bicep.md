@@ -14,7 +14,7 @@ If you're using Azure as your cloud platform, consider these advantages of using
 
 - **Azure support**: Bicep is a fully supported product with Microsoft Support.
 
-- **No State management**: Bicep deployments compare the current state of your Azure resources with the state that you define in the template. You don't need to keep your resource state information somewhere else, like in a storage account. Azure automatically keeps track of this state for you.
+- **No state management**: Bicep deployments compare the current state of your Azure resources with the state that you define in the template. You don't need to keep your resource state information somewhere else, like in a storage account. Azure automatically keeps track of this state for you.
 
 - **Easy transition from JSON**: If you're already using ARM JSON templates as your declarative template language, it isn't a difficult process to transition to using Bicep. You can use the Bicep CLI to decompile any ARM template into a Bicep template by using the `bicep decompile` command.
 

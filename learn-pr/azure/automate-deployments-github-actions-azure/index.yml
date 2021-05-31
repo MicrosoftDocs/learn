@@ -21,7 +21,6 @@ prerequisites: |
   - Familiarity with GitHub
   - Familiarity with CI/CD concepts
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true
 levels:
   - intermediate
 roles:

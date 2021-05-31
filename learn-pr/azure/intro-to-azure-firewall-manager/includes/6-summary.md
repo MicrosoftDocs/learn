@@ -15,5 +15,5 @@ You learned that you can use Azure Firewall Manager to manage your cloud-based s
 
 ## Resources
 
-- [What is Firewall Manager?](https://docs.microsoft.com/azure/firewall-manager/overview?azure-portal=true)
-- [What are the Firewall Manager architecture options?](https://docs.microsoft.com/azure/firewall-manager/vhubs-and-vnets?azure-portal=true)
+- [What is Firewall Manager?](/azure/firewall-manager/overview?azure-portal=true)
+- [What are the Firewall Manager architecture options?](/azure/firewall-manager/vhubs-and-vnets?azure-portal=true)

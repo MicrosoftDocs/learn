@@ -109,6 +109,6 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 Your ASP.NET Core Web API app is now ready to produce the OpenAPI document.
 
 
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az apim]: /azure/api-management/api-management-key-concepts
 
 [exercise]: https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/fusion-developers/exercise.zip
