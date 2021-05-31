@@ -1,4 +1,4 @@
-1. To install PowerShell Core, follow the instructions in [Installing PowerShell on Linux](/powershell/scripting/install/installing-powershell-core-on-linux?azure-portal=true).
+1. To install PowerShell, follow the instructions in [Installing PowerShell on Linux](/powershell/scripting/install/installing-powershell-core-on-linux?azure-portal=true).
 
 1. Run `pwsh` in the terminal, to verify the installation:
 
@@ -71,7 +71,7 @@ Give it the following content:
    }
 ```
 
-Note the location of your template file. You can run the command `pwd` in the terminal to output the path. You'll use this path later as an argument when running the test toolkit.
+Note the location of your template file. You can run the command `pwd` in the terminal to output the path. You'll use this path later as a parameter when running the test toolkit.
 
 ## Detect and fix issues in your template by running the test toolkit
 
@@ -123,7 +123,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
    
    You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
   
-1. Run `Test-AzTemplate` with the flag `-TemplatePath` pointing to the location of your template file path (excluding the file name):
+1. Run `Test-AzTemplate` with the parameter `-TemplatePath` pointing to the location of your template file path (excluding the file name):
 
       ```powershell
       Test-AzTemplate -TemplatePath .
@@ -198,7 +198,7 @@ How do we fix the failing tests?
 
 As the test indicates, we could try replacing **westus** with the text **global**. However, that would fix only one of the problems. Most likely, we want to use the **location** parameter and set the resource's location to that value. 
 
-The reason is twofold. Not only can the location parameter be set as an argument for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
+The reason is twofold. Not only can the location parameter be set as a parameter for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
 
 1. Locate the first resource item in the **resources** array and replace the following content:
 

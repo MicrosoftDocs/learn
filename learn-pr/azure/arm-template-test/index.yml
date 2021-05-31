@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
-  title: Validate Azure resources by using the ARM template test toolkit
-  description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
+  title: Validate Azure resources by using the ARM Template Test Toolkit
+  description: Use the ARM Template Test Toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
   ms.date: 05/21/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Validate Azure resources by using the ARM template test toolkit
-summary: This module teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM template test toolkit.
+title: Validate Azure resources by using the ARM Template Test Toolkit
+summary: This module teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM Template Test Toolkit.
 abstract: |
   After completing this module, you'll be able to:
-  - Validate your template's adherence to recommendations by using the ARM template test toolkit.
-  - Implement domain-specific rules for deployments that you can run by using the ARM template test toolkit.
+  - Validate your template's adherence to recommendations by using the ARM Template Test Toolkit.
+  - Implement domain-specific rules for deployments that you can run by using the ARM Template Test Toolkit.
 iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate

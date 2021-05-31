@@ -26,18 +26,18 @@ quiz:
       explanation: The what-if operation detects changes to resources, including resources that will be deleted.
   - content: "How would you run a single test by using the test toolkit?"
     choices:
-    - content: "Use the flag `-TestName` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
+    - content: "Use the parameter `-TestName` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
       isCorrect: false
-      explanation: "The flag is called `-Test`."
-    - content: "Use the flag `-Test` and specify the test as number between 1 and *n*, where *n* is the number of tests."
+      explanation: "The parameter is called `-Test`."
+    - content: "Use the parameter `-Test` and specify the test as number between 1 and *n*, where *n* is the number of tests."
       isCorrect: false
       explanation: "You can't use a number."    
-    - content: "Use the flag `-Test` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
+    - content: "Use the parameter `-Test` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
       isCorrect: true
       explanation: "The answer is correct."
-    - content: "Use the `-Run-Only` flag and specify which test with double quotation marks."
+    - content: "Use the `-Run-Only` parameter and specify which test with double quotation marks."
       isCorrect: false
-      explanation: "The flag is called `-Test`."
+      explanation: "The parameter is called `-Test`."
   - content: |
       You are asked to create a new test for the ARM-TTK to detect whenever an API version is older than a specified value.
       Which of these helper cmdlets can you use to inspect the resource definitions?

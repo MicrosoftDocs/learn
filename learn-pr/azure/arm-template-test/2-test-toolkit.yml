@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-template-test.2-test-toolkit
-title: Apply best practices by using the test toolkit script
+title: Apply best practices by using the test toolkit module
 metadata:
-  title: Apply best practices by using the test toolkit script
+  title: Apply best practices by using the test toolkit module
   description: It's important to apply some reasonable practices to your templates before trying to deploy them.
   author: softchris
   ms.author: chnoring
