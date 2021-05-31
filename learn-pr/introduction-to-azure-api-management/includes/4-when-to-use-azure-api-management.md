@@ -28,9 +28,9 @@ By enabling  management of multiple APIs from a single administrative interface,
 - **URLs**. Standardizing the base URL for your APIs reduces consumer errors and gives your API deployments a more professional appearance.
 - **Analytics**. Standardizing API analytics enables management teams and engineers to compare usage and performance across multiple APIs.
 - **Regulations**. For APIs that must meet government or industry rules and regulations, standardization helps ensure compliance across all APIs.
-<!-- In the following URL path, we use "mangement" instead of "manAgement." If it's a problem, we might want to fix it here and in the graphic file name as well. -->
-:::image type="content" source="../media/4-when-to-use-azure-api-mangement-standardization.png" alt-text="Several APIs with varying configurations are imported into Azure API Management. When they emerge from API Management, they have standardized configurations.":::
-<!-- We have Azure Data Lake in the graphic, but there's no mention of it in this module. We should have at least one reference to it here if we're going to use it in the graphic. -->
+
+:::image type="content" source="../media/4-when-to-use-azure-api-management-standardization.png" alt-text="Several APIs with varying configurations are imported into Azure API Management. When they emerge from API Management, they have standardized configurations.":::
+
 In most cases, the need for standardization expands as:
 
 - The number of APIs grows.
