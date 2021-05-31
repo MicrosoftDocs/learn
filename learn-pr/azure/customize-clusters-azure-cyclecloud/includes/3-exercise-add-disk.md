@@ -101,7 +101,7 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
 
     > [!NOTE]
     > Alternatively, you could run `cyclecloud project upload <locker_name>`, where the placeholder `<locker_name>` designates the locker name.
-<!--ID/SME: Please verify that the following note reads correctly.-->
+
     > [!NOTE]
     > Ignore the azcopy related error message stating `Cannot perform sync due to error: sync must happen between source and destination of the same type, e.g., either file <-> file, or directory/container <-> directory/container` followed by `Upload failed!` as long as the individual copies of project files succeed.
 
