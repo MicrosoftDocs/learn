@@ -36,7 +36,7 @@ In most cases, the need for standardization expands as:
 - The number of APIs grows.
 - The rate at which the APIs are revised increases.
 - The API administration load gets larger.
-:::image type="content" source="../media/4-when-to-use-azure-api-mangement-standardization.png" alt-text="Several APIs with varying configurations that after being imported into Azure API Management, have been given standardized configurations.":::
+:::image type="content" source="../media/4-when-to-use-azure-api-management-standardization.png" alt-text="Several APIs with varying configurations that after being imported into Azure API Management, have been given standardized configurations.":::
 
 This need is true of the food delivery platform scenario, which requires consistency across the APIs for the mobile app, the web app, and the partner restaurants.
 
