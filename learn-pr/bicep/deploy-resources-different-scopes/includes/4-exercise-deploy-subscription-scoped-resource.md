@@ -245,7 +245,10 @@ Notice that you're creating a subscription-scoped deployment by using the `New-A
 
 ::: zone-end
 
-Also, notice that you're explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata. You're creating a name with today's date so that you are less likely to accidentally use the same name as another deployment.
+Also, notice that you're explicitly specifying a name and location for the deployment. Azure uses this information to store the deployment metadata.
+
+> [!TIP]
+> Your deployment name includes today's date. This makes it less likely you'll accidentally use the same name as another deployment.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 
