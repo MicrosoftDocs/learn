@@ -151,7 +151,9 @@ In this task, you'll configure a sample Next.js application that retrieves data 
    ENDPOINT=$(az cosmosdb show --name $ACCOUNTNAME --resource-group $RG1NAME --query "locations[0].documentEndpoint" --output tsv)
    KEY=$(az cosmosdb keys list --name $ACCOUNTNAME --resource-group $RG1NAME --query "primaryMasterKey" --output tsv)
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to replace the placeholders in the **config.js** file with the values you retrieved in the previous step:
+   
    ```bash
     ENDPOINT="$(echo $ENDPOINT | sed -e 's/\\/\\\\/g; s/\//\\\//g; s/&/\\\&/g')"
     sed -i 's/"COSMOS_DB_SQL_API_ENDPOINT"/"'"$ENDPOINT"'"/' ./config.js
@@ -159,12 +161,15 @@ In this task, you'll configure a sample Next.js application that retrieves data 
     KEY="$(echo $KEY | sed -e 's/\\/\\\\/g; s/\//\\\//g; s/&/\\\&/g')"
     sed -i 's/"COSMOS_DB_ACCESS_KEY"/"'"$KEY"'"/' ./config.js
     ```
+    
 1. From the Bash session in the **Cloud Shell** pane, run the following command to validate that the **config.js** file contains the actual values of the Cosmos DB SQL API endpoint and the corresponding access key:
+   
    ```bash
    cat ./config.js
    ```
-> [!NOTE]
-> At this point, you should know more about how to install the dependency packages and build the application. Because of versioning issues, you won't be able to run the build in Azure Cloud Shell. Instead, you'll perform this task following the deployment.
+   
+    > [!NOTE]
+    > At this point, you should know more about how to install the dependency packages and build the application. Because of versioning issues, you won't be able to run the build in Azure Cloud Shell. Instead, you'll perform this task following the deployment.
 
 ## Deploy an Azure web app hosting the Next.js application
 
@@ -174,23 +179,30 @@ In this task, you'll deploy the newly configured Next.js application to an Azure
 > You could deploy the same application to any other Azure service that provides a Node.js runtime environment, including Azure VMs, Azure Container Instances, or Azure Kubernetes Service.
 
 1. Within the web browser window displaying the Azure portal, from the Bash session in the **Cloud Shell** pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Next.js application:
+   
    ```bash
    RG1NAME=cosmos-db-RG
    LOCATION=$(az group show --resource-group $RG1NAME --query location --output tsv)
    RG2NAME=nextjs-webapp-RG
    az group create --name $RG2NAME --location $LOCATION
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to create an Azure App Service plan that will host the new Azure web app:
+   
    ```bash
    SPNAME=nextjs-webapp-sp
    az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku S1
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to create the new Azure web app:
+  
    ```bash
    WEBAPPNAME=nextjs$RANDOM$RANDOM
    az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to reinitialize the local Git repository and commit all changes in the main branch:
+   
    ```bash
    git config --global user.email "user1@adatum.com"
    git config --global user.name "Adatum User"
@@ -198,35 +210,47 @@ In this task, you'll deploy the newly configured Next.js application to an Azure
    git add -A
    git commit -m "Initial Commit"
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to set up user-level deployment credentials:
+   
    ```bash
    DEPLOYMENTUSER=m05u08User$RANDOM
    DEPLOYMENTPASS=m05u08Pass$RANDOM$RANDOM
    az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to identify the user-level deployment credentials (make sure to record their value, because you'll need them later in this exercise):
+
    ```bash
    echo $DEPLOYMENTUSER
    echo $DEPLOYMENTPASS
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
+
    ```bash
    RG2NAME=nextjs-webapp-RG
    WEBAPPNAME=$(az webapp list -resource-group $RG2NAME --query "[0].name" --output tsv)
 
    DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following command to configure the remote repo named **azure**, representing the deployment URL you identified in the previous step:
+
    ```bash
    git remote add azure $DEPLOYMENTURL
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to create the **master** branch based on the **main** branch and push its content to the Azure Web app (when prompted for the password that is part of the user-level deployment credentials you recorded previously in this task):
+
    ```bash
    git checkout -b master
    git push --set-upstream azure master
    ```
-  > [!NOTE]
-  > Wait for the deployment to complete.
+   
+      > [!NOTE]
+      > Wait for the deployment to complete.
+      
 1. Close the **Cloud Shell** pane.
 
 ## Validate the functionality of the Azure web app
@@ -239,18 +263,26 @@ In this task, you'll validate the functionality of the Azure web app hosting the
 1. On the **App Service Editor** page, in the vertical menu, select the **Open Console** icon (the second one from the end).
 1. From the console prompt, run the following command to build the Next.js application you pushed the Azure web app:
 <!--ID/SME: Please reword the previous sentence.-->
+   
    ```bash
    npm run build
    ```
+   
   :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
-  > [!NOTE]
-  > Wait for the build process to complete.
+  
+      > [!NOTE]
+      > Wait for the build process to complete.
+      
   :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
+  
 1. Close the web browser tab displaying the **App Service Editor** page.
 1. On the Azure portal blade displaying the properties of the web app, in the vertical menu, select the first entry, labeled **Overview**. On the **Essentials** pane, select the link labeled **URL**.
-  > [!NOTE]
-  > This will automatically open another web browser tab displaying the newly deployed Azure web app.
+
+      > [!NOTE]
+      > This will automatically open another web browser tab displaying the newly deployed Azure web app.
+      
 1. Verify that the web browser page displays the **Next.js - Cosmos DB IoT telemetry data** page with the listing of the IoT telemetry data points retrieved from the Azure Cosmos DB collection.
+
      :::image type="content" source="../media/8-next.js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the Azure Cosmos DB items.":::
 
 ## Results
