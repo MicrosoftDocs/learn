@@ -25,11 +25,15 @@ In this task, you'll configure a sample Next.js application that retrieves data 
 
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
 1. In the Azure portal, in the toolbar, select the **Cloud Shell** icon located next to the search box.
-  > [!NOTE]
-  > Alternatively, you can access Cloud Shell directly by navigating to [https://shell.azure.com](https://shell.azure.com?azure-portal=true).
+
+    > [!NOTE]
+    > Alternatively, you can access Cloud Shell directly by navigating to [https://shell.azure.com](https://shell.azure.com?azure-portal=true).
+    
 1. If you're prompted to select either **Bash** or **PowerShell**, select **Bash**.
-  > [!NOTE]
-  > If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
+
+    > [!NOTE]
+    > If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
+  
 1. From the Bash session in the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
    ```bash
    git clone https://github.com/polichtm/wp2104-m05u08.git
