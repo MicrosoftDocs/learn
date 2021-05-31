@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build an IoT Service
-summary: Learn how to build an IoT service and configure IoT pipelines.
+summary: |
 abstract: |
   In this module, you'll:
   - Describe the architecture and components of IoT services.
