@@ -64,16 +64,14 @@ The *Azure API Management developer portal* is a web interface that enables deve
 
 Azure API Management provides several service tiers, each of which offers a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price.
 
-| | | | | | |
-| --- | --- | --- | --- | --- | --- |
 |**Criteria**  |**Consumption**  |**Developer**  |**Basic**  |**Standard**  |**Premium**  |
+| --- | --- | --- | --- | --- | --- |
 |**Designed for**    | Lightweight usage        | Evaluation, testing, and other non-production usage        | Entry-level production usage        | Medium-volume production usage        | High-volume or enterprise production usage        |
 |**Cache**     | External only        | 10 megabytes (MB)         | 50 MB        | 1 gigabyte (GB)        | 5 GB        |
 |**Service-level agreement (SLA)**     | 99.95%        | None        | 99.95%        | 99.95%        | 99.99%        |
 |**Developer portal**     | No         | Yes        | Yes        | Yes        | Yes        |
 |**Built-in analytics**     | No        | Yes        | Yes        | Yes        | Yes        |
 |**Throughput (estimated requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
-|   |   |   |   |   |   |
 
 > [!NOTE]
 > The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per million calls. The pricing for all the other tiers is per hour.
