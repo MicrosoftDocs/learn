@@ -202,6 +202,8 @@ To conclude this exercise, you'll verify that the template you imported into Azu
     > [!NOTE]
     > Ensure that you select the VM size that supports the Premium tier of Azure Storage, which is required to provision disks of the head node according to your custom configuration.
 
+    :::image type="content" source="../media/u3-cyclecloud-select-machine-type.png" alt-text="The screenshot depicts the Select a machine type pop-up window tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
+    
     | Setting | Value |
     | --- | --- |
     | Max HPC Cores | Enter **100**. |
