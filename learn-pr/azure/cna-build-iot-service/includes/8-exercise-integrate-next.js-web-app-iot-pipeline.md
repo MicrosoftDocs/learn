@@ -264,16 +264,16 @@ In this task, you'll validate the functionality of the Azure web app hosting the
 1. From the console prompt, run the following command to build the Next.js application you pushed the Azure web app:
 <!--ID/SME: Please reword the previous sentence.-->
    
-   ```bash
-   npm run build
-   ```
-   
-  :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
+       ```bash
+       npm run build
+       ```
+
+      :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
       > [!NOTE]
       > Wait for the build process to complete.
       
-  :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
+      :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
   
 1. Close the web browser tab displaying the **App Service Editor** page.
 1. On the Azure portal blade displaying the properties of the web app, in the vertical menu, select the first entry, labeled **Overview**. On the **Essentials** pane, select the link labeled **URL**.
