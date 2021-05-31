@@ -7,7 +7,7 @@ These benefits align with your objectives for implementing the new Azure-residen
 ## What is the format of Azure CycleCloud templates?
 
 Templates are INI-formatted files that use the declarative syntax to describe the structure and configuration of a CycleCloud cluster, including cluster node roles and their respective relationships. Templates consist of named sections, with headers designated by one or more pairs of square brackets. The sections form a hierarchy, corresponding to the hierarchy of cluster objects and their corresponding parameters. The number of square brackets represents a tier within that hierarchy, increasing sequentially with each tier.
-<!-- ID/SME: Does the previous sentence make sense as written? -->
+
 ``` ini
 [cluster]
   [[node, nodearray]]
