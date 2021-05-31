@@ -4,7 +4,7 @@ In this module, you learned about the integration of IoT pipelines with a range 
 
 Now that you've completed this module, you should know more about how to:
 
-* Create and configure Azure Cosmos DB-based data store.
+* Create and configure an Azure Cosmos DB-based data store.
 * Implement Azure IoT Central-based telemetry processing by using Azure Functions.
 * Connect Next.js applications to Azure Cosmos DB.
 
