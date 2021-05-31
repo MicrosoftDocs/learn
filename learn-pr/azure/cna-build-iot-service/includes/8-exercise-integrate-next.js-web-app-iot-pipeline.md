@@ -35,14 +35,19 @@ In this task, you'll configure a sample Next.js application that retrieves data 
     > If this is the first time you're starting **Cloud Shell** and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
   
 1. From the Bash session in the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
+
    ```bash
    git clone https://github.com/polichtm/wp2104-m05u08.git
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following command to switch to the directory containing the clone of the GitHub repo:
+  
    ```bash
    cd wp2104-m05u08/
    ```
+   
 1. From the Bash session in the **Cloud Shell** pane, run the following command to display the content of the **index.js** file containing the Next.js script that establishes a connection to the Cosmos DB account you created in the first exercise of this module and queries the content of the **iotcollection** in the **iotdb** database, which you created in the second exercise of this module:
+
    ```bash
    cat ./pages/index.js
    ```
@@ -128,13 +133,18 @@ In this task, you'll configure a sample Next.js application that retrieves data 
        </div>
      );
    ```
+
 1. From the Bash session in the **Cloud Shell** pane, run the following command to display the content of the **config.js** file, whose purpose is to store the values representing the Cosmos DB SQL API endpoint, the corresponding access key, and the target database and container hosting the IoT data you collected in the previous exercise of this module:
+
    ```bash
    cat ./config.js
    ```
-  > [!NOTE]
-  > The names of the database and container are already prepopulated. Next, you'll set the values of the endpoint and the corresponding access key.
+   
+      > [!NOTE]
+      > The names of the database and container are already prepopulated. Next, you'll set the values of the endpoint and the corresponding access key.
+      
 1. From the Bash session in the **Cloud Shell** pane, run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and then store them in temporary variables:
+
    ```bash
    RG1NAME=cosmos-db-RG
    ACCOUNTNAME=$(az cosmosdb list --resource-group $RG1NAME --query "[0].name" --output tsv)
