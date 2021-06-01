@@ -1,5 +1,30 @@
-You need to evaluate options to migrate your production workloads out of your on-premises data center. You need to maintain your existing investments in training and operational processes, but want to avoid incurring more datacenter and hardware ownership costs, and you need to move quickly.
+In this module you learned about the Azure VMware Solution (AVS), an Azure service to redeploy and extend your VMware environment in the cloud.
 
-The Azure VMware Solution allowed you to redeploy your VMware environment as-is, including all automation and operational knowledge, and scale the size of the environment dynamically.
+Specifically you learned:
 
-What used to take days, or even weeks, to deploy was now available on-demand across multiple Azure regions. VMware Solution is capable of scaling to meet the needs to all production workloads. It has connectivity options to suit your deployment, integration with many Azure services that can improve performance and capabilities, full Microsoft support, and clear licensing benefits. Azure VMware Solution can dramatically reduce the challenges of deploying a VMware Private Cloud environment.
+- The business value of Azure VMware Solution
+    - VMware tools and technology you know
+    - Azure Native Integration 
+    - High-performance cloud infrastructure
+
+- The basic components of the AVS service and how they work in Azure.
+    - What Microsoft manages with the AVS service
+    - Private Cloud concepts
+    - Private Cloud Storage
+    - AVS interconnectivity into Azure
+    - Security and compliance with Azure VMware Solutions
+- Use cases that drive its adoption
+    - Migrate existing assets “as is” 
+    - Reduce your datacenter footprint 
+    - Prepare for disaster recovery and business continuity
+    - Modernize your workloads
+- Azure pricing benefits for Azure VMware Solution
+
+
+Continue on this path to learn about how to deploy and migrate VMs to Azure VMware Solution.
+
+## Learn more
+
+- [Azure VMware Solution documentation](/azure/azure-vmware/)
+- [Run your VMware workloads natively on Azure](https://azure.microsoft.com/services/azure-vmware/)
+- [VMware to Azure Migration Solutions](https://www.vmware.com/cloud-solutions/azure.html)
