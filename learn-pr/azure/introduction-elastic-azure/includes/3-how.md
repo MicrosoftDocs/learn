@@ -2,9 +2,9 @@ Using the depth of the data already living on Azure, Elastic helps you index big
 
 This native integration, built by the creators, delivers a frictionless user experience across management, billing, and support. Customers can easily purchase and manage your subscriptions directly from the Azure Marketplace. Your investment in Elastic can be used to draw down your Azure spend commitment and results in one single, consolidated bill. Elastic and Microsoft are committed to ongoing collaboration and innovation together to meet customer needs and evolving market demand. In fact, Elastic solutions complement existing Azure platform services through more than 20 integrations, including Azure Event Hub, Azure Arc, Azure Active Directory, .NET developer SDKs, and much more.
 
-:::image type="content" source="../media/elastic-feature-diagram.png" alt-text="TODO alt text":::
+:::image type="content" source="../media/elastic-feature-diagram.png" alt-text="A reference architecture diagram for Elastic Cloud on Azure.":::
 
-:::image type="content" source="../media/elastic-dashboard.png" alt-text="TODO alt text":::
+:::image type="content" source="../media/elastic-dashboard.png" alt-text="A screen shot of the Elastic on Azure dashboard for general cloud overview, user activity, and alerts.":::
 
 ## How Elastic deployment options complement your business  
 
