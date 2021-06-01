@@ -211,8 +211,7 @@ To conclude this exercise, you'll verify that the template you imported into Azu
     | Max VMs per Scaleset | Enter **40**. |
     | Subnet ID | Select **cyclecloud-rg: cyclecloud-rg-vnet-contoso-slurm-lab-cluster-subnet**. |
 
-    :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-required-settings.png" alt-text="The screenshot depicts the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
-
+   
 1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**, accept the default value of **Size (GB)** is set to **100**, and select **Next**.
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-network-attached-storage.png" alt-text="The screenshot depicts the Network Attached Storage tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
