@@ -73,7 +73,7 @@ Notice that this example uses `targetScope = 'managementGroup'` in the template 
 
 Now you know how to deploy all sorts of different resources at different scopes, and how to use Bicep modules and the `scope` keyword to deploy combinations of resources. Let's use all of this together to extend the management group hierarchy in the example above. Now, it will also include a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="27-33" :::
+:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="27-33" :::
 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. These have been omitted for clarity.
@@ -84,7 +84,7 @@ You can then associate the subscription with a management group, which requires 
 
 Notice that the management group is referenced through the `existing` keyword.
 
-The main Bicep file can then create the association by using the module. Here's the whole Bicep file:
+The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
 :::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
 
