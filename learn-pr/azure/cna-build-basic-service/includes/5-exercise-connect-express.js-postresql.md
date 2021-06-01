@@ -1,7 +1,7 @@
 ﻿This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. For more in-depth knowledge and tutorials regarding this topic, refer to:
 
-* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/en-us/azure/postgresql/connect-nodejs?azure-portal=true)
-* [Tutorial: Node.js for Beginners](https://docs.microsoft.com/windows/dev-environment/javascript/nodejs-beginners-tutorial?azure-portal=true)
+* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](/azure/postgresql/connect-nodejs?azure-portal=true)
+* [Tutorial: Node.js for Beginners](/windows/dev-environment/javascript/nodejs-beginners-tutorial?azure-portal=true)
 
 In this exercise, you'll:
 
