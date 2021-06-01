@@ -1,35 +1,25 @@
-The Azure Health Bot service empowers healthcare organizations to build and deploy an AI-powered, compliant, conversational healthcare experiences at scale. During the time of COVID-19 pandemic, it helped several nations like U.S.A, U.A.E, and Lebanon to give people access to trusted and relevant healthcare services and information. Let us look at some of the Covid-19 specific use cases.
+Azure Health Bot empowers healthcare organizations to build and deploy an AI-powered, compliant, conversational healthcare experiences at scale. During the COVID-19 pandemic, the service helped several nations in the Middle East and Europe to give people access to trusted and relevant healthcare services and information. Let's look at some use cases.
 
-## HUS
+## HUS in Finland
 
-HUS the largest Healthcare provider in Finland serving over half a million patients annually, surfaced multiple use cases as part of a Virtual Health Village initiative, including an Acne Bot, Varicose vein Bot and bot to help with social issues.
+HUS, the largest healthcare provider in Finland, serves more than half a million patients annually. As part of its Virtual Health Village initiative, the company used Azure Health Bot to create bots to help patients with acne, varicose veins, and social issues.
 
-## Ministry of Public Health (MoPH) in Lebanon 
+## Ministry of Public Health in Lebanon 
 
-The Ministry of Public Health (MoPH) in Lebanon announced a Covid-19 Health bot 
+The Ministry of Public Health (MoPH) in Lebanon created a COVID-19 health bot based on Azure Health Bot. It was developed by trakMD, along with the Epidemiological Surveillance and E-Health teams of MoPH, in accordance with the guidelines of the World Health Organization (WHO).  
 
-It has been developed by trakMD, the Epidemiological Surveillance and E-Health teams of MoPH in accordance with the guidelines of the World Health Organization (WHO).  
+The bot has a symptom checker that simulates six scenarios, so users can take self-assessments to screen for potential infections. The bot can also identify high-risk patients aligned with medical procedures, and then direct those patients for further consultation and treatment in hospital facilities.
 
-- This bot comes with an inbuilt symptom checker which simulates six scenarios allowing the people to take self-assessments to screen for potential infections.
+## Daman in the United Arab Emirates
 
-- The Bot also has the capability to identify high risk patients aligned with the medical procedures and those are directed for further consultation and treatment in hospital facilities.
+Daman, the leading national health insurance company in the United Arab Emirates, collaborated with Microsoft to deploy the Daman Health Bot. This AI-powered tool helps patients conduct self-assessments on COVID-19 symptoms and then guides patients to the appropriate level of care.
 
-## Daman, UAE's leading national health insurance company
+The Daman Health Bot is bilingual. It asks a defined set of questions and follows specific protocols in providing patient assessment, triage, and symptom checking. From there, it offers medical information and makes medical recommendations. For example, it advises patients to connect with the Abu Dhabi Department of Health, the United Arab Emirates Ministry of Health and Prevention, and the Dubai Health Authority for further assistance.
 
-Daman collaborated with Microsoft to deploy the Daman Health Bot, an AI powered tool that will assist patients to conduct self-assessment on COVID-19 symptoms and guide them to the appropriate level of care.
+## East Limburg Hospital in Belgium
 
-- The Daman Health Bot is bilingual.
+East Limburg Hospital (ZOL) in Genk, Belgium, used Azure Health Bot to create a chat bot for patient health. It's based on a questionnaire that determines the likelihood that a patient is infected with the COVID-19 virus.
 
-- It can provide expertise including patient assessment for the disease, triage and symptom checking, offering general medical information, and making medical recommendations.
+The bot helps the hospital to properly assess a potential new outbreak and take the necessary precautions. Each questionnaire is linked to a patient file, so the hospital can determine how many patients are in each postal code. 
 
-- The health bot will ask patients a defined set of questions and follow specific protocols, and accordingly advise them to connect with Abu Dhabi Department of Health (DoH), UAE Ministry of Health & Prevention (MOHAP) and the Dubai Health Authority for further assistance.
-
-## East Limburg Hospital (ZOL)
-
-East Limburg Hospital (ZOL) in Genk, Belgium, started using the Health Bot. The solution was to draw up a questionnaire for patients, which resulted in the Health Bot (a chatbot dealing specifically with the patient's health). The questionnaire clarifies the likelihood that a patient may or may not be infected with the COVID-19 virus.
-
-- It allows us to properly assess a potential new outbreak and take the necessary precautions. 
-
-- Each questionnaire is linked to a patient file, so through patient reports the hospital can determine by how many orange, yellow or green patients there are per postcode.  
-
-This procedure ensures a safer and more pleasant environment in the hospital for both patients and nursing staff. The risk of infection is greatly reduced by not allowing the green, yellow and orange patients to cross paths. This means that patients can once again get their necessary treatments with peace of mind.
+The hospital uses a color-coding system of green, yellow, and orange to identify low-risk, medium-risk, and high-risk patients. The hospital can then separate these patients to reduce the risk of infection. This system helps ensure that patients can get their necessary treatments in an environment that's safer for them and for medical staff. 

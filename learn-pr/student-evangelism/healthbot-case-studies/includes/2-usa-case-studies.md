@@ -15,41 +15,39 @@ The Centers for Disease Control and Prevention (CDC) bot, which utilizes the Azu
 - Provide information and suggest a course of action, such as contacting a medical provider.  
 - Help those who don't need in-person medical care to manage the illness safely at home.
 
-:::image type="content" source="../media/cdc.png" alt-text="Screenshot that shows the CDC bot.":::
+:::image type="content" source="../media/cdc.png" alt-text="Example chat with the CDC bot.":::
 
 
 ## Providence
 
-One of the largest health systems in the United States had created a [healthcare chatbot named Grace](https://www.providence.org/news/uf/623601749) by using the Azure Health Bot service. Providence created Grace to help answer patients' questions online. By using CDC guidelines and its own clinical protocols, Providence built a Coronavirus Assessment Tool in just three days to help people in the communities it serves know whether they should seek medical attention for their respiratory symptoms.  
+One of the largest health systems in the United States created a [healthcare chatbot named Grace](https://www.providence.org/news/uf/623601749) by using the Azure Health Bot service. Providence created Grace to help answer patients' questions online. 
+
+By using CDC guidelines and its own clinical protocols, Providence then built a Coronavirus Assessment Tool in just three days for the communities that it serves. The tool helps people decide whether they should seek medical attention for their respiratory symptoms.  
 
 ## Walgreens
 
-The global pharmacy and healthcare retail provider [used Azure Health Bot to expand the Walgreens Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers could use it to assess their risk of COVID-19 based on CDC guidelines. 
+Walgreens, the global pharmacy and healthcare retail provider, [used Azure Health Bot to expand the Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers can use it to assess their risk of COVID-19 based on CDC guidelines. 
 
 ## Aurora Health Care
 
-Aurora Health Care is helping patients triage symptoms and locate nearby care centers. Using the built-in triage symptom checker Aurora direct patient to an appropriate care provider based on the triage outcomes.
+[Aurora Health Care](https://www.aurorahealthcare.org/) created a system to help patients triage symptoms and find nearby care centers. Based on outcomes of the built-in triage symptom checker, Aurora directs patients to an appropriate care provider.
 
-(more: https://www.aurorahealthcare.org/ )
-
-:::image type="content" source="../media/aurora.png" alt-text="Aurora Health Care":::
+:::image type="content" source="../media/aurora.png" alt-text="Example questions and answers in the Aurora Health Care symptom checker, followed by a scheduled appointment.":::
 
 
 ## Virginia Mason
 
-Serving the Pacific Northwest region, the Virginia Mason health system has created a patient assessment Healthcare Bot to help its patients understand whether care is needed. The instance is live and has thousands of daily users.
-
-(more: https://www.virginiamason.org/coronavirus)
+Serving the Pacific Northwest region, the [Virginia Mason health system](https://www.virginiamason.org/coronavirus) created a healthcare bot to help patients understand whether they need care. This Azure Health Bot instance has thousands of daily users.
 
 ## Premera Blue Cross
 
-Premera Blue Cross improved patient experience through faster response by implementing "Scout", their intelligent virtual health assistant that offers digital services such as checking healthcare claim status, eligibility and health plans on Android and IOS.
+Premera Blue Cross improved its patient experience by implementing Scout, an intelligent virtual health assistant. Scout offers digital services such as checking healthcare claim status, eligibility, and health plans on Android and IOS.
 
-:::image type="content" source="../media/premera.png" alt-text="Premera Blue Cross":::
+:::image type="content" source="../media/premera.png" alt-text="Example of a Premera patient sign-in screen and a chat with the Scout assistant.":::
 
 
 ## Quest Diagnostics
 
-"Quest Bot", created for Quest Diagnostics, is a virtual health assistant that can answer lab and COVID testing related questions, locate nearby test centers based on the patients' location, and connect them with live agents for further support.
+Quest Diagnostics created Quest Bot, a virtual health assistant. This assistant can answer questions about lab and COVID testing, find nearby test centers based on a patient's location, and connect the patient with a live agent for more support.
 
-:::image type="content" source="../media/quest.png" alt-text="Quest Diagnostics":::
+:::image type="content" source="../media/quest.png" alt-text="Example chat with the Quest Bot assistant.":::
