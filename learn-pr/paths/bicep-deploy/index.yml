@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-essentials
+uid: learn.bicep-deploy-manage
 metadata:
   title: Deploy and manage resources in Azure by using Bicep
   description: Learn how Bicep enables you to manage both basic and complex infrastructure deployments on Azure.
@@ -47,4 +47,4 @@ modules:
 #- learn.azure.deploy-resources-different-scopes (we will uncomment this when this module is published in a few days' time)
 - learn.azure.extend-resource-manager-template-deployment-scripts
 trophy:
-  uid: learn.bicep-essentials.trophy
+  uid: learn.bicep-deploy-manage.trophy
