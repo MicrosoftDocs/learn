@@ -2,11 +2,11 @@ Azure Resource Manager supports two *deployment modes*: incremental and complete
 
 ## Incremental mode
 
-The default deployment mode is incremental. In this mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are *added* to the resource group.
+The default deployment mode is _incremental_. In this mode, Resource Manager won't delete anything. If resources exist in the resource group but aren't specified in the template, Resource Manager leaves them alone. Resources in the template are *added* to the resource group if they don't already exist, and if they do exist, Resource Manager updates them to the configuration in the template.
 
 ## Complete mode
 
-You have to explicitly ask for your deployment to run in complete mode. When you use this mode, resources not specified in the template are *deleted*. Complete mode won't delete all resources in your resource group. [Some resource types are exempt](/azure/azure-resource-manager/templates/complete-mode-deletion).
+You have to explicitly ask for your deployment to run in _complete_ mode. When you use this mode, resources that exist in Azure but that aren't specified in the template are deleted. Complete mode won't delete all resources in your resource group. [Some resource types are exempt](/azure/azure-resource-manager/templates/complete-mode-deletion).
 
 > [!CAUTION]
 > When you run the command in complete mode, whatever resources you have will be removed if they're not defined in the template file.
