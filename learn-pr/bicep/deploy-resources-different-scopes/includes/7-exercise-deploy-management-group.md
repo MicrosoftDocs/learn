@@ -50,7 +50,7 @@ By default, the new management group will be created as a child of the tenant ro
 
 ::: zone-end
 
-In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, you'll deploy the policies even though the management group doesn't contain any subscriptions. The same deployment process applies even if the management group is empty.
+In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, you'll deploy the policies even though the management group doesn't contain any subscriptions. The same deployment process applies whether the management group is empty or contains subscriptions.
 
 ## Create a Bicep file to deploy to a management group
 
@@ -161,7 +161,7 @@ Notice that you have to provide the management group ID twice. The `-ManagementG
 
 ::: zone-end
 
-Also notice that, like with subscription deployments, you're explicitly specifying a name and location for the deployment metadata.
+Also notice that, like with subscription deployments, you're explicitly specifying a name and location for the deployment metadata, and you're using today's date to reduce the chance of using an existing deployment's name.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 
