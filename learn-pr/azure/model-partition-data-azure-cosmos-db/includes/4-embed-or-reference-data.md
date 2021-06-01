@@ -5,12 +5,12 @@ In the previous unit, we embedded the customer address and password data into a 
 Embed data into a document when the following criteria applies to your data:
 
 - **1:1 relationship** -  For example, Customer and CustomerPassword have a 1:1 relationship.
-- **1:Few relationship** - In a NoSQL database, it's necessary to distinguish 1:Many relationships as bounded or unbounded. Customer and CustomerAddress is a bounded 1:Many relationship because customers in an e-commerce application normally only have a handful of addresses to ship to. This is referred to as a 1:few relationship.
-- **Read or updated together** - In our scenario here, all of the customer entities are read or written together.
+- **1:Few relationship** - In a NoSQL database, it's necessary to distinguish 1:Many relationships as bounded or unbounded. Customer and CustomerAddress is a bounded 1:Many relationship because customers in an e-commerce application normally only have a handful of addresses to ship to. When the relationship is bounded, this is referred to as a 1:few relationship.
+- **Read or updated together** - Data that is read or updated together is nearly always modeled as a single document. This is especially true since our objective for our NoSQL model is to reduce the number of requests to our database. In our scenario here, all of the customer entities are read or written together.
 
 ## When should you reference data?
 
-Reference data into a document when the following criteria applies to your data:
+Data should be referenced as separate documents when the following criteria applies to your data:
 
 - **1:Many relationship** - Especially if this relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So in situations where the 1:Many relationship is unbounded or can grow extremely large, data should be referenced, not embedded.
 - **Many:Many relationship** - We will explore an example of this relationship in a later unit with Product Tags.

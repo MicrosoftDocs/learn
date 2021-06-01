@@ -10,7 +10,7 @@ In our application, there are three operations we will perform on the Customer e
 
 - **Create a customer**: When a new user first visits the e-commerce site a new customer will be created.
 - **Update a customer**: When an existing user updates their profile information their customer record will be updated.
-- **Retrieve a customer**: When an existing user visits the site, they sign in with their password information. During that same session, they will need to access other customer data to purchase new items such as address.
+- **Retrieve a customer**: When an existing user visits the site, they sign in with their password. During that same session, they will need to access other customer data to purchase new items such as address.
 
 For each of these operations, we need all this data at the same time. These entities could be modeled as separate documents but it would require multiple round trips to the server to create, update, and retrieve the customer data.
 
