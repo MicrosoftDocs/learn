@@ -188,4 +188,4 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 
 ## Results
 
-Congratulations! You completed the second exercise of this module. In its exercise, you created an Azure IoT Central application.
+Congratulations! You completed the second exercise of this module. In this exercise, you created an Azure IoT Central application.
