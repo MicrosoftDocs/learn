@@ -52,7 +52,7 @@ Azure VMware Solution gives customers options when migrating to the cloud. Moder
 
 AVS allows the business to move to the cloud at the pace they're comfortable with. Admins get a seamless Azure experience with a single Azure portal interface with no connection to any third-party services.
 
-Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your AVS environment are described in below.
+Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your AVS environment are described below.
 
 :::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment and all Azure services.":::
 
