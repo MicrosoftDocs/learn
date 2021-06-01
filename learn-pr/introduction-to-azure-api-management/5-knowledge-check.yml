@@ -54,7 +54,7 @@ quiz:
       explanation: "Incorrect. You should only use versions for relatively major or breaking changes to the API."
     - content: "API product"
       isCorrect: false
-      explanation: "Incorrect. A product is a group of APIs and is not related to making changes to APIs. "
+      explanation: "Incorrect. A product is a group of APIs and is not related to making changes to APIs."
     - content: "API revision"
       isCorrect: true
       explanation: "Correct. You use revisions for relatively minor or non-breaking changes to the API."
@@ -80,7 +80,7 @@ quiz:
     - content: "Creating a central access point for API deployment."
       isCorrect: false
       explanation: "Incorrect. While routing all API requests through a single base URL does make it easier to enforce policies and apply transformations, it doesn't encourage developers to subscribe to your APIs."
-  - content: "Suppose the senior security engineer for a large API deployment wants to reduce chances of consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
+  - content: "Suppose the senior security engineer for a large API deployment wants to reduce the chances of consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
     choices:
     - content: "Require subscription keys"
       isCorrect: false
