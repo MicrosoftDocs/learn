@@ -16,7 +16,7 @@ Let's look at an example Bicep definition for a set of App Service applications 
 
 All the resources in this loop will be deployed at the same time, in parallel:
 
-:::image type="content" source="../media/6-batchSize-default.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 stacked vertically to be deployed at the same time." border="false":::
+:::image type="content" source="../media/6-batch-size-default.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 stacked vertically to be deployed at the same time." border="false":::
 
 Now let's apply the `@batchSize` decorator with a value of `2`:
 
@@ -24,7 +24,7 @@ Now let's apply the `@batchSize` decorator with a value of `2`:
 
 When you deploy the template, Bicep will deploy in batches of two:
 
-:::image type="content" source="../media/6-batchSize-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 stacked to run as one batch, and app3 to run as a second batch." border="false":::
+:::image type="content" source="../media/6-batch-size-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 stacked to run as one batch, and app3 to run as a second batch." border="false":::
 
 > [!NOTE]
 > Bicep waits for each complete batch to finish before it moves on to the next. In the preceding example, if *app2* finishes its deployment before *app1*, Bicep waits until *app1* finishes before it starts to deploy *app3*.
@@ -35,7 +35,7 @@ You can also tell Bicep to run the loop sequentially by setting the `@batchSize`
 
 When you deploy the template, Bicep waits for each resource deployment to finish before it starts the next one:
 
-:::image type="content" source="../media/6-batchSize-1.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 being deployed sequentially." border="false":::
+:::image type="content" source="../media/6-batch-size-1.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 being deployed sequentially." border="false":::
 
 ## Use loops with resource properties
 
