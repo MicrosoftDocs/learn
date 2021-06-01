@@ -6,7 +6,7 @@ The Azure Backup service provides simple, secure, and cost-effective solutions t
 :::image type="content" source="../media/azure-backup-overview.png" alt-text="Depiction of the Azure Backup service implementing backup agents in the on-premises environment to the cloud. Middle section displays the components of Azure Backup for security and scalability with an underlying bar indicating central management.":::
 
 ## Azure Backup definition
-Azure Backup is an Azure service that provides secure and zero-infrastructure backup solutions for all Azure-managed data assets.
+Azure Backup is an Azure service that provides cost effective, secure, and zero-infrastructure backup solutions for all Azure-managed data assets.
 
 The centralized management interface makes it easy to define backup policies and protect a wide range of enterprise workloads, including Azure Virtual Machines, Azure Disks, SQL and SAP databases, Azure file shares and blobs.
 
