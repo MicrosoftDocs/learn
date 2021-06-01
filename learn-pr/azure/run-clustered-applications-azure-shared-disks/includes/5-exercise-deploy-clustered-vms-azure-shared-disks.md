@@ -16,7 +16,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 - Deploy two VMs that are running Ubuntu Server OS, and then attach a shared disk to the two VMs.
 - Test SCSI PR commands.
 
-## Task 1: Create Azure shared disk
+### Task 1: Create Azure shared disk
 
 You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
@@ -25,7 +25,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
     ```
 
-## Task 2: Create proximity placement group and availability set
+### Task 2: Create proximity placement group and availability set
 
 1. While you're still in Cloud Shell, run the following commands to create a proximity placement group:
 
@@ -52,7 +52,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     --ppg myPPG
     ```
 
-## Task 3: Create two VMs that are running Ubuntu Server
+### Task 3: Create two VMs that are running Ubuntu Server
 
 1. While you're still in Cloud Shell, run the following commands to create two VMs running Ubuntu OS:
 
@@ -64,7 +64,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     done
     ```
 
-## Task 4: Attach an Azure shared disk on both VMs
+### Task 4: Attach an Azure shared disk on both VMs
 
 1. While you're still in Cloud Shell, attach the Azure shared disk to both VMs using the following commands:
 
@@ -80,7 +80,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
 1. When finished with this task, the shared disk is attached to two VMs at the same time.
 
-## Task 5: Test SCSI persistent reservations using the "sg3-utils" tools
+### Task 5: Test SCSI persistent reservations using the "sg3-utils" tools
 
 1. While you're still in Cloud Shell, connect to the first VM by using SSH.
 1. Use the following command to retrieve the IP addresses of VM1:
@@ -199,7 +199,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 - Deploy two VMs running Windows Server OS and configure clustered services.
 - Test SCSI PR commands.
 
-## Task 1: Create an Azure shared disk
+### Task 1: Create an Azure shared disk
 
 1. Use the Cloud Shell on the right. You can switch from BASH to PowerShell by typing pwsh.
 
@@ -212,7 +212,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
     ```
 
-## Task 2: Create a proximity placement group and an availability set
+### Task 2: Create a proximity placement group and an availability set
 
 1. While still in Cloud Shell, run the following commands to create a proximity placement group:
 
@@ -241,7 +241,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     -ProximityPlacementGroup $ppg.Id
     ```
 
-## Task 3: Create two VMs that are running Windows Server
+### Task 3: Create two VMs that are running Windows Server
 
 1. While still in Cloud Shell, run the following commands to define a credential object for logging to the VMs:
 
@@ -275,7 +275,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     }
     ```
 
-## Task 4: Attach an Azure shared disk to both VMs
+### Task 4: Attach an Azure shared disk to both VMs
 
 1. Use the following command to attach the Azure shared disk to the first VM:
 
@@ -296,7 +296,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     Update-AzVM -VM $vm4 –ResourceGroupName $resourceGroup
     ```
 
-## Task 5: Install Windows Failover Clustering Service on myVM3
+### Task 5: Install Windows Failover Clustering Service on myVM3
 
 1. Sign into [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
 1. Select the **myVM3** VM from the tool bar, select **Connect**, and then select **RDP**.
@@ -322,7 +322,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     >[!Note]
     >The virtual machine **myVM3** will automatically restart, once that failover cluster feature is installed.
 
-## Task 6: Install Windows Failover Clustering Service on myVM4
+### Task 6: Install Windows Failover Clustering Service on myVM4
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
 1. Select the **myVM4** VM from the tool bar, select **Connect**, and then select **RDP.**
@@ -348,7 +348,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     >[!Note]
     >The virtual machine **myVM4** will automatically restart, once that failover cluster feature is installed.
 
-## Task 7: Test the storage for Windows Failover Clustering Service on myVM3
+### Task 7: Test the storage for Windows Failover Clustering Service on myVM3
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter and select **virtual machines.**
 1. Select the first VM, **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
@@ -373,7 +373,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     >To continue the creation of the cluster, you need to setup additional prerequisites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
     >This step is out of scope for this exercise.
 
-## Task 8. Clean up the resources
+### Task 8. Clean up the resources
 
 The sandbox automatically cleans up your resources when you're finished with this module.
 
