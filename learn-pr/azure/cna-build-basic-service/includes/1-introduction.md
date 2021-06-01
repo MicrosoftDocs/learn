@@ -4,7 +4,7 @@
 
 Suppose you work for Adatum Corporation, which is a manufacturer of smart appliances, including refrigerators and air-conditioning units. You lead a small development team, and you've been tasked with building a multiple-feature app for smart refrigerators.
 
-The initial version of the app, in the form of an Express.js web service, exposes a basic set of refrigerator inventory functions, helping businesses identify the items they need to restock. A front-end Next.js web app provides management capabilities. You containerized both apps and deployed them to an AKS cluster. Now you want to provide both apps with a persistent data store by using Azure Database for PostgreSQL.  
+The initial version of the app, in the form of an Express.js web service, exposes a basic set of refrigerator inventory functions, helping businesses identify the items they need to restock. A front-end Next.js web app provides management capabilities. You containerized both apps and deployed them to an AKS cluster. Now you want to provide both apps with a persistent data store by using Azure Database for PostgreSQL.
 
 ## Prerequisites
 
