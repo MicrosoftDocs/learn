@@ -29,4 +29,6 @@ The table below provides a quick view that compares the deployment options:
 
 :::image type="content" source="../media/comparison-table.png" alt-text="A table comparing deployment options for Elastic on Azure." border="false":::
 
+The Elastic on Azure deployment options can be accessed through the Azure Marketplace.
+
 :::image type="content" source="../media/azure-marketplace.png" alt-text="A screenshot of the Azure Marketplace showing the search results for Elastic.":::
