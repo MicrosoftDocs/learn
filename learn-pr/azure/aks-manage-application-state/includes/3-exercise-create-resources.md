@@ -1,5 +1,10 @@
 Now that you understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
 
+## Activate the Azure sandbox
+
+1. Start by **activating the Azure sandbox above.**
+1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+
 ## Create the state
 
 As we described earlier, handling state in Kubernetes is possible. However, we don't recommend it because managing a highly available application state gets too difficult when you need to manage the state yourself.
@@ -9,20 +14,10 @@ To solve that problem, we'll externalize the state to an application that specia
 > [!NOTE]
 > Although we're creating an Azure Cosmos DB instance as part of the required resources to run the application, Azure Kubernetes Service (AKS) and Azure Cosmos DB are *not* related to one another.
 
-To create a new Azure Cosmos DB instance, we'll use the Azure CLI. You can install the Azure CLI on your local machine, or you can use Azure Cloud Shell to access your subscription.
-
-1. Sign in to Azure Cloud Shell by using the account where you want to deploy resources:
-
-    > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
-
-    > [!IMPORTANT]
-    > We'll run all the scripts with Bash. If you haven't opened Cloud Shell yet, select **Bash** as the running shell.
-
 1. Create Bash variables to store important information like the account name and resource group name:
 
     ```bash
-    RESOURCE_GROUP=rg-ship-manager
+    RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
     COSMOSDB_ACCOUNT_NAME=contoso-ship-manager-$RANDOM
     ```
 
@@ -280,7 +275,18 @@ To make this application available to everyone, you'll need to create a service 
 
 You can access the API through the host name that you pasted in your ingress resource. The Azure DNS zone resource can take up to five minutes to complete the DNS detection. If you can't access the API right away, wait a few minutes and try again.
 
-You can check the status of the DNS zone by going to the Azure portal, entering the resource group that starts with **MC_**, and selecting the **DNS Zone** resource. When the API is online, you should see four zone records.
+You can check the status of the DNS zone by querying Kubernetes for the available ingresses, once the **ADDRESS** field is filled, it means the ingress has been deployed and it's ready to be accessed:
+
+```bash
+kubectl get ingress
+```
+
+You'll get a result similar to this:
+
+```output
+NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
+ship-manager-backend   <none>   ship-manager-backend.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+```
 
 ### Deploy the front-end interface
 
@@ -341,7 +347,7 @@ To create the front-end interface, you'll do a similar process:
         })()
     ```
 
-    Replace the `YOUR_BACKEND_URL` placeholder with the URL of the back-end API that you just put in the ingress in the previous step.
+    Replace the `YOUR_BACKEND_URL` placeholder with the URL of the back-end API that you just put in the ingress in the previous step, adding `http://` in front of it.
 
 1. Save and close the file.
 
@@ -433,6 +439,17 @@ Next, you'll create the networking resources that this application needs to be o
 
 You can access the API through the host name that you pasted in your ingress resource. The Azure DNS zone resource can take up to five minutes to complete the DNS detection. If you can't access the API right away, wait a few minutes and try again.
 
-You can check the status of the DNS zone by going to the Azure portal, entering the resource group that starts with **MC_**, and selecting the **DNS Zone** resource. When the API is online, you should see four zone records.
+You can check the status of the DNS zone by querying Kubernetes for the available ingresses, once the **ADDRESS** field is filled, it means the ingress has been deployed and it's ready to be accessed:
+
+```bash
+kubectl get ingress
+```
+
+You'll get a result similar to this:
+
+```output
+NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
+ship-manager-frontend  <none>   contoso-ship-manager.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+```
 
 You can now access the URL from the ingress resource's host name to enter the ship manager application.
