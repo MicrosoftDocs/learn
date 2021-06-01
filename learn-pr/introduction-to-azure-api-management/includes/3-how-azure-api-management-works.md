@@ -1,6 +1,6 @@
 Here, we'll discuss how Azure API Management works from three points of use: the API consumer, administrator, and developer. This knowledge will help you continue to evaluate whether Azure API Management is a good solution for managing your organization's APIs.
 
-In this unit, you'll learn about how the following Azure API Management users:
+In this unit, you'll learn about how Azure API Management works for the following users:
 
 - API consumers
 - API administrators
