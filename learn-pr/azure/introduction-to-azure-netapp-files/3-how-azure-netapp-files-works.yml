@@ -9,6 +9,6 @@ metadata:
   author: paulwp
   ms.author: v-pmcfedries
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-netapp-files-works.md)]
