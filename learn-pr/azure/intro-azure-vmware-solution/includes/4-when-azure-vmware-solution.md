@@ -1,6 +1,6 @@
 Organizations are using the Azure VMware Solution in many different ways to extend the value of their existing investments while getting started with the cloud. Let's discuss the scenarios best suited for Azure VMware Solutions.
 
-### When to  choose Azure VMware Solution 
+### When to choose Azure VMware Solution 
 With the Azure VMware Solution, you can run your VMware environment—or a single app—on dedicated Azure infrastructure. The solution provides a fast path to adopt the cloud, without the added work of having to reformat existing assets to work in the new cloud environment.
 The following table describes business needs and considerations where AVS may be a good choice for an organization.
 

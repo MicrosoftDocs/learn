@@ -9,9 +9,10 @@ You are responsible for NSX-T SDN configuration:
 - Tier 1 gateways
 - Load balancers.
 
+
 ## What Microsoft manages
 
-Azure VMware Solution continuously monitors the health of both the underlay and the VMware components. When Azure VMware Solution detects a failure, it takes action to repair the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
+Azure VMware Solution continuously monitors the health of both the underlay and the VMware components. If Azure VMware Solution detects a failure, it takes action to repair the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
 
 Host remediation involves replacing the faulty node with a new healthy node in the cluster. Then, when possible, the faulty host is placed in VMware vSphere maintenance mode. VMware vMotion moves the VMs off the faulty host to other available servers in the cluster, potentially allowing zero downtime for live migration of workloads. If the faulty host can't be placed in maintenance mode, the host is removed from the cluster.
 
@@ -34,7 +35,6 @@ Azure VMware Solution monitors the following conditions on the host:
 
 Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
 
-Placeholder for image
 
 ###  Private clouds, clusters, and hosts in Azure
 
@@ -63,6 +63,8 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | HCX | 4.0 |
 
 NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied. 
+
+Once Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. Azure Monitor can be used to monitor VM patterns inside the Azure VMware Solution.
 
 ### Interconnectivity into Azure
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
@@ -113,16 +115,8 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
 
-### Azure VMware Solutions Consumption Models
-There are three consumption models for the Azure VMware Solution to address your business needs. Customers have the flexibility to move between the models. Reserved instances save 30-50% of the cost of a node to the monthly rate.
 
-|Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
-|---------|---------|---------|
-|On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
-| Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
-|    |         |         |
-
-## Get Started with AVS
+## Get started with AVS
 
 The following table outlines the steps needed for an organization to get started with using the Azure VMware Solution.
 

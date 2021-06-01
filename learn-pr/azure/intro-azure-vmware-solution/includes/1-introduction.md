@@ -2,7 +2,7 @@ Azure VMware Solution (AVS) provides you with a dedicated, private cloud in Azur
 
 You can now seamlessly run, manage, and secure applications across VMware environments and Microsoft Azure with a common operating framework. 
 
-## Example Scenario
+## Example scenario
 Imagine you work for a healthcare company who runs many of their production workloads on a VMware platform. IT operations are spread between many different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made soon. Also, your company isn't able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns.
 
 ## What will we be doing?

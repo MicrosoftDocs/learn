@@ -7,7 +7,7 @@ Microsoft provides the following services to run AVS at scale in Azure:
 - operating platform 
 - backend infrastructure operations 
 
-## Accelerate migration and modernize at your pace
+## Move your VMware workloads to Azure
 
 Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with Microsoft's Azure global cloud service. Gain continuity, scale, and fast provisioning for your VMware workloads on the global Azure infrastructure.
 
@@ -19,7 +19,7 @@ The VMware vSphere clusters are built from bare-metal Azure hosts. These cluster
 
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
-### Use existing investments
+### Use your existing investments
 Use your existing VMware investments, skills, and tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
 Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager.
@@ -34,9 +34,9 @@ Reduce change management and maintain operational consistency for the business. 
 
 Accelerate migration and minimize downtime using the latest HCX Enterprise functionality for large scale, live migration from on-premises to Azure.
 
-### Run Best on Azure
+### Support, licensing, and more benefits of AVS
 
-Take advantage of Azure as the best cloud for your Microsoft workloads. Built with VMware, delivered by Microsoft, you get centralized billing and support for simplicity. Azure VMware Solution offers discounts on  1-year and 3-year Reserved Instances for dedicated hosts. Save 30-50% of the cost of a node.
+ Azure VMware Solution provides a comprehensive VMware environment in Azure. Other benefits of migrating to AVS include the following features:
 
 **Single Point of Support :** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 
@@ -44,21 +44,18 @@ Take advantage of Azure as the best cloud for your Microsoft workloads. Built wi
 
 **Azure Hybrid Use Benefits :** Maximize the value of existing Windows Server and SQL Server licenses. Use Azure Hybrid Benefit (AHUB) for both Windows Server and SQL Server. AHUB allows you to bring your existing licenses to Azure and greatly reduce costs. Save up to 80% with AHUB and Azure Reserved Instances.
 
-**Free Extended Security Updates**: Get Extended Security Updates at no extra charge for three years on all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions. 
+**Free Extended Security Updates**: Get Extended Security Updates at no extra charge for three years on all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions.
 
-
-### Modernize Seamlessly
+### Integration with native Azure services
 
 Azure VMware Solution gives customers options when migrating to the cloud. Modernize applications running on VMware overtime through integration to Azure native management, security, and services. Admins develop cloud skills overtime as they become familiar with Azure.
 
 AVS allows the business to move to the cloud at the pace they're comfortable with. Admins get a seamless Azure experience with a single Azure portal interface with no connection to any third-party services.
 
-
-### Integration with Azure services
-
-:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
-
 Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your AVS environment are described in below.
+
+:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment and all Azure services.":::
+
 
 |Integration  |Description  |
 |---------|---------|
@@ -73,12 +70,19 @@ Once your VMware environment is on Azure, all Azure services can be accessed. So
 |**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
 
 
-### Continuity of Operations
+### Continuity of operations
 Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
 
 With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
 
+### Billing
+There are three different ways that AVS can be billed and charged. Customers have the flexibility to change billing based on their business needs.
 
+|Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
+|---------|---------|---------|
+|On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
+| Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
+|    |         |         |
 
 
 
