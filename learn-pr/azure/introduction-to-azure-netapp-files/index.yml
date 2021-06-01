@@ -13,7 +13,7 @@ summary: Describe how the low latency and high availability of Microsoft Azure N
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.
-    - Describe how the performance tiers of Azure NetApp Files enable you to choose a level of performance to fit your workload's needs.
+    - Describe how the performance tiers of Azure NetApp Files enable you to choose a performance level that fits your workload requirements.
 prerequisites: |
   - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
   - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
