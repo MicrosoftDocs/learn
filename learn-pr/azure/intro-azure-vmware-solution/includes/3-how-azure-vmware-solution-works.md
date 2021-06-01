@@ -31,7 +31,7 @@ Azure VMware Solution monitors the following conditions on the host:
 - Storage status
 - Connection failure
 
-## Architecture Overview
+## Architecture overview
 
 Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
 
