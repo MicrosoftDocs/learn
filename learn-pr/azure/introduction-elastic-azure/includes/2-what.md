@@ -1,8 +1,8 @@
-Elastic, built on the Elastic Stack, provides tools to help you search, analyze, monitor, and secure your apps and IT. The Elastic Stack, known as ELK Stack, is made up of Elasticsearch, Kibana, Beats, and Logstash.  
+Elastic, built on the Elastic Stack, provides tools to help you search, analyze, monitor, and secure your apps and IT. The Elastic Stack, known as ELK Stack, is made up of Elasticsearch, Logstash, Kibana, and Beats.  
 
 - Elasticsearch is a distributed, JSON-based search and analytics engine.
-- Kibana helps you visualize and shape to your data and is the extensible user interface.
 - Logstash is a dynamic data collection pipeline with an extensible plugin ecosystem.
+- Kibana helps you visualize and shape to your data and is the extensible user interface.
 - Beats is a platform for gathering operational data from machines and systems and sending it to Elasticsearch or Logstash.
 
 When deploying on Azure, you can select from three different options, Elastic Cloud on Azure, Elastic on Azure Kubernetes Service, and Elastic on Azure Virtual Machines (VMs).
