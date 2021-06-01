@@ -1,4 +1,4 @@
-Azure Active Directory provides authentication and authorization service by supporting modern authentication protocols, such as OAuth 2.0 and OpenID Connect, in a standards-compliant way. You can use open-source libraries such as Microsoft Authentication Library (MSAL) and other standard-compliant libraries with Azure Active Directory. 
+Azure Active Directory (Azure AD) provides authentication and authorization service by supporting modern authentication protocols, such as OAuth 2.0 and OpenID Connect, in a standards-compliant way. You can use open-source libraries such as Microsoft Authentication Library (MSAL) and other standard-compliant libraries with Azure Active Directory. 
 
 In the employee portal scenario, you learn that your organization uses Azure Active Directory as the Identity provider for authentication and authorization.
 

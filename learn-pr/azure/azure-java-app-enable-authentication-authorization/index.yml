@@ -2,14 +2,14 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
   moduleType: standard
-  title: Sign in users with Azure Active Directory and access Microsoft APIs in a Java web app
+  title: Sign in users with Azure Active Directory in a Java web app
   description: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
   ms.date: 05/07/2021
   author: navyasric
   ms.author: nacanuma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Sign in users with Azure Active Directory and access Microsoft APIs in a Java web app
+title: Sign in users with Azure Active Directory in a Java web app
 summary: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
 abstract: | 
   By the end of this module, you'll be able to:

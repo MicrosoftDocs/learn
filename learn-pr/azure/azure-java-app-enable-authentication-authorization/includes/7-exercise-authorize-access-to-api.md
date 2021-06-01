@@ -2,7 +2,9 @@ In this exercise, you will configure the application with permissions and use MS
 
 ## Add Microsoft Graph permissions to App registration
 
-1. In the app's registration screen, click on the **API permissions** blade in the left to open the page where we add access to the APIs that your application needs.
+Web services secured by Azure Active Directory define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can can access data or act on a user's behalf, it must request these permissions to be approved by the users. These API permissions can be assigned to your app registration from the Azure Portal. Here are the steps to assign Microsoft Graph API permissions to your application.
+
+1. In the app's registration screen, click on the **API permissions** blade in the left to add access to the APIs that your application needs.
    - Click the **Add permissions** button and then,
 
    - Ensure that the **Microsoft APIs** tab is selected.
@@ -17,29 +19,19 @@ In this exercise, you will configure the application with permissions and use MS
 
 ## Run the application
 
-1. Make certain that your Tomcat server is running and you have privileges to deploy a web app to it. Make certain that your server host address is `http://localhost:8080`.
+You can try the Graph API call on the application that you have running from the previous exercise.
 
-2. Compile and package the project using **Maven**:
-
-    ```Shell
-    cd ~/javawebapp/2-Authorization-I/call-graph
-    mvn clean package
-    ```
-
-3. Find the resulting `.war` file in `./target/msal4j-servlet-graph.war`. To deploy to Tomcat, copy this `.war` file to the `/webapps/` directory in your Tomcat installation directory and start the Tomcat server.
-
-4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure Active Directory. On successful login, you should see a page as shown in the below image.
+1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you are not already signed in, you will be redirected to login with Azure Active Directory. On successful login, you should see a page as shown in the below image.
 
     :::image type="content" source="../media/app-signin.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application":::
 
-5. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
+2. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 
 ## Overview of code for MS Graph access
 
 1. In the `./src/main/resources/authentication.properties` file, the value of `aad.scopes` is set to the **User.Read** scope.
 
     Scopes tell Azure Active Directory the level of access that the application is requesting and map to the permissions in the app registration. Based on the requested scopes, Azure Active Directory presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes , the scopes consented to are encoded into the resulting `access_token` returned in the authentication response.
-
 
 2. When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Java Graph SDK), passing along the signed-in user's access token. The Graph client from hereon places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the  `/me` endpoint to yield details for the currently signed-in user.
 

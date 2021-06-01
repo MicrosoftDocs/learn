@@ -26,9 +26,7 @@ Follow these steps to register your application on the Azure Portal.
 
    :::image type="content" source="../media/app-reg-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure Portal":::
 
-1. In the app's registration screen, click on the **Certificates & secrets** blade in the left to open the page where we can generate secrets and upload certificates.
-
-1. In the **Client secrets** section, click on **New client secret**:
+1. In the app's registration screen, click on the **Certificates & secrets** blade in the left to open the page to generate secrets and upload certificates. In the **Client secrets** section, click on **New client secret**:
    - Type a key description (for instance `app secret`),
    - Select one of the available key durations (**In 1 year**, **In 2 years**, or **Never Expires**) as per your security concerns.
    - The generated key value will be displayed when you click the **Add** button. Copy the generated value for use in the steps later.
