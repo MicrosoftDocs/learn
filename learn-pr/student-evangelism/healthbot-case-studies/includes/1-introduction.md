@@ -1,6 +1,4 @@
-In this module, we'll discuss a few case studies for the Azure Health Bot service. 
-
-Health Bot is a cloud platform that enables developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.  
+In this module, we'll discuss a few case studies for the Azure Health Bot service. Health Bot is a cloud platform that enables developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.  
 
 A study by Juniper Research found that chatbots could lead to cost savings of more than $8 billion by 2020. In another survey published by research firm Statista, 27 percent of people would prefer to answer sensitive health questions posed by virtual assistants than by people. The research strongly indicates a need for the Microsoft Bot Framework, where customers don't have to start from scratch to implement a bot. 
 

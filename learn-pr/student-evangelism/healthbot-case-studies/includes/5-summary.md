@@ -1,3 +1,1 @@
-Healthcare organizations around the world are using the Azure Health Bot service to improve patient outcomes and reduce costs. Microsoft partners have built health bots that help patients check symptoms, find appropriate care, and look up nearby doctors. 
-
-This module has shown you how some healthcare organizations are using the Health Bot service. You should now understand the potential impact of the service in healthcare. 
+Healthcare organizations around the world are using the Azure Health Bot service to improve patient outcomes and reduce costs. Microsoft partners have built health bots that help patients check symptoms, find appropriate care, and look up nearby doctors. You should now understand the potential impact of the service in healthcare. 

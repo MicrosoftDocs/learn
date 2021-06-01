@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-case-studies.3-middle-east-europe-case-studies
-title: Case studies for Health Bot service in the Middle East and Europe 
+title: Case studies for the Azure Health Bot service in the Middle East and Europe 
 metadata:
-  title: Case studies for Health Bot service in the Middle East and Europe 
+  title: Case studies for the Azure Health Bot service in the Middle East and Europe 
   description: Learn how our partners located in the Middle East and Europe are using the Azure Health Bot service to build bots that address a wide range of healthcare-specific use cases.
   author: rodanthi-alexiou
   ms.author: chnoring 

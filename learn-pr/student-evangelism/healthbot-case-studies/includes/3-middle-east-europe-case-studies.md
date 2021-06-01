@@ -2,7 +2,7 @@ Azure Health Bot empowers healthcare organizations to build and deploy an AI-pow
 
 ## HUS in Finland
 
-HUS, the largest healthcare provider in Finland, serves more than half a million patients annually. As part of its Virtual Health Village initiative, the company used Azure Health Bot to create bots to help patients with acne, varicose veins, and social issues.
+Helsinki University Hospital (HUS), the largest healthcare provider in Finland, serves more than half a million patients annually. As part of its Virtual Health Village initiative, HUS used Azure Health Bot to create bots to help patients with acne, varicose veins, and social issues.
 
 ## Ministry of Public Health in Lebanon 
 
