@@ -106,7 +106,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     sudo sg_persist /dev/sdc -s
     ```
 
-:::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
+    :::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
 
     ```bash
     # Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
@@ -119,7 +119,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     exit
     ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
 
 1. Connect to the second VM by using SSH using the following command:
 
