@@ -3,8 +3,7 @@ uid: learn.healthbot-template-scenarios.3-exercise-template-scenario
 title: Exercise - Use a scenario template
 metadata:
   title: Exercise - Use a scenario template
-  description: In this exercise, you will learn how to import the Triage and
-    handoff scenario template in your bot.
+  description: In this exercise, you'll learn how to import the triage and handoff scenario template in your bot.
   author: sfoteini
   ms.author: chnoring
   ms.date: 04/14/2020
