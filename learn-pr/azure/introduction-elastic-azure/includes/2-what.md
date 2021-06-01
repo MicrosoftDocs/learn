@@ -2,8 +2,8 @@ Elastic, built on the Elastic Stack, provides tools to help you search, analyze,
 
 - Elasticsearch is a distributed, JSON-based search and analytics engine.
 - Kibana helps you visualize and shape to your data and is the extensible user interface.
-- Beats is a platform for lightweight shippers that send data from edge machines.
 - Logstash is a dynamic data collection pipeline with an extensible plugin ecosystem.
+- Beats is a platform for gathering operational data from machines and systems and sending it to Elasticsearch or Logstash.
 
 When deploying on Azure, you can select from three different options, Elastic Cloud on Azure, Elastic on Azure Kubernetes Service, and Elastic on Azure Virtual Machines (VMs).
 
