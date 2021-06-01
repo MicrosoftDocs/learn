@@ -145,7 +145,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     exit
     ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-and-VM2-registrations.PNG" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM1-and-VM2-registrations.PNG" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
 
 1. Connect to **myVM1** using SSH:
 
@@ -160,7 +160,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     exit
     ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-reservation.PNG" alt-text="Disk-status-with-VM1-reservation." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM1-reservation.PNG" alt-text="Disk-status-with-VM1-reservation." border="true":::
 
 1. Connect to **myVM2** by using SSH:
 
@@ -174,7 +174,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     sudo sg_persist /dev/sdc -c
     ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
 
     ```bash
     # Unregister from **myVM2**. This command release access to the shared disk.
