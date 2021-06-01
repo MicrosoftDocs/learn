@@ -30,7 +30,7 @@ Additionally, Azure Backup provides the following advantages specifically for SQ
 * Workload aware backups that support all backup types - full, differential, and log
 * 15-minute recovery point objective (RPO) with frequent log backups
 * Point-in-time recovery up to a second
-* Individual database level backup and restore
+* Individual database level back up and restore
 
 :::image type="content" source="../media/azure-backup-sql-overview.png" alt-text="Depiction of SQL Server hosted on an Azure VM and being backed up to a Recovery Services Vaults in Azure Backup. Displayed are also a data path and controls arrow depicting two-way flow for the data path and control path flow from Azure Backup to the backup extension on the VM.":::
 
@@ -42,7 +42,7 @@ Short-term retention can be "minutes" or "daily". Retention for "Weekly", "month
 Long-term retention can be:
 
 * Planned (compliance requirements) - if you know in advance that data is required years from the current time, then use Long-term retention.
-* Unplanned (on-demand requirement) - if you don't know in advance, then use you can use on-demand with specific custom retention settings (these custom retention settings aren't impacted by policy settings).
+* Unplanned (on-demand requirement) - if you don't know in advance, then you can use on-demand with specific custom retention settings (these custom retention settings aren't impacted by policy settings).
 
 On-demand backup with custom retention - if you need to take a backup not scheduled via backup policy, then you can use an on-demand backup. It can be useful for taking backups that don’t fit your scheduled backup or for taking granular backup (for example, multiple IaaS VM backups per day since scheduled backup permits only one backup per day). It's important to note that the retention policy defined in scheduled policy doesn't apply to on-demand backups.
 
@@ -54,7 +54,3 @@ You can also implement policy management to help with compliance. Azure Backup P
 Azure Backup provides in-built job monitoring for operations such as configuring backup, back up, restore, delete backup, and so on. It is scoped to the vault, and ideal for monitoring a single vault. Learn more here.
 
 If you need to monitor operational activities at scale, then Backup Explorer provides an aggregated view of your entire backup estate, enabling detailed drill-down analysis and troubleshooting. It's a built-in Azure Monitor workbook that gives a single, central location to help you monitor operational activities across the entire backup estate on Azure, spanning tenants, locations, subscriptions, resource groups, and vaults.
-
-**Snapshot management** – Azure Backup takes snapshots for some Azure native workloads (VMs and Azure Files), manages these snapshots and allows fast restores from them. This option drastically reduces the time to recover your data to the original storage.
-
-:::image type="content" source="../media/restore-select-datasource-vm.png" alt-text="Screenshot of the dialog from Backup Center showing the start of initiating a restore operation.  Displayed is the Datasource type (virtual machines selected), and the drop-down list to select a Backup instance (non selected at the moment).":::

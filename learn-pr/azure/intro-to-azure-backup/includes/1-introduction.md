@@ -6,6 +6,16 @@ These backup solutions may not always address some of the most important conside
 
 :::image type="content" source="../media/architecture-on-premises-mars.png" alt-text="Depiction of a backup scenario with a company's servers and workstations on the left, with files and folders, using the Backup Agent to back up the data to Microsoft Azure storage.":::
 
+Azure Backup can also address scenarios for your Azure environments as well with support for:
+
+* Azure VMs
+* Azure Managed Disks
+* Azure Files Shares
+* SQL Server in Azure VMs
+* SAP HANA databases in Azure VMs
+* Azure Database for PostgreSQL servers (preview)
+* Azure Blobs (preview)
+
 ## Example scenario
 You are running an application powered by SQL Server. The database is running in an always on availability group across three Azure VMs. You want to back up the databases using an Azure native backup service. You are looking to store the backup for 10 years in a cheaper storage for your audit and compliance needs. You would like to monitor the backup jobs daily for all such databases.
 
