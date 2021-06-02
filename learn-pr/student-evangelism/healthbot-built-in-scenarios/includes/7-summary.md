@@ -7,7 +7,7 @@ Now that you've reviewed this module, you should be able to:
 
 * Explain what scenarios are.
 * Recognize built-in scenario use cases.
-* Build a Webchat channel for your Health Bot instance.
+* Build a Web Chat channel for your Health Bot instance.
 
 ## Key takeaways
 

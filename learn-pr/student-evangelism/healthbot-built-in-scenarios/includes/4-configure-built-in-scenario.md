@@ -1,8 +1,8 @@
-To configure the built-in scenarios of a bot, open the **Configuration** menu.
+To configure the built-in scenarios of an Azure Health Bot instance, open the **Configuration** menu.
 
  :::image type="content" source="../media/3-configuration-menu.png" alt-text="Screenshot that shows the Configuration menu.":::
 
-The **Configuration** menu contains detailed configuration items that can control every aspect of the Azure Health Bot instance functionality and apply to every scenario. The configuration items are grouped in **Medical**, **Compliance**, and **Conversation** categories.
+The **Configuration** menu contains detailed configuration items that can control every aspect of the Health Bot instance functionality and apply to every scenario. The configuration items are grouped in **Medical**, **Compliance**, and **Conversation** categories.
 
 ## Medical protocols
 

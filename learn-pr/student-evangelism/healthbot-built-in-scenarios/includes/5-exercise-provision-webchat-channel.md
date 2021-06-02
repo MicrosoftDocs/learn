@@ -1,6 +1,6 @@
 Web Chat is a simple web page that allows users to communicate with your Azure Health Bot instance. It's a popular channel that you can easily embed in your web assets. Alternative channels can be enabled for your bot on request.
 
-## Create the Webchat channel
+## Create the Web Chat channel
 
 1. Sign in to the Health Bot management portal. On the left menu, under **Integration** select **Secrets**.
 
@@ -10,7 +10,7 @@ Web Chat is a simple web page that allows users to communicate with your Azure H
 
    :::image type="content" source="../media/4-webchat-app-secret.png" alt-text="Screenshot that shows APP_SECRET and WEBCHAT_SECRET.":::
 
-1. Go to [Webchat container sample repository](https://github.com/Microsoft/HealthBotContainerSample/tree/live_agent_handoff), and select **Deploy to Azure**.
+1. Go to the [Web Chat container sample repository](https://github.com/Microsoft/HealthBotContainerSample/tree/live_agent_handoff), and select **Deploy to Azure**.
 
 1. You're redirected to your Azure portal. Sign in by using your Azure credentials, and enter the details required for the deployment:
 
@@ -63,4 +63,4 @@ If there are online agents, the user and agent go through a connection sequence 
 
 1. The live chat continues until the agent ends the interaction.
 
-   :::image type="content" source="../media/4-webchat-interaction.png" alt-text="Screenshot that shows the user and agent interaction through the Agent Webchat channel.":::
+   :::image type="content" source="../media/4-webchat-interaction.png" alt-text="Screenshot that shows the user and agent interaction through the Web Chat channel.":::

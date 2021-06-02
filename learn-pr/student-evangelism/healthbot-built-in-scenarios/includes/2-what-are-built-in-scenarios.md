@@ -1,16 +1,16 @@
-Built-in scenarios (or dialogs) are hard-coded bot scenarios available out of the box to your users. Built-in scenarios enable important functionality, like showing a help menu or presenting the terms of service to your users.
+Built-in scenarios, or dialogs, are hard-coded bot scenarios available out of the box to your users. Built-in scenarios enable important functionality, like showing a help menu or presenting the terms of service to your users.
 
 The built-in scenarios can be used in the following cases:
 
-* Triage and symptom checker, powered by built-in medical protocols: The user describes a symptom to the Azure Health Bot instance. The bot helps the user to understand it and suggests how to react. An example is **I have a headache**.
+* **Triage and symptom checker, powered by built-in medical protocols:** The user describes a symptom to the Azure Health Bot instance. The bot helps the user to understand it and suggests how to react. An example is **I have a headache**.
 
    :::image type="content" source="../media/2-symptom-checker.png" alt-text="Screenshot that shows the Triage and symptom checker demo.":::
 
-* General information about conditions, symptoms, and more: Loaded with medical content, the health bot can provide information about medical conditions and symptoms, and helpful medical resources. Some examples are **Information about diabetes**, **What are the symptoms of diabetes?**, or **Resources for diabetes**.
+* **General information about conditions, symptoms, and more:** Loaded with medical content, the health bot can provide information about medical conditions and symptoms, and helpful medical resources. Some examples are **Information about diabetes**, **What are the symptoms of diabetes?**, or **Resources for diabetes**.
 
    :::image type="content" source="../media/2-disease-information.png" alt-text="Screenshot that shows Information about particular diseases.":::
 
-* Drugs and medication: The health bot can provide information about a type or brand of drugs. An example is **Information about aspirin**.
+* **Drugs and medication:** The health bot can provide information about a type or brand of drugs. An example is **Information about aspirin**.
 
    :::image type="content" source="../media/2-aspirin-information.png" alt-text="Screenshot that shows Information about aspirin.":::
 
@@ -38,7 +38,7 @@ Users can use the **start over** command to restart the current scenario.
 
 :::image type="content" source="../media/2-start-over.png" alt-text="Screenshot that shows the Start over command.":::
 
-### What do you know?
+### What do you know
 
 The user can use the **what do you know** command to see what the health bot remembers about them. The bot displays user variables that it has associated with the current user.
 
