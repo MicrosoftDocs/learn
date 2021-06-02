@@ -6,7 +6,7 @@ metadata:
   ms.date: 4/14/2021 
   author: pplavetzki
   ms.author: paplavet 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 5
 title: Concept - Deploy application
 content: |

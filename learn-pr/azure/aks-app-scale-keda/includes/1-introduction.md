@@ -26,17 +26,17 @@ By the end of this session, you'll be able to understand which Kubernetes scalin
 
 ## Prerequisites
 
-* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
+* Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
 * Familiarity with [Git](https://git-scm.com) and [GitHub](https://github.com).
 * Familiarity with [Docker](https://docker.com) and Docker images.
-* An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-* Ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
+* An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service).
+* Ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough).
 * Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/learn/modules/intro-to-containers).
 
-All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
 
-* [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
-* [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
+* [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough)
+* [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough)
 
 ## Before we start
 
