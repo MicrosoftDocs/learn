@@ -15,7 +15,7 @@ Start by creating a new page in Visual Studio Code.
     md functions && cd functions
 
     # macOS or Linux
-    md functions && cd functions
+    mkdir functions && cd functions
     ```
 
 1. To open the new directory in Visual Studio Code, run the following command:
