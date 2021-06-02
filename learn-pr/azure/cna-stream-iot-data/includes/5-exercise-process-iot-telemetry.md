@@ -118,10 +118,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Display name | Enter **Azure function webhook**. |
    | Callback URL | Paste the value of the Azure function URL you recorded in the previous task of this exercise. |
 
-   :::image type="content" source="../media/3-iot-custom-application-rule-1.png" alt-text="Screenshot of the first part of the sample Azure IoT Central application rule.":::
-
-   :::image type="content" source="../media/3-iot-custom-application-rule-2.png" alt-text="Screenshot of the second part of the sample Azure IoT Central application rule.":::
-
    > [!NOTE]
    > The value of the humidity telemetry is intentionally artificially low, to invoke the webhook functionality and trigger the function. In real-life scenarios, you would adjust it to correspond to the condition that warrants raising an alert or taking a remediation action.
 
