@@ -1,10 +1,10 @@
 Azure Remote Rendering consists of a number of components, which in turn consist of a number of processes. In this unit, you'll learn about the following components within Azure Remote Rendering and the underlying processes that operate within each component.
 
-| Component                | Description                                                  |
-| ------------------------ | ------------------------------------------------------------ |
-| Conversion               | Prepares your 3D assets for use with Azure Remote Rendering. |
-| Rendering server session | Provides the connection between your client device and the server that performs the remote rendering. |
-| Client SDK               | Combines local and remote holograms on your device, such as HoloLens 2. |
+| Component         | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
+| Conversion        | Prepares your 3D assets for use with Azure Remote Rendering. |
+| Rendering session | Provides the connection between your client device and the server that performs the remote rendering. |
+| Client SDK        | Combines local and remote holograms on your device, such as HoloLens 2. |
 
 ## Conversion
 
@@ -18,16 +18,17 @@ After uploading your models, perform the conversion process. After conversion co
 > [!TIP]
 > Models that you aren't actively rendering remain unchanged within Blob storage.
 
-## Rendering server session
+## Rendering session
 
-After conversion, establish a session between your client device and the server that will render your converted 3D model. There are two steps in this process:
+After conversion, you must establish a session between your client device and the server that will render your converted 3D model. There are three steps in this process:
 
-1. Start a session.
-1. Perform remote rendering.
+1. Request a session.
+1. Connect to the session to perform remote rendering.
+1. End the session.
 
 ### What is a session?
 
-Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks must be performed by specialist cloud servers. The specialist servers are equipped with the type of GPUs required to render complex 3D models. You cannot use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
+Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks must be performed by specific cloud servers. The servers are equipped with the type of GPUs required to render complex 3D models. You cannot use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
 
 A session includes the following components:
 
@@ -46,9 +47,6 @@ A session consists of three basic phases. These are described in the following t
 | Session startup | In this phase, Azure Remote Rendering creates a session on your behalf. You request a server size and specify the Azure region for the session. The session is then marked as **Starting**. After a suitable server is found, Azure copies the appropriate size VM onto the server to create an Azure Remote Rendering host. When the VM has started, the session state transitions to **Ready**. |
 | Session connect | After your session state is **Ready**, you can connect your device to it. While it's connected, the device sends commands to load and modify your 3D models. |
 | Session end     | When you no longer need the session, you should stop it. If you don't manually stop the session, it's automatically shut down when the session's lease time expires. |
-
-> [!IMPORTANT]
-> During the session startup phase, Azure Remote Rendering reduces potential latency by only reserving servers in your Azure region.
 
 ### Rendering modes
 

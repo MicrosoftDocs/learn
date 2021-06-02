@@ -9,14 +9,14 @@ When you work with 3D visualization, every detail matters. However, untethered d
 
 ## What is decimation?
 
-3D models are made up of polygons. *Decimation* is a process that compresses a model by removing its polygons, which means the model won't render in full detail. You might choose to simplify your 3D models using decimation when you're viewing content on untethered devices.
+3D models can be made up of polygons. *Decimation* is a process that compresses a model by removing its polygons, which means the model won't render in full detail. You might choose to simplify your 3D models using decimation when you're viewing content on untethered devices.
 
 > [!NOTE]
 > Decimation simplifies your models to the level required for rendering on your hardware.
 
-Unfortunately, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an internal combustion engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
+Unfortunately, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
 
-:::image type="content" source="../media/engine-model1.png" alt-text="An image of an internal combustion engine. The image is rendered using decimation.":::
+:::image type="content" source="../media/engine-model1.png" alt-text="An image of an engine. The image is rendered using decimation.":::
 
 ## Azure Remote Rendering definition
 
@@ -46,6 +46,6 @@ By using Azure Remote Rendering, you can:
 - Shift your complex rendering workloads to Azure to take advantage of high-performance GPUs.
 - Distribute complex workloads across multiple GPUs.
 
-Using Azure Remote Rendering can improve model detailing and quality. The following graphic displays a rendered model of an internal combustion engine and demonstrates the benefit of avoiding decimation. The image is rendered with 18 million triangles to create the detail required.
+Using Azure Remote Rendering can improve model detailing and quality. The following graphic displays a rendered model of an engine and demonstrates the benefit of avoiding decimation. The image is rendered with 18 million triangles to create the detail required.
 
-:::image type="content" source="../media/engine-model2.png" alt-text="An image of an internal combustion engine. The image is rich with detail and looks almost real.":::
+:::image type="content" source="../media/engine-model2.png" alt-text="An image of an engine. The image is rich with detail and looks almost real.":::
