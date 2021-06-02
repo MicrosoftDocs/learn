@@ -19,7 +19,7 @@ abstract: |
   - Authorize access to data in a Microsoft API
 
 prerequisites: | 
-  - Familiarity with setting up and building Java web application with Maven 3
+  - Familiarity with setting up and building Java (8 or above) web application with Maven 3
   - Familiarity with setting up and running Java web application on a Tomcat 9 server
   - An Azure subscription and Azure Active Directory tenant
   - An IDE like Visual Studio Code to edit code
@@ -39,6 +39,7 @@ units:
 - learn.azure.azure-java-app-enable-authentication-authorization.exercise-signin-with-msal
 - learn.azure.azure-java-app-enable-authentication-authorization.authorize-access-to-api
 - learn.azure.azure-java-app-enable-authentication-authorization.exercise-authorize-access-to-api
+- learn.azure.azure-java-app-enable-authentication-authorization.knowledge-check
 - learn.azure.azure-java-app-enable-authentication-authorization.summary
 badge:
   uid: learn.azure.azure-java-app-enable-authentication-authorization.badge
