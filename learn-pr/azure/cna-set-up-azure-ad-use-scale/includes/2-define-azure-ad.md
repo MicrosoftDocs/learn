@@ -19,9 +19,8 @@ For each of these scenarios, you have the option to implement additional control
 
 ## What is the role of Azure AD in cloud-native applications?
 
-As an app developer, you can use Azure AD for authenticating and authorizing access for your applications and their data. Azure AD offers programmatic methods that facilitate building custom apps. It also provides a single place to store information about digital identities, including support for application registration and their respective security principals. This allows for not only providing granual access to your internally developed applications to each user, guest, or group, but also makes it possible for applications to operate independently or on-behalf of their users when accessing other Azure AD-protected resources, services, and applications.
-<!-- I think "songle place" could be replaced with "single location" and "information about..." seems too vague. I just replacing "It also provides a single place to store information about digital identities" with "It also serves as a single location to store digital identitities-related information"-->
-<!-- Replace "granual" with "granular" -->
+As an app developer, you can use Azure AD for authenticating and authorizing access for your applications and their data. Azure AD offers programmatic methods that facilitate building custom apps. It also serves as a single location to store digital identitities-related information, including support for application registration and their respective security principals. This allows for not only providing granular access to your internally developed applications to each user, guest, or group, but also makes it possible for applications to operate independently or on-behalf of their users when accessing other Azure AD-protected resources, services, and applications.
+
 Cloud-native applications rely on open HTTP-based protocols to authenticate security principals since both clients and applications could be running anywhere and on any platform or device. Azure AD, as a cloud-native identity solution, provides this functionality, including its REST-based interface, as well as support for Graph API and OData-based queries.
 
 Azure AD facilitates implementing a range of scenarios commonly encountered when building cloud-native applications, such as:

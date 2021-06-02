@@ -9,8 +9,7 @@ In this exercise, you will:
 * Connect to the Azure Database for PostgreSQL server
 * Create a database and sample tables
 * Integrate the Azure Database for PostgreSQL server with Azure AD
-* Register an Azure AD application
-<!-- Please consider replacing "Register an Azure AD application" with" "Register an aplication with Azure AD" or with ""Register an aplication in Azure AD". -->
+* Register an aplication with Azure AD
 * Implement a simple, Azure AD-integrated Node.js-based application 
 * Validate the functionality of the Node.js-based application
 
@@ -233,8 +232,8 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
 1. Sign out as the **adatumadmin1** user account and close the Incognito/InPrivate mode web browser window. 
 
 
-## Register an Azure AD application
-<!-- Please consider replacing "Register an Azure AD application" with" "Register an aplication with Azure AD" or with ""Register an aplication in Azure AD". -->
+## Register an aplication with Azure AD
+
 In order to implement a sample Node.js-based application that leverages Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Node.js-based application to impersonate Azure AD users when accessing database objects. 
 
 1. Within the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.

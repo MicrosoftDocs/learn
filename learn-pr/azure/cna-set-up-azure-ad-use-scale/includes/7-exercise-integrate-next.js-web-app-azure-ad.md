@@ -17,8 +17,8 @@ In this exercise, you will:
 > For information regarding installing Node.js, refer to [Node.js Downloads web site](https://nodejs.org/en/download/). For information regarding Git, refer to the [Git downloads page](https://git-scm.com/downloads). Install both before you start this exercise.
 
 
-## Register an Azure AD application
-<!-- Please consider replacing "Register an Azure AD application" with" "Register an aplication with Azure AD" or with ""Register an aplication in Azure AD". -->
+## Register an aplication with Azure AD
+
 In order to implement a sample Next.js-based application that leverages Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Next.js-based application to impersonate Azure AD users when accessing database objects. 
 
 1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you will be using in this module.
