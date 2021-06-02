@@ -69,26 +69,11 @@ Notice that this example uses `targetScope = 'managementGroup'` in the template 
 > [!NOTE]
 > The example above illustrates how you can create a management group hierarchy by using Bicep. The *NonProduction* management group will be a child of the root management group, and the *SecretRND* management group will be a child of the *NonProduction* management group.
 
-## Create a management group and subscription hierarchy
+You can use a similar approach to deploy a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
 
-Now you know how to deploy all sorts of different resources at different scopes, and how to use Bicep modules and the `scope` keyword to deploy combinations of resources. Let's use all of this together to extend the management group hierarchy in the example above. Now, it will also include a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
-
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="27-33" :::
+:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="1-5, 27-33" :::
 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. These have been omitted for clarity.
-
-You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Due to the way this resource works, we declare it in a module:
-
-:::code language="plaintext" source="code/5-mg-subscription-association.bicep" highlight="13-16" :::
-
-Notice that the management group is referenced through the `existing` keyword.
-
-The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
-
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
-
-> [!NOTE]
-> Currently, Bicep requires that you use `targetScope = tenant()` on the module. This is because a known issue in Bicep, and it'll be fixed so you can use a management group-scoped file with `scope: tenant()` on the `subscriptionAssociation` resource. In the meantime, when you deploy this resource, you need permissions to deploy tenant resources.
 
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.
