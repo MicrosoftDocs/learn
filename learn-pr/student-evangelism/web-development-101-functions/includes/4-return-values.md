@@ -1,6 +1,6 @@
 Up to this point, the functions you've built have output to the [console](https://developer.mozilla.org/docs/Web/API/console). This can be exactly what you're looking for, especially when you create functions that call other services. But what if you want to create a helper function to perform a calculation and then provide a value that you can use elsewhere?
 
-You can do this by using a *return value*. A return value is returned by the function, and you can stored it in a variable just as you can store a literal value, such as a string or number.
+You can do this by using a *return value*. A return value is returned by the function, and you can store it in a variable just as you can store a literal value, such as a string or number.
 
 If a function should return something, you use the `return` keyword, usually followed by a value or a reference to what's being returned. However, you can also use `return` on its own to exit a function.
 
