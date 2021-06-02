@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. For more in-depth knowledge and tutorials regarding this topic, refer to [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true).
+﻿This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. For more in-depth knowledge and tutorials about this topic, refer to [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true).
 
 In this exercise, you'll:
 
@@ -9,14 +9,14 @@ In this exercise, you'll:
 
 ## Prerequisites
 
-to perform this exercise, you need:
+To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create a single server instance of Azure Database for PostgreSQL
 
-1. On a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
+1. On a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription that you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and then in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
 1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create >** (leave all other settings with their default values):
@@ -24,12 +24,12 @@ to perform this exercise, you need:
    | Setting | Configuration |
    | --- | --- |
    | Subscription | Select the name of the Azure subscription you'll be using in this module. |
-   | Resource Group | Create a new resource group named **postgresql-db-RG**. |
-   | Server name | Enter a unique name that consists of lower-case letters, digits and/or dashes, and starts with a letter. |
-   | Data source | Select **None** |
+   | Resource group | Create a new resource group named **postgresql-db-RG**. |
+   | Server name | Enter a unique name that consists of lower-case letters, digits or dashes, and starts with a letter. |
+   | Data source | Select **None**. |
    | Location | Select the Azure region closest to the location of your lab environment where you can create Azure Database for PostgreSQL instances. |
    | Version | Select **11**. |
-   | Compute + storage | Select the **Configure server** link, on the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
+   | Compute + storage | Select the **Configure server** link. On the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
    | Admin username | Enter **Student**. |
    | Password | Enter **Pa55w0rd1234**. |
 
@@ -38,7 +38,7 @@ to perform this exercise, you need:
 1. On the **Review + create** tab of the **Single server** blade, select **Create**.
 
     > [!NOTE]
-    > Wait for the provisioning to complete. This might take about 5 minutes.
+    > Wait for the provisioning to complete. This might take about five minutes.
 
     > [!NOTE]
     > The provisioning process automatically creates a database named **postgres** within the target server.
@@ -61,15 +61,15 @@ to perform this exercise, you need:
 1. In the **Essentials** section, identify the entries next to the **Server name** and **Admin username** labels and record their values.
 
     > [!NOTE]
-    >  You'll use these values to connect to the database from your computer and from applications running in Azure. Note that the user name includes the **@** symbol followed by the server name you specified in the previous task.
+    >  You'll use these values to connect to the database from your computer and from applications running in Azure. Note that the username includes the **@** symbol followed by the server name you specified in the previous task.
 
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
-1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
+1. If you're prompted to select either **Bash** or **PowerShell**, select **Bash**.
 
     > [!NOTE]
     > If this is the first time you're starting Azure Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
-
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded earlier in this task and, when prompted to provide the password, enter **Pa55w0rd1234**:
+<!--ID/SME: GLobal comment. Note that pane names are bold. "Azure" only needs to precede the term "Azure Cloud Shell" with first mention unless the name in the UI is fully spelled out, i.e., Azure Cloud Shell pane (I'm not sure if it is).-->
+1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded previously in this task, and when prompted to provide the password, enter **Pa55w0rd1234**:
 
     ```azurecli-interactive
     psql --host=<server_name> --port=5432 --username=<user_name> --dbname=postgres
@@ -127,4 +127,4 @@ to perform this exercise, you need:
 
 ## Results
 
-Congratulations! You've completed the first exercise of this module. In this exercise, you created a single server instance of Azure Database for PostgreSQL, configured its connection security options, connected to it, and added to it a database and table with sample inventory data.
+Congratulations! You've completed the first exercise of this module. In this exercise, you created a single server instance of Azure Database for PostgreSQL, configured its connection security options, connected to it, and added a database and table with sample inventory data.

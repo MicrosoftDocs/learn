@@ -2,7 +2,7 @@
 uid: learn.azure.build-basic-service
 metadata:
   title: Build Basic Service
-  description: In this module, you will learn how to build a basic service.
+  description: In this module, you'll learn more about how to build a basic service.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
@@ -11,7 +11,7 @@ metadata:
 title: Build Basic Service
 summary: Use Microsoft Azure Database for PostgreSQL to configure the Express.js web service and the front-end Next.js management web app with a persistent data store. 
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Learn the concept of service in the context of cloud-native applications.
   - Set up a basic service.
   - Extend the services architecture.
