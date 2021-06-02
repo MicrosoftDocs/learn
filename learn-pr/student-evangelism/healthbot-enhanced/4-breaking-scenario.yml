@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-enhanced.4-breaking-scenario
-title: Breaking Scenario
+title: Breaking scenario
 metadata:
-  title: Breaking Scenario
-  description: In this unit, you will learn how to build a bot using Breaking Scenario.
+  title: Breaking scenario
+  description: In this unit, you'll learn how to build a bot by using a breaking scenario.
   author: shreyan1999
   ms.author: chnoring
   ms.date: 05/21/2021

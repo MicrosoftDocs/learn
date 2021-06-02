@@ -1,25 +1,23 @@
-In the previous scenario we created a Basic Health bot. Now using the same bot, we will be going through the steps involved to create an interrupting and breaking scenario. So, if you haven't gone through the previous module, please visit that module and complete before going ahead.
+In the previous module, we used Azure Health Bot to create a basic health bot. Now, by using the same bot, we'll take the steps to create an interrupting scenario and a breaking scenario. If you haven't completed the previous module, do that before you start this one.
 
-:::image type="content" source="../media/1-built-bot.png" alt-text="Screenshot of Azure HealthBot showing the designer view of the basic bot created in the basic health bot learn module.":::
+:::image type="content" source="../media/1-built-bot.png" alt-text="Screenshot of Azure Health Bot, showing the designer view of a basic bot.":::
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
-- Getting to know about interrupting and breaking scenario
+- Learn about interrupting and breaking scenarios.
+- Implement an interrupting scenario.  
+- Build a bot by using a breaking scenario.  
 
-- Implementing the interrupting scenario  
+## Prerequisite modules
 
-- Building a bot using breaking scenario  
-
-## Prerequisite Modules
-
-- Introduction to the HealthBot
-- Introduction and Basic Healthcare Bot
-- Case Studies for Azure Health Bot
-- Language Understanding in the Azure Health Bot
+- Introduction to Azure Health Bot
+- Introduction and basic healthcare bot
+- Case studies for Azure Health Bot
+- Language understanding in Azure Health Bot
 - Introduction to built-in scenarios
 - Introduction to Health Bot scenario templates
 - Basic JavaScript
 
-**Produced in partnership with Meghana Chikkam and Shreyan J D Fernandes Microsoft Learn Student Ambassadors and Microsoft HealthBot Product Group**
+**Produced in partnership with Meghana Chikkam and Shreyan J. D. Fernandes, Microsoft Learn student ambassadors, and the Azure Health Bot product group**
