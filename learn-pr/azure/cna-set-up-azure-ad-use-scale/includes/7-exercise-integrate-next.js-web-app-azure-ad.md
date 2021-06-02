@@ -18,7 +18,7 @@ In this exercise, you will:
 
 
 ## Register an Azure AD application
-
+<!-- Please consider replacing "Register an Azure AD application" with" "Register an aplication with Azure AD" or with ""Register an aplication in Azure AD". -->
 In order to implement a sample Next.js-based application that leverages Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Next.js-based application to impersonate Azure AD users when accessing database objects. 
 
 1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you will be using in this module.
