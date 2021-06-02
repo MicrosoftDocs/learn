@@ -52,9 +52,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Azure portal Azure Function app Add function blade.":::
 
 1. On the **HttpTrigger1** blade, in the vertical menu bar, in the **Developer** section, select **Code + Test**.
-
-   :::image type="content" source="../media/5-azure-function-app-function-code-test.png" alt-text="Screenshot of the Azure portal, Azure function's Code + Test blade.":::
-
 1. On the **HttpTrigger1 \| Code + Test** blade, replace the existing code with the following content, and then select **Save** to save your changes:
 
    ```csharp
@@ -83,9 +80,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    > The function logs the payload of the HTTP request, which, in this case, should represent the telemetry data forwarded to the function app's endpoint by the Azure IoT Central application you created in the previous exercise unit in this module.
 
 1. On the **HttpTrigger1 \| Code + Test** blade, select **Get function URL**, and then record its value.
-
-   :::image type="content" source="../media/5-azure-function-app-function-url.png" alt-text="Screenshot of the Code + Test blade of the HttpTrigger1 blade from the Azure Function app in the Azure portal, with the Get function URL pop-up window.":::
-
 1. To test the newly created function, on the **HttpTrigger1 \| Code + Test** blade, select **Test/Run**. Select the **Input** tab, and then select **Run**.
    :::image type="content" source="../media/5-azure-function-app-function-test-run-input.png" alt-text="Screenshot of the Code + Test blade of the HttpTrigger1 blade with the Input tab selected.":::
 
@@ -128,8 +122,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
-
-   :::image type="content" source="../media/5-azure-function-app-function-monitor-log.png" alt-text="Screenshot of the Logs tab that displays messages in response to the HTTP trigger.":::
 
 ## Create an Azure Storage account that will store IoT telemetry
 
