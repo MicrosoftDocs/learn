@@ -27,13 +27,15 @@ You can try the Graph API call on the application that you have running from the
 
 2. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 
-## Overview of code for MS Graph access
+## Overview of code for Microsoft Graph access
+
+The code for accessing Microsoft Graph API can be found in the servlet class `CallGraphServlet.java` under the `msal4j/callgraphwebapp/` directory of the sample project. It defines the `/call_graph` endpoint in the application which makes authorized calls to the Microsoft Graph API's `https://graph.microsoft.com/v1.0/me` endpoint to retrieve the profile information of the signed in user. Here are more details of the Graph access code.
 
 1. In the `./src/main/resources/authentication.properties` file, the value of `aad.scopes` is set to the **User.Read** scope.
 
     Scopes tell Azure Active Directory the level of access that the application is requesting and map to the permissions in the app registration. Based on the requested scopes, Azure Active Directory presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes , the scopes consented to are encoded into the resulting `access_token` returned in the authentication response.
 
-2. When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Java Graph SDK), passing along the signed-in user's access token. The Graph client from hereon places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the  `/me` endpoint to yield details for the currently signed-in user.
+2. When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Microsoft Graph SDK Java), passing along the signed-in user's access token. The Graph client from hereon places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the Microsoft Graph's `/me` endpoint to yield details for the currently signed-in user.
 
     The following code is all that is required for an application developer to write for accessing the `/me` endpoint, provided that they already have a valid access token for Graph Service with the `User.Read` scope.
 

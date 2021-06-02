@@ -76,3 +76,5 @@ When your client requests an access token, Azure Active Directory also returns a
 ## Introduction to Microsoft Graph
 
 The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and much more. Microsoft Graph also includes a powerful set of services that manage user and device identity.
+
+For example, you can read the properties of a signed in user by accessing the `https://graph.microsoft.com/v1.0/me` endpoint.

@@ -19,8 +19,10 @@ abstract: |
   - Authorize access to data in a Microsoft API
 
 prerequisites: | 
-  - Familiarity with setting up and building Java (8 or above) web application with Maven 3
-  - Familiarity with setting up and running Java web application on a Tomcat 9 server
+  - Tomcat 9 is installed and running on the development machine
+  - Maven 3 is installed and running on the development machine
+  - Java 8 or above is installed on the development machine
+  - Familiarity with building Java web application with Maven and running it on a Tomcat server
   - An Azure subscription and Azure Active Directory tenant
   - An IDE like Visual Studio Code to edit code
 

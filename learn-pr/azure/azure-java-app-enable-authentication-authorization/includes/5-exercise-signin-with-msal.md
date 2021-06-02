@@ -59,6 +59,9 @@ To configure the code, open the application project in your preferred IDE like I
 
 ## Overview of authentication code
 
+Most of the authentication code in the sample application can be found under the `msal4j` directory of the project. It contains multiple servlets that provide the authentication endpoints in the application for sign in, sign out and handling the redirect callback from Azure Active Directory. These use the helper classes that call the authentication methods provided by MSAL. There is a servlet filter defined in `AuthenticationFilter.java` which redirects unauthenticated requests to protected routes to a 401 unauthorized HTTP error page.
+To add authentication to your application, you will need to include the servlet classes, the helper classes and the authentication servlet filter in your projects. Here are more details of the MSAL authentication code.
+  
 1. MSAL4J is available on Maven. You will need to add MSAL4J as a dependency in the `pom.xml` file of the project.
 
     ```
