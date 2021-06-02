@@ -38,3 +38,4 @@ units:
 - learn.language.rust-modules-packages-crates.8-summary
 badge:
   uid: learn.language.rust-modules-packages-crates.badge
+hidden: true
