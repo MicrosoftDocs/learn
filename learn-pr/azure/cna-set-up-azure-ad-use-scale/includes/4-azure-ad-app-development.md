@@ -1,5 +1,5 @@
 Now that you have a better understanding of the basic principles and benefits of Azure AD, you need to determineNow that you have a better understanding of the basic principles and benefits of Azure AD, you need to determine how you can leverage its capabilities in order to implement authentication and authorization for your application. You realize that, to secure your customers' data, you additionally need to ensure that your implementation will integrate with PostgreSQL access control mechanisms. You decided to start by identifying tasks that are involved in developing, provisioning, and managing Azure AD applications. You also want to determine how you can address the need to provide access to your application to multiple customers.
-
+<!-- Very first sentence is repeated. Please delete "Now that you have a better understanding of the basic principles and benefits of Azure AD, you need to determine". -->
 
 ## What are the primary application-related Azure AD tasks?
 
@@ -10,7 +10,7 @@ To implement Azure AD-based applications, you will need to perform a number of a
 When operating in an Azure AD environment, a user authenticates to an application in two stages:
 
 1. First, Azure AD verifies the user's identity. Upon successful authentication, Azure AD issues tokens that contain information reflecting the successful authentication.
-1. The user passes tokens to the application. The application validates the user’s security tokens to ensure that authentication was successful.
+1. The user passes tokens to the application. The application validates the userâ€™s security tokens to ensure that authentication was successful.
 
 To perform such validation, the application must be able to communicate securely with Azure AD. This, in turn, requires that the application itself operates as an Azure AD security principal. To make it possible, you have to ensure that the application is represented in some form in the same Azure AD tenant that contains the account of the authenticating user. 
 
@@ -83,7 +83,7 @@ To implement Azure AD-based applications, you will need to perform a number of a
 When operating in an Azure AD environment, a user authenticates to an application in two stages:
 
 1. First, Azure AD verifies the user's identity. Upon successful authentication, Azure AD issues tokens that contain information reflecting the successful authentication.
-1. The user passes tokens to the application. The application validates the user’s security tokens to ensure that authentication was successful.
+1. The user passes tokens to the application. The application validates the userâ€™s security tokens to ensure that authentication was successful.
 
 To perform such validation, the application must be able to communicate securely with Azure AD. This, in turn, requires that the application itself operates as an Azure AD security principal. To make it possible, you have to ensure that the application is represented in some form in the same Azure AD tenant that contains the account of the authenticating user. 
 
