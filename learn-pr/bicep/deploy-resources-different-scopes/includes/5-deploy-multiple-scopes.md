@@ -71,7 +71,7 @@ Notice that this example uses `targetScope = 'managementGroup'` in the template 
 
 You can use a similar approach to deploy a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="1-5, 27-33" :::
+:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="1-5, 27-33" highlight="1, 7" :::
 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. These have been omitted for clarity.
