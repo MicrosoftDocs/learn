@@ -4,7 +4,7 @@ title: Summary
 metadata:
   type: summary  
   title: Summary
-  description: In this module we've started the process of taking a relational database and modeling it for a NoSQL database.
+  description: Module summary for modeling and partitioning data for a NoSQL database.
   ms.date: 3/9/2021  
   author: markjbrown  
   ms.author: mjbrown  

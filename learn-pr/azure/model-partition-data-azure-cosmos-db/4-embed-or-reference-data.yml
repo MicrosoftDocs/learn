@@ -18,21 +18,21 @@ quiz:
     choices: 
     - content: "Saved as separate rows and referenced"
       isCorrect: true
-      explanation: "Where the 1:Many relationship is unbounded or can grow extremely large, data should be referenced."
-    - content: "Read or updated together in same document"
+      explanation: "Where the 1:Many relationship is unbounded or can grow large, data should be referenced."
+    - content: "Stored in separate containers"
       isCorrect: false
-      explanation: "Embed data in the same document where data needs to be read or updated together and relationship is 1:1 or 1:Few."
+      explanation: "Cosmos DB does not support relational constraints between containers."
     - content: "Embedded in the same document"
       isCorrect: false
-      explanation: "Embed data in the same document where the relationship is 1:1 or 1:Few."
+      explanation: "Data where the relationship is 1:1 or 1:Few is a better candidate for embedding."
   - content: "How does embedding data into the same document affect performance or costs?"
     choices: 
     - content: "Increase latency and lower cost"
       isCorrect: false
-      explanation: "Embedding data to reduce the number of request can lower costs but it doesn't increase latency."
+      explanation: "Embedding data to reduce the amount of request can lower costs but it doesn't increase latency."
     - content: "Lower latency"
       isCorrect: false
-      explanation: "Embedding data to reduce the number of request can improve performance but it also affects cost."
+      explanation: "Embedding data to reduce the amount of request can improve performance but it also affects cost."
     - content: "Reduce latency and cost"
       isCorrect: true
-      explanation: "Embedding data to reduce the number of request can improve performance and lower cost."
+      explanation: "Embedding data to reduce the amount of request can improve performance and lower cost."

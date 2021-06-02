@@ -22,18 +22,18 @@ quiz:
       explanation: "A NoSQL database can grow larger than 100 GB."
     - content: "4 TB"
       isCorrect: false
-      explanation: "Typically un-shared relational databases can only grow to 4 TB in size."
+      explanation: "Typically un-sharded relational databases can only grow to 4 TB in size."
     - content: "Infinite"
       isCorrect: true
       explanation: "A NoSQL database can grow to unlimited size."
-  - content: "What should be optimize when designing a data model for a NoSQL database?"
+  - content: "What should be optimized when designing a data model for a NoSQL database?"
     choices: 
     - content: "Storage"
       isCorrect: false
       explanation: "The cost of storage relative to compute is cheap. So optimizing for storage isn't the primary objective."
     - content: "Compute"
       isCorrect: true
-      explanation: "Compute is expensive relative to storage. So optimizing for compute is the primary objective."
+      explanation: "Compute is expensive relative to storage. So optimizing for compute by reducing the number of requests is the primary objective."
     - content: "Data size"
       isCorrect: false
       explanation: "Optimizing for the amount of data isn't a primary objective when designing a data model."
