@@ -12,7 +12,7 @@ In this exercise, you learn how to import the *triage and handoff* scenario temp
 
     :::image type="content" source="../media/3-template-catalog.png" alt-text="Screenshot that shows the Scenario Template Catalog.":::
 
-4. Select the **Triage and handoff** template, and then select **Import Template**.
+4. Select the **Triage and handoff** template, and then select **Import template**.
 
     :::image type="content" source="../media/3-import.png" alt-text="Screenshot that shows selections for importing the triage and handoff template.":::
 
@@ -22,12 +22,12 @@ In this exercise, you learn how to import the *triage and handoff* scenario temp
 
 6. You can test the scenario by using Web Chat. Enter your message and follow the flow of the scenario.
 
-7. You can customize the flow by using the conversational, flow control, and advanced functionality elements on the top toolbar in the **Designer** tab. Or you can customize the flow by using code. The relevant code is in JavaScript, so if you're familiar with code, you can select the **Code** tab.
+7. You can customize the flow by using the conversational, flow control, and advanced functionality elements on the top toolbar of the **Designer** tab. Or you can customize the flow by using code. The relevant code is in JavaScript, so if you're familiar with code, you can select the **Code** tab.
 
-## Scenario management
+## Manage a scenario
 
 The new template scenario appears on the **Manage** tab under **Scenarios** on the left toolbar.
 
 :::image type="content" source="../media/3-manage.png" alt-text="Screenshot that shows selections for opening the management page for the custom scenario.":::
 
-In the scenario management page, you can edit the scenario name, description, and ID. You can also disable or delete the scenario. Or you can select the scenario name to open the **Designer** screen.
+On the **Scenario Management** page, you can edit the scenario name, description, and ID. You can also disable or delete the scenario. Or you can select the scenario name to open the **Designer** screen.
