@@ -1,6 +1,6 @@
-Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to target HTML code, and then define what the style should be. For example, you can select a box, and apply rounded corners or give the box a gradient background. CSS is responsible for determining how hyperlinks look and respond when you interact with them, although you define the destination address in HTML. In CSS3, you can also do sophisticated animation effects.
+Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to define what the style should be for the elements that you use within your HTML pages. For example, you can select a box, and apply rounded corners or give the box a gradient background. Or you can use CSS to specify how your hyperlinks look and respond when you interact with them (although you define the destination address for your hyperlinks in your HTML code). You can apply styles to specific elements, or all elements of a specific type, or you can use classes to specify styles that can be applied to a number of different elements. In CSS3, you can also perform sophisticated animation effects.
 
-In this unit, you apply CSS styles to page elements, add CSS code to support light and dark themes, and check the results in developer tools.
+In this exercise, you'll apply CSS styles to HTML page elements, then you'll add some CSS code to define your light and dark themes, and then you'll check the results in your browser's developer tools.
 
 ## External CSS
 
@@ -17,13 +17,13 @@ In the previous unit about HTML, you linked to an external CSS file from HTML.
 
 One benefit of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, your styling will update for each page. Designating an HTML file for the structure of the page, a CSS file for the styling, and JavaScript file for interaction or events is called *separation of concerns*.
 
-As described previously, you can also write CSS directly in HTML, which is called internal CSS. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
+As described previously, you can also write CSS directly in HTML, which is called *internal CSS*. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
 
 ## CSS rules
 
 Imagine you have an old-fashioned key and a series of doors down a long corridor. First, you select a door, and then you unlock it with the key. After you have access to a room, you can decorate it however you'd like. You might paint the walls blue, or set the floor to be hardwood. You select a room, and define rules for how it should look. You can apply the same style to multiple rooms, which is just like CSS.
 
-- In **Visual Studio Code**, open the `main.css` file, and enter the following.
+In **Visual Studio Code**, open the `main.css` file, and enter the following.
 
     ```css
     body {
@@ -59,9 +59,18 @@ What you're selecting is an existing element that you previously defined in HTML
     }
     ```
 
-   The preceding custom attributes are called `.list` and `#msg`. The class selector *list* has a period prefix, while the ID selector is *msg* and has a pound sign prefix. The names can be arbitrary as long as they match what you've defined in the HTML.
+   The preceding custom attributes are called `.list` and `#msg`.
 
-1. Save your work by pressing the keyboard shortcut <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
+   - The period prefix for `.list` indicates that this is a *class selector*.
+    
+     Each HTML element that contains a `class` attribute set to "list" will inherit the styles that are defined within this selector.
+   - The pound sign prefix for *#msg* indicates that this is an *ID selector*.
+    
+     The HTML element that has its `id` attribute set to "msg" will inherit the styles that are defined within this selector.
+
+   The names that you use for your selectors can be arbitrary, as long as they match what you've defined in the HTML.
+
+1. Save your work by pressing the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
 ## View in browser
 
@@ -78,7 +87,7 @@ Are the font styles what you expected to see? It's interesting how styles cascad
 
 ## Add a light theme
 
-Next, add support for a color theme for your website. Begin by defining a light-colored theme. For the light theme, use hex color codes. For the font color, select (#000000, black); and for the background color, select (#00FF00, a green hue).
+Next, you'll add support for a color theme for your website. Begin by defining a light-colored theme using hex color codes.
 
 1. In your CSS file, add the following code at the end of the file.
 
@@ -88,6 +97,8 @@ Next, add support for a color theme for your website. Begin by defining a light-
       background: #00FF00;
     }
     ```
+
+   In this example, `#000000` specifies black for the font color, and `#00FF00` specifies green for the background color.
 
 1. In your HTML file, update the `<body>` element with a class name, `light-theme`, so the class selector for light theme will apply the styles correctly.
 
@@ -107,29 +118,27 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 1. Open Developer Tools.
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> (<kbd>FN+F12</kbd>). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**
 
-   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd>. (<kbd>F12</kbd> also works.)
+   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
 
 1. Select the **Styles** tab.
 
 1. Select the **Elements** tab.
 
-1. Roll over, and select the HTML elements.
+1. Hover over the various HTML elements, and as select a few elements, notice how the developer tools indicate which styles are applied.
 
 1. Select the `<body>` element. Note the `light-theme` applied.
 
-1. Open the disclosure triangles.
-
-1. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
+1. Expand the unordered list and select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
 :::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website in dev tools with light theme applied":::
 
 ## Add a dark theme
 
-For the dark theme, you set up the infrastructure in preparation for the next unit, in which you will enable theme switching on the web page.
+For the dark theme, you'll set up the infrastructure in preparation for the next unit, in which you'll enable theme switching on the web page.
 
-To set up support for a dark theme:
+To add support for a dark theme to your CSS, use the following steps.
 
 1. Add some constants to the page root at the top of your CSS file.
 
@@ -141,7 +150,7 @@ To set up support for a dark theme:
     }
     ```
 
-   The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
+   The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. In this example, you've defined three color variables that are attached to the page root.
 
 1. At the end of the CSS file, add the `dark-theme` selector, and update the `light-theme` selector.
 
@@ -172,7 +181,7 @@ To set up support for a dark theme:
     }
     ```
 
-   The * selector is a universal selector that applies to all page elements (except where a more specific element selector overrides it). Here, you use it to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
+   The `*` selector is a universal selector that applies to all page elements (except where a more specific element selector overrides it). In this example, you use the `*` selector to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
 
 1. Remove the `#msg` selector in your CSS, so that we can apply the same font to all elements.
 
@@ -182,4 +191,4 @@ To set up support for a dark theme:
 
 1. Edit the `<body>` element to switch the default back to light theme.
 
-In the next unit, you will use JavaScript to provide interactivity and support the switching of themes.
+In the next unit, you'll use JavaScript to provide interactivity and support the switching of themes.
