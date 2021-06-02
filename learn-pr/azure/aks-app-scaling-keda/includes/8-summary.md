@@ -1,6 +1,6 @@
 You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly.
 
-You first deployed the application as a deployment with a static replica count.  We discussed why this would be challenging for workloads that process events and have fluctuating resource needs.  After looking at the options for our scenario, using KEDA with a scaler for the Redis list would help us autoscale in an efficient and effective manner.
+You first deployed the application as a Deployment with a static replica count.  We discussed why this would be challenging for workloads that process events and have fluctuating resource needs.  After looking at the options for our scenario, using KEDA with a scaler for the Redis list would help us autoscale in an efficient and effective manner.
 
 ## Clean up resources
 

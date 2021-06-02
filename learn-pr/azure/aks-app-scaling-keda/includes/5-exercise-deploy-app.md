@@ -33,13 +33,13 @@ We first need to create a list in Redis and populate it with some random element
 
 4. To exit the Redis shell, just type `exit`.
 
-## Create a deployment manifest
+## Create a Deployment manifest
 
-You create a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
+You create a Deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
 
-Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's create a deployment file.
+Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's create a Deployment file.
 
-1. In Cloud Shell, create a manifest file for the Kubernetes deployment called `deployment.yaml` by using the integrated editor.
+1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` by using the integrated editor.
 
     ```bash
     touch deployment.yaml
@@ -55,15 +55,15 @@ Kubernetes groups containers into logical structures called pods, which have no 
     metadata:
       name: contoso-microservice
     spec:
-      selector: # Define the wrapping strategy
-        matchLabels: # Match all pods with the defined labels
+      selector:                     # Define the wrapping strategy
+        matchLabels:                # Match all pods with the defined labels
           app: contoso-microservice # Labels follow the `name: value` template
-      template: # This is the template of the pod inside the deployment
+      template:                     # This is the template of the pod inside the Deployment
         metadata:
           labels:
             app: contoso-microservice
         spec:
-          replicas: 1 # here we are telling K8S the number of containers to process the Redis list items
+          replicas: 1               # here we are telling K8S the number of containers to process the Redis list items
           containers:
             - image: mcr.microsoft.com/mslearn/samples/redis-client:latest
               name: contoso-microservice
@@ -92,7 +92,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 ## Apply the manifest
 
-1. In Cloud Shell, run the `kubectl apply` command to submit the deployment manifest to your cluster.
+1. In Cloud Shell, run the `kubectl apply` command to submit the Deployment manifest to your cluster.
 
     ```bash
     kubectl apply -f ./deployment.yaml
@@ -104,7 +104,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     deployment.apps/contoso-microservice created
     ```
 
-2. Run the `kubectl get deployments` command to check if the deployment was successful.
+2. Run the `kubectl get deployments` command to check if the Deployment was successful.
 
     ```bash
     kubectl get deploy contoso-microservice

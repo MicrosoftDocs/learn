@@ -9,7 +9,7 @@ Kubernetes clusters can scale in one of two ways:
 
 Both the HPA and cluster autoscaler can also decrease the number of pods and nodes as needed. The cluster autoscaler decreases the number of nodes when there has been unused capacity for a period of time. Pods on a node to be removed by the cluster autoscaler are safely scheduled elsewhere in the cluster. The cluster autoscaler may be unable to scale down if pods can't move, such as in the following situations:
 
-* A pod is directly created and isn't backed by a controller object, such as a deployment or replica set.
+* A pod is directly created and isn't backed by a controller object, such as a Deployment or ReplicaSet.
 * A pod disruption budget (PDB) is too restrictive and doesn't allow the number of pods to be fall below a certain threshold.
 * A pod uses node selectors or anti-affinity that can't be honored if scheduled on a different node.
 

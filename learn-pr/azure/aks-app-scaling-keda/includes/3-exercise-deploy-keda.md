@@ -1,4 +1,4 @@
-In this exercise, you'll deploy KEDA to an Azure Kubernetes Service (AKS) cluster to autoscale a sample component for your video rendering service. You'll deploy KEDA with deployment manifests using `kubectl`.  This is one of several options to deploy KEDA. For our purposes, using the default deployment files method is most appropriate.
+In this exercise, you'll deploy KEDA to an Azure Kubernetes Service (AKS) cluster to autoscale a sample component for your video rendering service. You'll deploy KEDA with Deployment manifests using `kubectl`.  This is one of several options to deploy KEDA. For our purposes, using the default Deployment files method is most appropriate.
 
 > [!TIP]
 > For more detailed information about installation options view KEDA's [official documentation](https://keda.sh/docs/2.2/deploy/).
