@@ -18,7 +18,7 @@ quiz:
     choices: 
     - content: "Saved as separate rows and referenced"
       isCorrect: true
-      explanation: "Where the 1:Many relationship is unbounded or can grow extremely large, data should be referenced."
+      explanation: "Where the 1:Many relationship is unbounded or can grow large, data should be referenced."
     - content: "Stored in separate containers"
       isCorrect: false
       explanation: "Cosmos DB does not support relational constraints between containers."
@@ -29,10 +29,10 @@ quiz:
     choices: 
     - content: "Increase latency and lower cost"
       isCorrect: false
-      explanation: "Embedding data to reduce the number of request can lower costs but it doesn't increase latency."
+      explanation: "Embedding data to reduce the amount of request can lower costs but it doesn't increase latency."
     - content: "Lower latency"
       isCorrect: false
-      explanation: "Embedding data to reduce the number of request can improve performance but it also affects cost."
+      explanation: "Embedding data to reduce the amount of request can improve performance but it also affects cost."
     - content: "Reduce latency and cost"
       isCorrect: true
-      explanation: "Embedding data to reduce the number of request can improve performance and lower cost."
+      explanation: "Embedding data to reduce the amount of request can improve performance and lower cost."
