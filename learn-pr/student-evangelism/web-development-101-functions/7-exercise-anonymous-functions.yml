@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101.functions.exercise-anonymous-functions
-title: Exercise - Anonymous functions
+title: Exercise - Create an anonymous function
 metadata:
-  title: Exercise - Anonymous functions
-  description: You will create and use an anonymous function.
+  title: Exercise - Create an anonymous function
+  description: In this unit, you'll create and use an anonymous function.
   author: GeekTrainer
   ms.author: chnoring
   ms.date: 05/18/2021

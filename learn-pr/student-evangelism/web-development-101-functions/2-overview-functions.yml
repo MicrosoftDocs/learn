@@ -3,8 +3,7 @@ uid: learn.student-evangelism.web-development-101.functions.overview-functions
 title: Overview of functions
 metadata:
   title: Overview of functions
-  description: We start by exploring what a function is, and how to create your
-    first function in JavaScript.
+  description: This unit explores what a function is, and how to create your first function in JavaScript.
   author: GeekTrainer
   ms.author: chnoring
   ms.date: 05/18/2021

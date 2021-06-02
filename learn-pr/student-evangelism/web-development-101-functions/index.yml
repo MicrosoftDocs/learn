@@ -1,28 +1,21 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.web-development-101.functions
 metadata:
-  title: Creating modular code with functions in JavaScript
-  description: Functions are the building blocks for any application you will
-    create. They allow you to create named, reusable sections of code to help
-    make your code more readable and maintainable. This module will explore the
-    core concepts of functions.
+  title: Create modular code by using functions in JavaScript
+  description: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
   ms.date: 05/18/2021
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Creating modular code with functions in JavaScript
-summary: Functions are the building blocks for any application you will create.
-  They allow you to create named, reusable sections of code to help make your
-  code more readable and maintainable. This module will explore the core
-  concepts of functions.
+title: Create modular code by using functions in JavaScript
+summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
 abstract: |
-  In this module you will learn:
-
-  - How to write a basic function
-  - What parameters are and how to use them
-  - Return values from a function
-  - Use anonymous functions
+  In this module, you'll learn:
+  - How to write a basic function.
+  - What parameters are and how to use them.
+  - How to return values from a function.
+  - How to use anonymous functions.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -33,8 +26,8 @@ roles:
 products:
   - vs
 prerequisites: |
-  - A browser
-  - Visual Studio Code and Live Server extension
+  - A web browser
+  - Visual Studio Code and Live Server extension, installed
 units:
   - learn.student-evangelism.web-development-101.functions.introduction
   - learn.student-evangelism.web-development-101.functions.overview-functions
