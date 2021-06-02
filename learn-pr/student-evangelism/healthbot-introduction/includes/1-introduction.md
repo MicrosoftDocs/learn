@@ -10,6 +10,10 @@ In this module, you'll take a look at Azure Health Bot and its capabilities. You
 
 In this module, you will:
 
-- Learn what Azure Health Bot is.  
-- Understand the key characteristics of Health Bot.
-- Determine whether Health Bot is the right solution for your business needs.
+- Learn what Azure Health Bot is  
+
+- Understand the key characteristics of Health Bot
+
+- Determine whether Health Bot is the right solution for your business needs
+
+***Produced in partnership with Rucha Yagnik and Christina Pardali - Microsoft Learn Student Ambassadors and Microsoft HealthBot Product Group***

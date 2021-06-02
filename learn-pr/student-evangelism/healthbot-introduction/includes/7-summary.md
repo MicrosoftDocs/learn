@@ -4,4 +4,4 @@ In this module, you learned about Azure Health Bot and its capabilities. You saw
 
 ## Resources
 
-[Azure Health Bot](/azure/health-bot/)
+[Azure Health Bot](https://azure.microsoft.com/services/bot-services/health-bot/)

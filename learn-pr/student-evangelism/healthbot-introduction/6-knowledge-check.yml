@@ -15,23 +15,28 @@ content: |
 quiz:
   questions:
 
-    - content: "True or false: A Health Bot instance can't be integrated within the organization's existing systems."
+    - content: "Is it possible for a Health Bot instance to be integrated within an organization's existing systems?"
       choices:
-        - content: "True"
+        - content: "Yes"
           isCorrect: true
-          explanation: A Health Bot instance can be integrated within the organization's existing systems without any functional problems.
-        - content: "False"
+          explanation: "A Health Bot instance can be successfully integrated within the organization's existing systems."
+        - content: "Yes, but functional problems will occur"
           isCorrect: false
-          explanation: A Health Bot instance can be successfully integrated within the organization's existing systems.
+          explanation: "A Health Bot instance can be integrated within the organization's existing systems without any functional problem."
+        - content: "No"
+          isCorrect: false
+          explanation: "A Health Bot instance can be successfully integrated within the
+            organization's existing systems."
     
-    - content: Which of the following statements is not true about Health Bot?
+    - content: 'which built-in scenario is activated when a user types "I have fever"?' 
       choices:
-        - content: It offers an extensible management portal.
+        - content: "Find doctor type"
           isCorrect: false
-          explanation: On the Interactions tab, you configure built-in scenarios that interact with the user.
-        - content: It meets the regulatory requirements of the healthcare industry.
+          explanation: "The above built-in scenario is activated when health bot instance is required to recommend the appropriate type of doctor to treat an illness."
+        - content: "General information about conditions, symptoms, causes, complications, and more"
           isCorrect: false
-          explanation: The information that each instance of the Health Bot handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
-        - content: It doesn't allow handoff to humans when a negative sentiment is detected.
+          explanation: "The above built-in scenario is activated when the health bot instance loaded with medical database is required to provide information about medical conditions, symptoms, causes, and complications."
+        - content: "Triage and symptom checker"
           isCorrect: true
-          explanation: It allows handoff to humans when a negative sentiment is detected.
+          explanation: "The above built-in scenario is activated when the end user describes a symptom to the health bot instance and the bot helps the user to understand it and suggests how to react."
+

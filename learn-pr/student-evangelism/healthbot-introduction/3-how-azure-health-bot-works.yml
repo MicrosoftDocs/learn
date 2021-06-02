@@ -17,14 +17,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What differentiates Azure Health Bot from a basic chat bot?
+    - content: "Which of the following statements is not true about Health Bot?"
       choices:
-        - content: Health Bot has a built-in medical database.
+        - content: "It offers an extensible management portal"
+          isCorrect: false
+          explanation: "In Interactions tab you configure built-in scenarios that interact with the end user."
+        - content: "It meets the regulatory requirements of the healthcare industry"
+          isCorrect: false
+          explanation: "The information handled by each instance of the Health Bot is privacy protected to HIPAA standards and secured to the highest standards for privacy and security by Microsoft."
+        - content: "It doesn’t allow handoff to humans when a negative sentiment is detected"
           isCorrect: true
-          explanation: A built-in medical database differentiates the Health Bot service from the Bot Framework. That database enables developers to use built-in in scenarios or create custom scenarios to meet their business needs.
-        - content: The security and privacy of Health Bot are protected to HIPAA standards.
-          isCorrect: false
-          explanation: The information that each instance of the Health Bot Service handles is privacy protected to HIPAA standards. The service is built on the Azure architecture to help ensure that it can scale with resilience, while maintaining high standards of privacy and security.
-        - content: Health Bot allows customers to interact with computer applications in a conversational way by using text, graphics, or speech.
-          isCorrect: false
-          explanation: Health Bot allows customers to interact with computer applications in a conversational way by using text, graphics, or speech.
+          explanation: "It allows handoff to humans when a negative sentiment is detected."
