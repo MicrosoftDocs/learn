@@ -24,7 +24,7 @@ quiz:
           explanation: "Scheduling appointments is an example of a custom scenario."
         - content: "The Health Bot instance provides information about health plan details, such as pricing and benefits."
           isCorrect: false
-          explanation: "Health plan inquiries is an example of custom scenario."
+          explanation: "Health plan inquiries is an example of a custom scenario."
         - content: "The Health Bot instance provides information about medical conditions, symptoms, causes, and complications."
           isCorrect: true
           explanation: "Medical information requests are built-in scenarios."

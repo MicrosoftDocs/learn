@@ -2,20 +2,20 @@
 uid: learn.healthbot-built-in-scenarios
 metadata:
   title: Introduction to built-in scenarios
-  description: Identify the different built-in scenarios associated with the Health Bot and create a Web Chat channel.
+  description: Identify the different built-in scenarios associated with Azure Health Bot and create a Web Chat channel.
   ms.date: 05/11/2021
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to built-in scenarios
-summary: The Azure Health Bot Service supports many built-in scenarios. For example, triage a medical condition, find information about a disease or types of drugs, and get end-user consent.
+summary: Azure Health Bot supports many built-in scenarios. For example, triage a medical condition, find information about a disease or types of drugs, and get user consent.
 abstract: |
-  In this module you will:
+  In this module you'll:
   - Explain what scenarios are.
-  - Identify the different built-in scenarios associated with the Health Bot.
+  - Identify the different built-in scenarios associated with your Health Bot instance.
   - Recognize built-in scenario use cases.
-  - Build a simple web page that allows users to communicate with your Azure Health Bot instance through a web chat control.
+  - Build a simple web page that allows users to communicate with your Health Bot instance through a Web Chat control.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
