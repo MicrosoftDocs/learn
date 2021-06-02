@@ -1,6 +1,7 @@
 This unit will walk you through creating your first Azure Health Bot instance.
 
-[!IMPORTANT]An Azure account is required to complete these steps. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+> [!IMPORTANT]
+> You'll need an Azure account to complete these steps. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 1. Sign in to your account and go to the [Azure portal](https://portal.azure.com/).
 
