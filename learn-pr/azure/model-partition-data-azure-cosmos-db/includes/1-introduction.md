@@ -14,11 +14,11 @@ The following diagram shows the model you will be starting from. The relational 
 
 In this module we take our existing relational data model and redesign it as a NoSQL database for our e-commerce application. During this process you will learn the following:
 
-    - **Differences between relational vs. NoSQL databases:** We will explore how NoSQL databases differ relational databases and why they are that way.
-    - **Using access patterns to model data:** We will learn how understanding how an application reads and writes data influences how to model it for a NoSQL database.
-    - **Embedding versus referencing:** We will learn when you should embed data within the same document versus when you should store data as a separate row.
-    - **Choosing a partition key:** We will learn key concepts for choosing a partition key including how to avoid hot partitions and how to handle scenarios where you have workloads that are both read and write heavy.
-    - **Modeling lookup or reference data:** Finally, we will learn how to model data that is used as a reference or lookup for other data.
+- **Differences between relational vs. NoSQL databases:** We will explore how NoSQL databases differ relational databases and why they are that way.
+- **Using access patterns to model data:** We will learn how understanding how an application reads and writes data influences how to model it for a NoSQL database.
+- **Embedding versus referencing:** We will learn when you should embed data within the same document versus when you should store data as a separate row.
+- **Choosing a partition key:** We will learn key concepts for choosing a partition key including how to avoid hot partitions and how to handle scenarios where you have workloads that are both read and write heavy.
+- **Modeling lookup or reference data:** Finally, we will learn how to model data that is used as a reference or lookup for other data.
 
 ## What is the main goal?
 
