@@ -12,7 +12,7 @@ In this module, you'll deploy KEDA into an AKS environment and deploy a scaler o
 
 Here, you'll deploy a KEDA scaler object to AKS to autoscale containers based on the number messages in a list:
 
-* **Understand**: K8S scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
+* **Understand**: Kubernetes scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
 
 * **Deploy**: a container that processes messages from a Redis List
 
