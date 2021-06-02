@@ -21,13 +21,13 @@ quiz:
       choices:
         - content: "Help"
           isCorrect: false
-          explanation: 'The "help" command displays help items to the user and doesn't break the current scenario.'
+          explanation: "The Help command displays help items to the user and doesn't break the current scenario."
         - content: "Cancel"
           isCorrect: true
-          explanation: 'The "cancel" command stops the current scenario.'
+          explanation: "The Cancel command stops the current scenario."
         - content: "Start over"
           isCorrect: false
-          explanation: 'The "start over" command restarts the current scenario.'
+          explanation: "The Start over command restarts the current scenario."
       
       ##Question 2
     - content: "Which of the following statements is true about the built-in Triage and symptom checking scenario?"
