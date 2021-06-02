@@ -82,7 +82,7 @@ Configure built-in scenarios that interact with your users. For example, you can
 * A default message when returning from interrupting scenarios.
 * A default reply for utterances that aren't understood.
 
-:::image type="content" source="../media/3-interactions.png" alt-text="Screenshot that shows the Interactions tab options.":::
+   :::image type="content" source="../media/3-interactions.png" alt-text="Screenshot that shows the Interactions tab options.":::
 
 You can also change the automatic welcome message that appears when users first enter the chat. Or, you can use a custom scenario as an automatic welcome scenario. The automatic welcome scenario overrides the automatic welcome message.
 
@@ -108,7 +108,7 @@ On the **Cognitive Services** tab, you can configure the:
 * Message that displays when the speller has corrected an utterance but user intent wasn't understood.
 * Message that displays when the user rejects spelling verification.
 
-:::image type="content" source="../media/3-correction.png" alt-text="Screenshot that shows Spelling correction.":::
+   :::image type="content" source="../media/3-correction.png" alt-text="Screenshot that shows Spelling correction.":::
 
 ### Human Handoff
 
