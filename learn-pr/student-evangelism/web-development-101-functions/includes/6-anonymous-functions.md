@@ -6,9 +6,11 @@ Imagine creating a webpage with several timers. When a timer finishes, you want 
 
 At its core, a callback is a way of passing a function into another function as a parameter. This parameter behaves in the same way as any other parameter, such as a string or a number, except that it can be called because it's a function.
 
-Let's imagine that a friend of yours is going to the store, and you ask the person to pick up a couple of items for you.
+Let's imagine that a friend of yours is going to the store, and you ask the person to pick up two ice cream sandwiches and, importantly, to bring them to you before they melt.
 
-In programming, this situation would be represented by a callback. You have given your friend a set of instructions (your shopping list) to perform at the store. You might have picked up on another key component about the timing of execution: you know your friend will complete the task, but you don't necessarily know *when*.
+In programming, this situation can be represented by a callback. You've given your friend a set of instructions (go to the store, pick up ice cream sandwiches). The callback here would be a further instruction to bring them to you before they melt. 
+
+You might have picked up on another key component about the timing of execution: you know your friend will complete the task, but you don't necessarily know *when*.
 
 Callbacks are frequently used in a variety of frameworks and libraries to indicate the code that you want to run when something happens or finishes. You'll use a callback to indicate what should happen when, for example, a user selects a button, a long-running operation finishes, or a timer expires.
 
