@@ -88,4 +88,7 @@ The main Bicep file can then create the association by including the module. Her
 
 :::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
 
+> [!NOTE]
+> Currently, Bicep requires that you use `targetScope = tenant()` on the module. This is because a known issue in Bicep, and it'll be fixed so you can use a management group-scoped file with `scope: tenant()` on the `subscriptionAssociation` resource. In the meantime, when you deploy this resource, you need permissions to deploy tenant resources.
+
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.
