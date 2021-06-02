@@ -27,13 +27,27 @@ Notice that in this example, the Bicep file has a `targetScope` of `subscription
 
 ::: zone pivot="cli"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg create` command. For tenant deployments, use `az deployment tenant create`.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope:
+
+| To deploy at this scope: | Use this command: |
+|-|-|
+| Resource group | `az deployment group create` |
+| Subscription | `az deployment sub create` |
+| Management group | `az deployment mg create` |
+| Tenant | `az deployment tenant create` |
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different cmdlets for each deployment scope. To deploy to a subscription, you must use the `New-AzSubscriptionDeployment` cmdlet. For management group deployments, use the `New-AzManagementGroupDeployment` cmdlet. For tenant deployments, use `New-AzTenantDeployment` cmdlet.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different cmdlets for each deployment scope:
+
+| To deploy at this scope: | Use this cmdlet: |
+|-|-|
+| Resource group | `New-AzResourceGroupDeployment` |
+| Subscription | `New-AzSubscriptionDeployment` |
+| Management group | `New-AzManagementGroupDeployment` |
+| Tenant | `New-AzTenantDeployment` |
 
 ::: zone-end
 
