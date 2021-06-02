@@ -29,7 +29,7 @@ Notice that in this example, the Bicep file has a `targetScope` of `subscription
 
 When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope:
 
-| To deploy at this scope | Use this command |
+| To deploy at this scope: | Use this command: |
 |-|-|
 | Resource group | `az deployment group create` |
 | Subscription | `az deployment sub create` |
@@ -42,7 +42,7 @@ When you initiate a deployment, you need to tell Azure which scope you want to d
 
 When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different cmdlets for each deployment scope:
 
-| To deploy at this scope | Use this cmdlet |
+| To deploy at this scope: | Use this cmdlet: |
 |-|-|
 | Resource group | `New-AzResourceGroupDeployment` |
 | Subscription | `New-AzSubscriptionDeployment` |
