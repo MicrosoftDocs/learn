@@ -1,6 +1,6 @@
 In this module, you explored how to create functions in JavaScript. A function is a great abstraction to use when you need to carry out the same task multiple times and want to avoid duplicating your code. You also learned the difference between a function and a method. These two types are both functions, but a function is free floating and a method sits on an object.
 
-You then went on to learn about parameters and variables as part of the function signature. You use parameters to pass data to the function to operate on. 
+You then explored parameters and variables as important elements that allow functions to work with data. 
 
 Next, you learned about return variables. A return value is data leaving the function. Any invoker of a function can leverage the return value by assigning it to a variable.
 
