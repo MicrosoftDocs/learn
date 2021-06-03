@@ -1,52 +1,44 @@
-Just like how we built a scenario and created a model for Interrupting Bot 1, we would create for Interrupting Bot 2.
+Let's create another interrupting bot to help patients check their temperature and other vitals, if they haven't so far. The patient can reach this bot by entering the word **temperature**. That entry will break the flow of the original bot and run this new one. 
 
-In Intermediate Bot 2, we are going to help patients check their temperature and other vitals, if they haven't so far. The patient can reach this Bot by entering the word "temperature". It would break the flow of the original bot and run this new Bot.
+To create this bot, we'll build a breaking scenario and then create a model.
 
-1. The scenario for Interrupting Bot 2 will have the following configurations:  
+## Create a breaking scenario
 
-   :::image type="content" source="../media/4-edit-scenario.png" alt-text="Breaking scenario Configuration":::
+1. Configure the scenario with the following details:  
 
-   - **Name:** Interrupting Bot 2
+   :::image type="content" source="../media/4-edit-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
 
-   - **Description:** Interrupting bot which checks the patient's temperature and breaks.
+   - **Name:** Enter **Interrupting Bot 2**.
+   - **Description:** Enter **An interrupting bot which checks the patient's temperature and breaks**.
+   - **Scenario ID:** Enter **temperature**.  
+   - **Returning Message:** Enter **Please start your process again**.  
+   - **Interrupting scenario:** Turn on this toggle.
+   - **Breaking scenario:** Turn on this toggle, because we need to see how the breaking scenario works.
 
-   - **Scenario ID:** temperature  
+1. Select **Update**.
 
-   - **Returning Message:** Please start your process again.  
+:::image type="content" source="../media/4-bot-designer.png" alt-text="Screenshot of the designer view of a bot that collects temperature information.":::
 
-   - **Interrupting Scenario:** Enabled
+## Create a model for the breaking scenario
 
-   - **Breaking Scenario:** Enabled
+Our bot will give messages about the temperature of the patient. We're using only prompt, yes/no, and statement blocks to build the bot.  
 
-1. Click on create.
+1. Configure the model with the following details:
 
-   :::image type="content" source="../media/4-bot-designer.png" alt-text="Temperature Collection Bot":::
+   :::image type="content" source="../media/4-model-details.png" alt-text="Screenshot that shows the regular expression configuration for the model.":::
 
-   We can create a simple bot, which gives out messages of the temperature of the patient. Here, we have used only prompt, yes/no and statement blocks to build this bot.  
+   - **Name:** Enter **temperature**.
+   - **Description:** Enter **temperature**.
+   - **Method:** Select **RegEx**.
+   - **Regular Expression:** Enter `/^(temperature)?(!)?\s*$/i`.
+   - **Intent mapping:** Enter **temperature**.
 
-   > [!Note]
-   > Make sure to enable the breaking scenario, as we need to see how it works.
+1. From the dropdown list, select **temperature**. Then select **Create**.
 
-1. The configuration for the Model of Intermediate Bot 2 is as follows:
+When we run the main bot, and the patient enters the word **temperature**, the flow breaks and Interrupting Bot 2 starts running.  
 
-   :::image type="content" source="../media/4-model-details.png" alt-text="Regular Expression Configuration":::
+:::image type="content" source="../media/4-flow-break.png" alt-text="Screenshot that shows the Web Chat preview of the temperature bot.":::
 
-   - **Name:** temperature
+:::image type="content" source="../media/4-flow-resume.png" alt-text="Screen shot that shows redirecting to the main bot.":::
 
-   - **Description:** temperature
-
-   - **Method:** RegEx
-
-   - **Regular Expression:** /^(temperature)?(!)?\s*$/i
-
-   - **Intent mapping:** temperature
-
-1. From the drop-down, choose temperature and click on Create.
-
-When we run the main bot, and the user enters the word "temperature", for checking his/her temperature, the flow breaks and Intermediate Bot 2 starts running, as shown in Fig 1.  
-
-:::image type="content" source="../media/4-flow-break.png" alt-text="Web chat preview of temperature bot":::
-
-:::image type="content" source="../media/4-flow-resume.png" alt-text="Redirecting to the main bot":::
-
-It simply displays XYZ temperature for a user and asks the user, if they want to check more vitals. Once the user chooses 'no', the bot ends the scenario and never returns to the main bot.
+The bot displays the temperature for the patient and asks if they want to check more vitals. When the patient chooses **no**, the bot ends the scenario and never returns to the main bot.

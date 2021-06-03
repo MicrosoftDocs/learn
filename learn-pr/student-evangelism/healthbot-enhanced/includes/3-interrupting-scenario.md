@@ -2,7 +2,7 @@ In general, an interruption is a disturbance in a process. Similarly, an interru
 
 Initially, the main scenario is where the bot runs. Due to a keyword that it encounters, the bot switches to the subscenario that's defined as a model. After the subscenario is complete, the bot then switches back to the main scenario with an interrupt message that's defined during the configuration.
 
-## Create a new scenario for an interrupting bot
+## Create a scenario for an interrupting bot
 
 1. Configure the scenario with the following details:
 
@@ -12,8 +12,8 @@ Initially, the main scenario is where the bot runs. Due to a keyword that it enc
    - **Description**: Enter a simple description of what the bot will do. We've used **Simple bot to collect the vitals from patient**.
    - **Scenario ID**: Enter a unique ID. We've used **vitals**.
    - **Returning Message**: Enter a message that appears while the bot is returning to the main flow. We've used **Let's continue from here**.
-   - **Interrupting Scenario**: Turn on this toggle.
-   - **Breaking Scenario**: Turn off this toggle, because we want this bot to return to the main flow.
+   - **Interrupting scenario**: Turn on this toggle.
+   - **Breaking scenario**: Turn off this toggle, because we want this bot to return to the main flow.
 
 1. Select **Create**.
 
@@ -23,7 +23,7 @@ We've now created a bot that collects basic information (name, age, height, weig
 
 Along with creating a new scenario for the bot, we need to create a new model.
 
-## Create a new model for the interrupting scenario
+## Create a model for the interrupting scenario
 
 1. On the menu bar, go to the **Language** tab. Then select **Models**.  
 1. On the **Language models** page, select **New**.
@@ -35,13 +35,9 @@ Along with creating a new scenario for the bot, we need to create a new model.
    :::image type="content" source="../media/3-model-details.png" alt-text="Screenshot that shows the selections for model configuration.":::
 
    - **Name**: Provide a name for the model. In this example, we've used **vitals**.
-
    - **Description**: Provide a suitable description. We've used **vitals collection**.
-
    - **Method**: Three methods are available. For this model, select **RegEx**.
-
-   - **Regular Expression**: Provide a suitable JavaScript expression. We've used "/^(vitals)?(!)?\s*$/i".
-
+   - **Regular Expression**: Provide a suitable JavaScript expression. We've used `/^(vitals)?(!)?\s*$/i`.
    - **Intent mapping**: This is a unique intent triggered when the utterance is matched with the provided RegEx pattern. We've mapped it as shown in the preceding screenshot.
 
 1. From the dropdown menu, select **vitals**.
