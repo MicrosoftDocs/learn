@@ -70,7 +70,7 @@ quiz:
           explanation: "Not correct. Attention works inside each sentence, and reflects relative importance between words."
         - content: "Attention is a network layer that uses attention matrix to see how much input states from each step affect the final result."
           isCorrect: true
-          explanation: "Correct. By looking at attention matrix we can visually estimate which words play more important role in different parts of the sentence."
+          explanation: "Correct. By looking at the attention matrix we can visually estimate which words play more important role in different parts of the sentence."
         - content: "Attention builds global correlation matrix between all words in vocabulary, showing their co-occurrence"
           isCorrect: false
           explanation: "This is not correct, attention computer relative importance of words inside each sentence."
