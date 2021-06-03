@@ -9,6 +9,7 @@ metadata:
   author: pplavetzki
   ms.author: paplavet
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

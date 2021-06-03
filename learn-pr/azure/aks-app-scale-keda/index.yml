@@ -7,7 +7,8 @@ metadata:
   ms.date: 4/5/2021
   author: pplavetzki
   ms.author: paplavet
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Scale container applications in Azure Kubernetes Services (AKS) using KEDA
 summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using event driven scaling using KEDA.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
@@ -24,7 +25,7 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Basic knowledge of Kubernetes and its concepts
   - Basic knowledge of AKS and its concepts
   - Basic knowledge of microservice concepts
-iconUrl: /learn/achievements/aks-app-scaling-keda.svg
+iconUrl: /learn/achievements/aks-app-scale-keda.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - beginner
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
