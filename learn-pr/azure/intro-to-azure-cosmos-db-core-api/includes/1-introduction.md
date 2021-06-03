@@ -22,7 +22,8 @@ Here, you'll see how Azure Cosmos DB and its SQL API can be used for this type o
 
 By the end of this module, you'll be able to:
 
-- Describe the Azure Cosmos DB SQL API
+- Evaluate whether Azure Cosmos CB SQL API is the right database for your application.
+- Describe how the features of the Azure Cosmos DB SQL API is appropriate for modern applications.
 
 ## Prerequisites
 
