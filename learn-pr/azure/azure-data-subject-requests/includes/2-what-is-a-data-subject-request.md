@@ -56,8 +56,8 @@ The following list defines some of the terms that are relevant to DSR:
 
 - **Controller.** This is a natural or legal person, public authority, agency, or other body. The controller, either alone or jointly, determines the purpose for, and means of, processing someone’s personal data. The controller, or the EU or member state, determines why and how such processing occurs. Additionally, the EU or member state law might provide specific criteria for its nomination.
 -	**Personal data and data subject.** Any information relating to an identified or identifiable natural person or data subject. An identifiable natural person is one who can be identified directly or indirectly by:
-  - An identifier such as a name, an identification number, location data, or an online identifier.
-  - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
+   - An identifier such as a name, an identification number, location data, or an online identifier.
+   - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
 - **Processor.** A natural or legal person, public authority, agency, or other body that processes personal data for the controller.
 - **Customer data.** All data, including text, sound, video, image files, or software that's provided by, or on behalf of, a customer through Microsoft online services. Customer data includes:
    - Identifiable end-user information. An example is usernames and contact information in Azure AD.
