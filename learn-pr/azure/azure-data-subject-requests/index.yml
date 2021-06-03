@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure-data-subject-requests
 metadata:
-  title: Manage Data Subject Requests 
-  description: Learners should know, understand, and be able to describe data subject requests. They also should know how to manage DSRs on various Microsoft services.
+  title: Responding to Data Subject Requests (DSRs)
+  description: Learners will know, understand, and be able to describe Data Subject Requests (DSRs). They will aslo know how to manage DSRs on Azure and Microsoft 365.
   ms.date: 11/13/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Data Subject Requests 
-summary: Learners should know, understand, and be able to describe data subject requests. They also should know how to manage DSRs on various Microsoft services.
+summary: Learners will know, understand, and be able to describe Data Subject Requests (DSRs). They will aslo know how to manage DSRs on Azure and Microsoft 365.
 abstract: |
   By the end of this module, you should know more about:
   - DSRs
