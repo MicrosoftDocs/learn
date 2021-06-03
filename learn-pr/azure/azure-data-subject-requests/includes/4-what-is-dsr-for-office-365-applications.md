@@ -53,6 +53,7 @@ The applications that support content search in Microsoft 365 and Office 365 are
 - Word
 
 > [!NOTES]
+> 
 > **Discovery of personal data** Microsoft estimates that more than 90 percent of an organization's data stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
 
 > Users authoring documents in these services usually store them on a SharePoint Online site, in their OneDrive for Business account, or in their Exchange Online mailbox. You can use the Content Search eDiscovery tool to find documents and mailbox items that might be relevant to the DSR you're investigating. The searches will also include the sites and mailboxes associated with Microsoft 365 Groups, Teams, and Education assignments. Limit the search. You can use compliance boundaries together with eDiscovery cases to limit the searchable content locations in an investigation. 
