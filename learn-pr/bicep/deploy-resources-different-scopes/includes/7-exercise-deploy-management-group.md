@@ -35,7 +35,7 @@ az account management-group create \
   --display-name "Secret R&D Projects"
 ```
 
-By default, the new management group is created as a direct child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `--parent-id` parameter, and specify the name of the management group to use as the parent.
+By default, the new management group is created as a direct child of the tenant root management group. If you need to place the management group in a specific place in your existing management group hierarchy, use the `--parent-id` parameter, and specify the name of the management group to use as the parent.
 
 ::: zone-end
 
@@ -49,7 +49,7 @@ New-AzManagementGroup `
   -DisplayName 'Secret R&D Projects'
 ```
 
-By default, the new management group is created as a child of the tenant root management group. If you need to place the management group into a specific place in your existing management group hierarchy, use the `-ParentId` parameter, and specify the name of the management group to use as the parent.
+By default, the new management group is created as a child of the tenant root management group. If you need to place the management group in a specific place in your existing management group hierarchy, use the `-ParentId` parameter, and specify the name of the management group to use as the parent.
 
 ::: zone-end
 
@@ -63,11 +63,11 @@ In a real deployment, you would [move the R&D team's subscriptions into the mana
 
 1. Save the empty file.
 
-1. Add the following content into the file.
+1. Add the following content to the file.
 
    :::code language="bicep" source="code/7-template.bicep" range="1" :::
 
-   Note that this line of code tells Bicep that your template will be deployed to a management group scope.
+   Note that this line of code tells Bicep that your template will be deployed at the management group scope.
 
 ## Add a policy definition
 
@@ -87,7 +87,7 @@ As you did earlier, create a policy definition in the Bicep file.
 
 You'll now apply the policy to the management group. This means that the policy will apply to all subscriptions that are children of this management group.
 
-To create a policy assignment, you need to refer to the policy definition. Azure Resource Manager doesn't currently have a way to obtain a full resource ID for resources that are deployed into management groups, so you'll need to construct a resource ID manually.
+To create a policy assignment, you need to refer to the policy definition. Azure Resource Manager doesn't currently have a way to obtain a full resource ID for resources that are deployed to management groups, so you'll need to construct a resource ID manually.
 
 1. At the top of the file, below the `targetScope` definition, add a blank line, and then add the following parameter:
 
