@@ -21,7 +21,7 @@ To turn on Auditing:
 
 1. Create an instance of your SQL database.
 
-1. For each DB instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQl database instance.
+1. For each DB instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
 
 1. Ensure that **Enable Azure SQL Auditing** is 'enabled*.
 
