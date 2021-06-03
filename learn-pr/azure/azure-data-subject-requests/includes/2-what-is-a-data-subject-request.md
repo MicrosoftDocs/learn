@@ -60,6 +60,6 @@ The following list defines some of the terms that are relevant to DSR:
   - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
 - **Processor.** A natural or legal person, public authority, agency, or other body that processes personal data for the controller.
 - **Customer data.** All data, including text, sound, video, image files, or software that's provided by, or on behalf of, a customer through Microsoft online services. Customer data includes:
-  - Identifiable end-user information. An example is usernames and contact information in Azure AD.
-  - Customer content that a customer uploads to, or creates in, specific services. Such services could include an Azure Storage account, an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
+   - Identifiable end-user information. An example is usernames and contact information in Azure AD.
+   - Customer content that a customer uploads to, or creates in, specific services. Such services could include an Azure Storage account, an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
 - **System-generated logs.** Microsoft and other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized  data, such as unique identifiers—typically system-generated numbers. These unique identifiers are used to deliver enterprise services to users. On their own, they can't be used to identify an individual person. However, system-generated logs might contain identifiable information about end users, such as a username.
