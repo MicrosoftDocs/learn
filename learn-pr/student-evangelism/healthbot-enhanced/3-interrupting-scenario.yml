@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.healthbot-enhanced.3-interrupting-scenario
-title: Interrupting Scenario
+title: Interrupting scenario
 metadata:
-  title: Interrupting Scenario
-  description: In this unit, you will learn how to build a bot using Interrupting Scenario.
+  title: Interrupting scenario
+  description: In this unit, you'll learn how to build a bot by using an interrupting scenario.
   author: shreyan1999
   ms.author: chnoring
   ms.date: 05/21/2021
