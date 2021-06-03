@@ -6,7 +6,7 @@ Scenarios defined as *interrupting* are allowed to interrupt other scenarios. If
 
 The response is *unexpected* if it doesn't comply with the data type for the current step in the scenario. For example, if a step is expecting a yes/no response and the user enters an unsuitable answer, the bot tries to identify an interrupting intention.
 
-Scenario steps that expect a text response behave differently. They always try to identify an interrupting intent. If the intent score is higher than a 50 percent likelihood, the interrupting scenario is triggered.
+Scenario steps that expect a text response behave differently. They always try to identify an interrupting intention. If the intent score is higher than a 50 percent likelihood, the interrupting scenario is triggered.
 
 System scenarios have modified behavior when they're interrupting. Typically, they're made shorter to minimize the extent of the interruption. For example, the help command doesn't show items that are not interrupting.
 

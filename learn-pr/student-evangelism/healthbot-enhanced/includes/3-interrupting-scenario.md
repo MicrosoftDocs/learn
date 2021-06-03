@@ -1,6 +1,6 @@
-In general, an interruption is a disturbance in a process. Similarly, an interrupting scenario causes a break in the flow of the scenario. It allows us to jump between two different scenarios. 
+In general, an interruption is a disturbance in a process. Similarly, an interrupting scenario causes a break in the flow of the scenario. It allows us to jump between two scenarios. 
 
-Initially, the main scenario is where the bot runs. Due to a keyword that it encounters, the bot switches to the subscenario that's defined as a model. After the subscenario is complete, the bot then switches back to the main scenario with an interrupt message that's defined during the configuration.
+Initially, the main scenario is where the bot runs. Due to a keyword that it encounters, the bot switches to the subscenario that's defined as a model. After the subscenario is complete, the bot switches back to the main scenario with an interrupt message that's defined during the configuration.
 
 ## Create a scenario for an interrupting bot
 
@@ -38,7 +38,7 @@ Along with creating a new scenario for the bot, we need to create a new model.
    - **Description**: Provide a suitable description. We've used **vitals collection**.
    - **Method**: Three methods are available. For this model, select **RegEx**.
    - **Regular Expression**: Provide a suitable JavaScript expression. We've used `/^(vitals)?(!)?\s*$/i`.
-   - **Intent mapping**: This is a unique intent triggered when the utterance is matched with the provided RegEx pattern. We've mapped it as shown in the preceding screenshot.
+   - **Intent mapping**: This is a unique intention that's triggered when the utterance is matched with the provided RegEx pattern. We've mapped it as shown in the preceding screenshot.
 
 1. From the dropdown menu, select **vitals**.
 
@@ -58,6 +58,6 @@ While the main bot is running, this scenario is triggered when the patient enter
 
 :::image type="content" source="../media/3-vitals-trigger.png" alt-text="Screenshot of Web Chat, with the main scenario getting interrupted with the vitals keyword.":::
 
-:::image type="content" source="../media/3-resume-topic.png" alt-text="Screenshot of the interrupting scenario returning to the parent scenario.":::
-
 After the patient gives all the information that bot asks for, Intermediate Bot 1 returns to the basic bot to continue with the appointment process, with a returning message.
+
+:::image type="content" source="../media/3-resume-topic.png" alt-text="Screenshot of the interrupting scenario returning to the parent scenario.":::

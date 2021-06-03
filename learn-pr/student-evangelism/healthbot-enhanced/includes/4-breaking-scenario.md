@@ -8,7 +8,7 @@ To create this bot, we'll build a breaking scenario and then create a model.
 
    :::image type="content" source="../media/4-edit-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
 
-   - **Name:** Enter **Interrupting Bot 2**.
+   - **Name:** Enter **Intermediate Bot 2**.
    - **Description:** Enter **An interrupting bot which checks the patient's temperature and breaks**.
    - **Scenario ID:** Enter **temperature**.  
    - **Returning Message:** Enter **Please start your process again**.  
@@ -16,6 +16,8 @@ To create this bot, we'll build a breaking scenario and then create a model.
    - **Breaking scenario:** Turn on this toggle, because we need to see how the breaking scenario works.
 
 1. Select **Update**.
+
+We've now created a bot that collects temperature information.
 
 :::image type="content" source="../media/4-bot-designer.png" alt-text="Screenshot of the designer view of a bot that collects temperature information.":::
 
@@ -35,10 +37,10 @@ Our bot will give messages about the temperature of the patient. We're using onl
 
 1. From the dropdown list, select **temperature**. Then select **Create**.
 
-When we run the main bot, and the patient enters the word **temperature**, the flow breaks and Interrupting Bot 2 starts running.  
+When we run the main bot, and the patient enters the word **temperature**, the flow breaks and Intermediate Bot 2 starts running.  
 
 :::image type="content" source="../media/4-flow-break.png" alt-text="Screenshot that shows the Web Chat preview of the temperature bot.":::
 
-:::image type="content" source="../media/4-flow-resume.png" alt-text="Screen shot that shows redirecting to the main bot.":::
+The bot displays the temperature for the patient and asks if they want to check more vitals. When the patient chooses **No**, the bot ends the scenario and never returns to the main bot.
 
-The bot displays the temperature for the patient and asks if they want to check more vitals. When the patient chooses **no**, the bot ends the scenario and never returns to the main bot.
+:::image type="content" source="../media/4-flow-resume.png" alt-text="Screen shot that shows redirecting to the main bot.":::
