@@ -39,7 +39,7 @@ To reconcile pretax costs on your invoice, use the CSV file for usage details. I
     :::image type="content" source="../media/03-invoices.png" alt-text="Example that shows invoices in the Azure portal." lightbox="../media/03-invoices.png" :::
 1. Download the following files as required: 
     - PDF copy of the invoice.
-    - Pretax Azure usage details download that gives you details of the usage that contributed to the invoice. For more information about usage terms, see [Data fields](//azure/cost-management-billing/costs/get-started-partners#data-fields).
+    - Pretax Azure usage details download that gives you details of the usage that contributed to the invoice. For more information about usage terms, see [Data fields](/azure/cost-management-billing/costs/get-started-partners#data-fields).
     - Azure price sheet that provides the Azure pricing for the services on the invoice.
     - Azure price sheet for all services.  
     :::image type="content" source="../media/03-invoice-download.png" alt-text="Example that shows an invoice in the Azure portal available for download." lightbox="../media/03-invoice-download.png" :::

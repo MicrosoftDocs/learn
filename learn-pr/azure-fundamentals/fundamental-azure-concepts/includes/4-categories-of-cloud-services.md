@@ -50,7 +50,7 @@ If you've been around cloud computing for a while, you've probably seen the *Paa
 
 The following illustration demonstrates the services that might run in each of the cloud service models.
 
-:::image type="content" source="../media/iaas-paas-saas-575a09e9.png" alt-text="Diagram of services separated by cloud service models.":::
+[![Diagram of services separated by cloud service models.](../media/iaas-paas-saas-575a09e9.png)](../media/iaas-paas-saas-575a09e9.png#lightbox)
 
 
 Let's compare the three models in more detail in the following sections.

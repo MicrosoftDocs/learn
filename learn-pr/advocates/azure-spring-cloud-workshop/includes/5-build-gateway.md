@@ -29,10 +29,10 @@ spring.cloud.gateway.discovery.locator.enabled=true
 
 ## Create the application on Azure Spring Cloud
 
-As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--is-public true` flag so it is exposed publicly.
+As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--assign-endpoint` flag so it is exposed publicly.
 
 ```bash
-az spring-cloud app create -n todo-gateway --is-public true
+az spring-cloud app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --assign-endpoint
 ```
 
 ## Deploy the application
@@ -42,7 +42,7 @@ You can now build your "todo-gateway" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-gateway
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy -n todo-gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
