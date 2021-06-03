@@ -8,7 +8,7 @@ To begin using Azure Cosmos DB, you will need to create various resources in Azu
 
 ### Accounts
 
-**Accounts** are the fundamental units of distribution and high availability. At the account level, you can configure the region for your data in Azure Cosmos DB SQL API. Accounts also contain the globally unique DNS name used for API requests. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
+**Accounts** are the fundamental units of distribution and high availability. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB SQL API. Accounts also contain the globally unique DNS name used for API requests. You can also set the default consistency level for requests at the account. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
 
 ## Databases
 

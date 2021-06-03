@@ -74,11 +74,11 @@ Architectural diagram for a retail workload that includes:
 1. A growing number of users ordering products
 1. A collection of compute resources handling requests from the storefront instances
 1. Azure Cosmos DB storing purchase data
-1. Azure Databricks processing that data for storage elsewhere
+1. Azure Synapse Link to connect to Azure Synapse Analytics for deeper analytics
 1. Azure Functions, triggered off of change feed, processing data events
-1. Azure Notification Hub, triggered by Azure Functions, that notifies the user of new events
+1. Azure Logic Apps, triggered by Azure Functions, that performs business operations such as notifying the user of new events
 1. A mobile device to receive notifications
 
 :::image-end:::
 
-This example is similar to the example from the introduction of this module. To build on the first example, your team has decided to introduce Azure Cosmos DB SQL API as the database of choice. Now, your team can use Azure Databricks to prepare and aggregate data for deeper analysis in analytical engines. Your team can also use services such as Azure Functions to react to data events with Azure Cosmos DB, and then send notifications to mobile devices using Azure Notification Hubs.
+This example is similar to the example from the introduction of this module. To build on the first example, your team has decided to introduce Azure Cosmos DB SQL API as the database of choice. Now, your team can use Azure Synapse Link to prepare and aggregate data for deeper analysis using Azure Synapse Analytics. Your team can also use services such as Azure Functions to react to data events with Azure Cosmos DB, and then trigger an Azure Logic Apps workflow that will send notifications to mobile devices.

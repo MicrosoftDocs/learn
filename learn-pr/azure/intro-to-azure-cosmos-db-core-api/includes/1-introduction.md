@@ -2,7 +2,7 @@ Today's apps deliver innovation in all facets of life. For a business to remain 
 
 Modern apps thrive on real-time data from different sources and shaped in different forms. apps' usefulness is often in their ability to move and use data.
 
-Developers require flexibility in their platforms so they can be responsive to business changes. Developers also require their entire application ecosystem to flexibly handle changes in the the velocity, volume, or shape of their data. This flexibility enables developers to develop new features more rapidly than they ever have before.
+Developers require flexibility in their platforms so they can be responsive to business changes. Developers also require their entire application ecosystem to flexibly handle changes in the velocity, volume, or shape of their data. This flexibility enables developers to develop new features more rapidly than they ever have before.
 
 ## Scenario
 

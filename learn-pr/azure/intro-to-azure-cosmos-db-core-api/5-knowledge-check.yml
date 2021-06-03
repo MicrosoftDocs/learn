@@ -28,15 +28,6 @@ quiz:
       - content: Cassandra API
         isCorrect: false
   - content: |
-      When a physical partition contains too much data, what step must take place to continue adding data?
-    choices:
-      - content: |
-          An administrator is required to use the Azure portal and create new physical partitions
-        isCorrect: false
-      - content: |
-          Azure Cosmos DB will automatically split physical partitions and distribute data
-        isCorrect: true
-  - content: |
       Which property is required to be configured when creating a new Azure Cosmos DB SQL API container?
     choices:
       - content: Partition key path
@@ -48,9 +39,9 @@ quiz:
       - content: Indexing policy
         isCorrect: false
   - content: |
-      Your team has an existing Azure Cosmos DB account, database, and container. 
-      A new team member would like to use a different DNS name to reference and query a new set of data that will be uploaded to Azure Cosmos DB SQL API. 
-      Which resource should that member of the team create?
+      Your team has an existing Azure Cosmos DB account, database, and container.
+      A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and consistency.
+      Which new resource should that member of the team create?
     choices:
       - content: Item
         isCorrect: false
