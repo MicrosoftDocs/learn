@@ -1,4 +1,4 @@
-At some point, many Microsoft enterprise customers will most likely need to respond to DSRs under GDPR, CCPA, or both. Sometimes cloud-based services such as Azure will host multiple tenants. When the data subject's personal information is in a cloud-based multi-tenancy, it’s helpful to understand the scope of or boundaries to a DSR response. Having a multi-tenancy response process in place will help create a timely response to a DSR.
+Cloud-based services such as Azure often host multiple tenants. If a data subject's personal information is in a cloud-based multi-tenancy, it’s helpful to understand the scope or boundaries of a DSR response. Having a multi-tenancy response process in place helps create a timely response to a DSR.
 
 ## Scope of DSR for Azure AD and Microsoft service accounts
 
