@@ -14,7 +14,7 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
-iconUrl: /learn/achievements/pytorch-advanced.svg
+iconUrl: /learn/achievements/pytorch-intro-trophy.svg
 video:
   title: PyTorch Fundamentals
   url: https://www.microsoft.com/videoplayer/embed/RE4Nci7
