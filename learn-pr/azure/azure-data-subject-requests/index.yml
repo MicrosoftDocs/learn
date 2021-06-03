@@ -13,10 +13,10 @@ summary: Learners will know, understand, and be able to describe Data Subject Re
 abstract: |
   By the end of this module, you should know more about:
   - DSRs
-  - How to use a DSR in Azure AD
-  - How to use a DSR for Microsoft accounts
-  - How to use a DSR for Office 365 apps
-  - How to use a DSR for consumer data and logs
+  - How to use a DSR in Azure Active Directory (Azure AD).
+  - How to use a DSR for Microsoft accounts.
+  - How to use a DSR for Office 365 apps.
+  - How to use a DSR for consumer data and logs.
 prerequisites: |
   - Basic experience with Azure services
 iconUrl: /learn/achievements/generic-badge.svg
