@@ -1,8 +1,8 @@
-Your R&D team asked you for a dedicated Azure subscription for their secret project. The subscription needed to have some Azure Policy resources, as well as a virtual network. You decided to create a reusable Bicep template so that you can quickly provision more subscriptions for the R&D team in the future.
+Your R&D team asked you for a dedicated Azure subscription for their secret project. The subscription needed to have some Azure Policy resources and a virtual network. You decided to create a reusable Bicep template so that you can quickly set up more subscriptions for the R&D team in the future.
 
-In this module you learned about how you can provision resources at different scopes: tenant, management group, subscription, and resource group. While most Azure resources must be deployed into a resource group, there are some important situations where you need to use higher-level scopes. These include working with Azure IAM role definitions and assignments, deploying Azure Policy definitions and assignments, and creating resource groups.
+In this module, you learned how to provision resources at various scopes: tenant, management group, subscription, and resource group. Although most Azure resources must be deployed to a resource group, some important situations require that you use higher-level scopes. These situations include working with Azure identity and access management (IAM) role definitions and assignments, deploying Azure Policy definitions and assignments, and creating resource groups.
 
-By using the `targetScope` keyword and `scope` property on modules, you can easily create reusable Bicep templates that deploy resources throughout your Azure environment. This means you can apply all of the benefits of infrastructure as code to every part of your cloud deployment process.
+By using the `targetScope` keyword and `scope` property on modules, you can easily create reusable Bicep templates that deploy resources throughout your Azure environment. This means that you can apply all of the benefits of infrastructure as code to every part of your cloud deployment process.
 
 ## Learn more
 

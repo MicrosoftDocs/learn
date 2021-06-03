@@ -29,18 +29,18 @@ quiz:
       explanation: The policy definition is defined in a module with its `targetScope` set to `subscription`, so the policy definition will be deployed to the subscription.
   - content: |
       You need to create a role definition that will work throughout your whole organization.
-      You decide to deploy it using a Bicep template.
+      You decide to deploy it by using a Bicep template.
       Which `targetScope` value should you use for the file?
     choices:
     - content: "`targetScope = 'tenant'`"
       isCorrect: false
       explanation: |
         Role definitions can't be created at the tenant scope.
-        Since you want to use the role definition throughout your whole organization, you could consider deploying it to the root management group instead.
+        Because you want to use the role definition throughout your whole organization, you could consider deploying it to the root management group instead.
     - content: "`targetScope = 'managementGroup'`"
       isCorrect: true
       explanation: |
-        You should deploy the role definition to the root management group, so that it is inherited by all of your Azure resources throughout your organization.
+        You should deploy the role definition to the root management group, so that it is inherited by all your Azure resources throughout your organization.
         Role definitions can't be created at the tenant scope.
     - content: "`targetScope = 'subscription'`"
       isCorrect: false

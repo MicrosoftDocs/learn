@@ -1,4 +1,4 @@
-You now understand the different scopes that resources can be deployed to. In this unit, you learn how to start writing Bicep files that deploy to these scopes.
+You now understand the various scopes that resources can be deployed to. In this unit, you learn how to start writing Bicep files to deploy to these scopes.
 
 ## Specify the target scope for a Bicep file
 
@@ -8,18 +8,18 @@ Use the `targetScope` keyword to tell Bicep that the resources in the file are f
 
 :::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
-Notice that you're just telling Bicep that this will be deployed into the scope of a management group - you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources into. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
+Notice that you're telling Bicep that the resources will be deployed into the scope of a management group, but you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources to. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
-You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes the file will be deployed to a resource group.
+You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes that the file will be deployed to a resource group.
 
 ## Create management groups and resource groups
 
-Now that you understand how to create deployments at different scopes, let's see how we can use this to create a management group, which is a tenant-scope resource:
+Now that you understand how to create deployments at various scopes, let's apply this understanding to creating a management group, which is a tenant-scope resource:
 
 :::code language="plaintext" source="code/3-create-mg.bicep" highlight="1" :::
 
 > [!NOTE]
-> The example above illustrates how you can create a management group hierarchy by using Bicep. The *NonProduction* management group will be a child of the root management group, and the *SecretRND* management group will be a child of the *NonProduction* management group.
+> The preceding example illustrates how to create a management group hierarchy by using Bicep. The *NonProduction* management group will be a child of the root management group, and the *SecretRND* management group will be a child of the *NonProduction* management group.
 
 You can also create resource groups by using Bicep. A resource group is a subscription-scope resource:
 
@@ -32,19 +32,20 @@ You can also create resource groups by using Bicep. A resource group is a subscr
 
 ::: zone pivot="cli"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different commands for each deployment scope. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg create` command. For tenant deployments, use `az deployment tenant create`.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that each deployment scope has a different command. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg create` command. For tenant deployments, use `az deployment tenant create`.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means there are different cmdlets for each deployment scope. To deploy to a subscription, you must use the `New-AzSubscriptionDeployment` cmdlet. For management group deployments, use the `New-AzManagementGroupDeployment` cmdlet. For tenant deployments, use `New-AzTenantDeployment` cmdlet.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that each deployment scope has a different cmdlet. To deploy to a subscription, you must use the `New-AzSubscriptionDeployment` cmdlet. For management group deployments, use the `New-AzManagementGroupDeployment` cmdlet. For tenant deployments, use `New-AzTenantDeployment` cmdlet.
 
 ::: zone-end
 
 Azure stores metadata about each deployment. Unlike deployments to resource groups, there is some information you need to provide when you deploy to other scopes so that Azure can store the metadata correctly:
 
-- **Location:** The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments because resource groups are created in a location already, and that location is used for deployment metadata too. But when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location though.
-- **Name:** All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name - but if you don't, the filename of the template file will be used as the deployment name.
+- **Location**: The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments, because resource groups are created in a location already and that location is used for its deployment metadata. But when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location though.
+
+- **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name, but if you don't, the file name of the template file will be used as the deployment name.
 
 The combination of the scope, location, and name must be unique. For example, if you create a subscription deployment named `my-deployment` and use the East US location to store its metadata, you can't then create another deployment to the same subscription also named `my-deployment`, but in West Europe.
