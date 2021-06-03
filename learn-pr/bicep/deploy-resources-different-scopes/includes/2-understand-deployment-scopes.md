@@ -23,7 +23,7 @@ The previously illustrated example is a fairly basic scenario that shows how you
 Whichever model you follow, by understanding the various levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. By using Bicep, you can manage these controls with all the benefits of infrastructure as code.
 
 > [!NOTE]
-> There are also some other resources that are deployed to specific scopes. *Extension resources* are deployed to the scope of another Azure resource. For example, a resource lock is an extension resource, which is deployed onto a resource like a storage account.
+> There are also some other resources that are deployed to specific scopes. *Extension resources* are deployed to the scope of another Azure resource. For example, a resource lock is an extension resource, which is deployed to a resource such as a storage account.
 
 You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
 
@@ -60,7 +60,7 @@ You might deploy resources to your tenant when:
 
 - You're creating or configuring management groups. A single root management group is created by Azure when you enable management groups for your tenant, and you can create multiple levels of management groups under it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
-Bicep enables you to submit deployments to the tenant scope. [Tenant-scoped deployments require special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access). However, in practice, you don't need to submit tenant-scoped deployments - it's simpler to instead deploy tenant-scoped resources by using a template at a different scope. You'll see how to do that later in this module.
+With Bicep, you can submit deployments to the tenant scope. [Tenant-scoped deployments require special permission](/azure/azure-resource-manager/templates/deploy-to-tenant#required-access). However, in practice, you don't need to submit tenant-scoped deployments. It's simpler to instead deploy tenant-scoped resources by using a template at a different scope. You'll see how to do that later in this module.
 
 > [!TIP]
 > You can't create policies or role assignments at the tenant scope. However, if you need to grant access or apply policies across your whole organization, you can deploy these resources to the root management group.
@@ -124,4 +124,4 @@ Here's a visual representation of the same ID:
 
 :::image type="content" source="../media/2-role-subscription-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a subscription scope." border="false":::
 
-Now that you understand the Azure resource hierarchy, and the types of resources that you can deploy at each scope, you can make decisions about the scopes at which to deploy your resources. For example, you can make an informed choice about whether you should create a policy defintiion at the scope of a resource group, subscription, or management group. In the next unit, you'll learn how to create Bicep files that target each of these scopes.
+Now that you understand the Azure resource hierarchy, and the types of resources that you can deploy at each scope, you can make decisions about the scopes at which to deploy your resources. For example, you can make an informed choice about whether you should create a policy definition at the scope of a resource group, subscription, or management group. In the next unit, you'll learn how to create Bicep files that target each of these scopes.
