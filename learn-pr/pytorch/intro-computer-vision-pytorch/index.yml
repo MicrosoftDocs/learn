@@ -15,7 +15,7 @@ abstract: |
   - Learn how to build computer vision machine learning models
   - Learn how to represent images as tensors
   - Learn how to build Dense Neural Networks and Convolutional Neural Networks
-iconUrl: /learn/achievements/pytorch-computer-vision-social.svg
+iconUrl: /learn/achievements/pytorch-computer-vision.svg
 levels:
 - beginner
 roles:
