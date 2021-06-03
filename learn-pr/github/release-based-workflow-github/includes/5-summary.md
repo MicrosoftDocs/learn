@@ -8,7 +8,7 @@ You learned about:
 - Resolving bugs after a release
 - Automating and better documenting your release changes
 
-Now that you have learned about release based workflows, learn to [Manage repository changes by using pull requests on GitHub](/learn/modules/manage-changes-pull-requests-github/).
+Now that you have learned about release based workflows, learn to [Manage repository changes by using pull requests on GitHub](/learn/modules/manage-changes-pull-requests-github?azure-portal=true).
 
 ## Learn more
 

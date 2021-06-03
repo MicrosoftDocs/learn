@@ -19,8 +19,8 @@ In this module, you used the `DotNetCoreCLI@2` task to run unit tests through th
 If you're interested in unit testing .NET Core applications, here are some additional resources:
 
 * [Unit test your code](/visualstudio/test/unit-test-your-code?azure-portal=true)
-* [Unit testing C# with NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit)
-* [Build, test, and deploy .NET Core apps in Azure Pipelines](/azure/devops/pipelines/ecosystems/dotnet-core)
+* [Unit testing C# with NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit?azure-portal=true)
+* [Build, test, and deploy .NET Core apps in Azure Pipelines](/azure/devops/pipelines/ecosystems/dotnet-core?azure-portal=true)
 
 Here's more information about how to analyze your test results:
 

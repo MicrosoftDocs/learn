@@ -11,18 +11,17 @@ You learned about:
 - Measuring the success of InnerSource within your organization
 - Distributing your InnerSource toolkit
 
-Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/learn/modules/create-open-source-program-github/).
+Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/learn/modules/create-open-source-program-github/?azure-portal=true).
 
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true)
+- [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource?azure-portal=true)
 - [Types of GitHub accounts](https://help.github.com/github/getting-started-with-github/types-of-github-accounts?azure-portal=true)
 - [Repository permission levels for an organization](https://help.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization?azure-portal=true)
 - [Managing access to your organization's repositories](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-repositories?azure-portal=true)
 - [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true)
-- [How We Use Git at Microsoft](/azure/devops/user-guide/code-with-git)
 - [Best practices for protected branches](https://github.community/t/best-practices-for-protected-branches/10204?azure-portal=true)
 - [GitHub Collaboration Best Practices](https://github.com/ideaconsult/etc/wiki/GitHub-Collaboration-Best-Practices?azure-portal=true)
 - [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true)
