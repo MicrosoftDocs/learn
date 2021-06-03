@@ -29,7 +29,7 @@ Your command-line tool options differ depending on the operating system you use.
 ### Linux
 
 - [Bash](https://www.gnu.org/software/bash/manual/html_node/index.html?azure-portal=true) 💻
-- [KDE Console](https://docs.kde.org/trunk5/en/applications/konsole/index.html?azure-portal=true)
+- [KDE Console](https://docs.kde.org/trunk5/en/konsole/konsole/index.html?azure-portal=true)
 - [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true)
 
 ### Popular command-line tools
