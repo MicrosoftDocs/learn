@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-cosmos-db-core-api.5-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Check your knowledge
+  description: >
+    Review what you've learned.
+  ms.date: 05/01/2021
+  author: GaryHopeMS
+  ms.author: garyhope
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: |
+      Which API is considered the "native API" for Azure Cosmos DB?
+    choices:
+      - content: Table API
+        isCorrect: false
+      - content: MongoDB API
+        isCorrect: false
+      - content: SQL API
+        isCorrect: true
+      - content: Gremlin API
+        isCorrect: false
+      - content: Cassandra API
+        isCorrect: false
+  - content: |
+      Which property is required to be configured when creating a new Azure Cosmos DB SQL API container?
+    choices:
+      - content: Partition key path
+        isCorrect: true
+      - content: Partition key value
+        isCorrect: false
+      - content: Time-to-live
+        isCorrect: false
+      - content: Indexing policy
+        isCorrect: false
+  - content: |
+      Your team has an existing Azure Cosmos DB account, database, and container.
+      A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and consistency.
+      Which new resource should that member of the team create?
+    choices:
+      - content: Item
+        isCorrect: false
+      - content: Container
+        isCorrect: false
+      - content: Database
+        isCorrect: false
+      - content: Account
+        isCorrect: true

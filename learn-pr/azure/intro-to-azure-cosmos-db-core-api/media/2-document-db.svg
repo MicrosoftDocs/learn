@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 962 300" width="400">
+  <defs/>
+  <defs>
+    <clipPath id="a">
+      <path d="M159 71h962v578H159z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-159 -71)">
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M529.5 242.5h63.565"/>
+    <path fill="#8497B0" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M592.5 218.5h48v48h-48zM666.5 183.5h48v48h-48zM740.5 183.5h48v48h-48zM666.5 253.5h48v48h-48zM740.5 253.5h48v48h-48zM740.5 322.5h48v48h-48z"/>
+    <path fill="none" stroke="#44546A" stroke-miterlimit="8" stroke-width="4" d="M640 241.8h12.8V207h12.8M640 242h12.8v34.8h12.8M714 207h25.6M714 277h25.6M714 277h12.8v69.6h12.8"/>
+    <path fill="#44546A" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="1.333" d="M500.5 242c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5z"/>
+
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M551.5 110.5h185v49h-185z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(580.748 143)">
+      Documents
+    </text>
+  </g>
+</svg>
