@@ -1,18 +1,18 @@
-When a data controller receives a DSR, they typically need to provide a response as soon as possible. The GDPR requires responses within one calendar month. CCPA requires a response no later than 45 days. Companies who don't comply with this could incur monetary penalties.
+When a data controller receives a DSR, they typically must respond within a specific time period. The GDPR requires a response within one calendar month. The CCPA requires a response within 45 days. Companies who don't comply with this might incur monetary penalties.
 
-To respond efficiently to a DSR for customer data, organizations can use the tools and in-app features available in both Microsoft 36 and Office 365.
+To respond efficiently to a DSR for customer data, organizations can use Azure and Office 365 tools and in-app features.
 
-## Scenarios for DSR in Azure and Office 365 for customer data
+## Response scenarios for a customer-data DSR in Azure and Office 365
 
-DSR request scenarios usually start with performing discovery and locating the requested personal information. The DSR requested action will determine the second step. The following table breaks out the technical process and tools you can use for the DSR based on the personal information's location and the data type.
+DSR scenarios usually include two broad tasks. The first is to discover and locate the requested personal information. The action that the data subject asks for will determine the second task. The following table illustrates these two steps:
 
-|Request type|Step 1|Step 2|
+|Request right|Task 1|Task 2|
 |------|------|------|
-|Right to access data|Discover|Access|
-|Right to rectify data|Discover|Rectify|
-|Right to restrict data|Discover|Restrict|
-|Right to be forgotten|Discover|Delete|
-|Right of portability|Discover|Export/Receive|
+|To access data|Discover|Access|
+|To rectify data (for the GDPR only)|Discover|Rectify|
+|To restrict data|Discover|Restrict|
+|To delet or to be forgotten|Discover|Delete|
+|Of portability|Discover|Export/Receive|
 
 Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the data subject's identity before fulfilling their DSR. However, the data subject doesn't have to specify the reason for the DSR.
 
