@@ -11,7 +11,7 @@ In this exercise, you will step through implementing Azure CycleCloud. The exerc
 > [!NOTE]
 > To perform this exercise you will require access to an Azure Subscription. Deploying the resources referenced in this exercise will result in some costs being incurred by that subscription.
 
-## Deploy an Azure CycleCloud Azure VM
+## Task 1: Deploy an Azure CycleCloud Azure VM
 
 You'll start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image.
 
@@ -93,7 +93,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
 
 1. On the deployment blade, select **Go to resource** to navigate to the **cyclecloud-vm** blade.
 
-## Connect to the Azure CycleCloud Azure VM
+## Task 2: Connect to the Azure CycleCloud Azure VM
 
 After you deploy the Azure CycleCloud web application to an Azure VM, you can connect to it with the public IP address assigned to the network interface of that VM. After you're connected, you'll be prompted to complete an initial setup of the web application. During that initial setup, you'll define the application authentication settings. We recommend that you use the same username and SSH key pair that you chose when deploying the underlying Azure VM. Note that the SSH key pair you define here provides authentication to cluster nodes.
 
@@ -127,7 +127,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     > [!NOTE]
     > The Add Subscription pop-up window might appear at this point. If so, do not close this window or configure its settings at this stage. You will configure these settings in the next exercise.
 
-## Add an Azure subscription to Azure CycleCloud
+## Tsk 3: Add an Azure subscription to Azure CycleCloud
 
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor Role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you've enabled the system assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you'll take.
 
