@@ -33,9 +33,9 @@ The SQL API for Azure Cosmos DB stores individual documents in JSON format as *i
 
 Every Azure Cosmos DB SQL API container is required to specify a **partition key path**. Behind the scenes, Azure Cosmos DB SQL API uses this path to logically partition data using **partition key values**. For example, consider the following JSON document:
 
-:::code language="json" source="../samples/3-document.json" range="1-6" highlight="5":::
+:::code language="json" source="../samples/3-document.json" range="1-25" highlight="5-6,10":::
 
-If your container specifies a partition key **path** of ``/department``, then the partition key **value** of this document would be ``information-technology``. Behind the scenes, Azure Cosmos DB SQL API automatically manages the physical resources necessary to support your data workload.
+If your container specifies a partition key **path** of ``/department/name``, then the partition key **value** of this document would be ``information-technology``. Behind the scenes, Azure Cosmos DB SQL API automatically manages the physical resources necessary to support your data workload.
 
 > [!IMPORTANT]
 > Selecting a partition key path for a container can be one of the most important design decisions for a new workload. Review the [choosing a partition key](/azure/cosmos-db/partitioning-overview#choose-partitionkey) documentation for a deeper technical explanation and best practices.
