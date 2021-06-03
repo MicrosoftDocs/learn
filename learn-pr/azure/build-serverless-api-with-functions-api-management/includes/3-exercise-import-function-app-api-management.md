@@ -35,13 +35,13 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears for this product function.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for yoru Function App.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
 1. From the list, select **ProductDetails**. The **Function** pane appears.
 
     ![Screenshot of selecting the ProductDetails function.](../media/3-select-function.png)
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for yoru function.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
 1. From the top menu bar, select **Test/Run**, as highlighted in the following screenshot.
 
@@ -72,7 +72,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
 1. On the Azure portal menu, or from the **Home** page, select **All resources**, and select the Function App whose name begins with **ProductFunction**.
 
-1. In the middle menu pane, under **API**, select **API Management**. The **API Management** pane appears for yoru Function App.
+1. In the middle menu pane, under **API**, select **API Management**. The **API Management** pane appears for your Function App.
 
 1. Under the **API Management** field, select the **Create new** link.
 
