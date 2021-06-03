@@ -18,7 +18,7 @@ Under the GDPR and the CCPA, a person can ask to:
 - Obtain copies of their personal data.
 - Restrict processing of data.
 - Delete data.
-- 
+
 Under the GDPR, a person can also ask to:
 - Correct their data (GDPR only).
 
