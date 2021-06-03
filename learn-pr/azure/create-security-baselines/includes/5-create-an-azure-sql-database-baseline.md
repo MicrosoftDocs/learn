@@ -99,7 +99,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. Select you Audit log destination, and then select **Configure**.
 
-    ![Screenshot the SQL Server auditing setting pane](../media/5-auditing2.png)
+    ![Screenshot the SQL Server Auditing pane.](../media/5-auditing2.png)
 
     The **Storage settings** pane appears.
 
@@ -107,7 +107,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. Select **OK**.
 
-    ![Screenshot the SQL Server auditing setting pane](../media/5-90days.png)
+    ![Screenshot the SQL Server Auditing pane again.](../media/5-90days.png)
 
 ### Configure threat detection retention for more than 90 days - Level 1
 
@@ -133,7 +133,7 @@ A retention of zero days means logs are kept forever. Otherwise, the value can b
 
 1. Select **Save**.
 
-    ![Screenshot the SQL Server auditing setting pane](../media/5-90days2.png)
+    ![Screenshot the SQL Server Auditing pane once more.](../media/5-90days2.png)
 
     > [!TIP]
     > Remember to select **Save** if you make changes to any of the settings.
