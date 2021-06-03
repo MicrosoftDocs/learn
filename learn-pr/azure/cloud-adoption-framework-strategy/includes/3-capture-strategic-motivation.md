@@ -1,46 +1,50 @@
- This article discusses a few motivations behind cloud migration that can help produce more successful business outcomes. These options help facilitate a conversation about motivations and, ultimately, business outcomes.
+This unit discusses some of the motivations for cloud migration that can lead to more successful business outcomes. Considering common motivations can  help facilitate a conversation about business drivers and, ultimately, business outcomes.
 
-## Tailwind Traders executive challenge
+## Tailwind Traders' executive challenge
 
-A review of the customer narrative would suggest both innovation and migration motivations at play within Tailwind Traders. The majority of the review for the company is coming from innovative technology investments. But the majority of the technology costs are dedicated to central IT operations.
+A review of the customer narrative would suggest that both innovation and migration  are motivations for Tailwind Traders. Much of the company's focus is on innovative technology investments, but most the technology costs are on central IT operations.
 
-Tailwind is exhibiting a number of common business values and expected benefits including: innovation and growth, improvements to operations and security, and technical capabilities and agility. Use this module to understand how they balanced those expectations.
+Tailwind exhibits many common business values and expected benefits, including innovation and growth, improvements to operations and security, and technical capabilities and agility. Use this unit to understand how the company balances those expectations.
 
 ## Guiding the conversation
 
-Digital transformation is a large bet for many organizations and the technology teams leading the effort. Success will produce returns for all involved. Succeed or fail, digital transformation programs can define careers and the future of the business. Strategic clarity and executive buy-in are imperative to the success of digital transformation. Clear commitments to strategic motivations will drive investment allocations and aid in making difficult technical decisions.
+Digital transformation is a substantial bet for many organizations and the technology teams that lead the efforts. A successful digital transformation produces returns for all who are involved. 
 
-Prioritizing motivations is the first step toward creating clarity on corporate strategy. This step will help to ensure all team members are working toward common goals and secure executive sponsorship to secure budget, modify operations, and review results
+Whether they succeed or fail, digital transformation programs can define careers and the future of a business. Strategic clarity and executive buy-in are imperative for success. A clear commitment to strategic motivations drives investment allocation and helps leaders make difficult technical decisions.
 
-The majority of digital transformation "failures" end in technological success, but don't deliver on the initial strategic change required to positively impact the business. Ensure that technical success equates to business success by defining clear motivations and expectations with executive level leaders, as early as possible.
+Prioritizing motivations is the first step toward creating clarity in corporate strategy. This step helps ensure that all team members are working toward common goals, and it secures executive sponsorship to set budget, modify operations, and review results.
 
-Throughout this conversation, be prepared to engage various personas. The following list shows a few of the types of roles involved in establishing strategic vision and each persona's most common focus area.
+Most digital transformation "failures" end in technological success, but they don't deliver on the initial strategic change that's required to positively affect the business. Ensure that technical success equates to business success by defining clear motivations and expectations with executive level leaders as early as possible.
 
-- **Finance leadership:** Increase profitability while driving compliance
-- **Marketing:** Acquire and retain customers, build reputation
-- **Sales:** Accelerate sales, improve customer lifetime value
-- **Human resources:** Retain, recruit, and empower employees
-- **Executive leadership/Board of directors:** Meeting market growth requirements and environmental sustainability metrics
+Throughout this conversation, be prepared to engage various personas. The following list shows a few of the types of roles that will be involved in establishing strategic vision and each persona's most common focus area:
+
+- **Finance leadership**: Increase profitability while driving compliance.
+- **Marketing**: Acquire and retain customers and build reputation.
+- **Sales**: Accelerate sales and improve customer lifetime value.
+- **Human resources**: Retain, recruit, and empower employees.
+- **Executive leadership/board of directors**: Meet market growth requirements and environmental sustainability metrics.
 
 ## Motivations
 
-Business transformations that are supported by cloud adoption can be driven by various motivations. It's likely that several motivations apply at the same time. The goal of the lists in the following table is to help generate ideas about which motivations are relevant. From there, you can prioritize and assess the potential impacts of the motivations. In this article, your cloud adoption team should meet with various executives and business leaders using the following list to understand which of these motivations are affected by the cloud adoption effort.
+Business transformations that are supported by cloud adoption can be driven by various motivations. It's likely that several motivations apply at the same time. 
+
+The goal of the lists in the following table is to help generate ideas about which motivations are relevant for your organization. From there, you can prioritize and assess the potential impacts of the motivations. Your cloud adoption team should meet with executives and business leaders and use this list to understand the motivations that might be affected by a cloud adoption effort.
 
 | Critical business events | Migration | Innovation |
 |---|---|---|
-| Datacenter exit <br><br> Merger, acquisition, or divestiture <br><br> Reduction in capital expenses <br><br> End of support for mission-critical technologies <br><br> Response to regulatory compliance changes <br><br> New data sovereignty requirements <br><br> Reduction of disruptions and improvement of IT stability <br><br>Reduce carbon footprint <br><br> | Cost savings <br><br> Reduction in vendor or technical complexity <br><br> Optimization of internal operations <br><br> Increase in business agility <br><br> Preparation for new technical capabilities <br><br> Scaling to meet market demands <br><br> Scaling to meet geographic demands <br><br> Integration of a complex it portfolio <br><br> | Preparation for new technical capabilities <br><br> Building new technical capabilities <br><br> Scaling to meet market demands <br><br> Scaling to meet geographic demands <br><br> Improved customer experiences and engagements <br><br> Transformation of products or services <br><br> Market disruption with new products or services <br><br> Democratization and/or self-service environments |
+| Datacenter exit <br><br> Merger, acquisition, or divestiture <br><br> Reduction in capital expenses <br><br> End of support for mission-critical technologies <br><br> Response to regulatory compliance changes <br><br> New data sovereignty requirements <br><br> Reduction of disruptions and improvement of IT stability <br><br>Reduce carbon footprint <br><br> | Cost savings <br><br> Reduction in vendor or technical complexity <br><br> Optimization of internal operations <br><br> Increase in business agility <br><br> Preparation for new technical capabilities <br><br> Scaling to meet market demands <br><br> Scaling to meet geographic demands <br><br> Integration of a complex IT portfolio <br><br> | Preparation for new technical capabilities <br><br> Building new technical capabilities <br><br> Scaling to meet market demands <br><br> Scaling to meet geographic demands <br><br> Improved customer experiences and engagements <br><br> Transformation of products or services <br><br> Market disruption with new products or services <br><br> Democratization or self-service environments |
 
 ## Classify your motivations
 
-Your motivations for cloud adoption will likely fall into multiple categories. As you're building the list of motivations, trends will likely emerge. Motivations tend to be associated more with one classification than with others. Use the predominant classification to help guide the development of your cloud adoption strategy.
+Your motivations for cloud adoption likely will fall into multiple categories. As you're building the list of motivations, you'll probably see trends emerge. Motivations tend to be associated more with one classification (critical business event, migration, innovation) than with others. Use the predominant classification to help guide the development of your cloud adoption strategy.
 
-When a response to critical business events is the highest priority, it's important to [get started with migration](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes, based on direct lessons learned.
+When a response to *critical business events* is the highest priority, it's important to [get started with migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes based on direct lessons learned.
 
-When migration is the highest priority, strategy and planning will play a vital role early in the process. We recommend that you implement the first workload in parallel with planning efforts, to help the team understand and anticipate any learning curves that are associated with cloud adoption.
+When *migration* is the highest priority, strategy and planning play a vital role early in the process. We recommend that you implement the first workload in parallel with planning efforts to help the team understand and anticipate any learning curves that are associated with cloud adoption.
 
-When innovation is the highest priority, strategy and planning require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment made during cloud adoption. For further information and guidance, see [Understand the innovation journey](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
+When *innovation* is the highest priority, strategy and planning require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment that's made during cloud adoption. For more information and guidance, see [Understand the innovation journey](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
 
-To ensure wiser decision-making, all participants in the migration process should have a clear awareness of their motivations. The following section outlines how customers can guide and effect wiser decisions through consistent, strategic methodologies.
+To ensure wiser decision making, all participants in the migration process should have a clear awareness of their motivations. The following section outlines how leaders in the organization can influence wiser decision outcomes through consistent, strategic methodologies.
 
 ## Motivation-driven strategies
 
@@ -48,59 +52,57 @@ This section highlights the *migration* and *innovation* motivations and their c
 
 ### Migration
 
-The *migration* motivations listed near the top of the motivations table are the most common, but not necessarily the most significant, reasons for adopting the cloud. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption is often called a *cloud migration*. The framework refers to the strategy for executing a cloud migration by using the term [migrate](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true).
+The migration motivations that are listed near the top of the motivations table are the most common reasons for adopting the cloud, but they're not necessarily the most significant reasons. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption often is called a *cloud migration*. The framework uses the term [migrate](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) to refer to the strategy of executing a cloud migration.
 
-Some motivations align well with a migrate strategy. The motives at the top of this list will likely have significantly less business impact than those toward the bottom of the list.
+Some motivations align well with a migration strategy. The motivations at the top of this list likely will have significantly less business impact than motivations toward the bottom of the list. Top migrations motivations include:
 
-- Cost savings
-- Reduction in vendor or technical complexity
-- Optimization of internal operations
-- Increasing business agility
-- Preparing for new technical capabilities
-- Scaling to meet market demands
-- Scaling to meet geographic demands
+- Saving on operating costs.
+- Reducing vendor or technical complexity.
+- Optimizing internal operations.
+- Increasing business agility.
+- Preparing for new technical capabilities.
+- Scaling to meet market demands.
+- Scaling to meet geographic demands.
 
 ### Innovation
 
-Data is the new commodity. Modern applications are the supply chain that drives that data into various experiences. In today's business market, it's hard to find a transformative product or service that isn't built on top of data, insights, and customer experiences. The motivations that appear lower in the *innovation* list align to a technology strategy referred to in this framework as the [Innovate methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
+Data is the new commodity. Modern applications are the supply chain that drives data into various experiences. In today's business market, it's hard to find a transformative product or service that isn't built on top of data, insights, and customer experiences. The motivations that appear lower in the innovation list align to a technology strategy that's referred to as [innovate methodology](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true) in this framework.
 
-The following list includes motivations that cause an IT organization to focus more on an innovate strategy than a migrate strategy.
+The following list includes motivations that cause an IT organization to focus more on a strategy to innovate than on a strategy to migrate:
 
-- Increasing business agility
-- Preparing for new technical capabilities
-- Building new technical capabilities
-- Scaling to meet market demands
-- Scaling to meet geographic demands
-- Improving customer experiences and engagements
-- Transforming products or services
+- Increasing business agility.
+- Preparing for new technical capabilities.
+- Building new technical capabilities.
+- Scaling to meet market demands.
+- Scaling to meet geographic demands.
+- Improving customer experiences and engagements.
+- Transforming products or services.
 
 ## Cloud adoption horizons
 
-It is common for organizations to have competing motivations. Those competing motivations create a divide in the financial investments the company can make in any one objective. This leads to an overall reduction in the amount of change or transformation any effort can deliver.
+It's common for organizations to have competing motivations. But competing motivations create a divide in the financial investments that the company can make in any one objective. Such a divide leads to an overall reduction in the amount of change or transformation that any effort can deliver.
 
-Stratification is a sound principal in macro-economics. But within the limited budget of most technology-driven change management projects, this approach leads to confusing and distracting signals within the program. More noticeably, multiple simultaneous investments in competing strategies leads to misalignment of people, processes, and projects required for the overall programs success. For digital transformation to succeed, organizations must prioritize motivations based on timeline expectations, organizational alignment, and capacity for investment.
+Stratification is a sound principle in macroeconomics. But with the limited budget of most technology-driven change management projects, a stratified approach leads to confusing and distracting signals within the program. More noticeably, multiple, simultaneous investments in competing strategies lead to misalignment of the people, processes, and projects that are required for overall program success. For digital transformation to succeed, organizations must prioritize motivations based on timeline expectations, organizational alignment, and capacity for investment.
 
-To create clarity and alignment, it is suggested that complex digital transformation projects align to horizons or phased program delivery. In this type of approach, the company commits to a single motivation category for a time-bound period. All teams and organizations prioritize investments and collaborate to support the priority outcome, as needed, for the define period of time.
+To create clarity and alignment, it's suggested that complex digital transformation projects align to an organization's horizons or phased program delivery. In this type of approach, the company commits to a single motivation category for a time-bound period. All teams and organizations prioritize investments and collaborate to support the priority outcome, as needed, for the defined period of time. This approach creates unity, clarity, and drives a snowball effect, allowing the success of one horizon to accelerate the target outcomes of the next horizon.
 
-This approach creates unity, clarity, and drives a snowball effect, allowing the success of one horizon to accelerate the target outcomes of the next horizon.
+## Tailwind Traders' horizon plan
 
-## The Tailwind Traders horizon plan
+For Tailwind, a high number of motivations appear in each category of the motivations table. Diverse motivations suggests that the organization has multiple critical business events to address, a need for operational improvements from a migration or modernization, and innovation opportunities:
 
-When we compare the Tailwind story to the motivations listed above, there are a high number of motivations in each category. This would suggest that the organization has a number of critical business events to address, a need for operational improvements from a migration/modernization, and opportunities to continue to innovate.
+- **Datacenter exit**: The datacenter exit requires significant focus from the central IT and retail innovation teams. The 12- to 18-month time frame to fully plan two datacenter replacements is aggressive but realistic, if there are few distractions.
+- **Operational improvements**: Accelerating innovation requires modernizing existing operational systems. It also requires modernizing processes that are dedicated to current production environments.
+- **Innovation expansion**: The long-term objective is to continue to grow and lead the market through innovation. The ultimate goal is to maximize the amount of effort IT invests in innovation overall.
 
-- **Datacenter exit:** The datacenter exit requires significant focus from the central IT and retail innovation teams. The 12-18 month time frame is aggressive but realistic, if there are few distractions.
-- **Operational improvements:** Accelerating innovation requires modernization of existing operational systems. It will also require modernization of the processes dedicated to operating the production environments.
-- **Innovation expansion:** The long-term objective is to continue to grow and lead the market through innovation. The ultimate goal is to maximize the amount of effort IT as a whole invests in innovation.
-
-For Tailwind's their horizons would align to the following target schedule, to be evaluated quarterly:
+Tailwind's horizons would align to the following target schedule, to be evaluated quarterly:
 
 | Horizon | Objective | Time frame | Considerations |
 |--|--|--|--|
-| 1. Migration and modernization|Prioritize the datacenter exit with a focus on modern PaaS solutions over a basic shift and lift migration|Months 0 - 18|The migration is priority should minimize conflicts with existing innovation commitments|
-| 2. Operation modernization|Prioritize operational improvements built on cloud-native governance, operations management, security, and compliance capabilities|Months 6 - 18|This effort will compliment and support the primary migration effort.|
-| 3. Advanced modernization|Post-migration and operational improvements, the team will have sufficient data and cloud skills to perform deeper modernization of complex architectures|Months 18-24||
-| 4. Innovation and growth|Redirect capital reduction from datacenter exits and new skills in central IT to focus on accelerating continued innovation|Month 24+|All prior horizons will produce a long list of new innovations, as the central IT and retail innovations team create tighter collaborations and build out automation assets|
+| 1. Migration and modernization|Prioritize the datacenter exit with a focus on modern platform as a service (PaaS) solutions over a basic lift-and-shift migration.|Months 0 - 18|The migration as priority should minimize conflicts with existing innovation commitments.|
+| 2. Operation modernization|Prioritize operational improvements built on cloud-native governance, operations management, security, and compliance capabilities.|Months 6 - 18|This effort complements and supports the primary migration effort.|
+| 3. Advanced modernization|With post-migration and operational improvements, the team will have sufficient data and cloud skills to perform deeper modernization of complex architectures.|Months 18-24||
+| 4. Innovation and growth|Redirect capital reduction from datacenter exits and new skills in central IT to focus on accelerating continued innovation.|Month 24+|All prior horizons will produce a long list of new innovations as the central IT and retail innovations teams create tighter collaborations and build out automation assets.|
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Fill in the box found under the **Motivations and Drivers** heading. Use the motivations discussed in this unit to describe your motivations.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Under **Motivations and drivers**, use the motivations discussion in this unit to describe your motivations.

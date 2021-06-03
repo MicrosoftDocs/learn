@@ -1,4 +1,4 @@
-In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but your options are limited. Using a debugger with a more complete visual interface is useful for that purpose. It will help you a lot while you work on the Tailwind Traders application.
+In addition to being able to run your code step by step, in the previous exercise, knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but your options are limited. Using a debugger with a more complete visual interface is useful for that purpose. It will help you a lot while you work on the Tailwind Traders application.
 
 Let's discover how you can configure the Visual Studio Code debugger to use it with Node.js.
 
@@ -10,21 +10,21 @@ In Visual Studio Code, select the **Run** tab to access the debugger tool.
 
 If you have a Node.js project open, you have three different ways to activate the debugger:
 
-- If you have a `.js` file open in the editor window, select **Run and Debug**. Then select **Node.js** to directly debug this JavaScript file.
+- If you have a `.js` file open in the editor window, select **Run and Debug**. Then, select **Node.js** to directly debug this JavaScript file.
 
     :::image source="../media/select-environment.png" alt-text="Screenshot of Node.js environment selection drop-down list in Visual Studio Code.":::
 
-- You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window that you can use to run your program from the command line. For example, you can enter `node myscript.js`, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
+- You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window that you can run your program from the command line. For example, you can enter `node myscript.js`, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
 
     :::image source="../media/terminal.png" alt-text="Screenshot of debug terminal window in Visual Studio Code.":::
 
-- You can select **create a launch.json file** to further customize your run configuration and share it with your coworkers. We'll see more about that option later.
+- You can select **create a launch.json file** to further customize your run configuration, and share it with your coworkers. We'll see more about that option later.
 
 ### Add breakpoints
 
 As opposed to the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
 
-To add a breakpoint in your code, open your `.js` program and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
+To add a breakpoint in your code, open your `.js` program, and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio Code editor window.":::
 
@@ -71,7 +71,7 @@ Your variables are shown organized by scope:
 
 You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in this object.
 
-It's possible to change the value of a variable on the fly by double-clicking on the variable.
+It's possible to change the value of a variable on the fly by double-clicking the variable.
 
 By hovering a function parameter or a variable directly in the editor window, you can also peek at its value:
 
@@ -81,13 +81,13 @@ By hovering a function parameter or a variable directly in the editor window, yo
 
 If you want to track a variable state across time or different functions, it can be tedious to search for it every time. That's where the **Watch** panel comes in handy.
 
-You can select the **plus** button to enter a variable name or an expression to watch. As an alternative, you can right-click on a variable in the **Variables** panel and select **Add to watch**.
+You can select the **plus** button to enter a variable name or an expression to watch. As an alternative, you can right-click a variable in the **Variables** pane, and select **Add to watch**.
 
-All expressions inside the watch panel will be updated automatically as your code runs.
+All expressions inside the watch pane will be updated automatically as your code runs.
 
 ### Call stack
 
-Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and you have functions called within functions many times, the call stack represents the trail of functions calls.
+Every time your program enters a function, an entry is added to the call stack. When your application becomes complex, and you have functions called within functions many times, the call stack represents the trail of functions calls.
 
 It's useful to find the source of an exception. If you have an unexpected crash in your program, you'll often see something like this in the console:
 
@@ -111,7 +111,7 @@ The group of `at [...]` lines under the error message is called a *stack trace*.
 
 That's where the Visual Studio Code **Call stack** panel comes in handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
 
-To help you even more, you can select the **Restart frame** button that appears when you hover a function name in the stack. It will "rewind" the execution back to the beginning of that function by actually restarting your program up to that point.
+To help you even more, you can select the **Restart frame** button that appears when you hover a function name in the stack. It will *rewind* the execution back to the beginning of that function by actually restarting your program up to that point.
 
 :::image source="../media/restart-frame.png" alt-text="Screenshot of the Restart frame button in the Visual Studio Code call stack panel.":::
 
@@ -121,7 +121,7 @@ This panel displays all the JavaScript files that have been loaded so far. In la
 
 ### Breakpoints
 
-In the **Breakpoints** panel, you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** panel to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
+In the **Breakpoints** panel, you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** pane to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
 
 ### Control execution
 
@@ -140,9 +140,9 @@ From left to right, the controls are:
 
 ### Use the debug console
 
-The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like the `exec` command in the built-in Node.js debugger.
+The debug console can be shown or hidden by pressing <kbd>Ctrl+Shift+Y</kbd> (Windows, Linux) or <kbd>Cmd+Shift+Y</kbd> (Mac). It can be used to visualize your application console logs, and to evaluate expressions or execute code in the current execution content, like the `exec` command in the built-in Node.js debugger.
 
-You can enter a JavaScript expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+You can enter a JavaScript expression in the input field at the bottom of the debug console. Then, press <kbd>Enter</kbd> to evaluate it. The result displays directly in the console.
 
 This way, you can quickly check a variable value, test a function with different values, or alter the current state.
 
@@ -156,4 +156,4 @@ By right-clicking in the same area that you used to add a breakpoint, you can se
 
 Enter a message to display at that point in your code. It's even possible to print expressions by enclosing them in brackets by using `{<EXPRESSION>}`.
 
-Like breakpoints, logpoints don't alter your code in any way and are used only during debugging. You don't have an excuse anymore to let that forgotten `console.log('here')` slip to production.
+Like breakpoints, logpoints don't alter your code in any way, and are used only during debugging. You don't have an excuse anymore to let that forgotten `console.log('here')` slip to production.

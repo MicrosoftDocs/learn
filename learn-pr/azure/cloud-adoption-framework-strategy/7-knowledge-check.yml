@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-strategy.7-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Test your knowledge of the Strategy methodology.
+  description: Test your knowledge of strategy methodology.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
@@ -19,54 +19,54 @@ quiz:
     - content: Clarify corporate strategy, define common goals, establish metrics, evaluate financial considerations, and evaluate technical considerations.
       isCorrect: true
       explanation: Correct.
-    - content: Select the cloud vendor, establish DevOps model, kickoff technical deployment.
+    - content: Select the cloud vendor, establish a DevOps model, and kick off technical deployment.
       isCorrect: false
-      explanation: The cloud vendor, operational models, and technical deployment kickoff should be determined after a corporate strategy has been defined.
-    - content: Assess current technical debt, identify workloads to move to the cloud, pilot deployment and release to production.
+      explanation: The cloud vendor, operational model, and technical deployment kickoff should be determined after a corporate strategy has been defined.
+    - content: Assess current technical debt, identify workloads to move to the cloud, pilot deployment, and release to production.
       isCorrect: false
-      explanation: Technical assessments should be executed after a corporate strategy has been defined to ensure the effort delivers on the goals.
+      explanation: Technical assessments should be executed after a corporate strategy has been defined to ensure that the effort delivers on the goals.
     - content: Define cost management, identity management, configuration management, and governance for the cloud.
       isCorrect: false
-      explanation: While these elements are important, they should follow the strategy defined, to ensure all the effort will deliver on the defined goals.
+      explanation: Although these elements are important, they should follow the strategy that is defined, to ensure that the effort will deliver on the defined goals.
   - content: What are good examples of motivations to move to the cloud?
     choices:
-    - content: Eliminate the IT Department, save on costs.
+    - content: Eliminate the IT department and save on costs.
       isCorrect: false
-      explanation: The IT Department remains a key asset of the organization by leading the Cloud adoption and deployment efforts. While their focus shifts in a cloud world, they remain a key team for successful cloud adoption.
-    - content: Win agility by removing dependencies to IT, deploy new technical capabilities. 
+      explanation: The IT department remains a key asset of the organization by leading the cloud adoption and deployment efforts. Although IT focus shifts in a cloud world, it remains a key team for successful cloud adoption.
+    - content: Win agility by removing dependencies to IT and deploy new technical capabilities. 
       isCorrect: false
-      explanation: Moving to the cloud will not automatically remove IT Dependencies. Defining a new process and operations model can help alleviate those dependencies to achieve agility and adopt new capabilities.
+      explanation: Moving to the cloud won't automatically remove IT dependencies. Defining a new process and operations model can help alleviate those dependencies to achieve agility and adopt new capabilities.
     - content: Save on costs, deploy new technical capabilities, drive workload optimization, achieve scale and agility, and improve customer experiences.
       isCorrect: true
       explanation: Correct.
-    - content: Faster time to market by removing Security and Governance dependencies, save on costs.
+    - content: Faster time to market by removing security and governance dependencies, and save on costs.
       isCorrect: false
-      explanation: The cloud does not remove security or governance dependencies. Both of them however should be updated to help the organization achieve the benefits of the cloud model.
-  - content: What are some of the Benefits of Cloud Adoption?
+      explanation: The cloud doesn't remove security or governance dependencies. Both dependencies, though, should be updated to help the organization achieve the benefits of the cloud model.
+  - content: What are some of the benefits of cloud adoption?
     choices:
-    - content: Eliminate the IT Department, remove IT dependencies, win agility. 
+    - content: Eliminate the IT department, remove IT dependencies, and win agility. 
       isCorrect: false
-      explanation: The IT Department, in partnership with the different stakeholders defined in the chapter, will help update the operations and dependency guidelines to help the organization adopt the cloud successfully.
-    - content: Eliminate the Security Department, faster time to market.
+      explanation: The IT department, in partnership with the different stakeholders that are defined in the module, will help update the operations and dependency guidelines to help the organization adopt the cloud successfully.
+    - content: Eliminate the security department and faster time to market.
       isCorrect: false
-      explanation: In the cloud, security becomes a shared responsibility between the vendor and the organizations using the cloud. The security department remains a key stakeholder in the risk management of the organization.
-    - content: Remove IT processes needed on premises, remove security blockers from on premises.
+      explanation: In the cloud, security becomes a shared responsibility between the vendor and the organizations that use the cloud. The security department remains a key stakeholder in risk management for the organization.
+    - content: Remove IT processes on-premises and remove security blockers on-premises.
       isCorrect: false
-      explanation: Internal process and security guidelines might need to be updated or created brand new when adopting the cloud. They will not, however, just be removed.
-    - content: Reduce vendor complexity, improve cost of operations, advance technological and operations capabilities.
+      explanation: Internal process and security guidelines might need to be updated or created brand-new with cloud adoption, but they won't just be removed.
+    - content: Reduce vendor complexity, improve cost of operations, and advance technological and operations capabilities.
       isCorrect: true
       explanation: Correct.
-  - content: Which personas should be involved in defining the strategy? 
+  - content: Which personas should be involved in defining cloud adoption strategy? 
     choices:
-    - content: IT operations, IT Development, and Security 
+    - content: IT operations, IT development, and security. 
       isCorrect: false
-      explanation: While these teams are important, it is imperative to achieve organizational alignment among all the key stakeholders.
+      explanation: Although these personas are important, it's imperative to achieve organizational alignment among all key stakeholders.
     - content: Business owners and IT.
       isCorrect: false
-      explanation: While these teams are important, it is imperative to achieve organizational alignment among all the key stakeholders.
-    - content: Finance, marketing, sales, human resources, and executive leadership
+      explanation: Although these persons are important, it's imperative to achieve organizational alignment among all key stakeholders.
+    - content: Finance, marketing, sales, human resources, and executive leadership.
       isCorrect: true
       explanation: Correct.
-    - content: IT and cloud vendors
+    - content: IT and cloud vendors.
       isCorrect: false
-      explanation: While these teams are important, it is imperative to achieve organizational alignment among all the key stakeholders.
+      explanation: Although these personas are important, it's imperative to achieve organizational alignment among all key stakeholders.

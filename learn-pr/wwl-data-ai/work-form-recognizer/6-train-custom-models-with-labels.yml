@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
+title: Train custom models with labels (supervised)
+metadata:
+  title: Train custom models with labels (supervised)
+  description: "Train custom models with labels (supervised)"
+  ms.date: 05/31/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-train-custom-models-with-labels.md)]

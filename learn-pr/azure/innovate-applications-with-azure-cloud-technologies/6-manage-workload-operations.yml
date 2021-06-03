@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.innovate-applications-azure-cloud-technologies.6-azure-technologies-learn-process
+metadata:
+  title: Azure technologies for the learn process
+  description: Data democratization and its role in the innovation process
+  ms.date: 04/23/2021
+  author: jomore
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure technologies for the learn process
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-azure-technologies-learn-process.md)]

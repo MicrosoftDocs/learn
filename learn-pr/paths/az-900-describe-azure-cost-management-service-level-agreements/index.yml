@@ -82,7 +82,6 @@ roles:
 products:
 - azure
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.plan-manage-azure-costs
 - learn.azure.choose-azure-services-sla-lifecycle
 trophy:

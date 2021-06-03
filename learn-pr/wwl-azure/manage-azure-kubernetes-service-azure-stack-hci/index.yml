@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
+metadata:
+  title: Manage Azure Kubernetes Service on Azure Stack HCI
+  description: "Manage Azure Kubernetes Service on Azure Stack HCI"
+  ms.date: 05/18/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Azure Kubernetes Service on Azure Stack HCI
+summary: This module describes how to implement and manage Microsoft Azure Kubernetes Service on Azure Stack HCI.
+abstract: |
+  In this module, you will:
+  - Describe Kubernetes and Azure Kubernetes Service (AKS).
+  - Describe Azure Kubernetes Service on Azure Stack HCI.
+  - Deploy AKS and Kubernetes clusters.
+  - Connect Azure Kubernetes Service on Azure Stack HCI to Microsoft Azure Arc for Kubernetes.
+  - Manage pod placement on multi-pool Kubernetes clusters.
+  - Manage pod storage on Kubernetes clusters.
+  - Implement containerized Windows workloads.
+  - Troubleshoot Azure Kubernetes Service on Azure Stack HCI.
+prerequisites: |
+  - Familiarity with the key features of Windows Server
+  - Familiarity with the concept of virtualization
+  - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
+  - Familiarity with the concept of containerization and container orchestration
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- security-engineer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+units:
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.introduction
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of-kubernetes-aks
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-aks-cluster-to
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes-cluster-to
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.connect-to-azure-arc-for-kubernetes
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pods-multi-pool-kubernetes-clusters
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pod-storage-kubernetes-clusters
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.implement-containerized-windows-workloads
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.troubleshoot
+- learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.summary
+badge:
+  uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.badge

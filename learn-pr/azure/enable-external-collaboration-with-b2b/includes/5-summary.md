@@ -1,4 +1,3 @@
-
 Your organization needed to publish an application that allows clinicians from partnering healthcare providers to access records for patients at your facilities. As the solution architect, you were asked to enable them to collaborate securely.
 
 Azure Active Directory B2B (Azure AD B2B) makes it possible to collaborate with external users. You invited external users as guests in Azure AD B2B. Then you added a guest user to a directory, before adding them as a user in a specific group for guest users. Finally, you added the guest as a user of an application that you wanted to share for collaboration. You explored how to add extra security to the collaboration through conditional access policies that enforce multi-factor authentication.
@@ -11,6 +10,6 @@ You can use Azure AD B2B to rapidly create a collaborative environment with exte
 
 To learn more about Azure AD B2B, see:
 
-- [Azure Active Directory B2B documentation](https://docs.microsoft.com/azure/active-directory/b2b/)
-- [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
-- [Compare B2B collaboration and B2C in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/compare-with-b2c)
+- [Azure Active Directory B2B documentation](/azure/active-directory/b2b/)
+- [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/b2b/what-is-b2b)
+- [Compare B2B collaboration and B2C in Azure Active Directory](/azure/active-directory/b2b/compare-with-b2c)

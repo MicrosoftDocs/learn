@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.use-built-functions-transact-sql
+metadata:
+  title: Use built-in functions and GROUP BY in Transact-SQL
+  description: "Use built-in functions and GROUP BY in Transact-SQL"
+  ms.date: 05/07/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use built-in functions and GROUP BY in Transact-SQL
+summary: Learn how to use functions in Transact-SQL, and how to group aggregated results.
+abstract: |
+  After completing this module, you will be able to:
+  - Categorize built-in functions
+  - Use scalar functions
+  - Use ranking and rowset functions
+  - Use aggregate functions
+  - Summarize data with GROUP BY
+  - Filter groups with HAVING
+prerequisites: |
+  Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve data from tables in a database.
+iconUrl: /learn/achievements/use-built-in-functions-in-transact-sql.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure-sql-database
+- sql-server
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+units:
+- learn.wwl.use-built-functions-transact-sql.introduction
+- learn.wwl.use-built-functions-transact-sql.categorize-functions
+- learn.wwl.use-built-functions-transact-sql.scalar-functions
+- learn.wwl.use-built-functions-transact-sql.ranking-rowset-functions
+- learn.wwl.use-built-functions-transact-sql.aggregate-functions
+- learn.wwl.use-built-functions-transact-sql.summarize-group-by
+- learn.wwl.use-built-functions-transact-sql.filter-groups
+- learn.wwl.use-built-functions-transact-sql.exercise-built-in-functions
+- learn.wwl.use-built-functions-transact-sql.knowledge-check
+- learn.wwl.use-built-functions-transact-sql.summary
+badge:
+  uid: learn.wwl.use-built-functions-transact-sql.badge

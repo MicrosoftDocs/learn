@@ -8,22 +8,22 @@ As we saw a moment ago, Azure VMs communicate on a virtual network. They can als
 
 Public IP addresses in Azure are dynamically allocated by default. That means the IP address can change over time - for VMs the IP address assignment happens when the VM is restarted. You can pay more to assign static addresses, if you want to connect directly to an IP address and need to ensure that the IP address will not change.
 
-Acknowledging these restrictions, and the alternatives described above, we will use the public IP address of the VM in this module.
+Acknowledging these restrictions, and the alternatives previously described, we will use the public IP address of the VM in this module.
 
-## Connecting to the VM with SSH
+## Connect to the VM with SSH
 
-To connect to the VM via SSH, you need:
+To connect to the VM via SSH, you need the following items:
 
-- the public IP address of the VM
-- the username of the local account on the VM
-- a public key configured in that account
-- access to the corresponding private key
-- port 22 open on the VM
+- Public IP address of the VM
+- Username of the local account on the VM
+- Public key configured in that account
+- Access to the corresponding private key
+- Port 22 open on the VM
 
 Previously, you generated an SSH key pair, and added the public key to the VM configuration, and ensured that port 22 was open.
 
 In the next unit, you'll use this information to open a secure terminal on the VM using SSH.
 
-Once the terminal is open, you have access to all of the standard Linux command-line tools.
+After the terminal is open, you have access to all of the standard Linux command-line tools.
 
 Next, let's connect to the VM using SSH.

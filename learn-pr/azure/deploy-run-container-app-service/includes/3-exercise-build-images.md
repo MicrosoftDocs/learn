@@ -26,13 +26,13 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
     | **Instance details** |
     | Registry name | Enter a unique name and make a note of it for later. |
     | Location | Select a location that is close to you. |
-    | SKU | **Standard** |
+    | SKU | Standard |
 
 1. Select **Review + create**. When validation successfully passes, select **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 
-1. In the Azure Cloud Shell in the portal, run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text and a carousel control that rotates through a series of images.
+1. In the Azure Cloud Shell in the portal, run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text, and a carousel control that rotates through a series of images.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git

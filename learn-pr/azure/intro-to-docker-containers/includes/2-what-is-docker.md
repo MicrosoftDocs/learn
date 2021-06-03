@@ -1,4 +1,4 @@
-Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploy applications. We'll also briefly discuss some of the challenges faced by our teams.
+Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploy applications. We'll also briefly describe some of the challenges faced by our teams.
 
 The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software, and an operations team responsible for the deployment of these applications. The operations team is also responsible for the management of the application hosting infrastructure.
 
@@ -36,7 +36,7 @@ Software containerization is an OS virtualization method that is used to deploy 
 
 ## What is Docker?
 
-Docker is a containerization platform used to develop, ship, and run containers. Docker doesn't use a hypervisor, and you can run Docker on your desktop or laptop if you're developing and testing applications. The desktop version of Docker supports Linux, Windows, and macOS. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016 and above. Many clouds, including Azure, supports Docker.
+Docker is a containerization platform used to develop, ship, and run containers. Docker doesn't use a hypervisor, and you can run Docker on your desktop or laptop if you're developing and testing applications. The desktop version of Docker supports Linux, Windows, and macOS. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016 and above. Many clouds, including Azure, support Docker.
 
 ## Docker architecture
 
@@ -44,13 +44,13 @@ The Docker platform consists of several components that we use to build, run, an
 
 ### Docker Engine
 
-The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which allows the client to also communicate with a remote server instance.
+The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which enables the client to also communicate with a remote server instance.
 
 :::image type="complex" source="../media/2-docker-architecture.svg" alt-text="Diagram showing a high-level overview of the Docker architecture.":::
-   The diagram shows a square that represents Docker Hub with container images and a separate square that represents a Docker Host. An arrow shows communication between the Docker Hub and Docker Host. 
-   
-   The Docker Host contains two objects. One represents the Docker Engine, and the second the running docker containers. The Docker Host object contains four objects. These are the Docker Server, the Docker REST API, the Docker Client, and stored container images. 
-   
+   The diagram shows a square that represents Docker Hub with container images and a separate square that represents a Docker Host. An arrow shows communication between the Docker Hub and Docker Host.
+
+   The Docker Host contains two objects. One represents the Docker Engine, and the second the running docker containers. The Docker Host object contains four objects. These are the Docker Server, the Docker REST API, the Docker Client, and stored container images.
+
    Some arrows show communication between the Docker Server, the REST API, and the Docker Client. These arrows indicate how the user communicates with the Docker Server via the REST API.
 
    Some arrows show communication between the Docker Server, running Containers, and stored container images. These arrows indicate how the Docker server loads stored container images and manage running containers.
@@ -70,6 +70,6 @@ There are several objects that you'll create and configure to support your conta
 
 ### Docker Hub
 
-Docker Hub is a Software-as-a-Service (SaaS) Docker container registry. Docker registries are repositories that we use to store and distribute the container images we create. Docker Hub is the default public registry Docker uses for image management.
+Docker Hub is a Software as a Service (SaaS) Docker container registry. Docker registries are repositories that we use to store and distribute the container images we create. Docker Hub is the default public registry Docker uses for image management.
 
-Keep in mind that you can create and use a private Docker registry or use one of the many cloud provider options available. For example, you can use Azure Container Registry to store Docker containers to use in several Azure container enabled services.
+Keep in mind that you can create and use a private Docker registry or use one of the many cloud provider options available. For example, you can use Azure Container Registry to store Docker containers to use in several Azure container-enabled services.

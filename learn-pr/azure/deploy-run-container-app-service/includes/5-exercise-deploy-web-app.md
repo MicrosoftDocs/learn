@@ -22,7 +22,7 @@ You're now ready to create your web app.
 
 1. Go back to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) home page, and select **Create a resource**.
 
-1. In the left menu pane, select **Web**, then search for and select **Web App**.
+1. In the left menu pane, select **Web**, then search for and select **Web App**. The **Web App** pane appears.
 
 1. Select **Create**.
 
@@ -40,7 +40,7 @@ You're now ready to create your web app.
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |
     | Publish | **Docker Container** |
-    | OS | **Linux** |
+    | Operating System | **Linux** |
     | Region | Select the same location that is close to you from previous exercise. |
     | **App Service Plan** |
     | App Service plan | Use the default. |

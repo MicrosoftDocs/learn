@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-impact-of-wrong-choices-for-column-data-types
+title: Understand the impact of wrong choices for column data types
+metadata:
+  title: Understand the impact of wrong choices for column data types
+  description: "Understand the impact of wrong choices for column data types"
+  ms.date: 06/03/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-understand-impact-of-wrong-choices-for-column-data-types.md)]

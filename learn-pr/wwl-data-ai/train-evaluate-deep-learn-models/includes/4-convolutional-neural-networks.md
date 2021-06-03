@@ -8,7 +8,7 @@ CNNs consist of multiple layers, each performing a specific task in extracting f
 
 ### Convolution layers
 
-One of the principle layer types is a *convolutional* layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values.
+One of the principal layer types is a *convolutional* layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values.
 
 For example, a 3x3 filter might be defined like this:
 
@@ -131,7 +131,7 @@ Note that the effect of the 2x2 pooling filter is to reduce the number of values
 
 As with convolutional layers, pooling layers work by applying the filter across the whole feature map. The animation below shows an example of max pooling for an image map.
 
-![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners](../media/pooling.gif)
+![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners, max pooling for an image map.](../media/pooling.gif)
 
 1. The feature map extracted by a filter in a convolutional layer contains an array of feature values.
 2. A pooling kernel is used to reduce the number of feature values. In this case, the kernel size is 2x2, so it will produce an array with quarter the number of feature values.

@@ -23,11 +23,11 @@ Now that you know how to call one of these Cognitive Services APIs, explore some
 
 ## Further reading
 
-- [Text Analytics overview](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)
+- [Text Analytics overview](/azure/cognitive-services/text-analytics/overview)
 - [Text Analytics demo](https://azure.microsoft.com/services/cognitive-services/text-analytics/)
-- [How to detect sentiment in Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
-- [Cognitive Services Documentation](https://docs.microsoft.com/azure/cognitive-services/)
+- [How to detect sentiment in Text Analytics](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
+- [Cognitive Services Documentation](/azure/cognitive-services/)
 
-- [Text Analytics Logic Apps Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)
+- [Text Analytics Logic Apps Connector](/connectors/cognitiveservicestextanalytics/)
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

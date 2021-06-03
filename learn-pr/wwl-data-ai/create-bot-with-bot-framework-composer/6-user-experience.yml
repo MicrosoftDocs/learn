@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-bot-with-bot-framework-composer.user-experience
+title: Design the user experience
+metadata:
+  title: Design the user experience
+  description: "Design the user experience"
+  ms.date: 04/05/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-user-experience.md)]

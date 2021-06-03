@@ -2,11 +2,11 @@ Log files are a great resource for a Web developer, but only if you know how to 
 
 ## Log file storage locations
 
-The Azure infrastructure used to run Windows Web apps is not the same as that for Linux apps, and log files are not stored in the same locations.
+The Azure infrastructure used to run Azure Web Apps in Windows is not the same as that for Linux apps, and log files are not stored in the same locations.
 
 ### Windows app log files
 
-For Windows apps, file system log files are stored in a virtual drive that is associated with your Web app. This drive is addressable as **D:\Home**, and includes a **LogFiles** folder; within this folder are one or more subfolders:
+For Windows apps, file system log files are stored in a virtual drive that is associated with your Web App. This drive is addressable as **D:\Home**, and includes a **LogFiles** folder; within this folder are one or more subfolders:
 
 - **Application** - Contains application-generated messages, if **File System** application logging has been enabled.
 - **DetailedErrors** - Contains detailed Web server error logs, if **Detailed** error messages have been enabled.
@@ -27,7 +27,7 @@ Within the hour folder, there will be one or more CSV files containing messages 
 
 ### Linux app log files
 
-For Linux Web apps, the Azure tools currently support fewer logging options than for Windows apps. Redirections to STDERR and STDOUT are managed through the underlying Docker container that runs the app, and these messages are stored in Docker log files. To see messages logged by underlying processes, such as Apache, you will need to open an SSH connection to the Docker container.
+For Linux Web Apps, the Azure tools currently support fewer logging options than for Windows apps. Redirections to STDERR and STDOUT are managed through the underlying Docker container that runs the app, and these messages are stored in Docker log files. To see messages logged by underlying processes, such as Apache, you will need to open an SSH connection to the Docker container.
 
 ## Methods for retrieving log files
 
@@ -35,20 +35,20 @@ How you retrieve log files depends on the type of log file, as well as your pref
 
 ### Azure CLI
 
-To download file system log files using the Azure CLI, first copy the log files from the app's file system to your Azure Cloud Shell storage, and then run the following command.
+To download file system log files using the Azure CLI, first copy the log files from the app's file system to Cloud Shell storage, and then run the following command.
 
    ```azurecli
    az webapp log download --log-file \<_filename_\>.zip  --resource-group \<_resource group name_\> --name \<_app name_\>
    ```
 
-To download the zipped log files to your local computer, ready for opening in Microsoft Excel, or other apps, use the file download and upload tool on the Azure Cloud Shell toolbar. 
+To download the zipped log files to your local computer, ready for opening in Microsoft Excel, or other apps, use the file download and upload tool in Cloud Shell toolbar.
 
    > [!NOTE]
    > The Azure CLI download includes all app logs, except for failed request traces.
 
 ### Kudu
 
-All Azure Web apps have an associated Source Control Management (SCM) service site. This site runs the **Kudu** service, and other Site Extensions; it is Kudu that manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files. The specific functionality available in KUDU, and how you download logs, depends on the type of Web app. For Windows apps you can browse to the log file location, and then download the logs; for Linux apps, there may be a download link.
+All Azure Web Apps have an associated Source Control Management (SCM) service site. This site runs the **Kudu** service, and other Site Extensions; it is Kudu that manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files. The specific functionality available in KUDU, and how you download logs, depends on the type of Web App. For Windows apps, you can browse to the log file location, and then download the logs; for Linux apps, there may be a download link.
 
 One way to access the KUDU console is navigate to **https://\<_app name_\>.scm.azurewebsites.net**, and then sign in using _**deployment credentials**_.  
 

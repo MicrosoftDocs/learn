@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.work-with-form-recognizer
+metadata:
+  title: Extract data from forms with Form Recognizer
+  description: "Form Recognizer extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Form Recognizer vision API."
+  ms.date: 05/31/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extract data from forms with Form Recognizer
+summary: Form Recognizer uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Form Recognizer* cognitive service.
+abstract: |
+  In this module, you'll learn how to:
+  - Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
+  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
+  - Develop and test custom models using supervised and unsupervised training
+prerequisites: |
+  To complete this module, you will need:
+  - An active Azure account
+  - Knowledge of Azure portal navigation
+  - Knowledge of at least one programming language (C#, Python)
+iconUrl: /learn/achievements/form-recognizer-extract-data.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.work-with-form-recognizer.introduction
+- learn.wwl.work-with-form-recognizer.what-form-recognizer
+- learn.wwl.work-with-form-recognizer.get-started
+- learn.wwl.work-with-form-recognizer.understand-prebuilt-models
+- learn.wwl.work-with-form-recognizer.train-custom-models-without-labels
+- learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
+- learn.wwl.work-with-form-recognizer.use-models
+- learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
+- learn.wwl.work-with-form-recognizer.optical-character-recognition-test-tool
+- learn.wwl.work-with-form-recognizer.knowledge-check-summary
+- learn.wwl.work-with-form-recognizer.summary
+badge:
+  uid: learn.wwl.work-with-form-recognizer.badge

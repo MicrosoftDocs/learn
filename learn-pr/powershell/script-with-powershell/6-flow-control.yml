@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.6-flow-control
+title: Flow control
+metadata:
+  title: Flow control
+  description: This unit teaches you the various constructs that you can use to express conditional logic.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/04/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-flow-control.md)]

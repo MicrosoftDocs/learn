@@ -130,7 +130,7 @@ We want to do something with the `Some(7)` match but ignore other `Some<u8>` val
 You could write this in a shorter way by using an *if let* expression. The following code behaves the same as the previous one:
 
 ```rust
-if let Some(7) = some_u8_value {
+if let Some(7) = some_number {
     println!("That's my lucky number!");
 }
 ```

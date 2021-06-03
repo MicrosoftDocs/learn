@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.azure.iot-fundamentals
 metadata:
-  title: Choose the best Azure IoT service for your application (AZ-900)
-  description: Examine Azure IoT services, and choose the right service for your scenario. Prepare for AZ-900.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Choose the best Azure IoT service for your application
+  description: "Examine Azure IoT services, and choose the right service for your scenario. Prepare for AZ-900."
+  ms.date: 05/18/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -12,24 +12,23 @@ title: Choose the best Azure IoT service for your application
 summary: Examine Azure IoT services, and choose the right service for your scenario.
 abstract: |
   After you've completed this module, you'll be able to:
-  - Choose the Azure IoT service that best addresses your business scenario.
+    - Choose the Azure IoT service that best addresses your business scenario.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-ratingEnabled: true
 iconUrl: /learn/achievements/iot-fundamentals.svg
 levels:
 - beginner
 roles:
 - administrator
-- developer
 - business-owner
+- developer
 - student
 - technology-manager
 products:
 - azure
-- azure-iot-hub
 - azure-iot-central
+- azure-iot-hub
 units:
 - learn.azure.iot-fundamentals.introduction
 - learn.azure.iot-fundamentals.identify-product-options
@@ -39,6 +38,5 @@ units:
 - learn.azure.iot-fundamentals.use-azure-sphere
 - learn.azure.iot-fundamentals.knowledge-check
 - learn.azure.iot-fundamentals.summary
-
 badge:
   uid: learn.azure.iot-fundamentals.badge

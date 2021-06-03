@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.exercise-manage-database
+title: Exercise - Create the database schema
+metadata:
+  title: Exercise - Create the database schema
+  description: Create a database by using Django tools.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-exercise-manage-database.md)] 

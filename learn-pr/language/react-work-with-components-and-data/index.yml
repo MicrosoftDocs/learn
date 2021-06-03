@@ -17,7 +17,7 @@ abstract: |
   - Use map to work with lists of items.
 prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
 iconUrl: /learn/achievements/react/react-components-data.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - intermediate
 roles:

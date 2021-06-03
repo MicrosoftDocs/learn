@@ -5,7 +5,7 @@ Here, you'll configure a Unity project to use the Azure Cognitive Services Speec
 ## Create and configure a new Unity project for Windows Mixed Reality development by using the MRTK
 
 > [!NOTE]
-> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
+> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
 
 1. Create a new 3D Unity project.
 1. Go to **File** > **Build Settings** to switch **Build Platform** to **Universal Windows Platform**.
@@ -46,7 +46,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the configuration profile.":::
 
 1. In the **Inspector** window, select **Input**.
 
@@ -62,7 +62,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the input system profile.":::
 
 1. In the **Input** settings, expand the **Speech** settings.
 
@@ -78,11 +78,14 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted f or the speech commands profile.":::
 
 1. In the **Speech** settings, select **Manual Start** for **Start Behavior**.
 
     :::image type="content" source="../media/start-behavior.png" alt-text="Screenshot of the Speech Commands profile. The Start Behavior setting is highlighted. The Manual Start option is selected.":::
+
+> [!NOTE]
+> You can disable the Diagnostics bar by cloning the **Diagnostics** profile and unchecking the box **Show Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should continuously run at 60 FPS.
 
 ## Add capabilities
 

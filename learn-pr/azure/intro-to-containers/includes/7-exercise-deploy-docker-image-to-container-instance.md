@@ -10,13 +10,15 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select **Containers**, and select **Container Registry**. The **Create container registry** panel appears.
+1. In the left menu pane, select **Containers**, and then select **Container Registry** from *Popular services*.
 
     :::image type="content" source="../media/7-search-container-registry.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
 
-1. On the **Basics** tab, specify the values in the following table for each of the settings.
+    The **Create container registry** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -24,16 +26,15 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
     | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
     | Resource group | Create a new resource group with the name **learn-deploy-container-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
     | **Instance details** |
-    | Registry name | select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
+    | Registry name | Select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
     | Location | Select a location that is close to you. |
-    | Availability zones | **Enabled** (*checked*) |
     | SKU | **Standard** |
 
-1. Select **Review + Create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
+1. Select **Review + create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
 
-1. Select **Go to resource**. Your container registry panel appears.
+1. Select **Go to resource**. Your *container registry* pane appears.
 
-1. In the left nav bar, under **Settings**, select **Access keys**.
+1. In the left menu bar, under **Settings**, select **Access keys**.
 
 1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your registry. For **Admin user**, select **Enabled**.
 
@@ -85,30 +86,37 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 
-1. Under **Services**, select **Repositories**. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository, and verify that the repository contains an image with the tag **latest**.
+1. In the left menu pane, under **Services**, select **Repositories**. The **Repositories** pane for your container registry appears.
+
+1. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository, and verify that the repository contains an image with the tag **latest**.
 
     :::image type="content" source="../media/7-repository.png" alt-text="Screenshot showing the repository and tagged reservation system container image in the registry.":::
 
 ## Load and run an image using Azure Container Instance
 
-1. In the Azure portal, select **Create a resource**, then select **Containers**, and then select **Container Instance**.
+1. In the Azure portal Home page, select **Create a resource**. The **Create a resource** pane appears.
 
-    :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
+1. In the left menu pane, select **Containers**, and under *Popular services*, select **Container Instances**.
 
-    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Next, we'll configure the container's network options and restart policy.
+    :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot that shows the New pane again in Azure portal showing the Container options available in Azure Marketplace.":::
 
-1. On the **Basics** tab, specify the values in the following table for each of the settings.
+    The **Create container instance** pane appears.
+
+    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Next, we'll configure the container's network options and restart the policy.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
     | **Project details** |
-    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources.  |
-    | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
-    | **Instance details** |
-    | Container Name | hotelsysteminstance |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources |
+    | Resource group | Reuse the existing resource group **learn-deploy-container-aci-rg** |
+    | **Container details** |
+    | Container name | hotelsysteminstance |
     | Region | Use the default location |
+    | Image source | Docker Hub or other registry |
     | Image type | Private |
-    | Image name | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
+    | Image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry |
@@ -117,34 +125,33 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. Select **Next: Networking**.
 
-1. On the **Networking** tab, specify the values in the following table for each of the settings.
+1. On the **Networking** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
-    | Include public IP address | Yes |
-    | Port | 80 |
-    | Open additional ports | No |
-    | Port protocol | TCP |
+    | Networking type | Public |
     | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+    | **Ports** |
+    | Ports | 80 |
+    | Ports protocol | TCP |
 
 1. Select **Next: Advanced**.
 
-1. On the **Advanced** tab, specify the values in the following table for each of the settings.
+1. On the **Advanced** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
     | Restart policy | Always |
-    | Environment variable | *leave blank* |
-    | Add additional environment variables | No |
-    | Command override | *leave blank*|
+    | Environment variables| *leave all settings blank* |
+    | Command override | *leave blank* |
 
-1. Select **Review + create**.
+1. Select **Review + create**. Wait for validation to complete, and correct any errors, if necessary.
 
-1. On the **Summary** page, wait for validation to complete, and correct any errors, if necessary. Select **Create**.
+1. Select **Create**.
 
-1. When the container instance has been created, select **Go to resource**. Your container instance panel appears.
+1. When the container instance has been created, select **Go to resource**. Your container instance pane appears.
 
-1. On the **Overview** page, find the fully qualified domain name of the container instance.
+1. On the **Overview** pane, find the fully qualified domain name of the container instance.
 
     :::image type="content" source="../media/7-container-fqdn.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted.":::
 

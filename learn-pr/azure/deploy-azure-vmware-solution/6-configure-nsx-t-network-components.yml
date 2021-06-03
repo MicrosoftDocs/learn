@@ -2,7 +2,7 @@
 uid: learn.deploy-azure-vmware-solution.configure-nsx-t-network-components
 metadata:
   title: Configure NSX-T network components
-  description: Configure NSX-T network components
+  description: Configure NSX-T network components.
   ms.date: 03/19/2021
   author: sbkuehn
   ms.author: shkuehn

@@ -20,7 +20,7 @@ prerequisites: |
   - Knowledge of HTML, CSS, JavaScript, Git, and npm
   - Some experience with React
 iconUrl: /learn/achievements/react/react-state-events.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:

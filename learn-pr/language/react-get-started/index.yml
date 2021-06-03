@@ -23,7 +23,7 @@ prerequisites: |
   - Knowledge of package management with Node.js and npm
   - A code editor, such as Visual Studio Code
 iconUrl: /learn/achievements/react/react-get-started.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:

@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2021
+  ms.date: 05/24/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
@@ -49,3 +49,14 @@ quiz:
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
       explanation: "That's incorrect. Azure Bastion deployment isn't limited by virtual machine."
+  - content: "An organization has much of its application data in Azure. The security admin wants to use the encryption capabilities in Azure. Which service would the admin use to store the application’s secrets?"
+    choices:
+    - content: "Transparent data encryption."
+      isCorrect: false
+      explanation: "That's incorrect. Transparent data encryption helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity."
+    - content: "Secrets management."
+      isCorrect: false
+      explanation: "That's incorrect. Secrets management is an aspect of Azure Key Vault."
+    - content: "Azure Key Vault."
+      isCorrect: true
+      explanation: "That's correct. Azure Key Vault is a centralized cloud service for storing your application secrets."

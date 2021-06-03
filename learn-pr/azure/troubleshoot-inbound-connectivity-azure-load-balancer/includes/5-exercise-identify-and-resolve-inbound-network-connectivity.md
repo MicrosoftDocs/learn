@@ -27,15 +27,17 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
     ```bash
     cd ~/load-balancer/src/stresstest
     ```
+
 1. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
 
     ```bash
     dotnet run <ip address>
     ```
 
-    This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press **Enter** to stop the application.
+    This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press <kbd>Enter</kbd> to stop the application.
 
 1. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
+
 1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
     > [!div class="mx-imgBorder"]
@@ -49,7 +51,7 @@ The first step is to check that the virtual machines are running. Let's resolve 
 
 ### Test the appretailvm1 virtual machine
 
-You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly because they have private addresses that are only available to other virtual machines on the same subnet. First you connect to the jump box, which has a public IP address and is in the same subnet. Then you can ping the virtual machines from there.
+You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly because they have private addresses that are only available to other virtual machines on the same subnet. First, you connect to the jump box, which has a public IP address and is in the same subnet. Then, you can ping the virtual machines from there.
 
 1. Return to Cloud Shell.
 
@@ -65,7 +67,7 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
     cd ~/load-balancer/src/scripts
     cat passwd.txt
     ```
- 
+
 1. Sign in to the jump box. Replace **azureuser** if you used a different user name.
 
     ```bash
@@ -93,18 +95,21 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 The *retailappvm1* virtual machine is up, and the application is running on that virtual machine. There must be a problem between the load balancer and the virtual machines in the back-end pool.
 
 1. In the Azure portal, search for **Monitor**.
+
 1. On the **Monitor - Overview** page, select **Service Health**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows Service Health option selected from the left-hand side menu.](../media/5-monitor-overview.png)
 
 1. Select **Resource Health**.
+
 1. In the **Resource type** box, select **Load balancer**. In the list of resources, select **retailapplb**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Service Health - Resource health page that shows the retailapplb selected.](../media/5-service-health.png)
 
 1. Wait a few minutes for the load balancer health to be evaluated.
+
 1. Under **Health history**, expand the topmost event and review the recommended steps. These steps suggest checking the VIP (routing rule) and DIP (health probe) endpoints in the load balancer.
 
     > [!div class="mx-imgBorder"]
@@ -112,7 +117,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
-1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
+1. Select **Load balancing rule** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
@@ -120,12 +125,14 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 1. Close the **retailapprule** page.
 
 1. Select **Health probes** > **retailapphealthprobe**.
+
 1. Change the **Port** from 85 back to 80, and then select **Save**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapphealthprobe** page that shows the port number updated to 80.](../media/5-retailapphealthprobe.png)
 
 1. Wait a few minutes.
+
 1. Select **Dashboard** in the menu on the left of the Azure portal.
 
 1. On the dashboard, select the chart showing the Health Probe Status and Data Path Availability metrics. The **Data Path Availability** metric should rise to 100, but the **Health Probe Status** metric will hover around 50. There's now a path available from the load balancer to at least one virtual machine, but only 50 percent of the virtual machines are showing as healthy.
@@ -148,7 +155,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
     dotnet run <ip address>
     ```
 
-    As before, the test still fails. There's now a path from the load balancer to at least one virtual machine, but this path doesn't work from a client running outside of the virtual network. Select **Enter** to stop the stress test app.
+    As before, the test still fails. There's now a path from the load balancer to at least one virtual machine, but this path doesn't work from a client running outside of the virtual network. Press <kbd>Enter</kbd> to stop the stress test app.
 
 ### Check NSG rules for the subnet
 
@@ -160,7 +167,8 @@ The problem might be caused by a network security rule blocking external traffic
 
 1. Select **Inbound security rules**. Although there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule that permits traffic originating from outside the virtual network through port 80.
 
-1. Select **+ Add**.
+1. Select **Add**. The **Add inbound security rule** pane appears.
+
 1. Enter the following settings, and then select **Add**.
 
     | Property  | Value  |
@@ -168,8 +176,9 @@ The problem might be caused by a network security rule blocking external traffic
     | Source | Any |
     | Source port ranges | \*  |
     | Destination | Any |
+    | Service | Custom |
     | Destination port ranges | 80 |
-    | Protocol | Tcp |
+    | Protocol | TCP |
     | Action | Allow |
     | Priority | 100 |
     | Name | Port_80 |
@@ -182,14 +191,15 @@ The problem might be caused by a network security rule blocking external traffic
     dotnet run <ip address>
     ```
 
-    The application now runs, but you only get a response from the *retailappvm1* virtual machine. Allow the application to run for two or three minutes. Select **Enter** to stop it.
+    The application now runs, but you only get a response from the *retailappvm1* virtual machine. Allow the application to run for two or three minutes. Press <kbd>Enter</kbd> to stop it.
 
 1. In the Azure portal, go to the dashboard.
+
 1. Select the chart for the average Packet Count metric. Note the peak value for the latest run of the stress test application. This value should be at least double that of the value recorded earlier when both virtual machines were available. Although you now have a functioning system, you're in danger of overloading the working virtual machine.
 
 ### Test the appretailvm2 virtual machine
 
-It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up and whether Load Balancer can connect to it.
+It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
 1. In Cloud Shell, sign in to the jump box again.
 
@@ -208,6 +218,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 1. In the Azure portal, go to the resource group **learn-ts-loadbalancer-rg**.
 
 1. Select the **retailappvm2** virtual machine.
+
 1. The **Overview** page shows that the virtual machine has stopped. Select **Start**, and wait for the machine to begin running.
 
     > [!div class="mx-imgBorder"]
@@ -227,7 +238,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     wget retailappvm2
     ```
 
-    This command times out. Either the application isn't running or there might be a network issue. Select **Ctrl+C** to stop the command.
+    This command times out. Either the application isn't running or there might be a network issue. Select <kbd>Ctrl+C</kbd> to stop the command.
 
 1. On the jump box, sign in to the *retailappvm2* virtual machine. When prompted, enter the same password that you specified earlier.
 
@@ -297,7 +308,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 
     You should now see messages from **retailappvm1** and **retailappvm2**. You have restored full connectivity to the system.
 
-1. Press **Enter** to stop the application.
+1. Press <kbd>Enter</kbd> to stop the application.
 
 ## Summary
 

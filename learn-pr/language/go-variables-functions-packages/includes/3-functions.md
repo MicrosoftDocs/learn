@@ -6,7 +6,7 @@ Up to this point, we've been calling the `println()` function, and we've been wr
 
 The function you've been interacting with is the `main()` function. All executable programs in Go have this function because it's the program's starting point. You can only have one `main()` function in your program. If you're creating a Go package, you don't need to write a `main()` function. We'll look at how to create packages in an upcoming module.
 
-Before we jump into the basics of creating custom functions in Go, let's look at one crucial aspect of the `main()` function. As you might have noticed, the `main()` function doesn't have any parameters and returns nothing. But that doesn't mean it can't read values from the user, like command-line arguments. If you need to access command-line arguments in Go, you can do it with the [os package](https://golang.org/pkg/os/) and the `os.Args` variable, which holds all the arguments passed to the program.
+Before we jump into the basics of creating custom functions in Go, let's look at one crucial aspect of the `main()` function. As you might have noticed, the `main()` function doesn't have any parameters and returns nothing. But that doesn't mean it can't read values from the user, like command-line arguments. If you need to access command-line arguments in Go, you can do it with the [os package](https://golang.org/pkg/os/?azure-portal=true) and the `os.Args` variable, which holds all the arguments passed to the program.
 
 The following code reads two numbers from the command line and sums them up:
 

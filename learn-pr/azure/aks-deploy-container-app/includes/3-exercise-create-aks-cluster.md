@@ -12,7 +12,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
+    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
@@ -47,21 +47,21 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
 
 ## Link with kubectl
 
-1. Link your Kubernetes cluster with `kubectl` by using the following command in Cloud Shell.
+1. Link your Kubernetes cluster with `kubectl` by running the following command in Cloud Shell.
 
     ```azurecli
     az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP
     ```
 
-    This command will add an entry to your `~/.kube/config` file, which holds all the information to access your clusters. Kubectl allows you to manage multiple clusters from a single command-line interface.
+    This command will add an entry to your `~/.kube/config` file, which holds all the information to access your clusters. Kubectl enables you to manage multiple clusters from a single command-line interface.
 
-1. Execute the `kubectl get nodes` command to check that you can connect to your cluster and confirm its configuration.
+1. Run the `kubectl get nodes` command to check that you can connect to your cluster, and confirm its configuration.
 
     ```bash
     kubectl get nodes
     ```
 
-    You should receive a list of two available nodes.
+    A list of two available nodes appears.
 
     ```output
     NAME                                STATUS   ROLES   AGE    VERSION

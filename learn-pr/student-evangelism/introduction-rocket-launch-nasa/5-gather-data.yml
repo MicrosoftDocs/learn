@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-rocket-launch-nasa.5-gather-data
 metadata:
-  title: The role of data in machine learning
-  description: Find out why we need data to program machine learning models.
-  ms.date: 03/10/2021
-  author: sguthals
+  title: Collect, clean, and manipulate data
+  description: Learn how, why, and when to manipulate the data you'll use in a machine learning model.
+  ms.date: 04/08/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: The role of data in machine learning
+title: Collect, clean, and manipulate data
 durationInMinutes: 4
 content: |
   [!include[](includes/5-gather-data.md)]

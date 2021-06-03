@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.get-started.paths-views
+title: Understand paths and views
+metadata:
+  title: Understand paths and views
+  description: Learn about paths and views in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-paths-views.md)]
