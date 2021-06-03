@@ -41,14 +41,14 @@ We're gathering tools and building a foundation as a web developer. Remember, yo
 
 #### Microsoft Edge documentation
 
-- [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)
+- [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide)
 
 #### Azure Static Web Apps
 
 One way to deploy your website is to use Azure Static Web Apps.
 
-- [Azure Static Web Apps on Microsoft Learn](https://docs.microsoft.com/learn/paths/azure-static-web-apps/)
-- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
+- [Azure Static Web Apps on Microsoft Learn](/learn/paths/azure-static-web-apps/)
+- [Azure Static Web Apps on Microsoft Docs](/azure/static-web-apps)
 
 #### Visual Studio Code documentation
 
