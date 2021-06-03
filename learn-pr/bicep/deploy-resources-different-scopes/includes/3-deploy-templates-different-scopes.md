@@ -12,33 +12,44 @@ Notice that you're telling Bicep that the resources will be deployed into the sc
 
 You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes that the file will be deployed to a resource group.
 
-## Create management groups and resource groups
+## Create resource groups
 
-Now that you understand how to create deployments at various scopes, let's apply this understanding to creating a management group, which is a tenant-scope resource:
-
-:::code language="plaintext" source="code/3-create-mg.bicep" highlight="1" :::
-
-> [!NOTE]
-> The preceding example illustrates how to create a management group hierarchy by using Bicep. The *NonProduction* management group will be a child of the root management group, and the *SecretRND* management group will be a child of the *NonProduction* management group.
-
-You can also create resource groups by using Bicep. A resource group is a subscription-scope resource:
+Now that you understand how to create deployments at various scopes, try applying this understanding to creating a management group, which is a subscription-scoped resource:
 
 :::code language="plaintext" source="code/3-create-rg.bicep" highlight="1" :::
 
+In this example, notice that the Bicep file has a `targetScope` of `subscription`, which means that Bicep will consider all the resources in the file to be subscription-scoped by default.
+
 > [!NOTE]
-> You'll see how to create Azure subscriptions by using Bicep later in this module.
+> You'll see how to use Bicep to create Azure subscriptions and management groups later in this module.
 
 ## Submit a deployment
 
 ::: zone pivot="cli"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that each deployment scope has a different command. To deploy to a subscription, you must use the `az deployment sub create` command. For management group deployments, use the `az deployment mg create` command. For tenant deployments, use `az deployment tenant create`.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that you use a different Azure CLI command for each deployment scope, as shown here:
+
+| To deploy at this scope: | Run this Azure CLI command: |
+|-|-|
+| Resource group | `az deployment group create` |
+| Subscription | `az deployment sub create` |
+| Management group | `az deployment mg create` |
+| Tenant | `az deployment tenant create` |
+| | |
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that each deployment scope has a different cmdlet. To deploy to a subscription, you must use the `New-AzSubscriptionDeployment` cmdlet. For management group deployments, use the `New-AzManagementGroupDeployment` cmdlet. For tenant deployments, use `New-AzTenantDeployment` cmdlet.
+When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that you use a different PowerShell cmdlet for each deployment scope, as shown here:
+
+| To deploy at this scope: | Use this PowerShell cmdlet: |
+|-|-|
+| Resource group | `New-AzResourceGroupDeployment` |
+| Subscription | `New-AzSubscriptionDeployment` |
+| Management group | `New-AzManagementGroupDeployment` |
+| Tenant | `New-AzTenantDeployment` |
+| | |
 
 ::: zone-end
 
@@ -48,4 +59,5 @@ Azure stores metadata about each deployment. Unlike deployments to resource grou
 
 - **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name, but if you don't, the file name of the template file will be used as the deployment name.
 
-The combination of the scope, location, and name must be unique. For example, if you create a subscription deployment named `my-deployment` and use the East US location to store its metadata, you can't then create another deployment to the same subscription also named `my-deployment`, but in West Europe.
+> [!IMPORTANT]
+> The combination of the scope, location, and name must be unique. For example, if you create a subscription deployment named `my-deployment` and use the East US location to store its metadata, you can't then create another deployment to the same subscription also named `my-deployment`, but put it in West Europe. However, you can create another deployment named `my-deployment` in East US, and it will overwrite the older deployment.

@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/5-deploy-multiple-scopes.md)]
