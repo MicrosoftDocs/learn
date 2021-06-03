@@ -1,14 +1,14 @@
-You now understand the various scopes that resources can be deployed to. In this unit, you learn how to start writing Bicep files to deploy to these scopes.
+You now understand the various scopes that resources can be deployed at. In this unit, you learn how to start writing Bicep files to deploy at these scopes.
 
 ## Specify the target scope for a Bicep file
 
 Bicep needs to know the scope at which a file will be deployed. This information is important because Bicep needs to ensure that the resources you're deploying are valid for the scope you're using. For example, the Bicep extension for Visual Studio Code warns you if you try to deploy a resource at an unsupported scope.
 
-Use the `targetScope` keyword to tell Bicep that the resources in the file are for a specific scope. Here's an example of a Bicep file that will be deployed to the management group scope:
+Use the `targetScope` keyword to tell Bicep that the resources in the file are for a specific scope. Here's an example of a Bicep file that will be deployed at the management group scope:
 
 :::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
 
-Notice that you're telling Bicep that the resources will be deployed into the scope of a management group, but you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources to. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
+Notice that you're telling Bicep that the resources will be deployed at the scope of a management group, but you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources to. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
 You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGroup`, or `tenant`. If you don't specify it, Bicep assumes that the file will be deployed to a resource group.
 
@@ -53,7 +53,7 @@ When you initiate a deployment, you need to tell Azure which scope you want to d
 
 ::: zone-end
 
-Azure stores metadata about each deployment. Unlike deployments to resource groups, there is some information you need to provide when you deploy to other scopes so that Azure can store the metadata correctly:
+Azure stores metadata about each deployment. Unlike deployments at the resource group scope, there is some information you need to provide when you deploy at other scopes so that Azure can store the metadata correctly:
 
 - **Location**: The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments, because resource groups are created in a location already and that location is used for its deployment metadata. But when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location though.
 
