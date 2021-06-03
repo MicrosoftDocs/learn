@@ -50,7 +50,7 @@ The *title* of a webpage appears at the top of a browser window, and is signific
    ...
    ```
 
-To apply styles to the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent pages. Let's link to an external stylesheet.
+   To apply styles to the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent pages. Let's link to an external stylesheet.
 
 1. In **Visual Studio Code**, add a blank line after the `<title>` element, type `link`, and then press <kbd>Enter</kbd>. VS Code should add the following line to your `index.html` file.
 
