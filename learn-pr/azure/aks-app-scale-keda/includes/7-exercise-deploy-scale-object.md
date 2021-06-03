@@ -21,8 +21,8 @@ This is where we will see what KEDA can do.  We will create a `ScaledObject` to 
       maxReplicaCount: 20           # Optional. Default: 100
     ```
 
-  > [!NOTE]
-  > `minReplicaCount: 0` will take our Deployment default replica count from one to zero.  This will occur if the service is idle and not processing any events.  In this exercise, if there are no items in the Redis list, and the service remains idle, KEDA will scale to zero.
+    > [!NOTE]
+    > `minReplicaCount: 0` will take our Deployment default replica count from one to zero.  This will occur if the service is idle and not processing any events.  In this exercise, if there are no items in the Redis list, and the service remains idle, KEDA will scale to zero.
 
 3. `advanced` - this section is generally related to advanced customization of KEDA. The `restoreToOriginalReplicaCount` instructs KEDA that after any scaling up scenarios, KEDA will return replica count to the original value.  In the case of our example, we set it to `false`, thus we do not return the original value of one, but scale down to the `minReplicaCount` value of zero.
 
