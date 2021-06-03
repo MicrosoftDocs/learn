@@ -79,7 +79,7 @@ Responding to DSR restriction requests
 The applications that support content search in Microsoft 365 and Office 365 are:
 
 - Calendar
--Excel
+- Excel
 - Office Lens
 - OneDrive for Business
 - OneNote
