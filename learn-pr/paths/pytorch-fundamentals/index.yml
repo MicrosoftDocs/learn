@@ -11,7 +11,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 prerequisites: None
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/pytorch-advanced.svg
+video:
+  title: Get started with PyTorch
+  url: https://www.microsoft.com/videoplayer/embed/RE4Nci7
 levels:
 - beginner
 - intermediate
@@ -26,4 +29,4 @@ modules:
 - learn.PyTorch.computer-vision-pytorch
 - learn.PyTorch.nlp-pytorch.nlp-pytorch
 - learn.PyTorch.audio-pytorch
-achievement: learn..trophy
+achievement: learn.pytorch-fundamentals.trophy

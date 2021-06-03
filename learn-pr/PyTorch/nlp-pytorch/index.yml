@@ -15,7 +15,7 @@ abstract: |
   - Introduction to Recurrent Neural Netowrks (RNNs) and Generative Neural Networks (GNNs)
   - Learn about Attention Mechanisms
   - Learn how to build text classification models
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/pytorch-natural-language-process.svg
 levels:
 - beginner
 roles:
@@ -36,4 +36,4 @@ units:
 - learn.PyTorch.nlp-pytorch.summary
 
 badge:
-  uid: learn.PyTorch.badge
+  uid: learn.PyTorch.nlp-pytorch.badge

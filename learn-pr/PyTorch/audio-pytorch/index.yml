@@ -15,7 +15,7 @@ abstract: |
   - Learn the basics of audio data.
   - Learn how to visualize and transform audio data.
   - Build a binary classification speech model that can recognize "yes" and "no".
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/pytorch-audio-data.svg
 levels:
 - beginner
 roles:
@@ -36,4 +36,4 @@ units:
 - learn.PyTorch.audio-pytorch.summary
 
 badge:
-  uid: learn.PyTorch.audio-pytorchbadge
+  uid: learn.PyTorch.audio-pytorch.badge

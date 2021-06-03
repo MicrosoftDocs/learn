@@ -15,7 +15,7 @@ abstract: |
   - Learn how to represent images as tensors
   - Learn how to build Dense Neural Networks (DNNs) and Convolutional Neural Networks (CNNs)
 
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/pytorch-computer-vision.svg
 levels:
 - beginner
 roles:
