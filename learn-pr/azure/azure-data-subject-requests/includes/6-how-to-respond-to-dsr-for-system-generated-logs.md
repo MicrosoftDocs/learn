@@ -48,9 +48,10 @@ One of Contoso's customers who resides in The Netherlands has submitted a DSR fo
 1. Select **Delete permanently**, and then select **Yes** to confirm.
 
 > [!NOTES]
-> •	In Example two, you used the same process that you used to respond to delete requests for Azure-based personal data. The user’s personal data in the system-generated logs is deleted, as is their user account, providing it doesn’t negatively impact the security or integrity of any Microsoft cloud service. This usually happens within 30 days of the user account’s deletion.
+> 
+> In Example two, you used the same process that you used to respond to delete requests for Azure-based personal data. The user’s personal data in the system-generated logs is deleted, as is their user account, providing it doesn’t negatively impact the security or integrity of any Microsoft cloud service. This usually happens within 30 days of the user account’s deletion.
 
-> •	The exception to this 30-day period is with respect to a user's Exchange Online mailbox. To prevent accidental data loss, Exchange Online places data in a holding state for up to 60 days after permanent user-account deletion. You’ll need to contact Microsoft Support if the mailbox data must be removed earlier than the 60-day timeline.
+> The exception to this 30-day period is with respect to a user's Exchange Online mailbox. To prevent accidental data loss, Exchange Online places data in a holding state for up to 60 days after permanent user-account deletion. You’ll need to contact Microsoft Support if the mailbox data must be removed earlier than the 60-day timeline.
 
 ### National clouds
 
