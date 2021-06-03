@@ -4,9 +4,9 @@ Imagine you want to simplify provisioning a new HPC cluster into your company's 
 
 In this exercise, you will step through implementing Azure CycleCloud. The exercise consists of the following tasks:
 
-Task 1: Deploy an Azure CycleCloud Azure VM
-Task 2: Connect to the Azure CycleCloud Azure VM
-Task 3: Add an Azure subscription to Azure CycleCloud
+- Task 1: Deploy an Azure CycleCloud Azure VM
+- Task 2: Connect to the Azure CycleCloud Azure VM
+- Task 3: Add an Azure subscription to Azure CycleCloud
 
 > [!NOTE]
 > To perform this exercise you will require access to an Azure Subscription. Deploying the resources referenced in this exercise will result in some costs being incurred by that subscription.
