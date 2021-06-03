@@ -14,18 +14,18 @@ DSR scenarios usually include two broad tasks. The first is to discover and loca
 |To delet or to be forgotten|Discover|Delete|
 |Of portability|Discover|Export/Receive|
 
-Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the data subject's identity before fulfilling their DSR. However, the data subject doesn't have to specify the reason for the DSR.
+Some DSRs are more complex than others. For example, there might be multiple requests from the same person. Data controllers have the right to validate a data subject's identity before responding to a DSR. However, the data subject doesn't have to specify the reason for the DSR.
 
-### Example 1: DSR against customer data in Azure
+### Example 1: Respond to a  DSR to delete Azure-based customer data
 
-A Contoso customer residing in France has called the DSR toll-free number to enact their right to be forgotten, also known as *right to erasure*. You need to remove all their personal information from Azure. To do this, you can use the following steps:
+A customer residing in France has called the DSR toll-free number to enact their right to be forgotten, also known as a right to erasure. You need to remove all of their personal information from Azure. To do this, perform the following steps:
 
 #### Task 1: Discover
 
 1. Sign into the Azure portal.
 2. Navigate to Azure AD, and then select **Users**.
 3. Locate the user account in the **All users** blade.
-4. Select **Profile** to review the personal data and confirm that this is the DSR data subject.
+4. Select **Profile** to review the personal data, and then confirm that this is the data subject who made the request.
 
 #### Task 2: Delete
 
@@ -36,15 +36,17 @@ A Contoso customer residing in France has called the DSR toll-free number to ena
 5. Select **Delete permanently**, and then select **Yes** to confirm.
 
 > [!NOTE]
-> Deleting this data also means deleting the user from the tenant. However, users are initially soft-deleted, which means that within 30 days of being marked for soft-delete, a tenant admin can recover the account. After 30 days, the account is automatically and permanently deleted from the tenant. You can also speed up the process by manually deleting the user from the recycle bin.
+> Deleting this data also means that the user is deleted from the tenant. However, users are initially soft-deleted. This means that within 30 days of being marked for soft-delete, a tenant admin can recover the account. After 30 days, the account is automatically and permanently deleted from the tenant. You can also speed up the permanent deletion process by manually deleting the user from the recycle bin.
 
-### Example 2: DSR against customer data in Office 365
+### Example 2: Respond to a DSR for access to Office 365 customer data
 
-A Contoso customer residing in California has submitted a DSR form through the company's website. They want access to their personal information that they provided to Contoso via emails and documents. You need to search for their personal information, then give the customer access to that information. If that's not possible, you may need to provide an explanation of why the information can't be provided. To accomplish this, you can use the following steps:
+A Contoso customer who lives in California has submitted a DSR form through the company's website. They want access to the personal information that they provided to Contoso through email and documents.
 
-#### Task one: Discover
+Again, there are two steps here. First, you’ll search for (discover) their personal information. You’ll then give the customer access to that information. If this isn’t possible, you might need to provide an explanation of why the information can't be provided. 
 
-1. Search all content locations with the **Content Search** tool by using identifiers such as:
+#### Task 1: Discover
+
+1. Search all content locations with the **Content Search** tool using identifiers such as:
 
     - Email address or alias (examples: datasubject@contoso.com or datasubject)
     - Phone number
@@ -54,7 +56,7 @@ A Contoso customer residing in California has submitted a DSR form through the c
 2. Narrow down results by using conditions such as:
 
     - File type: for example, **docx**, **pdf**, or **xlsx**
-    - Message type: for example, **\*email** or **\*contacts**
+    - Message type: for example, **email** or **contacts**
     - Compliance tag: for example, *compliancetag="personal data"*
 
 3. Search for data in SharePoint Online and OneDrive for Business with queries such as:
@@ -66,42 +68,42 @@ A Contoso customer residing in California has submitted a DSR form through the c
 
 #### Task 2: Provide access
 
-1. Provide access to data subject by retrieving a copy of the document or item that contains responsive data. To do this, you can preview and download items:
+1. Provide the data subject with access by retrieving a copy of the document or item that contains responsive data.  To do this:
 
     1. In the Compliance Center, open **Content Search**.
     1. Select **Preview results**.
     1. Select an item, and then select **Download original file**.
 
-2. Determine which of the following item (or items) to provide:
+2. Determine which of the following items to provide:
 
     - The actual document
     - An appropriately redacted version
     - A screenshot of portions deemed appropriate to share
 
 > [!NOTE]
-> When providing a copy to the data subject, you might need to remove or redact personal information about other data subjects and any other confidential information.
+> When providing a copy to the data subject, you should remove or redact personal information about other data subjects or other confidential information.
 
-## Tools for fulfilling DSRs for customer data
+## Useful tools for responding to customer-data DSRs 
 
-The following table lists tool that you can use to fulfill DSRs for customer data in Microsoft cloud products.
+The following table lists tool that you can use to respond to customer-data DSRs in Microsoft online services:
 
 |Tool name|Description|
 |------|------|
 |Azure portal|Use this tool to respond to DSRs within Azure.|
-|Content Search eDiscovery tool|This tool is in both the Office 365 Security & Compliance Center, and the Microsoft 365 compliance center. You can use it to help fulfill DSRs against Office 365 / Microsoft 365 applications.|
-|DSR case tool|This tool is in the Office 365 Security & Compliance Center. You can use this tool help with investigations for a data subject.|
-|In-app functionality|For applications that don’t support the Content Search tool, you can use the application itself for responding to DSRs.|
+|Content Search eDiscovery tool|This tool is in the Office 365 Security & Compliance Center and the Microsoft 365 compliance center. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
+|DSR case tool|This tool is in the Office 365 Security & Compliance Center. Use this tool to help with data-subject investigations.|
+|In-app functionality|For applications that don’t support the Content Search tool, use this application for DSR responses.|
 
-## In-scope applications
+## Office 365 applications that help you with DSR responses
 
-Office 365 includes many applications that can store user data. Knowing which applications the data subject uses helps you narrow down what’s in scope for the DSR response. Depending on the application, you might be able to use the Content Search tool to respond. In some cases, however, you'll have to use the in-app functionality to get to the data.
+Office 365 includes many applications that might store user data. Knowing which applications the data subject uses helps narrow down what’s in scope for a DSR response. Depending on the application, you might use the Content Search tool to respond. However, in other cases, you'll use the in-app functionality to access the data.
 
-One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for Business subscription. The subscription's details will show the applications that are included. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
+A quick way to determine the applications that are in-scope is to review the Microsoft 365 for Business subscription. The subscription's details list the included applications. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
 
-## Compliance boundaries
+## Limiting a search using compliance boundaries
 
-*Compliance boundaries* are logical search boundaries. These boundaries control the locations that the people involved in the DSR fulfillment can access. You can use the Compliance Center to create compliance boundaries. Some common use cases for compliance boundaries include:
+*Compliance boundaries* are logical search boundaries. Use these boundaries to control or limit the content locations, such as Exchange Online mailboxes and SharePoint Online sites, in which an IT administrator or compliance officer can search when responding to a DSR. Use the Compliance Center to create compliance boundaries. Common scenarios for setting compliance boundaries include for:
 
-- Geographical boundaries
-- Governmental organizations and agencies
-- Organizational units or departments
+- Geographical boundaries.
+- Governmental organizations and agencies.
+- Organizational units or departments.
