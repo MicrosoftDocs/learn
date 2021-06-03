@@ -6,7 +6,9 @@ You've been tasked with investigating what's available on Azure and to define an
 
 ## What's in the Cloud Adoption Framework?
 
-The Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEA1P]
+
+As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
 
 1. Define your strategy.
 1. Make a plan.
