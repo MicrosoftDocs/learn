@@ -181,7 +181,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="jsoncli,bicepcli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed, and sign in with the same account that you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
@@ -233,7 +233,7 @@ az group create --location eastus --name $resourceGroupName
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
