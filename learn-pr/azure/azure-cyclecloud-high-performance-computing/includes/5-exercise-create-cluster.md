@@ -9,7 +9,7 @@ In this exercise, you will step through deployment of a Slurm-based HPC cluster 
 - Task 3: Configure and start an HPC cluster by using Azure CycleCloud
 - Task 4: Clean up the lab environment
 
-## Prepare for the deployment of an HPC cluster
+## Task 1: Prepare for the deployment of an HPC cluster
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage.
 
@@ -41,7 +41,7 @@ Before you deploy an HPC cluster, you should first ensure that you have sufficie
 
     :::image type="content" source="../media/u5-subscription-vcpu-quotas.png" alt-text="The screenshot depicts the Usage + quotas blade in the Azure portal." border="false":::
 
-## Create an HPC cluster by using Azure CycleCloud
+## Task 2: Create an HPC cluster by using Azure CycleCloud
 
 Now you have the CycleCloud web application installed in an Azure VM, enough vCPU cores available in your Azure subscription, and a designated network subnet capable of accommodating autoscaling of cluster nodes. You're ready to proceed with deployment of a Slurm-based cluster.
 
@@ -86,7 +86,7 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
 
 1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes, and then select **Save**.
 
-## Configure and start an HPC cluster by using Azure CycleCloud
+## Task 3: Configure and start an HPC cluster by using Azure CycleCloud
 
 To prepare for operationalizing your cluster, you'll set alerts to notify you when cluster usage costs reach the budget allocated towards the cost of Azure resources. You'll also validate your deployment by starting the cluster with the graphical interface of the CycleCloud web application.
 
@@ -114,7 +114,7 @@ To prepare for operationalizing your cluster, you'll set alerts to notify you wh
 
     :::image type="content" source="../media/u5-cyclecloud-cluster-started-nodes.png" alt-text="The screenshot depicts the Nodes tab page of contoso-slurm-lab-cluster in the started state in the Azure CycleCloud web application." border="false":::
 
-## Clean up the lab environment
+## Task 4: Clean up the lab environment
 
 You've completed testing of the cluster deployment process by using the Azure CycleCloud application. To avoid unnecessary costs associated with the use of Azure resources, you'll now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this course.
 
