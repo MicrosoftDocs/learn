@@ -1,6 +1,6 @@
-## VM offers in the commercial marketplace
+## Virtual machine offers in the commercial marketplace
 
-When you publish your VM-based application to the Microsoft commercial marketplace, it’s called a VM offer. Customers will be able to find your application in Azure Marketplace—both the online store at https://azuremarketplace.microsoft.com and the marketplace experience in the Azure portal. From Azure Marketplace, customers can purchase your VM offer and deploy it to their Azure subscription in a matter of minutes.
+When you publish your virtual machine (VM) based application to the Microsoft commercial marketplace, it’s called a VM offer. Customers will be able to find your Windows or Linux application in Azure Marketplace—both the online store at https://azuremarketplace.microsoft.com and the marketplace experience in the Azure portal. From Azure Marketplace, customers can purchase your VM offer and deploy it to their Azure subscription in a matter of minutes.
 
 :::image type="content" source="../media/1-vm-azure-marketplace.png" alt-text="Screenshot of the customer Azure Marketplace online store. Apps are filtered to show virtual machine images.":::
 
@@ -8,7 +8,7 @@ When you publish your VM-based application to the Microsoft commercial marketpla
 
 Before you publish your VM offer, you’ll need to decide how you want to use Azure Marketplace to engage with customers and sell your application. When you create your VM offer in Partner Center, you'll be asked to choose a software license model. Your choice has significant implications for you and your customers' marketplace experience, which we'll explain throughout the rest of this unit.
 
-:::image type="content" source="../media/2-vm-licensing-partner-center.png" alt-text="Screenshot of the license model options in Partner Center. This screen appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/3-vm-licensing-partner-center.png" alt-text="Screenshot of the license model options in Partner Center. This screen appears in the 'pricing and availability' step of the publishing process.":::
 
 You have two software licensing options:
 
@@ -17,7 +17,7 @@ You have two software licensing options:
 - **Usage-based monthly billed plan**: Also known as the pay-as-you-go (PAYG) license model,customers purchase a license to your software through Microsoft. When you choose pay-as-you-go, Microsoft processes payments from customers on your behalf. Customers pay using the same payment method that they use to pay for their Azure subscriptions.
 
 >[!NOTE]
->When you choose the usage-based license model, you’ll also have the option to enable free trials for Azure Marketplace customers. You'll get to choose between one, three, or 6-month trial periods when you configure your offer's pricing and availability in Partner Center.
+>When you choose the usage-based license model, you’ll also have the option to enable free trials for Azure Marketplace customers so they can evaluate your application. You'll get to choose between one, three, or 6-month trial periods when you configure your offer's pricing and availability in Partner Center.
 
 As we mentioned at the beginning of this unit, deciding between the BYOL and usage-based license models is an important decision. It has a significant impact on the following:
 

@@ -1,14 +1,14 @@
-Now that we’ve covered VM offer basics and concepts to help create your VM, we’ll spend some time reviewing the Partner Center publishing process. In this process, you’ll put the concepts we discussed in previous units together, providing the information needed to create and publish your offer.
+We’ve covered VM offer basics and concepts to help create your VM. Now we’ll spend some time on an overview of the Partner Center publishing process. In this process, you’ll put all the pieces together, providing the information needed to create and publish your offer.
 
 The publishing process is broken down into several steps, each of which requires that you provide different information about your offer.
 
 ### Offer setup
 
-After clicking “+ New offer” on the overview page of the commercial marketplace section of Partner Center, you’ll be taken to the offer setup page. This is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
+After clicking “+ New offer” on the the commercial marketplace overview page in Partner Center, you’ll be taken to the offer setup page. This page is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
 
 ### Configuring your offer’s properties
 
-:::image type="content" source="../media/6-vm-offer-properties.png" alt-text="Screenshot of the offer properties step of the publishing process in Partner Center.":::
+:::image type="content" source="../media/7-vm-offer-properties.png" alt-text="Screenshot of the offer properties step of the publishing process in Partner Center.":::
 
 When you get to the properties tab of the publishing process, you’ll be asked to define the categories and subcategories that will be used to index your product in Azure Marketplace. You’ll select your choices from a pre-populated list of options.
 
@@ -16,22 +16,24 @@ The properties tab is also where you’ll provide the legal terms and conditions
 
 ### Providing information for your offer listing
 
-:::image type="content" source="../media/7-vm-offer-listing.png" alt-text="Screenshot of the offer listing step of the publishing process in Partner Center.":::
+:::image type="content" source="../media/8-vm-offer-listing.png" alt-text="Screenshot of the offer listing step of the publishing process in Partner Center.":::
 
-In the offer listing tab, you’ll provide information that will be displayed to customers in Azure Marketplace, including descriptions of your VM-based software, user instructions, links to useful product information, and support & engineering contacts for customers. This page is also where you provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Azure Marketplace.
+In the offer listing tab, you’ll provide product information that gets displayed to customers in Azure Marketplace. This information includes descriptions of your VM-based software, user instructions, links to useful product information, and support & engineering contacts for customers. This page is also where you provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Azure Marketplace.
 
 For guidance to help you complete this step, reference our documentation on [offer listing best practices](/azure/marketplace/gtm-offer-listing-best-practices) and [marketing best practices](/azure/marketplace/gtm-marketing-best-practices).
 
 ### Adding a preview audience
 
-When you publish your offer, you’ll be able to identify a preview audience that can access your VM offer and review it before it goes live in Azure Marketplace. For more information, review our [documentation on adding a preview audience for your VM offer](/azure/marketplace/azure-vm-create-preview).
+When you publish your offer, you’ll be able to identify a preview audience that gets access to review your VM offer it's published. For more information, review our [documentation on adding a preview audience for your VM offer](/azure/marketplace/azure-vm-create-preview).
 
 ### Creating VM offer plans
 
-:::image type="content" source="../media/8-vm-offer-pricing-availability.png" alt-text="Screenshot of the pricing and availability step of the publishing process in Partner Center. This step is part of the plan creation process.":::
+:::image type="content" source="../media/9-vm-offer-plan-overview.png" alt-text="Screenshot of the plan overview page of the publishing process in Partner Center. This step is where publishers create new plans for their offer.":::
 
 In the plan overview, you’ll create your VM offer’s plans. Remember, all VM offers must have at least one plan. Your VM offer’s plans define the pricing and availability of your product to customers.
 You’ll choose the Azure regions in which your plan should be available on the plan setup page. Your plan must be available in at least one of the two following Azure regions:
+
+:::image type="content" source="../media/10-vm-offer-plan-setup.png" alt-text="Screenshot of the plan setup page of the publishing process in Partner Center. This step is where publishers choose the Azure regions their plan will be available in.":::
 
 - **Azure Global**: Makes your plan available to customers in all Azure Global regions that have commercial marketplace integration.
 
@@ -39,7 +41,7 @@ You’ll choose the Azure regions in which your plan should be available on the 
 
 On the pricing and availability tab, you’ll choose which markets your VM offer will be available in from a list of over 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-create-plans#markets).
 
-:::image type="content" source="../media/9-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
+:::image type="content" source="../media/11-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
 
 This is also where you select your offer’s license model. As a reminder, the license model dictates whether your customers can purchase a license to use your software through Microsoft. You’ll have two licensing options:
 
@@ -56,7 +58,7 @@ For more detailed guidance on creating plans for your VM offer, reference our [d
 
 ### Completing your offer’s technical configuration
 
-:::image type="content" source="../media/10-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center.":::
+:::image type="content" source="../media/12-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center.":::
 
 When you get to your offer's technical configuration, you'll be prompted to provide the following information about your VM offer:
 
@@ -70,13 +72,13 @@ When you get to your offer's technical configuration, you'll be prompted to prov
   
   - An OS-friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you can use "Ubuntu 18.04 LTS" as your OS-friendly name.
 
-- Recommended VM sizes to deploy your software. Customers will see in these recommendations before they deploy your software from Azure Marketplace. You can provide up to 6 recommended VM sizes for your offer's plan.
+- Recommended VM sizes to deploy your software. Customers will see in these recommendations before they deploy your software from Azure Marketplace. You can provide up to six recommended VM sizes for your offer's plan.
 
-- Public or private open ports used to access your VM. Your offer might require open ports in addition to the default ports required for all VM offers. Additional ports needed will depend on your VMs configuration and operations.
+- Public or private open ports used to access your VM. Your offer might require open ports in addition to the default ports required for all VM offers. Any other ports needed will depend on your VMs configuration and operations.
 
 - The VM generation type that you want to publish. This decision should be based on your customers' needs. You can publish a generation 1 VM, a generation 2 VM, or both. For help with understanding the difference between generation 1 and 2 VMs, reference our [documentation on support for generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
 
-- To wrap up the technical configuration, you'll provide the VM image that customers will use to deploy your offer. This is where you'll select your VM image from the shared image gallery (SIG) that's associated with your Azure tenant. If you don't see your image, make sure that you have access to the SIG. For help accessing your SIG, reference [this documentation](/azure/marketplace/azure-vm-create-using-approved-base#capture-image).
+- To wrap up the technical configuration, you'll provide the VM image that customers will use to deploy your offer. This step is where you'll select your VM image from the shared image gallery (SIG) that's associated with your Azure tenant. If you don't see your image, make sure that you have access to the SIG. For help with accessing your SIG, reference [this documentation](/azure/marketplace/azure-vm-create-using-approved-base#capture-image).
 
 When creating your plans, you can reuse the technical configuration from another plan to save time. If you choose to reuse a technical configuration from another plan, the technical configuration tab will not be shown for the plan you’re creating. The reused technical configuration, including any updates you make in the future, will be used for this plan. You won't be able to change this setting after you publish the offer.
 
