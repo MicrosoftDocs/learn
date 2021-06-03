@@ -10,7 +10,7 @@ In this unit, you'll create a simple project structure using Visual Studio Code 
 
    :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window":::
 
-   If the **Welcome** page isn't visible, you can display the **Welcome** window by selecting **Help > Welcome** on the VS Code menu. (Alternatively, you can display the **Welcome** window using the VS Code command palette. You can open the command pallete by using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on macOS, or by selecting **View > Command Palette** from the VS Code menu. When the command palette is displayed, enter **>Help: Welcome** in the search field to open the **Welcome** window.)
+   If the **Welcome** page isn't visible, you can display the **Welcome** window by selecting **Help > Welcome** on the VS Code menu. (Alternatively, you can display the **Welcome** window using the VS Code command palette. You can open the command palette by using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on macOS, or by selecting **View > Command Palette** from the VS Code menu. When the command palette is displayed, enter **>Help: Welcome** in the search field to open the **Welcome** window.)
 
 1. Select **Open folder** in the **Start** section of the **Welcome** page, or select **File > Open Folder** from the VS Code menu.
 
@@ -42,11 +42,11 @@ In this unit, you'll create a simple project structure using Visual Studio Code 
 
 You could build a website by including all of your HTML, CSS styles, and JavaScript code within a single file. However, in this exercise you're using an HTML file for your content and page structure, with a CSS file for your presentation and styling, and a JavaScript file for your behaviors and interactivity.
 
-Setting up three files helps keep your website project organized, and the separatation of content, styles, and logic is an example of *progressive enhancement*. If JavaScript isn't enabled or supported by your customers, your CSS and HTML will still work. However, if CSS isn't supported by your customers, at least your HTML content will appear.
+Setting up three files helps keep your website project organized, and the separation of content, styles, and logic is an example of *progressive enhancement*. If JavaScript isn't enabled or supported by your customers, your CSS and HTML will still work. However, if CSS isn't supported by your customers, at least your HTML content will appear.
 
 ### Install extensions or packages
 
-You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind these are community-developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
+You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind that these are community-developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
 
 For web development, all you need right now is **open-in-browser**. This extension helps you to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
 
@@ -62,4 +62,4 @@ To install this extension, use the following steps:
 
 1. Switch back to the **Explorer** window by clicking the top icon in the VS Code **Activity Bar**, or use <kbd>Control+Shift-E</kbd> on Windows or <kbd>Command+Shift-E</kbd> on macOS.
 
-Way to go! Installation and setup takes a little extra time, but you only need to install and set up once. Now you're ready to create a website.
+Way to go! Installation and setup take a little extra time, but you only need to install and set up once. Now you're ready to create a website.
