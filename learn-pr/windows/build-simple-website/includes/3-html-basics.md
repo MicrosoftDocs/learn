@@ -74,7 +74,7 @@ To apply styles to the HTML elements on the page, you could write the CSS code d
 
 Let's start filling in the *body* element now.
 
-1. Add a *heading* `<h1>` element, followed by a *paragraph* `<p>` element, and then create an un *ordered list* `<ul>` that contains several *list item* `<li>` elements.
+1. Add a *heading* `<h1>` element, followed by a *paragraph* `<p>` element, and then create an *unordered list* `<ul>` that contains several *list item* `<li>` elements.
 
 1. Edit your code, or copy and paste, so it looks like the following example.
 
