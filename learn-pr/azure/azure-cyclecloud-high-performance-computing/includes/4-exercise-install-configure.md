@@ -127,7 +127,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     > [!NOTE]
     > The Add Subscription pop-up window might appear at this point. If so, do not close this window or configure its settings at this stage. You will configure these settings in the next exercise.
 
-## Tsk 3: Add an Azure subscription to Azure CycleCloud
+## Task 3: Add an Azure subscription to Azure CycleCloud
 
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor Role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you've enabled the system assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you'll take.
 
