@@ -4,7 +4,7 @@ Some Azure resources are deployed outside resource groups, and are instead deplo
 
 Suppose you're responsible for deploying and configuring Azure infrastructure at a toy company. Your R&D team is designing a new toy as part of a top-secret project called Project Teddybear. The team has asked you to create a dedicated Azure subscription to help prevent the project information from accidentally being exposed to the rest of the company.
 
-The R&D team plans to use virtual machines within the subscription, but to save money, they've asked for your help to ensure that only certain virtual machine SKUs can be created within that subscription. The team also needs your assistance to create a virtual network in the subscription, because that network will eventually need to connect to the main corporate network, which you help to manage.
+The R&D team plans to use virtual machines within the subscription, but to save money, the team has asked for your help to ensure that only certain virtual machine SKUs can be created within that subscription. The team also needs your assistance to create a virtual network in the subscription, because that network will eventually need to connect to the main corporate network, which you help to manage.
 
 Here's a diagram that shows how these components fit within their Azure subscription:
 
@@ -17,7 +17,7 @@ You know the R&D team has recently been given a lot of new funding, so it's like
 In this module, you'll learn about the various scopes that Azure resources can be deployed to and some of the common resources that are deployed outside resource groups. You'll create a Bicep file to deploy to a subscription and a resource group. You'll also create a Bicep file to deploy to a management group. In the process, you'll learn about several features of Bicep, including how to:
 
 - Set the scope of a Bicep file by using the `targetScope` keyword.
-- Use modules and the `scope` keyword to deploy to different scopes within a single deployment.
+- Use modules and the `scope` keyword to deploy your resources to different scopes within a single deployment.
 - Target specific scopes by using the `resourceGroup()`, `subscription()`, `managementGroup()`, and `tenant()` functions.
 
 ## What is the main goal?
@@ -41,8 +41,8 @@ To follow along with the exercises in the module, you'll need:
   > [!TIP]
   > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
-- [Visual Studio Code](https://code.visualstudio.com), installed locally.
-- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.
-- Either of the following:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
+- [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+- Either of the following:  
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
   - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
