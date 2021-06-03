@@ -25,7 +25,7 @@ To facilitate this experience, you’ll be asked to provide all the information 
 
 ### VM offer plans and pricing
 
-VM offers must have at least one plan. You can create various different plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, you can check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
+VM offers must have at least one plan. You can create a variety of plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, you can check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
 
 #### VM offer pricing
 
@@ -41,7 +41,7 @@ When you publish your offer, you’ll only be asked to provide pricing informati
 
 #### Selecting a price entry option
 
-:::image type="content" source="../media/3-vm-price-entry-options-1.png" alt-text="Screenshot of the price entry options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/4-vm-price-entry-options-1.png" alt-text="Screenshot of the price entry options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
 
 When you create your VM offer in Partner Center and configure its plans, you’ll be asked to select a price entry option. The different price entry options give you varying levels of flexibility to structure your software’s price. You’ll have three price entry options:
 
@@ -56,17 +56,17 @@ When you create your VM offer in Partner Center and configure its plans, you’l
 
 #### Enabling VM offer free trials
 
-When you select the usage-based license model for your VM offer, you can also choose to offer free trials for your customers. You can offer customers one-, three-, or six-month free trials. If you choose to enable free trials, Microsoft will automatically forego billing customers for software costs through the trial period. At the end of the trial period, Microsoft automatically converts the customer to a paid software plan.
+When you select the usage-based license model for your VM offer, you can also choose to offer free trials for your customers. You can offer customers one-, three-, or six-month free trials so they can evaluate your application. If you choose to enable free trials, Microsoft will automatically forego billing customers for software costs through the trial period. At the end of the trial period, Microsoft automatically converts the customer to the paid software plan that's associated with the free trial.
 
-Adding a free trial to your offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and free trials can be added for each of your offer’s plan.
+Adding a free trial to your offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and free trials can be added for each of your offer’s plan. 
 
-:::image type="content" source="../media/4-vm-free-trial-option.png" alt-text="Screenshot of the free trial options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/5-vm-free-trial-option.png" alt-text="Screenshot of the free trial options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
 
 #### Selecting plan visibility
 
 When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is public or private. Public plans are made available to all Azure Marketplace customers.Private plans will only be made available to specific customers that you choose. Private plans can be used to negotiate custom terms and pricing with specific customers.
 
-:::image type="content" source="../media/5-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/6-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
 
 >[!NOTE]
 >To publish a private plan, you’ll need to provide the Azure tenant IDs of the customers that want to use your software. Only those customers will see your private offer in the Azure portal.

@@ -28,10 +28,12 @@ When you publish your offer, you’ll be able to identify a preview audience tha
 
 ### Creating VM offer plans
 
-:::image type="content" source="../media/8-vm-offer-pricing-availability.png" alt-text="Screenshot of the pricing and availability step of the publishing process in Partner Center. This step is part of the plan creation process.":::
+:::image type="content" source="../media/8-vm-offer-plan-overview.png" alt-text="Screenshot of the plan overview page of the publishing process in Partner Center. This step is where publishers create new plans for their offer.":::
 
 In the plan overview, you’ll create your VM offer’s plans. Remember, all VM offers must have at least one plan. Your VM offer’s plans define the pricing and availability of your product to customers.
 You’ll choose the Azure regions in which your plan should be available on the plan setup page. Your plan must be available in at least one of the two following Azure regions:
+
+:::image type="content" source="../media/9-vm-offer-plan-setup.png" alt-text="Screenshot of the plan setup page of the publishing process in Partner Center. This step is where publishers choose the Azure regions their plan will be available in.":::
 
 - **Azure Global**: Makes your plan available to customers in all Azure Global regions that have commercial marketplace integration.
 
@@ -39,7 +41,7 @@ You’ll choose the Azure regions in which your plan should be available on the 
 
 On the pricing and availability tab, you’ll choose which markets your VM offer will be available in from a list of over 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-create-plans#markets).
 
-:::image type="content" source="../media/9-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
+:::image type="content" source="../media/10-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
 
 This is also where you select your offer’s license model. As a reminder, the license model dictates whether your customers can purchase a license to use your software through Microsoft. You’ll have two licensing options:
 
@@ -56,7 +58,7 @@ For more detailed guidance on creating plans for your VM offer, reference our [d
 
 ### Completing your offer’s technical configuration
 
-:::image type="content" source="../media/10-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center.":::
+:::image type="content" source="../media/11-vm-offer-technical-configuration.png" alt-text="Screenshot of the technical configuration step of the publishing process in Partner Center.":::
 
 When you get to your offer's technical configuration, you'll be prompted to provide the following information about your VM offer:
 

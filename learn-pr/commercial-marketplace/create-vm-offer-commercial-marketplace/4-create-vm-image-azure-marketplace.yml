@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-vm-offer-commercial-marketplace.4-create-vm-image-azure-marketplace
-title: Create your VM image for Azure Marketplace
+title: Create your virtual machine image for Azure Marketplace
 metadata:
-  title: Create your VM image for Azure Marketplace
+  title: Create your virtual machine image for Azure Marketplace
   description: In this unit, we review the process of creating a VM image for Azure Marketplace using Packer.
-  ms.date: 05/20/2021
+  ms.date: 06/03/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial

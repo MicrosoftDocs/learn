@@ -1,13 +1,13 @@
 Now that you understand the different ways you can sell your virtual machine (VM) offer through Microsoft, we’ll review information that will help you create your VM image for Azure Marketplace. We’ll cover the process of building, configuring, and testing your VM image before publishing it to Azure Marketplace. The information provided in this unit is meant to give you a high-level view of the VM creation process, providing links to more detailed documentation for help as you build your VM.
 
-When you publish your VM to Azure Marketplace, you’ll connect the VM image that contains your software with the offer information you provide in Partner Center. To make the connection, your virtual machine image needs to be stored in either a shared image gallery (SIG) or on an unmanaged virtual hard disk (VHD) in an Azure storage account. We recommend using the SIG approach because it simplifies the technical configuration of your offer in Partner Center.
+When you publish your VM to Azure Marketplace, you’ll connect the VM image that contains your software with the offer information you provide in Partner Center. To make the connection, your virtual machine image needs to be stored in either a Shared Image Gallery (SIG) or on an unmanaged virtual hard disk (VHD) in an Azure storage account. We recommend using the SIG approach because it simplifies the technical configuration of your offer in Partner Center.
 
 >[!TIP]
 >The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account. If the Partner Center account isn't associated with the same Azure tenant, you won't be able to access your SIG image.
 
 ## Building your VM image
 
-When you create your VM, you can start with an approved base image, or you can build a custom VM image that contains your software. In this section, we’ll review the process of using Packer to build a VM that you’ll use to create your VM offer.
+When you create your VM, you can start with an approved base image, or you can build a custom VM image that contains your software. You can use a variety of methods to create your offer's base VM image, including third-party software products that automate the process. In this section, we’ll provide an overview of using a tool called Packer to build a VM that you’ll use to create your offer.
 
 >[!NOTE]
 >Packer is a third-party, open-source tool for creating machine images.
