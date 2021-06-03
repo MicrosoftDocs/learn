@@ -26,7 +26,7 @@ While there are many NoSQL data models, four broad data model families are commo
 
 ## Why use a NoSQL database with the document data model?
 
-The document data model breaks data down into individual **document** entities. A document can be any structured data type, but [JSON](what-is-a-json-document) is commonly used as the data format. The Azure Cosmos DB SQL API supports JSON
+The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB SQL API supports JSON natively.
 
 :::image type="content" source="../media/2-document-db.svg" alt-text="A" border="false":::
 
