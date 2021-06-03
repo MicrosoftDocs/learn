@@ -4,10 +4,10 @@ Now that you've provisioned an Azure VM hosting the CycleCloud web applications,
 
 In this exercise, you will step through deployment of a Slurm-based HPC cluster into Azure by using Azure CycleCloud. The exercise consists of the following tasks:
 
-Task 1: Prepare for the deployment of an HPC cluster
-Task 2: Create an HPC cluster by using Azure CycleCloud
-Task 3: Configure and start an HPC cluster by using Azure CycleCloud
-Task 4: Clean up the lab environment
+- Task 1: Prepare for the deployment of an HPC cluster
+- Task 2: Create an HPC cluster by using Azure CycleCloud
+- Task 3: Configure and start an HPC cluster by using Azure CycleCloud
+- Task 4: Clean up the lab environment
 
 ## Prepare for the deployment of an HPC cluster
 
