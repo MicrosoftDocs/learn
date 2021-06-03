@@ -1,4 +1,4 @@
-Adatum's management team is requesting support for additional customer needs for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this goal, you decided to explore the functionality of Azure IoT Central. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
+Adatum's management team is requesting support for additional customer needs for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this goal, you decided to explore the functionality of Azure IoT Central. 
 
 ## What is Azure IoT Central?
 

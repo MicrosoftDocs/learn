@@ -1,8 +1,4 @@
-﻿This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. For more in-depth knowledge and tutorials about these topics, refer to:
-
-* [IoT Central device development guide](https://docs.microsoft.com/azure/iot-central/core/overview-iot-central-developer?azure-portal=true)
-* [IoT Central solution builder guide](https://docs.microsoft.com/azure/iot-central/core/overview-iot-central-solution-builder?azure-portal=true)
-* [Tutorial: Create and connect a client application to your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/tutorial-connect-device?azure-portal=true)
+﻿This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
 
 In this exercise, you'll:
 
@@ -18,9 +14,9 @@ In this exercise, you'll:
 ## Create an Azure IoT Central application
 
 1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon.
+1. On the **Welcome to IoT Central** page, select the avatar icon (labeled as 1 on the image below).
 1. When prompted, sign in to access the Azure subscription you'll be using in this module.
-1. On the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry.
+1. On the **Welcome to IoT Central** page, expand the vertical menu (labeled as 2 on the image below) and select the **My apps** menu (labeled as 3 in the image below) entry.
 1. On the **My apps** page, select **+ New application**.
 1. On the **Build your IoT application** page, review the available application templates, and then on the **Custom app** tile, select **Create app**.
 1. On the **New application** page, configure the following settings, and then select **Create**.
@@ -63,7 +59,7 @@ In this exercise, you'll:
    > [!NOTE]
    > Ensure that you use lowercase characters for the capability name **humidity**.
 
-1. Next to the **Capabilities** section, select the downward-facing caret.
+1. In the **Capabilities** section, next to the humidity line item, select the downward-facing caret.
 1. In the newly displayed **Capabilities** subsection, specify the following settings (leave others with their default values):
 
    | Setting | Value |
@@ -103,13 +99,14 @@ In this exercise, you'll:
    :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-draft.png" alt-text="Screenshot of the IoT Central Application portal, capabilities of the Raspberry Pi device template page.":::
 
 1. On the **Raspberry Pi** page, select **Views**, and on the **Select to add a new view** pane, select **Generate default views**.
-1. In the **Select the applicable views to be generated** section, ensure that the following options are selected, and then select **Generate default dashboard view(s)**.
+1. In the **Select the applicable views to be generated** section, ensure that the following options are selected:
 
-    - **Overview**. Provides a view with device telemetry, displaying charts and metrics.
-    - **About**. Provides a view with device information, displaying its properties.
+   - **Overview**. Provides a view with device telemetry, displaying charts and metrics.
+   - **About**. Provides a view with device information, displaying its properties.
 
+1. Select **Generate default dashboard view(s)**
 1. On the **Raspberry Pi** page, in the **Views** section, select **About**.
-1. On the **Raspberry Pi** page, in the **Edit view** section, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **humidity**, and then select **Add title**.
+1. On the **Raspberry Pi** page, in the **Edit view** section, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **humidity**, and then select **Add title** at the bottom of the page.
 1. On the **Raspberry Pi** page, in the **Edit view** section, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **temperature**, and then select **Add title**.
 1. On the **Raspberry Pi** page, select **Save** to save the changes to the device template **About** view.
 1. On the **Raspberry Pi** page, select **Publish** to make the device template available for IoT device integration, and when presented with the **Publish this device template to the application** window, select **Publish** again.
@@ -134,6 +131,9 @@ In this exercise, you'll:
 1. On the **Devices** page, select the **raspberrypi-1** entry.
 1. On the **raspberrypi-1** page, select **Connect**.
 1. In the **Device connection** window, identify the values of **ID scope**, **Device ID**, and **Primary key** properties, record them in Notepad, and then select **Close**.
+
+   > [!NOTE]
+   > In general, sending keys to a third party website is not recommended, but it's done here for the sake of convenience.
 
    :::image type="content" source="../media/3-iot-new-device-connection.png" alt-text="Screenshot of the new Raspberry Pi device connection window in the IoT Central Application portal.":::
 
@@ -170,7 +170,7 @@ In this exercise, you'll:
 
 1. In the IoT Central Application portal, in the vertical menu, select **Analytics**.
 1. On the **Analytics** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry. In the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
-1. On the **Analytics** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window, and then select **Save**.
+1. On the **Analytics** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window or simply select **Last 15 minutes**, and then select **Save**.
 
    :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-timeframe.png" alt-text="Screenshot of the IoT Central application window, raspberrypi-1 device telemetry Analytics timeframe settings.":::
 

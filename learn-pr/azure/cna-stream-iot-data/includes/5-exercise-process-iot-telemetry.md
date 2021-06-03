@@ -47,7 +47,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
 1. Within the browser window displaying the Azure portal with the Azure Function app provisioning status blade, select **Go to resource**.
 1. On the Azure Function app blade, select **Functions**, and then select **+ Add**.
-1. On the **Add function** blade, select the **HTTP trigger** template entry, and then select **Add**.
+1. On the **Add function** blade, select the **HTTP trigger** template entry, and then select **Add**. If prompted, accept the defaults for the HTTP trigger template. 
 
    :::image type="content" source="../media/5-azure-function-app-function-add.png" alt-text="Screenshot of the Azure portal Azure Function app Add function blade.":::
 
@@ -152,14 +152,14 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
    :::image type="content" source="../media/5-azure-blob-container-create.png" alt-text="Screenshot of the Azure portal, New container blade.":::
 
-1. On the Azure storage account blade, in the vertical menu, in the **Settings** section, select **Access keys**. Select **Show keys**, and then record the value of the connection string corresponding to **key1**.
+1. On the Azure storage account blade, in the vertical menu, in the **Security + Networking** section, select **Access keys**. Select **Show keys**, and then record the value of the connection string corresponding to **key1**.
 
    :::image type="content" source="../media/5-azure-storage-account-keys.png" alt-text="Screenshot of the Azure portal, Access keys blade.":::
 
 ## Configure and validate data export of an Azure IoT Central application
 
 1. Switch to the web browser window displaying the **adatum-iot-custom-application** page in the IoT Central Application portal.
-1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **App settings** section, select **Data export**, and then select **+ New export**.
+1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **App settings** section, select **Data export**, and then select **+ Add an export**.
 
    :::image type="content" source="../media/5-iot-custom-application-new-export.png" alt-text="Screenshot of the  Azure IoT Central portal, Data export page.":::
 
@@ -177,7 +177,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
    :::image type="content" source="../media/5-iot-export-new-destination.png" alt-text="Screenshot of the Azure IoT Central application export new destination settings.":::
 
-1. On the **Create new export** page, select **Create**, and then select **Save**.
+1. Select **Create** and, on the **Create new export** page, select **Save**.
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used earlier in this exercise. On this page, directly after the code pane, select **Run**, and verify that the simulated device is sending messages to the Azure IoT Central application.
 1. Switch to the browser window displaying the Azure storage account blade in the Azure portal.
 1. On the Azure storage account blade, in the vertical menu, in the **Blob service** section, select **Containers**.
