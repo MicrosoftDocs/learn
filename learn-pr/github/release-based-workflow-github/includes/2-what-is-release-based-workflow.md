@@ -40,8 +40,6 @@ Learn more about [tracking the progress of your work with milestones](https://he
 
 Repositories that have multiple developers working in parallel need a well-defined branching strategy. Settling on a unified approach early in the project will save confusion and frustration as the team and codebase scale.
 
-Learn about [how we use Git at Microsoft](/azure/devops/user-guide/code-with-git?azure-portal=true).
-
 ### The GitHub flow
 
 In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While GitHub can work with virtually any software development process, it's recommended that you consider [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true) if your team has not yet settled on a process.

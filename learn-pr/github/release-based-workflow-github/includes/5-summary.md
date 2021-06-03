@@ -17,7 +17,6 @@ Here are some links to more information on the topics we discussed in this modul
 - [Managing project boards](https://help.github.com/github/managing-your-work-on-github/managing-project-boards?azure-portal=true)
 - [Tracking the progress of your work with project boards](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards?azure-portal=true)
 - [Tracking the progress of your work with milestones](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones?azure-portal=true)
-- [How We Use Git at Microsoft](/azure/devops/user-guide/code-with-git)
 - [About GitHub releases](https://help.github.com/github/administering-a-repository/about-releases?azure-portal=true)
 - [Release Drafter app](https://github.com/apps/release-drafter?azure-portal=true)
 - [Git cherry-pick documentation](https://git-scm.com/docs/git-cherry-pick?azure-portal=true)
