@@ -9,6 +9,6 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 25
 content: |
   [!include[](includes/4-exercise-install-configure.md)]

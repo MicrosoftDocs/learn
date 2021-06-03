@@ -2,6 +2,15 @@ Azure CycleCloud is a Linux-based web application, which you can install and use
 
 Imagine you want to simplify provisioning a new HPC cluster into your company's Azure subscription by using Azure CycleCloud. You'll also want to ensure that the cluster you deploy in Azure will closely match the architecture and software stack of the existing on-premises cluster. To accomplish these objectives, you'll follow the Microsoft recommendation and use an Azure Marketplace-based image to deploy Azure CycleCloud on an Azure VM.
 
+In this exercise, you will step through implementing Azure CycleCloud. The exercise consists of the following tasks:
+
+Task 1: Deploy an Azure CycleCloud Azure VM
+Task 2: Connect to the Azure CycleCloud Azure VM
+Task 3: Add an Azure subscription to Azure CycleCloud
+
+> [!NOTE]
+> To perform this exercise you will require access to an Azure Subscription. Deploying the resources referenced in this exercise will result in some costs being incurred by that subscription.
+
 ## Deploy an Azure CycleCloud Azure VM
 
 You'll start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image.
@@ -26,7 +35,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | Virtual machine name | Enter **cyclecloud-vm**. |
     | Region | Select the name of any Azure region that's close to your location where you can provision Azure VMs. |
     | Availability options | **no infrastructure redundancy required** | 
-    | Image | Accept the default selection matching the marketplace image you chose in the previous step. |
+    | Image | Accept the default image selection which is determined by the marketplace plan you chose in the previous step. |
     | Azure Spot instance | Leave the checkbox unselected. |
     | Size | Select **See all sizes**, on the **Select a VM size** blade, select the **Standard E4s v3** entry, and then enter **Select**. |
 
@@ -65,7 +74,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
 
     | Setting | Value |
     | --- | --- |
-    | Enable basic plan for free | If enabled, clear the checkbox. |
+    | Enable basic plan for free | If present and enabled, clear the checkbox. |
     | Boot diagnostics | Ensure that the **Enable with managed storage account (recommended)** option is selected. |
     | System assigned managed identity | Select the checkbox. |  
 
@@ -115,6 +124,9 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     > [!NOTE]
     > The user ID and the SSH public key don't have to be the same as those you specified when deploying the Azure VM, but we recommend that you use the same value for simplicity.
 
+    > [!NOTE]
+    > The Add Subscription pop-up window might appear at this point. If so, do not close this window or configure its settings at this stage. You will configure these settings in the next exercise.
+
 ## Add an Azure subscription to Azure CycleCloud
 
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor Role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you've enabled the system assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you'll take.
@@ -136,7 +148,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for **Storage accounts**.
-1. On the **Storage accounts** blade, select **+ New**.
+1. On the **Storage accounts** blade, select **+ Create**.
 1. On the **Basics** tab of the **Create storage account** blade, configure the following settings (leave others with their default values):
 
     | Setting | Value |
@@ -168,5 +180,8 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 1. On the **Subscriptions** page of the Azure CycleCloud web application, select the entry representing the newly added subscription, and review its settings.
 
     :::image type="content" source="../media/u4-cyclecloud-subscription-created.png" alt-text="The screenshot depicts the Subscriptions page of the Azure CycleCloud web application, with the entry representing the newly added subscription." border="false":::
+
+    > [!NOTE]
+    > Do not delete the resources you deployed in this exercise, since you will need them in the next exercise of this module.
 
 Congratulations! You successfully completed the first exercise of this module. In this exercise, you deployed an Azure CycleCloud Azure VM, connected to it, and used it to add an Azure subscription to Azure CycleCloud.

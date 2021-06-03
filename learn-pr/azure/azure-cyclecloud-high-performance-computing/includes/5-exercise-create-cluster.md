@@ -2,6 +2,13 @@ You can create new clusters directly from the graphical interface of the CycleCl
 
 Now that you've provisioned an Azure VM hosting the CycleCloud web applications, you're ready to evaluate its use for deployment of a Slurm-based HPC cluster into Azure. You first need to ensure that your Azure subscription will accommodate the cluster's resource requirements. You also want to consider that your management team wants to keep the cluster's cost within the project's budget. So, you plan to set up CycleCloud budget alerts and deprovision the lab environment after you complete the evaluation.
 
+In this exercise, you will step through deployment of a Slurm-based HPC cluster into Azure by using Azure CycleCloud. The exercise consists of the following tasks:
+
+Task 1: Prepare for the deployment of an HPC cluster
+Task 2: Create an HPC cluster by using Azure CycleCloud
+Task 3: Configure and start an HPC cluster by using Azure CycleCloud
+Task 4: Clean up the lab environment
+
 ## Prepare for the deployment of an HPC cluster
 
 Before you deploy an HPC cluster, you should first ensure that you have sufficient network and compute resources to accommodate its usage.
@@ -79,8 +86,6 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
 
 1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes, and then select **Save**.
 
-    :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
-
 ## Configure and start an HPC cluster by using Azure CycleCloud
 
 To prepare for operationalizing your cluster, you'll set alerts to notify you when cluster usage costs reach the budget allocated towards the cost of Azure resources. You'll also validate your deployment by starting the cluster with the graphical interface of the CycleCloud web application.
@@ -120,9 +125,13 @@ You've completed testing of the cluster deployment process by using the Azure Cy
     > The process involves deprovisioning of the Azure VM serving the role of the cluster's head node. This might take about five minutes.
 
     > [!NOTE]
+    > You should delete the resources that you deployed as part of this exercise, as outlined in this task. If you do not delete the resources, you may incur additional charges to your subscription.
+
+    > [!NOTE]
     > To delete all other resources you provisioned in this lab, you'll delete the **cyclecloud-rg** resource group.
 
 1. On your computer, switch to the browser window displaying the Azure portal.
-1. In the Azure portal, navigate to the **cyclecloud-rg** blade. Select the **Delete resource group** entry in the toolbar, and in the **TYPE THE RESOURCE GROUP NAME** textbox, enter **cyclecloud-rg**, and then select **Delete**.
-<!--ID/SME: Please check that previous UI instructions retain their meaning.-->
+1. In the Azure portal, navigate to the **cyclecloud-rg** blade. Select the **Delete resource group** entry in the toolbar, and in the **TYPE THE RESOURCE GROUP NAME** textbox, enter **cyclecloud-rg**, and then select **Delete**. 
+1. Repeat the previous step to delete the resoruce group with the name starting with **"contoso-slurm-lab-cluster-** which contains the disk resource used by the cluster.
+
 Congratulations! You successfully completed the second exercise of this module. In this exercise, you ensured the availability of compute and network resources that are required to accommodate deployment of a new cluster. Then, you deployed the cluster by using Azure CycleCloud, configured its budget alerts, and started it to validate its functionality. Finally, you terminated the cluster and deleted all resources you provisioned in this module to avoid any unnecessary costs.
