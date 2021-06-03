@@ -11,7 +11,6 @@ To provide proof of concept, you'll deploy two Linux VMs running the Ubuntu Serv
 In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
 - Create an Azure shared disk.
-- Create a proximity placement group.
 - Create an availability set.
 - Deploy two VMs that are running Ubuntu Server OS, and then attach a shared disk to the two VMs.
 - Test SCSI PR commands.
@@ -25,20 +24,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
     ```
 
-### Task 2: Create proximity placement group and availability set
-
-1. While you're still in Cloud Shell, run the following commands to create a proximity placement group:
-
-    ```bash
-    # Create proximity placement group.
-    az ppg create \
-    -n myPPG \
-    -g <rgn>[sandbox resource group name]</rgn> \
-    -t standard
-    ```
-
- > [!Note]
- > Proximity placement group is not required for using shared disk with clustered applications, but in general provides better performance when is used.
+### Task 2: Create availability set
 
 1. Run the following command to create an availability set:
 
@@ -49,7 +35,6 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     --name myAvailabilitySet \
     --platform-fault-domain-count 2 \
     --platform-update-domain-count 2 \
-    --ppg myPPG
     ```
 
 ### Task 3: Create two VMs that are running Ubuntu Server
@@ -59,7 +44,7 @@ You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
     ```bash
     for i in `seq 1 2`; do
     
-    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --ppg myPPG --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
     
     done
     ```
@@ -194,7 +179,6 @@ To further demonstrate Azure shared disk functionality, you'll deploy two Window
 In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
 - Create an Azure shared disk.
-- Create a proximity placement group.
 - Create an availability set.
 - Deploy two VMs running Windows Server OS and configure clustered services.
 - Test SCSI PR commands.
@@ -212,20 +196,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
     ```
 
-### Task 2: Create a proximity placement group and an availability set
-
-1. While still in Cloud Shell, run the following commands to create a proximity placement group:
-
-    ```powershell
-    # Create proximity placement group
-    $ppgName="myPPG1"
-    $resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    $ppg=New-AzProximityPlacementGroup `
-    -Location EastUs `
-    -Name $ppgName `
-    -ResourceGroupName $resourceGroup `
-    -ProximityPlacementGroupType Standard
-    ```
+### Task 2: Create an availability set
 
 1. Run the following command to create an availability set:
 
@@ -238,8 +209,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     -Sku aligned `
     -PlatformFaultDomainCount 2 `
     -PlatformUpdateDomainCount 2 `
-    -ProximityPlacementGroup $ppg.Id
-    ```
+     ```
 
 ### Task 3: Create two VMs that are running Windows Server
 
@@ -270,7 +240,6 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     -SecurityGroupName "myNetworkSecurityGroup1" `
     -PublicIpAddressName "myPublicIpAddress$i" `
     -AvailabilitySetName "myAvailabilitySet1" `
-    -ProximityPlacementGroup $ppg.Id `
     -Credential $cred
     }
     ```
