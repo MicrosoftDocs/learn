@@ -1,6 +1,6 @@
 Virtual machines, Azure SQL logical servers and databases, storage accounts, virtual networks, and most other Azure resources need to be placed in a resource group. However, some resources can, or must, be deployed in a different way. These resources are ordinarily used to control the behavior of your Azure environment. 
 
-In this unit, you'll review the hierarchy of Azure resource organization, and you'll look at how certain resources might be deployed to various scopes.
+In this unit, you'll review the hierarchy of Azure resource organization, and you'll look at how certain resources might be deployed at various scopes.
 
 ## The Azure resource hierarchy
 
@@ -10,7 +10,7 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="icon" source="../media/callout-01.png"::: Your *tenant* corresponds to your Azure Active Directory (Azure AD) instance. An organization ordinarily has only one Azure AD instance. This instance acts as the root of the resource hierarchy.
 
-:::image type="icon" source="../media/callout-02.png"::: *Management groups* provide a way to organize Azure subscriptions. Each tenant has a single root management group, and you can establish your own hierarchy of management groups under it. You might create separate management groups for the various parts of your organization, or for subscriptions that have their own security or governance requirements. You can apply policy and access-control restrictions to management groups, and these restrictions are inherited by all subscriptions below that management group in the hierarchy. Management groups aren't deployed into regions, and they have no impact on the locations of your resources.
+:::image type="icon" source="../media/callout-02.png"::: *Management groups* provide a way to organize Azure subscriptions. Each tenant has a single root management group, and you can establish your own hierarchy of management groups under it. You might create separate management groups for the various parts of your organization, or for subscriptions that have their own security or governance requirements. You can apply policy and access-control restrictions to management groups, and these restrictions are inherited by all subscriptions below that management group in the hierarchy. Management groups aren't deployed to regions, and they have no impact on the locations of your resources.
 
 :::image type="icon" source="../media/callout-03.png"::: *Subscriptions* act as billing accounts, and they contain resource groups and resources. Like management groups, subscriptions have no location and don't restrict where your resources are deployed.
 
@@ -23,9 +23,9 @@ The previously illustrated example is a fairly basic scenario that shows how you
 Whichever model you follow, by understanding the various levels of the hierarchy, you can start to apply flexible controls on how your Azure environment is used and managed. By using Bicep, you can manage these controls with all the benefits of infrastructure as code.
 
 > [!NOTE]
-> There are also some other resources that are deployed to specific scopes. *Extension resources* are deployed to the scope of another Azure resource. For example, a resource lock is an extension resource, which is deployed to a resource such as a storage account.
+> There are also some other resources that are deployed at specific scopes. *Extension resources* are deployed at the scope of another Azure resource. For example, a resource lock is an extension resource, which is deployed to a resource such as a storage account.
 
-You're already familiar with deploying resources into resource groups, so let's look at the other scopes for deployment.
+You're already familiar with deploying resources to resource groups, so let's look at the other scopes for deployment.
 
 ## Subscription-scoped resources
 
@@ -101,7 +101,7 @@ Here's what that looks like:
 > [!NOTE]
 > Management groups have both an identifier and a display name. The display name is a human-readable description of the management group. You can change the display name without affecting the management group's ID.
 
-When a resource is deployed to a management group's scope, its resource ID includes the management group's ID. Here's an example resource ID for a role definition that has been created at a management group scope:
+When a resource is deployed at a management group scope, its resource ID includes the management group ID. Here's an example resource ID for a role definition that has been created at a management group scope:
 
 ```
 /providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
@@ -109,7 +109,7 @@ When a resource is deployed to a management group's scope, its resource ID inclu
 
 Here's a visual representation of the same ID:
 
-:::image type="content" source="../media/2-role-mg-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a management group scope." border="false":::
+:::image type="content" source="../media/2-role-mg-scope-resource-id.png" alt-text="Resource ID for a role definition that's deployed at a management group scope." border="false":::
 
 > [!IMPORTANT]
 > In Bicep, you normally use the `.id` property of a resource to access its resource ID. However, the `.id` property doesn't currently work for management group-scoped resources. It returns a partial resource ID instead of the full resource ID. This will be changed in the future, but in the meantime, you'll see how to work around this limitation later in this module.
@@ -122,6 +122,6 @@ Another role definition might be defined at a subscription scope, so its resourc
 
 Here's a visual representation of the same ID:
 
-:::image type="content" source="../media/2-role-subscription-scope-resource-id.png" alt-text="Resource ID for a role definition deployed to a subscription scope." border="false":::
+:::image type="content" source="../media/2-role-subscription-scope-resource-id.png" alt-text="Resource ID for a role definition that's deployed at a subscription scope." border="false":::
 
 Now that you understand the Azure resource hierarchy, and the types of resources that you can deploy at each scope, you can make decisions about the scopes at which to deploy your resources. For example, you can make an informed choice about whether you should create a policy definition at the scope of a resource group, subscription, or management group. In the next unit, you'll learn how to create Bicep files that target each of these scopes.
