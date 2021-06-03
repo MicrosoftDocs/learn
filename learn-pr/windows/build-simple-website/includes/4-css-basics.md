@@ -64,6 +64,7 @@ What you're selecting is an existing element that you previously defined in HTML
    - The period prefix for `.list` indicates that this is a *class selector*.
     
      Each HTML element that contains a `class` attribute set to "list" will inherit the styles that are defined within this selector.
+
    - The pound sign prefix for *#msg* indicates that this is an *ID selector*.
     
      The HTML element that has its `id` attribute set to "msg" will inherit the styles that are defined within this selector.

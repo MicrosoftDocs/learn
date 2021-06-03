@@ -1,49 +1,56 @@
-In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a browser. We've covered a lot of ground. Look at all you accomplished:
+In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a web browser. We've covered a lot of ground. Look at all you accomplished:
 
-- Downloaded and installed the tools you need for web development, and customized the editor with basic packages.
-- Created a project directory and the files to build a website.
-- Created a heading and other page elements, and then linked to external files and tested the page in a browser.
-- Applied styles to different elements and tested your site in the browser.
-- Added support for themes using CSS.
-- Added JavaScript to enable custom interaction with the page and switching between themes.
-- Learned how to create a console message.
+- You downloaded and installed the tools you need for web development, and customized the editor with basic packages.
+- You created a project directory and the files to build a website.
+- You created a heading and other page elements, and then linked to external files and tested the page in a browser.
+- You applied styles to different elements and tested your site in the browser, and added support for themes using CSS.
+- You added JavaScript to enable custom interaction with the page and switching between themes.
+- You learned how to create and use console messages to peek inside your web app.
 
-We're gathering tools and building a foundation. Remember, you can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be more able to fulfill the vision you have for your site. It's also empowering to see an idea come to life.
-
-## Additional resources
-
-One way to deploy your website is to use Azure Static Web Apps.
-
-**Azure Static Web Apps**
-
-- [Azure Static Web Apps on Microsoft Learn](https://docs.microsoft.com/learn/paths/azure-static-web-apps/)
-- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
-
-**Visual Studio Code documentation**
-
-- [User interface](https://code.visualstudio.com/docs/getstarted/userinterface)
-- [Emmet in Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet)
-
-**Microsoft Edge documentation**
-
-- [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)
+We're gathering tools and building a foundation as a web developer. Remember, you can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
 
 ## Learn more
+
+### Web development concepts
 
 - [Fault tolerance (graceful degradation)](https://wikipedia.org/wiki/Fault_tolerance)
 - [Separation of concerns](https://wikipedia.org/wiki/Separation_of_concerns)
 - [Progressive enhancement](https://wikipedia.org/wiki/Progressive_enhancement)
 
-**HTML5**
+### Web development references
+
+#### HTML5
 
 - [W3C - HTML history](https://www.w3.org/TR/html52/introduction.html#introduction-history)
 - [Webhint - Use charset 'Utf-8'](https://webhint.io/docs/user-guide/hints/hint-meta-charset-utf-8/)
 - [MDN web docs - What’s in the head?](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+- [W3Schools HTML Reference](https://www.w3schools.com/tags/)
 
-**CSS3**
+#### CSS3
 
 - [MDN web docs - CSS3](https://developer.mozilla.org/docs/Archive/CSS3)
+- [W3Schools CSS Reference](https://www.w3schools.com/cssref/)
 
-**JavaScript**
+
+#### JavaScript
 
 - [MDN web docs - Strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode)
+- [W3Schools JavaScript Reference](https://www.w3schools.com/js/)
+
+### Web development technologies
+
+#### Microsoft Edge documentation
+
+- [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)
+
+#### Azure Static Web Apps
+
+One way to deploy your website is to use Azure Static Web Apps.
+
+- [Azure Static Web Apps on Microsoft Learn](https://docs.microsoft.com/learn/paths/azure-static-web-apps/)
+- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
+
+#### Visual Studio Code documentation
+
+- [User interface](https://code.visualstudio.com/docs/getstarted/userinterface)
+- [Emmet in Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet)

@@ -1,42 +1,46 @@
-JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as opening a pop-up window. Using JavaScript, you can add or remove content, like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
+JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your web pages. For example, you can use JavaScript to define the event or behavior that will happen when a user selects a button, such as opening a pop-up window. Using JavaScript, you can add or remove content, like text from a web page without reloading it. As a web developer, you can use your web browser to test and get feedback about your scripts.
 
-In this unit, you set up the JavaScript file, create a button to switch between light and dark themes, and then attach the button to JavaScript code that performs the actual theme switching. When this is done, you check the finished project in developer tools.
+In this unit, you'll set up an example JavaScript file for your web app. You'll create a button to switch between light and dark themes, and then you'll attach the button to JavaScript code that performs the actual theme switching. When this is done, you'll check the finished project using your browser's developer tools.
 
 ## Link to JavaScript
 
-Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a pop-up alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
+Like CSS, you could add JavaScript directly to an HTML page, but a recommended best practice is to save your JavaScript in a separate file, which makes it easier to reuse your JavaScript code across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it is better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality. The HTML script tag `<script>` will let us link to an external JavaScript file, which is how you'll configure your web app in this exercise.
 
-1. In **Visual Studio Code** open the file `index.html`, enter `script:src`, and press <kbd>Enter</kbd>.
+1. In **Visual Studio Code**, open your `index.html` file.
+ 
+1. Enter `script:src` on a new line before the closing `</body>` element, and then press <kbd>Enter</kbd>.
 
-1. Adjust the script element to look like the last line below. Place it directly after the list as shown.
+1. Modify the `<script>` element to load your `app.js` file as shown in the following example, and ensure that it is located after the closing `</ul>` element for the list.
 
     ```html
+    ...
     <ul>
       <li class="list">Add visual styles</li>
       <li class="list">Add light and dark themes</li>
       <li>Enable switching the theme</li>
     </ul>
     <script src="app.js"></script>
+    ...
     ```
 
-The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section enables all the page content to display on the screen first, and then load the script.
+The `<script>` element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` element at the end of the `<body>` section enables all the page content to display on the screen first, and then load the script.
 
 ## Add fault tolerance
 
-1. In the HTML file, add the `<noscript>` element, which can be used to show a message if JavaScript is deactivated.
+1. In your HTML file, add a `<noscript>` element after the closing `</script>` element, which can be used to show a message if JavaScript is deactivated.
 
     ```html
-        <script src="app.js"></script>
-        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
     ```
 
-   Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. We can detect and plan for when a feature isn't supported or available.
+   Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. By using the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
 
-1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
+1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
 ## Set strict mode
 
-As you get started with JavaScript, the initial focus is often working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter - assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To combat these shortcomings, you can activate *strict mode*, which reduces silent errors, improves performance, provides more warnings, and fewer unsafe features.
+As you get started with JavaScript, your initial focus is often going to be working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; for example: assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To override this behavior, you can activate *strict mode*, which reduces silent errors, improves performance, provides you with more warnings, and fewer unsafe features.
 
 - In **Visual Studio Code**, open the `app.js` file, and enter the following.
 
@@ -45,15 +49,16 @@ As you get started with JavaScript, the initial focus is often working with numb
     ```
 
 > [!NOTE]
-> You can usually omit semicolons in JavaScript, but it's a good idea to understand when semicolons are necessary before making any decisions about that. There's a debate about this topic in the JavaScript community.
+> While it is possible to omit closing semicolons from your JavaScript code, it's a good idea to understand when semicolons are necessary before making any decisions about that. There's a debate about this topic within the JavaScript community, but you should consider using semicolons as a best practice.
 
 ## Add a button
 
-You need some way to let the user switch between the light and dark theme in your web page. In this scenario, you do that with a button element.
+You need a way to let your users switch between the light and dark theme in your web page. In this exercise, you will implement that functionality with an HTML `<button>` element.
 
 1. In your HTML page, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
     ```html
+    ...
     <ul>
       <li class="list">Add visual styles</li>
       <li class="list">Add light and dark themes</li>
@@ -62,9 +67,13 @@ You need some way to let the user switch between the light and dark theme in you
     <div>
       <button class="btn">Dark</button>
     </div>
+    <script src="app.js"></script>
+    ...
     ```
 
-1. In your CSS file, add a selector for the button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
+    Notice that the `<button>` element in this example has a *class* attribute that you will use to apply CSS styles.
+
+1. In your CSS file, add a class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in the button selector. This class selector is specific to the button, and overrides the universal selector (*) used to apply font colors in your CSS file.
 
     ```css
     .btn {
@@ -73,7 +82,7 @@ You need some way to let the user switch between the light and dark theme in you
     }
     ```
 
-1. Next, add some rules for the size, shape, appearance, and placement of the button. The following CSS creates a round button to the right of the page heading.
+1. Next, modify the class selector to add some rules for the size, shape, appearance, and placement of the button. The following CSS creates a round button to the right of the page heading.
 
     ```css
     .btn {
@@ -115,7 +124,7 @@ You need some way to let the user switch between the light and dark theme in you
 
 ## Add an event handler
 
-To make the button do something when you press it, you need an event handler in your JavaScript file. For a button, you need an event handler for the `click` event. The event handler function runs when the `click` event occurs.
+To make the button do something when you select it, you need an event handler in your JavaScript file. For a button, you need an event handler for the `click` event; the event handler function runs when the `click` event occurs.
 
 Before you can add the event handler, you need a reference to the button.
 
@@ -133,7 +142,7 @@ Before you can add the event handler, you need a reference to the button.
     });
     ```
 
-In the preceding code, you used the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the current theme, and update the button label.
+In the preceding code, you used the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically applies the dark theme styles instead of light theme. However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
 
 Here is what the complete JavaScript code should look like.
 
@@ -156,7 +165,7 @@ switcher.addEventListener('click', function() {
 });
 ```
 
-It's a JavaScript convention to use *camel case* for variable names with more than one word—for example - the variable `className`.
+It's a JavaScript convention to use *camel case* for variable names with more than one word; for example: the variable `className`.
 
 ## Console message
 
@@ -165,12 +174,23 @@ You can create a hidden message that won't appear on your webpage. However, what
 - Add a call to `console.log` after the `if` statement, but inside the event listener.
 
     ```javascript
-    ...
+    switcher.addEventListener('click', function() {
+        document.body.classList.toggle('dark-theme')
+
+        var className = document.body.className;
+        if(className == "light-theme") {
+            this.textContent = "Dark";
+        }
+        else {
+            this.textContent = "Light";
+        }
+
         console.log('current class name: ' + className);
+
     });
     ```
 
-In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then Pressing <kbd>Enter</kbd>.
+In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
 
 You can define a text *string* with single or double quotes around the text.
 
@@ -188,15 +208,15 @@ As previously described, even though you were just editing the `app.js` file, to
 
    :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme":::
 
-1. Make sure that everything looks correct.
+1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something
 
 ## Check the page in the developer tools
 
 1. Open Developer Tools.
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> (<kbd>FN+F12</kbd>). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
-   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd>. (<kbd>F12</kbd> also works.)
+   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
 
 1. Select the **Styles** tab.
 
@@ -210,4 +230,6 @@ As previously described, even though you were just editing the `app.js` file, to
 
 :::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome":::
 
-Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strikethrough text.
+Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, it is the last class name applied, in this example the the dark theme, which takes precedence.
+
+In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strikethrough text.
