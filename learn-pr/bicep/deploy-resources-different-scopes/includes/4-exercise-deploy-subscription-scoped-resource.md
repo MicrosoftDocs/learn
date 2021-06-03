@@ -1,12 +1,14 @@
 > [!NOTE]
 > This exercise requires an Azure subscription. If you don't already have one, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
 
-Project Teddybear is in full swing, and the R&D team is waiting for you to give it access to its new Azure subscription. You've created the subscription already, but before you give the team access, you need to ensure it deploys only virtual machines that comply with the team's policies. The team has told you that it doesn't want to deploy F or G series virtual machines. In this exercise, you'll create a Bicep template that configures the subscription based on the team's policies.
+Project Teddybear is in full swing, and the R&D team is waiting for you to give it access to the new Azure subscription. You've created the subscription already, but before you give the team access, you need to ensure that it deploys only virtual machines that comply with the team's policies. The team has told you that it doesn't want to deploy F or G series virtual machines. 
+
+In this exercise, you'll create a Bicep template that configures the subscription based on the team's policies.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template to be deployed to a subscription scope.
+> * Create a Bicep template to be deployed at a subscription scope.
 > * Add an Azure Policy definition and assignment.
 > * Deploy the template and verify the result.
 
@@ -22,7 +24,7 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="1" :::
 
-   This line of code tells Bicep that your template is going to be deployed to a subscription scope.
+   This line of code tells Bicep that your template is going to be deployed at a subscription scope.
 
 ## Add a policy definition
 
@@ -58,7 +60,7 @@ A policy definition has no effect until it's applied. In this step, you deploy a
 
    :::code language="bicep" source="code/4-template.bicep" range="40-45" :::
 
-   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed to the subscription scope.
+   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed at the subscription scope.
 
 1. Save the changes to the file.
 
