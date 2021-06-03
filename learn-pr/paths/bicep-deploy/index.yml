@@ -28,7 +28,7 @@ summary: |
 
   Each module in this learning path provides options for use with the Azure CLI and with Azure PowerShell. You'll use Visual Studio Code to write and validate your Bicep code.
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
-iconUrl: /learn/achievements/deploy-manage-resource-manager-templates.svg
+iconUrl: /learn/achievements/bicep/bicep-deploy-manage.svg
 levels:
 - beginner
 roles:
