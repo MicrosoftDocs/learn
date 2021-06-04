@@ -68,7 +68,7 @@ To perform this exercise, you need:
 
     > [!NOTE]
     > If this is the first time you're starting Azure Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
-<!--ID/SME: GLobal comment. Note that pane names are bold. "Azure" only needs to precede the term "Azure Cloud Shell" with first mention unless the name in the UI is fully spelled out, i.e., Azure Cloud Shell pane (I'm not sure if it is).-->
+
 1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded previously in this task, and when prompted to provide the password, enter **Pa55w0rd1234**:
 
     ```azurecli-interactive
