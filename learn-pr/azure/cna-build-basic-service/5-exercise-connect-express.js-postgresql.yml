@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.build-basic-service.5-exercise-connect-express.js-postresql
+uid: learn.azure.build-basic-service.5-exercise-connect-express.js-postgresql
 title: Exercise - Connect Express.js
 metadata:
   title: Exercise - Connect Express.js
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-connect-express.js-postresql.md)]
+  [!include[](includes/5-exercise-connect-express.js-postgresql.md)]
