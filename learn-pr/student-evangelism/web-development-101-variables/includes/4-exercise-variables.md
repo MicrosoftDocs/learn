@@ -23,7 +23,7 @@ You know that, at the core, Texas Hold'em features players, starter cards, and p
    let noOfStarterCards = 2;
    ```
 
-   You now have three variables representing the initial state of the game. 
+   You now have three variables representing the initial state of the game.
 
 1. Next, you will create variables that represent specific players. Add the following code:
 
@@ -81,4 +81,4 @@ At this point, you have some variables that represent parts of your card game. R
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-Congratulations, you've managed to start working on a JavaScript code base meant to implement Texas Hold'em. In doing so, you've reasoned about what are starter values, what are values that can change and how to change them.
+Congratulations, you've managed to start working on a JavaScript code base meant to implement Texas Hold'em. In doing so, you've reasoned about what are starter values, what are values that can change, and how to change them.
