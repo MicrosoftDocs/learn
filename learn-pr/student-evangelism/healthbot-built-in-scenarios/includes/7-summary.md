@@ -1,15 +1,17 @@
-The Health Bot comes with built-in healthcare AI services, including a symptom checker and medical content from known industry resources, and language understanding models that are tuned to understand medical and clinical terminology.
+The Azure Health Bot comes with built-in healthcare AI services, which include:
 
-## Now that you have reviewed this module, you should be able to
+* A symptom checker and medical content from known industry resources.
+* Language understanding models that are tuned to understand medical and clinical terminology.
 
-1. Explain what scenarios are.
-2. Recognize Built-in scenario use cases.
-3. Build a WebChat channel for your Health Bot.
+Now that you've reviewed this module, you should be able to:
+
+* Explain what scenarios are.
+* Recognize built-in scenario use cases.
+* Build a Web Chat channel for your Health Bot instance.
 
 ## Key takeaways
 
 Here are the key takeaways:
 
-1. The Health Bot can easily be deployed to suit an organizations scenarios and protocols.
-
-2. Creating a Health Bot is simple and easy to learn, even for those without a computer programming background.
+* Health Bot can easily be deployed to suit an organization's scenarios and protocols.
+* Creating a Health Bot instance is simple and easy to learn, even if you don't have a computer programming background.

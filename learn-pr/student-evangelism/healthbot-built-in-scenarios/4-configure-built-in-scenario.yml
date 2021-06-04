@@ -3,7 +3,7 @@ uid: learn.healthbot-built-in-scenarios.4-configure-built-in-scenario
 title: Configure built-in scenarios
 metadata:
   title: Configure built-in scenarios
-  description: Learn how to configure the built-in scenarios and control every aspect of the health bot instance functionality.
+  description: Learn how to configure the built-in scenarios and control every aspect of the Azure Health Bot instance functionality.
   author: leestott
   ms.author: chnoring
   ms.date: 05/11/2021
