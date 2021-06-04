@@ -1,4 +1,4 @@
-You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the DSR process in the Microsoft cloud. You've created a use-case scenario for fulfilling a DSR.
+As Contoso’s administrator, you must evaluate the DSR process in the Microsoft Cloud. You plan to create a use-case scenario for responding to a DSR that requests Microsoft cloud-based data be deleted.
 
 ## Set up a user
 
@@ -28,16 +28,16 @@ To set up a new user, perform the following steps:
    - ZIP or postal code: **BS12 3CD**
    - Mobile phone: **+44 07123 456789**
 
-## Review a DSR and determine the appropriate process
+## Review the DSR to determine the appropriate process
 
 To determine the appropriate process, perform the following steps:
 
-1. Review a DSR:
+1. Review the DSR:
 
    - DSR form received today
-   - Identity verified today
+   - Identity verified today, as follows
      - Avery Howard is a financial planning client who resides in the United Kingdom.
-     - Avery was contacted and provided verification with a national ID card.
+     - Avery was contacted, and they provided verification with a national ID card.
 
     |Field|Details|
     |---|---|
@@ -49,8 +49,7 @@ To determine the appropriate process, perform the following steps:
     |With regard to|Right to erasure (right to be forgotten)|
     |Preferred feedback method|In writing to address|
 
-1. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
-
+1. Now that you’ve confirmed the user’s request to delete, you’ll first search for (discover) the user in Azure AD, and then delete the user. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR: 
     - Discover
     - Access
     - Rectify
@@ -63,7 +62,7 @@ To determine the appropriate process, perform the following steps:
 
 ## Use the Azure Active Directory admin center to connect to Azure AD
 
-You'll now use the Azure Active Directory admin center to discover the personal information in Azure AD:
+You'll now use the Azure Active Directory admin center to find personal information in Azure AD:
 
 1. Verify that you're still signed in to the Azure Active Directory admin center.
 1. Select **Azure Active Directory**, select **Users**, and then select the **All users** blade if it's not already active.  
@@ -71,11 +70,11 @@ You'll now use the Azure Active Directory admin center to discover the personal 
 1. Select **Avery Howard** to review the data subject's profile.
 1. Review and confirm that the personal information contained in the profile matches the subject's information in the DSR.
 
-## Fulfill the DSR
+## Respond to the DSR
 
-You'll now fulfill the DSR by deleting the data subject's user account:
+You'll now respond to  the DSR by deleting the data subject's user account:
 
-1. In the **All users** blade, select the data subject's user account (Avery Howard) check box.  
+1. 1.	In the All users blade, select the check box for the data subject's user account (Avery Howard).  
 1. Select **Delete user**, and then select **Yes** to confirm.
 1. Select **Deleted users**.
 1. In the **Deleted users** blade, select the data subject's user account check box.
@@ -83,12 +82,12 @@ You'll now fulfill the DSR by deleting the data subject's user account:
 
 ## Results
 
-After completing this exercise, you should have successfully reviewed and fulfilled a DSR for customer data in Azure. This meets your requirement to validate the DSR process in Azure.
+After completing this exercise, you should have successfully reviewed and responded to a DSR for Azure-based customer data. This meets your requirement to validate the DSR process in Azure.
 
-## Clean up the resources
+## Clean up resources
 
 > [!NOTE]
-> If you’ve completed all the steps in this exercise, you won’t have any resources that need cleaning up. However, if you’ve only partially completed the exercise, then complete the following steps:
+> If you’ve completed all the steps in this exercise, you won’t have any resources to clean up. However, if you’ve only partially completed the exercise, complete the following steps:
 
 1. In the Azure Active Directory admin center, select **All Users**.
 1. Search for and select **Avery Howard**.
