@@ -1,29 +1,24 @@
-Microsoft Healthcare Bot is Software as a Service (SaaS) offered by Microsoft that can be used to deploy AI powered bot with personalized applications in healthcare. The service is specially designed for healthcare professionals, pharmaceutical companies, health insurance companies and similar. This AI powered virtual assistant improves the overall healthcare system with higher efficiency and reduced costs.  
+Azure Health Bot is software as a service (SaaS) offering from Microsoft that can be used to deploy AI-powered bots with personalized applications in healthcare. The service is specially designed for healthcare professionals, pharmaceutical companies, health insurance companies, and similar areas of the health industry. This virtual assistant can improve healthcare systems with higher efficiency and reduced costs.  
 
-Some of the features are:
+The features include:
 
-- Built in content and medical intelligence such as a symptom checker, medication and health data.
+- Built-in content and medical intelligence, such as a symptom checker, medication information, and health data.
+- Predefined language models that understand medical terminology.
+- Customization and extensibility tools that enable a customized flow design.
+- Compliance with security and privacy standards for the health industry (for example, ISO 27001, ISO 27018, HIPAA).
 
-- Pre-defined language models that understand medical terminology.
+In this module, you'll learn how to deploy a basic project by using the Azure Health Bot service.  
 
-- Customization and extensibility tools that enable customized flow design.
-
-- Compliance with health industry security and privacy standard (Example ISO 27001, ISO 27018, HIPAA)
-
-In this module, you will learn how to deploy a basic project using Azure Health Bot service.  
-
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
-- Understand what Custom scenarios are
+- Understand what custom scenarios are.
+- Build a health bot by using custom scenarios.
+- Learn how to deploy a basic project by using the Azure Health Bot service.
 
-- Build a Health Bot using Custom scenarios
+## Prerequisite modules
 
-- Learn how to deploy a basic project using the Azure Health Bot service.
+- Introduction to the Health Bot service
 
-## Prerequisite Modules
-
-- Introduction to the HealthBot Service
-
-**Produced in partnership with Meghana Chikkam and Shreyan J D Fernandes Microsoft Learn Student Ambassadors and Microsoft HealthBot Product Group**
+**This module was produced in partnership with Meghana Chikkam and Shreyan J D Fernandes, Microsoft Learn student ambassadors, and the Azure Health Bot product group.**
