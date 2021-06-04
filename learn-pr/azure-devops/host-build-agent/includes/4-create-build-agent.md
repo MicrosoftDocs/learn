@@ -24,7 +24,7 @@ Configuring a system interactively is a good way to get started, because it help
 
 ## Create a Linux virtual machine
 
-In this section, you create a VM that's running Ubuntu 18.04, which will serve as your build agent. The VM isn't yet set up to be a build agent or have any of the tools that are required to build the _Space Game_ web application. You'll set that up shortly.
+In this section, you create a VM that's running Ubuntu 20.04, which will serve as your build agent. The VM isn't yet set up to be a build agent or have any of the tools that are required to build the _Space Game_ web application. You'll set that up shortly.
 
 To create your VM, in Cloud Shell (at right), run the following `az vm create` command:
 
@@ -32,7 +32,7 @@ To create your VM, in Cloud Shell (at right), run the following `az vm create` c
 az vm create \
     --name MyLinuxAgent \
     --resource-group <rgn>[Resource Group Name]</rgn> \
-    --image Canonical:UbuntuServer:18.04-LTS:latest \
+    --image Canonical:UbuntuServer:20.04-LTS:latest \
     --location eastus \
     --size Standard_DS2_v2 \
     --admin-username azureuser \

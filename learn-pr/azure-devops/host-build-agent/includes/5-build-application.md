@@ -32,7 +32,7 @@ In this section, you modify the build configuration to switch from using a Micro
 
     ```yml
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
       demands:
       - npm
     ```

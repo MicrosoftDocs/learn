@@ -10,7 +10,7 @@ Let's see what's happening with the Tailspin web team. Tim, from operations, wan
 
 **Mara:** Yes! In fact, you can choose Windows, Linux, or macOS for your build agent. If your application runs on multiple platforms, you can configure the pipeline to build on all of them.
 
-**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Microsoft Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
+**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
 
 **Andy:** I'd be interested to know as well. Let's chat a bit more about build agents. Perhaps you can share what you learn with the other team.
 
@@ -22,11 +22,11 @@ Imagine that you have an Azure Pipelines project that receives build requests ma
 
 When a build is triggered, Azure Pipelines selects an available build agent from the pool. If all agents are busy, the process waits for one to become available.
 
-When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 18.04 build agent:
+When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 20.04 build agent:
 
 ```yml
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-20.04'
   demands:
   - npm
 ```
