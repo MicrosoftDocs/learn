@@ -293,7 +293,7 @@ After you configure the startup script, configure App Service to use certain env
 az webapp config appsettings set \
   --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
   --settings \
-  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false&serverTimezone=JST' \
+  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false' \
   MYSQL_PASSWORD='************' \
   MYSQL_USER=azureuser
 ```
