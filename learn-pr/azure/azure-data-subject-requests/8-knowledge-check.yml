@@ -41,7 +41,7 @@ quiz:
       explanation: "That's incorrect. Restrict isn't a supported DSR for system-generated logs."
 
 
-  - content: "Which of the following statements is accurate regarding the scope of DSR fulfillment for a Microsoft enterprise customer (tenant)?"
+  - content: "Which statement describes responding to a DSR for a Microsoft online services customer (tenant)?"
     choices:
     - content: "DSR fulfillment is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in."
       isCorrect: false
@@ -53,7 +53,7 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. The data subject may participate in multiple Azure AD tenants."
 
-  - content: "Based on Microsoft's estimation, where in the Microsoft Cloud is 90 percent of an organization data stored?"
+  - content: "Based on Microsoft's estimation, where in Microsoft online services is 90 percent of organizational data stored?"
     choices:
     - content: "Access databases"
       isCorrect: false
