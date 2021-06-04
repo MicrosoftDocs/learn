@@ -12,7 +12,7 @@ Before you publish your VM offer, you’ll need to decide how you want to use Az
 
 You have two software licensing options:
 
-- **Bring your own license (BYOL)**: Customers use an existing subscription to your software to deploy your application to their Azure subscription. When you choose the BYOL model, customers have to purchase a subscription to your application outside of Azure Marketplace, then enter a valid subscription key when they configure the VM in the Azure portal before deployment. You’ll be responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, metering usages (if applicable), and invoicing  over the life of the subscription.
+- **Bring your own license (BYOL)**: Customers use an existing subscription to your software to deploy your application to their Azure subscription. When you choose the BYOL model, customers have to purchase a subscription to your software outside of Azure Marketplace. They'll enter a valid subscription key when they configure the VM for deployment in the Azure portal. You’ll be responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, and invoicing  over the life of the subscription.
 
 - **Usage-based monthly billed plan**: Also known as the pay-as-you-go (PAYG) license model, customers purchase a license to your software through Microsoft. When you choose pay-as-you-go, Microsoft processes payments from customers on your behalf. Customers pay using the same payment method that they use to pay for their Azure subscriptions.
 

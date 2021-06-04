@@ -2,7 +2,7 @@ We just covered the way virtual machine (VM) offers are sold in Azure Marketplac
 
 ## VM offer considerations for all publishing options
 
-Regardless of whether you license your VM offer through Microsoft, you’ll need to provide the following information to publish your offer:
+Regardless of your license model choice, you’ll need to provide the following information to publish your offer:
 
 - Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
@@ -25,11 +25,11 @@ To facilitate this experience, you’ll be asked to provide all the information 
 
 ### VM offer plans and pricing
 
-VM offers must have at least one plan. You can create a variety of plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
+VM offers must have at least one plan. You can create various plans for the same offer to give your customers choices to purchase your application. Plans can differ in price, availability, billing terms, and levels of software functionality. For more detailed information on offer plans and available VM pricing models, check out our [documentation on planning a virtual machine offer](/azure/marketplace/marketplace-virtual-machines).
 
 #### VM offer pricing
 
-When you publish a VM offer customers can purchase through Azure Marketplace, you’ll need to provide pricing details for each of your offer’s plans. Since VM offers are deployed to customers’ Azure subscriptions, Microsoft bills customers directly for Azure infrastructure costs associated with their use of the application in their Azure subscription. This is an important characteristic of the VM software delivery model—it means that you don’t need to include Azure infrastructure costs as a component of your price to customers.
+When you publish a VM offer customers can purchase through Azure Marketplace, you’ll need to provide pricing details for each of your offer’s plans. Since VM offers are deployed to customers’ Azure subscriptions, Microsoft bills customers directly for Azure infrastructure costs from using the application. This is an important characteristic of the VM software delivery model—it means that you don’t need to include Azure infrastructure costs as a component of your price to customers.
 
 VM offer pricing is hourly in Azure Marketplace. Your customers will see your software’s price split into two components in the Azure Marketplace online store—Azure infrastructure cost and your software's price per hour.
 
@@ -41,7 +41,7 @@ When you publish your offer, you’ll only be asked to provide price information
 
 #### Selecting a price entry option
 
-:::image type="content" source="../media/4-vm-price-entry-options-1.png" alt-text="Screenshot of the price entry options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/4-vm-price-entry-options-1.png" alt-text="Screenshot of the price entry options in Partner Center. This selection appears in the 'pricing and availability' step of the publishing process.":::
 
 When you create your VM offer in Partner Center and configure its plans, you’ll be asked to select a price entry option. The different price entry options give you varying levels of flexibility to structure your software’s price. You’ll have three price entry options:
 
@@ -60,13 +60,13 @@ When you select the usage-based license model for your VM offer, you can also of
 
 Adding a free trial to your offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and free trials can be added for each of your offer’s plan.
 
-:::image type="content" source="../media/5-vm-free-trial-option.png" alt-text="Screenshot of the free trial options in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/5-vm-free-trial-option.png" alt-text="Screenshot of the free trial options in Partner Center. These options appear in the 'pricing and availability' step of the publishing process.":::
 
 #### Selecting plan visibility
 
 When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is public or private. Public plans are made available to all Azure Marketplace customers.Private plans will only be made available to specific customers that you choose. Private plans can be used to negotiate custom terms and pricing with specific customers.
 
-:::image type="content" source="../media/6-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This appears in the 'pricing and availability' step of the publishing process.":::
+:::image type="content" source="../media/6-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This toggle appears in the 'pricing and availability' step of the publishing process.":::
 
 >[!NOTE]
 >To publish a private plan, you’ll need to provide the Azure tenant IDs of the customers that want to use your software. Only those customers will see your private offer in the Azure portal.
