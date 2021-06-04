@@ -56,7 +56,7 @@ You might deploy resources to your tenant when:
 - You need to create Azure subscriptions. When you use management groups, subscriptions sit under management groups in the resource hierarchy, but a subscription is a tenant-scoped resource.
 
   > [!NOTE]
-  > Not all Azure customers can create subscriptions by using infrastructure as code. Depending on your billing relationship with Microsoft, this might not be possible. For more information, see [Programmatically create Azure Enterprise Agreement subscriptions with the latest APIs](/azure/cost-management-billing/manage/programmatically-create-subscription).
+  > Not all Azure customers can create subscriptions by using infrastructure as code. Depending on your billing relationship with Microsoft, this might not be possible. For more information, see [Create Azure subscriptions programmatically](/azure/cost-management-billing/manage/programmatically-create-subscription).
 
 - You're creating or configuring management groups. A single root management group is created by Azure when you enable management groups for your tenant, and you can create multiple levels of management groups under it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
