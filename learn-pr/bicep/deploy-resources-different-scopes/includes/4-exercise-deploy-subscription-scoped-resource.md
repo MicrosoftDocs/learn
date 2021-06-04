@@ -48,7 +48,7 @@ During the process, you'll:
 
    You're creating the policy definition at the scope of the subscription. This means that, after the definition is deployed, it will be available throughout all resource groups in the subscription.
 
-## Apply the policy
+## Assign the policy
 
 A policy definition has no effect until it's applied. In this step, you deploy a second subscription-scoped resource that applies the policy definition to the subscription.
 
