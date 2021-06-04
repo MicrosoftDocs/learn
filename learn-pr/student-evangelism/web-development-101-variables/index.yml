@@ -25,7 +25,7 @@ products:
   - vs-code
 units:
   - learn.student-evangelism.web-development-101-variables.introduction
-  - learn.student-evangelism.web-development-101-variables.overview
+  - learn.student-evangelism.web-development-101-variables.data-types-overview
   - learn.student-evangelism.web-development-101-variables.variables
   - learn.student-evangelism.web-development-101-variables.exercise-variables
   - learn.student-evangelism.web-development-101-variables.data-types
