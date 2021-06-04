@@ -61,7 +61,7 @@ To verify the cloud-init functionality on the scheduler node, you'll start the c
     > [!NOTE]
     > The command should generate output in the following format:
     > 
-    > ```azurecli-interactive
+    > ```azurecli
     > m@Azure:~$ cyclecloud connect scheduler -c contoso-custom-slurm-lab-cluster
     > Connecting to cc-admin@40.87.52.25 (contoso-custom-slurm-lab-cluster scheduler) using SSH
     > [cc-admin@ip-0A000304 ~]$
