@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "Single Server"
       isCorrect: false
-      explanation: "Incorrect. This deployment mode does not support stopping the server."
+      explanation: "Incorrect. This deployment mode doesn't support stopping the server."
     - content: "Flexible Server"
       isCorrect: true
       explanation: "Correct. The flexible server architecture delivers support for availability zones and cost-optimization controls. The controls allow you to stop the server during idle periods and include the choice of the burstable compute tier, which automatically adjusts the compute resources based on demand."
     - content: "Hyperscale"
       isCorrect: false
-      explanation: "Incorrect. This deployment mode does not support stopping the server."
+      explanation: "Incorrect. This deployment mode doesn't support stopping the server."
   - content: "Which architectural pattern involves using the same service to perform all database operations?"
     choices:
     - content: "CQRS"
@@ -33,7 +33,7 @@ quiz:
       explanation: "Incorrect. CQRS involves separating read and update operations for a data store, providing an additional layer of isolation that aligns with the premise behind DDD."
     - content: "DDD"
       isCorrect: false
-      explanation: "Incorrect. DDD is a software development approach that focuses on the functionality of the application in order to define boundaries between services."
+      explanation: "Incorrect. DDD is a software development approach that focuses on the functionality of the application to define boundaries between services."
     - content: "CRUD"
       isCorrect: true
       explanation: "Correct. The CRUD-based approach involves the use of a single interface for all data-management tasks."

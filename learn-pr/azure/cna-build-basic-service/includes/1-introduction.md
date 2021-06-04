@@ -14,7 +14,7 @@ The initial version of the app, in the form of an Express.js web service, expose
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you'll know more about how to:
 
 * Describe the concept of service in the context of cloud-native applications.
 * Set up a basic service.
