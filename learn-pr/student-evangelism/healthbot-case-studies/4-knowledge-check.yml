@@ -15,26 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "The Centers for Disease Control and Prevention (CDC) in the USA used Microsoft’s Health Bot Service during the Covid-19 pandemic. What use cases were implemented using the bot?"
+    - content: "The Centers for Disease Control and Prevention (CDC) in the United States used Azure Health Bot during the COVID-19 pandemic. What use cases were implemented through the bot?"
       choices:
         - content: "Assess the symptoms and risk factors of people worried about infection"
           isCorrect: false
-          explanation: "The Bot had not only that use."
-        - content: "Provide information and suggest a course of action such as contacting a medical provider"
+          explanation: "The bot had not only that use."
+        - content: "Provide information and suggest a course of action, such as contacting a medical provider"
           isCorrect: false
-          explanation: "The Bot had not only that use."
-        - content: "For those who do not need in-person medical care, the Bot advised to manage the illness safely at home"
+          explanation: "The bot had not only that use."
+        - content: "Advise how to manage an illness safely at home, for those who didn't need in-person medical care"
           isCorrect: false
-          explanation: "The Bot had not only that use."
+          explanation: "The bot had not only that use."
         - content: "All of the above"
           isCorrect: true
-    - content: "The Virginia Mason Health System uses Microsoft’s Azure Health Bot Service. Can a user that uses the Bot know if their symptoms require medical care?"
+    - content: "The Virginia Mason health system uses Azure Health Bot. Can someone who uses the bot know if their symptoms require medical care?"
       choices:
-        - content: "Yes. The Bot can help its patients understand whether care is needed."
+        - content: "Yes"
           isCorrect: true
-          explanation: "Helping the patient understand their medical needs is one of it’s job."
-        - content: "No. The Bot cannot help a patient in that way."
+          explanation: "Helping the patient understand their medical needs is one of the bot's jobs."
+        - content: "No"
           isCorrect: false
-          explanation: "The Bot can help its patients understand whether care is needed"
+          explanation: "The bot can help patients understand whether care is needed."
 
   
