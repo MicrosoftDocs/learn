@@ -68,4 +68,4 @@ If you use the Azure portal for app registration, you specify the tenancy of the
 - Accounts in any Azure AD directory and personal Microsoft accounts (such as Skype, Xbox, Outlook.com). This also results in a multitenant configuration, but it makes it possible for users with personal Microsoft accounts to use the app.
 
 > [!NOTE]
-> An application object exists only in the home tenant, but, in the case of the multitenant configuration, it can be referenced by multiple service principals across different Azure AD tenants.<!--Marcin, please review deletion of these sections; they seem to have been repeated.-->
+> An application object exists only in the home tenant, but, in the case of the multitenant configuration, it can be referenced by multiple service principals across different Azure AD tenants.

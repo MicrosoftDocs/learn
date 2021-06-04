@@ -59,7 +59,7 @@ You'll start by creating an instance of Azure Database for PostgreSQL single ser
 
 ## Connect to the Azure Database for PostgreSQL server
 
-With the Azure Database for PostgreSQL single server provisioned, you'll connect to it by using the **psql** tool<!--Marcin, please validate. MS Style says not to use utility-->.
+With the Azure Database for PostgreSQL single server provisioned, you'll connect to it by using the **psql** tool.
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server provisioning status blade, select **Go to resource**.
 1. On the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Connection security**.

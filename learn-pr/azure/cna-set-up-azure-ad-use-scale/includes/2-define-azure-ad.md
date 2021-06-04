@@ -8,7 +8,7 @@
 Azure AD is Microsoft's cloud-based identity and access management service. It provides authentication capabilities and facilitates authorization through its integration with practically all of Microsoft's cloud services and a wide range of third-party software as a service (SaaS) offerings. It supports modern, industry-standard authentication and authorization protocols.
 
 > [!NOTE]
-> Through its integration with Windows Server <!--Marcin, please validate this addition--> Active Directory, Azure AD also helps protect internal resources, such as apps on your corporate network and intranet, along with any cloud apps your organization develops.
+> Through its integration with Windows Server Active Directory, Azure AD also helps protect internal resources, such as apps on your corporate network and intranet, along with any cloud apps your organization develops.
 
 Azure AD serves as an identity store, providing you with the ability to create accounts for your organization's users, groups, and devices. It also allows for creating guest accounts, representing identities of your partner organizations, making it straightforward to share resources in a secure manner in business-to-business (B2B) scenarios. You can also use Azure AD in business-to-consumer (B2C) scenarios by allowing external users to sign up for access to your apps with their existing credentials, including support for the most common social identity providers.
 
