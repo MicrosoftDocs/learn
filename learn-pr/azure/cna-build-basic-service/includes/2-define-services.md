@@ -13,7 +13,7 @@ In the context of cloud-native applications, you can optimize the use of service
 ## What is Azure Database for PostgreSQL?
 
 Azure Database for PostgreSQL is a Microsoft-managed implementation of the PostgreSQL Community Edition database engine, which offers a wide-range of capabilities that either eliminate or minimize common database management tasks. These capabilities include automatic backups, elastic scaling, enhanced monitoring and automation, and built-in high availability provisions.
-<!--ID/SME: Does the next paragraph still make sense as written?-->
+
 PostgreSQL has gained a large following since its introduction in 1996. Its availability as a managed service in Azure facilitates the adoption of principles of cloud-native applications for existing workloads. For example, you can continue using popular, open-source object-role modeling libraries, such as Sequelize or Prisma as you refactor or rearchitect your Node.js-based applications as part of their migration to Azure.
 
 Azure Database for PostgreSQL is available in three deployment modes:
