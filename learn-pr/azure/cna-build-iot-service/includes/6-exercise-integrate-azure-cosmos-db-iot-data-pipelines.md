@@ -57,7 +57,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Function App**.
 1. On the **Function App** blade, select **+ Add**.
-1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**:
+1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**
 
    | Setting | Configuration |
    | --- | --- |
