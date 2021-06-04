@@ -40,7 +40,7 @@ You'll begin by creating a sample Node.js Express web app and apply to it increm
     npm install express
     ```
 
-1. Next, use the nano editor to create a ﬁle named **index.js** in the root of the project and add to it the following content:
+1. Next, use the nano editor to create a file named **index.js** in the root of the project and add to it the following content:
 
     ```javascript
     const express = require('express')
