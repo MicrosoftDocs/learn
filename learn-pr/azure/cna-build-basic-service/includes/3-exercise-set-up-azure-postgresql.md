@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. For more in-depth knowledge and tutorials about this topic, refer to [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true).
+This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. For more in-depth knowledge and tutorials regarding this topic, refer to [What is Azure Database for PostgreSQL?](/azure/postgresql/overview?azure-portal=true).
 
 In this exercise, you'll:
 

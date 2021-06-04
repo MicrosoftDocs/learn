@@ -7,6 +7,6 @@ Now that you've completed this module, you should know more about how to:
 
 ## Use these resources to learn more
 
-* [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true)
-* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/en-us/azure/postgresql/connect-nodejs?azure-portal=true)
-* [Tutorial: Node.js for Beginners](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-beginners-tutorial?azure-portal=true)
+* [What is Azure Database for PostgreSQL?](/azure/postgresql/overview?azure-portal=true)
+* [Quickstart: Use Node.js to connect and query data in Azure Database for PostgreSQL - Single Server](/azure/postgresql/connect-nodejs?azure-portal=true)
+* [Tutorial: Node.js for Beginners](/windows/dev-environment/javascript/nodejs-beginners-tutorial?azure-portal=true)
