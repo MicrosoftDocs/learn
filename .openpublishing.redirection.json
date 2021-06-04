@@ -7789,6 +7789,21 @@
       "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/",
       "redirect_document_id": false
-    }
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/0-introduction/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/5-exercise-structs-enums.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4b-exercise-functions/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/6-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4a-functions/",
+      "redirect_document_id": true
+    }    
   ]
 }
