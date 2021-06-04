@@ -47,7 +47,7 @@ Run the following code from the terminal in Visual Studio Code to deploy the Bic
 az deployment group create --template-file main.bicep
 ```
 
-You'll see ```Running...``` in the terminal.
+You'll see `Running...` in the terminal.
 
 ::: zone-end
 
