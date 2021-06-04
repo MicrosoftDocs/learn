@@ -70,14 +70,14 @@ To verify the cloud-init functionality on the scheduler node, you'll start the c
 1. When you're connected to the scheduler node, run the following command to verify that the **/etc/hosts** file contains the entry **10.10.10.10 www.contoso.com**:
 
     ```azurecli-interactive
-    cat /etc/hosts | grep "10.10.10.10 www.contoso.com"
+    grep "10.10.10.10 www.contoso.com" /etc/hosts
     ```
 
     > [!NOTE]
     > The command should generate output in the following format:
     > 
     > ```azurecli-interactive
-    > [cc-admin@ip-0A000304 ~]$ cat /etc/hosts | grep "10.10.10.10 www.contoso.com"
+    > [cc-admin@ip-0A000304 ~]$ grep "10.10.10.10 www.contoso.com" /etc/hosts
     > 10.10.10.10 www.contoso.com
     > ```
 

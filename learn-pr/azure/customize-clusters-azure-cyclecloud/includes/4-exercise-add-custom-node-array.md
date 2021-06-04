@@ -1,6 +1,6 @@
 A nodearray is a collection of identically configured nodes of an Azure CycleCloud cluster. Their purpose is to accommodate the horizontal scaling of the cluster compute resources as the number of queued jobs changes. Each nodearray has a name, a set of attributes which apply to each of its nodes, and optional attributes that describe how the nodearray should scale.
 
-Partitions group nodes into logical and potentially overlapping sets. Their purpose is to optimize processing of jobs, by accounting for their specific constraints such as resource or time limits. The scheduler allocates jobs to nodes within a partition until their resources are exhausted or all jobs are processed.
+In the Slurm job scheduler, partitions group nodes into logical and potentially overlapping sets. Their purpose is to optimize processing of jobs, by accounting for their specific constraints such as resource or time limits. The scheduler allocates jobs to nodes within a partition until their resources are exhausted or all jobs are processed.
 
 You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this goal, you decide to apply more changes to the underlying template and validate your approach.
 
@@ -37,7 +37,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
         [[[configuration]]]
         slurm.autoscale = true
-        slurm.hpc = false
+        slurm.hpc = true
 
         [[[cluster-init cyclecloud/slurm:execute]]]
 

@@ -12,7 +12,7 @@ Azure CycleCloud offers three main methods that you can combine in an arbitrary 
 
 ### How to use custom images with Azure CycleCloud?
 
-Azure CycleCloud supports Windows Server and the most common Linux distributions on cluster nodes. The built-in templates are preconfigured with the recommended defaults, but you're free to choose Azure Marketplace images or provision nodes based on custom images. The latter might be preferable if you want to minimize delay associated with post-deployment setup of the operating system and any additional dependencies of your HPC workloads. It might also be required to satisfy business, security, or compliance needs.
+Azure CycleCloud supports cluster nodes running most common Linux distributions, and, depending on the scheduler, Windows Server. The built-in templates are preconfigured with the recommended defaults, but you're free to choose Azure Marketplace images or provision nodes based on custom images. The latter might be preferable if you want to minimize delay associated with post-deployment setup of the operating system and any additional dependencies of your HPC workloads. It might also be required to satisfy business, security, or compliance needs.
 
 Custom images allow you to have full control over the preinstalled software and the initial operating system configuration. Their primary drawback is the overhead associated with maintaining multiple images to accommodate different combinations of applications and their versions, especially in development scenarios.
 
@@ -60,3 +60,6 @@ To provision a cluster based on a project, you need to upload the project's cont
 Azure CycleCloud supports cloud-init as a way of configuring cluster nodes during the boot phase, before project-related specs are applied. This provides a convenient method to address any infrastructure or software-related dependencies, such as configuring network settings or applying operating system package updates.
 
 While you can define cloud-init configuration by using a template, it's possible to accomplish this directly from the Azure CycleCloud graphical interface. When creating or editing a cluster, you'll find the relevant settings on the tab labeled **Cloud-Init**, where you can enter the scripts for each node type.
+
+> [!NOTE]
+> Since cloud-init runs before any CycleCloud project specs, the scheduler and the configuration which Azure CycleCloud applies to a node might overwrite changes made via cloud-init. If you need to ensure that your commands run after the scheduler is installed, you should use Azure CycleCloud project specs instead.

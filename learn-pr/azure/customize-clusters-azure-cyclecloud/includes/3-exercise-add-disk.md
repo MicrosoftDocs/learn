@@ -6,8 +6,8 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 > To complete exercises in this module, you have to satisfy the following prerequisites:
 > - Have an Azure subscription with availability of vCPU cores in the three groups of VM sizes:
 >    - at least 4 vCPU cores of the DSv3 series
->    - at least 400 vCPU cores of the FSv2 series
->    - at least 60 vCPU cores of the NC series
+>    - at least 100 vCPU cores of the FSv2 series
+>    - at least 48 vCPU cores of the NC series
 > - Have a Microsoft account or an Azure AD account with the Owner or Contributor role in the Azure subscription.
 > - Deploy an Azure CycleCloud application to an Azure VM accessible with a public IP address associated with its network interface.
 > - Configure the Azure CycleCloud application with the Owner or Contributor role-level access to the Azure subscription.
@@ -26,6 +26,9 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 ## Install and configure Azure CycleCloud CLI
 
 Most management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell.
+
+> [!NOTE]
+> Alternatively, you can login to the Azure VM hosted the Azure CycleCloud application, where the Azure CycleCloud CLI is already installed.
 
 1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
 
@@ -89,7 +92,7 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
 
     ```azurecli-interactive
     mkdir ~/cyclecloud-slurm && cd ~/cyclecloud-slurm
-    cyclecloud project fetch https://github.com/Azure/cyclecloud-slurm
+    cyclecloud project fetch https://github.com/Azure/cyclecloud-slurm . 
     ```
 
 1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task):
@@ -151,7 +154,7 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
         Persistent = true
 
         [[[configuration cyclecloud.mounts.nfs]]]
-        mountpoint = /mnt/exports
+        mountpoint = /mnt/exports/lab
         fs_type = ext4
         raid_level = 0
 
