@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.loops.6-knowledgecheck
+uid: learn.student-evangelism.web-development-101-loops-arrays.knowledge-check
 metadata:
   title: Knowledge Check
   description: Knowledge Check
@@ -10,8 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Knowledge Check
 durationInMinutes: 1
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+content: Select an answer for each of the following questions.
 quiz:
   title: Check your knowledge
   questions:

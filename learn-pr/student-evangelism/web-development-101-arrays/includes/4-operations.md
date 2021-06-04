@@ -38,7 +38,7 @@ iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Choco
 
 ### Checking condition with `some()`
 
-One of your customers is allergic to "Nuts" and wants to know firstly, does any of your ice creams contain "Nuts". You check your inventory using the `some()` method. The method takes a function that checks whether at least one element fulfills a condition. 
+One of your customers is allergic to "Nuts" and wants to know firstly, does any of your ice creams contain "Nuts". You check your inventory using the `some()` method. The method takes a function that checks whether at least one element fulfills a condition.
 
 ```javascript
 iceCreamFlavors.some(flavor => flavor.type === "Nuts") // true
@@ -69,7 +69,7 @@ iceCreamFlavors.map(flavor => {
 }) // every item now has a new property price: 1 
 ```
 
-What the code does, is to go through each item in the list, and attach the `price` property, give it the value one and then return the item. 
+What the code does, is to go through each item in the list, and attach the `price` property, give it the value one and then return the item.
 
 ## Aggregations
 
@@ -104,5 +104,3 @@ sales.reduce((acc, curr) => acc + curr.amount, 0);
 ```
 
 As you can see, there's no need for a `sum` variable. Now this approach takes some getting used to, but is powerful and can be used in many situations.
-
- 

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.web-development-101.loops
+uid: learn.student-evangelism.web-development-101-loops-arrays
 metadata:
   title: JavaScript Arrays and Loops
   description: Learn how it is possible to manipulate and store data within JavaScript.
@@ -24,12 +24,12 @@ roles:
 products:
   - vs-code
 units:
-  - learn.student-evangelism.web-development-101.loops.1-introduction
-  - learn.student-evangelism.web-development-101.loops.2-arrayloops
-  - learn.student-evangelism.web-development-101.loops.3-loops
-  - learn.student-evangelism.web-development-101.loops.4-operations
-  - learn.student-evangelism.web-development-101.loops.5-exerciseoperations
-  - learn.student-evangelism.web-development-101.loops.6-knowledgecheck
-  - learn.student-evangelism.web-development-101.loops.7-summary
+  - learn.student-evangelism.web-development-101-loops-arrays.introduction
+  - learn.student-evangelism.web-development-101-loops-arrays.arrays-loops
+  - learn.student-evangelism.web-development-101-loops-arrays.loops
+  - learn.student-evangelism.web-development-101-loops-arrays.operations
+  - learn.student-evangelism.web-development-101-loops-arrays.exercise-operations
+  - learn.student-evangelism.web-development-101-loops-arrays.knowledge-check
+  - learn.student-evangelism.web-development-101-loops-arrays.summary
 badge:
-  uid: learn.student-evangelism.web-development-101.loops.badge
+  uid: learn.student-evangelism.web-development-101-loops-arrays.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.loops.2-arrayloops
+uid: learn.student-evangelism.web-development-101-loops-arrays.arrays-loops
 metadata:
   title: Manipulating arrays
   description: Learn about how to work with arrays to access items, remove and add them.

@@ -8,7 +8,7 @@ An array is a type of data structure that contains more than one element. Imagin
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road"];
 ```
 
-In the above code, you are using double brackets `[]` to indicate that here's an array and all its content within the brackets. 
+In the above code, you are using double brackets `[]` to indicate that here's an array and all its content within the brackets.
 
 ### Accessing an item
 
@@ -38,7 +38,7 @@ At some point, your ice cream business expands and you want to offer more flavor
 
 ```javascript
 iceCreamFlavors.push("Mint");
-``` 
+```
 
 ### Using the array length
 

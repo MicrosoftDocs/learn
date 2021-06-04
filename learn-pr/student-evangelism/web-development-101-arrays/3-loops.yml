@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.loops.3-loops
+uid: learn.student-evangelism.web-development-101-loops-arrays.loops
 metadata:
   title: Iterate over items in the array with loops
   description: Learn about for and while loops, and when to use them.

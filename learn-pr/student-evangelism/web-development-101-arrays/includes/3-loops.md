@@ -39,7 +39,7 @@ for (let i = 0; i < 10; i++ ) {
 }
 ```
 
-> [!TIP] 
+> [!TIP]
 > Run this code in a browser console. What happens when you make small changes to the counter, condition, or increment expression? Can you make it run backwards, creating a countdown?
 
 ### While loop
@@ -55,7 +55,8 @@ while (i < 10) {
 }
 ```
 
-[!NOTE] Why would you choose a for loop vs. a while loop? 17 K viewers had the same question on StackOverflow, and some of the opinions [might be interesting to you](https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript).
+> [!NOTE]
+> Why would you choose a for loop vs. a while loop? 17 K viewers had the same question on StackOverflow, and some of the opinions [might be interesting to you](https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/?azure-portal=true).
 
 Arrays are often used with loops because most conditions require the length of the array to stop the loop, and the index can also be the counter value.
 
@@ -106,9 +107,9 @@ for(let i = 0; i< numbers.length; i++>) {
   }
   console.log(numbers[i]);
 }
-``` 
+```
 
 The usage of `break` makes the loop stop at a negative item. The `forEach()` loop can't do that.
 
 > [!TIP]
-> Experiment with looping over an array of your own making in your browser's console. If you'd like to challenge yourself, there are other ways of looping over arrays other than for and while loops. There are [forEach](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [for-of](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of), and [map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map). Rewrite your array loop using one of these techniques.
+> Experiment with looping over an array of your own making in your browser's console. If you'd like to challenge yourself, there are other ways of looping over arrays other than for and while loops. There are [forEach](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [for-of](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of/?azure-portal=true), and [map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map/?azure-portal=true). Rewrite your array loop using one of these techniques.
