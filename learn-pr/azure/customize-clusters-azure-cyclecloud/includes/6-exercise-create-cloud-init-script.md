@@ -15,7 +15,7 @@ To validate the execution of cloud-init scripts, you'll connect to cluster nodes
 1. In the **Open** dialog box, navigate to the location of the **.pem** file containing the private key and select **Open**.
 1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands to move the uploaded **.pem** file to the correct location and configure necessary file-level permissions (replace the `<private_key.pem>` placeholder with the name of the **.pem** file):
 
-    ```azurecli-interactive
+    ```azurecli
     mkdir -p ./.ssh
     mv private_key.pem ./.ssh
     chmod 600 ~/.ssh/cc-ssh-keys.pem
@@ -30,7 +30,7 @@ The option to add scripts to the cluster nodes is available directly from the Az
 1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page. In the list of clusters, select the **contoso-custom-slurm-lab-cluster** entry, and then select **Edit**.
 1. In the **Edit contoso-custom-slurm-lab-cluster** pop-up window, select the **Cloud-init** entry, and in the **Cloud-init configuration** section, on the **scheduler** tab, enter the following script:
 
-    ```azurecli-interactive
+    ```azurecli
     #!/bin/bash
     echo "10.10.10.10 www.contoso.com" >> /etc/hosts
     ```
@@ -69,7 +69,7 @@ To verify the cloud-init functionality on the scheduler node, you'll start the c
 
 1. When you're connected to the scheduler node, run the following command to verify that the **/etc/hosts** file contains the entry **10.10.10.10 www.contoso.com**:
 
-    ```azurecli-interactive
+    ```azurecli
     grep "10.10.10.10 www.contoso.com" /etc/hosts
     ```
 
@@ -90,7 +90,7 @@ Now you'll repeat the equivalent sequence of steps to verify cloud-init function
 
 1. From your computer, in the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, while connected to the scheduler node, run the following commands to remove and reallocate the compute nodes in your Azure CycleCloud cluster and terminate the connection to the scheduler node:
 
-    ```azurecli-interactive
+    ```azurecli
     sudo -i
     cd /opt/cycle/jetpack/system/bootstrap/slurm
     ./cyclecloud_slurm.sh remove_nodes
@@ -120,7 +120,7 @@ Now you'll repeat the equivalent sequence of steps to verify cloud-init function
     > [!NOTE]
     > The command should generate output in the following format:
     > 
-    > ```azurecli-interactive
+    > ```azurecli
     > m@Azure:~$ cyclecloud connect htc-1 -c contoso-custom-slurm-lab-cluster
     > Connecting to cc-admin@10.0.3.5 (contoso-custom-slurm-lab-cluster htc-1) through SSH bastion at cc-admin@40.87.52.25
     > [cc-admin@ip-0A000305 ~]$
@@ -128,7 +128,7 @@ Now you'll repeat the equivalent sequence of steps to verify cloud-init function
 
 1. When you're connected to the **htc-1** node, run the following command to verify that the **/etc/hosts** file contains the entry **10.10.10.10 www.contoso.com**:
 
-    ```azurecli-interactive
+    ```azurecli
     cat /etc/hosts | grep "10.10.10.10 www.contoso.com"
     ```
 
