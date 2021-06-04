@@ -3,12 +3,12 @@ uid: learn.language.rust-understand-common-concepts.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 05/04/2021
-  author: meaghanlewis
+  ms.date: 06/02/2021
+  author: GitHubber17
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/0-introduction.md)]
