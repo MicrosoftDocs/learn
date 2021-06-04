@@ -16,34 +16,23 @@ quiz:
   questions:
     - content: Which of the following statements is true about scenario templates?
       choices:
-        - content: Scenario templates are included only as part of the Health Bot paid
-            plan.
+        - content: Scenario templates are included only as part of an Azure Health Bot paid plan.
           isCorrect: false
-          explanation: Scenario template catalog is included in both free and paid Health
-            Bot plan.
-        - content: Scenario templates enable organizations to quickly build out custom
-            scenarios for popular Healthcare use cases.
+          explanation: A scenario template catalog is included in both free and paid Health Bot plans.
+        - content: Scenario templates enable organizations to quickly build custom scenarios for popular healthcare use cases.
           isCorrect: true
-          explanation: Templates are a starting point for building your own custom
-            scenarios.
-        - content: Scenario templates cannot be customized or extended.
+          explanation: Templates are a starting point for building your own custom scenarios.
+        - content: Scenario templates can't be customized or extended.
           isCorrect: false
           explanation: You can easily customize and extend any part of a template scenario.
-    - content: Which of the following statements is true about the triage and handoff
-        template?
+    - content: Which of the following statements is true about the triage and handoff template?
       choices:
-        - content: The triage and handoff template can be used to extend the built-in
-            symptom checker and transition the conversations to a live nurse.
+        - content: The triage and handoff template can be used to extend the built-in symptom checker and transition the conversations to a live nurse.
           isCorrect: true
-          explanation: The triage and handoff template uses the built-in triage and symptom 
-            checking scenario and the built-in handoff scenario to transition the conversation 
-            to a live nurse. 
-        - content: The triage and handoff template cannot be customized or extended.
+          explanation: The triage and handoff template uses the built-in triage and symptom-checking scenario and the built-in handoff scenario to transition the conversation to a live nurse. 
+        - content: The triage and handoff template can't be customized or extended.
           isCorrect: false
-          explanation: The triage and handoff template can easily be extended to add steps
-            before or after the triage assessment.
-        - content: To import the triage and handoff template scenario, navigate to
-            Scenarios > Search > Triage and handoff.
+          explanation: The triage and handoff template can be extended to add steps before or after the triage assessment.
+        - content: To import the triage and handoff template scenario, select **Scenarios** > **Search** > **Triage and handoff**.
           isCorrect: false
-          explanation: To import the triage and handoff template scenario, navigate to
-            Scenarios > Template catalog > Triage and handoff.
+          explanation: To import the triage and handoff template scenario, select **Scenarios** > **Template catalog** > **Triage and handoff**.
