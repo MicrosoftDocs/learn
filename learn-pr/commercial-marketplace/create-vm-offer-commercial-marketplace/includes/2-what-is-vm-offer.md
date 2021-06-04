@@ -14,7 +14,7 @@ You have two software licensing options:
 
 - **Bring your own license (BYOL)**: Customers use an existing subscription to your software to deploy your application to their Azure subscription. When you choose the BYOL model, customers have to purchase a subscription to your application outside of Azure Marketplace, then enter a valid subscription key when they configure the VM in the Azure portal before deployment. You’ll be responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, metering usages (if applicable), and invoicing  over the life of the subscription.
 
-- **Usage-based monthly billed plan**: Also known as the pay-as-you-go (PAYG) license model,customers purchase a license to your software through Microsoft. When you choose pay-as-you-go, Microsoft processes payments from customers on your behalf. Customers pay using the same payment method that they use to pay for their Azure subscriptions.
+- **Usage-based monthly billed plan**: Also known as the pay-as-you-go (PAYG) license model, customers purchase a license to your software through Microsoft. When you choose pay-as-you-go, Microsoft processes payments from customers on your behalf. Customers pay using the same payment method that they use to pay for their Azure subscriptions.
 
 >[!NOTE]
 >When you choose the usage-based license model, you’ll also have the option to enable free trials for Azure Marketplace customers so they can evaluate your application. You'll get to choose between one, three, or 6-month trial periods when you configure your offer's pricing and availability in Partner Center.
