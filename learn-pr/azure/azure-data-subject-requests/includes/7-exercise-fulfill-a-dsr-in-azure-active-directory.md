@@ -74,7 +74,7 @@ You'll now use the Azure Active Directory admin center to find personal informat
 
 You'll now respond to  the DSR by deleting the data subject's user account:
 
-1. 1.	In the All users blade, select the check box for the data subject's user account (Avery Howard).  
+1. In the All users blade, select the check box for the data subject's user account (Avery Howard).  
 1. Select **Delete user**, and then select **Yes** to confirm.
 1. Select **Deleted users**.
 1. In the **Deleted users** blade, select the data subject's user account check box.
