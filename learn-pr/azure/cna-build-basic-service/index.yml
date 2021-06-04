@@ -37,7 +37,7 @@ units:
 - learn.azure.build-basic-service.2-define-services
 - learn.azure.build-basic-service.3-exercise-set-up-azure-postgresql
 - learn.azure.build-basic-service.4-set-up-basic-service
-- learn.azure.build-basic-service.5-exercise-connect-express.js-postresql
+- learn.azure.build-basic-service.5-exercise-connect-express.js-postgresql
 - learn.azure.build-basic-service.6-extend-services-architecture
 - learn.azure.build-basic-service.7-exercise-set-up-next.js-app
 - learn.azure.build-basic-service.8-knowledge-check
