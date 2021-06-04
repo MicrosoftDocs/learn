@@ -55,7 +55,7 @@ Most management tasks in this and subsequent exercises require the use of Azure 
 
 1. Run the following commands to extract and execute the script that performs the Azure CycleCloud CLI installation:
 
-    ```azurecli-interactive
+    ```azurecli
     unzip ./cyclecloud-cli.zip
     cd ./cyclecloud-cli-installer
     ./install.sh
