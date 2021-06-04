@@ -10,7 +10,7 @@ if (condition){
 }
 ```
 
-### Comparing a value
+### Compare a value
 
 You can pass a variable or a boolean value to an `if` clause like so:
 
@@ -50,7 +50,7 @@ if (currentMoney >= laptopPrice){
 > [!TIP]
 > As a developer you need to get used to reading code and be able to tell how it will execute. Take a short break here and try to figure out if the code within the `if` clause will execute or not?
 
-Because the value of `currentMoney` is lower than the value of `laptopPrice` the statement within the `if` will evaluate to false. The statement within the `if` clause will not run. 
+Because the value of `currentMoney` is lower than the value of `laptopPrice` the statement within the `if` will evaluate to false. The statement within the `if` clause will not run.
 
 ## If..Else Statement
 

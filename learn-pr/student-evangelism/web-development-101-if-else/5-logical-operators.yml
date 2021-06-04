@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.ifelse.5-logicaloperators
+uid: learn.student-evangelism.web-development-101-if-else.logical-operators
 metadata:
   title: Logical operators
   description: Learn how logical operators are used in JavaScript.
-  ms.date: 05/17/2021
+  ms.date: 06/17/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial

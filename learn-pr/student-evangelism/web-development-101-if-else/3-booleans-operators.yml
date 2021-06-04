@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.ifelse.3-booleans-operators
+uid: learn.student-evangelism.web-development-101-if-else.booleans-operators
 metadata:
   title: Boolean operators
   description: What are booleans and how do we use them?
-  ms.date: 05/17/2021
+  ms.date: 06/17/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial

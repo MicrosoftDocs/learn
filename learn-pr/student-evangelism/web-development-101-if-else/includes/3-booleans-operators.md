@@ -36,6 +36,5 @@ let timeOfDay = 8;
 let timeToWakeUp = timeOfDay >= 8; // `timeToWakeUp` holds the value `true`
 ```
 
-
-> [!TIP] 
+> [!TIP]
 > Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; try writing some comparisons in your browser's console. Does any returned data surprise you?

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.ifelse.2-decisions-overview
+uid: learn.student-evangelism.web-development-101-if-else.decisions-overview
 metadata:
   title: Making decisions with JavaScript
   description: Learn the syntax for controlling data flow in JavaScript and its
     significance when used with Boolean data types.
-  ms.date: 05/17/2021
+  ms.date: 06/17/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial

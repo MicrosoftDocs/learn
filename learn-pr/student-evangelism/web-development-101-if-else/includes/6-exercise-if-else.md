@@ -37,7 +37,7 @@ In Black Jack, the goal of the game is to win over the bank. You win by holding 
 
    ```javascript
    node blackjack.js
-   ``` 
+   ```
 
    You see the following output:
 
@@ -45,7 +45,7 @@ In Black Jack, the goal of the game is to win over the bank. You win by holding 
    You have 19 points
    ```
 
-## Adding an opponent
+## Add an opponent
 
 Your opponent is the bank. Remember the rules, you win if you have better score than the bank or if the bank has over 21. Let's implement those rules.
 

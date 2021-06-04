@@ -1,5 +1,3 @@
-# Introduction
-
 Some programs, that you write, execute from top to bottom. Quite often though you have applications who's path through the code is determined by different conditions you set up. 
 
 Let's say you have a program that wants to create a backup file of all the files in a directory. However, if the backup file already exist you don't want to create it again as it might be a time consuming to create it again. This scenario is an example when you want to have the ability express conditional logic so the code runs differently depending on whether a condition is met or not.

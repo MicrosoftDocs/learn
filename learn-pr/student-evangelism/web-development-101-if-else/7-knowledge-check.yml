@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.ifelse.7-knowledgecheck
+uid: learn.student-evangelism.web-development-101-if-else.knowledge-check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: Knowledge Check
-  ms.date: 05/17/2021
+  ms.date: 06/17/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 1
-content: |
-  [!include[](includes/7-knowledge-check.md)]
+content: Select an answer for each of the following questions.
 quiz:
   title: Check your knowledge
   questions:

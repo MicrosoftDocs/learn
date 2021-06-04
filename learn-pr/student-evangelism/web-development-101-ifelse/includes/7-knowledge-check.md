@@ -1,1 +1,0 @@
-Select one of the options in each question

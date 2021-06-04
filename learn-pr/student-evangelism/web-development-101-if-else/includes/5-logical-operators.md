@@ -10,7 +10,7 @@ There are specific operators that let us connect many boolean statements. The re
 | `||` | **Logical OR**: Compares two Boolean expressions. Returns true if at least one side is true     | `(5 > 6) || (5 < 6) //One side is false, other is true. Returns true` |
 | `!`    | **Logical NOT**: Returns the opposite value of a Boolean expression                             | `!(5 > 6) // 5 is not greater than 6, but "!" will return true`         |
 
-## Conditions and Decisions with Logical Operators
+## Conditions and decisions with logical operators
 
 You can use these complex operators with both assignments but also with `if` and `else` clauses.
 
@@ -22,7 +22,7 @@ As part of assigning a value to a variable, you can for example use an or `||` o
 let isHoliday = true;
 let isMember = true;
 let hasDiscount = isHoliday || isMember;
-``` 
+```
 
 With the above code, you express whether a customer can have a discount or not. Just one of the variables `isMember` or `hasDiscount` needs to have a truthy value for the `hasDiscount` to be assigned true.
 
@@ -79,15 +79,13 @@ let biggestNumber = firstNumber > secondNumber ? firstNumber: secondNumber;
 ```
 
 The code states that:
- 
-if `firstNumber` is larger than `secondNumber`, 
-then assign `firstNumber` to `biggestNumber`, otherwise assign `secondNumber`. 
 
+if `firstNumber` is larger than `secondNumber`,
+then assign `firstNumber` to `biggestNumber`, otherwise assign `secondNumber`.
 
 > [!TIP]
 > Take a minute to read this code a few times. Do you understand how these operators are working?
 
-  
 The ternary expression is a compact way of writing the code below:
 
 ```javascript
