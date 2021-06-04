@@ -6,7 +6,6 @@ This exercise provides an overview of setting up the collection, processing, and
 
 In this exercise, you'll:
 
-* Create an Azure IoT Central application based on a predefined template.
 * Create an Azure function that uploads telemetry data to an Azure Cosmos DB collection.
 * Configure a telemetry rule of the Azure IoT Central application.
 * Validate the functionality of the Azure IoT Central telemetry pipeline consisting of an Azure Function app and an Azure Cosmos DB collection.
