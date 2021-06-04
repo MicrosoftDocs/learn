@@ -1,71 +1,70 @@
-Being able to integrate various LUIS models into your Azure Health Bot enables you to provide a wide range of services that are personalized for your end users.
+Integrating various LUIS models into your Azure Health Bot instance enables you to provide a wide range of services that are personalized for your users.
 
-## Import the 'Booking appointments' template scenario
+## Import the Booking appointments template scenario
 
-When you finish integrating the LUIS App that you have created into the Azure Health Bot later on, you will need to map it to a scenario. For this purpose, you will use an already existing template scenario, 'Booking appointments'.
+When you finish integrating the LUIS app that you created into your health bot later, you'll need to map it to a scenario. For this purpose, you'll use a preexisting template scenario, **Booking appointments**.
 
-1. Navigate to the home page of your Azure Health Bot. In the pane on the left, select 'Template catalog' under 'Scenarios'.
+1. Go to the home page of your health bot. In the pane on the left, under **Scenarios** select **Template catalog**.
 
-1. Scroll down to 'Popular Templates' and select 'Booking appointments'
+1. Scroll down to **Popular Templates**, and select **Booking appointments**.
 
-   :::image type="content" source="../media/5-create-template.png" alt-text="Create Scenario template":::
+   :::image type="content" source="../media/5-create-template.png" alt-text="Screenshot that shows selecting a Scenario template.":::
 
-   A pane appears on the right side with the heading, 'Import Booking appointments template'. Click on 'Import template'. Once it is imported, you will see a message on the top right corner of the page saying, 'Import completed successfully' and you will be redirected to the scenario editor.
+   In the **Import Booking appointments template** pane on the right, select **Import template**. After it's imported, you'll see a message in the upper-right corner of the page that says *Import completed successfully*. You're redirected to the scenario editor.
 
-   :::image type="content" source="../media/5-import-template.png" alt-text="Import template":::
+   :::image type="content" source="../media/5-import-template.png" alt-text="Screenshot that shows importing a template.":::
 
-1. Click on the 'Save' button on the top left corner of the editor.
+1. Select **Save** in the upper-left corner of the editor.
 
-   :::image type="content" source="../media/5-save-template.png" alt-text="Save template":::
+   :::image type="content" source="../media/5-save-template.png" alt-text="Screenshot that shows saving a template.":::
 
-1. Once the scenario has been saved, navigate back to the home page of your Azure Health Bot. In the pane on the left, select 'Manage' under 'Scenarios'.
+1. After the scenario is saved, go back to the home page of your health bot. In the pane on the left, under **Scenarios** select **Manage**.
 
-1. You should see your appointment scheduling scenario under Scenario Management.
+1. You should see your appointment scheduling scenario under **Scenario Management**.
 
-## Copy the required keys from the LUIS Portal
+## Copy the required keys from the LUIS portal
 
-At the top of the Language Understanding page for your app, click on 'MANAGE'. You will need 2 keys to export our LUIS model to the Azure Health Bot. The first one is the App ID. In the pane on the left, select 'Settings'. You will then see an App ID under Application Settings.
+At the top of the **Language Understanding** page for your app, select the **MANAGE** tab. You need two keys to export your LUIS model to your health bot. The first one you need is an app ID. In the pane on the left, select **Settings**. Then under **Application Settings**, you'll see a value in **App ID**.
 
-   :::image type="content" source="../media/5-app-id.png" alt-text="App ID" lightbox="../media/5-app-id.png":::  
+   :::image type="content" source="../media/5-app-id.png" alt-text="Screenshot that shows App ID." lightbox="../media/5-app-id.png":::
 
-The other key that you will need is the primary key of your app. In the pane on the left, select 'Azure Resources'. You will then see 2 tabs, 'Prediction Resources' and 'Authoring Resource'. To export your app to the Azure Health Bot, make sure you use the 'Primary Key' from the 'Prediction Resources' tab so that the Azure Health Bot can make endpoint queries to your app.
+The other key you need is the primary key of your app. In the **Settings** pane on the left, select **Azure Resources**. You'll then see two tabs, **Prediction Resources** and **Authoring Resource**. To export your app to your health bot, make sure you use the **Primary Key** value from the **Prediction Resources** tab so that Health Bot can make endpoint queries to your app.
 
-   :::image type="content" source="../media/5-primary-key.png" alt-text="Primary key" lightbox="../media/5-primary-key.png":::  
+   :::image type="content" source="../media/5-primary-key.png" alt-text="Screenshot that shows Primary Key." lightbox="../media/5-primary-key.png":::
 
-You will need to specify these two keys during the creation of the language model in the Azure Health Bot.
+You'll need to specify these two keys during the creation of the language model in your health bot.
 
-## Create a new language model in your Azure Health Bot
+## Create a new language model in your health bot
 
-1. Navigate to the home page of your Azure Health Bot. In the pane on the left, select 'Models' under 'Language'. At the top of the 'Language models' page that appears, click on 'New' to create a new language model.
+1. Go to the home page of your health bot. In the pane on the left, under **Language** select **Models**. At the top of the **Language models** page, select **New** to create a new language model.
 
-   :::image type="content" source="../media/5-new-language-model.png" alt-text="New Language Model":::
+   :::image type="content" source="../media/5-new-language-model.png" alt-text="Screenshot that shows the Language models New button.":::
 
-   A pane appears at the right side with the heading, 'New model'. Here, you will need to enter details about your new language model which is the conversation app that you created in LUIS.
+   In the **New model** pane on the right, you need to enter details about your new language model, which is the conversation app that you created in LUIS.
 
-1. Enter the appropriate details for the name and description of your new language model. Under 'Method', make sure you choose 'LUIS (NLP)' since we are exporting our LUIS app to the Azure Health Bot.  
+1. Enter the appropriate details for the name and description of your new language model. Under **Method**, make sure you choose **LUIS (NLP)** because you're exporting your LUIS app to your health bot. Fill in the other boxes:
 
-   Under 'Region', make sure that the selected region is the same as the region of your prediction resource (You can check this by navigating back to the LUIS portal and checking it in 'Azure Resources' under the 'MANAGE' tab at the top of the page).  
+   * **Region**: Make sure that the selected region is the same as the region of your prediction resource. To check, go back to the LUIS portal and look in **Azure Resources** on the **MANAGE** tab.
+   * **Application ID**: Go back to the LUIS portal. Select the **MANAGE** tab, and then select **Settings** in the pane on the left. Copy your **App ID**. Go back to the language model creation menu in your health bot and paste it in the **Application ID** box.
+   * **Subscription key**: Go back to the LUIS portal. Select the **MANAGE** tab, and then select **Azure Resources** in the pane on the left. Copy the **Primary Key** from the **Prediction Resource** tab. Go back to the language model creation menu in the Health Bot portal and paste it in the **Subscription key** box.
+   * **Bing Speller subscription key**, **Use staging model**, and **Verbose**: These boxes are for other features that you can enable for your LUIS application. For this tutorial, you can leave the defaults.
 
-   For your Application ID, navigate back to the LUIS portal. Click on the 'MANAGE' tab at the top of the page and then select 'Settings' in the pane on the left. Copy your App ID. Then navigate back to the language model creation menu in your Azure Health Bot and paste it in the 'Application ID' field.  
-
-   For your Subscription ID, navigate back to the LUIS portal. Click on the 'MANAGE' tab at the top of the page and then select 'Azure Resources' in the pane on the left. Copy the Primary Key from the Prediction Resource tab. Then navigate back to the language model creation menu in the Azure Health Bot portal and paste it in the 'Subscription key' field.  
-
-   The Bing, Staging and Verbose fields are additional features that you can enable for your LUIS application. For this tutorial you can leave the defaults.
-
-   :::image type="content" source="../media/5-language-model-details.png" alt-text="Language model details":::
+      :::image type="content" source="../media/5-language-model-details.png" alt-text="Screenshot that shows language model details.":::
 
 ## Fetch intents from LUIS and map them to a scenario
 
-1. Once you fill the Application ID and Subscription Key fields, scroll down to the bottom of the menu and click on 'Fetch LUIS intents'.
+1. After you fill the **Application ID** and **Subscription key** boxes, scroll down to the bottom of the menu and select **Fetch LUIS intents**.
 
-   :::image type="content" source="../media/5-fetch-luis-intents.png" alt-text="Fetch LUIS intents":::
+   :::image type="content" source="../media/5-fetch-luis-intents.png" alt-text="Screenshot that shows the Fetch LUIS intents button.":::
 
-1. You will see that your intents from the 'BookAppointment' LUIS app have been exported to the Azure Health Bot. Map it to the 'Booking appointments' scenario that we imported earlier by selecting it from the drop-down menu. Click on 'Create' once done.
+1. You'll see that your intents from the **BookAppointment** LUIS app have been exported to your health bot. Map it to the **Booking appointments** scenario that you imported earlier by selecting it from the dropdown menu. Select **Create**.
 
-   :::image type="content" source="../media/5-map-intents.png" alt-text="Map intents to scenario":::
+   :::image type="content" source="../media/5-map-intents.png" alt-text="Screenshot that shows mapping intents to a scenario.":::
 
-You have now successfully imported your LUIS app into the Azure Health Bot.
+You've now successfully imported your LUIS app into your health bot.
 
-## Test out your new language model in the Web Chat
+## Test your language model in Web Chat
 
-:::image type="content" source="../media/5-test-model.png" alt-text="Test language model on webchat" lightbox="../media/5-test-model.png":::
+Now test your new language model in Web Chat.
+
+:::image type="content" source="../media/5-test-model.png" alt-text="Screenshot that shows testing the language model in Web Chat." lightbox="../media/5-test-model.png":::

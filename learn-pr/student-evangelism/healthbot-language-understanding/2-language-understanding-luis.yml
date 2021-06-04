@@ -3,7 +3,7 @@ uid: learn.healthbot-language-understanding.2-language-understanding-luis
 title: Language Understanding (LUIS)
 metadata:
   title: Language Understanding (LUIS)
-  description: Learn about concepts related to language understanding like utterances, intents and entities.
+  description: Learn about concepts related to Language Understanding Intelligent Service (LUIS) like utterances, intents, and entities.
   author: nrd26
   ms.author: chnoring
   ms.date: 04/14/2020

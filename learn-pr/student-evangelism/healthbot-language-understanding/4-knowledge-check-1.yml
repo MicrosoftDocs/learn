@@ -2,7 +2,7 @@
 uid: learn.healthbot-language-understanding.4-knowledge-check-1
 title: Knowledge check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: Four multiple-choice questions
   ms.date: 04/27/2020
   author: nrd26
@@ -15,30 +15,30 @@ content: |
 quiz:
   questions:
     # Question 1
-    - content: "Sarah has been having severe pain in her lower back recently and has also been experiencing frequent headaches. She decides to consult an app using the Azure Health Bot service to find out the root cause. Which of the following models would be best suited to handle this situation?"
+    - content: "Sarah has been having severe pain in her lower back recently and has also been experiencing frequent headaches. She decides to consult an app by using Azure Health Bot to find out the root cause. Which of the following models would be best suited to handle this situation?"
       choices:
         - content: "RegEx"
           isCorrect: false
-          explanation: "Incorrect. RegEx models are used to understand simple and predictable commands from end users like 'I need help!'"
+          explanation: 'Incorrect. RegEx models are used to understand simple and predictable commands from users like "I need help!"'
         - content: "LUIS"
           isCorrect: false
-          explanation: "Incorrect. Although you can train a LUIS model to do this, it may not be the best way to handle medical complaints."
-        - content: "System Models"
+          explanation: "Incorrect. Although you can train a LUIS model to do this, it might not be the best way to handle medical complaints."
+        - content: "System models"
           isCorrect: true
-          explanation: "Correct. The built-in medical models provide language understanding that is tuned for medical concepts and clinical terminology."
+          explanation: "Correct. The built-in medical models provide Language Understanding that's tuned for medical concepts and clinical terminology."
     
     # Question 2
     - content: "While ______ are required, _____ are optional."
       choices:
         - content: "intents, entities"
           isCorrect: true
-          explanation: "Correct. You need to provide intents to your LUIS App to be able to understand the user's utterance. While entities help you extract meaningful data from the utterance, they are optional for your LUIS App."
+          explanation: "Correct. You need to provide intents to your LUIS app to be able to understand the user's utterance. Entities help you extract meaningful data from the utterance, but they're optional for your LUIS app."
         - content: "entities, intents"
           isCorrect: false
-          explanation: "Incorrect. Intents are required while creating your LUIS App"
+          explanation: "Incorrect. Intents are required when you create your LUIS app."
         - content: "utterances, intents"
           isCorrect: false
-          explanation: "Incorrect. Sample utterances as well as intents are required while creating your LUIS App"
+          explanation: "Incorrect. Sample utterances and intents are required when you create your LUIS app."
         
         
   
