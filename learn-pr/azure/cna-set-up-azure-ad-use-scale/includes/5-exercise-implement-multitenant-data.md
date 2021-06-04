@@ -1,68 +1,75 @@
-This exercise takes you through the process of installing Azure Database for PostgreSQL in the single server deployment model, creating a database with sample inventory data, integrating the server with Azure AD, and implementing a simple Node.js-based application that queries the database by relying on Azure AD authentication.
+This exercise takes you through the process of:
+
+- Installing Azure Database for PostgreSQL in the single server deployment model.
+- Creating a database with sample inventory data.
+- Integrating the server with Azure AD.
+- Implementing a simple Node.js-based application that queries the database by relying on Azure AD authentication.
 
 > [!NOTE]
-> This exercise illustrates a simplified approach to providing support for multiple tenants by emulating the multi-tenancy functionality of the Azure Database for PostgreSQL Hyperscale deployment model. It also provides a simplified approach for implementing Azure AD authentication in multi-tenant scenarios by relying on the Azure AD B2B functionality. Azure AD supports directly multi-tenant applications, but their detailed coverage is outside of the scope of this module.
+> This exercise illustrates a simplified approach to providing support for multiple tenants by emulating the multitenancy functionality of the Azure Database for PostgreSQL Hyperscale deployment model. It also provides a simplified approach for implementing Azure AD authentication in multitenant scenarios by relying on the Azure AD B2B functionality. Azure AD supports directly multi-tenant applications, but their detailed coverage is outside of the scope of this module.
 
-In this exercise, you will:
+In this exercise, you'll:
 
-* Create an instance of Azure Database for PostgreSQL single server
-* Connect to the Azure Database for PostgreSQL server
-* Create a database and sample tables
-* Integrate the Azure Database for PostgreSQL server with Azure AD
-* Register an aplication with Azure AD
-* Implement a simple, Azure AD-integrated Node.js-based application 
-* Validate the functionality of the Node.js-based application
+- Create an instance of Azure Database for PostgreSQL single server.
+- Connect to the Azure Database for PostgreSQL server.
+- Create a database and sample tables.
+- Integrate the Azure Database for PostgreSQL server with Azure AD.
+- Register an application with Azure AD.
+- Implement a simple, Azure AD-integrated Node.js-based application.
+- Validate the functionality of the Node.js-based application.
 
 ## Prerequisites
 
-* An Azure subscription
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
-* The completed first exercise of this module
+To perform this exercise, you need:
+
+- An Azure subscription.
+- A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- To have completed the first exercise of this module.
 
 ## Create an instance of Azure Database for PostgreSQL single server
 
-You will start by creating an instance of Azure Database for PostgreSQL single server. 
+You'll start by creating an instance of Azure Database for PostgreSQL single server:
 
-1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in to access the Azure subscription you will be using in this module.
-1. Use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Azure Database for PostgreSQL** and, in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
+1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL** and, in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
-1. On the **Basics** tab of the **Single server** blade, configure the following settings and select **Next: Review + create >** (leave all other settings with their default values):
+1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create >**, while leaving all other settings with their default values:
 
     | Setting | Configuration |
     | --- | --- |
-    | Subscription | Select the name of the Azure subscription you will be using in this module. |
+    | Subscription | Select the name of the Azure subscription you'll be using in this module. |
     | Resource Group | Create a new resource group named **postgresql-db-RG**. |
-    | Server name | Type a unique name consisting of lower-case letters, digits and/or dashes, starting with a letter. |
+    | Server name | Enter a unique name consisting of lower-case letters, digits and/or dashes, starting with a letter. |
     | Data source | Select **None** |
     | Location | Select the Azure region closest to the location of your lab environment where you can create Azure Database for PostgreSQL instances. |
     | Version | Select **11**. |
-    | Compute + storage | Select the **Configure server** link, on the **Configure** blade, select **Basic**, set the **vCore** value to **1**, **Storage** to **5 GB**, and select **OK**. |
-    | Admin username | Type **student**. |
-    | Password | Type **Pa55w0rd1234**. |
+    | Compute + storage | Select the **Configure server** link. On the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
+    | Admin username | Enter **student**. |
+    | Password | Enter **Pa55w0rd1234**. |
 
-    ![Screenshot that shows the Basics tab of the Single server blade in the Azure portal](../media/5-azure-db-postgresql-create-basics.png)
+    :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the Single server blade in the Azure portal.":::
 
-1. On the **Review + create** tab of the **Single server** blade, select **Create**
+1. On the **Review + create** tab of the **Single server** blade, select **Create**.
 
     > [!NOTE]
     > Wait for the provisioning to complete. This might take about 5 minutes.
 
     > [!NOTE]
-    > The provisioning process creates automatically a database named **postgres** within the target server.
+    > The provisioning process automatically creates a database named **postgres** within the target server.
 
 ## Connect to the Azure Database for PostgreSQL server
 
-With the Azure Database for PostgreSQL single server provisioned, you will connect to it by using the **psql** utility.
+With the Azure Database for PostgreSQL single server provisioned, you'll connect to it by using the **psql** tool<!--Marcin, please validate. MS Style says not to use utility-->.
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server provisioning status blade, select **Go to resource**.
 1. On the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Connection security**.
 1. On the **Connection security** blade, set **Allow access to Azure services** to **Yes**, select **+ Add client IP**, set **Enforce SSL connection** to **DISABLED**, and then select **Save**.
 
     > [!NOTE]
-    >  These settings will allow connectivity to the database from your computer and from applications running in Azure.
+    > These settings will allow connectivity to the database from your computer and from applications running in Azure.
 
     > [!NOTE]
-    >  Disabling the SSL enforcement is meant strictly to simplify the subsequent exercises. In general, you should keep this setting enabled.
+    > Disabling the SSL enforcement is meant strictly to simplify the subsequent exercises. In general, you should keep this setting enabled.
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, select **Overview**.
 1. In the **Essentials** section, identify the entries next to the **Server name** and **Admin username** labels and record their values.
@@ -71,24 +78,23 @@ With the Azure Database for PostgreSQL single server provisioned, you will conne
     > Note that the user name includes the **@** symbol followed by the server name you specified in the previous task.
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Connection strings**.
-1. In the list of connection strings, copy the value of the **psql** connection string into Clipboard and record it so you can use it later in this exercise.
+1. In the list of connection strings, copy the value of the **psql** connection string into the Clipboard and record it, so you can use it later in this exercise.
 
     > [!NOTE]
-    >  The connection string has the following syntax (where the `<server_name>` placeholder represents the name of the server you identified earlier in this task):
+    >  The connection string has the following syntax, where the `<server_name>` placeholder represents the name of the server you identified earlier in this task:
     ```
     psql "host=<server_name>.postgres.database.azure.com port=5432 dbname={your_database} user=student@cnapostgresqldb password={your_password} sslmode=require"
     ```
 
-1. In the Azure portal, open a Bash session of the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
-1. Within the Bash session in the Azure Cloud Shell pane, paste the value of the **psql** connection string from Clipboard, modify it so it matches the following command, and run it to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL (the value of the `<server_name>` placeholder will be already included in the connection string you pasted from Clipboard): 
+1. In the Azure portal, open a Bash session of the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
+1. Within the Bash session in the Azure Cloud Shell pane, paste the value of the **psql** connection string from the Clipboard, modify it so it matches the following command, and run it to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. The value of the `<server_name>` placeholder will be already included in the connection string you pasted from the Clipboard:
 
     ```
     psql "host=<server_name>.postgres.database.azure.com port=5432 dbname=postgres user=student@cnapostgresqldb password=Pa55w0rd1234 sslmode=require"
     ```
 
     > [!NOTE]
-    > Once you successfully connect, you will be presented with the `postgres=>` prompt.
-
+    > When you successfully connect, you'll be presented with the `postgres=>` prompt.
 
 ## Create a database and sample tables
 
@@ -119,10 +125,10 @@ With the Azure Database for PostgreSQL single server provisioned, you will conne
 
     ```t-sql
     CREATE TABLE inventory (
-	id bigserial, 
-	tenant_id bigint REFERENCES tenants (id),
-	name VARCHAR(50),
-	quantity INTEGER,
+    id bigserial, 
+    tenant_id bigint REFERENCES tenants (id),
+    name VARCHAR(50),
+    quantity INTEGER,
         date DATE NOT NULL DEFAULT NOW()::date,
         created_at TIMESTAMP DEFAULT NOW()::date,
         updated_at TIMESTAMP DEFAULT NOW()::date,
@@ -165,15 +171,14 @@ With the Azure Database for PostgreSQL single server provisioned, you will conne
 
 1. Close the Cloud Shell pane.
 
-
 ## Integrate the Azure Database for PostgreSQL server with Azure AD
 
-In order to integrate the Azure Database for PostgreSQL single server instance with Azure AD, you have first to provide an Azure AD user account as the designated Active Directory admin of the server. You will use for this purpose the **adatumadmin1** user account you created in the previous task. Once completed, you need to sign in to the server using that user account. At that point, you will be able to create Azure AD-based database users and assign to them database roles. You will use for this purpose the **adatumuser1**, **adatumgroup1**, and **contosouser1** Azure AD objects you created in the previous exercise.
+To integrate the Azure Database for PostgreSQL single server instance with Azure AD, you have to first provide an Azure AD user account as the designated Active Directory admin of the server. You'll use for this purpose the **adatumadmin1** user account you created in the previous task. You need to sign in to the server using that user account. At that point, you'll be able to create Azure AD-based database users and assign to them database roles. You'll use for this purpose the **adatumuser1**, **adatumgroup1**, and **contosouser1** Azure AD objects you created in the previous exercise.
 
-1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin** and, in the toolbar, select **Set admin**.
-1. On the **Active Directory admin** blade, in the list of Azure AD user accounts, select the **adatumadmin1** user account you created in the previous exercise, click **Select**, and then click **Save**.
-1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/) and sign in by using the **adatumadmin1** user account you created in the previous exercise.
-1. In the Azure portal, open the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
+1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin** and then, in the toolbar, select **Set admin**.
+1. On the **Active Directory admin** blade, in the list of Azure AD user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
+1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in by using the **adatumadmin1** user account you created in the previous exercise.
+1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. When prompted to select either **Bash** or **PowerShell**, select **Bash** and then, when presented with the message **You have no storage mounted**, select **Create storage**.
 1. Within the Bash session in the Azure Cloud Shell pane, run the following command to retrieve an Azure AD access token required to access Azure Database for PostgreSQL:
 
@@ -182,7 +187,9 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
     ```
 
     > [!NOTE]
-    > The command generates an output that includes a Base 64-encoded token, which identifies the authenticated user to the Azure Database for PostgreSQL resource. The output uses the following format:
+    > The command generates an output that includes a Base 64-encoded token, which identifies the authenticated user to the Azure Database for PostgreSQL resource.
+
+    The output uses the following format:
 
     ```json
     {
@@ -194,13 +201,13 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
     }
     ```
 
-1. Run the following command to set the value of the **PGPASSWORD** variable to the value of the access token included in the output of the command you ran in the previous step: 
+1. Run the following command to set the value of the **PGPASSWORD** variable to the value of the access token included in the output of the command you ran in the previous step:
 
     ```azurecli-interactive
     export PGPASSWORD=$(echo $FULL_TOKEN | jq -r '.accessToken')
     ```
 
-1. Run the following command to connect to the **cnamtinventory** database via the psql utility and by using Azure AD authentication (replace the `<server_name>` placeholder with the name of the server you identified earlier in this exercise):
+1. Run the following command to connect to the **cnamtinventory** database using the **psql** tool and by using Azure AD authentication (replace the `<server_name>` placeholder with the name of the server you identified earlier in this exercise):
 
     ```azurecli-interactive
     UPN=$(az ad user list --query "[0].userPrincipalName" -o tsv)
@@ -209,7 +216,7 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
     ```
 
     > [!NOTE]
-    > Once you successfully connect, you should be presented with the `cnamtinventory=>` prompt.
+    > When you successfully connect, you should be presented with the `cnamtinventory=>` prompt.
 
 1. From the `cnamtinventory=>` prompt, run the following command to connect to create a database role corresponding to the **adatumgroup1** Azure AD group you created in the previous exercise:
 
@@ -217,7 +224,7 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
     CREATE ROLE "adatumgroup1" WITH LOGIN IN ROLE azure_ad_user;
     ```
 
-1. Run the following command to verify that the roles have been successfully created: 
+1. Run the following command to verify that the roles have been successfully created:
 
     ```t-sql
     SELECT rolname FROM pg_roles;
@@ -229,68 +236,66 @@ In order to integrate the Azure Database for PostgreSQL single server instance w
     GRANT SELECT ON inventory TO adatumgroup1;
     ```
 
-1. Sign out as the **adatumadmin1** user account and close the Incognito/InPrivate mode web browser window. 
+1. Sign out as the **adatumadmin1** user account and close the Incognito/InPrivate mode web browser window.
 
+## Register an application with Azure AD
 
-## Register an aplication with Azure AD
+In order to implement a sample Node.js-based application that uses Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Node.js-based application to impersonate Azure AD users when accessing database objects.
 
-In order to implement a sample Node.js-based application that leverages Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Node.js-based application to impersonate Azure AD users when accessing database objects. 
-
-1. Within the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
+1. Within the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
 1. On the Azure Active Directory blade, in the vertical menu, in the **Manage** section, select **App registrations**.
 1. On the **App registrations** blade, select **+ New registration**.
-1. On the **Register an application** blade, in the **Name** text box, type **cna-app**, in the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected, in the **Redirect URI (optional)** section, set the **Web** entry to **http://localhost:8080/redirect** and click **Register**.
+1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**, in the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected, in the **Redirect URI (optional)** section, set the **Web** entry to `http://localhost:8080/redirect`, and then select **Register**.
 
-    ![Screenshot that shows the Register an application blade in the Azure portal](../media/5-azure-ad-node.js-app-register.png)
-
-    > [!NOTE]
-    > You have the option of configuring multi-tenant support for your Azure AD registered applications at this point, however, as mentioned, detailed coverage of this approach is outside of the scope of this module.
+    :::image type="content" source="../media/5-azure-ad-node.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
     > [!NOTE]
-    > You will need to modify the **Redirect URI (optional)** value once you deploy your application to reflect its actual URL.
+    > You have the option of configuring multitenant support for your Azure AD registered applications at this point. However, as mentioned, detailed coverage of this approach is outside of the scope of this module.
+
+    > [!NOTE]
+    > After you deploy your application, you'll need to modify the **Redirect URI (optional)** value to reflect its actual URL.
 
 1. On the **cna-app** blade, review the resulting settings and record the values of the **Application (client) ID** and the **Directory (tenant) ID** properties.
 
-    ![Screenshot that shows the cna-app blade in the Azure portal](../media/5-azure-ad-node.js-app-registered.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-registered.png" alt-text="Screenshot of the cna-app blade in the Azure portal.":::
 
 1. On the **cna-app** blade, in the **Manage** section, select **Certificates & secrets**.
-1. On the **Add a client secret** blade, in the **Description** text box, type **cna-secret-0**, leave the **Expires** drop-down list entry with its default value, and select **Add**.
+1. On the **Add a client secret** blade, in the **Description** text box, enter **cna-secret-0**, leave the **Expires** drop-down list entry with its default value, and select **Add**.
 
-    ![Screenshot that shows the Add a client secret blade in the Azure portal](../media/5-azure-ad-node.js-app-add-secret.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-add-secret.png" alt-text="Screenshot of the the Add a client secret blade in the Azure portal.":::
 
 1. Back on the **cna-app \| Certificates & secrets** blade, copy the value of the newly generated secret.
 
     > [!NOTE]
-    > Make sure to copy the value of the secret before you navigate away from this blade, since, at that point, you will no longer be able to retrieve it.
+    > Make sure to copy the value of the secret before you navigate away from this blade, because at that point, you'll no longer be able to retrieve it.
 
-    ![Screenshot that shows the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal](../media/5-azure-ad-node.js-app-added-secret-.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-added-secret-.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
 
 1. On the **cna-app \| Certificates & secrets** blade, in the vertical menu, in the **Manage** section, select **API permissions**.
 
-    ![Screenshot that shows the cna-app API permissions blade in the Azure portal](../media/5-azure-ad-node.js-app-configure-api-permissions.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal.":::
 
-1. On the **cna-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **API my organization uses** tab, in the search text box, type **Azure OSSRDBMS Database** and, in the list of results, select **Azure OSSRDBMS Database**.
+1. On the **cna-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **API my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database** and then, in the list of results, select **Azure OSSRDBMS Database**.
 
-    ![Screenshot that shows the Request API permissions blade in the Azure portal](../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
 1. On the **Request API permission** blade, select **Delegated permissions**, select the **user_impersonation** checkbox, and then select **Add permission**.
 
-    ![Screenshot that shows the Request API permissions blade in the Azure portal, with the Delegated permissions option selected](../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms-impersonation.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
 
 1. Back on the **cna-app \| API permissions** blade, select **Grant admin consent for Default Directory** and, when prompted for confirmation, select **Yes**.
 
-    ![Screenshot that shows the cna-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent](../media/5-azure-ad-node.js-app-configure-api-permissions-full.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
 
 1. On the **cna-app \| API permissions** blade, verify that the permissions have been granted.
 
-    ![Screenshot that shows the cna-app API permissions blade in the Azure portal, with the consent and permissions granted](../media/5-azure-ad-node.js-app-configure-api-permissions-granted.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
 
+## Implement a simple, Azure AD-integrated Node.js-based application
 
-## Implement a simple, Azure AD-integrated Node.js-based application 
+With the application registered in the Azure AD tenant, you can now proceed with its implementation.
 
-With the application registered in the Azure AD tenant, you can now proceed with its implementation. 
-
-1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by clicking its icon in the toolbar next to the search text box.
+1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session in the Azure Cloud Shell pane, run the following command to initialize a Node.js project in a new directory:
 
     ```azurecli-interactive
@@ -306,7 +311,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     npm install @azure/msal-node
     ```
 
-1. Use the nano editor to create a file named **index.js** in the root of the project and add to it the following content (replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and <server_name> with their actual values you recorded earlier in this exercise):
+1. Use the nano editor to create a file named **index.js** in the root of the project and add to it the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and <server_name> with their actual values you recorded earlier in this exercise:
 
     ```javascript
     // Import dependencies
@@ -423,11 +428,10 @@ With the application registered in the Azure AD tenant, you can now proceed with
     ```
 
     > [!NOTE]
-    > A multi-tenant Azure AD-registered application uses the generic authority URL `authority: "https://login.microsoftonline.com/common"`, but, in your case, you need to use a single-tenant URL which includes your tenant ID.
+    > A multitenant Azure AD-registered application uses the generic authority URL `authority: "https://login.microsoftonline.com/common"`, but, in your case, you need to use a single-tenant URL that includes your tenant ID.
 
     > [!NOTE]
-    > Keep in mind that you will need to replace the value of **REDIRECT URL** once you deploy the application in order to match its actual redirect URL.
-
+    > Keep in mind that after you deploy the application, you'll need to replace the value of **REDIRECT URL** in order to match its actual redirect URL.
 
 1. Use the nano editor to edit the **package.json** file in the root of the project and replace it with the following content:
 
@@ -455,9 +459,9 @@ With the application registered in the Azure AD tenant, you can now proceed with
 
 ## Validate the functionality of the Node.js-based application
 
-You are finally ready to test the functionality of your web app. While you could containerize it at this point, for the sake of simplicity, you will deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
+You're finally ready to test the functionality of your web app. While you could containerize it at this point, for the sake of simplicity, you'll deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
-1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you will deploy the Node.js Express app:
+1. Within the web browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Node.js Express app:
 
     ```azurecli-interactive
     RG1NAME=postgresql-db-RG
@@ -492,12 +496,12 @@ You are finally ready to test the functionality of your web app. While you could
     const REDIRECT_URI = "https://<webapp_name>/redirect";
     ```
 
-1. Open another tab in the web browser window displaying the Azure portal, navigate to the [Azure portal](https://portal.azure.com/) and, if prompted, sign in to access the Azure subscription you will be using in this module.
-1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
+1. Open another tab in the web browser window displaying the Azure portal, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and, if prompted, sign in to access the Azure subscription you'll be using in this module.
+1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
 1. On the Azure Active Directory blade, in the vertical menu, in the **Manage** section, select **Authentication**.
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
-    ![Screenshot that shows the cna-app Authentication blade in the Azure portal](../media/5-azure-ad-node.js-app-redirect-uri-update.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
 
 1. Switch back to the web browser tab displaying the Bash session in the Azure Cloud Shell and run the following commands to initialize the local Git repository and commit all changes in the main branch:
 
@@ -510,7 +514,7 @@ You are finally ready to test the functionality of your web app. While you could
     git commit -m "Initial Commit"
     ```
 
-1. Run the following commands to set up user-level deployment credentials: 
+1. Run the following commands to set up user-level deployment credentials:
 
     ```azurecli-interactive
     DEPLOYMENTUSER=m06User$RANDOM
@@ -518,14 +522,14 @@ You are finally ready to test the functionality of your web app. While you could
     az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
     ```
 
-1. Run the following commands to identify the user-level deployment credentials (record their value since you will need them later in this task):
+1. Run the following commands to identify the user-level deployment credentials and record their value, because you'll need them later in this task:
 
     ```azurecli-interactive
     echo $DEPLOYMENTUSER
     echo $DEPLOYMENTPASS
     ```
 
-1. Run the following commands to identify the Azure web app deployment URL that you will use as the target of the `git push` command:
+1. Run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
     ```azurecli-interactive
     RG2NAME=cna-aadexpress-RG
@@ -547,22 +551,25 @@ You are finally ready to test the functionality of your web app. While you could
     git push --set-upstream azure master
     ```
 
-1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/) and sign in by using the **adatumuser1** user account you created in the previous exercise.
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**. 
-1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly deployed Azure web app.
-1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL, open another tab in the same browser window, in the URL tab, paste the URL you just copied to Clipboard, add the **/auth** suffix following it, and press the **Enter** key:
+1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in by using the **adatumuser1** user account you created in the previous exercise.
+1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
+1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly-deployed Azure web app.
+1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL.
+1. Open another tab in the same browser window and in the **URL** tab, paste the URL you just copied to Clipboard, add the **/auth** suffix at the end of the URL, and then select Enter:
 
     > [!NOTE]
     > The URL should have the following format `https://<webapp_name>.azurewebsites.net/auth`
 
-1. Verify that the resulting web page includes the Azure AD authentication information for the currently signed-in user.
+1. Verify that the resulting webpage includes the Azure AD authentication information for the currently signed-in user.
 
-    ![Screenshot that shows the page of the Node.js web app displaying the Azure AD authentication information.](../media/5-azure-ad-node.js-app-output-page.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information.":::
 
-1. Switch back to the web browser tab displaying the properties of the web app, in the vertical menu on the left side, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
-1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon (directly below the **Start** icon).
+1. Switch back to the web browser tab displaying the properties of the web app. In the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry and then, on the **App Service Editor (Preview)**, select **Go**.
+1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon, which is directly after the **Start** icon.
 1. Verifying that the resulting page includes the listing of the records in the **inventory** table for the first tenant:
 
-    ![Screenshot that shows the page of the deployed Azure web app containing the listing of the inventory items.](../media/5-azure-ad-node.js-app-output-console.png)
+    :::image type="content" source="../media/5-azure-ad-node.js-app-output-console.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the inventory items.":::
 
-Congratulations! You completed the second exercise of this module. In its exercise, you installed Azure Database for PostgreSQL in the single server deployment model, created a database with sample inventory data, integrated the server with Azure AD, and implemented a simple Node.js-based application that queries the database by relying on Azure AD authentication.
+## Results
+
+Congratulations! You've completed the second exercise of this module. In this exercise, you installed Azure Database for PostgreSQL in the single server deployment model, created a database with sample inventory data, integrated the server with Azure AD, and implemented a simple Node.js-based application that queries the database by relying on Azure AD authentication.

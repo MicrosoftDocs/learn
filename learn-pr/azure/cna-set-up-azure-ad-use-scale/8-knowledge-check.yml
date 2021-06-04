@@ -22,22 +22,22 @@ quiz:
       explanation: "Incorrect. Managed identities represent Azure resources, not applications registered in Azure AD."
     - content: "service principal"
       isCorrect: true
-      explanation: "Correct. A service principal, which provides authentication and authorization functionality, as well as references the application object."
+      explanation: "Correct. A service principal provides authentication and authorization functionality and also references the application object."
     - content: "user"
       isCorrect: false
       explanation: "Incorrect. User objects are used for interactive logons, rather than for applications registered in Azure AD."
-  - content: 'What should you do in order to ensure that an application registered in Azure AD can act on behalf of a signed-in user when it accesses resources?'
+  - content: 'Which of the following steps helps ensure that an application registered in Azure AD can act on behalf of a signed-in user when it accesses resources?'
     choices:
-    - content: "Set the application's redirect URI to http://localhost."
+    - content: "Setting the application's redirect URI to http://localhost."
       isCorrect: false
       explanation: "Incorrect. The application's redirect URI has no bearing on the application permissions."
-    - content: "Configure application permissions of the application."
+    - content: "Configuring application permissions of the application."
       isCorrect: false
       explanation: "Incorrect. Application permissions are used by apps that run without relying on a signed-in user, such as background services."
-    - content: "Configure delegated permissions of the application."
+    - content: "Configuring delegated permissions of the application."
       isCorrect: true
-      explanation: "Correct. Delegated permissions are used by interactive apps with a signed-in user. As the result, the app acts on behalf of a signed-in user when it accesses the target resource."
-  - content: 'You are developing a multi-tenant application which home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should you configure as the app's sign-in requests endpoint?'
+      explanation: "Correct. Delegated permissions are used by interactive apps with a signed-in user. As a result, the app acts on behalf of a signed-in user when it accesses the target resource."
+  - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should they configure as the sign-in requests endpoint for the app?'
     choices:
     - content: "https://login.microsoftonline.com/contoso.com"
       isCorrect: false
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. This is the endpoint for a single-tenant app."
     - content: "https://login.microsoftonline.com/common"
       isCorrect: true
-      explanation: "Correct. With a multi-tenant app, you cannot determine ahead of time which tenant will be used, so you need to use the **https://login.microsoftonline.com/common** endpoint, which serves all Azure AD tenants."
+      explanation: "Correct. With a multitenant app, you cannot determine ahead of time which tenant will be used, so you need to use the **https://login.microsoftonline.com/common** endpoint, which serves all Azure AD tenants."
