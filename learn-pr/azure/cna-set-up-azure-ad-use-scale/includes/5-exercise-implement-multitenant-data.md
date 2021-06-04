@@ -125,10 +125,10 @@ With the Azure Database for PostgreSQL single server provisioned, you'll connect
 
     ```t-sql
     CREATE TABLE inventory (
-	id bigserial, 
-	tenant_id bigint REFERENCES tenants (id),
-	name VARCHAR(50),
-	quantity INTEGER,
+    id bigserial, 
+    tenant_id bigint REFERENCES tenants (id),
+    name VARCHAR(50),
+    quantity INTEGER,
         date DATE NOT NULL DEFAULT NOW()::date,
         created_at TIMESTAMP DEFAULT NOW()::date,
         updated_at TIMESTAMP DEFAULT NOW()::date,
@@ -187,7 +187,7 @@ To integrate the Azure Database for PostgreSQL single server instance with Azure
     ```
 
     > [!NOTE]
-    > The command generates an output that includes a Base 64-encoded token, which identifies the authenticated user to the Azure Database for PostgreSQL resource. 
+    > The command generates an output that includes a Base 64-encoded token, which identifies the authenticated user to the Azure Database for PostgreSQL resource.
 
     The output uses the following format:
 
@@ -245,7 +245,7 @@ In order to implement a sample Node.js-based application that uses Azure AD auth
 1. Within the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
 1. On the Azure Active Directory blade, in the vertical menu, in the **Manage** section, select **App registrations**.
 1. On the **App registrations** blade, select **+ New registration**.
-1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**, in the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected, in the **Redirect URI (optional)** section, set the **Web** entry to **http://localhost:8080/redirect**, and then select **Register**.
+1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**, in the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected, in the **Redirect URI (optional)** section, set the **Web** entry to `http://localhost:8080/redirect`, and then select **Register**.
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
@@ -552,7 +552,7 @@ You're finally ready to test the functionality of your web app. While you could 
     ```
 
 1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in by using the **adatumuser1** user account you created in the previous exercise.
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**. 
+1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly-deployed Azure web app.
 1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL.
 1. Open another tab in the same browser window and in the **URL** tab, paste the URL you just copied to Clipboard, add the **/auth** suffix at the end of the URL, and then select Enter:

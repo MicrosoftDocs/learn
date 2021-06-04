@@ -110,7 +110,7 @@ You'll start by creating Azure AD user and group objects. After the objects are 
     > You'll rely on this role assignment in the next exercise of this module.
 
 1. Close the Cloud Shell pane.
-1. To verify the outcome of this exercise, in the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory**. 
+1. To verify the outcome of this exercise, in the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory**.
 1. In the list of results, select **Azure Active Directory**.
 1. On the blade displaying properties of your Azure Active Directory tenant, in the vertical menu, in the **Manage** sections, select **Users**.
 1. On the **Users \| All users (Preview)** blade, verify that the list of users contains the user account you created earlier in this task.
@@ -174,7 +174,7 @@ To conclude this exercise, you'll use the Azure portal to configure the user acc
 
 1. Navigate back to the blade displaying the properties of your Azure Active Directory tenant, and then, in the vertical menu, in the **Manage** sections, select **Groups**.
 1. On the **Groups \| All groups** blade, select **adatumgroup1**.
-1. On the **adatumgroup1** blade, select **Members**. 
+1. On the **adatumgroup1** blade, select **Members**.
 1. On the **adatumgroup1 \| Members** blade, select **+ Add members**.
 1. On the **Add members** blade, in the **Search** text box, enter **contosouser1**.
 1. In the list of results, select the **contosouser1** entry, and then select **Select**.

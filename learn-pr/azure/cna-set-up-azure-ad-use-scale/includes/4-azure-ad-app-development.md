@@ -23,7 +23,7 @@ You can create application objects directly in the Azure portal from the **App R
 During application registration, you have the option of specifying the application's redirect uniform resource identifier (URI). Its value designates the location to which the authorization server redirects the user after the app has been successfully authorized. The authorization server sends the code or token to the redirect URI, so it's important you register the correct location as part of the app registration process.
 
 > [!NOTE]
-> The redirect URI must begin with **https**, unless it's referencing localhost, in which case, you can use **http://localhost**. It is also case-sensitive.
+> The redirect URI must begin with **https**, unless it's referencing localhost, in which case, you can use `http://localhost`. It is also case-sensitive.
 
 ### What are application permissions?
 
