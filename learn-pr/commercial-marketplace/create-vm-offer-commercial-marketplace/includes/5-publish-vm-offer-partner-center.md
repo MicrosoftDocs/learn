@@ -10,9 +10,9 @@ After clicking “+ New offer” on the the commercial marketplace overview page
 
 :::image type="content" source="../media/7-vm-offer-properties.png" alt-text="Screenshot of the offer properties step of the publishing process in Partner Center.":::
 
-When you get to the properties tab of the publishing process, you’ll be asked to define the categories and subcategories that will be used to index your product in Azure Marketplace. You’ll select your choices from a pre-populated list of options.
+When you get to the properties tab of the publishing process, you’ll be asked to define the categories and subcategories that will be used to place your product in Azure Marketplace. You’ll select your choices from a pre-populated list of options.
 
-The properties tab is also where you’ll provide the legal terms and conditions that govern the use of your software by customers. You can use the commercial marketplace Standard Contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments from your company. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
+The properties tab is also where you’ll provide the legal terms and conditions that govern the use of your software by customers. You can use the commercial marketplace Standard Contract, or define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments from your company. For more detail on terms and conditions, reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
 
 ### Providing information for your offer listing
 
@@ -70,9 +70,9 @@ When you get to your offer's technical configuration, you'll be prompted to prov
   
   - For Linux VMs, you'll select the version of the Linux OS in the "vendor" field.
   
-  - An OS-friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you can use "Ubuntu 18.04 LTS" as your OS-friendly name.
+  - An OS-friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you could use "Ubuntu 18.04 LTS" as the OS-friendly name.
 
-- Recommended VM sizes to deploy your software. Customers will see in these recommendations before they deploy your software from Azure Marketplace. You can provide up to six recommended VM sizes for your offer's plan.
+- Recommended VM sizes to deploy your software. Customers will see in these recommendations before they deploy your software from Azure Marketplace. You'll be able to provide up to six recommended VM sizes for your offer's plan.
 
 - Public or private open ports used to access your VM. Your offer might require open ports in addition to the default ports required for all VM offers. Any other ports needed will depend on your VMs configuration and operations.
 
@@ -80,7 +80,7 @@ When you get to your offer's technical configuration, you'll be prompted to prov
 
 - To wrap up the technical configuration, you'll provide the VM image that customers will use to deploy your offer. This step is where you'll select your VM image from the shared image gallery (SIG) that's associated with your Azure tenant. If you don't see your image, make sure that you have access to the SIG. For help with accessing your SIG, reference [this documentation](/azure/marketplace/azure-vm-create-using-approved-base#capture-image).
 
-When creating your plans, you can reuse the technical configuration from another plan to save time. If you choose to reuse a technical configuration from another plan, the technical configuration tab will not be shown for the plan you’re creating. The reused technical configuration, including any updates you make in the future, will be used for this plan. You won't be able to change this setting after you publish the offer.
+When creating your plans, you can reuse the technical configuration from another one of your offer's plans. If you choose to reuse a technical configuration from another plan, the technical configuration tab will not be shown for the plan you’re creating. The reused technical configuration, including any updates you make in the future, will be used for this plan. You won't be able to change this setting after you publish the offer.
 
 >[!NOTE]
 >You should reuse the technical configuration whenever two or more of your offer's plans use the same VM image. Doing so makes it easier to keep your images up to date—just update the image once and all plans based on that technical configuration will also get updated.
