@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.variables.2-overview
+uid: learn.student-evangelism.web-development-101-variables.data-types-overview
 metadata:
   title: Variables overview
   description: Learn about JavaScript variables and why to use them to hold values.
-  ms.date: 05/03/2021
+  ms.date: 06/03/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.variables.5-datatypes
+uid: learn.student-evangelism.web-development-101-variables.data-types
 metadata:
-  title: Data Types
+  title: Data types
   description: Learn what types of data can be stored in JavaScript variables
-  ms.date: 05/03/2021
+  ms.date: 06/03/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial

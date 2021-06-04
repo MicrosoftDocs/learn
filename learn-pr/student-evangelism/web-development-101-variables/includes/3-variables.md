@@ -2,9 +2,9 @@ Knowing how to properly use variables and data types is essential to being able 
 
 ## Variables
 
-Suppose that, in your code, you have a value that you would like to remember for future use. By storing the value, you are able to refer to it later on in your code.
+Suppose that, in your code, you have a value that you would like to remember for future use. By storing the value, you can refer to it later on in your code.
 
-You can create and declare a variable by usinngn following syntax: `[keyword] [name]`. Here's an example of a variable declaration:
+You can create and declare a variable by using the following syntax: `[keyword] [name]`. Here's an example of a variable declaration:
 
 ```js
 var aVariable;
@@ -14,7 +14,7 @@ var aVariable;
 
 ## Use `let` to work with variables
 
-The keyword `let` was introduced in EcmaScript 6 (ES6 - remember EcmaScript is a JavaScript standard, and has several versionss). Using `let` and gives your variable what is termed _block scope_. It's recommended that you use `let` over `var` to better manage scope in your application. We will cover block scopes more in depth later.
+The keyword `let` was introduced in EcmaScript 6 (ES6 - remember EcmaScript is a JavaScript standard, and has several versions). Using `let` and gives your variable what is termed _block scope_. It's recommended that you use `let` over `var` to better manage scope in your application. We will cover block scopes more in depth later.
 
 To declare a variable using `let`, use the following syntax:
 
@@ -24,7 +24,7 @@ let myVariable;
 
 `myVariable` has now been declared using the `let` keyword. It currently doesn't have a value, but you can give it a value.
 
-### Assign a value 
+### Assign a value
 
 To store a value in a variable, you must do so using the assignment operator - `=` - followed by the expected value.
 
@@ -33,7 +33,7 @@ myVariable = 123;
 ```
 
 > [!TIP]
-> The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, that uses two or three operators like so `==` or so `===`.
+> The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, which uses two or three operators like so `==` or so `===`.
 
 `myVariable` has now been *assigned* the value 123.
 
@@ -83,22 +83,22 @@ Constants are similar to variables, with two exceptions:
 
 - **Must have a value**. Constants must be initialized, or an error will occur when running code.
 - **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
-   - **Simple value**. The following code syntax is NOT allowed:
+  - **Simple value**. The following code syntax is NOT allowed:
 
       ```javascript
       const PI = 3;
       PI = 4; // not allowed
       ```
- 
-   - **Object reference is protected**. The following syntax is NOT allowed.
-   
+
+  - **Object reference is protected**. The following syntax is NOT allowed.
+
       ```javascript
       const obj = { a: 3 };
       obj = { b: 5 } // not allowed
       ```
 
-   - **Object value is not protected**. The following syntax IS allowed:
-    
+  - **Object value is not protected**. The following syntax IS allowed:
+
       ```javascript
       const obj = { a: 3 };
       obj.a = 5;  // allowed

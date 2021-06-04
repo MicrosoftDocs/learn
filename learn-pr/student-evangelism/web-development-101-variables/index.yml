@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.student-evangelism.web-development-101-variables
+metadata:
+  title: JavaScript variables and data types
+  description: Learn about variables and the data types that populate them.
+  ms.date: 06/03/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: JavaScript variables and data types
+summary: Learn about variables and the data types that populate them.
+abstract: |
+  In this module, you will learn:
+  - What variables are and why use them.
+  - When to use constants.
+  - How storing your values as different types can create clarity in your code.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - student
+products:
+  - vs-code
+units:
+  - learn.student-evangelism.web-development-101.variables.introduction
+  - learn.student-evangelism.web-development-101.variables.overview
+  - learn.student-evangelism.web-development-101.variables.variables
+  - learn.student-evangelism.web-development-101.variables.exercise-variables
+  - learn.student-evangelism.web-development-101.variables.data-types
+  - learn.student-evangelism.web-development-101.variables.exercise-types
+  - learn.student-evangelism.web-development-101.variables.summary
+badge:
+  uid: learn.student-evangelism.web-development-101-variables.badge

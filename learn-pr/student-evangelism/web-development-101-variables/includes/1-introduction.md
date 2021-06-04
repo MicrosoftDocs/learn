@@ -6,7 +6,7 @@ This module will address these different types of variables and their data types
 
 ## Learning Objectives
 
-In this module, you will learn: 
+In this module, you will learn:
 
 - What variables are and why you should use them.
 - When to use constants.

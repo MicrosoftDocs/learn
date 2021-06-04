@@ -42,7 +42,7 @@ You have created three players' starting points by assigning them the value of t
    playerTwoPoints -=25;
    playerThreePoints +=75; 
    ```
- 
+
 You have successfully simulated a game round in which the first and second player bet 50 and 25 points respectively. Because the third player has a better hand, they end up winning the game round and points are therefore taken from the first and second player and added to the pot of the third player.
 
 ## Refactor to constants
@@ -60,7 +60,7 @@ At this point, you have some variables that represent parts of your card game. R
    let noOfStarterCards = 2;
    ```
 
-   to this code:
+  to this code:
 
    ```javascript
    const STARTING_POKER_CHIPS = 100; // points
@@ -68,7 +68,7 @@ At this point, you have some variables that represent parts of your card game. R
    const NO_OF_STARTER_CARDS = 2;
    ```
 
-You've successfully identified which variables are important for the game. They also describe how the game is played. A player's starting poker chips will not change even if a specific player's pot might change as they play. The number of players is something that is also constant, unless you imagine that you could rebuild the game such that a player can join at any time. The number of starter cards is always 2 in Texas Hold'em. As the game developer, you have the power to decide ultimately what should be changeable and what should be constant.
+  You've successfully identified which variables are important for the game. They also describe how the game is played. A player's starting poker chips will not change even if a specific player's pot might change as they play. The number of players is something that is also constant, unless you imagine that you could rebuild the game such that a player can join at any time. The number of starter cards is always 2 in Texas Hold'em. As the game developer, you have the power to decide ultimately what should be changeable and what should be constant.
 
    > [!TIP]
    > A great way to think about variables is to make all variables constant to begin with. Then, decide if a variable's value will need to change in the future. In that case, change it from `const` to `let`.  

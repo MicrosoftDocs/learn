@@ -6,7 +6,8 @@ Data types are an important part of software development because developers use 
 
 Data Types are also referred to as "JavaScript data primitives", as they are the lowest-level data types that are provided by the language. There are six primitive data types: string, number, bigint, boolean, undefined, and symbol.
 
-> [!TIP] Take a minute to visualize what each of these primitives might represent. What is a zebra? How about 0? true?
+> [!TIP]
+> Take a minute to visualize what each of these primitives might represent. What is a zebra? How about 0? true?
 
 ## Numbers
 
@@ -28,7 +29,8 @@ There are several types of operators to use when performing arithmetic functions
 | `/`    | **Division**: Calculates the quotient of two numbers                     | `1 / 2 //expected answer is 0.5` |
 | `%`    | **Remainder**: Calculates the remainder from the division of two numbers | `1 % 2 //expected answer is 1`   |
 
-> [!Tip] Try an arithmetic operation in your browser's console. Do the results surprise you?
+> [!Tip]
+> Try an arithmetic operation in your browser's console. Do the results surprise you?
 
 ## Strings
 
@@ -38,7 +40,8 @@ Strings are sets of characters that reside between single or double quotes.
 - `"This is also a string"`
 - `let myString = 'This is a string value stored in a variable';`
 
-[!TIP] Remember to use quotes when writing a string, or else JavaScript will assume it's a variable name.
+> [!TIP]
+> Remember to use quotes when writing a string, or else JavaScript will assume it's a variable name.
 
 ### Formatting Strings
 
@@ -70,8 +73,8 @@ let myString2 = "World";
 
 You can achieve your formatting goals with either method, but template literals will respect any spaces and line breaks.
 
-> [!TIP] 
-> Take a moment to consider the usecases for different string types. When would you use a template literal vs. a plain string?
+> [!TIP]
+> Take a moment to consider the use cases for different string types. When would you use a template literal vs. a plain string?
 
 ## Booleans
 
@@ -80,6 +83,6 @@ You can achieve your formatting goals with either method, but template literals 
 - `let myTrueBool = true`
 - `let myFalseBool = false`
 
-A variable can be considered "truthy" if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as "falsy"](https://developer.mozilla.org/docs/Glossary/Truthy).
+A variable can be considered "truthy" if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as "falsy"](https://developer.mozilla.org/docs/Glossary/Truthy/?azure-portal=true).
 
 [!TIP] Explore the gotchas of JavaScript! Remember, you can write JavaScript right in your browser, just open a browser window and navigate to Developer Tools. In the console, you will find a prompt. This code resolves to false `let age = 1`; `let Age = 2`; `age == Age`. Why do you think that is, and what other gotchas can you find?

@@ -36,8 +36,7 @@ You have certain aspects of the game represented as variables, but you are lacki
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-Add code to represent the game starting:
-
+1. Add code to represent the game starting:
 
    ```javascript
    console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`)
@@ -53,7 +52,7 @@ A game of Texas Hold'em can go on for many game rounds and usually finishes when
    let gameHasEnded = false;
    ```
 
-   Now you have a variable to represent the end of the game. Moving forward, you need to find a way to reevaluate the value of this variable and determine whether to stop the game and award a champion. 
+   Now you have a variable to represent the end of the game. Moving forward, you need to find a way to reevaluate the value of this variable and determine whether to stop the game and award a champion.
 
 1. Add the following code to evaluate the game state:
 
@@ -93,7 +92,7 @@ gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has one
 console.log("Game has ended: ", gameHasEnded);
 ```
 
-To run the game, in the terminal type:
+1. To run the game, type the following in the terminal:
 
 ```javascript
 node app.js

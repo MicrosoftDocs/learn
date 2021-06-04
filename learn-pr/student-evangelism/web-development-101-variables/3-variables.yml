@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.web-development-101.variables.3-variables
+uid: learn.student-evangelism.web-development-101-variables.variables
 metadata:
   title: Use variables to remember values
   description: What are variables and how do we create them?
-  ms.date: 05/03/2021
+  ms.date: 06/03/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
