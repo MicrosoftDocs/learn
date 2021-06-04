@@ -43,13 +43,13 @@ Most management tasks in this and subsequent exercises require the use of Azure 
 
 1. Within the Bash session in the **Azure Cloud Shell** pane, run the following command to set the value of a variable to the public IP address of the Azure CycleCloud application server (replace the placeholder `<public_ip_address>` with the actual public IP address):
 
-    ```azurecli-interactive
+    ```azurecli
     PIP=<public_ip_address>
     ```
 
 1. Run the following command to download the .zip file containing the Azure CycleCloud instance-specific CLI installer:
 
-    ```azurecli-interactive
+    ```azurecli
     curl -O --insecure https://$PIP/static/tools/cyclecloud-cli.zip
     ```
 
@@ -63,7 +63,7 @@ Most management tasks in this and subsequent exercises require the use of Azure 
 
 1. Run the following command to establish a connection to the Azure CycleCloud instance, where the `<username>` and `<password>` placeholders designate the credentials of your Azure CycleCloud application user account with the Administrator role:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud initialize --batch --url=https://$PIP --username=cc-admin --password=Pa55w.rd1234 --verify-ssl=false
     ```
 
@@ -72,7 +72,7 @@ Most management tasks in this and subsequent exercises require the use of Azure 
 
 1. Run the following command to verify the connection to the Azure CycleCloud instance by displaying its locker configuration:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud locker list
     ```
 
@@ -90,14 +90,14 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
 
 1. On your computer, within the web browser window displaying the Azure portal, within the Bash session in the **Azure Cloud Shell** pane, run the following commands to create a project directory and fetch a Slurm project from the corresponding GitHub repository into it.
 
-    ```azurecli-interactive
+    ```azurecli
     mkdir ~/cyclecloud-slurm && cd ~/cyclecloud-slurm
     cyclecloud project fetch https://github.com/Azure/cyclecloud-slurm . 
     ```
 
 1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task):
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud project default_locker <locker_name>
     cyclecloud project upload 
     ```
@@ -120,25 +120,25 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
 
 1. On your computer, within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to change the working directory to the newly fetched repository:
 
-    ```azurecli-interactive
+    ```azurecli
     cd ~/cyclecloud-slurm/templates
     ```
 
 1. Run the following commands to download the intended version of the cluster template:
 
-    ```azurecli-interactive
+    ```azurecli
     mv slurm.txt slurm.bak.txt
     curl -O https://raw.githubusercontent.com/Azure/cyclecloud-slurm/2.4.1/templates/slurm.txt
     ```
 
 1. Run the following command to open the downloaded template in the nano editor:
 
-    ```azurecli-interactive
+    ```azurecli
     nano slurm.txt
     ```
 1. Within the nano editor interface, move to the `[[node scheduler]]` section. Within that section, locate the `[[[volume shared]]]` subsection, move to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
 
-    ```azurecli-interactive
+    ```azurecli
 
         # Add 2 premium disks in a RAID 0 configuration to the NFS export
         [[[volume nfs-1]]]
@@ -176,7 +176,7 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
 
 1. Run the following command to import the template you modified in the previous task into the Azure CycleCloud application:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud import_template -f ~/cyclecloud-slurm/templates/slurm.txt
     ```
 
