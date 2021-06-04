@@ -14,19 +14,19 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 1. Within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to set the working directory to the one hosting the GitHub repository you fetched in the previous exercise:
 
-    ```azurecli-interactive
+    ```azurecli
     cd ~/cyclecloud-slurm/templates
     ```
 
 1. Run the following command to open the downloaded template in the nano editor:
 
-    ```azurecli-interactive
+    ```azurecli
     nano slurm.txt
     ```
 
 1. Within the nano editor interface, scroll to the `[parameters About]` section and add the following content directly before it:
 
-    ```azurecli-interactive
+    ```azurecli
 
     [[nodearray cuda]]
     MachineType = $CUDAMachineType
@@ -58,7 +58,7 @@ To be able to modify the values of template parameters with the Azure CycleCloud
 
 1. Within the web browser window that displays the Bash session in the **Azure Cloud Shell** pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
 
-    ```azurecli-interactive
+    ```azurecli
 
         [[[parameter CUDAMachineType]]]
         Label = CUDA VM Type
@@ -70,7 +70,7 @@ To be able to modify the values of template parameters with the Azure CycleCloud
 
 1. Within the nano editor interface, scroll to the `[[[parameter HPCMaxScalesetSize]]]` section and add the following content directly before it:
 
-    ```azurecli-interactive
+    ```azurecli
 
         [[[parameter MaxCUDAExecuteCoreCount]]]
         Label = Max CUDA Cores
@@ -84,7 +84,7 @@ To be able to modify the values of template parameters with the Azure CycleCloud
 
 1. Within the nano editor interface, scroll to the `[[[parameter SchedulerClusterInitSpecs]]]` section and add the following content directly before it:
 
-    ```azurecli-interactive
+    ```azurecli
 
         [[[parameter CUDAImageName]]]
         Label = CUDA OS
@@ -97,7 +97,7 @@ To be able to modify the values of template parameters with the Azure CycleCloud
 
 1. Within the nano editor interface, scroll to the `[[parameters Advanced Networking]]` section and add the following content directly before it:
 
-    ```azurecli-interactive
+    ```azurecli
 
         [[[parameter CUDAClusterInitSpecs]]]
         Label = CUDA Cluster-Init
@@ -115,7 +115,7 @@ Before applying the configuration changes you made in the Azure CycleCloud templ
 
 1. Within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to list the existing clusters:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud show_cluster
     ```
 
@@ -124,13 +124,13 @@ Before applying the configuration changes you made in the Azure CycleCloud templ
 
 1. Run the following command to export into the file **params.json** the list of parameters of the **contoso-custom-slurm-lab-cluster** cluster and their values:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud export_parameters contoso-custom-slurm-lab-cluster > ~/params.json
     ```
 
 1. Run the following command to review the exported list of parameters and their values:
 
-    ```azurecli-interactive
+    ```azurecli
     cat ~/params.json
     ```
 
@@ -140,20 +140,20 @@ While the edits you applied to the Azure CycleCloud template included default va
 
 1. Within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to open the downloaded parameters file in the nano editor:
 
-    ```azurecli-interactive
+    ```azurecli
     nano ~/params.json
     ```
 
 1. Within the nano editor interface, scroll to end of the file and add the following content starting with a new line before the closing braces (**}**):
 
-    ```azurecli-interactive
+    ```azurecli
        "CUDAMachineType" : "Standard_NC6",
        "MaxCUDAExecuteCoreCount" : 60
     ```
 
 1. Within the nano editor interface, add a comma to the end of the line preceding the line you added in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
        "CUDAMachineType" : "Standard_NC6"
     ```
 
@@ -165,7 +165,7 @@ To conclude this exercise, you'll import the modified template and its parameter
 
 1. Within the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, run the following command to import the modified template and its parameters file into the existing cluster:
 
-    ```azurecli-interactive
+    ```azurecli
     cyclecloud import_cluster contoso-custom-slurm-lab-cluster --file ~/cyclecloud-slurm/templates/slurm.txt -p ~/params.json -c Slurm --force
     ```
 
