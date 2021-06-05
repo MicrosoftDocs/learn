@@ -75,6 +75,8 @@ In the preceding code, we iterate through the same indexes from our previous exa
 
 Because  the `fruits` vector contains `&str` elements, we know that the result of this expression is of type `Option<&str>`. You then use a *match* expression against the `Option` value and define a course of action for each of its variants. Rust refers to those branches as *match arms*, and each arm can handle one possible outcome for the matched value.
 
+The first arm introduces a new variable, `fruit_name`. This variable matches any value inside a `Some` value. The scope of `fruit_name` is limited to the *match* expression, so it doesn't make sense to declare `fruit_name` before introducing it in `match`.
+
 You can refine your *match* expression even further to act differently, depending on the values inside a `Some` variant. For example, you could stress the fact that coconuts are awesome by running the following:
 
 ```rust
@@ -89,7 +91,7 @@ for &index in [0, 2, 99].iter() {
 ```
 
 > [!NOTE]
-> The first pattern in the match is `Some(&"cocounut")` (note the `&` before the string literal). This is because `fruits.get(index)` returns an `Option<&&str>` or an option of a reference to a string slice.
+> The first pattern in the match is `Some(&"coconut")` (note the `&` before the string literal). This is because `fruits.get(index)` returns an `Option<&&str>` or an option of a reference to a string slice.
 > Removing `&` in the pattern would mean we are trying to match against an `Option<&str>` (an optional string slice *not* an optional reference to a string slice). We haven't covered references so this 
 > might not make full sense right now. For now, just remember the `&` is making sure the types line up properly.
 
