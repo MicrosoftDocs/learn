@@ -61,17 +61,17 @@ In this exercise, you'll make changes to a VM by using the Azure portal. You’l
 - Password: **Pa55w.rd1234**
 
 5. After you connect to the VM, select the **Start**  menu in the running VM, and then enter **diskmgmt.msc**  in the search box. The **Disk Management** console opens.
-6. Disk Management recognizes that you have a new, uninitialized disk and the  **Initialize Disk**  window appears.
+6. Disk Management recognizes that you have a new, uninitialized disk and the **Initialize Disk**  window opens.
 7. Verify the new disk is selected, and then select  **OK**  to initialize it.
-8. The new disk appears as **unallocated**. Right-click anywhere on the disk, and then select  **New simple volume**. The **New Simple Volume Wizard** window opens.
-9. Proceed with the next steps in the wizard and retain all default settings. When you're done, select  **Finish**.
-10. Close  **Disk Management**.
+8. The new disk shows as **unallocated**. Right-click anywhere on the disk, and then select **New simple volume**. The **New Simple Volume Wizard** window opens.
+9. Proceed with the next steps in the wizard and retain all default settings. When you're done, select **Finish**.
+10. Close **Disk Management**.
 11. Minimize the RDP connection.
 
 ### Task 3: Change the performance of the data disk in the portal
 
-1. Select the **accountingVM** resource to open the VM details in the portal. Alternatively, you can select  **All resources** , and then select your VM,  **accountingVM**.
-2. On the left pane, under  **Settings**, select **Disks**.
+1. Select the **accountingVM** resource to open the VM details in the portal. Alternatively, you can select **All resources** , and then select your VM, **accountingVM**.
+2. On the left pane, under **Settings**, select **Disks**.
 3. On the **accountingVM_DataDisk_0** pane, observe that the VM has one OS disk and one data disk.
 4. Select the link with the name of the data disk.
 5. On the **disk** page, from the **Settings** section, select **Size + performance**.
