@@ -1,4 +1,4 @@
-In this module, you used Azure Database for PostgreSQL to successfully configure the Express.js web service and the frontend Next.js management web app with a persistent data store.. You're confident that the Adatum development team can use this functionality to extend the capabilities of the cloud-native applications they develop.
+In this module, you used Azure Database for PostgreSQL to successfully configure the Express.js web service and the frontend Next.js management web app with a persistent data store. You're confident that the Adatum development team can use this functionality to extend the capabilities of the cloud-native applications they develop.
 
 Now that you've completed this module, you should know more about how to:
 
