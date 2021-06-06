@@ -15,14 +15,14 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: "A developer plans to develop a basic service with data hosted in Azure Database for PostgreSQL. They want to ensure that they'll be able to stop the Azure Database for PostgreSQL server during idle periods, so they can minimize the cost. Which deployment mode should they use?"
+  - content: "A developer plans to develop a basic service with data hosted in Azure Database for PostgreSQL. They want to ensure they'll be able to stop the Azure Database for PostgreSQL server during idle periods to minimize costs. Which deployment mode should they use?"
     choices:
     - content: "Single Server"
       isCorrect: false
       explanation: "Incorrect. This deployment mode doesn't support stopping the server."
     - content: "Flexible Server"
       isCorrect: true
-      explanation: "Correct. The flexible server architecture delivers support for availability zones and cost-optimization controls. The controls allow you to stop the server during idle periods and include the choice of the burstable compute tier, which automatically adjusts the compute resources based on demand."
+      explanation: "Correct. The flexible server architecture delivers support for availability zones and cost-optimization controls. The controls allow you to stop the server during idle periods, One of the choices is the burstable compute tier, which automatically adjusts the compute resources based on demand."
     - content: "Hyperscale"
       isCorrect: false
       explanation: "Incorrect. This deployment mode doesn't support stopping the server."
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "CQRS"
       isCorrect: false
-      explanation: "Incorrect. CQRS involves separating read and update operations for a data store, providing an additional layer of isolation that aligns with the premise behind DDD."
+      explanation: "Incorrect. CQRS involves separating read and update operations for a data store, which provides an extra layer of isolation that aligns with the premise behind DDD."
     - content: "DDD"
       isCorrect: false
       explanation: "Incorrect. DDD is a software development approach that focuses on the functionality of the application to define boundaries between services."
