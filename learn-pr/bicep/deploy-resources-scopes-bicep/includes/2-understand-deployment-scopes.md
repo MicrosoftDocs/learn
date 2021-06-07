@@ -53,7 +53,7 @@ You might deploy resources to a management group when:
 
 You might deploy resources to your tenant when:
 
-- You need to create Azure subscriptions. When you use management groups, subscriptions sit under management groups in the resource hierarchy, but a subscription is a tenant-scoped resource.
+- You need to create Azure subscriptions. When you use management groups, subscriptions sit under management groups in the resource hierarchy, but a subscription is deployed as a tenant-scoped resource.
 
   > [!NOTE]
   > Not all Azure customers can create subscriptions by using infrastructure as code. Depending on your billing relationship with Microsoft, this might not be possible. For more information, see [Create Azure subscriptions programmatically](/azure/cost-management-billing/manage/programmatically-create-subscription).

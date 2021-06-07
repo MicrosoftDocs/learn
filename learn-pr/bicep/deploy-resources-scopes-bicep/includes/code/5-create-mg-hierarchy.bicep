@@ -32,8 +32,7 @@ resource subscription 'Microsoft.Subscription/aliases@2020-09-01' = {
   }
 }
 
-module subscriptionAssociation 'mg-subscription-association.bicep' = {
-  scope: tenant()
+module subscriptionAssociation 'modules/mg-subscription-association.bicep' = {
   name: 'subscriptionAssociation'
   params: {
     managementGroupName: childManagementGroup.name
