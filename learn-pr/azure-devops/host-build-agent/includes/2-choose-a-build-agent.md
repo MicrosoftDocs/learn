@@ -106,7 +106,7 @@ For example, you can:
 * **Set up the build agent manually**: You bring up the system, sign in, and interactively install your build tools and the agent software.
 * **Automate the process**: You bring up the system and run a script or tool to install your build tools and the agent software. You can configure the agent after the system comes online or during the provisioning process.
 
-    For example, when you run build agents on Azure, you can use what's called an _Azure Resource Manager template_ to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
+    For example, when you run build agents on Azure, you can use an Azure Resource Manager template (ARM template) or Bicep to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
 * **Create an image**: You create an image, or snapshot, of a configured environment. You then use the image to create as many identical systems as you need in your pool.
 
 Manual configuration is a good way to get started, because it enables you to understand the process. It's also the fastest way to get set up when you need just one build agent.
