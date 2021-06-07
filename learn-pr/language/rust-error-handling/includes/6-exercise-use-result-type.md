@@ -7,7 +7,7 @@ If you plan to complete this exercise on the [Rust playground](https://play.rust
 In this exercise, you'll replace the `todo!` macro inside `read_file_contents` to make
 it compile and run without panics.
 
-Before you try this challenge, here are a few points you need to know:
+Here are a few helpful points for this challenge:
 
 - The `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following, in order:
 
@@ -16,8 +16,11 @@ Before you try this challenge, here are a few points you need to know:
   1. Tries to read the contents from that file into the `String` you just created by using the `read_to_string` method.
   1. Returns the modified `String.`
 
-- The code use some structs and a trait. The first three line bring these data types into scope.
+- The program use some structs and a trait. The first three lines of code bring these data types into scope.
 - Some of the `match` arms introduce variables like `file_handle` and `io_error`. Since their scope is limited to the `match` expression, they aren't declared in code that precedes `match`.
+- The `open` method returns a `Result<File, Error>` enum. In other words, when no errors occur, it returns a file handle wrapped in an `Ok` variant.
+- The `read_to_string` method appends the file contents to the `string` parameter that you pass to it, not to a return value.
+- The program uses a `match` expression to assign a value to a variable. Within that assignment statement, you can also use `match` arms to return from the function early.
 
 ## Exercise steps
 
