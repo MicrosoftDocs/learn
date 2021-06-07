@@ -6,7 +6,7 @@ Multiple models can be used in parallel. When more than one possible intent is i
 
 #### Confidence score
 
-A score between 0 and -1 reflects the likelihood that a model has correctly matched an intent with the utterance provided. A score of 1 shows a high certainty that the identified intent is accurate.
+A score between 0 and 1 reflects the likelihood that a model has correctly matched an intent with the utterance provided. A score of 1 shows a high certainty that the identified intent is accurate.
 
 ## Types of language models
 
@@ -14,7 +14,7 @@ There are different types of language models. Some language models are built in 
 
 ### Regular Expression models
 
-Regular Expression (RegEx) models are great for optimizing performance when you need to understand simple and predictable commands from users. They extract a single intent from an utterance by matching the utterance to a RegEx pattern. For example, the RegEx pattern /.*help*./I would match the utterance "I need help."
+Regular Expression (RegEx) models are great for optimizing performance when you need to understand simple and predictable commands from users. They extract a single intent from an utterance by matching the utterance to a RegEx pattern. For example, the RegEx pattern */.help./I* matches the utterance "I need help".
 
 For more information, see [Regular Expressions](/azure/cognitive-services/luis/reference-entity-regular-expression).
 

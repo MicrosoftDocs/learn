@@ -14,7 +14,8 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Basic understanding of Health Bot
+- Introduction to the Health Bot Service
+- Introduction and Basic Health Bot
 - Ability to use Health Bot
 - Ability to use the Azure portal
 
