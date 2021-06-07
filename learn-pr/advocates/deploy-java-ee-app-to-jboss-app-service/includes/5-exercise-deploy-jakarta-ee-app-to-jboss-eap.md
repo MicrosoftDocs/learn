@@ -5,7 +5,7 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service:
 
 ```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.15.0:config
 ```
 
 > [!IMPORTANT]
@@ -15,9 +15,10 @@ In the command, select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtim
 
 |  Input element  |  Value  |
 | ---- | ---- |
+|  `Subscription` | `Your appropriate subsctioption` |
 |  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
 |  `Define value for OS [Linux]:`  |  `Linux`  |
-|  `Define value for pricingTier [P1v2]:`  |  `P1v2`  |
+|  `Define value for pricingTier [P1v2]:`  |  `P3v3`  |
 |  `Define value for javaVersion [Java 8]:`  |  `1: Java 8`  |
 |  `Define value for runtimeStack:`  |  `1: Jbosseap 7.2`  |
 |  `Confirm (Y/N) [Y]:` | `Y` |
@@ -31,18 +32,19 @@ After you run the command, you'll see the following messages in the terminal:
 [INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
-[INFO] Auth Type : AZURE_CLI, Auth Files : [/Users/yoterada/.azure/azureProfile.json, /Users/yoterada/.azure/accessTokens.json]
-Available subscriptions:
-   1: My Subscription(********-****-****-****-************)
-Please choose a subscription [My Subscription]: 1
-[INFO] It may take a few minutes to load all Java Web Apps, please be patient.
-Web Container Web Apps in subscription My Subscription:
-* 1: <create>
-Please choose a Web Container Web App [<create>]: 
+[INFO] --- azure-webapp-maven-plugin:1.15.0:config (default-cli) @ jakartaee-app-on-jboss ---
+[WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] WARNING: A few accounts are skipped as they don't have 'Enabled' state. Use '--all' to display them.
+[WARNING] WARNING: A few accounts are skipped as they don't have 'Enabled' state. Use '--all' to display them.
+Auth type: AZURE_CLI
+Default subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
+Username: YOUR_EMAIL_ADDRESS@**********.com
+[INFO] Subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
+[WARNING] There are no Java Web Apps in current subscription, please follow the following steps to create a new one.
 Define value for OS [Linux]:
 * 1: Linux
-  2: Docker
-  3: Windows
+  2: Windows
+  3: Docker
 Enter your choice: 
 Define value for pricingTier [P1v2]:
    1: B1
@@ -56,7 +58,7 @@ Define value for pricingTier [P1v2]:
    9: S1
   10: S2
   11: S3
-Enter your choice: 
+Enter your choice: 8
 Define value for javaVersion [Java 8]:
 * 1: Java 8
   2: Java 11
@@ -68,10 +70,10 @@ Define value for runtimeStack:
 Enter your choice: 1
 Please confirm webapp properties
 Subscription Id : ********-****-****-****-************
-AppName : jakartaee-app-on-jboss-1606464084546
-ResourceGroup : jakartaee-app-on-jboss-1606464084546-rg
+AppName : jakartaee-app-on-jboss-1623043825268
+ResourceGroup : jakartaee-app-on-jboss-1623043825268-rg
 Region : westeurope
-PricingTier : PremiumV2_P1v2
+PricingTier : PremiumV2_P3v2
 OS : Linux
 Java : Java 8
 Web server stack: Jbosseap 7.2
@@ -81,25 +83,25 @@ Confirm (Y/N) [Y]: y
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  55.093 s
-[INFO] Finished at: 2020-11-27T17:01:43+09:00
+[INFO] Total time:  01:43 min
+[INFO] Finished at: 2021-06-07T14:31:52+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
 After the command finishes, you can see that following entry is added in your Maven `pom.xml` file:
 
 ```xml
-    <plugins>
+    <plugins> 
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.12.0</version>
+        <version>1.15.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>********-****-****-****-************</subscriptionId>
-          <resourceGroup>jakartaee-app-on-jboss-1606464084546-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1606464084546</appName>
-          <pricingTier>P1v2</pricingTier>
+          <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
+          <appName>jakartaee-app-on-jboss-1623043825268</appName>
+          <pricingTier>P3v2</pricingTier>
           <region>westeurope</region>
           <runtime>
             <os>Linux</os>
