@@ -15,10 +15,7 @@ In this exercise, you will step through implementing Azure CycleCloud. The exerc
 
 You'll start by deploying an Azure VM hosting the Azure CycleCloud application by using its Azure Marketplace image.
 
-1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or an Azure AD account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
-
-    > [!NOTE]
-    > The Azure portal is available from the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari.
+1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true), and when prompted, authenticate with a Microsoft account or an Azure AD account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the portal interface to search for **Azure CycleCloud**.
 1. In the list of results, in the **Marketplace** section, select the **Azure CycleCloud** entry.
