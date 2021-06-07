@@ -46,7 +46,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Password and IP Address stored"
     ```
 
-1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
+1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press <kbd>Enter</kbd> after you paste the code, because the last line won't be run by default.
 
     ```powershell
     # Get resource group and location and random string
@@ -111,7 +111,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<your-server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. Go to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
 1. Select **Settings** for the repository.
 
@@ -119,7 +119,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and go to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
@@ -134,19 +134,19 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the **...** > **Push** to kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
+1. Select the **...** > **Push** to kick off a build. Confirm it builds successfully by going to the repository in GitHub and selecting **Actions**.
 
 ## Import route reference data into Azure SQL Database
 
 The final step is to load in the route reference data and identify a bus route to monitor.
 
-1. By this point, the script in Azure Cloud Shell to the right should be complete. Run the following to start a bash session.
+1. By this point, the script in Azure Cloud Shell to the right should be complete. Run the following command to start a bash session.
 
     ```powershell
     bash
     ```
 
-1. Start a sqlcmd session with the following commands. Note you'll need to add your server name and password.
+1. Start a sqlcmd session running the following commands. Note you'll need to add your server name and password.
 
     ```bash
     TERM=dumb

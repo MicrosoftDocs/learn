@@ -39,7 +39,7 @@ Several aspects set a LAN apart from a WAN. Knowing what these items are makes i
 
 | LAN | WAN |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| A LAN is a privately operated network typically contained in a single building. | A WAN is used to connected geographically separate offices to each other. Multiple organizations might operate WANs. |
+| A LAN is a privately operated network typically contained in a single building. | A WAN is used to connect geographically separate offices to each other. Multiple organizations might operate WANs. |
 | A LAN operates at speeds of 10 Gbps or higher. | A WAN typically operates at speeds of less than 1 Gbps. |
 | A LAN is less congested compared to other network types. | A WAN is more congested compared to other network types. |
 | A LAN can be managed and administrated in-house. | A WAN typically requires the use of a third party to configure and set up, which increases cost. |
