@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-concepts-methodologies
 metadata:
   title: Describe security concepts and methodologies
   description: "Describe security concepts and methodologies"
-  ms.date: 03/25/2021
+  ms.date: 06/07/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ units:
 - learn.wwl.describe-security-concepts-methodologies.describe-defense-depth
 - learn.wwl.describe-security-concepts-methodologies.describe-common-threats
 - learn.wwl.describe-security-concepts-methodologies.describe-ways-encryption,-hashing,-signing-can-secure-your-data
+- learn.wwl.describe-security-concepts-methodologies.describe-cloud-adoption-framework
 - learn.wwl.describe-security-concepts-methodologies.knowledge-check
 - learn.wwl.describe-security-concepts-methodologies.summary-resources
 badge:

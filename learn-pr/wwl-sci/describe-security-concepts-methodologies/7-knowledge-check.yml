@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2021
+  ms.date: 06/07/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -40,12 +40,23 @@ quiz:
       explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
   - content: "The human resources organization want to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
+    - content: "Hashing."
+      isCorrect: false
+      explanation: "That's  incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
     - content: "Encryption in transit."
       isCorrect: false
       explanation: "That's  incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
-    - content: "Digital signing."
-      isCorrect: false
-      explanation: "That's incorrect. Digital signing is a mechanism to show that a message has come from the correct sender, and has not been tampered with, making it an inappropriate method to protect the stored data."
     - content: "Encryption at rest."
       isCorrect: true
       explanation: "That's correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
+  - content: "An organization is moving their IT infrastructure to the cloud. They want to know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance can they use to help them transition to the cloud?"
+    choices:
+    - content: "They should use Azure Policy for guidance on moving to the cloud."
+      isCorrect: false
+      explanation: "​​​Azure Policy isn’t guidance, but rather a solution that helps ensure resources stay compliant with business and regulatory requirements. Instead, use the Cloud Adoption Framework."
+    - content: "They should use the Microsoft Cloud Adoption Framework for guidance on moving to the cloud."
+      isCorrect: true
+      explanation: "The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.​​​"
+    - content: "They should use the Azure Cloud Succeed Framework."
+      isCorrect: false
+      explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
