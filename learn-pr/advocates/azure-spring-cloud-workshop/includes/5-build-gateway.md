@@ -22,9 +22,11 @@ curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eur
 In the `src/main/resources/application.properties` configuration file, add the following property:
 
 ```yaml
+spring.main.allow-bean-definition-overriding=true
 spring.cloud.gateway.discovery.locator.enabled=true
 ```
 
+- The `spring.main.allow-bean-definition-overriding=true` part is to configure Spring Cloud Gateway to use the Spring Cloud Discovery Server bean configured in the Azure Spring Cloud Client library.
 - The `spring.cloud.gateway.discovery.locator.enabled=true` part is to configure Spring Cloud Gateway to use the Spring Cloud Service Registry to discover the available microservices.
 
 ## Create the application on Azure Spring Cloud

@@ -4,7 +4,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
 ## Deploy Azure Cosmos DB
 
-1. When you deploy Azure Cosmos DB, you provide a unique database name. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
+1. When you deploy Azure Cosmos DB, you provide a unique database name. For learning purposes, run this command in Cloud Shell to create a Bash variable that holds a unique name.
 
     ```bash
     COSMOS_DB_NAME=aci-cosmos-db-$RANDOM
@@ -24,10 +24,10 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     `$COSMOS_DB_NAME` specifies your unique database name. The command prints the endpoint address for your database. Here, the command saves this address to the Bash variable `COSMOS_DB_ENDPOINT`.
 
-1. Run `az cosmosdb keys list` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
+1. Run `az cosmosdb list-keys` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
 
     ```azurecli
-    COSMOS_DB_MASTERKEY=$(az cosmosdb keys list \
+    COSMOS_DB_MASTERKEY=$(az cosmosdb list-keys \
       --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query primaryMasterKey \
@@ -58,7 +58,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you pass the name of the Azure Cosmos DB endpoint and its connection key.
 
-1. Run `az container show` to get your container's public IP address.
+1. Run the `az container show` command to get your container's public IP address.
 
     ```azurecli
     az container show \
@@ -68,7 +68,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
       --output tsv
     ```
 
-1. From a browser, navigate to your container's IP address.
+1. In a browser, go to your container's IP address.
 
     > [!IMPORTANT]
     > Sometimes containers take a minute or two to fully start up and be able to receive connections. If there's no response when you navigate to the IP address in your browser, wait a few moments and refresh the page.
