@@ -101,7 +101,7 @@ After the command finishes, you can see that following entry is added in your Ma
           <subscriptionId>********-****-****-****-************</subscriptionId>
           <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
           <appName>jakartaee-app-on-jboss-1623043825268</appName>
-          <pricingTier>P3v2</pricingTier>
+          <pricingTier>P3v3</pricingTier>
           <region>westeurope</region>
           <runtime>
             <os>Linux</os>
@@ -124,7 +124,11 @@ After the command finishes, you can see that following entry is added in your Ma
 ```
 
 > [!IMPORTANT]
+> Please change the `<pricingTier>P3v2</pricingTier>` to `P3v3` manualy?
+
+> [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
+
 
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
@@ -205,7 +209,7 @@ https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 
 ## Configure a database connection
 
-The sample application will connect to your MySQL Database and display data. 
+The sample application will connect to your MySQL Database and display data.
 
 In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC driver as follows:
 
@@ -280,7 +284,6 @@ az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/cre
 -g ${RESOURCEGROUP_NAME}
 ```
 ---
-
 
 After the script runs, it will be invoked every time the application server is restarted.
 
