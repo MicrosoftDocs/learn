@@ -176,15 +176,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Check the version of Azure PowerShell
 
-1. In the Visual Studio Code terminal, check the version of Azure PowerShell you've installed by running the following command:
+In the Visual Studio Code terminal, check the version of Azure PowerShell you've installed by running the following command:
 
-   ```azurepowershell
-   (Get-InstalledModule Az).Version
-   ```
+```azurepowershell
+(Get-InstalledModule Az).Version
+```
 
-   If the version number is `5.6.0` or later, skip to the next section, "Sign in to Azure by using Azure PowerShell."
+If the version number is `5.6.0` or later, skip to the next section, "Sign in to Azure by using Azure PowerShell."
 
-   If the version is earlier than `5.6.0`, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
+If the version is earlier than `5.6.0`, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
 
 ### Sign in to Azure by using Azure PowerShell
 
