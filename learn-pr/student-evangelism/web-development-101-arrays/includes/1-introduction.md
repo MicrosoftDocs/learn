@@ -7,7 +7,7 @@ Imagine having to reload a page each time information changed on your device, no
 
 In this module, you will learn about the structural format and uses of arrays in JavaScript, and introduce the ways loops can assist with repetitive tasks involving the data within arrays.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will begin to discover:
 
