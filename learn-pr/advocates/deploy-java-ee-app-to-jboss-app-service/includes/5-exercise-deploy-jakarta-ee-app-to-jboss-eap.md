@@ -164,7 +164,7 @@ The following message appears in the terminal:
 ```text
 Auth type: AZURE_CLI
 Default subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
-Username: yoterada@microsoft.com
+Username: YOUR_EMAIL_ADDRESS@************.com
 [INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
 [INFO] Creating resource group jakartaee-app-on-jboss-1623043825268-rg in region westeurope...
 [INFO] Successfully created resource group jakartaee-app-on-jboss-1623043825268-rg.
