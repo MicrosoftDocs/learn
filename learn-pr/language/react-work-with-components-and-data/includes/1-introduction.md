@@ -33,12 +33,12 @@ This module uses a starter project.
     ````bash
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react\code\2-component-events\start
+    cd mslearn-react\code\2-component-events\start
     code .
 
     # macOS or Linux
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react/code/2-component-events/start
+    cd mslearn-react/code/2-component-events/start
     code .
     ````
 
