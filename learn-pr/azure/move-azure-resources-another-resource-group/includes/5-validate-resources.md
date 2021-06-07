@@ -18,9 +18,9 @@ To formulate the correct REST URI to call, and to provide the other necessary de
 
 - Your Azure subscription ID.
 - The name of the resource group currently holding your resources.
-- The [resource ID](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresource?view=azurermps-6.13.0) for each of the resources in your original resource group.
-- The [resource ID](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-6.13.0) for the destination resource group where you want to move your resources.
-- Your account [access token](https://docs.microsoft.com/rest/api/azure/#acquire-an-access-token).
+- The [resource ID](/powershell/module/azurerm.resources/get-azurermresource?view=azurermps-6.13.0) for each of the resources in your original resource group.
+- The [resource ID](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-6.13.0) for the destination resource group where you want to move your resources.
+- Your account [access token](/rest/api/azure/#acquire-an-access-token).
 
 When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token. The CLI includes these values automatically.
 

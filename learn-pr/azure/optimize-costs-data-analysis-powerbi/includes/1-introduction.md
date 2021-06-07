@@ -35,7 +35,7 @@ To connect your Azure subscription to Power BI Desktop for a Microsoft Customer 
 
 The Azure Cost Management Power BI app is only supported for Enterprise Agreements. The app doesn't support Microsoft Customer Agreements.
 
-- A [Power BI Pro license](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) to install and use the app.
+- A [Power BI Pro license](/power-bi/service-self-service-signup-for-power-bi) to install and use the app.
 - Basic understanding of the Azure resource hierarchy, including subscriptions and resource groups.
 - Basic knowledge of Power BI and data analysis techniques such as how to set up a dashboard and filter data.
 - Knowledge of various Azure purchase benefits, including Azure Reserved Instances and Azure Hybrid benefits.
