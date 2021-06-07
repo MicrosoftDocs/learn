@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-cyclecloud-high-performance-computing.summary
+uid: learn.azure.azure-cyclecloud-high-performance-computing.summary
 title: Summary
 metadata:
   unitType: summary
   title: Summary
   description: This unit provides a summary of the module about the use of Azure CycleCloud for high-performance computing.
-  ms.date: 5/6/2021
+  ms.date: 06/07/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial

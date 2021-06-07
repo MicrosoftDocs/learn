@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-cyclecloud-high-performance-computing.exercise-install-configure
+uid: learn.azure.azure-cyclecloud-high-performance-computing.exercise-install-configure
 title: Exercise - Install and configure Azure CycleCloud
 metadata:
   unitType: exercise
   title: Exercise - Install and configure Azure CycleCloud
   description: This unit explains the process of installing and configuring Azure Cycle Cloud.
-  ms.date: 5/6/2021
+  ms.date: 06/07/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial

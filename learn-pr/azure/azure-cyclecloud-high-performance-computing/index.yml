@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.azure-cyclecloud-high-performance-computing
+uid: learn.azure.azure-cyclecloud-high-performance-computing
 metadata:
   moduleType: standard
   title: Create, customize and manage an HPC cluster in Azure with Azure CycleCloud
   description: This module explains how to use Azure CycleCloud for high-performance computing. It explains how to install and configure Azure CycleCloud to work with your Azure subscription as well as how to integrate a third-party scheduler. Finally, it covers how to create and deploy a basic HPC cluster on Azure.
-  ms.date: 5/6/2021
+  ms.date: 06/07/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
@@ -31,12 +31,12 @@ products:
   - azure
   - azure-cyclecloud
 units:
-- learn.azure-cyclecloud-high-performance-computing.introduction
-- learn.azure-cyclecloud-high-performance-computing.describe-basics
-- learn.azure-cyclecloud-high-performance-computing.describe-scheduler-integration
-- learn.azure-cyclecloud-high-performance-computing.exercise-install-configure
-- learn.azure-cyclecloud-high-performance-computing.exercise-create-cluster
-- learn.azure-cyclecloud-high-performance-computing.knowledge-check
-- learn.azure-cyclecloud-high-performance-computing.summary
+- learn.azure.azure-cyclecloud-high-performance-computing.introduction
+- learn.azure.azure-cyclecloud-high-performance-computing.describe-basics
+- learn.azure.azure-cyclecloud-high-performance-computing.describe-scheduler-integration
+- learn.azure.azure-cyclecloud-high-performance-computing.exercise-install-configure
+- learn.azure.azure-cyclecloud-high-performance-computing.exercise-create-cluster
+- learn.azure.azure-cyclecloud-high-performance-computing.knowledge-check
+- learn.azure.azure-cyclecloud-high-performance-computing.summary
 badge:
-  uid: learn.azure-cyclecloud-high-performance-computing.badge
+  uid: learn.azure.azure-cyclecloud-high-performance-computing.badge

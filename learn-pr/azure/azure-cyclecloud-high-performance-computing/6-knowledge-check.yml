@@ -1,11 +1,11 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure-cyclecloud-high-performance-computing.knowledge-check
+uid: learn.azure.azure-cyclecloud-high-performance-computing.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
-  ms.date: 5/6/2021
+  ms.date: 06/07/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
