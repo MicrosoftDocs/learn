@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.web-development-101-loops-arrays
 metadata:
-  title: JavaScript Arrays and Loops
+  title: JavaScript arrays and loops
   description: Learn how it is possible to manipulate and store data within JavaScript.
   ms.date: 05/25/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: JavaScript Arrays and Loops
+title: JavaScript arrays and loops
 summary: Learn about variables and the data types that populate them.
 abstract: |
   In this module, you will begin to discover: 
