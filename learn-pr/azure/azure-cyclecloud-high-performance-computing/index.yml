@@ -11,7 +11,7 @@ metadata:
 title: Use Azure CycleCloud for high-performance computing
 summary: Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage HPC clusters in Azure. 
 abstract: |
-  By the end of this module, you'll know more about how to:
+  By the end of this module, you'll be able to:
 
   - Install and configure Azure CycleCloud to work with your Azure subscription.
   - Integrate a third-party scheduler.
