@@ -19,16 +19,15 @@ NoSQL databases generally do not enforce relational constraints or put locks on 
 
 While there are many NoSQL data models, four broad data model families are commonly used when modeling data in a NoSQL database:
 
-:::image type="content" source="../media/2-nosql-db.svg" alt-text="Illustration of various NoSQL models including; a key-value store with a one-to-one relationship between identifiers and values, a document store with a hierarchy of entities, a graph store with traversal paths, and a column family store with multiple columns" border="false":::
+:::image type="content" source="../media/2-nosql-db.svg" alt-text="Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store." border="false":::
 
-> [!NOTE]
-> Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB SQL API
+Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB SQL API
 
 ## Why use a NoSQL database with the document data model?
 
 The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB SQL API supports JSON natively.
 
-:::image type="content" source="../media/2-document-db.svg" alt-text="A" border="false":::
+:::image type="content" source="../media/2-document-db.svg" alt-text="Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them." border="false":::
 
 A document is an atomic entity and can have its own data form, regardless of what is stored in other documents in the same database. Because of this flexibility, there is no need for a pre-defined schema making it easier to build new applications rapidly. Additionally, this flexibility enables scenarios where different types of data can be stored together and where models can evolve over the lifetime of an application.
 
@@ -38,7 +37,7 @@ JavaScript Object Notation, or [JSON](https://www.json.org), is a lightweight da
 
 Here is an example of a JSON document:
 
-:::code language="json" source="../samples/3-document.json" range="1-6":::
+:::code language="json" source="../samples/3-document.json" range="18-27":::
 
 As you can see, JSON is a relatively readable data format that clearly exposes its content. JSON is also relatively easy to parse and use in JavaScript applications.
 
@@ -49,8 +48,7 @@ As you can see, JSON is a relatively readable data format that clearly exposes i
 Azure Cosmos DB SQL API is a fast NoSQL database service that offers rich querying over diverse data, helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
 
 <!-- Source for the following diagram is at https://commons.wikimedia.org/wiki/File:Simplified_blank_world_map_without_Antartica_(no_borders).svg -->
-<!-- We will need to replace this with approved art -->
-:::image type="content" source="../media/2-azure-cosmos-db.svg" alt-text="An illustration of a world map with four globally distributed nodes that are connected via lines" border="false":::
+:::image type="content" source="../media/2-azure-cosmos-db.svg" alt-text="Illustration of a world map with four globally distributed nodes that are connected via lines." border="false":::
 
 The SQL API is the core or native API for working with documents. The SQL API supports fast, flexible development utilizing JSON documents, the familiar SQL query language, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native SQL API.
 

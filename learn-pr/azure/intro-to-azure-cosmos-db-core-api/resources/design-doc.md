@@ -22,7 +22,8 @@ Implement geo-replication either during the creation of an Azure Cosmos DB SQL A
 
 ## Learning objectives
 
-1. Describe the Azure Cosmos DB SQL API
+1. Evaluate whether Azure Cosmos CB SQL API is the right database for your application.
+1. Describe how the features of the Azure Cosmos DB SQL API is appropriate for modern applications.
 
 ## Sub tasks
 
