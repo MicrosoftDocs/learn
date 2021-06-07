@@ -39,7 +39,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     > [!NOTE]
     > CycleCloud requires 8 GB of RAM and at least four vCPU cores.
 
-    :::image type="content" source="../media/u4-cyclecloud-create-basics1.png" alt-text="The screenshot depicts the upper section of the Basics tab of Create a virtual machine blade in the Azure portal." border="false":::
+    :::image type="content" source="../media/u4-cyclecloud-create-basics-1.png" alt-text="The screenshot depicts the upper section of the Basics tab of Create a virtual machine blade in the Azure portal." border="false":::
 
     | Setting | Value |
     | --- | --- |
@@ -48,7 +48,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | SSH public key source | Ensure that the **Generate new key pair** option is selected, |
     | Key pair name | Enter **cc-ssh-keys**. |
 
-    :::image type="content" source="../media/u4-cyclecloud-create-basics2.png" alt-text="The screenshot depicts the lower section of the Basics tab of the Create a virtual machine blade in the Azure portal." border="false":::
+    :::image type="content" source="../media/u4-cyclecloud-create-basics-2.png" alt-text="The screenshot depicts the lower section of the Basics tab of the Create a virtual machine blade in the Azure portal." border="false":::
 
     > [!NOTE]
     > Azure provides the ability to automatically generate an SSH key pair and allows you to store it for future use.

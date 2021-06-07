@@ -7,7 +7,7 @@ Implementing the equivalent functionality on your own, without the abstraction l
 ## References
 
 * [Azure CycleCloud Documentation](/azure/cyclecloud/) 
-* [Azure CycleCloud](https://azure.microsoft.com/en-us/features/azure-cyclecloud/)
+* [Azure CycleCloud](https://azure.microsoft.com/features/azure-cyclecloud/)
 * [What is Azure CycleCloud?](/azure/cyclecloud/overview)
 * [Quickstart - Install CycleCloud using the Marketplace image](/azure/cyclecloud/qs-install-marketplace)
 * [Azure CycleCloud Tutorial 1: Create and Run a Simple HPC Cluster](/azure/cyclecloud/tutorials/create-cluster)

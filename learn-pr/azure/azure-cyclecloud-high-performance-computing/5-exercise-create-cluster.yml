@@ -9,6 +9,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-create-cluster.md)]

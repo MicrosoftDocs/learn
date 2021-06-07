@@ -33,7 +33,7 @@ An Azure CycleCloud instance also requires an Azure storage account and an accom
 
 Once installed, the Azure CycleCloud application provides a graphical user interface that allows a user to manage and monitor HPC systems and a command-line interface (CLI) that facilitates automation and integration of CycleCloud into existing workflows. You can also use CLI to import templates, automate cluster provisioning, and perform more advanced management tasks.
 
-:::image type="content" source="../media/u2-cyclecloud-gui.png" alt-text="The screenshot depicts the graphical interface of the Azure CycleCloud web application." border="false":::
+:::image type="content" source="../media/u2-cyclecloud-gui.png" alt-text="The screenshot depicts the graphical interface of the Azure CycleCloud web application." border="false" lightbox="../media/u2-cyclecloud-gui.png":::
 
 # What is the architecture of Azure CycleCloud?
 
@@ -46,7 +46,7 @@ Azure CycleCloud orchestrates the lifecycle of HPC clusters, which typically con
 
 Autoscaling of the managed cluster relies on Demand Calculator and Autoscale Library. You'll learn about their characteristics in the next unit of this course.
 
-:::image type="content" source="../media/u2-cyclecloud-architecture.png" alt-text="A depiction of the high-level architecture of Azure CycleCloud." border="false":::
+:::image type="content" source="../media/u2-cyclecloud-architecture.png" alt-text="A depiction of the high-level architecture of Azure CycleCloud." border="false" lightbox="../media/u2-cyclecloud-architecture.png":::
 
 ## What is Azure CycleCloud cluster lifecycle?
 
