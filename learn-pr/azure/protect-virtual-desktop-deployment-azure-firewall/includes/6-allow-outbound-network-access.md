@@ -58,7 +58,7 @@ TODO: describe the end-state
 
 
 
-Allow outbound network access from the host pool to Windows Virtual Desktop:
+Allow outbound network access from the host pool to Azure Virtual Desktop:
 
 <!-- Diagram to show the pieces?? highlight from one of previous diagrams-->
 
@@ -76,6 +76,6 @@ Allow outbound network access from the host pool to the Internet:
 
 - When the list of allowed destinations is well-defined (e.g. Microsoft 365 access). 
 - Use Azure Firewall application and network rules to configure the required access.
-- To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Windows Virtual Desktop host pool with an explicit proxy configuration.
+- To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Azure Virtual Desktop host pool with an explicit proxy configuration.
 
 ### Configure network rules

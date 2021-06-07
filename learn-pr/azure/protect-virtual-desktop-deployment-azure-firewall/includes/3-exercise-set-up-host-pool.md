@@ -6,7 +6,7 @@ TODO: add your scenario sub-task
 
 TODO: add your scenario image
 
-In this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Windows Virtual Desktop agents to register the VM to the host pool. You'll then have a Windows Virtual Desktop deployment that you can use in the rest of the module exercises.
+In this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -30,11 +30,11 @@ First, create a resource group to contain all the resources you'll create in thi
    [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 
-## Create a host pool for Windows Virtual Desktop
+## Create a host pool for Azure Virtual Desktop
 
 Next, let's create a host pool that will contain the VM you'll create later in this exercise.
 
-1. In the Azure portal, search for and select **Windows Virtual Desktop**.
+1. In the Azure portal, search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
 1. Enter the following information into the **Basics** tab.
 
@@ -130,16 +130,16 @@ Use a remote desktop session to sign into the VM you created in the previous sec
 
 ## Register the virtual machine with host pool
 
-Install the Windows Virtual Desktop agents on the VM to register the VM to the host pool.
+Install the Azure Virtual Desktop agents on the VM to register the VM to the host pool.
 
-### Install the  Windows Virtual Desktop Agent
+### Install the  Azure Virtual Desktop Agent
 
-In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
+In your remote desktop session on the VM, install the  Azure Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
 
 1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
-1. Select **Open file** to install the Windows Virtual Desktop Agent.
+1. Select **Open file** to install the Azure Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
@@ -151,13 +151,13 @@ In your remote desktop session on the VM, install the  Windows Virtual Desktop A
 
 1. Complete the installation.
 
-### Install the  Windows Virtual Desktop Agent Bootloader
+### Install the  Azure Virtual Desktop Agent Bootloader
 
-In your remote desktop session on the VM, install the  Windows Virtual Desktop Agent Bootloader.
+In your remote desktop session on the VM, install the  Azure Virtual Desktop Agent Bootloader.
 
-1. Copy the link to the [Windows Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
+1. Copy the link to the [Azure Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
-1. Select **Open file** to install the Windows Virtual Desktop Agent Bootloader.
+1. Select **Open file** to install the Azure Virtual Desktop Agent Bootloader.
 1. Complete the installation.
 1. Close the remote desktop session.
 
@@ -165,7 +165,7 @@ In your remote desktop session on the VM, install the  Windows Virtual Desktop A
 
 At this point, the virtual machine should be registered as a session host for the host pool. To verify it's registered, let's sign into the portal and check the VM in the host pool.
 
-1. In the Azure portal, search for or select **Windows Virtual Desktop**.
+1. In the Azure portal, search for or select **Azure Virtual Desktop**.
 1. Select **Host pools** > **learn-host-pool**.
 1. In the center pane, under **Virtual machines**, select **Total machines**.
 :::image type="content" source="../media/3-host-pool-overview-vms.png" alt-text="Screenshot that shows the host pool overview page with the total machines button in the center pane.":::
