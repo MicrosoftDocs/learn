@@ -18,7 +18,7 @@ For more information about Intune supported devices, platforms, and operating sy
 
 ### Configuration Manager supported operating systems
 
-The supported OS versions for clients and devices that can be managed by Configuration Manager include several dozen operating system. These operating systems focus on Windows computers, Windows Servers, Windows Server Core, Windows Virtual Desktop, Windows Embedded computers, Windows 10 IoT Mobile Enterprise, Windows 10 Team for Surface Hub, and Mac computers.
+The supported OS versions for clients and devices that can be managed by Configuration Manager include several dozen operating system. These operating systems focus on Windows computers, Windows Servers, Windows Server Core, Azure Virtual Desktop, Windows Embedded computers, Windows 10 IoT Mobile Enterprise, Windows 10 Team for Surface Hub, and Mac computers.
 
 For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported OS versions for clients and devices for Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices?azure-portal=true).
 

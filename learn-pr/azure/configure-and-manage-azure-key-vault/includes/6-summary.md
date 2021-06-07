@@ -9,11 +9,11 @@ In this module, you've learned about several security benefits of AKV:
 
 ## Further reading
 
-Continue learning about Azure Key Vault in the Microsoft Learn module [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
+Continue learning about Azure Key Vault in the Microsoft Learn module [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 Read Azure Key Vault documentation on topics we covered in this module.
 
-- [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-overview)
+- [What is Azure Key Vault?](/azure/key-vault/key-vault-overview)
 - [Azure Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/)
-- [Certificate operations](https://docs.microsoft.com/rest/api/keyvault/certificate-operations)
-- [Implementing bring your own key (BYOK) for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys)
+- [Certificate operations](/rest/api/keyvault/certificate-operations)
+- [Implementing bring your own key (BYOK) for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys)

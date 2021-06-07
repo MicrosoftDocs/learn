@@ -19,9 +19,15 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Create Azure Cosmos DB Account** pane appears.
+1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Select API option** pane appears.
+
+1. Select **Create** in the **Core (SQL) - Recommended** box option.
+
+    Azure Cosmos DB provides five APIs to suit the needs of your application: Core SQL (document database), MongoDB (document database), Cassandra, Azure Table, and Gremlin (graph database), each of which currently require a separate account. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with Core SQL API and Graph API accounts.
+
+    The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -32,7 +38,6 @@ A database account is a container for managing one or more databases. Before we 
     | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
     | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | API | Core (SQL) | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
     | Location | Central US | Select the region nearest you. |
 
     Leave the default values for all of the other settings in this new account pane.
@@ -64,12 +69,12 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
     > - Container id = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+    > - Partition key = /id (slash id); NOT curly brackets (braces) or any combination of curly brackets and slashes
 
     | Setting | Value | Description |
     |---|---|---|
     | Database id | Select **Create new**, and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
-    | Database max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
+    | Database Max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
     | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
@@ -240,7 +245,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
 1. Replace all code in the index.js code block with the code from the following snippet, and in the top menu bar, select **Save**. The **Logs** pane appears showing your connection.
 
-     ```java
+    ```json
  	module.exports = function (context, req) {
     
     	var bookmark = context.bindings.bookmark

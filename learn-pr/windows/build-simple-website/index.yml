@@ -11,9 +11,12 @@ metadata:
 title: Build a simple website using HTML, CSS, and JavaScript
 summary: Get started with web development by learning how to use HTML, CSS, and JavaScript to build a website, use developer tools in the browser to check your work.
 abstract: |
- In this module you will:
- - Create the files for a website
- - Write HTML, CSS, and JavaScript code
+  In this module, you'll learn how to:
+  - Create a basic web page using HTML
+  - Apply styles to page elements using CSS
+  - Create themes using CSS
+  - Add support for switching between themes using JavaScript
+  - Inspect the website using browser developer tools
 prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com)
   - Familiarity with one or more programming languages and a markup language such as HTML

@@ -1,4 +1,4 @@
-In this exercise, you configure [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-about) as an input for Azure Stream Analytics to ingest streaming vehicle telemetry data. Event Hubs acts as the entry point to a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
+In this exercise, you configure [Azure Event Hubs](/azure/event-hubs/event-hubs-about) as an input for Azure Stream Analytics to ingest streaming vehicle telemetry data. Event Hubs acts as the entry point to a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
 
 1. From your Stream Analytics job's blade in the [Azure portal](https://portal.azure.com/), select **Inputs** in the left-hand navigation menu.
 
@@ -14,7 +14,7 @@ In this exercise, you configure [Azure Event Hubs](https://docs.microsoft.com/az
     - **Select Event Hub from your subscriptions:** Selected.
     - **Subscription:** Make sure the subscription you are using for this lab is selected.
     - **Event Hub namespace:** Select the Event Hub namespace you are using for this lab.
-    - **Event Hub name:** Select **Use existing**, then select **telemetry**, which you created earlier.
+    - **Event Hub name:** Create and event hub name named **telemetry**.
     - **Event Hub consumer group:** Select **Use existing**, then select **$Default**.
     - **Authentication mode:** Select **Connection string**.
     - **Event Hub policy name:** Select **Use existing**, then select **Read**.

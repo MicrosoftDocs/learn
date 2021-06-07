@@ -7749,6 +7749,46 @@
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/web-development-101-accessibility/7-summary/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/2-what-are-webjobs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/3-create-a-webjobs-project-using-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/4-exercise-create-a-webjob-using-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/5-improve-development-efficiency-with-the-webjobs-sdk.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/6-exercise-using-the-webjobs-sdk.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/",
+      "redirect_document_id": false
     }
   ]
 }

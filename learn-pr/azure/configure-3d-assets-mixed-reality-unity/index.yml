@@ -16,7 +16,6 @@ abstract: |
   - Use MRTK interactions to provide a rich user experience
   - Place assets in a Unity scene
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true
 levels:
 - beginner
 roles:

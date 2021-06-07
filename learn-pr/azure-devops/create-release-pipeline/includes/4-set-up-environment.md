@@ -28,7 +28,7 @@ The modules in this learning path form a progression as you follow the Tailspin 
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-release-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=create-release-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 

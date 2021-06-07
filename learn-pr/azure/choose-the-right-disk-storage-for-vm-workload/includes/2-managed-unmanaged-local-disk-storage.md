@@ -8,7 +8,7 @@ In this unit, you'll learn about disk roles and ephemeral disks. You'll also lea
 
 Each disk can take one of three roles in a virtual machine:
 
-- **OS disk**. One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that's attached to the new machine. The OS disk has a maximum capacity of 2,048 GB.
+- **OS disk**. One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that's attached to the new machine. The OS disk has a maximum capacity of 4 TB.
 - **Data disk**. You can add one or more data virtual disks to each virtual machine to store data. For example, database files, website static content, or custom application code should be stored on data disks. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
 - **Temporary disk**. Each virtual machine contains a single temporary disk, which is used for short-term storage applications such as page files and swap files. The contents of temporary disks are lost during maintenance events, so don't use these disks for critical data. These disks are local to the server and aren't stored in a storage account.
 

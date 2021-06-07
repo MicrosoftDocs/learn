@@ -31,7 +31,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=DeployDockercontainers&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=DeployDockercontainers&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -147,7 +147,7 @@ Create Bash variables to make the setup process more convenient and less error-p
     registryName="tailspinspacegame${resourceSuffix}"
     ```
 
-1. Create two more Bash variables to store the names of your resource group and service plan. 
+1. Create two more Bash variables to store the names of your resource group and App Service plan. 
 
     ```bash
     rgName='tailspin-space-game-rg'
