@@ -4,7 +4,7 @@ So you have an array, now what? Well you can use loops to perform iterations on 
 
 Loops allow for repetitive or **iterative** tasks, and can save much time and code. Each iteration can vary in their variables, values, and conditions. There are different types of loops in JavaScript, and they have small differences, but essentially do the same thing: loop over data.
 
-### For Loop
+### For loop
 
 The `for` loop requires three parts to iterate:
 
@@ -60,7 +60,7 @@ while (i < 10) {
 
 Arrays are often used with loops because most conditions require the length of the array to stop the loop, and the index can also be the counter value.
 
-## Loops and Arrays
+## Loops and arrays
 
 Let's head back to our delicious list of ice cream. A customer has asked us to name all the flavors we are selling before they can decide. Luckily we know about for-loops, so let's use that fact. Remember how we defined a condition on when to end like so:
 
