@@ -12,7 +12,7 @@ When you create your VM, you can start with an approved base image, or build a c
 >[!NOTE]
 >Packer is a third-party, open-source tool for creating machine images.
 
-We recommend using Packer because it simplifies and automates the build process. To build with Packer, you create a JSON file template that defines the build process. Using the template, Packer builds a VM that you can use to create an image for your offer. You'll define your template to have Packer automatically publish your image in a SIG, which you'll use to create your VM offer in Partner Center. For detailed guidance on using Packer to create VM images, reference our documentation for [Windows](/azure/virtual-machines/windows/build-image-with-packer) and [Linux](/azure/virtual-machines/linux/build-image-with-packer). Once you’ve completed that process, you'll be ready to install your software on the VM and configure it to run as intended.
+Using a tool like Packer can help you simplify and automate the build process. To build with Packer, you create a JSON file template that defines the build process. Using the template, Packer builds a VM that you can use to create an image for your offer. You'll be able to define your template to have Packer automatically publish your image in a SIG, which you'll use to create your VM offer in Partner Center. For detailed guidance on using Packer to create VM images, reference our documentation for [Windows](/azure/virtual-machines/windows/build-image-with-packer) and [Linux](/azure/virtual-machines/linux/build-image-with-packer). Once you’ve completed that process, you'll be ready to install your software on the VM and configure it to run as intended.
 
 >[!TIP]
 >For help with building your JSON file template for Packer, reference their [Azure Resource Manager Builder documentation](https://www.packer.io/docs/builders/azure/arm). For specific guidance to help publish your VM image in a SIG, reference this [JSON example](https://www.packer.io/docs/builders/azure/arm#shared_image_gallery_destination) from the Packer documentation.
@@ -28,3 +28,6 @@ You should test your generalized image by deploying it on an Azure VM. To do so,
 ## Maintaining your image
 
  The [commercial marketplace certification policies](/legal/marketplace/certification-policies?context=/azure/marketplace/context/context) dictate that your offer should maintain a high level of security. To ensure your VM offer is compliant, you should periodically update your image's OS and all installed services with the latest security and maintenance patches. Microsoft periodically scans VM images for any significant Common Vulnerabilities and Exposures (CVE). Images that fail these assessments can be removed from Azure Marketplace until the CVE is patched.
+
+>[!TIP]
+>As we menntioned at the beginning of this unit, there are a variety of ways to create your offer's base VM images. Be sure to reference our documentation on [creating a VM from an approved base](/azure/marketplace/azure-vm-create-using-approved-base) and [creating a VM using your own image](/azure/marketplace/azure-vm-create-using-own-image) for more details on the process.
