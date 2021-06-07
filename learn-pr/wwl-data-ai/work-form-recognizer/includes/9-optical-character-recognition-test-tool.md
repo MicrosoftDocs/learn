@@ -9,7 +9,7 @@ FOTT currently supports three types of projects:
 - Use Custom to train a model with labels and get key value pairs 
    ![Form OCR Test Tool home screen.](../media/optical-character-recognition-test-tool.png)
 
-FOTT can be used in the [browser](https://fott.azurewebsites.net/) or deployed in a container. You can find instructions to use the Docker engine to run FOTT [here](/azure/cognitive-services/form-recognizer/quickstarts/label-tool#set-up-the-sample-labeling-tool). The following overview applies to FOTT in the browser.  
+FOTT can be used in the [browser](https://fott.azurewebsites.net/) or deployed in a container. You can find instructions to use the Docker engine to run FOTT [here](/azure/cognitive-services/form-recognizer/label-tool#set-up-the-sample-labeling-tool). The following overview applies to FOTT in the browser.  
 
 ## Use Layout   
 
@@ -45,6 +45,6 @@ To train a custom model and use it to extract data with FOTT:
 4. Configure cross-domain resource sharing (CORS). CORS enables FOTT to store labeled files in your storage container. 
 5. Select the "custom" feature in [FOTT](https://fott-preview.azurewebsites.net/). 
 6. Start a new project using your storage container's SAS URL and form recognizer or cognitive service key.
-7. Use FOTT [to apply labels to text](/azure/cognitive-services/form-recognizer/quickstarts/label-tool#apply-labels-to-text). 
+7. Use FOTT [to apply labels to text](/azure/cognitive-services/form-recognizer/label-tool#apply-labels-to-text). 
 8. Train your model. Once the model is trained, you'll receive a Model ID and Average Accuracy for tags.       
 9. Test your model by analyzing a new form that was **not** used in training. 
