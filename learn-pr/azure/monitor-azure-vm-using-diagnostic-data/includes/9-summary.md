@@ -6,7 +6,7 @@ You viewed the various metrics, built a dashboard, and created an alert to monit
 
 ## Learn more
 
-- [Supported metrics with Azure Monitor - Microsoft.Compute/virtualMachines](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachines)
-- [Use Linux Diagnostic Extension to monitor metrics and logs](https://docs.microsoft.com/azure/virtual-machines/extensions/diagnostics-linux#metrics-supported-by-the-builtin-provider)
-- [Set-AzVMDiagnosticsExtension](https://docs.microsoft.com/powershell/module/az.compute/set-azvmdiagnosticsextension): PowerShell cmdlet to install the Azure Diagnostics extension 
-- [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings)
+- [Supported metrics with Azure Monitor - Microsoft.Compute/virtualMachines](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachines)
+- [Use Linux Diagnostic Extension to monitor metrics and logs](/azure/virtual-machines/extensions/diagnostics-linux#metrics-supported-by-the-builtin-provider)
+- [Set-AzVMDiagnosticsExtension](/powershell/module/az.compute/set-azvmdiagnosticsextension): PowerShell cmdlet to install the Azure Diagnostics extension 
+- [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings)

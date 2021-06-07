@@ -102,10 +102,10 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file. Then select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. Run the following PowerShell command to upload your DSC script into your Azure Automation account:
+1. Run the following PowerShell command to upload your DSC script into your Azure Automation account. Replace the placeholder automation account name with the name you used to create the automation account.
 
     ```powershell
-    Import-AzureRmAutomationDscConfiguration `
+    Import-AzAutomationDscConfiguration `
         -AutomationAccountName [your-automation-account-name] `
         -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
         -SourcePath $HOME/MyDscConfiguration.ps1 `
@@ -183,7 +183,7 @@ If you needed to add modules, in your automation account you would go to **Share
     | Reboot Node if Needed | Select |
     | Action after Reboot | ContinueConfiguration |
 
-1. Wait until the VM is connected, and then close the **myVM** pane.
+1. Wait until the VM is connected, and then close the **myVM** pane. This process might take a few minutes.
 
 1. Close the **Virtual Machines** pane.
 

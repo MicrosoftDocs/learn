@@ -41,3 +41,4 @@ units:
 - learn.language.rust-generic-types-traits.9-summary
 badge:
   uid: learn.language.rust-generic-types-traits.badge
+hidden: true

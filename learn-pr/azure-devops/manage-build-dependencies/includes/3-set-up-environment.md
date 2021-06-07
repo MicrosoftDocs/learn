@@ -18,7 +18,7 @@ The modules in this learning path form a progression, where you follow the Tails
 To set up everything for you in your Azure DevOps organization, run a template.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-build-dependencies&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=manage-build-dependencies&azure-portal=true)
 
 From the Azure DevOps demo generator site, to run the template, perform these steps.
 
