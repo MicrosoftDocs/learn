@@ -12,7 +12,6 @@ Azure SignalR Service has been used in a wide variety of industries, for any app
 
 - **High frequency data updates:** gaming, voting, polling, auction.
 - **Dashboards and monitoring:** company dashboard, financial market data, instant sales update, multi-player game leader board, and IoT monitoring.
-- **Chat:** live chat room, chat bot, on-line customer support, real-time shopping assistant, messenger, in-game chat, and so on.
 - **Real-time location on map:** logistic tracking, delivery status tracking, transportation status updates, GPS apps.
 - **Real time targeted ads:** personalized real-time push ads and offers, interactive ads.
 - **Collaborative apps:** co-authoring, whiteboard apps and team meeting software.

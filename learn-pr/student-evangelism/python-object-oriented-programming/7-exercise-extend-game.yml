@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/7-exercise-extend-game.md)]

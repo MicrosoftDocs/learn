@@ -56,20 +56,3 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
     ![Screenshot showing the complete Add Policy dialog](../media/4-create-policy.png)
 
 MFA is now enabled for your selected application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
-
-## Configure Azure AD MFA for passwords
-
-Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
-
-1. Navigate back to the **Azure Active Directory** dashboard in the Azure portal.
-
-1. Select **Users**.
-1. At the top of the **Users** pane, select **Multi-Factor Authentication**.
-
-    ![Screenshot showing the MFA option](../media/4-user-mfa.png)
-
-1. You can enable or disable MFA on a user basis by selecting a user and then using the quick steps on the right side.
-
-    ![Screenshot showing the MFA options](../media/4-enable-user-mfa.png)
-
-Finally, select **service settings**. This displays the same global MFA options we saw earlier. Let's explore these in a bit more detail.

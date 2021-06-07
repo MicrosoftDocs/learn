@@ -40,6 +40,9 @@ After the installation completes, you can continue with the Rust installation.
 
 After you complete the Rust installation, you should have the `rustc` and `cargo` commands available.
 
+> [!Note]
+> The following commands work on all platforms.
+
 Run the following command in your terminal or command prompt:
 
 ```console

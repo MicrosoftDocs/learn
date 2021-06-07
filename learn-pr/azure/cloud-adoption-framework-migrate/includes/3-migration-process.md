@@ -51,20 +51,20 @@ Technology seldom blocks the migration process. Most of the blockers to migratio
 
 - **Strategy and planning:** The most common blocker to a successful migration stems from missed steps during strategy or planning efforts. Failure to set the right expectations with executives, project managers, or technical staff can create blockers, even when all of the technical disciplines are running as planned. 
 
-  Before you begin any migration effort at scale, ensure that a [cloud adoption strategy](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-strategy/) and [cloud adoption plan](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-plan/) have been created and reviewed by stakeholders.
+  Before you begin any migration effort at scale, ensure that a [cloud adoption strategy](/learn/modules/cloud-adoption-framework-strategy/) and [cloud adoption plan](/learn/modules/cloud-adoption-framework-plan/) have been created and reviewed by stakeholders.
 
 - **Environmental:** Improperly configured environments are the next most common blocker to migration success. Specifically, the migration effort will require a minimum of networking and identity configuration to allow for proper connectivity and access requirements. 
 
-  For most migration efforts, governance and operations considerations should be addressed early in the migration, if not before migration. To ensure proper environmental configuration, see the Cloud Adoption Framework learn module on [preparing your environment](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-ready/).
+  For most migration efforts, governance and operations considerations should be addressed early in the migration, if not before migration. To ensure proper environmental configuration, see the Cloud Adoption Framework learn module on [preparing your environment](/learn/modules/cloud-adoption-framework-ready/).
 
 - **Governance:** Most organizations have requirements for cost, security, consistency, and identity management that go beyond basic environment configuration. Many organizations don't understand those requirements until they try to migrate production traffic to the cloud. 
 
-  We recommend that all migration teams review the Learn module for the [Govern methodology](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-govern/) in the Cloud Adoption Framework before beginning a scale migration effort, to avoid late-bound surprises.
+  We recommend that all migration teams review the Learn module for the [Govern methodology](/learn/modules/cloud-adoption-framework-govern/) in the Cloud Adoption Framework before beginning a scale migration effort, to avoid late-bound surprises.
 
-- **Operations:** Most organizations have set operations requirements for their production workloads in the current datacenter. It's often assumed that those operations will work when they move production traffic to the cloud. Before the migration team begins any scale migration effort, it should review the Learn module about [developing a clear strategy](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-strategy/) to understand basic expectations about operations management in the cloud.
+- **Operations:** Most organizations have set operations requirements for their production workloads in the current datacenter. It's often assumed that those operations will work when they move production traffic to the cloud. Before the migration team begins any scale migration effort, it should review the Learn module about [developing a clear strategy](/learn/modules/cloud-adoption-framework-strategy/) to understand basic expectations about operations management in the cloud.
 
 - **Technical:** Occasionally, workloads might be blocked because of increased needs in remediation, modernization, or changes to the rationalization strategy. When individual workloads are blocked, they can be addressed by technical spikes, which remove problematic workloads from the standard flow.
 
   Technical spikes are usually addressed in a parallel sprint by a separate team. A migration team can address many of the technical issues around remediation and modernization by using the Cloud Adoption Framework migration scenarios to be shared at the end of this module.
 
-When a workload requires comprehensive changes that affect the application architecture, workload teams should review the [Well-Architected Framework](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction/) Learn module for more guidance.
+When a workload requires comprehensive changes that affect the application architecture, workload teams should review the [Well-Architected Framework](/learn/modules/azure-well-architected-introduction/) Learn module for more guidance.

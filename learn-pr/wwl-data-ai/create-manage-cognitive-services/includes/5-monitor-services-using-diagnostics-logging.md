@@ -24,7 +24,7 @@ The exercise will cover how to create a simple alert.  Once the alert is in plac
 1. In the **Alert Details** section, enter **Keys List Alert** for the Alert rule name.
 1. Select **Create alert rule**
 1. Azure will create the new Alert
-1. Refresh the page. Azure will tell you that **All is good! You have no alerts.
+1. Refresh the page. Azure will tell you that **All is good! You have no alerts.**
 1. Open an Azure CLI Cloud Shell by selecting the **Cloud Shell** icon in the top nav bar
 1. Wait until Azure has requested the Cloud Shell and connected to a terminal
 1. Enter the following command,

@@ -2,14 +2,14 @@
 uid: learn.azure.deploy-azure-resources-bicep
 metadata:
   moduleType: standard
-  title: Deploy Azure resources by using Bicep templates
+  title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
   ms.date: 03/12/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-title: Deploy Azure resources by using Bicep templates  
+title: Build your first Bicep template
 summary: Define Azure resources within a Bicep template. Improve the consistency and reliability of your deployments, reduce the manual effort required, and scale your deployments across environments. Your template will be flexible and reusable through the use of parameters, variables, expressions, and modules.
 abstract: |
   After completing this module, you'll be able to: 
@@ -17,10 +17,10 @@ abstract: |
     - Add flexibility to your templates by using parameters, variables, and expressions.
     - Create and deploy a Bicep template that includes modules.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Understanding of what infrastructure as code (IaC) is, and its benefits.
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Understanding of what infrastructure as code is, and what its benefits are.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
