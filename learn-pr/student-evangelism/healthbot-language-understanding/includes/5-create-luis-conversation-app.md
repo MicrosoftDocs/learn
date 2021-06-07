@@ -12,7 +12,7 @@ For each of the authoring and prediction tasks, you need a resource in your Azur
 - **Language Understanding**: A dedicated resource for Language Understanding, which can be either an *authoring* or a *prediction* resource.
 - **Azure Cognitive Services**: A general Cognitive Services resource that includes Language Understanding along with many other Cognitive Services. You can only use this type of resource for prediction.
 
-The separation of authoring and prediction resources is useful when you want to track resource utilization for language model training separately from client applications by using the model to generate predictions.
+The separation of resources is useful to track resource utilization for language model training separately from client applications that use the model to generate predictions.
 
 If you choose to create a Language Understanding resource, you'll be prompted to choose authoring, prediction, or both. If you choose both, *two* resources are created, one for authoring and one for prediction.
 

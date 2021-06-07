@@ -15,7 +15,7 @@ content: |
 quiz:
   questions:
     # Question 1
-    - content: "Sarah has been having severe pain in her lower back recently and has also been experiencing frequent headaches. She decides to consult an app by using Azure Health Bot to find out the root cause. Which of the following models would be best suited to handle this situation?"
+    - content: "Sarah has been having severe pain in her lower back recently and has also been experiencing frequent headaches. She decides to consult an app which uses the Azure Health Bot to find out the root cause. Which of the following models would be best suited to handle this situation?"
       choices:
         - content: "RegEx"
           isCorrect: false
@@ -39,6 +39,3 @@ quiz:
         - content: "utterances, intents"
           isCorrect: false
           explanation: "Incorrect. Sample utterances and intents are required when you create your LUIS app."
-        
-        
-  

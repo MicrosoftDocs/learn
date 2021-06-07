@@ -7,7 +7,7 @@ It's important to understand what utterances, intents, and entities are and how 
 
 ## Utterances
 
-Utterances refer to the input from the user that your app needs to interpret. Utterances are used to train LUIS to extract intents and entities from them. It's important to capture different example utterances. Use utterances that you think users will enter. We include utterances that means the same thing but are constructed with different utterance lengths, word placements, and grammar.
+Utterances refer to the input from the user that your app needs to interpret. Utterances are used to train LUIS to extract intents and entities from them. It's important to capture different example utterances. Use utterances that you think users will enter. Make sure to include utterances that mean the same thing but are constructed with different utterance lengths, word placements, and grammar.
 
 Some example utterances for your Azure Health Bot instance might be:
 
@@ -45,7 +45,7 @@ Entities are data you want to pull from utterances, such as names, dates, produc
 |Utterance|Intent predicted|Entities extracted|Explanation|
 |---------|---------|---------|---------|
 |Help.     |  help   |-        |Nothing to extract.|
-|Book appointment.   | bookAppointment | Appointment | Nothing to extract. The model doesn't have a required feature to extract something in this context, and there's no recipient stated.|  
+|Book appointment.   | bookAppointment | appointment | Nothing to extract. The model doesn't have a required feature to extract something in this context, and there's no recipient stated.|  
 |Book an appointment with Dr. A.|  bookAppointment| Dr. A, appointment|  The model extracts Dr. A by adding a required feature of prebuilt entity personName. A machine learning entity has been used to extract appointment.|
 |Book an appointment with Dr. A at 11 AM.|  bookAppointment | Dr. A, appointment, 11 AM| The two important pieces of data, Dr. A and the appointment, have been extracted by machine learning entities.|
 
@@ -53,8 +53,8 @@ Entities are data you want to pull from utterances, such as names, dates, produc
 
 |Intent  |Entity  |Example utterance  |
 |---------|---------|---------|
-|BookAppointment     | {"type": "appointment," "time": "11:00 AM," "doctor": "A," "day": "tomorrow"} |   Can you book an appointment with Dr. A at 11 AM tomorrow?      |
-|BookAppointment     | {"type": "appointment," "time": "12:00 PM," "doctor": "B," "day": "weekend"}| Help me meet with Dr. B at 12 PM this weekend.        |
+|BookAppointment     | {"type": "appointment", "time": "11:00 AM", "doctor": "A", "day": "tomorrow"} |   Can you book an appointment with Dr. A at 11 AM tomorrow?      |
+|BookAppointment     | {"type": "appointment", "time": "12:00 PM", "doctor": "B", "day": "weekend"}| Help me meet with Dr. B at 12 PM this weekend.        |
 
 ## Use LUIS in a chat bot
 
