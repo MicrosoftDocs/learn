@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.student-evangelism.web-development-101-loops-arrays
+metadata:
+  title: JavaScript arrays and loops
+  description: Learn how it is possible to manipulate and store data within JavaScript.
+  ms.date: 05/25/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: JavaScript arrays and loops
+summary: Learn about variables and the data types that populate them.
+abstract: |
+  In this module, you will begin to discover: 
+  - What are arrays and what they're used for
+  - How you can use loops to work with arrays
+  - Apply array operations
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - student
+products:
+  - vs-code
+units:
+  - learn.student-evangelism.web-development-101-loops-arrays.introduction
+  - learn.student-evangelism.web-development-101-loops-arrays.arrays-loops
+  - learn.student-evangelism.web-development-101-loops-arrays.loops
+  - learn.student-evangelism.web-development-101-loops-arrays.operations
+  - learn.student-evangelism.web-development-101-loops-arrays.exercise-operations
+  - learn.student-evangelism.web-development-101-loops-arrays.knowledge-check
+  - learn.student-evangelism.web-development-101-loops-arrays.summary
+badge:
+  uid: learn.student-evangelism.web-development-101-loops-arrays.badge
