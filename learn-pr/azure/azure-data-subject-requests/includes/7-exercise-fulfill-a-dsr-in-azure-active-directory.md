@@ -107,4 +107,4 @@ You'll now respond to  the DSR by deleting the data subject's user account:
 1. In the **Deleted users** blade, select the data subject's user account check box.
 1. Select **Delete permanently**, and then select **Yes** to confirm.
 
-Congratulations! in this exercise have successfully reviewed and responded to a DSR for Azure-based customer data. This meets your requirement to validate the DSR process in Azure.
+Congratulations! In this exercise have successfully reviewed and responded to a DSR for Azure-based customer data. This meets your requirement to validate the DSR process in Azure.
