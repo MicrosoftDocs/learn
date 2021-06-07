@@ -77,7 +77,7 @@ With the anticipation of a sufficiently large and fault-tolerant quantum compute
 - Estimate the security for cryptosystems of a given bit length in a post-quantum environment.
 - Estimate how long it will take to migrate current cryptosystems to new ones.
 
-In collaboration with researchers in [QuArC](https://www.microsoft.com/research/blog/cryptography-quantum-computing-intersect/?azure-portal=true), Microsoft has been developing concrete quantum estimates for breaking current encryption systems. It's also working on ways to make these systems robust against quantum attacks.
+In collaboration with [Microsoft Quantum researchers](https://www.microsoft.com/research/blog/cryptography-quantum-computing-intersect/?azure-portal=true), Microsoft has been developing concrete quantum estimates for breaking current encryption systems. It's also working on ways to make these systems robust against quantum attacks.
 
 Again, let's talk about graphs. The "path-finding problem" is a hard problem for explicit choices of expander graphs. The development of post-quantum cryptosystems (that is, classical protocols that are resistant to quantum attacks) [has been proposed](http://eprint.iacr.org/2006/021.pdf?azure-portal=true).
 

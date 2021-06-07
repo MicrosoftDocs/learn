@@ -4,5 +4,5 @@ We trust that you've found the *Analyze costs and create budgets with Azure Cost
 
 ## Learn more
 
-- [Cost analysis group and filter options](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis#understanding-grouping-and-filtering-options)
-- [Trigger an action group with budgets](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets#trigger-an-action-group)
+- [Cost analysis group and filter options](/azure/cost-management/quick-acm-cost-analysis#understanding-grouping-and-filtering-options)
+- [Trigger an action group with budgets](/azure/cost-management/tutorial-acm-create-budgets#trigger-an-action-group)

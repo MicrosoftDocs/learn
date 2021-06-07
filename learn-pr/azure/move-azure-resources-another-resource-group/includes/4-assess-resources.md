@@ -13,7 +13,7 @@ First you need to identify the resource type of the resources you want to move. 
 
 ## Check the limitations on resource types
 
-After identifying the resource types of your resources, you must investigate whether they can be moved, and the restrictions that might be in place. Check your resource types against the [move support for resources](https://docs.microsoft.com/azure/azure-resource-manager/move-support-resources) list. The list shows whether each resource type can be moved between resource groups or between subscriptions. For example, these resources can be moved:
+After identifying the resource types of your resources, you must investigate whether they can be moved, and the restrictions that might be in place. Check your resource types against the [move support for resources](/azure/azure-resource-manager/move-support-resources) list. The list shows whether each resource type can be moved between resource groups or between subscriptions. For example, these resources can be moved:
 
 - Azure Storage accounts
 - Azure virtual machines

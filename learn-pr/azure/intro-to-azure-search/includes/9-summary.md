@@ -15,17 +15,17 @@ Azure Cognitive Search easily adds sophisticated cloud search capabilities to yo
 
 Follow these links for more examples of search queries:
 
-- [Simple query examples](https://docs.microsoft.com/azure/search/search-query-simple-examples#how-to-invoke-simple-query-parsing)
-- [Lucene query examples](https://docs.microsoft.com/azure/search/search-query-lucene-examples#how-to-invoke-full-lucene-parsing)
-- [OData filter examples](https://docs.microsoft.com/azure/search/search-query-odata-filter#examples)
+- [Simple query examples](/azure/search/search-query-simple-examples#how-to-invoke-simple-query-parsing)
+- [Lucene query examples](/azure/search/search-query-lucene-examples#how-to-invoke-full-lucene-parsing)
+- [OData filter examples](/azure/search/search-query-odata-filter#examples)
 
 Follow these links to find out how to incorporate search into your apps:
 
-- [.NET](https://docs.microsoft.com/samples/browse/?products=azure-search&languages=csharp)
-- [Java](https://docs.microsoft.com/samples/browse/?languages=java&products=azure-search)
-- [Node.js](https://docs.microsoft.com/samples/browse/?products=azure-search&languages=nodejs)
+- [.NET](/samples/browse/?languages=csharp&products=azure-search)
+- [Java](/samples/browse/?languages=java&products=azure-search)
+- [Node.js](/samples/browse/?languages=nodejs&products=azure-search)
 
 Follow these links for guidance on performance:
 
-- [High availability](https://docs.microsoft.com/azure/search/search-capacity-planning)
-- [Search performance optimization and scaling](https://docs.microsoft.com/azure/search/search-performance-optimization)
+- [High availability](/azure/search/search-capacity-planning)
+- [Search performance optimization and scaling](/azure/search/search-performance-optimization)
