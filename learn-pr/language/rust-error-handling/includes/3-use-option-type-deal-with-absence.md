@@ -120,8 +120,8 @@ Rust offers a convenient way to test whether a value conforms with a single patt
 In the following example, the input to `match` is an `Option<u8>` value. The `match` expression should only run code if that input value is *7*.
 
 ```rust
-let some_number: Option<u8> = Some(7);
-match some_number {
+let a_number: Option<u8> = Some(7);
+match a_number {
     Some(7) => println!("That's my lucky number!"),
     _ => {},
 }
@@ -132,8 +132,8 @@ In this case, we'd like the program to ignore the `None` variant and all `Some<u
 To condense this code, you can use an *if let* expression:
 
 ```rust
-let some_number: Option<u8> = Some(7);
-if let Some(7) = some_number {
+let a_number: Option<u8> = Some(7);
+if let Some(7) = a_number {
     println!("That's my lucky number!");
 }
 ```
