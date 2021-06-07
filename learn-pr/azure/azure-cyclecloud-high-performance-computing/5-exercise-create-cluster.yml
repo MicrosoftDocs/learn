@@ -3,7 +3,7 @@ uid: learn.azure-cyclecloud-high-performance-computing.exercise-create-cluster
 title: Exercise - Create an HPC cluster from built-in templates
 metadata:
   unitType: exercise
-  title: exercise-create-cluster
+  title: Exercise - Create an HPC cluster from built-in templates
   description: This unit describes the process of creating an HPC cluster from built-in templates.
   ms.date: 5/6/2021
   author: anhoward
