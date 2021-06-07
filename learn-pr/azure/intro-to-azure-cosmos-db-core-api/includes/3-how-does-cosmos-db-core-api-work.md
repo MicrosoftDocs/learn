@@ -26,7 +26,7 @@ The SQL API for Azure Cosmos DB stores individual documents in JSON format as *i
 
 ## Partitioning & Partition Keys
 
-> TODO: Embed RedTiger video here
+<!-- TODO: Embed RedTiger video here -->
 
 Every Azure Cosmos DB SQL API container is required to specify a **partition key path**. Behind the scenes, Azure Cosmos DB SQL API uses this path to logically partition data using **partition key values**. For example, consider the following JSON document:
 
