@@ -39,6 +39,3 @@ quiz:
         - content: "utterances, intents"
           isCorrect: false
           explanation: "Incorrect. Sample utterances and intents are required when you create your LUIS app."
-        
-        
-  
