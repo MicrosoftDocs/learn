@@ -9,9 +9,9 @@ You're evaluating the functionality of Azure shared disks to determine whether i
 
 In this module, you'll will learn more about:
 
-- Azure shared disks.
-- Using Azure shared disks with virtual machines (VMs).
-- Benefits and limitations of Azure shared disks.
+- Azure shared disks
+- Using Azure shared disks with virtual machines (VMs)
+- Benefits and limitations of Azure shared disks
 
 ## Prerequisites
 
