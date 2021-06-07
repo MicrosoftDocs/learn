@@ -3,7 +3,6 @@ You’ve seen how admins can use the resource governance capabilities in Azure t
 Now that you’ve completed this module, you should be able to:
 
 - Describe some of the resource governance capabilities in Azure
-- Describe the cloud adoption framework
 
 ## Learn more
 

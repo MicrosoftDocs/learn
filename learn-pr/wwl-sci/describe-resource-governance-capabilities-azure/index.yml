@@ -13,7 +13,6 @@ summary: Learn about Azure resource governance capabilities in Azure, including 
 abstract: |
   After completing this module, you will be able to:
   - Describe some of the resource governance capabilities in Azure
-  - Describe the cloud adoption framework
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.

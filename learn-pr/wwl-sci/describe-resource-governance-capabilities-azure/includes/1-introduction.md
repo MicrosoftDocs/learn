@@ -5,4 +5,4 @@ In this module, you’ll learn about the resource governance capabilities availa
 After completing this module, you should be able to:
 
 - Describe some of the resource governance capabilities in Azure.
-- Describe the cloud adoption framework.
+
