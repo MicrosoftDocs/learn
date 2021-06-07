@@ -9,6 +9,6 @@ metadata:
   ms.author: nedelgad
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/3-create-use-azure-shared-disks.md)]
