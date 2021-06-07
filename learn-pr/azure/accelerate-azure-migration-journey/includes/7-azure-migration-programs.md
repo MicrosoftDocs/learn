@@ -59,7 +59,7 @@ FastTrack for Azure can help with many solutions, including:
 - SAP migration
 - App modernization
 - Data analytics
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 
 For a complete list of supported solutions, see [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/).
 

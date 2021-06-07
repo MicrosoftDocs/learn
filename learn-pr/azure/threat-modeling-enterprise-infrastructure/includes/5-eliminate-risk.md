@@ -32,7 +32,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |Issue|Solution|
 |-----|--------|
 |Unencrypted backup|Use [Azure backup](https://azure.microsoft.com/services/backup/), which has a robust set of features, including encryption. [Azure SQL transparent data encryption](https://docs.microsoft.com/azure/azure-sql/database/transparent-data-encryption-byok-overview) can be used too.|
-|No business continuity plan|Use [Azure paired regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) and [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/disaster-recovery) on workstations.|
+|No business continuity plan|Use [Azure paired regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) and [Azure Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/disaster-recovery) on workstations.|
 |No disaster recovery plan|Use [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/).|
 |No tests or audits|Follow [Azure backup](https://docs.microsoft.com/azure/backup/guidance-best-practices) guidance.|
 
