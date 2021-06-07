@@ -127,7 +127,7 @@ match a_number {
 }
 ```
 
-In this case, we'd like the program to ignore the `None` variant and all `Some<u8>` values that don't match `Some(7)`. Wildcard patterns are useful for this type of situation. You can add the `_` (underscore) wildcard pattern after all other patterns to match *anything else*, and it's used to satisfy the compiler demands for exhausting match arms.
+In this case, we'd like to ignore the `None` variant and all `Some<u8>` values that don't match `Some(7)`. Wildcard patterns are useful for this type of situation. You can add the `_` (underscore) wildcard pattern after all other patterns to match *anything else*, and it's used to satisfy the compiler demands for exhausting match arms.
 
 To condense this code, you can use an *if let* expression:
 
