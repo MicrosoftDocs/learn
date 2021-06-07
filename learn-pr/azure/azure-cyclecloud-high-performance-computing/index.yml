@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of high-performance computing (HPC) concepts
 iconUrl: /learn/achievements/azure-cyclecloud-high-performance-computing.svg
 levels:
-  - intermediate
+  - beginner
 roles:
   - solution-architect
   - developer
