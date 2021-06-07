@@ -4,10 +4,10 @@ As Contoso’s administrator, you must evaluate the DSR process in the Microsoft
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Pricing](https://azure.microsoft.com/en-us/pricing/calculator/).
 
 In this exercise you will complete the following tasks:
-- Task 1: Set up a user
+- Task 1: Create a user
 - Task 2: Review the DSR to determine the appropriate process
-- Task 3: Use the Azure Active Directory admin center to connect to Azure AD
-- Task 4: Respond to the DSR
+- Task 3: Locate and verify the personal information of the DSR in Azure AD
+- Task 4: Fulfil the DSR by deleting the relevant data
 - Task 5: Clean up resources
 
 ## Task 1: Create a user
