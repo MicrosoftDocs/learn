@@ -7,7 +7,7 @@ You're evaluating the functionality of Azure shared disks to determine whether i
 
 ## Learning objectives
 
-In this module, you'll will learn more about:
+After completing this module, you'll will learn more about:
 
 - Azure shared disks
 - Using Azure shared disks with virtual machines (VMs)
