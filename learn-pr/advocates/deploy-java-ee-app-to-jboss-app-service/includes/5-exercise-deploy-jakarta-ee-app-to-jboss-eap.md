@@ -2,7 +2,7 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
-Please confirmed `pom.xml` file and add the `<plugins>` entry in the XML file with following options.
+Please confirmed `pom.xml` file and add the `<plugins>` entries in the `<build>` with following configurable options.
 
 |  Configurable element  |  Value  |
 | ---- | ---- |
@@ -12,66 +12,6 @@ Please confirmed `pom.xml` file and add the `<plugins>` entry in the XML file wi
 |  `region`  |  `Your appropriate install location`  |
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
-  <modelVersion>4.0.0</modelVersion>  
-  <groupId>com.microsoft.azure.samples</groupId>  
-  <artifactId>jakartaee-app-on-jboss</artifactId>  
-  <version>1.0-SNAPSHOT</version>  
-  <packaging>war</packaging>  
-  <properties> 
-    <maven.compiler.source>8</maven.compiler.source>  
-    <maven.compiler.target>8</maven.compiler.target>  
-    <failOnMissingWebXml>false</failOnMissingWebXml>  
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
-    <jakarta.jakartaee-api.version>8.0.0</jakarta.jakartaee-api.version>  
-    <junit-jupiter.version>5.5.0</junit-jupiter.version>  
-    <mockito-core.version>3.1.0</mockito-core.version>  
-    <mysql-jdbc-driver>8.0.22</mysql-jdbc-driver>  
-    <openapi-ui>1.1.4</openapi-ui> 
-  </properties>  
-  <dependencies> 
-    <dependency> 
-      <groupId>jakarta.platform</groupId>  
-      <artifactId>jakarta.jakartaee-api</artifactId>  
-      <version>${jakarta.jakartaee-api.version}</version>  
-      <scope>provided</scope> 
-    </dependency>  
-    <dependency> 
-      <groupId>org.junit.jupiter</groupId>  
-      <artifactId>junit-jupiter</artifactId>  
-      <version>${junit-jupiter.version}</version>  
-      <scope>test</scope> 
-    </dependency>  
-    <dependency> 
-      <groupId>org.mockito</groupId>  
-      <artifactId>mockito-core</artifactId>  
-      <version>${mockito-core.version}</version>  
-      <scope>test</scope> 
-    </dependency>  
-    <dependency> 
-      <groupId>mysql</groupId>  
-      <artifactId>mysql-connector-java</artifactId>  
-      <version>${mysql-jdbc-driver}</version> 
-    </dependency>  
-    <dependency> 
-      <groupId>io.swagger.core.v3</groupId>  
-      <artifactId>swagger-jaxrs2</artifactId>  
-      <version>2.1.5</version> 
-    </dependency>  
-    <dependency> 
-      <groupId>io.swagger.core.v3</groupId>  
-      <artifactId>swagger-jaxrs2-servlet-initializer</artifactId>  
-      <version>2.1.5</version> 
-    </dependency>  
-    <dependency> 
-      <groupId>org.microprofile-ext.openapi-ext</groupId>  
-      <artifactId>openapi-ui</artifactId>  
-      <version>1.1.4</version> 
-    </dependency> 
-  </dependencies>  
   <build> 
     <finalName>ROOT</finalName>  
     <plugins> 
