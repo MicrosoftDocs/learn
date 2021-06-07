@@ -87,6 +87,6 @@ You can then associate the subscription with a management group, which requires 
 
 The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
+:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-41" :::
 		
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.
