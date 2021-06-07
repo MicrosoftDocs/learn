@@ -44,7 +44,7 @@ modules:
 - learn.azure.build-reusable-bicep-templates-parameters
 - learn.azure.bicep-conditions-loops
 - learn.azure.child-extension-bicep-templates
-#- learn.azure.deploy-resources-different-scopes (we will uncomment this when this module is published in a few days' time)
+- learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts
 trophy:
   uid: learn.bicep-deploy-manage.trophy
