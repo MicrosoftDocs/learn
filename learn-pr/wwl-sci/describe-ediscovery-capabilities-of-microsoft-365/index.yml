@@ -9,11 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the eDiscovery and audit capabilities of Microsoft 365
-summary: Learn how eDiscovery capabilities of Microsoft 365 helps organizations find relevant data quickly.
+summary: Learn how the eDiscovery and audit capabilities of Microsoft 365 helps organizations find relevant data quickly.
 abstract: |
   After completing this module, you will be able to:
   - Describe the purpose of eDiscovery.
-  - Describe how eDiscovery workflow process.
+  - Describe the capabilities of the content search tool.
+  - Describe the core and advanced eDiscovery workflows.
+  - Describe the core and advanced auditing capabilities of Microsoft 365.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
