@@ -124,14 +124,14 @@ After the command finishes, you can see that following entry is added in your Ma
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
-Now, check the resource group name and application name from the above XML file and note these names or assign them to environment variables.
+Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
 ```xml
           <resourceGroup>jakartaee-app-on-jboss-1606464084546-rg</resourceGroup>
           <appName>jakartaee-app-on-jboss-1606464084546</appName>
 ```
 
-If you are using the bash, you can configure the environment variables like follows.
+If you are using the bash, configure the environment variables with the following command.
 
 ```bash
 export WEBAPP_NAME=jakartaee-app-on-jboss-1606464084546
@@ -140,7 +140,7 @@ export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1606464084546-rg
 
 ## Compile and build the Java EE app
 
-After you configure the Azure App Service deployment settings, compile and package the source code:
+After you configured the Azure App Service deployment settings, compile and package the source code.
 
 ```bash
 ./mvnw clean package
