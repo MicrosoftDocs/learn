@@ -4,7 +4,8 @@ To practice what you've learned, visit some of your favorite websites and consid
 
 Moving forward with your new array and loop knowledge, you'll start noticing these data types and storage methods on the websites you use every day!
 
-[!TIP] Arrays in JavaScript have many methods attached to them, useful for data manipulation. [Read up on these methods](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/?azure-portal=true) and try some of them out (like push, pop, slice, and splice) on an array of your creation.
+>[!TIP]
+>Arrays in JavaScript have many methods attached to them, useful for data manipulation. [Read up on these methods](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/?azure-portal=true) and try some of them out (like push, pop, slice, and splice) on an array of your creation.
 
 ## Credits
 
