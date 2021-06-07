@@ -1,4 +1,4 @@
-In this module, you have learned how Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to ensure
+In this module, you have learned how Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to also support the monitoring of your pipelines.
 
 In this module, you have learned how to:
 

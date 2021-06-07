@@ -10,7 +10,7 @@ Most of the examples we've seen are in the *data becomes available* category. Fo
 
 Suppose you wanted to launch your logic app every Saturday at midnight? This trigger would be great for administrative tasks, like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
 
-There's one more case to consider: suppose you wanted total control? Imagine you need to launch your logic app using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
+There's one more case to consider: Suppose you wanted total control? Imagine you need to launch your logic app using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
 
 This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
@@ -33,7 +33,7 @@ In the worst case, the potential delay for detecting new data is equal to the po
 A *push trigger* subscribes to an event offered by the external service to get notified immediately when data is available. For example, the trigger that detects when a message is added to an Azure Service Bus queue is a push trigger.
 
 > [!NOTE]
-> Push triggers are implemented using webhooks. The Logic Apps infrastructure generates a callback URL for you and registers it with the external service. This registration happens when you first create your app and again when you make changes to your app's configuration. Similarly, Logic Apps de-registers the callback for you as needed; for example, if you disable or delete your app.
+> Push triggers are implemented using webhooks. The Logic Apps infrastructure generates a callback URL for you and registers it with the external service. This registration happens when you first create your app and again when you make changes to your app's configuration. Similarly, Logic Apps de-registers the callback for you as needed (for example, if you disable or delete your app).
 
 The nice thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
 
@@ -67,7 +67,7 @@ When you first navigate to your newly deployed logic app, you'll find a getting-
 
 After you select a starting template, you'll automatically navigate to the Logic Apps Designer.
 
-## How to add a trigger using the designer?
+## How to add a trigger using the designer
 
 The Logic Apps Designer lets you pick from a gallery of connectors that contain the triggers and actions you can use in your app. The typical strategy is to use the search feature to locate the connector you are interested in. Then you look through the triggers supplied by the connector to find the one you want. In our case, we will use Twitter's **When-a-new-tweet-is-posted** trigger.
 

@@ -147,7 +147,7 @@ Create Bash variables to make the setup process more convenient and less error-p
     registryName="tailspinspacegame${resourceSuffix}"
     ```
 
-1. Create two more Bash variables to store the names of your resource group and service plan. 
+1. Create two more Bash variables to store the names of your resource group and App Service plan. 
 
     ```bash
     rgName='tailspin-space-game-rg'
