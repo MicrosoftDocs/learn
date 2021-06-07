@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.languages.python-applications
+uid: learn.languages.python-apps
 metadata:
   title: Build real world applications with Python
   description: Interested in learning how to build apps in Python that scales and that you want to maintain? Then this is the path for you. It will take you through basics of the language but also teach you various patterns you can use.
@@ -20,7 +20,7 @@ summary: |
   
   Once you complete this learning path, you will have a great foundation to build large applications.
 prerequisites: None
-iconUrl: /learn/achievements/python-applications.svg
+iconUrl: /learn/achievements/python-apps.svg
 levels:
 - beginner
 roles:
@@ -32,4 +32,4 @@ modules:
 - learn.student-evangelism.intro-to-python
 - learn.student-evangelism.python-object-oriented-programming
 trophy:
-  uid: learn.languages.python-applications.trophy
+  uid: learn.languages.python-apps.trophy
