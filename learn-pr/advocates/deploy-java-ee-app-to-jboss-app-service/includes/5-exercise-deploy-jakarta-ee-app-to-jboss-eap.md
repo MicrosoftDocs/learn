@@ -99,6 +99,13 @@ Please confirmed `pom.xml` file and add the `<plugins>` entry in the XML file wi
                   <include>*.war</include>
                 </includes>
               </resource>
+              <resource>
+                <type>startup</type>
+                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
+                <includes>
+                  <include>createMySQLDataSource.sh</include>
+                </includes>
+              </resource>
             </resources>
           </deployment>
         </configuration>
@@ -114,8 +121,8 @@ Please confirmed `pom.xml` file and add the `<plugins>` entry in the XML file wi
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
 ```xml
-          <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1623043825268</appName>
+<resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
+<appName>jakartaee-app-on-jboss-1623043825268</appName>
 ```
 
 If you are using the bash, configure the environment variables with the following command.
@@ -174,6 +181,7 @@ Username: YOUR_EMAIL_ADDRESS@************.com
 [INFO] Successfully created Web App jakartaee-app-on-jboss-1623043825268.
 [INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1623043825268...
 [INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
+[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
 [INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1623043825268.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
@@ -253,7 +261,7 @@ Now configure your App Service instance to invoke the startup script:
 # [Linux/Mac OS X](#tab/linux)
 
 ```azurecli
-az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh' \
+az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
@@ -262,7 +270,7 @@ az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/cre
 
 ```azurecli
 export MSYS_NO_PATHCONV=1
-az webapp config set --startup-file '/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh' \
+az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
