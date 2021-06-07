@@ -8,8 +8,8 @@ Implementing the equivalent functionality on your own, without the abstraction l
 
 * [Azure CycleCloud Documentation](/azure/cyclecloud/) 
 * [Azure CycleCloud](https://azure.microsoft.com/en-us/features/azure-cyclecloud/)
-* [What is Azure CycleCloud?](https://docs.microsoft.com/azure/cyclecloud/overview)
-* [Quickstart - Install CycleCloud using the Marketplace image](https://docs.microsoft.com/azure/cyclecloud/qs-install-marketplace)
-* [Azure CycleCloud Tutorial 1: Create and Run a Simple HPC Cluster](https://docs.microsoft.com/azure/cyclecloud/tutorials/create-cluster)
-* [CycleCloud: Core Concepts](https://docs.microsoft.com/azure/cyclecloud/concepts/core)
-* [CycleCloud Scheduling and Autoscaling Concepts](https://docs.microsoft.com/azure/cyclecloud/concepts/scheduling)
+* [What is Azure CycleCloud?](/azure/cyclecloud/overview)
+* [Quickstart - Install CycleCloud using the Marketplace image](/azure/cyclecloud/qs-install-marketplace)
+* [Azure CycleCloud Tutorial 1: Create and Run a Simple HPC Cluster](/azure/cyclecloud/tutorials/create-cluster)
+* [CycleCloud: Core Concepts](/azure/cyclecloud/concepts/core)
+* [CycleCloud Scheduling and Autoscaling Concepts](/azure/cyclecloud/concepts/scheduling)
