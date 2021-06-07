@@ -67,7 +67,7 @@ Watch the build run in the pipeline by using your build agent.
 
     From the **Initialize job** task, you see that the build uses your build agent.
 
-    ![Azure Pipelines showing the private agent running the build](../media/5-build-results-private-pool.png)
+    :::image type="content" source="../media/5-build-results-private-pool.png" alt-text="A screenshot of Azure Pipelines running the build. The Initialize job task shows that it is running the build on the private agent named MyLinxuAgent.":::
 
 ## Optional: Remove your build pool
 
@@ -75,7 +75,7 @@ For future reference, you can keep the build pool configuration in your Azure De
 
 In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines will check for an available agent the next time a build is queued by using the MyAgentPool pool.
 
-![Azure DevOps showing the private agent as offline](../media/5-agent-pools-offline-agent.png)
+:::image type="content" source="../media/5-agent-pools-offline-agent.png" alt-text="A screenshot of the agent pool in Azure DevOps showing that the build agent is offline.":::
 
 As an optional step, you can remove the build pool configuration from Azure DevOps. Here's how:
 
@@ -83,7 +83,7 @@ As an optional step, you can remove the build pool configuration from Azure DevO
 1. Select **Project settings**.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
+    :::image type="content" source="../media/4-project-settings-agent-pools.png" alt-text="A screenshot of the project settings in Azure DevOps showing the location of the Agent pools menu item.":::
 1. Under **MyAgentPool**, select the trash can icon, and then select **Delete**.
 
-    ![Azure DevOps showing where to delete the private agent](../media/5-agent-pools-delete-agent.png)
+    :::image type="content" source="../media/5-agent-pools-delete-agent.png" alt-text="A screenshot of Azure DevOps showing the location of where to remove the agent from the agent pool.":::

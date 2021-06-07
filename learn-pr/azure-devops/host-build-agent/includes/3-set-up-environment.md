@@ -31,7 +31,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -58,7 +58,7 @@ Here you move the seventh item, **Investigate hosted vs private build servers**,
 
 Recall that **Investigate hosted vs private build servers** relates to setting up a private build agent to see whether it brings the team any benefits beyond using the Microsoft-hosted agents.
 
-![Work item details](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure DevOps work item details for investigating hosted versus private build servers.":::
 
 To set up the work item:
 
@@ -71,7 +71,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi7-doing.png" alt-text="A screenshot of Azure Boards showing the work item in the Doing column.":::
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 

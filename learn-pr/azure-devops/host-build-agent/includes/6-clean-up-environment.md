@@ -16,7 +16,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 1. Drag the **Investigate hosted vs private build servers** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/6-azure-boards-wi7-done.png)
+    :::image type="content" source="../media/6-azure-boards-wi7-done.png" alt-text="A screenshot of Azure Boards showing the work item in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

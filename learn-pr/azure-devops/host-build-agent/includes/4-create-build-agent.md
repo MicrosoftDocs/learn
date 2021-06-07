@@ -55,7 +55,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
 1. Select **Project settings**.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
+    :::image type="content" source="../media/4-project-settings-agent-pools.png" alt-text="A screenshot of the project settings in Azure DevOps showing the location of the Agent pools menu item.":::
 1. Select **Add pool**.
 1. In the **Add pool** window:
 
@@ -78,7 +78,7 @@ To do that, you create a personal access token. A personal access token, or PAT,
 
 1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
 
-    ![Locating SecurityPersonal Access Token in the menu](../media/4-personal-access-token.png)
+    :::image type="content" source="../media/4-personal-access-token.png" alt-text="A screenshot of Azure DevOps showing the location of the Personal access tokens menu item.}":::
 1. Select **New Token**.
 1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
@@ -301,14 +301,12 @@ You've successfully installed the build tools and the agent software on your VM.
 1. In Azure DevOps, go to the **Space Game - web - Agent** project.
 1. Select **Project settings**.
 1. Under **Pipelines**, select **Agent pools**.
-
-    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **MyAgentPool**.
 1. Select the **Agents** tab.
 
     You can see that your agent is online and ready to accept build jobs.
 
-    ![Azure DevOps showing the private agent's status](../media/4-project-settings-agent-details.png)
+    :::image type="content" source="../media/4-project-settings-agent-details.png" alt-text="A screenshot of Azure DevOps showing the status of the private agent. The agent shows as online, idle, and enabled.":::
 
     > [!TIP]
     > If your build agent shows as **Offline**, try waiting a few moments and then refreshing the page.
@@ -318,6 +316,6 @@ You've successfully installed the build tools and the agent software on your VM.
 
     During setup, the configuration process scanned your build agent for tool capabilities. You see that `npm` is listed as one of them. Recall that your original build configuration specified that `npm` must be installed on the agent.
 
-    ![Locating npm in the list of capabilities](../media/4-project-settings-agent-capabilities.png)
+    :::image type="content" source="../media/4-project-settings-agent-capabilities.png" alt-text="A screenshot of Azure DevOps showing a few of the agent's capabilities. The npm capability is highlighted.":::
 
     When you specify which agent pool to use, you can include any of these entries in your `demands` section. Including them ensures that Azure Pipelines chooses a build agent that has the software you need to build your application. It also enables you to create agent pools with various software configurations. Azure Pipelines will select the correct configuration based on your requirements.
