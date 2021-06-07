@@ -15,7 +15,7 @@ The modules in this learning path form a progression, where you follow the Tails
 To set up everything in your Azure DevOps organization, run a template.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=create-build-pipeline&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, to run the template, perform these steps.
 

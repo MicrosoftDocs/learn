@@ -31,7 +31,7 @@ The modules in this learning path form a progression as you follow the Tailspin 
 Run a template that sets up everything in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=run-functional-tests&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=run-functional-tests&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 

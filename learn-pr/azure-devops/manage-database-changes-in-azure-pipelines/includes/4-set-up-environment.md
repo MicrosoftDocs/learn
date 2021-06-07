@@ -29,7 +29,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=manage-database-changes&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-database-changes&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
