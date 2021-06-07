@@ -2,95 +2,78 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
-Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service:
+Please confirmed `pom.xml` file and add the `<plugins>` entry in the XML file with following options.
 
-```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.15.0:config
-```
-
-> [!IMPORTANT]
-> If you changed the region of your MySQL server, you should change to the same region for your Java EE application to minimize latency delays.
-
-In the command, select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`:
-
-|  Input element  |  Value  |
+|  Configurable element  |  Value  |
 | ---- | ---- |
-|  `Subscription` | `Your appropriate subsctioption` |
-|  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
-|  `Define value for OS [Linux]:`  |  `Linux`  |
-|  `Define value for pricingTier [P1v2]:`  |  `P3v3`  |
-|  `Define value for javaVersion [Java 8]:`  |  `1: Java 8`  |
-|  `Define value for runtimeStack:`  |  `1: Jbosseap 7.2`  |
-|  `Confirm (Y/N) [Y]:` | `Y` |
-
-After you run the command, you'll see the following messages in the terminal:
-
-```bash
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
-[INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
-[INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
-[INFO] --- azure-webapp-maven-plugin:1.15.0:config (default-cli) @ jakartaee-app-on-jboss ---
-[WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
-[WARNING] WARNING: A few accounts are skipped as they don't have 'Enabled' state. Use '--all' to display them.
-[WARNING] WARNING: A few accounts are skipped as they don't have 'Enabled' state. Use '--all' to display them.
-Auth type: AZURE_CLI
-Default subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
-Username: YOUR_EMAIL_ADDRESS@**********.com
-[INFO] Subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
-[WARNING] There are no Java Web Apps in current subscription, please follow the following steps to create a new one.
-Define value for OS [Linux]:
-* 1: Linux
-  2: Windows
-  3: Docker
-Enter your choice: 
-Define value for pricingTier [P1v2]:
-   1: B1
-   2: B2
-   3: B3
-   4: D1
-   5: F1
-*  6: P1v2
-   7: P2v2
-   8: P3v2
-   9: S1
-  10: S2
-  11: S3
-Enter your choice: 8
-Define value for javaVersion [Java 8]:
-* 1: Java 8
-  2: Java 11
-Enter your choice: 
-Define value for runtimeStack:
-  1: Jbosseap 7.2
-* 2: Tomcat 8.5
-  3: Tomcat 9.0
-Enter your choice: 1
-Please confirm webapp properties
-Subscription Id : ********-****-****-****-************
-AppName : jakartaee-app-on-jboss-1623043825268
-ResourceGroup : jakartaee-app-on-jboss-1623043825268-rg
-Region : westeurope
-PricingTier : PremiumV2_P3v2
-OS : Linux
-Java : Java 8
-Web server stack: Jbosseap 7.2
-Deploy to slot : false
-Confirm (Y/N) [Y]: y
-[INFO] Saving configuration to pom.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:43 min
-[INFO] Finished at: 2021-06-07T14:31:52+09:00
-[INFO] ------------------------------------------------------------------------
-```
-
-After the command finishes, you can see that following entry is added in your Maven `pom.xml` file:
+|  `subscriptionId` | `Your appropriate subscription` |
+|  `resourceGroup` |  `Your appropriate resource group name`  |
+|  `appName`  |  `Your Azure App Service Instance Name`  |
+|  `region`  |  `Your appropriate install location`  |
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.microsoft.azure.samples</groupId>  
+  <artifactId>jakartaee-app-on-jboss</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+  <packaging>war</packaging>  
+  <properties> 
+    <maven.compiler.source>8</maven.compiler.source>  
+    <maven.compiler.target>8</maven.compiler.target>  
+    <failOnMissingWebXml>false</failOnMissingWebXml>  
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
+    <jakarta.jakartaee-api.version>8.0.0</jakarta.jakartaee-api.version>  
+    <junit-jupiter.version>5.5.0</junit-jupiter.version>  
+    <mockito-core.version>3.1.0</mockito-core.version>  
+    <mysql-jdbc-driver>8.0.22</mysql-jdbc-driver>  
+    <openapi-ui>1.1.4</openapi-ui> 
+  </properties>  
+  <dependencies> 
+    <dependency> 
+      <groupId>jakarta.platform</groupId>  
+      <artifactId>jakarta.jakartaee-api</artifactId>  
+      <version>${jakarta.jakartaee-api.version}</version>  
+      <scope>provided</scope> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.junit.jupiter</groupId>  
+      <artifactId>junit-jupiter</artifactId>  
+      <version>${junit-jupiter.version}</version>  
+      <scope>test</scope> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.mockito</groupId>  
+      <artifactId>mockito-core</artifactId>  
+      <version>${mockito-core.version}</version>  
+      <scope>test</scope> 
+    </dependency>  
+    <dependency> 
+      <groupId>mysql</groupId>  
+      <artifactId>mysql-connector-java</artifactId>  
+      <version>${mysql-jdbc-driver}</version> 
+    </dependency>  
+    <dependency> 
+      <groupId>io.swagger.core.v3</groupId>  
+      <artifactId>swagger-jaxrs2</artifactId>  
+      <version>2.1.5</version> 
+    </dependency>  
+    <dependency> 
+      <groupId>io.swagger.core.v3</groupId>  
+      <artifactId>swagger-jaxrs2-servlet-initializer</artifactId>  
+      <version>2.1.5</version> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.microprofile-ext.openapi-ext</groupId>  
+      <artifactId>openapi-ui</artifactId>  
+      <version>1.1.4</version> 
+    </dependency> 
+  </dependencies>  
+  <build> 
+    <finalName>ROOT</finalName>  
     <plugins> 
       <plugin>
         <groupId>com.microsoft.azure</groupId>
@@ -120,21 +103,19 @@ After the command finishes, you can see that following entry is added in your Ma
           </deployment>
         </configuration>
       </plugin>
-    </plugins>
+    </plugins> 
+  </build> 
+</project>
 ```
-
-> [!IMPORTANT]
-> Please change the `<pricingTier>P3v2</pricingTier>` to `P3v3` manualy?
 
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
-
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
 ```xml
-          <resourceGroup>jakartaee-app-on-jboss-1606464084546-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1606464084546</appName>
+          <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
+          <appName>jakartaee-app-on-jboss-1623043825268</appName>
 ```
 
 If you are using the bash, configure the environment variables with the following command.
@@ -156,17 +137,17 @@ The following output appears in the terminal:
 
 ```text
 [INFO] Packaging webapp
-[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT]
+[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/private/tmp/mslearn-jakarta-ee-azure/target/ROOT]
 [INFO] Processing war project
-[INFO] Copying webapp resources [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/src/main/webapp]
-[INFO] Webapp assembled in [276 msecs]
-[INFO] Building war: /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT.war
+[INFO] Copying webapp resources [/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp]
+[INFO] Webapp assembled in [360 msecs]
+[INFO] Building war: /private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war
 [INFO] WEB-INF/web.xml already added, skipping
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.631 s
-[INFO] Finished at: 2020-11-27T17:07:21+09:00
+[INFO] Total time:  5.315 s
+[INFO] Finished at: 2021-06-07T14:52:45+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -181,22 +162,24 @@ After you compile and package the code, deploy the application:
 The following message appears in the terminal:
 
 ```text
-[INFO] Auth Type : AZURE_CLI, Auth Files : [/Users/********/.azure/azureProfile.json, /Users/********/.azure/accessTokens.json]
-[INFO] Subscription : My Subscription(********-****-****-****-************)
-[INFO] Target Web App doesn't exist. Creating a new one...
-[INFO] Creating App Service Plan 'ServicePlancd5a2677-324c-47d7'...
-[INFO] Successfully created App Service Plan.
-[INFO] Successfully created Web App.
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource to /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/azure-webapp/jakartaee-app-on-jboss-1606464084546-c16ffb02-b9f4-4673-907a-7719393772cd
-[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1606464084546...
-[INFO] Deploying the war file ROOT.war...
-[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
+Auth type: AZURE_CLI
+Default subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+Username: yoterada@microsoft.com
+[INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+[INFO] Creating resource group jakartaee-app-on-jboss-1623043825268-rg in region westeurope...
+[INFO] Successfully created resource group jakartaee-app-on-jboss-1623043825268-rg.
+[INFO] Creating app service plan...
+[INFO] Successfully created app service plan asp-jakartaee-app-on-jboss-1623043825268.
+[INFO] Creating web app jakartaee-app-on-jboss-1623043825268...
+[INFO] Successfully created Web App jakartaee-app-on-jboss-1623043825268.
+[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1623043825268...
+[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
+[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1623043825268.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:43 min
-[INFO] Finished at: 2020-11-27T17:09:08+09:00
+[INFO] Total time:  02:20 min
+[INFO] Finished at: 2021-06-07T14:55:16+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
