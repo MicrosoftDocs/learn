@@ -14,7 +14,7 @@ There are many ways to create a virtual machine on Azure. In this unit, you crea
 
 To configure your VM, you have several choices:
 * For a Linux VM, you can connect directly over SSH and interactively configure your system. 
-* You can automate the deployment by using an Azure Resource Manager template. 
+* You can automate the deployment by using an ARM template, Bicep, or other automated provisioning tool.
 * If you need to deploy many build agents, you can create a VM image that has all the software pre-installed.
 
 Configuring a system interactively is a good way to get started, because it helps you understand the process and what's needed. To simplify the process, connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
@@ -32,8 +32,7 @@ To create your VM, in Cloud Shell (at right), run the following `az vm create` c
 az vm create \
     --name MyLinuxAgent \
     --resource-group <rgn>[Resource Group Name]</rgn> \
-    --image Canonical:UbuntuServer:20.04-LTS:latest \
-    --location eastus \
+    --image canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
     --size Standard_DS2_v2 \
     --admin-username azureuser \
     --generate-ssh-keys
@@ -133,7 +132,7 @@ In this section, you configure your VM with the tools that are required to build
 
 Recall that your existing build process uses these tools:
 
-* .NET Core
+* .NET SDK, which is used to build the application
 * Node.js, which is used to perform build tasks
 * npm, the package manager for Node.js
 * gulp, a Node.js package that's used to minify JavaScript and CSS files
@@ -156,7 +155,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 1. To download a shell script named *build-tools.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/master/build-tools.sh > build-tools.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-tools.sh > build-tools.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
@@ -198,7 +197,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
 1. To download a shell script named *build-agent.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/master/build-agent.sh > build-agent.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-agent.sh > build-agent.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
