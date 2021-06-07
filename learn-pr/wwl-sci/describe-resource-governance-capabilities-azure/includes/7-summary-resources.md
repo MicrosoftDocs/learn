@@ -7,7 +7,7 @@ Now that you’ve completed this module, you should be able to:
 
 ## Learn more
 
-- [Lock resources to prevent unexpected changes](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)
-- [What is Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
-- [What is Azure Blueprints?](https://docs.microsoft.com/azure/governance/blueprints/overview)
-- [What is the Microsoft Cloud Adoption Framework for Azure?](https://docs.microsoft.com/azure/cloud-adoption-framework/overview)
+- [Lock resources to prevent unexpected changes](/azure/azure-resource-manager/management/lock-resources)
+- [What is Azure Resource Manager](/azure/azure-resource-manager/management/overview)
+- [What is Azure Blueprints?](/azure/governance/blueprints/overview)
+
