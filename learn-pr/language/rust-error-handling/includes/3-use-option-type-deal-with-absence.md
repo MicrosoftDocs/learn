@@ -1,4 +1,4 @@
-The Rust standard library provides an `Option<T>` enum to be used when the absence of a value is a possibility. `Option<T>` is widely used in Rust code. It's useful for working with values that might exist or might be nothing.
+The Rust standard library provides an `Option<T>` enum to be used when the absence of a value is a possibility. `Option<T>` is widely used in Rust code. It's useful for working with values that might exist or that might be empty.
 
 In many other languages this would be modeled using `null` or `nil`, but Rust doesn't use `null` outside of code that interoperates with other languages. This means Rust is explicit about when a value is optional. While in many languages, a function that takes a `String` might actually take either a `String` or `null`, in Rust, that same function can only take actual `String`s. If you want to model an optional string in Rust, you need to explicitly wrap it in an `Option` type: `Option<String>`. 
 
@@ -49,7 +49,7 @@ In practice, you must decide how your program behaves depending on what enum var
 
 ## Pattern matching
 
-There's a powerful operator in Rust that's called `match`. You can use it to control the flow of your program by providing patterns. When `match` finds a matching pattern, it runs code that you provide for that pattern.
+There's a powerful operator in Rust that's called `match`. You can use it to control the flow of your program by providing patterns. When `match` finds a matching pattern, it runs code that you supply with that pattern.
 
 ```rust
 let fruits = vec!["banana", "apple", "coconut", "orange", "strawberry"];
