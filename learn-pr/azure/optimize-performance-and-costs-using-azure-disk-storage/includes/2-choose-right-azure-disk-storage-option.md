@@ -34,16 +34,16 @@ Ultra Disks are a new disk type and have some limitations:
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if Premium SSDs are causing performance bottlenecks, consider using Ultra Disks.
 
 >[!Note]
->You're charged for using Ultra Disks based on the provisioned size, IOPS, and throughput.
+>When you provision an Ultra Disk you can independently configure the size, IOPS, and throughput of the disk. You're charged for using Ultra Disks based on the provisioned size, IOPS, and throughput.
 
 ## Premium SSD
 
-Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to Ultra Disks. Premium disks don't have the current limitations of Ultra Disks. For example, they're available in all regions and you can use them with VMs that are located outside of Availability Zones.
+Premium SSDs provide high throughput and IOPS with low latency although they offer a slightly lower performance compared to Ultra Disks. Premium SSDs don't have the current limitations of Ultra Disks. For example, they're available in all regions and you can use them with VMs that are located outside of Availability Zones.
 
 You can adjust the performance of Premium SSDs by first detaching these disks from their VMs. Also, you can use Premium SSDs only with larger VM sizes that are compatible with premium storage.
 
 > [!Note]
-> At the time of writing this module, Microsoft announced, in private preview, an option to adjust the performance tier on Premium SSD disks while they're used within VMs.
+> At the time of writing this module, Microsoft announced, in public preview, an option to adjust the performance tier on Premium SSDs while they're attached to VMs.
 
 The following table provides examples that illustrate the high performance of Premium SSDs.
 
@@ -54,25 +54,18 @@ The following table provides examples that illustrate the high performance of Pr
 | P40 | 2 TiB | 7,500 | 250 |
 | P80 | 32 TiB | 20,000 | 900 |
 
-Premium SSDs are designed to provide consistent performance figures as the examples in the table depict, while standard tier disks can be occasionally impacted by high demand.
+Premium SSDs are designed to provide consistent performance figures as the examples in the table depict, while Standard SSDs can be occasionally impacted by high demand.
 
-If you need higher performance than what standard disks provide or if you can't sustain occasional impacts to performance, use Premium SSDs. Also, use Premium SSDs when you want the highest possible performance, but you're not able to use Ultra Disks because of their current limitations. Premium SSDs are a good solution for mission-critical workloads in medium and large organizations.
+If you need higher performance than what Standard SSDs provide or if you can't sustain occasional impacts to performance, use Premium SSDs. Also, use Premium SSDs when you want the highest possible performance, but you're not able to use Ultra Disks because of their current limitations. Premium SSDs are a good solution for mission-critical workloads in medium and large organizations.
 
-Azure Premium SSD disks support disk bursting, which offers higher IOPS and throughput performance than the actual performance tier of the selected disk. For P20 disks and smaller, bursting is enabled by default with no additional costs.
+Azure Premium SSDs support disk bursting, which allows you to achieve higher IOPS and throughput than your provisioned performance. For P20 disks and smaller, bursting is enabled by default with no additional costs.
 
 >[!Note]
 >You'll learn more about the Azure disk bursting functionality in the **Select a disk type for your workload** unit.
 
-You can convert a disk to a Premium SSD at any time if the disk performance doesn't meet your requirements.
-
-You can purchase Premium SSDs with Azure disk reservation by committing to a one-year capacity that offers a reduced cost for disk SKU.
-
->[!Note]
-> Reservation discounts are currently available for disks larger than P30 and are applied only for the disk SKU. Disk snapshots are charged at pay-as-you-go rates.
-
 ## Standard SSD
 
-Standard SSDs in Azure are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSDs aren't as fast as Premium or Ultra Disks, but they still have latencies in the range of 1 ms to 10 ms and up to 6,000 IOPS. You can attach Standard SSDs to any VM, regardless of its size.
+Standard SSDs in Azure are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSDs aren't as fast as Premium SSDs  or Ultra Disks, but they still provide single-digit millisecond latencies and up to 6,000 IOPS and 750 MBps of throughput. You can attach Standard SSDs to any VM, regardless of its size.
 
 The following table provides the performance characteristics of Standard SSDs in several sizes.
 
@@ -83,15 +76,15 @@ The following table provides the performance characteristics of Standard SSDs in
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on Standard SSDs.
+Use Standard SSDs when you have budgetary constraints and a workload that isn't performance intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on Standard SSDs.
 
 ## Standard HDD
 
-In standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and the variation in speeds is higher compared to SSDs. However, latencies are under 10 ms for write operations and 20 ms for reads. Like Standard SSDs, you can use standard HDDs for any VM.
+In standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and the variation in speeds is higher compared to SSDs. Standard SSDs are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSDs, you can use standard HDDs for any VM.
 
 The following table provides the performance characteristics of standard HDDs in several sizes.
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (mbps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- | --- |
 | S4 | 32 | 500 | 60 |
 | S15 | 256 | 500 | 60 |
