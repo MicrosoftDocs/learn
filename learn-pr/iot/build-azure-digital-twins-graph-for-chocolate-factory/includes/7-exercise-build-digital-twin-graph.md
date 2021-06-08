@@ -1,55 +1,18 @@
+In this exercise, you run the Azure Digital Twins Explorer from your Azure Digital Twins instance in the [Azure portal](https://portal.azure.com/) and set up your chocolate factory digital twin.
 
-In this exercise, you download and run the Azure Digital Twins explorer sample locally, connect it to your Azure Digital Twins instance, and set up your chocolate factory digital twin.
+Navigate to your Azure Digital Twins instance in the [Azure portal](https://portal.azure.com/). Next, select the **Open Azure Digital Twins Explorer (preview)** button to open an Azure Digital Twins Explorer window connected to the instance.
 
-1. Download the [Azure Digital Twins explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
+:::image type="content" source="../media/azure-digital-twins-explorer-portal-access.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-portal-access.png":::
 
-1. Extract all the files.
+## Switch contexts
 
-1. Locate the **client/src** folder in the extracted files. Take note of the full path to the **src** folder for a step you'll take later in this unit.
+1. Once you're in the Azure Digital Twins Explorer, you can change the context of which Azure Digital Twins instance is currently connected. Select the instance name from the top toolbar:
 
-## Sign in to Azure
+    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-1.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-instance-url-1.png":::
 
-For the explorer sample to run properly, you need to sign in locally to the Azure subscription where you've deployed the Azure Digital Twins instance. This is because you create an environment variable that references those credentials. When you run the explorer sample locally, it looks for this environment variable so that it can connect the sample to your instance of Azure Digital Twins in Azure.
+1. This will bring up the **Azure Digital Twins URL modal**, where you can enter the host name of another Azure Digital Twins instance after the *https://* to connect to that instance:
 
-1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
-
-1. After you successfully install the Azure CLI, you can sign in to Azure by running the following command in PowerShell:
-
-    ```PowerShell
-    az login
-    ```
-
-    The command launches a web browser tab that asks you to sign in to your Azure account.
-
-## Run Azure Digital Twins explorer
-
-1. Open **PowerShell** as an administrator. Change the directory to the path you saved off at the start of this unit, by typing **cd**. Then paste in the path to the **src** folder. For example:
-
-    ```cmd
-    cd C:\Users\<your alias>\Downloads\Azure_Digital_Twins__ADT__explorer\client\src
-    ```
-
-1. Run the following command to install all the required dependencies of the ADT Explorer sample:
-
-    ```powershell
-    npm install
-    ```
-
-    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Terminal help output when running npm install." lightbox="../media/explorer-npm-install.png":::
-
-1. Start the ADT Explorer sample by running the following command:
-
-    ```powershell
-    npm run start
-    ```
-
-    It might take a few seconds before the opening screen of the Azure Digital Twins explorer sample appears in your web browser.
-
-1. When prompted, enter your Azure Digital Twins URL. This string has the format of **https://**, followed by the Azure Digital Twins host name.
-
-1. You might have to grant consent for the app if a **Permissions requested** pop-up appears.
-
-The Azure Digital Twins explorer sample is now loaded and ready.
+    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-2.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-instance-url-2.png":::
 
 ## Upload the chocolate factory production line models
 
