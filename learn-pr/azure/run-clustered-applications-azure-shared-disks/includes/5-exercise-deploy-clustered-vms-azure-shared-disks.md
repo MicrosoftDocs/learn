@@ -31,10 +31,10 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 ```azurecli
 # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
 az vm availability-set create \
---resource-group <rgn>[sandbox resource group name]</rgn> \
---name myAvailabilitySet \
---platform-fault-domain-count 2 \
---platform-update-domain-count 2
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --name myAvailabilitySet \
+  --platform-fault-domain-count 2 \
+  --platform-update-domain-count 2
 ```
 
 ### Create two VMs that are running Ubuntu Server
