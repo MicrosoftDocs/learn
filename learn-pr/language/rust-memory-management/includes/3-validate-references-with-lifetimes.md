@@ -1,6 +1,6 @@
-The use of references presents a problem. The item that a reference is referring to does not keep track of all of its references. This can lead to an issue: when the item is dropped (meaning its associated resources like memory) are freed, how can we be sure that there are no references pointing to this now freed (and therefore invalid) memory?
+The use of references presents a problem. The item a reference is referring to doesn't keep track of all of its references. This can lead to an issue: when the item is dropped and its resources are freed, how can we be sure that there are no references that point to this now freed, and invalid, memory?
 
-Languages like C and C++ often have this problem where a pointer points to an item that has already been freed. This is known as a "dangling pointer". Fortunately, Rust eliminates this issue. It guarantees that all references always refer to valid items. How does it do this?
+Languages like C and C++ often have a problem where a pointer points to an item that's already been freed. This problem is known as a "dangling pointer". Fortunately, Rust eliminates this issue. It guarantees that all references always refer to valid items. How does it do this?
 
 Rust's answer to this question is lifetimes. They allow Rust to ensure memory safety without the performance costs of garbage collection.
 
@@ -55,9 +55,9 @@ The Rust compiler can verify if the borrows are valid by using the *borrow check
 
 ## Annotating lifetimes in functions
 
-Just as with types, lifetime durations are inferred by the Rust compiler.
+As with types, lifetime durations are inferred by the Rust compiler.
 
-There may be multiple possible lifetimes. When that occurs, annotate the lifetimes to help the compiler understand which lifetime it will use to ensure that the references are valid at runtime.
+There may be multiple lifetimes. When that occurs, annotate the lifetimes to help the compiler understand which lifetime it will use to ensure the references are valid at runtime.
 
 For example, consider a function that takes two strings as its input parameters and returns the longest of them:
 
@@ -99,9 +99,9 @@ The help text says Rust can't tell whether the reference that's being returned r
 
 It's possible that lifetimes could be different whenever the function is called. We don't know the concrete lifetimes of the references that will be passed to our `longest_word` function, and we can't determine if the reference that will be returned will always be a valid one.
 
-The borrow checker can't determine if the reference will be always be a valid one either. It doesn't know how the input parameters' lifetime relate to the return value's lifetime. This is why we need to annotate the lifetimes manually.
+The borrow checker can't determine if the reference will be a valid one either. It doesn't know how the input parameters' lifetime relate to the return value's lifetime. This is why we need to annotate the lifetimes manually.
 
-Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can perform its analysis:
+Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can complete its analysis:
 
 ```rust
 fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
@@ -115,7 +115,7 @@ fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
 
 You can try this code at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6a5bee8873e751122eaf382858131b0e&azure-portal=true).
 
-Make sure to declare generic lifetime parameters inside angle brackets. Add the declaration between the parameter list and the function name. 
+Make sure to declare generic lifetime parameters inside angle brackets, and add the declaration between the parameter list and the function name. 
 
 > [!NOTE]
 > In the signature,the return value and all the parameter references must have the same lifetime. As such, use the same lifetime name, for example `'a`. Then, add the name to each reference in the function signature.
@@ -162,7 +162,7 @@ If you guessed that this code is broken, you're right. This time, we see the fol
 
 This error shows that the compiler expected the lifetime of `magic2` to be the same as the lifetime of the returned value and of the `x` input argument. Rust knows this because we annotated the lifetimes of the function parameters and return value by using the same lifetime name: `'a`.
 
-If we were to inspect the code, as humans, we would see that `magic1` is longer than `magic2`. We would see that the result contains a reference to `magic1`, which will live long enough to be valid. However, Rust can't run that code at compile time. It will consider both the `&magic1` and `&magic2` references to be possible return values and will emit the error that we saw earlier.
+If we inspected the code, as humans, we would see that `magic1` is longer than `magic2`. We would see that the result contains a reference to `magic1`, which will live long enough to be valid. However, Rust can't run that code at compile time. It will consider both the `&magic1` and `&magic2` references to be possible return values and will emit the error that we saw earlier.
 
 The reference's lifetime that the `longest_word` function returns matches the smaller of the references' lifetimes that are passed in. As such, the code possibly includes an invalid reference and the borrow checker will disallow it.
 
@@ -187,7 +187,7 @@ fn main() {
 
 The preceding code is available at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e992388f5a562abf9301a3bd6c6bdc0d&azure-portal=true).
 
-In the code example, we place the name of the generic lifetime parameter inside angle brackets after the name of the struct. This placement so we can use the lifetime parameter in the body of the struct definition. This instance of `Highlight` can't live longer than the reference in the `part` field because of this annotation. 
+We place the name of the generic lifetime parameter inside angle brackets after the name of the struct. This placement so we can use the lifetime parameter in the body of the struct definition. This instance of `Highlight` can't live longer than the reference in the `part` field because of the declaration. 
 
 In the preceding code, we annotated our struct with a lifetime called `'document`. This annotation is a reminder that the
 `Highlight` struct can't outlive the source of the `&str` that it borrows, a supposed document.
@@ -197,7 +197,7 @@ The `main` function here creates two instances of the `Highlight` struct. Each i
 - `fox` references the segment between the 4th and 19th characters of the `text` string.
 - `dog` references the segment between the 35th and 43rd characters of the `text` string.
 
-In addition, `Highlight` goes out of scope before `text` goes out of scope. This means that the `Highlight` instance is valid.
+Also, `Highlight` goes out of scope before `text` goes out of scope. This means that the `Highlight` instance is valid.
 
 The code would print this message on the console:
 
