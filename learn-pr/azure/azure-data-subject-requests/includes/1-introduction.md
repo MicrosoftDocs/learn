@@ -1,6 +1,6 @@
 Learn about DSRs and how to complete one by using Microsoft products and services.
 
-Contoso, Ltd. is a mid-sized financial-services company in London with a branch office in New York. Most of its compute environment runs on premises on the Windows Server operating system.
+Contoso, Ltd. is a mid-sized financial-services company in London with a branch office in New York. Most of its compute environment runs on-premises on the Windows Server operating system.
 
 The Contoso IT director realizes they have an outdated operational model and older technology that has limited automation options. The IT engineering team is exploring Microsoft Azure to determine whether Azure services might help modernize Contoso’s operational model through automation and virtualization. They're also considering using the Microsoft 365 platform for their currently locally deployed services such as email, the intranet portal, and storage. However, the Contoso legal department has serious concerns. Those concerns are about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
 
