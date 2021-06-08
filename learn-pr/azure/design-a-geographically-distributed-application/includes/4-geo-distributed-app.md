@@ -22,7 +22,7 @@ The same is true of Zone Redundant Storage (ZRS). Even though data replicates to
 
 In our design, we rely heavily on our CDN configuration to cache static content. There's a chance that, during an outage, a user might request a static file that isn't yet in the CDN cache. This request would result in a graphic or video that can't be displayed.
 
-We can eliminate this possibility by replicating the storage account to multiple regions when we choose a geo-redundant storage option. We also have to option to select a read-only replication option if we want to support the inability to add static content during a regional outage.
+We can eliminate this possibility by replicating the storage account to multiple regions when we choose a geo-redundant storage option. A read-only replication option is also available to prevent adding static content during a regional outage.
 
 We have two options to choose from when we need to enable geo-redundancy. These options are Read-Access Geo-Redundant Storage (RA-GRS) and Read-Access Geo-Zone-Redundant Storage (RA-GZRS). The choice we make will depend on our budget and the percentage up time that we need.
 

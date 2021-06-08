@@ -10,7 +10,7 @@ The types of logging available through the Azure App Service depends on the code
 
 ### ASP.NET
 
-ASP.NET apps only run on Windows app services. To log information to the app diagnostics log, use the `System.Diagnostics.Trace` class. There are four trace levels you can use, and these correlate with `error`, `warning`, `information`, and `verbose` logging levels shown in the Azure portal.
+ASP.NET apps only run on Windows app services. To log information to the app diagnostics log, use the `System.Diagnostics.Trace` class. There are four trace levels you can use, and these correlate with `error`, `warning`, `information`, and `verbose` logging levels shown in the Azure portal:
 
 - Trace.TraceError("Message"); *// Writes an error message*
 - Trace.TraceWarning("Message"); *// Writes a warning message*
