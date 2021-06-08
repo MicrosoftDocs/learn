@@ -16,7 +16,7 @@ Azure NetApp Files storage hierarchy consists of the following elements:
 
 - Capacity pool. A provisioned amount of storage to use. In Azure NetApp Files, the minimum capacity pool size is 4 tebibyte (TiB) and the maximum capacity pool size is 500 TiB.
 - Volume. Storage space within a capacity pool. For example, you can divide a 4-TiB capacity pool into four 1-TiB volumes or eight 500 gibibyte (GiB) volumes, and so on. In Azure NetApp Files, the minimum volume size is 100 GiB and the maximum volume size is 100 TiB.
-- Throughput. The maximum rate at which data can enter or leave a capacity pool, usually measured in mebibytes (MiBs) per second.
+- Throughput. The maximum rate at which data can enter or leave a capacity pool, usually measured in mebibyte (MiB) per second.
 - Multiple service levels. Azure NetApp Files offers three service levels for the capacity pools you create:
   - Standard. Provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned and 320,000 IOPS. Use Standard for static web content, file shares, and database backups.
   - Premium. Provides up to 64 MiB/s of throughput per 1 TiB of capacity provisioned and 450,000 IOPS. Premium is comparable to mainstream SSD performance and is suitable for SAP HANA, databases, enterprise apps, virtual desktop infrastructure (VDI), analytics, technical applications, and messaging queues.
