@@ -1,17 +1,15 @@
 Here, we'll discuss how Azure API Management works from three points of use: the API consumer, administrator, and developer. This knowledge will help you continue to evaluate whether Azure API Management is a good solution for managing your organization's APIs.
 
-In this unit, you'll learn about how the following Azure API Management users:
+In this unit, you'll learn about how Azure API Management works for the following users:
 
 - API consumers
-- API administrators
-- API developers
+- API providers
+- App developers
 
 ## How Azure API Management works for API consumers
 
 An *API consumer* is an entity that makes a request to the API for data. For example, any of the following could be an API consumer:
 
-- Business partner
-- Employee
 - Mobile app
 - Web app
 - IoT device
@@ -21,16 +19,16 @@ The key Azure API Management component for consumers is the gateway. This is bec
 The gateway performs many tasks from the consumer's point of view, but the following are the most important:
 
 - Authentication. The gateway monitors access to the API by verifying the consumer's subscription keys, JWT tokens, and other credentials.
-- Security. The gateway prevents API misuse by enforcing predefined rate limits and consumer usage quotas.
+- Security. The gateway prevents API misuse by enforcing predefined rate limits and consumer usage quotas or by validating requests and responses against the API's schema.
 - Transformation. The gateway transforms the API request or response as needed. For example, if the backend service responds with XML data, you can modernize the API by transforming the XML into JSON automatically, as depicted in the upcoming image.
 - Routing. After an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - Performance. The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
 :::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="A mobile app requests a weather forecast using an API. The Azure API Management gateway routes the call to the backend server and then converts the server's XML response to JSON before returning it to the mobile app.":::
 
-## How Azure API Management works for administrators
+## How Azure API Management works for API providers
 
-If you're an API administrator or manager, you still have a great deal of work to do after your APIs have been published. This work includes:
+If you're an API provider, you still have a great deal of work to do after your APIs have been published. This work includes:
 
 - Setting API policies.
 - Managing API consumers.
@@ -51,11 +49,11 @@ You can perform all these tasks and more by using the Azure API Management admin
 
 :::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Depiction of how revisions work in Azure API Management. API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision.":::
 
-## How Azure API Management works for developers
+## How Azure API Management works for app developers
 
 Except for the Consumption tier, all Azure API Management instances include a developer portal where you surface your APIs to potential and existing API consumers. The developer portal comes with a default interface that's customizable to match your organization's branding and requirements.
 
-Users with developer accounts sign in to the developer portal (which also accepts guest users who don't yet have an account). Developers are then presented with a web interface that enables them to interact with APIs in the following ways:
+App developers with developer accounts sign in to the developer portal (which also accepts guest users who don't yet have an account). Developers are then presented with a web interface that enables them to interact with APIs in the following ways:
 
 - Accessing API documentation. Developers can review the documentation you've provided for each API.
 - Testing an API. The developer portal offers an interactive console that enables a developer to test an API quickly and safely. The developer can choose an API operation, add parameter values, and then submit the call to determine what response the API returns.
