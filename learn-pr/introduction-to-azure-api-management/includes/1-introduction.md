@@ -9,9 +9,9 @@ Now imagine that like many of today's leading companies, your organization publi
 
 :::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connect to multiple servers, where each API maintains its own set of users, security policies, and analytics data.":::
 
-How do you reduce the complexity inherent in having numerous APIs? Microsoft Azure API Management acts as a  "front door" for all your APIs. Azure API Management manages all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
+How do you reduce the complexity inherent in having numerous APIs? Microsoft Azure API Management acts as a "front door" for all your APIs. Azure API Management manages all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
 
-:::image type="content" source="../media/1-introduction-after.png" alt-text="Azure API Management acts as a front door for all of an organization's APIs, which are then routed to the server where the API is deployed.":::
+:::image type="content" source="../media/1-introduction-after.png" alt-text="Azure API Management acts as a 'front door' for all of an organization's APIs, which are then routed to the server where the API is deployed.":::
 
 ## Example scenario
 

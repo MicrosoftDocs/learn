@@ -21,7 +21,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 - Administration interface
 - Developer portal
 
-:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management, include the administration interface, gateway, and developer portal.":::
+:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management include the administration interface, gateway, and developer portal.":::
 
 > [!IMPORTANT]
 > Azure API Management does *not* host your actual APIs; your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure, while leaving your deployed backend APIs untouched.
@@ -64,16 +64,14 @@ The *Azure API Management developer portal* is a web interface that enables deve
 
 Azure API Management provides several service tiers, each of which offers a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price.
 
-| | | | | | |
-| --- | --- | --- | --- | --- | --- |
 |**Criteria**  |**Consumption**  |**Developer**  |**Basic**  |**Standard**  |**Premium**  |
+| --- | --- | --- | --- | --- | --- |
 |**Designed for**    | Lightweight usage        | Evaluation, testing, and other non-production usage        | Entry-level production usage        | Medium-volume production usage        | High-volume or enterprise production usage        |
 |**Cache**     | External only        | 10 megabytes (MB)         | 50 MB        | 1 gigabyte (GB)        | 5 GB        |
 |**Service-level agreement (SLA)**     | 99.95%        | None        | 99.95%        | 99.95%        | 99.99%        |
 |**Developer portal**     | No         | Yes        | Yes        | Yes        | Yes        |
 |**Built-in analytics**     | No        | Yes        | Yes        | Yes        | Yes        |
 |**Throughput (estimated requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
-|   |   |   |   |   |   |
 
 > [!NOTE]
 > The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per million calls. The pricing for all the other tiers is per hour.
@@ -84,10 +82,10 @@ One of the biggest problems with having multiple published APIs is that each API
 
 Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place, which is the Azure API Management administration interface. With Azure API Management, you can set policies in the following categories:
 
-- Access restriction. These policies determine where an API is allowed through the gateway. For example, there are policies that enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
-- Authentication. These policies authenticate API calls. For example, you can authenticate an API call using Basic authentication, a client certificate, or a managed identity.
-- Caching*. These policies enable you to improve API performance by storing and retrieving responses in the cache.
-- Transformation. These policies enable you to perform operations on API requests and responses. For example, you can convert an API from XML to JavaScript Object Notation (JSON) or vice versa, set a different backend service, and modify a query string parameter.
+- **Access restriction**. These policies determine where an API is allowed through the gateway. For example, there are policies that enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
+- **Authentication**. These policies authenticate API calls. For example, you can authenticate an API call by using Basic authentication, a client certificate, or a managed identity.
+- **Caching**. These policies enable you to improve API performance by storing and retrieving responses in the cache.
+- **Transformation**. These policies enable you to perform operations on API requests and responses. For example, you can convert an API from XML to JavaScript Object Notation (JSON) or vice versa, set a different backend service, and modify a query string parameter.
 - **Validation**. These policies are used to validate API calls by comparing certain parameters to what's in your API specification. For example, you can validate the request or response body, the request header parameters, and the response headers.
 - **Advanced**. These policies enable you to perform operations on the API requests and responses. For example, you can apply policies based on conditional expressions, set variables, and modify the HTTP status code of a response.
 
