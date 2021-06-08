@@ -27,7 +27,7 @@ Alternatively, use Azure PowerShell, Azure CLI, or ARM templates to create a sha
 
 Azure PowerShell:
 
-```Powershell
+```azurepowershell
 $dataDiskConfig = New-AzDiskConfig -Location "WestCentralUS" -DiskSizeGB 1024 -AccountType Premium\_LRS -CreateOption Empty -MaxSharesCount 2
 
 New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDisk" -Disk $dataDiskConfig
@@ -35,8 +35,8 @@ New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDisk" -Disk $
 
 Azure CLI:
 
-```bash
-az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralus --sku Premium\_LRS --max-shares 2
+```azurecli
+az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralus --sku Premium_LRS --max-shares 2
 ```
 
 ARM templates:
@@ -86,7 +86,7 @@ Now that you know how to create an Azure shared disk, attach the disk to VMs for
 
 PowerShell:
 
-```Powershell
+```azurepowershell
 $resourceGroup = "<your resource group name>"
 $location = "<region of your shared disk>"
 $ppgName = "<your proximity placement groups name>"
@@ -98,7 +98,7 @@ Update-AzVm -VM $vm -ResourceGroupName $resourceGroup
 
 Azure CLI:
 
-```bash
+```azurecli
 diskId=$(az disk show -g "<your resource group name>" -n "<your shared disk name>" --query 'id' -o tsv)
 az vm disk attach -g "<your resource group name>" --vm-name "<your VM node name>" --name $diskId
 ```
@@ -138,7 +138,7 @@ Initialize the attached disk on all VMs that share access using the master boot 
 
 To begin cluster creation, you must install the Failover Clustering feature on all VMs that will participate in the cluster. Use the following command to install Windows failover clustering service:
 
-```Powershell
+```azurepowershell
 Install-WindowsFeature -Name Failover-Clustering –IncludeManagementTools
 ```
 
@@ -148,6 +148,6 @@ Cluster validation is a critical component of failover-clustering lifecycle. You
 
 Use Failover Cluster Manager or PowerShell to validate prerequisites for cluster creation. The following example runs all cluster tests on computers that are named node1 and node2:
 
-```Powershell
+```azurepowershell
 Test-Cluster –Node node1, node2
 ```
