@@ -44,3 +44,4 @@ units:
 - learn.language.go-data-types.8-summary
 badge:
   uid: learn.language.go-data-types.badge
+hidden: true
