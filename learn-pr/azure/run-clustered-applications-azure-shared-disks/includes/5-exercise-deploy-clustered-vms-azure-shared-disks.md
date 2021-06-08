@@ -44,9 +44,7 @@ az vm availability-set create \
 ```azurecli
 for i in `seq 1 2`; 
 do
-
-az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
-    
+    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
 done
 ```
 
