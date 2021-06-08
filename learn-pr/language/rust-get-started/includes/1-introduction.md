@@ -16,7 +16,7 @@ In this module, you'll learn how to:
 
 - Set up your development environment for using Rust.
 - Write a simple "Hello, world!" program.
-- Use Cargo, Rust's package manager and build system.
+- Use Cargo, Rust's build tool and dependency manager.
 
 ## Prerequisites
 
