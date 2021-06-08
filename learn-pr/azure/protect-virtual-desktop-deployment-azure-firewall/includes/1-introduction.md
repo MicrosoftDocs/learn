@@ -8,9 +8,9 @@ Suppose you work at a large accounting firm where you've just deployed a Azure V
 
 In this module, you'll:
 
-- Deploy Azure Firewall.
-- Configure the subnet for your Azure Virtual Desktop host pool to route all network traffic through Azure Firewall.
-- Allow outbound network access from the host pool to Azure Virtual Desktop by configuring the subnet, an application rule and a network rule collection.
+- Deploy an Azure Firewall instance
+- Configure the subnet for your Azure Virtual Desktop host pool to route all network traffic through Azure Firewall
+- Configure the subnet, an application rule and a network rule collection to allow outbound network access from the host pool to Azure Virtual Desktop
 
 ## What is the main goal?
 
