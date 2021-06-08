@@ -40,7 +40,7 @@ For this scenario, the production of chocolate has been simplified into three st
 
 Cocoa beans are the input to this production line, and chocolate bars are the output!
 
-1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 to 150 degrees Celsius. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
+1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 250 to 300 degrees Fahrenheit. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
 
 1. **Grinding**: The grinding process takes the cocoa nibs that result from the roasting and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter.
 

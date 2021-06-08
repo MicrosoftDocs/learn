@@ -89,7 +89,7 @@ Runs production lines  | Relationship | The floor has production lines, identifi
                 "@type": ["Property", "Temperature"],
                 "name": "Temperature",
                 "schema": "double",
-                "unit": "degreeCelsius",
+                "unit": "degreeFahrenheit",
                 "writable": true
             },
             {
@@ -283,7 +283,7 @@ The roasting model needs a few physics-related properties:
                 "@type": ["Property", "Temperature"],
                 "name": "ChassisTemperature",
                 "schema": "double",
-                "unit": "degreeCelsius",
+                "unit": "degreeFahrenheit",
                 "writable": true
             },
             {
@@ -336,7 +336,7 @@ Force | Property | The force, in pounds, of the steel grinding plates.
                 "@type": ["Property", "Temperature"],
                 "name": "ChassisTemperature",
                 "schema": "double",
-                "unit": "degreeCelsius",
+                "unit": "degreeFahrenheit",
                 "writable": true
             },
             {
@@ -388,7 +388,7 @@ The final step is molding, which only includes a couple of properties:
                 "@type": ["Property", "Temperature"],
                 "name": "ChassisTemperature",
                 "schema": "double",
-                "unit": "degreeCelsius",
+                "unit": "degreeFahrenheit",
                 "writable": true
             }, 
             {
