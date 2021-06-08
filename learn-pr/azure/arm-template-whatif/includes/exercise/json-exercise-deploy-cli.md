@@ -11,15 +11,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-    :::image type="content" source="../../../../bicep/shared/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." border="true":::
+    :::image type="content" source="../../../../bicep/shared/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." :::
 
     If not, select the dropdown menu, and choose **Select Default Shell**. Then select **bash**.
 
-    :::image type="content" source="../../../../bicep/shared/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." border="true":::
+    :::image type="content" source="../../../../bicep/shared/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." :::
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
+2. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
-1. Switch your terminal to the directory where you saved your ARM template. For example, if you saved it in the *scripts* folder, you can use this command:
+3. Switch your terminal to the directory where you saved your ARM template. For example, if you saved it in the *scripts* folder, you can use this command:
 
     ```azurecli
     cd scripts

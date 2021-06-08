@@ -138,13 +138,13 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
    1. Select **1 Succeeded** to see the details of the deployment.
 
-      :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." :::
 
-   1. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
+   2. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
-      :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with no resources listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with no resources listed." :::
 
-      :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one virtual network resource listed." border="true":::
+      :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one virtual network resource listed." :::
 
       Leave the page open in your browser. You'll check on deployments again later.
 
@@ -364,4 +364,4 @@ In these next steps, you'll deploy an empty template over your existing environm
 
 Go back to the open browser that you used earlier. Verify that the virtual network is no longer there, as in this screenshot:
 
-:::image type="content" source="../media/4-portal-deployment-complete-details.png" alt-text="Screenshot of the Azure portal interface for the complete deployment, with the virtual network resource no longer listed." border="true":::
+:::image type="content" source="../media/4-portal-deployment-complete-details.png" alt-text="Screenshot of the Azure portal interface for the complete deployment, with the virtual network resource no longer listed." :::

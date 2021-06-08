@@ -9,7 +9,7 @@ Your output will look similar to the following:
 
 # [Screenshot](#tab/screenshpt)
 
-:::image type="content" source="../../media/4-confirm-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the deployment confirm operation." border="true":::
+:::image type="content" source="../../media/4-confirm-powershell.png" alt-text="Screenshot of Azure PowerShell showing the output from the deployment confirm operation." :::
 
 # [Text](#tab/textoutput)
 
