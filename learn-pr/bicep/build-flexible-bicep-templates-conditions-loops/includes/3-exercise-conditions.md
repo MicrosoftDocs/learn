@@ -171,7 +171,7 @@ az deployment group create --template-file main.bicep --parameters environmentNa
 In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production location=westeurope
+New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production -location westeurope
 ```
 
 ::: zone-end
