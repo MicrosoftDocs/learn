@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.web-development-101-variables.data-types
 metadata:
   title: Data types
-  description: Learn what types of data can be stored in JavaScript variables
+  description: Learn what types of data can be stored in JavaScript variables.
   ms.date: 06/03/2021
   author: chloecodesthings
   ms.author: chnoring
@@ -19,38 +19,35 @@ quiz:
       choices:
         - content: Numbers
           isCorrect: false
-          explanation: Incorrect- variables can store all types of numbers, including
-            decimals or negative numbers.
+          explanation: Variables can store all types of numbers, including decimals or negative numbers.
         - content: Files
           isCorrect: true
-          explanation: Correct! While we may deal with files in our JavaScript code, they
-            are not considered a data type.
+          explanation: Correct! Although you might deal with files in your JavaScript code, they're not considered a data type.
         - content: Booleans
           isCorrect: false
-          explanation: Incorrect- even though booleans can only be 2 values (true or
-            false), they are still considered a data type.
-    - content: Numbers and ____ are JavaScript primitives that handle numeric data
+          explanation: Even though Booleans can be only two values (true or
+            false), they're still considered a data type.
+    - content: Numbers and ____ are JavaScript primitives that handle numeric data.
       choices:
-        - content: bigint
+        - content: `bigint`
           isCorrect: true
-          explanation: Correct- bigint values can be used for arbitrarily large integers
-        - content: boolean
+          explanation: Correct! Values for `bigint` can be used for arbitrarily large integers.
+        - content: `boolean`
           isCorrect: false
-          explanation: "Incorrect- boleans can be only two values: true or false."
-        - content: star
+          explanation: "Booleans can be only two values: true or false."
+        - content: `star`
           isCorrect: false
-          explanation: Incorrect- this is not a JavaScript primitive.
-    - content: Strings can reside between both single and double ______
+          explanation: This is not a JavaScript primitive.
+    - content: Strings can reside between both single and double ______.
       choices:
         - content: brackets
           isCorrect: false
-          explanation: Incorrect- brackets are not used to create strings.
+          explanation: Brackets aren't used to create strings.
         - content: quotes
           isCorrect: true
-          explanation: Correct! Either single or double quotes can be used to make strings.
+          explanation: Correct! You can use either single or double quotes to make strings.
         - content: backslashes
           isCorrect: false
-          explanation: Incorrect- backslashes are used in JavaScript strings as an escape
-            character
+          explanation: Backslashes are used in JavaScript strings as an escape character.
 
 
