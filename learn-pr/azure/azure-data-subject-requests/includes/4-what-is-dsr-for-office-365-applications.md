@@ -142,7 +142,7 @@ National clouds are isolated from other clouds by design. Administrators must fo
 
 ### Part four: Responding to DSRs for other Microsoft services
 
-Microsoft provides specific guidance locating and action on personal data for DSR responses. This guidance is for scenarios in which a data subject uses one or more specific products, services, or administrative tools.  Links to specific guidance is available in this module’s Learn more section for these products and services: 
+Microsoft provides specific guidance locating and action on personal data for DSR responses. This guidance is for scenarios in which a data subject uses one or more specific products, services, or administrative tools. The Summary unit for this module provides links to specific guidance for these products and services: 
 
 - Microsoft Support
 - Where Microsoft is the data controller
