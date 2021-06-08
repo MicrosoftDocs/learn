@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.web-development-101-variables.variables
+metadata:
+  title: Use variables to remember values
+  description: What are variables and how do we create them?
+  ms.date: 06/03/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use variables to remember values
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-variables.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: In JavaScript, we can declare values with the keywords _______ or _______
+      choices:
+        - content: let or var
+          isCorrect: true
+          explanation: Correct! These are the keywords we need to create and declare
+            variables.
+        - content: get or script
+          isCorrect: false
+          explanation: Incorrect- these keywords would not allow you to create a variable.
+        - content: char or log
+          isCorrect: false
+          explanation: Incorrect- these keywords would not allow you to create a variable.
+    - content: Constants are the same as let and var to declare variables except
+      choices:
+        - content: Constants can be altered
+          isCorrect: false
+          explanation: Incorrect- the reference of a constant cannot be changed once
+            initialized, or an error will occur when running code.
+        - content: Constants must be initialized
+          isCorrect: true
+          explanation: Correct- constants must be initialized, or an error will occur when
+            running code.
+        - content: Constants can be reassigned
+          isCorrect: false
+          explanation: Incorrect- a constant means the reference is protected from
+            reassignment. The value is not immutable though and can change,
+            especially if it's a complex construct like an object.
+    
+
