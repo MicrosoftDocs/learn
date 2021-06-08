@@ -6,7 +6,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
 
 1. On the home page, under **Azure services**, select **Azure Active Directory**.
 
-1. In the left menu pane, under **Manage**, select **Groups**. The **All Groups** pane appears for your Azure AD.
+1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Azure AD.
 
 1. On the top menu bar, select **New group**. The **New Group** pane appears.
 
