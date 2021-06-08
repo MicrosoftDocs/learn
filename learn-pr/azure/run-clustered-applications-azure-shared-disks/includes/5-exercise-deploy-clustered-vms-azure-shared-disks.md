@@ -230,16 +230,16 @@ $cred = Get-Credential
  for ($i=3; $i-le4; $i++)
     {
     New-AzVm `
-    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-    -Name "myVM$i" `
-    -Location eastus `
-    -VirtualNetworkName "myVnet1" `
-    -SubnetName "mySubnet" `
-    -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
-    -SecurityGroupName "myNetworkSecurityGroup1" `
-    -PublicIpAddressName "myPublicIpAddress$i" `
-    -AvailabilitySetName "myAvailabilitySet1" `
-    -Credential $cred
+      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -Name "myVM$i" `
+      -Location eastus `
+      -VirtualNetworkName "myVnet1" `
+      -SubnetName "mySubnet" `
+      -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
+      -SecurityGroupName "myNetworkSecurityGroup1" `
+      -PublicIpAddressName "myPublicIpAddress$i" `
+      -AvailabilitySetName "myAvailabilitySet1" `
+      -Credential $cred
     }
  ```
 
