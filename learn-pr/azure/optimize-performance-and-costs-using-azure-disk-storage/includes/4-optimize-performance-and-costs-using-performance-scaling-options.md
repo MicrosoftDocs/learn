@@ -114,4 +114,4 @@ $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDat
 ```
 
 > [!Note]
-> For applications that frequently run beyond the provisioned performance target, use the functionality to change the performance tier instead of using on-demand bursting. This option is more cost effective than on-demand disk bursting.
+> For applications where you need higher sustained performance, use the functionality to change the performance tier instead disk bursting. This option is more cost effective than disk bursting.
