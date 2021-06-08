@@ -121,7 +121,7 @@ Identify the subtasks of *Move large amounts of data to the cloud by using Azure
         - Incremental transfer, after using Data Box Disk for the initial seed
         - Periodic uploads (the most appropriate for this module's introductory scenario)
         
-    - Briefly compare with other tools, and explain when why you'd use these devices over the other options, and why you'd use this over Azure Import/Export. Use [Key capabilities table](https://docs.microsoft.com/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#comparison-of-key-capabilities) as a reference.
+    - Briefly compare with other tools, and explain when why you'd use these devices over the other options, and why you'd use this over Azure Import/Export. Use [Key capabilities table](/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#comparison-of-key-capabilities) as a reference.
       
         (Compare notes with this module: <https://github.com/MicrosoftDocs/learn-pr/blob/NEW-export-data-azure-import-export/learn-pr/azure/export-data-with-azure-import-export/resources/design-doc.md>. These will be in the same learning path - so don't want to repeat too much. Do a lighter comparison here - maybe just have a diagram to illustrate. The Azure Import/Export module can go into it more).
     
@@ -146,8 +146,8 @@ Identify the subtasks of *Move large amounts of data to the cloud by using Azure
 
 ## Resources
 
-- [What is Azure Data Box Disk?](https://docs.microsoft.com/azure/databox/data-box-disk-overview) 
-- [Quickstart: Deploy Azure Data Box Disk using the Azure portal](https://docs.microsoft.com/azure/databox/data-box-disk-quickstart-portal)
-- [Tutorials](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-ordered)
-- [Data transfer for large datasets with low or no network bandwidth](https://docs.microsoft.com/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [What is Azure Data Box Disk?](/azure/databox/data-box-disk-overview) 
+- [Quickstart: Deploy Azure Data Box Disk using the Azure portal](/azure/databox/data-box-disk-quickstart-portal)
+- [Tutorials](/azure/databox/data-box-disk-deploy-ordered)
+- [Data transfer for large datasets with low or no network bandwidth](/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 - [Pricing](https://azure.microsoft.com/pricing/details/databox/disk/)

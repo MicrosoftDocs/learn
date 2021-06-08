@@ -43,9 +43,9 @@ quiz:
     - content: "Azure App Service"
       isCorrect: false
       explanation: "That's incorrect. App Service is a service for hosting web apps in the cloud."
-    - content: "Windows Virtual Desktop"
+    - content: "Azure Virtual Desktop"
       isCorrect: true
-      explanation: "That's correct. Windows Virtual Desktop enables your team members to run Windows in the cloud, with access to the required applications for your company's needs."
+      explanation: "That's correct. Azure Virtual Desktop enables your team members to run Windows in the cloud, with access to the required applications for your company's needs."
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "That's incorrect. Azure Container Instances is used for hosting containerized apps in the cloud."

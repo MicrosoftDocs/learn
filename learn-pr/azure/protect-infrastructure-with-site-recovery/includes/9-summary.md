@@ -13,4 +13,4 @@ As part of the exercise steps, you created two regions and you'll need to delete
 
 To learn more about how to troubleshoot any replication issues, see:
 
-- [Full list of troubleshooting Azure-to-Azure VM replication issues](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-troubleshoot-errors)
+- [Full list of troubleshooting Azure-to-Azure VM replication issues](/azure/site-recovery/azure-to-azure-troubleshoot-errors)
