@@ -264,12 +264,12 @@ The roasting model needs a few physics-related properties:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-`ChasisTemperature` | Property with units | Temperature of the fanning/roasting machine.
+`ChassisTemperature` | Property with units | Temperature of the fanning/roasting machine.
 `RoastingTime` | Property with units | An integer number of minutes to roast the beans.
 `PowerUsage` | Property with units | The kilowatt power usage of the machine.
 `FanSpeed` | Property | The speed of the roasting fan. (Now you know why the process is known as "fanning"!)
 
-1. In the following definition for the roasting step, note the `extends` construct. Also note that *only* the `ChasisTemperature` property is writable:
+1. In the following definition for the roasting step, note the `extends` construct. Also note that *only* the `ChassisTemperature` property is writable:
 
     ```json
     {
@@ -281,7 +281,7 @@ The roasting model needs a few physics-related properties:
         "contents": [
             {
                 "@type": ["Property", "Temperature"],
-                "name": "ChasisTemperature",
+                "name": "ChassisTemperature",
                 "schema": "double",
                 "unit": "degreeCelsius",
                 "writable": true
@@ -317,7 +317,7 @@ The next step is grinding, with similar properties to roasting:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-`ChasisTemperature` | Property with units | Temperature of the grinding machine.
+`ChassisTemperature` | Property with units | Temperature of the grinding machine.
 `GrindingTime` | Property with units | An integer number of minutes to grind the beans.
 `PowerUsage` | Property with units | The kilowatt power usage of the machine.
 Force | Property | The force, in pounds, of the steel grinding plates.
@@ -334,7 +334,7 @@ Force | Property | The force, in pounds, of the steel grinding plates.
         "contents": [
             {
                 "@type": ["Property", "Temperature"],
-                "name": "ChasisTemperature",
+                "name": "ChassisTemperature",
                 "schema": "double",
                 "unit": "degreeCelsius",
                 "writable": true
@@ -371,7 +371,7 @@ The final step is molding, which only includes a couple of properties:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-`ChasisTemperature` | Property with units | Temperature of the molding machine.
+`ChassisTemperature` | Property with units | Temperature of the molding machine.
 `PowerUsage` | Property with units | The kilowatt power usage of the machine.
 
 1. Note following definition for the molding step:
@@ -386,7 +386,7 @@ The final step is molding, which only includes a couple of properties:
         "contents": [
             {
                 "@type": ["Property", "Temperature"],
-                "name": "ChasisTemperature",
+                "name": "ChassisTemperature",
                 "schema": "double",
                 "unit": "degreeCelsius",
                 "writable": true
