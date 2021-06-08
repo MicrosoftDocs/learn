@@ -7749,6 +7749,46 @@
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/web-development-101-accessibility/7-summary/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/2-what-if.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-whatif/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/3-exercise-what-if.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-whatif/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/4-test-toolkit.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/2-test-toolkit/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/5-exercise-test-toolkit.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/3-exercise-test-toolkit/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/6-custom-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/4-custom-tests/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/7-exercise-custom-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/5-exercise-custom-tests/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/",
+      "redirect_document_id": false
     }
   ]
 }
