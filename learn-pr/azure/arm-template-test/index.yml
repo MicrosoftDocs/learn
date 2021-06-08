@@ -31,11 +31,11 @@ prerequisites: |
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
   - learn.arm-template-test.1-introduction
-  - learn.arm-template-test.2-test-toolkit
-  - learn.arm-template-test.3-exercise-test-toolkit
-  - learn.arm-template-test.4-custom-tests
-  - learn.arm-template-test.5-exercise-custom-tests
-  - learn.arm-template-test.6-knowledge-check
-  - learn.arm-template-test.7-summary
+  - learn.arm-template-test.4-test-toolkit
+  - learn.arm-template-test.5-exercise-test-toolkit
+  - learn.arm-template-test.6-custom-tests
+  - learn.arm-template-test.7-exercise-custom-tests
+  - learn.arm-template-test.8-knowledge-check
+  - learn.arm-template-test.9-summary
 badge:
   uid: learn.arm-template-test.badge
