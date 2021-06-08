@@ -266,7 +266,7 @@ Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rg
 
 ### Install Windows Failover Clustering Service on myVM3
 
-1. 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
 2. Select the **myVM3** VM from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
