@@ -38,3 +38,4 @@ modules:
 - learn.reactors.blockchain-ethereum-networks
 trophy:
   uid: learn.ethereum-blockchain-development.trophy
+hidden: true

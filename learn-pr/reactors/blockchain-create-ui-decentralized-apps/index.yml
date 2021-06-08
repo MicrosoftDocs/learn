@@ -46,3 +46,4 @@ units:
 - learn.reactors.blockchain-create-ui-decentralized-apps.7-summary
 badge:
   uid: learn.reactors.blockchain-create-ui-decentralized-apps.badge
+hidden: true
