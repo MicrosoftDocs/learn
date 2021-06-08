@@ -56,7 +56,9 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the **Search the Marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd>.
+1. In the **Search the Marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd> to view the search results.
+
+1. In the "Automation" search results, select the **Automation** Azure service published by Microsoft.
 
 1. Select **Create** on the **Automation** item. The **Add Automation Account** pane appears.
 
