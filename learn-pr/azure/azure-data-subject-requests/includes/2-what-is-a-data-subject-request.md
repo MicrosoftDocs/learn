@@ -40,7 +40,7 @@ After collecting documents that might be relevant to a DSR, you can perform one 
 
 - **Access.**  Retrieve personal data that' s in Microsoft online services, and if requested, make a copy of it available to the data subject.
 - **Rectification (GDPR only).** Make changes or implement other requested actions to the personal data, where applicable.
-- **Restriction.** Restrict processing of the individual’s personal data. You can do this by turning off the desired services, where possible. Or you can remove licenses for various Azure services and Microsoft 365 or Microsoft Office 365 applications. You can also remove data from these Microsoft services and keep it on premises or at another location.
+- **Restriction.** Restrict processing of the individual’s personal data. You can do this by turning off the desired services, where possible. Or you can remove licenses for various Azure services and Microsoft 365 or Microsoft Office 365 applications. You can also remove data from these Microsoft services and keep it on-premises or at another location.
 - **Deletion.** Permanently remove personal data that's in Microsoft online services.
 - **Exporting and receiving (portability).** Provide the data subject with an electronic copy of their personal data or information in a machine-readable format. Also, respond to a request to transmit their data to another controller.
 
