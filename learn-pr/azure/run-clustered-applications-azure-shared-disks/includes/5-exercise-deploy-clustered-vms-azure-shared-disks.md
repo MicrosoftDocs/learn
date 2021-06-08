@@ -184,7 +184,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ### Create an Azure shared disk
 
-1. Use the Cloud Shell on the right. You can switch from BASH to PowerShell by typing pwsh.
+1. Use the Cloud Shell on the right. You can switch from Azure CLI to Azure PowerShell by typing pwsh.
 
 ```azurepowershell
 # Switch to PowerShell
@@ -202,12 +202,12 @@ $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 ```azurepowershell
 # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
 New-AzAvailabilitySet `
--Location "EastUS" `
--Name "myAvailabilitySet1" `
--ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
--Sku aligned `
--PlatformFaultDomainCount 2 `
--PlatformUpdateDomainCount 2
+  -Location "EastUS" `
+  -Name "myAvailabilitySet1" `
+  -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+  -Sku aligned `
+  -PlatformFaultDomainCount 2 `
+  -PlatformUpdateDomainCount 2
 ```
 
 ### Create two VMs that are running Windows Server
