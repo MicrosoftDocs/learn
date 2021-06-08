@@ -60,7 +60,7 @@ At this point, you have some variables that represent parts of your card game. R
    let noOfStarterCards = 2;
    ```
 
-  to this code:
+   to this code:
 
    ```javascript
    const STARTING_POKER_CHIPS = 100; // points
