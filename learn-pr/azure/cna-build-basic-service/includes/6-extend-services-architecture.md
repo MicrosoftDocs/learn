@@ -22,4 +22,4 @@ In some cases, CQRS extends beyond the separation of operations and includes dis
 > [!NOTE]
 > In more complex scenarios, CQRS systems might implement Event Sourcing for updates, which store events only, rather than actual data.
 
-Each of the two services you'll use to implement this pattern has its own data model that corresponds to the actual data in the target database. Because of their separation, services benefit from the capabilities associated with the cloud-native application components. These services include independent scaling, increased level of resiliency, and support for updates without needing to rearchitect the entire application.
+Each of the two services you'll use to implement this pattern has its own data model that corresponds to the actual data in the target database. Because of their separation, services benefit from the capabilities associated with the cloud-native application components, including independent scaling, increased level of resiliency, and support for updates without needing to rearchitect the entire application.
