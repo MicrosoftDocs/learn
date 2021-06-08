@@ -41,14 +41,12 @@ For example, suppose your organization uses SAP with the HANA database, and you 
 
 In the SAP HANA migration scenario, you can use this capacity pool to create the following volumes.
 
-| | | |
+|**Volume**  |**Size**  |**Max. throughput**  |
 | --- | --- | --- |
-|**Volume**  |**Size**  |**Maximum throughput**  |
-|Data     | 4 TiB        | 704 MiBs        |
-|Log     | 500 GiB        | 256 MiBs        |
-|Shared     | 1 TiB        | 64 MiBs        |
-|Backup     | 4.5 TiB        | 256 MiBs        |
-|  |  |  |
+|Data     | 4 TiB        | 704 MiB/s        |
+|Log     | 500 GiB        | 256 MiB/s        |
+|Shared     | 1 TiB        | 64 MiB/s        |
+|Backup     | 4.5 TiB        | 256 MiB/s        |
 
 :::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Illustration of the scenarios for the SAP HANA volumes with a graph comparing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario.":::
 
