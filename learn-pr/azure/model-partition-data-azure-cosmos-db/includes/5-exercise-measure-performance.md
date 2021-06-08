@@ -35,7 +35,7 @@ First we will query customer entities in our database with three separate querie
 
 1. Select the **Query Stats** tab and note the request charge of 2.83.
 
-:::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats for customer query in the database v1.":::
+    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats for customer query in the database v1.":::
 
 ### Query for customer address
 
@@ -63,13 +63,14 @@ First we will query customer entities in our database with three separate querie
 
 1. Select the **Query Stats** tab and note the request charge of 2.83.
 
-:::image type="content" source="../media/5-customer-password-query-v1.png" alt-text="Screenshot that shows the query stats for customer password query in the database v1.":::
+    :::image type="content" source="../media/5-customer-password-query-v1.png" alt-text="Screenshot that shows the query stats for customer password query in the database v1.":::
 
 ### Adding up RU/s charges
 
 Now that we've run all of our queries, let's add up all of the RU/s cost for them.
 
 |**Query**|**RU/s Cost**|
+|---------|---------|
 |Customer|2.83|
 |Customer Address|2.83|
 |Customer Password|2.83|
