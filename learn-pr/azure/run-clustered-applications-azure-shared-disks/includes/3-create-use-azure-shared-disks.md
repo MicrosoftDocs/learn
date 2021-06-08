@@ -42,41 +42,41 @@ az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralu
 ARM templates:
 
 ```json
-{
-"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-"contentVersion": "1.0.0.0",
-"parameters": {
-"dataDiskName": {
-"type": "string",
-"defaultValue": "mySharedDisk"
-},
-"dataDiskSizeGB": {
-"type": "int",
-"defaultValue": 1024
-},
-"maxShares": {
-"type": "int",
-"defaultValue": 2
-}
-},
-"resources": [
-{
-"type": "Microsoft.Compute/disks",
-"name": "[parameters('dataDiskName')]",
-"location": "[resourceGroup().location]",
-"apiVersion": "2019-07-01",
-"sku": {
-"name": "Premium_LRS"
-},
-"properties": {
-"creationData": {
-"createOption": "Empty"
-},
-"diskSizeGB" : "[parameters('dataDiskSizeGB')]",
-"maxShares" : "[parameters('maxShares')]"
-}
-}
-]
+{ 
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dataDiskName": {
+      "type": "string",
+      "defaultValue": "mySharedDisk"
+    },
+    "dataDiskSizeGB": {
+      "type": "int",
+      "defaultValue": 1024
+    },
+    "maxShares": {
+      "type": "int",
+      "defaultValue": 2
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Compute/disks",
+      "name": "[parameters('dataDiskName')]",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2019-07-01",
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "creationData": {
+          "createOption": "Empty"
+        },
+        "diskSizeGB": "[parameters('dataDiskSizeGB')]",
+        "maxShares": "[parameters('maxShares')]"
+      }
+    }
+  ] 
 }
 ```
 
