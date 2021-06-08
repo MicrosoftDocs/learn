@@ -1,4 +1,5 @@
-In Rust, memory is managed through an ownership system, which is a set of rules checked at compile time. None of the ownership features slow down your program while it's running.
+Rust includes an ownership system to manage memory. At compile time, the ownership system checks a set of rules 
+to ensure that the ownership features allow your program to run without slowing down.
 
 To understand ownership, let's first take a look at Rust's *scoping rules* and *move semantics*.
 
@@ -7,7 +8,7 @@ To understand ownership, let's first take a look at Rust's *scoping rules* and *
 In Rust, like most other programming languages, variables are valid only within a certain *scope*. In Rust, scopes are often denoted by using curly brackets `{}`. Common scopes include function bodies and `if`, `else`, and `match` branches.
 
 > [!NOTE]
-> In Rust, "variables" are often called "bindings". This is because "variables" in Rust aren't very variable - they don't change that often since they're immutable by default. Instead, we often think about names being "bound" to data, hence the name "binding". We'll use both "variable" and "binding" interchangeably though. 
+> In Rust, "variables" are often called "bindings". This is because "variables" in Rust aren't very variable - they don't change that often since they're unchangeable by default. Instead, we often think about names being "bound" to data, hence the name "binding". We'll use both "variable" and "binding" interchangeably though. 
 
 Let's say we have a `mascot` variable that's a string, defined within a scope:
 
