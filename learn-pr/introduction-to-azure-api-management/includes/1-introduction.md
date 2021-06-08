@@ -7,7 +7,7 @@ Publishing an application programming interface (API) is a great way to increase
 
 Now imagine that like many of today's leading companies, your organization publishes multiple APIs for different types of users including partners, developers, and employees. These APIs are used in multiple settings, including mobile and web apps, and Internet of Things (IoT) devices.
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connect to multiple servers, where each API maintains its own set of users, security policies, and analytics data.":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connect to multiple servers, where each API maintains its own set of users, security policies, and analytics data." lightbox="../media/1-introduction-before.png":::
 
 How do you reduce the complexity inherent in having numerous APIs? Microsoft Azure API Management acts as a "front door" for all your APIs. Azure API Management manages all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
 
