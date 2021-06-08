@@ -25,7 +25,7 @@ You'll perform this exercise using the Azure portal.
 
 3.  On the **Select API option** page, select **Core (SQL) - Recommended**
     > [!div class="mx-imgBorder"]
-    > ![Image of the API options in the Azure portal. The user has selected **Core (SQL)**](../media/7-CoreSQL.png) 
+    > ![Image of the API options in the Azure portal. The user has selected **Core (SQL)**](../media/7-core-sql.png) 
 
 4. On the **New** page, select **Azure Cosmos DB**.
 
