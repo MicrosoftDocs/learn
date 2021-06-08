@@ -24,7 +24,7 @@ The gateway performs many tasks from the consumer's point of view, but the follo
 - Routing. After an API request is authenticated, validated, and transformed, the gateway routes the call to the backend service where the API is deployed.
 - Performance. The gateway can store the backend API response in the Azure API Management cache. In situations where the backend response is static over time, serving subsequent responses from the cache gives consumers faster response times and reduces the load on the backend server.
 
-:::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="A mobile app requests a weather forecast using an API. The Azure API Management gateway routes the call to the backend server and then converts the server's XML response to JSON before returning it to the mobile app.":::
+:::image type="content" source="../media/3-how-azure-api-management-works-transform.png" alt-text="A mobile app requests a weather forecast using an API. The Azure API Management gateway routes the call to the backend server and then converts the server's XML response to JSON before returning it to the mobile app." lightbox="../media/3-how-azure-api-management-works-transform.png":::
 
 ## How Azure API Management works for API providers
 
@@ -47,7 +47,7 @@ You can perform all these tasks and more by using the Azure API Management admin
   - A *version* is a relatively major or breaking change to an API. Azure API Management enables you to offer developers multiple versions of the API simultaneously. It also offers several versioning schemes, including path-based, header-based, and query string-based versioning.
 - Monitor and analyze APIs. The administration interface includes built-in monitoring tools that let you review API traffic in real time, and analytics that enable you to derive insights on how consumers are using your published APIs. Azure API Management also supports several Azure tools for monitoring APIs and running analytics workloads. Azure services supported by Azure API Management include API Inspector, Azure Monitor Logs, and Application Insights.
 
-:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Depiction of how revisions work in Azure API Management. API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision.":::
+:::image type="content" source="../media/3-how-azure-api-management-works-revisions.png" alt-text="Depiction of how revisions work in Azure API Management. API requests from consumers are routed to the current revision of the API, whereas API requests from the in-house development team are routed to the API revision." lightbox="../media/3-how-azure-api-management-works-revisions.png":::
 
 ## How Azure API Management works for app developers
 
