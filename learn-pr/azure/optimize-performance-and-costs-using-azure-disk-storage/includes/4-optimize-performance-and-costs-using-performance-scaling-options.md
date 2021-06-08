@@ -4,14 +4,13 @@ Many of these infrastructure requirements are directly associated with block sto
 
 The type and size of the disk that you select for your critical applications directly impacts the performance and can generate higher costs if you don't select the appropriate option.
 
-## Performance tiers for managed disks
+## Performance tiers for Azure Disk Storage
 
 You can adjust and balance the IOPS, throughput, and latency of your Azure disks by selecting the right performance tier for your needs. To select the right combination, you should be aware of your application requirements. High-I/O applications, such as database servers or online transactional processing systems, will require higher IOPS, while more computational-based applications might work well with much lower requirements.
 
-You might also have applications that require, on a temporary basis, higher demands on performance, without increasing the capacity of the disks. You can change the performance tier on Ultra Disks and Premium SSD disks when you need to meet a higher performance demand.
-For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 mbps. Because of the outgoing marketing campaign, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 mbps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you'll be charged for the price of that tier. In this example, you'll be charged the price of P30.
+You might have events – like a seasonal promotion or performance testing - where the application requires, on a temporary basis, higher demands on performance. You can change the performance tier on Premium SSDs without increasing the size of the disks when you need to meet a higher performance demand, allowing you to optimize costs. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 MBps. Because of a seasonal sale, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you'll be charged for the price of that tier. In this example, you'll be charged the price of P30.
 
-Azure currently supports modifications to the performance tier for Ultra Disks without dismounting it from the VM. For Premium SSD disks, Azure offers this functionality in preview to a limited number of regions.
+Azure currently supports the ability to dynamically change your performance for Ultra Disks without dismounting it from the VM. On Premium SSDs, Azure offers this functionality in preview to a limited number of regions.
 
 ## Change the performance tier on premium disks while in use by the VMs
 
@@ -93,14 +92,14 @@ Azure provides this functionality both for VMs and the disks, and you can use it
 
 ### Virtual machine-level bursting
 
-VM-level bursting only supports the credit-based model for bursting, which doesn't require any configuration. During the VM usage, it accumulates credits whenever the resource's IOPS or throughputs are less than the resource's performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
+VM bursting only supports the credit-based model for bursting, which doesn't require any configuration. During the VM usage, it accumulates credits whenever the resource's IOPS or throughputs are less than the resource's performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
 
-### Disk-level bursting
+### Disk bursting
 
-Azure Premium SSD disks offer two models of bursting:
+Azure Premium SSDs offer two models of bursting:
 
-- Credit-based bursting model. You can use this model for short-term scaling. This model is free and enabled by default on Premium SSD 512 GiB disks and smaller. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
-- On-demand bursting model. This is configurable bursting for Premium SSDs larger than 512 GiB and comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
+- Credit-based bursting model. You can use this model for short-term performance scaling. This model is free and enabled by default on Premium SSDs 512 GiB disks and smaller. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
+- On-demand bursting model (currently in preview). This is configurable bursting for Premium SSDs larger than 512 GiB and comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
 
 You can enable on-demand bursting by using PowerShell, Azure CLI, or Azure Resource Manager templates. You can enable this functionality on new and existing disks.
 
