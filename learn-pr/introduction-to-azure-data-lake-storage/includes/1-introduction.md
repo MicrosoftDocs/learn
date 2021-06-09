@@ -12,11 +12,11 @@ Suppose you work for a national package delivery service. Your organization has 
 - Your marketing team creates many videos, images, and other media.
 - Your IT department stores large amounts of structured business data in relational database systems such as Microsoft SQL Server.
 
-In the past, these business units would maintain separate data stores, resulting in data *silos* that can't be used or analyzed together.
+In the past, these business units would maintain separate data stores, resulting in data *silos* that can't be easily used or analyzed together.
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="A variety of data types are stored in separate locations and can't connect with each other. This creates data silos.":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="A variety of data types are stored in separate locations and can't easily connect with each other. This creates data silos.":::
 
-However, with Azure Data Lake Storage, you eliminate data silos by bringing these disparate data stores into a single location. From here, they can be combined and analyzed.
+However, with Azure Data Lake Storage, you eliminate data silos by bringing these disparate data stores into a single location. From here, they can be readily combined and analyzed.
 
 :::image type="content" source="../media/1-introduction-after.png" alt-text="Different data types are ingested into Azure Data Lake Storage. It then passes the data to several Azure analytics services.":::
 

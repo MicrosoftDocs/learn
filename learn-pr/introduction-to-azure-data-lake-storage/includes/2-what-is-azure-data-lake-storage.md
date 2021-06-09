@@ -52,7 +52,7 @@ Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on Azu
 
 ### Data performance
 
-The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
+The hierarchical namespace capability of Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
 
 Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
 
