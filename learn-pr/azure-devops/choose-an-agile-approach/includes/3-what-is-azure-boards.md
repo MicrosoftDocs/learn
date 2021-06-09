@@ -46,7 +46,7 @@ Each team member shares what they're working on and other concerns they have. As
 
 Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
 
-![Azure Boards showing a backlog of seven tasks.](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Azure Boards showing a backlog of issues.":::
 
 **Amita:** Wow, that's a lot of problems. How are we ever going to fix all those?
 

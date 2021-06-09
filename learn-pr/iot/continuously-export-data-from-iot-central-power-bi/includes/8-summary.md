@@ -17,13 +17,13 @@ The IoT Central app, with a trial subscription, will be deleted automatically wh
 
 Take your interest further with:
 
-- [Azure IoT Central documentation](https://docs.microsoft.com/azure/iot-central/)
-- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
-- [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-about)
+- [Azure IoT Central documentation](/azure/iot-central/)
+- [Build workflows with the IoT Central connector in Microsoft Flow](/azure/iot-central/howto-add-microsoft-flow)
+- [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Azure Event Hubs](/azure/event-hubs/event-hubs-about)
 
 For a Learn module that focuses on Azure Maps route finding, see:
-- [Create your first route finding app with Azure Maps](https://docs.microsoft.com/learn/modules/create-your-first-app-with-azure-maps/).
+- [Create your first route finding app with Azure Maps](/learn/modules/create-your-first-app-with-azure-maps/).
 
 And look out for additional Learn modules that cover IoT Central.
 

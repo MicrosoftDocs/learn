@@ -20,7 +20,7 @@ Navigate to your Azure Digital Twins instance in the [Azure portal](https://port
 
 1. Go to your folder that contains all your chocolate factory production line models. Select all of them, and upload them to the Azure Digital Twins explorer sample.
 
-1. If you get any errors, you'll need to go back to [unit 4](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models) and check your work for the model that has the error.
+1. If you get any errors, you'll need to go back to [unit 4](/learn/modules/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models) and check your work for the model that has the error.
 
 If there aren't any errors, you'll see a list of models in the left of your explorer sample window:
 
