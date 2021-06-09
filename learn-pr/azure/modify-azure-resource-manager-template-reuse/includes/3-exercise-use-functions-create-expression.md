@@ -33,7 +33,7 @@ Instead of passing in the name of the storage account, you'll change the paramet
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed. Also, be sure you're signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools installed. Also, be sure you're signing in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right side of the terminal window says **bash**, you have the right shell to work from. You can skip to the next section.
@@ -115,7 +115,7 @@ You learned about the deployment commands in the previous module. Here, we're us
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) tools installed and that you're signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) tools installed and that you're signing in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right side of the terminal window says **pwsh**, you have the right shell to work from. You can skip to the next section.

@@ -23,8 +23,8 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.
   - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli.md) tools, installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps.md), installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
 iconUrl: /learn/achievements/bicep/child-extension-bicep-templates.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - intermediate

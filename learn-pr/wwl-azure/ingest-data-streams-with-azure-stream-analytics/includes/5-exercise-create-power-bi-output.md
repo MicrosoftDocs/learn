@@ -1,4 +1,4 @@
-In this exercise, you configure an Azure Stream Analytics output for Power BI and a second output for [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is). [Power BI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) provides a platform for visualizing and analyzing aggregated data in a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
+In this exercise, you configure an Azure Stream Analytics output for Power BI and a second output for [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). [Power BI](/power-bi/fundamentals/power-bi-overview) provides a platform for visualizing and analyzing aggregated data in a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
 
 1. From your Stream Analytics job's blade in the [Azure portal](https://portal.azure.com/), select **Outputs** in the left-hand navigation menu.
 

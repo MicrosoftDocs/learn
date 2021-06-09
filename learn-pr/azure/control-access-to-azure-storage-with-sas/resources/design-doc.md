@@ -118,9 +118,9 @@ Exercise is being built with .NET v12 SDK, .NET Core 3.0, Razor web pages, with 
 
 ## References
 
-- [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
-- [Concept](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
-- [Valet Key Pattern](https://docs.microsoft.com/azure/architecture/patterns/valet-key)
+- [Grant limited access to Azure Storage resources using shared access signatures (SAS)](/azure/storage/common/storage-sas-overview)
+- [Concept](/azure/storage/common/storage-sas-overview)
+- [Valet Key Pattern](/azure/architecture/patterns/valet-key)
 - [SAS example](https://github.com/Azure-Samples/storage-dotnet-sas-getting-started/tree/master/)
 - https://docs.microsoft.com/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows#enable-secret-storage
 

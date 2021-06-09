@@ -67,7 +67,7 @@ Support for CI/CD enables you to develop and deliver your ETL processes incremen
 
 After Azure Data Factory has refined the raw data, you can load the data into whichever analytics engine your business users can access from their business intelligence tools, including:
 
-- Azure Data Warehouse
+- Azure Synapse Analytics
 - Azure SQL Database
 - Azure Cosmos DB
 

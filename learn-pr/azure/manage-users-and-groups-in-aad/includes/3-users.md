@@ -2,7 +2,7 @@ Every user who needs access to Azure resources needs an Azure user account. A us
 
 You use the **Azure Active Directory** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time - but you can use the **Directory + Subscription** panel to switch directories. The dashboard also has a **Switch directory** button in the toolbar which makes it easy to switch to another available directory.
 
-## Viewing users
+## View users
 
 To view the Azure AD users, select the **Users** entry under the **Manage** section. The **All Users** view appears. Take a minute to access the portal and view your users. Notice the **User type** and **Identity issuer** columns, as the following figure depicts.
 
@@ -16,7 +16,7 @@ Typically, Azure AD defines users in three ways:
 
 1. **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts, such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
 
-## Adding users
+## Add users
 
 You can add cloud identities to Azure AD in multiple ways:
 
@@ -25,7 +25,7 @@ You can add cloud identities to Azure AD in multiple ways:
 - Using the command line
 - Other options
 
-### Syncing an on-premises Windows Server Active Directory
+### Sync an on-premises Windows Server Active Directory
 
 Azure AD Connect is a separate service that allows you to synchronize a traditional Active Directory with your Azure AD instance. This is how most enterprise customers add users to the directory. The advantage to this approach is users can use single sign-on (SSO) to access local and cloud-based resources.
 

@@ -511,7 +511,8 @@
                     "**/*.png",
                     "**/*.svg",
                     "**/*.jpg",
-                    "**/*.jpeg"
+                    "**/*.jpeg",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
@@ -522,7 +523,8 @@
                     "**/*.png",
                     "**/*.svg",
                     "**/*.jpg",
-                    "**/*.jpeg"
+                    "**/*.jpeg",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },            
@@ -534,7 +536,8 @@
                     "**/*.svg",
                     "**/*.jpg",
                     "**/*.jpeg",
-                    "**/*.txt"
+                    "**/*.txt",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
@@ -546,7 +549,8 @@
                     "**/*.svg",
                     "**/*.jpg",
                     "**/*.jpeg",
-                    "**/*.txt"
+                    "**/*.txt",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
