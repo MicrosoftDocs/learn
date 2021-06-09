@@ -65,6 +65,6 @@ You've now added a guest user to an application.
 1. Select the user.
 1. Under **Invitation accepted**, select **Manage**.
 
-   ![Screenshot that shows the manage link on the user's profile.](../media/7-profile-resend-invitation.png)
+    :::image type="content" source="../media/7-profile-resend-invitation.png" alt-text="Screenshot that shows the manage link on the user's profile.":::
 
 1. Under **Email invitations**, select **Yes** to resend invitation.
