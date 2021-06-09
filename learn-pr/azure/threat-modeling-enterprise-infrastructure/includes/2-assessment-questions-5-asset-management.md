@@ -24,4 +24,4 @@ These questions allow you to:
 |**Describe the process used to time out working sessions across assets and services.**|<ul><li>Automatically time out sessions designed to prevent unauthorized access.</li></ul>|
 
 > [!TIP]
-> Check out [Azure data classification](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification) for tips on classifying enterprise data.
+> Check out [Azure data classification](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification) for tips on classifying enterprise data.
