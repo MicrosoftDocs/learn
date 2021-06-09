@@ -42,7 +42,7 @@ The instructions here are specifically for Q# via the command line in Visual Stu
 
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$. To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
-Fortunately, we can use the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Artithmetic` namespace of the standard library to do just that. It implements the mapping
+Fortunately, we can use the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Arithmetic` namespace of the standard library to do just that. It implements the mapping
 $$
 |x\rangle |b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
 $$

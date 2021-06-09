@@ -161,6 +161,9 @@ Here's the Q# code that validates that the vertex coloring is valid.
 
 :::code language="qsharp" source="code/4-program-4.qs":::
 
+> [!NOTE]
+> The code shown here does not currently run on any available Azure Quantum hardware targets, as it requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+
 Here's the output of this code:
 
 ```output

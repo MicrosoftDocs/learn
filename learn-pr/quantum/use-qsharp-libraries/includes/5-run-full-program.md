@@ -85,6 +85,8 @@ Your program file should look like the following:
 
 :::code language="qsharp" source="../code/5-program-8.qs":::
 
+> [!NOTE]
+> The code shown here does not currently run on any available Azure Quantum hardware targets, as it requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
 
 ## Find your missing digit
 
