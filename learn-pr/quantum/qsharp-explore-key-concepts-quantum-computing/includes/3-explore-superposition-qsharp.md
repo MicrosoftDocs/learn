@@ -134,7 +134,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 > You can also run Q# in Jupyter Notebook. Notebooks provide a better
 > visualization of the `DumpMachine` outputs. You can install the application and try it
 > out by following the Quantum Development Kit (QDK) documentation about [Q# Jupyter
-> notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda%3fazure-portal%3dtrue). 
+> notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda&azure-portal=true). 
 >
 > ![Screenshot of the DumpMachine function in a Jupyter notebook.](../media/3-jupyter.png)
 

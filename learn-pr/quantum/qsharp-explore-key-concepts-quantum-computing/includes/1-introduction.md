@@ -21,7 +21,7 @@ After completing this module, you'll be able to:
 
 - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-- The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode%3fazure-portal%3dtrue&view=qsharp-preview)
+- The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
 
 If you haven't installed these tools, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
 
