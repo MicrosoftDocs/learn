@@ -18,4 +18,4 @@ These questions allow you to:
 |**Describe your risk management program.**|<ul><li>Types of employee security training available to enforce each security policy.</li><li>Security risk management program, which includes how risk is handled across the enterprise.</li></ul>|
 
 > [!TIP]
-> Check out [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines) for tips on infrastructure governance.
+> Check out [Azure governance](/azure/cloud-adoption-framework/govern/governance-disciplines) for tips on infrastructure governance.
