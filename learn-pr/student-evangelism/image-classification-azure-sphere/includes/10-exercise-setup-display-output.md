@@ -13,10 +13,10 @@ After installation, configure Visual Studio Code with the path to the GNU Arm Em
 1. In the **File** menu, select **Preferences** > **Settings** > **Extensions** > **AzureSphere**.
 2. Under **Azure Sphere: Arm Gnu Path**, update the path to the GNU Arm Embedded Toolchain installation directory. By default, the toolchains are installed in /opt/azurespheresdk/Sysroots/*sysroot-version*/tools.
 
-To set up the hardware to display output from an RTApp, follow these steps. You'll need to refer to the documentation from your hardware manufacturer to determine the pin locations. If you're using hardware that follows the MT3620 reference board design (RDB) hardware, like the MT3620 Dev Kit from Seeed Studio, then looking at [the RDB interface headers](https://docs.microsoft.com/azure-sphere/hardware/mt3620-user-guide#interface-headers) may help you to determine the pin locations.
+To set up the hardware to display output from an RTApp, follow these steps. You'll need to refer to the documentation from your hardware manufacturer to determine the pin locations. If you're using hardware that follows the MT3620 reference board design (RDB) hardware, like the MT3620 Dev Kit from Seeed Studio, then looking at [the RDB interface headers](/azure-sphere/hardware/mt3620-user-guide#interface-headers) may help you to determine the pin locations.
 
 > [!NOTE]
-> If you're not using MT3620 RDB hardware, update the [app_manifest.json file](https://docs.microsoft.com/azure-sphere/app-development/app-manifest) and the sample code to specify the correct UART, for example ISU1.
+> If you're not using MT3620 RDB hardware, update the [app_manifest.json file](/azure-sphere/app-development/app-manifest) and the sample code to specify the correct UART, for example ISU1.
 
 1. Install a terminal emulator like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 2. Connect GND on the USB-to-serial adapter to GND on your dev kit. On MT3620 RDB hardware, GND is header 3, pin 2.
