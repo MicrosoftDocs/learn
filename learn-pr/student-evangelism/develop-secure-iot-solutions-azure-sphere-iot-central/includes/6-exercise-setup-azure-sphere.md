@@ -23,7 +23,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?azure-portal=true&pivots=vs-code) will step you through the process.
 
 ### Install the Git client for Windows
 
@@ -51,7 +51,7 @@ You need to do the following:
 
 
 
-The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Linux](/azure-sphere/install/install-sdk-linux?azure-portal=true&pivots=vs-code-linux) will step you through the process.
 
 ### Install the Git client for Linux
 

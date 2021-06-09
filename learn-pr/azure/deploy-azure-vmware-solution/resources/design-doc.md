@@ -153,7 +153,7 @@ Identify the subtasks of *module title*
 
 [Azure VMware Solution](https://azure.microsoft.com/services/azure-vmware/)
 
-[Azure VMware Solution documentation](https://docs.microsoft.com/azure/azure-vmware/)
+[Azure VMware Solution documentation](/azure/azure-vmware/)
 
 [Azure VMware Solution - VMware documentation](https://cloud.vmware.com/azure-vmware-solution)
 
