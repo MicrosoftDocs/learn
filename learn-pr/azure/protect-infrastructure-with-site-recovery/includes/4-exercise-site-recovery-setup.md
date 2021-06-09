@@ -44,9 +44,9 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | **Source** tab |
     | Source location | **West US 2** |
     | Source resource group | **west-coast-rg**. Select **Next.** |
-    | **Virtual machines** tab: |
+    | **Virtual machines** tab |
     | Select both VMs | **hr-records** and **patient-records**. Select **Next**. |
-    | **Replication settings** tab: |
+    | **Replication settings** tab |
     | Target location | **East US 2**. |
     | **Customize**. Select it. The **Customize target settings** pane appears. |
     | Target resource group | **east-coast-rg** |
