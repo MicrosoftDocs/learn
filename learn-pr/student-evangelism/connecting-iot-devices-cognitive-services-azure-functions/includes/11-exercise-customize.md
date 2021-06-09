@@ -12,16 +12,16 @@ In this unit, you'll modify the source language and you'll change the target lan
 
     ![An illustration is showing the target language.](../media/target-language.png)
 
-4. Change the target language to Spanish(es-ES) and save it.
+4. Change the target language to Spanish (es-ES) and save it.
 
-    ![An illustration is showing the target language.](../media/new-target-language.png)
+    ![An illustration is showing the target language changed to Spanish.](../media/new-target-language.png)
 
     >[!NOTE] 
     >You can find many supported languages by Speech Translation API from the [Microsoft page](/azure/cognitive-services/speech-service/language-support#speech-translation).
 
 5. Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If Visual Studio Code asks for confirmation for redeployment, click Yes.
 
-    ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function-2.png)
+    ![Screenshot of Visual Studio Code alert confirmping deployment of Azure function to the cloud.](../media/deploy-azure-function-2.png)
 
     Make sure the deployment is successful. 
 
