@@ -33,10 +33,10 @@ az ad sp delete --id <your Service Principal Name>
 
 ## Additional resources
 
-For more information about Terraform on Azure, see [Terraform on Azure documentation](/azure/developer/terraform?WT.mc_id=java-12761-ropreddy%2cjava-334475%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b-ropreddy).
+For more information about Terraform on Azure, see [Terraform on Azure documentation](/azure/developer/terraform?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
-For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java?WT.mc_id=java-12761-ropreddy%2cjava-334475%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b-ropreddy).
+For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
-For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy%2cjava-334475%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b-ropreddy).
+For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
-For more information about Azure Pipelines and Terraform, see [Azure Pipelines documentation](/azure/devops/pipelines/release/automate-terraform?WT.mc_id=java-12761-ropreddy%2cjava-334475%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b%e2%80%8b-ropreddy).
+For more information about Azure Pipelines and Terraform, see [Azure Pipelines documentation](/azure/devops/pipelines/release/automate-terraform?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
