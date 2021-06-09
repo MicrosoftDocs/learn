@@ -4,11 +4,11 @@ In this part, you'll implement a quantum oracle for the graph coloring problem.
 
 > [!NOTE]
 > In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
-> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](https://docs.microsoft.com/quantum).
+> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](/azure/quantum).
 
 ## Create the project
 
-Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
+Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
