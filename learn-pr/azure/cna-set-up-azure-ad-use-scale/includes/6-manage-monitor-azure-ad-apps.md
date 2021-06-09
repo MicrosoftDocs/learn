@@ -1,4 +1,4 @@
-﻿Now that you've implemented your first Azure AD-integrated application, you plan to explore more in-depth aspects of its functionality that focus on management and maintenance tasks. You also want to ensure that you identify any additional caveats regarding multitenant applications.
+﻿Now that you've implemented your first Azure AD-integrated application, you plan to explore more in-depth aspects of its functionality that focus on management and maintenance tasks. You also want to ensure that you identify any additional caveats about multitenant applications.
 
 ## What are common management and maintenance tasks related to Azure AD-integrated apps?
 
@@ -8,7 +8,7 @@ Implementing Azure AD-integrated apps warrants the following special considerati
 - Avoid using wildcards (*) in redirect URIs.
 - Protect web apps by ensuring that redirect URIs correspond to encrypted endpoints.
 - Transition away from password-based authentication.
-- Maintain credentials for web apps, web APIs and daemon apps.
+- Maintain credentials for web apps, web APIs, and daemon apps.
 - Whenever possible, use certificate credentials, rather than client secrets.
 - When using secrets, consider automating their management, including their rotation.
 - Ensure that credentials aren't stored in your code.

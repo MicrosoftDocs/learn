@@ -47,7 +47,7 @@ You'll start by creating an instance of Azure Database for PostgreSQL single ser
     | Admin username | Enter **student**. |
     | Password | Enter **Pa55w0rd1234**. |
 
-    :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the Single server blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the single server blade in the Azure portal.":::
 
 1. On the **Review + create** tab of the **Single server** blade, select **Create**.
 
@@ -262,7 +262,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 1. On the **cna-app** blade, in the **Manage** section, select **Certificates & secrets**.
 1. On the **Add a client secret** blade, in the **Description** text box, enter **cna-secret-0**. Leave the **Expires** drop-down list entry with its default value and select **Add**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-add-secret.png" alt-text="Screenshot of the the Add a client secret blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node.js-app-add-secret.png" alt-text="Screenshot of the Add a client secret blade in the Azure portal.":::
 
 1. Back on the **cna-app \| Certificates & secrets** blade, copy the value of the newly generated secret.
 
@@ -296,7 +296,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 With the application registered in the Azure AD tenant, you can now proceed with its implementation.
 <!--ID/SME: Should "pane" follow Cloud Shell in the following sentence?-->
 1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
-1. Within the Bash session in the **Cloud Shell** pane, run the following command to initialize a Node.js project in a new directory:
+1. Within the Bash session on the **Cloud Shell** pane, run the following command to initialize a Node.js project in a new directory:
 
     ```azurecli-interactive
     mkdir -p cna-aadexpress && cd cna-aadexpress
@@ -311,7 +311,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     npm install @azure/msal-node
     ```
 
-1. Use the nano editor to create a file named **index.js** in the root of the project and add to it the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and <server_name> with their actual values you recorded previously in this exercise:
+1. Use the nano editor to create a file named **index.js** in the root of the project and add the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and <server_name> with their actual values you recorded previously in this exercise:
 
     ```javascript
     // Import dependencies
@@ -553,7 +553,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumuser1** user account you created in the previous exercise.
 1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
-1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly-deployed Azure web app.
+1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly deployed Azure web app.
 1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL.
 1. Open another tab in the same browser window and in the **URL** tab, paste the URL you just copied to the clipboard, add the **/auth** suffix at the end of the URL, and then select Enter:
 

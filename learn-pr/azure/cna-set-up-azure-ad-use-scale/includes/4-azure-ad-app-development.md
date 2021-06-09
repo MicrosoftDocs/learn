@@ -1,8 +1,8 @@
-Now that you have a better understanding of the basic principles and benefits of Azure AD, you need to determine how you can use its capabilities to implement authentication and authorization for your application. You realize that, to help secure your customers' data, you need to also ensure that your implementation will integrate with PostgreSQL access control mechanisms. You decided to start by identifying the tasks that are involved in developing, provisioning, and managing Azure AD applications. You also want to determine how you can address the need to provide access to your application to multiple customers.
+Now that you have a better understanding of the basic principles and benefits of Azure AD, you need to determine how you can use its capabilities to implement authentication and authorization for your application. You realize that, to help secure your customers' data, you need to ensure that your implementation will integrate with PostgreSQL access control mechanisms. You decided to start by identifying the tasks that are involved in developing, provisioning, and managing Azure AD applications. You also want to determine how you can address the need to provide access to your application to multiple customers.
 
 ## What are the primary application-related Azure AD tasks?
 
-To implement Azure AD-based applications, you'll need to perform a number of application-related management tasks, including its registration, configuring its permissions, and managing its secrets.
+To implement Azure AD-based applications, you'll need to perform several application-related management tasks, including registering, configuring its permissions, and managing its secrets.
 
 ### What is application registration?
 
@@ -50,7 +50,7 @@ There are two types of authentication available for service principals:
 
 Specifics of the authentication flow and the corresponding configuration details depend on the application type. The main categories of application types include:
 
-- Single-page applications (SPAs). These are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. These applications often use a framework such as Angular, React, or Vue. MSAL.js is the only Microsoft authentication library that supports SPAs.
+- Single-page applications (SPAs). These are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. These applications often use a framework such as Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports SPAs.
 - Public client applications. These are apps that always rely on signed-in users to obtain tokens. Such apps include desktop and mobile apps that call web APIs on behalf of signed-in users.
 - Confidential client applications. These obtain tokens on their own. Apps in this category include web apps that call a web API, web APIs that call another web API, Linux daemons, and Windows services.
 
