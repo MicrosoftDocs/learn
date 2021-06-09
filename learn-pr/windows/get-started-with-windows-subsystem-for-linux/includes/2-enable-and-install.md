@@ -30,7 +30,7 @@ In general, you want to choose a distribution that offers the software packages 
 
 2. On the distribution's page, select **Get**. *(Ubuntu is a fairly large download, more than 200 MB, and might take some time to install.)*
 
-For alternative installation methods or troubleshooting, see [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/windows/wsl/install-win10).
+For alternative installation methods or troubleshooting, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10).
 
 ![View of Linux distributions in Microsoft Store](../media/store.png)
 
@@ -57,4 +57,3 @@ You can also create your own custom Linux distribution for submission to the Mic
 
 ## Try it yourself
 In the next section, we'll take a look at how to move between the Windows and Linux file systems, perform a few basic Linux commands, move between Linux distributions, and discuss some general tips and tricks for using WSL.
-

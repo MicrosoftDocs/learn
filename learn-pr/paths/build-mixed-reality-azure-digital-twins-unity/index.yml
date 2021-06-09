@@ -28,8 +28,23 @@ levels:
 - beginner
 roles:
 - developer
+- business-owner
+- student
+- technology-manager
 products:
 - azure
+- azure-cloud-services
+- azure-cognitive-services
+- azure-digital-twins
+- azure-iot
+- azure-iot-hub
+- azure-signalr-service
+- azure-event-grid
+- azure-event-hubs
+- azure-functions
+- hololens
+- windows
+- windows-mixed-reality 
 modules:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 - learn.azure.build-3d-scene-mixed-reality-unity

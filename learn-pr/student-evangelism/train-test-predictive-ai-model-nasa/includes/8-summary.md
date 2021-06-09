@@ -23,5 +23,5 @@ Continue with the series and learn how to [Predict rocket launch delays with mac
 
 <!-- Links -->
 
-[PredictDelays]: https://docs.microsoft.com/learn/paths/machine-learning-predict-launch-delay-nasa/index
+[PredictDelays]: ../../../paths/machine-learning-predict-launch-delay-nasa/index.yml
 [VideoWalkthrough]: https://youtu.be/XoHR4p8AO9o?azure-portal=true

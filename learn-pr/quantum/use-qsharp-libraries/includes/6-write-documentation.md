@@ -32,5 +32,5 @@ For example, if you're using Visual Studio Code, IntelliSense enables autocomple
 
 This is precisely the documentation format used in the Q# source code to generate the official API documentation that you explored earlier in the module.
 
-You can find a full list of the recognized documentation headers on the [official Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments?azure-portal=true).
-The page includes more details and examples, including the ability to cross-reference other callables and add code examples to documentation. 
+You can find a full list of the recognized documentation headers on the [official Q# documentation page](/quantum/user-guide/language/programstructure/comments?azure-portal=true).
+The page includes more details and examples, including the ability to cross-reference other callables and add code examples to documentation.
