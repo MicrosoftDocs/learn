@@ -37,6 +37,6 @@ For more information about Spring Data Java Database Connectivity (JDBC), see Sp
 
 For more information about Application Insights for monitoring, see [Azure Application Insights](/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?azure-portal=true&WT.mc_id=java-10785-ropreddy).
 
-For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java/?WT.mc_id=java-10785-ropreddy%3fazure-portal%3dtrue) and [Working with Azure DevOps and Java](/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy&azure-portal=true).
+For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java/?WT.mc_id=java-10785-ropreddy&azure-portal=true) and [Working with Azure DevOps and Java](/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy&azure-portal=true).
 
 For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
