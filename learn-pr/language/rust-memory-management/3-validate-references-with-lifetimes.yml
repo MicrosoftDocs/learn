@@ -4,7 +4,7 @@ metadata:
   title: Validate references by using lifetimes
   description: Learn about how to use lifetimes to prevent dangling references.
   ms.date: 06/07/2021
-  author: meaghanlewis
+  author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
