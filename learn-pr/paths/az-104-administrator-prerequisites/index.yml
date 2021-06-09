@@ -51,12 +51,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"></img>
-
-    [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
-  :::column-end:::
-  :::row-end:::
-
   Complete all of the learning paths in the series if you are preparing for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104).
 prerequisites:  | 
   - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
