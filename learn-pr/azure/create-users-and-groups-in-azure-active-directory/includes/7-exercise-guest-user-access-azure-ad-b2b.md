@@ -89,5 +89,3 @@ You've now added a guest user to an application.
 1. Under *Email invitations* **Resend invite**, select **Yes**, and then confirm your resending the invitation. The **Manage invitations** pane reappears.
 
 1. Select **Done**.
-
-   ![Screenshot that shows the Resend invitation button on the user's profile.](../media/7-profile-resend-invitation.png)
