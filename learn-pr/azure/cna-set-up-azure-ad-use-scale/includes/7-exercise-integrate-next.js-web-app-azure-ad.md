@@ -16,23 +16,23 @@ To perform this exercise, you need:
 * A computer on which you either have installed or can install Node.js and Git.
 
 > [!NOTE]
-> For information regarding installing Node.js, refer to the [Node.js Downloads web site](https://nodejs.org/en/download/?azure-portal=true). For information regarding Git, refer to the [Git downloads page](https://git-scm.com/downloads?azure-portal=true). Install both before you start this exercise.
+> For information about installing Node.js, refer to [Node.js Downloads](https://nodejs.org/en/download/?azure-portal=true). For information about Git, refer to [Git downloads](https://git-scm.com/downloads?azure-portal=true). Install both before you start this exercise.
 
 ## Register an application with Azure AD
 
-To implement a sample Next.js-based application that uses Azure AD authentication to access an Azure Database for PostgreSQL database, you first have to create an Azure AD application object and the corresponding security principal. This will allow the Next.js-based application to impersonate Azure AD users when accessing database objects.
+To implement a sample Next.js-based application that uses Azure AD authentication to access an Azure Database for PostgreSQL database, you must first create an Azure AD application object and the corresponding security principal. This will allow the Next.js-based application to impersonate Azure AD users when accessing database objects.
 
-1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
-1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
+1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory**, and in the list of results, select **Azure Active Directory**.
 1. On the **Azure Active Directory** blade, in the vertical menu, in the **Manage** section, select **App registrations**.
 1. On the **App registrations** blade, select **+ New registration**.
 1. On the **Register an application** blade, in the **Name** text box, enter **cna-nextjs-app**.
-1. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected, in the **Redirect URI (optional)** section, set the **Single-page application (SPA)** entry to **http://localhost:3000/**, and then select **Register**.
+1. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Single-page application (SPA)** entry to **http://localhost:3000/**, and then select **Register**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
     > [!NOTE]
-    > You have the option of configuring multitenant support for your Azure AD-registered applications at this point. However, as mentioned, detailed coverage of this approach is outside the scope of this module.
+    > You have the option of configuring multitenant support for your Azure AD-registered applications at this point. However, detailed coverage of this approach is outside the scope of this module.
 
     > [!NOTE]
     > After you deploy your application, you'll need to modify the **Redirect URI (optional)** value to reflect its actual URL.
@@ -45,7 +45,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal.":::
 
-1. On the **cna-nextjs-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **API my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database** and then, in the list of results, select **Azure OSSRDBMS Database**.
+1. On the **cna-nextjs-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **API my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database**, and then in the list of results, select **Azure OSSRDBMS Database**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
@@ -53,7 +53,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
 
-1. Back on the **cna-nextjs-app \| API permissions** blade, select **Grant admin consent for Default Directory** and, when prompted for confirmation, select **Yes**.
+1. Back on the **cna-nextjs-app \| API permissions** blade, select **Grant admin consent for Default Directory**, and when prompted for confirmation, select **Yes**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
 
@@ -63,7 +63,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
 ## Implement a simple, Azure AD-integrated Next.js-based application
 
-With the application registered in the Azure AD tenant, you can now proceed with its implementation. To simplify your task, you'll clone a GitHub repo containing a sample Next.js code and customize it to integrate it with your Azure AD tenant.
+With the application registered in the Azure AD tenant, you can now proceed with its implementation. To simplify your task, you'll clone a GitHub repo containing a sample Next.js code and customize it to integrate with your Azure AD tenant.
 
 1. On your computer, start the Node.js command prompt.
 1. From the Node.js command prompt, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
@@ -78,11 +78,11 @@ With the application registered in the Azure AD tenant, you can now proceed with
     cd wp2104-m06u07
     ```
 
-1. Use your preferred text editor to review the content of the **./src/App.js** file, which retrieves an access token from Azure Active Directory for a single-page application:
+1. Use your preferred text editor to review the content of the **./src/App.js** file, which retrieves an access token from Azure AD for a single-page application:
 
     > [!NOTE]
-    > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-react?azure-portal=true)
-
+    > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-react?azure-portal=true).
+<!--ID/SME: I suggest changing "Please sign-in to see..." to "Please sign in to observe..." in the following code-->
     The **./src/App.js** file has the following content:
 
     ```json
@@ -155,7 +155,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     ```
 
 1. Use your preferred text editor to review the content of the **./src/authConfig.js** file, which stores the information required to identify the target Azure AD application that you registered in the previous task of this exercise.
-
+<!--ID/SME: Replace "see" with "refer to" in the following code-->
     The **./src/authConfig.js** file has the following content:
 
     ```javascript
@@ -226,12 +226,12 @@ With the application registered in the Azure AD tenant, you can now proceed with
     ```
 
 1. Within the text editor displaying the content of the **./src/authConfig.js** file, replace the `<client_ID>` and `<tenant_ID>` placeholders with their respective values, which you identified in the previous task of this exercise.
-1. Within the text editor displaying the content of the **./src/authConfig.js** file, replace the entry `scopes: ["User.Read"]` with `scopes: ["User.Read","https://ossrdbms-aad.database.windows.net/user_impersonation"]`. 
+1. Within the text editor displaying the content of the **./src/authConfig.js** file, replace the entry `scopes: ["User.Read"]` with `scopes: ["User.Read","https://ossrdbms-aad.database.windows.net/user_impersonation"]`.
 1. Save the changes and close the file.
 
 ## Validate the functionality of the Next.js-based application
 
-You're ready to test the functionality of the app. While you could containerize it at this point, for the sake of simplicity, you'll run it locally on your computer first, within the Node.js development environment. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
+You're ready to test the functionality of the app. You could containerize it, but for simplicity you'll run it locally on your computer first, within the Node.js development environment. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
 1. From the Node.js command prompt, run the following command to install the dependency packages of the sample Next.js application:
 
@@ -261,11 +261,11 @@ You're ready to test the functionality of the app. While you could containerize 
     > This will automatically open a browser window displaying the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page.
 
 1. Close the web browser window displaying **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
-1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In** and then, in the expanding menu, select **Sign in using Popup**.
+1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-sing-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
 
-1. When prompted to sign in, authenticate by using the **adatumuser1** userPrincipalName and its password **Pa55w.rd1234**.
+1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password **Pa55w.rd1234**.
 
     > [!NOTE]
     > You created this user account in the first exercise of this module.
@@ -275,14 +275,14 @@ You're ready to test the functionality of the app. While you could containerize 
     :::image type="content" source="../media/7-azure-ad-next.js-app-request-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Request Profile Information button.":::
 
     > [!NOTE]
-    > Verify that the output includes the Email, Id, and the access token of the adatumuser1 Azure AD user account.
+    > Verify that the output includes the Email, Id, and the access token of the **adatumuser1** Azure AD user account.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the adatumuser1 profile information.":::
 
 1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercises.
 
     > [!NOTE]
-    > The URL should have the following format `https://<webapp_name>.azurewebsites.net/auth`
+    > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
     > [!NOTE]
     > Verify that the resulting web page displays the inventory data.
@@ -291,8 +291,8 @@ You're ready to test the functionality of the app. While you could containerize 
 
 ## Results
 
-Congratulations! You completed the third exercise of this module. In its exercise, you implemented a simple Next.js-based application that queries the database by relying on Azure AD authentication.
+Congratulations! You completed the third exercise of this module. In this exercise, you implemented a simple Next.js-based application that queries the database by relying on Azure AD authentication.
 
 ## Clean up the resources
 
-To avoid unnecessary charges due to use of Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, select the **Delete resource group** entry in the toolbar, in the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group and then, select **Delete**.
+To avoid unnecessary charges from using Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.

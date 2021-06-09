@@ -5,7 +5,7 @@
 
 ## What is Azure AD and what are its benefits?
 
-Azure AD is Microsoft's cloud-based identity and access management service. It provides authentication capabilities and facilitates authorization through its integration with practically all of Microsoft's cloud services and a wide range of third-party software as a service (SaaS) offerings. It supports modern, industry-standard authentication and authorization protocols.
+Azure AD is the cloud-based identity and access management service for Microsoft. It provides authentication capabilities and facilitates authorization through its integration with most Microsoft cloud services and a wide range of third-party software as a service (SaaS) offerings. It supports modern, industry-standard authentication and authorization protocols.
 
 > [!NOTE]
 > Through its integration with Windows Server Active Directory, Azure AD also helps protect internal resources, such as apps on your corporate network and intranet, along with any cloud apps your organization develops.
@@ -19,16 +19,16 @@ For each of these scenarios, you have the option to implement additional control
 
 ## What is the role of Azure AD in cloud-native applications?
 
-As an app developer, you can use Azure AD for authenticating and authorizing access for your applications and their data. Azure AD offers programmatic methods that facilitate building custom apps. It also serves as a single location to store digital identities-related information, including support for application registration and their respective security principals. This makes it possible to provide granular access to your internally developed applications to each user, guest, or group. It also enables applications to operate independently or on behalf of their users when accessing other Azure AD-protected resources, services, and applications.
+As an app developer, you can use Azure AD for authenticating and authorizing access for your applications and their data. Azure AD offers programmatic methods that help build custom apps. It also serves as a single location to store digital identities-related information, including support for application registration and their respective security principals. This makes it possible to provide granular access to your internally developed applications to each user, guest, or group. It also enables applications to operate independently or on behalf of their users when accessing other Azure AD-protected resources, services, and applications.
 
-Cloud-native applications rely on open HTTP-based protocols to authenticate security principals, because both clients and applications could be running anywhere and on any platform or device. Azure AD, as a cloud-native identity solution, provides this functionality, including its REST-based interface, as well as support for Graph API and OData-based queries.
+Cloud-native applications rely on open HTTP-based protocols to authenticate security principals, because both clients and applications could be running anywhere and on any platform or device. Azure AD, as a cloud-native identity solution, provides this functionality, including its REST-based interface, and support for Graph API and OData-based queries.
 
 Azure AD facilitates implementing a range of scenarios commonly encountered when building cloud-native applications, such as:
 
 - Users accessing web applications on a web browser.
-- Users accessing back-end web APIs from browser-based apps.
-- Users accessing back-end web APIs from mobile apps.
-- Applications accessing back-end web APIs without an active user or user interface, using their own identity.
+- Users accessing backend web APIs from browser-based apps.
+- Users accessing backend web APIs from mobile apps.
+- Applications accessing backend web APIs without an active user or user interface, using their own identity.
 - Applications interacting with other web APIs, acting on a user's behalf with that user's delegated credentials.
 
-In each of these scenarios, applications need to be secured against unauthorized use. At a minimum, this requires authenticating the security principal requesting access to a resource. This authentication might use one of several common protocols such as Security Assertion Markup Language (SAML) V2.0, WS-Fed, or OpenID Connect. Communicating with Web APIs typically relies on the OAuth2 protocol and its support for access tokens.
+In each of these scenarios, applications need to be secured against unauthorized use. At a minimum, this requires authenticating the security principal requesting access to a resource. This authentication might use one of several common protocols such as Security Assertion Markup Language (SAML) V2.0, WS-Fed, or OpenID Connect. Communicating with web APIs typically relies on the OAuth2 protocol and its support for access tokens.
