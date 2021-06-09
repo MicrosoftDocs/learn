@@ -1,6 +1,6 @@
 ﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction through well-defined programming interfaces.
 
-These components can include software running on IoT devices and a range of Azure services such as Azure IoT Central, Azure Functions, and Azure Cosmos DB, which are designed for collection, processing, and storage of device telemetry.
+These components can include software running on IoT devices and a range of Azure services such as Azure IoT Central, Azure Functions, and Azure Cosmos DB, which can be used for collection, processing, and storage of device telemetry.
 
 ## Scenario: Generate, collect, and process IoT telemetry
 
@@ -10,9 +10,9 @@ Your team has developed a refrigerator-inventory app that businesses can use to 
 
 Your team has also designed and implemented the prototype of a solution that uses Azure IoT Central for IoT telemetry collection and processing. This prototype will serve as the basis for extending the IoT data pipeline that you'll focus on in this module.
 
-Because of the loosely coupled nature and modularity of cloud-native applications, you don't want to use them to store telemetry data. Instead, you're considering the use of managed data stores, such as Cosmos DB for selectively aggregated content and Azure Blob Storage for raw metrics. You want to evaluate their suitability for streaming scenarios. Based on your initial research, you found out that Cosmos DB offers a range of performance and functionality benefits compared to traditional, relational data stores, such as Azure Database for PostgreSQL. You also determined that Azure Blob Storage can accommodate high data throughput requirements while providing practically unlimited capacity at low cost.
+Because of the loosely-coupled nature of cloud-native applications, you can choose managed data stores when that makes more sense than running your own in a container. In this scenario, you're considering the use of managed data stores such as Cosmos DB for selectively aggregated content and Azure Blob Storage for raw metrics. You want to evaluate their suitability for streaming scenarios. Based on your initial research, you found out that Cosmos DB offers a range of performance and functionality benefits compared to traditional, relational data stores, such as Azure Database for PostgreSQL. You also determined that Azure Blob Storage can accommodate high data throughput requirements while providing practically unlimited capacity at low cost.
 
-Because of the loosely coupled nature of cloud-native applications, your team can develop and deploy an IoT service with no effect on the existing inventory service.
+Because of the loosely-coupled nature of cloud-native applications, your team can develop and deploy an IoT service with no effect on the existing inventory service.
 
 ## Prerequisites
 
