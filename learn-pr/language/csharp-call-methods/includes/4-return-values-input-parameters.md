@@ -114,7 +114,7 @@ One of the top search results should lead to a URL that begins with `https://doc
 
 Here's the link in case of a problem finding it using a search engine:
 
-[Random.Next Method (System) | Microsoft Docs](https://docs.microsoft.com/dotnet/api/system.random.next?azure-portal=true)
+[Random.Next Method (System) | Microsoft Docs](/dotnet/api/system.random.next?azure-portal=true)
 
 The documentation follows a standard format for each class and method in the .NET Class Library.
 

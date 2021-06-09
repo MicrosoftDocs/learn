@@ -18,6 +18,6 @@ To determine your mobile device management and mobile application management nex
 
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
-- [Understand Microsoft Intune](https://docs.microsoft.com/learn/modules/intro-to-endpoint-manager/3-intune/?azure-portal=true)
-- [Understand Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/learn/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
+- [Understand Microsoft Intune](/learn/modules/intro-to-endpoint-manager/3-intune/?azure-portal=true)
+- [Understand Microsoft Endpoint Configuration Manager](/learn/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager/?azure-portal=true)

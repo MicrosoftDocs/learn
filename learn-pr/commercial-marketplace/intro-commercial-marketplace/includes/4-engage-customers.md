@@ -16,7 +16,7 @@ Regardless of the offer type you choose to publish, Microsoft will send you lead
 
 ![Screenshot of consent to share customer contact information with publisher for CRM](..\media\10-consent-share-contact.png)
 
-If you want more information about leads, read the documentation on [customer leads from your marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
+If you want more information about leads, read the documentation on [customer leads from your marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
 ## Listing options
 
@@ -59,4 +59,4 @@ When customers click the “Get It Now ” button on your product’s landing pa
 
 Transact offers are billed against an existing Microsoft account or a credit card transaction. For offers that require the use of Azure infrastructure in a customer’s Azure account, the associated infrastructure/software costs appear on the customer’s consolidated Microsoft invoice. This simplified acquisition process is a significant benefit for customers, as they don’t need to manage a separate invoice from your company.
 
-For more information on listing options, you can read our [documentation on listing options](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type#choose-a-listing-option).
+For more information on listing options, you can read our [documentation on listing options](/azure/marketplace/determine-your-listing-type#choose-a-listing-option).

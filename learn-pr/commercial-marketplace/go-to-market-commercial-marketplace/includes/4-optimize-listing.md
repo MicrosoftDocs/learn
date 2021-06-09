@@ -32,4 +32,4 @@ In addition to the information you provide customers in the online stores, you c
 
 - **Sell through Microsoft**: Publishing an offer that users can purchase through Microsoft gives your customers the ability to start using your software with less friction. We recommend that you sell your solution through Microsoft to let your customers self-serve.
 
-For more detail on these suggestions and a longer list of recommendations, you can download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](https://docs.microsoft.com/azure/marketplace/gtm-marketing-best-practices) from our documentation.
+For more detail on these suggestions and a longer list of recommendations, you can download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](/azure/marketplace/gtm-marketing-best-practices) from our documentation.
