@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
   - Basic knowledge of big data concepts, including ingestion, blob storage, processing, and visualization.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -35,9 +35,5 @@ units:
 - learn.introduction-to-azure-data-lake-storage.4-when-to-use-azure-data-lake-storage
 - learn.introduction-to-azure-data-lake-storage.5-knowledge-check
 - learn.introduction-to-azure-data-lake-storage.6-summary
-###########################################################################
-###
-### TODO: verify if this should start as temporary/default badge
-###
 badge:
   uid: learn.introduction-to-azure-data-lake-storage.badge

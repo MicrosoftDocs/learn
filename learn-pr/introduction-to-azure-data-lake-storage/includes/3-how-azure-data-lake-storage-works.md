@@ -10,7 +10,7 @@ In this unit, you'll learn about:
 
 Before you can do anything useful with Azure Data Lake Storage, you need to move data into your storage account. This process is called *ingesting* the data. Azure Data Lake Storage offers many different data ingestion methods. The method you use depends on the type of data and where the data is stored or generated.
 
-:::image type="content" source="../media/3-how-azure-data-lake-storage-works-ingestion.png" alt-text="Ad hoc data and streaming data are either bulk ingested or ad hoc ingested in Azure Data Lake Storage.":::
+:::image type="content" source="../media/3-how-azure-data-lake-storage-works-ingestion.png" alt-text="Ad hoc data and streaming data are either bulk ingested or ad hoc ingested in Azure Data Lake Storage." lightbox="../media/3-how-azure-data-lake-storage-works-ingestion.png":::
 
 ### Ingesting ad hoc data
 
@@ -120,4 +120,4 @@ When an operation occurs that requires security principal&ndash;based authorizat
     - If no, continue with Step 3.
 1. Deny the security principal access to the resource.
 
-:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="A flowchart depicts how Azure Data Lake Storage evaluates permissions, as defined in the previous steps.":::
+:::image type="content" source="../media/3-how-azure-data-lake-storage-works-access-control.png" alt-text="A flowchart depicts how Azure Data Lake Storage evaluates permissions, as defined in the previous steps." lightbox="../media/3-how-azure-data-lake-storage-works-access-control.png":::

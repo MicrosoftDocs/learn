@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-data-lake-storage.5-knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
@@ -8,7 +8,7 @@ metadata:
   ms.date: 4/23/2021
   author: paulwp
   ms.author: v-pmcfedries
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |
 quiz:
