@@ -33,6 +33,7 @@ products:
  - azure-stack-hci
  - azure-stack
  - azure-stack-edge
+ - azure-stack-hub
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
 - learn.azure.intro-to-azure-stack.2-azure-stack

@@ -18,4 +18,4 @@ These questions allow you to:
 |**Describe the incident response process for the product.**|<ul><li>Strategies used to protect, detect, and respond to incidents for the product.</li><li>How the enterprise minimizes exposure to risk, including steps to avoid loss or destruction.</li><li>Trainings, table-top exercises, and other activities.</li></ul>|
 
 > [!TIP]
-> Check out [Azure incident response](https://docs.microsoft.com/azure/security/benchmarks/security-control-incident-response) for enterprise incident response best practices.
+> Check out [Azure incident response](/azure/security/benchmarks/security-control-incident-response) for enterprise incident response best practices.

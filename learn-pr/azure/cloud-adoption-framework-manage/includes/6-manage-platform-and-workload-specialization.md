@@ -6,7 +6,7 @@ Workload-specific management usually requires in-depth knowledge about the speci
 
 Decentralized, workload-specific operations aren't scalable across an enterprise. But a study of the portfolio will often identify common platforms that those workloads run on. Those technology platforms (also known as technology stacks) are often at the heart of workload-specific incidents. When priority workloads share a common technology platform, it might be more valuable for central IT to focus on improving the operations of those platforms and thereby reduce or avoid workload-specific operations.
 
-Examples of technology platforms might include data platforms, analytics platforms, container platforms, Windows Virtual Desktop platforms, enterprise resource planning (ERP) platforms, or even mainframes.
+Examples of technology platforms might include data platforms, analytics platforms, container platforms, Azure Virtual Desktop platforms, enterprise resource planning (ERP) platforms, or even mainframes.
 
 ## Advanced operations
 
@@ -21,4 +21,4 @@ The following table shows tools used for workload-specific management:
 
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
-| Application Insights | Advanced application monitoring with dependency mapping, application dashboard, application map, usage, and deep tracking | [Application Insights overview](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) |
+| Application Insights | Advanced application monitoring with dependency mapping, application dashboard, application map, usage, and deep tracking | [Application Insights overview](/azure/azure-monitor/app/app-insights-overview) |

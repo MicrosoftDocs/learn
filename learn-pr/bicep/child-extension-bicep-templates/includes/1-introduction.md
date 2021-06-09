@@ -34,5 +34,5 @@ To follow along with the exercises in the module, you'll need:
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.
 - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli.md) tools, installed locally.
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps.md), installed locally.
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.

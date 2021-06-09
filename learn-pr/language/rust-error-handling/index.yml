@@ -38,3 +38,4 @@ units:
 - learn.language.rust-error-handling.8-summary
 badge:
   uid: learn.language.rust-error-handling.badge
+hidden: true

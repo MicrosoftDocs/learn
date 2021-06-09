@@ -14,23 +14,15 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template that contains a storage account
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
-   ```bicep
-   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-     name: 'toylaunchstorage'
-     location: 'eastus'
-     sku: {
-       name: 'Standard_LRS'
-     }
-     kind: 'StorageV2'
-     properties: {
-       accessTier: 'Hot'
-     }
-   }
-   ```
+   :::code language="bicep" source="code/4-template.bicep" range="1-11":::
 
    > [!TIP]
    > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than what's listed here.
@@ -55,7 +47,7 @@ Run the following code from the terminal in Visual Studio Code to deploy the Bic
 az deployment group create --template-file main.bicep
 ```
 
-You'll see ```Running...``` in the terminal.
+You'll see `Running...` in the terminal.
 
 ::: zone-end
 
@@ -126,25 +118,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
-   ```bicep
-   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: 'toy-product-launch-plan-starter'
-     location: 'eastus'
-     sku: {
-       name: 'F1'
-       tier: 'Free'
-     }
-   }
-
-   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-     name: 'toy-product-launch-1'
-     location: 'eastus'
-     properties: {
-       serverFarmId: appServicePlan.id
-       httpsOnly: true
-     }
-   }
-   ```
+   :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
 1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 

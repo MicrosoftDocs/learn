@@ -18,9 +18,9 @@ The Delivery Plans Marketplace extension provides the features needed to create 
 1. On the **Azure DevOps** tab, search for "Delivery Plans".
 1. Select **Delivery Plans** from the results.
 
-    ![A screenshot showing the Delivery Plans Marketplace extension](../media/5-delivery-plans-extension.png)
+    ![A screenshot showing the Delivery Plans Marketplace extension.](../media/5-delivery-plans-extension.png)
 
-1. Select it and then **Get it Free**.
+1. Select **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.
 1. Select **Install**.
 
@@ -29,7 +29,10 @@ The Delivery Plans Marketplace extension provides the features needed to create 
 Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
 
 1. From Azure DevOps, navigate to your project.
-1. Under **Boards**, select **Plans**.
+1. Under **Boards**, select **Delivery Plans**.
+
+    > [!IMPORTANT]
+    > Ensure that you select **Delivery Plans**, and not **Plans**.
 1. Select **New plan**.
 1. In the form, enter these fields:
     * **Name**: _Space Game Delivery Plan_
@@ -37,35 +40,39 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
     * Add the **Space Game Engine Team's Backlog items** backlog using the **Add team** option
 1. Select **Create**.
 
-    ![Creating a delivery plan](../media/5-create-delivery-plan.png)
+    :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="A screenshot showing the final delivery plan settings. Both the Web team and the Engine team share a common set of backlog items.":::
 
     > [!NOTE]
     > The team project generated for this module uses the *Scrum* process and not the *Basic* process used in other modules in this learning path. While the Basic process uses *Issues*, the Scrum process uses *Backlog items*, which are functionally the same for the purposes of this module. You can use Delivery Plans with either process.
 
 ### Add schedule milestone markers
 
-Milestone markers can be added to the delivery plan as reference points. These help you plan work within the context of significant or external dates.
+Milestone markers can be added to the delivery plan as reference points. These help you plan work within the context of significant or external dates. Let's add a few markers now. To do so:
 
-1. Select the **Configure plan settings** cog.
+1. Select your delivery plan.
+1. Select **Settings**, then **Markers**.
 
-	![Configure plan settings](../media/5-configure-plan-settings.png)
+    :::image type="content" source="../media/5-configure-plan-settings.png" alt-text="Selecting the Markers tab from the delivery plan settings.":::
 
 1. From the **Markers** tab, select **Add marker**.
 1. In the form, enter these fields:
-	* Select a date one week from now
-	* **Label**: **Cliffchella**
-	* **Color**: **Red**
+    * Select a date one week from now
+    * **Label**: **Cliffchella**
+    * **Color**: **Red**
 
-	![Add a milestone marker](../media/5-add-marker.png)
+    :::image type="content" source="../media/5-add-marker.png" alt-text="Adding the milestone marker for the Cliffchella event.":::
 
 1. Repeat the process to add markers for:
-	* **Beta**: five weeks from today (blue)
-	* **Annual company party**: six weeks from today (green)
+    * **Beta**: five weeks from today (blue)
+    * **Annual company party**: six weeks from today (green)
 1. Select **Save**.
+1. Use the **Scroll calendar** and **Zoom out** controls to bring all markers into view.
 
-1. Select the blue marker at the top of the design plan. It will expand to show that it represents the beta milestone. 
+    :::image type="content" source="../media/5-show-all-markers.png" alt-text="Bringing all four markers into view.":::
 
-	![Analyze delivery plan milestones](../media/5-analyze-milestones.png)
+1. Select the **Beta** marker at the top of the design plan. A solid line shows the boundary of the beta milestone.
+
+    :::image type="content" source="../media/5-analyze-milestones.png" alt-text="Selecting the Beta milestone to show the boundary of the beta milestone.":::
 
 ### Optimize the work schedule
 
@@ -73,10 +80,10 @@ Milestone markers can be added to the delivery plan as reference points. These h
 1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
 1. This change opens a significant amount of bandwidth in **Sprint 3**. Since that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 
-	![An optimized work schedule](../media/5-adjust-work-schedule.png)
+    ![A screenshot that shows the direction in which to move work items.](../media/5-adjust-work-schedule.png)
 
 Your final sprint plan should look similar to this:
 
-![An optimized work schedule](../media/5-optimized-work-schedule.png)
+:::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="A screenshot showing the optimized work schedule.":::
 
 You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up to date.

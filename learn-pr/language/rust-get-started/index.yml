@@ -39,3 +39,4 @@ units:
 - learn.language.rust-get-started.9-summary
 badge:
   uid: learn.language.rust-get-started.badge
+hidden: true

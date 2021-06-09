@@ -79,7 +79,7 @@ The backlog lists all of the different tasks in the project. But there's a bette
 
 :::image type="content" source="../media/new-project-epics.png" alt-text="Screenshot that shows how to change the view to the Epic hierarchy." border="false":::
 
-This new view is hierarchical. To drill into each phase, select the carrot next to any work item. That will expose its child work items.
+This new view is hierarchical. To drill into each phase, select the caret next to any work item. That will expose its child work items.
 :::image type="content" source="../media/new-project-home.png" alt-text="Screenshot that shows expanding nodes in the hierarchy." border="false":::
 
 The following list explains Azure DevOps terminology in more traditional project terms:
