@@ -72,7 +72,7 @@ Azure is a cloud service that gives you the compute power to run code in a secur
 
 :::image type="content" source="../media/azure-portal.png" alt-text="Screenshot of the Azure portal with our resource group and Custom Vision resource.":::
 
-What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](/learn/browse/?azure-portal=true%3fexpanded%3dazure&terms=cognitive+services) available.
+What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](/learn/browse/?azure-portal=true&expanded=azure&terms=cognitive+services) available.
 
 ### Custom Vision resource
 
@@ -84,7 +84,7 @@ You can see there are a number of resources in the menu on the left that start t
 
 Everything that you do in the Custom Vision portal will be using the compute resources that you provisioned here in the Custom Vision resource in Azure. Custom Vision also has an SDK. Like the portal, the calls to the SDK would be using what was provisioned on Azure as part of this resource.
 
-If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](/learn/browse/?azure-portal=true%3fexpanded%3dazure&terms=custom+vision).
+If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](/learn/browse/?azure-portal=true&expanded=azure&terms=custom+vision).
 
 ### Custom Vision portal
 

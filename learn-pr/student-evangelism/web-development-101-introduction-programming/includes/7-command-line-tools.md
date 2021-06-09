@@ -15,7 +15,7 @@ Your command-line tool options differ depending on the operating system you use.
 
 ### Windows
 
-- [PowerShell](/powershell/scripting/overview?azure-portal=true&preserve-view=true&view=powershell-7%3fWT.mc_id%3dacademic-13441-cxa) 💻
+- [PowerShell](/powershell/scripting/overview?azure-portal=true&preserve-view=true&view=powershell-7&WT.mc_id=academic-13441-cxa) 💻
 - [Command Line](/windows-server/administration/windows-commands/windows-commands?azure-portal=true&WT.mc_id=academic-13441-cxa) (also known as CMD) 💻
 - [Windows Terminal](/windows/terminal/?azure-portal=true&WT.mc_id=academic-13441-cxa)
 - [mintty](https://mintty.github.io/?azure-portal=true)
@@ -24,7 +24,7 @@ Your command-line tool options differ depending on the operating system you use.
 
 - [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac?azure-portal=true) 💻
 - [iTerm](https://iterm2.com/?azure-portal=true)
-- [PowerShell](/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true&preserve-view=true&view=powershell-7%3fWT.mc_id%3dacademic-13441-cxa)
+- [PowerShell](/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true&preserve-view=true&view=powershell-7&WT.mc_id=academic-13441-cxa)
 
 ### Linux
 
