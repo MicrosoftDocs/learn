@@ -48,35 +48,39 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    ![Screenshot that shows the New Application button.](../media/7-enterprise-application.png)
 
-1. Search for **Twitter**, and select **Create**.
+1. Search for **DocuSign** and select **Create**.
 
 1. Select **Users and groups** > **Add user/group**.
 
-   ![Screenshot that shows the Twitter application overview page.](../media/7-application-users-groups.png)
+    :::image type="content" source="../media/7-application-users-groups.png" alt-text="Screenshot that shows the Docusign application user and groups page.":::
 
 1. In **Add Assignment**, select **Users and groups**.
 
-1. Select the guest user you added in the previous exercise, and select **Select**.
+1. Select the guest user you added in the previous exercise, and **Select**.
 
 1. Select **Assign**. You now see the user in the list for this application.
 
 1. To check that the correct access level is set, select the user in the list.
 
-    ![Screenshot that shows a selected check box for the user.](../media/7-select-user.png)
+    :::image type="content" source="../media/7-select-user.png" alt-text="Screenshot that shows the user selected on the users and groups page.":::
 
 1. Select **Edit**.
+
+1. Select **Select Role** > **DocuSign Sender** > **Select** to make sure they have the correct access.
+
+    :::image type="content" source="../media/7-select-role.png" alt-text="Screenshot that shows role selected for user.":::
 
 1. Select **Select Role** > **Default Access** and **Select** to make sure they have the correct access.
 
 1. When the invitation arrives, the user accepts it, and can then access the application.
 
-    ![Screenshot that shows the application link available after the invitation is accepted.](../media/7-application-visible-invitation-accepted.png)
+    :::image type="content" source="../media/7-application-visible-invitation-accepted.png" alt-text="Screenshot that shows the DocuSign app in the browser for the guest user after they've accepted the invitation.":::
 
 You've now added a guest user to an application.
 
 ## Resend invitations to guest users
 
- If the guest user didn't receive the first email invitation, you can resend an invitation email.
+If the guest user didn't receive the first email invitation, you can resend an invitation email.
 
 1. In your Azure AD organization, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
@@ -89,3 +93,4 @@ You've now added a guest user to an application.
 1. Under *Email invitations* **Resend invite**, select **Yes**, and then confirm your resending the invitation. The **Manage invitations** pane reappears.
 
 1. Select **Done**.
+
