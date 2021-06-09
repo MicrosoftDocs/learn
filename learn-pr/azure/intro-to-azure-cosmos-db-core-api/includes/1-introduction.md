@@ -1,6 +1,6 @@
 Today's apps deliver innovation in all facets of life. For a business to remain competitive, companies must build apps and products that work with real-time data, are resilient, and flexible.
 
-Modern apps thrive on real-time data from different sources and shaped in different forms. apps' usefulness is often in their ability to move and use data.
+Modern apps thrive on real-time data from different sources and shaped in different forms. An apps' usefulness is often in their ability to move and use data.
 
 Developers require flexibility in their platforms so they can be responsive to business changes. Developers also require their entire application ecosystem to flexibly handle changes in the velocity, volume, or shape of their data. This flexibility enables developers to develop new features more rapidly than they ever have before.
 
@@ -22,7 +22,7 @@ Here, you'll see how Azure Cosmos DB and its SQL API can be used for this type o
 
 By the end of this module, you'll be able to:
 
-- Evaluate whether Azure Cosmos CB SQL API is the right database for your application.
+- Evaluate whether Azure Cosmos DB SQL API is the right database for your application.
 - Describe how the features of the Azure Cosmos DB SQL API is appropriate for modern applications.
 
 ## Prerequisites

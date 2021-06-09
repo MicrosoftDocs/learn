@@ -29,7 +29,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=manage-database-changes&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-database-changes&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
@@ -68,11 +68,11 @@ To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**. In the menu, select **Boards**.
 
-    ![Azure DevOps, showing the Boards menu.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Connect the web app to a database** work item, select the down arrow at the bottom of the card. Assign the work item to yourself.
 
-    ![Azure Boards showing assigning the work item to yourself.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 

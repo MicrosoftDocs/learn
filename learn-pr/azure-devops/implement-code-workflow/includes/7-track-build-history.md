@@ -23,24 +23,23 @@ The dashboard is a customizable area in Azure DevOps where you can add widgets a
 
 1. In Azure DevOps, select **Overview**, and then select **Dashboards**.
 
-    ![Azure Pipelines showing the Dashboards menu item](../media/7-menu-dashboards.png)
+    :::image type="content" source="../media/7-menu-dashboards.png" alt-text="A screenshot of Azure Pipelines showing the location of the Dashboards menu item.":::
+
 1. Select **Add a widget**.
 1. In the **Add widget** pane, search for **Build History**.
 1. Drag the **Build History** tile to the canvas.
 1. Select the gear icon to configure the widget.
 
-      a. Keep the **Build History** title.
-      
-      b. In the **Pipeline** drop-down list, select your pipeline.
-
-      c. Keep **All branches** selected.
+    1. Keep the **Build History** title.
+    1. In the **Pipeline** drop-down list, select your pipeline.
+    1. Keep **All branches** selected.
 1. Select **Save**.
 1. Select **Done Editing**.
 
    The **Build History** widget is displayed on the dashboard.
 
-    ![Azure Pipelines showing the Build History widget](../media/7-build-history-widget.png)
-1. Hover over each build to view the build number, when the build was completed, and the elapsed build time. 
+    :::image type="content" source="../media/7-build-history-widget.png" alt-text="A screenshot of Azure Pipelines showing the Build History widget.":::
+1. Hover over each build to view the build number, when the build was completed, and the elapsed build time.
 
    Each build succeeded, so the bars on the widget are all green. If the build had failed, it would appear in red.
 1. Select one of the bars to drill down into that build.

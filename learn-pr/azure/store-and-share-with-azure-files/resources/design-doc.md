@@ -120,6 +120,6 @@ Identify the subtasks of *Store and share files in your application with Azure F
 ## Notes
 
 Reference links: 
-- [Tutorial: Extend Windows file servers with Azure File Sync](https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-extend-servers)
-- [Data access method](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-planning#data-access-method)
-- [Quickstart: Create and manage Azure Files share with Windows virtual machines](https://docs.microsoft.com/en-gb/azure/storage/files/storage-files-quick-create-use-windows#create-a-share-snapshot)
+- [Tutorial: Extend Windows file servers with Azure File Sync](/azure/storage/files/storage-sync-files-extend-servers)
+- [Data access method](/azure/storage/files/storage-files-planning#data-access-method)
+- [Quickstart: Create and manage Azure Files share with Windows virtual machines](/en-gb/azure/storage/files/storage-files-quick-create-use-windows#create-a-share-snapshot)

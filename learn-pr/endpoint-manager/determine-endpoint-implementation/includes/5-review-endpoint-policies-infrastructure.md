@@ -12,4 +12,4 @@ To determine your future endpoint management plan, you can start by assessing yo
 - Review the current structure of your organization's device and user groups.
 - Determine the structure of the new groups that you can create in Endpoint Manager.
 
-To determine the specific tasks you can following to successfully assess your existing and future endpoint management and infrastructure, see [Microsoft Intune planning guide - Review existing policies and infrastructure](https://docs.microsoft.com/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-4-review-existing-policies-and-infrastructure)
+To determine the specific tasks you can following to successfully assess your existing and future endpoint management and infrastructure, see [Microsoft Intune planning guide - Review existing policies and infrastructure](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-4-review-existing-policies-and-infrastructure)

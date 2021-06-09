@@ -1,4 +1,3 @@
-
 In this exercise, you download and run the Azure Digital Twins explorer sample locally, connect it to your Azure Digital Twins instance, and set up your chocolate factory digital twin.
 
 1. Download the [Azure Digital Twins explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
@@ -11,7 +10,7 @@ In this exercise, you download and run the Azure Digital Twins explorer sample l
 
 For the explorer sample to run properly, you need to sign in locally to the Azure subscription where you've deployed the Azure Digital Twins instance. This is because you create an environment variable that references those credentials. When you run the explorer sample locally, it looks for this environment variable so that it can connect the sample to your instance of Azure Digital Twins in Azure.
 
-1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
+1. [Install the Azure CLI for your operating system](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
 
 1. After you successfully install the Azure CLI, you can sign in to Azure by running the following command in PowerShell:
 
@@ -57,7 +56,7 @@ The Azure Digital Twins explorer sample is now loaded and ready.
 
 1. Go to your folder that contains all your chocolate factory production line models. Select all of them, and upload them to the Azure Digital Twins explorer sample.
 
-1. If you get any errors, you'll need to go back to [unit 4](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models) and check your work for the model that has the error.
+1. If you get any errors, you'll need to go back to [unit 4](/learn/modules/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models) and check your work for the model that has the error.
 
 If there aren't any errors, you'll see a list of models in the left of your explorer sample window:
 

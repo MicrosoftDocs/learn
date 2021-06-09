@@ -14,7 +14,7 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 
 ### C#
 
-1. If you will be using C# as your code language, start by installing the latest [.NET Core](https://docs.microsoft.com/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
+1. If you will be using C# as your code language, start by installing the latest [.NET Core](/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
 
 1. After you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left menu pane, or press <kbd>Ctrl+Shift+X</kbd>, and enter C# in the search dialog box.
 

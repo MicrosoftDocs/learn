@@ -17,7 +17,7 @@ summary: |
   > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
 
 prerequisites: |
- - The [Role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true) learning path
+ - The [Role of Python in space exploration](../introduction-python-space-exploration-nasa/index.yml?azure-portal=true) learning path
  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
 levels:
