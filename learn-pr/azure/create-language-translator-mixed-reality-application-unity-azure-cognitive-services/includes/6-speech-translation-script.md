@@ -82,7 +82,7 @@ You use the `SpeechTranslationConfig` class in the Cognitive Services Speech SDK
 Also, you must specify the recognition language and target language. The recognition language is the language that the translation service uses to recognize the utterance. You set the recognition language by assigning the locale to the `SpeechRecognitionLanguage` property. The target language is the language that the translation service uses to translate the utterance. You set the target language by using the `AddTargetLanguage` method and the language code.
 
 > [!NOTE]
-> The recognition and target languages must be [one of the supported locales and/or language codes](https://aka.ms/speech/sttt-languages?azure-portal=true) for the Speech Translation service.
+> The recognition and target languages must be [one of the supported locales and/or language codes](/azure/cognitive-services/speech-service/language-support?azure-portal=true) for the Speech Translation service.
 
 ### TranslationRecognizer object
 

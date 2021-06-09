@@ -2,7 +2,7 @@ Imagine that you're building a new system on the cloud, or migrating an existing
 
 The Azure Well-Architected Framework will help you to design, build, and continuously improve a secure, reliable, and efficient application. In this module, we'll introduce you to the framework, along with the pillars and principles that are essential to a great Azure architecture.
 
-The concepts discussed in this module are not all-inclusive. They represent some of the important considerations when you're building a solution on the cloud. For more details on the Azure Well-Architected Framework, visit the [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
+The concepts discussed in this module are not all-inclusive. They represent some of the important considerations when you're building a solution on the cloud. For more details on the Azure Well-Architected Framework, visit the [Azure Architecture Center](/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
 
 ## Learning objectives
 

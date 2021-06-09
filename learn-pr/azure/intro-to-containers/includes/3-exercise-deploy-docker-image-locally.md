@@ -20,7 +20,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 3. Verify that the image has been stored locally.
 
     ```bash
-    docker image list
+    docker image ls
     ```
 
     You should see a repository named *mcr.microsoft.com/dotnet/core/samples* with a tag of *aspnetapp*.
@@ -83,7 +83,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 1. List the images currently available on your computer.
 
     ```bash
-    docker image list
+    docker image ls
     ```
 
 1. Remove the image from the registry.
@@ -95,5 +95,5 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 1. List the images again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
 
     ```bash
-    docker image list
+    docker image ls
     ```

@@ -1,4 +1,4 @@
-While it was great reading about these technologies, a much more exciting way to learn about them is to install them and begin playing around. This unit will teach you how to install Visual Studio Code.
+While it was great reading about these technologies, a much more exciting way to learn about them is to install them and begin playing around. This unit will teach you how to install Visual Studio Code. If you are following along in all of the modules of the [Discover the role of Python in space exploration Learning Path](../../../paths/introduction-python-space-exploration-nasa/index.yml), you will have a chance to write all of the code in an in-browser notebook experience from the Microsoft Learn module itself, so you do not *have* to install these developer tools to complete the module. However, setting up these tools is a great place to start on your personal developer journey, so we still encourage it.
 
 ## Install Visual Studio Code
 

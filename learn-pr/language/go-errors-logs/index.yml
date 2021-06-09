@@ -40,3 +40,4 @@ units:
 - learn.language.go-errors-logs.4-summary
 badge:
   uid: learn.language.go-errors-logs.badge
+hidden: true

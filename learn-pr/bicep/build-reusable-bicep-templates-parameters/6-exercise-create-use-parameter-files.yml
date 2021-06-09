@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-parameter-files 
+title: Exercise - Add a parameter file and secure parameters
+sandbox: true
+metadata:
+  unitType: exercise  
+  title: Exercise - Add a parameter file and secure parameters
+  description: Learn about parameter files and how to provide secure parameters by using decorators and Azure Key Vault references.
+  ms.date: 05/25/2021
+  author: wviriya
+  ms.author: wviriya
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-create-use-parameter-files.md)]

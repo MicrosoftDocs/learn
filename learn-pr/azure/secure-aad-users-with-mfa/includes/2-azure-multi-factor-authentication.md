@@ -36,40 +36,12 @@ Using Azure AD MFA increases identity security by limiting the impact of credent
 
 Azure AD MFA is the Microsoft two-step verification solution. Azure AD MFA helps safeguard access to data and applications while meeting user demand for a simple sign-in process. It delivers strong authentication via a range of verification methods, including phone call, text message, or mobile app verification. The security of Azure AD MFA lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for malicious hackers. Even if a malicious hacker manages to learn the user's password, it is useless without also possessing the trusted device. If the user loses the device, a person who finds it won't be able to use it without the user's password.
 
-## How Multi-Factor Authentication works
-
-Here’s what happens when someone tries to connect to a resource that’s security enhanced by Azure AD MFA, and the service is on-premises:
-
-![Diagram that depicts how Multi-Factor Authentication, or MFA, works and all the components involved.](../media/2-how-mfa-works.jpg)
-
-1. The local Azure AD MFA service validates the initial sign-in request by passing the authentication request to on-premises Active Directory.
-
-1. If the correct credentials were entered and validated, the service sends the request to **Azure AD Multi-Factor Authentication Server**.
-
-1. The Azure AD Multi-Factor Authentication Server sends an additional verification challenge to the user. The methods you can easily configure are:
-
-    * **Phone call**. Azure AD Multi-Factor Authentication Server places a call to the user’s registered phone.
-    * **Text message**. Azure AD Multi-Factor Authentication Server sends a six-digit code to the user’s mobile phone.
-    * **Mobile app notification**. Azure AD Multi-Factor Authentication Server sends a verification request to a user’s smartphone, which asks them to complete the verification by selecting Verify in the mobile app.
-    * **Mobile app verification code**. Azure AD Multi-Factor Authentication Server sends a six-digit code to the user’s mobile app. The user then enters this code on the sign-in page.
-    * **Initiative for Open Authentication (OATH) compliant tokens**. You can use these as a verification method.
-
-If the service is running in Azure:
-
-1. The service sends the sign-in request first to Azure AD for the initial validation and then to Azure AD Multi-Factor Authentication Server.
-
-1. Azure AD Multi-Factor Authentication Server sends an additional verification challenge to the user, as just described.
-
-Azure AD MFA allows the provider of the request service to validate that users are real people and not bots, that they have their devices with them, and that they can provide any additional information.
-
-Azure AD MFA improves security for the requesting users, because someone can’t easily impersonate them. You should require Azure AD MFA on all services, especially on mobile services.
-
 ## How to get Multi-Factor Authentication?
 
 Multi-Factor Authentication comes as part of the following offerings:
 
-* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multi-factor authentication.
+* **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure AD Multi-Factor Authentication using [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multi-factor authentication.
 
-* **Azure AD Free** or standalone **Microsoft 365** licenses - Use [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multi-factor authentication for your users and administrators.
+* **Azure AD Free** or standalone **Microsoft 365** licenses - Use [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multi-factor authentication for your users and administrators.
 
 * **Azure Active Directory Global Administrators** - A subset of Azure AD Multi-Factor Authentication capabilities are available as a means to protect global administrator accounts.

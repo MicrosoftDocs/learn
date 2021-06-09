@@ -24,8 +24,8 @@ As with Azure enabled servers, the Azure portal offers the interface from which 
 
 You can learn more by visiting the following webpages:
 
-- [Use the Azure portal with Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/manage/azure-portal/?azure-portal=true)
-- [Monitor Azure Stack HCI with Azure Monitor](https://docs.microsoft.com/azure-stack/hci/manage/azure-monitor/?azure-portal=true)
-- [Azure Stack HCI billing and payment](https://docs.microsoft.com/azure-stack/hci/concepts/billing/?azure-portal=true)
+- [Use the Azure portal with Azure Stack HCI](/azure-stack/hci/manage/azure-portal/?azure-portal=true)
+- [Monitor Azure Stack HCI with Azure Monitor](/azure-stack/hci/manage/azure-monitor/?azure-portal=true)
+- [Azure Stack HCI billing and payment](/azure-stack/hci/concepts/billing/?azure-portal=true)
 
 Choose the best response for each of the following questions. Then select "Check your answers".

@@ -15,5 +15,5 @@ Finally, you deployed your app. You learned about Azure Static Web Apps, a servi
 Here are some resources to help you learn more about Gatsby and the tools and technologies used in the module.
 
 - Gatsby official [docs](https://www.gatsbyjs.org/docs/) and [tutorials](https://www.gatsbyjs.org/tutorial/)
-- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
+- [Azure Static Web Apps on Microsoft Docs](/azure/static-web-apps)
 - Try [Visual Studio Code](https://code.visualstudio.com) for editing text and code files

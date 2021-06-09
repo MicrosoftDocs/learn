@@ -22,20 +22,20 @@ For our use case, we'll look into routing configuration to achieve what we want.
 
 In a previous section, we saw that by default all authentication providers are enabled. We can change that by adding routing rules in the configuration.
 
-For example, to disable login through the Facebook provider, you can add a routing rule like this in the `staticwebapp.config.json` file.
+For example, to disable login through the GitHub provider, you can add a routing rule like this in the `staticwebapp.config.json` file.
 
 ```json
 {
   "routes": [
     {
-      "route": "/.auth/login/facebook",
+      "route": "/.auth/login/github",
       "statusCode": "404"
     }
   ]
 }
 ```
 
-We force the route `/.auth/login/facebook` used to authenticate with the Facebook provider to return a `404` (not found) error, so the users can't access it. You can add as many routes rules we want to disable all providers you don't want to use.
+We force the route `/.auth/login/github` used to authenticate with the GitHub provider to return a `404` (not found) error, so the users can't access it. You can add as many routes rules we want to disable all providers you don't want to use.
 
 ## Securing routes with roles
 
