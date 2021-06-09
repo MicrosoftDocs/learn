@@ -1,16 +1,16 @@
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+:::image type="icon" source="../media/tech-uwp.png":::
 
 In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern. 
 
 Let's expand our existing demo with a friendly greeting that looks like this.
 
-![Screenshot of sample app](../media/lesson2-Entry.png)
+![Screenshot of sample app with a name entry field and submit button.](../media/lesson2-Entry.png)
 
 When you select the **Submit** button, the app will display a simple greeting at the top.
 
-![Screenshot of sample app](../media/lesson2-Greeting.png)
+![Screenshot of sample app showing "Hello Andrew!" after submitting.](../media/lesson2-Greeting.png)
 
 #### 1. Open the solution
 
@@ -84,7 +84,7 @@ If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivale
 
 Let's check out what we did so far! Run the app by pressing F5 or Ctrl+F5. Enter your name, select the **Submit** button, and a dialog box should greet you.
 
-![Screenshot of sample app with new greeting dialog box](../media/messagedialog.png)
+![Screenshot of sample app with new greeting dialog box that displays "Hello Andrew!" with a Close button.](../media/messagedialog.png)
 
 #### 6. Implement the `IsNameNeeded` property
 
@@ -167,7 +167,7 @@ xmlns:sys="using:System"
 
 Now if you run the app, you'll see that the greeting gets updated with every keypress. You don't even need to remove the focus from the `TextBox` or select the **Submit** button!
 
-![Screenshot of sample app](../media/ui2ui.png)
+![Screenshot of sample app running with a name entry field and value entered of "Andr" and an above display of "Hello Andr!".](../media/ui2ui.png)
 
 In a real world app, displaying the user's name wouldn't happen through UI-to-UI binding. You'd probably bind to the `DisplayName` property of a `User` class, or something similar.
 
@@ -222,17 +222,17 @@ In this lesson, you've seen how data binding makes it easier to transfer data be
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+:::image type="icon" source="../media/tech-wpf.png":::
 
 In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern, and learn more about `DataContext`. 
 
 Let's expand our existing demo with a friendly greeting that looks like this.
 
-![Screenshot of sample app](../media/lesson2-Entry_wpf.png)
+![Screenshot of sample app with a name entry field and submit button.](../media/lesson2-Entry_wpf.png)
 
 When you select the **Submit** button, the app will display a simple greeting at the top.
 
-![Screenshot of sample app](../media/lesson2-Greeting_wpf.png)
+![Screenshot of sample app showing "Hello Andrew!" after submitting.](../media/lesson2-Greeting_wpf.png)
 
 #### 1. Create a window-wide DataContext
 
@@ -344,7 +344,7 @@ If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivale
 
 Let's check out what we did so far! Run the app by pressing F5 or Ctrl+F5. Enter your name, select the **Submit** button, and a dialog box should greet you.
 
-![Screenshot of sample app with new greeting dialog box](../media/messagedialog_uwp.png)
+![Screenshot of sample app with new greeting dialog box that displays "Hello Andrew!" with a Close button.](../media/messagedialog_uwp.png)
 
 #### 6. Implement the `IsNameNeeded` property
 
@@ -442,7 +442,7 @@ To evaluate the value of the `Text` property on the `TextBlock`, the system call
 
 This is called *UI-to-UI binding* because both the data binding's source and target are on the UI. To see it in action, just run the app. Notice how the greeting gets updated with every keypress. You don't even need to remove the focus from the `TextBox` or select the **Submit** button!
 
-![Screenshot of sample app](../media/ui2ui_wpf.png)
+![Screenshot of sample app running with a name entry field and value entered of "Andr" and an above display of "Hello Andr!".](../media/ui2ui_wpf.png)
 
 In a real world app, displaying the user's name wouldn't happen through UI-to-UI binding. You'd probably bind to the `DisplayName` property of a `User` class, or something similar.
 
