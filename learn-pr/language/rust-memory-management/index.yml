@@ -36,4 +36,3 @@ units:
 - learn.languages.rust-memory-management.6-summary
 badge:
   uid: learn.languages.rust-memory-management.badge
-hidden: true
