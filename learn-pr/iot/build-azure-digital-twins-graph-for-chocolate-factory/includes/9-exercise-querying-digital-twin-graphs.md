@@ -19,7 +19,7 @@ Go through this process for each of the three production steps (roasting, grindi
 
 :::image type="content" source="../media/roasting.png" alt-text="Image of the roasting step." lightbox="../media/roasting.png":::
 
-1. Set **ChasisTemperature** to **120**.
+1. Set **ChassisTemperature** to **120**.
 
 1. Set **RoastingTime** to **35**.
 
@@ -33,7 +33,7 @@ Go through this process for each of the three production steps (roasting, grindi
 
 :::image type="content" source="../media/grinding.png" alt-text="Image of the grinding step." lightbox="../media/grinding.png":::
 
-1. Set **ChasisTemperature** to **40**.
+1. Set **ChassisTemperature** to **40**.
 
 1. Set **GrindingTime** to **45**.
 
@@ -47,7 +47,7 @@ Go through this process for each of the three production steps (roasting, grindi
 
 :::image type="content" source="../media/molding.png" alt-text="Image of the molding step." lightbox="../media/molding.png":::
 
-1. Set **ChasisTemperature** to **55**.
+1. Set **ChassisTemperature** to **55**.
 
 1. Set **PowerUsage** to **80**.
 
@@ -118,7 +118,7 @@ Now run through a range of queries. Copy and paste the following queries into th
 - To test the property settings, use numerical comparisons:
 
     ```sql
-    SELECT  *  FROM DIGITALTWINS T   WHERE T.ChasisTemperature > 50
+    SELECT  *  FROM DIGITALTWINS T   WHERE T.ChassisTemperature > 50
     ```
 
     :::image type="content" source="../media/explorer-query-numerical.png" alt-text="Screenshot showing a query based on a numerical value." lightbox="../media/explorer-query-numerical.png":::
@@ -126,7 +126,7 @@ Now run through a range of queries. Copy and paste the following queries into th
 - Combine numerical comparisons:
 
     ```sql
-    SELECT  *  FROM DIGITALTWINS T   WHERE T.PowerUsage > 100 AND T.ChasisTemperature >= 55
+    SELECT  *  FROM DIGITALTWINS T   WHERE T.PowerUsage > 100 AND T.ChassisTemperature >= 55
     ```
 
     :::image type="content" source="../media/explorer-query-and.png" alt-text="Screenshot showing a query that uses AND to combine elements." lightbox="../media/explorer-query-and.png":::
