@@ -16,4 +16,4 @@ In this module, you'll:
 ## Prerequisites
 
 - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), you're all set. Otherwise, you can find the overview in the [Grover's search algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) unit of that module.
-- A functioning QDK environment in [Visual Studio Code for command-line applications](/quantum/quickstarts/install-command-line?tabs=tabid-vscode%3fazure-portal%3dtrue).
+- A functioning QDK environment in [Visual Studio Code for command-line applications](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true).

@@ -20,7 +20,7 @@ Libraries in Q# are distributed as [NuGet](https://www.nuget.org?azure-portal=tr
 
 NuGet is a package manager for various different platforms, and is the primary package manager for most .NET languages. It enables developers to produce, share, and consume useful code. A NuGet package is essentially a .zip file that contains compiled code and related files.
 
-The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda%3fazure-portal%3dtrue).
+The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda&azure-portal=true).
 
 Users can easily use the Q# libraries produced by Microsoft, along with other Q# libraries that aren't released as part of the QDK, because they're all hosted through NuGet. 
 
