@@ -100,7 +100,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     }
     ```
 
-1. Select <kbd>Ctrl+S</kbd> to save the file. Then select <kbd>Ctrl+Q</kbd> to close the editor.
+1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the following PowerShell command to upload your DSC script into your Azure Automation account. Replace the placeholder automation account name with the name you used to create the automation account.
 
@@ -171,7 +171,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
     ![Screenshot of the Azure portal, showing the Virtual Machines pane](../media/4-add-vm.png)
 
-1. On the **Registration** pane, enter the following values, and then select **OK**.
+1. On the **Registration** pane, enter the following values for each setting, and then select **OK**.
 
     | Setting  | Value  |
     |---|---|
