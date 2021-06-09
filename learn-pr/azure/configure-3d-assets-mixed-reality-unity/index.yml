@@ -15,7 +15,7 @@ abstract: |
   - Incorporate design considerations into building a scene
   - Use MRTK interactions to provide a rich user experience
   - Place assets in a Unity scene
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /media/learn/module.svg
 levels:
 - beginner
 roles:
