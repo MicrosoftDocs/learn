@@ -30,11 +30,11 @@ Your offer’s connection webhook facilitates communication between the commerci
 
 Azure Active Directory (Azure AD) is the Microsoft cloud-based identity and access management service. Azure AD makes SaaS offer purchases from the commercial marketplace easier and more secure. By integrating your offer with Azure AD, you’ll be able to automate the process of provisioning users to your SaaS application.
 
-You’ll need to provide your Azure AD tenant ID and your Azure AD application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based, access to your application. You can find both required Azure AD IDs in the Azure portal. For additional details on Azure AD and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer-technical).
+You’ll need to provide your Azure AD tenant ID and your Azure AD application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based, access to your application. You can find both required Azure AD IDs in the Azure portal. For additional details on Azure AD and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](/azure/marketplace/create-new-saas-offer-technical).
 
 ### Marketplace metered billing API integration
 
-If you decide to use the marketplace metering service to add a usage-based pricing component to your offer, you’ll also need to integrate with the marketplace metered billing APIs. You'll use these APIs to define how often you want to communicate customer usages with Microsoft. The information is used to bill your customers in accordance with their subscription. For more details, reference our [documentation on the metering service APIs](https://docs.microsoft.com/azure/marketplace/partner-center-portal/marketplace-metering-service-apis).
+If you decide to use the marketplace metering service to add a usage-based pricing component to your offer, you’ll also need to integrate with the marketplace metered billing APIs. You'll use these APIs to define how often you want to communicate customer usages with Microsoft. The information is used to bill your customers in accordance with their subscription. For more details, reference our [documentation on the metering service APIs](/azure/marketplace/partner-center-portal/marketplace-metering-service-apis).
 
 > [!TIP]
 > We recommend that you send meters on a cadence of no more than once per hour and no less than once per day.
@@ -45,7 +45,7 @@ Metered billing also makes use of anomaly detection, which calls out usage level
 - Configuration errors
 - Fraudulent usage
 
-For more detailed information on anomaly detection, you can reference our [documentation on the anomaly detection service for metered billing](https://docs.microsoft.com/azure/marketplace/partner-center-portal/anomaly-detection-service-for-metered-billing).
+For more detailed information on anomaly detection, you can reference our [documentation on the anomaly detection service for metered billing](/azure/marketplace/partner-center-portal/anomaly-detection-service-for-metered-billing).
 
 ### Code samples to help you get started
 
