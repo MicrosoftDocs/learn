@@ -2,17 +2,17 @@ In this exercise, you run the Azure Digital Twins Explorer from your Azure Digit
 
 Navigate to your Azure Digital Twins instance in the [Azure portal](https://portal.azure.com/). Next, select the **Open Azure Digital Twins Explorer (preview)** button to open an Azure Digital Twins Explorer window connected to the instance.
 
-:::image type="content" source="../media/azure-digital-twins-explorer-portal-access.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-portal-access.png":::
+:::image type="content" source="../media/azure-digital-twins-explorer-portal-access.png" alt-text="Screenshot of the Azure portal showing how to open Azure Digital Twins Explorer from the instance's page." lightbox="../media/azure-digital-twins-explorer-portal-access.png":::
 
 ## Switch contexts
 
 1. Once you're in the Azure Digital Twins Explorer, you can change the context of which Azure Digital Twins instance is currently connected. Select the instance name from the top toolbar:
 
-    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-1.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-instance-url-1.png":::
+    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-1.png" alt-text="Screenshot of the Azure Digital Twins Explorer showing how to switch contexts." lightbox="../media/azure-digital-twins-explorer-instance-url-1.png":::
 
 1. This will bring up the **Azure Digital Twins URL modal**, where you can enter the host name of another Azure Digital Twins instance after the *https://* to connect to that instance:
 
-    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-2.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-instance-url-2.png":::
+    :::image type="content" source="../media/azure-digital-twins-explorer-instance-url-2.png" alt-text="Screenshot of the Azure Digital Twins Explorer showing the pop-up modal for switching contexts." lightbox="../media/azure-digital-twins-explorer-instance-url-2.png":::
 
 ## Upload the chocolate factory production line models
 
