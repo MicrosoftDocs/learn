@@ -35,7 +35,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 1. In the Recovery Services vault pane, in the left menu bar, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
-1. In hte top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. Enter the following values for each setting.
+1. In the top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. Enter the following values for each setting.
 
     ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
 
