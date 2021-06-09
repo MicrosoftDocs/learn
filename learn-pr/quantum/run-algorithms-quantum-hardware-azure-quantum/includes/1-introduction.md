@@ -27,3 +27,8 @@ After completing this module, you'll be able to:
 
 - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true)
 - [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true)
+
+> [!IMPORTANT]
+> This module makes use of paid services on Azure Quantum. The cost of running this module on IonQ in a Pay-As-You-Go subscription is approximately $9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimate and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
+>
+> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum if you would like to avoid any charges to your Azure account.

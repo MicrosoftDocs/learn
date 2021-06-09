@@ -45,3 +45,4 @@ units:
 - learn.reactors.blockchain-solidity-ethereum-smart-contracts.8-summary
 badge:
   uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+hidden: true

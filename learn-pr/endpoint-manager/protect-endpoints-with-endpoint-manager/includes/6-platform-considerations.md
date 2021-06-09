@@ -38,7 +38,7 @@ The supported OS versions for clients and devices that can be managed by Configu
     - Windows 8.1 (x86, x64): Professional, Enterprise
 - Windows Servers (*several variations available*)
 - Windows Server Core (*several variations available*)
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 - Windows Embedded computers (*several variations available*)
 - Windows 10 IoT Mobile Enterprise
 - Windows 10 Team for Surface Hub

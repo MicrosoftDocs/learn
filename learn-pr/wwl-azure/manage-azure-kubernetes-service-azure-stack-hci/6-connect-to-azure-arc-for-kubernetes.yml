@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.connect-to-azure-arc-for-kubernetes
+title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
+metadata:
+  title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
+  description: "Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes"
+  ms.date: 06/09/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-connect-to-azure-arc-for-kubernetes.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "To promote operational excellence in Contoso, you decide to script the process of connecting Kubernetes clusters on Azure Stack HCI to Azure Arc for Kubernetes. You've a newly created subscription and want to ensure that the onboarding will complete successfully. What should you do after you successfully authenticate and access the target subscription?"
+    choices:
+    - content: "Connect Azure Stack HCI to Azure Arc."
+      isCorrect: false
+      explanation: "Incorrect. In Azure Stack HCI clusters, the Azure Arc agent is already included in the operating system of cluster nodes. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing."
+    - content: "Deploy at least one Windows worker node into the Kubernetes cluster."
+      isCorrect: false
+      explanation: "Incorrect. For onboarding to succeed, the AKS on Azure Stack HCI cluster must contain at least one operational Linux worker node."
+    - content: "Register Azure Resource providers."
+      isCorrect: true
+      explanation: "Correct. You need to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers, necessary to implement Azure Arc enabled Kubernetes. This is a one-time only setup for a given subscription."

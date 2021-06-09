@@ -54,7 +54,7 @@ Within each hosting plan, you can select the instance size. Instance size affect
 
 You can deploy multiple web apps to a single hosting plan (similar to running multiple web apps on a single instance of IIS). All will share the same VM instances.
 
-For more information, see [App Service overview](https://docs.microsoft.com/azure/app-service/overview).
+For more information, see [App Service overview](/azure/app-service/overview).
 
 ## Database migration
 
@@ -68,11 +68,11 @@ The following diagram is a high-level overview of the relationship between your 
 
 ![Diagram of a web app connected to a database endpoint via Hybrid Connection Manager on-premises and the Relay hybrid connection in Azure.](../media/5-understand-migration-03.png)
 
-For more information, see [Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections).
+For more information, see [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections).
 
-To perform a migration, you can use the Data Migration Assistant. For more information, see [Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017).
+To perform a migration, you can use the Data Migration Assistant. For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017).
 
-You might be interested in another Learn module, [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/).
+You might be interested in another Learn module, [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](/learn/modules/assess-convert-sql-server-databases-using-dma/).
 
 ## What is an Azure Migrate project?
 

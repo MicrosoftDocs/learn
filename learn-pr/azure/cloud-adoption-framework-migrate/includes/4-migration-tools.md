@@ -7,7 +7,7 @@ Azure Migrate provides a unified migration platform: a single portal to start, r
 - **Servers:** Assess on-premises servers or virtual machines (VMs) running on other clouds and migrate them to Azure Virtual Machines or Azure VMware Solution.
 - **Databases:** Assess on-premises databases and migrate them to Azure SQL Database or Azure SQL Managed Instance.
 - **Web applications:** Assess on-premises web applications and migrate them to Azure App Service by using App Service Migration Assistant.
-- **Virtual desktops:** Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Windows Virtual Desktop in Azure.
+- **Virtual desktops:** Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Azure Virtual Desktop.
 - **Data:** Migrate large amounts of data to Azure quickly and cost-effectively by using Azure Data Box products.
 
 ## Integrated tools

@@ -21,8 +21,8 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally.
   - One of these tools:
-    - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools, installed locally.
-    - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), installed locally.
+    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools, installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0), installed locally.
 iconUrl: /learn/achievements/modify-azure-resource-manager-template-reuse.svg
 ratingEnabled: true
 levels:

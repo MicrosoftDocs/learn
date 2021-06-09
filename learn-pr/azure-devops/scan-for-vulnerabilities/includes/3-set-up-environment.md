@@ -20,7 +20,7 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=scan-for-vulnerabilities&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=scan-for-vulnerabilities&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
@@ -50,7 +50,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues.
 
-![Screenshot of Azure DevOps showing the To Do backlog of tasks.](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -65,11 +65,11 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
-    ![Screenshot of Azure DevOps navigation with the Boards menu and Boards menu item highlighted.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. From the **Check code for vulnerabilities** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
     ![Screenshot of Azure DevOps Boards showing the vulnerabilities check card now in the Doing column.](../media/4-azure-boards-wi4-doing.png)

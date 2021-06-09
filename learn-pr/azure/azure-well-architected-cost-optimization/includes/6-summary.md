@@ -6,7 +6,7 @@ Optimizing your applications begins with proper planning and estimation of costs
 
 To learn more about cost optimization, see the following documentation:
 
-- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true)
-- [What is Azure Cost Management and Billing?](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview?azure-portal=true)
-- [Introduction to Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview?azure-portal=true)
+- [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true)
+- [What is Azure Cost Management and Billing?](/azure/cost-management-billing/cost-management-billing-overview?azure-portal=true)
+- [Introduction to Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true)

@@ -32,7 +32,7 @@ per region. These are both examples of soft limits that can be increased.
 But some services have maximum limits, which you can find at the following
 link.
 
-[Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?WT.mc_id=msignitethetour2019-slides-ops50)
+[Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits?WT.mc_id=msignitethetour2019-slides-ops50)
 
 This is something to be aware of and monitor. Let’s look at ways to do
 that.

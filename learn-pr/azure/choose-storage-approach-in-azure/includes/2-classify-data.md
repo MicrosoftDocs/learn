@@ -44,9 +44,9 @@ Here's an example of a person with hobbies expressed in XML.
 </Person>
 ```
 
-XML expresses the shape of the data using _tags_. These tags come in two forms: _elements_ such as `<FirstName>` and _attributes that can be expressed in text like `Age="23"`. Elements can  have child elements to express relationships - such as the `<Hobbies>` tag above which is expressing a collection of `Hobby` elements.
+XML expresses the shape of the data using _tags_. These tags come in two forms: _elements_ such as `<FirstName>` and _attributes_ that can be expressed in text like `Age="23"`. Elements can  have child elements to express relationships - such as the `<Hobbies>` tag above which is expressing a collection of `Hobby` elements.
 
-XML is flexible and can express complex data easily. However it tends to be more verbose making it larger to store, process, or pass over a network. As a result, other formats have become more popular.
+XML is flexible and can express complex data easily. However, it tends to be more verbose making it larger to store, process, or pass over a network. As a result, other formats have become more popular.
 
 **JSON** – or *JavaScript Object Notation*, has a lightweight specification and relies on curly braces to indicate data structure. Compared to XML, it is less verbose and easier to read by humans. JSON is frequently used by web services to return data.
 
@@ -125,6 +125,6 @@ Data classification: **Structured**
 
 ## Summary
 
-Data may be classified in one of three ways: structured, semi-structured, and unstructured. Understanding the differences so that you can classify your own data will help you choose the correct storage solution. 
+Data may be classified in one of three ways: structured, semi-structured, and unstructured. Understanding the differences so that you can classify your own data will help you choose the correct storage solution.
 
 To recap, structured data is organized data that neatly fits into rows and columns in tables. Semi-structured data is still organized and has clear properties and values, but there's variety to the data. Unstructured data doesn't fit neatly into tables, nor does it have a schema.

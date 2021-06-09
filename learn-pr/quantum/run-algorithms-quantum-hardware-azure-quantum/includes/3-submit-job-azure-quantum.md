@@ -2,9 +2,6 @@ You're ready to connect to Earth's Azure Quantum services and start solving prob
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
-> [!NOTE]
-> The cost of running this module on IonQ in a Pay-As-You-Go subscription is approximately $9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimation and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
-
 ## Install the quantum extension
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
@@ -100,6 +97,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
    ```dotnetcli
    az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
+
    > [!NOTE]
    > If you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
 
@@ -146,6 +144,7 @@ Run your program with `az quantum execute --target-id ionq.simulator -o table`. 
    ```
 
 You should obtain the following output:
+
    ```output
    Result    Frequency
    --------  -----------  -------------------------

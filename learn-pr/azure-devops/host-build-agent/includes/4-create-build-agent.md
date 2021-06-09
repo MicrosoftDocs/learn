@@ -14,7 +14,7 @@ There are many ways to create a virtual machine on Azure. In this unit, you crea
 
 To configure your VM, you have several choices:
 * For a Linux VM, you can connect directly over SSH and interactively configure your system. 
-* You can automate the deployment by using an Azure Resource Manager template. 
+* You can automate the deployment by using an ARM template, Bicep, or other automated provisioning tool.
 * If you need to deploy many build agents, you can create a VM image that has all the software pre-installed.
 
 Configuring a system interactively is a good way to get started, because it helps you understand the process and what's needed. To simplify the process, connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
@@ -24,7 +24,7 @@ Configuring a system interactively is a good way to get started, because it help
 
 ## Create a Linux virtual machine
 
-In this section, you create a VM that's running Ubuntu 18.04, which will serve as your build agent. The VM isn't yet set up to be a build agent or have any of the tools that are required to build the _Space Game_ web application. You'll set that up shortly.
+In this section, you create a VM that's running Ubuntu 20.04, which will serve as your build agent. The VM isn't yet set up to be a build agent or have any of the tools that are required to build the _Space Game_ web application. You'll set that up shortly.
 
 To create your VM, in Cloud Shell (at right), run the following `az vm create` command:
 
@@ -32,8 +32,7 @@ To create your VM, in Cloud Shell (at right), run the following `az vm create` c
 az vm create \
     --name MyLinuxAgent \
     --resource-group <rgn>[Resource Group Name]</rgn> \
-    --image Canonical:UbuntuServer:18.04-LTS:latest \
-    --location eastus \
+    --image canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
     --size Standard_DS2_v2 \
     --admin-username azureuser \
     --generate-ssh-keys
@@ -41,7 +40,7 @@ az vm create \
 
 Your VM will take a few minutes to come up.
 
-[Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
+[Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
 
 The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. Normally, you would create your own resource group before you create Azure resources. Because you're in the free Azure sandbox environment, you can skip this step. Instead, you use the pre-created resource group <rgn>[Resource Group Name]</rgn>.
 
@@ -56,7 +55,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
 1. Select **Project settings**.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
+    :::image type="content" source="../media/4-project-settings-agent-pools.png" alt-text="A screenshot of the project settings in Azure DevOps showing the location of the Agent pools menu item.":::
 1. Select **Add pool**.
 1. In the **Add pool** window:
 
@@ -79,7 +78,7 @@ To do that, you create a personal access token. A personal access token, or PAT,
 
 1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
 
-    ![Locating SecurityPersonal Access Token in the menu](../media/4-personal-access-token.png)
+    :::image type="content" source="../media/4-personal-access-token.png" alt-text="A screenshot of Azure DevOps showing the location of the Personal access tokens menu item.}":::
 1. Select **New Token**.
 1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
@@ -133,7 +132,7 @@ In this section, you configure your VM with the tools that are required to build
 
 Recall that your existing build process uses these tools:
 
-* .NET Core
+* .NET SDK, which is used to build the application
 * Node.js, which is used to perform build tasks
 * npm, the package manager for Node.js
 * gulp, a Node.js package that's used to minify JavaScript and CSS files
@@ -156,7 +155,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 1. To download a shell script named *build-tools.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/master/build-tools.sh > build-tools.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-tools.sh > build-tools.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
@@ -190,7 +189,7 @@ Now it's time to install the agent software on your VM. This software enables th
 
 The registration process checks for installed software before it registers the agent with Azure Pipelines. Therefore, it's important to set up the agent after you install all other software. In practice, you can register the agent a second time if you need to install additional software.
 
-The documentation explains how to manually set up [self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
+The documentation explains how to manually set up [self-hosted Linux agents](/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
 
 > [!IMPORTANT]
 > The script that you run here is for learning purposes. In practice, you should first understand how each command in the scripts you build affect the overall system. At the end of the module, we'll point to documentation that more completely describes your options.
@@ -198,7 +197,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
 1. To download a shell script named *build-agent.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/master/build-agent.sh > build-agent.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-agent.sh > build-agent.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
@@ -302,14 +301,12 @@ You've successfully installed the build tools and the agent software on your VM.
 1. In Azure DevOps, go to the **Space Game - web - Agent** project.
 1. Select **Project settings**.
 1. Under **Pipelines**, select **Agent pools**.
-
-    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **MyAgentPool**.
 1. Select the **Agents** tab.
 
     You can see that your agent is online and ready to accept build jobs.
 
-    ![Azure DevOps showing the private agent's status](../media/4-project-settings-agent-details.png)
+    :::image type="content" source="../media/4-project-settings-agent-details.png" alt-text="A screenshot of Azure DevOps showing the status of the private agent. The agent shows as online, idle, and enabled.":::
 
     > [!TIP]
     > If your build agent shows as **Offline**, try waiting a few moments and then refreshing the page.
@@ -319,6 +316,6 @@ You've successfully installed the build tools and the agent software on your VM.
 
     During setup, the configuration process scanned your build agent for tool capabilities. You see that `npm` is listed as one of them. Recall that your original build configuration specified that `npm` must be installed on the agent.
 
-    ![Locating npm in the list of capabilities](../media/4-project-settings-agent-capabilities.png)
+    :::image type="content" source="../media/4-project-settings-agent-capabilities.png" alt-text="A screenshot of Azure DevOps showing a few of the agent's capabilities. The npm capability is highlighted.":::
 
     When you specify which agent pool to use, you can include any of these entries in your `demands` section. Including them ensures that Azure Pipelines chooses a build agent that has the software you need to build your application. It also enables you to create agent pools with various software configurations. Azure Pipelines will select the correct configuration based on your requirements.

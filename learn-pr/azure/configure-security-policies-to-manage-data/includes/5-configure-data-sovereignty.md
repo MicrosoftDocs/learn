@@ -23,9 +23,9 @@ The following illustration shows a hypothetical app that uses a regional pair fo
 
 ### Cross-region activities number key
 
-* **Azure Compute (IaaS)** - To ensure resources are available in another region during a disaster, you must provision additional compute resources in advance. For more information, see [Designing resilient apps for Azure](https://docs.microsoft.com/azure/resiliency/resiliency-technical-guidance).
-* **Azure Storage**- Geo-redundant storage (GRS) is configured by default when an Azure Storage account is created. With GRS, data is automatically replicated three times within the primary region, and three times in a paired region. For more information, see [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy).
-* **Azure SQL Database** - With Azure SQL Database geo-replication, you can configure asynchronous replication of transactions to any region in the world; however, we recommend you deploy these resources in a paired region for most disaster recovery scenarios. For more information, see [Configure active geo-replication for Azure SQL Database in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication-portal).
+* **Azure Compute (IaaS)** - To ensure resources are available in another region during a disaster, you must provision additional compute resources in advance. For more information, see [Designing resilient apps for Azure](/azure/resiliency/resiliency-technical-guidance).
+* **Azure Storage**- Geo-redundant storage (GRS) is configured by default when an Azure Storage account is created. With GRS, data is automatically replicated three times within the primary region, and three times in a paired region. For more information, see [Azure Storage redundancy](/azure/storage/common/storage-redundancy).
+* **Azure SQL Database** - With Azure SQL Database geo-replication, you can configure asynchronous replication of transactions to any region in the world; however, we recommend you deploy these resources in a paired region for most disaster recovery scenarios. For more information, see [Configure active geo-replication for Azure SQL Database in the Azure portal](/azure/sql-database/sql-database-active-geo-replication-portal).
 * **Azure Resource Manager** - Resource Manager inherently provides logical isolation of components across regions. This means that logical failures in one region are less likely to impact other regions.
 
 ### Benefits of Azure paired regions number key

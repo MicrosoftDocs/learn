@@ -1,6 +1,6 @@
 At this point, the mobile app is complete and it can send the user's location and list of phone numbers to the Azure Functions that can deserialize the data. In this unit, you'll bind your function to Twilio to send SMS messages.
 
-Azure Functions can be connected to other services, either in Azure or third-party. These connections, called bindings, exist in two forms - input and output bindings. Input bindings provide data to your function and output bindings take data from your function and send it to another service. You can read about bindings in the [Azure Functions Binding docs](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
+Azure Functions can be connected to other services, either in Azure or third-party. These connections, called bindings, exist in two forms - input and output bindings. Input bindings provide data to your function and output bindings take data from your function and send it to another service. You can read about bindings in the [Azure Functions Binding docs](/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
 
 Bindings for Azure Functions created in Visual Studio are defined using parameters to the function, decorated with attributes.
 

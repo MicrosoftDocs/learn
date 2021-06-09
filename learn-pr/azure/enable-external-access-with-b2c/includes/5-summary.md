@@ -10,6 +10,6 @@ Azure AD B2C can remove the complexity of managing user authentication for your 
 
 To learn more about Azure AD B2C, see the following articles:
 
-- [Azure Active Directory B2C documentation](https://docs.microsoft.com/azure/active-directory-b2c/)
-- [What is Azure Active Directory B2C?](https://docs.microsoft.com/azure/active-directory-b2c/overview)
-- [Tutorial: Create an Azure Active Directory B2C tenant](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-tenant)
+- [Azure Active Directory B2C documentation](/azure/active-directory-b2c/)
+- [What is Azure Active Directory B2C?](/azure/active-directory-b2c/overview)
+- [Tutorial: Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant)

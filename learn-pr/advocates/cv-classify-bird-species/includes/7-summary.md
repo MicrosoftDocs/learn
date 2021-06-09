@@ -10,16 +10,16 @@ Happy bird watching!
 
 Here are some helpful articles that offer more detailed information about some of the concepts we covered:
 
-[Quickstart: Search for images by using the Bing Image Search SDK for Node.js](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/image-search-sdk-node-quickstart?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Quickstart: Search for images by using the Bing Image Search SDK for Node.js](/azure/cognitive-services/bing-image-search/image-search-sdk-node-quickstart?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
-[Quickstart: Create an image classification project by using the Custom Vision Node.js SDK](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Quickstart: Create an image classification project by using the Custom Vision Node.js SDK](/azure/cognitive-services/custom-vision-service/node-tutorial?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
-[Azure Cognitive Services Bing Search documentation](https://docs.microsoft.com/azure/cognitive-services/bing-web-search?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Azure Cognitive Services Bing Search documentation](/azure/cognitive-services/bing-web-search?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
-[Azure Cognitive Service Custom Vision documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Azure Cognitive Service Custom Vision documentation](/azure/cognitive-services/custom-vision-service/home?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
-[Create a Node.js app in Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-nodejs?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Create a Node.js app in Azure App Service on Linux](/azure/app-service/containers/quickstart-nodejs?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
-[Custom Vision Node.js tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial?WT.mc_id=birds-learn-cassieb&azure-portal=true)
+[Custom Vision Node.js tutorial](/azure/cognitive-services/custom-vision-service/node-tutorial?azure-portal=true&WT.mc_id=birds-learn-cassieb)
 
 [Python SDK documentation](/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.customvisiontrainingclient?view=azure-python&azure-portal=true)

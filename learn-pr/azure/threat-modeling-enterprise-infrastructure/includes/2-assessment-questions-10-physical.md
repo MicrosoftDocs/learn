@@ -20,4 +20,4 @@ These questions allow you to:
 |**How is the enterprise prepared against natural disasters?**|<ul><li>Use of hot sites.</li><li>High-availability controls.</li></ul>|
 
 > [!TIP]
-> Check out [Azure physical](https://docs.microsoft.com/azure/security/fundamentals/physical-security) for tips on securing your physical infrastructure.
+> Check out [Azure physical](/azure/security/fundamentals/physical-security) for tips on securing your physical infrastructure.

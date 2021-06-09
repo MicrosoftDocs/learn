@@ -20,7 +20,7 @@ After completing this module, you'll be able to:
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) (installed locally).
 - The [Azure Resource Manager Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension for Visual Studio Code (installed locally).
 - The [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell&azure-portal=true) extension for Visual Studio Code (installed locally).
-- On Windows, the [OpenSSH client](https://docs.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse?azure-portal=true).
+- On Windows, the [OpenSSH client](/windows-server/administration/openssh/openssh_install_firstuse?azure-portal=true).
 - Either:
-  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools (installed locally).
-  - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and the [Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.2.0&azure-portal=true) (installed locally).
+  - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools (installed locally).
+  - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) and the [Azure PowerShell module](/powershell/azure/install-az-ps?azure-portal=true&view=azps-5.2.0) (installed locally).
