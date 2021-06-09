@@ -8,7 +8,7 @@ View this two-minute video to learn more about the cloud adoption lifecycle.
 
 Each of the following steps is part of the cloud adoption lifecycle.
 
-:::image type="content" source="../media/5-cloud-adoption-lifecycle-inline.png" lightbox="../media/5-cloud-adoption-lifecycle-expanded.png" alt-text="The Cloud Adoption Lifecycle diagram.":::
+:::image type="content" source="../media/6a-cloud-adoption-lifecycle-inline.png" lightbox="../media/6a-cloud-adoption-lifecycle-expanded.png" alt-text="The Cloud Adoption Lifecycle diagram.":::
 
 1. **Strategy**: define business justification and expected outcomes of adoption.
 1. **Plan**: align actionable adoption plans to business outcomes.
