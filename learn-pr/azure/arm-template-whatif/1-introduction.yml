@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-template-test.1-introduction
+uid: learn.arm-template-whatif.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
   author: softchris
   ms.author: chnoring
-  ms.date: 05/21/2021
+  ms.date: 05/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
