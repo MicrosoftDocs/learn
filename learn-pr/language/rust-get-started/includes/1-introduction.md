@@ -1,6 +1,6 @@
 With the Rust programming language, you can build reliable and efficient systems software. Developers use Rust for networking software like web servers, mails servers, and web browsers. Rust is also present in compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography. You can use Rust to build games, command-line programs, web-assembly programs, and applications for embedded devices.
 
-Rust is a safe alternative to existing systems software languages like C and C++. Like C and C++, Rust *doesn't* have a large runtime or garbage collector, which contrasts it with almost all other modern languages. However, unlike C and C++, Rust guarantees memory safety. Rust prevents many of the bugs related to incorrect use of memory you might see in C and C++. 
+Rust is a safe alternative to existing systems software languages like C and C++. Like C and C++, Rust *doesn't* have a large runtime or garbage collector, which contrasts it with almost all other modern languages. However, unlike C and C++, Rust guarantees memory safety. Rust prevents many of the bugs related to incorrect use of memory you might see in C and C++.
 
 Rust strikes a unique balance among performance, safety, and implementation expressions. No matter what your programming background, you'll likely find Rust has something to offer!
 
