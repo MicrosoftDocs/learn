@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+- azure-translator
+- azure-cognitive-services
 units:
 - learn.azure.intro-to-translator.introduction
 - learn.azure.intro-to-translator.what-is-translator
