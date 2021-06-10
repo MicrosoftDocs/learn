@@ -1,53 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101-loops-arrays.arrays-loops
 metadata:
-  title: Manipulating arrays
-  description: Learn about how to work with arrays to access items, remove and add them.
+  title: Manipulate arrays
+  description: Learn about how to work with arrays to access, add, and remove items.
   ms.date: 05/25/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manipulating arrays
+title: Manipulate arrays
 durationInMinutes: 4
 content: |
   [!include[](includes/2-manipulating-arrays.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: To refer to a specific item in an array, you would use a
+    - content: To refer to a specific item in an array, you would use:
       choices:
-        - content: square bracket []
+        - content: Brackets `[]`
           isCorrect: false
-          explanation: Incorrect- you would need something more specific in your code to
-            refer to a specific item in an array.
-        - content: index
+          explanation: Incorrect. You would need something more specific in your code to refer to a specific item in an array.
+        - content: An index
           isCorrect: true
-          explanation: Correct! An index is needed to refer to specific items in an array.
-        - content: curly brackets {}
+          explanation: Correct! You use an index to refer to a specific item in an array.
+        - content: Braces `{}`
           isCorrect: false
-          explanation: Incorrect- you would need something more specific in your code to
-            refer to a specific item in an array.
+          explanation: Incorrect. You would need something more specific in your code to refer to a specific item in an array.
     - content: How do you get the number of items in an array?
       choices:
         - content: The 'len(array)' method
           isCorrect: false
-          explanation: Incorrect- try using a property in this case instead.
+          explanation: Incorrect. Try using a property in this case instead.
         - content: The property size on the array
           isCorrect: false
-          explanation: Incorrect- you would need a property from the array, but not its
-            size.
+          explanation: Incorrect. You would need a property from the array, but not its size.
         - content: The length property on the array
           isCorrect: true
-          explanation: Correct! The length property will get you the number of items.
-    - content: In JavaScript, indexes start at
+          explanation: Correct! The length property gets you the number of items.
+    - content: In JavaScript, indexes start at:
       choices:
         - content: "0"
           isCorrect: true
-          explanation: Correct! JavaScript indexes start at 0.
+          explanation: Correct! JavaScript indexes start at the 0 index.
         - content: "1"
           isCorrect: false
-          explanation: Incorrect- JavaScript arrays start at the 0 index.
+          explanation: Incorrect. JavaScript arrays start at the 0 index.
         - content: "2"
           isCorrect: false
-          explanation: Incorrect- JavaScript arrays start at the 0 index.
+          explanation: Incorrect. JavaScript arrays start at the 0 index.

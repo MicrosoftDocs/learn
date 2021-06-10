@@ -1,18 +1,18 @@
-As a business owner of an ice cream shop, you've picked up some programming skills and decide that you want to build some software for your business, maybe one day you will turn it all into a franchise.
+As a business owner of an ice cream shop, you've picked up some programming skills and decided to build some software for your business. Maybe one day you'll turn it all into a franchise.
 
-You want to first encode all you know about your shop like flavors and prices. Then you want to simulate some customer interactions and lastly calculate your profits and gain some other useful insights.
+You want to first encode all you know about your shop, such as your various flavors and their prices. Then you want to simulate some customer interactions. Finally, you want to calculate your profits and gain some other useful insights.
 
 ## Build your business
 
-First off you want to start your ice cream empire by encoding all the ice cream flavors. 
+First, start your ice cream empire by encoding all the ice cream flavors. 
 
-1. Create a file _app.js_ and give it the following content:
+1. Create a file called _app.js_, and add the following content:
 
    ```javascript
    let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint", "Raspberry"];
    ```
 
-1. Next you want to categorize every flavor, by what they are and give each flavor a price. So you end up modifying the code in the following way:
+1. Next, you want to categorize the flavors by type and give each one a price. You end up modifying the code in the following way:
 
    ```javascript
    let iceCreamFlavors = [
@@ -26,13 +26,13 @@ First off you want to start your ice cream empire by encoding all the ice cream 
    ];
    ```
 
-   At this point, you turned your converted your array item from strings to objects. You did this change to anticipate customers asking for things by price or type.
+   You've now converted your array item from strings to objects. You made this change to anticipate customers asking for things by price or type.
 
 ## Receive customers
 
-At this point you want to simulate a few customer scenarios in your code, to make sure the way you categorized your inventory is flexible enough.
+You want to simulate a few customer scenarios in your code, to make sure that the way you categorized your inventory is flexible enough.
 
-1. Before your first customer transaction, you realize you need a `transactions` array. You start thinking about what information you want to save on each transaction, the price definitely, probably what they buy as well. You add the following code:
+1. Before your first customer transaction, you realize you need a `transactions` array. You start thinking about what information you want to save on each transaction. The price is definitely one thing to save, and probably what your customers are buying as well. You add the following code:
 
    ```javascript
    // { scoops: [], total: }
@@ -47,11 +47,11 @@ At this point you want to simulate a few customer scenarios in your code, to mak
    transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
    ```
 
-   Ok, that simulates three customer interactions, next you want to analyze the result.
+   Okay, that simulates three customer interactions. Next, you want to analyze the result.
 
 ## Analyze your business
 
-When you run a business, it's not only about profits, but also about what you sell much so you have enough on stock. Also things that you don't sell much of are maybe things you shouldn't have in stock?
+When you run a business, profits are important, but they aren't the only important thing. What do you sell so much of that you need to ensure that there's enough of it in stock? Also, what don't you sell as much of, so you don't need to keep as much of it in stock?
 
 1. To calculate your earnings, add the following code:
 
@@ -60,7 +60,7 @@ When you run a business, it's not only about profits, but also about what you se
    console.log(`You've made ${total} $ today`); // You've made 11.5 $ today
    ```
 
-1. To find out how much you sold of each, add the following code:
+1. To find out how much you've sold of each flavor, add the following code:
 
    ```javascript
    let flavorDistribution = transactions.reduce((acc, curr) => {
@@ -74,6 +74,6 @@ When you run a business, it's not only about profits, but also about what you se
    }, {}) // { Chocolate: 1, Vanilla: 3, Mint: 1, Raspberry: 1, StrawBerry: 1 }
    ```
 
-   The above code, goes through all the transactions. For each transaction, it checks through the scoops and updates a dictionary with how often a scoop has been purchased. If these sales were a real sales situation, you would probably need to stock up on more vanilla.
+   The preceding code goes through all the transactions. For each transaction, it checks through the scoops and updates a dictionary with how often scoops of each flavor have been purchased. If these sales were a real sales situation, you would probably need to stock up on more vanilla.
 
-Congratulations, you've started an Ice Cream franchise, you know how to encode flavors and transactions using arrays and objects. You've also learned to summarize your earnings and understanding how much you've sold of each flavor.
+Congratulations, you've started an ice cream business. You know how to encode flavors and transactions by using arrays and objects. You've also learned how to summarize your earnings and understand how much you've sold of each flavor.
