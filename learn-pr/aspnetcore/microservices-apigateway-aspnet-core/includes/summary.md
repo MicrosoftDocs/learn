@@ -1,4 +1,4 @@
-Congratulations! You've learned about API Gateways in a .NET microservices app. 
+# Summary
 
 In this module you:
 
@@ -8,12 +8,22 @@ In this module you:
 - Reviewed the key API Gateway and BFF concepts
 - Deployed the e-commerce application to an AKS cluster with Application Gateway.
 
-[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
+## Clean up Azure resources
 
-[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
+> **IMPORTANT**
+>
+> It's very important you deallocate the Azure resources used in this module so that you don't get billed or spend your free account with unwanted charges.
 
-[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
+You have to:
 
-[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
+### 1. - De-provision all the resources created in this module
 
-[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
+Use the following command:
+
+```bash
+az group delete --name eshop-learn-rg --yes
+```
+
+### 2. - De-provision the storage account used by the Cloud Shell
+
+If you let the Cloud Shell create the storage using the default options, you should have a resource group named `cloud-shell-storage-{region}`. To delete the storage account you can delete the resource group from the Azure portal. You won't be able to delete the storage account from **az cli**.

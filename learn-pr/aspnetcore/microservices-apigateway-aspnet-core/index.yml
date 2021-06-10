@@ -13,11 +13,12 @@ summary: Modify a cloud-native ASP.NET Core microservices app to understand API 
 abstract: |
   In this module, you will:
   - Deploy an existing ASP.NET Core microservices e-commerce application to AKS.
-  - Implement a TLS termination using the NGINX Ingress Controller.
+  - Implement a BFF pattern using .NET.
   - Deploy the microservices application to an AKS that's using the Azure Application Gateway.
+  - Expose BFF API outside the Kubernetes cluster outside using Application Gateway Ingress Controller and access that external Swagger Client.
 prerequisites: |
+  - Familiarity with C# and ASP.NET Core
   - Familiarity with REST API services
-  - Familiarity with Private Key Infrastructure (PKI)
   - Access to an Azure subscription with Owner privilege
 levels:
   - intermediate
@@ -34,10 +35,11 @@ products:
 units:
   - learn.microservices-apigateway-aspnet-core.introduction
   - learn.microservices-apigateway-aspnet-core.environment-setup
-  - learn.microservices-apigateway-aspnet-core.api-gateway-bff
-  - learn.microservices-apigateway-aspnet-core.load-balancer
   - learn.microservices-apigateway-aspnet-core.verify-deployment
-  - learn.microservices-apigateway-aspnet-core.azure-app-gateway
+  - learn.microservices-apigateway-aspnet-core.review-api-gateway-and-bff
+  - learn.microservices-apigateway-aspnet-core.implement-bff
+  - learn.microservices-apigateway-aspnet-core.review-load-balancer-concepts
+  - learn.microservices-apigateway-aspnet-core.implement-azure-application-gateway
   - learn.microservices-apigateway-aspnet-core.knowledge-check
   - learn.microservices-apigateway-aspnet-core.summary
 iconUrl: /learn/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg

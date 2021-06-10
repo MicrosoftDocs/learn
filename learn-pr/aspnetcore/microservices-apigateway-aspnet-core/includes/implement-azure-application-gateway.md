@@ -1,3 +1,4 @@
+# Exercise - Implement load balancer with Azure Application Gateway
 
 ## Overview
 
@@ -7,34 +8,14 @@ For that, you'll deploy another AKS cluster to the resource group you already cr
 
 In this exercise you will:
 
-- Create an AKS instance with advanced networking.
 - Create an Azure Application Gateway instance.
-- Set up AAD Pod Identity.
-- Deploy the AGIC to the AKS cluster.
+- Enable the AGIC in the AKS cluster.
 - Configure the existing ingresses to use the AGIC.
-- Deploy the application with the updated ingresses to AKS.
-
-## Create an AKS instance with advanced networking
-
-Run the script:
-
-```bash
-./create-advanced-network-aks.sh
-```
-
-The above script performs the following actions:
-
-- Creates a VNET in the resource group your created in the previous exercise.
-- Creates the subnet that'll be used for AKS nodes.
-- Creates the AKS cluster.
-- Assigns the "Network Contributor" role on the VNET to the AKS principal.
-- Save the cluster credentials to `~/.kube/config`
-
-You should get something like this:
-
-![Output from the create-advanced-network script, creates VNET, creates AKS, and sets cluster as current kubectl context.](../media/create-advanced-network-aks.png)
-
-This script will take a while, so in the meantime you can begin to take a look to the [Configure ingresses](#configure-the-existing-ingresses) step.
+- Deploy the application with the updated ingresses.
+- Clean up old ingress objects.
+- Redeploy the affected apps to the cluster.
+- Add the `websalesagg` client redirect uris in the `IdentityDb`.
+- Test `websalesagg` using Swagger UI.
 
 ## Create an Azure Application Gateway instance
 
@@ -46,58 +27,37 @@ Run the script:
 
 The script will perform the following tasks:
 
-- Create a subnet for the Application Gateway in the VNET created in the previous step.
+- Create a VNET for the Application Gateway
+- Create a subnet in the VNET created in the previous step.
 - Create a public IP.
 - Create the Application Gateway.
 
 You should get something like this:
 
-![Outpuut from the create-application-gateway script. Creates subnet, creates public IP, and creates Application Gateway.](../media/create-application-gateway.png)
+![Output from the create-application-gateway script. Creates subnet, creates public IP, and creates Application Gateway.](media/create-application-gateway.png)
 
 This script will also take a while, so in the meantime you can continue checking out the [ingresses configuration](#configure-the-existing-ingresses).
 
-## Set up AAD Pod Identity
-
-This a key step for the whole setup to work properly. Since the AGIC needs to update the Application Gateway configuration constantly, to respond to ingress resource changes in the cluster, it needs permissions to create listeners, routes, and backend pools in the Application Gateway. This means the AGIC needs an identity it can "impersonate" that has the needed permissions.
-
-In this case the identity used is the [Managed System Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) from the AKS cluster.
-
-To set up the AAD pod identity, run the script:
-
-```bash
-./setup-pod-identity.sh
-```
-
-The above script performs the following tasks:
-
-- Assigns necessary roles to the AKS principal
-  - Managed Identity Operator
-  - Virtual Machine Contributor
-  - Contributor
-  - Reader
-- Installs the AAD Pod Identity object in the AKS cluster
-
-You should get something like this:
-
-![Output from the setup-pod-identity script. Uses AKS identity, installs ADD Pod identity.](../media/setup-pod-identity.png)
-
-## Create the AGIC in the AKS cluster
+## Enable the AGIC in the AKS cluster
 
 Run the script:
 
 ```bash
-./create-agic.sh
+./enable-agic-adon.sh
 ```
 
-The script installs the AGIC helm chart from its repo. This where the configured identity mentioned before is assigned to the AGIC.
+As there is already an existing cluster running, you'll not create a new cluster and configure application gateway with advance networking. Instead you'll follow a brownfield approach and enable the AGIC as an feature on the existing AKS instance.
 
-You should get a long output that begins like this:
+The script will perform the following tasks:
 
-![Initial output from the create-agic script.](../media/create-application-gateway-ingress-controller-begin.png)
+- Enable the AGIC as an adon feature in the existing Kubernetes cluster.
+- Enable the bi-directional peering between the existing VNET network of AKS cluster and the newly created VNET of the Application Gateway cluster.
+
+![Initial output from the enable-agic-adon.sh script.](media/enable-adon.png)
 
 And ends like this:
 
-![Final output from the create-agic script. Highlighting version 1.2.0 was installed.](../media/create-application-gateway-ingress-controller-end.png)
+![Final output from the enable-agic-adon.sh.](media/enable-adon-last.png)
 
 ## Configure the existing ingresses
 
@@ -190,7 +150,7 @@ The next table summarizes the changes that have to be made to all ingresses:
 | webspa | ingress | webspa | /* |  |
 | webstatus | ingress | webstatus | /webstatus/* |  |
 
-> **NOTE**
+> [!NOTE]
 >
 > The `ingress-gw-signalr` configurations end with `...notificationhub*` and `...notificationhub`, without a `/`, it's not a typo.
 
@@ -204,7 +164,7 @@ Note: Keep in mind that all ingresses must contain the `kubernetes.io/ingress.cl
 
 You can use VS Code's search feature to make it easier to update the ingresses, as shown in the next image:
 
-![Image description follows in text.](../media/update-ingresses-vscode.png)
+![Image description follows in text.](media/update-ingresses-vscode.png)
 
 In the preceding image you can see the searching for `kind: ingress` in VS Code makes it easy to identify all files that have to be updated.
 
@@ -212,6 +172,14 @@ If you don't feel like doing this task in the editor (which we recommend to rein
 
 ```bash
 cp -r ./helm-ingress/* ./helm-simple
+```
+
+## Clean up old ingress objects
+
+You'll need to clean up the old ingress objects before deploying the newly annotated `azure/application-gateway` ingress object and populate those with the public IP of the Application Gateway. So you need to run the below script.
+
+```bash
+kubectl delete ingress --all
 ```
 
 ## Deploy the application with the updated ingresses
@@ -224,10 +192,59 @@ Just run the following script, replacing the `{appgw-public-ip}` with the value 
 
 You should get an output just like the one from the initial deployment, only the IP will be different:
 
-![Output from the deploy-application script. Highlighting the resulting deployment urls.](../media/deploy-aks-application-gateway.png)
+![Output from the deploy-application script. Highlighting the resulting deployment urls.](media/deploy-aks-application-gateway.png)
 
 You can now explore the application deploy onto the new AKS, although, other than the IP, you shouldn't see any difference.
 
-## Configure TLS terminiation
+## Redeploy the affected apps to the cluster
 
-// TO DO
+Replace `{appgw-public-ip}` with the public ip address of the application gateway and then run the below command to deploy the affected services again to the cluster.
+
+```bash
+./deploy-affected-services.sh --ipAddress {appgw-public-ip}
+```
+
+The above script will deploy the following services :
+
+- `WebStatus`
+- `Identity.API`
+- `WebSalesAgg`
+
+![Deploy affected services](media/deploy-affected-services.png)
+
+## Add the `websalesagg` client redirect uris in the `IdentityDb`
+
+- The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database of the `SQL` container will not have the necessary configuration for the `websalesagg` authorize.
+- So, you'll need to repopulate the data in the `IdentityDb`.
+- Delete the SQL related pod by using the below command.
+
+    ```bash
+    kubectl delete pods --selector service=sqldata
+    ```
+
+- Wait until the SQL Server pod is ready to accept connections and then restart all other pods. Then run the command mentioned below to restart the other instances of the app to populate all the necessary data in the respective databases.
+
+    ```bash
+    kubectl delete pods --selector service!=sqldata
+    ```
+
+- Check the `webstatus` app using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and make sure `websalesagg` is up and running.
+- Then you can access the `websalesagg` swagger ui by using `http://{appgw-public-ip}/websalesagg` url.
+
+## Test `websalesagg` using Swagger UI
+
+### Create an order
+
+- It's important that you login to the `WebSPA` app using `http://{appgw-public-ip}/` and created a order. Otherwise you'll not able to see any data in the Sales API.
+
+![List of orders](media/list-of-orders.png)
+
+### Fetch the sales data
+
+- Authorize the request with the `adminuser@microsoft.com` user.
+- And click on the `Sales API` to fetch the API data.
+- You'll see the below output, where aggregated sales unit per brand has been shown for those orders which has been created today.
+
+![Sales API Data](media/websales-agg-sales-api-data.png)
+
+| [TOC](../README.md) | [NEXT >](knowledge-check.md) |

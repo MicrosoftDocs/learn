@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.load-balancer
+uid: learn.microservices-apigateway-aspnet-core.review-load-balancer-concepts
 metadata:
   title: Review Load Balancer
   description: Review Load Balancer
@@ -11,4 +11,4 @@ metadata:
 title: Review Load Balancer
 durationInMinutes: 10
 content: |
-  [!include[](includes/load-balancer.md)]
+  [!include[](includes/review-load-balancer-concepts.md)]
