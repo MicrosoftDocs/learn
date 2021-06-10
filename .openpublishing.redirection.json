@@ -7804,6 +7804,11 @@
       "source_path": "learn-pr/language/rust-understand-common-concepts/6-functions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4a-functions/",
       "redirect_document_id": true
-    }    
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/10-control-flow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/3a-if-else-expressions/",
+      "redirect_document_id": true
+    }  
   ]
 }
