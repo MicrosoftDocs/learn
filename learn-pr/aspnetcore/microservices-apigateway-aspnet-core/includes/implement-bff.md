@@ -1,5 +1,3 @@
-# Exercise - Implement a new Backend for Frontend
-
 ## Overview
 
 In this exercise you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster.

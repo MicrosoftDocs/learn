@@ -1,5 +1,3 @@
-# Exercise - Implement load balancer with Azure Application Gateway
-
 ## Overview
 
 In this exercise you'll deploy an instance of Azure Application Gateway with ingress controller to load balance the traffic to different pods directly of `eShopOnContainer` services. Further to that, you'll also enable TLS configuration in Application Gateway to use HTTPS instead of HTTP.
@@ -164,7 +162,7 @@ Note: Keep in mind that all ingresses must contain the `kubernetes.io/ingress.cl
 
 You can use VS Code's search feature to make it easier to update the ingresses, as shown in the next image:
 
-![Image description follows in text.](../media/update-ingresses-vscode.png)
+![VS code ingress search](../media/update-ingresses-vscode.png)
 
 In the preceding image you can see the searching for `kind: ingress` in VS Code makes it easy to identify all files that have to be updated.
 

@@ -2,7 +2,7 @@
 uid: learn.microservices-apigateway-aspnet-core
 metadata:
   title: Understand API Gateways in a cloud-native ASP.NET Core microservices app
-  description: This module guides you through implementing Azure-managed data stores in an ASP.NET Core microservices app.
+  description: This module guides you through implementing BFF in an ASP.NET Core microservices app.
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021

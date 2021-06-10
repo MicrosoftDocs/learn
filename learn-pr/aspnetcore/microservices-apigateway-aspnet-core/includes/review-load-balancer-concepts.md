@@ -1,5 +1,3 @@
-# Review Load Balancer
-
 // TO DO - explain on how to route the traffic and connect this segment.
 
 In the previous unit, you developed and deployed a newly created BFF to the kubernetes cluster. In this exercise you'll learn the different ways to make the Sales BFF available outside the cluster for the client to consume.
@@ -23,7 +21,7 @@ API Management (APIM) is a way to create consistent and modern API gateways for 
 - Has an option to run the API Gateway outside the cluster reducing the load on the cluster.
 - Easy analytics option to monitor the load or incoming traffic.
 
-You can always deploy APIM in front of Kubernetes cluster to expose your API internally or externally. There are quite a few options available for you to adopt the right architecture. For more details, refer [Deploy API Management in front of AKS](https://docs.microsoft.com/en-us/azure/api-management/api-management-kubernetes#deploy-api-management-in-front-of-aks)
+You can always deploy APIM in front of Kubernetes cluster to expose your API internally or externally. There are quite a few options available for you to adopt the right architecture. For more details, refer [Deploy API Management in front of AKS](/azure/api-management/api-management-kubernetes#deploy-api-management-in-front-of-aks)
 
 Though you can always route the traffic from an APIM to an ingress controller to let the traffic flow in from outside to the internal cluster, there is another popular option available for you to explore in Azure. That's **Application Gateway**. You can enable **Application Gateway ingress controller** to easily route the external traffic directly to your service pods. You'll explore those concepts in detail in the next unit.
 
@@ -107,7 +105,7 @@ The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` j
 
 The API Gateway used in eShopOnContainers is fine as a learning resource and many real-world scenarios, but for large-scale scenarios you need a more robust solution that takes care of common, general requirements, so you can focus on the value-adding features of your application.
 
-Azure Application Gateway is a managed solution that allows you to handle any-size scenarios that can scale to world-wide level if necessary. Azure Application Gateway has several [key features](https://docs.microsoft.com/azure/application-gateway/features) that help you tackle real-world scenarios, like the following:
+Azure Application Gateway is a managed solution that allows you to handle any-size scenarios that can scale to world-wide level if necessary. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, like the following:
 
 - Secure Sockets Layer (SSL/TLS) termination
 - Auto-scaling
@@ -118,13 +116,13 @@ Azure Application Gateway is a managed solution that allows you to handle any-si
 
 The Application Gateway Ingress Controller (AGIC) makes it easy to integrate the Application Gateway with your Kubernetes cluster. The next image shows the general architecture of the solution.
 
-![Image description follows in text.](../media/azure-application-gateway-ingress-controller-overview.png)
+![AGIC overview](../media/azure-application-gateway-ingress-controller-overview.png)
 
 In the image above you can see that the AGIC lives inside the AKS cluster as an Ingress Controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
 Since the Azure Application Gateway is a managed service outside the AKS cluster, that can't usually access the pods directly, the AKS has to be created with the "advanced networking option". This advanced networking option makes the pods connect through a subnet that's accesible by the Application Gateway.
 
-For further information, see the [Application Gateway Ingress Controller overview page](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)
+For further information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview)
 
 ##### Difference between In-Cluster Ingress Controller and AGIC
 

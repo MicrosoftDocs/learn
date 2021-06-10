@@ -1,5 +1,3 @@
-# Exercise - Set up the environment
-
 To begin with this module you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
 
 To create an AKS cluster with a starter version of eShop-Learn complete the following steps:
