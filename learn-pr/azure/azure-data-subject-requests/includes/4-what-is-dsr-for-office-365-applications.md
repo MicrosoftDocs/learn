@@ -52,7 +52,7 @@ The applications that support content search in Microsoft 365 and Office 365 are
 - Visio
 - Word
 
-> [!NOTES]
+> [!NOTE]
 > 
 > **Discovery of personal data** Microsoft estimates that more than 90 percent of an organization's data stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
 
