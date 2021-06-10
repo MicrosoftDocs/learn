@@ -41,7 +41,7 @@ units:
 - learn.language.rust-understand-common-concepts.4a-functions
 - learn.language.rust-understand-common-concepts.4b-exercise-functions
 - learn.language.rust-understand-common-concepts.7-collection-types
-- learn.language.rust-understand-common-concepts.7a-for-loops
+- learn.language.rust-understand-common-concepts.7a-loops
 - learn.language.rust-understand-common-concepts.8-exercise-indexing
 - learn.language.rust-understand-common-concepts.9-exercise-hashmaps
 - learn.language.rust-understand-common-concepts.11-knowledge-check
