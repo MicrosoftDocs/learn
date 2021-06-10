@@ -75,14 +75,14 @@ myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource 
 
 3. Connect to the first VM by using SSH:
 
-```azurecli
+```bash
 ssh azureuser@$myPublicIP1
 ```
 
 4. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
 5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
 
-```azurecli
+```bash
 # Install sg3-utils
 sudo apt-get install sg3-utils
   
@@ -92,7 +92,7 @@ sudo sg_persist /dev/sdc -s
 
 :::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
 
-```azurecli
+```bash
 # Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
 sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
    
@@ -107,7 +107,7 @@ exit
 
 6. Connect to the second VM by using SSH using the following command:
 
-```azurecli
+```bash
 myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
     
 ssh azureuser@$myPublicIP2
@@ -116,7 +116,7 @@ ssh azureuser@$myPublicIP2
 7. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
 8. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
 
-```azurecli
+```bash
 # Install sg3-utils
 sudo apt-get install sg3-utils
     
@@ -133,7 +133,7 @@ exit
 
 9. Connect to **myVM1** using SSH:
 
-```azurecli
+```bash
 ssh azureuser@$myPublicIP1
     
 # Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
@@ -148,7 +148,7 @@ exit
 
 10. Connect to **myVM2** by using SSH:
 
-```azurecli
+```bash
 ssh azureuser@$myPublicIP2
    
 # Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
@@ -160,7 +160,7 @@ sudo sg_persist /dev/sdc -c
 
 :::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
 
-```azurecli
+```bash
 # Unregister from **myVM2**. This command release access to the shared disk.
 sudo sg_persist --out --register --param-rk=1235 --param-sark=0 --device /dev/sdc
     
