@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.introduction
+uid: learn.microservices-apigateway-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
@@ -11,4 +11,4 @@ metadata:
 title: Introduction
 durationInMinutes: 1
 content: |
-  [!include[](includes/introduction.md)]
+  [!include[](includes/1-introduction.md)]

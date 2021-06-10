@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.review-api-gateway-and-bff
+uid: learn.microservices-apigateway-aspnet-core.4-review-api-gateway-and-bff
 metadata:
   title: Review the API Gateway and BFF concepts
   description: Review the API Gateway and BFF concepts
@@ -11,4 +11,4 @@ metadata:
 title: Review the API Gateway and BFF concepts
 durationInMinutes: 10
 content: |
-  [!include[](includes/review-api-gateway-and-bff.md)]
+  [!include[](includes/4-review-api-gateway-and-bff.md)]

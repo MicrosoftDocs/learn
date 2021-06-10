@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.environment-setup
+uid: learn.microservices-apigateway-aspnet-core.2-environment-setup
 metadata:
   title: Exercise - Set up the environment
   description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Set up the environment
 durationInMinutes: 10
 content: |
-  [!include[](includes/environment-setup.md)]
+  [!include[](includes/2-environment-setup.md)]

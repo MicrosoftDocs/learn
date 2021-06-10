@@ -33,15 +33,15 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
 units:
-  - learn.microservices-apigateway-aspnet-core.introduction
-  - learn.microservices-apigateway-aspnet-core.environment-setup
-  - learn.microservices-apigateway-aspnet-core.verify-deployment
-  - learn.microservices-apigateway-aspnet-core.review-api-gateway-and-bff
-  - learn.microservices-apigateway-aspnet-core.implement-bff
-  - learn.microservices-apigateway-aspnet-core.review-load-balancer-concepts
-  - learn.microservices-apigateway-aspnet-core.implement-azure-application-gateway
-  - learn.microservices-apigateway-aspnet-core.knowledge-check
-  - learn.microservices-apigateway-aspnet-core.summary
+  - learn.microservices-apigateway-aspnet-core.1-introduction
+  - learn.microservices-apigateway-aspnet-core.2-environment-setup
+  - learn.microservices-apigateway-aspnet-core.3-verify-deployment
+  - learn.microservices-apigateway-aspnet-core.4-review-api-gateway-and-bff
+  - learn.microservices-apigateway-aspnet-core.5-implement-bff
+  - learn.microservices-apigateway-aspnet-core.6-review-kubernetes-ingress-controller-concepts
+  - learn.microservices-apigateway-aspnet-core.7-implement-azure-application-gateway
+  - learn.microservices-apigateway-aspnet-core.8-knowledge-check
+  - learn.microservices-apigateway-aspnet-core.9-summary
 iconUrl: /learn/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg
 badge:
   uid: learn.microservices-apigateway-aspnet-core.badge

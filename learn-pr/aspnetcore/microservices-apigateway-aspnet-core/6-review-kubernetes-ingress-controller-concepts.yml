@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-apigateway-aspnet-core.6-review-kubernetes-ingress-controller-concepts
+metadata:
+  title: Review Kubernetes Ingress Controller
+  description: Review Kubernetes Ingress Controller
+  author: camsoper
+  ms.author: casoper
+  ms.date: 05/12/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Review Kubernetes Ingress Controller
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-review-kubernetes-ingress-controller-concepts.md)]
