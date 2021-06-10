@@ -14,7 +14,7 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "An administrator plans to use an Azure shared disk for their clustered database. Which of the following SQL deployment optionss can benefit from Azure shared disk?"
+  - content: "An administrator plans to use an Azure shared disk for their clustered database. Which of the following SQL deployment options can benefit from Azure shared disk?"
     choices:
     - content: "Single instance SQL"
       isCorrect: false
