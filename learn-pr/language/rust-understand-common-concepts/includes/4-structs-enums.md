@@ -1,115 +1,220 @@
-A struct is a type that's composed of other types. Like tuples, the pieces of a struct can be different types. But in a struct, you can name each piece of data so it's clear what the values mean.
+A struct is a type that's composed of other types. The elements in a struct are called *fields*. Like tuples, the fields in a struct can have different data types. A significant benefit of the struct type is that you can name each field so it's clear what the value means. 
 
-Structs in Rust come in three flavors: classic structs, tuple structs, and unit structs.
+To work with structs in a Rust program, first you define the struct by name and specify the data type for each field. Then, you create an *instance* of the struct with another name. When you declare the instance, you provide the specific values for the fields.
+
+
+## Choose the struct type
+
+Rust supports three struct types: classic structs, tuple structs, and unit structs. These struct types support different ways to group and work with the data.
+
+- **Classic [C structs][Wikipedia-C]** are the most commonly used. Each field in the struct has a name and a data type. After a classic struct is defined, the fields in the struct can be accessed by using the syntax `<struct>.<field>`.
+- **Tuple structs** are similar to classic structs, but the fields don't have names. To access the fields in a tuple struct, we use the same syntax as we do for indexing a tuple: `<tuple>.<index>`. As with tuples, the index values in the tuple struct start at zero.
+- **Unit structs** are most commonly used as markers. We'll learn more about why unit structs are useful when we learn about Rust's *traits* feature.
+
+The following code shows example definitions for the three varieties of struct types:
 
 ```rust
-// A struct with named fields
-struct Person {
-    name: String,
-    age: u8,
-    likes_oranges: bool,
-}
+// Classic struct with named fields
+struct Student { name: String, level: u8, pass: bool }
 
-// A tuple struct
-struct Point2D(u32, u32);
+// Tuple struct with data types only
+struct Grades(char, char, char, char, f32);
 
-// A unit struct
+// Unit struct
 struct Unit;
 ```
 
-- **Classic [C structs][Wikipedia-C]** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
-- **Tuple structs** are similar to classic structs, but their fields have no names. For accessing individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on, starting at zero.
-- **Unit structs** are most commonly used as markers. We'll learn more about why these structs can be useful when we learn about Rust's traits feature.
+
+## Define a struct
+
+To define a struct, we enter the keyword `struct` followed by the struct name. Choose a name for the struct type that describes the significant characteristic of the grouped data. Unlike the naming convention that we've used so far, the name of a struct type is capitalized.
+
+Struct types are often defined outside of the `main` function and other functions in the Rust program. For this reason, the start of the struct definition isn't indented from the left margin. Only the inside portion of the definition is indented to show how the data is organized.
 
 
-## Instantiate structs
+### Classic struct
 
-After we define a struct, we use it by creating an instance and specifying concrete values for each field.
+Like a function, the body of a classic struct is defined inside curly brackets `{}`. Each field in the classic struct is given a name that's unique within the struct. The type for each field is specified with the syntax `: <type>`. The fields in the classic struct are specified as a comma-separated list `<field>, <field>, ...`. A classic struct definition **doesn't** end with a semicolon.
 
 ```rust
-fn main() {
-    // Instantiate a classic struct, with named fields. Order does not matter.
-    let person = Person {
-        name: String::from("Adam"),
-        likes_oranges: true,
-        age: 25
-    };
-
-    // Instantiate a tuple struct by passing the values in the same order as defined.
-    let origin = Point2D(0, 0);
-
-    // Instantiate a unit struct.
-    let unit = Unit;
-
-    // Display the details of the person
-    if person.likes_oranges {
-        println!("{:?} is {:?} and likes oranges.", person.name, person.age);  
-    } else {
-        println!("{:?} is {:?} and doesn't like oranges.", person.name, person.age);  
-    }
-}
+// Classic struct with named fields
+struct Student { name: String, level: u8, pass: bool }
 ```
 
-You can interact with the preceding example in this [Rust Playground][RustPlay-structs].
+A benefit of the classic struct definition is you can access the value for a struct field by name. To access the field value, we use the syntax `<struct>.<field>`.
+
+
+### Tuple struct
+
+Like a tuple, the body of a tuple struct is defined inside parentheses `()`. The parentheses immediately follows the struct name. There's no space between the struct name and the opening parentheses.
+
+Unlike a tuple, the tuple struct definition contains only the data type for each field. The data types in the tuple struct are specified as a comma-separated list `<type>, <type>, ...`. 
+
+```rust
+// Tuple struct with data types only
+struct Grades(char, char, char, char, f32);
+```
+
+
+## Instantiate a struct
+
+After you define a struct type, you use the struct by creating an instance of the type and specifying values for each field. When you set the field values, you don't need to specify the fields in the same order as they're defined.
+
+The following example uses the definitions that we created for the Student and Grades struct types.
+
+```rust
+// Instantiate classic struct, specify fields in random order, or in specified order
+let user_1 = Student { name: String::from("Constance Sharma"), remote: true, level: 2 };
+let user_2 = Student { name: String::from("Dyson Tan"), level: 5, remote: false };
+
+// Instantiate tuple structs, pass values in same order as types defined
+let mark_1 = Grades('A', 'A', 'B', 'A', 3.75);
+let mark_2 = Grades('B', 'A', 'A', 'C', 3.25);
+
+println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
+         user_1.name, user_1.level, user_1.remote, mark_1.0, mark_1.1, mark_1.2, mark_1.3, mark_1.4);
+println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
+         user_2.name, user_2.level, user_2.remote, mark_2.0, mark_2.1, mark_2.2, mark_2.3, mark_2.4);
+```
+
+You can interact with this example code in this [Rust Playground][RustPlay-structs].
 
 
 ## Enums
 
-Enums are types that can be any one of several variants.
+Enums are types that can be any one of several variants. What Rust calls enums are more commonly known as [algebraic data types][Wikipedia-algebraic]. The important detail is that each enum variant can have data to go along with it.
 
-What Rust calls enums are more commonly known as [algebraic data types][Wikipedia-algebraic]. The important detail is that each enum variant can have data to go along with it.
 
-The `enum` keyword allows the creation of a type, which might be one of a few different variants. Enum variants, just like structs, can have fields with names, fields without names, or no fields at all.
+## Define an enum
 
-In the following example, we define an enum to classify a web event. Each variant is independent and stores different amounts and types of values.
+We use the `enum` keyword to create an enum type, which can have any combination of the enum variants. Like structs, enum variants can have named fields, fields without names, or no fields at all. Like struct types, enum types are also capitalized.
 
-```rust
-enum WebEvent {
-    // An enum can be unit-like
-    PageLoad,
-    PageUnload,
-
-    // Or it can include characters and strings
-    KeyPress(char),
-    Paste(String),
-
-    // Or it can include tuple structs
-    Click{x: i64, y: i64}
-}
-```
-
-This enum has four variants with different types:
-
-- `PageLoad` and `PageUnload` have no data associated with it at all.
-- `Keypress` includes a single character in it.
-- `Paste` includes a single string.
-- `Click` includes an anonymous struct inside it.
-
-Defining an enum with variants such as the preceding one is similar to defining different kinds of struct definitions. All the variants are grouped together under the same `WebEvent` type and each variant isn't its own type. We can't have functions that only accept `KeyPress` and not other variants of the `WebEvent` enum.
-
-We can choose to define separate structs for each variant and then have each variant hold on to the different structs. These structs would hold the same data that the preceding enum variants held. But this definition allows users to refer to each logical variant on its own.
+In the following example, we define an enum to classify a web event. Each variant in the enum is independent and stores different amounts and types of values.
 
 ```rust
 enum WebEvent {
-    PageLoad,
-    PageUnload,
-    KeyPress(KeyPress),
-    Paste(String),
-    Click(Click)
+    // An enum variant can be like a unit struct without fields or data types
+    WELoad,
+    // An enum variant can be like a tuple struct with data types but no named fields
+    WEKeys(String, char),
+    // An enum variant can be like a classic struct with named fields and their data types
+    WEClick { x: i64, y: i64 }
 }
-
-struct Click { 
-    x: i64, 
-    y: i64 
-}
-
-struct KeyPress(char);
 ```
 
-In your code, you can refer to a `WebEvent::Click`, which is a variant of the type `WebEvent`. You can also refer to a `Click` on its own, separate from the `WebEvent`.
+The enum in our example has three variants of different types:
+
+- `WELoad` has no associated data type or data.
+- `WEKeys` has two fields with data types `String` and `char`.
+- `WEMClick` contains an anonymous struct with named fields `x` and `y`, and their data types (`i64`).
+
+We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `KeyPress` variant, but not the other variants.
+
+
+## Define an enum with structs
+
+A way to work around enum variant requirements is to define a separate struct for each variant in the enum. Then, each variant in the enum uses the corresponding struct. The struct holds the same data that was held by the corresponding enum variant. This style of definition allows us to refer to each logical variant on its own.
+
+The following code shows how to use this alternate definition style. The structs are defined to hold the data. The variants in the enum are defined to refer to the structs.
+
+```rust
+// Define a tuple struct
+struct KeyPress(String, char);
+
+// Define a classic struct
+struct MouseClick { x: i64, y: i64 }
+
+// Redefine the enum variants to use the data from the new structs
+// Update the page Load variant to have the boolean type
+enum WebEvent { WELoad(bool), WEClick(MouseClick), WEKeys(KeyPress) }
+```
+
+
+## Instantiate an enum
+
+Now let's add code to create instances of our enum variants. For each variant, we use the `let` keyword to make the assignment. To access the specific variant in the enum definition, we use the syntax `<enum>::<variant>` with double colons `::`.
+
+
+### Simple variant: WELoad(bool)
+
+The first variant in the `WebEvent` enum has a single boolean value, `WELoad(bool)`. We instantiate this variant in a manner similar to how we worked with booleans in the previous unit:
+
+```rust
+let we_load = WebEvent::WELoad(true);
+```
+
+
+### Struct variant: WEClick(MouseClick)
+
+The second variant contains a classic struct `WEClick(MouseClick)`. The struct has two named fields `x` and `y`, and both fields have the `i64` data type. To create this variant, first we instantiate the struct. Then we pass the struct as an argument in the call to instantiate the variant.
+
+```rust
+// Instantiate a MouseClick struct and bind the coordinate values
+let click = MouseClick { x: 100, y: 250 };
+
+// Set the WEClick variant to use the data in the click struct
+let we_click = WebEvent::WEClick(click);
+```
+
+
+### Tuple variant: WEKeys(KeyPress)
+
+The last variant contains a tuple `WEKeys(KeyPress)`. The tuple has two fields that use the `String` and `char` data types. To create this variant, first we instantiate the tuple. Then we pass the tuple as an argument in the call to instantiate the variant.
+
+```rust
+// Instantiate a KeyPress tuple and bind the key values
+let keys = KeyPress(String::from("Ctrl+"), 'N');
+    
+// Set the WEKeys variant to use the data in the keys tuple
+let we_key = WebEvent::WEKeys(keys);
+```
+
+Notice that we use new syntax in this piece of code, `String::from("<value>")`. This syntax creates a value of type `String` by calling the Rust `from` method. The method expects an input argument of data enclosed in double quotation marks.
+
+
+### Enums example
+
+Here's the final code to instantiate the enum variants:
+
+```rust
+// Instantiate a MouseClick struct and bind the coordinate values
+let click = MouseClick { x: 100, y: 250 };
+println!("Mouse click location: {}, {}", click.x, click.y);
+    
+// Instantiate a KeyPress tuple and bind the key values
+let keys = KeyPress(String::from("Ctrl+"), 'N');
+println!("\nKeys pressed: {}{}", keys.0, keys.1);
+    
+// Instantiate WebEvent enum variants
+// Set the boolean page Load value to true
+let we_load = WebEvent::WELoad(true);
+// Set the WEClick variant to use the data in the click struct
+let we_click = WebEvent::WEClick(click);
+// Set the WEKeys variant to use the data in the keys tuple
+let we_key = WebEvent::WEKeys(keys);
+    
+// Print the values in the WebEvent enum variants
+// Use the {:#?} syntax to display the enum structure and data in a readable form
+println!("\nWebEvent enum structure: \n\n {:#?} \n\n {:#?} \n\n {:#?}", we_load, we_click, we_key);
+```
+
+Try to interact with this example code in the [Rust Playground][RustPlay-enums].
+
+
+### Debug statements
+
+In the Rust Playground, look for the following code statement. This statement is used in several places in the code.
+
+```rust
+// Set the Debug flag so we can check the data in the output
+#[derive(Debug)]
+```
+
+The `#[derive(Debug)]` syntax lets us see certain values during the code execution that aren't otherwise viewable in standard output. To view debug data with the `println!` macro, we use the syntax `{:#?}` to format the data in a readable manner. 
 
 
 <!-- Links -->
-[RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=55a21bcf95b3cb12181c689c2b7b7f42?azure-portal=true
-[Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)
+[RustPlay-enums]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f81139b1fc896ac6f3e5840f2661dd2f?azure-portal=true
+[RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1a09be796adc0020c4f868a92b4084f4?azure-portal=true
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true
+[Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)
