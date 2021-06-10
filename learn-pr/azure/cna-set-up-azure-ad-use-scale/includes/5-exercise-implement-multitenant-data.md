@@ -85,7 +85,7 @@ With the Azure Database for PostgreSQL single server provisioned, you'll connect
     ```
     psql "host=<server_name>.postgres.database.azure.com port=5432 dbname={your_database} user=student@cnapostgresqldb password={your_password} sslmode=require"
     ```
-<!--ID/SME: Should "pane" follow Cloud Shell in the next sentence? It's ok to use "Cloud Shell" instead of "Azure Cloud Shell" after first instance, but not required (the following sentences).-->
+
 1. In the Azure portal, open a Bash session of the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session on the **Cloud Shell** pane, paste the value of the **psql** connection string from the clipboard, modify it so it matches the following command, and run it to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. The value of the `<server_name>` placeholder will be already included in the connection string you pasted from the clipboard:
 
@@ -217,8 +217,8 @@ To integrate the Azure Database for PostgreSQL single server instance with Azure
 
     > [!NOTE]
     > When you successfully connect, you should be presented with the `cnamtinventory=>` prompt.
-<!--ID/SME: Please revise the following sentence. Remove "to connect"?-->
-1. From the `cnamtinventory=>` prompt, run the following command to connect to create a database role corresponding to the **adatumgroup1** Azure AD group you created in the previous exercise:
+
+1. From the `cnamtinventory=>` prompt, run the following command to create a database role corresponding to the **adatumgroup1** Azure AD group you created in the previous exercise:
 
     ```t-sql
     CREATE ROLE "adatumgroup1" WITH LOGIN IN ROLE azure_ad_user;
@@ -294,7 +294,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 ## Implement a simple, Azure AD-integrated Node.js-based application
 
 With the application registered in the Azure AD tenant, you can now proceed with its implementation.
-<!--ID/SME: Should "pane" follow Cloud Shell in the following sentence?-->
+
 1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session on the **Cloud Shell** pane, run the following command to initialize a Node.js project in a new directory:
 
@@ -502,7 +502,7 @@ You're finally ready to test the functionality of your web app. While you could 
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
-<!--ID/SME: Should pane follow "Cloud Shell"?-->
+
 1. Switch back to the web browser tab displaying the Bash session on the **Cloud Shell** pane and run the following commands to initialize the local Git repository and commit all changes in the main branch:
 
     ```azurecli-interactive
