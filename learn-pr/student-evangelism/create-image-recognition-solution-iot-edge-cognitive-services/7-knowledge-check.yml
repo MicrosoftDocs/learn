@@ -24,7 +24,7 @@ quiz:
     - content: "Create your modules - Package them in a container - Push them to Docker Container Registry - Write a deployment manifest - Push deployment manifest to edge device - Push deployment manifest to IoT Hub Service"
       isCorrect: false
       explanation: "Firstly, you need to push deployment manifest to the IoT Hub then push to edge device."
-  - content: "Consider the scenario of creating an image recognition solution using Custom Vision with Azure IoT Edge. How would you enable use of Cognitive Services within this Azure IoT Edge deployment?"
+  - content: "Consider the scenario of creating an image recognition solution using Custom Vision with Azure IoT Edge. How did we enable use of Cognitive Services within the Azure IoT Edge deployment that we used in this module?"
     choices:
     - content: "Using REST API"
       isCorrect: true
