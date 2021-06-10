@@ -14,7 +14,7 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "1.	An administrator must select the disk type that provides the highest IOPS for a new VM. Which disk type should they use, assuming their region supports all disk types?"
+  - content: "An administrator must select the disk type that provides the highest IOPS for a new VM. Which disk type should they use, assuming their region supports all disk types?"
     choices:
     - content: "Ultra Disks"
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
       isCorrect: false
       explanation: "Premium SSDs provide high performance, but don't offer the best performance of all the available disk types in Azure."
  
-  - content: "2.	You’re running an application that requires 15,000 IOPS on an Azure VM. You’ve provisioned one with the Standard_D8s_v3 tier. It provides 12,800 IOPS; a P30 operating-system disk with 5,000 IOPS; and two P30 data disks with 5,000 IOPS each. Which of the following is true?"
+  - content: "You’re running an application that requires 15,000 IOPS on an Azure VM. You’ve provisioned one with the Standard_D8s_v3 tier. It provides 12,800 IOPS; a P30 operating-system disk with 5,000 IOPS; and two P30 data disks with 5,000 IOPS each. Which of the following is true?"
     choices:
     - content: "You’ve met the application’s demands."
       isCorrect: false
@@ -34,11 +34,11 @@ quiz:
     - content: "VM IO capping prevents the application from receiving the demanding IOPS."
       isCorrect: true
       explanation: "The application is capped by the virtual machine limits and must allocate the allotted 12,800 IOPS."
-    - content: "•	Disk IO capping prevents the application from receiving the demanding IOPS."
+    - content: "Disk IO capping prevents the application from receiving the demanding IOPS."
       isCorrect: false
       explanation: "All attached disks are P30 disks that can handle 5,000 IOPS. So, they respond back with their requested amounts, but in this case VM IO capping prevent application to achieve demanding IOPS."
  
-  - content: "3.	An administrator is creating an Azure VM to run a marketing application. You’ve scheduled a planned marketing event for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator use to meet the application requirements?"
+  - content: "An administrator is creating an Azure VM to run a marketing application. You’ve scheduled a planned marketing event for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator use to meet the application requirements?"
     choices:
     - content: "Use disk bursting."
       isCorrect: false
