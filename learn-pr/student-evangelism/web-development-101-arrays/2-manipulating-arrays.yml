@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: To refer to a specific item in an array, you would use:
+    - content: To refer to a specific item in an array, you would use
       choices:
         - content: Brackets `[]`
           isCorrect: false
@@ -37,7 +37,7 @@ quiz:
         - content: The length property on the array
           isCorrect: true
           explanation: Correct! The length property gets you the number of items.
-    - content: In JavaScript, indexes start at:
+    - content: In JavaScript, indexes start at
       choices:
         - content: "0"
           isCorrect: true
