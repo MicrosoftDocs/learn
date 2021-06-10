@@ -1,4 +1,4 @@
-Now we'll add a bit more complexity to the car factory program that we worked in the last two exercises.
+Now we'll add a bit more complexity to the car factory program that we worked on in the last two exercises.
 
 We'll use a hash map with key, value pairs to track some details about the car orders, and also use that structure to display output. We'll expand on the use of conditional expressions and learn how to combine conditions. Once again, your challenge is to finish the sample code so it compiles and runs.
 
