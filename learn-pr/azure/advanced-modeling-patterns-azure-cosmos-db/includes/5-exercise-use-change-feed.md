@@ -41,12 +41,12 @@ Follow these steps to navigate to the code that you will view and update for Cha
 1. Notice on lines 588 and 589 two container references. We need to update those with the correct container names. Change Feed works by creating an instance of Change Feed Processor on the container reference. In this case, we are watching for changes to the productCategory container.
 1. Replace **{container to watch}** with **productCategory**.
 1. Replace **{container to update}** with **product**. When a product category name is updated, every product in that category needs to be updated with the new product category name.
-1. Review the *leases container* line below the container to watch and update lines. The leases container works like a check point on the container. It knows what has been updated since the last time it was checked by the Change Feed Processor.
-1. When change feed sees a new change it calls a delegate and passes the changes in a read-only collection.
-1. Navigate to **line 617**. Here we need to add some code that will be called when change feed has a new change that needs to be processed.
-1. Next we will take the following code and paste it into our Change Feed function. By default, Change Feed runs every second. In scenarios where there are a lot of inserts or updates made in the watched container, the delegate may have more than one change which is why the delegate `input` is typed as `IReadOnlyCollection`.
-1. In this code snippet we will loop through all of the changes in the delegate `input` and save them as strings for `categoryId` and `categoryName`. Last, we will add a Task to the Task List with a call to another function that will update the product container with the new category name.
-1. Copy this code snippet below and paste it below the line that starts with `//To-Do:`
+1. Review the *leases container* line below the watch and update container lines. The leases container works like a check point on the container. It knows what has been updated since the last time it was checked by the Change Feed Processor.
+  
+   When change feed sees a new change it calls a delegate and passes the changes in a read-only collection.
+1. Go to **line 617**. Here we need to add some code that will be called when change feed has a new change that needs to be processed.
+
+1. Copy the following code snippet and paste it below the line that starts with `//To-Do:`
 
     ```csharp
     //Fetch each change to productCategory container
@@ -59,15 +59,17 @@ Follow these steps to navigate to the code that you will view and update for Cha
     }
     ```
 
-1. Your code should now look like this.
+1. Your code should now look like the following code.
 
     :::image type="content" source="../media/5-change-feed-function-delegate-code.png" lightbox="../media/5-change-feed-function-delegate-code.png" alt-text="Cloud Shell showing the fully completed code for change feed":::
 
-1. Next type **CTRL + G** and enter **658** to find our `UpdateProductCategory()` function. Here we need to write some code that will update each product in the product container with the new category name captured by Change Feed. This function does two things. It first queries the product container for all the products for the passed in `categoryId`. It then updates each product with the new product category name
+    By default, Change Feed runs every second. In scenarios where there are a lot of inserts or updates made in the watched container, the delegate may have more than one change which is why the delegate `input` is typed as `IReadOnlyCollection`.
+
+    This code snippet loops through all of the changes in the delegate `input` and save them as strings for `categoryId` and `categoryName`. It then adds a task to the task list with a call to another function that updates the product container with the new category name.
+
+1. Next type **CTRL + G** and enter **658** to find our `UpdateProductCategory()` function. Here we need to write some code that updates each product in the product container with the new category name captured by Change Feed.
 1. Locate the line that starts with **//To-Do:**.
-1. Here we need to write code that will read the rows from the response object from the query and then update the product container with all of the products returned by the query.
-1. For this code we need to first create a `foreach()` loop to go through each product returned by the query. Then for each row, update a counter so we know how many products were updated update the category name for the product to the new `categoryName`. Last we will call `ReplaceItemAsync()` to update the product back in the product container.
-1. Copy this code snippet below and paste it below the line that starts with **//To-Do:**
+1. Copy the following code snippet and paste it below the line that starts with **//To-Do:**. The function does two things. It first queries the product container for all the products for the passed in `categoryId`. It then updates each product with the new product category name.
 
     ```csharp
     //Loop through all products
@@ -89,34 +91,41 @@ Follow these steps to navigate to the code that you will view and update for Cha
 
     :::image type="content" source="../media/5-change-feed-function-update-product.png" lightbox="../media/5-change-feed-function-update-product.png" alt-text="Cloud Shell showing the fully implemented update product category name function called by the change feed function":::
 
-1. Next type **CRTL + S** to save our changes and **CTRL + Q** to quit the editor.
-1. Next type **dotnet build** to compile our project and **dotnet run** to execute it.
+    The code reads the rows from the response object of the query and then updates the product container with all of the products returned by the query.
+
+    We're using a `foreach()` loop to go through each product returned by the query. Then for each row, we update a counter so we know how many products were updated. Then update the category name for the product to the new `categoryName`. Last we call `ReplaceItemAsync()` to update the product back in the product container.
+
+1. Next type **CRTL + S** to save your changes.
+1. Type **CTRL + Q** to quit the editor.
+1. Run the following command to compile  and execute the project.
+
+    ```bash
+    dotnet build
+    dotnet run
+    ```
+
 1. Your screen should now look like this with the main menu for the application.
 
     :::image type="content" source="../media/5-main-menu.png" lightbox="../media/5-main-menu.png" alt-text="The main menu for our application":::
 
-## Running our Change Feed sample
+## Run the Change Feed sample
 
-1. First start the Change Feed Processor by pressing **a**. Your screen should look like this.
+1. Select **a** to start the Change Feed Processor. Your screen should look like the following image.
 
     :::image type="content" source="../media/5-change-feed-start.png" lightbox="../media/5-change-feed-start.png" alt-text="The output of the application as it builds then starts change feed listening to the product category container":::
 
 1. Press any key to return to the main menu.
-1. Next we will Update the product category name. Menu item **b** does the following things.
-    1. Query the products container and for category, Accessories, Tires and Tubes and counts how many products are in that category.
-    1. Updates that category name and replaces the word *and* with an ampersand *&*.
-    1. Change Feed then picks up that change, and using the code we wrote, updates all the products for that category.
-    1. It then reverts the name change and changes the category name back, replacing the *&* with the original *and* in the name.
+1. Press **b** from the main menu to update the product category name. Menu item **b** does the following things.
+    1. Query the products container for the category "Accessories, Tires, and Tubes", and counts how many products are in that category.
+    1. Updates that category name and replaces the word "and" with an ampersand "&".
+    1. Change Feed picks up that change, and using the code we wrote, updates all the products for that category.
+    1. It then reverts the name change and changes the category name back, replacing the "&" with the original "and" in the name.
     1. Change Feed then picks up that change and updates all the products back to the original product category name.
 
-1. Press **b** from the main menu and follow the prompts until change feed runs a second time, then hold. Your screen will look like this below.
+1. Press **b** from the main menu and follow the prompts until change feed runs a second time, then hold. The results will look like the following image.
 
     :::image type="content" source="../media/5-change-feed-update-category-name.png" lightbox="../media/5-change-feed-update-category-name.png" alt-text="The output of the application as the category name is changed, then change feed shows picking up the change and outputs the number of products to update, then updates those products, then the name is changed back and change feed then picking up that change and propagating that change as well.":::
 
 1. If you clicked too far and went back to the main menu, type **b** again and you can watch the changes again.
 
-1. When you are done, exit the application by typing **x** to return to the Azure Cloud Shell.
-
-## Summary
-
-In this exercise you learned how Change Feed in Cosmos DB can be used to maintain referential integrity between two containers when denormalizing data. We showed the references to the container being listened to as well as the second container to update. We wrote code to handle the changes passed into the delegate, then wrote code that looped through each of the products for that category and updated them.
+1. When you are done, type **x** to exit and return to Cloud Shell.
