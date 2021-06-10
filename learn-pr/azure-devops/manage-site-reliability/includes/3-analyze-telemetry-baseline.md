@@ -26,7 +26,7 @@ An alert doesn't necessarily mean that your app has a problem. It's more of a su
 
 Each alert notification includes diagnostic information. Here's an example of how you can use that information:
 
-![A screenshot of server response times in notification diagnostic information](../media/2-server-response-time.png)
+:::image type="content" source="../media/2-server-response-time.png" alt-text="A screenshot showing server response times as part of notification diagnostics.":::
 
 - For triage.
 
@@ -42,7 +42,7 @@ Each alert notification includes diagnostic information. Here's an example of ho
 
 Smart Detection notifications are enabled by default and sent to those who have *owners*, *contributors*, and *readers* access to the Application Insights resource. To change this, either select **Configure** in the email notification or open **Smart Detection settings** in Application Insights.
 
-![A screenshot of Smart Detection settings](../media/2-smart-detection-settings.png)
+:::image type="content" source="../media/2-smart-detection-settings.png" alt-text="A screenshot showing Smart Detection settings. These settings include detection for slow page load times, slow server response times, and more.":::
 
 You can use the unsubscribe link in the Smart Detection email to stop receiving email notifications.
 
@@ -113,7 +113,7 @@ If your application relies heavily on external services, it's a good idea to wat
 
 Here's an example dependency degradation notification:
 
-![A screenshot of a dependency degradation notification from Application Insights](../media/2-dependency-degradation.png)
+:::image type="content" source="../media/2-dependency-degradation.png" alt-text="A screenshot showing a dependency degradation notification from Application Insights.":::
 
 This tells you:
 
@@ -135,7 +135,7 @@ Anomalies like these are hard to detect just by inspecting the data, but they're
 
 Application Insights algorithms look at page load times, request response times at the server, and dependency response times. You don't have to set any thresholds or configure rules. Machine learning and data mining algorithms are used to detect abnormal patterns. Here's an example of a notification:
 
-![A screenshot of smart detection in Application Insights](../media/2-smart-detection.png)
+:::image type="content" source="../media/2-smart-detection.png" alt-text="A screenshot showing smart detection in Application Insights.":::
 
 The **When** field shows the time the issue was detected.
 

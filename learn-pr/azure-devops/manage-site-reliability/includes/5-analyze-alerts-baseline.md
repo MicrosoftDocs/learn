@@ -6,7 +6,7 @@ Here, you learn about the alert experience in Azure Monitor, which includes Log 
 
 An effective alerting strategy starts with establishing a baseline. This diagram shows the flow of alerts:
 
-![A drawing of alerts flowing from rule to action group or monitor condition](../media/4-flow-of-alerts.png)
+:::image type="content" source="../media/4-flow-of-alerts.png" alt-text="A diagram that shows how alerts flow from a rule to an action group or monitor condition.":::
 
 Alert rules are separated from alerts and the actions that are taken when an alert fires.
 
@@ -68,7 +68,7 @@ The default **Alerts** page provides a summary of alerts that are created within
 
 Here's an example:
 
-![A screenshot of the all alerts page](../media/4-all-alerts-page.png)
+:::image type="content" source="../media/4-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page.":::
 
 You can filter this view by selecting values in the drop-down menus at the top of the page.
 
@@ -92,7 +92,7 @@ Select **Manage alert rules** to show the **Rules** page. The rules page is a si
 
 Here's an example:
 
-![A screenshot of the rules page](../media/4-manage-alert-rules.png)
+:::image type="content" source="../media/4-manage-alert-rules.png" alt-text="A screenshot showing the rules page.":::
 
 ## Create an alert rule
 
@@ -114,7 +114,7 @@ Alerts are available across several Azure monitoring services. For information a
 
 Click on **Total Alerts** to see the **All Alerts** page. Here, you can view a list of alerts that were created within the selected time window. You can view either a list of the individual alerts or a list of the smart groups that contain the alerts. Select the banner at the top of the page to toggle between views.
 
-![A screenshot of the all alerts page with a list of alerts](../media/5-all-alerts-page.png)
+:::image type="content" source="../media/5-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page that includes a list of alerts":::
 
 You can filter the view by selecting the following values in the dropdown menus at the top of the page.
 
