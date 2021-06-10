@@ -1,5 +1,3 @@
-## Overview
-
 In this exercise you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster.
 
 In this exercise you will:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.7-implement-azure-application-gateway
+uid: learn.microservices-apigateway-aspnet-core.implement-azure-application-gateway
 metadata:
   title: Exercise - Implement load balancer with Azure Application Gateway
   description: Implement load balancer with Azure Application Gateway
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Implement load balancer with Azure Application Gateway
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-implement-azure-application-gateway.md)]
+  [!include[](includes/implement-azure-application-gateway.md)]

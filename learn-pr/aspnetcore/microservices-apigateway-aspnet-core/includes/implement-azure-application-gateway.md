@@ -1,5 +1,3 @@
-## Overview
-
 In this exercise you'll deploy an instance of Azure Application Gateway with ingress controller to load balance the traffic to different pods directly of `eShopOnContainer` services. Further to that, you'll also enable TLS configuration in Application Gateway to use HTTPS instead of HTTP.
 
 For that, you'll deploy another AKS cluster to the resource group you already created. You can't configure an Application Gateway for the cluster you created in the initial deployment, because it doesn't have the advanced networking option.

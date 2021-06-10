@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-apigateway-aspnet-core.3-verify-deployment
+uid: learn.microservices-apigateway-aspnet-core.verify-deployment
 metadata:
   title: Exercise - Verify deployment and test the app
   description: Confirm the deployment of the microservices to AKS and test the app.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Verify deployment and test the app
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-verify-deployment.md)]
+  [!include[](includes/verify-deployment.md)]
