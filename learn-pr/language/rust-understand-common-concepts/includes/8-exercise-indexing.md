@@ -222,7 +222,7 @@ Near the end of the loop, we'll adjust the values for some of the counting varia
 
 1. Fix the indexing into the `colors` array by correcting the `colors()` syntax. We need to pass a specific color like "Blue" to the `car_factory` function. The array has four elements, so we'll try to loop through them as we fulfill the orders. Use the `index` variable. We want to vary the color that we use for the orders. 
 
-    > [Tip]
+    > [!Tip]
     > Elements in an array start from index location 0. The value for the first element is at index location 0.
 
 1. Near the end of the loop, increment the `order` variable by 1, and the `miles` variable by 1,000. Depending on how you specify numbers over 100, you might discover that in Rust, you can't use a comma `,` in an integer value.

@@ -38,6 +38,6 @@ If you need help with installing these prerequisites, follow the instructions in
 
 
 <!-- Links -->
-[Get-started]: https://docs.microsoft.com/en-us/learn/modules/rust-get-started/?azure-portal=true
+[Get-started]: https://docs.microsoft.com/learn/modules/rust-get-started/?azure-portal=true
 [Rust-docs]: https://doc.rust-lang.org/book/title-page.html?azure-portal=true
 [RustPlay]: https://play.rust-lang.org?azure-portal=true

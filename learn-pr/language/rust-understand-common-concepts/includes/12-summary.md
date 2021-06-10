@@ -49,7 +49,7 @@ Visit the following links to learn more about some of the items we explored in t
 
 <!-- Links -->
 
-[Get-started]: https://docs.microsoft.com/en-us/learn/modules/rust-get-started/?azure-portal=true
+[Get-started]: https://docs.microsoft.com/learn/modules/rust-get-started/?azure-portal=true
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true
 [Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)?azure-portal=true
 
