@@ -25,5 +25,3 @@ In this module you will:
 - Familiarity with C# and ASP.NET Core
 - Familiarity with REST API services
 - Access to an Azure subscription with **Owner** privilege
-
-| [TOC](../README.md) | [NEXT >](environment-setup.md) |

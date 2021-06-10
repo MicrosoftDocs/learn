@@ -105,5 +105,3 @@ webshoppingagg-7f55677f98-9pbg9    1/1     Running   0          4m52s
 webspa-67588b748-9kqf7             1/1     Running   0          4m43s
 webstatus-579d55c59d-tthv9         1/1     Running   0          4m34s
 ```
-
-| [TOC](../README.md) | [NEXT >](review-api-gateway-and-bff.md) |

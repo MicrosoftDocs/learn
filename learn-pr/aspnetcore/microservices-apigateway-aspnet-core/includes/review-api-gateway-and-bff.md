@@ -161,5 +161,3 @@ You can check some details in the following code fragment.
 > In this implementation, you'll not implement any UI to consume the WebSales aggregator but will use the Swagger UI as an external client to test out the functionality.
 
 In the next unit, you'll review the different configuration and deploy these newly created `Web.Sales.HttpAggregator` to the existing Kubernetes cluster.
-
-| [TOC](../README.md) | [NEXT >](implement-bff.md) |

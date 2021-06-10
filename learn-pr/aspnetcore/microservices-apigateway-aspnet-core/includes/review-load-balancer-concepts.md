@@ -146,5 +146,3 @@ For simplicity, `eShopOnContainers` will be deployed within one region and only 
 A modified solution architecture will look like as per below.
 
 ![Azure App Gateway Solution Architecture](../media/app-gateway-ingress.png)
-
-| [TOC](../README.md) | [NEXT >](implement-azure-application-gateway.md) |

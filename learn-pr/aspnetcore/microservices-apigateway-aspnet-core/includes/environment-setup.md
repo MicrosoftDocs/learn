@@ -107,5 +107,3 @@ You can begin exploring these services (when ready):
 >
 > If you miss the above screen because the session timed out or any other reason, you can get all the relevant information with this command: \
 > `cat ~/clouddrive/source/deploy-application-results.txt`
-
-| [TOC](../README.md) | [NEXT >](verify-deployment.md) |

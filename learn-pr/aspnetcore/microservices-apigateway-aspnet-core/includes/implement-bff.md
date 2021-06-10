@@ -169,5 +169,3 @@ The above script will deploy the following services :
 
 At this point, `websalesagg` is only available for the internal resources to consume. You'll not able to access the `websalesagg` outside the Kubernetes cluster.
 You'll need to configure the ingress object for that. You'll explore those concepts in the next unit.
-
-| [TOC](../README.md) | [NEXT >](review-load-balancer-concepts.md) |

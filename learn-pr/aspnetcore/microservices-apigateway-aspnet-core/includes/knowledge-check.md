@@ -29,5 +29,3 @@
    - The NGINX ingress controller can use the Application Gateway if the ingresses have the `kubernetes.io/ingress.class: azure/application-gateway` annotation.
    - All ingresses need the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation to use the Application Gateway.
    - The Application Gateway Ingress Controller must be installed in the cluster, with permissions to update the Application Gateway configuration. - **CORRECT ANSWER**
-
-| [TOC](../README.md) | [NEXT >](summary.md) |

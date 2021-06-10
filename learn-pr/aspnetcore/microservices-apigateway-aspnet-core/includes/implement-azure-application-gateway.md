@@ -246,5 +246,3 @@ The above script will deploy the following services :
 - You'll see the below output, where aggregated sales unit per brand has been shown for those orders which has been created today.
 
 ![Sales API Data](../media/websales-agg-sales-api-data.png)
-
-| [TOC](../README.md) | [NEXT >](knowledge-check.md) |
