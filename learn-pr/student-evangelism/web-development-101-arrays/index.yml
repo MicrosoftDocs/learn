@@ -25,7 +25,7 @@ products:
   - vs-code
 units:
   - learn.student-evangelism.web-development-101-loops-arrays.introduction
-  - learn.student-evangelism.web-development-101-loops-arrays.arrays-loops
+  - learn.student-evangelism.web-development-101-loops-arrays.manipulating-arrays
   - learn.student-evangelism.web-development-101-loops-arrays.loops
   - learn.student-evangelism.web-development-101-loops-arrays.operations
   - learn.student-evangelism.web-development-101-loops-arrays.exercise-operations
