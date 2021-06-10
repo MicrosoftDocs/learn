@@ -23,7 +23,7 @@ fn main() {
 
 ```
 
-The preceding code defines a `Point<T>` struct that holds `x` and `y` values of any type `T`.
+The preceding code defines a `Point<T>` struct. This struct holds any type (`T`) of `x` and `y` values.
 
 Even though `T` can assume any concrete type, `x` and `y` must be of that same type, because they were defined as being of the same type. If we try to create an instance of a `Point<T>` that has values of different types, as in the following snippet, our code won't compile.
 
@@ -48,7 +48,7 @@ fn main() {
 
 The error message says that the expected type for the `y` field was an integer. But because we defined `y` to have the same type as `x`, the compiler complained of a type mismatch error.
 
-If we want a `Point<T, U>` generic over two types so that `x` and `y` can be values of different types, we should use multiple generic type parameters:
+As seen in the following example, we can use multiple generic type parameters. In this case, we show a `Point<T, U>` generic over two types so that `x` and `y` can be values of different types.
 
 ```rust
 struct Point<T, U> {
