@@ -2,7 +2,7 @@ Most organizations have diverse requirements for their cloud-hosted data. Data i
 
 A primary concern in a migration strategy is how to move enterprise applications that require high-performance storage, such as SAP HANA and many SQL databases. Some application workloads run periodic batch jobs. Batch jobs demand high performance for short periods, but most of the time have baseline performance.
 
-You must evaluate Microsoft Azure Disk Storage types and capabilities and propose a storage solution that optimizes performance and costs for applications that require high performance storage.
+You must evaluate Microsoft Azure Disk Storage types and capabilities and propose a storage solution that optimizes performance and costs for applications that require high-performance storage.
 
 ## Learning objectives
 
