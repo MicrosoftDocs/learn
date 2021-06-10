@@ -2,7 +2,7 @@ Red Hat offers a number of Linux solutions for Azure. In this module, we will di
 
 ## What is RHEL on Azure?
 
-**Red Hat Enterprise Linux (RHEL)** is an open source Linux operating system that serves as the consistent foundation for the enterprise hybrid cloud—providing the tools needed to deliver services and workloads faster with less effort. By using RHEL as the operating system for your Virtual Machines on Azure, users gain tightly integrated, enterprise-grade support from Red Hat and Microsoft to ensure a seamless transition to running workloads in a cloud environment.
+**Red Hat Enterprise Linux (RHEL)** is an open-source Linux operating system that serves as the consistent foundation for the enterprise hybrid cloud—providing the tools needed to deliver services and workloads faster with less effort. By using RHEL as the operating system for your Virtual Machines on Azure, users gain tightly integrated, enterprise-grade support from Red Hat and Microsoft to ensure a seamless transition to running workloads in a cloud environment.
 
 ## What is ARO?
 
@@ -48,3 +48,5 @@ Compute, networking and storage resources consumed by your cluster are billed ac
 ### Can I use my Azure Hybrid Benefits (AHB)?
 
 Yes. The Red Hat Cloud Access program (please see BYOS in licensing options above) applies AHB for the same net effect.
+
+:::image type="content" source="../media/cost-diagram.png" alt-text="A diagram representing Red Hat Enterprise Linux subscription options.":::

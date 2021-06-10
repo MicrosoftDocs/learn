@@ -1,4 +1,4 @@
-Red Hat offers opensource code for enterprise customers to improve the manageability, reliability, and security of their Linux workloads. It’s available on Azure through three main product offerings; Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss EAP on Azure.
+Red Hat offers open-source code for enterprise customers to improve the manageability, reliability, and security of their Linux workloads. It’s available on Azure through three main product offerings; Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss EAP on Azure.
 
 ## Example scenario
 

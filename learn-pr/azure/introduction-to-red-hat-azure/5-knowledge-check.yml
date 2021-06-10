@@ -4,35 +4,12 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: A multiple-choice quiz covering the module contents.
   ms.date: 6/10/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
 durationInMinutes: 2
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
 content: |
 quiz:
   questions:
@@ -49,21 +26,21 @@ quiz:
       explanation: RHEL works across hybrid locations and hybrid deployments.
   - content: How is ARO different from OpenShift?
     choices:
-    - content: ARO is managed by Red Hat and Openshift is opensource.
+    - content: ARO is managed by Red Hat and OpenShift is open-source.
       isCorrect: true
-      explanation: ARO is the Azure Red Hat Openshift offering that makes helps with Openshift management.
-    - content: ARO doesn’t work on edge devices but Openshift does
+      explanation: ARO is the Azure Red Hat OpenShift offering that makes helps with OpenShift management.
+    - content: ARO doesn’t work on edge devices but OpenShift does
       isCorrect: false
       explanation: ARO works across hybrid deployments including at the edge.
-    - content: c.	ARO supports Java applications, and Openshift does not.
+    - content: ARO supports Java applications, and OpenShift does not.
       isCorrect: false
-      explanation: You can use Java with ARO or Openshift
+      explanation: You can use Java with ARO or OpenShift
   - content: What does JBoss EAP do?
     choices:
     - content: It is the middleware solution that helps with Java apps.
       isCorrect: true
       explanation: JBoss EAP is a middleware solution that makes it easier to modernize and containerize your Java applications.
-    - content: It provides opensource management support for containers.
+    - content: It provides open-source management support for containers.
       isCorrect: false
       explanation: JBoss EAP is a middleware solution that makes it easier to modernize and containerize your Java applications
     - content: It connects IoT devices from the edge to the cloud.

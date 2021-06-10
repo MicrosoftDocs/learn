@@ -13,27 +13,12 @@ We’ll list some criteria that you can use to help you decide if Red Hat on Azu
 
 Red Hat is a good choice as your Linux distro on Azure because it is built on more than 25 years of enterprise experience with Linux, and it continues to be one of the top Linux kernel contributors.
 
-
 |Decision criteria  |Considerations  |
 |---------|---------|
-|Type of application running     |Red Hat has decades of experience working with the largest enterprise software vendors like Oracle, SAS, and SAP to certify their applications on Red Hat products. With these strong partnerships, Red Hat makes a great choice for migrating SAP or SAS applications to Azure.
-
-However, if you primarily use another Linux vendor, such as SUSE, you might want to first explore whether or not they offer a package to support your specific application in Linux before adopting RHEL for a couple of isolated workloads. |
-|App development strategy      | The Azure Red Hat OpenShift (ARO) service supports a containerized approach to building modern applications. The platform includes all the tools required for the complete software development lifecycle.
-
-If you run DevOps or DevSecOps, ARO provides the features you need to build and deploy applications in OpenShift including introducing security best practices and scanning at any stage of the CI/CD pipeline.
-
-If you’re using another Kubernetes engine for container management such as Amazon Kubernetes Service or Dockers, ARO is a more feature rich choice for you. |
-|Programming language used     | If you are a Java-based development organization that wants to have a cloud-friendly and fully supported enterprise Java application server, Red Hat offers JBoss EAP as the foundation of its Application Services portfolio.
-
-JBoss EAP is great for quickly modernizing your Java application as it provides a flexible application server that you can use to simplify your cloud migration plan. It’s optimized for cloud and containers which allows for deployment across public, private, hybrid, and even multi-cloud infrastructures.
-
-If you’re using springboot for your standalone, JBoss may not be the best choice.  |
-|Infrastructure environment      | Red Hat offerings deliver a consistent, intelligent operating foundation for modern IT and enterprise hybrid cloud deployments. Consistency across infrastructure allows you to deploy applications, workloads, and services using the same tools, regardless of location.
-
-When you need to ensure compliance with corporate, regulatory, and industry requirements while also protecting your systems from the latest security threats, Red Hat and Azure meet compliance for some of the most stringent security standards including FIPS, Common Criteria, HIPPA, PCI, and GDPR.
-
-If you run primarily in a competitors’ cloud or if you want to manage your own infrastructure, Red Hat on Azure might not be the right solution for your workloads.     |
+|Type of application running     |<p>Red Hat has decades of experience working with the largest enterprise software vendors like Oracle, SAS, and SAP to certify their applications on Red Hat products. With these strong partnerships, Red Hat makes a great choice for migrating SAP or SAS applications to Azure.<p>However, if you primarily use another Linux vendor, such as SUSE, you might want to first explore whether or not they offer a package to support your specific application in Linux before adopting RHEL for a couple of isolated workloads. |
+|App development strategy      |<p>The Azure Red Hat OpenShift (ARO) service supports a containerized approach to building modern applications. The platform includes all the tools required for the complete software development lifecycle.<p>If you run DevOps or DevSecOps, ARO provides the features you need to build and deploy applications in OpenShift including introducing security best practices and scanning at any stage of the CI/CD pipeline.<p>If you’re using another Kubernetes engine for container management such as Amazon Kubernetes Service or Dockers, ARO is a more feature rich choice for you. |
+|Programming language used     |<p>If you are a Java-based development organization that wants to have a cloud-friendly and fully supported enterprise Java application server, Red Hat offers JBoss EAP as the foundation of its Application Services portfolio.<p>JBoss EAP is great for quickly modernizing your Java application as it provides a flexible application server that you can use to simplify your cloud migration plan. It’s optimized for cloud and containers which allows for deployment across public, private, hybrid, and even multi-cloud infrastructures.<p>If you’re using Spring Boot for your standalone, JBoss may not be the best choice.  |
+|Infrastructure environment      |<p>Red Hat offerings deliver a consistent, intelligent operating foundation for modern IT and enterprise hybrid cloud deployments. Consistency across infrastructure allows you to deploy applications, workloads, and services using the same tools, regardless of location.<p>When you need to ensure compliance with corporate, regulatory, and industry requirements while also protecting your systems from the latest security threats, Red Hat and Azure meet compliance for some of the most stringent security standards including FIPS, Common Criteria, HIPPA, PCI, and GDPR.<p>If you run primarily in a competitors’ cloud or if you want to manage your own infrastructure, Red Hat on Azure might not be the right solution for your workloads.     |
 
 ### Should the online retailer use Red Hat on Azure?
 
