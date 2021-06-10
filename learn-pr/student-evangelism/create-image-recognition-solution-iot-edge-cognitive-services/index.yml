@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services
+uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
   title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
   description: "This is a computer vision solution using Azure IoT Edge"
@@ -30,7 +30,7 @@ prerequisites: |
 
 iconUrl: /learn/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognive-services.svg
 badge:
-  uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.badge
+  uid: learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge
 levels:
 - intermediate
 roles:
@@ -38,11 +38,11 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.introduction
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.design-computer-vision-solution
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-install-edge-runtime-linux
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.create-fruit-classification-model
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.understand-project-structure
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-build-deploy-solution
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.knowledge-check
-- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.summary
+- learn.oxford.create-image-recognition-with-azure-iot-edge.introduction
+- learn.oxford.create-image-recognition-with-azure-iot-edge.design-computer-vision-solution
+- learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-install-edge-runtime-linux
+- learn.oxford.create-image-recognition-with-azure-iot-edge.create-fruit-classification-model
+- learn.oxford.create-image-recognition-with-azure-iot-edge.understand-project-structure
+- learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-build-deploy-solution
+- learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
+- learn.oxford.create-image-recognition-with-azure-iot-edge.summary
