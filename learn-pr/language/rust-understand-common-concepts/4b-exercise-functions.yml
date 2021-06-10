@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-understand-common-concepts.4b-exercise-functions
 metadata:
-  title: Exercise - Fix the code with functions, structs, and enums
+  title: "Exercise: Functions, structs, and enums"
   description: Fix problems in source code that uses functions, structs, and enums.
-  ms.date: 06/04/2021
+  ms.date: 06/10/2021
   author: GitHubber17
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Fix the code with functions, structs, and enums
+title: "Exercise: Functions, structs, and enums"
 durationInMinutes: 7
 content: |
   [!include[](includes/4b-exercise-functions.md)]

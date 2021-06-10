@@ -63,9 +63,9 @@ fn main() {
     // Initialize a hash map for car orders
     // - Keys: New or Used, Values: integer
     // - Keys: Manual or Automatic, Values: integer
-    // Corrected code: To create a hash map, use HashMap::new()
+    // TO DO: Fix syntax to create the "orders" hash map
     use std::collections::HashMap;
-    let mut orders: HashMap<String, u32> = HashMap::new();
+    let mut orders: HashMap<String, u32> = HashMap;
     let (mut new_cars, mut used_cars) = (1, 1);
     let (mut manual, mut auto) = (1, 1);
 
@@ -93,24 +93,37 @@ fn main() {
     while order <= 11 {
         
         //////////////////////////////////////////////////
-        
-        // Set car transmission type, make some roofs convertible
-        //
-        // Corrected code: Use conditional expression
-        // Corrected code: order % 3 == 0, engine = Transmission::Automatic
-        // Corrected code: add missing "if", order % 2 == 0, Transmission::SemiAuto
-        // Corrected code: else, Transmission::Manual
-        // When order % 3, swap roof type for fun!
 
-        ///////////////
+        // REPLACE
+        // Set car transmission type
+        // engine = Transmission::Manual;
+
+        ///////////////////////
+
+        // Set car transmission type, make some roofs convertible
+        // TO DO: Add conditional expression
+        // TO DO: Check order number, set engine type, fix syntax
+        // TO DO: If order % 3 equals 0, engine is "Automatic"
+        // TO DO: If order % 2 equals 0, engine is "SemiAuto" | else, engine is "Manual"
+        // When order % 3, swap roof type for fun!
+        if order % 3 equals 0 {
+            engine = Automatic;
+            roof = !roof;
+        } else order % 2 equals 0 {
+            engine = SemiAuto;
+        } else {
+            engine = Manual;
+        }
+
+        //////////////////////
 
         // ADD hash map functionality
-        // Corrected code: Add transmission <K, V> pairs to hash map
-        // Corrected code: Use ".insert()" method to add car info to hash map
+        // TO DO: Add transmission <K, V> pairs to hash map
+        // TO DO: Fix syntax to add car transmission count to hash map
         if order % 3 == 0 {
             engine = Transmission::Automatic;
             // ADD <K, V> pair to hash map
-            orders.insert("Automatic".to_string(), auto);
+            orders("Automatic".to_string(), auto);
             auto = auto + 1;
 
             roof = !roof;
@@ -120,44 +133,54 @@ fn main() {
         } else {
             engine = Transmission::Manual;
             // ADD <K, V> pair to hash map
-            orders.insert("Manual".to_string(), manual);
+            orders("Manual".to_string(), manual);
             manual = manual + 1;
         }
 
         //////////////////////////////////////////////////
 
+        // REPLACE
         // Order the cars, New are even numbers, Used are odd numbers
-        // Index into `colors` array, vary color for the orders
+        // Corrected code: Index into `colors` array, vary color for the orders
+        // if index % 2 != 0 {
+        //     car = car_factory(colors[index-1].to_string(), engine, roof, miles);
+        // } else { 
+        //     car = car_factory(colors[index-1].to_string(), engine, roof, 0);
+        // }
         
-        ///////////////        
+        ///////////////////////
+
         // ADD hash map functionality
-        // Corrected code: Use ".to_string()" syntax for String keys
+        // Order the cars, New are even numbers, Used are odd numbers
+        // Corrected code: Index into `colors` array, vary color for the orders
+        // TO DO: Fix syntax to add car age to "orders" hash map
         if index % 2 != 0 {
             car = car_factory(colors[index-1].to_string(), engine, roof, miles);
-            // ADD <K, V> pair to hash map
-            orders.insert("Used".to_string(), used_cars);
+            orders.insert("Used", used_cars);
             used_cars = used_cars + 1;
         } else { 
             car = car_factory(colors[index-1].to_string(), engine, roof, 0);
-            // ADD <K, V> pair to hash map
-            orders.insert("New".to_string(), new_cars);
+            orders.insert("New", new_cars);
             new_cars = new_cars + 1;
         }
-        
+
         //////////////////////////////////////////////////
 
+        // REPLACE
+        // Display car order details 
+        // println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+
         // Display car order details by roof type and age of car
-        // Corrected code: Print output with four conditions: "if", "else if", "else if", "else"
-        // Corrected code: Use double ampersand && to join conditions
-        // Corrected code: car.roof = closed (true) or convertible (false)
-        // Corrected code: car mileage = car.age.1, if miles > 0, then car is new
-        if car.roof && car.age.1 > 0 {
+        // TO DO: Add conditional expressions
+        // TO DO: Print output based on four conditions, correct the syntax
+        // TO DO: Used & closed roof, New & closed roof, Used convertible, New convertible
+        if used cars with closed roofs {
             println!("{}: {}, {:?}, Closed roof, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else if car.roof {
+        } if new cars with closed roofs {
             println!("{}: {}, {:?}, Closed roof, {}", order, car.age.0, car.motor, car.color); 
-        } else if car.age.1 > 0 {
+        } if convertible used cars {
             println!("{}: {}, {:?}, Convertible, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else {
+        } if convertible new cars {
             println!("{}: {}, {:?}, Convertible, {}", order, car.age.0, car.motor, car.color); 
         }
         
@@ -177,7 +200,7 @@ fn main() {
         }
     }
 
-    // Display the hash map of car orders
-    // Corrected code: Just use hash map name and "{:?}" to show all <K, V> pairs
-    println!("\nCar orders: {:?}", orders);
+    // TO DO: Display output from hash map, fix the syntax
+    // Display the hash map of car orders, show <K, V> pairs
+    println!("\nCar orders: {} {}", orders.keys, orders.values);
 }

@@ -27,16 +27,11 @@ You might have noticed that we defined the `goodbye` function after the `main` f
 
 When a function has input arguments, we name each argument and specify the data type at the start of the function declaration. Because arguments are named like variables, we can access the arguments in the function body.
 
-Let's declare a function to check if a number is divisible by another number (no remainder). For this task, we'll implement a *conditional expression* by using the `if` and `else` keywords. These keywords form an expression that lets us test values and do actions based on the test result. When the expression result is true, we do the action that follows the `if` statement. When the expression result is false, we do the action that follows the `else` statement.
-
-We'll use the `if` keyword to check if the value held by the `divisor` variable is zero. If it's zero, we'll print an error message. If the value isn't zero, we'll print the values of the `dividend` and `divisor` arguments.
+Let's declare a function to check if a number is divisible by another number (no remainder). 
 
 ```rust
-// Divide one number into another and check for a remainder, print the results
-// Also check for division by zero
 fn is_divisible_by(dividend: u32, divisor: u32) {
-
-    // If the divisor is zero, stop execution - division by zero causes a runtime error
+    // If the divisor is zero, stop execution
     if divisor == 0 {
         println!("\nError! Division by zero is not allowed.");
     } else if dividend % divisor > 0 {
@@ -47,13 +42,8 @@ fn is_divisible_by(dividend: u32, divisor: u32) {
 }
 
 fn main() {
-    // 12 % 4 has no remainder
     is_divisible_by(12, 4);
-
-    // 13 % 5 has a remainder of 2
     is_divisible_by(13, 5);
-
-    // 14 % 0 is division by zero, print an error message
     is_divisible_by(14, 0);
 }
 ```
@@ -75,21 +65,38 @@ You can experiment with this example code in this [Rust Playground][RustPlay-arg
 
 When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value. The `<type>` portion lets the complier know the type of the value returned.
 
-In Rust, the value of the last expression inside a code block (`{ ... }`) is always returned. You can use the `return` keyword explicitly, as needed, but it's not needed in this instance. 
+The following code shows a function that returns a boolean value:
+
+```rust
+fn is_input_zero(input: u8) -> bool {
+```
+
+In Rust, the value of the last expression inside a code block (`{ ... }`) is always returned. You can use the `return` keyword explicitly, as needed. 
+
+The following code calls the function to check if a value equals zero. If it does, the function returns `true`; otherwise, it returns `false`.
+
+```rust
+fn is_zero(input: u8) -> bool {
+    if input == 0 {
+        return true;
+    }
+    false
+}
+
+fn main() {
+    if is_zero(0) {
+        println!("The value is zero.");
+    }
+}
+```
 
 The return functionality can be used at any point in the function to halt execution and send a value back to the caller. When you explicitly use the `return` keyword, you end the statement with a semicolon. When you create and send back a return value without using the `return` keyword, don't end the statement with a semicolon.
 
-Let's update our example so the function returns a boolean value to show if the dividend is divisible. Notice how we use the arrow `-> <type>` and `return` keyword syntax in this code.
+Let's update our division example so the function returns a boolean value to show if the dividend is divisible. Notice how we use the arrow `-> <type>` and `return` keyword syntax in this code.
+
 
 ```rust
-// Divide one number into another, check for a remainder, check for division by zero, print the results
-// The function requires two input arguments
-// - dividend: The number to be divided
-// - divisor: The number to divide by
-// The function returns a boolean value that indicates if the dividend is divisible
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
-
-    // If the divisor is zero, stop execution - division by zero causes a runtime error
     if divisor == 0 {
         println!("\nError! Division by zero is not allowed.");
         // To prevent division by zero, halt execution and return to the caller
@@ -101,25 +108,7 @@ fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
     }
 
     // Create the boolean value and return it to the function caller
-    // We create and send the return value in a single statement, so don't end with a semicolon
     dividend % divisor == 0
-}
-
-fn main() {
-    // 12 % 4 has no remainder
-    if is_divisible_by(12, 4) {
-        println!("12 is divisible by 4.");
-    }
-
-    // 13 % 5 has a remainder of 2
-    if is_divisible_by(13, 5) {
-        println!("13 is divisible by 5.");
-    }
-
-    // 14 % 0 is division by zero, print an error message
-    if is_divisible_by(14, 0) {
-        println!("14 is divisible by 0.");
-    }
 }
 ```
 
@@ -157,13 +146,11 @@ Now let's look closer at the primary expression in our function body:
     }
 ```
 
-The `if`, `else if`, and `else` statements form a conditional expression.
+First, we try to prevent a classic programming error: division by zero. If there's an attempt to divide by zero, we stop execution of the function, print an error message, and return false. Because we explicitly use the `return` keyword here, we end the statement with a semicolon.
 
-The first `if` statement tries to prevent a classic programming error: division by zero. If there's an attempt to divide by zero, we halt execution of the function, print an error message, and return false. Because we explicitly use the `return` keyword here, we end the statement with a semicolon.
+Next, we check for a remainder from the division calculation. If a remainder is found, the value is displayed.
 
-When the first `if` statement results to false, the `else if` statement is executed. The second statement checks for a remainder from the division calculation. If a remainder is found, the value is displayed.
-
-When the `else if` statement results to false, the final `else` statement handles cases that weren't processed in the previous statements.
+Finally, we handle cases that weren't processed in the previous statements.
 
 If execution continues to the end of the function body, the value of the last expression is returned.
 

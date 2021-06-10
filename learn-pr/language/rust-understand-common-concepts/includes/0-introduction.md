@@ -14,7 +14,7 @@ All code that runs on the Rust Playground can also compile and run in your local
 
 ## Rust documentation
 
-This module provides an overview of common programming concepts with an emphasis on how they're implemented in Rust. We cover basic functionality, language structures, keywords, syntax, and usage. We review the language features at a high level and only describe in detail the concepts necessary to complete the unit exercises. Each module in the Learning path builds on the content in the previous module. If you want to learn more about the Rust programming language, see the [Rust documentation][Rust-docs] online. You'll find conceptual articles and reference materials for the language.
+This module provides an overview of common programming concepts with an emphasis on how they're implemented in Rust. We cover basic functionality, language structures, keywords, syntax, and usage. We review the language features at a high level and only describe in detail the concepts necessary to complete the unit exercises. If you want to learn more about the Rust programming language, see the [Rust documentation][Rust-docs] online. You'll find conceptual articles and reference materials for the language.
 
 
 ## Learning objectives
@@ -34,9 +34,10 @@ In this module, you'll:
 - Have your Rust development environment already set up.
 - Know how to create, edit, and run Rust code by using Cargo.
 
-If you need help with installing these prerequisites, follow the instructions in the previous module.
+If you need help with installing these prerequisites, follow the instructions in the [Get started with Rust][Get-started] module.
 
 
 <!-- Links -->
+[Get-started]: https://docs.microsoft.com/en-us/learn/modules/rust-get-started/?azure-portal=true
 [Rust-docs]: https://doc.rust-lang.org/book/title-page.html?azure-portal=true
 [RustPlay]: https://play.rust-lang.org?azure-portal=true

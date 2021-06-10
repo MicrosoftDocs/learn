@@ -103,8 +103,6 @@ fn main() {
 
 You can interact with this example code in this [Rust Playground][RustPlay-structs].
 
-To learn more about working with structs in Rust, see the [Rust documentation][Rust-struct].
-
 
 ## Enums
 
@@ -163,8 +161,6 @@ enum WebEvent {
     WEKeys(KeyPress)
 }
 ```
-
-To learn more about working with enums in Rust, see the [Rust documentation][Rust-enum].
 
 
 ## Instantiate an enum
@@ -264,8 +260,6 @@ The `#[derive(Debug)]` syntax lets us see certain values during the code executi
 
 
 <!-- Links -->
-[Rust-enum]: https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html?azure-portal=true
-[Rust-struct]: https://doc.rust-lang.org/book/ch05-01-defining-structs.html?azure-portal=true
 [RustPlay-enums]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f81139b1fc896ac6f3e5840f2661dd2f?azure-portal=true
 [RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1a09be796adc0020c4f868a92b4084f4?azure-portal=true
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true

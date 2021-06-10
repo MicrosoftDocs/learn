@@ -3,9 +3,9 @@ uid: learn.language.rust-understand-common-concepts
 metadata:
   title: Understand common concepts in Rust
   description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
-  ms.date: 06/02/2021
+  ms.date: 06/10/2021
   author: GitHubber17
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand common concepts in Rust
@@ -36,13 +36,14 @@ units:
 - learn.language.rust-understand-common-concepts.1a-program-structure
 - learn.language.rust-understand-common-concepts.2-variables
 - learn.language.rust-understand-common-concepts.3-data-types
+- learn.language.rust-understand-common-concepts.3a-if-else-expressions
 - learn.language.rust-understand-common-concepts.4-structs-enums
 - learn.language.rust-understand-common-concepts.4a-functions
 - learn.language.rust-understand-common-concepts.4b-exercise-functions
 - learn.language.rust-understand-common-concepts.7-collection-types
+- learn.language.rust-understand-common-concepts.7a-for-loops
 - learn.language.rust-understand-common-concepts.8-exercise-indexing
 - learn.language.rust-understand-common-concepts.9-exercise-hashmaps
-- learn.language.rust-understand-common-concepts.10-control-flow
 - learn.language.rust-understand-common-concepts.11-knowledge-check
 - learn.language.rust-understand-common-concepts.12-summary
 badge:

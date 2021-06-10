@@ -100,7 +100,7 @@ fn main() {
 
 You can try running this example in the [Rust Playground][RustPlay-numbers].
 
-To learn more about working with integers in Rust, see [Integer types][Rust-int] in the Rust documentation. For information about decimal numbers, see [Floating point types][Rust-float] in the Rust documentation.
+
 
 
 ## Booleans: True or false
@@ -119,8 +119,6 @@ fn main() {
 }
 ```
 
-To learn more about working with boolean values in Rust, see the [Rust documentation][Rust-bool].
-
 
 ## Text: Characters and strings
 
@@ -137,7 +135,6 @@ The `char` type is the most primitive of the text types. The value is specified 
 > [!NOTE]
 > Some languages treat their `char` types as 8-bit unsigned integers, which is the equivalent of the Rust `u8` type. The `char` type in Rust contains unicode code points, but they don't use utf-8 encoding. A `char` in Rust is a 21-bit integer that's padded to be 32 bits wide. The `char` contains the plain code point value directly.
 
-To learn more about working with characters in Rust, see the [Rust documentation][Rust-char].
 
 ### Strings
 
@@ -150,7 +147,7 @@ For these scenarios, Rust has a second string type named `String`. This type is 
 > [!NOTE]
 > If you're familiar with a garbage-collected language, you might be wondering why Rust has two string types.<sup>**1**</sup> Strings are extremely complex data types. Most languages use their garbage collectors to gloss over this complexity. Rust as a system's language exposes some of the inherent complexity of strings. With the added complexity comes a very fine-grained amount of control over how memory is used in your program.<br>
 > 
-> <sup>**1**</sup> _Actually, Rust has more than two string types. In this module, we cover only the `String` and `&str` types. To learn more about the string types offered in Rust, see the [Rust documentation][Rust-string]._
+> <sup>**1**</sup> _Actually, Rust has more than two string types. In this module, we cover only the `String` and `&str` types. You can learn more about the string types offered in the [Rust documentation][Rust-string]._
 
 We won't get a full idea of the difference between `String` and `&str` until we learn about Rust's ownership and borrowing system. Until then, you can think of `String` type data as text data that can change as your program runs. The `&str` references are immutable views into the text data that don't change as your program runs.
 
@@ -239,16 +236,11 @@ Is 'E' the 5th letter of the alphabet? true
 
 You can explore this example in the [Rust Playground][RustPlay-tuple].
 
-Tuples are useful when you want to combine different types into a single value. Functions can use tuples to return multiple values because tuples can hold any number of values. To learn more about working with tuples in Rust, see the [Rust documentation][Rust-tuple].
+Tuples are useful when you want to combine different types into a single value. Functions can use tuples to return multiple values because tuples can hold any number of values. 
 
 
 <!-- Links -->
-[Rust-bool]: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-boolean-type?azure-portal=true
-[Rust-char]: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-character-type?azure-portal=true
-[Rust-float]: https://doc.rust-lang.org/book/ch03-02-data-types.html#floating-point-types?azure-portal=true
-[Rust-int]: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types?azure-portal=true
 [Rust-string]: https://doc.rust-lang.org/book/ch08-02-strings.html?azure-portal=true
-[Rust-tuple]: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type?azure-portal=true
 [RustPlay-compile]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d1635823974d9456858611266a32ffa6?azure-portal=true
 [RustPlay-numbers]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d683842bd8cedd949ed3c56b27f6f0eb?azure-portal=true
 [RustPlay-text]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=dafd8dfd9159b2c6db51fdf02d5cb096?azure-portal=true

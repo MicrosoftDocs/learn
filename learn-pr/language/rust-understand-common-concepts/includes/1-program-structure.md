@@ -1,4 +1,4 @@
-In the last module, you created your first Rust program. Let's take a closer look at this code to learn how a Rust program is structured.
+Let's examine the following code and learn how a simple Rust program is structured:
 
 ```rust
 fn main() {
@@ -60,10 +60,7 @@ fn main() { // The function declaration is not indented
 
 ## The println! macro
 
-Our `main` function does one task. It calls the `println!` macro that's predefined in Rust. The `println!` macro expects one or more input arguments, which it displays to the screen or *standard output*. In our example, we pass one input argument to the macro, the text string "Hello, world!"
-
-> [!Note]
-> A macro is a like a function, and it takes a variable number of input arguments. We'll look at macros more closely in a later module.
+Our `main` function does one task. It calls the `println!` macro that's predefined in Rust. A macro is a like a function, and it takes a variable number of input arguments. The `println!` macro expects one or more input arguments, which it displays to the screen or *standard output*. In our example, we pass one input argument to the macro, the text string "Hello, world!"
 
 ```rust
 fn main() {
@@ -94,9 +91,3 @@ The output is:
 ```output
 The first letter of the English alphabet is A and the last letter is Z.
 ```
-
-To learn more about the `println` function, see the [Rust documentation][Rust-println].
-
-
-<!-- Links -->
-[Rust-println]: https://doc.rust-lang.org/std/macro.println.html?azure-portal=true

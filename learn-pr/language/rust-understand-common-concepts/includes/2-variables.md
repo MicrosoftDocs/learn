@@ -1,4 +1,4 @@
-Developers write computer programs to work with data. Data is gathered, analyzed, stored, processed, shared, and reported. To do these tasks, we need a way to work with the data and pass it to the functions in our program. We use a programming construct called *variables* to work with data.
+Developers write computer programs to work with data. Data is gathered, analyzed, stored, processed, shared, and reported. We use *variables* to store our data in a named reference that we can refer to later in our code.
 
 ## Variables
 
@@ -17,7 +17,7 @@ The `a_number` variable isn't yet bound to a value. We can modify this statement
 > [!Note]
 > **Keywords**
 > &nbsp;
-> As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables. For more information about keywords, see the [Rust appendix][Rust-keywords]. 
+> As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables.
 
 
 Let's look at another example. The following code declares two variables. The first variable is declared and bound to a number value. The second variable is declared, but it's not bound to a value. Later in the program, the value for the second variable is bound to a word. The code calls the `println!` macro to display the variable values.
@@ -111,10 +111,9 @@ fn main() {
 }
 ```
 
-Can you guess the output? Visit the [Rust Playground to run this example][RustPlay-shadow].
+Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run this example.
 
 
 <!-- Links -->
-[Rust-keywords]: https://doc.rust-lang.org/book/appendix-01-keywords.html?azure-portal=true
 [RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e6f06e06abb37c9ee15e25de0d510f5a?azure-portal=true
 [RustPlay-variables]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ece8cff9611f109439db2645d75e98d6?azure-portal=true

@@ -3,9 +3,9 @@ uid: learn.language.rust-understand-common-concepts.7-collection-types
 metadata:
   title: Use collection types
   description: "Learn about the three collection types used most commonly in Rust programs: arrays, vectors, and hash maps."
-  ms.date: 06/02/2021
+  ms.date: 06/10/2021
   author: GitHubber17
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use collection types

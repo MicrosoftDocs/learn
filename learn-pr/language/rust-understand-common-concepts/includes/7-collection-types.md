@@ -12,14 +12,11 @@ An array can be defined in two ways:
 In both cases, the content is enclosed in square brackets `[]`.
 
 ```rust
-    // Declare array, don't specify size - compiler will infer length = 7
-    // Initialize array elements using comma-separated list of values
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// Declare array, initialize all values, compiler infers length = 7
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
-    // Declare array, specify length = 5, specify first element value = "0"
-    // Declaration initializes every array element with value = "0"
-    // Short form of: let bytes = ["0", "0", "0", "0", "0"]
-    let bytes = [0; 5];
+// Declare array, first value = "0", length = 5
+let bytes = [0; 5];
 ```
 
 ### Array signature
@@ -44,10 +41,11 @@ The elements in an array are implicitly numbered starting from 0. We use indexin
 Let's look at an example.
 
 ```rust
-    // Set the first day of the week
-    let first  = days[0];
-    // Set the second day of the week
-    let second = days[1];
+// Set first day of week
+let first  = days[0];
+
+// Set second day of week
+let second = days[1];
 ```
 
 We have an array named `days` with seven elements. To access the elements in the array, we use an index that ranges from 0 to the array length - 1, or 6. In the `days` array, the first element at index 0 has the value "Sunday." The seventh element at index 6 has the value "Saturday."
@@ -57,13 +55,13 @@ To assign a value to the `first` variable, we use the expression `days[0]` to ge
 
 ### Out-of-bounds index
 
-If we try to access an element in our array with an index that's not in the allowed range, the compiler returns an error. An expression like `days[7]` is out of bounds because our array has only 7 elements. The valid index range is 0 - 6. Any index that's equal to or greater than the array length is out of bounds. Any index that's a negative number is also out of bounds.
+If we try to access an element in our array with an index that's not in the allowed range, the compiler returns an error. An expression like `days[7]` is out of bounds because our array has only seven elements. The valid index range is 0 - 6. Any index that's equal to or greater than the array length is out of bounds. Any index that's a negative number is also out of bounds.
 
 The following code shows the out-of-bounds compiler error:
 
 ```rust
-    // Set seventh day of the week, use wrong index - should be 6
-    let seventh  = days[7];
+// Set seventh day of week, use wrong index - should be 6
+let seventh  = days[7];
 ```
 
 Error output:
@@ -96,14 +94,13 @@ The generic type syntax is used to declare vectors. The syntax `<vector><T>` dec
 A common way to declare and initialize a vector is with the `vec!` macro. This macro also accepts the same syntax as the array constructor. 
 
 ```rust
-    // Declare vector with three values
-    let three_nums = vec![15, 3, 46];
-    println!("Initial vector: {:?}", three_nums);  
+// Declare vector, initialize with three values
+let three_nums = vec![15, 3, 46];
+println!("Initial vector: {:?}", three_nums);  
   
-    // Declare vector of length = 5, specify first element value = "0"
-    // Short form of: let zeroes = vec!["0", "0", "0", "0", "0"]
-    let zeroes = vec![0; 5];
-    println!("Zeroes: {:?}", zeroes); 
+// Declare vector, first value = "0", length = 5
+let zeroes = vec![0; 5];
+println!("Zeroes: {:?}", zeroes); 
 ```
 
 The output is:
@@ -118,8 +115,8 @@ In this example, we use the colon question mark `{:?}` syntax with the `println!
 Vectors can also be created by using the `Vec::new()` method. This method of vector creation lets us add and remove values at the end of the vector. To support this behavior, we declare the vector variable as mutable with the `mut` keyword.
 
 ```rust
-    // Create empty vector, declare vector mutable so it can grow and shrink
-    let mut fruit = Vec::new();
+// Create empty vector, declare vector mutable so it can grow and shrink
+let mut fruit = Vec::new();
 ```
 
 
@@ -130,11 +127,11 @@ When we create a vector with the `Vec::new()` method, we can add and remove valu
 To add a value to the end of the vector, we use the `push(<value>)` method. 
 
 ```rust
-    // Push values onto the end of the vector, type changes from generic `T` to String
-    fruit.push("Apple");
-    fruit.push("Banana");
-    fruit.push("Cherry");
-    println!("Fruits: {:?}", fruit); 
+// Push values onto end of vector, type changes from generic `T` to String
+fruit.push("Apple");
+fruit.push("Banana");
+fruit.push("Cherry");
+println!("Fruits: {:?}", fruit); 
 ```
 
 In the output, notice the system displays the square brackets for the vector, and also the quotation marks around each `String` value:
@@ -146,8 +143,8 @@ Fruits: ["Apple", "Banana", "Cherry"]
 After the type of a vector is set to a concrete type, only values of that specific type can be added to the vector. If we try to add a value of a different type, the compiler returns an error.
 
 ```rust
-    // Push an integer value, but vector expects String (&str) type value
-    fruit.push(1);
+// Push integer value, but vector expects String (&str) type value
+fruit.push(1);
 ```
 
 Compiler error:
@@ -165,10 +162,10 @@ error: aborting due to previous error
 To remove the value at the end of the vector, we use the `pop()` method.
 
 ```rust
-    // Pop off value at end of vector
-    // We can call the pop() method from inside the println! macro
-    println!("Pop off: {:?}", fruit.pop());
-    println!("Fruits: {:?}", fruit); 
+// Pop off value at end of vector
+// Call pop() method from inside println! macro
+println!("Pop off: {:?}", fruit.pop());
+println!("Fruits: {:?}", fruit); 
 ```
 
 The output shows the "Cherry" value was removed and isn't attached to a vector:
@@ -184,10 +181,10 @@ Fruits: ["Apple", "Banana"]
 Vectors support indexing in the same manner as arrays. We can access element values in the vector by using an index. The first element is at index 0 and the last element is at vector length - 1. 
 
 ```rust
-    // Declare vector with three values
-    let mut index_vec = vec![15, 3, 46];
-    let three = index_vec[1];
-    println!("Vector: {:?}, three = {}", index_vec, three);  
+// Declare vector, initialize with three values
+let mut index_vec = vec![15, 3, 46];
+let three = index_vec[1];
+println!("Vector: {:?}, three = {}", index_vec, three);  
 ```
 
 The output is:
@@ -199,9 +196,9 @@ Vector: [15, 3, 46], three = 3
 Because vector values are mutable, we can change a value in place by accessing the element value with the index:
 
 ```rust
-    // Add 5 to the value at index 1, 5 + 3 = 8
-    index_vec[1] = index_vec[1] + 5;
-    println!("Vector: {:?}", index_vec);  
+// Add 5 to the value at index 1, which is 5 + 3 = 8
+index_vec[1] = index_vec[1] + 5;
+println!("Vector: {:?}", index_vec);  
 ```
 
 The output is:
@@ -218,15 +215,15 @@ As with arrays, we can't access an element in a vector with an index that's not 
 For our example vector that has three elements, what happens if we try to access the element at index 10?
 
 ```rust
-    // Try to access the vector with an out-of-bounds index
-    let beyond = index_vec[10];
-    println!("{}", beyond);
+// Access vector with out-of-bounds index
+let beyond = index_vec[10];
+println!("{}", beyond);
 ```
 
 The program aborts with the following error message:
 
 ```output
-    thread 'main' panicked at 'index out of bounds: the len is 3 but the index is 10'...
+thread 'main' panicked at 'index out of bounds: the len is 3 but the index is 10'...
 ```
 
 In another module, we look at how to safely access a vector element without causing a program panic. 
@@ -234,115 +231,88 @@ In another module, we look at how to safely access a vector element without caus
 You can run this code and explore vectors in this [Rust Playground][RustPlay-vector].
 
 
-
 ## Hash maps
 
-The last of our common syntax for collection is the hash map. The type `HashMap<K, V>` stores a mapping of keys of some type `K` to values of some type `V`. Where vectors store values by an integer index, hash maps store values by key.
+Another common collection type is the hash map. The `HashMap<K, V>` type stores data by mapping each key `K` with its value `V`. While data in a vector is accessed by using an integer index, data in a hash map is accessed by using a key.
 
-Many programming languages support this kind of data structure. They often use a different name, such as hash, map, object, hash table, dictionary, associative array, and so on.
+The hash map type is used in many programming languages. Objects, hash tables, and dictionaries are some examples.
 
-Like vectors, hash maps are growable, store the data in the heap, and access to its items are checked
-at run time.
+Like vectors, hash maps are growable. The data is stored in the heap and access to the hash map items are checked at run time.
 
-In the following example, we're keeping track of a personal book review system. The keys are the
-book names, and the values are the reviews made by one specific user.
-
-You can create an empty hash map by using the `HashMap::new` method and then adding elements with the
-`HashMap::insert` method.
+The following example uses a hash map to track book reviews. The hash map keys are the book names and the values are the reader reviews.
 
 ```rust
-fn main() {
-    use std::collections::HashMap;
-    
-    let mut book_reviews: HashMap<String, String> = HashMap::new();
-    
-    // Add book reviews
-    book_reviews.insert(
-        "Adventures of Huckleberry Finn".to_string(),
-        "My favorite book.".to_string(),
-    );
-    book_reviews.insert(
-        "Grimms' Fairy Tales".to_string(),
-        "Masterpiece.".to_string(),
-    );
-    book_reviews.insert(
-        "Pride and Prejudice".to_string(),
-        "Very enjoyable.".to_string(),
-    );
-    book_reviews.insert(
-        "The Adventures of Sherlock Holmes".to_string(),
-        "Eye lyked it alot.".to_string(),
-    );
-}
+use std::collections::HashMap;
+let mut reviews: HashMap<String, String> = HashMap::new();
+
+reviews.insert("Ancient Roman History".to_string(), "Very accurate.".to_string());
+reviews.insert("Cooking with Rhubarb".to_string(), "Sweet recipes.".to_string());
+reviews.insert("Programming in Rust".to_string(), "Great examples.".to_string());
 ```
 
-You can see from the first line that we need to use `HashMap` from the `collections` portion of the
-standard library to bring its name into scope. This use is similar to what other programming languages call an import.
-
-The next notable aspect of the preceding snippet is the use of the `.to_string()` method invocation. This method transforms a string literal (`&str`) value into `String`. This method is useful when we want our hash map to "own" the values it holds, instead of being a collection of references *(pointers)*. We'll cover those differences in detail when we reach the "Ownership and Borrowing" module.
-
-After we've populated our hash map, we can query it:
+Let's examine this code more closely. On the first line, we see a new type of syntax:
 
 ```rust
-    // Query the review list for a specific item
-    if !book_reviews.contains_key("Les Misérables") {
-        println!("{} reviews found. No reviews found for Les Misérables.", book_reviews.len());
-    }
+use std::collections::HashMap;
 ```
 
-Hash maps can use references to query for existing entries, which means that even if our hash map is of type `HashMap<String, String>`, we can use the `&str` or `&String` types to look up its keys.
+The `use` command brings the `HashMap` definition from the `collections` portion of the Rust standard library into scope for our program. This syntax is similar to what other programming languages call an *import*.
 
-Just like with vectors, looking for a nonexistent key causes the program to panic:
+We create an empty hash map with the `HashMap::new` method. We declare the `reviews` variable as mutable so we can add or remove keys and values, as needed. In our example, both the hash map keys and values use the `String` type.
 
 ```rust
-    // Searching for an existing key returns the value associated to it
-    println!("Review for Jane: {}", book_reviews["Pride and Prejudice"]);
-    println!("Review for Tom: {}", book_reviews["Adventures of Huckleberry Finn"]);    
-    println!("Review for Arthur: {}", book_reviews["The Adventures of Sherlock Holmes"]);
-    
-    // Searching for a non-existent key causes a panic - no entry found for key
-    println!("Review for Herman: {}", book_reviews["Moby Dick"]);
+let mut reviews: HashMap<String, String> = HashMap::new();
 ```
 
-Hash maps also have the `.get()` method for safely querying their content without causing any panic. We'll cover them in the next module.
-
-We can remove entries from a hash map by using the `.remove()` method:
+We add elements to the hash map by using the `insert(<key>, <value>)` method. In the code, the syntax is <hash_map_name>.insert()`:
 
 ```rust
-    // Remove an entry from the review list
-    let sherlock = "The Adventures of Sherlock Holmes";
-    assert_eq!(book_reviews.contains_key(sherlock), true);
-    
-    book_reviews.remove(sherlock);
-    assert_eq!(book_reviews.contains_key(sherlock), false);
-    
-    // Verify review was removed
-    if !book_reviews.contains_key("The Adventures of Sherlock Holmes") {
-        println!("{} reviews found. No reviews found for The Adventures of Sherlock Holmes.", book_reviews.len());
-    }
+reviews.insert("Ancient Roman History".to_string(), "Very accurate.".to_string());
 ```
 
-In the next unit, we'll learn how to *iterate* over the elements of those collection types.
+Another new piece of syntax is the call to the `to_string()` method. This method converts a string literal (`&str`) value into the `String` type. We use this method so the hash map contains the actual value rather than a reference or *pointer* to the value.
+
+After we add data to our hash map, we can get a specific value for a key with the `get(<key>)` method.
+
+```rust
+// Look for a specific review
+let book: &str = "Programming in Rust";
+println!("\nReview for \'{}\': {:?}", book, reviews.get(book));
+```
+
+The output is:
+
+```rust
+Review for 'Programming in Rust': Some("Great examples.")
+```
+
+Notice the output displays the book review as "Some("Great examples.")" rather than just "Great examples." Because the `get` method returns an `Option<&Value>` type, Rust wraps the result of the method call with the "Some()" notation.
+
+We can remove entries from a hash map by using the `.remove()` method. If we use the `get` method for an invalid hash map key, the `get` method returns "None."
+
+```rust
+// Remove book review
+let obsolete: &str = "Ancient Roman History";
+println!("\n'{}\' removed.", obsolete);
+reviews.remove(obsolete);
+
+// Confirm book review removed
+println!("\nReview for \'{}\': {:?}", obsolete, reviews.get(obsolete));
+```
+
+The output is:
+
+```rust
+'Ancient Roman History' removed.
+Review for 'Ancient Roman History': None
+```
+
+You can try this code and work with hash maps in this [Rust Playground][RustPlay-hash].
+
+In the next unit, we'll learn how to use loop expressions to *iterate* over collection values.
 
 
 <!-- Links -->
 [RustPlay-array]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=31b8dba4c5391da0abcd570b38ca8bf2?azure-portal=true
-[RustPlay-hash]: ?azure-portal=true
+[RustPlay-hash]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4a2cb73f79abec30bcb0a1ba4f016f49?azure-portal=true
 [RustPlay-vector]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b5c73ebd5f094c758797cd4efee10012?azure-portal=true
-
-
-<!-- Advanced content
-
-- The array type supports working with data allocated on the stack rather than the heap. This is useful because...
-- The array type can be used to ensure a data set has always a fixed number of elements.
-
-- vectors, handle out-of-bounds and program panics: We'll use the `Vec::get` method *(that never panics)* in the following module, when we learn about error handling in Rust.
-
-The program resulted in a runtime error at the point of using an invalid value in the indexing operation. The program exited with an error message and didn't execute the final println! statement. When you attempt to access an element using indexing, Rust will check that the index you’ve specified is less than the array length. If the index is greater than or equal to the length, Rust will panic. This check has to happen at runtime, especially in this case, because the compiler can't possibly know what value a user will enter when they run the code later.
-
-This is the first example of Rust’s safety principles in action. In many low-level languages, this kind of check is not done, and when you provide an incorrect index, invalid memory can be accessed. Rust protects you against this kind of error by immediately exiting instead of allowing the memory access and continuing. Chapter 9 discusses more of Rust’s error handling.
-
-- Learn moer about debugging, display special data type values: We're going to learn precisely how to do that when we reach the "Traits" module in this course.
--->
-
-
