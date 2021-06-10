@@ -11,6 +11,7 @@ A method can be designed to return any data type, even another class. In this ca
 ```csharp
 dice.Next(1, 7);
 ```
+
 However, this would be pointless. The reason we're calling this method is so that we can retrieve the next random value from the Random object.
 
 ## Input parameters
@@ -101,8 +102,7 @@ On the left of the Intellisense popup, it displays `1/3`, indicating you're look
 
 The second overloaded version of the method `2/3` informs that the `Next()` method can accept an input parameter `int maxValue`. The third version of the method `3/3` informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters.
 
-What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name.However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
-
+What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name. However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
 ### Use docs.microsoft.com for information about overloaded methods
 
