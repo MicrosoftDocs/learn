@@ -82,7 +82,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
 
     > [!NOTE]
     > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-react?azure-portal=true).
-<!--ID/SME: I suggest changing "Please sign-in to see..." to "Please sign in to observe..." in the following code-->
+
     The **./src/App.js** file has the following content:
 
     ```json
@@ -139,7 +139,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
                 </AuthenticatedTemplate>
 
                 <UnauthenticatedTemplate>
-                    <h5 className="card-title">Please sign-in to see your profile information.</h5>
+                    <h5 className="card-title">Please sign-in to review your profile information.</h5>
                     </UnauthenticatedTemplate>
             </div>
         );
@@ -155,7 +155,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     ```
 
 1. Use your preferred text editor to review the content of the **./src/authConfig.js** file, which stores the information required to identify the target Azure AD application that you registered in the previous task of this exercise.
-<!--ID/SME: Replace "see" with "refer to" in the following code-->
+
     The **./src/authConfig.js** file has the following content:
 
     ```javascript
@@ -217,7 +217,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     };
 
     /**
-     * Add here the scopes to request when obtaining an access token for MS Graph API. For more information, see:
+     * Add here the scopes to request when obtaining an access token for MS Graph API. For more information, review:
      * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
      */
     export const graphConfig = {
