@@ -7,7 +7,7 @@ In this exercise you will complete the following tasks:
 - Task 1: Create a user
 - Task 2: Review the DSR to determine the appropriate process
 - Task 3: Locate and verify the personal information of the DSR in Azure AD
-- Task 4: Fulfil the DSR by deleting the relevant data
+- Task 4: Fulfill the DSR by deleting the relevant data
 - Task 5: Clean up resources
 
 ## Task 1: Create a user
@@ -43,7 +43,7 @@ To set up a new user, perform the following steps:
 To determine the appropriate process, perform the following steps:
 
 1. Review the DSR:
-In this task we will step through a scenario where we receive a DSR from a user, then identify the steps we need to perform in order to fulfil that request. There are no actual tasks to complete other than become familiar with the processes and steps involved 
+In this task we will step through a scenario where we receive a DSR from a user, then identify the steps we need to perform in order to fulfill that request. There are no actual tasks to complete other than become familiar with the processes and steps involved 
 
    - DSR form received today
    - Identity verified today, as follows
@@ -81,7 +81,7 @@ You'll now use the Azure Active Directory admin center to find personal informat
 1. Select **Avery Howard** to review the data subject's profile.
 1. Review and confirm that the personal information contained in the profile matches the subject's information in the DSR.
 
-## Task 4: Fulfil the DSR by deleting the relevant data
+## Task 4: Fulfill the DSR by deleting the relevant data
 
 You'll now respond to  the DSR by deleting the data subject's user account:
 
