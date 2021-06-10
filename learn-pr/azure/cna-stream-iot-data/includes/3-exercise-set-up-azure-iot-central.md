@@ -101,8 +101,8 @@ In this exercise, you'll:
 1. On the **Raspberry Pi** page, select **Views**, and on the **Select to add a new view** pane, select **Generate default views**.
 1. In the **Select the applicable views to be generated** section, ensure that the following options are selected:
 
-   - **Overview**. Provides a view with device telemetry, displaying charts and metrics.
-   - **About**. Provides a view with device information, displaying its properties.
+   - **Overview**. Provides an overview of device telemetry with charts and metrics.
+   - **About**. Provides an overview of device information, displaying its properties.
 
 1. Select **Generate default dashboard view(s)**
 1. On the **Raspberry Pi** page, in the **Views** section, select **About**.
