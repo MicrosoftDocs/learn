@@ -1,8 +1,8 @@
-Azure Sphere devices receive over-the-air OS and application updates via network connectivity. Applications cannot program the connectivity mechanisms directly but can configure, use, and query the wireless communications subsystem.
+Azure Sphere devices receive over-the-air OS and application updates via network connectivity. Applications can't program the connectivity mechanisms directly but can configure, use, and query the wireless communications subsystem.
 
-There are two primary forms of connectivity for the Azure Sphere, i.e., Wi-Fi connectivity and Ethernet connectivity.
+There are two primary forms of connectivity for the Azure Sphere, that is, Wi-Fi connectivity and Ethernet connectivity.
 
-Wi-Fi connectivity is achieved through 802.11 b/g/n Wi-Fi radio that operates at both 2.4GHz and 5GHz.
+Wi-Fi connectivity is achieved through 802.11 b/g/n Wi-Fi radio that operates at both 2.4 GHz and 5 GHz.
 
 LAN connectivity is provided through an external Microchip ENC28J60 Ethernet chip connected over the SPI bus.
 
@@ -36,12 +36,12 @@ You can enable the Azure Sphere to communicate on an Ethernet network via an ext
 The other supported connectivity method is Wi-Fi. You can set up Wi-Fi on your Azure Sphere device by connecting Azure Sphere to your computer. If you integrate Azure Sphere with an existing manufactured product, your customers must set up Wi-Fi at the customer’s location. There are two ways to connect to the Azure Sphere device and configure Wi-Fi connectivity:
 
 - Provide a physical control panel that the customer can access or
-- Provide a mobile app via additional Bluetooth Low Energy (BLE) chip
+- Provide a mobile app via extra Bluetooth Low Energy (BLE) chip
 
 In both cases, your Azure Sphere app will need to use the Azure Sphere Wi-Fi configuration API (wificonfig.h) to find available networks, then accept the user's network selection and Wi-Fi credentials.
 
 ## Cellular connectivity with Azure Sphere
 
-The final connectivity method for the Azure Sphere is Cellular. Cellular connectivity is potentially applicable when your device does not have access to Ethernet or Wi-Fi. Cellular connectivity could also offer advantages even when ethernet and Wi-Fi are present (for instance, in device setup). Using a cellular-capable router device, you can introduce cellular connectivity to the Azure Sphere by pairing the Azure Sphere device with the router. Doing so allows you to take advantage of Azure Sphere’s software update infrastructure, certificate-based authentication, and Azure integration while connecting over cellular.
+The final connectivity method for the Azure Sphere is Cellular. Cellular connectivity is potentially applicable when your device doesn't have access to Ethernet or Wi-Fi. Cellular connectivity could also offer advantages even when ethernet and Wi-Fi are present (for instance, in device setup). Using a cellular-capable router device, you can introduce cellular connectivity to the Azure Sphere by pairing the Azure Sphere device with the router. Doing so allows you to take advantage of Azure Sphere’s software update infrastructure, certificate-based authentication, and Azure integration while connecting over cellular.
 
-With the architecture of pairing the Azure Sphere device with a cellular-capable router, you introduce some risks if you do not appreciate the security boundary between the Azure Sphere elements and the cellular connectivity elements. Specifically, you should note that the Azure Sphere security does not extend beyond its own Wi-Fi or Ethernet interface.
+With the architecture of pairing the Azure Sphere device with a cellular-capable router, you introduce some risks if you don't appreciate the security boundary between the Azure Sphere elements and the cellular connectivity elements. Specifically, you should note that the Azure Sphere security doesn't extend beyond its own Wi-Fi or Ethernet interface.
