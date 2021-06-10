@@ -251,6 +251,9 @@ When the program is complete, you should see output similar to this example:
 
 Right now, all our car orders are for manual transmission and a closed roof. In the next exercise, we'll get more creative and use some complex conditions and hash maps to add variety to our orders and output.
 
+
+## Solution
+
 You can compare your program output to the solution for this exercise in this [Rust Playground][RustPlay-answer].
 
 

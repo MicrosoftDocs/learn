@@ -14,7 +14,8 @@ Your first task is to fix syntax issues in the enum definition, so the code comp
 
 1. Open the first block of sample code.
 
-    Copy the following code and edit it in your local development environment, or open the code in this prepared [Rust Playground][RustPlay-exercise].
+    Copy the following code and edit it in your local development environment,<br>
+    or open the code in this prepared [Rust Playground][RustPlay-exercise].
 
     ```rust
     // Declare Car struct to describe vehicle with four named fields

@@ -69,9 +69,9 @@ The body of our `loop` expression does these successive actions:
     1. Increment the `counter` value to be twice the current value.
     1. Check the `counter` value.
     1. If the `counter` value is more than 100:
-        - Break from the loop and return the `counter` value.
+       > Break from the loop and return the `counter` value.
     1. If the `counter` value is not more than 100:
-        - Repeat the actions in the loop body.
+       > Repeat the actions in the loop body.
 1. Set the `stop_loop` value to the `counter` value, which is the result of the `loop` expression.
 
 The `loop` expression body can have more than one break point. When the expression has multiple break points, every break point must return a value of the same type. All values must be of type integer, or String, or bool, and so on. When a break point doesn't explicitly return a value, the program interprets the expression result as an empty tuple, `()`.

@@ -233,6 +233,9 @@ When the program is complete, you should see output similar to this example:
 Car orders: {"Manual": 4, "New": 5, "Used": 6, "Automatic": 3}
 ```
 
+
+## Solution
+
 You can compare your program output to the solution for this exercise in this [Rust Playground][RustPlay-answer].
 
 
