@@ -5,13 +5,13 @@ Developers write computer programs to work with data. Data is gathered, analyzed
 In Rust, a variable is declared with the keyword `let`. Each variable has a unique name. When a variable is declared, it can be bound to a value, or the value can be bound later in the program. The following code declares a variable named `a_number`. 
 
 ```rust
-    let a_number;
+let a_number;
 ```
 
 The `a_number` variable isn't yet bound to a value. We can modify this statement to bind a value to the variable:
 
 ```rust
-    let a_number = 10;
+let a_number = 10;
 ```
 
 > [!Note]
@@ -23,19 +23,17 @@ The `a_number` variable isn't yet bound to a value. We can modify this statement
 Let's look at another example. The following code declares two variables. The first variable is declared and bound to a number value. The second variable is declared, but it's not bound to a value. Later in the program, the value for the second variable is bound to a word. The code calls the `println!` macro to display the variable values.
 
 ```rust
-fn main() {
-    // Declare a variable
-    let a_number;
+// Declare a variable
+let a_number;
     
-    // Declare a second variable and bind the value
-    let a_word = "Ten";
+// Declare a second variable and bind the value
+let a_word = "Ten";
     
-    // Bind a value to the first variable
-    a_number = 10;
+// Bind a value to the first variable
+a_number = 10;
 
-    println!("The number is {}.", a_number);
-    println!("The word is {}.", a_word);
-}
+println!("The number is {}.", a_number);
+println!("The word is {}.", a_word);
 ```
 
 Our example prints the following output:
@@ -56,8 +54,8 @@ In Rust, variable bindings are immutable by default. When a variable is immutabl
 For instance, if we try to change the value of the `a_number` variable from the previous example, we receive an error message from the compiler.
 
 ```rust
-    // Change the value of an immutable variable
-    a_number = 15;
+// Change the value of an immutable variable
+a_number = 15;
 ```
 
 You can see this error message for yourself in the [Rust Playground][RustPlay-variables]. 
@@ -65,17 +63,13 @@ You can see this error message for yourself in the [Rust Playground][RustPlay-va
 To mutate a value, we must first use the `mut` keyword to make a variable binding mutable.
 
 ```rust
-fn main() {
-    // The `mut` keyword lets the variable be changed
-    let mut a_number = 10; 
+// The `mut` keyword lets the variable be changed
+let mut a_number = 10; 
+println!("The number is {}.", a_number);
 
-    println!("The number is {}.", a_number);
-
-    // Change the value of an immutable variable
-    a_number = 15;
-
-    println!("Now the number is {}.", a_number);
-}
+// Change the value of an immutable variable
+a_number = 15;
+println!("Now the number is {}.", a_number);
 ```
 
 This example prints the following output:
@@ -95,20 +89,16 @@ You can declare a new variable that uses the same name of an existing variable. 
 The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `number` while shadowing the previous variable binding.
 
 ```rust
-fn main() {
-    // Declare the first variable binding with the name "shadow_num"
-    let shadow_num = 5;
+// Declare first variable binding with name "shadow_num"
+let shadow_num = 5;
 
-    // Declare a second variable binding
-    // This binding shadows the existing variable named "shadow_num" 
-    let shadow_num = shadow_num + 5; 
+// Declare second variable binding, shadows existing variable "shadow_num" 
+let shadow_num = shadow_num + 5; 
 
-    // Declare a third variable binding
-    // This binding shadows the second binding of the variable named "shadow_num"
-    let shadow_num = shadow_num * 2; 
+// Declare third variable binding, shadows second binding of variable "shadow_num"
+let shadow_num = shadow_num * 2; 
 
-    println!("The number is {}.", shadow_num);
-}
+println!("The number is {}.", shadow_num);
 ```
 
 Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run this example.

@@ -17,7 +17,8 @@ Your first task is to change the `Car` struct definition. We're going to move th
 
 1. Open the first block of sample code.
 
-    Copy the following code and edit it in your local development environment, or open the code in this prepared [Rust Playground][RustPlay-exercise].
+    Copy the following code and edit it in your local development environment,<br>
+    or open the code in this prepared [Rust Playground][RustPlay-exercise].
 
     ```rust
     #[derive(PartialEq, Debug)]

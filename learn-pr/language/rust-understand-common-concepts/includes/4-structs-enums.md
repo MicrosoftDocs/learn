@@ -15,11 +15,7 @@ The following code shows example definitions for the three varieties of struct t
 
 ```rust
 // Classic struct with named fields
-struct Student {
-    name: String,
-    level: u8,
-    pass: bool
-}
+struct Student { name: String, level: u8, pass: bool }
 
 // Tuple struct with data types only
 struct Grades(char, char, char, char, f32);
@@ -42,11 +38,7 @@ Like a function, the body of a classic struct is defined inside curly brackets `
 
 ```rust
 // Classic struct with named fields
-struct Student {
-    name: String,
-    level: u8,
-    pass: bool
-}
+struct Student { name: String, level: u8, pass: bool }
 ```
 
 A benefit of the classic struct definition is you can access the value for a struct field by name. To access the field value, we use the syntax `<struct>.<field>`.
@@ -71,34 +63,18 @@ After you define a struct type, you use the struct by creating an instance of th
 The following example uses the definitions that we created for the Student and Grades struct types.
 
 ```rust
-fn main() {
-    // Instantiate a classic struct, specify the fields in random order
-    let student_1 = Student {
-        name: String::from("Constance Sharma"),
-        remote: true,
-        level: 2
-    };
+// Instantiate classic struct, specify fields in random order, or in specified order
+let user_1 = Student { name: String::from("Constance Sharma"), remote: true, level: 2 };
+let user_2 = Student { name: String::from("Dyson Tan"), level: 5, remote: false };
 
-    // Instantiate a tuple struct, pass the values in the same order as the types are defined
-    let grades_1 = Grades('A', 'A', 'B', 'A', 3.75);
+// Instantiate tuple structs, pass values in same order as types defined
+let mark_1 = Grades('A', 'A', 'B', 'A', 3.75);
+let mark_2 = Grades('B', 'A', 'A', 'C', 3.25);
 
-    // Instantiate another classic struct, specify the field values in order
-    let student_2 = Student {
-        name: String::from("Dyson Tan"),
-        level: 5,
-        remote: false
-    };
-
-    // Instantiate another tuple struct, pass the values in the same order as defined
-    let grades_2 = Grades('B', 'A', 'A', 'C', 3.25);
-
-    // Show the student information
-    println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
-             student_1.name, student_1.level, student_1.remote, grades_1.0, grades_1.1, grades_1.2, grades_1.3, grades_1.4);
-
-    println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
-             student_2.name, student_2.level, student_2.remote, grades_2.0, grades_2.1, grades_2.2, grades_2.3, grades_2.4);
-}
+println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
+         user_1.name, user_1.level, user_1.remote, mark_1.0, mark_1.1, mark_1.2, mark_1.3, mark_1.4);
+println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
+         user_2.name, user_2.level, user_2.remote, mark_2.0, mark_2.1, mark_2.2, mark_2.3, mark_2.4);
 ```
 
 You can interact with this example code in this [Rust Playground][RustPlay-structs].
@@ -119,10 +95,8 @@ In the following example, we define an enum to classify a web event. Each varian
 enum WebEvent {
     // An enum variant can be like a unit struct without fields or data types
     WELoad,
-
     // An enum variant can be like a tuple struct with data types but no named fields
     WEKeys(String, char),
-
     // An enum variant can be like a classic struct with named fields and their data types
     WEClick { x: i64, y: i64 }
 }
@@ -148,18 +122,11 @@ The following code shows how to use this alternate definition style. The structs
 struct KeyPress(String, char);
 
 // Define a classic struct
-struct MouseClick { 
-    x: i64, 
-    y: i64 
-}
+struct MouseClick { x: i64, y: i64 }
 
 // Redefine the enum variants to use the data from the new structs
 // Update the page Load variant to have the boolean type
-enum WebEvent {
-    WELoad(bool),
-    WEClick(MouseClick),
-    WEKeys(KeyPress)
-}
+enum WebEvent { WELoad(bool), WEClick(MouseClick), WEKeys(KeyPress) }
 ```
 
 
@@ -173,7 +140,7 @@ Now let's add code to create instances of our enum variants. For each variant, w
 The first variant in the `WebEvent` enum has a single boolean value, `WELoad(bool)`. We instantiate this variant in a manner similar to how we worked with booleans in the previous unit:
 
 ```rust
-   let we_load = WebEvent::WELoad(true);
+let we_load = WebEvent::WELoad(true);
 ```
 
 
@@ -182,14 +149,11 @@ The first variant in the `WebEvent` enum has a single boolean value, `WELoad(boo
 The second variant contains a classic struct `WEClick(MouseClick)`. The struct has two named fields `x` and `y`, and both fields have the `i64` data type. To create this variant, first we instantiate the struct. Then we pass the struct as an argument in the call to instantiate the variant.
 
 ```rust
-    // Instantiate a MouseClick struct and bind the coordinate values
-    let click = MouseClick {
-        x: 100,
-        y: 250
-    };
+// Instantiate a MouseClick struct and bind the coordinate values
+let click = MouseClick { x: 100, y: 250 };
 
-    // Set the WEClick variant to use the data in the click struct
-    let we_click = WebEvent::WEClick(click);
+// Set the WEClick variant to use the data in the click struct
+let we_click = WebEvent::WEClick(click);
 ```
 
 
@@ -198,11 +162,11 @@ The second variant contains a classic struct `WEClick(MouseClick)`. The struct h
 The last variant contains a tuple `WEKeys(KeyPress)`. The tuple has two fields that use the `String` and `char` data types. To create this variant, first we instantiate the tuple. Then we pass the tuple as an argument in the call to instantiate the variant.
 
 ```rust
-    // Instantiate a KeyPress tuple and bind the key values
-    let keys = KeyPress(String::from("Ctrl+"), 'N');
+// Instantiate a KeyPress tuple and bind the key values
+let keys = KeyPress(String::from("Ctrl+"), 'N');
     
-    // Set the WEKeys variant to use the data in the keys tuple
-    let we_key = WebEvent::WEKeys(keys);
+// Set the WEKeys variant to use the data in the keys tuple
+let we_key = WebEvent::WEKeys(keys);
 ```
 
 Notice that we use new syntax in this piece of code, `String::from("<value>")`. This syntax creates a value of type `String` by calling the Rust `from` method. The method expects an input argument of data enclosed in double quotation marks.
@@ -210,38 +174,28 @@ Notice that we use new syntax in this piece of code, `String::from("<value>")`. 
 
 ### Enums example
 
-Here's our final code to instantiate the enum variants:
+Here's the final code to instantiate the enum variants:
 
 ```rust
-fn main() {
-    // Instantiate a MouseClick struct and bind the coordinate values
-    let click = MouseClick {
-        x: 100,
-        y: 250
-    };
+// Instantiate a MouseClick struct and bind the coordinate values
+let click = MouseClick { x: 100, y: 250 };
+println!("Mouse click location: {}, {}", click.x, click.y);
     
-    // Print the MouseClick coordinate values
-    println!("Mouse click location: {}, {}", click.x, click.y);
+// Instantiate a KeyPress tuple and bind the key values
+let keys = KeyPress(String::from("Ctrl+"), 'N');
+println!("\nKeys pressed: {}{}", keys.0, keys.1);
     
-    // Instantiate a KeyPress tuple and bind the key values
-    let keys = KeyPress(String::from("Ctrl+"), 'N');
+// Instantiate WebEvent enum variants
+// Set the boolean page Load value to true
+let we_load = WebEvent::WELoad(true);
+// Set the WEClick variant to use the data in the click struct
+let we_click = WebEvent::WEClick(click);
+// Set the WEKeys variant to use the data in the keys tuple
+let we_key = WebEvent::WEKeys(keys);
     
-    // Print the KeyPress values
-    println!("\nKeys pressed: {}{}", keys.0, keys.1);
-    
-    // Instantiate the WebEvent enum variants
-    // Set the boolean page Load value to true
-    let we_load = WebEvent::WELoad(true);
-    // Set the WEClick variant to use the data in the click struct
-    let we_click = WebEvent::WEClick(click);
-    // Set the WEKeys variant to use the data in the keys tuple
-    let we_key = WebEvent::WEKeys(keys);
-    
-    // Print the values in the WebEvent enum variants
-    // Use the {:#?} syntax to display the enum structure and data in a readable form
-    println!("\nWebEvent enum structure: \n\n {:#?} \n\n {:#?} \n\n {:#?}", we_load, we_click, we_key);
-}
-
+// Print the values in the WebEvent enum variants
+// Use the {:#?} syntax to display the enum structure and data in a readable form
+println!("\nWebEvent enum structure: \n\n {:#?} \n\n {:#?} \n\n {:#?}", we_load, we_click, we_key);
 ```
 
 Try to interact with this example code in the [Rust Playground][RustPlay-enums].

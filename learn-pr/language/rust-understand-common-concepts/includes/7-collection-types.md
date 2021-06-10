@@ -264,7 +264,7 @@ We create an empty hash map with the `HashMap::new` method. We declare the `revi
 let mut reviews: HashMap<String, String> = HashMap::new();
 ```
 
-We add elements to the hash map by using the `insert(<key>, <value>)` method. In the code, the syntax is <hash_map_name>.insert()`:
+We add elements to the hash map by using the `insert(<key>, <value>)` method. In the code, the syntax is `<hash_map_name>.insert()`:
 
 ```rust
 reviews.insert("Ancient Roman History".to_string(), "Very accurate.".to_string());

@@ -41,19 +41,17 @@ The `break` keyword reveals a special feature of the `loop` expression. By using
 The following example shows how we can use the `break` keyword in a `loop` expression to also return a value:
 
 ```rust
-fn main() {
-    let mut counter = 1;
-    // stop_loop is set when loop stops
-    let stop_loop = loop {
-        counter *= 2;
-        if counter > 100 {
-            // Stop loop, return counter value
-            break counter;
-        }
-    };
-    // Loop should break when counter = 128
-    println!("Break the loop at counter = {}.", stop_loop);
-}
+let mut counter = 1;
+// stop_loop is set when loop stops
+let stop_loop = loop {
+    counter *= 2;
+    if counter > 100 {
+        // Stop loop, return counter value
+        break counter;
+    }
+};
+// Loop should break when counter = 128
+println!("Break the loop at counter = {}.", stop_loop);
 ```
 
 Here's the output:
@@ -66,17 +64,14 @@ The body of our `loop` expression does these successive actions:
 
 1. Declare the `stop_loop` variable.
 1. Instruct the program to bind the variable value to the result from the `loop` expression.
-1. Start the loop. Execute the actions in the body of the `loop` expression:
-
+1. Start the loop. Execute the actions in the body of the `loop` expression:<br>
     **Loop body**
-
     1. Increment the `counter` value to be twice the current value.
     1. Check the `counter` value.
     1. If the `counter` value is more than 100:
         - Break from the loop and return the `counter` value.
     1. If the `counter` value is not more than 100:
         - Repeat the actions in the loop body.
-
 1. Set the `stop_loop` value to the `counter` value, which is the result of the `loop` expression.
 
 The `loop` expression body can have more than one break point. When the expression has multiple break points, every break point must return a value of the same type. All values must be of type integer, or String, or bool, and so on. When a break point doesn't explicitly return a value, the program interprets the expression result as an empty tuple, `()`.

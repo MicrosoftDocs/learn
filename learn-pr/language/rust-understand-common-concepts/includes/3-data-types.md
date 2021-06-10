@@ -5,16 +5,14 @@ The compiler can usually infer the data type for a variable based on the bound v
 In the following example, we tell the compiler to create the `number` variable as a 32-bit integer. We specify the data type `u32` after the variable name. Notice the use of the colon `:` after the variable name.
 
 ```rust
-fn main() {
-    let number: u32 = 14;
-    println!("The number is {}.", number);
-}
+let number: u32 = 14;
+println!("The number is {}.", number);
 ```
 
 If we enclose the variable value in double quotation marks, the complier interprets the value as text rather than a number. The inferred data type of the value doesn't match the `u32` data type specified for the variable, so the compiler issues an error:
 
 ```rust
-    let number: u32 = "14";
+let number: u32 = "14";
 ```
 
 The  compiler error:
@@ -67,30 +65,20 @@ The `isize` and `usize` types depend on the kind of computer your program is run
 Rust has two floating-point data types for decimal values: `f32` (32 bits) and `f64` (64 bits). The default floating-point type is `f64`. On modern CPUs, the `f64` type is roughly the same speed as the `f32` type, but it has greater precision.
 
 ```rust
-    let number_64 = 4.0;      // compiler infers the value to use the default type f64
-    let number_32: f32 = 5.0; // type f32 specified via annotation
+let number_64 = 4.0;      // compiler infers the value to use the default type f64
+let number_32: f32 = 5.0; // type f32 specified via annotation
 ```
 
 All of the primitive number types in Rust support mathematical operations like addition, subtraction, multiplication, and division.
 
 ```rust
-fn main() {
-    // Addition
-    println!("1 + 2 = {}", 1u32 + 2);
+// Addition, Subtraction, and Multiplication
+println!("1 + 2 = {} and 8 - 5 = {} and 15 * 3 = {}", 1u32 + 2, 8i32 - 5, 15 * 3);
 
-    // Subtraction
-    println!("1 - 2 = {}", 1i32 - 2);
-    // ^ Try changing `1i32` to `1u32` to see why the type is important
+// ^ Try changing `1i32` to `1u32` to see why the type is important
 
-    // Integer division
-    println!("9 / 2 = {}", 9u32 / 2);
-
-    // Floating point division
-    println!("9 / 2 = {}", 9.0 / 2.0);
-
-    // Multiplication
-    println!("3 * 6 = {}", 3 * 6)
-}
+// Integer and Floating point division
+println!("9 / 2 = {} but 9.0 / 2.0 = {}", 9u32 / 2, 9.0 / 2.0);
 ```
 
 > [!NOTE]
@@ -101,8 +89,6 @@ fn main() {
 You can try running this example in the [Rust Playground][RustPlay-numbers].
 
 
-
-
 ## Booleans: True or false
 
 The boolean type in Rust is used to store truthiness. The `bool` type has two possible values: `true` or `false`. Boolean values are used widely in conditional expressions. If a `bool` statement or value is true, then do this action; otherwise (the statement or value is false), do a different action. A boolean value is often returned by a comparison check. 
@@ -110,13 +96,9 @@ The boolean type in Rust is used to store truthiness. The `bool` type has two po
 In the following example, we use the greater than `>` operator to test two values. The operator returns a boolean value that shows the result of the test. 
 
 ```rust
-fn main() {
-    // Declare a variable to store the result of the "greater than" test
-    let is_bigger = 1 > 4;
-    
-    // Is 1 > 4? -- false
-    println!("Is 1 > 4? {}", is_bigger);  
-}
+// Declare variable to store result of "greater than" test, Is 1 > 4? -- false
+let is_bigger = 1 > 4;
+println!("Is 1 > 4? {}", is_bigger);  
 ```
 
 
@@ -127,9 +109,9 @@ Rust supports text values with two basic string types and one character type. A 
 The `char` type is the most primitive of the text types. The value is specified by enclosing the item in single quotation marks:
 
 ```rust
-    let uppercase_s = 'S';
-    let lowercase_f = 'f';
-    let smiley_face = '😃';
+let uppercase_s = 'S';
+let lowercase_f = 'f';
+let smiley_face = '😃';
 ```
 
 > [!NOTE]
@@ -164,22 +146,20 @@ The following example shows how to use the `char` and `&str` data types in Rust.
 Notice that the `string_1` variable includes an empty space at the end of the series of characters.
 
 ```rust
-fn main() {
-    // Specify the data type "char"
-    let character_1: char = 'S';
-    let character_2: char = 'f';
+// Specify the data type "char"
+let character_1: char = 'S';
+let character_2: char = 'f';
    
-    // Complier interprets a single item in quotations as the "char" data type
-    let smiley_face = '😃';
+// Complier interprets a single item in quotations as the "char" data type
+let smiley_face = '😃';
 
-    // Complier interprets a series of items in quotations as a "str" data type and creates a "&str" reference
-    let string_1 = "miley ";
+// Complier interprets a series of items in quotations as a "str" data type and creates a "&str" reference
+let string_1 = "miley ";
 
-    // Specify the data type "str" with the reference syntax "&str"
-    let string_2: &str = "ace";
+// Specify the data type "str" with the reference syntax "&str"
+let string_2: &str = "ace";
 
-    println!("{} is a {}{}{}{}.", smiley_face, character_1, string_1, character_2, string_2);
-}
+println!("{} is a {}{}{}{}.", smiley_face, character_1, string_1, character_2, string_2);
 ```
 
 Here's the output for our example:
@@ -200,8 +180,8 @@ A tuple has a fixed length, which is equal to its number of elements. After a tu
 Here's an example of a tuple with three elements:
 
 ```rust
-    // Tuple of length 3
-    let tuple_e = ('e', 5i32, true);
+// Tuple of length 3
+let tuple_e = ('e', 5i32, true);
 ```
 
 The following table shows the value, data type, and index for each element in the tuple:
@@ -219,13 +199,11 @@ The elements in a tuple can be accessed by index position starting from zero. Th
 The following example shows how to access the elements in the tuple by using indexing:
 
 ```rust
-fn main() {
-    // Declare a tuple of three elements
-    let tuple_e = ('E', 5i32, true);
+// Declare a tuple of three elements
+let tuple_e = ('E', 5i32, true);
 
-    // Use tuple indexing and show the values of the elements in the tuple
-    println!("Is '{}' the {}th letter of the alphabet? {}", tuple_e.0, tuple_e.1, tuple_e.2);
-}
+// Use tuple indexing and show the values of the elements in the tuple
+println!("Is '{}' the {}th letter of the alphabet? {}", tuple_e.0, tuple_e.1, tuple_e.2);
 ```
 
 The example shows the following output:

@@ -134,16 +134,16 @@ The `is_divisible_by` function accepts two integers as inputs and outputs a bool
 Now let's look closer at the primary expression in our function body:
 
 ```rust
-    // If the divisor is zero, stop execution - division by zero causes a runtime error
-    if divisor == 0 {
-        println!("\nError! Division by zero is not allowed.");
-        // To prevent division by zero, halt execution and return to the caller
-        return false;
-    } else if dividend % divisor > 0 {
-        println!("\n{} % {} has a remainder of {}.", dividend, divisor, (dividend % divisor));
-    } else {
-        println!("\n{} % {} has no remainder.", dividend, divisor);
-    }
+// If the divisor is zero, stop execution - division by zero causes a runtime error
+if divisor == 0 {
+    println!("\nError! Division by zero is not allowed.");
+    // To prevent division by zero, halt execution and return to the caller
+    return false;
+} else if dividend % divisor > 0 {
+     println!("\n{} % {} has a remainder of {}.", dividend, divisor, (dividend % divisor));
+} else {
+    println!("\n{} % {} has no remainder.", dividend, divisor);
+}
 ```
 
 First, we try to prevent a classic programming error: division by zero. If there's an attempt to divide by zero, we stop execution of the function, print an error message, and return false. Because we explicitly use the `return` keyword here, we end the statement with a semicolon.
@@ -155,7 +155,7 @@ Finally, we handle cases that weren't processed in the previous statements.
 If execution continues to the end of the function body, the value of the last expression is returned.
 
 ```rust
-    dividend % divisor == 0
+dividend % divisor == 0
 ```
 
 The expression `dividend % divisor == 0` uses the remainder operator (`%`) to get the remainder of the division between the two numbers and then compares it to zero. The resulting type after applying the equality operator (`==`) is the `bool` type, which is either `true` or `false`. The return value is created implicitly without using the `return` keyword, so we don't end the statement with a semicolon.
