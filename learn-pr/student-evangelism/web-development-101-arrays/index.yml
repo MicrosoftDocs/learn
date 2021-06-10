@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: JavaScript arrays and loops
-summary: Learn about variables and the data types that populate them.
+summary: Learn how to manipulate and store data within JavaScript.
 abstract: |
   In this module, you'll learn about: 
   - Arrays and what they're used for.
