@@ -8,7 +8,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
 2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
 
-    ![Azure portal header wighlighting the "Cloud Shell" link.](media/open-azure-cloud-shell.png)
+    ![Azure portal header wighlighting the "Cloud Shell" link.](../media/open-azure-cloud-shell.png)
 
 3. Create the base source directory
 

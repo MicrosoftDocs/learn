@@ -6,7 +6,7 @@ In a typical microservices scenario the client applications have to interact wit
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in the next image.
 
-![Image description follows in text.](media/direct-client-microservice-communication.png)
+![Image description follows in text.](../media/direct-client-microservice-communication.png)
 
 As you can see in the image above, each client application, either mobile or web, connects to the each of the three microservices.
 
@@ -23,7 +23,7 @@ And there's even more, how would you handle the unavoidable API evolution and ve
 
 This is where the API Gateway patterns comes into play, working as shown in the next image:
 
-![Image description follows in text.](media/simple-api-gateway.png)
+![Image description follows in text.](../media/simple-api-gateway.png)
 
 The above image shows how all client apps, and even a client MVC app, communicate with a single entry point in the API Gateway.
 
@@ -43,7 +43,7 @@ Each client application might have a context that imposes some specific constrai
 
 This is where the BFF pattern comes into play, by supplying a per-device-type API, customized for the specific context, as shown in the next image.
 
-![Image description follows in text.](media/bff-api-gateways.png)
+![Image description follows in text.](../media/bff-api-gateways.png)
 
 In the above image you can see that the mobile applications accesses a mobile-specific API Gateway, while the client SPA and MVC web apps use a desktop-specific API Gateway.
 
@@ -155,7 +155,7 @@ You can check some details in the following code fragment.
 
 ### WebSalesAggregator Architecture - Envoy as API Gateway & BFF pattern
 
-![eShopOnContainers architecture with Envoy](media/api-gateway-bff-nginx-ingress.png)
+![eShopOnContainers architecture with Envoy](../media/api-gateway-bff-nginx-ingress.png)
 
 > [!NOTE]
 > In this implementation, you'll not implement any UI to consume the WebSales aggregator but will use the Swagger UI as an external client to test out the functionality.

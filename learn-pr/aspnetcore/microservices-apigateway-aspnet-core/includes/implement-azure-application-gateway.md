@@ -34,7 +34,7 @@ The script will perform the following tasks:
 
 You should get something like this:
 
-![Output from the create-application-gateway script. Creates subnet, creates public IP, and creates Application Gateway.](media/create-application-gateway.png)
+![Output from the create-application-gateway script. Creates subnet, creates public IP, and creates Application Gateway.](../media/create-application-gateway.png)
 
 This script will also take a while, so in the meantime you can continue checking out the [ingresses configuration](#configure-the-existing-ingresses).
 
@@ -53,11 +53,11 @@ The script will perform the following tasks:
 - Enable the AGIC as an adon feature in the existing Kubernetes cluster.
 - Enable the bi-directional peering between the existing VNET network of AKS cluster and the newly created VNET of the Application Gateway cluster.
 
-![Initial output from the enable-agic-adon.sh script.](media/enable-adon.png)
+![Initial output from the enable-agic-adon.sh script.](../media/enable-adon.png)
 
 And ends like this:
 
-![Final output from the enable-agic-adon.sh.](media/enable-adon-last.png)
+![Final output from the enable-agic-adon.sh.](../media/enable-adon-last.png)
 
 ## Configure the existing ingresses
 
@@ -164,7 +164,7 @@ Note: Keep in mind that all ingresses must contain the `kubernetes.io/ingress.cl
 
 You can use VS Code's search feature to make it easier to update the ingresses, as shown in the next image:
 
-![Image description follows in text.](media/update-ingresses-vscode.png)
+![Image description follows in text.](../media/update-ingresses-vscode.png)
 
 In the preceding image you can see the searching for `kind: ingress` in VS Code makes it easy to identify all files that have to be updated.
 
@@ -192,7 +192,7 @@ Just run the following script, replacing the `{appgw-public-ip}` with the value 
 
 You should get an output just like the one from the initial deployment, only the IP will be different:
 
-![Output from the deploy-application script. Highlighting the resulting deployment urls.](media/deploy-aks-application-gateway.png)
+![Output from the deploy-application script. Highlighting the resulting deployment urls.](../media/deploy-aks-application-gateway.png)
 
 You can now explore the application deploy onto the new AKS, although, other than the IP, you shouldn't see any difference.
 
@@ -210,7 +210,7 @@ The above script will deploy the following services :
 - `Identity.API`
 - `WebSalesAgg`
 
-![Deploy affected services](media/deploy-affected-services.png)
+![Deploy affected services](../media/deploy-affected-services.png)
 
 ## Add the `websalesagg` client redirect uris in the `IdentityDb`
 
@@ -237,7 +237,7 @@ The above script will deploy the following services :
 
 - It's important that you login to the `WebSPA` app using `http://{appgw-public-ip}/` and created a order. Otherwise you'll not able to see any data in the Sales API.
 
-![List of orders](media/list-of-orders.png)
+![List of orders](../media/list-of-orders.png)
 
 ### Fetch the sales data
 
@@ -245,6 +245,6 @@ The above script will deploy the following services :
 - And click on the `Sales API` to fetch the API data.
 - You'll see the below output, where aggregated sales unit per brand has been shown for those orders which has been created today.
 
-![Sales API Data](media/websales-agg-sales-api-data.png)
+![Sales API Data](../media/websales-agg-sales-api-data.png)
 
 | [TOC](../README.md) | [NEXT >](knowledge-check.md) |

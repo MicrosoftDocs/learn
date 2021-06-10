@@ -118,7 +118,7 @@ Azure Application Gateway is a managed solution that allows you to handle any-si
 
 The Application Gateway Ingress Controller (AGIC) makes it easy to integrate the Application Gateway with your Kubernetes cluster. The next image shows the general architecture of the solution.
 
-![Image description follows in text.](media/azure-application-gateway-ingress-controller-overview.png)
+![Image description follows in text.](../media/azure-application-gateway-ingress-controller-overview.png)
 
 In the image above you can see that the AGIC lives inside the AKS cluster as an Ingress Controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
@@ -133,18 +133,18 @@ AGIC ingress controller has many advantages over in-cluster ingress controller.
 - AGIC doesn't take any resource of Kubernetes cluster as it runs outside of the cluster.
 - External traffics doesn't go through the extra hop of the ingress controller pod, which eventually reduces latency.
 
-![in-cluster-vs-agic](media/incluster-vs-agic.png)
+![in-cluster-vs-agic](../media/incluster-vs-agic.png)
 
 ### Azure Front Door
 
 So far you have learnt to load balance the traffic within one Azure region. For e.g WestUS/EastUS2 etc.. But when you have an enterprise application deployed in multi-region, *Azure Application Gateway* will not be able to route the traffic because it can only span across availability zones within a region, not across the regions. In that scenario, you'll need to use Azure Front Door.
 
-![Azure Front Door](media/front-door-visual-diagram.png)
+![Azure Front Door](../media/front-door-visual-diagram.png)
 
 For simplicity, `eShopOnContainers` will be deployed within one region and only Application Gateway will be used to load balance the traffic. In the next unit, you will deploy the `websalesagg` BFF to the Kubernetes cluster and expose the Sales API with the help of the Application Gateway Ingress controller.
 
 A modified solution architecture will look like as per below.
 
-![Azure App Gateway Solution Architecture](media/app-gateway-ingress.png)
+![Azure App Gateway Solution Architecture](../media/app-gateway-ingress.png)
 
 | [TOC](../README.md) | [NEXT >](implement-azure-application-gateway.md) |

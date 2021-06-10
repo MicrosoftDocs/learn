@@ -25,7 +25,7 @@ In this exercise you will:
 
     The script will create an instance of ACR. You should get something like this:
 
-    ![Create ACR instance](media/create-acr.png)
+    ![Create ACR instance](../media/create-acr.png)
 
 - Make sure you run the following command to login to the ACR instance because that will be required to push the docker images.
 
@@ -145,7 +145,7 @@ The above configuration will include the health check for the `websalesagg` in t
 
 - Fetch the external ip address of the nginx ingress load balancer
 
-    ![Nginx ingress external load balancer](media/nginx-ingress-external-ip.png)
+    ![Nginx ingress external load balancer](../media/nginx-ingress-external-ip.png)
 
 - Replace `{nginx-ingress-ip-address}` with the ip address of the external ip address of the nginx ingress controller and then run the below command to deploy the affected services to the cluster.
 
@@ -165,7 +165,7 @@ The above script will deploy the following services :
 
 - Wait till the `websalesagg` pod is up and running. Then you'll be able to access the websalesagg only through clusterIP
 
-    ![Curl of internal websaleagg pod request](media/curl-of-internal-pod-request.png)
+    ![Curl of internal websaleagg pod request](../media/curl-of-internal-pod-request.png)
 
 At this point, `websalesagg` is only available for the internal resources to consume. You'll not able to access the `websalesagg` outside the Kubernetes cluster.
 You'll need to configure the ingress object for that. You'll explore those concepts in the next unit.
