@@ -6,7 +6,7 @@ Suppose you work for Adatum Corporation, which is a manufacturer of devices such
 
 Your team has developed a refrigerator-inventory service that businesses can use to easily identify what items they need to restock. They can also set up this service to automatically reorder required items. For this purpose, you used an Azure Kubernetes Service (AKS) cluster-hosted Node.js app. This app processes messages from refrigerators and sends them to a management web app, with Azure Database for PostgreSQL serving as the data store.
 
-While your application satisfied all the requirements specified at that time, its use cases didn't account for the need to accommodate multitenant scenarios, where different businesses might need to have their own record of their respective inventories and be able to access them securely. <!--ID/SME: I replaced "view" because of sensory language. Perhaps another word works better? Display?-->
+While your application satisfied all the requirements specified at that time, its use cases didn't account for the need to accommodate multitenant scenarios, where different businesses might need to have their own display of their respective inventories and be able to access them securely.
 
 In this module, you'll explore how Azure AD helps you to address this need. While Azure AD natively supports multitenancy, integrating it into your existing application will require some changes to individual application components and data stores.
 
