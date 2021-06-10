@@ -26,9 +26,9 @@ quiz:
       isCorrect: false
       explanation: "Premium SSDs provide high performance, but don't offer the best performance of all the available disk types in Azure."
  
-  - content: "You are running application on Azure VM that requires 15,000 IOPS. You've provisioned a Azure VM with Standard_D8s_v3 tier, that provides 12,800 IOPS, P30 OS disk with 5,000 IOPS and two P30 data disks, each with 5,000 IOPS.Which of the following is true? "
+  - content: "You are running an application on an Azure VM that requires 15,000 IOPS. You've provisioned an Azure VM with the Standard_D8s_v3 tier, that provides 12,800 IOPS, P30 OS disk with 5,000 IOPS and two P30 data disks, each with 5,000 IOPS. Which of the following is true? "
     choices:
-    - content: "You have meet the demand of the application."
+    - content: "You have met the demands of the application."
       isCorrect: false
       explanation: "The maximum IOPS that application will get is limited by the virtual machine limits and is 12,800 IOPS."
     - content: "VM IO capping prevent application to receive the demanding IOPS."
