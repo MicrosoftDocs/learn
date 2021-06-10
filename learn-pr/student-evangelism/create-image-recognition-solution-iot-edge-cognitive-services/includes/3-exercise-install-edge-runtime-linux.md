@@ -37,6 +37,9 @@ Perform the following steps in the Azure Cloud Shell environment.
 
 ## Install IoT Edge for Linux
 
+> [!NOTE]
+> Go to the [Microsoft page](https://azure.microsoft.com/services/iot-edge), if you would like to know more about installing IoT Edge for Linux. 
+
 1. Open the terminal in your Linux computer. 
 
 2. Install the repository configuration that matches your device operating system.
