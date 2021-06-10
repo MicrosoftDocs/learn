@@ -87,20 +87,6 @@ Now that you understand how different performance indicators define the overall 
 | Availability | Only available for premium SSDs 512 GiV and smaller | Only available for premium SSDs larger than 512 GiB | Available to all premium SSD sizes                                     |
 | Enablement   | Enabled by default on eligible disks                | Must be enabled by user                             | User must manually change their ties                                   |
 
-
-some tekst
-
-| Counter | Description | PerfMon | Iostat |
-| --- | --- | --- | --- |
-| IOPS or transactions per second | Number of I/O requests issued to the storage disk per second | Disk Reads/sec; Disk Writes/sec | tps; r/s; w/s |
-| Disk reads and writes | % of reads and write operations performed on the disk | % Disk Read Time % Disk Write Time | r/s; w/s |
-| Throughput | Amount of data read from or written to the disk per second | Disk Read Bytes/sec; Disk Write Bytes/sec | kB_read/s; kB_wrtn/s |
-| Latency | Total time to complete a disk IO request | Average Disk; sec/Read; Average disk; sec/Write | await; svctm |
-| IO size | Size of I/O requests issued to the storage disks | Average Disk Bytes/Read;  Average Disk Bytes/Write | avgrq-sz |
-| Queue Depth | Number of outstanding I/O requests waiting to be read from or written to the storage disk | Current Disk Queue Length | avgqu-sz |
-| Maximum Memory | Amount of memory required to run the application smoothly | % Committed Bytes in Use | Use vmstat |
-| Maximum CPU | Amount of CPU required to run the application smoothly | % Processor time | %util |
-
 ### Disk striping
 
 You can improve the performance of the application if you choose multiple disks and stripe them together to get a combined higher IOPS and throughput limit. You can implement striping on Windows by using the Storage Spaces functionality, and on Linux by using Multiple Disk and Device Management (MDADM).
@@ -123,4 +109,3 @@ For some workloads, a high disk queue depth is acceptable, but for others it sho
 Azure queues I/O requests when reads or writes are requested faster than the disk can process them. When I/O requests are queued, the total amount of time it takes to read or write data to the disk will be greater. For example, if your application writes 300 IOPS and the disk is capable of accepting 500+ IOPS, then the queue depth doesn't occur.  However, if your application sends I/O requests that are greater than the disk's IOPS limit, Azure will use the queue depth.
 
 Most applications don't allow you to change the queue depth because incorrect tuning of the queue depth can degrade the performance of the application. Applications that provide settings to tune the queue depth also allow you to configure their multithreading. For example, the MAXDOP (maximum degree of parallelism) setting in SQL Server specifies how many cores to use for running the query.
-
