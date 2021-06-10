@@ -1,11 +1,3 @@
-The team is meeting to put together a job description for an SRE. They've come to a common understand of what an SRE is. Now, they want to define some specific skills.
-
-**Tim:** To my mind, an SRE needs to be able to anticipate problems and the only way to do that is to use a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
-
-**Mara:** Let's take a look at what it does.
-
-## Application Insights
-
 [Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) analyzes the performance of your web application and can warn you about potential problems.
 
 This feature requires no special setup other than configuring your app for Application Insights (on ASP.NET, Java, or Node.js, and in the web page code). It's active once your app generates enough telemetry.
@@ -155,9 +147,3 @@ The **What** field describes:
 The table compares the poorly performing set with the average behavior of all other events.
 
 Select the links to open **Metric Explorer** and **Search** to find relevant reports that are filtered on the time and properties of the slow performing set. Then modify the time range and filters to explore the telemetry.
-
-## The next skill set
-
-**Andy:** OK, so what about Tim's point that we're going to need ongoing monitoring?
-
-**Amita:** Good point. Let's talk about that next.

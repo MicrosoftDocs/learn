@@ -4,42 +4,13 @@ In this module, you learn about managing site reliability, which includes teleme
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll be able to:
 
-- Learn how site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production.
-- Learn how Application Insights analyzes the performance of your web application and can warn you about potential problems.
-- Learn about processes that you can implement to monitor site reliability.
-- See how blameless postmortems encourage a "just culture" that balances safety and accountability.
+- Describe how site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production.
+- Describe how Application Insights analyzes the performance of your web application and can warn you about potential problems.
+- List the processes that you can implement to monitor site reliability.
+- Build a "just culture" that balances safety and accountability.
 
 ## Prerequisites
 
-The modules in this learning path and previous learning paths form a progression.
-
-You can take just this module, but if you want to follow the progression from the beginning, be sure to first complete these learning paths:
-
-* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
-* [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
-* [Automate your deployments with Azure DevOps](../../../paths/automate-deployments-azure-devops/index.yml?azure-portal=true)
-
-We also recommend that you start at the beginning of the [Capture feedback and monitoring data to continuously improve your software](../../../paths/capture-feedback-monitoring/index.yml?azure-portal=true) learning path.
-
-## Meet the team
-
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
-
-:::row:::
-
-[!include[](../../shared/includes/meet-andy-short-col.md)]
-
-[!include[](../../shared/includes/meet-amita-short-col.md)]
-
-[!include[](../../shared/includes/meet-tim-short-col.md)]
-
-[!include[](../../shared/includes/meet-mara-short-col.md)]
-
-[!include[](../../shared/includes/meet-irwin-short-col.md)]
-
-:::row-end:::
-
-Mara has prior experience with DevOps. She's helping the team adopt a more streamlined process by using Azure DevOps.
+None

@@ -5,12 +5,6 @@ In this part, you'll learn:
 * How Azure Monitor and Application Insights enable you to implement continuous monitoring.
 * How IT Service Management Connector can help you implement a ticketing system.
 
-## The meeting
-
-**Tim:** I know we've covered how we'll learn what our testers think of the website, but I need to know how the website impacts the infrastructure. I need metrics and logs for both. Of course, it needs to fit in with our pipeline. I've been doing a little research. Are any of you familiar with Azure Monitor?
-
-**Amita:** Tell us more.
-
 ## What is continuous monitoring?
 
 The team wants to monitor the website and the infrastructure during the beta test. Tim has done some research and learned a few things.
@@ -51,7 +45,7 @@ With Azure Monitor, you can collect:
 * Monitoring data for VMs. ([Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview?azure-portal=true))
 * Monitoring data for AKS clusters. ([Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview?azure-portal=true))
 
-As you learned in the [Automate your deployments with Azure DevOps](../../../paths/automate-deployments-azure-devops/index.yml?azure-portal=true) learning path, _infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application. Because you describe your infrastructure by using code, you can follow the same development, testing, and versioning schemes that DevOps teams use for applications.
+_Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application. Because you describe your infrastructure by using code, you can follow the same development, testing, and versioning schemes that DevOps teams use for applications.
 
 To enable monitoring by using an infrastructure as code approach, you can use:
 
@@ -242,9 +236,3 @@ You can integrate Azure monitoring tools with ITSMC to:
 * Pull incident and change request data from ITSM tools into Azure Log Analytics.
 
 Azure monitoring tools enable you to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. It makes more sense to implement a ticketing system with the ITSMC. That way, instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
-
-## The decision
-
-**Tim:** Monitoring will make it easy for us to fix problems if they crop up. But it will also give me an idea of how to plan for the future as we scale up. It would be nice to have an idea of what I'll need before the fact and not after.
-
-**Andy:** Go for it.
