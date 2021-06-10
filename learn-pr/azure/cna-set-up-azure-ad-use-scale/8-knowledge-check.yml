@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Managed identities represent Azure resources, not applications registered in Azure AD."
     - content: "service principal"
       isCorrect: true
-      explanation: "Correct. A service principal provides authentication and authorization functionality and also references the application object."
+      explanation: "Correct. A service principal provides authentication and authorization functionality and references the application object."
     - content: "user"
       isCorrect: false
       explanation: "Incorrect. User objects are used for interactive logons, rather than for applications registered in Azure AD."
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. This is the endpoint for a single-tenant app."
     - content: "https://login.microsoftonline.com/common"
       isCorrect: true
-      explanation: "Correct. With a multitenant app, you cannot determine ahead of time which tenant will be used, so you need to use the **https://login.microsoftonline.com/common** endpoint, which serves all Azure AD tenants."
+      explanation: "Correct. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the **https://login.microsoftonline.com/common** endpoint, which serves all Azure AD tenants."
