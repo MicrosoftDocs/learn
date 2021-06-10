@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-modeling-secured-environment.3-gather-data
+metadata:
+  title: Gather security assessment answers for the client application to be used in a PAW
+  description: Capture the state of security of the client application by collecting the answers to each question.
+  ms.date: 05/27/2021
+  author: rodrigosantos
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Gather data
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-gather-data.md)]

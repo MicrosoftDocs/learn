@@ -7,12 +7,11 @@ We reviewed the basics of how to enable WSL, install a Linux distribution, move 
 We encourage you to keep learning. More courses are coming soon. In the meantime, check out these related resources:
 
 - [WSL blog and "what's new" announcements](https://blogs.msdn.microsoft.com/commandline/tag/wsl/)
-- [FAQ about WSL](https://docs.microsoft.com/windows/wsl/faq)
-- [Create a custom Linux distribution for WSL](https://docs.microsoft.com/windows/wsl/build-custom-distro)
-- [WSL launch settings and configuration options](https://docs.microsoft.com/windows/wsl/wsl-config#set-wsl-launch-settings)
+- [FAQ about WSL](/windows/wsl/faq)
+- [Create a custom Linux distribution for WSL](/windows/wsl/build-custom-distro)
+- [WSL launch settings and configuration options](/windows/wsl/wsl-config#set-wsl-launch-settings)
 - [Git version control in Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)
 - [Nodemon npm module for automatic restart](https://www.npmjs.com/package/nodemon)
-- [Build Node.js Express apps with Microsoft Graph](https://docs.microsoft.com/graph/tutorials/node)
+- [Build Node.js Express apps with Microsoft Graph](/graph/tutorials/node)
 - [Request new features for WSL on UserVoice, or vote for your favorites](https://github.com/microsoft/wsl)
 - [WSL GitHub issue tracker](https://github.com/Microsoft/WSL/issues)
- 

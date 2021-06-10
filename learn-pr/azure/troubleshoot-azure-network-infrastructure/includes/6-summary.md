@@ -13,8 +13,8 @@ Azure Network Watcher enables engineers to *monitor*, *diagnose*, and *gain insi
 
 ## Learn more
 
-- [Azure Network Watcher Agent virtual machine extension for Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-nwa)
-- [Network Watcher Agent virtual machine extension for Linux](https://docs.microsoft.com/azure/virtual-machines/linux/extensions-nwa)
-- [Visualizing network security group flow logs with Power BI](https://docs.microsoft.com/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi)
-- [Visualize Azure Network Watcher NSG flow logs using open-source tools](https://docs.microsoft.com/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-open-source-tools)
-- [Network Performance Monitor supported regions](https://docs.microsoft.com/azure/azure-monitor/insights/network-performance-monitor#supported-regions)
+- [Azure Network Watcher Agent virtual machine extension for Windows](/azure/virtual-machines/windows/extensions-nwa)
+- [Network Watcher Agent virtual machine extension for Linux](/azure/virtual-machines/linux/extensions-nwa)
+- [Visualizing network security group flow logs with Power BI](/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi)
+- [Visualize Azure Network Watcher NSG flow logs using open-source tools](/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-open-source-tools)
+- [Network Performance Monitor supported regions](/azure/azure-monitor/insights/network-performance-monitor#supported-regions)

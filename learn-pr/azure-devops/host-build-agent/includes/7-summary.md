@@ -59,7 +59,6 @@ Congratulations. You've completed the final module in the _Build applications wi
 * Setting up a project in Azure Pipelines and publishing build artifacts to the pipeline.
 * Implementing a code workflow for the team members that uses Git and GitHub.
 * Running automated tests, such as unit and code coverage tests, when the pipeline runs.
-* Scanning for potential security vulnerabilities and related issues in both your code and the third-party components you use.
 * Managing your own packages in the pipeline and connecting them to your applications.
 * Using your own build agents when Microsoft-hosted agents don't meet your needs.
 
@@ -92,4 +91,4 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](../../../paths/administer-infrastructure-resources-in-azure/index.yml?azure-portal=true) learning path.
 
-We also mentioned how you can use Azure Resource Manager templates to automate the process of creating build agents. To learn more about Resource Manager templates, see [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates?azure-portal=true).
+We also mentioned how you can use Bicep to automate the process of creating build agents. To learn more about Bicep, see [Deploy and manage resources in Azure by using Bicep](/learn/paths/bicep-deploy?azure-portal=true).

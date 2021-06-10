@@ -1,4 +1,4 @@
-NASA's STEM efforts aren't just about getting more people interested in joining NASA or researching space, just like Microsoft's efforts to make coding and cloud services accessible aren't just about getting more developers into the industry. The goal is to inspire people to persist through solving tough problems, tackle what they never believed possible, and know about the tools and support that can help them along the way. 
+NASA's STEM efforts aren't just about getting more people interested in joining NASA or researching space, just like Microsoft's efforts to make coding and cloud services accessible aren't just about getting more developers into the industry. The goal is to inspire people to persist through solving tough problems, tackle what they never believed possible, and know about the tools and support that can help them along the way.
 
 The goal: To help YOU discover your passions, and offer you the support and inspiration to make them your reality.
 
@@ -14,4 +14,4 @@ In the July 2020 webinar, we heard from some of NASA's top leaders in science an
 
 ## Goal: To inspire
 
-The ultimate outcome of NASA STEM programs, and collaborations such as these Microsoft Learn learning paths, is to inspire people (like you) to look deeper into what makes programs such as Artemis possible. It's the teamwork, dedication, persistence, and belief that YOU can do anything - YOU can overcome any obstacle, even the ones you don't know exist. If we can all internalize and believe that, then the solutions we can design to improve our Earth, societies, and futures, have endless possibilities.
+The ultimate outcome of NASA STEM programs, and collaborations such as these Microsoft Learn learning paths, is to inspire people (like you) to look deeper into what makes programs such as Artemis possible. It's the teamwork, dedication, persistence, and belief that YOU can do anything - YOU can overcome any obstacle, even the ones you don't know exist. If we all internalize and believe that, then the solutions we design to improve our Earth, societies, and futures, have endless possibilities.

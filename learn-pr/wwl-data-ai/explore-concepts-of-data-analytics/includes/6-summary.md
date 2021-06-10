@@ -8,7 +8,7 @@ You have explored:
 
 ## Learn more
 
-- [Create reports and dashboards in Power BI - documentation](https://docs.microsoft.com/power-bi/create-reports/)
+- [Create reports and dashboards in Power BI - documentation](/power-bi/create-reports/)
 - [Azure Databricks](https://azure.microsoft.com/services/databricks/)
-- [Azure Cognitive Services](https://azure.microsoft.com/services/databricks/)
-- [Extract, transform, and load (ETL)](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl)
+- [Azure Cognitive Services](/azure/cognitive-services/what-are-cognitive-services)
+- [Extract, transform, and load (ETL)](/azure/architecture/data-guide/relational-data/etl)

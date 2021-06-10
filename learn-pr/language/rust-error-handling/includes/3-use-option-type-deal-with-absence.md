@@ -1,4 +1,4 @@
-The Rust standard library provides an `Option<T>` enum to be used when the absence of a value is a possibility. `Option<T>` is widely used in Rust code because it encodes the very common scenario in which a value could be something or it could be nothing.
+The Rust standard library provides an `Option<T>` enum to be used when the absence of a value is a possibility. `Option<T>` is widely used in Rust code. It's useful for working with values that might exist or that might be empty.
 
 In many other languages this would be modeled using `null` or `nil`, but Rust doesn't use `null` outside of code that interoperates with other languages. This means Rust is explicit about when a value is optional. While in many languages, a function that takes a `String` might actually take either a `String` or `null`, in Rust, that same function can only take actual `String`s. If you want to model an optional string in Rust, you need to explicitly wrap it in an `Option` type: `Option<String>`. 
 
@@ -49,7 +49,7 @@ In practice, you must decide how your program behaves depending on what enum var
 
 ## Pattern matching
 
-Rust has an extremely powerful control flow operator called `match`, which you can use to compare a value against a series of patterns and then execute code based on which pattern matches.
+There's a powerful operator in Rust that's called `match`. You can use it to control the flow of your program by providing patterns. When `match` finds a matching pattern, it runs code that you supply with that pattern.
 
 ```rust
 let fruits = vec!["banana", "apple", "coconut", "orange", "strawberry"];
@@ -75,6 +75,8 @@ In the preceding code, we iterate through the same indexes from our previous exa
 
 Because  the `fruits` vector contains `&str` elements, we know that the result of this expression is of type `Option<&str>`. You then use a *match* expression against the `Option` value and define a course of action for each of its variants. Rust refers to those branches as *match arms*, and each arm can handle one possible outcome for the matched value.
 
+The first arm introduces a new variable, `fruit_name`. This variable matches any value inside a `Some` value. The scope of `fruit_name` is limited to the *match* expression, so it doesn't make sense to declare `fruit_name` before introducing it in `match`.
+
 You can refine your *match* expression even further to act differently, depending on the values inside a `Some` variant. For example, you could stress the fact that coconuts are awesome by running the following:
 
 ```rust
@@ -89,7 +91,7 @@ for &index in [0, 2, 99].iter() {
 ```
 
 > [!NOTE]
-> The first pattern in the match is `Some(&"cocounut")` (note the `&` before the string literal). This is because `fruits.get(index)` returns an `Option<&&str>` or an option of a reference to a string slice.
+> The first pattern in the match is `Some(&"coconut")` (note the `&` before the string literal). This is because `fruits.get(index)` returns an `Option<&&str>` or an option of a reference to a string slice.
 > Removing `&` in the pattern would mean we are trying to match against an `Option<&str>` (an optional string slice *not* an optional reference to a string slice). We haven't covered references so this 
 > might not make full sense right now. For now, just remember the `&` is making sure the types line up properly.
 
@@ -115,27 +117,28 @@ Whenever you use the *match* expression, keep the following rules in mind:
 
 Rust offers a convenient way to test whether a value conforms with a single pattern.
 
-Consider the following example, which matches on an `Option<u8>` value but wants to execute code only if the value is *7*.
+In the following example, the input to `match` is an `Option<u8>` value. The `match` expression should only run code if that input value is *7*.
 
 ```rust
-let some_number: Option<u8> = Some(7);
-match some_number {
+let a_number: Option<u8> = Some(7);
+match a_number {
     Some(7) => println!("That's my lucky number!"),
     _ => {},
 }
 ```
 
-We want to do something with the `Some(7)` match but ignore other `Some<u8>` values or the `None` variant. You can add the `_` (underscore) wildcard pattern after all other patterns to match *anything else*, and it's used to satisfy the compiler demands for exhausting match arms.
+In this case, we'd like to ignore the `None` variant and all `Some<u8>` values that don't match `Some(7)`. Wildcard patterns are useful for this type of situation. You can add the `_` (underscore) wildcard pattern after all other patterns to match *anything else*, and it's used to satisfy the compiler demands for exhausting match arms.
 
-You could write this in a shorter way by using an *if let* expression. The following code behaves the same as the previous one:
+To condense this code, you can use an *if let* expression:
 
 ```rust
-if let Some(7) = some_number {
+let a_number: Option<u8> = Some(7);
+if let Some(7) = a_number {
     println!("That's my lucky number!");
 }
 ```
 
-An *if let* expression takes a pattern and an expression separated by an equal sign. If the pattern matches, the *if* block is executed. The nice thing about *if let* expressions is that you don't need all the boilerplate code of a *match* expression when you're interested in a single pattern to match against.
+An *if let* operator compares a pattern with an expression. If the expression matches the pattern, the *if* block is executed. The nice thing about *if let* expressions is that you don't need all the boilerplate code of a *match* expression when you're interested in a single pattern to match against.
 
 ## Use `unwrap` and `expect`
 

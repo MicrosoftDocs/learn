@@ -11,9 +11,9 @@ In this module you learned how to:
 
 Take your interest further with:
 
-- [Overview of device management with IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-management-overview)
-- [Automatic IoT device and module management using the Azure portal](https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management)
-- [Automatic IoT device and module management using the Azure CLI](https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management-cli)
+- [Overview of device management with IoT Hub](/azure/iot-hub/iot-hub-device-management-overview)
+- [Automatic IoT device and module management using the Azure portal](/azure/iot-hub/iot-hub-automatic-device-management)
+- [Automatic IoT device and module management using the Azure CLI](/azure/iot-hub/iot-hub-automatic-device-management-cli)
 
 And look for additional Learn modules covering Azure IoT Hub.
 To complete this module, and earn your reward, complete a final knowledge check.

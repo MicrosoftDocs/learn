@@ -19,4 +19,4 @@ These questions allow you to:
 |**Describe your disaster recovery plans.**|<ul><li>Availability and resiliency test cadence.</li><li>Recovery and restore audit cadence.</li><li>Hot-sites and other high-availability mechanisms.</li></ul>|
 
 > [!TIP]
-> Check out [Azure backup](https://docs.microsoft.com/azure/backup/guidance-best-practices) for tips on securely backing up your infrastructure.
+> Check out [Azure backup](/azure/backup/guidance-best-practices) for tips on securely backing up your infrastructure.

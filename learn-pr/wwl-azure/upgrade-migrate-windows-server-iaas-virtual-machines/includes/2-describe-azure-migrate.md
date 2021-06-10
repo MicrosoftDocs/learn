@@ -19,7 +19,7 @@ Azure Migrate components include:
   - Servers. On-premises servers are assessed and migrated to Azure VMs.
   - Databases. On-premises databases are assessed and migrated to Azure SQL Database or to an Azure SQL Database–managed instance.
   - Web applications. On-premises web applications are assessed and migrated to Azure App Service by using the Azure App Service Migration Assistant.
-  - Virtual desktops. On-premises Virtual Desktop Infrastructure (VDI) is assessed and migrated to Windows Virtual Desktop in Azure.
+  - Virtual desktops. On-premises Virtual Desktop Infrastructure (VDI) is assessed and migrated to Azure Virtual Desktop.
   - Data. Large volumes of data are migrated to Azure by using Azure Data Box products.
 
 The following table describes the different migration tools you can use, depending on the migration scenario.

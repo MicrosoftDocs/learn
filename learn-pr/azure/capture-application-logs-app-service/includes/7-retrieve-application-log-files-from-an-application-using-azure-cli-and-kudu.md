@@ -1,4 +1,4 @@
-Your new Web app for Contoso Fashions is nearly ready for some initial pilot testing, and you'd like to review and analyze all the various trace messages that have been saved to your app's log files. Before you can do any review, you need to know how to find the logged information.
+Your new Web App for Contoso Fashions is nearly ready for some initial pilot testing, and you'd like to review and analyze all the various trace messages that have been saved to your app's log files. Before you can do any review, you need to know how to find the logged information.
 
 In this unit, you'll retrieve log files ready for later offline analysis.
 
@@ -39,13 +39,15 @@ In this step, you'll use Azure CLI to retrieve file system logs to your cloud sh
 
 In this step, to download file system logs to your computer, you'll use the Kudu console.
 
-1. On the Azure portal menu, or from the **Home** page, select **App Services**.
+1. On the Azure portal menu, or from the **Home** page, select **App Services**. The **App Services** pane appears.
 
-1. In the **App Services** list, select **contosofashions\<_your-number_\>**.
+1. In the **App Services** list, select **contosofashions\<_your-number_\>**. The **contosofashions\<_your-number_\>** App Service pane appears.
 
-1. In the **Development Tools** section, select **Advanced Tools**, and on the Advanced Tools pane, select **Go**.
+1. In the middle menu pane, under**Development Tools**, select **Advanced Tools**.  The **Advanced Tools** pane appears.
 
-1. In the new **Kudu Services** tab, in the **Kudu** menu, select **Debug console**, and then select **CMD**.
+1. Select **Go**. The *Kudu Services* window appears.
+
+1. In the top menu bar, select **Debug console**, and then select **CMD**.
 
 1. In the file explorer section, select **LogFiles**.
 
@@ -59,11 +61,13 @@ In this step, to download file system logs to your computer, you'll use the Kudu
 
 In this procedure, you'll open the verbose logs that were saved into your Azure Blob Storage container, and then search for specific log entries.
 
-1. On the Azure portal menu or from the **Home** page, select **Storage accounts**.
+1. On the Azure portal menu or from the **Home** page, select **Storage accounts**. The **Storage accounts** pane appears.
 
-1. In the **Storage accounts** list, select **sacontosofashions\<_your-number_\>**, and then in the top section of the storage account pane, select **Storage Explorer (Preview)**.
+1. In the **Storage accounts** list, select **sacontosofashions\<_your-number_\>**.
 
-1. In the **Storage Explorer (preview)** pane, expand **BLOB CONTAINERS**, and then select **asplogs**.
+1. In the middle menu pane, select **Storage Explorer (preview)**. The **Storage Explorer (preview)** pane appears.
+
+1. In the *Storage Explorer* menu pane, expand **BLOB CONTAINERS**, and then select **asplogs**.
 
 1. In the container pane, double-click **contosofashions\<_your-number_\>**, then double-click each of the year, month, and date folders.
 

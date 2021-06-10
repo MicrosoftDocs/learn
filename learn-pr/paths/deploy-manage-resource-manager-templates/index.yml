@@ -37,6 +37,7 @@ products:
 modules:
 - learn.azure.create-resource-manager-template-vs-code
 - learn.azure.resource-manager-template-reuse
+- learn.arm-template-whatif
 - learn.arm-template-test
 - learn.azure.deploy-templates-command-line-github-actions
 - learn.azure.extend-resource-manager-template-deployment-scripts

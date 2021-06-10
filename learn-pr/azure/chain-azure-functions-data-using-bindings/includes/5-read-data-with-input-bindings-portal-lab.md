@@ -1,4 +1,4 @@
-jImagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
+Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
 
 ![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/5-find-bookmark-flow-small.png)
 
@@ -74,7 +74,7 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     | Setting | Value | Description |
     |---|---|---|
     | Database id | Select **Create new**, and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
-    | Database max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
+    | Database Max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
     | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience, because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
