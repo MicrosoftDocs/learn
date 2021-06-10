@@ -1,33 +1,32 @@
-In this exercise we will show how Change Feed can maintain referential integrity between two containers in Azure Cosmos DB. In this scenario we will use Change Feed to listen to the productCategory container. When the name of a product category is updated, Change Feed will capture the updated name and we will take that name and update all the products in that category with the new name. We will then change the name back just so we can see the change happening again.
+In this exercise, you will see how Change Feed can maintain referential integrity between two containers in Azure Cosmos DB. In this scenario, you use Change Feed to listen to the productCategory container. When you update the name of a product category, Change Feed captures the updated name and updates all the products in that category with the new name.
 
-For this exercise we will complete the following steps:
+For this exercise, you will complete the following steps:
 
-- Start Azure Cloud Shell and open VS Code to show our code for Change Feed.
+- Start Azure Cloud Shell and open Visual Studio Code to show our code for Change Feed.
 - Complete some C# code to highlight key concepts to understand.
 - Start Change Feed Processor so it begins to listen to the productCategory container.
-- Query the product container for the category we are changing the name of and the number of products in that category.
-- Update the category name and watch change feed propagate the changes to the product container
+- Query the product container for the category you're changing the name of and the number of products in that category.
+- Update the category name and watch change feed propagate the changes to the product container.
 - Query the new product container with the new category name and count the number of products to make sure they were all updated.
 - Change the name back and watch change feed propagate the changes back.
 
 ## Start Azure Cloud Shell and open VS Code
 
-Follow these steps to navigate to our code that we will view and update for Change Feed.
+Follow these steps to navigate to the code that you will view and update for Change Feed.
 
-1. Use Azure Cloud Shell from the current page here on the right or open Azure Cloud Shell from the Azure portal for a full screen experience.
-1. Navigate to the directory where our project is by changing the current directory, if needed, to the one where our project is
+1. In Cloud Shell, change the current directory to the location of the project.
 
     ```bash
     cd mslearn-model-partition-data-azure-cosmos-db/modeling
     ```
 
-1. Open VS Code to our Program.cs file
+1. Open VS Code to the Program.cs file.
 
     ```bash
     code Program.cs
     ```
 
-1. You should now see this in Azure Cloud Shell
+1. You should now see the following code in Cloud Shell.
 
     :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code showing using statements, the namespace for the app and the start of the program class":::
 
@@ -35,13 +34,14 @@ Follow these steps to navigate to our code that we will view and update for Chan
 
 1. Next navigate to the function that starts the Change Feed Processor.
 1. Type **CTRL + G**, then type in **613** to go to that line in the file.
-1. You should now see this.
+1. You should now see the following code.
 
     :::image type="content" source="../media/5-change-feed-function.png" lightbox="../media/5-change-feed-function.png" alt-text="Cloud Shell showing the function where change feed has been implemented":::
 
-1. Notice on lines 588 and 589 two container references. We need to update those with the correct container names. Change Feed works by creating an instance of Change Feed Processor on the container reference. In this case we are watching for changes to the productCategory container so replace **{container to watch}** with **productCategory**.
-1. When a product category name gets updated we need to update every product in that category with the new product category name. So we need a container reference to the product container. Replace **{container to update}** with **product**.
-1. The *leases container* below that works like a check point on the container. It knows what has been updated since the last time it was checked by the Change Feed Processor.
+1. Notice on lines 588 and 589 two container references. We need to update those with the correct container names. Change Feed works by creating an instance of Change Feed Processor on the container reference. In this case, we are watching for changes to the productCategory container.
+1. Replace **{container to watch}** with **productCategory**.
+1. Replace **{container to update}** with **product**. When a product category name is updated, every product in that category needs to be updated with the new product category name.
+1. Review the *leases container* line below the container to watch and update lines. The leases container works like a check point on the container. It knows what has been updated since the last time it was checked by the Change Feed Processor.
 1. When change feed sees a new change it calls a delegate and passes the changes in a read-only collection.
 1. Navigate to **line 617**. Here we need to add some code that will be called when change feed has a new change that needs to be processed.
 1. Next we will take the following code and paste it into our Change Feed function. By default, Change Feed runs every second. In scenarios where there are a lot of inserts or updates made in the watched container, the delegate may have more than one change which is why the delegate `input` is typed as `IReadOnlyCollection`.

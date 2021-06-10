@@ -5,7 +5,7 @@ The data returned is typical for a web page returned to a user who clicks on a p
 
 ## Set up environment
 
-In Cloud Shell, copy and paste the following commands. These commands will clone a GitHub repository, run a script which will create a new Cosmos DB account, then build and start the app you will use to populate the database and complete the exercises. This should take less than 10 minutes to complete.
+In Cloud Shell, copy and paste the following commands. These commands clone a GitHub repository, run a script which creates a new Cosmos DB account, then builds and starts the app you use to populate the database and complete the exercises. The build should take less than 10 minutes to complete.
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-model-partition-data-azure-cosmos-db.git
@@ -151,4 +151,4 @@ In the relational model, you ran five queries to get the name of the category, a
 
 It's not just the cost that is less with a NoSQL design like this model. This type of design is also faster because it only requires a single request. Lastly, the data itself is served in the shape that it is likely to be rendered in on a web page. This means less code to write and maintain downstream in our ecommerce application.
 
-When you denormalize data, you produce simpler, more efficient queries for your e-commerce application. All of the data needed by your application is stored in a single container and can be fetched with a single query. This type of data modeling can provide huge benefits in both simplicity, speed and cost when dealing with high concurrency queries.
+When you denormalize data, you produce simpler, more efficient queries for your e-commerce application. All of the data needed by our application is stored in a single container and can be fetched with a single query. This type of data modeling can provide huge benefits in both simplicity, speed and cost when dealing with high concurrency queries.
