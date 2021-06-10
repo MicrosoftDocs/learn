@@ -15,7 +15,7 @@ In this unit, you explore some of the ways you can build a monitoring and status
 
 Here's an example dashboard:
 
-![Screenshot of an example Monitoring and Analytics dashboard.](../media/3-azure-dashboards.png)
+:::image type="content" source="../media/3-azure-dashboards.png" alt-text="A screenshot of an example Monitoring and Analytics dashboard.":::
 
 ### Advantages of Azure dashboards
 
@@ -47,7 +47,7 @@ Azure dashboards do not provide:
 
 [Views in Azure Monitor](/azure/azure-monitor/platform/view-designer?azure-portal=true) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
 
-![A screenshot of Azure Monitor workbooks](../media/3-azure-monitor-views.png)
+:::image type="content" source="../media/3-azure-monitor-views.png" alt-text="A screenshot showing Azure Monitor workbooks.":::
 
 ### Advantages of Azure Monitor workbooks
 
@@ -76,7 +76,7 @@ Azure Monitor workbooks do not:
 
 Here's a diagram to give you a sense of what a workbook looks like.
 
-![Composite screenshot of example Workbook showing pages for Analysis of Page Views, Usage, and Time Spent on Page.](../media/3-application-insights-workbooks.png)
+:::image type="content" source="../media/3-application-insights-workbooks.png" alt-text="A composite screenshot of an example Workbook showing pages for Analysis of Page Views, Usage, and Time Spent on Page.":::
 
 ### Advantages of Application Insights workbooks
 
@@ -103,7 +103,7 @@ Application Insights workbooks do not:
 
 Here's what Power BI looks like:
 
-![Screenshot of example Power BI dashboard showing monitoring for IT Operations.](../media/3-power-bi.png)
+:::image type="content" source="../media/3-power-bi.png" alt-text="A screenshot of an example Power BI dashboard showing monitoring for IT Operations.":::
 
 ### Advantages of Power BI
 
@@ -129,7 +129,7 @@ Power BI does not:
 
 Here's what Grafana looks like:
 
-![A screen capture of Grafana](../media/3-graphana.png)
+:::image type="content" source="../media/3-graphana.png" alt-text="A screenshot showing Grafana.":::
 
 ### Advantages of Grafana
 
