@@ -9,7 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 6 # dummy number at present
+durationInMinutes: 4 # dummy number at present
 content: |
 quiz:
   questions:

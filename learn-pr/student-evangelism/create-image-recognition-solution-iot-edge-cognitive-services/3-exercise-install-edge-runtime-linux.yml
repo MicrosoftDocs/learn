@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]
