@@ -47,8 +47,8 @@ Azure AD requires the App ID URI of the app to be globally unique. For a single-
 
 In a single-tenant app, sign-in requests are sent to the tenant's sign-in endpoint. For example, for **contoso.com**, the corresponding endpoint is `https://login.microsoftonline.com/contoso.com`. Effectively, requests targeting that endpoint allow sign-in of users or guests to the corresponding Azure AD tenant. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the `https://login.microsoftonline.com/common` endpoint, which serves all Azure AD tenants.
 
-### Add code to handle multiple issuer values
-<!--ID/SME: Consider using "manage" instead of "handle" because of sensory language, if it retains the meaning.-->
+### Add code to manage multiple issuer values
+
 Web applications and web APIs must be able to validate tokens from the Microsoft identity platform. This requires implementing logic that decides which issuer values are valid and which aren't, based on the tenant ID portion of the issuer value. For more detail, refer to the documentation referenced in the summary unit of this course.
 
 ### Include provisions to respond to user and admin consent
