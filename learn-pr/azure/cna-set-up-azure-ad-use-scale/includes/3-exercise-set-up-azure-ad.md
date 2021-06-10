@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of creating Azure AD-related entities, including an Azure AD tenant and user and group objects. You'll use these entities in the next exercises of this module to access an Azure AD-integrated instance of an Azure Database for PostgreSQL single server instance.
+This exercise takes you through the process of creating Azure AD-related entities, including an Azure AD tenant and user and group objects. You'll use these entities in the next exercises of this module to access an Azure AD-integrated instance of an Azure Database for PostgreSQL single server instance.
 
 In this exercise, you'll:
 
