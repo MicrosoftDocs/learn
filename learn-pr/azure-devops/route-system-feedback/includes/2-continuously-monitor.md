@@ -159,7 +159,7 @@ Here are ways you can view and track your telemetry data:
 
     Automatic alerts adapt to your app's normal patterns of telemetry and trigger when there's something outside the usual pattern. You can also set alerts on particular levels of custom or standard metrics.
 
-    :::image type="content" source="../media/2-alerts.png" alt-text="A screenshot showing Smart Detection in Application Insights".:::
+    :::image type="content" source="../media/2-alerts.png" alt-text="A screenshot showing Smart Detection in Application Insights.":::
 
 * [Application Map](/azure/azure-monitor/app/app-map?azure-portal=true)
 
@@ -177,7 +177,7 @@ Here are ways you can view and track your telemetry data:
 
     This feature enables you to analyze user segmentation and retention.
 
-    :::image type="content" source="./media/2-usage-analysis.png" alt-text="A screenshot showing Usage analysis in Application Insights.":::
+    :::image type="content" source="../media/2-usage-analysis.png" alt-text="A screenshot showing Usage analysis in Application Insights.":::
 
 * [Search](/azure/azure-monitor/app/diagnostic-search?azure-portal=true)
 
