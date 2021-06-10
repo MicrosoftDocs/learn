@@ -1,7 +1,13 @@
 #[derive(PartialEq, Debug)]
 // Declare Car struct to describe vehicle with four named fields
-// Corrected code: "mileage" u32 field removed, "age" tuple field added
-struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+// TO DO: Replace "mileage" field from previous exercise with "age" field
+// TO DO: "age" field should be tuple value of two fields: String, u32
+struct Car {
+    color: String,
+    motor: Transmission,
+    roof: bool,
+    mileage: u32,
+}
 
 #[derive(PartialEq, Debug)]
 // Declare enum for Car transmission type
@@ -17,18 +23,18 @@ fn car_quality (miles: u32) -> (String, u32) {
 
     // Declare and initialize the return tuple value
     // For a new car, set the miles to 0
-    // Corrected code: Use the "mut" keyword so quality can be changed later
+    // TO DO: Correct the quality declaration so we can change the values later
     let mut quality: (String, u32) = ("New".to_string(), 0);
 
     // Use a conditional expression to check the miles
     // If the car has accumulated miles, then the car is used
     if miles > 0 {
-        // Corrected code: Set the quality value for a used car
-        quality = ("Used".to_string(), miles);
+        // TO DO: Add the code to set the quality value for a used car
+        quality;
     }
 
-    // Corrected code: Return the completed tuple, no semicolon needed
-    return quality
+    // TO DO: Return the completed tuple
+    return 
 }
 
 //////////////////////////////////////////////////
@@ -44,16 +50,16 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
 
     // Create a new "Car" instance as requested
     // - Bind first three fields to values of input arguments
-    // Corrected code: "mileage" is replaced with "age"
-    // Corrected code: - Bind "age" to tuple returned from car_quality(miles)
+    // TO DO: Replace the "mileage" field from the previous exercise with an "age" field
+    // TO DO: The "age" field calls the "car_quality" function with the "miles" input argument 
     let car = Car {
         color: color,
         motor: motor,
         roof: roof,
-        age: car_quality(miles)
+        mileage: miles
     };
 
-    // Return new instance of "Car" struct, no semicolon needed
+    // Return new instance of "Car" struct
     return car
 }
 
@@ -61,52 +67,51 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
 
 fn main() {
     // Create car color array
-    // Corrected code: 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-    let colors = ["Blue", "Green", "Red", "Silver"];
+    // TO DO: Set the values: 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
+    let colors;
 
     // Initialize variables
     let (mut index, mut order) = (1, 1);
     
     // Declare the car type and initial values
-    // Corrected code: Declare "car" as mutable "Car" struct
-    // Corrected code: Declare "engine" as mutable "Transmission" enum
-    // Corrected code: When car has hard top, "roof" = true
-    let mut car: Car;
+    // TO DO: Create "car" as a "Car" struct
+    // TO DO: Create "engine" as a "Transmission" enum
+    // TO DO: Initialize "roof" to the value when the car has a hard top
+    let car = Car;
     let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut roof = true;  // convertible = false | hard top = true
-    let mut engine: Transmission;
-
+    let mut roof;  // convertible = false | hard top = true
+    let engine = Transmission;
+    
     //////////////////////////////////////////////////
 
     // Order 11 cars
-    // Corrected code: loop a "while" to fulfill orders for 11 cars
-    // Use "order" variable, initialized to 0, loop from 0 through 10 
-    while order <= 11 {
+    // TO DO: Replace "loop expression" - loop 11 times, use "order" variable
+    loop expression {
 
-        //////////////////////////////////////////////////        
-        
+        //////////////////////////////////////////////////
+
         // Set car transmission type
         engine = Transmission::Manual;
 
         // Order the cars, New are even numbers, Used are odd numbers
-        // Corrected code: Index into `colors` array, vary color for the orders
+        // TO DO: Fix indexing into `colors` array, vary color for the orders
         if index % 2 != 0 {
-            car = car_factory(colors[index-1].to_string(), engine, roof, miles);
+            car = car_factory(colors().to_string(), engine, roof, miles);
         } else { 
-            car = car_factory(colors[index-1].to_string(), engine, roof, 0);
+            car = car_factory(colors().to_string(), engine, roof, 0);
         }
 
         //////////////////////////////////////////////////
 
         // Display car order details 
         println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-
+        
         //////////////////////////////////////////////////
 
         // Change values for next loop
-        // Corrected code: Increment "order" by 1, and "miles" by 1,000
-        order = order + 1;
-        miles = miles + 1000;
+        // TO DO: Increment "order" by 1, and "miles" by 1,000
+        order;
+        miles;
         
         // Adjust the index for the car details
         // Order 11 cars, use index range of 0 -- 4, then repeat from 0
