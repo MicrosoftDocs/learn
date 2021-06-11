@@ -30,9 +30,9 @@ The following sample query alerts you when an anomalous number of resources is c
 
 ```kusto
 AzureActivity
-| where OperationName == &quot;Create or Update Virtual Machine&quot;or OperationName ==&quot;Create Deployment&quot;
-| where ActivityStatus == &quot;Succeeded&quot;
-| make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp inrange(ago(7d), now(), 1d) by Caller
+| where OperationName == 'Create or Update Virtual Machine' or OperationName == 'Create Deployment'
+| where ActivityStatus == 'Succeeded'
+| make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
 > [!Tip]
