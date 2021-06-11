@@ -19,7 +19,7 @@ Azure Active Directory supports two types of permissions: delegated permissions 
 
 * **Application permissions** are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons. Only an administrator can consent to application permissions.
 
-These API permissions can be assigned to your app registration from the Azure Portal.
+These API permissions can be assigned to your app registration from the Azure portal.
 
 ### Scopes
 

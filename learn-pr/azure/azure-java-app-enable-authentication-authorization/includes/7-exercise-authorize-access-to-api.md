@@ -2,7 +2,7 @@ In this exercise, you will configure the application with permissions and use MS
 
 ## Add Microsoft Graph permissions to App registration
 
-Web services secured by Azure Active Directory define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can can access data or act on a user's behalf, it must request these permissions to be approved by the users. These API permissions can be assigned to your app registration from the Azure Portal. Here are the steps to assign Microsoft Graph API permissions to your application.
+Web services secured by Azure Active Directory define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can can access data or act on a user's behalf, it must request these permissions to be approved by the users. These API permissions can be assigned to your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
 
 1. In the app's registration screen, click on the **API permissions** blade in the left to add access to the APIs that your application needs.
    - Click the **Add permissions** button and then,
@@ -15,7 +15,7 @@ Web services secured by Azure Active Directory define a set of permissions that 
 
    - Click on the **Add permissions** button in the bottom.
 
-   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the API permissions blade of an app registered with Azure Active Directory on Azure Portal":::
+   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the API permissions blade of an app registered with Azure Active Directory on Azure portal":::
 
 ## Run the application
 
@@ -23,7 +23,7 @@ You can try the Graph API call on the application that you have running from the
 
 1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you are not already signed in, you will be redirected to login with Azure Active Directory. On successful login, you should see a page as shown in the below image.
 
-    :::image type="content" source="../media/app-signin.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application":::
+    :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application":::
 
 2. Click the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 

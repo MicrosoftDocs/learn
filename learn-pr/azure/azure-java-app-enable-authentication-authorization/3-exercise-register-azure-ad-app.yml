@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-register-aad-app
+uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-register-azure-ad-app
 title: Exercise - Register an application with Azure AD
 metadata:
   unitType: exercise
   title: Exercise - Register an application with Azure AD
-  description: In this exercise, you will register a web application with Azure AD through the Azure Portal.
+  description: In this exercise, you will register a web application with Azure AD through the Azure portal.
   ms.date: 06/11/2021
   author: navyasric
   ms.author: nacanuma
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-exercise-register-aad-app.md)]
+  [!include[](includes/3-exercise-register-azure-ad-app.md)]

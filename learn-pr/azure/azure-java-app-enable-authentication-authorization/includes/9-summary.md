@@ -2,13 +2,13 @@ You have successfully secured your Java web application by allowing only the emp
 
  In this module, you learned how to enable authentication and authorization in a Java web application by:
 
-- Registering the web application with Azure Active Directory on the Azure Portal
+- Registering the web application with Azure Active Directory on the Azure portal
 - Adding sign in flows using Microsoft Authentication Library for Java (MSAL4J)
 - Accessing user information from the Microsoft Graph API with the help of Microsoft Authentication Library for Java (MSAL4J) and the Microsoft Graph SDK for Java
 
 ## Clean up
 
-You can delete your application registration on Azure Portal as follows:
+You can delete your application registration on Azure portal as follows:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. If you have access to multiple tenants, in the top menu, use the **Directory + subscription** filter to select the tenant in which you registered the application.
