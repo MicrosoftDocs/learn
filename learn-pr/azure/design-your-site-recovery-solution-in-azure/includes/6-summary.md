@@ -10,5 +10,5 @@ By the end of this module, you were able to put together a disaster recovery sol
 
 For more information about the services and capabilities to include in your BCDR plan, see the following articles.
 
-- [Disaster recovery for on-premises apps](https://docs.microsoft.com/azure/site-recovery/site-recovery-workload)
-- [Resiliency checklist for specific Azure services](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service)
+- [Disaster recovery for on-premises apps](/azure/site-recovery/site-recovery-workload)
+- [Resiliency checklist for specific Azure services](/azure/architecture/checklist/resiliency-per-service)

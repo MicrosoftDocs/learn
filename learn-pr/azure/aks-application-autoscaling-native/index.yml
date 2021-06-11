@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/aks-application-autoscaling-native.svg
 levels:
   - beginner
 roles:

@@ -26,7 +26,7 @@ In this step, to create an ASP.NET Web app using code from a GitHub repository, 
    az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --deployment-source-url $gitRepo
    ```
 
-1. Make a note of the random number suffix in your app name; this was generated to uniquely identify your app. The app may take several minutes to deploy.
+1. Make a note of the random number suffix in your app name. This was generated to uniquely identify your app. The app may take several minutes to deploy.
 
 1. To create a storage account, in Cloud Shell, run the following command.
 
@@ -42,36 +42,40 @@ In this step, you're going to use the Azure portal to enable app logging to the 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal toolbar, select **Subscriptions**, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
+1. On the Azure portal **Home** page, under **Navigate**, select **Subscriptions**. The **Subscriptions** pane for your *Microsoft Learn Sandbox* appears.
 
-1. On the Azure portal menu, or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
+1. In the directories list, select **Concierge Subscription**. The **Concierge Subscription** pane appears.
 
-1. On the Azure portal menu, or from the **Home** page, select **App Services**.
+1. On the Azure portal menu, or from the **Home** page, select **More services**, and then select **Resource groups**. The **Resource groups** pane appears.
 
-1. In the **App Services** list, select **contosofashions\<_your-number_\>**.
+1. Ensure that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
 
-1. In the left nav bar, from the **Overview** section, to open the home page for the **Contoso Fashions** website in a new browser tab, select the URL string (https&#58;//contosofashions\<_your-number_\>.azurewebsites.net).
+1. On the Azure portal menu, or from the **Home** page, select **App Services**. The **App Services** pane appears.
 
-You'll now set up the app logging.
+1. Select **contosofashions\<_your-number_\>**. The **contosofashions\<_your-number_\>** pane appears.
 
-1. Switch to the tab showing the Azure portal.
+1. In the **Essentials** section, to open the home page for the **Contoso Fashions** website, copy and paste the **URL** string (https&#58;//contosofashions\<_your-number_\>.azurewebsites.net) in a new browser tab. The *Contoso Fashions* home page should appear.
 
-1. On the left-hand side, scroll down to the **Monitoring** section, and then select **App Service logs**.
+   You'll now set up the app logging.
 
-1. Under **Application Logging (Filesystem)**, select **On**, and in the **Level** box dropdown, select **Error**.
+1. Switch to the tab showing the Azure portal showing your *App Service* pane for **contosofashions\<_your-number_\>**.
 
-1. Under **Application Logging (Blob)**, select **On**, and in the **Level** box dropdown, select **Verbose**.
+1. In the middle menu pane, scroll down to **Monitoring**, and then select **App Service logs**. The **App Service logs** pane appears.
 
-1. Select **Storage Settings**, and on the **Storage Accounts** panel, select **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
+1. Under **Application Logging (Filesystem)**, select **On**, and in the **Level** box dropdown list, select **Error**.
+
+1. Under **Application Logging (Blob)**, select **On**, and in the **Level** box dropdown list, select **Verbose**.
+
+1. Select **Storage Settings**, and on the **Storage Accounts** pane, select **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app. The **Containers** pane appears.
 
     If it says **Storage not configured**, select that text, and follow the previous directions.
 
-1. On the **Containers** panel, select **+ Container**. The **New container** panel appears.
+1. In the top menu bar, select **Container**. The **New container** pane appears.
 
 1. In the **Name** box, enter **asplogs**, and then select **Create**.
 
-1. Select **asplogs**, and then select **Select**.
+1. In the **Containers** pane, select **asplogs**, and then select **Select**.
 
 1. In the **Retention Period (Days)** box, enter **5**.
 
-1. To close the **logs** pane, and update the log settings, select **Save**.
+1. To close the **logs** pane, and update the log settings, in the top menu bar, select **Save**.

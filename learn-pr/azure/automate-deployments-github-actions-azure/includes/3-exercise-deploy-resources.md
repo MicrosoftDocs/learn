@@ -173,7 +173,7 @@ Next, you'll deploy an Azure Function App.
 
 Next, you need to deploy the Azure Logic App that sends notifications using a combination of Azure PowerShell and ARM templates.
 
-1. Make note of your GitHub repository (for example, https://github.com/[username]/serverless-full-stack-apps-azure-sql).
+1. Make note of your GitHub repository (for example, 'https://github.com/[username]/serverless-full-stack-apps-azure-sql').
 
 1. The following script clones the repository and deploys an Azure Logic App according to an ARM template.
 
@@ -183,7 +183,7 @@ Next, you need to deploy the Azure Logic App that sends notifications using a co
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $location = $resourceGroup.Location
     # Get the repository name
-    $appRepository = Read-Host "Enter your GitHub repository URL (for example, https://github.com/[username]/serverless-full-stack-apps-azure-sql):"
+    $appRepository = Read-Host "Enter your GitHub repository URL (for example, 'https://github.com/[username]/serverless-full-stack-apps-azure-sql'):"
     # Clone the repo - note this asks for the token
     $cloneRepository = git clone $appRepository
     # Get subscription ID 

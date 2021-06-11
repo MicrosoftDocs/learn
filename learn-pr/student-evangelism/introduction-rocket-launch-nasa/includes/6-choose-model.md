@@ -10,7 +10,7 @@ For a rocket launch, you don't have access to some possibly highly correlated da
 
 ### The machine learning algorithm cheat sheet
 
-A helpful resource for determining what kind of machine learning algorithm will be useful for your analysis is the [machine learning algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true).
+A helpful resource for determining what kind of machine learning algorithm will be useful for your analysis is the [machine learning algorithm cheat sheet](/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true).
 
 :::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Flowchart style diagram of the Algorithm cheat sheet." lightbox="../media/algorithm-cheat-sheet.png" loc-scope="Azure" border="false":::
 

@@ -1,4 +1,3 @@
-
 To address your company's business continuity and disaster recovery (BCDR) plan, there must be a full backup and restore capability for all of your high-risk servers. You've been asked to enable and test backup and restore functionality for these critical Windows and Linux assets.
 
 In this unit, you'll look at how Azure Backup works, and study some of the supported use cases for Azure Backup.
@@ -44,6 +43,6 @@ Azure Backup also offers the ability to back up virtual machines encrypted with 
 ### Azure Backup supported scenarios
 
 - **Azure VMs** - Back up Windows or Linux Azure virtual machines<br> Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your VMs. Backups are stored in a Recovery Services vault with built-in management of recovery points. Configuration and scaling are simple, backups are optimized, and you can easily restore as needed.
-- **On-premises** - Back up files, folders, and system state using the [Microsoft Azure Recovery Services (MARS) agent](https://docs.microsoft.com/azure/backup/backup-support-matrix-mars-agent?azure-portal=true). Or use [Microsoft Azure Backup Server (MABS)](https://docs.microsoft.com/azure/backup/backup-support-matrix-mabs-dpm) or [Data Protection Manager (DPM) server](https://docs.microsoft.com/azure/backup/backup-support-matrix-mabs-dpm) to protect on-premises VMs (Hyper-V and VMWare) and other on-premises workloads.
+- **On-premises** - Back up files, folders, and system state using the [Microsoft Azure Recovery Services (MARS) agent](/azure/backup/backup-support-matrix-mars-agent?azure-portal=true). Or use [Microsoft Azure Backup Server (MABS)](/azure/backup/backup-support-matrix-mabs-dpm) or [Data Protection Manager (DPM) server](/azure/backup/backup-support-matrix-mabs-dpm) to protect on-premises VMs (Hyper-V and VMWare) and other on-premises workloads.
 - **Azure Files shares** - Azure Files - Snapshot management by Azure Backup
 - **SQL Server in Azure VMs** and **SAP HANA databases in Azure VMs** - Azure Backup offers stream-based, specialized solutions to back up SQL Server or SAP HANA running in Azure VMs. These solutions take workload-aware backups that support different backup types such as full, differential and log, 15-minute RPO, and point-in-time recovery.

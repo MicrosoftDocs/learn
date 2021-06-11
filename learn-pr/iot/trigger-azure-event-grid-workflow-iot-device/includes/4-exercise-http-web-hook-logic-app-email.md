@@ -22,7 +22,7 @@ In this unit, you'll create a new logic app that will be triggered via an HTTP w
     >
     > An ISE is an isolated environment that uses dedicated storage and other resources that are kept separate from the public, "global," multitenant Azure Logic Apps service. This separation reduces any impact that other Azure tenants might have on your apps' performance. An ISE also provides you with your own static IP addresses. 
     >
-    > To learn more about ISEs, see [Access to Azure Virtual Network resources from Azure Logic Apps by using integration service environments](https://docs.microsoft.com/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview).
+    > To learn more about ISEs, see [Access to Azure Virtual Network resources from Azure Logic Apps by using integration service environments](/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview).
 
 1. In the **Location** drop-down list, choose the same Azure region that you used for the IoT hub that you created earlier.
 

@@ -8,7 +8,7 @@ The Azure *billing hierarchy* is in your partner tenant. Azure Cost Management u
 
 Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Resource management and the associated permissions are governed by Azure role-based access control (RBAC). 
 
-We'll focus on only Fabrikam's billing hierarchy in this module. To learn more about the scopes available to Contoso in its tenant, see [Azure RBAC scopes](https://docs.microsoft.com/azure/cost-management-billing/costs/understand-work-scopes?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn#azure-rbac-scopes).
+We'll focus on only Fabrikam's billing hierarchy in this module. To learn more about the scopes available to Contoso in its tenant, see [Azure RBAC scopes](/azure/cost-management-billing/costs/understand-work-scopes?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn#azure-rbac-scopes).
 
 The following diagram shows the full hierarchical structure of Azure Cost Management scopes that are available to Microsoft Cloud Solution Provider (CSP) partners. Scopes for the Azure billing hierarchy are shown on the left in the partner tenant, your Fabrikam tenant. Scopes for the Azure resource entity are on the right in the customer's tenant, Contoso. They're colored orange.
 
@@ -41,10 +41,10 @@ The customer scope doesn't include customers who are in the classic CSP agreemen
 
 ## Roles and permissions for Azure Cost Management in the billing hierarchy
 
-Only the users with *global admin* and *admin agent* roles can manage and view costs for billing accounts, billing profiles, and customers directly in the partner's Azure tenant. For more information about Partner Center roles, see [Assign users roles and permissions](https://docs.microsoft.com/partner-center/permissions-overview).
+Only the users with *global admin* and *admin agent* roles can manage and view costs for billing accounts, billing profiles, and customers directly in the partner's Azure tenant. For more information about Partner Center roles, see [Assign users roles and permissions](/partner-center/permissions-overview).
 
 ## Export of cost data
 
 Partners with access to billing scopes in a partner tenant can export their cost and usage data to an Azure storage blob. The blob must be on a subscription in the partner tenant that's not a shared service subscription or a customer's subscription. 
 
-To enable export of cost data, we recommended that you set up an independent pay-as-you-go subscription in the partner tenant to host the exported cost data. Users with RBAC access to the subscription can also export the cost data to an Azure storage blob hosted in any subscription in the customer tenant. For more information, see [Create an export in a partner tenant or customer tenant](https://docs.microsoft.com/azure/cost-management-billing/costs/get-started-partners#create-an-export-in-a-partner-tenant-or-customer-tenant).
+To enable export of cost data, we recommended that you set up an independent pay-as-you-go subscription in the partner tenant to host the exported cost data. Users with RBAC access to the subscription can also export the cost data to an Azure storage blob hosted in any subscription in the customer tenant. For more information, see [Create an export in a partner tenant or customer tenant](/azure/cost-management-billing/costs/get-started-partners#create-an-export-in-a-partner-tenant-or-customer-tenant).

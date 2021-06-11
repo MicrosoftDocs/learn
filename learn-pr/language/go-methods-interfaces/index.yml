@@ -43,3 +43,4 @@ units:
 - learn.language.go-methods-interfaces.6-summary
 badge:
   uid: learn.language.go-methods-interfaces.badge
+hidden: true

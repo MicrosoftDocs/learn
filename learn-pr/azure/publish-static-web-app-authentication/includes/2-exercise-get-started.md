@@ -94,7 +94,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 The `api` folder contains the Azure Functions project with the HTTP endpoints for the web app. Start by running the API locally by following these steps:
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+> Please be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
