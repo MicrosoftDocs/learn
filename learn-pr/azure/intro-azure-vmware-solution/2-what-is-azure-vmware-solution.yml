@@ -26,13 +26,13 @@ quiz:
     - content: "Fastest way to force a move to Azure-centric operational processes"
       isCorrect: false
       explanation: "XYZ"
-  - content: "What are two native Azure services that can be integrated the Azure VMware Solution?"
+  - content: "Which native Azure service that can be integrated with the Azure VMware Solution to provide VMware vCenter SSO identity?"
     choices:
     - content: "Azure Databricks"
       isCorrect: false
       explanation: "Azure Databricks is currently not available to integrate with AVS."
     - content: "Azure Monitor"
-      isCorrect: true
+      isCorrect: false
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."
     - content: "Azure Active Directory"
       isCorrect: true
