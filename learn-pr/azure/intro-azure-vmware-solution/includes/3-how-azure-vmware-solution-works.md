@@ -31,6 +31,10 @@ Azure VMware Solution monitors the following conditions on the host:
 - Storage status
 - Connection failure
 
+
+## Difference between on-premises VMware and Azure VMware Solution
+On-premises VMware environments requires the customer to support all the hardware and software required to run the platform. Azure VMware Solution maintains the platform for the customer.  
+
 ## Architecture overview
 
 Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
