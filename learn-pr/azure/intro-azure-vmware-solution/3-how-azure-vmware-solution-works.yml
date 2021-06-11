@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "What component is managed and supported by Microsoft on Azure VMware Solution?"
     choices:
-    - content: "Tier 1 gateways."
+    - content: "Tier 1 gateways are managed by Microsoft."
       isCorrect: false
       explanation: "Tier 1 gateways are managed by the customer."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN) is managed by Microsoft."
       isCorrect: true
       explanation: "Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
-    - content: "Microsoft manages the virtual machines"
+    - content: "Microsoft manages the virtual machines."
       isCorrect: false
-      explanation: "Microsoft doesn't manage  the virtual machines."
+      explanation: "Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to AVS. What is minimum number of nodes must Shannon have to get started?"
     choices:
     - content: "Three nodes"
@@ -35,7 +35,7 @@ quiz:
       isCorrect: false
       explanation: "The minimum hosts required are 3 in a cluster."
     - content: "16 nodes in a cluster"
-      isCorrect: true
+      isCorrect: false
       explanation: "The maximum number of nodes in a cluster is 16"
   - content: "What does the cloudadmin role in the AVS vCenter do?"
     choices:
@@ -50,11 +50,12 @@ quiz:
       explanation: "The CloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
   - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
     choices:
-    - content: "James is responsible for patching it."
+    - content: "James is responsible for patching the ESXi host."
       isCorrect: false
       explanation: "Microsoft manages all the support and patching of hosts."
-    - content: "VMware support is responsible for the ESXi Hosts and Host Patching."
+    - content: "VMware support is responsible for the host Patching."
       isCorrect: false
       explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
     - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
       isCorrect: true
+      explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."

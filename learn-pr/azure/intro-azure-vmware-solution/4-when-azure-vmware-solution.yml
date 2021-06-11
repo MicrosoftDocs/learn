@@ -25,7 +25,7 @@ quiz:
       explanation: "AVS isn't for customers that don't want to cloud services."
     - content: "Customers that don't want a fast path to the cloud by Migrating existing assets “as is”"
       isCorrect: false
-      explanation: "Replicate existing IT systems, apps, and workloads natively in Azure (also known as a “lift and shift” migration) without needing to change them beforehand."
+      explanation: "AVS is well suit for customers that want a fast path to the cloud by migrating existing assets “as is”."
   - content: "Which scenario isn't a good option for the Azure VMware Solution?"
     choices:
     - content: "Customers that can't move to cloud services "
