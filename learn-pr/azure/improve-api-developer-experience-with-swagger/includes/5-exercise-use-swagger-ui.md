@@ -89,8 +89,11 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     dotnet build
     ```
 
-> [!TIP]
-> You may need to first press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop the web API from running in the last exercise.
+   > [!TIP]
+   > You may need to first press <kbd>ctrl+c</kbd> on Windows or 
+<kbd>cmd+c</kbd> on Mac to stop the web API from running in the last 
+exercise.
+
 
 1. To see these changes run the ASP.NET application locally. Type the following in the terminal window in Visual Studio Code:
 

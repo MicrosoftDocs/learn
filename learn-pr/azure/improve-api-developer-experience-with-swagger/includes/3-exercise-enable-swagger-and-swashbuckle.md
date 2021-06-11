@@ -103,7 +103,8 @@ Because you created the API, you knew its shape, but an external developer who w
     dotnet run
     ```
 
-1. In a browser, navigate to http://localhost:5000/swagger/v1/swagger.json'.
+1. In a browser, navigate to http://localhost:5000/swagger/v1/swagger.json.
+
 
    The response we get in the browser this time is a document describing the endpoints of the API, similar to the following response.
 
