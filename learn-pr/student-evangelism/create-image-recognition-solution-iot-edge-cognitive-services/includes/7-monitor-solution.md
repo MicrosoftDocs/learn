@@ -9,7 +9,7 @@ Once the solution has been deployed, you can monitor it on the IoT Edge device u
 iotedge list
 ```
 
-![[The illustration shows the module status.](../media/module-status.png)](../media/module-status.png) 
+![[The illustration shows the module status.](../media/module-status.png)](../media/module-status.png#lightbox) 
 
 ## Monitoring the Solution from the Azure IoT Edge Blade
 
@@ -17,7 +17,7 @@ You can monitor the Azure IoT Edge module's state from the Azure IoT Hub blade o
 
 Click on the Azure IoT Edge blade device to view more details about the modules running on the device.
 
-![[The illustration shows the module status from IoT Hub.](../media/module-status-hub.png)](../media/module-status-hub.png) 
+![[The illustration shows the module status from IoT Hub.](../media/module-status-hub.png)](../media/module-status-hub.png#lightbox) 
 
 
 ## View the device telemetry from the Azure Cloud Shell

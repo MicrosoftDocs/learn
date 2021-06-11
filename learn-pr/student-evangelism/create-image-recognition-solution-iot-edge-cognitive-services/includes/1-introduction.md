@@ -4,7 +4,7 @@ Suppose you work as a Data Scientist and you are responsible for deploying Cogni
 
 To implement this approach, you could build and train the image recognition module in the cloud, dedicated to a given domain (such as identifying fruit), and deploy the model as a container to the device.
 
-![[The illustration shows the scenario image.](../media/scenario-diagram.png)](../media/scenario-diagram.png)
+![[The illustration shows the scenario image.](../media/scenario-diagram.png)](../media/scenario-diagram.png#lightbox)
 
 
 In this module, you'll run an Azure IoT Edge solution that uses Azure Custom Vision and Azure Speech Service and deploy the solution to the Edge device. The application consists of a number of modules that scan the items using a camera, classify the scanned items, and convert the identified items to speech.
