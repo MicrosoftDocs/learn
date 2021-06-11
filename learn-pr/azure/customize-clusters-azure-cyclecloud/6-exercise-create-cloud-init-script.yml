@@ -9,6 +9,6 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 40
 content: |
   [!include[](includes/6-exercise-create-cloud-init-script.md)]

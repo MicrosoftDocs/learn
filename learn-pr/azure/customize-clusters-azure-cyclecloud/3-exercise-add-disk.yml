@@ -9,6 +9,6 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-add-disk.md)]

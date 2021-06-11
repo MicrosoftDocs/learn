@@ -4,7 +4,18 @@ In the Slurm job scheduler, partitions group nodes into logical and potentially 
 
 You want to modify your newly deployed Azure CycleCloud-managed cluster to account for job-specific resource needs. To accomplish this goal, you decide to apply more changes to the underlying template and validate your approach.
 
-## Add a nodearray definition to the Azure CycleCloud template
+In this exercise, you will perform the following tasks:
+
+- Task 1: Add a nodearray definition to the Azure CycleCloud template
+- Task 2: Add graphical interface parameters to the Azure CycleCloud template
+- Task 3: Export Azure CycleCloud cluster properties
+- Task 4: Edit the properties file to include the new parameters
+- Task 5: Import the modified template and parameters file into the existing cluster
+
+> [!NOTE]
+> Ensure that you completed successfully the previous exercise before you start this exercise.
+
+## Task 1: Add a nodearray definition to the Azure CycleCloud template
 
 You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled *hpc* and *htc*. You'll create another partition and the corresponding nodearray intended for jobs that benefit from the Compute Unified Device Architecture (CUDA) capabilities.
 
@@ -23,6 +34,9 @@ You'll start by adding a definition of a nodearray within the Slurm template you
     ```azurecli
     nano slurm.txt
     ```
+
+    > [!NOTE]
+    > Instead of the nano editor, you can use any other text editor available to you, including the Azure Cloud Shell built-in editor.
 
 1. Within the nano editor interface, scroll to the `[parameters About]` section and add the following content directly before it:
 
@@ -52,7 +66,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
     > [!NOTE]
     > Your changes define an extra nodearray.
 
-## Add graphical interface parameters to the Azure CycleCloud template
+## Task 2: Add graphical interface parameters to the Azure CycleCloud template
 
 To be able to modify the values of template parameters with the Azure CycleCloud graphical interface, you'll apply more changes to the template.
 
@@ -109,7 +123,7 @@ To be able to modify the values of template parameters with the Azure CycleCloud
 
 1. Within the Nano editor interface, select the **Ctrl + o** key combination, select the **Enter** key, and then select the **Ctrl + x** key combination to save the changes you made and close the file.
 
-## Export Azure CycleCloud cluster properties
+## Task 3: Export Azure CycleCloud cluster properties
 
 Before applying the configuration changes you made in the Azure CycleCloud template to the target cluster, you'll first need to export the cluster properties.
 
@@ -134,7 +148,7 @@ Before applying the configuration changes you made in the Azure CycleCloud templ
     cat ~/params.json
     ```
 
-## Edit the properties file to include the new parameters
+## Task 4: Edit the properties file to include the new parameters
 
 While the edits you applied to the Azure CycleCloud template included default values for all newly introduced parameters, you might need to modify them to account for your specific requirements. In this task, you'll set the values of the **CUDAMachineType** and **MaxCUDAExecuteCoreCount** parameters.
 
@@ -159,7 +173,7 @@ While the edits you applied to the Azure CycleCloud template included default va
 
 1. Within the nano editor interface, select the **Ctrl + o** key combination, select the **Enter** key, and then select the **Ctrl + x** key combination to save the changes you made and close the file.
 
-## Import the modified template and parameters file into the existing cluster
+## Task 5: Import the modified template and parameters file into the existing cluster
 
 To conclude this exercise, you'll import the modified template and its parameters file into the existing cluster, overriding its current configuration.
 
@@ -181,3 +195,6 @@ To conclude this exercise, you'll import the modified template and its parameter
 :::image type="content" source="../media/u4-cyclecloud-cluster-edit-required-settings.png" alt-text="The screenshot depicts the Required Settings page of the Edit contoso-custom-slurm-lab-cluster pop-up window." border="false":::
 
 Congratulations! You successfully completed the second exercise of this module. In this exercise, you further customized your Azure CycleCloud cluster by using a modified template including the definition of a new nodearray with the corresponding partition. To accomplish this goal, after editing the template, you exported and edited the cluster parameters file and imported it, along with the modified template, into the cluster.
+
+> [!NOTE]
+> Do not delete the resources you have deployed and configured in this exercise if you plan to run the next exercise in this module, as these resources are required in order to complete that next exercise.

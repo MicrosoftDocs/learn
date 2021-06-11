@@ -5,7 +5,18 @@ To implement this functionality, you decided to explore the use of cloud-init in
 > [!NOTE]
 > When authoring cloud-init scripts, you can use any scripting or configuration method that the operating system running on target nodes can recognize and process, including traditional shell scripting, Python, and YAML.
 
-## Configure SSH-based authentication to Azure CycleCloud cluster nodes
+In this exercise, you will perform the following tasks:
+
+- Task 1: Configure SSH-based authentication to Azure CycleCloud cluster nodes
+- Task 2: Add a cloud-init script to the cluster nodes
+- Task 3: Verify the cloud-init functionality on the scheduler node
+- Task 4: Verify the cloud-init functionality on the compute nodes
+- Task 5: Clean up the lab environment
+
+> [!NOTE]
+> Ensure that you completed successfully the previous exercise before you start this exercise.
+
+## Task 1: Configure SSH-based authentication to Azure CycleCloud cluster nodes
 
 To validate the execution of cloud-init scripts, you'll connect to cluster nodes with Azure CycleCloud CLI from Azure Cloud Shell. This connection relies on SSH key-based authentication, so you'll need to upload to the Azure Cloud Shell home directory the private key corresponding to the public key distributed to cluster nodes.
 
@@ -16,12 +27,12 @@ To validate the execution of cloud-init scripts, you'll connect to cluster nodes
 1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands to move the uploaded **.pem** file to the correct location and configure necessary file-level permissions (replace the `<private_key.pem>` placeholder with the name of the **.pem** file):
 
     ```azurecli
-    mkdir -p ./.ssh
-    mv private_key.pem ./.ssh
+    mkdir -p ~/.ssh
+    mv private_key.pem ~/.ssh
     chmod 600 ~/.ssh/cc-ssh-keys.pem
     ```
 
-## Add a cloud-init script to the cluster nodes
+## Task 2: Add a cloud-init script to the cluster nodes
 
 The option to add scripts to the cluster nodes is available directly from the Azure CycleCloud graphical interface. You'll use it to assign the same cloud-init script to the scheduler and compute nodes and then verify its functionality. The script adds an entry **10.10.10.10 cc.contoso.com** to the **/etc/hosts** file.
 
@@ -37,13 +48,17 @@ The option to add scripts to the cluster nodes is available directly from the Az
 
     :::image type="content" source="../media/u6-cyclecloud-cluster-edit-cloud-init.png" alt-text="The screenshot depicts the Cloud-init tab of the Edit contoso-custom-slurm-lab-cluster pop-up window in the Azure CycleCloud web application." border="false":::
 
-1. Within the same pop-up window, with the **Cloud-init** entry that's selected, select each of the remaining tabs, and enter the same script. After you complete this, select **Save**.
+1. Within the same pop-up window, with the **Cloud-init** entry that's selected, select each of the remaining tabs (including **cuda**, **hpc**, and **htc**), and enter the same script. After you complete this, select **Save**.
 
-## Verify the cloud-init functionality on the scheduler node
+## Task 3: Verify the cloud-init functionality on the scheduler node
 
 To verify the cloud-init functionality on the scheduler node, you'll start the cluster. This will trigger provisioning of the scheduler node. After the node is running, you'll be able to connect to it from the Azure Cloud Shell and verify that the **/etc/hosts** file contains the entry **10.10.10.10 www.contoso.com**.
 
 1. From your computer, within the browser window displaying the Azure CycleCloud web application, on the **contoso-custom-slurm-lab-cluster** page, select the **Start** link. When prompted to confirm, select **OK**.
+
+    > [!NOTE]
+    > If the cluster is already running, you will need to terminate and then re-start it in order to apply the updated configuration, otherwise that configuration will not be visible in the subsequent steps.
+
 1. In the list of nodes, select the **scheduler** entry and monitor its status on the **details** pane, waiting until it changes from **Acquiring** to **Ready**.
 
     > [!NOTE]
@@ -81,7 +96,7 @@ To verify the cloud-init functionality on the scheduler node, you'll start the c
     > 10.10.10.10 www.contoso.com
     > ```
 
-## Verify the cloud-init functionality on the compute nodes
+## Task 4: Verify the cloud-init functionality on the compute nodes
 
 Now you'll repeat the equivalent sequence of steps to verify cloud-init functionality on the compute nodes.
 
@@ -98,6 +113,9 @@ Now you'll repeat the equivalent sequence of steps to verify cloud-init function
     exit
     exit
     ```
+
+    > [!NOTE]
+    > You will be presented with the messages stating **Attempting to remove the following nodes** followed by **re-scaling cluster complete** once this step completes.
 
 1. On your computer, switch to the web browser window displaying the **contoso-custom-slurm-lab-cluster** page of the Azure CycleCloud web application. On the **Nodes** tab, select the **htc** row, and on the **details** pane, select the **htc-1** entry, and then select the **Actions** tab header. In the drop-down menu, select **Start**, and when prompted to confirm, select **OK**.
 
@@ -132,7 +150,11 @@ Now you'll repeat the equivalent sequence of steps to verify cloud-init function
     cat /etc/hosts | grep "10.10.10.10 www.contoso.com"
     ```
 
-## Clean up the lab environment
+    > [!NOTE]
+    > You should delete all resource you deployed in this and previous exercises of this module once you reach this point. This will allow you to avoid the charges against your Azure subscription, which are associated with maintaining these resources.
+
+
+## Task 5: Clean up the lab environment
 
 Your testing of the cluster customization by using Azure CycleCloud application is completed. To avoid unnecessary costs associated with the use of Azure resources, you'll now terminate the cluster and remove all of the resources you provisioned throughout the exercises of this module.
 
@@ -147,5 +169,8 @@ Your testing of the cluster customization by using Azure CycleCloud application 
 
 1. On your computer, switch to the browser window displaying the Azure portal.
 1. In the Azure portal, navigate to the blade of the resource group hosting cluster resources, select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and select **Delete**.
+
+    > [!NOTE]
+    > There may be additional resources groups associated with your slurm resources. To avoid extra charges, make sure to delete all of these slurm related resource groups and their resources.
 
 Congratulations! You successfully completed the third and final exercise of this module. In this exercise, you explored the use of cloud-init in Azure CycleCloud clusters and tested it with a simple Bash script that modified the content of a local file on each node. You validated the outcome by connecting to cluster nodes and reviewing the content of the modified files. Afterwards, you terminated the cluster and deleted all cluster resources you used in this module to avoid any unnecessary costs.

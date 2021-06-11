@@ -23,7 +23,15 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 > [!NOTE]
 > You'll need the private key to connect directly to the cluster nodes in the last exercise of this module.
 
-## Install and configure Azure CycleCloud CLI
+In this exercise, you will perform the following tasks:
+
+- Task 1: Install and configure Azure CycleCloud CLI
+- Task 2: Configure an Azure CycleCloud Slurm project
+- Task 3: Implement a custom Azure CycleCloud template
+- Task 4: Start a new cluster and examine its storage configuration
+
+
+## Task 1: Install and configure Azure CycleCloud CLI
 
 Most management tasks in this and subsequent exercises require the use of Azure CycleCloud CLI, so you'll start by installing it and connecting it to your Azure CycleCloud application. To simplify the initial setup, you'll use Azure Cloud Shell.
 
@@ -53,7 +61,10 @@ Most management tasks in this and subsequent exercises require the use of Azure 
     curl -O --insecure https://$PIP/static/tools/cyclecloud-cli.zip
     ```
 
-1. Run the following commands to extract and execute the script that performs the Azure CycleCloud CLI installation:
+    > [!NOTE]
+    > Ignore any messages regarding the path environment variable and continue to the next step.
+
+1. Run the following commands in succession to extract and execute the script that performs the Azure CycleCloud CLI installation:
 
     ```azurecli
     unzip ./cyclecloud-cli.zip
@@ -77,14 +88,14 @@ Most management tasks in this and subsequent exercises require the use of Azure 
     ```
 
     > [!NOTE]
-    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names because you'll need one of them later in this exercise.
+    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names because you'll need one of them later in this exercise. The name would be in the format that uses the following notation:
     > 
     > ```
     > default-locker (az://cyclecloud050921/cyclecloud)
     > ```
 
 
-## Configure an Azure CycleCloud Slurm project
+## Task 2: Configure an Azure CycleCloud Slurm project
 
 Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage an existing Slurm project from the Azure CycleCloud GitHub repository. You'll fetch it into your home directory in Azure Cloud Shell and then upload it to the Azure CycleCloud locker.
 
@@ -95,7 +106,10 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
     cyclecloud project fetch https://github.com/Azure/cyclecloud-slurm . 
     ```
 
-1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task):
+    > [!NOTE]
+    > Make sure to include the trailing period at the end of the second command.
+
+1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task, such as `default-locker`):
 
     ```azurecli
     cyclecloud project default_locker <locker_name>
@@ -109,9 +123,9 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
     > Ignore the azcopy related error message stating `Cannot perform sync due to error: sync must happen between source and destination of the same type, e.g., either file <-> file, or directory/container <-> directory/container` followed by `Upload failed!` as long as the individual copies of project files succeed.
 
     > [!NOTE]
-    > Wait for the upload to complete. This might take about five minutes.
+    > Wait for the upload to complete. This might take about five minutes. You will be presented with messages indicating that the upload of 15 files followed by 1 file completed, with the final job status listed as completed, and zero failed transfers and copy transfers. 
 
-## Implement a custom Azure CycleCloud template
+## Task 3: Implement a custom Azure CycleCloud template
 
 Now, you'll download and modify the sample Azure CycleCloud template that's compatible with the fetched GitHub-based project. You'll use it to define a custom storage configuration that includes an extra disk attached to the scheduler node and exported through network file system (NFS). Following this modification, you'll import it into your Azure CycleCloud application.
 
@@ -180,7 +194,10 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
     cyclecloud import_template -f ~/cyclecloud-slurm/templates/slurm.txt
     ```
 
-## Start a new cluster and examine its storage configuration
+    > [!NOTE]
+    > The command will display the name of the imported template, the state of the scheduler (`scheduler: Off -- --`) and the number of total nodes (`Total nodes: 1`).
+
+## Task 4: Start a new cluster and examine its storage configuration
 
 To conclude this exercise, you'll verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To do this, you'll create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks.
 
@@ -195,7 +212,7 @@ To conclude this exercise, you'll verify that the template you imported into Azu
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Required Settings** tab of the **New Slurm Cluster** page, in the **Cluster Name** text box, configure the following settings (leave others with their default values):
+1. On the **Required Settings** tab of the **New Slurm Cluster** page, configure the following settings (leave others with their default values):
 
     | Setting | Value |
     | --- | --- |
@@ -223,9 +240,6 @@ To conclude this exercise, you'll verify that the template you imported into Azu
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
 1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes, and select **Save**.
-
-    :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="The screenshot depicts the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
-
 1. On the **contoso-custom-slurm-lab-cluster** page, select the **Start** link. When prompted to confirm, select **OK**.
 
     :::image type="content" source="../media/u3-cyclecloud-cluster-state-off.png" alt-text="The screenshot depicts the Nodes tab page of contoso-slurm-lab-cluster in the off state in the Azure CycleCloud web application." border="false":::
@@ -241,3 +255,6 @@ To conclude this exercise, you'll verify that the template you imported into Azu
     :::image type="content" source="../media/u3-cyclecloud-start-cluster-volumes.png" alt-text="The screenshot depicts the Node tab page of the detailed view of a cluster configured with two additional NFS volumes." border="false":::
 
 Congratulations! You successfully completed the first exercise of this module. In this exercise, you implemented a cluster based on a customized Azure CycleCloud template. You used Azure CycleCloud CLI to import a sample project hosted in the Azure CycleCloud GitHub repository, including a customized copy of one of its templates. Next, you created a cluster based on the imported template with the Azure CycleCloud graphical interface, started it, and verified that the custom change took effect.
+
+> [!NOTE]
+> Do not delete the resources you have deployed and configured in this exercise if you plan to run the next exercise in this module, as these resources are required in order to complete that next exercise.
