@@ -1,6 +1,6 @@
 You can create a custom analytics rule to search for suspicious activities and threats at Contoso. 
 
-## Create an analytics rule by using the wizard
+## Create an analytics rule using the wizard
 
 Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own KQL code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
 
@@ -14,13 +14,13 @@ The following table lists the inputs you must provide on the **General** page.
 | --- | --- |
 | Name | Provide a descriptive name to explain what type of suspicious activity the alert detects. |
 | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
-| Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
-| Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
+| Tactics | From the **Tactics** dropdown list, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
+| Severity | Select the **Severity** dropdown list to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
 | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
 
 ## Set rule logic
 
-On the **Set rule logic** page, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
+On the **Set rule logic** pane, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
 
 When you enter the KQL query string in the **Rule query** field, you can use the **Results simulation (preview)** section to review the results of the query. The **Results simulation (preview)** section will help you determine whether your query returned the expected results.
 
@@ -32,15 +32,15 @@ The following sample query alerts you when an anomalous number of resources is c
 AzureActivity
 | where OperationName == &quot;Create or Update Virtual Machine&quot;or OperationName ==&quot;Create Deployment&quot;
 | where ActivityStatus == &quot;Succeeded&quot;
-| make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp inrange(ago(7d), now(), 1d) by Caller
+| make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
 > [!Tip]
-> For assistance with the query language, refer to the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](/azure/kusto/query/)
+> For assistance with the query language, see the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](/azure/kusto/query/).
 
 ### Map entities
 
-In the  **Map entities**  section, you can define the entities that are returned as part of the query rule, and then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
+In the  **Map entities** section, you can define the entities that are returned as part of the query rule, and then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
 
 ### Query Scheduling
 
@@ -62,7 +62,7 @@ In the **Event grouping** section, you can select one of the following two optio
 - **Group all events into a single alert**. This is the default option, and it creates a single alert if the query returns more results than that the specified alert threshold.
 - **Trigger an alert for each event**. This option creates unique alerts for each event returned by the query.
 
-### Suppression 
+### Suppression
 
 In the **Suppression** section, you can set the **Stop running the Query after the alert is generated** option to  **On**  or  **Off**. When you select **On**, Azure Sentinel pauses the creation of additional incidents if the rule is triggered again for the duration you want the rule to be suppressed.
 
@@ -74,15 +74,15 @@ In the **Alert grouping** section, you can reduce the noise from multiple alerts
 
 - **Grouping alerts into a single incident if all the entities match (recommended)**
 - **Grouping all alerts triggered by this rule into a single incident**
-- **Grouping alerts into a single incident if the selected entities match** - for example source or target IP addresses.
+- **Grouping alerts into a single incident if the selected entities match** (for example, source or target IP addresses).
 
 In the **Reopen closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previously closed incident.
 
 ## Automated response
 
-You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector are displayed.
+You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector appear.
 
-For more information on how to create a playbook and run the automated activity on an incident creation, see the "Threat response with Azure Sentinel Playbooks" module.
+For more information about how to create a playbook and run the automated activity on an incident creation, see the "Threat response with Azure Sentinel Playbooks" module.
 
 ## Review and create
 
