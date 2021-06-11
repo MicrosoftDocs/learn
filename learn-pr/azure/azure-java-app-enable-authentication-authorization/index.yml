@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Sign in users with Azure Active Directory in a Java web app
   description: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
-  ms.date: 05/07/2021
+  ms.date: 06/11/2021
   author: navyasric
   ms.author: nacanuma
   ms.topic: interactive-tutorial
@@ -26,13 +26,14 @@ prerequisites: |
   - An Azure subscription and Azure Active Directory tenant
   - An IDE like Visual Studio Code to edit code
 
-iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
-levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products
+iconUrl: /learn/achievements/azure-java-app-enable-authentication-authorization.svg
+levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+- msal-java
 units:
 - learn.azure.azure-java-app-enable-authentication-authorization.introduction
 - learn.azure.azure-java-app-enable-authentication-authorization.authentication-authorization

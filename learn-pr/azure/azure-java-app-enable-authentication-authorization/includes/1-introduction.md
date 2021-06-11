@@ -1,4 +1,4 @@
-Organizations build applications to serve various usecases. While most of the application developers are focused on implementing the business logic, there are also requirements to secure the access to the application. The responsibility of identity and access management requires additional expertise and comes with complexity.
+Organizations build applications to serve various use cases. While most of the application developers are focused on implementing the business logic, there are also requirements to secure the access to the application. The responsibility of identity and access management requires additional expertise and comes with complexity.
 
 Azure Active Directory and the Microsoft Authentication Library (MSAL) simplify this. Azure Active Directory enables you to handle these requirements by providing identity and access management (IAM) as a service. The Microsoft Authentication Library provides convenient APIs for developers to implement the authentication and authorization features in their applications.
 
