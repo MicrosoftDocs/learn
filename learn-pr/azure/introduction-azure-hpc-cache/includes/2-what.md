@@ -1,129 +1,23 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
+Let's start by understanding the key concepts within Azure HPC Cache. This overview will help you understand how the cache service works.
 
-    Goal: briefly state that this unit will define the product.
+## What is a storage target?
 
-    Heading: none
+A storage target is where your data is kept. Often, these are Network Attached Storage (NAS) appliances. There are specific storage targets that the HPC Cache supports like Azure NetApp Files (ANF), physical NetApp appliances, EMC Isilon appliances, or Linux storage servers.
 
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-TODO: add your topic sentences(s)
+Most high-performance applications use NFSv3 for the file system protocol. HPC Cache uses this efficient protocol to transfer data among the storage target, the cache, and the clients.
 
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
+![Screenshot of a sample NFS storage target.](../resources/2a-storage-target-example.png)
 
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
+## Azure HPC Cache definition
 
-    Heading:
-        "## What is <concept>?"
+Azure HPC Cache is a managed service that accelerates file-based storage for compute-intensive workloads.
 
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
+Caching data close to compute clients allows those clients to run more efficiently and complete high-performance tasks faster. When compute clients are waiting for storage responses, they aren’t computing. Compute cycles are wasted, and charges continue to be incurred when the data can’t get to the clients fast enough. Rather than waiting for responses from slower storage or from high-latency WAN links, compute clients can quickly access the needed data from the cache.
 
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
-## What is <concept>?
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+## How to know if your workload is cacheable
 
-<!-- 3. Define the product -------------------------------------------------------------
+Azure HPC Cache accelerates cacheable workloads. If your HPC workload is cacheable, or one that reuses most of the same data, then a caching service like Azure HPC Cache may be a good fit.
 
-    Goal:
-        Give a formal and precise definition of the product.
+Cacheable workloads have a static set of data that several clients will access at the same time.
 
-    Heading:
-        "## <product> definition"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<product> is..." (ensure this is a definition, do not give use cases like "<product> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "Azure Logic Apps definition"
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
-## <product> definition
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
-
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the <product> solves one of the customer tasks in your <scenario>.
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
-
-    Heading:
-        "## How to <solve scenario>"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the <product> solved the <scenario>.
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
-## How to <solve scenario>
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
-
-<!-- 5. Additional content (optional, as needed) ------------------------------------------------
-
-    Goal:
-        The section is a catch-all for any information not covered in the sections above.
-        Repeat the pattern here as many times as needed.
-
-    Possible topics:
-        - Key feature(s).
-        - Example use case in addition to the scenario.
-        - High-level of how practitioners use the product (e.g. there's an API and a web UI to support multiple use cases).
-        - Business value (e.g. it lets you do something that would be difficult to achieve without <product>).
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+For example, if you were running a stock market simulation using historical stock market data, that would be a perfect use for a caching service. The dataset isn't changing and you can have hundreds of compute clients running thousands of scenarios.

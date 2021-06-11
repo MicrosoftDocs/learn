@@ -1,26 +1,28 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Here, we'll discuss how Azure HPC Cache works. You'll learn how the different storage and network elements come together to provide a faster storage experience.
 
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
+- Source data
+- Data access
+- Network
 
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how <features> of <product> work to <solve problem>."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
+## How source data is accessed
 
-    Heading: none
+Without a caching solution, clients would directly access the source data. When using the caching service, clients access Azure HPC Cache for faster access to data instead of directly accessing the source data.
 
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Azure HPC Cache reads data from a customer storage target like network-attached storage (NAS) in the customer data center and stores frequently-accessed data in memory and on high-speed drives.
+
+## How the cache manages the data
+
+Clients request data from Azure HPC Cache. The cache reads the data from the storage target. Client write operations are written to the cache. The cache pushes the new data to the storage target.
+
+When multiple clients read the same data, the cache supplies the data faster than the NAS.
+
+## How data is handled over the internet
+
+To access the data from the storage target, the cache typically exchanges traffic over the public internet. Data transmissions are secured using encryption.
+
+Because bandwidth can be low and slow the transfer of information, an ExpressRoute is recommended to accelerate data transfer. While it's not required, a dedicated line like an ExpressRoute is recommended to provide faster data transfers than relying on public internet communication alone.
+
+![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../resources/3-what-is-hpc-cache-01.png)
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
@@ -44,22 +46,3 @@ Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 Paragraph (optional)
-
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
