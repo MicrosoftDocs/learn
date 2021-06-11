@@ -48,20 +48,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
     ![WebSPA shopping bag](../media/eshop-spa-shopping-bag.png)
 
-You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
-
-## Discount Coupon features
-
-- The user can apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
-- The coupon service must confirm that the coupon is available and return the discount amount (REST API).
-- The ordering microservice will request validation for the coupon, during the order process (Asynchronous messaging).
-- Upon validation, the coupon will be assigned to the order and won't be available for any other order. However the coupon can be initially "used" by more than one order, until it's actually "consumed" during the order process.
-- If the coupon validation is rejected for another order it'll be cancelled.
-- If an order is cancelled because of payment rejection (will happen if the order total exceeds $100, configurable), the assigned coupon, if there was one, should be released for any other order to use.
-
-The discount coupon feature adds the following element to the checkout view:
-
-![WebSPA checkout page view, highlighting the discount coupon input.](../media/discount-coupon-feature.png)
+You've successfully verified the app was deployed to AKS.
 
 ## Review code
 

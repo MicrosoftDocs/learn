@@ -2,75 +2,94 @@ In this exercise you'll deploy the newly created Web Sales BFF to the existing K
 
 In this exercise you will:
 
+- Enable the Web Sales Aggregator BFF.
+- Review the necessary configuration.
 - Create an instance of Azure Container Registry(ACR).
-- Enable the `websalesagg` BFF.
-- Review the related configuration.
 - Build the local images and push the changes in the container registry.
 - Deploy the affected apps to the cluster.
-- Verify the deployed web sales aggregator pod
-- Add the `websalesagg` client redirect uris in the `IdentityDb`
-- Test `websalesagg` using Swagger UI.
+- Verify the deployed sales aggregator.
 
-## Create an instance of Azure Container Registry(ACR)
-
-- You'll need a container registry to host the docker images. Run the below command to create one.
-
-    ```bash
-    ./create-acr.sh  --resource-group eshop-learn-rg --location westus
-    ```
-
-    The script will create an instance of ACR. You should get something like this:
-
-    ![Create ACR instance](../media/create-acr.png)
-
-- Make sure you run the following command to login to the ACR instance because that will be required to push the docker images.
-
-    ```bash
-    docker login <CONTAINER_REGISTRY>.azurecr.io -u <USER_NAME> -p <PASSWORD>
-    ```
-
-## Enable the `websalesagg` BFF
+## Enable the Web Sales Aggregator BFF
 
 ### Web.Sales.HttpAggregator - project related changes
 
-- In the `SalesController` of the `websalesagg` aggregator, the data from both `Catalog.API` and `Ordering.API` has been fetched to process and prepare the sales data. You have already reviewed the code in the previous unit but in this step make sure you have uncommented and enabled it.
+- As mentioned in the previous unit, you'll just uncomment the code snippet of the *GetSalesOfTodayByBrand()* method in the *SalesController* class to activate this feature.
 
     ```csharp
     
-    [HttpGet]
-    [ProducesResponseType(typeof(SalesDto), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<List<SalesDto>>> GetSalesOfTodayByBrand()
-    {
-        _logger.LogInformation("----- SalesController --> GetTotalSalesAsync()");
-    
-        try
-        {
-            // All catalog items
-            var catalogItems = await _catalog.GetCatalogItemAsync();
-    
-            // All catalog brands
-            var catalogBrands = await _catalog.GetCatalogBrandAsync();
-    
-            // All orders
-            var orderItems = await _ordering.GetOrdersAsync();
-    
-            // Fetch processed sales data
-            var salesData = await this.GetSalesData(catalogItems, catalogBrands, orderItems);
-    
-            return salesData;
-        }
-        catch (System.Exception ex)
-        {
-            throw ex;
-        }
-    }
+    // [HttpGet]
+    // [ProducesResponseType(typeof(SalesDto), (int)HttpStatusCode.OK)]
+    // public async Task<ActionResult<List<SalesDto>>> GetSalesOfTodayByBrand()
+    // {
+    //     _logger.LogInformation("----- SalesController --> GetTotalSalesAsync()");
+
+    //     try
+    //     {
+    //         // All catalog items
+    //         var catalogItems = await _catalog.GetCatalogItemAsync();
+
+    //         // All catalog brands
+    //         var catalogBrands = await _catalog.GetCatalogBrandAsync();
+
+    //         // All orders
+    //         var orderItems = await _ordering.GetOrdersAsync();
+
+    //         // Fetch processed sales data
+    //         var salesData = await this.GetSalesData(catalogItems, catalogBrands, orderItems);
+
+    //         return salesData;
+    //     }
+    //     catch (System.Exception ex)
+    //     {
+    //         throw ex;
+    //     }
+    // }
+
     ```
 
-- Then the following *GetSalesData()* method is used to aggregate the Sales data. You don't need to change the following code snippet.
+- And the *GetSalesData()* method is used to aggregate the Sales data.
+- In the *Startup.cs* file you'll also see that the JWT authentication is already added using the following code.
+
+    ```csharp
+
+        ....
+        services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            })
+            .AddJwtBearer(options =>
+            {
+                options.Authority = identityUrl;
+                options.RequireHttpsMetadata = false;
+                options.Audience = "websalesagg";                
+            });
+        ....        
+
+    ```
+
+- And add the Swagger UI is already enabled with the following code snippet.
+
+    ```csharp
+        ....
+        app.UseSwagger().UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "Sales BFF V1");
+
+            c.OAuthClientId("websalesaggswaggerui");
+            c.OAuthClientSecret(string.Empty);
+            c.OAuthRealm(string.Empty);
+            c.OAuthAppName("web sales bff Swagger UI");
+        });
+        ...
+    ```
+
+- In the next section you'll also enable `websalesaggswaggerui` client in the `Identity.API` project.
 
 ### Identity.API - project related changes
 
-- In the `Identity.API` project `websalesagg` client is already added in the configuration. Refer the following code in the `Config.cs` file of `Identity.API` project.
+- As mentioned above, the web sales aggregator project has been configured as `websalesaggswaggerui` client in the *Config.cs* file of the `Identity.API` project.
 
     ```csharp
         .....
@@ -89,7 +108,7 @@ In this exercise you will:
         ....
     ```
 
-- It also enables an `Admin` user with the following credential.
+- You'll also need a user with `Admin` role to access the `Sales API` exposed by WebSales Aggregators controller. So for that, the following user has been added. Because you'll not be able to access it using default `demouser@microsoft.com` user. You can take a note of that for later use.
 
     ```text
 
@@ -98,13 +117,11 @@ In this exercise you will:
 
     ```
 
-The above user will be used to access the `Sales API` exposed by WebSales Aggregators controller, as it has `Admin` role attached in the form of `Claims`. You'll not able to access it using default `demouser@microsoft.com`.
+## Review the necessary configuration
 
-## Review the related configuration
+### WebStatus project related configuration
 
-It also requires the following configuration :
-
-- Uncomment the following health check uri configuration in the `configmap.yaml` of `webstatus` app.
+- As you are adding a new project, it's better to add that in the Web Status project for monitoring like other projects. So uncomment the following health check uri configuration in the `configmap.yaml` of `webstatus` app.
 
     ```text
       HealthChecksUI__HealthChecks__10__Name: Web Sales Aggregator GW HTTP Check
@@ -113,13 +130,27 @@ It also requires the following configuration :
 
 The above configuration will include the health check for the `websalesagg` in the `WebStatus` app.
 
-- `websalesagg` client is also added in the `Config.cs` and `ConfigurationDbContextSeed.cs` files of the `Identity.API` app.
+### Identity.API project related configuration
 
 - Uncomment the following `WebSalesAggClient` configuration in the `configmap.yaml` file of the `identity` app.
 
     ```text
     WebSalesAggClient: {{ .Values.protocol }}://{{ .Values.host }}/websalesagg
     ```
+
+The above configuration will include the url for the `websalesagg` client in the `Identity.API`.
+
+## Create an instance of Azure Container Registry(ACR)
+
+- You'll need a container registry to host the docker images. So, run the below command to create one.
+
+    ```bash
+    ./create-acr.sh  --resource-group eshop-learn-rg --location westus
+    ```
+
+    The script will create an instance of ACR. You should get something like this:
+
+    ![Create ACR instance](../media/create-acr.png)
 
 ## Build the local images and push the changes in the container registry
 
@@ -139,11 +170,20 @@ The above configuration will include the health check for the `websalesagg` in t
 
 ## Deploy the affected apps to the cluster
 
-- Fetch the external ip address of the nginx ingress load balancer
+- Before deploying you'll also need to fetch the external ip address of existing nginx ingress load balancer. You can do that by using below command :
+
+    ```bash
+    kubectl get svc -n ingress-nginx 
+    ```
+
+    For more details, you can refer below image as well.
 
     ![Nginx ingress external load balancer](../media/nginx-ingress-external-ip.png)
 
-- Replace `{nginx-ingress-ip-address}` with the ip address of the external ip address of the nginx ingress controller and then run the below command to deploy the affected services to the cluster.
+    > [!NOTE]
+    > In the next unit you'll learn more about the Kubernetes ingress controller and it's purpose.
+
+- Replace `{nginx-ingress-ip-address}` with the external ip address of the nginx ingress controller and then run the below command to deploy the affected services to the cluster.
 
     ```bash
     ./deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
@@ -157,11 +197,37 @@ The above script will deploy the following services :
 
 ## Verify the deployed sales aggregator
 
-// TO DO - Explain more
+- Wait till the `websalesagg` pod is up and running. Then you'll be able to access the `websalesagg` API. But at this point, `websalesagg` is only available for the internal resources to consume and you'll not able to access the `websalesagg` outside the Kubernetes cluster yet. For that, you'll have to configure the ingress object for that and you'll explore those concepts in the next unit.
 
-- Wait till the `websalesagg` pod is up and running. Then you'll be able to access the websalesagg only through clusterIP
+- As of now, to access the `websalesagg` API you can use the cluster IP. You can follow the below steps :
+- Run the below command to fetch the pod name of the `WebSPA` app.
+
+    ```bash
+    kubectl get pods | grep `webspa`
+    ```
+
+    // TO DO - better to include one more image in here.
+
+- Then run the below command to get into the pod. Make sure you replace `{webspa-pod-name}` with the pod name which you have noted in the previous step.
+
+    ```bash
+    kubectl exec -it {webspa-pod-name} /bin/bash
+    ```
+
+- And also take a note of the cluster ip of the `websalesagg` pod by using the below command.
+
+    ```bash
+    kubectl get pods | grep `websalesagg`
+    ```
+
+    // TO DO - Include cluster ip related image.
+
+- Within the pod, you run the below CURL command to see if it's accessible.
+
+    ```bash
+    curl http://<clusterip-of-websalesagg-pod>//websalesagg/swagger/index.html
+    ```
 
     ![Curl of internal websaleagg pod request](../media/curl-of-internal-pod-request.png)
 
-At this point, `websalesagg` is only available for the internal resources to consume. You'll not able to access the `websalesagg` outside the Kubernetes cluster.
-You'll need to configure the ingress object for that. You'll explore those concepts in the next unit.
+In the next unit, you'll configure ingress object to access the API outside of Kubernetes cluster.
