@@ -11,6 +11,9 @@ metadata:
 title: Explore conversational AI
 prerequisites: |
   Ability to navigate the Azure portal
+video:
+  title: "Explore Conversational AI"
+  url: https://www.microsoft.com/en-us/videoplayer/embed/RWxRGW
 summary: |
   Conversational AI is an artificial intelligence workload that deals with dialogs between AI agents and human users.
 iconUrl: /learn/achievements/explore-conversational-ai.svg
