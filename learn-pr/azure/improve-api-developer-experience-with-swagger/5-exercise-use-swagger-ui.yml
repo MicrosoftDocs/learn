@@ -10,8 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: 
-interactive: bash
-azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-use-swagger-ui.md)]
