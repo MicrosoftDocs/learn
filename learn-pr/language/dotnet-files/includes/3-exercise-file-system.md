@@ -32,8 +32,8 @@ A starter project has already been created and you'll clone it using the integra
     code -a .
     ```
 
-> [!TIP]
-> At this point Visual Studio Code will prompt you to that required assets to build and run the project are missing. And it asks whether you want to install them. Select **Yes**. These files allow Visual Studio Code to run the debug the project.
+   > [!TIP]
+   > At this point Visual Studio Code will prompt you to that required assets to build and run the project are missing. And it asks whether you want to install them.    Select **Yes**. These files allow Visual Studio Code to run the debug the project.
 
 1. Expand the *stores* folder and each of the numbered folders inside.
 
