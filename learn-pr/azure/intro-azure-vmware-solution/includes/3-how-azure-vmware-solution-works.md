@@ -76,12 +76,15 @@ Once Azure VMware Solution is deployed into your subscription, Azure Monitor log
 
 ### Interconnectivity into Azure
 
-:::image type="content" source="../media/3-avs_networkingoverview.png" alt-text="Azure VMware Solution networking overview":::
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
 
 - Azure ExpressRoute
 - VPN connections
 - Azure Virtual WAN
+
+The diagram below shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
+
+:::image type="content" source="../media/3-avs_networkingoverview.png" alt-text=" Diagram Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
 
 These services require specific network address ranges and firewall ports for enabling the services. 
 
@@ -109,8 +112,9 @@ You can use Azure storage services in workloads running in your private cloud. T
 - Storage Accounts 
 - Table Storage
 - Blob Storage
-
-:::image type="content" source="../media/3-avs_storageoverview.png" alt-text="Azure VMware Solution storage overview":::
+ 
+The below diagram shows the available Azure Storage services that can be used with Azure VMware Solution.
+:::image type="content" source="../media/3-avs_storageoverview.png" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
 
 
 ### Security and compliance with Azure VMware Solutions
@@ -126,9 +130,9 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
 
-vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The diagram below illustrates the relationship of the encryption keys to Azure VMware Solution.
 
-:::image type="content" source="../media/3-avs_securityoveriew.png" alt-text="Azure VMware Solution security overview":::
+:::image type="content" source="../media/3-avs_securityoveriew.png" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
 ## Get started with AVS
 

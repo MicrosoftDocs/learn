@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure VMware Solution
   description: When to use Azure VMware Solution
   ms.date: 01/11/2021
-  author: jdooley-clt
-  ms.author: jedooley
+  author: exchangegoddess
+  ms.author: phschmit
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which business need does the Azure VMware Solution is suited for?"
+  - content: "Which business need does the Azure VMware Solution is best suited for?"
     choices:
     - content: "Enterprises that want to reduce their datacenter footprint"
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
     - content: "Customers that don't want a fast path to the cloud by Migrating existing assets “as is”"
       isCorrect: false
       explanation: "Replicate existing IT systems, apps, and workloads natively in Azure (also known as a “lift and shift” migration) without needing to change them beforehand."
-  - content: "Which scenario isn't a good option for AVS?"
+  - content: "Which scenario isn't a good option for the Azure VMware Solution?"
     choices:
     - content: "Customers that can't move to cloud services "
       isCorrect: true
