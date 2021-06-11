@@ -4,6 +4,8 @@ Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's s
 ## On-premises VMware vs. Azure VMware Solution
 On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
 
+:::image type="content" source="../media/3-azure-vmware-solution-responsibility-matrix.png" alt-text="Azure VMware Solution shared support matrix":::
+
 ### What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
 
@@ -73,6 +75,8 @@ NSX-T is the only supported version of NSX. New clusters added to an existing pr
 Once Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. Azure Monitor can be used to monitor VM patterns inside the Azure VMware Solution.
 
 ### Interconnectivity into Azure
+
+:::image type="content" source="../media/3-avs_networkingoverview.png" alt-text="Azure VMware Solution networking overview":::
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
 
 - Azure ExpressRoute
@@ -94,6 +98,7 @@ During the deployment of a private cloud the private networks for management, pr
 
 
 ### Private cloud storage 
+
 Azure VMware Solution uses native fully configured all-flash vSAN storage, local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default. De-duplication and compression are enabled on the vSAN datastore by default
 
 All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private cloud deployment and are available for use immediately.
@@ -104,6 +109,8 @@ You can use Azure storage services in workloads running in your private cloud. T
 - Storage Accounts 
 - Table Storage
 - Blob Storage
+
+:::image type="content" source="../media/3-avs_storageoverview.png" alt-text="Azure VMware Solution storage overview":::
 
 
 ### Security and compliance with Azure VMware Solutions
@@ -121,6 +128,7 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
 
+:::image type="content" source="../media/3-avs_securityoveriew.png" alt-text="Azure VMware Solution security overview":::
 
 ## Get started with AVS
 
