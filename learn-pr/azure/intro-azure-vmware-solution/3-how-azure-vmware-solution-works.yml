@@ -26,7 +26,7 @@ quiz:
     - content: "Microsoft manages the virtual machines."
       isCorrect: false
       explanation: "Microsoft doesn't manage the virtual machines."
-  - content: "Shannon wants to start migrating to AVS. What is minimum number of nodes must Shannon have to get started?"
+  - content: "Shannon wants to start migrating to AVS. What minimum number of nodes must Shannon have to get started?"
     choices:
     - content: "Three nodes"
       isCorrect: true
@@ -34,18 +34,18 @@ quiz:
     - content: "24 nodes"
       isCorrect: false
       explanation: "The minimum hosts required are 3 in a cluster."
-    - content: "16 nodes in a cluster"
+    - content: "16 nodes"
       isCorrect: false
-      explanation: "The maximum number of nodes in a cluster is 16"
+      explanation: "The maximum number of nodes in a cluster is 16."
   - content: "What does the cloudadmin role in the AVS vCenter do?"
     choices:
     - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
       isCorrect: false
       explanation: "The CloudAdmin user is a member of the cloudadmin role."
-    - content: "The CloudAdmin role creates and manages workloads in your private cloud"
+    - content: "The CloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
       explanation: "The CloudAdmin role creates and manages workloads in your private cloud."
-    - content: "The cloudadmin role has access to the ESXi hosts in Azure"
+    - content: "The cloudadmin role has access to the ESXi hosts in Azure."
       isCorrect: false
       explanation: "The CloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
   - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
