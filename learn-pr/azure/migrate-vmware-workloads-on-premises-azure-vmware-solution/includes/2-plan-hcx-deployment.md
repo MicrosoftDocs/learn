@@ -61,6 +61,6 @@ HCX offers a few different ways to migrate workloads:
 
 ## Scenario readiness and preparation for AVS
 
-Your company's production environment maintains a strict SLA. This means you'll need to select live migration to achieve minimal downtime as workloads move from on-premises to AVS. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in AVS.
+Your company's production environment maintains a strict SLA. What this means is you'll need to select live migration to achieve minimal downtime as workloads move from on-premises to AVS. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in AVS.
 
 In the next unit, we'll cover how to deploy and install the HCX Connector so you can begin migrating workloads to AVS. All steps will be outlined so you can successfully deploy and install the service in your environment.

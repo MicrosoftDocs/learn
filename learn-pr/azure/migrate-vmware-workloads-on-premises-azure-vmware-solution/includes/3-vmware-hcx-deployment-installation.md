@@ -21,7 +21,9 @@ Before deploying the HCX Connector appliance in the on-premises vCenter, the VMw
 
 1. Use the cloudadmin@vsphere.local user credentials to sign in.
 
-1. Within HCX Cloud Manager, select **Administration > System Updates** and then select **Request Download Link**.
+1. Within HCX Cloud Manager, select **Administration > System Updates** and then select **Check for Updates**. 
+
+1. After HCX checks for a software update, select **Request Download Link**.
 
     :::image type="content" source="../media/3-request-hcx-download-link.png" alt-text="Screen shot that shows where to request a download link to the HCX connector OVA file for the on-premises VMware environment.":::
 
@@ -91,7 +93,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
     :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screen shot after the HCX Advanced key has been requested from the Azure portal.":::
 
-1. Use the admin credentials configured earlier to sign in to the on-premises VMware HCX Manager at https://x.x.x.x:9443 (replace the x's with the IP address configured for the on-premises appliance).
+1. Use the admin credentials configured earlier to sign in to the on-premises VMware HCX Manager at https://x.x.x.x:9443. Replace the x's with the IP address configured for the on-premises appliance.
 
 1. When prompted, enter your key for **HCX License Key** and select **Activate**.
 
@@ -125,7 +127,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. After the appliance restarts, log back into the HCX Manager on-premises.
 
-1. If configured correctly, vCenter will display with a green circle once you log in.
+1. If configured correctly, vCenter will display with a green circle once you sign in.
 
 1. Additionally, SSO will indicate it is configured to use the Platform Services Controller (PSC) on-premises.
     

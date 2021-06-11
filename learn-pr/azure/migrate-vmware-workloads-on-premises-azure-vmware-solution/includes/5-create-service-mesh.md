@@ -11,15 +11,15 @@ To successfully establish a service mesh with AVS, the following networking requ
 |Requirement | Reason  |
 |---------|---------|
 | UDP ports 500/4500 | These ports need to be open between the HCX Connector 'uplink' and the AVS HCX Cloud 'uplink' network profile addresses. |
-| VMware HCX Manager required ports | Reference the VMware HCX URL at the end of this module for a comprehensive list of required open ports between the source and destination sites. |
+| VMware HCX Manager required ports | Reference the VMware HCX URL at the end of this module. The URL provides a comprehensive list of required open ports between source and destination sites. |
 
 After the networking ports are confirmed and tested as open, you'll go through the following steps to enable a service mesh.
 
-1. From within the HCX Connector dashboard on-premises, under **Infrastructure**, select **Interconnect > Service Mesh > Create Service Mesh**.
+1. From within the HCX Connector dashboard on-premises, under **Infrastructure**, selects **Interconnect > Service Mesh > Create Service Mesh**.
 
     :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of selecting options to create a service mesh in the on-premises HCX Connector.":::
 
-1. Review the pre-populated sites created during site pairing and select **Continue**. If this is the first service mesh configuration, the first screen doesn't need modification.
+1. Review the pre-populated sites created during site pairing and select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
 1. Select both the source and remote compute profiles from the drop-down lists and select **Continue**. These selections define where VMs can use HCX services for migration.
 
@@ -31,7 +31,7 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
 1. In **Advanced Configuration - Override Uplink Network profiles** select **Continue**. Uplink network profiles connect to the network where the remote site's interconnect appliances can be reached.
 
-1. In **Advanced Configuration - Network Extension Appliance Scale Out**, review and select **Continue**. Customers can add up to eight VLANs per appliance on-premises. If additional VLANs are required, you'll deploy  another appliance to add another eight VLANs. Customers must also have the CIDR IP address space to account for additional appliances. For more information, see the VMware HCX Configuration Limits link at the end of this module.
+1. In **Advanced Configuration - Network Extension Appliance Scale Out**, review and select **Continue**. Customers can add up to eight VLANs per appliance on-premises. If more VLANs are required, you'll deploy  another appliance to add another eight VLANs. Customers must also have the CIDR IP address space to account for other appliances. For more information, see the VMware HCX Configuration Limits link at the end of this module.
 
     :::image type="content" source="../media/5-extend-networks-increase-vlan.png" alt-text="Screenshot that shows where to increase the VLAN count.":::
 

@@ -9,7 +9,7 @@ metadata:
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-vmware-hcx-deployment-installation.md)]
 quiz:

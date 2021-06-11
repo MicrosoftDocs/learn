@@ -9,6 +9,6 @@ metadata:
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-configure-networking-compute-profiles.md)]

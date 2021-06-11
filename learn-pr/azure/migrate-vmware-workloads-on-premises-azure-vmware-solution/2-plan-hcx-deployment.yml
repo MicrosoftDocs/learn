@@ -9,7 +9,7 @@ metadata:
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-hcx-deployment.md)]
 quiz:

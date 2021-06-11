@@ -8,11 +8,13 @@ Azure VMware Solution (AVS) delivers an in-depth VMware environment as a service
 | NSX-T | Software-defined networking solution that extends across datacenters, clouds, and application frameworks.
 | HCX | Software-defined abstraction layer between on-premises and AVS for VM migrations. |
 
-VMware's Hybrid Cloud Exchange (HCX) provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of Azure services.
+VMware's Hybrid Cloud Exchange (HCX) provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of Azure services. The following diagram shows
 
-## Example Scenario
+:::image type="icon" source="../media/1-hcx-diagram.png" border="false" alt-text="High-level overview of the datacenter on-premises with VMs, migrating VMs to Azure using HCX.":::
 
-Imagine you work for a healthcare company that runs production workloads on a VMware platform. Your company decided to migrate existing VMware workloads to Azure VMware Solution (AVS). By using AVS, your company doesn't have to change virtualization platforms or alter existing operational patterns. You've planned for and deployed AVS. Now you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
+## Example scenario
+
+Imagine you work for a healthcare company that runs production workloads on a VMware platform. Your company decided to migrate existing VMware workloads to Azure VMware Solution (AVS). Your company doesn't have to change virtualization platforms or alter existing operational patterns by using AVS. You've planned for and deployed AVS. Now you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
 
 ## What will we be doing?
 
@@ -20,4 +22,4 @@ First, you'll learn how to plan for the Hybrid Cloud Exchange (HCX) Connector de
 
 ## What is the main goal?
 
-The main goal is to quickly migrate VMware VMs on-premises into Azure VMware Solution to help your company out with aging hardware and new hardware requests.
+The main goal is to quickly migrate VMware VMs on-premises into Azure VMware Solution to help out your company with aging hardware and new hardware requests.
