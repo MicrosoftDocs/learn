@@ -23,26 +23,3 @@ To access the data from the storage target, the cache typically exchanges traffi
 Because bandwidth can be low and slow the transfer of information, an ExpressRoute is recommended to accelerate data transfer. While it's not required, a dedicated line like an ExpressRoute is recommended to provide faster data transfers than relying on public internet communication alone.
 
 ![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../resources/3-what-is-hpc-cache-01.png)
-
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
-
-    Goal:
-        Cover the components of <product> and how they work.
-        Repeat this pattern multiple times as needed.
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
