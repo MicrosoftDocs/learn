@@ -15,47 +15,47 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are two benefits to the migration process using Azure VMware Solution?"
+  - content: "What are two components that is managed and supported by Microsoft on Azure VMware Solution?"
     choices:
-    - content: "Extensive downtime is required."
+    - content: "Tier 1 gateways."
       isCorrect: false
-      explanation: "The passkey is shown on the **Device Details** page in the Azure portal."
-    - content: "It eliminates the need and cost of re-skilling."
+      explanation: "Tier 1 gateways are managed by the customer."
+    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
       isCorrect: true
-      explanation: "The security key is too sensitive to be displayed on the device."
-    - content: "It encourages the creation of new skills and the learning of new tools."
-      isCorrect: false
-      explanation: "The device is encrypted, so you can't get the passkey from the device itself."
-  - content: "Which of the AVS Security Building Blocks includes patch management and audit trails?"
+      explanation: "Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN)The security key is too sensitive to be displayed on the device."
+    - content: "Microsoft manages the lifecycle management of NSX-T appliances"
+      isCorrect: true
+      explanation: "Microsoft manages the lifecycle management of NSX-T appliances."
+  - content: "Shannon wants to start migrating to AVS. What is minimum amount of nodes must she have to get started?"
     choices:
-    - content: "Azure Inherited Security"
+    - content: "16 nodes in a cluster"
       isCorrect: false
-      explanation: "The PageBlob folder is the correct place to copy the VHDX."
-    - content: "VMware Inherited Security"
+      explanation: "The maximum hosts in a cluster are 16."
+    - content: "24 nodes"
       isCorrect: false
-      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
-    - content: "Private Cloud Security"
+      explanation: "The minimum hosts required are 3 in a cluster."
+    - content: "3 nodes"
       isCorrect: true
-      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
-  - content: "Shannon is considering leveraging Reserved Instances to reduce the cost of dedicated nodes. What discount level should she expect to see over standard pricing?"
+      explanation: "The minimum hosts required are 3 in a cluster."
+  - content: "What does the cloudadmin role in the AVS vCenter do ?"
     choices:
-    - content: "10%-20%"
+    - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
       isCorrect: false
-      explanation: "The PageBlob folder is the correct place to copy the VHDX."
-    - content: "30%-50%"
+      explanation: "The CloudAdmin user is a member of the cloudadmin role which creates and manages workloads in your private cloud."
+    - content: "The CloudAdmin role creates and manages workloads in your private cloud"
       isCorrect: true
-      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
-    - content: "60%-90%"
+      explanation: "The CloudAdmin role creates and manages workloads in your private cloud."
+    - content: "The cloudadmin role has access to the ESXi hosts in Azure"
       isCorrect: false
-      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+      explanation: "The private cloud role doesn't have access to and can't configure specific management components supported and managed by Microsoft.."
   - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
     choices:
     - content: "James is responsible for doing it himself."
       isCorrect: false
-      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+      explanation: "Microsoft manages all the support and patching of hosts."
     - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
       isCorrect: true
-      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+      explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
     - content: "VMware support is responsible for the ESXi Hosts and Host Patching."
       isCorrect: false
-      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+      explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
