@@ -93,16 +93,3 @@ The following table provides the performance characteristics of standard HDDs in
 
 Use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
 
-### Cost of Azure managed disks
-
-Use the following considerations to estimate the price for Azure managed disks.
-
-- Disk Size. You pay the cost of the managed disk for the provisioned size on a per hour basis. For example, if you provision 1 TiB (1024 GiB) Standard SSD disk, but you occupy 100 GiB, and you're using the disk for one month, you'll pay the monthly value for the E30 offering.
-- Snapshots. The snapshots are billed based on used capacity.
-- Outbound data transfers. Data transfer within the same zone is free of charge. Between zones, data transfer is charged per GB and transfer between different regions generates additional cost.
-- Transactions. For Standard SSD disks, billing is based on the number of I/O operations that are less than or equal to 256 KiB of throughput. For Standard HDD disks, each I/O operation is considered as a transaction, regardless of the throughput.
-
-> [!Note]
-> Premium SSD and Ultra Disks aren't charged based on transactions.
-
-The cost of Ultra Disks depends on its size and performance configurations. You're billed based on the provisioned size, IOPS, and throughput.
