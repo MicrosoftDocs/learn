@@ -22,14 +22,16 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Configure** tab, select **ASP.NET Core**.
 
+    :::image type="content" source="../media/6-configure-app-type.png" alt-text="Locating ASP.NET Core from the list of provided application types.":::
+
     > [!NOTE]
     > If you don't see this option, select **Show more**. Don't select **ASP.NET Core (.NET Framework)**.
 
 1. On the **Review** tab, note the initial build configuration.
 
-    ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
+    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Azure Pipelines showing the initial build configuration":::
 
-    This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core. 
+    This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
 
 1. On the **Review** tab, select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.
 
@@ -39,7 +41,7 @@ Under **Jobs**, select **Job**. Next, trace the build process through each of th
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
-![Initial build configuration](../media/6-initial-build.png)
+:::image type="content" source="../media/6-initial-build.png" alt-text="Azure Pipelines showing output from the initial build configuration.":::
 
 This configuration is a great start because now you have a place to add build tasks. However, it needs to be updated to meet the needs of the Tailspin team, such as to minify JavaScript and CSS files.
 
@@ -50,7 +52,7 @@ This configuration is a great start because now you have a place to add build ta
 
 Now that you have a working build process, you can start to add build tasks.
 
-Remember that you're working from the `master` branch. To hold your work, you'll now create a branch named `build-pipeline`. The branch gives you a place to experiment, and get your build working completely without affecting the rest of the team.
+Remember that you're working from the `main` branch. To hold your work, you'll now create a branch named `build-pipeline`. The branch gives you a place to experiment, and get your build working completely without affecting the rest of the team.
 
 You can add build tasks to *azure-pipelines.yml* directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. Here, you'll modify *azure-pipelines.yml* locally and push, or upload, your changes to GitHub. Doing it this way lets you practice your Git skills. Watch the pipeline automatically build the app when you push up changes.
 
@@ -61,10 +63,10 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
 1. In Visual Studio Code, go to the integrated terminal.
 
-1. To fetch the latest changes from GitHub and update your `master` branch, run this `git pull` command.
+1. To fetch the latest changes from GitHub and update your `main` branch, run this `git pull` command.
 
     ```bash
-    git pull origin master
+    git pull origin main
     ```
 
     You see from the output that Git fetches a file named *azure-pipelines.yml*. This is the starter pipeline configuration that Azure Pipelines created for you. When you set up the pipeline, Azure Pipelines adds this file to your GitHub repository.
@@ -101,7 +103,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You can also define your own variables, which you'll do soon.
 
-    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to steps you performed earlier.
 
@@ -114,13 +116,13 @@ In practice, you might add build tasks one at a time, push up your changes, and 
     git push origin build-pipeline
     ```
 
-    This time, you push the `build-pipeline` branch, not the `master` branch, to GitHub.
+    This time, you push the `build-pipeline` branch, not the `main` branch, to GitHub.
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
 1. In Azure Pipelines, go to your build. To do so, on the side of the page, select **Pipelines**, and then select your pipeline. You see your commit message and that the build is running using the code from the `build-pipeline` branch.
 
-    ![Azure Pipelines showing the latest build](../media/6-build-history.png)
+    :::image type="content" source="../media/6-build-history.png" alt-text="Azure Pipelines showing the run history, including the branch you recently pushed to GitHub.":::
 
     > [!TIP]
     > If you don't see the build right away, wait a few moments, or refresh the page.
@@ -129,14 +131,14 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     For example, here's what happens when the `gulp@1` task runs to perform the gulp tasks that minify JavaScript and CSS assets:
 
-    ![Tracing the gulp tasks](../media/6-gulp-task.png)
+    :::image type="content" source="../media/6-gulp-task.png" alt-text="Tracing the gulp tasks in Azure Pipelines.":::
 
     If any step fails, you'll see the error in the output so you can diagnose and repair the failure.
 
     Earlier, you ran a more minimal build configuration. This time, when the build is completed, you see a more complete set of tasks needed to build the app.
 
-    ![Azure Pipelines showing the complete list of build tasks](../media/6-add-build-tasks.png)
+    :::image type="content" source="../media/6-add-build-tasks.png" alt-text="Azure Pipelines showing the complete list of build tasks.":::
 
 1. After your build is completed, select any of the steps to see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
-    ![Azure Pipelines showing the complete list of build tasks with one selected](../media/6-build-summary.png)
+    :::image type="content" source="../media/6-build-summary.png" alt-text="Azure Pipelines showing the complete list of build tasks. The Run gulp tasks task is selected.":::

@@ -58,16 +58,16 @@ HTML provides content headings, such as the `<h1>` tag. In Markdown, this is sup
 Image and site links use a very similar syntax.
 
 ```markdown
-![Link an image](https://docs.microsoft.com/learn/azure-devops/shared/media/mara.png)
+![Link an image](/learn/azure-devops/shared/media/mara.png)
 ```
 
-> ![Link an image](https://docs.microsoft.com/learn/azure-devops/shared/media/mara.png)
+> ![Link an image](/learn/azure-devops/shared/media/mara.png)
 
 ```markdown
-[Link to Microsoft Learn](https://docs.microsoft.com/learn)
+[Link to Microsoft Learn](/learn)
 ```
 
-> [Link to Microsoft Learn](https://docs.microsoft.com/learn)
+> [Link to Microsoft Learn](/learn)
 
 ### Making lists
 

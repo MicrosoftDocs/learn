@@ -11,7 +11,6 @@ metadata:
 title: Build mixed reality digital twins with Azure Digital Twins and Unity
 summary: Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
 prerequisites: |
-  - A HoloLens 2 device
   - Azure service creation and configuration
   - Basic familiarity with Unity, C#, and GitHub
   - Domain User Azure Active Directory (i.e, not Guest)
@@ -28,8 +27,23 @@ levels:
 - beginner
 roles:
 - developer
+- business-owner
+- student
+- technology-manager
 products:
 - azure
+- azure-cloud-services
+- azure-cognitive-services
+- azure-digital-twins
+- azure-iot
+- azure-iot-hub
+- azure-signalr-service
+- azure-event-grid
+- azure-event-hubs
+- azure-functions
+- hololens
+- windows
+- windows-mixed-reality 
 modules:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 - learn.azure.build-3d-scene-mixed-reality-unity

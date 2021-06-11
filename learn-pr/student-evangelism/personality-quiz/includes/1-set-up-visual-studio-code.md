@@ -3,7 +3,7 @@ Before you jump in to writing a program to decode messages, you should make sure
 Let's start by creating a folder on your computer where you can easily find it. Call it *Sleuth*. For example, you might create it in your *Documents* folder.
 
 > [!NOTE]
-> If you already followed the previous module in this learning path where you [decoded a secret message](https://docs.microsoft.com/learn/modules/secret-message/?azure-portal=true), you can use the same folder as before.
+> If you already followed the previous module in this learning path where you [decoded a secret message](/learn/modules/secret-message/?azure-portal=true), you can use the same folder as before.
 
 :::image type="content" source="../media/create-folder.png" alt-text="Screenshot that shows creating the Sleuth folder.":::
 

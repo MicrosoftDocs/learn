@@ -46,7 +46,7 @@ Manual testing has its benefits. But as your code base grows in size, testing al
 
 When we think about automated testing, it's common to separate tests into layers. Mike Cohn proposes this concept, known as the _test pyramid_, in his book _Succeeding with Agile_.
 
-![Screenshot of test pyramid showing the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.](../media/2-test-pyramid.png)
+:::image type="content" source="../media/2-test-pyramid.png" alt-text="A diagram showing the test pyramid. The pyramid shows the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.":::
 
 Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels of your software (callout 1 in the pyramid), such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer (callout 2 in the pyramid). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
 
@@ -142,4 +142,4 @@ No matter what language your application is written in, there's likely a number 
 
 For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
 
-For the _Space Game_ website, which is a .NET Core application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.
+For the _Space Game_ website, which is a .NET application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.

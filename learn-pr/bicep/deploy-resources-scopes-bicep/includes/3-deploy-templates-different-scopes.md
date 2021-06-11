@@ -14,7 +14,7 @@ You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGro
 
 ## Create resource groups
 
-Now that you understand how to create deployments at various scopes, try applying this understanding to creating a management group, which is a subscription-scoped resource:
+Now that you understand how to create deployments at various scopes, try applying this understanding to creating a resource group, which is a subscription-scoped resource:
 
 :::code language="plaintext" source="code/3-create-rg.bicep" highlight="1" :::
 
@@ -57,7 +57,7 @@ Azure stores metadata about each deployment. Unlike deployments at the resource 
 
 - **Location**: The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments, because resource groups are created in a location already and that location is used for its deployment metadata. But when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location though.
 
-- **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name, but if you don't, the file name of the template file will be used as the deployment name.
+- **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name, but if you don't, the filename of the template file will be used as the deployment name.
 
 > [!IMPORTANT]
 > The combination of the scope, location, and name must be unique. For example, if you create a subscription deployment named `my-deployment` and use the East US location to store its metadata, you can't then create another deployment to the same subscription also named `my-deployment`, but put it in West Europe. However, you can create another deployment named `my-deployment` in East US, and it will overwrite the older deployment.

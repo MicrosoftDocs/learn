@@ -11,4 +11,4 @@ In this module, you've explored different ways to use Storage Explorer to connec
 To learn more about Storage Explorer, see the following articles:
 
 - [Azure Storage Explorer download](https://azure.microsoft.com/features/storage-explorer/)
-- [Use Azure Storage Explorer to manage directories, files, and ACLs in Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-explorer)
+- [Use Azure Storage Explorer to manage directories, files, and ACLs in Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-explorer)
