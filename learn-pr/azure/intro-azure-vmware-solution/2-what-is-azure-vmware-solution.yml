@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a key feature of Azure VMware Service?"
+  - content: "Which of the following features is a key to Azure VMware Service?"
     choices:
     - content: "Seamlessly modernize apps over time with Azure services"
       isCorrect: true
@@ -28,9 +28,9 @@ quiz:
       explanation: "XYZ"
   - content: "What are two native Azure services that can be integrated the Azure VMware Solution?"
     choices:
-    - content: "Azure DataBricks"
+    - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Data Box Edge is an online physical appliance that provides for data preprocessing and machine learning before transfer to the cloud."
+      explanation: "Azure Databricks is currently not available to integrate with AVS."
     - content: "Azure Monitor"
       isCorrect: true
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."

@@ -15,25 +15,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which 2 business need does the Azure VMware Solution is suited for?"
+  - content: "Which business need does the Azure VMware Solution is suited for?"
     choices:
     - content: "Enterprises that want to reduce their datacenter footprint"
       isCorrect: true
       explanation: "Enterprises looking to get out of the datacenter business can use Azure as a way to enable decommissioning legacy infrastructure."
     - content: "Organizations that don't want to use cloud services"
       isCorrect: false
-      explanation: "AVS is not for customers that don't want to cloud services."
-    - content: "Customers that want a fast path to the cloud by Migrating existing assets “as is”"
-      isCorrect: true
-      explanation: "Replicate existing IT systems, apps, and workloads natively in Azure (also known as a “lift and shift” migration) without needing to change them beforehand.."
-  - content: "Which scenario is not a good option for AVS?"
+      explanation: "AVS isn't for customers that don't want to cloud services."
+    - content: "Customers that don't want a fast path to the cloud by Migrating existing assets “as is”"
+      isCorrect: false
+      explanation: "Replicate existing IT systems, apps, and workloads natively in Azure (also known as a “lift and shift” migration) without needing to change them beforehand."
+  - content: "Which scenario isn't a good option for AVS?"
     choices:
     - content: "Customers that can't move to cloud services "
       isCorrect: true
-      explanation: "AVS is not suited for customers that can't move to cloud services."
+      explanation: "AVS is not suited for customers that can't move to the cloud."
     - content: "Customers looking to modernize with native Azure services "
       isCorrect: false
-      explanation: "Native Azure services is not suited for customers who can't move to cloud services ."
-    - content: "Customers looking for additional disaster recovery and business continuity options with Azure "
+      explanation: "Native Azure services aren't suited for customers who can't move to cloud services."
+    - content: "Customers looking for more disaster recovery and business continuity options with Azure "
       isCorrect: false
-      explanation: "Azure services is not suited for customers who can't move to cloud services."
+      explanation: "Azure services are not suited for customers who can't move to cloud services."

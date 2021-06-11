@@ -15,18 +15,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are two components that is managed and supported by Microsoft on Azure VMware Solution?"
+  - content: "What component is managed and supported by Microsoft on Azure VMware Solution?"
     choices:
     - content: "Tier 1 gateways."
       isCorrect: false
       explanation: "Tier 1 gateways are managed by the customer."
     - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
       isCorrect: true
-      explanation: "Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN)The security key is too sensitive to be displayed on the device."
-    - content: "Microsoft manages the lifecycle management of NSX-T appliances"
-      isCorrect: true
-      explanation: "Microsoft manages the lifecycle management of NSX-T appliances."
-  - content: "Shannon wants to start migrating to AVS. What is minimum amount of nodes must she have to get started?"
+      explanation: "Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+    - content: "Microsoft manages the virtual machines"
+      isCorrect: false
+      explanation: "Microsoft doesn't manage  the virtual machines."
+  - content: "Shannon wants to start migrating to AVS. What is minimum number of nodes must Shannon have to get started?"
     choices:
     - content: "16 nodes in a cluster"
       isCorrect: false
@@ -34,23 +34,23 @@ quiz:
     - content: "24 nodes"
       isCorrect: false
       explanation: "The minimum hosts required are 3 in a cluster."
-    - content: "3 nodes"
+    - content: "Three nodes"
       isCorrect: true
       explanation: "The minimum hosts required are 3 in a cluster."
-  - content: "What does the cloudadmin role in the AVS vCenter do ?"
+  - content: "What does the cloudadmin role in the AVS vCenter do?"
     choices:
     - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
       isCorrect: false
-      explanation: "The CloudAdmin user is a member of the cloudadmin role which creates and manages workloads in your private cloud."
+      explanation: "The CloudAdmin user is a member of the cloudadmin role, which creates and manages workloads in your private cloud."
     - content: "The CloudAdmin role creates and manages workloads in your private cloud"
       isCorrect: true
       explanation: "The CloudAdmin role creates and manages workloads in your private cloud."
     - content: "The cloudadmin role has access to the ESXi hosts in Azure"
       isCorrect: false
-      explanation: "The private cloud role doesn't have access to and can't configure specific management components supported and managed by Microsoft.."
+      explanation: "The private cloud role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
   - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
     choices:
-    - content: "James is responsible for doing it himself."
+    - content: "James is responsible for doing it."
       isCorrect: false
       explanation: "Microsoft manages all the support and patching of hosts."
     - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
