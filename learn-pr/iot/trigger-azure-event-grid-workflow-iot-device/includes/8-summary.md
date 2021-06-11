@@ -11,9 +11,9 @@ In this module, you learned how to:
 
 Take your interest further with:
 
-* [Azure IoT Hub documentation](https://docs.microsoft.com/azure/iot-hub/)
-* [Azure Event Grid documentation](https://docs.microsoft.com/azure/event-grid/)
-* [Azure Logic Apps documentation](https://docs.microsoft.com/azure/logic-apps/)
+* [Azure IoT Hub documentation](/azure/iot-hub/)
+* [Azure Event Grid documentation](/azure/event-grid/)
+* [Azure Logic Apps documentation](/azure/logic-apps/)
   
 And look out for additional Learn modules on IoT Hub.
 

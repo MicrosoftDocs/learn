@@ -51,4 +51,4 @@ You're now ready to join session three! :-)
 
 ## Resources
 
-- Documentation: [Continuous deployment to Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment)
+- Documentation: [Continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment)

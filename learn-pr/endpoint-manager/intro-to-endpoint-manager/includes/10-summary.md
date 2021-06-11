@@ -18,4 +18,4 @@ To determine your mobile device management and mobile application management nex
 
 For more information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

@@ -1,4 +1,4 @@
-Rust is an open-source, systems programming language that helps you write faster, more reliable software. Rust offers control over low-level details like memory usage in combination with high-level concepts like iteration and interfaces. These features reduce the hassle traditionally associated with low-level languages like C and C++.
+Rust is an open-source, systems programming language that you can use to develop efficient, safe software. With Rust, you can manage memory and control other low-level details. But you can also take advantage of high-level concepts like iteration and interfaces. These features set Rust apart from low-level languages like C and C++.
 
 Rust also offers the following advantages that make it a great fit for a wide range of applications:
 
@@ -10,4 +10,4 @@ Rust also offers the following advantages that make it a great fit for a wide ra
 - **Targets bare-metal:** Rust can target embedded and "bare metal" programming, making it suitable to write an operating system kernel or device drivers.
 
 
-According to the [Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey?azure-portal=true) of 2020, Rust has been the most loved language for several years in a row. Developers enjoy programming with Rust! Hundreds of companies, from startups to large enterprises, are using Rust in production for their unique use cases. From building tools, to writing web apps, working on servers, and creating embedded devices, the possibilities are limitless.
+According to the [Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey?azure-portal=true) of 2020, Rust has been the most loved language for several years in a row. Developers enjoy programming with Rust! Many types of organizations, from startups to large enterprises, use Rust for their unique use cases. From building tools, to writing web apps, working on servers, and creating embedded systems, the possibilities are limitless.

@@ -4,13 +4,19 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
 
-1. Select **Azure Active Directory** > **Groups** > **New Group**.
+1. On the home page, under **Azure services**, select **Azure Active Directory**.
 
-1. Enter the following information:
+1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Azure AD.
 
-   - **Group type**: _Security_
-   - **Group name**: _Developer group_
-   - **Group description**: *Developer team*
+1. On the top menu bar, select **New group**. The **New Group** pane appears.
+
+1. Enter the following values for each setting.
+
+    | **Setting** | **Value** |
+    |-----------|---------|
+    | Group type | Security |
+    | Group name | Developer group |
+    | Group description | Developer team |
 
 1. Select **Create**. The new group now appears in the list of Groups.
 
@@ -20,7 +26,9 @@ You'll now assign members to the Developer group.
 
 1. Select the **Developer group**.
 
-1. Select **Members** > **Add members**.
+1. In the left menu pane, under **Manage**, select **Members**. The **Members** pane appears.
+
+1. On the top menu bar, select **Add members**.
 
    ![Screenshot that shows Add member button.](../media/5-add-group-member.png)
 
@@ -48,13 +56,14 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
    | Field  |Value  |
    |---------|---------|
-   | Property    |    Country     |
-   | Operator    | Equals         |
-   | Value     |      United States  |
+   | Property  | Country |
+   | Operator  | Equals  |
+   | Value     | United States  |
 
    The membership of this group now depends on whether the user is in the United States.
 
 1. Select another field to enable **Save**.
+
 1. Select **Save**.
 
 1. Under **Manage**, select **Members**. You see that the **Add members** button is now disabled.

@@ -26,7 +26,7 @@ To learn more about the topics in this module, check out the following links:
 
 - [Microsoft Security Intelligence](https://www.microsoft.com/wdsi)
 - [Azure Security Center overview](https://azure.microsoft.com/services/security-center/)
-- [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/)
-- [Microsoft Antimalware](https://docs.microsoft.com/azure/security/fundamentals/antimalware)
+- [Azure Security Center documentation](/azure/security-center/)
+- [Microsoft Antimalware](/azure/security/fundamentals/antimalware)
 - [Azure Security blog](https://azure.microsoft.com/blog/topics/security/)
-- [ARM template to test a virus attack on an Azure VM](https://aka.ms/ASCPlaybooksVAttack)
+- [ARM template to test a virus attack on an Azure VM](https://azure.microsoft.com/resources/templates/vm-virus-attack-prevention/)

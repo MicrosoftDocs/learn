@@ -284,7 +284,7 @@ deploymentName="deploymentscript-"$today
 az deployment group create \
     --resource-group $resourceGroupName \
     --name $deploymentName \
-    --template-file $templateFile
+    --template-file $templateFile \
     --parameters $templateParameterFile
 ```
 
@@ -318,7 +318,7 @@ New-AzResourceGroupDeployment `
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
 
 ```azurecli
-templateFile="azuredeploy.bicep"
+templateFile="main.bicep"
 templateParameterFile="azuredeploy.parameters.json"
 today=$(date +"%d-%b-%Y")
 deploymentName="deploymentscript-"$today
@@ -326,7 +326,7 @@ deploymentName="deploymentscript-"$today
 az deployment group create \
     --resource-group $resourceGroupName \
     --name $deploymentName \
-    --template-file $templateFile
+    --template-file $templateFile \
     --parameters $templateParameterFile
 ```
 
