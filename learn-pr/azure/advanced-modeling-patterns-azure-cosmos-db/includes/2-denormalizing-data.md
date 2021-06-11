@@ -1,5 +1,3 @@
-
-
 In this section, we are going to look at our product table from our relational database and model it for a NoSQL database. We are also going to look at the Many to Many relationship our Product table has with ProductTags.
 
 :::image type="content" source="../media/2-product-model.png" alt-text="Diagram that shows the relationship between the product and product tags entities." border="false":::

@@ -2,7 +2,7 @@ Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL
 
 To achieve this level of scalability, users need to understand the concepts, techniques and technologies for modeling and partitioning data unique to NoSQL databases. It's also important to understand how relational concepts, such as maintaining referential integrity, are applied in a NoSQL world.
 
-:::image type="content" source="../media/1-introduction.png" alt-text="show how Cosmos DB is horizontally scalable":::
+:::image type="content" source="../media/1-introduction.png" alt-text="Diagram that shows the horizontal scale for Azure Cosmos DB." border="false"::::
 
 ## Scenario
 
