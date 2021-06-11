@@ -14,7 +14,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 > [!div class="centered"]
 > ![An inference pipeline with changes indicated](../media/inference-changes.png)
 
-    Use the image for reference as you modify the pipeline in the next steps.
+   Use the image for reference as you modify the pipeline in the next steps.
 
 4. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
 
