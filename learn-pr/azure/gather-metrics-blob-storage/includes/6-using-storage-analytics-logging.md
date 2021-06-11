@@ -54,7 +54,7 @@ For example, the logs for files in Blob Storage between 4 PM and 5 PM on Februar
 
 You can view or retrieve log files for analysis in various ways:
 
-- You can download logs by using the AzCopy.exe command-line tool. AzCopy is available in Azure Cloud Shell, or you can download the latest version from the [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10) article.
+- You can download logs by using the AzCopy.exe command-line tool. AzCopy is available in Azure Cloud Shell, or you can download the latest version from the [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10) article.
 - You can use [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 - You can download logs programmatically.
 - You can view log data by using the Log Analytics tool in the Azure portal.

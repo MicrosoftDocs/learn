@@ -1,4 +1,4 @@
-Once you've configured your environment, you're ready to start analyzing and testing certain components of a potential solution architecture. In the bus-catching scenario, and for many other modern applications, a modern database is required to store, process, and serve data. Let's explore how Azure SQL Database meets the needs of modern applications.
+After you've configured your environment, you're ready to start analyzing and testing certain components of a potential solution architecture. In the bus-catching scenario, and for many other modern applications, a modern database is required to store, process, and serve data. Let's explore how Azure SQL Database meets the needs of modern applications.
 
 ## Scale to meet demand with flexible Azure SQL Database options
 
@@ -16,7 +16,7 @@ Another key requirement of a modern database is the ability to handle and suppor
 
 ## Future-proof your applications using Azure SQL
 
-During the lifetime of your application, you'll want to use different technologies to be as efficient as possible. For example, you may want to use a Graph model to easily track and model a complex network relationship, like a social network or power grid. Or, maybe you'll need to quickly aggregate a vast amount of data to calculate the growth rate of a certain value. In all these cases, and in many more, Azure SQL has you covered. It supports Graph models], Columnstore indexes, and even lock-free tables for the highest throughput (those tables are compiled data structures that are then loaded in-process to achieve high performance).
+During the lifetime of your application, you'll want to use different technologies to be as efficient as possible. For example, you may want to use a Graph model to easily track and model a complex network relationship, like a social network or power grid. Or, maybe you'll need to quickly aggregate a vast amount of data to calculate the growth rate of a certain value. In all these cases, and in many more, Azure SQL has you covered. It supports Graph models, Columnstore indexes, and even lock-free tables for the highest throughput (those tables are compiled data structures that are then loaded in-process to achieve high performance).
 
 For the bus-catching scenario, Azure SQL Serverless will be used so you only pay for what you need and use, due to autoscaling and autopause support. GitHub Actions will be used to create a deployment pipeline to update the database as needed. There are a few other capabilities that are required for the scenario, let's take a closer look at them. In the following exercise, you'll get hands-on with these capabilities.
 
@@ -37,9 +37,9 @@ More samples on how you can use JSON in Azure SQL are available at the end of th
 
 ### Analyze geospatial data with the native geospatial engine
 
-Azure SQL has a native geospatial engine that you can use to perform geospatial queries without installing external libraries or moving data, which could expensive for significant volumes of data. Azure SQL fully supports the Open Geospatial Consortium (OGC) standard, so exported data is usable by libraries like OpenLayers.
+Azure SQL has a native geospatial engine that you can use to perform geospatial queries without installing external libraries or moving data, which could be expensive for significant volumes of data. Azure SQL fully supports the Open Geospatial Consortium (OGC) standard, so exported data is usable by libraries like OpenLayers.
 
-Below is an example of how you can create a polygon, that will serve as your geofence in the bus-catching scenario, and check if a point, that will serve as your real-time bus data points, is within the polygon.
+The following example shows how you can create a polygon, that will serve as your geofence in the bus-catching scenario, and check if a point, that will serve as your real-time bus data points, is within the polygon.
 
 ```sql
 -- Microsoft Building 44
@@ -52,4 +52,4 @@ declare @p as geography = geography::STPointFromText('POINT(-122.13315058040392 
 select @p.STWithin(@bldg44)
 ```
 
-Since text format for the locations (for example, `POINT(-122.13315058040392 47.64101193601368)`) is a standard, known as Well-Known Text (WKT) format, it is possible to see the shape projected on a map just by copying and pasting the string. In the following exercise, you'll test it yourself with the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).
+Because text format for the locations (for example, `POINT(-122.13315058040392 47.64101193601368)`) is a standard, known as Well-Known Text (WKT) format, it is possible to see the shape projected on a map just by copying and pasting the string. In the following exercise, you'll test it yourself with the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).

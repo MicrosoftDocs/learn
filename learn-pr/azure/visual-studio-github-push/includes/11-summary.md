@@ -9,8 +9,8 @@ Continuous context switching causes a mental overhead that all of us want to avo
 ## Learn more
 Check out the following resources:
 
-* [Overview of the Visual Studio Git experience](https://docs.microsoft.com/visualstudio/ide/git-with-visual-studio) article
+* [Overview of the Visual Studio Git experience](/visualstudio/ide/git-with-visual-studio) article
 * [Getting started with Git in Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) video on YouTube
 * [Release announcement of the new Git experience](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) blog post
-* [Work with GitHub accounts in Visual Studio](https://docs.microsoft.com/visualstudio/ide/work-with-github-accounts) article
-* [Side-by-side comparison with Team Explorer](https://docs.microsoft.com/visualstudio/ide/git-team-explorer-feature-comparison) article
+* [Work with GitHub accounts in Visual Studio](/visualstudio/ide/work-with-github-accounts) article
+* [Side-by-side comparison with Team Explorer](/visualstudio/ide/git-team-explorer-feature-comparison) article

@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Create machine learning models
 prerequisites: |
-  This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial. To get started with Python, complete the [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/) learning path.
+  This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial. To get started with Python, complete the [Take your first steps with Python](../python-first-steps/index.yml) learning path.
 summary: |
   Machine learning is the foundation for predictive modeling and artificial intelligence. Learn the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
 iconUrl: /learn/achievements/create-machine-learning-models.svg

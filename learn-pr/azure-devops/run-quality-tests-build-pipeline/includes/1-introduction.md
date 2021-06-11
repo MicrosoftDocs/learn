@@ -4,29 +4,29 @@ You could run the app locally and try a few inputs, but that takes time and does
 
 This module demonstrates how to set up automated testing to help ensure that your latest feature works and that you haven't broken anything along the way.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-* Learn the benefits of automated testing and the kinds of testing you can use.
-* Run unit tests locally and then in Azure Pipelines.
-* Add dashboard widgets to visualize test runs over time.
-* Perform code coverage testing to see how much of your code is covered by unit tests.
-* See a test fail in the pipeline and then fix the failure.
+- Explain the benefits of automated testing and the kinds of testing you can use
+- Run unit tests locally and then in Azure Pipelines
+- Add dashboard widgets to visualize test runs over time
+- Perform code coverage testing to see how much of your code is covered by unit tests
+- Fix and verify test failures in your build pipeline
 
 ## Prerequisites
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Microsoft Azure DevOps for free.
 

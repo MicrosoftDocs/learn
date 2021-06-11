@@ -11,33 +11,39 @@ metadata:
 title: Build mixed reality digital twins with Azure Digital Twins and Unity
 summary: Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
 prerequisites: |
-  - A HoloLens 2 device
-    - This module has been verified with the following OS Build versions on HoloLens 2:
-      - 10.0.19041.1136
-      - 10.0.19041.1140
-      - 10.0.20330.1000 Insider build 
-  - A Windows 10 PC 
-  - We recommend introductory knowledge of Unity. You can learn more by completing the Unity Essentials Pathway or [Mixed Reality Learn module overview](/windows/mixed-reality/discover/mr-learning-overview)
-  - Basic familiarity with C# 
-  - Basic familiarity with GitHub
-  - Familiarity with the Azure portal
-  - A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI module](/learn/modules/control-azure-services-with-cli/).
-  - [Azure CLI](/cli/azure/install-azure-cli).
-  - We recommend installing the Azure CLI locally
-  - PowerShell (built into Windows 10) 
-  - Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory tenant to complete the exercise units.
-  - [Bing Maps Developer Account](https://www.bingmapsportal.com/)
-  - [Visual Studio IDE](https://visualstudio.microsoft.com/) 
-  - [.NET Core 3.1](https://dotnet.microsoft.com/download)
-  - [C# Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+  - Azure service creation and configuration
+  - Basic familiarity with Unity, C#, and GitHub
+  - Domain User Azure Active Directory (i.e, not Guest)
+  - [Azure CLI](/cli/azure/install-azure-cli) installed
+  - Bing Maps developer account 
+  - A Windows 10 PC configured with the required tools
+      - Windows 10 SDK 10.0.18362.0 or later
+      - Unity Hub with Unity 2020.3.0f1 (LTS) installed
+      - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed 
+      - USB Device Connectivity 
+      - Microsoft Mixed Reality Feature Tool  
 iconUrl: /learn/achievements/generic-trophy.svg
-hidden: true
 levels:
 - beginner
 roles:
 - developer
+- business-owner
+- student
+- technology-manager
 products:
 - azure
+- azure-cloud-services
+- azure-cognitive-services
+- azure-digital-twins
+- azure-iot
+- azure-iot-hub
+- azure-signalr-service
+- azure-event-grid
+- azure-event-hubs
+- azure-functions
+- hololens
+- windows
+- windows-mixed-reality 
 modules:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 - learn.azure.build-3d-scene-mixed-reality-unity

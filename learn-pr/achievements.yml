@@ -537,3 +537,8 @@ achievements:
   title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
   summary: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
   iconUrl: /learn/achievements/interactive-deep-learning.svg
+- uid: learn.run-web-app-background-task-with-webjobs.badge
+  type: badge
+  title: Run a background task in an App Service Web App with WebJobs
+  summary: Automate a task for a Web App that should run in the background without affecting the performance of the Web App.
+  iconUrl: /learn/achievements/run-web-app-background-task-with-webjobs.svg

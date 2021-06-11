@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
-  description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
-  ms.date: 10/12/2020
+  title: Validate Azure resources by using the ARM Template Test Toolkit
+  description: Use the ARM Template Test Toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
+  ms.date: 05/21/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Preview changes and validate Azure resources by using what-if and the ARM template test toolkit
-summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so. It also teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM template test toolkit.
+title: Validate Azure resources by using the ARM Template Test Toolkit
+summary: This module teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM Template Test Toolkit.
 abstract: |
   After completing this module, you'll be able to:
-  - Preview what changes will happen before you deploy by using the what-if operation.
-  - Validate your template's adherence to recommendations by using the ARM template test toolkit.
-  - Implement domain-specific rules for deployments that you can run by using the ARM template test toolkit.
+  - Validate your template's adherence to recommendations by using the ARM Template Test Toolkit.
+  - Implement domain-specific rules for deployments that you can run by using the ARM Template Test Toolkit.
 iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate
@@ -26,15 +26,11 @@ products:
   - azure-clis
   - azure-resource-manager
 prerequisites: |
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource
-  groups, and resource definitions.
-  - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
   - learn.arm-template-test.1-introduction
-  - learn.arm-template-test.2-what-if
-  - learn.arm-template-test.3-exercise-what-if
   - learn.arm-template-test.4-test-toolkit
   - learn.arm-template-test.5-exercise-test-toolkit
   - learn.arm-template-test.6-custom-tests

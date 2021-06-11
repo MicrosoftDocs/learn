@@ -65,7 +65,7 @@ You use Azure Sentinel with Azure Monitor workbooks to monitor and analyze data 
 
 :::image type="content" source="../media/5-prebuilt-workbooks-inline.png" alt-text="Prebuilt workspaces" lightbox="../media/5-prebuilt-workbooks-expanded.png":::
 
-You deploy workbooks in your tenant to query and monitor data in customer tenants through [cross-workspace monitoring](https://docs.microsoft.com/azure/sentinel/extend-sentinel-across-workspaces-tenants#using-cross-workspace-workbooks). You can also deploy a workbook directly in a tenant that you manage for a customer.
+You deploy workbooks in your tenant to query and monitor data in customer tenants through [cross-workspace monitoring](/azure/sentinel/extend-sentinel-across-workspaces-tenants#using-cross-workspace-workbooks). You can also deploy a workbook directly in a tenant that you manage for a customer.
 
 ### View incidents using Azure Sentinel workspaces
 

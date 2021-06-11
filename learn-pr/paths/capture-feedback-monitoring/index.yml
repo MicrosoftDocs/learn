@@ -18,19 +18,19 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Evolve your DevOps practices learning path." role="presentation"></img>
+    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 1: Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices/)
+    [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
+    [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::row-end:::
 
@@ -38,7 +38,7 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/automate-deployments-azure-devops.svg" width="101" height="84" alt="The trophy for the Automate your deployments with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 4: Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/)
+    [Part 4: Automate your deployments with Azure DevOps](../automate-deployments-azure-devops/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" alt="The trophy for the Capture feedback and monitoring data to continuously improve your software learning path." role="presentation"></img>
@@ -57,10 +57,10 @@ summary: |
   - Learn how Azure Monitor and Application Insights enable continuous monitoring on your applications and on your infrastructure.
   - Tune monitoring to help ensure that alerts you receive are meaningful.
 prerequisites: |
-  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
-  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
-  - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
-  - [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops)
+  - [Evolve your DevOps practices](../evolve-your-devops-practices/index.yml)
+  - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
+  - [Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
+  - [Automate your deployments with Azure DevOps](../automate-deployments-azure-devops/index.yml)
 iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
 levels:
 - intermediate

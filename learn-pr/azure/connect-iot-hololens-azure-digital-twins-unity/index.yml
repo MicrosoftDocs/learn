@@ -2,7 +2,7 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
 metadata:
   title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
-  description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
+  description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
   ms.date: 5/4/2021
   author: JBrentJ
   ms.author: jejacks
@@ -28,8 +28,7 @@ prerequisites: |
   - Basic Azure CLI knowledge
   - Basic PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true
+iconUrl: /media/learn/module.svg
 levels:
 - intermediate
 roles:
@@ -41,9 +40,16 @@ products:
 - azure
 - azure-cloud-services
 - azure-cognitive-services
+- azure-digital-twins
+- azure-iot
+- azure-iot-hub
+- azure-signalr-service
+- azure-event-grid
+- azure-event-hubs
+- azure-functions
+- hololens
 - windows
 - windows-mixed-reality
-- hololens
 units:
 - learn.azure.connect-iot-hololens-azure-digital-twins-unity.introduction
 - learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-telemetry-data
