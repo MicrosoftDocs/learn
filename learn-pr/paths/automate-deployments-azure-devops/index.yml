@@ -19,17 +19,17 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 1: Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices/)
+    [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
+    [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::row-end:::
 
@@ -42,7 +42,7 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" alt="The trophy for the Capture feedback and monitoring data to continuously improve your software learning path." role="presentation"></img>
 
-    [Part 5: Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring/)
+    [Part 5: Capture feedback and monitoring data to continuously improve your software](../capture-feedback-monitoring/index.yml)
   :::column-end:::
 
   :::column:::
@@ -57,9 +57,9 @@ summary: |
   - Run an Ansible playbook that automatically configures virtual machines running on Azure.
   - Use an Azure Resource Manager template to automatically provision and configure Azure SQL Database in Azure Pipelines.
 prerequisites: |
-  - [Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices)
-  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
-  - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
+  - [Evolve your DevOps practices](../evolve-your-devops-practices/index.yml)
+  - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
+  - [Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   - An [Azure subscription](https://azure.microsoft.com/free/)
   - An [organization in Azure DevOps](https://dev.azure.com)
 iconUrl: /learn/achievements/azure-devops/automate-deployments-azure-devops.svg

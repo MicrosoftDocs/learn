@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+- azure-cognitive-services
+- azure-text-speech
 units:
 - learn.azure.intro-to-text-to-speech.introduction
 - learn.azure.intro-to-text-to-speech.what-is-text-to-speech

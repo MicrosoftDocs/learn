@@ -4,7 +4,7 @@ Creating a storage account and uploading wildlife photos to the account are the 
 
 ## Create a storage account
 
-Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line that you can use to run Azure commands. Cloud Shell is an alternative to installing the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&azure-portal=true) on your own computer.
+Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line that you can use to run Azure commands. Cloud Shell is an alternative to installing the [Azure CLI](/cli/azure/?azure-portal=true&view=azure-cli-latest) on your own computer.
 
 > [!NOTE]
 > Whether to use the CLI or Cloud Shell often is a matter of personal preference. One of the advantages of Cloud Shell is that it doesn't require you to install any software. Another advantage is that you don't have to update Cloud Shell periodically like you do the CLI.

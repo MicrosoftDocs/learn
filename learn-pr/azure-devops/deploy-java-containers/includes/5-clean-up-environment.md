@@ -47,7 +47,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the drop-down menu, select **Settings**:
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -59,14 +59,10 @@ Delete your Azure DevOps project, including the build pipeline. Choose this opti
 To delete the project:
 
 1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub.
-1. Select the gear icon next to the project name.
-
-    The icon might not appear until you move your mouse over the area.
-
-    ![Azure DevOps, showing the gear icon](../media/5-azure-devops-project-gear.png)
+1. Select **Project settings** in the lower corner.
 1. In the **Project details** area, go to the bottom and select **Delete**.
 
-    ![Azure DevOps, showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. In the window that appears, enter the project name. Select **Delete** again.
 
     Your project is now deleted.
