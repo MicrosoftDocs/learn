@@ -14,7 +14,8 @@ abstract: |
   By the end of this module, you will be able to:
   - Evaluate the suitability of the Azure VMware Solution to solve existing business problems
   - Identify the key differences between Azure VMware Service and running VMware on-premises
-  - Analyze how the Azure VMware Solution can reduce licensing costs for customers
+  - Analyze the benefits of the service on existing licensing when using the Azure Hybrid Benefits
+  - Understand the basic components of the service
 prerequisites: | 
   - Experience managing a VMware infrastructure.
 iconUrl: /learn/achievements/intro-azure-vmware-solution.svg
