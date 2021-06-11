@@ -1,6 +1,10 @@
 Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's see how AVS is set up and how it works on Azure.  
 
-## What's managed by Microsoft and what you manage
+
+## On-premises VMware vs. Azure VMware Solution
+On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
+
+### What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
 
 You are responsible for NSX-T SDN configuration:
@@ -9,8 +13,7 @@ You are responsible for NSX-T SDN configuration:
 - Tier 1 gateways
 - Load balancers.
 
-
-## What Microsoft manages
+### How Microsoft manages 
 
 Azure VMware Solution continuously monitors the health of both the underlay and the VMware components. If Azure VMware Solution detects a failure, it takes action to repair the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
 
@@ -32,8 +35,7 @@ Azure VMware Solution monitors the following conditions on the host:
 - Connection failure
 
 
-## Difference between on-premises VMware and Azure VMware Solution
-On-premises VMware environments requires the customer to support all the hardware and software required to run the platform. Azure VMware Solution maintains the platform for the customer.  
+  
 
 ## Architecture overview
 
