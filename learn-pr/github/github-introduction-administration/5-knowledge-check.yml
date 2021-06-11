@@ -27,20 +27,20 @@ quiz:
     - content: "Team maintainer"
       isCorrect: true
       explanation: "As a team maintainer, the user will be able to add and remove organization members to a team."
-  - content: "As an organization owner, you want to ensure that everyone who is logged into your corporate network can access the GitHub website without requiring a second login.  Which technology will you enable to accomplish this?"
+  - content: "As an organization owner, you want to ensure that everyone who is signed in to your corporate network can access the GitHub website without requiring a second sign-in. Which technology will you enable to accomplish this?"
     choices:
     - content: "Single Sign-On"
       isCorrect: true
       explanation: "Single Sign-On is the right technology to allow network users to access the GitHub website without additional sign-ins."
     - content: "Two-factor authentication"
       isCorrect: false
-      explanation: "Two-factor authentication would require each user to log in using a second means of identifying themselves, like using an authenticator app on their phones.  It would not be used in this scenario."
+      explanation: "Two-factor authentication would require each user to sign in using a second means of identifying themselves, like using an authenticator app on their phones. It would not be used in this scenario."
     - content: "SSH Keys"
       isCorrect: false
       explanation: "Personal Access Tokens provide access for the git client or web API by using a cryptographic key.  You do not use them to access the GitHub website."
     - content: "Personal Access Tokens"
       isCorrect: false
-      explanation: "Personal Access Tokens provide access for the git client through a username and password.  You do not use them to access the GitHub website."
+      explanation: "Personal Access Tokens provide access for the git client through a username and password. You do not use them to access the GitHub website."
   - content: "What is the appropriate repository permission level for contributors who will actively push changes to your repository?"
     choices:
     - content: "admin"
@@ -54,4 +54,4 @@ quiz:
       explanation: "The triage permission is not appropriate because it is intended for contributors who need to proactively manage issues and pull requests without write access."
     - content: "maintain"
       isCorrect: false
-      explanation: "The maintain permission is not appropriate because it is intended for project managers who need to manage the repository without access to sensitive or destructive actions.  It would provide too much access for other users."
+      explanation: "The maintain permission is not appropriate because it is intended for project managers who need to manage the repository without access to sensitive or destructive actions. It would provide too much access for other users."
