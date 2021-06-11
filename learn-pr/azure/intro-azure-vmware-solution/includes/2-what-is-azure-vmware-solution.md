@@ -19,7 +19,7 @@ The VMware vSphere clusters are built from bare-metal Azure hosts. These cluster
 
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
-:::image type="content" source="../media/2-AVS_overview.png" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
+:::image type="icon" source="../media/2-AVS_overview.png" border="false" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
 
 ### Use your existing investments
 Use your existing VMware investments, skills, and tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 

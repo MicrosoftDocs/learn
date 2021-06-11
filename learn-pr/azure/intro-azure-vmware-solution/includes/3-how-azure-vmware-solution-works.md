@@ -4,7 +4,7 @@ Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's s
 ## On-premises VMware vs. Azure VMware Solution
 On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
 
-:::image type="content" source="../media/3-azure-vmware-solution-responsibility-matrix.png" alt-text="Azure VMware Solution shared support matrix":::
+:::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Azure VMware Solution shared support matrix":::
 
 ### What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
@@ -84,7 +84,7 @@ The Azure VMware Solution private cloud environment can be accessible from on-pr
 
 The diagram below shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
 
-:::image type="content" source="../media/3-avs_networkingoverview.png" alt-text=" Diagram Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
+:::image type="icon" source="../media/3-avs_networkingoverview.png" border="false" alt-text=" Diagram Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
 
 These services require specific network address ranges and firewall ports for enabling the services. 
 
@@ -114,7 +114,7 @@ You can use Azure storage services in workloads running in your private cloud. T
 - Blob Storage
  
 The below diagram shows the available Azure Storage services that can be used with Azure VMware Solution.
-:::image type="content" source="../media/3-avs_storageoverview.png" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
+:::image type="icon" source="../media/3-avs_storageoverview.png" border="false" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
 
 
 ### Security and compliance with Azure VMware Solutions
@@ -132,7 +132,7 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The diagram below illustrates the relationship of the encryption keys to Azure VMware Solution.
 
-:::image type="content" source="../media/3-avs_securityoveriew.png" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
+:::image type="icon" source="../media/3-avs_securityoveriew.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
 ## Get started with AVS
 
