@@ -1,6 +1,6 @@
-Unit tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing our code.
+Unit tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing code.
 
-The bodies of test functions typically perform some setup, run the code we want to test, and then assert whether the results are what we expect.
+Test functions run the code that you want to test. They also check the results, often by using the `assert!` or `assert_eq!` macros.
 
 In the following code example, we define a simple `add` function and another `add_works` function marked with the `#[test]` attribute.
 
@@ -37,7 +37,7 @@ fn add_fails() {
 }
 ```
 
-If we ran the tests again by using the `$ cargo test` command, the output should point out that our `add_works` test passed and `add_fails` failed, with the detail of the failed call to `assert_eq`.
+If we run the tests again by using the `$ cargo test` command, the output should show that our `add_works` test passed. It should also show that `add_fails` failed and should include information about the failed call to `assert_eq`.
 
 ```output
 running 2 tests
