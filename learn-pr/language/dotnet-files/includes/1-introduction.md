@@ -18,4 +18,4 @@ By the end of this module, you will be able to:
 
 - Experience writing C# at the beginner level
 - Familiarity with basic programming constructs, such as loops and `if` statements
-- Local installations of [.NET Core SDK](https://dotnet.microsoft.com/download), [Visual Studio Code](https://code.visualstudio.com), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+- Local installations of [.NET SDK](https://dotnet.microsoft.com/download), [Visual Studio Code](https://code.visualstudio.com), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
