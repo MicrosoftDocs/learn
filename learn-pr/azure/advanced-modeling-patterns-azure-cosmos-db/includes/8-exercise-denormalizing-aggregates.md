@@ -29,7 +29,7 @@ Follow these steps to get to the code that you'll use in this unit.
 
 1. You should now see the following code in Cloud Shell.
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Cloud Shell with VS Code showing the top of program.cs with using statements, the start of the namespace and start of the program class.":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Screenshot that shows the top of program.cs with using statements, the start of the namespace and start of the program class.":::
 
 ## Complete the code to update total sales orders
 
@@ -37,7 +37,7 @@ Follow these steps to get to the code that you'll use in this unit.
 1. Type **CTRL + G**, then type in **488** to go to that line in the file.
 1. You should now see the following code.
 
-    :::image type="content" source="../media/8-create-order-function.png" lightbox="../media/8-create-order-function.png" alt-text="Cloud Shell showing the create new order and update customer order total function":::
+    :::image type="content" source="../media/8-create-order-function.png" lightbox="../media/8-create-order-function.png" alt-text="Screenshot of Cloud Shell that shows the create new order and update customer order total function.":::
 
     This function creates a new sales order and updates the customer record using transactional batch.
 
@@ -52,7 +52,7 @@ Follow these steps to get to the code that you'll use in this unit.
 
 1. Your screen should now look like this.
 
-    :::image type="content" source="../media/8-create-order-sales-order-count.png" lightbox="../media/8-create-order-sales-order-count.png" alt-text="The create new order and update customer total function with the line of code to increment sales order count by one.":::
+    :::image type="content" source="../media/8-create-order-sales-order-count.png" lightbox="../media/8-create-order-sales-order-count.png" alt-text="Screenshot of the create new order and update customer total function with the line of code to increment sales order count by one.":::
 
 ## Complete the code to implement transactional batch
 
@@ -84,10 +84,10 @@ Follow these steps to get to the code that you'll use in this unit.
     Finally we will check whether the transaction was successful by looking at the response object.
 1. Your screen should now look like the following.
 
-    :::image type="content" source="../media/8-create-order-transactional-batch.png" lightbox="../media/8-create-order-transactional-batch.png" alt-text="Cloud Shell showing the transactional batch code now implemented in our function.":::
+    :::image type="content" source="../media/8-create-order-transactional-batch.png" lightbox="../media/8-create-order-transactional-batch.png" alt-text="Screenshot of the Cloud Shell that shows the transactional batch code now implemented in our function.":::
 
 1. Next type **CRTL + S** to save your changes.
-1. Type **CTRL + Q** to quit the editor.
+1. Type **CTRL + Q** to close the editor.
 1. Run the following command to compile  and execute the project.
 
     ```bash
@@ -97,7 +97,7 @@ Follow these steps to get to the code that you'll use in this unit.
 
 1. Your screen should now look like this with the main menu for the application.
 
-    :::image type="content" source="../media/5-main-menu.png" lightbox="../media/5-main-menu.png" alt-text="Cloud Shell showing the main menu for the application.":::
+    :::image type="content" source="../media/5-main-menu.png" lightbox="../media/5-main-menu.png" alt-text="Screenshot of the Cloud Shell that shows the main menu for the application.":::
 
 ## Query for the customer and their sales orders
 
@@ -109,7 +109,7 @@ Because we designed our database to store both customers and all of their sales 
 1. Notice that the `salesOrderCount` property shows two sales orders.
 1. Your screen should look like the following image.
 
-    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="Cloud Shell showing the output of the query customer and orders query with a customer record and two sales orders.":::
+    :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="Screenshot of the Cloud Shell that shows the output of the query customer and orders query with a customer record and two sales orders.":::
 
 ## Create new sales order and update total sales orders in a transaction
 
@@ -124,7 +124,7 @@ Next we will create a new sales order for the same customer and update the total
 1. Note the `salesOrderCount` property shows three sales orders.
 1. Your screen should look like the following image.
 
-    :::image type="content" source="../media/8-query-customer-and-orders-next.png" lightbox="../media/8-query-customer-and-orders-next.png" alt-text="Cloud Shell showing the output for our query with the updated customer record now showing three for the sales order total property and three sales orders now below it.":::
+    :::image type="content" source="../media/8-query-customer-and-orders-next.png" lightbox="../media/8-query-customer-and-orders-next.png" alt-text="Screenshot of the Cloud Shell that shows the output for our query with the updated customer record showing three for the sales order total property and three sales orders below it.":::
 
 ## Delete an order using transactional batch
 
@@ -141,7 +141,12 @@ Like any e-commerce application, customers also cancel orders. We can do the sam
 The way we delete an order works exactly the same as the way we create an order. Both operations are wrapped in a transaction and executed in the same logical partition. Let's look at the code that does that.
 
 1. Type **x** to exit the application.
-1. In Cloud Shell, type `code Program.cs`
+1. In Cloud Shell, open the Program.cs file.
+
+    ```bash
+    code Program.cs
+    ```
+
 1. Next type **CTRL + G** then enter **549**.
 
     This function deletes the new sales order and updates the customer record.
@@ -168,8 +173,7 @@ Let's look at the query for our top 10 customers.
 
     Also notice the discriminator property of `type` with a value of *customer* so we only return back customers because our customer container has both customers and sales orders within it.
 
-    Finally, let's run our top 10 customers query and see the customers and their order totals.
-1. Type **CTRL + Q** to exit VS Code.
+1. Type **CTRL + Q** to close VS Code.
 1. Run the following command to launch the application again.
 
     ```bash
@@ -178,7 +182,7 @@ Let's look at the query for our top 10 customers.
 
 1. Then finally, type **e** to run the query.
 
-    :::image type="content" source="../media/8-top-10-customers.png" lightbox="../media/8-top-10-customers.png" alt-text="Cloud Shell showing the output for our top 10 customers query.":::
+    :::image type="content" source="../media/8-top-10-customers.png" lightbox="../media/8-top-10-customers.png" alt-text="Screenshot of the Cloud Shell that shows the output for our top 10 customers query.":::
 
     Something you may not realize is the top 10 customers query is a cross-partition query that fans-out across all the partitions in our container.
 
