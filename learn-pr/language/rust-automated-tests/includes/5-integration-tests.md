@@ -1,6 +1,6 @@
-While unit and documentation tests provide concise and specific tests, it's generally a good idea to test our crate as a whole to confirm that the many parts of our code work together correctly.
+Unit and documentation tests provide concise and specific tests. But it's also a good idea to test our crate as a whole. Then we can confirm that our crate's various code parts function together as expected.
 
-The Rust test suite also has *integration tests* so that we can test our library in the same way any other code would, which means we can only call functions that are part of our library's public API.
+To test your crate as a whole, you can use *integration tests*. The Rust test suite supports this type of test, which only calls functions that your library's public API contains. You can use integration tests to check how your code works when others use it.
 
 What's unique about these tests is that they exist in a separate directory and file, so they can externally test the library code. Cargo looks for integration tests in the *tests* directory (next to the *src* directory) and will run each source file in it.
 
