@@ -61,9 +61,6 @@ Most management tasks in this and subsequent exercises require the use of Azure 
     curl -O --insecure https://$PIP/static/tools/cyclecloud-cli.zip
     ```
 
-    > [!NOTE]
-    > Ignore any messages regarding the path environment variable and continue to the next step.
-
 1. Run the following commands in succession to extract and execute the script that performs the Azure CycleCloud CLI installation:
 
     ```azurecli
@@ -72,10 +69,14 @@ Most management tasks in this and subsequent exercises require the use of Azure 
     ./install.sh
     ```
 
+    > [!NOTE]
+    > Ignore any messages regarding the path environment variable and continue to the next step.
+
+
 1. Run the following command to establish a connection to the Azure CycleCloud instance, where the `<username>` and `<password>` placeholders designate the credentials of your Azure CycleCloud application user account with the Administrator role:
 
     ```azurecli
-    cyclecloud initialize --batch --url=https://$PIP --username=cc-admin --password=Pa55w.rd1234 --verify-ssl=false
+    cyclecloud initialize --batch --url=https://$PIP --username=<username> --password=<password> --verify-ssl=false
     ```
 
     > [!NOTE]
@@ -88,10 +89,10 @@ Most management tasks in this and subsequent exercises require the use of Azure 
     ```
 
     > [!NOTE]
-    > The output should include the names of the lockers and their respective Azure Storage locations. You should record their names because you'll need one of them later in this exercise. The name would be in the format that uses the following notation:
+    > The output should include the names of the lockers for each Azure subscription registered with CycleCloud and their respective containers in individual Azure Storage accounts. You should record name of the locker corresponding to the Azure subscription you intend to use for this lab, because you'll need it later in this exercise. The output of the command is in the following format (where the `<locker-name>` placeholder represents the name of the locker, the `<storage_account_name>` placeholder represents the name of the storage account hosting that locker, and the `<container_name>` placeholder represents the name of the locker container within that storage account):
     > 
     > ```
-    > default-locker (az://cyclecloud050921/cyclecloud)
+    > <locker-name> (az://<storage_account_name>/<container_name>)
     > ```
 
 
@@ -109,7 +110,7 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
     > [!NOTE]
     > Make sure to include the trailing period at the end of the second command.
 
-1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task, such as `default-locker`):
+1. Run the following command to designate the default locker and upload the project into it (replace the placeholder `<locker_name>` with the name of the locker you identified in the previous task, such as `cc-lab-subscription-storage`):
 
     ```azurecli
     cyclecloud project default_locker <locker_name>
@@ -120,10 +121,7 @@ Next, you'll configure a sample Azure CycleCloud Slurm project. You'll leverage 
     > Alternatively, you could run `cyclecloud project upload <locker_name>`, where the placeholder `<locker_name>` designates the locker name.
 
     > [!NOTE]
-    > Ignore the azcopy related error message stating `Cannot perform sync due to error: sync must happen between source and destination of the same type, e.g., either file <-> file, or directory/container <-> directory/container` followed by `Upload failed!` as long as the individual copies of project files succeed.
-
-    > [!NOTE]
-    > Wait for the upload to complete. This might take about five minutes. You will be presented with messages indicating that the upload of 15 files followed by 1 file completed, with the final job status listed as completed, and zero failed transfers and copy transfers. 
+    > Ignore the azcopy related error message stating `Cannot perform sync due to error: sync must happen between source and destination of the same type, e.g., either file <-> file, or directory/container <-> directory/container` followed by `Upload failed!` as long as the individual copies of project files succeed. To confirm this, verify that the final job status is listed as `Completed`, with zero failed transfers. 
 
 ## Task 3: Implement a custom Azure CycleCloud template
 
@@ -150,6 +148,10 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
     ```azurecli
     nano slurm.txt
     ```
+
+    > [!NOTE]
+    > Instead of the nano editor, you can use any other text editor available to you, including the Azure Cloud Shell built-in editor.
+
 1. Within the nano editor interface, move to the `[[node scheduler]]` section. Within that section, locate the `[[[volume shared]]]` subsection, move to the line `Persistent = ${NFSType == "Builtin"}`, and add the following content after it:
 
     ```azurecli
@@ -202,7 +204,7 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
 To conclude this exercise, you'll verify that the template you imported into Azure CycleCloud application delivers the intended functionality. To do this, you'll create a new cluster and review the storage configuration of its head node to ensure that it includes a volume consisting of two persistent disks.
 
 1. On your computer, open another browser window and navigate to the **https://&lt;IP_address&gt;** URL (replace the **&lt;IP_address&gt;** placeholder with the public IP address of the Azure CycleCloud application server). If prompted, confirm that you want to proceed.
-1. If you're prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
+1. If prompted to authenticate, sign in by providing credentials of the same Azure CycleCloud application user account you used to configure Azure CycleCloud CLI.
 1. In the Azure CycleCloud graphical interface, navigate to the **Clusters** page and select **+**.
 1. On the **Create a New Cluster** page, select the icon labeled **Slurm** in the form of an isosceles triangle with small circles at each of its vertices.
 
@@ -212,7 +214,7 @@ To conclude this exercise, you'll verify that the template you imported into Azu
 
     :::image type="content" source="../media/u3-cyclecloud-create-new-cluster-about.png" alt-text="The screenshot depicts the About tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Required Settings** tab of the **New Slurm Cluster** page, configure the following settings (leave others with their default values):
+1. On the **Required Settings** tab of the **New Slurm Cluster** page, configure the following settings (leave others with their default values) and select **Next**:
 
     | Setting | Value |
     | --- | --- |
@@ -250,6 +252,9 @@ To conclude this exercise, you'll verify that the template you imported into Azu
     > The process involves provisioning of the Azure VM serving the role of the cluster's master node, installation, and configuration of the Swarm scheduler, and creating and mounting disk volumes. This might take about five minutes.
 
 1. After the status of the scheduler node changes to **Ready**, select its entry on the **Nodes**, tab and then select **Show Detail** to display its detailed view.
+
+    :::image type="content" source="../media/u3-cyclecloud-scheduler-node-detail.png" alt-text="The screenshot depicts the Nodes tab of the scheduler node of a contoso-custom-slurm-lab-cluster." border="false":::
+
 1. In the **Showing scheduler in contoso-custom-slurm-lab-cluster cluster** pop-up window, switch to the **Node** tab, scroll to the **Volumes** section, and verify that the entries **nfs-1** and **nfs-2** display on the list of volumes.
  
     :::image type="content" source="../media/u3-cyclecloud-start-cluster-volumes.png" alt-text="The screenshot depicts the Node tab page of the detailed view of a cluster configured with two additional NFS volumes." border="false":::

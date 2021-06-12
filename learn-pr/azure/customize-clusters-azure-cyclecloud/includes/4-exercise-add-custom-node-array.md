@@ -35,9 +35,6 @@ You'll start by adding a definition of a nodearray within the Slurm template you
     nano slurm.txt
     ```
 
-    > [!NOTE]
-    > Instead of the nano editor, you can use any other text editor available to you, including the Azure Cloud Shell built-in editor.
-
 1. Within the nano editor interface, scroll to the `[parameters About]` section and add the following content directly before it:
 
     ```azurecli
