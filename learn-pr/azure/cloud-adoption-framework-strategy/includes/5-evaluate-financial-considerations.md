@@ -168,7 +168,7 @@ Time savings for staff often are included in soft-cost reductions. When those ti
 
 That said, skills that are needed to work on-premises generally map to a similar (or higher-level) skill set that's needed to work in the cloud. So, people generally aren't laid off after a cloud migration.
 
-An exception occurs when operational capacity is provided by a third party or a managed services provider (MSP). If IT systems are managed by a third party, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
+An exception occurs when operational capacity is provided by a third party or an Azure expert managed services provider (MSP). If IT systems are managed by a third party, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
 
 #### Capital expense reductions or avoidance
 
