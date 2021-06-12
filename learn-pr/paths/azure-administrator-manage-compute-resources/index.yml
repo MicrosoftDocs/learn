@@ -12,6 +12,7 @@ metadata:
 title: Deploy and manage compute resources for Azure administrators
 summary: |
   Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure. 
+  
   Here are the learning paths in the Azure Administrator series:
 
   :::row:::

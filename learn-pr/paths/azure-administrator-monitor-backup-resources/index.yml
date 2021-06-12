@@ -12,6 +12,7 @@ metadata:
 title: Monitor and back up resources for Azure administrators
 summary: |
   Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure. 
+  
   Here are the learning paths in the Azure Administrator series:
 
   :::row:::

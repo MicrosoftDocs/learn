@@ -12,6 +12,7 @@ metadata:
 title: Manage identities and governance for Azure administrators
 summary: |
   Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
+  
   Here are the learning paths in the Azure Administrator series:
 
   :::row:::
