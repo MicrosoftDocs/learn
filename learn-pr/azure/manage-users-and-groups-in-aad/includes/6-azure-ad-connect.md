@@ -21,8 +21,8 @@ Integrating your on-premises directories with Azure AD makes your users more pro
 
 * Users can use a single identity to access both on-premises applications and cloud services, such as Microsoft 365.
 * A single tool provides an easy deployment experience for synchronization and sign-in.
-* Integration provides the newest capabilities for your scenarios. Azure AD Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, see [Hybrid Identity directory integration tools comparison](https://docs.microsoft.com/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
+* Integration provides the newest capabilities for your scenarios. Azure AD Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, see [Hybrid Identity directory integration tools comparison](/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
 
 ## Installing
 
-Installing and configuring Azure AD Connect is not a trivial task and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.
+Installing and configuring Azure AD Connect is not a trivial task and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](/azure/active-directory/hybrid/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.

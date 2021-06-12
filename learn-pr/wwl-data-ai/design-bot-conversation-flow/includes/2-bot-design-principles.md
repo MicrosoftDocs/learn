@@ -6,7 +6,7 @@ Ultimately, factors that lead to a successful bot all revolve around creating a 
 
 - **Is the bot discoverable?** If users are not able to discover the bot, they will be unable to use it. Discoverability can be achieved through integration with the proper channels. As an example, an organization may make use of Microsoft Teams for collaboration. Integrating with the Teams channel will make your bot available in the Teams app.
 
-    In some cases, making your not discoverable is as simple as integrating it directly into a web site. For example, your company's support web site could make a question and answer bot the primary mechanism that customers interact with on the initial support page.
+    In some cases, making your bot discoverable is as simple as integrating it directly into a web site. For example, your company's support web site could make a question and answer bot the primary mechanism that customers interact with on the initial support page.
 
 - **Is the bot intuitive and easy to use?**  The more difficult or frustrating a bot interaction is, the less use it will receive.  Users will not return to a bad user experience.
 - **Is the bot available on the devices and platforms that users care about?** Knowing your customer-base is a good start to address this consideration.  If you only make your bot available on Microsoft Teams but most of your target audience is using Slack, the bot will not be successful.  It would require users to install a new and unfamiliar software application.

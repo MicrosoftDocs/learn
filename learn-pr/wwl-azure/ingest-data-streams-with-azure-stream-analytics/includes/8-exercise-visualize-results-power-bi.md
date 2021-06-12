@@ -1,4 +1,4 @@
-In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) to create a report displaying captured vehicle anomaly data and pin it to a live dashboard for near-real-time updates. Power BI provides a platform for visualizing and analyzing aggregated data in a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
+In this exercise, you use [Power BI](/power-bi/fundamentals/power-bi-overview) to create a report displaying captured vehicle anomaly data and pin it to a live dashboard for near-real-time updates. Power BI provides a platform for visualizing and analyzing aggregated data in a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
 
 1. Open a web browser, navigate to <https://powerbi.microsoft.com/>, and select **Sign in** on the upper right.
 

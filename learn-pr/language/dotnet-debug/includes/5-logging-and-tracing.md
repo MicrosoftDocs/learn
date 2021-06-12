@@ -65,7 +65,7 @@ By default, when an application is running under debug, the `DEBUG` constant is 
 </PropertyGroup>
 ```
 
-When you use `Trace` when not attached to the debugger, you'll need to configure a trace listener such as [dotnet-trace](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace).
+When you use `Trace` when not attached to the debugger, you'll need to configure a trace listener such as [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace).
 
 ## Conditional tracing
 

@@ -4,6 +4,6 @@ SQL Server 2017 was the first version of Microsoft SQL Server to support install
 
 ## Learn more
 
-- [Installation guidance for SQL Server on Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-setup)
-- [Quickstart: Run SQL Server container images with Docker](https://docs.microsoft.com/sql/linux/quickstart-install-connect-docker)
+- [Installation guidance for SQL Server on Linux](/sql/linux/sql-server-linux-setup)
+- [Quickstart: Run SQL Server container images with Docker](/sql/linux/quickstart-install-connect-docker)
 - [Dockerfile Reference Documentation](https://docs.docker.com/engine/reference/builder/#usage)

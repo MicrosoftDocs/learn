@@ -27,6 +27,6 @@ In this module, you will:
 
 
 <!-- Links -->
-[AILibs]: https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
+[AILibs]: /learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
 [VideoWalkthrough]: https://youtu.be/XoHR4p8AO9o?azure-portal=true
 [VSCode]: https://aka.ms/LearnOnVSCode?azure-portal=true

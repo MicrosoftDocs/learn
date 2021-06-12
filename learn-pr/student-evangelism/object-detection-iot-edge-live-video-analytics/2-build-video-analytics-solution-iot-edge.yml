@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.object-detection-lva-edge-device.build-video-analytics-solution
+title: Build the video analytics solution on IoT Edge
+metadata:
+  title: Build the video analytics solution on IoT Edge
+  description: In this section, we provide overview of video analytics solution
+  ms.date: 4/27/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/2-build-video-analytics-solution-iot-edge.md)]

@@ -38,7 +38,7 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
     az sql server create --name $SERVER_NAME --resource-group polar-bear-rg --location southcentralus --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD
     ```
 
-1. Create a SQL database that's assigned to the [S0 service tier](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers?azure-portal=true).
+1. Create a SQL database that's assigned to the [S0 service tier](/azure/sql-database/sql-database-service-tiers?azure-portal=true).
 
     ```bash
     az sql db create --resource-group polar-bear-rg --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0

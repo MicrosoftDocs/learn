@@ -14,7 +14,7 @@ The second step is sometimes called *reflection about the mean* or *diffusion*. 
 
 ## Step 1. Reflect about uniform superposition
 
-In the [previous module that used Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
+In the [previous module that used Grover's algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
 Because we're interested in only the number states $0-9$ here, we have no use for the remaining states ($10-15$) that our four qubits can represent. Therefore, we'll only use and reflect about the uniform superposition $\sum_{i=0}^9 |i \rangle$.
 
@@ -122,4 +122,4 @@ You've got the book you need!
 
 ## What's next?
 
-In case other spacefarers might need this same code, you should document it properly. In the next unit, you'll add your own API documentation to some of these operations. 
+In case other spacefarers might need this same code, you should document it properly. In the next unit, you'll add your own API documentation to some of these operations.
