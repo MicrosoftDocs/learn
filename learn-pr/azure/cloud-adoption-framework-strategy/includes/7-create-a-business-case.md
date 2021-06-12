@@ -2,7 +2,7 @@
 
 Your organization depends on information technology (IT) for its operations, and probably for creating and supplying its products as well. It's a significant expense. For these reasons, a move to the cloud must be carefully considered and planned.
 
-A business case provides a view of the technical and financial timeline of your environment and can represent the opportunities for reinvestment into further modernization. Developing a business case includes building a financial plan that takes technical considerations into account and aligns with [business outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true). It helps you foster support from your Finance team and other areas of the business, helps accelerate cloud migration, and enables business [agility](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/agility-outcomes?azure-portal=true).
+A business case provides a view of the technical and financial timeline of your environment and can represent the opportunities for reinvestment into further modernization. Developing a business case includes building a financial plan that takes technical considerations into account and aligns with [business outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true). It helps you foster support from your Finance team and other areas of the business, helps accelerate cloud migration, and enables business [agility](/azure/cloud-adoption-framework/strategy/business-outcomes/agility-outcomes?azure-portal=true).
 
 ## Key components of a business case
 
@@ -45,7 +45,7 @@ Enter details of your on-premises infrastructure into the tool including servers
 
 The Calculator creates a match from Azure Services to create a high-level initial TCO comparison. However, the results of the TCO calculator need to be considered with care, since an on-premises server list is often complex and optimization steps can be taken when considering Azure.
 
-**Retail Rates Prices API**: Use the Retail Rates Prices API to retrieve retail prices for all Azure services. Previously, the only way that to retrieve prices for Azure services was to either use the Azure Pricing Calculator or use the Azure portal. This API gives you an unauthenticated experience to get retail rates for all Azure services. Use the API to explore prices for Azure services against different regions and different SKUs. The programmatic API can also help you create your own tools for internal analysis and price comparison across SKUs and regions. To learn more, see [Retail Rates Prices API](https://docs.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-price?azure-portal=true).
+**Retail Rates Prices API**: Use the Retail Rates Prices API to retrieve retail prices for all Azure services. Previously, the only way that to retrieve prices for Azure services was to either use the Azure Pricing Calculator or use the Azure portal. This API gives you an unauthenticated experience to get retail rates for all Azure services. Use the API to explore prices for Azure services against different regions and different SKUs. The programmatic API can also help you create your own tools for internal analysis and price comparison across SKUs and regions. To learn more, see [Retail Rates Prices API](/rest/api/cost-management/retail-prices/azure-retail-price?azure-portal=true).
 
 **Azure Pricing Calculator**: Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to configure and estimate the costs for Azure products.
 
@@ -57,12 +57,12 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 ## Learn about Azure with Microsoft Learn
 
-Many other Azure Learning paths on [Microsoft Learn](https://docs.microsoft.com/learn?azure-portal=true) can help you to build your business case:
+Many other Azure Learning paths on [Microsoft Learn](/learn?azure-portal=true) can help you to build your business case:
 
-* [Control Azure spending and manage bills with Azure Cost Management + Billing](https://docs.microsoft.com/learn/paths/control-spending-manage-bills?azure-portal=true).
-* [Microsoft Azure Well-Architected Framework—Cost Optimization](https://docs.microsoft.com/learn/modules/azure-well-architected-cost-optimization?azure-portal=true).
-* [Plan and manage your Azure costs](https://docs.microsoft.com/learn/modules/plan-manage-azure-costs?azure-portal=true).
-* [Analyze costs and create budgets with Azure Cost Management](https://docs.microsoft.com/learn/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true).
-* [Save money with Azure Reserved Instances](https://docs.microsoft.com/learn/modules/save-money-with-azure-reserved-instances?azure-portal=true).
-* [Optimize Azure costs with data analysis in Power BI](https://docs.microsoft.com/learn/modules/optimize-costs-data-analysis-powerbi?azure-portal=true).
-* [Configure and manage costs as a Microsoft partner by using Azure Cost Management](https://docs.microsoft.com/learn/modules/manage-costs-partner-cost-management?azure-portal=true).
+* [Control Azure spending and manage bills with Azure Cost Management + Billing](/learn/paths/control-spending-manage-bills?azure-portal=true).
+* [Microsoft Azure Well-Architected Framework—Cost Optimization](/learn/modules/azure-well-architected-cost-optimization?azure-portal=true).
+* [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs?azure-portal=true).
+* [Analyze costs and create budgets with Azure Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true).
+* [Save money with Azure Reserved Instances](/learn/modules/save-money-with-azure-reserved-instances?azure-portal=true).
+* [Optimize Azure costs with data analysis in Power BI](/learn/modules/optimize-costs-data-analysis-powerbi?azure-portal=true).
+* [Configure and manage costs as a Microsoft partner by using Azure Cost Management](/learn/modules/manage-costs-partner-cost-management?azure-portal=true).

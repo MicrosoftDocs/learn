@@ -32,7 +32,7 @@ Cloud billing models and offers differ from on-premises, and they can create mea
 
 **Azure Dev/Test pricing**: Take advantage of discounted rates for your development and testing, including the Microsoft software charges on Azure Virtual Machines and special dev and test pricing on other services. For more information, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/#overview?azure-portal=true).
 
-**Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud, which has reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You'll receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](https://docs.microsoft.com/lifecycle/faq/extended-security-updates?azure-portal=true).
+**Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud, which has reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You'll receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](lifecycle/faq/extended-security-updates?azure-portal=true).
 
 ## Continually optimize your environment
 
@@ -42,16 +42,16 @@ Understand and forecast your costs: Monitor your bill, set budgets, and allocate
 
 Learn more:
 
-* [Optimize costs from recommendations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true).
-* [Prevent unexpected charges](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview?azure-portal=true).
+* [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true).
+* [Prevent unexpected charges](azure/cost-management-billing/cost-management-billing-overview?azure-portal=true).
 * Cost-optimize your workloads: Optimize your resources and architecture with Azure best practices from Azure Advisor and the Microsoft Azure Well-Architected Framework.
 
 Learn more:
 
-* Read about [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview?azure-portal=true).
-* Get Azure [Advisor cost recommendations](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations?azure-portal=true).
-* Learn about the [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?mode=pre-assessment&session=local?azure-portal=true).
-* Learn about the [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true).
+* Read about [Azure Advisor](azure/advisor/advisor-overview?azure-portal=true).
+* Get Azure [Advisor cost recommendations](azure/advisor/advisor-cost-recommendations?azure-portal=true).
+* Learn about the [Microsoft Azure Well-Architected Review](assessments/?mode=pre-assessment&session=local?azure-portal=true).
+* Learn about the [Microsoft Azure Well-Architected Framework](azure/architecture/framework?azure-portal=true).
 
 Save with Azure offers and licensing terms like the Azure Hybrid Benefit and Azure Reservations.:
 
@@ -59,11 +59,11 @@ Learn more:
 
 * Learn about the [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit?azure-portal=true).
 * Learn about [Azure Hybrid Benefit for Windows Server](https://azure.microsoft.com/overview/azure-vs-aws/cost-savings?azure-portal=true).
-* Review [pricing guidance for SQL Server Azure VMs](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/pricing-guidance?azure-portal=true).
-* Learn about [Azure Reservations](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations?azure-portal=true).
+* Review [pricing guidance for SQL Server Azure VMs](azure/azure-sql/virtual-machines/windows/pricing-guidance?azure-portal=true).
+* Learn about [Azure Reservations](azure/cost-management-billing/reservations/save-compute-costs-reservations?azure-portal=true).
 * Read the [reserved instances FAQ](https://azure.microsoft.com/pricing/reserved-vm-instances?azure-portal=true#faq).
 
-Control your costs: Establish spending goals and policies with guidance from the Microsoft Cloud Adoption Framework for Azure. Implement cost controls with Azure Policy so your teams can go fast while complying with policy. For more information, see [enforce tagging conventions using Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+Control your costs: Establish spending goals and policies with guidance from the Microsoft Cloud Adoption Framework for Azure. Implement cost controls with Azure Policy so your teams can go fast while complying with policy. For more information, see [enforce tagging conventions using Azure Policy](azure/governance/policy/tutorials/govern-tags?azure-portal=true).
 
 ## Achieve more with your investment
 
@@ -73,7 +73,7 @@ The initial technical benefits of a cloud migration focus on the lift and shift 
 
 As you free up cash flow, continue your cloud adoption, and mature your workloads, you can reinvest the savings to modernize to different service levels. Once you have your initial workloads in IaaS, you might consider shifting some workloads to platform-as-a-service (PaaS). You’ll still provide the same type of service delivery however, you'll deliver it at a lower cost with more features and functionality. The next step in the iterative modernization process is moving some workflows and line-of-business applications to software-as-a-service (SaaS).
 
-When you plan your phases of cloud maturity and the reinvestment of your cloud savings, and align with [business outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true), you can achieve more with every dollar you invest.
+When you plan your phases of cloud maturity and the reinvestment of your cloud savings, and align with [business outcomes](azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true), you can achieve more with every dollar you invest.
 
 ## Hands-on evaluation of technical considerations during your first project
 
@@ -104,7 +104,7 @@ Your team's first adoption project likely will result in a production deployment
 To support the preceding criteria, this list provides an example of a first project for each motivation category:
 
 - **Critical business events**: When a critical business event is the primary motivation, implementing a tool like Azure Site Recovery might be a good first project. During migration, you would use a tool like Azure Migrate to quickly migrate a few low-impact datacenter assets. But during the first project, you might also first use Site Recovery as a disaster recovery tool. You would be reducing dependencies on disaster recovery assets within the datacenter before pragmatically planning the migration.
-- **Migration motivations**: When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-migrate?azure-portal=true), teaches the team how to deliver that type of project.
+- **Migration motivations**: When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](learn/modules/cloud-adoption-framework-migrate?azure-portal=true), teaches the team how to deliver that type of project.
 - **Innovation motivations**: When innovation is the primary motivation, the creation of a targeted dev/test environment can be a great first project.
 
 <!-- docutune:ignore "data migration services" -->
