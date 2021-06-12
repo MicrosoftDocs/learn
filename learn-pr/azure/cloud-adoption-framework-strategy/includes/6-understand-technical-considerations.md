@@ -217,4 +217,4 @@ This is especially true if your company requires vendors to be added to an appro
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **First adoption project**, use the technical considerations discussed in this unit to define a first project for the team to use to evaluate technical considerations.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **First adoption project**, use the technical considerations discussed in this unit to define a first project for the team to use when evaluating technical considerations.
