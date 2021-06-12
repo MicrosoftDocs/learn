@@ -22,7 +22,7 @@ Currently Microsoft Secure Score supports recommendations for Microsoft 365 (inc
 
 In this diagram, you can see the Secure Score is 32.86%. It illustrates a breakdown of the score by points, and then shows the improvement areas that will boost your score. Finally, it provides an indication of how well your score compares to other similar organizations.
 
-:::image type="content" source="../media/3-secure-score-overview-inline.png" lightbox="../media/3-secure-score-overview-expanded.png" alt-text="Screenshot showing a Microsoft Secure Score page, with several panels highlighted: Secure Score, Breakdown of score, implementation actions, and a comparison of the score against other organizations.":::
+:::image type="content" source="../media/3-secure-score-overview-2-inline.png" lightbox="../media/3-secure-score-overview-2-expanded.png" alt-text="Screenshot showing the Microsoft Secure Score page.":::
 
 ## Differences between the Azure and Microsoft Secure Score
 
@@ -31,9 +31,3 @@ There's a Secure Score for both Microsoft 365 Defender and Azure Defender, but t
 Both the Azure and Microsoft Secure Score provide a list of steps you can take to improve your score. In Microsoft 365 Secure Score, these steps are called improvement actions. In the Azure Secure Score, scores are assessed for each subscription. The steps you can take to improve your score are called security recommendations and they're grouped into security controls.
 
 Use Microsoft Secure Score to understand and rapidly improve your organization’s security posture.
-
-## Interactive guide
-
-As the Microsoft 365 admin, you need to monitor and work on the security of your organization's Microsoft 365 identities, apps, data, and devices. The following interactive click-through demonstrates how Microsoft Secure Score can help.
-
-[![Interactive guide](../media/3-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M05%20-%20Explore%20Microsoft%20Secure%20Score/index.html?azure-portal=true)
