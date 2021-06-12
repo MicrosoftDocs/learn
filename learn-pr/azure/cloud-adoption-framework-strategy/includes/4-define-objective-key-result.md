@@ -52,17 +52,17 @@ Here are some examples of OKRs:
 - A 12 percent increase in student engagement, as measured through internal systems.
 - A 95 percent satisfaction rate from quarterly parent surveys.
 
-**Objective 2:** Build a technology platform that supports every person in our business to innovate and create.
+**Objective 2**: Build a technology platform that supports every person in our business to innovate and create.
 
-**Key results:**
+**Key results**:
 
 - Five new applications developed and adopted across the organization.
 - Every team with at least two members using Microsoft Power Platform.
 - Including new cloud technologies like data analytics and machine learning in all customer-facing applications.
 
-**Objective 3:** Transform our approach from sales driven to data driven.
+**Objective 3**: Transform our approach from sales driven to data driven.
 
-**Key results:**
+**Key results**:
 
 - Increasing pipeline coverage from 50 percent to 200 percent.
 - Increasing closing rates for sales engagements by 5 percent.
@@ -85,3 +85,7 @@ Five steps can help your organization move forward with OKRs:
 ## Record your observations
 
 If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the principles of OKRs that are discussed in this unit to shape your first business outcomes.
+
+## Anticipate financial considerations
+
+When migrating to the cloud, it’s important to think differently about how you'll consume and manage your cloud resources. As you build your business case, it’s critical to understand the key principles of cloud economics and transform your mindset. Part of this transformation is discovering technical and financial flexibility, efficiencies, and capabilities that aren’t possible with your on-premises IT infrastructure. When you plan short- and long-term cloud solutions and align them to business outcomes, you can achieve more with every dollar you invest.
