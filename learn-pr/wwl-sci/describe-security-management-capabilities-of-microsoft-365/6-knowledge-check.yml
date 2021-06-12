@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Admins in the organization are using the Microsoft 365 Defender portal every day. They want to quickly get an understanding of the organization's current security posture. Which section in the Microsoft 365 Defender portal will they use?"
+  - content: "Admins in the organization are using the Microsoft 365 Defender portal every day. They want to quickly get an understanding of the organization's current security posture. Which capability in the Microsoft 365 Defender portal will they use?"
     choices:
     - content: "Reports."
       isCorrect: false
