@@ -86,7 +86,9 @@ Your program file should look like the following:
 :::code language="qsharp" source="../code/5-program-8.qs":::
 
 > [!NOTE]
-> The code shown here does not currently run on any available Azure Quantum hardware targets, as it requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `MeasureInteger` requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
 
 ## Find your missing digit
 

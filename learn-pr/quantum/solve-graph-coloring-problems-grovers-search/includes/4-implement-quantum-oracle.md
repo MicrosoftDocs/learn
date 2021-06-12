@@ -162,7 +162,9 @@ Here's the Q# code that validates that the vertex coloring is valid.
 :::code language="qsharp" source="code/4-program-4.qs":::
 
 > [!NOTE]
-> The code shown here does not currently run on any available Azure Quantum hardware targets, as it requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as general measurement result comparisons (`let isColoringValid = M(target) == One;`) require a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
 
 Here's the output of this code:
 
