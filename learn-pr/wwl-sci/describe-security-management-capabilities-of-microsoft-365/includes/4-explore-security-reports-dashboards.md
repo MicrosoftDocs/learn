@@ -42,8 +42,13 @@ This report's dashboard is also structured into two sections:
 - Device trends - By default, the device trends displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period. 
 - Device summary - The device summary shows device information scoped to the current day.
 
-The vulnerable devices report enables admins to 
-View information about the vulnerable devices in your organization, including their exposure to vulnerabilities by severity level, exploitability, age, and more.
+:::image type="content" source="../media/4-device-health-report-inline.png" lightbox="../media/4-device-health-report-expanded.png" alt-text="Screenshot showing the device health and compliance reports page.":::
+
+
+The vulnerable devices report enables admins to view information about the vulnerable devices in your organization, including their exposure to vulnerabilities by severity level, exploitability, age, and more.
+
+:::image type="content" source="../media/4-vulnerable-devices-inline.png" lightbox="../media/4-vulnerable-devices-expanded.png" alt-text="Screenshot showing the vulnerable device reports page.":::
+
 
 #### Email and collaboration reports
 The **email and collaboration reports** enables admins to review Microsoft recommended actions to help improve email and collaboration security.

@@ -5,6 +5,10 @@ Here you can view the security health of your organization, act to configure dev
 
 The Microsoft 365 Defender portal home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day-to-day jobs.
 
+
+:::image type="content" source="../media/2-defender-portal-inline.png" lightbox="../media/2-defender-portal-expanded.png" alt-text="Screenshot showing the Microsoft 365 Defender portal landing page.":::
+
+
 The Microsoft 365 Defender portal allows admins to tailor the navigation pane to meet daily operational needs. Admins can customize the navigation pane to show or hide functions and services based on their specific preferences. Customization is specific to the individual admin, so other admins won’t see these changes.
 
 The Microsoft 365 Defender navigation pane includes these options and many more:
