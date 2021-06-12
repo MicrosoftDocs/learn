@@ -42,8 +42,8 @@ summary: |
   © 2020 Warner Bros. Ent. All Rights Reserved.
 prerequisites: |
   - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
-  - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
-  - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
+  - An [Azure account](/learn/modules/create-an-azure-account/)
+  - A [GitHub account](/learn/modules/introduction-to-github/)
 iconUrl: /learn/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
 levels:
 - beginner
