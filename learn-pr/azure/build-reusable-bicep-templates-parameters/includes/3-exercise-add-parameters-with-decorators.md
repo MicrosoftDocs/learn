@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
 As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. During the process, you'll:
 
@@ -88,7 +88,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
 
 ### Deploy the template to Azure by using the Azure CLI
 
@@ -104,7 +104,7 @@ You'll see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
 
 ### Deploy the template to Azure by using PowerShell
 

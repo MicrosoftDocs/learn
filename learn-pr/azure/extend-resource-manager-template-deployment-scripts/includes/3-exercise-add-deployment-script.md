@@ -14,6 +14,7 @@ You start with an existing template that your team has been using. The template 
 ::: zone pivot="jsoncli,jsonpowershell"
 
 1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
+
 1. Copy the following starting template into *azuredeploy.json*.
 
     :::code language="json" source="code/3-starting-template.json" :::
@@ -25,6 +26,7 @@ You start with an existing template that your team has been using. The template 
 ::: zone pivot="bicepcli,biceppowershell"
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
+
 1. Copy the following starting template into *main.bicep*.
 
     :::code language="plaintext" source="code/3-starting-template.bicep" :::
@@ -181,39 +183,9 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="jsoncli,bicepcli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed.
+[!include[](../../includes/azure-template-exercise-nosandbox-intro-cli.md)]
 
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
-
-      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash on the drop-down menu." border="true":::
-
-1. If not, select the drop-down menu and choose **Select Default Shell**.
-1. Select **bash**.
-
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down menu for selecting the shell." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with **bash** as the shell.
-
-### Sign in to Azure
-
-1. From the terminal in Visual Studio Code, run the following command. A browser then opens so you can sign in to your Azure account.
-
-    ```azurecli
-    az login
-    ```
-
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. Find the subscription that you want to use for this exercise. If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
-
-    ```azurecli
-    az account list --output tsv
-    ```
-
-1. Set the default subscription for all of the Azure CLI commands that you run in this session.
-
-    ```azurecli
-    az account set --subscription "Your Subscription Name or ID"
-    ```
+[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-cli.md)]
 
 ### Create a resource group for the exercise
 
@@ -233,41 +205,9 @@ az group create --location eastus --name $resourceGroupName
 
 ::: zone pivot="jsonpowershell,biceppowershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed.
+[!include[](../../includes/azure-template-exercise-nosandbox-intro-powershell.md)]
 
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
-
-    :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with p w s h on the drop-down menu." border="true":::
-
-    If not, select the drop-down menu and choose **Select Default Shell**.
-
-1. Select **pwsh**.
-
-    :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down list for selecting the default shell." border="true":::
-
-1. Select **+** in the terminal to create a new terminal with **pwsh** as the shell.
-
-### Sign in to Azure by using Azure PowerShell
-
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
-
-    ```azurepowershell
-    Connect-AzAccount
-    ```
-
-1. Get the ID of the subscription that you want to use for this exercise. The following command will list your subscriptions and their IDs. 
-
-    ```azurepowershell
-    Get-AzSubscription
-    ```
-    The subscription ID is the second column. Copy the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
-
-1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
-
-    ```azurepowershell
-    Set-AzContext -SubscriptionId {Your subscription ID}
-    ```
+[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-powershell.md)]
 
 ### Create a resource group for the exercise
 
