@@ -104,9 +104,7 @@ Your team's first adoption project likely will result in a production deployment
 To support the preceding criteria, this list provides an example of a first project for each motivation category:
 
 - **Critical business events**: When a critical business event is the primary motivation, implementing a tool like Azure Site Recovery might be a good first project. During migration, you would use a tool like Azure Migrate to quickly migrate a few low-impact datacenter assets. But during the first project, you might also first use Site Recovery as a disaster recovery tool. You would be reducing dependencies on disaster recovery assets within the datacenter before pragmatically planning the migration.
-
 - **Migration motivations**: When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-migrate?azure-portal=true), teaches the team how to deliver that type of project.
-
 - **Innovation motivations**: When innovation is the primary motivation, the creation of a targeted dev/test environment can be a great first project.
 
 <!-- docutune:ignore "data migration services" -->

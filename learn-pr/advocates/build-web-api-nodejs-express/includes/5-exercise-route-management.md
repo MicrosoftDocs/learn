@@ -4,7 +4,7 @@ The online retailer is impressed with your first web application. Now they want 
 
 It's common to construct an API with a number of resources. Each resource can have a several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the resource **products**:
 
-1. Clone the repo at https://github.com/MicrosoftDocs/node-essentials by using this command:
+1. Clone the repo at https://github.com/MicrosoftDocs/node-essentials by running this command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
@@ -12,7 +12,7 @@ It's common to construct an API with a number of resources. Each resource can ha
 
    This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. To inspect the repo you cloned and go to the files you need, enter this command:
+1. To inspect the repo you cloned and go to the files you need, run this command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
@@ -30,7 +30,7 @@ It's common to construct an API with a number of resources. Each resource can ha
    -| package.json
    ```
 
-1. The **package.json** file contains a dependency **express**. In the terminal, enter the following command to install it:
+1. The **package.json** file contains a dependency **express**. In the terminal, run the following command to install it:
 
    ```bash
    npm install
@@ -72,9 +72,9 @@ It's common to construct an API with a number of resources. Each resource can ha
 
 ### Implement the routes
 
-To implement the routes, add a little code, and then test it. Do this method by method until you have a fully functional API.
+To implement the routes, add a little code, and then test it. Do this method-by-method until you have a fully functional API.
 
-1. First support reading from the API. Locate the part of the code that looks like this:
+1. First, support reading from the API. Locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -90,19 +90,19 @@ To implement the routes, add a little code, and then test it. Do this method by 
    })
    ```
 
-1. To check that the code works, start the API by using this command:
+1. To check that the code works, start the API by running this command:
 
    ```bash
    node app.js
    ```
 
-1. In a separate terminal enter:
+1. In a separate terminal, run this command:
 
    ```javascript
    node client-get.js
    ```
 
-   That command should give you the following output:
+   You should get the following output:
 
    ```output
    Received data []
@@ -131,15 +131,15 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code reads incoming data from **req.body** and constructs a JavaScript object from it. Next, it's added to the array **products**. Finally the new product is returned back to the user.
+   The code reads incoming data from **req.body** and constructs a JavaScript object from it. Next, it's added to the array **products**. Finally, the new product is returned to the user.
 
-1. To test the code, run the server program by using this command:
+1. To test the code, run the server program by running this command:
 
    ```bash
    node app.js
    ```
 
-1. In a separate terminal run this command:
+1. In a separate terminal, run this command:
 
    ```bash
    node client-post.js
@@ -152,7 +152,7 @@ The API responds with an empty array because you haven't written any data to it 
    Closed connection
    ```
 
-1. To check that the data is written to the API, enter the following command:
+1. To check that the data is written to the API, run the following command:
 
    ```bash
    node client-get.js
@@ -165,7 +165,7 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   The response tells you that when you ran **client-post.js** you wrote data to the API. Also, you ran **client-get.js** to query the API for data. The API responded with the data that you just wrote to it.
+   The response tells you that when you ran **client-post.js**, you wrote data to the API. Also, you ran **client-get.js** to query the API for data. The API responded with the data that you just wrote to it.
 
 ### Implement the ability to update data
 
@@ -191,7 +191,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code locates the record in the **products** array that matches the **id** property and updates that record.
+   The code locates the record in the **products** array that matches the **id** property, and updates that record.
 
 1. To test the code, start the server application:
 
@@ -199,7 +199,7 @@ The API responds with an empty array because you haven't written any data to it 
    node app.js
    ```
 
-1. In the other terminal run this command to create a record:
+1. In the other terminal, run this command to create a record:
 
    ```bash
    node client-post.js
@@ -293,7 +293,7 @@ The API responds with an empty array because you haven't written any data to it 
 
 ### Implement CRUD
 
-Implementing CRUD for a resource is common thing to do. Express has a method **route()** meant just for this purpose. By using the **route()** method, your code is grouped so that it's easier to read.
+Implementing CRUD for a resource is a common thing to do. Express has a method **route()** meant just for this purpose. By using the **route()** method, your code is grouped so that it's easier to read.
 
 1. To implement CRUD, replace the code in **app.js** with this code:
 
@@ -336,19 +336,19 @@ Implementing CRUD for a resource is common thing to do. Express has a method **r
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-1. To test this new implementation, restart the server with this command:
+1. To test this new implementation, restart the server by running this command:
 
    ```bash
    node app.js
    ```
 
-1. In a separate terminal window run this command:
+1. In a separate terminal window, run this command:
 
    ```bash
    node client-post.js
    ```
 
-1. Then run this command to delete the record:
+1. Then, run this command to delete the record:
 
    ```bash
    node client-delete-route.js
@@ -369,13 +369,13 @@ Implementing CRUD for a resource is common thing to do. Express has a method **r
 
    You used **client-delete-route.js** instead of **client-delete.js** in the previous exercise. The difference lies in how the route is implemented. The first version of **app.js** relies on deletions being done toward a route like this **/products/<id>**, with the unique identifier being sent as a route parameter.
 
-   When you use the **route()** method, it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
+   When you use the **route()** method, it implements the deletion route differently, and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
 
 ## Leverage route and query parameters to limit response size
 
 Data usually resides in a database or an endpoint. The size of the data can be enormous. When a user asks for all the data for a specific resource, the response can be thousands or even millions of records. A request like this can cause a massive strain on a database. It also takes a long time to serve the response.
 
-To avoid that scenario, it's good practice to *limit* the size of the response.
+To avoid that scenario, it's a good practice to *limit* the size of the response:
 
 - Use route parameters to ask for specific records.
 - Use query parameters to specify a subset of records.
@@ -393,7 +393,7 @@ Both techniques are taught in this exercise.
 
    This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. To inspect the repo you cloned, enter the following command:
+1. To inspect the repo you cloned, run the following command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-routing/parameters
@@ -407,7 +407,7 @@ Both techniques are taught in this exercise.
    -| package-lock.json
    ```
 
- 1. The **package.json** file contains the dependency **express**. In the terminal, enter the following command to install it:
+ 1. The **package.json** file contains the dependency **express**. In the terminal, run the following command to install it:
 
     ```bash
     npm install
@@ -472,7 +472,7 @@ The code contains an Express application. The next step is to implement two rout
    });
    ```
 
-1. In the terminal, enter the following command to run the app:
+1. In the terminal, run the following command to run the app:
 
    ```output
    node app.js
@@ -488,7 +488,7 @@ The code contains an Express application. The next step is to implement two rout
    }
    ```
 
-   Great, you implemented the route correctly. The app uses the route parameter **id** to find a specific product.
+   Congratulations. You implemented the route correctly. The app uses the route parameter **id** to find a specific product.
 
 1. To implement the route **/products**, locate the following code:
 
@@ -513,7 +513,7 @@ The code contains an Express application. The next step is to implement two rout
    })
    ```
 
-1. In the terminal, enter the following command to start the app and test the code:
+1. In the terminal, run the following command to start the app and test the code:
 
    ```bash
    node app.js

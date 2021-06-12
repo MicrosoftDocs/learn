@@ -21,7 +21,6 @@ prerequisites: |
   - Familiarity with CI/CD concepts such as GitHub Actions
   - Familiarity with available Azure services
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-hidden: true
 levels:
   - intermediate
   - beginner

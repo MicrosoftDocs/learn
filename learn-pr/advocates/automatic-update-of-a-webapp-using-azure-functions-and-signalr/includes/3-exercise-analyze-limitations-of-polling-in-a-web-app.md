@@ -8,7 +8,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 ## Download sample app code
 
-1. Run the following command on your local machine to clone the app from GitHub.
+1. Run the following command in Azure Cloud Shell from the portal to clone the app from GitHub.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr.git serverless-demo
@@ -17,13 +17,13 @@ Before you begin, make sure you have the following software installed on your ma
     > [!IMPORTANT]
     > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. A post-install script is included to set up your database and add some data to the database.
 
-1. Run the following command to navigate to the new folder into which you cloned the repo:
+1. Run the following command to go to the new folder into which you cloned the repo:
 
     ```bash
     cd serverless-demo
     ```
 
-1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Use the following command to open the *start* folder in Visual Studio Code:
+1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Run the following command to open the *start* folder in Visual Studio Code:
 
     ```bash
     code start
@@ -35,7 +35,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 Azure Functions requires a storage account, and you'll need it when you deploy the web app to the cloud later in the module.
 
-1. Execute the following command in the Cloud Shell to define a name for your Azure Storage account.
+1. Run the following command in Cloud Shell to define a name for your Azure Storage account.
 
     ```bash
     export STORAGE_ACCOUNT_NAME=mslsigrstorage$(openssl rand -hex 5)
@@ -44,7 +44,7 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
     Keep note of  this  account name for the remainder of the module.
 
-1. Run the following `az storage account create` command in the Cloud Shell to create a storage account for your function and static website.
+1. Run the following `az storage account create` command to create a storage account for your function and static website.
 
     ```bash
     az storage account create \
@@ -60,7 +60,7 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
 You store stock prices in an Azure Cosmos DB database, so you'll set that up in the sandbox account.
 
-1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group.
+1. Run the following `az cosmosdb create` command in Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group.
 
     ```bash
     az cosmosdb create  \
@@ -74,7 +74,7 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
 
 For the app to run, you need to add the connection settings for your cloud services to the local settings file.
 
-1. Run the following commands in the Cloud Shell to get the connection strings for the resources we created in this exercise.
+1. Run the following commands in Cloud Shell to get the connection strings for the resources we created in this exercise.
 
     ```bash
     STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
@@ -101,7 +101,7 @@ For the app to run, you need to add the connection settings for your cloud servi
     printf "\n\nReplace <STORAGE_CONNECTION_STRING> with:\n$STORAGE_CONNECTION_STRING\n\nReplace <COSMOSDB_CONNECTION_STRING> with:\n$COSMOSDB_CONNECTION_STRING\n\nReplace <COSMOSDB_MASTER_KEY> with:\n$COSMOSDB_MASTER_KEY\n\n"
     ```
 
-1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
+1. Go to where you cloned the application, and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
 
 1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, and `AzureCosmosDBMasterKey` with the values listed in the Cloud Shell and save the file. The *local.settings.json* file should only exist on your local computer.
 
@@ -116,7 +116,7 @@ For the app to run, you need to add the connection settings for your cloud servi
     > [!NOTE]
     > If a problem arises during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
 
-1. Press **F5** to start debugging the function app. The function app startup is shown in a terminal window.
+1. Press <kbd>F5</kbd> to start debugging the function app. The function app startup is shown in a terminal window.
 
 1. To run the web application on your machine, open a second integrated terminal instance and run the following command to start the web app.
 
@@ -124,7 +124,7 @@ For the app to run, you need to add the connection settings for your cloud servi
     npm start
     ```
 
-1. The script automatically opens the browser and navigates to http://localhost:8080. If the browser fails to open automatically, you can navigate to http://localhost:8080 manually.
+1. The script automatically opens the browser and goes to http://localhost:8080. If the browser fails to open automatically, you can go to http://localhost:8080 manually.
 
     ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
 
@@ -136,9 +136,9 @@ For the app to run, you need to add the connection settings for your cloud servi
 
 When you're done, stop the running processes.
 
-- To stop the web server, click the **kill process** (trash can icon) on the terminal window that is running the web server.
+- To stop the web server, select the **kill process** (trash can icon) on the terminal window that is running the web server.
 
-- To stop the functions app, click the **Stop** button or press **Shift + F5**.
+- To stop the functions app, select **Stop** or press <kbd>Shift+F5</kbd>.
 
 <!--
     REVIEW:

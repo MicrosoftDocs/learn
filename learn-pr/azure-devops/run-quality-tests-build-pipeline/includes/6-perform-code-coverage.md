@@ -1,6 +1,6 @@
 Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework you use.
 
-When you target .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET Core. Before we add code coverage to the pipeline, let's check in with the team.
+When you target .NET applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET. Before we add code coverage to the pipeline, let's check in with the team.
 
 Amita feels much better. She's seeing actual progress in catching bugs and in easily viewing test results. What's more, it hasn't taken long for Andy and Mara to implement the improvements. Amita, Andy, and Mara talk a bit more about unit testing.
 
@@ -40,14 +40,14 @@ But at some point we also need to think about security and compliance. We should
 
 **Mara:** Let's get started.
 
-## How is code coverage done in .NET Core?
+## How is code coverage done in .NET?
 
 The way you collect code coverage depends on what programming language and frameworks you're using, as well as what code coverage tools are available.
 
-Mara and Andy do some investigation around code coverage for .NET Core applications. Here's what they find:
+Mara and Andy do some investigation around code coverage for .NET applications. Here's what they find:
 
 * Visual Studio on Windows provides a way to perform code coverage.
-* However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET Core.
+* However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET.
 
     The unit test project requires the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild?azure-portal=true) NuGet package.
 * Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](https://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats.
@@ -58,13 +58,13 @@ Mara and Andy do some investigation around code coverage for .NET Core applicati
 
     Specifically, there's an HTML format called **HtmlInline_AzurePipelines**, which provides a visual appearance that matches Azure Pipelines.
 
-### How can I manage .NET Core tools?
+### How can I manage .NET tools?
 
-A .NET Core tool such as `ReportGenerator` is a special NuGet package that contains a console application. You can manage a .NET Core tool as a global tool or as a local tool.
+A .NET tool such as `ReportGenerator` is a special NuGet package that contains a console application. You can manage a .NET tool as a global tool or as a local tool.
 
 A global tool is installed in a centralized location and can be called from any directory. One version of a global tool is used for all directories on the machine.
 
-A local tool is a more isolated copy of a .NET Core tool that's scoped to a specific directory. Scope enables different directories to contain different versions of the same tool.
+A local tool is a more isolated copy of a .NET tool that's scoped to a specific directory. Scope enables different directories to contain different versions of the same tool.
 
 You use a _manifest file_ to manage local tools for a given directory. This file is in JSON format and is typically named *dotnet-tools.json*. A manifest file enables you to describe the specific tool versions that you need to build or run your application.
 
@@ -79,7 +79,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `dotnet new` command to create a local tool manifest file.
 
-    ```bash
+    ```dotnetcli
     dotnet new tool-manifest
     ```
 
@@ -87,7 +87,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet tool install` command to install ReportGenerator:
 
-    ```bash
+    ```dotnetcli
     dotnet tool install dotnet-reportgenerator-globaltool
     ```
 
@@ -95,13 +95,13 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet add package` command to add the `coverlet.msbuild` package to the *Tailspin.SpaceGame.Web.Tests* project:
 
-    ```bash
+    ```dotnetcli
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage:
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build \
       --configuration Release \
       /p:CollectCoverage=true \
@@ -111,7 +111,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     If the command fails, try running it like this:
 
-    ```bash
+    ```dotnetcli
     MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
       --configuration Release \
       /p:CollectCoverage=true \
@@ -123,7 +123,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet tool run` command to use `ReportGenerator` to convert the Cobertura file to HTML:
 
-    ```bash
+    ```dotnetcli
     dotnet tool run reportgenerator \
       -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
       -targetdir:./CodeCoverage \
@@ -136,17 +136,17 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     You see the coverage report summary.
 
-    ![Screenshot of local code coverage report summary showing 20.9 percent line coverage.](../media/6-coverage-report-summary.png)
+    :::image type="content" source="../media/6-coverage-report-summary.png" alt-text="A screenshot of the local code coverage report summary showing 7.7 percent line coverage.":::
 
 1. Scroll to the bottom of the page to see a coverage breakdown by class type.
 
-    ![Screenshot of local coverage report class summary showing coverage stats across classes found in the Tailspin.SpaceGame.Web code.](../media/6-coverage-class-summary.png)
+    :::image type="content" source="../media/6-coverage-class-summary.png" alt-text="A screenshot of local coverage report class summary showing coverage stats across classes found in the Tailspin.SpaceGame.Web code.":::
 
-1. Select the link to ``TailSpin.SpaceGame.Web.LocalDocumentDBRepository`1`` to view further details.
+1. Select the link to `TailSpin.SpaceGame.Web.LocalDocumentDBRepository<T>` to view further details.
 
     Notice that the `GetItemsAsync` method is covered by unit tests, but the `CountItemsAsync` method has no coverage.
 
-    ![Screenshot of local class coverage detail with a visual representation of unit test coverage for two C# methods, one with all code lines green (covered) and one with all lines red (not covered).](../media/6-coverage-class-details.png)
+    :::image type="content" source="../media/6-coverage-class-details.png" alt-text="A screenshot of local class coverage detail with a visual representation of unit test coverage for two C# methods, one with all code lines green (covered) and one with all lines red (not covered).":::
 
     This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but does not call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
 
@@ -154,7 +154,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 Now that you can build a code coverage report locally, you're ready to add tasks to your build pipeline, which performs the same tasks.
 
-In this part, you create a branch named `code-coverage`, based on the `unit-tests` branch, to hold your work. In practice, you would ordinarily create this branch from the `master` branch.
+In this part, you create a branch named `code-coverage`, based on the `unit-tests` branch, to hold your work. In practice, you would ordinarily create this branch from the `main` branch.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run the following `git checkout` command to create a branch named `code-coverage`:
@@ -175,7 +175,7 @@ In this section, you add tasks that measure code coverage to your build pipeline
 
     | Azure Pipelines task           | Display name                           | Description                                                         |
     |--------------------------------|----------------------------------------|---------------------------------------------------------------------|
-    | `DotNetCoreCLI@2`              | Install .NET Core tools from local manifest                |  Installs tools listed in the manifest file, *dotnet-tools.json*              |
+    | `DotNetCoreCLI@2`              | Install .NET tools from local manifest                |  Installs tools listed in the manifest file, *dotnet-tools.json*              |
     | `DotNetCoreCLI@2`              | Run unit tests - $(buildConfiguration) | Runs unit tests and also collects code coverage in Cobertura format |
     | `DotNetCoreCLI@2`              | Create code coverage report            |  Converts Cobertura output to HTML                                  |
     | `PublishCodeCoverageResults@1` | Publish code coverage report           | Publishes the report to the pipeline                                |
@@ -223,7 +223,7 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
     You view the same results that you did when you ran the tests locally.
 
-    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 5.5 percent line coverage.](../media/6-coverage-report-pipeline.png)
+    :::image type="content" source="../media/6-coverage-report-pipeline.png" alt-text="A screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 7.7 percent line coverage.":::
 
     As an optional step, you can explore the results from Azure Pipelines.
 
@@ -244,7 +244,7 @@ Here you add a second widget that summarizes code coverage.
 1. Select **Edit**.
 1. Search for **Code Coverage**, and then select **Code Coverage**.
 
-    ![Screenshot of Visual Studio Marketplace showing the Code Coverage widget card.](../media/6-add-code-coverage-widget.png)
+    :::image type="content" source="../media/6-add-code-coverage-widget.png" alt-text="A screenshot of Visual Studio Marketplace showing the Code Coverage widget card.":::
 1. Drag **Code Coverage** to the canvas.
 1. Select the gear icon to configure the widget.
 1. Keep all the default settings, except for:
@@ -256,7 +256,7 @@ Here you add a second widget that summarizes code coverage.
 
     The widget shows the percentage of code your unit tests cover.
 
-    ![Screenshot of Azure DevOps Code Coverage widget showing 6 percent coverage of the sample project.](../media/6-dashboard-widget.png)
+    :::image type="content" source="../media/6-dashboard-widget.png" alt-text="A screenshot of Azure DevOps Code Coverage widget showing 8 percent coverage of the sample project.":::
 
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 

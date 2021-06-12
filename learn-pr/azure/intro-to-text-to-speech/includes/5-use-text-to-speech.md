@@ -2,7 +2,7 @@ You have the option to treat this as a demo to just see what you can do with Tex
 
 For more guided hands-on learning on Text-to-Speech, we have more Learn modules for you to check out. After learning more, you can always come back here to apply what you've learned in the free sandbox.
 
-## Deploy Text-to-Speech
+## Deploy Text-to-speech
 
 To create the Text-to-Speech resource and deploy the webapp, complete the following three steps:
 

@@ -5,7 +5,7 @@ Here, you'll configure the Unity project and scene to render the truck engine in
 ## Clone the sample project and configure the Unity scene
 
 > [!NOTE]
-> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
+> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
 
 1. In the command prompt (type **cmd** in Windows start menu), run the following commands to clone the GitHub repository, which contains the Unity project.
 

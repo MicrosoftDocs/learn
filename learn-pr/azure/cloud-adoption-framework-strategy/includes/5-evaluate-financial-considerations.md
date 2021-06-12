@@ -50,13 +50,13 @@ To help you find specific types of examples of business outcomes, we've separate
 
 Financial or fiscal performance is the cleanest business outcome for many business leaders, but it's not the only one.
 
-View samples of [fiscal outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes?azure-portal=true).
+View samples of [fiscal outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes?azure-portal=true).
 
 ### Agility outcomes
 
 Today's fast-changing business environment places a premium on time. The ability to respond to and drive market change quickly is the fundamental measure of business agility.
 
-View samples of [agility outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/agility-outcomes?azure-portal=true).
+View samples of [agility outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/agility-outcomes?azure-portal=true).
 
 <!-- docutune:ignore "global reach" -->
 
@@ -64,25 +64,25 @@ View samples of [agility outcomes](https://docs.microsoft.com/azure/cloud-adopti
 
 In a constantly shrinking market, global reach (the ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
 
-View outcomes related to [global reach](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/reach-outcomes?azure-portal=true).
+View outcomes related to [global reach](/azure/cloud-adoption-framework/strategy/business-outcomes/reach-outcomes?azure-portal=true).
 
 ### Customer engagement outcomes
 
 Social marketplaces are redefining winners and losers at an unheard-of pace. Responding to user needs is a key measure of customer engagement.
 
-Learn more about [customer engagement outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/engagement-outcomes?azure-portal=true).
+Learn more about [customer engagement outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/engagement-outcomes?azure-portal=true).
 
 ### Performance outcomes
 
 Performance and reliability are assumed. When either falters, reputation damage can be painful and long-lasting.
 
-Learn more about [performance outcomes](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/performance-outcomes?azure-portal=true).
+Learn more about [performance outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/performance-outcomes?azure-portal=true).
 
 ### Sustainability goals
 
 Organizations are increasingly discussing environmental goals and sustainability targets.
 
-Learn more about [sustainability goals](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/sustainability?azure-portal=true).
+Learn more about [sustainability goals](/azure/cloud-adoption-framework/strategy/business-outcomes/sustainability?azure-portal=true).
 
 ## Create a financial model for cloud transformation
 
@@ -227,3 +227,4 @@ After you've worked with the business to make decisions about a cloud accounting
 ## Record your observations
 
 If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business justification**, use the financial considerations that are discussed in this unit to describe your business justification or financial considerations.
+

@@ -16,38 +16,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Add the following content into the *appService.bicep* file:
 
-   ```bicep
-   param location string
-   param appServiceAppName string
-
-   @allowed([
-     'nonprod'
-     'prod'
-   ])
-   param environmentType string
-   
-   var appServicePlanName = 'toy-product-launch-plan'
-   var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
-   var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
-   
-   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: appServicePlanName
-     location: location
-     sku: {
-       name: appServicePlanSkuName
-       tier: appServicePlanTierName
-     }
-   }
-   
-   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-     name: appServiceAppName
-     location: location
-     properties: {
-       serverFarmId: appServicePlan.id
-       httpsOnly: true
-     }
-   }
-   ```
+   :::code language="bicep" source="code/8-app-service.bicep" range="1-30" :::
 
    Notice that you've copied the parameters and variables from your *main.bicep* template, because the *appService.bicep* template needs to be self-contained.
 
@@ -61,55 +30,9 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. At the bottom of the *main.bicep* file, add the following Bicep code:
 
-   ```bicep
-   module appService 'modules/appService.bicep' = {
-       name: 'appService'
-       params: {
-         location: location
-         appServiceAppName: appServiceAppName
-         environmentType: environmentType
-       }
-   }
-   ```
+   :::code language="bicep" source="code/8-template.bicep" range="25-32" :::
 
    Notice that you're specifying the parameters for your module by referencing the parameters in the parent template.
-
-   After you're finished, your *main.bicep* file should look like this:
-
-   ```bicep
-    param location string = resourceGroup().location
-    param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
-    param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
-
-    @allowed([
-      'nonprod'
-      'prod'
-    ])
-    param environmentType string
-
-    var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-    
-    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-      name: storageAccountName
-      location: location
-      sku: {
-        name: storageAccountSkuName
-      }
-      kind: 'StorageV2'
-      properties: {
-        accessTier: 'Hot'
-      }
-    }
-    
-    module appService 'modules/appService.bicep' = {
-      name: 'appService'
-      params: {
-        location: location
-        appServiceAppName: appServiceAppName
-        environmentType: environmentType
-      }
-    }
-    ```
 
 1. Save the changes to the file.
 
@@ -117,9 +40,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Add the following Bicep code at the bottom of the *appService.bicep* file:
 
-   ```bicep
-   output appServiceAppHostName string = appServiceApp.properties.defaultHostName
-   ```
+   :::code language="bicep" source="code/8-app-service.bicep" range="32" :::
 
    This code is declaring that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
 
@@ -129,13 +50,19 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 
-   ```bicep
-   output appServiceAppHostName string = appService.outputs.appServiceAppHostName
-   ```
+   :::code language="bicep" source="code/8-template.bicep" range="34" :::
 
    Notice that this output is declared in a similar way to the output in the module. But this time, you're referencing the module's output instead of a resource property.
 
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
+
+:::code language="bicep" source="code/8-template.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ### Deploy the updated Bicep template
 

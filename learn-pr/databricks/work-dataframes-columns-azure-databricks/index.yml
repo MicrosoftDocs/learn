@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with DataFrames columns in Azure Databricks
-summary: Use the DataFrame Column Class Azure Databricks to apply column-level transformations, such as sorts, filters and aggregations.
+summary: Use the DataFrame Column class in Azure Databricks to apply column-level transformations, such as sorts, filters and aggregations.
 abstract: |
   In this module, you will:
   - Learn the syntax for specifying column values for filtering and aggregations

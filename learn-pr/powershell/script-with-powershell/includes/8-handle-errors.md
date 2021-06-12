@@ -15,7 +15,7 @@ There are two types of errors you can get when you run PowerShell:
 - **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error by using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at that point and no statements will run.
 
    > [!NOTE] 
-   > The `Trap` construct is outside the scope of this module. If you're interested, see [About Trap](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_trap?view=powershell-7.1&preserve-view=true).
+   > The `Trap` construct is outside the scope of this module. If you're interested, see [About Trap](/powershell/module/microsoft.powershell.core/about/about_trap?preserve-view=true&view=powershell-7.1).
 
 - **Non-terminating error**. This type of error will notify the user that something is wrong, but the script will continue. You can upgrade this type of error to a terminating error.
 
@@ -118,4 +118,4 @@ In some situations, you might want to cause an error:
    ```
 
    > [!NOTE]
-   > In general, don't use `Throw` for parameter validation. Use [validation attributes](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-7.1#parameter-and-variable-validation-attributes&preserve-view=true) instead. If you can't make your code work with these attributes, a `Throw` might be OK.
+   > In general, don't use `Throw` for parameter validation. Use [validation attributes](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?preserve-view=true&view=powershell-7.1#parameter-and-variable-validation-attributes) instead. If you can't make your code work with these attributes, a `Throw` might be OK.

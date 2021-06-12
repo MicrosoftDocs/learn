@@ -42,7 +42,7 @@ The **second field** represents minutes. The value "*/5" contains two special ch
 
 The **remaining four fields** represent the hour, day, month, and weekday of the week. An asterisk for these fields means to select every possible value. In this example, we select "every hour of every day of every month."
 
-When you put all the fields together, the expression is read as "on the first second, of every fifth minute of every hour, of every day, of every month".
+When you put all the fields together, the expression is read as "the first second of every fifth minute of every hour, of every day, of every month".
 
 ## How to create a timer trigger
 
