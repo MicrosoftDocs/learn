@@ -215,4 +215,4 @@ You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-0.
 
 Congrats, space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! 
 
-In the next unit, you finally put into practice your skills to implement Grover's search algorithm to determine the minimum number of bandwidths we need to assign. 
+In the next unit, you finally put into practice your skills to implement Grover's search algorithm to determine the minimum number of bandwidths we need to assign.
