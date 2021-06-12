@@ -53,7 +53,7 @@ Learn more:
 * Learn about the [Microsoft Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=local?azure-portal=true).
 * Learn about the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true).
 
-Save with Azure offers and licensing terms like the Azure Hybrid Benefit and Azure Reservations.:
+Save with Azure offers and licensing terms like the Azure Hybrid Benefit and Azure Reservations.
 
 Learn more:
 
@@ -152,13 +152,13 @@ Throughout the cloud adoption lifecycle, various teams might require support to 
 
 Few corporations have the diversity of skills required to support strategy, planning, readiness, adoption, governance, and management. Partners and other support models are often necessary to fill in the gaps in the team's skills and responsibilities.
 
-Various partnership options can help develop needed skills, augment staffing requirement, or completely offload-specific processes.
+Various partnership options can help develop needed skills, augment staffing requirement, or completely offload specific processes.
 
 ## Partnership options
 
 You are not alone in your cloud journey. There are several options to support your team throughout your cloud adoption journey.
 
-* **Azure solution providers (partners)**: Get connected with Azure expert managed services providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies.
+* **Azure solution providers (partners)**: Get connected with Azure Expert Managed Services Providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies.
 * **FastTrack for Azure**: Use the Microsoft FastTrack for Azure program to accelerate migration.
 * **Azure Migration Program**: The Azure Migration Program aligns a mixture of partners and Microsoft employees to accelerate and support your migration.
 * **Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a Solution Assessment engagement.
@@ -193,7 +193,7 @@ Watch this short video to get an overview of how the Azure Migration Program can
 
 ## Solution assessments
 
-Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=2?azure-portal=true). Microsoft Solution Assessments provide customers with an in depth understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments utilize modern tools to collect the customer’s data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
+Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=2?azure-portal=true). Microsoft Solution Assessments can help customers gain a deeper understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments utilize modern tools to collect the customer’s data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
 
 ## Azure support
 
