@@ -158,7 +158,7 @@ Various partnership options can help develop needed skills, augment staffing req
 
 You are not alone in your cloud journey. There are several options to support your team throughout your cloud adoption journey.
 
-* **Azure solution providers (partners)**: Get connected with Azure expert-managed services providers (MSP) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies.
+* **Azure solution providers (partners)**: Get connected with Azure expert managed services providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies.
 * **FastTrack for Azure**: Use the Microsoft FastTrack for Azure program to accelerate migration.
 * **Azure Migration Program**: The Azure Migration Program aligns a mixture of partners and Microsoft employees to accelerate and support your migration.
 * **Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a Solution Assessment engagement.

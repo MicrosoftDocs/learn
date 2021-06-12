@@ -168,11 +168,11 @@ Time savings for staff often are included in soft-cost reductions. When those ti
 
 That said, skills that are needed to work on-premises generally map to a similar (or higher-level) skill set that's needed to work in the cloud. So, people generally aren't laid off after a cloud migration.
 
-An exception occurs when operational capacity is provided by a third party or a managed services provider (MSP). If IT systems are managed by a third party, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP likely will operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
+An exception occurs when operational capacity is provided by a third party or a managed services provider (MSP). If IT systems are managed by a third party, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
 
 #### Capital expense reductions or avoidance
 
-Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense  generally would fit into a capital expense category. 
+Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense  generally would fit into a capital expense category.
 
 More common are basic equipment refresh cycles. Some companies have rigid hardware refresh cycles, which means that assets are retired and replaced on a regular cycle (usually every three, five, or eight years). These cycles often coincide with asset lease cycles or with the forecasted life span of equipment. In a new refresh cycle, IT draws on capital expense to acquire new equipment.
 

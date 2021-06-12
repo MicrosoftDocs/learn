@@ -39,7 +39,7 @@ As a final step, when you create your business case, you want to compare the clo
 
 Azure offers a range of valuable tools and calculators to help you prepare a business case for your cloud migration.
 
-**Azure Total Cost of Ownership (TCO) Calculator**: Use the [Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true) online tool to estimate the cost savings you can realize when you migrate your workloads to Azure.
+**Azure Total Cost of Ownership (TCO) Calculator**: Use the [TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true) online tool to estimate the cost savings you can realize when you migrate your workloads to Azure.
 
 Enter details of your on-premises infrastructure into the tool including servers, databases, storage, and networking, licensing assumptions, and costs.
 
