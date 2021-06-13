@@ -22,9 +22,6 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
 
-> [!NOTE]
-> Azure Static Web Apps is currently in preview.
-
 When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions or Azure DevOps workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the workflow automatically builds and deploys your app and its API to Azure.
 
 Azure hosts and serves your web app. Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
