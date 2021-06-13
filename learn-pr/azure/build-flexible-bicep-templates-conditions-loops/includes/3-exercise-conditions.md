@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
 
 You need to deploy your toy company's resources to a variety of environments. And you want to use parameters and conditions to control what gets deployed to each environment. 
 
@@ -74,7 +74,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../shared/includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
 
 ### Deploy the template to Azure by using the Azure CLI
 
@@ -88,7 +88,7 @@ az deployment group create --template-file main.bicep --parameters location=west
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../shared/includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
 
 ### Deploy the template to Azure by using Azure PowerShell
 

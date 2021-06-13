@@ -8,7 +8,7 @@ Bicep solves these problems by using a much simpler language that was designed s
 
 Behind the scenes, Resource Manager still operates based on the same JSON templates. When you submit a Bicep template to Resource Manager, the Bicep tooling converts your template to a JSON format in a process called _transpilation_. This isn't something you typically have to think about, but if you want to, you can view the JSON template file that Bicep creates.
 
-:::image type="content" source="../../shared/media/bicep-to-json.png" alt-text="Diagram that shows a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
+:::image type="content" source="../../includes/media/bicep-to-json.png" alt-text="Diagram that shows a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
 
 ## What do I need to install?
 
