@@ -23,15 +23,16 @@ You'll perform this exercise using the Azure portal.
     > [!div class="mx-imgBorder"]
     > ![Image From the left-hand navigation menu in the Azure portal. The user has selected **Create a resource**](../media/7-create-resource.png)
 
-3.  On the **Select API option** page, select **Core (SQL) - Recommended**
-    > [!div class="mx-imgBorder"]
-    > ![Image of the API options in the Azure portal. The user has selected **Core (SQL)**](../media/7-core-sql.png) 
-
-4. On the **New** page, select **Azure Cosmos DB**.
+3. On the **New** page, select **Azure Cosmos DB**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **New** page in the Azure portal. The user has selected **Azure Cosmos DB**](../media/7-new-page.png)
 
+
+4.  On the **Select API option** page, select **Core (SQL) - Recommended**
+    > [!div class="mx-imgBorder"]
+    > ![Image of the API options in the Azure portal. The user has selected **Core (SQL)**](../media/7-core-sql.png) 
+    
 5. On the **Create Azure Cosmos DB Account** page, on the **Basics** tabs, enter the details of the account using the values in the following table, and then select **Review + create**:
 
     | Field | Value |

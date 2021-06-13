@@ -70,7 +70,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           containers: # Here we define all containers
-        name: contoso-website
+            - name: contoso-website
     ```
 
     The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, `name`, `resources`, `ports`, and other important information about the container.
