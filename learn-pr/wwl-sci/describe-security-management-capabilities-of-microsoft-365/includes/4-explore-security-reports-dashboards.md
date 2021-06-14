@@ -27,7 +27,9 @@ You can also group cards by topic, which will rearrange the cards and group them
 The reports section also includes Microsoft Defender for Endpoint reports, including a **threat protection report**, a **device health and compliance report**, and a **vulnerable devices report**.
 
 - The **threat protection report** provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
-<br>
+    
+
+
     The report's dashboard is structured into two sections:
     - Alert trends - By default, the alert trends display alert information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by selecting a time range (30 days, 3 months, 6 months, or custom)
     - Alert summary - The alert summary shows alert information scoped to the current day.
@@ -37,7 +39,8 @@ The reports section also includes Microsoft Defender for Endpoint reports, inclu
 
 
 - The **device health and compliance report** enables admins to monitor the health state, antivirus status, operating system platforms, and Windows 10 versions for devices in your organization.
-<br>
+    
+
     This report's dashboard is also structured into two sections: 
     - Device trends - By default, the device trends displays device information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period. 
     - Device summary - The device summary shows device information scoped to the current day.
@@ -53,4 +56,4 @@ The reports section also includes Microsoft Defender for Endpoint reports, inclu
 #### Email and collaboration reports
 The **email and collaboration reports** enable admins to review Microsoft recommended actions to help improve email and collaboration security.
 
-:::image type="content" source="../media/4-email-collab-reports-2-inline.png" lightbox="../media/4-email-collab-reports-2-expanded.png" alt-text="Screenshot showing the email and collaboration reports page.":::
+:::image type="content" source="../media/4-email-collab-reports-3-inline.png" lightbox="../media/4-email-collab-reports-3-expanded.png" alt-text="Screenshot showing the email and collaboration reports page.":::
