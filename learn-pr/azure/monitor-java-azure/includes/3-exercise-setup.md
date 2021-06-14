@@ -1,10 +1,10 @@
-In this exercise, you'll configure a sample Application to be ready for monitoring.
+In this exercise, you'll configure a sample Application to be ready for monitoring. Later, you'll access the collected monitoring data and view it in the Azure portal.
 
 ## Access the sample application
 
 In this exercise, you'll clone a GitHub repository that contains all the code for Monitoring.
 
-1. On the Azure portal, open Azure Cloud Shell and run the following to clone the sample repository and open the Monaco code editor:
+On the Azure portal, open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
 
    ```bash
    git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
