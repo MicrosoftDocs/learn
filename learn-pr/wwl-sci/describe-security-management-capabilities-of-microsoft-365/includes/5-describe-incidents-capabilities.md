@@ -8,7 +8,7 @@ Managing incidents is critical in ensuring that threats are contained and addres
 
 You can manage incidents by selecting one from the Incidents queue.
 
-Incidents are automatically assigned a name based on an alert. You can edit the name of an incident, resolve it, then set its classification and determination. You can also assign the incident to yourself, and add incident tags and comments.
+Incidents are automatically assigned a name based on an alert. You can edit the name of an incident, resolve it, then set its classification and determination. You can also assign the incident to yourself and add incident tags and comments.
 
 When you investigate cases where you want to move alerts from one incident to another, you can also do so from the Alerts tab. You'll create a larger or smaller incident that includes all relevant alerts.
 

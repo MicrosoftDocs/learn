@@ -14,9 +14,9 @@ By default, cards are grouped by the following categories:
 
 In the example below, the cards are grouped by category (only two of the four categories are shown in the image). 
 
-:::image type="content" source="../media/4-general-security-report-2-inline.png" lightbox="../media/4-general-security-report-2-expanded.png" alt-text="Screenshot showing the Microsoft 365 security reports page.":::
+:::image type="content" source="../media/4-general-security-report-5-inline.png" lightbox="../media/4-general-security-report-5-expanded.png" alt-text="Screenshot showing the Microsoft 365 security reports page.":::
 
-You can group cards by topic, which will rearrange the cards and group them into the following areas:
+You can also group cards by topic, which will rearrange the cards and group them into the following areas:
 
 - **Risk** - cards that highlight entities, such as accounts and devices, that might be at risk. These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps.
 - **Detection trends** - cards that highlight new threat detections, anomalies, and policy violations.
