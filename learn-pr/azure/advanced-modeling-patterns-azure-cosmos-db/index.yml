@@ -7,7 +7,7 @@ metadata:
   ms.date: 6/11/2021  
   author: markjbrown  
   ms.author: mjbrown  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial 
 title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB  
 summary: Identify strategies to manage relationships between data entitles like customers and sales data. Improve performance and scaling of your data model by pre-aggregating and denormalizing data. Use change feed to maintain referential integrity of your data.
 abstract: | 
@@ -21,7 +21,7 @@ prerequisites: |
   - Familiarity with basic modeling and partitioning strategies like embedding or referencing data in entities
   - Familiarity with Azure Cosmos DB .NET SDK v3
   - Familiarity with Azure Cosmos DB change feed
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
 levels: 
   - intermediate
 roles: 

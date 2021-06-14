@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
 interactive: bash
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-set-up-environment.md)]

@@ -8,6 +8,6 @@ metadata:
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
-durationInMinutes: 07
+durationInMinutes: 02
 content: |
   [!include[](includes/9-finalize-data-model.md)]
