@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../shared/includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
 
 You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you'll create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
 
@@ -121,7 +121,7 @@ Now you add another child resource. This time, you add it as a nested resource r
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../shared/includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
 
 ### Deploy the template to Azure
 
@@ -137,7 +137,7 @@ You'll see `Running...` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../shared/includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
 
 ### Deploy the template to Azure
 
