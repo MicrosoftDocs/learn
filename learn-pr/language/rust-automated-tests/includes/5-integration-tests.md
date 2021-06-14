@@ -1,6 +1,6 @@
 Unit and documentation tests provide concise and specific tests. But it's also a good idea to test our crate as a whole. Then we can confirm that our crate's various code parts function together as expected.
 
-To test your crate as a whole, you can use *integration tests*. The Rust test suite supports this type of test, which only calls functions that your library's public API contains. You can use integration tests to check how your code works when others use it.
+To test our crate as a whole, we can use *integration tests*. The Rust test suite supports this type of test, which only calls functions that our library's public API contains. We can use integration tests to check how our code works when others use it.
 
 What's unique about these tests is that they exist in a separate directory and file, so they can externally test the library code. When you run integration tests with Cargo, put them in a *tests* directory. Cargo runs each source file in this directory. Create *tests* in your project directory, at the same level as your *src* directory.
 
@@ -81,10 +81,8 @@ running 0 tests
  test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-From the output, you can see that Rust places the results of the tests in separate sections. Unit test results come first, then integration results, and finally, documentation results.
+From the output, we can see that Rust places the results of the tests in separate sections. Unit test results come first, then integration results, and finally, documentation results.
 
 In the integration tests section, we can see that our two tests inside the `tests/pizzas.rs` file were collected and executed by the test suite.
-
-Only library crates can be tested via integration tests because binary crates don't expose any functionality that other crates can use. But, many Rust crates that provide a binary have a succinct `src/main.rs` file that calls logic that lives in a `src/lib.rs` file. Using that structure, integration tests can test the important parts of the code.
 
 Only library crates can be tested via integration tests because binary crates don't expose any functionality that other crates can use. As a result, many Rust binary crates include a `src/lib.rs` file that contains most of the code in `src/main.rs`. Integration tests can then test the binary's functionality by importing the crate as a library with `use`.
