@@ -14,4 +14,4 @@ In this module, you'll:
 
 - Azure subscription
 - Basic knowledge of the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview/?WT.mc_id=java-00000-ropreddy)
-- Basic knowledge in [editing files](https://docs.microsoft.com/en-gb/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
+- Basic knowledge in [editing files](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
