@@ -19,7 +19,6 @@ Click on the Azure IoT Edge blade device to view more details about the modules 
 
 ![[The illustration shows the module status from IoT Hub.](../media/module-status-hub.png)](../media/module-status-hub.png#lightbox) 
 
-
 ## View the device telemetry from the Azure Cloud Shell
 
 1. You will need to know the name of the Azure IoT Hub you created. You can get the name from the Azure web portal.

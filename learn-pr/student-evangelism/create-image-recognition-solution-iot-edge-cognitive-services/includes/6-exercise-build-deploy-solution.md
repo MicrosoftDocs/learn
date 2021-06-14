@@ -17,9 +17,7 @@ In this module, you use Azure Custom Vision and Azure Speech services.
 2. [Azure Speech Services](https://azure.microsoft.com/services/cognitive-services/speech-to-text/) is used to generate speech from label of the item. You will add the speech key in deployment template. To create Azure Speech Services:
     1. Go to the Azure portal and search for Cognitive Services.    
 
-    2. Search for speech service and select Azure Speech Service.
-        
-        ![[The illustration shows Speech services.](../media/speech-service.png)](../media/speech-service.png#lightbox) 
+    2. Search for speech service and select Microsoft Speech Service.
 
     3. Select **Create**.
    
