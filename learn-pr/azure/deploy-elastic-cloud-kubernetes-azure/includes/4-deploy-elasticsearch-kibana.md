@@ -1,4 +1,4 @@
-Elasticsearch and Kibana provide tools to help you search, analyze, monitor, and secure your apps and IT.
+Elasticsearch and Kibana help you search, analyze, monitor, and secure your apps and IT.
 
 In the case of Trailwinds, once the AKS cluster is set up and Elastic Cloud on Kubernetes is installed (with the Kubernetes operator and RBAC rules), the company needs to deploy Elasticsearch and Kibana on top of that for the search and visualization functionality.
 
@@ -14,11 +14,11 @@ Once that’s running, you’ll need to create a kibana.yaml configuration file 
 
 ## Consider the sizing
 
-A key question you’ll need to answer before you start is how much Elastic to deploy. Since Elasticsearch is a horizontally scalable distributed system, you can start anywhere, monitor the deployment under the initial load, and scale accordingly.
+As previously mentioned, a key question you’ll need to answer before you start is how much Elastic to deploy. Since Elasticsearch is a horizontally scalable distributed system, you can start anywhere, monitor the deployment under the initial load, and scale accordingly.
 
 For most cases, you can start fast by following these two guidelines:
 
-- Start with a three-node Elasticsearch cluster for a production environment. While you may be able to support your use-case with single node Elasticsearch clusters, it is recommended to start with a three-node cluster to provide resiliency for the architecture and room to perform lifecycle operations – such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication in a 3 nodes cluster. Elastic Cloud takes care of a lot of this for the users so they can focus on onboarding the data into Elastic and getting insights/value from it.
+- Start with a three-node Elasticsearch cluster for a production environment. While you may be able to support your use-case with single node Elasticsearch clusters, it is recommended to start with a three-node cluster to provide resiliency for the architecture and room to perform lifecycle operations – such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication. Elastic Cloud takes care of a lot of this for users so they can focus on onboarding the data into Elastic and getting the insights and value they need from it.
 - Use two Kibana instances for High Availability. Kibana is the window into Elastic stack – whether it is the data in Elasticsearch that you are exploring or management of the Elastic components. Given its value to all the use-cases of Elastic – we recommend at least two instances of Kibana behind a load balancer to provide fault tolerance and higher chances of uninterrupted access to Elastic. The impact of an unavailable Kibana does not necessarily lead to data loss but can create disruptive experiences for end users.
 
 ## Understand quickstart vs. production
