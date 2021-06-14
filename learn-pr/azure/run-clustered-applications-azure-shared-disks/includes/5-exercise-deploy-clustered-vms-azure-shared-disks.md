@@ -65,25 +65,25 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
     ```
 
-2. When finished with this task, the shared disk is attached to two VMs at the same time.
+1. When finished with this task, the shared disk is attached to two VMs at the same time.
 
 ### Test SCSI persistent reservations using the "sg3-utils" tools
 
 1. While you're still in Cloud Shell, connect to the first VM by using SSH.
-2. Use the following command to retrieve the IP addresses of VM1:
+1. Use the following command to retrieve the IP addresses of VM1:
 
     ```azurecli
     myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
     ```
 
-3. Connect to the first VM by using SSH:
+1. Connect to the first VM by using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP1
     ```
 
-4. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
-5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
+1. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
+1. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
 
     ```bash
     # Install sg3-utils
@@ -108,7 +108,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
     :::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
 
-6. Connect to the second VM by using SSH using the following command:
+1. Connect to the second VM by using SSH using the following command:
 
     ```bash
     myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
@@ -116,8 +116,8 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     ssh azureuser@$myPublicIP2
     ```
 
-7. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
-8. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
+1. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
+1. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
 
     ```bash
     # Install sg3-utils
@@ -134,7 +134,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
     :::image type="content" source="../media/05-Disk-status-with-VM1-and-VM2-registrations.PNG" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
 
-9. Connect to **myVM1** using SSH:
+1. Connect to **myVM1** using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP1
@@ -149,7 +149,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
     :::image type="content" source="../media/05-Disk-status-with-VM1-reservation.PNG" alt-text="Disk-status-with-VM1-reservation." border="true":::
 
-10. Connect to **myVM2** by using SSH:
+1. Connect to **myVM2** by using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP2
@@ -225,12 +225,12 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     $cred = Get-Credential
     ```
 
-2. Use the following credentials:
+1. Use the following credentials:
 
     - User: **Student**
     - Password: **Pa55w.rd1234**
 
-3. Create two VMs that are running Windows OS:
+1. Create two VMs that are running Windows OS:
 
     ```azurepowershell
     for ($i=3; $i-le4; $i++)
@@ -260,7 +260,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     Update-AzVM -VM $vm3 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-2. Attach the Azure shared disk to the second VM:
+1. Attach the Azure shared disk to the second VM:
 
     ```azurepowershell
     $vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
@@ -272,25 +272,25 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 ### Install Windows Failover Clustering Service on myVM3
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and make sure you're in the sandbox subscription. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
-2. Select the **myVM3** VM from the tool bar, select **Connect**, and then select **RDP**.
-3. Select **Download RDP File**, and then connect using the following credentials:
+1. Select the **myVM3** VM from the tool bar, select **Connect**, and then select **RDP**.
+1. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
     - Password: **Pa55w.rd1234**
 
-4. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
-5. In the **Computer Management (Local)** management console, select **Disk Management**.
-6. In the **Initialize Disk** window, verify that **Disk 2** is selected, and then select **OK**.
-7. Right-click or select the black label on **Disk 2**, and then select **New Simple Volume**. Accept the defaults to create new simple volume.
-8. Close the **Computer Management** console.
-9. In **Server Manager**, select **Add roles and features**. The **Add Roles and Features** wizard opens.
-10. In the **Add Roles and Features** wizard, in the **Before you Begin** page, select **Next**.
-11. In the **Select installation type** page, select **Role-based or feature-based installation**, and then select **Next.**
-12. In the **Server Selection** page, select **Next**.
-13. In the **Select server roles** page, select **Next**.
-14. In the **Select features** page, select the **Failover Clustering** checkbox.
-15. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
-16. In the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes**. Select **Install** to install the Failover Clustering role.
+1. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
+1. In the **Computer Management (Local)** management console, select **Disk Management**.
+1. In the **Initialize Disk** window, verify that **Disk 2** is selected, and then select **OK**.
+1. Right-click or select the black label on **Disk 2**, and then select **New Simple Volume**. Accept the defaults to create new simple volume.
+1. Close the **Computer Management** console.
+1. In **Server Manager**, select **Add roles and features**. The **Add Roles and Features** wizard opens.
+1. In the **Add Roles and Features** wizard, in the **Before you Begin** page, select **Next**.
+1. In the **Select installation type** page, select **Role-based or feature-based installation**, and then select **Next.**
+1. In the **Server Selection** page, select **Next**.
+1. In the **Select server roles** page, select **Next**.
+1. In the **Select features** page, select the **Failover Clustering** checkbox.
+1. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
+1. In the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes**. Select **Install** to install the Failover Clustering role.
 
 >[!Note]
 >The virtual machine **myVM3** will automatically restart, once that failover cluster feature is installed.
@@ -298,25 +298,25 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 ### Install Windows Failover Clustering Service on myVM4
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter **virtual machines** and select **virtual machines.**
-2. Select the **myVM4** VM from the tool bar, select **Connect**, and then select **RDP.**
-3. Select **Download RDP File**, and then connect using the following credentials:
+1. Select the **myVM4** VM from the tool bar, select **Connect**, and then select **RDP.**
+1. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
     - Password: **Pa55w.rd1234**
 
-4. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
-5. In the **Computer Management (Local)** management console, select **Disk Management**.
-6. In the **Initialize Disk** window, verify that **Disk 2** is selected, and then select **OK**.
-7. Right-click  or select the black label on **Disk 2**, and then select **New Simple Volume**. Accept the defaults to create a new simple volume.
-8. Close the **Computer Management** console.
-9. In **Server Manager**, select **Add roles and features**. The **Add Roles and Features** wizard opens.
-10. In the **Add Roles and Features** wizard, in the **Before you Begin** page, select **Next**.
-11. In the **Select installation type** page, select **Role-based or feature-based installation**, and select **Next**.
-12. In the **Server Selection** page, select **Next**.
-13. In the **Select server roles** page, select **Next**.
-14. In the **Select features** page, select the **Failover Clustering** checkbox.
-15. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
-16. In the **Confirmation** page, select the **Restart the destination server automatically if required**, and then select **Yes.** Select **Install** to install the Failover Clustering role.
+1. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
+1. In the **Computer Management (Local)** management console, select **Disk Management**.
+1. In the **Initialize Disk** window, verify that **Disk 2** is selected, and then select **OK**.
+1. Right-click  or select the black label on **Disk 2**, and then select **New Simple Volume**. Accept the defaults to create a new simple volume.
+1. Close the **Computer Management** console.
+1. In **Server Manager**, select **Add roles and features**. The **Add Roles and Features** wizard opens.
+1. In the **Add Roles and Features** wizard, in the **Before you Begin** page, select **Next**.
+1. In the **Select installation type** page, select **Role-based or feature-based installation**, and select **Next**.
+1. In the **Server Selection** page, select **Next**.
+1. In the **Select server roles** page, select **Next**.
+1. In the **Select features** page, select the **Failover Clustering** checkbox.
+1. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
+1. In the **Confirmation** page, select the **Restart the destination server automatically if required**, and then select **Yes.** Select **Install** to install the Failover Clustering role.
 
 >[!Note]
 >The virtual machine **myVM4** will automatically restart, once that failover cluster feature is installed.
@@ -324,23 +324,23 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 ### Test the storage for Windows Failover Clustering Service on myVM3
 
 1. In the Azure portal, in the **search resources, services, and docs (G+/)** field, enter and select **virtual machines.**
-2. Select the first VM, **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
-3. Select **Download RDP File**, and then connect using the following credentials:
+1. Select the first VM, **myVM3**, from the tool bar, and then select **Connect**, and select **RDP**.
+1. Select **Download RDP File**, and then connect using the following credentials:
 
     - Username: **Student**
     - Password: **Pa55w.rd1234**
 
-4. In Server Manager, from the **Tools** menu, select **Failover Cluster Manager**.
-5. In **Failover Cluster Manager**, from the **Action** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
-6. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
-7. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM3**, and then select **Add**.
-8. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM4**, and then select **Add**.
-9. Select **Next** to continue with testing the cluster setup.
-10. In the **Testing Options** page, select **Run only test I select**, and then select **Next**.
-11. Uncheck all other test and select only the **Storage** checkbox, and then select **Next**.
-12. In the **Confirmation** page, select **Next**.
-13. Verify that all the tests are successful, and then select **Finish**.
-14. Close the RDP connection.
+1. In Server Manager, from the **Tools** menu, select **Failover Cluster Manager**.
+1. In **Failover Cluster Manager**, from the **Action** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
+1. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
+1. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM3**, and then select **Add**.
+1. In the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM4**, and then select **Add**.
+1. Select **Next** to continue with testing the cluster setup.
+1. In the **Testing Options** page, select **Run only test I select**, and then select **Next**.
+1. Uncheck all other test and select only the **Storage** checkbox, and then select **Next**.
+1. In the **Confirmation** page, select **Next**.
+1. Verify that all the tests are successful, and then select **Finish**.
+1. Close the RDP connection.
 
 >[!Note]
 >To continue the creation of the cluster, you need to setup additional prerequisites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
