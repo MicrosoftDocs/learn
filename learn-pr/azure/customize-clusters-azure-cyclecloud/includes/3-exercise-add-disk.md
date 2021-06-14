@@ -17,8 +17,8 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 
 > [!NOTE]
 > For information about identifying and increasing the vCPU quotas in an Azure subscription, refer to the following documentation:
-> - [Check vCPU quotas using the Azure CLI](https://docs.microsoft.com/azure/virtual-machines/linux/quotas)
-> - [Standard quota: Increase limits by VM series](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests)
+> - [Check vCPU quotas using the Azure CLI](/azure/virtual-machines/linux/quotas)
+> - [Standard quota: Increase limits by VM series](/azure/azure-portal/supportability/per-vm-quota-requests)
 
 > [!NOTE]
 > You'll need the private key to connect directly to the cluster nodes in the last exercise of this module.

@@ -6,8 +6,8 @@ Implementing the equivalent functionality on your own, without the abstraction l
 
 ## References
 
-* [Cluster Templates](https://docs.microsoft.com/azure/cyclecloud/how-to/cluster-templates)
-* [Add a Node Array to a Cluster](https://docs.microsoft.com/azure/cyclecloud/how-to/add-node-array)
-* [Managed Disks](https://docs.microsoft.com/azure/cyclecloud/how-to/add-disk)
-* [Mounting Volumes](https://docs.microsoft.com/azure/cyclecloud/how-to/mount-disk)
-* [Cloud-Init](https://docs.microsoft.com/azure/cyclecloud/how-to/cloud-init)
+* [Cluster Templates](/azure/cyclecloud/how-to/cluster-templates)
+* [Add a Node Array to a Cluster](/azure/cyclecloud/how-to/add-node-array)
+* [Managed Disks](/azure/cyclecloud/how-to/add-disk)
+* [Mounting Volumes](/azure/cyclecloud/how-to/mount-disk)
+* [Cloud-Init](/azure/cyclecloud/how-to/cloud-init)
