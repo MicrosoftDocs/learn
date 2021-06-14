@@ -1,8 +1,8 @@
-Your company is pleased with your earlier modeling of Texas Hold'em and would like to see you continue to work on its implementation. As you've now learned about more about data types, let's put that knowledge into use.
+Your company is pleased with your earlier modeling of Texas Hold'em and wants to see you continue to work on its implementation. You've now learned about more about data types, so let's put that knowledge to use.
 
 ## Add data types
 
-Let's start by revising the code you've built so far.
+Let's start by revising the following code you've built so far:
 
 ```javascript
 const STARTING_POKER_CHIPS = 100; // points
@@ -18,7 +18,7 @@ playerTwoPoints -=25;
 playerThreePoints +=75; 
 ```
 
-You have certain aspects of the game represented as variables, but you are lacking some aspects such as knowing if the game has ended. Also, wouldn't it be nice if the players had names?
+You have certain aspects of the game represented as variables, but you're lacking some aspects, such as knowing if the game has ended. Also, wouldn't it be nice if the players had names?
 
 1. After the three constants, add the following code:
 
@@ -28,7 +28,7 @@ You have certain aspects of the game represented as variables, but you are lacki
    let playerThreeName = "Jen";
    ```
 
-   Now you have three variables to represent the names of the players. Let's add some intro text so it feels more like a game. After the following code:
+1. Now you have three variables to represent the names of the players. Let's add some intro text so it feels more like a game. After the following code:
 
    ```javascript
    let playerOnePoints = STARTING_POKER_CHIPS;
@@ -36,15 +36,15 @@ You have certain aspects of the game represented as variables, but you are lacki
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-1. Add code to represent the game starting:
+   ...add code to represent the game starting:
 
    ```javascript
-   console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`)
+   console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us. May the best player win!`)
    ```
 
-## Adding an end condition
+## Add an end condition
 
-A game of Texas Hold'em can go on for many game rounds and usually finishes when one player has all the poker chips and the other players have lost theirs. You need to add code to represent such a state. This situation is where you want to rely on operators and use a boolean data type.
+A game of Texas Hold'em can go on for many game rounds and usually finishes when one player has all the poker chips and the other players have lost theirs. You need to add code to represent such a state. This situation is where you want to rely on operators and use a Boolean data type.
 
 1. Add the following code at the top of the file:
 
@@ -63,7 +63,7 @@ A game of Texas Hold'em can go on for many game rounds and usually finishes when
    console.log("Game has ended: ", gameHasEnded);
    ```
 
-   The full code should look like so:
+   The full code should look like this:
 
    ```javascript
    const STARTING_POKER_CHIPS = 100; // points
@@ -75,7 +75,7 @@ A game of Texas Hold'em can go on for many game rounds and usually finishes when
    let playerTwoName = "Jasmine";
    let playerThreeName = "Jen";
 
-   console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us, may the best player win`);
+   console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName}, and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us. May the best player win!`);
 
    let playerOnePoints = STARTING_POKER_CHIPS;
    let playerTwoPoints = STARTING_POKER_CHIPS;
@@ -92,18 +92,18 @@ A game of Texas Hold'em can go on for many game rounds and usually finishes when
    console.log("Game has ended: ", gameHasEnded);
    ```
 
-1. To run the game, type the following in the terminal:
+1. To run the game, enter the following code in the terminal:
 
-```javascript
-node app.js
-```
+   ```javascript
+   node app.js
+   ```
 
-You should see the following output in the terminal:
+   You should see the following output in the terminal:
 
-```output
-Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: Chloe, Jasmine and Jen. Each player has 100 in their pot. We have an exciting game ahead of us, may the best player win
-Game has ended: false
-```
+   ```output
+   Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: Chloe, Jasmine, and Jen. Each player has 100 in their pot. We have an exciting game ahead of us. May the best player win!
+   Game has ended: false
+   ```
 
 > [!TIP]
-> Try changing the ``playerOnePoints` and `playerTwoPoints` to 0 and rerun the app. Is there a difference in the output?
+> Try changing `playerOnePoints` and `playerTwoPoints` to `0` and rerun the app. Is there a difference in the output?
