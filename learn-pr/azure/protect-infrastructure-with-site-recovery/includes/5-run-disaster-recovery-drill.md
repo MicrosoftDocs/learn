@@ -26,11 +26,11 @@ A test failover enables you to simulate a disaster and see its effects. Failover
 
 The steps are as follows:
 
-1. You'll create an isolated virtual network so that your production infrastructure isn't affected. On the target VMs' overview, in the nav bar, under the **Operations** category, select **Disaster recovery**.
+1. You'll create an isolated virtual network so that your production infrastructure isn't affected. On the target VMs' overview, in the left menu pane, under **Operations**, select **Disaster recovery**.
 
     ![A screenshot that shows the Operations' disaster recovery option for a selected VM.](../media/5-vm-disaster.png)
 
-1. A new **Replicated items** pane appears. Select **Test Failover** at the top of the pane.
+1. A new **Replicated items** pane appears. From the top menu bar, select **Test Failover**.
 
     ![A screenshot that shows the test failover button for a selected VM.](../media/5-vm-running-test-failover.png)
 

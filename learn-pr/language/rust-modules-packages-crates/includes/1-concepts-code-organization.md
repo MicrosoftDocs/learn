@@ -1,8 +1,8 @@
 Before we start, it's important to explain the concepts behind code organization in Rust programs:
 
 - **A package:**
-  - Is one or more *crates* that provide a set of functionality.
-  - Contains a `Cargo.toml` file that describes how to build those *crates*.
+  - Contains functionality within one or more *crates*.
+  - Includes information about how to build those *crates*. The information is in the `Cargo.toml` file.
 - **A crate:**
   - Is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on.
   - Once compiled, produces either an executable or a library.
@@ -66,7 +66,7 @@ A module is a collection of items:
 - `impl` blocks
 - Other modules
 
-Modules also control the *privacy* of items, which is whether an item can be used by outside code (*public*) or is an internal implementation detail and not available for outside use (*private*).
+Modules also control item *privacy*. Item privacy identifies an item as either *public* or *private*. Public means that the item can be used by outside code. Private means the item is an internal implementation detail and not available for outside use.
 
 An example of a module:
 
@@ -85,7 +85,7 @@ If a source file has `mod` declarations in it, the contents of the module files 
 
 You might have noticed the `pub` keyword at the beginning of the function definitions in the `math` module.
 
-The Rust compiler performs checks to see whether items can be used across modules or not. By default, everything in Rust is private and can only be accessed by the current module and its descendants. In contrast, when an item is declared as `pub`, it can be thought of as being accessible to the outside world. For example:
+The Rust compiler checks to see whether items can be used across modules or not. By default, everything in Rust is private and can only be accessed by the current module and its descendants. In contrast, when an item is declared as `pub`, it can be thought of as being accessible to the outside world. For example:
 
 ```rust
 // Declare a private struct

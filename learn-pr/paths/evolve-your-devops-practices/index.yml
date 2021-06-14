@@ -25,12 +25,12 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
+    [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::row-end:::
 
