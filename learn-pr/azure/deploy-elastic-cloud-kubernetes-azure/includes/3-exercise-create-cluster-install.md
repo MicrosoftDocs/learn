@@ -31,4 +31,4 @@ An AKS cluster with Kubernetes operator lets you deploy complex applications on 
     kubectl apply -f https://download.elastic.co/downloads/eck/1.4.0/all-in-one.yaml
     ```
 
-    :::image type="content" source="../media/kubectl-apply-output.png" alt-text="TODO":::
+    :::image type="content" source="../media/kubectl-apply-output.png" alt-text="An image of the CLI after installing Elastic Cloud on Kubernetes with custom resources definitions and RBAC rules.":::
