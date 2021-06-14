@@ -2,7 +2,7 @@ There is one last operation we need to look at before our new model is complete.
 
 The solution here is to denormalize and create a new property in the customer document, 'salesOrderCount'. This property will allow us to write a query like this one below to get this data.
 
-:::image type="content" source="../media/7-sales-order-count.png" alt-text="Diagram with customer model that includes new sales order count property, customer container, and new query for getting our top 10 customers using the new sales order count property." border="false":::
+:::image type="content" source="../media/7-sales-order-count.png" alt-text="Diagram with customer model that includes new sales order count property, customer container, and query for getting top 10 customers using the new sales order count property." border="false":::
 
 Next, we now need a way where every time a customer creates a new sales order and a new sales order is inserted into our customer container, we update the customer document and increment the salesOrderCount property by one. To do this, we need a transaction. Azure Cosmos DB supports transactions when the data sits within the same logical partition. Since the customer and sales order all reside in the same logical partition, we can insert the new sales order and update the customer document within a transaction. There are two choices for implementing transactions in Azure Cosmos DB, stored procedures or using a feature called Transactional Batch available in both .NET or Java SDKs.
 

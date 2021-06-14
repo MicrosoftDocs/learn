@@ -4,10 +4,10 @@ title: Finalize the data model
 metadata: 
   title: Finalize the data model
   description: Finalize the data model
-  ms.date: 3/9/2021 
+  ms.date: 6/11/2021 
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
-durationInMinutes: 07
+durationInMinutes: 02
 content: |
   [!include[](includes/9-finalize-data-model.md)]
