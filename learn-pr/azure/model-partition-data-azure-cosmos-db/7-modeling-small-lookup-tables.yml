@@ -4,11 +4,11 @@ title: Model small lookup tables
 metadata: 
   title: Model small lookup tables
   description: Modeling techniques to enhance optimization opportunities
-  ms.date: 3/9/2021 
+  ms.date: 6/14/2021 
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
-durationInMinutes: 07
+durationInMinutes: 05
 content: |
   [!include[](includes/7-modeling-small-lookup-tables.md)]
 quiz:
@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "An incremental value for each new row."
       isCorrect: false
-      explanation: "The disciminator value should contain the same value for each separate entity."
+      explanation: "The discriminator value should contain the same value for each separate entity."
     - content: "A random value for each new row."
       isCorrect: false
-      explanation: "The disciminator value should contain the same value for each separate entity."
+      explanation: "The discriminator value should contain the same value for each separate entity."
     - content: "The same value for each entity."
       isCorrect: true
       explanation: "When adding a discriminator property to the schema, give it a constant value for each different entity in the container."
