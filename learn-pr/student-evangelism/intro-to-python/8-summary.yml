@@ -9,6 +9,6 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 5
+durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
