@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
-This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
 ## Create a repository
 
@@ -146,7 +146,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone-end
 
-    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 3. Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
@@ -248,7 +248,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone-end
 
-9. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this tutorial.
+9. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this module.
 
    Select **Skip for now** and press **Enter**.
 
@@ -335,7 +335,7 @@ In the Visual Studio Code Explorer window, return to the _Static Web Apps_ secti
 
 :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

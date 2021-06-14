@@ -1,4 +1,4 @@
-In this tutorial, you created, modified, and deployed a web app and API with user authentication to Azure Static Web Apps.
+In this module, you created, modified, and deployed a web app and API with user authentication to Azure Static Web Apps.
 
 As a reminder, the code for the [sample project is on GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/tree/main?azure-portal=true). The instructions on how to get started appear in the README file.
 

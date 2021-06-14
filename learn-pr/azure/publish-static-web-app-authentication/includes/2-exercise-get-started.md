@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
-This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
 ## Create a repository
 
@@ -411,7 +411,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-authn** and select **Browse Site** to view app in your browser.
 
-   :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
+:::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 Your app should now display a list of products.
 

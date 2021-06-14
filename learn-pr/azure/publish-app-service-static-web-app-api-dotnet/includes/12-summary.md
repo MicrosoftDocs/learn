@@ -19,7 +19,7 @@ Taking advantage of Azure Static Web Apps provides all these benefits. It enable
 
 ## Additional resources
 
-Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this tutorial.
+Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - [Azure Static Web Apps on Microsoft Docs](/azure/static-web-apps)
 - Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)

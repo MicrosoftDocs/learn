@@ -1,10 +1,10 @@
-In this tutorial, you created, modified, and published a web app and API to Azure Static Web Apps.
+In this module, you created, modified, and published a web app and API to Azure Static Web Apps.
 
 As a reminder, the code for the [sample project is on GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/tree/main?azure-portal=true). The instructions on how to get started appear in the README file.
 
 ## Additional resources
 
-Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this tutorial.
+Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](/learn/modules/publish-app-service-static-web-app-api/)
 - [Azure Static Web Apps on Microsoft Docs](/azure/static-web-apps)
