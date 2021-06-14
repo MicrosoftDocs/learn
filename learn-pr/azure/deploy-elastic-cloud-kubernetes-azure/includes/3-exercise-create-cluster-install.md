@@ -9,13 +9,13 @@ An AKS cluster with Kubernetes operator lets you deploy complex applications on 
     1.	Select the default Kubernetes version
     1.	Use the standard node size and set the node count to 3
 
-    :::image type="content" source="../media/create-cluster-dialog.png" alt-text="TODO":::
+    :::image type="content" source="../media/create-cluster-dialog.png" alt-text="A screenshot of the Create a Kubernetes cluster window in the Azure portal.":::
 
 1. After configuring your AKS cluster, proceed to **Review + create** from this screen.
 
 1. Once your AKS cluster deployment is complete, select “Overview” from the side menu to view the details of your newly created cluster.
 
-    :::image type="content" source="../media/cluster-overview.png" alt-text="TODO":::
+    :::image type="content" source="../media/cluster-overview.png" alt-text="A screenshot of the Kubernetes services Overview menu in Azure":::
 
 1. Click “Connect” at the top to open a commands screen.
 
@@ -23,7 +23,7 @@ An AKS cluster with Kubernetes operator lets you deploy complex applications on 
 
 1. Open Azure Cloud Shell and paste the commands to connect Elastic Cloud on Kubernetes to your AKS cluster.
 
-    :::image type="content" source="../media/cluster-connection.png" alt-text="TODO":::
+    :::image type="content" source="../media/cluster-connection.png" alt-text="A screen shot of comppants provided to connect Elastic Cloud on Kubernetes to the AKS cluster.":::
 
 1. Next, run the kubectl apply -f command with the yaml file below in Azure Cloud Shell to install the Kubernetes operator, Elastic Cloud on Kubernetes, and apply custom resource definitions and RBAC rules to the cluster.
 
