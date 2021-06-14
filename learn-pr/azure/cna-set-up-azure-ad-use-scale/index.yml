@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.set-up-apps-use-scale
 metadata:
   title: Introduction to setting up apps for use and scale
@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build an IoT Service
+title: Set Up Azure AD for Use and Scale
 summary: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
 abstract: |
   In this module, you'll:
