@@ -148,7 +148,7 @@ Browse to `http://localhost:8080`.
 ::: zone-end
 
 > [!NOTE]
-> In this module's exercises, you will deploy an app without an API. See the _Next steps_ section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> In this tutorial's exercises, you will deploy an app without an API. See the _Next steps_ section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
 Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 

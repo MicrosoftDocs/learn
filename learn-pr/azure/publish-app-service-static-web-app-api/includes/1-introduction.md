@@ -30,10 +30,10 @@ Azure hosts and serves your web app. Azure Functions powers back-end API functio
 
 Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. So you can host your static web app with or without an API.
 
-In this module's exercises, you'll deploy an app using your preferred web framework.
+In this tutorial's exercises, you'll deploy an app using your preferred web framework.
 
 > [!NOTE]
-> You'll be deploying an app, without an API in this module. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> You'll be deploying an app, without an API in this tutorial. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
 ### Key features
 
