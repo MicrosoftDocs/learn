@@ -1,4 +1,4 @@
-Organizations use AKS to deploy applications on Kubernetes without needing to manage the underlying infrastructure. In the case of Trailwinds, deploying an AKS cluster to run Elastic allows the company to get started in a fraction of the time and provides integrated capabilities that create efficiencies.
+Organizations use AKS to deploy applications on Kubernetes without needing to manage the underlying infrastructure. In the case of Trailwinds, deploying an AKS cluster to run Elastic allows the company to get started quickly and provides integrated capabilities that create efficiencies.
 
 Here, we will review the steps involved with creating a cluster in Azure Kubernetes Service and installing Elastic Cloud on Kubernetes (ECK) to your cluster, which will function as the Kubernetes operator.
 
@@ -6,7 +6,7 @@ Here, we will review the steps involved with creating a cluster in Azure Kuberne
 
 You can start AKS from the Azure portal. Azure portal lets you build, manage, and monitor cloud applications in a single, unified console. From this portal, you can set up a cluster for your Elastic Cloud on Kubernetes deployment.
 
-The size you select for your AKS cluster depends on your planned usage of Elastic. If you do not know required capacity yet, a best practice is to start with at least three nodes AKS cluster, spread across Azure Availability Zones to ensure high availability (HA) for any production deployment. Similarly, AKS supports different several versions of Kubernetes, but the default works just fine for most applications. 
+The size you select for your AKS cluster depends on your planned usage of Elastic. If you do not know required capacity yet, a best practice is to start with at least a three node AKS cluster, spread across Azure Availability Zones to ensure high availability (HA) for any production deployment. Similarly, AKS supports different several versions of Kubernetes, but the default works just fine for most applications. 
 
 ## Install Elastic Cloud on Kubernetes on your AKS cluster  
 
