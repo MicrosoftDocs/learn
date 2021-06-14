@@ -64,7 +64,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="angular"
 
-8. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
@@ -72,7 +72,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="react"
 
-8. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
@@ -80,7 +80,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
-8. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
@@ -88,7 +88,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-8. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
@@ -96,7 +96,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="angular"
 
-9. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+8. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
 
@@ -104,7 +104,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="react"
 
-9. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+8. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
 
@@ -112,7 +112,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
-9. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+8. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
 
@@ -120,13 +120,13 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-9. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+8. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
 ::: zone-end
 
-10. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
+9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
