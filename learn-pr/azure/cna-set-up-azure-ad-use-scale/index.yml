@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set Up Azure AD for Use and Scale
+title: Set up Azure AD for use and scale
 summary: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
 abstract: |
   In this module, you'll:
