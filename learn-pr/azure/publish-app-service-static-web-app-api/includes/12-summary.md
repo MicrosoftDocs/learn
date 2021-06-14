@@ -12,7 +12,7 @@ Azure Static Web Apps gives you all of these benefits. This lets you spend your 
 
 ## Additional resources
 
-Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this tutorial.
+Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - Learn how to [Publish an API to Azure Static Web Apps](/learn/modules/publish-static-web-app-api-preview-url/)
 - Learn how to [Authenticate users with Azure Static Web Apps](/learn/modules/publish-static-web-app-authentication/)

@@ -2,7 +2,7 @@ Azure Static Web Apps publishes websites to a production environment by building
 
 ## Create a repository
 
-This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
+This module makes it easy for you to create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository. If you get a _404 Page Not Found_ error, sign in to GitHub, and try again.
 
@@ -148,7 +148,7 @@ Browse to `http://localhost:8080`.
 ::: zone-end
 
 > [!NOTE]
-> In this tutorial's exercises, you will deploy an app without an API. See the _Next steps_ section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> In this module's exercises, you will deploy an app without an API. See the _Next steps_ section in the final unit for information about the next module, where you'll deploy an API alongside your app.
 
 Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
