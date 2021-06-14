@@ -27,7 +27,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ## Select Your Subscription
 
-1. Open Visual Studio Code, and select **File > Open** to open the repository you cloned to your computer in the editor.
+1. Open Visual Studio Code, and select **File > Open** and open the repository you cloned to your computer in the editor.
 
 1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
 
