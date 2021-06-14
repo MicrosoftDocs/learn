@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-purview.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: introduction
+  description: "Introduction unit for the Introduction to Azure Purview module."
+  ms.date: 6/8/2021
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
