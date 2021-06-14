@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
-title: Manage referential integrity by using Change Feed 
+title: Manage referential integrity by using change feed 
 metadata: 
-  title: Manage referential integrity by using Change Feed
-  description: Manage referential integrity by using Change Feed
+  title: Manage referential integrity by using change feed
+  description: Manage referential integrity by using change feed
   ms.date: 6/11/2021 
   author: markjbrown 
   ms.author: mjbrown 

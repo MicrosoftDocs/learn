@@ -33,6 +33,6 @@ quiz:
     - content: "It is not possible. You have to look at the query results."
       isCorrect: false
       explanation: "Incorrect. It is possible to distinguish the different entities when querying."
-    - content: "A discriminator property with a static value per entity."
+    - content: "A discriminator property with a static value per entity"
       isCorrect: true
       explanation: "Correct! A discriminator property is required to differentiate entities within a query."
