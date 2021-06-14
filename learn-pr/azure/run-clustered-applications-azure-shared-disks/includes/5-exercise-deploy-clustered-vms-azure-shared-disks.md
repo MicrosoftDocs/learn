@@ -25,7 +25,6 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 You'll use the Azure Cloud Shell with the Azure CLI to create Azure shared disk.
 
 ```azurecli
-# Create Azure Shared disk with support concurent access from two VMs.
 az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
 ```
 
@@ -33,39 +32,38 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
 1. Run the following command to create an availability set:
 
-```azurecli
-# Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
-az vm availability-set create \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --name myAvailabilitySet \
-  --platform-fault-domain-count 2 \
-  --platform-update-domain-count 2
-```
+    ```azurecli
+    az vm availability-set create \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name myAvailabilitySet \
+      --platform-fault-domain-count 2 \
+      --platform-update-domain-count 2
+    ```
 
 ### Create two VMs that are running Ubuntu Server
 
 1. While you're still in Cloud Shell, run the following commands to create two VMs running Ubuntu OS:
 
-```azurecli
-for i in `seq 1 2`; 
-do
-    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
-done
-```
+    ```azurecli
+    for i in `seq 1 2`; 
+    do
+        az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+    done
+    ```
 
 ### Attach an Azure shared disk on both VMs
 
 1. While you're still in Cloud Shell, attach the Azure shared disk to both VMs using the following commands:
 
-```azurecli
-diskId=$(az disk show -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --query 'id' -o tsv)
-  
-# attach the shared disk to the first VM.
-az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM1 --name $diskId
-    
-# attach the shared disk to the second VM.
-az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
-```
+    ```azurecli
+    diskId=$(az disk show -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --query 'id' -o tsv)
+      
+    # attach the shared disk to the first VM.
+    az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM1 --name $diskId
+        
+    # attach the shared disk to the second VM.
+    az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
+    ```
 
 2. When finished with this task, the shared disk is attached to two VMs at the same time.
 
@@ -74,107 +72,107 @@ az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --
 1. While you're still in Cloud Shell, connect to the first VM by using SSH.
 2. Use the following command to retrieve the IP addresses of VM1:
 
-```azurecli
-myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
-```
+    ```azurecli
+    myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
+    ```
 
 3. Connect to the first VM by using SSH:
 
-```bash
-ssh azureuser@$myPublicIP1
-```
+    ```bash
+    ssh azureuser@$myPublicIP1
+    ```
 
 4. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
 5. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
 
-```bash
-# Install sg3-utils
-sudo apt-get install sg3-utils
-  
-# Read the current reservation. This command will identify the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
-sudo sg_persist /dev/sdc -s
-```
+    ```bash
+    # Install sg3-utils
+    sudo apt-get install sg3-utils
+      
+    # Read the current reservation. This command will identify the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
+    sudo sg_persist /dev/sdc -s
+    ```
 
-:::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
+    :::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
 
-```bash
-# Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
-sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
-   
-# Read back the keys on VM1. Now the command should show one reservation  to the shared disk for VM1.
-sudo sg_persist /dev/sdc -s
-  
-# Exit the secure shell session from **myVM1**
-exit
-```
+    ```bash
+    # Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
+    sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
+       
+    # Read back the keys on VM1. Now the command should show one reservation  to the shared disk for VM1.
+    sudo sg_persist /dev/sdc -s
+      
+    # Exit the secure shell session from **myVM1**
+    exit
+    ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM1-registration.PNG" alt-text="Disk-status-with-VM1-registration." border="true":::
 
 6. Connect to the second VM by using SSH using the following command:
 
-```bash
-myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
-    
-ssh azureuser@$myPublicIP2
-```
+    ```bash
+    myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
+
+    ssh azureuser@$myPublicIP2
+    ```
 
 7. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
 8. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
 
-```bash
-# Install sg3-utils
-sudo apt-get install sg3-utils
-    
-# Register the key 1235 on VM2. This command will provide SCSI_PR registration for VM2, so it can read or write on the shared disk.
-sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
-   
-# Read back the keys for the shared disk. Now it should show 2 reservation to the shared disk for both VM1 and VM2.
-sudo sg_persist /dev/sdc -s
-    
-exit
-```
+    ```bash
+    # Install sg3-utils
+    sudo apt-get install sg3-utils
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-and-VM2-registrations.PNG" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
+    # Register the key 1235 on VM2. This command will provide SCSI_PR registration for VM2, so it can read or write on the shared disk.
+    sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
+
+    # Read back the keys for the shared disk. Now it should show 2 reservation to the shared disk for both VM1 and VM2.
+    sudo sg_persist /dev/sdc -s
+
+    exit
+    ```
+
+    :::image type="content" source="../media/05-Disk-status-with-VM1-and-VM2-registrations.PNG" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
 
 9. Connect to **myVM1** using SSH:
 
-```bash
-ssh azureuser@$myPublicIP1
-    
-# Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
-sudo sg_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
-    
-# Check the reservation on the device.
-sudo sg_persist /dev/sdc -s
-exit
-```
+    ```bash
+    ssh azureuser@$myPublicIP1
+        
+    # Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
+    sudo sg_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
+        
+    # Check the reservation on the device.
+    sudo sg_persist /dev/sdc -s
+    exit
+    ```
 
-:::image type="content" source="../media/05-Disk-status-with-VM1-reservation.PNG" alt-text="Disk-status-with-VM1-reservation." border="true":::
+    :::image type="content" source="../media/05-Disk-status-with-VM1-reservation.PNG" alt-text="Disk-status-with-VM1-reservation." border="true":::
 
 10. Connect to **myVM2** by using SSH:
 
-```bash
-ssh azureuser@$myPublicIP2
-   
-# Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
-sudo sg_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
-   
-# Report capabilities. Verify that reservation exist for VM2 with key 1235.
-sudo sg_persist /dev/sdc -c
-```
+    ```bash
+    ssh azureuser@$myPublicIP2
 
-:::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
+    # Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
+    sudo sg_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
 
-```bash
-# Unregister from **myVM2**. This command release access to the shared disk.
-sudo sg_persist --out --register --param-rk=1235 --param-sark=0 --device /dev/sdc
-    
-# Report capabilities.
-sudo sg_persist /dev/sdc -s
-    
-# Exit the SSH from VM2
-exit
-```
+    # Report capabilities. Verify that reservation exist for VM2 with key 1235.
+    sudo sg_persist /dev/sdc -c
+    ```
+
+    :::image type="content" source="../media/05-Disk-status-with-VM2-reservation.PNG" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
+
+    ```bash
+    # Unregister from **myVM2**. This command release access to the shared disk.
+    sudo sg_persist --out --register --param-rk=1235 --param-sark=0 --device /dev/sdc
+        
+    # Report capabilities.
+    sudo sg_persist /dev/sdc -s
+        
+    # Exit the SSH from VM2
+    exit
+    ```
 
 ::: zone-end
 
@@ -195,37 +193,37 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 1. Use the Cloud Shell on the right. You can switch from Azure CLI to Azure PowerShell by typing pwsh.
 
-```azurepowershell
-# Switch to PowerShell
-pwsh
-    
-# Create Azure Shared disk
-$dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
-$dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
-```
+    ```azurepowershell
+    # Switch to PowerShell
+    pwsh
+
+    # Create Azure Shared disk
+    $dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
+    $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
+    ```
 
 ### Create an availability set
 
 1. Run the following command to create an availability set:
 
-```azurepowershell
-# Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
-New-AzAvailabilitySet `
-  -Location "EastUS" `
-  -Name "myAvailabilitySet1" `
-  -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-  -Sku aligned `
-  -PlatformFaultDomainCount 2 `
-  -PlatformUpdateDomainCount 2
-```
+    ```azurepowershell
+    # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
+    New-AzAvailabilitySet `
+      -Location "EastUS" `
+      -Name "myAvailabilitySet1" `
+      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -Sku aligned `
+      -PlatformFaultDomainCount 2 `
+      -PlatformUpdateDomainCount 2
+    ```
 
 ### Create two VMs that are running Windows Server
 
 1. While still in Cloud Shell, run the following commands to define a credential object for logging to the VMs:
 
-```azurepowershell
-$cred = Get-Credential
-```
+    ```azurepowershell
+    $cred = Get-Credential
+    ```
 
 2. Use the following credentials:
 
@@ -234,44 +232,42 @@ $cred = Get-Credential
 
 3. Create two VMs that are running Windows OS:
 
- ```azurepowershell
-    
- for ($i=3; $i-le4; $i++)
+    ```azurepowershell
+    for ($i=3; $i-le4; $i++)
     {
-    New-AzVm `
-      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-      -Name "myVM$i" `
-      -Location eastus `
-      -VirtualNetworkName "myVnet1" `
-      -SubnetName "mySubnet" `
-      -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
-      -SecurityGroupName "myNetworkSecurityGroup1" `
-      -PublicIpAddressName "myPublicIpAddress$i" `
-      -AvailabilitySetName "myAvailabilitySet1" `
-      -Credential $cred
+        New-AzVm `
+          -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+          -Name "myVM$i" `
+          -Location eastus `
+          -VirtualNetworkName "myVnet1" `
+          -SubnetName "mySubnet" `
+          -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest" `
+          -SecurityGroupName "myNetworkSecurityGroup1" `
+          -PublicIpAddressName "myPublicIpAddress$i" `
+          -AvailabilitySetName "myAvailabilitySet1" `
+          -Credential $cred
     }
- ```
+    ```
 
 ### Attach an Azure shared disk to both VMs
 
 1. Use the following command to attach the Azure shared disk to the first VM:
 
-```azurepowershell
-    
-$vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-$vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
-   
-Update-AzVM -VM $vm3 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-```
+    ```azurepowershell
+    $vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    $vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
+
+    Update-AzVM -VM $vm3 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    ```
 
 2. Attach the Azure shared disk to the second VM:
 
-```azurepowershell
-$vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-$vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
-   
-Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-```
+    ```azurepowershell
+    $vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    $vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
+
+    Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    ```
 
 ### Install Windows Failover Clustering Service on myVM3
 
