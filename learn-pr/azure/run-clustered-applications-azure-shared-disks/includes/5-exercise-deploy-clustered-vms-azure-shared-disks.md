@@ -1,9 +1,14 @@
 > [!Note]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to the special Concierge Subscription.
 
+> [!Note]
+> You can use either Azure PowerShell or the Azure CLI to manage Windows and Linux VMs on Azure. Here, for learning purposes, if you choose the Windows option, you'll use Azure PowerShell. If you choose Linux, you'll use the Azure CLI.
+
 # Using Azure shared disks
 
 Your CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure VMs. You've been asked to test clustered scenarios with both Linux and Windows VMs.
+
+::: zone pivot="linux"
 
 ## Use Linux VMs with Azure shared disks
 
@@ -171,6 +176,10 @@ sudo sg_persist /dev/sdc -s
 exit
 ```
 
+::: zone-end
+
+::: zone pivot="linux"
+
 ## Use Windows VMs by using Azure shared disks
 
 To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test SCSI PR commands on the Azure shared disk.
@@ -220,8 +229,8 @@ $cred = Get-Credential
 
 2. Use the following credentials:
 
- - User: **Student**
- - Password: **Pa55w.rd1234**
+    - User: **Student**
+    - Password: **Pa55w.rd1234**
 
 3. Create two VMs that are running Windows OS:
 
@@ -270,8 +279,8 @@ Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rg
 2. Select the **myVM3** VM from the tool bar, select **Connect**, and then select **RDP**.
 3. Select **Download RDP File**, and then connect using the following credentials:
 
- - Username: **Student**
- - Password: **Pa55w.rd1234**
+    - Username: **Student**
+    - Password: **Pa55w.rd1234**
 
 4. In Server Manager, from the **Tools** menu, select the **Computer Management** snap in.
 5. In the **Computer Management (Local)** management console, select **Disk Management**.
@@ -340,6 +349,8 @@ Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rg
 >[!Note]
 >To continue the creation of the cluster, you need to setup additional prerequisites, such as Active Directory Domain Services, create a static IP address that you will use for internal load balancer.
 >This step is out of scope for this exercise.
+
+::: zone-end
 
 ### Clean up the resources
 

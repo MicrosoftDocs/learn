@@ -9,7 +9,7 @@ metadata:
   ms.author: nedelgad
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-shell-interface
+  zone_pivot_groups: platform-cloud
 azureSandbox: true
 interactive: bash
 durationInMinutes: 25
