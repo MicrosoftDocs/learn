@@ -121,11 +121,13 @@ And then, replace the `{appgw-public-ip}` with the value of the variable `ESHOP_
 ./deploy-application.sh --registry eshopdev --hostip {appgw-public-ip}
 ```
 
+![Fetch app gateway public ip](../media/eshop-app-gateway-public-ip.png)
+
 The above command will deploy the existing services from the `eshopdev` container registry because you'll still need the old services to create an order to test out your newly created Salas API.
 
 You should get an output just like the one from the initial deployment, only the IP will be different:
 
-![Output from the deploy-application script. Highlighting the resulting deployment urls.](../media/deploy-aks-application-gateway.png)
+![Deployed websalesagg to app gateway](../media/deployed-eshop-app-app-gateway.png)
 
 You can now explore the application deploy onto the new AKS, although, other than the IP, you shouldn't see any difference.
 
@@ -146,7 +148,7 @@ The above script will deploy the following services :
 - `Identity.API`
 - `WebSalesAgg`
 
-![Deploy affected services](../media/deploy-affected-services.png)
+![Deploy affected services](../media/deployed-app-affected-services-app-gateway-publicip.png)
 
 ## Add the `websalesagg` client redirect uris in the `IdentityDb`
 
@@ -163,6 +165,8 @@ Before testing out the changes, you need to do one more additional step. The exi
     ```bash
     kubectl delete pods --selector service!=sqldata
     ```
+
+    ![Delete all pods](../media/delete-all-pods-apart-from-sql.png)
 
 - Check the `webstatus` app using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and make sure `websalesagg` is up and running.
 - Then, you can access the `websalesagg` swagger ui by using `http://{appgw-public-ip}/websalesagg/` url.

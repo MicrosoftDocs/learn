@@ -200,13 +200,21 @@ The above script will deploy the following services :
 - Wait till the `websalesagg` pod is up and running. Then you'll be able to access the `websalesagg` API. But at this point, `websalesagg` is only available for the internal resources to consume and you'll not able to access the `websalesagg` outside the Kubernetes cluster yet. For that, you'll have to configure the ingress object for that and you'll explore those concepts in the next unit.
 
 - As of now, to access the `websalesagg` API you can use the cluster IP. You can follow the below steps :
-- Run the below command to fetch the pod name of the `WebSPA` app.
+- Run the below command to fetch the pod name of the `WebSPA` app. Take a note of that.
 
     ```bash
-    kubectl get pods | grep `webspa`
+    kubectl get svc --selector service=webspa
     ```
 
-    // TO DO - better to include one more image in here.
+    ![Pod name of WebSPA](../media/web-spa-pod-name.png)
+
+- And also take a note of the cluster ip of the `websalesagg` pod by using the below command. Make a note of that IP address.
+
+    ```bash
+    kubectl get svc --selector service=websalesagg
+    ```
+
+    ![Cluster IP of WebSalesAgg](../media/websalesagg-cluster-ip.png)
 
 - Then run the below command to get into the pod. Make sure you replace `{webspa-pod-name}` with the pod name which you have noted in the previous step.
 
@@ -214,18 +222,12 @@ The above script will deploy the following services :
     kubectl exec -it {webspa-pod-name} /bin/bash
     ```
 
-- And also take a note of the cluster ip of the `websalesagg` pod by using the below command.
-
-    ```bash
-    kubectl get pods | grep `websalesagg`
-    ```
-
-    // TO DO - Include cluster ip related image.
+    ![WebSPA inside container pod](../media/webspa-container-pod-bash.png)
 
 - Within the pod, you run the below CURL command to see if it's accessible.
 
     ```bash
-    curl http://<clusterip-of-websalesagg-pod>//websalesagg/swagger/index.html
+    curl http://<clusterip-of-websalesagg-pod>/websalesagg/swagger/index.html
     ```
 
     ![Curl of internal websaleagg pod request](../media/curl-of-internal-pod-request.png)
