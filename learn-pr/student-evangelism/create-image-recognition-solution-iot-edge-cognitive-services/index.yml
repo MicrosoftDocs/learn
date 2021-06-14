@@ -44,5 +44,6 @@ units:
 - learn.oxford.create-image-recognition-with-azure-iot-edge.create-fruit-classification-model
 - learn.oxford.create-image-recognition-with-azure-iot-edge.understand-project-structure
 - learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-build-deploy-solution
+- learn.oxford.create-image-recognition-with-azure-iot-edge.monitor-solution
 - learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
 - learn.oxford.create-image-recognition-with-azure-iot-edge.summary

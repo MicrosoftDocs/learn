@@ -123,9 +123,11 @@ On the IoT Edge device, open the configuration file.
    ```bash
    sudo nano /etc/iotedge/config.yaml
    ```
+
 Find the provisioning configurations of the file and uncomment the **Manual provisioning configuration using a connection string** section, if it isn't already uncommented.
 
-    ```# Manual provisioning configuration using a connection string
+    ```toml
+    # Manual provisioning configuration using a connection string
     provisioning:
       source: "manual"
       device_connection_string: "<ADD DEVICE CONNECTION STRING HERE>"
