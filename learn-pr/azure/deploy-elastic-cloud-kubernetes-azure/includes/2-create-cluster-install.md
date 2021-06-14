@@ -24,4 +24,4 @@ From here on out, you can use kubectl commands in Azure Cloud Shell to configure
 kubectl -n elastic-system logs -f statefulset.apps/elastic-operator
 ```
 
-:::image type="content" source="../media/infrastructure-diagram.png" alt-text="TODO":::
+:::image type="content" source="../media/infrastructure-diagram.png" alt-text="A diagram depicting custom resource definitions for role-based access control.":::
