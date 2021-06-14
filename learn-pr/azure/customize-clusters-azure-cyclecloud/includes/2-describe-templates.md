@@ -50,7 +50,7 @@ A template consists of the following main sections:
 - *Noderef* references a node within the template to express resource dependencies. It's an optional top-level object.
 - *Parameters* allow you to make a template portable, allowing you to use it for deployment of multiple clusters with matching object hierarchy but different configuration settings. It's an optional top-level object, but you have an option of creating a nested parameters hierarchy. For each parameter, you can define its default value. Parameters also allow you to expose configurable variables in a cluster via the CycleCloud Web interface.
 
-Each section contains several key-value pairs that provide configuration details about the corresponding object, represented by the section header. For example, for a nodearray, such details could include the `ImageName` key with the value designating the Azure VM image to be used for its nodes or the `Azure.MaxScalesetSize` key specifying the maximum allowed Azure VMSS size as its value. Similarly, the node or nodearray sections can include one or more `[[[configuration]]]` sections.
+Each section contains several key-value pairs that provide configuration details about the corresponding object, represented by the section header. For example, for a nodearray, such details could include the `ImageName` key with the value designating the Azure VM image to be used for its nodes or the `Azure.MaxScalesetSize` key specifying the maximum allowed virtual machine scale set size as its value. Similarly, the node or nodearray sections can include one or more `[[[configuration]]]` sections.
 
 ## How to provision a cluster based on a template?
 

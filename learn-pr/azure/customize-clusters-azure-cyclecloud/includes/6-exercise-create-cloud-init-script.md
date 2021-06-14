@@ -101,7 +101,7 @@ To verify the cloud-init functionality on the scheduler node, you'll start the c
 Now you'll repeat the equivalent sequence of steps to verify cloud-init functionality on the compute nodes.
 
 > [!IMPORTANT]
-> Before you can apply the equivalent procedure to verify the cloud-init functionality on the compute nodes, you need to remove and reallocate the corresponding Azure VMSS. This step is specific to the Slurm-based clusters because, in this case, the scheduler autoscale integration requires the Azure CycleCloud prepopulates the compute nodes. As a result, the cloud-init configuration you applied previously in this exercise wouldn't affect already existing nodes.
+> Before you can apply the equivalent procedure to verify the cloud-init functionality on the compute nodes, you need to remove and reallocate the corresponding virtual machine scale set. This step is specific to the Slurm-based clusters because, in this case, the scheduler autoscale integration requires the Azure CycleCloud prepopulates the compute nodes. As a result, the cloud-init configuration you applied previously in this exercise wouldn't affect already existing nodes.
 
 1. From your computer, in the web browser window displaying the Bash session in the **Azure Cloud Shell** pane, while connected to the scheduler node, run the following commands to remove and reallocate the compute nodes in your Azure CycleCloud cluster and terminate the connection to the scheduler node:
 
