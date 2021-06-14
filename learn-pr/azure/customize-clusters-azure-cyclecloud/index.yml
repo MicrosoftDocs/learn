@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.customize-clusters-azure-cyclecloud
+uid: learn.azure.customize-clusters-azure-cyclecloud
 metadata:
   moduleType: standard
   title: Customize high-performance computing clusters deployed with Azure CycleCloud
   description: Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HPC environments in Azure.
-  ms.date: 5/6/2021
+  ms.date: 06/14/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
@@ -29,13 +29,13 @@ products:
   - azure
   - azure-cyclecloud
 units:
-- learn.customize-clusters-azure-cyclecloud.introduction
-- learn.customize-clusters-azure-cyclecloud.describe-templates
-- learn.customize-clusters-azure-cyclecloud.exercise-add-disk
-- learn.customize-clusters-azure-cyclecloud.exercise-add-custom-node-array
-- learn.customize-clusters-azure-cyclecloud.customize-software-installations
-- learn.customize-clusters-azure-cyclecloud.exercise-create-cloud-init-script
-- learn.customize-clusters-azure-cyclecloud.knowledge-check
-- learn.customize-clusters-azure-cyclecloud.summary
+- learn.azure.customize-clusters-azure-cyclecloud.introduction
+- learn.azure.customize-clusters-azure-cyclecloud.describe-templates
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-add-disk
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-add-custom-node-array
+- learn.azure.customize-clusters-azure-cyclecloud.customize-software-installations
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-create-cloud-init-script
+- learn.azure.customize-clusters-azure-cyclecloud.knowledge-check
+- learn.azure.customize-clusters-azure-cyclecloud.summary
 badge:
-  uid: learn.customize-clusters-azure-cyclecloud.badge
+  uid: learn.azure.customize-clusters-azure-cyclecloud.badge

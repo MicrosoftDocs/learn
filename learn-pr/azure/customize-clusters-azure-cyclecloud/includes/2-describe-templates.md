@@ -34,13 +34,13 @@ A template consists of the following main sections:
 
 - Cluster. The `[cluster]` section contains a definition of an Azure CycleCloud cluster object. A template must include at least one `[cluster]` section, which contains one or more `[[node]]` and `[[nodearray]]` sections describing child objects of that cluster.
 - Node. This represents a single, platform-provisioned VM.
-- Nodearray. This represents one or more Azure VM Scale Sets (Azure VMSS).
+- Nodearray. This represents one or more Azure virtual machine scale sets.
 
 > [!NOTE]
-> Clusters comprise nodes serving their designated roles in processing clustered workloads. From the implementation standpoint, Azure CycleCloud relies on Azure Resource Manager to provision them as either individual Azure VMs or as members of an Azure VMSS. The latter represents a collection of identically configured VMs, which, unlike Azure VMs, support horizontal autoscaling. Azure CycleCloud uses VMSS to implement nodearrays. Effectively, the `[[node]]` section describes properties of the underlying, platform-provisioned VMs, which can be a standalone Azure VM or belong to an Azure VMSS. The `[[nodearray]]` section describes an Azure VMSS.
+> Clusters comprise nodes serving their designated roles in processing clustered workloads. From the implementation standpoint, Azure CycleCloud relies on Azure Resource Manager to provision them as either individual Azure VMs or as members of a virtual machine scale set. The latter represents a collection of identically configured VMs, which, unlike Azure VMs, support horizontal autoscaling. Azure CycleCloud uses virtual machine scale sets to implement nodearrays. Effectively, the `[[node]]` section describes properties of the underlying, platform-provisioned VMs, which can be a standalone Azure VM or belong to an Azure virtual machine scale set. The `[[nodearray]]` section describes an Azure virtual machine scale set.
 
 > [!NOTE]
-> A nodearray can consist of multiple Azure VMSS, with each of them comprising differently configured VMs. However, all nodes in a nodearray perform the same role in the cluster, such as providing resources to a single queue of the cluster scheduler.
+> A nodearray can consist of multiple Azure virtual machine scale sets, with each of them comprising differently configured VMs. However, all nodes in a nodearray perform the same role in the cluster, such as providing resources to a single queue of the cluster scheduler.
 
 - *Volume* defines an Azure managed disk that should be attached to individual cluster nodes or nodes forming a nodearray. It's a child object of a node or a nodearray object.
 - *Network-interface* defines an Azure network interface that should be attached to individual cluster nodes or nodes forming a nodearray. It's a child object of a node or a nodearray object.

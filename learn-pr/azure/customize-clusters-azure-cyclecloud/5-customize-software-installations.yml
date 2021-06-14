@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.customize-clusters-azure-cyclecloud.customize-software-installations
+uid: learn.azure.customize-clusters-azure-cyclecloud.customize-software-installations
 title: Customize software installations
 metadata:
   unitType: learning-content
   title: Customize software installations
   description: This unit describes methods of customizing software installations on Azure CycleCloud-managed clusters.
-  ms.date: 5/6/2021
+  ms.date: 06/14/2021
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
