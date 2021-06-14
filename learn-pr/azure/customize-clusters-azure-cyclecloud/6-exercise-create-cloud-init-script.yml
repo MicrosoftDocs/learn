@@ -9,6 +9,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 40
 content: |
   [!include[](includes/6-exercise-create-cloud-init-script.md)]
