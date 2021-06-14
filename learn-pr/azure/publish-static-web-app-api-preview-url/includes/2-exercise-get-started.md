@@ -12,26 +12,26 @@ Create a new repository by using a GitHub template repository. A series of templ
 
 1. If prompted for **Owner**, choose one of your GitHub accounts.
 
-1. Name your repository **my-static-web-app**.
+1. Name your repository **my-static-web-app-and-api**.
 
 1. Select **Create repository from template**.
 
 ## Run your app locally
 
-You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
+You just created a GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
 1. Open a terminal on your computer.
 
 1. Start by cloning the GitHub repository to your computer, replacing _<YOUR_GITHUB_USERNAME>_ with your GitHub username..
 
    ```bash
-   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app
+   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api
    ```
 
 1. Go to the folder for your source code.
 
    ```bash
-   cd my-static-web-app
+   cd my-static-web-app-and-api
    ```
 
 1. Next, go to the folder of your preferred front-end framework, as follows.
@@ -146,7 +146,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone-end
 
-    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+   Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 3. Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
@@ -177,7 +177,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ## Select your subscription
 
-1. Open Visual Studio Code, and select **File > Open** to open the repository you cloned to your computer in the editor.
+1. Open Visual Studio Code, and select **File > Open** and open the repository you cloned to your computer in the editor.
 
 1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and pressing <kbd>Enter</kbd>.
 
