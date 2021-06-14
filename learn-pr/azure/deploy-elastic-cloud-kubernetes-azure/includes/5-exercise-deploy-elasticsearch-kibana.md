@@ -30,7 +30,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     kubecctl get elasticsearch
     ```
 
-    :::image type="content" source="../media/get-elasticsearch-output.png" alt-text="TODO":::
+    :::image type="content" source="../media/get-elasticsearch-output.png" alt-text="A screenshot of the Elasticsearch cluster status in Azure Cloud Shell.":::
 
 1. Use the following command to start port forwarding on the current Cloud Shell session. Open a new Azure Cloud Shell session from the menu.
 
@@ -38,9 +38,9 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     kubectl port-forward service/quickstart-es-http 9200
     ```
 
-    :::image type="content" source="../media/port-forward-output.png" alt-text="TODO":::
+    :::image type="content" source="../media/port-forward-output.png" alt-text="A screenshot of the port forwarding notification in Azure Cloud Shell.":::
 
-    :::image type="content" source="../media/cloud-shell-new.png" alt-text="TODO":::
+    :::image type="content" source="../media/cloud-shell-new.png" alt-text="A screenshot of opening a new Azure Cloud Shell session.":::
 
 1. On the newly opened Azure Cloud Shell session, get the credentials of the default elastic user for the Elasticsearch cluster.
 
@@ -54,7 +54,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     curl -u "elastic:$PASSWORD" -k "https://localhost:9200/_cat/nodes?v=true"
     ```
 
-    :::image type="content" source="../media/curl-output.png" alt-text="TODO":::
+    :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of infomation about the cluster nodes.":::
 
 1. Create kibana.yaml file with the following content:
 
@@ -92,8 +92,8 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     kubectl get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}'    
     ```
 
-    :::image type="content" source="../media/elastic-login-dialog.png" alt-text="TODO":::
+    :::image type="content" source="../media/elastic-login-dialog.png" alt-text="A screenshot of the Elastic login page.":::
 
-    :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="TODO":::
+    :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="A screenshot of the Elastic welcome screen and button to add data.":::
 
     The deployment is up and running. You can click on Add data to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can click on Explore on my own to explore Kibana further and add your data.
