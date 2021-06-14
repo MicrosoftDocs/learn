@@ -1,7 +1,5 @@
 Variables can store many different types of values, like numbers and text. These values are called *data types*. 
 
-## Data types
-
 Data types are an important part of software development because developers use them to make decisions about how the code should be written and how the software should run. Some data types have unique features that help transform or extract additional information in a value.
 
 Data types are also called *JavaScript data primitives*, because they're the lowest-level data types that the language provides. There are six primitive data types: `string`, `number`, `bigint`, `boolean`, `undefined`, and `symbol`.
@@ -55,7 +53,7 @@ myString1 + ", " + myString2 + "!"; //Hello, World!
 
 ```
 
-Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`?
+Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11`? Think about it. What about `'1' + 1`?
 
 *Template literals* are another way to format strings, except that instead of quotes, you use backticks. Anything that's not plain text must be placed inside placeholders `${ }`, including any variables that might be strings. Here's an example:
 
@@ -81,4 +79,5 @@ Booleans can be only two values: `true` or `false`. Booleans can help make decis
 
 A variable can be considered "truthy" if it evaluates to a Boolean whose value is `true`. In JavaScript, [all values are truthy unless they're defined as "falsy"](https://developer.mozilla.org/docs/Glossary/Truthy/?azure-portal=true).
 
-[!TIP] Explore the gotchas of JavaScript! Remember, you can write JavaScript right in your browser. Just open a browser window and go to **Developer tools**. In the console, you'll find a prompt. This code resolves to `false`: `let age = 1`; `let Age = 2`; `age == Age`. Why do you think that is, and what other gotchas can you find?
+> [!TIP] 
+> Explore the gotchas of JavaScript! Remember, you can write JavaScript right in your browser. Just open a browser window and go to **Developer tools**. In the console, you'll find a prompt. This code resolves to `false`: `let age = 1`; `let Age = 2`; `age == Age`. Why do you think that is, and what other gotchas can you find?

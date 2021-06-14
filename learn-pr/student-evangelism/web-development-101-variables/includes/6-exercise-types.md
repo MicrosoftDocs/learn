@@ -1,4 +1,4 @@
-Your company is pleased with your earlier modeling of Texas Hold'em and wants to see you continue to work on its implementation. You've now learned about more about data types, so let's put that knowledge to use.
+Your company is pleased with your earlier modeling of Texas Hold'em and wants to see you continue to work on its implementation. You've now learned more about data types, so let's put that knowledge to use.
 
 ## Add data types
 

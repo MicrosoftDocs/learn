@@ -11,4 +11,4 @@ If you've learned a programming language before, you might notice some similarit
 > [!TIP]
 > Want a quick review before you get started? Check out [this video](https://youtu.be/JNIXfGiDWM8/?azure-portal=true) for an overview.
 
-Before you get started, let's check in with what you know now!
+Before you get started, let's check in with what you know now.

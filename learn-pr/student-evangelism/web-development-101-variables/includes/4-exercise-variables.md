@@ -33,7 +33,7 @@ You know that Texas Hold'em features players, starter cards, and points. Try to 
    let playerThreePoints = startingPokerChips;
    ```
 
-   You have created three players' starting points by assigning them the variable `startingPokerChips`, which holds the value `100`.
+   You've created three players' starting points by assigning them the variable `startingPokerChips`, which holds the value `100`.
 
 1. Show a specific game round and how an assignment can represent a game state. Add the following lines to the code:
 
@@ -43,14 +43,14 @@ You know that Texas Hold'em features players, starter cards, and points. Try to 
    playerThreePoints +=75; 
    ```
 
-You have successfully simulated a game round in which the first and second player bet 50 and 25 points, respectively. Because the third player has a better hand, they end up winning the game round. The game takes points from the first and second player and adds them to the pot of the third player.
+You've successfully simulated a game round in which the first and second player bet 50 and 25 points, respectively. Because the third player has a better hand, they end up winning the game round. The game takes points from the first and second player and adds them to the pot of the third player.
 
 ## Refactor to constants
 
 At this point, you have some variables that represent parts of your card game. Remember that you have constants available, which are variables that shouldn't change their value. Let's see what variables might lend themselves to be better represented as constants in your source code.
 
 > [!TIP]
-> Spend 1 to 2 minutes thinking about what variables shouldn't change and what variables might have changing values. Then scroll down to see the solution.
+> Spend one to two minutes thinking about what variables shouldn't change and what variables might have changing values. Then scroll down to see the solution.
 
 1. At the top of the file, change the following code:
 
@@ -68,7 +68,7 @@ At this point, you have some variables that represent parts of your card game. R
    const NO_OF_STARTER_CARDS = 2;
    ```
 
-   You've successfully identified which variables are important for the game. They also describe how the game is played. A player's starting poker chips will not change, even if a specific player's pot might change as they play. The number of players is also constant, unless you imagine that you might rebuild the game such that a player can join at any time. The number of starter cards is always two in Texas Hold'em. As the game developer, you have the power to decide ultimately what should be changeable and what should be constant.
+   You've successfully identified which variables are important for the game. They also describe how the game is played. A player's starting poker chips will not change, even if a specific player's pot changes as they play. The number of players is also constant, unless you imagine that you might rebuild the game such that a player can join at any time. The number of starter cards is always two in Texas Hold'em. As the game developer, you have the power to decide ultimately what should be changeable and what should be constant.
 
    > [!TIP]
    > A great way to think about variables is to make all variables constant to begin with. Then, decide if a variable's value will need to change in the future. In that case, change it from `const` to `let`.  
@@ -81,4 +81,4 @@ At this point, you have some variables that represent parts of your card game. R
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-Congratulations! You've started working on a JavaScript code base that implements Texas Hold'em. In doing so, you've reasoned through what are starter values, what values can change, and how to change values.
+Congratulations! You've started working on a JavaScript code base that implements Texas Hold'em. In doing so, you've reasoned through what the starter values are, what values can change, and how to change values.

@@ -14,7 +14,7 @@ The keyword `var` indicates that you want to declare a variable, and `aVariable`
 
 ## Keyword to work with variables
 
-The keyword `let` was introduced in the JavaScript standard EcmaScript 6 (ES6). Using `let` gives your variable _block scope_. We recommend that you use `let` over `var` to better manage scope in your application. We'll cover block scopes in depth later.
+The keyword `let` was introduced in the JavaScript standard ECMAScript 6 (ES6). Using `let` gives your variable _block scope_. We recommend that you use `let` over `var` to better manage scope in your application. We'll cover block scopes in depth later.
 
 To declare a variable by using `let`, use the following syntax:
 
@@ -26,26 +26,26 @@ let myVariable;
 
 ### Assigning a value
 
-To store a value in a variable, you use the assignment operator (`=`) followed by the expected value:
+To store a value in a variable, you use the *assignment operator* (`=`) followed by the expected value:
 
 ```javascript
 myVariable = 123;
 ```
 
 > [!TIP]
-> The use of `=` in this example means we're using an *assignment operator*, which sets a value to a variable. It differs from a comparison, which uses two or three operators like `==` or `===`.
+> The use of the assignment operator (`=`) in this example sets a value to a variable. It differs from a comparison, which uses two or three operators like `==` or `===`.
 
 `myVariable` has now been _assigned_ the value `123`.
 
 ### Explicit initialization
 
-Initialization differs from assignment in that you both declare the value and give it a value. Here's an example of an initialization:
+An *initialization* differs from an assignment in that you both declare the value and give it a value. Here's an example of an initialization:
 
 ```javascript
 let myVariable = 123;
 ```
 
-The reason for using explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine, for example, that you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, you could declare it like this:
+The reason for using an explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine, for example, that you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, you could declare it like this:
 
 ```javascript
 let pokerChips = 100;
@@ -62,13 +62,13 @@ myVariable = 321;
 ```
 
 > [!TIP]
-> Try it out yourself to practice. You can write JavaScript right in your browser! Open a browser window and go to **Developer tools**. In the console, you'll find a prompt. Enter `let myVariable = 123`, and then enter `myVariable`. What happens? You'll learn more about these concepts in subsequent lessons.
+> Try it out yourself to practice. You can write JavaScript right in your browser! Open a browser window and go to **Developer tools**. In the console, you'll find a prompt. Enter `let myVariable = 123`, and then enter `myVariable`. What happens?
 
 Sometimes you don't want variable values to change. Such a situation can happen when you rely on a mathematical constant like the value of pi. To address this need, JavaScript lets you create *constants*.
 
 ## Constants
 
-The declaration and initialization of a constant follows the same concepts as a variable, except that it uses the `const` keyword. 
+The declaration and initialization of a constant follows the same concepts as a variable, except that it uses the `const` keyword: 
 
 ```javascript
 const MY_VARIABLE = 123;
@@ -80,9 +80,9 @@ const MY_VARIABLE = 123;
 Constants are similar to variables, with two exceptions:
 
 - *They must have a value*. Constants must be initialized, or you'll get an error when running code.
-- *The reference can't be changed*. The reference of a constant can't be changed after it's initialized, or you'll get an error when running code. 
+- *The reference can't be changed*. If the reference of a constant changes after it's initialized, you'll get an error when running code. 
 
-Let's look at three examples:
+Let's look at a few examples:
 
 - The following code syntax for a simple value is *not* allowed:
 
