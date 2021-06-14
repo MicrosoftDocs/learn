@@ -8,7 +8,7 @@ metadata:
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
-durationInMinutes: 07
+durationInMinutes: 05
 content: |
   [!include[](includes/7-modeling-small-lookup-tables.md)]
 quiz:

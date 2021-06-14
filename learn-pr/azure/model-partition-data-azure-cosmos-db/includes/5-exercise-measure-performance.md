@@ -13,9 +13,13 @@ dotnet build
 dotnet run --load-data
 ```
 
-## Review query performance of entities in separate containers
+## Measure performance of entities in separate containers
 
 In the Database-v1, where data is stored in individual containers, run queries to get the customer, customer address, and customer password. Review the request charge for each of those queries.
+
+### Query for customer entity
+
+In the Database-v1, run a query to get the customer entity and review the request charge.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Azure portal menu, or from the **Home** page, select **Azure Cosmos DB**.
@@ -29,9 +33,14 @@ In the Database-v1, where data is stored in individual containers, run queries t
     ```sql
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
+1. Select the **Query Stats** tab and note the request charge of 2.83.
 
-1. Select the **Query Stats** tab to see how much RU/s was consumed.
-1. Note the **Value** for **Request Charge**.
+    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats for customer query in the database v1.":::
+
+### Query for customer address
+
+Run a query to get the customer address entity and review the request charge.
+
 1. Select the **customerAddress** container.
 1. At top of screen, select **New SQL Query**
 1. Copy and paste the following SQL text and select **Execute Query**.
@@ -40,10 +49,14 @@ In the Database-v1, where data is stored in individual containers, run queries t
     SELECT * FROM c WHERE c.customerId = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
 
-1. Select the **Query Stats** tab to see how much RU/s was consumed.
+1. Select the **Query Stats** tab and note the request charge of 2.83.
 
-    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats results for customer address in the database v1.":::
-1. Note the **Value** for **Request Charge**.
+    :::image type="content" source="../media/5-customer-address-query-v1.png" alt-text="Screenshot that shows the query stats for customer address query in the database v1.":::
+
+### Query for customer password
+
+Run a query to get the customer password entity and review the request charge.
+
 1. Select the **customerPassword** container.
 1. At top of screen, select **New SQL Query**
 1. Copy and paste the following SQL text and select **Execute Query**.
@@ -52,11 +65,24 @@ In the Database-v1, where data is stored in individual containers, run queries t
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
 
-1. Select the **Query Stats** tab to see how much RU/s was consumed.
+1. Select the **Query Stats** tab and note the request charge of 2.83.
 
-## Review query performance of embedded entities
+    :::image type="content" source="../media/5-customer-password-query-v1.png" alt-text="Screenshot that shows the query stats for customer password query in the database v1.":::
 
-In the Database-v2, where the data is embedded into a single document, run a query to get the customer, customer address, and customer password data. Review the request charge for the query.
+### Add up the request charges
+
+Now that we've run all of our queries, let's add up all of the request unit (RU/s) cost for them.
+
+|**Query**|**RU/s Cost**|
+|---------|---------|
+|Customer|2.83|
+|Customer Address|2.83|
+|Customer Password|2.83|
+|**Total RU/s**|**8.49**|
+
+## Measure performance of embedded entities
+
+Now we're going to query for the same information but with our entities embedded into a single document.
 
 1. Select **Database-v2** database.
 1. Select the **customer** container.
@@ -70,9 +96,12 @@ In the Database-v2, where the data is embedded into a single document, run a que
 
     :::image type="content" source="../media/5-customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database v2.":::
 
-1. Select the **Query Stats**.
-1. Note the value of the **Value** for **Request Charge**.
+1. Select on the **Query Stats** and note the request charge of 2.83, versus the 8.49 RU/s for the three queries we ran earlier.
 
 ## Compare the performance of the two models
 
-When you compare the request charge (RU/s) for each of the queries you ran, you see that the last query where the customer entities are in a single document is much less expensive than the combined cost for running the three queries independently. Also the latency for returning this data is lower because the data is returned in a single operation.
+When you compare the RU/s for each of the queries you ran, you see that the last query where the customer entities are in a single document is much less expensive than the combined cost for running the three queries independently. The latency for returning this data is lower because the data is returned in a single operation.
+
+When we're searching for a single item and know the partition key and id of the data, we can retrieve this data via a *point-read* using the Cosmos DB SDK by calling `ReadItemAsync()`. A point-read is even faster than our query and for the same customer data the cost is just 1 RU/s; a nearly three-fold improvement.
+
+
