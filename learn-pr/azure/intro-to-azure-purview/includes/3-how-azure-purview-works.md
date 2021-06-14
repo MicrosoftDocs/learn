@@ -1,21 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
-
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how (features) of (product) work to (solve problem)."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
-
-    Heading: none
-
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
 Here is where we will take a look at how Azure Purview works, behind the scenes. You'll learn the core operational theory behind the functioning of Azure Purview for mapping and scanning your data sources. The key areas we will focus on include:
 
 * Sourcing data
@@ -23,22 +5,6 @@ Here is where we will take a look at how Azure Purview works, behind the scenes.
 * Scanning data
 * Look at metadata
 
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
-
-    Goal:
-        Cover the components of (product) and how they work.
-        Repeat this pattern multiple times as needed.
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
 ## Sourcing data
 Sourcing your data starts with a process where you register data sources. Azure Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Azure Purview is aware of them. The data remains in its location and is not migrated to any other platform.
 
@@ -62,7 +28,7 @@ In Azure Purview, there are a few options to use for authentication when the ser
 ## Mapping data
 A data map is the foundational platform for Azure Purview. Data Map = Data assets + Lineage + Classifications + Business Context. Customers create a knowledge graph of data coming in from a range of sources. Purview makes it easy to register, and automatically scan and classify data at scale. Within the data map, you can identify the type of data source along with other details around security, scanning, etc. The data map allows you to use collections as well.
 
-Collections are a way of grouping data assets into logical collections, (Categories), to simplify management and discovery of assets within the catalog.
+Collections are a way of grouping data assets into logical collections (Categories), to simplify management and discovery of assets within the catalog.
 
 Selecting the Map view displays the data sources in a graphical view, along with the collections you have created for them.
 
@@ -77,14 +43,35 @@ Scanning the data sources will require the entry of credentials for these source
 
 :::image type="content" source="../media/scan-rule-sets.png" alt-text="Screenshot depicting the Management panel selected in Purview Studio and the Scan rule sets option also selected.  Displayed is a list of System provided scan rule sets that pre-configured for the various data sources such as Azure File Service, SQL Server, etc.":::
 
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+You can also select the file types to include in the scan. The file types will be used in the schema extraction and classification of the data. Built-in file type support includes the following types:
+
+* CSV
+* JSON
+* PSV
+* SSV
+* TSV
+* TXT
+* XML
+* PARQUET
+* AVRO
+* ORC
+* Document file types (.doc, pdf, xls, etc.)
+
+You can also configure custom file types by providing a file extension, a description for the file type, and specify if the contents are using custom delimiters or are of a system file type.
 
 ## Metadata
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Metadata is used to help describe the data that is being scanned and made available in the catalog. During the configuration of a scan set, you can specify classification rules to apply during the scan that will also serve as metadata. The classification rules fall under five major categories:
+
+* Government - covers attributes such as government identity cards, driver license numbers, passport numbers, etc.
+* Financial - covers attributes such as bank account numbers or credit card numbers.
+* Personal - personally identifiable information such as a person's age, date of birth, email address, phone number, etc.
+* Security - attributes like passwords that may be stored.
+* Miscellaneous - attributes not covered in the other categories.
+
+:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of Purview Studio. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
+
+After you register a data source, you can then enrich its metadata. Either the user who registered the data source or another user in the enterprise adds the metadata. Any user can annotate a data source by providing descriptions, tags, or other metadata for requesting data source access. This descriptive metadata supplements the structural metadata, such as column names and data types, that's registered from the data source.
+
+Discovering and understanding data sources and their use is the primary purpose of registering the sources. Enterprise users might need data for business intelligence, application development, data science, or any other task where the right data is required. They use the data catalog discovery experience to quickly find data that matches their needs, understand the data to evaluate its fitness for the purpose, and consume the data by opening the data source in their tool of choice.
+
+At the same time, users can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. They can also register new data sources, which are then discovered, understood, and consumed by the community of catalog users.

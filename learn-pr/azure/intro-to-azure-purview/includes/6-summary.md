@@ -13,8 +13,11 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+Our goal was to help you evaluate if Azure Purview was the right choice to help you manage your enterprise data environment and get a handle on your various data sources. We presented content on the following features:
+* Registering data sources
+* Mapping data sources
+* Scanning data in your sources
+* Exploring metadata and classification of the data
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
