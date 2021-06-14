@@ -6,7 +6,7 @@ This feature requires no special setup other than configuring your app for Appli
 
 Application Insights sends a notification when it detects that the performance of your application has degraded in one of these ways:
 
-- Response time degradation,
+- Response time degradation.
 
     Your app has started responding to requests more slowly than it used to. The change might have been sudden, for example if there was a regression in your latest deployment. Or, the degradation might have been gradual, perhaps because there is a memory leak.
 - Dependency duration degradation.
