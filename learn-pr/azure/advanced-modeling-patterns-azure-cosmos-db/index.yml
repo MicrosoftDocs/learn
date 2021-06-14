@@ -17,7 +17,7 @@ abstract: |
     - Implement pre-aggregating and denormalizing data strategies to improve performance and scaling of your data model
 prerequisites: | 
   - Familiarity with Azure Cosmos DB concepts like databases, containers, documents and throughput (RU/s)
-  - Familiarity navigating Azure Cosmos DB resources and data using Data Explorer in Azure Portal, running queries, viewing query stats in results
+  - Familiarity navigating Azure Cosmos DB resources and data using Data Explorer in Azure portal, running queries, viewing query stats in results
   - Familiarity with basic modeling and partitioning strategies like embedding or referencing data in entities
   - Familiarity with Azure Cosmos DB .NET SDK v3
   - Familiarity with Azure Cosmos DB change feed

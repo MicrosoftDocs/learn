@@ -14,7 +14,7 @@ Given there are far fewer tags per product than products per tags, it makes more
 
 Next, we will select a partition key for the product container. Again, we need to look at the operations to be performed to decide on a partition key. Our operations are, create a product, and edit a product. As customers navigate the e-commerce site, they will often do so by product category. We need a query that filters products by `categoryId` to display to the user. In order to make our query a single-partition query with all products by category, we will use `categoryId` as our partition key for our product container.
 
-:::image type="content" source="../media/2-product-container-categoryid.png" alt-text="Diagram of the product container with category Id as the partition key, the list of all operations, and a SQL statement to list all products from a category." border="false":::
+:::image type="content" source="../media/2-product-container-categoryid.png" alt-text="Diagram of the product container with category I D as the partition key, the list of all operations, and a SQL statement to list all products from a category." border="false":::
 
 So `categoryId` is a good partition key that will allow us to retrieve all products in a category efficiently. Embedding tag IDs also allows us to get the IDs in our Many to Many relationship between products and tags as well. However, when we query for products, you not only need the product data but you also want to display the category name and the tag names as well. How can we return the category name for each product, and the names for the product tags when we query for products?
 
@@ -34,4 +34,4 @@ The solution for us is to *denormalize* our data. With denormalization, we're ab
 
 To denormalize our data here, we will add more properties like the name of the category and the name for each tag in our tags array. By adding these properties, we now are able to retrieve all of the data we need to return to our clients in just a single request.
 
-:::image type="content" source="../media/2-product-denormalized.png" alt-text="Diagram of our product container with partition key of category Id, the modeled product document schema with category name denormalized, and a denormalized product tag array." border="false":::
+:::image type="content" source="../media/2-product-denormalized.png" alt-text="Diagram of our product container with partition key of category I D, the modeled product document schema with category name denormalized, and a denormalized product tag array." border="false":::
