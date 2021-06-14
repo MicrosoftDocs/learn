@@ -1,4 +1,4 @@
-Knowing how to properly use variables and data types is essential to being able to write code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
+Knowing how to properly use variables and data types is essential to writing code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
 
 ## Variables
 
