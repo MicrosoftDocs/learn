@@ -1,4 +1,4 @@
-Sometimes you want to try a piece of a code out, without having to go through creating a file for it first. For those occacions, it's a good idea to use a built-in program called a REPL that lets you type shorter statements and have those statements evaluated.
+Sometimes you want to try a piece of a code out, without having to go through creating a file for it first. For those occasions, it's a good idea to use a built-in program called a REPL that lets you type shorter statements and have those statements evaluated.
 
 ## The Python REPL
 
@@ -33,7 +33,7 @@ With the REPL you can do most things you would be able to do in a code file like
    3.14
    ```
 
-- **Use the built-in help**. Getting help on a topic can be really useful as you don't have to leave the editor of your choice, to browsing on the Web, but you can continue to author code.
+- **Use the built-in help**. Getting help on a topic can be useful as you don't have to leave the editor of your choice, to browsing on the Web, but you can continue to author code.
 
 ## Using help
 
@@ -51,7 +51,7 @@ If you don't pass an argument to the help function, an interactive help facility
 
 You enter the interactive help console by typing `help()`. This command will list some basic instructions on how to use the help system.
 
-From here, you can just type in the element you're interested in. By for example typing `string` it will display information about the topic `string`, which looks something like the below:
+From here, you can just type in the element you're interested in. By, for example,  typing `string` it will display information about the topic `string`, which looks something like the below:
 
 ```output
 Help on module string:
