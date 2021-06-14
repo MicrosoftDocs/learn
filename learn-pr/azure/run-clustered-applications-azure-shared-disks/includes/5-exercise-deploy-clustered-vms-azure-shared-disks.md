@@ -8,7 +8,7 @@
 
 Your CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure VMs. You've been asked to test clustered scenarios with both Linux and Windows VMs.
 
-::: zone pivot="linux"
+::: zone pivot="linux-cloud"
 
 ## Use Linux VMs with Azure shared disks
 
@@ -178,7 +178,7 @@ exit
 
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="windows-cloud"
 
 ## Use Windows VMs by using Azure shared disks
 
