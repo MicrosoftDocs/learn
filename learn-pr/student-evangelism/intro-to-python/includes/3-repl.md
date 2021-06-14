@@ -1,10 +1,10 @@
-Sometimes you want to try a piece of a code out, without having to go through creating a file for it first. For those occacions it's a good idea to use a built-in program called a REPL that lets you type shorter statements and have those evaluated.
+Sometimes you want to try a piece of a code out, without having to go through creating a file for it first. For those occacions, it's a good idea to use a built-in program called a REPL that lets you type shorter statements and have those statements evaluated.
 
 ## The Python REPL
 
 Python supports an interactive console experience, which allows you to type in commands and see the results immediately. This experience is sometimes referred to as a "Read-Eval-Print-Loop" or REPL.
 
-To use the REPL you type `python` in your console. What you are phased with is a prompt looking like similar to the below output, it waits for you to input commands:
+To use the REPL, you type `python` in your console. What you are phased with is a prompt looking like similar to the below output, it waits for you to input commands:
 
 ```output
 Python 2.7.16 (default, May  8 2021, 11:48:02) 

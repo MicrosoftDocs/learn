@@ -10,7 +10,7 @@ Python is an _interpreted language, which reduces the edit-test-debug cycle beca
 
 Most of the runtime environments support two ways to execute Python code:
 
-- **Interactive mode:** in this mode, each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. This is the default mode if you don't pass a filename to the interpreter.
+- **Interactive mode:** in this mode, each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. The interactive mode is the default mode if you don't pass a filename to the interpreter.
 - **Script mode:** in script mode, you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line-by-line and the output is displayed. There is no compilation step as shown in the following diagram.
 
 :::image type="content" source="../media/2-python-steps.png" alt-text="Diagram showing the execution of a .py file through the Python interpreter":::
