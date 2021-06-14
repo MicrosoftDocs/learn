@@ -102,6 +102,5 @@ Now we're going to query for the same information but with our entities embedded
 
 When you compare the RU/s for each of the queries you ran, you see that the last query where the customer entities are in a single document is much less expensive than the combined cost for running the three queries independently. The latency for returning this data is lower because the data is returned in a single operation.
 
-When we're searching for a single item and know the partition key and id of the data, we can retrieve this data via a *point-read* using the Cosmos DB SDK by calling `ReadItemAsync()`. A point-read is even faster than our query and for the same customer data the cost is just 1 RU/s; a nearly three-fold improvement.
-
+When we're searching for a single item and know the partition key and ID of the data, we can retrieve this data via a *point-read* using the Cosmos DB SDK by calling `ReadItemAsync()`. A point-read is even faster than our query and for the same customer data the cost is just 1 RU/s; a nearly three-fold improvement.
 
