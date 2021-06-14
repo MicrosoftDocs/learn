@@ -23,7 +23,7 @@ prerequisites: |
   - Experience with using the command line  
   - Familiarity with the concepts of accessibility, disability, and inclusion
   - Basic familiarity with web accessibility tools and design techniques. See [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/) for an introduction.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/aspnetcore-accessibility.svg
 levels:
 - intermediate
 roles:
