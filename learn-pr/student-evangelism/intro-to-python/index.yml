@@ -31,9 +31,9 @@ units:
   - learn.student-evangelism.intro-to-python.introduction
   - learn.student-evangelism.intro-to-python.what-is-python
   - learn.student-evangelism.intro-to-python.repl
-  - learn.student-evangelism.intro-to-python.variables
+  - learn.student-evangelism.intro-to-python.variables-and-data-types
   - learn.student-evangelism.intro-to-python.exercise-output
-  - learn.student-evangelism.intro-to-python.input
+  - learn.student-evangelism.intro-to-python.reading-input
   - learn.student-evangelism.intro-to-python.exercise-input
   - learn.student-evangelism.intro-to-python.summary
 badge:
