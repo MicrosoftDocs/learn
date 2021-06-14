@@ -1,4 +1,4 @@
-The Elastic Stack provides tools, including Elasticsearch and Kibana, to help you search, analyze, monitor, and secure your apps and IT. Recall that in the Trailwinds scenario, you have been asked to deploy Elastic Cloud on Kubernetes on AKS. Here, you will deploy a three-node Elasticsearch cluster and two instances of Kibana leveraging Azure Cloud Shell.
+Elastic Stack provides tools, including Elasticsearch and Kibana, to help you search, analyze, monitor, and secure your apps and IT. Recall that in the Trailwinds scenario, you have been asked to deploy Elastic Cloud on Kubernetes on AKS. Here, you will deploy a three-node Elasticsearch cluster and two instances of Kibana leveraging Azure Cloud Shell.
 
 1. Create an elasticsearch.yaml configuration file with the following content.
 
