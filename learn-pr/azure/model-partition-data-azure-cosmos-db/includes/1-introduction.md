@@ -12,7 +12,7 @@ The following diagram shows the model you will be starting from. The relational 
 
 ## What will we be doing?
 
-In this module we take our existing relational data model and redesign it as a NoSQL database for our e-commerce application. During this process you will learn the following:
+In this module we take our existing relational data model and redesign it as a NoSQL database for our e-commerce application. During this process, you will learn the following concepts:
 
 - **Differences between relational vs. NoSQL databases:** We will explore how NoSQL databases differ relational databases and why they are that way.
 - **Using access patterns to model data:** We will learn how understanding how an application reads and writes data influences how to model it for a NoSQL database.
@@ -22,4 +22,4 @@ In this module we take our existing relational data model and redesign it as a N
 
 ## What is the main goal?
 
-By the end of this module, when combined with the companion module, Advanced Modeling Patterns for Azure Cosmos DB, you will have the knowledge and skills necessary to properly model and partition data for a NoSQL database like Azure Cosmos DB.
+By the end of this module, when combined with the companion module, "Optimize your database by using advanced modeling patterns for Azure Cosmos DB", you will have the knowledge and skills necessary to properly model and partition data for a NoSQL database like Azure Cosmos DB.

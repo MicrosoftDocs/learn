@@ -5,7 +5,7 @@ metadata:
   type: summary  
   title: Summary
   description: Module summary for modeling and partitioning data for a NoSQL database.
-  ms.date: 3/9/2021  
+  ms.date: 6/14/2021 
   author: markjbrown  
   ms.author: mjbrown  
   ms.topic: interactive-tutorial

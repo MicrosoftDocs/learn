@@ -5,11 +5,11 @@ metadata:
   type: learning-content  
   title: What's the difference between NoSQL and relational databases?
   description: A quick review of the difference between NoSQL and relational databases.
-  ms.date: 3/9/2021  
+  ms.date: 6/14/2021 
   author: markjbrown  
   ms.author: mjbrown  
   ms.topic: interactive-tutorial
-durationInMinutes: 05
+durationInMinutes: 03
 content: |
   [!include[](includes/2-nosql-versus-relational.md)]
 quiz:
