@@ -17,14 +17,14 @@ quiz:
   questions:
     - content: In JavaScript, we can declare values with the keyword _______ or _______
       choices:
-        - content: `let` or `var`
+        - content: "`let` or `var`"
           isCorrect: true
           explanation: Correct! These are the keywords that we need to create and declare
             variables.
-        - content: `get` or `script`
+        - content: "`get` or `script`"
           isCorrect: false
           explanation: These keywords won't allow you to create a variable.
-        - content: `char` or `log`
+        - content: "`char` or `log`"
           isCorrect: false
           explanation: These keywords won't allow you to create a variable.
     - content: Constants are the same as `let` and `var` to declare variables, except that...

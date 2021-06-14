@@ -29,13 +29,13 @@ quiz:
             false), they're still considered a data type.
     - content: Numbers and ____ are JavaScript primitives that handle numeric data.
       choices:
-        - content: `bigint`
+        - content: "`bigint`"
           isCorrect: true
           explanation: Correct! Values for `bigint` can be used for arbitrarily large integers.
-        - content: `boolean`
+        - content: "`boolean`"
           isCorrect: false
           explanation: "Booleans can be only two values: true or false."
-        - content: `star`
+        - content: "`star`"
           isCorrect: false
           explanation: This is not a JavaScript primitive.
     - content: Strings can reside between both single and double ______.
