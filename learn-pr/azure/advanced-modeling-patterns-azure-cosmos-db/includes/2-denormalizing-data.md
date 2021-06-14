@@ -1,4 +1,4 @@
-In this section, we are going to look at our product table from our relational database and model it for a NoSQL database. We are also going to look at the Many to Many relationship our Product table has with ProductTags.
+In this section, we're going to look at our product table from our relational database and model it for a NoSQL database. We're also going to look at the Many to Many relationship our Product table has with ProductTags.
 
 :::image type="content" source="../media/2-product-model.png" alt-text="Diagram that shows the relationship between the product and product tags entities." border="false":::
 
@@ -18,7 +18,7 @@ Next, we will select a partition key for the product container. Again, we need t
 
 So `categoryId` is a good partition key that will allow us to retrieve all products in a category efficiently. Embedding tag IDs also allows us to get the IDs in our Many to Many relationship between products and tags as well. However, when we query for products, you not only need the product data but you also want to display the category name and the tag names as well. How can we return the category name for each product, and the names for the product tags when we query for products?
 
-In order to display a product page for a category, we need to run the following queries:
+To display a product page for a category, we need to run the following queries:
 
 - Query product container to return all the products in a category.
 - Query productCategory container to return the product category's name.
@@ -30,8 +30,8 @@ In order to display a product page for a category, we need to run the following 
 
 Now running all these queries above could work for us. However, it is not very scalable. Remember that in a NoSQL database there are no joins between containers. So joins are not an option for us. Also remember, for a NoSQL database, the objective is to reduce the number of requests by modeling data such that all the data needed by the application can be fetched in as few requests as possible.
 
-The solution for us is to *denormalize* our data. With denormalization, we are able to optimize our data models to make sure that all the required data for our application is ready to be served by our queries.
+The solution for us is to *denormalize* our data. With denormalization, we're able to optimize our data models to make sure that all the required data for our application is ready to be served by our queries.
 
-To denormalize our data here, we will add more properties including the name of the category and the name for each tag in our tags array. By adding these properties, we now are able to retrieve all of the data we need to return to our clients in just a single request.
+To denormalize our data here, we will add more properties like the name of the category and the name for each tag in our tags array. By adding these properties, we now are able to retrieve all of the data we need to return to our clients in just a single request.
 
 :::image type="content" source="../media/2-product-denormalized.png" alt-text="Diagram of our product container with partition key of category Id, the modeled product document schema with category name denormalized, and a denormalized product tag array." border="false":::

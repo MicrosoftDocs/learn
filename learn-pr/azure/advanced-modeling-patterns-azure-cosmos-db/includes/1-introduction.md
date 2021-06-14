@@ -1,6 +1,6 @@
 Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL database, Cosmos DB is both horizontally scalable and non-relational. The horizontal scalability allows Cosmos DB grow to sizes well beyond the size of a typical relational database. Also because it is horizontally scalable, it does not implement relational constraints on data, allowing Cosmos DB to provide predictable performance.
 
-To achieve this level of scalability, users need to understand the concepts, techniques and technologies for modeling and partitioning data unique to NoSQL databases. It's also important to understand how relational concepts, such as maintaining referential integrity, are applied in a NoSQL world.
+To achieve this level of scalability, users need to understand the concepts, techniques, and technologies for modeling and partitioning data unique to NoSQL databases. It's also important to understand how relational concepts, such as maintaining referential integrity, are applied in a NoSQL world.
 
 :::image type="content" source="../media/1-introduction.png" alt-text="Diagram that shows the horizontal scale for Azure Cosmos DB." border="false"::::
 
@@ -10,7 +10,7 @@ Imagine that you're working for a retail startup that's designing a database to 
 
 ## What will we be doing?
 
-In this module, we will complete the redesign of the NoSQL database for our e-commerce application by modeling the product and sales order entities. During this process you will learn the following:
+In this module, we will complete the redesign of the NoSQL database for our e-commerce application by modeling the product and sales order entities. During this process, you will learn the following concepts:
 
 * **De-normalization:** We will apply this concept when we model our product data. We will then measure the performance and cost difference between storing the data in a relational manner, versus when it has been modeled for a NoSQL database.
 * **Referential integrity:** We will learn how to use a feature called change feed to maintain the referential integrity between data stored in two different containers. In our e-commerce scenario, we will show how change feed can be used to automatically update all the products for a category when the name of the category is changed.
