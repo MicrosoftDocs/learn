@@ -1,4 +1,4 @@
-Through the course of this module, we reviewed how to deploy Elastic Cloud on Azure, the fully managed SaaS solution. We practiced launching Kibana and using it to visualize and explore sample data.
+Through the course of this module, we reviewed how to deploy Elastic Cloud on Azure, the managed SaaS solution. We practiced launching Kibana and using it to visualize and explore sample data.
 
 In the exercises, you created a demo environment for Elastic Cloud on Azure to help business stakeholders decide if the solution would help them achieve their goals of improving the search experience for customers and providing internal analysts with a visualization tool well-suited for their reporting and planning needs.
 
@@ -6,7 +6,7 @@ Today, customers use these same tools and techniques to help shape their busines
 
 ## Esri
 
-For the past 45 years, Esri geographic information system (GIS) technology has helped businesses, universities, governments, nongovernmental organizations (NGOs), and others to map their worlds so they can better understand them. The company’s technology platform has evolved from running on minicomputers to servers to PCs to the web to mobile devices. With the growing number of sensors, it wanted to create a real-time mapping capability. It chose Elasticsearch and customized plug-ins to accelerate the development of spatial data aggregation for the real-time map services hosted on Azure.
+For the past 45 years, Esri geographic information system (GIS) technology has helped businesses, universities, governments, nongovernmental organizations (NGOs), and others to map their worlds so they can better understand them. The company’s technology platform has evolved from running on minicomputers to servers to PCs to the web to mobile devices. With the growing number of sensors, it wanted to create a mapping capability. It chose Elasticsearch and customized plug-ins to accelerate the development of spatial data aggregation for the real-time map services hosted on Azure.
 
 ## References
 
