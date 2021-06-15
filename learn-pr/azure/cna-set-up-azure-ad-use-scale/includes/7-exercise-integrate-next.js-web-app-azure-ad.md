@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of configuring a simple Next.js-based application that uses Azure AD authentication to access an inventory database hosted by Azure Database for PostgreSQL in the single server deployment model.
+This exercise takes you through the process of configuring a simple Next.js-based application that uses Azure AD authentication to access an inventory database hosted by Azure Database for PostgreSQL in the single server deployment model.
 
 In this exercise, you'll:
 
@@ -295,4 +295,4 @@ Congratulations! You completed the third exercise of this module. In this exerci
 
 ## Clean up the resources
 
-To avoid unnecessary charges from using Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.
+To avoid unnecessary charges from using Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**. 
