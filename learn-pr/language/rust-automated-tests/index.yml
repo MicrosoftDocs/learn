@@ -39,4 +39,3 @@ units:
 - learn.language.rust-automated-tests.summary
 badge:
   uid: learn.language.rust-automated-tests.badge
-hidden: true
