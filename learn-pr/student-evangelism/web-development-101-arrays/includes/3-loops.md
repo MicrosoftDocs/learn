@@ -75,7 +75,7 @@ i < 10
 Well, our array of ice cream flavors has an arbitrary length, which means that we can remove or add items to it at any time. We know we have six kinds of ice cream, but we can use the `length` field on the array and rely on that instead:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 
 for (let i = 0; i < iceCreamFlavors.length; i++) {
   console.log(iceCreamFlavors[i]);
