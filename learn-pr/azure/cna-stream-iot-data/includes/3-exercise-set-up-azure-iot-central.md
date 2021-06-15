@@ -38,7 +38,7 @@ In this exercise, you'll:
 ## Create an IoT device template
 
 1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, in the **App settings** section, select **Device templates**.
-1. On the **Device templates** page, select **+ New**.
+1. On the **Device templates** page, select **Create a device template**.
 1. On the **Select type** page, review the available device templates, select **IoT Device**, and then select **Next: Customize**.
 
    :::image type="content" source="../media/3-iot-custom-application-device-template-select.png" alt-text="Screenshot of the Select type of device template page of the IoT Central Application portal.":::
