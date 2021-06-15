@@ -197,7 +197,6 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
 1. Place your mouse over the _Static Web Apps_ label, and select the **+** (plus sign).
-
    :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
 
 1. When the command palette opens at the top of the editor, select **Concierge Subscription** and press <kbd>Enter</kbd>.
