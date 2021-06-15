@@ -4,7 +4,7 @@ Organizations use cloud-based apps to spin up solutions quickly to meet their bu
 
 You can get started with Elastic on Azure through the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.ec-azure?tab=Overview) using your existing Azure account for integrated billing or through the search page in Azure portal by searching for “Elastic Cloud” (Elasticsearch managed service).
 
-This directs you to an Elastic signup form, where you will create a new account. If you have previously signed up with an Elastic Cloud account, you must create a new account in order to receive integrated billing. Using your Elastic Cloud account will incur a charge, however you can keep it minimal by selecting the smallest option.
+This directs you to an Elastic signup form, where you will create a new account. If you have previously signed up with an Elastic Cloud account, you must create a new account to receive integrated billing. Using your Elastic Cloud account will incur a charge but you can keep costs minimal by selecting the smallest option.
 
 ## Select a preconfigured solution that’s right for your needs
 
@@ -25,7 +25,7 @@ If you’re unsure what you need when you start, that’s okay. Elastic Cloud le
 
 ## Get the latest Elastic version and updates by default
 
-Elastic Cloud receives the latest versions of Elastic on day one. The latest version will always be selected, enabling you to take full advantage of the latest features and security updates. If you need to deploy a different version that is compatible with existing environments, for example, you can choose to do so.
+Elastic Cloud receives the latest versions of Elastic on day one. That means the latest version will always be selected, enabling you to take full advantage of the latest features and security updates. However, if you need to deploy a different version that is compatible with existing environments, you can choose to do so.
 
 Once deployed, upgrades are just as simple to execute, making it easy to take advantage of newer features — as well as the latest security patches — the day they are released. You should receive email notifications as new releases are made available.
 
@@ -37,11 +37,11 @@ While it is possible to customize your deployment, it is outside the scope of th
 
 ## Estimate how much Elastic you need to start
 
-Elastic Cloud on Azure makes it easy for the users to start at any size of deployment and monitor the resources usage leveraging out of the box deployment performance metrics to make decision to grow or shrink the deployment. The autoscaling feature of Elastic Cloud offloads operational burden from users.
+Elastic Cloud on Azure makes it easy for users to start at any size of deployment and monitor resource usage leveraging out-of-the box deployment performance metrics to make the decision to grow or shrink the deployment. The autoscaling feature of Elastic Cloud offloads operational burden from users.
 
-For use cases where users need to have a better idea of how much Elastic before starting with Elastic Cloud - [Rally](https://github.com/elastic/rally), a macro benchmarking framework by Elastic, is often a tool that users use test the performance of a self-managed Elastic deployment and iteratively tune it be more precise about required capacity.
+For use cases where users need to have a better idea of how much Elastic before starting with Elastic Cloud, [Rally](https://github.com/elastic/rally), a macro benchmarking framework by Elastic, is a tool that many users leverage to test the performance of a self-managed Elastic deployment and iteratively tune it be more precise about required capacity.
 
 There are a few general best practices to note
 
-- **Multi-zone deployments**. By default, Elastic Cloud selects 2 availability zones for your deployment. This is helpful to ensure there is protection against interruptions in the underlying infrastructure if the deployment were only a single zone deployment. You can change this to a single-zone deployment for development or less critical data sources but for most production environments we recommend at minimum 2 zone deployment.
-- **2 Availability Zones for Kibana**. Kibana is the window into Elastic stack – whether it is the data in Elasticsearch that you are exploring or management of the Elastic components. Given its value to all the use-cases of Elastic – we recommend selecting 2 availability zones for Kibana to provide uninterrupted access to Elastic. For the deployments where Kibana isn’t exposed to end users – the default single zone deployment is sufficient.  
+- **Multi-zone deployments**. By default, Elastic Cloud selects 2 availability zones for your deployment. This is helpful to ensure there is protection against interruptions in the underlying infrastructure if the deployment were only a single zone deployment. You can change this to a single-zone deployment for development or less critical data sources but for most production environments we recommend a 2 zone deployment at minimum.
+- **2 Availability Zones for Kibana**. Kibana is the window into Elastic stack – whether it is the data in Elasticsearch that you are exploring or management of the Elastic components. Given its value to all the use-cases of Elastic – we recommend selecting 2 availability zones for Kibana to provide uninterrupted access to Elastic. For the deployments where Kibana isn’t exposed to end users, the default single zone deployment is sufficient.  
