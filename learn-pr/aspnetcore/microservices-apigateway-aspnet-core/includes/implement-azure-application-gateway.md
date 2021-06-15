@@ -30,7 +30,7 @@ You should get something like this:
 
 ![Output from the create-application-gateway script. Creates subnet, creates public IP, and creates Application Gateway.](../media/create-application-gateway.png)
 
-This script will also take a while, so in the meantime, you can continue checking out the [ingresses configuration](#configure-the-existing-ingresses). Take a note of the Application Gateway public IP that is exported as `ESHOP_APPGATEWAYPUBLICIP`. You'll need that later in this unit.
+This script will also take a while to complete, so in the meantime, you can continue checking out the [ingresses configuration](#configure-the-ingresses-to-use-the -AGIC). Take a note of the Application Gateway public IP that is exported as `ESHOP_APPGATEWAYPUBLICIP`. You'll need that later in this unit.
 
 ## Enable the AGIC in the AKS cluster
 

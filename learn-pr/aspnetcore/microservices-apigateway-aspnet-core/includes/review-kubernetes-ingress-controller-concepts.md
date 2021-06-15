@@ -2,7 +2,7 @@ In the previous unit, you developed and deployed a newly created BFF to the kube
 
 ## Route External Traffic using Ingress
 
-Till now, you understood that how the API Gateway pattern can be helpful for your microservices architecture. But you still need a mechanism for external traffic to talk to the services deployed within the Kubernetes cluster. For that, in the `eShopOnContainers` reference application, you'll use *NGINX Ingress Controller*. You'll also explore the *Azure Application Gateway Ingress Controller* instead of the *NGINX Ingress Controller* to route HTTP traffic in the cluster.
+Until now, you understood that how the API Gateway pattern can be helpful for your microservices architecture. But you still need a mechanism for external traffic to talk to the services deployed within the Kubernetes cluster. For that, in the `eShopOnContainers` reference application, you'll use *NGINX Ingress Controller*. You'll also explore the *Azure Application Gateway Ingress Controller* instead of the *NGINX Ingress Controller* to route HTTP traffic in the cluster.
 
 ## Kubernetes Ingress Controller
 
@@ -76,7 +76,7 @@ metadata:
 ...
 ```
 
-The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` just handles the option to deploy to an IP address, because an IP address is not valid as a host name for Kubernetes.
+The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` handles the option to deploy to an IP address, because an IP address is not valid as a host name for Kubernetes. If you want to know more about different component of the above manifest yaml, then refer [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 ## Cloud managed load balancer
 
