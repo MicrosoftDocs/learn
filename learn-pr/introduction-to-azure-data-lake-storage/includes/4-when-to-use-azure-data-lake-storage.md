@@ -84,7 +84,7 @@ By contrast, Azure Data Lake Storage was built with real-time data in mind. Azur
 - Works with semi-structured data.
 - Lets you ingest all your real-time data into your storage account.
 
-Azure Data Lake Storage also enables you to output the ingested streaming data to various Azure services, such as Azure Machine Learning and Azure Stream Analytics.
+Azure Data Lake Storage also enables you to output the ingested streaming data to various Azure services, such as Azure Machine Learning and Azure Synapse Analytics.
 
 ## Apply the criteria
 
