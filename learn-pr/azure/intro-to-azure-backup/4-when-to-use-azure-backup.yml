@@ -9,7 +9,7 @@ metadata:
   ms.date: 4/30/2021
   author: gerryaobrien
   ms.author: gerryo
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 4 # user input: the estimate time to complete the unit
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-backup.md)]
