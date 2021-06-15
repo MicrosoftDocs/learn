@@ -23,9 +23,9 @@ You are running an application powered by SQL Server. The database is running in
 
 ## What will we be doing?
 We'll evaluate the features and capabilities of Azure Backup to help decide if:
-    * Azure Backup can offer a solution for your backup needs
-    * You can back up and restore the data you need for your organization
-    * Azure Backup offers secure storage of your data
+* Azure Backup can offer a solution for your backup needs
+* You can back up and restore the data you need for your organization
+* Azure Backup offers secure storage of your data
 
 ## What is the main goal?
 By the end of this session, you'll be able to decide if Azure Backup is the right solution to consider for your data protection.
