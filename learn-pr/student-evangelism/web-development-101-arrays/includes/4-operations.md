@@ -9,7 +9,7 @@ You can perform many useful operations on an array. Finding and filtering out wh
 Imagine you have your ice cream and someone asks, do you have "Chocolate," and if you do, can I have it? At that point, you can use the `find()` method on the array, as shown here:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 iceCreamFlavors.find(flavor => flavor === "Chocolate") // "Chocolate"
 ```
 
@@ -17,7 +17,7 @@ The `find()` operation runs the function that you provided as input for each ite
 
 ### Filter items with a common property by using `filter()`
 
-What if the customer says, I want ice cream that *contains* "Chocolate," what do you have? Now you need to reorganize your ice cream store a little and start categorizing things. This customer query should return "Chocolate", "Rocky Road," and "Mint" as flavor offerings that contain "Chocolate." With this in mind, you choose to store your array in the following way:
+What if the customer says, I want ice cream that *contains* "Chocolate," what do you have? Now you need to reorganize your ice cream store a little and start categorizing things. This customer query should return "Chocolate", "Neapolitan," and "Mint Chip" as flavor offerings that contain "Chocolate." With this in mind, you choose to store your array in the following way:
 
 ```javascript
 let iceCreamFlavors = [
@@ -25,15 +25,15 @@ let iceCreamFlavors = [
   { name: "Strawberry", type: "fruit"}, 
   { name: "Vanilla", type: "Vanilla"}, 
   { name: "Pistachio", type: "Nuts"}, 
-  { name: "Rocky Road", type: "Chocolate"}, 
-  { name: "Mint", type: "Chocolate"}
+  { name: "Neapolitan", type: "Chocolate"}, 
+  { name: "Mint Chip", type: "Chocolate"}
 ];
 ```
 
 Okay, you've now reorganized your offering. The customer asked for any ice cream containing chocolate, and they seem to want one scoop of each of the three flavors returned by the query. Your best method to use in this case is the `filter()` operation. It takes a filter expression (a function) and returns any item that matches the expression. To help your customer find what they want, use the following code:
 
 ```javascript
-iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Chocolate", type: "Chocolate" }, { name: "Rocky Road", type: "Chocolate"}, { name: "Mint", type: "Chocolate"}]
+iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Chocolate", type: "Chocolate" }, { name: "Neapolitan", type: "Chocolate"}, { name: "Mint Chip", type: "Chocolate"}]
 ```
 
 ### Check a condition by using `some()`
@@ -60,8 +60,8 @@ let iceCreamFlavors = [
   { name: "Strawberry", type: "fruit"}, 
   { name: "Vanilla", type: "Vanilla"}, 
   { name: "Pistachio", type: "Nuts"}, 
-  { name: "Rocky Road", type: "Chocolate"}, 
-  { name: "Mint", type: "Chocolate"}
+  { name: "Neapolitan", type: "Chocolate"}, 
+  { name: "Mint Chip", type: "Chocolate"}
 ];
 iceCreamFlavors.map(flavor => {
   flavor.price = 1;
