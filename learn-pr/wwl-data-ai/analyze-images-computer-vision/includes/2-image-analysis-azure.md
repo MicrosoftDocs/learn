@@ -45,7 +45,7 @@ For example, the tags returned for the Empire State building image include:
 
 The object detection capability is similar to tagging, in that the service can identify common objects; but rather than tagging, or providing tags for the recognized objects only, this service can also return what is known as bounding box coordinates.  Not only will you get the type of object, but you will also receive a set of coordinates that indicate the top, left, width, and height of the object detected, which you can use to identify the location of the object in the image, like this:
 
-![black and white aerial picture of New York City with Empire State Building](../media/black-white-buildings-objects.png)
+![black and white aerial picture of New York City with Empire State Building objects](../media/black-white-buildings-objects.png)
 
 ### Detecting brands
 
