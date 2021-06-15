@@ -9,7 +9,7 @@ First, start your ice cream empire by encoding all the ice cream flavors.
 1. Create a file called _app.js_, and add the following content:
 
    ```javascript
-   let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint", "Raspberry"];
+   let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip", "Raspberry"];
    ```
 
 1. Next, you want to categorize the flavors by type and give each one a price. You end up modifying the code in the following way:
@@ -20,8 +20,8 @@ First, start your ice cream empire by encoding all the ice cream flavors.
     { name: "Strawberry", type: "Fruit", price: 1 }, 
     { name: "Vanilla", type: "Vanilla", price 2 }, 
     { name: "Pistachio", type: "Nuts", price: 1.5 }, 
-    { name: "Rocky Road", type: "Chocolate", price: 2}, 
-    { name: "Mint", type: "Chocolate", price: 1.5 },
+    { name: "Neapolitan", type: "Chocolate", price: 2}, 
+    { name: "Mint Chip", type: "Chocolate", price: 1.5 },
     { name: "Raspberry", type: "Fruit", price: 1},
    ];
    ```
@@ -42,7 +42,7 @@ You want to simulate a few customer scenarios in your code, to make sure that th
 1. Next, you decide to encode a couple of transactions by adding the following code:
 
    ```javascript
-   transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint"], total: 5.5 })
+   transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 })
    transactions.push({ scoops: ["Raspberry", "StrawBerry"], total: 2 })
    transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
    ```
@@ -71,7 +71,7 @@ When you run a business, profits are important, but they aren't the only importa
        acc[scoop]++;
      })
      return acc;
-   }, {}) // { Chocolate: 1, Vanilla: 3, Mint: 1, Raspberry: 1, StrawBerry: 1 }
+   }, {}) // { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, StrawBerry: 1 }
    ```
 
    The preceding code goes through all the transactions. For each transaction, it checks through the scoops and updates a dictionary with how often scoops of each flavor have been purchased. If these sales were a real sales situation, you would probably need to stock up on more vanilla.
