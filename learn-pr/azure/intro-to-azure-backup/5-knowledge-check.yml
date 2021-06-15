@@ -4,7 +4,7 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: "Azure Backup knowledge check" # user input: module title for browser tab and search results
-  description: "" # user input: a description for site search and SEO
+  description: "Knowledge check questions for the Introduction to Azure Backup Module." # user input: a description for site search and SEO
   ms.prod: learning-azure
   ms.date: 4/30/2021
   author: gerryaobrien
