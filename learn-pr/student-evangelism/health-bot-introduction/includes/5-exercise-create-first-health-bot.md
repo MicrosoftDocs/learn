@@ -15,7 +15,7 @@ This unit will walk you through creating your first Azure Health Bot instance.
 
 4. Follow the steps in the resource creation wizard, and provide the required details for your new Health Bot resource.
 
-   :::image type="content" source="../media/5-select-review-&-create.png" alt-text="Screenshot that shows project and instance details.":::
+   :::image type="content" source="../media/5-select-review-and-create.png" alt-text="Screenshot that shows project and instance details.":::
 
    You can optionally add tags to the resource. Complete the creation by selecting **Review + create**.
 
