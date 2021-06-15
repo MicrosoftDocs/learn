@@ -59,7 +59,7 @@ For example, in the following image, a laptop has a Microsoft logo on its lid, w
 
 ### Detecting faces
 
-The Computer Vision service can detect and analyze human faces in an image, including the ability to determine age and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of the Computer Vision service are a subset of those provided by the dedicated [Face Service](https://docs.microsoft.com/azure/cognitive-services/face/). If you need basic face detection and analysis, combined with general image analysis capabilities, you can use the Computer Vision service; but for more comprehensive facial analysis and facial recognition functionality, use the Face service.
+The Computer Vision service can detect and analyze human faces in an image, including the ability to determine age and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of the Computer Vision service are a subset of those provided by the dedicated [Face Service](/azure/cognitive-services/face/). If you need basic face detection and analysis, combined with general image analysis capabilities, you can use the Computer Vision service; but for more comprehensive facial analysis and facial recognition functionality, use the Face service.
 
 The following example shows an image of a person with their face detected and approximate age estimated.
 
@@ -75,7 +75,7 @@ A slightly different categorization is returned for the following image, which i
 
 ![family picture with father, mother, son, and daughter](../media/family-photo.png)
 
-Review the 86-category list [here](https://docs.microsoft.com/azure/cognitive-services/computer-vision/category-taxonomy).
+Review the 86-category list [here](/azure/cognitive-services/computer-vision/category-taxonomy).
 
 ### Detecting domain-specific content
 
@@ -90,7 +90,7 @@ For example, when analyzing the following image for landmarks, the Computer Visi
 
 ### Optical character recognition
 
-The Computer Vision service can use optical character recognition (OCR) capabilities to detect printed and handwritten text in images. This capability is explored in the [Read text with the Computer Vision service](https://docs.microsoft.com/learn/modules/read-text-computer-vision/) module on Microsoft Learn.
+The Computer Vision service can use optical character recognition (OCR) capabilities to detect printed and handwritten text in images. This capability is explored in the [Read text with the Computer Vision service](/learn/modules/read-text-computer-vision/) module on Microsoft Learn.
 
 ### Additional capabilities
 
