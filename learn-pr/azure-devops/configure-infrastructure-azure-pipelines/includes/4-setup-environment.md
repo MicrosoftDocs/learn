@@ -170,9 +170,6 @@ Upload your SSH key pair to Cloud Shell, so that you can connect to your VMs fro
 1. Select your SSH private key, *~/.ssh/ansible_rsa*.
 1. Repeat the process to upload your SSH public key, *~/.ssh/ansible_rsa.pub*.
 1. Switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
-
-    :::image type="content" source="../media/4-code-bash-cloud-shell.png" alt-text="A screenshot of Visual Studio Code showing how to switch between Bash and Azure Cloud Shell.":::
-
 1. In Cloud Shell, create the *~/.ssh* directory and move your SSH key files to that directory:
 
     ```bash
