@@ -26,7 +26,7 @@ iceCreamFlavors[3] // Pistachio
 
 ### Change a value
 
-To change a value in an array, you need to select the item's index and assign it a new value by using the equal sign assignment operator (`=`) and a value to the right of the operator. Our ice cream shop has run out of "Neapolitan," but don't worry, we found some "Butter Pecan":
+To change a value in an array, you need to select the item's index and assign it a new value by using the equal sign assignment operator (`=`) and a value to the right of the operator. Your ice cream shop has run out of "Neapolitan," but don't worry, you've found some "Butter Pecan":
 
 ```javascript
 iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
