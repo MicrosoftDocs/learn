@@ -263,7 +263,7 @@ You're ready to test the functionality of the app. You could containerize it, bu
 1. Close the web browser window displaying **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
 1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-sing-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
+    :::image type="content" source="../media/7-azure-ad-next.js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
 
 1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password **Pa55w.rd1234**.
 
