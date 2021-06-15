@@ -43,11 +43,11 @@ Azure offers a range of valuable tools and calculators to help you prepare a bus
 
 Enter details of your on-premises infrastructure into the tool including servers, databases, storage, and networking, licensing assumptions, and costs.
 
-The Calculator creates a match from Azure Services to create a high-level initial TCO comparison. However, the results of the TCO calculator need to be considered with care since an on-premises server list is often complex, and optimization steps can be taken when considering Azure.
+The Calculator creates a match from Azure Services to create a high-level initial TCO comparison. However, the results of the TCO Calculator need to be considered with care since an on-premises server list is often complex, and optimization steps can be taken when considering Azure.
 
 **Retail Rates Prices API**: Use the Retail Rates Prices API to retrieve retail prices for all Azure services. Previously, the only way that to retrieve prices for Azure services was to either use the Azure Pricing Calculator or use the Azure portal. This API gives you an unauthenticated experience to get retail rates for all Azure services. Use the API to explore prices for Azure services against different regions and different SKUs. The programmatic API can also help you create your own tools for internal analysis and price comparison across SKUs and regions. To learn more, see [Retail Rates Prices API](/rest/api/cost-management/retail-prices/azure-retail-price?azure-portal=true).
 
-**Azure Pricing Calculator**: Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to configure and estimate the costs for Azure products.
+**Azure Pricing calculator**: Use the [Azure Pricing calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to configure and estimate the costs for Azure products.
 
 **Partner toolsets**: Microsoft Partners have access to tools in the [Azure Marketplace](https://azuremarketplace.microsoft.com/home?azure-portal=true) that can help create a migration cost analysis.
 

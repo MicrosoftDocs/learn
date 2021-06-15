@@ -96,8 +96,8 @@ Calculating the gain from investment often requires a second formula that's spec
 
 To calculate earnings, you need two variables:
 
-- Changes (deltas) in revenue.
-- Changes in costs.
+- Changes (deltas) in revenue
+- Changes in costs
 
 :::image type="content" source="../media/formula-gain-from-investment.png" alt-text="Image of a math equation that shows that gain from investment equals revenue deltas plus cost deltas." border="false":::
 
