@@ -9,7 +9,7 @@ metadata:
   ms.date: 4/30/2021
   author: gerryaobrien
   ms.author: gerryo
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |
   [!include[](includes/3-how-azure-backup-works.md)]
