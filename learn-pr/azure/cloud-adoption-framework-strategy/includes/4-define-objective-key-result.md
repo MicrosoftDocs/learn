@@ -84,7 +84,7 @@ Five steps can help your organization move forward with OKRs:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the principles of OKRs that are discussed in this unit to shape your first business outcomes.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the OKR principles discussed in this unit to shape your first business outcomes.
 
 ## Anticipate financial considerations
 
