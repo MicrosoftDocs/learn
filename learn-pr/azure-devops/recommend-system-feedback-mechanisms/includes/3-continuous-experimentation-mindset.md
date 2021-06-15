@@ -22,7 +22,7 @@ One way to mitigate risk in feature releases is to introduce _feature flags_ (al
 
 The following illustrates a typical software delivery timeline:
 
-![A graphic showing a software delivery timeline.](../media/3-software-delivery.png)
+:::image type="content" source="../media/3-software-delivery.png" alt-text="A graphic showing a software delivery timeline.":::
 
 By including feature flags in the continuous delivery process, teams can more efficiently integrate release, deployment, and operational management into the software development cycle.
 

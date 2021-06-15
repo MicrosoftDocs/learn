@@ -12,7 +12,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. Run the following `az group delete` command to delete the resource group that you used in this module, **tailspin-space-game-rg**.
 
@@ -43,7 +43,7 @@ To complete the work item:
 1. In Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Automate performance tests** work item from the **Doing** column to the **Done** column.
 
-    ![A screenshot of Azure Boards, showing the card in the Done column.](../media/6-azure-boards-wi4-done.png)
+    :::image type="content" source="../media/6-azure-boards-wi4-done.png" alt-text="A screenshot of Azure Boards, showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

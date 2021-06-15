@@ -40,7 +40,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Deployment patterns*.
 
-    ![Creating a project through the Azure DevOps Demo Generator.](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -61,7 +61,7 @@ Assigning work in this way gives you a checklist to work from. It gives your tea
 
 Recall that the team settled on these top issues for the current sprint:
 
-![A screenshot of Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -79,7 +79,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![A screenshot of Azure Boards showing the card in the Doing column.](../media/3-azure-boards-wi5-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi5-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -213,7 +213,7 @@ Here you create App Service instances for the three stages that you'll deploy to
 
     You see this page in each environment:
 
-    ![A screenshot of the default home page in Azure App Service.](../../shared/media/app-service-default.png)
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of the default home page in Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -229,7 +229,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![A screenshot of Azure Pipelines, showing the Library menu option.](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -250,7 +250,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
 ## Create a service connection
 
@@ -327,11 +327,11 @@ Here you push the initial configuration to GitHub so that you're up to date with
 1. In Azure Pipelines, go to the build. Then trace the build as it runs.
 1. After the build finishes, go to the summary page.
 
-    ![A screenshot of Azure Pipelines showing the completed stages.](../media/3-stages-complete.png)
+    :::image type="content" source="../media/3-stages-complete.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
     You see that each stage of the pipeline succeeded.
 1. Go to the URL that corresponds to each stage.
 
     You see that the _Space Game_ website successfully deployed to each App Service environment.
 
-    ![A screenshot of a web browser showing the Space Game website in the Dev environment.](../media/3-app-service-dev.png)
+    :::image type="content" source="../media/3-app-service-dev.png" alt-text="A screenshot of a web browser showing the Space Game website in the Dev environment.":::

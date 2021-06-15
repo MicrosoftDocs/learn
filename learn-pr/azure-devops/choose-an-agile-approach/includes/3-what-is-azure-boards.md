@@ -10,7 +10,7 @@ Mara created her own project on Azure Boards using the Basic process. It shows t
 
 Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
 
-![A screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.](../../shared/media/build-initial-tasks.png)
+:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="A screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
 
 **Amita:** Tell us about the Basic process. Are there other options?
 
@@ -40,7 +40,7 @@ Andy can identify with these issues, but the rest of the team has questions.
 Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
   :::column-end:::
   :::column:::
-![An image of a whiteboard containing sticky notes. The contents of the sticky notes are not legible.](../media/3-whiteboard.png)
+:::image type="content" source="../media/3-whiteboard.png" alt-text="An image of a whiteboard containing sticky notes. The contents of the sticky notes are not legible.":::
   :::column-end:::
 :::row-end:::
 

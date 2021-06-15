@@ -12,7 +12,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. Run the following `az group delete` command to delete the resource group that you used in this module, **tailspin-spacegame-web-rg**.
 
@@ -43,7 +43,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 1. Move the **Provision a database in each environment** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column.](../media/8-boards.png)
+    :::image type="content" source="../media/8-boards.png" alt-text="Azure Boards showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

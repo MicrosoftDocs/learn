@@ -66,11 +66,11 @@ Add the highlighted code below to the end of your pipeline. Be sure to match the
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![A screenshot of Azure Pipelines, showing the location of the web site URL.](../media/4-deploy-url.png)
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines, showing the location of the web site URL.":::
 
 1. You see the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
 
-    ![A screenshot of the Space Game web site.](../media/4-space-game.png)
+    :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
     > [!NOTE]
     > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings:LeaderboardFunctionUrl setting is being set correctly.
@@ -87,6 +87,6 @@ Add the highlighted code below to the end of your pipeline. Be sure to match the
     http://tailspin-space-game-leaderboard-4692.azurewebsites.net/api/LeaderboardFunction?pageSize=10
     ```
 
-    ![A screenshot of a web browser showing the JSON response from the leaderboard API Azure Functions app.](../media/4-leaderboard-azure-functions.png)
+    :::image type="content" source="../media/4-leaderboard-azure-functions.png" alt-text="A screenshot of a web browser showing the JSON response from the leaderboard API Azure Functions app.":::
 
 **Andy:** This turned out great! Everyone should be pretty impressed with the potential we've shown here.

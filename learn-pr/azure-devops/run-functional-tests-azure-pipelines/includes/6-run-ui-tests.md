@@ -11,11 +11,11 @@ The NuGet package for Chrome and Firefox installs driver software under the *bin
 1. Install [Microsoft Edge](https://www.microsoft.com/edge?azure-portal=true).
 1. Open Edge and navigate to `edge://settings/help`. Note the version number.
 
-    ![A screenshot of the Microsoft Edge setting page, showing the version number.](/microsoft-edge/media/webdriver-chromium/edge-version.png)
+    :::image type="content" source="/microsoft-edge/media/webdriver-chromium/edge-version.png" alt-text="A screenshot of the Microsoft Edge setting page, showing the version number.":::
 
 1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number.
 
-    ![The Downloads section of the Microsoft Edge Driver page.](/microsoft-edge/media/webdriver-chromium/edge-driver-install.png)
+    :::image type="content" source="/microsoft-edge/media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page.":::
 
 1. Extract the *.zip* file to the *bin/Release/netcoreapp3.1* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
 
@@ -32,7 +32,7 @@ Later in this module, you'll run Selenium tests on Windows Server 2019. The
 
 The section **Selenium Web Drivers** lists the Selenium driver versions that are available for Chrome, Firefox, and Edge. Here's an example:
 
-![A screenshot showing the documentation for the installed Selenium drivers on the build agent.](../media/6-readme-selenium-drivers.png)
+:::image type="content" source="../media/6-readme-selenium-drivers.png" alt-text="A screenshot showing the documentation for the installed Selenium drivers on the build agent.":::
 
 For each driver, you see the environment variable that maps to the location of that driver. For example, `ChromeWebDriver` maps to the location of the Chrome driver.
 
@@ -133,7 +133,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 
     Your variable group resembles this one:
 
-    ![A screenshot of Azure Pipelines, showing the variable group. The group contains four variables.](../media/6-library-variable-group.png)
+    :::image type="content" source="../media/6-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains four variables.":::
 
 ## Modify the pipeline configuration
 
@@ -176,24 +176,24 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     During the build, you see the automated tests run after the website is deployed.
 
-    ![A screenshot of Azure Pipelines, showing the running stages.](../media/6-stages-test-running.png)
+    :::image type="content" source="../media/6-stages-test-running.png" alt-text="A screenshot of Azure Pipelines, showing the running stages.":::
 
 1. After the build finishes, go to the summary page.
 
-    ![A screenshot of Azure Pipelines, showing the completed stages.](../media/6-stages-complete.png)
+    :::image type="content" source="../media/6-stages-complete.png" alt-text="A screenshot of Azure Pipelines, showing the completed stages.":::
 
     You see that the deployment and the UI tests finished successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
-    ![A screenshot of Azure Pipelines, showing the test summary.](../../shared/media/azure-pipelines-build-summary-tests.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-build-summary-tests.png" alt-text="A screenshot of Azure Pipelines, showing the test summary.":::
 
 1. Select the test summary to see the full report.
 
     The report shows that all nine tests have passed. These tests include three tests across three browsers.
 
-    ![A screenshot of Azure Pipelines, showing the full test report.](../media/6-test-summary.png)
+    :::image type="content" source="../media/6-test-summary.png" alt-text="A screenshot of Azure Pipelines, showing the full test report.":::
 
     If any test fails, you see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 

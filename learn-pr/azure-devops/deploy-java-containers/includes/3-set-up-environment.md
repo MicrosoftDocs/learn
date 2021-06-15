@@ -38,7 +38,7 @@ In this module, you use the Azure CLI to spin up the Azure App Service that will
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.

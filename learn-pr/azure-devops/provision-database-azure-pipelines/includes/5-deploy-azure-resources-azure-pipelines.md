@@ -204,7 +204,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![Accessing personal access tokens from Azure DevOps.](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    :::image type="content" source="../../shared/media/azure-devops-profile-personal-access-tokens.png" alt-text="Accessing personal access tokens from Azure DevOps.":::
 
 1. Select **+ New Token**.
 1. For the name, enter *Microsoft Learn - ProvisionDB*.
@@ -278,7 +278,7 @@ Add a variable group and variables to the pipeline.
 
     Your variable group looks similar to this:
 
-    ![Pipeline library variables in a list.](../media/5-library-variables.png)
+    :::image type="content" source="../media/5-library-variables.png" alt-text="Pipeline library variables in a list.":::
 
 ## Allow the service connection to access the key vault
 
@@ -442,7 +442,7 @@ Create the manual approval for the `DBAVerificationApply` stage. You learned abo
 1. Select **Create**.
 1. On the **dbaverificationapply** environment page, in the drop-down menu, select **Approvals and checks**.
 
-    ![Azure Pipelines showing the approvals and checks.](../../shared/media/pipeline-add-check-to-environment.png)
+    :::image type="content" source="../../shared/media/pipeline-add-check-to-environment.png" alt-text="Azure Pipelines showing the approvals and checks.":::
 
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -466,7 +466,7 @@ Create the manual approval for the `DBAVerificationApply` stage. You learned abo
 
     You see that the deployment finished successfully.
 
-    ![Azure Pipelines showing the completed stages.](../media/5-pipeline-stages-overview.png)
+    :::image type="content" source="../media/5-pipeline-stages-overview.png" alt-text="Azure Pipelines showing the completed stages.":::
 
 ## Verify the result
 
@@ -481,7 +481,7 @@ View your website to verify the deployment.
 
     You see the _Space Game_ website deployed to App Service.
 
-    ![The Space Game website.](../media/5-space-game-home-page.png)
+    :::image type="content" source="../media/5-space-game-home-page.png" alt-text="The Space Game website.":::
 
 > [!NOTE]
 > For learning purposes, you use the default network settings here. The default settings make your site accessible from the internet.

@@ -1,5 +1,5 @@
 :::column span="1":::
-![A cartoon depiction of Mara.](../../shared/media/mara.png)
+:::image type="content" source="../../shared/media/mara.png" alt-text="A cartoon depiction of Mara.":::
 
 Mara just joined as a developer and reports to Andy.
 :::column-end:::

@@ -39,7 +39,7 @@ From the Azure DevOps Demo Generator site, to run the template, follow these ste
 1. Select **Sign In**, and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Multistage*.
 
-    ![A screenshot of the Azure DevOps Demo Generator showing the process for creating the project.](../media/4-create-new-project.png)
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing the process for creating the project.":::
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
 
@@ -67,7 +67,7 @@ This work assignment gives you a checklist to work from. It gives other team mem
 
 Recall that the team settled on the following top issues for the current sprint.
 
-![A screenshot of Azure Boards showing the five tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards showing the five tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -86,7 +86,7 @@ To set up the work item:
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![A screenshot of Azure Boards showing the card in the Doing column.](../media/3-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column, after you complete the task.
 
@@ -108,7 +108,7 @@ In this module, you use the Azure CLI to bring up three App Service instances. Y
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in the Cloud Shell. When you first open the Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -240,7 +240,7 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 
     Here's what you see:
 
-    ![A screenshot of a web browser showing the default home page on Azure App Service.](../../shared/media/app-service-default.png)
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of a web browser showing the default home page on Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -256,7 +256,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![A screenshot of Azure Pipelines showing the location of the Library menu option.](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -277,7 +277,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![A screenshot of Azure Pipelines showing the variable group. The group contains three variables.](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
 
 ## Create a service connection
 

@@ -8,7 +8,7 @@ Andy glances at Mara and clears his throat.
 
 Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true)  module.
 
-![A whiteboard showing the value stream map.](../media/7-vsm-whiteboard1.png)
+:::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="A whiteboard showing the value stream map.":::
 
 **Amita:** In several areas, we can improve by cutting down the time we spend. For example, we're still slow at running quality tests.
 
@@ -28,6 +28,6 @@ The team brainstorms and comes up with these tasks:
 
 The team agrees. Mara sets up a sprint iteration and adds these tasks:
 
-![A screenshot of Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
 
 Each of these tasks relates to what you'll do in the following modules. You don't need to add the tasks to Azure Boards now. You'll run a template that populates Azure Boards with these tasks, just as you did in previous modules.

@@ -3,6 +3,6 @@
     Mara is new. She just joined Tailspin as a developer and reports to Andy. She joined Tailspin because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
   :::column-end:::
   :::column:::
-    ![A cartoon depiction of Mara.](../../shared/media/mara.png)
+    :::image type="content" source="../../shared/media/mara.png" alt-text="A cartoon depiction of Mara.":::
   :::column-end:::
 :::row-end:::

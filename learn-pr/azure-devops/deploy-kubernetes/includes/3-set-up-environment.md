@@ -40,7 +40,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Kubernetes*.
 
-    ![A screenshot of the Azure DevOps Demo Generator showing the process to create the project.](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
 
 1. Select **Yes, I want to import this repository** > **Authorize**.
 
@@ -79,7 +79,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![A screenshot of Azure Boards showing the card in the Doing column.](../media/3-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
@@ -100,7 +100,7 @@ In this module, you use the Azure CLI to bring up the resources need to deploy a
 
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -261,7 +261,7 @@ To add the variables:
 
 1. Under **Pipelines**, select **Library**.
 
-    ![A screenshot of Azure Pipelines showing the Library menu option.](../media/3-pipelines-library.png)
+    :::image type="content" source="../media/3-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the Library menu option.":::
 
 1. Select **+ Variable group**.
 
@@ -275,7 +275,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![A screenshot of Azure Pipeline showing the variable group. The group contains one variable.](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipeline showing the variable group. The group contains one variable.":::
 
 ## Create required service connections
 
@@ -327,7 +327,7 @@ Here, you create service connections that enable Azure Pipelines to access your 
 
 1. Under **Pipelines**, select **Environments**.
 
-    ![A screenshot of Azure Pipelines showing the Environments menu option.](../media/3-pipelines-environments.png)
+    :::image type="content" source="../media/3-pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the Environments menu option.":::
 
 1. Select **Create environment**.
 1. Under **Name**, enter *spike*.
@@ -347,7 +347,7 @@ Here you update the Kubernetes *deployment.yml* manifest to point to the contain
 
 1. Open the file at *manifests/deployment.yml* in edit mode.
 
-    ![A screenshot of GitHub showing the location of the edit mode icon.](../media/3-github-edit-mode.png)
+    :::image type="content" source="../media/3-github-edit-mode.png" alt-text="A screenshot of GitHub showing the location of the edit mode icon.":::
 
 1. Change the container image references to use your ACR login server. The following code uses *tailspinspacegame2439.azurecr.io* as an example.
 

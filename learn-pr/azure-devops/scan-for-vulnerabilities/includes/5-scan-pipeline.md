@@ -19,7 +19,7 @@ The SonarCloud Marketplace extension provides the service connection type you ne
 1. On the **Azure DevOps** tab, search for "SonarCloud."
 1. Select **SonarCloud** from the results.
 
-    ![Screenshot of Azure DevOps Marketplace showing search results for "SonarCloud".](../media/3-sonar-cloud-marketplace-extension.png)
+    :::image type="content" source="../media/3-sonar-cloud-marketplace-extension.png" alt-text="Screenshot of Azure DevOps Marketplace showing search results for "SonarCloud".":::
 
 1. Select it and then **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.
@@ -77,7 +77,7 @@ Let's add a few variables to the pipeline.
 
     Your final variables resembles this:
 
-    ![Screenshot of Azure DevOps showing creating task variables: SonarOrganization, SonarProjectKey, and SonarProjectName.](../media/5-create-sonar-cloud-task-variables.png)
+    :::image type="content" source="../media/5-create-sonar-cloud-task-variables.png" alt-text="Screenshot of Azure DevOps showing creating task variables: SonarOrganization, SonarProjectKey, and SonarProjectName.":::
 1. On the menu, select **Save**.
 
 ## Add tasks to the pipeline configuration

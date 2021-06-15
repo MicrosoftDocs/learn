@@ -6,13 +6,13 @@ In the [Manage database changes in Azure Pipelines](/learn/modules/manage-databa
 
 As a reminder, here's the pipeline diagram from that previous module.
 
-![A whiteboard drawing of the pipeline with the two database stages added and six call-out numbers.](../media/2-whiteboard-pipeline.png)
+:::image type="content" source="../media/2-whiteboard-pipeline.png" alt-text="A whiteboard drawing of the pipeline with the two database stages added and six call-out numbers.":::
 
-The _Build_ stage has a job to build the web app and a job to build the database project. ![Call-out 1 on the whiteboard.](../../shared/media/callout-01.png) The database project produces a _.dacpac_ file that is a build artifact.
+The _Build_ stage has a job to build the web app and a job to build the database project. :::image type="content" source="../../shared/media/callout-01.png" alt-text="Call-out 1 on the whiteboard."::: The database project produces a _.dacpac_ file that is a build artifact.
 
-The next stage ![Call-out 2 on the whiteboard.](../../shared/media/callout-02.png) scripts the database changes so that the ![Call-out 3 on the whiteboard.](../../shared/media/callout-03.png) DBA can verify the changes before they're applied.
+The next stage :::image type="content" source="../../shared/media/callout-03.png" alt-text="Call-out 2 on the whiteboard.](../../shared/media/callout-02.png) scripts the database changes so that the ![Call-out 3 on the whiteboard."::: DBA can verify the changes before they're applied.
 
-An ![Call-out 4 on the whiteboard.](../../shared/media/callout-04.png) approval is added to the next stage that ![Call-out 5 on the whiteboard.](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Call-out 6 on the whiteboard.](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ environments.
+An :::image type="content" source="../../shared/media/callout-06.png" alt-text="Call-out 4 on the whiteboard.](../../shared/media/callout-04.png) approval is added to the next stage that ![Call-out 5 on the whiteboard.](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Call-out 6 on the whiteboard."::: deploy to _Dev_, _Test_, and _Staging_ environments.
 
 In that module, you created the infrastructure manually before you ran the pipeline. The _Dev_, _Test_, and _Staging_ stages all had identical infrastructure and shared a common database. As the web application project matures, the infrastructure needs for each of these stages also changes. The team is looking at Resource Manager templates to automate the deployment process in each stage.
 
@@ -54,7 +54,7 @@ The template needs to have information passed in as parameters to have the reusa
 
 **Andy:** We need to create template and parameter files and change the pipeline to use them. The only parameter so far is the resource name suffix that represents the stage we're deploying to. For example, we're using _dev_ for the development stage.
 
-![Whiteboard drawing of the pipeline with the parameters and template files.](../media/2-whiteboard-1.png)
+:::image type="content" source="../media/2-whiteboard-1.png" alt-text="Whiteboard drawing of the pipeline with the parameters and template files.":::
 
 What goes in the template?
 
@@ -64,7 +64,7 @@ What goes in the template?
 
 **Andy:** Great. I'll draw that in.
 
-![Whiteboard drawing of the pipeline with the parameters, template files, and .bacpac file.](../media/2-whiteboard-2.png)
+:::image type="content" source="../media/2-whiteboard-2.png" alt-text="Whiteboard drawing of the pipeline with the parameters, template files, and .bacpac file.":::
 
 **Tim:** But what about the administrator password for the SQL Server instance? I don't want that information to be stored in our repository.
 
@@ -80,7 +80,7 @@ What goes in the template?
 
 So now we have Key Vault and another parameter.
 
-![Whiteboard drawing of the pipeline with the parameters, template files, and key vault.](../media/2-whiteboard-3.png)
+:::image type="content" source="../media/2-whiteboard-3.png" alt-text="Whiteboard drawing of the pipeline with the parameters, template files, and key vault.":::
 
 **Tim:** Wait. The connection string to the database is sensitive data too, and we may need it again just like the administrator password. I suggest we add it to Key Vault as well.
 
@@ -88,7 +88,7 @@ So now we have Key Vault and another parameter.
 
 *Andy updates the whiteboard.*
 
-![Whiteboard drawing of the pipeline with the parameters, template files, and key vault with connection string.](../media/2-whiteboard-4.png)
+:::image type="content" source="../media/2-whiteboard-4.png" alt-text="Whiteboard drawing of the pipeline with the parameters, template files, and key vault with connection string.":::
 
 **Tim:** Speaking of the pipeline, what changes do we need to make there?
 
@@ -100,7 +100,7 @@ Adding a Resource Manager template to the pipeline is going to require a few cha
 
 **Andy:** Right. I'll add pipeline variables to the diagram.
 
-![Whiteboard drawing of the pipeline with the parameters, template files, key vault, and pipeline variables.](../media/2-whiteboard-5.png)
+:::image type="content" source="../media/2-whiteboard-5.png" alt-text="Whiteboard drawing of the pipeline with the parameters, template files, key vault, and pipeline variables.":::
 
 **Mara:** Now we need a task that runs the template. I found this one, [AzureResourceManagerTemplateDeployment@3](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureResourceManagerTemplateDeploymentV3/README.md?azure-portal=true). It has parameters for the template file and the template parameter file.
 
@@ -114,7 +114,7 @@ We also need to think about setting the connection string in the App Service ins
 
 *Andy updates the whiteboard.*
 
-![Whiteboard drawing of the pipeline with the parameters, template files, and key vault completed.](../media/2-whiteboard-6.png)
+:::image type="content" source="../media/2-whiteboard-6.png" alt-text="Whiteboard drawing of the pipeline with the parameters, template files, and key vault completed.":::
 
 **Andy:** If there are no other concerns, then I think we have a plan.
 

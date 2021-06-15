@@ -58,7 +58,7 @@ public class HomePageTest
 
 This diagram shows the `IWebDriver` interface and a few of the classes that implement this interface:
 
-![The IWebDriver interface, its methods, and concrete classes.](../media/5-selenium-webdriver.png)
+:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="The IWebDriver interface, its methods, and concrete classes.":::
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 

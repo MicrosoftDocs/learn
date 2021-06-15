@@ -36,7 +36,7 @@ When she looks at her pile of notes, Mara knows she needs to organize all this i
 A DevOps practice often begins with an understanding of your existing processes. From there, you can evaluate what's working well, what's not, and focus on what to fix first.
 :::column-end:::
 :::column:::
-![An image of a person taking notes on their tablet device.](../media/3-taking-notes.jpg)
+:::image type="content" source="../media/3-taking-notes.jpg" alt-text="An image of a person taking notes on their tablet device.":::
 :::column-end:::
 :::row-end:::
 

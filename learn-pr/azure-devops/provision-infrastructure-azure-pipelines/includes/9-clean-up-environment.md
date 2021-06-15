@@ -14,7 +14,7 @@ To clean up your resource groups:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. Run the following `az group delete` command to delete the resource group for your App Service deployment, **tailspin-space-game-rg**.
 
@@ -73,7 +73,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 1. Move the **Scale out the website** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column.](../media/9-azure-boards-wi1-done.png)
+    :::image type="content" source="../media/9-azure-boards-wi1-done.png" alt-text="Azure Boards showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

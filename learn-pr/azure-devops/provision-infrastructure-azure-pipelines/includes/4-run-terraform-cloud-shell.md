@@ -21,7 +21,7 @@ You can also install and run Terraform locally from a terminal or a PowerShell w
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure Storage resource to persist any files that you create while working in Cloud Shell. When you first open Cloud Shell, it offers to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
@@ -271,7 +271,7 @@ After the plan finishes, Terraform writes the output value that contains the hos
 
     You see the default App Service home page:
 
-    ![App Service home page.](../media/4-default-website.png)
+    :::image type="content" source="../media/4-default-website.png" alt-text="App Service home page.":::
 
     Later, you'll deploy the _Space Game_ website to App Service from Azure Pipelines.
 

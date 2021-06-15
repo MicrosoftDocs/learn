@@ -154,16 +154,16 @@ Append this code to the end of the pipeline. As before, ensure that the task is 
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![Locating the web site URL in Azure Pipelines.](../media/4-deploy-url.png)
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="Locating the web site URL in Azure Pipelines.":::
 
 1. You see the site running on App Service.
 
-    ![The Python application running in a web browser.](../media/4-python-django.png)
+    :::image type="content" source="../media/4-python-django.png" alt-text="The Python application running in a web browser.":::
 
 1. Return to the pipeline summary. You see the details of the pipeline run, which also includes the test results. Scroll down to the stages view to see how the test run in each stage performed. Select one of the test links to view the aggregated performance.
 
-    ![A screenshot of Azure Pipelines showing the location of the link to the test summary.](../media/4-pipeline-run-summary.png)
+    :::image type="content" source="../media/4-pipeline-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the location of the link to the test summary.":::
 
 1. The test run summary provides details about the test runs. If you would like to review specific tests, you may update the filters option to include *Passed* tests. By default it only shows tests that failed or were aborted.
 
-    ![A screenshot of Azure Pipelines showing the test summary. The location of the filter options is highlighted.](../media/4-test-run-summary.png)
+    :::image type="content" source="../media/4-test-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the test summary. The location of the filter options is highlighted.":::

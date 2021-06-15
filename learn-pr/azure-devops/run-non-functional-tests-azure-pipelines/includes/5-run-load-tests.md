@@ -41,11 +41,11 @@ To make the test plan more flexible, your version uses a JMeter property. Think 
 
 Here's how the `hostname` variable is defined in JMeter:
 
-![Setting the hostname variable in Apache JMeter.](../media/5-jmeter-hostname-variable.png)
+:::image type="content" source="../media/5-jmeter-hostname-variable.png" alt-text="Setting the hostname variable in Apache JMeter.":::
 
 Here's how the `hostname` variable uses the [__P](https://jmeter.apache.org/usermanual/functions.html?azure-portal=true#__P) function to read the `hostname` variable.
 
-![Reading the hostname variable in Apache JMeter.](../media/5-jmeter-httprequest-server-name.png)
+:::image type="content" source="../media/5-jmeter-httprequest-server-name.png" alt-text="Reading the hostname variable in Apache JMeter.":::
 
 The corresponding test plan file, *LoadTest.jmx*, specifies this variable and uses it to set the host name.
 
@@ -83,7 +83,7 @@ Let's add the pipeline variables now, before you update your pipeline configurat
 
     Your variable group resembles this one:
 
-    ![A screenshot of Azure Pipelines, showing the variable group. The group contains five variables.](../media/5-library-variable-group.png)
+    :::image type="content" source="../media/5-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains five variables.":::
 
 ## Modify the pipeline configuration
 
@@ -122,20 +122,20 @@ Here you watch the pipeline run. You see the load tests run during _Staging_.
     During _Staging_, you see the load tests run after the website is deployed.
 1. After the build finishes, go to the summary page.
 
-    ![A screenshot of Azure Pipelines, showing the completed stages.](../media/5-stages-complete.png)
+    :::image type="content" source="../media/5-stages-complete.png" alt-text="A screenshot of Azure Pipelines, showing the completed stages.":::
 
     You see that the deployment and the load tests finished successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the load tests have passed.
 
-    ![A screenshot of Azure Pipelines, showing the test summary.](../../shared/media/azure-pipelines-build-summary-tests.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-build-summary-tests.png" alt-text="A screenshot of Azure Pipelines, showing the test summary.":::
 
 1. Select the test summary to see the full report.
 
     The report shows that both tests have passed.
 
-    ![A screenshot of Azure Pipelines, showing the full test report.](../media/5-test-summary.png)
+    :::image type="content" source="../media/5-test-summary.png" alt-text="A screenshot of Azure Pipelines, showing the full test report.":::
 
     If any test were to fail, you would see detailed results of the failure. From those results, you could investigate the source of the failure.
 
@@ -146,11 +146,11 @@ Here you watch the pipeline run. You see the load tests run during _Staging_.
 
     The report proves that these requirements are met. To see more details, select the **Outcome** arrow in the report. Then make sure that only **Passed** is selected.
 
-    ![Filtering passed tests in the test report.](../media/5-tests-outcome-filter.png)
+    :::image type="content" source="../media/5-tests-outcome-filter.png" alt-text="Filtering passed tests in the test report.":::
 
     You see that the **Average Response Time** and **Max Response Time** test cases both succeeded.
 
-    ![The test report, showing two successful test cases.](../media/5-tests-junit-details.png)
+    :::image type="content" source="../media/5-tests-junit-details.png" alt-text="The test report, showing two successful test cases.":::
 
 > [!NOTE]
 > You're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have low traffic requirements, such as apps in a test environment. Because of this plan, the performance of your website might be less than you expect. In practice, you would choose a plan for the **staging** environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads. These run on dedicated virtual machine instances.
