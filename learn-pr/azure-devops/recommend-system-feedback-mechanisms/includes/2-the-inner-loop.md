@@ -22,7 +22,7 @@ The _inner loop_ is the iterative process that developers perform when they writ
 
 Here's a diagram that illustrates this idea:
 
-:::image type="content" source="../media/2-inner-loop.png" alt-text="A drawing of the design build test loop.":::
+:::image type="content" source="../media/2-inner-loop.png" alt-text="A drawing of the inner loop, which includes the code, build, and test phases.":::
 
 Exactly what goes into each developer's inner loop depends on the technologies they work with, the tools they use, and their own preferences.
 
@@ -99,7 +99,7 @@ When you evolve code in two separate repositories where a dependency is present,
 
 Outer loops can include taxes such as code reviews, security scanning, package signing, and release approvals. You don't want to pay that tax every time you add a function to the library that your application needs.
 
-:::image type="content" source="../media/2-inner-loop-5.png" alt-text="A drawing of the design build test loop.":::
+:::image type="content" source="../media/2-inner-loop-5.png" alt-text="A drawing of the outer loop.":::
 
 In practice, this situation can force developers to work around processes or code in order to move forward. Such workarounds can build up taxes that you'll have to pay at some point.
 
