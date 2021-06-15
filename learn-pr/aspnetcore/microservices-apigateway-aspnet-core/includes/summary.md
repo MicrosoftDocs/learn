@@ -1,10 +1,10 @@
 In this module you:
 
 - Created an AKS cluster with an initial e-commerce application.
-- Reviewed some important PKI concepts.
-- Implemented a TLS termination using the NGINX ingress controller and Let's Encrypt.
-- Reviewed the key API Gateway and BFF concepts
-- Deployed the e-commerce application to an AKS cluster with Application Gateway.
+- Reviewed the Application Gateway and Backend for Frontend(BFF) concepts.
+- Implemented a new Web Sales Aggregator BFF to fetch the Sales data based on the Catalog Brand name.
+- Reviewed the key concepts of Kubernetes Ingress and load balance with Azure Application Gateway along with Azure Application Gateway Ingress Controller(AGIC).
+- Deployed the Web Sales Aggregator BFF to the existing AKS cluster and expose the API to the external client using AGIC.
 
 ## Clean up Azure resources
 
