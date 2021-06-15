@@ -3,9 +3,9 @@ uid: learn.language.go-variables-functions-packages.4-packages
 metadata:
   title: Learn about packages
   description: Learn what a package is, how to create one, and how to consume external packages.
-  ms.date: 12/15/2020
+  ms.date: 06/15/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about packages
