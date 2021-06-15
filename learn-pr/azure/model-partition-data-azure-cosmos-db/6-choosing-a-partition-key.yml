@@ -8,6 +8,7 @@ metadata:
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 07
 content: |
   [!include[](includes/6-choosing-a-partition-key.md)]

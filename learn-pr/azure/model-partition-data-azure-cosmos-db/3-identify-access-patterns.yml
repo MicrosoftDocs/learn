@@ -7,7 +7,8 @@ metadata:
   ms.date: 6/14/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 03
 content: |
   [!include[](includes/3-identify-access-patterns.md)]

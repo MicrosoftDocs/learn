@@ -8,6 +8,7 @@ metadata:
   author: markjbrown  
   ms.author: mjbrown  
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Model and partition your data in Azure Cosmos DB  
 summary: Identify key access patterns for a sample e-commerce application. Define the data model for each of the entities, containers to store the data with a partition key that will result in an efficient and scalable data store for this e-commerce application.
 abstract: |

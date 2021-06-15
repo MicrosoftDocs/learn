@@ -9,6 +9,7 @@ metadata:
   author: markjbrown 
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]
