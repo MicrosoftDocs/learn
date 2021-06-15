@@ -7,7 +7,7 @@ The Contoso IT director realizes they have an outdated operational model and old
 You are Contoso's lead system engineer and server administrator. You must evaluate Azure and Microsoft 365 data privacy, protection, and compliance capabilities. You need to determine if Azure services and Microsoft 365 can address the legal department's compliance concerns with respect to the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). In this module, you’ll learn about how to respond to Data Subject Requests  (DSRs).
 
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you’ll know more about:
 

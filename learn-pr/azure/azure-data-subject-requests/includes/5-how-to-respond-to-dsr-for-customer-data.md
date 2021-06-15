@@ -11,7 +11,7 @@ DSR scenarios usually include two broad tasks. The first is to discover and loca
 |To access data|Discover|Access|
 |To rectify data (for the GDPR only)|Discover|Rectify|
 |To restrict data|Discover|Restrict|
-|To delet or to be forgotten|Discover|Delete|
+|To delete or to be forgotten|Discover|Delete|
 |Of portability|Discover|Export/Receive|
 
 Some DSRs are more complex than others. For example, there might be multiple requests from the same person. Data controllers have the right to validate a data subject's identity before responding to a DSR. However, the data subject doesn't have to specify the reason for the DSR.

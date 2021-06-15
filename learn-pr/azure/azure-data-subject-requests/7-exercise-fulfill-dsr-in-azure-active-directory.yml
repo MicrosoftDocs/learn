@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-data-subject-requests.7-exercise-fulfill-a-dsr-in-azure-active-directory
+uid: learn.azure-data-subject-requests.7-exercise-fulfill-dsr-in-azure-active-directory
 title: Exercise-Responding to a DSR in Azure AD
 metadata:
   title: Exercise-Responding to a DSR in Azure AD
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-exercise-fulfill-a-dsr-in-azure-active-directory.md)]
+  [!include[](includes/7-exercise-fulfill-dsr-in-azure-active-directory.md)]

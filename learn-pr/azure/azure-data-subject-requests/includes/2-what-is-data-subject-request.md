@@ -46,9 +46,9 @@ After collecting documents that might be relevant to a DSR, you can perform one 
 
 
 > [!NOTE]
-Under the CCPA, personal information is defined as any information relating to an identified or identifiable person. There's no distinction between a person's private, public, or work role. However, the CCPA also includes family and household data. Under the GDPR, the defined term personal information corresponds to personal data.
+> Under the CCPA, personal information is defined as any information relating to an identified or identifiable person. There's no distinction between a person's private, public, or work role. However, the CCPA also includes family and household data. Under the GDPR, the defined term personal information corresponds to personal data.
 
-The following units in this module introduce some of the technical procedures that you can use to respond to DSRs when the personal data resides in the Microsoft cloud.
+> The following units in this module introduce some of the technical procedures that you can use to respond to DSRs when the personal data resides in the Microsoft cloud.
 
 ## DSR terminology
 

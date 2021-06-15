@@ -1,4 +1,4 @@
-Similar to the Azure DSR response, the Office 365 DSR response has a scope boundary. Office 365 services are available in different environments, which can impact scope. For example, what if an Office 365 customer receives a DSR in Germany? It would be fulfilled in the national cloud, Office 365 Germany. Another similarity between DSR responses for Azure and Office 365 is that the process of responding to DSRs consists of different parts. These differing parts enable easier fulfillment.
+Similar to the Azure DSR response, the Office 365 DSR response has a scope boundary. Office 365 services are available in different environments, which can impact scope. Another similarity between DSR responses for Azure and Office 365 is that the process of responding to DSRs consists of different parts. These differing parts enable easier fulfillment.
 
 ## DSR response scope for Office 365 applications
 
@@ -25,13 +25,13 @@ In a hybrid deployment, the scope of a DSR will vary based on the data that's re
 
 ## DSR response overview for Office 365 applications
 
-There are four parts to the guidance for responding to a DSR in Office 365. The first three parts summarize the technical capabilities available to an organization that’s responding to a DSR. The fourth part provides resources for responding to DSRs in other Microsoft services and situations. The high-level response tasks differ based on the data type, application, and request type. For people using certain Office 365 products and services in limited scenarios, Microsoft is the data controller. 
+There are four parts to the guidance for responding to a DSR in Office 365. The first three parts summarize the technical capabilities available to an organization that’s responding to a DSR. The fourth part provides guidance on how data subjects can submit DSRs to Microsoft in limited scenarios where Microsoft is the data controller when certain Office products and services are used. 
 
 ### Part 1: Responding to DSRs for customer data
 
 Guidance on responding to a DSR for customer data includes:
 
-**Using the Content Search eDiscovery tool to respond to DSRs.** The applications in Microsoft 365 and Office 365 that support this tool are:
+**Using the Content Search eDiscovery tool to access data for DSRs.** The applications in Microsoft 365 and Office 365 that support this tool are:
 
 The applications that support content search in Microsoft 365 and Office 365 are:
 
@@ -52,13 +52,13 @@ The applications that support content search in Microsoft 365 and Office 365 are
 - Visio
 - Word
 
-> [!NOTES]
+> [!NOTE]
 > 
 > **Discovery of personal data** Microsoft estimates that more than 90 percent of an organization's data stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
 
 > Users authoring documents in these services usually store them on a SharePoint Online site, in their OneDrive for Business account, or in their Exchange Online mailbox. You can use the Content Search eDiscovery tool to find documents and mailbox items that might be relevant to the DSR you're investigating. The searches will also include the sites and mailboxes associated with Microsoft 365 Groups, Teams, and Education assignments. Limit the search. You can use compliance boundaries together with eDiscovery cases to limit the searchable content locations in an investigation. 
 
-**Using in-app functionality to respond to DSRs.** You can use in-app functionality in these applications to find customer data:
+**Using in-app functionality to access data for DSRs.** You can use in-app functionality in these applications to find customer data:
 
 - 365 Apps for Business
 - Access
@@ -98,18 +98,11 @@ The applications that support content search in Microsoft 365 and Office 365 are
 
 ### Part 2: DSR responses based on Office 365-generated insights
 
-Office 365 offers analytics tools for both users and organizations. Delve and MyAnalytics provide insights for users including how they spend their time. The Workplace Analytics service provides insights to businesses about how people spend their time. These contain personal information, so they can be the source of a DSR.  
-Responding to a DSR for MyAnalytics or Workplace Analytics can include the following steps:
-
-1.	Access and export.
-2.	Rectify.
-3.	Restrict.
-4.	Delete.
-
+Office 365 offers analytics tools that provide insights for both users and organizations that have opted to use them. Delve and MyAnalytics provide insights for users including how they spend their time. The Workplace Analytics service provides insights to businesses about how people spend their time. These contain personal information, so they can be the source of a DSR.
 
 ### Part three: Responding to DSRs for system-generated logs
 
-The GDPR might require an organization to provide system-generated logs if they contain a data-subject's personal information. Examples include:
+Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR's broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
 
 - Product and service usage data (user logs).
 - User search requests and query data.
