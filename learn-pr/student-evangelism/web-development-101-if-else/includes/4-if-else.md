@@ -52,7 +52,7 @@ if (currentMoney >= laptopPrice){
 
 Because the value of `currentMoney` is lower than the value of `laptopPrice`, the statement within the `if` clause will evaluate to false. The statement within the `if` clause won't run.
 
-## If...Else statement
+## If...else statement
 
 The `else` statement will run the code in between its blocks when the `if` condition evaluates to false. Using `else` is optional.
 

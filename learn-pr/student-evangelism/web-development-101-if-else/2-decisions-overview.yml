@@ -23,10 +23,10 @@ quiz:
           explanation: Correct! This operator indicates equality.
         - content: Strict equality
           isCorrect: false
-          explanation: Incorrect- this operator indicates equality, but it is not strict.
+          explanation: Incorrect. This operator indicates equality, but it isn't strict.
         - content: Assignment
           isCorrect: false
-          explanation: Incorrect- this operator does not mean assignment.
+          explanation: Incorrect. This operator doesn't mean assignment.
     - content: A comparison in JavaScript returns what type?
       choices:
         - content: boolean
@@ -34,10 +34,10 @@ quiz:
           explanation: Correct! A comparison in JavaScript uses true/false.
         - content: "null"
           isCorrect: false
-          explanation: Incorrect- a comparison would not return null.
+          explanation: Incorrect. A comparison wouldn't return null.
         - content: string
           isCorrect: false
-          explanation: Incorrect- a string type will not be returned for a comparison.
+          explanation: Incorrect. A string type won't be returned for a comparison.
     - content: "The ! symbol in JavaScript means:"
       choices:
         - content: Logical Not
@@ -46,7 +46,7 @@ quiz:
             expression.
         - content: Important
           isCorrect: false
-          explanation: Incorrect- this is not the meaning of the symbol.
+          explanation: Incorrect. This isn't the meaning of the symbol.
         - content: Equals
           isCorrect: false
-          explanation: Incorrect- this is not the meaning of the symbol.
+          explanation: Incorrect. This isn't the meaning of the symbol.
