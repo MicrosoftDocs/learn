@@ -22,9 +22,11 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-case-studies.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
 products:
 - azure
 - azure-sql-database
