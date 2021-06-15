@@ -7751,6 +7751,46 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/arm-template-test/2-what-if.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-whatif/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/3-exercise-what-if.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-whatif/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/4-test-toolkit.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/2-test-toolkit/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/5-exercise-test-toolkit.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/3-exercise-test-toolkit/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/6-custom-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/4-custom-tests/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/7-exercise-custom-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/5-exercise-custom-tests/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-test/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/arm-template-test/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/",
       "redirect_document_id": false
@@ -7789,6 +7829,66 @@
       "source_path": "learn-pr/azure/run-web-app-background-task-with-webjobs/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/",
       "redirect_document_id": false
-    }
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/0-introduction/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/5-exercise-structs-enums.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4b-exercise-functions/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/6-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4a-functions/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/language/rust-understand-common-concepts/10-control-flow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/3a-if-else-expressions/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-python/3-exercise-create-your-first-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/3-repl/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-python/4-variables-and-data-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/4-variables/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-python/5-comments.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/5-exercise-output/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-python/6-reading-input.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/6-input/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/student-evangelism/intro-to-python/7-exercise-reading-input.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/7-exercise-input/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/student-evangelism/intro-to-python/8-exercise-build-a-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
+      "redirect_document_id": true
+    },
+    { 
+      "source_path": "learn-pr/student-evangelism/intro-to-python/9-solution-build-a-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/student-evangelism/intro-to-python/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
+      "redirect_document_id": false
+    }  
   ]
 }
