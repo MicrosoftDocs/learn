@@ -39,7 +39,7 @@ You want to simulate a few customer scenarios in your code, to make sure that th
    let transactions = []
    ```
 
-1. Next, you decide to encode a couple of transactions by adding the following code:
+1. Next, you decide to encode transactions by adding the following code:
 
    ```javascript
    transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 })
@@ -47,7 +47,7 @@ You want to simulate a few customer scenarios in your code, to make sure that th
    transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
    ```
 
-   Okay, that simulates three customer interactions. Next, you want to analyze the result.
+   That simulates three customer interactions. Next, you want to analyze the result.
 
 ## Analyze your business
 
