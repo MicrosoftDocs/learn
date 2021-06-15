@@ -30,7 +30,7 @@ After you've mapped the compliance standards to Azure Policy definitions, you mu
 
 It's crucial for an enterprise to have visibility into what's happening within its enterprise estate. Security monitoring and audit logging of Azure platform services are key components of an enterprise-scale architecture.
 
-For insights and analysis of the changes that occur within an enterprise estate, you must configure all subscriptions to export the Azure activity log to Log Analytics. There's no data-ingestion or data-retention charge for activity-log data stored in a Log Analytics workspace. If an organization is required to retain audit logs for more than two years, we recommend also exporting the activity log to Azure Storage.
+For insights and analysis of the changes that occur within an enterprise estate, you must configure all subscriptions to export the Azure activity log to Log Analytics. There's no data-ingestion or data-retention charge for activity-log data stored (for 90 days) in a Log Analytics workspace. If an organization is required to retain audit logs for more than two years, we recommend also exporting the activity log to Azure Storage.
 
 Azure AD reports provide another important view into activity within the enterprise estate. Review the reports regularly as part of your security-monitoring processes. The reports include *security reports* and *activity reports*. Security reports provide insight into an organization's identities, and activity reports provide insight into user behaviors.
 

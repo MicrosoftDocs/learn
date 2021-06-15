@@ -19,8 +19,8 @@ abstract: |
 prerequisites: |
   - Knowledge of HTML, CSS, JavaScript, Git, and npm
   - Some experience with React
-iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+iconUrl: /learn/achievements/react/react-state-events.svg
+ratingEnabled: true
 levels:
 - beginner
 roles:

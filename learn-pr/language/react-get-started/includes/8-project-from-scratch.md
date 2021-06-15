@@ -1,4 +1,4 @@
-In this module, we used a starter project to get up and running quickly. This setup allowed us to focus on React and some of the new syntax. You're free to use the starter project for your own work!
+In this module, we used a starter project to get up and running quickly. This setup allowed us to focus on React and some of the new syntax. You're free to use the starter project for your own work.
 
 Of course, you might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project.
 
@@ -30,7 +30,7 @@ We need three main packages for our application:
 
 In an empty directory, start by installing the necessary components by using npm. Then configure Snowpack and add the scripts to the *package.json* file.
 
-1. Open a terminal or command window. Then run the following command to create the directory and the *package.json* file for npm.
+1. Open a terminal or command window. Then, run the following command to create the directory, and the *package.json* file for npm.
 
     ```bash
     # Windows
@@ -55,7 +55,7 @@ In an empty directory, start by installing the necessary components by using npm
     ```
 
     > [!NOTE]
-    > Snowpack is a *dev dependency*. That is, it's not required for production, because it generates the necessary JavaScript and HTML files during the build process.
+    > Snowpack is a *dev dependency*. That is, it's not required for production because it generates the necessary JavaScript and HTML files during the build process.
 
 1. Open the directory in Visual Studio Code by running the following command.
 
@@ -65,10 +65,12 @@ In an empty directory, start by installing the necessary components by using npm
 
 ## Set up Snowpack
 
-One of the advantages of a tool like Snowpack is that it's generally self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.json* file.
+One of the advantages of a tool like Snowpack is that it's generally self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.js* file.
 
 1. In Visual Studio Code, create a new file by selecting **File** > **New File**.
-1. Name the file *snowpack.config.json*.
+
+1. Name the file *snowpack.config.js*.
+
 1. In the new file, add the following code.
 
     ```javascript
@@ -87,18 +89,19 @@ This code tells Snowpack to use our *public* folder as the root of the applicati
 To support our development work, we'll use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
 
 1. In Visual Studio Code, open the *package.json* file.
+
 1. At the bottom of the file, above the last curly bracket (`}`), add the following code. This code creates the start and build scripts.
 
     ```json
     {
-        "scripts": [
+        "scripts": {
             "start": "snowpack dev",
             "build": "snowpack build"
-        ]
+        }
     }
     ```
 
-    Your *entire* file should now look like this code:
+    Your *entire* file should now look like the following code.
 
     ```json
     {

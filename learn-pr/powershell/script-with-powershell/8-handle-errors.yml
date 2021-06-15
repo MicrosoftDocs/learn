@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.8-handle-errors
+title: Error handling
+metadata:
+  title: Error handling
+  description: This unit describes how to implement error handling by using Try, Catch, and Finally blocks. It also shows how to throw errors.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/04/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-handle-errors.md)]

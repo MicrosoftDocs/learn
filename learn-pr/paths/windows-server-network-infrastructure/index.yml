@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.windows-server-network-infrastructure
+metadata:
+  title: Windows Server Network Infrastructure
+  description: Windows Server Network Infrastructure
+  ms.date: 03/05/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Windows Server Network Infrastructure
+prerequisites: |
+  To get the best experience from this learning path, you should have knowledge and experience of:
+  - Active Directory Domain Services concepts and technologies.
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Windows client operating systems such as Windows 10.
+  - Windows PowerShell basics.
+  - Basic security best practices.
+summary: |
+  Learn to implement and manage networking services in Windows Server 2019. Learn to deploy and manage DHCP, secure DNS, and implement IP Address Management (IPAM) and Web Application Proxy.
+iconUrl: /learn/achievements/windows-server-network-infrastructure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+modules:
+- learn.wwl.deploy-manage-dhcp
+- learn.wwl.implement-windows-server-dns
+- learn.wwl.secure-windows-server-dns
+- learn.wwl.implement-ip-address-management
+- learn.wwl.implement-remote-access
+trophy:
+  uid: learn.wwl.windows-server-network-infrastructure.trophy

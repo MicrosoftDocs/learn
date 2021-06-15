@@ -1,5 +1,4 @@
-
-You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q# in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
+You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q# in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
@@ -7,12 +6,12 @@ In this unit, you learn how to submit a job to Azure Quantum.
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest/?azure-portal=true) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](/cli/azure/install-azure-cli) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
    ```azurecli
-   az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
+   az extension add -n quantum
    ```
 
 ## Create a workspace
@@ -36,12 +35,13 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
    - **Region**: The region for the workspace.
    - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
 
-   :::image type="content" source="../media/3-azure-quantum-preview-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
+   :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
 
    > [!NOTE]
-   > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
+   > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
 
 1. After you complete the information, select the **Providers** tab to add providers to your workspace. A provider gives you access to a quantum service, which can be quantum hardware, a quantum simulator, or an optimization service. In this case, we're interested in quantum hardware. We'll use the IonQ provider example, but the steps should be valid for other quantum hardware providers.
+To learn more about providers, see [List of quantum computing targets on Azure Quantum](/azure/quantum/qc-target-list).
 
 1. Add at least the IonQ provider, and then select **Review + create**.
 
@@ -49,8 +49,8 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
 
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the workspace." border="false":::
 
-> [!NOTE] 
-> This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
+> [!NOTE]
+> This tutorial is using the IonQ targets as a [Quantum Processing Unit](/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](/azure/quantum/install-overview-qdk).
 
 ## Set up the project and write your program
 
@@ -60,26 +60,13 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. Enter **Q#: Create New Project**.
 
-1. Select **Standalone console application**.
+1. Select **Quantum application targeted to IonQ backend**.
 
 1. Select a directory to hold your project, such as your home directory. Enter **MyFirstJob** as the project name, and then select **Create Project**.
 
 1. From the window that appears at the bottom, select **Open new project**.
 
 1. You should see two files: the project file and *Program.qs*, which contains starter code.
-
-1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code:
-
-    ```xml
-    <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <ExecutionTarget>ionq.qpu</ExecutionTarget>
-      </PropertyGroup>
-    </Project>
-    ```
-
-   The `yy.yy.yyyyyyyy` part is the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
 
 1. Replace the contents of *Program.qs* with the program:
 
@@ -91,18 +78,35 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in, for example:
+1. Log in to Azure by opening a command prompt, and running the following command:
+
+   ```azcli
+   az login
+   ```
+
+   A window in your browser will open for you to introduce your credentials.
+
+1. In case you have more than one subscription, you should choose the active subscription:
+
+   ```azcli
+   az account set --subscription <My Subscription ID>
+   ```
+
+1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in and the location of the workspace, for example:
 
    ```dotnetcli
-   az quantum workspace set -g MyResourceGroup -w MyWorkspace -o table
+   az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
+
+   > [!NOTE]
+   > If you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
 
    You should obtain the data of your workspace as output.
 
    ```output
-   Location     Name         ProvisioningState    ResourceGroup    Usable  
-   -----------  -----------  -------------------  ---------------  --------
-   westus       MyWorkspace  Succeeded            MyResourceGroup  Yes  
+    Location    Name         ProvisioningState    ResourceGroup    StorageAccount      Usable
+    ----------  -----------  -------------------  ---------------  ------------------  --------
+    MyLocation  MyWorkspace  Succeeded            MyResourceGroup  /subscriptions/...  Yes
 
    ```
 
@@ -115,10 +119,10 @@ Next, you prepare your environment to submit the job by using the workspace you 
    You should obtain a list like this one:
 
    ```output
-   Provider    Target-id                                       Status     Average Queue Time
-   ----------  ----------------------------------------------  ---------  --------------------
-   ionq        ionq.qpu                                        Available  0
-   ionq        ionq.simulator                                  Available  0
+   Provider    Target-id       Current Availability   Average Queue Time
+   ---------   --------------  --------------------   -------------------
+   ionq        ionq.qpu        Available              0
+   ionq        ionq.simulator  Available              0
    ```
 
     > [!NOTE]
@@ -127,8 +131,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
 In this case, we see that IonQ has two different targets, a quantum processing unit (QPU) and a simulator. The QPU is a trapped ion quantum computer with 11 qubits. The simulator is a GPU-accelerated simulator that supports up to 29 qubits with the same characteristics as the QPU, which makes it perfect to test jobs before running them on actual quantum hardware.
 
 > [!NOTE]
-> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/).
-
+> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](/learn/modules/solve-quantum-inspired-optimization-problems/).
 
 ## Simulate the program
 
@@ -138,8 +141,11 @@ Run your program with `az quantum execute --target-id ionq.simulator -o table`. 
 
    ```azurecli
    az quantum execute --target-id ionq.simulator -o table
+   ```
 
-   ..
+You should obtain the following output:
+
+   ```output
    Result    Frequency
    --------  -----------  -------------------------
    0         0.50000000   ▐██████████             |
@@ -155,15 +161,15 @@ To run the program on hardware, we'll use the asynchronous job submission comman
 1. Run in the Azure command line:
 
    ```azurecli
-   az quantum job submit --target-id ionq.qpu -o table
+   az quantum job submit --target-id ionq.qpu --job-name MyQuantumRandomBit -o table
    ```
 
    Like the `execute` command, this command will compile and submit your program, but it won't wait until the execution is complete. We recommend this pattern for running against hardware, because you might need to wait a while for your job to finish. To get an idea of how long, you can run `az quantum target list -o table` as described. You should obtain something like this example:
 
    ```output
-   Name        Id                                    Status    Target    Submission time
-   ----------  ------------------------------------  --------  --------  ---------------------------------
-   QuantumRNG  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
+   Name                Id                                    Status    Target    Submission time
+   ------------------  ------------------------------------  --------  --------  ---------------------------------
+   MyQuantumRandomBit  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
    ```
 
 1. Track the status of your job by using the `az quantum job show` command. To check on the status, use the `az quantum job show` command. Make sure to replace the `job-id` parameter with the `Id` output by the previous command:
@@ -204,17 +210,20 @@ To change the number of shots, you need to specify a different value for the arg
 1. Set the number of shots to 1:
 
     ```azurecli
-    az quantum job submit --target-id ionq.qpu --shots 1 -o table
+    az quantum job submit --target-id ionq.qpu --job-name MyQuantumRandomBit2 --shots 1 -o table
     ```
 
 1. After the status of the job changes to `Succeeded`, extract the output of the job:
 
     ```azurecli
     az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
+    ```
+
+   ```azurecli
     Result    Frequency
     --------  -----------  -------------------------
     1         1.00000000   ▐████████████████████   |
-    ```
+   ```
 
 In this case, we obtained `1` as the result of the bit generated by measuring the superposed qubit in the ion-trapped quantum computer.
 

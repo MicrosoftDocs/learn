@@ -57,17 +57,17 @@ The downside to database-level rules is that you can only use IP address rules. 
 
 Lastly, database-level firewall rules can be created and manipulated only through T-SQL.
 
-## Restricting network access in practice
+## Restrict network access in practice
 
 Whenever possible, as a best practice, use database-level IP firewall rules to enhance security and to make your database more portable. Use server-level IP firewall rules for administrators and when you have several databases with the same access requirements, and you don't want to spend time configuring each database individually.
 
 Let's take a look at how these work in practice, and how you can secure network access to only allow what is necessary. Recall that we created an Azure SQL Database logical server, a database, and the _appServer_ Linux VM acting as an application server. This scenario is often seen when a database has been migrated to Azure SQL Database and resources inside of a virtual network need to access it. The firewall feature of Azure SQL Database can be used in many scenarios, but this is an example that has practical applicability and demonstrates how each of the rules functions.
 
-Let's go through the firewall settings and see how they work. We'll use both the cloud shell and the portal for these exercises.
+Let's go through the firewall settings and see how they work. We'll use both the portal and Cloud Shell for these exercises.
 
 The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
-1. In the cloud shell, SSH into your Linux VM if you aren't already connected.
+1. In Cloud Shell, SSH into your Linux VM if you aren't already connected.
 
     ```bash
     ssh nnn.nnn.nnn.nnn
@@ -91,15 +91,15 @@ Let's grant access so we can connect.
 
 ### Use the server-level allow access to Azure services rule
 
-Since our VM has outbound internet access, we can use the **Allow access to Azure services** rule to allow access from our VM.
+Because our VM has outbound internet access, we can use the **Allow access to Azure services** rule to allow access from our VM.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the **Search resources, services, and docs** box at the top, search for your database server name, `serverNNNN`. Select the SQL server.
 
-1. In the SQL server panel, in the **Security** section in the left menu, select **Firewalls and virtual networks**.
+1. In the SQL server pane, in the left menu pane, under **Security**, select **Firewalls and virtual networks**.
 
-1. Set **Allow access to Azure services** to **YES** and click **Save**.
+1. Set **Allow access to Azure services** to **YES**, and select **Save**.
 
 1. Back in your SSH session, let's try to connect to your database again.
 
@@ -131,15 +131,15 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
     > When running T-SQL commands such as the following, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
     ```sql
-    EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '[From IP Address]', '[To IP Address]';
+    EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '[From IP Address]', '[To IP Address]';
     GO
     ```
 
-    Once the command completes, type `exit` to exit sqlcmd. Remain connected via SSH.
+    After the command completes, enter `exit` to exit sqlcmd. Remain connected via SSH.
 
-1. In the portal, on the **Firewalls and virtual networks** panel for your SQL server, set **Allow access to Azure services** to **OFF** and click **Save**. This will disable access from all Azure services, but we'll still be able to connect since we have a database-level IP rule for our server.
+1. In the portal, on the **Firewalls and virtual networks** pane for your SQL server, set **Allow access to Azure services** to **OFF**, and select **Save**. This will disable access from all Azure services, but we'll still be able to connect because we have a database-level IP rule for our server.
 
-1. Back in cloud shell, in the VM you are connected via SSH to, try connecting to your database again.
+1. Back in Cloud Shell, in the VM you are connected via SSH to, try connecting to your database again.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
@@ -162,54 +162,54 @@ Let's now use a server-level IP rule to restrict the systems that can connect.
 1. While still at the sqlcmd prompt, run the following command to delete the database-level IP address rule.
 
     ```sql
-    EXECUTE sp_delete_database_firewall_rule N'Allow appServer database level rule';
+    EXECUTE sp_delete_database_firewall_rule N'My Firewall Rule';
     GO
     ```
 
-    Once the command completes, type `exit` to exit sqlcmd. Remain connected via SSH.
+    After the command completes, enter `exit` to exit sqlcmd. Remain connected via SSH.
 
-1. Back in the portal, on the **Firewalls and virtual networks** panel for your SQL server,  add a new rule with a **RULE NAME** of **Allow appServer** and with the **START IP** and **END IP** set to the public IP address of the _appServer_ VM.
+1. Back in the portal, on the **Firewalls and virtual networks** pane for your SQL server, add a new rule with a **RULE NAME** of **Allow appServer** and with the **START IP** and **END IP** set to the public IP address of the _appServer_ VM.
 
-    Click **Save**
+1. Select **Save**.
 
     ![Screenshot of the Azure portal showing the server firewall rule creation with a described IP restriction configuration added.](../media/2-ip-address-rule.png)
 
-1. Back in cloud shell, on your _appServer_ VM, try connecting to your database again.
+1. Back in Cloud Shell, on your _appServer_ VM, try connecting to your database again.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
-    At this point you should be able to connect, since the server-level rule is allowing access based on the public IP address of the _appServer_ VM. If it's successful, you should see a sqlcmd prompt.
+    At this point, you should be able to connect, because the server-level rule is allowing access based on the public IP address of the _appServer_ VM. If it's successful, you should see a sqlcmd prompt.
 
     ```sql
     1>
     ```
 
-    Type `exit` to exit sqlcmd. Remain connected via SSH.
+    Enter `exit` to exit sqlcmd. Remain connected via SSH.
 
 So we've isolated connectivity to only the IP address we specified in the rule. This works great, but can still be an administrative challenge as you add more systems that need to connect. It also requires a static IP or an IP from a defined IP address range; if the IP is dynamic and changes, we'd have to update the rule to ensure connectivity. The _appServer_ VM is currently configured with a dynamic IP address, so this IP address is likely to change at some point, breaking our access as soon as that happens. Let's now look at how virtual network rules can be beneficial in our configuration.
 
 #### Use a server-level virtual network rule
 
-In this case, since our VM is running in Azure, we can use a server-level virtual network rule to isolate access and make it easy to enable future services to gain access to the database.
+In this case, because our VM is running in Azure, we can use a server-level virtual network rule to isolate access, and make it easy to enable future services to gain access to the database.
 
-1. Back in the portal and still on the **Firewalls and virtual networks** panel, in the **Virtual networks** section click the **+ Add existing virtual network** option.
+1. Back in the portal and still on the **Firewalls and virtual networks** pane, under **Virtual networks**, select **Add existing virtual network**.
 
-1. The Create/Update virtual network rule dialog will show. Set the following values:
+1. The Create/Update virtual network rule dialog appears. Set the following values.
 
-    | _Setting_                        | _Value_                                  |
+    | Setting                          | Value                                    |
     | -------------------------------- | ---------------------------------------- |
     | **Name**                         | Leave the default value                  |
     | **Subscription**                 | Concierge Subscription                   |
     | **Virtual network**              | appServerVNET                            |
     | **Subnet name / Address prefix** | appServerSubnet / 10.0.0.0/24            |
 
-    Click **Enable** to enable the service endpoint on the subnet, then **OK** once the endpoint is enabled to create the rule.
+1. Select **Enable** to enable the service endpoint on the subnet, then select **OK** after the endpoint is enabled to create the rule.
 
-1. Now, let's remove the IP address rule. Click the **...** next to your **Allow appServer** rule and click **Delete**, then click **Save**.
+1. Now, let's remove the IP address rule. Select the **...** next to your **Allow appServer** rule, select **Delete**, and then select **Save**.
 
-1. Back in cloud shell, on your _appServer_ VM, try connecting to your database again.
+1. Back in Cloud Shell, on your _appServer_ VM, try connecting to your database again.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30

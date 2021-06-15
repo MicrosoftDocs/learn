@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/28/2020
+  ms.date: 03/17/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "Azure Resource Manager templates"
       isCorrect: false
       explanation: "That's incorrect. Azure Resource Manager templates are not used for testing the underlying infrastructure for deploying SAP."
-  - content: "For any SAP production system installed on Azure, it is required that you operate in Virtual Private Networks which are connected to your datacenters using what form of connectivity?"
+  - content: "For any SAP production system installed on Azure, it is required that you operate in Virtual Private Networks connected to your datacenters using what form of connectivity?"
     choices:
     - content: "SAPRouter"
       isCorrect: false

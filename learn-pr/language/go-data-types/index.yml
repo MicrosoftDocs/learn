@@ -3,7 +3,7 @@ uid: learn.language.go-data-types
 metadata:
   title: Use data types and structs, arrays, slices, and maps in Go
   description: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
-  ms.date: 01/20/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   - Be able to run Go applications by using the terminal prompt.
   - Have knowledge of basic data types like `string`, `int`, and `boolean`.
   - Have knowledge of how to write basic data control flows like `if` and `for` statements.
-iconUrl: /learn/achievements/go-data-types.svg
+iconUrl: /learn/achievements/go/go-data-types.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,7 @@ roles:
 - student
 products:
 - azure
+- vs-code
 units:
 - learn.language.go-data-types.0-introduction
 - learn.language.go-data-types.1-arrays
@@ -43,3 +44,4 @@ units:
 - learn.language.go-data-types.8-summary
 badge:
   uid: learn.language.go-data-types.badge
+hidden: true

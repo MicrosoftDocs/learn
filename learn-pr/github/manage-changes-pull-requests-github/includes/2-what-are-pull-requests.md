@@ -10,7 +10,7 @@ Developers working on independent branches has become a ubiquitous concept in mo
 
 ### You have to merge eventually
 
-While working on a branch is great for individual developer productivity, it opens a new challenge. At some point, each developer's branch will need to be merged into a common branch, like `master`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each. This is where pull requests come in.
+While working on a branch is great for individual developer productivity, it opens a new challenge. At some point, each developer's branch will need to be merged into a common branch, like `main`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each. This is where pull requests come in.
 
 ## What is a pull request?
 
@@ -33,7 +33,7 @@ Learn more about [Proposing changes to your work with pull requests](https://hel
 
 ### Reviewer responsibilities
 
-Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `master` anywhere in the project.
+Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `main` anywhere in the project.
 
 GitHub offers a visual experience for reviewing code that allows reviewers to see code changes in a *diff* view where changes are highlighted. They can then leave comments inline, suggest changes, or approve. Reviewer feedback is kept as part of the repository history so that changes and decisions can be easily traced within their original context.
 

@@ -22,17 +22,19 @@ curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eur
 In the `src/main/resources/application.properties` configuration file, add the following property:
 
 ```yaml
+spring.main.allow-bean-definition-overriding=true
 spring.cloud.gateway.discovery.locator.enabled=true
 ```
 
+- The `spring.main.allow-bean-definition-overriding=true` part is to configure Spring Cloud Gateway to use the Spring Cloud Discovery Server bean configured in the Azure Spring Cloud Client library.
 - The `spring.cloud.gateway.discovery.locator.enabled=true` part is to configure Spring Cloud Gateway to use the Spring Cloud Service Registry to discover the available microservices.
 
 ## Create the application on Azure Spring Cloud
 
-As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--is-public true` flag so it is exposed publicly.
+As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--assign-endpoint` flag so it is exposed publicly.
 
 ```bash
-az spring-cloud app create -n todo-gateway --is-public true
+az spring-cloud app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --assign-endpoint
 ```
 
 ## Deploy the application
@@ -42,14 +44,14 @@ You can now build your "todo-gateway" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-gateway
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy -n todo-gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
 ## Test the project in the cloud
 
 1. Go to **Apps** in your Azure Spring Cloud instance.
-    1. Verify **todo-gateway** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Verify **todo-gateway** has a Registration status that says __1/1__. This shows that it is correctly registered in the Spring Cloud Service Registry.
     1. Select **todo-gateway** to have more information on the microservice.
 1. Copy/paste the public URL that is provided (there is a "Test Endpoint" like for microservices, but the gateway is directly exposed on the Internet, so let's use the public URL). Keep this URL handy for subsequent sections.
 

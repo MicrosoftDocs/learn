@@ -1,6 +1,6 @@
 Now let's see how you can use Azure Quantum to test quantum algorithms, first on a simulator and then on real hardware.
 
-If you took a [previous module](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm/?azure-portal=true) of this learning path, you created a version of Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same algorithm in a trapped ion quantum computer.
+If you took a [previous module](/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm/?azure-portal=true) of this learning path, you created a version of Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same algorithm in a trapped ion quantum computer.
 
 ## Create the Q# project for IonQ
 
@@ -10,26 +10,13 @@ Use Visual Studio Code to create a Q# Project.
 
 1. Enter **Q#: Create New Project**.
 
-1. Select **Standalone console application**.
+1. Select **Quantum application targeted to IonQ backend**.
 
 1. Select a directory to hold your project, such as your home directory, and name your project. For example, enter **MyGroversJob** as the project name, and select **Create Project**.
 
 1. From the window that appears at the bottom, select **Open new project**.
 
 1. You should see two files: the project file and *Program.qs*, which contains starter code.
-
-1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code.
-
-    ```xml
-    <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <ExecutionTarget>ionq.qpu</ExecutionTarget>
-      </PropertyGroup>
-    </Project>
-    ```
-
-   with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
 
 ## Adapt Grover's algorithm to run in hardware
 
@@ -60,9 +47,9 @@ Because this is just a demonstration, we're going to solve a trivial task. You'r
 
    :::code language="qsharp" source="../code/5-program-3.qs":::
 
-   This operation takes as input the integer to be marked and flips the state of the target qubit if the control register state corresponds to the input integer. To do this, it uses the function [`ControledOnInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint/?azure-portal=true) from the Standard library.
+   This operation takes as input the integer to be marked and flips the state of the target qubit if the control register state corresponds to the input integer. To do this, it uses the function [`ControledOnInt`](/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint/?azure-portal=true) from the Standard library.
 
-1. Because the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle by using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle/?azure-portal=true):
+1. Because the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle by using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle/?azure-portal=true):
 
    :::code language="qsharp" source="../code/5-program-4.qs":::
 
@@ -93,7 +80,7 @@ In this example, we'll set the number of qubits to 2, and the marked integer is 
 
 ### Estimate the resources for your job
 
-To estimate the resources of the job, the QDK offers you the `ResourcesEstimator` tool that was presented in the module [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/learn/modules/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp/?azure-portal=true).
+To estimate the resources of the job, the QDK offers you the `ResourcesEstimator` tool that was presented in the module [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp/?azure-portal=true).
 
 To use `ResourcesEstimator`:
 
@@ -127,7 +114,7 @@ Now that you know what resources you need to run your job, you can test it on th
 1. Open the Azure CLI, and submit the job by using the following command:
 
    ```azurecli
-   az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
+   az quantum job submit --target-id ionq.simulator --job-name MyGroversJob  -- --n-qubits 2 --idx-marked 1
    ```
 
    You should obtain something like this example:
@@ -169,12 +156,13 @@ To run your code against hardware, you just need to repeat the same steps as for
 For example, if you choose five shots by using the following command:
 
 ```azcli
-az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1 --shots 5
+az quantum job submit --target-id ionq.qpu -- --n-qubits 2 --idx-marked 1 --shots 5
 ```
 
 You might obtain a result similar to this example:
 
 ```output
+Result    Frequency
 --------  -----------  -------------------------
 [1,0]     0.60000000   ▐████████████           |
 [0,1]     0.40000000   ▐███████                |

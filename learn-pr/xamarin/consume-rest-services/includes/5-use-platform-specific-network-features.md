@@ -106,7 +106,7 @@ Finally, if you can't identify all your endpoints, disable App Transport Securit
 </dict>
 ```
 
-There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](https://docs.microsoft.com/xamarin/ios/app-fundamentals/ats).
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](/xamarin/ios/app-fundamentals/ats).
 
 ## What is Android Network Security Configuration?
 
@@ -153,7 +153,7 @@ ASP.NET Core web services must disable HTTPS redirects by commenting out `app.Us
 
 ### Detect the operating system
 
-The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows:
+The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows.
 
 ```csharp
 public static string BaseAddress =
@@ -161,4 +161,4 @@ public static string BaseAddress =
 public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 ```
 
-To learn more, visit the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
+To learn more, visit the [connect to a local web service](/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.

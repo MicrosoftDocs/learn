@@ -28,7 +28,7 @@ If you already know the template you want to use, or you have saved templates in
 
 ### Run templates from command line
 
-Given a URL to a template, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command.
+Given a URL to a template, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
 
 ```powershell
 New-AzResourceGroupDeployment `
@@ -37,9 +37,9 @@ New-AzResourceGroupDeployment `
     -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json
 ```
 
-Or, if you prefer the Azure CLI, with the `group deployment create` command.
+or, if you prefer the Azure CLI, run the `az deployment group create` command.
 
 ```azurecli
-az group deployment create --resource-group <my-resource-group> --name <my-deployment-name> \ 
+az deployment group create --resource-group <my-resource-group> --name <my-deployment-name> \ 
     --template-uri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json
 ```

@@ -50,7 +50,7 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
 
    ```
-   azsphere ca-certificate download --destination-file CAcertificate.cer
+   azsphere ca-certificate download --destination CAcertificate.cer
    ```
 
    The output file must have the .cer extension.
@@ -86,7 +86,7 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 2. Download a validation certificate that proves that you own the tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
 
    ```
-   azsphere ca-certificate download-proof --destination-file ValidationCertification.cer --verification-code <code>
+   azsphere ca-certificate download-proof --destination ValidationCertification.cer --verification-code <code>
    ```
 
 3. The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the Certificate Authority (CA).
@@ -119,7 +119,7 @@ From the Azure portal:
 
 ## Step 5: Configure Azure IoT Explorer
 
-This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
+This learning module uses [Azure IoT Explorer](/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
 
 You need the connection string for your IoT Hub.
 

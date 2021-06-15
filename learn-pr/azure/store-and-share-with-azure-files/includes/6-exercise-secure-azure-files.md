@@ -63,7 +63,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Connect to your VM by using the remote desktop connection.
 
-1. Open the file share in the Azure portal, upload the azcopy.exe file so it is avalibal on the VM. On the VM drag to the desktop for easy use.
+1. Open the file share in the Azure portal, upload the azcopy.exe file so it is available on the VM. On the VM drag to the desktop for easy use.
 
     ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
 

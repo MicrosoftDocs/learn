@@ -1,5 +1,3 @@
-Here, you will test your knowledge regarding the first few steps towards sound Azure governance.
+Test your knowledge about the first few steps toward sound Azure governance.
 
-## Which comes first? What matters most?
-
-The following questions will help you think through which actions Tailwind Traders can or should take. The questions will also help you reflect on what various stakeholders are thinking about overall cloud governance.
+The following questions help you think through which actions Tailwind Traders can or should take. The questions also help you reflect on what various stakeholders think overall about cloud governance.

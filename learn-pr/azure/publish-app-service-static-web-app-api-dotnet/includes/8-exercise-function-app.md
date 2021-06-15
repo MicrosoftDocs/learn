@@ -10,7 +10,7 @@ In this exercise, you'll complete the following steps:
 1. Run the API and the web app
 
 > [!NOTE]
-> Please be sure to have setup [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
+> Please be sure to have setup [Azure Functions for Visual Studio](/azure/azure-functions/functions-develop-vs).
 
 ## Get the Function app
 
@@ -54,7 +54,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your `R
 ```csharp
 [FunctionName("ProductsGet")]
 public static async Task<IActionResult> Run(
-    [HttpTrigger(AuthorizationLevel.Function, "get", Route = "products")] HttpRequest req,
+    [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
     ILogger log)
 ```
 
@@ -121,7 +121,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
    ```
 
 > [!NOTE]
-> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you are wanting to use the Azure Functions command line tool then you need a _local.settings.json_ file as describe [on the Azure Functions Core Tools docs](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#local-settings-file). The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
+> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you are wanting to use the Azure Functions command line tool then you need a _local.settings.json_ file as describe [on the Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
 
 ### Run the API and web app
 

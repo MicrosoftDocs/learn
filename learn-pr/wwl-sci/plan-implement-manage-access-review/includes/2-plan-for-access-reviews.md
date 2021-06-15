@@ -80,7 +80,7 @@ The creator of the access review decides at the time of creation who will perfor
 
 When creating an Access Review, administrators can choose one or more reviewers. All reviewers can start and carry out a review, choosing to grant users continued access to a resource or removing them.
 
-### Components of an Access Review
+### Components of an access review
 
 Before implementing your access reviews, you should plan the types of reviews relevant to your organization. To do so, you will need to make business decisions about what you want to review and the actions to take based on those reviews.
 
@@ -267,11 +267,11 @@ For more advanced queries and analysis of access reviews, and to track changes a
 
 Communication is critical to the success of any new business process. Proactively communicate to users how and when their experience will change and how to gain support if they experience issues.
 
-**Communicate changes in accountability:** Access Reviews support shifting responsibility of reviewing and acting on continued access to business owners. Decoupling access decisions from IT drives more accurate access decisions. This is a cultural change in resource owners' accountability and responsibility. Proactively communicate this change and ensure resource owners are trained and able to use the insights to make good decisions.
+**Communicate changes in accountability**: Access Reviews support shifting responsibility of reviewing and acting on continued access to business owners. Decoupling access decisions from IT drives more accurate access decisions. This is a cultural change in resource owners' accountability and responsibility. Proactively communicate this change and ensure resource owners are trained and able to use the insights to make good decisions.
 
 Clearly, IT will want to stay in control for all infrastructure-related access decisions and privileged role assignments.
 
-**Customize email communication:** When you schedule a review, you nominate users who will perform this review. These reviewers then receive an email notification of new reviews assigned to them, as well as reminders before a review assigned to them expires.
+**Customize email communication**: When you schedule a review, you nominate users who will perform this review. These reviewers then receive an email notification of new reviews assigned to them, as well as reminders before a review assigned to them expires.
 
 Administrators can choose to send this notification either halfway before the review expires or a day before it expires.
 

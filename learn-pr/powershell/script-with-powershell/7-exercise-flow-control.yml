@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.7-exercise-flow-control
+title: Exercise - Flow control
+metadata:
+  title: Exercise - Flow control
+  description: In this exercise, you'll add various checks that use If and Else blocks to your backup script. The checks ensure the input is sound. They also ensure a backup is created only if one hasn't already been created on that day.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/04/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-flow-control.md)]

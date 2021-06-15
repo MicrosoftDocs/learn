@@ -3,12 +3,12 @@ uid: learn.student-evangelism.intermediate-python-nasa.3-if-statements
 metadata:
   title: Exercise - Control the flow of code using conditional statements
   description: Learn about if-statements in Python.
-  ms.date: 10/01/2020
-  author: angevin17
+  ms.date: 05/05/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Control the flow of code using conditional statements
 durationInMinutes: 6
-content: |
-  [!include[](includes/3-if-statements.md)]
+sandbox: true
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/3-if-statements.ipynb

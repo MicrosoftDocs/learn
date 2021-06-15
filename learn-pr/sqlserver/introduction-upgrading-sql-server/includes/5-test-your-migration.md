@@ -12,7 +12,7 @@ It's natural to assume that moving your database to new hardware and the latest 
 
 The Database Experimentation Assistant (DEA) enables you to automate the process of testing the workload of your current database on a target server. It's designed for **A/B** testing, and enables you to test how the database will do on an upgraded version of SQL Server. You can also test performance on different hardware or with new features added. The crucial point of A/B testing is that you change ***one thing***: this approach gives you a baseline against which you test a single variant.
 
-![Database Experimentation Assistant](../media/5-dea-screenshot.png)
+![Screenshot of the Database Experimentation Assistant with the welcome screen displayed.](../media/5-dea-screenshot.png)
 
 In practice, a server may have developers and DBAs constantly making changes. When a query slows down, it can be difficult to pinpoint the change that causes the degradation. When testing your database on an upgraded version, you can create the new database and replay a sample of the current workload on the upgraded database using DEA.
 

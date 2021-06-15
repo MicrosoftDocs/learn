@@ -18,7 +18,7 @@ abstract:  |
   - Set up a TypeScript project in Visual Studio Code.
 prerequisites: |
   - Knowledge of JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/typescript/typescript-get-started.svg
 levels:
 - beginner
 roles:

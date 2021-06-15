@@ -2,7 +2,7 @@ Now you'll explore how to create, manage, and inspect superpositions in Q#. We i
 
 ## Create the project
 
-Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
+Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter *Q#: Create New Project*.
@@ -14,12 +14,12 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Include the Diagnostics namespace
 
-You'll find the Diagnostics namespace [Microsoft.Quantum.Diagnostics](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) in the [Standard
-library](https://docs.microsoft.com/quantum/user-guide/libraries/standard?azure-portal=true)
+You'll find the Diagnostics namespace [Microsoft.Quantum.Diagnostics](/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) in the [Standard
+library](/quantum/user-guide/libraries/standard?azure-portal=true)
 of the Quantum Development Kit. This namespace contains functions and operations that are useful for
 diagnostic purposes.
 
-For the moment, we're interested in the [`DumpMachine`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine?azure-portal=true) function. This function dumps information about the current status of the target machine
+For the moment, we're interested in the [`DumpMachine`](/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine?azure-portal=true) function. This function dumps information about the current status of the target machine
 into a file or some other location. If you omit `location`, this function prints the output in the console. We'll use this dumped information to track the state of the qubit register.
 
 > [!NOTE]
@@ -36,7 +36,7 @@ To add the library, you use the `open` directive. Modify *Program.qs* like this 
 ## Dump the state of the program
 
 In the module [Create your first Q# program by using the Quantum Development
-Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
+Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
 you defined the `GenerateRandomBit` operation. You can use this operation to see how `DumpMachine` works.
 
 To do so, you simply call `DumpMachine` at every step where you want to see the state of the register.
@@ -134,7 +134,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 > You can also run Q# in Jupyter Notebook. Notebooks provide a better
 > visualization of the `DumpMachine` outputs. You can install the application and try it
 > out by following the Quantum Development Kit (QDK) documentation about [Q# Jupyter
-> notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter). 
+> notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda&azure-portal=true). 
 >
 > ![Screenshot of the DumpMachine function in a Jupyter notebook.](../media/3-jupyter.png)
 
@@ -154,7 +154,7 @@ $$|\psi\rangle=\sqrt\alpha|0\rangle+\sqrt{1-\alpha}|1\rangle$$
 This state can be obtained by sequentially applying the operator $R_y(2\arccos
 \sqrt{\alpha})$ to a qubit in the state $|0\rangle.$ You can achieve this result in Q# by
 using the operation
-[Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
+[Ry](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
 in the Standard library.
 
 > [!TIP]
@@ -208,12 +208,12 @@ instead of measuring one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array that has a length of three. For more information about arrays in Q#, see the [QDK documentation](/azure/quantum/user-guide/language/).
-    * The operations [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
-      [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
+    * The operations [ApplyToEach](/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
+      [ForEach](/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
       are useful to measure and act on multiple qubits, and they use
       less code. Q# libraries offer many kinds of operations and functions that make writing
       quantum programs more efficient.
-    * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
+    * The [BoolArrayAsInt](/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
 
 1. From the terminal, run `dotnet run`.
 
@@ -255,7 +255,7 @@ instead of measuring one qubit three times.
 
     :::code language="qsharp" source="code/3-program-4.qs":::
 
-    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow?azure-portal=true).
+    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](/azure/quantum/user-guide/libraries/standard/control-flow?azure-portal=true).
 
     Your output resembles this example:
 

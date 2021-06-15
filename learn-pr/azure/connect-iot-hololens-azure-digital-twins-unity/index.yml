@@ -1,0 +1,68 @@
+### YamlMime:Module
+uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
+metadata:
+  title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
+  description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
+  ms.date: 5/4/2021
+  author: JBrentJ
+  ms.author: jejacks
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity
+summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and the HoloLens.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -	Connect to a Digital Twin data source on Azure
+  -	Stream telemetry data to assets in your Unity Scene, using Azure services, including ADT
+  -	Visualize the data on a HoloLens 2 via SignalR
+  -	Send data updates from the HoloLens 2 app back to Azure Digital Twin
+prerequisites: |
+  - Set up a mixed reality project for Azure Digital Twins in Unity Module
+  - Build a 3D Scene in Unity with Maps SDK Module
+  - Configure 3D assets in a Unity scene Module
+  - Azure service creation and configuration
+  - Domain User Azure Active Directory (i.e., not Guest)
+  - An Azure subscription
+  - [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+  - Basic Azure CLI knowledge
+  - Basic PowerShell knowledge
+  - Desktop Development with C++ workload installed in Visual Studio
+iconUrl: /media/learn/module.svg
+levels:
+- intermediate
+roles:
+- developer
+- business-owner
+- student
+- technology-manager
+products:
+- azure
+- azure-cloud-services
+- azure-cognitive-services
+- azure-digital-twins
+- azure-iot
+- azure-iot-hub
+- azure-signalr-service
+- azure-event-grid
+- azure-event-hubs
+- azure-functions
+- hololens
+- windows
+- windows-mixed-reality
+units:
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.introduction
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-telemetry-data
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.arm-templates
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-add-prefab
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-create-deploy-arm-template
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-stream-data
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-create-ui
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.visualize-signalr
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-azure-digital-twins
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.deploy
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.identify-performance-events
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.knowledge-check
+- learn.azure.connect-iot-hololens-azure-digital-twins-unity.summary
+badge:
+  uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.badge

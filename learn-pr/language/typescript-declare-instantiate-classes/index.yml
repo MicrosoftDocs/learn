@@ -29,7 +29,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/typescript/typescript-declare-instantiate-classes.svg
 levels:
 - intermediate
 roles:

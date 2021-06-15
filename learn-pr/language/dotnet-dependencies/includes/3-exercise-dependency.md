@@ -47,16 +47,16 @@ Open Program.cs. The first time you open a C# file in Visual Studio Code, you ge
 
 :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of the Visual Studio Code prompt for recommended extensions.":::
 
-Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**. 
+Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**.
 
 :::image source="../media/install-required-assets.png" alt-text="Screenshot of the Visual Studio Code prompt for required assets.":::
 
 You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
-## Add a NuGet package by using the .NET Core tool 
+## Add a NuGet package by using the .NET Core tool
 
 1. Open **Program.cs**. It should look like this.
-    
+
     ```csharp
     using System;
 
@@ -80,7 +80,6 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     dotnet add package Humanizer --version 2.7.9
     ```
 
-
     Open the **DotNetDependencies.csproj** file and find the `ItemGroup` section. You should now have an entry that looks like this one.
 
     ```xml
@@ -94,8 +93,26 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     ```csharp
     using Humanizer;
     ```
+    
+    Your **Program.cs** should now look like this:
+    
+    ```csharp
+    using System;
+    using Humanizer;
 
-1. Add the following content to the Program.cs file to the bottom of the `Program` class, just before the closing brace for the Main method.
+    namespace DotNetDependencies
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {   
+                Console.WriteLine("Hello World");
+            }
+        }    
+    }
+    ```
+
+1. Add the following content to the Program.cs file to the bottom of the `Program` class, just after the closing brace for the Main method.
 
     ```csharp
     static void HumanizeQuantities()
@@ -115,7 +132,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     ```
 
 1. Update the `Main` method to call the new methods.
-    
+
     ```csharp
     static void Main(string[] args)
     {   

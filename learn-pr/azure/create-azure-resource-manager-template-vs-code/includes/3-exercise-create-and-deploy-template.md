@@ -38,7 +38,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
@@ -119,7 +119,7 @@ You see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0), and sign in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 
@@ -209,7 +209,7 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
 In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this section, you add an Azure storage account resource to the ARM template by using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the brackets in the resources block ```"resources":[],```.
+1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the brackets in the resources block ```"resources":[],```.
 
 1. Enter **storage** inside the brackets. A list of related snippets appears. Select **arm-storage**.
 

@@ -40,8 +40,8 @@ If you're curious to learn more about quantum computing, be sure to check out th
 - Q# language and API reference.
 - How to use Q# with C#, Python, and Jupyter Notebook.
 
-When you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/quantum/intro-to-katas?azure-portal=true).
+When you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/azure/quantum/tutorial-qdk-intro-to-katas?azure-portal=true).
 
 To learn about real-world usage of the Quantum development kit, check out this blog post on the Microsoft Quantum collaboration with Pacific Northwest National Laboratory (PNNL): [Simulating nature with the new Microsoft Quantum development kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
 
-Be sure to [join the quantum community](https://docs.microsoft.com/quantum/overview/understanding-quantum-computing?azure-portal=true) if you have questions or want to contribute to the many Microsoft open-source projects.
+Be sure to [join the quantum community](/quantum/overview/understanding-quantum-computing?azure-portal=true) if you have questions or want to contribute to the many Microsoft open-source projects.

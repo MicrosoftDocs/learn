@@ -3,7 +3,7 @@ uid: learn.language.go-concurrency
 metadata:
   title: Learn how concurrency works in Go
   description: Understand more about concurrency, one of the most unique features in Go.
-  ms.date: 01/25/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -25,14 +25,14 @@ prerequisites: |
   - Knowledge of how to write basic data control flows like `if` and `for` statements.
   - Knowledge of how to write functions.
   - Knowledge of how to use libraries like `net/http`.
-iconUrl: /learn/achievements/go-concurrency.svg
+iconUrl: /learn/achievements/go/go-concurrency.svg
 levels:
 - beginner
 roles:
 - developer
 - student
 products:
-- azure
+- vs-code
 units:
 - learn.language.go-concurrency.0-introduction
 - learn.language.go-concurrency.1-goroutines
@@ -44,3 +44,4 @@ units:
 - learn.language.go-concurrency.7-summary
 badge:
   uid: learn.language.go-concurrency.badge
+hidden: true

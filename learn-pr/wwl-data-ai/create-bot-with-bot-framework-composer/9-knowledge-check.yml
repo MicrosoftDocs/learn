@@ -4,45 +4,45 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2020
+  ms.date: 06/08/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 7
 quiz:
   questions:
-  - content: "What purpose do Adaptive Dialogs server in the Bot Framework Composer?"
+  - content: "Which element of a dialog interprets user input in order to determine intent?"
     choices:
-    - content: "They allow you to adapt the bot to different programming languages."
+    - content: "Language Generator"
       isCorrect: false
-      explanation: "Incorrect. The Bot Framework Composer does not require you to write code, nor does the Adaptive Dialog aid in different programming languages."
-    - content: "They adapt to a user's specific interaction techniques such as speech recognition."
+      explanation: "Incorrect. A language generator does not interpret user input."
+    - content: "Trigger"
       isCorrect: false
-      explanation: "Incorrect. This it not the purpose of Adaptive Dialogs."
-    - content: "Provide a mechanism to handle interruptions in the conversation flow."
+      explanation: "Incorrect. A trigger does not interpret user input."
+    - content: "Recognizer"
       isCorrect: true
-      explanation: "Correct. Use of Adaptive Dialogs allow for Language Generation (LG), which can simplify interruption handling and give bots character."
-  - content: "What is the purpose of a trigger?"
+      explanation: "Correct. A recognizer interprets user input."
+  - content: "Which element of a dialog responds to a detected intent and initiates an appropriate response?"
     choices:
-    - content: "Triggers tell the user when they can start to interact with the bot."
+    - content: "Language Generator"
       isCorrect: false
-      explanation: "Incorrect. While triggers can be activated during parts of the conversation, they are not used to tell a user when they can interact with the bot."
-    - content: "Triggers help direct the bot behavior and are used for situations where users request help or you need to handle custom events."
+      explanation: "Incorrect. A language generator does not respond to a detected intent."
+    - content: "Trigger"
       isCorrect: true
-      explanation: "Correct. Triggers contain rules that direct the bot's actions for processing incoming messages. Triggers also help direct the bot behavior and are used for situations where users request help or you need to handle custom events."
-    - content: "Triggers are responsible for interpreting what the user wants, based on the input."
+      explanation: "Correct. A trigger responds to a detected intent."
+    - content: "Recognizer."
       isCorrect: false
-      explanation: "Incorrect. Triggers do not interpret the user input. That is the job of a recognizer."
-  - content: "What is the Language Generation Library?"
+      explanation: "Incorrect. A recognizer does not respond to a detected intent"
+  - content: "Which element of a dialog formulates output that the bot sends to the user?"
     choices:
-    - content: "The LUIS integration code samples for using LUIS models with your bot."
-      isCorrect: false
-      explanation: "Incorrect. The library does not contain code for integration with LUIS."
-    - content: "A set of powerful templating and message formatting tools."
+    - content: "Language Generator"
       isCorrect: true
-      explanation: "Correct. The library is a set of powerful templating and message formatting tools that let you include variation, conditional messages, and dynamic content. LG gives you greater control of how your bot responds to the user."
-    - content: "The library that contains templates for using cards in your bot."
+      explanation: "Correct. A language generator formulates output from the bot to the user."
+    - content: "Trigger"
       isCorrect: false
-      explanation: "Incorrect. Card templates are used to generate visually appealing responses (cards) to the user in a conversation.  They do not generate language responses."
+      explanation: "Incorrect. A trigger does not formulate output from the bot to the user."
+    - content: "Recognizer."
+      isCorrect: false
+      explanation: "Incorrect. A recognizer does not formulate output from the bot to the user"

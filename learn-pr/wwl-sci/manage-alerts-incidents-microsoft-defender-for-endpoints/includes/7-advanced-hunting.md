@@ -100,9 +100,9 @@ With the query in the query editor, select Create detection rule and specify the
 
 - Alert title—title displayed with alerts triggered by the rule
 
-- Severity—potential risk of the component or activity identified by the rule. Read about alert severities
+- Severity—potential risk of the component or activity identified by the rule.
 
-- Category—type of threat component or activity, if any. Read about alert categories
+- Category—type of threat component or activity, if any.
 
 - MITRE ATT&CK techniques—one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section is not available with certain alert categories, such as malware, ransomware, suspicious activity, and unwanted software
 
@@ -138,9 +138,9 @@ Actions on devices
 
 These actions are applied to devices in the DeviceId column of the query results:
 
-- Isolate device—applies full network isolation, preventing the device from connecting to any application or service, except for the Defender for Endpoint service. Learn more about device isolation
+- Isolate device—applies full network isolation, preventing the device from connecting to any application or service, except for the Defender for Endpoint service.
 
-- Collect investigation package—collects device information in a ZIP file. Learn more about the investigation package
+- Collect investigation package—collects device information in a ZIP file. 
 
 - Run antivirus scan—performs a full Microsoft Defender Antivirus scan on the device
 

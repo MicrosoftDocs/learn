@@ -1,7 +1,7 @@
 GitHub Packages is a package management service that makes it easy to publish public or private packages next to your source code.
 
 > [!NOTE]
-> If you're discovering GitHub, checkout [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github/) Learn module.
+> If you're discovering GitHub, checkout [Introduction to GitHub](/learn/modules/introduction-to-github/) Learn module.
 
 ## GitHub Packages is a package registry
 
@@ -51,8 +51,8 @@ Now with GitHub Packages, you can use a single set of credentials across your so
 [GitHub Actions](https://github.com/features/actions) is another feature of GitHub that allow you to automate your software workflows. You can build, test, and deploy your code right from GitHub. 
 
 > [!TIP]
-> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](https://docs.microsoft.com/learn/modules/github-actions-ci/)* Learn module.
+> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/learn/modules/github-actions-ci/)* Learn module.
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
 
-In the next unit, we'll use GitHub Actions to build a container image, and publish it into GitHub Packages.
+In the next unit, we'll learn how to use our workflow to publish to GitHub Packages and GitHub Container Registry.

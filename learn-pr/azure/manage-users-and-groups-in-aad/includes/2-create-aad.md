@@ -39,19 +39,25 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **Create a resource**, then select **Identity** from the Azure Marketplace, and then select **Azure Active Directory** from the list. Select **Create**.
+1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Choose an *organization name* for the directory to help distinguish it from your other directories. The directory to be created will be used in production; choose a name for the directory that your users will recognize as your organization's name. You can change the name later if you want.
+1. In the left menu pane, select **Identity**, and then search for an select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
-1. Enter the *domain name* associated with it. Azure will give a validation error unless the domain is not known. The default domain name will always have the suffix `.onmicrosoft.com`. You can not change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email such as `john@contoso.com`.
+1. Select **Create**. The **Create tenant** pane appears.
 
-1. Select in what country the directory should reside. The country will identify the region and data center where the Azure AD instance will live;  you can not change it later.
+1. Enter the following values for each setting.
+
+    - **Organization name**: Enter a name for the directory to help distinguish it from your other directories. The directory to be created will be used in production; provide a name that your users will recognize as your organization's name. You can change the name later if you want.
+
+    - **Initial domain name**: Enter a domain name associated with your organization. Azure will give a validation error unless the domain is not known. The default domain name will always have the suffix `.onmicrosoft.com`. You can not change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email such as `john@contoso.com`.
+
+    - **Country or region**: Select the country the directory should reside. The country will identify the region and data center where the Azure AD instance will live;  you can not change it later.
 
     ![Screenshot showing the AD creation process](../media/2-create-directory.png)
 
-1. Select **Create** to create the new directory. A free tier directory where you can add users will be created, create roles, register the apps and devices, and control licenses.
+1. Select **Create** to create the new directory. A free tier directory will be created where you can add users, create roles, register apps and devices, and control licenses.
 
-After you have created the directory, you can navigate to the dashboard that lets you control all directory aspects.
+After you have created the directory, select **Click here to manage your new tenant** to go to the Overview dashboard that lets you control all directory aspects.
 
 ![Screenshot of the Azure AD dashboard](../media/2-aad-dashboard.png)
 

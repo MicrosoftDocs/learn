@@ -1,6 +1,6 @@
 When our networking components route requests to multiple regions to mitigate the effects of a regional outage, we must design application services that can respond to those requests in both primary and standby regions.
 
-Recall from earlier that we'll configure Azure Front Door with priority backend assignment. We'll assign the East US region as our primary region, and the West US region as our standby region. When a regional failure occurs, requests will route to the App Service in the none failing region. We have to configure resources in each region to support these failovers for user access, replicated storage, and application code.
+Recall from earlier that we'll configure Azure Front Door with priority back-end assignment. We'll assign the East US region as our primary region, and the West US region as our standby region. When a regional failure occurs, requests will route to the App Service in the none failing region. We have to configure resources in each region to support these failovers for user access, replicated storage, and application code.
 
 Here, we'll learn about Active Directory, static content storage, web apps, web APIs, queues, Azure functions, and data caches in a multi-region architecture.
 
@@ -8,7 +8,7 @@ Here, we'll learn about Active Directory, static content storage, web apps, web 
 
 ## Azure Active Directory
 
-In our shipments tracking portal, users can track the delivery of their purchases by entering a tracking number. However, regular users can register for membership to access advanced features, such as delivery promptness and other statistics. We've developed the tracking portal to store user accounts in Azure Active Directory (AD).
+In our shipments tracking portal, users can track the delivery of their purchases by entering a tracking number. However, regular users can register for membership to access advanced features, such as delivery promptness and other statistics. We've developed the tracking portal to store user accounts in Azure Active Directory (Azure AD).
 
 Azure AD is designed as a global system by default. As such, it's not vulnerable to regional failures, and we don't have to modify this component of the system.
 
@@ -22,7 +22,7 @@ The same is true of Zone Redundant Storage (ZRS). Even though data replicates to
 
 In our design, we rely heavily on our CDN configuration to cache static content. There's a chance that, during an outage, a user might request a static file that isn't yet in the CDN cache. This request would result in a graphic or video that can't be displayed.
 
-We can eliminate this possibility by replicating the storage account to multiple regions when we choose a geo-redundant storage option. We also have to option to select a read-only replication option if we want to support the inability to add static content during a regional outage.
+We can eliminate this possibility by replicating the storage account to multiple regions when we choose a geo-redundant storage option. A read-only replication option is also available to prevent adding static content during a regional outage.
 
 We have two options to choose from when we need to enable geo-redundancy. These options are Read-Access Geo-Redundant Storage (RA-GRS) and Read-Access Geo-Zone-Redundant Storage (RA-GZRS). The choice we make will depend on our budget and the percentage up time that we need.
 
@@ -32,7 +32,7 @@ Our shipments tracking portal implements two Azure App Services. The first App S
 
 In our original design, each Azure App Service is localized to a single Azure region. We'll create a second App Service in the secondary region (West US) and deploy the web project there to support the new multi-region architecture. We'll configure the Azure Front Door priority routing mode to send requests to our secondary region when the primary region is unavailable.
 
-To ensure the failover is as smooth as possible, make sure the web application doesn't store any session state information in memory. We'll change our website to make sure we don't end up with data loss. For example, if our code stores a list of the users' shipments in memory, then this list would be lost if a failover occurred.
+To ensure the failover is as smooth as possible, make sure the web application doesn't store any session state information in memory. We'll change our website to make sure we don't end up with data loss. For example, if our code stores a list of the users' shipments in memory, this list would be lost if a failover occurred.
 
 Each web request is handled without impacting the other when no session state is stored. If a failover occurs in the middle of a user's session, the failover should be transparent to the user.
 
@@ -53,6 +53,6 @@ Keep in mind that we can't use a read-access redundancy option since our queue s
 
 ## Azure Redis Cache
 
-We're using Azure Redis Cache to maximize the performance of data storage. Redis caches all query results generated from our apps as they request data from our database. The following queries for similar data don't need a database query and are fetched from the Redis cache.
+We're using Azure Redis Cache to maximize the performance of data storage. Redis caches all query results generated from our apps as they request data from our database. The following queries for similar data don't need a database query, and are fetched from the Redis cache.
 
 For the multi-region architecture, we'll create a Redis Cache instance in both primary and standby regions. Keep in mind that when a failover occurs, the Redis Cache in the standby region is likely to be empty. That empty cache won't cause any errors, but performance may temporarily drop, as data fills the new cache.

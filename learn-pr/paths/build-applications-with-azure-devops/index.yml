@@ -14,6 +14,26 @@ title: Build applications with Azure DevOps
 summary: |
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
 
+  This learning path is part of a series. You can choose the topics you're most interested in or progress through each of them. Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path" role="presentation"></img>
+
+    [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
+
+    Part 2: Build applications with Azure DevOps
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+
+    [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
+  :::column-end:::
+  :::row-end:::
+
   In this learning path, you will:
   - Collaborate with others to build your applications using Azure Pipelines and GitHub
   - Run automated tests in your pipeline to validate code quality
@@ -21,7 +41,7 @@ summary: |
   - Define multiple pipelines that work together to build your application
   - Build applications using both Microsoft-hosted agents and your own build agents
 prerequisites: |
-  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Evolve your DevOps practices](../evolve-your-devops-practices/index.yml)
 iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.svg
 levels:
 - intermediate
@@ -36,7 +56,6 @@ modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow
 - learn.azdo.run-quality-tests-build-pipeline
-- learn.azdo.scan-open-source
 - learn.azdo.manage-build-dependencies
 - learn.azdo.host-build-agent
 trophy:

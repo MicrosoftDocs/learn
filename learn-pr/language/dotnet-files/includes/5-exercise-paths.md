@@ -42,26 +42,27 @@ In the current Program.cs code, you're passing the static location of the *store
     }
     ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
+
 1. Run the program from the command line.
 
     ```bash
     dotnet run
     ```
 
-  Notice that the path that's now listed for the files is the full system path. This path appears because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
+    Notice that the path that's now listed for the files is the full system path. This path appears because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
 
-```bash
-/home/username/dotnet-files/stores/sales.json  
-/home/username/dotnet-files/stores/201/sales.json  
-/home/username/dotnet-files/stores/202/sales.json  
-/home/username/dotnet-files/stores/203/sales.json  
-/home/username/dotnet-files/stores/204/sales.json  
-```
+    ```bash
+    /home/username/dotnet-files/stores/sales.json  
+    /home/username/dotnet-files/stores/201/sales.json  
+    /home/username/dotnet-files/stores/202/sales.json  
+    /home/username/dotnet-files/stores/203/sales.json  
+    /home/username/dotnet-files/stores/204/sales.json  
+    ```
 
 ## Find all .json files
 
-Instead of looking for only *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the file name extension.
+Instead of looking for only *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the filename extension.
 
 1. In the `foreach` loop in `FindFiles`, get the extension of each file by using the `Path.GetExtension` method.
 
@@ -91,14 +92,15 @@ Instead of looking for only *sales.json* files, the program needs to search for 
     }
     ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
+
 1. Run the program from the command line.
 
     ```bash
     dotnet run
     ```
   
-  The output now shows all .json and .txt files in any of the store ID directories.
+    The output now shows all .json files in any of the store ID directories.
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  

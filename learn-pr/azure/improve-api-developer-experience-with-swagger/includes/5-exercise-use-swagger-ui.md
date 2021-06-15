@@ -1,7 +1,7 @@
 
 In this exercise, you'll enrich the documentation a developer sees about your API by adding comments and annotations to your code. First, let's see what we get from Swagger UI by default.
 
-1. To examine the Swagger UI endpoint of our API, in your browser, navigate to **API-ROOT-URL**/swagger. **API-ROOT-URL** is the value you saved in the preceding exercise for the URL of your API. You should see output in the browser similar to the following, when  you select the **Get** method.
+1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, in your browser, navigate to http://localhost/swagger. You should see output in the browser similar to the following, when  you select the **Get** method.
 
     :::image type="content" source="../media/swagger-ui-initial.png" alt-text="Default Swagger UI for our API." loc-scope="third-party":::
 
@@ -11,22 +11,13 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
 
 #### Add XML comments to your API
 
-1. In the Cloud Shell, navigate to the project folder.
+1. Go back to the instance of Visual Studio Code that you used for the last exercise.
 
-    ```bash
-    cd ~/code/PrintFramerAPI
-    ```
-
-1. To open the Cloud Shell editor for the project, run the following command.
-
-    ```bash
-    code .
-    ```
-
-1. To activate XML documentation in your project, update **PrintFramerAPI.csproj** project file, and set GenerateDocumentationFile tag to `true`.
+1. To activate XML documentation in your project, update **PrintFramerAPI.csproj** project file, and add the `GenerateDocumentationFile` tag to the existing `<PropertyGroup>` and set it to `true`.
 
    ```XML
    <PropertyGroup>
+       <TargetFramework>netcoreapp3.1</TargetFramework> 
        <GenerateDocumentationFile>true</GenerateDocumentationFile>
        <NoWarn>$(NoWarn);1591</NoWarn>
    </PropertyGroup>
@@ -42,39 +33,35 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
 1. In **Startup.cs**, to tell Swashbuckle to use XML documentation, update the call to the `AddSwaggerGen()` in `ConfigureServices`.
 
    ```csharp
-   public void ConfigureServices(IServiceCollection services)
-   {
-       services.AddMvc()
-            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-            .AddJsonOptions(options =>
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
+    
+        // Register the Swagger generator, defining 1 or more Swagger documents
+        services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo
             {
-                options.SerializerSettings.Formatting = Formatting.Indented;
+                Version = "v1",
+                Title = "PrintFramer API",
+                Description = "Calculates the cost of a picture frame based on its dimensions.",
+                TermsOfService = new Uri("https://go.microsoft.com/fwlink/?LinkID=206977"),
+                Contact = new OpenApiContact
+                {
+                    Name = "Your name",
+                    Email = string.Empty,
+                    Url = new Uri("https://www.microsoft.com/learn")
+                }
             });
-
-       // Register the Swagger generator, defining 1 or more Swagger documents
-       services.AddSwaggerGen(c =>
-       {
-           c.SwaggerDoc("v1", new OpenApiInfo
-           {
-               Version = "v1",
-               Title = "PrintFramer API",
-               Description = "Calculates the cost of a picture frame based on its dimensions.",
-               TermsOfService = new Uri("https://go.microsoft.com/fwlink/?LinkID=206977"),
-               Contact = new OpenApiContact
-               {
-                   Name = "Your name",
-                   Email = string.Empty,
-                   Url = new Uri("https://www.microsoft.com/learn")
-               }
-           });
-
-           // Set the comments path for the Swagger JSON and UI.
-           var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-           var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-           c.IncludeXmlComments(xmlPath);
-       });
-   }
+    
+            // Set the comments path for the Swagger JSON and UI.
+            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            c.IncludeXmlComments(xmlPath);
+        });
+    }
    ```
+
     In the preceding code, reflection is used to determine the name of the XML file to load XML comments.
 
 1. In **PriceFrameController.cs**, add the following XML comment block above the *HttpGet* attribute of the `GetPrice` method. Adding triple-slash comments to an action enhances the Swagger UI by adding the description to the section header.
@@ -96,48 +83,50 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     }
    ```
 
-1. To save all changes and make sure it builds locally, run the following command.
+1. To save all changes and make sure it builds locally, run the following command in the Visual Studio Code terminal window.
 
     ```bash
     dotnet build
     ```
 
-1. To update the live app in production again, run the following commands.
+   > [!TIP]
+   > You may need to first press <kbd>ctrl+c</kbd> on Windows or 
+<kbd>cmd+c</kbd> on Mac to stop the web API from running in the last 
+exercise.
 
-    ```azurecli
-    git add .
-    git commit -m "adds XML comment to GetPrice method"
-    git push production
+
+1. To see these changes run the ASP.NET application locally. Type the following in the terminal window in Visual Studio Code:
+
+    ```bash
+    dotnet run
     ```
 
-1. When prompted, enter the **DEPLOYMENT-PASSWORD** you saved earlier.
+1. Look at the Swagger UI again at http://localhost:5000/swagger, and observe the added information provided by your XML comments to the OpenAPI documentation.
 
-1. Wait for the deployment to complete. The changes are pushed to your live API hosted at the URL you noted earlier.
-
-1. Look at the Swagger UI again at **API-ROOT-URL**/swagger, and observe the added information provided by your XML comments.
-
-    :::image type="content" source="../media/swagger-ui-and-xml-comments.png" alt-text="Swagger UI with more documentation from XML comments for our API." loc-scope="third-party":::
+    :::image type="content" source="../media/swagger-ui-and-xml-comments.png" alt-text="Swagger UI with the final documentation from XML comments for our API." loc-scope="third-party":::
 
 ## Add data annotations to your API
 
-To enable Swagger to improve the documentation, you use attributes from the `System.ComponentModel.DataAnnotations` namespace.
+To enable Swagger to improve the OpenAPI documentation, you use attributes from the `Microsoft.AspNetCore.Mvc` namespace.
 
-1. To show that your API supports a content type response for **text/plain**, in the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute to the controller.
+1. To show that your `GetPrice` API supports a content type response for **text/plain**, in the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute above the `GetPrice` definition.
 
     ```csharp
+    [HttpGet("{Height}/{Width}")]
     [Produces("text/plain")]
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PriceFrameController : ControllerBase
-    {
     ```
 
     The Response Content Type dropdown selects this content type as the default for the controller's GET actions.
 
 ## Add Swashbuckle annotations to your API
 
-So far, your API returns the status code 200 whether it could calculate a price for the given frame dimensions. In the description of the GetPrice method, note the case when a price can't be calculated. A more robust way to tell developers the response types and error codes is through the following XML comments and data annotations. Swagger UI will use these values to clearly document expected HTTP response codes.
+So far, your API returns the status code 200 whether it could calculate a price for the given frame dimensions. In the description of the GetPrice method, note the case when a price can't be calculated.
 
+A more robust way to tell developers the response types and error codes is through the following XML comments and data annotations. Swashbuckle and the Swagger tooling will use these values to clearly generate an OpenAPI description of the  expected HTTP response codes.
+
+Also update the HTTP verb filter constructor to include the `Name` property. This will include the OpenAPI `operationId`.
+
+1. Add `Microsoft.AspNetCore.Http` to the **PriceFrameController.cs** file.
 1. In **PriceFrameController.cs**, replace GetPrice with the following code and comment.
 
     ```csharp
@@ -155,9 +144,10 @@ So far, your API returns the status code 200 whether it could calculate a price 
     /// </remarks>
     /// <response code="200">Returns the cost of the frame in dollars.</response>
     /// <response code="400">If the amount of frame material needed is less than 20 inches or greater than 1000 inches.</response>
-    [HttpGet("{Height}/{Width}")]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(400)]
+    [HttpGet("{Height}/{Width}", Name=nameof(GetPrice))]
+    [Produces("text/plain")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<string> GetPrice(string Height, string Width)
     {
         string result;
@@ -176,24 +166,16 @@ So far, your API returns the status code 200 whether it could calculate a price 
     This code update makes the following changes:
     - The method uses the `BadRequest()` and `Ok()` methods to create a BadRequest (400) and an Ok status respectively, passing in the string result to the response.
     - The XML comments describe each status code that can be returned from this method.  
+    - The HttpGet includes a Name property to emit the OpenAPI operationId parameter.
     - The ProducesResponseTypeAttribute lists the different responses that can be returned by the action. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
 
-1. To save all changes and make sure it builds locally, run the following command.
+1. Rebuild and run the web API with the following command:
 
     ```bash
     dotnet build
     ```
 
-1. To update the live app in production again, run the following commands.
-
-    ```azurecli
-    git add .
-    git commit -m "adds better status code information"
-    git push production
-    ```
-1. Wait for the deployment to complete. The changes are pushed to your live API hosted at the URL you noted earlier. 
-
-1. Look at the Swagger UI again at **API-ROOT-URL**/swagger, and observe the added information provided by these annotations. The final Swagger UI for your API appears in the following image.
+1. Look at the Swagger UI again at http://localhost:5000/swagger, and observe the added information provided by these annotations. The final Swagger UI for your API appears in the following image.
 
     :::image type="content" source="../media/swagger-ui-final.png" alt-text="Swagger UI with more documentation from XML comments for our API." loc-scope="third-party":::
 

@@ -15,14 +15,14 @@ In Azure Machine Learning, data for model training and other operations is usual
         * **File format**: Delimited
         * **Delimiter**: Comma
         * **Encoding**: UTF-8
-        * **Column headers**: Use headers from the first file
+        * **Column headers**:  Only first file has headers
         * **Skip rows**: None
     * **Schema**:
         * Include all columns other than **Path**
         * Review the automatically detected types
     * **Confirm details**:
         * Do not profile the dataset after creation
-3. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data represents measurements of the culmen (bill) length and depth, flipper length, and body mass for multiple observations of penguins. There are three species of penguin represented in the dataset: *Amelie*, *Gentoo*, and *Chinstrap*.
+3. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data represents measurements of the culmen (bill) length and depth, flipper length, and body mass for multiple observations of penguins. There are three species of penguin represented in the dataset: *Adelie*, *Gentoo*, and *Chinstrap*.
 
 > [!NOTE]
 > The penguins dataset used in the this exercise is a subset of data collected and made available by [Dr. Kristen
@@ -43,7 +43,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
 > [!div class="centered"]
-> ![The penguin-data dataset connected to the Select Columns in Dataset module](../media/penguin-visualization.png)
+> ![A visualization of the penguin-data dataset, showing its columns and some sample data.](../media/penguin-visualization.png)
 
 7. Note the following characteristics of the dataset:
 
@@ -52,7 +52,7 @@ To get started with Azure machine Learning designer, first you must create a pip
         - **CulmenDepth**: Depth of the penguin's bill in millimeters.
         - **FlipperLength**: Length of the penguin's flipper in millimeters.
         - **BodyMass**: Weight of the penguin in grams.
-        - **Species**: Species indicator (0:"Amelie", 1:"Gentoo", 2:"Chinstrap")
+        - **Species**: Species indicator (0:"Adelie", 1:"Gentoo", 2:"Chinstrap")
     - There are two missing values in the **CulmenLength** column (the **CulmenDepth**, **FlipperLength**, and **BodyMass** columns also have two missing values).
     - The measurement values are in different scales (from tens of millimeters to thousands of grams).
 

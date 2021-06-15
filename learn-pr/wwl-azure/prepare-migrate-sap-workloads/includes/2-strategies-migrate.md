@@ -31,7 +31,7 @@ To gain experience with production systems on Azure, you can use a vertical stra
 
 * **Don’t move your most critical system first**. The last system you move is the highest risk, most mission-critical system—the ERP production system. You need the most performance-intensive virtual machine SKUs and the largest storage.
 
-* **Move standalone systems first**. Some systems are closely joined with other systems—for example, our ERP and GTS systems. There’s a lot of synchronous, real-time traffic between the two. If you move ERP to Azure, but keep GTS on-premises, it will affect performance because of network latency—so moved them together.
+* **Move standalone systems first**. Some systems are closely joined with other systems—for example, our ERP and GTS systems. There’s a lot of synchronous, real-time traffic between the two. If you move ERP to Azure, but keep GTS on-premises, it will affect performance because of network latency—so move them together.
 
 * **If you have several SAP systems, look for upstream and downstream dependencies** from one SAP system to the other, or from SAP to apps outside the SAP ecosystem. Examine traffic patterns and areas with high sensitivity to latency.
 

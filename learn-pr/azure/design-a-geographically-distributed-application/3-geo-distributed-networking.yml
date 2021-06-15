@@ -25,7 +25,7 @@ quiz:
       explanation: "An app running slowly might, for example, be the result of the database being overloaded with complex queries, rather than a sign of complete regional failure."
     - content: "When you know definitively, that a region is down."
       isCorrect: true
-      explanation: "First there may be isolated reports from different sources, but they combine together and grow in number and volume until regional failure is the only explanation. Additionally, the Azure team will update the Azure status page with this information."
+      explanation: "First, there may be isolated reports from different sources, but they combine together and grow in number and volume until regional failure is the only explanation. Additionally, the Azure team will update the Azure status page with this information."
   - content: "What is the SLA for Azure DNS?"
     choices:
     - content: "100%"

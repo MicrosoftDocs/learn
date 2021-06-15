@@ -10,16 +10,16 @@ In this module, you've learned about the following benefits of Microsoft Endpoin
 - Benefits of co-management
 - Beneficial return on investment
  
-## Get started with Microsoft Endpoint Manager
+## Next steps
 
-Determine your mobile device management and mobile application management needs:
+To determine your mobile device management and mobile application management next steps, see the following resources:
 
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true)
-- [Plan your deployment with FastTrack experts (included in EMS subscription)](https://www.microsoft.com/fasttrack/microsoft-365/ems?azure-portal=true)
+- [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
 
 ## Learn more
 
 For more information about Microsoft Endpoint Manager, see the following resources:
 
 - [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/modern-management-and-security-principles-driving-our-microsoft/ba-p/946797?azure-portal=true)
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

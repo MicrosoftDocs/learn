@@ -29,4 +29,4 @@ Identity Protection provides organizations with three reports that they can use 
 
 After completing an investigation, admins will want to take action to remediate the risk or unblock users. Organizations can also enable automated remediation using their risk policies. Microsoft recommends closing events quickly because time matters when working with risk.
 
-Identity Protection is a feature of Azure AD Premium.
+Identity Protection is a feature of Azure AD Premium P2.

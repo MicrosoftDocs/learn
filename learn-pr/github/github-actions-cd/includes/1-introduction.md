@@ -9,6 +9,8 @@ In this module, you learn how to use GitHub Actions and workflows to implement a
 In this module, you will:
 
 - Discover options for triggering a CD GitHub Workflow
+- Understand steps to remove workflow artifacts
+- Identify important environment protections  
 - Control workflow execution with job conditionals
 - Deploy to Microsoft Azure with a GitHub deploy action
 - Store credentials with GitHub Secrets
@@ -26,4 +28,4 @@ This module assumes you've completed the [Automate development tasks by using Gi
 - Basic familiarity with continuous integration using GitHub Actions and workflows
   - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](/learn/modules/github-actions-ci/)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-- An understanding of [Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/)
+- An understanding of [Microsoft Azure Fundamentals](../../../paths/az-900-describe-cloud-concepts/index.yml)

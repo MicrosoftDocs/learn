@@ -17,7 +17,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -32,16 +32,17 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=Deploymulti-containersolutionstoKubernetes&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=Deploymulti-containersolutionstoKubernetes&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Kubernetes*.
 
     ![Creating a project through Azure DevOps Demo Generator](../media/3-create-new-project.png)
 
-1. Select **Yes, I want to fork this repository** > **Authorize**.
+1. Select **Yes, I want to import this repository** > **Authorize**.
 
     If a window appears, authorize access to your GitHub account.
 
@@ -69,13 +70,13 @@ Here you move the first item, **Create multi-container version of web site orche
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards**. Then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards**. Then, select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create multi-container version of web site orchestrated with Kubernetes** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi1-doing.png)
@@ -95,7 +96,8 @@ In this module, you use the Azure CLI to bring up the resources need to deploy a
 
 ### Bring up Cloud Shell through the Azure portal
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
@@ -125,7 +127,7 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=<REGION>
     ```
 
-    This example sets `westus2` as the default region:
+    This example sets `westus2` as the default region.
 
     ```azurecli
     az configure --defaults location=westus2
@@ -167,7 +169,7 @@ Create Bash variables to make the setup process more convenient and less error-p
 This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
-   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
@@ -227,7 +229,7 @@ This solution requires several Azure resources for deployment, which you create 
      --output table
     ```
 
-    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example:
+    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example.
 
     ```output
     LoginServer                      
@@ -265,7 +267,7 @@ To add the variables:
 
 1. Under **Properties**, enter *Release* for the variable group name.
 
-1. Under **Variables**, select **+ Add**.
+1. Under **Variables**, select **Add**.
 
 1. For the name of your variable, enter *RegistryName*. For the value, enter the login server for your Azure Container Registry, such as *tailspinspacegame4692.azurecr.io*.
 
@@ -277,39 +279,48 @@ To add the variables:
 
 ## Create required service connections
 
-Here you create service connections that enable Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
+Here, you create service connections that enable Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Kubernetes** project.
-1. From the bottom corner of the page, select **Project settings**.
-1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Docker Registry**, then select **Next**.
-1. Near the top of the page, select **Azure Container Registry**.
-1. Fill in these fields:
 
-    | Field               | Value                                        |
+1. From the bottom corner of the page, select **Project settings**.
+
+1. Under **Pipelines**, select **Service connections**.
+
+1. Select **New service connection**, then select **Docker Registry**, and then select **Next**.
+
+1. Near the top of the page, select **Azure Container Registry**.
+
+1. Enter the following values for each setting.
+
+    | Setting               | Value                                        |
     |---------------------|----------------------------------------------|
     | Subscription    | Your Azure subscription                          |
     | Azure container registry  | **Select the one you created earlier** |
     | Service connection name | *Container Registry Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
+
 1. Select **Save**.
 
-1. Select **New service connection**, then choose **Kubernetes**, then select **Next**.
-1. Near the top of the page, select **Azure Subscription**.
-1. Fill in these fields:
+1. Select **New service connection**, then select **Kubernetes**, and then select **Next**.
 
-    | Field               | Value                                        |
+1. Near the top of the page, select **Azure Subscription**.
+
+1. Enter the following values for each setting.
+
+    | Setting               | Value                                        |
     |---------------------|----------------------------------------------|
     | Subscription    | Your Azure subscription                          |
-    | Cluster  | **Select the one you created earlier** |
+    | Cluster  | *Select the one you created earlier* |
     | Namespace | *default*          |
     | Service connection name | *Kubernetes Cluster Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
+
 1. Select **Save**.
 
 ### Create the environment
@@ -332,11 +343,13 @@ Here you create service connections that enable Azure Pipelines to access your A
 
 Here you update the Kubernetes *deployment.yml* manifest to point to the container registry you created earlier.
 
-1. Navigate to the GitHub project created for this module. The project is named *mslearn-tailspin-spacegame-web-kubernetes* in your GitHub account.
+1. Go to the GitHub project created for this module. The project is named *mslearn-tailspin-spacegame-web-kubernetes* in your GitHub account.
+
 1. Open the file at *manifests/deployment.yml* in edit mode.
 
     ![The edit mode icon on GitHub](../media/3-github-edit-mode.png)
-1. Change the container image references to use your ACR login server. The code below uses *tailspinspacegame2439.azurecr.io* as an example.
+
+1. Change the container image references to use your ACR login server. The following code uses *tailspinspacegame2439.azurecr.io* as an example.
 
     [!code-yml[](code/3-1-deployment.yml?highlight=17,37)]
 

@@ -64,7 +64,7 @@ $GWIPconfName = "gwipconf"
 
     ```PowerShell
     $vnet = Get-AzVirtualNetwork -Name $VNetName -ResourceGroupName $ResourceGroup
-    $subnet = Get-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -VirtualNetwork $vnet
+    $subnet = Get-AzVirtualNetworkSubnetConfig -Name $GWSubName -VirtualNetwork $vnet
     ```
 
 1. Run the following command to request a dynamically assigned public IP address.

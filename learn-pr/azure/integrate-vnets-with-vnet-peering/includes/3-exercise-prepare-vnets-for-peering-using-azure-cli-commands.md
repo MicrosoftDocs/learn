@@ -22,9 +22,9 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name SalesVNet \
-        --address-prefix 10.1.0.0/16 \
+        --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
-        --subnet-prefix 10.1.1.0/24 \
+        --subnet-prefixes 10.1.1.0/24 \
         --location northeurope
     ```
 
@@ -34,9 +34,9 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name MarketingVNet \
-        --address-prefix 10.2.0.0/16 \
+        --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
-        --subnet-prefix 10.2.1.0/24 \
+        --subnet-prefixes 10.2.1.0/24 \
         --location northeurope
     ```
 
@@ -46,9 +46,9 @@ You'll create the following resources:
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ResearchVNet \
-        --address-prefix 10.3.0.0/16 \
+        --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
-        --subnet-prefix 10.3.1.0/24 \
+        --subnet-prefixes 10.3.1.0/24 \
         --location westeurope
     ```
     
@@ -76,7 +76,7 @@ Let's take a quick look at what you created.
 
 Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual networks. These VMs simulate the services in each virtual network. In the final unit of this module, you'll use these VMs to test connectivity between the virtual networks. 
 
-1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -94,7 +94,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
     > [!NOTE]
     > The `--no-wait` parameter in this command lets you continue working in Cloud Shell while the VM is building.
 
-1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -109,7 +109,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
         --admin-password <password>
     ```
 
-1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \

@@ -1,4 +1,4 @@
-React is an open-source framework to create user interfaces. It's most famous for creating web applications. But React can be used to create mobile or desktop applications through React Native. React focuses on the *View* in [Model-View-Controller](https://wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller/?azure-portal=true). So you can use other libraries for routing, state management, and accessing APIs. 
+React is an open-source framework to create user interfaces. It's most famous for creating web applications. But React can be used to create mobile or desktop applications through React Native. React focuses on the *View* in [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). So you can use other libraries for routing, state management, and accessing APIs. 
 
 This module explores the core concepts of React. It introduces *JavaScript XML* (JSX), components, and displaying data.
 

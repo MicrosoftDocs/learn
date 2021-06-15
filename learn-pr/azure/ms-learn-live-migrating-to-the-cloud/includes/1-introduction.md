@@ -1,6 +1,6 @@
 Welcome to Microsoft Learn Live! Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
 
-You can find all the details about Learn Live on our website at [http://aka.ms/learn-live](https://aka.ms/learn-live).
+You can find all the details about Learn Live on our website at [http://aka.ms/learn-live](/learn/?WT.mc_id=learnlive-video-learn).
 
 ## Series overview
 
@@ -10,7 +10,7 @@ Check out this short trailer to get an overview of the technologies covered in t
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LJ8B]
 
-There's a deployed version of the application available at [vanarsdel-realestate.azurewebsites.net](https://vanarsdel-realestate.azurewebsites.net).
+There's a deployed version of the application available at [vanarsdel-realestate.azurewebsites.net](https://vanarsdel-realestate2.azurewebsites.net).
 
 ## Use the Microsoft Learn Live Sandbox to get free access to Azure resources
 

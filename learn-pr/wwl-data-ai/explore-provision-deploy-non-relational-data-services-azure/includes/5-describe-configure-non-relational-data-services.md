@@ -11,7 +11,7 @@ The default connectivity for Azure Cosmos DB and Azure Storage is to enable acce
 
 ### Configure connectivity to virtual networks and on-premises computers
 
-To restrict connectivity, use the **Firewalls and virtual networks** page for a service. To limit connectivity, choose **Selected networks**. Three further sections will appear, labeled **Virtual Network**, **Firewall**, and **Exceptions**.
+To restrict connectivity, use the **Networking** page for a service. To limit connectivity, choose **Selected networks**. Three further sections will appear, labeled **Virtual Network**, **Firewall**, and **Exceptions**.
 
 In the **Virtual networks** section, you can specify which virtual networks are allowed to route traffic to the service. When you create items such as web applications and virtual machines, you can add them to a virtual network. If these applications and virtual machines require access to your resource, add the virtual network containing these items to the list of allowed networks.
 
@@ -19,16 +19,16 @@ If you need to connect to the service from an on-premises computer, in the **Fir
 
 The **Exceptions** setting allows you to enable access to any other of your services created in your Azure subscription. 
 
-For detailed information read [Configure Azure Storage firewalls and virtual networks](https://docs.microsoft.com/azure/storage/common/storage-network-security).
+For detailed information read [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security).
 
-The image below shows the **Firewalls and virtual networks** page for an Azure Storage account. Other services have the same, or similar, page.
+The image below shows the **Networking** page for an Azure Storage account. Other services have the same, or similar, page.
 
 > [!div class="mx-imgBorder"]
-> ![Image of the **Firewalls and virtual networks** page for a storage account in the Azure portal](../media/5-vnet-firewall.png)
+> ![Image of the **Networking** page for a storage account in the Azure portal](../media/5-vnet-firewall.png)
 
 ### Configure connectivity from private endpoints
 
-**Azure Private Endpoint** is a network interface that connects you privately and securely to a service powered by Azure Private Link. Private Endpoint uses a private IP address from your VNet, effectively bringing the service into your VNet. The service could be an Azure service such as Azure Storage, Azure Cosmos DB, SQL, or your own Private Link Service. For detailed information, read [What is Azure Private Endpoint?](https://docs.microsoft.com/azure/private-link/private-endpoint-overview).
+**Azure Private Endpoint** is a network interface that connects you privately and securely to a service powered by Azure Private Link. Private Endpoint uses a private IP address from your VNet, effectively bringing the service into your VNet. The service could be an Azure service such as Azure Storage, Azure Cosmos DB, SQL, or your own Private Link Service. For detailed information, read [What is Azure Private Endpoint?](/azure/private-link/private-endpoint-overview).
 
 The  **Private endpoint connections** page for a service allows you to specify which private endpoints, if any, are permitted access to your service. You can use the settings on this page, together with the **Firewalls and virtual networks** page, to completely lock down users and applications from accessing public endpoints to connect to your Cosmos DB account. 
 
@@ -50,7 +50,7 @@ Azure AD is a separate Azure service. You add users and other security principal
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4A94T]
 
-For detailed information on using Azure AD, visit the page [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) on the Microsoft website.
+For detailed information on using Azure AD, visit the page [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis) on the Microsoft website.
 
 ## Configure access control
 
@@ -77,22 +77,22 @@ You control access to resources using Azure RBAC to create role assignments. A r
 
     - **User Access Administrator** - Lets you manage user access to Azure resources.
 
-    You can also create your own custom roles. For detailed information, see [Create or update Azure custom roles using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/custom-roles-portal) on the Microsoft website.
+    You can also create your own custom roles. For detailed information, see [Create or update Azure custom roles using the Azure portal](/azure/role-based-access-control/custom-roles-portal) on the Microsoft website.
 
 - A **scope** lists the set of resources that the access applies to. When you assign a role, you can further limit the actions allowed by defining a scope. This is helpful if, for example, you want to make someone a Website Contributor, but only for one resource group.
 
-You add role assignments to a resource in the Azure portal using the **Access control (IAM)** page. The **Role assignments** tab enables you to associate a role with a security principal, defining the level of access the role has to the resource. For further information, read [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+You add role assignments to a resource in the Azure portal using the **Access control (IAM)** page. The **Role assignments** tab enables you to associate a role with a security principal, defining the level of access the role has to the resource. For further information, read [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 > [!div class="mx-imgBorder"]
 > ![Image of the **Access control (IAM)** page for a storage account in the Azure portal](../media/5-access-control-page.png)
 
-## Configure advanced security
+## Configure security
 
-Apart from authentication and authorization, many services provide additional protection through advanced security.
+Apart from authentication and authorization, many services provide additional protection through security.
 
-Advanced security implements threat protection and assessment. Threat protection adds security intelligence to your service. This intelligence monitors the service and detects unusual patterns of activity that could be harmful, or compromise the data managed by the service. Assessment identifies potential security vulnerabilities and recommends actions to mitigate them. 
+Security implements threat protection and assessment. Threat protection tracks security incidents and alerts across your service. This intelligence monitors the service and detects unusual patterns of activity that could be harmful, or compromise the data managed by the service. Recommendations identifies potential security vulnerabilities and recommends actions to mitigate them. 
 
-You're charged an additional fee for this feature. The image below shows the **Advanced security** page for Azure storage. The corresponding page for other non-relational services, such as Cosmos DB, is similar.
+The image below shows the **Security** page for Azure storage. The corresponding page for other non-relational services, such as Cosmos DB, is similar.
 
-> ![Image of the **Advanced security** page for a storage account in the Azure portal](../media/5-advanced-security.png)
+> ![Image of the **Security** page for a storage account in the Azure portal](../media/5-advanced-security.png)
 

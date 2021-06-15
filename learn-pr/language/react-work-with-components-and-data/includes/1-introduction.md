@@ -28,26 +28,27 @@ In this module, you learn how to:
 
 This module uses a starter project.
 
-1. To get the starter project, run the following in a command or terminal window to clone the repository and open the starter folder in Visual Studio Code:
+1. To get the starter project, run the following in a command or terminal window to clone the repository and open the starter folder in Visual Studio Code.
 
     ````bash
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react\\code\\2-component-events\\starter
+    cd mslearn-react\code\2-component-events\start
     code .
 
     # macOS or Linux
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react/code/2-component-events/starter
+    cd mslearn-react/code/2-component-events/start
     code .
     ````
 
 1. Open the integrated terminal inside Visual Studio Code by selecting **View** > **Terminal** (or **Ctl-\`** or **Cmd-\`** on a Mac).
-1. Run the following code in the terminal to install the necessary packages and start the development server:
+
+1. Run the following code in the terminal to install the necessary packages and start the development server.
 
     ```bash
     npm install
     npm start
     ```
 
-1. Your default browser automatically opens. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page appears.
+1. Your default browser automatically opens. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page will appear.

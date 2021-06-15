@@ -2,31 +2,38 @@ You can use .NET to find and return information about files and folders.
 
 Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
 
-## Sign in to the sandbox
-
-Activate the Microsoft Learn sandbox by selecting **Activate Sandbox** at the top of this page.
+> [!NOTE]
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
 ## Clone the project
 
 In this exercise, you'll write a .NET program that can search for files called *sales.json* in a folder.
 
+A starter project has already been created and you'll clone it using the integrated terminal in Visual Studio Code.
+
+1. Open Visual Studio Code.
+1. Open the Terminal window by selecting the **Terminal** option from the **View** menu.
+1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
 1. Run the following command to clone the example project for this module.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Create a new .NET Console project by entering the following commands in Azure Cloud Shell.
+1. Create a new .NET Console project by running the following commands in the terminal window.
 
     ```bash
     dotnet new console -n files-module -o .
     ```
 
-1. Open the Cloud Shell editor by entering the following command in Cloud Shell and selecting the <kbd>Enter</kbd> key.
+1. Open the new .NET project in the same instance of Visual Studio Code by typing in the following command in the terminal window.
 
     ```bash
-    code .
+    code -a .
     ```
+
+   > [!TIP]
+   > At this point Visual Studio Code will prompt you to that required assets to build and run the project are missing. And it asks whether you want to install them.    Select **Yes**. These files allow Visual Studio Code to run the debug the project.
 
 1. Expand the *stores* folder and each of the numbered folders inside.
 
@@ -84,15 +91,15 @@ You need to find all the sales.json files in all folders.
     }
     ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
 ## Run the program
 
-1. Enter the following command into Cloud Shell to run the program.
-    
+1. Run the following command into Visual Studio Code's terminal window to run the program.
+
     ```bash
     dotnet run
-    ``` 
+    ```
 
 1. The program should show the following output.
 

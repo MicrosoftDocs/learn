@@ -20,7 +20,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 
 1. Select your Azure Cosmos DB account.
 
-1. In the menu pane, scroll down, and under **Monitoring**, select **Metrics**. The Azure Cosmos DB **Metrics** panel appears.
+1. In the menu pane, scroll down, and under **Monitoring**, select **Metrics (Classic)**. The Azure Cosmos DB **Metrics (Classic)** panel appears.
 
 1. Scroll to the top of the menu pane, select **Overview**, and observe the aggregated view of all your databases and collections. Here, you see:
 

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.languages.aspnetcore-accessibility
+metadata:
+  title: Create accessible web apps with ASP.NET Core
+  description: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
+  ms.date: 04/20/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Create accessible web apps with ASP.NET Core
+summary: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Accessibility Insights for Web to find and fix common accessibility issues
+  - Navigate your web applications using a screen reader
+  - Improve accessibility by following web standards and best practices
+prerequisites: |
+  - Familiarity with building and deploying ASP.NET Core apps
+  - Ability to write C# at the beginner level
+  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+  - Experience with using the command line  
+  - Familiarity with the concepts of accessibility, disability, and inclusion
+  - Basic familiarity with web accessibility tools and design techniques. See [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/) for an introduction.
+iconUrl: /learn/achievements/aspnetcore-accessibility.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+- vs
+units:
+- learn.languages.aspnetcore-accessibility.1-introduction
+- learn.languages.aspnetcore-accessibility.2-web-accessibility-fundamentals
+- learn.languages.aspnetcore-accessibility.3-exercise-create-sample-application
+- learn.languages.aspnetcore-accessibility.4-accessible-web-forms
+- learn.languages.aspnetcore-accessibility.5-exercise-form-accessibility
+- learn.languages.aspnetcore-accessibility.6-visual-accessibility
+- learn.languages.aspnetcore-accessibility.7-exercise-visual-accessibility
+- learn.languages.aspnetcore-accessibility.8-screen-reader-accessible-content
+- learn.languages.aspnetcore-accessibility.9-exercise-fix-content-for-screen-readers
+- learn.languages.aspnetcore-accessibility.10-summary
+
+badge:
+  uid: learn.languages.aspnetcore-accessibility.badge

@@ -14,6 +14,26 @@ title: Deploy applications with Azure DevOps
 summary: |
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure release pipelines that continuously build, test, and deploy your applications.
 
+  This learning path is part of a series. You can choose the topics you're most interested in or progress through each of them. Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
+
+    [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
+
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+
+    Part 3: Deploy applications with Azure DevOps
+  :::column-end:::
+  :::row-end:::
+
   In this learning path, you will:
   - Create a basic release pipeline that deploys a web application to Azure App Service.
   - Build a more complete pipeline that deploys to multiple development and testing stages.
@@ -22,8 +42,8 @@ summary: |
   - Extend pipelines to add support for different deployment targets, such as Azure Functions.
   - Automate Docker and multi-container Kubernetes deployments with Azure Pipelines.
 prerequisites: |
-  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
-  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - [Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
+  - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   - An [Azure subscription](https://azure.microsoft.com/free/)
 iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:

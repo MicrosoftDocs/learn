@@ -3,15 +3,16 @@ uid: learn.language.rust-understand-common-concepts
 metadata:
   title: Understand common concepts in Rust
   description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
-  ms.date: 12/14/2020
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/10/2021
+  author: GitHubber17
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand common concepts in Rust
 summary: Learn the basics of Rust. Explore variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
 abstract:  |
   In this module, you will:
+  - Learn about the basic structure of a Rust program.
   - Use the `let` statement to assign values to variables.
   - Learn how to comment your code to make it more descriptive.
   - Discover the basic data types that exist in the Rust standard library.
@@ -32,15 +33,17 @@ products:
 - azure
 units:
 - learn.language.rust-understand-common-concepts.1-introduction
+- learn.language.rust-understand-common-concepts.1a-program-structure
 - learn.language.rust-understand-common-concepts.2-variables
 - learn.language.rust-understand-common-concepts.3-data-types
+- learn.language.rust-understand-common-concepts.3a-if-else-expressions
 - learn.language.rust-understand-common-concepts.4-structs-enums
-- learn.language.rust-understand-common-concepts.5-exercise-structs-enums
-- learn.language.rust-understand-common-concepts.6-functions
+- learn.language.rust-understand-common-concepts.4a-functions
+- learn.language.rust-understand-common-concepts.4b-exercise-functions
 - learn.language.rust-understand-common-concepts.7-collection-types
+- learn.language.rust-understand-common-concepts.7a-loops
 - learn.language.rust-understand-common-concepts.8-exercise-indexing
 - learn.language.rust-understand-common-concepts.9-exercise-hashmaps
-- learn.language.rust-understand-common-concepts.10-control-flow
 - learn.language.rust-understand-common-concepts.11-knowledge-check
 - learn.language.rust-understand-common-concepts.12-summary
 badge:

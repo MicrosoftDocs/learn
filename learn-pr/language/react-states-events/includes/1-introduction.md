@@ -27,7 +27,7 @@ This module uses a starter project. Clone the project and open it in Visual Stud
     ````bash
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd mslearn-react\\code\\3-state-events\\starter
+    cd mslearn-react\code\3-state-events\starter
     code .
 
     # macOS or Linux

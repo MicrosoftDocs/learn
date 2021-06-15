@@ -28,6 +28,7 @@ roles:
 products:
 - azure
 - azure-app-service
+- azure-migrate
 units:
 - learn.azure.migrate-app-service-migration-assistant.introduction
 - learn.azure.migrate-app-service-migration-assistant.exercise-setup

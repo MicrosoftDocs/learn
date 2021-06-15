@@ -1,29 +1,20 @@
-Machine learning is essentially the process of creating knowledge from raw data. Machine learning is part of a broader field - data science. Significant work is required to covert raw data into to knowledge.
+Machine learning is part of the broader field of data science. It's essentially the process of creating knowledge from raw data. 
 
-For example, let's imagine you have a garden where you're trying to plant lettuce. You want to optimize it to grow the most amount of lettuce in the least amount of time. There's a lot of data you can collect that might influence how you set up the most successful environment. You can factor in sun exposure, temperature, moisture in the soil and air, type of lettuce, exposure to fresh air, size of the planter, type of soil, amount of soil. The list could be even longer, since there might be some things that would affect the growth that you might not even realize, like noise level or type of noise near the plant.
+Significant work is required to covert raw data to knowledge. For example, imagine you have a garden and you're trying to grow lettuce. You want to optimize your garden so that you can grow the most amount of lettuce in the least amount of time. You can collect a large amount of data that might influence how you set up the most successful environment to grow lettuce.
 
-The [data science lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can help guide you on your journey to the creation of new knowledge from data sources.
+You can factor in sun exposure, temperature, moisture in the soil and air, the type of lettuce and seed source, exposure to fresh air, the size of the planter, and the quality and amount of soil. The list might be even longer because there might be some factors that affect growth that you aren't even be aware of, like noise level or the type of noise near your garden.
 
-:::image type="content" source="../media/data-science-lifecyle.png" alt-text="Diagram of the Data Science Lifecycle." loc-scope="Azure":::
+## Data science lifecycle
 
-The four steps, discussed throughout these units are:
+An understanding of the [data science lifecycle](/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can guide you in your effort to create new knowledge from data sources.
 
-1. Define a business goal using subject matter expertise
-2. Collect, clean, and manipulate your data
-3. Choose a machine learning algorithm, and then train and test your model
-4. Deploy your model to be used with other applications
+:::image type="content" source="../media/data-science-lifecycle.png" alt-text="Image that shows a diagram of the data science lifecycle." border="false" loc-scope="Azure":::
 
-## Step 1: Business goal and subject matter expertise
+Here are the four steps of the data science lifecycle:
 
-First you need a clear goal: get as much lettuce as fast as possible. However, the conditions aren't absolute. If your baseline production is 1 pound of lettuce in 14 days, and you learn a way to speed up production. If you play classical music at 50 decibels for 30 minutes every three hours, you get the same 1 pound of lettuce in 13.5 days. Such a complex solution is probably not worth the hassle.
+1. Define a business goal by using subject matter expertise.
+2. Collect, clean, and manipulate your data.
+3. Choose a machine learning algorithm, and then train and test your model.
+4. Deploy your model, to be used with other applications.
 
-So it seems *possible* that sound  affects plant growth. However, the *likelihood* of the affect impacting your outcome might be too small to be worth considering. Access to subject matter experts (SMEs) in plant growth is important so that you don't modify variables that won't yield major changes.
-
-If you look at rocket launches and weather patterns with the same lens, you see that the goal really has two parts:
-
-- Increase the likelihood that the day chosen for launch will be a good day
-- Know what conditions should stop a launch if necessary
-
-The expertise needed to reach those goals includes meteorologists, physicists, biologists, rocket scientists, and many others. SMEs create scopes for what aspects require critical attention, thereby minimizing the number of variables that need to be analyzed.
-
-For example, SMEs might determine that that the amount of direct sunlight on the launch pad might not make a difference, but that the moisture in the air does. They might also know that there are ranges of important data that we can disregard. For example, a launch-site temperature of less than 30 degrees fahrenheit rules out consideration of all the other factors.
+Read on to look at each step in the data science lifecycle in more detail.

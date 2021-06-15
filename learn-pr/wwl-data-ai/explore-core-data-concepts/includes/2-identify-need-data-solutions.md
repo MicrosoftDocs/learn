@@ -54,10 +54,14 @@ Structured data is typically tabular data that is represented by rows and column
 
 There are other types of semi-structured data as well. Examples include *key-value* stores and *graph* databases. 
 
-A key-value store is similar to a relational table, except that each row can have any number of columns.
+A key-value database stores Associative arrays. In those arrays, a Key serves as a unique identifier to retrieve a specific value. Those values can be anything from a number or a string to a complex object, like a JSON file. 
+
+A key-value database stores data as a single collection without structure or relation. That makes them different to a relational database where tables are made up of rows and columns with predefined data types.
+
 The image below shows an example of key-value data.
 
-:::image type="content" source="../media/2-key-value.png" alt-text="Key-value data":::
+> [!div class="mx-imgBorder"]
+![Image showing an example of key-value data.](../media/2-key-value.png)
 
 You can use a graph database to store and query information about complex relationships. A graph contains nodes (information about objects), and edges (information about the relationships between objects). The image below shows an example of how you might structure the data in a graph database.
 
@@ -111,7 +115,7 @@ Most analytical data processing systems need to perform similar tasks: data inge
 
 - **Data Ingestion**: Data ingestion is the process of capturing the raw data. This data could be taken from control devices measuring environmental information such as temperature and pressure, point-of-sale devices recording the items purchased by a customer in a supermarket, financial data recording the movement of money between bank accounts, and weather data from weather stations. Some of this data might come from a separate OLTP system. To process and analyze this data, you must first store the data in a repository of some sort. The repository could be a file store, a document database, or even a relational database.
 
-- **Data Transformation/Data Processing**: The raw data might not be in a format that is suitable for querying. The data might contain anomalies that should be filtered out, or it may require transforming in some way. For example, dates or addresses might need to be converted into a standard format. After data is ingested into a data repository, you may want to do some cleaning operations and remove any questionable or invalid data, or perform some aggregations such as calculating profit, margin, and other Key Performance Metrics (KPIs). KPIs are how businesses are measured for growth and performance.
+- **Data Transformation/Data Processing**: The raw data might not be in a format that is suitable for querying. The data might contain anomalies that should be filtered out, or it may require transforming in some way. For example, dates or addresses might need to be converted into a standard format. After data is ingested into a data repository, you may want to do some cleaning operations and remove any questionable or invalid data, or perform some aggregations such as calculating profit, margin, and other Key Performance Indicators (KPIs). KPIs are how businesses are measured for growth and performance.
 
 - **Data Querying**: After data is ingested and transformed, you can query the data to analyze it. You may be looking for trends, or attempting to determine the cause of problems in your systems. Many database management systems provide tools to enable you to perform ad-hoc queries against your data and generate regular reports.
 

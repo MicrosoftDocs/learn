@@ -15,13 +15,13 @@ After completing this module, you will be able to:
 - Familiarity with JavaScript
 - Familiarity with functions and arrays in JavaScript
 - Installed software:
-  - [Git](https://git-scm.com/?azure-portal=true)
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - [Node.js](https://nodejs.org/?azure-portal=true)
+  - [Git](https://git-scm.com/)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [Node.js](https://nodejs.org/)
   - TypeScript - TypeScript can be installed after installing Node.js after running the following in a terminal or command window:
 
       ```bash
       npm install -g typescript
       ```
 
-For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [Module 01: Get started with TypeScript](/learn/modules/typescript-get-started/). After setting up your environment, you can run any of the Lab setup or solution files in the  [Build JavaScript applications by using TypeScript](/learn/paths/build-javascript-applications-typescript/) learning path.
+For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [Module 01: Get started with TypeScript](/learn/modules/typescript-get-started/). After setting up your environment, you can run any of the Lab setup or solution files in the  [Build JavaScript applications by using TypeScript](../../../paths/build-javascript-applications-typescript/index.yml) learning path.

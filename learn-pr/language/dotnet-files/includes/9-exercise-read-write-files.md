@@ -32,7 +32,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     using System.IO;
     using System.Collections.Generic;
     using Newtonsoft.Json; 
-      ```
+    ```
 
 ## Create a method to calculate sales totals
 
@@ -107,15 +107,15 @@ In this exercise, you'll complete the project by reading the .json files, adding
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);            
         
-        var files = FindFiles(storesDir);
+        var salesFiles = FindFiles(storesDir);
         
-        var salesTotal = CalculateSalesTotal(files);
+        var salesTotal = CalculateSalesTotal(salesFiles);
         
         File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
     }
     ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *Program.cs* file.
+1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the *Program.cs* file.
 
 ## Run the program
 
@@ -125,7 +125,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalsDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 

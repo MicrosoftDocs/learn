@@ -52,7 +52,7 @@ Even a basic audit of your database landscape requires a repetition of effort an
 
 The best approach is to use an automated process that removes repetition and human error to return consistent results. This method is used in the Microsoft Assessment and Planning (MAP) toolkit, which includes tools for discovering and documenting your SQL Servers.
 
-![Microsoft Assessment and Planning](../media/3-map-screenshot.png)
+![Screenshot of the Microsoft Assessment and Planning Toolkit.](../media/3-map-screenshot.png)
 
 Use MAP to scan your landscape and return the names of the SQL Server instances it finds, along with the version and edition, and installed components. You view this data graphically to easily consume the results. MAP also audits the operating system and hardware, instance settings, and settings for each database. 
 

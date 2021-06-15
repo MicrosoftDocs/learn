@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Get subscription keys
   description: "Learn how to get the subscription keys for your Face API"
   ms.date: 10/14/2020
-  author: gerryaobrien
-  ms.author: gerryo
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: You will use this module to gain a baseline understanding of storage considerations when running High-Performance Compute workloads in Azure
+  description: This module provides a baseline understanding of storage considerations to take into account when you're running high-performance computing workloads in Azure.
   ms.date: 12/29/2020 
   author: scjescho
   ms.author: scjescho

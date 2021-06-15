@@ -13,6 +13,7 @@ In an enterprise machine learning solution, where experiments may be run in a va
 You can have Azure Machine Learning manage environment creation and package installation to define an environment, and then register it for reuse. Alternatively, you can manage your own environments and register them. This makes it possible to define consistent, reusable runtime contexts for your experiments - regardless of where the experiment script is run.
 
 ## Creating environments
+
 There are multiple ways to create environments in Azure Machine Learning.
 
 ### Creating an environment from a specification file
@@ -67,16 +68,21 @@ env.python.conda_dependencies = deps
 
 ## Configuring environment containers
 
-Usually, you should create environments in containers (this is the default unless the **docker.enabled** property is set to **False**, in which case the environment is created directly in the compute target)
+Usually, environments for experiment script are created in containers. The following code configures a script-based experiment to host the **env** environment created previously in a container (this is the default unless you use a **DockerConfiguration** with a **use_docker** attribute of **False**, in which case the environment is created directly in the compute target)
 
 ```Python
-env.docker.enabled = True
-deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','pip'],                      
-                                pip_packages=['azureml-defaults']
-env.python.conda_dependencies = deps
+from azureml.core import Experiment, ScriptRunConfig
+from azureml.core.runconfig import DockerConfiguration
+
+docker_config = DockerConfiguration(use_docker=True)
+
+script_config = ScriptRunConfig(source_directory='my_folder',
+                                script='my_script.py',
+                                environment=env,
+                                docker_runtime_config=docker_config)
 ```
 
-Azure Machine Learning uses a library of base images for containers, choosing the appropriate base for the compute target you specify (for example, including Cuda support for GPU-based compute). If you have created custom container images and registered them in a container registry, you can override the default base images and use your own.
+Azure Machine Learning uses a library of base images for containers, choosing the appropriate base for the compute target you specify (for example, including Cuda support for GPU-based compute). If you have created custom container images and registered them in a container registry, you can override the default base images and use your own by modifying the attributes of the environment's **docker** property..
 
 ```Python
 env.docker.base_image='my-base-image'
@@ -131,8 +137,8 @@ from azureml.core import Environment, ScriptRunConfig
 
 training_env = Environment.get(workspace=ws, name='training_environment')
 
-script_config = ScriptRunConfig(source_directory='my_dir',
-                                script='script.py',
+script_config = ScriptRunConfig(source_directory='my_folder',
+                                script='my_script.py',
                                 environment=training_env)
 ```
 

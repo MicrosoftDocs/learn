@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this unit, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 04/13/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 4 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Suppose you are deploying an image recognition solution with the following modules; Camera module for capturing video streams from a camera, Custom Vision module as a classifier, Display module to display the output of AI model. Which of the following concepts best describes how to run this solution on an IoT Edge device, in order?"
+    choices:
+    - content: "Create your modules - Write a deployment manifest - Push deployment manifest to IoT Hub Service - Push deployment manifest to edge device"
+      isCorrect: false
+      explanation: "You need to package the module in a container before pushing it to the edge device."
+    - content: "Create your modules - Package them in a container - Push them to Docker Container Registry - Write a deployment manifest - Push deployment manifest to IoT Hub Service - Push deployment manifest to edge device"
+      isCorrect: true
+      explanation: "Because this configuration enables you to push containerized modules to the edge device."
+    - content: "Create your modules - Package them in a container - Push them to Docker Container Registry - Write a deployment manifest - Push deployment manifest to edge device - Push deployment manifest to IoT Hub Service"
+      isCorrect: false
+      explanation: "Firstly, you need to push deployment manifest to the IoT Hub then push to edge device."
+  - content: "Consider the scenario of creating an image recognition solution using Custom Vision with Azure IoT Edge. How did we enable use of Cognitive Services within the Azure IoT Edge deployment that we used in this module?"
+    choices:
+    - content: "Using REST API"
+      isCorrect: true
+      explanation: "In this module, Cognitive Services is accessed as a REST API on edge devices"
+    - content: "Using Custom Vision SDK"
+      isCorrect: false
+      explanation: "In this module, Cognitive Services is accessed as a REST API on edge devices"
+    - content: "Using containers  "
+      isCorrect: false
+      explanation: "Azure Cognitive Services provides several Docker containers. In this module, you aren't using these supported containers."
+  - content: "Which of the IoT Edge components pull the module image down from the Docker Registry so that the module can be deployed to IoT Edge device?"
+    choices:
+    - content: "IoT Edge cloud interface"
+      isCorrect: false
+      explanation: "IoT Edge cloud interface creates and configures a workload to be run on a specific type of device."
+    - content: "IoT Edge module"
+      isCorrect: false
+      explanation: "IoT Edge module is unit of execution implemented as Docker compatible container that runs your business logic at the edge."
+    - content: "IoT Edge runtime"
+      isCorrect: true
+      explanation: "IoT Edge Runtime installs and updates workloads on the device."
+    
+    

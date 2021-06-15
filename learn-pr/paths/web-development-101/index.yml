@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.student-evangelism.web-development-101
+metadata:
+  title: Web development for beginners
+  description: Learn the basics of web development.
+  ms.date: 04/26/2021
+  author: softchris
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-web-development
+title: Web Development for Beginners
+prerequisites: none
+summary: |
+  Learn the basics of web development, including programming languages and tools, and web accessibility.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+modules:
+- learn.student-evangelism.web-development-101.introduction-to-programming
+- learn.student-evangelism.web-development-101.accessibility
+- learn.student-evangelism.web-development-101.functions
+trophy:
+  uid: learn.student-evangelism.web-development-101.trophy

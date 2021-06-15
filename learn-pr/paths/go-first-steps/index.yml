@@ -4,7 +4,7 @@ metadata:
   title: Take your first steps with Go
   description: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
   brand: azure
-  ms.date: 01/21/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ summary: |
 prerequisites: |
   - Some programming basics in general
   - Familiarity with at least one programming language
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/go/go-first-steps.svg
 levels:
 - beginner
 roles:
@@ -43,3 +43,4 @@ modules:
 - learn.language.go-write-test-program
 trophy:
   uid: learn.languages.go-first-steps.trophy
+hidden: true

@@ -14,9 +14,9 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. The article [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. The article [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser) explains how to add a user. When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps, and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -29,16 +29,20 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=provision-database-azure-pipelines&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=provision-database-azure-pipelines&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - ProvisionDB*.
-1. Select **Yes, I want to fork this repository** and then select **Authorize**.
+
+1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
+
 1. Select **Create Project**.
 
    It takes a few moments for the template to run.
+
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
@@ -63,11 +67,11 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. From the **Provision a database in each environment** work item, select the arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
     ![Azure Boards showing the card in the Doing column.](../media/4-boards-2.png)

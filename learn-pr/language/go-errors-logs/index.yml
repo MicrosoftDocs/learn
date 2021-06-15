@@ -3,7 +3,7 @@ uid: learn.language.go-errors-logs
 metadata:
   title: Implement error handling and logging in Go
   description: Understand how to handle errors and log helpful information in your Go programs.
-  ms.date: 01/21/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   - Knowledge of basic data types, like `string`, `int`, and `boolean`.
   - Knowledge of how to write basic data control flows, like `if` and `for` statements.
   - Knowledge of how to write functions that have multiple return values.
-iconUrl: /learn/achievements/go-errors-logs.svg
+iconUrl: /learn/achievements/go/go-errors-logs.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,7 @@ roles:
 - student
 products:
 - azure
+- vs-code
 units:
 - learn.language.go-errors-logs.0-introduction
 - learn.language.go-errors-logs.1-errors
@@ -39,3 +40,4 @@ units:
 - learn.language.go-errors-logs.4-summary
 badge:
   uid: learn.language.go-errors-logs.badge
+hidden: true

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
+title: Exercise - Extract data from custom forms
+metadata:
+  title: Exercise - Extract data from custom forms
+  description: "Exercise - Extract data from custom forms"
+  ms.date: 05/31/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 93753
+labModal: true
+durationInMinutes: 25
+content: |
+  [!include[](includes/8-exercise-extract-data-from-custom-forms.md)]

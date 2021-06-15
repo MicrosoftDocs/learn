@@ -1,5 +1,5 @@
 
-## Create an Office 365 group in Azure Active Directory
+## Create a Microsoft 365 group in Azure Active Directory
 
 1. Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
 

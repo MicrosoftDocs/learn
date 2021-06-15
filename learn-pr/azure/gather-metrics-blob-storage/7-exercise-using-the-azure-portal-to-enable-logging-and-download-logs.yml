@@ -3,7 +3,7 @@ uid: learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-por
 title: Exercise - Use the Azure portal to enable logging
 metadata:
   title: Exercise - Use the Azure portal to enable logging
-  description: Use the Azure portal to enable logging
+  description: Use the Azure portal to enable logging.
   ms.date: 03/26/2019
   author: rmcmurray
   ms.author: robmcm

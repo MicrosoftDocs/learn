@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-ai-fundamentals
 metadata:
   title: Get started with AI on Azure
   description: "Get started with AI on Azure"
-  ms.date: 01/12/2021
+  ms.date: 05/26/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,7 +20,6 @@ levels:
 roles:
 - ai-engineer
 - data-scientist
-- developer
 - student
 products:
 - azure-bot-service

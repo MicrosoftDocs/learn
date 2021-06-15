@@ -16,7 +16,7 @@ You can, alternately, use BYOK and take advantage of an Azure key vault. In this
 
 You can also take advantage of column-level encryption, which is supported in Azure SQL just as it is in SQL Server. Similarly, the Always Encrypted feature is supported just as it is in SQL Server. This process involves using client-side encryption of sensitive data, which uses keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There is currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
 
-The Always Encrypted feature with secure enclaves is now avaialable in preview for Azure SQL Database but not yet supported for Azure SQL Managed Instance.
+The Always Encrypted feature with secure enclaves is now available in preview for Azure SQL Database but not yet supported for Azure SQL Managed Instance.
 
 ## Dynamic Data Masking
 
@@ -24,17 +24,19 @@ On occasion, you'll want to mask or modify certain data so that nonprivileged us
 
 :::image type="content" source="../media/6-mask-recommendations.png" alt-text="Screenshot of Dynamic Data Masking recommendations in the Azure portal.":::
 
-Let's take a look at an example where the data includes sensitive information, such as social security numbers, email addresses, and salaries. You can apply a mask to those columns with the Azure portal or the following T-SQL commands:
+Let's take a look at an example where the data includes sensitive information, such as names and email addresses. You can apply a mask to those columns with the Azure portal or the following T-SQL commands:
 
 ```sql
-ALTER TABLE [Employee] ALTER COLUMN [SocialSecurityNumber]
-ADD MASKED WITH (FUNCTION = 'Partial(0,"XXX-XX-",2)')
+ALTER TABLE Data.Membership ALTER COLUMN FirstName
+ADD MASKED WITH (FUNCTION = 'partial(1, "xxxxx", 1)')
 
-ALTER TABLE [Employee] ALTER COLUMN [Email]
-ADD MASKED WITH (FUNCTION = 'EMAIL()')
+ALTER TABLE Data.Membership ALTER COLUMN Email
+ADD MASKED WITH (FUNCTION = 'email()')
 
-ALTER TABLE [Employee] ALTER COLUMN [Salary]
-ADD MASKED WITH (FUNCTION = 'RANDOM(1,20000)')
+ALTER TABLE Data.Membership ALTER COLUMN DiscountCode 
+ADD MASKED WITH (FUNCTION = 'random(1, 100)’)
+ 
+GRANT UNMASK to DataOfficers
 ```
 
 From the preceding commands, you can see that there are multiple ways to apply a mask via functions.

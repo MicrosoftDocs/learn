@@ -80,4 +80,4 @@ The serverless version of Azure SQL Database mitigates this by scaling the datab
 
 1. _Microsoft (2019). *Automate handling emails and attachments with Azure Logic Apps*. <https://docs.microsoft.com/azure/logic-apps/tutorial-process-email-attachments-workflow>._
 
-[^1]: <https://docs.microsoft.com/azure/logic-apps/tutorial-process-email-attachments-workflow>  "Microsoft (2019). *Automate handling emails and attachments with Azure Logic Apps*."
+[^1]: /azure/logic-apps/tutorial-process-email-attachments-workflow "Microsoft (2019). *Automate handling emails and attachments with Azure Logic Apps*."
