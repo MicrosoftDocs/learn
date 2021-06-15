@@ -2,19 +2,11 @@ Alerts proactively notify you when the monitoring system detects important issue
 
 Here, you learn about the alert experience in Azure Monitor, which includes Log Analytics and Application Insights.
 
-## The meeting
-
-**Andy:** Mara, you said our SRE will need good analytic skills, which makes sense.
-
-**Mara:** Maybe we could ask them to walk us through how they analyze an alert and determine the problem. Also, how do they write the alert rules to get the right information and to distinguish between what's normal and what's not.
-
-**Tim:** They need to know how to establish a baseline.
-
 ## Analyze alerts to establish a baseline
 
-The team needs to understand how they can establish a baseline with Application Insights. This diagram shows the flow of alerts:
+An effective alerting strategy starts with establishing a baseline. This diagram shows the flow of alerts:
 
-![A drawing of alerts flowing from rule to action group or monitor condition](../media/4-flow-of-alerts.png)
+:::image type="content" source="../media/4-flow-of-alerts.png" alt-text="A diagram that shows how alerts flow from a rule to an action group or monitor condition.":::
 
 Alert rules are separated from alerts and the actions that are taken when an alert fires.
 
@@ -76,7 +68,7 @@ The default **Alerts** page provides a summary of alerts that are created within
 
 Here's an example:
 
-![A screenshot of the all alerts page](../media/4-all-alerts-page.png)
+:::image type="content" source="../media/4-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page.":::
 
 You can filter this view by selecting values in the drop-down menus at the top of the page.
 
@@ -100,7 +92,7 @@ Select **Manage alert rules** to show the **Rules** page. The rules page is a si
 
 Here's an example:
 
-![A screenshot of the rules page](../media/4-manage-alert-rules.png)
+:::image type="content" source="../media/4-manage-alert-rules.png" alt-text="A screenshot showing the rules page.":::
 
 ## Create an alert rule
 
@@ -122,7 +114,7 @@ Alerts are available across several Azure monitoring services. For information a
 
 Click on **Total Alerts** to see the **All Alerts** page. Here, you can view a list of alerts that were created within the selected time window. You can view either a list of the individual alerts or a list of the smart groups that contain the alerts. Select the banner at the top of the page to toggle between views.
 
-![A screenshot of the all alerts page with a list of alerts](../media/5-all-alerts-page.png)
+:::image type="content" source="../media/5-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page that includes a list of alerts":::
 
 You can filter the view by selecting the following values in the dropdown menus at the top of the page.
 
@@ -139,9 +131,3 @@ You can filter the view by selecting the following values in the dropdown menus 
 | Time range |Only alerts fired within the selected time window are included in the view. |Supported values are the past hour, the past 24 hours, the past 7 days, and the past 30 days.|
 
 Select **Columns** at the top of the page to select which columns to display.
-
-## The final step
-
-**Andy:** OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us much credibility.
-
-The last thing I want to bring up affects all of us. Pushing out to production exposes us a lot more. There will inevitably be problems, failures, stress, and mistakes. How do we want to handle that?
