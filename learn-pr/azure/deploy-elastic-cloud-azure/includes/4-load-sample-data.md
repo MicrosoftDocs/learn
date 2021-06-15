@@ -2,7 +2,7 @@ Data visualization is a method for creating dashboards, reports, and real-time i
 
 ## Kibana Canvas enables data visualization
 
-Kibana is a window into the Elastic Stack for data consumers and operators of Elastic alike. Kibana Canvas, the name of the app itself, allows you to perform out-of-the-box Kibana data visualizing. Exploring Kibana Canvas provides a peek into the art of what is possible when it comes to visualizing data from Elasticsearch.
+Kibana is a window into the Elastic Stack for data consumers and operators of Elastic alike. Kibana Canvas, the name of the app itself, allows you to perform out-of-the-box Kibana data visualizing. Exploring Kibana Canvas provides a peek into the art of what is possible when it comes to visualizing data with Elasticsearch.
 
 ## Kibana alerts you to ML-based insights
 
