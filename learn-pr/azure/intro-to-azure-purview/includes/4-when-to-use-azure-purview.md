@@ -1,176 +1,46 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Here, we'll discuss how you can decide if Azure Purview is the right choice for your data governance and discovery needs. We'll list some criteria that indicate whether Azure Purview will meet your requirements.
 
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
+* Discovery
+* Governance
 
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether (product) is appropriate to (general product use case)."
-        Decision criteria as a bulleted list.
-
-    Heading: none
-
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
-
-<!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the criteria discussion.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: describing the negative ("when not to use") at a high level.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Decision criteria"
-
-    Example:
-        "Decision criteria"
-         "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
 ## Decision criteria
-TODO: add your 3 lead-in sentences
+Let's take a look at the listed criteria and see how Azure Purview can help address the needs in those specific areas.
 
-<!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
+### Discovery
+Because there's no central location to register data sources, users might be unaware of a data source unless they come into contact with it as part of another process. The catalog makes data sources easily discoverable and understandable by the users who manage the data.
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for simple criteria where the analysis is brief and does not require a visual element.
+Unless users know the location of a data source, they can't connect to the data by using a client application. Data-consumption experiences require users to know the connection string or path.
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+The intended use of the data is hidden to users unless they know the location of a data source's documentation. Data sources and documentation might live in several places and be consumed through different kinds of experiences.
 
-    Heading: none, this content will be the 'body' for the "Decision criteria" heading above.
+### Governance
+As the data in your organization grows, the task of discovering, protecting, and governing that data, becomes increasingly difficult. Data is stored in different locations, which may be required for compliance reasons. The data may contain sensitive information such as credit card numbers, social security numbers, or personally identifiable information.
 
-    Pattern:
-        No heading.
-        Place both the criteria and analysis into a table.
+Compliance with company security policies, government regulations, and customer needs, are critical considerations for data governance. Understanding which data sources contain sensitive information is key to knowing where protections are needed and how to guard against access to this sensitive data.
 
-    Example:
-        | | |
-        | --- | --- |
-        | **Criteria** | **Analysis**|
-        | **Integration** | The key question to ask when you're considering Logic Apps is "do I need to integrate services?".... |
-        | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically.... |
-        | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
-        | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
-        |   |   |
--->
-TODO: add your topic sentences(s)
+:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of Purview Studio. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
 
-<!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
-
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for complex criteria where the analysis of each criterion needs both and a visual element.
-
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
-
-    Pattern:
-        For each criterion, repeat this pattern:
-            1. H3 of the criterion.
-            2. 1-3 paragraphs of discussion/analysis.
-            3. Visual like an image, table, list, code sample, or blockquote.
-            
-    Example:
-        H3: "Integration"
-        Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
-        Visual: (image preferred)
--->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the example applications of the criteria.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which (product) won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Apply the criteria"
-
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
 ## Apply the criteria
-TODO: add your 3 lead-in sentences
+Let's take a look at how Azure Purview can address the criteria mentioned.
 
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
+### Does Azure Purview help with data discovery?
+Do you require a solution or centralized location to register data sources?  For the most part, users might be unaware of a data source unless they come into contact with it as part of another process. Azure Purview can help to provide a solution.
 
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
+Once you have data sources registered in the Purview Studio and displayed in the data map, you can set up scanning of those data sources. The metadata returned helps the catalog the data found in those sources, making it easier for users to discover what the data sources contain. The metadata is also indexed to make each data source easily discoverable via search and understandable to the users who discover it.
 
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should (scenario subtask) use (product)?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
+At the same time, users can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. They can also register new data sources, which are then discovered, understood, and consumed by the community of catalog users.
 
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: (image preferred)
--->
+:::image type="content" source="../media/list-view.png" alt-text="Screenshot of the Sources window in Purview Studio. It depicts the List View option for a Blob Storage data source showing columns for source name, source type, associated collection, source ID, any scans that are associated, and the date the source was registered.":::
 
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### Does Azure Purview help with data governance?
+Azure Purview can scan and automatically classify documentation files. Azure Purview classifies data by RegEx and Bloom Filter. Bloom Filter classifications include attributes for city, country, place, and person information. RegEx classifications cover a broad range of attributes that cover categories such as bank information (ABA routing numbers or country-specific banking account numbers), passport numbers, country-specific identification numbers, etc. You can find the [full list of supported classifications](https://docs.microsoft.com/azure/purview/supported-classifications) in the documentation for Azure Purview.
 
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+Azure Purview also uses pre-defined Data Plane roles to help control who has access to the information in Azure Purview. For access, users can only use the Azure Purview Account if they are placed in at least one of the supported roles (Data Reader, Data Curator, Data Source Administrator). When an Azure Purview Account is created, no one but the creator can access the account or use its APIs until they are put in one or more of the previous defined roles. The roles are described in this bullet list:
 
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+* Purview Data Reader Role - Has access to the Purview portal and can read all content in Azure Purview except for scan bindings
+* Purview Data Curator Role - Has access to the Purview portal and can read all content in Azure Purview except for scan bindings, can edit information about assets, can edit classification definitions and glossary terms, and can apply classifications and glossary terms to assets.
+* Purview Data Source Administrator Role - Does not have access to the Purview Portal (the user needs to also be in the Data Reader or Data Curator roles) and can manage all aspects of scanning data into Azure Purview but does not have read or write access to content in Azure Purview beyond those tasks related to scanning.
 
-<!-- 6. Guidance summary (optional) ------------------------------------------------
+:::image type="content" source="../media/purview-data-roles.png" alt-text="Screenshot depicting the three Data Plane roles, which are found in the Access control (IAM) pane for the Azure Purview account, in the Azure portal. There are other roles displayed in the Roles tab, along with these three Data Plane roles.":::
 
-    Goal: Job-aid for future use to help customers evaluate their own tasks against the criteria.
-
-    Pattern:
-        1. Heading "## Guidance summary"
-        2. Lead-in sentence acknowledging that this is a summary/repeat of previous material.
-        3. Visual like a flowchart (as an image) or rubric (as a table).
-
-    Example:
-        "The following flowchart summarizes the key questions to ask when you're considering using Logic Apps."
-        <flowchart image>
--->
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+The role assignment is managed via Azure's role-based access control (RBAC) capabilities.
