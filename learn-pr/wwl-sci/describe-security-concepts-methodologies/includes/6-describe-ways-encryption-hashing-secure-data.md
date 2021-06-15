@@ -2,7 +2,7 @@ One way to mitigate against common cybersecurity threats is to encrypt sensitive
 
 There are two top-level types of encryption: symmetric and asymmetric. Symmetric encryption uses the same key to encrypt and decrypt the data. Asymmetric encryption uses a public key and private key pair. Either key can encrypt data, but a single key can’t be used to decrypt encrypted data. To decrypt, you need a paired key. Asymmetric encryption is used for things like Transport Layer Security (TLS), such as the HTTPS protocol, and data signing. Encryption may protect data at rest, or in transit.
 
-:::image type="content" source="../media/6-encryption-2.png" alt-text="The concept of symmetric and asymmetric encryption":::
+:::image type="content" source="../media/6-encryption-3.png" alt-text="The concept of symmetric and asymmetric encryption":::
 
 ## Encryption at rest
 
@@ -25,4 +25,4 @@ Hashing is different to encryption in that it doesn't use keys, and the hashed v
 Hashing is used to store passwords. When a user enters their password, the same algorithm that created the stored hash creates a hash of the entered password. This is compared to the stored hashed version of the password. If they match, the user has entered their password correctly. 
 This is more secure than storing plain text passwords, but hashing algorithms are also known to hackers. Because hash functions are deterministic (the same input produces the same output), hackers can use brute-force dictionary attacks by hashing the passwords. For every matched hash, they know the actual password. To mitigate this risk, passwords are often “salted”.  This refers to adding a fixed-length random value to the input of hash functions to create unique hashes for every input. As hackers can't know the salt value, the hashed passwords are more secure.
 
-:::image type="content" source="../media/6-hashing-2.png" alt-text="The concept of hashing":::
+:::image type="content" source="../media/6-hashing-3.png" alt-text="The concept of hashing":::
