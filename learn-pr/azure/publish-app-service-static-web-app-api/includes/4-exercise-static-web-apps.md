@@ -68,34 +68,6 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
-::: zone-end
-
-::: zone pivot="react"
-
-7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
-
-::: zone-end
-
-::: zone pivot="vue"
-
-7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
-
-::: zone-end
-
-::: zone pivot="angular"
-
 8. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
@@ -103,6 +75,10 @@ The Azure sandbox that you activated allows you to use Azure services without in
 ::: zone-end
 
 ::: zone pivot="react"
+
+7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 8. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
@@ -112,6 +88,10 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
+7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
+
 8. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
@@ -120,15 +100,19 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
+7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
+
 8. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
 ::: zone-end
 
-   After the app is created, a confirmation notification appears in Visual Studio Code.
+    After the app is created, a confirmation notification appears in Visual Studio Code.
 
-   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open portal":::
+    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open portal":::
 
 9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
 
