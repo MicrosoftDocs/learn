@@ -4,7 +4,7 @@ This native integration, built by the creators, delivers a frictionless user exp
 
 :::image type="content" source="../media/architecture-diagram.jpeg" alt-text="A reference architecture diagram for Elastic Cloud on Azure.":::
 
-:::image type="content" source="../media/elastic-on-azure-dashboard.png" alt-text="A screenshot of the Elastic on Azure dashboard for general cloud overview, user activity, and alerts.":::
+:::image type="content" source="../media/elastic-dashboard.png" alt-text="A screenshot of the Elastic on Azure dashboard for general cloud overview, user activity, and alerts.":::
 
 ## How Elastic deployment options complement your business  
 
