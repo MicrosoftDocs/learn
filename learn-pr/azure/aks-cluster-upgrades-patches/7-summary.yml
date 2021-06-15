@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-cluster-upgrades-patches.summary  
+title: Summary  
+metadata:
+  unitType: summary  
+  title: Summary 
+  description: A summary of the apply cluster upgrades and security patches with Azure Kubernetes Service module. 
+  ms.date: 06/11/2021  
+  author: microsoftmichelle 
+  ms.author: mixie 
+  ms.product: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

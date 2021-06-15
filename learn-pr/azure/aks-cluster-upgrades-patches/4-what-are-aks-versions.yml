@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-cluster-upgrades-patches.what-are-aks-versions 
+title: What are Azure Kubernetes Service cluster versions? 
+metadata: 
+  title: What are Azure Kubernetes Service cluster versions? 
+  description: Understand the Kubernetes version release and deprecation process supported by Azure Kubernetes Service. 
+  ms.date: 06/04/2021   
+  ms.author: mixie 
+  author: microsoftmichelle
+  ms.product: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-what-are-aks-versions.md)]

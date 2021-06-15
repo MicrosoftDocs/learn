@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-cluster-upgrades-patches.exercise 
+title: Patch and upgrade an AKS cluster
+metadata:
+  unitType: exercise  
+  title: Patch and upgrade an AKS cluster
+  description: Implement an AKS cluster and apply patches and upgrade it to the latest Kubernetes version supported by Azure Kubernetes Service. 
+  ms.date: 06/07/2021    
+  ms.author: mixie 
+  author: microsoftmichelle
+  sandbox: true
+  ms.product: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-upgrade-aks-cluster.md)]

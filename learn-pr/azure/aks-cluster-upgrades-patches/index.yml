@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.aks-cluster-upgrades-patches  
+metadata:
+  moduleType: standard  
+  title: Apply cluster upgrades and security patches with Azure Kubernetes Service
+  description: |
+    Apply the latests version upgrades and patches to your Azure Kubernetes Service clusters. 
+  ms.date: 06/11/2021  
+  author: microsoftmichelle 
+  ms.author: mixie
+title: aks-cluster-upgrades-patches  
+summary: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: |
+  By the end of this module, you will be able to: 
+  - Understand what versioning is
+  - Find the current Kubernetes versions supported by Azure Kubernetes Services (AKS)
+  - Upgrade your existing Azure Kubernetes Service (AKS) clusters through a Blue/Green deployment approach
+prerequisites: |  
+  - # A basic understanding of containers.
+  - # A basic understanding of Azure Kubernetes Service. 
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+  - beginner
+roles: 
+  - solution-architect
+  - devops-engineer
+products:  
+  - azure
+  - azure-kubernetes-service
+units:  
+- learn.aks-cluster-upgrades-patches.introduction
+- learn.aks-cluster-upgrades-patches.what-are-versions 
+- learn.aks-cluster-upgrades-patches.knowledge-check-1
+- learn.aks-cluster-upgrades-patches.what-are-aks-versions 
+- learn.aks-cluster-upgrades-patches.knowledge-check-2
+- learn.aks-cluster-upgrades-patches.exercise
+- learn.aks-cluster-upgrades-patches.summary
+badge:  
+  uid: learn.aks-cluster-upgrades-patches.badge

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-cluster-upgrades-patches.knowledge-check-2
+title: Knowledge check 
+metadata:
+  unitType: knowledge_check
+  title: Check your knowledge on AKS versions
+  description: Test your understanding on the Kubernetes version release and deprecation process supported by Azure Kubernetes Service.
+  ms.date: 06/04/2021  
+  ms.author: mixie  
+  author: microsoftmichelle
+  ms.product: learning-azure
+durationInMinutes: 4
+
+content: |
+quiz:
+  questions:
+  - content: "Kubernetes has just released a new minor version 1.20.0. Which of the following Kubernetes versions will go out of support according to the N-2 rule?"
+    choices:
+    - content: "1.19.8"
+      isCorrect: false
+      explanation: ""
+    - content: "1.18.0"
+      isCorrect: false
+      explanation: ""
+    - content: "1.17.0"
+      isCorrect: true
+      explanation: ""
+  - content: "How many days do you have to upgrade an AKS cluster version that becomes deprecated?"
+    choices:
+    - content: "30 days"
+      isCorrect: true
+      explanation: ""
+    - content: "60 days"
+      isCorrect: false
+      explanation: ""
+    - content: "90 days"
+      isCorrect: false
+      explanation: ""
+  - content: "How many patch version of a minor version does Azure Kubernetes Services support?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: ""
+    - content: "2"
+      isCorrect: true
+      explanation: ""
+    - content: "3"
+      isCorrect: false
+      explanation: ""
+  - content: "Your organization has decided to use Blue/Green deployment to test and deploy the newly upgraded AKS clusters. Which of the following most accurately describes this test and deployment strategy?"
+    choices:
+    - content: "Run two identical AKS clusters, upgrade one cluster then switch the router to the upgrade cluster."
+      isCorrect: true
+      explanation: ""
+    - content: "Run two AKS clusters, label one as 'staging' and the other as 'production', first upgrade the staging cluster then upgrade the production cluster."
+      isCorrect: false
+      explanation: ""
+    - content: "Make a copy of your existing AKS cluster, upgrade the copy then shut down the original cluster."
+      isCorrect: false
+      explanation: ""

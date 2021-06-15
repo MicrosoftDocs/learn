@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-cluster-upgrades-patches.what-are-versions 
+title: What are versions? 
+metadata: 
+  title: What are versions?
+  description: Understand the difference between patch, minor and major versions.
+  ms.date: 05/27/2021   
+  ms.author: mixie 
+  author: microsoftmichelle
+  ms.product: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-are-versions.md)]
