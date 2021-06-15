@@ -53,9 +53,14 @@ The web aggregator has a central role in the BFF pattern and you can think of it
 
 ### Explore *Web.Shopping* aggregator implementation in eShopOnContainers
 
-The web client BFF in implemented as a Web API application in folder `src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator`.
+In the `eShop` app, there is already an aggregator implemented as *Web.Shopping.HttpAggregator* project. This BFF takes care of all the shopping-related activities for the web client. For an example : *AddBasketItemAsync()* method in the `BasketController` class in the project takes care of the following :
 
-The `BasketController` is a nice example of what a BFF might look like, and we'll focus specifically in the action that handles the POST request to update the Basket from the SPA.
+- Fetches an item from the `Catalog.API`.
+- Get a current basket details from the `Basket.API`
+- Updates the current basket status with the new catalog item.
+- And finally updates basket of the `Basket.API`.
+
+As you can see, you were able to merge all these operations in a single method and hides the complexity from the client Web SPA. You can review the detailed implementation as a Web API application in folder `src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator`.
 
 ### Implement *Web.Sales* aggregator in eShopOnContainers
 
@@ -78,92 +83,5 @@ As you understand, fetching information is not enough. You'll also need to proce
 - Another method named *GetSalesData()* in the `SalesController` to process and aggregate the sales based on the brand names.
 
 To keep this tutorial short and simple, most of the implementation are already done and kept ready. And in the next unit, you will enable necessary code snippet and configuration to active this feature.
-
-Right now, you can review the content of both the methods.
-
-```csharp
-    
-  [HttpGet]
-  [ProducesResponseType(typeof(SalesDto), (int)HttpStatusCode.OK)]
-  public async Task<ActionResult<List<SalesDto>>> GetSalesOfTodayByBrand()
-  {
-      _logger.LogInformation("----- SalesController --> GetTotalSalesAsync()");
-  
-      try
-      {
-          // All catalog items
-          var catalogItems = await _catalog.GetCatalogItemAsync();
-  
-          // All catalog brands
-          var catalogBrands = await _catalog.GetCatalogBrandAsync();
-  
-          // All orders
-          var orderItems = await _ordering.GetOrdersAsync();
-  
-          // Fetch processed sales data
-          var salesData = await this.GetSalesData(catalogItems, catalogBrands, orderItems);
-  
-          return salesData;
-      }
-      catch (System.Exception ex)
-      {
-          throw ex;
-      }
-  }
-
-  private async Task<List<SalesDto>> GetSalesData(List<CatalogItem> catalogItems, List<CatalogBrand> catalogBrands, List<Order> listOfOrders)
-  {
-      _logger.LogInformation("----- Processing sales data <-- GetSalesData() ");
-
-      var salesDataItem = new List<SalesData>();
-
-      // Filter all the orders based on the present day and which are processed
-      var allOrdersOfPresentDay = listOfOrders.Where(o => o.date.Day == DateTime.Today.Day && o.status == "Paid");
-
-      _logger.LogInformation($"----- allOrdersOfPresentDay : {JsonConvert.SerializeObject(allOrdersOfPresentDay)}");
-
-      foreach (var eachOrder in allOrdersOfPresentDay)
-      {
-          // Fetch each order details based on order number
-          var specificOrderItem = await _ordering.GetOrderDetailsAsync(eachOrder.ordernumber);
-
-          if (specificOrderItem != null &&
-              specificOrderItem.OrderItems != null && specificOrderItem.OrderItems.Count() > 0)
-          {
-              // Calculate each product unit of sale
-              foreach (var eachProduct in specificOrderItem.OrderItems)
-              {
-                  // Filter catalog item
-                  var catalogItemObj = catalogItems.Find(catalogItem => catalogItem.name == eachProduct.ProductName);
-
-                  // Populate sales data
-                  salesDataItem.Add(new SalesData()   
-                  {
-                      CatalogBrandId = catalogItemObj.catalogBrandId,
-                      CatalogBrandName = catalogBrands.Find(catalogBrand => catalogBrand.Id == catalogItemObj.catalogBrandId).Brand, // Fetch the brand name based on it's id
-                      TotalUnitOfSoldItems = eachProduct.Units
-                  });
-              }
-          }
-
-      }
-      
-      // Aggregate the unit of sales based on the Brand name
-      var groupedSalesData = salesDataItem.GroupBy(catalogBrand => catalogBrand.CatalogBrandName)
-                                          .Select(
-                                              catalogBrand => new SalesDto() {      
-                                                  BrandName = catalogBrand.Key,                                                                                                
-                                                  TotalSales = catalogBrand.Sum(unit => unit.TotalUnitOfSoldItems),
-                                              }).ToList();
-
-      _logger.LogInformation($"----- groupedSalesData : {JsonConvert.SerializeObject(groupedSalesData)}");
-
-      return groupedSalesData;
-  }
-
-```
-
-> [!NOTE]
-> In the real production scenario, you usually don't generate the aggregated sales data from the OLTP database. You might want to copy the data to a different analytical (for e.g : OLAP) database to keep sales data.
 
 In the next unit, you'll review the different configurations and deploy these newly created `Web.Sales.HttpAggregator` to the existing Kubernetes cluster.
