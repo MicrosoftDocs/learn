@@ -16,43 +16,37 @@ quiz:
   questions:
   - content: "What is WebXR?"
     choices:
-    - content: "Answer1"
+    - content: "WebXR is a technology that allows you to create Virtual Reality (VR) and Augmented Reality (AR) experiences in the browser by leveraging WebGL."
       isCorrect: false
-      explanation: "Explanation1"
-    - content: "Answer2"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "WebXR is a static site made up of Javascript, HTML and CSS"
       isCorrect: false
-      explanation: "Explanation2"
-    - content: "Answer3"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "WebXR is cross platform so it will work on multiple devices and platforms."
       isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Explanation4"
-  - content: "Question2"
+      explanation: "Correct, all of the above are true of WebXR."
+  - content: "BabylonJS is the only WebXR library."
     choices:
-    - content: "Answer1"
+    - content: "True"
       isCorrect: false
-      explanation: "Explanation1"
-    - content: "Answer2"
-      isCorrect: false
-      explanation: "Explanation2"
-    - content: "Answer3"
-      isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
+      explanation: "No, there are multiple libraries available to create WebXR applications."
+    - content: "False"
       isCorrect: true
-      explanation: "Explanation4"
-  - content: "Question3"
+      explanation: "Correct, there are more libraries available to create WebXR applications."
+  - content: "Which of the below can be used instead of having to create your own 3D model?"
     choices:
-    - content: "Answer1"
+    - content: "Procedural Texture"
       isCorrect: false
-      explanation: "Explanation1"
-    - content: "Answer2"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "PhotoDome"
       isCorrect: false
-      explanation: "Explanation2"
-    - content: "Answer3"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "Built in meshes that can optionally be wrapped with an image."
       isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
+      explanation: "Although this is true, this is not the right selection."
+    - content: "All of the above."
       isCorrect: true
-      explanation: "Explanation4"
+      explanation: "Correct, all of the above can be used to create 3D objects without having to use custom 3D models."
