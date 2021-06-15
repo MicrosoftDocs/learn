@@ -1,19 +1,17 @@
+JavaScript is one of the core technologies of the World Wide Web. Developers use it to create interactive content on their websites. 
 
-JavaScript is one of the core technologies of the World Wide Web, and allows developers to creative interactive content on their websites. 
+Because JavaScript is a client-side scripting language, it allows users to execute code on their devices. 
 
-Since JavaScript is a client-side scripting language, it allows users to execute code on the user's device. 
+Imagine having to reload a webpage each time information changes on your device, being unable to check whether data is correctly formatted before you submit a form, or being unable to move an object around interactively on a screen. Without JavaScript, these tasks would be impossible on most websites.
 
-Imagine having to reload a page each time information changed on your device, not having ways to check if data was correctly formatted before submitting a form, or not being able to move an object around interactively on a screen. Without JavaScript, these tasks would not be possible on most websites!
-
-In this module, you will learn about the structural format and uses of arrays in JavaScript, and introduce the ways loops can assist with repetitive tasks involving the data within arrays.
+In this module, you'll learn about the structural format and uses of arrays in JavaScript, and how loops can assist you with repetitive tasks involving the data within arrays.
 
 ## Learning objectives
 
-In this module, you will begin to discover:
-
-- What are arrays and what they're used for
-- How you can use loops to work with arrays
-- Apply array operations
+In this module, you'll learn about: 
+  - Arrays and what they're used for.
+  - How to use loops to work with arrays.
+  - How to apply array operations.
 
 ## Prerequisites
 

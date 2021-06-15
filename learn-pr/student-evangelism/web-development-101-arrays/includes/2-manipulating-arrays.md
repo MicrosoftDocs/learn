@@ -1,83 +1,83 @@
-In order for the data and information on the websites to be interactive, we need a way to manipulate and store data in our code. Thankfully JavaScript has a way to store multiple items in an **array**. Using an array will save you from declaring many variables, among other things.
+For data and information on your websites to be interactive, you need a way to manipulate and store the data in your code. Thankfully, JavaScript has a way to store multiple items in an *array*. Using arrays will help save you from declaring many variables, among other benefits.
 
-## Arrays
+## About arrays
 
-An array is a type of data structure that contains more than one element. Imagine a purchase order, having multiple order items or an ice cream bar having multiple flavors you can choose from. Instead of storing let's say eight ice cream flavors in eight variables, you can instead use an array to store that information like in the below code:
+An array is a type of data structure that contains more than one element. Imagine a purchase order containing multiple order items or an ice cream bar having multiple flavors to choose from. Instead of storing, for example, eight different ice cream flavors as eight different variables, you can use a single array to store that information, as shown in the following below:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan"];
 ```
 
-In the above code, you are using double brackets `[]` to indicate that here's an array and all its content within the brackets.
+In this code, you're indicating an array by enclosing all its content within brackets (`[]`).
 
-### Accessing an item
+### Access an item
 
-The elements in array are commonly referred to as either elements or items. Often you need to access a specific element to either read its value, update it or even remove it. To access a specific element you use square brackets and the position you are interested in, like so:
+An array's contents are commonly referred to as either *elements* or *items*. You often need to access a specific element to read its value, update it, or even remove it. To access a specific element, you use brackets and the position you're interested in, like this:
 
 ```javascript
 array[<number>]
 ```
 
-The first item in an array starts on 0 and the last item is its length -1. So if an array has three items, 0 would be the first position and 2 its last position. A position in an array is referred to as index. Looking at the `iceCreamFlavors` array, let's assume we want **Pistachio**, to read said value, we can write the following code:
+The first item in an array starts on 0 and the last item is its length (number of items) minus 1. That is, if an array has three items, 0 would be the first position and 2 its last position. A position in an array is referred to as its *index*. Looking at the `iceCreamFlavors` array, let's assume you want **Pistachio**. To read its value, you can write the following code:
 
 ```javascript
 iceCreamFlavors[3] // Pistachio
 ```
 
-### Changing a value
+### Change a value
 
-To change a value in an array, you need to select the index for the item and assign it a new value using the assignment operator `=` and a value to the right of the operator. Our ice cream shop has run out of "Rocky Road", but don't worry, we found some "Butter Pecan":
+To change a value in an array, you need to select the item's index and assign it a new value by using the equal sign assignment operator (`=`) and a value to the right of the operator. Your ice cream shop has run out of "Neapolitan," but don't worry, you've found some "Butter Pecan":
 
 ```javascript
-iceCreamFlavors[4] = "Butter Pecan"; //Changed "Rocky Road" to "Butter Pecan"
+iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
 ```
 
-### Adding more values
+### Add more values
 
-At some point, your ice cream business expands and you want to offer more flavors, what to do? You can use the method `push()` to add more flavors. The `push()` takes an item as input and it ends up adding the item to the array. Below you are adding "Mint" as flavor, cause who doesn't love mint?
+At some point, your ice cream business expands and you want to offer more flavors. What do you do? You can use the method `push()` to add more flavors. The `push()` method takes an item as input and adds the item to the original array. For example, to add "Mint Chip" as flavor, you would use the following code:
 
 ```javascript
-iceCreamFlavors.push("Mint");
+iceCreamFlavors.push("Mint Chip");
 ```
 
-### Using the array length
+### Use the array length
 
-Imagine that someone asked, how many flavors of ice cream do you have? You look in the back room but all you see is an ocean of flavors, that's going to take some time to count. But wait, there's actually a `length` field on the array you can use for counting all the flavors:
+Imagine that someone asks, how many flavors of ice cream do you have? You look in the back room, but all you see is an ocean of flavors, which are going to take some time to count. But wait, on the array, there's a `length` field that you can use to count all the flavors:
 
 ```javascript
-iceCreamFlavors.length // 6, because you added mint, remember
+iceCreamFlavors.length // 6 flavors, because you recently added "Mint Chip"
 ```
 
 > [!TIP]
-> Use your browser's console to create and manipulate an array of your own creation. Remember, you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt. Experiment with how you can manipulate an array with indexes and properties you just learned.
+> Use your browser's console to create and manipulate an array of your own creation. Remember, you can write JavaScript right in your browser. To do so, open a browser window and go to Developer Tools. In the console, you'll find a prompt. Experiment with manipulating an array with indexes and properties, which you just learned about.
 
-### Remove value
+### Remove a value
 
-To remove a value from an array, you can use `delete`. Think of deleting a value as you having many ice cream containers and you simply run out of "Mint" for example. The bucket will still be there but the "Mint" is gone. The code looks like so:
+To remove a value from an array, you can use `delete`. Let's say you've just run out of "Mint Chip." The bucket is still there, but the "Mint Chip" ice cream is gone. The code looks like this:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 delete iceCreamFlavors[iceCreamFlavors.length-1];
 console.log(iceCreamFlavors[length-1]) // undefined
 ```
 
-All your items are still there but the bucket, where the "Mint" used to be, is cleared. You can now assign it with a new flavor, what would you add?
+All your items are still there but the bucket, where the "Mint Chip" used to be, is cleared. You can now assign it with a new flavor, what would you add?
 
 ```javascript
 iceCreamFlavor[iceCreamFlavor.length-1] = "your choice";
 ```
 
-### Remove item
+### Remove an item
 
-Sometimes it's not enough to remove the value, the whole bucket must go. Maybe you don't have enough room at home? You decide on eating all the "Vanilla" (you will probably regret that later) and throw away the carton it came in. For this operation you will use the array method `splice()`, it takes a position and how many elements to remove, like so:
+Sometimes, it's not enough to remove the value. The whole bucket must go. Maybe you don't have enough room at home? You decide to eat all the "Vanilla" (you'll probably regret this later) and throw away the carton it came in. For this operation, you'll use the array method `splice()`. It takes a position and how many elements to remove, as shown in this code:
 
 ```javascript
-array.splice(<position index, <no of elements to remove>)
+array.splice(<position index, <number of elements to remove>)
 ```
 
-To remove (eat all the vanilla and toss the carton), use the `splice()` method like so:
+To remove an item (eat all the "Vanilla" and toss the carton), use the `splice()` method, like this:
 
 ```javascript
 iceCreamFlavor.splice(2,1); 
-iceCreamFlavor // [ 'Chocolate', 'Strawberry', 'Pistachio', 'Rocky Road', 'Mint' ]
+iceCreamFlavor // [ 'Chocolate', 'Strawberry', 'Pistachio', 'Neapolitan', 'Mint Chip' ]
 ```
