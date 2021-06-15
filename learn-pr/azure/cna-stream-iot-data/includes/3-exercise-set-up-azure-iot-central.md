@@ -101,8 +101,8 @@ In this exercise, you'll:
 1. On the **Raspberry Pi** page, select **Views**, and on the **Select to add a new view** pane, select **Generate default views**.
 1. In the **Select the applicable views to be generated** section, ensure that the following options are selected:
 
-   - **Overview**. Provides an overview of device telemetry with charts and metrics.
-   - **About**. Provides an overview of device information, displaying its properties.
+   - **Overview - provides a view with device telemetry, displaying charts and metrics.**
+   - **About - provides a view with device information, displaying its properties.**
 
 1. Select **Generate default dashboard view(s)**
 1. On the **Raspberry Pi** page, in the **Views** section, select **About**.
@@ -116,7 +116,7 @@ In this exercise, you'll:
 ## Integrate a simulated IoT device with an Azure IoT Central application
 
 1. On the **Raspberry Pi** page of the IoT Central Application portal, in the vertical menu, in the **App settings** section, select **Devices**.
-1. On the **Devices** page, select **+ New**.
+1. On the **Devices** page, select **Create a device**.
 1. In the **Create a new device** window, specify the following settings, and then select **Create**:
 
    | Setting | Value |
