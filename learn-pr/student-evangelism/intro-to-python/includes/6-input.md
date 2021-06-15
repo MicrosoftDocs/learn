@@ -1,4 +1,8 @@
-For reading input from the keyboard, Python provides the `input` function. `input` reads what the user types on the keyboard and returns it as a string. Here is an example that combines `input` and `print` to capture a person's name and then display it on the screen:
+Many programs are interactive. Supporting interactivity means you have a program that runs differently depending on what the input is. The one inputting data to a program is usually a user, but it can be another program for example. There are many ways to send input to a program, two common ways are via a graphical interface or a console. 
+
+## User input
+
+For reading input from the keyboard, Python provides the `input()` function. `input()` reads what the user types on the keyboard and returns it as a string. Here is an example that combines `input()` and `print()` to capture a person's name and then display it on the screen:
 
 ```python
 name = input('Enter your name:')
@@ -26,7 +30,7 @@ x = input('Enter a number: ')
 print(type(x))
 ```
 
-Running this code and entering the value '5' would display `<class 'str'>` even though the value itself is numeric. To turn the value into a true integer variable, you can use the `int` function:
+Running this code and entering the value '5' would display `<class 'str'>` even though the value itself is numeric. To turn the value into a true integer variable, you can use the `int()` function:
 
 ```python
 x = int(input('Enter a number: '))
@@ -36,11 +40,11 @@ print(type(x))
 This code will output `<class 'int'>` for the value '5'. You can use the `float` function in the same way if you expect a fractional component.
 
 > [!IMPORTANT]
-> What if the input _isn't_ numeric and you pass it to the `int` function? As you might expect, this would be an error and cause a runtime failure. The program will end at this statement - you can try it yourself in the Python interactive console. We'll cover various solutions to handling these sorts of errors in future modules.
+> What if the input _isn't_ numeric and you pass it to the `int()` function? As you might expect, this would be an error and cause a runtime failure. The program will end at this statement - you can try it yourself in the Python interactive console. We'll cover various solutions to handling these sorts of errors in future modules.
 
 ### Converting numbers to strings
 
-You can go the other direction as well. The `str` operator will take an integer or float value and turn it into a string. Calling the `str` method is needed if you want the below code example to work. The conversion ensures the integer, in its string form is concatenated to the string on the left.
+You can go the other direction as well. The `str()` method will take an integer or float value and turn it into a string. Calling the `str()` method is needed if you want the below code example to work. The conversion ensures the integer, in its string form, is concatenated to the string on the left.
 
 ```python
 x = 5
