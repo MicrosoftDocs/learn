@@ -11,4 +11,4 @@ Now that you’ve completed this module, you should be able to:
 - [Lock resources to prevent unexpected changes](/azure/azure-resource-manager/management/lock-resources)
 - [What is Azure Resource Manager](/azure/azure-resource-manager/management/overview)
 - [What is Azure Blueprints?](/azure/governance/blueprints/overview)
-
+- [What is Azure Policy?](/azure/governance/policy/overview)
