@@ -17,7 +17,7 @@ The `find()` operation runs the function that you provided as input for each ite
 
 ### Filter items with a common property by using `filter()`
 
-What if the customer says, I want ice cream that *contains* "Chocolate," what do you have? Now you need to reorganize your ice cream store a little and start categorizing things. This customer query should return "Chocolate", "Neapolitan," and "Mint Chip" as flavor offerings that contain "Chocolate." With this in mind, you choose to store your array in the following way:
+What if the customer says, I want ice cream that *contains* "Chocolate," what do you have? Now you need to reorganize your ice cream store a little and start categorizing things. This customer query should return "Chocolate," "Neapolitan," and "Mint Chip" as flavor offerings that contain "Chocolate." With this in mind, you choose to store your array in the following way:
 
 ```javascript
 let iceCreamFlavors = [
@@ -30,7 +30,7 @@ let iceCreamFlavors = [
 ];
 ```
 
-Okay, you've now reorganized your offering. The customer asked for any ice cream containing chocolate, and they seem to want one scoop of each of the three flavors returned by the query. Your best method to use in this case is the `filter()` operation. It takes a filter expression (a function) and returns any item that matches the expression. To help your customer find what they want, use the following code:
+You've now reorganized your offering. The customer asked for any ice cream containing chocolate, and they seem to want one scoop of each of the three flavors returned by the query. Your best method to use in this case is the `filter()` operation. It takes a filter expression (a function) and returns any item that matches the expression. To help your customer find what they want, use the following code:
 
 ```javascript
 iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Chocolate", type: "Chocolate" }, { name: "Neapolitan", type: "Chocolate"}, { name: "Mint Chip", type: "Chocolate"}]
