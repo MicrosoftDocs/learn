@@ -49,7 +49,7 @@ If your use case requires transformation of the data before it is ingested into 
 
 ### Set security passwords for system users
 
-The Azure Marketplace template embeds the best practices when it comes to securing your Elastic deployment. This involves securing communication between users or applications and Elastic deployment, and between the various components of the Elastic deployment. Therefore, the final step requires you to set passwords for your system user accounts. You will create a password for each system you have installed (e.g. Elastic, Kibana) as well as to enable remote monitoring.
+The Azure Marketplace Elasticsearch (self-managed) template embeds the best practices when it comes to securing your Elastic deployment. This involves securing communication between users or applications and Elastic deployment, and between the various components of the Elastic deployment. Therefore, the final step requires you to set passwords for your system user accounts. You will create a password for each system you have installed (e.g. Elastic, Kibana) as well as to enable remote monitoring.
 
 ## How are other customers using Elastic on Azure VMs?
 
