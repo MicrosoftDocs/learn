@@ -10,9 +10,9 @@ As a reminder, here's the pipeline diagram from that previous module.
 
 The _Build_ stage has a job to build the web app and a job to build the database project. :::image type="content" source="../../shared/media/callout-01.png" alt-text="Call-out 1 on the whiteboard."::: The database project produces a _.dacpac_ file that is a build artifact.
 
-The next stage :::image type="content" source="../../shared/media/callout-03.png" alt-text="Call-out 2 on the whiteboard.](../../shared/media/callout-02.png) scripts the database changes so that the ![Call-out 3 on the whiteboard."::: DBA can verify the changes before they're applied.
+The next stage :::image type="icon" source="../../shared/media/callout-02.png"::: scripts the database changes so that the :::image type="icon" source="../../shared/media/callout-03.png"::: DBA can verify the changes before they're applied.
 
-An :::image type="content" source="../../shared/media/callout-06.png" alt-text="Call-out 4 on the whiteboard.](../../shared/media/callout-04.png) approval is added to the next stage that ![Call-out 5 on the whiteboard.](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Call-out 6 on the whiteboard."::: deploy to _Dev_, _Test_, and _Staging_ environments.
+An :::image type="icon" source="../../shared/media/callout-04.png"::: approval is added to the next stage that :::image type="icon" source="../../shared/media/callout-05.png"::: applies the database changes. The last three stages :::image type="icon" source="../../shared/media/callout-06.png"::: deploy to _Dev_, _Test_, and _Staging_ environments.
 
 In that module, you created the infrastructure manually before you ran the pipeline. The _Dev_, _Test_, and _Staging_ stages all had identical infrastructure and shared a common database. As the web application project matures, the infrastructure needs for each of these stages also changes. The team is looking at Resource Manager templates to automate the deployment process in each stage.
 

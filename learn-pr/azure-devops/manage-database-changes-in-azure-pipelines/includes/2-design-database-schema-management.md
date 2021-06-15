@@ -169,11 +169,11 @@ Andy moves to the whiteboard and sketches out the plan.
 
 :::image type="content" source="../media/2-whiteboard-pipeline.png" alt-text="Whiteboard drawing of the pipeline with the two database stages.":::
 
-**Andy:** Here's what we need to build. First we add a job to the _Build_ stage to build the database project. :::image type="content" source="../../shared/media/callout-01.png" alt-text="Callout 1 on the whiteboard drawing."::: This job produces a _.dacpac_ file that we treat as a build artifact.
+**Andy:** Here's what we need to build. First we add a job to the _Build_ stage to build the database project. :::image type="icon" source="../../shared/media/callout-01.png"::: This job produces a _.dacpac_ file that we treat as a build artifact.
 
-We then add a stage that :::image type="content" source="../../shared/media/callout-03.png" alt-text="Callout 2 on the whiteboard drawing.](../../shared/media/callout-02.png) scripts the database changes. The ![Callout 3 on the whiteboard drawing."::: DBA uses the script output to verify the changes before they're applied.
+We then add a stage that :::image type="icon" source="../../shared/media/callout-02.png"::: scripts the database changes. The :::image type="icon" source="../../shared/media/callout-03.png"::: DBA uses the script output to verify the changes before they're applied.
 
-We add an :::image type="content" source="../../shared/media/callout-06.png" alt-text="Callout 4 on the whiteboard drawing.](../../shared/media/callout-04.png) approval to another stage. The approval ![Callout 5 on the whiteboard drawing.](../../shared/media/callout-05.png) applies the database changes. Then we ![Callout 6 on the whiteboard drawing."::: deploy to _Dev_, _Test_, and _Staging_ just like we did before.
+We add an :::image type="icon" source="../../shared/media/callout-04.png"::: approval to another stage. The approval :::image type="icon" source="../../shared/media/callout-05.png"::: applies the database changes. Then we :::image type="icon" source="../../shared/media/callout-06.png"::: deploy to _Dev_, _Test_, and _Staging_ just like we did before.
 
 **Tim:** I'll get started on the PowerShell script.
 

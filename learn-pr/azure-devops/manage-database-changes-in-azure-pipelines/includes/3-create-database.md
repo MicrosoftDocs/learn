@@ -4,13 +4,13 @@ Mara has created a whiteboard drawing of the database tables and the relationshi
 
 :::image type="content" source="../media/3-database-diagram.png" alt-text="Whiteboard drawing of the database tables and the relationships between them.":::
 
-The **Profiles** table :::image type="content" source="../../shared/media/callout-02.png" alt-text="Callout 1 on the whiteboard drawing.](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2 on the whiteboard drawing."::: holds all of the possible achievements for this game.
+The **Profiles** table :::image type="icon" source="../../shared/media/callout-01.png"::: contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table :::image type="icon" source="../../shared/media/callout-02.png"::: holds all of the possible achievements for this game.
 
 **Profiles** have a many-to-many relationship with achievements. That is, many profiles can have many achievements, and many achievements can be in many profiles.
 
-We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table :::image type="content" source="../../shared/media/callout-03.png" alt-text="Callout 3 on the whiteboard drawing.":::. Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
+We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table :::image type="icon" source="../../shared/media/callout-03.png":::. Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
 
-The **Scores** table :::image type="content" source="../../shared/media/callout-04.png" alt-text="Callout 4 on the whiteboard drawing."::: holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
+The **Scores** table :::image type="icon" source="../../shared/media/callout-04.png"::: holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
 
 For learning purposes, here you bring up one instance of Azure SQL Database. The instance is connected to each App Service environment for the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move toward _Staging_, instead of working with a small set of fictitious data, you might start working with a full copy of the real data that you run in production.
 
