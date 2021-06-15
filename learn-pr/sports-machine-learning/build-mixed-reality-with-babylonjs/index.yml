@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs
+metadata:
+  moduleType: standard 
+  title: Intro to WebXR with BabylonJS 
+  description: Learn the core concepts of building Mixed Reality experiences with BabylonJS. We will create a simple WebXR app that can be run cross platform.
+  ms.date: 06/15/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+title: Intro to WebXR with BabylonJS 
+summary: In this learning module we will introduce you to the core concepts of building Mixed Reality experiences with BabylonJS. We will create a simple WebXR app that can be run cross platform.
+abstract: |
+  In this module, you will:
+  - Discover the world of mixed reality with BabylonJS
+  - Create a mixed reality experience to display basketball player data to fans and coaches
+
+  > [!TIP]
+  > This module is part of a multi-modal learning experience. Start the module to see how you can follow along!
+
+  © 2021 Warner Bros. Ent. All Rights Reserved.
+  
+prerequisites: | 
+  - [NodeJS](https://nodejs.org/?azure-portal=true)
+  - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-code
+- windows-mixed-reality
+units: 
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.introduction
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.webxr-babylonjs
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.environment-setup
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.get-started-with-babylonjs
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.add-floor-mesh-and-texture
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.create-environment
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.create-player-icons
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.create-actions
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.initialize-environment
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.knowledge-check
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs.summary
+badge: 
+  uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.badge

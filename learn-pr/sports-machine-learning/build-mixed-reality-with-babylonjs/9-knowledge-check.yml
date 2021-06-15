@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge!
+  ms.date: 06/15/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 3
+content: Select the best answer for each question.
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is WebXR?"
+    choices:
+    - content: "Answer1"
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "Answer2"
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "Answer3"
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "Answer4"
+      isCorrect: true
+      explanation: "Explanation4"
+  - content: "Question2"
+    choices:
+    - content: "Answer1"
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "Answer2"
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "Answer3"
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "Answer4"
+      isCorrect: true
+      explanation: "Explanation4"
+  - content: "Question3"
+    choices:
+    - content: "Answer1"
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "Answer2"
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "Answer3"
+      isCorrect: false
+      explanation: "Explanation3"
+    - content: "Answer4"
+      isCorrect: true
+      explanation: "Explanation4"
