@@ -86,7 +86,7 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
 1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 
-    ![Screenshot of WhiteSource scan pipeline output ending with "##[section]Finishing: Run WhiteSource Bolt".](../media/4-scan-task-detail.png)
+    ![Screenshot of WhiteSource scan pipeline output.](../media/4-scan-task-detail.png)
 
     You see that the data is being uploaded for the scan report.
 

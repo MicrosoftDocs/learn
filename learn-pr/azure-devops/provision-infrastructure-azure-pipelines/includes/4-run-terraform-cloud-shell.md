@@ -271,7 +271,7 @@ After the plan finishes, Terraform writes the output value that contains the hos
 
     You see the default App Service home page:
 
-    ![App Service home page](../media/4-default-website.png)
+    ![App Service home page.](../media/4-default-website.png)
 
     Later, you'll deploy the _Space Game_ website to App Service from Azure Pipelines.
 

@@ -147,7 +147,7 @@ Here you build and run the web application locally to verify that the applicatio
 
     You see this interface:
 
-    ![The Space Game website](../media/5-space-game-top.png)
+    ![The Space Game website.](../media/5-space-game-top.png)
 
     > [!TIP]
     > In your browser, if you see an error that's related to a privacy or certificate error:

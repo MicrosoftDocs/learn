@@ -481,7 +481,7 @@ View your website to verify the deployment.
 
     You see the _Space Game_ website deployed to App Service.
 
-    ![The Space Game website](../media/5-space-game-home-page.png)
+    ![The Space Game website.](../media/5-space-game-home-page.png)
 
 > [!NOTE]
 > For learning purposes, you use the default network settings here. The default settings make your site accessible from the internet.

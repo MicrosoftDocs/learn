@@ -45,7 +45,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
 1. From the **Doing** column to the **Done** column, move the **Create a multistage pipeline** work item.
 
-    ![Azure Boards, showing the card in the Done column](../media/6-azure-boards-wi1-done.png)
+    ![Azure Boards, showing the card in the Done column.](../media/6-azure-boards-wi1-done.png)
 
 ## Disable the pipeline or delete your project
 

@@ -73,7 +73,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 1. Move the **Scale out the website** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/9-azure-boards-wi1-done.png)
+    ![Azure Boards showing the card in the Done column.](../media/9-azure-boards-wi1-done.png)
 
 ## Disable the pipeline or delete your project
 

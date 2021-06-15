@@ -163,7 +163,7 @@ Upload your SSH key pair to Cloud Shell, so that you can connect to your VMs fro
 
 1. In Visual Studio Code, switch from your Cloud Shell session to your Bash session. To do so, select **bash** in the terminal.
 
-    ![A screenshot of Visual Studio Code showing how to switch between Bash and Azure Cloud Shell](../media/4-code-cloud-shell-bash.png)
+    ![A screenshot of Visual Studio Code showing how to switch between Bash and Azure Cloud Shell.](../media/4-code-cloud-shell-bash.png)
 
 1. Select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Upload to Cloud Shell*.

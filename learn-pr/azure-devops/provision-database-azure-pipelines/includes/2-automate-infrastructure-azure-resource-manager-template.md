@@ -12,7 +12,7 @@ The _Build_ stage has a job to build the web app and a job to build the database
 
 The next stage ![Call-out 2 on the whiteboard.](../../shared/media/callout-02.png) scripts the database changes so that the ![Call-out 3 on the whiteboard.](../../shared/media/callout-03.png) DBA can verify the changes before they're applied.
 
-An ![Call-out 4 on the whiteboard.](../../shared/media/callout-04.png) approval is added to the next stage that ![Call-out 5 on the whiteboard.](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Call-out 6 on the whiteboard. ](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ environments.
+An ![Call-out 4 on the whiteboard.](../../shared/media/callout-04.png) approval is added to the next stage that ![Call-out 5 on the whiteboard.](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Call-out 6 on the whiteboard.](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ environments.
 
 In that module, you created the infrastructure manually before you ran the pipeline. The _Dev_, _Test_, and _Staging_ stages all had identical infrastructure and shared a common database. As the web application project matures, the infrastructure needs for each of these stages also changes. The team is looking at Resource Manager templates to automate the deployment process in each stage.
 
@@ -54,7 +54,7 @@ The template needs to have information passed in as parameters to have the reusa
 
 **Andy:** We need to create template and parameter files and change the pipeline to use them. The only parameter so far is the resource name suffix that represents the stage we're deploying to. For example, we're using _dev_ for the development stage.
 
-![Whiteboard drawing of the pipeline with the parameters and template files](../media/2-whiteboard-1.png)
+![Whiteboard drawing of the pipeline with the parameters and template files.](../media/2-whiteboard-1.png)
 
 What goes in the template?
 
