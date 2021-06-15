@@ -25,7 +25,7 @@ In this module, you will begin to discover:
 
 ## Prerequisites
 
-- A Windows 10 PC Configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools?azure-portal=true)
+- A Windows 10 PC Configured with [the correct tools](/windows/mixed-reality/install-the-tools?azure-portal=true)
 - Windows 10 SDK 10.0.18362.0 or later
 - Unity Hub with Unity 2019.4.X installed
 - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene.

@@ -18,7 +18,7 @@ To configure Unity for Windows Mixed Reality development, follow these steps:
 
 ## Add MRTK to the scene and configure
 
-Typically, if you were to start this project from scratch, you'd need to use the [Mixed Reality Feature Tool](%22https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool%22?azure-portal=true) to import the Mixed Reality Toolkit Foundation package. However, this sample project contains the Mixed Reality Toolkit Foundation package.
+Typically, if you were to start this project from scratch, you'd need to use the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool?azure-portal=true) to import the Mixed Reality Toolkit Foundation package. However, this sample project contains the Mixed Reality Toolkit Foundation package.
 
 Before you can use the MRTK features, you'll need to add MRTK to the scene and configure.
 
