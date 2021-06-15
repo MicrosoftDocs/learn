@@ -32,10 +32,10 @@ quiz:
         - content: Boolean
           isCorrect: true
           explanation: Correct. A comparison in JavaScript uses true/false.
-        - content: "null"
+        - content: "Null"
           isCorrect: false
           explanation: Incorrect. A comparison wouldn't return null.
-        - content: string
+        - content: String
           isCorrect: false
           explanation: Incorrect. A string type won't be returned for a comparison.
     - content: "The ! symbol in JavaScript means:"

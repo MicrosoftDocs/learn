@@ -11,7 +11,7 @@ let myTrueBool = true;
 let myFalseBool = false;
 ```
 
-In the code example, the variables `myTrueBool` and `myFalsBool` are declared. The first variable is given the value `true`, and the second variable is assigned `false`.
+In the code example, the variables `myTrueBool` and `myFalseBool` are declared. The first variable is given the value `true`, and the second variable is assigned `false`.
 
 > [!NOTE]
 > Booleans are named after the English mathematician, philosopher, and logician George Boole (1815–1864).
