@@ -4,7 +4,7 @@ You learned how metric alerts enable time-series evaluations, which trigger an a
 
 You also learned how log alert runs specify log queries at regular time intervals. The runs trigger an action group when a match is found.
 
-Next, you learned how log alerts enable notifications when a named Azure resource meets the specified conditions.
+Next, you learned how activity log alerts enable notifications when a named Azure resource meets the specified conditions.
 
 Lastly, you explored how to use smart groups to reduce notification and alert noise, providing enhanced reporting and analytics.
 
