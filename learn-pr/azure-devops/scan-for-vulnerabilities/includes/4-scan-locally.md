@@ -245,7 +245,7 @@ Here you return to the SonarCloud portal and review the results of your scan.
 
     The first bug recommends that you replace the bold `<b>` tag with the `<strong>` tag.
 
-    :::image type="content" source="../media/3-sonar-scan-bug.png" alt-text="Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".":::
+    :::image type="content" source="../media/3-sonar-scan-bug.png" alt-text="Screenshot of SonarCloud bug details for Replacing the bold tag with strong.":::
 
     You can select **See Rule** to learn more about the rationale behind this recommendation.
 

@@ -97,11 +97,11 @@ Here you import the *bacpac* file that you uploaded to Blob storage. You import 
 1. On the menu on the left, select **Overview** to go back to your **SQL server** overview page.
 1. Select **Import database**.
 
-   :::image type="content" source="../media/3-import-database-menu.png" alt-text="The "Import database" menu selection.":::
+   :::image type="content" source="../media/3-import-database-menu.png" alt-text="The Import database menu selection.":::
 
 1. On the **Import database** page, select your subscription and then select **Storage - Configure required settings**.
 
-    :::image type="content" source="../media/3-configure-storage-settings.png" alt-text="The "Import database" page, highlighting the configure storage settings.":::
+    :::image type="content" source="../media/3-configure-storage-settings.png" alt-text="The Import database page, highlighting the configure storage settings.":::
 
 1. On your **Storage accounts** page, select **spacegamedbstorageNNN**, where *NNN* is your number.
 1. On the **Containers** page, select **bacpac**.

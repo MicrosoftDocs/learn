@@ -19,7 +19,7 @@ The SonarCloud Marketplace extension provides the service connection type you ne
 1. On the **Azure DevOps** tab, search for "SonarCloud."
 1. Select **SonarCloud** from the results.
 
-    :::image type="content" source="../media/3-sonar-cloud-marketplace-extension.png" alt-text="Screenshot of Azure DevOps Marketplace showing search results for "SonarCloud".":::
+    :::image type="content" source="../media/3-sonar-cloud-marketplace-extension.png" alt-text="Screenshot of Azure DevOps Marketplace showing search results for SonarCloud.":::
 
 1. Select it and then **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.

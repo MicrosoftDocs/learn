@@ -29,7 +29,7 @@ Amita opens a Windows laptop and launches Google Chrome. She goes to the web app
 
 Amita clicks the **Download game** button. The modal window appears.
 
-:::image type="content" source="../media/4-website-download-game-modal.png" alt-text="A browser showing the "Download game" modal window on the Space Game website.":::
+:::image type="content" source="../media/4-website-download-game-modal.png" alt-text="A browser showing the Download game modal window on the Space Game website.":::
 
 **Andy:** Great. What modal windows do you check next?
 

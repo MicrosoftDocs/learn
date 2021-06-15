@@ -37,7 +37,7 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
 1. Search for "WhiteSource Bolt".
 1. Select **WhiteSource Bolt** from the results.
 
-    :::image type="content" source="../media/4-marketplace-whitesource-bolt.png" alt-text="Screenshot of Azure DevOps Marketplace showing results for a search of "WhiteSource Bolt".":::
+    :::image type="content" source="../media/4-marketplace-whitesource-bolt.png" alt-text="Screenshot of Azure DevOps Marketplace showing results for a search of WhiteSource Bolt.":::
 1. Select **Get it free**.
 1. Select your Microsoft Azure DevOps organization from the drop-down box.
 1. Select **Install**.
@@ -82,7 +82,7 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
     You see the scan task complete successfully.
 
-    :::image type="content" source="../media/4-scan-success.png" alt-text="Screenshot of WhiteSource scan completed in pipeline: Publish the project - Release, Run WhiteSource Bolt, and Publish Artifact: drop are all marked "succeeded".":::
+    :::image type="content" source="../media/4-scan-success.png" alt-text="Screenshot of WhiteSource scan completed in pipeline: Publish the project - Release, Run WhiteSource Bolt, and Publish Artifact: drop are all marked succeeded.":::
 
 1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 

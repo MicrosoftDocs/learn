@@ -53,9 +53,9 @@ _Feature toggles_ let us "flip a switch" at runtime. We can deploy new software 
 
 In this deployment pattern, Mara and I build new features behind a toggle. When a release occurs, the feature is "off" so that it doesn't affect the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
-:::image type="content" source="../media/2-feature-toggles.png" alt-text="A diagram of a coded "if" statement for an on-off feature.":::
+:::image type="content" source="../media/2-feature-toggles.png" alt-text="A diagram of a coded if statement for an on-off feature.":::
 
-For example, we could expose the feature first to a small number of users to see how they react. That random sample of users sees the feature. Or we could just let the feature go live to everyone. 
+For example, we could expose the feature first to a small number of users to see how they react. That random sample of users sees the feature. Or we could just let the feature go live to everyone.
 
 But this deployment pattern might benefit Mara and me more than anyone else. The big advantage to the feature toggles pattern is that it helps us avoid too much branching. Merging branches can be painful.
 
