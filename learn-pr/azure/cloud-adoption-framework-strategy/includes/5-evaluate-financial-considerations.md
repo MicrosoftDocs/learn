@@ -4,7 +4,7 @@ Measuring objectives and identifying the return expected from a specific can hel
 
 The core financial benefits of Azure are driven by a fundamental shift in the IT operating model. This shift benefits your organization's core financial statements and frees up cash flow for reinvestment:
 
-**Balance sheet**: When you operate on-premises in datacenters, it's common for you to have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
+**Balance sheet**: When you operate on-premises in datacenters, you might have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
 
 **Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources help you improve the predictability of your cash flow statement. This model delays spend and improves the timing of your cash flow.
 
