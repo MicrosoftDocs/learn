@@ -26,6 +26,6 @@ A virtual machine (VM) on Azure provides the infrastructure for running your wor
 
 1. From the Azure portal, select Go to resource and the Overview pane to see the VM you just created  
 1. Open the connect menu and choose ssh
-1. Follow the steps to connect your machine with ssh. If you are using a local Windows machine, you will need putty, Windows Subsystem for Linux (WSL), or another software that provdes ssh under Windows. If you are using a local Linux machine, open a terminal. 
+1. Follow the steps to connect your machine with ssh. If you are using a local Windows machine, you will need putty, Windows Subsystem for Linux (WSL), or another software that provides ssh under Windows. If you are using a local Linux machine, open a terminal. 
 
     :::image type="content" source="../media/launch-virtual-machine-ssh.png" alt-text="Screenshot of launching SUSE SLES Azure V M using s s h.":::

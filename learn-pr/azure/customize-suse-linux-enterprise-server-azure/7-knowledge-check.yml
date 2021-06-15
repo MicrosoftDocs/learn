@@ -5,10 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of SLES virtual machine customization.
-  ms.date: 5/12/2021
+  ms.date: 06/15/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
 quiz:

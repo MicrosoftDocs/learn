@@ -14,4 +14,4 @@ Once you become familiar with YaST and zypper, you can use them to customize and
 
 - [Official SUSE YaST documentation](https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-yast-gui)
 - [Official SUSE Zypper documentation](https://documentation.suse.com/sles/15-SP2/single-html/SLES-admin/#cha-sw-cl)
-- [Windows Subsystem for Linux installation guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- [Windows Subsystem for Linux installation guide](/windows/wsl/install-win10)
