@@ -8,7 +8,7 @@ Example layers of security might include:
 - **Network** security, such as network segmentation and network access controls, to limit communication between resources.
 - The **compute** layer can secure access to virtual machines either on-premises or in the cloud by closing certain ports.
 - **Application** layer security ensures that applications are secure and free of security vulnerabilities.
-- **Data** layer security controls to control access to business and customer data, and encryption to protect data.
+- **Data** layer security controls to manage access to business and customer data, and encryption to protect data.
 
 > [!div class="mx-imgBorder"]
 > ![Defense in depth uses multiple layers of security to protect sensitive data](../media/4-defense-depth.png)
