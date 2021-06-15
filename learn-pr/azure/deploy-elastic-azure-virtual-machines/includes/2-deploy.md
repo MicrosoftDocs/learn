@@ -14,7 +14,7 @@ With the template, you will be guided through the following configuration settin
 
 - Basics: establish your username, authentication type (password vs. SSH public key), subscription, resource group, and region.
 - Cluster settings: name the cluster and configure the virtual network and Elasiticsearch nodes subnet
-- Data node configuration: select the number and size of nodes and disks. In the following exercise, we will create a three nodes cluster and will choose to make the data nodes master-eligible because a cluster of this size usually does not benefit from dedicated master nodes. For more information on node types, see the Elasticsearch guide in the references section.
+- Data node configuration: select the number and size of nodes and disks. In the following exercise, we will create a three node cluster and will choose to make the data nodes master-eligible because a cluster of this size usually does not benefit from dedicated master nodes. For more information on node types, see the Elasticsearch guide in the references section.
 - Kibana & Logstash: determine whether to deploy Kibana and/or Logstash in addition to Elasticsearch, as well as how the cluster can be accessed from outside of the virtual network 
 - Security: create an Elastic superuser account as well as accounts for Kibana, Logstash, Beats, APM, and remote monitoring
 
@@ -32,7 +32,7 @@ Elastic also offers [Rally](https://github.com/elastic/rally), a macro benchmark
 
 To start fast, we recommend following these two guidelines:
 
-- Start with a three-nodes Elasticsearch cluster for a production environment. While you may be able to support your use case with single node Elasticsearch clusters, it is recommended to start with a three-node cluster to provide resiliency for the architecture and room to perform lifecycle operations such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication. Elastic Cloud takes care of a lot of this for the users so they can focus on onboarding the data into Elastic and getting insights/value from it.
+- Start with a three-node Elasticsearch cluster for a production environment. While you may be able to support your use case with single node Elasticsearch clusters, it is recommended to start with a three-node cluster to provide resiliency for the architecture and room to perform lifecycle operations such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication. Elastic Cloud takes care of a lot of this for the users so they can focus on onboarding the data into Elastic and getting insights/value from it.
 - Use two Kibana instances for High Availability. Kibana is the window into Elastic stack – whether it is the data in Elasticsearch that you are exploring or management of the Elastic components. Given its value to all the use cases of Elastic, we recommend at least two instances of Kibana behind a load balancer to provide fault tolerance and higher chances of uninterrupted access to Elastic. The impact of an unavailable Kibana doesn’t necessarily lead to data loss but can create disruptive experiences for end users.
 
 ## Install Kibana and Logstash as part of your deployment
@@ -41,7 +41,7 @@ With every deployment of Elastic on Azure, you will be prompted to install Kiban
 
 ### Set up Kibana
 
-Kibana is the window into the Elastic Stack that lets users visualize their data in Elasticsearch while also helping operators monitor and manage Elastic. If you use another tool or service for data analysis/reporting, you may choose to not install Kibana. However, if your use case involves running a lot of data analytics, creating reports, and sharing visualizations, you may want to install Kibana as part of your initial set up. The default in the template is a good starting point for your Kibana VM size.  As you monitor Kibana metrics, you can accordingly grow your VM size.
+Kibana is the window into the Elastic stack that lets users visualize their data in Elasticsearch while also helping operators monitor and manage Elastic. If you use another tool or service for data analysis/reporting, you may choose to not install Kibana. However, if your use case involves running a lot of data analytics, creating reports, and sharing visualizations, you may want to install Kibana as part of your initial set up. The default in the template is a good starting point for your Kibana VM size.  As you monitor Kibana metrics, you can accordingly grow your VM size.
 
 ### Set up Logstash
 
