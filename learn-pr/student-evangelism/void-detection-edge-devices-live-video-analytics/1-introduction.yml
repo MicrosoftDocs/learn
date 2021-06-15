@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.void-detection-edge-devices-lva.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to use Live Video Analytics on IoT Edge to build video analytics solution.
+  ms.date: 04/30/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 2 # dummy number at present
+content: |
+  [!include[](includes/1-introduction.md)]
