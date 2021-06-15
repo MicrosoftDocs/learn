@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: TODO This field is not visible when published. Use 2-3 complete, grammatically correct sentences to describe the unit.
-  ms.date: 5/20/2021
+  description: A multiple-choice quiz to check your knowledge.
+  ms.date: 06/15/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
 quiz:

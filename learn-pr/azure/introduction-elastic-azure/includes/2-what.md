@@ -21,9 +21,9 @@ AKS provides users an enterprise-grade and operationally efficient way of deploy
 
 Azure virtual machines provide Azure users a flexible way to deploy their Elastic workloads and manage the infrastructure underneath, providing them with more control and flexibility over other deployment options. This deployment option is best for teams that need to meet architectural or compliance constraints e.g. if their workloads must be deployed within their Azure tenant.  
 
-Elastic’s ARM template on Azure Marketplace provides a quick way to deploy Elastic using best practices.
+Elastic’s Azure Resource Manager template on Azure Marketplace provides a quick way to deploy Elastic using best practices.
 
-## Elastic on Azure deployment options at a glance 
+## Elastic on Azure deployment options at a glance
 
 The table below provides a quick view that compares the deployment options:
 
