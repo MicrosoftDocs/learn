@@ -22,3 +22,4 @@ The results of the audit log search, which can be filtered and exported to a CSV
 :::image type="content" source="../media/2-audit-search-results-inline.png" lightbox="../media/2-audit-search-results-expanded.png" alt-text="A list of results from an audit search.":::
 
 It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.
+
