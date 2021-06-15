@@ -166,9 +166,9 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
-1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. Under **Blob service**, select **Containers**.
+1. Under **Data storage**, select **Containers**.
 
 1. Select the **specifications** container.
 
@@ -188,9 +188,9 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. Using the portal, move to your destination (cool) storage account.
 
-1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. In the **Blob service** section, click **Containers**.
+1. In the **Data storage** section, click **Containers**.
 
 1. Select **+ Container**, and create a new container named **archive-test**.
 
@@ -199,6 +199,9 @@ With several blobs showing newer modification dates, you can differentiate betwe
     ```bash
     dotnet run "<source connection string>" specifications "<destination connection string>" archive-test "<selected date and time>"
     ```
+    
+    > [!NOTE]
+    > If your file does not find any files to move, you may need to adjust your date from what the Azure portal has customized to your timezone to it's UTC time as it is used by the program. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Pacific Daylight Time (PDT), you would need to add 7 hours to UTC: `6/15/2021, 17:04:27 PM`.
 
 1. The application should list the name of each matching blob that it finds, and move them.
 
