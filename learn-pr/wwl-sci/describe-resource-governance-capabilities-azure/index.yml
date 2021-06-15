@@ -9,10 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe resource governance capabilities in Azure
-summary: Learn about Azure resource governance capabilities in Azure, including Azure resources locks, Blueprints, Azure policy and the Cloud adoption framework.
+summary: Learn about Azure resource governance capabilities in Azure, including Azure resources locks, Blueprints,  and Azure policy.
 abstract: |
   After completing this module, you will be able to:
-  - Describe some of the resource governance capabilities in Azure
+  - Describe the capabilities of Azure resource locks.
+  - Describe the function of Azure Blueprints.
+  - Describe how Azure policy helps organizations assess compliance.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
