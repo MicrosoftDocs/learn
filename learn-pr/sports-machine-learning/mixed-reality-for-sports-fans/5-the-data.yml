@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.the-data
+metadata:
+  title: Exercise - Prep JSON data for Mixed Reality experiences
+  description: Converting CSV data from a web app to JSON data for a Mixed Reality Experience
+  ms.date: 06/15/2021
+  author: drguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Prep JSON data for Mixed Reality experiences
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-the-data.md)]

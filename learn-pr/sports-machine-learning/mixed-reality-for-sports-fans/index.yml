@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: ""
+metadata:
+  title: Prepare to bring the basketball course into a mixed reality space
+  description: "Discover the fundamentals of mixed reality and prepare the resources needed to create an interactive experience for basketball fans and coaches, inspired by SPACE JAM: A NEW LEGACY."
+  ms.date: 06/25/2021
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to bring the basketball course into a mixed reality space
+summary: "Discover the fundamentals of mixed reality and prepare the resources needed to create an interactive experience for basketball fans and coaches, inspired by SPACE JAM: A NEW LEGACY."
+abstract:  |
+  In this module, you will:
+  - Discover the world of mixed reality
+  - Explore ways to integrate data into mixed reality experiences
+  - Design a mixed reality experience to display basketball player data to fans and coaches
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
+  © 2021 Warner Bros. Ent. All Rights Reserved.
+
+prerequisites: | 
+  - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-code
+units:
+- ""
+badge:
+  uid: ""

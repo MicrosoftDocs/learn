@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Check to see how much you understood about the tools and frameworks for Mixed Reality
+  ms.date: 06/15/2021
+  author: drguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 2
+content: Select the best answer for each question.
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the one tool you DO NOT need to build your first Mixed Reality (XR) experience?"
+    choices:
+    - content: "Mixed Reality Headset"
+      isCorrect: true
+      explanation: "Correct. You do not need a Mixed Reality headset to get started prototyping XR experiences, simulators are available for more frameworks."
+    - content: "A code editor or IDE"
+      isCorrect: false
+      explanation: "Incorrect. If you want to build a Mixed Reality experience, you will need to write code in some way."
+    - content: "Mixed Reality Framework"
+      isCorrect: false
+      explanation: "Incorrect. While technically possible to write your own framework, building off of an existing framework will support "
+  - content: "What is one primary difference between BabylonJS and the Mixes Reality Toolkit?"
+    choices:
+    - content: "The Mixed Reality Toolkit is the only framework that works with the Microsoft Hololens and BabylonJS only works on browsers and mobile phones."
+      isCorrect: false
+      explanation: "Incorrect. While it's true BabylonJS works on browsers and mobile phones, a Mixed Reality experience built with BabylonJS can also be deployed to Hololens."
+    - content: "BabylonJS can only show 2D objects, while the Mixed Reality Toolkit only shows 3D objects."
+      isCorrect: false
+      explanation: "Incorrect. Both frameworks can show 2D and 3D objects in the Mixed Reality experiences."
+    - content: "The Mixed Reality Toolkit relies on Unity's idea of objects and scripts, while BabylonJS is more similar to traditional web development with common objects and events, just in a 3D space."
+      isCorrect: true
+      explanation: "Correct. While both frameworks can create similar experiences, the game-development platform model of Unity lends more to 3D objects while the web-development application of BabylonJS lends more to events."
+  - content: "What is a common format for loading data in object-centric software development, such as in Mixed Reality experiences?"
+    choices:
+    - content: "CSV"
+      isCorrect: false
+      explanation: "Incorrect. While Comma Separated Value, CSV, files are an effective way to store data, when loading data into code, JSON provides more structured information."
+    - content: "DOCX"
+      isCorrect: false
+      explanation: "Incorrect. Document files are not typically used in data-centric experiences since they do not provide an object-like structure to data."
+    - content: "JSON"
+      isCorrect: true
+      explanation: "Correct. JavaScript Object Notation, JSON, is a common way to store structured information for quick use in development."
+    - content: "TXT"
+      isCorrect: false
+      explanation: "Incorrect. Text files are not typically used in data-centric experiences since they do not provide an object-like structure to data."

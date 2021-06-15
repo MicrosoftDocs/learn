@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.summary
+metadata:
+  title: Summary of Mixed Reality for Sports Fans
+  description: Summary of Mixed Reality for Sports Fans
+  ms.date: 06/15/2021
+  author: drguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary of Mixed Reality for Sports Fans
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
