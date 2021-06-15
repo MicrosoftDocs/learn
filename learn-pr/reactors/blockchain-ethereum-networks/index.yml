@@ -46,3 +46,4 @@ units:
 - learn.reactors.blockchain-ethereum-networks.8-summary
 badge:
   uid: learn.reactors.blockchain-ethereum-networks.badge
+hidden: true

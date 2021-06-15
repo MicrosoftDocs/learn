@@ -42,7 +42,7 @@ The instructions here are specifically for Q# via the command line in Visual Stu
 
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$. To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
-Fortunately, we can use the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Artithmetic` namespace of the standard library to do just that. It implements the mapping
+Fortunately, we can use the operation [MultiplyAndAddByModularInteger](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Artithmetic` namespace of the standard library to do just that. It implements the mapping
 $$
 |x\rangle |b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
 $$
@@ -50,7 +50,7 @@ for a given modulus $N$ and constant integer multiplier $a$.
 
 To implement our mapping specifically, we need to set the $|b\rangle$ register to the number state $|9\rangle$. Note that each register will need to consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$ proceeds by first creating a four-qubit target register (that is, $|b\rangle$) and preparing it in the number state $|9\rangle$. You can do this by using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true) and then performing the mapping by providing $N=11$ and $a=6$, like this:
+Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$ proceeds by first creating a four-qubit target register (that is, $|b\rangle$) and preparing it in the number state $|9\rangle$. You can do this by using the [`ApplyXorInPlace` operation](/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true) and then performing the mapping by providing $N=11$ and $a=6$, like this:
 $$
 |x\rangle|9\rangle \mapsto |x\rangle|(9 + 6 \cdot x) \bmod 11\rangle
 $$.
@@ -59,7 +59,7 @@ In the remainder of this unit, you'll learn how to explicitly implement this map
 
 ### Step 1. Flag the correct state by applying the oracle
 
-Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
+Recall from the [module on Grover's algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
 
 You can do this by using the *phase kickback* trick. This trick makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 

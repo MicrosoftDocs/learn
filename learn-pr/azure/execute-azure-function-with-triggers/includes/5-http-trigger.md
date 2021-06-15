@@ -24,7 +24,7 @@ There are three Authorization levels:
 2. Anonymous
 3. Admin
 
-The **Function** and **Admin** levels are "key" based. To send an HTTP request, you must supply a key for authentication. There are two types of keys: *function* and *host*. The difference between the two keys is their scope. Function keys are specific to a function. Host keys apply to all functions inside the function app. If your Authorization level is set to **Function**, you can use either a *function* or a host key. If your Authorization level is set to **Admin**, you must supply a host key.
+The **Function** and **Admin** levels are "key" based. To send an HTTP request, you must supply a key for authentication. There are two types of keys: *function* and *host*. The difference between the two keys is their scope. Function keys are specific to a function. Host keys apply to all functions inside the function app. If your Authorization level is set to **Function**, you can use either a *function* or a host key. If your Authorization level is set to **Admin**, you must supply a master key.
 
 The **Anonymous** level means that there's no authentication required. We use this level in our exercise.
 

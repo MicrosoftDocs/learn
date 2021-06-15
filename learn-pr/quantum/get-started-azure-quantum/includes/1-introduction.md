@@ -5,7 +5,7 @@ Azure Quantum is a cloud service that enables both quantum computing application
 - Build Q# programs to run on quantum hardware.
 - Formulate problems for optimization solvers to run on classical hardware.
 
-In the [Quantum Computing Foundations](/learn/paths/quantum-computing-fundamentals/?azure-portal=true) learning path, the quantum space exploration crew teaches you how to use quantum and quantum-inspired algorithms to solve security, logistics, infrastructure, and other types of optimization problems. Besides solving problems on the on-board simulator via the Quantum Development Kit, communication with Earth allows you to access the powerful optimizers and quantum hardware available on Azure Quantum to successfully complete your mission.
+In the [Quantum Computing Foundations](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) learning path, the quantum space exploration crew teaches you how to use quantum and quantum-inspired algorithms to solve security, logistics, infrastructure, and other types of optimization problems. Besides solving problems on the on-board simulator via the Quantum Development Kit, communication with Earth allows you to access the powerful optimizers and quantum hardware available on Azure Quantum to successfully complete your mission.
 
 ![Figure showing Azure Quantum services.](../media/1-azure-quantum-services.png)
 
@@ -28,4 +28,4 @@ In this module, you'll:
 ## Prerequisites
 
 You need:
-* An Azure account. For more information, see [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true).
+- An Azure account. For more information, see [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true).

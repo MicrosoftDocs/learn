@@ -20,4 +20,4 @@ These questions allow you to:
 |**Define other security controls for hybrid case scenarios**|<ul><li>Access controls used to secure the infrastructure, especially hybrid or cloud-based scenarios.</li><li>Hardware tracking mechanisms used across data-centers.</li><li>Back up mechanisms in place.</li><li>Network security controls.</li><li>Testing and monitoring systems used, especially in hybrid or cloud-based scenarios.</li><li>Data handling processes.</li></ul>|
 
 > [!TIP]
-> Check out [Azure architecture](https://docs.microsoft.com/azure/architecture/browse/) for tips on securing your infrastructure architecture.
+> Check out [Azure architecture](/azure/architecture/browse/) for tips on securing your infrastructure architecture.

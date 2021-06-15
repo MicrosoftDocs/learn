@@ -5,7 +5,7 @@ Azure Quantum is a cloud service that offers two different types of services:
 
 :::image type="content" source="../media/1-azure-quantum-services.png" alt-text="Diagram of the different parts of Azure Quantum." border="false":::
 
-The earlier modules in this [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true) focused on the theoretical aspects of quantum computing. If you've gone through the learning path this far, you've experienced quantum computing as a member of a space mission on a spaceship. Now you're ready to access Azure Quantum servers on Earth.
+The earlier modules in this [learning path](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) focused on the theoretical aspects of quantum computing. If you've gone through the learning path this far, you've experienced quantum computing as a member of a space mission on a spaceship. Now you're ready to access Azure Quantum servers on Earth.
 
 In this module, you're ready to start using real quantum computers to run your Q# quantum programs.
 You'll explore the quantum computing options in Azure Quantum and manage submissions of quantum computing jobs.

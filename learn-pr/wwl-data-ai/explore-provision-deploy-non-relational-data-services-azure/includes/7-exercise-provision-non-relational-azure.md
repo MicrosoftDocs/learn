@@ -28,24 +28,26 @@ You'll perform this exercise using the Azure portal.
     > [!div class="mx-imgBorder"]
     > ![Image of the **New** page in the Azure portal. The user has selected **Azure Cosmos DB**](../media/7-new-page.png)
 
-4. On the **Create Azure Cosmos DB Account** page, on the **Basics** tabs, enter the details of the account using the values in the following table, and then select **Review + create**:
+
+4.  On the **Select API option** page, select **Core (SQL) - Recommended**
+    > [!div class="mx-imgBorder"]
+    > ![Image of the API options in the Azure portal. The user has selected **Core (SQL)**](../media/7-core-sql.png) 
+    
+5. On the **Create Azure Cosmos DB Account** page, on the **Basics** tabs, enter the details of the account using the values in the following table, and then select **Review + create**:
 
     | Field | Value |
     |-|-|
     | Subscription | Concierge Subscription |
-    | Resource Group | <rgn>[sandbox resource group]</rgn> (this resource group will have been created for you in the sandbox) |
+    | Resource Group | <rgn>[sandbox resource group]</rgn> (This resource group will have been created for you in the sandbox. Click on the Resource Group field's drop-down arrow to select.) |
     | Account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *cosmosdbaccount*. For example, *jpws01012020cosmosdbaccount* |
     | API | Core (SQL) |
     | Location | Accept the default location |
     | Capacity mode | Provisioned throughput |
     | Apply Free Tier Discount | Do Not Apply |
-    | Account Type | Non-Production |
-    | Geo-Redundancy | Disable |
-    | Multi-region Writes | Disable |
 
-5. Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue. 
+6. Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue. 
 
-6. Select **Create**. It can take 10 or 15 minutes to create the account.
+7. Select **Create**. It can take 10 or 15 minutes to create the account.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Validation** page in the Azure portal. The user has selected **Create**](../media/7-create-cosmos-db.png)
@@ -72,7 +74,7 @@ You'll perform this exercise using the Azure portal.
     | Field | Value |
     |-|-|
     | Database ID | Select **Create new**, and enter **contosodb** |
-    | Provision database throughput| Check |
+    | Share throughput accross containers | Check |
     | Throughput | Select **Manual**, and specify 400 RU/s (the default) |
     | Container ID | **productvolumes** |
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
@@ -130,9 +132,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Resource Group | <rng>[sandbox resource group]</rng> |
     | Storage account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *storage*. For example, *jpws01012020storage* |
     | Performance | Standard |
-    | Account kind | Storage V2 (general purpose v2) |
-    | Replication | Read-access geo-redundant storage (RA-GRS) |
-    | Access tier | Hot |
+    | Replication | Geo-redundant storage (GRS) |
 
 4. Select **Advanced**. On the **Advanced** page, in the **Data Lake Storage Gen2** section, select **Enabled**, and then select **Review + create**.
 
@@ -147,7 +147,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1. In the Azure portal, on the left-hand navigation menu, select **All resources**, and then select your storage account.
 
-2. On the page for your storage account, under **Data Lake Storage**, select **Containers**.
+2. On the page for your storage account, under **Data Storage**, select **Containers**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the storage account page. The user has selected **Containers** under **Data Lake Storage**.](../media/7-data-lake-containers.png)

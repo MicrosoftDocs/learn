@@ -62,9 +62,9 @@ quiz:
         - content: "In the Client.csproj file."
           isCorrect: false
           explanation: "The configuration for your app's locations are defined in the GitHub Actions workflow file."
-        - content: "Add an entry in _routes.json_ for the location."
+        - content: "Add an entry in _staticwebapp.config.json_ for the location."
           isCorrect: false
-          explanation: "The _routes.json_ file is where you define routing rules, not the location of your API."
+          explanation: "The _staticwebapp.config.json_ file is where you define routing rules, not the location of your API."
         - content: "Azure Static Web Apps automatically knows where your code and API are located, without any configuration."
           isCorrect: false
           explanation: "You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you do not specify these locations, default values will be used."

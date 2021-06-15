@@ -12,4 +12,4 @@ Now that you have reviewed this module, you should be able to:
 
 * Learn more about [Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) (previously Azure Stack).
 * Learn more about [Azure Stack Edge](https://azure.microsoft.com/products/azure-stack/edge/) (previously Azure Data Box Edge).
-* Learn more about [the differences between global Azure, Azure Stack Hub, and Azure Stack HCI](https://docs.microsoft.com/azure-stack/operator/compare-azure-azure-stack).
+* Learn more about [the differences between global Azure, Azure Stack Hub, and Azure Stack HCI](/azure-stack/operator/compare-azure-azure-stack).
