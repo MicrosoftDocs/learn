@@ -11,8 +11,8 @@ metadata:
 title: JavaScript variables and data types
 summary: Learn about variables and the data types that populate them.
 abstract: |
-  In this module, you will learn:
-  - What variables are and why use them.
+  In this module, you'll learn:
+  - What variables are and why to use them.
   - When to use constants.
   - How storing your values as different types can create clarity in your code.
 prerequisites: None

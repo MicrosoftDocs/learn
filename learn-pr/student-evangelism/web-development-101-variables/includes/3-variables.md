@@ -1,8 +1,8 @@
-Knowing how to properly use variables and data types is essential to being able to write code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
+Knowing how to properly use variables and data types is essential to writing code in JavaScript. Variables store values that can be used and changed throughout your code, and data types help describe what type of data is stored in those variables.
 
 ## Variables
 
-Suppose that, in your code, you have a value that you would like to remember for future use. By storing the value, you can refer to it later on in your code.
+Suppose that in your code, you have a value that you want to remember for future use. By storing the value, you can refer to it later in your code.
 
 You can create and declare a variable by using the following syntax: `[keyword] [name]`. Here's an example of a variable declaration:
 
@@ -10,42 +10,44 @@ You can create and declare a variable by using the following syntax: `[keyword] 
 var aVariable;
 ```
 
-`var` is a keyword that indicates that you want to declare a variable, and `aVariable` is the name of the variable. The name of a variable is something you chose and should reflect what it's used for.
+The keyword `var` indicates that you want to declare a variable, and `aVariable` is the name of the variable. The name of a variable is something you choose and should reflect what it's used for.
 
-## Use `let` to work with variables
+## Keyword to work with variables
 
-The keyword `let` was introduced in EcmaScript 6 (ES6 - remember EcmaScript is a JavaScript standard, and has several versions). Using `let` and gives your variable what is termed _block scope_. It's recommended that you use `let` over `var` to better manage scope in your application. We will cover block scopes more in depth later.
+The keyword `let` was introduced in the JavaScript standard ECMAScript 6 (ES6). Using `let` gives your variable _block scope_. We recommend that you use `let` over `var` to better manage scope in your application.
 
-To declare a variable using `let`, use the following syntax:
+JavaScript uses the different types of scope, like global scope and function scope, to determine what variables are available in which parts of the code. For example, a global variable is available inside a function because it belongs to global scope, or "outer" scope. Variables designated with the keyword `var` are scoped (their values are visible) within the function body, and `let` variables are scoped to their enclosing block within curly brackets. That means that if you use `var` in a for loop, it's visible outside the for loop, which might have unexpected results. Using `let` is a better choice because it's available only in the enclosing block (that is, the for loop), so its availability might be more expected.
+
+To declare a variable by using `let`, use the following syntax:
 
 ```javascript
 let myVariable;
 ```
 
-`myVariable` has now been declared using the `let` keyword. It currently doesn't have a value, but you can give it a value.
+`myVariable` has now been declared through the `let` keyword. It currently doesn't have a value, but you can give it one.
 
-### Assign a value
+### Assigning a value
 
-To store a value in a variable, you must do so using the assignment operator - `=` - followed by the expected value.
+To store a value in a variable, you use the *assignment operator* (`=`) followed by the expected value:
 
 ```javascript
 myVariable = 123;
 ```
 
 > [!TIP]
-> The use of `=` in this example means we make use of an "assignment operator", used to set a value to a variable. It differs from a comparison, which uses two or three operators like so `==` or so `===`.
+> The use of the assignment operator (`=`) in this example sets a value to a variable. It differs from a comparison, which uses two or three operators like `==` or `===`.
 
-`myVariable` has now been *assigned* the value 123.
+`myVariable` has now been _assigned_ the value `123`.
 
 ### Explicit initialization
 
-Initialization differs from assignment as you both declare the value and give it a value. Below is an example of an initialization:
+An *initialization* differs from an assignment in that you both declare the value and give it a value. Here's an example of an initialization:
 
 ```javascript
 let myVariable = 123;
 ```
 
-The reason for wanting to use explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine, for example,  you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, then you could declare it like so:
+The reason for using an explicit initialization over an assignment is that you want a variable to contain a _starter value_. Imagine, for example, that you want all the players in a card game to have 100 points worth of poker chips before starting a game. To represent that state, you could declare it like this:
 
 ```javascript
 let pokerChips = 100;
@@ -53,58 +55,57 @@ let pokerChips = 100;
 
 ### Changing variables
 
-Another reason for storing a value in a variable would be that you want to use it to temporarily store a value, for example the sum of a calculation.
+You might want to store a value in a variable temporarily. An example is the sum of a calculation.
 
-To change the value, assign it a new value on the right-hand side like so:
+The following code shows how you use the assignment operator (`=`) and how you _assign_ a value on the right side of the operator:
 
 ```javascript
 myVariable = 321;
 ```
 
-Above you see how assignment operator `=` is used and how a value is being _assigned_ on the right side of the operator.
-
 > [!TIP]
-> Try it out yourself to practice- you can write JavaScript right in your browser! Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type let myVariable = 123, press return, then type myVariable. What happens? You'll learn more about these concepts in subsequent lessons.
+> Try it out yourself to practice. You can write JavaScript right in your browser! Open a browser window and go to **Developer tools**. In the console, you'll find a prompt. Enter `let myVariable = 123`, and then enter `myVariable`. What happens?
 
-Sometimes you don't want variable values to change. Such a situation can occur when you rely on a mathematical constant like the value of PI. To address this need, JavaScript lets you create **constants**.
+Sometimes you don't want variable values to change. Such a situation can happen when you rely on a mathematical constant like the value of pi. To address this need, JavaScript lets you create *constants*.
 
 ## Constants
 
-The declaration and initialization of a constant follows the same concepts as a variable, except that it uses the `const` keyword. Constants are typically declared with all uppercase letters.
+The declaration and initialization of a constant follows the same concepts as a variable, except that it uses the `const` keyword: 
 
 ```javascript
 const MY_VARIABLE = 123;
 ```
 
 > [!TIP]
-> Even though you are allowed to name a constant variable any way you like, you are encouraged to use all uppercase.
+> Even though you're allowed to name a constant variable any way you like, you're encouraged to use all uppercase.
 
 Constants are similar to variables, with two exceptions:
 
-- **Must have a value**. Constants must be initialized, or an error will occur when running code.
-- **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
-  - **Simple value**. The following code syntax is NOT allowed:
+- *They must have a value*. Constants must be initialized, or you'll get an error when running code.
+- *The reference can't be changed*. If the reference of a constant changes after it's initialized, you'll get an error when running code. 
 
-      ```javascript
-      const PI = 3;
-      PI = 4; // not allowed
-      ```
+Let's look at a few examples:
 
-  - **Object reference is protected**. The following syntax is NOT allowed.
+- The following code syntax for a simple value is *not* allowed:
 
-      ```javascript
-      const obj = { a: 3 };
-      obj = { b: 5 } // not allowed
-      ```
+  ```javascript
+  const PI = 3;
+  PI = 4; // not allowed
+  ```
 
-  - **Object value is not protected**. The following syntax IS allowed:
+- The following syntax has a protected object reference and is *not* allowed:
 
-      ```javascript
-      const obj = { a: 3 };
-      obj.a = 5;  // allowed
-      ```
+  ```javascript
+  const obj = { a: 3 };
+  obj = { b: 5 } // not allowed
+  ```
 
-      Above you are changing the value of the object but not the reference itself, which makes it allowed.
+- The following syntax has an object value that's not protected. It *is* allowed, because you're changing the value of the object but not the reference itself.
 
-   > [!NOTE]
-   > A `const` means the reference is protected from reassignment. The value is not _immutable_ though and can change, especially if it's a complex construct like an object.
+  ```javascript
+  const obj = { a: 3 };
+  obj.a = 5;  // allowed
+  ```
+
+> [!NOTE]
+> The presence of `const` means the reference is protected from reassignment. But the value is not _immutable_ and can change, especially if it's a complex construct like an object.
