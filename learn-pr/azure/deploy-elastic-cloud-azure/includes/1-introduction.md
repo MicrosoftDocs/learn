@@ -14,4 +14,4 @@ Through the course of this module, we’ll walk through how to launch Elastic Cl
 
 By the end of this module, you'll be able to deploy Elastic Cloud on Azure and add pre-loaded sample data in Kibana.
 
-:::image type="content" source="../media/elastic-cloud-dashboard.png" alt-text="TODO":::
+:::image type="content" source="../media/elastic-cloud-dashboard.png" alt-text="A screenshot of a data visiualization with using sample data in Kibana.":::
