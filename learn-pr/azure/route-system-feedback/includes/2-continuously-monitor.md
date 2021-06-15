@@ -5,12 +5,6 @@ In this part, you'll learn:
 * How Azure Monitor and Application Insights enable you to implement continuous monitoring.
 * How IT Service Management Connector can help you implement a ticketing system.
 
-## The meeting
-
-**Tim:** I know we've covered how we'll learn what our testers think of the website, but I need to know how the website impacts the infrastructure. I need metrics and logs for both. Of course, it needs to fit in with our pipeline. I've been doing a little research. Are any of you familiar with Azure Monitor?
-
-**Amita:** Tell us more.
-
 ## What is continuous monitoring?
 
 The team wants to monitor the website and the infrastructure during the beta test. Tim has done some research and learned a few things.
@@ -51,7 +45,7 @@ With Azure Monitor, you can collect:
 * Monitoring data for VMs. ([Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview?azure-portal=true))
 * Monitoring data for AKS clusters. ([Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview?azure-portal=true))
 
-As you learned in the [Automate your deployments with Azure DevOps](../../../paths/automate-deployments-azure-devops/index.yml?azure-portal=true) learning path, _infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application. Because you describe your infrastructure by using code, you can follow the same development, testing, and versioning schemes that DevOps teams use for applications.
+_Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application. Because you describe your infrastructure by using code, you can follow the same development, testing, and versioning schemes that DevOps teams use for applications.
 
 To enable monitoring by using an infrastructure as code approach, you can use:
 
@@ -130,7 +124,7 @@ In addition to web applications, you can instrument almost any kind of backgroun
 
 Here's a diagram that shows the flow of monitoring data from live services into Application Insights. Application Insights can then raise alerts or push data to another tool so that you can visualize and understand trends.
 
-![A drawing of ...](../media/2-application-insights.png)
+:::image type="content" source="../media/2-application-insights.png" alt-text="A diagram that shows the flow of monitoring data from live services into Application Insights.":::
 
 You can also pull in telemetry data from your host environments. This data includes performance counters, Azure Diagnostics, and Docker logs. You can also set up _synthetic monitoring_ tests. Synthetic monitoring uses a set of transactions to assess performance and availability. Synthetic transactions are predictable tests that enable you to compare results from release to release.
 
@@ -165,67 +159,67 @@ Here are ways you can view and track your telemetry data:
 
     Automatic alerts adapt to your app's normal patterns of telemetry and trigger when there's something outside the usual pattern. You can also set alerts on particular levels of custom or standard metrics.
 
-    ![A screenshot of Smart Detection in Application Insights](../media/2-alerts.png)
+    :::image type="content" source="../media/2-alerts.png" alt-text="A screenshot showing Smart Detection in Application Insights.":::
 
 * [Application Map](/azure/azure-monitor/app/app-map?azure-portal=true)
 
     Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application.
 
-    ![A screenshot of Application Map in Application Insights](../media/2-application-map.png)
+    :::image type="content" source="../media/2-application-map.png" alt-text="A screenshot showing the Application Map in Application Insights.":::
 
 * [Profiler](/azure/azure-monitor/app/profiler?azure-portal=true)
 
     You can run Profiler on ASP.NET and ASP.NET Core apps that are running on Azure App Service that use the Basic service tier or higher.
 
-    ![A screenshot of Profiler in Application Insights](../media/2-profiler.png)
+    :::image type="content" source="../media/2-profiler.png" alt-text="A screenshot showing the Profiler in Application Insights.":::
 
 * [Usage analysis](/azure/azure-monitor/app/usage-overview?azure-portal=true)
 
     This feature enables you to analyze user segmentation and retention.
 
-    ![A screenshot of Usage analysis in Application Insights](../media/2-usage-analysis.png)
+    :::image type="content" source="../media/2-usage-analysis.png" alt-text="A screenshot showing Usage analysis in Application Insights.":::
 
 * [Search](/azure/azure-monitor/app/diagnostic-search?azure-portal=true)
 
     Search helps you find and explore individual telemetry items, such as page views, exceptions, or web requests.
 
-    ![A screenshot of Search in Application Insights](../media/2-diagnostic-search.png)
+    :::image type="content" source="../media/2-diagnostic-search.png" alt-text="A screenshot showing Search in Application Insights.":::
 
 * [Metrics Explorer](/azure/azure-monitor/platform/metrics-getting-started?azure-portal=true)
 
     Metrics Explorer enables you to plot charts, visually correlate trends, and investigate spikes and dips in metrics.
 
-    ![A screenshot of Metrics Explorer in Azure Monitor](../media/2-metrics-explorer.png)
+    :::image type="content" source="../media/2-metrics-explorer.png" alt-text="A screenshot showing the Metrics Explorer in Azure Monitor.":::
 
 * [Live Metrics Stream](/azure/azure-monitor/app/live-stream?azure-portal=true)
 
     When you deploy a new build, watch performance indicators in close to real time to make sure everything works as expected.
 
-    ![A screenshot of Live Metrics Stream in Application Insights](../media/2-live-metrics.png)
+    :::image type="content" source="../media/2-live-metrics.png" alt-text="A screenshot showing the Live Metrics Stream in Application Insights,":::
 
 * [Log Analytics](/azure/azure-monitor/log-query/get-started-portal?azure-portal=true)
 
     Answer tough questions about your app's performance and usage by using a powerful query language.
 
-    ![A screenshot of Log Analytics in Azure Monitor](../media/2-query-language.png)
+    :::image type="content" source="../media/2-query-language.png" alt-text="A screenshot showing the Log Analytics in Azure Monitor.":::
 
 * [Snapshot Debugger](/azure/azure-monitor/app/snapshot-debugger?azure-portal=true)
 
     Collect a debug snapshot from your live web application.
 
-    ![A screenshot of Snapshot Debugger in Application Insights](../media/2-debugger.png)
+    :::image type="content" source="../media/2-debugger.png" alt-text="A screenshot showing the Snapshot Debugger in Application Insights.":::
 
 * [Power BI](/power-bi/?azure-portal=true)
 
     Integrate usage metrics with other business intelligence.
 
-    ![A screenshot of Power BI](../media/2-power-bi.png)
+    :::image type="content" source="../media/2-power-bi.png" alt-text="A screenshot showing Power BI.":::
 
 * [Continuous Export](/azure/azure-monitor/app/export-telemetry?azure-portal=true)
 
     Export raw data to storage as soon as it arrives.
 
-    ![A screenshot of Continuous Export in Application Insights](../media/2-bulk-export.png)
+    :::image type="content" source="../media/2-bulk-export.png" alt-text="A screenshot showing Continuous Export in Application Insights.":::
 
 ## What's IT Service Management Connector?
 
@@ -242,9 +236,3 @@ You can integrate Azure monitoring tools with ITSMC to:
 * Pull incident and change request data from ITSM tools into Azure Log Analytics.
 
 Azure monitoring tools enable you to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. It makes more sense to implement a ticketing system with the ITSMC. That way, instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
-
-## The decision
-
-**Tim:** Monitoring will make it easy for us to fix problems if they crop up. But it will also give me an idea of how to plan for the future as we scale up. It would be nice to have an idea of what I'll need before the fact and not after.
-
-**Andy:** Go for it.
