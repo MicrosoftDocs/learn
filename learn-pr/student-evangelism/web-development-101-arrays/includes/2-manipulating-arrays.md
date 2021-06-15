@@ -5,7 +5,7 @@ For data and information on your websites to be interactive, you need a way to m
 An array is a type of data structure that contains more than one element. Imagine a purchase order containing multiple order items or an ice cream bar having multiple flavors to choose from. Instead of storing, for example, eight different ice cream flavors as eight different variables, you can use a single array to store that information, as shown in the following below:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan"];
 ```
 
 In this code, you're indicating an array by enclosing all its content within brackets (`[]`).
@@ -26,18 +26,18 @@ iceCreamFlavors[3] // Pistachio
 
 ### Change a value
 
-To change a value in an array, you need to select the item's index and assign it a new value by using the equal sign assignment operator (`=`) and a value to the right of the operator. Our ice cream shop has run out of "Rocky Road", but don't worry, we found some "Butter Pecan":
+To change a value in an array, you need to select the item's index and assign it a new value by using the equal sign assignment operator (`=`) and a value to the right of the operator. Our ice cream shop has run out of "Neapolitan," but don't worry, we found some "Butter Pecan":
 
 ```javascript
-iceCreamFlavors[4] = "Butter Pecan"; //Changes "Rocky Road" to "Butter Pecan"
+iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
 ```
 
 ### Add more values
 
-At some point, your ice cream business expands and you want to offer more flavors. What do you do? You can use the method `push()` to add more flavors. The `push()` method takes an item as input and adds the item to the original array. For example, to add "Mint" as flavor, you would use the following code:
+At some point, your ice cream business expands and you want to offer more flavors. What do you do? You can use the method `push()` to add more flavors. The `push()` method takes an item as input and adds the item to the original array. For example, to add "Mint Chip" as flavor, you would use the following code:
 
 ```javascript
-iceCreamFlavors.push("Mint");
+iceCreamFlavors.push("Mint Chip");
 ```
 
 ### Use the array length
@@ -45,7 +45,7 @@ iceCreamFlavors.push("Mint");
 Imagine that someone asks, how many flavors of ice cream do you have? You look in the back room, but all you see is an ocean of flavors, which are going to take some time to count. But wait, on the array, there's a `length` field that you can use to count all the flavors:
 
 ```javascript
-iceCreamFlavors.length // 6 flavors, because you recently added "Mint"
+iceCreamFlavors.length // 6 flavors, because you recently added "Mint Chip"
 ```
 
 > [!TIP]
@@ -53,15 +53,15 @@ iceCreamFlavors.length // 6 flavors, because you recently added "Mint"
 
 ### Remove a value
 
-To remove a value from an array, you can use `delete`. Let's say you've just run out of "Mint." The bucket is still there, but the "Mint" ice cream is gone. The code looks like this:
+To remove a value from an array, you can use `delete`. Let's say you've just run out of "Mint Chip." The bucket is still there, but the "Mint Chip" ice cream is gone. The code looks like this:
 
 ```javascript
-let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road", "Mint"];
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 delete iceCreamFlavors[iceCreamFlavors.length-1];
 console.log(iceCreamFlavors[length-1]) // undefined
 ```
 
-All your items are still there but the bucket, where the "Mint" used to be, is cleared. You can now assign it with a new flavor, what would you add?
+All your items are still there but the bucket, where the "Mint Chip" used to be, is cleared. You can now assign it with a new flavor, what would you add?
 
 ```javascript
 iceCreamFlavor[iceCreamFlavor.length-1] = "your choice";
@@ -79,5 +79,5 @@ To remove an item (eat all the "Vanilla" and toss the carton), use the `splice()
 
 ```javascript
 iceCreamFlavor.splice(2,1); 
-iceCreamFlavor // [ 'Chocolate', 'Strawberry', 'Pistachio', 'Rocky Road', 'Mint' ]
+iceCreamFlavor // [ 'Chocolate', 'Strawberry', 'Pistachio', 'Neapolitan', 'Mint Chip' ]
 ```
