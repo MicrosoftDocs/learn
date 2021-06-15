@@ -18,7 +18,7 @@ An array's contents are commonly referred to as either *elements* or *items*. Yo
 array[<number>]
 ```
 
-The first item in an array starts on 0 and the last item is its length (number of items) minus 1. Thas is, if an array has three items, 0 would be the first position and 2 its last position. A position in an array is referred to as its *index*. Looking at the `iceCreamFlavors` array, let's assume you want **Pistachio**. To read its value, you can write the following code:
+The first item in an array starts on 0 and the last item is its length (number of items) minus 1. That is, if an array has three items, 0 would be the first position and 2 its last position. A position in an array is referred to as its *index*. Looking at the `iceCreamFlavors` array, let's assume you want **Pistachio**. To read its value, you can write the following code:
 
 ```javascript
 iceCreamFlavors[3] // Pistachio
