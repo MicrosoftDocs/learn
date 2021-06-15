@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-purview
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Purview          # Do not edit: title must be "Introduction to (product)"
-  description: "TODO"             # Copy your 'evaluate' Learning Objective here (see below)
+  description: "Introduction to Azure Purview"             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 6/8/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: gerryaobrien      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: gerryo           # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -37,7 +37,7 @@ title: Introduction to Azure Purview
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "In this module, you will evaluate whether Azure Purview is the right choice for your data discovery and governance needs."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -64,8 +64,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
+    - Evaluate whether Azure Purview is appropriate for data discovery and governance needs.
+    - Describe how the features of Azure Purview work to provide data discovery and governance.
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,9 +88,9 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - Knowledge of Microsoft Azure accounts and services
+  - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
+  - Knowledge of the concepts around data governance.
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
@@ -109,6 +109,13 @@ levels:
 ###
 roles:
   - developer
+  - data-analyst
+  - data-analyst
+  - data-scientist
+  - database-administrator
+  - administrator
+  - solution-architect
+  - ai-engineer
 ###########################################################################
 ###
 ### Specify the covered product.

@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Summary unit for the Introduction to Azure Purview module on Microsoft Learn."
   ms.date: 6/8/2021
   author: gerryaobrien
   ms.author: gerryo
