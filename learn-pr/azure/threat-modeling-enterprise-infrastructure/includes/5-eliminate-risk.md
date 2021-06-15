@@ -83,7 +83,7 @@ No other action needed.
 |Issue|Solution|
 |-----|--------|
 |No network segmentation|Segment the network into multiple subnets. If needed, consider adding a perimeter network to secure more sensitive resources. Visit [Azure segmentation](/azure/architecture/framework/security/design-segmentation) for information on segmenting your infrastructure in Azure.|
-|No custom firewall rules|Harden firewall rules by identifying and setting only outbound rules. Check out [firewall design guidelines](/windows/security/threat-protection/windows-firewall/basic-firewall-policy-design) and consider implementing a [firewall in Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) using a hub vnet.|
+|No custom firewall rules|Harden firewall rules by identifying and setting only outbound rules. Check out [firewall design guidelines](/windows/security/threat-protection/windows-firewall/basic-firewall-policy-design) and consider implementing a [firewall in Azure](/azure/security/fundamentals/network-best-practices) using a hub vnet.|
 |Weak VPN authentication mechanism|Connect to Azure using a [site-to-site VPN](/microsoft-365/enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network). Upgrade your VPN to a [validated device](/azure/vpn-gateway/vpn-gateway-about-vpn-devices). Check out the [Azure VPN gateway](https://azure.microsoft.com/services/vpn-gateway/) service. Most importantly, enforce a zero-trust mindset across the company and secure workstation connections with VPN.|
 |Limited data encryption|Enforce [secure communication protocols](/azure/storage/common/transport-layer-security-configure-minimum-version) in Azure, like TLS 1.2.|
 
