@@ -113,7 +113,7 @@ This JSON file hasn't been completed yet, but that's because we had an outlier i
 
 ## Add the missing player back in the data
 
-In the first module of this *Space Jam: A New Legacy* inspired learning path, we realized that there were some outliers in our data. If you completed this module, you might remember that in [Unit 5: Check for Outliers](https://docs.microsoft.com/learn/sports-machine-learning/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a very low value for points and possessions. This was row 35, ID 40. It turns out that was Yosemite Sam!
+In the first module of this *Space Jam: A New Legacy* inspired learning path, we realized that there were some outliers in our data. If you completed this module, you might remember that in [Unit 5: Check for Outliers](/learn/sports-machine-learning/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a very low value for points and possessions. This was row 35, ID 40. It turns out that was Yosemite Sam!
 
 We want to make sure he gets added back in to our JSON data so that he can show up in our Mixed Reality experience, so you will have to write a bit more code:
 
