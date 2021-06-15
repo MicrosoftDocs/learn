@@ -1,4 +1,4 @@
-Business outcomes are how we measure strategic impact. Some organizations have existing key performance indicators (KPIs), which provide a measure for strategic impact. KPIs are a fine way to measure impact. But, for organizations that don't already have operational KPIs and the rich analytics systems that are required to track that progress, objectives and key results (OKRs) are a more manageable approach.
+Business outcomes are how we measure strategic impact. Some organizations have existing key performance indicators (KPIs), which provide a measure for strategic impact. KPIs are a fine way to measure impact, but for organizations that don't already have operational KPIs and the rich analytics systems required to track that progress, objectives and key results (OKRs) are a more manageable approach.
 
 This unit demonstrates how to define OKRs that can measure your strategic impact.
 
@@ -14,9 +14,9 @@ Modern operations require modern ways to measure business outcomes, and cloud te
 
 OKRs have proven to drive alignment in complex work environments, foster innovation, and help individuals focus on what matters. Many organizations have begun to use OKRs. OKRs are based on two components: an objective and key results for that objective. An objective is the statement of intent: what is the team trying to accomplish, and why is it important? Key results are specific outcomes that track impact on the objective:
 
-**Objective**: Clarity and intent.
+**Objective**: Clarity and intent
 
-**Key results**: Measures of success within a quarter.
+**Key results**: Measures of success within a quarter
 
 It's important to understand that OKRs are useful for measuring team outcomes rather than individual performance. Because deadlines often motivate team performance, key results are established quarterly. OKRs help teams focus on the most important tasks instead of on the volume of work at hand. To focus on critical tasks, focus on what happens in a month, a quarter, and other short-term intervals. You can have OKRs that last longer, but shorter intervals emphasize the need for OKRs that track short-term impact.
 

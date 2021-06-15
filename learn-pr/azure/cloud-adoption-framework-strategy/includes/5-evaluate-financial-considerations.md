@@ -1,10 +1,10 @@
-Measuring objectives helps provide a financial consideration by defining the return expected from a specific effort. Cost is another key financial consideration. In this unit, we explore various outcome-driven considerations, a few formulas to calculate costs, and how organizations can reduce capital expenditures.  
+Measuring objectives and identifying the return expected from a specific can help you to define a financial consideration. Cost is another key financial consideration. In this unit, we explore various outcome-driven considerations, a few formulas to calculate costs, and how organizations can reduce capital expenditures.
 
 ## Understand your financial stories
 
 The core financial benefits of Azure are driven by a fundamental shift in the IT operating model. This shift benefits your organization's core financial statements and frees up cash flow for reinvestment:
 
-**Balance sheet**: When you operate on-premises in datacenters, you typically have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
+**Balance sheet**: When you operate on-premises in datacenters, it's common for you to have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
 
 **Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources help you improve the predictability of your cash flow statement. This model delays spend and improves the timing of your cash flow.
 
@@ -16,7 +16,7 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 ## Terms
 
-**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a license worth $100, you would capitalize that on your balance sheet. If you amortized it over five years, you would annually recognize an expense of $20 per year that impacts your income statement.
+**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a license worth $100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of $20 per year that impacts your income statement.
 
 **Balance sheet**: A balance sheet is a financial statement that reports a company's assets, liabilities, and shareholders' equity as of a specific date.
 
@@ -26,7 +26,7 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 **[Cloud economics](https://azure.microsoft.com/overview/cloud-economics/)**: An understanding of the benefits and costs of the cloud, and the financial impact when you start a migration from on-premises to cloud computing.
 
-**Depreciation**: An expense tied to a capitalized asset, that reflects the “economic” usage of that asset in a particular time period. For example if you purchase a server worth $100, you would capitalize that on your balance sheet. If you depreciated it over five years, you would annually recognize an expense of $20 per year that impacts your income statement.
+**Depreciation**: An expense tied to a capitalized asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a server worth $100, you'd capitalize that on your balance sheet. If you depreciated it over five years, you'd annually recognize an expense of $20 per year that impacts your income statement.
 
 **Double-mortgage period**: A period when you have two sets of costs at the same time. For example, when you have both on-premises and cloud costs.
 
@@ -46,41 +46,29 @@ Speaking in terms of business outcomes can feel like a foreign language to many 
 
 To help you find specific types of examples of business outcomes, we've separated our list of examples into categories. This approach tends to drive consensus-building conversations across business units.
 
-### Fiscal outcomes
-
-Financial or fiscal performance is the cleanest business outcome for many business leaders, but it's not the only one.
+**Fiscal outcomes**: Financial or fiscal performance is the cleanest business outcome for many business leaders, but it's not the only one.
 
 View samples of [fiscal outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes?azure-portal=true).
 
-### Agility outcomes
-
-Today's fast-changing business environment places a premium on time. The ability to respond to and drive market change quickly is the fundamental measure of business agility.
+**Agility outcomes**: Today's fast-changing business environment places a premium on time. The ability to respond to and drive market change quickly is the fundamental measure of business agility.
 
 View samples of [agility outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/agility-outcomes?azure-portal=true).
 
 <!-- docutune:ignore "global reach" -->
 
-### Reach outcomes
-
-In a constantly shrinking market, global reach (the ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
+**Reach outcomes**: In a constantly shrinking market, global reach (the ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
 
 View outcomes related to [global reach](/azure/cloud-adoption-framework/strategy/business-outcomes/reach-outcomes?azure-portal=true).
 
-### Customer engagement outcomes
-
-Social marketplaces are redefining winners and losers at an unheard-of pace. Responding to user needs is a key measure of customer engagement.
+**Customer engagement outcomes**: Social marketplaces are redefining winners and losers at an unheard-of pace. Responding to user needs is a key measure of customer engagement.
 
 Learn more about [customer engagement outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/engagement-outcomes?azure-portal=true).
 
-### Performance outcomes
-
-Performance and reliability are assumed. When either falters, reputation damage can be painful and long-lasting.
+**Performance outcomes**: Performance and reliability are assumed. When either falters, reputation damage can be painful and long-lasting.
 
 Learn more about [performance outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/performance-outcomes?azure-portal=true).
 
-### Sustainability goals
-
-Organizations are increasingly discussing environmental goals and sustainability targets.
+**Sustainability goals**: Organizations are increasingly discussing environmental goals and sustainability targets.
 
 Learn more about [sustainability goals](/azure/cloud-adoption-framework/strategy/business-outcomes/sustainability?azure-portal=true).
 
@@ -149,7 +137,7 @@ Recurring expenses that are required to operate a business often are called oper
 - Replacement parts.
 - Maintenance contracts.
 - Repair services.
-- Business continuity and disaster recovery (BCDR) services.
+- Business continuity and disaster recovery services.
 - Other expenses that don't require capital expense approvals.
 
 This category provides one of the highest earning deltas. When you're considering a cloud migration, time invested in making this list exhaustive rarely is wasted. Ask the CIO and finance team questions to ensure that all operational costs are accounted for.
