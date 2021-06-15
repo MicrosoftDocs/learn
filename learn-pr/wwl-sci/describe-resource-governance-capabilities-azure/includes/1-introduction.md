@@ -4,5 +4,7 @@ In this module, you’ll learn about the resource governance capabilities availa
 
 After completing this module, you should be able to:
 
-- Describe some of the resource governance capabilities in Azure.
+- Describe the capabilities of Azure resource locks.
+- Describe the function of Azure Blueprints.
+- Describe how Azure policy helps organizations assess compliance.
 
