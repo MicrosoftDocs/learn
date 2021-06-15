@@ -189,7 +189,7 @@ The program uses FastTrack for Azure and Azure solution providers to improve cus
 
 Watch this short video to get an overview of how the Azure Migration Program can help you.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D1vH] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D1vH] 
 
 ## Solution assessments
 
