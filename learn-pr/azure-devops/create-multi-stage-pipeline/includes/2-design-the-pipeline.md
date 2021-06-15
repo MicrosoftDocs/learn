@@ -45,7 +45,7 @@ When you want to implement a release pipeline, it's important to first identify 
 
 Mara moves to the whiteboard and sketches the existing pipeline.
 
-![A whiteboard showing the Build and Deploy stages](../media/2-build-deploy.png)
+![An image of a whiteboard showing the Build and Deploy stages. The Build stage produces a .zip file. The Deploy stage deploys the .zip file to Azure App Service.](../media/2-build-deploy.png)
 
 **Mara:** The _Build_ stage builds the source code and produces a package. In our case, that package is a _.zip_ file. The _Deploy_ stage installs the _.zip_ file, which is the _Space Game_ website, on an App Service instance. What's missing from our release pipeline?
 
@@ -59,13 +59,13 @@ In our case, the _Space Game_ website's leaderboard feature reads high scores fr
 
 Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to show the _Dev_ stage.
 
-![A whiteboard showing the Build and Dev stages](../media/2-add-dev-stage.png)
+![An image of a whiteboard showing the Build and Dev stages. The Build stage produces a .zip file. The Dev stage deploys the .zip file to Azure App Service.](../media/2-add-dev-stage.png)
 
 **Andy:** You bring up an interesting point. We build the app each time we push a change to GitHub. Does that mean each build is promoted to the _Dev_ stage after it finishes?
 
 **Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either master or some other release branch. I'll update the drawing to show that requirement.
 
-![A whiteboard showing the Build and Dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.](../media/2-add-dev-stage-trigger.png)
+![An image of a whiteboard showing the Build and Dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.](../media/2-add-dev-stage-trigger.png)
 
 **Mara:** I think this promotion will be easy to accomplish. We can define a *condition* that promotes to the _Dev_ stage only when changes happen on a release branch.
 
@@ -143,7 +143,7 @@ For a more complete description of conditions in Azure Pipelines, see [expressio
 
 Mara adds the _Test_ stage to her drawing on the whiteboard.
 
-![A whiteboard showing the Build, Dev, and Test stages](../media/2-add-test-stage.png)
+![An image of a whiteboard showing the Build, Dev, and Test stages. The Test stage deploys the build to Azure App Service.](../media/2-add-test-stage.png)
 
 **Amita:** One concern I have is how often I need to test the app. An email notifies me whenever Mara or Andy makes a change. Changes happen throughout the day, and I never know when to jump in. I think I'd like to see a build once a day, maybe when I get in to the office. Can we do that?
 
@@ -247,7 +247,7 @@ You'll see a more complete example later in this module.
 
 Mara adds _Staging_ to her drawing on the whiteboard.
 
-![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.](../media/2-add-staging-stage.png)
 
 **Amita:** We use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that promotion also have to happen on a schedule?
 
@@ -293,7 +293,7 @@ Let's review the Tailspin team's plan as they move toward next steps.
 
 Mara points to the whiteboard.
 
-![The final whiteboard showing the Build, Dev, Test, and Staging stages.](../media/2-add-staging-stage-approval.png)
+![An image of the final whiteboard showing the Build, Dev, Test, and Staging stages.](../media/2-add-staging-stage-approval.png)
 
 **Mara:** To summarize, our steps are to:
 

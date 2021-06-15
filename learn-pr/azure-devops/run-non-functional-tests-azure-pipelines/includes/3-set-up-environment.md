@@ -38,7 +38,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Nonfunctional tests*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    ![Creating a project through the Azure DevOps Demo Generator.](../media/3-create-new-project.png)
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -59,7 +59,7 @@ Assigning work in this way gives you a checklist to work from. It gives your tea
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
+![A screenshot of Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -77,7 +77,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi4-doing.png)
+    ![A screenshot of Azure Boards, showing the card in the Doing column.](../media/3-azure-boards-wi4-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -200,7 +200,7 @@ Here you create the App Service instances for the three stages that you'll deplo
 
     You see this page:
 
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+    ![The default home page on Azure App Service.](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -216,7 +216,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    ![A screenshot of Azure Pipelines, showing the Library menu option.](../../create-release-pipeline/media/5-pipelines-library.png)
 1. Select **+ Variable group**.
 1. For the variable group name, under **Properties**, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -237,7 +237,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipelines, showing the variable group](../media/3-library-variable-group.png)
+    ![A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.](../media/3-library-variable-group.png)
 
 ## Create a service connection
 

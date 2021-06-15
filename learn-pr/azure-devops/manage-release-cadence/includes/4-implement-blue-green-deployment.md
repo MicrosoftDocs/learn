@@ -72,7 +72,7 @@ To add the slot:
 
 1. As an optional step, go to your site in a browser. You see the default home page because you haven't yet deployed your code to this slot.
 
-    ![The default home page in Azure App Service](../../shared/media/app-service-default.png)
+    ![The default home page in Azure App Service.](../../shared/media/app-service-default.png)
 
 By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your *swap* slot in a network that's not routable from the internet but that only your team can access. Your *production* slot would remain reachable from the internet.
 
@@ -117,4 +117,4 @@ You can also use this task to start, stop, or delete a slot. Or you can use it t
 
     Although you haven't yet made changes to the website, you see that the _Space Game_ website successfully deployed to each App Service environment.
 
-    ![A browser showing the Space Game website in the Dev environment](../media/3-app-service-dev.png)
+    ![A browser showing the Space Game website in the Dev environment.](../media/3-app-service-dev.png)

@@ -13,7 +13,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    ![A screenshot of Visual Studio Code showing the location of the Bash shell.](../../shared/media/vscode-terminal-bash.png)
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 

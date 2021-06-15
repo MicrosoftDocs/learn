@@ -40,8 +40,7 @@ Reports include:
 
 You'll examine the analytics for your pipeline shortly. Here's a sample report that shows the pass rate and duration for a project that has many pipelines runs.
 
-> [!div class="mx-imgBorder"]
-> ![Azure Pipelines, showing a sample report that covers many pipeline runs](../media/6-analyticstab.png)
+![A screenshot of Azure Pipelines, showing a sample report that covers many pipeline runs.](../media/6-analyticstab.png)
 
 You can filter the results to focus on a time range or the activity on a Git branch.
 
@@ -54,18 +53,15 @@ Let's examine a few of your pipeline's analytics.
 1. In Azure Pipelines, navigate to your pipeline.
 1. Select the **Analytics** tab.
 
-    > [!div class="mx-imgBorder"]
-    > ![Azure Pipelines, showing the Analytics tab](../media/6-select-analytics-tab.png)
+    ![A screenshot of Azure Pipelines, showing the Analytics tab.](../media/6-select-analytics-tab.png)
 
 1. Note the pass rates and average duration of your pipeline runs.
 
-    > [!div class="mx-imgBorder"]
-    > ![Azure Pipelines, showing the report overview](../media/6-pipeline-analytics-overview.png)
+    ![A screenshot of Azure Pipelines, showing the report overview.](../media/6-pipeline-analytics-overview.png)
 
 1. Under **Pipeline pass rate**, select **View full report**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Azure Pipelines, showing the full report](../media/6-pipeline-failure-report.png)
+    ![A screenshot of Azure Pipelines, showing the full report.](../media/6-pipeline-failure-report.png)
 
     At this point, you have a basic pipeline report that contains data for just a few runs.
 

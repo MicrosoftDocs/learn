@@ -14,7 +14,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select Cloud Shell. When prompted, select the **Bash** experience.
 
-    ![Azure portal page showing selecting the Cloud Shell icon from the menu.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
 1. Run the following `az group delete` command. This command deletes **tailspin-space-game-rg**, which is the resource group that you used in this module.
 

@@ -29,7 +29,7 @@ Amita opens a Windows laptop and launches Google Chrome. She goes to the web app
 
 Amita clicks the **Download game** button. The modal window appears.
 
-![A browser showing the "Download game" modal window on the Space Game website](../media/4-website-download-game-modal.png)
+![A browser showing the "Download game" modal window on the Space Game website.](../media/4-website-download-game-modal.png)
 
 **Andy:** Great. What modal windows do you check next?
 
@@ -37,11 +37,11 @@ Amita clicks the **Download game** button. The modal window appears.
 
 Amita clicks each of the four thumbnail images to show the example game screens.
 
-![A browser showing the game screen modal window on the Space Game website](../media/4-website-game-screens.png)
+![A browser showing the game screen modal window on the Space Game website.](../media/4-website-game-screens.png)
 
 Next Amita clicks the top player on the leaderboard. The player's profile appears.
 
-![A browser showing the leaderboard modal window on the Space Game website](../media/4-website-leaderboard.png)
+![A browser showing the leaderboard modal window on the Space Game website.](../media/4-website-leaderboard.png)
 
 **Amita:** That covers the modal window tests. I run these tests on Windows because that's what most players use to visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Microsoft Edge.
 
@@ -85,7 +85,7 @@ Let's start by getting the `id` attribute for the **Download game** button.
 
 1. Examine the highlighted code and note the `id` attribute. Copy the `id` for later.
 
-    ![A browser showing the developer tools window and a selected HTML element](../media/4-website-inspect-button.png)
+    ![A browser showing the developer tools window and a selected HTML element.](../media/4-website-inspect-button.png)
 
 1. Select the **Download game** button. Then repeat steps 2 and 3 to get the `id` attribute for the modal window that appears.
 1. Repeat the process for the four game screens and the top player on the leaderboard.

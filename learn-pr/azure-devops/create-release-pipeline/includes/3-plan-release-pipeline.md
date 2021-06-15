@@ -22,7 +22,7 @@ Let's follow along with Andy and Mara as they plan their POC.
 
 Andy draws a diagram on the whiteboard.
 
-![A hand-drawn illustration of an artifact moving to a deployment environment](../media/3-whiteboard-1.png)
+![A hand-drawn illustration of an artifact moving to a deployment environment.](../media/3-whiteboard-1.png)
 
 **Andy:** We already have the :::image type="icon" source="../../shared/media/callout-01.png"::: build artifact. It's the _.zip_ file that our existing build pipeline creates. But how do we deploy it to a :::image type="icon" source="../../shared/media/callout-02.png"::: live environment?
 
@@ -36,7 +36,7 @@ A _stage_ is a part of the pipeline that can run independently and be triggered 
 
 Mara updates the diagram on the whiteboard.
 
-![A hand-drawn illustration of a deployment pipeline that contains two stages](../media/3-whiteboard-3.png)
+![A hand-drawn illustration of a deployment pipeline that contains two stages, Build and Deploy.](../media/3-whiteboard-3.png)
 
 **Mara:** We've already defined the tasks for the :::image type="icon" source="../../shared/media/callout-01.png"::: build stage in our pipeline. Our :::image type="icon" source="../../shared/media/callout-02.png"::: deployment stage can be similar, including tasks that deploy the build to an environment.
 

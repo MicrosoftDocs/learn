@@ -27,19 +27,19 @@ It's a great idea to start with tools and tests that you're familiar with. Do yo
 
 Tim brings up Apache JMeter on a laptop that runs Linux. Here's what it looks like.
 
-![The Apache JMeter user interface](../media/4-apache-jmeter-new.png)
+![The Apache JMeter user interface.](../media/4-apache-jmeter-new.png)
 
 Tim then creates a new test plan file, named *LoadTest.jmx*. To the file, he adds a **Thread Group**. Each simulated user runs on its own thread. A thread group controls the number of users and the number of each user's requests.
 
 The following example shows 10 simulated users (threads). Each user makes 10 requests. So the system gets a total of 100 requests.
 
-![Specifying the thread group in Apache JMeter](../media/4-apache-jmeter-thread-group.png)
+![Specifying the thread group in Apache JMeter.](../media/4-apache-jmeter-thread-group.png)
 
 A _sampler_ is a single request made by JMeter. JMeter can query servers over HTTP, FTP, TCP, and several other protocols. Samplers generate the results that are added to the report.
 
 Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the thread group. He provides the host name of the _Space Game_ website that runs in the **staging** environment on Azure App Service.
 
-![Specifying the HTTP request in Apache JMeter](../media/4-apache-jmeter-http-request.png)
+![Specifying the HTTP request in Apache JMeter.](../media/4-apache-jmeter-http-request.png)
 
 > [!TIP]
 > For reference, Microsoft hosts a version of the [Space Game website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.

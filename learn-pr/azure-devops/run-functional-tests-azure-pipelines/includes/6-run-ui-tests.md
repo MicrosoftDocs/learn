@@ -133,7 +133,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 
     Your variable group resembles this one:
 
-    ![Azure Pipelines, showing the variable group](../media/6-library-variable-group.png)
+    ![A screenshot of Azure Pipelines, showing the variable group. The group contains four variables.](../media/6-library-variable-group.png)
 
 ## Modify the pipeline configuration
 
@@ -176,24 +176,24 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     During the build, you see the automated tests run after the website is deployed.
 
-    ![Azure Pipelines, showing the running stages](../media/6-stages-test-running.png)
+    ![A screenshot of Azure Pipelines, showing the running stages.](../media/6-stages-test-running.png)
 
 1. After the build finishes, go to the summary page.
 
-    ![Azure Pipelines, showing the completed stages](../media/6-stages-complete.png)
+    ![A screenshot of Azure Pipelines, showing the completed stages.](../media/6-stages-complete.png)
 
     You see that the deployment and the UI tests finished successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
-    ![Azure Pipelines, showing the test summary](../../shared/media/azure-pipelines-build-summary-tests.png)
+    ![A screenshot of Azure Pipelines, showing the test summary.](../../shared/media/azure-pipelines-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 
     The report shows that all nine tests have passed. These tests include three tests across three browsers.
 
-    ![Azure Pipelines, showing the full test report](../media/6-test-summary.png)
+    ![A screenshot of Azure Pipelines, showing the full test report.](../media/6-test-summary.png)
 
     If any test fails, you see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 

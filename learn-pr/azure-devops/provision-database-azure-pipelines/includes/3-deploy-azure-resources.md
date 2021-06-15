@@ -9,7 +9,7 @@ You can also [install and run the Azure CLI locally](/cli/azure/install-azure-cl
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
 
-    ![Azure portal page with the Cloud Shell icon on the menu bar.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create while working in Cloud Shell. The first time you open Cloud Shell, it prompts you with an offer to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.

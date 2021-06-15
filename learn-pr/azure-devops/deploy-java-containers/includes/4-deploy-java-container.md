@@ -48,7 +48,7 @@ To add the variables:
 1. In Azure DevOps, go to your **mslearn-java-containers** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines showing the Library menu option](../media/4-pipelines-library.png)
+    ![A screenshot of Azure Pipelines showing the Library menu option.](../media/4-pipelines-library.png)
 
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
@@ -70,7 +70,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipeline showing the variable group](../media/4-library-variable-group.png)
+    ![A screenshot of Azure Pipeline showing the variable group. The group contains five variables.](../media/4-library-variable-group.png)
 
 ## Create required service connections
 
@@ -246,7 +246,7 @@ Add this code to the end of the pipeline:
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and copy the URL to view the deployed site.
 
-    ![Locating the web site URL](../media/4-deploy-url.png)
+    ![A screenshot of Azure Pipelines showing the location of the web site URL.](../media/4-deploy-url.png)
 
 1. The site is hosted under the */myshuttledev/* path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
 
@@ -256,4 +256,4 @@ Add this code to the end of the pipeline:
 
 1. You see the site running on App Service. You can log in to the site using the credentials *fred*/*fredpassword*.
 
-    ![Reviewing the Java container site](../media/4-myshuttle.png)
+    ![A screenshot of the running web site.](../media/4-myshuttle.png)

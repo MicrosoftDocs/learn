@@ -121,14 +121,14 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 1. Select **default**, the Kubernetes namespace used by the deployment. Here you see the list of deployments currently in the Kubernetes cluster.
 1. Select **Services**. Here you see the different services running in Kubernetes, along with their cluster and external IP addresses.
 1. Select **web**. Here you see the service details and associated pods for the **web** service.
-1. Select the **Copy External IP to  clipboard** button. This IP address is where the site is publicly hosted.
+1. Select the **Copy External IP to clipboard** button. This IP address is where the site is publicly hosted.
 
-    ![Locating the web site IP address](../media/4-deploy-ip.png)
+    ![A screenshot showing the location of the web site IP address.](../media/4-deploy-ip.png)
 
 1. Navigate to the copied IP address in a new browser tab.
 1. You see the site on AKS.
 
-    ![The Space Game website](../media/4-space-game.png)
+    ![A screenshot of the Space Game web site.](../media/4-space-game.png)
 
 1. Return to the Azure DevOps browser tab.
 1. Use the browser **Back** button to return to the **default** namespace page.
@@ -140,7 +140,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
 1. You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
 
-    ![The leaderboard service response in JSON format](../media/4-leaderboard-api.png)
+    ![A screenshot of a web browser showing the JSON response from the leaderboard service.](../media/4-leaderboard-api.png)
 
     You now have a REST API that you can call from other applications.
 

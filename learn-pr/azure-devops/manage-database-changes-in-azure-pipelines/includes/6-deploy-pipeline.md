@@ -11,7 +11,7 @@ In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/cr
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. In the upper left, in the drop-down menu, select **Bash**.
 
-    ![Azure portal showing selecting the Cloud Shell icon from the menu.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
     > To persist any files that you create in Cloud Shell, you must have an Azure Storage resource. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This is a one-time step. The assets are automatically attached for all future Cloud Shell sessions.

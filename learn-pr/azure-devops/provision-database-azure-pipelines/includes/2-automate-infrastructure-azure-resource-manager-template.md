@@ -6,7 +6,7 @@ In the [Manage database changes in Azure Pipelines](/learn/modules/manage-databa
 
 As a reminder, here's the pipeline diagram from that previous module.
 
-![Whiteboard drawing of the pipeline with the two database stages added and six call-out numbers.](../media/2-whiteboard-pipeline.png)
+![A whiteboard drawing of the pipeline with the two database stages added and six call-out numbers.](../media/2-whiteboard-pipeline.png)
 
 The _Build_ stage has a job to build the web app and a job to build the database project. ![Call-out 1 on the whiteboard.](../../shared/media/callout-01.png) The database project produces a _.dacpac_ file that is a build artifact.
 

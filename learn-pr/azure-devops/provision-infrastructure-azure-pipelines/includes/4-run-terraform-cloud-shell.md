@@ -21,7 +21,7 @@ You can also install and run Terraform locally from a terminal or a PowerShell w
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![A screenshot of the Azure portal showing the location of the Cloud Shell menu item.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
     > Cloud Shell requires an Azure Storage resource to persist any files that you create while working in Cloud Shell. When you first open Cloud Shell, it offers to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.

@@ -128,10 +128,10 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![Locating the web site URL in Azure Pipelines](../media/4-deploy-url.png)
+    ![Locating the web site URL in Azure Pipelines.](../media/4-deploy-url.png)
 
 1. You see the site running on App Service.
 
-    ![The Node.js application running in a web browser](../media/4-hello-world.png)
+    ![The Node.js application running in a web browser.](../media/4-hello-world.png)
 
 Although this application is very basic, you now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
