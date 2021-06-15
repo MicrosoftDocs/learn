@@ -4,91 +4,47 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check questions for the Introduction to Azure Purview module."
   ms.date: 6/8/2021
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
+  ms.prod: learning-azure
+durationInMinutes: 15
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What does Azure Purview do with the data it discovers from your registered sources?"
     choices:
-    - content: ""
+    - content: "It catalogs and classifies the data that is scanned."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: It creates a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data."
+    - content: "It moves the data to your Azure subscription, automatically creating the necessary storage accounts."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: Azure Purview does not move the data. It leaves the data in its original storage location but maintains a link to the data."
+    - content: "It performs data transformations to match your on-premises schemas."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure Purview does not perform data transformations on the discovered data. It creates a data map along with metadata that describes the data source."
+  - content: "Where would you register your data sources for use in Azure Purview?"
     choices:
-    - content: ""
+    - content: "In the Overview tab of the Azure Purview account page."
+      isCorrect: false
+      explanation: "Incorrect: The overview page for the Azure Purview account provides information about that account only."
+    - content: "In the Managed Resources tab of the Azure Purview account page."
+      isCorrect: false
+      explanation: "Incorrect: The Managed resources tab is sued to configure and manage the resource group, storage account, and event hub resources."
+    - content: "In Azure Purview Studio."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct: Azure Purview Studio is where you register your data sources."
+  - content: "What aspect of Azure Purview is used to configure the data discovery for your data sources?"
     choices:
-    - content: ""
+    - content: "Scan rules."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: In an Azure Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization."
+    - content: "Collections."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: Collections are a container concept to help organize data sources into common groupings."
+    - content: "Classifications"
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect: Classifications are used to identify key attributes of the data, in the data sources, in one of five categories, government, financial, personal, security, or miscellaneous."
+  

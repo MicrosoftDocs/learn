@@ -15,7 +15,7 @@ Azure Purview is designed to help enterprises get the most value from their exis
 :::image type="content" source="../media/register-sources.png" alt-text="Screenshot depicting the register sources dialog for Azure Purview data map. It displays some of the supported data sources such as Azure Blob Storage, Cosmos DB, Amazon S3, and Azure SQL Database, among others. The displayed list is also not comprehensive.":::
 
 ## How to track you data sources
-Tracking your data sources starts with registering the sources with Azure Purview. Once you have the data sources registered, Azure Purview can scan generate a map view in Azure Purview Studio.
+Tracking your data sources starts with registering the sources with Azure Purview. Once you have the data sources registered, Azure Purview can scan the data and generate a map view in Azure Purview Studio.
 
 :::image type="content" source="../media/register-sources-form.png" alt-text="Screenshot depicting the dialog to register an Azure Blob Storage source for Azure Purview. The dialog has entries for a name, Azure subscription name and storage account name, an endpoint, and a collection to add the source to.":::
 
