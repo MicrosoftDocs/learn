@@ -45,7 +45,7 @@ Let’s start by creating an Azure Function app in the portal.
     | **Plan** |
     | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
-1. Select **Review + create** > **Create**. Deployment may take awhile to complete.
+1. Select **Review + create** > **Create**. Deployment may take a while to complete.
 
 1. After the function app is deployed, select **Go to resource**. Your *Function App* pane appears.
 
