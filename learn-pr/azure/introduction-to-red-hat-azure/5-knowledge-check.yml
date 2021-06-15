@@ -5,10 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: A multiple-choice quiz covering the module contents.
-  ms.date: 6/10/2021
+  ms.date: 06/15/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
 quiz:
@@ -28,7 +29,7 @@ quiz:
     choices:
     - content: ARO is managed by Red Hat and OpenShift is open-source.
       isCorrect: true
-      explanation: ARO is the Azure Red Hat OpenShift offering that makes helps with OpenShift management.
+      explanation: ARO is the Azure Red Hat OpenShift offering that helps with OpenShift management.
     - content: ARO doesn’t work on edge devices but OpenShift does
       isCorrect: false
       explanation: ARO works across hybrid deployments including at the edge.

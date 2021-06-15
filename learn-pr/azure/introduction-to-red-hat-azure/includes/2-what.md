@@ -6,7 +6,7 @@ Red Hat offers a number of Linux solutions for Azure. In this module, we will di
 
 ## What is ARO?
 
-**Azure Red Hat OpenShift (ARO)** provides fully managed Red Hat OpenShift clusters on Azure, jointly engineered, managed, and supported by Microsoft and Red Hat. ARO leverages the power of Azure to provide a flexible, self-service deployment of the fully managed OpenShift clusters for developing and deploying applications. With ARO, you can maintain regulatory compliance and focus on your application development, while your cluster nodes are patched, updated, and monitored by both Microsoft and Red Hat. Get up and running immediately using the pre-integrated application builds, container packaging and registry, deployments, scaling, health management, and more. ARO also supports integration with most major CI/CD and application performance management solutions you already have in house.
+**Azure Red Hat OpenShift (ARO)** provides fully managed Red Hat OpenShift clusters on Azure, jointly engineered, managed, and supported by Microsoft and Red Hat. ARO leverages the power of Azure to provide a flexible, self-service deployment of the fully managed OpenShift clusters for developing and deploying applications. With ARO, you can maintain regulatory compliance and focus on your application development, while your cluster nodes are patched, updated, and monitored by both Microsoft and Red Hat. Get up and running immediately using the pre-integrated application builds, container packaging and registry, deployments, scaling, health management, and more. ARO also supports integration with most major CI/CD and application performance management solutions you already have in-house.
 
 ## What is JBoss?
 
