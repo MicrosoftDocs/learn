@@ -132,7 +132,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
 
-   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
+   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open Actions in GitHub or View/Edit Config":::
 
 > [!NOTE]
 > Your repository is a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.

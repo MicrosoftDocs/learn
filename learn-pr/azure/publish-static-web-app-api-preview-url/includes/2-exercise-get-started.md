@@ -278,7 +278,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
    After the app is created, a confirmation notification appears in Visual Studio Code.
 
-   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open portal":::
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config":::
 
 9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-and-api**, and select **Open in Portal** to view app in the Azure portal.
 
