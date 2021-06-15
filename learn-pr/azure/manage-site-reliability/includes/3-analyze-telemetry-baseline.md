@@ -1,11 +1,3 @@
-The team is meeting to put together a job description for an SRE. They've come to a common understand of what an SRE is. Now, they want to define some specific skills.
-
-**Tim:** To my mind, an SRE needs to be able to anticipate problems and the only way to do that is to use a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
-
-**Mara:** Let's take a look at what it does.
-
-## Application Insights
-
 [Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) analyzes the performance of your web application and can warn you about potential problems.
 
 This feature requires no special setup other than configuring your app for Application Insights (on ASP.NET, Java, or Node.js, and in the web page code). It's active once your app generates enough telemetry.
@@ -14,7 +6,7 @@ This feature requires no special setup other than configuring your app for Appli
 
 Application Insights sends a notification when it detects that the performance of your application has degraded in one of these ways:
 
-- Response time degradation,
+- Response time degradation.
 
     Your app has started responding to requests more slowly than it used to. The change might have been sudden, for example if there was a regression in your latest deployment. Or, the degradation might have been gradual, perhaps because there is a memory leak.
 - Dependency duration degradation.
@@ -34,7 +26,7 @@ An alert doesn't necessarily mean that your app has a problem. It's more of a su
 
 Each alert notification includes diagnostic information. Here's an example of how you can use that information:
 
-![A screenshot of server response times in notification diagnostic information](../media/2-server-response-time.png)
+:::image type="content" source="../media/2-server-response-time.png" alt-text="A screenshot showing server response times as part of notification diagnostics.":::
 
 - For triage.
 
@@ -50,7 +42,7 @@ Each alert notification includes diagnostic information. Here's an example of ho
 
 Smart Detection notifications are enabled by default and sent to those who have *owners*, *contributors*, and *readers* access to the Application Insights resource. To change this, either select **Configure** in the email notification or open **Smart Detection settings** in Application Insights.
 
-![A screenshot of Smart Detection settings](../media/2-smart-detection-settings.png)
+:::image type="content" source="../media/2-smart-detection-settings.png" alt-text="A screenshot showing Smart Detection settings. These settings include detection for slow page load times, slow server response times, and more.":::
 
 You can use the unsubscribe link in the Smart Detection email to stop receiving email notifications.
 
@@ -121,7 +113,7 @@ If your application relies heavily on external services, it's a good idea to wat
 
 Here's an example dependency degradation notification:
 
-![A screenshot of a dependency degradation notification from Application Insights](../media/2-dependency-degradation.png)
+:::image type="content" source="../media/2-dependency-degradation.png" alt-text="A screenshot showing a dependency degradation notification from Application Insights.":::
 
 This tells you:
 
@@ -143,7 +135,7 @@ Anomalies like these are hard to detect just by inspecting the data, but they're
 
 Application Insights algorithms look at page load times, request response times at the server, and dependency response times. You don't have to set any thresholds or configure rules. Machine learning and data mining algorithms are used to detect abnormal patterns. Here's an example of a notification:
 
-![A screenshot of smart detection in Application Insights](../media/2-smart-detection.png)
+:::image type="content" source="../media/2-smart-detection.png" alt-text="A screenshot showing smart detection in Application Insights.":::
 
 The **When** field shows the time the issue was detected.
 
@@ -155,9 +147,3 @@ The **What** field describes:
 The table compares the poorly performing set with the average behavior of all other events.
 
 Select the links to open **Metric Explorer** and **Search** to find relevant reports that are filtered on the time and properties of the slow performing set. Then modify the time range and filters to explore the telemetry.
-
-## The next skill set
-
-**Andy:** OK, so what about Tim's point that we're going to need ongoing monitoring?
-
-**Amita:** Good point. Let's talk about that next.

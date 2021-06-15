@@ -1,11 +1,5 @@
 In this part, you learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
 
-## The meeting
-
-**Amita:** I think they need to show us how well they can use Application Insights and Smart Detection. We may all be affected once we start getting alerts. What should alerts be about? What kinds of alerts are there?
-
-**Mara:** Maybe we should come up with a sort of style guide.
-
 ## Monitoring and alerting
 
 Monitoring and alerting enables a system to tell people when it's broken, or perhaps to tell them what's about to break. If someone needs to investigate the problem, the alert should give relevant information so the person knows where to start.
@@ -97,9 +91,3 @@ Here are some reasons you might break the above guidelines:
 - Your alert setup is more complex than the problems they're trying to detect.
 
     The goal should be to move towards simple, robust, self-protecting systems.
-
-## The last skill set
-
-**Andy:** That's quite a list. Is there anything else?
-
-**Mara:** They need good analytic skills.
