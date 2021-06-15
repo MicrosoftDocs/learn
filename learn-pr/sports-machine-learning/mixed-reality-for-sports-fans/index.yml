@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: ""
+uid: learn.sports-machine-learning.mixed-reality-for-sports-fans
 metadata:
   title: Prepare to bring the basketball course into a mixed reality space
   description: "Discover the fundamentals of mixed reality and prepare the resources needed to create an interactive experience for basketball fans and coaches, inspired by SPACE JAM: A NEW LEGACY."
-  ms.date: 06/25/2021
-  author: sguthals
+  ms.date: 06/15/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,7 +17,7 @@ abstract:  |
   - Design a mixed reality experience to display basketball player data to fans and coaches
 
   > [!TIP]
-  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+  > This module is part of a multi-modal learning experience. Start the module to see how you can follow along!
 
   © 2021 Warner Bros. Ent. All Rights Reserved.
 
@@ -32,6 +32,12 @@ roles:
 products:
 - vs-code
 units:
-- ""
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.introduction
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.mixed-reality-for-sports
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.the-tools
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.the-frameworks
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.the-data
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.knowledge-check
+- learn.sports-machine-learning.mixed-reality-for-sports-fans.summary
 badge:
-  uid: ""
+  uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.badge
