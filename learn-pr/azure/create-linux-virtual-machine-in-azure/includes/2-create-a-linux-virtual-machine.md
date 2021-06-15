@@ -43,7 +43,7 @@ Anything that a computer can have installed can be included in an image. You can
 Just as a physical machine has a certain amount of memory and CPU power, so does a virtual machine. Azure offers a range of VMs of differing sizes at different price points. The size that you choose will determine the VM's processing power, memory, and maximum storage capacity.
 
 > [!WARNING]
-> There are quota limits on each subscription that can impact VM creation. If you run into these quota limits you can [open an online customer support request](https://docs.microsoft.com/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
+> There are quota limits on each subscription that can impact VM creation. If you run into these quota limits you can [open an online customer support request](/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
 
 VM sizes are grouped into categories, starting with the B-series for basic testing and running up to the H-series for massive computing tasks. You should select the size of the VM based on the workload you want to perform. It is possible to change the size of a VM after it's been created, but the VM must be stopped first. So, it's best to size it appropriately from the start if possible.
 

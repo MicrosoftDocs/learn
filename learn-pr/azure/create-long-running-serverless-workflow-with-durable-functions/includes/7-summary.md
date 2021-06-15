@@ -6,4 +6,4 @@ In this module we learned about Durable Functions and how to orchestrate our sim
 
 ## Learn more
 
-- [Durable Functions patterns and technical concepts](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-concepts)
+- [Durable Functions patterns and technical concepts](/azure/azure-functions/durable/durable-functions-concepts)

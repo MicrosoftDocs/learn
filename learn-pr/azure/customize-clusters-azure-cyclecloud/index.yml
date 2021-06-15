@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.customize-clusters-azure-cyclecloud
+metadata:
+  moduleType: standard
+  title: Customize high-performance computing clusters deployed with Azure CycleCloud
+  description: Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HPC environments in Azure.
+  ms.date: 06/14/2021
+  author: anhoward
+  ms.author: anhoward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Customize high-performance computing clusters deployed with Azure CycleCloud
+summary: "Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure."
+abstract: |
+  By the end of this module, you'll know more about how to:
+  - Customize HPC cluster architecture.
+  - Customize software and applications that you use with Azure CycleCloud clusters. 
+prerequisites: |
+  - An Azure subscription
+  - Basic familiarity with Azure compute services
+  - Basic knowledge of high-performance computing (HPC) concepts 
+iconUrl: /learn/achievements/customize-clusters-azure-cyclecloud.svg
+levels:
+  - intermediate
+roles:
+  - solution-architect
+  - developer
+  - student
+products:
+  - azure
+  - azure-cyclecloud
+units:
+- learn.azure.customize-clusters-azure-cyclecloud.introduction
+- learn.azure.customize-clusters-azure-cyclecloud.describe-templates
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-add-disk
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-add-custom-node-array
+- learn.azure.customize-clusters-azure-cyclecloud.customize-software-installations
+- learn.azure.customize-clusters-azure-cyclecloud.exercise-create-cloud-init-script
+- learn.azure.customize-clusters-azure-cyclecloud.knowledge-check
+- learn.azure.customize-clusters-azure-cyclecloud.summary
+badge:
+  uid: learn.azure.customize-clusters-azure-cyclecloud.badge

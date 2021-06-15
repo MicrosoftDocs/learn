@@ -48,3 +48,4 @@ units:
 - learn.language.go-write-test-program.8-summary
 badge:
   uid: learn.language.go-write-test-program.badge
+hidden: true
