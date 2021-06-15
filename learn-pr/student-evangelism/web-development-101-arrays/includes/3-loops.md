@@ -60,19 +60,19 @@ while (i < 10) {
 ```
 
 > [!NOTE]
-> Why would you choose a `for` loop vs. a `while` loop? On StackOverflow, [17,000 viewers had the same question](https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/?azure-portal=true), and some of the opinions might be interesting to you.
+> Why would you choose either a `for` loop or a `while` loop? On StackOverflow, [17,000 viewers had the same question](https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/?azure-portal=true), and some of the opinions might be interesting to you.
 
 Arrays are often used with loops because most conditions require the length of the array to stop the loop, and the index can also be the counter value.
 
 ## Loops and arrays
 
-Let's head back to our list of delicious ice cream flavors. A customer has asked you to name all the flavors you're selling before they decide what to buy. Luckily, we know about `for` loops, so let's use one. Remember, you defined a condition on when to end, like this:
+Let's head back to your list of delicious ice cream flavors. A customer has asked you to name all the flavors you're selling before they decide what to buy. Luckily, you know about `for` loops, so go ahead and use one. Remember, you defined a condition on when to end the list, like this:
 
 ```javascript
 i < 10
 ```
 
-Well, our array of ice cream flavors has an arbitrary length, which means that we can remove or add items to it at any time. We know we have six kinds of ice cream, but we can use the `length` field on the array and rely on that instead:
+Well, your array of ice cream flavors has an arbitrary length, which means that you can remove or add items to it at any time. You know you have six kinds of ice cream, but you can use the `length` field on the array and rely on that instead:
 
 ```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
@@ -82,7 +82,7 @@ for (let i = 0; i < iceCreamFlavors.length; i++) {
 } // Ends when all flavors are printed
 ```
 
-There you have it. You've listed all the flavors, and your customer has picked "Vanilla". Which flavor would you pick?
+There you have it. You've listed all the flavors, and your customer has picked "Vanilla." Which flavor would you pick?
 
 ## The `forEach()` loop
 
@@ -93,7 +93,7 @@ let numbers = [1, 2, 3, 4, 5];
 numbers.forEach(number => console.log(number)); // 1 2 3 4 5
 ```
 
-Also, if you want access to the current index, you have that too, by slightly changing the preceding code to the following:
+Also, if you want access to the current index, you can have that too, by slightly changing the preceding code to the following:
 
 ```javascript
 numbers.forEach((number, index) => console.log(`Number ${number} ${index}`));
