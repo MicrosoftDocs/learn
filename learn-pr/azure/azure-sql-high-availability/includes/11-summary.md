@@ -10,9 +10,9 @@ People learn in different ways. A Channel 9 video series related to this learnin
 
 ### Backup and restore
 
-In the SQL documentation, you can learn more about how to [restore to a point in time](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model?view=sql-server-ver15&azure-portal=true) and [restore a deleted database](/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore?azure-portal=true).
+In the SQL documentation, you can learn more about how to [restore to a point in time](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model) and [restore a deleted database](/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore).
 
-In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL Database. In Azure SQL Managed Instance, the process is similar but uses slightly different commands. You can review the commands in the [SQL documentation](/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore?azure-portal=true).  
+In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL Database. In Azure SQL Managed Instance, the process is similar but uses slightly different commands. You can review the commands in the [SQL documentation](/azure/azure-sql/database/recovery-using-backups#sql-managed-instance-2).  
 
 ### Kusto Query Language (KQL) and Azure PowerShell
 
@@ -22,7 +22,7 @@ You've also used PowerShell in the availability exercises. To learn more about P
 
 ### High availability
 
-See the SQL Database documentation for more information about [business continuity](/azure/sql-database/sql-database-business-continuity?azure-portal=true) and [high availability](/azure/sql-database/sql-database-high-availability?azure-portal=true) in Azure SQL. You can also review the SLAs for [Azure SQL Managed Instance](https://azure.microsoft.com/en-in/support/legal/sla/azure-sql-sql-managed-instance/v1_0/) and [Azure SQL Database](https://azure.microsoft.com/en-us/support/legal/sla/sql-database/v1_5/).
+See the SQL Database documentation for more information about [business continuity](/azure/sql-database/sql-database-business-continuity?azure-portal=true) and [high availability](/azure/sql-database/sql-database-high-availability?azure-portal=true) in Azure SQL. You can also review the SLAs for [Azure SQL Managed Instance](https://azure.microsoft.com/en-in/support/legal/sla/azure-sql-sql-managed-instance/v1_0/) and [Azure SQL Database](https://azure.microsoft.com/support/legal/sla/azure-sql-database/v1_5/).
 
 In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](/azure/sql-database/sql-database-high-availability#zone-redundant-configuration?azure-portal=true) if your [region supports that](/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true).
 

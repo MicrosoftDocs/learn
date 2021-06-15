@@ -12,20 +12,22 @@ First, you'll create a resource group, the virtual network, and subnets for your
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in. Use the Bash version of Cloud Shell.
 
-1. To create a variable to store your resource group name, and a resource group for your resources, in Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
-
-1. Find the location name running the following command.
+1. Find the location name for the Azure region you'd like to deploy your resources in by running the following command.
 
     ```azurecli
-        az account list-locations -o table
+    az account list-locations -o table
     ```
 
-1. Next, create the resource group.
+1. Decide on a resource group name that will be used in the Cloud Shell and assign it to the variable `rg`. 
 
     ```azurecli
-        rg=<resource group name>
-    
-        az group create --name $rg --location <location>
+    rg=<resource group name>
+    ```
+   
+1. Run the following command to create the resource group, replacing `<location>` with the location value from the previous step.
+ 
+    ```azurecli
+    az group create --name $rg --location <location>
     ```
 
 1. To create the **ERP-servers** virtual network and the **Applications** subnet, in Cloud Shell, run the following command.

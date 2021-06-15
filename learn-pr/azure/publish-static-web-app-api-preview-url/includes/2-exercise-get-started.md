@@ -22,7 +22,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 1. Open a terminal on your computer.
 
-1. Start by cloning the GitHub repository to your computer, replacing *<YOUR_GITHUB_USERNAME>* with your GitHub username..
+1. Start by cloning the GitHub repository to your computer, replacing _<YOUR_GITHUB_USERNAME>_ with your GitHub username..
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app
@@ -248,7 +248,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone-end
 
-9. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this module.
+9. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this tutorial.
 
    Select **Skip for now** and press **Enter**.
 
@@ -333,7 +333,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click **my-static-web-app-and-api**, and select **Browse Site** to view app in your browser.
 
-   :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
+:::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 

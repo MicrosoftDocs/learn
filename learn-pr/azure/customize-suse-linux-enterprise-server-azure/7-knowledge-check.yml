@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.customize-suse-linux-enterprise-server-azure.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of SLES virtual machine customization.
+  ms.date: 06/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: Which of the following tools can you use to load packages?
+    choices:
+    - content: YaST
+      isCorrect: true
+      explanation: "YaST is an admin tool developed by SUSE for loading packages."
+    - content: Sudo
+      isCorrect: false
+      explanation: "Sudo gives the user administrative rights to change the machine."
+    - content: SLES
+      isCorrect: false
+      explanation: "SLES stands for SUSE Linux Enterprise Server."
+  - content: What does zypper do for you?
+    choices:
+    - content: Give you administrative rights
+      isCorrect: false
+      explanation: "Sudo gives you administrative rights."
+    - content: Link dependencies among packages
+      isCorrect: true
+      explanation: "Zypper is a package management tool developed by SUSE."
+    - content: Serves as the open-source code for a GUI
+      isCorrect: false
+      explanation: "A GUI requires a collection of packages, which can be loaded with zypper."
+  - content: What does the sudo command do?
+    choices:
+    - content: Update package code
+      isCorrect: false
+      explanation: "SUSE handles pulling and cleaning open-source packages for you."
+    - content: Make administrator-level changes to the machine
+      isCorrect: true
+      explanation: "Sudo gives the user administrative rights to change the machine."
+    - content: Change your VM size
+      isCorrect: false
+      explanation: "VM size can be set through the Azure portal."
