@@ -120,11 +120,11 @@ The below diagram shows the available Azure Storage services that can be used wi
 ### Security and compliance with Azure VMware Solutions
 Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory. 
 
-In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the CloudAdmin role.  The CloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
+In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the cloudAdmin role.  The cloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
 
 - The local cloudadmin user is used to set up users in Active Directory (AD).
 
-- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. They are, however, assign AD users and groups to the CloudAdmin role on vCenter.
+- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. They are, however, assign AD users and groups to the cloudAdmin role on vCenter.
 
 - The private cloud user doesn't have access to and can't configure specific management components supported and managed by Microsoft. For example, clusters, hosts, datastores, and distributed virtual switches.
 
@@ -134,7 +134,7 @@ vSan storage datastore security is provided by data-at-rest encryption that is t
 
 :::image type="icon" source="../media/3-avs_securityoveriew.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
-## Get started with AVS
+## Get started with Azure VMware Solution
 
 The following table outlines the steps needed for an organization to get started with using the Azure VMware Solution.
 

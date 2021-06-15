@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which business need does the Azure VMware Solution is best suited for?"
+  - content: "Which business need is best suited for the Azure VMware Solution?"
     choices:
     - content: "Enterprises that want to reduce their datacenter footprint."
       isCorrect: true
@@ -25,7 +25,7 @@ quiz:
       explanation: "AVS isn't for customers that don't want to cloud services."
     - content: "Customers that don't want a fast path to the cloud by Migrating existing assets “as is”."
       isCorrect: false
-      explanation: "AVS is well suit for customers that want a fast path to the cloud by migrating existing assets “as is”."
+      explanation: "AVS is well suited for customers that want a fast path to the cloud by migrating existing assets “as is”."
   - content: "Which scenario isn't a good option for the Azure VMware Solution?"
     choices:
     - content: "Customers that can't move to cloud services. "

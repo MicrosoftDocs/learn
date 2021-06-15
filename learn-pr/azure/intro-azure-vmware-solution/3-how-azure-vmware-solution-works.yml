@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Three nodes"
       isCorrect: true
-      explanation: "The minimum hosts required are 3 in a cluster."
+      explanation: "The minimum nodes required are 3 in a cluster."
     - content: "24 nodes"
       isCorrect: false
-      explanation: "The minimum hosts required are 3 in a cluster."
+      explanation: "The minimum nodes required are 3 in a cluster."
     - content: "16 nodes"
       isCorrect: false
       explanation: "The maximum number of nodes in a cluster is 16."
@@ -41,21 +41,11 @@ quiz:
     choices:
     - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
       isCorrect: false
-      explanation: "The CloudAdmin user is a member of the cloudadmin role."
-    - content: "The CloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "The cloudAdmin user is a member of the cloudadmin role."
+    - content: "The cloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
-      explanation: "The CloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "The cloudAdmin role creates and manages workloads in your private cloud."
     - content: "The cloudadmin role has access to the ESXi hosts in Azure."
       isCorrect: false
-      explanation: "The CloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
-  - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
-    choices:
-    - content: "James is responsible for patching the ESXi host."
-      isCorrect: false
-      explanation: "Microsoft manages all the support and patching of hosts."
-    - content: "VMware support is responsible for the host Patching."
-      isCorrect: false
-      explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
-    - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
-      isCorrect: true
-      explanation: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
+      explanation: "The cloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
+  

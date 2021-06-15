@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Azure Databricks is a storage solution available to integrate with AVS."
+      explanation: "Azure Databricks is a data solution available to integrate with AVS."
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."
