@@ -18,6 +18,8 @@ In this unit, you create an instance of a digital twins resource and collect the
 
 1. For **Resource name**, enter a friendly name. For example: "digital-twins-instance".
 
+1. Under **Grant access to resource**, select **Assign Azure Digital Twins Data Owner Role**.
+
     :::image type="content" source="../media/create-digital-twins-instance.png" alt-text="Screenshot showing the completed Create Resource pane for a digital twins instance" lightbox="../media/create-digital-twins-instance.png":::
 
 1. Select **Review + create**. Then Select **Create**.
@@ -39,6 +41,9 @@ The next step is to save some important data used to connect other resources to 
 1. The host name forms the bulk of a connection url to your digital twins instance. Complete the url by adding **https://** to the start of the host name in your text file.
 
 ### Specify a role
+
+> [!NOTE]
+> If you already assigned the **Azure Digital Twins Data Owner Role** while you were creating an Azure Digital Twins instance, you can skip this section and continue to the next unit.
 
 1. Locate and select the **Access control (IAM)** entry, in the left menu.
 

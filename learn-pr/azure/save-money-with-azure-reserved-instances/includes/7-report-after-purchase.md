@@ -39,7 +39,7 @@ You can create a chargeback report to charge internal cost centers using amortiz
 - Tags
 - Subscription
 
-To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select the **Amortized Data** in the dimension. You can also get the amortized data [using APIs](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select the **Amortized Data** in the dimension. You can also get the amortized data [using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
 
 ### Chargeback with Power BI
 

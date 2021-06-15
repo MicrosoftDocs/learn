@@ -33,7 +33,7 @@ The modules in this learning path are part of a progression. You follow the Tail
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=manage-release-cadence&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-release-cadence&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -72,11 +72,11 @@ To set up the work item:
 
 1. In Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
-    ![Azure DevOps, showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. At the bottom of the **Improve release cadence** work item, select the down arrow. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
     ![Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)

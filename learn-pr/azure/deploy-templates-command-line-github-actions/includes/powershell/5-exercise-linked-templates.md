@@ -31,7 +31,7 @@ Get-AzResourceGroup
 In this command, use the resource name that you got from the previous command. (It will look like something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
 > [!NOTE]
-> Normally, when you use a PowerShell or Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&azure-portal=true) PowerShell command.
+> Normally, when you use a PowerShell or Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?azure-portal=true&view=azps-4.5.0) PowerShell command.
 
 ```powershell
 Set-AzDefault -ResourceGroupName {Resource Group Name}
@@ -106,7 +106,7 @@ In this exercise, we'll review and deploy a template that includes two linked te
 
 1. Copy and paste the content of the preceding template into a file in a local directory. Use `C:\JSON\linkedtemplate.json`, for example.
 
-1. After you've saved the file locally, use the following PowerShell command to deploy it at the resource group level that we talked about in the last unit. Namely, use [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.4.0&azure-portal=true).
+1. After you've saved the file locally, use the following PowerShell command to deploy it at the resource group level that we talked about in the last unit. Namely, use [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?azure-portal=true&view=azps-4.4.0).
 
     ```powershell
         $templateFile="C:\JSON\linkedtemplate.json"

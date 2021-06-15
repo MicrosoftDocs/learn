@@ -58,7 +58,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
 
 1. **Introduction**
 
-    Suppose that you're the administrator or business decision maker of a company with several thousand employees. You need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as keep your employees productive and maximize the return on your investment. You and your company have determined that Microsoft Intune is the endpoint management solution that they want to use to manage end users devices, apps, and data. You currently have a limited Mobile Device Management solution. Learn how you can set up Microsoft Intune and [benefit from modern endpoint management](https://docs.microsoft.com/learn/modules/benefits-microsoft-endpoint-manager?azure-portal=true).
+    Suppose that you're the administrator or business decision maker of a company with several thousand employees. You need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as keep your employees productive and maximize the return on your investment. You and your company have determined that Microsoft Intune is the endpoint management solution that they want to use to manage end users devices, apps, and data. You currently have a limited Mobile Device Management solution. Learn how you can set up Microsoft Intune and [benefit from modern endpoint management](/learn/modules/benefits-microsoft-endpoint-manager?azure-portal=true).
 
 
 2. **Review the supported configurations, which include the supported operating systems and browsers**
@@ -146,13 +146,11 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
     
     To determine your mobile device management and mobile application management next steps, see the following resources:
     
-    - To become more familiar with Intune, walk through the [Microsoft Endpoint Manager tutorial](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).
+    - To become more familiar with Intune, walk through the [Microsoft Endpoint Manager tutorial](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).
     - [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
     
     ## Resources
     
     For more information about Microsoft Endpoint Manager, see the following resources:
     
-    - [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
-
-
+    - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

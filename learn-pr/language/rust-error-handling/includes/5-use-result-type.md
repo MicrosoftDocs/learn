@@ -9,7 +9,7 @@ enum Result<T, E> {
 }
 ```
 
-In contrast to the `Option` type, which describes the possibility of the *absence* of a value, the `Result` type is best suited whenever *failures* are expected.
+In contrast to the `Option` type, which describes the possibility of the *absence* of a value, the `Result` type is best suited whenever *failures* might occur.
 
 The `Result` type also has the `unwrap` and `expect` methods, which do either of the following:
 * Return the value inside the `Ok` variant, if this is the case.

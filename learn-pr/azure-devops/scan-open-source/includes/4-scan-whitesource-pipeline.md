@@ -55,7 +55,7 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
 
 ## Add tasks to the pipeline configuration
 
-Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
+Here you'll use the built-in task `WhiteSource@21` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
 > [!IMPORTANT]
 > The major version number for WhiteSource Bolt that you noted earlier must match the version number of the `WhiteSource Bolt` task. At the time of this writing the version was 20.
@@ -64,7 +64,7 @@ Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the W
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=57-58)]
 
-    The `WhiteSource Bolt@20` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
+    The `WhiteSource@21` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
 ## Watch Azure Pipelines build the application
 

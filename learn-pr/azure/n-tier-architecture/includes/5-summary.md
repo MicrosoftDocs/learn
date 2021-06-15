@@ -4,14 +4,14 @@ Now that you understand N-tier architecture and how it helps separate concerns w
 
 ## Azure Architecture Center
 
-We've only scratched the surface of architecture on the cloud. The [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/) has a wealth of resources you can use to make architectures of all styles, including N-tier, run at their best. On it, you'll find design guides, reference architectures, and enterprise cloud adoption guidelines to help you be successful in any cloud journey you may be taking.
+We've only scratched the surface of architecture on the cloud. The [Azure Architecture Center](/azure/architecture/) has a wealth of resources you can use to make architectures of all styles, including N-tier, run at their best. On it, you'll find design guides, reference architectures, and enterprise cloud adoption guidelines to help you be successful in any cloud journey you may be taking.
 
-Take a look through the [N-tier architecture style](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) document on the Architecture Center for more information about this style, and browse through other architecture styles.
+Take a look through the [N-tier architecture style](/azure/architecture/guide/architecture-styles/n-tier) document on the Architecture Center for more information about this style, and browse through other architecture styles.
 
 ## Additional resources
 
 The source code for the application is available in the [MicrosoftDocs/mslearn-n-tier-architecture](https://github.com/MicrosoftDocs/mslearn-n-tier-architecture) GitHub repository if you'd like to see more or use it in your own environment.
 
-One item we didn't cover in much detail is the mechanics of the deployment through the Azure Resource Manager template. For more information about how these work, review the [Build Azure Resource Manager templates](https://docs.microsoft.com/learn/modules/build-azure-vm-templates/) module. Templates are a fantastic way to automate your infrastructure, and this module can help you get started.
+One item we didn't cover in much detail is the mechanics of the deployment through the Azure Resource Manager template. For more information about how these work, review the [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/) module. Templates are a fantastic way to automate your infrastructure, and this module can help you get started.
 
-The [Build great solutions with the Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/learn/paths/azure-well-architected-framework/) learning path has guidance about how to build a solid foundation for any architecture on Azure.
+The [Build great solutions with the Microsoft Azure Well-Architected Framework](../../../paths/azure-well-architected-framework/index.yml) learning path has guidance about how to build a solid foundation for any architecture on Azure.

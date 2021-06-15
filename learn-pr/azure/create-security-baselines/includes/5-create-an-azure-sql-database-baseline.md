@@ -15,15 +15,15 @@ To turn on Auditing:
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, and then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 
 1. Create an instance of your SQL database.
 
 1. For each DB instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
 
-1. Ensure that **Enable Azure SQL Auditing** is 'enabled*.
+1. Ensure that **Enable Azure SQL Auditing** is *enabled*.
 
     ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
 
@@ -33,7 +33,7 @@ Threat detection for single and pooled databases detects anomalous activities in
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 
@@ -57,7 +57,7 @@ You can receive notifications about the detected threats via email notifications
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 
@@ -73,7 +73,7 @@ Providing the email address to receive alerts ensures that any detection of anom
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 
@@ -89,7 +89,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 
@@ -111,11 +111,11 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 ### Configure threat detection retention for more than 90 days - Level 1
 
-A retention of zero days means logs are kept forever. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot thread patterns.
+A retention of zero days means logs are deleted the same day. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot thread patterns.
 
 1. Sign in to the Azure portal.
 
-1. On the Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
 

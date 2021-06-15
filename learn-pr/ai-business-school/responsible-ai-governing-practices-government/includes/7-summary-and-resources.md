@@ -56,4 +56,4 @@ To learn more about our perspective on responsible AI as well as the impact of A
 [(5) Microsoft, “The Future Computed: Artificial Intelligence and its role in society.” Brad Smith and Harry Shum, 17 Jan 2018.](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/)  
 [(6) Partnership on AI](https://www.partnershiponai.org/)  
 [(7) OECD, “OECD Principles on AI.” May 2019.](https://www.oecd.org/going-digital/ai/principles/)  
-[(8) European Commission, “Ethics Guidelines for Trustworthy Artificial Intelligence.” AI High Level Expert Group, 2019 June.](https://ec.europa.eu/futurium/ai-alliance-consultation/guidelines#Top)
+[(8) European Commission, “Ethics Guidelines for Trustworthy Artificial Intelligence.” AI High Level Expert Group, 2019 June.](https://ec.europa.eu/futurium/en/blog/ethics-guidelines-trustworthy-artificial-intelligence-piloting-assessment-list.html)

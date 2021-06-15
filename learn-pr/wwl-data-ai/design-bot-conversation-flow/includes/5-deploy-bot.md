@@ -24,4 +24,4 @@ After deployment has completed, you can test and configure your bot in the Azure
 
 ## More Information
 
-For more information about deploying a bot, see the [Bot Framework SDK documentation](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli).
+For more information about deploying a bot, see the [Bot Framework SDK documentation](/azure/bot-service/bot-builder-deploy-az-cli).

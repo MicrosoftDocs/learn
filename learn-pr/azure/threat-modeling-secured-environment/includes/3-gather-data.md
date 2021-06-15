@@ -12,7 +12,7 @@ Transactions are secured using best-in-class encryption, and customer service is
 
 With transparent fees, real-time status updates, and money back guarantee, Woodgrove has what it takes to gain your business.
 
-Woodgrove Bank rolled out alternate identities and PAWs for the two IT managers to work on their critical assets securely.
+Woodgrove Bank rolled out alternate identities and PAWs for the two IT administrators to work on their critical assets securely.
 
 ## Application background
 

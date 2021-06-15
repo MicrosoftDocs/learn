@@ -40,3 +40,4 @@ units:
 - learn.reactors.blockchain-learning-solidity.8-summary
 badge:
   uid: learn.reactors.blockchain-learning-solidity.badge
+hidden: true

@@ -10,6 +10,6 @@ Many browsers come with developer tools that contain helpful features and inform
 
 Here are some popular browsers and developer tools:
 
-- [Microsoft&nbsp;Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium?WT.mc_id=academic-13441-cxa&azure-portal=true)
+- [Microsoft&nbsp;Edge](/microsoft-edge/devtools-guide-chromium?azure-portal=true&WT.mc_id=academic-13441-cxa)
 - [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/?azure-portal=true)
 - [Firefox](https://developer.mozilla.org/docs/Tools?azure-portal=true)
