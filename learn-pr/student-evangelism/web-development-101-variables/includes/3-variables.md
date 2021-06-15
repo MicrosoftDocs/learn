@@ -14,7 +14,9 @@ The keyword `var` indicates that you want to declare a variable, and `aVariable`
 
 ## Keyword to work with variables
 
-The keyword `let` was introduced in the JavaScript standard ECMAScript 6 (ES6). Using `let` gives your variable _block scope_. We recommend that you use `let` over `var` to better manage scope in your application. We'll cover block scopes in depth later.
+The keyword `let` was introduced in the JavaScript standard ECMAScript 6 (ES6). Using `let` gives your variable _block scope_. We recommend that you use `let` over `var` to better manage scope in your application.
+
+JavaScript uses the different types of scope, like global scope and function scope, to determine what variables are available in which parts of the code. For example, a global variable is available inside a function because it belongs to global scope, or "outer" scope. Variables designated with the keyword `var` are scoped (their values are visible) within the function body, and `let` variables are scoped to their enclosing block within curly brackets. That means that if you use `var` in a for loop, it's visible outside the for loop, which might have unexpected results. Using `let` is a better choice because it's available only in the enclosing block (that is, the for loop), so its availability might be more expected.
 
 To declare a variable by using `let`, use the following syntax:
 
