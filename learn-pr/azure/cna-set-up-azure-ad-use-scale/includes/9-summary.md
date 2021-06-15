@@ -16,7 +16,6 @@ You can learn more by reviewing the following articles:
 * [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b?azure-portal=true)
 * [Application model](https://docs.microsoft.com/azure/active-directory/develop/application-model?azure-portal=true)
 * [Permissions and consent in the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent?azure-portal=true)
-* [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis?azure-portal=true)
 * [Authentication flows and application scenarios](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios?azure-portal=true)
 * [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true)
 * [Microsoft identity platform best practices and recommendations](https://docs.microsoft.com/azure/active-directory/develop/identity-platform-integration-checklist?azure-portal=true)
