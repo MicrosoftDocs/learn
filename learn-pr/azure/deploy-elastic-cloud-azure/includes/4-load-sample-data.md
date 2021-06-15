@@ -8,7 +8,7 @@ Kibana is a window into the Elastic Stack for data consumers and operators of El
 
 Using the Kibana Alerting function, you can create Machine Learning jobs on the data in Elasticsearch and received notifications in your Kibana app of any interesting moments that the model detects.
 
-:::image type="content" source="../media/kibana-alerts.png" alt-text="TODO":::
+:::image type="content" source="../media/kibana-alerts.png" alt-text="A screenshot of an Elastic Microsoft Teams connector.":::
 
 ## Kibana is accessed using your Elastic credentials
 
