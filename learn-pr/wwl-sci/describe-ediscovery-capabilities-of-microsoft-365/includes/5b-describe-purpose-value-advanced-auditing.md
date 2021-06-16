@@ -36,4 +36,4 @@ With the release of Advanced Audit, Microsoft is moving from a publisher-level l
 
 Your organization is working with an audit team to find information about activities, such as whether a user sent an email, viewed a document, or whether an admin has had their password reset.  To help the audit team, you’ve been asked to verify whether a specific user has sent emails about a particular confidential project. Audit log searches will help you find this kind of information. You do an audit log search:
 
-[![Interactive guide](../media/3-audit-log-inter-active-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M06%20-%20Search%20the%20audit%20log/index.html?azure-portal=true)
+[![Interactive guide](../media/3-audit-log-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M06%20-%20Search%20the%20audit%20log/index.html?azure-portal=true)
