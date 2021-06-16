@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-ml.when-to-use-azure-ml
+uid: learn.azure.intro-to-azure-ml.use-azure-ml
 title: When to use Azure Machine Learning
 metadata:
   title: When to user Azure Machine Learning
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-azure-ml.md)]
+  [!include[](includes/5-use-azure-ml.md)]
