@@ -34,7 +34,7 @@ Given these measurements, you can understand why Azure NetApp Files provides per
 Azure NetApp Files is purpose-built to offer high levels of security, compliance, and availability:
 
 - Security. Azure NetApp Files offers FIPS-140-2-compliant data encryption at rest, role-based access control (RBAC), Microsoft Active Directory authentication, and export policies for network-based access control lists (ACLs).
-- Compliance. Azure NetApp Files complies with leading industry certifications, such as the Health Insurance Portability and Accountability Act (HIPAA) and the General Data Protection Regulation (GDPR).
+- Compliance. Azure NetApp Files complies with leading industry certifications, such as the Health Insurance Portability and Accountability Act (HIPAA).
 - Availability. The Azure NetApp Files Service Level Agreement (SLA) guarantees at least 99.99% availability.
 
 ## Protocols

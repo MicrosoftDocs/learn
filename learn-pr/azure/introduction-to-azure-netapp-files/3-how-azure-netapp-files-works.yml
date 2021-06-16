@@ -9,6 +9,7 @@ metadata:
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-netapp-files-works.md)]

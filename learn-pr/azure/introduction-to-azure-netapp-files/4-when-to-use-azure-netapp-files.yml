@@ -9,6 +9,7 @@ metadata:
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 12
 content: |
   [!include[](includes/4-when-to-use-azure-netapp-files.md)]
