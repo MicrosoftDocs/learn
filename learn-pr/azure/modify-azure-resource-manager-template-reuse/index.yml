@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-reuse
 metadata:
-  description: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.  
+  description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.  
   ms.date: 07/10/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy to multiple Azure environments by using ARM template features"
+title: "Deploy to multiple Azure environments by using JSON ARM template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
 abstract: |
   In this module, you will:
-  - Create an expression for a unique value by using Azure Resource Manager template functions.
-  - Reuse your expression by storing it in an Azure Resource Manager template variable.
+  - Create an expression for a unique value by using ARM template functions.
+  - Reuse your expression by storing it in an ARM template variable.
   - Organize and track your deployed Azure resources by using resource tags.
-  - Manage multiple deployment parameters by using Azure Resource Manager template parameter files.
+  - Manage multiple deployment parameters by using ARM template parameter files.
 prerequisites: |
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).

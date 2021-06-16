@@ -1,18 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.deploy-manage-resource-manager-templates
 metadata:
-  description: Learn how ARM templates enable you to manage both basic and complex infrastructure deployments on Azure.
+  description: Learn how JSON ARM templates enable you to manage both basic and complex infrastructure deployments on Azure.
   brand: azure
   ms.date: 10/16/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy and manage resources in Azure by using ARM templates
+title: Deploy and manage resources in Azure by using JSON ARM templates
 summary: |
   Azure Resource Manager (ARM) templates enable you to define the infrastructure requirements for your deployments on Azure.
 
-  ARM templates use a declarative code syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable. 
+  JSON ARM templates use a declarative code syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable. 
 
   Take this learning path to learn how to:
 
