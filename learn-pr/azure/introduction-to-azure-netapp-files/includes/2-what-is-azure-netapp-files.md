@@ -67,7 +67,7 @@ The following diagram illustrates the snapshot process:
 2. Time B. Changed data (B is now B1) is written to a new block and the pointer is updated. However, the snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
 3. Time C. Another snapshot (Snapshot 2) is created. Now you have access to three generations of data—the live data, Snapshot 2, and Snapshot 1, in descending order of age, without taking up the volume space that three full copies would require.
 
-:::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="How Azure NetApp Files snapshots work.":::
+:::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting how Azure NetApp Files snapshots work." lightbox="../media/2-what-is-azure-netapp-files-snapshots.png":::
 
 An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. Actual data blocks aren't copied, which leads to two efficiencies:
 

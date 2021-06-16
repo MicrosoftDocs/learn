@@ -10,7 +10,7 @@ In this unit, you'll learn about:
 
 One of the most important components of Azure NetApp Files is the storage hierarchy, which determines how much storage your workloads get and the maximum available throughput. Understanding these concepts is crucial to helping you decide if and how you want to migrate any on-premises workloads to Azure.
 
-:::image type="content" source="../media/3-what-is-azure-netapp-files-storage-hierarchy.png" alt-text="The storage hierarchy of Azure NetApp Files, with the Azure subscription and one or more Azure NetApp Files accounts, each of which has one or more capacity pools, each of which has one or more storage volumes.":::
+:::image type="content" source="../media/3-what-is-azure-netapp-files-storage-hierarchy.png" alt-text="Diagram depicting the storage hierarchy of Azure NetApp Files, with the Azure subscription and one or more Azure NetApp Files accounts, each of which has one or more capacity pools, each of which has one or more storage volumes." lightbox="../media/3-what-is-azure-netapp-files-storage-hierarchy.png":::
 
 Azure NetApp Files storage hierarchy consists of the following elements:
 
@@ -49,7 +49,7 @@ In the SAP HANA migration scenario, this capacity pool can be used to create the
 |Backup     | 4.5 TiB        | 256 MiB/s        |
 
 
-:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Illustration of the scenarios for the SAP HANA volumes with a graph comparing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario.":::
+:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Illustration of the scenarios for the SAP HANA volumes with a graph comparing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario." lightbox="../media/3-what-is-azure-netapp-files-example.png":::
 
 After your volumes are set up, you can use any of the following tools to migrate data to Azure NetApp Files:
 
@@ -70,7 +70,7 @@ A key consideration when evaluating whether to migrate on-premises workloads to 
   - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in the gateway's virtual network. For example, VM 2 in the on-premises network can connect to Azure NetApp Files Volume 1.
   - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in a peered virtual network. For example, VM 1 in the on-premises network can connect to Azure NetApp Files Volume 2 (and VM 2 can connect to Azure NetApp Files Volume 3).
 
-:::image type="content" source="../media/3-how-azure-netapp-files-works-topology.png" alt-text="The three types of network connectivity supported by Azure NetApp Files.":::
+:::image type="content" source="../media/3-how-azure-netapp-files-works-topology.png" alt-text="Diagram depicting the three types of network connectivity supported by Azure NetApp Files." lightbox="../media/3-how-azure-netapp-files-works-topology.png":::
 
 > [!IMPORTANT]
 > Azure NetApp Files only supports peered connectivity in the same region. It doesn't support cross-region peering or global peering.

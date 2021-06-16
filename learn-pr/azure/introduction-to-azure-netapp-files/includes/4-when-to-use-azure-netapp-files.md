@@ -27,7 +27,7 @@ Azure NetApp Files is the correct choice for shared network storage when file-ba
 
 A web content deployment is often a good candidate for migration to the cloud because the on-premises deployment likely runs in a Linux environment with POSIX-compliant permissions. As such, the deployment can be lifted-and-shifted into Azure with the web content and code stored in an Azure NetApp Files volume. The website of our energy company consists of a large number of pages that describe the company's technologies, products, research, papers, and customer stories. The static nature of the content and the relatively constant level of demand are arguments against using Azure NetApp Files. However, the massive scale of the company's web content is sufficient to justify an Azure NetApp Files instance. In this case, the company should probably go with a capacity pool that uses the Standard tier, which provides more than enough throughput and IOPS for their web presence.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-web.png" alt-text="A typical setup for running a web server in an Azure virtual network with Azure NetApp Files as the shared storage for the server.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-web.png" alt-text="Diagram depicting a typical setup for running a web server in an Azure virtual network with Azure NetApp Files as the shared storage for the server." lightbox="../media/4-when-to-use-azure-netapp-files-web.png":::
 
 ### Should the Windows Virtual Desktop team use Azure NetApp Files?
 
@@ -37,7 +37,7 @@ Our fictional energy company has several thousand employees within its WVD deplo
 
 The following image depicts one possible architecture the company could use for a personal desktop-based WVD deployment. Users are mapped to specific desktop pods, where a *pod* is a spoke virtual network with a pool of virtual machines and an Azure NetApp File designated subnet that uses a volume from the overall Azure NetApp Files capacity pool. Each pool has just under 1,000 virtual machines—one for each user. Azure NetApp Files can easily handle that many personal desktops per single-session host pool VNet. If more personal desktops are needed, it's easy to add more pods.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-wvd.png" alt-text="A typical setup for running several pools of Windows Virtual Desktops in an Azure virtual network with Azure NetApp Files providing shared storage for each virtual desktop pool.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-wvd.png" alt-text="Diagram depicting a typical setup for running several pools of Windows Virtual Desktops in an Azure virtual network with Azure NetApp Files providing shared storage for each virtual desktop pool." lightbox="../media/4-when-to-use-azure-netapp-files-wvd.png":::
 
 ### Should the research and development team use Azure NetApp Files?
 
@@ -53,4 +53,4 @@ Most of these tasks require compute-intensive and data-intensive operations such
 
 The following image depicts a possible setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application. An R&D team member accesses the front end through a Windows or Linux virtual machine. The HPC application runs in the Compute subnet, which consists of a scale set of Linux virtual machines. The shared storage for the scale set comes from a designated subnet containing an Azure NetApp Files instance.
 
-:::image type="content" source="../media/4-when-to-use-azure-netapp-files-hpc.png" alt-text="A typical setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application.":::
+:::image type="content" source="../media/4-when-to-use-azure-netapp-files-hpc.png" alt-text="Diagram depicting a typical setup for running a high-performance computing application in an Azure virtual network with Azure NetApp Files as the shared storage for the application." lightbox="../media/4-when-to-use-azure-netapp-files-hpc.png":::

@@ -6,9 +6,9 @@ metadata:
   title: How Azure NetApp Files works
   description: Learn how Azure NetApp Files works.
   ms.date: 5/10/2021
-  author: paulwp
-  ms.author: v-pmcfedries
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
 durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-netapp-files-works.md)]
