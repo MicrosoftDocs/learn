@@ -41,8 +41,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
     cat ./prisma/schema.prisma
     ```
 
-    > [!NOTE]
-    > The **schema.prisma** file has the following content:
+    The **schema.prisma** file has the following content:
 
     ```json
     // This is your Prisma schema file,
@@ -71,8 +70,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
     cat ./.env
     ```
 
-    > [!NOTE]
-    > The file includes the connection string entry in the following content:
+    The file includes the connection string entry in the following content:
 
     ```javascript
     DATABASE_URL="postgresql://USER_NAME%40SERVER_NAME:PASSWORD@SERVER_NAME.postgres.database.azure.com:5432/cnainventory"
@@ -283,19 +281,13 @@ In this task, you'll validate the functionality of the Next.js application deplo
     npm run-script build
     ```
 
-    > [!NOTE]
-    > Wait for the build process to complete.
+1. Wait for the build process to complete.
 
     :::image type="content" source="../media/7-next.js-web-app-build.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
 
 1. Close the web browser tab displaying the **App Service Editor** page.
-1. On the Azure portal blade displaying the properties of the web app, in the vertical menu, select the entry labeled **Overview**. On the **Essentials** pane, select the link labeled **URL**.
-
-    > [!NOTE]
-    > This will automatically open another web browser tab displaying the newly deployed Azure web app.
-
-    > [!NOTE]
-    > Verify that the web browser page displays the **Next.js - PostgreSQL inventory data** page with the inventory items retrieved from the Azure PostgreSQL database.
+1. On the Azure portal blade displaying the properties of the web app, in the vertical menu, select the entry labeled **Overview**. On the **Essentials** pane, select the link labeled **URL**. This will automatically open another web browser tab displaying the newly deployed Azure web app.
+1. Verify that the web browser page displays the **Next.js - PostgreSQL inventory data** page with the inventory items retrieved from the Azure PostgreSQL database.
 
     :::image type="content" source="../media/7-next.js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the inventory items.":::
 
