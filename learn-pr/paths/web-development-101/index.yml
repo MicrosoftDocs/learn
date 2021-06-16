@@ -22,9 +22,6 @@ products:
 modules:
 - learn.student-evangelism.web-development-101.introduction-to-programming
 - learn.student-evangelism.web-development-101.accessibility
-- learn.student-evangelism.web-development-101-variables
 - learn.student-evangelism.web-development-101.functions
-- learn.student-evangelism.web-development-101-if-else
-- learn.student-evangelism.web-development-101-loops-arrays
 trophy:
   uid: learn.student-evangelism.web-development-101.trophy
