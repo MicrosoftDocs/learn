@@ -20,9 +20,9 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or <kbd>Ctrl+S</kbd> (<kbd>⌘+S</kbd> on macOS). 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
-   Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it to.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. To define a logical server and database, add the following content to the file, along with the parameters and variables that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 

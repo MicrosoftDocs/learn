@@ -13,7 +13,13 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
+1. Open Visual Studio Code.
+
+1. Create a new file called *azuredeploy.json*.
+
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following starting template into *azuredeploy.json*.
 
@@ -25,7 +31,13 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following starting template into *main.bicep*.
 

@@ -10,7 +10,9 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*, and then save the empty file so that Visual Studio Code loads the Bicep tooling. 
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 

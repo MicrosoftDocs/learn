@@ -18,7 +18,9 @@ During the process, you'll:
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or select <kbd>Ctrl+S</kbd> (Windows) or <kbd>⌘+S</kbd> (Mac). Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content to the *main.bicep* file. You'll deploy the template soon. It's a good idea to type it in manually instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
