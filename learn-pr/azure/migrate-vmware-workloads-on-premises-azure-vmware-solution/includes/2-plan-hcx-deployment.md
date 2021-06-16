@@ -1,4 +1,4 @@
-VMware's HCX Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware's HCX Advanced Cloud Manager deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
 ## What is VMware HCX?
 
