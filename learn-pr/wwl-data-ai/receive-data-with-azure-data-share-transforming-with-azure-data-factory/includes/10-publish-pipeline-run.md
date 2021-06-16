@@ -8,7 +8,7 @@ If it doesn’t meet the requirements, then you’ll see a side panel that will 
 If the validation check succeeds, you can trigger the pipeline. 
 **Trigger now**, will start one manual pipeline run, however it is also possible to create a schedule or event-based trigger to operationalize the pipeline in Azure Data Factory.  
 
-![Trigger now option in Azure Data Factory](../media/trigger-now-azure-data-factory.png)
+[ ![Trigger now option in Azure Data Factory](../media/trigger-now-azure-data-factory.png) ](../media/trigger-now-azure-data-factory.png#lightbox)
 
 
 If you triggered the data flow, data flow will start a just-in-time Spark cluster, which terminates once the pipeline is finished and the job is concluded. 
