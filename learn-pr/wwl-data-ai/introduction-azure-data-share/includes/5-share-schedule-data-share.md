@@ -30,6 +30,7 @@ Once in-place sharing is set up through the invitation flow by the data provider
 This enables the data consumer to read and query data using its target data store.
 Any changes in the data providers source data store, is immediately available to the data consumer to read and query.  
 
-NOTE: In-place sharing is currently in preview for Azure Data Explorer.
+>[!NOTE]
+>In-place sharing is currently in preview for Azure Data Explorer.
 
 Now that you understand the Azure Data Share sharing methods, in the next unit let’s start sharing data with Azure Data Share.

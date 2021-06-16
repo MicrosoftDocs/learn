@@ -4,7 +4,7 @@ You can add recipients to an existing Data Share, by navigating to the Sent Shar
 
 You can click ‘+Add Recipient’ and specify the recipient that needs to gain access to that existing share. 
 
-![Add recipient to Azure Data Share](../media/sent-shares-invitation.png)
+[ ![Add recipient to Azure Data Share](../media/sent-shares-invitation.png) ](../media/sent-shares-invitation.png#lightbox)
 
 If you want to add datasets to an existing share, where recipients might need to gain access to other datasets as well, you can add a dataset to the share such that you don’t have to set up a new data share. 
 

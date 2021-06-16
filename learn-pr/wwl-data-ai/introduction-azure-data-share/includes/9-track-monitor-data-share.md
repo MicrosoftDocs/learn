@@ -4,7 +4,7 @@ Examples include monitoring the data consumer's acceptance of the invitation you
 
 To monitor the invitation status, you can check the Azure Data Share resource, by navigating to  **Sent Shares** and then **Invitations**.
 
-![Sent shares settings of Azure Data Share](../media/sent-shares-invitation.png)
+[ ![Sent shares settings of Azure Data Share](../media/sent-shares-invitation.png) ](../media/sent-shares-invitation.png#lightbox)
 
 There are three states of the invitation:
 
