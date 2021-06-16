@@ -1,10 +1,10 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-deploy-maintain-cloud-native-apps.5-exercise-provision-cna-using-github
 title: Exercise - Provision cloud-native applications by using GitHub Actions
 metadata:
   title: Exercise - Provision cloud-native applications by using GitHub Actions
   description: Exercise - Provision cloud-native applications by using GitHub Actions
-  ms.date: 05/31/21
+  ms.date: 05/31/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
