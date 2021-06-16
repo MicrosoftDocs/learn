@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-ml.use-azure-ml
-title: When to use Azure Machine Learning
+title: Use Azure Machine Learning
 metadata:
-  title: When to user Azure Machine Learning
-  description: When to use Azure Machine Learning
+  title: Use Azure Machine Learning
+  description: Use Azure Machine Learning
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb

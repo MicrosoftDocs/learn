@@ -10,4 +10,4 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Azure Machine Learning documentation](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-ml)
+* [Azure Machine Learning documentation](/azure/machine-learning/overview-what-is-azure-ml)
