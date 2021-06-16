@@ -10,6 +10,4 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Azure Machine Learning documentation](/azure/cognitive-services/azure-ml/)
-* [Microsoft Learn - Analyze receipts with the Azure Machine Learning service](/learn/modules/analyze-receipts-azure-ml/)
-* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
+* [Azure Machine Learning documentation](azure/machine-learning/overview-what-is-azure-ml)
