@@ -21,7 +21,7 @@ quiz:
       explanation: "You must deploy and downgrade the HCX connector appliance on-premises. This allows for a supported migration pattern into Azure VMware Solution."
     - content: "You can't deploy HCX to conduct any migrations into Azure VMware Solution."
       isCorrect: false
-      explanation: "HCX can still be used for the older vSphere version."
+      explanation: "HCX 4.0 can still be used for an older vSphere version."
     - content: "Deploy Azure VMware Solution in a different region."
       isCorrect: false
       explanation: "While possible, deploying Azure VMware Solution to a different region will not help migrate VMs from vSphere 5.5 to Azure VMware Solution."

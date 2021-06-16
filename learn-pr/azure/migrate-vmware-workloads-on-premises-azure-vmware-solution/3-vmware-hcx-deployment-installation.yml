@@ -28,7 +28,7 @@ quiz:
       explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
   - content: "If you can't activate your HCX Advanced Key, what might be the issue?"
     choices:
-    - content: "The AVS environment doesn't have open internet access or a proxy configured."
+    - content: "The AVS environment doesn't have open internet access or a proxy configured for activation."
       isCorrect: true
       explanation: "The AVS environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
     - content: "You didn't deploy the HCX appliance correctly."

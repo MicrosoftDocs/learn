@@ -1,6 +1,6 @@
-VMware's Hybrid Cloud Exchange (HCX) Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware's Hybrid Cloud Extension (HCX) Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
-## What is Hybrid Cloud Exchange?
+## What is Hybrid Cloud Extension?
 
 VMware's HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
 
@@ -21,7 +21,7 @@ For older versions of vSphere (5.0+), the HCX connector appliance needs to be de
 
 ## Network connectivity and ports
 
-AVS configures an ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the AVS ExpressRoute circuit into an Azure virtual network for access to all resources in Azure. Following that configuration, you then need to configure Azure ExpressRoute Global Reach between the on-premises VMware environment and the AVS ExpressRoute using a separate ExpressRoute circuit. Global Reach is an add-on feature for ExpressRoute. Global Reach enables east-west connectivity from on-premises environments to Azure using ExpressRoute. That connectivity routes all traffic privately within the Microsoft global backbone. Before the HCX Connector can be deployed and a site pairing established, ExpressRoute Global Reach must be enabled.
+AVS configures an ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the AVS ExpressRoute circuit into an Azure virtual network for access to all resources in Azure. Following that configuration, you then need to configure Azure ExpressRoute Global Reach between the on-premises VMware environment and the AVS ExpressRoute using a separate ExpressRoute circuit. Global Reach is an add-on feature for ExpressRoute. Global Reach enables east-west connectivity between both ExpressRoute circuits using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before the HCX Connector can be deployed and a site pairing established, ExpressRoute Global Reach must be enabled.
 
 All required network ports need to be open for communication between the on-premises VMware environment and AVS. The following chart outlines all ports, protocols used, and what VMware components need open ports for configuration.
 

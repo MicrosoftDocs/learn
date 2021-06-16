@@ -15,6 +15,7 @@ abstract: |
     - Configure Hybrid Cloud Exchange (HCX) to support on-premises VMware migrations.
     - Migrate VMware workloads on-premises to Azure VMware Solution.
 prerequisites: | 
+  - Experience using the Azure portal for accessing and creating resources.
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and HCX.
   - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR) and subnets.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg

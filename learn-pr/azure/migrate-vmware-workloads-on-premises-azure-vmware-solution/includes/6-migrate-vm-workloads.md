@@ -8,26 +8,32 @@ Before beginning VM migration tasks, it's worth revisiting the previous configur
 
 ## Migrate virtual machines
 
-As we covered earlier, HCX provides several ways of migrating VMs into AVS: cold, live, and bulk migration, each using vMotion. You configure migrations using the HCX Connector on-premises that initiated site pairing into AVS. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation. One last thing to note is taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. In order to prevent any problems, disable backups until the VM completely migrates into AVS.
+As we covered earlier, HCX provides several ways of migrating VMs into AVS: cold, live, and bulk migration, each using vMotion. You configure migrations using the HCX Connector on-premises that initiated site pairing into AVS. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation. One last thing to note is taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. In order to prevent any disruption, disable backups until the VM completely migrates into AVS.
 
 ## Steps to migrate virtual machines into AVS
 
-1. From within the HCX dashboard on-premises, select the **Service > Migration**. The **Migrate Tracking** pane will display a summary of virtual machine migrations.
+1. From within the HCX dashboard on-premises, select the **Services > Migration**.
 
-1. Select **Migrate Virtual Machines** then select **Remote Site Connection**. The list of virtual machines available for migration will appear in the display.
+1. The **Migrate Tracking** pane will display a summary of virtual machine migrations. This is your first migration, so no VMs will display.
 
-1. Select the virtual machines you want to migrate.
+1. Select **Migrate**.
 
-1. Set the **Transfer and Placement**, **Switchover**, and **Extended** options.
+    :::image type="content" source="../media/6-migrate-virtual-machines.png" alt-text="Screenshot showing where to start the migration for existing VMs in the on-premises VMware environment.":::
 
-1. To apply default settings for all selected virtual machines, use the green area of the interface at the top of the window.
+1. The list of virtual machines available for migration will appear in the display. Make the selections and select **Add**.
+
+    :::image type="content" source="../media/6-select-vms-migration.png" alt-text="Screenshot showing how to select the VMs for migration.":::
+
+1. Next, you need to set the **Transfer and Placement**, **Switchover**, and **Extended** options for the VM being migrated.
 
 1. To set machine-specific **Transfer**, **Placement**, and **Switchover** options, select a specific virtual machine and expand the entry.
 
+    :::image type="content" source="../media/6-transfer-placement-switchover.png" alt-text="Screenshot showing where to set the transfer, placement, and switchover options.":::
+
 1. Select the destination network for each virtual machine to be migrated.
 
-1. Expand each virtual machine selection. Next to each guest virtual machine NIC name, select the folder for a list of available target networks.
+    :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot showing where to configure the network settings for the VMware VM.":::
 
-1. Select the check box next to the network you want the guest virtual machine to map to, select **Select**, and select **Finish**.
+1. After the network configuration completes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 
-HCX Manager then validates all selections you made and starts the VM migration or migrations. If a warning is generated, select **Finish** again to continue with the migration.
+1. HCX Manager then migrates all VMs selected. If a warning or error generates during **Validate**, fix the configuration and select **Go** to start the migration again.

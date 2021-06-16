@@ -1,4 +1,4 @@
-After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for HCX Manager. The service mesh allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) to an HCX enabled destination site (AVS).
+After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for HCX Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) into an HCX enabled destination site (AVS).
 
 ## What is a service mesh?
 
@@ -21,6 +21,8 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
 1. Review the pre-populated sites created during site pairing and select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
+    :::image type="content" source="../media/5-pre-populated-sites.png" alt-text="Screenshot displaying pre-populated site pairs created earlier in the module.":::
+
 1. Select both the source and remote compute profiles from the drop-down lists and select **Continue**. These selections define where VMs can use HCX services for migration.
 
     :::image type="content" source="../media/5-select-compute-profile-source.png" alt-text="Screenshot that shows selecting the source compute profile on-premises.":::
@@ -29,17 +31,23 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
 1. Review the services that will be enabled during the service mesh configuration and select **Continue**.
 
-1. In **Advanced Configuration - Override Uplink Network profiles** select **Continue**. Uplink network profiles connect to the network where the remote site's interconnect appliances can be reached.
+    :::image type="content" source="../media/5-review-services-enabled-configuration.png" alt-text="Screenshot showing where to review the services enabled for Azure VMware Solution.":::
 
-1. In **Advanced Configuration - Network Extension Appliance Scale Out**, review and select **Continue**. Customers can add up to eight VLANs per appliance on-premises. If more VLANs are required, you'll deploy  another appliance to add another eight VLANs. Customers must also have the CIDR IP address space to account for other appliances. For more information, see the VMware HCX Configuration Limits link at the end of this module.
+1. In **Advanced Configuration - Override Uplink Network profiles** select **Continue**. This is an optional configuration you don't need to make.
 
-    :::image type="content" source="../media/5-extend-networks-increase-vlan.png" alt-text="Screenshot that shows where to increase the VLAN count.":::
+    :::image type="content" source="../media/5-advanced-configuration-optional.png" alt-text="Screenshot showing the optional advanced configuration to override uplink network profiles.":::
 
-1. In **Advanced Configuration - Traffic Engineering**, review and make any modifications if necessary and select **Continue**.
+1. When you reach **Advanced Configuration - Traffic Engineering**, select **Continue**. You don't have an HCX Enterprise key for this configuration.
+
+    :::image type="content" source="../media/5-advanced-configuration-traffic-engineering.png" alt-text="Screenshot showing that application resiliency can't be selected because you do not have an HCX Enterprise license key.":::
 
 1. Review the topology preview and select **Continue**.
 
+    :::image type="content" source="../media/5-review-topology-preview.png" alt-text="Screenshot showing the review topology preview pane during creation of the service mesh.":::
+
 1. Enter a user-friendly name for this service mesh and select **Finish** to complete the configuration.
+
+    :::image type="content" source="../media/5-create-service-mesh-finish.png" alt-text="Screenshot showing the final configuration component for creating service mesh.":::
 
 1. Select **View Tasks** to monitor the service mesh deployment.
 
@@ -49,9 +57,7 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
     :::image type="content" source="../media/5-service-mesh-green.png" alt-text="Screenshot that displays a finished deployment of the service mesh with all services as green.":::
 
-1. Verify the service mesh's health by checking the appliance status.
-
-1. Select **Interconnect > Appliances**.
+1. Verify the service mesh's health by selecting **Interconnect > Appliances** to view the health of the deployment. The tunnel should be green and say "Ok".
 
     :::image type="content" source="../media/5-interconnect-appliance-state.png" alt-text="Screenshot that shows selections for checking the status of the appliance.":::
 

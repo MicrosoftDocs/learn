@@ -54,7 +54,7 @@ Next, the HCX Connector OVA file needs to be installed in the on-premises VMware
 
     :::image type="content" source="../media/3-select-compute-resource.png" alt-text="Screen shot that selects the vSphere cluster to deploy the HCX Connector appliance to during deployment on-premises.":::
 
-1. Review the template details on the next screen. You'll see advanced configuration options that need to be reviewed.
+1. Next, you'll see advanced configuration options that need to be reviewed.
 
 1. After details are reviewed, select **Next**.
 
@@ -95,9 +95,9 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. Use the admin credentials configured earlier to sign in to the on-premises VMware HCX Manager at https://x.x.x.x:9443. Replace the x's with the IP address configured for the on-premises appliance.
 
-1. When prompted, enter your key for **HCX License Key** and select **Activate**.
+1. When prompted, enter your key for **HCX License Key** and select **Add**.
 
-    :::image type="content" source="../media/3-enter-hcx-license-key.png" alt-text="Screen shot that shows where to enter the HCX Connector license key on-premises."::: 
+    :::image type="content" source="../media/3-enter-hcx-license-key.png" alt-text="Screen shot that shows where to enter the HCX Connector license key on-premises.":::
 
 1. In **Datacenter Location**, provide the nearest location for installing the VMware HCX Connector on-premises. Then select **Continue**.
 
@@ -129,7 +129,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. If configured correctly, vCenter will display with a green circle once you sign in.
 
-1. Additionally, SSO will indicate it is configured to use the Platform Services Controller (PSC) on-premises.
+1. Additionally, SSO will indicate the HCX Connector is configured to use the Platform Services Controller (PSC) on-premises.
     
     :::image type="content" source="../media/3-hcx-restart-green.png" alt-text="Screen shot showing vCenter and SSO has been configured correctly in the on-premises HCX Connector appliance.":::
 

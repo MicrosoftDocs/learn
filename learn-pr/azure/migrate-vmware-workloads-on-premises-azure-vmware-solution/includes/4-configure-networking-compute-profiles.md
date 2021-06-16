@@ -2,12 +2,12 @@ After the HCX Connector installs on-premises, you need to link the HCX Connector
 
 ## What is a site pair?  
 
-The first step involves creating a site pair. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware environment. In your scenario, the source will be the on-premises VMware environment and the destination will be AVS. To better understand what both environments contain, reference the following chart for more information:
+The first step involves creating a site pair. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware environment. In your scenario, the source will be the on-premises VMware environment and the destination will be AVS. To better understand what both environments contain, please reference the following chart for more information:
 
 | Component| Notes |
 | :------- | :----- |
 | HCX Connector (source) | - Deployed in the on-premises vSphere environment after AVS deploys. <br>- Creates a unidirectional site pairing to AVS. <br>- Starts migrations to AVS.
-| HCX Cloud (destination) | - Provisioned with AVS when the private cloud deploys in Azure. <br>- Generally the destination for HCX site pairing. <br>- HCX Cloud site is always a Software Defined Data Center (SDDC). <br>- Supports network extension at layer 2 in the networking stack.
+| HCX Cloud (destination) | - Provisioned with AVS when the private cloud deploys in Azure. <br>- Generally the destination for HCX site pairing. <br>- HCX Cloud site is always a Software Defined Data Center (SDDC). <br>- Supports network extension at layer 2 in the networking stack, which is optional.
 
 ## Add a site pair
 
@@ -27,18 +27,18 @@ The first step involves creating a site pair. A site pair provides network conne
 
 1. Type the AVS **cloudadmin@vsphere.local** username and the password from the Azure portal.
 
-1. Then select **Connect**.
+1. Then select **Connect**. If you receive a messages about a certificate warning, import the certificate to continue.
 
     :::image type="content" source="../media/4-connect-to-avs-hcx-cloud-manager.png" alt-text="Screenshot showing how to connect to the remote HCX URL from the on-premises HCX Connector.":::
 
-1. In order for the connection to work, the HCX Connector needs to route to the HCX Cloud Manager IP over port 443.
+1. In order for the connection to work, the HCX Connector needs to route to the HCX Cloud Manager IP over port 443 via the ExpressRoute you have deployed on-premises.
 
-1. You'll see a screen showing that the HCX Cloud Manager in AVS and the on-premises VMware HCX Connector are connected (paired).
+1. You'll see a screen showing that the HCX Cloud Manager in AVS and the on-premises VMware HCX Connector are connected or paired.
 
     :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot showing site pairing is complete in the on-premises VMware environment.":::
 
 ## Create network profiles
-The VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. These network profiles will be created for each network intended for use with HCX. When creating network profiles, you use the IP segments identified during the HCX deployment planning phase.
+The VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. These network profiles will be created for each network intended for use with HCX. When creating network profiles, you'll use the IP segments identified during the HCX deployment planning phase.
 
 1. Log into the on-premises HCX Connector.
 
@@ -69,9 +69,9 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in the HCX Connector on-premises.":::
 
-1. On the next screen, leave the default services selected. Recall that HCX Advanced deploys with AVS. If you need HCX Enterprise, a ticket needs to be open with support.
+1. On the next screen, you'll see services set for activation. Recall that HCX Advanced deploys with AVS. If you need HCX Enterprise, a ticket needs to be open with support.
 
-1. Select **Continue**.
+1. Uncheck **Network Extension** from the list, because it doesn't apply to your environment, and select **Continue**.
 
     :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot showing the services selected for activation with the HCX Connector on-premises.":::
 
@@ -85,11 +85,11 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-deployment-resources-and-reservations.png" alt-text="Screenshot that shows a selected data storage resource and the continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Management Network Profile** pane, select the management network profile that you created in previous steps. Then select **Continue**.
+1. On the **Select Management Network Profile** pane, select the management network profile you created in previous steps. Then select **Continue**.
 
     :::image type="content" source="../media/4-select-management-network-profile.png" alt-text="Screenshot that shows the selection of a management network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Uplink Network Profile** pane, select the uplink network profile you created in the previous procedure. Then select **Continue**.
+1. On the **Select Uplink Network Profile** pane, select the uplink network profile you created in the prior steps. Then select **Continue**.
 
     :::image type="content" source="../media/4-select-uplink-network-profile.png" alt-text="Screenshot that shows the selection of an uplink network profile and the Continue button in the on-premixes HCX Connector.":::
 
@@ -101,10 +101,6 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-select-replication-network-profile.png" alt-text="Screenshot that shows the selection of a replication network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Distributed Switches for Network Extensions** pane, you can skip this step since you're not migrating virtual machines on an extended layer-2 (L2) network.
-
-    :::image type="content" source="../media/4-select-layer-2-distributed-virtual-switch.png" alt-text="Screenshot that shows the selection of distributed virtual switches and the Continue button in the HCX Connector on-premises.":::
-
 1. Review the connection rules and select **Continue**.
 
     :::image type="content" source="../media/4-review-connection-rules.png" alt-text="Screenshot that shows the connection rules and the Continue button in the on-premises HCX Connector.":::
@@ -112,5 +108,9 @@ After the network profiles are created, you'll need to create a compute profile.
 1. Select **Finish** to create the compute profile.
 
     :::image type="content" source="../media/4-compute-profile-done.png" alt-text="Screenshot that shows the compute profile information.":::
+
+1. After the compute profile finishes creation, the compute profile will be listed in the **Compute Profiles** within **Interconnect**.
+
+:::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured.":::
 
 In the next unit, we'll cover how to set up a service mesh to complete the HCX Connector configuration on-premises. All steps will be outlined so you can successfully configure within your environment.

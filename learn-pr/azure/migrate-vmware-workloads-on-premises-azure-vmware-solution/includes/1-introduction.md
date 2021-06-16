@@ -8,9 +8,9 @@ Azure VMware Solution (AVS) delivers an in-depth VMware environment as a service
 | NSX-T | Software-defined networking solution that extends across datacenters, clouds, and application frameworks.
 | HCX | Software-defined abstraction layer between on-premises and AVS for VM migrations. |
 
-VMware's Hybrid Cloud Exchange (HCX) provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of Azure services. The following diagram shows
+VMware's Hybrid Cloud Extension (HCX) provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of cloud resources. The following diagram shows HCX deployed on-premises. HCX then replicates VMs in the on-premises datacenter to AVS in Azure. Once the VMs are in Azure, they are closer to the rich APIs of Azure for administration and maintenance.
 
-:::image type="icon" source="../media/1-hcx-diagram.png" border="false" alt-text="High-level overview of the datacenter on-premises with VMs, migrating VMs to Azure using HCX.":::
+:::image type="icon" source="../media/1-hcx-diagram.png" border="false" alt-text="High-level overview of the datacenter on-premises with HCX migrating VMs to AVS.":::
 
 ## Example scenario
 
@@ -18,7 +18,7 @@ Imagine you work for a healthcare company that runs production workloads on a VM
 
 ## What will we be doing?
 
-First, you'll learn how to plan for the Hybrid Cloud Exchange (HCX) Connector deployment on-premises. From there, you'll learn how to deploy the HCX Connector on-premises and connect the appliance to Azure VMware Solution. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After HCX is deployed and configured, you'll learn how to migrate VMware workloads from on-premises to AVS.
+First, you'll learn how to plan for the Hybrid Cloud Extension (HCX) Connector deployment on-premises. From there, you'll learn how to deploy the HCX Connector on-premises and connect the appliance to Azure VMware Solution. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After HCX is deployed and configured, you'll learn how to migrate VMware workloads from on-premises to AVS.
 
 ## What is the main goal?
 
