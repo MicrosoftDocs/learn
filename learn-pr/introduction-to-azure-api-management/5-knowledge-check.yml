@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-api-management.5-knowledge-check
+uid: learn.azure.introduction-to-azure-api-management.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure API Management
-  ms.date: 5/1/2021
-  author: paulwp
-  ms.author: v-pmcfedries
+  ms.date: 06/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
 quiz:

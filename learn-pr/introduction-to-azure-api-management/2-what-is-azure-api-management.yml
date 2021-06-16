@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-api-management.2-what-is-azure-api-management
+uid: learn.azure.introduction-to-azure-api-management.what-is-azure-api-management
 title: What is Azure API Management?
 metadata:
   unitType: learning-content
   title: What is Azure API Management?
   description: Learn the basic features and concepts of Azure API Management
-  ms.date: 5/1/2021
-  author: paulwp
-  ms.author: v-pmcfedries
+  ms.date: 06/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-api-management.md)]
