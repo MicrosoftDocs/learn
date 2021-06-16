@@ -11,8 +11,8 @@ Now you've completed this module, you'll be able to:
 
 For more information about the topics raised in this module, see:
 
-- [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
-- [Security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
-- [Available roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference)
-- [Custom administrator roles in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/custom-overview)
-- [Understand Azure Active Directory role concepts](https://docs.microsoft.com/azure/active-directory/roles/concept-understand-roles)
+- [Conditional Access](/azure/active-directory/conditional-access/overview)
+- [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+- [Available roles](/azure/active-directory/roles/permissions-reference)
+- [Custom administrator roles in Azure AD](/azure/active-directory/roles/custom-overview)
+- [Understand Azure Active Directory role concepts](/azure/active-directory/roles/concept-understand-roles)

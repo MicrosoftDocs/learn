@@ -24,7 +24,7 @@ A managed identity is automatically managed in Azure AD. Managed identities are 
 
 There are several benefits to using managed identities, including:
 
-- Application developers can authenticate to services that support managed identities for Azure resources. For a complete list of services, refer to [Azure Services that support managed identities](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities).
+- Application developers can authenticate to services that support managed identities for Azure resources. For a complete list of services, refer to [Azure Services that support managed identities](/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities).
 - Any Azure service that supports Azure AD authentication can use managed identities to authenticate to another Azure service; for example, accessing Azure Key Vault.
 - Managed identities can be used without any extra cost.
 
@@ -53,4 +53,4 @@ There are multiple options for getting devices into Azure AD:
 - **Azure AD joined** devices exist only in the cloud. Azure AD joined devices are owned by an organization and signed in with their account. Users sign in to their devices with their Azure AD or synced Active Directory work or school accounts. You can configure Azure AD joined devices for all Windows 10 devices (except Windows 10 Home).
 - **Hybrid Azure AD joined devices** can be Windows 7, 8.1, or 10, or Windows Server 2008, or newer. Devices that are hybrid Azure AD joined are owned by an organization and signed in with an Active Directory Domain Services account belonging to that organization. They exist in the cloud and on-premises.
 
-IT admins can use tools like Microsoft Intune, a mobile device management (MDM) solution, to manage devices. Refer to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) for more information.
+IT admins can use tools like Microsoft Intune, a mobile device management (MDM) solution, to manage devices. Refer to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for more information.
