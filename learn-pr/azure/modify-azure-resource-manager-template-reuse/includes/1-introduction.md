@@ -4,6 +4,8 @@ Suppose you're managing a software team that's developing an inventory system fo
 
 In this module, you make your ARM template reusable for different environments by adding variables and expressions via Resource Manager functions. You also add better tracking and organization of your deployed resources by using tags. You complete the goal of improving the flexibility of your deployments by using parameter files.
 
+[!include[](../../includes/bicep-migrate-arm-templates.md)]
+
 ## Learning objectives
 
 In this module, you will:

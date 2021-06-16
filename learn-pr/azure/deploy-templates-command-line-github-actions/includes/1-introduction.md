@@ -2,6 +2,8 @@ In [Deploy consistent infrastructure in Azure by using ARM templates](/learn/mod
 
 In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that's staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your continuous integration and continuous delivery (CI/CD) pipeline.
 
+[!include[](../../includes/bicep-migrate-arm-templates.md)]
+
 ## Learning objectives
 
 After completing this module, you'll be able to:
