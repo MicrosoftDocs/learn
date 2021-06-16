@@ -18,7 +18,7 @@ Visual Studio Code is a code editor that is extremely customizable. It is comple
 
 To download and install it for free on any platform, visit the [Visual Studio Code Site](https://aka.ms/LearnOnVSCode?azure-portal=true).
 
-Visual Studio Code also also a huge marketplace of extensions so that you can create a developer experience that is right for you. If you haven't already, you should install the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour?azure-portal=true) from the Visual Studio Marketplace. You can find some additional information about this extension on the [open source repository on GitHub](https://github.com/microsoft/codetour#readme?azure-portal=true).
+Visual Studio Code also also a huge marketplace of extensions so that you can create a developer experience that is right for you. If you haven't already, you should install the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) from the Visual Studio Marketplace. You can find some additional information about this extension on the [open source repository on GitHub](https://github.com/microsoft/codetour#readme?azure-portal=true).
 
 ### GitHub
 
