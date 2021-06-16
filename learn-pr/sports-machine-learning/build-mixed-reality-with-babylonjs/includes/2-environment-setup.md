@@ -1,15 +1,15 @@
-To get started building this mixed reality project we will need to first setup our project. While you can create a BabylonJS WebXR project using just JavaScript, HTML and CSS, We will be using [WebPack](https://webpack.js.org/guides/installation/#local-installation/?azure-portal=true), [NodeJS](https://nodejs.org/?azure-portal=true), and [TypeScript](https://typescriptlang.org?azure-portal=true). This allows for better project architecture, type safety and project growth potential.
+To get started building this mixed reality project we will need to first setup our project. While you can create a BabylonJS WebXR project using just JavaScript, HTML and CSS, We will be using [WebPack](https://webpack.js.org/guides/installation/?azure-portal=true), [NodeJS](https://nodejs.org/?azure-portal=true), and [TypeScript](https://typescriptlang.org?azure-portal=true). This allows for better project architecture, type safety and project growth potential.
 
 There are two ways to continue through this Learn module:
 
-- Use [CodeTour in VSCode](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour?azure-portal=true) to explore a completed version and add your own personalization.
+- Use [CodeTour in VSCode](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) to explore a completed version and add your own personalization.
 - Start with a vanilla BabylonJS project and write all of the code following this module.
 
 Either will lead you to the same place, and regardless this module will guide you through the process of breaking down an XR experience into testable units.
 
 ## Option 1: Create the *Space Jam: A New Legacy* XR experience using a GitHub Template
 
-To get started, you'll need to create a repo based on this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithDrG/Basketball/BabylonsJS?azure-portal=true) and fill in the form. Name your repo space-jam-a-new-legacy-babylonjs. You can make this repo public or private, but be sure to include all branches:
+To get started, you'll need to create a repo based on this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true) and fill in the form. Name your repo space-jam-a-new-legacy-babylonjs. You can make this repo public or private, but be sure to include all branches:
 
 ![Creating a repository for the BabylonJS project using the GitHub template](../media/template-github.png)
 

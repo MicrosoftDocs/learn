@@ -1,7 +1,7 @@
 To get you started on your first Mixed Reality project using Bablyon.js, we've provided some starter code for you. 
 
 > [!Tip]
-> For a more detailed explanation of the starter project, follow the CodeTour! Make sure that you have the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour?azure-portal=true) installed in Visual Studio Code expand it in the Explorer pane and click "Start Tour".
+> For a more detailed explanation of the starter project, follow the CodeTour! Make sure that you have the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) installed in Visual Studio Code expand it in the Explorer pane and click "Start Tour".
 
 ## HTML and CSS in the `index.html`
 

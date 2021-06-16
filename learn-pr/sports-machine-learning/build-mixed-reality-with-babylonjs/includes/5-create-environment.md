@@ -30,7 +30,7 @@ Now, when you build your project all of the necessary packages will be imported 
 Next we will create the environment class and private variables to map in the constructor. We need to pass in our scene, engine, and import the JSON data to an array.
 
 > [!TIP]
-> This module uses the [starter code found on GitHub](https://aka.ms/LearnWithDrG/Basketball/BabylonsJS?azure-portal=true). If you completed the previous module in this *Space Jam: A New Legacy* inspired learning path, you might also have your own players.json file, which you can also use.
+> This module uses the [starter code found on GitHub](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true). If you completed the previous module in this *Space Jam: A New Legacy* inspired learning path, you might also have your own players.json file, which you can also use.
 
 ```javascript
 export class Environment {
