@@ -1,74 +1,24 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+When you plan an Azure Firewall deployment to protect a workload like Azure Virtual Desktop, you need to know what rules to deploy to allow the appropriate network traffic.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall from the accounting firm example, that you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You want to limit outbound network traffic for Azure Virtual Desktop by using Azure Firewall.
 
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-
-
-Allow outbound network access from the host pool to Azure Virtual Desktop:
+For Azure Virtual Desktop to work, the session host VMs need outbound internet access to the Azure Virtual Desktop service. The VMs might also need outbound internet access for your users.
 
 <!-- Diagram to show the pieces?? highlight from one of previous diagrams-->
 
 ## Route all traffic through the firewall
 
-Overview of steps to route traffic
+After you've deployed Azure Firewall, you need to route all traffic through it. In the next exercise unit, you'll complete the following three steps.
 
-## Create network rules
+1. Create a route table in the same resource group as your session host VMs and firewall.
+1. Associate the route table to the subnet that your session host VMs uses.
+1. On the route table, add the route to the firewall.
 
-Specific rules and configurations needed host outbound for WVD
+After you complete those steps, all traffic will route to Azure Firewall. By default, the firewall denies access to everything. So you need to configure conditions under which traffic is allowed through the firewall.
+
+## Create firewall rules
+
+To allow the appropriate network traffic for Azure Virtual Desktop, you'll need to create application and network firewall rules.
 
 ### Configure application rules
 
