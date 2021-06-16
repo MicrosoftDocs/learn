@@ -18,6 +18,9 @@ You'll know that it worked if you see the filename followed by ".ipynb" in the t
 
 :::image type="content" source="../media/make-jupyter.png" alt-text="Screenshot of the Python setup environment Jupyter file type":::
 
+> [!NOTE]
+> If your file doesn't display cells but is still showing the solid editor view instead, try closing VS Code and then open your `.ipynb` file by selecting **Open with Code**. Then, if Code indicates that the file is in "Restricted Mode", select the **Restricted Mode** box in the lower-left corner and then select **Trust**.
+
 ## Configure Python environment
 
 When you have a Jupyter Notebook file, you'll need to choose which Python environment you're using. Visual Studio Code might have recognized Python after you installed it. But if it doesn't, select the area on the bottom left of the screen and select the version you installed.
