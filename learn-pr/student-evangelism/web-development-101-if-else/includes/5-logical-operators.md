@@ -16,7 +16,7 @@ You can use these complex operators with both assignments but also with `if` and
 
 ### In assignments
 
-As part of assigning a value to a variable, you can use an or `||` operator.
+As part of assigning a value to a variable, you can use an or (`||`) operator.
 
 ```javascript
 let isHoliday = true;
