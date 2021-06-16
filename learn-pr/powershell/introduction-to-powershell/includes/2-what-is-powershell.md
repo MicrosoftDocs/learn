@@ -37,9 +37,8 @@ You can open Windows PowerShell from the Start menu.
 
 ### Other operating systems
 
-If your computer runs something other than Windows 8 or later, you need to install PowerShell. To find the installation instructions for your OS, see [Install various versions of PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?azure-portal=true).
+If your computer runs something other than Windows 8 or later, you need to install PowerShell. To find the installation instructions for your OS, see [Install various versions of PowerShell](/powershell/scripting/install/installing-powershell?azure-portal=true).
 
 ### PowerShell extension for Visual Studio Code
 
 We recommend that you use the [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell&azure-portal=true) to author your PowerShell scripts and to run the commands in this module. This extension lets you run commands and also helps you with snippets, code completion, and syntax highlighting.
-

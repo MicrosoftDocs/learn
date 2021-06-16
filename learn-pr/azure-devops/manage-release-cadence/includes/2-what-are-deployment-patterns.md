@@ -33,7 +33,7 @@ Let's briefly discuss each pattern.
 
 A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called *blue* and *green*. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps control the flow of traffic.
 
-![Diagram of a load balancer distributing traffic in a blue-green deployment](../media/2-blue-green-deployment.png)
+:::image type="content" source="../media/2-blue-green-deployment.png" alt-text="A diagram of a load balancer distributing traffic in a blue-green deployment.":::
 
 Let's say blue is live. As we prepare a new release, we do our final tests in the green environment. After the software is working in the green environment, we just switch the router so that all incoming requests go to the green environment. 
 
@@ -43,7 +43,7 @@ Blue-green deployment also gives us a fast way to do a rollback. If anything goe
 
 A _canary release_ is a way to identify potential problems early without exposing all users to the issue. The idea is that we expose a new feature to only a small subset of users before we make it available to everyone.
 
-![Diagram of a load balancer sending traffic to a canary version](../media/2-canary-deployment.png)
+:::image type="content" source="../media/2-canary-deployment.png" alt-text="A diagram of a load balancer sending traffic to a canary version.":::
 
 In a canary release, we monitor what happens when we release the feature. If the release has problems, then we apply a fix. After the canary release is known to be stable, we move it to the actual production environment.
 
@@ -53,9 +53,9 @@ _Feature toggles_ let us "flip a switch" at runtime. We can deploy new software 
 
 In this deployment pattern, Mara and I build new features behind a toggle. When a release occurs, the feature is "off" so that it doesn't affect the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
-![Diagram of a coded "if" statement for an on-off feature](../media/2-feature-toggles.png)
+:::image type="content" source="../media/2-feature-toggles.png" alt-text="A diagram of a coded if statement for an on-off feature.":::
 
-For example, we could expose the feature first to a small number of users to see how they react. That random sample of users sees the feature. Or we could just let the feature go live to everyone. 
+For example, we could expose the feature first to a small number of users to see how they react. That random sample of users sees the feature. Or we could just let the feature go live to everyone.
 
 But this deployment pattern might benefit Mara and me more than anyone else. The big advantage to the feature toggles pattern is that it helps us avoid too much branching. Merging branches can be painful.
 
@@ -63,7 +63,7 @@ But this deployment pattern might benefit Mara and me more than anyone else. The
 
 A _dark launch_ is similar to a canary release or switching a feature toggle. Rather than expose a new feature to everyone, in a dark launch we release the feature to a small set of users.
 
-![Diagram of a load balancer sending traffic to the new feature](../media/2-dark-launches.png)
+:::image type="content" source="../media/2-dark-launches.png" alt-text="A diagram of a load balancer sending traffic to the new feature.":::
 
 Those users don't know they're testing the feature for us. We don't even highlight the new feature to them. That's why it's called a dark launch. The software is gradually or unobtrusively released to users so we can get feedback and can test performance.
 
@@ -71,7 +71,7 @@ Those users don't know they're testing the feature for us. We don't even highlig
 
 _A/B testing_ compares two versions of a webpage or app to determine which one performs better. A/B testing is like an experiment.
 
-![Diagram of two apps and the analytics](../media/2-a-b-testing.png)
+:::image type="content" source="../media/2-a-b-testing.png" alt-text="A diagram of two apps and their analytics.":::
 
 In A/B testing, we randomly show users two or more variations of a page. Then we use statistical analysis to decide which variation performs better for our goals.
 
@@ -81,7 +81,7 @@ _Progressive-exposure deployment_ is sometimes called _ring-based deployment_. I
 
 Rings are basically an extension of the canary stage. The canary release releases to a stage to measure effect. Adding another ring is essentially the same idea.
 
-![Diagram of a progression of larger groups](../media/2-progressive-exposure-deployment.png)
+:::image type="content" source="../media/2-progressive-exposure-deployment.png" alt-text="A diagram of a progression of larger groups.":::
 
 In a ring-based deployment, we deploy changes to risk-tolerant customers first. Then we progressively roll out to a larger set of customers.
 
@@ -111,7 +111,7 @@ I know we're not yet ready to deploy the _Space Game_ website to production as p
 
 Instead of setting up a load balancer or a router, we can just add a second slot to the App Service instance that we use in our existing _Staging_ environment. We can call the primary slot *blue* and the secondary slot *green*.
 
-![Diagram of applications swapping IP addresses](../media/2-zero-downtime-deployment.png)
+:::image type="content" source="../media/2-zero-downtime-deployment.png" alt-text="A diagram of applications swapping IP addresses.":::
 
 This way we can deploy new features without any downtime. We swap an application and its configuration between the two deployment slots. Basically we're swapping the IP addresses of the two slots.
 

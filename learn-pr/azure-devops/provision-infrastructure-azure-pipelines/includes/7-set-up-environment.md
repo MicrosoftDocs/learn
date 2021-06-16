@@ -39,7 +39,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/7-create-new-project.png)
+    :::image type="content" source="../media/7-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
     It takes a few moments for the template to run.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
@@ -62,7 +62,7 @@ Assigning work in this way gives you a checklist. It gives others on your team v
 
 Recall that the team settled on these three top issues for the current sprint:
 
-![Azure Boards list that shows the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+:::image type="content" source="../../shared/media/automate-all-tasks.png" alt-text="Azure Boards list that shows the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -80,7 +80,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/7-azure-boards-wi1-doing.png" alt-text="Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
@@ -94,7 +94,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Selecting the Bash shell in Visual Studio Code.":::
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 

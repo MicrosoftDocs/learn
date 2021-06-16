@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-modeling-secured-environment.6-summary
 metadata:
-  title: Summary of threat modeling an application to be used in the PAW
-  description: Review what you learned about adding an application to your Privileged Access Workstation (PAW).
+  title: Summary of threat modeling a client application to be used in the PAW
+  description: Review what you learned about adding a client application to your Privileged Access Workstation (PAW).
   ms.date: 05/27/2021
   author: rodrigosantos
   ms.author: micrum

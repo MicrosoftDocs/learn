@@ -22,9 +22,11 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-deploy-configure.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
 products:
 - azure
 - azure-sql-managed-instance

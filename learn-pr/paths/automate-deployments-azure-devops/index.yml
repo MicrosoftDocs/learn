@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.azdo.automate-deployments-azure-devops
+hidden: true
 metadata:
   title: Automate your deployments with Azure DevOps learning path
   description: Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.

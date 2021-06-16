@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Enable Hyper-V in your Windows Features settings; 2) Open Hyper-V Quick Create and select a Linux distribution OS; 3) Open Hyper-V Manager to name your VM and connect."
       isCorrect: false
-      explanation: "Running Linux in a VM with Hyper-V is still a viable option, but the Windows and Linux tools and file systems won't be seamlessly integrated as they are with WSL. You'll also experience better performance if you run a Linux distribution with WSL. That said, if you want more info about setting up VMs, see the [Hyper-V docs](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine)."
+      explanation: "Running Linux in a VM with Hyper-V is still a viable option, but the Windows and Linux tools and file systems won't be seamlessly integrated as they are with WSL. You'll also experience better performance if you run a Linux distribution with WSL. That said, if you want more info about setting up VMs, see the [Hyper-V docs](/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine)."
     - content: "Enable WSL in your Windows Features settings (or with a PowerShell script); 2) Install a Linux distribution from Microsoft Store; 3) Open the Linux distribution and set your account name and password."
       isCorrect: true
       explanation: "You were paying attention! Good job!"
@@ -112,5 +112,3 @@ quiz:
     - content: "An `app.config` file with `openWSL` set to `VS Code`."
       isCorrect: false
       explanation: "Nope, `app.config` is an XML file schema."
-
-
