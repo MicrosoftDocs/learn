@@ -20,18 +20,14 @@ In this module, you'll extend a Bicep template by using conditions and loops. Yo
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to:
-- Create Bicep templates by using conditions and loops.
-- Write Bicep code that configures how loops are executed.
-- Create variable loops and output loops to make your templates even more flexible.
-- Control how your Azure resources are deployed.
+By the end of this module, you'll be able to create Bicep templates by using conditions and loops, and write Bicep code that configures how loops are executed. You'll also be able to create variable loops and output loops to make your templates even more flexible.
 
 ## Prerequisites
 
-You should have:
+You should be familiar with:
 
-- Familiarity with the basic Bicep template structure and syntax, including modules.
-- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+- Creating and deploying basic Bicep templates.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 
