@@ -184,4 +184,3 @@ If you click Publish All you’ll be redirected to the following screen to confi
 
 Select Publish, and the pipeline will be published. 
 
-

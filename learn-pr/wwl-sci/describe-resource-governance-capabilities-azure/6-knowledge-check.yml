@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2021
+  ms.date: 06/16/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -38,17 +38,6 @@ quiz:
     - content: "Azure Blueprints"
       isCorrect: true
       explanation: "​​​Azure Blueprint will enable your development teams to define a repeatable set of Azure resources, and achieve shorter development times and faster delivery."
-  - content: "An organization is moving their IT infrastructure to the cloud. They want to know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance can they use to help them transition to the cloud?"
-    choices:
-    - content: "They should use Azure Policy for guidance on moving to the cloud."
-      isCorrect: false
-      explanation: "​​​Azure Policy isn’t guidance, but rather a solution that helps ensure resources stay compliant with business and regulatory requirements. Instead, use the Cloud Adoption Framework."
-    - content: "They should use the Microsoft Cloud Adoption Framework for guidance on moving to the cloud."
-      isCorrect: true
-      explanation: "The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.​​​"
-    - content: "They should use the Azure Cloud Succeed Framework."
-      isCorrect: false
-      explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
   - content: "Within an organization, there are many users who will need to access Azure and perform different actions across various scopes. The admin wants to implement action management at all scopes across Azure for the organization. What can the admin use to address this need?"
     choices:
     - content: "Use Azure role-based access control (RBAC)"
