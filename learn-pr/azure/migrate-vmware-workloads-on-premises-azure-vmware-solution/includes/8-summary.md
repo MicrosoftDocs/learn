@@ -1,4 +1,4 @@
-In this module, you learned about the deployment and configuration steps to set up VMware's Hybrid Cloud Extension (HCX) for VM migrations on-premises:
+In this module, you learned about the deployment and configuration steps to set up VMware HCX for VM migrations on-premises:
 
 - First, you learned about the planning that's required to deploy HCX.
 - Next, you learned how to:

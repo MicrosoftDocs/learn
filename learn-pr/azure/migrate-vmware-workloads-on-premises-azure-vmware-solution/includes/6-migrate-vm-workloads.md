@@ -1,14 +1,8 @@
 After HCX installs and connectivity is established between your on-premises VMware environment and Azure VMware Solution, VM migration becomes the next task. You migrate VMs from on-premises through the HCX Connector migration web interface.
 
-## Pre-requisites
-
-Before beginning VM migration tasks, it's worth revisiting the previous configurations to ensure each migration completes successfully.  
-- The migration service must be enabled in both the source and destination site Compute Profile.
-- The migration service must be enabled in the HCX Service Mesh.
-
 ## Migrate virtual machines
 
-As we covered earlier, HCX provides several ways of migrating VMs into AVS: cold, live, and bulk migration, each using vMotion. You configure migrations using the HCX Connector on-premises that initiated site pairing into AVS. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation. One last thing to note is taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. In order to prevent any disruption, disable backups until the VM completely migrates into AVS.
+As we covered earlier, HCX provides several ways of migrating VMs into AVS: cold, live, and bulk migration. You configure migrations using the HCX Connector on-premises that initiated site pairing into AVS. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation. One last thing to note is taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. In order to prevent any disruption, disable backups until the VM completely migrates into AVS.
 
 ## Steps to migrate virtual machines into AVS
 

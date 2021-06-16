@@ -10,7 +10,7 @@ Since AVS deploys and configures the HCX Cloud Manager within the private cloud 
 
 ## HCX versions and compatibility
 
-AVS deploys with HCX R146 Advanced in Azure. There are vSphere version compatibility requirements that need to be met for a supported migration pattern using HCX.
+There are vSphere version compatibility requirements that need to be met on-premises for a supported migration pattern using VMware HCX.
 
 | Component type | HCX connector environment requirements | HCX cloud environment requirements |
 | :------| :------- | :---- |

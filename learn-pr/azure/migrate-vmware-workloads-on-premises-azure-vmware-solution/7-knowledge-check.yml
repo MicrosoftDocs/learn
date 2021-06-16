@@ -36,17 +36,6 @@ quiz:
     - content: "Your VMware HCX Connector can't route to your HCX Cloud Manager IP over port 443."
       isCorrect: true
       explanation: "The ability to route traffic over port 443 needs to be accounted for if you cannot establish an HCX site pairing."
-  - content: "If the VM you're trying to migrate is powered off, which migration is set by default?"
-    choices:
-    - content: "Live"
-      isCorrect: false
-      explanation: "Live migration allows you to move an entire running VM from host to another."
-    - content: "Bulk"
-      isCorrect: false
-      explanation: "Bulk migration uses the host-based replication to move a powered on VM between HCX data centers."
-    - content: "Cold"
-      isCorrect: true
-      explanation: "Cold migration is the migration of powered off or suspended virtual machines between environments."
   - content: "In order for VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?"
     choices:
     - content: "443"
