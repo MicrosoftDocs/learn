@@ -56,7 +56,7 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-In this unit, you'll create the firewall in its own virtual network. Then you peer that virtual network with the virtual network used by your Windows Virtual Desktop.
+In this unit, you'll create the firewall in its own virtual network. Then you peer that virtual network with the virtual network used by your Azure Virtual Desktop.
 
 ## Create a virtual network and subnet for Azure Firewall
 

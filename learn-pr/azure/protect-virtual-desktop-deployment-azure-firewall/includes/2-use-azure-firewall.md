@@ -50,29 +50,27 @@ TODO: add a visual element
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## What is Azure Firewall?
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+Recall that Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall with the hub network.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
-<!-- Do not add a unit summary or references/links -->
+:::image type="content" source="../media/2-firewall-description.png" alt-text="Diagram of Azure Firewall in a hub virtual network with traffic to and from the internet passing through the hub network to spoke virtual networks, and an on-premises network." border="false":::
+
+Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
+
+## What is Azure Virtual Desktop?
+
+Azure Virtual Desktop is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+
+## Why use Azure Firewall with Azure Virtual Desktop?
+
+When an end user connects to an Azure Virtual Desktop environment, their session is run by a host pool. A host pool is a collection of Azure virtual machines (VMs) that register to Azure Virtual Desktop as session hosts. These VMs run in a Azure virtual network and are subject to virtual network security controls.
+
+For Azure Virtual Desktop to work, the session host VMs need outbound internet access to the Azure Virtual Desktop service. The VMs might also need outbound internet access for your users. You can use Azure Firewall to lock down your environment and filter outbound network traffic.
+
+The following diagram shows...
+
+:::image type="content" source="../media/2-firewall-azure-virtual-desktop-architecture.png" alt-text="Diagram of Azure Firewall filtering network traffic between the Azure Virtual Network service and the host pool virtual network." border="false":::
+

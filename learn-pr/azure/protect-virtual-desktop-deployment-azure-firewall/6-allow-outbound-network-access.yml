@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.allow-outbound-network-access
-title: Allow outbound network access for Windows Virtual Desktop
+title: Allow outbound network access for Azure Virtual Desktop
 metadata:
   unitType: learning-content
   title: Allow outbound network access 

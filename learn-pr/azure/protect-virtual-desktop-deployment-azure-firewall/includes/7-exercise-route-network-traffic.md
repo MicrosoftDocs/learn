@@ -61,7 +61,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 ## Create application rule collection
 
-Create an application rule collection with rules to allow Windows Virtual Desktop access to several Fully Qualified Domain Names (FQDNs).
+Create an application rule collection with rules to allow Azure Virtual Desktop access to several Fully Qualified Domain Names (FQDNs).
 
 1. In the Azure portal, search for and select **Firewalls**.
 1. Select the **learn-fw** firewall.
@@ -101,7 +101,7 @@ Create an application rule collection with rules to allow Windows Virtual Deskto
 
 ## Check your work
 
-At this point, you've routed all network traffic for Windows Virtual Desktop through the firewall. Let's make sure the firewall is working as expected.
+At this point, you've routed all network traffic for Azure Virtual Desktop through the firewall. Let's make sure the firewall is working as expected.
 
 1. In Cloud Shell, run the following command.
 
