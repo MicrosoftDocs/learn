@@ -224,12 +224,12 @@ How did you solve the problem in the initial scenario with the knowledge learned
 
 References:
 
-[What is Azure Load Balancer?](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)
+[What is Azure Load Balancer?](/azure/load-balancer/load-balancer-overview)
 
-[Configure the distribution mode for Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-distribution-mode)
+[Configure the distribution mode for Azure Load Balancer](/azure/load-balancer/load-balancer-distribution-mode)
 
-[Load balance VMs across all availability zones using Azure CLI](https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-public-zone-redundant-cli)
+[Load balance VMs across all availability zones using Azure CLI](/azure/load-balancer/load-balancer-standard-public-zone-redundant-cli)
 
-[Standard Load Balancer and Availability Zones](https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-availability-zones)
+[Standard Load Balancer and Availability Zones](/azure/load-balancer/load-balancer-standard-availability-zones)
 
 [Azure VMs : Availability Sets and Availability Zones](https://social.technet.microsoft.com/wiki/contents/articles/51828.azure-vms-availability-sets-and-availability-zones.aspx)

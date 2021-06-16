@@ -1,3 +1,19 @@
-The HoloLens 2 is Microsoft's flagship Mixed Reality device to host unique and immersive experiences that connect data, processes, and actions with people.  In this module, you'll explore practical ways to visualize and experience data in a 3D augmented reality environment.
+The HoloLens 2 is Microsoft's flagship Mixed Reality device for hosting unique and immersive experiences that connect users to data, processes, and actions. 
 
-This module introduces you to the basics of Mixed Reality, Azure Digital Twin, and Unity.  It outlines how to get started with Azure subscriptions and accounts, and how to set up a Unity development environment.
+## Example scenario
+
+For this learning path, you'll be working on a simulated industry scenario for a windmill farm by pulling in real-time turbine data using the Azure Digital Twins service. The end goal is to give you a foundation in practical ways of visualizing and experiencing data in a 3D augmented reality environment.
+
+## What will we be doing?
+
+In this module, you'll be introduced to the basic concepts and technologies used in this learning path:
+* Mixed Reality
+* Azure Digital Twins
+* Azure SignalR
+* Unity  
+
+You'll also be guided through getting started with Azure subscriptions and accounts, and how to set up a Unity project and development environment.
+
+## What is the main goal?
+
+By the end of this module, you'll be able to define Mixed Reality, create an Azure Digital Twins account, and set up a Unity project. You'll also have context on applying the learnings from this module to a real-world industry use case and on the role Azure SignalR services play in getting real-time web functionality.

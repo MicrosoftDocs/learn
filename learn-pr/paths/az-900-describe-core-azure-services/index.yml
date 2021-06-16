@@ -15,7 +15,7 @@ summary: |
   After completing this learning path, you'll be able to:
 
     - Understand the breadth of services available in Azure including compute, network, storage, and database
-    - Identify virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Windows Virtual Desktop
+    - Identify virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Azure Virtual Desktop
     - Compare Azure's database services such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure's big data and analysis services
     - Examine Azure networking resources such as Virtual Networks, VPN Gateways, and Azure ExpressRoute
     - Summarize Azure storage services such Azure Blob Storage, Azure Disk Storage, and Azure File Storage
@@ -26,7 +26,7 @@ summary: |
   :::column:::
     <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
 
-    [Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+    [Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
@@ -36,7 +36,7 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
 
-    [Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+    [Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
   :::column-end:::
   :::row-end:::
 
@@ -44,21 +44,21 @@ summary: |
   :::column:::
     <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
 
-    [Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+    [Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
 
-    [Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+    [Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"></img>
 
-    [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+    [Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
   :::column-end:::
   :::row-end:::
 
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.

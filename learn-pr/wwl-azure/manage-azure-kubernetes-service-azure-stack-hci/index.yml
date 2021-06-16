@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
   title: Manage Azure Kubernetes Service on Azure Stack HCI
   description: "Manage Azure Kubernetes Service on Azure Stack HCI"
-  ms.date: 05/18/2021
+  ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Familiarity with the concept of virtualization
   - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
   - Familiarity with the concept of containerization and container orchestration
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-azure-kubernetes-service-on-azure-stack-hci.svg
 levels:
 - intermediate
 roles:

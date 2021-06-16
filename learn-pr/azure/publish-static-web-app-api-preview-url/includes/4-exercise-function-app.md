@@ -62,7 +62,7 @@ You can create and manage Azure Functions applications the Azure Functions exten
 1. After installation is complete, click **Reload**.
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+> Please be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
 
 ### Create the function
 
@@ -116,7 +116,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
-You'll need to update the logic to get your products. There is data access logic in the JavaScript module _/shared/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
+You'll need to update the logic to get your products. There is data access logic in the JavaScript tutorial _/shared/product-data.js_. The `product-data` tutorial exposes a function `getProducts` to get the products for the shopping list.
 
 Now, change the function endpoint to return the products:
 
@@ -203,7 +203,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+> Please be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**

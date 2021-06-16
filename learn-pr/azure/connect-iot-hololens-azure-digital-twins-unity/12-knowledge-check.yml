@@ -12,25 +12,28 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Azure Resource Manager templates can be created in two languages; select one?"
+  - content: "What does an Azure Resource Manager (ARM) template do?"
     choices:
-    - content: "Bicep"
+    - content: "Automates Azure Service deployment"
       isCorrect: true
-      explanation: "Bicep is one of two languages that can be used to create Azure Resource Manager Templates.  The other is JavaScript Object Notation (JSON)."
-    - content: "Tricep"
+      explanation: "Yes, ARM templates let you specify the Azure resources you want to deploy and the properties of those resources."
+    - content: "Automates Visual Studio build validation"
       isCorrect: false
-      explanation: "A play on the correct answer (Bicep), a tricep is a large muscle on the back of the upper limb of many vertebrates.  A bicep is a large muscle that lies on the front of the upper limb of many vertebrates."
-    - content: "DAX" 
+      explanation: "ARM templates are not part of Visual Studio or it's build validation workflow."
+    - content: "Automates app distribution through PowerShell" 
       isCorrect: false
-      explanation: "Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Power BI, Analysis Services, and Power Pivot in Excel data models."
-  - content: "True or false: When setting up Azure services and using ARM templates, you need to be aware of service availability by location."
+      explanation: "While ARM templates are executed through PowerShell or Windows Command Prompt, they do not control app distribution."
+  - content: "What happens to telemetry data when a simulated alert is triggered?"
     choices:
-    - content: "True"
+    - content: "The simulator sends a property update to ADT, setting the Alert property to True, and begins polling ADT at a regular interval until the Alert property is set back to False."
       isCorrect: true
-      explanation: ""
-    - content: "False"
+      explanation: "Yes, the alert is triggered and fired until it's cleared, at which point normal telemetry data resumes."
+    - content: "The simulator creates a trigger object in ADT, sets the Alert property to Sent, and immediately resumes sending telemetry data without waiting for a response."
+      isCorrect: false 
+      explanation: "Instead of creating a trigger object, the simulator sends a property update to ADT and sets the Alert property to True. Then, the simulator polls ADT until the Alert is set back to False."
+    - content: "The simulator stops running the app on the HoloLens until ADT sends back an Alert trigger confirmation, at which point telemetry data resumes."
       isCorrect: false
-      explanation: "Azure service availability varies by region.  Refer to the Products available by region to learn which services are available by region.  There may be extra fees associated with inter-region, inter-service transactions.  "
+      explanation: "Instead of stopping the app, the simulator sends a property update to ADT and sets the Alert property to True. Then, the simulator polls ADT until the Alert is set back to False."  
   - content: "What approach is the most efficient means to create assets in Unity that connect to ADT?"
     choices:
     - content: "Create one asset in the Scene and copy-paste it so that all parameters are transferred to the copy."
@@ -42,13 +45,15 @@ quiz:
     - content: "Drag and drop Prefab assets in the Scene" 
       isCorrect: false
       explanation: "This is a quick way to add assets to a Unity Scene, each will require manual configuration after dropping into the scene"
-  - content: "True or false: A device simulator is always required for all Digital Twins to connect assets to ADT."
+  - content: "Which of the following real-time content use cases is the Azure SignalR service NOT a good fit for?"
     choices:
-    - content: "True"
+    - content: "High frequency data updates"
       isCorrect: false
-      explanation: ""
-    - content: "False"
+      explanation: "High frequency data updates for gaming, voting, polling, and auctioning are actually great use cases for Azure SignalR."
+    - content: "IoT and connected devices"
+      isCorrect: false
+      explanation: "IoT and connected devices for real-time IoT metrics, remote control, real-time status, and location tracking are fantastic use cases for Azure SignalR."
+    - content: "Local device data storage"
       isCorrect: true
-      explanation: "A device simulator isn't required for all Digital Twins to connect assets to ADT.  Often, when developers are creating digital representations of physical assets or processes, they have access to rich IoT, enterprise, and other data sources relevant to their Digital Twins."
-
+      explanation: "Azure SignalR is ideal for pushing real-time content updates to connected clients, not storing locally cached data on devices."
   

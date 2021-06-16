@@ -16,5 +16,5 @@ Visual Studio also offers the feature to integrate your web API with Azure API M
 In the next couple of exercises, you will explore how to publish your web API application to Azure App Service and integrate it with Azure API Management.
 
 
-[az appsvc]: https://docs.microsoft.com/azure/app-service/overview
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az appsvc]: /azure/app-service/overview
+[az apim]: /azure/api-management/api-management-key-concepts

@@ -44,3 +44,4 @@ units:
 - learn.language.rust-create-command-line-program.summary
 badge:
   uid: learn.language.rust-create-command-line-program.badge
+hidden: true
