@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-deploy-maintain-cloud-native-apps.3-exercise-implement-iac
+title: Exercise - Implement Infrastructure as Code by using GitHub Actions
+metadata:
+  title: Exercise - Implement Infrastructure as Code by using GitHub Actions
+  description: Exercise - Implement Infrastructure as Code by using GitHub Actions
+  ms.date: 05/31/21
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-implement-iac.md)]
