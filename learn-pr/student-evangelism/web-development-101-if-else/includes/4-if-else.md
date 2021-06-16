@@ -35,7 +35,7 @@ if (value operator compareToThisValue) {
 }
 ```
 
-Here's an example that uses the preceding syntax to compare variables' values by using a larger-then, `>=`, operator:
+Here's an example that uses the preceding syntax to compare variables' values by using a larger-than (`>=`) operator:
 
 ```javascript
 let currentMoney = 1000;
