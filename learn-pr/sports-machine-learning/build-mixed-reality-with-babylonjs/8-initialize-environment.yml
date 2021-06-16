@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.initialize-environment
+metadata:
+  title: Initialize your custom environment in you XR experience
+  description:  Initialize your custom environment in you XR experience
+  ms.date: 06/15/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Initialize your custom environment in you XR experience
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-initialize-environment.md)]

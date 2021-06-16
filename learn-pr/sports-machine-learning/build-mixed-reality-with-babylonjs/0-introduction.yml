@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.introduction
+metadata:
+  title: Introduction to BabylonJS as a Sports Fan
+  description: Introduction to building a Mixed Reality experience with BabylonJS as a Sports Fan
+  ms.date: 06/15/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to BabylonJS as a Sports Fan
+durationInMinutes: 1
+content: |
+  [!include[](includes/0-introduction.md)]

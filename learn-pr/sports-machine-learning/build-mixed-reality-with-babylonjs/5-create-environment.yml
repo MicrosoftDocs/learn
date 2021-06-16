@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.create-environment
+metadata:
+  title: Create a custom XR environment with TypeScript
+  description:  Create a custom XR environment with TypeScript
+  ms.date: 06/15/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a custom XR environment with TypeScript
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-create-environment.md)]
