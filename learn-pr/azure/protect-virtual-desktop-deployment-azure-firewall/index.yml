@@ -8,6 +8,7 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
 title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
 summary: Deploy Azure Firewall, route all network traffic through Azure Firewall, and configure rules. Outbound network traffic from the host pool virtual machines to Azure Virtual Desktop routes through Azure Firewall.
 abstract: | 
