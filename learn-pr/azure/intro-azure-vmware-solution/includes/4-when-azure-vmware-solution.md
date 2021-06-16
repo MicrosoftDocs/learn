@@ -14,5 +14,5 @@ The following table describes business needs and considerations where AVS may be
 
 
 ### When not to choose Azure VMware Solutions
-Azure VMware Solution is not suited for organizations that want to stay on-premises. Enterprises that do not want to use the cloud should not consider AVS. 
+Azure VMware Solution is not suited for organizations that want to stay on-premises. Enterprises that do not want to use the cloud should not consider Azure VMware Solution. 
 

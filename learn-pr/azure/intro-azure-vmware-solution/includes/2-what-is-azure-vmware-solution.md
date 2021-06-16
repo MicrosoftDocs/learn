@@ -24,9 +24,9 @@ The diagram below illustrates the relationship between private clouds and networ
 ### Key features of Azure VMware Solution
 Azure VMware Solution provides a comprehensive VMware environment in Azure. Migrating to AVS include the following key features listed below.
 
-**Use your existing VMware investments:** No need to re-skill and learn new tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
+**Use your existing VMware investments:** No need to reskill and learn new tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
-**Create operational consistency for admins:** Operational consistency is created for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager.mAdmins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
+**Create operational consistency for admins:** Operational consistency is created for admins as you continue to use VMware for resources running on Azure, including vSphere Client and NSX-T Manager. Admins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
 
 **Maintain operational consistency for the business:** Reduce change management and maintain operational consistency for the business. You can use all of your existing investments:
 - Training
@@ -41,7 +41,7 @@ Accelerate migration and minimize downtime using the latest HCX Enterprise funct
 ### Unique benefits of Azure VMware Solution
 Benefits that are unique to migrating to AVS include the following benefits:
 
-**Unified Licensing and Consumption :** Avoid licensing complexity by working with a single vendor for licensing and resource consumption. Track your VMware licensing directly with resource nodes as they are deployed and decommissioned.
+**Unified Licensing and Consumption :** Avoid licensing complexity by working with a single vendor for licensing and resource consumption. Track your VMware licensing directly with resource nodes as they're deployed and decommissioned.
 
 **Azure Hybrid Use Benefits :** Maximize the value of existing Windows Server and SQL Server licenses. Use Azure Hybrid Benefit (AHUB) for both Windows Server and SQL Server. AHUB allows you to bring your existing licenses to Azure and greatly reduce costs. Save up to 80% with AHUB and Azure Reserved Instances.
 
@@ -70,7 +70,7 @@ Once your VMware environment is on Azure, all Azure services can be accessed. So
 |**Azure Application Gateway**    | Protect web apps on Azure VMware Solution with Azure Application Gateway. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications.    |
 |**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
 
-As the Azure VMware Solution continues to advance and mature, additional Azure integration will be added to the offering.
+As the Azure VMware Solution continues to advance and mature, more Azure integrations will be added to the offering.
 
 ### Continuity of operations
 Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 

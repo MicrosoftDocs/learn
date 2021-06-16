@@ -70,7 +70,7 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 3.1.1 |
 | HCX | 4.0 |
 
-NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied. 
+NSX-T is the only supported version of NSX. When new clusters are added to an existing private cloud the currently running software version is applied. 
 
 Once Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. Azure Monitor can be used to monitor VM patterns inside the Azure VMware Solution.
 
