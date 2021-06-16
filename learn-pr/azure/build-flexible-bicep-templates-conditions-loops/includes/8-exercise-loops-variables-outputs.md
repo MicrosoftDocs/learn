@@ -10,8 +10,6 @@ During the process, you'll:
 > * Add an output loop to create the list of logical server FQDNs.
 > * Deploy the Bicep file and verify the deployment.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Add the virtual network to your Bicep file
 
 1. Open the *main.bicep* file.

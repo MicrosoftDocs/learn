@@ -9,7 +9,7 @@ During the process, you'll:
 > * Add decorators to the parameters.
 > * Test the deployment to ensure that the template is valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template with parameters
 

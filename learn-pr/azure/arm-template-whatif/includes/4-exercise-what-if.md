@@ -9,11 +9,17 @@ During the process, you'll:
 > * Prepare to deploy a template that's slightly different, and use the what-if operation to review the expected changes.
 > * Use a complete deployment to deploy an empty template, and use the what-if operation to review the expected changes.
 
-::: zone pivot="biceppowershell,bicepcli"
+::: zone pivot="jsoncli,jsonpowershell"
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the JSON ARM template extension for Visual Studio Code](../../includes/azure-template-json-exercise-vscode-extension.md)]
 
 ::: zone-end
+
+::: zone pivot="biceppowershell,bicepcli"
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+::: zone-edit
 
 ## Create the starting template
 

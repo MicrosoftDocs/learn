@@ -9,7 +9,7 @@ During the process, you'll:
 > * Add a database and container, which are child resources of the Cosmos DB account.
 > * Deploy the template and verify the deployment.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template that contains an Azure Cosmos DB account
 

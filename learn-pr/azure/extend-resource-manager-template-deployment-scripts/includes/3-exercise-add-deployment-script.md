@@ -1,5 +1,4 @@
-> [!NOTE]
-> This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
+[!INCLUDE [BYO subscription explanation](../../includes/azure-template-exercise-nosandbox-subscription.md)]
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 
@@ -13,7 +12,17 @@ During the process, you'll:
 > * Add a deployment script.
 > * Deploy the template, and verify the outcome.
 
-This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+::: zone pivot="jsoncli,jsonpowershell"
+
+[!INCLUDE [Install the JSON ARM template extension for Visual Studio Code](../../includes/azure-template-json-exercise-vscode-extension.md)]
+
+::: zone-end
+
+::: zone pivot="biceppowershell,bicepcli"
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+::: zone-edit
 
 ## Create the starting template
 
