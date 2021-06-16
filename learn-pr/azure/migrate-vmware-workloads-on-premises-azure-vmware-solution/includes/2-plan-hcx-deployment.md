@@ -1,6 +1,6 @@
-VMware's Hybrid Cloud Extension (HCX) Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware's HCX Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
-## What is Hybrid Cloud Extension?
+## What is VMware HCX?
 
 VMware's HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
 
