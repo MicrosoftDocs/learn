@@ -30,7 +30,7 @@ From the Azure DevOps Demo Generator site, take these steps to run the template.
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
 1. Select **Create Project**.
 
-    ![Screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -57,7 +57,7 @@ Here you move the fifth item, **Check open source code for vulnerabilities and l
 
 Recall that **Check open source code for vulnerabilities and licensing terms** relates to scanning open-source components that are used in your application for known vulnerabilities and license ratings.
 
-![Screenshot of Azure DevOps work item details for scanning for vulnerabilities and licensing terms.](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="Screenshot of Azure DevOps work item details for scanning for vulnerabilities and licensing terms.":::
 
 To set up the work item:
 
@@ -70,7 +70,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Screenshot of Azure Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi5-doing.png" alt-text="Screenshot of Azure Boards showing the vulnerabilities check card now in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
 
