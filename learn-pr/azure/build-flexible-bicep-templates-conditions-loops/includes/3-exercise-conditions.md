@@ -4,7 +4,7 @@ You need to deploy your toy company's resources to a variety of environments. An
 
 In this exercise, you create an Azure SQL logical server and a database. You then add auditing settings to ensure that auditing is enabled, but you want it enabled only when you're deploying to a production environment. For auditing purposes, you need to have a storage account, which you also deploy only when you're deploying resources to a production environment.
 
-During the creation process, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that defines a logical server with a database.

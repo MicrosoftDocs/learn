@@ -2,7 +2,7 @@ For your toy company, you need to deploy virtual networks in each country where 
 
 In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 
-In the process, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your Bicep code to specify a parameter for each virtual network's subnets.

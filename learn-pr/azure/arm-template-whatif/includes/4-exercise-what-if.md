@@ -1,6 +1,13 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll create and deploy an initial template. After the deployment is complete, you'll prepare to deploy a template that's slightly different, and you'll use the what-if operation to review the expected changes. Then, you'll use a complete deployment to deploy an empty template.
+The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll use what-if to verify the effects of deploying the updated template.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create and deploy an initial template.
+> * Prepare to deploy a template that's slightly different, and use the what-if operation to review the expected changes.
+> * Use a complete deployment to deploy an empty template, and use the what-if operation to review the expected changes.
 
 ::: zone pivot="biceppowershell,bicepcli"
 

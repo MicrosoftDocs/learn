@@ -3,7 +3,15 @@
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 
-In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a `deploymentScripts` resource to run an Azure PowerShell script. The script will deploy a file to the newly created storage account.
+In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a new deployment script.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a starting template.
+> * Add the prerequisites for deployment scripts including a user-assigned managed identity and role assignment.
+> * Add a deployment script.
+> * Deploy the template, and verify the outcome.
 
 This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 

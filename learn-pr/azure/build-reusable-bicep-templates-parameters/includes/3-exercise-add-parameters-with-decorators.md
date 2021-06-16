@@ -1,6 +1,8 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. During the process, you'll:
+As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. 
+
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that includes parameters and variables.
