@@ -1,4 +1,4 @@
-Azure Resource Manager (ARM) templates provide a few features that can help you deploy software to different environments.
+JSON Azure Resource Manager (ARM) templates provide a few features that can help you deploy software to different environments.
 
 Suppose you're managing a software team that's developing an inventory system for your partner companies. Each environment that the software will be deployed to will have different policies implemented through different Azure storage account SKUs. You have an ARM template that deploys a storage account and can be run on each environment. But you'd like to make it easier to change inputs for each deployment environment. You decide to use variables and functions in the ARM template and parameter files for inputs.
 
@@ -8,7 +8,7 @@ In this module, you make your ARM template reusable for different environments b
 
 In this module, you will:
 
-- Create an expression for a unique value by using ARM template functions.
+- Create an expression for a unique value by using JSON ARM template functions.
 - Reuse your expression by storing it in an ARM template variable.
 - Organize and track your deployed Azure resources by using resource tags.
 - Manage multiple deployment parameters by using ARM template parameter files.
