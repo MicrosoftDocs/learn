@@ -19,7 +19,7 @@ To perform this exercise, you need:
 1. On a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription that you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and then in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
-1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create >** (leave all other settings with their default values):
+1. On the **Basics** tab of the **Single server** blade, configure the following settings and leave all other settings with their default values:
 
    | Setting | Configuration |
    | --- | --- |
@@ -35,10 +35,8 @@ To perform this exercise, you need:
 
     :::image type="content" source="../media/3-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the Single server blade in the Azure portal.":::
 
-1. On the **Review + create** tab of the **Single server** blade, select **Create**.
-
-    > [!NOTE]
-    > Wait for the provisioning to complete. This might take about five minutes.
+1. Select **Next: Review + create >**.
+1. On the **Review + create** tab of the **Single server** blade, select **Create**. Wait for the provisioning to complete. This might take about five minutes.
 
     > [!NOTE]
     > The provisioning process automatically creates a database named **postgres** within the target server.
@@ -60,8 +58,7 @@ To perform this exercise, you need:
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, select **Overview**.
 1. In the **Essentials** section, identify the entries next to the **Server name** and **Admin username** labels and record their values.
 
-    > [!NOTE]
-    >  You'll use these values to connect to the database from your computer and from applications running in Azure. Note that the username includes the **@** symbol followed by the server name you specified in the previous task.
+   You'll use these values to connect to the database from your computer and from applications running in Azure. Note that the username includes the **@** symbol followed by the server name you specified in the previous task.
 
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. If you're prompted to select either **Bash** or **PowerShell**, select **Bash**.
@@ -75,8 +72,7 @@ To perform this exercise, you need:
     psql --host=<server_name> --port=5432 --username=<user_name> --dbname=postgres
     ```
 
-    > [!NOTE]
-    > After you successfully connect, you should be presented with the `postgres=>` prompt.
+    After you successfully connect, you should be presented with the `postgres=>` prompt.
 
 ## Create a sample database and table
 
