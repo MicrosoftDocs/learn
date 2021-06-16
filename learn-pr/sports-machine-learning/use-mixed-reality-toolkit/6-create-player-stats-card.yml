@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.use-mixed-reality-toolkit.create-player-stats-card
+metadata:
+  title: Create player stats card
+  description: Create the player stats card that will display when a player button is pressed.
+  ms.date: 06/15/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create player stats card
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-player-stats-card.md)]

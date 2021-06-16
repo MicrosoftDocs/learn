@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.use-mixed-reality-toolkit.configure-button-pressed-events
+metadata:
+  title: Configure button pressed events
+  description: Configure each button to trigger an action when pressed.
+  ms.date: 06/15/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure button pressed events
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-configure-button-pressed-events.md)]
