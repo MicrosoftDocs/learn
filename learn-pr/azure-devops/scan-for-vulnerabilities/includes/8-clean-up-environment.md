@@ -18,7 +18,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Check code for vulnerabilities** work item from the **Doing** column to the **Done** column.
 
-    ![Screenshot of Azure DevOps Boards showing the code vulnerability card in the Done column.](../media/8-azure-boards-wi4-done.png)
+    :::image type="content" source="../media/8-azure-boards-wi4-done.png" alt-text="Screenshot of Azure DevOps Boards showing the code vulnerability card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
