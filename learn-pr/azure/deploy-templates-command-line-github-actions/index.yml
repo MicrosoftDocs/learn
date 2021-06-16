@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-templates-command-line-github-actions
 metadata:
+  title: Automate the deployment of JSON ARM templates by using GitHub Actions
   description: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions.
   ms.date: 10/15/2020
   author: pierreroman
