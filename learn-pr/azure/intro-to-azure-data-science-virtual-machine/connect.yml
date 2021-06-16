@@ -8,6 +8,7 @@ metadata:
   ms.author: laobri
   ms.topic: interactive-tutorial
   ms.service: machine-learning
+  ms.prod: learning-azure
 title: "Using SSH and RDP to connect"
 durationInMinutes: 6
 content: |
