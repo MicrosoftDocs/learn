@@ -1,9 +1,9 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.build-basic-service.3-exercise-set-up-azure-postgresql
-title: Exercise - Set up Azure Postgresql
+uid: learn.azure.cna-build-basic-service.3-exercise-set-up-azure-postgresql
+title: Exercise - Set up Azure Database for PostgreSQL
 metadata:
-  title: Exercise - Set up Azure Postgresql
-  description: Set up of Azure Postgresql
+  title: Exercise - Set up Azure Database for PostgreSQL
+  description: Provision and configure an Azure Database for PostgreSQL server.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
