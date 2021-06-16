@@ -1,8 +1,8 @@
-You've seen so far how you can use logical operators as part of an assignment. Another common are to use operators is as part of `if/else` constructs.
+So far, you've seen how you can use logical operators as part of an assignment. Another common use for operators is as part of `if/else` constructs.
 
-## If Statement
+## If statement
 
-The if statement will run code in between its blocks if the condition is true. The condition within the `if` can either be a value that contains a truthy value or a conditional statement that evaluates to true. Below is code that shows how you express an `if` clause.
+The if statement runs code in between its blocks if the condition is true. The condition within the `if` clause can either be a value that contains a truthy value or a conditional statement that evaluates to true. The following code shows how you express an `if` clause.
 
 ```javascript
 if (condition){
@@ -12,7 +12,7 @@ if (condition){
 
 ### Compare a value
 
-You can pass a variable or a boolean value to an `if` clause like so:
+You can pass a variable or a Boolean value to an `if` clause like so:
 
 ```javascript
 let isTrue = true;
@@ -27,7 +27,7 @@ if (true) {
 
 ### Use a logical operator
 
-Logical operators are often used to form the condition. What you need is three things, a value, a comparison operator, that shows how you want to compare, and a value to compare to. The syntax looks like the following code:
+Logical operators are often used to form the condition. You need three things: a value, a comparison operator that shows how you want to compare, and a value to compare to. The syntax looks like the following code:
 
 ```json
 if (value operator compareToThisValue) {
@@ -35,7 +35,7 @@ if (value operator compareToThisValue) {
 }
 ```
 
-Here's an example of using the above syntax to compare variables values using a larger-then, `>=` operator:
+Here's an example that uses the preceding syntax to compare variables' values by using a larger-than (`>=`) operator:
 
 ```javascript
 let currentMoney = 1000;
@@ -48,11 +48,11 @@ if (currentMoney >= laptopPrice){
 ```
 
 > [!TIP]
-> As a developer you need to get used to reading code and be able to tell how it will execute. Take a short break here and try to figure out if the code within the `if` clause will execute or not?
+> As a developer, you need to get used to reading code and understanding how it will execute. Take a short break here, and try to figure out if the code within the `if` clause will execute or not.
 
-Because the value of `currentMoney` is lower than the value of `laptopPrice` the statement within the `if` will evaluate to false. The statement within the `if` clause will not run.
+Because the value of `currentMoney` is lower than the value of `laptopPrice`, the statement within the `if` clause will evaluate to false. The statement within the `if` clause won't run.
 
-## If..Else Statement
+## If...else statement
 
 The `else` statement will run the code in between its blocks when the `if` condition evaluates to false. Using `else` is optional.
 
@@ -70,4 +70,4 @@ if (currentMoney >= laptopPrice) {
 ```
 
 > [!TIP]
-> Test your understanding of the code above by running it in a browser console. Change the values of the currentMoney and laptopPrice variables to change the returned `console.log()`.
+> Test your understanding of the preceding code by running it in a browser console. Change the values of the `currentMoney` and `laptopPrice` variables to change the returned `console.log()`.

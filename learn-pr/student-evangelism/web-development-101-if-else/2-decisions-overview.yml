@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101-if-else.decisions-overview
 metadata:
-  title: Making decisions with JavaScript
+  title: Make decisions with JavaScript
   description: Learn the syntax for controlling data flow in JavaScript and its
     significance when used with Boolean data types.
   ms.date: 06/04/2021
@@ -9,44 +9,44 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Making decisions with JavaScript
+title: Make decisions with JavaScript
 durationInMinutes: 2
 content: |
   [!include[](includes/2-decisions-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: The operator === is called
+    - content: The operator === is called.
       choices:
         - content: Equality
           isCorrect: true
-          explanation: Correct! This operator indicates equality.
+          explanation: Correct. This operator indicates equality.
         - content: Strict equality
           isCorrect: false
-          explanation: Incorrect- this operator indicates equality, but it is not strict.
+          explanation: Incorrect. This operator indicates equality, but it isn't strict.
         - content: Assignment
           isCorrect: false
-          explanation: Incorrect- this operator does not mean assignment.
+          explanation: Incorrect. This operator doesn't mean assignment.
     - content: A comparison in JavaScript returns what type?
       choices:
-        - content: boolean
+        - content: Boolean
           isCorrect: true
-          explanation: Correct! A comparison in JavaScript uses true/false.
-        - content: "null"
+          explanation: Correct. A comparison in JavaScript uses true/false.
+        - content: "Null"
           isCorrect: false
-          explanation: Incorrect- a comparison would not return null.
-        - content: string
+          explanation: Incorrect. A comparison wouldn't return null.
+        - content: String
           isCorrect: false
-          explanation: Incorrect- a string type will not be returned for a comparison.
+          explanation: Incorrect. A string type won't be returned for a comparison.
     - content: "The ! symbol in JavaScript means:"
       choices:
         - content: Logical Not
           isCorrect: true
-          explanation: Correct! A logical not returns the opposite value of a Boolean
+          explanation: Correct. A logical not returns the opposite value of a Boolean
             expression.
         - content: Important
           isCorrect: false
-          explanation: Incorrect- this is not the meaning of the symbol.
+          explanation: Incorrect. This isn't the meaning of the symbol.
         - content: Equals
           isCorrect: false
-          explanation: Incorrect- this is not the meaning of the symbol.
+          explanation: Incorrect. This isn't the meaning of the symbol.
