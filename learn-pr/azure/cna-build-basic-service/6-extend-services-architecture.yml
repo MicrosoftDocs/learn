@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-basic-service.6-extend-services-architecture
-title: Knowledge check
+uid: learn.azure.cna-build-basic-service.6-extend-services-architecture
+title: Extend the services architecture
 metadata:
-  title: Extend Services Architecture
-  description: Extend Services Architecture
+  title: Extend the services architecture
+  description: Define how services work together and the role of additional services.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
