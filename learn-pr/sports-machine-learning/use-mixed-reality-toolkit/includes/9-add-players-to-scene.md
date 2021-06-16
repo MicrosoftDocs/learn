@@ -2,9 +2,6 @@ Now that the **PlayerContainer** object is configured with the appropriate butto
 
 Rather than duplicate a **PlayerContainer** object for each player, you can create an instance of the object (or instantiate) for each player when the scene starts. This requires script logic that creates (or spawns) a **PlayerContainer** object for all players listed in the **players.json** file. Furthermore, script logic is needed to relate the JSON data to the text and sprite objects within the **PlayerContainer** object. Such scripts have been provided for you in the project folder.
 
-> [!TIP]
-> This module uses the [starter project found on GitHub](https://github.com/microsoft/space-jam-a-new-legacy-mrtk-template?azure-portal=true). If you completed the third module in this *Space Jam: A New Legacy* inspired learning path, you might also have your own players.json file, which you can also use.
-
 ## Assign objects to JSON data
 
 For each text and sprite object created in the **PlayerContainer** object, a link must be made to it's corresponding value in the **players.json** file. The **Player.cs** script helps establish the connection.
