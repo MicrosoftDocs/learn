@@ -26,7 +26,7 @@ By the end of this module, you'll be able to create Bicep templates by using con
 
 You should be familiar with:
 
-- Creating and deploying basic Bicep templates.
+- Creating and deploying basic Bicep templates, including modules.
 - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
