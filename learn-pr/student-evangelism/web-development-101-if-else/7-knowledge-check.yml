@@ -14,7 +14,7 @@ content: Select an answer for each of the following questions.
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What would the following code return?: '1' == 1"
+    - content: "What would the following code return: `'1' == 1`?"
       choices:
         - content: "true"
           isCorrect: true
@@ -27,7 +27,7 @@ quiz:
         - content: "null"
           isCorrect: false
           explanation: Incorrect. This code would return a true or false.
-    - content: "What would the following code return?: '1' === 1"
+    - content: "What would the following code return: `'1' === 1`?"
       choices:
         - content: "true"
           isCorrect: false
