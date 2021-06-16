@@ -8,6 +8,7 @@ metadata:
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: When to use Azure DevTest Labs
 durationInMinutes: 10
 content: |

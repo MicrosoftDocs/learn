@@ -9,6 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create no-code predictive models with Azure Machine Learning
+video:
+  title: "Create no-code predictive models"
+  url: https://www.microsoft.com/videoplayer/embed/RWxHhp
 prerequisites: |
   Ability to navigate the Azure portal
 summary: |

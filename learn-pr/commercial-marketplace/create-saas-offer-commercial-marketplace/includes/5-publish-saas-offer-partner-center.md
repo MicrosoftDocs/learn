@@ -4,7 +4,7 @@ The publishing process is broken down into several steps, each of which requires
 
 ### Offer setup
 
-After clicking “+ New offer” on the overview page of the commercial marketplace section of Partner Center, you’ll be taken to the offer setup page. This step is where you'll indicate whether you want to sell through Microsoft. It's also where you'll configure your CRM or HTTP endpoint to receive [customer leads](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
+After clicking “+ New offer” on the overview page of the commercial marketplace section of Partner Center, you’ll be taken to the offer setup page. This step is where you'll indicate whether you want to sell through Microsoft. It's also where you'll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
 
 The ‘sell through Microsoft’ selection you make in this step determines the information required throughout the rest of the publishing process.
 
@@ -17,7 +17,7 @@ When you get to the properties tab of the publishing process, you’ll be asked 
 > [!Important]
 > The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT & developer applications are published to Azure Marketplace.
 
-The properties tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/standard-contract).
+The properties tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
 
 ### Providing information for your offer listing
 
@@ -25,11 +25,11 @@ The properties tab is also where you provide the legal terms and conditions that
 
 In the offer listing tab, you’ll provide the information that will be displayed to customers in the commercial marketplace including descriptions of your SaaS application, getting started instructions, links to useful product information, and support & engineering contacts for customers. This page is also where you provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Microsoft AppSource or Azure Marketplace.
 
-For tips to help you complete this step, reference our documentation on [offer listing best practices](https://docs.microsoft.com/azure/marketplace/gtm-offer-listing-best-practices) and [marketing best practices](https://docs.microsoft.com/azure/marketplace/gtm-marketing-best-practices).
+For tips to help you complete this step, reference our documentation on [offer listing best practices](/azure/marketplace/gtm-offer-listing-best-practices) and [marketing best practices](/azure/marketplace/gtm-marketing-best-practices).
 
 ### Adding a preview audience
 
-When you publish your offer, you’ll be able to identify a preview audience that can access the offer and review it before it’s live in the commercial marketplace. For more information, review our [documentation on adding a preview audience for your SaaS offer](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer-preview).
+When you publish your offer, you’ll be able to identify a preview audience that can access the offer and review it before it’s live in the commercial marketplace. For more information, review our [documentation on adding a preview audience for your SaaS offer](/azure/marketplace/create-new-saas-offer-preview).
 
 ### Completing your offer’s technical configuration
 
@@ -53,6 +53,6 @@ You’ll choose which markets your SaaS offer will be available in from a list o
 
 You finish this page by telling us whether or not you want to offer customers a one-month free trial and indicating whether this plan is public or private. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers that you choose.
 
-For more detailed guidance on creating plans for your SaaS offer, reference our [documentation on SaaS offer plans](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer-plans).
+For more detailed guidance on creating plans for your SaaS offer, reference our [documentation on SaaS offer plans](/azure/marketplace/create-new-saas-offer-plans).
 > [!TIP]
 > To publish a private plan, you’ll need to know the Azure tenant IDs of the customer that wants to use your software.

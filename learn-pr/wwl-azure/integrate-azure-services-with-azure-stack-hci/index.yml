@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-services-with-azure-stack-hci
 metadata:
   title: Integrate Azure services with Azure Stack HCI
   description: "Integrate Azure services with Azure Stack HCI"
-  ms.date: 05/18/2021
+  ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Familiarity with the concept of virtualization
   - Familiarity with Azure services, such as Azure Backup and Azure Site Recovery
   - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/integrate-azure-services-with-azure-stack-hci.svg
 levels:
 - intermediate
 roles:

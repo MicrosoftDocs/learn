@@ -32,7 +32,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     using System.IO;
     using System.Collections.Generic;
     using Newtonsoft.Json; 
-      ```
+    ```
 
 ## Create a method to calculate sales totals
 

@@ -28,8 +28,8 @@ Logic Apps simplifies how you design and build scalable solutions for app integr
 
 You can learn more about Event Grid and Logic Apps:
 
-* [Azure Event Grid documentation](https://docs.microsoft.com/azure/event-grid/)
-* [Azure Logic Apps documentation](https://docs.microsoft.com/azure/logic-apps/)
+* [Azure Event Grid documentation](/azure/event-grid/)
+* [Azure Logic Apps documentation](/azure/logic-apps/)
 
 ## Next steps
 

@@ -1,20 +1,20 @@
-Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate the user during the sign-on process. Once authenticated, Azure AD builds an access token to authorize the user and determine what resources they can access and what they can do with those resources.
+Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate you during the sign-in process. Once authenticated, Azure AD builds an access token to authorize you, and determine what resources you can access, and what you can do with those resources.
 
-You use the **Azure Active Directory** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time - but you can use the **Directory + Subscription** panel to switch directories. The dashboard also has a **Switch directory** button in the toolbar which makes it easy to switch to another available directory.
+You use the **Azure Active Directory** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time - but you can use the **Directory + Subscription** pane to switch directories. The dashboard also has a **Switch directory** button in the toolbar which makes it easy to switch to another available directory.
 
 ## View users
 
-To view the Azure AD users, select the **Users** entry under the **Manage** section. The **All Users** view appears. Take a minute to access the portal and view your users. Notice the **User type** and **Identity issuer** columns, as the following figure depicts.
+To view the Azure AD users, in the left menu pane, under **Manage**, select **Users**. The **All Users** pane appears. Take a minute to access the portal and view your users. Notice the **User type** and **Identity issuer** columns, as shown in the following screenshot.
 
 ![Screenshot that depicts the All users pane, with the **User type** and **Identity issuer** columns noted.](../media/M1-AAD-Users.png)
 
 Typically, Azure AD defines users in three ways:
 
-1. **Cloud identities** - These users exist only in Azure AD. Examples are administrator accounts and users that you manage yourself. Their source is **Azure Active Directory** or **External Azure Active Directory** if the user is defined in another Azure AD instance but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they are deleted.
+- **Cloud identities** - These users exist only in Azure AD. Examples are administrator accounts and users that you manage yourself. Their source is **Azure Active Directory** or **External Azure Active Directory** if the user is defined in another Azure AD instance but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they are deleted.
 
-1. **Directory-synchronized identities** - These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Azure AD Connect** brings these users in to Azure. Their source is **Windows Server AD**.
+- **Directory-synchronized identities** - These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Azure AD Connect** brings these users in to Azure. Their source is **Windows Server AD**.
 
-1. **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts, such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
+- **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts, such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
 
 ## Add users
 
@@ -33,7 +33,7 @@ Azure AD Connect is a separate service that allows you to synchronize a traditio
 
 You can manually add new users through the Azure portal. This is the easiest way to add a small set of users. You need to be in the **User Administrator** role to perform this function.
 
-1. To add a new user with the Azure portal, select the the **+ New user** button in the toolbar.
+1. To add a new user with the Azure portal, in the top menu bar, select **New user**.
 
     ![Screenshot showing the New User button highlighted in the Azure AD portal](../media/2-new-user-all-users-pane.png)
 
@@ -51,7 +51,7 @@ You can manually add new users through the Azure portal. This is the easiest way
 
 ### Use the command line
 
-If you have a lot of users to add, a better option is to use a command-line tool. You can use the `New-AzureADUser` Azure PowerShell command to add cloud-based users.
+If you have a lot of users to add, a better option is to use a command-line tool. You can run the `New-AzureADUser` Azure PowerShell command to add cloud-based users.
 
 ```powershell
 # Create a password object
@@ -86,13 +86,13 @@ Command-line tools allow you to add users in bulk through scripting. The most co
 
 If you're planning to use a CSV, here are some things to think about:
 
-* **Naming conventions**. Establish or implement a naming convention for usernames, display names, and aliases. For example, a username might consist of the last name, followed by a period (.), followed by the first name—for example, Smith.John@contoso.com.
+- **Naming conventions**. Establish or implement a naming convention for usernames, display names, and aliases. For example, a username might consist of the last name, followed by a period (.), followed by the first name—for example, Smith.John@contoso.com.
 
-* **Passwords**. Implement a convention for the initial password of a newly created user. Determine how new users will receive their passwords in a security-enhanced way. A commonly used method is generating a random password and then emailing it to the new user or their manager.
+- **Passwords**. Implement a convention for the initial password of a newly created user. Determine how new users will receive their passwords in a security-enhanced way. A commonly used method is generating a random password and then emailing it to the new user or their manager.
 
 To use a CSV with Azure PowerShell:
 
-1. Use `Connect-AzureAD` to create an Azure PowerShell connection to your directory. Connect with an admin account that has privileges on your directory.
+1. Run the `Connect-AzureAD` command to create an Azure PowerShell connection to your directory. Connect with an admin account that has privileges on your directory.
 
 1. Create new password profiles for the new users. The passwords for the new users need to conform to the password complexity rules you have set for your directory.
 
@@ -100,8 +100,8 @@ To use a CSV with Azure PowerShell:
 
 1. Loop through the users in the file, constructing the user parameters needed for each user. Example parameters are User Principal Name, Display Name, Given Name, Department, and Job Title.
 
-1. Use `New-AzureADUser` to create each user. Be sure to enable each account.
+1. Run the `New-AzureADUser` command to create each user. Be sure to enable each account.
 
 ### Other options
 
-You can also add users to Azure AD programmatically using the Azure AD Graph API, or through the Microsoft 365 Admin Center and the Microsoft Intune Admin console if you are sharing the same directory.
+You can also add users to Azure AD programmatically using the Azure AD Graph API, or through the Microsoft 365 Admin Center, and the Microsoft Intune Admin console if you are sharing the same directory.

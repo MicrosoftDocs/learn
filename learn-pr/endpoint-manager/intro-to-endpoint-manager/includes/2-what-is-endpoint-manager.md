@@ -19,4 +19,4 @@ The Microsoft Endpoint Manager console helps keep your organization's cloud and 
 
 ![Diagram of Microsoft Endpoint Manager](../media/intro-to-endpoint-manager-01.png)
 
-To quickly step through the areas of Microsoft Endpoint Manager, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).
+To quickly step through the areas of Microsoft Endpoint Manager, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).

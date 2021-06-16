@@ -7,7 +7,7 @@ By default, the following users can view and manage reservations:
 - The person who buys a reservation and the account administrator of the billing subscription used to buy the reservation are added to the reservation order. To view reservations that you have explicit access to in the Azure portal, navigate to **Reservations**.
 - Enterprise Agreement (EA) and Microsoft Customer Agreement billing administrators. Billing access is granted by your role. To view and manage reservations in the Azure portal, navigate to **Cost Management + Billing** > **Reservations Transactions**.
 
-You can also manage reservation purchases programmatically. For more information, see [Get reservations and utilization using APIs, PowerShell, CLI](https://docs.microsoft.com/azure/cost-management-billing/reservations/view-reservations#get-reservations-and-utilization-using-apis-powershell-cli).
+You can also manage reservation purchases programmatically. For more information, see [Get reservations and utilization using APIs, PowerShell, CLI](/azure/cost-management-billing/reservations/view-reservations#get-reservations-and-utilization-using-apis-powershell-cli).
 
 ## Assign permissions
 
@@ -25,4 +25,4 @@ Changing the scope doesn’t impact the reservation’s end date, and no new bil
 
 ## Split or merge existing reservations
 
-Although not commonly done, splitting a reservation enables you to distribute instances for granular scope management. You can split a reservation into two with PowerShell, CLI, or through the API. For more information, see [Split a single reservation into two reservations](https://docs.microsoft.com/azure/cost-management-billing/reservations/manage-reserved-vm-instance#split-a-single-reservation-into-two-reservations).
+Although not commonly done, splitting a reservation enables you to distribute instances for granular scope management. You can split a reservation into two with PowerShell, CLI, or through the API. For more information, see [Split a single reservation into two reservations](/azure/cost-management-billing/reservations/manage-reserved-vm-instance#split-a-single-reservation-into-two-reservations).

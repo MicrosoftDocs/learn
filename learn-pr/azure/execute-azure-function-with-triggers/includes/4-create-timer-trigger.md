@@ -1,20 +1,22 @@
-In this unit, we create an Azure function app that's invoked every 20 seconds using a timer trigger.
+In this unit, we create an Azure Function app that's invoked every 20 seconds using a timer trigger.
 
-## Create an Azure function app
+## Create an Azure Function app
 
 Let’s start by creating an Azure Function app in the portal.
 
 ::: zone pivot="csharp"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**.
+1. Under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
-    The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource. The **Create Function App** pane appears.
+
+1. On the **Create a resource** page under **Categories**, select **Compute**, and then in the **Popular offers**, select **Function App**. Optionally, you can enter **Function App** in the  search bar to locate and select **Enter**.
+
+1. On the **Function App** page, select **Create** to open the **Create Function App** page.
 
     ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
 
@@ -23,16 +25,16 @@ Let’s start by creating an Azure Function app in the portal.
     | Setting  | Value  |
     |---|---|
     | **Project Details** |
-    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
-    | Resource Group | Select '<rgn>[Sandbox resource group name]</rgn>' resource group from the dropdown list |
+    | Subscription | Select the **Concierge Subscription** for this exercise  |
+    | Resource Group | Select '<rgn>[Sandbox resource group name]</rgn>' resource group from the dropdown list. |
     | **Instance Details** |
-    | Function App name | *\<your-webapp-name\>* |
+    | Function App name | Enter a globally unique name for your function app.  |
     | Publish | Code |
     | Runtime stack | .NET |
     | Version | 3.1 |
-    | Region | select a location close to you |
+    | Region | Select a location close to you. |
 
-1. Select **Next : Hosting**. Enter the values for each setting.
+1. Select **Next** and on the**Hosting** tab, enter the values for each setting as specified in the table below.
 
     | Setting  | Value  |
     |---|---|
@@ -43,7 +45,9 @@ Let’s start by creating an Azure Function app in the portal.
     | **Plan** |
     | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
-1. Select **Review + create** > **Create**. After the function app is deployed, select **Go to resource**. Your *Function App* pane appears.
+1. Select **Review + create** > **Create**. Deployment may take a while to complete.
+
+1. After the function app is deployed, select **Go to resource**. Your *Function App* pane appears.
 
 ## Create a timer-triggered function
 

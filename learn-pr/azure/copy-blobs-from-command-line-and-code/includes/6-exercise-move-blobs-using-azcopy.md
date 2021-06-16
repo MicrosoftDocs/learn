@@ -20,9 +20,9 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 3. Select **All resources**, and select your destination (cool) storage account.
 
-4. On the storage account page, under **Settings**, select **Shared access signature**.
+4. On the storage account page, under **Security + networking**, select **Shared access signature**.
 
-5. On the shared access signature page, check **Container** under the **Allowed resource types** section.
+5. On the shared access signature page, check **Container** and **Objects** under the **Allowed resource types** section.
 
 6. With the allowed resource type checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
 

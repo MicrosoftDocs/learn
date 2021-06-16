@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
-This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
 ## Create a repository
 
@@ -94,7 +94,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 The `api` folder contains the Azure Functions project with the HTTP endpoints for the web app. Start by running the API locally by following these steps:
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+> Please be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
@@ -282,7 +282,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
    :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Select Subscription":::
 
-1. Enter **my-static-web-app-and-authn**, and press <kbd>Enter</kbd>.
+1. Enter **my-static-web-app-authn**, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web Apps":::
 
@@ -290,99 +290,61 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
    :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web Apps - Custom":::
 
-1. Select the **Manually enter location** option, and press <kbd>Enter</kbd>
-
-   :::image type="content" source="../media/extension-manually-enter-location-of-app-option.png" alt-text="Create Static Web Apps - manually enter application location":::
-
 ::: zone pivot="angular"
 
-8. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
+8. Enter **dist/angular-app** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
+
 ::: zone-end
 
 ::: zone pivot="react"
 
-8. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
+8. Enter **build** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
+
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-8. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
+8. Enter **public** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
+
 ::: zone-end
 
 ::: zone pivot="vue"
 
-8. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
+7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
-::: zone-end
+8. Enter **dist** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-9. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this module.
-
-   Select **Skip for now** and press **Enter**.
-
-   :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
-
-::: zone pivot="angular"
-
-10. Enter **dist/angular-app** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
-
-    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
+   :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
 ::: zone-end
 
-::: zone pivot="react"
+After the app is created, a confirmation notification appears in Visual Studio Code.
 
-10. Enter **build** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+:::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config":::
 
-    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
+9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-authn**, and select **Open in Portal** to view app in the Azure portal.
 
-::: zone-end
-
-::: zone pivot="svelte"
-
-10. Enter **public** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
-
-    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
-
-::: zone-end
-
-::: zone pivot="vue"
-
-10. Enter **dist** as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
-
-    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
-
-::: zone-end
-
-11. Select a location nearest you, and press <kbd>Enter</kbd>.
-
-    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
-
-12. Select **Select Existing** to select the resource group that has been created for you in the Azure sandbox.
-
-    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
-
-13. Select the resource group named <rgn>[Sandbox resource group]</rgn>.
-
-    :::image type="content" source="../media/extension-select-resource-group.png" alt-text="Select resource group":::
-
-    After the app is created, a confirmation notification appears in Visual Studio Code.
-
-    :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
-
-14. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-and-authn**, and select **Open in Portal** to view app in the Azure portal.
-
-    :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
+   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
 > [!NOTE]
 > Your repository is a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
@@ -409,9 +371,9 @@ From here, you can observe the progress of your app as it builds.
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
-In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-authn** and select **Browse Site** to view app in your browser.
+In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-authn** and select **Browse Site** to view app in your browser.
 
-   :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
+:::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 Your app should now display a list of products.
 

@@ -124,6 +124,11 @@ Wait a few minutes for this rule to activate.
     If Cloud Shell times out, select **Reconnect**.
 
 1. When you're prompted, enter **yes** to connect to the VM.
+1. Run the following command to update the list of available updates.
+
+    ```bash
+    sudo apt-get update
+    ```
 
 1. Run the following command to install the stress tool on the VM.
 

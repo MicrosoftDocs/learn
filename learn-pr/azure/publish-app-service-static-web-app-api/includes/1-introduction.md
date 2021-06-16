@@ -22,9 +22,6 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
 
-> [!NOTE]
-> Azure Static Web Apps is currently in preview.
-
 When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions or Azure DevOps workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the workflow automatically builds and deploys your app and its API to Azure.
 
 Azure hosts and serves your web app. Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
@@ -36,7 +33,7 @@ Azure Static Web Apps is ideal for serving purely static content, but it also ha
 In this module's exercises, you'll deploy an app using your preferred web framework.
 
 > [!NOTE]
-> You'll be deploying an app, without an API in this module. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> You'll be deploying an app, without an API in this module. See the Next Steps section in the final unit for information about the next module, where you'll deploy an API alongside your app.
 
 ### Key features
 
@@ -48,11 +45,11 @@ In this module's exercises, you'll deploy an app using your preferred web framew
 
 ## Learning objectives
 
-In this tutorial, you'll create, modify, and deploy a web app to Azure Static Web Apps.
+In this module, you'll create, modify, and deploy a web app to Azure Static Web Apps.
 
 ### Choose your own path
 
-This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
+This module provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
 
 The starter code includes the four apps that you'll use.
 
