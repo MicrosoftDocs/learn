@@ -7889,6 +7889,11 @@
       "source_path": "learn-pr/student-evangelism/intro-to-python/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/5-describe-cloud-adoption-framework.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/",
+      "redirect_document_id": true
     }  
   ]
 }
