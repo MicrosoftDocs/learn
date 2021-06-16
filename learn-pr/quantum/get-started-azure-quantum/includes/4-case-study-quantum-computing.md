@@ -2,7 +2,7 @@ One of the services that Azure Quantum offers is a solution for quantum computin
 
 Quantum mechanics is the underlying "operating system" of our universe. It describes how the fundamental building blocks of nature behave. Nature's behaviors, such as chemical reactions, biological reactions, and material formations, often involve many-body quantum interactions. To understand these behaviors, we rely on the ability to simulate them with state-of-the-art computation.
 
-Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
+Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
 
 ![Figure of Azure Quantum computing with Q D K.](../media/4-azure-quantum-computing-with-qdk.png)
 

@@ -35,7 +35,7 @@ Find details about the extension at [https://marketplace.visualstudio.com/items?
 
 Azure Functions Core Tools lets you develop and test your functions on your local computer from the command prompt or terminal.
 
-The installation instructions are platform-specific. Follow the instructions for your platform at  [https://docs.microsoft.com/azure/azure-functions/functions-run-local](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=learnlive-video-learn)
+The installation instructions are platform-specific. Follow the instructions for your platform at  [https://docs.microsoft.com/azure/azure-functions/functions-run-local](/azure/azure-functions/functions-run-local?WT.mc_id=learnlive-video-learn)
 
 ### Components required to run the client app
 

@@ -32,14 +32,14 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=DeployAzureFunction&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=DeployAzureFunction&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Azure Functions*.
 
-    ![Creating a project through Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create the project.":::
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
 
@@ -71,14 +71,14 @@ To set up the work item:
 
 1. From Azure DevOps, navigate to **Boards**. Then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Refactor leaderboard API as an Azure Function** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
@@ -98,7 +98,7 @@ In this module, you use the Azure CLI to bring up an App Service instance. You c
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -265,7 +265,7 @@ To add the variables:
 
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines showing the Library menu option](../media/3-pipelines-library.png)
+    :::image type="content" source="../media/3-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu option.":::
 
 1. Select **+ Variable group**.
 
@@ -286,7 +286,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
 
 ## Create a service connection
 

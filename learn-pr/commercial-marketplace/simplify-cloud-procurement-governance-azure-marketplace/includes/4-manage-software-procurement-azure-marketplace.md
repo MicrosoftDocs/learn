@@ -30,12 +30,12 @@ Your organization might have policies that place guidelines on purchasing Azure 
 
 - **Location**: only letting resources be deployed from specific global regions
 
-You can use Azure policy to [manage virtual machine deployment](https://docs.microsoft.com/azure/virtual-machines/windows/policy#images-for-virtual-machines) so only approved virtual machine images from the Azure Marketplace are deployed
+You can use Azure policy to [manage virtual machine deployment](/azure/virtual-machines/windows/policy#images-for-virtual-machines) so only approved virtual machine images from the Azure Marketplace are deployed
 into your Azure environment.
 
 ## Cost management
 
-As you purchase products from Azure Marketplace, you want to get insights that will help you manage costs. Azure Cost Management is a free tool that you can use can be used to view information on the products you've purchased. You can use Cost Management to see details of what services you're spending money on and how those costs track against the budgets that you’ve set. In addition to setting budgets on your subscription, you can schedule reports and analyze subscription costs. You can learn more about Azure Cost Management by completing the Microsoft Learn module on [Analyze costs and create budgets with Azure Cost Management.](https://docs.microsoft.com/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+As you purchase products from Azure Marketplace, you want to get insights that will help you manage costs. Azure Cost Management is a free tool that you can use can be used to view information on the products you've purchased. You can use Cost Management to see details of what services you're spending money on and how those costs track against the budgets that you’ve set. In addition to setting budgets on your subscription, you can schedule reports and analyze subscription costs. You can learn more about Azure Cost Management by completing the Microsoft Learn module on [Analyze costs and create budgets with Azure Cost Management.](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
 
 You can view your Azure Marketplace charges and invoices on the cost analysis tool under Azure Cost Management.
 

@@ -250,7 +250,7 @@ The Ansible extension isn't installed by default in Visual Studio Code. Let's st
 1. In Visual Studio Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** text box, enter *Ansible*, and then select the **Ansible** extension.
 
-    ![Screenshot of Visual Studio Code Extensions, with Ansible highlighted](../media/8-add-ansible-extension.png)
+    :::image type="content" source="../media/8-add-ansible-extension.png" alt-text="Screenshot of Visual Studio Code Extensions, with Ansible highlighted.":::
 
 1. Select **Install**.
 1. Select **Reload** to activate the extension.
@@ -281,7 +281,7 @@ Before you run the extension, there are a few additional options that you need t
 
     Your settings resemble this:
 
-    ![Screenshot of Visual Studio Code showing user settings for Ansible](../media/8-vs-code-user-settings.png)
+    :::image type="content" source="../media/8-vs-code-user-settings.png" alt-text="Screenshot of Visual Studio Code showing user settings for Ansible.":::
 
     Visual Studio Code automatically saves your settings.
 

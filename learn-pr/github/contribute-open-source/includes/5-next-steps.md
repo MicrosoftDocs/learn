@@ -14,7 +14,7 @@ Code, and solutions, can sometimes be reused across projects. Have you solved a 
 
 - Publish as a stand-alone library (dependency).
 - Mirror the project with your added functionality.
-- [Create a GitHub Action](https://docs.microsoft.com/learn/modules/github-actions-automate-tasks/) for others to include in their workflow.
+- [Create a GitHub Action](/learn/modules/github-actions-automate-tasks/) for others to include in their workflow.
 
 The first option is probably the best course of action when your bit of code is like a plug-in that could be used across web development projects. Mirroring or forking a project with the addition of your code is useful when you're solving a narrow use case for a small subset of customers, or even a single customer. Consider that you'll need to keep your fork up to date with the upstream repository if you want to benefit from, for instance, security patches.
 

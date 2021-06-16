@@ -23,7 +23,7 @@ If you are using another web framework, there are some great techniques for doin
 
 ## Always use parameterized queries
 
-SQL databases are commonly used to store data; for example - your application could store user profile information in a database. Yous should never create inline SQL or other database queries in your code using raw user input and send it directly to the database; this behavior is a recipe for disaster, as we saw above.
+SQL databases are commonly used to store data; for example - your application could store user profile information in a database. You should never create inline SQL or other database queries in your code using raw user input and send it directly to the database; this behavior is a recipe for disaster, as we saw above.
 
 For example - **do not** create code like the following inline SQL example:
 
