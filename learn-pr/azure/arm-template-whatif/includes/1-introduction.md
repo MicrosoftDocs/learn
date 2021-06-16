@@ -8,8 +8,7 @@ Suppose you help to manage the Azure environment at a toy company. One of your c
 
 In this module, you gain an understanding of the what-if operation for Azure Resource Manager. You also learn about the modes that you can use for your deployments to Azure.
 
-> [!NOTE]
-> Bicep is a new language for defining your Azure resources. It has a simpler authoring experience than JSON, along with other features that help improve the quality of your infrastructure as code. We recommend that anyone new to infrastructure as code on Azure use Bicep instead of JSON. To learn about Bicep, see [Deploy and manage resources in Azure by using Bicep](/learn/paths/bicep-deploy/).
+[!include[](../../includes/bicep-migrate-arm-templates.md)]
 
 ## What is the main goal?
 
