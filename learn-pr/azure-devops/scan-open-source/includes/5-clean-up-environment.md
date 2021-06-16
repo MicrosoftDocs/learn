@@ -16,7 +16,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Check open source code for vulnerabilities and licensing terms** work item from the **Doing** to the **Done** column.
 
-    ![Screenshot of Azure Boards showing the vulnerability check card in the Done column.](../media/5-azure-boards-wi5-done.png)
+    :::image type="content" source="../media/5-azure-boards-wi5-done.png" alt-text="Screenshot of Azure Boards showing the vulnerability check card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
