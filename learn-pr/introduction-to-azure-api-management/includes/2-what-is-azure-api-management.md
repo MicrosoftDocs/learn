@@ -21,7 +21,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 - Administration interface
 - Developer portal
 
-:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management include the administration interface, gateway, and developer portal.":::
+:::image type="content" source="../media/2-what-is-azure-api-management-overview.png" alt-text="The main components of Azure API Management include the administration interface, gateway, and developer portal." lightbox="../media/2-what-is-azure-api-management-overview.png":::
 
 > [!IMPORTANT]
 > Azure API Management does *not* host your actual APIs; your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to *decouple* your APIs by letting you set API policies and other management options in Azure, while leaving your deployed backend APIs untouched.
@@ -96,4 +96,4 @@ Azure API Management solves the API policy problem by enabling you to set polici
 - **outbound**: The policies in this section are applied to each outgoing API response.
 - **on-error**: The policies in this section are applied when an API request or response generates an error.
 
-:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound and backend policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer.":::
+:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound and backend policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::
