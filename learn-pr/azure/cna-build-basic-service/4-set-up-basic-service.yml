@@ -1,9 +1,9 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.build-basic-service.4-set-up-basic-service
-title: Describe how to process IoT telemetry
+uid: learn.azure.cna-build-basic-service.4-set-up-basic-service
+title: Set up a basic service
 metadata:
-  title: Describe how to process IoT telemetry
-  description: Description of how to process IoT telemetry
+  title: Set up a basic service
+  description: Describe how to set up a basic service.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
