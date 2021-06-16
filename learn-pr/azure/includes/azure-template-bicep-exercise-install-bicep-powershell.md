@@ -5,17 +5,9 @@ ms.topic: include
 ms.date: 06/10/2021
 ms.author: jodowns
 ---
-### Check the version of Azure PowerShell
+### Upgrade Azure PowerShell
 
-From the terminal in Visual Studio code, run the following command to check the version of Azure PowerShell that you've installed:
-
-```azurepowershell
-(Get-InstalledModule Az).Version
-```
-
-If the version number is `5.6.0` or later, go to the next section ("Sign in to Azure by using Azure PowerShell").
-
-Otherwise, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
+Make sure you're running the latest version of Azure PowerShell. If you're not, or if you're not sure, [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
 
 ### Install the Bicep CLI
 

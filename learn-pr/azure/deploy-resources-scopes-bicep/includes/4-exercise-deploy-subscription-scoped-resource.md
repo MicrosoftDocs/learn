@@ -79,21 +79,13 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!include[](../../includes/azure-template-exercise-nosandbox-intro-cli.md)]
-
-[!include[](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
-
-[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-cli.md)]
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-[!include[](../../includes/azure-template-exercise-nosandbox-intro-powershell.md)]
-
-[!include[](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
-
-[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-powershell.md)]
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
 ::: zone-end
 
