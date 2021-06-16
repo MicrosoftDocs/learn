@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Azure Machine Learning can analyze and extract data from what type of files?'
+  - content: 'Which of these features does Azure ML Studio Designer have?'
     choices:
-    - content: "PowerPoint files and MP4 videos"
+    - content: "Network Security controls and overview"
       isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning can analyze some types of documents, but not PowerPoint files or videos."
-    - content: "JPG and PNG images, and PDF and TIFF documents."
+      explanation: "Incorrect. Network security can be managed through the Azure Portal and Workspace."
+    - content: "Visual canvas with drag and drop controls."
       isCorrect: true
-      explanation: "Correct. Azure Machine Learning can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards."
-    - content: "CSV files"
+      explanation: "Correct. Azure ML Designer is found within the Azure ML Studio and is suited for building ML pipelines by dragging and dropping modules to create workflows or tasks execute in a particular order."
+    - content: "Model storage and versioning"
       isCorrect: false
-      explanation: "Incorrect. CSV documents aren't able to be parsed by Azure Machine Learning, but images and documents can be."
-  - content: 'What type of data does the prebuilt Invoice Model return?'
+      explanation: "Incorrect. Model storage and versioning can be accessed via the Workspace and Notebook feature."
+  - content: 'Which of the following descriptions accurately describes a Pipeline?'
     choices:
-    - content: "CSV data, with the extracted information separated by commas."
+    - content: "A coding environment for deploying and monitoring models"
       isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning uses standard JSON formatting that programming languages can readily use."
-    - content: "Image data, with the extracted information highlighted by bounding boxes"
+      explanation: "Incorrect. These can be found within a typical deployment pipeline but are not a description of a pipeline."
+    - content: "A top-level resource for managing all assets you create when you use Azure Machine Learning"
       isCorrect: false
-      explanation: "Incorrect. While Azure Machine Learning can return bounding box information, the data is returned in a format that programming languages can readily use."
-    - content: "JSON formatting"
+      explanation: "Incorrect. This describes a Workspace which is where you manage all artifacts used to train and deploy models."
+    - content: "A workflow of a complete machine learning process or task"
       isCorrect: true
-      explanation: "Correct. As programming languages can readily use JSON formatting, Azure Machine Learning returns the extracted information in standard JSON formatting so the data is easier to work with."
-  - content: 'What is a benefit of creating a custom model?'
+      explanation: "Correct. Pipelines can encapsulate a simple task such as cleaning or extracting data or a complete workflow to train and deploy models."
+  - content: 'Which MLOps principled features are found in Azure Machine Learning?'
     choices:
-    - content: "Custom models can be tuned to your specific form and data needs, allowing more accurate analysis and extraction of data."
+    - content: "Faster deployment of models"
+      isCorrect: false
+      explanation: "Incorrect. Yes, this is a MLOps principled feature in Azure ML , however, other features are also present within this service."
+    - content: "Reproducible training pipelines and environments"
+      isCorrect: false
+      explanation: "Incorrect. Yes, this is a MLOps principled feature in Azure ML , however, other features are also present within this service."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Correct. Custom models can be made with as little as five examples, and tuned to your specific needs."
-    - content: "Custom models apply Optical Character Recognition (OCR), but prebuilt models don't."
-      isCorrect: false
-      explanation: "Incorrect. Both custom models and prebuilt models use OCR."
-    - content: "Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form."
-      isCorrect: false
-      explanation: "Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards."
+      explanation: "Correct. Azure ML incorporates all of these principles within its features to help create reproducible and reliable creation of models."

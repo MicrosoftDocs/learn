@@ -1,4 +1,4 @@
-In this module, you learned about Azure Machine Learning, a cognitive service available on Azure. You learned about the different types of forms that prebuilt models can analyze and extract data from, how Layout API can extract document structures, and how prebuilt models can extract data tailored specifically to your forms.
+In this module, you learned about Azure Machine Learning, a cloud-based environment for building and deploying ML models. You learned about the different features within Azure ML—including Azure Studio and Designer for visual, no-code model training and deployment, AutoML for AI-assisted model selection and training, and MLOps principled tools and features to simplify workflows and create repeatable steps.
 
 Now that you've reviewed this module, you should be able to:
 
