@@ -37,6 +37,8 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
     :::image type="content" source="../media/5-advanced-configuration-optional.png" alt-text="Screenshot showing the optional advanced configuration to override uplink network profiles.":::
 
+1. In **Advanced Configuration - Network Extension Appliance Scale Out**, leave the check mark in the box next to the distributed switch configuration you configured for the vMotion network profile and then select **Continue**.
+
 1. When you reach **Advanced Configuration - Traffic Engineering**, select **Continue**. You don't have an HCX Enterprise key for this configuration.
 
     :::image type="content" source="../media/5-advanced-configuration-traffic-engineering.png" alt-text="Screenshot showing that application resiliency can't be selected because you do not have an HCX Enterprise license key.":::
@@ -57,8 +59,12 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
     :::image type="content" source="../media/5-service-mesh-green.png" alt-text="Screenshot that displays a finished deployment of the service mesh with all services as green.":::
 
-1. Verify the service mesh's health by selecting **Interconnect > Appliances** to view the health of the deployment. The tunnel should be green and say "Ok".
+1. Verify the service mesh's health by selecting **Interconnect > Appliances** to view the health of the on-premises deployment. The tunnels should be green and say "Ok".
 
     :::image type="content" source="../media/5-interconnect-appliance-state.png" alt-text="Screenshot that shows selections for checking the status of the appliance.":::
+
+1. Next, verify the service mesh's health by moving down on the same **Appliance** pane and view the AVS deployed appliances.
+
+    :::image type="content" source="../media/5-interconnect-appliance-avs.png" alt-text="Screenshot showing interconnect appliances that were deployed to AVS by enabling the service mesh.":::
 
 In the next unit, we'll cover how to migrate VMs from on-premises to AVS using HCX Manager. All steps will be outlined so you can successfully configure within your environment.

@@ -71,7 +71,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. On the next screen, you'll see services set for activation. Recall that HCX Advanced deploys with AVS. If you need HCX Enterprise, a ticket needs to be open with support.
 
-1. Uncheck **Network Extension** from the list, because it doesn't apply to your environment, and select **Continue**.
+1. Leave all default services checked that can be enabled with the HCX Advanced key and select **Continue**.
 
     :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot showing the services selected for activation with the HCX Connector on-premises.":::
 
