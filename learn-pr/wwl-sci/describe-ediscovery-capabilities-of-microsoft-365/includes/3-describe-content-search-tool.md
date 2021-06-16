@@ -33,4 +33,3 @@ You can also use scripts for advanced scenarios. Sometimes you have to do more a
 - **Clone a content search** and quickly compare the results of different keyword search queries run on the same content locations; or use the script to save time by not having to reenter a large number of content locations when you create a new search.
 
 Content Search is easy to use, but it's also a powerful tool. To learn more, visit the [content search overview](https://docs.microsoft.com/microsoft-365/compliance/search-for-content?view=o365-worldwide).
-

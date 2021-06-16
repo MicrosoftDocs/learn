@@ -2,7 +2,7 @@
 author: johndowns
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 04/22/2021
+ms.date: 06/10/2021
 ms.author: jodowns
 ---
 > [!NOTE]

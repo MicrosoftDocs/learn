@@ -8,7 +8,11 @@ Suppose you help to manage the Azure environment at a toy company. One of your c
 
 In this module, you gain an understanding of the what-if operation for Azure Resource Manager. You also learn about the modes that you can use for your deployments to Azure.
 
+<<<<<<< HEAD
 [!include[](../../includes/bicep-migrate-arm-templates.md)]
+=======
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
+>>>>>>> master
 
 ## What is the main goal?
 

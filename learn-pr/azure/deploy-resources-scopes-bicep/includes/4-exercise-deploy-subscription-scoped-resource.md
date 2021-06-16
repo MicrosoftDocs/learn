@@ -76,142 +76,21 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+[!include[](../../includes/azure-template-exercise-nosandbox-intro-cli.md)]
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+[!include[](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
 
-1. If the dropdown control at the right displays **bash**, you have the right shell to work from, and you can skip to the next section.
-
-    :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'bash' displayed in the dropdown control." border="true":::
-
-    If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
-
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the 'Select your preferred terminal shell' dropdown list." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
-
-1. Change to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
-
-    ```azurecli
-    cd scripts
-    ```
-
-### Check the version of the Azure CLI
-
-1. In the Visual Studio Code terminal, check your version of the Azure CLI by running the following command:
-
-   ```azurecli
-   az -v
-   ```
-
-1. Look at the version number on the first line, which starts with `azure-cli`.
-
-   - If the version number is version `2.20.0` or later, skip to the next section, "Install the Bicep tooling."
-
-   - If the version number is `2.11.0` or later and earlier than `2.20.0`, update your Azure CLI version by using this command:
-  
-      ```azurecli
-      az upgrade
-      ```
-
-   - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
-
-### Install the Bicep tooling
-
-To install the Bicep template compilation support, run the following command:
-
-```azurecli
-az bicep install
-```
-
-### Sign in to Azure
-
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
-
-    ```azurecli
-    az login
-    ```
-
-1. In the browser that opens, sign in to your Azure account.
-
-   The Visual Studio Code terminal displays a list of the subscriptions associated with this account. 
-
-1. In the list, find the subscription that you want to use for this exercise. 
- 
-   If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
-
-    ```azurecli
-    az account list --output table
-    ```
-
-1. Set the default subscription for all the Azure CLI commands that you run in this session.
-
-    ```azurecli
-    az account set --subscription "Your Subscription Name or ID"
-    ```
+[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-cli.md)]
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
+[!include[](../../includes/azure-template-exercise-nosandbox-intro-powershell.md)]
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+[!include[](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
 
-1. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
-
-    :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control."  border="true":::
-
-   If **pwsh** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
-
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the 'Select your preferred terminal shell' dropdown list." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with pwsh or PowerShell as the shell.
-
-1. You might have to change to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
-
-   ```azurepowershell
-   cd scripts
-   ```
-
-### Check the version of Azure PowerShell
-
-In the Visual Studio Code terminal, check the version of Azure PowerShell you've installed by running the following command:
-
-```azurepowershell
-(Get-InstalledModule Az).Version
-```
-
-If the version number is `5.6.0` or later, skip to the next section, "Sign in to Azure by using Azure PowerShell."
-
-If the version is earlier than `5.6.0`, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
-
-### Sign in to Azure by using Azure PowerShell
-
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
-
-    ```azurepowershell
-    Connect-AzAccount
-    ```
-
-1. In the browser that opens, sign in to your Azure account.
-
-1. Get the ID of the subscription that you want to use for this exercise by running the following command: 
-
-    ```azurepowershell
-    Get-AzSubscription
-    ```
-    The subscription ID is the second column. Copy the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
-
-1. Set the default subscription for all the Azure PowerShell commands that you run in this session.
-
-    ```azurepowershell
-    Set-AzContext -SubscriptionId {Your subscription ID}
-    ```
-
-### Install the Bicep CLI
-
-Azure PowerShell doesn't include the tooling for understanding Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
+[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-powershell.md)]
 
 ::: zone-end
 
