@@ -14,7 +14,7 @@ To clean up your resource groups:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. Run the following `az group delete` command to delete the resource group for your App Service deployment, **tailspin-space-game-rg**.
 
@@ -73,7 +73,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 1. Move the **Scale out the website** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/9-azure-boards-wi1-done.png)
+    :::image type="content" source="../media/9-azure-boards-wi1-done.png" alt-text="Azure Boards showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
@@ -92,7 +92,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the drop-down menu, select **Settings**:
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -104,14 +104,10 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. From Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Terraform**.
-1. Select the gear icon next to the project name.
-
-    The icon might not appear until you move your mouse over that area.
-
-    ![Azure DevOps showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+1. Select **Project settings** in the lower corner.
 1. From the **Project details** area, scroll to the bottom and select **Delete**.
 
-    ![Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. From the window that appears, enter the project name and select **Delete** a second time.
 
     Your project is now deleted.

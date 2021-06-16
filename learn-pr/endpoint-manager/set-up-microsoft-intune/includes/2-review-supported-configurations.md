@@ -10,7 +10,7 @@ You can manage devices running operating systems on the following platforms:
 - Surface Hub
 - Windows operating systems
 
-For more information about Intune supported devices, platforms, and operating systems, see [Intune supported operating systems](https://docs.microsoft.com/mem/intune/fundamentals/supported-devices-browsers?azure-portal=true#intune-supported-operating-systems).
+For more information about Intune supported devices, platforms, and operating systems, see [Intune supported operating systems](/mem/intune/fundamentals/supported-devices-browsers?azure-portal=true#intune-supported-operating-systems).
 
 ## Intune supported web browsers
 
@@ -49,21 +49,21 @@ It is important to understand that there are different bandwidth requirements fo
 - Endpoint Protection engine update
 - Software updates
 
-Other content updates vary. For instance, content related to service packs and software distribution will vary depending on when you deploy service packs and software. For more information, see Intune's [average network traffic](https://docs.microsoft.com/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#average-network-traffic).
+Other content updates vary. For instance, content related to service packs and software distribution will vary depending on when you deploy service packs and software. For more information, see Intune's [average network traffic](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#average-network-traffic).
 
 ## Intune bandwidth considerations
 
 If bandwidth is a concern, you do have ways to reduce bandwidth that your tenant uses. For instances, you can do any of the following to reduce bandwidth:
 
 - **Use a proxy server to cache content requests:**<br>
-    A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet. For related information, see [Use a proxy server to cache content requests](https://docs.microsoft.com/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#use-a-proxy-server-to-cache-content-requests).
+    A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet. For related information, see [Use a proxy server to cache content requests](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#use-a-proxy-server-to-cache-content-requests).
  
 - **Delivery Optimization:**<br>
-    Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10 devices download applications and updates. For related information, see [Delivery Optimization](https://docs.microsoft.com/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
+    Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10 devices download applications and updates. For related information, see [Delivery Optimization](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
 
 - **Background Intelligent Transfer Service (BITS) and BranchCache:**<br>
-    You can use Microsoft Intune to manage Windows PCs either as [mobile devices with mobile device management (MDM)](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll?azure-portal=true) or as computers with the Intune software client. Microsoft recommends that you use the MDM management solution whenever possible. For more information, see [Background Intelligent Transfer Service (BITS) and BranchCache](https://docs.microsoft.com/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#background-intelligent-transfer-service-bits-and-branchcache).
+    You can use Microsoft Intune to manage Windows PCs either as [mobile devices with mobile device management (MDM)](/mem/intune/enrollment/windows-enroll?azure-portal=true) or as computers with the Intune software client. Microsoft recommends that you use the MDM management solution whenever possible. For more information, see [Background Intelligent Transfer Service (BITS) and BranchCache](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#background-intelligent-transfer-service-bits-and-branchcache).
    
 ## Learn more
 
-For more information, see [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#ways-to-reduce-network-bandwidth-use).
+For more information, see [Intune network configuration requirements and bandwidth](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#ways-to-reduce-network-bandwidth-use).

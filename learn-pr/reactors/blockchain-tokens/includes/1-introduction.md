@@ -13,9 +13,9 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/?azure-portal=true)
-- [Solidity programming knowledge](https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/?azure-portal=true)
-- [Ethereum smart contract knowledge](https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
+- [Fundamental knowledge about blockchain](/learn/modules/intro-to-blockchain/?azure-portal=true)
+- [Solidity programming knowledge](/learn/modules/blockchain-learning-solidity/?azure-portal=true)
+- [Ethereum smart contract knowledge](/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
 - Previous experience with a programming language like C, Python, or JavaScript
 - Basic knowledge of programming concepts
 - Familiarity with the command line to create new directories and install programs

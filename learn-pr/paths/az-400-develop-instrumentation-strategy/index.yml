@@ -24,12 +24,12 @@ summary: |
   :::column:::
     <img src="/learn/achievements/az-400-develop-sre-strategy.svg" width="101" height="84" alt="The trophy for the Develop a Site Reliability Engineering strategy learning path." role="presentation"></img>
 
-    [AZ-400: Develop a Site Reliability Engineering (SRE) strategy](/learn/paths/az-400-develop-sre-strategy/)
+    [AZ-400: Develop a Site Reliability Engineering (SRE) strategy](../az-400-develop-sre-strategy/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/az-400-develop-security-compliance-plan.svg" width="101" height="84" alt="The trophy for the Develop a security and compliance plan learning path." role="presentation"></img>
 
-    [AZ-400: Develop a security and compliance plan](/learn/paths/az-400-develop-security-compliance-plan/)
+    [AZ-400: Develop a security and compliance plan](../az-400-develop-security-compliance-plan/index.yml)
   :::column-end:::
 
   :::row-end:::
@@ -38,17 +38,17 @@ summary: |
   :::column:::
     <img src="/learn/achievements/az-400-manage-source-control.svg" width="101" height="84" alt="The trophy for the Manage source control learning path." role="presentation"></img>
 
-    [AZ-400: Manage source control](/learn/paths/az-400-manage-source-control/)
+    [AZ-400: Manage source control](../az-400-manage-source-control/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/az-400-facilitate-communication-collaboration.svg" width="101" height="84" alt="The trophy for the Facilitate communication and collaboration learning path." role="presentation"></img>
 
-    [AZ-400: Facilitate communication and collaboration](/learn/paths/az-400-facilitate-communication-collaboration/)
+    [AZ-400: Facilitate communication and collaboration](../az-400-facilitate-communication-collaboration/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/az-400-define-implement-continuous-integration.svg" width="101" height="84" alt="The trophy for the Define and implement continuous integration learning path." role="presentation"></img>
 
-    [AZ-400: Define and implement continuous integration](/learn/paths/az-400-define-implement-continuous-integration/)
+    [AZ-400: Define and implement continuous integration](../az-400-define-implement-continuous-integration/index.yml)
   :::column-end:::
   :::row-end:::
 

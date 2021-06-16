@@ -39,3 +39,4 @@ units:
 - learn.language.go-get-started.7-summary
 badge:
   uid: learn.language.go-get-started.badge
+hidden: true

@@ -131,11 +131,11 @@ If you're not sure whether you'll lose data or not, you can do one of two things
 
 The definitive resource is the following article on Docs:
 
-[Type Conversion Tables in .NET](https://docs.microsoft.com/dotnet/standard/base-types/conversion-tables?azure-portal=true)
+[Type Conversion Tables in .NET](/dotnet/standard/base-types/conversion-tables?azure-portal=true)
 
 This Docs article uses the .NET Class Library name for types, not the C# keyword for the data types, so it might be a bit confusing at first. Use the following article to map between the C# keyword and the .NET Class Library type:
 
-[Built-in types table](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/built-in-types-table?azure-portal=true)
+[Built-in types table](/dotnet/csharp/language-reference/keywords/built-in-types-table?azure-portal=true)
 
 However, you can also write some code to perform a conversion in two different ways and observe the changes. Developers frequently write small tests to better understand the propensities of two similar techniques. For example, you might do something like this:
 

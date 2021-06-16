@@ -30,7 +30,7 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=provision-infrastructure-azure-pipelines&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=provision-infrastructure-azure-pipelines&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
@@ -39,7 +39,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/7-create-new-project.png)
+    :::image type="content" source="../media/7-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
     It takes a few moments for the template to run.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
@@ -62,7 +62,7 @@ Assigning work in this way gives you a checklist. It gives others on your team v
 
 Recall that the team settled on these three top issues for the current sprint:
 
-![Azure Boards list that shows the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+:::image type="content" source="../../shared/media/automate-all-tasks.png" alt-text="Azure Boards list that shows the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -73,14 +73,14 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. From the **Scale out the website** work item, select the arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/7-azure-boards-wi1-doing.png" alt-text="Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
@@ -94,7 +94,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Selecting the Bash shell in Visual Studio Code.":::
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -141,9 +141,9 @@ A clone, just like a fork, is a copy of a repository. When you clone a repositor
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-automate**) on [GitHub](https://github.com?azure-portal=true).
-1. Select **Clone or download**. Then select the button that copies the URL to your clipboard.
+1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    ![The "Clone or download" button, and the button that copies to the clipboard](../../shared/media/github-clone-button.png)
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory that you want to work from. You can choose your home directory (`~`) or a different one.
 
@@ -204,17 +204,24 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-
 
 ### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
 
-1. On the **File** menu, select **Open**.
-1. Go to the root directory of the *Space Game* web project.
+1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 
-    (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)
+    ```bash
+    code -r .
+    ```
 
-You see the directory and file tree in the file explorer.
+    You see the directory and file tree in the file explorer.
+1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 
-> [!NOTE]
-> You might need to open the integrated terminal a second time after you open the folder.
+If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
+
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+1. Repeat the previous procedure to open the project in the file explorer.
+
+You're now set up to work with the _Space Game_ source code and your Azure Pipelines configuration from your local development environment.
 
 ## Fetch starter code from GitHub
 

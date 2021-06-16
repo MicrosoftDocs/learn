@@ -18,7 +18,7 @@ The Delivery Plans Marketplace extension provides the features needed to create 
 1. On the **Azure DevOps** tab, search for "Delivery Plans".
 1. Select **Delivery Plans** from the results.
 
-    ![A screenshot showing the Delivery Plans Marketplace extension.](../media/5-delivery-plans-extension.png)
+    :::image type="content" source="../media/5-delivery-plans-extension.png" alt-text="A screenshot showing the Delivery Plans Marketplace extension.":::
 
 1. Select **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.
@@ -80,7 +80,7 @@ Milestone markers can be added to the delivery plan as reference points. These h
 1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
 1. This change opens a significant amount of bandwidth in **Sprint 3**. Since that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 
-    ![A screenshot that shows the direction in which to move work items.](../media/5-adjust-work-schedule.png)
+    :::image type="content" source="../media/5-adjust-work-schedule.png" alt-text="A screenshot that shows the direction in which to move work items.":::
 
 Your final sprint plan should look similar to this:
 

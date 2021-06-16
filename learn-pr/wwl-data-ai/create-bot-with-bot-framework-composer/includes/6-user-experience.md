@@ -96,3 +96,5 @@ Structured responses are especially useful for responses that consist of graphic
     image = http://.../pizza.png
 ]
 ```
+
+The Bot Framework Composer interface includes a Response Editor that can generate the appropriate language generation code for you, making it easier to create conversational responses.

@@ -17,6 +17,6 @@ The enterprise-scale approach to building landing zones includes three sets of a
 - **Implementations**: An Azure Resource Manager template for the architecture to accelerate adoption.
 
   - [Reference implementation](/azure/cloud-adoption-framework/ready/enterprise-scale/implementation?azure-portal=true)
-  - Introduction to [enterprise-scale in-a-box](https://github.com/Azure/Enterprise-Scale/blob/main/docs/enterprise-scale-iab/README.md?azure-portal=true) hands-on activity
+  - Introduction to enterprise-scale in-a-box hands-on activity
 
 Download the [enterprise-scale architecture diagram PDF](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf?azure-portal=true).

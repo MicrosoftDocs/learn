@@ -20,36 +20,18 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 1: Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices/)
+    [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
     Part 3: Deploy applications with Azure DevOps
   :::column-end:::
-  :::row-end:::
-
-  :::row:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/automate-deployments-azure-devops.svg" width="101" height="84" alt="The trophy for the Automate your deployments with Azure DevOps learning path." role="presentation"></img>
-
-    [Part 4: Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/)
-  :::column-end:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" alt="The trophy for the Capture feedback and monitoring data to continuously improve your software learning path." role="presentation"></img>
-
-    [Part 5: Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring/)
-  :::column-end:::
-
-  :::column:::
-    <!-- Padding -->
-  :::column-end:::
-
   :::row-end:::
 
   In this learning path, you will:
@@ -60,8 +42,8 @@ summary: |
   - Extend pipelines to add support for different deployment targets, such as Azure Functions.
   - Automate Docker and multi-container Kubernetes deployments with Azure Pipelines.
 prerequisites: |
-  - [Get started with Azure DevOps](/learn/paths/evolve-your-devops-practices)
-  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - [Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
+  - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   - An [Azure subscription](https://azure.microsoft.com/free/)
 iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:

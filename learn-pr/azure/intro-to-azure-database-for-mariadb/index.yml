@@ -7,7 +7,8 @@ metadata:
   ms.date: 03/29/2021  
   author: tchristiani
   ms.author: terrychr  
-  ms.topic: interactive-tutorial  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
 title: Introduction to Azure Database for MariaDB
 summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
 abstract: |

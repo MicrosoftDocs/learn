@@ -32,7 +32,7 @@ Training a model can be a difficult and expensive process without the help of a 
 
 There are two ways to use a trained machine learning model to perform evaluations:
 
-- From the cloud by calling the model's prediction endpoint over HTTP. See the [Classify images with the Microsoft Custom Vision Service](https://docs.microsoft.com/learn/modules/classify-images-with-custom-vision-service/5-call-the-prediction-endpoint-curl) course for direction on using this method.
+- From the cloud by calling the model's prediction endpoint over HTTP. See the [Classify images with the Microsoft Custom Vision Service](/learn/modules/classify-images-with-custom-vision-service/5-call-the-prediction-endpoint-curl) course for direction on using this method.
 - Locally by downloading the model, in ONNX format. Include it in your app code to be installed and used with the Windows ML API on a Windows 10 device.
 
 Whether or not you use a machine learning model locally or in the cloud depends on your use-case scenario. The following comparisons might help you determine the best choice for your needs. 

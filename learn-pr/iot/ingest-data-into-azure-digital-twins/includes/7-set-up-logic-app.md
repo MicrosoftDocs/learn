@@ -24,7 +24,7 @@ In this unit, we'll show how a Logic App can be used as the external compute tha
 ## Configure the connector for Azure Digital Twins
 
 1. Download a custom Azure Digital Twins Swagger that has been modified to work with Logic Apps: 
-    1. On the [Azure Digital Twins custom Swaggers (Logic Apps connector)](https://docs.microsoft.com/samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/) page, select **Download ZIP** to download the sample.
+    1. On the [Azure Digital Twins custom Swaggers (Logic Apps connector)](/samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/) page, select **Download ZIP** to download the sample.
 
     1. Go to the downloaded Azure_Digital_Twins_custom_Swaggers__Logic_Apps_connector_.zip folder and unzip it.
 
@@ -105,7 +105,7 @@ az ad app update --id <application ID> --reply-urls http://localhost <redirect U
 1. After selected the choices above you'll be prompted to authenticate and consent
 1. In the new **DigitalTwins Update** box, fill in the fields as follows:
     - **id**: GrindingStep
-    - **item**: Enter the JSON payload required by the [Digital Twins Update API](https://docs.microsoft.com/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
+    - **item**: Enter the JSON payload required by the [Digital Twins Update API](/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
     - **api-version**: The latest API version. Currently, this value is 2020-10-31.
 1. Select **Save**.
 

@@ -1,4 +1,3 @@
-
 ![Time Series Insights Banner](../media/explore-and-analyze-time-stamped-data-with-time-series-insights.png)
 
 Time Series Insights allows you to quickly and easily get sense of IoT generated date. Your analysis can span across the last hours or the last years.
@@ -20,8 +19,8 @@ All resources created using the sandbox will be automatically deleted. If you cr
 
 Take your interest further with the documentation pages below.
 
-- [Time Series Modeling](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-tsm)
-- [Azure Time Series Insights documentation](https://docs.microsoft.com/azure/time-series-insights/)
+- [Time Series Modeling](/azure/time-series-insights/time-series-insights-update-tsm)
+- [Azure Time Series Insights documentation](/azure/time-series-insights/)
 
 And look out for additional Learn modules on IoT Hub.
 

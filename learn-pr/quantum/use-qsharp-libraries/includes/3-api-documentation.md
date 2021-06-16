@@ -10,7 +10,7 @@ In this unit, you'll familiarize yourself with the Q# API documentation: where t
 
 ## Where is it?
 
-The official documentation for the Q# libraries provided with the Quantum Development Kit is on the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum?azure-portal=true) home page. It's under the **API reference** tab in the table of contents:
+The official documentation for the Q# libraries provided with the Quantum Development Kit is on the [Microsoft Quantum Documentation](/quantum?azure-portal=true) home page. It's under the **API reference** tab in the table of contents:
 
 :::image type="content" source="../media/3-api-location.png" alt-text="Screenshot that shows the location of the Q sharp libraries A P I.":::
 
@@ -19,7 +19,7 @@ The official documentation for the Q# libraries provided with the Quantum Develo
 Alongside **Q# libraries** are a few other sets of API documentation. We won't focus on them here, but note that they concern various other parts of the QDK:
 - *.NET libraries* contain references for the trace simulator target machine and the .NET quantum chemistry library (those parts of the quantum chemistry library that are represented outside the Q# program).
 - *Python libraries* contain details about integration with Python as a host program.
-- *IQ# magic commands* are the magic commands that can be used in Jupyter Notebooks (for example, the [`%package` command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package?azure-portal=true) that adds a package to the workspace).
+- *IQ# magic commands* are the magic commands that can be used in Jupyter Notebooks (for example, the [`%package` command](/qsharp/api/iqsharp-magic/package?azure-portal=true) that adds a package to the workspace).
 
 ### Q# library API references
 
@@ -37,7 +37,7 @@ Are you looking for a specific operation, function, or type? Use the **Filter by
 
 The API documentation is automatically generated from the documentation comments within the Q# source code. Later in the module, you'll learn more about how the documentation is embedded in the source code when you write documentation comments for your own operations.
 
-For now, we'll take you through an example to show you what you can expect and learn from the documentation. Because it will be the centerpiece of our oracle in the next unit, let's check out the [`MultiplyAndAddByModularInteger` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true). Although this is an operation, note that the pages for functions and types are laid out in the same way.
+For now, we'll take you through an example to show you what you can expect and learn from the documentation. Because it will be the centerpiece of our oracle in the next unit, let's check out the [`MultiplyAndAddByModularInteger` operation](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true). Although this is an operation, note that the pages for functions and types are laid out in the same way.
 
 ## What does it tell me?
 
