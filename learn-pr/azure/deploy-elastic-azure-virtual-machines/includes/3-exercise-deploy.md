@@ -21,20 +21,20 @@ Recall that the start-up retailer you work for currently uses Elastic on-premise
     1. Name your cluster es-on-azure
     1. Use the default settings for the virtual network configuration
 
-    :::image type="content" source="../media/cluster-settings.png" alt-text="A screenshot of the Cluster Settings menu in the Azure Portal.":::
+    :::image type="content" source="../media/cluster-settings.png" alt-text="A screenshot of the Cluster Settings menu in the Azure portal.":::
 
 1. Set 3 data nodes of Elasticsearch and make them master eligible.
 
-    :::image type="content" source="../media/nodes-configuration.png" alt-text="A screenshot of the Nodes Configuration menu in the Azure Portal.":::
+    :::image type="content" source="../media/nodes-configuration.png" alt-text="A screenshot of the Nodes Configuration menu in the Azure portal.":::
 
 1. Add Kibana & Logstash.
     1. Select the options to install Kibana and Logstash
 
-    :::image type="content" source="../media/kibana-logstash.png" alt-text="A screenshot of the Kibana & Logstash menu in the Azure Portal.":::
+    :::image type="content" source="../media/kibana-logstash.png" alt-text="A screenshot of the Kibana & Logstash menu in the Azure portal.":::
 
 1. Enter the security details
-    a. Create account names and passwords for Elastic, Kibana, Logstash, APM, and remote monitoring
+    1. Create account names and passwords for Elastic, Kibana, Logstash, APM, and remote monitoring
 
-    :::image type="content" source="../media/security.png" alt-text="A screenshot of the Security menu in the Azure Portal.":::
+    :::image type="content" source="../media/security.png" alt-text="A screenshot of the Security menu in the Azure portal.":::
 
 1. Press Review + create to deploy the Elasticsearch cluster.
