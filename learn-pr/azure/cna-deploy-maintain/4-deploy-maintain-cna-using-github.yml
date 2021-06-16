@@ -1,10 +1,10 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-deploy-maintain-cloud-native-apps.4-deploy-maintain-cna-using-github
 title: Deploy and maintain cloud-native applications by using GitHub Actions
 metadata:
   title: Deploy and maintain cloud-native applications by using GitHub Actions
   description: Deploy and maintain cloud-native applications by using GitHub Actions
-  ms.date: 05/31/21
+  ms.date: 05/31/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
