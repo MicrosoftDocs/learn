@@ -50,11 +50,9 @@ You'll begin by creating a sample Node.js Express web app and apply to it increm
     app.listen(port, () => console.log(`Sample app is listening on port ${port}!`))
     ```
 
-    > [!NOTE]
-    > The script invokes the app, configuring it to listen on TCP port **8080** and to accept the JSON-formatted body of HTTP requests. Starting with Express 4.16+, `app.use(express.json())` is required for JSON parsing.
+    The script invokes the app, configuring it to listen on TCP port **8080** and to accept the JSON-formatted body of HTTP requests. Starting with Express 4.16+, `app.use(express.json())` is required for JSON parsing.
 
-    > [!NOTE]
-    > The use of **process.env.PORT** is specific to containers on Azure App Service, which sets the environment variable **PORT** in the Node.js container and sends the incoming requests to that port number. To receive the requests, your app should listen to that port using **process.env.PORT** (hence the use of `const port = process.env.PORT || 8080`).
+    The use of **process.env.PORT** is specific to containers on Azure App Service, which sets the environment variable **PORT** in the Node.js container and sends the incoming requests to that port number. To receive the requests, your app should listen to that port using **process.env.PORT** (hence the use of `const port = process.env.PORT || 8080`).
 
     > [!NOTE]
     > You'll use Azure App Service in this exercise to facilitate testing of the Node.js Express functionality. It would be straightforward to containerize the app you develop and deploy it to any Kubernetes implementation, including AKS.
