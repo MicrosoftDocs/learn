@@ -6,7 +6,7 @@ To configure Unity for Windows Mixed Reality development, follow these steps:
 
 1. In the **Build Settings** window, select **Player Settings**. In the **Player** section, expand **XR Settings**. Enable **Virtual Reality Supported** and add the **Windows Mixed Reality SDK**.
 
-![A screenshot of the X R settings in the projects window. The virtual reality supported and plus icon are highlighted.](../media/xr-settings.png)
+   ![A screenshot of the X R settings in the projects window. The virtual reality supported and plus icon are highlighted.](../media/xr-settings.png)
 
 1. Optimize XR Settings as follows:
 

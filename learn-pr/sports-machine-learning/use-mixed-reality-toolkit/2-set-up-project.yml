@@ -8,7 +8,7 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup the Unity project
+title: Set up the Unity project
 durationInMinutes: 10
 content: |
   [!include[](includes/2-set-up-project.md)]
