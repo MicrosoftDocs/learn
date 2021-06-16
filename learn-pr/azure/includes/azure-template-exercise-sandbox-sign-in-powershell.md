@@ -2,41 +2,9 @@
 author: johndowns
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 04/22/2021
+ms.date: 06/10/2021
 ms.author: jodowns
 ---
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
-
-1. Open a terminal window by using the **Terminal** menu. This menu usually opens at the bottom of the screen.
-
-1. If the dropdown control to the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from and can skip to the next section.
-
-    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu." border="true":::
-
-   Otherwise, in the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
-
-    :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell dropdown menu." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
-
-1. You might have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it to the *scripts* folder, you can use this command:
-
-   ```azurepowershell
-   cd scripts
-   ```
-
-### Check the version of Azure PowerShell
-
-From the terminal in Visual Studio code, run the following command to check the version of Azure PowerShell that you've installed:
-
-```azurepowershell
-(Get-InstalledModule Az).Version
-```
-
-If the version number is `5.6.0` or later, go to the next section ("Sign in to Azure by using Azure PowerShell").
-
-Otherwise, you need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
-
 ### Sign in to Azure by using Azure PowerShell
 
 1. In the Visual Studio Code terminal, run the following command:
@@ -73,10 +41,6 @@ Otherwise, you need to [install the latest version of Azure PowerShell](/powersh
     $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
     Set-AzContext $context
     ```
-
-### Install the Bicep CLI
-
-Azure PowerShell doesn't include the tooling to understand Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
 
 ### Set the default resource group
 
