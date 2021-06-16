@@ -1,14 +1,14 @@
 ﻿### YamlMime:Module
-uid: learn.azure.build-basic-service
+uid: learn.azure.cna-build-basic-service
 metadata:
-  title: Build Basic Service
+  title: Build a basic service
   description: In this module, you'll learn more about how to build a basic service.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build Basic Service
+title: Build a basic service
 summary: Use Microsoft Azure Database for PostgreSQL to configure the Express.js web service and the front-end Next.js management web app with a persistent data store. 
 abstract: |
   In this module, you'll:
