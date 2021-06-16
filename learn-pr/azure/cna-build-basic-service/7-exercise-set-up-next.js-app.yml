@@ -1,9 +1,9 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.build-basic-service.7-exercise-set-up-next.js-app
-title: Exercise - Set Up Next.js
+uid: learn.azure.cna-build-basic-service.7-exercise-set-up-next.js-app
+title: Exercise - Set up a Next.js management web app
 metadata:
-  title: Exercise - Set Up Next.js
-  description: Set up Next.js
+  title: Exercise - Set up a Next.js management web app
+  description: Connect the Next.js web app to the database and verify the data flow.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb 
