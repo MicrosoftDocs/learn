@@ -7,7 +7,7 @@ On-premises VMware environments require the customer to support all the hardware
 :::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Azure VMware Solution shared support matrix":::
 
 ### What's managed by Microsoft and what you manage
-One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
+One benefit of Azure VMware Solution is the platform is maintained for you. In partnership with VMware, Microsoft will work together on the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft will also work along side VMware for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
 
 You are responsible for NSX-T SDN configuration:
 - Network segments

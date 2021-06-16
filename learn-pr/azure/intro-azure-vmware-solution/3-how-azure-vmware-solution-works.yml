@@ -15,15 +15,15 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What component is managed and supported by Microsoft on Azure VMware Solution?"
+  - content: "What component of the Azure VMware Solution is the customer not responsible for?"
     choices:
-    - content: "Tier 1 gateways are managed by Microsoft."
+    - content: "Tier 1 gateways."
       isCorrect: false
       explanation: "Tier 1 gateways are managed by the customer."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN) is managed by Microsoft."
+    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
       isCorrect: true
-      explanation: "Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
-    - content: "Microsoft manages the virtual machines."
+      explanation: "Microsoft, in partnership with VMware, will support and maintain the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+    - content: "Virtual machines."
       isCorrect: false
       explanation: "Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to AVS. What minimum number of nodes must Shannon have to get started?"

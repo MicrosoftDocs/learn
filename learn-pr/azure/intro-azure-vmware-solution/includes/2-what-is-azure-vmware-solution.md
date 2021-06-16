@@ -21,14 +21,14 @@ The diagram below illustrates the relationship between private clouds and networ
 
 :::image type="icon" source="../media/2-AVS_overview.png" border="false" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
 
-### Use your existing investments
-Use your existing VMware investments, skills, and tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
+### Key features of Azure VMware Solution
+Azure VMware Solution provides a comprehensive VMware environment in Azure. Migrating to AVS include the following key features listed below.
 
-Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager.
+**Use your existing VMware investments:** No need to re-skill and learn new tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
-Admins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
+**Create operational consistency for admins:** Operational consistency is created for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager.mAdmins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
 
-Reduce change management and maintain operational consistency for the business. You can use all of your existing investments:
+**Maintain operational consistency for the business:** Reduce change management and maintain operational consistency for the business. You can use all of your existing investments:
 - Training
 - Process management
 - Change management
@@ -36,11 +36,10 @@ Reduce change management and maintain operational consistency for the business. 
 
 Accelerate migration and minimize downtime using the latest HCX Enterprise functionality for large scale, live migration from on-premises to Azure.
 
-### Support, licensing, and more benefits of AVS
-
- Azure VMware Solution provides a comprehensive VMware environment in Azure. Other benefits of migrating to AVS include the following features:
-
 **Single Point of Support :** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
+
+### Unique benefits of Azure VMware Solution
+Benefits that are unique to migrating to AVS include the following benefits:
 
 **Unified Licensing and Consumption :** Avoid licensing complexity by working with a single vendor for licensing and resource consumption. Track your VMware licensing directly with resource nodes as they are deployed and decommissioned.
 
@@ -71,6 +70,7 @@ Once your VMware environment is on Azure, all Azure services can be accessed. So
 |**Azure Application Gateway**    | Protect web apps on Azure VMware Solution with Azure Application Gateway. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications.    |
 |**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
 
+As the Azure VMware Solution continues to advance and mature, additional Azure integration will be added to the offering.
 
 ### Continuity of operations
 Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
