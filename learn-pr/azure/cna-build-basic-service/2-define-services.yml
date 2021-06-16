@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-basic-service.2-define-services
-title: Describe Azure IoT Central
+title: Define the concept of services
 metadata:
-  title: Define Services
-  description: Description of Azure IoT Central
+  title: Define the concept of services
+  description: Describe the concept of service in the context of cloud-native applications.
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
