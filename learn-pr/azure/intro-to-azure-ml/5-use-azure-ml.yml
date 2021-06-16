@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-ml.when-to-use-azure-ml
+title: When to use Azure Machine Learning
+metadata:
+  title: When to user Azure Machine Learning
+  description: When to use Azure Machine Learning
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-azure-ml.md)]
