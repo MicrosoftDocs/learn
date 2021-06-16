@@ -30,7 +30,7 @@ If you don't test the design for a NoSQL database under load during development,
 
 Containers in Azure Cosmos DB can have an unlimited number of logical partitions. However, each logical partition in Azure Cosmos DB can't grow any larger than 20 GB. The partition key must provide high-enough cardinality to avoid this 20-GB limit.
 
-A hot partition on storage occurs when you have a partition key that results in highly asymmetric storage patterns. As an example, consider a multitenant application that uses `tenantId` as its partition key with three tenants: A, B, and B. Tenants A and B are very small. Tenant C is massive and quickly hits the 20-GB limit for its partition. In this scenario, we need a different partition key that will spread the storage across more logical partitions.
+A hot partition on storage occurs when you have a partition key that results in highly asymmetric storage patterns. As an example, consider a multitenant application that uses `tenantId` as its partition key with three tenants: A, B, and C. Tenants A and B are very small. Tenant C is massive and quickly hits the 20-GB limit for its partition. In this scenario, we need a different partition key that will spread the storage across more logical partitions.
 
 :::image type="content" source="../media/6-hot-partition-storage.png" alt-text="Diagram that shows a hot partition with a highly asymmetric storage pattern." border="false":::
 
@@ -56,7 +56,7 @@ In a read-heavy workload, the way to ensure that you read data from a single par
 
 :::image type="content" source="../media/6-in-partition-query.png" alt-text="Diagram that shows a partition query for username." border="false":::
 
-A query that filters on a different property, such as `favoriteColor`, would "fan out" to all partitions in the container. This is also known as a *cross-partition query*. Such a query will work fine when the container is small and only occupies a single partition. However, as the container grows larger with more physical partitions, this query will become slower and more expensive because it will need to check more partitions to get the results.
+A query that filters on a different property, such as `favoriteColor`, would "fan out" to all partitions in the container. This is also known as a *cross-partition query*. Such a query will work fine when the container is small and occupies only a single partition. However, as the container grows larger with more physical partitions, this query will become slower and more expensive because it will need to check more partitions to get the results.
 
 :::image type="content" source="../media/6-cross-partition-query.png" alt-text="Diagram that shows a cross-partition query for favorite color." border="false":::
 

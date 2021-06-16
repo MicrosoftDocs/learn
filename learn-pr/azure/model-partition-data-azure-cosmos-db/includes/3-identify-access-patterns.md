@@ -2,7 +2,7 @@ When you're designing a data model for a NoSQL database, the objective is to ens
 
 ## Identify access patterns for customer entities
 
-Let's start with the customer entities in our e-commerce database. The following diagram shows three entities and the relationships between them. The three entities are Customer, CustomerAddress, and CustomerPassword. The Customer entity has a 1:Many relationship to CustomerAddress. Customer has a 1:1 relationship to CustomerPassword.
+Let's start with the customer entities in our e-commerce database. The following diagram shows three entities and the relationships between them. The three entities are **Customer**, **CustomerAddress**, and **CustomerPassword**. The **Customer** entity has a 1:Many relationship to **CustomerAddress**. **Customer** has a 1:1 relationship to **CustomerPassword**.
 
   :::image type="content" source="../media/3-customer-relational-model.png" alt-text="Diagram that shows the relational model for customer entities." border="false":::
 
@@ -16,7 +16,7 @@ For each of these operations, we need all this data at the same time. These enti
 
 ## Model customer entities
 
-Azure Cosmos DB stores data as JSON, so we can model the 1:Many relationship between Customer and CustomerAddress and embed the customer address data as an array. For the 1:1 relationship between Customer and CustomerPassword, we can embed that as an object in our new single customer document. Then the e-commerce application can create, edit, or retrieve customer data in a single request. 
+Azure Cosmos DB stores data as JSON, so we can model the 1:Many relationship between **Customer** and **CustomerAddress** and embed the customer address data as an array. For the 1:1 relationship between **Customer** and **CustomerPassword**, we can embed that as an object in our new single customer document. Then the e-commerce application can create, edit, or retrieve customer data in a single request. 
 
 The following diagram shows what our customer entity looks like.
 

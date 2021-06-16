@@ -35,4 +35,4 @@ quiz:
       explanation: "The discriminator value should contain the same value for each separate entity."
     - content: "The same value for each entity"
       isCorrect: true
-      explanation: "When you're adding a discriminator property to the schema, give it a constant value for each different entity in the container."
+      explanation: "When you're adding a discriminator property to the schema, give it a constant value for each entity in the container."

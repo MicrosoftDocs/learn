@@ -1,4 +1,4 @@
-In this exercise, you'll measure the difference for customer entities when you model entities as separate containers versus when you model for a NoSQL database where you embed entities in a single document.
+In this exercise, you'll measure the difference for customer entities when you model entities as separate containers versus when you model for a NoSQL database by embedding entities in a single document.
 
 ## Set up the environment
 
@@ -34,7 +34,7 @@ In Database-v1, run a query to get the customer entity and review the request ch
 1. Select the Azure Cosmos DB account with the name that starts with **cosmicworks**.
 1. Select **Data Explorer** on the left side.
 1. Expand **Database-v1**.
-1. Select the **customer** container.
+1. Select the **Customer** container.
 1. At the top of the screen, select **New SQL Query**.
 1. Copy and paste the following SQL text and then select **Execute Query**.
 

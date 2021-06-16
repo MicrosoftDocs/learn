@@ -4,7 +4,7 @@ In this module, you learned key concepts and techniques for modeling and partiti
 - **Using access patterns to model data**: You learned how understanding an application's access patterns to data plays an important role in how to model and partition data.
 - **Embedding versus referencing**: You learned when you should embed different entities within the same document versus when you should reference the data and store it as separate rows.
 - **Choosing a partition key**: You learned key concepts for choosing a partition key. These concepts include how to avoid hot partitions and how to handle workloads that are both read and write heavy.
-- **Modeling lookup or reference data**: Finally, you learned how to model data that's used as a reference or lookup for other data.
+- **Modeling lookup or reference data**: Finally, you learned how to model data that's used as a lookup or reference for other data.
 
 We applied all of these concepts and techniques to a relational database to model it for a NoSQL database. We modeled the three customer entities and embedded them in a single document. This resulted in an increase in performance by reducing the number of requests for the data. 
 
