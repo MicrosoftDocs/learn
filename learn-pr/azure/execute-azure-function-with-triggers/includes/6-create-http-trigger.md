@@ -2,7 +2,7 @@ In this unit, we're going to create an Azure function that accepts an HTTP reque
 
 ## Create an HTTP trigger
 
-Let's continue using our existing Azure Functions application and add an HTTP trigger.
+Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="csharp"
 
@@ -10,7 +10,7 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select your function app. Your **Function App** page appears.
+1. Select the resource with Type  **Function App** to view your Function App page.
 
 1. In the left menu pane, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
 
@@ -20,7 +20,7 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. In the **Template details** section, in **New Function** text box, enter a name for the function. In the **Authorization level** dropdown, select *Anonymous*, and then select **Add**.
 
-1. Take a quick look at the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does, we return a greeting. Otherwise, we return an error message.
+1. In the left menu pane, select **Code+Test** and review the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. Check to see if *name* has a value. If it does, we return a greeting. Otherwise, it continues to ask for a value.
 
 ::: zone-end
 
@@ -50,11 +50,11 @@ Now that we've created the HTTP trigger, let's get the function URL so we can be
 
 1. On the top menu bar, select **Get Function Url**. The **Get Function Url** dialog appears.
 
-1. Select **Copy** (clipboard), and select **OK** to close the function URL dialog.
+1. Select **Copy** (Copy to clipboard).
 
 ## Issue a GET request to your HTTP trigger
 
-We now have our function URL copied to our clipboard. Let's issue a GET request to see if we get a response.
+Let's issue a GET request for the URL to see if we get a response.
 
 ::: zone pivot="csharp"
 
@@ -62,7 +62,7 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
 
 1. Press <kbd>Enter</kbd> to submit the request.
 
@@ -74,7 +74,7 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
 
 1. Press <kbd>Enter</kbd> to submit the request.
 

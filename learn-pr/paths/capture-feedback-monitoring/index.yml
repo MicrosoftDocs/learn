@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.azdo.capture-feedback-monitoring
+hidden: true
 metadata:
   title: Capture feedback and monitoring data to continuously improve your software learning path
   description: Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
@@ -32,24 +33,6 @@ summary: |
 
     [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
-  :::row-end:::
-
-  :::row:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/automate-deployments-azure-devops.svg" width="101" height="84" alt="The trophy for the Automate your deployments with Azure DevOps learning path." role="presentation"></img>
-
-    [Part 4: Automate your deployments with Azure DevOps](../automate-deployments-azure-devops/index.yml)
-  :::column-end:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" alt="The trophy for the Capture feedback and monitoring data to continuously improve your software learning path." role="presentation"></img>
-
-    Part 5: Capture feedback and monitoring data to continuously improve your software
-  :::column-end:::
-
-  :::column:::
-    <!-- Padding -->
-  :::column-end:::
-
   :::row-end:::
 
   In this learning path, you will:

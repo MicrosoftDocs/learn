@@ -8,6 +8,7 @@ metadata:
   author: markjbrown
   ms.author: mjbrown 
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

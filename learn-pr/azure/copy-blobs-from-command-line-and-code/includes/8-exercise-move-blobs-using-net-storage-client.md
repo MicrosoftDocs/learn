@@ -66,7 +66,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     - The name of the container in the source storage account containing the blobs that you want to move
     - A connection string for accessing the destination storage account
     - The name of the container in the destination storage account for holding the blobs after they've been moved
-    - A date/time string. Blobs in the source container that haven't been modified since this date and time will be moved to the destination
+    - A date/time string ([in UTC](https://www.bing.com/search?q=utc+time)). Blobs in the source container that haven't been modified since this date and time will be moved to the destination
 
     > [!NOTE]
     > This application performs no validation or error handling. This is to keep the code short and concise. In a production system, you should validate all input carefully, and implement error handling for all storage account operations.
@@ -166,9 +166,9 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
-1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. Under **Blob service**, select **Containers**.
+1. Under **Data storage**, select **Containers**.
 
 1. Select the **specifications** container.
 
@@ -186,11 +186,14 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
+    > [!NOTE]
+    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Pacific Daylight Time (PDT), you would need to add 7 hours to UTC: `6/15/2021, 17:04:27 PM`.
+
 1. Using the portal, move to your destination (cool) storage account.
 
-1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. In the **Blob service** section, click **Containers**.
+1. In the **Data storage** section, click **Containers**.
 
 1. Select **+ Container**, and create a new container named **archive-test**.
 
@@ -199,6 +202,9 @@ With several blobs showing newer modification dates, you can differentiate betwe
     ```bash
     dotnet run "<source connection string>" specifications "<destination connection string>" archive-test "<selected date and time>"
     ```
+    
+    > [!NOTE]
+    > If your file does not find any files to move, you may need to adjust your date from what the Azure portal has customized to your timezone to it's UTC time as it is used by the program. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Pacific Daylight Time (PDT), you would need to add 7 hours to UTC: `6/15/2021, 17:04:27 PM`.
 
 1. The application should list the name of each matching blob that it finds, and move them.
 

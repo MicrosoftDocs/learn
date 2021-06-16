@@ -42,5 +42,5 @@ The service includes multiple pre-defined voices with support for multiple langu
 
 Both the speech-to-text and text-to-speech APIs support a variety of languages. Use the links below to find details about the supported languages:
 
-- [Speech-to-text languages](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-to-text).
-- [Text-to-speech languages](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#text-to-speech).
+- [Speech-to-text languages](/azure/cognitive-services/speech-service/language-support#speech-to-text).
+- [Text-to-speech languages](/azure/cognitive-services/speech-service/language-support#text-to-speech).

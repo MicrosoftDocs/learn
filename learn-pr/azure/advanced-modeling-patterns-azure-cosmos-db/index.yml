@@ -7,7 +7,8 @@ metadata:
   ms.date: 6/11/2021  
   author: markjbrown  
   ms.author: mjbrown  
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB  
 summary: Identify strategies to manage relationships between data entitles like customers and sales data. Improve performance and scaling of your data model by pre-aggregating and denormalizing data. Use change feed to maintain referential integrity of your data.
 abstract: | 

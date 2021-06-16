@@ -8,7 +8,8 @@ metadata:
   ms.date: 6/11/2021  
   author: markjbrown  
   ms.author: mjbrown  
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 05
 content: |
   [!include[](includes/2-denormalizing-data.md)]
