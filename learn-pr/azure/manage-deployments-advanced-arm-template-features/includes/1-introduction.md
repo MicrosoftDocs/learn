@@ -4,7 +4,7 @@ Let's say you're on a software team at Tailwind Traders. You plan to deploy infr
 
 In this module, you'll gain an understanding for how to handle more complex scenarios that you'll face. You'll use constructs like `copy` and `dependsOn`, as well as learn how to manage secrets during deployment.
 
-[!include[](../../includes/bicep-migrate-arm-templates.md)]
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
 ## Learning objectives
 

@@ -4,7 +4,7 @@ Suppose you're managing a software team that's developing an inventory system fo
 
 In this module, you're introduced to ARM template structure. You also practice creating and deploying an ARM template to Azure.
 
-[!include[](../../includes/bicep-migrate-arm-templates.md)]
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
 ## Learning objectives
 

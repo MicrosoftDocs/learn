@@ -4,11 +4,7 @@ Suppose you're a member of a cross-functional team that supports an application.
 
 In this module, you'll learn how to add custom behavior to your Bicep or JSON ARM templates by using a deployment script.
 
-<<<<<<< HEAD
-[!include[](../../includes/bicep-migrate-arm-templates.md)]
-=======
 [!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
->>>>>>> master
 
 ## Learning objectives
 
