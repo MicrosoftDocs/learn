@@ -1,4 +1,4 @@
-Remember that VMware HCX (HCX) Advanced deploys by default when Azure VMware Solution (AVS) deploys in Azure. Before configuring site pairings for your migration, the next step involves deployment and configuration of the HCX Connector on-premises. 
+Remember that VMware HCX (HCX) Advanced deploys by default when Azure VMware Solution deploys in Azure. Before configuring site pairings for your migration, the next step involves deployment and configuration of the HCX Connector on-premises. 
 
 ## Download VMware HCX Connector
 Before deploying the HCX Connector appliance in the on-premises vCenter, the VMware HCX Connector OVA file needs to be downloaded from the Azure portal.
@@ -7,17 +7,17 @@ Before deploying the HCX Connector appliance in the on-premises vCenter, the VMw
 
 1. Under **Manage** select **Connectivity**.
 
-1. Select the HCX tab to locate the AVS HCX Cloud Manager's IP address.
+1. Select the HCX tab to locate the Azure VMware Solution HCX Cloud Manager's IP address.
 
     :::image type="content" source="../media/3-find-hcx-address.png" alt-text="Screenshot of where to find the HCX IP address in the Azure Resource Manager portal.":::
 
 1. Then select **Identity** under **Manage**.
 
-1. The URLs and user credentials for the AVS vCenter and NSX-T Manager will display. Use the copy feature to paste credential information into the web browser on the jump host VM.
+1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager will display. Use the copy feature to paste credential information into the web browser on the jump host VM.
 
-     :::image type="content" source="../media/3-display-user-credentials-avs.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
+     :::image type="content" source="../media/3-display-user-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
 
-1. Open a browser window within the jump host behind the Azure Bastion and sign in to the AVS HCX Manager on https://x.x.x.9 over port 443. Replace the x's with the CIDR address block used to configure with AVS.
+1. Open a browser window within the jump host behind the Azure Bastion and sign in to the Azure VMware Solution HCX Manager on https://x.x.x.9 over port 443. Replace the x's with the CIDR address block used to configure with Azure VMware Solution.
 
 1. Use the cloudadmin@vsphere.local user credentials to sign in.
 
@@ -83,7 +83,7 @@ Next, the HCX Connector OVA file needs to be installed in the on-premises VMware
 1. Once the appliance deploys, you'll need to power on the virtual appliance manually in vCenter. After powering on, wait 10-15 minutes before finishing the configuration.
 
 ## Activate VMware HCX
-After deploying and powering on the VMware HCX Connector appliance on-premises, the HCX Connector service needs to be activated. You need to get a license key from the AVS environment in Azure.
+After deploying and powering on the VMware HCX Connector appliance on-premises, the HCX Connector service needs to be activated. You need to get a license key from the Azure VMware Solution environment in Azure.
 
 1. Under **Manage > Connectivity**, select the HCX tab, and then select **+ Add**.
 

@@ -1,23 +1,23 @@
-After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for VMware HCX (HCX) Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) into an HCX enabled destination site (Azure VMware Solution - AVS).
+After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for VMware HCX (HCX) Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) into an HCX enabled destination site (Azure VMware Solution).
 
 ## What is a service mesh?
 
-A service mesh provides a dedicated infrastructure abstraction layer that helps ease network transport between a source and destination site. The service mesh allows workloads and application services to decouple the networking components required for communication between sites. The service mesh enables a secure and optimized networking transport fabric between any two sites managed by HCX Manager. After enabling the service mesh, VMs can be migrated to AVS.
+A service mesh provides a dedicated infrastructure abstraction layer that helps ease network transport between a source and destination site. The service mesh allows workloads and application services to decouple the networking components required for communication between sites. The service mesh enables a secure and optimized networking transport fabric between any two sites managed by HCX Manager. After enabling the service mesh, VMs can be migrated to Azure VMware Solution.
 
 ## Create a service mesh
 
-To successfully establish a service mesh with AVS, the following networking requirements need to be met:
+To successfully establish a service mesh with Azure VMware Solution, the following networking requirements need to be met:
 
 |Requirement | Reason  |
 |---------|---------|
-| UDP ports 500/4500 | These ports need to be open between the HCX Connector 'uplink' and the AVS HCX Cloud 'uplink' network profile addresses. |
+| UDP ports 500/4500 | These ports need to be open between the HCX Connector 'uplink' and the Azure VMware Solution HCX Cloud 'uplink' network profile addresses. |
 | VMware HCX Manager required ports | Reference the VMware HCX URL at the end of this module. The URL provides a comprehensive list of required open ports between source and destination sites. |
 
 After the networking ports are confirmed and tested as open, you'll go through the following steps to enable a service mesh.
 
 1. From within the HCX Connector dashboard on-premises, under **Infrastructure**, selects **Interconnect > Service Mesh > Create Service Mesh**.
 
-    :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when creating a service mesh between the on-premises HCX Connector and AVS.":::
+    :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when creating a service mesh between the on-premises HCX Connector and Azure VMware Solution.":::
 
 1. Review the pre-populated sites created during site pairing and select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
@@ -63,8 +63,8 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
     :::image type="content" source="../media/5-interconnect-appliance-state.png" alt-text="Screenshot of checking the health status of the on-premises HCX appliances.":::
 
-1. Next, verify the service mesh's health in AVS by examining the appliances deployed underneath the on-premises appliances in the same **Appliance** pane.
+1. Next, verify the service mesh's health in Azure VMware Solution by examining the appliances deployed underneath the on-premises appliances in the same **Appliance** pane.
 
-    :::image type="content" source="../media/5-interconnect-appliance-avs.png" alt-text="Screenshot of interconnect appliances that were deployed to AVS by enabling the service mesh.":::
+    :::image type="content" source="../media/5-interconnect-appliance.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
 
-In the next unit, we'll cover how to migrate VMs from on-premises to AVS using HCX Manager. All steps will be outlined so you can successfully configure within your environment.
+In the next unit, we'll cover how to migrate VMs from on-premises to Azure VMware Solution using VMware HCX. All steps will be outlined so you can successfully configure within your environment.

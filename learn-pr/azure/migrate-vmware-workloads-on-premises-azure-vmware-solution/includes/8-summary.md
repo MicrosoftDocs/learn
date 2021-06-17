@@ -1,4 +1,4 @@
-In this module, you learned about the deployment and configuration steps to set up VMware HCX for VM migrations on-premises:
+In this module, you learned about the deployment and configuration steps to set up VMware HCX for VM migrations on-premises into Azure VMware Solution:
 
 - First, you learned about the planning that's required to deploy VMware HCX.
 - Next, you learned how to:

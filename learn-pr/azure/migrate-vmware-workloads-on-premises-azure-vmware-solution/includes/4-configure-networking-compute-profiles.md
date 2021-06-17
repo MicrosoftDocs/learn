@@ -1,13 +1,13 @@
-After the VMware HCX (HCX) Connector installs on-premises, you need to link the HCX Connector on-premises to HCX Cloud in Azure VMware Solution (AVS). This task contains several steps that will be outlined in this unit and the next unit.
+After the VMware HCX (HCX) Connector installs on-premises, you need to link the HCX Connector on-premises to HCX Cloud in Azure VMware Solution. This task contains several steps that will be outlined in this unit and the next unit.
 
 ## What is a site pair?  
 
-The first step involves creating a site pair. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware environment. In your scenario, the source will be the on-premises VMware environment and the destination will be AVS. To better understand what both environments contain, please reference the following chart for more information:
+The first step involves creating a site pair. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware environment. In your scenario, the source will be the on-premises VMware environment and the destination will be Azure VMware Solution. To better understand what both environments contain, please reference the following chart for more information:
 
 | Component| Notes |
 | :------- | :----- |
-| HCX Connector (source) | - Deployed in the on-premises vSphere environment after AVS deploys. <br>- Creates a unidirectional site pairing to AVS. <br>- Starts migrations to AVS.
-| HCX Cloud (destination) | - Provisioned with AVS when the private cloud deploys in Azure. <br>- Generally the destination for HCX site pairing. <br>- HCX Cloud site is always a Software Defined Data Center (SDDC). <br>- Supports network extension at layer 2 in the networking stack, which is optional.
+| HCX Connector (source) | - Deployed in the on-premises vSphere environment after Azure VMware Solution deploys. <br>- Creates a unidirectional site pairing to Azure VMware Solution. <br>- Starts migrations to Azure VMware Solution.
+| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for HCX site pairing. <br>- HCX Cloud site is always a Software Defined Data Center (SDDC). <br>- Supports network extension at layer 2 in the networking stack, which is optional.
 
 ## Add a site pair
 
@@ -23,17 +23,17 @@ The first step involves creating a site pair. A site pair provides network conne
 
     :::image type="content" source="../media/4-connect-remote-site.png" alt-text="Screenshot of where to pair your first site and connect to the remote site in the HCX Connector on-premises.":::
 
-1. Enter the AVS HCX Cloud Manager IP address you obtained from the last unit.
+1. Enter the Azure VMware Solution HCX Cloud Manager IP address you obtained from the last unit.
 
-1. Type the AVS **cloudadmin@vsphere.local** username and the password from the Azure portal.
+1. Type the Azure VMware Solution **cloudadmin@vsphere.local** username and the password from the Azure portal.
 
 1. Then select **Connect**. If you receive a messages about a certificate warning, import the certificate to continue.
 
-    :::image type="content" source="../media/4-connect-to-avs-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
+    :::image type="content" source="../media/4-connect-to-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
 
 1. In order for the connection to work, the HCX Connector needs to route to the HCX Cloud Manager IP over port 443 via the ExpressRoute you have deployed on-premises.
 
-1. You'll see a screen showing that the HCX Cloud Manager in AVS and the on-premises VMware HCX Connector are connected or paired.
+1. You'll see a screen showing that the HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
 
     :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot when site pairing is complete in the on-premises VMware environment.":::
 
@@ -59,7 +59,7 @@ The VMware HCX Connector on-premises deploys a set of automated virtual applianc
 
 ## Create a compute profile
 
-After the network profiles are created, you'll need to create a compute profile. The compute profile contains the compute, storage, and network settings that HCX uses to configure the service mesh. The service mesh is what allows VM migrations from on-premises into AVS.
+After the network profiles are created, you'll need to create a compute profile. The compute profile contains the compute, storage, and network settings that HCX uses to configure the service mesh. The service mesh is what allows VM migrations from on-premises into Azure VMware Solution.
 
 1. Under **Infrastructure**, select **Interconnect > Compute Profiles > Create Compute Profile**.
 
@@ -69,7 +69,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in the HCX Connector on-premises.":::
 
-1. On the next screen, you'll see services set for activation. Recall that HCX Advanced deploys with AVS. If you need HCX Enterprise, a ticket needs to be open with support.
+1. On the next screen, you'll see services set for activation. Recall that HCX Advanced deploys with Azure VMware Solution. If you need HCX Enterprise, a ticket needs to be open with support.
 
 1. Leave all default services checked that can be enabled with the HCX Advanced key and select **Continue**.
 
