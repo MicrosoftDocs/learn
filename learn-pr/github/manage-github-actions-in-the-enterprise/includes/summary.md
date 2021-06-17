@@ -1,15 +1,13 @@
-Your goal in this module was to identify the tools and strategies you can leverage in your GitHub Enterprise Cloud or Enterprise Server instance to manage the use of GitHub Actions in your organization.
+Your goal in this module was to identify the tools and strategies you can use in your GitHub Enterprise instance to manage the use of GitHub Actions in your organization.
 
 To accomplish this goal, you learned how to:
 
-- Leverage different tools at enterprise and organization levels to manage your actions and workflows
+- Use different tools at enterprise and organization levels to manage your actions and workflows
 - Evaluate what the appropriate runners are for your enterprise instance
 - Customize your self-hosted runners according to your enterprise use case
-- Scope, create and access encrypted secrets in your actions and workflows
+- Scope, create, and access encrypted secrets in your actions and workflows
 
 Next, you practiced how to create an encrypted secret in a repository and pass it in an action.
-
-All is left for you to do now is to apply your knowledge in your enterprise instance!
 
 ## Learn more
 
@@ -29,5 +27,5 @@ Here are some links to more information on the topics we discussed in this modul
 - [Using self-hosted runners in a workflow](https://docs.github.com/en/actions/hosting-your-own-runners/using-self-hosted-runners-in-a-workflow)
 - [Using labels with self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/using-labels-with-self-hosted-runners)
 - [Using a proxy server with self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/using-a-proxy-server-with-self-hosted-runners)
-- [Using GitHub Actions with an IP allow list](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization#using-github-actions-with-an-ip-allow-list)
+- [Using GitHub Actions with an IP allowlist](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization#using-github-actions-with-an-ip-allow-list)
 - [Monitoring and troubleshooting self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/monitoring-and-troubleshooting-self-hosted-runners)
