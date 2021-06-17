@@ -4,7 +4,7 @@ Azure ML enables people who may not fully grasp coding to have a powerful and in
 
 Azure ML has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
-![azure cube gif](../media/2-components.gif)
+![azure machine learning example](../media/2-deploy-models.gif)
 
 ## What is Azure Machine Learning Studio?
 
