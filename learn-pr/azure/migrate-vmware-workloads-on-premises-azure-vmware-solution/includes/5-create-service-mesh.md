@@ -65,6 +65,6 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
 1. Next, verify the service mesh's health in Azure VMware Solution by examining the appliances deployed underneath the on-premises appliances in the same **Appliance** pane.
 
-    :::image type="content" source="../media/5-interconnect-appliance-Azure VMware Solution.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
+    :::image type="content" source="../media/5-interconnect-appliance.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
 
 In the next unit, we'll cover how to migrate VMs from on-premises to Azure VMware Solution using VMware HCX. All steps will be outlined so you can successfully configure within your environment.

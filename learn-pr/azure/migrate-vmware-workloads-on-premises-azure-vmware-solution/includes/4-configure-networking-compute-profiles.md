@@ -29,7 +29,7 @@ The first step involves creating a site pair. A site pair provides network conne
 
 1. Then select **Connect**. If you receive a messages about a certificate warning, import the certificate to continue.
 
-    :::image type="content" source="../media/4-connect-to-Azure VMware Solution-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
+    :::image type="content" source="../media/4-connect-to-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
 
 1. In order for the connection to work, the HCX Connector needs to route to the HCX Cloud Manager IP over port 443 via the ExpressRoute you have deployed on-premises.
 
