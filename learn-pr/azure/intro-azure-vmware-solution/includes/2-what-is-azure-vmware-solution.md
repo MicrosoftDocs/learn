@@ -65,7 +65,7 @@ Once your VMware environment is on Azure, all Azure services can be accessed. So
 |**Azure Security Center**     | Azure Security Center is a unified infrastructure security management system. It strengthens security of data centers, and provides advanced threat protection across hybrid workloads in the cloud or on premises.        |
 |**Azure Sentinel**    |  Azure Sentinel is a cloud-native, security information event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
 |**Azure NetApp Files**    | Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on Windows client.   |
-|**Azure Backup Server**     |   Use Azure Backup Server (MABS) to back up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.      |
+|**Azure Backup Server**     |   Use Azure Backup Server to back up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.      |
 |**Monitor and manage VMs**     | Microsoft Azure native tools allow you to monitor and manage your virtual machines (VMs) in the Azure environment. Yet they also allow you to monitor and manage your VMs on Azure VMware Solution and your on-premises VMs.        |
 |**Azure Application Gateway**    | Protect web apps on Azure VMware Solution with Azure Application Gateway. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications.    |
 |**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
@@ -73,7 +73,7 @@ Once your VMware environment is on Azure, all Azure services can be accessed. So
 As the Azure VMware Solution continues to advance and mature, more Azure integrations will be added to the offering.
 
 ### Continuity of operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
+Azure VMware Solution provides application high availability and modernization with well-managed Azure infrastructure designed for end-to-end high availability. The Azure VMware Solution has built in redundancy with no single point of failure. 
 
 With AVS, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
 
