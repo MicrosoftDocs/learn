@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Customers that can't move to cloud services. "
       isCorrect: true
-      explanation: "AVS is not suited for customers that can't move to the cloud."
+      explanation: "AVS isn't suited for customers that can't move to the cloud."
     - content: "Customers looking to modernize with native Azure services. "
       isCorrect: false
       explanation: "Native Azure services aren't suited for customers who can't move to cloud services."
     - content: "Customers looking for more disaster recovery and business continuity options with Azure."
       isCorrect: false
-      explanation: "Azure services are not suited for customers who can't move to cloud services."
+      explanation: "Azure services aren't suited for customers who can't move to cloud services."

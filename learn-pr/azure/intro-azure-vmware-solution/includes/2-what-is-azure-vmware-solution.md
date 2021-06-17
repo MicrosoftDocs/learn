@@ -19,7 +19,7 @@ The VMware vSphere clusters are built from bare-metal Azure hosts. These cluster
 
 The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
-:::image type="icon" source="../media/2-AVS_overview.png" border="false" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
+:::image type="icon" source="../media/2-avs-overview.png" border="false" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
 
 ### Key features of Azure VMware Solution
 Azure VMware Solution provides a comprehensive VMware environment in Azure. Migrating to AVS include the following key features listed below.
@@ -55,7 +55,7 @@ AVS allows the business to move to the cloud at the pace they're comfortable wit
 
 Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your AVS environment are described below.
 
-:::image type="icon" source="../media/2-avs_integrationoverview.png" border="false" alt-text="Diagram showing some of the integration services available for Azure VMware Solution.":::
+:::image type="icon" source="../media/2-avs-integrationoverview.png" border="false" alt-text="Diagram showing some of the integration services available for Azure VMware Solution.":::
 
 
 |Integration  |Description  |
