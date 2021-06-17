@@ -16,7 +16,7 @@ By now, you know how to plan, deploy, configure, and migrate VMs on-premises int
 
 ## Learn more
 
-[Azure VMware Solution documentation](https://docs.microsoft.com/azure/azure-vmware/)
+[Azure VMware Solution documentation](/azure/azure-vmware/)
 <br>[VMware HCX User Guide](https://docs.vmware.com/en/VMware-HCX/4.0/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html)
 <br>[VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html)
 <br>[VMware software version requirements for HCX](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-54E5293B-8707-4D29-BFE8-EE63539CC49B.html)
