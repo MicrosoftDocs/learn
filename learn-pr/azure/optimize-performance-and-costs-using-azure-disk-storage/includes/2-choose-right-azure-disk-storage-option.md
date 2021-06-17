@@ -76,7 +76,7 @@ The following table provides the performance characteristics of Standard SSDs in
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSDs when you have budgetary constraints and a workload that isn't performance intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on Standard SSDs.
+Use Standard SSDs when you have budgetary constraints and a workload that isn't performance intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on Standard SSDs. Standard SSDs support disk bursting on P30 disks and smaller.
 
 ## Standard HDD
 
