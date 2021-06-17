@@ -1,6 +1,14 @@
 The backend part of the application is deployed and now you need to deploy the front-end bit. You already know you're going to need a ConfigMap. So let's start by creating one.
 
+## Activate the Azure sandbox
+
+1. Start by **activating the Azure sandbox above.**
+1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+
 ## Create a ConfigMap
+
+> [!IMPORTANT]
+> If you didn't create the AKS cluster, refer back to [the first unit](1-introduction.md) to create the required resources and export the necessary variables.
 
 1. Log in to your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
 
@@ -127,10 +135,6 @@ The backend part of the application is deployed and now you need to deploy the f
     kubectl get deploy contoso-ship-manager-frontend
     ```
 
-    The DNS propagation may take up to five minutes to complete. Check the DNS creation using the following command:
+    The DNS propagation may take up to five minutes to complete.
 
-    ```azurecli-interactive
-    az network dns zone list -o table
-    ```
-
-    Check if there are two new records with the same DNS zone but starting with `contoso-ship-manager`.
+To check your work, access the frontend URL defined in the frontend ingress configuration.
