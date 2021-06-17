@@ -17,7 +17,7 @@ After the networking ports are confirmed and tested as open, you'll go through t
 
 1. From within the HCX Connector dashboard on-premises, under **Infrastructure**, selects **Interconnect > Service Mesh > Create Service Mesh**.
 
-    :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when creatign a service mesh between the on-premises HCX Connector and AVS.":::
+    :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when creating a service mesh between the on-premises HCX Connector and AVS.":::
 
 1. Review the pre-populated sites created during site pairing and select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 

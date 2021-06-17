@@ -26,12 +26,12 @@ quiz:
     - content: "cloudadmin"
       isCorrect: false
       explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
-  - content: "If Dragan can't activate his HCX Advanced Key on-premises, what might be the issue?"
+  - content: "If Dragan can't activate the HCX Advanced Key on-premises, what might be the issue?"
     choices:
     - content: "The on-premises environment doesn't have open internet access or a proxy configured for activation."
       isCorrect: true
       explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
-    - content: "He didn't deploy the HCX appliance correctly."
+    - content: "The HCX appliance wasn't deployed correctly."
       isCorrect: false
       explanation: "If Dragan got to this point, the HCX appliance deployed correctly."
     - content: "A NAT rule isn't configured."
