@@ -4,6 +4,8 @@ Azure ML is structured to help teams of data scientists and ML engineers make th
 
 With in-built services, like Azure ML Studio that provide a user-friendly interface, and Automated Machine Learning capabilities that assist you in model selection and training—Azure ML has tools and features to suit every level of experience.
 
+![azure machine learning intro.](../media/1-cubes.png)
+
 ## Prerequisites
 
 * Familiarity with machine learning models and terms
