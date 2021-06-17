@@ -38,12 +38,12 @@ quiz:
       isCorrect: false
       explanation: "All attached disks are P30 disks that can handle 5,000 IOPS. So, they respond back with their requested amounts, but in this case VM IO capping prevent application to achieve demanding IOPS."
  
-  - content: "An administrator is creating an Azure VM to run a marketing application. You’ve scheduled a planned marketing event for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator use to meet the application requirements?"
+  - content: "An administrator is creating an Azure VM using Premium SSDs to run a marketing application. You’ve scheduled a planned marketing event for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator use to meet the application requirements?"
     choices:
     - content: "Use disk bursting."
       isCorrect: false
       explanation: "Although the administrator can use disk bursting to improve the application performance, this is usually used for unplanned scenarios."
-    - content: "Use Ultra SSDs or Premium SSDs and change the performance tier."
+    - content: "Change the performance tier."
       isCorrect: true
       explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
     - content: "Use read/write caching on the disk."
