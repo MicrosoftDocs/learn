@@ -22,7 +22,7 @@ During the process, you'll:
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
-::: zone-edit
+::: zone-end
 
 ## Create the starting template
 
