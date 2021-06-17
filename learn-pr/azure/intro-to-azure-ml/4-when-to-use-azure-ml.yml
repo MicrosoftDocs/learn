@@ -9,6 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-ml.md)]
