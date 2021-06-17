@@ -1,8 +1,8 @@
-VMware's Hybrid Cloud Exchange (HCX) Advanced Connector deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware HCX (HCX) Advanced Cloud Manager deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
-## What is Hybrid Cloud Exchange?
+## What is VMware HCX?
 
-VMware's HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
+VMware HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
 
 As a migration tool, HCX abstracts both on-premises and cloud resources to present them as a single resource for VM workloads. HCX also allows for bi-directional migration of virtual machines from on-premises VMware environments to AVS directly.
 
@@ -10,7 +10,7 @@ Since AVS deploys and configures the HCX Cloud Manager within the private cloud 
 
 ## HCX versions and compatibility
 
-AVS deploys with HCX 4.0. There are vSphere version compatibility requirements that need to be met for a supported migration pattern using HCX.
+There are vSphere version compatibility requirements that need to be met on-premises for a supported migration pattern using VMware HCX.
 
 | Component type | HCX connector environment requirements | HCX cloud environment requirements |
 | :------| :------- | :---- |
@@ -21,7 +21,7 @@ For older versions of vSphere (5.0+), the HCX connector appliance needs to be de
 
 ## Network connectivity and ports
 
-AVS configures an ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the AVS ExpressRoute circuit into an Azure virtual network for access to all resources in Azure. Following that configuration, you then need to configure Azure ExpressRoute Global Reach between the on-premises VMware environment and the AVS ExpressRoute using a separate ExpressRoute circuit. Global Reach is an add-on feature for ExpressRoute. Global Reach enables east-west connectivity from on-premises environments to Azure using ExpressRoute. That connectivity routes all traffic privately within the Microsoft global backbone. Before the HCX Connector can be deployed and a site pairing established, ExpressRoute Global Reach must be enabled.
+AVS configures an ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the AVS ExpressRoute circuit into an Azure virtual network for access to all resources in Azure. Following that configuration, you then need to configure Azure ExpressRoute Global Reach between the on-premises VMware environment and the AVS ExpressRoute using a separate ExpressRoute circuit. Global Reach is an add-on feature for ExpressRoute. Global Reach enables east-west connectivity between both ExpressRoute circuits using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before the HCX Connector can be deployed and a site pairing established, ExpressRoute Global Reach must be enabled.
 
 All required network ports need to be open for communication between the on-premises VMware environment and AVS. The following chart outlines all ports, protocols used, and what VMware components need open ports for configuration.
 
@@ -61,6 +61,6 @@ HCX offers a few different ways to migrate workloads:
 
 ## Scenario readiness and preparation for AVS
 
-Your company's production environment maintains a strict SLA. This means you'll need to select live migration to achieve minimal downtime as workloads move from on-premises to AVS. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in AVS.
+Your company's production environment maintains a strict SLA. What this means is you'll need to select live migration to achieve minimal downtime as workloads move from on-premises to AVS. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in AVS.
 
 In the next unit, we'll cover how to deploy and install the HCX Connector so you can begin migrating workloads to AVS. All steps will be outlined so you can successfully deploy and install the service in your environment.
