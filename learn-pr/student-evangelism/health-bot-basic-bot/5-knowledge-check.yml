@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.healthbot-basic-bot.5-knowledge-check
+uid: learn.health-bot-basic-bot.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -47,7 +47,7 @@ quiz:
           explanation: "This isn't where you test the bot."
         - content: "Chat"
           isCorrect: false
-          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat panel to test the bot."
-        - content: "Web Chat panel"
+          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat v4 to test the bot."
+        - content: "Web Chat v4"
           isCorrect: true
-          explanation: "You run and test scenarios in the Web Chat panel in the upper right of the scenario editor."
+          explanation: "You run and test scenarios in the Web Chat v4 in the upper right of the scenario editor."

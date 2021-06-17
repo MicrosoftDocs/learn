@@ -10,9 +10,7 @@ Because our aim is to create an informative bot, let's first greet the user and 
 
 We start by using the *prompt* block. This is what a prompt block looks like:
 
-:::image type="content" source="../media/3-prompt.png" alt-text="Screenshot that shows the fields in a prompt block.":::
-
-The healthcare bot uses JavaScript to implement some scenario steps. So it helps to know basic concepts of JavaScript. If you don't know JavaScript, knowledge of any basic programming language will also help.  
+:::image type="content" source="../media/3-greetings.png" alt-text="Screenshot that shows information for greetings.":::
 
 **Display text**: Enter a block display name that will help you differentiate between the blocks. Because we're creating a greeting block, let's use **Hello! How can I help you?**. 
 
@@ -23,8 +21,6 @@ The healthcare bot uses JavaScript to implement some scenario steps. So it helps
 **Choices Array**: As the name suggests, this is an array of choices or multiple choices. An array is a systematic collection of like objects. Provide the required choices.
 
 **Show Choices as**: This is the way we want the GUI to look. Let's simply choose a button. Depending on the variable type, you'll need to change the upcoming boxes. The rest will be set to defaults.
-
-:::image type="content" source="../media/3-greetings.png" alt-text="Screenshot that shows information for greetings.":::
 
 After you fill in the information, close the pane. Congratulations! You've completed the first step. Now let's head to the next step.
 
@@ -145,4 +141,4 @@ Because the choice of more information is just a simple statement that we want t
 
 :::image type="content" source="../media/3-connected-all-departments.png" alt-text="Screenshot that shows the simple bot with department options connected.":::
 
-Congratulations! You've completed the bot. Now save and run it. The [Web Chat v4 component](https://github.com/microsoft/BotFramework-WebChat) can help you to test the bot.
+Congratulations! You've completed the bot. Now save and run it. The Web Chat v4 section of the page can help you to test the bot.
