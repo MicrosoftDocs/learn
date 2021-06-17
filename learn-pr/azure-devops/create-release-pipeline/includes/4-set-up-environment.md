@@ -35,7 +35,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - Release*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="A screnshot of the Azure DevOps Demo Generator web site showing the process to create the project.":::
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
 
@@ -65,7 +65,7 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing where to locate the Bash shell.":::
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -225,21 +225,21 @@ Create an initial pipeline configuration that builds the web application. This s
 
 1. In Azure Pipelines, go to the build and trace it as it runs.
 
-    ![Azure Pipelines showing a running job](../../shared/media/pipeline-trace-build.png)
+    :::image type="content" source="../../shared/media/pipeline-trace-build.png" alt-text="A screenshot of Azure Pipelines showing the running job.":::
 
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Navigating back to the summary page in Azure Pipelines](../../shared/media/pipeline-navigate-pipeline-summary.png)
+    :::image type="content" source="../../shared/media/pipeline-navigate-pipeline-summary.png" alt-text="A screenshot of Azure Pipelines showing how to navigate to the summary page.":::
 
 1. On the summary page, select your published artifact.
 
-    ![Selecting the artifact in Azure Pipelines](../../shared/media/pipeline-navigate-published-artifact.png)
+    :::image type="content" source="../../shared/media/pipeline-navigate-published-artifact.png" alt-text="A screenshot of Azure Pipelines showing the location of the link to the published artifact.":::
 
 1. From the **Published artifacts** page, expand the **drop** folder.
 
     You see a _.zip_ file that contains your built application and its dependencies. This is your build artifact.
 
-    ![Azure Pipelines showing the published artifact](../../shared/media/pipeline-view-published-artifact.png)
+    :::image type="content" source="../../shared/media/pipeline-view-published-artifact.png" alt-text="A screenshot of Azure Pipelines showing the published artifact. The artifact includes a .zip file.":::
 
     You can manually download and install the build artifact in your own environment, just as Amita did in the previous learning path. In this module, you add a deployment stage that automatically deploys the build artifact to Azure App Service.
 

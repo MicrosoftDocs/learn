@@ -2,7 +2,7 @@ This module is theoretical and will walk you through how an IoT Edge device can 
 
 There are three patterns for using an IoT Edge device as a gateway: transparent, protocol translation, and identity translation:
 
-- Transparent – Devices that theoretically could connect to IoT Hub can connect to a gateway device instead. The downstream devices have their own IoT Hub identities and are using any of the MQTT, AMQP, or HTTP protocols. The gateway simply passes communications between the devices and IoT Hub. The devices are unaware that they're communicating with the cloud via a gateway.  A user interacting with the devices in IoT Hub is unaware of the intermediate gateway device. Refer to [Create a transparent gateway](//azure/iot-edge/how-to-create-transparent-gateway) for specifics on using an IoT Edge device as a transparent gateway.
+- Transparent – Devices that theoretically could connect to IoT Hub can connect to a gateway device instead. The downstream devices have their own IoT Hub identities and are using any of the MQTT, AMQP, or HTTP protocols. The gateway simply passes communications between the devices and IoT Hub. The devices are unaware that they're communicating with the cloud via a gateway.  A user interacting with the devices in IoT Hub is unaware of the intermediate gateway device. Refer to [Create a transparent gateway](/azure/iot-edge/how-to-create-transparent-gateway) for specifics on using an IoT Edge device as a transparent gateway.
 
     >[!div class="mx-imgBorder"]
     >[![IoT Edge Transparent Gateway Diagram](../media/transparent-gateway.png)](../media/transparent-gateway.png#lightbox)
