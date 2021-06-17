@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - A browser
   - Basic knowledge of HTML and CSS
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
 ratingEnabled: true
 levels:
 - beginner
