@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-bot-service-bot-framework-composer.what-is-{product}
+uid: learn.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service.md
 title: What is Azure Bot Service?
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-bot-service.md)]
+  [!include[](includes/2-what-is-azure-bot-service.md)]
