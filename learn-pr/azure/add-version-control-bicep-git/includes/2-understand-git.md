@@ -1,4 +1,4 @@
 - What is Git?
 - How does Git help with IaC?
-- Local and remote Git repositories.
+- Local and remote Git repositories, Git vs. GitHub
 - Briefly introduce the VS Code tooling for working with Git.
