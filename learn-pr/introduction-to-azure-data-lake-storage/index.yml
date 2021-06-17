@@ -1,10 +1,11 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-data-lake-storage
 metadata:
+  ms.prod: learning-azure
   moduleType: introduction        
   title: Introduction to Azure Data Lake Storage          
   description: "Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data."     
-  ms.date: 4/23/2021             
+  ms.date: 06/17/2021             
   author: paulwp      
   ms.author: v-pmcfedries           
   ms.topic: interactive-tutorial  

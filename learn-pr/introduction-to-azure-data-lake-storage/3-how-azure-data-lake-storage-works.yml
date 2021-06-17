@@ -2,10 +2,11 @@
 uid: learn.introduction-to-azure-data-lake-storage.3-how-azure-data-lake-storage-works
 title: How Azure Data Lake Storage works
 metadata:
+  ms.prod: learning-azure
   unitType: learning-content
   title: How Azure Data Lake Storage works
   description: Learn how Azure Data Lake Storage works.
-  ms.date: 4/23/2021
+  ms.date: 06/17/2021
   author: paulwp
   ms.author: v-pmcfedries
   ms.topic: interactive-tutorial

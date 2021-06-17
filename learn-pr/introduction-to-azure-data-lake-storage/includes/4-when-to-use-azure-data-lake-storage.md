@@ -149,4 +149,4 @@ However, you should consider using Azure Data Lake Storage for real-time analyti
 - Ingests real-time data that arrives in multiple data formats.
 - Wants to apply multiple types of analytics workloads to the data, such as machine learning, model prediction, and sentiment analysis.
 
-The package delivery business generates real-time data courtesy of the delivery truck IoT sensors, the dashcam video feeds, and the web server logs. Therefore, Azure Data Lake Storage is an ideal choice to run analytics workloads on the package delivery business' real-time data streams.
+The package delivery business generates real-time data courtesy of the delivery truck IoT sensors, the dash cam video feeds, and the web server logs. Therefore, Azure Data Lake Storage is an ideal choice to run analytics workloads on the package delivery business' real-time data streams.

@@ -2,10 +2,11 @@
 uid: learn.introduction-to-azure-data-lake-storage.2-what-is-azure-data-lake-storage
 title: What is Azure Data Lake Storage?
 metadata:
+  ms.prod: learning-azure
   unitType: learning-content
   title: What is Azure Data Lake Storage?
   description: Learn the basic features and concepts of Azure Data Lake Storage.
-  ms.date: 4/23/2021
+  ms.date: 06/17/2021
   author: paulwp
   ms.author: v-pmcfedries
   ms.topic: interactive-tutorial
