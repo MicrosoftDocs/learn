@@ -43,7 +43,7 @@ quiz:
     - content: "Use disk bursting."
       isCorrect: false
       explanation: "Although the administrator can use disk bursting to improve the application performance, this is usually used for unplanned scenarios."
-    - content: "Change the performance tier."
+    - content: "Change the performance tiers."
       isCorrect: true
       explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
     - content: "Use read/write caching on the disk."
