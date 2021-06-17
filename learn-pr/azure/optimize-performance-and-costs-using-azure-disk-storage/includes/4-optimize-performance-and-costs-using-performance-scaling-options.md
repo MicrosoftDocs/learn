@@ -12,7 +12,7 @@ You can adjust and balance the IOPS, throughput, and latency of your Azure disks
 
 You might have events – like a seasonal promotion or performance testing - where the application requires, on a temporary basis, higher demands on performance. You can change the performance tier on Premium SSDs without increasing the size of the disks when you need to meet a higher performance demand, allowing you to optimize costs. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 MBps. Because of a seasonal sale, the interest for your marketing application has increased dramatically and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MBps throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you'll be charged for the price of that tier. In this example, you'll be charged the price of P30.
 
-On Premium SSDs, Azure offers this functionality in preview to a limited number of regions. Azure also currently supports the ability to dynamically change your performance for Ultra Disks without dismounting it from the VM
+On Premium SSDs, Azure offers this functionality in preview to a limited number of regions. Azure also currently supports the ability to dynamically change your performance for Ultra Disks without dismounting it from the VM.
 
 ## Change the performance tier on Premium SSDs while in use by the VMs
 
