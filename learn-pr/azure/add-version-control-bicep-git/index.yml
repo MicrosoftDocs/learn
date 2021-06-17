@@ -12,7 +12,7 @@ metadata:
 title: Add version control to your Bicep code by using Git
 summary: TODO
 abstract: |
-  By the end of this module, you'll be able to:
+  After completing this module, you'll be able to:
     - Explain the benefits of version control and Git
     - Initialize a Git repository
     - Commit Bicep templates to a Git repository
@@ -20,8 +20,9 @@ abstract: |
     - Create and merge a branch
     - Explain the basic principles of trunk-based development.
 prerequisites: |
-  - Familiarity with basic Bicep template structure and deployments.
-  - TODO
+  You should be familiar with:
+    - Creating and deploying basic Bicep templates, including modules.
+    - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
