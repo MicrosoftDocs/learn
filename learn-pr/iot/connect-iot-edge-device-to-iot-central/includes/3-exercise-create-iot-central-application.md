@@ -42,7 +42,7 @@ The following steps create an IoT Central application and generate an API token 
 
 1. In another browser tab or window, navigate to the URL shown in the output of the previous command. This page in the web UI is where you create a device template:
 
-    :::image type="content" source="../media/3-device-templates.png" alt-text="The device templates page where you manage the templates in your IoT Central application":::
+    :::image type="content" source="../media/3-device-templates.png" alt-text="The device templates page where you manage the templates in your IoT Central application.":::
 
 1. Select **Create a device template**, choose the **Azure IoT Edge** tile, and then select **Next: Customize**.
 

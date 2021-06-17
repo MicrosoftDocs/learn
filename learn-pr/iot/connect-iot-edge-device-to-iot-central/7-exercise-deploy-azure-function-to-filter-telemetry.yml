@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-deploy-azure-function-to-filter-telemetry
-title: Exercise - Deploy an Azure function to Iot Edge
+title: Exercise - Deploy an Azure function to IoT Edge
 metadata:
-  title: Exercise - Deploy an Azure function to Iot Edge
-  description: Exercise - Deploy an Azure function to Iot Edge
+  title: Exercise - Deploy an Azure function to IoT Edge
+  description: Exercise - Deploy an Azure function to IoT Edge
   ms.date: 01/15/2021
   author: dominicbetts
   ms.author: dobett

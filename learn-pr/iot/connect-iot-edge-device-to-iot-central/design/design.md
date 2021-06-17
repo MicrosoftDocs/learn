@@ -74,7 +74,7 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
 
 1. **Exercise - Create an IoT Central application**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
     - Install the `az` IoT extension
     - Use an `az` command to create an IoT Central application
@@ -100,7 +100,7 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
         - Docker
         - Modules
         - Deployment manifests
-    - Does does using a Linux VM facilitate end-to-end testing for IoT Edge
+    - Does using a Linux VM facilitate end-to-end testing for IoT Edge
     - How to deploy IoT Edge to a Linux VM
     - How to interact with the IoT Edge device from IoT Central
 
@@ -108,9 +108,9 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
 
 1. **Exercise - Deploy a IoT Edge device and manage and control it from IoT Central**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
-    - Use the ARM template and script to deploy the IoT Edge device
+    - Use the Azure Resource Manager template and script to deploy the IoT Edge device
     - View the running modules in IoT Central
     - View the telemetry in IoT Central
     - Set a property in IoT Central
@@ -131,9 +131,9 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
     - Role of Azure functions in IoT Edge
     - How to deploy an Azure function to IoT Edge
 
-1. **Exercise - Deploy an Azure Function to Iot Edge**
+1. **Exercise - Deploy an Azure Function to IoT Edge**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
     - Create an Azure function that filters telemetry
     - Create an IoT Edge module to package the function
@@ -143,10 +143,10 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
 
 1. **Knowledge check**
 
-    What types of questions will test *Deploy and Azure Function to Iot Edge*?
+    What types of questions will test *Deploy and Azure Function to IoT Edge*?
 
     - What's the benefit of running an Azure Function at the Edge as opposed to in the cloud?
-    - What do you need to configure in the deployment manifest when you adda new module?
+    - What do you need to configure in the deployment manifest when you add a new module?
 
 1. **Summary**
 
@@ -156,8 +156,8 @@ Identify the subtasks of *Connect an IoT Edge device to your IoT Central applica
 
     You wanted to deploy a single, internet-connected, device in each store that forwards data from multiple local sensors to your IoT Central application. To enable this scenario, you needed use IoT Edge in the device.
 
-    Without IoT Edge you would have needed multiple internet-connected devices in each store which would have made the solution more costly and complex.
+    Without IoT Edge, you would have needed multiple internet-connected devices in each store that would have made the solution more costly and complex.
 
-    You also wanted to reduce the amount of data sent from each store. By using a Azure Function deployed on the IoT Edge device you implement local filtering.
+    You also wanted to reduce the amount of data sent from each store. By using an Azure Function deployed on the IoT Edge device, you implement local filtering.
 
-    By using the IoT Central and IoT Edge you were able to create a solution with a simpler and less costly infrastructure.
+    By using the IoT Central and IoT Edge, you were able to create a solution with a simpler and less costly infrastructure.
