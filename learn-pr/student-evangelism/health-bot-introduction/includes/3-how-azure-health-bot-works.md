@@ -24,4 +24,4 @@ The interactive symptom checker and medical database built in to Health Bot enab
 Health Bot is designed to meet the regulatory requirements of the healthcare industry, so it's important mention the issues of trust and compliance. The information that each instance of the Health Bot Service handles is privacy protected to HIPAA standards. HIPAA mandates industry-wide standards for healthcare information on electronic billing and other processes. HIPAA also requires the protection and confidential handling of protected health information.
 
 > [!NOTE]
-> You can find the Azure Health Bot list of certifications in the [official documentation](https://azure.microsoft.com/services/bot-services/health-bot/) in the Trust and Compliance category.
+> You can find the Azure Health Bot list of certifications in the [official documentation](https://azure.microsoft.com/services/bot-services/health-bot/?azure-portal=true) in the Trust and Compliance category.
