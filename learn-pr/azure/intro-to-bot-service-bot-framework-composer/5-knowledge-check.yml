@@ -48,14 +48,14 @@ quiz:
     - content: "Bot Framework Emulator"
       isCorrect: false
       explanation: "Incorrect. The Bot Framework Emulator  is used to test and debug bots that you've created."
-  - content: "Which of the following built-in extended capabilities does Azure Bot Service support?"
+  - content: "Which of the following built-in extended capabilities does Azure Bot Service NOT support?"
     choices:
     - content: "LUIS"
-      isCorrect: true
-      explanation: "Correct. Azure Bot Service supports built-in LUIS integration."
-    - content: "QnAMaker"
-      isCorrect: true
-      explanation: "Correct. Azure Bot Service supports built-in QnAMaker integration."
-    - content: "Text Analytics"
       isCorrect: false
-      explanation: "Incorrect. Azure Bot Service does not have built-in support for Text Analytics. You can, however, integrate Azure Cognitive services via REST API to provide Text Analytics functionality."
+      explanation: "Incorrect. Azure Bot Service supports built-in LUIS integration."
+    - content: "QnAMaker"
+      isCorrect: false
+      explanation: "Incorrect. Azure Bot Service supports built-in QnAMaker integration."
+    - content: "Text Analytics"
+      isCorrect: true
+      explanation: "Correct. Azure Bot Service does not have built-in support for Text Analytics. You can, however, integrate Azure Cognitive services via REST API to provide Text Analytics functionality."
