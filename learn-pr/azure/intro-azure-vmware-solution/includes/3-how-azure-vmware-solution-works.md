@@ -131,7 +131,7 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The diagram below illustrates the relationship of the encryption keys to Azure VMware Solution.
 
-:::image type="icon" source="../media/3-avs-security-overiew.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
+:::image type="icon" source="../media/3-avs-security-overview.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
 ## Get started with Azure VMware Solution
 
