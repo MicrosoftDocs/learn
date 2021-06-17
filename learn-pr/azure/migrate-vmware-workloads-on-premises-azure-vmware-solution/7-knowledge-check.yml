@@ -14,28 +14,28 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Let's say Monica has vSphere 5.5 deployed within her on-premises environment. What would she have to do to deploy HCX within her environment?"
+  - content: "Let's say Monica has vSphere 5.5 deployed within an on-premises VMware environment. What needs to be done to deploy HCX?"
     choices:
     - content: "Deploy and downgrade the HCX connector appliance on-premises to get support for the migration."
       isCorrect: true
-      explanation: "She must deploy and downgrade the HCX connector appliance on-premises. This allows for a supported migration pattern into Azure VMware Solution."
-    - content: "She can't deploy HCX to conduct any migrations into Azure VMware Solution."
+      explanation: "Monica must deploy and downgrade the HCX connector appliance on-premises, which allows for a supported migration pattern into Azure VMware Solution."
+    - content: "HCX can't be deployed to conduct any migrations into Azure VMware Solution."
       isCorrect: false
-      explanation: "HCX 4.0 can still be used for an older vSphere version."
+      explanation: "HCX can still be used for an older vSphere version."
     - content: "Deploy Azure VMware Solution in a different region."
       isCorrect: false
-      explanation: "While possible, deploying Azure VMware Solution to a different region will not help migrate VMs from vSphere 5.5 to Azure VMware Solution."
-  - content: "Alberto finds he can't successfully establish an HCX site pairing. What might be the issue?"
+      explanation: "While possible, deploying Azure VMware Solution to a different region won't help migrate VMs from vSphere 5.5 to Azure VMware Solution."
+  - content: "Alberto can't successfully establish an HCX site pairing. What might be the issue?"
     choices:
-    - content: "He needs to re-download the HCX Connector OVA file."
+    - content: "Download the HCX Connector OVA file again."
       isCorrect: false
-      explanation: "If he is at this step in the process, HCX downloaded correctly for him."
-    - content: "He'll need to redeploy the HCX Connector OVA file on-premises."
+      explanation: "If Alberto is at this step in the process, HCX downloaded correctly."
+    - content: "The HCX Connector OVA file needs redeployment on-premises."
       isCorrect: false
-      explanation: "If Alberto is at this step in the process, he HCX deployed correctly."
-    - content: "The VMware HCX Connector can't route to his HCX Cloud Manager IP over port 443."
+      explanation: "If Alberto is at this step in the process, HCX deployed correctly."
+    - content: "The VMware HCX Connector can't route to Alberto's HCX Cloud Manager IP over port 443."
       isCorrect: true
-      explanation: "The ability to route traffic over port 443 needs to be accounted for if Alberto cannot establish an HCX site pairing."
+      explanation: "The ability to route traffic over port 443 must be accounted for if Alberto can't establish an HCX site pairing."
   - content: "In order for the VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?"
     choices:
     - content: "443"
@@ -52,9 +52,9 @@ quiz:
     - content: "Check permissions on the subscription and resource group."
       isCorrect: false
       explanation: "This issue involves HCX directly, not any permissions in the Azure portal."
-    - content: "Ports UDP 500/4500 are not open between the on-premises and Azure VMware Solution network profiles."
+    - content: "Ports UDP 500/4500 aren't open between the on-premises and Azure VMware Solution network profiles."
       isCorrect: true
       explanation: "UDP ports 500/4500 need to be open between the on-premises and Azure VMware Solution 'uplink' network profiles."
     - content: "Redeploy HCX on-premises to connect to Azure VMware Solution."
       isCorrect: false
-      explanation: "Redeploying the HCX appliance on-premises will not help Sai create a service mesh."
+      explanation: "Redeploying the HCX appliance on-premises won't help create the service mesh."
