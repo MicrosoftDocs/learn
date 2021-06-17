@@ -1,8 +1,8 @@
-VMware HCX Advanced Cloud Manager deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware HCX (HCX) Advanced Cloud Manager deploys by default in Azure VMware Solution (AVS). After AVS deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with AVS, you need to configure a site pair between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
 ## What is VMware HCX?
 
-VMware HCX (HCX) is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
+VMware HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises data centers to Azure. The HCX appliance links on-premises VMware environments to AVS at the networking layer.
 
 As a migration tool, HCX abstracts both on-premises and cloud resources to present them as a single resource for VM workloads. HCX also allows for bi-directional migration of virtual machines from on-premises VMware environments to AVS directly.
 

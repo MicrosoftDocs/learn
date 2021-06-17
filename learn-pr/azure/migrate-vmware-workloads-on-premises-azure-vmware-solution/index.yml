@@ -19,7 +19,7 @@ prerequisites: |
   - Experience using the Azure portal for accessing and creating resources.
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and HCX.
   - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR) and subnets.
-  - (Optional) Access to an Azure subscription with contributor rights assigned to deploy an Azure VMware Solution environment.
+  - (Optional) Access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment.
 iconUrl: /learn/achievements/migrate-to-azure-vmware-solution.svg
 levels: 
   - intermediate
