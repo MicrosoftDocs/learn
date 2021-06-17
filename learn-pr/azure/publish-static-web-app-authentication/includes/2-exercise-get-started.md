@@ -6,7 +6,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 Next, create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
-1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/generate?azure-portal=true) for the template repository.
+1. Navigate to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-authentication/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-static-web-app-authn**

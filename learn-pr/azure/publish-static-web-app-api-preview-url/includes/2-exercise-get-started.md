@@ -6,7 +6,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 Create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
 
-1. Go to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
+1. Go to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
 
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 
