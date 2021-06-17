@@ -134,18 +134,6 @@ Open Performance Recommendations from the **Intelligent Performance** section of
 > [!NOTE]
 > For more information on Database Monitoring, see the **Summary** unit at the end of this training.
 
-## OpenTelemetry
-
-OpenTelemetry is an open source, vendor-agnostic, single distribution of libraries to provide metrics collection and distributed tracing for services.
-OpenTelemetry standardizes what telemetry data looks like and is a set of APIs, SDKs, tooling, and integrations that are designed for the creation and management of telemetry data such as traces, metrics, and logs.
-
-For new environments, OpenTelemetry is deployed as an agent on each host within an environment and configured to send telemetry data to the user’s desired back-end(s).
-For legacy environments, the OpenTelemetry supports many popular open-source wire formats including Jaeger, Prometheus, and Fluent Bit.
-Once OpenTelemetry data has been exported to Azure Monitor, you can access Application Insights and distributed traces and metrics.
-
-> [!NOTE]
-> For more information on OpenTelemetry, see the Summary unit at the end of this training.
-
 ## UI monitoring
 
 If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, as well as users and session counts. All these can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.

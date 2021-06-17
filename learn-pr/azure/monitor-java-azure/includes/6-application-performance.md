@@ -2,7 +2,7 @@ In this unit, we look at Application Performance Monitoring (APM) concepts.
 
 ## Continuous Monitoring
 
-Continuous monitoring of applications in production environments is typically implemented with Application Performance Management (APM) solutions that intelligently monitor, analyze, and manage cloud, on-premise, and hybrid applications and IT infrastructure. APM solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
+Continuous monitoring of applications in any environments is typically implemented with Application Performance Management (APM) solutions that intelligently monitor, analyze, and manage cloud, on-premise, and hybrid applications and IT infrastructure. APM solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
 
 APM provides visibility into all your applications with the following features:
 
