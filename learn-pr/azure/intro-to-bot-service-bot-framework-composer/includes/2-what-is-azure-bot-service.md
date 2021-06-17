@@ -1,4 +1,4 @@
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. The Azure Bot Service enables you to create bots that use converstational AI to interact with customers and solve business problems. Bots created by using the Azure Bot Service perform three core tasks:
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. The Azure Bot Service enables you to create bots that use conversational AI to interact with customers and solve business problems. Bots created by using the Azure Bot Service perform three core tasks:
 
 ## What does a bot do?
 

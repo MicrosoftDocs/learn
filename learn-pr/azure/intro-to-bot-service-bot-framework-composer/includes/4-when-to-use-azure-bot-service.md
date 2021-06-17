@@ -9,9 +9,11 @@ As we've seen, the Azure Bot Service has several features for us to use. Here, w
 - Which bot creation tool best fits the requirements?
 
 ## Choosing a bot creation tool
+
 We have two primary bot creation methods available, Bot Framework Composer and Bot Framework SDK. Each method has qualities that we'll evaluate against our requirements to choose the best fit for you organization.
 
 ### Bot Framework Composer
+
 The Bot Framework Composer is a visual designer that requires very little development experience or code creation. For standard bot scenarios, authoring dialog experiences with a visual designer is more efficient and enables easier modeling of more sophisticated conversational experiences where context switching, interruption and more natural and dynamic conversation flows are important. More complex activities such as integrating with dependencies such as REST Web Services are best suited towards code and  Composer bots can be extended with code after they're created. This combination provides simple bot design and creation, and it enables extensibility after the bot is deployed.
 
 Some of the advantages of developing bots in Composer include:
