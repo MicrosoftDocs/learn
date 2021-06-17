@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-cognitive-services.introduction
+title: Introduction
+metadata:
+  title: Demo-Introduction
+  description: "Introduction"
+  ms.date: 06/17/2021
+  author: gmalc
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
