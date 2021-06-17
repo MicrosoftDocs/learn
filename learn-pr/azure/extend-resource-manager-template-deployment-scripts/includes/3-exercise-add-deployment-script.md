@@ -210,53 +210,60 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ## Deploy the template
 
-::: zone pivot="jsoncli,bicepcli"
+::: zone pivot="jsoncli"
 
-[!include[](../../includes/azure-template-exercise-nosandbox-intro-cli.md)]
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-cli.md)]
 
-[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-cli.md)]
+::: zone-end
 
-### Create a resource group for the exercise
+::: zone pivot="bicepcli"
+
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
+
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-powershell.md)]
+
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
+
+::: zone-end
 
 Next, you need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
+
+::: zone pivot="jsoncli,bicepcli"
+
+### Create a resource group for the exercise
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_1"
 az group create --location eastus --name $resourceGroupName
 ```
 
-> [!NOTE]
-> If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
-
 ::: zone-end
 
 ::: zone pivot="jsonpowershell,biceppowershell"
-
-[!include[](../../includes/azure-template-exercise-nosandbox-intro-powershell.md)]
-
-[!include[](../../includes/azure-template-exercise-nosandbox-sign-in-powershell.md)]
-
-### Create a resource group for the exercise
-
-Next, you need to create a resource group to contain the resources you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
-
-From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 
 ```azurepowershell
 $resourceGroupName = 'learndeploymentscript_exercise_1'
 New-AzResourceGroup -Location eastus -Name $resourceGroupName
 ```
 
+::: zone-end
+
 > [!NOTE]
 > If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
 
-::: zone-end
+### Deploy the template to Azure
 
 ::: zone pivot="jsoncli"
-
-### Deploy the template to Azure
 
 The following code deploys the ARM template to Azure. You'll see a successful deployment.
 
@@ -277,8 +284,6 @@ az deployment group create \
 
 ::: zone pivot="bicepcli"
 
-### Deploy the template to Azure
-
 The following code deploys the ARM template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
@@ -298,8 +303,6 @@ az deployment group create \
 
 ::: zone pivot="jsonpowershell"
 
-### Deploy the template to Azure
-
 The following code deploys the template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure PowerShell commands in the terminal.
@@ -317,8 +320,6 @@ New-AzResourceGroupDeployment `
 ::: zone-end
 
 ::: zone pivot="biceppowershell"
-
-### Deploy the template to Azure
 
 The following code deploys the template to Azure. You'll see a successful deployment.
 
