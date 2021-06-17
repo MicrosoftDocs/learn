@@ -2,10 +2,11 @@
 uid: learn.introduction-to-azure-data-lake-storage.6-summary
 title: Summary
 metadata:
+  ms.prod: learning-azure
   unitType: summary
   title: Summary
   description: Summary for the Introduction to Azure Data Lake Storage module.
-  ms.date: 4/23/2021
+  ms.date: 17/06/2021
   author: paulwp
   ms.author: v-pmcfedries
   ms.topic: interactive-tutorial
