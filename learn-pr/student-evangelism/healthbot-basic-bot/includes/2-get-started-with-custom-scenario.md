@@ -26,13 +26,6 @@ The Azure Health Bot service supports several built-in scenarios. For example, t
 
 1. Select **Create**. Configuration of the scenario might take some time.
 
-After the scenario is configured, a screen like the following one appears.
-
-:::image type="content" source="../media/2-configured.png" alt-text="Screenshot that shows the screen that appears after a new scenario is configured.":::
-
-The fields, visual editor, and elements provided in the scenario editor allow you to author, test, and debug scenarios.
-
-The screen has four main areas. On the **Designer** tab, you can see the code of the block that you've designed. Select the **Code** tab to see the JSON format of the block.
-
 :::image type="content" source="../media/2-code.png" alt-text="Screenshot that shows the Designer and Code tabs.":::
 
+After the scenario is configured, a screen containing four main areas. On the **Designer** tab, you can see the bot that you've designed. Select the **Code** tab to see the JSON format of the bot.

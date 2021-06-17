@@ -24,7 +24,7 @@ The yes/no prompt is essentially a Boolean prompt combined with a decision s
 
 ### Statement
 
-The configuration pane is quite simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
+A Statement triggers an output from the health bot instance with no expectation of a response. The configuration pane is quite simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
 
 ## Flow control
 
@@ -40,11 +40,11 @@ The flow of the script will branch according to the yes/no nodes of the *branch*
 
 The switch element defines a multi-way split in the flow of the scenario according to the evaluated expression. Instead of using a simple branch element that's set to two exit points, the switch statement allows multiple exit points to simplify the scenario flow.
 
-Sharing the same functionality between different scenarios is common. It's possible to create a scenario that can be called throughout the project. It can receive input parameters and return output to the calling scenario, making it reusable. The variables defined in such a scenario are local to the instance of the sub-scenario. So they won't affect other variables, even variables with the same name.
+Sharing the same functionality between different scenarios is common. It's possible to create a scenario that can be called throughout the project. It can receive input parameters and return output to the calling scenario, making it reusable. The variables defined in such a scenario are local to the scope of the instance. So they won't affect other variables, even variables with the same name.
 
 ### Begin
 
-The begin element invokes a sub-scenario. Execution of the current scenario is resumed after the sub-scenario ends.
+The begin element invokes a sub-scenario. Sub-scenario is another smaller scenario which is connected to the main scenario through a keyword or action. Execution of the current scenario is resumed after the sub-scenario ends.
 
 Select the relevant scenario trigger value from the dropdown menu. Define the arguments with either a literal or a variable object. Define the output variable name with the return value from the called scenario.
 

@@ -2,4 +2,4 @@ This module introduced you to the Azure Health Bot service and helped you to cre
 
 In this module, you learned that the canvas is a place to drag and drop blocks. You simply connect them to decide the flow of the bot. The **Code** option shows a JSON format of the graphical steps. 
 
-This was a basic informative bot without any interrupting or breaking scenario involved. The next module will show you how to enhance the bot with more advanced functionalities.
+This was a basic informative bot without any interrupting or breaking scenario involved. The next module (Module Enhanced healthcare bot) will show you how to enhance the bot with more advanced functionalities.
