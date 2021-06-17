@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-container-for-use-with-cognitive-services
 metadata:
-  title: Investigate container for use with Cognitive Services
-  description: "Investigate container for use with Cognitive Services"
-  ms.date: 04/01/2021
+  title: Deploy cognitive services in containers
+  description: "Deploy cognitive services in containers"
+  ms.date: 06/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Investigate container for use with Cognitive Services
+title: Deploy cognitive services in containers
 summary: Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
 abstract: |
   After completing this module, learners will be able to:
@@ -35,10 +35,9 @@ products:
 - azure-container-instances
 units:
 - learn.wwl.investigate-container-for-use-with-cognitive-services.introduction-to-containerization-of
-- learn.wwl.investigate-container-for-use-with-cognitive-services.create-containers-for-reuse
-- learn.wwl.investigate-container-for-use-with-cognitive-services.deploy-to-container
-- learn.wwl.investigate-container-for-use-with-cognitive-services.secure-container
-- learn.wwl.investigate-container-for-use-with-cognitive-services.consume-from-container
+- learn.wwl.investigate-container-for-use-with-cognitive-services.understand-containers
+- learn.wwl.investigate-container-for-use-with-cognitive-services.use-cognitive-services-containers
+- learn.wwl.investigate-container-for-use-with-cognitive-services.exercise-use-container
 - learn.wwl.investigate-container-for-use-with-cognitive-services.knowledge-check
 - learn.wwl.investigate-container-for-use-with-cognitive-services.summary
 badge:
