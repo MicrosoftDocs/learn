@@ -4,7 +4,7 @@ GitHub Actions are quickly becoming a core feature to DevOps in many organizatio
 
 Suppose your organization is already using GitHub Actions and, as it is scaling up operations, decided to upgrade its GitHub instance to GitHub Enterprise Cloud or Enterprise Server. To take full advantage of all the features available in GitHub Enterprise, you have been asked by your CIO to evaluate how GitHub Actions are currently used by the development teams in your organization. You also need to establish a plan to optimize the use of actions and workflows currently in place. But first, you really need to understand what GitHub Actions options are available to you in your enterprise instance.
 
-In this module, you'll' discover which GitHub Actions features are available for your enterprise instance. You'll then be able to use them according to your specific use case. This module is organized around three units that will cover three key features of GitHub Actions: _actions and workflows, runners, and encrypted secrets_.
+In this module, you'll discover which GitHub Actions features are available for your enterprise instance. You'll then be able to use them according to your specific use case. This module is organized in three parts that cover three key features of GitHub Actions: _actions and workflows, runners, and encrypted secrets_.
 
 ## Learning objectives
 

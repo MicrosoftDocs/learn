@@ -1,4 +1,4 @@
-This unit explores the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of GitHub Actions runners in your enterprise.
+In this part, you explore the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of GitHub Actions runners in your enterprise.
 
 ## Choose an appropriate runner for your workload
 
@@ -12,7 +12,7 @@ GitHub-hosted runners offer a quicker, simpler way to run your workflows, while 
 The table below compares GitHub-hosted runners versus self-hosted runners. Use it to choose the appropriate runner for your workload.
 
 | **GitHub-hosted runners**                                                                                                        | **Self-hosted runners**                                                                                                                                              |
-| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Receive automatic updates for the operating system, preinstalled packages and tools, and the self-hosted runner application. | Receive automatic updates for the self-hosted runner application only. You are responsible for updating the operating system and all other software.             |
 | Are managed and maintained by GitHub.                                                                                        | Can use cloud services or local machines that you already pay for. <br> Are customizable to your hardware, operating system, software, and security requirements. |
 | Provide a clean instance for every job execution.                                                                            | Don't need to have a clean instance for every job execution.                                                                                                     |
@@ -24,11 +24,11 @@ In Enterprise Cloud and Enterprise Server, self-hosted runner groups enable you 
 
 Let's say you want to authorize only specific organizations in your enterprise instance to deploy code to your production environment. In order to achieve this, you could create a group containing all the runners deploying code into production at enterprise level and restrict the access to the group to the specific organizations authorized to deploy code.
 
-To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, click **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for organizations.
+To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for organizations.
 
 :::image type="content" source="../media/create_group.png" alt-text="New group screen with group name example for all organizations":::
 
-To create groups at organization level, navigate to your organization **Settings** and then to **Actions** in the sidebar. In the **Self-hosted runners** section, click **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for repositories.
+To create groups at organization level, navigate to your organization **Settings** and then to **Actions** in the sidebar. In the **Self-hosted runners** section, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for repositories.
 
 :::image type="content" source="../media/create_group_2.png" alt-text="New group screen with group name example for all repositories":::
 
@@ -43,7 +43,7 @@ Enterprise Cloud and Enterprise Server offer multiple features enabling you to c
 Self-hosted runners automatically receive default labels when they are added to GitHub Actions. These default labels indicate the operating system and hardware architecture of the runner as shown in the table below:
 
 |       **Default label**        |                    **Description**                    |
-|:------------------------------:|:-----------------------------------------------------:|
+|--------------------------------|-------------------------------------------------------|
 |         `self-hosted`          |   Default label applied to all self-hosted runners    |
 | `linux`, `windows`, or `macOS` |   Applied depending the runner's operating system.    |
 |   `x64` , `ARM`, or `ARM64`    | Applied depending the runner's hardware architecture. |
@@ -52,22 +52,22 @@ On top of these default labels, Enterprise Cloud and Enterprise Server offer you
 
 To add a label to a self-hosted runner, navigate to the GitHub Actions settings of the organization, repository, or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise). When you are there:
 
-1. Locate the list of runners under **Self-hosted runners**. If your runner is in a group, locate the runner group and click the runner dropdown to view the list of runners.
+1. Locate the list of runners under **Self-hosted runners**. If your runner is in a group, locate the runner group and select the runner dropdown to view the list of runners.
 
 :::image type="content" source="../media/locate_runner.png" alt-text="Example runner group with dropdown highlighted":::
 
-2. Locate the runner you want to update and click the label dropdown to view the label selection menu. This menu displays all the custom labels available to your self-hosted runner. Labels already assigned to your self-hosted runner have a tick next to them.
+2. Locate the runner you want to update and select the label dropdown to view the label selection menu. This menu displays all the custom labels available to your self-hosted runner. Labels already assigned to your self-hosted runner have a tick next to them.
 
 :::image type="content" source="../media/show_labels.png" alt-text="Example runner with label menu displayed":::
 
-3. Click an existing label to add it to your runner or type the name of your new label in the **Filter labels** field and click **Create new label**. The label is automatically added to your runner when you create it.
+3. Click an existing label to add it to your runner or type the name of your new label in the **Filter labels** field and select **Create new label**. The label is automatically added to your runner when you create it.
 
 ### Proxy servers
 
 If you need a self-hosted runner to communicate with GitHub via a proxy server, both Enterprise Cloud and Enterprise Server enable you to change proxy configurations using the following environment variables:
 
 | **Environment variable** |                                                                                                   **Description**                                                                                                   |
-|:------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      `https_proxy`       | Proxy URL for HTTPS traffic. You can also include basic authentication credentials, if required. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
 |       `http_proxy`       |  Proxy URL for HTTP traffic. You can also include basic authentication credentials, if required. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
 |        `no_proxy`        | Comma-separated list of hosts that should not use a proxy. Only hostnames are allowed in `no_proxy`, you cannot use IP addresses. For example: <br> `example.com` <br> `example.com,myserver.local:443,example.org` |
@@ -75,13 +75,13 @@ If you need a self-hosted runner to communicate with GitHub via a proxy server, 
 > [!Note]
 > Proxy environment variables are read when the self-hosted runner application starts, so you must set the environment variables before configuring or starting the application. If your proxy configuration changes, you must restart the self-hosted runner application.
 
-On Windows machines, the proxy environment variable names are not case-sensitive. On Linux and macOS machines, we recommend that you use all lowercase environment variables. If you have an environment variable in both lowercase and uppercase on Linux or macOS, for example `https_proxy` and `HTTPS_PROXY`, the self-hosted runner application uses the lowercase environment variable.
+On Windows, the proxy environment variable names are not case-sensitive. On Linux and macOS, we recommend that you use all lowercase environment variables. If you have an environment variable in both lowercase and uppercase on Linux or macOS, for example `https_proxy` and `HTTPS_PROXY`, the self-hosted runner application uses the lowercase environment variable.
 
 ### IP allow lists
 
 If your Enterprise Cloud or Enterprise Server organization has configured IP allow lists, you must add the IP address or IP address range of your self-hosted runners to the IP allow list in order for your self-hosted runners to communicate with GitHub.
 
-To add the IP address or IP address range of your self-hosted runners to an organization IP allow list, navigate to your organization **Settings** and click **Organization security** in the sidebar. Under **IP Address**, add the IP address or IP address range of your self-hosted runners in CIDR notation and click **+ Add**.
+To add the IP address or IP address range of your self-hosted runners to an organization IP allow list, navigate to your organization **Settings** and select **Organization security** in the sidebar. Under **IP Address**, add the IP address or IP address range of your self-hosted runners in CIDR notation and select **+ Add**.
 
 ## Monitor and troubleshoot self-hosted runners
 
@@ -89,12 +89,12 @@ Both Enterprise Cloud and Enterprise Server offer tools enabling you to monitor,
 
 The main steps you can take when troubleshooting a self-hosted runner are:
 
-- Check the status of the runner in the GitHub Actions settings of the organization, repository or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise).
-- Review the activities and automatic updates of the runner in the `Runner_` files in the `_diag` folder.
-- Review the status of the jobs the runner executed in the `Worker_` files in the `_diag` folder.
+1. Check the status of the runner in the GitHub Actions settings of the organization, repository or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise).
+1. Review the activities and automatic updates of the runner in the `Runner_` files in the `_diag` folder.
+1. Review the status of the jobs the runner executed in the `Worker_` files in the `_diag` folder.
 
 According to the operating system of your runner, you can take additional steps as shown in the table below:
 
 |                             **Mac**                              |                            **Windows**                            |                              **Linux**                              |
-|:----------------------------------------------------------------:|:-----------------------------------------------------------------:|:-------------------------------------------------------------------:|
+|----------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------|
 | Check the self-hosted runner application service using `launchd` | Check the self-hosted runner application service using PowerShell | - Check the self-hosted runner application service using `journalctl` <br> - If your jobs require containers, check that Docker is installed and running and the Docker permissions using `systemctl`   |

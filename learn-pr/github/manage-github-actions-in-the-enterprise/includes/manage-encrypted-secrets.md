@@ -1,6 +1,6 @@
 Secrets are encrypted environment variables you can create to store tokens, credentials, or any other type of sensitive information your GitHub Actions workflows and actions might rely on. Once created, they become available to use in the workflows and actions that have access to the organization, repository, or repository environment where they are stored.
 
-This unit explores the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of encrypted secrets as well as explains how to access encrypted secrets in your workflows and actions.
+In this part, you explore the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of encrypted secrets as well as explains how to access encrypted secrets in your workflows and actions.
 
 ## Manage encrypted secrets at organization level
 
@@ -8,7 +8,7 @@ Creating encrypted secrets at organization level to store sensitive information 
 
 Let's say some developers writing workflows in your GitHub organization need the credentials to deploy code to production in some of their workflows. In order to avoid sharing this sensitive piece of information, you could create an encrypted secret containing the credentials at organization level. This way the credentials can be used in the workflows without being exposed.
 
-To create a secret at organization level, go to your organization **Settings** and click **Secrets > New organization secret** in the left sidebar. In the screen that appears, enter a name and a value and choose a repository access policy for your secret:
+To create a secret at organization level, go to your organization **Settings** and select **Secrets > New organization secret** in the left sidebar. In the screen that appears, enter a name and a value and choose a repository access policy for your secret:
 
 :::image type="content" source="../media/add_org_secret.png" alt-text="New secret screen for organizations":::
 
@@ -16,13 +16,13 @@ The access policy appears underneath the secret in the secret list once it is sa
 
 :::image type="content" source="../media/secret_access_policy.png" alt-text="Encrypted secrets example with access policy displayed":::
 
-You can click **Update** for more details on the configured permissions for your secret.
+You can select **Update** for more details on the configured permissions for your secret.
 
 ## Manage encrypted secrets at repository level
 
 If you need an encrypted secret to be scoped to a specific repository, GitHub Enterprise Cloud and GitHub Enterprise Server also let you create secrets at repository level.
 
-To create a secret at repository level, go to your repository **Settings** and click **Secrets > New repository secret** in the left sidebar. In the screen that appears, enter a name and a value for your secret:
+To create a secret at repository level, go to your repository **Settings** and select **Secrets > New repository secret** in the left sidebar. In the screen that appears, enter a name and a value for your secret:
 
 :::image type="content" source="../media/secret_repo.png" alt-text="New secret screen for repositories":::
 
