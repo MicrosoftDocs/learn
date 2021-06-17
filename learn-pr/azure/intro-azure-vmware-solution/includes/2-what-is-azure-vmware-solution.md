@@ -86,5 +86,3 @@ There are three different ways that AVS can be billed and charged. Customers hav
 | Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
 |    |         |         |
 
-
-
