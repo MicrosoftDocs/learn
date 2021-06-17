@@ -12,21 +12,21 @@ As we covered earlier, HCX provides several ways of migrating VMs into AVS: cold
 
 1. Select **Migrate**.
 
-    :::image type="content" source="../media/6-migrate-virtual-machines.png" alt-text="Screenshot showing where to start the migration for existing VMs in the on-premises VMware environment.":::
+    :::image type="content" source="../media/6-migrate-virtual-machines.png" alt-text="Screenshot of where to start the migration for existing VMs in the on-premises VMware environment.":::
 
 1. The list of virtual machines available for migration will appear in the display. Make the selections and select **Add**.
 
-    :::image type="content" source="../media/6-select-vms-migration.png" alt-text="Screenshot showing how to select the VMs for migration.":::
+    :::image type="content" source="../media/6-select-vms-migration.png" alt-text="Screenshot of how to select the VMs for migration.":::
 
 1. Next, you need to set the **Transfer and Placement**, **Switchover**, and **Extended** options for the VM being migrated.
 
 1. To set machine-specific **Transfer**, **Placement**, and **Switchover** options, select a specific virtual machine and expand the entry.
 
-    :::image type="content" source="../media/6-transfer-placement-switchover.png" alt-text="Screenshot showing where to set the transfer, placement, and switchover options.":::
+    :::image type="content" source="../media/6-transfer-placement-switchover.png" alt-text="Screenshot of where to set the transfer, placement, and switchover options.":::
 
 1. Select the destination network for each virtual machine to be migrated.
 
-    :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot showing where to configure the network settings for the VMware VM.":::
+    :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM.":::
 
 1. After the network configuration completes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 

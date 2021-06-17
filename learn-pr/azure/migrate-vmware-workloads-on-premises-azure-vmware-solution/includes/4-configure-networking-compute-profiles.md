@@ -15,13 +15,13 @@ The first step involves creating a site pair. A site pair provides network conne
 
 1. After logging in, under **Menu**, select **HCX**.
 
-    :::image type="content" source="../media/4-select-hcx.png" alt-text="Screenshot showing where to find HCX in the drop-down menu within vCenter on-premises.":::
+    :::image type="content" source="../media/4-select-hcx.png" alt-text="Screenshot of where to find HCX in the drop-down menu within vCenter on-premises.":::
 
 1. Under **Infrastructure**, select **Site Pairing**.
 
 1. Under **Pair your first site**, select the **Connect To Remote Site**.
 
-    :::image type="content" source="../media/4-connect-remote-site.png" alt-text="Screenshot displaying where to pair your first site and connect to the remote site in the HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-connect-remote-site.png" alt-text="Screenshot of where to pair your first site and connect to the remote site in the HCX Connector on-premises.":::
 
 1. Enter the AVS HCX Cloud Manager IP address you obtained from the last unit.
 
@@ -29,13 +29,13 @@ The first step involves creating a site pair. A site pair provides network conne
 
 1. Then select **Connect**. If you receive a messages about a certificate warning, import the certificate to continue.
 
-    :::image type="content" source="../media/4-connect-to-avs-hcx-cloud-manager.png" alt-text="Screenshot showing how to connect to the remote HCX URL from the on-premises HCX Connector.":::
+    :::image type="content" source="../media/4-connect-to-avs-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
 
 1. In order for the connection to work, the HCX Connector needs to route to the HCX Cloud Manager IP over port 443 via the ExpressRoute you have deployed on-premises.
 
 1. You'll see a screen showing that the HCX Cloud Manager in AVS and the on-premises VMware HCX Connector are connected or paired.
 
-    :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot showing site pairing is complete in the on-premises VMware environment.":::
+    :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot when site pairing is complete in the on-premises VMware environment.":::
 
 ## Create network profiles
 The VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. These network profiles will be created for each network intended for use with HCX. When creating network profiles, you'll use the IP segments identified during the HCX deployment planning phase.
@@ -55,7 +55,7 @@ The VMware HCX Connector on-premises deploys a set of automated virtual applianc
 
 1. For each network profile, select the network and port group, provide a name, and create the segment's IP pool. Then select **Create**.
 
-    :::image type="content" source="../media/4-example-configurations-network-profile.png" alt-text="Screenshot showing how to create a network profile within the HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-example-configurations-network-profile.png" alt-text="Screenshot of how to create a network profile within the HCX Connector on-premises.":::
 
 ## Create a compute profile
 
@@ -63,7 +63,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. Under **Infrastructure**, select **Interconnect > Compute Profiles > Create Compute Profile**.
 
-    :::image type="content" source="../media/4-create-compute-profile.png" alt-text="Screenshot showing where to create an HCX compute profile in the HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-create-compute-profile.png" alt-text="Screenshot of where to create an HCX compute profile in the HCX Connector on-premises.":::
 
 1. Enter a name for the profile and select **Continue**.
 
@@ -73,7 +73,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. Leave all default services checked that can be enabled with the HCX Advanced key and select **Continue**.
 
-    :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot showing the services selected for activation with the HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot of the services selected for activation with the HCX Connector on-premises.":::
 
 1. In **Select Service Resources**, select one or more service resources (clusters) to enable the selected VMware HCX services.
 
@@ -107,10 +107,10 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. Select **Finish** to create the compute profile.
 
-    :::image type="content" source="../media/4-compute-profile-done.png" alt-text="Screenshot that shows the compute profile information.":::
+    :::image type="content" source="../media/4-compute-profile-done.png" alt-text="Screenshot that shows the compute profile information in the on-premises HCX Connector.":::
 
 1. After the compute profile finishes creation, the compute profile will be listed in the **Compute Profiles** within **Interconnect**.
 
-:::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured.":::
+:::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured in the on-premises HCX Connector.":::
 
 In the next unit, we'll cover how to set up a service mesh to complete the HCX Connector configuration on-premises. All steps will be outlined so you can successfully configure within your environment.
