@@ -65,7 +65,7 @@ The scope of the end object is as follows:
 
 The Health Bot service is a highly configurable and extensible bot-building platform. It allows integration with other services and resources into your scenarios and flows. This capability has the potential to enhance conversations and provide an engaging experience to the user.
 
-:::image type="content" source="../media/4-advanced-funtionalities.png" alt-text="Screenshot that shows the four advanced functionalities: Data Connections, Global, Action, and L U.":::
+:::image type="content" source="../media/4-advanced-functionalities.png" alt-text="Screenshot that shows the four advanced functionalities: Data Connections, Global, Action, and L U.":::
 
 ### Data connections
 
