@@ -1,0 +1,4 @@
+- What is a commit?
+- How to commit using VS Code.
+- How to view history using VS Code.
+- Suggested repo layout (root has a _deploy_ folder with your _main.bicep_ file, and there's a _modules_ subfolder under that)

@@ -1,0 +1,4 @@
+- What is Git?
+- How does Git help with IaC?
+- Local and remote Git repositories.
+- Briefly introduce the VS Code tooling for working with Git.
