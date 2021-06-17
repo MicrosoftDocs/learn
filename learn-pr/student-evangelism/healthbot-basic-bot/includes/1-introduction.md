@@ -20,6 +20,6 @@ In this module, you will:
 ## Prerequisite modules
 
 - Introduction to the Health Bot service
-- Basic knowledge in JavaScript
+- Basic JavaScript knowledge
 
 **This module was produced in partnership with Meghana Chikkam and Shreyan J D Fernandes, Microsoft Learn student ambassadors, and the Azure Health Bot product group.**

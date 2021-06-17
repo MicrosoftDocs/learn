@@ -24,7 +24,7 @@ The yes/no prompt is essentially a Boolean prompt combined with a decision s
 
 ### Statement
 
-A Statement triggers an output from the health bot instance with no expectation of a response. The configuration pane is quite simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
+A statement triggers an output from the health bot instance with no expectation of a response. The configuration pane is quite simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
 
 ## Flow control
 
