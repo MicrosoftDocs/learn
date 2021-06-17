@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-cognitive-services
 metadata:
-  title: Secure cognitive services
-  description: "Learn how to secure Cognitive Services to prevent data loss and privacy violations for user data that may be a part of the solution."
-  ms.date: 09/13/2020
+  title: Secure Cognitive Services
+  description: "Secure Cognitive Services"
+  ms.date: 06/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,9 +12,9 @@ title: Secure Cognitive Services
 summary: Securing Cognitive Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
 abstract: |
   After completing this module, you will know how to:
-  - Apply Security Policies
-  - Manage Virtual Networks for Cognitive Services
-  - Manage Access Keys with the Azure Key Vault
+  - Consider authentication for Cognitive Services
+  - Manage network security for Cognitive Services
+  - Use Azure Policy to enforce configuration policies
 prerequisites: |
   - Active Azure subscription
   - Ability to navigate the Azure portal
@@ -36,7 +36,7 @@ units:
 - learn.wwl.secure-cognitive-services.introduction
 - learn.wwl.secure-cognitive-services.keys-with-azure-key-vault
 - learn.wwl.secure-cognitive-services.implement-network-security
-- learn.wwl.secure-cognitive-services.manage-privacy-policies
+- learn.wwl.secure-cognitive-services.exercise-secure-cognitive-services
 - learn.wwl.secure-cognitive-services.knowledge-check
 - learn.wwl.secure-cognitive-services.summary
 badge:

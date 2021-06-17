@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/13/2020
+  ms.date: 06/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,20 +13,28 @@ azureSandbox: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which property related to your Cognitive Services instance is most important to keep secret?"
+  - content: "You need to regenerate the primary subscription key for a Cognitive Services resource that an app uses. What should you do first to minimize service interruption for the app?"
     choices:
-    - content: "Subscription Key"
+    - content: "Switch the app to use the secondary key"
       isCorrect: true
-      explanation: "Correct. This is like your password to authenticate to the service and should be kept hidden from anyone who does not need it."
-    - content: "Endpoint"
+      explanation: "Correct. The app can use the secondary key to access the resource."
+    - content: "Change the resource endpoint"
       isCorrect: false
-      explanation: "Incorrect. The Endpoint is unique to your service but others cannot access your service with just the endpoint."
-    - content: "Resource Group"
+      explanation: "Incorrect. Changing the endpoint would not minimize service interruption."
+    - content: "Enable a firewall"
       isCorrect: false
-      explanation: "Incorrect. The service is created within a Resource Group but this value does not need to be kept secret."
-    - content: "Service Name"
+      explanation: "Incorrect. Enabling a firewall would not minimize service interruption."
+  - content: "You want to store the subscription keys for a Cognitive Services resource securely, so that authorized apps can retrieve them when needed. What kind of Azure resource should you provision."
+    choices:
+    - content: "Azure Storage"
       isCorrect: false
-      explanation: "Incorrect. The Service Name is part of the endpoint but does not need to be kept secret."
+      explanation: "Incorrect. You should not store credentials in a Storage account."
+    - content: "Azure Key Vault"
+      isCorrect: true
+      explanation: "Correct. Use Azure Key Vault to store credentials securely."
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service is used to host cloud apps, not to store sensitive data."
   - content: "When running code on your computer that connects to Cognitive Services, you receive an error that access is denied due to Virtual Network/Firewall rules. What configuration do you need to set in the Cognitive Services instance?"
     choices:
     - content: "In the Networking properties, configure Selected Networks and Private Endpoints."
@@ -38,17 +46,3 @@ quiz:
     - content: "In Access control, add your Azure Active Directory user account to a role."
       isCorrect: false
       explanation: "Incorrect. The Access control sets access for viewing or managing the service, not the network access."
-  - content: "What is the purpose of an assigned Azure Policy?"
-    choices:
-    - content: "Deny users access to resources."
-      isCorrect: false
-      explanation: "Incorrect. Each resource has access controls separate from Azure Policy."
-    - content: "Automate security configuration."
-      isCorrect: false
-      explanation: "Incorrect. You should set security configuration correctly at time of creation rather than rely on Azure Policy to remediate issues."
-    - content: "Configure network security."
-      isCorrect: false
-      explanation: "Incorrect. You should set network security on resources at time of creation rather than rely on Azure Policy to remediate issues."
-    - content: "Audit compliance of resources to the policy."
-      isCorrect: true
-      explanation: "Correct. An assigned Azure Policy will regularly check that resources comply with the rules in the policy."
