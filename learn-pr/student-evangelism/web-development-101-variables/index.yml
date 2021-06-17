@@ -16,7 +16,7 @@ abstract: |
   - When to use constants.
   - How storing your values as different types can create clarity in your code.
 prerequisites: None
-iconUrl: /learn/achievements//student-evangelism/web-development-101-variables.svg #TODO change
+iconUrl: /learn/achievements/student-evangelism/web-development-101-variables.svg #TODO change
 levels:
   - beginner
 roles:
