@@ -17,7 +17,7 @@ abstract: |
   - Explore how if and else are used in JavaScript.
   - Discover how to form conditions and make decisions with logical operators.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/web-development-101-if-else.svg #TODO change
 levels:
   - beginner
 roles:
