@@ -1,4 +1,4 @@
-After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for HCX Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) into an HCX enabled destination site (AVS).
+After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for VMware HCX (HCX) Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX enabled source site (on-premises) into an HCX enabled destination site (Azure VMware Solution - AVS).
 
 ## What is a service mesh?
 

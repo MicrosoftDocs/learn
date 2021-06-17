@@ -8,7 +8,7 @@ Azure VMware Solution (AVS) delivers an in-depth VMware environment as a service
 | NSX-T | Software-defined networking and security solution that extends across datacenters, clouds, and application frameworks.
 | VMware HCX | Software-defined abstraction layer between on-premises and AVS for VM migrations. |
 
-VMware HCX provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of cloud resources. The following diagram shows HCX deployed on-premises. HCX then replicates VMs in the on-premises datacenter to AVS in Azure. Once the VMs are in Azure, they are closer to the rich APIs of Azure for administration and maintenance.
+VMware HCX (HCX) provides infrastructure abstraction for VM migrations. Customers can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of cloud resources. The following diagram shows HCX deployed on-premises. HCX then replicates VMs in the on-premises datacenter to AVS in Azure. Once the VMs are in Azure, they are closer to the rich APIs of Azure for ongoing administration and maintenance.
 
 :::image type="icon" source="../media/1-hcx-diagram.png" border="false" alt-text="High-level overview of a VMware datacenter on-premises with HCX migrating VMs to AVS.":::
 

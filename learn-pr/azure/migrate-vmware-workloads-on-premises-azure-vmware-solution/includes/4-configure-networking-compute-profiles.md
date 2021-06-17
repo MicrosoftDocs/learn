@@ -1,4 +1,4 @@
-After the HCX Connector installs on-premises, you need to link the HCX Connector on-premises to HCX Cloud in AVS. This task contains several steps that will be outlined in this unit and the next unit.
+After the VMware HCX (HCX) Connector installs on-premises, you need to link the HCX Connector on-premises to HCX Cloud in Azure VMware Solution (AVS). This task contains several steps that will be outlined in this unit and the next unit.
 
 ## What is a site pair?  
 
