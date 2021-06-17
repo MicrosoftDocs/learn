@@ -1,4 +1,4 @@
-In this unit, you'll learn about the main value types in Solidity. Value types are always passed by value, which means they're copied when used. The primary value types that you'll use when writing contracts include **integer**, **boolean**, **string literal**, **address**, and **enum**. 
+In this unit, you'll learn about the main value types in Solidity. Value types are passed by value and are copied when they're used. The primary value types that you'll use when writing contracts include **integer**, **boolean**, **string literal**, **address**, and **enum**. 
 
 ## Integers
 
@@ -7,7 +7,7 @@ Integers are used in every Solidity source file. They represent whole numbers an
 - Signed: Include negative and positive numbers. Can represent as **int**.
 - Unsigned: Includes positive numbers only. Can represent as **uint**.
 
-If a number of bits isn't specified, the default value is 256 bits.
+If many bits aren't specified, the default value is 256 bits.
 
 The following operations can be applied to integers:
 
@@ -91,7 +91,7 @@ function transfer(address buyer, uint price) {
 
 ## Enums
 
-Enums allow you to create a user-defined type in Solidity. It's called user-defined because the person creating the contract decides what values to include. Enums can be used to present a number of selectable choices, one of which is required.
+In Solidity, you can use enums to create a user-defined type in Solidity. It's called user-defined because the person creating the contract decides what values to include. Enums can be used to present many selectable choices, one of which is required.
 
 An **enum** could be used, for example, to present different statuses for an item. You can think of enums as representing multiple-choice answers where all the values are pre-defined, and you have to select one. Enums can be declared in contract or library definitions.
 

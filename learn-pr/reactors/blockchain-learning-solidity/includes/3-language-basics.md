@@ -23,7 +23,7 @@ This line means that the source file will compile with a compiler greater than t
 
 ## State variables
 
-State variables are key to any Solidity source file. They're variables whose values are permanently stored in contract storage.
+State variables are key to any Solidity source file. State variable values are stored stored in contract storage permanently.
 
 ```solidity
 pragma solidity >0.7.0 <0.8.0;
@@ -47,7 +47,7 @@ Additionally, you can specify the visibility of a state variable as:
 
 ## Functions
 
-Functions are executable units of code within a contract. Functions describe a single action for achieving one task. They're reusable and can also be called from other source files like libraries. Functions in Solidity behave similarly to functions in other programming languages.
+Within a contract, executable units of code are know as functions. Functions describe a single action for achieving one task. They're reusable and can also be called from other source files like libraries. Functions in Solidity behave similarly to functions in other programming languages.
 
 Here's a simple example of defining a function:
 
