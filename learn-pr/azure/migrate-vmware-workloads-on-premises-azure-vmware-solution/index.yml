@@ -1,4 +1,3 @@
-### YamlMime:Module
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 metadata:
   moduleType: standard
@@ -8,6 +7,7 @@ metadata:
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Migrate VMware workloads on-premises to Azure VMware Solution
 summary: Plan, deploy, and configure VMware HCX on-premises to connect with Azure VMware Solution. Migrate virtual machines from an on-premises VMware environment to Azure VMware Solution.
 abstract: | 
@@ -18,7 +18,7 @@ prerequisites: |
   - Experience using the Azure portal for accessing and creating resources.
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and HCX.
   - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR) and subnets.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/migrate-to-azure-vmware-solution.svg
 levels: 
   - intermediate
 roles: 
