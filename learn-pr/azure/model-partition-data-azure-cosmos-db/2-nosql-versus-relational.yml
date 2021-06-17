@@ -37,4 +37,4 @@ quiz:
       explanation: "Compute is expensive relative to storage. So optimizing for compute by reducing the number of requests is the primary objective."
     - content: "Data size"
       isCorrect: false
-      explanation: "Optimizing for the amount of data isn't a primary objective in designing a data model."
+      explanation: "Optimizing for the amount of data isn't a primary objective when you're designing a data model."

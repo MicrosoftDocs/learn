@@ -13,6 +13,7 @@ durationInMinutes: 05
 content: |
   [!include[](includes/7-modeling-small-lookup-tables.md)]
 quiz:
+  title: Check your knowledge
   questions:
   - content: "What is a good design pattern when you're modeling small lookup tables in a NoSQL database with small amounts of data?"
     choices:
