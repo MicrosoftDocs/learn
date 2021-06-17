@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
 For your toy launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
 
@@ -37,7 +37,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
 ### Deploy the template to Azure
 
@@ -53,7 +53,7 @@ You'll see `Running...` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
 ### Deploy the template to Azure
 

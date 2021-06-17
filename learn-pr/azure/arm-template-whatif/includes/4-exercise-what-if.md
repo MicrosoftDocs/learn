@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
 The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll create and deploy an initial template. After the deployment is complete, you'll prepare to deploy a template that's slightly different, and you'll use the what-if operation to review the expected changes. Then, you'll use a complete deployment to deploy an empty template.
 
@@ -44,25 +44,25 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="biceppowershell"
 
-[!include[](../../includes/bicep-exercise-deploy-powershell.md)]
+[!include[](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
 ::: zone-end
 
 ::: zone pivot="bicepcli"
 
-[!include[](../../includes/bicep-exercise-deploy-cli.md)]
+[!include[](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
 ::: zone-end
 
 ::: zone pivot="jsonpowershell"
 
-[!include[](exercise/json-exercise-deploy-powershell.md)]
+[!include[](../../includes/azure-template-json-exercise-sandbox-deploy-powershell.md)]
 
 ::: zone-end
 
 ::: zone pivot="jsoncli"
 
-[!include[](exercise/json-exercise-deploy-cli.md)]
+[!include[](../../includes/azure-template-json-exercise-sandbox-deploy-cli.md)]
 
 ::: zone-end
 

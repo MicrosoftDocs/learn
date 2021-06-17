@@ -4,7 +4,7 @@ You've been asked to add a feature to your company's software. The feature is in
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, and then select the `del` key or press <kbd>Backspace</kbd> to delete it.
+Select all of the code in the .NET Editor, and then press <kbd>Delete</kbd>, or press <kbd>Backspace</kbd> to delete it.
 
 ### Step 2 - Copy the following code as a starting point to the .NET Editor
 
@@ -19,7 +19,7 @@ int discountPercentage = 0;
 > [!IMPORTANT]
 > You can only remove the code comments. In other words, you may remove the line of code that starts with `//`, but you may not remove any other code. Furthermore, you must use all of the variables in your code.
 
-### Step 3 - Use five if statements to implement the following business rules (nest three in first if statement)
+### Step 3 - Use two if statements to implement the following business rules (nest three in first if statement)
 
 **Rule 1**. If the user's subscription will expire in 10 days or less, display the message:
 

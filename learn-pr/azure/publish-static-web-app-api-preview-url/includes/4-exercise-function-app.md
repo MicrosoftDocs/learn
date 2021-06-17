@@ -116,7 +116,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
-You'll need to update the logic to get your products. There is data access logic in the JavaScript tutorial _/shared/product-data.js_. The `product-data` tutorial exposes a function `getProducts` to get the products for the shopping list.
+You'll need to update the logic to get your products. There is data access logic in the JavaScript module _/shared/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
 
 Now, change the function endpoint to return the products:
 

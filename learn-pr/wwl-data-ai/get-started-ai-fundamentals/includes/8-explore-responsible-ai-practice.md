@@ -4,7 +4,7 @@ The principles of responsible AI can help you understand some of the challenges 
 
 Here's an activity to help you learn more about how principles apply to an AI system that interacts with human users.
 
-1. Open another browser tab and go to https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo.
+1. Open another browser tab and go to [https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo](https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo).
 2. Select cards from each of the decks, which represent four phases in a Human-AI interaction:
     - Initially
     - During the interaction
@@ -15,4 +15,4 @@ Here's an activity to help you learn more about how principles apply to an AI sy
 
 ## Further resources
 
-For more resources to help you put the responsible AI principles into practice, see https://www.microsoft.com/ai/responsible-ai-resources.
+For more resources to help you put the responsible AI principles into practice, see [https://www.microsoft.com/ai/responsible-ai-resources](https://www.microsoft.com/ai/responsible-ai-resources).

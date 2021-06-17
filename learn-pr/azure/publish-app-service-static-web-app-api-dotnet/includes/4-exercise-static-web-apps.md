@@ -4,7 +4,7 @@ In this exercise, you'll create an Azure Static Web Apps instance including a Gi
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
-This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
 1. Click **Create a Resource**
@@ -37,15 +37,15 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
-   | _Repository_   | **my-static-blazor-app**                                    |
+   | _Repository_   | **my-static-blazor-app**                                 |
    | _Branch_       | **main**                                                 |
 
 1. From **Build Presets**, select Blazor and confirm the options are correct for your project.
 
    | Setting                 | Value       |
    | ----------------------- | ----------- |
-   | _App location_          | **Client** |
-   | _Api location_          | **Api**    |
+   | _App location_          | **Client**  |
+   | _Api location_          | **Api**     |
    | _App artifact location_ | **wwwroot** |
 
    Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.

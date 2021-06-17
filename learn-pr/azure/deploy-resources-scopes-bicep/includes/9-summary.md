@@ -8,9 +8,10 @@ By using the `targetScope` keyword and `scope` property on modules, you can easi
 
 - [What are Azure management groups?](/azure/governance/management-groups/overview)
 - Scopes for deployment:
-  - [Tenant](/azure/azure-resource-manager/templates/deploy-to-tenant)
-  - [Management group](/azure/azure-resource-manager/templates/deploy-to-management-group)
-  - [Subscription](/azure/azure-resource-manager/templates/deploy-to-subscription)
+  - [Tenant](/azure/azure-resource-manager/bicep/deploy-to-tenant)
+  - [Management group](/azure/azure-resource-manager/bicep/deploy-to-management-group)
+  - [Subscription](/azure/azure-resource-manager/bicep/deploy-to-subscription)
+  - [Resource group](/azure/azure-resource-manager/bicep/deploy-to-resource-group)
 - [Create Azure subscriptions programmatically](/azure/cost-management-billing/manage/programmatically-create-subscription)
 - [Language specification for resource scopes](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md)
 - [Enterprise-scale landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/implementation)

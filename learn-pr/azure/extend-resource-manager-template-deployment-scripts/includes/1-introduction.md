@@ -4,8 +4,7 @@ Suppose you're a member of a cross-functional team that supports an application.
 
 In this module, you'll learn how to add custom behavior to your Bicep or JSON ARM templates by using a deployment script.
 
-> [!NOTE]
-> Bicep is a new language for defining your Azure resources. It has a simpler authoring experience than JSON, as well as other features that help improve the quality of your infrastructure as code. We recommend that anyone new to infrastructure as code on Azure use Bicep instead of JSON. To learn about Bicep, see [Introduction to infrastructure as code using Bicep](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/).
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
 ## Learning objectives
 
