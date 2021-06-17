@@ -3,10 +3,10 @@ uid: learn.azure.intro-azure-vmware-solution.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, you'll learn about a business problem that you can address by using Azure VMWare Solution.
+  description: In this unit, you'll learn about a business problem that you can address by using Azure VMware Solution.
   ms.date: 01/11/2021
-  author: jdooley-clt
-  ms.author: jedooley
+  author: exchangegoddess
+  ms.author: phschmit
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

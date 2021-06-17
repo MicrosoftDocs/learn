@@ -1,7 +1,13 @@
 Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's see how AVS is set up and how it works on Azure.  
 
-## What's managed by Microsoft and what you manage
-One benefit of Azure VMware Solution is the platform is maintained for you. Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft is also responsible for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
+
+## On-premises VMware vs. Azure VMware Solution
+On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
+
+:::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Diagram showing Azure VMware Solution shared support matrix":::
+
+### What's managed by Microsoft and what you manage
+One benefit of Azure VMware Solution is the platform is maintained for you. In partnership with VMware, Microsoft will work together on the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft will also work along side VMware for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
 
 You are responsible for NSX-T SDN configuration:
 - Network segments
@@ -9,8 +15,7 @@ You are responsible for NSX-T SDN configuration:
 - Tier 1 gateways
 - Load balancers.
 
-
-## What Microsoft manages
+### How Microsoft manages 
 
 Azure VMware Solution continuously monitors the health of both the underlay and the VMware components. If Azure VMware Solution detects a failure, it takes action to repair the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
 
@@ -31,9 +36,12 @@ Azure VMware Solution monitors the following conditions on the host:
 - Storage status
 - Connection failure
 
+
+  
+
 ## Architecture overview
 
-Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
+Azure VMware Solution provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. 
 
 
 ###  Private clouds, clusters, and hosts in Azure
@@ -46,9 +54,10 @@ The AVS node min and maximums configuration are:
 
 - Min 3 nodes per cluster
 - Max 16 nodes in a vSphere cluster
-- Max 64 nodes to an Azure Private Cloud instance
+- Max 12 clusters in an Azure Private Cloud
+- Max 96 nodes to an Azure Private Cloud instance
 
-Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The HE hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The high-end hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
 You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
 
@@ -62,16 +71,21 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 3.1.1 |
 | HCX | 4.0 |
 
-NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied. 
+NSX-T is the only supported version of NSX. When new clusters are added, to an existing private cloud the currently running software version is applied. 
 
 Once Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. Azure Monitor can be used to monitor VM patterns inside the Azure VMware Solution.
 
 ### Interconnectivity into Azure
+
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
 
 - Azure ExpressRoute
 - VPN connections
 - Azure Virtual WAN
+
+The diagram below shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
+
+:::image type="icon" source="../media/3-avs-networking-overview.png" border="false" alt-text=" Diagram of Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
 
 These services require specific network address ranges and firewall ports for enabling the services. 
 
@@ -88,6 +102,7 @@ During the deployment of a private cloud the private networks for management, pr
 
 
 ### Private cloud storage 
+
 Azure VMware Solution uses native fully configured all-flash vSAN storage, local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default. De-duplication and compression are enabled on the vSAN datastore by default
 
 All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private cloud deployment and are available for use immediately.
@@ -98,25 +113,27 @@ You can use Azure storage services in workloads running in your private cloud. T
 - Storage Accounts 
 - Table Storage
 - Blob Storage
+ 
+The below diagram shows the available Azure Storage services that can be used with Azure VMware Solution.
+:::image type="icon" source="../media/3-avs-storage-overview.png" border="false" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
 
 
 ### Security and compliance with Azure VMware Solutions
 Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory. 
 
-In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the CloudAdmin role.  The CloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
+In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the cloudAdmin role.  The cloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
 
 - The local cloudadmin user is used to set up users in Active Directory (AD).
 
-- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. They are, however, assign AD users and groups to the CloudAdmin role on vCenter.
+- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. They are, however, assign AD users and groups to the cloudAdmin role on vCenter.
 
 - The private cloud user doesn't have access to and can't configure specific management components supported and managed by Microsoft. For example, clusters, hosts, datastores, and distributed virtual switches.
 
-vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The diagram below illustrates the relationship of the encryption keys to Azure VMware Solution.
 
-vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+:::image type="icon" source="../media/3-avs-security-overiew.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
-
-## Get started with AVS
+## Get started with Azure VMware Solution
 
 The following table outlines the steps needed for an organization to get started with using the Azure VMware Solution.
 

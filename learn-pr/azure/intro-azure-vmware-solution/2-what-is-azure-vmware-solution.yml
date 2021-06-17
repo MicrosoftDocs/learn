@@ -5,8 +5,8 @@ metadata:
   title: What is the Azure VMware Solution?
   description: What is the Azure VMware Solution?
   ms.date: 01/11/2021
-  author: jdooley-clt
-  ms.author: jedooley
+  author: exchangegoddess
+  ms.author: phschmit
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -15,25 +15,26 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a key feature of Azure VMware Service?"
+  - content: "Which of the following features is key to the Azure VMware Solution?"
     choices:
-    - content: "Seamlessly modernize apps over time with Azure services"
+    - content: "Seamlessly modernize apps over time with Azure services."
       isCorrect: true
-      explanation: "Data Box allows up to an 80-TB transfer. Two Data Box Disk orders allow up to 70 TB."
-    - content: "Least cost-efficient way to run Windows Server and SQL Server"
+      explanation: "Modernize applications running on VMware overtime through integration to Azure native management, security, and services."
+    - content: "Customers manage all components of Azure VMware Solution."
       isCorrect: false
-      explanation: "Data Box Edge is an online physical appliance that needs a significant amount of dedicated network bandwidth."
-    - content: "Fastest way to force a move to Azure-centric operational processes"
+      explanation: "Microsoft manages the platform for the customer."
+    - content: "AVS is the fastest way to force a move off of Azure-centric operational processes."
       isCorrect: false
-      explanation: "XYZ"
-  - content: "What are two core Azure services that are included as part of the Azure VMware Service?"
+      explanation: "Azure VMware Solutions provide a fast path to cloud."
+  - content: "Which native Azure service can be integrated with Azure VMware Solution to provide VMware vCenter SSO identity?"
     choices:
-    - content: "Azure DataBricks"
+    - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Data Box Edge is an online physical appliance that provides for data preprocessing and machine learning before transfer to the cloud."
+      explanation: "Azure Databricks is a data solution available to integrate with AVS."
     - content: "Azure Monitor"
-      isCorrect: true
-      explanation: "Data Box Gateway is an online virtual appliance that doesn't provide for data preprocessing and machine learning."
-    - content: "Azure Storage"
       isCorrect: false
-      explanation: "Data Box Heavy allows for up to 800 TB of data transfer, but it doesn't provide for data preprocessing and machine learning."
+      explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."
+    - content: "Azure Active Directory"
+      isCorrect: true
+      explanation: "Azure Active Directory can be used as the VMware vCenter SSO identity source."
+  
