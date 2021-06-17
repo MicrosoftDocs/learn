@@ -8,5 +8,9 @@ Without the conditions and copy loops features, you would have to maintain and u
 
 ## Learn more
 
-- [Conditional deployment in templates](/azure/azure-resource-manager/templates/conditional-resource-deployment?tabs=bicep)
-- [Resource iteration in templates](/azure/azure-resource-manager/templates/copy-resources?tabs=bicep)
+- [Conditional deployment in Bicep](/azure/azure-resource-manager/bicep/conditional-resource-deployment)
+- Bicep loops
+    - [Resource iteration in Bicep](/azure/azure-resource-manager/bicep/loop-resources)
+    - [Property iteration in Bicep](/azure/azure-resource-manager/bicep/loop-properties)
+    - [Variable iteration in Bicep](/azure/azure-resource-manager/bicep/loop-variables)
+    - [Output iteration in Bicep](/azure/azure-resource-manager/bicep/loop-outputs)
