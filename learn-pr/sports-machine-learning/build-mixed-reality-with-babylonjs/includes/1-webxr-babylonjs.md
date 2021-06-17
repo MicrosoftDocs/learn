@@ -1,22 +1,21 @@
-To make a Mixed Reality project for the web you will need a couple key frameworks. This project will use:
-
-- WebXR
-- BabylonJS
+To make a Mixed Reality (MR) project for the web, you need a couple of key frameworks. This project will use WebXR and Babylon.js.
 
 ## WebXR
 
-WebXR is a technology that allows you to create Virtual Reality (VR) and Augmented Reality (AR) experiences in the browser by leveraging WebGL. WebGL allows the browser to use the GPU and enables you to build 3D experiences.  Some XR applications are specific to a device or platform, but not WebXR. WebXR is cross platform so it will work on multiple devices and platforms. All you need to create a WebXR app is JavaScript with a little HTML and CSS. You will see this when we get started building our WebXR project in the next step.
+WebXR is a technology that you can use to create Virtual Reality (VR) and Augmented Reality (AR) experiences in the browser by taking advantage of WebGL. WebGL allows the browser to use the GPU and enables you to build 3D experiences. 
 
-There are a few different WebXR frameworks available, we are going to be using one called [BabylonJS](https://www.babylonjs.com/?azure-portal=true). Let's learn a little more about BabylonJS.
+Some Cross Reality (XR) applications are specific to a device or platform, but WebXR isn't. WebXR is cross-platform, so it will work on multiple devices and platforms. All you need to create a WebXR app is JavaScript with a little HTML and CSS. You'll see this when we get started building our WebXR project in the next unit.
 
-## BabylonJS
+## Babylon.js
 
-BabylonJS is a complete JavaScript framework for building 3D games and experiences with HTML5, WebGL, WebVR and Web Audio. Babylon now has Babylon Native which allows you to bring these experiences beyond the browser.
+A few WebXR frameworks are available. We're going to use one called [Babylon.js](https://www.babylonjs.com/?azure-portal=true).
 
-Being able to use JavaScript to create 3D experiences makes building new metaverse worlds even more accessible to all types of developers. A great way to get started building and learning with BabylonJS is by checking out the [BabylonJS Playground](https://playground.babylonjs.com/?azure-portal=true). The playground allows you to try out completely in the browser without downloading anything.
+Babylon.js is a complete JavaScript framework for building 3D games and experiences with HTML5, WebGL, WebVR, and Web Audio. Babylon now has Babylon Native, which lets you bring these experiences beyond the browser.
 
-We are going to build a scene to display our the different characters in the Space Jam: A New Legacy. We will display a button for each character and when you click on the tile it will display the PER score for the character. Now lets dive into how we are going to start building out the below Space Jam: A New Legacy Scene with BabylonJS!!
+The ability to use JavaScript to create 3D experiences makes building new metaverse worlds even more accessible to all types of developers. A great way to get started building and learning with Babylon.js is by checking out the [Babylon.js Playground](https://playground.babylonjs.com/?azure-portal=true). The playground allows you to try out your creation in the browser without downloading anything.
 
-![babylonjs-img-spacejam-scene](../media/space-jam-scene.png)
+We're going to build a scene to display the characters in *Space Jam: A New Legacy*. We'll display a tile for each character that gives a player efficiency rating (PER) when you select it. Now let's start building out the following *Space Jam: A New Legacy* scene with Babylon.js!
+
+![Movie scene with tiles for characters.](../media/space-jam-scene.png)
 
 © 2021 Warner Bros. Ent. All Rights Reserved.

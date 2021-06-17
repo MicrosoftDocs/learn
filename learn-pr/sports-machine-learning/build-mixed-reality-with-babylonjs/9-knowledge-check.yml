@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.knowledge-check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: Check your knowledge!
   ms.date: 06/15/2021
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 3
 content: Select the best answer for each question.
 quiz:
@@ -16,37 +16,37 @@ quiz:
   questions:
   - content: "What is WebXR?"
     choices:
-    - content: "WebXR is a technology that allows you to create Virtual Reality (VR) and Augmented Reality (AR) experiences in the browser by leveraging WebGL."
+    - content: "WebXR is a technology that allows you to create Virtual Reality and Augmented Reality experiences in the browser by using WebGL."
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
-    - content: "WebXR is a static site made up of Javascript, HTML and CSS"
+    - content: "WebXR is a static site made up of JavaScript, HTML, and CSS."
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
-    - content: "WebXR is cross platform so it will work on multiple devices and platforms."
+    - content: "WebXR is cross-platform, so it will work on multiple devices and platforms."
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
-    - content: "All of the above"
+    - content: "All of the above."
       isCorrect: true
-      explanation: "Correct, all of the above are true of WebXR."
-  - content: "BabylonJS is the only WebXR library."
+      explanation: "Correct. All of the above are true of WebXR."
+  - content: "Babylon.js is the only WebXR library."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "No, there are multiple libraries available to create WebXR applications."
+      explanation: "Multiple libraries are available to create WebXR applications."
     - content: "False"
       isCorrect: true
-      explanation: "Correct, there are more libraries available to create WebXR applications."
-  - content: "Which of the below can be used instead of having to create your own 3D model?"
+      explanation: "Correct. There are more libraries available to create WebXR applications."
+  - content: "Which of the following can you use instead of creating your own 3D model?"
     choices:
-    - content: "Procedural Texture"
+    - content: "Procedural texture"
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
     - content: "PhotoDome"
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
-    - content: "Built in meshes that can optionally be wrapped with an image."
+    - content: "Built-in meshes that can optionally be wrapped with an image"
       isCorrect: false
       explanation: "Although this is true, this is not the right selection."
-    - content: "All of the above."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Correct, all of the above can be used to create 3D objects without having to use custom 3D models."
+      explanation: "Correct. You can use all of the above to create 3D objects without having to use custom 3D models."
