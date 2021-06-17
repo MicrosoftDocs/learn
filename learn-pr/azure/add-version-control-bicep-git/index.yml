@@ -31,8 +31,12 @@ products:
 - azure
 units:
 - learn.azure.add-version-control-bicep-git.introduction
-- learn.azure.add-version-control-bicep-git.learning-content
-- learn.azure.add-version-control-bicep-git.exercise
+- learn.azure.add-version-control-bicep-git.understand-git
+- learn.azure.add-version-control-bicep-git.exercise-initialize-git-repository
+- learn.azure.add-version-control-bicep-git.commit-files-view-history
+- learn.azure.add-version-control-bicep-git.exercise-commit-files-view-history
+- learn.azure.add-version-control-bicep-git.branch-merge-changes
+- learn.azure.add-version-control-bicep-git.exercise-branch-merge-changes
 - learn.azure.add-version-control-bicep-git.knowledge-check
 - learn.azure.add-version-control-bicep-git.summary
 badge:
