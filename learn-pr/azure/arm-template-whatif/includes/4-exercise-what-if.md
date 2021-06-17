@@ -57,7 +57,7 @@ You start with an existing template that your team has been using. The template 
 
    :::code language="bicep" source="code/4-template-before.bicep" :::
 
-1. Save the template.    
+1. Save the template.
 
 ::: zone-end
 
