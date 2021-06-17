@@ -16,7 +16,7 @@ Azure ML’s features and supported tools enhance intelligibility and oversight 
 
 Azure ML also helps safeguard people and their data by integrating differential privacy tools such as SmartNoise to protect sensitive data and avoid leaks. Azure ML also supports Microsoft SEAL encryption to maintain the confidentiality of private information—even from teams using the data. MLOps features also deliver more control of the end-to-end ML life cycle with governance data logging and tools—and a robust security framework
 
-IMAGE 
+![glass box ml](../media/4-transparency.gif)
 
 ## Ongoing predictions and forecasting
 

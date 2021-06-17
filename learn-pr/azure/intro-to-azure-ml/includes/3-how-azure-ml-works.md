@@ -4,7 +4,7 @@ You can access Azure ML on the cloud or your local machine through the R or Pyth
 
 Azure ML manages all the resources you need for the ML lifecycle inside a Workspace. Workspaces can be shared by multiple people and include things like the computing resources available for your notebooks, training clusters, and pipelines. Workspaces are also the logical containers for your data stores and a repository for models and anything else within the model life cycle.  
 
-IMAGE
+![azure ml lifecycle](../media/3-people.gif)
 
 ## How to create machine learning models
 
@@ -14,7 +14,7 @@ The status of runs can be logged and monitored natively via the SDK, Azure Monit
 
 In the example below, we can see how Azure ML Studio’s visualization can be customized to add charts, compare data, and apply filters to better analyze your results and metrics.
 
-IMAGE
+![azure ml studio visualization example](../media/3-studio-chart.gif)
 
 ### Experiments
 
@@ -28,9 +28,9 @@ A pipeline is a workflow of a complete machine learning task that can include da
 
 You can create datasets from datastores, public URLs, and Azure Open Datasets. By creating a dataset, you reference the data source location—so data from training sets and pipelines will be stored without altering the original dataset. Datasets can then be registered, versioned, tracked, and traced to permit reuse and sharing across teams, roles, and experiments quickly. The versioning of reproducible experiments is also possible, allowing better analysis of dataset viability and model performance.
 
-Azure ML can periodically check for newly stored data with an incremental refresh, enabling datasets to be updated automatically when new data is added to the datastore. The service can also analyze data for changes over time—known as data drift—and trigger an alert. Datasets and features can then be viewed in the dashboard to analyze the data drift, as seen in the example below.
+Azure ML can periodically check for newly stored data with an **incremental refresh,** enabling datasets to be updated automatically when new data is added to the datastore. The service can also analyze data for changes over time—known as **data drift**—and trigger an alert. Datasets and features can then be viewed in the dashboard to analyze the data drift, as seen in the example below.
 
-IMAGE
+![azure ml data drifts dashboard](../media/3-datadrifts.gif)
 
 ### Labeling
 
@@ -38,7 +38,7 @@ Labeling Projects is a centralized place to create, manage, and monitor labeling
 
 Below we can see an example of a labeling task underway in Azure ML Studio.
 
-IMAGE
+![azure ml studio labelling](../media/2-labelling.gif)
 
 ## Deploying machine learning models
 
