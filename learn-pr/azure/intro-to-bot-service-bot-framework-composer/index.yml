@@ -115,7 +115,7 @@ roles:
 ### Use the exact value from the product taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#product)
 ###
 products:
-  {{products}}
+  - azure
 ###########################################################################
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
