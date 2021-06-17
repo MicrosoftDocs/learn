@@ -1,25 +1,10 @@
-In this section, we are going to talk about Dynamic Data Masking. 
-
-**What is Dynamic Data Masking**:
-
 Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support Dynamic Data Masking. 
-It's all in the name, Dynamic Data Masking is masking and ensures limited data exposure to non-privileged users, such that they can't see it. 
-It also helps you in preventing unauthorized access to sensitive data.
-The way Dynamic Data Masking does it, is helping customers to designate how much of the sensitive data to reveal such that it has minimal impact on the application layer. 
-Dynamic Data Masking is a policy-based security feature. 
-It will hide the sensitive data in a result set of a query that runs over designated database fields. However, the data in the database will not be changed.
+Dynamic Data Masking ensures limited data exposure to non-privileged users, such that they cannot see the data that is being masked. It also helps you in preventing unauthorized access to sensitive information that has minimal impact on the application layer. 
+Dynamic Data Masking is a policy-based security feature. It will hide the sensitive data in a result set of a query that runs over designated database fields.
 
-Let's give you an example how it works. 
-Let's say you work at a bank as a service representative in a call center. 
-Sometime, due to compliance, the caller has to identify themselves by giving them several digits of their credit card number that they might have an issue with. 
-However, these data items, should not be fully exposed to the service representative in that call center, answering the call. 
-If you would define a masking rule, that masks all but the last four digits for example of that credit card number, you would get a query that only gives as a result the last four digits of the credit card number.  
-If the caller, for example,  also had to provide the representative with personal information, that should not be seen by the developer that can query the production environments in order to troubleshoot, you should appropriately mask data in order to protect the given personal data such that compliance is not violated. 
-
+Let's give you an example how it works. Let's say you work at a bank as a service representative in a call center. Due to compliance, any caller must identify themselves by providing several digits of their credit card number. In this scenario, the full credit card number should not be fully exposed to the service representative in the call center. You can define a masking rule, that masks all but the last four digits of a credit card number, so that you would get a query that only gives as a result the last four digits of the credit card number. This is just one example that could be equally applied to a variety of personal data such that compliance is not violated.
 For Azure Synapse Analytics, the way to set up a Dynamic Data Masking policy is using PowerShell or the REST API. 
-Bear in mind that it won't be possible for Azure Synapse Analytics to set the Dynamic Data Masking policy in the Azure portal through selecting the Dynamic Data Masking page under Security in the SQL DB configuration pane. 
-You need to set it up using PowerShell or REST API as mentioned before. 
-However, the configuration of the Dynamic Data Masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
+The configuration of the Dynamic Data Masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
 
 In Azure Synapse Analytics, you can find Dynamic Data Masking here;
 > [!div class="mx-imgBorder"]
@@ -27,10 +12,10 @@ In Azure Synapse Analytics, you can find Dynamic Data Masking here;
 
 **Looking into Dynamic Data Masking Policies**:
 
-* **SQL users are excluded from masking** 
+* **SQL users excluded from Dynamic Data Masking Policies** 
 
-    A couple of SQL users or Azure AD identities can get unmasked data in the SQL query results. 
-    Users with administrator privileges are always excluded from masking, and see the original data without any mask.
+    The following SQL users or Azure AD identities can get unmasked data in the SQL query results. 
+    Users with administrator privileges are always excluded from masking, and will see the original data without any mask.
 
 * **Masking rules** - Masking rules are a set of rules that define the designated fields to be masked including the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.
 * **Masking functions** - Masking functions are a set of methods that control the exposure of data for different scenarios.
@@ -215,9 +200,7 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 
 **Set up Dynamic Data Masking for your database in Azure Synapse Analytics using the REST API**
 
-For setting up Dynamic Data Masking in Azure Synapse Analytics, the other possibility is make use of the REST API. 
-
-It will enable to programmatically manage data masking policy and rules. 
+For setting up Dynamic Data Masking in Azure Synapse Analytics, you can also make use of the REST API. It will enable you to programmatically manage data masking policy and rules. 
 
 The REST API will support the following operations:
 
@@ -244,7 +227,7 @@ The following parameters need to be passed through:
 
 - Get
 
-The Get policy, Gets a database data masking policy.
+The Get policy, gets a database data masking policy.
 
 In HTTP the following request can be made:
 
