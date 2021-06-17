@@ -1,13 +1,13 @@
-To make mixed reality projects, you'll need some key tools. The two mixed reality projects that follow this module in the *Space Jam: A New Legacy* film-inspired learning path will use two different frameworks:
+To make Mixed Reality projects, you need some key tools. The two Mixed Reality projects that follow this module in the learning path inspired by *Space Jam: A New Legacy* uses two different frameworks:
 
-- BabylonJS
+- Babylon.js
 - Mixed Reality Toolkit
 
-Before you dive into these frameworks, it's good to get an idea of the types of tools you'll need to have installed and ready to use throughout your mixed reality adventures.
+Before you dive into these frameworks, it's good to get an idea of the types of tools you'll need to have installed and ready to use throughout your Mixed Reality adventures.
 
-## BabylonJS tools
+## Babylon.js tools
 
-BabylonJS is a JavaScript Framework, so the tools can be lightweight. The two main tools you'll need are:
+Babylon.js is a JavaScript framework, so the tools can be lightweight. The two main tools you'll need are:
 
 - Visual Studio Code
 - GitHub
@@ -18,19 +18,19 @@ Visual Studio Code is a code editor that you can customize. It's open source, so
 
 To download and install it for free on any platform, see the [Visual Studio Code website](https://aka.ms/LearnOnVSCode?azure-portal=true).
 
-Visual Studio Code also has a huge marketplace of extensions so that you can create a developer experience that's right for you. If you haven't done so already, install the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) from the Visual Studio Marketplace. You can find more information about this extension on the [open-source repository on GitHub](https://github.com/microsoft/codetour#readme?azure-portal=true).
+Visual Studio Code also has a marketplace of extensions so that you can create a developer experience that's right for you. If you haven't done so already, install the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) from Visual Studio Marketplace. You can find more information about this extension on the [open-source repository on GitHub](https://github.com/microsoft/codetour#readme?azure-portal=true).
 
 ### GitHub
 
 GitHub is the largest open-source community. It features source control for your code. GitHub also supports deploying applications, collaborating on small group projects, and contributing to large open-source projects.
 
-All the *Space Jam: A New Legacy*-inspired starter projects are on GitHub. One benefit of GitHub with Visual Studio Code and CodeTour is that they all work together. The CodeTour for the BabylonJS Mixed Reality project is right there in the GitHub repo. You can clone your GitHub project from inside Visual Studio Code.
+All the starter projects inspired by *Space Jam: A New Legacy* are on GitHub. One benefit of GitHub with Visual Studio Code and CodeTour is that they all work together. The CodeTour for the Babylon.js Mixed Reality project is right there in the GitHub repository. You can clone your GitHub project from inside Visual Studio Code.
 
 To get started on GitHub, create an account at [GitHub.com](https://github.com?azure-portal=true). Accounts are free for public *and* private repositories.
 
 ## Mixed Reality Toolkit
 
-The Windows 10 SDK and the Mixed Reality Toolkit are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive mixed reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
+The Windows 10 SDK and the Mixed Reality Toolkit are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive Mixed Reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
 
 ### Visual Studio
 
@@ -40,8 +40,8 @@ For this learning path, you only need [Visual Studio Community Edition](https://
 
 ### Unity
 
-[Unity](https://unity.com/?azure-portal=true) is a platform for creating interactive and real-time content. Unity is one of the top platforms for creating 2D and 3D games and mixed reality experiences. With a tight integration to Visual Studio, you can stay in Unity for most of your mixed reality building. You'll open Visual Studio to the exact script you need to edit to make your environment interactive.
+[Unity](https://unity.com/?azure-portal=true) is a platform for creating interactive and real-time content. Unity is one of the top platforms for creating 2D and 3D games and Mixed Reality experiences. With a tight integration to Visual Studio, you can stay in Unity for most of your Mixed Reality building. You'll open Visual Studio to the exact script you need to edit to make your environment interactive.
 
-If you're working through this learning path and want to try Unity, download the [free Personal-use edition](https://store.unity.com/download-nuo?azure-portal=true). To learn more about Unity, try out the tutorials and sample games on its download site.
+If you're working through this learning path and want to try Unity, download the free version, [Unity Personal](https://store.unity.com/download-nuo?azure-portal=true). To learn more about Unity, try out the tutorials and sample games on the Unity download site.
 
 © 2021 Warner Bros. Ent. All Rights Reserved.
