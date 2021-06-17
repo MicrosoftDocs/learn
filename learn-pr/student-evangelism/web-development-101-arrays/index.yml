@@ -16,7 +16,7 @@ abstract: |
   - How to use loops to work with arrays.
   - How to apply array operations.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements//student-evangelism/web-development-101-loops-arrays.svg #TODO change
 levels:
   - beginner
 roles:
