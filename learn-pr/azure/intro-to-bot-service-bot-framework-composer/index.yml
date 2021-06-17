@@ -121,12 +121,12 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
 ###
 units:
-- learn.intro-to-bot-service-bot-framework-composer.introduction
-- learn.intro-to-bot-service-bot-framework-composer.what-is-{product}
-- learn.intro-to-bot-service-bot-framework-composer.how-{product}-works
-- learn.intro-to-bot-service-bot-framework-composer.when-to-use-{product}
-- learn.intro-to-bot-service-bot-framework-composer.knowledge-check
-- learn.intro-to-bot-service-bot-framework-composer.summary
+- learn.intro-to-bot-service-bot-framework-composer.1-introduction
+- learn.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service
+- learn.intro-to-bot-service-bot-framework-composer.3-how-azure-bot-service-works
+- learn.intro-to-bot-service-bot-framework-composer.4-when-to-use-azure-bot-service
+- learn.intro-to-bot-service-bot-framework-composer.5-knowledge-check
+- learn.intro-to-bot-service-bot-framework-composer.6-summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
