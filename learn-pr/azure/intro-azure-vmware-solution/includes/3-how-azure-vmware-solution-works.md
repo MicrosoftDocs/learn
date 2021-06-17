@@ -54,9 +54,10 @@ The AVS node min and maximums configuration are:
 
 - Min 3 nodes per cluster
 - Max 16 nodes in a vSphere cluster
-- Max 64 nodes to an Azure Private Cloud instance
+- Max 12 clusters in an Azure Private Cloud
+- Max 96 nodes to an Azure Private Cloud instance
 
-Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The HE hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The high-end hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
 You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
 
@@ -70,7 +71,7 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 3.1.1 |
 | HCX | 4.0 |
 
-NSX-T is the only supported version of NSX. When new clusters are added to an existing private cloud the currently running software version is applied. 
+NSX-T is the only supported version of NSX. When new clusters are added, to an existing private cloud the currently running software version is applied. 
 
 Once Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. Azure Monitor can be used to monitor VM patterns inside the Azure VMware Solution.
 

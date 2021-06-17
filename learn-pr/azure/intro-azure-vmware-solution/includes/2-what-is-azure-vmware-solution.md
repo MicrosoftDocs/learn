@@ -55,7 +55,7 @@ AVS allows the business to move to the cloud at the pace they're comfortable wit
 
 Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your AVS environment are described below.
 
-:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment.":::
+:::image type="icon" source="../media/2-avs_integrationoverview.png" border="false" alt-text="Diagram showing some of the integration services available for Azure VMware Solution.":::
 
 
 |Integration  |Description  |
