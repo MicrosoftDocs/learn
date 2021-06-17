@@ -1,7 +1,7 @@
 
 The Microsoft 365 Defender portal includes a **Reports** section that includes a general security report, reports related to endpoints, and reports related to email and collaboration.  
 
-:::image type="content" source="../media/4-reports-page-inline.png" lightbox="../media/4-reports-page-expanded.png"alt-text="Screenshot showing the Microsoft 365 security reports page.":::
+:::image type="content" source="../media/4-reports-page-inline.png" lightbox="../media/4-reports-page-expanded.png"alt-text="Screenshot showing the Microsoft 365 reports page that lists the different reports available.":::
 #### Security report
 The general **security report** enables admins to view information about security trends and track the protection status of your identities, data, devices, apps, and infrastructure.
 
@@ -14,7 +14,7 @@ By default, cards are grouped by the following categories:
 
 In the example below, the cards are grouped by category (only two of the four categories are shown in the image). 
 
-:::image type="content" source="../media/4-general-security-report-6-inline.png" lightbox="../media/4-general-security-report-6-expanded.png" alt-text="Screenshot showing the Microsoft 365 security reports page.":::
+:::image type="content" source="../media/4-general-security-report-6-inline.png" lightbox="../media/4-general-security-report-6-expanded.png" alt-text="Screenshot showing the Microsoft 365 general security report.":::
 
 You can also group cards by topic, which will rearrange the cards and group them into the following areas:
 
