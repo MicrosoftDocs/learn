@@ -110,9 +110,9 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone-end
 
-    After the app is created, a confirmation notification appears in Visual Studio Code.
+After the app is created, a confirmation notification appears in Visual Studio Code.
 
-    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open portal":::
+:::image type="content" source="../media/extension-confirmation.png" alt-text="Open portal":::
 
 9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
 
