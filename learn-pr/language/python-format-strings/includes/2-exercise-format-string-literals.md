@@ -17,11 +17,13 @@ first_string = 'A literal string'
 second_string = "A literal string"
 print(second_string == first_string)
 ```
+
 When you run the code, you'll see the following output:
 
 ```output
 True
 ```
+
 You can use either single or double quotes. Here, we'll typically use single quotes.
 
 ### Step 3 - Comment out the previous code, and add code that uses quotes inside other quotes
@@ -36,6 +38,7 @@ fourth_string = "A double quoted literal string with a ' single quote"
 print(third_string)
 print(fourth_string)
 ```
+
 In this case, `third_string` points to a literal string that embeds a double quote inside a string defined with single quotes. Conversely, `fourth_string` points to a literal string that embeds a single quote inside a string defined with double quotes.
 
 When you run the code, you should see the following output:
@@ -62,6 +65,7 @@ print(sixth_string)
 print(seventh_string)
 print(eighth_string)
 ```
+
 As the content of the literal strings themselves suggest, the `\n` escape sequence creates a new line, and the `\t` escape sequence adds a tab to the string when it's displayed.
 
 When you run the code, you should see the following output:
@@ -73,6 +77,7 @@ A literal string with a
  new line character
 A literal string with a          tab character
 ```
+
 Other escape sequences exist, but these are by far the most popular.
 
 ### Step 5 - Comment out the previous code and add code that displays raw strings
@@ -86,6 +91,7 @@ ninth_string = r"A literal string with a \n new line character printed raw"
 
 print(ninth_string)
 ```
+
 When you run the code, you should see the following output:
 
 ```output
@@ -110,6 +116,7 @@ using double quotes"""
 print(tenth_string)
 print(eleventh_string)
 ```
+
 In some programming languages, this type of multi-line string that retains its formatting is called a "verbatim string".
 
 When you run the code, you should see the following output:
@@ -124,7 +131,6 @@ using double quotes
 ```
 
 Notice that the literal string we point to with the `eleventh_string` variable includes several empty spaces. These are faithfully kept when we print out the string a few lines later.
-
 
 ### Step 7 - Comment out the previous code, and add code that formats string by using the `print()` function
 
@@ -156,16 +162,6 @@ Conrad Grant Bob
 Conrad-Grant-Bob
 Conrad-Grant-Bob.
 ```
-
-### Functions with variable and named arguments
-
-In a previous module, we learned how you can define functions with optional input parameters. These parameters allow the caller to decide whether to accept the default value or implementation, or supply the argument with a value.  
-
-Similarly, you can define functions with variable parameters. This allows the caller to pass in as many arguments as needed, and the function processes each parameter.
-
-Named parameters allow the caller to use the convention `name=value`. This allows us to send the arguments in any order, and it makes the purpose of those arguments clearer to those who might read your code in the future.
-
-In another module, you'll learn how to add variable and named parameters to the functions you define when you create your own functions.
 
 ## Recap
 
