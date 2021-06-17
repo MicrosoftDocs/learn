@@ -1,4 +1,7 @@
 - What is Git?
 - How does Git help with IaC?
-- Local and remote Git repositories, Git vs. GitHub
-- Briefly introduce the VS Code tooling for working with Git.
+- Local and remote Git repositories.
+- Briefly introduce the tooling:
+    - VS Code, why you use it instead of Notepad, and how to install it.
+    - Git, with a link to the installation instructions.
+    - An overview of the VS Code tooling for working with Git.
