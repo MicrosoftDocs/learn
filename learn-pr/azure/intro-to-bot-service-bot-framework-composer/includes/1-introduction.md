@@ -1,63 +1,15 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Bot Service is a collection of tools that enable you to create enterprise-grade conversational AI experiences. You can use Azure Bot Service components, including the Bot Framework Composer and the Bot Framework SDK to design, build, test, and deploy bot functionality.
 
-    Goal: briefly orient the learner to the product; what category of problem does it solve?
+:::image type="content" source="../media/overview.png" alt-text="Azure Bot Service scenario diagram":::
 
-    Heading: none
-
-    Example: "Implementing a business process can be challenging because you typically need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Microsoft 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products? Azure Logic Apps gives you pre-built components to connect to hundreds of services. You use a graphical design tool to put the pieces together in any combination you need and Logic Apps will run your process automatically in the cloud."
-
-    Recommended: visual like an image (preferred), table, list, etc.
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add your visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: Describe the real-world scenario you'll use to illustrate the product. Include 2-3 customer tasks that represent the most-common use cases for the product.
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company that is launching a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor social media to gauge reactions to the launch. The following illustration shows these processes. Notice how the tasks include both customer-facing processes like direct sales and administrative tasks like auto-archiving old videos. Here, you'll see how Logic Apps automates these types of business processes."
-
-    Recommended: an image that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Imagine you work for an online retail company. Your company’s marketing team wants you to explore how you can introduce customers to new products and help them select the company’s products. You explore automating customer chat support by using a chatbot on your website and social-networking sites. The chat bot should be simple to create and manage, but easy to extend later with new features. You'd also like to have natural language capabilities built into the bot in the near future, but don't have time or budget to develop your own language machine learning models. You decide to use Azure Bot Service and create your chat bots using the Azure Bot Framework Composer. These chat bots will help increase customer engagement and help you more effectively support your company’s customers.
 
-    Goal: List the activities the learner will do. This differs from the learning objectives. The learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "We’ll analyze the capabilities of Logic Apps to help you decide when to use them:
-                * **Launch**: what conditions can you set to launch your app?
-                * **Connect**: which services can you connect to?
-                * **Branch**: what types of business logic can you add to your app?"
-
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+In this module, you'll be introduced to the Azure Bot Service and its functionality. You'll identify the Azure Bot Service and its components and capabilities and how the Azure Bot Service components work together to provide bot functionality on Azure. Finally, you'll determine when to use Azure Front Door.
 
-    Goal: The title of an "Introduction to (product)" module tells our customers that this is a good place to start their learning. This helps our customers find the right content quickly. The trade-off is that the title does not reflect the terminal learning objective of the module. Here, you explain that this module teaches the 'evaluate' task. To do this, you:
-        - Start with your 'evaluate' learning objective
-        - Make it a complete sentence if it's not already
-        - Use plain language so it sounds conversational
-        - Include the lead-in shown below ("By the end...")
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+After completing this module, you’ll understand the fundamental Azure Bot Service structure and how to design and build using the Bot Framework Composer.

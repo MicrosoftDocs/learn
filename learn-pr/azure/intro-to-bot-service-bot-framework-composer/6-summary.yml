@@ -2,9 +2,9 @@
 uid: learn.intro-to-bot-service-bot-framework-composer.summary
 title: Summary
 metadata:
-  unitType: summary
-  title: summary
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  unitType: Summary
+  title: Summary
+  description: Summary
   ms.date: 6/15/2021
   author: jasonkellingtonwaypoint
   ms.author: v-jaske
