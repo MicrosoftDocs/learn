@@ -4,7 +4,7 @@ Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's s
 ## On-premises VMware vs. Azure VMware Solution
 On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
 
-:::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Azure VMware Solution shared support matrix":::
+:::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Diagram showing Azure VMware Solution shared support matrix":::
 
 ### What's managed by Microsoft and what you manage
 One benefit of Azure VMware Solution is the platform is maintained for you. In partnership with VMware, Microsoft will work together on the lifecycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft will also work along side VMware for the lifecycle management of NSX-T appliances, bootstrapping the network configuration, such as creating the Tier-0 gateway and enabling North-South routing. 
@@ -85,7 +85,7 @@ The Azure VMware Solution private cloud environment can be accessible from on-pr
 
 The diagram below shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
 
-:::image type="icon" source="../media/3-avs-networkingoverview.png" border="false" alt-text=" Diagram Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
+:::image type="icon" source="../media/3-avs-networkingoverview.png" border="false" alt-text=" Diagram of Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach":::
 
 These services require specific network address ranges and firewall ports for enabling the services. 
 
