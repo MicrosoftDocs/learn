@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT
     - Basic knowledge of Azure Sphere
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/azure-sphere-industrial-iot.svg
 badge:
   uid: learn.industrial-iot-connectivity.badge
 levels:
@@ -33,3 +33,5 @@ units:
 - learn.oxford.industrial-iot-connectivity.introduction
 - learn.oxford.industrial-iot-connectivity.what-are-connectivity-options
 - learn.oxford.industrial-iot-connectivity.how-connectivity-for-azure-sphere-works
+- learn.oxford.industrial-iot-connectivity.knowledge-check
+- learn.oxford.industrial-iot-connectivity.summary
