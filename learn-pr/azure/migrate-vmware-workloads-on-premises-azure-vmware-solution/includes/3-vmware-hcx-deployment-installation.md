@@ -1,5 +1,7 @@
 Remember that VMware HCX (HCX) Advanced deploys by default when Azure VMware Solution deploys in Azure. Before configuring site pairings for your migration, the next step involves deployment and configuration of the HCX Connector on-premises. 
 
+To complete the exercises, you'll need the access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment.
+
 ## Download VMware HCX Connector
 Before deploying the HCX Connector appliance in the on-premises vCenter, the VMware HCX Connector OVA file needs to be downloaded from the Azure portal.
 
