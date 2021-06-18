@@ -7,11 +7,11 @@ Specifically you learned:
     - Azure Native Integration 
     - High-performance cloud infrastructure
 
-- The basic components of the AVS service and how they work in Azure.
-    - What Microsoft manages with the AVS service
+- The basic components of the Azure VMware Solution and how it works in Azure.
+    - What Microsoft manages with the solution
     - Private Cloud concepts
     - Private Cloud Storage
-    - AVS interconnectivity into Azure
+    - Azure VMware Solution interconnectivity into Azure
     - Security and compliance with Azure VMware Solutions
 - Use cases that drive its adoption
     - Migrate existing assets “as is” 

@@ -1,4 +1,4 @@
-Azure VMware Solution (AVS) provides you with a dedicated, private cloud in Azure. Built by Microsoft and VMware. The Azure VMware Solution is an Azure service built with VMware that delivers a vSphere-based, single-tenant, private cloud on Azure. AVS deploys on dedicated bare-metal infrastructure in Azure. 
+Azure VMware Solution provides you with a dedicated, private cloud in Azure. Built by Microsoft and VMware. The Azure VMware Solution is an Azure service built with VMware that delivers a vSphere-based, single-tenant, private cloud on Azure. The solution deploys on dedicated bare-metal infrastructure in Azure. 
 
 You can now seamlessly run, manage, and secure applications across VMware environments and Microsoft Azure with a common operating framework. 
 
