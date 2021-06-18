@@ -2,6 +2,8 @@ Let's create another interrupting bot to help patients check their temperature a
 
 To create this bot, we'll build a breaking scenario and then create a model.
 
+Let's start with creatting a second interrupting bot which will work like a breaking scenario, after which we will be connecting it to the main bot using a keyword which will call the interrupting bot. We can start by clicking on "New" button in the top left corner on Scenario Managemet page.
+
 ## Create a breaking scenario
 
 1. Configure the scenario with the following details:  
