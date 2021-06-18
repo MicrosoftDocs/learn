@@ -1,4 +1,4 @@
-In this module you learned about the Azure VMware Solution (AVS), an Azure service to redeploy and extend your VMware environment in the cloud.
+In this module you learned about the Azure VMware Solution, an Azure service to redeploy and extend your VMware environment in the cloud.
 
 Specifically you learned:
 
