@@ -2,11 +2,17 @@
 
 :::image type="content" source="../media/overview.png" alt-text="Azure Bot Service scenario diagram":::
 
-Imagine you work for an online retail company. Your company’s marketing team wants you to explore methods to introduce customers to new products and help them select the company’s products. You want to explore automating customer chat support by using a chatbot on your website and social-networking sites. The chat bot must be simple to create and manage, while being easy to extend with new features later. You'd also like to have natural language capabilities built into the bot in the near future. However, you don't have time or budget to develop your own language machine learning models. You decide to use Azure Bot Service and create your chat bots using the Azure Bot Framework Composer. These chat bots can help increase customer engagement and help you more effectively support your company’s customers.
+Imagine you work for an online retail company. Your company’s marketing team wants you to explore methods to provide chat support to customers who are exploring and purchasing products on their website. 
 
-In this module, you'll be introduced to the Azure Bot Service and its functionality. You'll identify the Azure Bot Service and its components and capabilities and how the Azure Bot Service components work together to provide bot functionality on Azure. Additionally, you'll determine when to use Azure Front Door.
+You want to explore automating customer chat support by using chat bots on your company's website and social-networking sites. The chat bot must be simple to create and manage, while being easy to extend with new features later. 
 
-After completing this module, you’ll understand the fundamental Azure Bot Service structure and how to design and build using the Bot Framework Composer.
+You'd also like to have natural language capabilities built into the bot in the near future. However, you don't have time or budget to develop your own language machine learning models. 
+
+You decide to use Azure Bot Service and create your chat bots using the Azure Bot Framework Composer. These chat bots can help increase customer engagement and help you more effectively support your company’s customers.
+
+In this module, you'll be introduced to the Azure Bot Service. You'll identify the Azure Bot Service, its components, and its capabilities. You'll explore how the Azure Bot Service components work together to provide bot functionality on Azure. Additionally, you'll learn how to determine when to use Azure Front Door.
+
+After completing this module, you’ll understand the Azure Bot Service's fundamental structure. You'll also know how to design and build using the Bot Framework Composer.
 
 ## Learning objectives
 
