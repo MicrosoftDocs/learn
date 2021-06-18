@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals
+metadata:
+  moduleType: standard
+  title: Authenticate your Azure deployment pipeline by using service principals
+  description: TODO
+  ms.date: 06/17/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authenticate your Azure deployment pipeline by using service principals
+summary: TODO
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain what a service principal is, how it works, and how it compares to a managed identity.
+  - Create a service principal and manage its keys.
+  - Configure the appropriate authorization to deploy Azure resources (both role and scope).
+prerequisites: |
+  You should be familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+
+  To follow along with the exercises in the module, you'll need either:
+  - The latest [Azure CLI](/cli/azure/install-azure-cli.md) tools, installed locally.
+  - The latest [Azure PowerShell](/powershell/azure/install-az-ps.md), installed locally.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - administrator
+  - solution-architect
+products:
+  - azure
+  - azure-resource-manager
+units:
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.introduction
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.understand-service-principals
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.create-service-principal-key
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.exercise-create-service-principal-key
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.grant-service-principal-access-azure
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.exercise-authorize-service-principal-deployments
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.knowledge-check
+  - learn.azure.authenticate-azure-deployment-pipeline-service-principals.summary
+badge:
+  uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.badge
