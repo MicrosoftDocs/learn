@@ -3,7 +3,7 @@ Getting your data ready for the Mixed Reality world is mostly a matter of making
 > [!NOTE]
 > Creating images and 3D models is beyond the scope of this Learn module, but that would be another step if you were creating a Mixed Reality experience from scratch. In this module, you'll use existing images and ensure that images and data are correlated.
 
-In the previous module from this learning path inspired by *Space Jam: A New Legacy*, you created a web application that displayed players and their PER values for a basketball coach to decide which players to put on the court and which to give a rest to ensure a healthy team.
+In the previous module from this learning path inspired by *Space Jam: A New Legacy*, you created a web application that displayed players and their player efficiency rating (PER) values for a basketball coach to decide which players to put on the court and which to give a rest to ensure a healthy team.
 
 The data behind this web app was a comma-separated-value (CSV) file called `game_stats.csv`. You can find the [sample file on the GitHub repository](https://github.com/microsoft/space-jam-a-new-legacy-template/blob/main/game_stats.csv?azure-portal=true).
 
@@ -103,7 +103,7 @@ for index in range(0,COUNT):
     # Write the opening bracket of the first player object to the file.
     f.write("\t{\n")
 
-    # Write the name, PER, and image url, with their labels, to the file
+    # Write the name, PER, and image url, with their labels, to the file.
     f.write("\t\t\"name\": \""+names[index]+"\",\n")
     f.write("\t\t\"per\": \""+pers[index]+"\",\n")
     f.write("\t\t\"imgUrl\": \""+urls[index]+"\"\n")

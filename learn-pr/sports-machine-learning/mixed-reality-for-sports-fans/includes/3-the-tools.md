@@ -1,7 +1,7 @@
 To make Mixed Reality projects, you need some key tools. The two Mixed Reality projects that follow this module in the learning path inspired by *Space Jam: A New Legacy* uses two different frameworks:
 
 - Babylon.js
-- Mixed Reality Toolkit
+- Mixed Reality Toolkit (MRTK)
 
 Before you dive into these frameworks, it's good to get an idea of the types of tools you'll need to have installed and ready to use throughout your Mixed Reality adventures.
 
@@ -36,7 +36,7 @@ The Windows 10 SDK and the Mixed Reality Toolkit are powerful tools. With the po
 
 Visual Studio is a much larger integrated development environment (IDE) than Visual Studio Code. Like Visual Studio Code, Visual Studio has a [marketplace of extensions](https://marketplace.visualstudio.com/?azure-portal=true) that can help you get your environment set up to be productive for you.
 
-For this learning path, you only need [Visual Studio Community Edition](https://visualstudio.microsoft.com/?azure-portal=true), which is free. The Mixed Reality Toolkit requires Windows 10, so you'll need to download Visual Studio and not Visual Studio for Mac.
+For this learning path, you only need [Visual Studio Community Edition](https://visualstudio.microsoft.com/?azure-portal=true), which is free. The MRTK requires Windows 10, so you'll need to download Visual Studio and not Visual Studio for Mac.
 
 ### Unity
 
