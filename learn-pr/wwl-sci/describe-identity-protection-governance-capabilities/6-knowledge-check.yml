@@ -32,9 +32,9 @@ quiz:
     - content: "Azure Terms of Use."
       isCorrect: false
       explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data but doesn't manage access rights."
-    - content: "Dynamic groups."
+    - content: "Identity Protection."
       isCorrect: false
-      explanation: "Incorrect. Dynamic groups use attribute-based rules to determine who is a member of a group, which is well suited to role-based organizations."
+      explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
     - content: "Entitlement management."
       isCorrect: true
       explanation: "Correct. Entitlement management is well suited to handling project-based access needs. Entitlement management automates access requests, access assignments, reviews, and expiration for bundles of resources relevant to a project."
