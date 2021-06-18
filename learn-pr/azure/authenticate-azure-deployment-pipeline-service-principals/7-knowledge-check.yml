@@ -14,58 +14,42 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: You're building a custom deployment agent that runs on an Azure virtual machine that you control. Which of these authentication techniques should the agent use to authenticate and work with Azure resources?
     choices:
-    - content: ""
+    - content: User account.
+      isCorrect: false
+      explanation: Incorrect. Deployment agents run in an unattended mode, so you should never use a user account.
+    - content: Service principal.
+      isCorrect: false
+      explanation: Incorrect. A service principal can be used for this purpose, but using a service principal requires that you manage credentials. Since you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
+    - content: Managed identity.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Correct. Managed identities are designed for unattended access, and they don't require you work with credentials. Since you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
+  - content: You create a service principal with a key, and set the key expiry to 30 days in the future. What happens after that time?
     choices:
-    - content: ""
+    - content: Nothing - the key will automatically renew.
+      isCorrect: false
+      explanation: Incorrect. Service principal keys don't automatically renew.
+    - content: Your client can no longer authenticate.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. Once a service principal's key has expired, the key can't be used to authenticate. You need to issue a new key.
+    - content: Your client can authenticate, but receives a warning that the key has expired.
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Once a service principal's key has expired, the key can't be used to authenticate. You need to issue a new key.
+  - content: You're creating a service principal to run a pipeline. The pipeline deploys a Bicep template that creates a single storage account. Which of these has the minimum permission you need for your pipeline?
     choices:
-    - content: ""
+    - content: |
+        **Role definition:** Contributor<br />
+        **Scope:** Subscription
+      isCorrect: false
+      explanation: Incorrect. The 'Contributor' role is a good one to use. However, you should avoid granting it over the subscription scope unless you need to. In this case, you don't.
+    - content: |
+        **Role definition:** Contributor<br />
+        **Scope:** Resource group
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. The 'Contributor' role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this pipeline needs.
+    - content: |
+        **Role definition:** Owner<br />
+        **Scope:** Resource group
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Incorrect. This role assignment is too permissive. You should avoid granting the 'Owner' role unless it's required. In this example, it's not.
