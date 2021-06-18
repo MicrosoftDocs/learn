@@ -1,1 +1,2 @@
-TODO
+- Create a service principal and key
+- Test the service principal is created by logging into Azure using its credentials

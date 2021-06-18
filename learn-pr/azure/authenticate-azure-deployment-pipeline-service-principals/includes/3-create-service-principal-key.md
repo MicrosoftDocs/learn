@@ -1,1 +1,6 @@
-TODO
+- Key management
+- Secure key handling
+- Key rotation
+- Keys vs. certificates
+- How to create service principals using the CLI/PowerShell, and what this actually does behind the scenes
+- Maybe how to use the portal too

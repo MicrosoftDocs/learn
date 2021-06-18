@@ -1,1 +1,4 @@
-TODO
+- How to define 'least privilege' for your deployment
+- Built-in roles to consider
+- Role assignment scopes
+- How to create a role assignment for a service principal

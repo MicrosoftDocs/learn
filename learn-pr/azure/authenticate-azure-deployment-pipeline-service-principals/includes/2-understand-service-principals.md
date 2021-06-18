@@ -1,1 +1,6 @@
-TODO
+- Why does a pipeline need to authenticate?
+- Security principals
+  - [What is a security principal?](https://docs.microsoft.com/azure/role-based-access-control/overview#security-principal)
+  - What is a service principal? What is a managed identity?
+  - When you can use a service principal vs. a managed identity?
+- Behind the scenes - app registrations, service principals, and enterprise applications
