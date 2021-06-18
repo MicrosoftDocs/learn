@@ -1,4 +1,4 @@
-When modules get too large, we might consider moving their contents to a separate file to make the code easier to navigate.
+When the module contents become too large, code navigation becomes more challenging. Consider moving module contents to a separate file. 
 
 Let's move the code from our previous example to its own file called `src/authentication.rs` and then change the crate root file.
 
@@ -41,6 +41,6 @@ impl User {
 fn hash_password<T: Hash>(t: &T) -> u64 {/* ... */}
 ```
 
-When we place a semicolon after `mod authentication` instead of a code block, the compiler will load the contents of the module from another file with the same name as the module.
+Place a semicolon after `mod authentication` instead of a code block. As files grow in size, this technique lets you move modules to new files automatically. The compiler loads the module contents from another file that's named the same as the module.
 
-The module tree remains the same, and the code will work without any modification, even though the definitions live in different files. This technique lets you move modules to new files as they grow in size.
+When the content loads, the module tree remains the same. The code will also work without requiring any changes, even though the definitions exist in different files. 

@@ -1,11 +1,28 @@
-> [!NOTE]
-> This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
+[!INCLUDE [BYO subscription explanation](../../includes/azure-template-exercise-nosandbox-subscription.md)]
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 
-In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a `deploymentScripts` resource to run an Azure PowerShell script. The script will deploy a file to the newly created storage account.
+In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a new deployment script.
 
-This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a starting template.
+> * Add the prerequisites for deployment scripts including a user-assigned managed identity and role assignment.
+> * Add a deployment script.
+> * Deploy the template, and verify the outcome.
+
+::: zone pivot="jsoncli,jsonpowershell"
+
+[!INCLUDE [Install the JSON ARM template extension for Visual Studio Code](../../includes/azure-template-json-exercise-vscode-extension.md)]
+
+::: zone-end
+
+::: zone pivot="biceppowershell,bicepcli"
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+::: zone-end
 
 ## Create the starting template
 
@@ -13,7 +30,14 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
+1. Open Visual Studio Code.
+
+1. Create a new file called *azuredeploy.json*.
+
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
 1. Copy the following starting template into *azuredeploy.json*.
 
     :::code language="json" source="code/3-starting-template.json" :::
@@ -24,7 +48,14 @@ You start with an existing template that your team has been using. The template 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*.
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
 1. Copy the following starting template into *main.bicep*.
 
     :::code language="plaintext" source="code/3-starting-template.bicep" :::
@@ -179,115 +210,60 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ## Deploy the template
 
-::: zone pivot="jsoncli,bicepcli"
+::: zone pivot="jsoncli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) tools installed.
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-cli.md)]
 
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
+::: zone-end
 
-      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash on the drop-down menu." border="true":::
+::: zone pivot="bicepcli"
 
-1. If not, select the drop-down menu and choose **Select Default Shell**.
-1. Select **bash**.
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down menu for selecting the shell." border="true":::
+::: zone-end
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with **bash** as the shell.
+::: zone pivot="jsonpowershell"
 
-### Sign in to Azure
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-powershell.md)]
 
-1. From the terminal in Visual Studio Code, run the following command. A browser then opens so you can sign in to your Azure account.
+::: zone-end
 
-    ```azurecli
-    az login
-    ```
+::: zone pivot="biceppowershell"
 
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. Find the subscription that you want to use for this exercise. If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
-    ```azurecli
-    az account list --output tsv
-    ```
-
-1. Set the default subscription for all of the Azure CLI commands that you run in this session.
-
-    ```azurecli
-    az account set --subscription "Your Subscription Name or ID"
-    ```
-
-### Create a resource group for the exercise
+::: zone-end
 
 Next, you need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
+
+::: zone pivot="jsoncli,bicepcli"
+
+### Create a resource group for the exercise
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_1"
 az group create --location eastus --name $resourceGroupName
 ```
 
-> [!NOTE]
-> If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
-
 ::: zone-end
 
 ::: zone pivot="jsonpowershell,biceppowershell"
-
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true&preserve-view=true) installed.
-
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
-
-    :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with p w s h on the drop-down menu." border="true":::
-
-    If not, select the drop-down menu and choose **Select Default Shell**.
-
-1. Select **pwsh**.
-
-    :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down list for selecting the default shell." border="true":::
-
-1. Select **+** in the terminal to create a new terminal with **pwsh** as the shell.
-
-### Sign in to Azure by using Azure PowerShell
-
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
-
-    ```azurepowershell
-    Connect-AzAccount
-    ```
-
-1. Get the ID of the subscription that you want to use for this exercise. The following command will list your subscriptions and their IDs. 
-
-    ```azurepowershell
-    Get-AzSubscription
-    ```
-    The subscription ID is the second column. Copy the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
-
-1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
-
-    ```azurepowershell
-    Set-AzContext -SubscriptionId {Your subscription ID}
-    ```
-
-### Create a resource group for the exercise
-
-Next, you need to create a resource group to contain the resources you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
-
-From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 
 ```azurepowershell
 $resourceGroupName = 'learndeploymentscript_exercise_1'
 New-AzResourceGroup -Location eastus -Name $resourceGroupName
 ```
 
+::: zone-end
+
 > [!NOTE]
 > If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
 
-::: zone-end
+### Deploy the template to Azure
 
 ::: zone pivot="jsoncli"
-
-### Deploy the template to Azure
 
 The following code deploys the ARM template to Azure. You'll see a successful deployment.
 
@@ -308,8 +284,6 @@ az deployment group create \
 
 ::: zone pivot="bicepcli"
 
-### Deploy the template to Azure
-
 The following code deploys the ARM template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
@@ -329,8 +303,6 @@ az deployment group create \
 
 ::: zone pivot="jsonpowershell"
 
-### Deploy the template to Azure
-
 The following code deploys the template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure PowerShell commands in the terminal.
@@ -348,8 +320,6 @@ New-AzResourceGroupDeployment `
 ::: zone-end
 
 ::: zone pivot="biceppowershell"
-
-### Deploy the template to Azure
 
 The following code deploys the template to Azure. You'll see a successful deployment.
 
