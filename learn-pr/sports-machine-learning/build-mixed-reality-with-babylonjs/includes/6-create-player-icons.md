@@ -4,7 +4,7 @@ We're ready to build out the `createCharacterButtons` function.
 
 Use the following code to add `CylinderPanel` to `mainManager`. `CylinderPanel` will be the container for the icons. Then create `meshManager` and `meshPanel` to display the pop-up `displayStatsContainer` player card. Add the `onPointerUpObservable` click event to remove `displayStatsContainer` from the scene when it's selected.
 
-The `createCharacterButtons()` function belongs in the *environment.ts* file within the `Environment` class.
+The `createCharacterButtons()` function belongs in the *environment.ts* file within the `Environment` class:
 
 ```javascript
 public createCharacterButtons() {
@@ -36,7 +36,7 @@ Now you have a position for each of the player cards within the main panel.
 
 Now you need add the code for the pop-up image that contains the PER value of the player. So when a player icon is selected, their stat card (name, image, and PER) will appear large in the center of the screen.
 
-This code belongs at the bottom of the `createCharacterButtons()` function that you started earlier.
+This code belongs at the bottom of the `createCharacterButtons()` function that you started earlier:
 
 ```javascript
 // Create the mesh 3D UI manager for the pop-up image when a user selects a player

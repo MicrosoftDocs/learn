@@ -4,7 +4,7 @@ To make a Mixed Reality project for the web, you need a couple of key frameworks
 
 WebXR is a technology that you can use to create Virtual Reality (VR) and Augmented Reality (AR) experiences in the browser by taking advantage of WebGL. WebGL allows the browser to use the GPU and enables you to build 3D experiences. 
 
-Some Cross Reality applications are specific to a device or platform, but WebXR isn't. WebXR is cross-platform, so it will work on multiple devices and platforms. All you need to create a WebXR app is JavaScript with a little HTML and CSS. You'll see this when we get started building our WebXR project in the next unit.
+Some Cross Reality applications are specific to a device or platform, but WebXR isn't. WebXR is cross-platform, so it will work on multiple devices and platforms. All you need to create a WebXR app is JavaScript with a little HTML and CSS. You'll see this when we start building a WebXR project in the next unit.
 
 ## Babylon.js
 

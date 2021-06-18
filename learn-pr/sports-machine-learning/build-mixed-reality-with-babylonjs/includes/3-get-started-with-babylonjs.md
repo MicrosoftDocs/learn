@@ -47,7 +47,7 @@ The *index.ts* file is the TypeScript file that creates the main scene. When you
 
 We're using WebPack, which is an open-source JavaScript module bundler. It generates static assets that represent those modules. The configuration for WebPack is in the *webpack.config.js* file. This file describes how to bundle the assets for the *dist* folder. WebPack compiles the script down to one source, and that source is used to serve the game script.
 
-The following script shows how we import the needed packages from Babylon.js to create our game scene. Create the `canvas` variable to grab the `renderCanvas` canvas HTML tag from the `html` > `body` section. Then we create the engine variable and pass in the new [Babylon.js Engine](https://www.babylonjs.com/?azure-portal=true).
+The following script shows how we import the needed packages from Babylon.js to create our game scene. Create the `canvas` variable to grab the `renderCanvas` canvas HTML tag from the `html` > `body` section. Then create the engine variable and pass in the new [Babylon.js Engine](https://www.babylonjs.com/?azure-portal=true).
 
 ```javascript
  import {
@@ -142,7 +142,7 @@ In the starter code, add the following code after you adjust the light intensity
   scene.enablePhysics(new Vector3(0, -3, 0), cannonPlugin);
 ```
 
-Now your scene has a sense of gravity and physics.
+Now the scene has a sense of gravity and physics.
 
 ## Render the scene
 
@@ -183,8 +183,8 @@ window.addEventListener("resize", function () {
 
 Now you can test the scene being rendered in the browser!
 
-Run `npm start` and go to the localhost ([https://localhost:8080](https://localhost:8080?azure-portal=true)). If you still have it running from earlier, the hot reload should have refreshed when you saved your changes, and you'll see them reflected. The scene will be blank blue, because we haven't added any mesh objects or textures.
+Run `npm start` and go to the localhost ([https://localhost:8080](https://localhost:8080?azure-portal=true)). If you still have it running from earlier, the hot reload should have refreshed when you saved your changes, and you'll see them reflected. The scene will be blank blue, because you haven't added any mesh objects or textures.
 
-Now that we've set up the basic elements of the scene, we're ready to start adding meshes and building out our Virtual Reality experience.
+Now that you've set up the basic elements of the scene, you're ready to start adding meshes and building out the Virtual Reality experience.
 
 © 2021 Warner Bros. Ent. All Rights Reserved.

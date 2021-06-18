@@ -27,7 +27,7 @@ quiz:
       explanation: "Although this is true, it's not the right selection."
     - content: "All of the above."
       isCorrect: true
-      explanation: "Correct. All of the above are true of WebXR."
+      explanation: "Correct. All of the above are true for WebXR."
   - content: "Babylon.js is the only WebXR library."
     choices:
     - content: "True"

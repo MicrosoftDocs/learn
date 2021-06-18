@@ -18,7 +18,7 @@ In this module, you'll begin to discover:
 - How to add 3D mesh objects and buttons to a scene.
 - How to use procedural textures.
 - How to add actions to objects.
-- How to use the functionality of the default Cross Reality (XR) experience.
+- How to take advantage of the default Cross Reality (XR) experience.
 - How to add physics to a scene.
 
 ## Prerequisites

@@ -4,7 +4,7 @@ To create the icons and interactions, we'll use the `babylonjs-gui` library. We'
 
 ## Import the packages
 
-First, create a new file called *environment.ts*. We import our packages and player class that we set up to map the properties from the JSON file:
+First, create a new file called *environment.ts*. Import the packages and player class that you set up to map the properties from the JSON file:
 
 ```javascript
 import {
@@ -27,7 +27,7 @@ Now, when you build your project, all of the necessary packages will be imported
 
 ## Create the class and constructor
 
-Next, we'll create the environment class and private variables to map in the constructor. We need to pass in our scene and engine, and import the JSON data to an array.
+Next, create the environment class and private variables to map in the constructor. You need to pass in the scene and engine, and import the JSON data to an array.
 
 > [!TIP]
 > This module uses the [starter code on GitHub](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true). If you completed the previous module in the learning path inspired by *Space Jam: A New Legacy*, you might also have your own *players.json* file. You can choose to use that.

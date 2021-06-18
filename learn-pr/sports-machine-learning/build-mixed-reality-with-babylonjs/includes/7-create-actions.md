@@ -22,7 +22,7 @@ displayStatsContainer.onPointerUpObservable.add(() => {
 for (var index = 0; index < this._players.length; index++) {
     let player = this._players[index];
 
-    // Create the button and add it to the mainButtonPanel
+    // Create the button and add it to mainButtonPanel
     var button = new GUI.HolographicButton("orientation");
     mainButtonPanel.addControl(button);
 

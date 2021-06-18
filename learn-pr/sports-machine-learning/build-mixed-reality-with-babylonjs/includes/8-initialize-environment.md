@@ -6,7 +6,7 @@ Sometimes you need to add 2D text and images. To add these types of objects to t
 
 Add `GUI.Rectangle` to create `imageRect`, and add that to the `guiMenu` dynamic texture. Then, get the image by using `GUI.Image`, set its properties, and add it to `imageRect`.
 
-This function belongs in the `Environment` class found in the `environment.ts` file:
+This function belongs in the `Environment` class found in the *environment.ts* file:
 
 ```javascript
 public addLogo() {

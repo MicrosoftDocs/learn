@@ -8,7 +8,7 @@ There are two ways to continue through this module. Either will lead you to the 
 
 In this option, you use [CodeTour in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) to explore a completed version and add your own personalization.
 
-To get started, create a GitHub repository for this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true) and fill in the form. Name your repo **space-jam-a-new-legacy-babylonjs**. You can make this repo public or private, but be sure to include all branches.
+To get started, create a GitHub repository for this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-babylonjs*. You can make this repo public or private, but be sure to include all branches.
 
 ![Screenshot that shows creating a repository for the project by using the GitHub template, for a completed experience.](../media/template-github.png)
 
@@ -23,7 +23,7 @@ To get started, create a GitHub repo for this app. Go to [the page to create a r
 ## Clone your repo by using Visual Studio Code
 
 > [!NOTE]
-> You might be prompted to sign in to GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository. This is necessary to complete the module.
+> You might be prompted to sign in to GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository. This authorization is necessary to complete the module.
 
 After your repo is created, clone it (make a copy on your local computer) by using Visual Studio Code. 
 
@@ -37,7 +37,7 @@ After your repo is created, clone it (make a copy on your local computer) by usi
 
    ![Screenshot that shows how to get the HTTPS URL of the repo from GitHub.com.](../media/github-repo-clone.png)
 
-1. In Visual Studio Code, paste the URL that you copied at the command prompt and press the Enter key. If you're prompted, choose a location for your code to be downloaded. If you're prompted, choose to open the code in your current window.
+1. In Visual Studio Code, paste the URL that you copied at the command prompt and select the Enter key. If you're prompted, choose a location for your code to be downloaded. If you're prompted, choose to open the code in your current window.
 
 ## Build and run the starter project
 

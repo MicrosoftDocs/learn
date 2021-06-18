@@ -1,4 +1,4 @@
-After you start getting into building games and virtual worlds, you'll notice that you need 3D models, but you might not know how to build them. Babylon.js has built-in mesh models and procedural textures that we can use without having to do any modeling.
+After you start getting into building games and virtual worlds, you'll notice that you need 3D models, but you might not know how to build them. Babylon.js has built-in mesh models and procedural textures that you can use without having to do any modeling.
 
 > [!TIP]
 > For a more detailed walkthrough of the code, remember that you can always have CodeTour running in Visual Studio Code. Head back to the environment setup unit if you haven't installed the extension.
