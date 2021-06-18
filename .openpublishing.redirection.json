@@ -5856,79 +5856,79 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/2-describe-deep-learning-and-the-dvsm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/3-create-a-dsvm-with-the-azure-cli.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/4-benefits-of-running-deep-learning-experiments-in-docker.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/6-run-your-first-deep-learning-experiment-with-jupyter.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/includes/7-summary-and-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/2-describe-deep-learning-and-the-dvsm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/3-create-a-dsvm-with-the-azure-cli.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/4-benefits-of-running-deep-learning-experiments-in-docker.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/5-connect-to-jupyter-through-docker-on-the-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/6-run-your-first-deep-learning-experiment-with-jupyter.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/interactive-deep-learning/index.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/interactive-deep-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-data-science-virtual-machine",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/choose-data-science-option-in-azure/1-introduction.md",
@@ -7471,49 +7471,49 @@
       "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check/",
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/index.md",
@@ -7830,22 +7830,22 @@
       "redirect_url": "https://docs.microsoft.com/learn/",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/0-introduction/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/5-exercise-structs-enums.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4b-exercise-functions/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/6-functions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/4a-functions/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/10-control-flow.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-understand-common-concepts/3a-if-else-expressions/",
       "redirect_document_id": true
@@ -7870,22 +7870,22 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/6-input/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/student-evangelism/intro-to-python/7-exercise-reading-input.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/7-exercise-input/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/student-evangelism/intro-to-python/8-exercise-build-a-calculator.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
       "redirect_document_id": true
     },
-    { 
+    {
       "source_path": "learn-pr/student-evangelism/intro-to-python/9-solution-build-a-calculator.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/student-evangelism/intro-to-python/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/8-summary/",
       "redirect_document_id": false
@@ -7899,6 +7899,36 @@
       "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-signing-secure-data.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-secure-data",
       "redirect_document_id": true
-    }  
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/2-describe-core-microsoft-365.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/3-describe-purpose-value-advanced-auditing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-audit-capabilities-microsoft-365/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    }
   ]
 }
