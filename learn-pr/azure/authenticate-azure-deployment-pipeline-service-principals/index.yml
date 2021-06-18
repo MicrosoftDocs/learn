@@ -13,9 +13,9 @@ title: Authenticate your Azure deployment pipeline by using service principals
 summary: TODO
 abstract: |
   After completing this module, you'll be able to:
-  - Explain what a service principal is, how it works, and how it compares to a managed identity.
-  - Create a service principal and manage its keys.
-  - Configure the appropriate authorization to deploy Azure resources (both role and scope).
+  - Explain what a service principal is, how it works, and how it compares to a managed identity
+  - Create a service principal and manage its keys
+  - Configure the appropriate authorization to deploy Azure resources (both role and scope)
 prerequisites: |
   You should be familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
