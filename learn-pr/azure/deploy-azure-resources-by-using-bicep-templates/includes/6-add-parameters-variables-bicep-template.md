@@ -11,8 +11,6 @@ During the process, you'll:
 > * Update the template to include variables for the SKU of each resource.
 > * Test the deployment to ensure that the template is valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Add the location and resource name parameters
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the top of the file:

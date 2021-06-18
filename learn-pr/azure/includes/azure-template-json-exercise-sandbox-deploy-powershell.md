@@ -7,4 +7,6 @@ ms.author: jodowns
 ---
 [!INCLUDE [Introduction (PowerShell)](azure-template-exercise-sandbox-intro-powershell.md)]
 
+[!INCLUDE [Upgrade Azure PowerShell](azure-template-bicep-exercise-upgrade-powershell.md)]
+
 [!INCLUDE [Sign into sandbox (PowerShell)](azure-template-exercise-sandbox-sign-in-powershell.md)]
