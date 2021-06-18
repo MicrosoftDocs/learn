@@ -2,10 +2,11 @@
 The Azure VMware Solution (AVS) is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. AVS is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
 
 Microsoft provides the following services to run AVS at scale in Azure:
-- management systems
-- networking services 
-- operating platform 
-- backend infrastructure operations 
+
+- Management systems
+- Networking services
+- Operating platform
+- Backend infrastructure operations
 
 ## Move your VMware workloads to Azure
 
