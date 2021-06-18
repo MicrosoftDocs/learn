@@ -1,4 +1,4 @@
-This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. For more in-depth knowledge and tutorials regarding this topic, refer to [What is Azure Database for PostgreSQL?](/azure/postgresql/overview?azure-portal=true).
+This exercise takes you through the process of creating and configuring Azure Database for PostgreSQL. 
 
 In this exercise, you'll:
 
@@ -19,7 +19,7 @@ To perform this exercise, you need:
 1. On a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription that you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and then in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
-1. On the **Basics** tab of the **Single server** blade, configure the following settings and leave all other settings with their default values:
+1. On the **Basics** tab at the top of the **Single server** blade, configure the following settings and leave all other settings with their default values:
 
    | Setting | Configuration |
    | --- | --- |
@@ -68,7 +68,7 @@ To perform this exercise, you need:
 
 1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded previously in this task, and when prompted to provide the password, enter **Pa55w0rd1234**:
 
-    ```azurecli-interactive
+    ```azurecli
     psql --host=<server_name> --port=5432 --username=<user_name> --dbname=postgres
     ```
 

@@ -1,15 +1,15 @@
 ﻿### YamlMime:Module
 uid: learn.azure.cna-build-basic-service
 metadata:
-  title: Build a basic service
-  description: In this module, you'll learn more about how to build a basic service.
+  title: Build a basic cloud native service using PostgreSQL and node
+  description: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
   ms.date: 05/15/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a basic service
-summary: Use Microsoft Azure Database for PostgreSQL to configure the Express.js web service and the front-end Next.js management web app with a persistent data store. 
+summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
 abstract: |
   In this module, you'll:
   - Learn the concept of service in the context of cloud-native applications.
@@ -32,6 +32,7 @@ roles:
 - student
 products:
 - azure
+- postgresql
 units:
 - learn.azure.build-basic-service.1-introduction
 - learn.azure.build-basic-service.2-define-services

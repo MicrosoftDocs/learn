@@ -1,4 +1,4 @@
-﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can implement each of these components independently, using its own technology stack by using cloud services such as Azure Kubernetes Service (AKS) and Azure Database for PostgreSQL. These cloud services allow you to choose the open-source technologies that you're used to, but rely on Azure to perform most of the administration and deployment tasks for you. In addition, you can be more agile in your design and don't need to strive to predict future requirements.
+﻿By leveraging managed database services, such as Azure Database for PostgreSQL, you can focus on developing your cloud-native applications, rather than on deploying and configuring your data store. This allows you to choose the open-source technologies that you're used to, but rely on Azure to perform most of the administration and deployment tasks for you. 
 
 ## Scenario: Build a basic service
 

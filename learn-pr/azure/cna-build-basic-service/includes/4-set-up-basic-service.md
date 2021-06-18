@@ -1,6 +1,6 @@
 Because cloud-native applications don't require a specific technology's selection for their individual components, you can base their implementation details on your preferences. Also, many cloud offerings such as Azure Database for PostgreSQL allow you to use the same open-source versions of technologies that you're familiar with. They also use the underlying platform to minimize administrative overhead that's associated with their usage.
 
-To begin, you decided to configure your Express.js-based application to implement REST API routes providing access to a PostgreSQL database.
+You will leverage these benefits when building your solution. To start, you will implement an Express.js-based web service with REST API routes providing access to the newly deployed PostgreSQL database.
 
 ## What are the benefits of modular design?
 

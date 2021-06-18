@@ -25,19 +25,19 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 1. In the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. From the Bash session on the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code that you'll use in this exercise:
 
-    ```azurecli-interactive
+    ```azurecli
     git clone https://github.com/polichtm/wp2104-m03u07.git
     ```
 
 1. Run the following command to switch to the directory containing the clone of the GitHub repo:
 
-    ```azurecli-interactive
-    cd wp2104-m03u07-main/
+    ```azurecli
+    cd ~/wp2104-m03u07/
     ```
 
 1. Run the following command to display the content of the **./prisma/schema.prisma** file containing the definition of the data model corresponding to the **inventory** table in the **cnainventory** database:
 
-    ```azurecli-interactive
+    ```azurecli
     cat ./prisma/schema.prisma
     ```
 
@@ -66,7 +66,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 
 1. Run the following command to display the content of the **.env** file, which stores the connection string to the Azure PostgreSQL database, including the values representing the name of the PostgreSQL server, the name of the administrative account, and its password (that's the `DATABASE_URL` referenced in the **./prisma/schema.prisma** file):
 
-    ```azurecli-interactive
+    ```azurecli
     cat ./.env
     ```
 
@@ -78,7 +78,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 
 1. Run the following command to display the content of the **index.tsx** file containing the Next.js script, which queries the content of the **inventory** table in the **cnainventory** database based on the information derived from Prisma:
 
-    ```azurecli-interactive
+    ```azurecli
     cat ./pages/index.tsx
     ```
 
@@ -164,7 +164,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 
 1. Run the following commands to retrieve the values of the Cosmos DB SQL API endpoint and the corresponding access key, and store them in temporary variables:
 
-    ```azurecli-interactive
+    ```azurecli
     RG1NAME=postgresql-db-RG
     SERVER_NAME=$(az postgres server list --resource-group $RG1NAME --query "[0].name" --output tsv)
     USER_NAME='Student'
@@ -173,7 +173,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 
 1. Run the following commands to replace the placeholders in the **.env** file with the values you set in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
     sed -i "s/SERVER_NAME/$SERVER_NAME/g" ./.env
     sed -i "s/USER_NAME/$USER_NAME/" ./.env
     sed -i "s/PASSWORD/$PASSWORD/" ./.env
@@ -181,7 +181,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 
 1. Run the following command to validate that the **.env** file contains the actual values of the Azure PostgreSQL server and its administrative credentials:
 
-    ```azurecli-interactive
+    ```azurecli
     cat ./.env
     ```
 
@@ -197,7 +197,7 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 
 1. Within the web browser window displaying the Azure portal, from the Bash session on the **Cloud Shell** pane, run the following commands to create a resource group that will host the Azure web app, into which you will deploy the Next.js application:
 
-    ```azurecli-interactive
+    ```azurecli
     RG1NAME=postgresql-db-RG
     LOCATION=$(az group show --resource-group $RG1NAME --query location --output tsv)
     RG2NAME=cna-nextjs-RG
@@ -206,21 +206,22 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 
 1. Run the following commands to create an Azure App Service plan that will host the new Azure web app:
 
-    ```azurecli-interactive
+    ```azurecli
    SPNAME=nextjs-sp
-   az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku F1
+   az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku F1 --is-linux
     ```
 
 1. Run the following commands to create a Node.js-based Azure web app:
 
-    ```azurecli-interactive
+    ```azurecli
     WEBAPPNAME=nextjs$RANDOM$RANDOM
     az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME --runtime "NODE|12-lts"
     ```
 
 1. Run the following commands to reinitialize the local Git repository and commit all the changes in the main branch:
 
-    ```azurecli-interactive
+    ```azurecli
+    cd ~/wp2104-m03u07/
     git init
     git add -A
     git commit -m "Initial Commit"
@@ -228,7 +229,7 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 
 1. Run the following commands to set up user-level deployment credentials:
 
-    ```azurecli-interactive
+    ```azurecli
     DEPLOYMENTUSER=m03u07User$RANDOM
     DEPLOYMENTPASS=m03u07Pass$RANDOM$RANDOM
     az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
@@ -236,26 +237,26 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 
 1. Run the following commands to identify the user-level deployment credentials. Make sure to record their values because you'll need them later in this exercise:
 
-    ```azurecli-interactive
+    ```azurecli
     echo $DEPLOYMENTUSER
     echo $DEPLOYMENTPASS
     ```
 
 1. Run the following command to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
-    ```azurecli-interactive
+    ```azurecli
     DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
     ```
 
 1. Run the following command to configure the remote repo named **azure**, representing the deployment URL you identified in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
     git remote add azure $DEPLOYMENTURL
     ```
 
 1. Run the following commands to push the content of the master branch to the Azure web app, when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task:
 
-    ```azurecli-interactive
+    ```azurecli
     git push --set-upstream azure master
     ```
 

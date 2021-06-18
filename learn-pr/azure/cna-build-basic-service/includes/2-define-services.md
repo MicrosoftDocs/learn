@@ -6,7 +6,7 @@ The term *service* represents a collection of components that collectively deliv
 
 ## How can services use Azure capabilities?
 
-In the context of cloud-native applications, you can optimize the use of services by using Azure capabilities. For example, it's common to implement services as containers. This automatically ensures their isolation by including all service dependencies within the container image. Deploying containers to Azure Kubernetes Service (AKS) allows you to increase scalability and resiliency, which are fundamental parts of container orchestration. It also offers minimized maintenance overhead inherent to the managed service. Offerings such as Azure SQL Database, Azure Cosmos DB, and Azure Database for PostgreSQL offer equivalent benefits for data persistence. With Azure API Management, you can control access to services' APIs.
+In the context of cloud-native applications, you can optimize the use of services by using Azure capabilities. For example, it's common to implement services within containers. This automatically ensures their isolation by including all service dependencies within the container image. Deploying containers to Azure Kubernetes Service (AKS) allows you to increase scalability and resiliency, which are fundamental parts of container orchestration. It also offers minimized maintenance overhead inherent to the managed service. Offerings such as Azure SQL Database, Azure Cosmos DB, and Azure Database for PostgreSQL offer equivalent benefits for data persistence. With Azure API Management, you can control access to services' APIs.
 
 :::image type="content" source="../media/2-services-leveraging-azure.png" alt-text="Services that use Azure capabilities, including Azure Database for PostgreSQL and Cosmos DB.":::
 
