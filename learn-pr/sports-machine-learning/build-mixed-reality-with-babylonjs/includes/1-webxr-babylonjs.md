@@ -14,8 +14,8 @@ Babylon.js is a complete JavaScript framework for building 3D games and experien
 
 The ability to use JavaScript to create 3D experiences makes building new metaverse worlds even more accessible to all types of developers. A great way to get started building and learning with Babylon.js is by checking out the [Babylon.js Playground](https://playground.babylonjs.com/?azure-portal=true). The playground allows you to try out your creation in the browser without downloading anything.
 
-We're going to build a scene to display the characters in *Space Jam: A New Legacy*. We'll display a tile for each character that gives a player efficiency rating (PER) when you select it. Now let's start building out the following *Space Jam: A New Legacy* scene with Babylon.js!
+We're going to build a scene to display the characters in *Space Jam: A New Legacy*. We'll display an icon for each character that gives a player efficiency rating (PER) when you select it. Now let's start building out the following *Space Jam: A New Legacy* scene with Babylon.js!
 
-![Movie scene with tiles for characters.](../media/space-jam-scene.png)
+![Movie scene with icons for characters.](../media/space-jam-scene.png)
 
 © 2021 Warner Bros. Ent. All Rights Reserved.

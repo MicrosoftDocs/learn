@@ -57,7 +57,7 @@ The following code instantiates the `PhotoDome` class, passes in the image URL, 
 
 Save the changes. If you still have the project running, the hot reload will reload your scene. The scene should look like the following one:
 
-![Three-dimensional animation of the scene without tiles for players.](../media/space-jam-no-buttons.gif)
+![Three-dimensional animation of the scene without icons for players.](../media/space-jam-no-buttons.gif)
 
 The scene is set. Let's add player buttons and actions!
 

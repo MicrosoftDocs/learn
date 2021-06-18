@@ -1,14 +1,14 @@
 We're ready to build out the `createCharacterButtons` function. 
 
-## Create a character tile
+## Create a character icon
 
-Use the following code to add `CylinderPanel` to `mainManager`. `CylinderPanel` will be the container for the buttons. Then create `meshManager` and `meshPanel` to display the pop-up `displayStatsContainer` player card. Add the `onPointerUpObservable` click event to remove `displayStatsContainer` from the scene when it's clicked.
+Use the following code to add `CylinderPanel` to `mainManager`. `CylinderPanel` will be the container for the icons. Then create `meshManager` and `meshPanel` to display the pop-up `displayStatsContainer` player card. Add the `onPointerUpObservable` click event to remove `displayStatsContainer` from the scene when it's selected.
 
 The `createCharacterButtons()` function belongs in the *environment.ts* file within the `Environment` class.
 
 ```javascript
 public createCharacterButtons() {
-    // Create the main 3D UI manager for the tile grid
+    // Create the main 3D UI manager for the icon grid
     var mainManager = new GUI.GUI3DManager(this._scene);
 
     // Create a cylindrical panel so that the images wrap around the user
@@ -34,7 +34,7 @@ Now you have a position for each of the player cards within the main panel.
 
 ## Create the character pop-up image
 
-Now you need add the code for the pop-up image that contains the PER value of the player. So when a player tile is selected, their stat card (name, image, and PER) will appear large in the center of the screen.
+Now you need add the code for the pop-up image that contains the PER value of the player. So when a player icon is selected, their stat card (name, image, and PER) will appear large in the center of the screen.
 
 This code belongs at the bottom of the `createCharacterButtons()` function that you started earlier.
 

@@ -1,6 +1,6 @@
-We've set up the scene, default XR experience, and physics. Now let's build out the character tiles and interactions. 
+We've set up the scene, default XR experience, and physics. Now let's build out the character icons and interactions. 
 
-To create the tiles and interactions, we'll use the `babylonjs-gui` library. We'll use `GUI.GUI3DManager` and `GUI.CylinderPanel` to manage the group of `GUI.HolographicButton` tiles.
+To create the icons and interactions, we'll use the `babylonjs-gui` library. We'll use `GUI.GUI3DManager` and `GUI.CylinderPanel` to manage the group of `GUI.HolographicButton` icons.
 
 ## Import the packages
 
@@ -48,6 +48,6 @@ export class Environment {
 }
 ```
 
-Now you have an environment with a scene, an engine to render the scene, and data from the JSON file. It's time to create the player tiles and make them clickable!
+Now you have an environment with a scene, an engine to render the scene, and data from the JSON file. It's time to create the player icons and make them clickable!
 
 © 2021 Warner Bros. Ent. All Rights Reserved.
