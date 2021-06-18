@@ -1,6 +1,6 @@
-Practice what you've learned in this module by completing some coding challenges. These challenges aren't complicated, and you'll find solutions in the next unit. 
+Practice what you've learned in this module by completing some coding exercises. These exercises aren't complicated, and you'll find solutions in the next unit. 
 
-Try to solve the challenges on your own first. Then compare your results with the solutions. You can always review the module if you don't remember an important detail.
+Try to solve the exercises on your own first. Then compare your results with the solutions. You can always review the module if you don't remember an important detail.
 
 ## Write a FizzBuzz program
 
