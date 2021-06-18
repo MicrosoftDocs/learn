@@ -5,10 +5,11 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction
-  ms.date: 4/5/2021
+  ms.date: 6/17/2021
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
