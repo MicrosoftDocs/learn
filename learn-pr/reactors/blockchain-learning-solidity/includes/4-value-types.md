@@ -7,7 +7,7 @@ Integers are used in every Solidity source file. They represent whole numbers an
 - Signed: Include negative and positive numbers. Can represent as **int**.
 - Unsigned: Includes positive numbers only. Can represent as **uint**.
 
-If many bits aren't specified, the default value is 256 bits.
+If the number of bits aren't specified, the default value is 256 bits.
 
 The following operations can be applied to integers:
 
