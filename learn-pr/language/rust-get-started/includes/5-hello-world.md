@@ -1,4 +1,4 @@
-Now that you've installed Rust, let's write your first Rust program. You'll print the message "Hello, world!" to the console.
+With Rust installed, you're ready to start coding. Let's write a program that prints "Hello, world!" to the console.
 
 ## Create a new directory to organize your code
 
@@ -10,8 +10,8 @@ For Linux, macOS, and PowerShell on Windows, run the following commands:
 ```console
 mkdir ~/rust-learning-path
 cd ~/rust-learning-path
-mkdir hello_world
-cd hello_world
+mkdir hello-world
+cd hello-world
 
 ```
 
@@ -20,8 +20,8 @@ For the Windows command prompt, run the following commands:
 ```console
 mkdir "%USERPROFILE%\rust-learning-path"
 cd /d "%USERPROFILE%\rust-learning-path"
-mkdir hello_world
-cd hello_world
+mkdir hello-world
+cd hello-world
 
 ```
 

@@ -100,7 +100,7 @@ Identify the subtasks of *Develop, test and deploy Azure Functions with Azure Fu
 1. **Exercise - Deploy an Azure Function to the Cloud with Azure Core Tools** (Cloud)
 
 
-    1. Create a function app - use sandbox resource group (see [this script](https://docs.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-serverless))
+    1. Create a function app - use sandbox resource group (see [this script](/azure/azure-functions/scripts/functions-cli-create-serverless))
         1. set storage account name
         1. set function app name
         1. use sandbox resource group

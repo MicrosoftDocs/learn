@@ -3,7 +3,7 @@ uid: learn.student-evangelism.web-development-101.introduction-to-programming
 metadata:
   title: Introduction to programming
   description: Learn about programming languages and the tools that developers use to create software.
-  ms.date: 03/24/2020
+  ms.date: 03/24/2021
   author: chloecodesthings
   ms.author: chcondon
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract:  |
   - Learn about the basic elements of a program.
   - Learn about the software and tools used by professional developers.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/web-development-101-introduction.svg
 levels:
 - beginner
 roles:

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/01/2021
+  ms.date: 06/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -24,14 +24,14 @@ quiz:
     - content: "Clean Missing Data"
       isCorrect: false
       explanation: "That is incorrect. When you need to transform numeric data to be on a similar scale, use a Normalize Data module."
-  - content: "You use Azure Machine Learning designer to create a training pipeline and an inference pipeline for a regression model. Now you plan to deploy the inference pipeline as a real-time service. What kind of compute target should you create to host the service?"
+  - content: "Why do we split our data into training and validation sets?"
     choices:
-    - content: "Compute Instance"
+    - content: "Data is split into two sets in order to create two models, one model using the training set and a different model using the validation set."
       isCorrect: false
-      explanation: "That is incorrect. Use an Inference Cluster for deployment."
-    - content: "Compute Cluster"
-      isCorrect: false
-      explanation: "That is incorrect. Use an Inference Cluster for deployment."
-    - content: "Inference Cluster"
+      explanation: "That is incorrect. The validation set is used to test the  model created using the training set."
+    - content: "Splitting data into two sets enables you to compare the labels that the model predicts with the actual known labels in the original dataset."
       isCorrect: true
-      explanation: "That is correct. Use an Inference Cluster for deployment."
+      explanation: "That is correct. We want to test the model created with training data on validation data to see how well the model performs with data it was not trained on."
+    - content: "We only need to split our data when we use the Azure Machine Learning Designer, not in other machine learning scenarios."
+      isCorrect: false
+      explanation: "That is incorrect. Splitting data into training and validation sets is an important part of all machine learning scenarios."

@@ -12,7 +12,7 @@ Like SQL Database and PostgreSQL, you require the name of the server, and the cr
 > [!div class="mx-imgBorder"]
 > ![The **Overview** page for an Azure Database for MySQL instance in the Azure portal](../media/5-mysql-azure.png)
 
-You must also open the MySQL firewall to enable client applications to connect to the service. For detailed information, see [Azure Database for MySQL server firewall rules](https://docs.microsoft.com/azure/mysql/concepts-firewall-rules).
+You must also open the MySQL firewall to enable client applications to connect to the service. For detailed information, see [Azure Database for MySQL server firewall rules](/azure/mysql/concepts-firewall-rules).
 
 ## Use MySQL Workbench to query a database
 

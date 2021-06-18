@@ -1,4 +1,3 @@
-
 You now have the knowledge and tools to model, measure, and monitor the efficiency of your Azure Cosmos DB collections. 
 
 We've optimized the Orders collection for the online retail scenario. This database can now scale according to the needs of the business. You can apply these methods to your own scenario to make the most of the Azure Cosmos DB capacity that you've allocated.
@@ -27,6 +26,6 @@ If you want to delete each collection individually, select the ellipsis (**...**
 
 To learn more about Azure Cosmos DB, see the following resources:
 
-- [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/): This is the official Microsoft documentation for Azure Cosmos DB.
+- [Azure Cosmos DB documentation](/azure/cosmos-db/): This is the official Microsoft documentation for Azure Cosmos DB.
 - [Azure Cosmos DB calculator](https://www.documentdb.com/capacityplanner#): This tool calculates Request Units for different workloads. This information is useful for estimating the volume of your JSON payload.
 - [Azure Cosmos DB benchmark code](https://github.com/Azure/azure-cosmos-dotnet-v2/tree/master/samples/documentdb-benchmark): The utility code that you used in this module is based on this code.

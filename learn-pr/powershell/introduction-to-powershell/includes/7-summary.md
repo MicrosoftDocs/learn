@@ -6,6 +6,6 @@ You should now have a good understanding of PowerShell, what it's used for, and 
 
 ## Resources
 
-- [Getting started with PowerShell](https://docs.microsoft.com/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
-- [Core cmdlets and using the help system](https://docs.microsoft.com/powershell/scripting/learn/ps101/02-help-system?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
-- [Discovering objects](https://docs.microsoft.com/powershell/scripting/learn/ps101/03-discovering-objects?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [Getting started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started?preserve-view=true&view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
+- [Core cmdlets and using the help system](/powershell/scripting/learn/ps101/02-help-system?preserve-view=true&view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
+- [Discovering objects](/powershell/scripting/learn/ps101/03-discovering-objects?preserve-view=true&view=powershell-7.1&WT.mc_id=academic-16634-chnoring)

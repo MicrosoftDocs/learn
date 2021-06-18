@@ -2,15 +2,15 @@ Recall that our company processes video content on Windows VMs. A new city has c
 
 ## Create a new Windows virtual machine
 
-We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages during the creation of the VM.
+We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages when creating a VM.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select the **See all** link next to the *Azure Marketplace* heading. This option displays all available images in the Azure Marketplace.
+1. Select the **See more in Marketplace** link next to *Popular offers*. This option displays all available images in the Azure Marketplace.
 
-    Select **Microsoft** as the filter value from the *Publisher* filter options. In the search box, enter **Windows Server**, and then press <kbd>Enter</kbd>.
+    Select **Microsoft** as the filter value in the *Publisher* filter options. In the search box, enter **Windows Server**, and then press <kbd>Enter</kbd>.
 
     :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing the virtual machine image search options.":::
 
@@ -18,7 +18,9 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
     :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the virtual machine image search result that highlights the Windows Server option.":::
 
-1. There are several Windows Server versions we can select from to create our VM. In the **Windows Server** pane, from the **Select a plan** dropdown list, select the **[smalldisk] Windows Server 2019 Datacenter** option.
+    The **Windows Server** pane appears.
+
+1. There are several Windows Server versions we can select from to create our VM. In the **Select a plan** dropdown list, select the **[smalldisk] Windows Server 2019 Datacenter** option.
 
 1. Select **Create** to start configuring the VM.
 
@@ -43,21 +45,21 @@ The **Create a virtual machine** pane appears.
     | Setting | Value |
     |---------|---------|
     | **Project details** |
-    | Subscription | Concierge Subscription (the subscription that should be billed for VM hours) |
-    | Resource Group | Select "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Subscription | Concierge Subscription (the subscription that should be billed for VM hours). |
+    | Resource Group | Select ***<rgn>[sandbox resource group name]</rgn>*** |
     | **Instance details** |
     | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2) |
     | Region | Select a region close to you from the following locations. |
     | Availability options | Select **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages. |
-    | Image | Ensure the image is set to "[smalldisk] Windows Server 2019 Datacenter - Gen1". You can open the dropdown list to see all the options available. |
+    | Image | Ensure the image is set to "Windows Server 2019 Datacenter - Gen1". You can open the dropdown list to see all the options available. |
     | Size | The **Size** field is not directly editable and has a DS1 default size. Select the **See all sizes** link to explore other VM sizes. The resulting dialog box allows you to filter based on # of CPUs, Name, and Disk Type. Select **Standard DS1 v2** (normally the default) when you are done. That will give the VM 1 CPU and 3.5 GB of memory. |
     | **Administrator account** |
     | Username | Enter a username you will use to sign in to the VM. |
     | Password | Enter a password that's at least 12 characters long. It must have three of the following: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
     | Confirm password | Confirm your password. |
     | **Inbound port rules** |
-    | Public inbound ports | Select *Allow selected ports*. Because this is a Windows VM, we want to be able to access the desktop using RDP. |
-    | Select inbound ports | Select *RDP (3389)* from the dropdown list. As the note in the UI indicates, we can also adjust the network ports after we create the VM. |
+    | Public inbound ports | Select **Allow selected ports**. Because this is a Windows VM, we want to be able to access the desktop using RDP. |
+    | Select inbound ports | Select **RDP (3389)** from the dropdown list. As the note in the UI indicates, we can also adjust the network ports after we create the VM. |
     | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -77,7 +79,7 @@ The **Create a virtual machine** pane appears.
     | OS disk type | Select *Premium SSD* |
     | Encryption type | Select the *(Default) Encryption at-rest with a platform-managed key* from the dropdown list. |
     | **Data disks** |
-    | Select **Create and attach a new disk** link | Accept all the defaults: *Name*; *None (empty disk)*; *1024 GiB Premium SSD*; *(Default) Encryption at-rest with a platform-managed key*; and *No* for **Enable shared disk**. Note that here is where we could use a snapshot, or Storage Blob to create a VHD. Select **OK** to create the disk, and go back to the **Data disks** section. |
+    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. Note that here is where we could use a snapshot, or Storage Blob to create a VHD. Select **OK** to create the disk, and go back to the **Data disks** section. |
 
     ![Screenshot showing the configure disks section for the VM.](../media/3-configure-disks.png)
 
@@ -98,7 +100,7 @@ The **Create a virtual machine** pane appears.
     | Setting | Value |
     |---------|---------|
     | **Network interface** |
-    | Virtual network | Let's change the default ranges to use the `172.xxx` IP address space. Select **Create new**. The **Create virtual network** pane appears. |
+    | Virtual network | Let's change the default ranges to use the `172.xxx` IP address space. Select the **Create new** link. The **Create virtual network** pane appears. |
 
 1. Enter the following values for each field.
 

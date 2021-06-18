@@ -94,4 +94,4 @@ Continue to the next module in this Learning path and discover how to [classify 
 
 <!-- Links -->
 
-[ClassifyImages]: https://docs.microsoft.com/learn/modules/train-test-predictive-ai-model-nasa/?azure-portal=true
+[ClassifyImages]: /learn/modules/train-test-predictive-ai-model-nasa/?azure-portal=true

@@ -32,13 +32,13 @@ It's possible to define a *semantic type* for a property. A semantic type typica
     "@type": ["Property", "Temperature"],
     "name": "setTemperature",
     "schema": "double",
-    "unit": "degreeCelsius",
+    "unit": "degreeFahrenheit",
     "writable": true
   }
 
 ```
 
-In addition to Celsius, `degreeFarenheit` and even `degreeKelvin` are acceptable units.
+In addition to Fahrenheit, `degreeCelsius` and even `degreeKelvin` are acceptable units.
 
 The `type`, `name`, and `schema` entries are the only ones required for a property. There's a range of optional entries, including `@id`, `description`, and  `displayName`. The `writable` entry is optional, and defaults to false.
 
@@ -60,7 +60,7 @@ For a continuous stream of telemetry values, define an object in your model such
     "@type": ["Telemetry", "Temperature"],
     "name": "temperature",
     "schema": "double",
-    "unit": "degreeCelsius"
+    "unit": "degreeFahrenheit"
   }
 ```
 
@@ -207,7 +207,7 @@ The factory is an example of a digital twin model of a large complex object, whi
             "@type": ["Property", "Temperature"],
             "name": "setTemperature",
             "schema": "double",
-            "unit": "degreeCelsius",
+            "unit": "degreeFahrenheit",
             "writable": true
           },
           {

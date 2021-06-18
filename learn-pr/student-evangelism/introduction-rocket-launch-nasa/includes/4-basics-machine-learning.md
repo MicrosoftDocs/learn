@@ -6,7 +6,7 @@ You can factor in sun exposure, temperature, moisture in the soil and air, the t
 
 ## Data science lifecycle
 
-An understanding of the [data science lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can guide you in your effort to create new knowledge from data sources.
+An understanding of the [data science lifecycle](/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can guide you in your effort to create new knowledge from data sources.
 
 :::image type="content" source="../media/data-science-lifecycle.png" alt-text="Image that shows a diagram of the data science lifecycle." border="false" loc-scope="Azure":::
 

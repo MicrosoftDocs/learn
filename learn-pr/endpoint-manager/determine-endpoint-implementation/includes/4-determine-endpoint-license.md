@@ -28,4 +28,4 @@ The following plans provide different levels of services and capabilities that c
 
 For more information, see the following:
 -  [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?azure-portal=true)
-- [Microsoft Intune planning guide - Determine costs and licensing](https://docs.microsoft.com/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-3-determine-costs-and-licensing)
+- [Microsoft Intune planning guide - Determine costs and licensing](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-3-determine-costs-and-licensing)

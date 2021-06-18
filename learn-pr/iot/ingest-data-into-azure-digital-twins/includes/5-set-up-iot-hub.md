@@ -4,7 +4,7 @@ In this unit, you'll create and configure an instance of Azure IoT Hub.  IoT Hub
 
 Use the Azure CLI to create a resource group and then add an IoT hub. Use the resource group that was created for use by Azure Digital Twins and Azure Functions.
 
-1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
+1. Run the following [command to create an IoT hub](/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
 
    ```azurecli
    az iot hub create --name $dtname --resource-group $rgname --sku S1

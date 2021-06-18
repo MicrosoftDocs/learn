@@ -3,7 +3,7 @@ uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
   title: Describe the compliance management capabilities in Microsoft
   description: "Describe the compliance management capabilities in Microsoft"
-  ms.date: 03/25/2021
+  ms.date: 06/16/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -30,6 +30,8 @@ products:
 units:
 - learn.wwl.describe-compliance-management-capabilities-microsoft.introduction
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-common-compliance-needs
+- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal
+- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-microsofts-privacy-principles
 - learn.wwl.describe-compliance-management-capabilities-microsoft.explore-compliance-center
 - learn.wwl.describe-compliance-management-capabilities-microsoft.manager
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-use-benefits-of-compliance-score

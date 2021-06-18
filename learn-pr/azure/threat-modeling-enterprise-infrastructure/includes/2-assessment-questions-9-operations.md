@@ -22,4 +22,4 @@ These questions allow you to:
 |**Describe your security operations processes as they relate to changes in the production environment.**|<ul><li>How changes to the production environment are documented, accessed, and updated.</li><li>Change management policy details.</li><li>How and when employees can access security operation policies.</li></ul>|
 
 > [!TIP]
-> Check out [Azure operations](https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices) for tips on securing your infrastructure operations.
+> Check out [Azure operations](/azure/security/fundamentals/operational-best-practices) for tips on securing your infrastructure operations.

@@ -38,4 +38,3 @@ You can see the Apache Spark pool instance status below the cell you are running
 In the output cell, you see the output.
 
 
-
