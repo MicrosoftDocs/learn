@@ -9,4 +9,4 @@ ms.author: jodowns
 
 [!INCLUDE [Upgrade Azure PowerShell](azure-template-bicep-exercise-upgrade-powershell.md)]
 
-[!INCLUDE [Sign into sandbox (PowerShell)](azure-template-exercise-sandbox-sign-in-powershell.md)]
+[!INCLUDE [Sign into Azure (no sandbox) (PowerShell)](azure-template-exercise-nosandbox-sign-in-powershell.md)]
