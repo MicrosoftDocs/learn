@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.industrial-iot-connectivity.how-connectivity-for-azure-sphere-works
-title: How does industrial ioT connectivity for Azure Sphere work?
+title: How does industrial IoT connectivity for Azure Sphere work?
 metadata:
-  title: How does industrial ioT connectivity for Azure Sphere work?
+  title: How does industrial IoT connectivity for Azure Sphere work?
   description: In this section, we explain how to solve the problem that described in the scenario with connectivity options.
   ms.date: 05/11/2021
   author: leestott
