@@ -1,6 +1,6 @@
 Today we spent some time covering VM offer basics for the Microsoft commercial marketplace. We started with an overview of VM benefits, highlighting some of the ways that the VM software delivery model can help you and your customers meet your business goals. You learned where customers can find VM offers in the commercial marketplace and the different ways you can engage with new customers. We also explored technical concepts and guidance that will help you build your offer's VM image.
 
-Now that you have an understanding of the VM offer basics, we encourage you to use the resources shared via links throughout this module to go deeper. Here are some helpful links you can reference as you create your SaaS offer for the commercial marketplace:
+Now that you have an understanding of the VM offer basics, we encourage you to use the resources shared via links throughout this module to go deeper. Here are some helpful links you can reference as you create your VM offer for the commercial marketplace:
 
 - [Documentation to help you plan a VM offer for the commercial marketplace](/azure/marketplace/marketplace-virtual-machines)
 - [Documentation for creating a VM offer on Azure Marketplace](/azure/marketplace/azure-vm-create)
