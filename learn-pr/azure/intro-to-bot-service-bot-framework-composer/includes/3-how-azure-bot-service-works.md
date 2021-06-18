@@ -1,19 +1,19 @@
-The Azure Bot Service supports the complete bot creation process, including design, build, test, and publish tasks. You'll focus on the Bot Framework Composer in this unit to understand the bot design process and a basic understanding creating a bot, extending bot capabilites, and publishing a bot in Azure.
+The Azure Bot Service supports the complete bot creation process. This includes design, building, testing, and publishing tasks. You'll focus on the Bot Framework Composer to understand the bot design process. You'll also gain a basic understanding of how to create a bot, extendi bot capabilites, and publish a bot in Azure.
 
 ## Design a bot
 
 Before building your bot, make a plan of the bot you want to create. Ensuring a great user experience should be your number one priority when designing a bot. Consider the following questions:
 
-- **What your bot is used for?** Determine the kind of bot you plan to build. This will help to define the functionalities you want to implement in the bot.
-- **What problems does your bot intend to solve?** Be clear about the problems your bot intends to solve. Solving problems for customers is the top factor you should consider when building bots. You should also consider things such as how to solve the user's problem better, easier, or faster than any of the alternative experiences.
-- **Who will use your bot?** If you are designing a bot, it's safe to assume that you are expecting users to use it. Different customers will expect different user experiences. This will also determine the complexity you should consider in your bot design. Consider what languages to implement for the bot.
-- **Where will your bot run?** You should decide the platforms your bot will run on. For example, a bot designed to run on a mobile device will have more features like sending SMS to implement and the publishing experience will vary from platform to platform.
+- What your bot is used for? Determine the kind of bot you plan to build. This will help to define the functionalities you want to implement in the bot.
+- What problems does your bot intend to solve? Be clear about the problems your bot intends to solve. Solving problems for customers is the top factor you should consider when building bots. You should also consider things such as how to solve the user's problem better, easier, or faster than any of the alternative experiences.
+- Who will use your bot? If you are designing a bot, it's safe to assume that you are expecting users to use it. Different customers will expect different user experiences. This will also determine the complexity you should consider in your bot design. Consider what languages to implement for the bot.
+- Where will your bot run? You should decide the platforms your bot will run on. For example, a bot designed to run on a mobile device will have more features like sending SMS to implement and the publishing experience will vary from platform to platform.
 
 ## Create a bot with the Bot Framework Composer
 
-Composer is a visual editing canvas for building bots. You can use it to do the following:
+The *Bot Framework Composer* (Composer) is a visual editing canvas for building bots. You can use it to:
 
-- Create a new bot using a template. This now incorporates the Virtual Assistant capabilities directly into Composer and new templates.
+- Create a new bot by using a template. This process directly incorporates the capabilities of Virtual Assistant into Composer and new templates.
 - Add natural language understanding capabilities to your bot using LUIS and/or QnA/FAQ type capabilities using QnA Maker.
 - Author text and if needed speech variation responses for your Bot using language generation templates.
 - Author bots in multiple languages.
@@ -26,7 +26,7 @@ Apps created with Composer uses the Adaptive dialog format, a JSON specification
 
 ### Adaptive dialogs
 
-In Composer, dialogs are functional components offered in a visual interface that do not require you to write code. The dialog system supports building an extensible model that integrates all of the building blocks of a bot's functionality. Composer helps you focus on conversation modeling rather than the mechanics of dialog management. Adaptive dialogs and the event model simplify sophisticated conversation modelling enabling more natural, dynamic converation flow, interruption and context switching. They also help you focus on the model of the conversation rather than the mechanics of dialog management.
+In Composer, dialogs are functional components offered in a visual interface that do not require you to write code. The dialog system supports building an extensible model that integrates all of the building blocks of a bot's functionality. Composer helps you focus on conversation modeling rather than the mechanics of dialog management. Adaptive dialogs and the event model simplify sophisticated conversation modelling enabling more natural, dynamic conversation flow, interruption, and context switching. They also help you focus on the model of the conversation rather than the mechanics of dialog management.
 
 ## Extend a bot with language capabilities
 
