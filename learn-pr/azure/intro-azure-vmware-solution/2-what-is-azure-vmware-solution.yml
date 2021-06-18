@@ -23,14 +23,14 @@ quiz:
     - content: "Customers manage all components of Azure VMware Solution."
       isCorrect: false
       explanation: "Microsoft manages the platform for the customer."
-    - content: "AVS is the fastest way to force a move off of Azure-centric operational processes."
+    - content: "Azure VMware Solution is the fastest way to force a move off of Azure-centric operational processes."
       isCorrect: false
       explanation: "Azure VMware Solutions provide a fast path to cloud."
   - content: "Which native Azure service can be integrated with Azure VMware Solution to provide VMware vCenter SSO identity?"
     choices:
     - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Azure Databricks is a data solution available to integrate with AVS."
+      explanation: "Azure Databricks is a data solution available to integrate with Azure VMware Solution."
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."

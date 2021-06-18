@@ -1,8 +1,8 @@
-Now that we know what Azure VMware Solution (AVS) is and what it can do. Let's see how AVS is set up and how it works on Azure.  
+Now that we know what Azure VMware Solution is and what it can do. Let's see how Azure VMware Solution is set up and how it works on Azure.  
 
 
 ## On-premises VMware vs. Azure VMware Solution
-On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. AVS maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
+On-premises VMware environments require the customer to support all the hardware and software required to run the platform. Azure VMware Solution does not. Microsoft maintains the platform for the customer. Let's take a look what is managed by the customer and what is managed by Microsoft.
 
 :::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Diagram showing Azure VMware Solution shared support matrix.":::
 
@@ -50,7 +50,7 @@ Private clouds contain vSAN clusters built with dedicated, bare-metal Azure host
 
 For each private cloud created, there is one vSAN cluster by default. You can add, delete, and scale clusters using the Azure portal or through the API. We offer node configurations based on core, memory, and storage requirements. You can choose the type of node that best fits the needs of your organization.
 
-The AVS node min and maximums configuration are:
+The solution node min and maximums configuration are:
 
 - Min 3 nodes per cluster
 - Max 16 nodes in a vSphere cluster
@@ -59,7 +59,7 @@ The AVS node min and maximums configuration are:
 
 Each of the high-end hosts has 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. The high-end hosts have two vSAN diskgroups with 15.36 TB (SSD) of raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
-You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in AVS is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
+You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage of each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic
 
 The VMware software versions used in new deployments of Azure VMware Solution private clouds clusters are:
 
@@ -85,7 +85,7 @@ The Azure VMware Solution private cloud environment can be accessible from on-pr
 
 The diagram below shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
 
-:::image type="icon" source="../media/3-avs-networking-overview.png" border="false" alt-text=" Diagram of Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach.":::
+:::image type="icon" source="../media/3-networking-overview.png" border="false" alt-text=" Diagram of Azure VMware Solution using ExpressRoute and ExpressRoute Global Reach.":::
 
 These services require specific network address ranges and firewall ports for enabling the services. 
 
@@ -115,7 +115,7 @@ You can use Azure storage services in workloads running in your private cloud. T
 - Blob Storage
  
 The below diagram shows the available Azure Storage services that can be used with Azure VMware Solution.
-:::image type="icon" source="../media/3-avs-storage-overview.png" border="false" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
+:::image type="icon" source="../media/3-storage-overview.png" border="false" alt-text="Diagram showing Azure VMware Solution and the Azure storages services available to be used.":::
 
 
 ### Security and compliance with Azure VMware Solutions
@@ -131,7 +131,7 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The diagram below illustrates the relationship of the encryption keys to Azure VMware Solution.
 
-:::image type="icon" source="../media/3-avs-security-overiew.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
+:::image type="icon" source="../media/3-security-overview.png" border="false" alt-text="Diagram showing the flow of Azure VMware Solution encryption keys.":::
 
 ## Get started with Azure VMware Solution
 
@@ -139,8 +139,8 @@ The following table outlines the steps needed for an organization to get started
 
 |Milestone |Steps  |
 |---------|---------|
-|Plan   |  Plan the deployment of AVS <br> - Assessment <br>- Request Quota <br>- Identify host <br>- Determine Sizing and Connectivity      |
-|Deploy     | Deploy and configure AVS <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>    |
+|Plan   |  Plan the deployment of Azure VMware Solution <br> - Assessment <br>- Request Quota <br>- Identify host <br>- Determine Sizing and Connectivity      |
+|Deploy     | Deploy and configure Azure VMware Solution <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>    |
 |Connect to on-premises     |  - Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit <br>- Peer private cloud to on-premises  <br> - Verify on-premises network connectivity    |
 |Deploy and configure VMware HCX     |  Deploy and configure VMware HCX <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh <br>- Complete setup by checking the appliance status and validating that migration is possible     |
 

@@ -26,7 +26,7 @@ quiz:
     - content: "Virtual machines."
       isCorrect: false
       explanation: "Microsoft doesn't manage the virtual machines."
-  - content: "Shannon wants to start migrating to AVS. What minimum number of nodes must Shannon have to get started?"
+  - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
     choices:
     - content: "Three nodes"
       isCorrect: true
@@ -37,7 +37,7 @@ quiz:
     - content: "16 nodes"
       isCorrect: false
       explanation: "The maximum number of nodes in a cluster is 16."
-  - content: "What does the cloudadmin role in the AVS vCenter do?"
+  - content: "What does the cloudadmin role in the Azure VMware Solution vCenter do?"
     choices:
     - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
       isCorrect: false
