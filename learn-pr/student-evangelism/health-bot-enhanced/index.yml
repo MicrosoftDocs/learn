@@ -15,7 +15,7 @@ abstract: |
   - Learn about interrupting and breaking scenarios. 
   - Implement an interrupting scenario.  
   - Build a bot by using a breaking scenario. 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-enhanced.svg
 levels:
   - beginner
 roles:
@@ -31,4 +31,4 @@ units:
   - learn.health-bot-enhanced.5-knowledge-check
   - learn.health-bot-enhanced.6-summary
 badge:
-  uid: learn.health-bot-enhanced.badge
+  uid: learn.student-evangelism.health-bot-enhanced.badge
