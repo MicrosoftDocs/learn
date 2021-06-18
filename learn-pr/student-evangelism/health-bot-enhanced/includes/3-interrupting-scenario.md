@@ -1,6 +1,8 @@
 In general, an interruption is a disturbance in a process. Similarly, an interrupting scenario causes a break in the flow of the scenario. It allows us to jump between two scenarios. 
 
-Initially, the main scenario is where the bot runs. Due to a keyword that it encounters, the bot switches to the subscenario that's defined as a model. After the subscenario is complete, the bot switches back to the main scenario with an interrupt message that's defined during the configuration.
+Initially, the main scenario is where the bot runs. Due to a keyword that it encounters, the bot switches to the sub-scenario that's defined as a model. After the sub-scenario is complete, the bot switches back to the main scenario with an interrupt message that's defined during the configuration.
+
+Let's start by creating an interrupting bot. After that, we'll connect it to the main bot by using a keyword that calls the interrupting bot. We can start by selecting **New**  in the top left corner on **Scenario Management** page.
 
 ## Create a scenario for an interrupting bot
 

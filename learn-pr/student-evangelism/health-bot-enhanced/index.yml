@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.healthbot-enhanced
+uid: learn.health-bot-enhanced
 metadata:
   title: Enhanced healthcare bot
   description: Learn how to enhance your healthcare bot with advanced functionalities.
@@ -15,7 +15,7 @@ abstract: |
   - Learn about interrupting and breaking scenarios. 
   - Implement an interrupting scenario.  
   - Build a bot by using a breaking scenario. 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-enhanced.svg
 levels:
   - beginner
 roles:
@@ -24,11 +24,11 @@ products:
   - vs
 prerequisites: Introduction and basic healthcare bot
 units:
-  - learn.healthbot-enhanced.1-introduction
-  - learn.healthbot-enhanced.2-interrupting-vs-breaking-scenario
-  - learn.healthbot-enhanced.3-interrupting-scenario
-  - learn.healthbot-enhanced.4-breaking-scenario
-  - learn.healthbot-enhanced.5-knowledge-check
-  - learn.healthbot-enhanced.6-summary
+  - learn.health-bot-enhanced.1-introduction
+  - learn.health-bot-enhanced.2-interrupting-vs-breaking-scenario
+  - learn.health-bot-enhanced.3-interrupting-scenario
+  - learn.health-bot-enhanced.4-breaking-scenario
+  - learn.health-bot-enhanced.5-knowledge-check
+  - learn.health-bot-enhanced.6-summary
 badge:
-  uid: learn.healthbot-enhanced.badge
+  uid: learn.student-evangelism.health-bot-enhanced.badge

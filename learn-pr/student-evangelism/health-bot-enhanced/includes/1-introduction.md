@@ -14,10 +14,6 @@ In this module, you will:
 
 - Introduction to Azure Health Bot
 - Introduction and basic healthcare bot
-- Case studies for Azure Health Bot
-- Language understanding in Azure Health Bot
-- Introduction to built-in scenarios
-- Introduction to Health Bot scenario templates
-- Basic JavaScript
+- Basic familiarity with JavaScript 
 
 **Produced in partnership with Meghana Chikkam and Shreyan J. D. Fernandes, Microsoft Learn student ambassadors, and the Azure Health Bot product group**
