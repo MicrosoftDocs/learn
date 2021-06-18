@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.industrial-iot-connectivity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
+  ms.date: 6/18/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Suppose that you're managing a range of devices that support multiple connectivity mechanisms. You need to continuously improve the device functionalities and respond to security threats. Azure Sphere is suitable to provide security solutions for IoT devices for this scenario because:"
+    choices:
+    - content: "Azure Sphere works with a variety of hardware manufacturers."
+      isCorrect: false
+      explanation: "Support from a variety of devices in itself does not protect from ongoing security threats."
+    - content: "Azure Sphere devices can receive over-the-air OS and application updates using connectivity mechanisms."
+      isCorrect: true
+      explanation: "The ability to receive updates over the air helps in responding to ongoing security threats."
+    - content: "Azure Sphere supports cellular connectivity."
+      isCorrect: false
+      explanation: "Support for cellular connectivity in itself does not protect from ongoing security threats."
+  - content: "Azure Sphere OS currently supports two kinds of LAN network connectivity. If you don't want to be affected by local factors such as walls, cabinets, and interference from other electronic devices for faster speed, which connectivity should you use?"
+    choices:
+    - content: "Cellular"
+      isCorrect: false
+      explanation: "Cellular connectivity may not be present in all cases."
+    - content: "Wi-Fi"
+      isCorrect: false
+      explanation: "Wi-Fi connectivity is affected by local factors in proximity."
+    - content: "Ethernet"
+      isCorrect: true
+      explanation: "Ethernet connectivity is not affected by local factors in proximity."
+  - content: "Azure Sphere does not support security beyond the router and cellular modem connectivity components. When you connect Azure Sphere to the cellular networks, which of the following precautions would you take to create a system using a cellular-enabled router?"
+    choices:
+    - content: "The non-Azure Sphere parts of your solution should be adequately and properly secured to ensure that the overall system is robust against security threats."
+      isCorrect: true
+      explanation: "You must be aware of the security boundary where the Azure Sphere protects you. Beyond this boundary, you should be aware of the risks of no protection."
+    - content: "Connect non-Azure Sphere parts of your solution to the Ethernet network to communicate securely with Azure IoT Central."
+      isCorrect: false
+      explanation: "This option could not be feasible depending on the available connectivity options."
+    - content: "Ensure that Azure Sphere parts of the system remain secured even though non-Azure parts of your solution is not providing security."
+      isCorrect: false
+      explanation: "This option could not be feasible depending on the available connectivity options."
+    
+    
