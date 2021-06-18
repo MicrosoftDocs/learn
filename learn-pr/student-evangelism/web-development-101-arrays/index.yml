@@ -18,18 +18,18 @@ abstract: |
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/web-development-101-loops-arrays.svg #TODO change
 levels:
-  - beginner
+- beginner
 roles:
-  - student
+- student
 products:
-  - vs-code
+- vs-code
 units:
-  - learn.student-evangelism.web-development-101-loops-arrays.introduction
-  - learn.student-evangelism.web-development-101-loops-arrays.manipulating-arrays
-  - learn.student-evangelism.web-development-101-loops-arrays.loops
-  - learn.student-evangelism.web-development-101-loops-arrays.operations
-  - learn.student-evangelism.web-development-101-loops-arrays.exercise-operations
-  - learn.student-evangelism.web-development-101-loops-arrays.knowledge-check
-  - learn.student-evangelism.web-development-101-loops-arrays.summary
+- learn.student-evangelism.web-development-101-loops-arrays.introduction
+- learn.student-evangelism.web-development-101-loops-arrays.manipulating-arrays
+- learn.student-evangelism.web-development-101-loops-arrays.loops
+- learn.student-evangelism.web-development-101-loops-arrays.operations
+- learn.student-evangelism.web-development-101-loops-arrays.exercise-operations
+- learn.student-evangelism.web-development-101-loops-arrays.knowledge-check
+- learn.student-evangelism.web-development-101-loops-arrays.summary
 badge:
   uid: learn.student-evangelism.web-development-101-loops-arrays.badge
