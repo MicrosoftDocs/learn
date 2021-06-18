@@ -1,7 +1,4 @@
-﻿This exercise provides an overview of setting up an Azure Cosmos DB account and database. For more in-depth knowledge and tutorials about this topic, refer to:
-
-* [Quickstart: Create an Azure Cosmos account, database, container, and items from the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal?azure-portal=true)
-* [Azure Cosmos DB resource model](https://docs.microsoft.com/azure/cosmos-db/account-databases-containers-items?azure-portal=true)
+﻿This exercise provides an overview of setting up an Azure Cosmos DB account and database. 
 
 In this exercise, you'll:
 
@@ -57,7 +54,7 @@ To perform this exercise, you need:
 
 ## Create an Azure Cosmos DB database
 
-1. On the **Quick start** blade of the newly provisioned Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, and then in the **Common Tasks** section, select **New Database**.
+1. On the Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, and then in the **Common Tasks** section, select **New Database**.
 1. On the **New Database** blade, specify the following settings (leave others with their defaults), and then select **OK**.
 
    | Setting | Configuration |

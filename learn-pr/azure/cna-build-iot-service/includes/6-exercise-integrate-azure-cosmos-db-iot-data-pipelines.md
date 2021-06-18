@@ -1,8 +1,4 @@
-This exercise provides an overview of setting up the collection, processing, and storage of IoT telemetry generated, by using an Azure IoT Central application. For more in-depth knowledge and tutorials about these topics, refer to:
-
-* [IoT Central solution builder guide](https://docs.microsoft.com/azure/iot-central/core/overview-iot-central-solution-builder?azure-portal=true)
-* [Serverless database computing using Azure Cosmos DB and Azure Functions](https://docs.microsoft.com/azure/cosmos-db/serverless-computing-database?azure-portal=true)
-* [Configure rules](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules?azure-portal=true)
+This exercise provides an overview of setting up the collection, processing, and storage of IoT telemetry generated, by using an Azure IoT Central application. 
 
 In this exercise, you'll:
 
@@ -56,7 +52,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Function App**.
-1. On the **Function App** blade, select **+ Add**.
+1. On the **Function App** blade, select **+ Create**.
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**
 
    | Setting | Configuration |
@@ -79,7 +75,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    > Wait for the Azure Function app provisioning to complete. This might take about two minutes.
 
 1. Within the browser window displaying the Azure portal with the Azure Function app provisioning status blade, select **Go to resource**.
-1. On the Azure Function app blade, select **Functions**, and then select **+ Add**.
+1. On the Azure Function app blade, select **Functions**, and then select **+ Create**.
 1. On the **Add function** blade, specify the following settings, and then select **Add**.
 
    | Setting | Configuration |
@@ -101,7 +97,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    | Setting | Configuration |
    | --- | --- |
    | Binding type | Select **Azure Cosmos DB**. |
-   | Document parameter type | Accept the default value of **outDoc**. |
+   | Document parameter name | Accept the default value of **outputDocument**. |
    | Database name | Enter the name of the database you created in the previous exercise, **iotdb**. |
    | Collection Name | Enter **iotcol**. |
    | If true, creates the Cosmos DB database | Select **Yes**. |
@@ -134,7 +130,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 
      outDoc = new {
        pk = iotData.device.id + "-" + iotData.timestamp.ToString("yyyyMMdd"),
-       timestamp = iotData.timestamp
+       timestamp = iotData.timestamp,
        deviceId = iotData.device.id,
        temperature = iotData.device.telemetry.Thermostat_1o.temp.value
      };
@@ -153,7 +149,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 ## Configure and validate IoT telemetry rules of an Azure IoT Central application
 
 1. Switch back to the web browser window displaying the **Devices** page of Azure IoT Central application you created previously in this exercise.
-1. On the **Devices** page of the IoT Central Application portal, in the vertical menu, select **Rules**.
+1. In the IoT Central Application portal, in the vertical menu, select **Rules**.
 1. On the **Rules** page, select **+ New**, and configure the following settings:
 
    | Setting | Configuration |

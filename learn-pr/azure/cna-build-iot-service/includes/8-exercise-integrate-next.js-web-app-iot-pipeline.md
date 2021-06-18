@@ -1,7 +1,4 @@
-﻿This exercise provides an overview of integrating a Next.js with an IoT data pipeline. For more information about these topics, refer to:
-
-* [Export IoT data to cloud destinations using data export](https://docs.microsoft.com/azure/iot-central/core/howto-export-data?tabs=javascript?azure-portal=true)
-* [How to use analytics to analyze device data](https://docs.microsoft.com/azure/iot-central/core/howto-create-analytics?azure-portal=true)
+﻿This exercise provides an overview of integrating a Next.js with an IoT data pipeline. 
 
 In this exercise, you'll:
 
@@ -50,88 +47,6 @@ In this task, you'll configure a sample Next.js application that retrieves data 
 
    ```bash
    cat ./pages/index.js
-   ```
-   The **index.js** file has the following content:
-
-   ```jscript
-   const CosmosClient = require("@azure/cosmos").CosmosClient;
-   import config from "../config";
-   import Head from "next/head";
-
-   Home.getInitialProps = async function () {
-     const { endpoint, key, database, container } = config;
-
-     const client = new CosmosClient({ endpoint, key });
-
-     const databaseID = client.database(database);
-     const containerID = databaseID.container(container);
-
-     if (endpoint) {
-       console.log(`Querying container:\n${containerID}`);
-       const querySpec = {
-         query: "SELECT * FROM c",
-       };
-
-       const { resources: items } = await containerID.items
-         .query(querySpec)
-         .fetchAll();
-       return { CosmoIoTData: items };
-     }
-   };
-
-   export default function Home({ CosmoIoTData }) {
-     return (
-       <div>
-         <Head>
-           <meta name="viewport" content="width=device-width, initial-scale=1" />
-           <meta charSet="utf-8" />
-           <title>Next.JS with Azure Cosmos DB IoT telemetry data</title>
-           <meta name="title" content="Next.JS with Azure Cosmos DB IoT telemetry data" />
-           <meta
-             name="description"
-             content="Next.JS with Azure Cosmos DB IoT telemetry data"
-           />
-           <meta property="og:type" content="website" />
-           <meta property="og:title" content="Next.JS with Azure Cosmos DB IoT telemetry data" />
-           <meta
-             property="og:description"
-             content="Next.JS with Azure Cosmos DB IoT telemetry data"
-           />
-         </Head>
-         <div className="w-full text-center bg-blue-800 flex flex-wrap items-center">
-           <div className="text-3xl w-1/2 text-white mx-2 md:mx-auto py-10">
-             NextJS - CosmosDB IoT telemetry data
-           </div>
-         </div>
-         <div className="bg-gray-200 py-10">
-           {CosmoIoTData.map(({id, pk, deviceId, timestamp, temperature }) => (
-             <div
-               className="flex bg-white shadow-lg rounded-lg mx-2 md:mx-auto mb-10 max-w-2xl"
-               key={id}
-             >
-               <div className="flex items-start px-4 py-6">
-                 <div className="">
-                   <div className="inline items-center justify-between">
-                     <h2 className="text-lg font-bold text-gray-900 -mt-1">
-                       {id}
-                     </h2>
-                     <small className="text-sm text-gray-700 object-right">
-                       DeviceId: {deviceId}
-                     </small>
-                     <small className="ml-3 text-gray-700 text-sm">
-                       Timestamp: {timestamp}
-                     </small>
-                     <small className="ml-3 text-gray-700 text-sm">
-                       Temperature: {temperature}
-                     </small>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           ))}
-         </div>
-       </div>
-     );
    ```
 
 1. From the Bash session in the **Cloud Shell** pane, run the following command to display the content of the **config.js** file, whose purpose is to store the values representing the Cosmos DB SQL API endpoint, the corresponding access key, and the target database and container hosting the IoT data you collected in the previous exercise of this module:
@@ -230,7 +145,7 @@ In this task, you'll deploy the newly configured Next.js application to an Azure
 
    ```bash
    RG2NAME=nextjs-webapp-RG
-   WEBAPPNAME=$(az webapp list -resource-group $RG2NAME --query "[0].name" --output tsv)
+   WEBAPPNAME=$(az webapp list --resource-group $RG2NAME --query "[0].name" --output tsv)
 
    DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
    ```

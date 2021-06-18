@@ -22,6 +22,7 @@ prerequisites: |
   - Basic understanding of cloud computing
   - Basic familiarity with Azure
   - Basic familiarity with programming concepts
+  - Basic familiarity with Azure Functions helpful but not required
 iconUrl: /learn/achievements/build-iot-service.svg
 levels:
 - intermediate

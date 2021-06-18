@@ -1,6 +1,6 @@
-﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction through well-defined programming interfaces.
+﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction through well-defined programming interfaces. These components can include software running on IoT devices and a range of Azure services such as Azure IoT Central, Azure Functions, and Azure Cosmos DB, which can be used for collection, processing, and storage of device telemetry.
 
-These components can include software running on IoT devices and a range of Azure services such as Azure IoT Central, Azure Functions, and Azure Cosmos DB, which can be used for collection, processing, and storage of device telemetry.
+In this module, you will extend your cloud-native application to provide IoT functionality by integrating its components with an Azure IoT services and leveraging Cosmos DB to provide a persistent data store.
 
 ## Scenario: Generate, collect, and process IoT telemetry
 
