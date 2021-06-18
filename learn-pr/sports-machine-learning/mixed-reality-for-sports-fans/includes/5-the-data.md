@@ -7,7 +7,7 @@ In the previous module from this learning path inspired by *Space Jam: A New Leg
 
 The data behind this web app was a comma-separated-value (CSV) file called `game_stats.csv`. You can find the [sample file on the GitHub repository](https://github.com/microsoft/space-jam-a-new-legacy-template/blob/main/game_stats.csv?azure-portal=true).
 
-## For the Babylon.js and Mixed Reality Toolkit
+## Babylon.js and the Mixed Reality Toolkit
 
 For the Babylon.js Mixed Reality project, you can pull all the images of the Tune Squad from the web. To do that, you'll need a JSON file that has each player's:
 
@@ -29,7 +29,7 @@ To convert the CSV file from the previous module into a JSON file to be used in 
 
 You should have the following content set up in Visual Studio Code.
 
-![Screenshot of Visual Studio Code showing only the File Explorer with two files and a portion of the editor pane with an empty Python file.](../media/simple-csv-converter.png)
+![Screenshot of Visual Studio Code showing only File Explorer with two files and a portion of the editor pane with an empty Python file.](../media/simple-csv-converter.png)
 
 ## Write the CSV reader
 
