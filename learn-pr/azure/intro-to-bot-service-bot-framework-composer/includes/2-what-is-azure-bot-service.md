@@ -34,4 +34,4 @@ Bot Framework Emulator is a desktop application that allows bot developers to te
 The Azure Bot resource enables you to register your Bot Framework Composer or SDK bot in the Azure Bot Service. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
 
 > [!NOTE]
-> This course does not cover the Web App Bot and Bot Channels Registration resources will be deprecated 9/1/2021 but existing resources will continue to work. You should use the Azure Bot when creating new resources.
+> This course does not cover the Web App Bot and Bot Channels. Registration resources are deprecated as of 9/1/2021, but existing resources will continue to work beyond that date. You should use the Azure Bot when creating new resources.
