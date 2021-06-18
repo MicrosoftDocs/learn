@@ -2,10 +2,10 @@
 uid: learn.language.go-control-flow.8-summary
 metadata:
   title: Summary
-  description: Summary.
-  ms.date: 12/14/2020
-  author: meaghanlewis
-  ms.author: shanama
+  description: Summary of the lesson about how to use control flows in Go.
+  ms.date: 06/16/2021
+  author: GitHubber17
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary

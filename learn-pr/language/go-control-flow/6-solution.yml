@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.go-control-flow.6-solution
 metadata:
-  title: Solutions - Control flow challenge
-  description: Check solutions to the control flow challenge.
-  ms.date: 12/14/2020
-  author: meaghanlewis
-  ms.author: shanama
+  title: Solutions - Control flow exercises
+  description: Check solutions to the control flow exercises.
+  ms.date: 06/16/2021
+  author: GitHubber17
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Solutions - Control flow challenge
+title: Solutions - Control flow exercises
 durationInMinutes: 2
 content: |
   [!include[](includes/6-solution.md)]

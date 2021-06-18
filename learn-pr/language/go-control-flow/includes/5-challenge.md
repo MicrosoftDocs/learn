@@ -13,30 +13,55 @@ First, write a program that prints numbers 1 through 100, with the following cha
 
 Try to use the `switch` statement.
 
-## Guess the square root
 
-Write a program to guess the square root of a number. Use this formula: 
+## Find the primes
 
-> sqroot<sub> _n_+1</sub> = sqroot<sub> _n_</sub> − (sqroot<sub> _n_</sub> *  sqroot<sub> _n_</sub> − x) / (2 * sqroot<sub> _n_</sub>)
+Write a program to find all prime numbers less than 20. A prime number is any number greater than 1 that can be evenly divided only by itself and 1. To be "evenly divided" means, there's no remainder after the division operation. Like most programming languages, Go provides a way to check if a division operation produces a remainder. We can use the modulus `%` (percent sign) operator.
 
-This formula is for [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method?azure-portal=true).
+In this exercise, you'll update a function named `findprimes` to check if a number is prime. The function has one integer argument and returns a boolean. The function tests if the input number is a prime by checking for a remainder. If the number is a prime, the function returns true. 
 
-The more you run this formula, the closer you'll get to the square root of a number. Initialize the `sqroot` variable to `1` for any number that you want to find the square root. Repeat the calculation up to 10 times, and print each guess.
+Use the following code snippet as a starting point:
 
-You might need *fewer* than 10 calculations. You can stop the loop when you get the same result from a previous run. The higher the number is, the more calculations you need to run. For simplicity, you'll stick with a maximum of 10 repetitions.
+```go
+package main
 
-For instance, if the input number is `25`, the output should look like this:
+import "fmt"
 
-```output
-A guess for square root is  13
-A guess for square root is  7.461538461538462
-A guess for square root is  5.406026962727994
-A guess for square root is  5.015247601944898
-A guess for square root is  5.000023178253949
-A guess for square root is  5.000000000053723
-A guess for square root is  5
-Square root is: 5
+func findprimes(number int) bool {
+	for i := 2; i ?? number; i ?? {
+        if number ?? i == ?? {
+			return false
+        }
+    }
+
+	if number ?? {
+		return true
+	} else {
+	    return false
+	}
+}
+
+func main() {
+    fmt.Println("Prime numbers less than 20:")
+
+    for number := ??; number ?? 20; number++ {
+        if ?? {
+            fmt.Printf("%v ", number)
+        }
+    }
+}
 ```
+
+This program checks numbers 1 through 20, and prints the number if it's prime. Modify the example as described.
+
+- In the `main` function, loop through all the numbers to check. Exit the loop after you check the last number.
+- Call the `findprimes` function to check the number. If the function returns true, print the prime.
+- In the `findprimes` loop, start from 2 and repeat until the counter is more than the `number` value.
+- Check if the `number` is evenly divisible by the current counter value. If it is, exit the loop.
+- When the `number` is prime, return true; otherwise, return false.
+- Where you see instances of `??` in the code, correct the syntax.
+- Hint: Be sure to correctly handle the case where the input number is 1.
+
 
 ## Ask a number, panic if negative
 
@@ -45,9 +70,7 @@ Write a program that asks a user for a number. Use the following code snippet as
 ```go
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main() {
     val := 0
