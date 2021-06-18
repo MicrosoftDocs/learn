@@ -2,8 +2,9 @@ In this section, we discuss which connectivity option for Azure Sphere is the ri
 
 ## Decision criteria
 
-| **Secure communication**                | Do your devices need to connect to the network in a secure manner? Azure Sphere platform takes care of the security challenges for your internet devices. It provides security solutions for internet-connected devices with built-in communication and security features. In addition, when you configure Azure Sphere for networking, it starts to receive over-the-air OS and cloud updates from Azure Sphere Security Service, providing updated security. |
+|                                         |                                                              |
 | :-------------------------------------- | :----------------------------------------------------------- |
+| **Secure communication**                | Do your devices need to connect to the network in a secure manner? Azure Sphere platform takes care of the security challenges for your internet devices. It provides security solutions for internet-connected devices with built-in communication and security features. In addition, when you configure Azure Sphere for networking, it starts to receive over-the-air OS and cloud updates from Azure Sphere Security Service, providing updated security. |
 | **Connectivity support**                | Do you have a variety of devices that have different connectivity mechanisms? Azure Sphere supports devices using different connectivity mechanisms such as Ethernet or Wi-Fi. In addition, Azure Sphere supports both LAN network connectivity and also allows customers to use cellular connectivity. |
 | **Deployment flexibility**              | Do you need to bring benefits of connectivity to the legacy equipment? Azure Sphere helps you connect existing legacy equipment to the network and connect them (brownfield devices). |
 | **Cellular connectivity**               | Do you want to connect your devices to a cellular network? The first decision you should make is whether to use the MT3620 on-chip Wi-Fi or external Ethernet connectivity. The key advantages of each choice are presented below. |
