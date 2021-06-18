@@ -43,7 +43,7 @@ quiz:
     - content: "Connect non-Azure Sphere parts of your solution to the Ethernet network to communicate securely with Azure IoT Central."
       isCorrect: false
       explanation: "This option could not be feasible depending on the available connectivity options."
-    - content: "Ensure that Azure Sphere parts of the system remain secured even though non-Azure parts of your solution is not providing security."
+    - content: "Ensure that Azure Sphere parts of the system remain secured even though non-Azure parts of your solution are not providing security."
       isCorrect: false
       explanation: "This option could not be feasible depending on the available connectivity options."
     
