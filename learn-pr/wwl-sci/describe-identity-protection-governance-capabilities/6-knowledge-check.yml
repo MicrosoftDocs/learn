@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Dynamic groups use attribute-based rules to determine who is a member of a group, thereby reducing the administrative overhead of adding and removing users, but does not address the business requirement for users to agree to terms of use."
     - content: "Entitlement management."
       isCorrect: false
-      explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but does not address the business requirement for users to agree to terms of use.."
+      explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but does not address the business requirement for users to agree to terms of use."
     - content: "Azure AD Terms of Use."
       isCorrect: true
       explanation: "Correct. Azure AD Terms of Use presents information to users before they access data and can be configured to require users to accept the terms of use."
