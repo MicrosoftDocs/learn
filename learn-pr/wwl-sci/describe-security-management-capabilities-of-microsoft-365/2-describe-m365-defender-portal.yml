@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365.describe-explore-security-center
-title: Describe and explore the Microsoft 365 security center
+title: Describe and explore the Microsoft 365 Defender portal
 metadata:
-  title: Describe and explore the Microsoft 365 security center
-  description: "Describe and explore the Microsoft 365 security center"
-  ms.date: 04/07/2021
+  title: Describe and explore the Microsoft 365 Defender portal
+  description: "Describe and explore the Microsoft 365 Defender portal"
+  ms.date: 06/18/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-describe-explore-security-center.md)]
+  [!include[](includes/2-describe-m365-defender-portal.md)]
