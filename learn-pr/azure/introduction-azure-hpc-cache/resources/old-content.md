@@ -13,7 +13,7 @@ When compute clients are waiting for storage responses, they aren’t computing.
 Instead of Azure compute clients accessing slower storage directly, clients access Azure HPC Cache for faster access to data.
 Azure HPC Cache reads from customer storage and stores frequently-accessed data and stores it in memory and high-speed disks.
 
-![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../media/2-what-is-hpc-cache-01.png)
+![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../resources/2-what-is-hpc-cache-01.png)
 
 Azure HPC Cache can be configured to access network-attached storage (NAS) in a customer’s data center.
 When clients need to access data, they request it from Azure HPC Cache which reads it from the NAS.

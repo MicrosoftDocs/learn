@@ -14,7 +14,7 @@ We'll examine the ideal situation for using Azure HPC Cache. This will help you 
     **Protocol**: What storage protocol is supported?
     **Storage**: What storage can be accelerated with the cache service?
     **Workload**: Is my workload a good fit for caching?
-    **Network**: What network settings are ideal?
+    **Network**: What network connection is ideal?
     **Clients**: What types of clients should be used and where should they be located?
 
 ## What is the main goal?

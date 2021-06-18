@@ -16,9 +16,9 @@ abstract: |
   - Evaluate whether Azure HPC Cache is appropriate for improving the productivity of your high-performance computing applications.
   - Describe how Azure HPC Cache enables you to accelerate, scale, and manage your file-based high performance computing workloads in Azure.
 prerequisites: |
-  - TODO prerequisite 1
-  - TODO prerequisite 2
-  - "TODO prerequisite 3 (if needed; minimum 2 required. See guidance [here](https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master))"
+  - Understanding of basic NFS storage concepts like read and write operations.
+  - Basic understanding of networking concepts like bandwidth and leased lines like ExpressRoute.
+  - Knowledge of how basic caching works like saving data on fast media for future requests.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
