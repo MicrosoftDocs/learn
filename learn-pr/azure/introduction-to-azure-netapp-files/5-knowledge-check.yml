@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-azure-netapp-files.5-knowledge-check
+uid: learn.azure.introduction-to-azure-netapp-files.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 5/10/2021
+  ms.date: 06/18/2021
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-azure-netapp-files.4-when-to-use-azure-netapp-files
+uid: learn.azure.introduction-to-azure-netapp-files.when-to-use-azure-netapp-files
 title: When to use Azure NetApp Files
 metadata:
   unitType: learning-content
   title: When to use Azure NetApp Files
   description: Examine criteria and use cases to help you decide whether Azure NetApp Files is right for your organization.
-  ms.date: 5/10/2021
+  ms.date: 06/18/2021
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial

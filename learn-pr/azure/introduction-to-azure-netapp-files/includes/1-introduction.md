@@ -1,10 +1,10 @@
 Implementing enterprise-scale workloads and applications requires enterprise-grade storage performance and high availability. Historically, most organizations could only achieve this level of performance by using a highly-tuned configuration in an on-premises datacenter. However, such configurations tend to be inflexible, complex, and expensive. A cloud service such as Azure offers flexibility, simplicity, and cost savings for regular workloads.
 
-:::image type="content" source="../media/1-introduction-anf-before.png" alt-text="Diagram depicting a web server cluster running in an on-premises datacenter and accessing a network access storage device that uses the NFS protocol." lightbox="../media/1-introduction-anf-before.png":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="Diagram depicting a web server cluster running in an on-premises datacenter and accessing a network access storage device that uses the NFS protocol." lightbox="../media/1-introduction-before.png":::
 
 How do you migrate mission-critical enterprise workloads to the cloud without sacrificing performance, security, or availability? Azure NetApp Files provides datacenter-quality performance, robust security, and high availability with all the advantages of the cloud.
 
-:::image type="content" source="../media/1-introduction-anf-after.png" alt-text="Diagram depicting a virtual web server cluster running in an Azure virtual network and accessing NFS file storage by using Azure NetApp Files." lightbox="../media/1-introduction-anf-after.png":::
+:::image type="content" source="../media/1-introduction-after.png" alt-text="Diagram depicting a virtual web server cluster running in an Azure virtual network and accessing NFS file storage by using Azure NetApp Files." lightbox="../media/1-introduction-after.png":::
 
 ## Example scenario
 

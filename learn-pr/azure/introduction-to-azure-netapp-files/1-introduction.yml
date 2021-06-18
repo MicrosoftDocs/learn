@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-azure-netapp-files.1-introduction
+uid: learn.azure.introduction-to-azure-netapp-files.introduction
 title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Introduction to Azure NetApp Files module
-  ms.date: 5/10/2021
+  ms.date: 06/18/2021
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial

@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure NetApp Files         
   description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       
-  ms.date: 5/10/2021            
+  ms.date: 06/18/2021            
   author: nickwalkmsft   
   ms.author: nickwalk           
   ms.topic: interactive-tutorial
@@ -30,11 +30,11 @@ roles:
 products:
   - azure-netapp-files
 units:
-- learn.azure.introduction-to-azure-netapp-files.1-introduction
-- learn.azure.introduction-to-azure-netapp-files.2-what-is-azure-netapp-files
-- learn.azure.introduction-to-azure-netapp-files.3-how-azure-netapp-files-works
-- learn.azure.introduction-to-azure-netapp-files.4-when-to-use-azure-netapp-files
-- learn.azure.introduction-to-azure-netapp-files.5-knowledge-check
-- learn.azure.introduction-to-azure-netapp-files.6-summary
+- learn.azure.introduction-to-azure-netapp-files.introduction
+- learn.azure.introduction-to-azure-netapp-files.what-is-azure-netapp-files
+- learn.azure.introduction-to-azure-netapp-files.how-azure-netapp-files-works
+- learn.azure.introduction-to-azure-netapp-files.when-to-use-azure-netapp-files
+- learn.azure.introduction-to-azure-netapp-files.knowledge-check
+- learn.azure.introduction-to-azure-netapp-files.summary
 badge:
   uid: learn.azure.introduction-to-azure-netapp-files.badge
