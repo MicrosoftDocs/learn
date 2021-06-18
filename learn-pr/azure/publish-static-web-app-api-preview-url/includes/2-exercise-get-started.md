@@ -282,7 +282,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
-Congratulations! You've deployed your first app to Azure Static Web Apps!
+Congratulations! You've deployed your app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
