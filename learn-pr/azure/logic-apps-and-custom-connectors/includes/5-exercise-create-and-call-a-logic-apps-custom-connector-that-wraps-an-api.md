@@ -6,7 +6,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**.
 
-1. In the left menu pane, select **Web**, then search for and select **Logic App (Consumption)**. The **Logic APP (Consumption)** pane appears.
+1. In the left menu pane, select **Web**, then search for and select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
 
 1. Select **Create**. The **Create a logic app** pane appears.
 
@@ -19,7 +19,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
     | Resource group | Select *<rgn>Sandbox resource group </rgn>* |
     | **Instance details** |
     | Logic app name | Choose a unique name. Make a note of it, you'll need it later on. |
-    | Region | Select a region near you, that is also in the sandbox region listed below. |
+    | Region | Select a region near you from the following list. |
     | Enable log analytics | Off |
     | | |
 
