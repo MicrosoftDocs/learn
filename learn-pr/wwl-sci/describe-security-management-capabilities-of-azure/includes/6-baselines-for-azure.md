@@ -16,6 +16,5 @@ Each Azure security baseline includes the following information:
 - **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
 - **Azure Security Center monitoring**: Does Azure Security Center monitor the control?
 
-All recommendations, including the ones that don't apply to this specific service, appear in the baseline to provide a complete picture of how the Azure Security Benchmark relates to each service.
+Security baselines are included for many Azure services.   As an example, refer to the [Azure security baseline for Security Center](/azure/security-center/security-baseline).  The content is grouped by the security controls defined by the Azure Security Benchmark and the related guidance applicable to Azure Security Center. Refer to [Azure Security Benchmark documentation](/azure/security/benchmarks/) for a complete listing of the available baselines.
 
-Security baselines are included for many Azure services, including Azure security baseline for Security Center.
