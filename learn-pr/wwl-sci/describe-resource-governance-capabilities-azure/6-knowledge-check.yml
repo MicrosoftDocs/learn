@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect.  Azure RBAC is used to manage access to resources."
     - content: "Use Azure Policy."
       isCorrect: true
-      explanation: "Correct.  Azure Policy is used to ensure that your Azure resources comply with your organizaiton's business rules."
+      explanation: "Correct.  Azure Policy is used to ensure that your Azure resources comply with your organizatiton's business rules."
     - content: "Use Azure resource locks."
       isCorrect: false
       explanation: "Incorrect. Azure resource locks prevent resources from being accidentally deleted or changed."
