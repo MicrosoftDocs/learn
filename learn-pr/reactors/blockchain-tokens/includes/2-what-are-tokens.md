@@ -1,16 +1,16 @@
-The token is one of blockchain's most powerful and most misunderstood tools. In blockchain, a token can represent almost anything that we want to assign a value to, whether the thing is virtual or a real-world, tangible object.
+While often misunderstood, a blockchain token is a powerful tool. A blockchain token can represent almost anything that we want to assign a value to. This representation includes whether the thing is virtual or a real-world, tangible object.
 
-A token can grant special platform permissions to a user, grant exclusive access to a service, or represent ownership. A token also can represent cryptocurrencies that have monetary value. Let's dive into the history of tokens and explore various use cases to demonstrate exactly what a token is and what you can do with a token.
+A token can grant special platform permissions to a user, grant exclusive access to a service, or represent ownership. A token also can represent cryptocurrencies that have monetary value. Let's dive into the history of tokens and explore various use cases. We'll demonstrate exactly what a token is and what you can do with a token.
 
 ## History of tokens
 
-Tokens are not new. Tokens existed long before the emergence of blockchain and cryptocurrency.
+Tokens aren't new. Tokens existed long before the emergence of blockchain and cryptocurrency.
 
-In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casinos chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to represent and use a token is essentially unlimited.
+In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casinos chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to represent and use a token is unlimited.
 
-Even our typical fiat currency, which includes cash and coins, is a type of token. The idea is that you can accumulate tokens, which have a certain designated value, and then trade them to get some item or service of value in return.
+Even our typical fiat currency, which includes cash and coins, is a type of token. The idea is that you can accumulate tokens, which have a certain assigned value, and then trade them to get some item or service of value in return.
 
-In computing, tokens are used to give a user permission to perform an operation or to manage access. A web browser, for example, sends tokens to websites when we surf the internet. The tokens contain information about our computers, like the browser and IP address. Another example of a computer token is the QR code. A QR code is scanned, and the information that's contained in the QR code redirects us to a webpage or service.
+In computing, tokens are used to give a user permission to complete an operation or to manage access. A web browser, for example, sends tokens to websites when we surf the internet. The tokens contain information about our computers, like the browser and IP address. Another example of a computer token is the QR code. A QR code is scanned, and the information that's contained in the QR code redirects us to a webpage or service.
 
 ## Blockchain tokens
 
@@ -18,11 +18,11 @@ In blockchain, tokens resemble the more general use of a token: they represent o
 
 Blockchain tokens represent a set of rules that are programmed in a smart contract. Every token belongs to a blockchain address that uniquely identifies it. The tokens are accessible by using a [crypto wallet](https://ethereum.org/en/wallets/?azure-portal=true). Only the person who has the private key for that address can access those tokens.
 
-The Ethereum blockchain platform is based on the use of tokens that can be bought, sold, and traded. Blockchain tokens in general are like Ether (ETH), the cryptocurrency used on the Ethereum platform. But, they might reflect a variety of different design decisions and purposes. Tokens help operate decentralized apps (dapps) and facilitate the cryptoeconomics of different blockchain ecosystems. Augur is an example of a blockchain ecosystem that uses tokens.
+The Ethereum blockchain platform is based on the use of tokens that can be bought, sold, and traded. Blockchain tokens in general are like Ether (ETH), the cryptocurrency used on the Ethereum platform. But, they might reflect different design decisions and purposes. Tokens help operate decentralized apps (dapps) and simplify the cryptoeconomics of different blockchain ecosystems. Augur is an example of a blockchain ecosystem that uses tokens.
 
-[Augur](https://www.augur.net/?azure-portal=true) is a network that functions as a prediction market. You can think of it as a betting platform. Augur has its own token form, the REP (for *reputation*), which is used by reporters to clarify disputes on outcomes of the prediction market. If you predict correctly, you receive REP. If you don't predict correctly, you lose REP.
+[Augur](https://www.augur.net/?azure-portal=true) is a network that functions as a prediction market. You can think of it as a betting platform. Augur has its own token form, the REP (for *reputation*), which is used by reporters to clarify disputes on outcomes of the prediction market. If you predict correctly, you receive REP. Otherwise, you lose REP.
 
-Using a token in Augur is no different than using a token, for example, to take public transportation. To use public transportation, on the one hand, you can use fiat or local currency, like the Canadian dollar (CAD). You also can use, for example, Toronto Transit Commission (TTC) tokens. Each TTC token allows you to take one subway ride. You can purchase TTC tokens by using CAD (just like you can purchase REP by using ETH), but they are not the same thing. TTC tokens are specific to the ecosystem of Toronto Transit, and REP tokens are used only in the Augur ecosystem.
+Using a token in Augur is no different than using a token, for example, to take public transportation. To use public transportation, on the one hand, you can use fiat or local currency, like the Canadian dollar (CAD). You also can use, for example, Toronto Transit Commission (TTC) tokens. Each TTC token allows you to take one subway ride. You can purchase TTC tokens by using CAD (just like you can purchase REP by using ETH), but they aren't the same thing. TTC tokens are specific to the ecosystem of Toronto Transit, and REP tokens are used only in the Augur ecosystem.
 
 ## Two categories of blockchain tokens
 
