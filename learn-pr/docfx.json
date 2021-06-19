@@ -301,7 +301,8 @@
                 "exclude": [
                     "**/includes/**",
                     "**/design/**",
-                    "**/resources/**"
+                    "**/resources/**",
+                    "predict-basketball-player-efficiency-ratings/**"
                 ],
                 "dest": "modules"
             },
