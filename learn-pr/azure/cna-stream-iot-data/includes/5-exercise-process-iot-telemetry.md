@@ -23,7 +23,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
 1. In a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** box at the beginning of the Azure portal page to search for, and select **Function App**.
-1. On the **Function App** blade, select **+ New**.
+1. On the **Function App** blade, select **+ New** or **+ Create**.
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**:
 
    | Setting | Configuration |
@@ -116,7 +116,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    > The value of the humidity telemetry is intentionally artificially low, to invoke the webhook functionality and trigger the function. In real-life scenarios, you would adjust it to correspond to the condition that warrants raising an alert or taking a remediation action.
 
 1. On the **Rules** page, select **Done**, and then select **Save**.
-1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used in the previous exercise of this module. On this page, directly after the code pane, select **Run**, and verify that the simulated device is sending messages to the Azure IoT Central application.
+1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used in the previous exercise of this module. On this page, verify that the simulated device is sending messages to the Azure IoT Central application. If the simulator has stopped, select **Run** directly after the code pane.
 
    :::image type="content" source="../media/5-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page depicting the messages being sent to the IoT Central application.":::
 
@@ -127,7 +127,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
 1. Switch to the web browser window displaying the Azure portal.
 1. In the Azure portal, use the **Search resources, services, and docs** text box to search for, and select **Storage accounts**.
-1. On the **Storage accounts** blade, select **+ New**.
+1. On the **Storage accounts** blade, select **+ New** or **+ Create**.
 1. On the **Basics** tab of the **Create storage account** blade, configure the following settings (leave others with their default values):
 
    | Setting | Configuration |
@@ -136,8 +136,7 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Resource Group | Select **iot-central-apps-RG**. |
    | Storage account name | Enter a unique name that contains between 3 and 24 lowercase letters and digits and starts with a letter. |
    | Performance | Select **Standard**. |
-   | Account kind | **StorageV2 (general purpose v2)** |
-   | Replication | **Locally-redundant storage (LRS)** |
+   | Redundancy | Select **Locally-redundant storage (LRS)** |
 
    :::image type="content" source="../media/5-azure-storage-account-create.png" alt-text="Screenshot of the Azure portal, Create storage account blade, Basics tab.":::
 
