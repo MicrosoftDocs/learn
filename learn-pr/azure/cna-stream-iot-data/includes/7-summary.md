@@ -9,5 +9,5 @@ Now that you've completed this module, you should know more about how to:
 
 ## Use these resources to learn more
 
-* [Azure IoT Central documentation](https://docs.microsoft.com/azure/iot-central/?azure-portal=true)
-* [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/?azure-portal=true)
+* [Azure IoT Central documentation](/azure/iot-central/?azure-portal=true)
+* [Introduction to Azure IoT](/learn/paths/introduction-to-azure-iot/?azure-portal=true)
