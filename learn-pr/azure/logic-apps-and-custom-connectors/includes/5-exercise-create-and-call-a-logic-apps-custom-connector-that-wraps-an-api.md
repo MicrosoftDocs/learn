@@ -4,7 +4,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
 ## Create a Logic App
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Web**, then search for and select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
 
