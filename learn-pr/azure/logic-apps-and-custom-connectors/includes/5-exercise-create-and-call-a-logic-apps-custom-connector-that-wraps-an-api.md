@@ -45,7 +45,7 @@ We now have a basic Logic App. Let's add a custom connector so that we can call 
 
 ## Create a new custom Logic Apps connector in the Azure portal
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the searchbox, search for and select **Logic Apps Custom Connector**. The **Logic Apps Custom Connector** pane appears.
 
@@ -71,19 +71,19 @@ We now have a basic Logic App. Let's add a custom connector so that we can call 
 
 Now let's use the OpenAPI file we saved early to define custom connector.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources** and then select **PrintFramerConnector**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources**, and then select **PrintFramerConnector**.
 
 1. On the **Overview** page, select **Edit**.
 
     ![Edit the custom connector](../media/5-edit-logic-apps-connector.png)
 
-1. In the **Custom connectors** section, select **OpenAPI file** and then  **Import**. Open the JSON file you saved in the last exercise.
+1. In the **Custom connectors** section, select **OpenAPI file**, and then select **Import**. Open the JSON file you saved in the last exercise.
 
 ## Configure the custom connector
 
 The OpenAPI file tells the custom connector about the operations that are available in the Web API. There are a few other properties we must set for the custom connector:
 
-1. In the **General Information** section, in the **Description** box, enter **Obtain an estimate for a picture frame**. You might have to scroll down to see this part of the configuration page.
+1. In the **General Information** section, in the **Description** box, enter **Obtain an estimate for a picture frame**. You might have to scroll down to see this part of the configuration pane.
 
 1. In the **Host** textbox, enter the URL you noted earlier.
 
