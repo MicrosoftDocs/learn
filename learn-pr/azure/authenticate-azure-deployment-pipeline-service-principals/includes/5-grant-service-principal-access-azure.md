@@ -2,23 +2,19 @@ By itself, a service principal can't do anything in your Azure environment - jus
 
 ## Service principal authorization
 
-- SPs authenticate as previously discussed - this happens against Azure AD
-- Role assignments are part of Azure
-- Role assignments have an inheritance model
+Up till now, we've focused on what service principals are, and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.
+
+Once Azure AD has authenticated a service principal, the next question becomes: what can this service principal do? This is the responsibility of Azure's role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a service principal access to a specific resource group, subscription, or management group.
 
 ## Select the right role assignment for your pipeline
-
-- How to define 'least privilege' for your deployment
-- Built-in roles to consider
-- Role assignment scopes
-
-## Create a role assignment for a service principal
 
 A role assignment has three key parts: **who** the role is assigned to, **which** role is assigned, and **the resource or resources** that the role assignment applies to.
 
 ### Who the role is assigned to
 
 When you work with a service principal, you assign roles for that service principal. Sometimes this is called the _assignee_. You use the service principal's application ID to identify the right service principal.
+
+<!-- TODO confirm that -->
 
 ### Which role is assigned
 
@@ -48,11 +44,6 @@ TODO:
 
 You can create multiple role assignments that provide different permissions at different scopes. For example, you might assign a service principal the role of **Reader** with a scope of the entire subscription, and then separately assign the same service principal the role of **Contributor** for a specific resource group. When the service principal tries to work with the resource group, the more permissive assignment is applied.
 
-## TODO how to do it
-
-1. **Who** the role is assigned to - this is sometimes called the _principal_.
-2. **Which** role is assigned - this determines the permission, like reading or writing.
-3. **The resources** that the role assignment applies to - this is sometimes called the _scope_.
-
+## Create a role assignment for a service principal
 
 TODO
