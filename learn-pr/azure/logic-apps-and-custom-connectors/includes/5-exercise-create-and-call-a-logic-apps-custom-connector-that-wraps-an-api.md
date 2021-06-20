@@ -47,7 +47,7 @@ We now have a basic Logic App. Let's add a custom connector so that we can call 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the searchbox, search for and select **Logic Apps Custom Connector**. The **Logic Apps Custom Connector** pane appears.
+1. In the search box, search for and select **Logic Apps Custom Connector**. The **Logic Apps Custom Connector** pane appears.
 
 1. Select **Create**. The **Create logic apps custom connector** appears.
 
