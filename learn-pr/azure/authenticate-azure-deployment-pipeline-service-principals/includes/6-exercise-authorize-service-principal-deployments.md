@@ -1,3 +1,4 @@
 - Create a resource group
 - Add a role assignment with the contributor role at the resource group scope
 - Test the role assignment by using the service principal to deploy an empty Bicep file to the resource group
+- Delete the SP
