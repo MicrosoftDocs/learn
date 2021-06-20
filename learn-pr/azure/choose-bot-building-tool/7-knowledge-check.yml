@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Knowledge check
   ms.date: 6/15/2021
   author: jasonkellingtonwaypoint
   ms.author: v-jaske
@@ -28,58 +28,22 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Bot Framework Composer supports native integration with LUIS apps."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Bot Framework Composer supports native integration with LUIS apps."
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Bot Framework Composer supports native integration with LUIS apps."
+  - content: "Which of the following is a benefit of using a low-code bot-building tool?"
     choices:
-    - content: ""
+    - content: "Users without development experience can engage in the bot-building process."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Low-code bot-building tools are easy to use and don't require coding experience or deep understanding of development techniques."
+    - content: "All development resources are hosted locally on your development machine."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This is not true of all low-code bot-building tools"
+    - content: "Low-code designers are more cost-efficient."
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Cost-efficiency is a complex assessment and cannot be determined only by the bot-building tool you use."

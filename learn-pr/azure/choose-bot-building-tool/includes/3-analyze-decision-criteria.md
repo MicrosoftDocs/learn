@@ -1,78 +1,33 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+With three viable bot building options, it can be difficult to know which is the best one for the scenario. In this unit, we'll analyze criteria based on our business requirements. Understanding the criteria can also help you better understand the nuanced differences between the products.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Do you prefer a low-code design interface?
 
-    Heading: none
+Power Virtual Agents has a low-code, visual designer hosted in a web app that you can use to design your bot. You can use the designer to create your bot, create and edit topics to govern conversation flow, and extend the bot with built-in AI capabilities, entities, variables and Bot Framework skills.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+With QnA Maker, you create a bot from the QnA Maker portal interface, after you've created and designed your QnA Maker knowledgebase. The QnA Maker portal doesn't offer bot modification possibilities, so if you needed to modify your bot to meet test requirements, you would have to edit the bot source code.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Composer as a shared, hosted web service.Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Composer also offers built-in low-code integration with LUIS and QnA Maker.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Do you require low-code integration with other components?
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Power Virtual Agents offers integration with Bot Framework skills and Power Automate connectors in a low-code environment. You can also modify Power Virtual Agents bots with the Bot Framework Composer, further extending your integration capabilities.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+QnA Maker does not offer significant integration capabilities in a low-code design environment.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Bot Framework Composer offers comprehensive integration possibilities in the low-code designer. You can use Composer to extend the functionality of your bot with numerous AI, logic, and task based features. Composer also offers built-in integration with LUIS and QnA Maker.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Do you need a bot building tool that supports code-based development with the bot source?
 
-    Goal: State concisely what's covered in this unit
+Power Virtual Agents bots cannot be modified directly using a code-based IDE.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+QnA Maker bots can be modified by working in the bot source code to add or enhance bot functionality. You can use Visual Studio, Visual Studio Cor any other code-based IDE that supports the language and libraries you require.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Bot Framework Composer bots are fully extensible using the Bot Framework SDK. You can use Visual Studio, Visual Studio Cor any other code-based IDE that supports the language and libraries you require.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+## Do you need specific publishing options?
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+Power Virtual Agents bots can be published to a website or the Power Apps portal. You can add Power Virtual Agents bots to Azure Bot Service channels, Microsoft Teams, Facebook, or to mobile or custom apps.
 
-    Heading: none
--->
-TODO: add a visual element
+QnA Maker bots are created as Azure Bot Service bots. You can host them in an Azure Web App, or they can connected to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in and Azure Web App, or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
