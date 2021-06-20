@@ -1,13 +1,40 @@
 You'll continue your comparison of bot creation service options by examining the functionality of QnA Maker. 
 
-## Create a bot with QnA Maker
+## Review your company's criteria
 
-The first step when you create a bot using QnA Maker is to create a QnA Maker knowledge base. You do this using source documents and websites containing FAQ-type information. After the knowledge base is published, you can publish a bot based on the knowledge base to an Azure Bot Service bot. You can connect to the bot using Bot Service channels, or publish the bot to an Azure Web App.
+Recall the criteria for creating the bot that should inform your decision-making process:
 
-## Compare QnA Maker with requirements
+- The initial development of the bot should be in a low-code designer.
+- The test bot should include an existing LUIS app for language understanding. It should be trained to recognize financial industry terms and phrases.
+- The bot will be hosted on the company website.
+- After testing the bot, your team needs to integrate into it several C# libraries to extend its functionality.
+- You need to integrate the bot with a pre-existing REST-enabled FAQ application.
 
-Examining your company's requirements, a QnA Maker bot can be published to a web page. You can download a QnA Maker bot source code and modify it using your IDE of choice. Since QnA Maker bots can be created using C# source code, your development team could extend bot functionality in many ways, including incorporating the required C# libraries. Code-based design also enables your developers to integrate your both the REST-enabled FAQ application.
+## Consider the QnA Maker service
 
-## Why not choose QnA Maker?
+<!--is this a service?-->
 
-The QnA Maker portal doesn't offer low-code bot modification possibilities, which violates one of your key requirements. If you needed to modify your bot to meet test requirements, you would have to edit the bot source code. In addition, LUIS integration, while possible with a QnA Maker bot, can only be implemented by modifying the bot source code.
+One of the options you are considering to build the bot is the Bot Framework Composer service. Use the previous list of criteria and the following factors to examine building a bot using QnA Maker.<!--this was added-->
+
+### What informs conversational flow?
+
+<!--I'm not sure this heading works, trying to be consistent, check with Jason-->
+
+The first step when you create a bot using QnA Maker is to create a QnA Maker knowledge base. You do this using source documents and websites containing FAQ-type information. 
+
+### Where do you publish the bot? 
+
+After the knowledge base is published, you can publish a bot based on the knowledge base to an Azure Bot Service bot. You can connect to the bot using Bot Service channels, or publish the bot to an Azure Web App.
+
+One of your company's requirements is that the bot can be hosted on the company website. A bot created with QnA Maker fulfills this requirement, because you can publish it to a web page. 
+
+### Where do you perform development? 
+
+You can download the source code of a QnA Maker bot and modify it using your IDE of choice. Since QnA Maker bots can be created using C# source code, your development team could extend the bot functionality in many ways. These might include incorporating the C# libraries that the criteria requires. The bot's code-based design also enables your developers to integrate your bot with the REST-enabled FAQ application. This fulfills another criteria.
+
+## Why QnA Maker isn't a good choice
+
+A bot created with QnA would meet some of the criteria. However, several criteria aren't met:
+
+- The QnA Maker portal doesn't offer low-code bot modification possibilities, which violates one of your key requirements. If you needed to modify your bot to meet test requirements, you would have to edit the bot source code. 
+- You can't integrate an existing LUIS app for language understanding. Although this is possible with a QnA Maker bot, you can only implement LUIS by modifying the bot source code.<!-- why is this an issue? the previous point was that is is code-based. This needs clarification. -->
