@@ -1,4 +1,4 @@
-In this module, you learned about the fundamental differences between the bot-building tools that you can use in Azure. You also examined when and why you should choose one over the other.
+In this module, you learned about the fundamental differences between the bot-building tools that you can use to publish bots in Azure. You also examined when and why you should choose one over the others.
 
 In your scenario, the financial services company you work for wanted to create a bot to test core functionality for fielding customer support requests and advising customers about new services. You examined the key requirements, including examining conversational flow, development particulars, and where the bot could be published. You evaluated Power Virtual Agents, QnA Maker, and Bot Framework Composer against these requirements. You determined that Bot Framework Composer was the best solution for your company.
 
