@@ -4,15 +4,15 @@ You'll continue your comparison of bot creation service options by examining the
 
 Recall the criteria for creating the bot that should inform your decision-making process:
 
-- The initial development of the bot should be in a low-code designer.
+- The initial development of a test bot should be in a low-code designer.
 - The test bot should include an existing LUIS app for language understanding. It should be trained to recognize financial industry terms and phrases.
 - The bot will be hosted on the company website.
 - After testing the bot, your team needs to integrate into it several C# libraries to extend its functionality.
-- You need to integrate the bot with a pre-existing REST-enabled FAQ application.
- 
+- After testing, you need to integrate the bot with a pre-existing REST-enabled FAQ application.
+
 ## Consider the Bot Framework Composer service
 
-One of the options you are considering to build the bot is the Bot Framework Composer service. Use the previous list of criteria to examine the process of building a bot using Bot Framework Composer.<!--this was added--> 
+One of the options you are considering to build the bot is the Bot Framework Composer service. Use the previous list of criteria to examine the process of building a bot using Bot Framework Composer.
 
 ### What informs conversational flow?
 
@@ -22,7 +22,7 @@ Using Bot Framework Composer, you can create and edit complex conversation flows
 - Loops
 - Multiple dialogs
 
-> [!TIP] 
+> [!TIP]
 > You can use multiple dialogs for more complex interactions needed in specific customer support scenarios.
 
 ### Where do you publish the bot?

@@ -8,12 +8,12 @@ A *bot* provides a conversational interface in websites and applications. You ca
 
 Bots typically have natural language understanding capabilities to interpret the user's input to  recognize what the user is asking for or saying. The bot responds to the user to communicate what the bot is doing or has done. Bots typically support numerous configurations and channel publishing options that enable users to interact through text, speech, or even images and video.
 
-> [!NOTE] 
+> [!NOTE]
 > You can converse with a bot using text, interactive cards, and speech. Bot interactions can be quick questions and answers, guided conversation flows, or a sophisticated conversation that integrates with external capabilities and AI systems.
 
 ## Bot-creation tools to consider
 
-<!--this was added--> There are three bot-creation tools examined in this module. Although you can use any of them to create bots, they vary in method and requirements. The bot-creation tools are: 
+There are three bot-creation tools examined in this module. Although you can use any of them to create bots, they vary in method and requirements. The bot-creation tools are:
 
 - Power Virtual Agents
 - QnA Maker
@@ -21,11 +21,11 @@ Bots typically have natural language understanding capabilities to interpret the
 
 ### Power Virtual Agents
 
-You can create powerful chatbots that can answer questions in conversational form by using Power Virtual Agents. The *Power Virtual Agents* web app has a guided, no-code graphical interface you can use to create chatbots. This interface eliminates the need for code-based or developer expertise.
+You can create powerful chat bots that can answer questions in conversational form by using Power Virtual Agents. The *Power Virtual Agents* web app has a guided, no-code graphical interface you can use to create chat bots. This interface eliminates the need for code-based or developer expertise.
 
 Topics inform the bot conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to type. These phrases are matched to a specific topic using built-in natural language understanding. For example, if a user types "Open hours" into your bot, the AI will be able to match that to a topic named Store hours, begin a conversation that asks which store the customer is interested in, and then provide information about the store's hours of operation.
 
-> [!TIP] 
+> [!TIP]
 > You can extend Power Virtual Agents bot capability with advanced AI features, prebuilt and custom entities, variables, authentication, Power Automate flows for more task automation, and skills created using the Bot Framework SDK.
 
 ### QnA Maker
@@ -43,7 +43,7 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 *Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with integrated dialog, language-understanding models, knowledge bases and language generation functionality. All of these features can be implemented from a single design canvas. Resulting experiences can then be tested within Composer and provisioned into Azure along with any dependent resources. Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component which you can customize and extend to suit your needs.
 
-Composer offers a visual design experience. This gives you greater design efficiency. This can make it easier for you to model more sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important. 
+Composer offers a visual design experience. This gives you greater design efficiency. This can make it easier for you to model more sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
 
 >[!TIP]
 > More complex activities such as integrating with dependencies such as REST API can be accomplished by directly modifying the code of the bot using Visual Studio Code or another IDE.

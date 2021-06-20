@@ -2,7 +2,7 @@ You need to discover and analyze your company's criteria. This will help you cho
 
 ## Compare bot-building options based on your requirements
 
-With three viable bot-building options (Power Virtual Agents, QnA Maker, and Bot Framework Composer), you need to determine which is the best one for your company. Start by analyzing how each tool fulfills the criteria based on your company's requirements. Also examine the nuanced differences between the products. Consider the answers to the following questions to help you compare the three bot-building options.<!--is the meaning clearer and/or retained?-->
+With three viable bot-building options (Power Virtual Agents, QnA Maker, and Bot Framework Composer), you need to determine which is the best one for your company. Start by analyzing how each tool fulfills the criteria based on your company's requirements. Also examine the nuanced differences between the products. Consider the answers to the following questions to help you compare the three bot-building options.
 
 ### Do you prefer a low-code design interface?
 
@@ -11,7 +11,7 @@ If you prefer a low-code design interface, compare the three options:
 - Power Virtual Agents has a low-code, visual designer. The designer is hosted in a web app that you can use to design your bot. You can use the designer to create your bot, and create and edit topics to govern conversation flow. You can also extend the bot with built-in AI capabilities, entities, variables, and Bot Framework skills.
 
 - QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledge base.
- 
+
      > [!NOTE]
      > The QnA Maker portal doesn't offer bot modification possibilities, so if you needed to modify your bot to meet test requirements, you would have to edit the bot source code.
 
@@ -20,12 +20,12 @@ If you prefer a low-code design interface, compare the three options:
 ### Do you require low-code integration with other components?
 
 If you require low-code integration with other components, compare the three options:
-<!--intro and lists added 3x-->
+
 - Power Virtual Agents offers integration with Bot Framework skills and Power Automate connectors in a low-code environment. You can also modify Power Virtual Agents bots with the Bot Framework Composer, further extending your integration capabilities.
 
 - QnA Maker does not offer significant integration capabilities in a low-code design environment.
 
-- Bot Framework Composer offers comprehensive integration possibilities<!--is the low code designer the reason for this or related to this functionality?--><!--in the low-code designer-->. You can use Bot Framework Composer to extend the functionality of your bot with numerous AI, logic, and task based features. Bot Framework Composer also offers built-in integration with LUIS and QnA Maker.
+- Bot Framework Composer offers comprehensive integration possibilities. You can use Bot Framework Composer to extend the functionality of your bot with numerous AI, logic, and task based features. Bot Framework Composer also offers built-in integration with LUIS and QnA Maker.
 
 ### Do you need a bot-building tool that supports code-based development with the bot source?
 
