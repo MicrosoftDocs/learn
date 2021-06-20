@@ -11,7 +11,7 @@ Microsoft Azure allows you to create bots by using different tools. In this modu
 After completing this module, you should know more about:
 
 - The different tools available in Azure that you can use to create bots.
-- How to choose the bot-building tool that best addresses your organization's technical requirements and challenges.
+- How to choose the bot-building tool that best addresses your company's technical requirements and challenges.
 
 ## Prerequisites
 

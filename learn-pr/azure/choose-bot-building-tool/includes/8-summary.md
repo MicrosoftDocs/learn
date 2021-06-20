@@ -12,4 +12,4 @@ You evaluated Power Virtual Agents, QnA Maker, and Bot Framework Composer agains
 
 Without your evaluation, your company might have used a tool that didn't support their needs and been forced to start the development process over using a different bot building tool.
 
-Be performing this evaluation, you were able to help your organization choose the most appropriate bot building tool and get your customer support and development teams started in bot building using a tool that will meet their requirements throughout the entire project.
+Be performing this evaluation, you were able to help your company choose the most appropriate bot building tool and get your customer support and development teams started in bot building using a tool that will meet their requirements throughout the entire project.

@@ -26,24 +26,39 @@ durationInMinutes: 1
 ###
 ###########################################################################
 content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Bot Framework Composer supports native integration with LUIS apps."
+  - content: "Which component in a Power Virtual Agents bot defines responses to user input?"
     choices:
-    - content: "True"
+    - content: "Topics"
       isCorrect: true
-      explanation: "Correct. Bot Framework Composer supports native integration with LUIS apps."
-    - content: "False"
+      explanation: "Correct. Topics define how a bot conversation proceeds, based on user input."
+    - content: "Trigger"
       isCorrect: false
-      explanation: "Incorrect. Bot Framework Composer supports native integration with LUIS apps."
+      explanation: "Incorrect. A trigger is phrase defined within a topic that represents anticipated user input."
+    - content: "Skills"
+      isCorrect: false
+      explanation: "Incorrect. A skill is a Bot Framework component that defines a set of programmatic actions."
   - content: "Which of the following is a benefit of using a low-code bot-building tool?"
     choices:
     - content: "Users without development experience can engage in the bot-building process."
       isCorrect: true
-      explanation: "Correct. Low-code bot-building tools are easy to use and don't require coding experience or deep understanding of development techniques."
+      explanation: "Correct. Low-code bot-building tools are easy to use and don't require coding experience or a deep understanding of development techniques."
     - content: "All development resources are hosted locally on your development machine."
       isCorrect: false
-      explanation: "Incorrect. This is not true of all low-code bot-building tools"
+      explanation: "Incorrect. This is not true for all low-code bot-building tools."
     - content: "Low-code designers are more cost-efficient."
       isCorrect: false
-      explanation: "Incorrect. Cost-efficiency is a complex assessment and cannot be determined only by the bot-building tool you use."
+      explanation: "Incorrect. Cost-efficiency is a complex assessment and can't be determined only by the bot-building tool you use."      
+  - content: "In which of the following services does bot creation occur at the end of the development process?"
+    choices:
+    - content: "QnA Maker"
+      isCorrect: true
+      explanation: "Correct. In QnA Maker, you must first create a QnA Maker knowledge base, and then create a bot based on the knowledge base."
+    - content: "Power Virtual Agents"
+      isCorrect: false
+      explanation: "Incorrect. Creating the bot is the first step in bot development using Power Virtual Agents."
+    - content: "Bot Framework Composer"
+      isCorrect: false
+      explanation: "Incorrect. Creating the bot is the first step in bot development using Bot Framework Composer."

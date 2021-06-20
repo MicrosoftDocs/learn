@@ -1,4 +1,4 @@
-To choose the right service to create a test bot, you need to examine the criteria of the bot. You'll consider if Power Virtual Agents is the appropriate tool.
+To choose the right service to create a test bot, you need to examine the criteria for the bot creation tool. You'll consider if Power Virtual Agents is the appropriate bot-creation tool.
 
 ## Criteria to create a test bot
 
