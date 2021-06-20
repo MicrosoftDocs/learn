@@ -1,10 +1,3 @@
-In your scenario, the financial services company you work for wants to create a bot to test core functionality for fielding customer support requests and advising customers about new services. If the test is successful, your team will pursue further development to implement more sophisticated features. You have several important factors that will inform your decision-making process:
-
-- The initial development of the bot should be in a low-code designer.
-- The test bot should include an existing LUIS app for language understanding that is trained to recognize financial industry terms and phrases.
-- The bot will be hosted on the company website.
-- After testing, your team will integrate several C# libraries to extend functionality.
-- You need to integrate your bot with a pre-existing REST-enabled FAQ application.
 
 ## Which service should you choose?
 

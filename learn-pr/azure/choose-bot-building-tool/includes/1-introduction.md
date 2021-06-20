@@ -4,7 +4,7 @@ Imagine you work for a financial services company. Your company is considering u
 
 If the test bot is successful, your company would like to extend functionality based on pre-existing C# libraries. Your company also wants to integrate your company's RESTful FAQ database application so the bot can answer common questions without human interaction. You'd also like to integrate an existing LUIS app for language understanding that is trained to recognize financial industry terms and phrases.
 
-Microsoft Azure allows you to create bots by using different tools. In this module, you’ll learn about the fundamental differences between the bot-building tools that Azure provides. You’ll compare creating bots by using Power Virtual Agents, QnA Maker, and Bot Framework Composer and Bot Service. You’ll then determine which tool you would use in specific scenarios. You'll also examine when you should choose one tool over another.
+Microsoft Azure allows you to create bots by using different tools. In this module, you’ll learn about the fundamental differences between the bot-building tools that Azure provides. You’ll compare creating bots by using Power Virtual Agents, QnA Maker, and Bot Framework Composer and  Bot Service. You’ll then determine which tool you would use in specific scenarios. You'll also examine when you should choose one tool over another.
 
 ## Learning objectives
 

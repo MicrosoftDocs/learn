@@ -10,7 +10,7 @@ If you prefer a low-code design interface, compare the three options:
 
 - Power Virtual Agents has a low-code, visual designer. The designer is hosted in a web app that you can use to design your bot. You can use the designer to create your bot, create and edit topics to govern conversation flow, and extend the bot with built-in AI capabilities, entities, variables and Bot Framework skills.
 
-- QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledgebase.
+- QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledge base.
  
      > [!NOTE]
      > The QnA Maker portal doesn't offer bot modification possibilities, so if you needed to modify your bot to meet test requirements, you would have to edit the bot source code.
