@@ -1,8 +1,8 @@
 In this unit, we create an Azure Function app that's invoked every 20 seconds using a timer trigger.
 
-## Create an Azure Function app
+## Create an Azure Function App
 
-Let’s start by creating an Azure Function app in the portal.
+Let’s start by creating an Azure Function App in the portal.
 
 ::: zone pivot="csharp"
 
@@ -12,15 +12,11 @@ Let’s start by creating an Azure Function app in the portal.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
+    The **Create a resource** pane appears.
 
+1. In the left menu pane, under **Categories**, select **Compute**, and then under **Popular offers**, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
 
-1. On the **Create a resource** page under **Categories**, select **Compute**, and then in the **Popular offers**, select **Function App**. Optionally, you can enter **Function App** in the  search bar to locate and select **Enter**.
-
-1. On the **Function App** page, select **Create** to open the **Create Function App** page.
-
-    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
-
-1. On the **Basics** tab, enter the values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -28,13 +24,13 @@ Let’s start by creating an Azure Function app in the portal.
     | Subscription | Select the **Concierge Subscription** for this exercise  |
     | Resource Group | Select '<rgn>[Sandbox resource group name]</rgn>' resource group from the dropdown list. |
     | **Instance Details** |
-    | Function App name | Enter a globally unique name for your function app.  |
+    | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
     | Runtime stack | .NET |
     | Version | 3.1 |
     | Region | Select a location close to you. |
 
-1. Select **Next** and on the**Hosting** tab, enter the values for each setting as specified in the table below.
+1. Select **Next : Hosting**, and enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -79,17 +75,15 @@ We have an Azure function app with logic to print a message to the log window. W
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**.
+1. Under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource. The **Create Function App** pane appears.
-
-    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
+1. In the left menu pane, under **Categories**, select **Compute**, and then under **Popular offers**, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -99,7 +93,7 @@ We have an Azure function app with logic to print a message to the log window. W
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
     | Resource Group | Select the existing **Resource Group** <rgn>[sandbox resource group name]</rgn> |
     | **Instance Details** |
-    | Function App name | *\<your-webapp-name\>* |
+    | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
     | Runtime stack | PowerShell Core |
     | Version | 7.0 (or latest version) |

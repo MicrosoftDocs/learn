@@ -23,7 +23,7 @@ The navigation pane in the Microsoft 365 Defender portal includes these options 
 - **Endpoints** – Microsoft Defender for Endpoints delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **Email & collaboration** - Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **Reports**: Get the detail and information you need to better protect your users, devices, apps, and more.
-- **Permissions** & roles: Access to Microsoft 365 Defender is configured with Azure Active Directory global roles or by using custom roles.
+- **Permissions & roles**: Access to Microsoft 365 Defender is configured with Azure Active Directory global roles or by using custom roles.
 
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 Defender portal.
