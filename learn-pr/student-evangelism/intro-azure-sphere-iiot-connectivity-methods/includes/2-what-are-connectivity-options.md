@@ -21,13 +21,13 @@ We describe the three options in detail.
 
 Let’s first consider some descriptions:
 
-**Ethernet controller**: an integrated circuit chip that controls Ethernet communications.
+- **Ethernet controller**: an integrated circuit chip that controls Ethernet communications.
 
-**Ethernet network interface**: allows a computer or mobile device to connect to a local area network (LAN) using **ethernet** as the transmission mechanism.
+- **Ethernet network interface**: allows a computer or mobile device to connect to a local area network (LAN) using **ethernet** as the transmission mechanism.
 
-**eth0**: is an Ethernet interface supported Azure Sphere
+- **eth0**: is an Ethernet interface supported Azure Sphere
 
-**Board configuration image**: contains information that the Azure Sphere Security Service requires to add support for ethernet to the Azure Sphere OS.
+- **Board configuration image**: contains information that the Azure Sphere Security Service requires to add support for ethernet to the Azure Sphere OS.
 
 You can enable the Azure Sphere to communicate on an Ethernet network via an external Ethernet controller. To use the ethernet, you need to create a board configuration image for the Ethernet controller and then deploy a board configuration image package to your device. When the board configuration is uploaded to the device, the Ethernet interface will be enabled automatically. Once your device is configured for networking, it can receive cloud updates from the Azure Security Service and communicate with Azure IoT Hub services.
 

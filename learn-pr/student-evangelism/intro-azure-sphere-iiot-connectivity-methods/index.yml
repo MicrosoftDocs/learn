@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.oxford.industrial-iot-connectivity
 metadata:
-  title: "Introduction to Azure Sphere for Industrial IoT connectivity"
+  title: "Introduction to Azure Sphere for industrial IoT connectivity"
   description: "This module introduces Azure Sphere connectivity methods"
   ms.date: 06/11/2021
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-title: "Introduction to Azure Sphere for Industrial IoT connectivity"
+title: "Introduction to Azure Sphere for industrial IoT connectivity"
 summary: "Characterize the types of connectivity options available to the Azure Sphere in an Industrial IoT scenario. Describe the functionality of each of the connectivity options and show how they can be combined to solve complex industrial IoT problems. "
 abstract: |
     In this module, you will:
