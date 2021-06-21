@@ -1,6 +1,6 @@
 Azure Monitor Logs collects and organizes log data generated from Azure resources. Log data is stored in a Log Analytics workspace. Data living in the workspace can be queried for trend analysis, reporting, and alerting. Some examples of data captured include Windows event logs, Heartbeat logs, performance data, and Syslogs.
 
-Azure Monitor for VMs is a feature of Azure Monitor that relies on Azure Monitor Logs. Think of Azure Monitor for VMs as a feature that provides a predefined, curated monitoring experience, with little configuration required. Azure Monitor for VMs uses a table named InsightsMetrics. Administrators can query performance and usage for virtual machines in near real time by using that table. The data generated allows you to display everything in a meaningful way. Administrators can also use Azure Monitor for VMs to process log data without exposing the underlying queries.
+Azure Monitor VM Insights is a feature of Azure Monitor that relies on Azure Monitor Logs. Think of Azure Monitor VM Insights as a feature that provides a predefined, curated monitoring experience, with little configuration required. Azure Monitor VM Insights uses a table named InsightsMetrics. Administrators can query performance and usage for virtual machines in near real time by using that table. The data generated allows you to display everything in a meaningful way. Administrators can also use Azure Monitor VM Insights to process log data without exposing the underlying queries.
 
 ## What is the relationship between all the Azure native monitoring tools?
 
@@ -46,10 +46,11 @@ The following table lists each agent:
 
 | Agent | Description | Notes
 | ---- | ---- | ---- |
+| Azure Monitor Agent | Collects monitoring data from guest operating systems on VMs and delivers data to Azure Monitor | Over time, this agent will replace all other agents that exist today. The Azure Monitor agent is not at full parity yet with existing agents and can co-exist with the Log Analytics agent.
 | Log Analytics agent | Collects logs and performance data for virtual machines in Azure, other clouds, or on-premises | Allows the onboarding of Azure Security Center and Azure Sentinel. The agent also works in conjunction with Azure Automation accounts to onboard Azure Update Management and Azure Automation State Configuration, along with Azure Automation Change Tracking and Inventory.
 | Azure diagnostics extension | Enables customers to receive additional data from guest operating systems and workloads living on compute resources | Data primarily captured with this extension will be sent to Azure Monitor Metrics. If necessary, this data could also be sent to a third-party tool by using Azure Event Hubs or sent to Azure Storage for archival. You could also collect boot diagnostics, which helps with investigations for virtual machine boot issues.
 | Dependency agent | Collects discovered data about certain processes running on virtual machines | Maps all dependencies between virtual machines and any external process dependencies.
 
-As referenced earlier, Azure Monitor for VMs needs to be configured for the Log Analytics workspace. Azure Monitor for VMs is a newer service that provides additional visibility and capabilities for data collection of virtual machines.
+As referenced earlier, Azure Monitor VM Insights needs to be configured for the Log Analytics workspace. Azure Monitor VM Insights is a newer service that provides additional visibility and capabilities for data collection of virtual machines.
 
-In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through enabling Azure Monitor for VMs, which also onboards the virtual machines to a Log Analytics workspace.
+In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through enabling Azure Monitor VM Insights, which also onboards the virtual machines to a Log Analytics workspace.
