@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-text-with-text-analytics-service.detect-language
+title: Detect language
+metadata:
+  title: Detect language
+  description: "Detect language"
+  ms.date: 06/21/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-detect-language.md)]
