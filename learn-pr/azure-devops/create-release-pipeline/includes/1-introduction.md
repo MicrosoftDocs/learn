@@ -1,4 +1,4 @@
-In the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you helped the Tailspin Toys team use Microsoft Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
+In the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you helped the Tailspin Toys team use Microsoft Azure DevOps to plan and build a continuous integration (CI) pipeline for the _Space Game_ website.
 
 The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code. But how can they quickly deploy the application to an environment that's available to their users?
 
