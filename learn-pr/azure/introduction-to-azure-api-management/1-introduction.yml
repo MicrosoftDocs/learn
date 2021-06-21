@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-api-management.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introductory unit of the Introduction to Azure API Management module
+  ms.date: 06/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

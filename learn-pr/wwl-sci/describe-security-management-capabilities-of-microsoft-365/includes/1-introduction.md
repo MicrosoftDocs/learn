@@ -1,10 +1,8 @@
-Microsoft recently announced a holistic solution that provides extended detection and response (XDR) capabilities: it's called Microsoft 365 Defender. Microsoft 365 Defender integrates threat detection tools, reduces time to respond, and hardens defenses. It provides solutions for your Microsoft data, client endpoints, Enterprise IoT, Identity, Apps, and Cloud Apps.
-
-Microsoft security center is a centralized site where you can manage security across identities, data, devices, apps, and infrastructure.
+The Microsoft 365 Defender portal, provides a centralized site where you can manage security across Microsoft identities, data, devices, and apps. Throughout this module, you will explore the capabilities of the Microsoft 365 Defender portal, including Microsoft Secure Score, dashboards, reports, and incident management.
 
 In this module, you will:
 
-- Describe and explore Microsoft 365 security center.
-- Describe how to use Microsoft Secure Score.
+- Describe and explore Microsoft 365 Defender portal.
+- Describe how to use Microsoft Secure score.
 - Explore security reports and dashboards.
 - Describe incidents and incident management capabilities.

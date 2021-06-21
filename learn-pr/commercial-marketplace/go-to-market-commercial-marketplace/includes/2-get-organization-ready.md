@@ -7,7 +7,7 @@ A good strategy starts with consensus among the members of your company's leader
 Consider nominating someone from your company to act as your team’s lead point of contact for the Microsoft commercial marketplace. This person can help your leadership team understand the benefits of the commercial marketplace for your company and its customers, answering questions that get raised by members of your team.
 
 > [!TIP]
-> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
+> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](/learn/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
 
 After learning what the commercial marketplace is, your leaders will need to come to an agreement on your organization's goals for selling your products and services through the commercial marketplace. Some common benefits include:
 
@@ -38,7 +38,7 @@ Each of these benefits is an opportunity for your sales professionals to increas
 - Use private offers to negotiate pricing and custom agreements to facilitate large-scale deals through the commercial marketplace
 
 > [!Note]
-> For more information on commercial marketplace customer benefits for MACC, reference the **[documentation on the Azure consumption commitment benefit](https://docs.microsoft.com/azure/marketplace/azure-consumption-commitment-benefit)**.
+> For more information on commercial marketplace customer benefits for MACC, reference the **[documentation on the Azure consumption commitment benefit](/azure/marketplace/azure-consumption-commitment-benefit)**.
 
 Your sales and finance leaders will also need to make sure sales compensation plans account for deals closed through the commercial marketplace. If you want your sellers to prioritize leads received through Microsoft, you should make sure they’re compensated for sales through the commercial marketplace.
 
@@ -53,7 +53,7 @@ Your marketing team can help increase your leads by incorporating your commercia
 - Promote your commercial marketplace solutions with paid media, including social media and other online advertising
 - Run trackable marketing campaigns that will help you calculate the return on your marketing investment and measure the effectiveness of different kinds of outreach
 
-We’ll spend some more time talking about marketing best practices for the commercial marketplace in other units of this module. You can also download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](https://docs.microsoft.com/azure/marketplace/gtm-marketing-best-practices) for a longer list of recommendations.
+We’ll spend some more time talking about marketing best practices for the commercial marketplace in other units of this module. You can also download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](/azure/marketplace/gtm-marketing-best-practices) for a longer list of recommendations.
 
 ## Technical teams
 
@@ -61,12 +61,12 @@ Publishing your solution to the commercial marketplace will require some work fr
 
 Here are a few example activities that require some technical knowledge:
 
-- Connecting your Customer Relationship Management (CRM) system to get [customer leads from your commercial marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
-- Offering a free trial or [test drive](https://docs.microsoft.com/azure/marketplace/what-is-test-drive) of your offer so customers can test your solution
-- Integrating your software with [Azure Active Directory](https://docs.microsoft.com/azure/marketplace/azure-ad-saas) for streamlined purchasing, fulfillment, and management of your solution for customers
-- Building a [transact](https://docs.microsoft.com/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations) offer to provide streamlined purchases and automated distribution of your solution
+- Connecting your Customer Relationship Management (CRM) system to get [customer leads from your commercial marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
+- Offering a free trial or [test drive](/azure/marketplace/what-is-test-drive) of your offer so customers can test your solution
+- Integrating your software with [Azure Active Directory](/azure/marketplace/azure-ad-saas) for streamlined purchasing, fulfillment, and management of your solution for customers
+- Building a [transact](/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations) offer to provide streamlined purchases and automated distribution of your solution
 
-Your technical teams will also need to be involved as you consider different pricing strategies and software deployment models. For more technical information, your team can reference the [commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/)
+Your technical teams will also need to be involved as you consider different pricing strategies and software deployment models. For more technical information, your team can reference the [commercial marketplace documentation](/azure/marketplace/)
 
 ## Finance
 
@@ -78,15 +78,15 @@ To help your colleagues in sales, marketing, and engineering, your finance team 
 - Investments for new marketing campaigns that generate customer leads from the commercial marketplace and promote awareness of your offers
 - Funding to help your engineering team integrate your solution with the commercial marketplace so customers can purchase your software and services through Microsoft
 
-When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](https://docs.microsoft.com/partner-center/tax-details-marketplace?context=/azure/marketplace/context/context) in many countries are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
+When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](/partner-center/tax-details-marketplace?context=%2fazure%2fmarketplace%2fcontext%2fcontext) in many countries are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
 
 - Planning for commercial marketplace service fees charged when you sell your product through Microsoft
-- Reviewing the [billing and payout](https://docs.microsoft.com/partner-center/payment-thresholds-methods-timeframes?context=/azure/marketplace/context/context) processes to modify existing finance and accounting practices
-- Incorporating [commercial marketplace analytics](https://docs.microsoft.com/azure/marketplace/partner-center-portal/analytics) and offer data into financial reports and analyses
+- Reviewing the [billing and payout](/partner-center/payment-thresholds-methods-timeframes?context=%2fazure%2fmarketplace%2fcontext%2fcontext) processes to modify existing finance and accounting practices
+- Incorporating [commercial marketplace analytics](/azure/marketplace/partner-center-portal/analytics) and offer data into financial reports and analyses
 - Evaluating changes in your company's operational costs as you process sales through the commercial marketplace grow
 
 > [!Note]
-> When you sell your solution through the commercial marketplace, Microsoft charges a 20% service fee as described in the **[Microsoft Publisher Agreement](https://go.microsoft.com/fwlink/?LinkID=699560)**. Microsoft reduces this service fee for certain products that meet **[Co-sell program requirements](https://docs.microsoft.com/azure/marketplace/marketplace-co-sell)**.
+> When you sell your solution through the commercial marketplace, Microsoft charges a 20% service fee as described in the **[Microsoft Publisher Agreement](/legal/marketplace/msft-publisher-agreement)**. Microsoft reduces this service fee for certain products that meet **[Co-sell program requirements](/azure/marketplace/marketplace-co-sell)**.
 
 ## Summary
 

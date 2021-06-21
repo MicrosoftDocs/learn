@@ -1,134 +1,269 @@
-> [!NOTE]
-> This exercise requires an Azure subscription. If you don't have an Azure subscription, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
+[!INCLUDE [BYO subscription explanation](../../includes/azure-template-exercise-nosandbox-subscription.md)]
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 
-In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a `deploymentScripts` resource to run an Azure PowerShell script. The script will deploy a file to the newly created storage account.
+In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a new deployment script.
 
-This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a starting template.
+> * Add the prerequisites for deployment scripts including a user-assigned managed identity and role assignment.
+> * Add a deployment script.
+> * Deploy the template, and verify the outcome.
+
+::: zone pivot="jsoncli,jsonpowershell"
+
+[!INCLUDE [Install the JSON ARM template extension for Visual Studio Code](../../includes/azure-template-json-exercise-vscode-extension.md)]
+
+::: zone-end
+
+::: zone pivot="biceppowershell,bicepcli"
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+::: zone-end
 
 ## Create the starting template
 
 You start with an existing template that your team has been using. The template creates the storage account, sets up blob services and requires HTTPS, and creates the blob container for your configuration files.
 
-1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
+::: zone pivot="jsoncli,jsonpowershell"
+
+1. Open Visual Studio Code.
+
+1. Create a new file called *azuredeploy.json*.
+
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
 1. Copy the following starting template into *azuredeploy.json*.
 
-    :::code language="json" source="code/starting-template.json" :::
+    :::code language="json" source="code/3-starting-template.json" :::
 
 1. Save the template.
 
-## Add a user-assigned managed service identity
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
+1. Copy the following starting template into *main.bicep*.
+
+    :::code language="plaintext" source="code/3-starting-template.bicep" :::
+
+1. Save the template.
+
+::: zone-end
+
+## Add a user-assigned managed identity
 
 Next, you need to create a user-assigned managed identity. Given the infrastructure-as-code approach, you can create the identity in the template.
 
-1. Edit the `variables` section of *azuredeploy.json* to include:
-
-    :::code language="json" source="code/template-with-deploymentscript.json" range="9" :::
-
-1. Edit the `resources` section of *azuredeploy.json* to include:
-
-    :::code language="json" source="code/template-with-deploymentscript.json" range="60-64,106" :::
-
-1. Save the template.
-
-## Set the contributor role for the managed service identity
-
-Now that you have a managed service identity defined, you can assign it a role with rights to the resource group. The role assignment needs a GUID name. You can use the [`guid`](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#guid) function to create a GUID that's unique to the resource group and role name.
+::: zone pivot="jsoncli,jsonpowershell"
 
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/template-with-deploymentscript.json" range="10" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="9" :::
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/template-with-deploymentscript.json" range="66-76,106" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="61-65,107" :::
 
 1. Save the template.
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Under the variable definitions in *main.bicep*, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="3" :::
+
+1. Under the resource definitions, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="44-47" :::
+
+1. Save the template.
+
+::: zone-end
+
+## Set the contributor role for the managed identity
+
+Now that you have a managed identity defined, you can assign it a role with rights to the resource group. You'll assign it [the *Contributor* role](/azure/role-based-access-control/built-in-roles#contributor). You identify a role by its role definition ID, which is a GUID. The *Contributor* role is built into Azure so the role definition ID is documented.
+
+The role assignment also needs a GUID name. You can use the [`guid`](/azure/azure-resource-manager/templates/template-functions-string#guid) function to create a GUID that's unique to the resource group and role name.
+
+::: zone pivot="jsoncli,jsonpowershell"
+
+1. Edit the `variables` section of *azuredeploy.json* to include:
+
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="10-11" :::
+
+1. Edit the `resources` section of *azuredeploy.json* to include:
+
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="67-77,107" :::
+
+1. Save the template.
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Under the variable definitions in *main.bicep*, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="4-5" :::
+
+1. Under the resource definitions, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="49-56" :::
+
+1. Save the template.
+
+::: zone-end
 
 ## Create the deployment script
 
 Now, you have all the prerequisites for the deployment script. You'll start with the common values that the deployment script needs. There are two dependencies, the role assignment and the blob storage container. Your script needs both of those to exist before it can run.
 
+::: zone pivot="jsoncli,jsonpowershell"
+
 1. Edit the `variables` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/template-with-deploymentscript.json" range="11" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="12" :::
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/template-with-deploymentscript.json" range="78-92,105-106" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="79-93,106-107" :::
 
 1. Add a `properties` section to the resource to define the script and the other required values.
 
-    :::code language="json" source="code/template-with-deploymentscript.json" range="94-105" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="95-106" :::
 
 1. Save the template.
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Under the variable definitions in *main.bicep*, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="6" :::
+
+1. Under the resource definitions, add:
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="58-67, 80-84" :::
+
+1. Add a `properties` section to the resource to define the script and the other required values.
+
+    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="68-79" :::
+
+1. Save the template.
+
+::: zone-end
 
 ## Add a template output
 
 Now that you have a deployment script uploading a file into Azure Blob Storage, you might need to reference that file location in later automation. (Perhaps you'll run a test to validate that the file is where you think it should be.)
 
+::: zone pivot="jsoncli,jsonpowershell"
+
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="json" source="code/template-with-deploymentscript.json" range="108-113":::
+:::code language="json" source="code/3-template-with-deploymentscript.json" range="109-114":::
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+At the bottom of the file, after the resource definitions, add an output that references the URI for the file as reported by the deployment script.
+
+:::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="86":::
+
+::: zone-end
 
 ## Verify your template
 
 Your template should look like:
 
-:::code language="json" source="code/template-with-deploymentscript.json" highlight="9-11, 60-106, 108-113" :::
+::: zone pivot="jsoncli,jsonpowershell"
+
+:::code language="json" source="code/3-template-with-deploymentscript.json" highlight="9-12, 61-107, 109-114" :::
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+:::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" highlight="3-6, 44-86" :::
+
+::: zone-end
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the template
 
-::: zone pivot="cli"
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account that you used to activate the sandbox.
+::: zone pivot="jsoncli"
 
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-cli.md)]
 
-      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash on the drop-down menu." border="true":::
+::: zone-end
 
-1. If not, select the drop-down menu and choose **Select Default Shell**.
-1. Select **bash**.
+::: zone pivot="bicepcli"
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down menu for selecting the shell." border="true":::
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with **bash** as the shell.
+::: zone-end
 
-### Sign in to Azure
+::: zone pivot="jsonpowershell"
 
-1. From the terminal in Visual Studio Code, run the following command. A browser then opens so you can sign in to your Azure account.
+[!include[](../../includes/azure-template-json-exercise-nosandbox-deploy-powershell.md)]
 
-    ```azurecli
-    az login
-    ```
+::: zone-end
 
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. Find the subscription that you want to use for this exercise. If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
+::: zone pivot="biceppowershell"
 
-    ```azurecli
-    az account list --output tsv
-    ```
+[!include[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
-1. Set the default subscription for all of the Azure CLI commands that you run in this session.
-
-    ```azurecli
-    az account set --subscription "Your Subscription Name or ID"
-    ```
-
-### Create a resource group for the exercise
+::: zone-end
 
 Next, you need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
+
+::: zone pivot="jsoncli,bicepcli"
+
+### Create a resource group for the exercise
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_1"
 az group create --location eastus --name $resourceGroupName
 ```
 
+::: zone-end
+
+::: zone pivot="jsonpowershell,biceppowershell"
+
+```azurepowershell
+$resourceGroupName = 'learndeploymentscript_exercise_1'
+New-AzResourceGroup -Location eastus -Name $resourceGroupName
+```
+
+::: zone-end
+
+> [!NOTE]
+> If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
+
 ### Deploy the template to Azure
+
+::: zone pivot="jsoncli"
 
 The following code deploys the ARM template to Azure. You'll see a successful deployment.
 
@@ -145,9 +280,68 @@ az deployment group create \
     --template-file $templateFile
 ```
 
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+The following code deploys the ARM template to Azure. You'll see a successful deployment.
+
+Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
+
+```azurecli
+templateFile="main.bicep"
+today=$(date +"%d-%b-%Y")
+deploymentName="deploymentscript-"$today
+
+az deployment group create \
+    --resource-group $resourceGroupName \
+    --name $deploymentName \
+    --template-file $templateFile
+```
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
+
+The following code deploys the template to Azure. You'll see a successful deployment.
+
+Deploy the template by using Azure PowerShell commands in the terminal.
+
+```azurepowershell
+$templateFile = 'azuredeploy.json'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "deploymentscript-$today"
+New-AzResourceGroupDeployment `
+  -ResourceGroupName $resourceGroupName `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+```
+
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+The following code deploys the template to Azure. You'll see a successful deployment.
+
+Deploy the template by using Azure PowerShell commands in the terminal.
+
+```azurepowershell
+$templateFile = 'main.bicep'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "deploymentscript-$today"
+New-AzResourceGroupDeployment `
+  -ResourceGroupName $resourceGroupName `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+```
+
+::: zone-end
+
 ### Review the result of your template
 
 After the deployment is complete, you'll be given a URL that points to the file that your deployment script copied into blob storage.
+
+::: zone pivot="jsoncli,bicepcli"
 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
@@ -185,90 +379,15 @@ After the deployment is complete, you'll be given a URL that points to the file 
     az deployment-scripts show-log --resource-group $resourceGroupName --name CopyConfigScript
     ```
 
-### Clean up the resource group
-
-Now that you've successfully deployed an ARM template with a deployment script, you can remove the resource group that contains all the resources and role assignments you've created.
-
-```azurecli
-az group delete --name $resourceGroupName
-```
-
 ::: zone-end
 
-::: zone pivot="powershell"
-
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed, and sign in to the same account that activated the sandbox.
-
-1. Open a terminal window by using the **Terminal** menu.
-1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
-
-    :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with p w s h on the drop-down menu." border="true":::
-
-    If not, select the drop-down menu and choose **Select Default Shell**.
-
-1. Select **pwsh**.
-
-    :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the drop-down list for selecting the default shell." border="true":::
-
-1. Select **+** in the terminal to create a new terminal with **pwsh** as the shell.
-
-### Sign in to Azure by using Azure PowerShell
-
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
-
-    ```azurepowershell
-    Connect-AzAccount
-    ```
-
-1. Get the ID of the subscription that you want to use for this exercise. The following command will list your subscriptions and their IDs. 
-
-    ```azurepowershell
-    Get-AzSubscription
-    ```
-    The subscription ID is the second column. Copy the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
-
-1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
-
-    ```azurepowershell
-    Set-AzContext -SubscriptionId {Your subscription ID}
-    ```
-
-### Create a resource group for the exercise
-
-Next, you need to create a resource group to contain the resources you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
-
-From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
-
-```azurepowershell
-$ResourceGroupName="learndeploymentscript_exercise_1"
-New-AzResourceGroup -Location eastus -Name $ResourceGroupName
-```
-
-### Deploy the template to Azure
-
-The following code deploys the template to Azure. You'll see a successful deployment.
-
-Deploy the template by using Azure PowerShell commands in the terminal.
-
-```azurepowershell
-$TemplateFile = "azuredeploy.json"
-$Today=Get-Date -Format "MM-dd-yyyy"
-$DeploymentName="deploymentscript-"+"$Today"
-New-AzResourceGroupDeployment `
-  -ResourceGroupName $ResourceGroupName `
-  -Name $DeploymentName `
-  -TemplateFile $TemplateFile
-```
-
-### Review the result of your template
-
-After the deployment is complete, you'll be given a URL that points to the file that your deployment script copied into blob storage.
+::: zone pivot="jsonpowershell,biceppowershell"
 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
     ```azurepowershell
-    $FileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.fileUri.Value
-    Invoke-RestMethod $FileUri
+    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $reploymentName).Outputs.fileUri.Value
+    Invoke-RestMethod $fileUri
     ```
 
     The command returns the following code.
@@ -285,15 +404,27 @@ After the deployment is complete, you'll be given a URL that points to the file 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or by using the following command line.
 
     ```azurepowershell
-    Get-AzDeploymentScriptLog -ResourceGroupName $ResourceGroupName -Name CopyConfigScript
+    Get-AzDeploymentScriptLog -ResourceGroupName $resourceGroupName -Name CopyConfigScript
     ```
+
+::: zone-end
 
 ### Clean up the resource group
 
 Now that you've successfully deployed an ARM template with a deployment script, you can remove the resource group that contains all the resources and role assignments you've created.
 
+::: zone pivot="jsoncli,bicepcli"
+
+```azurecli
+az group delete --name $resourceGroupName
+```
+
+::: zone-end
+
+::: zone pivot="jsonpowershell,biceppowershell"
+
 ```azurepowershell
-Remove-AzResourceGroup -Name $ResourceGroupName
+Remove-AzResourceGroup -Name $resourceGroupName
 ```
 
 ::: zone-end

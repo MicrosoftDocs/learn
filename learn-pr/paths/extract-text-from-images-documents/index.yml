@@ -3,7 +3,7 @@ uid: learn.wwl.extract-text-from-images-documents
 metadata:
   title: Extract text from images and documents
   description: Extract text from images and documents
-  ms.date: 04/16/2021
+  ms.date: 05/14/2021
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -25,6 +25,7 @@ roles:
 products:
 - azure-form-recognizer
 modules:
+- learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.work-with-form-recognizer
 trophy:
   uid: learn.wwl.extract-text-from-images-documents.trophy

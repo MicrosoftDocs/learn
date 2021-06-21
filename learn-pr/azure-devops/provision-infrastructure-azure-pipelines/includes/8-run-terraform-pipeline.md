@@ -10,14 +10,14 @@ In this section, you run your Terraform plan in Azure Pipelines. During the proc
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you added variables to your pipeline to store the names of your web apps in Azure App Service. Here, instead of adding the names of your web apps, you add your service principal details and information about your Blob storage account.
+In the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you added variables to your pipeline to store the names of your web apps in Azure App Service. Here, instead of adding the names of your web apps, you add your service principal details and information about your Blob storage account.
 
 To add the variables:
 
 1. In Azure DevOps, go to your **Space Game - web - Terraform** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Azure Pipelines showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -33,13 +33,13 @@ To add the variables:
     > | **StorageAccountName**    | **tfsa4962** |
     > | **ResourceGroupLocation** | **westus** |
 
-    Select the ![Secret](../../shared/media/secret-variable-icon.png) lock icon next to  **ARM_CLIENT_SECRET** to encrypt this value.
+    Select the :::image type="content" source="../../shared/media/secret-variable-icon.png" alt-text="Secret."::: lock icon next to  **ARM_CLIENT_SECRET** to encrypt this value.
 
 1. Select **Save**.
 
     Your variable group looks like this:
 
-    ![The final variable group in Azure Pipelines](../media/8-pipelines-library.png)
+    :::image type="content" source="../media/8-pipelines-library.png" alt-text="The final variable group in Azure Pipelines.":::
 
 ## Provision infrastructure in Azure Pipelines
 
@@ -51,7 +51,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
 
     [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,109-111)]
 
-    This configuration resembles the one you built in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. Here's a brief summary of what's new:
+    This configuration resembles the one you built in the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path. Here's a brief summary of what's new:
 
     * The _Dev_ stage includes a new job, **Provision**, that runs before the deployment job.
     * The **Provision** job:
@@ -76,7 +76,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines showing the completed stages](../media/8-pipelines-run.png)
+    :::image type="content" source="../media/8-pipelines-run.png" alt-text="Azure Pipelines showing the completed stages.":::
 
     You see that the deployment finished successfully.
 
@@ -93,7 +93,7 @@ Here, you see your website to verify the deployment.
 
     You see the _Space Game_ website deployed to App Service.
 
-    ![The Space Game website](../media/8-space-game-home-page.png)
+    :::image type="content" source="../media/8-space-game-home-page.png" alt-text="The Space Game website.":::
 
 > [!NOTE]
 > For learning purposes, you use the default network settings here. The default settings make your site accessible from the internet. 
@@ -124,14 +124,14 @@ To see this repair process in action, here you delete your App Service instance 
 1. Go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines showing the completed stages](../media/8-pipelines-run.png)
+    :::image type="content" source="../media/8-pipelines-run.png" alt-text="Azure Pipelines showing the completed stages.":::
 
     You see that the deployment finished successfully.
 1. Refresh the web browser tab that shows the _Space Game_ website.
 
     You see that the _Space Game_ website is redeployed to App Service.
 
-    ![Space Game in App Service](../media/8-space-game-home-page.png)
+    :::image type="content" source="../media/8-space-game-home-page.png" alt-text="Space Game in App Service.":::
 
     Because the state file holds your random number, Terraform can bring up a new App Service instance that has the same name.
 

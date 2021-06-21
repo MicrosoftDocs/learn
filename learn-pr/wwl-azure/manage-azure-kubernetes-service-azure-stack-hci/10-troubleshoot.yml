@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.troubleshoot
+title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
+metadata:
+  title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
+  description: "Troubleshoot Azure Kubernetes Service on Azure Stack HCI"
+  ms.date: 06/09/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-troubleshoot.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "As part of evaluating AKS on Azure Stack HCI for Contoso, you are documenting the steps to connect to the newly deployed Windows Server nodes of a Kubernetes cluster. What authentication method should you use during such connections?"
+    choices:
+    - content: "Asymmetric key pair"
+      isCorrect: true
+      explanation: "Correct. When establishing an SSH connection to a Windows node of a Kubernetes cluster, you need to provide the location of the private key of the asymmetric key pair generated during cluster provisioning."
+    - content: "Active Directory"
+      isCorrect: false
+      explanation: "Incorrect. Windows Servers that are deployed as part of a Kubernetes cluster node pool are not automatically joined to Active Directory."
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "Incorrect. Windows Server does not support Azure Active Directory authentication."

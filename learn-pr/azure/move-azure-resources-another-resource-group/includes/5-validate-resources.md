@@ -18,9 +18,9 @@ To formulate the correct REST URI to call, and to provide the other necessary de
 
 - Your Azure subscription ID.
 - The name of the resource group currently holding your resources.
-- The [resource ID](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresource?view=azurermps-6.13.0) for each of the resources in your original resource group.
-- The [resource ID](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-6.13.0) for the destination resource group where you want to move your resources.
-- Your account [access token](https://docs.microsoft.com/rest/api/azure/#acquire-an-access-token).
+- The [resource ID](/powershell/module/azurerm.resources/get-azurermresource?view=azurermps-6.13.0) for each of the resources in your original resource group.
+- The [resource ID](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-6.13.0) for the destination resource group where you want to move your resources.
+- Your account [access token](/rest/api/azure/#acquire-an-access-token).
 
 When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token. The CLI includes these values automatically.
 
@@ -46,9 +46,9 @@ The body of your POST request must contain the following information:
 To submit this POST request with the correct body by using the Azure CLI, run this command:
 
 ``` bash
-az rest --method post /
-   --uri https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/<your-source-group>/validateMoveResources?api-version=2019-05-10 /
-   --body "{\"resources\": [\"<your-resource-id-1>\", \"<your-resource-id-2>\", \"<your-resource-id-3>\"], \"targetResourceGroup\": \"/subscriptions/<your-subscription-id>/resourceGroups/<your-target-group>\"}" /
+az rest --method post \
+   --uri https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/<your-source-group>/validateMoveResources?api-version=2019-05-10 \
+   --body "{\"resources\": [\"<your-resource-id-1>\", \"<your-resource-id-2>\", \"<your-resource-id-3>\"], \"targetResourceGroup\": \"/subscriptions/<your-subscription-id>/resourceGroups/<your-target-group>\"}" \
    --verbose
 ```
 

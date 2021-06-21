@@ -7,5 +7,5 @@ Delete the `mslearn-vmupdate` resource group to clean up your subscription.
 
 ## Learn more
 
-- [An introduction to Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro)
-- [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
+- [An introduction to Azure Automation](/azure/automation/automation-intro)
+- [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker)

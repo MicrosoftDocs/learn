@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.azure.bicep-conditions-loops
+metadata:
+  moduleType: standard
+  title: Build flexible Bicep templates by using conditions and loops
+  description: Build advanced Bicep templates by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
+  ms.date: 05/09/2021
+  author: akasnik
+  ms.author: akasnik
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Build flexible Bicep templates by using conditions and loops
+summary: |
+  Learn how to use conditions to deploy resources only when specific constraints are in place. Also learn how to use loops to deploy multiple resources that have similar properties.
+abstract: |
+  After completing this module, you'll be able to:
+    - Deploy resources conditionally within a Bicep template
+    - Deploy multiple instances of resources by using loops
+    - Use output and variable loops
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates, including modules.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+  To follow along with the exercises in the module, you'll need:
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+iconUrl: /learn/achievements/bicep/bicep-conditions-loops.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:
+- learn.azure.bicep-conditions-loops.introduction
+- learn.azure.bicep-conditions-loops.use-conditions-deploy-resources
+- learn.azure.bicep-conditions-loops.exercise-conditions
+- learn.azure.bicep-conditions-loops.use-loops-deploy-resources
+- learn.azure.bicep-conditions-loops.exercise-loops
+- learn.azure.bicep-conditions-loops.use-loops-advanced
+- learn.azure.bicep-conditions-loops.use-loops-with-variables-and-outputs
+- learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
+- learn.azure.bicep-conditions-loops.knowledge-check
+- learn.azure.bicep-conditions-loops.summary
+badge:
+  uid: learn.azure.bicep-conditions-loops.badge

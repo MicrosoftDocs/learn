@@ -69,9 +69,11 @@ if (total < 15)
     Console.WriteLine("Sorry, you lose.");
 }
 ```
+
 We added two `if` statements to handle the winning and losing scenarios. Let's focus on the first `if` statement.
 
 The `if` statement is made up of three parts:
+
 - The `if` keyword
 - A *Boolean expression* between parenthesis `()`
 - A *code block* defined by curly braces `{ }`

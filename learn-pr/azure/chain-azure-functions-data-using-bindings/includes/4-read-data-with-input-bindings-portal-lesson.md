@@ -22,7 +22,7 @@ A binding expression is specialized text in function.json, function parameters, 
 
 ### Types of binding expressions
 
-There are a number or types of binding expressions, including:
+There are a number of types of binding expressions, including:
 
 - App settings
 - Trigger filename
@@ -31,7 +31,7 @@ There are a number or types of binding expressions, including:
 - New GUID
 - Current date and time
 
-Most expressions are identified by being wrapped in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example if the blob output binding path is `%Environment%/newblob.txt` and the Environment app setting value is Development, a blob will be created in the Development container.
+Most expressions are identified by being wrapped in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example, if the blob output binding path is `%Environment%/newblob.txt` and the Environment app setting value is *Development*, a blob will be created in the Development container.
 
 ## Summary
 

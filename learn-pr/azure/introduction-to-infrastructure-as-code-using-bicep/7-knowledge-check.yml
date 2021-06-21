@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-infrastructure-code-using-bicep.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/12/2021  
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+  - content: Suppose you're deciding on a method to use to deploy your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code?
+    choices:
+    - content: Infrastructure as code improves the consistency of your deployments.
+      isCorrect: true
+      explanation: Correct. Infrastructure as code helps reduce human error in resource provisioning and ensure consistency.
+    - content: Infrastructure as code requires that you deploy only a single environment.
+      isCorrect: false
+      explanation: Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync.
+    - content: With infrastructure as code, you manually execute your deployments.
+      isCorrect: false
+      explanation: Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error.
+  - content: Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
+    choices:
+    - content: With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task.
+      isCorrect: false
+      explanation: Incorrect. Imperative code defines what the code should accomplish and how to accomplish the task.
+    - content: With declarative code, objects and classes are used to determine the final configuration of a resource.
+      isCorrect: false
+      explanation: Incorrect. Object-oriented programming languages, like C#, use objects and classes in their code base. You don't need to use these constructs for declarative infrastructure as code.
+    - content: With declarative code, you specify only the end configuration. You don't define how to accomplish the task.
+      isCorrect: true
+      explanation: Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements.
+  - content: Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following declarative template formats work with Azure?
+    choices:
+    - content: Bicep template.
+      isCorrect: true
+      explanation: Correct. Bicep templates can be used for Azure resource deployments.
+    - content: XML template.
+      isCorrect: false
+      explanation: Incorrect. XML templates aren't used for Azure resource deployments.
+    - content: Running a Bash script in Azure CLI.
+      isCorrect: false
+      explanation: Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template.
+  - content: Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using ARM templates?
+    choices:
+    - content: Imperative code.
+      isCorrect: false
+      explanation: Incorrect. ARM templates don't use imperative code.
+    - content: Modularity.
+      isCorrect: true
+      explanation: Correct. ARM templates can be configured as separate templates, or modules.
+    - content: Management group.
+      isCorrect: false
+      explanation: Incorrect. A management group is a logical container for grouping Azure subscriptions.

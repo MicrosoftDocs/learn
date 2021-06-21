@@ -27,13 +27,13 @@ After App Center can access your source code repositories, you configure any num
 
 When your app builds, you can also configure signing of your build. After a one-time configuration in App Center, you can add build signing to any of your builds. These signed builds can then be distributed to groups of users, such as app testers, or directly to an app store like Google Play Store or Apple App Store.
 
-Additionally, if your build requires special processes, there is also a [system for creating custom build scripts](https://docs.microsoft.com/appcenter/build/custom/scripts) that run at various points within the build lifecycle: _post-clone_, _pre-build_, and _post-build_. These scripts can take advantage of environment variables provided either by App Center or your own custom variables.
+Additionally, if your build requires special processes, there is also a [system for creating custom build scripts](/appcenter/build/custom/scripts) that run at various points within the build lifecycle: _post-clone_, _pre-build_, and _post-build_. These scripts can take advantage of environment variables provided either by App Center or your own custom variables.
 
 ## How are apps built?
 
 When App Center builds your app, it is built using a clean environment every time. Your app's build gets a clean virtual machine (VM) that is used to build the source code into a release. After the app is built and the release is saved, the VM used to build your app is discarded. This process keeps the build environment clean and secure from your other App Center builds and other App Center users.
 
-Builds for iOS and Android apps are run on macOS VMs with several development and runtime packages. UWP apps are built on VMs using Hosted Windows Agents. If your app build requires special software to build, you will need to make sure that software is available on the default build VMs. Build VMs are provided with several included software packages. The [latest software available to the iOS build VMs](https://docs.microsoft.com/appcenter/build/software) is listed on the App Center documentation. You can also see the [latest software and capabilities available on the Hosted Windows Agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops#software) on the Azure Pipelines documentation.
+Builds for iOS and Android apps are run on macOS VMs with several development and runtime packages. UWP apps are built on VMs using Hosted Windows Agents. If your app build requires special software to build, you will need to make sure that software is available on the default build VMs. Build VMs are provided with several included software packages. The [latest software available to the iOS build VMs](/appcenter/build/software) is listed on the App Center documentation. You can also see the [latest software and capabilities available on the Hosted Windows Agents](/azure/devops/pipelines/agents/hosted?view=azure-devops#software) on the Azure Pipelines documentation.
 
 ## Test your app launches on real devices?
 

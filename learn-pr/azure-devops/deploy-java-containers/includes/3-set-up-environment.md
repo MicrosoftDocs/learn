@@ -13,7 +13,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -38,7 +38,7 @@ In this module, you use the Azure CLI to spin up the Azure App Service that will
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -129,7 +129,7 @@ This solution requires several Azure resources for deployment, which you create 
     az mysql server firewall-rule create \
       --name AllowAzureServices \
       --resource-group $rgName \
-      --server $dbServerName \
+      --server-name $dbServerName \
       --start-ip-address 0.0.0.0 \
       --end-ip-address 0.0.0.0
     ```

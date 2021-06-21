@@ -2,7 +2,7 @@ In this module, you are going to use [Custom Vision](https://azure.microsoft.com
 
 ## Sign up for Azure
 
-To use Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/?azure-portal=true) Learn module. This module also gives an overview of Azure pricing.
+To use Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) Learn module. This module also gives an overview of Azure pricing.
 
 If you haven't used Azure before, you can sign up for a [free trial](https://azure.microsoft.com/free/?azure-portal=true). The free trial gives you free services, which includes Custom Vision. You also get a free credit to use some paid services in the first month.
 
@@ -72,11 +72,11 @@ Azure is a cloud service that gives you the compute power to run code in a secur
 
 :::image type="content" source="../media/azure-portal.png" alt-text="Screenshot of the Azure portal with our resource group and Custom Vision resource.":::
 
-What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=cognitive%20services) available.
+What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](/learn/browse/?azure-portal=true&expanded=azure&terms=cognitive+services) available.
 
 ### Custom Vision resource
 
-[Custom Vision on Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/?azure-portal=true) is even more powerful than the bit we are going to explore in this module. Open the resource in Azure.
+[Custom Vision on Azure](/azure/cognitive-services/custom-vision-service/?azure-portal=true) is even more powerful than the bit we are going to explore in this module. Open the resource in Azure.
 
 :::image type="content" source="../media/custom-vision-resource.png" alt-text="Screenshot that shows a Custom Vision resource on Azure.":::
 
@@ -84,7 +84,7 @@ You can see there are a number of resources in the menu on the left that start t
 
 Everything that you do in the Custom Vision portal will be using the compute resources that you provisioned here in the Custom Vision resource in Azure. Custom Vision also has an SDK. Like the portal, the calls to the SDK would be using what was provisioned on Azure as part of this resource.
 
-If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=custom%20vision).
+If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](/learn/browse/?azure-portal=true&expanded=azure&terms=custom+vision).
 
 ### Custom Vision portal
 

@@ -4,16 +4,14 @@ that reliability interacts with _us_: alerts. It is easy to set up Azure
 Monitor and other tools to send you alerts based on various metrics and
 signals including the SLIs and SLOs we've seen before. Azure also has the
 ability to send alerts based on service issues through the
-[Azure Service health](https://azure.microsoft.com/features/service-health/)
+[Azure Service Health](https://azure.microsoft.com/features/service-health/)
 feature.
 
 With the power easily sending out alerts brings there comes a potential
 peril. And that's where the word _sustainably_ comes into the picture in
 the SRE definition we've seen before:
 
-> Site Reliability Engineering is an engineering discipline devoted to
-> helping organizations sustainably achieve the appropriate level of
-> reliability in their systems, services, and products.
+*Site Reliability Engineering is an engineering discipline devoted to helping organizations sustainably achieve the appropriate level of reliability in their systems, services, and products.*
 
 Alerts are designed to notify you when there is a problem with your
 systems. However, when alerts are improperly configured, this can undermine
@@ -58,30 +56,30 @@ requiring someone’s attention.
 If the event is something that the system can handle through automated
 processes, such as scaling resources within a preset limit, an alert is not
 necessary. The system should just handle it and write a line to a log. It
-shouldn't page you are 2am to tell you that there was a situation it
+shouldn't page you at 2 AM to tell you that there was a situation it
 successfully handled.
 
 ## Create actionable alerts
 
 In order for an alert to be actionable, it has to have:
 
--   Simplicity - you don't want to make an alert that requires the
+-   Simplicity - You don't want to make an alert that requires the
     recipient to have to puzzle over it before they know what to do. If the
-    alert is too complex, the poor person who has just been woken yo up in
+    alert is too complex, the poor person who has just been woken you up in
     the middle of the night is going to lose valuable time just trying to
     figure out what it means.
 
--   Scope - one of the first things a person receiving the message will
+-   Scope - One of the first things a person receiving the message will
     have to do in order to be able to triage it effectively is determine
-    the scope of the problem. Is the issue with a single server? one
-    service? a whole region? world wide? Make it easier for the recipient,
+    the scope of the problem. Is the issue with a single server? One
+    service? A whole region? World wide? To make it easier for the recipient,
     put this information in the alert.
 
--   Context - what does the person who is going to receive that alert need
+-   Context - What does the person who is going to receive that alert need
     to know to get started dealing with it? Let's dive further into this
     part.
 
-### Providing context in the alert
+### Provide context in the alert
 
 Let’s look at some elements that an actionable alert should always include
 so the recipients have the context they need:
@@ -90,20 +88,20 @@ so the recipients have the context they need:
     monitoring systems in use at any one time and a large number of
     interconnected systems. It can save someone a tremendous amount of time
     if the alert says "This alert for payroll system THX-1138 is coming
-    from Azure monitor subscription 'prod'".
+    from Azure Monitor subscription 'prod'".
 
 -   **What expectation was violated?** An alert that just describes the
     current state of affairs is not nearly as helpful as it could be.
-    Compare "The database server is running at 80% load." to "The database
+    Compare "the database server is running at 80% load" to "the database
     server has been running at 80% load for the last two hours when it
     should be running at 60% load or lower."
 
--   **Why is this an issue (for the customer)?** information about the
+-   **Why is this an issue (for the customer)?** Information about the
     effect or impact the situation has had or potentially will have on the
     customer gives us a way to determine importance and to appropriately
     gauge our reaction.
 
--   **What are the next steps to take?** if possible, the alert should
+-   **What are the next steps to take?** If possible, the alert should
     include what the person responding should do next, even if that is a
     pointer to a troubleshooting guide or some other documentation to find
     help in diagnosing and remediating this problem.

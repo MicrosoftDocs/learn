@@ -10,7 +10,7 @@ You can provision a Cosmos DB account interactively using the Azure portal, or y
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AwNK]
 
-If you prefer to use the Azure CLI or Azure PowerShell, you can run the following commands to create a Cosmos DB account. The parameters to these commands correspond to many of the options you can select using the Azure portal. The examples shown below create an account for the Core(SQL) API, with geo-redundancy between the EastUS and WestUS regions, and support for multi-region writes. For more information about these commands, see the [az cosmosdb create](https://docs.microsoft.com/cli/azure/cosmosdb?view=azure-cli-latest#az-cosmosdb-create) page for the Azure CLI, or the [New-AzCosmosDBAccount](https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azcosmosdbaccount) page for PowerShell.
+If you prefer to use the Azure CLI or Azure PowerShell, you can run the following commands to create a Cosmos DB account. The parameters to these commands correspond to many of the options you can select using the Azure portal. The examples shown below create an account for the Core(SQL) API, with geo-redundancy between the EastUS and WestUS regions, and support for multi-region writes. For more information about these commands, see the [az cosmosdb create](/cli/azure/cosmosdb#az-cosmosdb-create) page for the Azure CLI, or the [New-AzCosmosDBAccount](/powershell/module/az.cosmosdb/new-azcosmosdbaccount) page for PowerShell.
 
 ```azurecli
 ## Azure CLI
@@ -41,7 +41,7 @@ New-AzCosmosDBAccount `
 > Install-Module -Name Az.CosmosDB
 > ```
 
-The other deployment option is to use an Azure Resource Manager template. The template for Cosmos DB can be rather lengthy, because of the number of parameters. To make life easier, Microsoft has published a number of example templates for handling different configurations. You can download these templates from the Microsoft web site, at [Manage Azure Cosmos DB Core (SQL) API resources with Azure Resource Manager templates](https://docs.microsoft.com/azure/cosmos-db/manage-sql-with-resource-manager).
+The other deployment option is to use an Azure Resource Manager template. The template for Cosmos DB can be rather lengthy, because of the number of parameters. To make life easier, Microsoft has published a number of example templates for handling different configurations. You can download these templates from the Microsoft web site, at [Manage Azure Cosmos DB Core (SQL) API resources with Azure Resource Manager templates](/azure/cosmos-db/manage-sql-with-resource-manager).
 
 ## How to create a database and a container
 

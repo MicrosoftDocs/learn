@@ -20,7 +20,7 @@ To create the **staging** environment:
 
 1. From Azure Pipelines, select **Environments**.
 
-    ![Azure Pipelines, showing the Environments menu option](../media/7-pipelines-environments.png)
+    :::image type="content" source="../media/7-pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
 
 1. Select **New environment**.
 1. Under **Name**, enter *staging*.
@@ -28,7 +28,7 @@ To create the **staging** environment:
 1. Select **Create**.
 1. On the **staging** environment page, open the dropdown, and then select **Approvals and checks**.
 
-    ![Azure Pipelines, showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
+    :::image type="content" source="../../shared/media/pipeline-add-check-to-environment.png" alt-text="A screenshot of Azure Pipelines, showing the location of the approvals and checks menu item.":::
 
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups**, and then select your account.
@@ -46,7 +46,7 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
     This code adds the _Staging_ stage. The stage deploys to the **staging** environment, which includes a release approval.
 
     > [!TIP]
-    > You probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](https://docs.microsoft.com/learn/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
+    > You probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Next, commit the change and push it up to GitHub.
 
@@ -63,11 +63,11 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     When the build reaches _Staging_, you see that the pipeline waits for all checks to pass. In this case, there's one check - the manual release approval.
 
-    ![Azure Pipelines, showing the Staging stage, which requires manual approval](../media/7-pipeline-review.png)
+    :::image type="content" source="../media/7-pipeline-review.png" alt-text="A screenshot of Azure Pipelines showing the Staging stage, which requires manual approval.":::
 
     You can configure Azure DevOps to send you an email notification when the build requires approval. Here's an example:
 
-    ![Screenshot of a portion of a build approval email notification.](../media/6-email-notification.png)
+    :::image type="content" source="../media/6-email-notification.png" alt-text="A screenshot of a portion of a build approval email notification.":::
 
 1. Select **Review** > **Approve**.
 
@@ -79,13 +79,13 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     You see that the _Space Game_ website is deployed to App Service and is running.
 
-    ![A browser showing the Space Game website in the staging environment](../media/6-app-service-staging.png)
+    :::image type="content" source="../media/6-app-service-staging.png" alt-text="A screenshot of web browser showing the Space Game website in the Staging environment.":::
 
 1. As an optional step, in Azure Pipelines, select **Environments**. Next, select the **staging** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    ![Azure Pipelines, showing the deployment history](../media/6-environment-staging.png)
+    :::image type="content" source="../media/6-environment-staging.png" alt-text="A screenshot of Azure Pipelines showing the deployment history. The history shows one successful deployment.":::
 
 The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage while the others watch.
 

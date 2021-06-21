@@ -16,7 +16,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -31,14 +31,14 @@ The modules in this learning path are part of a progression that follows the Tai
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=run-non-functional-tests&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=run-non-functional-tests&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Nonfunctional tests*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -59,7 +59,7 @@ Assigning work in this way gives you a checklist to work from. It gives your tea
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -70,14 +70,14 @@ To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**. Then select **Boards** from the menu.
 
-    ![Azure DevOps, showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Automate performance tests** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi4-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi4-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -200,7 +200,7 @@ Here you create the App Service instances for the three stages that you'll deplo
 
     You see this page:
 
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="The default home page on Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -216,7 +216,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. For the variable group name, under **Properties**, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -237,7 +237,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipelines, showing the variable group](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
 ## Create a service connection
 

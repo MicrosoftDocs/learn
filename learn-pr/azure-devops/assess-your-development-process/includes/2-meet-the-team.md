@@ -9,15 +9,15 @@ The _Space Game_ website is a .NET Core app written in C# that's deployed to Lin
 <!-- TODO: Host this under our team account. -->
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
 
-![The Space Game website](../media/2-space-game-top.png)
+:::image type="content" source="../media/2-space-game-top.png" alt-text="A web browser showing the Space Game website. The page shows graphics from the game and a button to download the game.":::
 
 And here's what the leaderboard looks like:
 
-![The Space Game leaderboard](../media/2-space-game-leaderboard.png)
+:::image type="content" source="../media/2-space-game-leaderboard.png" alt-text="A web browser showing the the Space Game leaderboard. The leaderboard shows the top 10 players and their high scores.":::
 
 You can filter the leaderboard by mode or by game map. You can also select a player's name to see their profile and game achievements:
 
-![The Space Game website](../media/2-player-profile.png)
+:::image type="content" source="../media/2-player-profile.png" alt-text="The Space Game website showing the top player's profile information.":::
 
 > [!NOTE]
 > Although the game and the website aren't finished yet, you can [check out the website now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.

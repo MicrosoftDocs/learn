@@ -40,7 +40,7 @@ Standard SKU public IP addresses always use the static allocation method. They h
 
 Standard IPs are secure by default and closed to inbound traffic. You must explicitly allow inbound traffic by using a network security group.
 
-Standard IPs can be assigned to network interfaces, Standard public load balancers, application gateways, or VPN gateways. For more information about Standard load balancers, see [Azure Standard Load Balancer overview](https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-overview). Standard IPs are zone-redundant by default and optionally zonal (they can be created zonal and guaranteed in a specific availability zone).
+Standard IPs can be assigned to network interfaces, Standard public load balancers, application gateways, or VPN gateways. For more information about Standard load balancers, see [Azure Standard Load Balancer overview](/azure/load-balancer/load-balancer-standard-overview). Standard IPs are zone-redundant by default and optionally zonal (they can be created zonal and guaranteed in a specific availability zone).
 
 ### Public IP address prefix
 

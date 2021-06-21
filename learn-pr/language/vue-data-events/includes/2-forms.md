@@ -48,7 +48,7 @@ Typically, Boolean values are bound to checkboxes. Checkboxes allow the option t
 Occasionally, the toggle isn't a Boolean value. Instead, you might have two choices, such as *yes* and *no*. In this case, you can use `true-value` and `false-value` to indicate the associated value for the checkbox that's selected (true) or unselected (false).
 
 ```html
-<input type="checkbox" v-bind="benefitsSelected" true-value="yes" false-value="no"> Benefits selected: {{ benefitsSelected }}
+<input type="checkbox" v-model="benefitsSelected" true-value="yes" false-value="no"> Benefits selected: {{ benefitsSelected }}
 ```
 
 ## Drop-down lists
