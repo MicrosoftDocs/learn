@@ -6,7 +6,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 Next, create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
-1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/generate?azure-portal=true) for the template repository.
+1. Navigate to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-authentication/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-static-web-app-authn**
@@ -338,49 +338,31 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone-end
 
-After the app is created, a confirmation notification appears in Visual Studio Code.
-
-:::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config":::
-
-9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-static-web-app-authn**, and select **Open in Portal** to view app in the Azure portal.
-
-   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
-
 > [!NOTE]
-> Your repository is a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+> Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
-### Review the GitHub Action
+9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
-At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config":::
 
-You can check the status of your build and deploy action by navigating to the Actions page of your GitHub repository.
+   As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
 
-1. Select the link shown in the following image.
+   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment":::
 
-   :::image type="content" source="../media/portal-go-to-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
-1. Select **Azure Static Web Apps CI/CD**.
+    :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions":::
 
-1. Select the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**.
+    Once the deployment is complete, you can navigate directly to your website.
 
-1. Select the **Build and Deploy Job** link on the left.
+11. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
-From here, you can observe the progress of your app as it builds.
-
-### View website
-
-Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
-
-In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-authn** and select **Browse Site** to view app in your browser.
-
-:::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
-
-Your app should now display a list of products.
+    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 Congratulations! You've deployed your app to Azure Static Web Apps!
 
 > [!NOTE]
-> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
+> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Refresh the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. If you see the splash page, the app is still being deployed.
 
 ### Pull the changes from GitHub
 
