@@ -5,6 +5,6 @@ The Mixed Reality Toolkit is great choice for accelerating your mixed reality de
 
 And don't forget to watch [_Space Jam: A New Legacy_](https://spacejam.com?azure-portal=true)!
 
-![Logo for SPACE JAM: A NEW LEGACY.](../media/space-jam-a-new-legacy-end-card.png)
+![Logo for Space Jam: A New Legacy.](../media/space-jam-a-new-legacy-end-card.png)
 
 © 2021 Warner Bros. Ent. All Rights Reserved.

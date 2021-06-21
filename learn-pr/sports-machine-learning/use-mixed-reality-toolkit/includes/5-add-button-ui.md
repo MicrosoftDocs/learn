@@ -30,9 +30,9 @@ You only need to create the UI objects and place wherever you'd like the text to
 
     ![Screenshot of the rect transform properties for the player name object. The position z, width, and height properties are highlighted.](../media/rect-transform.png)
 
-1. Using the **Move Tool**, select the up and down arrows to drag the text onto the bottom middle of the cube.
+1. Using the **Move Tool**, select the up and down arrows to drag the text onto the bottom-middle of the cube.
 
-    ![Screenshot of the scene window. The player name object is at the bottom center of the player button object.](../media/bugs-bunny-middle.png)
+    ![Screenshot of the scene window. The player name object is at the bottom-middle of the player button object.](../media/bugs-bunny-middle.png)
 
 ## Create the player image object
 

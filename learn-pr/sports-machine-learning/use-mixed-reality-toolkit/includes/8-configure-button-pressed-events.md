@@ -11,7 +11,7 @@ For this unit, you'll focus on the `Button Pressed()` event.
 
 Right now, if you were to enter **Play** mode, the `StatsCard` object would block the `PlayerButton` object. Furthermore, if you were to press the `CloseCardButton` object, no particular action would occur.
 
-You can try this out for yourself by using the in-editor input simulation. To enter into **Play** mode, press the play button at the top of the editor. After you're in **Play** mode, use the following guidance to interact with the objects:
+You can try this out for yourself by using the in-editor input simulation. To enter into **Play** mode, press the play button at the top of the editor. After you're in **Play** mode, use the following guidance to interact with the objects.
 
 How to move around in the scene:
 
@@ -29,7 +29,7 @@ How to simulate hand input:
 
 By default, objects within the scene are set to `active`. Whether an object is active is determined by a `true` or `false` value. You can manage whether an object is active in the editor, and you can also do this with code.
 
-In the **Inspector** window, you can control whether an object is active at start by using the checkbox next to the object's name. Because the `StatsCard` object and it's children should not be active when the scene starts, uncheck the box so that the object is not visible.
+In the **Inspector** window, you can control whether an object is active at start by using the checkbox next to the object's name. Because the `StatsCard` object and its children should not be active when the scene starts, uncheck the box so that the object is not visible.
 
 ![Screenshot of the inspector window for the stats card object. The object is unchecked for visibility.](../media/stats-card-disabled.png)
 
@@ -61,7 +61,7 @@ Now that the `Button Pressed ()` event is added for the `PlayerButton` object, e
 
 Although MRTK provides you with scripts that have functions that can be used for events, you can also write and use your own scripts.
 
-When the `CloseCardButton` object is pressed, the `StatsCard` object and all it's children should be set to inactive. Since there is no existing function provided by MRTK for such logic, you can create your own script that uses the Unity `.SetActive()` function. This function is the underlying function that is being used to set objects active or inactive. The syntax is as follows:
+When the `CloseCardButton` object is pressed, the `StatsCard` object and all its children should be set to inactive. Because there is no existing function provided by MRTK for such logic, you can create your own script that uses the Unity `.SetActive()` function. This function is the underlying function that is being used to set objects active or inactive. The syntax is as follows:
 
 ```csharp
 public void SetActive(bool value);

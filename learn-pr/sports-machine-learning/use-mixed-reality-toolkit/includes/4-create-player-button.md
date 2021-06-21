@@ -22,7 +22,7 @@ Now you'll use scripts provided by MRTK to create a button from scratch that dis
 
     ![Screenshot of the PlayerContainer object highlighted.](../media/player-container.png)
 
-1. In the **Inspector** window, select the triple dots to the right of the **Transform** component. Then select **Reset**. This resets the position of the container to 0, 0, 0. (This position is considered to be the origin, or the middle of your head if you're wearing a headset). Because the button objects will be created as children of `PlayerContainer`, the child objects position will be relative to the `PlayerContainer` position.
+1. In the **Inspector** window, select the triple dots to the right of the **Transform** component. Then select **Reset**. This resets the position of the container to 0, 0, 0. (This position is considered to be the origin, or the middle of your head if you're wearing a headset.) Because the button objects will be created as children of `PlayerContainer`, the child objects position will be relative to the `PlayerContainer` position.
 
     ![Screenshot of the inspector window. The plus icon and Reset menu item are highlighted.](../media/reset-transform.png)
 
@@ -30,7 +30,7 @@ Now that you have an area for all of your players to go, you need to create butt
 
 ## Create the cube primitive
 
-The cube primitive will be a 3D object onto which you put a character's image, name, and PER score. Then you make that cube interactable.
+The cube primitive will be a 3D object onto which you put a character's image, name, and PER score. Then you make that cube interactive.
 
 To create the cube primitive, follow these steps:
 
