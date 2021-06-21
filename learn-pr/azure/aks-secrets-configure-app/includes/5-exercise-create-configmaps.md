@@ -8,7 +8,7 @@ The backend part of the application is deployed and now you need to deploy the f
 ## Create a ConfigMap
 
 > [!IMPORTANT]
-> If you didn't create the AKS cluster, refer back to [the first unit](./1-introduction.md) to create the required resources and export the necessary variables.
+> If you didn't create the AKS cluster, refer back to the first unit to create the required resources and export the necessary variables.
 
 1. Log in to your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
 

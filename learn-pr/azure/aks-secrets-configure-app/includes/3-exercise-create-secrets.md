@@ -8,7 +8,7 @@ As we previously mentioned in the ["Before We Start"](https://docs.microsoft.com
 ## Create the Secret
 
 > [!IMPORTANT]
-> If you didn't create the AKS cluster, refer back to [the first unit](./1-introduction.md) to create the required resources and export the necessary variables.
+> If you didn't create the AKS cluster, refer back to the first unit to create the required resources and export the necessary variables.
 
 According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application, the frontend and the backend. Only the backend will need to use a Secret as it has the MongoDB connection string as an environment variable.
 
