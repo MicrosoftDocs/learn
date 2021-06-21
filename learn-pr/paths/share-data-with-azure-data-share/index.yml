@@ -2,10 +2,10 @@
 uid: learn.wwl.sharing-data-with-azure-data-share
 metadata:
   title: Share data with Azure Data Share
-  description: Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
-  ms.date: 10/22/2020
+  description: Share data with Azure Data Share
+  ms.date: 06/16/2021
   author: wwlpublish
-  ms.author: kawaaije
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Share data with Azure Data Share

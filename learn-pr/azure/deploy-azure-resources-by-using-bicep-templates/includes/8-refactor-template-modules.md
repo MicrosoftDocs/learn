@@ -8,8 +8,6 @@ During the process, you'll:
 > * Add an output for the App Service app's host name, and emit it from the module and template deployments.
 > * Test the deployment to ensure that the template is valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Add a new module file
 
 1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *appService.bicep*. Save the file.

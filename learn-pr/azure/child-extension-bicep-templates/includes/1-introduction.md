@@ -26,8 +26,10 @@ By the end of this module, you'll be able to create Bicep templates that include
 
 ## Prerequisites
 
-- You should have familiarity with creating and deploying Bicep templates.
-- You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+You should be familiar with:
+
+- Creating and deploying basic Bicep templates.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 

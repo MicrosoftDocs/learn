@@ -10,7 +10,7 @@ Suppose you work as an Azure infrastructure administrator at a toy company that'
 
 You've been asked to evaluate whether infrastructure as code might be a valuable approach to resource provisioning at your company. You also need to decide which technology to use when you deploy your Azure infrastructure.
 
-## What will you be doing?
+## What will we be doing?
 
 In this module, you'll learn about the concept of infrastructure as code and its benefits. You'll understand the purpose of Bicep as an infrastructure as code language and understand how it works. You'll find answers to these questions:
 
@@ -25,5 +25,7 @@ After completing this module, you'll be able to determine whether infrastructure
 
 ## Prerequisites
 
-- You should be familiar with basic cloud computing concepts and terminology.
-- You should be familiar with different types of cloud resources.
+You should be familiar with:
+
+- Basic cloud computing concepts and terminology.
+- Different types of cloud resources.
