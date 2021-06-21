@@ -12,7 +12,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** pane appears.
 
@@ -38,7 +38,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Setting | Value |
     |---|---|
     | **Security** | |
-    | Enable secure transfer | *Check*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
+    | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | **Data Lake Storage Gen 2** | |
