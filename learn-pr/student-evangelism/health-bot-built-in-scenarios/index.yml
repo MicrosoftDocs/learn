@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.healthbot-built-in-scenarios
+uid: learn.health-bot-built-in-scenarios
 metadata:
   title: Introduction to built-in scenarios
   description: Identify the different built-in scenarios associated with Azure Health Bot and create a Web Chat channel.
   ms.date: 05/11/2021
-  author: leestott
+  author: Dwitrisha
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -16,8 +16,7 @@ abstract: |
   - Identify the different built-in scenarios associated with your Health Bot instance.
   - Recognize built-in scenario use cases.
   - Build a simple web page that allows users to communicate with your Health Bot instance through a Web Chat control.
-
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-built-in-scenarios.svg
 levels:
 - beginner
 roles:
@@ -26,13 +25,13 @@ products:
 - vs
 prerequisites: None
 units:
-- learn.healthbot-built-in-scenarios.1-introduction
-- learn.healthbot-built-in-scenarios.2-what-are-built-in-scenarios
-- learn.healthbot-built-in-scenarios.3-knowledge-check-1
-- learn.healthbot-built-in-scenarios.4-configure-built-in-scenario
-- learn.healthbot-built-in-scenarios.5-exercise-provision-webchat-channel
-- learn.healthbot-built-in-scenarios.6-knowledge-check-2
-- learn.healthbot-built-in-scenarios.7-summary
+- learn.health-bot-built-in-scenarios.1-introduction
+- learn.health-bot-built-in-scenarios.2-what-are-built-in-scenarios
+- learn.health-bot-built-in-scenarios.3-knowledge-check-1
+- learn.health-bot-built-in-scenarios.4-configure-built-in-scenario
+- learn.health-bot-built-in-scenarios.5-exercise-provision-webchat-channel
+- learn.health-bot-built-in-scenarios.6-knowledge-check-2
+- learn.health-bot-built-in-scenarios.7-summary
 
 badge:
-  uid: learn.healthbot-built-in-scenarios.badge
+  uid: learn.student-evangelism.health-bot-built-in-scenarios.badge

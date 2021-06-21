@@ -11,7 +11,7 @@ In this module, you'll learn how to:
 - Explain what scenarios are.
 - Identify the different built-in scenarios associated with Health Bot.
 - Recognize built-in scenario use cases.
-- Build a web page that allows users to communicate with your Health Bot instance through a Webchat channel.
+- Build a web page that allows users to communicate with your Health Bot instance through a web chat channel.
 
 ## Prerequisites
 
@@ -20,4 +20,4 @@ In this module, you'll learn how to:
 - Ability to use Health Bot
 - Ability to use the Azure portal
 
-*Produced in partnership with Dwitrisha Saha and Foteini Savvidou Microsoft Learn Student Ambassadors and the Azure Health Bot Product Group.*
+**Produced in partnership with Dwitrisha Saha and Foteini Savvidou Microsoft Learn Student Ambassadors and the Azure Health Bot Product Group.**
