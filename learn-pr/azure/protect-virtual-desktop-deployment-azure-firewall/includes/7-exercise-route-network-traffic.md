@@ -15,6 +15,8 @@ For the subnet used by the session host, configure the outbound default route to
 
 ### Create route table
 
+First, create a route table named "firewall-route".
+
 1. In [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Route tables**.
 1. Select **+ New**.
 1. Use the following values.
@@ -32,6 +34,8 @@ For the subnet used by the session host, configure the outbound default route to
 
 ### Associate route table to workload's subnet
 
+Now, associate "firewall-route" to the host pool's subnet.
+
 1. On firewall-route, under **Settings**, select **Subnets**.
 :::image type="content" source="../media/7-firewall-route-subnet.png" alt-text="Screenshot that shows the subnet option under settings for the firewall route.":::
 1. Select **Associate**.
@@ -45,6 +49,8 @@ For the subnet used by the session host, configure the outbound default route to
 1. Select **OK**.
 
 ### Add route to route table
+
+The last step is to add a route to Azure Firewall on the route table. After you complete this step, all network traffic on the host pool virtual network will route through Azure Firewall.
 
 1. Under **Settings**, select **Routes**.
 

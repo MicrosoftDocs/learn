@@ -74,3 +74,4 @@ TODO: describe the business impact
 
 - [Connect virtual networks with virtual network peering using PowerShell](/azure/virtual-network/tutorial-connect-virtual-networks-powershell)
 - [Virtual network peering overview](/azure/virtual-network/virtual-network-peering-overview)
+- [How to use Microsoft Edge command-line options to configure proxy settings](/deployedge/edge-learnmore-cmdline-options-proxy-settings)

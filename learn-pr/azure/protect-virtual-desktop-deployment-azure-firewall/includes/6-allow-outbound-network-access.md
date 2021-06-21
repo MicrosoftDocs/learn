@@ -18,51 +18,49 @@ After you complete those steps, all traffic will route to Azure Firewall. By def
 
 ## Create firewall rules
 
-To allow the appropriate network traffic for Azure Virtual Desktop, you'll need to create application and network firewall rules. You need to allow the host pool outbound network access to Azure Virtual Desktop. Depending on your organization needs, you might want to enable secure outbound Internet access for your end users.
+To allow the appropriate network traffic for Azure Virtual Desktop, you'll need to create application and network firewall rules. You need to allow the host pool outbound network access to Azure Virtual Desktop and supporting services. Depending on your organization needs, you might want to enable secure outbound Internet access for your end users.
 
 ### Configure application rules
 
-To allow the host pool outbound network access to Azure Virtual Desktop, create an application rule collection with the following rules.
+To allow the host pool outbound network access to Azure Virtual Desktop, create an application rule collection with the following two rules.
 
-- Allow Azure Virtual Desktop - Use FQDN tag "WindowsVirtualDesktop" to allow traffic from the host pool virtual network.
-- Allow storage and service bus accounts - Use target FQDNs to allow access from the host pool virtual network to the set of storage and service bus accounts used by the host pool. Use either wildcard FQDNs to enable the required access or, to be more restrictive, add the exact FQDNs.
+- Allow Azure Virtual Desktop: Use FQDN tag "WindowsVirtualDesktop" to allow traffic from the host pool virtual network.
+- Allow storage and service bus accounts: Use target FQDNs to allow access from the host pool virtual network to the set of storage and service bus accounts used by the host pool. Use either wildcard FQDNs to enable the required access or, to be more restrictive, add the exact FQDNs.
 
-    - Wildcard FQDNs: *xt.blob.core.windows.net, *eh.servicebus.windows.net
-    - Or use the following log analytics query to list the exact required FQDNs, and then allow them explicitly in your firewall application rules.
 
-       ```kusto
+    |Options |FQDNs to use|
+    |---------|---------|
+    |Wildcard FQDN    | *xt.blob.core.windows.net, *eh.servicebus.windows.net        |
+    |Exact FQDNs    |   Use the following log analytics query to list the exact required FQDNs used by the host pool.|
+
+     ```kusto
        AzureDiagnostics
        | where Category == "AzureFirewallApplicationRule"
        | search "Deny"
        | search "gsm*eh.servicebus.windows.net" or "gsm*xt.blob.core.windows.net"
        | parse msg_s with Protocol " request from " SourceIP ":" SourcePort:int " to " FQDN ":" *
        | project TimeGenerated,Protocol,FQDN
-       ```
+    ```
 
-Your rule collection will look like the following screenshot.
+
+When you add both rules, your rule collection will look similar to the following screenshot.
 
 :::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out.":::
 
-You'll walk through the specific steps to create the application rule collection in the next exercise unit. 
+You'll walk through the specific steps to create the application rule collection in the next exercise unit.
 
 ### Configure network rules
 
 To allow Azure Virtual Desktop to work, you need to add Azure Firewall rules for DNS and the Windows Activation service.
 Create a network rule collection and add the following rules:
 
-- Allow DNS – Allow traffic from your Active Directory Domain Server (AD DS) private IP address to * for TCP and UDP ports 53.
-- Allow KMS – Allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service TCP port 1688.
+- Allow DNS: Allow traffic from your Active Directory Domain Server (AD DS) private IP address to * for TCP and UDP ports 53.
+- Allow KMS: Allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service TCP port 1688.
 
 ### Allow secure outbound Internet access for your end users
 
-You might need to create more Azure Firewall application and network rules where you want to allow users outbound internet access.
+You might need to create more Azure Firewall application and network rules when you want to allow users outbound internet access.
 
-- When the list of allowed destinations is well-defined (e.g. Microsoft 365 access). 
-- Use Azure Firewall application and network rules to configure the required access.
-- To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Azure Virtual Desktop host pool with an explicit proxy configuration.
+If you have a well defined list of allowed destinations like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations.
 
-### Allow outbound network access from the host pool to the Internet:
-
-Depending on your organization needs, you may want to enable secure outbound Internet access for your end users. In cases where the list of allowed destinations is well-defined (for example, Microsoft 365 access) you can use Azure Firewall application and network rules to configure the required access. This routes end-user traffic directly to the Internet for best performance.
-
-If you want to filter outbound user Internet traffic using an existing on-premises secure web gateway, you can configure web browsers or other applications running on the Azure Virtual Desktop host pool with an explicit proxy configuration. For example, see How to use Microsoft Edge command-line options to configure proxy settings. These proxy settings only influence your end-user Internet access, allowing the Azure Virtual Desktop platform outbound traffic directly via Azure Firewall.
+To filter outbound user Internet traffic by using an existing on-premises secure web gateway, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration.
