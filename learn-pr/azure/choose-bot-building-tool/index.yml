@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.choose-bot-building-tool
+uid: learn.azure.choose-bot-building-tool
 metadata:
   moduleType: standard
   title: C
@@ -31,13 +31,13 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
   {{products}}
 units:
-- learn.extend-bot-functionality.1-introduction
-- learn.extend-bot-functionality.2-identify-product-options
-- learn.extend-bot-functionality.3-analyze-decision-criteria
-- learn.extend-bot-functionality.4-use-power-virtual-agents
-- learn.extend-bot-functionality.5-use-qnamaker
-- learn.extend-bot-functionality.5-use-bot-framework-composer-bot-service
-- learn.extend-bot-functionality.7-knowledge-check
-- learn.extend-bot-functionality.8-summary
+- learn.azure.choose-bot-building-tool.1-introduction
+- learn.azure.choose-bot-building-tool.2-identify-product-options
+- learn.azure.choose-bot-building-tooly.3-analyze-decision-criteria
+- learn.azure.choose-bot-building-tool.4-use-power-virtual-agents
+- learn.azure.choose-bot-building-tool.5-use-qnamaker
+- learn.azure.choose-bot-building-tool.5-use-bot-framework-composer-bot-service
+- learn.azure.choose-bot-building-tool.7-knowledge-check
+- learn.azure.choose-bot-building-tool.8-summary
 badge:
-  uid: learn.extend-bot-functionality.badge
+  uid: learn.azure.choose-bot-building-tool.badge
