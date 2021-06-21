@@ -1,8 +1,9 @@
-Here you can find a solution for each of the previous challenges.
+Let's look at possible solutions for each of the exercises.
+
 
 ## Write a FizzBuzz program
 
-The solution to this challenge could be something like this:
+A solution for the exercise to use the `switch` statement could be something like this:
 
 ```go
 package main
@@ -33,48 +34,59 @@ func main() {
 
 For the `FizzBuzz` case, you multiply 3 by 5 because the results are divisible by 3 and 5. You can also include an `AND` condition to check whether a number is divisible by 3 and 5.
 
-## Guess the square root
 
-The solution to this challenge could be something like this:
+## Find the primes
+
+A solution to the exercise to find the prime numbers less than 20 could be something like this:
 
 ```go
 package main
 
 import "fmt"
 
-func sqrt(num float64) float64 {
-    currguess := 1.0
-    prevguess := 0.0
-
-    for count := 1; count <= 10; count++ {
-        prevguess = currguess
-        currguess = prevguess - (prevguess*prevguess-num)/(2*prevguess)
-        if currguess == prevguess {
-            break
+func findprimes(number int) bool {	
+	for i := 2; i < number; i++ {
+        if number % i == 0 {
+			return false
         }
-        fmt.Println("A guess for square root is ", currguess)
     }
-    return currguess
+
+	if number > 1 {
+		return true
+	} else {
+	    return false
+	}	
 }
 
 func main() {
-    var num float64 = 25
-    fmt.Println("Square root is:", sqrt(num))
+    fmt.Println("Prime numbers less than 20:")
+	
+    for number := 1; number <= 20; number++ {
+        if findprimes(number) {
+            fmt.Printf("%v ", number)
+        }
+    }
 }
 ```
 
-This solution includes an `if` statement within the loop. This statement stops the logic if the previous and current numbers are the same. You might need more than 10 calculations for high numbers. So it would be interesting to change the code to use an infinite loop to run a calculation until the previous and current guess are the same. To avoid a decimal precision problem, you'll need to use round numbers.
+In the `main` function, we loop from 1 to 20, and call the `findprimes` function to check the current number. In the `findprimes` function, we start the `for` loop at 2, and repeat until the counter is more than the `number` value. If the `number` is evenly divisible by the counter, the `number` isn't prime. If we complete the loop without exiting, the number is either 1 or it's prime.
+
+Here's the output:
+
+```output
+Prime numbers less than 20:
+2 3 5 7 11 13 17 19 
+```
+
 
 ## Ask a number, panic if negative
 
-The solution to this challenge could be something like this:
+The solution to the exercise to try a `panic` call could be something like this:
 
 ```go
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main() {
     val := 0

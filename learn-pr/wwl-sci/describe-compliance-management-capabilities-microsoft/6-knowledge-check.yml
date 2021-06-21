@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/16/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,6 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
+  - content: "When browsing Microsoft compliance documentation in the Service Trust Portal, you have found several documents that are specific to your industry. What is the best way of ensuring you keep up to date with the latest updates?"
+    choices:
+    - content: "Save the documents to your My Library."
+      isCorrect: true
+      explanation: "Correct. Saving the document to the My Library section of the Service Trust Portal, will ensure you have the latest updates."
+    - content: "Print each document so you can easily refer to them."
+      isCorrect: false
+      explanation: "Incorrect. Printing the document does not ensure you have the latest updates."
+    - content: "Download each document."
+      isCorrect: false
+      explanation: "Incorrect.  Downloading the document does not ensure you have the latest updates."
   - content: "A new admin has joined the team and needs to be able to access the Microsoft 365 Compliance Center. Which of the following roles could the admin use to access the Compliance Center?"
     choices:
     - content: "Compliance Administrator role"
