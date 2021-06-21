@@ -28,7 +28,7 @@ Unity provides primitives that you can use in your projects as placeholders and 
 
     ![Screenshot of the scene window, which displays the player button object rotated. The background object is in front of the player button object.](../media/background-relative-to-playerbutton.png)
 
-    Be sure to change the **Scene Gizmo** back to it's prior position before completing the next step.
+    Be sure to change the **Scene Gizmo** back to its prior position before completing the next step.
 
 1. By default, the quad is a solid gray color. You can use a shader to give the `Background` object another color. In the **Project** window, enter **MRTK_Standard_Black** into the search bar. Below the search bar, next to **Search**, select **In Packages**. This enables you to search in the **Packages** folder, which is where the MRTK shaders are located.
 

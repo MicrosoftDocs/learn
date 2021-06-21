@@ -42,7 +42,7 @@ To create the cube primitive, follow these steps:
 
 1. Select the **Cube** in the **Hierarchy** window. You see the cube properties in the **Inspector** window. In **Inspector**, rename the cube **PlayerButton**.
 
-1. In **Inspector**, change the **PlayerButton** **Position** to **0, 0, 0.9**. The Z axis value controls the distance (or depth) of the object from your view. This setting positions the cube to a distance of 0.9 meters in front of you.
+1. In **Inspector**, change the **PlayerButton** **Position** to **0, 0, 0.9**. The Z-axis value controls the distance (or depth) of the object from your view. This setting positions the cube to a distance of 0.9 meters in front of you.
 
     ![Screenshot of the inspector window for the player button object. The position property is highlighted.](../media/playerbutton-position.png)
 

@@ -2,14 +2,14 @@
 uid: learn.sports-machine-learning.use-mixed-reality-toolkit
 metadata:
   title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
-  description: "Use C#, Visual Studio Code, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the Hololens. Inspired by Space Jam: A New Legacy, you create an experience for coaches and fans to learn more about the Toon Squad."
+  description: "Use C#, Visual Studio Code, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by Space Jam: A New Legacy, you create an experience for coaches and fans to learn more about the Toon Squad."
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
-summary: "Use C#, Visual Studio Code, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the Hololens. Inspired by Space Jam: A New Legacy, you create an experience for coaches and fans to learn more about the Toon Squad."
+summary: "Use C#, Visual Studio Code, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by Space Jam: A New Legacy, you create an experience for coaches and fans to learn more about the Toon Squad."
 abstract:  |
   In this module, you will:
   - Create a custom button with the Mixed Reality Toolkit
