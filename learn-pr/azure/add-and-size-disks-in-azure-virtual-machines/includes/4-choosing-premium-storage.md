@@ -8,11 +8,11 @@ Azure Disks are designed for 99.999% availability.
 
 There are four performance tiers for storage that you can choose from when creating your disks -- Ultra disks, Premium SSD Disks, Standard SSD, and Standard HDD storage. Depending on the VM size, you can mix and match these disk types.
 
-### Ultra disks
+### Ultra Disk
 
-Azure ultra disks deliver high throughput, high IOPS, and consistent low latency disk storage for Azure IaaS VMs. Ultra disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Ultra disks can only be used as data disks. We recommend using premium SSDs as OS disks.
+Azure Ultra Disks deliver high throughput, high IOPS, and consistent low latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Ultra disks can only be used as data disks. We recommend using premium SSDs as OS disks.
 
-### Premium SSD disks 
+### Premium SSD
 
 Premium SSD disks are backed by solid-state drives (SSDs), and deliver high-performance, low-latency disk support for VMs running I/O-intensive workloads. These drives tend to be more reliable because they have no moving parts. A read or write head doesn't have to move to the correct location on a disk to find the data requested. 
 
@@ -20,11 +20,11 @@ You can use Premium SSD disks with VM sizes that include an "s" in the series na
 
 ### Standard SSD
 
-Premium storage is limited to specific VM sizes - so the VM type you create will impact the storage capabilities: size, max capacity, and storage type. What if you have a low-end VM, but you need SSD storage for I/O performance? That's what Standard SSDs are for. Standard SSDs are between standard HDDs and premium SSDs from a performance and cost perspective.
+Premium storage is limited to specific VM sizes - so the VM type you create will impact the storage capabilities: size, max capacity, and storage type. What if you have a low-end VM, but you need SSD storage for I/O performance? That's what Standard SSDs are for. Standard SSDs are between Standard HDDs and Premium SSDs from a performance and cost perspective.
 
 You can use standard SSDs with any VM size, including VM sizes that don't support premium storage. Using standard SSDs is the only way to use SSDs with those VMs. This disk type is only available in specific regions and only with _managed disks_.
 
-### Standard HDD storage
+### Standard HDD
 
 Standard HDD disks are backed by traditional hard disk drives (HDDs). Standard HDD disks are billed at a lower rate than the Premium disks. Standard HDD disks can be used with any VM size.
 
@@ -48,7 +48,7 @@ With all the additional benefits, including the guaranteed performance character
 The following table provides a comparison of Ultra disk, Premium SSD, Standard SSD, and Standard HDD to help you decide what to use.
 
 
-|   | Ultra disk   | Premium SSD   | Standard SSD   | Standard HDD   |
+|   | Ultra Disk   | Premium SSD   | Standard SSD   | Standard HDD   |
 |---------|---------|---------|---------|---------|
 |Disk type   |SSD   |SSD   |SSD   |HDD   |
 |Scenario   |IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.   |Production and performance sensitive workloads   |Web servers, lightly used enterprise applications and dev/test   |Backup, non-critical, infrequent access   |
