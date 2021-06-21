@@ -4,11 +4,11 @@ Dissatisfied customers can cost you money. The first step toward meeting custome
 
 Engaging customers throughout your product lifecycle is a primary Agile principle. The key is to empower each team member to interact directly with customers on the feature sets they own.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-* Examine the tensions between speed and risk.
-* Learn different techniques for gathering customer feedback.
-* Learn how automation can help with troubleshooting complex problems.
+- Explain the tensions between speed and risk.
+- Choose the appropriate techniques for gathering customer feedback.
+- Apply automation to help with troubleshooting complex problems.
 
 ## Prerequisites
 

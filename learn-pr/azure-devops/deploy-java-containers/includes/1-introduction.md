@@ -6,9 +6,9 @@ While this module focuses on the core tasks that are required to build and deplo
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn how Azure and Azure DevOps support Java applications.
+- Explain how Azure and Azure DevOps support Java applications.
 - Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure.
 - Trigger the pipeline and see your application be built and deployed to Azure.
 

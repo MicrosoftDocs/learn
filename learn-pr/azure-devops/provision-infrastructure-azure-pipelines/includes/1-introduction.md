@@ -10,9 +10,9 @@ In this module, you continue your journey with the Tailspin team as they add aut
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll be able to:
 
-- Learn what we mean by _infrastructure as code_ and why it's a best practice in DevOps.
+- Explain what we mean by _infrastructure as code_ and why it's a best practice in DevOps.
 - Apply a Terraform plan that provisions everything you need to run your web application.
 - Add a job to your Azure Pipelines configuration that provisions your infrastructure when the pipeline runs.
 
@@ -28,12 +28,12 @@ To follow the progression from the beginning, be sure to first complete these le
 
 If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.
 

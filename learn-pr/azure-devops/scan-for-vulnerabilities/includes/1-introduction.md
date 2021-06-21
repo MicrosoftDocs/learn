@@ -6,11 +6,11 @@ Are you certain that the code you write is secure? Have you ever inadvertently a
 
 In this module, you learn about tools and procedures that you can use to give your team and your stakeholders peace of mind when it comes to understanding the possible vulnerabilities in your codebase. You also examine the codebase to find *code smells*, or maintainability issues, that will likely add time to the maintenance of your code. This maintenance time is called *technical debt*.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-* Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells.
-* Use SonarCloud to scan your code locally and as part of your build pipeline.
-* Limit your scanning to pull requests only by using conditions.
+- Explain which resources are available to scan your code for security vulnerabilities, bugs, and code smells.
+- Use SonarCloud to scan your code locally and as part of your build pipeline.
+- Limit your scanning to pull requests only by using conditions.
 
 ## Prerequisites
 
@@ -22,11 +22,12 @@ We also recommend you start at the beginning of this learning path, [Build appli
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 For this module, you also need:
 

@@ -8,11 +8,11 @@ While this module focuses on the core tasks that are required to build and deplo
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll be able to:
 
 - Create Azure resources to support a Docker container web application.
 - Update a basic release pipeline to build, publish, and deploy a Docker container.
-- Monitor the build, release, and deployment of the project.
+- Monitor the build, release, and deployment of your project.
 
 ## Prerequisites
 

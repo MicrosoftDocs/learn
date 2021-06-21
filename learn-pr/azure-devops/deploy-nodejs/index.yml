@@ -11,8 +11,8 @@ metadata:
 title: Automate Node.js deployments with Azure Pipelines
 summary: Implement CI/CD pipeline for Node.js applications.
 abstract: |
-  In this module, you will:
-  - Learn how Azure and Azure DevOps support Node.js applications.
+  After completing this module, you'll be able to:
+  - Explain how Azure and Azure DevOps support Node.js applications.
   - Create a project in Azure Pipelines that builds and deploys a basic Node.js application to Azure App Service.
   - Trigger the pipeline and see your application be built and deployed to Azure.
 prerequisites: |

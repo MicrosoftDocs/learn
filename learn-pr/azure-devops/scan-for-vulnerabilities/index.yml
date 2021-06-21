@@ -13,14 +13,14 @@ metadata:
 title: Scan code for vulnerabilities in Azure Pipelines
 summary: Scan for potential vulnerabilities in your source code during the build process.
 abstract: |
-  In this module, you will:
-  - Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells.
+  After completing this module, you'll be able to:
+  - Explain which resources are available to scan your code for security vulnerabilities, bugs, and code smells.
   - Use SonarCloud to scan your code locally and as part of your build pipeline.
   - Limit your scanning to pull requests only by using conditions.
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 3.1
+  - .NET 5.0 SDK
   - Git
   - A GitHub account
   - An account on SonarCloud

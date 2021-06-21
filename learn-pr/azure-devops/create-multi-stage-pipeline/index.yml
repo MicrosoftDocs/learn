@@ -12,15 +12,15 @@ metadata:
 title: Create a multistage pipeline by using Azure Pipelines
 summary: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
 abstract: |
-  In this module, you will:
+  After completing this module, you'll be able to:
   - Identify the *stages*, or major divisions of the pipeline, that you need to implement a multistage pipeline.
-  - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
+  - Explain when to use conditions, triggers, and approvals to promote changes from one stage to the next.
   - Promote a build through these stages: _Dev_, _Test_, and _Staging_.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 3.1
+  - .NET 5.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg

@@ -13,10 +13,10 @@ metadata:
 title: Recommend and design system feedback mechanisms
 summary: Learn how surveys and application analytics create a feedback loop that helps you understand the voice of the customer.
 abstract: |
-  In this module, you will:
-  - Examine the tensions between speed and risk.
-  - Learn different techniques for gathering customer feedback.
-  - Learn how automation can help with troubleshooting complex problems.
+  After completing this module, you'll be able to:
+  - Explain the tensions between speed and risk.
+  - Choose the appropriate techniques for gathering customer feedback.
+  - Apply automation to help with troubleshooting complex problems.
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/azure-devops/recommend-system-feedback-mechanisms.svg
 ratingEnabled: true

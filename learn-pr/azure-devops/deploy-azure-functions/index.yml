@@ -11,10 +11,10 @@ metadata:
 title: Automate Azure Functions deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Azure Functions.
 abstract: |
-  In this module, you will:
-  - Understand the benefits of Azure Functions and when to use them.
+  After completing this module, you'll be able to:
+  - Explain the benefits of Azure Functions and when to use them.
   - Extend a basic release pipeline to also deploy an Azure Function app.
-  - Monitor the build, release, and deployment of the project.
+  - Monitor the build, release, and deployment of your project.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization

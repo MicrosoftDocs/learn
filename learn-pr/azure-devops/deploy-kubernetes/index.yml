@@ -11,11 +11,11 @@ metadata:
 title: Automate multi-container Kubernetes deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for multiple containers to Kubernetes.
 abstract: |
-  In this module, you'll:
-  - Understand the benefits of Kubernetes and when to use it.
+  After completing this module, you'll be able to:
+  - Explain the benefits of Kubernetes and when to use it.
   - Create Azure resources to support a Kubernetes cluster.
   - Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster.
-  - Monitor the build, release, and deployment of the project.
+  - Monitor the build, release, and deployment of your project.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization

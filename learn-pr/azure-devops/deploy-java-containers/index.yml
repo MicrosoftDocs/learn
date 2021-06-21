@@ -11,8 +11,8 @@ metadata:
 title: Automate Java container deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Java containers.
 abstract: |
-  In this module, you will:
-  - Learn how Azure and Azure DevOps support Java applications.
+  After completing this module, you'll be able to:
+  - Explain how Azure and Azure DevOps support Java applications.
   - Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure.
   - Trigger the pipeline and see your application be built and deployed to Azure.
 prerequisites: |

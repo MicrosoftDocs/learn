@@ -6,10 +6,10 @@ In this module, you'll continue your journey with the Tailspin team as they set 
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll be able to:
 
-- Learn what continuous delivery is, why it's important, and what tools you can use.
-- Create a basic release pipeline that deploys a web application to Azure App Service.
+- Define what continuous delivery is, why it's important, and what tools you can use.
+- Create a basic release pipeline in Azure Pipelines that deploys a web application to Azure App Service.
 - Examine pipeline analytics to understand the health and history of your releases.
 
 ## Prerequisites
@@ -23,12 +23,12 @@ To follow the progression from the beginning, be sure to first complete these le
 
 If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true).
-* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-* A [GitHub](https://github.com/join?azure-portal=true) account.
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true).
-* [Git](https://git-scm.com/downloads?azure-portal=true).
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps. But here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.
 
