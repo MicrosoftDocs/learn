@@ -2,7 +2,7 @@
 uid: learn.sports-machine-learning.use-mixed-reality-toolkit.create-player-stats-card
 metadata:
   title: Create player stats card
-  description: Create the player stats card that will display when a player button is pressed.
+  description: Create the player stats card that will appear when a player button is pressed.
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh

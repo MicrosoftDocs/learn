@@ -2,7 +2,7 @@
 uid: learn.sports-machine-learning.use-mixed-reality-toolkit.add-stats-card-ui
 metadata:
   title: Add UI to the player stats card
-  description: Add the UI that will be displayed when a player is pressed.
+  description: Add the UI that will appear when a player is pressed.
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh

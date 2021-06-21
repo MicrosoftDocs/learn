@@ -2,7 +2,7 @@
 uid: learn.sports-machine-learning.use-mixed-reality-toolkit.set-up-project
 metadata:
   title: Set up the Unity project
-  description: Set up the Unity project for Windows Mixed Reality development. Also add MRTK to the project scene.
+  description: Set up the Unity project for Windows Mixed Reality development. Also add the Mixed Reality Toolkit to the project scene.
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh
