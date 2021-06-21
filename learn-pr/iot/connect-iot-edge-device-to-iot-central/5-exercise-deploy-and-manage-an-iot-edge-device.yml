@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-deploy-and-manage-an-iot-edge-device
-title: Exercise - Deploy a IoT Edge device and manage it from IoT Central
+title: Exercise - Deploy an IoT Edge device and manage it from IoT Central
 metadata:
-  title: Exercise - Deploy a IoT Edge device and manage it from IoT Central
-  description: Exercise - Deploy a IoT Edge device and manage it from IoT Central
+  title: Exercise - Deploy an IoT Edge device and manage it from IoT Central
+  description: Exercise - Deploy an IoT Edge device and manage it from IoT Central
   ms.date: 01/15/2021
   author: dominicbetts
   ms.author: dobett
