@@ -98,7 +98,7 @@ Now you can test your deployed service from a client application - in this case,
     > [!NOTE]
     > Don't worry too much about the details of the code. It just submits details of a car and uses the **predict-auto-price** service you created to get a predicted price.
 
-9. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
-10. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
+9. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the REST endpoint for your service. Then switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
+10. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the Primary Key for your service. Then switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
 11. Save the notebook. Then use the **&#9655;** button next to the cell to run the code.
 12. Verify that predicted price is returned.

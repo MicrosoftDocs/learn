@@ -14,7 +14,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select Cloud Shell. When prompted, select the **Bash** experience.
 
-    ![Azure portal page showing selecting the Cloud Shell icon from the menu.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. Run the following `az group delete` command. This command deletes **tailspin-space-game-rg**, which is the resource group that you used in this module.
 
@@ -45,7 +45,7 @@ To complete the work item:
 1. In Azure DevOps, navigate to **Boards**. From the menu, select **Boards**.
 1. Move the **Connect the app to a database** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column.](../media/8-azure-boards-wi2-done.png)
+    :::image type="content" source="../media/8-azure-boards-wi2-done.png" alt-text="Azure Boards showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

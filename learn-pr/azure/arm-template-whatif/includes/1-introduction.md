@@ -8,8 +8,7 @@ Suppose you help to manage the Azure environment at a toy company. One of your c
 
 In this module, you gain an understanding of the what-if operation for Azure Resource Manager. You also learn about the modes that you can use for your deployments to Azure.
 
-> [!NOTE]
-> Bicep is a new language for defining your Azure resources. It has a simpler authoring experience than JSON, along with other features that help improve the quality of your infrastructure as code. We recommend that anyone new to infrastructure as code on Azure use Bicep instead of JSON. To learn about Bicep, see [Deploy and manage resources in Azure by using Bicep](/learn/paths/bicep-deploy/).
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
 ## What is the main goal?
 
@@ -17,7 +16,10 @@ By the end of this module, you'll be able to preview the changes that will happe
 
 ## Prerequisites
 
-You should have familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+You should be familiar with:
+
+- Creating and deploying basic ARM templates, using either Bicep or JSON.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 

@@ -98,19 +98,6 @@
                 "dest": "modules"
             },
             {
-                "src": "bicep",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
-            },
-            {
                 "src": "azure-networking",
                 "files": [
                     "**/*.yml",
@@ -293,7 +280,7 @@
                 "dest": "modules"
             },
             {
-                "src": "student-evangelism",
+                "src": "sports-machine-learning",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -302,6 +289,21 @@
                     "**/includes/**",
                     "**/design/**",
                     "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "student-evangelism",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**",
+                    "predict-basketball-player-efficiency-ratings/**",
+                    "optimize-basketball-player-rest-breaks/**"
                 ],
                 "dest": "modules"
             },
@@ -489,19 +491,6 @@
                     "**/design/**",
                     "**/resources/**"
                 ]
-            },
-            {
-                "src": "sports-machine-learning",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
             }
         ],
         "resource": [{
@@ -668,25 +657,6 @@
                     "ko-kr",
                     "zh-cn",
                     "zh-tw"
-                ],
-                "bicep/**/*.yml": [
-                    "de-de",
-                    "es-es",
-                    "fr-fr",
-                    "it-it",
-                    "ru-ru",
-                    "pt-br",
-                    "ja-jp",
-                    "ko-kr",
-                    "zh-cn",
-                    "zh-tw",
-                    "cs-cz",
-                    "hu-hu",
-                    "nl-nl",
-                    "pl-pl",
-                    "pt-pt",
-                    "tr-tr",
-                    "sv-se"
                 ],
                 "cmu-cloud-admin/**/*.yml": [
                     "de-de",

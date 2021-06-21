@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Azure Security Center?"
+  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Azure Defender?"
     choices:
     - content: "Fusion"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
       explanation: "Machine learning behavior analytics detects anomalous SSH or RDP sign-in activity."
     - content: "Microsoft Security"
       isCorrect: true
-      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Azure Security Center."
+      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Azure Defender."
   - content: "Which one of the following template rules are precreated in Azure Sentinel Analytics?"
     choices:
     - content: "Scheduled template rules"
