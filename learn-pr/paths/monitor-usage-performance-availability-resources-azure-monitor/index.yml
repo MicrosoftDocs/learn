@@ -9,7 +9,7 @@ metadata:
   ms.author: nedelgad
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor resources with Azure Monitor
+title: Monitor the usage, performance, and availability of resources with Azure Monitor
 summary:  |
   Learn how to monitor the usage, performance, and availability of resources using Azure Monitor
 prerequisites: |
