@@ -30,9 +30,9 @@ Topics inform the bot conversation in Power Virtual Agents. Each topic contains 
 
 ### QnA Maker
 
-*QnA Maker* is a Azure-based Natural Language Processing (NLP) service that allows you to create a natural conversational layer from existing data based on question and answer pairs. It is used to find the most appropriate answer for any input from your custom knowledge base (KB) of information.
+*QnA Maker* is a Azure-based Natural Language Processing service that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
-The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or web page. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs. 
+The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or web page. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
 >[!NOTE]
 > The final markdown format supports rich presentation including images and links.
@@ -41,7 +41,10 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 ### Bot Framework Composer and Azure Bot Service
 
-*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with integrated dialog, language-understanding models, knowledge bases and language generation functionality. All of these features can be implemented from a single design canvas. Resulting experiences can then be tested within Composer and provisioned into Azure along with any dependent resources. Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component which you can customize and extend to suit your needs.
+*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with integrated dialog, language-understanding models, knowledge bases and language generation functionality. You can implement all these features from a single design canvas. Resulting experiences can then be tested within Composer and provisioned into Azure along with any dependent resources.
+
+> [!NOTE]
+> Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component which you can customize and extend to suit your needs.
 
 Composer offers a visual design experience. This gives you greater design efficiency. This can make it easier for you to model more sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
 
