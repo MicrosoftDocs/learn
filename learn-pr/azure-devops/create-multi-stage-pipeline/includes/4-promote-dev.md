@@ -44,7 +44,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
     * The deployment step uses the `WebAppNameDev` variable to deploy to the App Service instance that's associated with the _Dev_ environment.
 
     > [!NOTE]
-    > In practice, you might deploy from some other branch, such as `master`. You can include logic that allows changes to be promoted to the _Dev_ stage from multiple branches, such as `release` and `master`.
+    > In practice, you might deploy from some other branch, such as `main`. You can include logic that allows changes to be promoted to the _Dev_ stage from multiple branches, such as `release` and `main`.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Commit the change, and push it up to GitHub.
 

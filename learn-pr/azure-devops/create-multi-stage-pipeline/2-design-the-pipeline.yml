@@ -22,7 +22,7 @@ quiz:
       explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, finishes successfully."
     - content: "A CI trigger or PR trigger"
       isCorrect: true
-      explanation: "Use CI and PR triggers to control which branches participate in the overall process. You can use them to run your pipeline only during a pull request or after a pull request is merged into a certain branch, such as `master` or a release branch."
+      explanation: "Use CI and PR triggers to control which branches participate in the overall process. You can use them to run your pipeline only during a pull request or after a pull request is merged into a certain branch, such as `main` or a release branch."
     - content: "A scheduled trigger"
       isCorrect: false
       explanation: "Although you can use a scheduled trigger to run tests regularly, is there a better way to run tests only when they're needed?"

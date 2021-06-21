@@ -63,7 +63,7 @@ Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to 
 
 **Andy:** You bring up an interesting point. We build the app each time we push a change to GitHub. Does that mean each build is promoted to the _Dev_ stage after it finishes?
 
-**Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either master or some other release branch. I'll update the drawing to show that requirement.
+**Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either main or some other release branch. I'll update the drawing to show that requirement.
 
 :::image type="content" source="../media/2-add-dev-stage-trigger.png" alt-text="An image of a whiteboard showing the Build and Dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.":::
 
@@ -127,7 +127,7 @@ The first condition in the `and()` function checks whether the previous task suc
 In YAML, you use the pipe (`|`) syntax to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
 
 > [!NOTE]
-> In this module, we use the _release_ branch as an example. You can combine conditions to define the behavior that you need. For example, you could build a condition that runs the stage only when the build is triggered by a pull request against the _master_ branch.
+> In this module, we use the _release_ branch as an example. You can combine conditions to define the behavior that you need. For example, you could build a condition that runs the stage only when the build is triggered by a pull request against the _main_ branch.
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 

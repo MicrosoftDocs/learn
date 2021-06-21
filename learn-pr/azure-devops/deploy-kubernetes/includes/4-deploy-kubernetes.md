@@ -3,7 +3,7 @@ Your project came with a release pipeline that builds the web project in the sol
 In this part, you'll:
 
 > [!div class="checklist"]
-> * Update the pipeline to support CI/CD on a commit to the master branch.
+> * Update the pipeline to support CI/CD on a commit to the main branch.
 > * Define some pipeline variables to make the build pipeline easier to maintain.
 > * Add a task to build and publish the leaderboard container to your container registry.
 > * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
@@ -19,9 +19,9 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 1. Select the pipeline.
 1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
-    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `master` branch.
+    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `main` branch.
 
-1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the master branch.
+1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the main branch.
 
     [!code-yml[](code/4-1-azure-pipelines.yml)]
 

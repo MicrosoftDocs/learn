@@ -1,4 +1,4 @@
-Great work! In this module, you built a CI/CD pipeline in Azure Pipelines that deploys a Java web app  as a Docker container to Azure. The pipeline automatically runs whenever you merge a change to the `master` branch of your Git repository on GitHub. The pipeline builds and pushes the container image, securely deploys to cloud assets, and includes basic management of a MySQL database.
+Great work! In this module, you built a CI/CD pipeline in Azure Pipelines that deploys a Java web app  as a Docker container to Azure. The pipeline automatically runs whenever you merge a change to the `main` branch of your Git repository on GitHub. The pipeline builds and pushes the container image, securely deploys to cloud assets, and includes basic management of a MySQL database.
 
 While this module specifically focused on a Java container app deployed to Azure App Service, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support your specific requirements.
 
