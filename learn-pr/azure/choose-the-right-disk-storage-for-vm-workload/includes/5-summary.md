@@ -1,6 +1,6 @@
 In this unit, you've seen how managed disks provide storage that's easy to set up, scalable, and highly available without incurring much administrative effort. You've also learned about these disk types and can choose the best type for a set of virtual machine requirements:
 
-- Ultra SSDs
+- Ultra Disks
 - Premium SSDs
 - Standard SSDs
 - Standard HDDs
