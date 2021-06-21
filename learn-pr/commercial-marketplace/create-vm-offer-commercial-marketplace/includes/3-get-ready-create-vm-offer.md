@@ -47,9 +47,9 @@ When you create your VM offer in Partner Center and configure its plans, you’l
 
 - **Per core**: You provide one hourly per core price, which is used to calculate pricing for all available core sizes automatically.
 
-- **Per core size**: You provide pricing for each of the available Azure VM core sizes. This entry option gives you more control to specify your software’s pricing structure.
+- **Per core size**: You provide pricing for each of the available core sizes for Azure VMs. This entry option gives you more control to specify your software’s pricing structure.
 
-- **Per market and core size**: You provide pricing for each of Azure VM core size, with the added flexibility to customize prices for each geographic market.
+- **Per market and core size**: You provide pricing for each available core size, with the added flexibility to customize prices for each geographic market.
 
 >[!NOTE]
 >If you choose either the per core or per core size price entry option, Microsoft will automatically convert your software pricing into local currencies for global customers by using the current exchange rate.
@@ -64,7 +64,7 @@ Adding a free trial to your offer is as easy as checking a box when configuring 
 
 #### Selecting plan visibility
 
-When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is public or private. Public plans are made available to all Azure Marketplace customers.Private plans will only be made available to specific customers that you choose. Private plans can be used to negotiate custom terms and pricing with specific customers.
+When you set up your VM offer plans in Partner Center, you’ll be able to dictate whether each plan is public or private. Public plans are made available to all Azure Marketplace customers. Private plans will only be made available to specific customers that you choose. Private plans can be used to negotiate custom terms and pricing with specific customers.
 
 :::image type="content" source="../media/6-vm-plan-visibility.png" alt-text="Screenshot of the plan visibility toggle in Partner Center. This toggle appears in the 'pricing and availability' step of the publishing process.":::
 
