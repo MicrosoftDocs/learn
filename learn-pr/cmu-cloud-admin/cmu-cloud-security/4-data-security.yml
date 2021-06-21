@@ -5,8 +5,8 @@ metadata:
   title: Data security in the cloud
   description: Data security in the cloud
   ms.date: 01/15/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 14
