@@ -43,4 +43,3 @@ modules:
 - learn.language.go-write-test-program
 trophy:
   uid: learn.languages.go-first-steps.trophy
-hidden: true
