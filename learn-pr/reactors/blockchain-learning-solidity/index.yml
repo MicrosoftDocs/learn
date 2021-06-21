@@ -3,9 +3,9 @@ uid: learn.reactors.blockchain-learning-solidity
 metadata:
   title: Learn how to use Solidity
   description: Discover how Solidity can help you program smart contracts for the Ethereum blockchain platform.
-  ms.date: 10/05/2020
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/16/2021
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn how to use Solidity
@@ -40,4 +40,3 @@ units:
 - learn.reactors.blockchain-learning-solidity.8-summary
 badge:
   uid: learn.reactors.blockchain-learning-solidity.badge
-hidden: true

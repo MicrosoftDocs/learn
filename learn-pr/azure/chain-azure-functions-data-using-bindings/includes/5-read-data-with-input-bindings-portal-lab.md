@@ -66,11 +66,6 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 
 1. Enter the following values for each setting.
 
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - Container id = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id); NOT curly brackets (braces) or any combination of curly brackets and slashes
-
     | Setting | Value | Description |
     |---|---|---|
     | Database id | Select **Create new**, and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
@@ -219,11 +214,6 @@ To read data from the database, you need to define an input binding. As you'll s
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
 1. Enter the following values for each setting in this pane. To learn more about the purpose of each setting, you can select the information icon to its right.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - Collection Name = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
