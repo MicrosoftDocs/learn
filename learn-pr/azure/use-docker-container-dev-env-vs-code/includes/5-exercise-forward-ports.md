@@ -13,7 +13,7 @@ Port forwarding allows you to access a resource inside your container by forward
 
 1. Select the globe icon next to **5000 -> 127.0.0.1:5000** to open your app in a browser. 
 
-:::image type="content" source="../media/port-globe.png" alt-text="Screenshot of the forwarded ports open in browser button with globe icon view in Visual Studio Code.":::
+   :::image type="content" source="../media/port-globe.png" alt-text="Screenshot of the forwarded ports open in browser button with globe icon view in Visual Studio Code.":::
 
 1. Notice that your app opens at http://127.0.0.1:5000/.
 
