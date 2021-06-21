@@ -11,6 +11,8 @@ During the process, you'll:
 > * Add an Azure Policy definition and assignment.
 > * Deploy the template and verify the result.
 
+This exercise requires that you have permission to deploy subscription-scoped resources. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip the deployment steps in this exercise.
+
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a subscription-scoped template
@@ -135,6 +137,9 @@ Also notice that you're explicitly specifying a name and location for the deploy
 > Your deployment name includes today's date. This makes it less likely that you'll accidentally use the same name as another deployment.
 
 The deployment might take a minute or two to finish, and then you'll see a successful deployment.
+
+> [!NOTE]
+> If you receive an error message with the code **AuthorizationFailed**, you probably don't have permission to deploy subscription-scoped resources. Ask your Azure administrator to grant you permissions. Alternatively, if you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
 ## Verify the deployment
 
