@@ -12,9 +12,9 @@ metadata:
 title: Monitor resources with Azure Monitor
 summary:  |
   Learn how to monitor the usage, availability, and performance of resources using Azure Monitor
-prerequisites:
-- Basic knowledge of Azure services
-- Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
+prerequisites: |
+  - Basic knowledge of Azure services
+  - Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
