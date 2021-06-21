@@ -82,7 +82,7 @@ Now that you understand how different performance indicators define the overall 
 
 |              | Credit-based bursting                               | On-demand bursting                                  | Changing performance tier                                              |
 | ------------ | --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------- |
-| Scenario     | Ideal for short-term scaling (30 minutes or less)   | Ideal for short-term scaling                        | Ideal if your workload would otherwise continually be running in burst |
-| Cost         | Free                                                | Cost is variable,                                   | The cost of each performance ties is fixed                             |
-| Availability | Only available for premium SSDs 512 GiV and smaller and Standard SSDs 1TiB disks and smaller| Only available for premium SSDs larger than 512 GiB | Available to all premium SSD sizes                                     |
-| Enablement   | Enabled by default on eligible disks                | Must be enabled by user                             | User must manually change their ties                                   |
+| Scenario     | Ideal for short-term scaling (30 minutes or less)   | Ideal for short-term scaling (Not time restricted)  | Ideal if your workload would otherwise continually be running in burst |
+| Cost         | Free                                                | Cost is variable, see the [Billing](https://docs.microsoft.com/en-us/azure/virtual-machines/disk-bursting#billing) section for details                                                                                      | The cost of each performance tier is fixed, see [Managed Disks pricing](https://azure.microsoft.com/en-us/pricing/details/managed-disks/) for details. |
+| Availability | Only available for premium and standard SSDs 512 GiB and smaller | Only available for premium SSDs larger than 512 GiB | Available to all premium SSD sizes     |
+| Enablement   | Enabled by default on eligible disks                | Must be enabled by user                             | User must manually change their tier                                  |
