@@ -2,7 +2,7 @@ Each organization's cloud transformation is unique to the requirements and needs
 
 Organizations are using the Azure VMware Solution in many different ways to extend the value of their existing investments while getting started with the cloud. With the Azure VMware Solution, you can run your VMware environment on Azure dedicated infrastructure.
 
-Let's discuss the scenarios best suited for Azure VMware Solutions. The following table describes business needs and considerations where Azure VMware Solution may be a good choice for an organization.
+Let's discuss the scenarios best suited for Azure VMware Solution. The following table describes business needs and considerations where Azure VMware Solution may be a good choice for an organization.
 
 
 |Business need  |  Description  |
