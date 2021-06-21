@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The security admin wants to increase the priority of a network security group, what five sources of information will the admin need to provide?"
+  - content: "The security admin has created an Azure Network Security Group (NSG) to filter network traffic to a virtual machine.  The admin wants to allow inbound traffic using the Remote Desktop Protocol (RDP), but the default NSG rules are currently blocking all inbound traffic that is not from another virtual network or an Azure load balancer.  What does the security admin have to do to allow inbound traffic using RDP?"
     choices:
-    - content: "source, source port, destination, destination port, and network layer."
+    - content: "Delete the default rule."
       isCorrect: false
-      explanation: "That's incorrect. NSG security rules do not use the network layer as one of the five evaluation points."
-    - content: "source, source port, destination, destination port, and protocol."
+      explanation: "That's incorrect. The default rules cannot be deleted."
+    - content: "Create a new network security rule that allows RDP traffic and that has a higher priority than the default rule."
       isCorrect: true
-      explanation: "That's correct. NSG security rules are evaluated by priority using five information points: source, source port, destination, destination port, and protocol to either allow or deny the traffic."
-    - content: "source, source port, destination, destination port, and target resource."
+      explanation: "That is correct.  You can create a new rule to allow RDP that has a higher priority than the default rule"
+    - content: "There is nothing the admin can do, RDP traffic is not supported with NSGs."
       isCorrect: false
-      explanation: "That's incorrect. NSG security rules do not use the target resource as one of the five evaluation points."
+      explanation: "That's incorrect. NSG rules can be set allow RDP traffic"
   - content: "The security admin wants to protect Azure resources from DDoS attacks, which Azure DDoS Protection tier will the admin use to target Azure Virtual Network resources?"
     choices:
     - content: "Basic."

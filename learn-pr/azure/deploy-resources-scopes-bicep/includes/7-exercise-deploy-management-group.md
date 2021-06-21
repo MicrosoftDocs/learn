@@ -19,7 +19,7 @@ This exercise requires the following prerequisites:
 - You need permissions for creating a new management group within your hierarchy.
 - You need permissions for deploying Azure Policy resources to the management group.
  
-If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
+If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip the deployment steps in this exercise.
 
 ## Create a management group
 
