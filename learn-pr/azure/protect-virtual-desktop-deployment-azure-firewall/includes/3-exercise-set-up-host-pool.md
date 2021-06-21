@@ -1,11 +1,3 @@
-
-TODO: add your topic sentences(s)
-
-
-TODO: add your scenario sub-task
-
-TODO: add your scenario image
-
 In this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]

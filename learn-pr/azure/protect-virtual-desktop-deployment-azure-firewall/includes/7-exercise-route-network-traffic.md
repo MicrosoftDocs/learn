@@ -7,6 +7,8 @@ TODO: add your scenario image
 
 TODO: describe the end-state
 
+Now that you've deployed Azure Firewall, you need to route all network traffic through the firewall and filter the traffic by using firewall rules.
+
 ## Route all traffic through the firewall
 
 For the subnet used by the session host, configure the outbound default route to go through the firewall.

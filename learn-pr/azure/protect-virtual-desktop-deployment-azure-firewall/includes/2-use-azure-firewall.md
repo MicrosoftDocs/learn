@@ -70,7 +70,7 @@ When an end user connects to an Azure Virtual Desktop environment, their session
 
 For Azure Virtual Desktop to work, the session host VMs need outbound internet access to the Azure Virtual Desktop service. The VMs might also need outbound internet access for your users. You can use Azure Firewall to lock down your environment and filter outbound network traffic.
 
-The following diagram shows...
+The following diagram shows how traffic for the Azure Virtual Desktop service and host pools is filtered by Azure Firewall.
 
 :::image type="content" source="../media/2-firewall-azure-virtual-desktop-architecture.png" alt-text="Diagram of Azure Firewall filtering network traffic between the Azure Virtual Network service and the host pool virtual network." border="false":::
 
