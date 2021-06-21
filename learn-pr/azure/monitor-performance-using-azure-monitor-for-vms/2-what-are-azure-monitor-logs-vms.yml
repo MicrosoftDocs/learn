@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.what-are-azure-monitor-logs-vms
-title: What are Azure Monitor Logs and Azure Monitor for VMs?
+title: What are Azure Monitor Logs and Azure Monitor VM Insights?
 metadata:
-  description: 'What are Azure Monitor Logs and Azure Monitor for VMs?'
-  title: What are Azure Monitor Logs and Azure Monitor for VMs?
+  description: 'What are Azure Monitor Logs and Azure Monitor VM Insights?'
+  title: What are Azure Monitor Logs and Azure Monitor VM Insights?
   ms.author: shkuehn
   author: sbkuehn
   ms.prod: learning-azure
@@ -27,7 +27,7 @@ quiz:
     - content: Table-level RBAC
       isCorrect: false
       explanation: Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other access mode permissions.
-  - content: 'What does Azure Monitor for VMs provide?'
+  - content: 'What does Azure Monitor VM Insights provide?'
     choices:
     - content: Provides insight into operations performed on Azure resources.
       isCorrect: false
