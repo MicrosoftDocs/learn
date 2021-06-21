@@ -4,12 +4,14 @@ title: Exercise - Monitor Cognitive Services
 metadata:
   title: Demo-Introduction
   description: "Exercise - Monitor Cognitive Services"
-  ms.date: 06/17/2021
+  ms.date: 06/21/2021
   author: gmalc
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 99869
+labModal: true
 durationInMinutes: 25
 content: |
   [!include[](includes/6-exercise-monitor-cognitive-services.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-cognitive-services
 metadata:
   title: Monitor Cognitive Services
   description: "Monitor Cognitive Services"
-  ms.date: 06/17/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -26,6 +26,8 @@ levels:
 roles:
 - administrator
 - ai-engineer
+- developer
+- student
 products:
 - azure-cognitive-services
 units:

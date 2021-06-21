@@ -4,7 +4,7 @@ Diagnostic logging enables you to capture rich operational data for a Cognitive 
 
 To capture diagnostic logs for a Cognitive Services resource, you need a destination for the log data. You can use Azure Event Hub as a destination in order to then forward the data on to a custom telemetry solution, and you can connect directly to some third-party solutions; but in most cases you'll use one (or both) of the following kinds of resource within your Azure subscription:
 
-- **Azure Log Analytics** -  an service that enables you to query and visualize log data within the Azure portal.
+- **Azure Log Analytics** -  a service that enables you to query and visualize log data within the Azure portal.
 - **Azure Storage** - a cloud-based data store that you can use to store log archives (which can be exported for analysis in other tools as needed).
 
 You should create these resources before configuring diagnostic logging for your Cognitive Services resource. If you intend to archive log data to Azure Storage, create the Azure Storage account in the same region as your Cognitive Services resource.
