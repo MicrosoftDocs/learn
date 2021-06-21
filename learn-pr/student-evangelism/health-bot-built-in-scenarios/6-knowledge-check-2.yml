@@ -50,7 +50,7 @@ quiz:
           explanation: "On the Interactions tab, you configure built-in scenarios that interact with users."
         - content: "Go to Configuration > Conversation > Navigation > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
           isCorrect: false
-          explanation: "On the Navigation tab, you configure the message that appears after cancelling a scenario or before starting over the current scenario and the Help menu."
+          explanation: "On the Navigation tab, you configure the message that appears after canceling a scenario or before starting over the current scenario and the Help menu."
         - content: "Go to Configuration > Compliance > Security > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
           isCorrect: false
           explanation: "On the Security tab, you configure security settings for your bot instance. For example, you can set timeout duration and user authentication."
