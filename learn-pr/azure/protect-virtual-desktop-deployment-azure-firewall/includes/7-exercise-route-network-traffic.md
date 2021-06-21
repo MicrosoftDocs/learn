@@ -1,13 +1,4 @@
-
-TODO: add your topic sentences(s)
-
-TODO: add your scenario sub-task
-
-TODO: add your scenario image
-
-TODO: describe the end-state
-
-Now that you've deployed Azure Firewall, you need to route all network traffic through the firewall and filter the traffic by using firewall rules.
+In the previous exercise, you deployed Azure Firewall. Now you need to route all network traffic through the firewall and filter the traffic by using firewall rules. When you're done, Azure Firewall will protect outbound network traffic for Azure Virtual Desktop.
 
 ## Route all traffic through the firewall
 
