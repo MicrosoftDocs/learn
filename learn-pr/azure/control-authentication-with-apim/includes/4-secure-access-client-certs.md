@@ -16,7 +16,7 @@ With TLS client authentication, the API Management gateway can inspect the certi
 | **Expiration Date** | Only allow certificates that have not expired |
 | | |
 
-These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For instance, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
+These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For example, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
 
 Client certificates are signed to ensure that they are not tampered with. When a partner sends you a certificate, verify that it comes from them and not an imposter. There are two common ways to verify a certificate:
 
