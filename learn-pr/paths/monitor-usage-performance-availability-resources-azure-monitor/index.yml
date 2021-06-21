@@ -33,6 +33,5 @@ modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.incident-response-with-alerting-on-azure
 - learn.troubleshoot-azure-network-infrastructure
-
 trophy:
   uid: learn.monitor-resources-with-azure-monitor.trophy
