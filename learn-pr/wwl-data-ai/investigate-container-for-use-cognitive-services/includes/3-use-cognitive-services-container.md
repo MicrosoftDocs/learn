@@ -8,13 +8,13 @@ To deploy and use a Cognitive Services container, the following three activities
 
 ![A Cognitive Services container deployed to a container host and consumed by a client application](../media/cognitive-services-container.png)
 
-Note that even when using a container, you must provision a Cognitive Services resource in Azure for billing purposes. Client applications send their requests to the containerized service, meaning that potentially sensitive data is not sent to the Cognitive Services endpoint in Azure; but the container must be able to connect to the Cognitive Services resource in Azure periodically to send usage metrics for billing.
+Even when using a container, you must provision a Cognitive Services resource in Azure for billing purposes. Client applications send their requests to the containerized service, meaning that potentially sensitive data is not sent to the Cognitive Services endpoint in Azure; but the container must be able to connect to the Cognitive Services resource in Azure periodically to send usage metrics for billing.
 
 ## Cognitive Services container images
 
 Each container provides a subset of Cognitive Services functionality. For example, not all features of the Text Analytics service are in a single container. Language detection, translation, and sentiment analysis are each separate container images. However, the setup steps are similar for each container.
 
-For the Text Analytics service, each of the 3 core features maps to a separate image:
+For the Text Analytics service, each of the three core features maps to a separate image:
 
 | Feature | Image |
 |---|---|
