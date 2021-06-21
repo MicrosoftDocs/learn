@@ -4,12 +4,14 @@ title: Exercise - Manage Cognitive Services Security
 metadata:
   title: Exercise - Manage Cognitive Services Security
   description: "Exercise - Manage Cognitive Services Security"
-  ms.date: 06/18/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 99868
+labModal: true
 durationInMinutes: 25
 content: |
   [!include[](includes/4-exercise-secure-cognitive-services.md)]
