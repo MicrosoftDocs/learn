@@ -22,4 +22,4 @@ To access the data from the storage target, the cache typically exchanges traffi
 
 Because bandwidth can be low and slow the transfer of information, an ExpressRoute is recommended to accelerate data transfer. While it's not required, a dedicated line like an ExpressRoute is recommended to provide faster data transfers than relying on public internet communication alone.
 
-![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../resources/3-what-is-hpc-cache-01.png)
+:::image type="content" source="../media/infrastructure-diagram.png" alt-text="Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.":::

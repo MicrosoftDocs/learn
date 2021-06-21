@@ -11,11 +11,12 @@ When rendering the video on the studio's local storage, the process runs overnig
 ## What will we be doing?
 
 We'll examine the ideal situation for using Azure HPC Cache. This will help you decide if the cache service is the solution you need.
-    **Protocol**: What storage protocol is supported?
-    **Storage**: What storage can be accelerated with the cache service?
-    **Workload**: Is my workload a good fit for caching?
-    **Network**: What network connection is ideal?
-    **Clients**: What types of clients should be used and where should they be located?
+
+- **Protocol**: What storage protocol is supported?
+- **Storage**: What storage can be accelerated with the cache service?
+- **Workload**: Is my workload a good fit for caching?
+- **Network**: What network connection is ideal?
+- **Clients**: What types of clients should be used and where should they be located?
 
 ## What is the main goal?
 

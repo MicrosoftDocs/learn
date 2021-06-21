@@ -6,7 +6,7 @@ A storage target is where your data is kept. Often, these are Network Attached S
 
 Most high-performance applications use NFSv3 for the file system protocol. HPC Cache uses this efficient protocol to transfer data among the storage target, the cache, and the clients.
 
-![Screenshot of a sample NFS storage target.](../resources/2a-storage-target-example.png)
+:::image type="content" source="../media/storage-target-example.png" alt-text="Screenshot of a sample NFS storage target.":::
 
 ## Azure HPC Cache definition
 
