@@ -2,7 +2,7 @@
 uid: learn.azure.cna-deploy-maintain-cloud-native-apps
 metadata:
   title: Deploy and maintain cloud-native apps
-  description: This module describes how deploy and maintain cloud-native apps.
+  description: This module describes how to deploy and maintain cloud-native apps.
   ms.date: 05/31/2021
   author: mpolicht
   ms.author: jasdeb
@@ -12,9 +12,9 @@ title: Deploy and maintain cloud-native apps
 summary: |
 abstract: |
   In this module, you'll:
-  - describe the principles of DevOps and their implementation in cloud-native application scenarios
-  - implement DevOps principles by using GitHub and Azure DevOps
-  - build and deploy infrastructure and applications by using GitHub and Azure DevOps
+  - Describe the principles of Microsoft Azure DevOps and their implementation in cloud-native application scenarios.
+  - Implement DevOps principles by using GitHub and DevOps.
+  - Build and deploy infrastructure and applications by using GitHub and Azure DevOps.
 prerequisites: | 
   - Understanding of cloud computing
   - Familiarity with Azure
@@ -24,17 +24,17 @@ iconUrl: /learn/achievements/cna-deploy-maintain-cloud-native-apps.svg
 levels:
 - intermediate
 roles:
-- app maker
-- database administrator
+- maker<!--Marcin, please review, there was no app-maker role, so I replaced with this-->
+- database-administrator
 - developer
-- DevOps engineer
-- solution architect
+- devops-engineer
+- solution-architect
 - student
-- technology manager
+- technology-manager
 products:
-- GitHub repositories, workflows, and actions
-- Azure Monitor
-- Application Insights
+- github
+- azure-monitor
+- azure-application-insights
 units:
 - learn.azure.cna-deploy-maintain-cloud-native-apps.1-introduction
 - learn.azure.cna-deploy-maintain-cloud-native-apps.2-define-principles-benefits-devops
