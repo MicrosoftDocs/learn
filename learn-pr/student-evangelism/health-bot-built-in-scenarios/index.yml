@@ -4,7 +4,7 @@ metadata:
   title: Introduction to built-in scenarios
   description: Identify the different built-in scenarios associated with Azure Health Bot and create a Web Chat channel.
   ms.date: 05/11/2021
-  author: leestott
+  author: Dwitrisha
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -16,7 +16,6 @@ abstract: |
   - Identify the different built-in scenarios associated with your Health Bot instance.
   - Recognize built-in scenario use cases.
   - Build a simple web page that allows users to communicate with your Health Bot instance through a Web Chat control.
-
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

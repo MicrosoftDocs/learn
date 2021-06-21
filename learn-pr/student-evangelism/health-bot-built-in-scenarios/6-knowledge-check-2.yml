@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Four multiple-choice questions
   ms.date: 05/11/2021
-  author: leestott
+  author: Dwitrisha
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -54,4 +54,3 @@ quiz:
         - content: "Go to Configuration > Compliance > Security > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
           isCorrect: false
           explanation: "On the Security tab, you configure security settings for your bot instance. For example, you can set timeout duration and user authentication."
-
