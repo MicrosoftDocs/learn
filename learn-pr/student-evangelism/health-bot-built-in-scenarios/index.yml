@@ -16,7 +16,7 @@ abstract: |
   - Identify the different built-in scenarios associated with your Health Bot instance.
   - Recognize built-in scenario use cases.
   - Build a simple web page that allows users to communicate with your Health Bot instance through a Web Chat control.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-built-in-scenarios.svg
 levels:
 - beginner
 roles:
@@ -34,4 +34,4 @@ units:
 - learn.health-bot-built-in-scenarios.7-summary
 
 badge:
-  uid: learn.health-bot-built-in-scenarios.badge
+  uid: learn.student-evangelism.health-bot-built-in-scenarios.badge
