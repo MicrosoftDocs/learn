@@ -32,6 +32,5 @@ modules:
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.incident-response-with-alerting-on-azure
-- learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.monitor-resources-with-azure-monitor.trophy
