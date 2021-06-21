@@ -16,9 +16,9 @@ Now that you've completed this module, you should be able to:
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Network Security Groups](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview)
-- [Azure DDoS Protection Standard overview](https://docs.microsoft.com/azure/ddos-protection/ddos-protection-overview)
-- [Azure Firewall](https://docs.microsoft.com/azure/firewall/)
-- [Azure Bastion](https://docs.microsoft.com/azure/bastion/)
-- [Web Application firewall](https://docs.microsoft.com/azure/web-application-firewall/)
-- [Encryption](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure/4-encryption)
+- [Network Security Groups](/azure/virtual-network/network-security-groups-overview)
+- [Azure DDoS Protection Standard overview](/azure/ddos-protection/ddos-protection-overview)
+- [Azure Firewall](/azure/firewall/)
+- [Azure Bastion](/azure/bastion/)
+- [Web Application firewall](/azure/web-application-firewall/)
+- [Encryption](/learn/modules/intro-to-security-in-azure/4-encryption)
