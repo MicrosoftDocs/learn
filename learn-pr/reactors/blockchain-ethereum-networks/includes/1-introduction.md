@@ -1,8 +1,8 @@
-The Ethereum protocol includes multiple independent networks. Networks are Ethereum environments you can access for development, testing, or production use cases. 
+The Ethereum protocol includes independent environments called *networks*. A network can be used to develop and test a blockchain solution, or deploy it into production. 
 
-You'll need to understand the networks that Ethereum provides, how they differ from one another, and how to connect and deploy to networks. For whatever blockchain solution you create, you need to choose a private or public solution and how to go from development to test to production network.
+To use the Ethereum networks, first we need to understand how they differ. We'll cover the steps to connect and deploy to each network environment. To create a blockchain, we'll learn how to choose whether to make it private or public. We review how to go from a development to test to production network.
 
-The goal of this module is to familiarize you with the network options in the Ethereum protocol. You'll explore some tools you can use to interact with the network options. And you'll learn how to work with different networks.
+The goal of this module is to become familiar with the network options in the Ethereum protocol. You'll explore tools to interact with the network options, and learn how to work with different networks.
 
 ## Learning objectives
 
