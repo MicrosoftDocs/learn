@@ -33,10 +33,10 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.azure.choose-bot-building-tool.1-introduction
 - learn.azure.choose-bot-building-tool.2-identify-product-options
-- learn.azure.choose-bot-building-tooly.3-analyze-decision-criteria
+- learn.azure.choose-bot-building-tool.3-analyze-decision-criteria
 - learn.azure.choose-bot-building-tool.4-use-power-virtual-agents
 - learn.azure.choose-bot-building-tool.5-use-qnamaker
-- learn.azure.choose-bot-building-tool.5-use-bot-framework-composer-bot-service
+- learn.azure.choose-bot-building-tool.6-use-bot-framework-composer-bot-service
 - learn.azure.choose-bot-building-tool.7-knowledge-check
 - learn.azure.choose-bot-building-tool.8-summary
 badge:
