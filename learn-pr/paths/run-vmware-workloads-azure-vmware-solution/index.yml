@@ -5,8 +5,8 @@ metadata:
   description: Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
   brand: azure
   ms.date: 06/21/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: sbkuehn
+  ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run VMware workloads on Azure VMware Solution
