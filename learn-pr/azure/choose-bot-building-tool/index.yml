@@ -13,10 +13,10 @@ title: Choose a bot building tool
 summary: Choose a bot building tool
 abstract: |
   By the end of this module, you'll be able to:
-    - "Identify yhe different tools available in Azure that you can use to create bots."
+    - "Identify the different tools available in Azure that you can use to create bots."
     - "Choose the bot-building tool that best addresses your company's technical requirements and challenges.""
 prerequisites: |
-  - "Working experience of the Azure Portal."
+  - "Working experience of the Azure portal."
   - "Fundamental knowledge about bot concepts."
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
