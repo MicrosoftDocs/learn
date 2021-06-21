@@ -11,7 +11,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
       demands:
       - npm
 
@@ -72,7 +72,7 @@ stages:
   - job: Provision
     displayName: 'Provision Azure App Service'
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     variables:
     - group: Release
     steps:
@@ -110,7 +110,7 @@ stages:
     variables:
       WebAppNameDev: $[ dependencies.Provision.outputs['RunTerraform.WebAppNameDev'] ]
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     environment: dev
     strategy:
       runOnce:
