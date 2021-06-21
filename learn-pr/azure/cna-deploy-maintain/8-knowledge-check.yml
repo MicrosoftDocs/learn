@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "XML"
       isCorrect: false
-      explanation: "Incorrect. GitHub Actions workflows take the form of YAML-formatted files, rather than XML."
+      explanation: "Incorrect. GitHub Actions workflows don't use XML-formatted files."
     - content: "JSON"
       isCorrect: false
-      explanation: "Incorrect. GitHub Actions workflows take the form of YAML-formatted files, rather than JSON."
+      explanation: "Incorrect. GitHub Actions workflows don't use JSON-formatted files."
     - content: "YAML"
       isCorrect: true
       explanation: "Correct. GitHub Actions workflows take the form of YAML-formatted files."
