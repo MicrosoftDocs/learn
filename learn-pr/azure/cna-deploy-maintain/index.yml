@@ -24,7 +24,6 @@ iconUrl: /learn/achievements/cna-deploy-maintain-cloud-native-apps.svg
 levels:
 - intermediate
 roles:
-- maker<!--Marcin, please review, there was no app-maker role, so I replaced with this-->
 - database-administrator
 - developer
 - devops-engineer

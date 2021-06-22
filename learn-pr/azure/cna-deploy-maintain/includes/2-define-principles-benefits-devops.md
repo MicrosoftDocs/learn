@@ -34,7 +34,7 @@ IaC uses automation to set up infrastructure services and control their configur
 
 There are two ways to implement IaC:
 
-* Declarative. Declarative code defines what the code should accomplish, but doesn't define how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure Resource Manager templates, <!--Marcin, OK to remove these third-party product names?-->Terraform, or Ansible for this purpose.
+* Declarative. Declarative code defines what the code should accomplish, but doesn't define how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure Resource Manager templates for this purpose.
 * Imperative. Imperative code defines both what the program should accomplish and how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure PowerShell, Azure CLI, or Azure SDK for this purpose.
 
 ## What are the benefits of GitHub Actions?

@@ -5,7 +5,7 @@ You have successfully tested the concept of IaC by using GitHub Actions to deplo
 DevOps practices facilitate the implemention of cloud-native applications. They closely align with Twelve-Factor Application guidelines that serve as the foundation for building cloud-native apps. In particular, they help address the following guidelines:
 
 - Code Base. A single code base for each microservice, stored in its own repository, tracked with version control, which can be deployed to multiple environments, such as QA, staging, and production.
-- Build, Release, Run. Each release must enforce a strict separation across the build, release, and run stages. Each stage <!--Marcin, pelase validate-->should be tagged with a unique ID and support the ability to roll back.
+- Build, Release, Run. Each release must enforce a strict separation across the build, release, and run stages. Each stage should be tagged with a unique ID and support the ability to roll back.
 
 CI/CD solutions such as Azure DevOps or GitHub Actions allow you to separate deployments across multiple environments while at the same time, helping to ensure consistency across all of them. Developers author new features in their own environment. After the development is complete, the code is committed into a designated branch of a code repository. The commit triggers a build stage that transforms the code into a binary artifact. The work is implemented with a CI pipeline. It automatically builds, tests, and packages the application.
 

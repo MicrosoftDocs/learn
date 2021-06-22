@@ -27,7 +27,7 @@ You're considering a design that will include the following infrastructure compo
 - Azure IoT Hub. An Azure service that provides the ability to connect to, monitor, and manage IoT devices.
 - Azure IoT Hub Device Provisioning Service. A component of Azure IoT hub that facilitates the automatic provisioning of IoT devices.
 
-You intend to deliver the new version of your app across three stages: <!--Marcin, can we use "Development, QUality Assurance (QA), and Production" instead?-->dev, qa, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline, which will provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
+You intend to deliver the new version of your app across three stages: dev, qa, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline, which will provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
 
 - The availability of the IoT devices.
 - The connectivity between the IoT device and the IoT hub.
@@ -43,16 +43,18 @@ From the implementation standpoint, the build pipeline will perform the followin
 - Perform unit testing of the newly developed version of the app (the choice of the most suitable task depends on the development framework).
 - Provision an Azure container registry instance or connect to an existing one (by using an Azure Resource group deployment task).
 - Retrieve the credentials necessary to push an image to the Azure container registry instance (by using an Azure CLI task).
-- Build an Azure IoT image (by using the Azure IoT Edge task).
-- Push the Azure IoT image (by using the Azure IoT Edge task).
+- Build an Azure IoT module image (by using the Azure IoT Edge task).
+- Push the Azure IoT module image (by using the Azure IoT Edge task).
 - Copy files, such as the smoke test script, to the artifact staging directory (by using the Copy Files task).
 
 The delivery pipeline for each stage will perform the following sequence of actions:
 
-- Provision an IoT Edge device (by using an Azure CLI task).
-- Retrieve credentials necessary to pull an image from the Azure container registry instance (by using an Azure CLI task).
+- Provision an IoT Edge device (by using an Azure CLI task or an Azure Resource Manager template).
+- Retrieve credentials necessary to pull a module image from the Azure container registry instance (by using an Azure CLI task).
 - Generate a deployment manifest (by using the Azure IoT Edge task).
-- Deploy the image into Azure IoT Edge device (by using the Azure IoT Edge task).
+- Deploy the module image into Azure IoT Edge device (by using the Azure IoT Edge task).
 - Perform the smoke test (by using an Azure CLI task).
 
-The delivery to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage.
+The delivery to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage. Optionally, you could also implement Azure Application Insights to monitor status and performance of the deployed module.
+
+    :::image type="content" source="../media/7-azure-devops-iot-pipeline" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
