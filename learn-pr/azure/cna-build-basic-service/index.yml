@@ -32,7 +32,7 @@ roles:
 - student
 products:
 - azure
-- postgresql
+- azure-database-postgresql
 units:
 - learn.azure.cna-build-basic-service.1-introduction
 - learn.azure.cna-build-basic-service.2-define-services
