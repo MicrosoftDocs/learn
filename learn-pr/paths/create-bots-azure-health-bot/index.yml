@@ -27,7 +27,7 @@ modules:
 - learn.health-bot-basic-bot
 # - learn.health-bot-case-studies
 # - learn.health-bot-language-understanding
-# - learn.health-bot-built-in-scenarios
+- learn.health-bot-built-in-scenarios
 # - learn.health-bot-template-scenarios
 - learn.health-bot-enhanced
 # - learn.health-bot-integrating-bot
