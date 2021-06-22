@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.create-voice-activated-webxr-app-with-babylonjs
+metadata:
+  moduleType: standard
+  title: "TODO" # user input: module title for browser tab and search results
+  description: "TODO" # user input: a description for site search and SEO
+  ms.date: 6/22/2021
+  author: JING1201
+  ms.author: t-jinglow
+  ms.topic: interactive-tutorial # do we need ms.topic?
+title: create-voice-activated-webxr-app-with-babylonjs
+summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  By the end of this module, you'll be able to:
+    - # objective 1
+    - # objective 2
+    - # objective 3 (if needed)
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - # prerequisite 1
+  - # prerequisite 2
+  - # prerequisite 3
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - # level
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - # role 1
+  - # role 2
+products:
+- azure
+units:
+- learn.create-voice-activated-webxr-app-with-babylonjs.introduction
+- learn.create-voice-activated-webxr-app-with-babylonjs.learning-content
+- learn.create-voice-activated-webxr-app-with-babylonjs.exercise
+- learn.create-voice-activated-webxr-app-with-babylonjs.knowledge-check
+- learn.create-voice-activated-webxr-app-with-babylonjs.summary
+badge:
+  uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
