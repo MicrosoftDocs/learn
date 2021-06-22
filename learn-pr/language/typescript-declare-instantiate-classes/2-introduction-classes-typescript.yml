@@ -6,7 +6,7 @@ metadata:
   description: Learn about the components of a class, including properties, methods, constructor, and accessors.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

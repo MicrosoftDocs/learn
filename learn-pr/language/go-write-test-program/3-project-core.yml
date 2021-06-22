@@ -5,7 +5,7 @@ metadata:
   description: Create the methods and supporting tests for the project's core package.
   ms.date: 02/02/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write the bank core package
