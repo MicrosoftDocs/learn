@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.azure.migrate-azure-resources-bicep
+metadata:
+  moduleType: standard
+  title: Migrate Azure resources and JSON templates to use Bicep
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 06/21/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Migrate Azure resources and JSON templates to use Bicep
+summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+abstract: |
+  After completing this module, you'll be able to:
+    - Convert JSON templates to Bicep
+    - Create Bicep definitions for your existing Azure resources
+    - Verify template conversions using the what-if operation and documentation
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates, including parameters and child and extension resources.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - The what-if operation.
+
+  To follow along with the exercises in the module, you'll need:
+  - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+- devops-engineer
+- developer
+- administrator
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+- azure-resource-manager
+units:
+- learn.azure.migrate-azure-resources-bicep.introduction
+- learn.azure.migrate-azure-resources-bicep.convert-json-templates-bicep
+- learn.azure.migrate-azure-resources-bicep.exercise-decompile-json-template-bicep
+- learn.azure.migrate-azure-resources-bicep.export-resource-definitions-bicep
+- learn.azure.migrate-azure-resources-bicep.verify-conversions-what-if
+- learn.azure.migrate-azure-resources-bicep.exercise-export-azure-resources-bicep
+- learn.azure.migrate-azure-resources-bicep.knowledge-check
+- learn.azure.migrate-azure-resources-bicep.summary
+badge:
+  uid: learn.azure.migrate-azure-resources-bicep.badge

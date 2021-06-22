@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-azure-resources-bicep.exercise-decompile-json-template-bicep
+title: Exercise - Decompile a JSON template to Bicep
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Decompile a JSON template to Bicep
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 06/21/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-decompile-json-template-bicep.md)]
