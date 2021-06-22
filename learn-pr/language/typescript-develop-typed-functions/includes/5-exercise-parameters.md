@@ -49,6 +49,6 @@ In this exercise, you'll create functions that have required, optional, and defa
 1. Try calling the function with two and three arguments to test the result.
 
    ```typescript
-   subtractThreeNumbers(10, 20);       // returns -130 because 'z' has been assigned the value 100
-   subtractThreeNumbers(10, 20, 15);   // returns -45
+   subtractThreeNumbers(10, 20);       // returns -110 because 'z' has been assigned the value 100
+   subtractThreeNumbers(10, 20, 15);   // returns -25
    ```
