@@ -7,7 +7,7 @@ During the process, you'll:
 > * Securely handle the key.
 > * Verify the service principal works by logging into Azure using its credentials.
 
-This exercise requires that you have permission to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip the deployment steps in this exercise.
+This exercise requires that you have permission to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
 
 ## Sign in to Azure
 

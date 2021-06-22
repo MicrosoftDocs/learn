@@ -4,10 +4,10 @@ In this module, you learned about service principals. You learned what they are 
 
 By using service principals, you can start to build deployment pipelines that support the automation of your infrastructure. Service principals enable you to create tightly scoped identities that represent a single pipeline, and you can grant them access to do exactly what they need to do.
 
-<!--
-  - https://docs.microsoft.com/azure/active-directory/fundamentals/service-accounts-introduction-azure
-  - https://docs.microsoft.com/azure/active-directory/fundamentals/service-accounts-principal#move-from-a-user-account-to-a-service-principal
-  - https://docs.microsoft.com/azure/active-directory/fundamentals/service-accounts-governing-azure
-  - https://docs.microsoft.com/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from
-  - https://docs.microsoft.com/azure/role-based-access-control/overview
--->
+## Learn more
+
+- [Introduction to securing Azure service accounts](/azure/active-directory/fundamentals/service-accounts-introduction-azure)
+- [What are service principals and where do they come from?](/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from)
+- [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
+- [Governing Azure AD service accounts](/azure/active-directory/fundamentals/service-accounts-governing-azure)
+- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)

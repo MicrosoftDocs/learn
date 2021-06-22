@@ -47,3 +47,5 @@ You can create multiple role assignments that provide different permissions at d
 ## Create a role assignment for a service principal
 
 TODO
+
+TODO mention --assignee-object-id versus --assignee
