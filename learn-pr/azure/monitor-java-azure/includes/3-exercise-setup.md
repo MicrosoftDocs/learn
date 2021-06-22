@@ -4,22 +4,23 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 In this exercise, you'll clone a GitHub repository that contains all the code for Monitoring.
 
-On the Azure portal, open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
+Open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
 
    ```bash
    git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
    cd petclinic
-   code .
+   code deployPetClinicApp.sh
    ```
 
 ## Setup and run the Setup script
 
-Edit the `deployPetClinicApp.sh` and customize the below parameters for your environment
+When you run the above command, a window will pop up with the build in Monaco editor with the file deployPetClinicApp.sh opened.
+"Edit the variables in the `deployPetClinicApp.sh` and customize the parameters for your environment
 
 | Variable | Description |
 |-|-|
 | resource_group | Provide a new or existing resource group name |
-| region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
+| region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live and that also support Azure Spring Cloud. To see the full list of available regions, see the Summary unit at the end of this module |
 | spring_cloud_service | Name of your Azure Spring Cloud instance |
 | mysql_server_name | The name of your MySQL server. It should be unique across Azure |
 | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
@@ -27,18 +28,19 @@ Edit the `deployPetClinicApp.sh` and customize the below parameters for your env
 
 ## Run the setup script
 
-The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance that will incur a nominal cost. Open the Azure Cloud Shell and Run the following script to setup the environment for this modules exercises:
+The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. In Azure Cloud Shell, run the shell script to set up the environment for this module's exercises. Leave the browser window and Azure Cloud Shell open while running. This sample script also populates some sample data for the monitoring logs, traces, and metrics:
+
 
 ```bash
 sh deployPetClinicApp.sh
 ```
 
-
 ## Test the application
 
 Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
 
-Next, navigate to the "Owners" tab, Find all owners and add some sample owner, pet and visit data to ensure the monitoring logs, traces and metrics are populated.
+Next, navigate to the "Owners" tab and select the "Find all owners" Tab.
+Your sample app is up and running, populated with data and now ready for you to explore.
 
 ![Real-time metrics](../media/4-petclinic.jpg)
 
