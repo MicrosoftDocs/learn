@@ -28,11 +28,11 @@ products:
   - azure
   - azure-machine-learning
 units:  
-- learn.intro-to-project-bonsai.1-introduction
-- learn.intro-to-project-bonsai.2-what-is-project-bonsai
-- learn.intro-to-project-bonsai.3-how-project-bonsai-works
-- learn.intro-to-project-bonsai.4-when-to-use-project-bonsai
-- learn.intro-to-project-bonsai.5-knowledge-check
-- learn.intro-to-project-bonsai.6-summary
+- learn.azure.intro-to-project-bonsai.1-introduction
+- learn.azure.intro-to-project-bonsai.2-what-is-project-bonsai
+- learn.azure.intro-to-project-bonsai.3-how-project-bonsai-works
+- learn.azure.intro-to-project-bonsai.4-when-to-use-project-bonsai
+- learn.azure.intro-to-project-bonsai.5-knowledge-check
+- learn.azure.intro-to-project-bonsai.6-summary
   badge:
-  uid: learn.intro-to-project-bonsai.badge
+  uid: learn.azure.intro-to-project-bonsai.badge
