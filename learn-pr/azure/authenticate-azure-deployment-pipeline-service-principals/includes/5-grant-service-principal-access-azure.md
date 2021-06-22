@@ -38,6 +38,8 @@ You need to determine how broadly you assign the role. This impacts the number o
 - **Resource group:** You can grant access to all resources within a resource group. **Contributors** and **Owners** can also create resources within the group. This is a good option for many deployment pipelines.
 - **Subscription:** You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription then this can be unnecessarily permissive for a pipeline.
 
+Remember that role assignments are inherited. This means that if you assign a role at a subscription, the assignee will have access to every resource inside that subscription.
+
 ### How do you select the right role assignment?
 
 Now that you understand the components of a role assignment, you can decide the appropriate values for your scenarios. Here are some general guidelines to consider:
@@ -64,17 +66,14 @@ az role assignment create \
   --assignee b585b740-942d-44e9-9126-f1181c95d497 \
   --role Contributor \
   --scope "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite" \
-  --assignee-principal-type ServicePrincipal \
   --description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
-<!-- TODO test the above -->
 
 Let's look at each argument:
 
 - `--assignee` specifies the service principal name. To avoid ambiguity, it's a good practice to use the application ID.
 - `--role` specifies the role. If you use a built-in role, you can specify it by name. If you use a custom role definition then you specify the full role definition ID.
 - `--scope` specifies the scope. This is usually a resource ID for a single resource, a resource group, or a subscription.
-- `--assignee-principal-type` tells Azure that you're providing the role assignment for a service principal. This helps to avoid delays when Azure replicates the role assignment throughout the world.
 - `--description` is a human-readable description of the role assignment.
 
 ::: zone-end
@@ -88,23 +87,23 @@ New-AzRoleAssignment `
   -ApplicationId b585b740-942d-44e9-9126-f1181c95d497 `
   -RoleDefinitionName Contributor `
   -Scope '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite' `
-  -ObjectType ServicePrincipal `
   -Description 'The deployment pipeline for the company's website needs to be able to create resources within the resource group.'
 ```
-<!-- TODO test the above -->
 
 Let's look at each argument:
 
 - `-ApplicationId` specifies the service principal's application registration ID.
 - `-RoleDefinitionName` specifies the name of a built-in role. If you use a custom role definition then you specify the full role definition ID by using the `-RoleDefinitionId` argument instead.
 - `-Scope` specifies the scope. This is usually a resource ID for a single resource, a resource group, or a subscription.
-- `-ObjectType` tells Azure that you're providing the role assignment for a service principal. This helps to avoid delays when Azure replicates the role assignment throughout the world.
 - `-Description` is a human-readable description of the role assignment.
 
 ::: zone-end
 
 > [!TIP]
 > It's a good practice to provide a justification for your role assignments by specifying a description. This helps anyone who reviews them later to understand the purpose of the role assignment, and to understand how you decided on the assignee, role, and scope.
+
+> [!NOTE]
+> Role assignments can take a few minutes to become active.
 
 ## Create a service principal and role assignment in one operation
 
@@ -113,14 +112,11 @@ You can also create a role assignment at the same time that you create a service
 ::: zone pivot="cli"
 
 :::code language="azurecli" source="code/5-create-sp-rbac.sh" highlight="3-4" :::
-<!-- TODO test the above -->
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
 :::code language="azurepowershell" source="code/5-create-sp-rbac.ps1" highlight="3-4" :::
-<!-- TODO test the above -->
 
 ::: zone-end
-
