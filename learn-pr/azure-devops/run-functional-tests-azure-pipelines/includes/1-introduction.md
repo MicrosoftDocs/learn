@@ -1,8 +1,8 @@
 In this module, you'll add functional tests to the pipeline. These tests verify an application's behavior.
 
-In the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines?azure-portal=true) module, you helped the Tailspin Toys web team connect their web application to Azure SQL Database. You also used a release approval to help the developers and the database administrator manage changes to the database schema.
+In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module, you helped the Tailspin Toys web team design and build a multistage release pipeline. The team uses the pipeline to move changes through a series of stages. Changes move through the _Dev_ stage, the _Test_ stage, and finally the _Staging_ stage, which resembles a production environment.
 
-The stages that you and the team defined provide the overall shape of your pipeline. But you can add more to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_. In _Staging_, management reviews the new features and decides whether to make the release publicly available.
+The stages that you and the team defined provide the overall shape of the pipeline. But you can add more to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_. In _Staging_, management reviews the new features and decides whether to make the release publicly available.
 
 In the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module, you incorporated unit and code coverage tests into the build process. These tests help avoid regression bugs and ensure that the code meets the company's standards for quality and style. But what kinds of tests can you run after a service is operational and deployed to an environment?
 
