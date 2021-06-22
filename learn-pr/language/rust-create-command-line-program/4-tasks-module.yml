@@ -5,7 +5,7 @@ metadata:
   description: Implement the module that creates and stores tasks.
   ms.date: 01/26/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create the tasks module
