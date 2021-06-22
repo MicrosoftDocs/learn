@@ -90,7 +90,7 @@ You can also use these conditions with `Trace` and with flags that you define in
 bool errorFlag = false;  
 System.Diagnostics.Trace.WriteIf(errorFlag, "Error in AppendData procedure.");  
 System.Diagnostics.Debug.WriteIf(errorFlag, "Transaction abandoned.");  
-Trace.Write("Invalid value for data request");
+System.Diagnostics.Trace.Write("Invalid value for data request");
 ```
 
 ## Verify that certain conditions exist

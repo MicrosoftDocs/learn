@@ -1,0 +1,23 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-create-iot-central-application
+title: Exercise - Create an IoT Central application
+metadata:
+  title: Exercise - Create an IoT Central application
+  description: Exercise - Create an IoT Central application
+  ms.date: 01/15/2021
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/3-exercise-create-iot-central-application.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.IoTCentral/IoTApps"
+  hint: "Use the instructions above to create an IoT Central application."
