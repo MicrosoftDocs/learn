@@ -33,9 +33,9 @@ func main() {
 
 If you run the preceding code several times, you'll see a different output every time. (But if you run the code in the Go Playground, you'll get the same result every time. That's one of the service's limitations.)
 
-Go executes each case of the `switch` statement until it finds a match for the condition. But notice that the previous code doesn't cover all possible cases of the `num` variable's values. For example, if `num` ends up being `5`, the program's output is `ok`. 
+Go executes each case of the `switch` statement until it finds a match for the condition. But notice that the previous code doesn't cover all possible cases of `num` variable values. If `num` ends up being `5`, the program output is `ok`. 
 
-Alternatively, you can be more specific about the default use case and include it like this:
+You can also be more specific about the default use case and include it like this:
 
 ```go
 switch i {
@@ -167,7 +167,8 @@ func main() {
 }
 ```
 
-This pattern might be a cleaner way to write long if-then-else chains.
+The program always runs this type of `switch` statement because the condition is always true. A conditional `switch` block can be easier to maintain than a long chain of `if` and `else if` statements.
+
 
 ## Make the logic fall through to the next case
 

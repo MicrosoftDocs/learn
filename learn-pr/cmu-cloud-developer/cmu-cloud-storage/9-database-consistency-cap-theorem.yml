@@ -5,8 +5,8 @@ metadata:
   title: 'Database design: Consistency and the CAP theorem'
   description: Learn how to design databases with a focus on consistency and use of the CAP theorem.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

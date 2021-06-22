@@ -24,7 +24,7 @@ You can also group cards by topic, which will rearrange the cards and group them
 - **Other** - all cards not categorized under other topics.
 
 #### Endpoint reports
-The reports section also includes Microsoft Defender for Endpoint reports, including a **threat protection report**, a **device health and compliance report**, and a **vulnerable devices report**.
+The endpoints section on the reports page includes a **threat protection report**, a **device health and compliance report**, and a **vulnerable devices report**.
 
 - The **threat protection report** provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
     
