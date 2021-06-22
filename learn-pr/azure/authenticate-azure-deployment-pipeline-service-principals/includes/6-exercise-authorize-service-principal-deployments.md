@@ -143,6 +143,8 @@ You don't currently have a deployment pipeline, so we'll simulate what a pipelin
      --template-file main.bicep
    ```
 
+   The deployment might take a minute or two to finish, and then you'll see a successful deployment.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -167,12 +169,70 @@ You don't currently have a deployment pipeline, so we'll simulate what a pipelin
    New-AzResourceGroupDeployment -ResourceGroupName ToyWebsite -TemplateFile main.bicep
    ```
 
+   The deployment might take a minute or two to finish, and then you'll see a successful deployment.
+
 ::: zone-end
 
 ## Verify the deployment
 
-TODO use portal to see the deployment as normal
+Use the Azure portal to inspect the resources that you deploy and to inspect the results of the deployment.
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. On the left pane, select **Resource groups**.
+
+1. Select **ToyWebsite**.
+
+1. In the **Overview** section, you can see that one deployment has succeeded.
+ 
+    :::image type="content" source="../media/6-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, with a section displaying a successful deployment." border="true":::
+
+1. Next to **Deployments**, select **1 Succeeded** to see the details of the deployment.
+
+    :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
+
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
+ 
+   In this case, the App Service plan and app, as well as the Application Insights instance, are listed.
+
+    :::image type="content" source="../media/6-development-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
 
 ## Clean up the resource group and service principal
 
-TODO
+You've successfully created a service principal and role assignment, and deployed your website's resources by using a Bicep file. You can now remove the resources that you've created.
+
+::: zone pivot="cli"
+
+1. Run the following Azure CLI command to delete the resource group, its contents, and the role assignment:
+
+   ```azurecli
+   az group delete --name ToyWebsite --no-wait
+   ```
+
+   When you're prompted to confirm, enter `y`. Notice that you use the `--no-wait` argument to run the deletion asynchronously in the background.
+
+1. Run the following command to delete the service principal. Make sure you replace the `SERVICE-PRINCIPAL-NAME` placeholder with the application ID you copied in the previous exercise:
+
+   ```azurecli
+   az ad sp delete --id SERVICE-PRINCIPAL-NAME
+   ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following Azure PowerShell command to delete the resource group, its contents, and the role assignment:
+
+   ```azurepowershell
+   Remove-AzResourceGroup -Name ToyWebsite -AsJob
+   ```
+
+   When you're prompted to confirm, enter `y`. Notice that you use the `-AsJob` argument to run the deletion asynchronously in the background.
+
+1. Run the following command to delete the service principal. Make sure you replace the `SERVICE-PRINCIPAL-NAME` placeholder with the application ID you copied in the previous exercise:
+
+   ```azurepowershell
+   Remove-AzADServicePrincipal -ApplicationId SERVICE-PRINCIPAL-NAME
+   ```
+
+::: zone-end
