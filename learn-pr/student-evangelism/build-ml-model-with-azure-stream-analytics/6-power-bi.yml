@@ -5,8 +5,8 @@ metadata:
   title:  Exercise - Create a Power BI report
   description: Create a Power BI report to show where cameras are spotting polar bears.
   ms.date: 12/21/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

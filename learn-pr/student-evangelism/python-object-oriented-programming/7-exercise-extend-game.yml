@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Extend the game implementation with added rules
   description: In this unit, you'll add rules supporting a more advanced version of rock, paper, scissors.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
