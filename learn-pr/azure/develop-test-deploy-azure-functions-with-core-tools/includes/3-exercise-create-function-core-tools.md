@@ -21,11 +21,13 @@ In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell sys
     func init
     ```
 
-1. When prompted to select a worker runtime, choose **node** (enter **2**).
+1. When prompted to select a worker runtime, select **node** (enter **2**).
 
-1. When prompted to select a language, choose **javascript** (enter **1**).
+1. When prompted to select a language, select **javascript** (enter **1**).
 
-    The output from the tool will indicate the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files. **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code. **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
+    The output from the tool will indicate the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files:
+    - **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code.
+    - **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
 
 ## Create an HTTP-triggered function
 
@@ -39,7 +41,7 @@ Let's create our function!
 
     Note that we're running `func new` from inside the `loan-wizard` project folder we just created, which is important.
 
-1. When prompted to select a template, select the **HTTP trigger** (enter **8**) template option.
+1. When prompted to select a template, select **HTTP trigger** (enter **8**).
 
 1. When prompted, enter **simple-interest** as the function name.
 
