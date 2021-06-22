@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/5-grant-service-principal-access-azure.md)]
