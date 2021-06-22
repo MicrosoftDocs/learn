@@ -20,7 +20,7 @@ To create the **staging** environment:
 
 1. From Azure Pipelines, select **Environments**.
 
-    :::image type="content" source="../media/7-pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
 
 1. Select **New environment**.
 1. Under **Name**, enter *staging*.
