@@ -6,14 +6,14 @@ A *bot* provides a conversational interface in websites and applications. You ca
 
 ### Conversing with a bot
 
-Bots typically have natural language understanding capabilities to interpret the user's input to  recognize what the user is asking for or saying. The bot responds to the user to communicate what the bot is doing or has done. Bots typically support numerous configurations and channel publishing options that enable users to interact through text, speech, or even images and video.
+Bots often have natural language understanding capabilities to interpret the user's input to  recognize what the user is asking for or saying. The bot responds to the user to communicate what the bot is doing or has done. Bots typically support numerous configurations and publishing channels like Teams, telephony, and voice assistants. 
 
 > [!NOTE]
-> You can converse with a bot using text, interactive cards, and speech. Bot interactions can be quick questions and answers, guided conversation flows, or a sophisticated conversation that integrates with external capabilities and AI systems.
+> Depending on the bot's configuration, you can converse with it using text, interactive cards, speech, or a combination of these. Bot interactions can be quick questions and answers, guided conversation flows, or a sophisticated conversation that integrates with external capabilities and AI systems.
 
 ## Bot-creation tools to consider
 
-There are three bot-creation tools examined in this module. Although you can use any of them to create bots, they vary in method and requirements. The bot-creation tools are:
+There are three bot-creation tools examined in this module. Although you can use any of them to create bots, they vary in requirements and capabilities. The bot-creation tools are:
 
 - Power Virtual Agents
 - QnA Maker
@@ -26,11 +26,11 @@ You can create powerful chat bots that can answer questions in conversational fo
 Topics inform the bot conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to type. These phrases are matched to a specific topic using built-in natural language understanding. For example, if a user types "Open hours" into your bot, the AI will be able to match that to a topic named Store hours, begin a conversation that asks which store the customer is interested in, and then provide information about the store's hours of operation.
 
 > [!TIP]
-> You can extend Power Virtual Agents bot capability with advanced AI features, prebuilt and custom entities, variables, authentication, Power Automate flows for more task automation, and skills created using the Bot Framework SDK.
+> You can extend Power Virtual Agents bot capability with advanced AI features, prebuilt and custom entities, variables, authentication, Power Automate flows for more task automation, and skills created using Bot Framework Composer and/or Bot Framework SDK. (These tools are discussed next.)
 
 ### QnA Maker
 
-*QnA Maker* is a Azure-based Natural Language Processing service that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
+*QnA Maker* is an Azure-based question-and-answer service that uses Natural Language Processing to create an elegant conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
 The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or web page. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
@@ -41,7 +41,7 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 ### Bot Framework Composer and Azure Bot Service
 
-*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with integrated dialog, language-understanding models, knowledge bases and language generation functionality. You can implement all these features from a single design canvas. Resulting experiences can then be tested within Composer and provisioned into Azure along with any dependent resources.
+*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with built-in dialog and conversation flow functionality. It can also integrate directly with Azure services for language understanding, knowledge bases, and the like. You then can build your logic and configure common integrations from a single design canvas.
 
 > [!NOTE]
 > Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component which you can customize and extend to suit your needs.
