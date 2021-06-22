@@ -11,7 +11,7 @@ Central to the ability to automate in Azure is the Azure Resource Manager, provi
  
 ### CLI
 
-The Azure CLI cross-platform command-line tool is used to connect to Azure and execute administrative commands on Azure resources. It allows the execution of commands through a terminal using interactive command-line prompts or a script. For interactive use, launch your shell of preference, such as cmd.exe on Windows, or Bash on Linux or macOS, and then issue a command at the shell prompt. Azure Cloud Shell Bash is configured to run CLI commands.
+The Azure CLI cross-platform command-line tool is used to connect to Azure and execute administrative commands on Azure resources. It allows the execution of commands through a terminal using interactive command-line prompts or a script. For interactive use, launch your shell of preference, such as cmd.exe on Windows, or Bash on Linux or macOS, and then issue a command at the shell prompt. Azure Cloud Shell is configured to run CLI commands.
  
 ### PowerShell
 

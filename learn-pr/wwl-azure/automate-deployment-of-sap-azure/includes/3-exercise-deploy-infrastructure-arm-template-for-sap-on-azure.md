@@ -33,9 +33,9 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 ### SAP Configuration tab
 
-1. On the **SAP System ID** drop-down list, select **TST**.
+1. Enter the SAP System ID: **TST**
 
-2. On the **AP Deployment Size** drop-down list, select **Demo**.
+2. For the SAP Deployment Size drop-down list, select **Demo**.
 
 3. Go to the next tab: **VM Sizes Configuration**.
 
@@ -73,7 +73,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 ## Review the updated template 
 
-Examine the Resource Manager template to get a better understanding of its structure and the resources defined by the template. Review the references for the 5 resource structures:
+ Review the references for the 5 resource structures:
 
 - [Microsoft.Storage storageAccounts template reference](/azure/templates/Microsoft.Storage/2018-07-01/storageAccounts)
 - [Microsoft.Network publicIPAddresses template reference](/azure/templates/Microsoft.Network/2018-08-01/publicIPAddresses)
@@ -81,9 +81,9 @@ Examine the Resource Manager template to get a better understanding of its struc
 - [Microsoft.Network networkInterfaces template reference](/azure/templates/Microsoft.Network/2018-08-01/networkInterfaces)
 - [Microsoft.Compute virtualMachines template reference](/azure/templates/Microsoft.Network/2018-08-01/virtualNetworks)
 
-![ARM template with the changes made in the previous steps.](../media/MarketPlace2Tier_7.png)
+Examine the Resource Manager template to get a better understanding of its structure and the resources defined by the template. Below is a section from the top of the template.
 
-The marked sections in the template display information you entered from the portal:
+![ARM template with the changes made in the previous steps.](../media/MarketPlace2Tier_7.png)
 
 | # | Information |
 |---|---|
@@ -91,11 +91,11 @@ The marked sections in the template display information you entered from the por
 | 2 | Allowed `osType` |
 | 3 | Allowed `size` |
 
-1. Read through the template to identify any items that you want to change. For example, the default value for `hanaVMSize`. 
+1. Read through the template to identify any items that an administrator might want to changed. For example, the default value for `hanaVMSize`. 
 
-2. Select **Deploy**. This updates the template, with the information you provided in the Azure portal being added to the original Marketplace item.
+2. Select **Deploy**. This updates the original Marketplace template, with the information you provided in the Azure portal.
 
-3. Alternatively, if you want to store the updated template locally, select **Download**.
+3. Alternatively, if you want to store the updated template stored locally, select **Download**.
 
 ![Example of a value, in this case, hanaVMSize, that can be manually edited in the template.](../media/MarketPlace2Tier_8.png)
 
