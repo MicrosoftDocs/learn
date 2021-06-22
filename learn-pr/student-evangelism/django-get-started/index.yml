@@ -5,7 +5,7 @@ metadata:
   description: Django is one of the most popular Python web frameworks. Explore its benefits, learn how to install it, and create your first project.
   ms.date: 02/25/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with Django
