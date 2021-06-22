@@ -9,20 +9,20 @@ Follow this part if you want to see the tests run locally on Edge.
 The NuGet package for Chrome and Firefox installs driver software under the *bin* directory, alongside the compiled test code. For Edge, you need to manually install the driver. To do so:
 
 1. Install [Microsoft Edge](https://www.microsoft.com/edge?azure-portal=true).
-1. Open Edge and navigate to `edge://settings/help`. Note the version number.
+1. Open Edge and navigate to `edge://settings/help`. Note the version number. Here's an example:
 
-    :::image type="content" source="/microsoft-edge/media/webdriver-chromium/edge-version.png" alt-text="A screenshot of the Microsoft Edge setting page, showing the version number.":::
+    :::image type="content" source="../media/6-edge-version.png" alt-text="A screenshot of the Microsoft Edge setting page, showing the version number.":::
 
-1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number.
+1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number. Here's an example:
 
-    :::image type="content" source="/microsoft-edge/media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page.":::
+    :::image type="content" source="../media/6-edge-driver-install.png" alt-text="A screenshot of the Downloads section of the Microsoft Edge Driver page showing the matching driver version.":::
 
-1. Extract the *.zip* file to the *bin/Release/netcoreapp3.1* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
+1. Extract the *.zip* file to the *bin/Release/net5.0* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
 
 On macOS, you may need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
 
 ```bash
-spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1/msedgedriver
+spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0/msedgedriver
 ```
 
 ## Export environment variables
@@ -43,7 +43,10 @@ From Visual Studio Code, go to the terminal. Then run these commands. Replace th
 # [Windows](#tab/export-windows)
 
 ```bash
-driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\netcoreapp3.1"
+driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\net5.0"
+```
+
+```bash
 export ChromeWebDriver=$driverDir
 export EdgeWebDriver=$driverDir
 export GeckoWebDriver=$driverDir
@@ -52,7 +55,10 @@ export GeckoWebDriver=$driverDir
 # [macOS](#tab/export-macos)
 
 ```bash
-driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1"
+driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0"
+```
+
+```bash
 export ChromeWebDriver=$driverDir
 export EdgeWebDriver=$driverDir
 export GeckoWebDriver=$driverDir
@@ -108,14 +114,10 @@ To run the tests locally:
 
 1. From the terminal, trace the output of each test. Also note the test-run summary at the end.
 
-    This example shows that out of nine tests, six succeeded and three were skipped:
+    This example shows that out of nine tests, all nine tests succeeded and zero tests were skipped:
 
     ```output
-    Test Run Successful.
-    Total tests: 9
-         Passed: 6
-        Skipped: 3
-     Total time: 1.8257 Seconds
+    Passed!  - Failed:     0, Passed:     9, Skipped:     0, Total:     9, Duration: 5 s 
     ```
 
 ## Add the SITE_URL variable to Azure Pipelines

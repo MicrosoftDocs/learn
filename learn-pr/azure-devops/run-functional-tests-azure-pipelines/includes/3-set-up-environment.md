@@ -160,16 +160,19 @@ Here you create the App Service instances for the three stages you'll deploy to:
 
     ```azurecli
     az webapp create \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
 
     az webapp create \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
 
     az webapp create \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
@@ -238,6 +241,32 @@ To add the variables:
     Your variable group resembles this one:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
+
+## Create the dev, test, and staging environments
+
+In [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process. This time, however, you omit additional criteria such as the requirement for human approval to promote changes from one stage to the next.
+
+To create the **dev**, **test**, and **staging** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
+1. To create the **staging** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *staging*.
+    1. Select **Create**.
 
 ## Create a service connection
 
