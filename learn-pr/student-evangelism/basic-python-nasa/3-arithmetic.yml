@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Code basic arithmetic in Python for future data analysis
 durationInMinutes: 6
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/3-arithmetic.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/3-arithmetic.ipynb

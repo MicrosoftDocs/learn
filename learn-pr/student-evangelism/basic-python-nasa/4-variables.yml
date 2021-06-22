@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create variables in Python Notebooks for future data analysis
 durationInMinutes: 6
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/4-variables.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/4-variables.ipynb

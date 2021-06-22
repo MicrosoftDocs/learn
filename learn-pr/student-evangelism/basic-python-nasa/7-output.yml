@@ -11,4 +11,4 @@ metadata:
 title: Exercise - View results of variables and expressions in Python Notebooks
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/7-output.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/7-output.ipynb

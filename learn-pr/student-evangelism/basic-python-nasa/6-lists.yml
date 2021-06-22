@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create lists of data in Python code
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/6-lists.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/6-lists.ipynb

@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create and manipulate text in Python code
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/5-strings.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/5-strings.ipynb
