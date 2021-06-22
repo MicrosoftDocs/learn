@@ -147,7 +147,7 @@ Now the service principal has been created, you will log in using its credential
 
 ::: zone pivot="powershell"
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's name and key from the the previous step for the username and password, respectively.
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's name and key from the previous step for the username and password, respectively.
 
    ```azurepowershell
    $credential = Get-Credential

@@ -6,7 +6,7 @@ When a service principal needs to communicate with Azure, it logs into Azure AD.
 
 There are two main credentials that service principals use: keys and certificates.
 
-Keys are similar to passwords. However, keys are much longer and more complex. In fact, for most situations, Azure AD generates keys itself to ensure they are _cryptographically random_ - that is, extremely difficult to guess - and to ensure humans don't accidentally use weak passwords as keys. Service principals often have quite highly privileged permissions, so it's essential that they are secure. It's also typical that you only need to handle the key very briefly when first configuring the service principal and your pipeline, so it doesn't need to be memorable or easy to type. Also, another difference is that a single service principal can have multiple keys at the same time, but users can't have multiple passwords. Siimlarly to passwords, keys have an expiry date - you'll learn more about this soon.
+Keys are similar to passwords. However, keys are much longer and more complex. In fact, for most situations, Azure AD generates keys itself to ensure they are _cryptographically random_ - that is, extremely difficult to guess - and to ensure humans don't accidentally use weak passwords as keys. Service principals often have quite highly privileged permissions, so it's essential that they are secure. It's also typical that you only need to handle the key very briefly when first configuring the service principal and your pipeline, so it doesn't need to be memorable or easy to type. Also, another difference is that a single service principal can have multiple keys at the same time, but users can't have multiple passwords. Like passwords, keys have an expiry date - you'll learn more about this soon.
 
 Certificates are another way to authenticate service principals. They are very secure, but also can be difficult to manage. Some organizations require the use of certificates for certain types of service principals. In this module, we won't discuss certificates. However, if you work with a service principal that uses certificate authentication, it basically works the same way as any other service principal when it comes time to manage it and grant it permission for your pipeline.
 
@@ -71,7 +71,7 @@ The `plaintextSecret` variable contains the service principal's key. You can't g
 
 Service principals have several names that you use to identify and work with them. The names you mostly use are:
 
-- **Names:** A service principal can have multiple internal name of the service principal. These are globally unique and can be used when the service principals logs into Azure.
+- **Names:** A service principal can have multiple names. These are globally unique and can be used when the service principal logs into Azure.
 - **Display name:** This is a human-readable name that describes the service principal.
 
 > [!TIP]
