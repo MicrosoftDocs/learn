@@ -49,3 +49,5 @@ You can create multiple role assignments that provide different permissions at d
 TODO
 
 TODO mention --assignee-object-id versus --assignee
+
+TODO mention Azure AD also has roles, sometimes called directory roles - these are separate to Azure roles
