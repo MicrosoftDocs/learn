@@ -8,7 +8,7 @@ In this unit, you will:
 
 ## Verify the deployment to AKS
 
-Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+When the finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
 1. Run the following command to display the various app URLs:
 
@@ -29,14 +29,14 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    ![WebSPA health checks page](../media/health-checks-status-page.png)
+    :::image type="content" source="../media/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/health-checks-status-page.png":::
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an `HTTP 503` or `HTTP 502` response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    ![WebSPA front end](../media/eshop-spa.png)
+    :::image type="content" source="../media/eshop-spa.png" alt-text="Screenshot of the WebSPA application's products catalog page." border="true" lightbox="../media/eshop-spa.png":::
 
 1. Navigate to the checkout page as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
@@ -46,9 +46,9 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Observe **:::no-loc text=".NET BLUE HOODIE":::** is in the shopping bag.
 
-    ![WebSPA shopping bag](../media/eshop-spa-shopping-bag.png)
+     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
 
-You've successfully verified the app was deployed to AKS.
+You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
 ## Review code
 
@@ -92,3 +92,13 @@ webshoppingagg-7f55677f98-9pbg9    1/1     Running   0          4m52s
 webspa-67588b748-9kqf7             1/1     Running   0          4m43s
 webstatus-579d55c59d-tthv9         1/1     Running   0          4m34s
 ```
+
+The following pods listed below are used for the datastores by different microservices.
+
+- `sqldata-<random-guid>` pod as SQL instance.
+- `nosqldata-<random-guid>` pod as MongoDB instance.
+- `basketdata-<random-guid>` pod as Redis instance.
+
+This is an appropriate configuration for a development scenario because all the services are in a single cluster. However, in a production scenario, it's recommended to use managed data services instead of running databases as containers within your Kubernetes cluster.
+
+In the next unit, you'll implement Azure Cache for Redis for the basket service.
