@@ -49,11 +49,11 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
-    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control." border="true":::
+    :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control." border="true":::
 
    If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.   
 
-    :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the 'Select your preferred terminal shell' dropdown list." border="true":::
+    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the 'Select your preferred terminal shell' dropdown list." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
