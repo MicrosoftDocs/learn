@@ -8,7 +8,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 ## Create a registry in Azure Container Registry
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
 1. Select **Create a resource**, then select **Containers**, and then select **Container Registry**.
 
@@ -68,7 +68,7 @@ The Docker file contains the step-by-step instructions for building a Docker ima
 
 ## Examine the container registry
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and on the Overview page for your container registry, select **Go to resource**.
+1. Return to the [Azure portal](https://portal.azure.com/?azure-portal=true), and on the Overview page for your container registry, select **Go to resource**.
 
 2. In the left menu pane, under **Services**, select **Repositories**. You'll see a repository named `webimage`.
 
