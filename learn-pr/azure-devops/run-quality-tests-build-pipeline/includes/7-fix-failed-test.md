@@ -74,7 +74,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     ```bash
     git fetch upstream failed-test
-    git checkout -b failed-test upstream/failed-test
+    git checkout -B failed-test upstream/failed-test
     ```
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.

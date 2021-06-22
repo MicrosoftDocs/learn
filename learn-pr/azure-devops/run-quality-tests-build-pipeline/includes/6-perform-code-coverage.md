@@ -160,7 +160,7 @@ In this part, you create a branch named `code-coverage`, based on the `unit-test
 1. In the terminal, run the following `git checkout` command to create a branch named `code-coverage`:
 
     ```bash
-    git checkout -b code-coverage
+    git checkout -B code-coverage
     ```
 
 ## Add build tasks

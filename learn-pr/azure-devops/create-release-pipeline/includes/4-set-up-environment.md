@@ -205,7 +205,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream release-pipeline
-    git checkout -b release-pipeline upstream/release-pipeline
+    git checkout -B release-pipeline upstream/release-pipeline
     ```
 
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.

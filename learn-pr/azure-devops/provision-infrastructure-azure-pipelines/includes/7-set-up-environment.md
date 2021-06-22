@@ -232,7 +232,7 @@ Fetch and check out a Git branch that contains starter code for this module.
 
     ```bash
     git fetch upstream terraform
-    git checkout -b terraform upstream/terraform
+    git checkout -B terraform upstream/terraform
     ```
 
     Recall that `upstream` refers to Microsoft's GitHub repository. Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.

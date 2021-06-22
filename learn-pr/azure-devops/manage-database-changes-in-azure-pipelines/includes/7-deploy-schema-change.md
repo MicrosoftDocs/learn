@@ -15,7 +15,7 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
 
     ```bash
     git fetch upstream schema-changes
-    git checkout -b schema-changes upstream/schema-changes
+    git checkout -B schema-changes upstream/schema-changes
     ```
 
 1. Open the `dbo` folder in the database project. This folder includes the scripts for each of the tables. Open *Profile.sql* to see the new column, `favoriteMap`.

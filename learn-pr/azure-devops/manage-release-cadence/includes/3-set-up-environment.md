@@ -292,7 +292,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream blue-green
-    git checkout -b blue-green upstream/blue-green
+    git checkout -B blue-green upstream/blue-green
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.

@@ -88,7 +88,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream unit-tests
-    git checkout -b unit-tests upstream/unit-tests
+    git checkout -B unit-tests upstream/unit-tests
     ```
 
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.

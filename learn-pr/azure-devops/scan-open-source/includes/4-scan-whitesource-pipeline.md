@@ -20,7 +20,7 @@ Here you'll get the starter code for the _Space Game_ web project from Microsoft
 
     ```bash
     git fetch upstream scan-open-source
-    git checkout -b scan-open-source upstream/scan-open-source
+    git checkout -B scan-open-source upstream/scan-open-source
     ```
 
     As in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.

@@ -74,7 +74,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 1. To create a branch named `build-pipeline`, run this `git checkout` command.
 
     ```bash
-    git checkout -b build-pipeline
+    git checkout -B build-pipeline
     ```
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:

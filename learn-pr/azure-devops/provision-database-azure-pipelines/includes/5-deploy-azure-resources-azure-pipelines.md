@@ -18,7 +18,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
 
     ```bash
     git fetch upstream provision-db
-    git checkout -b provision-db upstream/provision-db
+    git checkout -B provision-db upstream/provision-db
     ```
 
     The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.

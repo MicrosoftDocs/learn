@@ -50,7 +50,7 @@ Here you get a copy of the _Space Game_ web project and work from a branch.
 
     ```bash
     git fetch upstream security-scan
-    git checkout -b security-scan upstream/security-scan
+    git checkout -B security-scan upstream/security-scan
     ```
 
     As you did in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you push this branch up to your GitHub repository, known as `origin`.

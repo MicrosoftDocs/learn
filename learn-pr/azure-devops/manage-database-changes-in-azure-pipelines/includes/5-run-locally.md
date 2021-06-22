@@ -13,7 +13,7 @@ To fetch and check out the `database` branch from GitHub:
 
     ```bash
     git fetch upstream database
-    git checkout -b database upstream/database
+    git checkout -B database upstream/database
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository. This repository is known as `upstream`. Shortly, you'll push this branch up to your GitHub repository. Your GitHub repository is known as `origin`.
