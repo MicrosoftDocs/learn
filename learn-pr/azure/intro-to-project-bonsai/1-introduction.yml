@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-project-bonsai.1-introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: Microsoft Project Bonsai xxx xxx.
+  ms.date: 06/21/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

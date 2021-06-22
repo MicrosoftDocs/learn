@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.intro-to-project-bonsai
+metadata:
+  moduleType: introduction        
+  title: Introduction to Microsoft Project Bonsai
+  description: Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. It can simplify machine teaching so you can train and deploy smarter autonomous systems.
+  ms.date: 06/21/2021  
+  author: warrenaj
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial  
+title: Introduction to Microsoft Project Bonsai
+summary: Describe how Microsoft Project Bonsa enables you to more quickly and easily implement AI-powered automation development. Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
+abstract: |
+  By the end of this module, you will be able to: 
+    - Describe how Microsoft Project Bonsa enables you to more quickly and easily implement AI-powered automation development.
+    - Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
+prerequisites: |
+  - Experience working with AI systems
+  - Experience working with hosted platforms
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - ai-edge-engineer
+  - ai-engineer
+products:
+  - azure
+  - azure-machine-learning
+units:  
+- learn.intro-to-project-bonsai.1-introduction
+- learn.intro-to-project-bonsai.2-what-is-project-bonsai
+- learn.intro-to-project-bonsai.3-how-project-bonsai-works
+- learn.intro-to-project-bonsai.4-when-to-use-project-bonsai
+- learn.intro-to-project-bonsai.5-knowledge-check
+- learn.intro-to-project-bonsai.6-summary
+  badge:
+  uid: learn.intro-to-project-bonsai.badge
