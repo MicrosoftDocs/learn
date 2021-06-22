@@ -23,24 +23,74 @@ When you create a service principal, you generally ask Azure to create a key at 
 Azure provides the key to you when it creates it. This is the only time it will ever show you the key. After that, you won't be able to get it anymore. It's important that you note the key so you can use it when you configure your pipeline. If you lose the key, you can delete it and create a new one instead.
 
 > [!TIP]
-> When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration once it's created. That way, you avoid storing the key unnecessarily. In this module we only discuss how to create a service principal and key, but you'll learn how to update your pipeline with the key in a later module.
-
-### Key expiration
-
-Keys for service principals expire. When you create a key you can configure its expiry time, but by default it's set to one year. After this expiry time, the key no longer works and the pipeline won't be able to log into Azure AD. You
-
-- Expiry and rotation
-- TODO
+> When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing the key unnecessarily. In this module we only discuss how to create a service principal and key, but you'll learn how to update your pipeline with the key in a later module.
 
 ## Create a service principal and key
 
-- How to create service principals using the CLI/PowerShell, and what this actually does behind the scenes
-- Maybe how to use the portal too
+::: zone pivot="cli"
 
-<!--
-az ad sp create-for-rbac vs. az ad sp create
--->
+To create a service principal and a key, use the `az az sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. We'll cover this in a later unit, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurecli
-az ad sp create-for-rbac -n "TODO1" --role Contributor --scopes /subscriptions/a6ccc634-0449-4b65-933a-9a79a8df6d4f/resourceGroups/SP1
+az ad sp create-for-rbac --name MyPipeline --skip-assignment
 ```
+
+When you run this command, the Azure CLI returns a JSON response with a `password` property. This is the service principal's key. You can't get this again, so make sure you use it immediately or save it somewhere secure.
+
+> [!NOTE]
+> Under the covers, the `az ad sp create-for-rbac` command creates an application registration in Azure AD, adds a service principal to your Azure AD tenant, and creates a key for the application registration. There's also another command, `az ad sp create`, which only creates the service principal in your tenant - not the application registration. For this reason, `az ad sp create-for-rbac` is usually the best command to use.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments, and can optionally assign roles to the service principal. We'll cover this in a later unit, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
+
+```azurepowershell
+$servicePrincipal = New-AzADServicePrincipal -DisplayName MyPipeline -SkipAssignment
+```
+
+When you run this command, Azure PowerShell populates the `servicePrincipal` variable with information about the service principal, including the key. The key is in a secure format and you have to convert it to a string to read it, as in this example:
+
+```azurepowershell
+$bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($servicePrincipal.Secret)
+$plaintextSecret = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
+```
+
+The `plaintextSecret` variable contains the service principal's key. You can't get this again, so make sure you use it immediately or save it somewhere secure.
+
+> [!NOTE]
+> Under the covers, the `New-AzADServicePrincipal` cmdlet creates an application registration in Azure AD, adds a service principal to your Azure AD tenant, and creates a key for the application registration.
+
+::: zone-end
+
+## Handle expired keys
+
+Service principals don't expire, but their keys do. When you create a key you can configure its expiry time. By default the expiry time is set to one year. After this expiry time, the key no longer works and the pipeline won't be able to log into Azure AD. You need to renew or _rotate_ keys regularly.
+
+> [!CAUTION]
+> It might be tempting to set long expiry times for your keys, but you shouldn't do so. Service principals are only protected by their credentials, so if a key is leaked and an attacker obtains it, they can do a great deal of damage. Regularly changing your keys is the best approach to minimize the period that an attack can last. You should also delete and renew keys if you ever suspect they've been leaked.
+
+::: zone pivot="cli"
+
+To reset a key for a service principal, use the `az ad sp` command, as in this example:
+
+```azurecli
+az ad sp credential reset --name MyPipeline
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To reset a key for a service principal, first use the `New-AzADSpCredential` to add a new credential, then use the `Remove-AzADSpCredential` cmdlet to remove the old credential, as in this example:
+
+```azurepowershell
+New-AzADSpCredential -ServicePrincipalName MyPipeline
+Remove-AzADSpCredential -DisplayName MyPipeline
+```
+
+::: zone-end
+
+> [!TIP]
+> A single service principal can have multiple keys. You can use this to safely update your application to use a new key while the old key is still valid, and then delete the old key when it's no longer in use. This avoids downtime due to key expiry.

@@ -45,7 +45,7 @@ When we work with pipelines, we usually can't use managed identities. This is be
 
 ### Why can't I just use my user account?
 
-You might wonder why you need to create this whole new type of object just to authenticate a pipeline, when you've got user accounts that work perfectly well for the rest of your Azure management operations.
+You might wonder why you need to create this whole new type of object just to authenticate a pipeline, when you've got user accounts that have worked perfectly well up to now.
 
 User accounts aren't designed or intended for _unattended_ use - in other words, user account authentication may often check that a human is the one actually authenticating. Increasingly often, organizations employ additional security checks during authentication, including MFA, CAPTCHA checks, and inspecting the device and network the user is using.
 
