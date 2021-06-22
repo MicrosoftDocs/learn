@@ -6,7 +6,7 @@ metadata:
   description: Learn about the difference between let and const variables, how type inference works, and identify type categories.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

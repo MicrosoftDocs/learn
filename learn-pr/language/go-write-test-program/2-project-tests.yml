@@ -5,7 +5,7 @@ metadata:
   description: Create the initial test for the bank project.
   ms.date: 02/02/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with writing tests

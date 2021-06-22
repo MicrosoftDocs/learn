@@ -190,11 +190,11 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 1. Update the `outputs` in the template to return the whole object, which will have a URI per file.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="3-4" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="3-4" :::
 
 1. Add another output with the storage account name (which has a random identifier). You'll use this later to validate that the deployment script did what you expected.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="6-9" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="6-9" :::
 
 ::: zone-end
 

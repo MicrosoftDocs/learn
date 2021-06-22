@@ -6,7 +6,7 @@ metadata:
   description: Learn about the difference between instance properties and static properties, and apply the static keyword to a property.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
