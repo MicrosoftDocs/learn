@@ -25,7 +25,7 @@ We won't go into many of the details about how App Service works or the configur
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left, select **App Services**.
-1. Select **+ Add**.
+1. Select **+ Create**.
 1. On the **Web App** page, fill in these fields:
 
     | Field                | Value                                                                                         |
@@ -34,7 +34,7 @@ We won't go into many of the details about how App Service works or the configur
     | **Resource Group**   | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.   |
     | **Name**             | Provide a unique name, such as *tailspin-space-game-web-1234*. Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later.                              |
     | **Publish**          | **Code**                                                                                      |
-    | **Runtime stack**    | **.NET Core 3.1 (LTS)**                                                                            |
+    | **Runtime stack**    | **.NET 5**                                                                            |
     | **Operating System** | **Linux**                                                                                     |
     | **Region**           | Select any region, preferably one close to you.                                               |
     | **Linux Plan**       | Keep the default value.                                                                       |
@@ -110,7 +110,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '5.0.203'
+  dotnetSdkVersion: '5.x'
 
 steps:
 - task: UseDotNet@2
@@ -121,7 +121,7 @@ steps:
 ...
 ```
 
-A _multistage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
+A _multistage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
 
 To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
@@ -150,6 +150,23 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
     :::image type="content" source="../media/5-pipeline-build-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the job summary.":::
 
     You see that the build finished successfully. Your build pipeline accomplishes the same task as before. It builds the web app and publishes the artifact to the pipeline. But with this new change, you can now add more stages to the pipeline.
+
+## Create the dev environment
+
+Recall that in Azure Pipelines, an _environment_ is an abstract representation of your deployment environment. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next.
+
+For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals which are required to sign off on changes before those changes move to the next stage.
+
+To create the **dev** environment:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. Select **Create environment**.
+1. Under **Name**, enter *dev*.
+1. Leave the remaining fields at their default values.
+1. Select **Create**.
 
 ## Store your web app name in a pipeline variable
 
@@ -181,6 +198,8 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
     [!code-yml[](code/5-azure-pipelines-2.yml?highlight=68-89)]
 
     Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variable.
+
+    Also notice the `environment` field. This specifies that the deployment is associated with the **dev** environment.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Then commit the change and push it up to GitHub.
 
