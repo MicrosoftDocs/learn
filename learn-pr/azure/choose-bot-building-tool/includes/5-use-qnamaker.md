@@ -1,4 +1,4 @@
-You'll continue your comparison of bot creation service options by examining the functionality of QnA Maker. 
+You'll continue your comparison of bot creation service options by examining the functionality of QnA Maker.
 
 ## Review your company's criteria
 
@@ -16,13 +16,13 @@ One of the options you are considering to build the bot is the Bot Framework Com
 
 ### What informs conversational flow?
 
-The first step when you create a bot using QnA Maker is to create a QnA Maker knowledge base. You do this using source documents and websites containing FAQ-type information. 
+The first step when you create a bot using QnA Maker is to create a QnA Maker knowledge base. You do this using source documents and websites containing FAQ-type information. QnA Maker doesn't offer much control over conversation flow. Conversation is dictated primarily by the knowledge base content.
 
 ### Where do you publish the bot?
 
 After the knowledge base is published, you can publish a bot based on the knowledge base to an Azure Bot Service bot. You can connect to the bot using Bot Service channels, or publish the bot to an Azure Web App.
 
-One of your company's requirements is that the bot can be hosted on the company website. A bot created with QnA Maker fulfills this requirement, because you can publish it to a web page. 
+One of your company's requirements is that the bot can be hosted on the company website. A bot created with QnA Maker fulfills this requirement, because you can publish it to a web page.
 
 ### Where do you perform development?
 

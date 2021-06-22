@@ -31,7 +31,7 @@ You can publish your bot to a wide variety of channels and endpoints, including 
 
 ### Where do you perform development?
 
-Bot Framework Composer offers low-code design (which is one of your company's requirements) with a cross-platform visual design interface. Bot Framework Composer supports native integration capabilities for LUIS via a guided interface in the visual designer. You can natively integrate with both LUIS apps and QnA Maker knowledge bases. This integration extends language understanding and bot awareness. In addition, Bot Framework Composer offers full testing capabilities within the IDE. 
+Bot Framework Composer offers low-code design (which is one of your company's requirements) with a cross-platform visual design interface. Bot Framework Composer supports native integration capabilities for LUIS via a guided interface in the visual designer. You can natively integrate with both LUIS apps and QnA Maker knowledge bases. This integration extends language understanding and bot awareness. In addition, Bot Framework Composer offers full testing capabilities within the IDE.
 
 All bots created with Bot Framework Composer can be extended with the Bot Framework SDK in Visual Studio, Visual Studio Code, or your IDE of choice, so your development team can include their C# libraries and build integration for the REST-enabled FAQ application.
 

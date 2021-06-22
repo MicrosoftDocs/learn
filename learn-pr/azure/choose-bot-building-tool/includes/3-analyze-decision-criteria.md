@@ -46,3 +46,6 @@ If you have specific publishing option requirements, compare the three options:
 - QnA Maker bots are created as Azure Bot Service bots. You can host them in an Azure Web App, or they can connected to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
 - Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in and Azure Web App, or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+  
+     > [!NOTE]
+     > Bot Framework Composer bots can also be self-hosted in Internet Information Services (IIS) or other web hosting services as long as the bot has an internet-accessible endpoint and a valid HTTPS certificate.
