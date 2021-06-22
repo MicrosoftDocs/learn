@@ -10,6 +10,6 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-project-bonsai.md)]

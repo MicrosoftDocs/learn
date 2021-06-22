@@ -1,59 +1,10 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
-
-    Goal: briefly state that this unit will define the product.
-    
-    Heading: do not add an H1 or H2 title, an auto-generated H1 "What is <product>?" will appear above this content.
-    
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-
 Microsoft Project Bonsai is a low-code AI platform. It can help you build machine teaching simulations using software with which you're already familiar. This can help you to more quickly and easily implement AI-powered automation development. By understanding what Bonsai is, and what it can do, you can make a determination as to whether it might benefit your organization. 
 
 ## What is low-code AI-powered automation?
 
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-    
-    Heading:
-        "What is <concept>?"
-    
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, blockquote, code sample, or list (image preferred).
-    
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
-
 Low-code AI solutions enable developers with some level of experience to quickly build apps. Typically these solutions use visual development environments. This helps developers focus on creating the solution rather than focusing on the tools used to create the solution. What this means is that you can use the technology to do what it does best, and let your developers do what they do best. 
 
 ## Project Bonsai definition
-
-<!-- 3. Define the product -------------------------------------------------------------
-
-    Goal:
-        Give a formal and precise definition of the product.
-    
-    Heading:
-        "<product> definition"
-    
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<product> is..." (ensure this is a definition, do not give use cases like "<product> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, blockquote, code sample, or list (image preferred).
-    
-    Example:
-        Heading: "Azure Logic Apps definition
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
 
 With Bonsai, your developers can codify what the AI should learn using human-friendly statements like “avoid” and “maximize”. They don't need to explicitly define reward and terminal functions. 
 
@@ -139,26 +90,6 @@ When you're happy with the brain, you can export any version of the brain for us
 
 
 ## How to use Bonsai to deliver AI-powered automation
-
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the <product> solves the <scenario>.
-        Avoid the details of how a practitioner would actually do the work (you're not teaching them to use <product>).
-    
-    Heading:
-        "How to <solve scenario>"
-    
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the <product> solved the <scenario>.
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, blockquote, code sample, or list (image preferred).
-    
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
 
 Using the Bonsai platform helps simplify machine teaching so you can train and deploy smarter autonomous systems. Bonsai enables you to:
 
