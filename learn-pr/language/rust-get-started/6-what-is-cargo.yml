@@ -5,7 +5,7 @@ metadata:
   description: Learn about Cargo, the build system and package manager for Rust.
   ms.date: 04/26/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Cargo?

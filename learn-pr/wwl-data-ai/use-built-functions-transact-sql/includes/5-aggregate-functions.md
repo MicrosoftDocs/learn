@@ -61,7 +61,7 @@ As mentioned, Transact-SQL provides many built-in aggregate functions. Commonly 
     MIN(*expression*)
   :::column-end:::
   :::column:::
-    Returns the largest number, earliest date/time, or first-occurring string (according to collation sort rules).
+    Returns the smallest number, earliest date/time, or first-occurring string (according to collation sort rules).
   :::column-end:::
 :::row-end:::
 :::row:::

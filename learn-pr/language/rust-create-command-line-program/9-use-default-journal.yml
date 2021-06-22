@@ -5,7 +5,7 @@ metadata:
   description: Place tasks in a default journal file.
   ms.date: 01/26/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use a default journal file to store tasks
