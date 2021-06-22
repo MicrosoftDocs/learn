@@ -3,9 +3,9 @@ uid: learn.ethereum-blockchain-development
 metadata:
   title: Get started with blockchain development
   description: Learn about blockchain and development on the Ethereum platform. Discover what skills you need to begin building your own blockchain networks at scale.
-  ms.date: 10/05/2020
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/20/2021
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with blockchain development
@@ -38,4 +38,3 @@ modules:
 - learn.reactors.blockchain-ethereum-networks
 trophy:
   uid: learn.ethereum-blockchain-development.trophy
-hidden: true
