@@ -6,7 +6,7 @@ metadata:
   description: Learn how to define an array type and a tuple type.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
