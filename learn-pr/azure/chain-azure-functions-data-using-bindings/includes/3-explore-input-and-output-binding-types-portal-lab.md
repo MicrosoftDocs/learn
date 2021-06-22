@@ -26,22 +26,24 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting in the **Project Details** section.
+1. On the **Basics** tab, enter the following values for each section.
 
-    | Setting | Value | Description |
-    |---|---|---|
-    | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
-    | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
+    1. Enter the following values for the settings in the **Project Details** section.
 
-1. On the **Basics** tab, enter the following values for each setting in the **Instance Details** section.
+        | Setting | Value | Description |
+        |---|---|---|
+        | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
+        | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
 
-    | Setting | Value | Description |
-    |---|---|---|
-    | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
-    | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
-    | Version | Leave *default* |
-    | Region | *Central US* | Choose the region nearest you. |
+    1. Enter the following values for the settings in the **Instance Details** section.
+
+        | Setting | Value | Description |
+        |---|---|---|
+        | Function App name | Enter a *globally unique name* | Enter a name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+        | Publish | Code | Option to publish code files or a Docker container. |
+        | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
+        | Version | Leave *default* | The default value is sufficient for this exercise. |
+        | Region | *Central US* | Select the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
@@ -65,22 +67,24 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting in the **Project Details** section.
+1. On the **Basics** tab, enter the following values for each section.
 
-    | Setting | Value | Description |
-    |---|---|---|
-    | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
+    1. Enter the following values for the settings in the **Project Details** section.
 
-1. On the **Basics** tab, enter the following values for each setting in the **Instance Details** section.
+        | Setting | Value | Description |
+        |---|---|---|
+        | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+        | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
 
-    | Setting | Value | Description |
-    |---|---|---|
-    | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
-    | Runtime stack | PowerShell Core | The sample code in this module is written in PowerShell. |
-    | Version | Leave *default* |
-    | Region | *Central US* | Choose the region nearest you. |
+    1. Enter the following values for the settings in the **Instance Details** section.
+
+        | Setting | Value | Description |
+        |---|---|---|
+        | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+        | Publish | Code | Option to publish code files or a Docker container. |
+        | Runtime stack | PowerShell Core | The sample code in this module is written in PowerShell. |
+        | Version | Leave *default* |
+        | Region | *Central US* | Choose the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
