@@ -38,7 +38,7 @@ Bonsai provides an intuitive interface that lets you create AI. Bonsai consists 
 
 Let's suppose you work for a soap manufacturing company. The company uses a process called extrusion to produce the soap. Engineers  at the company think that changes in manufacturing could yield significant production increases. The company uses an advanced process control (APC) system, controlled by experienced operators to manage production. These operators send commands to the APC system to control manufacturing. The APC system then adjusts the manufacturing equipment accordingly.
 
-Because of the complexity of the soap manufacturing process, it can be difficult to control and therefor optimize production. This is because there are so many variables involved in production, such as:
+Because of the complexity of the soap manufacturing process, it can be difficult to control and therefore optimize production. This is because there are so many variables involved in production, such as:
 
 - Adjustments in the parts of the manufacturing equipment. 
 - Variations in raw materials.
@@ -71,7 +71,7 @@ The company can benefit from using Project Bonsai because a Bonsai brain is able
 
 You'll assess the capabilities of Project Bonsai and determine whether it's a good choice to help manage implement AI. To do this, you'll:
 
-- Indentify the key features and components of Bonsai.
+- Identify the key features and components of Bonsai.
 - Describe the function of these components.
 - Determine whether Bonsai is a good fit for your organization.
 

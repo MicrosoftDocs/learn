@@ -65,7 +65,7 @@ As you've learned, simulations replicate your real-world systems. This enables y
 - A set of discrete actions the brain can take to affect the state. For example: 
 
    - Move a cart one step on a production line
-   - Adjust a temperature in a manufacting process by 1° Celsius
+   - Adjust a temperature in a manufacturing process by 1° Celsius
 
 - The ability to identify system failure. For example, when the system gets into a state where further progress is impossible. For example: 
 

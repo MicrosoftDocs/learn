@@ -29,7 +29,7 @@ It's also ideal, but not essential that:
 Going back to our earlier example, and making soap. Manufacturing soap is complex, and affected by many variables:
 
 - The chemical process can be hard to control
-- Predicting the behaviour of the machinery (an extruder) can be difficult. 
+- Predicting the behavior of the machinery (an extruder) can be difficult. 
 
 Because of these challenges, it can be hard to optimize the system. Bonsai brains would provide this organization with improved control over their automation systems. The organization's engineers want a brain that: 
 

@@ -57,7 +57,7 @@ Low-code AI solutions enable developers with some level of experience to quickly
 
 With Bonsai, your developers can codify what the AI should learn using human-friendly statements like “avoid” and “maximize”. They don't need to explicitly define reward and terminal functions. 
 
-Bonsai includes integrated simulation software support. This software intergrates with common simulation software, which means that your developers can build Machine Teaching simulations using familiar software. 
+Bonsai includes integrated simulation software support. This software integrates with common simulation software, which means that your developers can build Machine Teaching simulations using familiar software. 
 
 Bonsai consists of the following components which work together: 
 
