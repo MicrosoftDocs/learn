@@ -1,12 +1,10 @@
+Your CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure VMs. You've been asked to test clustered scenarios with both Linux and Windows VMs.
+
 > [!Note]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to the special Concierge Subscription.
 
 > [!Note]
 > You can use either Azure PowerShell or the Azure CLI to manage Windows and Linux VMs on Azure. Here, for learning purposes, if you choose the Windows option, you'll use Azure PowerShell. If you choose Linux, you'll use the Azure CLI.
-
-# Using Azure shared disks
-
-Your CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure VMs. You've been asked to test clustered scenarios with both Linux and Windows VMs.
 
 ::: zone pivot="linux-cloud"
 
