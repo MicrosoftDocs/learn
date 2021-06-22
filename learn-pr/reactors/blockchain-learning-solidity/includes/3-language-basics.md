@@ -23,7 +23,7 @@ This line means that the source file will compile with a compiler greater than t
 
 ## State variables
 
-State variables are key to any Solidity source file. State variable values are stored stored in contract storage permanently.
+State variables are key to any Solidity source file. State variable values are stored in contract storage permanently.
 
 ```solidity
 pragma solidity >0.7.0 <0.8.0;
