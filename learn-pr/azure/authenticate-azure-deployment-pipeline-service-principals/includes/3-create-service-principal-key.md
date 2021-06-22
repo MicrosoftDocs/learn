@@ -32,7 +32,9 @@ Azure provides the key to you when it creates it. This is the only time it will 
 To create a service principal and a key, use the `az az sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. We'll cover this in a later unit, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurecli
-az ad sp create-for-rbac --name MyPipeline --skip-assignment
+az ad sp create-for-rbac \
+  --name MyPipeline \
+  --skip-assignment
 ```
 
 When you run this command, the Azure CLI returns a JSON response with a `password` property. This is the service principal's key. You can't get this again, so make sure you use it immediately or save it somewhere secure.
@@ -47,7 +49,9 @@ When you run this command, the Azure CLI returns a JSON response with a `passwor
 To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments, and can optionally assign roles to the service principal. We'll cover this in a later unit, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurepowershell
-$servicePrincipal = New-AzADServicePrincipal -DisplayName MyPipeline -SkipAssignment
+$servicePrincipal = New-AzADServicePrincipal `
+  -DisplayName MyPipeline `
+  -SkipAssignment
 ```
 
 When you run this command, Azure PowerShell populates the `servicePrincipal` variable with information about the service principal, including the key. The key is in a secure format and you have to convert it to a string to read it, as in this example:
@@ -63,6 +67,18 @@ The `plaintextSecret` variable contains the service principal's key. You can't g
 > Under the covers, the `New-AzADServicePrincipal` cmdlet creates an application registration in Azure AD, adds a service principal to your Azure AD tenant, and creates a key for the application registration.
 
 ::: zone-end
+
+## Service principal names
+
+Service principals have several names that you use to identify and work with them. The two names you mostly use are:
+
+- **Name:** This is the internal name of the service principal.
+- **Display name:** This is a human-readable name that describes the service principal.
+
+> [!TIP]
+> Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
+
+When you create a service principal, you typically only set the display name, and Azure assigns a unique name property automatically.
 
 ## Handle expired keys
 
