@@ -5,7 +5,7 @@ metadata:
   description: Use Drizzle to create a dapp for a shipping contract.
   ms.date: 11/30/2020
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a dapp for a shipping contract
