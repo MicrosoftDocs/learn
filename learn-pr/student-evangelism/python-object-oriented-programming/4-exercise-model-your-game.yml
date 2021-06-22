@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Model and scaffold your game
   description: In this exercise, you learn to model the game rock, paper, scissors and identify objects, behaviors, and data. You also scaffold your created model.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -5,8 +5,8 @@ metadata:
   title: Basic Git commands
   description: Learn the most basic Git commands.
   ms.date: 03/05/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10
