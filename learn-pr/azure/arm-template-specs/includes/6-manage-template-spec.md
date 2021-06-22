@@ -114,7 +114,7 @@ az ts update \
   --template-file azuredeploy.json
 ```
 
-And you can delete a template spec version by using the `az ts delete` commmand:
+And you can delete a template spec version by using the `az ts delete` command:
 
 ```azurecli
 az ts delete \
