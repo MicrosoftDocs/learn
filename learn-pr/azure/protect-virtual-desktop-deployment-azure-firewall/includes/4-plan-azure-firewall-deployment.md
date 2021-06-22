@@ -1,4 +1,4 @@
-Before you can deploy Azure Firewall, you need to plan your network, topology, identify the firewall rules you'll need, and understand the deployment steps. 
+Before you can deploy Azure Firewall, you need to plan your network topology, identify the firewall rules you'll need, and understand the deployment steps. 
 
 ## Recommended network topology
 
@@ -17,8 +17,8 @@ The following table describes the three types of rules you can create for an Azu
 
 |Rule type  |Description  |
 |---------|---------|
-|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine (VM), you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the VM.  (Azure Virtual Desktop example?)      |
-|Application     |Filter traffic based on an FQDN or FQDN tag. A FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag *WindowsVirtualDesktop*.         |
+|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine (VM), you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the VM.    |
+|Application     |Filter traffic based on an FQDN or FQDN tag. A FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag "WindowsVirtualDesktop".         |
 |Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, use a network rule to allow traffic from an on-premises Active Directory Domain Server (AD DS) private IP address to Azure for TCP and UDP port **53**. If you're using Azure AD DS, you don't need to create a network rule. DNS queries are forwarded to Azure DNS at 168.63.129.16. |
 
 Azure Firewall applies rules in priority order. Rules based on threat intelligence are always given the highest priority and are processed first. After that, rules are applied by type: NAT rules, then network rules, then application rules. Within each type, rules are processed according to the priority values you assign when you create the rule, from lowest value to highest value.

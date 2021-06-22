@@ -16,6 +16,8 @@ You completed the following steps to deploy Azure Firewall to protect an Azure V
 
 - Configured the firewall with rules to filter inbound and outbound traffic for the host pool.
 
+## Clean up
+
 [!include[](../../../includes/azure-subscription-cleanup.md)]
 
 ## Learn more
