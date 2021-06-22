@@ -25,7 +25,7 @@ Use the following commands to change the disk performance tier:
 
 Azure CLI
 
-```bash
+```azurecli
 subscriptionId="yourSubscriptionID"
 resourceGroupName="yourResourceGroupName"
 diskName="yourDiskName"
@@ -61,9 +61,9 @@ You can enable on-demand bursting by using PowerShell, Azure CLI, or Azure Resou
 
 Use the following command to create an empty data disk with on-demand bursting:
 
-PowerShell
+Azure PowerShell
 
-```powershell
+```azurepowershell
 Set-AzContext -SubscriptionName "yourSubscriptionName"
 $diskConfig = New-AzDiskConfig -Location "WestCentralUS" -CreateOption Empty -DiskSizeGB 1024 -SkuName Premium_LRS -BurstingEnabled $true
 $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDataDisk" -Disk $diskConfig
