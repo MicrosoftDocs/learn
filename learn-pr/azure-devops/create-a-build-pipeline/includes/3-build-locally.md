@@ -92,42 +92,42 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate (like a repository on GitHub).
+A *remote* is a Git repository where team members collaborate (like a repository on GitHub). Here you list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
 
-To list your remotes, run this `git remote` command.
+1. To list your remotes, run this `git remote` command.
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you have both fetch (download) and push (upload) access to your repository:
+    You see that you have both fetch (download) and push (upload) access to your repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+    ```
 
-*Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
 
-To create a remote named *upstream* that points to the Microsoft repository, run this `git remote add` command.
+1. To create a remote named *upstream* that points to the Microsoft repository, run this `git remote add` command.
 
-```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
-```
+    ```bash
+    git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
+    ```
 
-Run `git remote` a second time to see the changes:
+1. Run `git remote` a second time to see the changes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
+    ```
 
 ### Open the project in the file explorer
 
