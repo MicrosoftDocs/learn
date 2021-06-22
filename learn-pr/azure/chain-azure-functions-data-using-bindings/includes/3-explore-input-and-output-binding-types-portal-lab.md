@@ -12,7 +12,7 @@ See the following high-level illustration of what we're going to build in this e
 
 ::: zone-end
 
-We'll create a function that will start when it receives an HTTP request and will respond to each request by sending back a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively.
+We'll create a function that will start when it receives an HTTP request and will respond to each request by sending back a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
 
 ## Create a function app
 
@@ -20,27 +20,30 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 ::: zone pivot="javascript"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting in the **Project Details** section.
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
     | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
-    | **Instance Details** |
+
+1. On the **Basics** tab, enter the following values for each setting in the **Instance Details** section.
+
+    | Setting | Value | Description |
+    |---|---|---|
     | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
     | Version | Leave *default* |
     | Region | *Central US* | Choose the region nearest you. |
 
-1. Select **Review + create** > **Create** to provision and deploy the function app.
+1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
 1. You can select the **Notifications** icon in the top toolbar of the portal, and watch for a **Deployment in progress** message similar to the following message.
 
@@ -59,27 +62,30 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting in the **Instance Details** section.
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
     | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
-    | **Instance Details** |
+
+1. On the **Basics** tab, enter the following values for each setting in the **Instance Details** section.
+
+    | Setting | Value | Description |
+    |---|---|---|
     | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
     | Version | Leave *default* |
     | Region | *Central US* | Choose the region nearest you. |
 
-1. Select **Review + create** > **Create** to provision and deploy the function app.
+1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
 1. Select the **Notifications** icon in the top toolbar of the portal, and watch for a **Deployment in progress** message similar to the following message.
 
