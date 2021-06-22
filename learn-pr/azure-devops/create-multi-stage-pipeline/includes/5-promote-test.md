@@ -6,7 +6,7 @@ Recall that promoting the build from the _Dev_ stage to the _Test_ stage at 3 A.
 > * Define the schedule in your build configuration.
 > * Define the _Test_ stage, which includes a condition that runs the stage only if the build reason is marked as `Schedule`.
 
-For learning purposes, here, you define the schedule but allow the build to go directly from _Dev_ to _Test_. This setup avoids the need to wait for the schedule to be triggered. After you complete this module, experiment with different cron expressions to run the _Test_ stage only at the scheduled time.
+For learning purposes, here, you define the schedule but allow the build to go directly from _Dev_ to _Test_. This setup avoids the need to wait for the schedule to be triggered. After you complete this module, try experimenting with different cron expressions to run the _Test_ stage only at the scheduled time.
 
 ## Promote changes to the Test stage
 
