@@ -55,6 +55,8 @@ You can create multiple role assignments that provide different permissions at d
 
 ## Create a role assignment for a service principal
 
+::: zone pivot="cli"
+
 To create a role assignment for a service principal, use the `az role assignment create` command. You need to specify the three pieces of information described above - assignee, role, and scope:
 
 ```azurecli
@@ -65,6 +67,7 @@ az role assignment create \
   --assignee-principal-type ServicePrincipal \
   --description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
+<!-- TODO test the above -->
 
 Let's look at each argument:
 
@@ -74,7 +77,31 @@ Let's look at each argument:
 - `--assignee-principal-type` tells Azure that you're providing the role assignment for a service principal. This helps to avoid delays when Azure replicates the role assignment throughout the world.
 - `--description` is a human-readable description of the role assignment.
 
+::: zone-end
+
+::: zone pivot="powershell"
+
+To create a role assignment for a service principal, use the `New-AzRoleAssignment` cmdlet. You need to specify the three pieces of information described above - assignee, role, and scope:
+
+```azurepowershell
+New-AzRoleAssignment `
+  -ApplicationId b585b740-942d-44e9-9126-f1181c95d497 `
+  -RoleDefinitionName Contributor `
+  -Scope '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite' `
+  -ObjectType ServicePrincipal `
+  -Description 'The deployment pipeline for the company's website needs to be able to create resources within the resource group.'
+```
 <!-- TODO test the above -->
+
+Let's look at each argument:
+
+- `-ApplicationId` specifies the service principal's application registration ID.
+- `-RoleDefinitionName` specifies the name of a built-in role. If you use a custom role definition then you specify the full role definition ID by using the `-RoleDefinitionId` argument instead.
+- `-Scope` specifies the scope. This is usually a resource ID for a single resource, a resource group, or a subscription.
+- `-ObjectType` tells Azure that you're providing the role assignment for a service principal. This helps to avoid delays when Azure replicates the role assignment throughout the world.
+- `-Description` is a human-readable description of the role assignment.
+
+::: zone-end
 
 > [!TIP]
 > It's a good practice to provide a justification for your role assignments by specifying a description. This helps anyone who reviews them later to understand the purpose of the role assignment, and to understand how you decided on the assignee, role, and scope.
