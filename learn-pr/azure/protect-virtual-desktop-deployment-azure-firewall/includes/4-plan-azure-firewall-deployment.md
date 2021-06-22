@@ -1,56 +1,4 @@
-
-
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+Before you can deploy Azure Firewall, you need to plan your network topology, identify the firewall rules you'll need, and understand the deployment steps. 
 
 ## Recommended network topology
 
@@ -69,8 +17,8 @@ The following table describes the three types of rules you can create for an Azu
 
 |Rule type  |Description  |
 |---------|---------|
-|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine (VM), you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the VM.  (Azure Virtual Desktop example?)      |
-|Application     |Filter traffic based on an FQDN or FQDN tag. A FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag *WindowsVirtualDesktop*.         |
+|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine (VM), you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the VM.    |
+|Application     |Filter traffic based on an FQDN or FQDN tag. A FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag "WindowsVirtualDesktop".         |
 |Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, use a network rule to allow traffic from an on-premises Active Directory Domain Server (AD DS) private IP address to Azure for TCP and UDP port **53**. If you're using Azure AD DS, you don't need to create a network rule. DNS queries are forwarded to Azure DNS at 168.63.129.16. |
 
 Azure Firewall applies rules in priority order. Rules based on threat intelligence are always given the highest priority and are processed first. After that, rules are applied by type: NAT rules, then network rules, then application rules. Within each type, rules are processed according to the priority values you assign when you create the rule, from lowest value to highest value.
