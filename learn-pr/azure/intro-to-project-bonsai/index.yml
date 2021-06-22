@@ -34,5 +34,5 @@ units:
 - learn.azure.intro-to-project-bonsai.4-when-to-use-project-bonsai
 - learn.azure.intro-to-project-bonsai.5-knowledge-check
 - learn.azure.intro-to-project-bonsai.6-summary
-  badge:
+badge:
   uid: learn.azure.intro-to-project-bonsai.badge
