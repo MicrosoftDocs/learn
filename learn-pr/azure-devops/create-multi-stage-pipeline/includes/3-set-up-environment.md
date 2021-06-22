@@ -143,7 +143,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ### Create the App Service instances
 
-Here, create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_. Here's a brief overview of the process you'll follow:
 
 1. Generate a random number that makes your web app's domain name unique.
 
@@ -162,6 +162,8 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 
    > [!NOTE]
    > For learning purposes, here, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+
+To create your App Service instances, follow these steps:
 
 1. From the Cloud Shell, generate a random number that makes your web app's domain name unique.
 
@@ -193,19 +195,19 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 
     ```azurecli
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
 
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
 
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
+      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp
@@ -278,6 +280,27 @@ To add the variables:
     Your variable group resembles this one:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
+
+## Create the dev and test environments
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
+
+To create the **dev** and **test** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
 
 ## Create a service connection
 

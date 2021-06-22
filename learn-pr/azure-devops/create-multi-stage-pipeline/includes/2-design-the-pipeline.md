@@ -208,7 +208,7 @@ To set up a scheduled trigger in Azure Pipelines, you need a `schedules` section
 ```yml
 schedules:
 - cron: '0 3 * * *'
-  displayName: Deploy every day at 3 A.M.
+  displayName: 'Deploy every day at 3 A.M.'
   branches:
     include:
     - release
@@ -269,7 +269,7 @@ Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/c
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
-In this example, Azure Pipelines creates the **dev** environment for you if it doesn't already exist. You can also define an environment that includes specific criteria for your release. The criteria can specify which pipelines can deploy to that environment and what human approvals are needed to promote the release from one stage to the next.
+Your environment can include specific criteria for your release. The criteria can specify which pipelines can deploy to that environment and what human approvals are needed to promote the release from one stage to the next.
 
 Later in this module, you'll define the **staging** environment, and assign yourself as an approver to promote the _Space Game_ web app from the _Test_ stage to _Staging_.
 
