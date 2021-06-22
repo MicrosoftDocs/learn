@@ -6,7 +6,7 @@ metadata:
   description: Apply what you've learned to convert JavaScript functions to TypeScript functions.
   ms.date: 02/11/2021
   author: shanamatthews
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
