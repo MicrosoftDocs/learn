@@ -15,3 +15,4 @@ To learn more, refer to the following articles:
 - [Ubuntu High Availability - Corosync, Pacemaker & Shared Disk Environments](https://discourse.ubuntu.com/t/ubuntu-high-availability-corosync-pacemaker-shared-disk-environments/14874)
 - [Shared disk(Multi-node ReadWrite)](https://github.com/kubernetes-sigs/azuredisk-csi-driver/tree/master/deploy/example/sharedisk) 
 - [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/)
+- [Run clustered applications on Azure with shared disks](https://www.youtube.com/watch?v=BRNelyXLQ4o&t=40s)
