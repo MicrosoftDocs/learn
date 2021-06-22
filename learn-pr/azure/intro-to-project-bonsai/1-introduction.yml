@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: Microsoft Project Bonsai xxx xxx.
+  description: Describe how Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
   ms.date: 06/21/2021  
   author: warrenaj
   ms.author: v-anwarr  
@@ -13,3 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+
