@@ -57,8 +57,7 @@ $servicePrincipal = New-AzADServicePrincipal `
 When you run this command, Azure PowerShell populates the `servicePrincipal` variable with information about the service principal, including the key. The key is in a secure format and you have to convert it to a string to read it, as in this example:
 
 ```azurepowershell
-$bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($servicePrincipal.Secret)
-$plaintextSecret = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
+$plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
 ```
 
 The `plaintextSecret` variable contains the service principal's key. You can't get this again, so make sure you use it immediately or save it somewhere secure.
@@ -70,15 +69,18 @@ The `plaintextSecret` variable contains the service principal's key. You can't g
 
 ## Service principal names
 
-Service principals have several names that you use to identify and work with them. The two names you mostly use are:
+Service principals have several names that you use to identify and work with them. The names you mostly use are:
 
-- **Name:** This is the internal name of the service principal.
+- **Names:** A service principal can have multiple internal name of the service principal. These are globally unique and can be used when the service principals logs into Azure.
 - **Display name:** This is a human-readable name that describes the service principal.
 
 > [!TIP]
 > Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
 
-When you create a service principal, you typically only set the display name, and Azure assigns a unique name property automatically.
+When you create a service principal, you typically only set the display name, and Azure assigns the names automatically.
+
+> [!CAUTION]
+> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to find it - you might accidentally give permissions to the wrong service principal.
 
 ## Handle expired keys
 

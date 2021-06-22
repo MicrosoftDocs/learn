@@ -93,8 +93,6 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone-end
 
-<!-- TODO below powershll instructions don't work, at least on macOS - the SecureString to string conversion doesn't work, and the tenant ID isn't included in the servicePrincipal object -->
-
 ::: zone pivot="powershell"
 
 1. Run these Azure PowerShell commands in the Visual Studio Code terminal to create a service principal:
@@ -104,16 +102,15 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
      -DisplayName ToyWebsitePipeline `
      -SkipAssignment
 
-   $bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($servicePrincipal.Secret)
-   $plaintextSecret = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
+   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
 
 1. Run the following command to show the service principal's name, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal name: $(servicePrincipal.ServicePrincipalNames[0])"
+   Write-Output "Service principal name: $($servicePrincipal.ServicePrincipalNames[0])"
    Write-Output "Service principal key: $($plaintextSecret)"
-   Write-Output "Your Azure AD tenant ID: $($servicePrincipal.TenantId)"
+   Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
 
    Copy the values somewhere safe. You'll use this soon. Make sure not to leave the key anywhere insecure.
