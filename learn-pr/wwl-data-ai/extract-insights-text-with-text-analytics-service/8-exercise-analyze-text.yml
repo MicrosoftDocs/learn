@@ -4,12 +4,14 @@ title: Exercise - Analyze text with the Text Analytics Service
 metadata:
   title: Exercise - Analyze text with the Text Analytics Service
   description: "Exercise - Analyze text with the Text Analytics Service"
-  ms.date: 06/21/2021
+  ms.date: 06/22/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 99990
+labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise-analyze-text.md)]
