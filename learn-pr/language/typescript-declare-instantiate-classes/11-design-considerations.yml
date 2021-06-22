@@ -6,7 +6,7 @@ metadata:
   description: Learn how to identify reasons for using an interface and a class, and determine when to use an interface or a class in code.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
