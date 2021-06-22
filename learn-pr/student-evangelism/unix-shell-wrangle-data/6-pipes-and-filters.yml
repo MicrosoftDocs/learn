@@ -5,7 +5,7 @@ metadata:
   description: In this unit, you'll be introduced to pipes. Pipes are handy operators that allow you to combine some of the commands we've checked before to build complex data processing pipelines.
   ms.date: 12/09/2020
   author: trallard
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use pipes and filters to put it all together

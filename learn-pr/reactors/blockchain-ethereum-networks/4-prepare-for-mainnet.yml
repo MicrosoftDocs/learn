@@ -5,7 +5,7 @@ metadata:
   description: Get an overview of the steps to prepare to deploy to the Ethereum mainnet.
   ms.date: 01/20/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Prepare for deployment to the mainnet
