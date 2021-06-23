@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.healthbot-case-studies
+uid: learn.health-bot-case-studies
 metadata:
   title: Case studies for Azure Health Bot
   description: In this module, we'll discuss a few case studies for the Azure Health Bot service. 
@@ -28,11 +28,11 @@ products:
 - vs
 prerequisites: None
 units:
-- learn.healthbot-case-studies.1-introduction
-- learn.healthbot-case-studies.2-usa-case-studies
-- learn.healthbot-case-studies.3-middle-east-europe-case-studies
-- learn.healthbot-case-studies.4-knowledge-check
-- learn.healthbot-case-studies.5-summary
+- learn.health-bot-case-studies.1-introduction
+- learn.health-bot-case-studies.2-usa-case-studies
+- learn.health-bot-case-studies.3-middle-east-europe-case-studies
+- learn.health-bot-case-studies.4-knowledge-check
+- learn.health-bot-case-studies.5-summary
 
 badge:
-  uid: learn.healthbot-case-studies.badge
+  uid: learn.health-bot-case-studies.badge
