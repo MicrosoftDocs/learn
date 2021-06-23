@@ -7,7 +7,7 @@ After you start getting into building games and virtual worlds, you'll notice th
 
 We'll use `MeshBuilder` to create ground, and then we'll use `WoodProceduralTexture` to create a wood-like texture. Last, we'll add `PhysicsImposter` to `gymFloor`, which defines the physics of this mesh with parameters that imitate the ground.
 
-All of the following code should go into the `createScene()` function, because this is part of the scene we're creating. Just below the environment initialization, you can replace the `const env = scene.createDefaultEnvironment();` line with the following code, because we're creating our own custom environment instead of using a default one.
+All of the following code should go into the `createScene()` function, because this is part of the scene we're creating. Just below the environment initialization: `const env = scene.createDefaultEnvironment();` add the following code.
 
 ```javascript
   // Create a floor in the scene and position it to the center
@@ -30,6 +30,17 @@ All of the following code should go into the `createScene()` function, because t
   // Add physics that simulates the ground
   gymFloor.physicsImpostor = new PhysicsImpostor(gymFloor, PhysicsImpostor.PlaneImpostor, { mass: 0, restitution: 1 }, scene);
 ```
+
+After you've created `gymFloor`, make sure you replace the floor mesh in the default XR experience. Find the code:
+
+\```
+// Create the default XR experience
+const xr = await scene.createDefaultXRExperienceAsync({
+  floorMeshes: [env.ground],
+});
+\```
+
+Replace `env.ground` with `gymFloor`.
 
 If you're interested in exploring more details to fine-tune your XR experience, you can [read more about procedural textures](https://doc.babylonjs.com/divingDeeper/materials/using/proceduralTextures?azure-portal=true).
 

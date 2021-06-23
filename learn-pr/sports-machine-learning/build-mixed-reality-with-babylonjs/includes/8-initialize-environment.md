@@ -10,6 +10,7 @@ This function belongs in the `Environment` class found in the *environment.ts* f
 
 ```javascript
 public addLegalLine() {
+    const guiMenu = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     guiMenu.idealHeight = 720;
 
     //Creating the legal text box
@@ -55,6 +56,10 @@ Back in the *index.ts* file, you need to replace the default environment that yo
   environment.init();
 ```
 
+Finally, don't forget to import the `Environment` class that you just created. To import the class, add the following import statement toward the top of the *index.ts* file, just below the other import statements that were already there:
+/```javascript
+import {Environment} from "./environment"
+/```
 We now have our scene created with the buttons to display the PER score for each character!
 
 Let's run `npm start` and take a look at the scene. To view on a headset, you can deploy to a static website or use blob storage for static sites.
