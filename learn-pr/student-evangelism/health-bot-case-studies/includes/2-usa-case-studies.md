@@ -13,7 +13,7 @@ The Centers for Disease Control and Prevention (CDC) bot, which utilizes the Azu
 - Provide information and suggest a course of action, such as contacting a medical provider.  
 - Help those who don't need in-person medical care to manage the illness safely at home.
 
-:::image type="content" source="../media/cdc.png" alt-text="Example chat with the CDC bot.":::
+:::image type="content" source="../media/cdc.png" alt-text="Example chat with the CDC bot." lightbox="../media/cdc.png":::
 
 ## Providence
 
@@ -23,13 +23,13 @@ By using CDC guidelines and its own clinical protocols, Providence then built a 
 
 ## Walgreens
 
-Walgreens, the global pharmacy and healthcare retail provider, [used Azure Health Bot to expand the Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers can use it to assess their risk of COVID-19 based on CDC guidelines. 
+Walgreens, the global pharmacy and healthcare retail provider, [used Azure Health Bot to expand the Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers can use it to assess their risk of COVID-19 based on CDC guidelines.
 
 ## Aurora Health Care
 
 [Aurora Health Care](https://www.aurorahealthcare.org/) created a bot system to help patients triage symptoms. Based on outcomes of the symptom checker, the system directs patients to an appropriate care provider.
 
-:::image type="content" source="../media/aurora.png" alt-text="Example questions and answers in the Aurora Health Care symptom checker, followed by a scheduled appointment.":::
+:::image type="content" source="../media/aurora.png" alt-text="Example questions and answers in the Aurora Health Care symptom checker, followed by a scheduled appointment." lightbox="../media/aurora.png":::
 
 ## Virginia Mason
 
@@ -39,10 +39,10 @@ Serving the Pacific Northwest region, the [Virginia Mason health system](https:/
 
 Premera Blue Cross improved its patient experience by implementing Scout, an intelligent virtual health assistant. Scout offers digital services such as checking healthcare claim status, eligibility, and health plans on Android and iOS.
 
-:::image type="content" source="../media/premera.png" alt-text="Example of a Premera patient sign-in screen and a chat with the Scout assistant.":::
+:::image type="content" source="../media/premera.png" alt-text="Example of a Premera patient sign-in screen and a chat with the Scout assistant." lightbox="../media/premera.png":::
 
 ## Quest Diagnostics
 
 Quest Diagnostics created a virtual health assistant called Quest Bot. This assistant can answer questions about lab and COVID testing, find nearby test centers based on a patient's location, and connect the patient with a live agent for more support.
 
-:::image type="content" source="../media/quest.png" alt-text="Example chat with the Quest Bot assistant.":::
+:::image type="content" source="../media/quest.png" alt-text="Example chat with the Quest Bot assistant." lightbox="../media/quest.png":::

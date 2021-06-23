@@ -19,7 +19,7 @@ abstract: |
    - Learn about the real-life use of Health Bot through case studies in the United States, the Middle East, and Europe.
    - Understand the service's benefits to customers.
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-case-studies.svg
 levels:
 - beginner
 roles:
@@ -35,4 +35,4 @@ units:
 - learn.health-bot-case-studies.5-summary
 
 badge:
-  uid: learn.health-bot-case-studies.badge
+  uid: learn.student-evangelism.health-bot-case-studies.badge
