@@ -28,7 +28,7 @@ prerequisites: |
   - Basic Azure CLI knowledge
   - Basic PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio
-iconUrl: /media/learn/module.svg
+iconUrl: /learn/achievements/connect-iot-hololens-azure-digital-twins-unity.svg
 levels:
 - intermediate
 roles:

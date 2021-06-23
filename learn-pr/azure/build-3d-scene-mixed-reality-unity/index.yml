@@ -40,7 +40,7 @@ prerequisites: |
   - Fundamental understanding of raster data / imagery
   - Awareness of the Microsoft Maps SDK
   - Bing Maps Account and Dev Key
-iconUrl: /media/learn/module.svg
+iconUrl: /learn/achievements/build-3d-scene-mixed-reality-unity.svg
 units:
 - learn.azure.build-3d-scene-mixed-reality-unity.introduction
 - learn.azure.build-3d-scene-mixed-reality-unity.scene-design
